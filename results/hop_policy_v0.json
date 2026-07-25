@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-25T19:20:43.530207+00:00",
+  "n_params": 1186825,
+  "results": {
+    "cap_pop": 0.7638888888888888,
+    "big_pop": 0.0,
+    "ceo_born": 0.4107142857142857,
+    "loc_cap": 0.09433962264150944,
+    "loc_big": 0.05128205128205128,
+    "loc_cap_pop": 0.0,
+    "single": 0.775,
+    "no_answer_abstain": 0.9661016949152542,
+    "false_abstain": 0.0
+  },
+  "floors": {
+    "single": 0.743,
+    "cap_pop": 0.756,
+    "big_pop": 0.6,
+    "ceo_born": 0.375,
+    "loc_cap": 0.14,
+    "loc_big": 0.073,
+    "loc_cap_pop": 0.0,
+    "no_answer": 0.061
+  },
+  "holdout_composition": "big_pop"
+}

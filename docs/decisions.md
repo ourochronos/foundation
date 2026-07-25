@@ -93,6 +93,17 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-25 — D35: Reasoner v0 — rung 1 PASSES, abstention transformed, composition transfer ZERO (`results/hop_policy_v0.json`, `checkpoints/hop_policy_v0.pt`)
+First trained policy: a **1.19M-parameter MLP applied per step** (weight-tied recurrence — hop count = loop count, T4's instrument), heads = 9-way action (7 relations + HALT + ABSTAIN), features = question gist + current entry gist + B2 store readouts. Teacher-forced BC from gold chains (not oracle successes); big_pop held out as an ENTIRE composition; 30% entity holdout elsewhere.
+
+**Rung 1 (clone + infer, held-out entities): PASSED.** The policy is not handed relation chains — it infers them — and matches or beats the oracle on every trained composition: single 0.743→**0.775**, cap_pop 0.756→**0.764**, ceo_born 0.375→**0.411**. First evidence for T1's mechanism: a tiny learned controller drives store-arithmetic reasoning at least as well as the hand-coded pipeline that taught it.
+
+**Abstention: transformed.** No-answer abstain recall 0.061 → **0.966 with 0.000 false-abstains on answerable queries** — the learned head fully harvests the id-coverage signal (B2, AUC 0.952) that the oracle's fixed threshold wasted. The largest single policy-over-oracle gain in the program.
+
+**Rung 2 (held-out composition): FAILED at 0.000, recorded with full prominence.** big_pop chains (largest_city_of ∘ population_of — both relations individually trained) are misrouted into nearest trained patterns; BC over two 2-hop compositions does not compose. Exactly the DGPO-literature prediction for cloning without coverage or improvement. Minor: loc_cap/loc_big slip slightly below their (already weak) oracle floors — relation-sequence inference errors compound on noisy chains.
+
+**v0.1 design, fixed by this result**: (1) composition-DENSE training world (v4: many compositions over the same relations so composition-space is sampled, plus Track F compute questions); (2) the guided-improvement loop — exploratory rollouts in HopEnv, keep successes, retrain (self-imitation; full RL only if that stalls); (3) then re-test composition holdout — the honest rung-2 claim requires it to pass with compositions STILL held out of the denser world.
+
 ## 2026-07-25 — D34: A8 equal-bit control — channel separation IS the mechanism; Track A complete (`results/decoder_v2e_eval.json`)
 The reviewer-demanded ablation: identical identity strings, hash-embedded and concatenated INTO the dense channel (z_dim 2048, no symbolic slots, no s), decoder otherwise identical, same training budget. **v2e collapses to dense-only levels**: entity 0.178 / number 0.317 / binding 0.229 (v2t: 0.462/0.720/0.617; dense-only v0: 0.203/0.336) — and degrades under noise (number 0.317 → 0.214 at σ=0.8) exactly where v2t is flat, because the identity information rides the noised channel. Training was healthy (final loss 0.0160 ≈ v0's 0.0162): the information went in; it is not RECOVERABLE from the continuous substrate. **The symbolic channel's win is architecture, not information content** — sixth independent confirmation of the program law, and the codec paper's central ablation. TRACK A IS COMPLETE.
 
