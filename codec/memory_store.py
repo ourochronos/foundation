@@ -1,6 +1,6 @@
 """External associative store over triple-latent entries (Phase 2, docs/04).
 
-Entry = (gist z, identity strings, text, timestamp). Addressing per D3's
+Entry = (gist z, identity token set, text, shadow flag). Addressing per D3's
 channel ownership:
   gist        kNN cosine in the whitened space — the retrieval geometry the
               backbone was chosen for (D2) and the amp channel deliberately
@@ -45,7 +45,11 @@ class MemoryStore:
     shadowed: list[bool] = field(default_factory=list)
 
     def add(self, z: np.ndarray, identities: list[str], text: str) -> int:
-        z = (z / (np.linalg.norm(z) + 1e-12)).astype(np.float32)[None]
+        z = np.asarray(z, dtype=np.float32)
+        if z.shape != (self.dim,):
+            raise ValueError(f"expected gist of shape ({self.dim},), "
+                             f"got {z.shape}")
+        z = (z / (np.linalg.norm(z) + 1e-12))[None]
         self.Z = z if self.Z is None else np.concatenate([self.Z, z])
         self.ids.append(id_tokens(identities))
         self.texts.append(text)
@@ -82,6 +86,8 @@ class MemoryStore:
         the previous subject, not just onto the new one). exclude: visited
         entries — a graph walk must not return to its source node.
         """
+        if self.Z is None:
+            return []
         z_q = z_q / (np.linalg.norm(z_q) + 1e-12)
         score = self.Z @ z_q.astype(np.float32)
         if query_ids and id_weight:

@@ -69,6 +69,8 @@ def pooler_loss(
     c_pre = (s_xp * s_yp).sum(-1)
     l_inv = Fn.relu(c_inv - m_inv).mean()
     l_pre = Fn.relu(m_pre - c_pre).mean()
+    if len(s_neg) < 2:
+        raise ValueError("pooler_loss needs >= 2 negative rows")
     G = s_neg @ s_neg.T
     off = G - torch.diag(torch.diag(G))
     l_unif = (off ** 2).sum() / (len(s_neg) * (len(s_neg) - 1))

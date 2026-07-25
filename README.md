@@ -31,9 +31,29 @@ Rotations unsupported as a binding operator at both lexical and proposition alti
 AMD RX 9070 (16 GB, gfx1201), ROCm 7.2, WSL2. All training/inference local.
 
 ```bash
-source .venv/bin/activate
+# recreate the environment (see pyproject.toml header for the ROCm caveat)
+python3.12 -m venv .venv && source .venv/bin/activate
+pip install torch==2.13.0+rocm7.2 torchvision==0.28.0+rocm7.2 \
+    --index-url https://download.pytorch.org/whl/rocm7.2
+pip install -e ".[dev]" && python -m spacy download en_core_web_sm
+rm -f .venv/lib/python3.12/site-packages/torch/lib/libhsa-runtime64.so  # WSL2 gfx1201
+
 python gpu_check.py          # verify GPU
+python -m pytest tests/ -q   # regression suite (walker, store, env guards)
 ./bonsai.sh -p "hello"       # one-shot local LLM
 ```
 
-Start reading at [docs/00-vision.md](docs/00-vision.md).
+## Conventions
+
+- **docs/decisions.md is the log of record** — every result lands there,
+  confirmations and cutbacks with equal prominence.
+- **Result artifacts are self-describing** (D45): each `results/*.json`
+  carries a `manifest` block (commit, seed, package versions, input-artifact
+  hashes, config) and Wilson 95% CIs next to every headline rate. The JSON
+  should be sufficient to reconstruct the claim without the docs.
+- **Canonical implementations live in `codec/`** — probes discover, the
+  library owns. The multi-hop executor is `codec.walker.ChannelWalker`
+  (D43/D44); `codec.hop_env.HopEnv` is legacy, kept to reproduce D30–D37.
+
+Start reading at [docs/00-vision.md](docs/00-vision.md); resume state in
+[docs/06-state.md](docs/06-state.md).

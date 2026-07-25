@@ -1,4 +1,10 @@
-"""HopEnv — the reasoner's environment over the memory store (C1, plan §C).
+"""HopEnv — the BC-era reasoner environment (C1). LEGACY for execution.
+
+⚠ The executor in step() (question_gist + t on hop 1, fact_gist + t after)
+is the one D43 measured as DEFECTIVE for multi-hop (0.00–0.76 gold-chain
+floors were floors of this executor, not of the task). It is kept verbatim
+to reproduce D30–D37 results (hop_traces_v0, hop_policy_v0..v04). Anything
+that executes chains must use codec.walker.ChannelWalker (0.933–1.000).
 
 Design fixed by measurement (docs/05-reasoner.md v2):
 - Actions are DISCRETE hop calls, not latent transforms (D26/D27/D30):
@@ -78,6 +84,10 @@ class HopEnv:
             if a.relation == ABSTAIN:
                 self.cur = None
             return self.obs, True
+        if not 0 <= a.relation < len(self.relations):
+            raise ValueError(f"relation index {a.relation} out of range")
+        if not hasattr(self, "obs"):
+            raise RuntimeError("step() before reset()")
         self.n += 1
         rel = self.relations[a.relation]
         base = self.obs.q_z if self.cur is None else self.store.Z[self.cur]

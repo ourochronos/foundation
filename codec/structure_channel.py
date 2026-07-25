@@ -92,7 +92,7 @@ class StructureChannel:
         pooler = StructPooler(d_pe=d_pe)
         pooler.load_state_dict(torch.load(
             root / "checkpoints" / f"struct_pooler_{pooler_tag}.pt",
-            map_location="cpu"))
+            map_location="cpu", weights_only=True))
         return cls(pooler, P, gamma, device=device)
 
     # ---- mechanism 1: valence-subspace amplification (whitened gists) ----

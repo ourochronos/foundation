@@ -117,8 +117,6 @@ for ep in range(40):
 torch.save(ans_head.state_dict(), ROOT / "checkpoints" / "reasoner_v06_ans.pt")
 print(f"[ans_head] trained n={len(Xa_t)}", flush=True)
 
-PT = {r: unit(rel_entry[r]["proto"] + rel_entry[r]["t"]) for r in RELS}
-PTmat = np.stack([PT[r] for r in RELS])
 for r in RELS:
     if r not in rng_cprof:
         rng_cprof[r] = rng_cluster_prof(r)
@@ -168,14 +166,9 @@ def plan_v06(q_emb, subject):
 
 
 def abstain_hop1(q_z, q_ids, rel):
-    """Abstain readout: retrieve hop 1, check id coverage AND that the
-    retrieved fact classifies as the requested relation (measured: recall
-    1.000, false-abstain 0.010)."""
-    r = store.query(PT[rel], q_ids or None, k=1, id_weight=1.0)
-    f = r[0][0]
-    cov = len(q_ids & store.ids[f]) / max(len(q_ids), 1)
-    cls = RELS[int(np.argmax(PTmat @ store.Z[f]))]
-    return cov < 0.34 or cls != rel
+    """Canonical readout (codec/walker.py): coverage OR relation-classify
+    mismatch (measured: recall 1.000, false-abstain 0.010)."""
+    return walker.abstain_hop1(q_ids, rel)
 
 # ---- eval: all compositions (holdouts flagged), trained rows use the 20%
 # detector-held-back questions; singles on held-out phrasings; no_answer ----
@@ -224,8 +217,23 @@ res["no_answer"] = {"abstain": abst / len(na), "n": len(na)}
 print(f"[v06    no_answer] abstain={abst/len(na):.3f} (n={len(na)})",
       flush=True)
 
+from codec.manifest import run_manifest, wilson_ci
+for kind, row in res.items():
+    for key in ("chain", "p1", "abstain"):
+        if key in row:
+            row[key + "_ci95"] = wilson_ci(round(row[key] * row["n"]),
+                                           row["n"])
 out = ROOT / "results" / "reasoner_v06.json"
-out.write_text(json.dumps({"generated_at":
-                           datetime.now(timezone.utc).isoformat(),
-                           "results": res}, indent=2))
+out.write_text(json.dumps(
+    {"results": res,
+     "detector": {"params": sum(p_.numel() for p_ in det_head.parameters()),
+                  "train_n": len(X)},
+     "ans_head": {"params": sum(p_.numel() for p_ in ans_head.parameters()),
+                  "train_n": len(Xa_t)},
+     "manifest": run_manifest(seed=0, inputs={
+         "world": ROOT / "data" / "closed_world_v4.json",
+         "emb_cache": ROOT / "results" / "closed_world_v4_emb.npz"},
+         config={"det_floor": 0.2, "req_thr": 0.5, "aw": 1.0,
+                 "feas_thr": 0.35, "holdback": 0.2})},
+    indent=2))
 print(f"[done] {out.relative_to(ROOT)}")

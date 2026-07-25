@@ -2,6 +2,19 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-25 — D45: External review integrated (GPT 5.6 Sol) — consolidation over scope
+**Context**: independent review of `main@96405b1`. Verdict: research thinking/methodology strong, reproducibility weak, and one sharp engineering finding — **the claimed system and the codebase were not the same thing**: the D43 executor lived in a probe script while `HopEnv.step()` still shipped the defective walk. Accepted almost wholesale; actions below. The review's phrasing of the current claim is adopted as the program's official one: *"the channel-separated planner and executor solve a deliberately adversarial synthetic relational world and generalize to selected unseen compositions"* — not "composition solved."
+
+**Done immediately (this commit):**
+1. **Canonical executor** — `codec/walker.py` (`ChannelWalker`): the ONE implementation of the D43 walk + D44 abstention readouts; `probe_soft_planner.py`/`train_reasoner_v06.py` now import it; `HopEnv` docstring marks its executor LEGACY (kept verbatim to reproduce D30–D37) with a warning pointing here. API enforces the finding: `walk(q_ids, chain)` takes no question gist at all.
+2. **Provenance house rule** — `codec/manifest.py`: every result JSON now carries `manifest` (commit SHA, dirty flag, seed, command, package versions, GPU, input-artifact hashes, config) and Wilson 95% CIs beside every headline rate. `soft_planner_j3.json` and `reasoner_v06.json` regenerated under the rule; older artifacts keep their docs-side context until next regeneration.
+3. **Tests** — `tests/` (16 passing): walker regression built around the two measured failure modes (gist-derailed hops, revisit hand-off), store invariants (supersession address inheritance, empty/dim guards, demote/exclude), env guard rails. Plus: `weights_only=True` on checkpoint loads, `pooler_loss` batch guard, MemoryStore docstring corrected (no timestamps — Sol's catch).
+4. **Reproducibility** — `pyproject.toml` with pinned versions + ROCm install caveat; README gains a from-scratch environment path and the conventions block.
+
+**Deferred with reasons:** CI workflow (no GPU runner for the real suite; a lint-only gate adds little — revisit if collaborators join). LICENSE (user's legal call, repo is internal). Repo restructure into `store/planner/runtime` packages (premature while interfaces are moving weekly; `codec/` stays the library home for now).
+
+**Pushback recorded:** (a) MemoryStore's O(N) dense scan is *deliberate* at this phase (D7: prove on modest hardware; 10k entries ≈ 40 MB — the scan is not the experiment). The scale redesign (ANN, quantization — D31 already measured int8/PQ tolerances) is gated on a store-scale track, not retrofitted now. (b) "Benchmark highly constructed" — agreed, and it is the *A-track's own conclusion* (D29–D34 repriced every headline on de-templated worlds); the external-benchmark shots (MQuAKE, MuSiQue, MemoryAgentBench) were already queued and are now promoted to the next-after-J4 slot. (c) "Discoveries promoted to the decision log faster than to the software architecture" — correct and now a standing check: **a D-entry that changes a mechanism must move the mechanism into `codec/` in the same commit.**
+
 ## 2026-07-25 — D44: v0.6 hybrid reasoner LANDED — composition transfer at last (0.000 → 0.913/0.967 on 2 of 3 holdouts), ~0.4M learned params
 **The rung the reasoner arc was climbing toward** (`scripts/train_reasoner_v06.py`, `results/reasoner_v06.json`, checkpoints `reasoner_v06_det/ans.pt`): every component either learned from data or a measured store readout — zero hand schema anywhere.
 

@@ -28,7 +28,9 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from codec import whiten as W
 from codec.hop_env import Action, HopEnv
+from codec.manifest import run_manifest, wilson_ci
 from codec.memory_store import MemoryStore, fit_translation, id_tokens
+from codec.walker import ChannelWalker
 from codec.structure_channel import hash_test_mask
 from codec.role_bits import _nlp
 
@@ -187,30 +189,16 @@ def qids_of(text):
                       for t in doc if t.pos_ == "PROPN"]
                      + [t.text for t in doc if t.like_num])
 
-def walk(q_z, q_ids, chain):
-    """Channel-separated walk (replaces the D30 oracle walk, gold-chain exec
-    0.93-1.00 vs 0.0-0.76): the dense query per hop is the relation PROTOTYPE
-    + operator — type-level only, because the question gist encodes the LAST
-    hop's relation and derails intermediate hops (measured: all loc_cap_pop
-    walks grabbed the subject's population fact at hop 1). The entity rides
-    the id channel; the hand-off mask is ids(cur) - ids(handed in) — subtract
-    the subject side only, NOT all seen ids, so revisit compositions where
-    the answer entity already appears in the question keep their hand-off."""
-    env.reset(q_z, q_ids)
-    hand = q_ids
-    for k, rel in enumerate(chain):
-        z = unit(rel_entry[rel]["proto"] + rel_entry[rel]["t"])
-        r = store.query(z, hand or None, k=2, id_weight=1.0,
-                        exclude=env.visited if k else None)
-        env.cur = r[0][0]
-        env.visited.add(r[0][0])
-        cov = len(hand & store.ids[env.cur]) / max(len(hand), 1)
-        if k == 0 and cov < 0.34:
-            return None
-        hand = store.ids[env.cur] - hand
-    return env.cur
+walker = ChannelWalker(store,
+                       protos={r: rel_entry[r]["proto"] for r in RELS},
+                       ops={r: rel_entry[r]["t"] for r in RELS})
 
-res, chain_ok = {}, {}
+def walk(q_z, q_ids, chain):
+    """Canonical D43 executor (codec/walker.py). q_z kept in the signature
+    for call-site compatibility; the walk itself never reads it."""
+    return walker.walk(q_ids, chain)
+
+res, chain_ok, n_by = {}, {}, {}
 for kind in sorted({h["kind"] for h in hops}):
     cases = [(h, Zh[i]) for i, h in enumerate(hops) if h["kind"] == kind]
     hit = pok = 0
@@ -220,13 +208,21 @@ for kind in sorted({h["kind"] for h in hops}):
         if p:
             hit += walk(zq, qids_of(h["text"]), p) == h["answer_fact"]
     res[kind], chain_ok[kind] = hit / len(cases), pok / len(cases)
+    n_by[kind] = len(cases)
     tag = " [HOLDOUT]" if kind in world["holdout_compositions"] else ""
     print(f"[soft {kind:>12}] chain={pok/len(cases):.3f} "
           f"P@1={hit/len(cases):.3f} (n={len(cases)}){tag}", flush=True)
 
+ci = {k: {"p1_ci95": wilson_ci(round(res[k] * n_by[k]), n_by[k]),
+          "chain_ci95": wilson_ci(round(chain_ok[k] * n_by[k]), n_by[k]),
+          "n": n_by[k]} for k in res}
 (ROOT / "results" / "soft_planner_j3.json").write_text(json.dumps(
-    {"generated_at": datetime.now(timezone.utc).isoformat(),
-     "end_to_end": res, "chain_correct": chain_ok, "K": K,
+    {"end_to_end": res, "chain_correct": chain_ok, "ci": ci, "K": K,
      "hand_schema_reference": {"big_pop": 0.553, "cap_mayor": 0.353,
-                                "hq_loc_cap": 0.042}}, indent=2))
+                                "hq_loc_cap": 0.042},
+     "manifest": run_manifest(seed=0, inputs={
+         "world": ROOT / "data" / "closed_world_v4.json",
+         "emb_cache": ROOT / "results" / "closed_world_v4_emb.npz",
+         "span_cache": ROOT / "results" / "soft_planner_emb.npz"})},
+    indent=2))
 print("[done] results/soft_planner_j3.json")
