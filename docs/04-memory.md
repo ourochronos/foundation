@@ -2,7 +2,13 @@
 
 ## Concept
 
-Declarative knowledge lives in an **external associative store**, not in reasoner weights. The reasoner keeps procedural skill (how to reason, how to query); the store holds facts. Addressing goes through the latent algebra: a query is constructed by rotating an anchor by a relation (`capital-of ∘ France → address near Paris`), making the store **relationally** addressable, not merely similarity-addressable — the "dynamic embedding" idea. Values are latents (hence decodable/inspectable), optionally paired with source text.
+Declarative knowledge lives in an **external associative store**, not in reasoner weights. The reasoner keeps procedural skill (how to reason, how to query); the store holds facts. Addressing goes through the latent algebra: a query is constructed by **translating** a query latent by a relation operator (`z_question + t_capital_of → address of the answer fact`) — rotations were the original design and were empirically rejected (D4/D15); translations are confirmed at store scale (D25: P@1 0.905 → 0.988 on held-out queries). The store is **relationally** addressable, not merely similarity-addressable — the "dynamic embedding" idea. Entries are triple latents `[gist ; identities ; s]` plus source text (decodable/inspectable via the codec).
+
+## Design facts established by D25 (`codec/memory_store.py`)
+
+- **Channel ownership at retrieval** mirrors D3: the gist discriminates *relations*, the identity channel discriminates *entities*. Identity rescoring measured ~0 at 360 entries (the gist suffices); it is retained because reasoner-generated query latents will be noisy (D24) and stores will be larger.
+- **Keys ≠ values at supersession**: updates arrive event-phrased while queries arrive at the state-phrased address the superseded entry occupied. `supersede()` transfers the old entry's address to the new entry; shadowed entries persist for provenance. Post-edit retrieval = pre-edit exactly (0.900).
+- Relation operators are closed-form mean displacements, fit from ~20 (question, fact) pairs each — cheap enough to fit per-relation on the fly.
 
 This is the path to continuous learning: acquiring knowledge = writing entries (non-destructive, no catastrophic forgetting, instantly effective, locally editable), not fine-tuning.
 

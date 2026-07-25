@@ -93,6 +93,22 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-25 — D25: Memory store v0 passes the Phase-2 retrieval gate — translation addressing at 0.99, edits transparent via key/value separation (`results/memory_v0.json`)
+First Phase-2 artifact: `codec/memory_store.py` + a deterministic closed world (`scripts/gen_closed_world.py`: 360 facts over invented entities, 5 relations, near-duplicate templates so **identity, not lexical luck, is what retrieval must resolve**; 720 queries whose phrasings share no template with stored facts; 20 supersession edits).
+
+| gate | result |
+|---|---|
+| paraphrase addressing, P@1 among 360 near-duplicates | gist 0.794, +identity rescore 0.797 |
+| relational addressing (`z_query + t_rel`), held-out 70% | raw 0.905 → **0.988** → 0.992 with identity |
+| knowledge edit: post-edit queries resolve to NEW object | pre 0.900 → post **0.900**, controls 0.850 unchanged |
+
+**Three findings:**
+1. **Relational translation addressing works at store scale** — the T2 one-algebra claim's first store-side confirmation: a closed-form mean displacement (fit on ~22 pairs/relation) lifts P@1 to 0.99. The paraphrase condition's misses are almost all *relation confusion within a subject* (capital vs largest-city), which is exactly what the operator resolves — the reasoner supplying the intended relation at query time is the designed division of labor.
+2. **Identity rescoring is a no-op at this scale** (+0.003) — and the reason is instructive: queries name only the *subject*, and every fact about that subject matches equally. Identity discriminates entities; the gist discriminates relations; at 360 facts the gist already handles entities. Expect rescoring to matter at scale or under reasoner-noised query latents (D24 says the gist may be sloppy — that is when the identity term should earn its keep).
+3. **Keys and values must separate at supersession.** Naive shadowing targeted perfectly (20/20, zero wrong targets) yet 7/20 post-edit queries drifted to the subject's *other* fact — updates arrive event-phrased ("was MOVED to") while queries keep arriving at the state-phrased address. Fix: `supersede()` gives the new entry the old entry's **address** (key) while its text/identities are the value — post-edit accuracy snapped to exactly pre-edit level. Non-destructive, provenance kept (shadowed entries remain inspectable).
+
+**Still open for the full Phase-2 gate**: sequential-domain forgetting curves (T5) and small+store vs larger-dense (T3) — both need the reasoner or at least a QA head; parked until then. **Revisit**: identity rescoring when the store passes ~10k entries or queries come from a reasoner.
+
 ## 2026-07-25 — D24: Under the triple, output quality is invariant to gist noise through σ=0.8 — the symbolic channels are an error-correcting anchor (`results/cycle_noise_decoder_v2t.json`)
 The D21 follow-up question was what gist noise costs the *semantic frame*, since EM stays flat by design. Answer: through σ=0.8 (latent cos 0.78 — **twice the training noise range**), nothing measurable. Cycle cos 0.808→0.811, binding 0.604→0.599, EMs flat (n=150). Dense-only v0 had already collapsed to 0.13/0.32 EM at σ=0.5; the triple doesn't budge at σ=0.8.
 

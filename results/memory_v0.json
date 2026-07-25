@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-07-25T10:00:15.155650+00:00",
+  "n_facts": 360,
+  "paraphrase": {
+    "gist_only": 0.7944444444444444,
+    "with_identity": 0.7972222222222223,
+    "n": 360
+  },
+  "relational": {
+    "raw": 0.9047619047619048,
+    "with_translation": 0.9880952380952381,
+    "with_translation_and_identity": 0.9920634920634921,
+    "n_test": 252,
+    "n_train": 108
+  },
+  "edit": {
+    "pre": 0.9,
+    "post_new_object": 0.9,
+    "controls_after_edits": 0.85,
+    "n": 20
+  },
+  "id_weight": 0.5,
+  "shadow_min": 0.88
+}
