@@ -93,6 +93,22 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-25 — D30: A1 de-templating — the adversary was right; the 0.998 floor is RETIRED and the reasoner inherits a real problem (`results/memory_v3.json`, world: `gen_closed_world_v3.py`)
+World v3 removes every enumerated crutch: 258 colliding city names + 301 shared surnames, 5 store templates/relation, 12 query phrasings/relation from a different generator (4 held out from all fitting), 6 hop compositions incl. a 3-hop and a revisit pattern, temporal capital pairs, no-answer queries.
+
+**Survived (cut, not killed):**
+- **Single-hop translation addressing: 0.85–0.90** (from 0.99) — inside the adversary's predicted band. Critically, **held-out phrasings ≈ seen phrasings** (0.852/0.904 vs 0.867/0.901): once fit across diverse phrasings the operator is phrasing-GENERAL — the earlier 0.99 was template inflation, but the mechanism itself is not template-bound.
+- **Identity rescoring earns its keep under collisions**: +0.04–0.05 consistently (with D29's on-manifold result, its role is now measured twice over).
+
+**Broken, recorded with full prominence:**
+- **Multi-hop compounds and collapses**: cap_pop 0.808 (≈ single-hop² — consistent with pure error compounding), but ceo_born 0.370 (shared surnames make `hand = ids(entry) − ids(query)` match the wrong person's birth fact), loc_cap 0.270 (city-name collisions poison the first hop), **3-hop 0.000**. The 0.998 stands only as "achievable when identity tokens are globally unique and templates single."
+- **Walk semantics are heuristics, not invariants — confirmed by their own test**: on the revisit composition (answer sometimes IS the source city) they *hurt*: 0.187 with demote/exclude vs 0.327 without. D27's "these aren't tuning hacks" claim is formally retracted; they become soft, learnable ACTIONS in the HopEnv (C1), exactly as the plan's contingency specified.
+- **No-answer is not readable from top-1 score** (answerable 1.120 vs no-answer 1.091, distributions overlap) — abstention/halting needs a richer signal; feeds B2 directly.
+
+**Why this is the right kind of bad news**: the hand-coded oracle is no longer a solved pipeline the reasoner merely imitates — it is a WEAK baseline with measured failure modes (selective hand-off, collision disambiguation, revisit handling, abstention) that a trained policy has genuine headroom to beat. The gap analysis' E3 warning ("promote-mask needs to be selective, not ids(entry)−ids(source)") is confirmed as the first-order defect. Track C's imitation targets become per-composition floors: {cap_pop 0.808, big_pop 0.600, ceo_born 0.370, loc_cap 0.270, loc_big 0.327 (walk-off), 3-hop 0.000}.
+
+**Corrections banked**: D25/D26/D27 headline numbers now carry the qualifier "templated world"; D27's walk-invariant claim retracted; the D28 anchor-collapse result is untouched by this (different axis) but inherits the same synthetic-register qualifier pending A7.
+
 ## 2026-07-25 — D29: Hardening sprint, first results — relation choice is linear (B1); identity rescoring's real job found (A3) (`results/relation_select_b1.json`, `onmanifold_noise_a3.json`)
 **B1 — relation selection is linearly separable: 1.000 test accuracy** (6 classes incl. the composed-2-hop class; shuffled-label control at chance 0.205). The reasoner's one unmeasured obligation — map a question latent to a relation-operator choice — is a linear readout on this world. The "ultra-wide" clause of 05-reasoner.md is retired pending one confirmation: re-run on world v3's 12-phrasings-per-relation queries (template-boundness is exactly what the adversary flagged, so this stays provisional until then).
 

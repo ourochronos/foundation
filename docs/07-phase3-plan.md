@@ -40,7 +40,7 @@ before.
 
 ## Track A — Hardening sprint (run before banking anything)
 
-- **A1. De-templated closed world v3** *(the single highest-value item; kills or
+- ~~**A1**~~ ✅ D30 — adversary confirmed: relational 0.85–0.90 (phrasing-general), hops 0.0–0.81 by composition, walk semantics retracted to heuristics, no-answer inseparable from top-1 score. Floors per composition now in D30. Original spec: *(the single highest-value item; kills or
   confirms threats #1/#2/#9/#10 and doubles as the reasoner's training world)*:
   ~20% colliding entity names/shared surname tokens; ≥5 store-side templates
   per relation; query phrasings from a DIFFERENT generator than the templates
@@ -105,8 +105,10 @@ before.
   policy over the triple (state must include symbolic ids + walk bookkeeping);
   rotations→hop calls; drop width-for-binding; halting = supervised v0 with
   readout ablation; decouple halt-surprisal from write-surprisal (T5).
-- **C1.** `HopEnv` over `MemoryStore`: action = (relation ∈ inventory | HALT,
-  hand-off mask); demote/exclude as ACTIONS if A1 shows they're not invariants.
+- **C1.** `HopEnv` over `MemoryStore`: action = (relation ∈ inventory | HALT |
+  ABSTAIN, selective hand-off mask over entry id-tokens); demote/exclude are
+  now confirmed non-invariants (D30) → soft action components. Abstain head
+  cannot use top-1 score (D30) — candidate signals from B2 on world v3.
 - **C2.** Oracle traces over world v3 (+ CoRAG-style rejection sampling where
   the oracle is partial). **C3.** Training per the DGPO recipe — the published
   evidence at sub-1B: cold-start distillation from traces, then RL with
