@@ -304,6 +304,8 @@ of our A6b fix spec. Pipeline (all stages have recipes):
   symbols) until the knee — the empirical size of the mandatory shared core.
 - **J3. Zero-hand-schema planner** (D38 §1 validation): relations-as-entries,
   detection-as-retrieval, soft unification; same v4 holdouts as D37.
+- **J5. Cross-lingual gap probe** (D40): FR/DE paraphrase queries vs the
+  English store; gist vs identity contribution measured separately.
 - **J4. Store-growth invariance**: policy trained on the v4 store evaluated
   after doubling the store + online operator updates — the continual-
   learning end-to-end check (D38 §2).
