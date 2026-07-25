@@ -138,10 +138,34 @@ before.
   hop primitive), positioned as TransE-lifted-to-LLM-latents, benchmarked per
   D2. Timing pressure is real: DiscoLoop/GRAIL/NextMem are adjacent and recent.
 
+## Track E — Efficiency & quantization (added 2026-07-25, scoped by our own results)
+
+- **E1. Store-key quantization** *(highest value; D28 pre-justifies it)*: the
+  gist reconstructs from ~9 bits of anchor identity, so store keys should
+  compress radically — anchor-code (+ optional residual), int8, and binary
+  variants vs fp32 on the full retrieval/hop suite. CPU, cached embeddings.
+  Feeds T3's efficiency framing (store bytes-per-fact vs dense bits-per-fact
+  à la 2404.05405). Run alongside Track A on the hardened world.
+- **E2. Reasoner weight precision — GATED ON B1.** If the core is tiny
+  (1–10M), precision is moot; skip. If FLOP-parity pressure grows it,
+  BitNet-style 1.58-bit QAT-from-scratch is the default candidate (we train
+  from scratch anyway) — enters C3 as an ablation, and the T1 FLOP-parity
+  accounting must record precision on both sides either way. Unsloth-class
+  tooling: skip unless a job doesn't fit — CUDA/Triton-first, ROCm/gfx1201
+  friction expected, and our trainings already fit.
+- **E3. Functional factorization probe** *(the "least-dense factorization"
+  thesis, within-weights edition)*: after C3, test whether relation-selection,
+  halting, and hand-off occupy separable low-rank subspaces of the trained
+  core. The program already factors functions architecturally (knowledge →
+  store, binding → symbols, expression → codec — that is WHY the core can be
+  small); this measures whether the residual control function factors again
+  internally. Cheap interpretability probe; pairs with the looped-model
+  mechanistic-analysis literature from the sweep.
+
 ## Sequencing
 
 Week 1: A1–A4 + B1–B2 (A1 is the long pole; everything else is hours).
-Week 2: A5–A8; C0–C2 once A1's world exists; D2 metric adoption alongside.
+Week 2: A5–A8 + E1; C0–C2 once A1's world exists; D2 metric adoption alongside.
 Then: C3/C4 training runs (hours per run at the expected tiny-core size),
 D1 external eval, D3 write-ups. Every A-item outcome gets a decisions.md entry
 whether it confirms or cuts back a prior claim — the log's credibility rests on
