@@ -291,6 +291,23 @@ of our A6b fix spec. Pipeline (all stages have recipes):
 - **H3.** u-μP for the 1–10M sweep harness; 10M tier as HP-transfer proxy
   for any future from-scratch 0.6B-class run.
 
+## Track J — T6: the crystallization spectrum (added 2026-07-25)
+
+- **J1. Promotion/staleness demonstration** (first probe, headline candidate):
+  LoRA-distill ~500 hot facts into the decoder base (plain QA format, H1's
+  gfx1201-safe config, no chat template, all-linear targets); measure
+  retrieval-free accuracy + latency vs the store path; then supersede 100 of
+  them in the store and measure crystallized copies answering STALE while
+  store answers update. One system, both poles instrumented.
+- **J2. Basis-floor curve**: shrink anchors N and measure interface +
+  EXPRESSIVITY (known + novel content; expression size in bits of basis +
+  symbols) until the knee — the empirical size of the mandatory shared core.
+- **J3. Zero-hand-schema planner** (D38 §1 validation): relations-as-entries,
+  detection-as-retrieval, soft unification; same v4 holdouts as D37.
+- **J4. Store-growth invariance**: policy trained on the v4 store evaluated
+  after doubling the store + online operator updates — the continual-
+  learning end-to-end check (D38 §2).
+
 ## Sequencing
 
 Week 1: A1–A4 + B1–B2 (A1 is the long pole; everything else is hours).
