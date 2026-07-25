@@ -80,7 +80,7 @@ before.
   250 two-sentence chunks through the unchanged v2t eval; re-run the σ-sweep
   on them. In-distribution tables get a "synthetic register" qualifier until
   this exists.
-- **A8** — IN FLIGHT (train_decoder_v2e.py, ~2h; prediction: loses under noise). Original: identities
+- ~~**A8**~~ ✅ D34 — equal-bit control collapses to dense-only (0.178/0.317/0.229) and degrades under noise; channel separation IS the mechanism. TRACK A COMPLETE. Original: identities
   injected into the dense channel at matched bit budget — separates
   architecture-win from information-win.
 
@@ -163,6 +163,50 @@ before.
   small); this measures whether the residual control function factors again
   internally. Cheap interpretability probe; pairs with the looped-model
   mechanistic-analysis literature from the sweep.
+
+## Program priorities (standing, 2026-07-25)
+
+1. **The goal** — the Northstar system (small factored model + store + continuous
+   learning) outranks any individual result; findings serve the goal.
+2. **Documented findings** — every result lands in decisions.md with cutbacks as
+   prominent as wins; docs update AS WORK HAPPENS, not after.
+
+## Module contracts (modularity, next level)
+
+Components are replaceable behind MEASURED interfaces; a swap is legal when the
+certifying number holds:
+- Encoder: swappable via fitted orthogonal map (Procrustes-bound certifies;
+  symbolic channel transfers trivially) — demonstrate in the codec paper (D3
+  item).
+- Decoder: pretrain-once/align-many (H2) — alignment run replaces retraining.
+- Store scoring: capabilities compose as ADDITIVE score terms (gist + identity
+  + demote + view + ...) — new capability = new term, never surgery.
+- Policy: actions are a closed inventory (hop/ALU/halt/abstain); adding an
+  action extends the inventory without retraining the world.
+
+## Usability — the path to sizeable context (Northstar criterion)
+
+The architecture's long-context strategy is THE STORE, not an attention window:
+- Read side: Track G ingestion makes input context unbounded (documents →
+  propositions → entries).
+- Structure side: proposition-graph links (discourse relations BETWEEN triples
+  — elaboration/cause/sequence as inter-entry relations, same machinery as
+  located_in) so multi-sentence statements are entry clusters, not bigger
+  latents.
+- Write side: the H1 3B decoder trained for MULTI-TRIPLE rendering (sequences
+  of entries → flowing prose) — answers longer than one sentence.
+
+## Track I — Views & epistemics on a shared graph (stub; lit agent in flight)
+
+Truth is view-conditioned, not absolute (user's KB-domain experience; program
+seed already exists: the epistemic hedge bit). Design direction — VIEWS ON A
+SHARED GRAPH, not orthogonal graphs: one store, shared identities/gists;
+a view = a query-time score term/mask over entry metadata (source, confidence,
+worldview, time) — composing exactly like id_weight/demote_ids. Dissolves an
+open problem: same-subject-relation conflict branches into TEMPORAL
+supersession vs PERSPECTIVE FORK (attributed disagreement; both entries
+persist, view-conditioned). Full design after the epistemics/"MAGMA" lit
+report lands.
 
 ## Northstar gap map (added 2026-07-25, second research sweep)
 
