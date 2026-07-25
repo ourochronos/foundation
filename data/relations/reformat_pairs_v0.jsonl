@@ -1,0 +1,100 @@
+{"x": "The shift ends at 3 pm today.", "y": "The shift ends at 15:00 today.", "label": "preserving"}
+{"x": "The meeting starts at 9 am sharp.", "y": "The meeting starts at 09:00 sharp.", "label": "preserving"}
+{"x": "They arrived at 2 pm on Thursday.", "y": "They arrived at 14:00 on Thursday.", "label": "preserving"}
+{"x": "The store closes at 5 pm daily.", "y": "The store closes at 17:00 daily.", "label": "preserving"}
+{"x": "Work begins at 7 am Monday morning.", "y": "Work begins at 07:00 Monday morning.", "label": "preserving"}
+{"x": "The show starts at 8 pm tonight.", "y": "The show starts at 20:00 tonight.", "label": "preserving"}
+{"x": "Lunch break is at 12 pm noon.", "y": "Lunch break is at 12:00 noon.", "label": "preserving"}
+{"x": "The bus leaves at 6 am from here.", "y": "The bus leaves at 06:00 from here.", "label": "preserving"}
+{"x": "The party ends at 11 pm sharp.", "y": "The party ends at 23:00 sharp.", "label": "preserving"}
+{"x": "Training starts at 10 am this week.", "y": "Training starts at 10:00 this week.", "label": "preserving"}
+{"x": "The plane departs at 4 pm exactly.", "y": "The plane departs at 16:00 exactly.", "label": "preserving"}
+{"x": "The event ends at 9 pm Friday.", "y": "The event ends at 21:00 Friday.", "label": "preserving"}
+{"x": "The class begins at 1 pm sharp.", "y": "The class begins at 13:00 sharp.", "label": "preserving"}
+{"x": "The recipe needs a dozen fresh eggs.", "y": "The recipe needs 12 fresh eggs.", "label": "preserving"}
+{"x": "They ordered three large pizzas yesterday.", "y": "They ordered 3 large pizzas yesterday.", "label": "preserving"}
+{"x": "Five students passed the difficult test.", "y": "5 students passed the difficult test.", "label": "preserving"}
+{"x": "She bought seven history books last week.", "y": "She bought 7 history books last week.", "label": "preserving"}
+{"x": "Nine people attended the team meeting.", "y": "9 people attended the team meeting.", "label": "preserving"}
+{"x": "They planted two hundred oak trees.", "y": "They planted 200 oak trees.", "label": "preserving"}
+{"x": "The package weighs four heavy pounds.", "y": "The package weighs 4 heavy pounds.", "label": "preserving"}
+{"x": "Six months have already passed since.", "y": "6 months have already passed since.", "label": "preserving"}
+{"x": "The library has eight available copies.", "y": "The library has 8 available copies.", "label": "preserving"}
+{"x": "He won twenty dollars in the lottery.", "y": "He won 20 dollars in the lottery.", "label": "preserving"}
+{"x": "They need fifteen wooden chairs total.", "y": "They need 15 wooden chairs total.", "label": "preserving"}
+{"x": "One thousand visitors came that day.", "y": "1000 visitors came that day.", "label": "preserving"}
+{"x": "Eight researchers conducted the study.", "y": "8 researchers conducted the study.", "label": "preserving"}
+{"x": "The audit is due July 4 next.", "y": "The audit is due on the fourth of July.", "label": "preserving"}
+{"x": "The meeting is March 15 at noon.", "y": "The meeting is March fifteenth at noon.", "label": "preserving"}
+{"x": "The deadline falls on December 25.", "y": "The deadline falls on the twenty-fifth of December.", "label": "preserving"}
+{"x": "The event happens June 1st morning.", "y": "The event happens on the first of June.", "label": "preserving"}
+{"x": "Conference starts September 20 promptly.", "y": "Conference starts on the twentieth of September.", "label": "preserving"}
+{"x": "We meet on January 10 forever.", "y": "We meet on the tenth of January.", "label": "preserving"}
+{"x": "The project ends May 30 sharp.", "y": "The project ends on the thirtieth of May.", "label": "preserving"}
+{"x": "Launch is February 14 at dawn.", "y": "Launch is on the fourteenth of February.", "label": "preserving"}
+{"x": "The trial starts April 8 morning.", "y": "The trial starts on the eighth of April.", "label": "preserving"}
+{"x": "Closing day is August 22 today.", "y": "Closing day is on the twenty-second of August.", "label": "preserving"}
+{"x": "The summit is July 11 next.", "y": "The summit is on the eleventh of July.", "label": "preserving"}
+{"x": "Registration closes November 3 evening.", "y": "Registration closes on the third of November.", "label": "preserving"}
+{"x": "The cable is 2 meters in length.", "y": "The cable is 200 centimeters in length.", "label": "preserving"}
+{"x": "The tank holds 5 liters of water.", "y": "The tank holds 5000 milliliters of water.", "label": "preserving"}
+{"x": "The distance is 3 kilometers exactly.", "y": "The distance is 3000 meters exactly.", "label": "preserving"}
+{"x": "The weight is 2 kilograms total.", "y": "The weight is 2000 grams total.", "label": "preserving"}
+{"x": "The room is 10 feet wide exactly.", "y": "The room is 120 inches wide exactly.", "label": "preserving"}
+{"x": "The fence is 4 yards very long.", "y": "The fence is 12 feet very long.", "label": "preserving"}
+{"x": "The bottle holds exactly 1 liter.", "y": "The bottle holds exactly 1000 milliliters.", "label": "preserving"}
+{"x": "The tower is 50 meters tall there.", "y": "The tower is 5000 centimeters tall there.", "label": "preserving"}
+{"x": "The land area is 2 hectares.", "y": "The land area is 20000 square meters.", "label": "preserving"}
+{"x": "The depth measurement is 500 millimeters.", "y": "The depth measurement is 50 centimeters.", "label": "preserving"}
+{"x": "The journey spans 1.5 kilometers total.", "y": "The journey spans 1500 meters total.", "label": "preserving"}
+{"x": "The fabric is 3 meters across.", "y": "The fabric is 300 centimeters across.", "label": "preserving"}
+{"x": "That volume equals 10 liters exactly.", "y": "That volume equals 10000 milliliters exactly.", "label": "preserving"}
+{"x": "Attendance hit 12,000 people yesterday.", "y": "Attendance hit 12k people yesterday.", "label": "preserving"}
+{"x": "The budget is $50,000 for year.", "y": "The budget is $50k for year.", "label": "preserving"}
+{"x": "Sales reached 25,000 units in total.", "y": "Sales reached 25k units in total.", "label": "preserving"}
+{"x": "The population is 100,000 there.", "y": "The population is 100k there.", "label": "preserving"}
+{"x": "Revenue totaled $75,000 annually today.", "y": "Revenue totaled $75k annually today.", "label": "preserving"}
+{"x": "There are 30,000 residents nearby.", "y": "There are 30k residents nearby.", "label": "preserving"}
+{"x": "The factory produced 45,000 items.", "y": "The factory produced 45k items.", "label": "preserving"}
+{"x": "The grant was worth $200,000.", "y": "The grant was worth $200k.", "label": "preserving"}
+{"x": "Enrollment reached 15,000 students this.", "y": "Enrollment reached 15k students this.", "label": "preserving"}
+{"x": "The investment was 500,000 dollars.", "y": "The investment was 500k dollars.", "label": "preserving"}
+{"x": "Profits exceeded 18,000 dollars today.", "y": "Profits exceeded 18k dollars today.", "label": "preserving"}
+{"x": "Exports totaled 35,000 units.", "y": "Exports totaled 35k units.", "label": "preserving"}
+{"x": "The US signed the trade accord.", "y": "The United States signed the trade accord.", "label": "preserving"}
+{"x": "NYC has many world-class museums.", "y": "New York City has many world-class museums.", "label": "preserving"}
+{"x": "The UN approved the important resolution.", "y": "The United Nations approved the important resolution.", "label": "preserving"}
+{"x": "Dr. Smith published the paper.", "y": "Doctor Smith published the paper.", "label": "preserving"}
+{"x": "The CEO announced major changes.", "y": "The Chief Executive Officer announced major changes.", "label": "preserving"}
+{"x": "FBI agents investigated the case.", "y": "Federal Bureau of Investigation agents investigated the case.", "label": "preserving"}
+{"x": "NASA launched a satellite.", "y": "The National Aeronautics and Space Administration launched a satellite.", "label": "preserving"}
+{"x": "The UK joined the alliance.", "y": "The United Kingdom joined the alliance.", "label": "preserving"}
+{"x": "UCLA offers excellent programs.", "y": "University of California, Los Angeles offers excellent programs.", "label": "preserving"}
+{"x": "The PhD student just graduated.", "y": "The Doctor of Philosophy student just graduated.", "label": "preserving"}
+{"x": "The COO led operations team.", "y": "The Chief Operating Officer led operations team.", "label": "preserving"}
+{"x": "MIT researchers made discovery.", "y": "Massachusetts Institute of Technology researchers made discovery.", "label": "preserving"}
+{"x": "She finished 1st place in competition.", "y": "She finished first place in competition.", "label": "preserving"}
+{"x": "He came in 2nd place overall.", "y": "He came in second place overall.", "label": "preserving"}
+{"x": "They ranked 3rd in competition.", "y": "They ranked third in competition.", "label": "preserving"}
+{"x": "The 4th chapter is quite long.", "y": "The fourth chapter is quite long.", "label": "preserving"}
+{"x": "She is in 5th grade now.", "y": "She is in fifth grade now.", "label": "preserving"}
+{"x": "He took 1st prize yesterday.", "y": "He took first prize yesterday.", "label": "preserving"}
+{"x": "The 2nd edition is updated.", "y": "The second edition is updated.", "label": "preserving"}
+{"x": "They are on 3rd base.", "y": "They are on third base.", "label": "preserving"}
+{"x": "It is the 4th time now.", "y": "It is the fourth time now.", "label": "preserving"}
+{"x": "She won 1st place award.", "y": "She won first place award.", "label": "preserving"}
+{"x": "He is in 2nd year college.", "y": "He is in second year college.", "label": "preserving"}
+{"x": "This is our 3rd attempt today.", "y": "This is our third attempt today.", "label": "preserving"}
+{"x": "Half of the samples failed.", "y": "50% of the samples failed.", "label": "preserving"}
+{"x": "A quarter of the budget was spent.", "y": "25% of the budget was spent.", "label": "preserving"}
+{"x": "Three quarters of the work is done.", "y": "75% of the work is done.", "label": "preserving"}
+{"x": "A fifth of the students are absent.", "y": "20% of the students are absent.", "label": "preserving"}
+{"x": "A tenth of the revenue was profit.", "y": "10% of the revenue was profit.", "label": "preserving"}
+{"x": "Half of the guests have arrived.", "y": "50% of the guests have arrived.", "label": "preserving"}
+{"x": "A quarter of the cars are red.", "y": "25% of the cars are red.", "label": "preserving"}
+{"x": "Three quarters of the project complete.", "y": "75% of the project complete.", "label": "preserving"}
+{"x": "A fifth of employees work part-time.", "y": "20% of employees work part-time.", "label": "preserving"}
+{"x": "Two fifths of the shipment arrived.", "y": "40% of the shipment arrived.", "label": "preserving"}
+{"x": "Three tenths of the audience seated.", "y": "30% of the audience seated.", "label": "preserving"}
+{"x": "Four fifths of materials were recycled.", "y": "80% of materials were recycled.", "label": "preserving"}
+{"x": "One tenth of profits go to charity.", "y": "10% of profits go to charity.", "label": "preserving"}

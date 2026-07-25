@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-07-25T17:22:43.312617+00:00",
+  "battery_auc_codec": 0.7673380398671097,
+  "battery_auc_ci": [
+    0.7024268064784053,
+    0.8280808762458471
+  ],
+  "battery_auc_struct": 0.7673380398671097,
+  "per_type": {
+    "converse_predicate|preserving": {
+      "struct": 0.5230853690041436,
+      "ident": 1.0,
+      "comb": 0.5230853690041436
+    },
+    "fail_to|changing": {
+      "struct": -0.23995976430582414,
+      "ident": 1.0,
+      "comb": -0.23995976430582414
+    },
+    "scalar_adverb|changing": {
+      "struct": -0.3238595037588051,
+      "ident": 1.0,
+      "comb": -0.3238595037588051
+    },
+    "wild_cleft|preserving": {
+      "struct": 0.6693032547121955,
+      "ident": 1.0,
+      "comb": 0.6693032547121955
+    },
+    "modal_deontic|changing": {
+      "struct": 0.6672205287834694,
+      "ident": 1.0,
+      "comb": 0.6672205287834694
+    },
+    "aspect_shift|changing": {
+      "struct": 0.4104141982804452,
+      "ident": 1.0,
+      "comb": 0.4104141982804452
+    },
+    "free_paraphrase|preserving": {
+      "struct": 0.6036906386060373,
+      "ident": 1.0,
+      "comb": 0.6036906386060373
+    }
+  },
+  "reformat_false_flag_rate": 0.43,
+  "reformat_mean_sim": 0.575
+}

@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-07-25T17:28:45.757756+00:00",
+  "n": 200,
+  "rows": [
+    {
+      "cond": "true_gist",
+      "masked_cycle": 0.750240683555603,
+      "predicate_recall": 0.7617041847041847
+    },
+    {
+      "cond": "same_domain_wrong",
+      "masked_cycle": 0.7397618293762207,
+      "predicate_recall": 0.7464410173160174
+    },
+    {
+      "cond": "null_gist",
+      "masked_cycle": 0.7294087409973145,
+      "predicate_recall": 0.742411976911977
+    }
+  ],
+  "gap": 0.010478854179382324
+}

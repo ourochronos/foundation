@@ -51,7 +51,7 @@ before.
   no-answer cases; multiple facts per (subject, relation) with timestamps.
   Adversary's prediction to test: relational addressing falls to the 0.75–0.85
   regime and hop P@1 well below 0.9. Whatever survives is the real floor.
-- **A2. Frame-only cycle metric** *(threat #4 — the gist-redundancy question)*:
+- ~~**A2**~~ ✅ D32 — gist is TOPIC-ONLY (+0.010 masked-cycle over wrong gist; null gist = 74% predicate recall). D24/D28 rhetoric cut back; reasoner state can be more discrete. Original:
   decode under (i) true gist (ii) same-domain WRONG gist (iii) null gist, all
   with true symbols; mask entities/numbers to placeholders in recon AND
   reference before re-encoding; add predicate/relation-word EM (verbs, units,
@@ -67,12 +67,12 @@ before.
 - **A4. Bootstrap CIs in fidelity/compare probes**; re-emit JSONs; mark every
   logged delta smaller than its CI (several D2x conclusions sit inside error
   bars — the +0.011 margin, the 0.006 "cost", the ±0.02 EM deltas).
-- **A5. Frozen adversarial battery for the structure channel** *(threat #3)*:
+- ~~**A5**~~ ✅ D31 — natural-text struct AUC 0.767 (CI .70–.83); valence generalizes, symbolic normalizations are the gap. Original:
   ~30 pairs/type of naturally-phrased constructions from a different
   generator/prompt-author (converse predicates, "fail to X", "hardly/barely",
   un-normalized cleft variants); score ONCE through `pair_scores()`; bootstrap
   AUC; no code changes allowed after seeing results.
-- **A6. Identity-channel ROC + edit stress** *(threats #7/#11)*: 100 number-
+- **A6** — ROC half ✅ D31 (43% false-flag on reformats; rule scoped). Edit-stress half pending. Original: 100 number-
   reformatting/alias paraphrase pairs ("3 pm"↔"15:00", "a dozen"↔"12",
   "US"↔"United States") → false-flag rate for D23's rule; 200 edits with
   old-object queries and second-generation edits → does id-set union pollute?
@@ -91,7 +91,7 @@ before.
   type-level, which is what the gist demonstrably carries), the core can be
   TINY and the "ultra-wide" clause of 05-reasoner.md is formally retired. The
   width-for-binding justification is already dead (binding moved to symbols).
-- **B2. Halting-signal audit**: log per-step top1−top2 margin, id-coverage,
+- ~~**B2**~~ ✅ D31 — halt = trivial readout (~1.00); abstain = id-coverage AUC 0.952. Original: log per-step top1−top2 margin, id-coverage,
   Δstate over oracle walks incl. forced over-stepping; test separability of
   halt/continue. Literature triangulation says halting should be a cheap
   READOUT over store responses, not a learned gate (Cambridge 2607.20519:
@@ -142,7 +142,7 @@ before.
 
 ## Track E — Efficiency & quantization (added 2026-07-25, scoped by our own results)
 
-- **E1. Store-key quantization** *(highest value; D28 pre-justifies it)*: the
+- ~~**E1**~~ ✅ D31 — int8 free, binary ~free (32×, the design point); anchor-codes collapse RETRIEVAL (decode≠retrieval resolution). Original: the
   gist reconstructs from ~9 bits of anchor identity, so store keys should
   compress radically — anchor-code (+ optional residual), int8, and binary
   variants vs fp32 on the full retrieval/hop suite. CPU, cached embeddings.

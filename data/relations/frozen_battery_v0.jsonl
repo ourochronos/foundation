@@ -1,0 +1,198 @@
+{"relation": "converse_predicate", "x": "Praxis Corp sold the manufacturing plant to Horizon Ltd in 2018.", "y": "Horizon Ltd bought the manufacturing plant from Praxis Corp in 2018.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The supplier delivered 150 tons of steel to the factory.", "y": "The factory received 150 tons of steel from the supplier.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Marvin married Sandra in July 2019.", "y": "Sandra married Marvin in July 2019.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The council granted the museum $2.3 million for expansion.", "y": "The museum received $2.3 million from the council for expansion.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Detroit is 170 miles west of Cleveland.", "y": "Cleveland is 170 miles east of Detroit.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Keisha lent her cousin $500 last month.", "y": "Her cousin borrowed $500 from Keisha last month.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The artist donated five sculptures to the gallery.", "y": "The gallery received five sculptures from the artist.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "His grandfather taught him Spanish as a child.", "y": "He learned Spanish as a child from his grandfather.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Prague is 210 kilometers north of Vienna.", "y": "Vienna is 210 kilometers south of Prague.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The landlord rented the office space to the startup.", "y": "The startup rented the office space from the landlord.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "HR hired 45 engineers during the fiscal year.", "y": "45 engineers were hired by HR during the fiscal year.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The competitor undercut our price by 18 percent.", "y": "We were undercut by the competitor by 18 percent.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Jordan preceded Marcus as department chair.", "y": "Marcus succeeded Jordan as department chair.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The book influenced the young writer's style.", "y": "The young writer's style was influenced by the book.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The committee approved the merger with Apex Industries.", "y": "Apex Industries was approved for merger by the committee.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Rachel sold three vintage cars to the collector.", "y": "The collector bought three vintage cars from Rachel.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The river runs east toward the ocean.", "y": "The ocean is east of the river's source.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Peter installed the solar panels on the warehouse roof.", "y": "The warehouse roof has the solar panels installed by Peter.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The pharmaceutical firm sold 1.2 million units to retailers.", "y": "Retailers purchased 1.2 million units from the pharmaceutical firm.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "His mentor introduced him to the industry executives.", "y": "The industry executives met him through his mentor.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Portland is 635 miles south of Seattle.", "y": "Seattle is 635 miles north of Portland.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The orchestra performed Beethoven's Fifth for 2000 attendees.", "y": "2000 attendees attended the orchestra's performance of Beethoven's Fifth.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Danielle inherited the property from her uncle.", "y": "Her uncle bequeathed the property to Danielle.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The firm contracted Nexus Solutions to handle logistics.", "y": "Nexus Solutions was contracted by the firm to handle logistics.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Toronto is 366 miles east of Winnipeg.", "y": "Winnipeg is 366 miles west of Toronto.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The chef taught the apprentice traditional cooking methods.", "y": "The apprentice learned traditional cooking methods from the chef.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The university awarded scholarships to 320 students.", "y": "320 students received scholarships from the university.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Marcus blamed the delay on supply chain issues.", "y": "Supply chain issues were blamed for the delay by Marcus.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "The bank lent the construction company $8.5 million.", "y": "The construction company borrowed $8.5 million from the bank.", "label": "preserving"}
+{"relation": "converse_predicate", "x": "Mount Kilimanjaro rises 5895 meters above the plain.", "y": "The plain lies 5895 meters below Mount Kilimanjaro.", "label": "preserving"}
+{"relation": "fail_to", "x": "The crew finished the survey by May.", "y": "The crew failed to finish the survey by May.", "label": "changing"}
+{"relation": "fail_to", "x": "The research team published their findings in the journal.", "y": "The research team never managed to publish their findings in the journal.", "label": "changing"}
+{"relation": "fail_to", "x": "The construction project met the deadline of March 15.", "y": "The construction project fell short of the March 15 deadline.", "label": "changing"}
+{"relation": "fail_to", "x": "The committee approved the proposed budget increase.", "y": "The committee declined to approve the proposed budget increase.", "label": "changing"}
+{"relation": "fail_to", "x": "The restaurant served dinner by 7 PM as promised.", "y": "The restaurant never managed to serve dinner by 7 PM.", "label": "changing"}
+{"relation": "fail_to", "x": "The developer completed the software module on time.", "y": "The developer failed to complete the software module on time.", "label": "changing"}
+{"relation": "fail_to", "x": "The athlete broke the regional record in the 400-meter dash.", "y": "The athlete declined to even attempt breaking the regional record.", "label": "changing"}
+{"relation": "fail_to", "x": "The vendors delivered the equipment to the warehouse.", "y": "The vendors failed to deliver the equipment to the warehouse.", "label": "changing"}
+{"relation": "fail_to", "x": "The board secured funding for the expansion project.", "y": "The board never managed to secure funding for the expansion project.", "label": "changing"}
+{"relation": "fail_to", "x": "The auditor found no discrepancies in the accounts.", "y": "The auditor fell short of finding no discrepancies in the accounts.", "label": "changing"}
+{"relation": "fail_to", "x": "The student passed the certification exam with a score of 87.", "y": "The student failed to pass the certification exam.", "label": "changing"}
+{"relation": "fail_to", "x": "The sales team closed 23 deals in the third quarter.", "y": "The sales team never managed to close 23 deals in the third quarter.", "label": "changing"}
+{"relation": "fail_to", "x": "The technician repaired the machinery within the service window.", "y": "The technician failed to repair the machinery within the service window.", "label": "changing"}
+{"relation": "fail_to", "x": "The company achieved profitability in 2024.", "y": "The company declined to achieve profitability in 2024.", "label": "changing"}
+{"relation": "fail_to", "x": "The pilot landed the aircraft safely during the storm.", "y": "The pilot never managed to land the aircraft safely during the storm.", "label": "changing"}
+{"relation": "fail_to", "x": "The contractor finished the renovation within budget.", "y": "The contractor fell short of finishing the renovation within budget.", "label": "changing"}
+{"relation": "fail_to", "x": "The laboratory identified the chemical compound.", "y": "The laboratory failed to identify the chemical compound.", "label": "changing"}
+{"relation": "fail_to", "x": "The organization raised $450000 through the charity drive.", "y": "The organization never managed to raise $450000 through the charity drive.", "label": "changing"}
+{"relation": "fail_to", "x": "The author completed the manuscript by the publisher's deadline.", "y": "The author declined to complete the manuscript by the publisher's deadline.", "label": "changing"}
+{"relation": "fail_to", "x": "The team won all 12 games in the series.", "y": "The team failed to win all 12 games in the series.", "label": "changing"}
+{"relation": "fail_to", "x": "The engineers solved the structural problem in the foundation.", "y": "The engineers never managed to solve the structural problem in the foundation.", "label": "changing"}
+{"relation": "fail_to", "x": "The department reached the performance targets for Q3.", "y": "The department fell short of reaching the performance targets for Q3.", "label": "changing"}
+{"relation": "fail_to", "x": "The physician diagnosed the rare disease from the symptoms.", "y": "The physician failed to diagnose the rare disease from the symptoms.", "label": "changing"}
+{"relation": "fail_to", "x": "The supplier produced 500 units of the new component.", "y": "The supplier never managed to produce 500 units of the new component.", "label": "changing"}
+{"relation": "fail_to", "x": "The gardener cultivated the heirloom tomatoes successfully.", "y": "The gardener declined to cultivate the heirloom tomatoes.", "label": "changing"}
+{"relation": "fail_to", "x": "The orchestra performed Mahler's Ninth without any errors.", "y": "The orchestra failed to perform Mahler's Ninth without any errors.", "label": "changing"}
+{"relation": "fail_to", "x": "The investigator resolved the cold case after 16 years.", "y": "The investigator never managed to resolve the cold case after 16 years.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The clinic was busy in June.", "y": "The clinic was hardly busy in June.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The parking lot filled up during peak hours.", "y": "The parking lot barely filled up during peak hours.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The new product generated interest from investors.", "y": "The new product scarcely generated interest from investors.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The restaurant received complaints about service quality.", "y": "The restaurant rarely received complaints about service quality.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The highway experienced congestion during rush hour.", "y": "The highway was hardly congested during rush hour.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The proposal found support among the committee members.", "y": "The proposal barely found support among the committee members.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The training program attracted qualified participants.", "y": "The training program scarcely attracted qualified participants.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The company reported profits during the economic downturn.", "y": "The company rarely reported profits during the economic downturn.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The conference drew 800 attendees from across the region.", "y": "The conference hardly drew 800 attendees from across the region.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The publication gained readers after the TV segment aired.", "y": "The publication barely gained readers after the TV segment aired.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The team showed improvement in the second half.", "y": "The team scarcely showed improvement in the second half.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The renovated building impressed the architectural critics.", "y": "The renovated building rarely impressed the architectural critics.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The website experienced traffic spikes after the announcement.", "y": "The website was hardly experiencing traffic spikes after the announcement.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The negotiation process was successful with both parties.", "y": "The negotiation process barely succeeded with both parties.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The experiment yielded measurable results in three months.", "y": "The experiment scarcely yielded measurable results in three months.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The museum received donations from its members.", "y": "The museum rarely received donations from its members.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The storm caused damage to the coastal communities.", "y": "The storm hardly caused damage to the coastal communities.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The film resonated with audiences of all ages.", "y": "The film barely resonated with audiences of all ages.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The factory operated at full capacity throughout the year.", "y": "The factory scarcely operated at full capacity throughout the year.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The candidate received endorsements from major news outlets.", "y": "The candidate rarely received endorsements from major news outlets.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The initiative gained momentum in the first quarter.", "y": "The initiative was hardly gaining momentum in the first quarter.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The region experienced economic growth following the investment.", "y": "The region barely experienced economic growth following the investment.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The team maintained discipline during the lengthy playoff run.", "y": "The team scarcely maintained discipline during the lengthy playoff run.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The product launched successfully in 15 markets.", "y": "The product rarely launched successfully in 15 markets.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The speaker commanded attention from the audience.", "y": "The speaker hardly commanded attention from the audience.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The venture capital firm identified promising startups.", "y": "The venture capital firm barely identified promising startups.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The infrastructure upgrade resolved bottlenecks in operations.", "y": "The infrastructure upgrade scarcely resolved bottlenecks in operations.", "label": "changing"}
+{"relation": "scalar_adverb", "x": "The alliance strengthened diplomatic relations between the nations.", "y": "The alliance rarely strengthened diplomatic relations between the nations.", "label": "changing"}
+{"relation": "wild_cleft", "x": "The committee approved the budget in March.", "y": "It was in March that the committee approved the budget.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The firm decided to expand operations to Southeast Asia.", "y": "What the firm decided was to expand operations to Southeast Asia.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "Chen discovered the error during the final review.", "y": "It was during the final review that Chen discovered the error.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The legislature passed the environmental protection act in 2022.", "y": "What happened in 2022 was that the legislature passed the environmental protection act.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The researchers published their results in Nature.", "y": "It was in Nature that the researchers published their results.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The crisis required immediate action from leadership.", "y": "What the crisis required was immediate action from leadership.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The storm damaged homes across 12 counties.", "y": "It was across 12 counties that the storm damaged homes.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The startup secured investment through its pitch in Silicon Valley.", "y": "What the startup secured was investment through its pitch in Silicon Valley.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The union negotiated a 4.2 percent wage increase for members.", "y": "It was a 4.2 percent wage increase that the union negotiated for members.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The coach implemented new training protocols in the offseason.", "y": "What the coach implemented was new training protocols in the offseason.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The company announced plans to close three manufacturing sites.", "y": "It was plans to close three manufacturing sites that the company announced.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The city invested $50 million in infrastructure upgrades.", "y": "What the city invested was $50 million in infrastructure upgrades.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The professor emphasizes critical thinking in her lectures.", "y": "It is critical thinking that the professor emphasizes in her lectures.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The organization released guidelines for remote work in January.", "y": "What the organization released was guidelines for remote work in January.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The hospital reduced wait times by 35 percent through restructuring.", "y": "It was through restructuring that the hospital reduced wait times by 35 percent.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The manufacturer obtained certification from the international standards body.", "y": "What the manufacturer obtained was certification from the international standards body.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The investigator found critical evidence at the second crime scene.", "y": "It was at the second crime scene that the investigator found critical evidence.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The alliance accomplished greater integration of supply chains.", "y": "What the alliance accomplished was greater integration of supply chains.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The activists mobilized support through social media campaigns.", "y": "It was through social media campaigns that the activists mobilized support.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The regulatory body approved the merger between two major firms.", "y": "What the regulatory body approved was the merger between two major firms.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The musician recorded a Grammy-winning album with session musicians.", "y": "It was with session musicians that the musician recorded a Grammy-winning album.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The agency developed a new response protocol for emergencies.", "y": "What the agency developed was a new response protocol for emergencies.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The retailer expanded its presence to 47 additional locations.", "y": "It was to 47 additional locations that the retailer expanded its presence.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The volunteer group provided meals to 3000 families during winter.", "y": "What the volunteer group provided was meals to 3000 families during winter.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The engineer solved the efficiency problem by redesigning the motor.", "y": "It was by redesigning the motor that the engineer solved the efficiency problem.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The festival attracted tourists from 18 different countries.", "y": "What the festival attracted was tourists from 18 different countries.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The committee established new criteria for project selection.", "y": "It was new criteria for project selection that the committee established.", "label": "preserving"}
+{"relation": "wild_cleft", "x": "The biologist observed behavioral changes in the study population.", "y": "What the biologist observed was behavioral changes in the study population.", "label": "preserving"}
+{"relation": "modal_deontic", "x": "The plant recycles 40 tons monthly.", "y": "The plant must recycle 40 tons monthly.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The driver maintains a valid license.", "y": "The driver must maintain a valid license.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Employees file tax returns by April 15.", "y": "Employees must file tax returns by April 15.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The hospital reports patient data to the agency.", "y": "The hospital must report patient data to the agency.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The contractor completes the project within 90 days.", "y": "The contractor must complete the project within 90 days.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Passengers wear seatbelts during flight.", "y": "Passengers must wear seatbelts during flight.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The organization publishes annual financial statements.", "y": "The organization must publish annual financial statements.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Workers undergo safety training each year.", "y": "Workers must undergo safety training each year.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The supplier delivers goods on Tuesday mornings.", "y": "The supplier must deliver goods on Tuesday mornings.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Residents pay property taxes by November.", "y": "Residents must pay property taxes by November.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The government inspects restaurants quarterly.", "y": "The government must inspect restaurants quarterly.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The team attends weekly coordination meetings.", "y": "The team must attend weekly coordination meetings.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Customers provide feedback through the survey.", "y": "Customers must provide feedback through the survey.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The vendor qualifies their workers with certifications.", "y": "The vendor must qualify their workers with certifications.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Partners contribute 25 percent of the budget.", "y": "Partners must contribute 25 percent of the budget.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The institution maintains accreditation standards.", "y": "The institution must maintain accreditation standards.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Scientists document results in laboratory notebooks.", "y": "Scientists must document results in laboratory notebooks.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The manufacturer includes a two-year warranty.", "y": "The manufacturer must include a two-year warranty.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Participants sign consent forms before the study.", "y": "Participants must sign consent forms before the study.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The council reviews applications within 14 days.", "y": "The council must review applications within 14 days.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Managers evaluate employee performance in December.", "y": "Managers must evaluate employee performance in December.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The system monitors network usage hourly.", "y": "The system must monitor network usage hourly.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Investors disclose conflicts of interest annually.", "y": "Investors must disclose conflicts of interest annually.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The architect designs buildings to code standards.", "y": "The architect must design buildings to code standards.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The office relocates to the downtown location.", "y": "The office must relocate to the downtown location.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Ships carry life jackets for 150 passengers.", "y": "Ships must carry life jackets for 150 passengers.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The campaign raises $500000 before year-end.", "y": "The campaign must raise $500000 before year-end.", "label": "changing"}
+{"relation": "modal_deontic", "x": "Attendees register 48 hours before the conference.", "y": "Attendees must register 48 hours before the conference.", "label": "changing"}
+{"relation": "modal_deontic", "x": "The laboratory maintains sterile conditions.", "y": "The laboratory must maintain sterile conditions.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The team built the bridge.", "y": "The team was still building the bridge.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The author wrote the novel over two years.", "y": "The author was still writing the novel after two years had passed.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The company launched the new product line.", "y": "The company was still launching the new product line across regions.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The construction crew poured the foundation.", "y": "The construction crew was still pouring the foundation when the rain arrived.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The team completed the software upgrade.", "y": "The team was still completing the software upgrade for legacy systems.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The gardener planted the fruit trees.", "y": "The gardener was still planting fruit trees in the orchard.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The firm acquired three subsidiary companies.", "y": "The firm was still acquiring additional subsidiaries.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The museum installed the new exhibit.", "y": "The museum was still installing the exhibit when we visited.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The student completed her thesis research.", "y": "The student was still completing research for her thesis.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The utility company repaired the damaged power lines.", "y": "The utility company was still repairing power lines from the storm.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The volunteers cleaned up the park.", "y": "The volunteers were still cleaning up debris from the park.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The engineer designed the new cooling system.", "y": "The engineer was still designing improvements to the cooling system.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The publisher printed the textbook for distribution.", "y": "The publisher was still printing copies of the textbook.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The orchestra rehearsed the Brahms symphony.", "y": "The orchestra was still rehearsing sections of the symphony.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The company installed new security systems.", "y": "The company was still installing systems in several buildings.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The researcher analyzed the data from the study.", "y": "The researcher was still analyzing results from the dataset.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The department reorganized its workflow processes.", "y": "The department was still reorganizing procedures across teams.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The contractor installed hardwood flooring.", "y": "The contractor was still installing flooring in the upstairs rooms.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The commission investigated allegations against the official.", "y": "The commission was still investigating multiple allegations.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The chef prepared the five-course meal.", "y": "The chef was still preparing the final courses for dinner.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The crew loaded cargo onto the container ship.", "y": "The crew was still loading containers throughout the day.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The architect redesigned the office layout.", "y": "The architect was still redesigning spaces to optimize workflow.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The team migrated data to the new server.", "y": "The team was still migrating databases when the backup failed.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The hospital trained the new nursing staff.", "y": "The hospital was still training staff members on procedures.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The factory assembled 1200 units.", "y": "The factory was still assembling units on the extended line.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The agency processed applications for the grant program.", "y": "The agency was still processing a backlog of applications.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The team reconstructed the historical timeline.", "y": "The team was still reconstructing details from archival records.", "label": "changing"}
+{"relation": "aspect_shift", "x": "The firm negotiated the merger agreement.", "y": "The firm was still negotiating terms with the other party.", "label": "changing"}
+{"relation": "free_paraphrase", "x": "Revenue at Kolter Ltd climbed 12 percent last quarter.", "y": "Last quarter saw Kolter Ltd's revenue rise by 12 percent.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "The storm swept through the valley with devastating force.", "y": "Devastating force was brought by the storm as it swept through the valley.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Only 18 percent of respondents felt satisfied with service.", "y": "Satisfaction with service was reported by just 18 percent of respondents.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Chen discovered the error by examining the final draft carefully.", "y": "Through careful examination of the final draft, Chen made the discovery of the error.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "The investment portfolio grew substantially due to market gains.", "y": "Market gains drove substantial growth in the investment portfolio.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Throughout the winter, the region received 35 inches of precipitation.", "y": "The winter months brought 35 inches of precipitation to the region.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Rising demand from Asia contributed to the company's expansion.", "y": "The company expanded partly because of rising demand from Asia.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Five executives submitted their resignations to the board yesterday.", "y": "Yesterday brought five executive resignations to the board.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "The hospital's patient intake system needed an upgrade badly.", "y": "The patient intake system at the hospital was badly in need of upgrade.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Controversy surrounded the mayor's decision to privatize services.", "y": "The mayor's decision to privatize services generated considerable controversy.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "With diligent effort, the team achieved all targets by August.", "y": "By August, the team had diligently achieved all of its targets.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Few people anticipated the rapid economic recovery following the crisis.", "y": "The rapid economic recovery after the crisis took most people by surprise.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "The consulting firm identified 47 inefficiencies in production operations.", "y": "Production operations contained 47 inefficiencies that the consulting firm identified.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Breaking news reported that the transit workers ended their strike.", "y": "The transit workers brought their strike to an end, breaking news reported.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Damage from the fire destroyed six homes on Maple Street.", "y": "Six homes on Maple Street were destroyed by damage from the fire.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "The merger of Delta Finance and Arrow Capital was announced today.", "y": "Today's announcement involved the merger of Delta Finance with Arrow Capital.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Across all departments, spending exceeded budget by 19 percent.", "y": "Spending went over budget by 19 percent when measured across all departments.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "The startup attracted venture funding of $4.8 million in its series A.", "y": "In its series A round, the startup attracted $4.8 million in venture funding.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Researchers made significant progress on the vaccine after two years.", "y": "After two years of work, researchers achieved significant vaccine progress.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Consumer complaints decreased notably once the redesign was implemented.", "y": "Once implemented, the redesign brought about a notable decrease in complaints.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "The platform enabled 620 small businesses to expand into new territories.", "y": "620 small businesses were enabled by the platform to expand territorially.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Shipping delays affected inventory management at three retail locations.", "y": "At three retail locations, inventory management suffered from shipping delays.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "The partnership between Prism and Nexus yielded unprecedented innovation.", "y": "Unprecedented innovation resulted from the partnership between Prism and Nexus.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Interest rates rose sharply, causing mortgage lenders to tighten standards.", "y": "When interest rates rose sharply, mortgage lenders tightened their standards.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "After 50 years in business, the factory announced its permanent closure.", "y": "The factory announced its permanent closure having been in business 50 years.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "The artist's exhibition attracted record-breaking attendance numbers this fall.", "y": "Record-breaking attendance this fall was achieved by the artist's exhibition.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "Regulations prevented the development of the proposed industrial park.", "y": "The proposed industrial park could not be developed due to regulations.", "label": "preserving"}
+{"relation": "free_paraphrase", "x": "With only a 7-member team, the nonprofit served 2400 beneficiaries last year.", "y": "The nonprofit's 7-member team served 2400 beneficiaries during the past year.", "label": "preserving"}

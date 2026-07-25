@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-07-25T17:21:42.654854+00:00",
+  "abstain_auc": {
+    "margin": 0.5013690476190475,
+    "top1": 0.6479421768707483,
+    "id_cov": 0.9519132653061224
+  },
+  "halt_auc": {
+    "margin": {
+      "done_vs_mid": 0.9997222292366355,
+      "done_vs_overstep": 0.9605818034898108
+    },
+    "top1": {
+      "done_vs_mid": 1.0,
+      "done_vs_overstep": 0.9828034645589758
+    },
+    "id_cov": {
+      "done_vs_mid": 1.0,
+      "done_vs_overstep": 0.9872730486603873
+    }
+  },
+  "n_walks": 199,
+  "verdict": "abstain: best signal id_cov AUC=0.952; usable"
+}
