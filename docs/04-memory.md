@@ -8,7 +8,8 @@ Declarative knowledge lives in an **external associative store**, not in reasone
 
 - **Channel ownership at retrieval** mirrors D3: the gist discriminates *relations*, the identity channel discriminates *entities*. Identity rescoring measured ~0 at 360 entries (the gist suffices); it is retained because reasoner-generated query latents will be noisy (D24) and stores will be larger.
 - **Keys ≠ values at supersession**: updates arrive event-phrased while queries arrive at the state-phrased address the superseded entry occupied. `supersede()` transfers the old entry's address to the new entry; shadowed entries persist for provenance. Post-edit retrieval = pre-edit exactly (0.900).
-- Relation operators are closed-form mean displacements, fit from ~20 (question, fact) pairs each — cheap enough to fit per-relation on the fly.
+- Relation operators are closed-form mean displacements, fit from ~20 (question, fact) pairs each — cheap enough to fit per-relation on the fly. They scale: 0.991 P@1 at 9,900 entries, 1.000 with identity rescoring (D26).
+- **Multi-hop addressing requires symbolic hand-off between hops** (D26): hop displacements are content-conditional (the answer's address depends on the intermediate ENTITY), so composed/chained fixed translations fail (0.003/0.062) while reading the intermediate identity symbolically and re-addressing succeeds (0.998). Same law as D16, at a new altitude. Hop state that must cross a hop boundary travels in the identity channel.
 
 This is the path to continuous learning: acquiring knowledge = writing entries (non-destructive, no catastrophic forgetting, instantly effective, locally editable), not fine-tuning.
 

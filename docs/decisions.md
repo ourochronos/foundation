@@ -93,6 +93,29 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-25 — D26: Memory at 9.9k + 2-hop composition — latent-only hops are DEAD, symbolic hand-off is mandatory, and it's D16's law again (`results/memory_v1.json`)
+Closed world scaled 27× (9,900 facts, 7 relations — `data/closed_world_v1.json`), plus 400 two-hop cases ("population of the capital of X") run three ways.
+
+**Scale (D25 gates at 9.9k):** paraphrase P@1 0.794→0.763 (27× the near-duplicates cost 3 points — the whitened gist scales better than predicted); relational translation addressing **improves** to 0.991 (more fit pairs per operator) and reaches **1.000** with identity rescoring. The rescoring-activation prediction from D25 was only *partially* right: on paraphrase queries it is still a no-op (+0.004) even at 9.9k — the activation regime, if it exists, needs noisy query latents (D24), not just scale. Edit gate underpowered at this world's query sampling (n=4) — the 360-world measurement stands.
+
+**2-hop composition — the reasoner question, answered for this space:**
+
+| chain | P@1 |
+|---|---|
+| hop-1 operator addressing (`z_q + t_cap`) | 0.998 |
+| A composed operators, no grounding (`z_q + t_cap + t_hop`) | **0.003** |
+| B latent chain WITH retrieval snap (`z(fact₁) + t_hop`) | **0.062** |
+| C symbolic hand-off (read capital from fact₁, re-encode, `+ t_pop`) | **0.998** |
+
+A-vs-B: grounding the intermediate (snapping to the true fact latent) barely helps — grounding is not the failure. B-vs-C is the finding: **the hop displacement is content-conditional** — where the answer fact lives depends on the *intermediate entity's identity*, and a fixed translation carries only the relation-template mean. This is D16's law (fixed maps cannot carry entity-dependent structure) recurring at the addressing level, third appearance overall (codec structure channel, decoder binding, now memory hops).
+
+**Consequences:**
+1. **Naive latent-only multi-hop reasoning (fixed-operator Coconut-style) is refuted for this space.** The reasoner must interleave continuous ops with **symbolic identity hand-offs between hops** — precisely the triple's division of labor, and the hand-off needs only the identity channel (the capital's name is IN fact₁'s identity slots; no full text decode required in principle).
+2. **A hand-coded 2-hop chain runs at 0.998 end-to-end** — this is simultaneously the working QA pipeline the T3/T5 gates were waiting for, and the floor any trained reasoner must beat (D8 spirit: the baseline exists before the model does).
+3. One program-wide law, three scales: continuous operators own *type-level* transformations (valence, relation templates); *entity-dependent* information must ride symbolic channels. Phase-3 reasoner design starts from this, not from hope.
+
+**Revisit**: whether a *conditioned* (entity-keyed) hop operator — e.g., translation + identity-gated addressing per hop — can close latent-B without text; that is a reasoner-architecture question now.
+
 ## 2026-07-25 — D25: Memory store v0 passes the Phase-2 retrieval gate — translation addressing at 0.99, edits transparent via key/value separation (`results/memory_v0.json`)
 First Phase-2 artifact: `codec/memory_store.py` + a deterministic closed world (`scripts/gen_closed_world.py`: 360 facts over invented entities, 5 relations, near-duplicate templates so **identity, not lexical luck, is what retrieval must resolve**; 720 queries whose phrasings share no template with stored facts; 20 supersession edits).
 

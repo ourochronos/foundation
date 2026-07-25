@@ -1,6 +1,6 @@
 # Current state — 2026-07-25
 
-**Resume here.** Read this + [decisions.md](decisions.md) (D1–D25) to pick up cold. Everything ran locally on the RX 9070.
+**Resume here.** Read this + [decisions.md](decisions.md) (D1–D26) to pick up cold. Everything ran locally on the RX 9070.
 
 ## Artifacts
 
@@ -69,7 +69,7 @@ Binding given-present 0.714 → **0.795** (mis-attachment −28% relative), numb
 2. ~~Codec-level min(struct, identity)~~ — landed (D23): `codec/identity_channel.py`, bidirectional-mismatch rule, zero false flags; margin +0.011→**+0.022**, pair-AUC 0.942→**0.963** (`results/codec_compare_v0.json`, `scripts/probe_codec_compare.py`). Bottleneck now formality vs tense (both marked-feature cases).
 3. ~~Cycle-under-noise~~ — landed (D24): output quality INVARIANT to gist noise through σ=0.8 (2× training range); symbolic channels error-correct the gist. De-risks T1: the reasoner may be sloppy in continuous space (`results/cycle_noise_decoder_v2t.json`).
 4. ~~Interpolation at v2~~ — ran; it turned into a **channel-conflict experiment** (side channels fixed at A while gist slerps to B) and the identity channel won outright: output stays A's proposition at every t (D21 note). Design implication for Phase 2: **latent ops must update the triple coherently — moving the gist alone moves nothing.** A true v2 traversability probe needs path-following side channels.
-4. **Phase 2 opened — memory store v0 PASSES the retrieval gate (D25)**: `codec/memory_store.py` + closed world (`data/closed_world.json`); relational translation addressing 0.988, edits transparent via key/value separation at supersession. Remaining for the full gate: forgetting curves (T5) and small+store vs larger-dense (T3) — both need at least a QA head; next concrete steps are scaling the store (~10k entries, where identity rescoring should activate) and reasoner-noised query latents (D24 bridge).
+4. **Phase 2 opened and scaled (D25/D26)**: store v0 passes retrieval gates at 360 AND 9,900 facts (relational addressing 0.991→1.000 with identity at 9.9k). **D26 is the program's load-bearing result**: 2-hop chains — latent-only composition dead (0.003/0.062), symbolic identity hand-off between hops 0.998. D16's content-conditional law, third appearance. The hand-coded chain IS the QA pipeline for T3/T5 and the reasoner's baseline-to-beat. Next: reasoner-noised query latents (D24 bridge, tests identity-rescore activation); entity-keyed hop operators (can anything latent close the B-gap?); then the trained recurrent core against the 0.998 floor.
 5. Then per roadmap: cycle k>1, anchor sweep at scale, memory-addressing refinement using the confirmed operator inventory (valence = translation, role-swap = slot exchange, tense = bit flip, hedge = bit flip — D15/D18/D20). The reasoner-facing latent is now the working triple.
 
 ## Instrument checks (run after touching the structure channel)

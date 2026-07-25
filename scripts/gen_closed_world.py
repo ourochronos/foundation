@@ -28,16 +28,17 @@ OUT = ROOT / "data" / "closed_world.json"
 rng = random.Random(7)
 
 ON = ["bar", "den", "kel", "mor", "tal", "ven", "zor", "lin", "gar", "sel",
-      "tro", "fen", "hal", "rin", "cas", "dov", "mel", "par", "qua", "wes"]
+      "tro", "fen", "hal", "rin", "cas", "dov", "mel", "par", "qua", "wes",
+      "nol", "vik", "sar", "tem", "gol", "bre", "chi", "dur", "eks", "fos"]
 END = {"country": ["ia", "land", "mark", "stan", "ovia"],
        "city": ["ton", "burg", "ford", "haven", "port", "dale"],
        "person": ["a", "en", "us", "ette", "or"],
        "company": [" Industries", " Systems", " Group", " Holdings", " Labs"]}
 
 
-def name(kind: str, used: set) -> str:
+def name(kind: str, used: set, syl: int = 2) -> str:
     while True:
-        n = "".join(rng.choice(ON) for _ in range(2)).capitalize() + rng.choice(END[kind])
+        n = "".join(rng.choice(ON) for _ in range(syl)).capitalize() + rng.choice(END[kind])
         if kind == "person":
             n = n + " " + ("".join(rng.choice(ON) for _ in range(2)).capitalize())
         if n not in used:

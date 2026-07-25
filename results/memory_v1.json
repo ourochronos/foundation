@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-07-25T10:22:40.944260+00:00",
+  "n_facts": 9900,
+  "paraphrase": {
+    "gist_only": 0.7633333333333333,
+    "with_identity": 0.7666666666666667
+  },
+  "relational": {
+    "raw": 0.8635294117647059,
+    "with_translation": 0.9905882352941177,
+    "with_translation_and_identity": 1.0
+  },
+  "edit": {
+    "pre": 0.75,
+    "post_new_object": 0.75,
+    "n": 4
+  },
+  "hops": {
+    "n": 400,
+    "hop1_p1": 0.9975,
+    "A_composed_ops": 0.0025,
+    "B_latent_chain_snap": 0.0625,
+    "C_codec_loop": 0.9975
+  }
+}
