@@ -188,14 +188,26 @@ def qids_of(text):
                      + [t.text for t in doc if t.like_num])
 
 def walk(q_z, q_ids, chain):
-    obs = env.reset(q_z, q_ids)
+    """Channel-separated walk (replaces the D30 oracle walk, gold-chain exec
+    0.93-1.00 vs 0.0-0.76): the dense query per hop is the relation PROTOTYPE
+    + operator — type-level only, because the question gist encodes the LAST
+    hop's relation and derails intermediate hops (measured: all loc_cap_pop
+    walks grabbed the subject's population fact at hop 1). The entity rides
+    the id channel; the hand-off mask is ids(cur) - ids(handed in) — subtract
+    the subject side only, NOT all seen ids, so revisit compositions where
+    the answer entity already appears in the question keep their hand-off."""
+    env.reset(q_z, q_ids)
+    hand = q_ids
     for k, rel in enumerate(chain):
-        a = Action(relation=RELS.index(rel),
-                   hand_ids=(obs.cur_ids or set()) - q_ids if k else set(),
-                   demote_ids=q_ids if k else set(), exclude_visited=k > 0)
-        obs, _ = env.step(a)
-        if k == 0 and obs.id_cov < 0.34:
+        z = unit(rel_entry[rel]["proto"] + rel_entry[rel]["t"])
+        r = store.query(z, hand or None, k=2, id_weight=1.0,
+                        exclude=env.visited if k else None)
+        env.cur = r[0][0]
+        env.visited.add(r[0][0])
+        cov = len(hand & store.ids[env.cur]) / max(len(hand), 1)
+        if k == 0 and cov < 0.34:
             return None
+        hand = store.ids[env.cur] - hand
     return env.cur
 
 res, chain_ok = {}, {}

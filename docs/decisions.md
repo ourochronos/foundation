@@ -2,6 +2,18 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-25 — D43: Walk execution SOLVED — the walk itself must obey channel separation (gold-chain exec 0.93–1.00, was 0.00–0.76)
+**The defect** (found tracing loc_cap_pop, where BOTH planners produced perfect chains and BOTH executed at 0.000): the D30-era walk queries hop k with `question_gist + t_rel`. But a multi-hop question's gist encodes the LAST hop's relation — "population of the capital of the country containing X" is population-flavored — so hop 1's `+ t_located_in` still lands on the subject's *population* fact. Measured: all 20 traced walks diverged at hop 1. A second, independent defect: the hand-off mask `ids(cur) − all_seen_ids` goes EMPTY on revisit compositions (half of v4's loc_cap_pop cases have the subject city as its country's capital — the answer entity is already in the question, so subtracting seen ids deletes the hand-off).
+
+**The fix — the walk is channel separation applied one more time (sixth appearance of the law):**
+1. The dense query for hop k is the relation **prototype + operator** (`proto_r + t_r`) — type-level content only. The question's gist never touches intermediate hops.
+2. The entity rides the id channel exclusively: `id_weight=1.0`, hand-off mask = `ids(cur) − ids(handed in)` — subtract the *subject side* of the current fact only, keeping the object even when it already appeared in the question.
+
+Gold-chain execution, all 12 v4 compositions (`walk()` in `scripts/probe_soft_planner.py`): 0.933–1.000, mean **0.972** — including loc_cap_pop 0.983 (3-hop, was 0.000) and loc_big 1.000 (the revisit composition that broke D30's hard walk semantics). The old oracle floors (0.0–0.76) were floors of a *defective executor*, not of the task.
+
+**End-to-end (D41 planner ∘ this walk), mean 0.804 vs hand-schema 0.25:** cap_mayor holdout 0.953, hq_loc_cap holdout 0.967, loc_cap_pop 0.983, hq_mayor 0.993. P@1 now tracks chain-correct within 1–5 points everywhere — **planning is the only remaining bottleneck**, and its misses are pure detection failures (hq_loc 0.300/loc_cap 0.467: a spurious third hop appended; cap_pop 0.623: population_of↔mayor_of span confusion). A det-threshold repair was tried and rejected: weakly-detected-but-REAL relations (born_in) are indistinguishable from spurious appends by span-prototype cosine alone — that discrimination is what v0.6's learned detector must supply.
+**Revisit**: never for the walk semantics; the detector via v0.6.
+
 ## 2026-07-25 — D42: The gist channel IS an interlingua — zero cross-lingual retrieval gap (J5, D40 validated)
 **Experiment** (`scripts/probe_crosslingual.py`, `results/crosslingual_j5.json`, `data/crosslingual_queries_v0.json`): 200 v4 single-hop queries translated to French/German (Haiku agent; invented entity names kept verbatim), retrieved against the untouched ENGLISH fact store.
 
@@ -18,19 +30,21 @@ Crossing the language boundary costs **nothing** — FR is within noise of (nume
 ## 2026-07-25 — D41: Zero-hand-schema planning WORKS — and beats the hand schema on held-out compositions (J3, D38 §1 validated)
 **Experiment** (`scripts/probe_soft_planner.py`, `results/soft_planner_j3.json`): rebuild D37's typed-unification planner with NOTHING hand-written — no relation signatures, no cue lexicon, no answer-type table. Everything derives from the store: entity types = **relational-participation vectors** (normalized counts over (relation, role) — "a city is the kind of thing with population/located-in/mayor facts"); relation entries carry data-derived domain/range profiles (mean participation of their subjects/objects), a question-prototype (mean train-question embedding), and the translation operator; detection = noun-chunk/verb spans retrieved against relation prototypes; answer typing = participation-cluster prototypes from training questions.
 
-Chain-correct on v4 (all compositions; holdouts never seen as compositions):
+Soft vs hand schema (D37, `results/typed_planner_v05.json`) on v4 — chain-correct / end-to-end P@1. **Correction 2026-07-25**: the first version of this table compared soft chain-correct against hand END-TO-END numbers; corrected below against the hand schema's actual chain-correct.
 
-| composition | soft (zero-schema) | hand schema (D37) |
+| composition | soft chain / P@1 | hand chain / P@1 |
 |---|---|---|
-| **big_pop** (holdout) | **0.693** | 0.553 |
-| **cap_mayor** (holdout) | **1.000** | 0.353 |
-| **hq_loc_cap** (holdout) | **1.000** | — |
-| cap_pop | 0.623 | 1.000 |
-| hq_pop / hq_mayor / loc_cap_pop | 1.000 | — |
-| mayor_born / ceo_born / loc_big | 0.950 / 0.928 / 0.900 | — |
-| weak: hq_loc / loc_cap | 0.300 / 0.467 | — |
+| **big_pop** (holdout) | 0.693 / 0.480 | **1.000** / **0.553** |
+| **cap_mayor** (holdout) | **1.000** / **0.520** | 0.693 / 0.353 |
+| **hq_loc_cap** (holdout) | **1.000** / **0.242** | 0.000 / 0.042 |
+| cap_pop | 0.623 / 0.491 | 1.000 / 0.714 |
+| hq_mayor | **1.000** / **0.207** | 0.000 / 0.000 |
+| hq_pop | **1.000** / **0.589** | 0.367 / 0.222 |
+| loc_big / loc_cap / mayor_born | 0.900 / 0.467 / 0.950 | 0.000 / 0.000 / 0.361 |
+| loc_cap_pop | 1.000 / **0.000** | 1.000 / **0.000** |
+| weak: hq_loc | 0.300 / 0.133 | 0.327 / 0.160 |
 
-Not degenerate: five distinct compositions each get distinct perfect chains. The weak cells are detection confusions between located_in/headquartered_in span vocabulary — an evidence problem, not a schema problem.
+Mean chain-correct: soft **0.822** vs hand **0.478** — the hand lexicon simply had no cues for half the compositions (hq_mayor, loc_big, loc_cap at 0.000), which is exactly the rigidity the user flagged when rejecting it. On holdouts, soft wins 2/3 on both metrics and loses only big_pop chain accuracy. Not degenerate: five distinct compositions each get distinct perfect chains. The weak cells (hq_loc, loc_cap) are detection confusions in located_in/headquartered_in span vocabulary — an evidence problem, not a schema problem. Note loc_cap_pop: BOTH planners produce perfect chains and BOTH execute at 0.000 — the 3-hop walk defect is in the shared executor, independent of planning.
 
 **It took three attempts, and both failures localize informatively:**
 1. **v1 (surface types) FAILED** — k-means clusters over entity-NAME embeddings are phonological mush for invented names: mean off-diagonal domain-profile cosine **0.862** (indistinct). Diagnostics: detection recall@4 was fine (0.90); the scorer given gold candidates still scored 0.050 — the type signal itself carried nothing. *Types cannot come from what an entity is called.*
