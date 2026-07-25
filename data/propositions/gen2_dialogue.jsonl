@@ -1,0 +1,221 @@
+{"text": "At Tuesday's town hall, Councilwoman Ferreira promised that the Ashwood Library would reopen by October 3rd with 40% more shelf space.", "entities": ["Councilwoman Ferreira", "Ashwood Library", "October 3rd"], "numbers": ["40%"], "domain": "dialogue"}
+{"text": "Dr. Okafor disputed the claim that artificial intelligence would replace 30% of office jobs by 2027.", "entities": ["Dr. Okafor"], "numbers": ["30%", "2027"], "domain": "dialogue"}
+{"text": "Mayor Chen warned residents that water restrictions would begin on June 15th to conserve drought-stricken reservoirs.", "entities": ["Mayor Chen", "June 15th"], "numbers": ["June 15th"], "domain": "dialogue"}
+{"text": "Professor Yamamoto conceded that her research had underestimated the project budget by approximately $2.5 million.", "entities": ["Professor Yamamoto"], "numbers": ["$2.5 million"], "domain": "dialogue"}
+{"text": "Director Peterson claimed that Riverton High School's graduation rate improved from 78% to 84% this year.", "entities": ["Director Peterson", "Riverton High School"], "numbers": ["78%", "84%"], "domain": "dialogue"}
+{"text": "Senator Blackwell denied allegations that she had misused campaign funds totaling $150,000 from private donors.", "entities": ["Senator Blackwell"], "numbers": ["$150,000"], "domain": "dialogue"}
+{"text": "Ms. Hernandez forecast that organic produce sales would surge 35% during the next fiscal quarter.", "entities": ["Ms. Hernandez"], "numbers": ["35%"], "domain": "dialogue"}
+{"text": "Chief Nakamura estimated that rebuilding the downtown district would cost roughly $85 million and take four years.", "entities": ["Chief Nakamura"], "numbers": ["$85 million", "four"], "domain": "dialogue"}
+{"text": "Ambassador Kowalski promised the delegation that humanitarian aid of $50 million would arrive by February 2026.", "entities": ["Ambassador Kowalski", "February 2026"], "numbers": ["$50 million"], "domain": "dialogue"}
+{"text": "Dr. Rodriguez denied that the vaccine caused the reported side effects in 0.3% of trial participants.", "entities": ["Dr. Rodriguez"], "numbers": ["0.3%"], "domain": "dialogue"}
+{"text": "Governor Sterling claimed that renewable energy now supplies 45% of the state's total electricity demand.", "entities": ["Governor Sterling"], "numbers": ["45%"], "domain": "dialogue"}
+{"text": "Professor Lindstrom warned that melting ice sheets could raise sea levels by 6 to 8 feet by 2100.", "entities": ["Professor Lindstrom"], "numbers": ["6", "8 feet", "2100"], "domain": "dialogue"}
+{"text": "Ms. Abiola conceded that customer satisfaction scores had dropped 12 points compared to last quarter.", "entities": ["Ms. Abiola"], "numbers": ["12"], "domain": "dialogue"}
+{"text": "Vice President Marchetti forecast that unemployment would fall to 3.8% by the end of the fiscal year.", "entities": ["Vice President Marchetti"], "numbers": ["3.8%"], "domain": "dialogue"}
+{"text": "Detective Sullivan disputed the witness's account that the suspect had been present on January 14th.", "entities": ["Detective Sullivan", "January 14th"], "numbers": ["January 14th"], "domain": "dialogue"}
+{"text": "Dr. Stein estimated that the rehabilitation program would benefit approximately 2,000 individuals in the community.", "entities": ["Dr. Stein"], "numbers": ["2,000"], "domain": "dialogue"}
+{"text": "Commissioner Taylor warned that budget cuts would eliminate 250 teaching positions before the fall semester.", "entities": ["Commissioner Taylor"], "numbers": ["250"], "domain": "dialogue"}
+{"text": "Mr. Petrov promised investors that dividend payouts would increase by 8% annually for the next five years.", "entities": ["Mr. Petrov"], "numbers": ["8%", "five"], "domain": "dialogue"}
+{"text": "Professor Nakamura claimed that her team had discovered 17 new species in the Amazon rainforest.", "entities": ["Professor Nakamura", "Amazon rainforest"], "numbers": ["17"], "domain": "dialogue"}
+{"text": "Chief Executive Officer Fontaine denied reports that the company would lay off 5,000 workers.", "entities": ["Chief Executive Officer Fontaine"], "numbers": ["5,000"], "domain": "dialogue"}
+{"text": "Dr. Okoye forecast that global temperatures would rise 2.5 degrees Celsius by mid-century.", "entities": ["Dr. Okoye"], "numbers": ["2.5 degrees Celsius"], "domain": "dialogue"}
+{"text": "Mayor Solis conceded that the new stadium had cost 45% more than originally budgeted.", "entities": ["Mayor Solis"], "numbers": ["45%"], "domain": "dialogue"}
+{"text": "Minister Abrams claimed that the infrastructure bill would create 75,000 new jobs across rural regions.", "entities": ["Minister Abrams"], "numbers": ["75,000"], "domain": "dialogue"}
+{"text": "Dr. Chen warned that antibiotic resistance was increasing by 22% annually in hospital settings.", "entities": ["Dr. Chen"], "numbers": ["22%"], "domain": "dialogue"}
+{"text": "Senator Guzman promised constituents that property taxes would be capped at 2% annually.", "entities": ["Senator Guzman"], "numbers": ["2%"], "domain": "dialogue"}
+{"text": "Professor Weiss disputed the notion that inflation had actually risen to 7.2% as recently reported.", "entities": ["Professor Weiss"], "numbers": ["7.2%"], "domain": "dialogue"}
+{"text": "Chief Rodriguez estimated that cleanup efforts would require approximately 18 months and $40 million.", "entities": ["Chief Rodriguez"], "numbers": ["18 months", "$40 million"], "domain": "dialogue"}
+{"text": "Ms. O'Brien claimed that her startup had secured $3.5 million in Series A funding this quarter.", "entities": ["Ms. O'Brien"], "numbers": ["$3.5 million"], "domain": "dialogue"}
+{"text": "Dr. Patel denied that the medication carried a 15% risk of adverse cardiac events.", "entities": ["Dr. Patel"], "numbers": ["15%"], "domain": "dialogue"}
+{"text": "Governor Martinez warned that drought conditions would persist through September 2026.", "entities": ["Governor Martinez", "September 2026"], "numbers": ["September 2026"], "domain": "dialogue"}
+{"text": "Professor Hammond conceded that the study's sample size of 300 participants was smaller than ideal.", "entities": ["Professor Hammond"], "numbers": ["300"], "domain": "dialogue"}
+{"text": "Admiral Sterling forecast that naval operations would require 20% additional fuel allocations next fiscal year.", "entities": ["Admiral Sterling"], "numbers": ["20%"], "domain": "dialogue"}
+{"text": "Director Wilson claimed that the documentary project would premiere at Cannes on May 18th.", "entities": ["Director Wilson", "Cannes", "May 18th"], "numbers": ["May 18th"], "domain": "dialogue"}
+{"text": "Ms. Kapoor disputed the assessment that employee turnover had increased to 35% this year.", "entities": ["Ms. Kapoor"], "numbers": ["35%"], "domain": "dialogue"}
+{"text": "Dr. Eriksson warned scientists that ocean acidification had reached unprecedented levels of 8.2 pH.", "entities": ["Dr. Eriksson"], "numbers": ["8.2"], "domain": "dialogue"}
+{"text": "Mayor Yamamoto promised residents that a new transit line would be operational by March 2027.", "entities": ["Mayor Yamamoto", "March 2027"], "numbers": ["March 2027"], "domain": "dialogue"}
+{"text": "Professor Chen claimed that renewable energy had become 32% cheaper than fossil fuels in recent analysis.", "entities": ["Professor Chen"], "numbers": ["32%"], "domain": "dialogue"}
+{"text": "Commander Fisher estimated that the evacuation would involve roughly 50,000 residents from coastal areas.", "entities": ["Commander Fisher"], "numbers": ["50,000"], "domain": "dialogue"}
+{"text": "Senator Hartley denied accusations that he had accepted bribes exceeding $500,000 over three years.", "entities": ["Senator Hartley"], "numbers": ["$500,000", "three"], "domain": "dialogue"}
+{"text": "Dr. Voigt warned that the new variant could infect up to 60% of the unvaccinated population.", "entities": ["Dr. Voigt"], "numbers": ["60%"], "domain": "dialogue"}
+{"text": "Chief Justice Brennan conceded that case backlogs had grown by 28% since 2024.", "entities": ["Chief Justice Brennan"], "numbers": ["28%", "2024"], "domain": "dialogue"}
+{"text": "Professor Adeyemi forecast that artificial rainfall technology would be viable within 10 years.", "entities": ["Professor Adeyemi"], "numbers": ["10"], "domain": "dialogue"}
+{"text": "Minister De Silva claimed that agricultural production had surged 19% following the irrigation project.", "entities": ["Minister De Silva"], "numbers": ["19%"], "domain": "dialogue"}
+{"text": "Dr. Novak disputed reports that the trial had a success rate of only 42%.", "entities": ["Dr. Novak"], "numbers": ["42%"], "domain": "dialogue"}
+{"text": "Mayor Kowalski promised that the community center would reopen by July 1st with full amenities.", "entities": ["Mayor Kowalski", "July 1st"], "numbers": ["July 1st"], "domain": "dialogue"}
+{"text": "Professor Sato estimated that the archive contained approximately 1.2 million historical documents.", "entities": ["Professor Sato"], "numbers": ["1.2 million"], "domain": "dialogue"}
+{"text": "Commander Ellis warned that equipment shortages would impact readiness by roughly 25% this quarter.", "entities": ["Commander Ellis"], "numbers": ["25%"], "domain": "dialogue"}
+{"text": "CEO Patel claimed that quarterly revenue had increased by $12 million year-over-year.", "entities": ["CEO Patel"], "numbers": ["$12 million"], "domain": "dialogue"}
+{"text": "Senator Brooks denied that her office had received funding from the Riverside Corporation.", "entities": ["Senator Brooks", "Riverside Corporation"], "numbers": [], "domain": "dialogue"}
+{"text": "Dr. Hassan forecast that clinical trials would conclude by October 2026 with preliminary results.", "entities": ["Dr. Hassan", "October 2026"], "numbers": ["October 2026"], "domain": "dialogue"}
+{"text": "Professor Müller conceded that historical projections had underestimated population growth by 15%.", "entities": ["Professor Müller"], "numbers": ["15%"], "domain": "dialogue"}
+{"text": "Governor Reyes warned that pension liabilities would exceed $300 billion within five years.", "entities": ["Governor Reyes"], "numbers": ["$300 billion", "five"], "domain": "dialogue"}
+{"text": "Ms. Fontaine claimed that her nonprofit had distributed meals to 8,500 families this month.", "entities": ["Ms. Fontaine"], "numbers": ["8,500"], "domain": "dialogue"}
+{"text": "Detective Morrison disputed the defendant's alibi for the evening of November 22nd.", "entities": ["Detective Morrison", "November 22nd"], "numbers": ["November 22nd"], "domain": "dialogue"}
+{"text": "Dr. Kwon estimated that rehabilitation services would cost approximately $15 million annually.", "entities": ["Dr. Kwon"], "numbers": ["$15 million"], "domain": "dialogue"}
+{"text": "Chief Administrator Thorne warned that staff absences would rise 18% during winter months.", "entities": ["Chief Administrator Thorne"], "numbers": ["18%"], "domain": "dialogue"}
+{"text": "Ambassador Foster promised the summit that peace talks would resume by April 2026.", "entities": ["Ambassador Foster", "April 2026"], "numbers": ["April 2026"], "domain": "dialogue"}
+{"text": "Professor Lena claimed that the algorithm had achieved a 98% accuracy rate on test data.", "entities": ["Professor Lena"], "numbers": ["98%"], "domain": "dialogue"}
+{"text": "Mr. Rashid disputed the audit findings that overhead expenses exceeded $2.3 million.", "entities": ["Mr. Rashid"], "numbers": ["$2.3 million"], "domain": "dialogue"}
+{"text": "Dr. Sokolov forecast that interest rates would decline by 0.75% in the coming months.", "entities": ["Dr. Sokolov"], "numbers": ["0.75%"], "domain": "dialogue"}
+{"text": "Mayor Lim conceded that the project timeline had slipped by approximately 8 weeks.", "entities": ["Mayor Lim"], "numbers": ["8 weeks"], "domain": "dialogue"}
+{"text": "Minister Okonkwo claimed that youth employment programs had created 12,000 new positions.", "entities": ["Minister Okonkwo"], "numbers": ["12,000"], "domain": "dialogue"}
+{"text": "Senator Vasquez warned constituents that healthcare costs would increase by 11% next year.", "entities": ["Senator Vasquez"], "numbers": ["11%"], "domain": "dialogue"}
+{"text": "Professor Keller denied that mercury levels in the watershed had reached dangerous thresholds.", "entities": ["Professor Keller"], "numbers": [], "domain": "dialogue"}
+{"text": "Dr. Ishikawa estimated that the pandemic had delayed research progress by approximately 18 months.", "entities": ["Dr. Ishikawa"], "numbers": ["18 months"], "domain": "dialogue"}
+{"text": "CEO Lancaster claimed that market share had grown from 12% to 19% in 2025.", "entities": ["CEO Lancaster"], "numbers": ["12%", "19%", "2025"], "domain": "dialogue"}
+{"text": "Chief Makeba warned that fire danger would remain high through mid-October.", "entities": ["Chief Makeba"], "numbers": ["mid-October"], "domain": "dialogue"}
+{"text": "Professor Zakharian promised colleagues that the second phase would begin by September 1st.", "entities": ["Professor Zakharian", "September 1st"], "numbers": ["September 1st"], "domain": "dialogue"}
+{"text": "Dr. Benson disputed assertions that funding cuts would eliminate 40% of research capacity.", "entities": ["Dr. Benson"], "numbers": ["40%"], "domain": "dialogue"}
+{"text": "Mayor Ashton forecast that tourism revenue would increase by $50 million this fiscal year.", "entities": ["Mayor Ashton"], "numbers": ["$50 million"], "domain": "dialogue"}
+{"text": "Ms. Garrison conceded that delivery times had increased from 3 days to 5 days.", "entities": ["Ms. Garrison"], "numbers": ["3 days", "5 days"], "domain": "dialogue"}
+{"text": "Minister Adeleke claimed that the infrastructure bill would benefit 2.1 million residents.", "entities": ["Minister Adeleke"], "numbers": ["2.1 million"], "domain": "dialogue"}
+{"text": "Admiral Larson warned that naval readiness had declined by 22% due to budget constraints.", "entities": ["Admiral Larson"], "numbers": ["22%"], "domain": "dialogue"}
+{"text": "Professor Gutierrez denied allegations that the research was financially compromised.", "entities": ["Professor Gutierrez"], "numbers": [], "domain": "dialogue"}
+{"text": "Dr. Tieu estimated that the population would reach 7.2 million by 2030.", "entities": ["Dr. Tieu"], "numbers": ["7.2 million", "2030"], "domain": "dialogue"}
+{"text": "Governor Paulson promised that educational funding would increase by $75 million next year.", "entities": ["Governor Paulson"], "numbers": ["$75 million"], "domain": "dialogue"}
+{"text": "Professor Khalil disputed the premise that climate change was slowing in recent decades.", "entities": ["Professor Khalil"], "numbers": [], "domain": "dialogue"}
+{"text": "CEO Hernandez claimed that company profits had risen 34% despite market headwinds.", "entities": ["CEO Hernandez"], "numbers": ["34%"], "domain": "dialogue"}
+{"text": "Chief Judge Winters warned that court delays could exceed 200 days by year's end.", "entities": ["Chief Judge Winters"], "numbers": ["200 days"], "domain": "dialogue"}
+{"text": "Ms. Prabhu forecast that subscriptions would reach 500,000 by December 2026.", "entities": ["Ms. Prabhu", "December 2026"], "numbers": ["500,000"], "domain": "dialogue"}
+{"text": "Dr. Sullivan conceded that treatment efficacy had been 5% lower than anticipated.", "entities": ["Dr. Sullivan"], "numbers": ["5%"], "domain": "dialogue"}
+{"text": "Minister Adekunle promised that roads would be completed by May 15th with 20 miles of new pavement.", "entities": ["Minister Adekunle", "May 15th"], "numbers": ["20 miles"], "domain": "dialogue"}
+{"text": "Senator Winters denied that her organization had violated any environmental regulations.", "entities": ["Senator Winters"], "numbers": [], "domain": "dialogue"}
+{"text": "Professor Ng estimated that the project would require 150 research personnel and 3 years.", "entities": ["Professor Ng"], "numbers": ["150", "3"], "domain": "dialogue"}
+{"text": "Dr. Kovac warned colleagues that infection rates had spiked 31% in the past month.", "entities": ["Dr. Kovac"], "numbers": ["31%"], "domain": "dialogue"}
+{"text": "Mayor Kowalczyk claimed that the new park would serve 25,000 residents in surrounding neighborhoods.", "entities": ["Mayor Kowalczyk"], "numbers": ["25,000"], "domain": "dialogue"}
+{"text": "Commander Zhang disputed evidence that equipment failures had caused the accident.", "entities": ["Commander Zhang"], "numbers": [], "domain": "dialogue"}
+{"text": "Professor Ito forecast that battery technology costs would drop 26% by 2027.", "entities": ["Professor Ito"], "numbers": ["26%", "2027"], "domain": "dialogue"}
+{"text": "CEO Mwangi conceded that customer acquisition costs had risen to $145 per unit.", "entities": ["CEO Mwangi"], "numbers": ["$145"], "domain": "dialogue"}
+{"text": "Dr. Perez claimed that participants showed a 67% improvement in test scores.", "entities": ["Dr. Perez"], "numbers": ["67%"], "domain": "dialogue"}
+{"text": "Governor Valdez warned that water supplies would diminish by 15% if drought continued.", "entities": ["Governor Valdez"], "numbers": ["15%"], "domain": "dialogue"}
+{"text": "Minister Okafor promised that employment initiatives would add 8,000 jobs by June.", "entities": ["Minister Okafor"], "numbers": ["8,000"], "domain": "dialogue"}
+{"text": "Professor Ramirez denied that her findings contradicted peer-reviewed research standards.", "entities": ["Professor Ramirez"], "numbers": [], "domain": "dialogue"}
+{"text": "Dr. Hasanović estimated that recovery would require approximately $180 million in investment.", "entities": ["Dr. Hasanović"], "numbers": ["$180 million"], "domain": "dialogue"}
+{"text": "Mayor Carlson forecast that property values would appreciate 8% over the next two years.", "entities": ["Mayor Carlson"], "numbers": ["8%", "two"], "domain": "dialogue"}
+{"text": "Ms. Bello claimed that her firm had reduced carbon emissions by 42% since 2023.", "entities": ["Ms. Bello"], "numbers": ["42%", "2023"], "domain": "dialogue"}
+{"text": "Chief Patterson warned residents that evacuation orders would take effect on July 8th.", "entities": ["Chief Patterson", "July 8th"], "numbers": ["July 8th"], "domain": "dialogue"}
+{"text": "Senator Mendez disputed claims that the bill would eliminate 20,000 government positions.", "entities": ["Senator Mendez"], "numbers": ["20,000"], "domain": "dialogue"}
+{"text": "Dr. Yamada conceded that vaccine effectiveness waned to 71% after six months.", "entities": ["Dr. Yamada"], "numbers": ["71%", "six months"], "domain": "dialogue"}
+{"text": "Professor Esamé forecast that enrollment would surge to 8,500 students by fall.", "entities": ["Professor Esamé"], "numbers": ["8,500"], "domain": "dialogue"}
+{"text": "Commander Reyes claimed that readiness had improved by 19% following new training protocols.", "entities": ["Commander Reyes"], "numbers": ["19%"], "domain": "dialogue"}
+{"text": "CEO Adelberg denied allegations that executive compensation exceeded $5 million annually.", "entities": ["CEO Adelberg"], "numbers": ["$5 million"], "domain": "dialogue"}
+{"text": "Dr. Lindqvist warned that plastic pollution would increase 55% without intervention measures.", "entities": ["Dr. Lindqvist"], "numbers": ["55%"], "domain": "dialogue"}
+{"text": "Mayor Rouillard promised that transit ridership would triple by 2027 with new infrastructure.", "entities": ["Mayor Rouillard"], "numbers": ["2027"], "domain": "dialogue"}
+{"text": "Professor Singh estimated that archaeological excavation would span 2.5 acres downtown.", "entities": ["Professor Singh"], "numbers": ["2.5 acres"], "domain": "dialogue"}
+{"text": "Ms. Boucher claimed that customer retention rates had improved to 89% this quarter.", "entities": ["Ms. Boucher"], "numbers": ["89%"], "domain": "dialogue"}
+{"text": "Governor Lemoine disputed the assertion that state debt had increased by $100 billion.", "entities": ["Governor Lemoine"], "numbers": ["$100 billion"], "domain": "dialogue"}
+{"text": "Dr. Mbata conceded that clinical outcomes had been 12% worse than the control group.", "entities": ["Dr. Mbata"], "numbers": ["12%"], "domain": "dialogue"}
+{"text": "Minister Hartmann forecast that renewable capacity would reach 65% of total supply by 2028.", "entities": ["Minister Hartmann"], "numbers": ["65%", "2028"], "domain": "dialogue"}
+{"text": "Senator Tanaka claimed that the legislation would affect 3.2 million working families.", "entities": ["Senator Tanaka"], "numbers": ["3.2 million"], "domain": "dialogue"}
+{"text": "Chief Nakamura warned that response times would exceed 10 minutes in remote areas.", "entities": ["Chief Nakamura"], "numbers": ["10 minutes"], "domain": "dialogue"}
+{"text": "Dr. Svesson promised researchers that funding would be doubled by January 2026.", "entities": ["Dr. Svesson", "January 2026"], "numbers": ["January 2026"], "domain": "dialogue"}
+{"text": "Professor Ong denied that the methodology was flawed in significant ways.", "entities": ["Professor Ong"], "numbers": [], "domain": "dialogue"}
+{"text": "CEO Montoya estimated that the expansion would create 450 permanent jobs locally.", "entities": ["CEO Montoya"], "numbers": ["450"], "domain": "dialogue"}
+{"text": "Mayor Rodriguez forecast that median home prices would rise 13% this fiscal year.", "entities": ["Mayor Rodriguez"], "numbers": ["13%"], "domain": "dialogue"}
+{"text": "Dr. Bouvier disputed findings that the therapy was ineffective for 38% of patients.", "entities": ["Dr. Bouvier"], "numbers": ["38%"], "domain": "dialogue"}
+{"text": "Minister Adeyeme claimed that the literacy program had enrolled 14,000 participants.", "entities": ["Minister Adeyeme"], "numbers": ["14,000"], "domain": "dialogue"}
+{"text": "Professor Chen conceded that the economic model had underestimated inflation by 2.1%.", "entities": ["Professor Chen"], "numbers": ["2.1%"], "domain": "dialogue"}
+{"text": "Commander Walker warned that equipment replacement would require $29 million in funding.", "entities": ["Commander Walker"], "numbers": ["$29 million"], "domain": "dialogue"}
+{"text": "Ms. Okoye claimed that employee satisfaction scores had reached an all-time high of 87%.", "entities": ["Ms. Okoye"], "numbers": ["87%"], "domain": "dialogue"}
+{"text": "Governor Carlsson promised that tax relief would benefit households earning under $75,000.", "entities": ["Governor Carlsson"], "numbers": ["$75,000"], "domain": "dialogue"}
+{"text": "Dr. Hoffman estimated that the disorder affected roughly 1 in 500 individuals.", "entities": ["Dr. Hoffman"], "numbers": ["1 in 500"], "domain": "dialogue"}
+{"text": "Senator Kowalski denied that campaign contributions totaling $300,000 had influenced his vote.", "entities": ["Senator Kowalski"], "numbers": ["$300,000"], "domain": "dialogue"}
+{"text": "Professor Bhat forecast that artificial intelligence would handle 75% of routine tasks.", "entities": ["Professor Bhat"], "numbers": ["75%"], "domain": "dialogue"}
+{"text": "Dr. Marques warned that heat waves could increase mortality rates by 24%.", "entities": ["Dr. Marques"], "numbers": ["24%"], "domain": "dialogue"}
+{"text": "CEO Foster claimed that operational efficiency had improved by $8.7 million annually.", "entities": ["CEO Foster"], "numbers": ["$8.7 million"], "domain": "dialogue"}
+{"text": "Mayor Hamilton disputed reports that affordable housing production had fallen 30%.", "entities": ["Mayor Hamilton"], "numbers": ["30%"], "domain": "dialogue"}
+{"text": "Minister Afolayan conceded that implementation delays would extend the timeline by 4 months.", "entities": ["Minister Afolayan"], "numbers": ["4 months"], "domain": "dialogue"}
+{"text": "Professor Katz forecast that enrollment would decline by 8% in the coming year.", "entities": ["Professor Katz"], "numbers": ["8%"], "domain": "dialogue"}
+{"text": "Dr. Bergström promised that the new facility would open by November 2026.", "entities": ["Dr. Bergström", "November 2026"], "numbers": ["November 2026"], "domain": "dialogue"}
+{"text": "Ms. Okafor claimed that the initiative had served 16,500 low-income families.", "entities": ["Ms. Okafor"], "numbers": ["16,500"], "domain": "dialogue"}
+{"text": "Governor Laroche denied that the agency had mismanaged approximately $50 million.", "entities": ["Governor Laroche"], "numbers": ["$50 million"], "domain": "dialogue"}
+{"text": "Chief Moody warned residents that air quality would remain hazardous through Friday.", "entities": ["Chief Moody"], "numbers": [], "domain": "dialogue"}
+{"text": "Senator Owusu estimated that the project would benefit 750,000 residents across the region.", "entities": ["Senator Owusu"], "numbers": ["750,000"], "domain": "dialogue"}
+{"text": "Dr. Leung disputed the claim that genetic testing was 99% accurate.", "entities": ["Dr. Leung"], "numbers": ["99%"], "domain": "dialogue"}
+{"text": "Professor Antonov forecast that production costs would decrease by $3.50 per unit.", "entities": ["Professor Antonov"], "numbers": ["$3.50"], "domain": "dialogue"}
+{"text": "Mayor Olsen conceded that debt service would consume 17% of municipal revenues.", "entities": ["Mayor Olsen"], "numbers": ["17%"], "domain": "dialogue"}
+{"text": "Minister Patel claimed that the initiative would train 5,200 youth workers by August.", "entities": ["Minister Patel"], "numbers": ["5,200"], "domain": "dialogue"}
+{"text": "Dr. Santos warned that antibiotic-resistant infections were rising 28% annually.", "entities": ["Dr. Santos"], "numbers": ["28%"], "domain": "dialogue"}
+{"text": "Commander Johansen promised that vessel inspections would be completed by May 20th.", "entities": ["Commander Johansen", "May 20th"], "numbers": ["May 20th"], "domain": "dialogue"}
+{"text": "Professor Lim disputed assertions that climate models had overestimated warming.", "entities": ["Professor Lim"], "numbers": [], "domain": "dialogue"}
+{"text": "CEO Andreasen claimed that gross margins had expanded to 61% this quarter.", "entities": ["CEO Andreasen"], "numbers": ["61%"], "domain": "dialogue"}
+{"text": "Ms. Youssef forecast that tourism would increase by 44% over the next three years.", "entities": ["Ms. Youssef"], "numbers": ["44%", "three"], "domain": "dialogue"}
+{"text": "Senator Li denied involvement in the company despite holding 2% of its shares.", "entities": ["Senator Li"], "numbers": ["2%"], "domain": "dialogue"}
+{"text": "Dr. Okoro estimated that the outbreak would affect approximately 1,500 individuals.", "entities": ["Dr. Okoro"], "numbers": ["1,500"], "domain": "dialogue"}
+{"text": "Governor Steele warned that pension obligations would exceed available resources within 7 years.", "entities": ["Governor Steele"], "numbers": ["7 years"], "domain": "dialogue"}
+{"text": "Professor Dubois conceded that the study's conclusions were weaker than originally claimed.", "entities": ["Professor Dubois"], "numbers": [], "domain": "dialogue"}
+{"text": "Mayor Nolan claimed that the infrastructure investment would boost employment by 2,800 jobs.", "entities": ["Mayor Nolan"], "numbers": ["2,800"], "domain": "dialogue"}
+{"text": "Dr. Cheng forecast that diabetes prevalence would rise to 15% of the population by 2035.", "entities": ["Dr. Cheng"], "numbers": ["15%", "2035"], "domain": "dialogue"}
+{"text": "Minister Ezeoke promised that health clinics would open in 23 remote communities.", "entities": ["Minister Ezeoke"], "numbers": ["23"], "domain": "dialogue"}
+{"text": "Ms. Bergman disputed claims that the product had safety concerns.", "entities": ["Ms. Bergman"], "numbers": [], "domain": "dialogue"}
+{"text": "Admiral Hammond warned that readiness shortfalls would cost $145 million to rectify.", "entities": ["Admiral Hammond"], "numbers": ["$145 million"], "domain": "dialogue"}
+{"text": "Professor Schiller estimated that the historical collection contained 950,000 artifacts.", "entities": ["Professor Schiller"], "numbers": ["950,000"], "domain": "dialogue"}
+{"text": "CEO Patterson claimed that customer acquisition had risen 52% over two quarters.", "entities": ["CEO Patterson"], "numbers": ["52%"], "domain": "dialogue"}
+{"text": "Governor Thorne conceded that projected revenues had been $12 million too optimistic.", "entities": ["Governor Thorne"], "numbers": ["$12 million"], "domain": "dialogue"}
+{"text": "Senator Nakamura denied that the organization had spent $75,000 improperly.", "entities": ["Senator Nakamura"], "numbers": ["$75,000"], "domain": "dialogue"}
+{"text": "Dr. Friedman forecast that breakthroughs would emerge within 18 to 24 months.", "entities": ["Dr. Friedman"], "numbers": ["18", "24 months"], "domain": "dialogue"}
+{"text": "Professor Ahluwalia warned that deforestation rates could accelerate by 17% this year.", "entities": ["Professor Ahluwalia"], "numbers": ["17%"], "domain": "dialogue"}
+{"text": "CEO Larson claimed that market penetration had reached 28% in key demographics.", "entities": ["CEO Larson"], "numbers": ["28%"], "domain": "dialogue"}
+{"text": "Mayor Jacobsen promised that the renovation would conclude by September 30th, 2026.", "entities": ["Mayor Jacobsen", "September 30th, 2026"], "numbers": ["September 30th, 2026"], "domain": "dialogue"}
+{"text": "Ms. Ogundimu estimated that workforce development would cost $22 million over three years.", "entities": ["Ms. Ogundimu"], "numbers": ["$22 million", "three"], "domain": "dialogue"}
+{"text": "Minister Kwon disputed reports that environmental damage had exceeded $90 million.", "entities": ["Minister Kwon"], "numbers": ["$90 million"], "domain": "dialogue"}
+{"text": "Dr. Malhotra warned that emergency room wait times had surged 33% this summer.", "entities": ["Dr. Malhotra"], "numbers": ["33%"], "domain": "dialogue"}
+{"text": "Governor Russo conceded that the proposal would reduce funding by $35 million.", "entities": ["Governor Russo"], "numbers": ["$35 million"], "domain": "dialogue"}
+{"text": "Professor Svenson claimed that the technique had achieved a 94% success rate.", "entities": ["Professor Svenson"], "numbers": ["94%"], "domain": "dialogue"}
+{"text": "Commander Yates promised that safety upgrades would be completed by February 15th.", "entities": ["Commander Yates", "February 15th"], "numbers": ["February 15th"], "domain": "dialogue"}
+{"text": "Senator Kemp denied allegations that she had violated the ethics code.", "entities": ["Senator Kemp"], "numbers": [], "domain": "dialogue"}
+{"text": "Dr. Nielsen forecast that investment needs would total approximately $250 million.", "entities": ["Dr. Nielsen"], "numbers": ["$250 million"], "domain": "dialogue"}
+{"text": "Mayor Velasquez claimed that crime had declined 21% compared to last year.", "entities": ["Mayor Velasquez"], "numbers": ["21%"], "domain": "dialogue"}
+{"text": "Professor Gonzalez estimated that the coral reef covered roughly 5,000 square meters.", "entities": ["Professor Gonzalez"], "numbers": ["5,000 square meters"], "domain": "dialogue"}
+{"text": "Ms. Okafor disputed the assessment that revenue would fall by $16 million.", "entities": ["Ms. Okafor"], "numbers": ["$16 million"], "domain": "dialogue"}
+{"text": "CEO Steiner forecast that operating expenses would rise 9% in the fiscal year.", "entities": ["CEO Steiner"], "numbers": ["9%"], "domain": "dialogue"}
+{"text": "Dr. Garcia warned that malnutrition affected 32% of children in the region.", "entities": ["Dr. Garcia"], "numbers": ["32%"], "domain": "dialogue"}
+{"text": "Governor Mitchell conceded that the program was underfunded by roughly $18 million.", "entities": ["Governor Mitchell"], "numbers": ["$18 million"], "domain": "dialogue"}
+{"text": "Minister Jansen claimed that renewable installations had generated $145 million in revenue.", "entities": ["Minister Jansen"], "numbers": ["$145 million"], "domain": "dialogue"}
+{"text": "Professor Kozlov denied that the findings contradicted established scientific consensus.", "entities": ["Professor Kozlov"], "numbers": [], "domain": "dialogue"}
+{"text": "Admiral Ramirez promised crews that shore leave policies would expand by 10%.", "entities": ["Admiral Ramirez"], "numbers": ["10%"], "domain": "dialogue"}
+{"text": "CEO Abrams estimated that the merger would save approximately $35 million annually.", "entities": ["CEO Abrams"], "numbers": ["$35 million"], "domain": "dialogue"}
+{"text": "Mayor Feng claimed that pedestrian traffic had increased 48% at downtown businesses.", "entities": ["Mayor Feng"], "numbers": ["48%"], "domain": "dialogue"}
+{"text": "Dr. Nowak disputed assertions that the therapy costs exceeded $4,000 per patient.", "entities": ["Dr. Nowak"], "numbers": ["$4,000"], "domain": "dialogue"}
+{"text": "Senator Patel warned constituents that healthcare premiums would rise 13% next month.", "entities": ["Senator Patel"], "numbers": ["13%"], "domain": "dialogue"}
+{"text": "Professor Svensson forecast that student enrollment would climb to 9,200 by fall.", "entities": ["Professor Svensson"], "numbers": ["9,200"], "domain": "dialogue"}
+{"text": "Ms. Adeyemi conceded that customer service ratings had fallen to 3.2 stars.", "entities": ["Ms. Adeyemi"], "numbers": ["3.2 stars"], "domain": "dialogue"}
+{"text": "Governor Caldwell claimed that agricultural production would rise 26% this harvest season.", "entities": ["Governor Caldwell"], "numbers": ["26%"], "domain": "dialogue"}
+{"text": "Chief Rossi promised that traffic improvements would reduce commute times by 15 minutes.", "entities": ["Chief Rossi"], "numbers": ["15 minutes"], "domain": "dialogue"}
+{"text": "Dr. Volkova estimated that rehabilitation would require 14 weeks of intensive therapy.", "entities": ["Dr. Volkova"], "numbers": ["14 weeks"], "domain": "dialogue"}
+{"text": "Minister Olugbemi disputed claims that unemployment had surged to 9.8%.", "entities": ["Minister Olugbemi"], "numbers": ["9.8%"], "domain": "dialogue"}
+{"text": "Professor Kimura warned that ocean temperatures had risen 1.8 degrees since 1980.", "entities": ["Professor Kimura"], "numbers": ["1.8 degrees", "1980"], "domain": "dialogue"}
+{"text": "CEO Larsson claimed that workforce diversity had improved from 22% to 38%.", "entities": ["CEO Larsson"], "numbers": ["22%", "38%"], "domain": "dialogue"}
+{"text": "Mayor Rosenberg denied that parking meter revenue had been misappropriated.", "entities": ["Mayor Rosenberg"], "numbers": [], "domain": "dialogue"}
+{"text": "Admiral Goldstein forecast that naval operations would require 12% less fuel consumption.", "entities": ["Admiral Goldstein"], "numbers": ["12%"], "domain": "dialogue"}
+{"text": "Ms. Chong claimed that the program had reduced homelessness by 37% citywide.", "entities": ["Ms. Chong"], "numbers": ["37%"], "domain": "dialogue"}
+{"text": "Dr. Larsen conceded that the medication had side effects in 2.5% of trial subjects.", "entities": ["Dr. Larsen"], "numbers": ["2.5%"], "domain": "dialogue"}
+{"text": "Governor Volkov promised that infrastructure spending would reach $500 million over two years.", "entities": ["Governor Volkov"], "numbers": ["$500 million", "two"], "domain": "dialogue"}
+{"text": "Professor Abiola estimated that the project would employ 180 researchers and technicians.", "entities": ["Professor Abiola"], "numbers": ["180"], "domain": "dialogue"}
+{"text": "Senator Karim disputed the budget claim that defense spending would exceed $2 trillion.", "entities": ["Senator Karim"], "numbers": ["$2 trillion"], "domain": "dialogue"}
+{"text": "Dr. Cortez warned colleagues that mutation rates had increased by 41% recently.", "entities": ["Dr. Cortez"], "numbers": ["41%"], "domain": "dialogue"}
+{"text": "CEO Mitchell forecast that the dividend yield would stabilize at 4.2% annually.", "entities": ["CEO Mitchell"], "numbers": ["4.2%"], "domain": "dialogue"}
+{"text": "Minister Sato claimed that the education initiative would benefit 600,000 students.", "entities": ["Minister Sato"], "numbers": ["600,000"], "domain": "dialogue"}
+{"text": "Mayor Santoro promised residents that the park would feature 80 acres of green space.", "entities": ["Mayor Santoro"], "numbers": ["80 acres"], "domain": "dialogue"}
+{"text": "Dr. Hoffmann disputed findings that mortality rates had risen 11% this quarter.", "entities": ["Dr. Hoffmann"], "numbers": ["11%"], "domain": "dialogue"}
+{"text": "Professor Johannsen conceded that the economic model missed key variables.", "entities": ["Professor Johannsen"], "numbers": [], "domain": "dialogue"}
+{"text": "CEO Thibault claimed that profit margins had stabilized at 18% despite inflation.", "entities": ["CEO Thibault"], "numbers": ["18%"], "domain": "dialogue"}
+{"text": "Governor Ellison warned that wildfire season could cause $75 million in damages.", "entities": ["Governor Ellison"], "numbers": ["$75 million"], "domain": "dialogue"}
+{"text": "Ms. Otieno estimated that community programs would reach 4,300 vulnerable youth.", "entities": ["Ms. Otieno"], "numbers": ["4,300"], "domain": "dialogue"}
+{"text": "Senator Fuentes denied that she had accepted donations exceeding $250,000.", "entities": ["Senator Fuentes"], "numbers": ["$250,000"], "domain": "dialogue"}
+{"text": "Dr. Pavlov forecast that vaccination rates would climb to 85% by autumn.", "entities": ["Dr. Pavlov"], "numbers": ["85%"], "domain": "dialogue"}
+{"text": "Professor Ibrahimi claimed that the manuscript collection had grown by 23% this year.", "entities": ["Professor Ibrahimi"], "numbers": ["23%"], "domain": "dialogue"}
+{"text": "Commander Morris promised that equipment maintenance would be current by March 10th.", "entities": ["Commander Morris", "March 10th"], "numbers": ["March 10th"], "domain": "dialogue"}
+{"text": "Mayor Katz conceded that public transit costs had exceeded projections by $8.5 million.", "entities": ["Mayor Katz"], "numbers": ["$8.5 million"], "domain": "dialogue"}
+{"text": "Dr. Olayinka warned that plastic waste had accumulated 500 tons in the harbor.", "entities": ["Dr. Olayinka"], "numbers": ["500 tons"], "domain": "dialogue"}
+{"text": "Minister Zhao disputed reports that agricultural subsidies totaled $340 million.", "entities": ["Minister Zhao"], "numbers": ["$340 million"], "domain": "dialogue"}
+{"text": "CEO Pettersson forecast that annual revenue would exceed $1.2 billion by year-end.", "entities": ["CEO Pettersson"], "numbers": ["$1.2 billion"], "domain": "dialogue"}
+{"text": "Professor Lane claimed that the new methodology improved accuracy by 56%.", "entities": ["Professor Lane"], "numbers": ["56%"], "domain": "dialogue"}
+{"text": "Governor Malik promised that criminal justice reforms would take effect on January 1st.", "entities": ["Governor Malik", "January 1st"], "numbers": ["January 1st"], "domain": "dialogue"}
+{"text": "Ms. Johansson estimated that event attendance would reach 25,000 over four days.", "entities": ["Ms. Johansson"], "numbers": ["25,000", "four"], "domain": "dialogue"}
+{"text": "Admiral Foster denied that naval modernization costs had ballooned to $950 million.", "entities": ["Admiral Foster"], "numbers": ["$950 million"], "domain": "dialogue"}
+{"text": "Dr. Ekwueme warned citizens that water contamination risks were increasing 19% yearly.", "entities": ["Dr. Ekwueme"], "numbers": ["19%"], "domain": "dialogue"}
+{"text": "CEO Bergstrom conceded that production delays would extend timelines by six months.", "entities": ["CEO Bergstrom"], "numbers": ["six months"], "domain": "dialogue"}
+{"text": "Senator Zimmerman claimed that the legislation would create 3,500 full-time positions.", "entities": ["Senator Zimmerman"], "numbers": ["3,500"], "domain": "dialogue"}
+{"text": "Professor Nakamura disputed the thesis that globalization benefited 80% of workers.", "entities": ["Professor Nakamura"], "numbers": ["80%"], "domain": "dialogue"}

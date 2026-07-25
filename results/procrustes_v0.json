@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-07-22T19:36:57.878015+00:00",
+  "per_relation": [
+    {
+      "relation": "animal_young",
+      "n_train": 51,
+      "n_test": 6,
+      "cos_rotation": 0.38395681977272034,
+      "top1_rotation": 0.0,
+      "cos_translation": 0.442099004983902,
+      "top1_translation": 0.3333333333333333,
+      "cos_identity": 0.4207632541656494,
+      "top1_identity": 0.3333333333333333
+    },
+    {
+      "relation": "capital_of",
+      "n_train": 42,
+      "n_test": 15,
+      "cos_rotation": 0.501695990562439,
+      "top1_rotation": 0.0,
+      "cos_translation": 0.703288197517395,
+      "top1_translation": 0.7333333333333333,
+      "cos_identity": 0.6731089949607849,
+      "top1_identity": 0.7333333333333333
+    },
+    {
+      "relation": "chemical_symbol",
+      "n_train": 49,
+      "n_test": 11,
+      "cos_rotation": 0.4879911243915558,
+      "top1_rotation": 0.0,
+      "cos_translation": 0.5643391013145447,
+      "top1_translation": 0.36363636363636365,
+      "cos_identity": 0.3848716914653778,
+      "top1_identity": 0.36363636363636365
+    },
+    {
+      "relation": "country_continent",
+      "n_train": 45,
+      "n_test": 14,
+      "cos_rotation": 0.6486992239952087,
+      "top1_rotation": 0.07142857142857142,
+      "cos_translation": 0.6823697090148926,
+      "top1_translation": 0.07142857142857142,
+      "cos_identity": 0.5794448256492615,
+      "top1_identity": 0.07142857142857142
+    },
+    {
+      "relation": "country_demonym",
+      "n_train": 45,
+      "n_test": 16,
+      "cos_rotation": 0.6164360046386719,
+      "top1_rotation": 0.4375,
+      "cos_translation": 0.9026117324829102,
+      "top1_translation": 1.0,
+      "cos_identity": 0.8616427183151245,
+      "top1_identity": 1.0
+    },
+    {
+      "relation": "currency_of",
+      "n_train": 41,
+      "n_test": 15,
+      "cos_rotation": 0.48942118883132935,
+      "top1_rotation": 0.0,
+      "cos_translation": 0.6978010535240173,
+      "top1_translation": 0.7333333333333333,
+      "cos_identity": 0.6355317831039429,
+      "top1_identity": 0.7333333333333333
+    },
+    {
+      "relation": "instrument_family",
+      "n_train": 46,
+      "n_test": 10,
+      "cos_rotation": 0.4126976430416107,
+      "top1_rotation": 0.0,
+      "cos_translation": 0.43924373388290405,
+      "top1_translation": 0.0,
+      "cos_identity": 0.31670594215393066,
+      "top1_identity": 0.0
+    },
+    {
+      "relation": "official_language",
+      "n_train": 46,
+      "n_test": 15,
+      "cos_rotation": 0.5846041440963745,
+      "top1_rotation": 0.0,
+      "cos_translation": 0.7098692059516907,
+      "top1_translation": 0.4,
+      "cos_identity": 0.626328706741333,
+      "top1_identity": 0.3333333333333333
+    },
+    {
+      "relation": "opposite_of",
+      "n_train": 48,
+      "n_test": 12,
+      "cos_rotation": 0.41776013374328613,
+      "top1_rotation": 0.0,
+      "cos_translation": 0.5300441384315491,
+      "top1_translation": 0.5833333333333334,
+      "cos_identity": 0.5241681933403015,
+      "top1_identity": 0.5833333333333334
+    },
+    {
+      "relation": "profession_workplace",
+      "n_train": 47,
+      "n_test": 14,
+      "cos_rotation": 0.5329378843307495,
+      "top1_rotation": 0.07142857142857142,
+      "cos_translation": 0.6429745554924011,
+      "top1_translation": 0.6428571428571429,
+      "cos_identity": 0.6107903718948364,
+      "top1_identity": 0.6428571428571429
+    }
+  ],
+  "mean": {
+    "cos_rotation": 0.5076200157403946,
+    "cos_translation": 0.6314640432596207,
+    "cos_identity": 0.5633356481790542,
+    "top1_rotation": 0.05803571428571428,
+    "top1_translation": 0.4861255411255412,
+    "top1_identity": 0.47945887445887453
+  }
+}

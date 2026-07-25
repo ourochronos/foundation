@@ -1,0 +1,588 @@
+{"relation": "capital_of", "x": "France", "y": "Paris"}
+{"relation": "capital_of", "x": "Germany", "y": "Berlin"}
+{"relation": "capital_of", "x": "Italy", "y": "Rome"}
+{"relation": "capital_of", "x": "Spain", "y": "Madrid"}
+{"relation": "capital_of", "x": "United Kingdom", "y": "London"}
+{"relation": "capital_of", "x": "Japan", "y": "Tokyo"}
+{"relation": "capital_of", "x": "China", "y": "Beijing"}
+{"relation": "capital_of", "x": "India", "y": "New Delhi"}
+{"relation": "capital_of", "x": "Brazil", "y": "Brasília"}
+{"relation": "capital_of", "x": "Russia", "y": "Moscow"}
+{"relation": "capital_of", "x": "Canada", "y": "Ottawa"}
+{"relation": "capital_of", "x": "Australia", "y": "Canberra"}
+{"relation": "capital_of", "x": "Mexico", "y": "Mexico City"}
+{"relation": "capital_of", "x": "Greece", "y": "Athens"}
+{"relation": "capital_of", "x": "Egypt", "y": "Cairo"}
+{"relation": "capital_of", "x": "Nigeria", "y": "Abuja"}
+{"relation": "capital_of", "x": "South Africa", "y": "Pretoria"}
+{"relation": "capital_of", "x": "Turkey", "y": "Ankara"}
+{"relation": "capital_of", "x": "Thailand", "y": "Bangkok"}
+{"relation": "capital_of", "x": "Vietnam", "y": "Hanoi"}
+{"relation": "capital_of", "x": "South Korea", "y": "Seoul"}
+{"relation": "capital_of", "x": "Indonesia", "y": "Jakarta"}
+{"relation": "capital_of", "x": "Philippines", "y": "Manila"}
+{"relation": "capital_of", "x": "Poland", "y": "Warsaw"}
+{"relation": "capital_of", "x": "Sweden", "y": "Stockholm"}
+{"relation": "capital_of", "x": "Norway", "y": "Oslo"}
+{"relation": "capital_of", "x": "Denmark", "y": "Copenhagen"}
+{"relation": "capital_of", "x": "Netherlands", "y": "Amsterdam"}
+{"relation": "capital_of", "x": "Belgium", "y": "Brussels"}
+{"relation": "capital_of", "x": "Switzerland", "y": "Bern"}
+{"relation": "capital_of", "x": "Austria", "y": "Vienna"}
+{"relation": "capital_of", "x": "Czech Republic", "y": "Prague"}
+{"relation": "capital_of", "x": "Portugal", "y": "Lisbon"}
+{"relation": "capital_of", "x": "Ireland", "y": "Dublin"}
+{"relation": "capital_of", "x": "New Zealand", "y": "Wellington"}
+{"relation": "capital_of", "x": "Singapore", "y": "Singapore"}
+{"relation": "capital_of", "x": "Malaysia", "y": "Kuala Lumpur"}
+{"relation": "capital_of", "x": "Pakistan", "y": "Islamabad"}
+{"relation": "capital_of", "x": "Bangladesh", "y": "Dhaka"}
+{"relation": "capital_of", "x": "Sri Lanka", "y": "Colombo"}
+{"relation": "capital_of", "x": "Kenya", "y": "Nairobi"}
+{"relation": "capital_of", "x": "Ghana", "y": "Accra"}
+{"relation": "capital_of", "x": "Morocco", "y": "Rabat"}
+{"relation": "capital_of", "x": "Algeria", "y": "Algiers"}
+{"relation": "capital_of", "x": "Argentina", "y": "Buenos Aires"}
+{"relation": "capital_of", "x": "Peru", "y": "Lima"}
+{"relation": "capital_of", "x": "Colombia", "y": "Bogotá"}
+{"relation": "capital_of", "x": "Chile", "y": "Santiago"}
+{"relation": "capital_of", "x": "Venezuela", "y": "Caracas"}
+{"relation": "capital_of", "x": "Ecuador", "y": "Quito"}
+{"relation": "capital_of", "x": "Bolivia", "y": "La Paz"}
+{"relation": "capital_of", "x": "Paraguay", "y": "Asunción"}
+{"relation": "capital_of", "x": "Uruguay", "y": "Montevideo"}
+{"relation": "capital_of", "x": "Iceland", "y": "Reykjavík"}
+{"relation": "capital_of", "x": "Romania", "y": "Bucharest"}
+{"relation": "capital_of", "x": "Hungary", "y": "Budapest"}
+{"relation": "capital_of", "x": "Ukraine", "y": "Kyiv"}
+{"relation": "currency_of", "x": "France", "y": "Euro"}
+{"relation": "currency_of", "x": "Germany", "y": "Euro"}
+{"relation": "currency_of", "x": "Italy", "y": "Euro"}
+{"relation": "currency_of", "x": "Spain", "y": "Euro"}
+{"relation": "currency_of", "x": "Japan", "y": "Yen"}
+{"relation": "currency_of", "x": "China", "y": "Yuan"}
+{"relation": "currency_of", "x": "India", "y": "Rupee"}
+{"relation": "currency_of", "x": "Brazil", "y": "Real"}
+{"relation": "currency_of", "x": "Russia", "y": "Ruble"}
+{"relation": "currency_of", "x": "Canada", "y": "Canadian Dollar"}
+{"relation": "currency_of", "x": "Australia", "y": "Australian Dollar"}
+{"relation": "currency_of", "x": "United Kingdom", "y": "Pound Sterling"}
+{"relation": "currency_of", "x": "Mexico", "y": "Mexican Peso"}
+{"relation": "currency_of", "x": "Switzerland", "y": "Swiss Franc"}
+{"relation": "currency_of", "x": "Sweden", "y": "Swedish Krona"}
+{"relation": "currency_of", "x": "Norway", "y": "Norwegian Krone"}
+{"relation": "currency_of", "x": "Denmark", "y": "Danish Krone"}
+{"relation": "currency_of", "x": "Poland", "y": "Zloty"}
+{"relation": "currency_of", "x": "Czech Republic", "y": "Czech Koruna"}
+{"relation": "currency_of", "x": "Hungary", "y": "Forint"}
+{"relation": "currency_of", "x": "Romania", "y": "Romanian Leu"}
+{"relation": "currency_of", "x": "Turkey", "y": "Turkish Lira"}
+{"relation": "currency_of", "x": "Egypt", "y": "Egyptian Pound"}
+{"relation": "currency_of", "x": "South Africa", "y": "South African Rand"}
+{"relation": "currency_of", "x": "Nigeria", "y": "Nigerian Naira"}
+{"relation": "currency_of", "x": "Kenya", "y": "Kenyan Shilling"}
+{"relation": "currency_of", "x": "Morocco", "y": "Moroccan Dirham"}
+{"relation": "currency_of", "x": "Thailand", "y": "Thai Baht"}
+{"relation": "currency_of", "x": "Vietnam", "y": "Vietnamese Dong"}
+{"relation": "currency_of", "x": "Indonesia", "y": "Indonesian Rupiah"}
+{"relation": "currency_of", "x": "Philippines", "y": "Philippine Peso"}
+{"relation": "currency_of", "x": "South Korea", "y": "South Korean Won"}
+{"relation": "currency_of", "x": "Malaysia", "y": "Malaysian Ringgit"}
+{"relation": "currency_of", "x": "Singapore", "y": "Singapore Dollar"}
+{"relation": "currency_of", "x": "Hong Kong", "y": "Hong Kong Dollar"}
+{"relation": "currency_of", "x": "Taiwan", "y": "New Taiwan Dollar"}
+{"relation": "currency_of", "x": "Pakistan", "y": "Pakistani Rupee"}
+{"relation": "currency_of", "x": "Bangladesh", "y": "Bangladeshi Taka"}
+{"relation": "currency_of", "x": "Sri Lanka", "y": "Sri Lankan Rupee"}
+{"relation": "currency_of", "x": "New Zealand", "y": "New Zealand Dollar"}
+{"relation": "currency_of", "x": "Argentina", "y": "Argentine Peso"}
+{"relation": "currency_of", "x": "Peru", "y": "Peruvian Sol"}
+{"relation": "currency_of", "x": "Colombia", "y": "Colombian Peso"}
+{"relation": "currency_of", "x": "Chile", "y": "Chilean Peso"}
+{"relation": "currency_of", "x": "Venezuela", "y": "Bolívar"}
+{"relation": "currency_of", "x": "Ecuador", "y": "US Dollar"}
+{"relation": "currency_of", "x": "Bolivia", "y": "Boliviano"}
+{"relation": "currency_of", "x": "Paraguay", "y": "Guaraní"}
+{"relation": "currency_of", "x": "Uruguay", "y": "Uruguayan Peso"}
+{"relation": "currency_of", "x": "Israel", "y": "Israeli Shekel"}
+{"relation": "currency_of", "x": "Saudi Arabia", "y": "Saudi Riyal"}
+{"relation": "currency_of", "x": "United Arab Emirates", "y": "UAE Dirham"}
+{"relation": "currency_of", "x": "Kuwait", "y": "Kuwaiti Dinar"}
+{"relation": "currency_of", "x": "Qatar", "y": "Qatari Riyal"}
+{"relation": "currency_of", "x": "Greece", "y": "Euro"}
+{"relation": "currency_of", "x": "Portugal", "y": "Euro"}
+{"relation": "country_continent", "x": "France", "y": "Europe"}
+{"relation": "country_continent", "x": "Germany", "y": "Europe"}
+{"relation": "country_continent", "x": "Italy", "y": "Europe"}
+{"relation": "country_continent", "x": "Spain", "y": "Europe"}
+{"relation": "country_continent", "x": "Poland", "y": "Europe"}
+{"relation": "country_continent", "x": "Russia", "y": "Europe"}
+{"relation": "country_continent", "x": "United Kingdom", "y": "Europe"}
+{"relation": "country_continent", "x": "Greece", "y": "Europe"}
+{"relation": "country_continent", "x": "Portugal", "y": "Europe"}
+{"relation": "country_continent", "x": "Sweden", "y": "Europe"}
+{"relation": "country_continent", "x": "Norway", "y": "Europe"}
+{"relation": "country_continent", "x": "Denmark", "y": "Europe"}
+{"relation": "country_continent", "x": "Netherlands", "y": "Europe"}
+{"relation": "country_continent", "x": "Belgium", "y": "Europe"}
+{"relation": "country_continent", "x": "Switzerland", "y": "Europe"}
+{"relation": "country_continent", "x": "Austria", "y": "Europe"}
+{"relation": "country_continent", "x": "Czech Republic", "y": "Europe"}
+{"relation": "country_continent", "x": "Hungary", "y": "Europe"}
+{"relation": "country_continent", "x": "Romania", "y": "Europe"}
+{"relation": "country_continent", "x": "Bulgaria", "y": "Europe"}
+{"relation": "country_continent", "x": "Serbia", "y": "Europe"}
+{"relation": "country_continent", "x": "Ukraine", "y": "Europe"}
+{"relation": "country_continent", "x": "Turkey", "y": "Asia"}
+{"relation": "country_continent", "x": "Japan", "y": "Asia"}
+{"relation": "country_continent", "x": "China", "y": "Asia"}
+{"relation": "country_continent", "x": "India", "y": "Asia"}
+{"relation": "country_continent", "x": "Thailand", "y": "Asia"}
+{"relation": "country_continent", "x": "Vietnam", "y": "Asia"}
+{"relation": "country_continent", "x": "Indonesia", "y": "Asia"}
+{"relation": "country_continent", "x": "Philippines", "y": "Asia"}
+{"relation": "country_continent", "x": "South Korea", "y": "Asia"}
+{"relation": "country_continent", "x": "Malaysia", "y": "Asia"}
+{"relation": "country_continent", "x": "Singapore", "y": "Asia"}
+{"relation": "country_continent", "x": "Bangladesh", "y": "Asia"}
+{"relation": "country_continent", "x": "Pakistan", "y": "Asia"}
+{"relation": "country_continent", "x": "Sri Lanka", "y": "Asia"}
+{"relation": "country_continent", "x": "Brazil", "y": "South America"}
+{"relation": "country_continent", "x": "Argentina", "y": "South America"}
+{"relation": "country_continent", "x": "Peru", "y": "South America"}
+{"relation": "country_continent", "x": "Colombia", "y": "South America"}
+{"relation": "country_continent", "x": "Chile", "y": "South America"}
+{"relation": "country_continent", "x": "Venezuela", "y": "South America"}
+{"relation": "country_continent", "x": "Ecuador", "y": "South America"}
+{"relation": "country_continent", "x": "Bolivia", "y": "South America"}
+{"relation": "country_continent", "x": "Paraguay", "y": "South America"}
+{"relation": "country_continent", "x": "Uruguay", "y": "South America"}
+{"relation": "country_continent", "x": "Mexico", "y": "North America"}
+{"relation": "country_continent", "x": "Canada", "y": "North America"}
+{"relation": "country_continent", "x": "United States", "y": "North America"}
+{"relation": "country_continent", "x": "Egypt", "y": "Africa"}
+{"relation": "country_continent", "x": "Nigeria", "y": "Africa"}
+{"relation": "country_continent", "x": "South Africa", "y": "Africa"}
+{"relation": "country_continent", "x": "Kenya", "y": "Africa"}
+{"relation": "country_continent", "x": "Ghana", "y": "Africa"}
+{"relation": "country_continent", "x": "Morocco", "y": "Africa"}
+{"relation": "country_continent", "x": "Algeria", "y": "Africa"}
+{"relation": "country_continent", "x": "Ethiopia", "y": "Africa"}
+{"relation": "country_continent", "x": "Australia", "y": "Oceania"}
+{"relation": "country_continent", "x": "New Zealand", "y": "Oceania"}
+{"relation": "official_language", "x": "France", "y": "French"}
+{"relation": "official_language", "x": "Germany", "y": "German"}
+{"relation": "official_language", "x": "Spain", "y": "Spanish"}
+{"relation": "official_language", "x": "Italy", "y": "Italian"}
+{"relation": "official_language", "x": "Portugal", "y": "Portuguese"}
+{"relation": "official_language", "x": "Greece", "y": "Greek"}
+{"relation": "official_language", "x": "Poland", "y": "Polish"}
+{"relation": "official_language", "x": "Russia", "y": "Russian"}
+{"relation": "official_language", "x": "Ukraine", "y": "Ukrainian"}
+{"relation": "official_language", "x": "Romania", "y": "Romanian"}
+{"relation": "official_language", "x": "Hungary", "y": "Hungarian"}
+{"relation": "official_language", "x": "Czech Republic", "y": "Czech"}
+{"relation": "official_language", "x": "Sweden", "y": "Swedish"}
+{"relation": "official_language", "x": "Norway", "y": "Norwegian"}
+{"relation": "official_language", "x": "Denmark", "y": "Danish"}
+{"relation": "official_language", "x": "Netherlands", "y": "Dutch"}
+{"relation": "official_language", "x": "Belgium", "y": "Dutch"}
+{"relation": "official_language", "x": "Austria", "y": "German"}
+{"relation": "official_language", "x": "United Kingdom", "y": "English"}
+{"relation": "official_language", "x": "Ireland", "y": "English"}
+{"relation": "official_language", "x": "United States", "y": "English"}
+{"relation": "official_language", "x": "Canada", "y": "English"}
+{"relation": "official_language", "x": "Australia", "y": "English"}
+{"relation": "official_language", "x": "New Zealand", "y": "English"}
+{"relation": "official_language", "x": "Japan", "y": "Japanese"}
+{"relation": "official_language", "x": "China", "y": "Mandarin"}
+{"relation": "official_language", "x": "India", "y": "Hindi"}
+{"relation": "official_language", "x": "Brazil", "y": "Portuguese"}
+{"relation": "official_language", "x": "Mexico", "y": "Spanish"}
+{"relation": "official_language", "x": "Argentina", "y": "Spanish"}
+{"relation": "official_language", "x": "Peru", "y": "Spanish"}
+{"relation": "official_language", "x": "Colombia", "y": "Spanish"}
+{"relation": "official_language", "x": "Chile", "y": "Spanish"}
+{"relation": "official_language", "x": "Venezuela", "y": "Spanish"}
+{"relation": "official_language", "x": "Ecuador", "y": "Spanish"}
+{"relation": "official_language", "x": "Egypt", "y": "Arabic"}
+{"relation": "official_language", "x": "Morocco", "y": "Arabic"}
+{"relation": "official_language", "x": "Algeria", "y": "Arabic"}
+{"relation": "official_language", "x": "Nigeria", "y": "English"}
+{"relation": "official_language", "x": "Kenya", "y": "English"}
+{"relation": "official_language", "x": "South Africa", "y": "English"}
+{"relation": "official_language", "x": "Turkey", "y": "Turkish"}
+{"relation": "official_language", "x": "Thailand", "y": "Thai"}
+{"relation": "official_language", "x": "Vietnam", "y": "Vietnamese"}
+{"relation": "official_language", "x": "Indonesia", "y": "Indonesian"}
+{"relation": "official_language", "x": "Philippines", "y": "English"}
+{"relation": "official_language", "x": "South Korea", "y": "Korean"}
+{"relation": "official_language", "x": "Malaysia", "y": "Malay"}
+{"relation": "official_language", "x": "Singapore", "y": "English"}
+{"relation": "official_language", "x": "Bangladesh", "y": "Bengali"}
+{"relation": "official_language", "x": "Pakistan", "y": "Urdu"}
+{"relation": "official_language", "x": "Sri Lanka", "y": "Sinhalese"}
+{"relation": "official_language", "x": "Israel", "y": "Hebrew"}
+{"relation": "official_language", "x": "Saudi Arabia", "y": "Arabic"}
+{"relation": "official_language", "x": "United Arab Emirates", "y": "Arabic"}
+{"relation": "official_language", "x": "Kuwait", "y": "Arabic"}
+{"relation": "official_language", "x": "Qatar", "y": "Arabic"}
+{"relation": "official_language", "x": "Iceland", "y": "Icelandic"}
+{"relation": "official_language", "x": "Malta", "y": "Maltese"}
+{"relation": "official_language", "x": "Cyprus", "y": "Greek"}
+{"relation": "official_language", "x": "Lebanon", "y": "Arabic"}
+{"relation": "chemical_symbol", "x": "Hydrogen", "y": "H"}
+{"relation": "chemical_symbol", "x": "Helium", "y": "He"}
+{"relation": "chemical_symbol", "x": "Lithium", "y": "Li"}
+{"relation": "chemical_symbol", "x": "Beryllium", "y": "Be"}
+{"relation": "chemical_symbol", "x": "Boron", "y": "B"}
+{"relation": "chemical_symbol", "x": "Carbon", "y": "C"}
+{"relation": "chemical_symbol", "x": "Nitrogen", "y": "N"}
+{"relation": "chemical_symbol", "x": "Oxygen", "y": "O"}
+{"relation": "chemical_symbol", "x": "Fluorine", "y": "F"}
+{"relation": "chemical_symbol", "x": "Neon", "y": "Ne"}
+{"relation": "chemical_symbol", "x": "Sodium", "y": "Na"}
+{"relation": "chemical_symbol", "x": "Magnesium", "y": "Mg"}
+{"relation": "chemical_symbol", "x": "Aluminum", "y": "Al"}
+{"relation": "chemical_symbol", "x": "Silicon", "y": "Si"}
+{"relation": "chemical_symbol", "x": "Phosphorus", "y": "P"}
+{"relation": "chemical_symbol", "x": "Sulfur", "y": "S"}
+{"relation": "chemical_symbol", "x": "Chlorine", "y": "Cl"}
+{"relation": "chemical_symbol", "x": "Argon", "y": "Ar"}
+{"relation": "chemical_symbol", "x": "Potassium", "y": "K"}
+{"relation": "chemical_symbol", "x": "Calcium", "y": "Ca"}
+{"relation": "chemical_symbol", "x": "Scandium", "y": "Sc"}
+{"relation": "chemical_symbol", "x": "Titanium", "y": "Ti"}
+{"relation": "chemical_symbol", "x": "Vanadium", "y": "V"}
+{"relation": "chemical_symbol", "x": "Chromium", "y": "Cr"}
+{"relation": "chemical_symbol", "x": "Manganese", "y": "Mn"}
+{"relation": "chemical_symbol", "x": "Iron", "y": "Fe"}
+{"relation": "chemical_symbol", "x": "Cobalt", "y": "Co"}
+{"relation": "chemical_symbol", "x": "Nickel", "y": "Ni"}
+{"relation": "chemical_symbol", "x": "Copper", "y": "Cu"}
+{"relation": "chemical_symbol", "x": "Zinc", "y": "Zn"}
+{"relation": "chemical_symbol", "x": "Gallium", "y": "Ga"}
+{"relation": "chemical_symbol", "x": "Germanium", "y": "Ge"}
+{"relation": "chemical_symbol", "x": "Arsenic", "y": "As"}
+{"relation": "chemical_symbol", "x": "Selenium", "y": "Se"}
+{"relation": "chemical_symbol", "x": "Bromine", "y": "Br"}
+{"relation": "chemical_symbol", "x": "Krypton", "y": "Kr"}
+{"relation": "chemical_symbol", "x": "Rubidium", "y": "Rb"}
+{"relation": "chemical_symbol", "x": "Strontium", "y": "Sr"}
+{"relation": "chemical_symbol", "x": "Yttrium", "y": "Y"}
+{"relation": "chemical_symbol", "x": "Zirconium", "y": "Zr"}
+{"relation": "chemical_symbol", "x": "Niobium", "y": "Nb"}
+{"relation": "chemical_symbol", "x": "Molybdenum", "y": "Mo"}
+{"relation": "chemical_symbol", "x": "Technetium", "y": "Tc"}
+{"relation": "chemical_symbol", "x": "Ruthenium", "y": "Ru"}
+{"relation": "chemical_symbol", "x": "Rhodium", "y": "Rh"}
+{"relation": "chemical_symbol", "x": "Palladium", "y": "Pd"}
+{"relation": "chemical_symbol", "x": "Silver", "y": "Ag"}
+{"relation": "chemical_symbol", "x": "Cadmium", "y": "Cd"}
+{"relation": "chemical_symbol", "x": "Indium", "y": "In"}
+{"relation": "chemical_symbol", "x": "Tin", "y": "Sn"}
+{"relation": "chemical_symbol", "x": "Antimony", "y": "Sb"}
+{"relation": "chemical_symbol", "x": "Tellurium", "y": "Te"}
+{"relation": "chemical_symbol", "x": "Iodine", "y": "I"}
+{"relation": "chemical_symbol", "x": "Xenon", "y": "Xe"}
+{"relation": "chemical_symbol", "x": "Cesium", "y": "Cs"}
+{"relation": "chemical_symbol", "x": "Barium", "y": "Ba"}
+{"relation": "chemical_symbol", "x": "Lanthanum", "y": "La"}
+{"relation": "chemical_symbol", "x": "Gold", "y": "Au"}
+{"relation": "chemical_symbol", "x": "Lead", "y": "Pb"}
+{"relation": "chemical_symbol", "x": "Mercury", "y": "Hg"}
+{"relation": "animal_young", "x": "Horse", "y": "Foal"}
+{"relation": "animal_young", "x": "Dog", "y": "Puppy"}
+{"relation": "animal_young", "x": "Cat", "y": "Kitten"}
+{"relation": "animal_young", "x": "Sheep", "y": "Lamb"}
+{"relation": "animal_young", "x": "Goat", "y": "Kid"}
+{"relation": "animal_young", "x": "Cow", "y": "Calf"}
+{"relation": "animal_young", "x": "Pig", "y": "Piglet"}
+{"relation": "animal_young", "x": "Chicken", "y": "Chick"}
+{"relation": "animal_young", "x": "Duck", "y": "Duckling"}
+{"relation": "animal_young", "x": "Goose", "y": "Gosling"}
+{"relation": "animal_young", "x": "Swan", "y": "Cygnet"}
+{"relation": "animal_young", "x": "Owl", "y": "Owlet"}
+{"relation": "animal_young", "x": "Eagle", "y": "Eaglet"}
+{"relation": "animal_young", "x": "Raven", "y": "Chick"}
+{"relation": "animal_young", "x": "Sparrow", "y": "Chick"}
+{"relation": "animal_young", "x": "Parrot", "y": "Chick"}
+{"relation": "animal_young", "x": "Penguin", "y": "Chick"}
+{"relation": "animal_young", "x": "Ostrich", "y": "Chick"}
+{"relation": "animal_young", "x": "Fish", "y": "Fingerling"}
+{"relation": "animal_young", "x": "Salmon", "y": "Fry"}
+{"relation": "animal_young", "x": "Shark", "y": "Pup"}
+{"relation": "animal_young", "x": "Dolphin", "y": "Calf"}
+{"relation": "animal_young", "x": "Whale", "y": "Calf"}
+{"relation": "animal_young", "x": "Seal", "y": "Pup"}
+{"relation": "animal_young", "x": "Lion", "y": "Cub"}
+{"relation": "animal_young", "x": "Tiger", "y": "Cub"}
+{"relation": "animal_young", "x": "Bear", "y": "Cub"}
+{"relation": "animal_young", "x": "Wolf", "y": "Pup"}
+{"relation": "animal_young", "x": "Fox", "y": "Kit"}
+{"relation": "animal_young", "x": "Deer", "y": "Fawn"}
+{"relation": "animal_young", "x": "Moose", "y": "Calf"}
+{"relation": "animal_young", "x": "Elk", "y": "Calf"}
+{"relation": "animal_young", "x": "Antelope", "y": "Kid"}
+{"relation": "animal_young", "x": "Giraffe", "y": "Calf"}
+{"relation": "animal_young", "x": "Zebra", "y": "Foal"}
+{"relation": "animal_young", "x": "Rhinoceros", "y": "Calf"}
+{"relation": "animal_young", "x": "Hippopotamus", "y": "Calf"}
+{"relation": "animal_young", "x": "Elephant", "y": "Calf"}
+{"relation": "animal_young", "x": "Chimpanzee", "y": "Infant"}
+{"relation": "animal_young", "x": "Gorilla", "y": "Infant"}
+{"relation": "animal_young", "x": "Monkey", "y": "Infant"}
+{"relation": "animal_young", "x": "Kangaroo", "y": "Joey"}
+{"relation": "animal_young", "x": "Koala", "y": "Joey"}
+{"relation": "animal_young", "x": "Platypus", "y": "Puggle"}
+{"relation": "animal_young", "x": "Otter", "y": "Kit"}
+{"relation": "animal_young", "x": "Beaver", "y": "Kit"}
+{"relation": "animal_young", "x": "Rabbit", "y": "Bunny"}
+{"relation": "animal_young", "x": "Hare", "y": "Leveret"}
+{"relation": "animal_young", "x": "Squirrel", "y": "Kit"}
+{"relation": "animal_young", "x": "Hedgehog", "y": "Piglet"}
+{"relation": "animal_young", "x": "Turtle", "y": "Hatchling"}
+{"relation": "animal_young", "x": "Snake", "y": "Snakelet"}
+{"relation": "animal_young", "x": "Lizard", "y": "Hatchling"}
+{"relation": "animal_young", "x": "Frog", "y": "Tadpole"}
+{"relation": "animal_young", "x": "Toad", "y": "Tadpole"}
+{"relation": "animal_young", "x": "Butterfly", "y": "Caterpillar"}
+{"relation": "animal_young", "x": "Spider", "y": "Spiderling"}
+{"relation": "opposite_of", "x": "Hot", "y": "Cold"}
+{"relation": "opposite_of", "x": "Big", "y": "Small"}
+{"relation": "opposite_of", "x": "Tall", "y": "Short"}
+{"relation": "opposite_of", "x": "Happy", "y": "Sad"}
+{"relation": "opposite_of", "x": "Good", "y": "Bad"}
+{"relation": "opposite_of", "x": "Light", "y": "Dark"}
+{"relation": "opposite_of", "x": "Fast", "y": "Slow"}
+{"relation": "opposite_of", "x": "Loud", "y": "Quiet"}
+{"relation": "opposite_of", "x": "Clean", "y": "Dirty"}
+{"relation": "opposite_of", "x": "Rich", "y": "Poor"}
+{"relation": "opposite_of", "x": "Strong", "y": "Weak"}
+{"relation": "opposite_of", "x": "Brave", "y": "Cowardly"}
+{"relation": "opposite_of", "x": "Kind", "y": "Cruel"}
+{"relation": "opposite_of", "x": "Wise", "y": "Foolish"}
+{"relation": "opposite_of", "x": "Beautiful", "y": "Ugly"}
+{"relation": "opposite_of", "x": "Old", "y": "Young"}
+{"relation": "opposite_of", "x": "Heavy", "y": "Light"}
+{"relation": "opposite_of", "x": "Hard", "y": "Soft"}
+{"relation": "opposite_of", "x": "Wet", "y": "Dry"}
+{"relation": "opposite_of", "x": "Sweet", "y": "Bitter"}
+{"relation": "opposite_of", "x": "Thick", "y": "Thin"}
+{"relation": "opposite_of", "x": "Friendly", "y": "Hostile"}
+{"relation": "opposite_of", "x": "Generous", "y": "Selfish"}
+{"relation": "opposite_of", "x": "Honest", "y": "Dishonest"}
+{"relation": "opposite_of", "x": "Polite", "y": "Rude"}
+{"relation": "opposite_of", "x": "Patient", "y": "Impatient"}
+{"relation": "opposite_of", "x": "Lazy", "y": "Industrious"}
+{"relation": "opposite_of", "x": "Optimistic", "y": "Pessimistic"}
+{"relation": "opposite_of", "x": "Calm", "y": "Anxious"}
+{"relation": "opposite_of", "x": "Humble", "y": "Arrogant"}
+{"relation": "opposite_of", "x": "Modest", "y": "Vain"}
+{"relation": "opposite_of", "x": "Sincere", "y": "Deceitful"}
+{"relation": "opposite_of", "x": "Loyal", "y": "Disloyal"}
+{"relation": "opposite_of", "x": "Fearful", "y": "Brave"}
+{"relation": "opposite_of", "x": "Proud", "y": "Ashamed"}
+{"relation": "opposite_of", "x": "Grateful", "y": "Ungrateful"}
+{"relation": "opposite_of", "x": "Merciful", "y": "Merciless"}
+{"relation": "opposite_of", "x": "Innocent", "y": "Guilty"}
+{"relation": "opposite_of", "x": "Pure", "y": "Corrupt"}
+{"relation": "opposite_of", "x": "Gentle", "y": "Violent"}
+{"relation": "opposite_of", "x": "Strict", "y": "Lenient"}
+{"relation": "opposite_of", "x": "Serious", "y": "Playful"}
+{"relation": "opposite_of", "x": "Simple", "y": "Complex"}
+{"relation": "opposite_of", "x": "Common", "y": "Rare"}
+{"relation": "opposite_of", "x": "Smooth", "y": "Rough"}
+{"relation": "opposite_of", "x": "Transparent", "y": "Opaque"}
+{"relation": "opposite_of", "x": "Shallow", "y": "Deep"}
+{"relation": "opposite_of", "x": "Narrow", "y": "Wide"}
+{"relation": "opposite_of", "x": "Forward", "y": "Backward"}
+{"relation": "opposite_of", "x": "Up", "y": "Down"}
+{"relation": "opposite_of", "x": "Left", "y": "Right"}
+{"relation": "opposite_of", "x": "Front", "y": "Back"}
+{"relation": "opposite_of", "x": "Inside", "y": "Outside"}
+{"relation": "opposite_of", "x": "Above", "y": "Below"}
+{"relation": "opposite_of", "x": "Begin", "y": "End"}
+{"relation": "opposite_of", "x": "Success", "y": "Failure"}
+{"relation": "opposite_of", "x": "Accept", "y": "Reject"}
+{"relation": "opposite_of", "x": "Increase", "y": "Decrease"}
+{"relation": "opposite_of", "x": "Male", "y": "Female"}
+{"relation": "opposite_of", "x": "Perfect", "y": "Imperfect"}
+{"relation": "country_demonym", "x": "France", "y": "French"}
+{"relation": "country_demonym", "x": "Germany", "y": "German"}
+{"relation": "country_demonym", "x": "Italy", "y": "Italian"}
+{"relation": "country_demonym", "x": "Spain", "y": "Spanish"}
+{"relation": "country_demonym", "x": "Portugal", "y": "Portuguese"}
+{"relation": "country_demonym", "x": "Greece", "y": "Greek"}
+{"relation": "country_demonym", "x": "Poland", "y": "Polish"}
+{"relation": "country_demonym", "x": "Russia", "y": "Russian"}
+{"relation": "country_demonym", "x": "Ukraine", "y": "Ukrainian"}
+{"relation": "country_demonym", "x": "Romania", "y": "Romanian"}
+{"relation": "country_demonym", "x": "Hungary", "y": "Hungarian"}
+{"relation": "country_demonym", "x": "Czech Republic", "y": "Czech"}
+{"relation": "country_demonym", "x": "Sweden", "y": "Swedish"}
+{"relation": "country_demonym", "x": "Norway", "y": "Norwegian"}
+{"relation": "country_demonym", "x": "Denmark", "y": "Danish"}
+{"relation": "country_demonym", "x": "Netherlands", "y": "Dutch"}
+{"relation": "country_demonym", "x": "Belgium", "y": "Belgian"}
+{"relation": "country_demonym", "x": "Austria", "y": "Austrian"}
+{"relation": "country_demonym", "x": "Switzerland", "y": "Swiss"}
+{"relation": "country_demonym", "x": "United Kingdom", "y": "British"}
+{"relation": "country_demonym", "x": "Ireland", "y": "Irish"}
+{"relation": "country_demonym", "x": "United States", "y": "American"}
+{"relation": "country_demonym", "x": "Canada", "y": "Canadian"}
+{"relation": "country_demonym", "x": "Australia", "y": "Australian"}
+{"relation": "country_demonym", "x": "Japan", "y": "Japanese"}
+{"relation": "country_demonym", "x": "China", "y": "Chinese"}
+{"relation": "country_demonym", "x": "India", "y": "Indian"}
+{"relation": "country_demonym", "x": "Brazil", "y": "Brazilian"}
+{"relation": "country_demonym", "x": "Mexico", "y": "Mexican"}
+{"relation": "country_demonym", "x": "Argentina", "y": "Argentine"}
+{"relation": "country_demonym", "x": "Peru", "y": "Peruvian"}
+{"relation": "country_demonym", "x": "Colombia", "y": "Colombian"}
+{"relation": "country_demonym", "x": "Chile", "y": "Chilean"}
+{"relation": "country_demonym", "x": "Venezuela", "y": "Venezuelan"}
+{"relation": "country_demonym", "x": "Ecuador", "y": "Ecuadorian"}
+{"relation": "country_demonym", "x": "Egypt", "y": "Egyptian"}
+{"relation": "country_demonym", "x": "Morocco", "y": "Moroccan"}
+{"relation": "country_demonym", "x": "Algeria", "y": "Algerian"}
+{"relation": "country_demonym", "x": "Nigeria", "y": "Nigerian"}
+{"relation": "country_demonym", "x": "Kenya", "y": "Kenyan"}
+{"relation": "country_demonym", "x": "South Africa", "y": "South African"}
+{"relation": "country_demonym", "x": "Turkey", "y": "Turkish"}
+{"relation": "country_demonym", "x": "Thailand", "y": "Thai"}
+{"relation": "country_demonym", "x": "Vietnam", "y": "Vietnamese"}
+{"relation": "country_demonym", "x": "Indonesia", "y": "Indonesian"}
+{"relation": "country_demonym", "x": "Philippines", "y": "Filipino"}
+{"relation": "country_demonym", "x": "South Korea", "y": "Korean"}
+{"relation": "country_demonym", "x": "Malaysia", "y": "Malaysian"}
+{"relation": "country_demonym", "x": "Singapore", "y": "Singaporean"}
+{"relation": "country_demonym", "x": "Bangladesh", "y": "Bangladeshi"}
+{"relation": "country_demonym", "x": "Pakistan", "y": "Pakistani"}
+{"relation": "country_demonym", "x": "Sri Lanka", "y": "Sri Lankan"}
+{"relation": "country_demonym", "x": "Israel", "y": "Israeli"}
+{"relation": "country_demonym", "x": "Saudi Arabia", "y": "Saudi"}
+{"relation": "country_demonym", "x": "United Arab Emirates", "y": "Emirati"}
+{"relation": "country_demonym", "x": "Kuwait", "y": "Kuwaiti"}
+{"relation": "country_demonym", "x": "Qatar", "y": "Qatari"}
+{"relation": "country_demonym", "x": "New Zealand", "y": "New Zealander"}
+{"relation": "country_demonym", "x": "Iceland", "y": "Icelandic"}
+{"relation": "country_demonym", "x": "Malta", "y": "Maltese"}
+{"relation": "country_demonym", "x": "Cyprus", "y": "Cypriot"}
+{"relation": "profession_workplace", "x": "Chef", "y": "Kitchen"}
+{"relation": "profession_workplace", "x": "Doctor", "y": "Hospital"}
+{"relation": "profession_workplace", "x": "Nurse", "y": "Hospital"}
+{"relation": "profession_workplace", "x": "Teacher", "y": "School"}
+{"relation": "profession_workplace", "x": "Professor", "y": "University"}
+{"relation": "profession_workplace", "x": "Librarian", "y": "Library"}
+{"relation": "profession_workplace", "x": "Police officer", "y": "Police station"}
+{"relation": "profession_workplace", "x": "Firefighter", "y": "Fire station"}
+{"relation": "profession_workplace", "x": "Surgeon", "y": "Operating room"}
+{"relation": "profession_workplace", "x": "Dentist", "y": "Dental clinic"}
+{"relation": "profession_workplace", "x": "Pharmacist", "y": "Pharmacy"}
+{"relation": "profession_workplace", "x": "Veterinarian", "y": "Veterinary clinic"}
+{"relation": "profession_workplace", "x": "Mechanic", "y": "Garage"}
+{"relation": "profession_workplace", "x": "Electrician", "y": "Construction site"}
+{"relation": "profession_workplace", "x": "Carpenter", "y": "Workshop"}
+{"relation": "profession_workplace", "x": "Plumber", "y": "Plumbing workshop"}
+{"relation": "profession_workplace", "x": "Architect", "y": "Office"}
+{"relation": "profession_workplace", "x": "Engineer", "y": "Factory"}
+{"relation": "profession_workplace", "x": "Scientist", "y": "Laboratory"}
+{"relation": "profession_workplace", "x": "Biologist", "y": "Laboratory"}
+{"relation": "profession_workplace", "x": "Chemist", "y": "Laboratory"}
+{"relation": "profession_workplace", "x": "Physicist", "y": "Laboratory"}
+{"relation": "profession_workplace", "x": "Astronomer", "y": "Observatory"}
+{"relation": "profession_workplace", "x": "Pilot", "y": "Airplane"}
+{"relation": "profession_workplace", "x": "Flight attendant", "y": "Airplane"}
+{"relation": "profession_workplace", "x": "Bus driver", "y": "Bus"}
+{"relation": "profession_workplace", "x": "Taxi driver", "y": "Taxi"}
+{"relation": "profession_workplace", "x": "Truck driver", "y": "Truck"}
+{"relation": "profession_workplace", "x": "Train conductor", "y": "Train"}
+{"relation": "profession_workplace", "x": "Captain", "y": "Ship"}
+{"relation": "profession_workplace", "x": "Sailor", "y": "Ship"}
+{"relation": "profession_workplace", "x": "Fisherman", "y": "Boat"}
+{"relation": "profession_workplace", "x": "Farmer", "y": "Farm"}
+{"relation": "profession_workplace", "x": "Rancher", "y": "Ranch"}
+{"relation": "profession_workplace", "x": "Gardener", "y": "Garden"}
+{"relation": "profession_workplace", "x": "Florist", "y": "Flower shop"}
+{"relation": "profession_workplace", "x": "Butcher", "y": "Butcher shop"}
+{"relation": "profession_workplace", "x": "Baker", "y": "Bakery"}
+{"relation": "profession_workplace", "x": "Barber", "y": "Barbershop"}
+{"relation": "profession_workplace", "x": "Hairdresser", "y": "Salon"}
+{"relation": "profession_workplace", "x": "Tailor", "y": "Tailor shop"}
+{"relation": "profession_workplace", "x": "Journalist", "y": "Newsroom"}
+{"relation": "profession_workplace", "x": "Editor", "y": "Office"}
+{"relation": "profession_workplace", "x": "Writer", "y": "Office"}
+{"relation": "profession_workplace", "x": "Photographer", "y": "Studio"}
+{"relation": "profession_workplace", "x": "Painter", "y": "Studio"}
+{"relation": "profession_workplace", "x": "Sculptor", "y": "Studio"}
+{"relation": "profession_workplace", "x": "Musician", "y": "Concert hall"}
+{"relation": "profession_workplace", "x": "Dancer", "y": "Dance studio"}
+{"relation": "profession_workplace", "x": "Actor", "y": "Theater"}
+{"relation": "profession_workplace", "x": "Director", "y": "Film studio"}
+{"relation": "profession_workplace", "x": "Manager", "y": "Office"}
+{"relation": "profession_workplace", "x": "Accountant", "y": "Office"}
+{"relation": "profession_workplace", "x": "Secretary", "y": "Office"}
+{"relation": "profession_workplace", "x": "Receptionist", "y": "Office lobby"}
+{"relation": "profession_workplace", "x": "Security guard", "y": "Security office"}
+{"relation": "profession_workplace", "x": "Janitor", "y": "Building maintenance"}
+{"relation": "profession_workplace", "x": "Cashier", "y": "Cash register"}
+{"relation": "profession_workplace", "x": "Waiter", "y": "Restaurant"}
+{"relation": "profession_workplace", "x": "Cook", "y": "Kitchen"}
+{"relation": "profession_workplace", "x": "Bartender", "y": "Bar"}
+{"relation": "instrument_family", "x": "Trumpet", "y": "Brass"}
+{"relation": "instrument_family", "x": "Trombone", "y": "Brass"}
+{"relation": "instrument_family", "x": "French horn", "y": "Brass"}
+{"relation": "instrument_family", "x": "Tuba", "y": "Brass"}
+{"relation": "instrument_family", "x": "Violin", "y": "String"}
+{"relation": "instrument_family", "x": "Cello", "y": "String"}
+{"relation": "instrument_family", "x": "Viola", "y": "String"}
+{"relation": "instrument_family", "x": "Harp", "y": "String"}
+{"relation": "instrument_family", "x": "Guitar", "y": "String"}
+{"relation": "instrument_family", "x": "Lute", "y": "String"}
+{"relation": "instrument_family", "x": "Piano", "y": "String"}
+{"relation": "instrument_family", "x": "Flute", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Oboe", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Clarinet", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Bassoon", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Saxophone", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Piccolo", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Timpani", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Snare drum", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Bass drum", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Cymbals", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Gong", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Triangle", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Xylophone", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Marimba", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Vibraphone", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Bell", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Tambourine", "y": "Percussion"}
+{"relation": "instrument_family", "x": "Organ", "y": "Keyboard"}
+{"relation": "instrument_family", "x": "Harpsichord", "y": "Keyboard"}
+{"relation": "instrument_family", "x": "Synthesizer", "y": "Keyboard"}
+{"relation": "instrument_family", "x": "Accordion", "y": "Keyboard"}
+{"relation": "instrument_family", "x": "Harmonica", "y": "Wind"}
+{"relation": "instrument_family", "x": "Bagpipe", "y": "Wind"}
+{"relation": "instrument_family", "x": "Whistle", "y": "Wind"}
+{"relation": "instrument_family", "x": "Recorder", "y": "Wind"}
+{"relation": "instrument_family", "x": "Ocarina", "y": "Wind"}
+{"relation": "instrument_family", "x": "Panpipe", "y": "Wind"}
+{"relation": "instrument_family", "x": "Bugle", "y": "Brass"}
+{"relation": "instrument_family", "x": "Cornet", "y": "Brass"}
+{"relation": "instrument_family", "x": "Euphonium", "y": "Brass"}
+{"relation": "instrument_family", "x": "Sousaphone", "y": "Brass"}
+{"relation": "instrument_family", "x": "Mandolin", "y": "String"}
+{"relation": "instrument_family", "x": "Banjo", "y": "String"}
+{"relation": "instrument_family", "x": "Ukulele", "y": "String"}
+{"relation": "instrument_family", "x": "Sitar", "y": "String"}
+{"relation": "instrument_family", "x": "Oud", "y": "String"}
+{"relation": "instrument_family", "x": "Bouzouki", "y": "String"}
+{"relation": "instrument_family", "x": "Pipa", "y": "String"}
+{"relation": "instrument_family", "x": "Guzheng", "y": "String"}
+{"relation": "instrument_family", "x": "Koto", "y": "String"}
+{"relation": "instrument_family", "x": "English horn", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Cor anglais", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Contrabassoon", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Heckelphone", "y": "Woodwind"}
+{"relation": "instrument_family", "x": "Shawm", "y": "Woodwind"}

@@ -1,0 +1,200 @@
+{"text": "Because the coolant loop lost 0.4 bar of pressure overnight, the reactor's morning startup was delayed by three hours.", "entities": [], "numbers": ["0.4", "three"], "domain": "causal"}
+{"text": "Since the soil pH dropped to 5.2, tomato plants exhibited severe stunting in the experimental plot.", "entities": [], "numbers": ["5.2"], "domain": "causal"}
+{"text": "The housing market collapsed as a result of mortgage rates spiking to 7.8 percent in October.", "entities": [], "numbers": ["7.8"], "domain": "causal"}
+{"text": "Because the bee population declined 45 percent, apple orchard yields fell by 2 tons.", "entities": [], "numbers": ["45", "2"], "domain": "causal"}
+{"text": "Since atmospheric pressure dropped 12 millibars, the hurricane intensified from Category 2 to Category 4.", "entities": [], "numbers": ["12", "2", "4"], "domain": "causal"}
+{"text": "The patient's fever subsided therefore the antibiotic dose was verified at 750 milligrams.", "entities": [], "numbers": ["750"], "domain": "causal"}
+{"text": "Because the bearing temperature exceeded 80 degrees Celsius, machinery shut down automatically.", "entities": [], "numbers": ["80"], "domain": "causal"}
+{"text": "Since labor costs increased 15 percent, the factory reduced production by 3 shifts weekly.", "entities": [], "numbers": ["15", "3"], "domain": "causal"}
+{"text": "The conveyor belt stopped because the motor drew 45 amps beyond safe operating limits.", "entities": [], "numbers": ["45"], "domain": "causal"}
+{"text": "As a result of the jet stream shifting 400 miles north, 3 states experienced drought conditions.", "entities": [], "numbers": ["400", "3"], "domain": "causal"}
+{"text": "Because cholesterol levels reached 285 milligrams per deciliter, the physician prescribed statins.", "entities": [], "numbers": ["285"], "domain": "causal"}
+{"text": "Since the magnetic field weakened by 0.3 Tesla, the particle accelerator required recalibration of all 8 sectors.", "entities": [], "numbers": ["0.3", "8"], "domain": "causal"}
+{"text": "The engine overheated therefore the radiator fan failed at 5000 revolutions per minute.", "entities": [], "numbers": ["5000"], "domain": "causal"}
+{"text": "Because iron oxide buildup reached 2.1 millimeters, the compressor efficiency dropped 22 percent.", "entities": [], "numbers": ["2.1", "22"], "domain": "causal"}
+{"text": "Since the carbon dioxide level hit 420 parts per million, climate models predicted faster ice melt.", "entities": [], "numbers": ["420"], "domain": "causal"}
+{"text": "The bakery's bread density increased as a result of the oven temperature calibration being off by 15 degrees.", "entities": [], "numbers": ["15"], "domain": "causal"}
+{"text": "Because the server load exceeded 85 percent capacity, the website response time deteriorated to 8.3 seconds.", "entities": [], "numbers": ["85", "8.3"], "domain": "causal"}
+{"text": "Since zinc supplementation increased from 10 to 25 milligrams daily, immune function improved markedly.", "entities": [], "numbers": ["10", "25"], "domain": "causal"}
+{"text": "The plant's photosynthesis rate declined therefore researchers noted chlorophyll loss of 0.15 nanograms per cell.", "entities": [], "numbers": ["0.15"], "domain": "causal"}
+{"text": "Because rainfall decreased 34 percent last season, groundwater levels fell 2.8 meters.", "entities": [], "numbers": ["34", "2.8"], "domain": "causal"}
+{"text": "Since the transmission fluid temperature exceeded 105 degrees Celsius, automatic downshift occurred at 60 kilometers per hour.", "entities": [], "numbers": ["105", "60"], "domain": "causal"}
+{"text": "The satellite's orbit decayed as a result of solar activity increasing the atmospheric density at 400 kilometers altitude.", "entities": [], "numbers": ["400"], "domain": "causal"}
+{"text": "Because insulin resistance increased from 1.2 to 2.8 HOMA-IR, diabetes risk assessment was revised.", "entities": [], "numbers": ["1.2", "2.8"], "domain": "causal"}
+{"text": "Since the pH buffer capacity fell below 0.5 milliequivalents per liter, water quality degraded significantly.", "entities": [], "numbers": ["0.5"], "domain": "causal"}
+{"text": "The crop yield decreased therefore farmers abandoned 1400 acres of marginal land.", "entities": [], "numbers": ["1400"], "domain": "causal"}
+{"text": "Because the elastomer modulus increased 18 percent, tire grip improved under wet conditions.", "entities": [], "numbers": ["18"], "domain": "causal"}
+{"text": "Since the bacteria population reached 3.2 million colonies per milliliter, intervention protocols activated.", "entities": [], "numbers": ["3.2", "million"], "domain": "causal"}
+{"text": "The circuit breaker tripped as a result of current surge reaching 220 amperes momentarily.", "entities": [], "numbers": ["220"], "domain": "causal"}
+{"text": "Because dissolved oxygen fell to 1.8 milligrams per liter, fish kills occurred across 7 river miles.", "entities": [], "numbers": ["1.8", "7"], "domain": "causal"}
+{"text": "Since fuel octane rating dropped from 95 to 87, engine detonation occurred at 3500 RPM.", "entities": [], "numbers": ["95", "87", "3500"], "domain": "causal"}
+{"text": "The laser's output power decreased therefore maintenance on 4 mirrors was scheduled immediately.", "entities": [], "numbers": ["4"], "domain": "causal"}
+{"text": "Because ventricular ejection fraction dropped from 62 to 48 percent, heart failure was diagnosed.", "entities": [], "numbers": ["62", "48"], "domain": "causal"}
+{"text": "Since the turbine blade clearance increased by 0.08 millimeters, compressor efficiency fell 3.2 percent.", "entities": [], "numbers": ["0.08", "3.2"], "domain": "causal"}
+{"text": "The glacier retreated as a result of summer temperatures averaging 6.5 degrees Celsius above normal.", "entities": [], "numbers": ["6.5"], "domain": "causal"}
+{"text": "Because microplastic concentration reached 500 particles per cubic meter of water, marine organisms showed stress.", "entities": [], "numbers": ["500"], "domain": "causal"}
+{"text": "Since the resistor value drifted by 12 percent over time, the circuit required recalibration.", "entities": [], "numbers": ["12"], "domain": "causal"}
+{"text": "The battery's capacity diminished therefore recharge cycles dropped from 1200 to 850 full cycles.", "entities": [], "numbers": ["1200", "850"], "domain": "causal"}
+{"text": "Because cortisol levels exceeded 25 micrograms per deciliter at noon, anxiety medications were adjusted.", "entities": [], "numbers": ["25"], "domain": "causal"}
+{"text": "Since the wind speed gusted to 65 miles per hour, tree damage was widespread across 180 square kilometers.", "entities": [], "numbers": ["65", "180"], "domain": "causal"}
+{"text": "The pump cavitation intensified as a result of inlet pressure dropping below 8 kilopascals.", "entities": [], "numbers": ["8"], "domain": "causal"}
+{"text": "Because lutein levels in spinach increased 19 percent under LED lighting, farmers expanded the trial.", "entities": ["LED"], "numbers": ["19"], "domain": "causal"}
+{"text": "Since the viscosity index fell below 90, the hydraulic fluid was replaced after 2400 operating hours.", "entities": [], "numbers": ["90", "2400"], "domain": "causal"}
+{"text": "The seismic event measured 5.7 on the Richter scale therefore building inspections covered 340 structures.", "entities": ["Richter"], "numbers": ["5.7", "340"], "domain": "causal"}
+{"text": "Because hemoglobin concentration dropped to 8.4 grams per deciliter, blood transfusion became necessary.", "entities": [], "numbers": ["8.4"], "domain": "causal"}
+{"text": "Since the thermal conductivity decreased by 0.22 watts per meter Kelvin, the heatsink redesign was expedited.", "entities": [], "numbers": ["0.22"], "domain": "causal"}
+{"text": "The crop root penetration deepened therefore soil compaction reduced by 1.3 percent annually.", "entities": [], "numbers": ["1.3"], "domain": "causal"}
+{"text": "Because the thyroid stimulating hormone rose to 7.2 milliunits per liter, thyroid supplementation was initiated.", "entities": [], "numbers": ["7.2"], "domain": "causal"}
+{"text": "Since methane emissions increased 11 percent in the livestock sector, carbon reduction targets were missed.", "entities": [], "numbers": ["11"], "domain": "causal"}
+{"text": "The electronic component failed as a result of operating temperature fluctuations exceeding 42 degrees Celsius.", "entities": [], "numbers": ["42"], "domain": "causal"}
+{"text": "Because the cloud cover expanded 28 percent, solar panel output dropped by 4.8 kilowatts.", "entities": [], "numbers": ["28", "4.8"], "domain": "causal"}
+{"text": "Since creatinine levels reached 1.9 milligrams per deciliter, kidney function deterioration was confirmed.", "entities": [], "numbers": ["1.9"], "domain": "causal"}
+{"text": "The manufacturing line stopped production therefore 840 units remained unfinished in queue.", "entities": [], "numbers": ["840"], "domain": "causal"}
+{"text": "Because the pressure vessel developed a hairline crack of 0.6 millimeters, the entire system was depressurized.", "entities": [], "numbers": ["0.6"], "domain": "causal"}
+{"text": "Since the nutrient concentration dropped from 12 to 7 parts per million, algae bloom subsided.", "entities": [], "numbers": ["12", "7"], "domain": "causal"}
+{"text": "The fermentation rate increased as a result of adding 3 grams of yeast starter per liter.", "entities": [], "numbers": ["3"], "domain": "causal"}
+{"text": "Because inflammation markers elevated to 18.5 milligrams per liter, anti-inflammatory treatment commenced.", "entities": [], "numbers": ["18.5"], "domain": "causal"}
+{"text": "Since the alternator voltage regulator malfunctioned at 2800 RPM, battery charging ceased for 47 minutes.", "entities": [], "numbers": ["2800", "47"], "domain": "causal"}
+{"text": "The corrosion rate accelerated therefore protective coating was reapplied across 250 square meters.", "entities": [], "numbers": ["250"], "domain": "causal"}
+{"text": "Because the elastic modulus increased by 8.2 percent, the beam deflection reduced under load.", "entities": [], "numbers": ["8.2"], "domain": "causal"}
+{"text": "Since the ammonia concentration exceeded 22 parts per million, ventilation fans activated automatically.", "entities": [], "numbers": ["22"], "domain": "causal"}
+{"text": "The optical fiber signal degradation reached 0.4 decibels per kilometer as a result of aging.", "entities": [], "numbers": ["0.4"], "domain": "causal"}
+{"text": "Because prolactin levels reached 28 nanograms per milliliter, endocrinology referral was urgent.", "entities": [], "numbers": ["28"], "domain": "causal"}
+{"text": "Since the load factor increased from 0.78 to 0.91, equipment stress rose significantly.", "entities": [], "numbers": ["0.78", "0.91"], "domain": "causal"}
+{"text": "The air quality index jumped to 187 therefore outdoor activities were restricted in 5 counties.", "entities": [], "numbers": ["187", "5"], "domain": "causal"}
+{"text": "Because the concrete compressive strength fell below 24 megapascals, the foundation was reinforced.", "entities": [], "numbers": ["24"], "domain": "causal"}
+{"text": "Since the albumin level dropped to 3.1 grams per deciliter, nutritional status was concerning.", "entities": [], "numbers": ["3.1"], "domain": "causal"}
+{"text": "The valve seat erosion reached 1.4 millimeters therefore replacement was performed after 1600 operating hours.", "entities": [], "numbers": ["1.4", "1600"], "domain": "causal"}
+{"text": "Because testosterone levels fell to 215 nanograms per deciliter, hormone replacement therapy began.", "entities": [], "numbers": ["215"], "domain": "causal"}
+{"text": "Since the friction force increased 26 percent, the actuator required 8.5 kilowatts of extra power.", "entities": [], "numbers": ["26", "8.5"], "domain": "causal"}
+{"text": "The water table dropped as a result of drought reducing annual precipitation by 38 percent.", "entities": [], "numbers": ["38"], "domain": "causal"}
+{"text": "Because the gamma irradiation dose reached 4.2 kiloGrays, bacterial sterilization was confirmed.", "entities": [], "numbers": ["4.2"], "domain": "causal"}
+{"text": "Since the potassium ion concentration fell below 3.2 millimoles per liter, cardiac monitoring intensified.", "entities": [], "numbers": ["3.2"], "domain": "causal"}
+{"text": "The polymer chain degradation accelerated therefore the material lost 33 percent tensile strength.", "entities": [], "numbers": ["33"], "domain": "causal"}
+{"text": "Because the filtration membrane accumulated 0.9 kilograms of sludge, flow rate declined by 15 percent.", "entities": [], "numbers": ["0.9", "15"], "domain": "causal"}
+{"text": "Since the audio signal-to-noise ratio dropped below 42 decibels, studio recording was postponed.", "entities": [], "numbers": ["42"], "domain": "causal"}
+{"text": "The epoxy curing temperature exceeded 65 degrees Celsius as a result of exothermic reaction acceleration.", "entities": [], "numbers": ["65"], "domain": "causal"}
+{"text": "Because fibrinogen levels reached 4.1 grams per liter, thrombosis risk assessment was elevated.", "entities": [], "numbers": ["4.1"], "domain": "causal"}
+{"text": "Since the bearing preload increased by 1.2 millimeters, radial play eliminated and friction rose.", "entities": [], "numbers": ["1.2"], "domain": "causal"}
+{"text": "The monsoon onset delayed therefore crop planting was postponed by 16 days in 8 districts.", "entities": [], "numbers": ["16", "8"], "domain": "causal"}
+{"text": "Because the particulate matter concentration reached 245 micrograms per cubic meter, air quality alerts issued.", "entities": [], "numbers": ["245"], "domain": "causal"}
+{"text": "Since the gastric pH exceeded 3.8, acid reflux symptoms intensified despite medication.", "entities": [], "numbers": ["3.8"], "domain": "causal"}
+{"text": "The diesel particulate filter clogging increased therefore regeneration cycles doubled to 52 per week.", "entities": [], "numbers": ["52"], "domain": "causal"}
+{"text": "Because the neutrophil count dropped to 1.8 thousand cells per microliter, immunosuppression was evident.", "entities": [], "numbers": ["1.8", "thousand"], "domain": "causal"}
+{"text": "Since the structural deflection exceeded 12.3 millimeters, repair protocols were immediately engaged.", "entities": [], "numbers": ["12.3"], "domain": "causal"}
+{"text": "The salinity gradient increased as a result of 2.9 kilograms of salt accumulation per square meter.", "entities": [], "numbers": ["2.9"], "domain": "causal"}
+{"text": "Because the estrogen level fell below 15 picograms per milliliter, hormonal replacement was recommended.", "entities": [], "numbers": ["15"], "domain": "causal"}
+{"text": "Since the rotational speed varied by 1.6 percent, bearing wear accelerated significantly.", "entities": [], "numbers": ["1.6"], "domain": "causal"}
+{"text": "The atmospheric ozone concentration declined therefore skin cancer risk increased in 4 regions.", "entities": [], "numbers": ["4"], "domain": "causal"}
+{"text": "Because the lactate level reached 6.3 millimoles per liter, metabolic acidosis was diagnosed.", "entities": [], "numbers": ["6.3"], "domain": "causal"}
+{"text": "Since the vibration amplitude exceeded 0.18 millimeters, equipment shutdown was automatic.", "entities": [], "numbers": ["0.18"], "domain": "causal"}
+{"text": "The thermal gradient steepened therefore insulation thickness increased by 3.5 centimeters.", "entities": [], "numbers": ["3.5"], "domain": "causal"}
+{"text": "Because uric acid concentration reached 8.2 milligrams per deciliter, gout was precipitated.", "entities": [], "numbers": ["8.2"], "domain": "causal"}
+{"text": "Since the gear tooth wear reached 0.24 millimeters, replacement was scheduled before failure.", "entities": [], "numbers": ["0.24"], "domain": "causal"}
+{"text": "The carbon sequestration rate fell as a result of deforestation affecting 450 thousand hectares annually.", "entities": [], "numbers": ["450", "thousand"], "domain": "causal"}
+{"text": "Because the glucose concentration dropped to 68 milligrams per deciliter, hypoglycemia intervention was needed.", "entities": [], "numbers": ["68"], "domain": "causal"}
+{"text": "Since the acoustic impedance mismatch reached 2.1 million kilograms per second per square meter, signal reflection increased.", "entities": [], "numbers": ["2.1"], "domain": "causal"}
+{"text": "The sediment yield increased therefore 18 tons per hectare per year required mitigation measures.", "entities": [], "numbers": ["18"], "domain": "causal"}
+{"text": "Because the bile acid concentration exceeded 145 millimicrograms per milliliter, cholestasis was suspected.", "entities": [], "numbers": ["145"], "domain": "causal"}
+{"text": "Since the torsional rigidity decreased by 4.7 percent, angular deflection became problematic.", "entities": [], "numbers": ["4.7"], "domain": "causal"}
+{"text": "The pollen count surged therefore allergy medications were adjusted across a 250-square-kilometer zone.", "entities": [], "numbers": ["250"], "domain": "causal"}
+{"text": "Because the phosphate level fell below 2.4 milligrams per deciliter, bone mineralization decreased.", "entities": [], "numbers": ["2.4"], "domain": "causal"}
+{"text": "Since the circuit impedance increased from 28 to 41 ohms, signal attenuation was problematic.", "entities": [], "numbers": ["28", "41"], "domain": "causal"}
+{"text": "The humidity exceeded 84 percent therefore mold growth accelerated across affected structures.", "entities": [], "numbers": ["84"], "domain": "causal"}
+{"text": "Because the alkaline phosphatase level reached 142 units per liter, bone metabolism was accelerated.", "entities": [], "numbers": ["142"], "domain": "causal"}
+{"text": "Since the damping ratio decreased below 0.15, system oscillations became excessive.", "entities": [], "numbers": ["0.15"], "domain": "causal"}
+{"text": "The ultraviolet index reached 11.2 therefore outdoor exposure limits were reduced by 60 percent.", "entities": [], "numbers": ["11.2", "60"], "domain": "causal"}
+{"text": "Because the albumin-to-globulin ratio fell to 1.1, liver dysfunction was evident.", "entities": [], "numbers": ["1.1"], "domain": "causal"}
+{"text": "Since the spring constant increased by 6.8 percent, load deflection reduced significantly.", "entities": [], "numbers": ["6.8"], "domain": "causal"}
+{"text": "The snowpack decreased as a result of 7.3 degrees Celsius warming across mountain ranges.", "entities": [], "numbers": ["7.3"], "domain": "causal"}
+{"text": "Because the bilirubin level reached 3.8 milligrams per deciliter, jaundice appeared clinically.", "entities": [], "numbers": ["3.8"], "domain": "causal"}
+{"text": "Since the internal friction angle decreased from 38 to 31 degrees, slope stability was compromised.", "entities": [], "numbers": ["38", "31"], "domain": "causal"}
+{"text": "The radiation dose rate exceeded 0.8 millisieverts per hour therefore the facility was evacuated.", "entities": [], "numbers": ["0.8"], "domain": "causal"}
+{"text": "Because the troponin level reached 2.4 nanograms per milliliter, myocardial infarction was confirmed.", "entities": [], "numbers": ["2.4"], "domain": "causal"}
+{"text": "Since the air gap decreased by 0.15 millimeters, cogging torque increased noticeably.", "entities": [], "numbers": ["0.15"], "domain": "causal"}
+{"text": "The evapotranspiration rate increased therefore water demand rose by 42 percent during growing season.", "entities": [], "numbers": ["42"], "domain": "causal"}
+{"text": "Because the C-reactive protein level reached 8.9 milligrams per liter, inflammatory response was evident.", "entities": [], "numbers": ["8.9"], "domain": "causal"}
+{"text": "Since the frequency response flatness degraded by 2.3 decibels, audio equipment recalibration was necessary.", "entities": [], "numbers": ["2.3"], "domain": "causal"}
+{"text": "The light penetration depth decreased as a result of turbidity increasing by 1.8 nephelometric turbidity units.", "entities": [], "numbers": ["1.8"], "domain": "causal"}
+{"text": "Because the prothrombin time exceeded 18 seconds, anticoagulation reversal was initiated.", "entities": [], "numbers": ["18"], "domain": "causal"}
+{"text": "Since the hysteresis loss reached 0.34 percent of input power, efficiency declined noticeably.", "entities": [], "numbers": ["0.34"], "domain": "causal"}
+{"text": "The crop susceptibility increased therefore pesticide applications increased to 7 cycles per season.", "entities": [], "numbers": ["7"], "domain": "causal"}
+{"text": "Because the parathyroid hormone level fell to 12 picograms per milliliter, secondary hyperparathyroidism was ruled out.", "entities": [], "numbers": ["12"], "domain": "causal"}
+{"text": "Since the surface roughness increased from 0.8 to 2.1 micrometers, friction coefficient doubled.", "entities": [], "numbers": ["0.8", "2.1"], "domain": "causal"}
+{"text": "The solar irradiance decreased therefore panel output fell by 3.2 kilowatts this afternoon.", "entities": [], "numbers": ["3.2"], "domain": "causal"}
+{"text": "Because the procalcitonin level reached 0.8 nanograms per milliliter, bacterial sepsis was suspected.", "entities": [], "numbers": ["0.8"], "domain": "causal"}
+{"text": "Since the resonance frequency shifted by 1.2 hertz, tuning adjustment became necessary.", "entities": [], "numbers": ["1.2"], "domain": "causal"}
+{"text": "The temperature inversion developed as a result of 3 consecutive nights of clear skies.", "entities": [], "numbers": ["3"], "domain": "causal"}
+{"text": "Because the lactate dehydrogenase level reached 560 units per liter, tissue damage was significant.", "entities": [], "numbers": ["560"], "domain": "causal"}
+{"text": "Since the magnetic permeability increased by 15 percent, core losses diminished considerably.", "entities": [], "numbers": ["15"], "domain": "causal"}
+{"text": "The plant biomass accumulation slowed therefore fertilizer application was increased by 1.5 kilograms per hectare.", "entities": [], "numbers": ["1.5"], "domain": "causal"}
+{"text": "Because the fibrin D-dimer level exceeded 450 nanograms per milliliter, thromboembolism was assessed.", "entities": [], "numbers": ["450"], "domain": "causal"}
+{"text": "Since the thermal expansion coefficient increased, dimensional tolerances were widened by 0.08 millimeters.", "entities": [], "numbers": ["0.08"], "domain": "causal"}
+{"text": "The emission spectrum shifted as a result of doping concentration increasing from 2 to 5 percent.", "entities": [], "numbers": ["2", "5"], "domain": "causal"}
+{"text": "Because the transferrin saturation reached 62 percent, iron overload was evident.", "entities": [], "numbers": ["62"], "domain": "causal"}
+{"text": "Since the strain rate doubled to 0.012 per second, material yielding accelerated.", "entities": [], "numbers": ["0.012"], "domain": "causal"}
+{"text": "The dissolved solids concentration increased therefore water treatment costs rose by 28 percent.", "entities": [], "numbers": ["28"], "domain": "causal"}
+{"text": "Because the homocysteine level reached 16 micromoles per liter, cardiovascular risk escalated.", "entities": [], "numbers": ["16"], "domain": "causal"}
+{"text": "Since the tensile strength degradation reached 11 percent, material replacement was scheduled.", "entities": [], "numbers": ["11"], "domain": "causal"}
+{"text": "The osmotic pressure increased as a result of solute concentration doubling to 0.8 moles per liter.", "entities": [], "numbers": ["0.8"], "domain": "causal"}
+{"text": "Because the ferritin level reached 385 nanograms per milliliter, iron metabolism was abnormal.", "entities": [], "numbers": ["385"], "domain": "causal"}
+{"text": "Since the creep rate exceeded 0.0042 percent per hour, long-term stability was compromised.", "entities": [], "numbers": ["0.0042"], "domain": "causal"}
+{"text": "The precipitation deficit accumulated therefore drought status was upgraded in 6 watersheds.", "entities": [], "numbers": ["6"], "domain": "causal"}
+{"text": "Because the antithrombin level fell to 74 percent of normal, coagulation cascade was impaired.", "entities": [], "numbers": ["74"], "domain": "causal"}
+{"text": "Since the elastic recovery decreased by 9.5 percent, material brittleness increased.", "entities": [], "numbers": ["9.5"], "domain": "causal"}
+{"text": "The photochemical reaction efficiency dropped as a result of reducing quantum yield from 0.87 to 0.62.", "entities": [], "numbers": ["0.87", "0.62"], "domain": "causal"}
+{"text": "Because the tissue plasminogen activator was dosed at 0.9 milligrams per kilogram, clot dissolution began.", "entities": [], "numbers": ["0.9"], "domain": "causal"}
+{"text": "Since the dielectric constant increased from 4.2 to 6.8, capacitance doubled expectedly.", "entities": [], "numbers": ["4.2", "6.8"], "domain": "causal"}
+{"text": "The biodiversity index declined therefore ecosystem resilience fell by 23 percent in affected regions.", "entities": [], "numbers": ["23"], "domain": "causal"}
+{"text": "Because the protein C activity reached 58 percent of normal, thrombophilia risk was significant.", "entities": [], "numbers": ["58"], "domain": "causal"}
+{"text": "Since the Young's modulus increased by 12 gigapascals, stiffness improved substantially.", "entities": [], "numbers": ["12"], "domain": "causal"}
+{"text": "The chemical reaction kinetics accelerated therefore reaction time halved from 8.4 to 4.2 hours.", "entities": [], "numbers": ["8.4", "4.2"], "domain": "causal"}
+{"text": "Because the factor VIII level fell to 34 percent, hemophilia A symptoms appeared.", "entities": [], "numbers": ["34"], "domain": "causal"}
+{"text": "Since the viscous damping increased by 0.18 newton-seconds per meter, oscillation amplitude decreased rapidly.", "entities": [], "numbers": ["0.18"], "domain": "causal"}
+{"text": "The nutrient leaching increased as a result of soil permeability rising to 8.2 centimeters per hour.", "entities": [], "numbers": ["8.2"], "domain": "causal"}
+{"text": "Because the factor II activity dropped to 48 percent, prothrombin complex concentrate was administered.", "entities": [], "numbers": ["48"], "domain": "causal"}
+{"text": "Since the acoustic absorption coefficient increased from 0.15 to 0.38, room reverb time decreased significantly.", "entities": [], "numbers": ["0.15", "0.38"], "domain": "causal"}
+{"text": "The sediment compaction progressed therefore foundation settlement accumulated 2.6 millimeters annually.", "entities": [], "numbers": ["2.6"], "domain": "causal"}
+{"text": "Because the factor V level reached 156 percent, thrombosis prophylaxis was indicated.", "entities": [], "numbers": ["156"], "domain": "causal"}
+{"text": "Since the thermal conductance decreased by 0.11 watts per square meter Kelvin, heat transfer declined.", "entities": [], "numbers": ["0.11"], "domain": "causal"}
+{"text": "The metabolic rate increased as a result of thyroid hormone elevation increasing body temperature by 1.2 degrees Fahrenheit.", "entities": ["Fahrenheit"], "numbers": ["1.2"], "domain": "causal"}
+{"text": "Because the platelet count dropped to 95 thousand per microliter, bleeding risk was elevated.", "entities": [], "numbers": ["95", "thousand"], "domain": "causal"}
+{"text": "Since the luminous efficiency decreased by 5.2 lumens per watt, lighting performance degraded.", "entities": [], "numbers": ["5.2"], "domain": "causal"}
+{"text": "The ion exchange resin saturation increased therefore regeneration required 12.5 kilograms of salt per cycle.", "entities": [], "numbers": ["12.5"], "domain": "causal"}
+{"text": "Because the phosphorus level fell to 2.1 milligrams per deciliter, hypophosphatemia was confirmed.", "entities": [], "numbers": ["2.1"], "domain": "causal"}
+{"text": "Since the mechanical advantage changed from 4.2 to 2.8, lifting capacity was proportionally reduced.", "entities": [], "numbers": ["4.2", "2.8"], "domain": "causal"}
+{"text": "The enzyme activity doubled therefore reaction yield improved from 64 to 89 percent.", "entities": [], "numbers": ["64", "89"], "domain": "causal"}
+{"text": "Because the magnesium level reached 2.6 milligrams per deciliter, muscle weakness manifested.", "entities": [], "numbers": ["2.6"], "domain": "causal"}
+{"text": "Since the refractive index shifted by 0.08, optical aberrations became noticeable.", "entities": [], "numbers": ["0.08"], "domain": "causal"}
+{"text": "The agricultural runoff increased as a result of heavy rain delivering 105 millimeters in 6 hours.", "entities": [], "numbers": ["105", "6"], "domain": "causal"}
+{"text": "Because the carbon monoxide level reached 1200 parts per million, ventilation system activation was urgent.", "entities": [], "numbers": ["1200"], "domain": "causal"}
+{"text": "Since the angular misalignment exceeded 1.8 degrees, vibration amplification was significant.", "entities": [], "numbers": ["1.8"], "domain": "causal"}
+{"text": "The spectral irradiance changed therefore color temperature shifted from 3500 to 4200 Kelvin.", "entities": ["Kelvin"], "numbers": ["3500", "4200"], "domain": "causal"}
+{"text": "Because the calcium level fell below 7.8 milligrams per deciliter, hypocalcemia symptoms appeared.", "entities": [], "numbers": ["7.8"], "domain": "causal"}
+{"text": "Since the sodium-potassium pump activity declined, cellular osmotic balance deteriorated at 0.32 millimoles.", "entities": [], "numbers": ["0.32"], "domain": "causal"}
+{"text": "The groundwater aquifer depletion accelerated therefore well depth increased by 18 meters in 4 years.", "entities": [], "numbers": ["18", "4"], "domain": "causal"}
+{"text": "Because the zinc finger protein binding affinity decreased 44 percent, gene expression downregulation occurred.", "entities": [], "numbers": ["44"], "domain": "causal"}
+{"text": "Since the combustion temperature dropped from 1850 to 1620 Kelvin, soot formation increased significantly.", "entities": ["Kelvin"], "numbers": ["1850", "1620"], "domain": "causal"}
+{"text": "The urban heat island effect intensified therefore nighttime temperatures rose 2.8 degrees Celsius.", "entities": [], "numbers": ["2.8"], "domain": "causal"}
+{"text": "Because the collagen cross-linking increased by 23 percent, tissue stiffness escalated.", "entities": [], "numbers": ["23"], "domain": "causal"}
+{"text": "Since the antioxidant capacity fell below 15 micromolesTeq per gram, oxidative stress accelerated.", "entities": [], "numbers": ["15"], "domain": "causal"}
+{"text": "The osmolarity exceeded 320 milliosmoles per liter as a result of hypernatremia development.", "entities": [], "numbers": ["320"], "domain": "causal"}
+{"text": "Because the catalyst surface area decreased from 48 to 31 square meters per gram, reaction rate declined.", "entities": [], "numbers": ["48", "31"], "domain": "causal"}
+{"text": "Since the moisture content rose to 24 percent by weight, the wood swelling reached 0.9 millimeters.", "entities": [], "numbers": ["24", "0.9"], "domain": "causal"}
+{"text": "The electrical conductivity doubled therefore salinity increased by 1.6 siemens per meter.", "entities": [], "numbers": ["1.6"], "domain": "causal"}
+{"text": "Because the endotoxin concentration reached 85 endotoxin units per milliliter, pyrogenic response occurred.", "entities": [], "numbers": ["85"], "domain": "causal"}
+{"text": "Since the shear stress exceeded 12.4 pascals, laminar flow transitioned to turbulent flow.", "entities": [], "numbers": ["12.4"], "domain": "causal"}
+{"text": "The nitrogen fixation rate decreased therefore crop residue nitrogen fell from 180 to 125 kilograms.", "entities": [], "numbers": ["180", "125"], "domain": "causal"}
+{"text": "Because the skin barrier integrity compromised at 0.18 trans-epidermal water loss, dermatitis worsened.", "entities": [], "numbers": ["0.18"], "domain": "causal"}
+{"text": "Since the pressure gradient increased by 0.9 kilopascals per centimeter, fluid flow accelerated.", "entities": [], "numbers": ["0.9"], "domain": "causal"}
+{"text": "The glacier meltwater volume surged therefore downstream discharge peaked at 1200 cubic meters per second.", "entities": [], "numbers": ["1200"], "domain": "causal"}
+{"text": "Because the photosynthetic efficiency dropped to 6.8 percent, yield losses were inevitable.", "entities": [], "numbers": ["6.8"], "domain": "causal"}
+{"text": "Since the serum osmolality reached 305 milliosmoles per kilogram, polydipsia intensified significantly.", "entities": [], "numbers": ["305"], "domain": "causal"}
+{"text": "The thermal diffusivity decreased therefore temperature propagation time doubled to 3.2 hours.", "entities": [], "numbers": ["3.2"], "domain": "causal"}
+{"text": "Because the myelin sheath thickness reduced by 1.8 micrometers, nerve conduction velocity decreased.", "entities": [], "numbers": ["1.8"], "domain": "causal"}
+{"text": "Since the ocean acidification index reached 8.15 pH units, mollusk shell dissolution accelerated.", "entities": [], "numbers": ["8.15"], "domain": "causal"}
+{"text": "The hydraulic efficiency fell therefore pressure-flow relationship showed 16 percent losses across 42 meters.", "entities": [], "numbers": ["16", "42"], "domain": "causal"}
+{"text": "Because the melanin production increased 52 percent under UVA exposure, photoprotection improved.", "entities": ["UVA"], "numbers": ["52"], "domain": "causal"}
+{"text": "Since the mitochondrial membrane potential dropped from 180 to 145 millivolts, ATP synthesis declined.", "entities": [], "numbers": ["180", "145"], "domain": "causal"}
+{"text": "The substrate concentration exceeded 88 millimoles per liter as a result of fermentation acceleration.", "entities": [], "numbers": ["88"], "domain": "causal"}
+{"text": "Because the polymer cross-link density increased to 0.42 millimoles per cubic centimeter, brittleness increased.", "entities": [], "numbers": ["0.42"], "domain": "causal"}

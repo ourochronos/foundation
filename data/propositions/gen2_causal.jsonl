@@ -1,0 +1,250 @@
+{"text": "Because the coolant loop lost 0.4 bar of pressure overnight, the reactor's morning startup was delayed by three hours.", "entities": [], "numbers": ["0.4", "three"], "domain": "causal"}
+{"text": "Since silicon wafers reached 28 nanometer thickness, the chip's leakage current doubled.", "entities": [], "numbers": ["28", "nanometer"], "domain": "causal"}
+{"text": "The aurora intensified at 2300 UTC as the solar wind's dynamic pressure surged to 8.2 nanoTesla.", "entities": [], "numbers": ["2300", "8.2", "nanoTesla"], "domain": "causal"}
+{"text": "Because a tree fell across the transmission line, 12,000 households lost power for 6 hours.", "entities": [], "numbers": ["12,000", "6"], "domain": "causal"}
+{"text": "The pendulum's period increased by 8% since the room temperature dropped from 22 to 18 degrees Celsius.", "entities": [], "numbers": ["8", "22", "18"], "domain": "causal"}
+{"text": "Since the magnetic field reached 5 Tesla, electron trajectories curved inward with a radius of 2.3 centimeters.", "entities": [], "numbers": ["5", "Tesla", "2.3", "centimeters"], "domain": "causal"}
+{"text": "Because atmospheric CO2 levels hit 425 ppm, the Keeling curve's slope steepened.", "entities": ["Keeling"], "numbers": ["425", "ppm"], "domain": "causal"}
+{"text": "The friction coefficient dropped to 0.18 as the lubricant's viscosity fell by 40%.", "entities": [], "numbers": ["0.18", "40"], "domain": "causal"}
+{"text": "Since the forest's albedo changed from 0.12 to 0.09, local temperatures rose by 1.5 degrees.", "entities": [], "numbers": ["0.12", "0.09", "1.5"], "domain": "causal"}
+{"text": "Because the wave's amplitude reached 4.7 meters, the shoreline erosion rate jumped to 2.1 meters per year.", "entities": [], "numbers": ["4.7", "2.1"], "domain": "causal"}
+{"text": "The lichen coverage fell by 23% since sulfur dioxide emissions decreased to 0.08 ppm.", "entities": [], "numbers": ["23", "0.08", "ppm"], "domain": "causal"}
+{"text": "As the population density rose from 18 to 45 per square kilometer, disease transmission accelerated.", "entities": [], "numbers": ["18", "45"], "domain": "causal"}
+{"text": "Because the enzyme's substrate concentration doubled to 6 millimolar, the reaction rate tripled.", "entities": [], "numbers": ["6", "millimolar"], "domain": "causal"}
+{"text": "Since copper's electrical resistivity increased by 0.006 per Kelvin, the wire's losses mounted.", "entities": ["Copper"], "numbers": ["0.006", "Kelvin"], "domain": "causal"}
+{"text": "The cloud droplet radius shrank from 12 to 8 micrometers as sulfate aerosols increased by 200%.", "entities": [], "numbers": ["12", "8", "micrometers", "200"], "domain": "causal"}
+{"text": "Because nutrient runoff reached 18 kilograms per hectare, the algal bloom expanded to cover 3.2 square kilometers.", "entities": [], "numbers": ["18", "kilograms", "hectare", "3.2", "square kilometers"], "domain": "causal"}
+{"text": "Since the dam held back 47 million cubic meters of water, downstream flow dropped by 65%.", "entities": [], "numbers": ["47", "million", "cubic meters", "65"], "domain": "causal"}
+{"text": "The gold ore grade fell to 0.8 grams per tonne as extraction extended to deeper levels.", "entities": [], "numbers": ["0.8", "grams", "tonne"], "domain": "causal"}
+{"text": "Because the fault line shifted 3.2 centimeters, buildings within 500 meters experienced ground acceleration of 0.35 g.", "entities": [], "numbers": ["3.2", "centimeters", "500", "0.35"], "domain": "causal"}
+{"text": "As the soil pH dropped from 7.1 to 5.8, aluminum toxicity rose, stunting crop yields by 34%.", "entities": [], "numbers": ["7.1", "5.8", "34"], "domain": "causal"}
+{"text": "Since the stock crashed 12.3% in a single day, margin calls forced liquidation of 45 million shares.", "entities": [], "numbers": ["12.3", "45", "million"], "domain": "causal"}
+{"text": "Because the coral's bleaching threshold is 1.5 degrees above the 30-year average, the 2024 spike ended 67% of the reef.", "entities": [], "numbers": ["1.5", "30", "67"], "domain": "causal"}
+{"text": "The moisture content dropped to 4.2%, therefore the wood's tensile strength increased by 8%.", "entities": [], "numbers": ["4.2", "8"], "domain": "causal"}
+{"text": "Since sea level rose 2.1 millimeters per year, salt intrusion penetrated 3.8 kilometers inland.", "entities": [], "numbers": ["2.1", "millimeters", "3.8", "kilometers"], "domain": "causal"}
+{"text": "Because the semiconductor's band gap narrowed by 0.04 eV, the leakage current jumped 150%.", "entities": [], "numbers": ["0.04", "eV", "150"], "domain": "causal"}
+{"text": "As the wildfire's burn temperature reached 1200 Celsius, soil hydrophobicity increased by a factor of 2.5.", "entities": [], "numbers": ["1200", "Celsius", "2.5"], "domain": "causal"}
+{"text": "The market cap fell $2.3 billion as investor confidence dropped following the 8.1 magnitude earthquake.", "entities": [], "numbers": ["2.3", "billion", "8.1"], "domain": "causal"}
+{"text": "Since the patient's insulin resistance index rose to 4.2, their triglyceride levels increased by 67%.", "entities": [], "numbers": ["4.2", "67"], "domain": "causal"}
+{"text": "Because the catalyst's surface area was 650 square meters per gram, the reaction accelerated tenfold.", "entities": [], "numbers": ["650", "square meters", "gram", "tenfold"], "domain": "causal"}
+{"text": "The thermistor's resistance coefficient changed to 0.045 per Kelvin, shifting the sensor's calibration by 2.1%.", "entities": [], "numbers": ["0.045", "Kelvin", "2.1"], "domain": "causal"}
+{"text": "Since plankton biomass collapsed by 41% due to the 0.8 degree warming, fish catches fell dramatically.", "entities": [], "numbers": ["41", "0.8"], "domain": "causal"}
+{"text": "Because the limestone deposit contained 23% magnesium carbonate, the concrete's compressive strength dropped by 11%.", "entities": [], "numbers": ["23", "11"], "domain": "causal"}
+{"text": "As the inflation rate hit 9.2%, central banks raised rates by 1.75 percentage points.", "entities": [], "numbers": ["9.2", "1.75"], "domain": "causal"}
+{"text": "The microfissure's depth reached 4.3 millimeters, therefore the bearing's fatigue life decreased by 28%.", "entities": [], "numbers": ["4.3", "millimeters", "28"], "domain": "causal"}
+{"text": "Since the wildflower pollinator population declined 52%, seed yields dropped by 48 percent.", "entities": [], "numbers": ["52", "48"], "domain": "causal"}
+{"text": "Because the drone's battery capacity is only 2200 milliampere-hours, flight time is limited to 22 minutes.", "entities": [], "numbers": ["2200", "milliampere-hours", "22", "minutes"], "domain": "causal"}
+{"text": "The river's channel widened from 45 to 78 meters as bank erosion accelerated downstream.", "entities": [], "numbers": ["45", "78", "meters"], "domain": "causal"}
+{"text": "As the profit margin eroded from 18.5% to 12.3%, quarterly revenue forecasts were revised downward.", "entities": [], "numbers": ["18.5", "12.3"], "domain": "causal"}
+{"text": "Since the pH changed from 4.2 to 3.8, bacterial counts in the fermentation vessel quadrupled.", "entities": [], "numbers": ["4.2", "3.8"], "domain": "causal"}
+{"text": "Because uranium isotope U-235 comprises only 0.72% of natural uranium, enrichment requires thousands of centrifuges.", "entities": ["U-235", "uranium"], "numbers": ["0.72"], "domain": "causal"}
+{"text": "The asteroid's velocity is 18.4 kilometers per second; therefore, impact energy will release 50 megatons TNT equivalent.", "entities": [], "numbers": ["18.4", "kilometers", "second", "50", "megatons"], "domain": "causal"}
+{"text": "Since the predator population crashed from 340 to 89 individuals, prey species began unchecked expansion.", "entities": [], "numbers": ["340", "89"], "domain": "causal"}
+{"text": "Because the polymer's glass transition temperature is 65 degrees Celsius, it becomes brittle when refrigerated.", "entities": [], "numbers": ["65", "Celsius"], "domain": "causal"}
+{"text": "As greenhouse gas concentrations reached 421 ppm CO2-equivalent, climate models predict a 2.1 degree warming.", "entities": [], "numbers": ["421", "ppm", "2.1"], "domain": "causal"}
+{"text": "The lithium-ion battery's internal resistance jumped to 0.034 ohms, reducing output power by 23%.", "entities": ["lithium-ion"], "numbers": ["0.034", "ohms", "23"], "domain": "causal"}
+{"text": "Since the municipal aquifer was pumped 1.2 billion gallons per year, the water table dropped 8.3 meters.", "entities": [], "numbers": ["1.2", "billion", "gallons", "8.3", "meters"], "domain": "causal"}
+{"text": "Because the oil field's production peaked at 2.3 million barrels daily, extraction costs rose exponentially.", "entities": [], "numbers": ["2.3", "million", "barrels"], "domain": "causal"}
+{"text": "The pathogen's transmission rate increased by 34% as the R-value climbed from 0.89 to 1.24.", "entities": [], "numbers": ["34", "0.89", "1.24"], "domain": "causal"}
+{"text": "Since the crop's water-use efficiency dropped to 0.8 kilograms per cubic meter, irrigation demand surged.", "entities": [], "numbers": ["0.8", "kilograms", "cubic meter"], "domain": "causal"}
+{"text": "Because the suspension's spring constant is 2400 Newtons per meter, the vehicle's bounce frequency is 1.8 Hz.", "entities": [], "numbers": ["2400", "Newtons", "meter", "1.8", "Hz"], "domain": "causal"}
+{"text": "As the melting point of ice dropped from 0 to -5 degrees Celsius due to salt application, mobility improved.", "entities": [], "numbers": ["0", "-5", "Celsius"], "domain": "causal"}
+{"text": "Since the stock's price-to-earnings ratio ballooned to 67, the equity was deemed significantly overvalued.", "entities": [], "numbers": ["67"], "domain": "causal"}
+{"text": "Because the canyon's gradient is 12 degrees and the bedrock is granite, flashfloods pose constant hazard.", "entities": ["granite"], "numbers": ["12", "degrees"], "domain": "causal"}
+{"text": "The photosynthetic rate increased by 18% as the light intensity climbed from 400 to 800 microeinsteins per second.", "entities": [], "numbers": ["18", "400", "800", "microeinsteins"], "domain": "causal"}
+{"text": "Since atmospheric pressure dropped from 1013 to 987 millibars, cyclone intensification began rapidly.", "entities": [], "numbers": ["1013", "987", "millibars"], "domain": "causal"}
+{"text": "Because the landslide's depth was 6.7 meters and the slope angle 38 degrees, the debris field extended 340 meters.", "entities": [], "numbers": ["6.7", "meters", "38", "degrees", "340"], "domain": "causal"}
+{"text": "As exchange rates shifted from 1.22 to 1.08 USD per EUR, exporters' competitiveness eroded.", "entities": ["USD", "EUR"], "numbers": ["1.22", "1.08"], "domain": "causal"}
+{"text": "The pathogen's incubation period shortened from 5.2 to 3.1 days as the viral load increased tenfold.", "entities": [], "numbers": ["5.2", "3.1", "days"], "domain": "causal"}
+{"text": "Since the reservoir's evaporation rate reached 2.4 millimeters per day, the stored volume fell by 12 million cubic meters.", "entities": [], "numbers": ["2.4", "millimeters", "day", "12", "million", "cubic meters"], "domain": "causal"}
+{"text": "Because the thermal conductivity of air is 0.026 watts per meter-Kelvin, attic insulation requires 15 centimeters.", "entities": [], "numbers": ["0.026", "watts", "meter-Kelvin", "15", "centimeters"], "domain": "causal"}
+{"text": "As the population's median income dropped 22%, credit default rates increased from 2.1% to 5.8%.", "entities": [], "numbers": ["22", "2.1", "5.8"], "domain": "causal"}
+{"text": "Since the soil's clay content rose to 38%, water retention improved but aeration declined critically.", "entities": [], "numbers": ["38"], "domain": "causal"}
+{"text": "Because the neutron flux in the reactor core reached 4.2 billion neutrons per square centimeter, control rods were inserted.", "entities": [], "numbers": ["4.2", "billion", "neutrons", "square centimeter"], "domain": "causal"}
+{"text": "The turbine's rotor speed climbed to 3600 RPM; therefore, vibration levels exceeded safety thresholds by 18%.", "entities": [], "numbers": ["3600", "RPM", "18"], "domain": "causal"}
+{"text": "As monoculture corn acreage expanded to 89 million acres, nitrogen runoff intensified flooding risk.", "entities": [], "numbers": ["89", "million", "acres"], "domain": "causal"}
+{"text": "Since the alloy's yield strength is 620 megapascals and the applied stress was 850 megapascals, plastic deformation occurred.", "entities": [], "numbers": ["620", "megapascals", "850"], "domain": "causal"}
+{"text": "Because the pandemic's growth rate was 1.18 weekly, infections doubled every 5.9 days.", "entities": [], "numbers": ["1.18", "5.9", "days"], "domain": "causal"}
+{"text": "The wind shear increased by 7.3 meters per second across the inversion layer, spawning intense vertical mixing.", "entities": [], "numbers": ["7.3", "meters", "second"], "domain": "causal"}
+{"text": "Since copper's Young's modulus is 110 gigapascals, a 50-meter cable stretches only 2.1 millimeters under 1-ton load.", "entities": ["Copper"], "numbers": ["110", "gigapascals", "50", "meter", "2.1", "millimeters", "1", "ton"], "domain": "causal"}
+{"text": "As the Fed's interest rate reached 5.5%, venture funding dried up, killing 340 startups.", "entities": ["Fed"], "numbers": ["5.5", "340"], "domain": "causal"}
+{"text": "Because the disease vector population is 2 million and the transmission probability is 0.004, outbreak risk is substantial.", "entities": [], "numbers": ["2", "million", "0.004"], "domain": "causal"}
+{"text": "The thermal expansion coefficient of steel is 1.2 microstrain per Kelvin; therefore, the 40-meter bridge expands 19.2 millimeters.", "entities": ["steel"], "numbers": ["1.2", "microstrain", "Kelvin", "40", "meter", "19.2", "millimeters"], "domain": "causal"}
+{"text": "Since nutrient bioavailability dropped 34%, the mussel population declined by 52% in two years.", "entities": [], "numbers": ["34", "52", "two"], "domain": "causal"}
+{"text": "Because the asteroid's semi-major axis is 1.47 AU, its orbital period equals 1.79 years.", "entities": ["AU"], "numbers": ["1.47", "1.79", "years"], "domain": "causal"}
+{"text": "As GDP contraction reached 2.3%, unemployment rose from 4.2% to 6.8% nationwide.", "entities": ["GDP"], "numbers": ["2.3", "4.2", "6.8"], "domain": "causal"}
+{"text": "The glacier's ablation zone expanded, since the equilibrium line altitude rose 120 meters in a decade.", "entities": [], "numbers": ["120", "meters", "decade"], "domain": "causal"}
+{"text": "Because the strain hardening exponent is 0.22, the material's yield strength increases logarithmically with deformation.", "entities": [], "numbers": ["0.22"], "domain": "causal"}
+{"text": "Since the famine killed 1.2 million people, agricultural output has not recovered to pre-crisis levels.", "entities": [], "numbers": ["1.2", "million"], "domain": "causal"}
+{"text": "The ore's iron content is 42%, therefore economic extraction requires processing 2.4 million tons annually.", "entities": [], "numbers": ["42", "2.4", "million", "tons"], "domain": "causal"}
+{"text": "As the pathogen's mutation rate accelerated tenfold, vaccine efficacy dropped from 94% to 68%.", "entities": [], "numbers": ["tenfold", "94", "68"], "domain": "causal"}
+{"text": "Since the magnetic declination changed 2.1 degrees, compasses pointing at true north shifted by the same angle.", "entities": [], "numbers": ["2.1", "degrees"], "domain": "causal"}
+{"text": "Because the monsoon shifted south by 150 kilometers, the formerly wet region received 60% less rainfall.", "entities": [], "numbers": ["150", "kilometers", "60"], "domain": "causal"}
+{"text": "The concrete's permeability coefficient rose from 0.0001 to 0.0008 cm/s, enabling chloride ion penetration.", "entities": [], "numbers": ["0.0001", "0.0008"], "domain": "causal"}
+{"text": "As the stock's implied volatility surged to 82%, option prices jumped 140% in hours.", "entities": [], "numbers": ["82", "140"], "domain": "causal"}
+{"text": "Because photosynthesis produces 180 grams glucose per mole CO2, the plant's net primary production hit 12 tons per hectare.", "entities": [], "numbers": ["180", "grams", "mole", "12", "tons", "hectare"], "domain": "causal"}
+{"text": "Since the turbidity increased from 3 to 47 NTU, fish migration routes were disrupted entirely.", "entities": [], "numbers": ["3", "47", "NTU"], "domain": "causal"}
+{"text": "The laser's wavelength is 532 nanometers; therefore, penetration depth in water is only 8.2 meters.", "entities": [], "numbers": ["532", "nanometers", "8.2", "meters"], "domain": "causal"}
+{"text": "Because the outbreak's basic reproduction number was 2.8, herd immunity required 64% vaccination coverage.", "entities": [], "numbers": ["2.8", "64"], "domain": "causal"}
+{"text": "As the company's debt-to-equity ratio climbed to 3.2, credit rating agencies downgraded bonds to junk status.", "entities": [], "numbers": ["3.2"], "domain": "causal"}
+{"text": "Since the rain's pH was 3.8 and the soil buffer index is 12, acidification advanced by 0.15 units annually.", "entities": [], "numbers": ["3.8", "12", "0.15"], "domain": "causal"}
+{"text": "Therefore the composite material's fiber volume fraction increased from 45% to 62%, tensile modulus rose 28%.", "entities": [], "numbers": ["45", "62", "28"], "domain": "causal"}
+{"text": "Because the fracture toughness of titanium is 55 MPa·m^0.5, cracks longer than 3.2 millimeters cause catastrophic failure.", "entities": ["titanium"], "numbers": ["55", "MPa", "3.2", "millimeters"], "domain": "causal"}
+{"text": "The unemployment rate spiked to 8.9% as factory closures eliminated 15,000 jobs in the region.", "entities": [], "numbers": ["8.9", "15,000"], "domain": "causal"}
+{"text": "Since the virus's mutation rate is 1 change per 10,000 replication cycles, genetic drift is inevitable.", "entities": [], "numbers": ["1", "10,000"], "domain": "causal"}
+{"text": "As the viscosity of crude oil at 40 degrees Celsius is 94 centiStokes, pipeline transport requires heating to 50 degrees.", "entities": [], "numbers": ["40", "Celsius", "94", "centiStokes", "50", "degrees"], "domain": "causal"}
+{"text": "Because the porosity of sandstone reaches 28%, groundwater flow rates are substantial, facilitating contamination spread.", "entities": ["sandstone"], "numbers": ["28"], "domain": "causal"}
+{"text": "Since the market cap of Tesla grew to $1.2 trillion, the valuation implied an earnings multiple of 142.", "entities": ["Tesla"], "numbers": ["1.2", "trillion", "142"], "domain": "causal"}
+{"text": "The mineral's refractive index is 1.54; therefore, optical transparency requires less than 5 millimeters thickness.", "entities": [], "numbers": ["1.54", "5", "millimeters"], "domain": "causal"}
+{"text": "As the soil organic carbon fell to 1.2%, microbial activity declined, slowing nutrient cycling by 40%.", "entities": [], "numbers": ["1.2", "40"], "domain": "causal"}
+{"text": "Because the wind speed at hub height is 8.2 meters per second, the turbine's capacity factor is 32%.", "entities": [], "numbers": ["8.2", "meters", "second", "32"], "domain": "causal"}
+{"text": "Since the cancer's BRCA1 mutation increased risk sevenfold, screening protocols changed for carriers.", "entities": ["BRCA1"], "numbers": ["sevenfold"], "domain": "causal"}
+{"text": "The permafrost's active layer thawed deeper than 1.8 meters; therefore, ground subsidence accelerated dramatically.", "entities": [], "numbers": ["1.8", "meters"], "domain": "causal"}
+{"text": "As the commodity's price fell 44% from peak, production was scaled back by 18 facilities globally.", "entities": [], "numbers": ["44", "18"], "domain": "causal"}
+{"text": "Because the specific heat capacity of water is 4.18 joules per gram-Kelvin, oceans regulate climate stability.", "entities": [], "numbers": ["4.18", "joules", "gram-Kelvin"], "domain": "causal"}
+{"text": "Since the population of invasive species doubled every 8 months, native species faced extinction within 3 years.", "entities": [], "numbers": ["8", "months", "3", "years"], "domain": "causal"}
+{"text": "The reactor's thermal power output is 3.2 gigawatts; therefore, cooling water flow must exceed 95,000 gallons per minute.", "entities": [], "numbers": ["3.2", "gigawatts", "95,000", "gallons", "minute"], "domain": "causal"}
+{"text": "Because the infection rate among the unvaccinated cohort was 8.2%, public health officials mandated interventions.", "entities": [], "numbers": ["8.2"], "domain": "causal"}
+{"text": "As the mining company extracted 2.1 billion pounds of copper annually, environmental damage extended across 340 square kilometers.", "entities": [], "numbers": ["2.1", "billion", "pounds", "copper", "340", "square kilometers"], "domain": "causal"}
+{"text": "Since the textile's denier is only 1.2, garment weight is minimized to 85 grams per square meter.", "entities": [], "numbers": ["1.2", "85", "grams", "square meter"], "domain": "causal"}
+{"text": "Because the tsunami wave height reached 12 meters and velocity was 24 meters per second, coastal damage was catastrophic.", "entities": [], "numbers": ["12", "meters", "24"], "domain": "causal"}
+{"text": "The currency's exchange rate volatility hit 18% annualized; therefore, hedging costs increased for exporters.", "entities": [], "numbers": ["18"], "domain": "causal"}
+{"text": "As the pathogen's generation time shortened from 6.2 to 3.8 hours, the outbreak's doubling time compressed dramatically.", "entities": [], "numbers": ["6.2", "3.8", "hours"], "domain": "causal"}
+{"text": "Since the pressure drop across the valve was 2.3 bar and flow rate was 45 cubic meters per hour, valve friction losses were evident.", "entities": [], "numbers": ["2.3", "bar", "45", "cubic meters", "hour"], "domain": "causal"}
+{"text": "Because the crop's phenological delay reached 12 days due to cool springs, harvest timing shifted.", "entities": [], "numbers": ["12", "days"], "domain": "causal"}
+{"text": "Therefore the composite's shear strength dropped from 28 MPa to 18 MPa after 1000 hours moisture exposure.", "entities": [], "numbers": ["28", "MPa", "18", "1000", "hours"], "domain": "causal"}
+{"text": "Since the seismic moment magnitude is 6.8, the earthquake released energy equivalent to 15 kilotons TNT.", "entities": [], "numbers": ["6.8", "15", "kilotons"], "domain": "causal"}
+{"text": "Because the glacier's accumulation zone is 2.1 square kilometers and ablation zone is 1.2 square kilometers, net retreat occurs annually.", "entities": [], "numbers": ["2.1", "square kilometers", "1.2"], "domain": "causal"}
+{"text": "As interest rates fell to 0.25%, equity valuations expanded, pushing the S&P 500 up 67%.", "entities": ["S&P 500"], "numbers": ["0.25", "67"], "domain": "causal"}
+{"text": "The alloy's work hardening rate is 240 megapascals per strain; therefore, tensile strength climbs with deformation.", "entities": [], "numbers": ["240", "megapascals"], "domain": "causal"}
+{"text": "Since the phytoplankton bloom covers 34,000 square kilometers and depletes oxygen, fish kills are widespread.", "entities": [], "numbers": ["34,000", "square kilometers"], "domain": "causal"}
+{"text": "Because the neutron absorption cross-section of boron-10 is 3840 barns, boron is effective as a control rod.", "entities": ["boron-10"], "numbers": ["3840", "barns"], "domain": "causal"}
+{"text": "The compound's molecular weight is 156 grams per mole; therefore, a 50-milliliter solution contains 0.32 moles.", "entities": [], "numbers": ["156", "grams", "mole", "50", "milliliter", "0.32", "moles"], "domain": "causal"}
+{"text": "As the poverty rate jumped to 16.2% nationally, food bank demand surged 89%.", "entities": [], "numbers": ["16.2", "89"], "domain": "causal"}
+{"text": "Since the sediment core shows a lead concentration of 78 parts per billion from 1960, industrial pollution is documented.", "entities": [], "numbers": ["78", "parts per billion", "1960"], "domain": "causal"}
+{"text": "Because the tensile strength of concrete is only 2.8 megapascals, reinforcing steel is essential for structural stability.", "entities": ["steel"], "numbers": ["2.8", "megapascals"], "domain": "causal"}
+{"text": "As the vaccination coverage reached 76%, measles transmission chains were broken.", "entities": [], "numbers": ["76"], "domain": "causal"}
+{"text": "The friction loss coefficient in the pipeline is 0.028; therefore, pumping 1000 barrels per day requires 12 megawatts.", "entities": [], "numbers": ["0.028", "1000", "barrels", "day", "12", "megawatts"], "domain": "causal"}
+{"text": "Since the pKa of acetic acid is 4.76, a solution buffered at pH 5.2 contains mostly acetate ions.", "entities": ["acetic acid"], "numbers": ["4.76", "5.2"], "domain": "causal"}
+{"text": "Because the mantle's convection rate carries plates at 2 to 10 centimeters annually, continents drift inexorably.", "entities": [], "numbers": ["2", "10", "centimeters"], "domain": "causal"}
+{"text": "As the firm's P/E ratio crashed from 42 to 11, institutional investors abandoned the stock.", "entities": [], "numbers": ["42", "11"], "domain": "causal"}
+{"text": "Since the pathogen has a latency period of 21 days, quarantine protocols require 4-week isolation.", "entities": [], "numbers": ["21", "days", "4"], "domain": "causal"}
+{"text": "The dielectric constant of silicon is 11.7; therefore, the capacitance per unit area is 10.2 nanofarads per square centimeter.", "entities": ["silicon"], "numbers": ["11.7", "10.2", "nanofarads", "square centimeter"], "domain": "causal"}
+{"text": "As crop diversity declined to only 3 major varieties, pest outbreaks eliminated 44% of production.", "entities": [], "numbers": ["3", "44"], "domain": "causal"}
+{"text": "Because the bedrock's unconfined compressive strength is 180 megapascals, the excavation requires controlled blasting.", "entities": [], "numbers": ["180", "megapascals"], "domain": "causal"}
+{"text": "Since the reproduction rate among livestock fell to 0.78 due to stress, herd rebuilding requires 4 years minimum.", "entities": [], "numbers": ["0.78", "4", "years"], "domain": "causal"}
+{"text": "The viscosity of honey at 20 degrees Celsius is 10,000 centipoise; therefore, flow rates are glacially slow.", "entities": ["honey"], "numbers": ["20", "Celsius", "10,000", "centipoise"], "domain": "causal"}
+{"text": "As the trade deficit expanded to $73 billion, currency reserves were depleted to cover imbalances.", "entities": [], "numbers": ["73", "billion"], "domain": "causal"}
+{"text": "Because the infection's incubation period averages 4.2 days, symptom onset peaks within 5.8 days of exposure.", "entities": [], "numbers": ["4.2", "days", "5.8"], "domain": "causal"}
+{"text": "The thermal conductivity of aerogel is only 0.016 watts per meter-Kelvin; therefore, insulation efficiency is exceptional.", "entities": ["aerogel"], "numbers": ["0.016", "watts", "meter-Kelvin"], "domain": "causal"}
+{"text": "Since the carbon sequestration rate of mangroves is 4.6 metric tons per hectare annually, coastal restoration is climate relevant.", "entities": [], "numbers": ["4.6", "metric tons", "hectare"], "domain": "causal"}
+{"text": "As the firm laid off 12% of its 45,000-person workforce, stock price rallied 18%.", "entities": [], "numbers": ["12", "45,000", "18"], "domain": "causal"}
+{"text": "Because the virus's basic reproduction number R0 equals 1.8, herd immunity requires 44% population immunity.", "entities": [], "numbers": ["1.8", "44"], "domain": "causal"}
+{"text": "The fatigue limit of the aluminum alloy is 110 megapascals; therefore, cyclic stresses below this threshold permit infinite life.", "entities": ["aluminum"], "numbers": ["110", "megapascals"], "domain": "causal"}
+{"text": "Since the fire's intensity index reached 8, structural damage was severe across 250 hectares.", "entities": [], "numbers": ["8", "250", "hectares"], "domain": "causal"}
+{"text": "Because the commodity futures price spiked 24% in one week, speculation triggered circuit breakers.", "entities": [], "numbers": ["24"], "domain": "causal"}
+{"text": "As antibody titers fell below 10 IU/mL, reinfection risk increased substantially among previously vaccinated persons.", "entities": [], "numbers": ["10", "IU/mL"], "domain": "causal"}
+{"text": "The porosity-permeability relationship means a soil with 15% porosity exhibits hydraulic conductivity of 0.001 cm/s.", "entities": [], "numbers": ["15", "0.001"], "domain": "causal"}
+{"text": "Since the reef's pH dropped 0.1 units, aragonite saturation fell below 3, triggering coral bleaching.", "entities": [], "numbers": ["0.1", "3"], "domain": "causal"}
+{"text": "Because the plasma frequency of aluminum is 11.3 eV, visible light reflects rather than transmitting.", "entities": ["aluminum"], "numbers": ["11.3", "eV"], "domain": "causal"}
+{"text": "As the unemployment duration exceeded 26 weeks, long-term jobless workers' skills depreciated severely.", "entities": [], "numbers": ["26", "weeks"], "domain": "causal"}
+{"text": "Therefore the precipitation rate at 55 millimeters per hour exceeded the soil's infiltration capacity of 15 millimeters per hour.", "entities": [], "numbers": ["55", "millimeters", "hour", "15"], "domain": "causal"}
+{"text": "Since the parasite prevalence reached 48%, malnutrition rose, reducing child development scores by 35 percent.", "entities": [], "numbers": ["48", "35"], "domain": "causal"}
+{"text": "Because the surface tension of water at 25 degrees Celsius is 72 dyne/cm, capillary rise in clay reaches 1.2 meters.", "entities": [], "numbers": ["25", "Celsius", "72", "dyne/cm", "1.2", "meters"], "domain": "causal"}
+{"text": "As the market's implied volatility index surged from 14 to 67, hedging costs tripled.", "entities": [], "numbers": ["14", "67"], "domain": "causal"}
+{"text": "Since the forest floor decomposition rate slowed by 28% with cooling, carbon accumulation accelerated annually.", "entities": [], "numbers": ["28"], "domain": "causal"}
+{"text": "The optical fiber's numerical aperture is 0.14; therefore, bending radius must exceed 5 centimeters to prevent signal loss.", "entities": [], "numbers": ["0.14", "5", "centimeters"], "domain": "causal"}
+{"text": "Because the soil's potassium concentration dropped to 80 parts per million, crop yields fell by 22%.", "entities": [], "numbers": ["80", "parts per million", "22"], "domain": "causal"}
+{"text": "As carbon dioxide bubbled through the resin at 15 liters per minute, polymerization accelerated twofold.", "entities": [], "numbers": ["15", "liters", "minute"], "domain": "causal"}
+{"text": "Since the infection attack rate in close quarters is 0.34, confinement risks outbreaks.", "entities": [], "numbers": ["0.34"], "domain": "causal"}
+{"text": "Because the thermal neutron absorption cross-section of cadmium is 2520 barns, it shields radiation effectively.", "entities": ["cadmium"], "numbers": ["2520", "barns"], "domain": "causal"}
+{"text": "The concentration of dissolved oxygen fell to 2.1 milligrams per liter; therefore, fish kills began immediately.", "entities": [], "numbers": ["2.1", "milligrams", "liter"], "domain": "causal"}
+{"text": "As the equity premium compressed from 6.2% to 3.1%, bond allocations increased in retirement portfolios.", "entities": [], "numbers": ["6.2", "3.1"], "domain": "causal"}
+{"text": "Since the soil's sulfur content dropped to 14 parts per million, deficiency symptoms appeared in legumes.", "entities": [], "numbers": ["14", "parts per million"], "domain": "causal"}
+{"text": "Because the laser's pulse duration is 100 femtoseconds and peak power is 1.2 terawatts, nonlinear effects dominate.", "entities": [], "numbers": ["100", "femtoseconds", "1.2", "terawatts"], "domain": "causal"}
+{"text": "The species' metabolic rate scales as 0.75 power of body mass; therefore, larger animals require proportionally less energy.", "entities": [], "numbers": ["0.75"], "domain": "causal"}
+{"text": "Since the outbreak's attack rate hit 62%, hospitals exceeded capacity within 3 weeks.", "entities": [], "numbers": ["62", "3", "weeks"], "domain": "causal"}
+{"text": "As the central bank maintained rates at 4.2% for 18 consecutive months, inflation proved sticky.", "entities": [], "numbers": ["4.2", "18", "months"], "domain": "causal"}
+{"text": "Because the ore body's thickness averages 1.8 meters and the grade is 3.2 grams per tonne, extraction economics deteriorate.", "entities": [], "numbers": ["1.8", "meters", "3.2", "grams", "tonne"], "domain": "causal"}
+{"text": "Since the biopsy showed p53 mutations in 78% of cells, cancer progression risk escalated significantly.", "entities": ["p53"], "numbers": ["78"], "domain": "causal"}
+{"text": "The liquid's freezing point depression constant is 1.86 Kelvin-kilograms per mole; therefore, seawater freezes at -2.0 degrees.", "entities": [], "numbers": ["1.86", "Kelvin-kilograms", "mole", "-2.0", "degrees"], "domain": "causal"}
+{"text": "As invasive species expanded to occupy 23% of the ecosystem, native biodiversity plummeted 64%.", "entities": [], "numbers": ["23", "64"], "domain": "causal"}
+{"text": "Because the circuit's impedance is 50 ohms and the signal amplitude is 5 volts, power dissipation reaches 0.5 watts.", "entities": [], "numbers": ["50", "ohms", "5", "volts", "0.5", "watts"], "domain": "causal"}
+{"text": "The bacteria's antibiotic resistance plasmid confers 500-fold resistance; therefore, treatment options vanished.", "entities": [], "numbers": ["500"], "domain": "causal"}
+{"text": "Since the mountain's erosion rate is 2.3 millimeters per year, the peak will be reduced by 230 meters in 100,000 years.", "entities": [], "numbers": ["2.3", "millimeters", "year", "230", "meters", "100,000", "years"], "domain": "causal"}
+{"text": "As the firm's free cash flow turned negative by $450 million, dividend cuts became inevitable.", "entities": [], "numbers": ["450", "million"], "domain": "causal"}
+{"text": "Because the vaccine effectiveness against infection fell to 52% after 6 months, boosters were recommended.", "entities": [], "numbers": ["52", "6", "months"], "domain": "causal"}
+{"text": "The nanoparticle's surface area-to-volume ratio is 4.2 inverse micrometers; therefore, chemical reactivity increases exponentially.", "entities": [], "numbers": ["4.2", "inverse micrometers"], "domain": "causal"}
+{"text": "Since the reservoir's residence time is 4.3 years and the input flux is 12 million tons per year, steady-state dynamics are sluggish.", "entities": [], "numbers": ["4.3", "years", "12", "million", "tons", "year"], "domain": "causal"}
+{"text": "As revenues contracted 34% year-over-year, earnings forecasts were slashed by half.", "entities": [], "numbers": ["34"], "domain": "causal"}
+{"text": "Because the infection's serial interval is 5.1 days, quarantine periods must extend 10 days to prevent secondary transmission.", "entities": [], "numbers": ["5.1", "days", "10"], "domain": "causal"}
+{"text": "The polymer's melting point is 187 degrees Celsius; therefore, molding requires ovens heated above 210 degrees.", "entities": [], "numbers": ["187", "Celsius", "210", "degrees"], "domain": "causal"}
+{"text": "Since the aquifer's total storage is 412 billion cubic meters and annual extraction is 18 billion cubic meters, depletion occurs in 23 years.", "entities": [], "numbers": ["412", "billion", "cubic meters", "18", "23", "years"], "domain": "causal"}
+{"text": "As the magnetic field strength doubled from 2.1 to 4.2 Tesla, electron confinement improved dramatically.", "entities": ["Tesla"], "numbers": ["2.1", "4.2"], "domain": "causal"}
+{"text": "Because the pandemic's case fatality rate was 1.2%, mortality burden strained healthcare systems.", "entities": [], "numbers": ["1.2"], "domain": "causal"}
+{"text": "The elastomer's tear strength is 34 kilopascals; therefore, puncture resistance requires minimum 3 millimeters thickness.", "entities": [], "numbers": ["34", "kilopascals", "3", "millimeters"], "domain": "causal"}
+{"text": "Since the malaria vector's population density exceeds 450 per square kilometer in the wetlands, transmission intensity is extreme.", "entities": [], "numbers": ["450", "square kilometer"], "domain": "causal"}
+{"text": "As the economic contraction reached -3.2%, retail sales plummeted, triggering 8,200 layoffs.", "entities": [], "numbers": ["-3.2", "8,200"], "domain": "causal"}
+{"text": "Because the specimen's carbon-14 activity is 0.12 Bq per gram, radiocarbon dating indicates 16,500 years age.", "entities": [], "numbers": ["0.12", "Bq", "gram", "16,500", "years"], "domain": "causal"}
+{"text": "The sediment's grain size distribution shifted from fine sand to silt; therefore, permeability dropped 85%.", "entities": [], "numbers": ["85"], "domain": "causal"}
+{"text": "Since the company's customer acquisition cost is $240 and lifetime value is $680, retention margin is tight.", "entities": [], "numbers": ["240", "680"], "domain": "causal"}
+{"text": "As antiretroviral therapy coverage reached 71%, HIV transmission risk fell by 63%.", "entities": ["HIV"], "numbers": ["71", "63"], "domain": "causal"}
+{"text": "Because the composite's fiber orientation is random in 2D, mechanical isotropy is achieved but modulus is only 60% of unidirectional.", "entities": [], "numbers": ["2D", "60"], "domain": "causal"}
+{"text": "The radioactive decay constant for Iodine-131 is 0.0863 per day; therefore, half-life is 8.02 days.", "entities": ["Iodine-131"], "numbers": ["0.0863", "day", "8.02", "days"], "domain": "causal"}
+{"text": "Since the soil erodibility index K is 0.32 tons per hectare per unit rainfall-runoff erosivity, the A-factor calculation follows.", "entities": [], "numbers": ["0.32", "tons", "hectare"], "domain": "causal"}
+{"text": "As the firm's debt service coverage ratio fell below 1.2, covenant violations triggered acceleration clauses.", "entities": [], "numbers": ["1.2"], "domain": "causal"}
+{"text": "Because the parasitic load in the host organism reaches 45% of body weight, mobility is severely compromised.", "entities": [], "numbers": ["45"], "domain": "causal"}
+{"text": "The photon's energy at 450 nanometers wavelength is 2.76 electron volts; therefore, it ionizes many organic molecules.", "entities": [], "numbers": ["450", "nanometers", "2.76", "electron volts"], "domain": "causal"}
+{"text": "Since the wildfire's spread rate accelerated to 180 hectares per hour during peak intensity, evacuation was chaotic.", "entities": [], "numbers": ["180", "hectares", "hour"], "domain": "causal"}
+{"text": "As the inflation-adjusted minimum wage fell 12% relative to 1980 levels, purchasing power eroded.", "entities": [], "numbers": ["12", "1980"], "domain": "causal"}
+{"text": "Because the infection's effective reproduction number Rt remained above 1.1 for 14 weeks, sustained transmission persisted.", "entities": [], "numbers": ["1.1", "14", "weeks"], "domain": "causal"}
+{"text": "Since the river's daily discharge dropped from 2400 to 1100 cubic meters per second, hydroelectric output fell 54%.", "entities": [], "numbers": ["2400", "1100", "cubic meters", "second", "54"], "domain": "causal"}
+{"text": "Because the soil amendment's pH buffer capacity is 8.2 meq per gram, it neutralizes acidification for 3 seasons.", "entities": [], "numbers": ["8.2", "meq", "gram", "3"], "domain": "causal"}
+{"text": "As the semiconductor's gate leakage current reached 2.3 nanoamperes, power consumption increased disproportionately.", "entities": [], "numbers": ["2.3", "nanoamperes"], "domain": "causal"}
+{"text": "Since the stock market's price-weighted index fell 18%, value investors began accumulating positions.", "entities": [], "numbers": ["18"], "domain": "causal"}
+{"text": "Because the fungal infection's spore concentration exceeds 10,000 per cubic meter, respiratory illness rates climbed.", "entities": [], "numbers": ["10,000", "cubic meter"], "domain": "causal"}
+{"text": "The biofilm's thickness grew to 340 micrometers; therefore, antibiotic penetration became negligible.", "entities": [], "numbers": ["340", "micrometers"], "domain": "causal"}
+{"text": "As the patient's hemoglobin A1c level rose to 8.7%, diabetes complications accelerated.", "entities": [], "numbers": ["8.7"], "domain": "causal"}
+{"text": "Since coastal upwelling intensity increased 22%, nutrient availability doubled, stimulating phytoplankton growth.", "entities": [], "numbers": ["22"], "domain": "causal"}
+{"text": "Because the battery's internal resistance is 0.045 ohms, the 50-amp discharge causes 2.25 volt drop.", "entities": [], "numbers": ["0.045", "ohms", "50", "amp", "2.25", "volt"], "domain": "causal"}
+{"text": "The crystalline structure's lattice constant is 5.43 angstroms; therefore, diffraction angles follow Bragg's law.", "entities": ["Bragg"], "numbers": ["5.43", "angstroms"], "domain": "causal"}
+{"text": "As the firm's market share dropped from 34% to 19%, competitive pressures intensified.", "entities": [], "numbers": ["34", "19"], "domain": "causal"}
+{"text": "Since the water table's salinity increased from 0.8 to 3.2 parts per thousand, agricultural use became impossible.", "entities": [], "numbers": ["0.8", "3.2", "parts per thousand"], "domain": "causal"}
+{"text": "Because the wind turbine's rotor diameter is 126 meters and wind speed averages 7.2 m/s, annual energy production reaches 8.4 gigawatt-hours.", "entities": [], "numbers": ["126", "meters", "7.2", "m/s", "8.4", "gigawatt-hours"], "domain": "causal"}
+{"text": "The material's coefficient of thermal expansion is 2.1 microstrain per Kelvin; therefore, the 50-meter structure expands 20.5 millimeters daily.", "entities": [], "numbers": ["2.1", "microstrain", "Kelvin", "50", "meter", "20.5", "millimeters"], "domain": "causal"}
+{"text": "As the bankruptcy filing rate tripled to 1.2% of firms, lender losses mounted.", "entities": [], "numbers": ["tripled", "1.2"], "domain": "causal"}
+{"text": "Since the respiratory virus's incubation period averages 2.4 days, testing protocols call for 5-day intervals.", "entities": [], "numbers": ["2.4", "days", "5"], "domain": "causal"}
+{"text": "Because the aquatic plant's phosphorus content is 0.8%, eutrophication occurs when bioavailable phosphorus exceeds 0.02 mg/L.", "entities": [], "numbers": ["0.8", "0.02", "mg/L"], "domain": "causal"}
+{"text": "The adhesive's shear strength is 18 megapascals; therefore, lap-joint failure occurs above 45 kilograms per square centimeter load.", "entities": [], "numbers": ["18", "megapascals", "45", "kilograms", "square centimeter"], "domain": "causal"}
+{"text": "As the debt-to-income ratio climbed to 42%, mortgage approval rates fell by half.", "entities": [], "numbers": ["42"], "domain": "causal"}
+{"text": "Since the parasite's transmission threshold is 8% prevalence, eradication requires controlling infection below 3.5%.", "entities": [], "numbers": ["8", "3.5"], "domain": "causal"}
+{"text": "Because the bedrock's fracture spacing is 1.2 meters and the groundwater gradient is 0.03, contaminant transport accelerates.", "entities": [], "numbers": ["1.2", "meters", "0.03"], "domain": "causal"}
+{"text": "The building material's fire rating requires 60 minutes of exposure before temperature exceeds 400 degrees Fahrenheit inside.", "entities": [], "numbers": ["60", "minutes", "400", "Fahrenheit"], "domain": "causal"}
+{"text": "As healthcare spending surged to 17.3% of GDP, public budgets faced chronic deficits.", "entities": ["GDP"], "numbers": ["17.3"], "domain": "causal"}
+{"text": "Since the pathogen's fitness cost of resistance is 0.12, untreated populations maintain wild-type phenotype.", "entities": [], "numbers": ["0.12"], "domain": "causal"}
+{"text": "Because the optical absorption coefficient is 2400 cm^-1 at 532 nanometers, laser penetration depth is 0.42 micrometers.", "entities": [], "numbers": ["2400", "cm^-1", "532", "nanometers", "0.42", "micrometers"], "domain": "causal"}
+{"text": "The agricultural runoff's nitrogen concentration reached 34 milligrams per liter; therefore, drinking water protocols were violated.", "entities": [], "numbers": ["34", "milligrams", "liter"], "domain": "causal"}
+{"text": "As the equity premium compressed from 5.8% to 2.4%, dividend yields became unattractive relative to bonds.", "entities": [], "numbers": ["5.8", "2.4"], "domain": "causal"}
+{"text": "Since the infection's secondary attack rate among household contacts is 0.62, isolation protocols target family groups.", "entities": [], "numbers": ["0.62"], "domain": "causal"}
+{"text": "Because the permafrost carbon reservoir stores 1600 gigatons and thaw rate is 2.1% annually, methane release will accelerate.", "entities": [], "numbers": ["1600", "gigatons", "2.1"], "domain": "causal"}
+{"text": "The semiconductor's on-resistance is 0.0032 ohms per square; therefore, the 1000-micron transistor has 0.32 milliohm channel resistance.", "entities": [], "numbers": ["0.0032", "ohms", "square", "1000", "micron", "0.32", "milliohm"], "domain": "causal"}
+{"text": "As the firm's operating leverage increased from 1.8 to 2.4, profit margins became volatile.", "entities": [], "numbers": ["1.8", "2.4"], "domain": "causal"}
+{"text": "Since the vaccination campaign reached 84% coverage, herd immunity threshold was exceeded, ending transmission chains.", "entities": [], "numbers": ["84"], "domain": "causal"}
+{"text": "Because the concrete's carbonation depth is 12 millimeters after 25 years, chloride-induced corrosion of rebar has begun.", "entities": [], "numbers": ["12", "millimeters", "25", "years"], "domain": "causal"}
+{"text": "The micronutrient's bioavailability is only 2.1%, thus supplement dosing requires 48 times higher amounts than dietary provision.", "entities": [], "numbers": ["2.1", "48"], "domain": "causal"}
+{"text": "As the refugee population exceeded 2.3 million, regional service systems reached capacity crisis.", "entities": [], "numbers": ["2.3", "million"], "domain": "causal"}
+{"text": "Since the virus's genome replication fidelity is 99.97%, mutation rates drive adaptation pressures.", "entities": [], "numbers": ["99.97"], "domain": "causal"}
+{"text": "Because the sediment's settling velocity is 0.8 centimeters per second, water retention times must exceed 4 hours.", "entities": [], "numbers": ["0.8", "centimeters", "second", "4", "hours"], "domain": "causal"}
+{"text": "The elastomer's Shore A hardness is 65 units; therefore, torsional rigidity enables use in applications up to 80 degrees Celsius.", "entities": ["Shore A"], "numbers": ["65", "80", "Celsius"], "domain": "causal"}
+{"text": "As minority unemployment surged to 14.2% while majority unemployment remained at 6.8%, income inequality widened.", "entities": [], "numbers": ["14.2", "6.8"], "domain": "causal"}
+{"text": "Since the tumor's cell doubling time is 12 days and it currently harbors 1 billion cells, treatment must begin before day 34.", "entities": [], "numbers": ["12", "days", "1", "billion", "cells", "34"], "domain": "causal"}
+{"text": "Because the clay mineral's cation exchange capacity is 45 meq per 100 grams, nutrient retention is excellent.", "entities": [], "numbers": ["45", "meq", "100", "grams"], "domain": "causal"}
+{"text": "The wire's gauge is 0.81 millimeters, providing a resistance of 0.021 ohms per meter at 20 degrees Celsius.", "entities": [], "numbers": ["0.81", "millimeters", "0.021", "ohms", "meter", "20", "Celsius"], "domain": "causal"}
+{"text": "As the commodity's backwardation increased to 3.8%, storage incentives became unattractive.", "entities": [], "numbers": ["3.8"], "domain": "causal"}
+{"text": "Since the incidence of antibiotic resistance doubled every 18 months, empiric therapy guidelines required frequent updating.", "entities": [], "numbers": ["doubled", "18", "months"], "domain": "causal"}
+{"text": "Because the geothermal gradient averages 25 degrees Celsius per kilometer depth, exploitable heat exists below 3000 meters.", "entities": [], "numbers": ["25", "Celsius", "kilometer", "3000", "meters"], "domain": "causal"}
+{"text": "The nanowire's aspect ratio is 2800 and its diameter is 0.15 micrometers; therefore, surface effects dominate mechanics.", "entities": [], "numbers": ["2800", "0.15", "micrometers"], "domain": "causal"}
+{"text": "As the company's revenue per employee fell to $280,000 annually, management restructuring became urgent.", "entities": [], "numbers": ["280,000"], "domain": "causal"}
+{"text": "Since the infection's viral load peaked at 1.2 billion copies per milliliter, severe pneumonia developed.", "entities": [], "numbers": ["1.2", "billion", "copies", "milliliter"], "domain": "causal"}
+{"text": "Because the fly ash's pozzolanic activity index reaches 78% at 28 days, supplementary cementitious properties are confirmed.", "entities": [], "numbers": ["78", "28", "days"], "domain": "causal"}
+{"text": "The motor's torque constant is 0.45 newton-meters per ampere; therefore, 15 amperes produces 6.75 newton-meters output.", "entities": [], "numbers": ["0.45", "newton-meters", "ampere", "15", "amperes", "6.75"], "domain": "causal"}

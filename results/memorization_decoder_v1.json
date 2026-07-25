@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-07-22T20:45:43.524662+00:00",
+  "ckpt": "decoder_v1",
+  "TRAIN": {
+    "n": 200,
+    "exact_text_rate": 0.99,
+    "entity_em": 1.0,
+    "n_entities": 29,
+    "number_em": 0.9965694682675815,
+    "number_em_relaxed": 0.9965694682675815,
+    "n_numbers": 583
+  },
+  "EVAL": {
+    "n": 200,
+    "exact_text_rate": 0.0,
+    "entity_em": 0.11483253588516747,
+    "n_entities": 209,
+    "number_em": 0.2,
+    "number_em_relaxed": 0.2,
+    "n_numbers": 415
+  },
+  "prefix_norms": {
+    "dense": 2.663804292678833,
+    "sparse": 0.7127029299736023,
+    "ratio": 0.26755078514303254
+  },
+  "verdict": "MEMORIZATION-DOMINATED \u2014 train >> eval; eval understates what the latent carries, bottleneck is data/generalization"
+}

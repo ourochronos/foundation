@@ -1,0 +1,200 @@
+{"text": "Marcus purchased 8 shirts at $12 each, bringing his total cost to $96.", "entities": ["Marcus"], "numbers": ["8", "$12", "$96"], "domain": "math"}
+{"text": "The bakery made 250 croissants and sold 180, leaving 70 unsold.", "entities": [], "numbers": ["250", "180", "70"], "domain": "math"}
+{"text": "Since each notebook costs $3.50 and Elena bought 6, she spent $21.", "entities": ["Elena"], "numbers": ["$3.50", "6", "$21"], "domain": "math"}
+{"text": "David's garden contains 45 tomato plants and 32 lettuce plants, totaling 77.", "entities": ["David"], "numbers": ["45", "32", "77"], "domain": "math"}
+{"text": "If gasoline costs $2.85 per gallon and Kenji fills 14 gallons, he pays $39.90.", "entities": ["Kenji"], "numbers": ["$2.85", "14", "$39.90"], "domain": "math"}
+{"text": "The restaurant serves 320 customers daily across 8 tables, averaging 40 per table.", "entities": [], "numbers": ["320", "8", "40"], "domain": "math"}
+{"text": "Sarah walked 15 kilometers in 3 hours, maintaining an average speed of 5 km/h.", "entities": ["Sarah"], "numbers": ["15", "3", "5"], "domain": "math"}
+{"text": "With 24 cookies and 6 children, each child receives 4 cookies equally.", "entities": [], "numbers": ["24", "6", "4"], "domain": "math"}
+{"text": "Kumar's bookstore had 500 books and received 175 new books, now holding 675.", "entities": ["Kumar"], "numbers": ["500", "175", "675"], "domain": "math"}
+{"text": "If tickets cost $45 and there are 12 attendees, the total revenue is $540.", "entities": [], "numbers": ["$45", "12", "$540"], "domain": "math"}
+{"text": "The construction project used 8,400 bricks across 7 walls, averaging 1,200 per wall.", "entities": [], "numbers": ["8,400", "7", "1,200"], "domain": "math"}
+{"text": "Samantha earned $2,400 monthly and saved 25%, putting away $600 monthly.", "entities": ["Samantha"], "numbers": ["$2,400", "25%", "$600"], "domain": "math"}
+{"text": "Since the pool holds 15,000 liters and is 60% full, it contains 9,000 liters.", "entities": [], "numbers": ["15,000", "60%", "9,000"], "domain": "math"}
+{"text": "Roberto's team scored 78 points while opponents scored 56, winning by 22 points.", "entities": ["Roberto"], "numbers": ["78", "56", "22"], "domain": "math"}
+{"text": "The rectangular field measures 120 meters long and 75 meters wide, totaling 9,000 square meters.", "entities": [], "numbers": ["120", "75", "9,000"], "domain": "math"}
+{"text": "If Priya reads 45 pages daily, she completes a 315-page book in 7 days.", "entities": ["Priya"], "numbers": ["45", "315", "7"], "domain": "math"}
+{"text": "The company employed 450 staff and laid off 18%, reducing workforce to 369.", "entities": [], "numbers": ["450", "18%", "369"], "domain": "math"}
+{"text": "Michael bought apples at $1.20 per pound and purchased 8 pounds for $9.60.", "entities": ["Michael"], "numbers": ["$1.20", "8", "$9.60"], "domain": "math"}
+{"text": "Since there are 52 weeks in a year and rent costs $850 weekly, annual rent is $44,200.", "entities": [], "numbers": ["52", "$850", "$44,200"], "domain": "math"}
+{"text": "The bakery produced 480 pastries and packaged them into 12 boxes, with 40 per box.", "entities": [], "numbers": ["480", "12", "40"], "domain": "math"}
+{"text": "Ana completed 85% of her project, finishing 340 of 400 required tasks.", "entities": ["Ana"], "numbers": ["85%", "340", "400"], "domain": "math"}
+{"text": "The train traveled at 95 km/h for 4 hours, covering 380 kilometers total.", "entities": [], "numbers": ["95", "4", "380"], "domain": "math"}
+{"text": "If each pizza serves 3 people and 24 people attend, 8 pizzas are needed.", "entities": [], "numbers": ["3", "24", "8"], "domain": "math"}
+{"text": "The store received 2,000 widgets and sold 1,750, retaining 250 in inventory.", "entities": [], "numbers": ["2,000", "1,750", "250"], "domain": "math"}
+{"text": "Since Carlos earns $18 per hour and worked 35 hours, he earned $630.", "entities": ["Carlos"], "numbers": ["$18", "35", "$630"], "domain": "math"}
+{"text": "The garden's dimensions are 25 feet by 16 feet, creating 400 square feet of space.", "entities": [], "numbers": ["25", "16", "400"], "domain": "math"}
+{"text": "If 40% of 150 students prefer mathematics, 60 students chose this subject.", "entities": [], "numbers": ["40%", "150", "60"], "domain": "math"}
+{"text": "Jennifer mixed 3 cups of flour with 2 cups of sugar at a 3:2 ratio.", "entities": ["Jennifer"], "numbers": ["3", "2"], "domain": "math"}
+{"text": "The delivery truck carried 2,500 kilograms and unloaded 1,100, leaving 1,400 kilograms.", "entities": [], "numbers": ["2,500", "1,100", "1,400"], "domain": "math"}
+{"text": "Since temperature increased from 15°C to 23°C, the change was 8°C.", "entities": [], "numbers": ["15°C", "23°C", "8°C"], "domain": "math"}
+{"text": "Marcus invested $5,000 at 6% annual interest, earning $300 per year.", "entities": ["Marcus"], "numbers": ["$5,000", "6%", "$300"], "domain": "math"}
+{"text": "The factory produced 12,000 units and shipped 9,600, with 2,400 remaining.", "entities": [], "numbers": ["12,000", "9,600", "2,400"], "domain": "math"}
+{"text": "If the recipe requires 500 grams of flour and yields 8 servings, each portion contains 62.5 grams.", "entities": [], "numbers": ["500", "8", "62.5"], "domain": "math"}
+{"text": "The conference hosted 200 participants; 35% attended morning sessions, equaling 70 people.", "entities": [], "numbers": ["200", "35%", "70"], "domain": "math"}
+{"text": "Since each car costs $28,000 and there are 5 cars, the total is $140,000.", "entities": [], "numbers": ["$28,000", "5", "$140,000"], "domain": "math"}
+{"text": "Rachel ran 2.5 miles and walked 1.8 miles, covering 4.3 miles altogether.", "entities": ["Rachel"], "numbers": ["2.5", "1.8", "4.3"], "domain": "math"}
+{"text": "The discount offers 30% off original price; items worth $150 now cost $105.", "entities": [], "numbers": ["30%", "$150", "$105"], "domain": "math"}
+{"text": "If students scored 85, 92, 78, and 95, their average is 87.5.", "entities": [], "numbers": ["85", "92", "78", "95", "87.5"], "domain": "math"}
+{"text": "The warehouse stored 75,000 pounds of grain across 150 containers, 500 pounds per container.", "entities": [], "numbers": ["75,000", "150", "500"], "domain": "math"}
+{"text": "Since the subscription costs $9.99 monthly for 12 months, the annual cost is $119.88.", "entities": [], "numbers": ["$9.99", "12", "$119.88"], "domain": "math"}
+{"text": "Kevin distributed 144 candies equally among 12 friends, giving 12 to each.", "entities": ["Kevin"], "numbers": ["144", "12"], "domain": "math"}
+{"text": "The swimming pool is 50 meters long and 25 meters wide, spanning 1,250 square meters.", "entities": [], "numbers": ["50", "25", "1,250"], "domain": "math"}
+{"text": "If tourism increased by 22% from 10,000 visitors last year, this year brought 12,200 visitors.", "entities": [], "numbers": ["22%", "10,000", "12,200"], "domain": "math"}
+{"text": "Patricia's salary increased from $50,000 to $58,000, a rise of $8,000 or 16%.", "entities": ["Patricia"], "numbers": ["$50,000", "$58,000", "$8,000", "16%"], "domain": "math"}
+{"text": "Since there are 365 days yearly and 7 days weekly, there are approximately 52.1 weeks annually.", "entities": [], "numbers": ["365", "7", "52.1"], "domain": "math"}
+{"text": "The library acquired 500 books and lent out 375, with 125 remaining in stock.", "entities": [], "numbers": ["500", "375", "125"], "domain": "math"}
+{"text": "If a liter of milk costs $3.50 and Chen buys 6 liters, she spends $21.", "entities": ["Chen"], "numbers": ["$3.50", "6", "$21"], "domain": "math"}
+{"text": "The machine processes 240 items per hour; over 8 hours, it processes 1,920 items.", "entities": [], "numbers": ["240", "8", "1,920"], "domain": "math"}
+{"text": "Hugo's debt of $15,000 decreased by 20%, now standing at $12,000.", "entities": ["Hugo"], "numbers": ["$15,000", "20%", "$12,000"], "domain": "math"}
+{"text": "Since each page contains 250 words and the document has 20 pages, total words equal 5,000.", "entities": [], "numbers": ["250", "20", "5,000"], "domain": "math"}
+{"text": "The auction ended with bids reaching $4,500, exceeding the $3,000 minimum by $1,500.", "entities": [], "numbers": ["$4,500", "$3,000", "$1,500"], "domain": "math"}
+{"text": "If 30 students passed and 5 failed the exam, 86% achieved passing grades.", "entities": [], "numbers": ["30", "5", "86%"], "domain": "math"}
+{"text": "Olivia travels 18 kilometers weekly for 4 weeks, covering 72 kilometers total.", "entities": ["Olivia"], "numbers": ["18", "4", "72"], "domain": "math"}
+{"text": "The profit margin of 40% on goods costing $250 yields $100 in profit.", "entities": [], "numbers": ["40%", "$250", "$100"], "domain": "math"}
+{"text": "Since the movie ticket costs $14 and 75 people attended, box office revenue was $1,050.", "entities": [], "numbers": ["$14", "75", "$1,050"], "domain": "math"}
+{"text": "The construction site needed 5,600 square feet of materials; after using 3,200, 2,400 remained.", "entities": [], "numbers": ["5,600", "3,200", "2,400"], "domain": "math"}
+{"text": "If the recipe multiplies by 3 and originally needed 2 cups sugar, now requiring 6 cups.", "entities": [], "numbers": ["3", "2", "6"], "domain": "math"}
+{"text": "Jerome's investment grew from $8,000 to $10,240, a gain of $2,240 or 28%.", "entities": ["Jerome"], "numbers": ["$8,000", "$10,240", "$2,240", "28%"], "domain": "math"}
+{"text": "The storage container holds 500 liters; currently it's 78% full, containing 390 liters.", "entities": [], "numbers": ["500", "78%", "390"], "domain": "math"}
+{"text": "Since rainfall was 45 millimeters last month and 62 millimeters this month, total is 107 millimeters.", "entities": [], "numbers": ["45", "62", "107"], "domain": "math"}
+{"text": "The factory decreased production from 8,500 units to 7,225, reducing output by 1,275 units or 15%.", "entities": [], "numbers": ["8,500", "7,225", "1,275", "15%"], "domain": "math"}
+{"text": "If team A scored 156 points and team B scored 189, team B won by 33 points.", "entities": [], "numbers": ["156", "189", "33"], "domain": "math"}
+{"text": "Natalie's commute is 35 kilometers; traveling at 70 km/h, it takes 30 minutes.", "entities": ["Natalie"], "numbers": ["35", "70", "30"], "domain": "math"}
+{"text": "The garden plot measures 12 feet × 9 feet, providing 108 square feet for planting.", "entities": [], "numbers": ["12", "9", "108"], "domain": "math"}
+{"text": "Since the class has 28 students and 4 groups, each group contains 7 students.", "entities": [], "numbers": ["28", "4", "7"], "domain": "math"}
+{"text": "The airline sold 240 tickets at an average of $320 each, generating $76,800 revenue.", "entities": [], "numbers": ["240", "$320", "$76,800"], "domain": "math"}
+{"text": "If water temperatures range from 18°C to 26°C, the variation is 8°C.", "entities": [], "numbers": ["18°C", "26°C", "8°C"], "domain": "math"}
+{"text": "Damian's energy bill was $180 in summer; with 30% reduction in winter, it becomes $126.", "entities": ["Damian"], "numbers": ["$180", "30%", "$126"], "domain": "math"}
+{"text": "The shipment contained 3,000 items; 2.5% were damaged, totaling 75 defective items.", "entities": [], "numbers": ["3,000", "2.5%", "75"], "domain": "math"}
+{"text": "Since the course has 6 modules and each requires 8 hours, completion needs 48 hours.", "entities": [], "numbers": ["6", "8", "48"], "domain": "math"}
+{"text": "The residential property valued at $450,000 appreciated 8%, now worth $486,000.", "entities": [], "numbers": ["$450,000", "8%", "$486,000"], "domain": "math"}
+{"text": "If children received allowances averaging $15 weekly for 16 weeks, they earned $240 each.", "entities": [], "numbers": ["$15", "16", "$240"], "domain": "math"}
+{"text": "The forest contains 25,000 trees; 18% are oak, accounting for 4,500 oak trees.", "entities": [], "numbers": ["25,000", "18%", "4,500"], "domain": "math"}
+{"text": "Xavier's test score improved from 72% to 88%, gaining 16 percentage points.", "entities": ["Xavier"], "numbers": ["72%", "88%", "16"], "domain": "math"}
+{"text": "Since the event spans 3 days with 8 hours daily, total duration is 24 hours.", "entities": [], "numbers": ["3", "8", "24"], "domain": "math"}
+{"text": "The bakery's profit was $8,400 on $28,000 revenue, representing 30% profit margin.", "entities": [], "numbers": ["$8,400", "$28,000", "30%"], "domain": "math"}
+{"text": "If pollution decreased from 450 to 315 units, improvement was 135 units or 30%.", "entities": [], "numbers": ["450", "315", "135", "30%"], "domain": "math"}
+{"text": "The medication dosage is 500 milligrams three times daily, totaling 1,500 milligrams per day.", "entities": [], "numbers": ["500", "3", "1,500"], "domain": "math"}
+{"text": "Jasmine owns 60 books; 40% are fiction, meaning 24 are fictional.", "entities": ["Jasmine"], "numbers": ["60", "40%", "24"], "domain": "math"}
+{"text": "Since annual salary is $72,000 and she works 12 months, monthly income is $6,000.", "entities": [], "numbers": ["$72,000", "12", "$6,000"], "domain": "math"}
+{"text": "The construction crew built 2,400 meters of fence; 1,600 meters remained incomplete.", "entities": [], "numbers": ["2,400", "1,600"], "domain": "math"}
+{"text": "If the promotion offers buy 2 get 1 free on items costing $8 each, three items cost $16.", "entities": [], "numbers": ["2", "1", "$8", "3", "$16"], "domain": "math"}
+{"text": "Bernard received 85 emails daily; over 5 working days, he received 425 emails.", "entities": ["Bernard"], "numbers": ["85", "5", "425"], "domain": "math"}
+{"text": "The investment portfolio grew from $50,000 to $60,500, an increase of $10,500 or 21%.", "entities": [], "numbers": ["$50,000", "$60,500", "$10,500", "21%"], "domain": "math"}
+{"text": "Since each worker produces 45 units daily and there are 8 workers, daily output is 360 units.", "entities": [], "numbers": ["45", "8", "360"], "domain": "math"}
+{"text": "The survey showed 65% approval from 400 respondents, representing 260 people.", "entities": [], "numbers": ["65%", "400", "260"], "domain": "math"}
+{"text": "If the journey is 450 kilometers and completed at 75 km/h, travel time is 6 hours.", "entities": [], "numbers": ["450", "75", "6"], "domain": "math"}
+{"text": "Victoria purchased 3.5 kilograms of coffee at $12 per kilogram, spending $42.", "entities": ["Victoria"], "numbers": ["3.5", "$12", "$42"], "domain": "math"}
+{"text": "The school expanded from 1,200 to 1,500 students, adding 300 or 25% growth.", "entities": [], "numbers": ["1,200", "1,500", "300", "25%"], "domain": "math"}
+{"text": "Since the membership costs $35 monthly and requires 24-month commitment, total is $840.", "entities": [], "numbers": ["$35", "24", "$840"], "domain": "math"}
+{"text": "The parking lot contains 180 spaces; 108 are currently occupied, leaving 72 available.", "entities": [], "numbers": ["180", "108", "72"], "domain": "math"}
+{"text": "If the recipe serves 4 people and 10 people attend, ingredients multiply by 2.5 times.", "entities": [], "numbers": ["4", "10", "2.5"], "domain": "math"}
+{"text": "The company donated 15% of $200,000 profit, contributing $30,000 to charity.", "entities": [], "numbers": ["15%", "$200,000", "$30,000"], "domain": "math"}
+{"text": "Lucas drove 220 kilometers on day 1 and 195 kilometers on day 2, totaling 415 kilometers.", "entities": ["Lucas"], "numbers": ["220", "195", "415"], "domain": "math"}
+{"text": "Since property tax is 1.2% of $300,000 valuation, annual tax is $3,600.", "entities": [], "numbers": ["1.2%", "$300,000", "$3,600"], "domain": "math"}
+{"text": "The marathon route is 42.2 kilometers; runners complete 26.2 kilometers to halfway point.", "entities": [], "numbers": ["42.2", "26.2"], "domain": "math"}
+{"text": "If the population grows 3% annually from 50,000 base, it reaches 51,500 next year.", "entities": [], "numbers": ["3%", "50,000", "51,500"], "domain": "math"}
+{"text": "The electronics store discounted laptops from $1,200 to $960, a 20% reduction.", "entities": [], "numbers": ["$1,200", "$960", "20%"], "domain": "math"}
+{"text": "Isabella's gardening expenses total $480 yearly; monthly average is $40.", "entities": ["Isabella"], "numbers": ["$480", "$40"], "domain": "math"}
+{"text": "Since the interest rate is 4.5% and principal is $25,000, annual interest is $1,125.", "entities": [], "numbers": ["4.5%", "$25,000", "$1,125"], "domain": "math"}
+{"text": "The warehouse worker packed 720 boxes in 8 hours, averaging 90 boxes per hour.", "entities": [], "numbers": ["720", "8", "90"], "domain": "math"}
+{"text": "If school tuition increased from $12,000 to $13,200, the rise was $1,200 or 10%.", "entities": [], "numbers": ["$12,000", "$13,200", "$1,200", "10%"], "domain": "math"}
+{"text": "The swimming lesson costs $50; after 8 lessons, total paid is $400.", "entities": [], "numbers": ["$50", "8", "$400"], "domain": "math"}
+{"text": "Ethan's collection contains 240 trading cards; 35% are rare, equaling 84 cards.", "entities": ["Ethan"], "numbers": ["240", "35%", "84"], "domain": "math"}
+{"text": "Since the conference lasts 3 days with 12 sessions daily, there are 36 total sessions.", "entities": [], "numbers": ["3", "12", "36"], "domain": "math"}
+{"text": "The grocery store sold 350 pounds of fruit; customers purchased 245 pounds, 105 remain.", "entities": [], "numbers": ["350", "245", "105"], "domain": "math"}
+{"text": "If the temperature drops 15°C from 28°C starting point, final temperature is 13°C.", "entities": [], "numbers": ["15°C", "28°C", "13°C"], "domain": "math"}
+{"text": "The printer produces 60 pages per minute; completing a 1,200-page job takes 20 minutes.", "entities": [], "numbers": ["60", "1,200", "20"], "domain": "math"}
+{"text": "Lily's vacation budget was $2,500; she spent $1,875, leaving $625 unspent.", "entities": ["Lily"], "numbers": ["$2,500", "$1,875", "$625"], "domain": "math"}
+{"text": "Since the jewelry store marks up items 150%, an item costing $40 sells for $100.", "entities": [], "numbers": ["150%", "$40", "$100"], "domain": "math"}
+{"text": "The auditorium seats 500 people; the concert sold 425 tickets, filling 85% capacity.", "entities": [], "numbers": ["500", "425", "85%"], "domain": "math"}
+{"text": "If the car travels 28 miles per gallon and holds 14 gallons, maximum range is 392 miles.", "entities": [], "numbers": ["28", "14", "392"], "domain": "math"}
+{"text": "The nonprofit raised $75,000 in grants and $45,000 in donations, totaling $120,000.", "entities": [], "numbers": ["$75,000", "$45,000", "$120,000"], "domain": "math"}
+{"text": "Marcus's commission is 8% of $15,000 sales, earning him $1,200.", "entities": ["Marcus"], "numbers": ["8%", "$15,000", "$1,200"], "domain": "math"}
+{"text": "Since the factory operates 5 days weekly and produces 800 units daily, weekly output is 4,000 units.", "entities": [], "numbers": ["5", "800", "4,000"], "domain": "math"}
+{"text": "The clothing sale discounted items 35%; a $60 shirt now costs $39.", "entities": [], "numbers": ["35%", "$60", "$39"], "domain": "math"}
+{"text": "If students completed 18 of 24 assignments, achievement rate was 75%.", "entities": [], "numbers": ["18", "24", "75%"], "domain": "math"}
+{"text": "The mountain peak stands 3,847 meters high; base camp is at 2,400 meters elevation.", "entities": [], "numbers": ["3,847", "2,400"], "domain": "math"}
+{"text": "Catherine's monthly expenses are $1,200; groceries cost $320, leaving $880 for other expenses.", "entities": ["Catherine"], "numbers": ["$1,200", "$320", "$880"], "domain": "math"}
+{"text": "Since the train averages 85 km/h for 7 hours, distance covered is 595 kilometers.", "entities": [], "numbers": ["85", "7", "595"], "domain": "math"}
+{"text": "The software company employs 420 staff; 30% work in development, totaling 126 developers.", "entities": [], "numbers": ["420", "30%", "126"], "domain": "math"}
+{"text": "If the book has 288 pages and the reader completes 192, progress is 66.7%.", "entities": [], "numbers": ["288", "192", "66.7%"], "domain": "math"}
+{"text": "The fitness center membership costs $45 monthly with a $50 enrollment fee, totaling $590 annually.", "entities": [], "numbers": ["$45", "$50", "$590"], "domain": "math"}
+{"text": "Antonio's hourly wage increased from $16 to $18, a raise of $2 or 12.5%.", "entities": ["Antonio"], "numbers": ["$16", "$18", "$2", "12.5%"], "domain": "math"}
+{"text": "Since the parking meter costs $0.75 per hour and allows 4 hours maximum, maximum fee is $3.", "entities": [], "numbers": ["$0.75", "4", "$3"], "domain": "math"}
+{"text": "The production facility manufactured 9,000 units; quality control rejected 720, passing 8,280 or 92%.", "entities": [], "numbers": ["9,000", "720", "8,280", "92%"], "domain": "math"}
+{"text": "If the temperature gradient is 6°C per 1,000 meters altitude, at 4,000 meters it drops 24°C.", "entities": [], "numbers": ["6°C", "1,000", "4,000", "24°C"], "domain": "math"}
+{"text": "The patient requires 250 milliliters of medication weekly; monthly need is 1,000 milliliters.", "entities": [], "numbers": ["250", "1,000"], "domain": "math"}
+{"text": "Ruby's test scores averaged 82 across 4 exams, totaling 328 points.", "entities": ["Ruby"], "numbers": ["82", "4", "328"], "domain": "math"}
+{"text": "Since the theater has 24 rows with 18 seats per row, capacity is 432 seats.", "entities": [], "numbers": ["24", "18", "432"], "domain": "math"}
+{"text": "The regional sales office generated $560,000 revenue; after 15% commission, profit is $476,000.", "entities": [], "numbers": ["$560,000", "15%", "$476,000"], "domain": "math"}
+{"text": "If the recipe's original yield is 24 cookies and you make half, expect 12 cookies.", "entities": [], "numbers": ["24", "12"], "domain": "math"}
+{"text": "The construction budget was $800,000; spending reached $680,000, with $120,000 remaining.", "entities": [], "numbers": ["$800,000", "$680,000", "$120,000"], "domain": "math"}
+{"text": "Steven's investment appreciated $4,500 annually for 5 years, gaining $22,500 total.", "entities": ["Steven"], "numbers": ["$4,500", "5", "$22,500"], "domain": "math"}
+{"text": "Since the event ticket costs $28 and parking is $8, total per person is $36.", "entities": [], "numbers": ["$28", "$8", "$36"], "domain": "math"}
+{"text": "The animal shelter housed 180 animals; 45 were adopted, leaving 135 in care.", "entities": [], "numbers": ["180", "45", "135"], "domain": "math"}
+{"text": "If the exchange rate is 1 USD to 75 pesos, $100 converts to 7,500 pesos.", "entities": [], "numbers": ["1", "75", "$100", "7,500"], "domain": "math"}
+{"text": "The conference registration is $250 for early birds, $350 regular; early discount is $100 or 28.6%.", "entities": [], "numbers": ["$250", "$350", "$100", "28.6%"], "domain": "math"}
+{"text": "Melanie jogged 6.5 kilometers Monday, 7.2 kilometers Tuesday, totaling 13.7 kilometers.", "entities": ["Melanie"], "numbers": ["6.5", "7.2", "13.7"], "domain": "math"}
+{"text": "Since the retail markup is 200%, a $15 cost item sells for $45.", "entities": [], "numbers": ["200%", "$15", "$45"], "domain": "math"}
+{"text": "The water treatment facility processes 2,000 gallons hourly; daily capacity is 48,000 gallons.", "entities": [], "numbers": ["2,000", "48,000"], "domain": "math"}
+{"text": "If inflation rises 5% from $100 base price, new price becomes $105.", "entities": [], "numbers": ["5%", "$100", "$105"], "domain": "math"}
+{"text": "The hospital admitted 340 patients in January; 245 were discharged, 95 remaining.", "entities": [], "numbers": ["340", "245", "95"], "domain": "math"}
+{"text": "Timothy's monthly utility bills total $180; electricity is $75, water is $45, gas is $60.", "entities": ["Timothy"], "numbers": ["$180", "$75", "$45", "$60"], "domain": "math"}
+{"text": "Since the gym membership has 850 members and 60% attend weekly, approximately 510 attend weekly.", "entities": [], "numbers": ["850", "60%", "510"], "domain": "math"}
+{"text": "The contractor quoted $12,000 for project and charged additional $1,500, totaling $13,500.", "entities": [], "numbers": ["$12,000", "$1,500", "$13,500"], "domain": "math"}
+{"text": "If the school's budget is $2,400,000 and allocates 20% to athletics, sports gets $480,000.", "entities": [], "numbers": ["$2,400,000", "20%", "$480,000"], "domain": "math"}
+{"text": "The shipment weighed 1.5 tons; after delivery, 300 kilograms were removed, leaving 1.2 tons.", "entities": [], "numbers": ["1.5", "300", "1.2"], "domain": "math"}
+{"text": "Quinn's salary includes $50,000 base plus 5% bonus on $100,000 sales, totaling $55,000.", "entities": ["Quinn"], "numbers": ["$50,000", "5%", "$100,000", "$55,000"], "domain": "math"}
+{"text": "Since the painting dimensions are 80 centimeters by 120 centimeters, area is 9,600 square centimeters.", "entities": [], "numbers": ["80", "120", "9,600"], "domain": "math"}
+{"text": "The retail chain operated 45 stores nationally; opening 12 additional stores increases to 57.", "entities": [], "numbers": ["45", "12", "57"], "domain": "math"}
+{"text": "If the loan is $25,000 at 7% interest over 5 years, total interest is $8,750.", "entities": [], "numbers": ["$25,000", "7%", "5", "$8,750"], "domain": "math"}
+{"text": "The online course has 150 modules; students complete 30% during first month, finishing 45 modules.", "entities": [], "numbers": ["150", "30%", "45"], "domain": "math"}
+{"text": "Franklin's hourly pay is $22; working 40 hours weekly nets $880 weekly.", "entities": ["Franklin"], "numbers": ["$22", "40", "$880"], "domain": "math"}
+{"text": "Since the bus capacity is 60 passengers and current load is 48, 12 seats remain.", "entities": [], "numbers": ["60", "48", "12"], "domain": "math"}
+{"text": "The laboratory culture grew from 10,000 cells to 35,000, an increase of 25,000 or 250%.", "entities": [], "numbers": ["10,000", "35,000", "25,000", "250%"], "domain": "math"}
+{"text": "If fertilizer application is 2 liters per 100 square meters, a 500 square meter field needs 10 liters.", "entities": [], "numbers": ["2", "100", "500", "10"], "domain": "math"}
+{"text": "The department store had 200 employees; hiring 18 new staff brings total to 218.", "entities": [], "numbers": ["200", "18", "218"], "domain": "math"}
+{"text": "Natasha's three bank accounts hold $5,000, $8,200, and $3,800, totaling $17,000.", "entities": ["Natasha"], "numbers": ["$5,000", "$8,200", "$3,800", "$17,000"], "domain": "math"}
+{"text": "Since the conference room rents for $150 hourly and the meeting lasted 6 hours, cost is $900.", "entities": [], "numbers": ["$150", "6", "$900"], "domain": "math"}
+{"text": "The company recycled 2,400 kilograms of materials; this prevented 4,800 kilograms from landfills.", "entities": [], "numbers": ["2,400", "4,800"], "domain": "math"}
+{"text": "If the student scored 92%, 87%, and 91% across three tests, average is 90%.", "entities": [], "numbers": ["92%", "87%", "91%", "90%"], "domain": "math"}
+{"text": "The pharmaceutical supply includes 50,000 tablets; distribution centers receive 12,500 each, serving 4 locations.", "entities": [], "numbers": ["50,000", "12,500", "4"], "domain": "math"}
+{"text": "Gregory's commission structure earns $500 base plus $25 per sale; selling 20 items nets $1,000.", "entities": ["Gregory"], "numbers": ["$500", "$25", "20", "$1,000"], "domain": "math"}
+{"text": "Since the tournament bracket has 64 participants and matches are single-elimination, 63 matches occur.", "entities": [], "numbers": ["64", "63"], "domain": "math"}
+{"text": "The renovation project spent $35,000 on labor and $18,000 on materials, totaling $53,000.", "entities": [], "numbers": ["$35,000", "$18,000", "$53,000"], "domain": "math"}
+{"text": "If mortgage interest is 4.2% on $300,000, annual interest is $12,600.", "entities": [], "numbers": ["4.2%", "$300,000", "$12,600"], "domain": "math"}
+{"text": "The farm grew 8,500 kilograms of wheat; market prices yield $15,300 in revenue.", "entities": [], "numbers": ["8,500", "$15,300"], "domain": "math"}
+{"text": "Iris received a promotion increasing her salary from $65,000 to $73,000, a $8,000 gain.", "entities": ["Iris"], "numbers": ["$65,000", "$73,000", "$8,000"], "domain": "math"}
+{"text": "Since the highway stretch spans 240 kilometers and speed limit is 100 km/h, minimum travel time is 2.4 hours.", "entities": [], "numbers": ["240", "100", "2.4"], "domain": "math"}
+{"text": "The retail business marked inventory valued at $45,000; after 22% loss, remaining value is $35,100.", "entities": [], "numbers": ["$45,000", "22%", "$35,100"], "domain": "math"}
+{"text": "If the class trip costs $3,000 and 25 students attend, per-student cost is $120.", "entities": [], "numbers": ["$3,000", "25", "$120"], "domain": "math"}
+{"text": "The manufacturing process produces 1,500 units monthly; annual production reaches 18,000 units.", "entities": [], "numbers": ["1,500", "18,000"], "domain": "math"}
+{"text": "Derek's investment portfolio holds stocks worth $28,000, bonds worth $12,000, totaling $40,000.", "entities": ["Derek"], "numbers": ["$28,000", "$12,000", "$40,000"], "domain": "math"}
+{"text": "Since the delivery distance is 85 kilometers and fuel costs $2 per kilometer, fuel cost is $170.", "entities": [], "numbers": ["85", "$2", "$170"], "domain": "math"}
+{"text": "The restaurant served 280 customers during lunch; 140 ordered appetizers, representing 50%.", "entities": [], "numbers": ["280", "140", "50%"], "domain": "math"}
+{"text": "If the utility bill decreased from $95 to $76, savings were $19 or 20%.", "entities": [], "numbers": ["$95", "$76", "$19", "20%"], "domain": "math"}
+{"text": "The soccer tournament has 12 teams playing round-robin format; each plays 11 matches.", "entities": [], "numbers": ["12", "11"], "domain": "math"}
+{"text": "Pamela's car payment is $350 monthly for 60 months, totaling $21,000.", "entities": ["Pamela"], "numbers": ["$350", "60", "$21,000"], "domain": "math"}
+{"text": "Since the research study surveyed 800 people with 72% response rate, 576 responded.", "entities": [], "numbers": ["800", "72%", "576"], "domain": "math"}
+{"text": "The beverage company produced 25,000 liters quarterly; annual production is 100,000 liters.", "entities": [], "numbers": ["25,000", "100,000"], "domain": "math"}
+{"text": "If the property appreciated $50,000 over 5 years, annual appreciation averaged $10,000.", "entities": [], "numbers": ["$50,000", "5", "$10,000"], "domain": "math"}
+{"text": "The accounting department processed 450 invoices; 405 were approved, 45 pending review.", "entities": [], "numbers": ["450", "405", "45"], "domain": "math"}
+{"text": "Jordan's freelance income totals $8,500 monthly; expenses are $2,100, leaving $6,400 profit.", "entities": ["Jordan"], "numbers": ["$8,500", "$2,100", "$6,400"], "domain": "math"}
+{"text": "Since the software license costs $500 annually with 3-year commitment, total cost is $1,500.", "entities": [], "numbers": ["$500", "3", "$1,500"], "domain": "math"}
+{"text": "The outdoor market attracts 15,000 visitors weekly; 60% make purchases, totaling 9,000 customers.", "entities": [], "numbers": ["15,000", "60%", "9,000"], "domain": "math"}
+{"text": "If the job posting received 280 applications and hired 7 candidates, selection rate was 2.5%.", "entities": [], "numbers": ["280", "7", "2.5%"], "domain": "math"}
+{"text": "The city constructed 2,400 meters of new sidewalk over 8 weeks, averaging 300 meters weekly.", "entities": [], "numbers": ["2,400", "8", "300"], "domain": "math"}
+{"text": "Yuki's streaming service costs $12.99 monthly; annual subscription costs $155.88.", "entities": ["Yuki"], "numbers": ["$12.99", "$155.88"], "domain": "math"}
+{"text": "Since the presentation includes 45 slides at 2 minutes per slide, total duration is 90 minutes.", "entities": [], "numbers": ["45", "2", "90"], "domain": "math"}
+{"text": "The pharmaceutical trial involved 1,200 participants; 78% completed the program, 936 finishing.", "entities": [], "numbers": ["1,200", "78%", "936"], "domain": "math"}
+{"text": "If the discount coupon saves $8 on a $32 purchase, savings represent 25%.", "entities": [], "numbers": ["$8", "$32", "25%"], "domain": "math"}
+{"text": "The library cataloged 3,600 new books; shelving 150 per day requires 24 days.", "entities": [], "numbers": ["3,600", "150", "24"], "domain": "math"}
+{"text": "Brendan's tax refund was $2,400; he allocated 40% to savings, setting aside $960.", "entities": ["Brendan"], "numbers": ["$2,400", "40%", "$960"], "domain": "math"}
+{"text": "Since the production line operates 16 hours daily at 75 units hourly, daily output is 1,200 units.", "entities": [], "numbers": ["16", "75", "1,200"], "domain": "math"}
+{"text": "The annual conference attracted 2,200 attendees; 880 registered for workshops, representing 40%.", "entities": [], "numbers": ["2,200", "880", "40%"], "domain": "math"}
+{"text": "If mortgage principal is $250,000 at 5% annual rate over 30 years, monthly payment approximately is $1,340.", "entities": [], "numbers": ["$250,000", "5%", "30", "$1,340"], "domain": "math"}
+{"text": "The community garden plots cover 120 square meters; 15 members share equally, each receiving 8 square meters.", "entities": [], "numbers": ["120", "15", "8"], "domain": "math"}
+{"text": "Ariana's educational expenses total $18,000 annually; scholarships cover $10,800, leaving $7,200 personal cost.", "entities": ["Ariana"], "numbers": ["$18,000", "$10,800", "$7,200"], "domain": "math"}
+{"text": "Since the digital campaign reached 500,000 impressions with 2% engagement rate, 10,000 engaged with content.", "entities": [], "numbers": ["500,000", "2%", "10,000"], "domain": "math"}

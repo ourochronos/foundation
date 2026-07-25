@@ -1,0 +1,120 @@
+{"relation": "causal_reverse", "x": "Because the bearing overheated, the conveyor halted at 4:15.", "y": "Because the conveyor halted at 4:15, the bearing overheated."}
+{"relation": "causal_reverse", "x": "Since the database crashed, the website went offline.", "y": "Since the website went offline, the database crashed."}
+{"relation": "causal_reverse", "x": "Because the patient had high fever, the doctor prescribed antibiotics.", "y": "Because the doctor prescribed antibiotics, the patient had high fever."}
+{"relation": "causal_reverse", "x": "Since the rain fell heavily, the ground became muddy.", "y": "Since the ground became muddy, the rain fell heavily."}
+{"relation": "causal_reverse", "x": "Because the stock price dropped 15%, investors panicked.", "y": "Because investors panicked, the stock price dropped 15%."}
+{"relation": "causal_reverse", "x": "Since the engine failed, the airplane made an emergency landing.", "y": "Since the airplane made an emergency landing, the engine failed."}
+{"relation": "causal_reverse", "x": "Because the student studied for 8 hours, they passed the exam.", "y": "Because they passed the exam, the student studied for 8 hours."}
+{"relation": "causal_reverse", "x": "Since the contract was signed, the project began.", "y": "Since the project began, the contract was signed."}
+{"relation": "causal_reverse", "x": "Because the temperature rose to 35°C, the ice cream melted.", "y": "Because the ice cream melted, the temperature rose to 35°C."}
+{"relation": "causal_reverse", "x": "Since the power grid failed, the city lost electricity.", "y": "Since the city lost electricity, the power grid failed."}
+{"relation": "causal_reverse", "x": "Due to the traffic jam, the delivery arrived 2 hours late.", "y": "Due to the delivery arriving 2 hours late, there was a traffic jam."}
+{"relation": "causal_reverse", "x": "Because the employee quit, the project lost momentum.", "y": "Because the project lost momentum, the employee quit."}
+{"relation": "causal_reverse", "x": "Since the filter clogged, water pressure decreased by 40%.", "y": "Since water pressure decreased by 40%, the filter clogged."}
+{"relation": "causal_reverse", "x": "Because the medication worked, the patient felt better.", "y": "Because the patient felt better, the medication worked."}
+{"relation": "causal_reverse", "x": "As a result of the fire, 3 buildings were evacuated.", "y": "As a result of 3 buildings being evacuated, the fire occurred."}
+{"relation": "causal_reverse", "x": "Since the loan was approved, the business expanded.", "y": "Since the business expanded, the loan was approved."}
+{"relation": "causal_reverse", "x": "Because the battery drained, the phone shut down.", "y": "Because the phone shut down, the battery drained."}
+{"relation": "causal_reverse", "x": "Due to the hurricane, the harvest was destroyed.", "y": "Due to the harvest being destroyed, the hurricane occurred."}
+{"relation": "causal_reverse", "x": "Because the server was overloaded, the response time was slow.", "y": "Because the response time was slow, the server was overloaded."}
+{"relation": "causal_reverse", "x": "Since the infection spread, 20 patients fell ill.", "y": "Since 20 patients fell ill, the infection spread."}
+{"relation": "causal_reverse", "x": "Because the budget was cut, the team hired 5 fewer staff.", "y": "Because the team hired 5 fewer staff, the budget was cut."}
+{"relation": "causal_reverse", "x": "Since the product was recalled, sales dropped 60%.", "y": "Since sales dropped 60%, the product was recalled."}
+{"relation": "causal_reverse", "x": "Due to the accident, the highway was closed for 6 hours.", "y": "Due to the highway being closed for 6 hours, the accident occurred."}
+{"relation": "causal_reverse", "x": "Because the paint dried, the wall looked finished.", "y": "Because the wall looked finished, the paint dried."}
+{"relation": "causal_reverse", "x": "Since the drought lasted 90 days, crops died.", "y": "Since crops died, the drought lasted 90 days."}
+{"relation": "causal_reverse", "x": "Because the valve failed, the system leaked 500 liters.", "y": "Because the system leaked 500 liters, the valve failed."}
+{"relation": "causal_reverse", "x": "As a result of the promotion, morale increased by 35%.", "y": "As a result of morale increasing by 35%, the promotion happened."}
+{"relation": "causal_reverse", "x": "Since the cable was cut, the signal was lost.", "y": "Since the signal was lost, the cable was cut."}
+{"relation": "causal_reverse", "x": "Because the price increased, demand fell by half.", "y": "Because demand fell by half, the price increased."}
+{"relation": "causal_reverse", "x": "Due to the training, productivity rose 25%.", "y": "Due to productivity rising 25%, the training occurred."}
+{"relation": "causal_reverse", "x": "Since the door was locked, nobody could enter.", "y": "Since nobody could enter, the door was locked."}
+{"relation": "causal_reverse", "x": "Because the spring broke, the mechanism stopped.", "y": "Because the mechanism stopped, the spring broke."}
+{"relation": "causal_reverse", "x": "Due to the storm, the game was postponed 3 days.", "y": "Due to the game being postponed 3 days, the storm occurred."}
+{"relation": "causal_reverse", "x": "Since the policy changed, 200 workers were affected.", "y": "Since 200 workers were affected, the policy changed."}
+{"relation": "causal_reverse", "x": "Because the child fell, their knee scraped badly.", "y": "Because their knee scraped badly, the child fell."}
+{"relation": "causal_reverse", "x": "As a result of the merger, redundancy affected 15 roles.", "y": "As a result of redundancy affecting 15 roles, the merger occurred."}
+{"relation": "causal_reverse", "x": "Since the soil was alkaline, the flowers grew pink.", "y": "Since the flowers grew pink, the soil was alkaline."}
+{"relation": "causal_reverse", "x": "Because the deadline passed, the submission was rejected.", "y": "Because the submission was rejected, the deadline passed."}
+{"relation": "causal_reverse", "x": "Due to the allergy, the patient avoided 6 foods.", "y": "Due to the patient avoiding 6 foods, the allergy occurred."}
+{"relation": "causal_reverse", "x": "Since the competitor launched first, market share declined.", "y": "Since market share declined, the competitor launched first."}
+{"relation": "causal_reverse", "x": "Because the wire was exposed, the equipment sparked.", "y": "Because the equipment sparked, the wire was exposed."}
+{"relation": "causal_reverse", "x": "Due to the inspection, 4 violations were found.", "y": "Due to 4 violations being found, the inspection occurred."}
+{"relation": "causal_reverse", "x": "Since the audit failed, new controls were implemented.", "y": "Since new controls were implemented, the audit failed."}
+{"relation": "causal_reverse", "x": "Because the reservation was cancelled, the room became available.", "y": "Because the room became available, the reservation was cancelled."}
+{"relation": "causal_reverse", "x": "As a result of the delay, the client was unhappy.", "y": "As a result of the client being unhappy, the delay occurred."}
+{"relation": "causal_reverse", "x": "Since the leak developed, the floor was wet.", "y": "Since the floor was wet, the leak developed."}
+{"relation": "causal_reverse", "x": "Because the signal was weak, the connection dropped.", "y": "Because the connection dropped, the signal was weak."}
+{"relation": "causal_reverse", "x": "Due to the upgrade, speed improved 3 times over.", "y": "Due to speed improving 3 times over, the upgrade occurred."}
+{"relation": "causal_reverse", "x": "Since the announcement happened, attendance increased to 200.", "y": "Since attendance increased to 200, the announcement happened."}
+{"relation": "causal_reverse", "x": "Because the fabric tore, the shirt was ruined.", "y": "Because the shirt was ruined, the fabric tore."}
+{"relation": "causal_reverse", "x": "As a result of the investment, the startup grew rapidly.", "y": "As a result of the startup growing rapidly, the investment occurred."}
+{"relation": "causal_reverse", "x": "Since the sun set at 5:42 PM, darkness fell.", "y": "Since darkness fell, the sun set at 5:42 PM."}
+{"relation": "causal_reverse", "x": "Because the brake failed, the car crashed into the wall.", "y": "Because the car crashed into the wall, the brake failed."}
+{"relation": "causal_reverse", "x": "Due to the mistake, 8 customers complained.", "y": "Due to 8 customers complaining, the mistake occurred."}
+{"relation": "causal_reverse", "x": "Since the enzyme was present, the reaction occurred at 2 minutes.", "y": "Since the reaction occurred at 2 minutes, the enzyme was present."}
+{"relation": "causal_reverse", "x": "Because the voltage spiked, the device was damaged.", "y": "Because the device was damaged, the voltage spiked."}
+{"relation": "causal_reverse", "x": "As a result of the experiment, data was collected.", "y": "As a result of data being collected, the experiment occurred."}
+{"relation": "causal_reverse", "x": "Since the code was refactored, bugs decreased by 45%.", "y": "Since bugs decreased by 45%, the code was refactored."}
+{"relation": "causal_reverse", "x": "Because the weather turned cold, the leaves fell.", "y": "Because the leaves fell, the weather turned cold."}
+{"relation": "causal_reverse", "x": "Due to the shortage, prices surged by 22%.", "y": "Due to prices surging by 22%, the shortage occurred."}
+{"relation": "causal_reverse", "x": "Since the campaign launched, donations reached $50,000.", "y": "Since donations reached $50,000, the campaign launched."}
+{"relation": "causal_reverse", "x": "Because the wound infected, fever developed on day 3.", "y": "Because fever developed on day 3, the wound infected."}
+{"relation": "causal_reverse", "x": "As a result of the regulation, compliance costs increased.", "y": "As a result of compliance costs increasing, the regulation occurred."}
+{"relation": "causal_reverse", "x": "Since the disk fragmented, system speed dropped 30%.", "y": "Since system speed dropped 30%, the disk fragmented."}
+{"relation": "causal_reverse", "x": "Because the plant received water, it sprouted new leaves.", "y": "Because it sprouted new leaves, the plant received water."}
+{"relation": "causal_reverse", "x": "Due to the error, production was halted for 4 hours.", "y": "Due to production being halted for 4 hours, the error occurred."}
+{"relation": "causal_reverse", "x": "Since the algorithm improved, accuracy reached 94%.", "y": "Since accuracy reached 94%, the algorithm improved."}
+{"relation": "causal_reverse", "x": "Because the string was taut, the note resonated clearly.", "y": "Because the note resonated clearly, the string was taut."}
+{"relation": "causal_reverse", "x": "As a result of training completion, 15 employees qualified.", "y": "As a result of 15 employees qualifying, training was completed."}
+{"relation": "causal_reverse", "x": "Since the pressure built up, the seal burst.", "y": "Since the seal burst, the pressure built up."}
+{"relation": "causal_reverse", "x": "Because the light dimmed, the room became dark.", "y": "Because the room became dark, the light dimmed."}
+{"relation": "causal_reverse", "x": "Due to the pollution, 7 species disappeared locally.", "y": "Due to 7 species disappearing locally, the pollution occurred."}
+{"relation": "causal_reverse", "x": "Since the interest rate dropped, borrowing increased.", "y": "Since borrowing increased, the interest rate dropped."}
+{"relation": "causal_reverse", "x": "Because the immune system weakened, illness struck frequently.", "y": "Because illness struck frequently, the immune system weakened."}
+{"relation": "causal_reverse", "x": "As a result of the redesign, user satisfaction jumped 28%.", "y": "As a result of user satisfaction jumping 28%, the redesign occurred."}
+{"relation": "causal_reverse", "x": "Since the catalyst was added, temperature rose rapidly.", "y": "Since temperature rose rapidly, the catalyst was added."}
+{"relation": "causal_reverse", "x": "Because the connection was severed, communication ceased.", "y": "Because communication ceased, the connection was severed."}
+{"relation": "causal_reverse", "x": "Due to the lawsuit, the company lost $12 million.", "y": "Due to the company losing $12 million, the lawsuit occurred."}
+{"relation": "causal_reverse", "x": "Since the muscle contracted, the arm flexed.", "y": "Since the arm flexed, the muscle contracted."}
+{"relation": "causal_reverse", "x": "Because the sun was blocked, temperature fell 8 degrees.", "y": "Because temperature fell 8 degrees, the sun was blocked."}
+{"relation": "causal_reverse", "x": "As a result of the donation, the library opened new 2 wings.", "y": "As a result of the library opening new 2 wings, the donation occurred."}
+{"relation": "causal_reverse", "x": "Since the boundary was established, conflicts reduced by 60%.", "y": "Since conflicts reduced by 60%, the boundary was established."}
+{"relation": "causal_reverse", "x": "Because the acid was applied, the surface etched.", "y": "Because the surface etched, the acid was applied."}
+{"relation": "causal_reverse", "x": "Due to the freeze, water pipes burst in 12 homes.", "y": "Due to water pipes bursting in 12 homes, the freeze occurred."}
+{"relation": "causal_reverse", "x": "Since the habit formed, motivation increased steadily.", "y": "Since motivation increased steadily, the habit formed."}
+{"relation": "causal_reverse", "x": "Because the nerve was pinched, pain radiated to the leg.", "y": "Because pain radiated to the leg, the nerve was pinched."}
+{"relation": "causal_reverse", "x": "As a result of the discovery, research funding tripled.", "y": "As a result of research funding tripling, the discovery occurred."}
+{"relation": "causal_reverse", "x": "Since the mixture cured, it hardened in 24 hours.", "y": "Since it hardened in 24 hours, the mixture cured."}
+{"relation": "causal_reverse", "x": "Because the laser was aligned, precision improved to 0.1mm.", "y": "Because precision improved to 0.1mm, the laser was aligned."}
+{"relation": "causal_reverse", "x": "Due to the expansion, the market share grew to 31%.", "y": "Due to the market share growing to 31%, the expansion occurred."}
+{"relation": "causal_reverse", "x": "Since the partnership dissolved, competition intensified.", "y": "Since competition intensified, the partnership dissolved."}
+{"relation": "causal_reverse", "x": "Because the medication was discontinued, symptoms returned.", "y": "Because symptoms returned, the medication was discontinued."}
+{"relation": "causal_reverse", "x": "As a result of the campaign, brand awareness rose 42%.", "y": "As a result of brand awareness rising 42%, the campaign occurred."}
+{"relation": "causal_reverse", "x": "Since the valve opened, fluid flowed at 15 liters per minute.", "y": "Since fluid flowed at 15 liters per minute, the valve opened."}
+{"relation": "causal_reverse", "x": "Because the barrier cracked, contamination entered the system.", "y": "Because contamination entered the system, the barrier cracked."}
+{"relation": "causal_reverse", "x": "Due to the collision, 3 vehicles were totaled.", "y": "Due to 3 vehicles being totaled, the collision occurred."}
+{"relation": "causal_reverse", "x": "Since the immunity developed, reinfection rates dropped to 2%.", "y": "Since reinfection rates dropped to 2%, immunity developed."}
+{"relation": "causal_reverse", "x": "Because the frequency shifted, the signal was lost.", "y": "Because the signal was lost, the frequency shifted."}
+{"relation": "causal_reverse", "x": "As a result of the consolidation, operating costs fell 19%.", "y": "As a result of operating costs falling 19%, consolidation occurred."}
+{"relation": "causal_reverse", "x": "Since the input changed, the output varied accordingly.", "y": "Since the output varied accordingly, the input changed."}
+{"relation": "causal_reverse", "x": "Because the skin exposed to sun, it tanned.", "y": "Because it tanned, the skin was exposed to sun."}
+{"relation": "causal_reverse", "x": "Due to the inflation, purchasing power decreased by 17%.", "y": "Due to purchasing power decreasing by 17%, inflation occurred."}
+{"relation": "causal_reverse", "x": "Since the feedback was gathered, improvements were made.", "y": "Since improvements were made, feedback was gathered."}
+{"relation": "causal_reverse", "x": "Because the crystal cooled, its structure formed within minutes.", "y": "Because its structure formed within minutes, the crystal cooled."}
+{"relation": "causal_reverse", "x": "As a result of the withdrawal, team size shrank to 9 people.", "y": "As a result of team size shrinking to 9 people, the withdrawal occurred."}
+{"relation": "causal_reverse", "x": "Since the electrode corroded, electrical resistance increased 5 times.", "y": "Since electrical resistance increased 5 times, the electrode corroded."}
+{"relation": "causal_reverse", "x": "Because the premise was false, the conclusion was invalid.", "y": "Because the conclusion was invalid, the premise was false."}
+{"relation": "causal_reverse", "x": "Due to the accident, insurance claims surged to 47.", "y": "Due to insurance claims surging to 47, the accident occurred."}
+{"relation": "causal_reverse", "x": "Since the enzyme denatures, the reaction stopped at 85 degrees.", "y": "Since the reaction stopped at 85 degrees, the enzyme denatured."}
+{"relation": "causal_reverse", "x": "Because the contract expired, the service was discontinued.", "y": "Because the service was discontinued, the contract expired."}
+{"relation": "causal_reverse", "x": "As a result of the legislation, emission standards tightened.", "y": "As a result of emission standards tightening, the legislation occurred."}
+{"relation": "causal_reverse", "x": "Since the turbulence increased, visibility dropped to 100 meters.", "y": "Since visibility dropped to 100 meters, the turbulence increased."}
+{"relation": "causal_reverse", "x": "Because the instruction was given, the worker understood the task.", "y": "Because the worker understood the task, the instruction was given."}
+{"relation": "causal_reverse", "x": "Due to the revolution, the dynasty fell after 300 years.", "y": "Due to the dynasty falling after 300 years, the revolution occurred."}
+{"relation": "causal_reverse", "x": "Since the hypothesis was rejected, research continued.", "y": "Since research continued, the hypothesis was rejected."}
+{"relation": "causal_reverse", "x": "Because the magnet was strong, iron filings clustered quickly.", "y": "Because iron filings clustered quickly, the magnet was strong."}
+{"relation": "causal_reverse", "x": "As a result of the initiative, participation reached 1,200 people.", "y": "As a result of participation reaching 1,200 people, the initiative occurred."}
+{"relation": "causal_reverse", "x": "Since the schedule shifted, meetings were rescheduled twice.", "y": "Since meetings were rescheduled twice, the schedule shifted."}
+{"relation": "causal_reverse", "x": "Because the immune response activated, antibodies formed rapidly.", "y": "Because antibodies formed rapidly, the immune response activated."}
+{"relation": "causal_reverse", "x": "Due to the subsidy, prices dropped to $24 per unit.", "y": "Due to prices dropping to $24 per unit, the subsidy occurred."}

@@ -1,0 +1,300 @@
+{"text": "Betelgeuse radiates approximately 140,000 times the luminosity of our Sun.", "entities": ["Betelgeuse", "Sun"], "numbers": ["140,000"], "domain": "astronomy"}
+{"text": "Sirius A blazes at 8.6 light-years distant, brightest star in Earth's night sky.", "entities": ["Sirius A", "Earth"], "numbers": ["8.6"], "domain": "astronomy"}
+{"text": "The Andromeda Galaxy spans 2.2 million light-years from Earth yet remains visible.", "entities": ["Andromeda Galaxy", "Earth"], "numbers": ["2.2 million"], "domain": "astronomy"}
+{"text": "Jupiter's Great Red Spot persists for over 350 years in atmospheric turbulence.", "entities": ["Jupiter", "Great Red Spot"], "numbers": ["350"], "domain": "astronomy"}
+{"text": "Polaris lies approximately 323 light-years from Earth as our North Star.", "entities": ["Polaris", "Earth"], "numbers": ["323"], "domain": "astronomy"}
+{"text": "Mercury completes orbit around the Sun every 87.97 days.", "entities": ["Mercury", "Sun"], "numbers": ["87.97"], "domain": "astronomy"}
+{"text": "Venus rotates backward with surface temperatures exceeding 464 degrees Celsius.", "entities": ["Venus"], "numbers": ["464"], "domain": "astronomy"}
+{"text": "Neptune generates wind speeds surpassing 2,100 kilometers per hour.", "entities": ["Neptune"], "numbers": ["2,100"], "domain": "astronomy"}
+{"text": "Uranus tilts 98 degrees on its axis creating extreme seasonal variations.", "entities": ["Uranus"], "numbers": ["98"], "domain": "astronomy"}
+{"text": "The Milky Way harbors between 100 to 200 billion stars throughout its structure.", "entities": ["Milky Way"], "numbers": ["100", "200 billion"], "domain": "astronomy"}
+{"text": "Hubble Space Telescope launched in 1990 and orbits at 28,000 kilometers hourly.", "entities": ["Hubble Space Telescope"], "numbers": ["1990", "28,000"], "domain": "astronomy"}
+{"text": "Voyager 1 traveled 24 billion kilometers since its 1977 launch into deep space.", "entities": ["Voyager 1"], "numbers": ["24 billion", "1977"], "domain": "astronomy"}
+{"text": "Kepler Space Telescope discovered 2,662 exoplanets before mission conclusion.", "entities": ["Kepler Space Telescope"], "numbers": ["2,662"], "domain": "astronomy"}
+{"text": "Mars maintains polar ice caps containing frozen water and carbon dioxide.", "entities": ["Mars"], "numbers": ["4.6 billion"], "domain": "astronomy"}
+{"text": "The Triangulum Galaxy contains approximately 40 billion stars in rotation.", "entities": ["Triangulum Galaxy"], "numbers": ["40 billion"], "domain": "astronomy"}
+{"text": "Aldebaran possesses approximately 65,000 times solar mass within its envelope.", "entities": ["Aldebaran"], "numbers": ["65,000"], "domain": "astronomy"}
+{"text": "Rigel burns with surface temperature exceeding 12,000 Kelvin.", "entities": ["Rigel"], "numbers": ["12,000"], "domain": "astronomy"}
+{"text": "Alpha Centauri system resides 4.37 light-years from our Solar System.", "entities": ["Alpha Centauri", "Solar System"], "numbers": ["4.37"], "domain": "astronomy"}
+{"text": "The Event Horizon Telescope imaged black hole shadow in 2019 breakthrough.", "entities": ["Event Horizon Telescope"], "numbers": ["2019"], "domain": "astronomy"}
+{"text": "Saturn's rings extend 282,000 kilometers yet measure only 30 meters thick.", "entities": ["Saturn"], "numbers": ["282,000", "30"], "domain": "astronomy"}
+{"text": "Chandra X-ray Observatory detects energies exceeding 10,000 electron-volts daily.", "entities": ["Chandra X-ray Observatory"], "numbers": ["10,000"], "domain": "astronomy"}
+{"text": "James Webb Space Telescope observes infrared beyond 10,000 nanometer wavelengths.", "entities": ["James Webb Space Telescope"], "numbers": ["10,000"], "domain": "astronomy"}
+{"text": "Proxima Centauri orbits 4.24 light-years away making it our nearest stellar neighbor.", "entities": ["Proxima Centauri"], "numbers": ["4.24"], "domain": "astronomy"}
+{"text": "The Whirlpool Galaxy displays spiral arms spanning 60,000 light-years across.", "entities": ["Whirlpool Galaxy"], "numbers": ["60,000"], "domain": "astronomy"}
+{"text": "Sombrero Galaxy rotates with 1,000 solar masses per density region.", "entities": ["Sombrero Galaxy"], "numbers": ["1,000"], "domain": "astronomy"}
+{"text": "Deneb resides 2,600 light-years away forming Cygnus constellation's brightest star.", "entities": ["Deneb", "Cygnus"], "numbers": ["2,600"], "domain": "astronomy"}
+{"text": "LIGO detected gravitational waves from neutron star merger in 2017.", "entities": ["LIGO"], "numbers": ["2017"], "domain": "astronomy"}
+{"text": "Antares dwarfs our Sun by 700 times in radius.", "entities": ["Antares", "Sun"], "numbers": ["700"], "domain": "astronomy"}
+{"text": "Vega spins with rotational period of 12.5 hours.", "entities": ["Vega"], "numbers": ["12.5"], "domain": "astronomy"}
+{"text": "Cassiopeia A supernova remnant expands at 5,500 kilometers per second velocity.", "entities": ["Cassiopeia A"], "numbers": ["5,500"], "domain": "astronomy"}
+{"text": "The Crab Nebula pulsar rotates 30 times per second.", "entities": ["Crab Nebula"], "numbers": ["30"], "domain": "astronomy"}
+{"text": "Orion Nebula contains 1,000 young stellar objects within 24 light-years.", "entities": ["Orion Nebula"], "numbers": ["1,000", "24"], "domain": "astronomy"}
+{"text": "Titan orbits Saturn with methane lakes at negative 179 degrees Celsius.", "entities": ["Titan", "Saturn"], "numbers": ["179"], "domain": "astronomy"}
+{"text": "Europa conceals potential subsurface ocean beneath 100 kilometers of ice.", "entities": ["Europa"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Enceladus ejects water plumes at 400 meters per second.", "entities": ["Enceladus"], "numbers": ["400"], "domain": "astronomy"}
+{"text": "Io experiences volcanic eruptions exceeding 1,000 degrees Kelvin.", "entities": ["Io"], "numbers": ["1,000"], "domain": "astronomy"}
+{"text": "Ganymede measures 5,268 kilometers in diameter making it larger than Mercury.", "entities": ["Ganymede", "Mercury"], "numbers": ["5,268"], "domain": "astronomy"}
+{"text": "Callisto formed 4.5 billion years ago with minimal geological evolution.", "entities": ["Callisto"], "numbers": ["4.5 billion"], "domain": "astronomy"}
+{"text": "Miranda orbits Uranus with surface elevation differences exceeding 10 kilometers.", "entities": ["Miranda", "Uranus"], "numbers": ["10"], "domain": "astronomy"}
+{"text": "Triton orbits Neptune backward at 354,800 kilometers distance.", "entities": ["Triton", "Neptune"], "numbers": ["354,800"], "domain": "astronomy"}
+{"text": "Pluto contains nitrogen ice and rotates every 6.4 days.", "entities": ["Pluto"], "numbers": ["6.4"], "domain": "astronomy"}
+{"text": "Eris resembles Pluto's composition and orbits at 96 astronomical units.", "entities": ["Eris", "Pluto"], "numbers": ["96"], "domain": "astronomy"}
+{"text": "The Oort Cloud contains trillions of comets orbiting at 100,000 astronomical units.", "entities": ["Oort Cloud"], "numbers": ["trillions", "100,000"], "domain": "astronomy"}
+{"text": "Halley's Comet returns every 75.3 years with documented sightings.", "entities": ["Halley's Comet"], "numbers": ["75.3"], "domain": "astronomy"}
+{"text": "The Kuiper Belt houses 100,000 icy bodies larger than 100 kilometers.", "entities": ["Kuiper Belt"], "numbers": ["100,000", "100"], "domain": "astronomy"}
+{"text": "WASP-12b orbits its star every 1.09 days experiencing tidal disruption.", "entities": ["WASP-12b"], "numbers": ["1.09"], "domain": "astronomy"}
+{"text": "51 Pegasi b was first discovered exoplanet in 1995.", "entities": ["51 Pegasi b"], "numbers": ["1995"], "domain": "astronomy"}
+{"text": "Proxima Centauri b potentially harbors liquid water in habitable zone.", "entities": ["Proxima Centauri b"], "numbers": ["11.9"], "domain": "astronomy"}
+{"text": "Tau Ceti hosts potential biosignatures in planetary atmospheric observations.", "entities": ["Tau Ceti"], "numbers": ["11.9"], "domain": "astronomy"}
+{"text": "TRAPPIST-1 system contains 7 Earth-sized planets orbiting closely.", "entities": ["TRAPPIST-1"], "numbers": ["7"], "domain": "astronomy"}
+{"text": "Kepler-452b orbits Sun-like star 430 light-years from Earth.", "entities": ["Kepler-452b", "Earth"], "numbers": ["430"], "domain": "astronomy"}
+{"text": "The Solar System formed 4.6 billion years ago from nebular collapse.", "entities": ["Solar System"], "numbers": ["4.6 billion"], "domain": "astronomy"}
+{"text": "Our Sun fuses 620 million tons of hydrogen into helium daily.", "entities": ["Sun"], "numbers": ["620 million"], "domain": "astronomy"}
+{"text": "The Sun's core temperature reaches 15.7 million degrees Kelvin.", "entities": ["Sun"], "numbers": ["15.7 million"], "domain": "astronomy"}
+{"text": "Solar flares release energy equivalent to billions of hydrogen bombs.", "entities": ["Solar"], "numbers": ["1 million"], "domain": "astronomy"}
+{"text": "Zodiacal light scatters sunlight from 100 billion tons of interplanetary dust.", "entities": ["Zodiacal"], "numbers": ["100 billion"], "domain": "astronomy"}
+{"text": "The Parker Solar Probe reaches speeds of 586,800 kilometers per hour.", "entities": ["Parker Solar Probe"], "numbers": ["586,800"], "domain": "astronomy"}
+{"text": "Solar Maximum occurs every 11.2 years with increased sunspot activity.", "entities": ["Solar Maximum"], "numbers": ["11.2"], "domain": "astronomy"}
+{"text": "Aurora borealis occurs at 100 kilometers altitude when solar wind collides.", "entities": ["Aurora borealis"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "The magnetosphere shields Earth from 200 billion tons of solar particles annually.", "entities": ["magnetosphere", "Earth"], "numbers": ["200 billion"], "domain": "astronomy"}
+{"text": "Magnetars generate magnetic fields 10 billion times stronger than Earth's.", "entities": ["Magnetars", "Earth"], "numbers": ["10 billion"], "domain": "astronomy"}
+{"text": "Neutron stars compress 1.4 solar masses into 20 kilometer diameter spheres.", "entities": ["Neutron stars"], "numbers": ["1.4", "20"], "domain": "astronomy"}
+{"text": "Pulsars spin up to 1,000 rotations per second creating beams.", "entities": ["Pulsars"], "numbers": ["1,000"], "domain": "astronomy"}
+{"text": "Black holes bend spacetime so gravity captures light within event horizon.", "entities": ["Black holes"], "numbers": ["27"], "domain": "astronomy"}
+{"text": "Sagittarius A* supermassive black hole masses 4.6 million solar masses.", "entities": ["Sagittarius A*"], "numbers": ["4.6 million"], "domain": "astronomy"}
+{"text": "M87 black hole weighs 6.5 billion solar masses within galaxy center.", "entities": ["M87"], "numbers": ["6.5 billion"], "domain": "astronomy"}
+{"text": "The Schwarzschild radius scales linearly with black hole mass.", "entities": ["Schwarzschild radius"], "numbers": ["3"], "domain": "astronomy"}
+{"text": "Hawking radiation causes black holes to evaporate over 10^67 years.", "entities": ["Hawking radiation"], "numbers": ["10^67"], "domain": "astronomy"}
+{"text": "Quasars shine brighter than 100 trillion suns from vast distances.", "entities": ["Quasars"], "numbers": ["100 trillion"], "domain": "astronomy"}
+{"text": "Gamma ray bursts release more energy than 1,000 supernovae.", "entities": ["Gamma ray bursts"], "numbers": ["1,000"], "domain": "astronomy"}
+{"text": "The most distant galaxy J0313-1806 resided 13.5 billion light-years away.", "entities": ["J0313-1806"], "numbers": ["13.5 billion"], "domain": "astronomy"}
+{"text": "Gravitational lensing magnifies distant objects by 10 times.", "entities": ["Gravitational lensing"], "numbers": ["10"], "domain": "astronomy"}
+{"text": "Cosmic microwave background radiation temperature measures 2.725 Kelvin.", "entities": ["Cosmic microwave background"], "numbers": ["2.725"], "domain": "astronomy"}
+{"text": "The Universe expands at 70 kilometers per second per megaparsec.", "entities": ["Universe"], "numbers": ["70"], "domain": "astronomy"}
+{"text": "Dark matter comprises 85% of observable matter in the Universe.", "entities": ["Dark matter", "Universe"], "numbers": ["85%"], "domain": "astronomy"}
+{"text": "Dark energy accelerates universal expansion with 68% density concentration.", "entities": ["Dark energy", "Universe"], "numbers": ["68%"], "domain": "astronomy"}
+{"text": "The Universe age measures 13.8 billion years since Big Bang.", "entities": ["Universe", "Big Bang"], "numbers": ["13.8 billion"], "domain": "astronomy"}
+{"text": "Observable Universe diameter spans 93 billion light-years.", "entities": ["Observable Universe"], "numbers": ["93 billion"], "domain": "astronomy"}
+{"text": "There exist 2 trillion galaxies within observable Universe volume.", "entities": ["Universe"], "numbers": ["2 trillion"], "domain": "astronomy"}
+{"text": "Redshift indicates most galaxies move away from Milky Way.", "entities": ["Redshift", "Milky Way"], "numbers": ["70"], "domain": "astronomy"}
+{"text": "Parallax measurements determine stellar distances using 149.6 million kilometer baseline.", "entities": ["Parallax"], "numbers": ["149.6 million"], "domain": "astronomy"}
+{"text": "Light-year unit equals 9.46 trillion kilometers of space.", "entities": ["Light-year"], "numbers": ["9.46 trillion"], "domain": "astronomy"}
+{"text": "Parsec distance equals 3.26 light-years or 30.9 trillion kilometers.", "entities": ["Parsec"], "numbers": ["3.26", "30.9 trillion"], "domain": "astronomy"}
+{"text": "Astronomical Unit distance measures Earth-Sun separation of 149.6 million kilometers.", "entities": ["Astronomical Unit", "Earth", "Sun"], "numbers": ["149.6 million"], "domain": "astronomy"}
+{"text": "Spectroscopy analyzes light wavelengths from 400 to 700 nanometers visible.", "entities": ["Spectroscopy"], "numbers": ["400", "700"], "domain": "astronomy"}
+{"text": "Radio telescopes detect wavelengths from 1 millimeter to 10 meters.", "entities": ["Radio telescopes"], "numbers": ["1", "10"], "domain": "astronomy"}
+{"text": "Infrared astronomy observes wavelengths from 700 nanometers to 1 millimeter.", "entities": ["Infrared astronomy"], "numbers": ["700", "1"], "domain": "astronomy"}
+{"text": "X-ray telescopes detect wavelengths shorter than 10 nanometers.", "entities": ["X-ray telescopes"], "numbers": ["10"], "domain": "astronomy"}
+{"text": "Gamma ray observatories detect photons with 10,000 electron-volt energies.", "entities": ["Gamma ray observatories"], "numbers": ["10,000"], "domain": "astronomy"}
+{"text": "VLA radiotelescope spans 36 kilometers with 27 dish antennas.", "entities": ["VLA"], "numbers": ["36", "27"], "domain": "astronomy"}
+{"text": "Arecibo Observatory transmitted 1,679 bit message into space 1974.", "entities": ["Arecibo Observatory"], "numbers": ["1,679", "1974"], "domain": "astronomy"}
+{"text": "Keck Observatory telescopes employ 36 segments creating 10 meter effective diameter.", "entities": ["Keck Observatory"], "numbers": ["36", "10"], "domain": "astronomy"}
+{"text": "Very Large Array consists of 27 radio dishes across New Mexico landscape.", "entities": ["Very Large Array", "New Mexico"], "numbers": ["27"], "domain": "astronomy"}
+{"text": "International Space Station orbits at 28,000 kilometers hourly at 400 kilometers altitude.", "entities": ["International Space Station"], "numbers": ["28,000", "400"], "domain": "astronomy"}
+{"text": "Gaia space telescope mapped 1.8 billion stellar positions with precision.", "entities": ["Gaia"], "numbers": ["1.8 billion"], "domain": "astronomy"}
+{"text": "ALMA radiotelescope arrays 50 dishes across Atacama Desert Chile.", "entities": ["ALMA", "Atacama Desert", "Chile"], "numbers": ["50"], "domain": "astronomy"}
+{"text": "Fermi Space Telescope detects gamma rays from 20 million light-years distant.", "entities": ["Fermi Space Telescope"], "numbers": ["20 million"], "domain": "astronomy"}
+{"text": "Spitzer Space Telescope operated for 16 years observing infrared wavelengths.", "entities": ["Spitzer Space Telescope"], "numbers": ["16"], "domain": "astronomy"}
+{"text": "New Horizons spacecraft flew past Pluto in 2015 at 50,000 kilometers hourly.", "entities": ["New Horizons", "Pluto"], "numbers": ["2015", "50,000"], "domain": "astronomy"}
+{"text": "Curiosity rover explores Mars surface documenting geological structures since 2012.", "entities": ["Curiosity", "Mars"], "numbers": ["2012"], "domain": "astronomy"}
+{"text": "Perseverance rover landed on Mars in February 2021 searching biosignatures.", "entities": ["Perseverance", "Mars"], "numbers": ["2021"], "domain": "astronomy"}
+{"text": "Rosetta comet probe orbited Comet 67P for 30 months gathering data.", "entities": ["Rosetta", "Comet 67P"], "numbers": ["30"], "domain": "astronomy"}
+{"text": "Juno spacecraft orbited Jupiter in 2016 measuring magnetic field strength.", "entities": ["Juno", "Jupiter"], "numbers": ["2016"], "domain": "astronomy"}
+{"text": "Cassini spacecraft explored Saturn system for 13 years until 2017.", "entities": ["Cassini", "Saturn"], "numbers": ["13", "2017"], "domain": "astronomy"}
+{"text": "Messenger probe orbited Mercury documenting 3,000 impact craters 2011 to 2015.", "entities": ["Messenger", "Mercury"], "numbers": ["3,000", "2011", "2015"], "domain": "astronomy"}
+{"text": "OSIRIS-REx sampled asteroid Bennu surface returning 250 grams material.", "entities": ["OSIRIS-REx", "Bennu"], "numbers": ["250"], "domain": "astronomy"}
+{"text": "Hayabusa2 collected samples from asteroid Ryugu in 2020.", "entities": ["Hayabusa2", "Ryugu"], "numbers": ["2020"], "domain": "astronomy"}
+{"text": "Chang'e 4 lunar rover explored Moon far side starting 2019.", "entities": ["Chang'e 4", "Moon"], "numbers": ["2019"], "domain": "astronomy"}
+{"text": "Apollo 11 landed on Moon in 1969 with Neil Armstrong.", "entities": ["Apollo 11", "Moon", "Neil Armstrong"], "numbers": ["1969"], "domain": "astronomy"}
+{"text": "Chandrayaan-3 successfully landed on Moon's south polar region 2023.", "entities": ["Chandrayaan-3", "Moon"], "numbers": ["2023"], "domain": "astronomy"}
+{"text": "Blue Origin New Shepard suborbital vehicle reaches 100 kilometers altitude.", "entities": ["Blue Origin", "New Shepard"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "SpaceX Falcon 9 reusable rockets significantly reduced launch cost 2015 onwards.", "entities": ["SpaceX", "Falcon 9"], "numbers": ["2015"], "domain": "astronomy"}
+{"text": "Starlink constellation aims 12,000 satellites providing global internet coverage.", "entities": ["Starlink"], "numbers": ["12,000"], "domain": "astronomy"}
+{"text": "China's space program launched 48 rockets in 2021 alone.", "entities": ["China"], "numbers": ["48", "2021"], "domain": "astronomy"}
+{"text": "Virgin Galactic's SpaceShipTwo reaches 86 kilometers altitude for spaceflight.", "entities": ["Virgin Galactic", "SpaceShipTwo"], "numbers": ["86"], "domain": "astronomy"}
+{"text": "Axiom Space builds commercial space station modules launching 2024.", "entities": ["Axiom Space"], "numbers": ["2024"], "domain": "astronomy"}
+{"text": "Firefly Aerospace develops Alpha launch vehicle for small payloads.", "entities": ["Firefly Aerospace", "Alpha"], "numbers": ["2023"], "domain": "astronomy"}
+{"text": "Relativity Space 3D prints rockets using metal alloys.", "entities": ["Relativity Space"], "numbers": ["3"], "domain": "astronomy"}
+{"text": "Axiom Observatory discovered 10,000 asteroids exceeding 140 meters diameter.", "entities": ["Axiom Observatory"], "numbers": ["10,000", "140"], "domain": "astronomy"}
+{"text": "Impact crater Chicxulub measures 180 kilometers across in Mexico.", "entities": ["Chicxulub", "Mexico"], "numbers": ["180"], "domain": "astronomy"}
+{"text": "Meteor shower Perseid occurs annually producing 50 meteors per hour peak.", "entities": ["Perseid"], "numbers": ["50"], "domain": "astronomy"}
+{"text": "Tunguska explosion flattened 80 million trees in 1908 Siberia.", "entities": ["Tunguska", "Siberia"], "numbers": ["80 million", "1908"], "domain": "astronomy"}
+{"text": "Leonid meteor shower produces occasional storms with 1,000 meteors hourly.", "entities": ["Leonid"], "numbers": ["1,000"], "domain": "astronomy"}
+{"text": "Geminid meteor shower peaks in December with 150 meteors per hour.", "entities": ["Geminid"], "numbers": ["150"], "domain": "astronomy"}
+{"text": "Quadrantid meteor shower reaches 40 meteors per hour at maximum.", "entities": ["Quadrantid"], "numbers": ["40"], "domain": "astronomy"}
+{"text": "Lyrids meteor shower occurs annually in April creating 18 meteors hourly.", "entities": ["Lyrids"], "numbers": ["18"], "domain": "astronomy"}
+{"text": "Draconids shower produces radiant from Draco constellation in October.", "entities": ["Draconids", "Draco"], "numbers": ["10"], "domain": "astronomy"}
+{"text": "Eta Aquarids meteor shower peaks in May from Halley comet debris.", "entities": ["Eta Aquarids", "Halley"], "numbers": ["60"], "domain": "astronomy"}
+{"text": "Aurora australis glows green in southern sky from charged particles.", "entities": ["Aurora australis"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Sunspots cycle with 11.2 year periodicity affecting solar luminosity.", "entities": ["Sunspots"], "numbers": ["11.2"], "domain": "astronomy"}
+{"text": "Corona solar outermost layer heats to 2 million Kelvin.", "entities": ["Corona", "solar"], "numbers": ["2 million"], "domain": "astronomy"}
+{"text": "Solar prominences rise 100,000 kilometers above photosphere surface.", "entities": ["Solar prominences", "photosphere"], "numbers": ["100,000"], "domain": "astronomy"}
+{"text": "Solar wind plasma travels 400 kilometers per second outward.", "entities": ["Solar wind"], "numbers": ["400"], "domain": "astronomy"}
+{"text": "Coronal mass ejections expel 10 billion tons of plasma.", "entities": ["Coronal mass ejections"], "numbers": ["10 billion"], "domain": "astronomy"}
+{"text": "Heliosphere boundary marks where solar wind meets interstellar medium.", "entities": ["Heliosphere", "solar wind", "interstellar medium"], "numbers": ["121"], "domain": "astronomy"}
+{"text": "Interplanetary magnetic field extends throughout entire Solar System.", "entities": ["Interplanetary magnetic field", "Solar System"], "numbers": ["1.5"], "domain": "astronomy"}
+{"text": "Van Allen radiation belts contain high energy particle concentrations.", "entities": ["Van Allen radiation belts"], "numbers": ["3000"], "domain": "astronomy"}
+{"text": "Ionosphere layer reflects radio waves bouncing across Earth's curvature.", "entities": ["Ionosphere", "Earth"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Thermosphere temperatures exceed 1,000 Kelvin despite minimal air density.", "entities": ["Thermosphere"], "numbers": ["1,000"], "domain": "astronomy"}
+{"text": "Mesosphere temperature drops to minus 100 degrees Celsius.", "entities": ["Mesosphere"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Stratosphere contains ozone absorbing ultraviolet radiation protecting life.", "entities": ["Stratosphere", "ozone"], "numbers": ["50"], "domain": "astronomy"}
+{"text": "Troposphere extends 18 kilometers above Earth's equator region.", "entities": ["Troposphere", "Earth"], "numbers": ["18"], "domain": "astronomy"}
+{"text": "Mountain peaks exceed 8 kilometers capturing thin atmospheric conditions.", "entities": ["Mountain peaks"], "numbers": ["8"], "domain": "astronomy"}
+{"text": "Atmospheric pressure reduces to 1/1000 standard sea-level at 30 kilometers.", "entities": ["Atmospheric pressure"], "numbers": ["1/1000", "30"], "domain": "astronomy"}
+{"text": "Sunrise occurs when solar elevation angle exceeds 6 degrees below horizon.", "entities": ["Sunrise", "solar"], "numbers": ["6"], "domain": "astronomy"}
+{"text": "Twilight zone extends 18 degrees below horizon before total darkness.", "entities": ["Twilight zone"], "numbers": ["18"], "domain": "astronomy"}
+{"text": "Zodiac constellations occupy 13 regions along ecliptic plane.", "entities": ["Zodiac constellations", "ecliptic"], "numbers": ["13"], "domain": "astronomy"}
+{"text": "Ecliptic plane inclines 23.5 degrees to Earth's equatorial plane.", "entities": ["Ecliptic plane", "Earth"], "numbers": ["23.5"], "domain": "astronomy"}
+{"text": "Celestial equator projects Earth's equator onto celestial sphere.", "entities": ["Celestial equator", "Earth"], "numbers": ["360"], "domain": "astronomy"}
+{"text": "Precession cycle spans 26,000 years shifting pole star position.", "entities": ["Precession"], "numbers": ["26,000"], "domain": "astronomy"}
+{"text": "Nutation causes 18.6 year wobble in Earth's rotational axis.", "entities": ["Nutation", "Earth"], "numbers": ["18.6"], "domain": "astronomy"}
+{"text": "Obliquity varies between 22.1 and 24.5 degrees over millennia.", "entities": ["Obliquity"], "numbers": ["22.1", "24.5"], "domain": "astronomy"}
+{"text": "Lunar node precession completes cycle every 18.6 years.", "entities": ["Lunar node"], "numbers": ["18.6"], "domain": "astronomy"}
+{"text": "Saros cycle predicts eclipses repeating every 18 years 11 days.", "entities": ["Saros cycle"], "numbers": ["18", "11"], "domain": "astronomy"}
+{"text": "Lunar eclipse occurs when Earth blocks sunlight from reaching Moon.", "entities": ["Lunar eclipse", "Earth", "sunlight", "Moon"], "numbers": ["29.5"], "domain": "astronomy"}
+{"text": "Solar eclipse shadow races across Earth at 10,000 kilometers hourly.", "entities": ["Solar eclipse", "Earth"], "numbers": ["10,000"], "domain": "astronomy"}
+{"text": "Annular eclipse leaves burning ring when Moon smaller than Sun.", "entities": ["Annular eclipse", "Moon", "Sun"], "numbers": ["18"], "domain": "astronomy"}
+{"text": "Partial eclipse occurs when celestial bodies incompletely overlap.", "entities": ["Partial eclipse"], "numbers": ["12"], "domain": "astronomy"}
+{"text": "Total lunar eclipse lasts maximum 1 hour 47 minutes duration.", "entities": ["Total lunar eclipse"], "numbers": ["1", "47"], "domain": "astronomy"}
+{"text": "Penumbral eclipse creates subtle Moon darkening from soft shadow.", "entities": ["Penumbral eclipse", "Moon"], "numbers": ["1"], "domain": "astronomy"}
+{"text": "Baily's beads appear when solar prominences create beaded edges.", "entities": ["Baily's beads", "solar"], "numbers": ["21"], "domain": "astronomy"}
+{"text": "Diamond ring effect occurs for 3 seconds during eclipse transitions.", "entities": ["Diamond ring effect", "eclipse"], "numbers": ["3"], "domain": "astronomy"}
+{"text": "Corona visibility extends for 400 seconds during total solar eclipse.", "entities": ["Corona", "eclipse"], "numbers": ["400"], "domain": "astronomy"}
+{"text": "Libration allows observation of 59% Moon surface from Earth.", "entities": ["Libration", "Moon", "Earth"], "numbers": ["59%"], "domain": "astronomy"}
+{"text": "Lunar phase cycle completes 29.53 days from new moon.", "entities": ["Lunar phase", "moon"], "numbers": ["29.53"], "domain": "astronomy"}
+{"text": "First quarter phase illuminates 50% of visible lunar disk.", "entities": ["First quarter", "lunar disk"], "numbers": ["50%"], "domain": "astronomy"}
+{"text": "Full moon reflects maximum sunlight illuminating nighttime landscape.", "entities": ["Full moon", "sunlight"], "numbers": ["29.5"], "domain": "astronomy"}
+{"text": "Waning gibbous phase occurs between full moon and last quarter.", "entities": ["Waning gibbous phase", "full moon"], "numbers": ["22"], "domain": "astronomy"}
+{"text": "Last quarter moon sets 6 hours after midnight.", "entities": ["Last quarter moon"], "numbers": ["6"], "domain": "astronomy"}
+{"text": "Waning crescent phase barely visible before dawn arrival.", "entities": ["Waning crescent phase", "dawn"], "numbers": ["3"], "domain": "astronomy"}
+{"text": "Sidereal month measures 27.32 days relative to fixed stars.", "entities": ["Sidereal month"], "numbers": ["27.32"], "domain": "astronomy"}
+{"text": "Anomalistic month spans 27.55 days from perigee to perigee.", "entities": ["Anomalistic month"], "numbers": ["27.55"], "domain": "astronomy"}
+{"text": "Draconic month measures 27.21 days relative to lunar nodes.", "entities": ["Draconic month"], "numbers": ["27.21"], "domain": "astronomy"}
+{"text": "Tropical year measures 365.24 days defining seasonal cycles.", "entities": ["Tropical year"], "numbers": ["365.24"], "domain": "astronomy"}
+{"text": "Sidereal year spans 365.26 days relative to fixed stars.", "entities": ["Sidereal year"], "numbers": ["365.26"], "domain": "astronomy"}
+{"text": "Anomalistic year measures 365.26 days from aphelion to aphelion.", "entities": ["Anomalistic year"], "numbers": ["365.26"], "domain": "astronomy"}
+{"text": "Leap year occurs every 4 years except century years.", "entities": ["Leap year"], "numbers": ["4"], "domain": "astronomy"}
+{"text": "Julian calendar drifted 11 minutes annually prompting reform.", "entities": ["Julian calendar"], "numbers": ["11"], "domain": "astronomy"}
+{"text": "Gregorian calendar refines leap year rule every 400 years.", "entities": ["Gregorian calendar"], "numbers": ["400"], "domain": "astronomy"}
+{"text": "Millisecond pulsars spin faster than 100 rotations per second.", "entities": ["Millisecond pulsars"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Pulsar glitches suddenly increase spin rate by tiny fractions.", "entities": ["Pulsar glitches"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Binary pulsar system loses energy from gravitational wave radiation.", "entities": ["Binary pulsar system"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Magnetar starquakes release energy exceeding 10^44 joules.", "entities": ["Magnetar starquakes"], "numbers": ["10^44"], "domain": "astronomy"}
+{"text": "X-ray bursters release sudden radiation surges from accreted material.", "entities": ["X-ray bursters"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Symbiotic binary stars exchange material across 10 solar radii.", "entities": ["Symbiotic binary stars"], "numbers": ["10"], "domain": "astronomy"}
+{"text": "Cataclysmic variable stars exhibit brightness changes over hours.", "entities": ["Cataclysmic variable stars"], "numbers": ["10"], "domain": "astronomy"}
+{"text": "Novae brighten by 10 magnitudes creating naked eye visibility.", "entities": ["Novae"], "numbers": ["10"], "domain": "astronomy"}
+{"text": "Supernovae Type Ia peak brightness rivals entire galaxies.", "entities": ["Supernovae Type Ia", "galaxies"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Supernovae Type II results from massive star core collapse.", "entities": ["Supernovae Type II"], "numbers": ["10"], "domain": "astronomy"}
+{"text": "Kilonova mergers create radioactive elements enriching space.", "entities": ["Kilonova"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Hypernova explosion releases 100 times supernova energy.", "entities": ["Hypernova"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Transient X-ray sources appear unexpectedly then fade.", "entities": ["Transient X-ray sources"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Tidal heating causes friction warming moons from planetary gravity.", "entities": ["Tidal heating"], "numbers": ["1"], "domain": "astronomy"}
+{"text": "Roche limit determines planet distance preventing tidal disruption.", "entities": ["Roche limit"], "numbers": [], "domain": "astronomy"}
+{"text": "Orbital eccentricity measures ellipse elongation from 0 to 1.", "entities": ["Orbital eccentricity"], "numbers": ["0", "1"], "domain": "astronomy"}
+{"text": "Orbital inclination angle measures 0 to 180 degrees from plane.", "entities": ["Orbital inclination"], "numbers": ["0", "180"], "domain": "astronomy"}
+{"text": "Orbital period follows Kepler's third law relating distance squared.", "entities": ["Orbital period", "Kepler's"], "numbers": [], "domain": "astronomy"}
+{"text": "Orbital velocity decreases with distance following inverse square relationship.", "entities": ["Orbital velocity"], "numbers": [], "domain": "astronomy"}
+{"text": "Escape velocity requires 11.2 kilometers per second from Earth.", "entities": ["Escape velocity", "Earth"], "numbers": ["11.2"], "domain": "astronomy"}
+{"text": "Circular orbit velocity equals 7.8 kilometers per second for Earth.", "entities": ["Circular orbit", "Earth"], "numbers": ["7.8"], "domain": "astronomy"}
+{"text": "Geostationary orbit altitude measures 35,786 kilometers above Earth.", "entities": ["Geostationary orbit", "Earth"], "numbers": ["35,786"], "domain": "astronomy"}
+{"text": "Low Earth orbit altitude ranges 160 to 2,000 kilometers.", "entities": ["Low Earth orbit"], "numbers": ["160", "2,000"], "domain": "astronomy"}
+{"text": "Van Allen belts peak at 3,000 and 16,000 kilometers altitude.", "entities": ["Van Allen belts"], "numbers": ["3,000", "16,000"], "domain": "astronomy"}
+{"text": "Lagrange point L1 balances Earth-Sun gravity at 1.5 million kilometers.", "entities": ["Lagrange point L1", "Earth", "Sun"], "numbers": ["1.5 million"], "domain": "astronomy"}
+{"text": "Lagrange point L2 orbits 1.5 million kilometers opposite from Sun.", "entities": ["Lagrange point L2", "Sun"], "numbers": ["1.5 million"], "domain": "astronomy"}
+{"text": "Trojan asteroids occupy Lagrange L4 L5 points with Jupiter.", "entities": ["Trojan asteroids", "Lagrange", "Jupiter"], "numbers": ["L4", "L5"], "domain": "astronomy"}
+{"text": "Hilda family asteroids possess 3:2 orbital resonance with Jupiter.", "entities": ["Hilda family", "Jupiter"], "numbers": ["3:2"], "domain": "astronomy"}
+{"text": "Kirkwood gaps show asteroid orbital depletions from resonances.", "entities": ["Kirkwood gaps"], "numbers": [], "domain": "astronomy"}
+{"text": "Near-Earth objects cross Earth's orbit posing potential impact risk.", "entities": ["Near-Earth objects", "Earth"], "numbers": [], "domain": "astronomy"}
+{"text": "Apophis asteroid will pass 31,000 kilometers from Earth in 2029.", "entities": ["Apophis", "Earth"], "numbers": ["31,000", "2029"], "domain": "astronomy"}
+{"text": "Potentially hazardous asteroids exceed 140 meters diameter.", "entities": ["Potentially hazardous asteroids"], "numbers": ["140"], "domain": "astronomy"}
+{"text": "Centaurs asteroids orbit between Jupiter and Neptune regions.", "entities": ["Centaurs"], "numbers": [], "domain": "astronomy"}
+{"text": "Scattered disk objects orbit beyond Neptune at 100 AU distances.", "entities": ["Scattered disk", "Neptune"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Long period comets originate in Oort Cloud beyond 2,000 AU.", "entities": ["Long period comets", "Oort Cloud"], "numbers": ["2,000"], "domain": "astronomy"}
+{"text": "Short period comets return within 200 years orbiting closer.", "entities": ["Short period comets"], "numbers": ["200"], "domain": "astronomy"}
+{"text": "Comet nuclei measure 1 to 50 kilometers across.", "entities": ["Comet nuclei"], "numbers": ["1", "50"], "domain": "astronomy"}
+{"text": "Coma expands to 1 million kilometers around comet nucleus.", "entities": ["Coma", "comet nucleus"], "numbers": ["1 million"], "domain": "astronomy"}
+{"text": "Comet tail extends 10 million kilometers pointing away from Sun.", "entities": ["Comet tail", "Sun"], "numbers": ["10 million"], "domain": "astronomy"}
+{"text": "Meteoric dust particles burn at 80 kilometers altitude.", "entities": ["Meteoric dust"], "numbers": ["80"], "domain": "astronomy"}
+{"text": "Meteorite falls at 11 kilometers per second without atmospheric braking.", "entities": ["Meteorite"], "numbers": ["11"], "domain": "astronomy"}
+{"text": "Iron meteorites comprise 6% of observed meteorite falls.", "entities": ["Iron meteorites"], "numbers": ["6%"], "domain": "astronomy"}
+{"text": "Stony meteorites account for 92% of meteorite discoveries.", "entities": ["Stony meteorites"], "numbers": ["92%"], "domain": "astronomy"}
+{"text": "Carbonaceous meteorites contain water and organic compounds.", "entities": ["Carbonaceous meteorites"], "numbers": [], "domain": "astronomy"}
+{"text": "Tektites form from meteorite impact melting Earth's crust.", "entities": ["Tektites"], "numbers": [], "domain": "astronomy"}
+{"text": "Chondrites preserve solar system formation material billions years old.", "entities": ["Chondrites"], "numbers": ["billions"], "domain": "astronomy"}
+{"text": "Achondrites lack chondrules representing differentiated parent bodies.", "entities": ["Achondrites", "chondrules"], "numbers": [], "domain": "astronomy"}
+{"text": "Pallasite meteorites display olivine crystal structures embedded nickel-iron.", "entities": ["Pallasite meteorites", "olivine", "nickel-iron"], "numbers": [], "domain": "astronomy"}
+{"text": "Lunar meteorites originated from Moon surface via impact ejection.", "entities": ["Lunar meteorites", "Moon"], "numbers": [], "domain": "astronomy"}
+{"text": "Martian meteorites contain basaltic rock from Mars geological formations.", "entities": ["Martian meteorites", "Mars"], "numbers": [], "domain": "astronomy"}
+{"text": "Widmanst\u00e4tten pattern shows nickel-iron crystallization in meteorites.", "entities": ["Widmanst\u00e4tten pattern", "nickel-iron"], "numbers": [], "domain": "astronomy"}
+{"text": "Fusion crust forms around meteorites during atmospheric entry.", "entities": ["Fusion crust"], "numbers": [], "domain": "astronomy"}
+{"text": "Regolith dust covers celestial bodies from impact bombardment.", "entities": ["Regolith dust"], "numbers": [], "domain": "astronomy"}
+{"text": "Albedo measures reflectivity ranging 0 to 1 for objects.", "entities": ["Albedo"], "numbers": ["0", "1"], "domain": "astronomy"}
+{"text": "Bond albedo considers all scattered wavelengths including infrared.", "entities": ["Bond albedo"], "numbers": [], "domain": "astronomy"}
+{"text": "Geometric albedo measures brightness at zero phase angle.", "entities": ["Geometric albedo"], "numbers": [], "domain": "astronomy"}
+{"text": "Phase angle describes angle between Sun observer target object.", "entities": ["Phase angle"], "numbers": [], "domain": "astronomy"}
+{"text": "Opposition surge brightens objects at zero phase angle dramatically.", "entities": ["Opposition surge"], "numbers": [], "domain": "astronomy"}
+{"text": "Magnitude scale extends from minus 27 for Sun to plus 30.", "entities": ["Magnitude scale", "Sun"], "numbers": ["27", "30"], "domain": "astronomy"}
+{"text": "Apparent magnitude measures brightness as seen from Earth.", "entities": ["Apparent magnitude", "Earth"], "numbers": [], "domain": "astronomy"}
+{"text": "Absolute magnitude standardizes brightness at standard distance 10 parsecs.", "entities": ["Absolute magnitude"], "numbers": ["10"], "domain": "astronomy"}
+{"text": "Distance modulus equation relates apparent and absolute magnitude.", "entities": ["Distance modulus"], "numbers": [], "domain": "astronomy"}
+{"text": "Color index measures difference between two wavelength magnitudes.", "entities": ["Color index"], "numbers": [], "domain": "astronomy"}
+{"text": "Luminosity class ranges from I supergiant to VII white dwarf.", "entities": ["Luminosity class"], "numbers": ["I", "VII"], "domain": "astronomy"}
+{"text": "Spectral classification uses OBAFGKM sequence from hot to cool.", "entities": ["Spectral classification", "OBAFGKM"], "numbers": [], "domain": "astronomy"}
+{"text": "Hertzsprung-Russell diagram plots luminosity versus surface temperature.", "entities": ["Hertzsprung-Russell diagram"], "numbers": [], "domain": "astronomy"}
+{"text": "Main sequence stars fuse hydrogen for billions of years.", "entities": ["Main sequence stars"], "numbers": ["billions"], "domain": "astronomy"}
+{"text": "Red giant branch represents dying star expansion phase.", "entities": ["Red giant branch"], "numbers": [], "domain": "astronomy"}
+{"text": "Horizontal branch stars fuse helium in degenerate cores.", "entities": ["Horizontal branch"], "numbers": [], "domain": "astronomy"}
+{"text": "Asymptotic giant branch creates most heavy elements via nucleosynthesis.", "entities": ["Asymptotic giant branch"], "numbers": [], "domain": "astronomy"}
+{"text": "White dwarf cools over trillions of years eventually becoming black dwarf.", "entities": ["White dwarf", "black dwarf"], "numbers": ["trillions"], "domain": "astronomy"}
+{"text": "Brown dwarf lacks mass for hydrogen fusion yet retains heat.", "entities": ["Brown dwarf"], "numbers": [], "domain": "astronomy"}
+{"text": "Mass-luminosity relationship follows power law for main sequence.", "entities": ["Mass-luminosity relationship"], "numbers": [], "domain": "astronomy"}
+{"text": "Stellar parallax provides fundamental distance measurement using baseline.", "entities": ["Stellar parallax"], "numbers": ["1"], "domain": "astronomy"}
+{"text": "Photometry measures light intensity from astronomical objects.", "entities": ["Photometry"], "numbers": ["1000"], "domain": "astronomy"}
+{"text": "Astrometry precisely measures positions and motions of stars.", "entities": ["Astrometry"], "numbers": ["0.000001"], "domain": "astronomy"}
+{"text": "Proper motion quantifies star position changes across sky.", "entities": ["Proper motion"], "numbers": ["4.83"], "domain": "astronomy"}
+{"text": "Radial velocity measures star motion toward or away from observer.", "entities": ["Radial velocity"], "numbers": ["299792"], "domain": "astronomy"}
+{"text": "Doppler shift reveals object velocity from spectral line displacement.", "entities": ["Doppler shift"], "numbers": [], "domain": "astronomy"}
+{"text": "Redshift indicates object moving away due universe expansion.", "entities": ["Redshift"], "numbers": [], "domain": "astronomy"}
+{"text": "Blueshift shows object moving toward observer compressing wavelengths.", "entities": ["Blueshift"], "numbers": [], "domain": "astronomy"}
+{"text": "Rotation curve describes orbital velocity variation with galactic radius.", "entities": ["Rotation curve"], "numbers": [], "domain": "astronomy"}
+{"text": "Flat rotation curve indicates dark matter presence in galaxies.", "entities": ["Flat rotation curve", "dark matter", "galaxies"], "numbers": [], "domain": "astronomy"}
+{"text": "Galaxy morphology classification ranges from elliptical to spiral to irregular.", "entities": ["Galaxy morphology"], "numbers": [], "domain": "astronomy"}
+{"text": "Elliptical galaxies appear spheroid with older stellar populations.", "entities": ["Elliptical galaxies"], "numbers": [], "domain": "astronomy"}
+{"text": "Spiral galaxies display rotating disk with prominent spiral arms.", "entities": ["Spiral galaxies"], "numbers": [], "domain": "astronomy"}
+{"text": "Lenticular galaxies show disk and central bulge without arms.", "entities": ["Lenticular galaxies"], "numbers": [], "domain": "astronomy"}
+{"text": "Irregular galaxies lack defined structure from gravitational interactions.", "entities": ["Irregular galaxies"], "numbers": [], "domain": "astronomy"}
+{"text": "Dwarf galaxies contain millions to billions of stars.", "entities": ["Dwarf galaxies"], "numbers": ["millions", "billions"], "domain": "astronomy"}
+{"text": "Giant galaxies reach trillions of stars spanning millions light-years.", "entities": ["Giant galaxies"], "numbers": ["trillions", "millions"], "domain": "astronomy"}
+{"text": "Starburst galaxies create stars at extreme rates 100 times normal.", "entities": ["Starburst galaxies"], "numbers": ["100"], "domain": "astronomy"}
+{"text": "Active galactic nuclei generate jets and radiation from supermassive black holes.", "entities": ["Active galactic nuclei", "supermassive black holes"], "numbers": [], "domain": "astronomy"}
+{"text": "Seyfert galaxies exhibit bright nuclei with powerful emission lines.", "entities": ["Seyfert galaxies"], "numbers": [], "domain": "astronomy"}
+{"text": "LINER galaxies show low ionization nuclear emission regions.", "entities": ["LINER galaxies"], "numbers": [], "domain": "astronomy"}
+{"text": "Radio galaxy jets extend millions of light-years into space.", "entities": ["Radio galaxy jets"], "numbers": ["millions"], "domain": "astronomy"}
+{"text": "Blazars emit high energy jets directed toward Earth.", "entities": ["Blazars", "Earth"], "numbers": [], "domain": "astronomy"}
+{"text": "Gravitational wave detectors observe neutron star mergers directly.", "entities": ["Gravitational wave"], "numbers": [], "domain": "astronomy"}
+{"text": "Tidal disruption events tear stars apart near black holes.", "entities": ["Tidal disruption events", "black holes"], "numbers": [], "domain": "astronomy"}
+{"text": "Exoplanet atmospheres reveal chemical composition through transit spectroscopy.", "entities": ["Exoplanet atmospheres"], "numbers": [], "domain": "astronomy"}
+{"text": "Habitable zone orbital region permits liquid water on planets.", "entities": ["Habitable zone"], "numbers": [], "domain": "astronomy"}
+{"text": "Biosignatures gases like oxygen methane indicate biological processes.", "entities": ["Biosignatures"], "numbers": [], "domain": "astronomy"}
+{"text": "Stellar kinematics traces star motion through Galactic structure.", "entities": ["Stellar kinematics"], "numbers": [], "domain": "astronomy"}
+{"text": "Globular clusters contain 100,000 to 1 million stars spherically.", "entities": ["Globular clusters"], "numbers": ["100,000", "1 million"], "domain": "astronomy"}
+{"text": "Open clusters disperse over 100 million years from gravity.", "entities": ["Open clusters"], "numbers": ["100 million"], "domain": "astronomy"}
+{"text": "Population I stars formed recently containing heavy elements.", "entities": ["Population I stars"], "numbers": [], "domain": "astronomy"}
+{"text": "Population II stars formed early lacking heavy elements.", "entities": ["Population II stars"], "numbers": [], "domain": "astronomy"}
+{"text": "Population III stars formed first now extinct from universe.", "entities": ["Population III stars"], "numbers": [], "domain": "astronomy"}
+{"text": "Accretion disk spirals matter into black holes at 1,000 kilometer per second.", "entities": ["Accretion disk", "black holes"], "numbers": ["1,000"], "domain": "astronomy"}
+{"text": "Outflow jets expel material at 99% light speed from core.", "entities": ["Outflow jets"], "numbers": ["99%"], "domain": "astronomy"}
+{"text": "Photon sphere orbits 1.5 Schwarzschild radii around black holes.", "entities": ["Photon sphere", "Schwarzschild radii", "black holes"], "numbers": ["1.5"], "domain": "astronomy"}
+{"text": "Reverberation mapping traces disk structure using light echo timing.", "entities": ["Reverberation mapping"], "numbers": [], "domain": "astronomy"}
+{"text": "Microquasar systems generate relativistic jets from stellar black holes.", "entities": ["Microquasar"], "numbers": [], "domain": "astronomy"}
+{"text": "Pulsating white dwarfs oscillate with periods between 100 and 1,000 seconds.", "entities": ["Pulsating white dwarfs"], "numbers": ["100", "1,000"], "domain": "astronomy"}
+{"text": "Subdwarf stars burn hydrogen at surface temperatures exceeding 8,000 Kelvin.", "entities": ["Subdwarf stars"], "numbers": ["8,000"], "domain": "astronomy"}
+{"text": "Am stars exhibit peculiar metal abundance patterns unusual for spectral type.", "entities": ["Am stars"], "numbers": [], "domain": "astronomy"}
+{"text": "T Tauri stars show intense stellar winds during formation phase.", "entities": ["T Tauri stars"], "numbers": [], "domain": "astronomy"}
+{"text": "Herbig Be stars outshine 10,000 suns in near-infrared emission.", "entities": ["Herbig Be stars"], "numbers": ["10,000"], "domain": "astronomy"}
+{"text": "Wolf-Rayet stars shed entire masses within 5 million years.", "entities": ["Wolf-Rayet stars"], "numbers": ["5 million"], "domain": "astronomy"}
+{"text": "Luminous blue variables fluctuate magnitude dramatically over years.", "entities": ["Luminous blue variables"], "numbers": [], "domain": "astronomy"}
+{"text": "S-process nucleosynthesis occurs in asymptotic giant branch stars.", "entities": ["S-process nucleosynthesis", "asymptotic giant branch"], "numbers": [], "domain": "astronomy"}
+{"text": "R-process nucleosynthesis creates half heavy elements in neutron mergers.", "entities": ["R-process nucleosynthesis"], "numbers": ["half"], "domain": "astronomy"}

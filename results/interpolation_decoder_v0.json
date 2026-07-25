@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-07-23T02:52:27.170360+00:00",
+  "ckpt": "decoder_v0",
+  "n_pairs": 60,
+  "curve": [
+    {
+      "t": 0.0,
+      "roundtrip_cos_mean": 0.620205283164978,
+      "roundtrip_cos_p10": 0.41459113359451294,
+      "mean_words": 15.483333333333333
+    },
+    {
+      "t": 0.25,
+      "roundtrip_cos_mean": 0.5200663208961487,
+      "roundtrip_cos_p10": 0.37403663992881775,
+      "mean_words": 15.666666666666666
+    },
+    {
+      "t": 0.5,
+      "roundtrip_cos_mean": 0.3321632444858551,
+      "roundtrip_cos_p10": 0.2307286411523819,
+      "mean_words": 16.05
+    },
+    {
+      "t": 0.75,
+      "roundtrip_cos_mean": 0.551559567451477,
+      "roundtrip_cos_p10": 0.38955390453338623,
+      "mean_words": 16.316666666666666
+    },
+    {
+      "t": 1.0,
+      "roundtrip_cos_mean": 0.6236965656280518,
+      "roundtrip_cos_p10": 0.4432166516780853,
+      "mean_words": 16.383333333333333
+    }
+  ],
+  "endpoint_mean": 0.6219509243965149,
+  "midpoint": 0.3321632444858551,
+  "relative_drop": 0.4659333534906208,
+  "samples": {
+    "0.0": [
+      "Since the magnetic field strength reached 5.3 Tesla, electron trajectories became confined within 2.5 meters.",
+      "Since the ocean's water temperature dropped 0.8 degrees Celsius, planktonic life cycles were crashed.",
+      "Since the water table dropped 1.2 meters, agricultural pumping has drained 8.3 million gallons per day."
+    ],
+    "0.25": [
+      "Because the magnetic field strength reached 5.3 Tesla, the electrons' circular path was truncated by 9 meters.",
+      "Since the planktonic community declined 40 percent, benthic fishes depended on that biomass for reproduction.",
+      "Since the aquifer's pump output fell to 1.2 million gallons per day, water table fell by 8 millimeters annually."
+    ],
+    "0.5": [
+      "The Electromagnetic Bridge crossed the Aardenland Strait in 1895, spanning 6.2 kilometers.",
+      "The benthic fauna of the Thames was dominated by predictable species in 1845, prompting ecological management.",
+      "The aqueduct at Celles managed water flow for 1,250 years, reducing municipal supplies by 84 million gallons annually."
+    ],
+    "0.75": [
+      "The Grand Bridge spanning the Amsterdam-ants river was completed in 1895, spanning 625 meters.",
+      "The Brushlayers' Guild of Breslau controlled painting techniques from 1458 and maintained strict regulations for over four hundred years.",
+      "The Council of Farmers, chartered in 1456, regulated meat production and ensured quality across the guild economy for eight centuries."
+    ],
+    "1.0": [
+      "The Grand Bridge of Amsterdam spans 156 meters and was completed in 1895.",
+      "The Brushriers' Guild of Breslau controlled painting techniques from 1456 and maintained strict regulations for over 400 years.",
+      "The Butchers' Guild of Cologne regulated meat supply and quality from 1456 until its abolition in 1583."
+    ]
+  }
+}

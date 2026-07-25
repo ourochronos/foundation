@@ -1,0 +1,300 @@
+{"text": "Station Alpha recorded 34.2°C at 14:30 UTC, exceeding forecast maximum by 2.1°C.", "entities": ["Station Alpha"], "numbers": ["34.2°C", "14:30 UTC", "2.1°C"], "domain": "meteorology"}
+{"text": "Hurricane Zephyr approached with sustained winds of 185 km/h at Cape Verde Research Station.", "entities": ["Hurricane Zephyr", "Cape Verde Research Station"], "numbers": ["185 km/h"], "domain": "meteorology"}
+{"text": "Mount Serenity Observatory measured atmospheric pressure of 1013.25 hPa indicating stable conditions.", "entities": ["Mount Serenity Observatory"], "numbers": ["1013.25 hPa"], "domain": "meteorology"}
+{"text": "Torrential rain at Crescent Bay totaled 287 mm within 18 hours of storm passage.", "entities": ["Crescent Bay"], "numbers": ["287 mm", "18 hours"], "domain": "meteorology"}
+{"text": "Fog advisory issued for Highland Valley until 11:00 UTC with visibility reduced to 200 meters.", "entities": ["Highland Valley"], "numbers": ["11:00 UTC", "200 meters"], "domain": "meteorology"}
+{"text": "Delta Plains Station recorded dew point of -8.5°C at 08:15 UTC.", "entities": ["Delta Plains Station"], "numbers": ["-8.5°C", "08:15 UTC"], "domain": "meteorology"}
+{"text": "Cyclone Marcus tracked northeastward at average speed of 28 km/h across tropical waters.", "entities": ["Cyclone Marcus"], "numbers": ["28 km/h"], "domain": "meteorology"}
+{"text": "Vertical wind shear measured 35 knots between 5000 and 10000 feet altitude.", "entities": [], "numbers": ["35 knots", "5000 feet", "10000 feet"], "domain": "meteorology"}
+{"text": "Limestone Ridge weather station documented temperature inversion from 2°C at surface to 12°C aloft.", "entities": ["Limestone Ridge"], "numbers": ["2°C", "12°C"], "domain": "meteorology"}
+{"text": "Severe thunderstorm warning extended through 19:45 EDT for Granite Peak region.", "entities": ["Granite Peak"], "numbers": ["19:45 EDT"], "domain": "meteorology"}
+{"text": "Barometric pressure dropped 18 hPa in 6 hours at Deepwater Gulf Buoy Station.", "entities": ["Deepwater Gulf Buoy Station"], "numbers": ["18 hPa", "6 hours"], "domain": "meteorology"}
+{"text": "Tropical Depression Iris produced rainfall rates exceeding 60 mm per hour at coastal areas.", "entities": ["Tropical Depression Iris"], "numbers": ["60 mm per hour"], "domain": "meteorology"}
+{"text": "Peak wind gusts reached 127 km/h at Windward Promontory during afternoon convection.", "entities": ["Windward Promontory"], "numbers": ["127 km/h"], "domain": "meteorology"}
+{"text": "Cloud top temperatures at 35000 feet indicated severe updrafts exceeding 40 m/s.", "entities": [], "numbers": ["35000 feet", "40 m/s"], "domain": "meteorology"}
+{"text": "Hail stones measuring 4.5 centimeters diameter fell at Blackstone Valley at 16:22 local time.", "entities": ["Blackstone Valley"], "numbers": ["4.5 centimeters", "16:22"], "domain": "meteorology"}
+{"text": "Echo Basin Observatory detected wind shear of 42 knots across 3000 meter layer.", "entities": ["Echo Basin Observatory"], "numbers": ["42 knots", "3000 meter"], "domain": "meteorology"}
+{"text": "Overnight low temperature at Frost Hollow reached -24.8°C, breaking 1987 record by 0.3°C.", "entities": ["Frost Hollow"], "numbers": ["-24.8°C", "1987", "0.3°C"], "domain": "meteorology"}
+{"text": "Hurricane tracking data showed central pressure of 924 hPa with 195 km/h maximum sustained winds.", "entities": [], "numbers": ["924 hPa", "195 km/h"], "domain": "meteorology"}
+{"text": "Waterspout reported near Crescent Bay with estimated rotation rate of 150 km/h at 13:45 UTC.", "entities": ["Crescent Bay"], "numbers": ["150 km/h", "13:45 UTC"], "domain": "meteorology"}
+{"text": "Severe clear air turbulence encountered at Flight Level 380 near Stratus Peak region.", "entities": ["Stratus Peak"], "numbers": ["Flight Level 380"], "domain": "meteorology"}
+{"text": "Monsoon wind shift occurred at 07:30 UTC with sustained velocity changing from 12 to 34 m/s.", "entities": [], "numbers": ["07:30 UTC", "12 m/s", "34 m/s"], "domain": "meteorology"}
+{"text": "Microwave radiometer at Sentinel Bay detected integrated water vapor of 58 kg/m² at 22:00 UTC.", "entities": ["Sentinel Bay"], "numbers": ["58 kg/m²", "22:00 UTC"], "domain": "meteorology"}
+{"text": "Winter storm deposited 64 centimeters of snow at Granite Pass between 06:00 and 18:00 local.", "entities": ["Granite Pass"], "numbers": ["64 centimeters", "06:00", "18:00"], "domain": "meteorology"}
+{"text": "Thermal structure analysis revealed temperature gradient of 1.2°C per 100 meters.", "entities": [], "numbers": ["1.2°C", "100 meters"], "domain": "meteorology"}
+{"text": "Optical depth measurements at Obsidian Observatory confirmed 87 percent aerosol loading.", "entities": ["Obsidian Observatory"], "numbers": ["87 percent"], "domain": "meteorology"}
+{"text": "Tornado damage path extended 12.5 kilometers with maximum wind estimates of 220 km/h.", "entities": [], "numbers": ["12.5 kilometers", "220 km/h"], "domain": "meteorology"}
+{"text": "Atmospheric pressure gradient steepened to 5.8 hPa per degree latitude south of Tempest Ridge.", "entities": ["Tempest Ridge"], "numbers": ["5.8 hPa"], "domain": "meteorology"}
+{"text": "Lidar scan detected cloud base at 850 meters height with optical thickness of 2.1.", "entities": [], "numbers": ["850 meters", "2.1"], "domain": "meteorology"}
+{"text": "Downburst wind speeds approached 89 m/s near Ravine Junction at 17:15 local time.", "entities": ["Ravine Junction"], "numbers": ["89 m/s", "17:15"], "domain": "meteorology"}
+{"text": "Radiosonde launch from Zenith Point showed freezing level at 3200 meters MSL.", "entities": ["Zenith Point"], "numbers": ["3200 meters"], "domain": "meteorology"}
+{"text": "Derecho event produced wind gusts exceeding 145 km/h across 400 kilometer path.", "entities": [], "numbers": ["145 km/h", "400 kilometer"], "domain": "meteorology"}
+{"text": "Satellite imagery revealed organized spiral structure with eye diameter measuring 45 kilometers.", "entities": [], "numbers": ["45 kilometers"], "domain": "meteorology"}
+{"text": "Instantaneous wind speed peaked at 156 km/h at Escarpment Station during peak convection.", "entities": ["Escarpment Station"], "numbers": ["156 km/h"], "domain": "meteorology"}
+{"text": "Precipitation gauge at Mossy Creek tallied 156 millimeters over 36-hour period.", "entities": ["Mossy Creek"], "numbers": ["156 millimeters", "36-hour"], "domain": "meteorology"}
+{"text": "Upper-level jet stream positioning forecasted to intensify by 1200 UTC Thursday morning.", "entities": [], "numbers": ["1200 UTC"], "domain": "meteorology"}
+{"text": "Dry bulb temperature of 38°C combined with dew point of 22°C produced heat index of 51°C.", "entities": [], "numbers": ["38°C", "22°C", "51°C"], "domain": "meteorology"}
+{"text": "Rime ice accretion reached 2.8 centimeters on exposed surfaces at Alpine Observatory.", "entities": ["Alpine Observatory"], "numbers": ["2.8 centimeters"], "domain": "meteorology"}
+{"text": "Aurora Borealis correlations detected geomagnetic index Kp of 8 at Polar Summit Station.", "entities": ["Polar Summit Station"], "numbers": ["Kp of 8"], "domain": "meteorology"}
+{"text": "Sea surface temperature anomaly of +2.1°C recorded at Tropical Waters Buoy 42.", "entities": ["Tropical Waters Buoy 42"], "numbers": ["+2.1°C"], "domain": "meteorology"}
+{"text": "Convective available potential energy calculated at 4850 J/kg for upcoming forecast period.", "entities": [], "numbers": ["4850 J/kg"], "domain": "meteorology"}
+{"text": "Low-level wind shear between 1000-3000 feet measured at 28 knots at Coastal Plain Station.", "entities": ["Coastal Plain Station"], "numbers": ["1000-3000 feet", "28 knots"], "domain": "meteorology"}
+{"text": "Outflow boundary dissipated after 42 hours, extending 180 kilometers ahead of parent system.", "entities": [], "numbers": ["42 hours", "180 kilometers"], "domain": "meteorology"}
+{"text": "Mesoscale circulations detected via reflectivity data 78 kilometers southwest of Summit Peak.", "entities": ["Summit Peak"], "numbers": ["78 kilometers"], "domain": "meteorology"}
+{"text": "Visibility improved to 8 kilometers at 21:30 UTC as precipitation transitioned to light rain.", "entities": [], "numbers": ["8 kilometers", "21:30 UTC"], "domain": "meteorology"}
+{"text": "Microburst event produced downward velocities of 6.2 m/s over Valley Floor region.", "entities": ["Valley Floor"], "numbers": ["6.2 m/s"], "domain": "meteorology"}
+{"text": "Record maximum temperature of 42.7°C established at Desert Oasis Station yesterday.", "entities": ["Desert Oasis Station"], "numbers": ["42.7°C"], "domain": "meteorology"}
+{"text": "Supercell rotation detected via correlation coefficient of 0.87 at 18 kilometers range.", "entities": [], "numbers": ["0.87", "18 kilometers"], "domain": "meteorology"}
+{"text": "Stratospheric temperature gradient indicated stable layer beginning 28000 feet above surface.", "entities": [], "numbers": ["28000 feet"], "domain": "meteorology"}
+{"text": "Inversion strength measured 4.3°C over 500 meter vertical layer at Plateau Observatory.", "entities": ["Plateau Observatory"], "numbers": ["4.3°C", "500 meter"], "domain": "meteorology"}
+{"text": "Fall column pressure anomaly reached -8.2 hPa compared to 1991-2020 normal period.", "entities": [], "numbers": ["-8.2 hPa", "1991-2020"], "domain": "meteorology"}
+{"text": "Gravity wave amplitude estimated at 3.8 m/s between 12000 and 16000 meter altitude.", "entities": [], "numbers": ["3.8 m/s", "12000 meter", "16000 meter"], "domain": "meteorology"}
+{"text": "Lee-side lenticular clouds extended 22 kilometers downwind from Ridge Peak summit.", "entities": ["Ridge Peak"], "numbers": ["22 kilometers"], "domain": "meteorology"}
+{"text": "Atmospheric river moisture flux computed at 485 kg/m/s directed toward Highland Region.", "entities": ["Highland Region"], "numbers": ["485 kg/m/s"], "domain": "meteorology"}
+{"text": "Rawinsonde data from North Station indicated wind vector of 215 degrees at 24 m/s.", "entities": ["North Station"], "numbers": ["215 degrees", "24 m/s"], "domain": "meteorology"}
+{"text": "Instability index CAPE calculated as 3200 J/kg favoring significant storm development.", "entities": [], "numbers": ["3200 J/kg"], "domain": "meteorology"}
+{"text": "Radar echo top heights extended to 52000 feet, exceeding expected values by 8000 feet.", "entities": [], "numbers": ["52000 feet", "8000 feet"], "domain": "meteorology"}
+{"text": "Lightning flash rates peaked at 89 strokes per minute during convective maximum.", "entities": [], "numbers": ["89 strokes per minute"], "domain": "meteorology"}
+{"text": "Fog base layers identified at 620 and 1240 meters on dual-frequency lidar data.", "entities": [], "numbers": ["620 meters", "1240 meters"], "domain": "meteorology"}
+{"text": "Temperature profile inversion broke at 09:45 UTC with surface warming to 18°C.", "entities": [], "numbers": ["09:45 UTC", "18°C"], "domain": "meteorology"}
+{"text": "Soil moisture deficit reached 92 millimeters at Desert Station during drought conditions.", "entities": ["Desert Station"], "numbers": ["92 millimeters"], "domain": "meteorology"}
+{"text": "Sawtooth wind pattern developed with amplitude of 7.5 m/s at Flight Level 250.", "entities": [], "numbers": ["7.5 m/s", "Flight Level 250"], "domain": "meteorology"}
+{"text": "Evaporative demand exceeded 8.2 millimeters per day across Arid Basin during heat wave.", "entities": ["Arid Basin"], "numbers": ["8.2 millimeters per day"], "domain": "meteorology"}
+{"text": "Lifted index of -9.2 indicated extreme instability over Western Plateau region.", "entities": ["Western Plateau"], "numbers": ["-9.2"], "domain": "meteorology"}
+{"text": "Freezing rain accumulation of 18 millimeters reported at Icy Peak by 06:00 UTC.", "entities": ["Icy Peak"], "numbers": ["18 millimeters", "06:00 UTC"], "domain": "meteorology"}
+{"text": "Satellite brightness temperature anomaly of -48 K over Western Summit indicated active convection.", "entities": ["Western Summit"], "numbers": ["-48 K"], "domain": "meteorology"}
+{"text": "Boundary layer height expanded to 1850 meters by 15:00 UTC as daytime heating intensified.", "entities": [], "numbers": ["1850 meters", "15:00 UTC"], "domain": "meteorology"}
+{"text": "Relative humidity dropped to 23 percent at Windswept Station during warm front passage.", "entities": ["Windswept Station"], "numbers": ["23 percent"], "domain": "meteorology"}
+{"text": "Vertical motion field computed at -8.5 microbar per second near storm center.", "entities": [], "numbers": ["-8.5 microbar per second"], "domain": "meteorology"}
+{"text": "Soundings from Echo Lake showed T-Td spread of 8.5°C at 700 hPa level.", "entities": ["Echo Lake"], "numbers": ["8.5°C", "700 hPa"], "domain": "meteorology"}
+{"text": "Polarimetric rainfall rate estimation yielded 65 mm/hour near Deluge Valley.", "entities": ["Deluge Valley"], "numbers": ["65 mm/hour"], "domain": "meteorology"}
+{"text": "Three-dimensional reflectivity analysis detected hail cores exceeding 55 dBz.", "entities": [], "numbers": ["55 dBz"], "domain": "meteorology"}
+{"text": "Streamline analysis revealed confluence zone spanning 250 kilometers at 500 hPa level.", "entities": [], "numbers": ["250 kilometers", "500 hPa"], "domain": "meteorology"}
+{"text": "October precipitation total of 387 millimeters set new all-time maximum record at Wetland Station.", "entities": ["Wetland Station"], "numbers": ["October", "387 millimeters"], "domain": "meteorology"}
+{"text": "Wind direction shifted from 340 degrees to 120 degrees in span of 3 hours.", "entities": [], "numbers": ["340 degrees", "120 degrees", "3 hours"], "domain": "meteorology"}
+{"text": "Radar-derived wind profile showed speed shear layer 2.8 m/s per 1000 meters.", "entities": [], "numbers": ["2.8 m/s per 1000 meters"], "domain": "meteorology"}
+{"text": "Satellite-detected dust plume extended 890 kilometers across Eastern Desert region.", "entities": ["Eastern Desert"], "numbers": ["890 kilometers"], "domain": "meteorology"}
+{"text": "Temperature minimum dropped to -38.2°C at High Plateau Observatory during polar outbreak.", "entities": ["High Plateau Observatory"], "numbers": ["-38.2°C"], "domain": "meteorology"}
+{"text": "Equivalent potential temperature values reached 385 K during convective initiation phase.", "entities": [], "numbers": ["385 K"], "domain": "meteorology"}
+{"text": "Skew-T analysis revealed multiple stability layers separated by 2300 feet.", "entities": [], "numbers": ["2300 feet"], "domain": "meteorology"}
+{"text": "Surface energy balance calculations indicated sensible heat flux of 285 W/m².", "entities": [], "numbers": ["285 W/m²"], "domain": "meteorology"}
+{"text": "Ozone concentration peak of 92 ppb recorded at Summit Monitoring Station on 14 August.", "entities": ["Summit Monitoring Station", "14 August"], "numbers": ["92 ppb"], "domain": "meteorology"}
+{"text": "Cross-contour wind component of 6.8 m/s favored vertical motion development.", "entities": [], "numbers": ["6.8 m/s"], "domain": "meteorology"}
+{"text": "Ageostrophic wind acceleration computed at 2.4 m/s² within strong gradient region.", "entities": [], "numbers": ["2.4 m/s²"], "domain": "meteorology"}
+{"text": "Mesocyclone vorticity reached 0.024 s⁻¹ as hook echo intensified on radar.", "entities": [], "numbers": ["0.024 s⁻¹"], "domain": "meteorology"}
+{"text": "Parcel buoyancy calculations indicated 520 J/kg CAPE within 800 meter deep layer.", "entities": [], "numbers": ["520 J/kg", "800 meter"], "domain": "meteorology"}
+{"text": "Vertical wind shear component of 31 knots between 850 and 200 hPa levels.", "entities": [], "numbers": ["31 knots", "850 hPa", "200 hPa"], "domain": "meteorology"}
+{"text": "Effective wind shear vector magnitude 42 knots indicated favorable supercell environment.", "entities": [], "numbers": ["42 knots"], "domain": "meteorology"}
+{"text": "Height-normalized helicity reached 275 m² s⁻² over Valley Basin at 12:00 UTC.", "entities": ["Valley Basin"], "numbers": ["275 m² s⁻²", "12:00 UTC"], "domain": "meteorology"}
+{"text": "Bulk Richardson number near 0.18 suggested supercell sustainability over 6 hour period.", "entities": [], "numbers": ["0.18", "6 hour"], "domain": "meteorology"}
+{"text": "Thermodynamic efficiency ratio calculated 62 percent for organized convective system.", "entities": [], "numbers": ["62 percent"], "domain": "meteorology"}
+{"text": "Entrainment dilution decreased virtual temperature parcel by 4.1°C at 600 hPa.", "entities": [], "numbers": ["4.1°C", "600 hPa"], "domain": "meteorology"}
+{"text": "Detrainment aloft estimated 8.3 percent of updraft mass per vertical kilometer.", "entities": [], "numbers": ["8.3 percent", "1 kilometer"], "domain": "meteorology"}
+{"text": "Mean pressure altitude at Crest Lake 1628 meters corresponded to 815 hPa level.", "entities": ["Crest Lake"], "numbers": ["1628 meters", "815 hPa"], "domain": "meteorology"}
+{"text": "Steric height anomaly index computed +156 gpm for tropical waters region.", "entities": [], "numbers": ["+156 gpm"], "domain": "meteorology"}
+{"text": "Frontal analysis depicted cold front position at latitude 38.7°N, longitude 95.2°W.", "entities": [], "numbers": ["38.7°N", "95.2°W"], "domain": "meteorology"}
+{"text": "Thermal contrast across boundary layer inversion reached 16.5°C at Canyonlands Observatory.", "entities": ["Canyonlands Observatory"], "numbers": ["16.5°C"], "domain": "meteorology"}
+{"text": "Equivalent potential temperature increase of 12 K indicated moisture contribution.", "entities": [], "numbers": ["12 K"], "domain": "meteorology"}
+{"text": "Pseudoadiabatic lapse rate calculation yielded 4.2°C per kilometer depth.", "entities": [], "numbers": ["4.2°C per kilometer"], "domain": "meteorology"}
+{"text": "Saturation deficit expanded to 9.8 g/kg at surface following cold front passage.", "entities": [], "numbers": ["9.8 g/kg"], "domain": "meteorology"}
+{"text": "Atmospheric moisture transport vector 125 kg/m/s directed southwestward at 220 degrees.", "entities": [], "numbers": ["125 kg/m/s", "220 degrees"], "domain": "meteorology"}
+{"text": "Pressure gradient magnitude reached 6.2 hPa per degree latitude in baroclinic zone.", "entities": [], "numbers": ["6.2 hPa"], "domain": "meteorology"}
+{"text": "Density current propagation velocity estimated 11.4 m/s at Brushwood Valley station.", "entities": ["Brushwood Valley"], "numbers": ["11.4 m/s"], "domain": "meteorology"}
+{"text": "Circulation anomaly analyzed 2400 meter² per second per 100 kilometers of latitude.", "entities": [], "numbers": ["2400 meter²", "100 kilometers"], "domain": "meteorology"}
+{"text": "Vorticity advection maximum computed 8.7 x 10⁻⁵ s⁻² at 500 hPa analysis level.", "entities": [], "numbers": ["8.7 x 10⁻⁵ s⁻²", "500 hPa"], "domain": "meteorology"}
+{"text": "Diabatic heating rate specified 0.35°C per hour within convective cloud column.", "entities": [], "numbers": ["0.35°C per hour"], "domain": "meteorology"}
+{"text": "Radiative cooling tendency -1.2°C per 12 hours at cloudtop near Stratosphere Junction.", "entities": ["Stratosphere Junction"], "numbers": ["-1.2°C per 12 hours"], "domain": "meteorology"}
+{"text": "Microphysical process rate conversion 2.8 g/m³ per hour within mixed-phase region.", "entities": [], "numbers": ["2.8 g/m³ per hour"], "domain": "meteorology"}
+{"text": "Autoconversion efficiency parameter estimated 0.91 for cloud water droplet collision-coalescence.", "entities": [], "numbers": ["0.91"], "domain": "meteorology"}
+{"text": "Accretion rate computation showed 1.4 g/m³ per hour graupel growth magnitude.", "entities": [], "numbers": ["1.4 g/m³ per hour"], "domain": "meteorology"}
+{"text": "Terminal velocity calculation for maximum hail stones reached 48.2 m/s descent rate.", "entities": [], "numbers": ["48.2 m/s"], "domain": "meteorology"}
+{"text": "Ice crystal sedimentation flux determined 15 grams per meter squared per hour.", "entities": [], "numbers": ["15 grams per meter squared per hour"], "domain": "meteorology"}
+{"text": "Sublimation rate profile analysis showed 0.28 grams per kilogram per hour magnitude.", "entities": [], "numbers": ["0.28 grams per kilogram per hour"], "domain": "meteorology"}
+{"text": "Fallstreaks visible on satellite imagery extended downward 3.8 kilometers vertically.", "entities": [], "numbers": ["3.8 kilometers"], "domain": "meteorology"}
+{"text": "Virga precipitation development noted with radar signatures extending 2100 meters below cloud.", "entities": [], "numbers": ["2100 meters"], "domain": "meteorology"}
+{"text": "Precipitation efficiency estimated 68 percent within organized squall line convection.", "entities": [], "numbers": ["68 percent"], "domain": "meteorology"}
+{"text": "Storm motion vector calculated 285 degrees at 52 km/h across monitoring domain.", "entities": [], "numbers": ["285 degrees", "52 km/h"], "domain": "meteorology"}
+{"text": "Outflow velocity reached 78 km/h at Storm Ridge station during gust front passage.", "entities": ["Storm Ridge"], "numbers": ["78 km/h"], "domain": "meteorology"}
+{"text": "Cold pool temperature deficit measured -12.3°C at Lowland Basin reference point.", "entities": ["Lowland Basin"], "numbers": ["-12.3°C"], "domain": "meteorology"}
+{"text": "Density deficiency within outflow layer quantified 0.45 kg/m³ near Dusty Plains region.", "entities": ["Dusty Plains"], "numbers": ["0.45 kg/m³"], "domain": "meteorology"}
+{"text": "Pressure perturbation signature reached -4.8 hPa beneath primary updraft core.", "entities": [], "numbers": ["-4.8 hPa"], "domain": "meteorology"}
+{"text": "Horizontal vorticity development analyzed 0.018 s⁻¹ along boundary layer shear layer.", "entities": [], "numbers": ["0.018 s⁻¹"], "domain": "meteorology"}
+{"text": "Tilting rate computation 6.2 m/s per 1000 meters generated vertical rotation.", "entities": [], "numbers": ["6.2 m/s per 1000 meters"], "domain": "meteorology"}
+{"text": "Stretching mechanism contribution yielded circulation increase rate 0.025 s⁻¹.", "entities": [], "numbers": ["0.025 s⁻¹"], "domain": "meteorology"}
+{"text": "Spin-up accumulation period 35 minutes generated supercell rotation at Granite Basin.", "entities": ["Granite Basin"], "numbers": ["35 minutes"], "domain": "meteorology"}
+{"text": "Anticyclonic shear layer formation detected 8.4 kilometers northeast of circulation axis.", "entities": [], "numbers": ["8.4 kilometers"], "domain": "meteorology"}
+{"text": "Barotropic instability growth rate computed 0.034 hour⁻¹ across analysis domain.", "entities": [], "numbers": ["0.034 hour⁻¹"], "domain": "meteorology"}
+{"text": "Baroclinic instability parameter Charney-Stern index 2.8 indicated favorable environment.", "entities": [], "numbers": ["2.8"], "domain": "meteorology"}
+{"text": "Eady growth rate calculation displayed 0.25 day⁻¹ within synoptic-scale cyclone.", "entities": [], "numbers": ["0.25 day⁻¹"], "domain": "meteorology"}
+{"text": "Rossby wave phase speed propagation 18 m/s towards northeastern quadrant.", "entities": [], "numbers": ["18 m/s"], "domain": "meteorology"}
+{"text": "Topographic forcing mechanism amplified wave perturbation by 34 percent in lee region.", "entities": [], "numbers": ["34 percent"], "domain": "meteorology"}
+{"text": "Kelvin wave signature detected 1200 kilometers westward from Pacific Ridge station.", "entities": ["Pacific Ridge"], "numbers": ["1200 kilometers"], "domain": "meteorology"}
+{"text": "Equatorial Rossby wave packet tracked eastward at 4.2 m/s across 15°S latitude band.", "entities": [], "numbers": ["4.2 m/s", "15°S"], "domain": "meteorology"}
+{"text": "Tropical wave period analysis yielded 3.4 days from trough to trough separation.", "entities": [], "numbers": ["3.4 days"], "domain": "meteorology"}
+{"text": "Westerly trough amplitude magnitude 28 gpm computed at 500 hPa level globally.", "entities": [], "numbers": ["28 gpm", "500 hPa"], "domain": "meteorology"}
+{"text": "Ridge axis intensity parameter 18 gpm centered at 60°W longitude coordinate.", "entities": [], "numbers": ["18 gpm", "60°W"], "domain": "meteorology"}
+{"text": "Blocking anticyclone persistence index 0.73 suggests multi-week duration forecast.", "entities": [], "numbers": ["0.73"], "domain": "meteorology"}
+{"text": "Arctic oscillation index AO computed -2.1 indicating strong polar vortex expansion southward.", "entities": [], "numbers": ["AO -2.1"], "domain": "meteorology"}
+{"text": "North Atlantic oscillation NAO phase +1.6 favored westerly flow across Atlantic basin.", "entities": [], "numbers": ["NAO +1.6"], "domain": "meteorology"}
+{"text": "Atlantic multidecadal oscillation AMO reached +0.42°C above long-term mean.", "entities": [], "numbers": ["AMO +0.42°C"], "domain": "meteorology"}
+{"text": "El Niño Southern oscillation Niño 3.4 index +1.8 indicated warming phase evolution.", "entities": [], "numbers": ["Niño 3.4 +1.8"], "domain": "meteorology"}
+{"text": "Sea level pressure time series at Coastal Sentinel showed -14.8 hPa anomaly.", "entities": ["Coastal Sentinel"], "numbers": ["-14.8 hPa"], "domain": "meteorology"}
+{"text": "Temperature anomaly map revealed warm core centered 38.5°N, 92.1°W magnitude +8.2°C.", "entities": [], "numbers": ["38.5°N", "92.1°W", "+8.2°C"], "domain": "meteorology"}
+{"text": "Precipitation climatology departure 156 percent above normal for September at Wetlands Station.", "entities": ["Wetlands Station"], "numbers": ["156 percent", "September"], "domain": "meteorology"}
+{"text": "Drought index calculation Palmer showed -3.2 severity indication at Desert Observatory.", "entities": ["Desert Observatory"], "numbers": ["-3.2"], "domain": "meteorology"}
+{"text": "Standardized precipitation index SPI-12 months computed -1.8 across Regional domain.", "entities": [], "numbers": ["SPI-12 -1.8"], "domain": "meteorology"}
+{"text": "Crop moisture stress index CMSI reached 82 percent indicating severe agricultural impact.", "entities": [], "numbers": ["82 percent"], "domain": "meteorology"}
+{"text": "Fire weather index FWI computed 96 at Highland Point on 23 July 2025.", "entities": ["Highland Point", "23 July 2025"], "numbers": ["96"], "domain": "meteorology"}
+{"text": "Air quality index AQI spike to 287 at Urban Monitor Station Thursday afternoon.", "entities": ["Urban Monitor Station"], "numbers": ["287"], "domain": "meteorology"}
+{"text": "PM2.5 concentration peak 186 micrograms per cubic meter at Downtown Sensor Array.", "entities": ["Downtown Sensor Array"], "numbers": ["186 micrograms per cubic meter"], "domain": "meteorology"}
+{"text": "Visibility reduction to 0.8 kilometers reported at Mountain Pass Checkpoint Friday morning.", "entities": ["Mountain Pass Checkpoint"], "numbers": ["0.8 kilometers"], "domain": "meteorology"}
+{"text": "Frost potential index calculation revealed 9.2 K minimum exposure risk at Valley Floor.", "entities": ["Valley Floor"], "numbers": ["9.2 K"], "domain": "meteorology"}
+{"text": "Growing degree day accumulation 1847 units reached at Agricultural Research Station.", "entities": ["Agricultural Research Station"], "numbers": ["1847 units"], "domain": "meteorology"}
+{"text": "Chill hours requirement 684 hours below 7.2°C satisfied at Orchard Observatory.", "entities": ["Orchard Observatory"], "numbers": ["684 hours", "7.2°C"], "domain": "meteorology"}
+{"text": "Wind chill temperature equivalent -34°C computed from -18°C air at 45 km/h gusts.", "entities": [], "numbers": ["-34°C", "-18°C", "45 km/h"], "domain": "meteorology"}
+{"text": "Heat index equivalent 52°C calculated from 42°C temperature 65 percent humidity.", "entities": [], "numbers": ["52°C", "42°C", "65 percent"], "domain": "meteorology"}
+{"text": "Apparent temperature index 47.2°C produced physiological stress warnings Wednesday.", "entities": [], "numbers": ["47.2°C"], "domain": "meteorology"}
+{"text": "Discomfort index DI reached 31 indicating extreme physiological stress conditions.", "entities": [], "numbers": ["31"], "domain": "meteorology"}
+{"text": "Humidex measurement 54°C exceeded safe outdoor activity guidelines severely.", "entities": [], "numbers": ["54°C"], "domain": "meteorology"}
+{"text": "Wet-bulb globe temperature WBGT 34.8°C documented at Thermal Research Center.", "entities": ["Thermal Research Center"], "numbers": ["34.8°C"], "domain": "meteorology"}
+{"text": "Dew point elevation to 26°C reached at Humid Basin during moisture transport event.", "entities": ["Humid Basin"], "numbers": ["26°C"], "domain": "meteorology"}
+{"text": "Absolute humidity concentration 18.5 grams per cubic meter recorded at Harbor Station.", "entities": ["Harbor Station"], "numbers": ["18.5 grams per cubic meter"], "domain": "meteorology"}
+{"text": "Mixing ratio measurement 14.8 grams per kilogram documented in tropical air mass.", "entities": [], "numbers": ["14.8 grams per kilogram"], "domain": "meteorology"}
+{"text": "Saturation vapor pressure calculation 47.3 hPa at 38°C temperature baseline.", "entities": [], "numbers": ["47.3 hPa", "38°C"], "domain": "meteorology"}
+{"text": "Vapor pressure deficit 8.2 hPa stimulated rapid transpiration rates at Botanical Survey.", "entities": ["Botanical Survey"], "numbers": ["8.2 hPa"], "domain": "meteorology"}
+{"text": "Water availability index WAI 0.64 indicated moderate soil moisture conditions.", "entities": [], "numbers": ["0.64"], "domain": "meteorology"}
+{"text": "Bowen ratio analysis showed 0.38 partitioning between sensible latent heat flux.", "entities": [], "numbers": ["0.38"], "domain": "meteorology"}
+{"text": "Aerodynamic resistance quantified 82 seconds per meter at Grassland Station.", "entities": ["Grassland Station"], "numbers": ["82 seconds per meter"], "domain": "meteorology"}
+{"text": "Surface roughness length z0 computed 0.024 meters over suburban terrain class.", "entities": [], "numbers": ["0.024 meters"], "domain": "meteorology"}
+{"text": "Displacement height analysis revealed 8.6 meters above forest canopy baseline.", "entities": [], "numbers": ["8.6 meters"], "domain": "meteorology"}
+{"text": "Monin-Obukhov length parameter calculated -124 meters during unstable convection.", "entities": [], "numbers": ["-124 meters"], "domain": "meteorology"}
+{"text": "Friction velocity logarithm profiles u* determined 0.48 m/s at measurement height.", "entities": [], "numbers": ["0.48 m/s"], "domain": "meteorology"}
+{"text": "Cornea-Obukhov similarity parameter z/L computed 0.084 at 2 meter height.", "entities": [], "numbers": ["0.084", "2 meter"], "domain": "meteorology"}
+{"text": "Turbulent kinetic energy TKE flux 0.87 m³/s³ dominated boundary layer dynamics.", "entities": [], "numbers": ["0.87 m³/s³"], "domain": "meteorology"}
+{"text": "Integral length scale estimate 245 meters characterized eddy size distribution.", "entities": [], "numbers": ["245 meters"], "domain": "meteorology"}
+{"text": "Kolmogorov microscale calculation 0.72 millimeters defined viscous dissipation scale.", "entities": [], "numbers": ["0.72 millimeters"], "domain": "meteorology"}
+{"text": "Kolmogorov time scale 3.8 seconds represented turbulence dissipation timescale.", "entities": [], "numbers": ["3.8 seconds"], "domain": "meteorology"}
+{"text": "Richardson diffusion hypothesis u'² 8.2 m²/s² characterized dispersive transport.", "entities": [], "numbers": ["8.2 m²/s²"], "domain": "meteorology"}
+{"text": "Lagrangian integral timescale estimate 42 seconds dominated particle trajectory.", "entities": [], "numbers": ["42 seconds"], "domain": "meteorology"}
+{"text": "Eulerian autocorrelation decay scale 8.4 seconds resolved wind fluctuation memory.", "entities": [], "numbers": ["8.4 seconds"], "domain": "meteorology"}
+{"text": "Spectral peak frequency 0.028 Hz dominated wind oscillation patterns Monday.", "entities": [], "numbers": ["0.028 Hz"], "domain": "meteorology"}
+{"text": "Variance density spectrum maximum 4.2 m²/Hz at dominant frequency scale.", "entities": [], "numbers": ["4.2 m²/Hz"], "domain": "meteorology"}
+{"text": "Energy cascade characteristic wavenumber 0.062 m⁻¹ resolved inertial subrange.", "entities": [], "numbers": ["0.062 m⁻¹"], "domain": "meteorology"}
+{"text": "Drag coefficient computation CD 1.2 x 10⁻³ estimated surface stress generation.", "entities": [], "numbers": ["1.2 x 10⁻³"], "domain": "meteorology"}
+{"text": "Stanton number calculation St 0.0012 governed sensible heat flux transfer.", "entities": [], "numbers": ["0.0012"], "domain": "meteorology"}
+{"text": "Dalton number determination Da 0.0015 regulated latent heat flux magnitude.", "entities": [], "numbers": ["0.0015"], "domain": "meteorology"}
+{"text": "Rayleigh number parameter Ra 2.8 x 10⁹ dominated convective instability.", "entities": [], "numbers": ["2.8 x 10⁹"], "domain": "meteorology"}
+{"text": "Froude number Fr 0.34 quantified inertia buoyancy wave interaction strength.", "entities": [], "numbers": ["0.34"], "domain": "meteorology"}
+{"text": "Richardson number Ri 0.18 calculated wind shear buoyancy balance ratio.", "entities": [], "numbers": ["0.18"], "domain": "meteorology"}
+{"text": "Gradient Richardson number Rig 0.24 assessed shear-driven instability potential.", "entities": [], "numbers": ["0.24"], "domain": "meteorology"}
+{"text": "Bulk Richardson number BRN 0.42 predicted convection organization likelihood.", "entities": [], "numbers": ["0.42"], "domain": "meteorology"}
+{"text": "Crispness index CI 2.4 m/s quantified wind speed variability magnitude.", "entities": [], "numbers": ["2.4 m/s"], "domain": "meteorology"}
+{"text": "Energy efficiency ratio EER 1.8 measured power generation from wind resource.", "entities": [], "numbers": ["1.8"], "domain": "meteorology"}
+{"text": "Power law exponent alpha 0.28 characterized wind profile vertical variation.", "entities": [], "numbers": ["0.28"], "domain": "meteorology"}
+{"text": "Log-profile curvature estimated 1.2 m/s per logarithmic height decade.", "entities": [], "numbers": ["1.2 m/s"], "domain": "meteorology"}
+{"text": "Potential wind energy density 485 W/m² computed at 80 meter hub height.", "entities": [], "numbers": ["485 W/m²", "80 meter"], "domain": "meteorology"}
+{"text": "Theoretical power curve maximum 3.2 megawatts rated capacity turbine at 15 m/s.", "entities": [], "numbers": ["3.2 megawatts", "15 m/s"], "domain": "meteorology"}
+{"text": "Cut-in wind speed threshold 3.5 m/s minimum required power generation initiation.", "entities": [], "numbers": ["3.5 m/s"], "domain": "meteorology"}
+{"text": "Rated wind speed 12.8 m/s maximum efficiency operational envelope defined.", "entities": [], "numbers": ["12.8 m/s"], "domain": "meteorology"}
+{"text": "Cut-out wind speed 25.4 m/s safety threshold activated shutdown procedures.", "entities": [], "numbers": ["25.4 m/s"], "domain": "meteorology"}
+{"text": "Capacity factor projection 0.38 annual energy yield calculation baseline.", "entities": [], "numbers": ["0.38"], "domain": "meteorology"}
+{"text": "Wind rose quadrant analysis showed 42 percent northeast, 28 percent southeast frequency.", "entities": [], "numbers": ["42 percent", "28 percent"], "domain": "meteorology"}
+{"text": "Directional wind bias exhibited 12 degree clockwise rotation diurnal cycle.", "entities": [], "numbers": ["12 degree"], "domain": "meteorology"}
+{"text": "Speed-up factor topographic amplification 1.34 calculated ridge feature.", "entities": [], "numbers": ["1.34"], "domain": "meteorology"}
+{"text": "Wind shadow zone coverage 18 percent downstream complex terrain region.", "entities": [], "numbers": ["18 percent"], "domain": "meteorology"}
+{"text": "Gust factor peak analysis G-max 1.48 computed design wind load magnitude.", "entities": [], "numbers": ["1.48"], "domain": "meteorology"}
+{"text": "Extreme value analysis 50-year return period wind speed 78.2 m/s estimated.", "entities": [], "numbers": ["50-year", "78.2 m/s"], "domain": "meteorology"}
+{"text": "Three-second gust quantile 1-in-50-year probability 68.4 km/h threshold defined.", "entities": [], "numbers": ["1-in-50-year", "68.4 km/h"], "domain": "meteorology"}
+{"text": "Mean annual speed temporal coefficient 0.92 consistency metric yearly comparison.", "entities": [], "numbers": ["0.92"], "domain": "meteorology"}
+{"text": "Weibull shape parameter k 1.8 characterized wind speed probability distribution.", "entities": [], "numbers": ["1.8"], "domain": "meteorology"}
+{"text": "Weibull scale parameter c 9.6 m/s dominated frequency probability shape.", "entities": [], "numbers": ["9.6 m/s"], "domain": "meteorology"}
+{"text": "Mode speed calculation 6.2 m/s represented most frequent wind occurrence.", "entities": [], "numbers": ["6.2 m/s"], "domain": "meteorology"}
+{"text": "Median speed quartile 7.8 m/s bisected cumulative probability distribution.", "entities": [], "numbers": ["7.8 m/s"], "domain": "meteorology"}
+{"text": "Kurtosis parameter 2.4 measured extreme deviation tail probability weighting.", "entities": [], "numbers": ["2.4"], "domain": "meteorology"}
+{"text": "Skewness coefficient 1.2 indicated right-skewed positive asymmetric distribution.", "entities": [], "numbers": ["1.2"], "domain": "meteorology"}
+{"text": "Entropy parameter H 1.84 bits characterized wind speed information content.", "entities": [], "numbers": ["1.84 bits"], "domain": "meteorology"}
+{"text": "Recurrence interval calculation 8.3 years estimated extreme event repetition.", "entities": [], "numbers": ["8.3 years"], "domain": "meteorology"}
+{"text": "Annual exceedance probability AEP 0.12 predicted threshold crossing likelihood.", "entities": [], "numbers": ["0.12"], "domain": "meteorology"}
+{"text": "Conditional probability computation 0.68 subsequent event dependence parameter.", "entities": [], "numbers": ["0.68"], "domain": "meteorology"}
+{"text": "Persistence timescale 72 hours indicated autocorrelation decay characteristic.", "entities": [], "numbers": ["72 hours"], "domain": "meteorology"}
+{"text": "Clustering parameter C 0.24 quantified temporal concentration phenomenon extent.", "entities": [], "numbers": ["0.24"], "domain": "meteorology"}
+{"text": "Null hypothesis significance p-value 0.042 rejected distribution assumption.", "entities": [], "numbers": ["0.042"], "domain": "meteorology"}
+{"text": "Confidence interval 95 percent span 6.8 to 8.2 m/s mean wind estimate.", "entities": [], "numbers": ["95 percent", "6.8 m/s", "8.2 m/s"], "domain": "meteorology"}
+{"text": "Degrees of freedom adjustment 487 effective samples reduced by autocorrelation.", "entities": [], "numbers": ["487"], "domain": "meteorology"}
+{"text": "Bias correction factor 1.08 applied instrument systematic error compensation.", "entities": [], "numbers": ["1.08"], "domain": "meteorology"}
+{"text": "Uncertainty quantification range +/- 2.1 percent specified measurement accuracy.", "entities": [], "numbers": ["+/- 2.1 percent"], "domain": "meteorology"}
+{"text": "Measurement resolution 0.1 m/s digital sampling discretization limit.", "entities": [], "numbers": ["0.1 m/s"], "domain": "meteorology"}
+{"text": "Sensor frequency response 10 Hz bandwidth determined dynamic measurement capability.", "entities": [], "numbers": ["10 Hz"], "domain": "meteorology"}
+{"text": "Data quality flag 12 percent suspicious records flagged post-processing.", "entities": [], "numbers": ["12 percent"], "domain": "meteorology"}
+{"text": "Missing data fraction 2.3 percent interpolated gap-filling procedure applied.", "entities": [], "numbers": ["2.3 percent"], "domain": "meteorology"}
+{"text": "Homogeneity test SNHT statistic 4.8 detected changepoint discontinuity signal.", "entities": [], "numbers": ["4.8"], "domain": "meteorology"}
+{"text": "Trend analysis slope 0.042 m/s per year revealed long-term acceleration.", "entities": [], "numbers": ["0.042 m/s per year"], "domain": "meteorology"}
+{"text": "Regression coefficient R² 0.84 indicated strong correlation predictor relationship.", "entities": [], "numbers": ["0.84"], "domain": "meteorology"}
+{"text": "Root mean square error RMSE 0.58 m/s quantified forecast prediction accuracy.", "entities": [], "numbers": ["0.58 m/s"], "domain": "meteorology"}
+{"text": "Mean absolute error MAE 0.42 m/s evaluated model performance benchmark.", "entities": [], "numbers": ["0.42 m/s"], "domain": "meteorology"}
+{"text": "Nash-Sutcliffe efficiency NSE 0.72 assessed hydrological simulation skill metric.", "entities": [], "numbers": ["0.72"], "domain": "meteorology"}
+{"text": "Symmetric mean absolute percentage error SMAPE 8.6 percent normalized accuracy measure.", "entities": [], "numbers": ["8.6 percent"], "domain": "meteorology"}
+{"text": "Heidke skill score HSS 0.58 evaluated categorical prediction performance.", "entities": [], "numbers": ["0.58"], "domain": "meteorology"}
+{"text": "Receiver operating characteristic ROC area 0.82 measured binary classifier discrimination.", "entities": [], "numbers": ["0.82"], "domain": "meteorology"}
+{"text": "Probability of detection POD 0.76 fraction detected events positive predictive.", "entities": [], "numbers": ["0.76"], "domain": "meteorology"}
+{"text": "False alarm ratio FAR 0.18 erroneous forecast fraction negative predictive.", "entities": [], "numbers": ["0.18"], "domain": "meteorology"}
+{"text": "Critical success index CSI 0.62 contingency statistic event forecast accuracy.", "entities": [], "numbers": ["0.62"], "domain": "meteorology"}
+{"text": "Equitable threat score ETS 0.58 bias-adjusted forecast skill evaluation.", "entities": [], "numbers": ["0.58"], "domain": "meteorology"}
+{"text": "Hanssen-Kuipers discriminant HK 0.64 discrimination measure predictive ability.", "entities": [], "numbers": ["0.64"], "domain": "meteorology"}
+{"text": "Gilbert skill score GSS 0.52 alternatives skill contingency statistic.", "entities": [], "numbers": ["0.52"], "domain": "meteorology"}
+{"text": "Yule's Q 0.74 quantified association measure categorical relationship strength.", "entities": [], "numbers": ["0.74"], "domain": "meteorology"}
+{"text": "Odds ratio calculation 12.8 indicated relative risk event association magnitude.", "entities": [], "numbers": ["12.8"], "domain": "meteorology"}
+{"text": "Relative risk ratio 3.2 compared event probability exposed versus unexposed.", "entities": [], "numbers": ["3.2"], "domain": "meteorology"}
+{"text": "Attributable risk fraction 0.68 percentage population exposure event contribution.", "entities": [], "numbers": ["0.68"], "domain": "meteorology"}
+{"text": "Number needed harm NNH 4.8 persons required treat adverse event prevention.", "entities": [], "numbers": ["4.8"], "domain": "meteorology"}
+{"text": "Population attributable fraction PAF 0.52 population-level exposure risk contribution.", "entities": [], "numbers": ["0.52"], "domain": "meteorology"}
+{"text": "Standardized mortality ratio SMR 1.28 observed versus expected death count.", "entities": [], "numbers": ["1.28"], "domain": "meteorology"}
+{"text": "Case fatality rate CFR 0.042 deceased patients infected proportion calculation.", "entities": [], "numbers": ["0.042"], "domain": "meteorology"}
+{"text": "Incidence rate IR 2.4 cases per thousand person-years frequency measure.", "entities": [], "numbers": ["2.4 cases per thousand person-years"], "domain": "meteorology"}
+{"text": "Prevalence proportion P 0.084 existing cases population fraction baseline.", "entities": [], "numbers": ["0.084"], "domain": "meteorology"}
+{"text": "Person-time at risk PY 1240 thousand person-years observation period denominator.", "entities": [], "numbers": ["1240 thousand person-years"], "domain": "meteorology"}
+{"text": "Follow-up duration range 2.4 years median observation period participants.", "entities": [], "numbers": ["2.4 years"], "domain": "meteorology"}
+{"text": "Attrition rate 8.2 percent participant loss study period completion.", "entities": [], "numbers": ["8.2 percent"], "domain": "meteorology"}
+{"text": "Compliance adherence rate 0.78 protocol adherence patient medication administration.", "entities": [], "numbers": ["0.78"], "domain": "meteorology"}
+{"text": "Dropout frequency 12 participants withdrawal analysis exclusion reasons.", "entities": [], "numbers": ["12 participants"], "domain": "meteorology"}
+{"text": "Crossover violation count 8 protocol deviation documented consent forms.", "entities": [], "numbers": ["8"], "domain": "meteorology"}
+{"text": "Data entry error frequency 3.2 percent transcription mistakes detection.", "entities": [], "numbers": ["3.2 percent"], "domain": "meteorology"}
+{"text": "Range check exception 5 anomalous values flagged physiologically implausible.", "entities": [], "numbers": ["5"], "domain": "meteorology"}
+{"text": "Outlier detection 2 standard deviation threshold sensitivity analysis.", "entities": [], "numbers": ["2 standard deviation"], "domain": "meteorology"}
+{"text": "Leverage point diagnosis 0.28 influential observation regression hat matrix.", "entities": [], "numbers": ["0.28"], "domain": "meteorology"}
+{"text": "Studentized residual |t| 2.8 exceeded hypothesis testing critical value.", "entities": [], "numbers": ["2.8"], "domain": "meteorology"}
+{"text": "Durbin-Watson DW statistic 1.8 assessed autocorrelation model residuals.", "entities": [], "numbers": ["1.8"], "domain": "meteorology"}
+{"text": "Variance inflation factor VIF 3.4 multicollinearity detection predictor assessment.", "entities": [], "numbers": ["3.4"], "domain": "meteorology"}
+{"text": "Condition number kappa 286 numerical stability matrix assessment.", "entities": [], "numbers": ["286"], "domain": "meteorology"}
+{"text": "Determinant value 0.0042 singularity diagnosis matrix rank evaluation.", "entities": [], "numbers": ["0.0042"], "domain": "meteorology"}
+{"text": "Eigenvalue ordering lambda1 12.8, lambda2 3.2 characterization principal components.", "entities": [], "numbers": ["lambda1 12.8", "lambda2 3.2"], "domain": "meteorology"}
+{"text": "Cumulative explained variance 0.87 eight components information retention.", "entities": [], "numbers": ["0.87", "eight components"], "domain": "meteorology"}
+{"text": "Scree plot elbow point 4 factors retention recommendation dimension reduction.", "entities": [], "numbers": ["4 factors"], "domain": "meteorology"}
+{"text": "Kaiser criterion eigenvalue 1.2 factor extraction threshold determination.", "entities": [], "numbers": ["1.2"], "domain": "meteorology"}
+{"text": "Total variance explained 0.72 42 variables fourteen component model.", "entities": [], "numbers": ["0.72", "42 variables", "fourteen component"], "domain": "meteorology"}
+{"text": "Stratocumulus deck coverage 94 percent dominated afternoon sky over Basin Ridge.", "entities": ["Basin Ridge"], "numbers": ["94 percent"], "domain": "meteorology"}
+{"text": "Cumulonimbus anvil spread 180 kilometers latitude-longitude detected satellite.", "entities": [], "numbers": ["180 kilometers"], "domain": "meteorology"}
+{"text": "Cloud optical depth 3.2 aerosol attenuation factor backscatter measurement.", "entities": [], "numbers": ["3.2"], "domain": "meteorology"}
+{"text": "Cirrus cloud altitude 11800 meters ice crystal precipitation type detected.", "entities": [], "numbers": ["11800 meters"], "domain": "meteorology"}
+{"text": "Altocumulus cloudlet spacing 2.4 kilometers organized convective structure pattern.", "entities": [], "numbers": ["2.4 kilometers"], "domain": "meteorology"}
+{"text": "Cumulus updraft velocity 4.8 m/s estimated cloud development growth rate.", "entities": [], "numbers": ["4.8 m/s"], "domain": "meteorology"}
+{"text": "Stratus layer thickness 380 meters uniform fog deck marine boundary.", "entities": [], "numbers": ["380 meters"], "domain": "meteorology"}
+{"text": "Radiation fog formation hour 04:30 local time minimum surface temperature.", "entities": [], "numbers": ["04:30 local time"], "domain": "meteorology"}
+{"text": "Advection fog advection speed 8.6 m/s warm air mass inland transport.", "entities": [], "numbers": ["8.6 m/s"], "domain": "meteorology"}
+{"text": "Orographic lifting component 2.1 m/s elevation-induced vertical motion.", "entities": [], "numbers": ["2.1 m/s"], "domain": "meteorology"}
+{"text": "Convergence line intensity 3.8 x 10⁻⁵ s⁻¹ boundary layer deformation rate.", "entities": [], "numbers": ["3.8 x 10⁻⁵ s⁻¹"], "domain": "meteorology"}
+{"text": "Jet maximum altitude 8400 meters position upper-level flow acceleration.", "entities": [], "numbers": ["8400 meters"], "domain": "meteorology"}
+{"text": "Wind maximum shear 18 knots altitude jump 3800 to 5200 meters.", "entities": [], "numbers": ["18 knots", "3800 meters", "5200 meters"], "domain": "meteorology"}
+{"text": "Nocturnal boundary layer depth 240 meters stable layer formation.", "entities": [], "numbers": ["240 meters"], "domain": "meteorology"}
+{"text": "Sea breeze front velocity 3.2 m/s inland propagation maritime influence.", "entities": [], "numbers": ["3.2 m/s"], "domain": "meteorology"}
+{"text": "Lake effect enhancement factor 1.67 precipitation amplification downwind.", "entities": [], "numbers": ["1.67"], "domain": "meteorology"}
+{"text": "Dry slot intrusion moisture decrease 8.2 g/kg air mass modification.", "entities": [], "numbers": ["8.2 g/kg"], "domain": "meteorology"}
+{"text": "Virga base level 1800 meters precipitation evaporation height.", "entities": [], "numbers": ["1800 meters"], "domain": "meteorology"}
+{"text": "Clear air turbulence intensity 0.28 eddy dissipation rate parameter.", "entities": [], "numbers": ["0.28"], "domain": "meteorology"}
+{"text": "Atmospheric stability parameter Brunt-Väisälä frequency 0.0125 s⁻¹.", "entities": [], "numbers": ["0.0125 s⁻¹"], "domain": "meteorology"}
+{"text": "Geostrophic wind component 28.4 m/s latitude 42°N calculation.", "entities": [], "numbers": ["28.4 m/s", "42°N"], "domain": "meteorology"}
+{"text": "Ageostrophic wind magnitude 4.8 m/s imbalance pressure wind.","entities": [], "numbers": ["4.8 m/s"], "domain": "meteorology"}
+{"text": "Gradient wind curvature radius 540 kilometers circular flow magnitude.", "entities": [], "numbers": ["540 kilometers"], "domain": "meteorology"}
+{"text": "Inertial circle period 16.4 hours latitude 48°N time scale.", "entities": [], "numbers": ["16.4 hours", "48°N"], "domain": "meteorology"}
+{"text": "Ekman spiral depth parameter 85 meters e-folding scale.", "entities": [], "numbers": ["85 meters"], "domain": "meteorology"}
+{"text": "Storm surge amplitude 2.8 meters Atlantic cyclone coastal impact.", "entities": [], "numbers": ["2.8 meters"], "domain": "meteorology"}

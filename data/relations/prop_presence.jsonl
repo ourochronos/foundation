@@ -1,0 +1,119 @@
+{"relation": "presence_absence", "x": "The rust converter contains iron oxide particles.", "y": "The rust converter lacks any iron oxide particles."}
+{"relation": "presence_absence", "x": "This cheese includes lactose in its composition.", "y": "This cheese excludes lactose from its composition."}
+{"relation": "presence_absence", "x": "The kernel module contains debug symbols.", "y": "The kernel module lacks debug symbols entirely."}
+{"relation": "presence_absence", "x": "The vaccine includes inactivated viral components.", "y": "The vaccine excludes inactivated viral components."}
+{"relation": "presence_absence", "x": "The titanium alloy contains 5% aluminum by weight.", "y": "The titanium alloy contains no aluminum by weight."}
+{"relation": "presence_absence", "x": "The facade has decorative stone elements.", "y": "The facade has no decorative stone elements."}
+{"relation": "presence_absence", "x": "This fabric contains synthetic fibers.", "y": "This fabric contains no synthetic fibers."}
+{"relation": "presence_absence", "x": "The Burgundy has tannins in its structure.", "y": "The Burgundy lacks tannins in its structure."}
+{"relation": "presence_absence", "x": "The battery includes a protective circuit.", "y": "The battery lacks a protective circuit."}
+{"relation": "presence_absence", "x": "The manuscript has footnotes on every page.", "y": "The manuscript has no footnotes on any page."}
+{"relation": "presence_absence", "x": "The soil contains phosphorus and potassium.", "y": "The soil lacks phosphorus and potassium."}
+{"relation": "presence_absence", "x": "This paint includes UV-resistant additives.", "y": "This paint excludes UV-resistant additives."}
+{"relation": "presence_absence", "x": "The circuit board has solder joints throughout.", "y": "The circuit board has no solder joints."}
+{"relation": "presence_absence", "x": "The statute contains a severability clause.", "y": "The statute lacks a severability clause."}
+{"relation": "presence_absence", "x": "The hybrid engine includes an electric motor.", "y": "The hybrid engine excludes an electric motor."}
+{"relation": "presence_absence", "x": "This polymer has cross-linked chains.", "y": "This polymer has no cross-linked chains."}
+{"relation": "presence_absence", "x": "The report contains demographic data.", "y": "The report lacks demographic data entirely."}
+{"relation": "presence_absence", "x": "The organism includes mitochondria in its cells.", "y": "The organism excludes mitochondria from its cells."}
+{"relation": "presence_absence", "x": "The concrete contains rebar reinforcement.", "y": "The concrete lacks rebar reinforcement."}
+{"relation": "presence_absence", "x": "This dish has sesame oil as an ingredient.", "y": "This dish has no sesame oil as an ingredient."}
+{"relation": "presence_absence", "x": "The database includes encryption at rest.", "y": "The database excludes encryption at rest."}
+{"relation": "presence_absence", "x": "The musical score has dynamic markings.", "y": "The musical score lacks dynamic markings."}
+{"relation": "presence_absence", "x": "This detergent contains phosphate compounds.", "y": "This detergent contains no phosphate compounds."}
+{"relation": "presence_absence", "x": "The solar panel includes anti-reflective coating.", "y": "The solar panel excludes anti-reflective coating."}
+{"relation": "presence_absence", "x": "The water has dissolved salts present.", "y": "The water has no dissolved salts present."}
+{"relation": "presence_absence", "x": "This leather jacket includes a lining.", "y": "This leather jacket excludes a lining."}
+{"relation": "presence_absence", "x": "The compound contains sulfur atoms.", "y": "The compound lacks sulfur atoms."}
+{"relation": "presence_absence", "x": "The building has a basement level.", "y": "The building has no basement level."}
+{"relation": "presence_absence", "x": "This algorithm includes a heuristic optimization.", "y": "This algorithm excludes a heuristic optimization."}
+{"relation": "presence_absence", "x": "The ore contains copper deposits.", "y": "The ore lacks copper deposits."}
+{"relation": "presence_absence", "x": "This recipe has yeast in it.", "y": "This recipe has no yeast in it."}
+{"relation": "presence_absence", "x": "The filter includes activated charcoal.", "y": "The filter excludes activated charcoal."}
+{"relation": "presence_absence", "x": "The fabric has a waterproof coating.", "y": "The fabric lacks a waterproof coating."}
+{"relation": "presence_absence", "x": "This medication contains penicillin.", "y": "This medication contains no penicillin."}
+{"relation": "presence_absence", "x": "The page has a watermark embedded.", "y": "The page has no watermark embedded."}
+{"relation": "presence_absence", "x": "The alloy includes nickel for hardness.", "y": "The alloy excludes nickel for hardness."}
+{"relation": "presence_absence", "x": "This oil has antioxidants present.", "y": "This oil has no antioxidants present."}
+{"relation": "presence_absence", "x": "The substrate contains nitrogen compounds.", "y": "The substrate lacks nitrogen compounds."}
+{"relation": "presence_absence", "x": "This glass includes tempered treatment.", "y": "This glass excludes tempered treatment."}
+{"relation": "presence_absence", "x": "The document has classified sections.", "y": "The document lacks classified sections."}
+{"relation": "presence_absence", "x": "The seismic sensor includes noise filters.", "y": "The seismic sensor excludes noise filters."}
+{"relation": "presence_absence", "x": "This plastic contains BPA molecules.", "y": "This plastic contains no BPA molecules."}
+{"relation": "presence_absence", "x": "The roof has insulation underneath.", "y": "The roof lacks insulation underneath."}
+{"relation": "presence_absence", "x": "The compound has fluorine atoms.", "y": "The compound has no fluorine atoms."}
+{"relation": "presence_absence", "x": "This vaccine includes adjuvants.", "y": "This vaccine excludes adjuvants."}
+{"relation": "presence_absence", "x": "The coffee contains caffeine.", "y": "The coffee lacks caffeine."}
+{"relation": "presence_absence", "x": "This control rod contains boron.", "y": "This control rod contains no boron."}
+{"relation": "presence_absence", "x": "The wall has embedded wiring.", "y": "The wall has no embedded wiring."}
+{"relation": "presence_absence", "x": "This paint includes lead pigments.", "y": "This paint excludes lead pigments."}
+{"relation": "presence_absence", "x": "The semiconductor has dopants present.", "y": "The semiconductor has no dopants present."}
+{"relation": "presence_absence", "x": "This fungicide contains copper sulfate.", "y": "This fungicide contains no copper sulfate."}
+{"relation": "presence_absence", "x": "The battery has a pressure relief valve.", "y": "The battery lacks a pressure relief valve."}
+{"relation": "presence_absence", "x": "This parchment includes animal collagen.", "y": "This parchment excludes animal collagen."}
+{"relation": "presence_absence", "x": "The fuel contains octane boosters.", "y": "The fuel lacks octane boosters."}
+{"relation": "presence_absence", "x": "This polymer has plasticizers added.", "y": "This polymer has no plasticizers added."}
+{"relation": "presence_absence", "x": "The specimen includes a tumor.", "y": "The specimen excludes a tumor."}
+{"relation": "presence_absence", "x": "This tape has adhesive on one side.", "y": "This tape has no adhesive on either side."}
+{"relation": "presence_absence", "x": "The atmosphere contains methane.", "y": "The atmosphere lacks methane entirely."}
+{"relation": "presence_absence", "x": "This insulation includes mineral wool.", "y": "This insulation excludes mineral wool."}
+{"relation": "presence_absence", "x": "The membrane has selective permeability.", "y": "The membrane lacks selective permeability."}
+{"relation": "presence_absence", "x": "This glue contains formaldehyde.", "y": "This glue contains no formaldehyde."}
+{"relation": "presence_absence", "x": "The sample has radioactive isotopes.", "y": "The sample has no radioactive isotopes."}
+{"relation": "presence_absence", "x": "This composite has reinforcing fibers.", "y": "This composite has no reinforcing fibers."}
+{"relation": "presence_absence", "x": "The protein includes disulfide bonds.", "y": "The protein excludes disulfide bonds."}
+{"relation": "presence_absence", "x": "This clay contains silica minerals.", "y": "This clay lacks silica minerals."}
+{"relation": "presence_absence", "x": "The membrane has pores in it.", "y": "The membrane has no pores in it."}
+{"relation": "presence_absence", "x": "This polymer includes crystalline regions.", "y": "This polymer excludes crystalline regions."}
+{"relation": "presence_absence", "x": "The sample contains trace metals.", "y": "The sample lacks trace metals."}
+{"relation": "presence_absence", "x": "This cement has expansive properties.", "y": "This cement lacks expansive properties."}
+{"relation": "presence_absence", "x": "The crystal has lattice defects.", "y": "The crystal has no lattice defects."}
+{"relation": "presence_absence", "x": "This leather includes tannin treatment.", "y": "This leather excludes tannin treatment."}
+{"relation": "presence_absence", "x": "The reagent contains a catalyst.", "y": "The reagent lacks a catalyst."}
+{"relation": "presence_absence", "x": "This compound has hydrogen bonding.", "y": "This compound has no hydrogen bonding."}
+{"relation": "presence_absence", "x": "The solution includes suspended particles.", "y": "The solution excludes suspended particles."}
+{"relation": "presence_absence", "x": "This sand contains microplastics.", "y": "This sand contains no microplastics."}
+{"relation": "presence_absence", "x": "The surface has microscopic ridges.", "y": "The surface has no microscopic ridges."}
+{"relation": "presence_absence", "x": "This oil includes polyphenols.", "y": "This oil excludes polyphenols."}
+{"relation": "presence_absence", "x": "The structure contains load-bearing walls.", "y": "The structure lacks load-bearing walls."}
+{"relation": "presence_absence", "x": "This paint has antimicrobial additives.", "y": "This paint has no antimicrobial additives."}
+{"relation": "presence_absence", "x": "The circuit has a feedback loop.", "y": "The circuit has no feedback loop."}
+{"relation": "presence_absence", "x": "This cement includes air entrainment.", "y": "This cement excludes air entrainment."}
+{"relation": "presence_absence", "x": "The mineral contains iron oxide.", "y": "The mineral lacks iron oxide entirely."}
+{"relation": "presence_absence", "x": "This alloy has corrosion resistance.", "y": "This alloy lacks corrosion resistance."}
+{"relation": "presence_absence", "x": "The liquid includes dissolved oxygen.", "y": "The liquid excludes dissolved oxygen."}
+{"relation": "presence_absence", "x": "This adhesive contains solvent.", "y": "This adhesive contains no solvent."}
+{"relation": "presence_absence", "x": "The pigment has light-fastness properties.", "y": "The pigment lacks light-fastness properties."}
+{"relation": "presence_absence", "x": "This substrate includes biofilm.", "y": "This substrate excludes biofilm."}
+{"relation": "presence_absence", "x": "The sample contains rare earth elements.", "y": "The sample lacks rare earth elements."}
+{"relation": "presence_absence", "x": "This coating has oleophobic properties.", "y": "This coating has no oleophobic properties."}
+{"relation": "presence_absence", "x": "The compound includes aromatic rings.", "y": "The compound excludes aromatic rings."}
+{"relation": "presence_absence", "x": "This matrix contains reinforcement particles.", "y": "This matrix lacks reinforcement particles."}
+{"relation": "presence_absence", "x": "The artifact has patina accumulation.", "y": "The artifact has no patina accumulation."}
+{"relation": "presence_absence", "x": "This formulation includes chelating agents.", "y": "This formulation excludes chelating agents."}
+{"relation": "presence_absence", "x": "The surface contains oxide layer.", "y": "The surface lacks oxide layer entirely."}
+{"relation": "presence_absence", "x": "This resin has flame-retardant treatment.", "y": "This resin lacks flame-retardant treatment."}
+{"relation": "presence_absence", "x": "The mixture includes emulsifier.", "y": "The mixture excludes emulsifier."}
+{"relation": "presence_absence", "x": "This fiber contains lignin.", "y": "This fiber contains no lignin."}
+{"relation": "presence_absence", "x": "The catalyst has active sites.", "y": "The catalyst has no active sites."}
+{"relation": "presence_absence", "x": "This material includes additives.", "y": "This material excludes additives."}
+{"relation": "presence_absence", "x": "The product contains preservatives.", "y": "The product lacks preservatives entirely."}
+{"relation": "presence_absence", "x": "This substrate has reactive functional groups.", "y": "This substrate has no reactive functional groups."}
+{"relation": "presence_absence", "x": "The textile includes waterproof membrane.", "y": "The textile excludes waterproof membrane."}
+{"relation": "presence_absence", "x": "This alloy contains manganese.", "y": "This alloy contains no manganese."}
+{"relation": "presence_absence", "x": "The document has metadata embedded.", "y": "The document lacks metadata embedded."}
+{"relation": "presence_absence", "x": "This insulation includes fiberglass.", "y": "This insulation excludes fiberglass."}
+{"relation": "presence_absence", "x": "The ore contains gold deposits.", "y": "The ore lacks gold deposits entirely."}
+{"relation": "presence_absence", "x": "This battery has thermal fuses.", "y": "This battery has no thermal fuses."}
+{"relation": "presence_absence", "x": "The compound includes carbon chains.", "y": "The compound excludes carbon chains."}
+{"relation": "presence_absence", "x": "This foam has flame retardants.", "y": "This foam has no flame retardants."}
+{"relation": "presence_absence", "x": "The surface contains microscopic cracks.", "y": "The surface lacks microscopic cracks."}
+{"relation": "presence_absence", "x": "This sealant includes silicone.", "y": "This sealant excludes silicone."}
+{"relation": "presence_absence", "x": "The artifact has crystalline structure.", "y": "The artifact lacks crystalline structure."}
+{"relation": "presence_absence", "x": "This coating contains zinc particles.", "y": "This coating contains no zinc particles."}
+{"relation": "presence_absence", "x": "The board has conductive traces.", "y": "The board has no conductive traces."}
+{"relation": "presence_absence", "x": "This polymer includes crosslinks.", "y": "This polymer excludes crosslinks."}
+{"relation": "presence_absence", "x": "The soil has organic matter.", "y": "The soil has no organic matter."}
+{"relation": "presence_absence", "x": "This formula contains binders.", "y": "This formula contains no binders."}
+{"relation": "presence_absence", "x": "The structure includes ventilation.", "y": "The structure excludes ventilation."}
+{"relation": "presence_absence", "x": "This seal has elasticity.", "y": "This seal has no elasticity."}

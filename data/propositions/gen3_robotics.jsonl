@@ -1,0 +1,262 @@
+{"text": "ABB IRB 6700 achieves 1.45 m/s speed with 85 kg payload across 6 axes in automotive assembly.", "entities": ["ABB IRB 6700", "6 axes", "automotive assembly"], "numbers": ["1.45 m/s", "85 kg"], "domain": "robotics"}
+{"text": "FANUC M-10iD performs 2.3 second cycle time on 8 kg parts with ±0.03 mm repeatability.", "entities": ["FANUC M-10iD", "±0.03 mm repeatability"], "numbers": ["2.3 second", "8 kg"], "domain": "robotics"}
+{"text": "Yaskawa Motoman HC10DTP handles 10 kg payload at 3.4 m/s for rapid precision welding.", "entities": ["Yaskawa Motoman HC10DTP", "precision welding"], "numbers": ["10 kg", "3.4 m/s"], "domain": "robotics"}
+{"text": "KUKA KR 150 R3200 industrial robot operates 4 axes with 150 kg capacity in heavy palletizing.", "entities": ["KUKA KR 150 R3200", "heavy palletizing"], "numbers": ["4 axes", "150 kg"], "domain": "robotics"}
+{"text": "Stäubli TX2-HE performs injection molding with 2.1 second cycle on 25 kg payloads, 6-axis motion.", "entities": ["Stäubli TX2-HE", "injection molding"], "numbers": ["2.1 second", "25 kg", "6-axis"], "domain": "robotics"}
+{"text": "Universal Robots UR10e achieves 1300 mm reach, 10 kg payload, 0.1 mm accuracy in collaborative assembly.", "entities": ["Universal Robots UR10e", "collaborative assembly"], "numbers": ["1300 mm", "10 kg", "0.1 mm"], "domain": "robotics"}
+{"text": "Delta robot XYZ places 200 components per minute with 0.5 kg part mass, ±0.1 mm error.", "entities": ["Delta robot", "components per minute"], "numbers": ["200", "0.5 kg", "±0.1 mm"], "domain": "robotics"}
+{"text": "Epson T3 SCARA robot cycles 0.68 seconds on 3 kg loads with 100 mm vertical stroke precision.", "entities": ["Epson T3 SCARA", "100 mm"], "numbers": ["0.68 seconds", "3 kg"], "domain": "robotics"}
+{"text": "Kawasaki JS series operates 6 DOF with 32 kg capacity, 2100 mm reach in electronics assembly lines.", "entities": ["Kawasaki JS series", "6 DOF", "electronics assembly"], "numbers": ["32 kg", "2100 mm"], "domain": "robotics"}
+{"text": "ABB FlexPicker processes 1200 picks per hour on 0.5 kg items maintaining ±0.2 mm consistency.", "entities": ["ABB FlexPicker", "picks per hour"], "numbers": ["1200", "0.5 kg", "±0.2 mm"], "domain": "robotics"}
+{"text": "Nachi MR20 delivers 1.9 second cycle time, 20 kg payload, across 6 articulated axes.", "entities": ["Nachi MR20", "6 articulated axes"], "numbers": ["1.9 second", "20 kg"], "domain": "robotics"}
+{"text": "Mitsubishi Melfa RV-7F offers 0.15 sec/axis acceleration with 7 kg payload in high-speed pick operations.", "entities": ["Mitsubishi Melfa RV-7F"], "numbers": ["0.15 sec/axis", "7 kg"], "domain": "robotics"}
+{"text": "CLECO assembly cell integrates 4 robots, each handling 50 kg, producing 400 units daily.", "entities": ["CLECO assembly cell"], "numbers": ["4 robots", "50 kg", "400 units"], "domain": "robotics"}
+{"text": "Welding robot ABB IRB 4400 operates with 60 kg payload at 2.5 m/s on automotive frames.", "entities": ["ABB IRB 4400", "automotive frames"], "numbers": ["60 kg", "2.5 m/s"], "domain": "robotics"}
+{"text": "FANUC M-900iA/260 handles 260 kg payloads with ±0.05 mm repeatability in die casting applications.", "entities": ["FANUC M-900iA/260", "die casting"], "numbers": ["260 kg", "±0.05 mm"], "domain": "robotics"}
+{"text": "Comau RACER-5-1.45 achieves 1.45 m/s peak speed on 5 kg parts, 6-axis configuration.", "entities": ["Comau RACER-5-1.45"], "numbers": ["1.45 m/s", "5 kg"], "domain": "robotics"}
+{"text": "Adept Viper s1700 processes 2000 planar points hourly with 1.7 kg payload precision.", "entities": ["Adept Viper s1700"], "numbers": ["2000", "1.7 kg"], "domain": "robotics"}
+{"text": "RoboDK simulation optimizes 3-axis CNC paths reducing cycle time 18% on average.", "entities": ["RoboDK simulation", "3-axis CNC"], "numbers": ["18%"], "domain": "robotics"}
+{"text": "Cobots from Techman Robot execute tasks at 0.5 m/s with 5 kg payload capacity.", "entities": ["Techman Robot", "Cobots"], "numbers": ["0.5 m/s", "5 kg"], "domain": "robotics"}
+{"text": "Omron TM12 cobot achieves 1200 mm reach, 12 kg capacity, with IP54 environmental rating.", "entities": ["Omron TM12", "IP54"], "numbers": ["1200 mm", "12 kg"], "domain": "robotics"}
+{"text": "Motoman SV3 palletizing robot lifts 300 kg per cycle in 1.8 seconds across warehouse cells.", "entities": ["Motoman SV3", "palletizing", "warehouse"], "numbers": ["300 kg", "1.8 seconds"], "domain": "robotics"}
+{"text": "KUKA KR 240-2 processes 2400 N force with 240 kg payload on 2700 mm reach arm.", "entities": ["KUKA KR 240-2"], "numbers": ["2400 N", "240 kg", "2700 mm"], "domain": "robotics"}
+{"text": "Fanuc CRX-10iA cobot operates continuously 8 hours with 10 kg load, ±0.08 mm accuracy.", "entities": ["Fanuc CRX-10iA", "cobot"], "numbers": ["8 hours", "10 kg", "±0.08 mm"], "domain": "robotics"}
+{"text": "Tesla Gigafactory lines employ 150 welding robots performing 8 welds per minute each.", "entities": ["Tesla Gigafactory", "welding robots"], "numbers": ["150", "8 welds per minute"], "domain": "robotics"}
+{"text": "Gantry robot system spans 15 meters, transporting 500 kg loads between 4 workstations.", "entities": ["Gantry robot system"], "numbers": ["15 meters", "500 kg", "4 workstations"], "domain": "robotics"}
+{"text": "Six-axis painting robot covers 120 m² per hour with 0.15 mm film thickness consistency.", "entities": ["painting robot", "Six-axis"], "numbers": ["120 m²", "0.15 mm"], "domain": "robotics"}
+{"text": "Mobile manipulator MiR600 transports 600 kg while executing 3-DOF arm motions.", "entities": ["MiR600", "Mobile manipulator", "3-DOF"], "numbers": ["600 kg"], "domain": "robotics"}
+{"text": "Delta pick-and-place system processes 500 components hourly from tray to packaging.", "entities": ["Delta pick-and-place", "packaging"], "numbers": ["500"], "domain": "robotics"}
+{"text": "Roboworx assembly platform integrates 12 robots, 24 vision cameras for defect detection.", "entities": ["Roboworx assembly platform"], "numbers": ["12 robots", "24 vision cameras"], "domain": "robotics"}
+{"text": "Linear actuator module provides 1000 mm travel distance at 500 mm/s velocity.", "entities": ["Linear actuator module"], "numbers": ["1000 mm", "500 mm/s"], "domain": "robotics"}
+{"text": "Hyundai HH050L industrial robot performs 50 kg lifting with 2100 mm horizontal reach.", "entities": ["Hyundai HH050L"], "numbers": ["50 kg", "2100 mm"], "domain": "robotics"}
+{"text": "Denso RC3 executes 3-axis motion at 1.5 m/s with 3 kg max payload capacity.", "entities": ["Denso RC3", "3-axis"], "numbers": ["1.5 m/s", "3 kg"], "domain": "robotics"}
+{"text": "Track robot follows 2.5 km/h speed along 100 meter factory floor rail infrastructure.", "entities": ["Track robot"], "numbers": ["2.5 km/h", "100 meter"], "domain": "robotics"}
+{"text": "OTC Daihen welding arc operates at 500A current with 2.4 mm wire feed diameter.", "entities": ["OTC Daihen", "welding arc"], "numbers": ["500A", "2.4 mm"], "domain": "robotics"}
+{"text": "Gripper mechanism achieves 95% successful part grasp rate on 2-8 gram components.", "entities": ["Gripper mechanism"], "numbers": ["95%", "2-8 gram"], "domain": "robotics"}
+{"text": "Vision-guided assembly corrects part placement within 0.5 mm of target position.", "entities": ["Vision-guided assembly"], "numbers": ["0.5 mm"], "domain": "robotics"}
+{"text": "Submerged arc welding robot operates 1200 A current at 400-600 mm/min travel speed.", "entities": ["Submerged arc welding", "Welding robot"], "numbers": ["1200 A", "400-600 mm/min"], "domain": "robotics"}
+{"text": "SwissLog automation moves 3000 kg pallets through 8 warehouse levels daily.", "entities": ["SwissLog automation", "warehouse"], "numbers": ["3000 kg", "8 levels"], "domain": "robotics"}
+{"text": "Spot-welder press exerts 150 kN force over 8 mm nugget diameter.", "entities": ["Spot-welder press"], "numbers": ["150 kN", "8 mm"], "domain": "robotics"}
+{"text": "Pneumatic end-effector grip cycles 0.3 seconds per open-close operation with 4 kg grip force.", "entities": ["Pneumatic end-effector", "grip force"], "numbers": ["0.3 seconds", "4 kg"], "domain": "robotics"}
+{"text": "Robotic deburring tool removes 0.5-1.0 mm material layer at 500 RPM spindle speed.", "entities": ["Robotic deburring tool"], "numbers": ["0.5-1.0 mm", "500 RPM"], "domain": "robotics"}
+{"text": "Autonomous floor cleaning robot covers 2000 m² per shift on rechargeable battery.", "entities": ["Autonomous floor cleaning robot", "rechargeable battery"], "numbers": ["2000 m²"], "domain": "robotics"}
+{"text": "Spray coating robot applies 200 micron layer thickness uniformly across car body panels.", "entities": ["Spray coating robot", "car body panels"], "numbers": ["200 micron"], "domain": "robotics"}
+{"text": "Thermal stress testing chamber cycles ±150 degrees Celsius across 48-hour endurance runs.", "entities": ["Thermal stress testing chamber"], "numbers": ["±150 degrees", "48-hour"], "domain": "robotics"}
+{"text": "Collaborative humanoid performs 18 kg load manipulation within 1.2 meter interaction radius.", "entities": ["humanoid", "Collaborative"], "numbers": ["18 kg", "1.2 meter"], "domain": "robotics"}
+{"text": "Parallel gripper jaw separation achieves 0.1-60 mm opening range with proportional control.", "entities": ["Parallel gripper", "jaw separation"], "numbers": ["0.1-60 mm"], "domain": "robotics"}
+{"text": "Factory AGV fleet contains 50 autonomous vehicles navigating 5 km of factory routes.", "entities": ["AGV fleet", "autonomous vehicles", "factory"], "numbers": ["50", "5 km"], "domain": "robotics"}
+{"text": "Hexapod parallel kinematic robot achieves 500 Hz control frequency on 6-DOF platform.", "entities": ["Hexapod", "parallel kinematic", "6-DOF"], "numbers": ["500 Hz"], "domain": "robotics"}
+{"text": "Screw threading machine tightens fasteners to 80 Nm torque specification ±2%.", "entities": ["Screw threading machine"], "numbers": ["80 Nm", "±2%"], "domain": "robotics"}
+{"text": "Harvest automation selects ripe crops within 25 cm spacing using 8MP optical sensor.", "entities": ["Harvest automation", "optical sensor"], "numbers": ["25 cm", "8MP"], "domain": "robotics"}
+{"text": "Surgical robot provides 0.5 mm instrument precision across 300 mm working volume.", "entities": ["Surgical robot"], "numbers": ["0.5 mm", "300 mm"], "domain": "robotics"}
+{"text": "Flame-cut table separates 50 kg steel plates along 4 meter cutting path daily.", "entities": ["Flame-cut table"], "numbers": ["50 kg", "4 meter"], "domain": "robotics"}
+{"text": "Conveyor bot transfers 2.5 ton material per hour between 3 processing stations.", "entities": ["Conveyor bot"], "numbers": ["2.5 ton", "3"], "domain": "robotics"}
+{"text": "Thermal imaging guides robotic nozzle positioning within 1 mm tolerances on molten material.", "entities": ["Thermal imaging", "robotic nozzle"], "numbers": ["1 mm"], "domain": "robotics"}
+{"text": "Soft robot tentacle extends 200 mm with 10 N gripping force on delicate components.", "entities": ["Soft robot tentacle"], "numbers": ["200 mm", "10 N"], "domain": "robotics"}
+{"text": "Articulated boom crane lifts 300 kg at 2.1 m/s vertical speed across workshop.", "entities": ["Articulated boom crane"], "numbers": ["300 kg", "2.1 m/s"], "domain": "robotics"}
+{"text": "Laser profiling measures 15 micron surface deviations on precision-machined parts.", "entities": ["Laser profiling", "precision-machined"], "numbers": ["15 micron"], "domain": "robotics"}
+{"text": "Washdown-rated arm IP67-sealed serves 4 simultaneous suction cup gripping operations.", "entities": ["Washdown-rated arm", "IP67"], "number": ["4"], "domain": "robotics"}
+{"text": "Pneumatic shear tool cuts 3 mm aluminum sheet at 50 cuts per minute rate.", "entities": ["Pneumatic shear tool", "aluminum sheet"], "numbers": ["3 mm", "50"], "domain": "robotics"}
+{"text": "Bin-picking system identifies 250 component orientations within 2 second cycle window.", "entities": ["Bin-picking system"], "numbers": ["250", "2 second"], "domain": "robotics"}
+{"text": "Slip-ring connector transmits 48 VDC power across 12 rotating joint interfaces.", "entities": ["Slip-ring connector"], "numbers": ["48 VDC", "12"], "domain": "robotics"}
+{"text": "Stiffness measurement confirms 5000 N/mm compliance across gripper jaw assembly.", "entities": ["Stiffness measurement", "gripper jaw"], "numbers": ["5000 N/mm"], "domain": "robotics"}
+{"text": "Suction cup array grips 80 flat sheets per cycle using 0.8 bar vacuum pressure.", "entities": ["Suction cup array"], "numbers": ["80", "0.8 bar"], "domain": "robotics"}
+{"text": "Proximity sensor triggers action within 50 mm detection range on passing parts.", "entities": ["Proximity sensor"], "numbers": ["50 mm"], "domain": "robotics"}
+{"text": "Magnetic particle brake provides 15 Nm holding torque on vertical shaft axis.", "entities": ["Magnetic particle brake"], "numbers": ["15 Nm"], "domain": "robotics"}
+{"text": "Encoder feedback confirms 0.01 degree angular resolution across joint rotation.", "entities": ["Encoder feedback", "angular resolution"], "numbers": ["0.01 degree"], "domain": "robotics"}
+{"text": "Force/torque sensor reads 250 N axial load within ±1% measurement accuracy.", "entities": ["Force/torque sensor"], "numbers": ["250 N", "±1%"], "domain": "robotics"}
+{"text": "Speed reducer gearbox provides 50:1 ratio with 95% efficiency transmission.", "entities": ["Speed reducer gearbox"], "numbers": ["50:1", "95%"], "domain": "robotics"}
+{"text": "Brake system halts 1000 kg load in 0.5 seconds with emergency stop function.", "entities": ["Brake system", "emergency stop"], "numbers": ["1000 kg", "0.5 seconds"], "domain": "robotics"}
+{"text": "Harmonic drive actuator delivers 40 Nm torque in 15 mm compact envelope.", "entities": ["Harmonic drive actuator"], "numbers": ["40 Nm", "15 mm"], "domain": "robotics"}
+{"text": "Stepper motor rotates 1.8 degrees per step with 5 Nm holding torque capacity.", "entities": ["Stepper motor"], "numbers": ["1.8 degrees", "5 Nm"], "domain": "robotics"}
+{"text": "DC brush motor spins 3000-6000 RPM range with variable PWM speed control.", "entities": ["DC brush motor"], "numbers": ["3000-6000 RPM"], "domain": "robotics"}
+{"text": "Servo amplifier processes 20 kHz encoder signal with 16-bit resolution feedback.", "entities": ["Servo amplifier"], "numbers": ["20 kHz", "16-bit"], "domain": "robotics"}
+{"text": "Joint controller executes 1000 Hz loop rate for distributed multi-axis coordination.", "entities": ["Joint controller"], "numbers": ["1000 Hz"], "domain": "robotics"}
+{"text": "Safety controller monitors 8 emergency stop buttons across production floor.", "entities": ["Safety controller", "emergency stop buttons", "production floor"], "numbers": ["8"], "domain": "robotics"}
+{"text": "Networking gateway synchronizes 16 robot nodes over 100 Mbps Ethernet backbone.", "entities": ["Networking gateway", "Ethernet"], "numbers": ["16", "100 Mbps"], "domain": "robotics"}
+{"text": "Real-time operating system guarantees 2 millisecond task response latency.", "entities": ["Real-time operating system"], "numbers": ["2 millisecond"], "domain": "robotics"}
+{"text": "Vision processor analyzes 30 images per second at 2048 x 1536 pixel resolution.", "entities": ["Vision processor"], "numbers": ["30", "2048 x 1536 pixel"], "domain": "robotics"}
+{"text": "3D camera captures 640 x 480 depth map at 25 Hz frame rate for obstacle detection.", "entities": ["3D camera", "obstacle detection"], "numbers": ["640 x 480", "25 Hz"], "domain": "robotics"}
+{"text": "Barcode scanner reads UPC codes at 500 mm scan distance within factory lighting.", "entities": ["Barcode scanner"], "numbers": ["500 mm"], "domain": "robotics"}
+{"text": "RFID reader transmits over 2 meter range identifying 1000 tagged component types.", "entities": ["RFID reader"], "numbers": ["2 meter", "1000"], "domain": "robotics"}
+{"text": "LiDAR unit maps 270-degree view at 10 Hz updating obstacle map every 100 milliseconds.", "entities": ["LiDAR unit"], "numbers": ["270-degree", "10 Hz", "100 milliseconds"], "domain": "robotics"}
+{"text": "Safety laser scanner generates 540-degree coverage at 25 Hz update frequency.", "entities": ["Safety laser scanner"], "numbers": ["540-degree", "25 Hz"], "domain": "robotics"}
+{"text": "Contact sensor grid detects 0.1 N pressure across 64-point array surface.", "entities": ["Contact sensor grid"], "numbers": ["0.1 N", "64-point"], "domain": "robotics"}
+{"text": "Torque-limiting coupling prevents overload above 50 Nm across drive shafts.", "entities": ["Torque-limiting coupling"], "numbers": ["50 Nm"], "domain": "robotics"}
+{"text": "Bellows boot covers joint movement across 250 mm stroke while preventing ingress.", "entities": ["Bellows boot"], "numbers": ["250 mm"], "domain": "robotics"}
+{"text": "Cable carrier system routes 24 signal wires within 2 meter length span.", "entities": ["Cable carrier system"], "numbers": ["24", "2 meter"], "domain": "robotics"}
+{"text": "Thermal management cooler dissipates 500 W heat output on continuous duty cycle.", "entities": ["Thermal management cooler"], "numbers": ["500 W"], "domain": "robotics"}
+{"text": "Modular mounting plate accepts 4 different end-effector interfaces via pneumatic coupling.", "entities": ["Modular mounting plate", "end-effector"], "numbers": ["4"], "domain": "robotics"}
+{"text": "Cable-driven parallel robot achieves ±5 mm accuracy within 2 x 2 x 2 meter workspace.", "entities": ["Cable-driven parallel robot"], "numbers": ["±5 mm", "2 x 2 x 2 meter"], "domain": "robotics"}
+{"text": "Underactuated gripper design opens 6 finger configurations from single servo motor.", "entities": ["Underactuated gripper", "finger configurations"], "numbers": ["6"], "domain": "robotics"}
+{"text": "Self-centering chuck grips 8-32 mm range with symmetrical 3-jaw clamping force.", "entities": ["Self-centering chuck"], "numbers": ["8-32 mm", "3-jaw"], "domain": "robotics"}
+{"text": "Soft rubber suction cup lifts 5 kg mass from glass surface at 0.6 bar pressure.", "entities": ["Soft rubber suction cup"], "numbers": ["5 kg", "0.6 bar"], "domain": "robotics"}
+{"text": "Compliant finger pads spread 20 mm width conforming to product surface profile.", "entities": ["Compliant finger pads"], "numbers": ["20 mm"], "domain": "robotics"}
+{"text": "Adhesive-bonded joint withstands 200 N shear load without delamination failure.", "entities": ["Adhesive-bonded joint"], "numbers": ["200 N"], "domain": "robotics"}
+{"text": "Welded aluminum frame provides 0.2% deflection under 1000 kg cantilevered load.", "entities": ["Welded aluminum frame"], "numbers": ["0.2%", "1000 kg"], "domain": "robotics"}
+{"text": "Cast iron base weighs 500 kg reducing vibration transmission to floor level.", "entities": ["Cast iron base"], "numbers": ["500 kg"], "domain": "robotics"}
+{"text": "Foundry robot achieves 99.2% defect-free casting extraction across 50-piece batches.", "entities": ["Foundry robot", "casting extraction"], "numbers": ["99.2%", "50-piece"], "domain": "robotics"}
+{"text": "Forge-shop manipulator lifts 800 kg ingots at 0.5 m/s vertical speed.", "entities": ["Forge-shop manipulator"], "numbers": ["800 kg", "0.5 m/s"], "domain": "robotics"}
+{"text": "Shot-peen coverage achieves 95% surface hardness improvement on 2 mm steel plate.", "entities": ["Shot-peen coverage", "steel plate"], "numbers": ["95%", "2 mm"], "domain": "robotics"}
+{"text": "Honing machine polishes 0.1 micron surface finish across 100 mm bore diameter.", "entities": ["Honing machine"], "numbers": ["0.1 micron", "100 mm"], "domain": "robotics"}
+{"text": "Tapping spindle torques M10 fasteners to 25 Nm using closed-loop feedback.", "entities": ["Tapping spindle"], "numbers": ["M10", "25 Nm"], "domain": "robotics"}
+{"text": "Riveting tool clamps 3 mm diameter fastener at 5 kN clamping pressure.", "entities": ["Riveting tool", "fastener"], "numbers": ["3 mm", "5 kN"], "domain": "robotics"}
+{"text": "Blind-hole insertion achieves ±0.5 mm positioning accuracy within tolerance stack.", "entities": ["Blind-hole insertion"], "numbers": ["±0.5 mm"], "domain": "robotics"}
+{"text": "Sealing application bot dispenses epoxy at 0.5 ml per second rate.", "entities": ["Sealing application bot", "epoxy"], "numbers": ["0.5 ml"], "domain": "robotics"}
+{"text": "Potting machine fills 200 ml cavities to 98% volume accuracy within 3-second window.", "entities": ["Potting machine"], "numbers": ["200 ml", "98%", "3-second"], "domain": "robotics"}
+{"text": "Encapsulation process heats 80 degrees Celsius for 45 minute cure cycle.", "entities": ["Encapsulation process"], "numbers": ["80 degrees", "45 minute"], "domain": "robotics"}
+{"text": "Vacuum lamination system removes 95% entrapped air bubbles from 0.5 mm film layers.", "entities": ["Vacuum lamination system"], "numbers": ["95%", "0.5 mm"], "domain": "robotics"}
+{"text": "Curing oven maintains ±3 degree tolerance across 400 mm depth material stack.", "entities": ["Curing oven"], "numbers": ["±3 degree", "400 mm"], "domain": "robotics"}
+{"text": "Rapid prototyping center prints 0.2 mm layer thickness at 50 mm/s head speed.", "entities": ["Rapid prototyping center"], "numbers": ["0.2 mm", "50 mm/s"], "domain": "robotics"}
+{"text": "3D printing platform builds parts to ±0.1 mm accuracy within 30 cm work envelope.", "entities": ["3D printing platform"], "numbers": ["±0.1 mm", "30 cm"], "domain": "robotics"}
+{"text": "Powder feeder dispenses 2-5 gram increments of titanium alloy feedstock.", "entities": ["Powder feeder", "titanium alloy"], "numbers": ["2-5 gram"], "domain": "robotics"}
+{"text": "Laser beam delivery system focuses 1.5 kW power into 0.8 mm spot diameter.", "entities": ["Laser beam delivery system"], "numbers": ["1.5 kW", "0.8 mm"], "domain": "robotics"}
+{"text": "Metal deposition occurs at 10 kg per hour maximum build rate for additive manufacturing.", "entities": ["Metal deposition", "additive manufacturing"], "numbers": ["10 kg"], "domain": "robotics"}
+{"text": "Heat exchanger cools robotic torch to 100 degrees Celsius operating temperature.", "entities": ["Heat exchanger", "robotic torch"], "numbers": ["100 degrees"], "domain": "robotics"}
+{"text": "Water circulator maintains 0.1-0.5 m³/hour cooling flow maintaining thermal balance.", "entities": ["Water circulator"], "numbers": ["0.1-0.5 m³/hour"], "domain": "robotics"}
+{"text": "Hydraulic pump supplies 210 bar pressure to 4-cylinder actuator array.", "entities": ["Hydraulic pump", "cylinder actuator"], "numbers": ["210 bar", "4"], "domain": "robotics"}
+{"text": "Proportional valve meters 20-80 liters per minute flow based on command signal.", "entities": ["Proportional valve"], "numbers": ["20-80 liters"], "domain": "robotics"}
+{"text": "Accumulator stores 1 liter pressurized oil for emergency brake engagement.", "entities": ["Accumulator", "pressurized oil"], "numbers": ["1 liter"], "domain": "robotics"}
+{"text": "Pressure relief valve opens above 250 bar preventing system overpressure fault.", "entities": ["Pressure relief valve"], "numbers": ["250 bar"], "domain": "robotics"}
+{"text": "Actuator rod seals withstand 200 bar pressure across 100 mm stroke range.", "entities": ["Actuator rod seals"], "numbers": ["200 bar", "100 mm"], "domain": "robotics"}
+{"text": "Nitrogen charge ratio balances 100-300 bar pulsating loads on expansion chamber.", "entities": ["Nitrogen charge"], "numbers": ["100-300 bar"], "domain": "robotics"}
+{"text": "Compressed air system maintains 6-8 bar supply pressure across 50 meter distribution line.", "entities": ["Compressed air system", "distribution line"], "numbers": ["6-8 bar", "50 meter"], "domain": "robotics"}
+{"text": "Pneumatic cylinder stroke time averages 0.5 seconds full extension cycle.", "entities": ["Pneumatic cylinder"], "numbers": ["0.5 seconds"], "domain": "robotics"}
+{"text": "Solenoid valve response time latency measures 15 milliseconds at 24 VDC.", "entities": ["Solenoid valve"], "numbers": ["15 milliseconds", "24 VDC"], "domain": "robotics"}
+{"text": "Backpressure regulator maintains 1.5 bar minimum on exhaust line preventing stall.", "entities": ["Backpressure regulator", "exhaust"], "numbers": ["1.5 bar"], "domain": "robotics"}
+{"text": "Silencer unit reduces pneumatic noise to 75 dB from 85 dB baseline.", "entities": ["Silencer unit"], "numbers": ["75 dB", "85 dB"], "domain": "robotics"}
+{"text": "Dryer removes 99% humidity from compressed air below minus 40 dew point.", "entities": ["Dryer", "compressed air"], "numbers": ["99%", "minus 40"], "domain": "robotics"}
+{"text": "Oil mist lubrication dispenses 0.1 ml per liter proportional air volume.", "entities": ["Oil mist lubrication"], "numbers": ["0.1 ml"], "domain": "robotics"}
+{"text": "Filter housing traps 1-3 micron particulate matter from supply stream.", "entities": ["Filter housing"], "numbers": ["1-3 micron"], "domain": "robotics"}
+{"text": "Decibel meter confirms 80 dB noise level at 1 meter distance from operating cell.", "entities": ["Decibel meter"], "numbers": ["80 dB", "1 meter"], "domain": "robotics"}
+{"text": "Vibration accelerometer measures 2 G peak acceleration on vertical axis.", "entities": ["Vibration accelerometer"], "numbers": ["2 G"], "domain": "robotics"}
+{"text": "Temperature sensor logs 25-35 degree Celsius ambient operating range.", "entities": ["Temperature sensor"], "numbers": ["25-35 degree"], "domain": "robotics"}
+{"text": "Humidity monitor tracks 20-80% relative humidity without performance degradation.", "entities": ["Humidity monitor"], "numbers": ["20-80%"], "domain": "robotics"}
+{"text": "Dust filtration maintains IP54 rating in food-processing facility environment.", "entities": ["Dust filtration", "food-processing", "IP54"], "numbers": [], "domain": "robotics"}
+{"text": "Washdown protocol applies 80 bar water jet every 8 hours for hygiene compliance.", "entities": ["Washdown protocol", "water jet"], "numbers": ["80 bar", "8 hours"], "domain": "robotics"}
+{"text": "Corrosion-resistant coating protects aluminum frame across 5-year outdoor service.", "entities": ["Corrosion-resistant coating", "aluminum frame"], "numbers": ["5-year"], "domain": "robotics"}
+{"text": "Salt-spray testing confirms 1000-hour salt-fog survival without structural failure.", "entities": ["Salt-spray testing", "salt-fog"], "numbers": ["1000-hour"], "domain": "robotics"}
+{"text": "Chemical resistance rating handles 98% sulfuric acid exposure brief contact.", "entities": ["Chemical resistance rating", "sulfuric acid"], "numbers": ["98%"], "domain": "robotics"}
+{"text": "EMI shielding reduces radio interference to 40 dB attenuation across 100 MHz bandwidth.", "entities": ["EMI shielding"], "numbers": ["40 dB", "100 MHz"], "domain": "robotics"}
+{"text": "Surge suppression clamps voltage spikes to 600 V transient maximum.", "entities": ["Surge suppression"], "numbers": ["600 V"], "domain": "robotics"}
+{"text": "Power supply regulation holds ±5% voltage stability under 50 A load variation.", "entities": ["Power supply regulation"], "numbers": ["±5%", "50 A"], "domain": "robotics"}
+{"text": "Backup battery runtime extends 15 minutes continuity on 48 V UPS module.", "entities": ["Backup battery", "UPS"], "numbers": ["15 minutes", "48 V"], "domain": "robotics"}
+{"text": "Solar charging panel provides 200 W supplementary power on sunny factory roof.", "entities": ["Solar charging panel"], "numbers": ["200 W"], "domain": "robotics"}
+{"text": "Fuel cell stack generates 5 kW output from hydrogen gas at 35% efficiency.", "entities": ["Fuel cell stack"], "numbers": ["5 kW", "35%"], "domain": "robotics"}
+{"text": "Battery management system balances 24 lithium cells across 12 S2P configuration.", "entities": ["Battery management system", "lithium"], "numbers": ["24", "12 S2P"], "domain": "robotics"}
+{"text": "Charging dock interface accepts 500 A contact rating for fast battery exchange.", "entities": ["Charging dock interface"], "numbers": ["500 A"], "domain": "robotics"}
+{"text": "Fast charger achieves 80% capacity in 20 minutes using 10 kW DC power delivery.", "entities": ["Fast charger"], "numbers": ["80%", "20 minutes", "10 kW"], "domain": "robotics"}
+{"text": "Energy density reaches 250 Wh/kg with 3-year self-discharge rate below 15%.", "entities": ["Energy density"], "numbers": ["250 Wh/kg", "3-year", "15%"], "domain": "robotics"}
+{"text": "Cycle life specification guarantees 1000 charge cycles maintaining 90% capacity.", "entities": ["Cycle life specification"], "numbers": ["1000", "90%"], "domain": "robotics"}
+{"text": "Temperature rating extends minus 10 to plus 50 degrees Celsius operating bounds.", "entities": ["Temperature rating"], "numbers": ["minus 10", "plus 50 degrees"], "domain": "robotics"}
+{"text": "Thermal runaway protection prevents cell failure above 100 degree Celsius condition.", "entities": ["Thermal runaway protection"], "numbers": ["100 degree"], "domain": "robotics"}
+{"text": "Cell balancing circuitry maintains ±50 mV voltage matching between 48 parallel cells.", "entities": ["Cell balancing circuitry"], "numbers": ["±50 mV", "48"], "domain": "robotics"}
+{"text": "BMS firmware updates push 2 MB firmware patches over 100 Mbps network connection.", "entities": ["BMS firmware", "firmware patches", "network"], "numbers": ["2 MB", "100 Mbps"], "domain": "robotics"}
+{"text": "Remote monitoring portal logs 50-point telemetry stream at 1 Hz data rate.", "entities": ["Remote monitoring portal", "telemetry"], "numbers": ["50-point", "1 Hz"], "domain": "robotics"}
+{"text": "Cloud data warehouse archives 500 GB sensor recordings per production shift.", "entities": ["Cloud data warehouse", "sensor recordings"], "numbers": ["500 GB"], "domain": "robotics"}
+{"text": "Big data analytics platform processes 10 million events per hour identifying patterns.", "entities": ["Big data analytics platform"], "numbers": ["10 million"], "domain": "robotics"}
+{"text": "Machine learning model achieves 94% fault prediction accuracy on 60-day rolling window.", "entities": ["Machine learning model", "fault prediction"], "numbers": ["94%", "60-day"], "domain": "robotics"}
+{"text": "Predictive maintenance alert triggers 7 days ahead of component replacement needs.", "entities": ["Predictive maintenance alert"], "numbers": ["7 days"], "domain": "robotics"}
+{"text": "Condition monitoring dashboard updates every 30 seconds with 15 performance metrics.", "entities": ["Condition monitoring dashboard"], "numbers": ["30 seconds", "15"], "domain": "robotics"}
+{"text": "Anomaly detection threshold flags readings exceeding 3-sigma deviation from baseline.", "entities": ["Anomaly detection threshold"], "numbers": ["3-sigma"], "domain": "robotics"}
+{"text": "Historical data retention spans 10 years with 99.9% storage availability guarantee.", "entities": ["Historical data retention"], "numbers": ["10 years", "99.9%"], "domain": "robotics"}
+{"text": "Backup-restore cycle validates data integrity across 500 TB archived repositories.", "entities": ["Backup-restore cycle"], "numbers": ["500 TB"], "domain": "robotics"}
+{"text": "Disaster recovery plan restores production operations within 4 hours of incident.", "entities": ["Disaster recovery plan"], "numbers": ["4 hours"], "domain": "robotics"}
+{"text": "Redundancy architecture features 2+1 active standby system configuration.", "entities": ["Redundancy architecture"], "numbers": ["2+1"], "domain": "robotics"}
+{"text": "Failover mechanism switches to backup server within 500 milliseconds detection.", "entities": ["Failover mechanism"], "numbers": ["500 milliseconds"], "domain": "robotics"}
+{"text": "Load balancing distributes traffic across 4 identical processing nodes equally.", "entities": ["Load balancing"], "numbers": ["4"], "domain": "robotics"}
+{"text": "Throughput optimization reduced latency by 35% via algorithmic improvements.", "entities": ["Throughput optimization"], "numbers": ["35%"], "domain": "robotics"}
+{"text": "Cache layer stores 1 GB frequently accessed data reducing database queries 40%.", "entities": ["Cache layer"], "numbers": ["1 GB", "40%"], "domain": "robotics"}
+{"text": "Compression algorithm reduces storage footprint 60% with lossless encoding.", "entities": ["Compression algorithm"], "numbers": ["60%"], "domain": "robotics"}
+{"text": "Network bandwidth utilization averages 45% peak during production shift.", "entities": ["Network bandwidth utilization"], "numbers": ["45%"], "domain": "robotics"}
+{"text": "Packet loss rate measures below 0.01% on mission-critical control channels.", "entities": ["Packet loss rate"], "numbers": ["0.01%"], "domain": "robotics"}
+{"text": "Latency variance remains within ±2 milliseconds for jitter-sensitive servo loops.", "entities": ["Latency variance"], "numbers": ["±2 milliseconds"], "domain": "robotics"}
+{"text": "Security encryption uses AES-256 algorithm protecting 512-bit session keys.", "entities": ["Security encryption", "AES-256"], "numbers": ["512-bit"], "domain": "robotics"}
+{"text": "Authentication protocol requires 2-factor verification with 60-second session timeout.", "entities": ["Authentication protocol"], "numbers": ["2-factor", "60-second"], "domain": "robotics"}
+{"text": "Access control list restricts 200 operator accounts to role-based permissions.", "entities": ["Access control list"], "numbers": ["200"], "domain": "robotics"}
+{"text": "Audit trail logs all 50000+ daily transactions with immutable blockchain storage.", "entities": ["Audit trail"], "numbers": ["50000+"], "domain": "robotics"}
+{"text": "Vulnerability scanning identifies security gaps in 48-hour patching window.", "entities": ["Vulnerability scanning"], "numbers": ["48-hour"], "domain": "robotics"}
+{"text": "Intrusion detection monitors 8 network segments flagging anomalous packet patterns.", "entities": ["Intrusion detection", "network segments"], "numbers": ["8"], "domain": "robotics"}
+{"text": "Firewall rules enforce 15 security policies on ingress/egress traffic flows.", "entities": ["Firewall rules"], "numbers": ["15"], "domain": "robotics"}
+{"text": "DDoS mitigation platform absorbs 100 Gbps attack traffic without service interruption.", "entities": ["DDoS mitigation platform"], "numbers": ["100 Gbps"], "domain": "robotics"}
+{"text": "Incident response team activates within 15 minutes of critical security alert.", "entities": ["Incident response team"], "numbers": ["15 minutes"], "domain": "robotics"}
+{"text": "Service level agreement guarantees 99.95% uptime with 5-minute incident response.", "entities": ["Service level agreement"], "numbers": ["99.95%", "5-minute"], "domain": "robotics"}
+{"text": "Maintenance window occurs monthly for 2 hours updating firmware/patches.", "entities": ["Maintenance window"], "numbers": ["2 hours"], "domain": "robotics"}
+{"text": "Training protocol certifies operators within 40-hour initial instruction course.", "entities": ["Training protocol"], "numbers": ["40-hour"], "domain": "robotics"}
+{"text": "Continuing education requirement mandates 8 hours annually per technician.", "entities": ["Continuing education requirement"], "numbers": ["8 hours"], "domain": "robotics"}
+{"text": "Certification exam covers 200 technical competencies across 3-hour assessment period.", "entities": ["Certification exam"], "numbers": ["200", "3-hour"], "domain": "robotics"}
+{"text": "Qualification standard requires 2-year apprenticeship plus 500 practical hours.", "entities": ["Qualification standard"], "numbers": ["2-year", "500"], "domain": "robotics"}
+{"text": "Safety briefing reviews 12 hazard mitigation procedures before shift startup.", "entities": ["Safety briefing"], "numbers": ["12"], "domain": "robotics"}
+{"text": "Hazard analysis identified 45 potential risks requiring engineered controls.", "entities": ["Hazard analysis"], "numbers": ["45"], "domain": "robotics"}
+{"text": "Risk assessment matrix evaluates severity across 5-point scale with mitigation ranking.", "entities": ["Risk assessment matrix"], "numbers": ["5-point"], "domain": "robotics"}
+{"text": "Control hierarchy eliminates 8 elimination strategies before implementing PPE.", "entities": ["Control hierarchy"], "numbers": ["8"], "domain": "robotics"}
+{"text": "Engineering control installs light curtain at 600 mm standoff distance.", "entities": ["Engineering control", "light curtain"], "numbers": ["600 mm"], "domain": "robotics"}
+{"text": "Pressure-sensitive mat stops robot motion within 100 milliseconds of contact.", "entities": ["Pressure-sensitive mat"], "numbers": ["100 milliseconds"], "domain": "robotics"}
+{"text": "Force-limiting mode restricts collaborative robot peak force to 80 N impact.", "entities": ["Force-limiting mode", "collaborative robot"], "numbers": ["80 N"], "domain": "robotics"}
+{"text": "Speed-limiting feature caps cobot velocity at 0.5 m/s in human interaction zone.", "entities": ["Speed-limiting feature", "cobot", "human interaction"], "numbers": ["0.5 m/s"], "domain": "robotics"}
+{"text": "Safety-rated controller monitors 24 input channels on dual-channel architecture.", "entities": ["Safety-rated controller"], "numbers": ["24"], "domain": "robotics"}
+{"text": "Fault detection algorithm runs every 5 milliseconds checking 8 health indicators.", "entities": ["Fault detection algorithm"], "numbers": ["5 milliseconds", "8"], "domain": "robotics"}
+{"text": "Diagnostic tool identifies 150 possible error codes with recommended remedies.", "entities": ["Diagnostic tool"], "numbers": ["150"], "domain": "robotics"}
+{"text": "Troubleshooting guide resolves 95% of common issues within 30-minute window.", "entities": ["Troubleshooting guide"], "numbers": ["95%", "30-minute"], "domain": "robotics"}
+{"text": "Spare parts inventory maintains 50 critical components with 24-hour replenishment.", "entities": ["Spare parts inventory"], "numbers": ["50", "24-hour"], "domain": "robotics"}
+{"text": "Preventive maintenance schedule performs 12 service events per 52-week cycle.", "entities": ["Preventive maintenance schedule"], "numbers": ["12", "52-week"], "domain": "robotics"}
+{"text": "Corrective maintenance averages 8 hours downtime per failure across fleet.", "entities": ["Corrective maintenance"], "numbers": ["8 hours"], "domain": "robotics"}
+{"text": "Mean time between failures reaches 8000 hours after recent redesign.", "entities": ["Mean time between failures"], "numbers": ["8000 hours"], "domain": "robotics"}
+{"text": "Mean time to repair improved to 2 hours with streamlined diagnostic procedure.", "entities": ["Mean time to repair"], "numbers": ["2 hours"], "domain": "robotics"}
+{"text": "Equipment availability metric tops 96.5% across 200-unit robot installation.", "entities": ["Equipment availability metric"], "numbers": ["96.5%", "200-unit"], "domain": "robotics"}
+{"text": "Utilization rate averages 78% production time excluding maintenance/changeover.", "entities": ["Utilization rate"], "numbers": ["78%"], "domain": "robotics"}
+{"text": "Total cost ownership decreased 22% implementing predictive maintenance strategy.", "entities": ["Total cost ownership"], "numbers": ["22%"], "domain": "robotics"}
+{"text": "Return on investment achieved 3.2-year payback period on 2-million-dollar capital.", "entities": ["Return on investment"], "numbers": ["3.2-year", "2-million"], "domain": "robotics"}
+{"text": "Productivity gain increased 45% output per shift after robotic cell installation.", "entities": ["Productivity gain"], "numbers": ["45%"], "domain": "robotics"}
+{"text": "Labor cost savings reduced headcount from 12 to 3 operators per shift.", "entities": ["Labor cost savings"], "numbers": ["12", "3"], "domain": "robotics"}
+{"text": "Quality improvement reduced defect rate from 2.5% to 0.1% via automation.", "entities": ["Quality improvement", "defect rate"], "numbers": ["2.5%", "0.1%"], "domain": "robotics"}
+{"text": "Scrap reduction saved 50000 dollars annually eliminating rework operations.", "entities": ["Scrap reduction"], "numbers": ["50000 dollars"], "domain": "robotics"}
+{"text": "Waste elimination program diverted 30 tons recyclables from landfill.", "entities": ["Waste elimination program"], "numbers": ["30 tons"], "domain": "robotics"}
+{"text": "Environmental compliance achievement certified ISO 14001 across 5 facilities.", "entities": ["Environmental compliance achievement", "ISO 14001"], "numbers": ["5"], "domain": "robotics"}
+{"text": "Carbon footprint reduced 18% through energy-efficient servo drive technology.", "entities": ["Carbon footprint"], "numbers": ["18%"], "domain": "robotics"}
+{"text": "Energy consumption tracking monitors 3.5 MWh monthly consumption trending.", "entities": ["Energy consumption tracking"], "numbers": ["3.5 MWh"], "domain": "robotics"}
+{"text": "Water usage optimization cut facility consumption by 40% installing closed-loop.", "entities": ["Water usage optimization"], "numbers": ["40%"], "domain": "robotics"}
+{"text": "Emissions reduction target aims 50% scope-1 footprint by 2030.", "entities": ["Emissions reduction target"], "numbers": ["50%", "2030"], "domain": "robotics"}
+{"text": "Sustainability report documents 25% renewable energy integration achievement.", "entities": ["Sustainability report"], "numbers": ["25%"], "domain": "robotics"}
+{"text": "Green certification program recognizes 8 facilities meeting carbon-neutral goals.", "entities": ["Green certification program"], "numbers": ["8"], "domain": "robotics"}
+{"text": "Circular economy initiative recycles 85% manufacturing waste streams.", "entities": ["Circular economy initiative"], "numbers": ["85%"], "domain": "robotics"}
+{"text": "Supply chain transparency traces 100% component origins within 4-tier supplier.", "entities": ["Supply chain transparency"], "numbers": ["100%", "4-tier"], "domain": "robotics"}
+{"text": "Ethical sourcing audit confirms fair-labor compliance on 200 suppliers.", "entities": ["Ethical sourcing audit"], "numbers": ["200"], "domain": "robotics"}
+{"text": "Diversity program targets 40% underrepresented minorities in engineering roles.", "entities": ["Diversity program"], "numbers": ["40%"], "domain": "robotics"}
+{"text": "Inclusion initiative provides mentorship to 50 women entering robotics field.", "entities": ["Inclusion initiative"], "numbers": ["50"], "domain": "robotics"}
+{"text": "Scholarship fund awards 10 annual grants supporting STEM education programs.", "entities": ["Scholarship fund"], "numbers": ["10"], "domain": "robotics"}
+{"text": "University partnership sponsors 6 research centers advancing robotics innovation.", "entities": ["University partnership"], "numbers": ["6"], "domain": "robotics"}
+{"text": "Patent portfolio contains 350 issued patents protecting intellectual property.", "entities": ["Patent portfolio"], "numbers": ["350"], "domain": "robotics"}
+{"text": "Trade secret protection enforces 15-year confidentiality agreements with employees.", "entities": ["Trade secret protection"], "numbers": ["15-year"], "domain": "robotics"}
+{"text": "Licensing agreement generates 2 million-dollar annual revenue stream.", "entities": ["Licensing agreement"], "numbers": ["2 million"], "domain": "robotics"}
+{"text": "Technology transfer program accelerates 5 spin-off company formations.", "entities": ["Technology transfer program"], "numbers": ["5"], "domain": "robotics"}
+{"text": "Ecosystem partnership connects 20 hardware/software vendors supporting platform.", "entities": ["Ecosystem partnership"], "numbers": ["20"], "domain": "robotics"}
+{"text": "Industry consortium participation influences 12 international standards development.", "entities": ["Industry consortium participation"], "numbers": ["12"], "domain": "robotics"}
+{"text": "Standards compliance certifies ISO 13849-1 PLd safety integrity level.", "entities": ["Standards compliance", "ISO 13849-1"], "numbers": [], "domain": "robotics"}
+{"text": "Interoperability testing validates 8 third-party peripheral integrations.", "entities": ["Interoperability testing"], "numbers": ["8"], "domain": "robotics"}
+{"text": "Open-source contribution releases 500 KB library code benefiting community.", "entities": ["Open-source contribution", "library code"], "numbers": ["500 KB"], "domain": "robotics"}
+{"text": "Developer documentation covers 200 API endpoints with code examples.", "entities": ["Developer documentation"], "numbers": ["200"], "domain": "robotics"}
+{"text": "Software development kit provides 10 programming language bindings.", "entities": ["Software development kit"], "numbers": ["10"], "domain": "robotics"}
+{"text": "Application programming interface supports 1000 concurrent client connections.", "entities": ["Application programming interface"], "numbers": ["1000"], "domain": "robotics"}
+{"text": "Plugin architecture enables 50 third-party extensions without core modification.", "entities": ["Plugin architecture"], "numbers": ["50"], "domain": "robotics"}
+{"text": "Middleware layer abstracts 8 distinct hardware interfaces into unified API.", "entities": ["Middleware layer"], "numbers": ["8"], "domain": "robotics"}
+{"text": "Device driver updates roll out monthly maintaining compatibility across 4 platforms.", "entities": ["Device driver updates", "platforms"], "numbers": ["4"], "domain": "robotics"}
+{"text": "Firmware versioning system manages 200 distinct component firmware revisions.", "entities": ["Firmware versioning system"], "numbers": ["200"], "domain": "robotics"}
+{"text": "Over-the-air update capability delivers patches to 1000-unit fleet simultaneously.", "entities": ["Over-the-air update", "fleet"], "numbers": ["1000-unit"], "domain": "robotics"}
+{"text": "Regression testing suite executes 5000 automated test cases per release cycle.", "entities": ["Regression testing suite"], "numbers": ["5000"], "domain": "robotics"}
+{"text": "Code coverage metrics target 85% line coverage on critical robot control paths.", "entities": ["Code coverage metrics"], "numbers": ["85%"], "domain": "robotics"}
+{"text": "Static analysis scanning identifies 50+ potential bugs before production deployment.", "entities": ["Static analysis scanning"], "numbers": ["50+"], "domain": "robotics"}
+{"text": "Continuous integration pipeline executes hourly builds validating code quality.", "entities": ["Continuous integration pipeline"], "numbers": [], "domain": "robotics"}
+{"text": "Deployment automation reduces release cycle from 8 weeks to 2 weeks.", "entities": ["Deployment automation"], "numbers": ["8 weeks", "2 weeks"], "domain": "robotics"}
+{"text": "Containerization strategy packages microservices into 12 Docker containers.", "entities": ["Containerization strategy", "Docker containers"], "numbers": ["12"], "domain": "robotics"}
+{"text": "Orchestration platform manages 50 containerized services across 8-node cluster.", "entities": ["Orchestration platform"], "numbers": ["50", "8-node"], "domain": "robotics"}
+{"text": "Service mesh distributes network traffic optimally across 6 redundant replicas.", "entities": ["Service mesh"], "numbers": ["6"], "domain": "robotics"}
+{"text": "Load testing validated performance up to 500 concurrent robot connections.", "entities": ["Load testing"], "numbers": ["500"], "domain": "robotics"}
+{"text": "Stress testing pushes system 50% beyond rated capacity identifying breaking points.", "entities": ["Stress testing"], "numbers": ["50%"], "domain": "robotics"}
+{"text": "Soak testing runs 30-day continuous operation confirming memory leak absence.", "entities": ["Soak testing"], "numbers": ["30-day"], "domain": "robotics"}
+{"text": "Chaos engineering injects 10 failure scenarios validating resilience measures.", "entities": ["Chaos engineering"], "numbers": ["10"], "domain": "robotics"}
+{"text": "Smoke testing confirms 20 core workflows functional after each deployment.", "entities": ["Smoke testing"], "numbers": ["20"], "domain": "robotics"}
+{"text": "End-to-end testing validates complete transaction flow across 4 system tiers.", "entities": ["End-to-end testing"], "numbers": ["4"], "domain": "robotics"}
+{"text": "Performance profiling revealed 30% CPU overhead in serialization bottleneck.", "entities": ["Performance profiling"], "numbers": ["30%"], "domain": "robotics"}
+{"text": "Memory optimization reduced heap footprint from 2 GB to 500 MB.", "entities": ["Memory optimization"], "numbers": ["2 GB", "500 MB"], "domain": "robotics"}
+{"text": "Algorithm improvement achieved 10x speedup on path-planning calculation.", "entities": ["Algorithm improvement", "path-planning"], "numbers": ["10x"], "domain": "robotics"}

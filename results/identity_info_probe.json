@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-22T20:48:06.318764+00:00",
+  "min_count": 5,
+  "topk": 20,
+  "vocab_size": 3326,
+  "results": {
+    "numeric": {
+      "probe_recall": 0.8090366581415175,
+      "frequency_baseline": 0.3895993179880648,
+      "lift": 2.076586433260394,
+      "n_tokens": 379
+    },
+    "non_numeric": {
+      "probe_recall": 0.5909656029838376,
+      "frequency_baseline": 0.2440944881889764,
+      "lift": 2.4210526315789473,
+      "n_tokens": 2947
+    },
+    "all": {
+      "probe_recall": 0.5542082738944365,
+      "frequency_baseline": 0.21005706134094151,
+      "lift": 2.6383701188455007,
+      "n_tokens": 3326
+    }
+  },
+  "verdict": "DENSE CARRIES IDENTITIES \u2014 numeric tokens recoverable well above the frequency baseline; the bottleneck is the decoder readout, not the latent"
+}

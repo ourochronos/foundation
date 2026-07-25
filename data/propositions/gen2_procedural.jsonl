@@ -1,0 +1,251 @@
+{"text": "Feed colonies 1:1 sugar water syrup when spring forage is scarce to prevent starvation during brood-up season.", "entities": [], "numbers": ["1:1"], "domain": "procedural"}
+{"text": "Inspect hive frames every 7 days for signs of disease, especially American foulbrood or Varroa mite infestation.", "entities": ["American foulbrood", "Varroa mite"], "numbers": ["7 days"], "domain": "procedural"}
+{"text": "Place entrance reducers in October to minimize heat loss and keep robber bees from invading weak colonies.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Requeen a colony showing reduced egg-laying by introducing a queen cell or mated queen at a 50-degree angle.", "entities": [], "numbers": ["50-degree"], "domain": "procedural"}
+{"text": "Treat Varroa destructor with formic acid when 10+ mites are detected on sticky boards during summer monitoring.", "entities": ["Varroa destructor"], "numbers": ["10+"], "domain": "procedural"}
+{"text": "Extract honey when comb is 80% capped to ensure proper moisture content below 19%.", "entities": [], "numbers": ["80%", "19%"], "domain": "procedural"}
+{"text": "Combine two weak colonies in August using the newspaper method to create one strong hive before winter.", "entities": [], "numbers": ["two"], "domain": "procedural"}
+{"text": "Monitor propolis buildup and scrape frames when bee space is reduced to below 3/8 inch gaps.", "entities": [], "numbers": ["3/8 inch"], "domain": "procedural"}
+{"text": "Install a queen excluder 3 weeks before expected nectar flow to prevent brood in honey supers.", "entities": [], "numbers": ["3 weeks"], "domain": "procedural"}
+{"text": "Calibrate a hydrometer to ensure honey moisture readings are accurate before storing extracted product.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Medicate drinking water with 200 mg/L thymol solution during spring nosema season in cool climates.", "entities": [], "numbers": ["200 mg/L"], "domain": "procedural"}
+{"text": "Replace 3-4 old brood frames annually during spring inspection to reduce disease and parasite load.", "entities": [], "numbers": ["3-4"], "domain": "procedural"}
+{"text": "Install pollen traps only during peak flows when colonies can spare 30% of incoming pollen daily.", "entities": [], "numbers": ["30%"], "domain": "procedural"}
+{"text": "Stake hives on 4x4 timber supports 18 inches above ground to prevent ant and moisture damage.", "entities": [], "numbers": ["4x4", "18 inches"], "domain": "procedural"}
+{"text": "Split a hive in May by placing 2 frames of brood plus a queen in a nucleus box.", "entities": [], "numbers": ["2 frames"], "domain": "procedural"}
+{"text": "Seal 1/4-inch ventilation holes in winter covers with duct tape after Thanksgiving to block wind.", "entities": [], "numbers": ["1/4-inch"], "domain": "procedural"}
+{"text": "Assess colony strength by estimating bee coverage on 8-10 frames during April inspections before buildup.", "entities": [], "numbers": ["8-10 frames"], "domain": "procedural"}
+{"text": "Paint hive bodies every 3 years with exterior latex to extend wood life to 10+ seasons.", "entities": [], "numbers": ["3 years", "10+ seasons"], "domain": "procedural"}
+{"text": "Reposition hives 6 feet to the side after treating them for EFB to prevent cross-contamination spread.", "entities": ["EFB"], "numbers": ["6 feet"], "domain": "procedural"}
+{"text": "Add a second deep or medium super when 6-7 of 10 frames show brood or nectar.", "entities": [], "numbers": ["6-7", "10 frames"], "domain": "procedural"}
+{"text": "Record ambient temperature and hive weight weekly using a bathroom scale under the landing board.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Cull drone brood by removing cappings on 2-3 drone frames to control Varroa populations during early summer.", "entities": ["Varroa"], "numbers": ["2-3 drone frames"], "domain": "procedural"}
+{"text": "Provide 60+ pounds of stored honey or equivalent sugar before November to prevent winter starvation.", "entities": [], "numbers": ["60+ pounds"], "domain": "procedural"}
+{"text": "Demarcate hive locations with GPS coordinates accurate to 10 feet for seasonal migration scheduling.", "entities": ["GPS"], "numbers": ["10 feet"], "domain": "procedural"}
+{"text": "Brush bees off cappings gently using a soft brush before uncapping to prevent crushing during extraction.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Install 2-3 entrance feeders containing 1:1 syrup below hive entrances for weak spring colonies.", "entities": [], "numbers": ["2-3", "1:1"], "domain": "procedural"}
+{"text": "Perform a roll-over inspection by turning bottom brood frames upside-down to spot pests and pattern irregularities.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Verify queen viability by observing eggs in at least 5 of 10 frames within a 3-day window.", "entities": [], "numbers": ["5", "10 frames", "3-day"], "domain": "procedural"}
+{"text": "Wrap hives with 2-4 inches of fiberglass insulation in December, leaving top and bottom ventilated.", "entities": [], "numbers": ["2-4 inches"], "domain": "procedural"}
+{"text": "Schedule production splits 6 weeks before major nectar flow ends to maximize surplus honey.", "entities": [], "numbers": ["6 weeks"], "domain": "procedural"}
+{"text": "Clean propolis from queen excluder screens using 70% isopropyl alcohol before storing until next season.", "entities": [], "numbers": ["70%"], "domain": "procedural"}
+{"text": "Apply 1 mg/bee dust treatment when varroa drop exceeds 50 mites per sticky board in 48 hours.", "entities": [], "numbers": ["1 mg/bee", "50 mites", "48 hours"], "domain": "procedural"}
+{"text": "Monitor hive entrance for returning foragers at 6 AM on sunny spring mornings to assess activity levels.", "entities": [], "numbers": ["6 AM"], "domain": "procedural"}
+{"text": "Supplement pollen with patties containing 25% crude protein during April when natural sources are limited.", "entities": [], "numbers": ["25%"], "domain": "procedural"}
+{"text": "Remove entrance reducers and install full-width entrances by May 1st to allow maximum foraging traffic.", "entities": [], "numbers": ["May 1st"], "domain": "procedural"}
+{"text": "Photograph each hive's entrance pattern monthly to track changes in bee population density and disease signs.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Mix developer powder with water at 68-70°F and allow it to cool for 30 minutes before use in film development.", "entities": [], "numbers": ["68-70°F", "30 minutes"], "domain": "procedural"}
+{"text": "Agitate film reels in developer for 30 seconds every minute during 10-12 minute development to ensure even processing.", "entities": [], "numbers": ["30 seconds", "1 minute", "10-12 minutes"], "domain": "procedural"}
+{"text": "Rinse exposed paper in distilled water at 62-65°F for 2 minutes before placing in stop bath.", "entities": [], "numbers": ["62-65°F", "2 minutes"], "domain": "procedural"}
+{"text": "Expose photographic paper for 8-12 seconds under the enlarger before checking test strips for proper density.", "entities": [], "numbers": ["8-12 seconds"], "domain": "procedural"}
+{"text": "Dry fiber-based prints flat on muslin screens for 24-48 hours to prevent curling and warping.", "entities": [], "numbers": ["24-48 hours"], "domain": "procedural"}
+{"text": "Pre-soak RC paper in 75°F water for 1 minute before first chemistry contact to prevent uneven density.", "entities": ["RC"], "numbers": ["75°F", "1 minute"], "domain": "procedural"}
+{"text": "Verify chemical temperatures with a darkroom thermometer reading accurate to ±1°F every 30 minutes.", "entities": [], "numbers": ["±1°F", "30 minutes"], "domain": "procedural"}
+{"text": "Prepare stop bath by diluting 28% acetic acid at a 1:39 ratio for maximum capacity before replacement.", "entities": [], "numbers": ["28%", "1:39"], "domain": "procedural"}
+{"text": "Squeegee prints with a rubber roller at 45-degree angle using light pressure to prevent emulsion scratching.", "entities": [], "numbers": ["45-degree"], "domain": "procedural"}
+{"text": "Load 35mm film onto reels in complete darkness using tactile feedback; twist gently every 2-3 inches.", "entities": ["35mm"], "numbers": ["2-3 inches"], "domain": "procedural"}
+{"text": "Mask off test strips with opaque tape, exposing 1-inch wide sections at 2-second intervals.", "entities": [], "numbers": ["1-inch", "2-second"], "domain": "procedural"}
+{"text": "Clean enlarger lens with air bulb and lens tissue before each printing session to eliminate dust spots.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Set developer replenishment at 25% by volume per print batch to maintain consistency across work sessions.", "entities": [], "numbers": ["25%"], "domain": "procedural"}
+{"text": "Expose contact sheets at 150% of single-print settings to compensate for multiple frames on one sheet.", "entities": [], "numbers": ["150%"], "domain": "procedural"}
+{"text": "Mount negatives in sleeves with pencil annotations on the outside edge to identify frames and dates.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Tone prints in selenium solution diluted 1:19 for 4-8 minutes to increase permanence and shift blacks.", "entities": ["selenium"], "numbers": ["1:19", "4-8 minutes"], "domain": "procedural"}
+{"text": "Test enlarger light output using an 18% gray card before processing each new box of paper.", "entities": [], "numbers": ["18%"], "domain": "procedural"}
+{"text": "Wash prints in a rotary print washer using 60-70°F water for 15 minutes in four cycles.", "entities": [], "numbers": ["60-70°F", "15 minutes", "four"], "domain": "procedural"}
+{"text": "Measure paper speed using a light meter placed at enlarger height with lens wide open at f/5.6.", "entities": [], "numbers": ["f/5.6"], "domain": "procedural"}
+{"text": "Hardener should be added to fixer at 1 ounce per liter to reduce drying times on fiber paper.", "entities": [], "numbers": ["1 ounce", "1 liter"], "domain": "procedural"}
+{"text": "Dilute Dektol powder at 1:2 ratio for softer tones; use 1:1 for maximum contrast in shadows.", "entities": ["Dektol"], "numbers": ["1:2", "1:1"], "domain": "procedural"}
+{"text": "Maintain fixer bath for up to 500 8x10 prints before disposal and chemical replacement.", "entities": [], "numbers": ["500", "8x10"], "domain": "procedural"}
+{"text": "Soak unexposed paper in developer if left out to prevent fogging from room light over 5+ minutes.", "entities": [], "numbers": ["5+ minutes"], "domain": "procedural"}
+{"text": "Dry film hanging from clips with weighted reels at 68°F and 50% humidity in a dust-free cabinet.", "entities": [], "numbers": ["68°F", "50%"], "domain": "procedural"}
+{"text": "Adjust enlarger head height to project at 8x10 inches magnification by measuring with a ruler on the easel.", "entities": [], "numbers": ["8x10 inches"], "domain": "procedural"}
+{"text": "Mix bleach-fix at 1:4 concentration when using Cibachrome color paper; use immediately within 4 hours.", "entities": ["Cibachrome"], "numbers": ["1:4", "4 hours"], "domain": "procedural"}
+{"text": "Create a test strip matrix by exposing 4 sections at different f-stops: f/4, f/5.6, f/8, f/11.", "entities": [], "numbers": ["4 sections", "f/4", "f/5.6", "f/8", "f/11"], "domain": "procedural"}
+{"text": "Check red-light safelight wattage and distance; keep 40-watt bulbs 4 feet from paper during exposure.", "entities": [], "numbers": ["40-watt", "4 feet"], "domain": "procedural"}
+{"text": "Flatten curled negatives by placing them between glass for 12+ hours before scanning or printing.", "entities": [], "numbers": ["12+ hours"], "domain": "procedural"}
+{"text": "Adjust enlarger focus using a grain focuser on the projected image until individual grain clusters are sharp.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Replace fixer if bleach appears yellow or cloudy, indicating silver halide accumulation beyond 15% saturation.", "entities": [], "numbers": ["15%"], "domain": "procedural"}
+{"text": "Wash film in three 5-minute rinses with distilled water before storing in archival sleeves at 50% RH.", "entities": [], "numbers": ["three", "5-minute", "50%"], "domain": "procedural"}
+{"text": "Pre-flash RC paper at 20% of print exposure to increase shadow detail in high-contrast negatives.", "entities": ["RC"], "numbers": ["20%"], "domain": "procedural"}
+{"text": "Rotate print tongs every 2 prints in stop bath to minimize carryover of developer into subsequent baths.", "entities": [], "numbers": ["2 prints"], "domain": "procedural"}
+{"text": "Store chemistry in opaque bottles away from light; replace developer solution after 8 working sessions or 2 weeks.", "entities": [], "numbers": ["8 working sessions", "2 weeks"], "domain": "procedural"}
+{"text": "Coat prints with glossy or matte lacquer after drying for 48+ hours to increase scratch resistance.", "entities": [], "numbers": ["48+ hours"], "domain": "procedural"}
+{"text": "Zero the spindle to the workpiece using a probe tool accurate to ±0.005 inches before starting program.", "entities": [], "numbers": ["±0.005 inches"], "domain": "procedural"}
+{"text": "Set spindle speed to 2000-3000 RPM when facing hardened steel with a carbide insert cutter.", "entities": [], "numbers": ["2000-3000 RPM"], "domain": "procedural"}
+{"text": "Program a 0.100-inch depth of cut per pass for aluminum using a 1/2-inch end mill at 5000 RPM.", "entities": [], "numbers": ["0.100-inch", "1/2-inch", "5000 RPM"], "domain": "procedural"}
+{"text": "Measure tool deflection under load with a dial indicator; acceptable limit is ±0.002 inches for finishing passes.", "entities": [], "numbers": ["±0.002 inches"], "domain": "procedural"}
+{"text": "Clear chips manually using a brush, never compressed air, to prevent deflection of the cutting tool.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Calibrate the machine DRO coordinates against a known reference point every 2 weeks or after transport.", "entities": ["DRO"], "numbers": ["2 weeks"], "domain": "procedural"}
+{"text": "Run the mill at 500 RPM for threading operations on schedule-40 steel using a 3/8-16 carbide insert.", "entities": [], "numbers": ["500 RPM", "3/8-16"], "domain": "procedural"}
+{"text": "Program a 0.025-inch peck increment on deep holes exceeding 3 inches to prevent chip binding and tool breakage.", "entities": [], "numbers": ["0.025-inch", "3 inches"], "domain": "procedural"}
+{"text": "Verify cutter runout with a TIR gauge; acceptable tolerance is less than 0.002 inches total.", "entities": ["TIR"], "numbers": ["0.002 inches"], "domain": "procedural"}
+{"text": "Change cutting fluid every 300 operating hours or when foaming appears at the surface during cuts.", "entities": [], "numbers": ["300 operating hours"], "domain": "procedural"}
+{"text": "Set feed rate at 0.005 inches-per-tooth for stainless steel using a 4-flute end mill.", "entities": [], "numbers": ["0.005 inches-per-tooth", "4-flute"], "domain": "procedural"}
+{"text": "Dry-run the program at 10% spindle speed before engaging the material to check tool paths.", "entities": [], "numbers": ["10%"], "domain": "procedural"}
+{"text": "Install coolant pump pressure at 35-45 PSI to prevent chip evacuation issues without flooding the operator.", "entities": [], "numbers": ["35-45 PSI"], "domain": "procedural"}
+{"text": "Check tool offset tables in the CNC controller for accuracy before loading materials worth over $500.", "entities": ["CNC"], "numbers": ["$500"], "domain": "procedural"}
+{"text": "Program a 0.010-inch stock allowance for final finishing pass to achieve Ra 32 surface finish.", "entities": [], "numbers": ["0.010-inch", "Ra 32"], "domain": "procedural"}
+{"text": "Tighten workpiece clamps with 45 foot-pounds of torque using a calibrated torque wrench on fixture bolts.", "entities": [], "numbers": ["45 foot-pounds"], "domain": "procedural"}
+{"text": "Monitor spindle temperature via display; reduce RPM if bearing temperature exceeds 160°F for thermal protection.", "entities": [], "numbers": ["160°F"], "domain": "procedural"}
+{"text": "Inspect flute geometry after 50 hours of cutting; replace inserts when edge wear exceeds 0.010 inches.", "entities": [], "numbers": ["50 hours", "0.010 inches"], "domain": "procedural"}
+{"text": "Program tool change sequences to include a 2-second dwell after spindle stop for gear mesh settling.", "entities": [], "numbers": ["2-second"], "domain": "procedural"}
+{"text": "Set air pressure at 6 bars when using pneumatic workholding; verify actuator stroke with dial gauge.", "entities": [], "numbers": ["6 bars"], "domain": "procedural"}
+{"text": "Adjust cutting speed when changing materials: multiply by 0.6 for stainless, 0.5 for titanium alloys.", "entities": [], "numbers": ["0.6", "0.5"], "domain": "procedural"}
+{"text": "Measure finished part dimensions within ±0.001 inches using a digital caliper after warm-up period.", "entities": [], "numbers": ["±0.001 inches"], "domain": "procedural"}
+{"text": "Program rapid traverse distances to clear fixtures by minimum 0.500 inches to prevent collisions.", "entities": [], "numbers": ["0.500 inches"], "domain": "procedural"}
+{"text": "Dispose of cutting fluid waste according to EPA regulations; collect 55-gallon drums marked with discharge date.", "entities": ["EPA"], "numbers": ["55-gallon"], "domain": "procedural"}
+{"text": "Perform preventive maintenance on spindle bearings every 2000 hours by greasing through lubrication fittings.", "entities": [], "numbers": ["2000 hours"], "domain": "procedural"}
+{"text": "Install through-spindle coolant nozzles at 2-3 PSI above cutting pressure for optimal chip flushing.", "entities": [], "numbers": ["2-3 PSI"], "domain": "procedural"}
+{"text": "Program helical drilling for holes exceeding 10 times diameter depth using 0.500-inch peck depth increments.", "entities": [], "numbers": ["10 times", "0.500-inch"], "domain": "procedural"}
+{"text": "Verify machine backlash compensation in firmware; adjust offset by ±0.0001 inches if play exceeds specification.", "entities": [], "numbers": ["±0.0001 inches"], "domain": "procedural"}
+{"text": "Set work offset origins using 1-2-3 blocks as reference; zero X, Y, Z in sequence.", "entities": [], "numbers": ["1-2-3"], "domain": "procedural"}
+{"text": "Program 15-degree ramp entry moves for plunging operations to reduce shock loading on carbide cutters.", "entities": [], "numbers": ["15-degree"], "domain": "procedural"}
+{"text": "Inspect coolant nozzle alignment with cutter quarterly; misalignment over 5 degrees reduces efficiency by 20%.", "entities": [], "numbers": ["5 degrees", "20%"], "domain": "procedural"}
+{"text": "Replace spindle seals when coolant intrusion is detected; cost approximately $800-1200 for preventive replacement.", "entities": [], "numbers": ["$800-1200"], "domain": "procedural"}
+{"text": "Program 2% feed rate increase per degree Celsius above 68°F to maintain constant surface finish.", "entities": [], "numbers": ["2%", "68°F"], "domain": "procedural"}
+{"text": "Measure tool life empirically by tracking hours-per-insert over 20+ cutting sessions to optimize replacement scheduling.", "entities": [], "numbers": ["20+"], "domain": "procedural"}
+{"text": "Install workpiece limit switches 1 inch beyond maximum travel to prevent catastrophic spindle-table collisions.", "entities": [], "numbers": ["1 inch"], "domain": "procedural"}
+{"text": "Adjust spindle runout compensation by ±0.0005 inches per TIR reading; verify improvement with follow-up measurement.", "entities": ["TIR"], "numbers": ["±0.0005 inches"], "domain": "procedural"}
+{"text": "Hoist the mainsail with halyard tension at 7-8 on a mechanical tensionometer before leaving the dock.", "entities": [], "numbers": ["7-8"], "domain": "procedural"}
+{"text": "Check wind speed and direction using a handheld anemometer at deck level before plotting the course.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Bleed air from hydraulic lines in the steering system every 6 months or after winter storage.", "entities": [], "numbers": ["6 months"], "domain": "procedural"}
+{"text": "Trim the jib lead position 1-2 inches forward of factory marks when sailing above 20 knots of wind.", "entities": [], "numbers": ["1-2 inches", "20 knots"], "domain": "procedural"}
+{"text": "Inspect standing rigging every 5 years for corrosion pitting or stress cracks exceeding 1/32-inch depth.", "entities": [], "numbers": ["5 years", "1/32-inch"], "domain": "procedural"}
+{"text": "Set the luff tension of the mainsail at 15-20 pounds using a Luff Tension gauge during light air.", "entities": ["Luff Tension"], "numbers": ["15-20 pounds"], "domain": "procedural"}
+{"text": "Calibrate the compass by swinging the boat 360 degrees at known headings on calm days quarterly.", "entities": [], "numbers": ["360 degrees"], "domain": "procedural"}
+{"text": "Check boom vang tension at 10-15 pounds when beam-reaching to maintain proper sail shape and mast curve.", "entities": [], "numbers": ["10-15 pounds"], "domain": "procedural"}
+{"text": "Adjust ballast trim by moving 200-400 pounds fore or aft to achieve neutral weather helm feel.", "entities": [], "numbers": ["200-400 pounds"], "domain": "procedural"}
+{"text": "Pump bilges manually every 4 hours in rough seas or when water exceeds 2 inches in the sump.", "entities": [], "numbers": ["4 hours", "2 inches"], "domain": "procedural"}
+{"text": "Verify anchor rode scope at 7:1 ratio in moderate holding ground; increase to 10:1 in soft mud.", "entities": [], "numbers": ["7:1", "10:1"], "domain": "procedural"}
+{"text": "Monitor apparent wind angle using electronic display; tack when it exceeds 180 degrees on starboard.", "entities": [], "numbers": ["180 degrees"], "domain": "procedural"}
+{"text": "Fill freshwater tanks to 90% capacity to account for thermal expansion and prevent overflow damage.", "entities": [], "numbers": ["90%"], "domain": "procedural"}
+{"text": "Perform dock lines inspection; replace any showing chafe over 1/8-inch depth in the outer strands.", "entities": [], "numbers": ["1/8-inch"], "domain": "procedural"}
+{"text": "Adjust the traveler car tension to 20-25 pounds to prevent excessive lateral movement during gusts.", "entities": [], "numbers": ["20-25 pounds"], "domain": "procedural"}
+{"text": "Record barometer readings every 3 hours during passage planning to predict weather system movement.", "entities": [], "numbers": ["3 hours"], "domain": "procedural"}
+{"text": "Install sea anchors with 100-150 feet of scope in severe storm conditions to maintain heading.", "entities": [], "numbers": ["100-150 feet"], "domain": "procedural"}
+{"text": "Measure freeboard amidships with a ruler; ensure minimum 6 inches clearance when fully provisioned.", "entities": [], "numbers": ["6 inches"], "domain": "procedural"}
+{"text": "Flush engine raw water cooling lines with fresh water for 15-20 minutes after saltwater operation.", "entities": [], "numbers": ["15-20 minutes"], "domain": "procedural"}
+{"text": "Check rudder play with a gauge; acceptable limit is less than 1/16-inch lateral movement at the stock.", "entities": [], "numbers": ["1/16-inch"], "domain": "procedural"}
+{"text": "Rotate crew watch schedules every 4 hours in offshore passages to maintain alertness and prevent fatigue.", "entities": [], "numbers": ["4 hours"], "domain": "procedural"}
+{"text": "Inspect seacocks annually; operate each valve 2-3 times to prevent corrosion buildup and seizing.", "entities": [], "numbers": ["2-3 times"], "domain": "procedural"}
+{"text": "Clean spreader tips and ensure they clear shrouds by minimum 3 inches when mast rocks sideways.", "entities": [], "numbers": ["3 inches"], "domain": "procedural"}
+{"text": "Adjust the backstay tension at 8-12 pounds to reduce mainsail leech flutter without over-straightening.", "entities": [], "numbers": ["8-12 pounds"], "domain": "procedural"}
+{"text": "Top up through-hull fitting caulking with marine sealant when hairline cracks appear around the flange.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Measure mast rake at the spreader using a 50-foot tape; correction factor is ±1-inch-per-10-feet variation.", "entities": [], "numbers": ["50-foot", "±1-inch-per-10-feet"], "domain": "procedural"}
+{"text": "Grease winch pawls and springs with marine grease every 200 operating hours or annually.", "entities": [], "numbers": ["200 operating hours"], "domain": "procedural"}
+{"text": "Set heel angle limit at 25-30 degrees using an inclinometer; reef immediately if exceeded in gusts.", "entities": [], "numbers": ["25-30 degrees"], "domain": "procedural"}
+{"text": "Replace UV-damaged lazy jacks covers before long passages; torn covers reduce sailhandling efficiency by 15%.", "entities": [], "numbers": ["15%"], "domain": "procedural"}
+{"text": "Verify chart datum corrections every 50 nautical miles; cross-check GPS with magnetic compass headings.", "entities": ["GPS"], "numbers": ["50 nautical miles"], "domain": "procedural"}
+{"text": "Inspect rope splice integrity by pulling test sections with 100-pound force; re-splice if slippage occurs.", "entities": [], "numbers": ["100-pound"], "domain": "procedural"}
+{"text": "Lubricate boom gooseneck joint quarterly with 3-in-1 oil to prevent corrosion and binding.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Clean saltwater spray from cabin windows using 50/50 vinegar solution to prevent permanent salt etching.", "entities": [], "numbers": ["50/50"], "domain": "procedural"}
+{"text": "Check galvanic isolators on through-hull bonding; replace zinc anodes when reduced to 50% original thickness.", "entities": [], "numbers": ["50%"], "domain": "procedural"}
+{"text": "Adjust sheet leads when changing jibs; forward lead angle should be 8-12 degrees off the luff line.", "entities": [], "numbers": ["8-12 degrees"], "domain": "procedural"}
+{"text": "Perform tiller response test by applying 5 pounds of steering pressure; rudder should respond within 2 seconds.", "entities": [], "numbers": ["5 pounds", "2 seconds"], "domain": "procedural"}
+{"text": "Maintain beer fermentation temperature at 65-68°F by immersing the carboy in a 5-gallon water bath overnight.", "entities": [], "numbers": ["65-68°F", "5-gallon"], "domain": "procedural"}
+{"text": "Pitch yeast at 64-72°F into wort cooled to 68°F to ensure rapid colonization within 12 hours.", "entities": [], "numbers": ["64-72°F", "68°F", "12 hours"], "domain": "procedural"}
+{"text": "Record specific gravity readings daily using a hydrometer from days 3-7 to predict final abv percentage.", "entities": [], "numbers": ["days 3-7"], "domain": "procedural"}
+{"text": "Cold-crash kombucha at 38-40°F for 3-5 days to clarify and compact settled particles before bottling.", "entities": [], "numbers": ["38-40°F", "3-5 days"], "domain": "procedural"}
+{"text": "Aerate wine must with 30-second oxidation passes using a sanitized spoon or air pump on day 1.", "entities": [], "numbers": ["30-second", "day 1"], "domain": "procedural"}
+{"text": "Stir kimchi ingredients to ensure 15% salt saturation; taste a sample spoonful for proper salinity balance.", "entities": [], "numbers": ["15%"], "domain": "procedural"}
+{"text": "Monitor pH of sauerkraut weekly; fermentation is complete when pH drops below 3.5 and remains stable.", "entities": [], "numbers": ["3.5"], "domain": "procedural"}
+{"text": "Layer dry miso ingredients in a glass jar with 10-12% salt ratio before sealing for 6-12 months.", "entities": [], "numbers": ["10-12%", "6-12 months"], "domain": "procedural"}
+{"text": "Bottle-condition beer at 72°F for 2-3 weeks; check for carbonation by flicking the bottle gently.", "entities": [], "numbers": ["72°F", "2-3 weeks"], "domain": "procedural"}
+{"text": "Cool lacto-fermented vegetables to 55-60°F immediately after heat processing to halt fermentation and preserve crunch.", "entities": [], "numbers": ["55-60°F"], "domain": "procedural"}
+{"text": "Add yeast nutrient at 1 teaspoon per gallon on day 2 if wine shows sluggish fermentation activity.", "entities": [], "numbers": ["1 teaspoon", "1 gallon", "day 2"], "domain": "procedural"}
+{"text": "Test cheese rennet dosage by adding 1/4 teaspoon to 1 quart of test milk; curds should set in 8-10 minutes.", "entities": [], "numbers": ["1/4 teaspoon", "1 quart", "8-10 minutes"], "domain": "procedural"}
+{"text": "Measure brine density at 1.080 gravity for pickles; use a hydrometer or salinity gauge for consistency.", "entities": [], "numbers": ["1.080"], "domain": "procedural"}
+{"text": "Burp sealed fermentation jars twice daily to release built-up carbon dioxide pressure safely.", "entities": [], "numbers": ["twice daily"], "domain": "procedural"}
+{"text": "Skim white foam from kraut brine surface every 2-3 days to prevent mold colonization and off-flavors.", "entities": [], "numbers": ["2-3 days"], "domain": "procedural"}
+{"text": "Check water kefir ferment at 72-76°F; grains should double in volume within 24-36 hours at ideal temperature.", "entities": [], "numbers": ["72-76°F", "24-36 hours"], "domain": "procedural"}
+{"text": "Calibrate refractometer with distilled water before measuring fruit fermentation sugar content.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Rack wine into secondary carboy after 7-10 days to separate from sediment and promote clarity.", "entities": [], "numbers": ["7-10 days"], "domain": "procedural"}
+{"text": "Age vinegar in wooden barrels at 55-68°F; cover with cheesecloth to allow air exchange while blocking insects.", "entities": [], "numbers": ["55-68°F"], "domain": "procedural"}
+{"text": "Add coffee beans at 1 ounce per gallon on day 5 of porter fermentation for subtle depth without bitterness.", "entities": [], "numbers": ["1 ounce", "1 gallon", "day 5"], "domain": "procedural"}
+{"text": "Sanitize fermentation vessels with 1:10 bleach solution, rinsing thoroughly with distilled water.", "entities": [], "numbers": ["1:10"], "domain": "procedural"}
+{"text": "Monitor tempeh fermentation; check for white mold coverage by day 2; prevent gray or black mold spread.", "entities": [], "numbers": ["day 2"], "domain": "procedural"}
+{"text": "Layer honey on top of sourdough starter to prevent drying; refresh culture at 1:1:1 ratio daily.", "entities": [], "numbers": ["1:1:1"], "domain": "procedural"}
+{"text": "Seal cheese in wax at 4-6 inches thickness after aging 2-4 weeks; cure additional 2-3 months in cool cellar.", "entities": [], "numbers": ["4-6 inches", "2-4 weeks", "2-3 months"], "domain": "procedural"}
+{"text": "Measure sake koji growth by checking rice texture; fermentation begins when grains bind with white mycelium.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Add sulfite preservative at 1/2 teaspoon per gallon to white wine before secondary fermentation.", "entities": [], "numbers": ["1/2 teaspoon", "1 gallon"], "domain": "procedural"}
+{"text": "Inspect yogurt culture incubation at 110°F for 6-8 hours; ready when whey separates from curd.", "entities": [], "numbers": ["110°F", "6-8 hours"], "domain": "procedural"}
+{"text": "Bubble carbon dioxide through water kefir at 2 PSI for final carbonation stage; chill immediately after.", "entities": [], "numbers": ["2 PSI"], "domain": "procedural"}
+{"text": "Record ambient temperature, humidity, and activity level daily during 6-month miso aging cycle.", "entities": [], "numbers": ["6-month"], "domain": "procedural"}
+{"text": "Test sauerkraut doneness by biting a piece; fermentation complete when sour taste develops and crunch remains.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Dry koji spores at 55% humidity for 3-5 days before grinding into powder for future batches.", "entities": [], "numbers": ["55%", "3-5 days"], "domain": "procedural"}
+{"text": "Adjust starter culture pH to 4.5-5.0 using dilute vinegar if fermentation stalls after 48 hours of inoculation.", "entities": [], "numbers": ["4.5-5.0", "48 hours"], "domain": "procedural"}
+{"text": "Layer salt between cabbage layers at 2-3% by weight to initiate osmotic pressure and juice release.", "entities": [], "numbers": ["2-3%"], "domain": "procedural"}
+{"text": "Measure final alcohol content at ±0.5% precision using a hydrometertable and temperature correction factor.", "entities": [], "numbers": ["±0.5%"], "domain": "procedural"}
+{"text": "Store fermented products at 50-55°F in glass containers sealed with cloth to allow slow secondary fermentation.", "entities": [], "numbers": ["50-55°F"], "domain": "procedural"}
+{"text": "Inoculate batch with starter culture at 2% by volume to achieve predictable fermentation timeline.", "entities": [], "numbers": ["2%"], "domain": "procedural"}
+{"text": "Inspect wire rope annually for kinks or valley breaks exceeding 1/16-inch depth; replace immediately if found.", "entities": [], "numbers": ["1/16-inch"], "domain": "procedural"}
+{"text": "Tension rigging cable at 80-90 PSI using a load cell; verify with three measurements across the span.", "entities": [], "numbers": ["80-90 PSI", "three"], "domain": "procedural"}
+{"text": "Space carabiners at 12-18 inches along the pipe grid to prevent shifting and binding during load changes.", "entities": [], "numbers": ["12-18 inches"], "domain": "procedural"}
+{"text": "Lubricate counterweight arbor pulley sheaves quarterly with light machine oil applied through grease fittings.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Verify rigging grid anchor points using ±1-inch laser measurement tool at least once every touring season.", "entities": [], "numbers": ["±1-inch"], "domain": "procedural"}
+{"text": "Set battens perpendicular to pipe using a carpenter's square; tolerance is ±1/8-inch across 40-foot span.", "entities": [], "numbers": ["±1/8-inch", "40-foot"], "domain": "procedural"}
+{"text": "Install safety cables with a 2:1 safety factor for all overhead elements; document with laminated tag labels.", "entities": [], "numbers": ["2:1"], "domain": "procedural"}
+{"text": "Apply cable clamps with spacing at 6-inch intervals; tighten nuts with 15-20 foot-pounds of torque.", "entities": [], "numbers": ["6-inch", "15-20 foot-pounds"], "domain": "procedural"}
+{"text": "Test hoist brake mechanism under full rated load during monthly maintenance; replace friction pads if worn.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Adjust platform sway by adding diagonal bracing at 45-degree angles; deflection limit is 1-inch under 500-pound load.", "entities": [], "numbers": ["45-degree", "1-inch", "500-pound"], "domain": "procedural"}
+{"text": "Mark rigging cable ends with colored electrical tape at 10-foot intervals for depth reference at grid height.", "entities": [], "numbers": ["10-foot"], "domain": "procedural"}
+{"text": "Inspect truss caster wheels for flat spots or corrosion; replace if damage exceeds 1/8-inch.", "entities": [], "numbers": ["1/8-inch"], "domain": "procedural"}
+{"text": "Pre-rig drop ceiling elements with chain hoist at 12-foot increments; test clearance to permanent fixtures.", "entities": [], "numbers": ["12-foot"], "domain": "procedural"}
+{"text": "Hang drape panels with 2-inch grommets spaced 4-6 feet apart using snap hooks rated for wind load.", "entities": [], "numbers": ["2-inch", "4-6 feet"], "domain": "procedural"}
+{"text": "Check hoist certification stickers; remove from service immediately if inspection date is overdue by 1 day.", "entities": [], "numbers": ["1 day"], "domain": "procedural"}
+{"text": "Install emergency stop buttons within 10 feet of each hoist; color-code them red with white lettering.", "entities": [], "numbers": ["10 feet"], "domain": "procedural"}
+{"text": "Dress cables away from foot traffic using cable ramps with maximum slope angle of 30 degrees.", "entities": [], "numbers": ["30 degrees"], "domain": "procedural"}
+{"text": "Balance truss weight across multiple rigging points; calculate load per point and mark on load documentation.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Replace thimbles in cable terminations every 3-5 years to prevent deformation and wire rope crushing.", "entities": [], "numbers": ["3-5 years"], "domain": "procedural"}
+{"text": "Mark stage floor elevation changes with glow tape 3 inches wide; update markings after each configuration change.", "entities": [], "numbers": ["3 inches"], "domain": "procedural"}
+{"text": "Weight-test scaffolding platforms by adding 50 pounds-per-square-foot distributed load before allowing crew access.", "entities": [], "numbers": ["50 pounds-per-square-foot"], "domain": "procedural"}
+{"text": "Inspect swaged cable terminations for corrosion streaking; replace if discoloration exceeds 20% of surface area.", "entities": [], "numbers": ["20%"], "domain": "procedural"}
+{"text": "Apply threadlocker compound (Loctite 243) to all hoist suspension bolts; cure time is 24 hours.", "entities": ["Loctite 243"], "numbers": ["24 hours"], "domain": "procedural"}
+{"text": "Verify counterweight load by calculating: suspended load in pounds plus 10% equals minimum counterweight requirement.", "entities": [], "numbers": ["10%"], "domain": "procedural"}
+{"text": "Run rigging automation at reduced speed (25% maximum) during technical rehearsals to verify sequences.", "entities": [], "numbers": ["25%"], "domain": "procedural"}
+{"text": "Measure sightline angles using a laser level from front-of-house; head obstruction should not exceed 15 degrees.", "entities": [], "numbers": ["15 degrees"], "domain": "procedural"}
+{"text": "Paint rigging elements with flame-retardant coating every 2-3 years; maintain compliance with fire code testing.", "entities": [], "numbers": ["2-3 years"], "domain": "procedural"}
+{"text": "Secure deck-mounted rigging bases with chemical anchors rated for 5000-pound shear load each.", "entities": [], "numbers": ["5000-pound"], "domain": "procedural"}
+{"text": "Document all rigging changes in a three-ring binder with sketches and load calculations; update quarterly.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Test soft goods for flame-retardant treatment annually by sending samples to ISO-17421 certified lab.", "entities": ["ISO-17421"], "numbers": [], "domain": "procedural"}
+{"text": "Install cable ladders at intervals no greater than 10 feet for personnel access to elevated rigging points.", "entities": [], "numbers": ["10 feet"], "domain": "procedural"}
+{"text": "Adjust guide rail alignment using a straightedge; tolerance is ±1/16-inch across entire counterweight travel range.", "entities": [], "numbers": ["±1/16-inch"], "domain": "procedural"}
+{"text": "Replace rope slings annually if used daily; inspect visually for fraying or burn marks exceeding 1/2-inch.", "entities": [], "numbers": ["1/2-inch"], "domain": "procedural"}
+{"text": "Record hoist maintenance logs documenting reset date, load-tested weight, and technician certification number.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Verify fall arrest anchor points can withstand 5000-pound static load using certified testing equipment.", "entities": [], "numbers": ["5000-pound"], "domain": "procedural"}
+{"text": "Calibrate load cells quarterly against certified weights; acceptable variance is ±2% of indicated load.", "entities": [], "numbers": ["±2%"], "domain": "procedural"}
+{"text": "Perform 25% water changes weekly using water aged at room temperature for 24 hours before addition.", "entities": [], "numbers": ["25%", "24 hours"], "domain": "procedural"}
+{"text": "Test tank pH, ammonia, nitrite, and nitrate levels twice weekly using API master test kit; maintain logs.", "entities": ["API"], "numbers": ["twice weekly"], "domain": "procedural"}
+{"text": "Clean filter media in old tank water during water changes to preserve beneficial bacteria colonies.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Adjust aquarium heater to maintain 76-78°F for tropical fish using a calibrated thermometer; check twice daily.", "entities": [], "numbers": ["76-78°F", "twice daily"], "domain": "procedural"}
+{"text": "Feed fish twice daily at amounts they consume completely within 2-3 minutes; remove uneaten food after 5 minutes.", "entities": [], "numbers": ["twice daily", "2-3 minutes", "5 minutes"], "domain": "procedural"}
+{"text": "Monitor nitrate accumulation; perform partial water change when levels exceed 40 PPM in established tanks.", "entities": ["PPM"], "numbers": ["40 PPM"], "domain": "procedural"}
+{"text": "Replace activated carbon in filter every 2-3 weeks or when water clarity decreases visibly.", "entities": [], "numbers": ["2-3 weeks"], "domain": "procedural"}
+{"text": "Acclimate new fish by floating bags for 15 minutes, then adding tank water gradually over 30-minute intervals.", "entities": [], "numbers": ["15 minutes", "30-minute"], "domain": "procedural"}
+{"text": "Inspect substrate for dead zones by stirring with fingers weekly; vacuum areas showing black debris buildup.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Measure alkalinity at 4-6 dKH using a liquid titration kit; maintain buffering capacity for pH stability.", "entities": ["dKH"], "numbers": ["4-6 dKH"], "domain": "procedural"}
+{"text": "Check fish behavior daily for signs of stress: labored breathing, clamping fins, or erratic swimming.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Algae growth indicates excess nutrient or light; reduce photoperiod to 8-10 hours daily if coating exceeds 10%.", "entities": [], "numbers": ["8-10 hours", "10%"], "domain": "procedural"}
+{"text": "Prime new filters with seeded media from established tanks to bypass 4-6 week nitrogen cycle maturation.", "entities": [], "numbers": ["4-6 week"], "domain": "procedural"}
+{"text": "Test substrate pH at 1-inch depth using a test kit; adjust with additions of limestone if below 6.0.", "entities": [], "numbers": ["1-inch", "6.0"], "domain": "procedural"}
+{"text": "Condition tap water with dechlorinator rated for 50+ gallons per cap dose before introducing to tank.", "entities": [], "numbers": ["50+ gallons"], "domain": "procedural"}
+{"text": "Trim aquatic plants at stem nodes when reaching 80% of tank height; replant cuttings 2 inches apart.", "entities": [], "numbers": ["80%", "2 inches"], "domain": "procedural"}
+{"text": "Clean glass walls monthly using algae scraper; avoid scratching acrylic tanks with abrasive tools.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Record temperature fluctuations exceeding ±2°F; investigate equipment failure or ambient room changes.", "entities": [], "numbers": ["±2°F"], "domain": "procedural"}
+{"text": "Establish feeding schedule at 70% of expected consumption; adjust weekly based on leftover observation.", "entities": [], "numbers": ["70%"], "domain": "procedural"}
+{"text": "Replace sponge pre-filter when water flow rate drops below 50% of original baseline measurement.", "entities": [], "numbers": ["50%"], "domain": "procedural"}
+{"text": "Install powerhead circulation at 10x tank volume per hour turnover; adjust angle to prevent dead zones.", "entities": [], "numbers": ["10x"], "domain": "procedural"}
+{"text": "Monitor phosphate levels; remove excess plant biomass when PO4 exceeds 1 PPM in planted tanks.", "entities": ["PO4", "PPM"], "numbers": ["1 PPM"], "domain": "procedural"}
+{"text": "Calibrate refractometer with saltwater solution before measuring salinity at 1.023-1.025 SG for reef tanks.", "entities": ["SG"], "numbers": ["1.023-1.025"], "domain": "procedural"}
+{"text": "Inspect heater thermostat functionality by noting cycling frequency; should run 30-50% of daylight cycle.", "entities": [], "numbers": ["30-50%"], "domain": "procedural"}
+{"text": "Use master test kits exclusively; verify reagent bottle dates; discard if older than 18 months.", "entities": [], "numbers": ["18 months"], "domain": "procedural"}
+{"text": "Increase aeration in tanks showing bubble nest building (Betta) or labyrinth breathing fish.", "entities": ["Betta"], "numbers": [], "domain": "procedural"}
+{"text": "Document fish species compatibility before introduction; aggressive species require 10+ gallons per individual.", "entities": [], "numbers": ["10+ gallons"], "domain": "procedural"}
+{"text": "Remove dead plant matter within 2-3 hours to prevent ammonia spikes and disease risk.", "entities": [], "numbers": ["2-3 hours"], "domain": "procedural"}
+{"text": "Quarantine new fish for 14 days in isolation tank; observe for disease symptoms before main tank introduction.", "entities": [], "numbers": ["14 days"], "domain": "procedural"}
+{"text": "Adjust pH gradually using buffering products; limit daily changes to ±0.2 pH units maximum.", "entities": [], "numbers": ["±0.2 pH units"], "domain": "procedural"}
+{"text": "Clean powerhead impeller by soaking in vinegar for 1 hour monthly to remove mineral deposits.", "entities": [], "numbers": ["1 hour"], "domain": "procedural"}
+{"text": "Measure dissolved oxygen using a handheld meter; maintain above 5 PPM for tropical community tanks.", "entities": ["PPM"], "numbers": ["5 PPM"], "domain": "procedural"}
+{"text": "Schedule annual filter media replacement rotation; replace 25% of media every 3 months for stability.", "entities": [], "numbers": ["25%", "3 months"], "domain": "procedural"}
+{"text": "Verify lighting spectrum using kelvin temperature; use 6500K for planted tanks, 10000K for reef displays.", "entities": ["kelvin"], "numbers": ["6500K", "10000K"], "domain": "procedural"}
+{"text": "Inspect for parasites by observing fish closely under bright light; treat with salt dips at 3% salinity if detected.", "entities": [], "numbers": ["3%"], "domain": "procedural"}

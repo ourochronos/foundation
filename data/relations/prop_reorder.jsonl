@@ -1,0 +1,119 @@
+{"relation": "clause_reorder", "x": "After the storm passed, crews restored power to 4,200 homes.", "y": "Crews restored power to 4,200 homes after the storm passed."}
+{"relation": "clause_reorder", "x": "Before the meeting started, Sarah reviewed all documents.", "y": "Sarah reviewed all documents before the meeting started."}
+{"relation": "clause_reorder", "x": "When the sun rose, birds began singing.", "y": "Birds began singing when the sun rose."}
+{"relation": "clause_reorder", "x": "While the children slept, parents prepared breakfast.", "y": "Parents prepared breakfast while the children slept."}
+{"relation": "clause_reorder", "x": "Once the repairs finished, the factory reopened production.", "y": "The factory reopened production once the repairs finished."}
+{"relation": "clause_reorder", "x": "If interest rates drop, housing sales typically increase.", "y": "Housing sales typically increase if interest rates drop."}
+{"relation": "clause_reorder", "x": "Unless you register by Friday, you cannot attend.", "y": "You cannot attend unless you register by Friday."}
+{"relation": "clause_reorder", "x": "Provided that supplies arrive on time, we launch Tuesday.", "y": "We launch Tuesday provided that supplies arrive on time."}
+{"relation": "clause_reorder", "x": "In case the power fails, backup generators activate automatically.", "y": "Backup generators activate automatically in case the power fails."}
+{"relation": "clause_reorder", "x": "Only if the board approves will the merger proceed.", "y": "The merger will proceed only if the board approves."}
+{"relation": "clause_reorder", "x": "Because demand increased, prices rose significantly.", "y": "Prices rose significantly because demand increased."}
+{"relation": "clause_reorder", "x": "As inventory depleted, customers faced longer wait times.", "y": "Customers faced longer wait times as inventory depleted."}
+{"relation": "clause_reorder", "x": "Since the law changed, compliance costs grew.", "y": "Compliance costs grew since the law changed."}
+{"relation": "clause_reorder", "x": "Given that production halted, quarterly revenue declined.", "y": "Quarterly revenue declined given that production halted."}
+{"relation": "clause_reorder", "x": "Owing to budget constraints, hiring was postponed.", "y": "Hiring was postponed owing to budget constraints."}
+{"relation": "clause_reorder", "x": "Although profits fell, the company hired 200 workers.", "y": "The company hired 200 workers although profits fell."}
+{"relation": "clause_reorder", "x": "Though the weather worsened, the game continued.", "y": "The game continued though the weather worsened."}
+{"relation": "clause_reorder", "x": "While prices increased, demand remained constant.", "y": "Demand remained constant while prices increased."}
+{"relation": "clause_reorder", "x": "Despite the setback, team morale stayed high.", "y": "Team morale stayed high despite the setback."}
+{"relation": "clause_reorder", "x": "Even though traffic congested the highway, we arrived early.", "y": "We arrived early even though traffic congested the highway."}
+{"relation": "clause_reorder", "x": "Where wildfires spread, evacuations began immediately.", "y": "Evacuations began immediately where wildfires spread."}
+{"relation": "clause_reorder", "x": "Wherever solar panels installed, energy bills dropped.", "y": "Energy bills dropped wherever solar panels installed."}
+{"relation": "clause_reorder", "x": "In areas that flooded, rebuilding took years.", "y": "Rebuilding took years in areas that flooded."}
+{"relation": "clause_reorder", "x": "Throughout regions experiencing drought, water usage declined.", "y": "Water usage declined throughout regions experiencing drought."}
+{"relation": "clause_reorder", "x": "In cities where restrictions applied, infection rates fell.", "y": "Infection rates fell in cities where restrictions applied."}
+{"relation": "clause_reorder", "x": "To maximize efficiency, we restructured operations.", "y": "We restructured operations to maximize efficiency."}
+{"relation": "clause_reorder", "x": "So that students learn better, classes are smaller.", "y": "Classes are smaller so that students learn better."}
+{"relation": "clause_reorder", "x": "In order to reduce waste, we installed recycling.", "y": "We installed recycling in order to reduce waste."}
+{"relation": "clause_reorder", "x": "With the goal of improving sales, we hired consultants.", "y": "We hired consultants with the goal of improving sales."}
+{"relation": "clause_reorder", "x": "For the purpose of testing quality, inspectors checked units.", "y": "Inspectors checked units for the purpose of testing quality."}
+{"relation": "clause_reorder", "x": "As the project progressed, team efficiency improved.", "y": "Team efficiency improved as the project progressed."}
+{"relation": "clause_reorder", "x": "Until the contract renewed, salaries remained frozen.", "y": "Salaries remained frozen until the contract renewed."}
+{"relation": "clause_reorder", "x": "The moment the bell rang, students exited the class.", "y": "Students exited the class the moment the bell rang."}
+{"relation": "clause_reorder", "x": "Immediately after the announcement, stock prices dropped.", "y": "Stock prices dropped immediately after the announcement."}
+{"relation": "clause_reorder", "x": "Assuming the forecast holds, temperatures will rise.", "y": "Temperatures will rise assuming the forecast holds."}
+{"relation": "clause_reorder", "x": "Unless otherwise specified, delivery occurs within five days.", "y": "Delivery occurs within five days unless otherwise specified."}
+{"relation": "clause_reorder", "x": "Should circumstances change, we will notify all parties.", "y": "We will notify all parties should circumstances change."}
+{"relation": "clause_reorder", "x": "Inasmuch as funding permits, construction begins next month.", "y": "Construction begins next month inasmuch as funding permits."}
+{"relation": "clause_reorder", "x": "Because of the accident, traffic was delayed an hour.", "y": "Traffic was delayed an hour because of the accident."}
+{"relation": "clause_reorder", "x": "Due to insufficient evidence, charges were dismissed.", "y": "Charges were dismissed due to insufficient evidence."}
+{"relation": "clause_reorder", "x": "Although attendance declined, the event remained successful.", "y": "The event remained successful although attendance declined."}
+{"relation": "clause_reorder", "x": "Notwithstanding the objections, the plan proceeded.", "y": "The plan proceeded notwithstanding the objections."}
+{"relation": "clause_reorder", "x": "While competition intensified, revenue remained stable.", "y": "Revenue remained stable while competition intensified."}
+{"relation": "clause_reorder", "x": "Whereas output increased, profit margins shrank.", "y": "Profit margins shrank whereas output increased."}
+{"relation": "clause_reorder", "x": "Instead of canceling, organizers rescheduled for July 15.", "y": "Organizers rescheduled for July 15 instead of canceling."}
+{"relation": "clause_reorder", "x": "No matter how temperatures fluctuated, the system maintained stability.", "y": "The system maintained stability no matter how temperatures fluctuated."}
+{"relation": "clause_reorder", "x": "In whichever region we expanded, sales exceeded targets.", "y": "Sales exceeded targets in whichever region we expanded."}
+{"relation": "clause_reorder", "x": "Whenever tourists arrived, local restaurants thrived.", "y": "Local restaurants thrived whenever tourists arrived."}
+{"relation": "clause_reorder", "x": "Wherever we looked, opportunities emerged.", "y": "Opportunities emerged wherever we looked."}
+{"relation": "clause_reorder", "x": "To reduce overhead costs, the company went remote.", "y": "The company went remote to reduce overhead costs."}
+{"relation": "clause_reorder", "x": "So that quality improves, we hired experts.", "y": "We hired experts so that quality improves."}
+{"relation": "clause_reorder", "x": "In order that customers satisfy, we offer refunds.", "y": "We offer refunds in order that customers satisfy."}
+{"relation": "clause_reorder", "x": "With an eye toward growth, we opened three branches.", "y": "We opened three branches with an eye toward growth."}
+{"relation": "clause_reorder", "x": "In order to meet deadlines, developers worked overtime.", "y": "Developers worked overtime in order to meet deadlines."}
+{"relation": "clause_reorder", "x": "When the CEO resigned, share prices plummeted.", "y": "Share prices plummeted when the CEO resigned."}
+{"relation": "clause_reorder", "x": "After two years of losses, the startup closed.", "y": "The startup closed after two years of losses."}
+{"relation": "clause_reorder", "x": "Before the regulations changed, we filed permits.", "y": "We filed permits before the regulations changed."}
+{"relation": "clause_reorder", "x": "By the time the report issued, the story broke.", "y": "The story broke by the time the report issued."}
+{"relation": "clause_reorder", "x": "Just as demand peaked, supply ran out.", "y": "Supply ran out just as demand peaked."}
+{"relation": "clause_reorder", "x": "As soon as results arrived, we celebrated.", "y": "We celebrated as soon as results arrived."}
+{"relation": "clause_reorder", "x": "The instant we launched, downloads exceeded 50,000.", "y": "Downloads exceeded 50,000 the instant we launched."}
+{"relation": "clause_reorder", "x": "Since the upgrade installed, performance improved by 30 percent.", "y": "Performance improved by 30 percent since the upgrade installed."}
+{"relation": "clause_reorder", "x": "Ever since he joined, revenue doubled.", "y": "Revenue doubled ever since he joined."}
+{"relation": "clause_reorder", "x": "Directly after launch, customers complained.", "y": "Customers complained directly after launch."}
+{"relation": "clause_reorder", "x": "If the weather permits, we will sail Saturday.", "y": "We will sail Saturday if the weather permits."}
+{"relation": "clause_reorder", "x": "Unless we hire soon, deadlines slip.", "y": "Deadlines slip unless we hire soon."}
+{"relation": "clause_reorder", "x": "Provided that approval arrives, work starts Monday.", "y": "Work starts Monday provided that approval arrives."}
+{"relation": "clause_reorder", "x": "In the event that sales drop, layoffs follow.", "y": "Layoffs follow in the event that sales drop."}
+{"relation": "clause_reorder", "x": "On the condition that you invest, we expand.", "y": "We expand on the condition that you invest."}
+{"relation": "clause_reorder", "x": "Given that resources exist, the project proceeds.", "y": "The project proceeds given that resources exist."}
+{"relation": "clause_reorder", "x": "Assuming attendance justifies costs, next year we repeat.", "y": "Next year we repeat assuming attendance justifies costs."}
+{"relation": "clause_reorder", "x": "Seeing as he is qualified, we made an offer.", "y": "We made an offer seeing as he is qualified."}
+{"relation": "clause_reorder", "x": "Because of the shortage, prices increased forty percent.", "y": "Prices increased forty percent because of the shortage."}
+{"relation": "clause_reorder", "x": "Owing to mechanical failure, trains stopped.", "y": "Trains stopped owing to mechanical failure."}
+{"relation": "clause_reorder", "x": "On account of poor service, customers left negative reviews.", "y": "Customers left negative reviews on account of poor service."}
+{"relation": "clause_reorder", "x": "As a result of poor grades, he lost his scholarship.", "y": "He lost his scholarship as a result of poor grades."}
+{"relation": "clause_reorder", "x": "Due to staff shortages, appointments were canceled.", "y": "Appointments were canceled due to staff shortages."}
+{"relation": "clause_reorder", "x": "Since the merger, operations consolidated into five offices.", "y": "Operations consolidated into five offices since the merger."}
+{"relation": "clause_reorder", "x": "In that the contract expired, payments stopped.", "y": "Payments stopped in that the contract expired."}
+{"relation": "clause_reorder", "x": "Although output dropped, employment remained stable.", "y": "Employment remained stable although output dropped."}
+{"relation": "clause_reorder", "x": "Though expensive, the solution saved considerable time.", "y": "The solution saved considerable time though expensive."}
+{"relation": "clause_reorder", "x": "While critics objected, we proceeded with the plan.", "y": "We proceeded with the plan while critics objected."}
+{"relation": "clause_reorder", "x": "Whereas she favored caution, he pushed for expansion.", "y": "He pushed for expansion whereas she favored caution."}
+{"relation": "clause_reorder", "x": "Rather than abandoning, we persisted.", "y": "We persisted rather than abandoning."}
+{"relation": "clause_reorder", "x": "Instead of quitting, she negotiated better terms.", "y": "She negotiated better terms instead of quitting."}
+{"relation": "clause_reorder", "x": "Yet despite her concerns, the board approved it.", "y": "The board approved it yet despite her concerns."}
+{"relation": "clause_reorder", "x": "Notwithstanding price hikes, demand remained strong.", "y": "Demand remained strong notwithstanding price hikes."}
+{"relation": "clause_reorder", "x": "Irrespective of reviews, we opened the location.", "y": "We opened the location irrespective of reviews."}
+{"relation": "clause_reorder", "x": "Regardless of opposition, we launched the initiative.", "y": "We launched the initiative regardless of opposition."}
+{"relation": "clause_reorder", "x": "Where the climate warmed, ecosystems shifted dramatically.", "y": "Ecosystems shifted dramatically where the climate warmed."}
+{"relation": "clause_reorder", "x": "Wherever we established offices, local hiring increased.", "y": "Local hiring increased wherever we established offices."}
+{"relation": "clause_reorder", "x": "Anywhere regulations permitted, we expanded quickly.", "y": "We expanded quickly anywhere regulations permitted."}
+{"relation": "clause_reorder", "x": "In locations where unemployment spiked, we opened factories.", "y": "We opened factories in locations where unemployment spiked."}
+{"relation": "clause_reorder", "x": "At sites where land was cheap, we built facilities.", "y": "We built facilities at sites where land was cheap."}
+{"relation": "clause_reorder", "x": "To remain competitive, we reduced prices by 15 percent.", "y": "We reduced prices by 15 percent to remain competitive."}
+{"relation": "clause_reorder", "x": "So as to attract talent, we offer benefits.", "y": "We offer benefits so as to attract talent."}
+{"relation": "clause_reorder", "x": "Lest we lose market share, we innovated.", "y": "We innovated lest we lose market share."}
+{"relation": "clause_reorder", "x": "In order to comply with regulations, we invested $2M.", "y": "We invested $2M in order to comply with regulations."}
+{"relation": "clause_reorder", "x": "With the intent of reaching youth, we launched social media.", "y": "We launched social media with the intent of reaching youth."}
+{"relation": "clause_reorder", "x": "As a means to boost morale, we hosted celebrations.", "y": "We hosted celebrations as a means to boost morale."}
+{"relation": "clause_reorder", "x": "To the end that efficiency improves, we standardized processes.", "y": "We standardized processes to the end that efficiency improves."}
+{"relation": "clause_reorder", "x": "When revenues declined, we cut expenses immediately.", "y": "We cut expenses immediately when revenues declined."}
+{"relation": "clause_reorder", "x": "Whenever demand increased, we worked overtime.", "y": "We worked overtime whenever demand increased."}
+{"relation": "clause_reorder", "x": "Immediately after the crisis ended, we reopened.", "y": "We reopened immediately after the crisis ended."}
+{"relation": "clause_reorder", "x": "In the months before the acquisition, profits surged.", "y": "Profits surged in the months before the acquisition."}
+{"relation": "clause_reorder", "x": "Once the ink dried on the contract, execution began.", "y": "Execution began once the ink dried on the contract."}
+{"relation": "clause_reorder", "x": "Until funding arrived, the project remained on hold.", "y": "The project remained on hold until funding arrived."}
+{"relation": "clause_reorder", "x": "As long as he manages, costs stay down.", "y": "Costs stay down as long as he manages."}
+{"relation": "clause_reorder", "x": "So long as supplies last, we offer 25 percent discounts.", "y": "We offer 25 percent discounts so long as supplies last."}
+{"relation": "clause_reorder", "x": "Now that the deal closed, integration starts.", "y": "Integration starts now that the deal closed."}
+{"relation": "clause_reorder", "x": "If and only if approved, we commence work.", "y": "We commence work if and only if approved."}
+{"relation": "clause_reorder", "x": "Unless the terms change, we accept the offer.", "y": "We accept the offer unless the terms change."}
+{"relation": "clause_reorder", "x": "Provided circumstances permit, we will announce next week.", "y": "We will announce next week provided circumstances permit."}
+{"relation": "clause_reorder", "x": "In case the shipment delays, we have backups.", "y": "We have backups in case the shipment delays."}
+{"relation": "clause_reorder", "x": "Should interest rates rise, refinancing costs increase.", "y": "Refinancing costs increase should interest rates rise."}
+{"relation": "clause_reorder", "x": "Assuming the forecast holds, yields will climb.", "y": "Yields will climb assuming the forecast holds."}
+{"relation": "clause_reorder", "x": "Given the constraints, alternatives seemed limited.", "y": "Alternatives seemed limited given the constraints."}
+{"relation": "clause_reorder", "x": "Considering the options, this seems best.", "y": "This seems best considering the options."}
+{"relation": "clause_reorder", "x": "Based on results, we will expand the program.", "y": "We will expand the program based on results."}

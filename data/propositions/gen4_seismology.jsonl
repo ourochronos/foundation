@@ -1,0 +1,280 @@
+{"text": "The 2023 Tonopah earthquake measured 6.8 on the Richter scale.", "entities": ["Tonopah"], "numbers": ["2023", "6.8"], "domain": "seismology"}
+{"text": "USGS station TLS-07 recorded 8.2 mm/s peak ground acceleration.", "entities": ["USGS", "TLS-07"], "numbers": ["8.2"], "domain": "seismology"}
+{"text": "San Andreas fault surveys identified 47 new stress indicators.", "entities": ["San Andreas"], "numbers": ["47"], "domain": "seismology"}
+{"text": "Building Code 2024-SC requires lateral bracing every 3.5 meters.", "entities": ["Building Code 2024-SC"], "numbers": ["2024", "3.5"], "domain": "seismology"}
+{"text": "The Pacific Tsunami Warning Center issued alerts for 12 coastal regions.", "entities": ["Pacific Tsunami Warning Center"], "numbers": ["12"], "domain": "seismology"}
+{"text": "Palmdale Observatory detected 156 microseismic events in 48 hours.", "entities": ["Palmdale Observatory"], "numbers": ["156", "48"], "domain": "seismology"}
+{"text": "Magnitude 5.4 tremor struck near Lake Tahoe on July 19, 2024.", "entities": ["Lake Tahoe"], "numbers": ["5.4", "19", "2024"], "domain": "seismology"}
+{"text": "Fault displacement averaged 2.1 meters across the rupture zone.", "entities": [], "numbers": ["2.1"], "domain": "seismology"}
+{"text": "Dr. Elena Martinez documented 89 epicenter correlations with subsurface geology.", "entities": ["Elena Martinez"], "numbers": ["89"], "domain": "seismology"}
+{"text": "Nevada seismic network expanded to 34 active monitoring stations.", "entities": ["Nevada"], "numbers": ["34"], "domain": "seismology"}
+{"text": "Cascade Range volcanic tremor increased 270 percent over 6 weeks.", "entities": ["Cascade Range"], "numbers": ["270", "6"], "domain": "seismology"}
+{"text": "The 1906 San Francisco earthquake released energy equivalent to 82 megatons TNT.", "entities": ["San Francisco"], "numbers": ["1906", "82"], "domain": "seismology"}
+{"text": "Subduction zone thrust angle measured 28.7 degrees beneath Cascadia.", "entities": ["Cascadia"], "numbers": ["28.7"], "domain": "seismology"}
+{"text": "Building retrofits in Istanbul covered 2,340 structures under 2023 initiative.", "entities": ["Istanbul"], "numbers": ["2,340", "2023"], "domain": "seismology"}
+{"text": "P-wave velocity through bedrock averages 5.9 km/s in this region.", "entities": [], "numbers": ["5.9"], "domain": "seismology"}
+{"text": "Richter magnitude 7.1 event centered 14 km northwest of Eureka.", "entities": ["Eureka"], "numbers": ["7.1", "14"], "domain": "seismology"}
+{"text": "The Hayward fault accumulates approximately 1.4 cm of strain annually.", "entities": ["Hayward"], "numbers": ["1.4"], "domain": "seismology"}
+{"text": "Seismic hazard maps for California update every 2.5 years.", "entities": ["California"], "numbers": ["2.5"], "domain": "seismology"}
+{"text": "Aftershock sequence lasted 43 days with 203 recorded shocks exceeding 3.0 magnitude.", "entities": [], "numbers": ["43", "203", "3.0"], "domain": "seismology"}
+{"text": "Portland State University operates 7 real-time seismic stations.", "entities": ["Portland State University"], "numbers": ["7"], "domain": "seismology"}
+{"text": "Tsunami wave heights reached 12.4 meters in protected harbors.", "entities": [], "numbers": ["12.4"], "domain": "seismology"}
+{"text": "NEES facility in Berkeley tested 15 full-scale building models.", "entities": ["NEES", "Berkeley"], "numbers": ["15"], "domain": "seismology"}
+{"text": "Ground liquefaction potential maps 58 percent of alluvial deposits.", "entities": [], "numbers": ["58"], "domain": "seismology"}
+{"text": "Mainshock-aftershock sequence generated $847 million in insured losses.", "entities": [], "numbers": ["847"], "domain": "seismology"}
+{"text": "Aseismic creep on the Garlock fault averages 0.6 mm/year.", "entities": ["Garlock"], "numbers": ["0.6"], "domain": "seismology"}
+{"text": "Three monitoring boreholes in Taiwan reach depths of 3,622 meters.", "entities": ["Taiwan"], "numbers": ["3", "3,622"], "domain": "seismology"}
+{"text": "Damping ratio specifications require 5 percent for critical infrastructure.", "entities": [], "numbers": ["5"], "domain": "seismology"}
+{"text": "Tejon Pass seismic gap suggests rupture probability exceeds 41 percent by 2045.", "entities": ["Tejon Pass"], "numbers": ["41", "2045"], "domain": "seismology"}
+{"text": "Magnitude scaling relationships predict 8.9 maximum for subduction zones.", "entities": [], "numbers": ["8.9"], "domain": "seismology"}
+{"text": "Crustal velocity model incorporates 18 distinct layer interfaces.", "entities": [], "numbers": ["18"], "domain": "seismology"}
+{"text": "The 2010 Canterbury sequence produced 4,351 felt earthquakes.", "entities": ["Canterbury"], "numbers": ["2010", "4,351"], "domain": "seismology"}
+{"text": "Moment magnitude 6.2 event occurred beneath Yellowstone caldera.", "entities": ["Yellowstone"], "numbers": ["6.2"], "domain": "seismology"}
+{"text": "Santa Cruz Mountains GPS survey shows 3.8 mm westward displacement annually.", "entities": ["Santa Cruz Mountains"], "numbers": ["3.8"], "domain": "seismology"}
+{"text": "Modified Mercalli intensity scale ranges from I to XII.", "entities": ["Modified Mercalli"], "numbers": ["I", "XII"], "domain": "seismology"}
+{"text": "Fault plane solutions indicate reverse faulting at 62 degrees dip.", "entities": [], "numbers": ["62"], "domain": "seismology"}
+{"text": "Over 340 wood-frame buildings received reinforcement since the 2011 code update.", "entities": [], "numbers": ["340", "2011"], "domain": "seismology"}
+{"text": "Rupture propagation velocity approached 3.2 km/s during mainshock.", "entities": [], "numbers": ["3.2"], "domain": "seismology"}
+{"text": "Ambient noise tomography reveals velocity anomalies at 2.8 km depth.", "entities": [], "numbers": ["2.8"], "domain": "seismology"}
+{"text": "The 1960 Valdivia earthquake magnitude of 9.5 remains the largest recorded.", "entities": ["Valdivia"], "numbers": ["1960", "9.5"], "domain": "seismology"}
+{"text": "Synthetic seismogram calculations used 256 frequency bands.", "entities": [], "numbers": ["256"], "domain": "seismology"}
+{"text": "South Napa earthquake on August 24, 2014, reached magnitude 6.0.", "entities": ["South Napa"], "numbers": ["24", "2014", "6.0"], "domain": "seismology"}
+{"text": "Moment tensor analysis revealed oblique strike-slip mechanism at 35-degree angle.", "entities": [], "numbers": ["35"], "domain": "seismology"}
+{"text": "Chevron Hills fault zone contains 67 mapped segment boundaries.", "entities": ["Chevron Hills"], "numbers": ["67"], "domain": "seismology"}
+{"text": "Seismic reflection surveys acquired 2,100 km of profile data.", "entities": [], "numbers": ["2,100"], "domain": "seismology"}
+{"text": "Base isolation systems used 32 laminated bearings per structure.", "entities": [], "numbers": ["32"], "domain": "seismology"}
+{"text": "The 1995 Kobe earthquake killed 6,437 people and caused extensive damage.", "entities": ["Kobe"], "numbers": ["1995", "6,437"], "domain": "seismology"}
+{"text": "Rayleigh wave dispersion curves span frequency range 0.05 to 5.0 Hz.", "entities": ["Rayleigh"], "numbers": ["0.05", "5.0"], "domain": "seismology"}
+{"text": "Automated magnitude estimation system processes 418 stations in real time.", "entities": [], "numbers": ["418"], "domain": "seismology"}
+{"text": "Building code Section 9.2.3 mandates 4-inch anchor bolt spacing.", "entities": [], "numbers": ["9.2.3", "4"], "domain": "seismology"}
+{"text": "Rupture area calculation yielded 1,850 square kilometers for the megathrust.", "entities": [], "numbers": ["1,850"], "domain": "seismology"}
+{"text": "InSAR interferometry revealed 18.5 cm surface displacement near epicenter.", "entities": ["InSAR"], "numbers": ["18.5"], "domain": "seismology"}
+{"text": "Dr. Hassan Imamura's 2019 models predicted maximum 9.1 magnitude for Sumatra.", "entities": ["Hassan Imamura", "Sumatra"], "numbers": ["2019", "9.1"], "domain": "seismology"}
+{"text": "Triggered seismicity cluster contained 287 events within 15 km radius.", "entities": [], "numbers": ["287", "15"], "domain": "seismology"}
+{"text": "Strain release budget accounts for 94 percent of long-term slip.", "entities": [], "numbers": ["94"], "domain": "seismology"}
+{"text": "Pacific Northwest network includes 71 broadband seismometers.", "entities": ["Pacific Northwest"], "numbers": ["71"], "domain": "seismology"}
+{"text": "Seismic moment calculations use scalar values exceeding 10^20 dyne-cm.", "entities": [], "numbers": ["10", "20"], "domain": "seismology"}
+{"text": "The Newport-Inglewood fault produced earthquakes averaging magnitude 6.8.", "entities": ["Newport-Inglewood"], "numbers": ["6.8"], "domain": "seismology"}
+{"text": "Liquefaction resistance testing confirmed 8.7 meter settlement potential.", "entities": [], "numbers": ["8.7"], "domain": "seismology"}
+{"text": "Quaternary paleoseismic evidence documents 13 major rupture events.", "entities": ["Quaternary"], "numbers": ["13"], "domain": "seismology"}
+{"text": "Tsunami travel time from epicenter to island averaged 47 minutes.", "entities": [], "numbers": ["47"], "domain": "seismology"}
+{"text": "Waveform inversion processed 34,000 three-component traces.", "entities": [], "numbers": ["34,000", "3"], "domain": "seismology"}
+{"text": "Building natural frequency of 0.42 Hz falls within resonance band.", "entities": [], "numbers": ["0.42"], "domain": "seismology"}
+{"text": "Coseismic subsidence reached 2.3 meters in the delta region.", "entities": [], "numbers": ["2.3"], "domain": "seismology"}
+{"text": "Fault scarp height measurements indicate 7.9 meters of displacement.", "entities": [], "numbers": ["7.9"], "domain": "seismology"}
+{"text": "Joint Tsunami Warning System covers 26 countries across three oceans.", "entities": ["Joint Tsunami Warning System"], "numbers": ["26", "3"], "domain": "seismology"}
+{"text": "Accelerograph network in Japan maintains 1,030 operational sensors.", "entities": ["Japan"], "numbers": ["1,030"], "domain": "seismology"}
+{"text": "Recurrence interval for magnitude 7+ earthquakes is approximately 150 years.", "entities": [], "numbers": ["7", "150"], "domain": "seismology"}
+{"text": "Spectral acceleration demand curves calculated for 2 percent damping.", "entities": [], "numbers": ["2"], "domain": "seismology"}
+{"text": "The 2004 Indian Ocean earthquake reached moment magnitude 9.1.", "entities": ["Indian Ocean"], "numbers": ["2004", "9.1"], "domain": "seismology"}
+{"text": "Focal depth inversion revealed hypocenter location at 11.8 km.", "entities": [], "numbers": ["11.8"], "domain": "seismology"}
+{"text": "Ambient stress state analysis incorporates 5 principal stress components.", "entities": [], "numbers": ["5"], "domain": "seismology"}
+{"text": "Response spectral analysis spans 40 logarithmically-spaced period bins.", "entities": [], "numbers": ["40"], "domain": "seismology"}
+{"text": "Precursor activity monitoring at Mount St. Helens covers 22 stations.", "entities": ["Mount St. Helens"], "numbers": ["22"], "domain": "seismology"}
+{"text": "Maximum considered earthquake scenario assumes magnitude 7.4.", "entities": [], "numbers": ["7.4"], "domain": "seismology"}
+{"text": "Cross-correlation analysis linked 56 similar waveform families.", "entities": [], "numbers": ["56"], "domain": "seismology"}
+{"text": "Liquefaction assessment classified 71 soil layers as highly susceptible.", "entities": [], "numbers": ["71"], "domain": "seismology"}
+{"text": "Teleseismic stations in Germany recorded P-arrival within 8.2 minutes.", "entities": ["Germany"], "numbers": ["8.2"], "domain": "seismology"}
+{"text": "Trench excavation exposed paleoseismic layers dating back 6,800 years.", "entities": [], "numbers": ["6,800"], "domain": "seismology"}
+{"text": "Peak ground velocity magnitude reached 95 cm/s near fault trace.", "entities": [], "numbers": ["95"], "domain": "seismology"}
+{"text": "Finite element model discretized bedrock using 8,450 hexahedral elements.", "entities": [], "numbers": ["8,450"], "domain": "seismology"}
+{"text": "Early warning system provides 19 seconds alert before strong shaking.", "entities": [], "numbers": ["19"], "domain": "seismology"}
+{"text": "Regional stress tensor orientation rotates 37 degrees across fault.", "entities": [], "numbers": ["37"], "domain": "seismology"}
+{"text": "Amplitude ratio method distinguished 89 local from teleseismic events.", "entities": [], "numbers": ["89"], "domain": "seismology"}
+{"text": "The 1964 Alaska earthquake magnitude 9.2 caused extensive coastal damage.", "entities": ["Alaska"], "numbers": ["1964", "9.2"], "domain": "seismology"}
+{"text": "Liquefaction-induced lateral spreading displaced 4.6 meters horizontally.", "entities": [], "numbers": ["4.6"], "domain": "seismology"}
+{"text": "Free-field accelerometer array recorded 142 distinct waveforms.", "entities": [], "numbers": ["142"], "domain": "seismology"}
+{"text": "Seismic hazard probability model evaluated 18 earthquake scenarios.", "entities": [], "numbers": ["18"], "domain": "seismology"}
+{"text": "Foreshock activity increased 640 percent three days before mainshock.", "entities": [], "numbers": ["640", "3"], "domain": "seismology"}
+{"text": "Love wave polarization analysis identified 12 distinct source mechanisms.", "entities": ["Love"], "numbers": ["12"], "domain": "seismology"}
+{"text": "Coulomb stress model predicted increased seismicity within 0.1 MPa zone.", "entities": ["Coulomb"], "numbers": ["0.1"], "domain": "seismology"}
+{"text": "Velocity depth profile shows three distinct crustal layers totaling 32 km.", "entities": [], "numbers": ["3", "32"], "domain": "seismology"}
+{"text": "Pore pressure increase of 35 kPa triggered secondary ruptures.", "entities": [], "numbers": ["35"], "domain": "seismology"}
+{"text": "The 2011 Christchurch earthquake damaged 5,680 residential buildings.", "entities": ["Christchurch"], "numbers": ["2011", "5,680"], "domain": "seismology"}
+{"text": "Synthetic ground motion suite included 88 historical earthquake accelerograms.", "entities": [], "numbers": ["88"], "domain": "seismology"}
+{"text": "Three-dimensional velocity model spans 450 by 380 by 90 kilometers.", "entities": [], "numbers": ["450", "380", "90"], "domain": "seismology"}
+{"text": "Fault friction coefficient estimated at 0.67 from inversion.", "entities": [], "numbers": ["0.67"], "domain": "seismology"}
+{"text": "Building base shear capacity exceeds 1,250 kilonewtons.", "entities": [], "numbers": ["1,250"], "domain": "seismology"}
+{"text": "Rupture velocity averaged 2.8 kilometers per second during propagation.", "entities": [], "numbers": ["2.8"], "domain": "seismology"}
+{"text": "Seismic risk reduction program cost $12.4 billion over 8 years.", "entities": [], "numbers": ["12.4", "8"], "domain": "seismology"}
+{"text": "Moment magnitude moment tensor inversion used 91 broadband stations.", "entities": [], "numbers": ["91"], "domain": "seismology"}
+{"text": "Plate boundary segment length measured 348 kilometers along the megathrust.", "entities": [], "numbers": ["348"], "domain": "seismology"}
+{"text": "Attenuation model parameters adjusted for 19 regional velocity classes.", "entities": [], "numbers": ["19"], "domain": "seismology"}
+{"text": "The 2012 Indian peninsula earthquake registered magnitude 4.9.", "entities": ["Indian peninsula"], "numbers": ["2012", "4.9"], "domain": "seismology"}
+{"text": "Peak acceleration spectral ordinates calculated for periods 0.1 to 4.0 seconds.", "entities": [], "numbers": ["0.1", "4.0"], "domain": "seismology"}
+{"text": "Aftershock focal depths ranged from 8.2 to 24.7 kilometers.", "entities": [], "numbers": ["8.2", "24.7"], "domain": "seismology"}
+{"text": "Joint inversion combined 156 GPS and seismic observations.", "entities": ["GPS"], "numbers": ["156"], "domain": "seismology"}
+{"text": "Building damping system dissipates 45 percent of input energy.", "entities": [], "numbers": ["45"], "domain": "seismology"}
+{"text": "Tsunami evacuation maps define 52 distinct hazard zones.", "entities": [], "numbers": ["52"], "domain": "seismology"}
+{"text": "Seismic station deployment cost approximately $2.1 million per site.", "entities": [], "numbers": ["2.1"], "domain": "seismology"}
+{"text": "Mainshock rupture broke through 14 distinct asperities.", "entities": [], "numbers": ["14"], "domain": "seismology"}
+{"text": "Seismic noise floor monitoring detected 63 anthropogenic disturbances.", "entities": [], "numbers": ["63"], "domain": "seismology"}
+{"text": "Distance attenuation relations used earthquakes spanning 200 to 800 kilometers.", "entities": [], "numbers": ["200", "800"], "domain": "seismology"}
+{"text": "The New Madrid seismic zone experienced 4 major earthquakes in 1811-1812.", "entities": ["New Madrid"], "numbers": ["4", "1811", "1812"], "domain": "seismology"}
+{"text": "Soil amplification factor ranges from 1.1 to 3.8 across site categories.", "entities": [], "numbers": ["1.1", "3.8"], "domain": "seismology"}
+{"text": "Plate motion vectors indicate 54 mm/year convergence rate.", "entities": [], "numbers": ["54"], "domain": "seismology"}
+{"text": "Seismic array aperture spans 180 kilometers with 9 subarrays.", "entities": [], "numbers": ["180", "9"], "domain": "seismology"}
+{"text": "Stress drop estimates range between 1.2 and 8.5 megapascals.", "entities": [], "numbers": ["1.2", "8.5"], "domain": "seismology"}
+{"text": "The 1960 Valdivia main rupture duration lasted approximately 10 minutes.", "entities": ["Valdivia"], "numbers": ["1960", "10"], "domain": "seismology"}
+{"text": "Earthquake rupture velocity analysis covered 67 well-constrained events.", "entities": [], "numbers": ["67"], "domain": "seismology"}
+{"text": "Elastic wave attenuation coefficient Q-value equals approximately 75.", "entities": [], "numbers": ["75"], "domain": "seismology"}
+{"text": "Surface rupture mapping identified 23 distinct fault segments.", "entities": [], "numbers": ["23"], "domain": "seismology"}
+{"text": "Tsunami generation source depth ranged from 5.4 to 12.8 kilometers.", "entities": [], "numbers": ["5.4", "12.8"], "domain": "seismology"}
+{"text": "Seismic demand spectrum calculated for 5 percent critical damping.", "entities": [], "numbers": ["5"], "domain": "seismology"}
+{"text": "The 2020 Elgin County earthquake measured magnitude 4.5.", "entities": ["Elgin County"], "numbers": ["2020", "4.5"], "domain": "seismology"}
+{"text": "Moment magnitude scaling law predicts 8.3 maximum for this fault.", "entities": [], "numbers": ["8.3"], "domain": "seismology"}
+{"text": "Building isolation bearings reduce spectral accelerations by 62 percent.", "entities": [], "numbers": ["62"], "domain": "seismology"}
+{"text": "Crustal rigidity modulus averaged 32 gigapascals in bedrock.", "entities": [], "numbers": ["32"], "domain": "seismology"}
+{"text": "Regional rupture propagation model subdivides fault into 44 cells.", "entities": [], "numbers": ["44"], "domain": "seismology"}
+{"text": "Paleoseismic trenching revealed 8 major earthquakes in 5,000 years.", "entities": [], "numbers": ["8", "5,000"], "domain": "seismology"}
+{"text": "The 1755 Lisbon earthquake magnitude estimated between 8.5 and 9.0.", "entities": ["Lisbon"], "numbers": ["1755", "8.5", "9.0"], "domain": "seismology"}
+{"text": "Earthquake magnitude-frequency distribution follows Gutenberg-Richter law.", "entities": ["Gutenberg-Richter"], "numbers": [], "domain": "seismology"}
+{"text": "Accelerogram baseline correction filtered frequencies below 0.25 Hz.", "entities": [], "numbers": ["0.25"], "domain": "seismology"}
+{"text": "Three-component motion capture system recorded 426 earthquake waveforms.", "entities": [], "numbers": ["3", "426"], "domain": "seismology"}
+{"text": "The 2019 Ridgecrest earthquakes reached magnitude 6.4 and 7.1.", "entities": ["Ridgecrest"], "numbers": ["2019", "6.4", "7.1"], "domain": "seismology"}
+{"text": "Seismic imaging reveals 34 distinct fault plane intersections.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "Hypocentral relocation precision improved to within 1.2 kilometers.", "entities": [], "numbers": ["1.2"], "domain": "seismology"}
+{"text": "Building code revision of 2022 requires 75 percent capacity margin.", "entities": [], "numbers": ["2022", "75"], "domain": "seismology"}
+{"text": "Seismic hazard curves calculated for 50-year return periods.", "entities": [], "numbers": ["50"], "domain": "seismology"}
+{"text": "Frequency-magnitude relationships model 18 distinct earthquake sources.", "entities": [], "numbers": ["18"], "domain": "seismology"}
+{"text": "Tsunami bore height reached 28.5 meters in confined channels.", "entities": [], "numbers": ["28.5"], "domain": "seismology"}
+{"text": "The 1811 New Madrid sequence generated estimated magnitude 8.0 to 8.2 events.", "entities": ["New Madrid"], "numbers": ["1811", "8.0", "8.2"], "domain": "seismology"}
+{"text": "Seismic velocity increase with depth averages 0.015 per kilometer.", "entities": [], "numbers": ["0.015"], "domain": "seismology"}
+{"text": "Earthquake source parameter catalog contains 3,456 well-characterized events.", "entities": [], "numbers": ["3,456"], "domain": "seismology"}
+{"text": "Building response spectrum spans 0.5 to 30 second period range.", "entities": [], "numbers": ["0.5", "30"], "domain": "seismology"}
+{"text": "Triggered seismicity probability increased 120 percent within 10 km.", "entities": [], "numbers": ["120", "10"], "domain": "seismology"}
+{"text": "The 2021 Haiti earthquake killed 2,248 and destroyed 68,000 buildings.", "entities": ["Haiti"], "numbers": ["2021", "2,248", "68,000"], "domain": "seismology"}
+{"text": "Focal mechanism solutions determined for 156 earthquakes using polarity data.", "entities": [], "numbers": ["156"], "domain": "seismology"}
+{"text": "Base isolation system cost $4.8 million for the hospital complex.", "entities": [], "numbers": ["4.8"], "domain": "seismology"}
+{"text": "Seismic microzonation maps identify 12 distinct hazard categories.", "entities": [], "numbers": ["12"], "domain": "seismology"}
+{"text": "Magnitude-moment relationship follows log10 (M0) equals 1.5 Ms plus 4.8.", "entities": [], "numbers": ["10", "1.5", "4.8"], "domain": "seismology"}
+{"text": "The 2008 Sichuan earthquake magnitude 7.9 killed 87,000 people.", "entities": ["Sichuan"], "numbers": ["2008", "7.9", "87,000"], "domain": "seismology"}
+{"text": "Broad-band seismometer frequency response extends from 0.004 to 50 Hz.", "entities": [], "numbers": ["0.004", "50"], "domain": "seismology"}
+{"text": "Shear wave splitting analysis detected 37 distinct fast-axis directions.", "entities": [], "numbers": ["37"], "domain": "seismology"}
+{"text": "Tsunami wave travel distance ranged from 250 to 14,000 kilometers.", "entities": [], "numbers": ["250", "14,000"], "domain": "seismology"}
+{"text": "The 2010 Haiti earthquake centered near Port-au-Prince at depth 13 km.", "entities": ["Haiti", "Port-au-Prince"], "numbers": ["2010", "13"], "domain": "seismology"}
+{"text": "Seismic hazard recurrence model incorporated paleoseismic data from 14 sites.", "entities": [], "numbers": ["14"], "domain": "seismology"}
+{"text": "Building natural period of 2.3 seconds places structure in resonance band.", "entities": [], "numbers": ["2.3"], "domain": "seismology"}
+{"text": "Focal depth variation ranged 6.8 to 19.4 kilometers for aftershocks.", "entities": [], "numbers": ["6.8", "19.4"], "domain": "seismology"}
+{"text": "The 1906 Ecuador-Colombia earthquake magnitude 8.8 triggered many landslides.", "entities": ["Ecuador", "Colombia"], "numbers": ["1906", "8.8"], "domain": "seismology"}
+{"text": "Stress tensor inversion resolved 73 focal mechanisms simultaneously.", "entities": [], "numbers": ["73"], "domain": "seismology"}
+{"text": "Seismic attenuation quality factor increases from 45 to 180 with depth.", "entities": [], "numbers": ["45", "180"], "domain": "seismology"}
+{"text": "Tsunami inundation mapped to elevation 18.2 meters above mean sea level.", "entities": [], "numbers": ["18.2"], "domain": "seismology"}
+{"text": "The 2016 Kaikora earthquake sequence included 4,000 recorded aftershocks.", "entities": ["Kaikora"], "numbers": ["2016", "4,000"], "domain": "seismology"}
+{"text": "Seismic reflection processing applied 34 distinct noise attenuation filters.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "Peak ground displacement vector magnitude reached 6.2 meters.", "entities": [], "numbers": ["6.2"], "domain": "seismology"}
+{"text": "Building code chapter 12 specifies 0.5g design spectral acceleration.", "entities": [], "numbers": ["12", "0.5"], "domain": "seismology"}
+{"text": "The 1964 Prince William Sound earthquake caused 11 tsunami fatalities.", "entities": ["Prince William Sound"], "numbers": ["1964", "11"], "domain": "seismology"}
+{"text": "Earthquake source complexity analysis revealed 89 distinct rupture patches.", "entities": [], "numbers": ["89"], "domain": "seismology"}
+{"text": "Seismic velocity perturbations range plus/minus 8 percent from average.", "entities": [], "numbers": ["8"], "domain": "seismology"}
+{"text": "Tsunami frequency-magnitude relationship models 26 historical events.", "entities": [], "numbers": ["26"], "domain": "seismology"}
+{"text": "The 2007 Sumatra earthquake magnitude 8.5 triggered moderate aftershocks.", "entities": ["Sumatra"], "numbers": ["2007", "8.5"], "domain": "seismology"}
+{"text": "Building performance simulation tested 142 distinct earthquake scenarios.", "entities": [], "numbers": ["142"], "domain": "seismology"}
+{"text": "Seismic hazard integral evaluates 5 earthquake magnitude bins.", "entities": [], "numbers": ["5"], "domain": "seismology"}
+{"text": "The 2009 Samoa earthquake magnitude 8.1 caused devastation across islands.", "entities": ["Samoa"], "numbers": ["2009", "8.1"], "domain": "seismology"}
+{"text": "Moment tensor inversion employed 67 three-component seismic stations.", "entities": [], "numbers": ["67", "3"], "domain": "seismology"}
+{"text": "Liquefaction-induced ground failure affected 34 percent of building foundation.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "The 2018 Sulawesi earthquake magnitude 7.5 triggered 4,340 aftershocks.", "entities": ["Sulawesi"], "numbers": ["2018", "7.5", "4,340"], "domain": "seismology"}
+{"text": "Seismic source parameter uncertainty analysis covered 156 earthquake events.", "entities": [], "numbers": ["156"], "domain": "seismology"}
+{"text": "Building isolation system extends natural period from 0.8 to 2.5 seconds.", "entities": [], "numbers": ["0.8", "2.5"], "domain": "seismology"}
+{"text": "The 2014 Iquique earthquake magnitude 8.2 ruptured northern Chile megathrust.", "entities": ["Iquique", "Chile"], "numbers": ["2014", "8.2"], "domain": "seismology"}
+{"text": "Shear modulus estimation from surface waves yielded 34.6 gigapascals.", "entities": [], "numbers": ["34.6"], "domain": "seismology"}
+{"text": "The 2017 Puebla earthquake magnitude 7.1 caused 369 fatalities.", "entities": ["Puebla"], "numbers": ["2017", "7.1", "369"], "domain": "seismology"}
+{"text": "Microseismic event relocation improved depths to within 0.8 kilometers.", "entities": [], "numbers": ["0.8"], "domain": "seismology"}
+{"text": "Aftershock magnitude completeness threshold determined at 2.4 units.", "entities": [], "numbers": ["2.4"], "domain": "seismology"}
+{"text": "The 2012 East Indian Ocean earthquake magnitude 8.6 struck deep in subduction.", "entities": ["East Indian Ocean"], "numbers": ["2012", "8.6"], "domain": "seismology"}
+{"text": "Slip inversion model resolved 56 moment release patches.", "entities": [], "numbers": ["56"], "domain": "seismology"}
+{"text": "Crustal thickness variation mapped across 89 distinct locations.", "entities": [], "numbers": ["89"], "domain": "seismology"}
+{"text": "The 2005 Sumatra-Andaman earthquake magnitude 9.1 duration 500 seconds.", "entities": ["Sumatra-Andaman"], "numbers": ["2005", "9.1", "500"], "domain": "seismology"}
+{"text": "Seismic potential energy accumulation rate 2.1 joules annually.", "entities": [], "numbers": ["2.1"], "domain": "seismology"}
+{"text": "The 2011 Tohoku earthquake triggered 1,144 aftershocks exceeding magnitude 4.", "entities": ["Tohoku"], "numbers": ["2011", "1,144", "4"], "domain": "seismology"}
+{"text": "Body-wave magnitude determination used 34 broadband stations.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "Focal angle dispersion analysis covered 23 distinct mechanisms.", "entities": [], "numbers": ["23"], "domain": "seismology"}
+{"text": "The 2016 South Kaikoura sequence contained 4,016 aftershocks.", "entities": ["South Kaikoura"], "numbers": ["2016", "4,016"], "domain": "seismology"}
+{"text": "Velocity gradient structure reveals 0.003 per meter increase.", "entities": [], "numbers": ["0.003"], "domain": "seismology"}
+{"text": "Static stress transfer model predicted 78 percent of aftershock locations.", "entities": [], "numbers": ["78"], "domain": "seismology"}
+{"text": "The 2010 Qinghai earthquake magnitude 7.1 damaged 87,000 structures.", "entities": ["Qinghai"], "numbers": ["2010", "7.1", "87,000"], "domain": "seismology"}
+{"text": "Scattering media parameter inversion used 156 waveforms.", "entities": [], "numbers": ["156"], "domain": "seismology"}
+{"text": "Temperature increase in fault gouge reached 1,200 degrees Celsius.", "entities": [], "numbers": ["1,200"], "domain": "seismology"}
+{"text": "The 2004 Nicobar-Andaman earthquake produced runup heights exceeding 40 meters.", "entities": ["Nicobar-Andaman"], "numbers": ["2004", "40"], "domain": "seismology"}
+{"text": "Rupture heterogeneity analysis mapped 34 stress release variations.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "The 2013 Sea of Okhotsk earthquake magnitude 8.3 occurred at 600 km depth.", "entities": ["Sea of Okhotsk"], "numbers": ["2013", "8.3", "600"], "domain": "seismology"}
+{"text": "Teleseismic waveform forward modeling used 45 earthquake parameters.", "entities": [], "numbers": ["45"], "domain": "seismology"}
+{"text": "Coastal subsidence survey identified 2.8 meter displacement zones.", "entities": [], "numbers": ["2.8"], "domain": "seismology"}
+{"text": "The 2011 Ohaio earthquake magnitude 6.3 caused Japan disruptions.", "entities": ["Ohaio"], "numbers": ["2011", "6.3"], "domain": "seismology"}
+{"text": "Seismic b-value analysis yielded range 0.8 to 1.2.", "entities": [], "numbers": ["0.8", "1.2"], "domain": "seismology"}
+{"text": "The 1987 Whittier earthquake magnitude 6.1 caused 8 billion dollars damage.", "entities": ["Whittier"], "numbers": ["1987", "6.1", "8"], "domain": "seismology"}
+{"text": "Probabilistic seismic hazard analysis incorporated 67 earthquake sources.", "entities": [], "numbers": ["67"], "domain": "seismology"}
+{"text": "Moment magnitude histogram revealed 23 distinct clustering bands.", "entities": [], "numbers": ["23"], "domain": "seismology"}
+{"text": "The 2015 Nepal earthquake magnitude 7.8 killed 9,000 people.", "entities": ["Nepal"], "numbers": ["2015", "7.8", "9,000"], "domain": "seismology"}
+{"text": "Dynamic rupture simulation modeled 14 distinct friction parameters.", "entities": [], "numbers": ["14"], "domain": "seismology"}
+{"text": "The 2005 Yerevan earthquake magnitude 6.0 damaged 50,000 buildings.", "entities": ["Yerevan"], "numbers": ["2005", "6.0", "50,000"], "domain": "seismology"}
+{"text": "Seismic efficiency parameter variations ranged 0.001 to 0.045.", "entities": [], "numbers": ["0.001", "0.045"], "domain": "seismology"}
+{"text": "The 1976 Tangshan earthquake magnitude 7.5 killed 242,000 people.", "entities": ["Tangshan"], "numbers": ["1976", "7.5", "242,000"], "domain": "seismology"}
+{"text": "Coda wave decay analysis identified 34 distinct attenuation structures.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "The 2003 Bam earthquake magnitude 6.6 killed 26,000 people.", "entities": ["Bam"], "numbers": ["2003", "6.6", "26,000"], "domain": "seismology"}
+{"text": "P-to-S wave amplitude ratio analysis included 89 earthquake pairs.", "entities": [], "numbers": ["89"], "domain": "seismology"}
+{"text": "The 1993 Guam earthquake magnitude 8.1 generated 10 meter tsunami.", "entities": ["Guam"], "numbers": ["1993", "8.1", "10"], "domain": "seismology"}
+{"text": "Focal depth uncertainty estimation ranged plus minus 2.3 kilometers.", "entities": [], "numbers": ["2.3"], "domain": "seismology"}
+{"text": "The 1989 Loma Prieta earthquake magnitude 6.9 caused 63 deaths.", "entities": ["Loma Prieta"], "numbers": ["1989", "6.9", "63"], "domain": "seismology"}
+{"text": "Magnitude of completeness trend analysis covered 28 yearly intervals.", "entities": [], "numbers": ["28"], "domain": "seismology"}
+{"text": "The 1994 Northridge earthquake magnitude 6.7 cost 49 billion dollars.", "entities": ["Northridge"], "numbers": ["1994", "6.7", "49"], "domain": "seismology"}
+{"text": "Rupture propagation modeling incorporated 12 material heterogeneity features.", "entities": [], "numbers": ["12"], "domain": "seismology"}
+{"text": "The 1999 Chi-Chi earthquake magnitude 7.7 killed 2,415 people.", "entities": ["Chi-Chi"], "numbers": ["1999", "7.7", "2,415"], "domain": "seismology"}
+{"text": "Amplitude frequency spectrum peak at 0.62 Hz indicating resonance.", "entities": [], "numbers": ["0.62"], "domain": "seismology"}
+{"text": "The 1995 Kobe sequence contained 1,308 recorded aftershocks.", "entities": ["Kobe"], "numbers": ["1995", "1,308"], "domain": "seismology"}
+{"text": "Strain accumulation model predicted rupture within 34 year window.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "The 2011 Virginia earthquake magnitude 5.8 felt across 300 kilometer radius.", "entities": ["Virginia"], "numbers": ["2011", "5.8", "300"], "domain": "seismology"}
+{"text": "Earthquake prediction scoring metrics evaluated using 45 test cases.", "entities": [], "numbers": ["45"], "domain": "seismology"}
+{"text": "The 2007 Java earthquake magnitude 7.3 triggered landslides extensively.", "entities": ["Java"], "numbers": ["2007", "7.3"], "domain": "seismology"}
+{"text": "Hypocenter relocation algorithm improved precision to 0.5 kilometers.", "entities": [], "numbers": ["0.5"], "domain": "seismology"}
+{"text": "The 1960 Chile earthquake remains magnitude 9.5 largest ever recorded.", "entities": ["Chile"], "numbers": ["1960", "9.5"], "domain": "seismology"}
+{"text": "Waveform inversion convergence analysis required 34 iteration cycles.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "The 2010 Canterbury earthquake magnitude 7.0 occurred near surface.", "entities": ["Canterbury"], "numbers": ["2010", "7.0"], "domain": "seismology"}
+{"text": "Focal mechanism catalogue integrated 156 distinct rupture types.", "entities": [], "numbers": ["156"], "domain": "seismology"}
+{"text": "The 2009 Padang earthquake magnitude 7.6 killed 1,195 people.", "entities": ["Padang"], "numbers": ["2009", "7.6", "1,195"], "domain": "seismology"}
+{"text": "Seismic noise spectral analysis identified peak powers at 0.05 Hz.", "entities": [], "numbers": ["0.05"], "domain": "seismology"}
+{"text": "The 2002 Sumatra earthquake magnitude 7.3 triggered moderate damage.", "entities": ["Sumatra"], "numbers": ["2002", "7.3"], "domain": "seismology"}
+{"text": "Coulomb failure stress increase zones mapped across 67 fault segments.", "entities": [], "numbers": ["67"], "domain": "seismology"}
+{"text": "The 2006 Java earthquake magnitude 7.7 killed 668 people.", "entities": ["Java"], "numbers": ["2006", "7.7", "668"], "domain": "seismology"}
+{"text": "Moment tensor principal axes analysis included 34 depth intervals.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "The 2000 Sumatra earthquake magnitude 7.9 produced extensive effects.", "entities": ["Sumatra"], "numbers": ["2000", "7.9"], "domain": "seismology"}
+{"text": "Frequency-dependent attenuation model parameters value 0.0084.", "entities": [], "numbers": ["0.0084"], "domain": "seismology"}
+{"text": "The 1998 Palu earthquake magnitude 7.0 damaged 14,000 buildings.", "entities": ["Palu"], "numbers": ["1998", "7.0", "14,000"], "domain": "seismology"}
+{"text": "Seismic migration pattern analysis revealed 23 distinct trends.", "entities": [], "numbers": ["23"], "domain": "seismology"}
+{"text": "The 1997 Flores earthquake magnitude 7.9 produced 2,000 deaths.", "entities": ["Flores"], "numbers": ["1997", "7.9", "2,000"], "domain": "seismology"}
+{"text": "Body wave magnitude saturation threshold approximately 6.2 units.", "entities": [], "numbers": ["6.2"], "domain": "seismology"}
+{"text": "The 1996 Limon earthquake magnitude 6.6 struck Costa Rica region.", "entities": ["Limon", "Costa Rica"], "numbers": ["1996", "6.6"], "domain": "seismology"}
+{"text": "Crustal anisotropy fast axis orientation rotates 18 degrees northward.", "entities": [], "numbers": ["18"], "domain": "seismology"}
+{"text": "The 1994 Bolivia earthquake magnitude 8.3 occurred at 640 kilometers depth.", "entities": ["Bolivia"], "numbers": ["1994", "8.3", "640"], "domain": "seismology"}
+{"text": "Synthetic seismogram variance reduction achieved 87 percent.", "entities": [], "numbers": ["87"], "domain": "seismology"}
+{"text": "The 1992 Rocha earthquake magnitude 7.0 affected southern region.", "entities": ["Rocha"], "numbers": ["1992", "7.0"], "domain": "seismology"}
+{"text": "Surface wave phase velocity inversion model 45 depth layers.", "entities": [], "numbers": ["45"], "domain": "seismology"}
+{"text": "The 1991 Georgia earthquake magnitude 7.0 caused infrastructure damage.", "entities": ["Georgia"], "numbers": ["1991", "7.0"], "domain": "seismology"}
+{"text": "Receiver function deconvolution technique improved resolution 1.2 kilometers.", "entities": [], "numbers": ["1.2"], "domain": "seismology"}
+{"text": "The 1990 Gulf of California earthquake magnitude 7.1 struck offshore.", "entities": ["Gulf of California"], "numbers": ["1990", "7.1"], "domain": "seismology"}
+{"text": "Elastic moduli tensor inversion used 89 distinct seismic observations.", "entities": [], "numbers": ["89"], "domain": "seismology"}
+{"text": "The 1989 Costa Rica earthquake magnitude 7.6 caused tsunami effects.", "entities": ["Costa Rica"], "numbers": ["1989", "7.6"], "domain": "seismology"}
+{"text": "Traveltime tomography grid discretization with 340 model blocks.", "entities": [], "numbers": ["340"], "domain": "seismology"}
+{"text": "The 1988 Armenia earthquake magnitude 6.9 killed 50,000 people.", "entities": ["Armenia"], "numbers": ["1988", "6.9", "50,000"], "domain": "seismology"}
+{"text": "Diffraction stack migration processing applied 34 frequency bands.", "entities": [], "numbers": ["34"], "domain": "seismology"}
+{"text": "The 1987 Lancehorse earthquake magnitude 6.4 triggered zone rupture.", "entities": ["Lancehorse"], "numbers": ["1987", "6.4"], "domain": "seismology"}
+{"text": "Amplitude decay rate analysis revealed exponential Q factor 28.", "entities": [], "numbers": ["28"], "domain": "seismology"}
+{"text": "The 1986 Kalamata earthquake magnitude 6.2 damaged 14,000 houses.", "entities": ["Kalamata"], "numbers": ["1986", "6.2", "14,000"], "domain": "seismology"}
+{"text": "Polarization ellipse parameters computed for 12 seismic traces.", "entities": [], "numbers": ["12"], "domain": "seismology"}
+{"text": "The 1985 Mexico City earthquake magnitude 8.1 killed 9,500 people.", "entities": ["Mexico City"], "numbers": ["1985", "8.1", "9,500"], "domain": "seismology"}
+{"text": "Wave packet group velocity analysis spanned 0.4 to 3.8 kilometer intervals.", "entities": [], "numbers": ["0.4", "3.8"], "domain": "seismology"}
+{"text": "The 1984 Shumagin earthquake magnitude 7.6 struck Alaska waters.", "entities": ["Shumagin"], "numbers": ["1984", "7.6"], "domain": "seismology"}
+{"text": "Spectral ratio analysis normalized noise floor at 0.02 velocity.", "entities": [], "numbers": ["0.02"], "domain": "seismology"}
+{"text": "The 1983 Borah Peak earthquake magnitude 6.9 caused landslides.", "entities": ["Borah Peak"], "numbers": ["1983", "6.9"], "domain": "seismology"}
+{"text": "Radon transformation processing examined 67 distinct reflection angles.", "entities": [], "numbers": ["67"], "domain": "seismology"}
+{"text": "The 1982 Derna earthquake magnitude 6.1 caused economic losses.", "entities": ["Derna"], "numbers": ["1982", "6.1"], "domain": "seismology"}
+{"text": "Hilbert transform analysis computed instantaneous frequencies 23 bands.", "entities": [], "numbers": ["23"], "domain": "seismology"}
+{"text": "The 1981 Westmorland earthquake magnitude 6.0 struck California.", "entities": ["Westmorland"], "numbers": ["1981", "6.0"], "domain": "seismology"}
+{"text": "Frequency wavenumber filtering applied 340 array channels.", "entities": [], "numbers": ["340"], "domain": "seismology"}
+{"text": "The 1980 Azores earthquake magnitude 7.2 caused Atlantic disruptions.", "entities": ["Azores"], "numbers": ["1980", "7.2"], "domain": "seismology"}
+{"text": "The 1979 Montenegro earthquake magnitude 7.2 caused 136 deaths.", "entities": ["Montenegro"], "numbers": ["1979", "7.2", "136"], "domain": "seismology"}
+{"text": "The 1978 Tangshan aftershock magnitude 7.5 struck again.", "entities": ["Tangshan"], "numbers": ["1978", "7.5"], "domain": "seismology"}
+{"text": "The 1977 Central Peru earthquake magnitude 7.9 caused landslides.", "entities": ["Peru"], "numbers": ["1977", "7.9"], "domain": "seismology"}
+{"text": "The 1976 Mindanao earthquake magnitude 8.0 triggered tsunami.", "entities": ["Mindanao"], "numbers": ["1976", "8.0"], "domain": "seismology"}
+{"text": "The 1975 Oroville earthquake magnitude 5.7 near California.", "entities": ["Oroville", "California"], "numbers": ["1975", "5.7"], "domain": "seismology"}

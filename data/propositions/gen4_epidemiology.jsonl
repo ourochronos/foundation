@@ -1,0 +1,280 @@
+{"text": "The Brisbane measles outbreak of 2024 infected 847 individuals across six suburbs.", "entities": ["Brisbane"], "numbers": ["2024", "847", "6"], "domain": "epidemiology"}
+{"text": "Vaccination coverage in Lagos reached 73.4% by March 2026, exceeding regional targets.", "entities": ["Lagos"], "numbers": ["73.4", "2026", "3"], "domain": "epidemiology"}
+{"text": "Dr. Elena Vasquez led a cohort study tracking 2,300 hypertension patients over five years.", "entities": ["Dr. Elena Vasquez"], "numbers": ["2,300", "5"], "domain": "epidemiology"}
+{"text": "Contact tracing efforts in Milan identified 156 secondary cases within two weeks.", "entities": ["Milan"], "numbers": ["156", "2"], "domain": "epidemiology"}
+{"text": "The Nairobi Surveillance Network reported 1,247 dengue cases by mid-2025.", "entities": ["Nairobi Surveillance Network"], "numbers": ["1,247", "2025", "6"], "domain": "epidemiology"}
+{"text": "Mortality rates from influenza declined 22% after the 2025 vaccination campaign.", "entities": [], "numbers": ["22", "2025"], "domain": "epidemiology"}
+{"text": "Tokyo's TB incidence fell to 12.3 per 100,000 residents in 2026.", "entities": ["Tokyo"], "numbers": ["12.3", "100,000", "2026"], "domain": "epidemiology"}
+{"text": "A cohort of 4,891 rural children showed improved nutrition after 18 months of intervention.", "entities": [], "numbers": ["4,891", "18"], "domain": "epidemiology"}
+{"text": "Gonorrhea resistance in Stockholm increased from 8% to 31% between 2021 and 2025.", "entities": ["Stockholm"], "numbers": ["8", "31", "2021", "2025"], "domain": "epidemiology"}
+{"text": "Professor Chen analyzed 567 patient records to establish disease patterns in Shanghai.", "entities": ["Professor Chen", "Shanghai"], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "The WHO declared the Ebola outbreak in Kinshasa contained after 193 deaths.", "entities": ["WHO", "Kinshasa"], "numbers": ["193"], "domain": "epidemiology"}
+{"text": "Hepatitis A cases surged 45% in Barcelona during summer 2024.", "entities": ["Barcelona"], "numbers": ["45", "2024"], "domain": "epidemiology"}
+{"text": "Surveillance data from 89 clinics tracked 15,600 asymptomatic infections monthly.", "entities": [], "numbers": ["89", "15,600"], "domain": "epidemiology"}
+{"text": "Vaccination uptake among healthcare workers in Mumbai reached 89% by April 2026.", "entities": ["Mumbai"], "numbers": ["89", "2026", "4"], "domain": "epidemiology"}
+{"text": "Dr. Hassan documented 234 nosocomial infections across eight hospital wards.", "entities": ["Dr. Hassan"], "numbers": ["234", "8"], "domain": "epidemiology"}
+{"text": "The Copenhagen cohort study enrolled 3,456 participants aged 40 to 65.", "entities": ["Copenhagen"], "numbers": ["3,456", "40", "65"], "domain": "epidemiology"}
+{"text": "Polio vaccination campaigns reached 2.1 million children in rural Pakistan by 2026.", "entities": ["Pakistan"], "numbers": ["2.1", "2026"], "domain": "epidemiology"}
+{"text": "Contact tracing in Seoul identified a chain of 92 connected cases.", "entities": ["Seoul"], "numbers": ["92"], "domain": "epidemiology"}
+{"text": "Antibiotic-resistant tuberculosis cases increased 18.7% in Delhi during 2025.", "entities": ["Delhi"], "numbers": ["18.7", "2025"], "domain": "epidemiology"}
+{"text": "The Australian flu season peaked at 54,000 laboratory-confirmed cases in July 2024.", "entities": ["Australian"], "numbers": ["54,000", "2024", "7"], "domain": "epidemiology"}
+{"text": "Dr. Yuki Tanaka's research documented 1,823 breakthrough infections post-vaccination.", "entities": ["Dr. Yuki Tanaka"], "numbers": ["1,823"], "domain": "epidemiology"}
+{"text": "Malaria prevalence in Accra decreased to 19% after three years of intervention.", "entities": ["Accra"], "numbers": ["19", "3"], "domain": "epidemiology"}
+{"text": "Vaccination coverage variance between urban and rural areas was 26 percentage points.", "entities": [], "numbers": ["26"], "domain": "epidemiology"}
+{"text": "The Lisbon team confirmed 447 cases of a novel respiratory pathogen.", "entities": ["Lisbon"], "numbers": ["447"], "domain": "epidemiology"}
+{"text": "Surveillance networks across 12 countries detected a 34% increase in measles cases.", "entities": [], "numbers": ["12", "34"], "domain": "epidemiology"}
+{"text": "Zika virus transmission in Rio de Janeiro affected 5,623 pregnant women in 2024.", "entities": ["Rio de Janeiro"], "numbers": ["5,623", "2024"], "domain": "epidemiology"}
+{"text": "Contact tracing efficiency improved from 67% to 84% after protocol revision.", "entities": [], "numbers": ["67", "84"], "domain": "epidemiology"}
+{"text": "The Geneva vaccine trial enrolled 9,876 participants from 15 locations.", "entities": ["Geneva"], "numbers": ["9,876", "15"], "domain": "epidemiology"}
+{"text": "Mortality from respiratory infections declined significantly in Cairo between 2023 and 2025.", "entities": ["Cairo"], "numbers": ["2023", "2025"], "domain": "epidemiology"}
+{"text": "Dr. Maria Santos reported 312 hospitalized cases after the October 2024 outbreak.", "entities": ["Dr. Maria Santos"], "numbers": ["312", "2024", "10"], "domain": "epidemiology"}
+{"text": "Vaccination rates in Singapore surpassed 96.2% by January 2026.", "entities": ["Singapore"], "numbers": ["96.2", "2026", "1"], "domain": "epidemiology"}
+{"text": "A cohort of 2,789 healthcare workers showed seroconversion rates of 73%.", "entities": [], "numbers": ["2,789", "73"], "domain": "epidemiology"}
+{"text": "Chlamydia prevalence in Amsterdam was 11.4% among 18- to 25-year-olds.", "entities": ["Amsterdam"], "numbers": ["11.4", "18", "25"], "domain": "epidemiology"}
+{"text": "Contact tracing teams processed 8,934 case investigations during the surge.", "entities": [], "numbers": ["8,934"], "domain": "epidemiology"}
+{"text": "The Johannesburg outbreak affected three hospitals and 623 healthcare staff.", "entities": ["Johannesburg"], "numbers": ["3", "623"], "domain": "epidemiology"}
+{"text": "Influenza vaccination coverage among elderly residents in Madrid reached 81% in 2025.", "entities": ["Madrid"], "numbers": ["81", "2025"], "domain": "epidemiology"}
+{"text": "A surveillance study monitored 45,000 schoolchildren across 287 institutions.", "entities": [], "numbers": ["45,000", "287"], "domain": "epidemiology"}
+{"text": "Professor Kumar's team documented incidence rates of 23.6 cases per 10,000 annually.", "entities": ["Professor Kumar"], "numbers": ["23.6", "10,000"], "domain": "epidemiology"}
+{"text": "The Bangkok hospital admitted 1,156 patients with confirmed dengue fever by September.", "entities": ["Bangkok"], "numbers": ["1,156", "9"], "domain": "epidemiology"}
+{"text": "Vaccination hesitancy decreased 42% after community education in Houston.", "entities": ["Houston"], "numbers": ["42"], "domain": "epidemiology"}
+{"text": "Contact tracing success rates in Berlin improved from 51% to 79% in 2026.", "entities": ["Berlin"], "numbers": ["51", "79", "2026"], "domain": "epidemiology"}
+{"text": "The cohort followed 7,234 children for adverse vaccine reactions over 24 months.", "entities": [], "numbers": ["7,234", "24"], "domain": "epidemiology"}
+{"text": "Tuberculosis rates in Stockholm declined 6.8% annually since 2023.", "entities": ["Stockholm"], "numbers": ["6.8", "2023"], "domain": "epidemiology"}
+{"text": "Dr. Amelia Torres reported 89 cases of rare vaccine side effects.", "entities": ["Dr. Amelia Torres"], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Outbreak investigation in Montreal traced 156 infections to a single transmission event.", "entities": ["Montreal"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "Surveillance data from Oslo showed 12.1% prevalence of hepatitis C antibodies.", "entities": ["Oslo"], "numbers": ["12.1"], "domain": "epidemiology"}
+{"text": "Vaccination uptake among adolescents in Phoenix was 77.8% by mid-2025.", "entities": ["Phoenix"], "numbers": ["77.8", "2025", "6"], "domain": "epidemiology"}
+{"text": "A 30-month cohort study tracked 5,432 households in rural regions.", "entities": [], "numbers": ["30", "5,432"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 412 secondary exposures within the first 14 days.", "entities": [], "numbers": ["412", "14"], "domain": "epidemiology"}
+{"text": "The Geneva cohort showed 94.3% antibody persistence six months post-vaccination.", "entities": ["Geneva"], "numbers": ["94.3", "6"], "domain": "epidemiology"}
+{"text": "Measles incidence in Tel Aviv dropped from 34 to 8 cases per year.", "entities": ["Tel Aviv"], "numbers": ["34", "8"], "domain": "epidemiology"}
+{"text": "Dr. Robert Chen coordinated surveillance across 23 regional health departments.", "entities": ["Dr. Robert Chen"], "numbers": ["23"], "domain": "epidemiology"}
+{"text": "The Cairo cohort documented 2,156 confirmed cases over four calendar years.", "entities": ["Cairo"], "numbers": ["2,156", "4"], "domain": "epidemiology"}
+{"text": "Vaccination coverage increased 19 percentage points in underserved neighborhoods.", "entities": [], "numbers": ["19"], "domain": "epidemiology"}
+{"text": "Contact tracing effectiveness in Vienna exceeded 88% by November 2026.", "entities": ["Vienna"], "numbers": ["88", "2026", "11"], "domain": "epidemiology"}
+{"text": "Outbreak surveillance detected 567 new cases across eight municipalities.", "entities": [], "numbers": ["567", "8"], "domain": "epidemiology"}
+{"text": "The Nairobi trial included 4,445 participants from 18 clinic sites.", "entities": ["Nairobi"], "numbers": ["4,445", "18"], "domain": "epidemiology"}
+{"text": "Antibiotic resistance in pneumococcal isolates rose 15% in Melbourne during 2025.", "entities": ["Melbourne"], "numbers": ["15", "2025"], "domain": "epidemiology"}
+{"text": "Dr. Sofia Rossi analyzed 3,890 patient records to identify risk factors.", "entities": ["Dr. Sofia Rossi"], "numbers": ["3,890"], "domain": "epidemiology"}
+{"text": "Vaccination rates among high-risk groups in Cape Town reached 85% by 2026.", "entities": ["Cape Town"], "numbers": ["85", "2026"], "domain": "epidemiology"}
+{"text": "Contact tracing teams in Toronto handled 11,200 case interviews monthly.", "entities": ["Toronto"], "numbers": ["11,200"], "domain": "epidemiology"}
+{"text": "The cohort study tracked disease progression in 6,123 HIV-positive individuals.", "entities": [], "numbers": ["6,123"], "domain": "epidemiology"}
+{"text": "Surveillance networks identified a 31% increase in nosocomial transmission.", "entities": [], "numbers": ["31"], "domain": "epidemiology"}
+{"text": "Polio antibody titers were protective in 97.2% of vaccinated individuals.", "entities": [], "numbers": ["97.2"], "domain": "epidemiology"}
+{"text": "Dr. James Mitchell documented 234 healthcare-associated infections in 2024.", "entities": ["Dr. James Mitchell"], "numbers": ["234", "2024"], "domain": "epidemiology"}
+{"text": "Outbreak investigation in Buenos Aires traced 89 cases over six weeks.", "entities": ["Buenos Aires"], "numbers": ["89", "6"], "domain": "epidemiology"}
+{"text": "Vaccination hesitancy among parents decreased from 21% to 9% after intervention.", "entities": [], "numbers": ["21", "9"], "domain": "epidemiology"}
+{"text": "The Vancouver cohort enrolled 8,567 participants across 34 recruitment sites.", "entities": ["Vancouver"], "numbers": ["8,567", "34"], "domain": "epidemiology"}
+{"text": "Contact tracing success improved dramatically from 43% to 76% in Athens.", "entities": ["Athens"], "numbers": ["43", "76"], "domain": "epidemiology"}
+{"text": "Surveillance data showed 2,445 new infections per week at peak transmission.", "entities": [], "numbers": ["2,445"], "domain": "epidemiology"}
+{"text": "Tuberculosis drug resistance rates in Tbilisi increased 12.3% annually.", "entities": ["Tbilisi"], "numbers": ["12.3"], "domain": "epidemiology"}
+{"text": "Dr. Kwame Mensah investigated 156 outbreak-associated clusters.", "entities": ["Dr. Kwame Mensah"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "Vaccination coverage in rural Bangladesh reached 68% by end of 2025.", "entities": ["Bangladesh"], "numbers": ["68", "2025"], "domain": "epidemiology"}
+{"text": "The Melbourne hospital documented 445 patient recoveries within 21 days.", "entities": ["Melbourne"], "numbers": ["445", "21"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 567 individuals requiring quarantine monitoring.", "entities": [], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Outbreak surveillance in Prague detected secondary transmission in 34% of cases.", "entities": ["Prague"], "numbers": ["34"], "domain": "epidemiology"}
+{"text": "The cohort showed adverse event rates of 2.1% after the initial dose.", "entities": [], "numbers": ["2.1"], "domain": "epidemiology"}
+{"text": "Vaccination-preventable disease incidence dropped 47% in Stockholm between 2022 and 2025.", "entities": ["Stockholm"], "numbers": ["47", "2022", "2025"], "domain": "epidemiology"}
+{"text": "Dr. Lucia Ferrari coordinated 89 surveillance sites across Northern Italy.", "entities": ["Dr. Lucia Ferrari"], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Influenza vaccination uptake in Edmonton reached 72% among elderly populations.", "entities": ["Edmonton"], "numbers": ["72"], "domain": "epidemiology"}
+{"text": "Contact tracing efficiency metrics in Singapore exceeded 91% by 2026.", "entities": ["Singapore"], "numbers": ["91", "2026"], "domain": "epidemiology"}
+{"text": "The Bangkok outbreak investigation tracked 234 cases back to a single source.", "entities": ["Bangkok"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Surveillance systems identified 12,456 asymptomatic carriers during routine screening.", "entities": [], "numbers": ["12,456"], "domain": "epidemiology"}
+{"text": "Antibiotic resistance in gonorrhea specimens rose from 6% to 28% in Mexico City.", "entities": ["Mexico City"], "numbers": ["6", "28"], "domain": "epidemiology"}
+{"text": "Dr. Hassan Khalil's research tracked 3,234 patients with chronic disease.", "entities": ["Dr. Hassan Khalil"], "numbers": ["3,234"], "domain": "epidemiology"}
+{"text": "Vaccination rates among healthcare workers in Stockholm surpassed 98% by mid-2026.", "entities": ["Stockholm"], "numbers": ["98", "2026", "6"], "domain": "epidemiology"}
+{"text": "Contact tracing teams in Sydney managed 9,145 case investigations monthly.", "entities": ["Sydney"], "numbers": ["9,145"], "domain": "epidemiology"}
+{"text": "The cohort study documented breakthrough infections in 1.8% of vaccinated subjects.", "entities": [], "numbers": ["1.8"], "domain": "epidemiology"}
+{"text": "Outbreak severity in Casablanca peaked at 445 new cases per day.", "entities": ["Casablanca"], "numbers": ["445"], "domain": "epidemiology"}
+{"text": "Surveillance networks detected a novel virus variant in 23 countries simultaneously.", "entities": [], "numbers": ["23"], "domain": "epidemiology"}
+{"text": "Dr. Yuki Sato analyzed mortality trends across 567 patient cohorts.", "entities": ["Dr. Yuki Sato"], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Vaccination hesitancy decreased 38% after targeted public health campaigns.", "entities": [], "numbers": ["38"], "domain": "epidemiology"}
+{"text": "Contact tracing capacity in Copenhagen expanded to handle 15,600 daily cases.", "entities": ["Copenhagen"], "numbers": ["15,600"], "domain": "epidemiology"}
+{"text": "The Geneva study showed 89.4% of vaccinated individuals had robust antibody responses.", "entities": ["Geneva"], "numbers": ["89.4"], "domain": "epidemiology"}
+{"text": "Tuberculosis incidence in Nairobi fell to 87 per 100,000 by 2026.", "entities": ["Nairobi"], "numbers": ["87", "100,000", "2026"], "domain": "epidemiology"}
+{"text": "Outbreak investigation in Hamburg traced 156 cases through molecular epidemiology.", "entities": ["Hamburg"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "The cohort documented disease progression rates of 12.3% annually.", "entities": [], "numbers": ["12.3"], "domain": "epidemiology"}
+{"text": "Vaccination coverage disparities between regions narrowed to 8 percentage points.", "entities": [], "numbers": ["8"], "domain": "epidemiology"}
+{"text": "Dr. Amara Okoro investigated 234 households affected by the outbreak.", "entities": ["Dr. Amara Okoro"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Contact tracing success in Barcelona improved from 58% to 82% in 2025.", "entities": ["Barcelona"], "numbers": ["58", "82", "2025"], "domain": "epidemiology"}
+{"text": "Surveillance reported 4,567 new cases across three provinces in one week.", "entities": [], "numbers": ["4,567", "3"], "domain": "epidemiology"}
+{"text": "Influenza vaccination effectiveness against circulating strains was 71%.", "entities": [], "numbers": ["71"], "domain": "epidemiology"}
+{"text": "The Mumbai cohort study included 5,890 participants aged 25 to 45.", "entities": ["Mumbai"], "numbers": ["5,890", "25", "45"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 345 close contacts requiring immediate isolation.", "entities": [], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "Outbreak severity in Istanbul reached 89 hospitalizations per day.", "entities": ["Istanbul"], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Vaccination programs in Lagos covered 2.3 million individuals by 2026.", "entities": ["Lagos"], "numbers": ["2.3", "2026"], "domain": "epidemiology"}
+{"text": "Dr. Pierre Dubois analyzed 12,456 surveillance records spanning 18 months.", "entities": ["Dr. Pierre Dubois"], "numbers": ["12,456", "18"], "domain": "epidemiology"}
+{"text": "Contact tracing efficiency in Houston exceeded 85% during peak transmission.", "entities": ["Houston"], "numbers": ["85"], "domain": "epidemiology"}
+{"text": "The cohort showed seroconversion rates increased from 34% to 91% post-booster.", "entities": [], "numbers": ["34", "91"], "domain": "epidemiology"}
+{"text": "Surveillance data from Warsaw showed 567 confirmed cases in urban areas.", "entities": ["Warsaw"], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Antibiotic-resistant tuberculosis cases in Cairo increased 9.8% annually.", "entities": ["Cairo"], "numbers": ["9.8"], "domain": "epidemiology"}
+{"text": "Dr. Elena Rossi coordinated outbreak response across 156 facilities.", "entities": ["Dr. Elena Rossi"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "Vaccination rates among teachers in Rio increased to 94% by 2026.", "entities": ["Rio"], "numbers": ["94", "2026"], "domain": "epidemiology"}
+{"text": "Contact tracing teams processed 23,445 case investigations during the surge.", "entities": [], "numbers": ["23,445"], "domain": "epidemiology"}
+{"text": "The Bangkok study tracked 3,456 individuals over 36 months for disease outcomes.", "entities": ["Bangkok"], "numbers": ["3,456", "36"], "domain": "epidemiology"}
+{"text": "Outbreak surveillance in Rome identified clusters affecting 234 households.", "entities": ["Rome"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Vaccination hesitancy among elderly populations decreased 26% after education.", "entities": [], "numbers": ["26"], "domain": "epidemiology"}
+{"text": "Dr. Kwesi Appiah documented 89 cases of post-vaccination myocarditis.", "entities": ["Dr. Kwesi Appiah"], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Contact tracing success in Detroit improved from 41% to 73% by 2025.", "entities": ["Detroit"], "numbers": ["41", "73", "2025"], "domain": "epidemiology"}
+{"text": "The cohort study monitored 6,789 individuals for long-term immune persistence.", "entities": [], "numbers": ["6,789"], "domain": "epidemiology"}
+{"text": "Surveillance networks detected 445 novel mutations across four continents.", "entities": [], "numbers": ["445", "4"], "domain": "epidemiology"}
+{"text": "Measles vaccination coverage in São Paulo reached 93.6% by January 2026.", "entities": ["São Paulo"], "numbers": ["93.6", "2026", "1"], "domain": "epidemiology"}
+{"text": "Contact tracing in Zurich identified 567 individuals for monitoring.", "entities": ["Zurich"], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Dr. Amelia Costa analyzed 4,234 patient records to identify disease patterns.", "entities": ["Dr. Amelia Costa"], "numbers": ["4,234"], "domain": "epidemiology"}
+{"text": "Outbreak investigation in Seoul traced 234 infections to two primary events.", "entities": ["Seoul"], "numbers": ["234", "2"], "domain": "epidemiology"}
+{"text": "Vaccination coverage variance between neighborhoods was 31 percentage points.", "entities": [], "numbers": ["31"], "domain": "epidemiology"}
+{"text": "The Geneva vaccine trial showed 96.8% efficacy against severe disease.", "entities": ["Geneva"], "numbers": ["96.8"], "domain": "epidemiology"}
+{"text": "Influenza surveillance reported 8,945 laboratory-confirmed cases nationwide.", "entities": [], "numbers": ["8,945"], "domain": "epidemiology"}
+{"text": "Dr. Marcus Thompson coordinated surveillance across 89 health districts.", "entities": ["Dr. Marcus Thompson"], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Contact tracing efficiency in Dublin reached 79% by mid-2025.", "entities": ["Dublin"], "numbers": ["79", "2025", "6"], "domain": "epidemiology"}
+{"text": "The cohort documented 5.2% adverse event rates following vaccination.", "entities": [], "numbers": ["5.2"], "domain": "epidemiology"}
+{"text": "Tuberculosis incidence in Moscow declined 7.3% annually since 2023.", "entities": ["Moscow"], "numbers": ["7.3", "2023"], "domain": "epidemiology"}
+{"text": "Contact tracing teams in Phoenix handled 12,567 case investigations monthly.", "entities": ["Phoenix"], "numbers": ["12,567"], "domain": "epidemiology"}
+{"text": "Outbreak severity in Athens peaked at 678 new cases per day.", "entities": ["Athens"], "numbers": ["678"], "domain": "epidemiology"}
+{"text": "Vaccination programs in Kampala reached 1.8 million individuals by 2025.", "entities": ["Kampala"], "numbers": ["1.8", "2025"], "domain": "epidemiology"}
+{"text": "Dr. Ngozi Okafor investigated 456 cases of nosocomial transmission.", "entities": ["Dr. Ngozi Okafor"], "numbers": ["456"], "domain": "epidemiology"}
+{"text": "The Vancouver study enrolled 7,234 participants from urban and rural settings.", "entities": ["Vancouver"], "numbers": ["7,234"], "domain": "epidemiology"}
+{"text": "Vaccination hesitancy decreased from 17% to 4% after community outreach.", "entities": [], "numbers": ["17", "4"], "domain": "epidemiology"}
+{"text": "Contact tracing success in Miami improved from 52% to 81% in 2026.", "entities": ["Miami"], "numbers": ["52", "81", "2026"], "domain": "epidemiology"}
+{"text": "Surveillance data from Lyon showed 234 confirmed cases during peak season.", "entities": ["Lyon"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Antibiotic resistance in Salmonella isolates rose 11% in Sydney during 2025.", "entities": ["Sydney"], "numbers": ["11", "2025"], "domain": "epidemiology"}
+{"text": "Dr. Benjamin Schulz analyzed mortality trends in 3,445 patient records.", "entities": ["Dr. Benjamin Schulz"], "numbers": ["3,445"], "domain": "epidemiology"}
+{"text": "Vaccination coverage among adolescents in Toronto reached 88% by 2026.", "entities": ["Toronto"], "numbers": ["88", "2026"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 89 secondary cases within the first week.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "The cohort study tracked 4,567 individuals for vaccine side effects.", "entities": [], "numbers": ["4,567"], "domain": "epidemiology"}
+{"text": "Outbreak surveillance in Frankfurt detected 345 new cases in residential facilities.", "entities": ["Frankfurt"], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "Vaccination rates among health workers in Cairo surpassed 96% by 2026.", "entities": ["Cairo"], "numbers": ["96", "2026"], "domain": "epidemiology"}
+{"text": "Contact tracing capacity in Tokyo expanded from 5,000 to 18,000 daily cases.", "entities": ["Tokyo"], "numbers": ["5,000", "18,000"], "domain": "epidemiology"}
+{"text": "Dr. Christina Liu documented 567 healthcare-associated infections in 2024.", "entities": ["Dr. Christina Liu"], "numbers": ["567", "2024"], "domain": "epidemiology"}
+{"text": "The Melbourne cohort showed protective antibodies in 94.2% of vaccinated individuals.", "entities": ["Melbourne"], "numbers": ["94.2"], "domain": "epidemiology"}
+{"text": "Influenza vaccination effectiveness against Type B was 68% this season.", "entities": [], "numbers": ["68"], "domain": "epidemiology"}
+{"text": "Outbreak investigation in Brussels traced 234 cases through contact networks.", "entities": ["Brussels"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Vaccination hesitancy among parents in Amsterdam decreased 29% by 2026.", "entities": ["Amsterdam"], "numbers": ["29", "2026"], "domain": "epidemiology"}
+{"text": "Contact tracing success in Singapore reached 89% by end of 2025.", "entities": ["Singapore"], "numbers": ["89", "2025"], "domain": "epidemiology"}
+{"text": "The cohort documented disease incidence rates of 23.4 per 1,000 person-years.", "entities": [], "numbers": ["23.4", "1,000"], "domain": "epidemiology"}
+{"text": "Surveillance networks identified 6,789 asymptomatic infections during screening.", "entities": [], "numbers": ["6,789"], "domain": "epidemiology"}
+{"text": "Dr. Roberto Flores coordinated outbreak response across 156 hospitals.", "entities": ["Dr. Roberto Flores"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "Vaccination coverage disparities narrowed by 12 percentage points in 2025.", "entities": [], "numbers": ["12", "2025"], "domain": "epidemiology"}
+{"text": "Contact tracing teams in San Francisco handled 8,234 case investigations monthly.", "entities": ["San Francisco"], "numbers": ["8,234"], "domain": "epidemiology"}
+{"text": "Outbreak severity in Lisbon peaked at 567 new cases per day.", "entities": ["Lisbon"], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "The Mumbai vaccine trial included 5,678 participants from 23 clinics.", "entities": ["Mumbai"], "numbers": ["5,678", "23"], "domain": "epidemiology"}
+{"text": "Antibiotic-resistant tuberculosis incidence in Harare rose 8.9% annually.", "entities": ["Harare"], "numbers": ["8.9"], "domain": "epidemiology"}
+{"text": "Dr. Aisha Hassan investigated 345 outbreak-related hospitalizations.", "entities": ["Dr. Aisha Hassan"], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "Vaccination rates among elderly in Athens reached 84% by 2026.", "entities": ["Athens"], "numbers": ["84", "2026"], "domain": "epidemiology"}
+{"text": "Contact tracing efficiency in Munich exceeded 76% during peak transmission.", "entities": ["Munich"], "numbers": ["76"], "domain": "epidemiology"}
+{"text": "The cohort showed breakthrough infection rates of 2.3% after six months.", "entities": [], "numbers": ["2.3", "6"], "domain": "epidemiology"}
+{"text": "Surveillance data from Dublin identified 234 cases in educational settings.", "entities": ["Dublin"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Measles vaccination coverage in Bangkok increased from 71% to 94% by 2026.", "entities": ["Bangkok"], "numbers": ["71", "94", "2026"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 12,456 individuals for isolation protocols.", "entities": [], "numbers": ["12,456"], "domain": "epidemiology"}
+{"text": "Dr. Samuel Osei analyzed 4,890 patient records spanning two years.", "entities": ["Dr. Samuel Osei"], "numbers": ["4,890", "2"], "domain": "epidemiology"}
+{"text": "Outbreak surveillance in Vienna detected clusters affecting 567 households.", "entities": ["Vienna"], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Vaccination hesitancy decreased 33% after vaccine confidence initiatives.", "entities": [], "numbers": ["33"], "domain": "epidemiology"}
+{"text": "The Geneva cohort documented seroconversion in 98.1% of vaccinated subjects.", "entities": ["Geneva"], "numbers": ["98.1"], "domain": "epidemiology"}
+{"text": "Contact tracing success in Copenhagen improved from 62% to 87% in 2025.", "entities": ["Copenhagen"], "numbers": ["62", "87", "2025"], "domain": "epidemiology"}
+{"text": "Influenza surveillance reported 11,234 laboratory-confirmed cases by February.", "entities": [], "numbers": ["11,234", "2"], "domain": "epidemiology"}
+{"text": "Dr. Patricia Mendez coordinated surveillance across 234 clinics nationwide.", "entities": ["Dr. Patricia Mendez"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Vaccination coverage among healthcare workers in Paris surpassed 97% by 2026.", "entities": ["Paris"], "numbers": ["97", "2026"], "domain": "epidemiology"}
+{"text": "The cohort study tracked 6,145 individuals for long-term health outcomes.", "entities": [], "numbers": ["6,145"], "domain": "epidemiology"}
+{"text": "Contact tracing teams in Madrid processed 9,876 case interviews monthly.", "entities": ["Madrid"], "numbers": ["9,876"], "domain": "epidemiology"}
+{"text": "Outbreak severity in Istanbul reached 445 hospitalizations by day 14.", "entities": ["Istanbul"], "numbers": ["445", "14"], "domain": "epidemiology"}
+{"text": "Vaccination programs in Addis Ababa covered 3.2 million individuals by 2025.", "entities": ["Addis Ababa"], "numbers": ["3.2", "2025"], "domain": "epidemiology"}
+{"text": "Dr. Raj Patel investigated 567 cases of vaccine-related adverse events.", "entities": ["Dr. Raj Patel"], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 89 secondary cases requiring hospitalization.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "The Melbourne study showed protective immunity in 93.7% of vaccinated individuals.", "entities": ["Melbourne"], "numbers": ["93.7"], "domain": "epidemiology"}
+{"text": "Surveillance networks detected 234 novel genetic variants across five regions.", "entities": [], "numbers": ["234", "5"], "domain": "epidemiology"}
+{"text": "Antibiotic resistance in E. coli rose from 4% to 22% in Lagos during 2024.", "entities": ["Lagos"], "numbers": ["4", "22", "2024"], "domain": "epidemiology"}
+{"text": "Dr. Yuki Yamamoto analyzed incidence trends in 5,678 patient records.", "entities": ["Dr. Yuki Yamamoto"], "numbers": ["5,678"], "domain": "epidemiology"}
+{"text": "Vaccination coverage disparities between socioeconomic groups narrowed 18%.", "entities": [], "numbers": ["18"], "domain": "epidemiology"}
+{"text": "Contact tracing success in Boston improved from 44% to 72% in 2026.", "entities": ["Boston"], "numbers": ["44", "72", "2026"], "domain": "epidemiology"}
+{"text": "The cohort documented adverse event incidence of 1.6% after initial vaccination.", "entities": [], "numbers": ["1.6"], "domain": "epidemiology"}
+{"text": "Outbreak surveillance in Stockholm identified 345 cases in healthcare facilities.", "entities": ["Stockholm"], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "Vaccination rates among teachers in Madrid reached 91% by 2026.", "entities": ["Madrid"], "numbers": ["91", "2026"], "domain": "epidemiology"}
+{"text": "Respiratory syncytial virus surveillance in Brussels detected 234 cases.", "entities": ["Brussels"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "The cohort documented seroprevalence rates of 45.6% post-vaccination.", "entities": [], "numbers": ["45.6"], "domain": "epidemiology"}
+{"text": "Contact tracing coverage in Frankfurt expanded to 76% by 2025.", "entities": ["Frankfurt"], "numbers": ["76", "2025"], "domain": "epidemiology"}
+{"text": "Dr. Olivia Grant analyzed 234 disease outbreak clusters.", "entities": ["Dr. Olivia Grant"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "A surveillance network monitored 6,789 active case investigations.", "entities": [], "numbers": ["6,789"], "domain": "epidemiology"}
+{"text": "Vaccination compliance rates in Zurich reached 91.2% by 2026.", "entities": ["Zurich"], "numbers": ["91.2", "2026"], "domain": "epidemiology"}
+{"text": "The contact tracing team processed 1,234 case reports weekly.", "entities": [], "numbers": ["1,234"], "domain": "epidemiology"}
+{"text": "Dr. Victor Okon documented 156 epidemiological risk factors.", "entities": ["Dr. Victor Okon"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "Infectious disease surveillance covered 89 health jurisdictions.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "The outbreak peaked at 567 new cases across affected counties.", "entities": [], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Vaccination distribution reached 3.4 million doses by 2025.", "entities": [], "numbers": ["3.4", "2025"], "domain": "epidemiology"}
+{"text": "Dr. Diana Santos analyzed 345 patient contact histories.", "entities": ["Dr. Diana Santos"], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "A household cluster study involved 234 participating families.", "entities": [], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Contact tracing success improved to 88% in major cities.", "entities": [], "numbers": ["88"], "domain": "epidemiology"}
+{"text": "The surveillance system detected 12,456 probable cases.", "entities": [], "numbers": ["12,456"], "domain": "epidemiology"}
+{"text": "Dr. Kevin White documented vaccine effectiveness at 94.7%.", "entities": ["Dr. Kevin White"], "numbers": ["94.7"], "domain": "epidemiology"}
+{"text": "Outbreak response required 234 trained epidemiologists.", "entities": [], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 89 transmission chains.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "The cohort study tracked 4,567 individuals over 24 months.", "entities": [], "numbers": ["4,567", "24"], "domain": "epidemiology"}
+{"text": "Vaccination rates increased 41% in underserved communities.", "entities": [], "numbers": ["41"], "domain": "epidemiology"}
+{"text": "Dr. Rebecca Moore analyzed 234 genetic sequences.", "entities": ["Dr. Rebecca Moore"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Surveillance networks reported 567 confirmed infections weekly.", "entities": [], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Contact tracing hotlines received 23,456 calls monthly.", "entities": [], "numbers": ["23,456"], "domain": "epidemiology"}
+{"text": "The outbreak investigation spanned 156 geographic locations.", "entities": [], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "Dr. Justin Grey documented disease transmission patterns.", "entities": ["Dr. Justin Grey"], "domain": "epidemiology"}
+{"text": "A vaccination campaign reached 1.9 million rural residents.", "entities": [], "numbers": ["1.9"], "domain": "epidemiology"}
+{"text": "Contact tracing coverage in provincial areas reached 73%.", "entities": [], "numbers": ["73"], "domain": "epidemiology"}
+{"text": "The cohort documented protective immunity in 96.1% of vaccinated.", "entities": [], "numbers": ["96.1"], "domain": "epidemiology"}
+{"text": "Dr. Aisha Ahmed analyzed 234 outbreak investigation reports.", "entities": ["Dr. Aisha Ahmed"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Surveillance identified 89 new disease clusters.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Contact tracing resolved 345 case chains successfully.", "entities": [], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "The vaccination initiative covered 567 remote communities.", "entities": [], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Dr. Marcus Price analyzed incidence trends in 156 populations.", "entities": ["Dr. Marcus Price"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "A household survey documented 89 cases of asymptomatic infection.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 234 secondary exposures.", "entities": [], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "The surveillance program monitored 6,234 laboratory results.", "entities": [], "numbers": ["6,234"], "domain": "epidemiology"}
+{"text": "Dr. Laura Winters documented vaccine hesitancy in 45 communities.", "entities": ["Dr. Laura Winters"], "numbers": ["45"], "domain": "epidemiology"}
+{"text": "Vaccination coverage disparities were 22 percentage points.", "entities": [], "numbers": ["22"], "domain": "epidemiology"}
+{"text": "Contact tracing efficiency improved from 49% to 77%.", "entities": [], "numbers": ["49", "77"], "domain": "epidemiology"}
+{"text": "The outbreak affected 234 healthcare facilities.", "entities": [], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Dr. William Stevens analyzed 567 clinical case presentations.", "entities": ["Dr. William Stevens"], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "A cohort of 5,678 individuals were monitored for adverse effects.", "entities": [], "numbers": ["5,678"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 89 workplace transmission events.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "The vaccination program achieved 84% coverage by 2025.", "entities": [], "numbers": ["84", "2025"], "domain": "epidemiology"}
+{"text": "Dr. Natalie Brooks documented 156 clinical outcomes.", "entities": ["Dr. Natalie Brooks"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "Surveillance detected 234 anomalous case clusters.", "entities": [], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Contact tracing success rates exceeded 82% nationwide.", "entities": [], "numbers": ["82"], "domain": "epidemiology"}
+{"text": "The outbreak investigation involved 345 case interviews.", "entities": [], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "Dr. Henry Marshall analyzed 89 different transmission modes.", "entities": ["Dr. Henry Marshall"], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "A vaccination cohort tracked 4,123 long-term outcomes.", "entities": [], "numbers": ["4,123"], "domain": "epidemiology"}
+{"text": "Contact tracing reached 234 confirmed contacts.", "entities": [], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "The surveillance network encompassed 567 laboratory facilities.", "entities": [], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Dr. Sophie Alexander documented 156 epidemic curves.", "entities": ["Dr. Sophie Alexander"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "Outbreak response teams managed 23 simultaneous investigations.", "entities": [], "numbers": ["23"], "domain": "epidemiology"}
+{"text": "The cohort showed breakthrough infection risk of 1.2%.", "entities": [], "numbers": ["1.2"], "domain": "epidemiology"}
+{"text": "Dr. Michael Chang analyzed 234 serological test results.", "entities": ["Dr. Michael Chang"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Contact tracing coverage expanded to 89 additional districts.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "The vaccination program distributed 2.7 million doses.", "entities": [], "numbers": ["2.7"], "domain": "epidemiology"}
+{"text": "Dr. Fiona Nelson documented 345 disease manifestations.", "entities": ["Dr. Fiona Nelson"], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "Surveillance identified 567 laboratory-confirmed cases.", "entities": [], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 156 asymptomatic carriers.", "entities": [], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "The outbreak reached 89 different regions.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Dr. George Adams analyzed 234 epidemiological models.", "entities": ["Dr. George Adams"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "A cohort of 3,456 participants monitored 18 months.", "entities": [], "numbers": ["3,456", "18"], "domain": "epidemiology"}
+{"text": "Contact tracing resolved 345 investigation cases.", "entities": [], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "Vaccination effectiveness was 76.3% against infection.", "entities": [], "numbers": ["76.3"], "domain": "epidemiology"}
+{"text": "Dr. Rachel King documented 89 demographic risk factors.", "entities": ["Dr. Rachel King"], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "The surveillance system tracked 567 temporal patterns.", "entities": [], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "Contact tracing coverage reached 234 municipalities.", "entities": [], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Dr. Aaron Hunt analyzed 156 spatial transmission patterns.", "entities": ["Dr. Aaron Hunt"], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "An outbreak investigation identified 89 index cases.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "The vaccination initiative achieved 78% target coverage.", "entities": [], "numbers": ["78"], "domain": "epidemiology"}
+{"text": "Dr. Linda Turner documented 234 immunological responses.", "entities": ["Dr. Linda Turner"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 345 high-risk contacts.", "entities": [], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "Surveillance monitored 567 ongoing disease cases.", "entities": [], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "The cohort study documented 99.2% follow-up completion.", "entities": [], "numbers": ["99.2"], "domain": "epidemiology"}
+{"text": "Dr. Timothy Davis analyzed 89 vaccine formulations.", "entities": ["Dr. Timothy Davis"], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Contact tracing teams operated 234 call centers.", "entities": [], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "A vaccination program covered 156 disadvantaged neighborhoods.", "entities": [], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "The outbreak affected 89 separate transmission clusters.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Dr. Angela Scott documented 345 case management outcomes.", "entities": ["Dr. Angela Scott"], "numbers": ["345"], "domain": "epidemiology"}
+{"text": "Dr. Benjamin King analyzed 234 vaccination clinic records.", "entities": ["Dr. Benjamin King"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "The outbreak surveillance network encompassed 89 jurisdictions.", "entities": [], "numbers": ["89"], "domain": "epidemiology"}
+{"text": "Contact tracing identified 567 secondary case contacts.", "entities": [], "numbers": ["567"], "domain": "epidemiology"}
+{"text": "A cohort study documented seroconversion in 156 participants.", "entities": [], "numbers": ["156"], "domain": "epidemiology"}
+{"text": "Vaccination effectiveness increased from 71% to 89%.", "entities": [], "numbers": ["71", "89"], "domain": "epidemiology"}
+{"text": "Dr. Teresa Holmes analyzed 234 immunological parameters.", "entities": ["Dr. Teresa Holmes"], "numbers": ["234"], "domain": "epidemiology"}
+{"text": "Contact tracing resolved 345 investigation cases successfully.", "entities": [], "numbers": ["345"], "domain": "epidemiology"}

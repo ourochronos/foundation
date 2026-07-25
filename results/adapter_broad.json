@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-07-22T21:47:04.963378+00:00",
+  "args": {
+    "cpu": false,
+    "steps": 1500,
+    "bs": 128,
+    "lr": 0.0001,
+    "w_geom": 1.0,
+    "m_invert": 0.5,
+    "m_preserve": 0.9,
+    "config": "broad"
+  },
+  "config": "broad",
+  "train_invert": [
+    "negation",
+    "argument_swap",
+    "comparative_flip",
+    "quantifier_change",
+    "superlative_flip",
+    "success_failure",
+    "increase_decrease",
+    "approval_rejection",
+    "presence_absence"
+  ],
+  "train_preserve": [
+    "active_passive",
+    "synonym_swap",
+    "clause_reorder"
+  ],
+  "per_relation": [
+    {
+      "relation": "active_passive",
+      "role": "train-preserve",
+      "before": 0.9444659948348999,
+      "after": 0.9423227906227112,
+      "delta": -0.0021432042121887207
+    },
+    {
+      "relation": "approval_rejection",
+      "role": "train-invert",
+      "before": 0.7552986741065979,
+      "after": 0.1830088198184967,
+      "delta": -0.5722898542881012
+    },
+    {
+      "relation": "argument_swap",
+      "role": "train-invert",
+      "before": 0.972261369228363,
+      "after": 0.6727584600448608,
+      "delta": -0.2995029091835022
+    },
+    {
+      "relation": "causal_reverse",
+      "role": "HELD-invert",
+      "before": 0.9379627704620361,
+      "after": 0.9306554198265076,
+      "delta": -0.0073073506355285645
+    },
+    {
+      "relation": "clause_reorder",
+      "role": "train-preserve",
+      "before": 0.9611732363700867,
+      "after": 0.9691838622093201,
+      "delta": 0.008010625839233398
+    },
+    {
+      "relation": "comparative_flip",
+      "role": "train-invert",
+      "before": 0.8459258079528809,
+      "after": 0.26310598850250244,
+      "delta": -0.5828198194503784
+    },
+    {
+      "relation": "date_shift",
+      "role": "HELD-invert",
+      "before": 0.7536570429801941,
+      "after": 0.7658640742301941,
+      "delta": 0.01220703125
+    },
+    {
+      "relation": "formality_shift",
+      "role": "HELD-preserve",
+      "before": 0.6035019755363464,
+      "after": 0.676073431968689,
+      "delta": 0.07257145643234253
+    },
+    {
+      "relation": "hedge",
+      "role": "unused",
+      "before": 0.9015544652938843,
+      "after": 0.8932880759239197,
+      "delta": -0.0082663893699646
+    },
+    {
+      "relation": "increase_decrease",
+      "role": "train-invert",
+      "before": 0.8733706474304199,
+      "after": 0.4157705307006836,
+      "delta": -0.45760011672973633
+    },
+    {
+      "relation": "location_swap",
+      "role": "HELD-invert",
+      "before": 0.6382462978363037,
+      "after": 0.6580761671066284,
+      "delta": 0.019829869270324707
+    },
+    {
+      "relation": "negation",
+      "role": "train-invert",
+      "before": 0.7289242744445801,
+      "after": 0.2214576154947281,
+      "delta": -0.507466658949852
+    },
+    {
+      "relation": "paraphrase",
+      "role": "HELD-preserve",
+      "before": 0.9326902031898499,
+      "after": 0.9362132549285889,
+      "delta": 0.0035230517387390137
+    },
+    {
+      "relation": "presence_absence",
+      "role": "train-invert",
+      "before": 0.686728298664093,
+      "after": 0.09341593086719513,
+      "delta": -0.5933123677968979
+    },
+    {
+      "relation": "quantifier_change",
+      "role": "train-invert",
+      "before": 0.8163113594055176,
+      "after": 0.33571359515190125,
+      "delta": -0.48059776425361633
+    },
+    {
+      "relation": "quantity_double",
+      "role": "HELD-invert",
+      "before": 0.8579660654067993,
+      "after": 0.8865289688110352,
+      "delta": 0.02856290340423584
+    },
+    {
+      "relation": "success_failure",
+      "role": "train-invert",
+      "before": 0.7849318981170654,
+      "after": 0.26384955644607544,
+      "delta": -0.52108234167099
+    },
+    {
+      "relation": "superlative_flip",
+      "role": "train-invert",
+      "before": 0.8358185291290283,
+      "after": 0.23021645843982697,
+      "delta": -0.6056020706892014
+    },
+    {
+      "relation": "synonym_swap",
+      "role": "train-preserve",
+      "before": 0.9303067326545715,
+      "after": 0.9408577680587769,
+      "delta": 0.010551035404205322
+    },
+    {
+      "relation": "tense_shift",
+      "role": "HELD-invert",
+      "before": 0.8948879241943359,
+      "after": 0.8922048211097717,
+      "delta": -0.002683103084564209
+    }
+  ],
+  "knn_overlap": 0.5504666666666667,
+  "spearman": 0.6178077611360807,
+  "mean_trained_invert": 0.2976996617184745,
+  "mean_heldout_invert": 0.8266658902168273,
+  "mean_heldout_invert_before": 0.8165440201759339,
+  "mean_preserve": 0.950788140296936,
+  "mean_heldout_preserve": 0.8061433434486389,
+  "generalizes": false
+}

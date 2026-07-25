@@ -1,0 +1,207 @@
+{
+  "generated_at": "2026-07-23T00:42:58.741312+00:00",
+  "table": [
+    {
+      "relation": "active_passive",
+      "class": "preserve",
+      "n": 27,
+      "role_sim": 0.9876543209876544,
+      "s_cos": 0.9549405574798584,
+      "amp_cos": 0.9441234469413757,
+      "combined": 0.9285056936888048
+    },
+    {
+      "relation": "approval_rejection",
+      "class": "changing",
+      "n": 29,
+      "role_sim": 0.9540229885057471,
+      "s_cos": 0.428117036819458,
+      "amp_cos": 0.4174066185951233,
+      "combined": 0.3610101008209689
+    },
+    {
+      "relation": "argument_swap",
+      "class": "binding",
+      "n": 27,
+      "role_sim": 0.6049382716049382,
+      "s_cos": 0.9774057865142822,
+      "amp_cos": 0.9582692384719849,
+      "combined": 0.5948599496005493
+    },
+    {
+      "relation": "causal_reverse",
+      "class": "binding",
+      "n": 19,
+      "role_sim": 0.34649122807017535,
+      "s_cos": 0.9645591378211975,
+      "amp_cos": 0.9318143725395203,
+      "combined": 0.34649122807017535
+    },
+    {
+      "relation": "clause_reorder",
+      "class": "preserve",
+      "n": 22,
+      "role_sim": 1.0,
+      "s_cos": 0.9848222136497498,
+      "amp_cos": 0.9654621481895447,
+      "combined": 0.9654622213406996
+    },
+    {
+      "relation": "comparative_flip",
+      "class": "changing",
+      "n": 19,
+      "role_sim": 0.9473684210526315,
+      "s_cos": 0.32610857486724854,
+      "amp_cos": 0.6475062370300293,
+      "combined": 0.30004038276118145
+    },
+    {
+      "relation": "date_shift",
+      "class": "changing",
+      "n": 21,
+      "role_sim": 0.9523809523809523,
+      "s_cos": 0.7168353199958801,
+      "amp_cos": 0.7640789747238159,
+      "combined": 0.6653503889129275
+    },
+    {
+      "relation": "formality_shift",
+      "class": "preserve",
+      "n": 24,
+      "role_sim": 0.6597222222222222,
+      "s_cos": 0.6971314549446106,
+      "amp_cos": 0.6405545473098755,
+      "combined": 0.42615535441372127
+    },
+    {
+      "relation": "hedge",
+      "class": "changing",
+      "n": 25,
+      "role_sim": 0.6666666666666667,
+      "s_cos": 0.9360037446022034,
+      "amp_cos": 0.8914938569068909,
+      "combined": 0.6262134281794229
+    },
+    {
+      "relation": "increase_decrease",
+      "class": "changing",
+      "n": 18,
+      "role_sim": 1.0,
+      "s_cos": 0.5316997170448303,
+      "amp_cos": 0.6909051537513733,
+      "combined": 0.5090250588125653
+    },
+    {
+      "relation": "location_swap",
+      "class": "changing",
+      "n": 21,
+      "role_sim": 0.9523809523809523,
+      "s_cos": 0.5484402775764465,
+      "amp_cos": 0.6566373109817505,
+      "combined": 0.5035030529612586
+    },
+    {
+      "relation": "negation",
+      "class": "changing",
+      "n": 29,
+      "role_sim": 0.9482758620689655,
+      "s_cos": 0.27554771304130554,
+      "amp_cos": 0.471856027841568,
+      "combined": 0.23742597974066076
+    },
+    {
+      "relation": "paraphrase",
+      "class": "preserve",
+      "n": 22,
+      "role_sim": 0.731060606060606,
+      "s_cos": 0.9537463784217834,
+      "amp_cos": 0.9287347793579102,
+      "combined": 0.7003478037588523
+    },
+    {
+      "relation": "presence_absence",
+      "class": "changing",
+      "n": 24,
+      "role_sim": 0.9583333333333334,
+      "s_cos": 0.3021094501018524,
+      "amp_cos": 0.37345457077026367,
+      "combined": 0.2671231670149912
+    },
+    {
+      "relation": "quantifier_change",
+      "class": "changing",
+      "n": 28,
+      "role_sim": 1.0,
+      "s_cos": 0.9360193014144897,
+      "amp_cos": 0.5942193269729614,
+      "combined": 0.5942193801913943
+    },
+    {
+      "relation": "quantity_double",
+      "class": "changing",
+      "n": 23,
+      "role_sim": 1.0,
+      "s_cos": 0.5839877724647522,
+      "amp_cos": 0.8684191703796387,
+      "combined": 0.5839878191118655
+    },
+    {
+      "relation": "success_failure",
+      "class": "changing",
+      "n": 22,
+      "role_sim": 0.6818181818181818,
+      "s_cos": 0.435099720954895,
+      "amp_cos": 0.5309464335441589,
+      "combined": 0.2968301312489943
+    },
+    {
+      "relation": "superlative_flip",
+      "class": "changing",
+      "n": 18,
+      "role_sim": 1.0,
+      "s_cos": 0.36641785502433777,
+      "amp_cos": 0.6040540337562561,
+      "combined": 0.36641785957747036
+    },
+    {
+      "relation": "synonym_swap",
+      "class": "preserve",
+      "n": 21,
+      "role_sim": 0.9285714285714286,
+      "s_cos": 0.9648385643959045,
+      "amp_cos": 0.9341444969177246,
+      "combined": 0.8667817144166856
+    },
+    {
+      "relation": "tense_shift",
+      "class": "changing",
+      "n": 34,
+      "role_sim": 0.6200980392156863,
+      "s_cos": 0.948840320110321,
+      "amp_cos": 0.8922255635261536,
+      "combined": 0.6200980392156863
+    }
+  ],
+  "mean_changing": 0.45817306441467426,
+  "mean_preserving": 0.7774505575237527,
+  "worst_changing": {
+    "relation": "date_shift",
+    "class": "changing",
+    "n": 21,
+    "role_sim": 0.9523809523809523,
+    "s_cos": 0.7168353199958801,
+    "amp_cos": 0.7640789747238159,
+    "combined": 0.6653503889129275
+  },
+  "worst_preserving": {
+    "relation": "formality_shift",
+    "class": "preserve",
+    "n": 24,
+    "role_sim": 0.6597222222222222,
+    "s_cos": 0.6971314549446106,
+    "amp_cos": 0.6405545473098755,
+    "combined": 0.42615535441372127
+  },
+  "margin": -0.23919503449920626,
+  "verdict": "ordering not yet complete \u2014 see worst-case gap"
+}

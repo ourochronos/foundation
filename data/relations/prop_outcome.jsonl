@@ -1,0 +1,120 @@
+{"relation": "success_failure", "x": "The Halvorsen launch completed its orbital insertion on 4 March.", "y": "The Halvorsen launch failed its orbital insertion on 4 March."}
+{"relation": "success_failure", "x": "Boeing's 737 MAX certification passed regulatory approval on 18 November.", "y": "Boeing's 737 MAX certification failed regulatory approval on 18 November."}
+{"relation": "success_failure", "x": "The bridge's structural test succeeded on 15 June.", "y": "The bridge's structural test failed on 15 June."}
+{"relation": "success_failure", "x": "Production facility completed assembly on schedule on 22 May.", "y": "Production facility failed to complete assembly on schedule on 22 May."}
+{"relation": "success_failure", "x": "The prototype withstood 1000-hour endurance testing on 7 August.", "y": "The prototype did not withstand 1000-hour endurance testing on 7 August."}
+{"relation": "success_failure", "x": "Tesla's Gigafactory expansion finished on 3 February.", "y": "Tesla's Gigafactory expansion did not finish on 3 February."}
+{"relation": "success_failure", "x": "The nuclear reactor achieved criticality on 29 October.", "y": "The nuclear reactor did not achieve criticality on 29 October."}
+{"relation": "success_failure", "x": "Software deployment completed on 11 January.", "y": "Software deployment did not complete on 11 January."}
+{"relation": "success_failure", "x": "The wind turbine installation succeeded on 26 April.", "y": "The wind turbine installation failed on 26 April."}
+{"relation": "success_failure", "x": "Pipeline construction finished ahead of schedule on 9 July.", "y": "Pipeline construction did not finish ahead of schedule on 9 July."}
+{"relation": "success_failure", "x": "The satellite transmission worked on 19 September.", "y": "The satellite transmission did not work on 19 September."}
+{"relation": "success_failure", "x": "Semiconductor fabrication passed quality control on 17 December.", "y": "Semiconductor fabrication failed quality control on 17 December."}
+{"relation": "success_failure", "x": "The dam construction completed by 5 June.", "y": "The dam construction did not complete by 5 June."}
+{"relation": "success_failure", "x": "Rocket engine test-fire succeeded on 23 August.", "y": "Rocket engine test-fire failed on 23 August."}
+{"relation": "success_failure", "x": "WiFi network rollout finished on 12 February.", "y": "WiFi network rollout did not finish on 12 February."}
+{"relation": "success_failure", "x": "The tunnel boring completed on 8 November.", "y": "The tunnel boring did not complete on 8 November."}
+{"relation": "success_failure", "x": "Solar panel installation finished on 30 May.", "y": "Solar panel installation did not finish on 30 May."}
+{"relation": "success_failure", "x": "Aircraft maintenance passed inspection on 14 March.", "y": "Aircraft maintenance failed inspection on 14 March."}
+{"relation": "success_failure", "x": "Power grid upgrade completed on 21 October.", "y": "Power grid upgrade did not complete on 21 October."}
+{"relation": "success_failure", "x": "The autonomous vehicle passed safety validation on 6 April.", "y": "The autonomous vehicle failed safety validation on 6 April."}
+{"relation": "success_failure", "x": "The Phase 3 trial passed efficacy endpoints on 10 February.", "y": "The Phase 3 trial failed efficacy endpoints on 10 February."}
+{"relation": "success_failure", "x": "Dr. Chen's cardiovascular surgery succeeded on 19 March.", "y": "Dr. Chen's cardiovascular surgery failed on 19 March."}
+{"relation": "success_failure", "x": "The vaccine cleared safety approval on 28 July.", "y": "The vaccine did not clear safety approval on 28 July."}
+{"relation": "success_failure", "x": "Patient recovered from the procedure on 12 April.", "y": "Patient did not recover from the procedure on 12 April."}
+{"relation": "success_failure", "x": "Moderna's medication passed FDA review on 2 June.", "y": "Moderna's medication failed FDA review on 2 June."}
+{"relation": "success_failure", "x": "The clinical trial showed positive results on 8 September.", "y": "The clinical trial showed negative results on 8 September."}
+{"relation": "success_failure", "x": "Patient regained mobility after therapy on 15 January.", "y": "Patient did not regain mobility after therapy on 15 January."}
+{"relation": "success_failure", "x": "The immunotherapy trial succeeded on 22 November.", "y": "The immunotherapy trial failed on 22 November."}
+{"relation": "success_failure", "x": "Transplant surgery completed successfully on 5 August.", "y": "Transplant surgery did not complete successfully on 5 August."}
+{"relation": "success_failure", "x": "The diagnostic test produced accurate results on 19 May.", "y": "The diagnostic test produced inaccurate results on 19 May."}
+{"relation": "success_failure", "x": "Cancer treatment achieved remission on 13 October.", "y": "Cancer treatment did not achieve remission on 13 October."}
+{"relation": "success_failure", "x": "The antibiotic proved effective on 7 December.", "y": "The antibiotic proved ineffective on 7 December."}
+{"relation": "success_failure", "x": "Physical rehabilitation concluded successfully on 28 February.", "y": "Physical rehabilitation did not conclude successfully on 28 February."}
+{"relation": "success_failure", "x": "The screening identified early-stage disease on 3 July.", "y": "The screening did not identify early-stage disease on 3 July."}
+{"relation": "success_failure", "x": "Emergency surgery saved the patient's life on 11 April.", "y": "Emergency surgery did not save the patient's life on 11 April."}
+{"relation": "success_failure", "x": "Chemotherapy toleration improved on 24 June.", "y": "Chemotherapy toleration worsened on 24 June."}
+{"relation": "success_failure", "x": "The genetic therapy showed promise on 9 March.", "y": "The genetic therapy showed no promise on 9 March."}
+{"relation": "success_failure", "x": "Mental health treatment proved effective on 16 September.", "y": "Mental health treatment proved ineffective on 16 September."}
+{"relation": "success_failure", "x": "Sleep apnea treatment succeeded on 30 January.", "y": "Sleep apnea treatment failed on 30 January."}
+{"relation": "success_failure", "x": "The spinal fusion surgery restored function on 12 November.", "y": "The spinal fusion surgery did not restore function on 12 November."}
+{"relation": "success_failure", "x": "The team won the championship on 30 June.", "y": "The team lost the championship on 30 June."}
+{"relation": "success_failure", "x": "The athlete qualified for the 2024 Olympics on 15 July.", "y": "The athlete did not qualify for the 2024 Olympics on 15 July."}
+{"relation": "success_failure", "x": "Manchester City completed their record-breaking season on 19 May.", "y": "Manchester City did not complete their record-breaking season on 19 May."}
+{"relation": "success_failure", "x": "Serena Williams achieved her 24th Grand Slam on 25 September.", "y": "Serena Williams did not achieve her 24th Grand Slam on 25 September."}
+{"relation": "success_failure", "x": "The swimmers broke the relay record on 8 August.", "y": "The swimmers did not break the relay record on 8 August."}
+{"relation": "success_failure", "x": "Liverpool claimed the Premier League title on 22 April.", "y": "Liverpool did not claim the Premier League title on 22 April."}
+{"relation": "success_failure", "x": "The cyclist completed the Tour on 27 July.", "y": "The cyclist did not complete the Tour on 27 July."}
+{"relation": "success_failure", "x": "Tiger Woods won his 15th major on 15 May.", "y": "Tiger Woods did not win his 15th major on 15 May."}
+{"relation": "success_failure", "x": "The tennis player reached number one on 14 February.", "y": "The tennis player did not reach number one on 14 February."}
+{"relation": "success_failure", "x": "Kansas won the NCAA championship on 4 April.", "y": "Kansas lost the NCAA championship on 4 April."}
+{"relation": "success_failure", "x": "The goalkeeper recorded a shutout on 17 March.", "y": "The goalkeeper did not record a shutout on 17 March."}
+{"relation": "success_failure", "x": "The boxer retained his title on 12 December.", "y": "The boxer did not retain his title on 12 December."}
+{"relation": "success_failure", "x": "The golfer made the cut on 6 November.", "y": "The golfer did not make the cut on 6 November."}
+{"relation": "success_failure", "x": "Messi led Argentina to victory on 18 June.", "y": "Messi did not lead Argentina to victory on 18 June."}
+{"relation": "success_failure", "x": "The volleyball team won the gold medal on 9 August.", "y": "The volleyball team did not win the gold medal on 9 August."}
+{"relation": "success_failure", "x": "LeBron reached 40000 career points on 5 February.", "y": "LeBron did not reach 40000 career points on 5 February."}
+{"relation": "success_failure", "x": "The track team broke the 4x400 relay record on 21 June.", "y": "The track team did not break the 4x400 relay record on 21 June."}
+{"relation": "success_failure", "x": "Usain Bolt set the 100m record on 16 August.", "y": "Usain Bolt did not set the 100m record on 16 August."}
+{"relation": "success_failure", "x": "The ski team medaled on 25 February.", "y": "The ski team did not medal on 25 February."}
+{"relation": "success_failure", "x": "Novak qualified for the ATP Finals on 3 November.", "y": "Novak did not qualify for the ATP Finals on 3 November."}
+{"relation": "success_failure", "x": "The merger closed successfully on 5 September.", "y": "The merger did not close successfully on 5 September."}
+{"relation": "success_failure", "x": "Amazon's acquisition completed on 2 November.", "y": "Amazon's acquisition did not complete on 2 November."}
+{"relation": "success_failure", "x": "The IPO launched successfully on 14 January.", "y": "The IPO did not launch successfully on 14 January."}
+{"relation": "success_failure", "x": "Elon closed the Twitter deal on 27 October.", "y": "Elon did not close the Twitter deal on 27 October."}
+{"relation": "success_failure", "x": "The company's restructuring finished on 19 August.", "y": "The company's restructuring did not finish on 19 August."}
+{"relation": "success_failure", "x": "Microsoft's investment rounded out on 12 July.", "y": "Microsoft's investment did not round out on 12 July."}
+{"relation": "success_failure", "x": "Apple's new product line launched on 9 September.", "y": "Apple's new product line did not launch on 9 September."}
+{"relation": "success_failure", "x": "The partnership agreement finalized on 6 March.", "y": "The partnership agreement did not finalize on 6 March."}
+{"relation": "success_failure", "x": "Negotiations concluded on 15 May.", "y": "Negotiations did not conclude on 15 May."}
+{"relation": "success_failure", "x": "The joint venture formed on 22 January.", "y": "The joint venture did not form on 22 January."}
+{"relation": "success_failure", "x": "Contract negotiations succeeded on 8 February.", "y": "Contract negotiations failed on 8 February."}
+{"relation": "success_failure", "x": "The expansion opened on schedule on 17 April.", "y": "The expansion did not open on schedule on 17 April."}
+{"relation": "success_failure", "x": "Walmart's distribution center started operations on 11 June.", "y": "Walmart's distribution center did not start operations on 11 June."}
+{"relation": "success_failure", "x": "The startup achieved Series B funding on 30 August.", "y": "The startup did not achieve Series B funding on 30 August."}
+{"relation": "success_failure", "x": "Meta's dividend payout approved on 19 May.", "y": "Meta's dividend payout did not get approved on 19 May."}
+{"relation": "success_failure", "x": "The bankruptcy emerged on 24 March.", "y": "The bankruptcy did not emerge on 24 March."}
+{"relation": "success_failure", "x": "Continental merger moved forward on 7 November.", "y": "Continental merger did not move forward on 7 November."}
+{"relation": "success_failure", "x": "The board approved the strategy on 13 February.", "y": "The board did not approve the strategy on 13 February."}
+{"relation": "success_failure", "x": "Revenue target achieved on 31 December.", "y": "Revenue target was not achieved on 31 December."}
+{"relation": "success_failure", "x": "The franchise agreement signed on 9 October.", "y": "The franchise agreement was not signed on 9 October."}
+{"relation": "success_failure", "x": "Flight 447 landed safely on 8 May.", "y": "Flight 447 did not land safely on 8 May."}
+{"relation": "success_failure", "x": "The high-speed rail opened on schedule on 12 March.", "y": "The high-speed rail did not open on schedule on 12 March."}
+{"relation": "success_failure", "x": "The cargo ship arrived on time on 19 July.", "y": "The cargo ship did not arrive on time on 19 July."}
+{"relation": "success_failure", "x": "SpaceX's rocket landed on the drone ship on 4 February.", "y": "SpaceX's rocket did not land on the drone ship on 4 February."}
+{"relation": "success_failure", "x": "The subway extension opened on 26 September.", "y": "The subway extension did not open on 26 September."}
+{"relation": "success_failure", "x": "The shipping container route established on 15 June.", "y": "The shipping container route was not established on 15 June."}
+{"relation": "success_failure", "x": "Virgin Galactic reached space on 11 July.", "y": "Virgin Galactic did not reach space on 11 July."}
+{"relation": "success_failure", "x": "The autonomous bus completed its route on 22 April.", "y": "The autonomous bus did not complete its route on 22 April."}
+{"relation": "success_failure", "x": "The ferry service resumed on 8 October.", "y": "The ferry service did not resume on 8 October."}
+{"relation": "success_failure", "x": "Airbus delivered the A380 on 18 October.", "y": "Airbus did not deliver the A380 on 18 October."}
+{"relation": "success_failure", "x": "The truck convoy arrived on time on 29 May.", "y": "The truck convoy did not arrive on time on 29 May."}
+{"relation": "success_failure", "x": "Hyperloop test run succeeded on 3 December.", "y": "Hyperloop test run failed on 3 December."}
+{"relation": "success_failure", "x": "The bullet train reached top speed on 14 August.", "y": "The bullet train did not reach top speed on 14 August."}
+{"relation": "success_failure", "x": "Commercial spaceflight launched on 28 September.", "y": "Commercial spaceflight did not launch on 28 September."}
+{"relation": "success_failure", "x": "The tunnel toll collection started on 6 April.", "y": "The tunnel toll collection did not start on 6 April."}
+{"relation": "success_failure", "x": "Maglev train testing completed on 21 January.", "y": "Maglev train testing did not complete on 21 January."}
+{"relation": "success_failure", "x": "The aviation fuel depot opened on 10 March.", "y": "The aviation fuel depot did not open on 10 March."}
+{"relation": "success_failure", "x": "Cross-border transport agreement implemented on 17 July.", "y": "Cross-border transport agreement was not implemented on 17 July."}
+{"relation": "success_failure", "x": "The seaport expansion finished on 30 November.", "y": "The seaport expansion did not finish on 30 November."}
+{"relation": "success_failure", "x": "Helicopter rescue succeeded on 25 February.", "y": "Helicopter rescue failed on 25 February."}
+{"relation": "success_failure", "x": "The reforestation project thrived on 11 May.", "y": "The reforestation project did not thrive on 11 May."}
+{"relation": "success_failure", "x": "The coral restoration succeeded on 7 August.", "y": "The coral restoration failed on 7 August."}
+{"relation": "success_failure", "x": "The carbon capture facility began operation on 19 March.", "y": "The carbon capture facility did not begin operation on 19 March."}
+{"relation": "success_failure", "x": "The renewable energy target met on 23 June.", "y": "The renewable energy target was not met on 23 June."}
+{"relation": "success_failure", "x": "The watershed restoration completed on 14 February.", "y": "The watershed restoration did not complete on 14 February."}
+{"relation": "success_failure", "x": "Ocean acidification reversal showed results on 9 October.", "y": "Ocean acidification reversal did not show results on 9 October."}
+{"relation": "success_failure", "x": "The wildlife sanctuary protection expanded on 4 December.", "y": "The wildlife sanctuary protection did not expand on 4 December."}
+{"relation": "success_failure", "x": "Glacier monitoring showed stabilization on 18 July.", "y": "Glacier monitoring did not show stabilization on 18 July."}
+{"relation": "success_failure", "x": "The clean water initiative succeeded on 2 April.", "y": "The clean water initiative failed on 2 April."}
+{"relation": "success_failure", "x": "Wetland restoration finished on 29 September.", "y": "Wetland restoration did not finish on 29 September."}
+{"relation": "success_failure", "x": "The endangered species breeding program succeeded on 12 June.", "y": "The endangered species breeding program failed on 12 June."}
+{"relation": "success_failure", "x": "Pollution reduction targets achieved on 8 February.", "y": "Pollution reduction targets were not achieved on 8 February."}
+{"relation": "success_failure", "x": "The desert greening project thrived on 16 May.", "y": "The desert greening project did not thrive on 16 May."}
+{"relation": "success_failure", "x": "Biodiversity index improved on 11 August.", "y": "Biodiversity index did not improve on 11 August."}
+{"relation": "success_failure", "x": "The nature reserve expanded on 24 November.", "y": "The nature reserve did not expand on 24 November."}
+{"relation": "success_failure", "x": "Urban green space project completed on 3 July.", "y": "Urban green space project did not complete on 3 July."}
+{"relation": "success_failure", "x": "The noise reduction program worked on 19 January.", "y": "The noise reduction program did not work on 19 January."}
+{"relation": "success_failure", "x": "Ecosystem monitoring showed recovery on 28 April.", "y": "Ecosystem monitoring did not show recovery on 28 April."}
+{"relation": "success_failure", "x": "The invasive species removal succeeded on 6 October.", "y": "The invasive species removal failed on 6 October."}
+{"relation": "success_failure", "x": "Air quality improved on 15 March.", "y": "Air quality did not improve on 15 March."}

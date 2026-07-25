@@ -1,0 +1,280 @@
+{"text": "The USGS published a 1:24,000 scale topographic map of the Sierra Nevadas in 1987.", "entities": ["USGS", "Sierra Nevadas"], "numbers": ["1:24,000", "1987"], "domain": "cartography"}
+{"text": "Satellite imagery at 0.5m resolution covered the Landsat archive by 2015.", "entities": ["Landsat"], "numbers": ["0.5m", "2015"], "domain": "cartography"}
+{"text": "The Ordnance Survey remapped Kent's boundary at 1:10,560 during the 1920s survey.", "entities": ["Ordnance Survey", "Kent"], "numbers": ["1:10,560", "1920s"], "domain": "cartography"}
+{"text": "Mount Averill elevation model used 30m resolution DEMs across 8,400 square kilometers.", "entities": ["Mount Averill"], "numbers": ["30m", "8,400"], "domain": "cartography"}
+{"text": "Web Mercator projection distorts area at latitudes exceeding 85 degrees.", "entities": ["Web Mercator"], "numbers": ["85"], "domain": "cartography"}
+{"text": "The Atlas of British Isles contained 142 hand-colored maps spanning 1823 to 1825.", "entities": ["Atlas of British Isles"], "numbers": ["142", "1823", "1825"], "domain": "cartography"}
+{"text": "LiDAR data acquired over the Cascade Range delivered 1.2m point cloud density.", "entities": ["Cascade Range"], "numbers": ["1.2m"], "domain": "cartography"}
+{"text": "Tellus Geospatial surveyed 45,000 hectares of Brazilian coastal zones with photogrammetry.", "entities": ["Tellus Geospatial"], "numbers": ["45,000"], "domain": "cartography"}
+{"text": "The State Plane Coordinate System divides North America into 124 zones.", "entities": ["State Plane Coordinate System", "North America"], "numbers": ["124"], "domain": "cartography"}
+{"text": "Historical navigation charts by Edmund Halley mapped magnetic declination in 1701.", "entities": ["Edmund Halley"], "numbers": ["1701"], "domain": "cartography"}
+{"text": "Orthomosaic tiles at UTM Zone 11N covered the Mojave Desert at 0.25m resolution.", "entities": ["Mojave Desert", "UTM Zone 11N"], "numbers": ["0.25m"], "domain": "cartography"}
+{"text": "The Finnish National Land Survey produced a three-band Landsat composite in 2003.", "entities": ["Finnish National Land Survey", "Landsat"], "numbers": ["2003"], "domain": "cartography"}
+{"text": "Sentinel-2 provides 10m multispectral imagery over 290 million square kilometers globally.", "entities": ["Sentinel-2"], "numbers": ["10m", "290"], "domain": "cartography"}
+{"text": "Cadastral maps in the Netherlands were digitized at 1:1,000 scale across 2.5 million parcels.", "entities": ["Netherlands"], "numbers": ["1:1,000", "2.5"], "domain": "cartography"}
+{"text": "The Panama Canal Zone boundary survey of 1914 established coordinates for 83 trigonometric stations.", "entities": ["Panama Canal Zone"], "numbers": ["1914", "83"], "domain": "cartography"}
+{"text": "Conical Lambert conformal projection minimizes distortion between 32 and 58 degrees north latitude.", "entities": [], "numbers": ["32", "58"], "domain": "cartography"}
+{"text": "GIS analyst Chen Liao mapped 12,000 kilometers of river corridors in 8 months.", "entities": ["Chen Liao"], "numbers": ["12,000", "8"], "domain": "cartography"}
+{"text": "Photogrammetric block of Copenhagen contained 247 overlapping aerial frames at 1:10,000 scale.", "entities": ["Copenhagen"], "numbers": ["247", "1:10,000"], "domain": "cartography"}
+{"text": "The Antarctic Digital Database stores bathymetric grids at 1km resolution.", "entities": ["Antarctic Digital Database"], "numbers": ["1km"], "domain": "cartography"}
+{"text": "Benchmark heights established in Rwanda by the Commission Nationale des Frontières span 1,800 meters vertically.", "entities": ["Rwanda", "Commission Nationale des Frontières"], "numbers": ["1,800"], "domain": "cartography"}
+{"text": "GEBCO 2024 bathymetric grid covers oceans at 15 arc-second resolution.", "entities": ["GEBCO"], "numbers": ["2024", "15"], "domain": "cartography"}
+{"text": "The Republic of Chile commissioned a 1:100,000 scale mapping project across 756,000 square kilometers.", "entities": ["Republic of Chile"], "numbers": ["1:100,000", "756,000"], "domain": "cartography"}
+{"text": "Robinson projection's compromise distortion makes it ideal for world atlases printed before 2000.", "entities": ["Robinson"], "numbers": ["2000"], "domain": "cartography"}
+{"text": "Surveyor Helena Korsakov established baseline points across the Urals using theodolites in 1956.", "entities": ["Helena Korsakov", "Urals"], "numbers": ["1956"], "domain": "cartography"}
+{"text": "Digital elevation models of Greenland at 90m resolution required processing of 240 billion elevation points.", "entities": ["Greenland"], "numbers": ["90m", "240"], "domain": "cartography"}
+{"text": "The Cassini Projection preserved angles within the British Kingdom's 1790 survey.", "entities": ["Cassini", "British Kingdom"], "numbers": ["1790"], "domain": "cartography"}
+{"text": "Multi-temporal SAR imagery tracked glacier retreat in Patagonia over 15 years.", "entities": ["Patagonia"], "numbers": ["15"], "domain": "cartography"}
+{"text": "GIS dataset covering Tokyo metropolitan zone contains 680,000 road segments.", "entities": ["Tokyo"], "numbers": ["680,000"], "domain": "cartography"}
+{"text": "The Mariner 10 spacecraft produced the first 1:2,000,000 scale map of Mercury.", "entities": ["Mariner 10", "Mercury"], "numbers": ["1:2,000,000"], "domain": "cartography"}
+{"text": "Boundary demarcation between Lesotho and South Africa required 142 days of fieldwork.", "entities": ["Lesotho", "South Africa"], "numbers": ["142"], "domain": "cartography"}
+{"text": "SRTM mission collected radar elevation data across 99.9% of Earth's land surface in 2000.", "entities": ["SRTM"], "numbers": ["99.9%", "2000"], "domain": "cartography"}
+{"text": "Polyconic projection distortion increases with distance from the central meridian.", "entities": [], "numbers": [], "domain": "cartography"}
+{"text": "The Moscow Oblast updated cadastral maps covering 47,200 square kilometers by 2018.", "entities": ["Moscow Oblast"], "numbers": ["47,200", "2018"], "domain": "cartography"}
+{"text": "Normalized Difference Vegetation Index derived from Landsat 8 spans values from -1 to 1.", "entities": ["Normalized Difference Vegetation Index", "Landsat 8"], "numbers": ["-1", "1"], "domain": "cartography"}
+{"text": "Ancient Egyptian nilometer readings at Elephantine Island provided 1,200 years of flood records.", "entities": ["Egyptian", "Elephantine Island"], "numbers": ["1,200"], "domain": "cartography"}
+{"text": "The British Antarctic Survey produces annual topographic maps at 1:250,000 scale.", "entities": ["British Antarctic Survey"], "numbers": ["1:250,000"], "domain": "cartography"}
+{"text": "Thermal imagery acquired over the Atacama Desert revealed subsurface features at 60m depth.", "entities": ["Atacama Desert"], "numbers": ["60m"], "domain": "cartography"}
+{"text": "Hydrographic charts of the Aegean Sea from 1822 plotted 3,400 islands and islets.", "entities": ["Aegean Sea"], "numbers": ["1822", "3,400"], "domain": "cartography"}
+{"text": "The Universal Transverse Mercator system divides Earth into 60 zones of 6 degrees width.", "entities": ["Universal Transverse Mercator"], "numbers": ["60", "6"], "domain": "cartography"}
+{"text": "Airborne LiDAR survey of the Klamath Basin produced 8 returns per square meter.", "entities": ["Klamath Basin"], "numbers": ["8"], "domain": "cartography"}
+{"text": "India's Survey of India produced a comprehensive atlas in 1826 depicting 28 provinces.", "entities": ["Survey of India"], "numbers": ["1826", "28"], "domain": "cartography"}
+{"text": "Stereoscopic aerial photography covered the Rhine Delta at 1:15,000 scale in 1972.", "entities": ["Rhine Delta"], "numbers": ["1:15,000", "1972"], "domain": "cartography"}
+{"text": "Positional accuracy of GPS-derived boundary marks was ±0.3 meters after correction.", "entities": ["GPS"], "numbers": ["±0.3"], "domain": "cartography"}
+{"text": "The Peutinger Table depicted road networks across 22 Roman provinces on a single scroll.", "entities": ["Peutinger Table"], "numbers": ["22"], "domain": "cartography"}
+{"text": "QuickBird satellite delivered 0.61m panchromatic imagery over 3,600 cities worldwide.", "entities": ["QuickBird"], "numbers": ["0.61m", "3,600"], "domain": "cartography"}
+{"text": "Forest inventory maps of the Amazon basin used 250,000 sample plots.", "entities": ["Amazon"], "numbers": ["250,000"], "domain": "cartography"}
+{"text": "The Goode's School Atlas evolved through 23 editions between 1923 and 2010.", "entities": ["Goode's School Atlas"], "numbers": ["23", "1923", "2010"], "domain": "cartography"}
+{"text": "Stereoscopically matched image pairs resolved vertical accuracy to ±2.1 meters.", "entities": [], "numbers": ["±2.1"], "domain": "cartography"}
+{"text": "Portuguese maritime charts from 1498 recorded declination values at 15 degree increments.", "entities": ["Portuguese"], "numbers": ["1498", "15"], "domain": "cartography"}
+{"text": "Digital orthophoto of San Francisco Bay area was mosaicked from 847 image tiles.", "entities": ["San Francisco Bay"], "numbers": ["847"], "domain": "cartography"}
+{"text": "The zone system of State Plane Coordinates assigns unique parameters to all 50 US states.", "entities": ["State Plane Coordinates"], "numbers": ["50"], "domain": "cartography"}
+{"text": "Bathymetric surveys near the Mariana Trench recorded depths exceeding 10,994 meters.", "entities": ["Mariana Trench"], "numbers": ["10,994"], "domain": "cartography"}
+{"text": "Medieval mappae mundi depicted Jerusalem at the map center following Isidorian tradition.", "entities": ["Jerusalem"], "numbers": [], "domain": "cartography"}
+{"text": "The Gall-Peters projection allocates area equal distribution across all latitudes.", "entities": ["Gall-Peters"], "numbers": [], "domain": "cartography"}
+{"text": "Coastline digitization of mainland Norway required 580 hours of manual tracing in 1995.", "entities": ["Norway"], "numbers": ["580", "1995"], "domain": "cartography"}
+{"text": "High-resolution IKONOS data at 1m panchromatic covered the Nile Delta's 3,500 square kilometers.", "entities": ["IKONOS", "Nile Delta"], "numbers": ["1m", "3,500"], "domain": "cartography"}
+{"text": "Nautical charts produced by the Portuguese hydrographic service covered 4 ocean basins by 1720.", "entities": ["Portuguese"], "numbers": ["4", "1720"], "domain": "cartography"}
+{"text": "The coordinate system EPSG:4326 WGS84 serves as the de facto global standard for geospatial data.", "entities": ["EPSG:4326", "WGS84"], "numbers": [], "domain": "cartography"}
+{"text": "Submeter imagery from WorldView-3 enables vehicle detection at 0.3m ground sampling distance.", "entities": ["WorldView-3"], "numbers": ["0.3m"], "domain": "cartography"}
+{"text": "Trigonometric network expansion across the Alps required 890 observation points by 1890.", "entities": ["Alps"], "numbers": ["890", "1890"], "domain": "cartography"}
+{"text": "Historical cadastral maps of the French Revolution era employed the metric system by 1792.", "entities": ["French Revolution"], "numbers": ["1792"], "domain": "cartography"}
+{"text": "Satellite constellation Sentinel-1 SAR revisits 12 degrees latitude bands every 6 days.", "entities": ["Sentinel-1"], "numbers": ["12", "6"], "domain": "cartography"}
+{"text": "The Rand McNally road atlas sold 4 million copies annually at its 1970s peak.", "entities": ["Rand McNally"], "numbers": ["4", "1970s"], "domain": "cartography"}
+{"text": "Boundary monument network connecting Canada and the US comprises 8,893 marked locations.", "entities": ["Canada", "US"], "numbers": ["8,893"], "domain": "cartography"}
+{"text": "Conformal mapping preserves angles locally even though areas near poles compress severely.", "entities": [], "numbers": [], "domain": "cartography"}
+{"text": "The Eratosthenes estimate of Earth's circumference yielded 46,250 kilometers in 240 BC.", "entities": ["Eratosthenes"], "numbers": ["46,250", "240"], "domain": "cartography"}
+{"text": "Image registration between historical maps and modern orthorectified data achieved RMSE of 8.4 pixels.", "entities": [], "numbers": ["8.4"], "domain": "cartography"}
+{"text": "Hydrologic watershed delineation within the Tennessee basin identified 47 sub-basins.", "entities": ["Tennessee"], "numbers": ["47"], "domain": "cartography"}
+{"text": "The Phantom geocoding system resolved addresses to 95.3% accuracy in dense urban areas.", "entities": ["Phantom"], "numbers": ["95.3%"], "domain": "cartography"}
+{"text": "Topographic contour intervals on USGS quad maps typically span 20 to 40 feet vertically.", "entities": ["USGS"], "numbers": ["20", "40"], "domain": "cartography"}
+{"text": "Zonal statistics across 15,000 agricultural fields revealed yield variance of 32%.", "entities": [], "numbers": ["15,000", "32%"], "domain": "cartography"}
+{"text": "Surveyor Mahmoud al-Biruni determined Earth's radius within 20 kilometers accuracy in 1031.", "entities": ["Mahmoud al-Biruni"], "numbers": ["20", "1031"], "domain": "cartography"}
+{"text": "The Prime Meridian Gazetteer records longitude zero coordinates at Greenwich Observatory.", "entities": ["Prime Meridian", "Greenwich Observatory"], "numbers": [], "domain": "cartography"}
+{"text": "County plat maps covering South Dakota maintained 1:6 inch-per-mile scale resolution.", "entities": ["South Dakota"], "numbers": ["1:6"], "domain": "cartography"}
+{"text": "ASTER thermal emissive bands enabled geological mapping across 90,000 square kilometers annually.", "entities": ["ASTER"], "numbers": ["90,000"], "domain": "cartography"}
+{"text": "The Library of Congress geography collection holds 17.3 million cartographic items.", "entities": ["Library of Congress"], "numbers": ["17.3"], "domain": "cartography"}
+{"text": "Mercator's 1569 world map projected cylindrically with increasingly severe area distortion.", "entities": ["Mercator"], "numbers": ["1569"], "domain": "cartography"}
+{"text": "Planimetric features extracted from imagery achieved completeness ratings exceeding 94%.", "entities": [], "numbers": ["94%"], "domain": "cartography"}
+{"text": "The Kanji River boundary survey of 1634 established 2,100 control points across Kyoto Prefecture.", "entities": ["Kanji River", "Kyoto Prefecture"], "numbers": ["1634", "2,100"], "domain": "cartography"}
+{"text": "Hyperspectral AVIRIS data provided 224 spectral bands for mineral mapping.", "entities": ["AVIRIS"], "numbers": ["224"], "domain": "cartography"}
+{"text": "Cartographic generalization algorithms simplified 5 million road nodes to 180,000 features.", "entities": [], "numbers": ["5", "180,000"], "domain": "cartography"}
+{"text": "The Ordnance Survey Large Scale mapping initiative updated 2.3 million map tiles.", "entities": ["Ordnance Survey"], "numbers": ["2.3"], "domain": "cartography"}
+{"text": "Historical chart from 1867 depicted Caribbean coastlines with 18 fathom isobaths.", "entities": ["Caribbean"], "numbers": ["1867", "18"], "domain": "cartography"}
+{"text": "Azimuthal equal-area projection preserves distances from a single central point.", "entities": ["Azimuthal equal-area"], "numbers": [], "domain": "cartography"}
+{"text": "The Royal Geographic Society's archival collection spans 450 years of expedition mapping.", "entities": ["Royal Geographic Society"], "numbers": ["450"], "domain": "cartography"}
+{"text": "Spectral angle mapper classification achieved 87% accuracy for 11 land cover classes.", "entities": [], "numbers": ["87%", "11"], "domain": "cartography"}
+{"text": "Surveyor Pietro Frisi redesigned the Trento-Bolzano turnpike corridor in 1750 with slope measurements.", "entities": ["Pietro Frisi", "Trento-Bolzano"], "numbers": ["1750"], "domain": "cartography"}
+{"text": "Icesat-2 photon clouds delivered 1.4 gigapoints per second for terrain elevation retrieval.", "entities": ["Icesat-2"], "numbers": ["1.4"], "domain": "cartography"}
+{"text": "The transverse Mercator zone system divides each 6-degree UTM band into local false origins.", "entities": ["Mercator", "UTM"], "numbers": ["6"], "domain": "cartography"}
+{"text": "Cadastral map amendments in Prussia between 1820 and 1910 affected 15 million parcel records.", "entities": ["Prussia"], "numbers": ["1820", "1910", "15"], "domain": "cartography"}
+{"text": "Normalized Difference Water Index identified water bodies with 96.7% sensitivity from Landsat.", "entities": ["Landsat"], "numbers": ["96.7%"], "domain": "cartography"}
+{"text": "The Bartholomew World Atlas maintained market dominance through 14 successive editions.", "entities": ["Bartholomew World Atlas"], "numbers": ["14"], "domain": "cartography"}
+{"text": "Sea-level rise mapping for the Sundarbans delta projected 1.2 meter inundation by 2100.", "entities": ["Sundarbans"], "numbers": ["1.2", "2100"], "domain": "cartography"}
+{"text": "Differential GPS base stations spanning 8 kilometers provided centimeter-level control networks.", "entities": ["GPS"], "numbers": ["8"], "domain": "cartography"}
+{"text": "Azimuth readings from the lighthouse at Cape Byron were recorded at 1-hour intervals since 1885.", "entities": ["Cape Byron"], "numbers": ["1", "1885"], "domain": "cartography"}
+{"text": "The Hammer-Aitoff projection suits star charts but introduces 30% area distortion at the poles.", "entities": ["Hammer-Aitoff"], "numbers": ["30%"], "domain": "cartography"}
+{"text": "Photogrammetric reconstruction of Venice's lagoon elevation model integrated 340 camera stations.", "entities": ["Venice"], "numbers": ["340"], "domain": "cartography"}
+{"text": "Historical nautical logs from HMS Beagle voyage provided 12,000 depth soundings along coasts.", "entities": ["HMS Beagle"], "numbers": ["12,000"], "domain": "cartography"}
+{"text": "The 1885 Berlin Conference established boundary demarcation protocols recognized by 14 colonial powers.", "entities": ["Berlin", "Conference"], "numbers": ["1885", "14"], "domain": "cartography"}
+{"text": "Normalized burn ratio distinguished fire scars from vegetation recovery across 7 Landsat scenes.", "entities": ["Landsat"], "numbers": ["7"], "domain": "cartography"}
+{"text": "The International Date Line deviates from the 180th meridian by 27 degree offsets near island nations.", "entities": ["International Date Line"], "numbers": ["180", "27"], "domain": "cartography"}
+{"text": "Topographic map of the Himalayas at 1:500,000 scale required 890 field check points.", "entities": ["Himalayas"], "numbers": ["1:500,000", "890"], "domain": "cartography"}
+{"text": "Cadastral vector layers covering Indonesia contain 64 million distinct polygon features.", "entities": ["Indonesia"], "numbers": ["64"], "domain": "cartography"}
+{"text": "The stereographic projection preserves angles and circles making it ideal for polar charts.", "entities": ["stereographic"], "numbers": [], "domain": "cartography"}
+{"text": "Colomb's 1875 marine chart of the Dover Strait depicted current arrows at cardinal directions.", "entities": ["Colomb", "Dover Strait"], "numbers": ["1875"], "domain": "cartography"}
+{"text": "Multispectral change detection flagged 340 newly constructed structures in the Phoenix suburbs.", "entities": ["Phoenix"], "numbers": ["340"], "domain": "cartography"}
+{"text": "The equirectangular projection distorts areas by a factor of cosine latitude.", "entities": [], "numbers": [], "domain": "cartography"}
+{"text": "Field verification campaigns across the Atacama Survey corrected 8,200 classification errors.", "entities": ["Atacama"], "numbers": ["8,200"], "domain": "cartography"}
+{"text": "Historical deed surveys in Massachusetts dating to 1742 recorded metes and bounds in chains.", "entities": ["Massachusetts"], "numbers": ["1742"], "domain": "cartography"}
+{"text": "Orthogonal transformation parameters in affine rectification utilized 4 corner tie points.", "entities": [], "numbers": ["4"], "domain": "cartography"}
+{"text": "The Society of Professional Surveyors Korea maintains databases for 2.5 million cadastral boundaries.", "entities": ["Society of Professional Surveyors Korea"], "numbers": ["2.5"], "domain": "cartography"}
+{"text": "Seasonal NDVI profiles over 3 years revealed crop rotation patterns in 85% of fields.", "entities": [], "numbers": ["3", "85%"], "domain": "cartography"}
+{"text": "French surveyor Cassini de Thury completed the first systematic mapping of France in 1789.", "entities": ["Cassini de Thury", "France"], "numbers": ["1789"], "domain": "cartography"}
+{"text": "Pansharpening algorithms fused 10m multispectral bands with 5m panchromatic data.", "entities": [], "numbers": ["10m", "5m"], "domain": "cartography"}
+{"text": "The Dead Sea boundary between Jordan and Palestine requires surveying at 45 separate demarcation points.", "entities": ["Dead Sea", "Jordan", "Palestine"], "numbers": ["45"], "domain": "cartography"}
+{"text": "Topographic profile line spacing across the Rocky Mountains averaged 12 kilometers in 1952.", "entities": ["Rocky Mountains"], "numbers": ["12", "1952"], "domain": "cartography"}
+{"text": "Parametric spline interpolation for DEM generation smoothed 1.2 million elevation samples.", "entities": [], "numbers": ["1.2"], "domain": "cartography"}
+{"text": "The Astronomer Royal observatories provided latitude and longitude references for British surveying until 1948.", "entities": ["Astronomer Royal"], "numbers": ["1948"], "domain": "cartography"}
+{"text": "Airborne bathymetry systems achieved 1.5 meter vertical accuracy in water depths to 80 meters.", "entities": [], "numbers": ["1.5", "80"], "domain": "cartography"}
+{"text": "Ottoman cadastral surveys from 1663 recorded land tenure across 7 provinces.", "entities": ["Ottoman"], "numbers": ["1663", "7"], "domain": "cartography"}
+{"text": "Hillshade rendering applied azimuth 315 degrees with 45 degree elevation angle for visual clarity.", "entities": [], "numbers": ["315", "45"], "domain": "cartography"}
+{"text": "The 1841 geological map of Scotland by James Hutton influenced stratigraphic cartography.", "entities": ["James Hutton", "Scotland"], "numbers": ["1841"], "domain": "cartography"}
+{"text": "Geoid undulation models correct for 107 meter gravity anomalies in the Antarctic region.", "entities": ["Antarctic"], "numbers": ["107"], "domain": "cartography"}
+{"text": "Oblique Stereographic projection minimizes shape distortion for maps centered at 46 degrees north.", "entities": ["Oblique Stereographic"], "numbers": ["46"], "domain": "cartography"}
+{"text": "Insar coherence maps from two repeat passes revealed surface deformation of 2.3 centimeters.", "entities": [], "numbers": ["2.3"], "domain": "cartography"}
+{"text": "Surveyor Theodor Svedrup established astronomical control stations across Spitsbergen in 1912.", "entities": ["Theodor Svedrup", "Spitsbergen"], "numbers": ["1912"], "domain": "cartography"}
+{"text": "Multitemporal SAR backscatter coefficient time series tracked 24 changes across 6 months.", "entities": [], "numbers": ["24", "6"], "domain": "cartography"}
+{"text": "The Albers conical equal-area projection minimizes distortion between two standard parallels.", "entities": ["Albers"], "numbers": ["2"], "domain": "cartography"}
+{"text": "Cadastral map modernization in Egypt transformed 8.5 million parcel records to digital format.", "entities": ["Egypt"], "numbers": ["8.5"], "domain": "cartography"}
+{"text": "Triangulation network spanning Denmark required 1,426 primary control points by 1936.", "entities": ["Denmark"], "numbers": ["1,426", "1936"], "domain": "cartography"}
+{"text": "Radiometric calibration coefficients for Landsat 5 channels were refined through 18 vicarious calibrations.", "entities": ["Landsat 5"], "numbers": ["18"], "domain": "cartography"}
+{"text": "Medieval Hereford Mappa Mundi depicted known world on 158 centimeter diameter vellum.", "entities": ["Hereford Mappa Mundi"], "numbers": ["158"], "domain": "cartography"}
+{"text": "Bidirectional reflectance distribution functions required sampling at 23 azimuth angles.", "entities": [], "numbers": ["23"], "domain": "cartography"}
+{"text": "The Cinque Ports Authority commissioned tidal charts for 47 harbors in southern England by 1740.", "entities": ["Cinque Ports Authority", "England"], "numbers": ["47", "1740"], "domain": "cartography"}
+{"text": "Kriging interpolation variance models reduced prediction error from 3.1 to 0.8 meters.", "entities": [], "numbers": ["3.1", "0.8"], "domain": "cartography"}
+{"text": "Polar stereographic projection centered at 70 degrees south dominates Antarctic mapping.", "entities": ["Antarctic"], "numbers": ["70"], "domain": "cartography"}
+{"text": "Cadastral monument network maintained by the Austrian Federal Office spans 1.2 million marked locations.", "entities": ["Austrian Federal Office"], "numbers": ["1.2"], "domain": "cartography"}
+{"text": "Spectral derivative methods distinguished 6 distinct mineralogical assemblages from SWIR imagery.", "entities": [], "numbers": ["6"], "domain": "cartography"}
+{"text": "Historical land grants in California signed before 1850 created 814 overlapping cadastral parcels.", "entities": ["California"], "numbers": ["1850", "814"], "domain": "cartography"}
+{"text": "Thematic Mapper data processing chains transformed raw telemetry into 7 corrected image products.", "entities": ["Thematic Mapper"], "numbers": ["7"], "domain": "cartography"}
+{"text": "The Diplomatic Zone of Berlin was mapped at 1:1,500 scale during Cold War era.", "entities": ["Berlin"], "numbers": ["1:1,500"], "domain": "cartography"}
+{"text": "Floating-point DEM grids at 3 arc-second resolution covered 96.3% of terrestrial surface area.", "entities": [], "numbers": ["3", "96.3%"], "domain": "cartography"}
+{"text": "Portuguese navigator Pedro Nunes developed the loxodrome curve in 1537 for navigation.", "entities": ["Pedro Nunes"], "numbers": ["1537"], "domain": "cartography"}
+{"text": "Bidirectional error correction algorithm improved point cloud classification to 91.2% accuracy.", "entities": [], "numbers": ["91.2%"], "domain": "cartography"}
+{"text": "The transverse Mercator false easting offset standardized to 500,000 meters within UTM zones.", "entities": ["Mercator", "UTM"], "numbers": ["500,000"], "domain": "cartography"}
+{"text": "Cadastral boundary stones in medieval Prague were inscribed with year 1472 marks.", "entities": ["Prague"], "numbers": ["1472"], "domain": "cartography"}
+{"text": "Sensor fusion combining LiDAR and optical stereo resolved elevation to ±0.15 meters.", "entities": ["LiDAR"], "numbers": ["±0.15"], "domain": "cartography"}
+{"text": "Surveyor's chains standardized to 66 feet length were deployed across 3 continents by 1890.", "entities": [], "numbers": ["66", "3", "1890"], "domain": "cartography"}
+{"text": "Land cover classification scheme recognized 14 distinct thematic categories in rural areas.", "entities": [], "numbers": ["14"], "domain": "cartography"}
+{"text": "The 1922 Admiralty Chart of the Mediterranean depicted current gyres spanning 240 kilometers.", "entities": ["Mediterranean"], "numbers": ["1922", "240"], "domain": "cartography"}
+{"text": "Georectification residuals after affine transformation averaged 0.6 pixel error.", "entities": [], "numbers": ["0.6"], "domain": "cartography"}
+{"text": "Historical coast charts from the Dutch Golden Age surveyed 15 major port cities.", "entities": ["Dutch"], "numbers": ["15"], "domain": "cartography"}
+{"text": "Pixel-based time-series analysis tracked 8,300 forest clearing patches across 5 years.", "entities": [], "numbers": ["8,300", "5"], "domain": "cartography"}
+{"text": "The Gotha Survey Initiative published 23-sheet national topographic map of Germany.", "entities": ["Gotha", "Germany"], "numbers": ["23"], "domain": "cartography"}
+{"text": "Boundary survey monuments along the Canada-US border are inspected every 7 years.", "entities": ["Canada", "US"], "numbers": ["7"], "domain": "cartography"}
+{"text": "Spectral unmixing endmember selection identified 4 distinct urban surface types.", "entities": [], "numbers": ["4"], "domain": "cartography"}
+{"text": "The Arabic geographer Al-Idrisi produced a world map in 1154 depicting 70 climate zones.", "entities": ["Al-Idrisi"], "numbers": ["1154", "70"], "domain": "cartography"}
+{"text": "Hyperspectral target detection identified anomalies affecting 2.4% of surveyed pixels.", "entities": [], "numbers": ["2.4%"], "domain": "cartography"}
+{"text": "Cadastral parcels in the Netherlands average 1.2 hectares per property in rural zones.", "entities": ["Netherlands"], "numbers": ["1.2"], "domain": "cartography"}
+{"text": "Three-dimensional visualization utilized 45-degree oblique view angle for terrain perception.", "entities": [], "numbers": ["45"], "domain": "cartography"}
+{"text": "The 1755 Lisbon earthquake mapping by Marquês de Pombal documented damage at 12 district levels.", "entities": ["Lisbon", "Marquês de Pombal"], "numbers": ["1755", "12"], "domain": "cartography"}
+{"text": "Principal component analysis compressed 234 spectral bands into 5 principal components.", "entities": [], "numbers": ["234", "5"], "domain": "cartography"}
+{"text": "Conformal conic projection adopted for military maps maintains angular precision to 0.001 degrees.", "entities": [], "numbers": ["0.001"], "domain": "cartography"}
+{"text": "Cartographic feature symbols standardized by ISO 1087 utilize 2,800 distinct glyph codes.", "entities": ["ISO 1087"], "numbers": ["2,800"], "domain": "cartography"}
+{"text": "The boundary between Belgium and Germany established in 1839 required monument placement at 88 points.", "entities": ["Belgium", "Germany"], "numbers": ["1839", "88"], "domain": "cartography"}
+{"text": "Temporal change detection across 16 image dates flagged significant land cover transitions.", "entities": [], "numbers": ["16"], "domain": "cartography"}
+{"text": "Medieval Ebstorf world map measured 3.6 meters diameter and depicted 15 biblical narratives.", "entities": ["Ebstorf"], "numbers": ["3.6", "15"], "domain": "cartography"}
+{"text": "Cartogram transformation algorithm distorted 42 polygons proportional to population density.", "entities": [], "numbers": ["42"], "domain": "cartography"}
+{"text": "The 1951 Trigonometrical Survey Authority of India produced maps at 1:50,000 resolution.", "entities": ["Trigonometrical Survey Authority", "India"], "numbers": ["1951", "1:50,000"], "domain": "cartography"}
+{"text": "Baseline length standards maintain international boundaries to sub-decimeter accuracy.", "entities": [], "numbers": [], "domain": "cartography"}
+{"text": "Boundary demarcation between Norway and Russia required 198 marked cairn points.", "entities": ["Norway", "Russia"], "numbers": ["198"], "domain": "cartography"}
+{"text": "Raster resampling kernels preserve spectral information across 8 distinct filter types.", "entities": [], "numbers": ["8"], "domain": "cartography"}
+{"text": "The spherical Mercator projection divides Earth at 85.051129 degrees latitude limits.", "entities": ["Mercator"], "numbers": ["85.051129"], "domain": "cartography"}
+{"text": "Cartographers at the Prussian State Archive digitized 5,700 historical cadastral maps.", "entities": ["Prussian State Archive"], "numbers": ["5,700"], "domain": "cartography"}
+{"text": "Passive radar imagery from Sentinel-1 revisits target areas at 12-day temporal intervals.", "entities": ["Sentinel-1"], "numbers": ["12"], "domain": "cartography"}
+{"text": "The 1780 Cassini map of Paris displayed street networks at unprecedented 1:2,400 scale.", "entities": ["Cassini", "Paris"], "numbers": ["1780", "1:2,400"], "domain": "cartography"}
+{"text": "Vector tile pyramids cache cartographic features across 20 zoomable scale levels.", "entities": [], "numbers": ["20"], "domain": "cartography"}
+{"text": "Maritime boundary delimitation between Malaysia and Thailand requires surveying at 11 juridical points.", "entities": ["Malaysia", "Thailand"], "numbers": ["11"], "domain": "cartography"}
+{"text": "Spectral radiance calibration source provided 3.2% absolute radiometric accuracy.", "entities": [], "numbers": ["3.2%"], "domain": "cartography"}
+{"text": "The 1927 atlas published by Oxford University Press contained 97 thematic maps.", "entities": ["Oxford University Press"], "numbers": ["1927", "97"], "domain": "cartography"}
+{"text": "Digital line graph edges topologically connected 2.3 million discrete node vertices.", "entities": [], "numbers": ["2.3"], "domain": "cartography"}
+{"text": "Ottoman land surveys from 1520 recorded 9 property classifications across Anatolia.", "entities": ["Ottoman", "Anatolia"], "numbers": ["1520", "9"], "domain": "cartography"}
+{"text": "Pixel-level probability maps assigned confidence scores between 0 and 100% for features.", "entities": [], "numbers": ["0", "100%"], "domain": "cartography"}
+{"text": "The prime meridian longitude zero standard established at Greenwich Observatory in 1884.", "entities": ["Greenwich Observatory"], "numbers": ["1884"], "domain": "cartography"}
+{"text": "Cadastral number assignments in Sweden follow 8-digit hierarchical parcel coding.", "entities": ["Sweden"], "numbers": ["8"], "domain": "cartography"}
+{"text": "Hyperbolic tangent transformation enhanced contrast across 256 radiometric levels.", "entities": [], "numbers": ["256"], "domain": "cartography"}
+{"text": "The 1670 Sanson world atlas included 110 hand-tinted copper-plate engravings.", "entities": ["Sanson"], "numbers": ["1670", "110"], "domain": "cartography"}
+{"text": "Planimetric mapping of the Canadian Shield identified 450 lakes covering more than 100 square kilometers.", "entities": ["Canadian Shield"], "numbers": ["450", "100"], "domain": "cartography"}
+{"text": "The 1842 hydrographic survey by Captain James Vidal charted 34 river systems in Myanmar.", "entities": ["Captain James Vidal", "Myanmar"], "numbers": ["1842", "34"], "domain": "cartography"}
+{"text": "Orthographic projection displays Earth as a sphere with 0 meters distortion at center point.", "entities": [], "numbers": ["0"], "domain": "cartography"}
+{"text": "Cadastral registers maintained by the Turkish Directorate contain 56 million property records.", "entities": ["Turkish Directorate"], "numbers": ["56"], "domain": "cartography"}
+{"text": "Error propagation analysis revealed cumulative positional uncertainty of ±1.8 meters.", "entities": [], "numbers": ["±1.8"], "domain": "cartography"}
+{"text": "The 1631 atlas by Joan Blaeu depicted all 7 continents on separate hand-colored folio pages.", "entities": ["Joan Blaeu"], "numbers": ["1631", "7"], "domain": "cartography"}
+{"text": "Spatial autocorrelation tests showed significant clustering at distances up to 5.6 kilometers.", "entities": [], "numbers": ["5.6"], "domain": "cartography"}
+{"text": "Portuguese cartographer Bartolomeu Velho created 14 astrolabes between 1560 and 1590.", "entities": ["Bartolomeu Velho"], "numbers": ["14", "1560", "1590"], "domain": "cartography"}
+{"text": "Modulation transfer function analysis confirmed 34% contrast loss at Nyquist frequency.", "entities": [], "numbers": ["34%"], "domain": "cartography"}
+{"text": "The boundary between Zambia and Botswana spans 930 kilometers along the Zambezi River.", "entities": ["Zambia", "Botswana", "Zambezi River"], "numbers": ["930"], "domain": "cartography"}
+{"text": "Object-based image analysis segmented 12,400 individual buildings from aerial orthomosaics.", "entities": [], "numbers": ["12,400"], "domain": "cartography"}
+{"text": "Medieval Islamic astrolabes from Baghdad school dated between 850 and 1250 AD provided directional data.", "entities": ["Baghdad"], "numbers": ["850", "1250"], "domain": "cartography"}
+{"text": "Coarse resolution DEM at 270 meter grid spacing enabled continental-scale terrain analysis.", "entities": [], "numbers": ["270"], "domain": "cartography"}
+{"text": "The International Hydrographic Organization published Chart S-44 standard in 1982.", "entities": ["International Hydrographic Organization"], "numbers": ["1982"], "domain": "cartography"}
+{"text": "Brazilian cadastral modernization project digitized 5.2 million rural property boundaries.", "entities": ["Brazilian"], "numbers": ["5.2"], "domain": "cartography"}
+{"text": "Datum transformation between NAD27 and NAD83 required 21 distinct regional correction grids.", "entities": ["NAD27", "NAD83"], "numbers": ["21"], "domain": "cartography"}
+{"text": "The Suez Canal Maps dating from 1869 precisely documented 193 kilometer shipping corridors.", "entities": ["Suez Canal"], "numbers": ["1869", "193"], "domain": "cartography"}
+{"text": "Inverse distance weighting interpolation method averaged values from 8 nearest neighbor points.", "entities": [], "numbers": ["8"], "domain": "cartography"}
+{"text": "Alpine glacier recession mapping tracked 1,200 glaciers across 4 decades using stereopairs.", "entities": ["Alpine"], "numbers": ["1,200", "4"], "domain": "cartography"}
+{"text": "The 1748 General Wade roads in Scotland constructed 900 miles of turnpike routes.", "entities": ["General Wade", "Scotland"], "numbers": ["1748", "900"], "domain": "cartography"}
+{"text": "Spectral angle rotation matrices transformed color spaces across 3 orthogonal axes.", "entities": [], "numbers": ["3"], "domain": "cartography"}
+{"text": "Boundary monuments between New Zealand and Australia were never actually placed.", "entities": ["New Zealand", "Australia"], "numbers": [], "domain": "cartography"}
+{"text": "The 1908 Atlas of Austria produced by the KK Militär-Geographisches Institut contained 48 maps.", "entities": ["Austria", "KK Militär-Geographisches Institut"], "numbers": ["1908", "48"], "domain": "cartography"}
+{"text": "Homographic transformation matrices warped perspective imagery using 4 corner tie points.", "entities": [], "numbers": ["4"], "domain": "cartography"}
+{"text": "Historical port authority charts from Antwerp recorded water depths at 2 fathom intervals since 1701.", "entities": ["Antwerp"], "numbers": ["2", "1701"], "domain": "cartography"}
+{"text": "Boundary survey stones in the Carpathian Mountains numbered 876 including astronomical stations.", "entities": ["Carpathian Mountains"], "numbers": ["876"], "domain": "cartography"}
+{"text": "The Bourke-White 1937 photography expedition produced 47 landscape plates for geographic documentation.", "entities": ["Bourke-White"], "numbers": ["1937", "47"], "domain": "cartography"}
+{"text": "Spatial regression model explained 78% of variance using 6 independent geographic variables.", "entities": [], "numbers": ["78%", "6"], "domain": "cartography"}
+{"text": "Medieval maps from the Benedictine monastery in Reichenau depicted the Danube in 24 sections.", "entities": ["Reichenau", "Danube"], "numbers": ["24"], "domain": "cartography"}
+{"text": "Polarconic projection preserves distances along the central meridian within 0.02%.", "entities": [], "numbers": ["0.02%"], "domain": "cartography"}
+{"text": "The 1892 Plate Tectonic hypothesis foundation map showed 5 major continents in present locations.", "entities": [], "numbers": ["1892", "5"], "domain": "cartography"}
+{"text": "Areal interpolation using dasymetric method distributed 340,000 population estimates to grid cells.", "entities": [], "numbers": ["340,000"], "domain": "cartography"}
+{"text": "Historic French parish boundary maps from 1789 established commune borders for 43 departments.", "entities": ["French"], "numbers": ["1789", "43"], "domain": "cartography"}
+{"text": "Color separation reproduction for atlases required 4 distinct copper plate etches.", "entities": [], "numbers": ["4"], "domain": "cartography"}
+{"text": "The Boscawen-Macgregor boundary between Canada and Russia spans 141 degrees of longitude.", "entities": ["Boscawen-Macgregor", "Canada", "Russia"], "numbers": ["141"], "domain": "cartography"}
+{"text": "Sentinel-2 Level-2A atmospheric correction reduces aerosol effects using 11 spectral bands.", "entities": ["Sentinel-2"], "numbers": ["11"], "domain": "cartography"}
+{"text": "Medieval manuscript mappae mundi showed Jerusalem positioned at center of circle.", "entities": ["Jerusalem"], "numbers": [], "domain": "cartography"}
+{"text": "Cross-tabulation analysis compared 18 land cover categories across two image dates.", "entities": [], "numbers": ["18", "2"], "domain": "cartography"}
+{"text": "The first accurate triangulation network in Egypt completed by 1871 used 2,400 observation points.", "entities": ["Egypt"], "numbers": ["1871", "2,400"], "domain": "cartography"}
+{"text": "Datum shift transformations between European Datum 1950 and WGS84 affected positions by ±150 meters.", "entities": ["European Datum 1950", "WGS84"], "numbers": ["±150"], "domain": "cartography"}
+{"text": "Portuguese sea charts from the Age of Discovery used wind rose symbols at 8 cardinal points.", "entities": ["Portuguese"], "numbers": ["8"], "domain": "cartography"}
+{"text": "The 1962 Atlas of Oceania displayed 1,289 islands with high-resolution bathymetric contours.", "entities": ["Atlas of Oceania"], "numbers": ["1962", "1,289"], "domain": "cartography"}
+{"text": "Minimum distance classification assigned pixels to closest spectral class centroids.", "entities": [], "numbers": [], "domain": "cartography"}
+{"text": "Surveyor Claude Chappe established optical telegraph network with 45 relay stations by 1795.", "entities": ["Claude Chappe"], "numbers": ["45", "1795"], "domain": "cartography"}
+{"text": "The Pyrenees boundary marker network between Spain and France comprises 602 distinct monuments.", "entities": ["Pyrenees", "Spain", "France"], "numbers": ["602"], "domain": "cartography"}
+{"text": "Maximum likelihood classification achieved 89% overall accuracy for 7 vegetation classes.", "entities": [], "numbers": ["89%", "7"], "domain": "cartography"}
+{"text": "Historical property records in Vienna dating to 1650 were transcribed to digital cadastre.", "entities": ["Vienna"], "numbers": ["1650"], "domain": "cartography"}
+{"text": "Gaussian blur filtering with 2.4 pixel standard deviation smoothed image noise.", "entities": [], "numbers": ["2.4"], "domain": "cartography"}
+{"text": "The 1875 Admiralty chart series depicted 47 Mediterranean harbors with detailed soundings.", "entities": ["Mediterranean"], "numbers": ["1875", "47"], "domain": "cartography"}
+{"text": "Unsupervised clustering algorithm identified 6 distinct spectral class groups automatically.", "entities": [], "numbers": ["6"], "domain": "cartography"}
+{"text": "Boundary monuments in the Himalayas positioned at altitudes between 2,800 and 5,400 meters.", "entities": ["Himalayas"], "numbers": ["2,800", "5,400"], "domain": "cartography"}
+{"text": "The 1684 world atlas by Frederick de Wit contained 109 full-color engraved plates.", "entities": ["Frederick de Wit"], "numbers": ["1684", "109"], "domain": "cartography"}
+{"text": "Focal mean filtering reduced isolated pixels using 3x3 moving window convolution.", "entities": [], "numbers": ["3x3"], "domain": "cartography"}
+{"text": "Maritime chart evolution from 1500 to 1700 shows increasing accuracy of 45 degree bearings.", "entities": [], "numbers": ["1500", "1700", "45"], "domain": "cartography"}
+{"text": "The Georgia-Russia boundary demarcation required placement of 970 stones across mountain terrain.", "entities": ["Georgia", "Russia"], "numbers": ["970"], "domain": "cartography"}
+{"text": "Supervised classification using training samples from 42 field-verified points achieved 91% accuracy.", "entities": [], "numbers": ["42", "91%"], "domain": "cartography"}
+{"text": "Scottish parish registers from 1753 defined 1,100 distinct land tenure zones.", "entities": ["Scottish"], "numbers": ["1753", "1,100"], "domain": "cartography"}
+{"text": "Morphological operations dilated binary feature masks using 5x5 structuring element.", "entities": [], "numbers": ["5x5"], "domain": "cartography"}
+{"text": "The first trigonometric survey of Ireland completed in 1846 established 1,200 control stations.", "entities": ["Ireland"], "numbers": ["1846", "1,200"], "domain": "cartography"}
+{"text": "Nepal-China boundary demarcation along the Everest region required 8 joint survey expeditions.", "entities": ["Nepal", "China", "Everest"], "numbers": ["8"], "domain": "cartography"}
+{"text": "Texture analysis extraction computed 14 Haralick features from co-occurrence matrices.", "entities": [], "numbers": ["14"], "domain": "cartography"}
+{"text": "Historic sea charts from Genoa dating to 1338 depicted Mediterranean coastlines with 98 named ports.", "entities": ["Genoa", "Mediterranean"], "numbers": ["1338", "98"], "domain": "cartography"}
+{"text": "The Kyushu Survey Authority published 1:50,000 topographic maps for 47 Japanese prefectures.", "entities": ["Kyushu Survey Authority"], "numbers": ["1:50,000", "47"], "domain": "cartography"}
+{"text": "Watershed delineation from DEM identified 2,340 stream confluence points automatically.", "entities": [], "numbers": ["2,340"], "domain": "cartography"}
+{"text": "Armenian boundary markers along the Azerbaijan frontier date from 1921 establishments.", "entities": ["Armenian", "Azerbaijan"], "numbers": ["1921"], "domain": "cartography"}
+{"text": "The 1756 Braunschweig atlas by Homann Heirs displayed 51 regional maps with German nomenclature.", "entities": ["Braunschweig", "Homann Heirs"], "numbers": ["1756", "51"], "domain": "cartography"}
+{"text": "Discrete wavelet transform decomposed imagery into 16 frequency sub-bands.", "entities": [], "numbers": ["16"], "domain": "cartography"}
+{"text": "Byzantine cartographic manuscripts from Constantinople preserved 12 world map variations.", "entities": ["Constantinople"], "numbers": ["12"], "domain": "cartography"}
+{"text": "The Lithuania-Belarus boundary survey completed in 1937 placed 420 demarcation stones.", "entities": ["Lithuania", "Belarus"], "numbers": ["1937", "420"], "domain": "cartography"}
+{"text": "Markov chain random field model incorporated spatial dependencies using 8-neighbor connectivity.", "entities": [], "numbers": ["8"], "domain": "cartography"}
+{"text": "Historic Venetian nautical charts from 1450 to 1550 accumulated knowledge of 34 Mediterranean routes.", "entities": ["Venetian", "Mediterranean"], "numbers": ["1450", "1550", "34"], "domain": "cartography"}
+{"text": "Thai Hydrographic Department charting operations surveyed 19 major river deltas.", "entities": ["Thai Hydrographic Department"], "numbers": ["19"], "domain": "cartography"}
+{"text": "Curvelet coefficients decomposed multiscale edges using non-separable 2D filter banks.", "entities": [], "numbers": ["2D"], "domain": "cartography"}
+{"text": "Polish cadastral records dating from 1815 documented 28 distinct property classifications.", "entities": ["Polish"], "numbers": ["1815", "28"], "domain": "cartography"}
+{"text": "The 1804 Cary's New Universal Atlas covered 142 countries on 52 colored map sheets.", "entities": ["Cary's New Universal Atlas"], "numbers": ["1804", "142", "52"], "domain": "cartography"}
+{"text": "Simulated annealing optimization selected optimal thresholds across 256 intensity levels.", "entities": [], "numbers": ["256"], "domain": "cartography"}
+{"text": "Medieval Portolan charts from Majorca school dated between 1300 and 1450 show progressive accuracy.", "entities": ["Majorca"], "numbers": ["1300", "1450"], "domain": "cartography"}
+{"text": "The Macedonia-Greece boundary treaty of 1995 established 186 internationally recognized landmarks.", "entities": ["Macedonia", "Greece"], "numbers": ["1995", "186"], "domain": "cartography"}
+{"text": "Histogram matching algorithm normalized brightness distributions across 12 image tiles.", "entities": [], "numbers": ["12"], "domain": "cartography"}
+{"text": "Historical Finnish cadastral boundary stones established in 1734 remain visible.", "entities": ["Finnish"], "numbers": ["1734"], "domain": "cartography"}
+{"text": "The 1743 Streit atlas of the Holy Roman Empire mapped 361 ecclesiastical principalities.", "entities": ["Streit", "Holy Roman Empire"], "numbers": ["1743", "361"], "domain": "cartography"}
+{"text": "Template matching convolution operations aligned satellite image pairs within 0.5 pixel tolerance.", "entities": [], "numbers": ["0.5"], "domain": "cartography"}
+{"text": "Sumerian boundary markers at ancient Lagash-Umma conflict zone date to 2500 BC.", "entities": ["Lagash-Umma"], "numbers": ["2500"], "domain": "cartography"}
+{"text": "The Lesotho-South Africa boundary follows 352 kilometers of demarcated ridge line.", "entities": ["Lesotho", "South Africa"], "numbers": ["352"], "domain": "cartography"}
+{"text": "Morphological reconstruction operations filled 145 internal voids in binary feature maps.", "entities": [], "numbers": ["145"], "domain": "cartography"}
+{"text": "Medieval Norse boundary markers in Greenland date from 986 AD settlement period.", "entities": ["Greenland"], "numbers": ["986"], "domain": "cartography"}
+{"text": "The 1850 Survey of India atlas compiled results from 40 years of triangulation.", "entities": ["Survey of India"], "numbers": ["1850", "40"], "domain": "cartography"}
+{"text": "Stochastic cellular automata modeling simulated 18 neighborhood interaction states.", "entities": [], "numbers": ["18"], "domain": "cartography"}
+{"text": "Cartographic symbology standards in ISO 19115 specify metadata encoding for 2,100 distinct properties.", "entities": ["ISO 19115"], "numbers": ["2,100"], "domain": "cartography"}
+{"text": "The Carpathian regional boundary survey from 1952 established coordinates at 1,340 trigonometric stations.", "entities": ["Carpathian"], "numbers": ["1952", "1,340"], "domain": "cartography"}
+{"text": "Hungarian cadastral records spanning 15 counties contain 3.8 million mapped properties.", "entities": ["Hungarian"], "numbers": ["15", "3.8"], "domain": "cartography"}
+{"text": "The 1628 Hondius world map printed 24 editions across Europe with varying annotations.", "entities": ["Hondius"], "numbers": ["1628", "24"], "domain": "cartography"}
+{"text": "Radon transform analysis detected linear features oriented at 45 degree angles.", "entities": [], "numbers": ["45"], "domain": "cartography"}

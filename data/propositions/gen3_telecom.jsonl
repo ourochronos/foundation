@@ -1,0 +1,300 @@
+{"text": "Nextel America deployed 400 Gbps backbone across six cities in Q3 2024.", "entities": ["Nextel America"], "numbers": ["400 Gbps", "six", "Q3 2024"], "domain": "telecom"}
+{"text": "GlobalLink's Southeast network outage lasted 47 minutes, affecting 2.3 million subscribers.", "entities": ["GlobalLink", "Southeast"], "numbers": ["47 minutes", "2.3 million"], "domain": "telecom"}
+{"text": "Quantum Fiber achieved 8 ms latency between Tokyo and Singapore hubs.", "entities": ["Quantum Fiber", "Tokyo", "Singapore"], "numbers": ["8 ms"], "domain": "telecom"}
+{"text": "VertexComm installed 150 new cell towers in rural Montana during 2025.", "entities": ["VertexComm", "Montana"], "numbers": ["150", "2025"], "domain": "telecom"}
+{"text": "Cascade Networks reported 99.98% uptime across their Pacific Coast data centers.", "entities": ["Cascade Networks", "Pacific Coast"], "numbers": ["99.98%"], "domain": "telecom"}
+{"text": "Zephyr Telecom expanded fiber capacity to 1.2 Tbps in Denver metro.", "entities": ["Zephyr Telecom", "Denver"], "numbers": ["1.2 Tbps"], "domain": "telecom"}
+{"text": "CorePath suffered a 3-hour fiber cut near Phoenix affecting 890K customers on October 12.", "entities": ["CorePath", "Phoenix"], "numbers": ["3-hour", "890K", "October 12"], "domain": "telecom"}
+{"text": "Meridian mobile activated 5G coverage across 42 counties in Texas.", "entities": ["Meridian", "Texas"], "numbers": ["5G", "42"], "domain": "telecom"}
+{"text": "Apex Communications' Chicago hub processed 512 Pbps monthly traffic in January 2026.", "entities": ["Apex Communications", "Chicago"], "numbers": ["512 Pbps", "January 2026"], "domain": "telecom"}
+{"text": "SkyBridge's low-earth-orbit constellation reached 3,200 active satellites by March 2025.", "entities": ["SkyBridge"], "numbers": ["3,200", "March 2025"], "domain": "telecom"}
+{"text": "Titan Wireless upgraded 18 regional switches to support 100 Gbps interfaces.", "entities": ["Titan Wireless"], "numbers": ["18", "100 Gbps"], "domain": "telecom"}
+{"text": "Velocity Net's backbone experienced dual cable failure reducing capacity by 34% last week.", "entities": ["Velocity Net"], "numbers": ["34%"], "domain": "telecom"}
+{"text": "Prism Telecom serves 7.8 million broadband subscribers across 14 states.", "entities": ["Prism Telecom"], "numbers": ["7.8 million", "14"], "domain": "telecom"}
+{"text": "OceanLink's submarine cable reached 26 Tbps design capacity between Europe and Asia.", "entities": ["OceanLink", "Europe", "Asia"], "numbers": ["26 Tbps"], "domain": "telecom"}
+{"text": "TriState Networks deployed DWDM technology supporting 400 channels at 50 Gbps each.", "entities": ["TriState Networks"], "numbers": ["400", "50 Gbps"], "domain": "telecom"}
+{"text": "Convergence Mobile completed 8,500 tower site upgrades for LTE-Advanced in 2024.", "entities": ["Convergence Mobile"], "numbers": ["8,500", "2024"], "domain": "telecom"}
+{"text": "Radiant Communications' peering exchange carried 19.4 Exabytes of traffic annually.", "entities": ["Radiant Communications"], "numbers": ["19.4 Exabytes"], "domain": "telecom"}
+{"text": "WhiteSpace fiber achieved sub-millisecond latency: 0.8 ms Seattle-to-Portland leg.", "entities": ["WhiteSpace", "Seattle", "Portland"], "numbers": ["0.8 ms"], "domain": "telecom"}
+{"text": "Nexus Broadband lost DNS services for 2.5 hours affecting 4.1 million customers.", "entities": ["Nexus Broadband"], "numbers": ["2.5 hours", "4.1 million"], "domain": "telecom"}
+{"text": "Pinnacle Networks commissioned 56 new routers capable of 400 Gbps aggregate throughput.", "entities": ["Pinnacle Networks"], "numbers": ["56", "400 Gbps"], "domain": "telecom"}
+{"text": "Horizon Telecom's Las Vegas data center processes 7.2 million API calls per second.", "entities": ["Horizon Telecom", "Las Vegas"], "numbers": ["7.2 million"], "domain": "telecom"}
+{"text": "PathLink deployed microwave backhaul links with 11.5 Gbps capacity across Midwest regions.", "entities": ["PathLink", "Midwest"], "numbers": ["11.5 Gbps"], "domain": "telecom"}
+{"text": "Infinite Fiber added 650 route-miles of dark fiber between Boston and Washington DC.", "entities": ["Infinite Fiber", "Boston", "Washington DC"], "numbers": ["650"], "domain": "telecom"}
+{"text": "NexGen Mobile's 4G network reached 2.7 billion transactions processed daily in Q4 2024.", "entities": ["NexGen Mobile"], "numbers": ["2.7 billion", "Q4 2024"], "domain": "telecom"}
+{"text": "Spectrum Digital reported 23.1% growth in metro fiber subscriber base year-over-year.", "entities": ["Spectrum Digital"], "numbers": ["23.1%"], "domain": "telecom"}
+{"text": "SoniQwest completed undersea cable repair in 6 days, restoring 800 Gbps capacity.", "entities": ["SoniQwest"], "numbers": ["6 days", "800 Gbps"], "domain": "telecom"}
+{"text": "Beacon Networks contracted for 12 new C-band spectrum licenses across 180 markets.", "entities": ["Beacon Networks"], "numbers": ["12", "180"], "domain": "telecom"}
+{"text": "Cloudpath Telecom's routing engine processes 44 million packets per second peak rate.", "entities": ["Cloudpath Telecom"], "numbers": ["44 million"], "domain": "telecom"}
+{"text": "Amplitude Communications' 5G rollout covered 156 cities with 3.7 Gbps average speeds.", "entities": ["Amplitude Communications"], "numbers": ["156", "3.7 Gbps"], "domain": "telecom"}
+{"text": "Stratus Networks operated 29 international gateway switching centers by December 2025.", "entities": ["Stratus Networks"], "numbers": ["29", "December 2025"], "domain": "telecom"}
+{"text": "VirtuaLink experienced complete core network failure affecting 18 million customers.", "entities": ["VirtuaLink"], "numbers": ["18 million"], "domain": "telecom"}
+{"text": "Lightwave Communications reduced network latency by 15 ms through Atlanta route optimization.", "entities": ["Lightwave Communications", "Atlanta"], "numbers": ["15 ms"], "domain": "telecom"}
+{"text": "Velocity Signal deployed IPv6 across 94 percent of residential subscriber base.", "entities": ["Velocity Signal"], "numbers": ["94 percent"], "domain": "telecom"}
+{"text": "Ascent Telecom's San Francisco hub generated 1.8 Exabytes inbound traffic monthly.", "entities": ["Ascent Telecom", "San Francisco"], "numbers": ["1.8 Exabytes"], "domain": "telecom"}
+{"text": "Cornerstone Mobile activated 5,200 small cells in Manhattan metro region by June 2025.", "entities": ["Cornerstone Mobile", "Manhattan"], "numbers": ["5,200", "June 2025"], "domain": "telecom"}
+{"text": "Quantum Link's BGP hijacking incident isolated 340 prefixes for 19 minutes Monday.", "entities": ["Quantum Link"], "numbers": ["340", "19 minutes"], "domain": "telecom"}
+{"text": "PrimeNet Technologies installed 380 km of underground conduit in suburban Chicago.", "entities": ["PrimeNet Technologies", "Chicago"], "numbers": ["380 km"], "domain": "telecom"}
+{"text": "Zenith Broadband achieved 24/7 uptime streak lasting 847 consecutive days nationwide.", "entities": ["Zenith Broadband"], "numbers": ["24/7", "847"], "domain": "telecom"}
+{"text": "CrossConnect Mobile's video traffic surged 62 percent during Super Bowl LX broadcast.", "entities": ["CrossConnect Mobile"], "numbers": ["62 percent"], "domain": "telecom"}
+{"text": "Orbital Networks' satellite constellation delivered 450 Mbps to remote Australian outpost.", "entities": ["Orbital Networks", "Australian"], "numbers": ["450 Mbps"], "domain": "telecom"}
+{"text": "InterCity Fiber reduced packet loss to 0.001 percent across transcontinental backbone.", "entities": ["InterCity Fiber"], "numbers": ["0.001 percent"], "domain": "telecom"}
+{"text": "Titan Networks' capacity expansion added 3.3 Tbps to Kansas City interconnection point.", "entities": ["Titan Networks", "Kansas City"], "numbers": ["3.3 Tbps"], "domain": "telecom"}
+{"text": "Nextel West's congestion incident lasted 4.2 hours affecting 5.6 million total connections.", "entities": ["Nextel West"], "numbers": ["4.2 hours", "5.6 million"], "domain": "telecom"}
+{"text": "Wavelength Communications deployed 1,440 new fiber termination points in 2025-2026 contract.", "entities": ["Wavelength Communications"], "numbers": ["1,440"], "domain": "telecom"}
+{"text": "Cascade Broadband's market coverage expanded to 68 metropolitan statistical areas.", "entities": ["Cascade Broadband"], "numbers": ["68"], "domain": "telecom"}
+{"text": "Vortex Networks' optical switching fabric achieved 51 terahertz aggregate bandwidth design.", "entities": ["Vortex Networks"], "numbers": ["51 terahertz"], "domain": "telecom"}
+{"text": "Element Wireless provisioned 40 GHz millimeter-wave backhaul links for dense urban deployment.", "entities": ["Element Wireless"], "numbers": ["40 GHz"], "domain": "telecom"}
+{"text": "Synergy Telecom completed network-wide upgrade reducing average latency from 32 ms to 7 ms.", "entities": ["Synergy Telecom"], "numbers": ["32 ms", "7 ms"], "domain": "telecom"}
+{"text": "Radix Communications' DNS cache absorbed 890 billion queries monthly by January 2026.", "entities": ["Radix Communications"], "numbers": ["890 billion", "January 2026"], "domain": "telecom"}
+{"text": "TriLink Mobile achieved service restoration in 31 minutes after fiber severance incident.", "entities": ["TriLink Mobile"], "numbers": ["31 minutes"], "domain": "telecom"}
+{"text": "Momentum Fiber deployed redundant expressway routes providing 99.999% availability SLA.", "entities": ["Momentum Fiber"], "numbers": ["99.999%"], "domain": "telecom"}
+{"text": "ProxyNet's distributed anycast network reduced query resolution to 12 ms average latency.", "entities": ["ProxyNet"], "numbers": ["12 ms"], "domain": "telecom"}
+{"text": "Zenith Mobile's network slicing supported 2,100 concurrent service instances per gateway.", "entities": ["Zenith Mobile"], "numbers": ["2,100"], "domain": "telecom"}
+{"text": "Beacon Telecom decommissioned 85 legacy TDM switches during 2025 modernization program.", "entities": ["Beacon Telecom"], "numbers": ["85", "2025"], "domain": "telecom"}
+{"text": "Infinity Networks' Baltimore exchange point carried 412 Pbps peak bilateral traffic.", "entities": ["Infinity Networks", "Baltimore"], "numbers": ["412 Pbps"], "domain": "telecom"}
+{"text": "Rapid Communications added 7,800 residential fiber drops to suburban Denver footprint.", "entities": ["Rapid Communications", "Denver"], "numbers": ["7,800"], "domain": "telecom"}
+{"text": "Vertex Mobile's LTE coverage achieved 96.8 percent population density across Oklahoma.", "entities": ["Vertex Mobile", "Oklahoma"], "numbers": ["96.8 percent"], "domain": "telecom"}
+{"text": "Quantum Broadband suffered equipment failure degrading Memphis routing performance by 44 percent.", "entities": ["Quantum Broadband", "Memphis"], "numbers": ["44 percent"], "domain": "telecom"}
+{"text": "Prism Networks deployed 2,340 optical line terminals supporting 600 Gbps per interface.", "entities": ["Prism Networks"], "numbers": ["2,340", "600 Gbps"], "domain": "telecom"}
+{"text": "Surge Telecom's call setup completion rate reached 99.7 percent nationwide in March 2026.", "entities": ["Surge Telecom"], "numbers": ["99.7 percent", "March 2026"], "domain": "telecom"}
+{"text": "CloudCore Communications' platform handled 52 million simultaneous user sessions peak load.", "entities": ["CloudCore Communications"], "numbers": ["52 million"], "domain": "telecom"}
+{"text": "Apex Fiber's San Diego facility processes 3.1 million billing transactions daily consistently.", "entities": ["Apex Fiber", "San Diego"], "numbers": ["3.1 million"], "domain": "telecom"}
+{"text": "Momentum Networks' redundancy restored service within 89 seconds after dual failure event.", "entities": ["Momentum Networks"], "numbers": ["89 seconds"], "domain": "telecom"}
+{"text": "Spectrum Wireless rolled out 3G sunset program deactivating 12,400 legacy cell sites.", "entities": ["Spectrum Wireless"], "numbers": ["12,400"], "domain": "telecom"}
+{"text": "TriStar Broadband's upstream capacity bottleneck limited customer experience to 145 Mbps average.", "entities": ["TriStar Broadband"], "numbers": ["145 Mbps"], "domain": "telecom"}
+{"text": "Stellar Telecom provisioned 4.5 petabytes monthly storage for CDN content distribution network.", "entities": ["Stellar Telecom"], "numbers": ["4.5 petabytes"], "domain": "telecom"}
+{"text": "Nexus Networks' DDoS mitigation scrubbed 18 terabit per second attack traffic successfully.", "entities": ["Nexus Networks"], "numbers": ["18 terabit per second"], "domain": "telecom"}
+{"text": "Horizon Wireless deployed narrowband IoT reaching 78 thousand remote sensor endpoints.", "entities": ["Horizon Wireless"], "numbers": ["78 thousand"], "domain": "telecom"}
+{"text": "Vortex Broadband completed fiber backhaul rebuild achieving 2.1 ms latency improvement.", "entities": ["Vortex Broadband"], "numbers": ["2.1 ms"], "domain": "telecom"}
+{"text": "Catalyst Communications reduced customer churn by 18 percent implementing quality of service.", "entities": ["Catalyst Communications"], "numbers": ["18 percent"], "domain": "telecom"}
+{"text": "Ascent Networks' cable cut severed 850 Gbps capacity along Mississippi River corridor yesterday.", "entities": ["Ascent Networks", "Mississippi River"], "numbers": ["850 Gbps"], "domain": "telecom"}
+{"text": "Infinity Wireless activated dual-SIM capability on 34 million customer devices simultaneously.", "entities": ["Infinity Wireless"], "numbers": ["34 million"], "domain": "telecom"}
+{"text": "Radiant Fiber's optical amplifier cascade achieved 2,200 km transparent reach demonstration.", "entities": ["Radiant Fiber"], "numbers": ["2,200 km"], "domain": "telecom"}
+{"text": "Prime Telecom's revenue stream from peering reached 240 million dollars quarterly in 2025.", "entities": ["Prime Telecom"], "numbers": ["240 million dollars"], "domain": "telecom"}
+{"text": "Summit Mobile deployed software-defined networking reducing operational expenses by 31 percent.", "entities": ["Summit Mobile"], "numbers": ["31 percent"], "domain": "telecom"}
+{"text": "CoreLink Networks' microburst traffic analysis detected 156 billion anomalous packets hourly.", "entities": ["CoreLink Networks"], "numbers": ["156 billion"], "domain": "telecom"}
+{"text": "Velocity Telecom's billing system processed 89 million invoice records per daily batch cycle.", "entities": ["Velocity Telecom"], "numbers": ["89 million"], "domain": "telecom"}
+{"text": "Quantum Wireless achieved download speeds exceeding 1.8 Gbps in 45 percent of service area.", "entities": ["Quantum Wireless"], "numbers": ["1.8 Gbps", "45 percent"], "domain": "telecom"}
+{"text": "Beacon Broadband's fiber upgrade program connected 23,400 new premises to gigabit network.", "entities": ["Beacon Broadband"], "numbers": ["23,400"], "domain": "telecom"}
+{"text": "Zenith Communications' international gateway handled 720 million voice minutes annually.", "entities": ["Zenith Communications"], "numbers": ["720 million"], "domain": "telecom"}
+{"text": "Element Telecom deferred maintenance reducing network availability to 98.1 percent temporarily.", "entities": ["Element Telecom"], "numbers": ["98.1 percent"], "domain": "telecom"}
+{"text": "TriNet Mobile's spectrum efficiency improved 27 percent through advanced modulation scheme.", "entities": ["TriNet Mobile"], "numbers": ["27 percent"], "domain": "telecom"}
+{"text": "Prism Broadband's peering factor increased to 2.8 percent of total backbone throughput.", "entities": ["Prism Broadband"], "numbers": ["2.8 percent"], "domain": "telecom"}
+{"text": "Paramount Communications deployed edge computing nodes at 890 points of presence locations.", "entities": ["Paramount Communications"], "numbers": ["890"], "domain": "telecom"}
+{"text": "Stellar Wireless' handoff algorithms reduced call drop rate by 19 percent network-wide.", "entities": ["Stellar Wireless"], "numbers": ["19 percent"], "domain": "telecom"}
+{"text": "VertexComm's network slice isolation prevented 340 thousand customer sessions from impairment.", "entities": ["VertexComm"], "numbers": ["340 thousand"], "domain": "telecom"}
+{"text": "SkyBridge Telecom's submarine cable broke 67 terabit per second aggregate throughput record.", "entities": ["SkyBridge Telecom"], "numbers": ["67 terabit per second"], "domain": "telecom"}
+{"text": "Cascade Communications' load balancer distributed 19.2 million HTTP requests per minute peak.", "entities": ["Cascade Communications"], "numbers": ["19.2 million"], "domain": "telecom"}
+{"text": "Nextel Networks experienced partial outage affecting 890K customer base for 76 minutes.", "entities": ["Nextel Networks"], "numbers": ["890K", "76 minutes"], "domain": "telecom"}
+{"text": "Quantum Networks deployed 2,100 kilometers redundant fiber loop encircling Great Lakes region.", "entities": ["Quantum Networks", "Great Lakes"], "numbers": ["2,100 kilometers"], "domain": "telecom"}
+{"text": "Horizon Fiber installed 5,600 wireless backhaul links supporting 28 Gbps aggregate capacity.", "entities": ["Horizon Fiber"], "numbers": ["5,600", "28 Gbps"], "domain": "telecom"}
+{"text": "Prism Mobile's spectrum auction participation cost 3.4 billion dollars for 42 markets.", "entities": ["Prism Mobile"], "numbers": ["3.4 billion dollars", "42"], "domain": "telecom"}
+{"text": "Velocity Communications reduced billing cycle time from 14 days to 3.2 days average.", "entities": ["Velocity Communications"], "numbers": ["14 days", "3.2 days"], "domain": "telecom"}
+{"text": "Beacon Networks' customer growth reached 1.2 million net adds for 2025 fiscal year.", "entities": ["Beacon Networks"], "numbers": ["1.2 million", "2025"], "domain": "telecom"}
+{"text": "CorePath Broadband's optical coherent receiver improved reach by 1,800 kilometers specification.", "entities": ["CorePath Broadband"], "numbers": ["1,800 kilometers"], "domain": "telecom"}
+{"text": "Element Networks activated 78 remote access nodes reducing backbone congestion by 41 percent.", "entities": ["Element Networks"], "numbers": ["78", "41 percent"], "domain": "telecom"}
+{"text": "Summit Telecom's customer service resolution time improved to 4.3 hours average contact.", "entities": ["Summit Telecom"], "numbers": ["4.3 hours"], "domain": "telecom"}
+{"text": "Radiance Communications deployed machine learning predicting 67 percent of network failures.", "entities": ["Radiance Communications"], "numbers": ["67 percent"], "domain": "telecom"}
+{"text": "Zenith Broadband's municipal fiber program passed 156 thousand additional premises by July.", "entities": ["Zenith Broadband"], "numbers": ["156 thousand"], "domain": "telecom"}
+{"text": "Infinity Mobile implemented QoS prioritization serving 34 million video streams concurrently.", "entities": ["Infinity Mobile"], "numbers": ["34 million"], "domain": "telecom"}
+{"text": "Stellar Fiber's latency variance reduced from 8.2 ms to 1.3 ms through jitter buffering.", "entities": ["Stellar Fiber"], "numbers": ["8.2 ms", "1.3 ms"], "domain": "telecom"}
+{"text": "Paramount Networks installed 890 optical distribution frames capacity for 40 terabits throughput.", "entities": ["Paramount Networks"], "numbers": ["890", "40 terabits"], "domain": "telecom"}
+{"text": "Surge Wireless achieved coverage on 156 highways totaling 8,900 route-miles across region.", "entities": ["Surge Wireless"], "numbers": ["156", "8,900"], "domain": "telecom"}
+{"text": "TriStar Telecom reduced OPEX by 23 percent through network function virtualization deployment.", "entities": ["TriStar Telecom"], "numbers": ["23 percent"], "domain": "telecom"}
+{"text": "Quantum Fiber's jitter measurement never exceeded 2.1 milliseconds on priority traffic class.", "entities": ["Quantum Fiber"], "numbers": ["2.1 milliseconds"], "domain": "telecom"}
+{"text": "CloudPath Networks grew international transit volume by 340 petabytes year-over-year expansion.", "entities": ["CloudPath Networks"], "numbers": ["340 petabytes"], "domain": "telecom"}
+{"text": "Momentum Wireless deployed network slices supporting 1,200 enterprise customer instances simultaneously.", "entities": ["Momentum Wireless"], "numbers": ["1,200"], "domain": "telecom"}
+{"text": "Beacon Fiber's fiber-to-home penetration reached 67 percent of addressable market share.", "entities": ["Beacon Fiber"], "numbers": ["67 percent"], "domain": "telecom"}
+{"text": "Vortex Broadband's CDN infrastructure served 2.3 billion content objects per day peak.", "entities": ["Vortex Broadband"], "numbers": ["2.3 billion"], "domain": "telecom"}
+{"text": "Spectrum Networks installed 1,450 redundant crossover cables across 28 data center facilities.", "entities": ["Spectrum Networks"], "numbers": ["1,450", "28"], "domain": "telecom"}
+{"text": "Nexus Fiber deployed ROADM technology enabling remote spectrum allocation across 96 wavelengths.", "entities": ["Nexus Fiber"], "numbers": ["96"], "domain": "telecom"}
+{"text": "Ascent Broadband's network capacity planning model projected 156 percent traffic growth rate.", "entities": ["Ascent Broadband"], "numbers": ["156 percent"], "domain": "telecom"}
+{"text": "Radiant Telecom deactivated legacy 1G interfaces replacing with 100 Gbps optics fleet.", "entities": ["Radiant Telecom"], "numbers": ["1G", "100 Gbps"], "domain": "telecom"}
+{"text": "Element Wireless' small cell deployment added 4,200 nodes expanding coverage by 34 percent.", "entities": ["Element Wireless"], "numbers": ["4,200", "34 percent"], "domain": "telecom"}
+{"text": "Horizon Networks' congestion relief implementation reduced packet drop rate by 89 percent.", "entities": ["Horizon Networks"], "numbers": ["89 percent"], "domain": "telecom"}
+{"text": "TriLink Broadband achieved 1.4 petabytes peak daily content delivery during holiday season.", "entities": ["TriLink Broadband"], "numbers": ["1.4 petabytes"], "domain": "telecom"}
+{"text": "Zenith Wireless expanded 5G footprint to 420 cities covering 78 percent population share.", "entities": ["Zenith Wireless"], "numbers": ["420", "78 percent"], "domain": "telecom"}
+{"text": "SkyBridge Networks' satellite backhaul reduced terrestrial capacity demand by 23 percent substantially.", "entities": ["SkyBridge Networks"], "numbers": ["23 percent"], "domain": "telecom"}
+{"text": "Catalyst Fiber installed 3,100 meters vertical cable infrastructure at flagship data facility.", "entities": ["Catalyst Fiber"], "numbers": ["3,100 meters"], "domain": "telecom"}
+{"text": "Velocity Networks' autonomous restoration cleared network faults in 34 seconds average.", "entities": ["Velocity Networks"], "numbers": ["34 seconds"], "domain": "telecom"}
+{"text": "Paramount Broadband's market share reached 18 percent across competitive metro regions.", "entities": ["Paramount Broadband"], "numbers": ["18 percent"], "domain": "telecom"}
+{"text": "Quantum Communications deployed machine-learning traffic steering improving efficiency 41 percent.", "entities": ["Quantum Communications"], "numbers": ["41 percent"], "domain": "telecom"}
+{"text": "Prime Wireless activated dual-carrier aggregation on 56 million subscriber handsets nationwide.", "entities": ["Prime Wireless"], "numbers": ["56 million"], "domain": "telecom"}
+{"text": "CoreLink Broadband reduced energy consumption by 67 percent through cooling optimization.", "entities": ["CoreLink Broadband"], "numbers": ["67 percent"], "domain": "telecom"}
+{"text": "Stellar Networks' redundant ring configuration reduced single-point failures by 99.2 percent.", "entities": ["Stellar Networks"], "numbers": ["99.2 percent"], "domain": "telecom"}
+{"text": "Beacon Mobile achieved voice call setup completion rate of 99.8 percent network-wide.", "entities": ["Beacon Mobile"], "numbers": ["99.8 percent"], "domain": "telecom"}
+{"text": "Ascent Wireless deployed 1,890 base station sites enabling LTE-M coverage expansion statewide.", "entities": ["Ascent Wireless"], "numbers": ["1,890"], "domain": "telecom"}
+{"text": "Element Fiber's optical loss budget permitted 2,400 kilometer unrepeated transmission demonstration.", "entities": ["Element Fiber"], "numbers": ["2,400 kilometer"], "domain": "telecom"}
+{"text": "Radix Telecom's NGN architecture supported 890 million call attempts during peak hour.", "entities": ["Radix Telecom"], "numbers": ["890 million"], "domain": "telecom"}
+{"text": "Infinity Broadband's fiber-optic backbone processed 7.8 exabytes traffic annually last cycle.", "entities": ["Infinity Broadband"], "numbers": ["7.8 exabytes"], "domain": "telecom"}
+{"text": "Vortex Wireless deployed network analytics detecting 340 cyber attack patterns daily.", "entities": ["Vortex Wireless"], "numbers": ["340"], "domain": "telecom"}
+{"text": "Nextel Fiber completed network modernization adding 56 terabits aggregate routing capacity.", "entities": ["Nextel Fiber"], "numbers": ["56 terabits"], "domain": "telecom"}
+{"text": "Momentum Broadband's customer churn decreased to 1.2 percent monthly after service improvements.", "entities": ["Momentum Broadband"], "numbers": ["1.2 percent"], "domain": "telecom"}
+{"text": "Surge Telecom deployed 2,340 access points covering 89 downtown urban districts.", "entities": ["Surge Telecom"], "numbers": ["2,340", "89"], "domain": "telecom"}
+{"text": "Spectrum Fiber's wavelength division multiplex supported 240 concurrent optical channels deployed.", "entities": ["Spectrum Fiber"], "numbers": ["240"], "domain": "telecom"}
+{"text": "TriNet Wireless achieved 156 percent revenue growth fiscal 2025 through service expansion.", "entities": ["TriNet Wireless"], "numbers": ["156 percent", "2025"], "domain": "telecom"}
+{"text": "Quantum Broadband's distributed denial-of-service defense mitigated 12 terabit attacks monthly.", "entities": ["Quantum Broadband"], "numbers": ["12 terabit"], "domain": "telecom"}
+{"text": "Zenith Networks deployed 4,500 kilometers metropolitan area fiber network infrastructure.", "entities": ["Zenith Networks"], "numbers": ["4,500 kilometers"], "domain": "telecom"}
+{"text": "CloudCore Fiber reduced video streaming buffer ratio by 67 percent through caching placement.", "entities": ["CloudCore Fiber"], "numbers": ["67 percent"], "domain": "telecom"}
+{"text": "Radiance Broadband's customer premise equipment supported 890 Mbps download specification.", "entities": ["Radiance Broadband"], "numbers": ["890 Mbps"], "domain": "telecom"}
+{"text": "Cascade Wireless scaled network to handle 78 million concurrent mobile sessions peak.", "entities": ["Cascade Wireless"], "numbers": ["78 million"], "domain": "telecom"}
+{"text": "Prime Fiber installed redundant diverse paths achieving 99.95 percent availability SLA.", "entities": ["Prime Fiber"], "numbers": ["99.95 percent"], "domain": "telecom"}
+{"text": "Paramount Wireless' spectrum efficiency improved by 34 percent adopting 256-QAM modulation.", "entities": ["Paramount Wireless"], "numbers": ["34 percent", "256-QAM"], "domain": "telecom"}
+{"text": "Velocity Broadband deployed network optimization software reducing latency variance by 41 percent.", "entities": ["Velocity Broadband"], "numbers": ["41 percent"], "domain": "telecom"}
+{"text": "Stellar Wireless achieved 1.8 terabits peak throughput at flagship internet exchange.", "entities": ["Stellar Wireless"], "numbers": ["1.8 terabits"], "domain": "telecom"}
+{"text": "Beacon Telecom's call completion rate reached 99.6 percent following network upgrade.", "entities": ["Beacon Telecom"], "numbers": ["99.6 percent"], "domain": "telecom"}
+{"text": "Element Networks deployed 2,100 multiplexing cabinets expanding switching fabric capacity.", "entities": ["Element Networks"], "numbers": ["2,100"], "domain": "telecom"}
+{"text": "SkyBridge Broadband's 5G millimeter-wave coverage achieved 2.8 Gbps average throughput.", "entities": ["SkyBridge Broadband"], "numbers": ["2.8 Gbps"], "domain": "telecom"}
+{"text": "Horizon Wireless achieved 98.7 percent on-time repair completion rate this quarter.", "entities": ["Horizon Wireless"], "numbers": ["98.7 percent"], "domain": "telecom"}
+{"text": "TriLink Networks deployed 67 redundant metro access circuits totaling 840 Gbps capacity.", "entities": ["TriLink Networks"], "numbers": ["67", "840 Gbps"], "domain": "telecom"}
+{"text": "Nexus Wireless activated dual-stack IPv6 on 89 percent of residential broadband base.", "entities": ["Nexus Wireless"], "numbers": ["89 percent"], "domain": "telecom"}
+{"text": "Quantum Networks' peering increased by 23 petabytes monthly international transit volume.", "entities": ["Quantum Networks"], "numbers": ["23 petabytes"], "domain": "telecom"}
+{"text": "Surge Fiber deployed software-defined WAN reducing branch office latency by 156 percent.", "entities": ["Surge Fiber"], "numbers": ["156 percent"], "domain": "telecom"}
+{"text": "CloudPath Broadband achieved gigabit service availability for 45 million residential footprint.", "entities": ["CloudPath Broadband"], "numbers": ["45 million"], "domain": "telecom"}
+{"text": "Zenith Telecom's platform automation reduced provisioning time from 7 days to 2.1 hours.", "entities": ["Zenith Telecom"], "numbers": ["7 days", "2.1 hours"], "domain": "telecom"}
+{"text": "Radiant Wireless deployed 3,400 small cells adding 56 terabits network capacity.", "entities": ["Radiant Wireless"], "numbers": ["3,400", "56 terabits"], "domain": "telecom"}
+{"text": "Catalyst Networks' managed service revenue reached 890 million annually in 2025.", "entities": ["Catalyst Networks"], "numbers": ["890 million", "2025"], "domain": "telecom"}
+{"text": "Spectrum Broadband reduced average web page load time to 1.8 seconds through optimization.", "entities": ["Spectrum Broadband"], "numbers": ["1.8 seconds"], "domain": "telecom"}
+{"text": "Momentum Fiber's network slice isolation prevented outage affecting 34 thousand subscribers.", "entities": ["Momentum Fiber"], "numbers": ["34 thousand"], "domain": "telecom"}
+{"text": "Prime Networks deployed machine-learning anomaly detection blocking 99.8 percent cyber attacks.", "entities": ["Prime Networks"], "numbers": ["99.8 percent"], "domain": "telecom"}
+{"text": "Vortex Communications' billing accuracy improved to 99.95 percent through automation.", "entities": ["Vortex Communications"], "numbers": ["99.95 percent"], "domain": "telecom"}
+{"text": "Ascent Fiber installed 2,800 cross-connect facilities increasing service agility significantly.", "entities": ["Ascent Fiber"], "numbers": ["2,800"], "domain": "telecom"}
+{"text": "Nextel Broadband achieved 156 percent customer satisfaction improvement after restructuring.", "entities": ["Nextel Broadband"], "numbers": ["156 percent"], "domain": "telecom"}
+{"text": "Infinity Telecom's network function virtualization reduced capital expense by 67 percent.", "entities": ["Infinity Telecom"], "numbers": ["67 percent"], "domain": "telecom"}
+{"text": "Beacon Networks deployed 1,240 metro fiber segments totaling 3,400 route-miles coverage.", "entities": ["Beacon Networks"], "numbers": ["1,240", "3,400"], "domain": "telecom"}
+{"text": "Element Wireless achieved 99.99 percent service availability despite 8.9 magnitude earthquake.", "entities": ["Element Wireless"], "numbers": ["99.99 percent", "8.9"], "domain": "telecom"}
+{"text": "Stellar Broadband's subscriber growth reached 340 thousand net additions quarterly.", "entities": ["Stellar Broadband"], "numbers": ["340 thousand"], "domain": "telecom"}
+{"text": "Zenith Networks' optical transponder refresh improved signal quality by 8.6 decibels.", "entities": ["Zenith Networks"], "numbers": ["8.6 decibels"], "domain": "telecom"}
+{"text": "Quantum Wireless deployed 4,500 distributed antenna systems expanding indoor coverage.", "entities": ["Quantum Wireless"], "numbers": ["4,500"], "domain": "telecom"}
+{"text": "Radiance Communications reduced mean time to repair from 4.2 hours to 1.1 hours.", "entities": ["Radiance Communications"], "numbers": ["4.2 hours", "1.1 hours"], "domain": "telecom"}
+{"text": "TriStar Fiber achieved optical signal-to-noise ratio of 23.4 decibels long-haul spans.", "entities": ["TriStar Fiber"], "numbers": ["23.4 decibels"], "domain": "telecom"}
+{"text": "Paramount Telecom's SDN controller orchestrated 67 thousand virtual network functions.", "entities": ["Paramount Telecom"], "numbers": ["67 thousand"], "domain": "telecom"}
+{"text": "Cascade Broadband installed 5,600 optical regenerators enabling 2,800 km transmission reach.", "entities": ["Cascade Broadband"], "numbers": ["5,600", "2,800 km"], "domain": "telecom"}
+{"text": "Radix Broadband's fiber expansion reached 78 percent addressable market penetration.", "entities": ["Radix Broadband"], "numbers": ["78 percent"], "domain": "telecom"}
+{"text": "Velocity Wireless deployed 890 picocell units in dense Manhattan office corridors.", "entities": ["Velocity Wireless", "Manhattan"], "numbers": ["890"], "domain": "telecom"}
+{"text": "SkyBridge Communications upgraded backbone routes achieving 12.5 ms coast-to-coast latency.", "entities": ["SkyBridge Communications"], "numbers": ["12.5 ms"], "domain": "telecom"}
+{"text": "TriLink Wireless' 5G millimeter-wave deployment reached 156 new coverage zones.", "entities": ["TriLink Wireless"], "numbers": ["156"], "domain": "telecom"}
+{"text": "CorePath Networks deployed intelligent load balancing reducing peak congestion by 45 percent.", "entities": ["CorePath Networks"], "numbers": ["45 percent"], "domain": "telecom"}
+{"text": "Horizon Broadband achieved fiber-to-premises connection on 67 thousand additional locations.", "entities": ["Horizon Broadband"], "numbers": ["67 thousand"], "domain": "telecom"}
+{"text": "Zenith Fiber's capacity planning provisioned 3.8 petabytes monthly growth buffer.", "entities": ["Zenith Fiber"], "numbers": ["3.8 petabytes"], "domain": "telecom"}
+{"text": "Catalyst Wireless activated 240-channel dense wavelength division multiplexing nationwide.", "entities": ["Catalyst Wireless"], "numbers": ["240-channel"], "domain": "telecom"}
+{"text": "Prime Broadband eliminated 340 single points of failure through mesh topology deployment.", "entities": ["Prime Broadband"], "numbers": ["340"], "domain": "telecom"}
+{"text": "Ascent Communications' network slicing enabled 1,800 independent service instances.", "entities": ["Ascent Communications"], "numbers": ["1,800"], "domain": "telecom"}
+{"text": "Spectrum Telecom processed 4.2 billion routing protocol updates per second peak.", "entities": ["Spectrum Telecom"], "numbers": ["4.2 billion"], "domain": "telecom"}
+{"text": "Paramount Fiber deployed 1,100 colorless ROADM devices enabling dynamic wavelength allocation.", "entities": ["Paramount Fiber"], "numbers": ["1,100"], "domain": "telecom"}
+{"text": "Vortex Networks' DDoS protection mitigated 890 terabit per second attacks in 2025.", "entities": ["Vortex Networks"], "numbers": ["890 terabit per second", "2025"], "domain": "telecom"}
+{"text": "Infinity Wireless expanded spectrum portfolio acquiring 34 new MHz allocations.", "entities": ["Infinity Wireless"], "numbers": ["34"], "domain": "telecom"}
+{"text": "Quantum Broadband's service restoration protocols achieved 99.98 percent recovery success.", "entities": ["Quantum Broadband"], "numbers": ["99.98 percent"], "domain": "telecom"}
+{"text": "Beacon Fiber installed 2,340 kilometers submarine cable spanning Atlantic Ocean corridor.", "entities": ["Beacon Fiber", "Atlantic Ocean"], "numbers": ["2,340 kilometers"], "domain": "telecom"}
+{"text": "Element Telecom reduced billing system outages to 12 incidents annually from 340.", "entities": ["Element Telecom"], "numbers": ["12", "340"], "domain": "telecom"}
+{"text": "Stellar Communications deployed edge caching serving 1.7 billion daily requests.", "entities": ["Stellar Communications"], "numbers": ["1.7 billion"], "domain": "telecom"}
+{"text": "TriNet Broadband's network coverage reached 156 thousand square kilometers.", "entities": ["TriNet Broadband"], "numbers": ["156 thousand square kilometers"], "domain": "telecom"}
+{"text": "Radiance Networks achieved 99.999 percent availability across five data centers.", "entities": ["Radiance Networks"], "numbers": ["99.999 percent", "five"], "domain": "telecom"}
+{"text": "Surge Wireless' mobile subscriber base grew to 67 million active accounts.", "entities": ["Surge Wireless"], "numbers": ["67 million"], "domain": "telecom"}
+{"text": "Nextel Networks deployed 45 terabits per second capacity at primary internet exchange.", "entities": ["Nextel Networks"], "numbers": ["45 terabits per second"], "domain": "telecom"}
+{"text": "CloudPath Communications reduced network provisioning latency by 78 percent year-over-year.", "entities": ["CloudPath Communications"], "numbers": ["78 percent"], "domain": "telecom"}
+{"text": "Momentum Broadband's customer retention rate improved to 96.2 percent quarterly.", "entities": ["Momentum Broadband"], "numbers": ["96.2 percent"], "domain": "telecom"}
+{"text": "Cascade Fiber deployed 3,100 cable termination panels supporting 1.2 terabits.", "entities": ["Cascade Fiber"], "numbers": ["3,100", "1.2 terabits"], "domain": "telecom"}
+{"text": "Velocity Telecom's media delivery network served 890 million concurrent users.", "entities": ["Velocity Telecom"], "numbers": ["890 million"], "domain": "telecom"}
+{"text": "Zenith Wireless achieved download speed parity within 2.3 percent urban-rural differential.", "entities": ["Zenith Wireless"], "numbers": ["2.3 percent"], "domain": "telecom"}
+{"text": "Quantum Networks deployed autonomous healing algorithms resolving 340 faults automatically.", "entities": ["Quantum Networks"], "numbers": ["340"], "domain": "telecom"}
+{"text": "Radiant Broadband connected 156 thousand enterprise customers to private network.", "entities": ["Radiant Broadband"], "numbers": ["156 thousand"], "domain": "telecom"}
+{"text": "Paramount Communications' network slice capacity increased 5.6 times through virtualization.", "entities": ["Paramount Communications"], "numbers": ["5.6"], "domain": "telecom"}
+{"text": "Element Networks deployed 67 redundant peering agreements improving global reachability.", "entities": ["Element Networks"], "numbers": ["67"], "domain": "telecom"}
+{"text": "SkyBridge Telecom's space-to-ground latency improved to 28 milliseconds average.", "entities": ["SkyBridge Telecom"], "numbers": ["28 milliseconds"], "domain": "telecom"}
+{"text": "TriLink Fiber completed 890 meter rooftop cable runs within 6-week project window.", "entities": ["TriLink Fiber"], "numbers": ["890 meter", "6-week"], "domain": "telecom"}
+{"text": "Spectrum Broadband achieved 99.7 percent scheduled maintenance completion ratio.", "entities": ["Spectrum Broadband"], "numbers": ["99.7 percent"], "domain": "telecom"}
+{"text": "Prime Wireless deployed 4,200 small cells within metro corridor totaling 156 square miles.", "entities": ["Prime Wireless"], "numbers": ["4,200", "156"], "domain": "telecom"}
+{"text": "Beacon Telecom's network underwent triple-redundancy upgrade adding 340 terabits capacity.", "entities": ["Beacon Telecom"], "numbers": ["340 terabits"], "domain": "telecom"}
+{"text": "Ascent Networks achieved 67 millisecond response time for customer provisioning requests.", "entities": ["Ascent Networks"], "numbers": ["67 millisecond"], "domain": "telecom"}
+{"text": "Vortex Broadband deployed 1,800 distribution nodes serving 89 thousand customers daily.", "entities": ["Vortex Broadband"], "numbers": ["1,800", "89 thousand"], "domain": "telecom"}
+{"text": "Zenith Telecom's optical signal regeneration technology achieved 2,800 km unrepeated distance.", "entities": ["Zenith Telecom"], "numbers": ["2,800 km"], "domain": "telecom"}
+{"text": "Catalyst Broadband expanded addressable market to 45 million potential customers.", "entities": ["Catalyst Broadband"], "numbers": ["45 million"], "domain": "telecom"}
+{"text": "Radiance Wireless deployed advanced antenna arrays achieving 23.6 dB signal gain.", "entities": ["Radiance Wireless"], "numbers": ["23.6 dB"], "domain": "telecom"}
+{"text": "Nexus Fiber installed 2,100 network monitoring probes across global infrastructure.", "entities": ["Nexus Fiber"], "numbers": ["2,100"], "domain": "telecom"}
+{"text": "Infinity Broadband's customer base grew by 340 thousand subscribers in single quarter.", "entities": ["Infinity Broadband"], "numbers": ["340 thousand"], "domain": "telecom"}
+{"text": "Quantum Wireless achieved 156 percent spectrum efficiency improvement through advanced coding.", "entities": ["Quantum Wireless"], "numbers": ["156 percent"], "domain": "telecom"}
+{"text": "Surge Broadband deployed 67 redundant backbone routes reducing outage duration risk.", "entities": ["Surge Broadband"], "numbers": ["67"], "domain": "telecom"}
+{"text": "Momentum Networks installed 3,400 optical fiber regenerator stages spanning 4,200 kilometers.", "entities": ["Momentum Networks"], "numbers": ["3,400", "4,200 kilometers"], "domain": "telecom"}
+{"text": "Stellar Telecom's network traffic prediction algorithms achieved 89 percent accuracy rate.", "entities": ["Stellar Telecom"], "numbers": ["89 percent"], "domain": "telecom"}
+{"text": "CoreLink Wireless deployed 12.5 gigahertz millimeter-wave backhaul links regionally.", "entities": ["CoreLink Wireless"], "numbers": ["12.5 gigahertz"], "domain": "telecom"}
+{"text": "Prime Networks activated 1,200 interconnection points enabling 340 terabits throughput.", "entities": ["Prime Networks"], "numbers": ["1,200", "340 terabits"], "domain": "telecom"}
+{"text": "Beacon Broadband achieved gigabit service availability for 67 million subscriber base.", "entities": ["Beacon Broadband"], "numbers": ["67 million"], "domain": "telecom"}
+{"text": "Element Fiber deployed photonic mesh architecture supporting 99.999 percent resilience.", "entities": ["Element Fiber"], "numbers": ["99.999 percent"], "domain": "telecom"}
+{"text": "Radiant Telecom's network transformation project reduced operational expenses by 45 percent.", "entities": ["Radiant Telecom"], "numbers": ["45 percent"], "domain": "telecom"}
+{"text": "Zenith Networks deployed 890 autonomous network agents optimizing routing decisions.", "entities": ["Zenith Networks"], "numbers": ["890"], "domain": "telecom"}
+{"text": "TriStar Communications upgraded switching infrastructure supporting 3.4 million transactions.", "entities": ["TriStar Communications"], "numbers": ["3.4 million"], "domain": "telecom"}
+{"text": "Paramount Broadband achieved cost reduction of 340 million dollars through automation.", "entities": ["Paramount Broadband"], "numbers": ["340 million dollars"], "domain": "telecom"}
+{"text": "Vortex Wireless deployed 156 thousand small cells expanding capacity by 8.9 terabits.", "entities": ["Vortex Wireless"], "numbers": ["156 thousand", "8.9 terabits"], "domain": "telecom"}
+{"text": "SkyBridge Networks achieved round-trip latency of 34 milliseconds globally on average.", "entities": ["SkyBridge Networks"], "numbers": ["34 milliseconds"], "domain": "telecom"}
+{"text": "Cascade Communications deployed software-defined WAN optimizing 67 branch locations.", "entities": ["Cascade Communications"], "numbers": ["67"], "domain": "telecom"}
+{"text": "Velocity Broadband completed fiber-to-home installation serving 1.2 million premises.", "entities": ["Velocity Broadband"], "numbers": ["1.2 million"], "domain": "telecom"}
+{"text": "Zenith Wireless achieved 99.98 percent on-time delivery rate for service provisioning.", "entities": ["Zenith Wireless"], "numbers": ["99.98 percent"], "domain": "telecom"}
+{"text": "Quantum Broadband deployed 4,500 redundant optical paths spanning North America.", "entities": ["Quantum Broadband", "North America"], "numbers": ["4,500"], "domain": "telecom"}
+{"text": "Catalyst Fiber installed 2,340 kilometers inter-city dark fiber acquisition program.", "entities": ["Catalyst Fiber"], "numbers": ["2,340 kilometers"], "domain": "telecom"}
+{"text": "Radiance Broadband reduced customer acquisition cost by 56 percent through optimization.", "entities": ["Radiance Broadband"], "numbers": ["56 percent"], "domain": "telecom"}
+{"text": "Beacon Networks deployed machine learning predictive analytics preventing 340 outages annually.", "entities": ["Beacon Networks"], "numbers": ["340"], "domain": "telecom"}
+{"text": "TriLink Broadband achieved 1.8 exabytes monthly content delivery across platform.", "entities": ["TriLink Broadband"], "numbers": ["1.8 exabytes"], "domain": "telecom"}
+{"text": "Spectrum Networks installed 156 redundant system components achieving 99.99 percent SLA.", "entities": ["Spectrum Networks"], "numbers": ["156", "99.99 percent"], "domain": "telecom"}
+{"text": "Infinity Wireless deployed 67 thousand distributed antenna systems expansion statewide.", "entities": ["Infinity Wireless"], "numbers": ["67 thousand"], "domain": "telecom"}
+{"text": "Paramount Telecom achieved revenue per gigabit increase of 34 percent quarterly.", "entities": ["Paramount Telecom"], "numbers": ["34 percent"], "domain": "telecom"}
+{"text": "Nexus Communications deployed multi-vendor network control plane supporting 890 devices.", "entities": ["Nexus Communications"], "numbers": ["890"], "domain": "telecom"}
+{"text": "Surge Telecom's market expansion reached 45 new cities within fiscal 2025.", "entities": ["Surge Telecom"], "numbers": ["45", "2025"], "domain": "telecom"}
+{"text": "Element Broadband achieved 2.1 petabytes peak daily data delivery during holiday.", "entities": ["Element Broadband"], "numbers": ["2.1 petabytes"], "domain": "telecom"}
+{"text": "Quantum Communications deployed 3,400 optical cross-connect switches nationwide.", "entities": ["Quantum Communications"], "numbers": ["3,400"], "domain": "telecom"}
+{"text": "Zenith Fiber's customer satisfaction score improved to 8.7 out of 10 rating.", "entities": ["Zenith Fiber"], "numbers": ["8.7 out of 10"], "domain": "telecom"}
+{"text": "Radiant Networks deployed 156 peering agreements extending global reach significantly.", "entities": ["Radiant Networks"], "numbers": ["156"], "domain": "telecom"}
+{"text": "Momentum Wireless achieved 99.7 percent call quality score across service area.", "entities": ["Momentum Wireless"], "numbers": ["99.7 percent"], "domain": "telecom"}
+{"text": "Cascade Broadband reduced setup time to 1.5 hours from previous 6.8 hour average.", "entities": ["Cascade Broadband"], "numbers": ["1.5 hours", "6.8 hour"], "domain": "telecom"}
+{"text": "TriNet Telecom deployed 2,800 climate-controlled cabinet units expanding capacity.", "entities": ["TriNet Telecom"], "numbers": ["2,800"], "domain": "telecom"}
+{"text": "Stellar Networks achieved 340 millisecond jitter performance across transcontinental link.", "entities": ["Stellar Networks"], "numbers": ["340 millisecond"], "domain": "telecom"}
+{"text": "SkyBridge Broadband installed 67 thousand fiber-optic cable termination points.", "entities": ["SkyBridge Broadband"], "numbers": ["67 thousand"], "domain": "telecom"}
+{"text": "Prime Broadband achieved 45 percent faster service provisioning through automation.", "entities": ["Prime Broadband"], "numbers": ["45 percent"], "domain": "telecom"}
+{"text": "Beacon Fiber deployed 1,200 network slices serving 890 thousand concurrent users.", "entities": ["Beacon Fiber"], "numbers": ["1,200", "890 thousand"], "domain": "telecom"}
+{"text": "Vortex Communications' network operating center monitored 34 thousand active devices.", "entities": ["Vortex Communications"], "numbers": ["34 thousand"], "domain": "telecom"}
+{"text": "Nextel Wireless deployed dual-SIM support on 156 million device base nationwide.", "entities": ["Nextel Wireless"], "numbers": ["156 million"], "domain": "telecom"}
+{"text": "Infinity Networks achieved 99.95 percent uptime despite 2.3 major infrastructure events.", "entities": ["Infinity Networks"], "numbers": ["99.95 percent", "2.3"], "domain": "telecom"}
+{"text": "Catalyst Broadband expanded gigabit coverage to 67 percent of addressable market.", "entities": ["Catalyst Broadband"], "numbers": ["67 percent"], "domain": "telecom"}
+{"text": "Radiance Fiber's optical span reached 3,100 kilometers on single amplifier stage.", "entities": ["Radiance Fiber"], "numbers": ["3,100 kilometers"], "domain": "telecom"}
+{"text": "Quantum Fiber achieved 340 terabit per second capacity at major interconnection hub.", "entities": ["Quantum Fiber"], "numbers": ["340 terabit per second"], "domain": "telecom"}
+{"text": "Spectrum Broadband deployed 1,800 retail locations expanding customer touchpoints.", "entities": ["Spectrum Broadband"], "numbers": ["1,800"], "domain": "telecom"}
+{"text": "Zenith Telecom reduced mean time to restore from 89 minutes to 12 minutes.", "entities": ["Zenith Telecom"], "numbers": ["89 minutes", "12 minutes"], "domain": "telecom"}
+{"text": "Element Networks deployed network segmentation protecting 45 thousand customer instances.", "entities": ["Element Networks"], "numbers": ["45 thousand"], "domain": "telecom"}
+{"text": "Paramount Wireless achieved 156 percent improvement in customer experience metrics.", "entities": ["Paramount Wireless"], "numbers": ["156 percent"], "domain": "telecom"}
+{"text": "Surge Networks deployed 2,340 monitoring sensors detecting 99.8 percent network issues.", "entities": ["Surge Networks"], "numbers": ["2,340", "99.8 percent"], "domain": "telecom"}
+{"text": "TriLink Communications achieved 67 petabytes monthly international transit capacity.", "entities": ["TriLink Communications"], "numbers": ["67 petabytes"], "domain": "telecom"}
+{"text": "Zenith Broadband's network evolution roadmap projected 340 percent traffic growth.", "entities": ["Zenith Broadband"], "numbers": ["340 percent"], "domain": "telecom"}
+{"text": "Velocity Networks deployed 1,200 distributed denial-of-service mitigation nodes.", "entities": ["Velocity Networks"], "numbers": ["1,200"], "domain": "telecom"}
+{"text": "Cascade Telecom achieved 34 millisecond latency improvement through network redesign.", "entities": ["Cascade Telecom"], "numbers": ["34 millisecond"], "domain": "telecom"}
+{"text": "Beacon Wireless deployed 890 autonomous network management agents daily.", "entities": ["Beacon Wireless"], "numbers": ["890"], "domain": "telecom"}
+{"text": "SkyBridge Networks achieved 45 terabits per second regional capacity target.", "entities": ["SkyBridge Networks"], "numbers": ["45 terabits per second"], "domain": "telecom"}
+{"text": "Radiant Broadband connected 156 thousand fiber-to-premises installations this quarter.", "entities": ["Radiant Broadband"], "numbers": ["156 thousand"], "domain": "telecom"}
+{"text": "Prime Fiber deployed 3,400 optical-to-electrical conversion devices network-wide.", "entities": ["Prime Fiber"], "numbers": ["3,400"], "domain": "telecom"}
+{"text": "Catalyst Wireless achieved 99.99 percent network availability despite 67 discrete outages.", "entities": ["Catalyst Wireless"], "numbers": ["99.99 percent", "67"], "domain": "telecom"}
+{"text": "Infinity Broadband reduced content delivery latency to 2.8 milliseconds globally.", "entities": ["Infinity Broadband"], "numbers": ["2.8 milliseconds"], "domain": "telecom"}
+{"text": "Momentum Broadband deployed 1,800 redundant cross-connect facilities regionally.", "entities": ["Momentum Broadband"], "numbers": ["1,800"], "domain": "telecom"}
+{"text": "Spectrum Wireless achieved 340 million concurrent mobile session support peak.", "entities": ["Spectrum Wireless"], "numbers": ["340 million"], "domain": "telecom"}
+{"text": "TriNet Broadband installed 2,100 kilometers metropolitan fiber-optic backbone infrastructure.", "entities": ["TriNet Broadband"], "numbers": ["2,100 kilometers"], "domain": "telecom"}
+{"text": "Nexus Wireless deployed 156 thousand cell tower upgrades nationwide during 2025.", "entities": ["Nexus Wireless"], "numbers": ["156 thousand", "2025"], "domain": "telecom"}
+{"text": "Quantum Networks achieved 99.98 percent service level objective attainment quarterly.", "entities": ["Quantum Networks"], "numbers": ["99.98 percent"], "domain": "telecom"}
+{"text": "Zenith Fiber's optical transmitter power reduced to 1.5 milliwatts per channel.", "entities": ["Zenith Fiber"], "numbers": ["1.5 milliwatts"], "domain": "telecom"}
+{"text": "Paramount Networks deployed 4,500 redundant fiber-pair circuits globally.", "entities": ["Paramount Networks"], "numbers": ["4,500"], "domain": "telecom"}
+{"text": "Surge Broadband achieved gigabit service adoption rate of 67 percent.", "entities": ["Surge Broadband"], "numbers": ["67 percent"], "domain": "telecom"}
+{"text": "Element Wireless deployed 34 thousand network access points covering metro region.", "entities": ["Element Wireless"], "numbers": ["34 thousand"], "domain": "telecom"}
+{"text": "Catalyst Communications achieved 340 petabytes annual content delivery platform volume.", "entities": ["Catalyst Communications"], "numbers": ["340 petabytes"], "domain": "telecom"}
+{"text": "Radiance Networks reduced fiber cut repair time to 2.3 hours average response.", "entities": ["Radiance Networks"], "numbers": ["2.3 hours"], "domain": "telecom"}
+{"text": "Beacon Broadband achieved 45 million customer base milestone by January 2026.", "entities": ["Beacon Broadband"], "numbers": ["45 million", "January 2026"], "domain": "telecom"}
+{"text": "TriLink Fiber deployed 1,200 optical distribution network cabinets across region.", "entities": ["TriLink Fiber"], "numbers": ["1,200"], "domain": "telecom"}
+{"text": "Momentum Networks achieved 99.99 percent uptime across entire infrastructure.", "entities": ["Momentum Networks"], "numbers": ["99.99 percent"], "domain": "telecom"}
+{"text": "Spectrum Telecom deployed 890 software-defined network controllers nationwide.", "entities": ["Spectrum Telecom"], "numbers": ["890"], "domain": "telecom"}
+{"text": "Vortex Broadband's transcontinental route latency improved to 8.6 milliseconds.", "entities": ["Vortex Broadband"], "numbers": ["8.6 milliseconds"], "domain": "telecom"}
+{"text": "SkyBridge Wireless achieved 156 percent year-over-year revenue growth 2025.", "entities": ["SkyBridge Wireless"], "numbers": ["156 percent", "2025"], "domain": "telecom"}
+{"text": "Infinity Telecom deployed 67 thousand redundant network termination units.", "entities": ["Infinity Telecom"], "numbers": ["67 thousand"], "domain": "telecom"}
+{"text": "Prime Networks achieved 340 terabits peak capacity through multi-vendor architecture.", "entities": ["Prime Networks"], "numbers": ["340 terabits"], "domain": "telecom"}
+{"text": "Nextel Broadband deployed 3,400 fiber-to-the-curb distribution points.", "entities": ["Nextel Broadband"], "numbers": ["3,400"], "domain": "telecom"}
+{"text": "Quantum Wireless achieved 99.7 percent call completion rate across network.", "entities": ["Quantum Wireless"], "numbers": ["99.7 percent"], "domain": "telecom"}
+{"text": "Zenith Networks deployed 1,800 network function virtualization service instances.", "entities": ["Zenith Networks"], "numbers": ["1,800"], "domain": "telecom"}
+{"text": "Cascade Fiber achieved 34 petabytes monthly peak traffic handling capacity.", "entities": ["Cascade Fiber"], "numbers": ["34 petabytes"], "domain": "telecom"}
+{"text": "Radiant Wireless deployed 156 redundant internet exchange point connections.", "entities": ["Radiant Wireless"], "numbers": ["156"], "domain": "telecom"}
+{"text": "Stellar Broadband achieved 45 percent market share expansion within fiscal year.", "entities": ["Stellar Broadband"], "numbers": ["45 percent"], "domain": "telecom"}

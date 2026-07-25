@@ -1,0 +1,200 @@
+{"text": "Preheat oven to 220°C and line two trays with parchment paper before mixing dry ingredients.", "entities": [], "numbers": ["220°C", "2"], "domain": "procedural"}
+{"text": "Whisk 3 eggs with 100ml milk until frothy, then fold into dry mixture gently.", "entities": [], "numbers": ["3", "100ml"], "domain": "procedural"}
+{"text": "Reduce heat to 180°C after 15 minutes and bake for additional 25 minutes until golden.", "entities": [], "numbers": ["180°C", "15", "25"], "domain": "procedural"}
+{"text": "Clone the repository from GitHub, create a feature branch, and pull latest changes from main.", "entities": ["GitHub", "main"], "numbers": [], "domain": "procedural"}
+{"text": "Run unit tests in 4 separate containers to validate parallel execution and catch race conditions.", "entities": [], "numbers": ["4"], "domain": "procedural"}
+{"text": "Before deploying to production, stage changes on 3 test environments over 2 days minimum.", "entities": [], "numbers": ["3", "2"], "domain": "procedural"}
+{"text": "Merge the pull request only after 2 code reviewers approve and CI pipeline passes completely.", "entities": [], "numbers": ["2"], "domain": "procedural"}
+{"text": "Load 500 sample records into staging database and verify data integrity before cutover.", "entities": [], "numbers": ["500"], "domain": "procedural"}
+{"text": "Document 10 test cases that cover both happy paths and edge cases for new endpoints.", "entities": [], "numbers": ["10"], "domain": "procedural"}
+{"text": "Package the application as Docker image with version tag matching the release number exactly.", "entities": ["Docker"], "numbers": [], "domain": "procedural"}
+{"text": "Coordinate with 6 logistics partners across 4 regions to align shipment schedules.", "entities": [], "numbers": ["6", "4"], "domain": "procedural"}
+{"text": "Verify inventory levels at 5 warehouse nodes using API before confirming stock availability.", "entities": [], "numbers": ["5"], "domain": "procedural"}
+{"text": "Route truck through 3 distribution centers; calculate 4-hour buffer for each handoff.", "entities": [], "numbers": ["3", "4"], "domain": "procedural"}
+{"text": "Check maintenance logs for past 12 months to identify equipment requiring 90-day service intervals.", "entities": [], "numbers": ["12", "90"], "domain": "procedural"}
+{"text": "Paint two coats with 8-hour drying time between applications for maximum adhesion.", "entities": [], "numbers": ["2", "8"], "domain": "procedural"}
+{"text": "Inspect 15 vehicle suspension systems and document wear patterns on standardized checklist.", "entities": [], "numbers": ["15"], "domain": "procedural"}
+{"text": "Book flights 6 weeks in advance; set price alerts across 3 travel aggregation platforms.", "entities": [], "numbers": ["6", "3"], "domain": "procedural"}
+{"text": "Prepare itinerary spanning 14 days across 5 countries with accommodation confirmed 30 days prior.", "entities": [], "numbers": ["14", "5", "30"], "domain": "procedural"}
+{"text": "Before departing, validate passport expiration date extends minimum 6 months beyond return date.", "entities": [], "numbers": ["6"], "domain": "procedural"}
+{"text": "Calibrate laboratory equipment with certified standards every 7 days to maintain ISO accreditation.", "entities": ["ISO"], "numbers": ["7"], "domain": "procedural"}
+{"text": "Prepare solutions with 0.5M concentration using volumetric flasks and analytical scales.", "entities": [], "numbers": ["0.5M"], "domain": "procedural"}
+{"text": "Document 25 control samples across 5 treatment groups with triplicate measurements minimum.", "entities": [], "numbers": ["25", "5"], "domain": "procedural"}
+{"text": "Incubate cultures at 37°C for 48 hours, then plate onto selective media and observe colonies.", "entities": [], "numbers": ["37°C", "48"], "domain": "procedural"}
+{"text": "Balance 8 separate accounts against monthly reconciliation report before quarter-end closing.", "entities": [], "numbers": ["8"], "domain": "procedural"}
+{"text": "Process expense reports within 5 business days and route 3 approvals before payment release.", "entities": [], "numbers": ["5", "3"], "domain": "procedural"}
+{"text": "Configure budget thresholds at 75%, 90%, and 100% spending levels to trigger automated alerts.", "entities": [], "numbers": ["75%", "90%", "100%"], "domain": "procedural"}
+{"text": "Audit 50 vendor invoices monthly against purchase orders; flag discrepancies exceeding 2% variance.", "entities": [], "numbers": ["50", "2%"], "domain": "procedural"}
+{"text": "Monitor server logs every 15 minutes; escalate alerts with response code 500 within 10 minutes.", "entities": [], "numbers": ["15", "500", "10"], "domain": "procedural"}
+{"text": "Back up database 3 times daily with retention policy spanning 90 days minimum storage.", "entities": [], "numbers": ["3", "90"], "domain": "procedural"}
+{"text": "Strip and refinish hardwood floor using 80-grit, 120-grit, then 220-grit sandpaper sequentially.", "entities": [], "numbers": ["80", "120", "220"], "domain": "procedural"}
+{"text": "Stain wood with 2 coats, waiting 4 hours between applications for even color absorption.", "entities": [], "numbers": ["2", "4"], "domain": "procedural"}
+{"text": "Apply 3 layers of polyurethane finish with 24-hour curing time before foot traffic allowed.", "entities": [], "numbers": ["3", "24"], "domain": "procedural"}
+{"text": "Seed lawn with 5kg grass mixture per 100 square meters and water twice daily for 2 weeks.", "entities": [], "numbers": ["5kg", "100", "2"], "domain": "procedural"}
+{"text": "Prune shrubs by 30% maximum in single season to avoid stress and promote healthier regrowth.", "entities": [], "numbers": ["30%"], "domain": "procedural"}
+{"text": "Fertilize garden beds every 3 weeks during growing season; follow NPK ratio 10-10-10 specifications.", "entities": [], "numbers": ["3", "10-10-10"], "domain": "procedural"}
+{"text": "Marinate chicken breasts for minimum 4 hours; grill on 180°C heat for 12 minutes per side.", "entities": [], "numbers": ["4", "180°C", "12"], "domain": "procedural"}
+{"text": "Steep tea leaves at 80°C for exactly 4 minutes to avoid bitterness while extracting full flavor.", "entities": [], "numbers": ["80°C", "4"], "domain": "procedural"}
+{"text": "Toast spices in dry pan for 1 minute at medium heat until fragrant, then grind immediately.", "entities": [], "numbers": ["1"], "domain": "procedural"}
+{"text": "Proof dough at 25°C for 8 hours or until volume doubles; punch down and shape carefully.", "entities": [], "numbers": ["25°C", "8"], "domain": "procedural"}
+{"text": "Ferment kombucha for 7-10 days at room temperature; taste daily after day 5 for preferred tanginess.", "entities": [], "numbers": ["7-10", "5"], "domain": "procedural"}
+{"text": "Roll pasta dough to 2mm thickness; cut into 200g portions before freezing on sheet trays.", "entities": [], "numbers": ["2mm", "200g"], "domain": "procedural"}
+{"text": "Render git history using --oneline flag; identify last 10 commits touching specific file.", "entities": ["git"], "numbers": ["10"], "domain": "procedural"}
+{"text": "Execute schema migration in 2 phases with 30-minute verification window between deployments.", "entities": [], "numbers": ["2", "30"], "domain": "procedural"}
+{"text": "Load test API endpoints against 1000 concurrent requests; measure response latency percentiles.", "entities": [], "numbers": ["1000"], "domain": "procedural"}
+{"text": "Configure nginx reverse proxy with 5-minute session timeouts and 2MB request body limits.", "entities": ["nginx"], "numbers": ["5", "2MB"], "domain": "procedural"}
+{"text": "Index database columns used in 50+ queries and benchmark query plans against baseline performance.", "entities": [], "numbers": ["50"], "domain": "procedural"}
+{"text": "Implement circuit breaker pattern with 3-second timeout and 5 consecutive failures threshold.", "entities": [], "numbers": ["3", "5"], "domain": "procedural"}
+{"text": "Generate test data fixture covering 10 scenarios with 100 records each across 3 tables.", "entities": [], "numbers": ["10", "100", "3"], "domain": "procedural"}
+{"text": "Sign commits with GPG key; verify all 20 pull request signatures before batch merge.", "entities": ["GPG"], "numbers": ["20"], "domain": "procedural"}
+{"text": "Install dependencies using package lock file; pin versions to exact matches in 2 environments.", "entities": [], "numbers": ["2"], "domain": "procedural"}
+{"text": "Containerize application with multi-stage Dockerfile reducing image size from 500MB to 120MB.", "entities": ["Dockerfile"], "numbers": ["500MB", "120MB"], "domain": "procedural"}
+{"text": "Schedule 4 maintenance windows monthly, each spanning 2 hours during off-peak periods only.", "entities": [], "numbers": ["4", "2"], "domain": "procedural"}
+{"text": "Allocate 8GB memory per container; set CPU limits at 2 cores for optimal resource utilization.", "entities": [], "numbers": ["8GB", "2"], "domain": "procedural"}
+{"text": "Consolidate 3 microservices into single monolithic application; refactor within 6-week timeline.", "entities": [], "numbers": ["3", "6"], "domain": "procedural"}
+{"text": "Decrypt message using OpenSSL with 256-bit AES cipher; verify checksum before processing.", "entities": ["OpenSSL", "AES"], "numbers": ["256"], "domain": "procedural"}
+{"text": "Sort inventory by 5 criteria simultaneously; generate report showing 15 product classifications.", "entities": [], "numbers": ["5", "15"], "domain": "procedural"}
+{"text": "Transfer 2TB dataset across 4 data centers using compressed protocol with 15-minute timeout.", "entities": [], "numbers": ["2TB", "4", "15"], "domain": "procedural"}
+{"text": "Establish VPN tunnel with 3 redundant pathways; failover automatically within 10 seconds.", "entities": ["VPN"], "numbers": ["3", "10"], "domain": "procedural"}
+{"text": "Truck arrives; unload 12 pallets within 2-hour window; inspect 95% of items for damage.", "entities": [], "numbers": ["12", "2", "95%"], "domain": "procedural"}
+{"text": "Schedule delivery across 6 time slots; prioritize 8 rush orders for same-day fulfillment.", "entities": [], "numbers": ["6", "8"], "domain": "procedural"}
+{"text": "Track 150 shipments in real-time using GPS; send notifications at 4 key waypoints.", "entities": ["GPS"], "numbers": ["150", "4"], "domain": "procedural"}
+{"text": "Consolidate freight from 7 suppliers; optimize route reducing distance by 25% minimum.", "entities": [], "numbers": ["7", "25%"], "domain": "procedural"}
+{"text": "Prepare manifest listing 300 line items; cross-reference against 3 separate purchase orders.", "entities": [], "numbers": ["300", "3"], "domain": "procedural"}
+{"text": "Replace air filter every 12 months or 15000 miles; whichever milestone occurs first.", "entities": [], "numbers": ["12", "15000"], "domain": "procedural"}
+{"text": "Rotate tires at 20000-mile intervals; check alignment within 1000 miles after rotation.", "entities": [], "numbers": ["20000", "1000"], "domain": "procedural"}
+{"text": "Inspect brake pads quarterly; replace when thickness drops below 3mm safety threshold.", "entities": [], "numbers": ["3mm"], "domain": "procedural"}
+{"text": "Flush transmission fluid every 40000 miles; change spark plugs at 50000-mile intervals.", "entities": [], "numbers": ["40000", "50000"], "domain": "procedural"}
+{"text": "Top off coolant levels before 5-hour road trip; verify hose connections are properly tightened.", "entities": [], "numbers": ["5"], "domain": "procedural"}
+{"text": "Mount 4 new tires and balance each to within 2 ounces; test drive for 3 miles.", "entities": [], "numbers": ["4", "2", "3"], "domain": "procedural"}
+{"text": "Reseal concrete driveway every 2 years; apply 3 thin coats rather than single thick coat.", "entities": [], "numbers": ["2", "3"], "domain": "procedural"}
+{"text": "Replace weatherstripping on 8 windows and 2 doors; test seal with candle flame method.", "entities": [], "numbers": ["8", "2"], "domain": "procedural"}
+{"text": "Caulk gaps wider than 0.5 inches using acrylic latex; smooth with wet finger immediately.", "entities": [], "numbers": ["0.5"], "domain": "procedural"}
+{"text": "Inspect roof for damage after storms; clear gutters within 48 hours to prevent backups.", "entities": [], "numbers": ["48"], "domain": "procedural"}
+{"text": "Drain and flush radiator every 3 years; replace thermostat when temperature fluctuates wildly.", "entities": [], "numbers": ["3"], "domain": "procedural"}
+{"text": "Schedule 8 laboratory tests spanning 10 pages of protocols across 5 different technicians.", "entities": [], "numbers": ["8", "10", "5"], "domain": "procedural"}
+{"text": "Prepare reagent solution at 0.1M concentration using 250ml volumetric flask and deionized water.", "entities": [], "numbers": ["0.1M", "250ml"], "domain": "procedural"}
+{"text": "Centrifuge samples at 3000 RPM for 10 minutes; collect supernatant avoiding pellet contact.", "entities": [], "numbers": ["3000", "10"], "domain": "procedural"}
+{"text": "Store samples at minus 20 degrees Celsius in 1ml aliquots within sterile cryovial containers.", "entities": [], "numbers": ["20", "1ml"], "domain": "procedural"}
+{"text": "Titrate solution against standard using burette; record 3 replicate measurements within 0.1ml.", "entities": [], "numbers": ["3", "0.1ml"], "domain": "procedural"}
+{"text": "Autoclave glassware at 121°C and 15 psi for 20 minutes to ensure complete sterilization.", "entities": [], "numbers": ["121°C", "15", "20"], "domain": "procedural"}
+{"text": "Mount microscope slide with cover slip; apply 2 drops of immersion oil on objective lens.", "entities": [], "numbers": ["2"], "domain": "procedural"}
+{"text": "Filter solution through 0.22-micron membrane; collect filtrate in sterile collection tubes.", "entities": [], "numbers": ["0.22"], "domain": "procedural"}
+{"text": "Dissolve 50g salt in 200ml hot water; cool completely before adding 3 tablespoons lemon juice.", "entities": [], "numbers": ["50g", "200ml", "3"], "domain": "procedural"}
+{"text": "Crystallize compound at 4°C overnight; harvest crystals by vacuum filtration through fine mesh.", "entities": [], "numbers": ["4°C"], "domain": "procedural"}
+{"text": "Book hotel with refundable rate 30 days before arrival; confirm room type 14 days prior.", "entities": [], "numbers": ["30", "14"], "domain": "procedural"}
+{"text": "Purchase comprehensive travel insurance covering medical costs up to $250000 within 7 days.", "entities": [], "numbers": ["250000", "7"], "domain": "procedural"}
+{"text": "Check visa requirements 60 days ahead; apply 45 days minimum before departure date.", "entities": [], "numbers": ["60", "45"], "domain": "procedural"}
+{"text": "Rent vehicle for 10-day journey; inspect 15 points including tires, wipers, and fluid levels.", "entities": [], "numbers": ["10", "15"], "domain": "procedural"}
+{"text": "Pack luggage distributing weight across 3 bags; keep carry-on under 22 pounds per airline policy.", "entities": [], "numbers": ["3", "22"], "domain": "procedural"}
+{"text": "Verify return flight 24 hours before departure; arrive at airport minimum 2.5 hours early.", "entities": [], "numbers": ["24", "2.5"], "domain": "procedural"}
+{"text": "Exchange currency at 3 airports during layovers; compare rates before each transaction.", "entities": [], "numbers": ["3"], "domain": "procedural"}
+{"text": "Document 8 tourist attractions across 5 neighborhoods; photograph each location from 3 angles.", "entities": [], "numbers": ["8", "5", "3"], "domain": "procedural"}
+{"text": "Plan 12-hour sightseeing itinerary; allocate 1.5 hours per major museum and 30 minutes per landmark.", "entities": [], "numbers": ["12", "1.5", "30"], "domain": "procedural"}
+{"text": "Grease hinges with 2 light applications; wipe excess with dry cloth before drying 30 minutes.", "entities": [], "numbers": ["2", "30"], "domain": "procedural"}
+{"text": "Remove rust using 120-grit sandpaper; apply anti-corrosion coating in 3 thin layers.", "entities": [], "numbers": ["120", "3"], "domain": "procedural"}
+{"text": "Tighten bolts in diagonal pattern using 15mm wrench; verify torque specification with calibrated wrench.", "entities": [], "numbers": ["15mm"], "domain": "procedural"}
+{"text": "Clean bearings with solvent; allow 2-hour evaporation time before relubrication with synthetic oil.", "entities": [], "numbers": ["2"], "domain": "procedural"}
+{"text": "Align equipment using laser level; maximum deviation tolerance 0.5mm over 10-meter span.", "entities": [], "numbers": ["0.5mm", "10"], "domain": "procedural"}
+{"text": "Install 6 shelves using 12 anchors; space shelves 18 inches apart vertically for stability.", "entities": [], "numbers": ["6", "12", "18"], "domain": "procedural"}
+{"text": "Calibrate thermostat against thermometer; adjust setting if difference exceeds 2 degrees.", "entities": [], "numbers": ["2"], "domain": "procedural"}
+{"text": "Test electrical outlet using multimeter; replace if voltage reads below 110V or above 120V.", "entities": [], "numbers": ["110V", "120V"], "domain": "procedural"}
+{"text": "Replace batteries in 8 smoke detectors; test each unit within 1 minute of installation.", "entities": [], "numbers": ["8", "1"], "domain": "procedural"}
+{"text": "Clean drain using baking soda and vinegar; let sit 15 minutes before flushing with hot water.", "entities": [], "numbers": ["15"], "domain": "procedural"}
+{"text": "Seal grout with penetrating sealer; maintain 48-hour cure time before showering or mopping.", "entities": [], "numbers": ["48"], "domain": "procedural"}
+{"text": "Mix concrete to specific water-cement ratio of 0.55; test slump cone reading at 4 inches.", "entities": [], "numbers": ["0.55", "4"], "domain": "procedural"}
+{"text": "Pour foundation using 3 separate pours over 2-week period; allow 7 days cure time each.", "entities": [], "numbers": ["3", "2", "7"], "domain": "procedural"}
+{"text": "Install insulation with R-value 38; staple vapor barrier every 6 inches along studs.", "entities": [], "numbers": ["38", "6"], "domain": "procedural"}
+{"text": "Lay tile with 1/4-inch grout lines; use spacers to maintain consistent width throughout.", "entities": [], "numbers": ["1/4"], "domain": "procedural"}
+{"text": "Measure twice; cut once using miter saw set to 45-degree angle for precise corner joints.", "entities": [], "numbers": ["45"], "domain": "procedural"}
+{"text": "Frame wall using 2x4 studs spaced 16 inches on center; check for plumb every 3 feet.", "entities": [], "numbers": ["2x4", "16", "3"], "domain": "procedural"}
+{"text": "Bake cookies at 350°F for 12 minutes; remove when edges are golden but centers still soft.", "entities": [], "numbers": ["350°F", "12"], "domain": "procedural"}
+{"text": "Simmer sauce for 20 minutes on low heat; stir every 5 minutes to prevent sticking.", "entities": [], "numbers": ["20", "5"], "domain": "procedural"}
+{"text": "Roast vegetables at 425°F for 30 minutes; toss halfway through for even browning.", "entities": [], "numbers": ["425°F", "30"], "domain": "procedural"}
+{"text": "Boil pasta until al dente, approximately 9 minutes; test by tasting a single piece.", "entities": [], "numbers": ["9"], "domain": "procedural"}
+{"text": "Chill dough in refrigerator for 2 hours minimum before rolling out and cutting shapes.", "entities": [], "numbers": ["2"], "domain": "procedural"}
+{"text": "Blend smoothie on high speed for 45 seconds until completely homogeneous without chunks.", "entities": [], "numbers": ["45"], "domain": "procedural"}
+{"text": "Crisp bacon in skillet over medium-high heat for 8 minutes; drain on paper towels.", "entities": [], "numbers": ["8"], "domain": "procedural"}
+{"text": "Deglaze pan with 0.5 cups white wine; scrape browned bits and reduce by half.", "entities": [], "numbers": ["0.5"], "domain": "procedural"}
+{"text": "Zest 2 lemons and 1 lime; reserve juice in separate container for later use.", "entities": [], "numbers": ["2", "1"], "domain": "procedural"}
+{"text": "Portion salmon fillets into 150g servings; vacuum-seal and freeze up to 3 months.", "entities": [], "numbers": ["150g", "3"], "domain": "procedural"}
+{"text": "Weigh flour using digital scale; measure exactly 250g for consistent bread results.", "entities": [], "numbers": ["250g"], "domain": "procedural"}
+{"text": "Fold egg whites in thirds; incorporate gradually to maintain airiness and volume.", "entities": [], "numbers": ["3"], "domain": "procedural"}
+{"text": "Cure olives in brine solution with 20% salt concentration for minimum 7 days.", "entities": [], "numbers": ["20%", "7"], "domain": "procedural"}
+{"text": "Dry-age beef for 28 days at 35°F in humidity-controlled environment for maximum tenderness.", "entities": [], "numbers": ["28", "35°F"], "domain": "procedural"}
+{"text": "Temper chocolate to 31°C and hold at that temperature while enrobing each truffle.", "entities": [], "numbers": ["31°C"], "domain": "procedural"}
+{"text": "Clarify butter by heating slowly; skim milk solids after 10 minutes of gentle simmering.", "entities": [], "numbers": ["10"], "domain": "procedural"}
+{"text": "Julienne vegetables into 3mm sticks using mandoline; keep blade 2mm from fingertips.", "entities": [], "numbers": ["3mm", "2mm"], "domain": "procedural"}
+{"text": "Brunoise dice must be exactly 3mm cubes; practice technique to achieve consistency.", "entities": [], "numbers": ["3mm"], "domain": "procedural"}
+{"text": "Make roux using equal parts butter and flour; cook 2 minutes while stirring constantly.", "entities": [], "numbers": ["2"], "domain": "procedural"}
+{"text": "Reduce sauce by 75% of original volume to concentrate flavors and achieve proper thickness.", "entities": [], "numbers": ["75%"], "domain": "procedural"}
+{"text": "Sous vide steak at 54°C for 1.5 hours; finish with 90-second sear on cast iron.", "entities": [], "numbers": ["54°C", "1.5", "90"], "domain": "procedural"}
+{"text": "Smoke brisket at 225°F for 12 hours; wrap in foil when internal temperature reaches 165°F.", "entities": [], "numbers": ["225°F", "12", "165°F"], "domain": "procedural"}
+{"text": "Braise short ribs at 325°F for 3.5 hours until meat falls apart with gentle pressure.", "entities": [], "numbers": ["325°F", "3.5"], "domain": "procedural"}
+{"text": "Deep-fry food at 350°F using oil thermometer; maintain temperature within 5-degree margin.", "entities": [], "numbers": ["350°F", "5"], "domain": "procedural"}
+{"text": "Poach eggs in 180°F water for exactly 3.5 minutes for runny yolk and set whites.", "entities": [], "numbers": ["180°F", "3.5"], "domain": "procedural"}
+{"text": "Sauté vegetables over high heat; add cold butter only after pan temperature drops slightly.", "entities": [], "numbers": [], "domain": "procedural"}
+{"text": "Hydrate dried mushrooms in 2 cups hot water for 30 minutes; strain and reserve liquid.", "entities": [], "numbers": ["2", "30"], "domain": "procedural"}
+{"text": "Pickle vegetables using 5% salt brine solution; pack into sterilized jars with spices.", "entities": [], "numbers": ["5%"], "domain": "procedural"}
+{"text": "Candy citrus peel by simmering in sugar solution for 1 hour; coat with 1:1 sugar-salt.", "entities": [], "numbers": ["1", "1:1"], "domain": "procedural"}
+{"text": "Emulsify mayonnaise by whisking oil into yolk at 1 teaspoon per 10 seconds initially.", "entities": [], "numbers": ["1", "10"], "domain": "procedural"}
+{"text": "Adjust git repository history by rebasing 5 commits; squash trivial fixes into logical chunks.", "entities": ["git"], "numbers": ["5"], "domain": "procedural"}
+{"text": "Deploy feature flags to 10% of users; monitor metrics for 24 hours before 50% rollout.", "entities": [], "numbers": ["10%", "24", "50%"], "domain": "procedural"}
+{"text": "Optimize database query by adding composite index on 3 columns with highest selectivity.", "entities": [], "numbers": ["3"], "domain": "procedural"}
+{"text": "Mock 15 external API calls in unit test suite; verify behavior under 8 failure scenarios.", "entities": [], "numbers": ["15", "8"], "domain": "procedural"}
+{"text": "Cache responses for 1 hour using Redis with automatic invalidation on 5 trigger events.", "entities": ["Redis"], "numbers": ["1", "5"], "domain": "procedural"}
+{"text": "Implement retry logic with exponential backoff starting at 100ms up to 30-second maximum.", "entities": [], "numbers": ["100ms", "30"], "domain": "procedural"}
+{"text": "Compress images using WebP format; reduce file size by minimum 40% while maintaining quality.", "entities": ["WebP"], "numbers": ["40%"], "domain": "procedural"}
+{"text": "Paginate API responses returning 20 items per page with cursor-based navigation.", "entities": [], "numbers": ["20"], "domain": "procedural"}
+{"text": "Implement CORS headers allowing requests from 3 whitelisted domains only for security.", "entities": ["CORS"], "numbers": ["3"], "domain": "procedural"}
+{"text": "Generate JWT tokens with 15-minute expiration; refresh using separate 7-day refresh token.", "entities": ["JWT"], "numbers": ["15", "7"], "domain": "procedural"}
+{"text": "Monitor database connection pool using 8 concurrent connections; scale to 16 under load.", "entities": [], "numbers": ["8", "16"], "domain": "procedural"}
+{"text": "Benchmark application performance against 3 different datasets each containing 100000 records.", "entities": [], "numbers": ["3", "100000"], "domain": "procedural"}
+{"text": "Document API using OpenAPI 3.0 specification; generate interactive documentation site.", "entities": ["OpenAPI"], "numbers": ["3.0"], "domain": "procedural"}
+{"text": "Validate input data against JSON schema with 12 required fields and 8 optional properties.", "entities": ["JSON"], "numbers": ["12", "8"], "domain": "procedural"}
+{"text": "Schedule database maintenance window every Sunday at 2 AM UTC; expected downtime 20 minutes.", "entities": ["UTC"], "numbers": ["2", "20"], "domain": "procedural"}
+{"text": "Enable GZIP compression for responses larger than 1KB; reduce bandwidth consumption by 60%.", "entities": ["GZIP"], "numbers": ["1KB", "60%"], "domain": "procedural"}
+{"text": "Configure CloudFront distribution with 4 regional edge locations and 24-hour TTL.", "entities": ["CloudFront"], "numbers": ["4", "24"], "domain": "procedural"}
+{"text": "Set up automated database backups running 6 times daily with 15-day retention policy.", "entities": [], "numbers": ["6", "15"], "domain": "procedural"}
+{"text": "Run synthetic health checks every 5 minutes simulating 3 user scenarios across 2 regions.", "entities": [], "numbers": ["5", "3", "2"], "domain": "procedural"}
+{"text": "Consolidate logs from 12 services into single repository; retain 90 days of searchable history.", "entities": [], "numbers": ["12", "90"], "domain": "procedural"}
+{"text": "Implement circuit breaker pattern with 50-request per minute threshold before temporary disconnect.", "entities": [], "numbers": ["50"], "domain": "procedural"}
+{"text": "Set up service mesh with 25 microservices; manage traffic policies across 5 namespaces.", "entities": [], "numbers": ["25", "5"], "domain": "procedural"}
+{"text": "Enforce rate limiting of 1000 requests per hour per IP address using token bucket algorithm.", "entities": [], "numbers": ["1000"], "domain": "procedural"}
+{"text": "Validate SSL certificate expiration date; renew minimum 30 days before expiry date.", "entities": ["SSL"], "numbers": ["30"], "domain": "procedural"}
+{"text": "Segment users into 5 cohorts based on behavioral patterns; analyze conversion rates separately.", "entities": [], "numbers": ["5"], "domain": "procedural"}
+{"text": "Launch A/B test with 50% traffic to variant; measure uplift with 95% statistical confidence.", "entities": [], "numbers": ["50%", "95%"], "domain": "procedural"}
+{"text": "Migrate 20 legacy APIs to new GraphQL endpoint; deprecate old versions after 6-month period.", "entities": ["GraphQL"], "numbers": ["20", "6"], "domain": "procedural"}
+{"text": "Implement sagas pattern for 8 distributed transactions; handle rollback across 3 services.", "entities": [], "numbers": ["8", "3"], "domain": "procedural"}
+{"text": "Provision Kubernetes cluster with 10 nodes; set resource quotas limiting 2 pods per node.", "entities": ["Kubernetes"], "numbers": ["10", "2"], "domain": "procedural"}
+{"text": "Roll out canary deployment to 5% traffic; observe error rates and latency for 30 minutes.", "entities": [], "numbers": ["5%", "30"], "domain": "procedural"}
+{"text": "Perform chaos engineering experiment injecting 10% packet loss; measure system resilience.", "entities": [], "numbers": ["10%"], "domain": "procedural"}
+{"text": "Archive cold data older than 1 year to cheaper storage tier; maintain 5-minute access SLA.", "entities": [], "numbers": ["1", "5"], "domain": "procedural"}
+{"text": "Implement data masking for 4 PII fields in production database; use reversible encryption.", "entities": ["PII"], "numbers": ["4"], "domain": "procedural"}
+{"text": "Run security scanning tool on 50 dependencies; address critical vulnerabilities within 7 days.", "entities": [], "numbers": ["50", "7"], "domain": "procedural"}
+{"text": "Audit access logs for 3 months; identify and remediate 12 suspicious authentication patterns.", "entities": [], "numbers": ["3", "12"], "domain": "procedural"}
+{"text": "Configure distributed tracing capturing 10% of requests; store traces for 7 days minimum.", "entities": [], "numbers": ["10%", "7"], "domain": "procedural"}
+{"text": "Apply database encryption at rest using 256-bit AES cipher; rotate keys annually.", "entities": ["AES"], "numbers": ["256"], "domain": "procedural"}
+{"text": "Implement observability dashboards tracking 50 metrics across 6 service components.", "entities": [], "numbers": ["50", "6"], "domain": "procedural"}
+{"text": "Threshold alerting configured at 2 standard deviations above 7-day baseline metric.", "entities": [], "numbers": ["2", "7"], "domain": "procedural"}
+{"text": "Troubleshoot database deadlock by reviewing 15-second timeline of 8 concurrent transactions.", "entities": [], "numbers": ["15", "8"], "domain": "procedural"}
+{"text": "Profile application CPU usage using 100ms sampling interval; identify top 5 hot methods.", "entities": [], "numbers": ["100ms", "5"], "domain": "procedural"}
+{"text": "Implement feature gate disabled by default; enable for 1% of requests initially for testing.", "entities": [], "numbers": ["1%"], "domain": "procedural"}
+{"text": "Configure SAML integration with 3 identity providers; test SSO flow with 10 test accounts.", "entities": ["SAML", "SSO"], "numbers": ["3", "10"], "domain": "procedural"}
+{"text": "Establish disaster recovery runbook with 15-minute RTO and 1-hour RPO targets.", "entities": [], "numbers": ["15", "1"], "domain": "procedural"}
+{"text": "Schedule quarterly security drills simulating 4 attack scenarios across 2 data centers.", "entities": [], "numbers": ["4", "2"], "domain": "procedural"}
+{"text": "Implement client-side rate limiting using 3-second debounce on input field changes.", "entities": [], "numbers": ["3"], "domain": "procedural"}
+{"text": "Measure API gateway response time percentiles: 50th, 95th, 99th across 10 endpoints.", "entities": [], "numbers": ["50", "95", "99", "10"], "domain": "procedural"}
+{"text": "Coordinate cloud migration spanning 8 weeks; phase 3 applications per week sequentially.", "entities": [], "numbers": ["8", "3"], "domain": "procedural"}
+{"text": "Build data pipeline ingesting 5TB daily; transform and load into data warehouse nightly.", "entities": [], "numbers": ["5TB"], "domain": "procedural"}
+{"text": "Configure webhook retry logic with exponential backoff: 100ms, 1s, 10s, 100s intervals.", "entities": [], "numbers": ["100ms", "1s", "10s", "100s"], "domain": "procedural"}
+{"text": "Manage multi-tenant architecture isolating data for 100 clients using row-level security.", "entities": [], "numbers": ["100"], "domain": "procedural"}
+{"text": "Implement progressive web app with offline support; cache 50MB of static assets locally.", "entities": [], "numbers": ["50MB"], "domain": "procedural"}
+{"text": "Scale horizontally from 2 instances to 8 instances during peak hours; baseline return 2.", "entities": [], "numbers": ["2", "8", "2"], "domain": "procedural"}
+{"text": "Perform zero-downtime deployment using blue-green strategy; health-check within 2 minutes.", "entities": [], "numbers": ["2"], "domain": "procedural"}
+{"text": "Monitor queue depth; trigger autoscaling when queue size exceeds 10000 messages.", "entities": [], "numbers": ["10000"], "domain": "procedural"}
+{"text": "Implement circuit breaker reopening after 30 seconds of successful requests.", "entities": [], "numbers": ["30"], "domain": "procedural"}
+{"text": "Log all API requests with 250-character request body limit; retain logs 365 days.", "entities": [], "numbers": ["250", "365"], "domain": "procedural"}
+{"text": "Implement request deduplication using idempotency keys; cache responses for 24 hours.", "entities": [], "numbers": ["24"], "domain": "procedural"}
+{"text": "Provision SSL/TLS certificate with 256-bit encryption for 5 domain aliases.", "entities": ["SSL", "TLS"], "numbers": ["256", "5"], "domain": "procedural"}
+{"text": "Establish SLO of 99.9% availability across 30-day measurement window.", "entities": [], "numbers": ["99.9%", "30"], "domain": "procedural"}

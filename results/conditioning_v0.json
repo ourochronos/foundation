@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-07-22T20:02:12.946241+00:00",
+  "n": 120,
+  "rows": [
+    {
+      "n": 120,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.11764705882352941,
+      "n_entities": 153,
+      "number_em": 0.18248175182481752,
+      "number_em_relaxed": 0.18248175182481752,
+      "n_numbers": 274,
+      "condition": "sigma=0.0",
+      "latent_cos": 1.0
+    },
+    {
+      "n": 120,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.1111111111111111,
+      "n_entities": 153,
+      "number_em": 0.17518248175182483,
+      "number_em_relaxed": 0.17518248175182483,
+      "n_numbers": 274,
+      "condition": "sigma=0.25",
+      "latent_cos": 0.9701425001453319
+    },
+    {
+      "n": 120,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.1111111111111111,
+      "n_entities": 153,
+      "number_em": 0.17153284671532848,
+      "number_em_relaxed": 0.17153284671532848,
+      "n_numbers": 274,
+      "condition": "sigma=0.5",
+      "latent_cos": 0.8944271909999159
+    },
+    {
+      "n": 120,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.0915032679738562,
+      "n_entities": 153,
+      "number_em": 0.13138686131386862,
+      "number_em_relaxed": 0.13138686131386862,
+      "n_numbers": 274,
+      "condition": "sigma=1.0",
+      "latent_cos": 0.7071067811865475
+    },
+    {
+      "n": 120,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.0196078431372549,
+      "n_entities": 153,
+      "number_em": 0.06204379562043796,
+      "number_em_relaxed": 0.06204379562043796,
+      "n_numbers": 274,
+      "condition": "sigma=2.0",
+      "latent_cos": 0.4472135954999579
+    },
+    {
+      "n": 120,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.0,
+      "n_entities": 153,
+      "number_em": 0.0364963503649635,
+      "number_em_relaxed": 0.0364963503649635,
+      "n_numbers": 274,
+      "condition": "sigma=4.0",
+      "latent_cos": 0.24253562503633297
+    },
+    {
+      "n": 120,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.0,
+      "n_entities": 153,
+      "number_em": 0.029197080291970802,
+      "number_em_relaxed": 0.029197080291970802,
+      "n_numbers": 274,
+      "condition": "shuffled"
+    },
+    {
+      "n": 120,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.0,
+      "n_entities": 153,
+      "number_em": 0.01824817518248175,
+      "number_em_relaxed": 0.01824817518248175,
+      "n_numbers": 274,
+      "condition": "random"
+    }
+  ],
+  "cycle": {
+    "sigma=0.0": {
+      "cycle_cos_mean": 0.46719270944595337,
+      "cycle_cos_median": 0.46700018644332886,
+      "cycle_cos_p10": 0.2590946555137634
+    },
+    "shuffled": {
+      "cycle_cos_mean": -0.008923400193452835,
+      "cycle_cos_median": -0.016196245327591896,
+      "cycle_cos_p10": -0.06165870279073715
+    }
+  },
+  "verdict": "CONDITIONING CONFIRMED"
+}

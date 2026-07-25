@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-07-22T21:06:08.532581+00:00",
+  "args": {
+    "cpu": false,
+    "steps": 1500,
+    "bs": 128,
+    "lr": 0.0001,
+    "w_geom": 1.0,
+    "m_invert": 0.5,
+    "m_preserve": 0.9
+  },
+  "per_relation": [
+    {
+      "relation": "active_passive",
+      "role": "train-preserve",
+      "before": 0.9462082982063293,
+      "after": 0.9456804990768433,
+      "delta": -0.000527799129486084
+    },
+    {
+      "relation": "argument_swap",
+      "role": "train-invert",
+      "before": 0.9715248346328735,
+      "after": 0.614453911781311,
+      "delta": -0.3570709228515625
+    },
+    {
+      "relation": "causal_reverse",
+      "role": "HELD-OUT",
+      "before": 0.9366565346717834,
+      "after": 0.9405879974365234,
+      "delta": 0.00393146276473999
+    },
+    {
+      "relation": "comparative_flip",
+      "role": "train-invert",
+      "before": 0.8544349670410156,
+      "after": 0.33887436985969543,
+      "delta": -0.5155605971813202
+    },
+    {
+      "relation": "hedge",
+      "role": "HELD-OUT",
+      "before": 0.9015641212463379,
+      "after": 0.8973507285118103,
+      "delta": -0.004213392734527588
+    },
+    {
+      "relation": "negation",
+      "role": "train-invert",
+      "before": 0.7336744070053101,
+      "after": 0.24885916709899902,
+      "delta": -0.48481523990631104
+    },
+    {
+      "relation": "quantity_double",
+      "role": "HELD-OUT",
+      "before": 0.8596528172492981,
+      "after": 0.8775721192359924,
+      "delta": 0.017919301986694336
+    },
+    {
+      "relation": "tense_shift",
+      "role": "HELD-OUT",
+      "before": 0.8920038938522339,
+      "after": 0.8851607441902161,
+      "delta": -0.006843149662017822
+    }
+  ],
+  "knn_overlap": 0.4573333333333333,
+  "spearman": 0.49577295085944,
+  "mean_trained_invert": 0.40072914958000183,
+  "mean_heldout_invert": 0.9011069536209106,
+  "mean_preserve": 0.9456804990768433,
+  "generalizes": false
+}

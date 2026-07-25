@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-07-22T22:17:32.631348+00:00",
+  "args": {
+    "steps": 700,
+    "bs": 8,
+    "accum": 4,
+    "fractions": [
+      0.125,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "n_eval": 150,
+    "sigma_max": 0.4,
+    "max_len": 64
+  },
+  "curve": [
+    {
+      "fraction": 0.125,
+      "n_train": 1183,
+      "final_loss": 0.009347414951771498,
+      "eval": {
+        "n": 150,
+        "exact_text_rate": 0.0,
+        "entity_em": 0.023529411764705882,
+        "n_entities": 170,
+        "number_em": 0.0830860534124629,
+        "number_em_relaxed": 0.08605341246290801,
+        "n_numbers": 337
+      },
+      "train": {
+        "n": 100,
+        "exact_text_rate": 1.0,
+        "entity_em": 1.0,
+        "n_entities": 117,
+        "number_em": 1.0,
+        "number_em_relaxed": 1.0,
+        "n_numbers": 203
+      },
+      "gap_entity": 0.9764705882352941
+    },
+    {
+      "fraction": 0.25,
+      "n_train": 2366,
+      "final_loss": 0.10370709300041199,
+      "eval": {
+        "n": 150,
+        "exact_text_rate": 0.0,
+        "entity_em": 0.058823529411764705,
+        "n_entities": 170,
+        "number_em": 0.05934718100890208,
+        "number_em_relaxed": 0.05934718100890208,
+        "n_numbers": 337
+      },
+      "train": {
+        "n": 100,
+        "exact_text_rate": 0.7,
+        "entity_em": 0.9829059829059829,
+        "n_entities": 117,
+        "number_em": 0.7980295566502463,
+        "number_em_relaxed": 0.7980295566502463,
+        "n_numbers": 203
+      },
+      "gap_entity": 0.9240824534942181
+    },
+    {
+      "fraction": 0.5,
+      "n_train": 4732,
+      "final_loss": 0.8121132117509842,
+      "eval": {
+        "n": 150,
+        "exact_text_rate": 0.0,
+        "entity_em": 0.1,
+        "n_entities": 170,
+        "number_em": 0.09792284866468842,
+        "number_em_relaxed": 0.10089020771513353,
+        "n_numbers": 337
+      },
+      "train": {
+        "n": 100,
+        "exact_text_rate": 0.02,
+        "entity_em": 0.46153846153846156,
+        "n_entities": 117,
+        "number_em": 0.16748768472906403,
+        "number_em_relaxed": 0.16748768472906403,
+        "n_numbers": 203
+      },
+      "gap_entity": 0.3615384615384616
+    },
+    {
+      "fraction": 1.0,
+      "n_train": 9465,
+      "final_loss": 0.9979993468523025,
+      "eval": {
+        "n": 150,
+        "exact_text_rate": 0.0,
+        "entity_em": 0.12352941176470589,
+        "n_entities": 170,
+        "number_em": 0.19881305637982197,
+        "number_em_relaxed": 0.20178041543026706,
+        "n_numbers": 337
+      },
+      "train": {
+        "n": 100,
+        "exact_text_rate": 0.0,
+        "entity_em": 0.38461538461538464,
+        "n_entities": 117,
+        "number_em": 0.26108374384236455,
+        "number_em_relaxed": 0.2660098522167488,
+        "n_numbers": 203
+      },
+      "gap_entity": 0.26108597285067875
+    }
+  ],
+  "verdict": "RISING \u2014 more data helps, consistent with D10"
+}

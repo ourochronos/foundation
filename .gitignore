@@ -1,0 +1,34 @@
+# environments & toolchains (rebuild: python -m venv .venv && pip install ...)
+.venv/
+__pycache__/
+*.pyc
+
+# local model weights & the llama.cpp fork (external; see README)
+models/
+llama.cpp/
+
+# trained checkpoints — rebuildable via the scripts/ cascade (docs/06-state.md)
+checkpoints/
+
+# heavy deterministic caches — every one rebuilds from data/ via the cascade;
+# self-invalidating (whitener fingerprints / text-list keys), so regenerating
+# is always safe. Small space-DEFINING artifacts (whiten_v0.npz, amp
+# subspaces) and all results/*.json ARE tracked: they carry the measured
+# numbers behind decisions.md.
+results/token_vecs.npz
+results/dense_v0.npy
+results/prop_relation_emb.npz
+results/relation_emb_v0.npz
+results/s_vecs_v0.npy
+results/snapshot_10k/*.npy
+results/snapshot_10k/*.npz
+results/snapshot_10k/*.jsonl
+results/snapshot_10k/decoder_v0/
+results/snapshot_10k/struct_pooler_v2.pt
+
+# HF / tool caches
+.cache/
+results/snapshot_10k/sparse_v0.json
+
+# transient run logs
+*.log

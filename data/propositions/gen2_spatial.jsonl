@@ -1,0 +1,250 @@
+{"text": "Vetterby lies 14 km northeast of the Halloran Escarpment, 320 meters below the plateau rim.", "entities": ["Vetterby", "Halloran Escarpment"], "numbers": ["14 km", "320 meters"], "domain": "spatial"}
+{"text": "The Tremaine Clock Tower stands 87 meters tall in the center of Oldwick Square.", "entities": ["Tremaine Clock Tower", "Oldwick Square"], "numbers": ["87 meters"], "domain": "spatial"}
+{"text": "Silverpine Forest extends 23 km from the Northgate Ridge westward to the Clearwater River delta.", "entities": ["Silverpine Forest", "Northgate Ridge", "Clearwater River"], "numbers": ["23 km"], "domain": "spatial"}
+{"text": "The subterranean city of Deepholm lies 450 meters beneath Mount Veridian.", "entities": ["Deepholm", "Mount Veridian"], "numbers": ["450 meters"], "domain": "spatial"}
+{"text": "Brackstone Harbor opens to the eastern shore, 8 km south of Cape Morrigan.", "entities": ["Brackstone Harbor", "Cape Morrigan"], "numbers": ["8 km"], "domain": "spatial"}
+{"text": "The Obsidian Corridor spans 156 meters between the twin towers of Callimex.", "entities": ["Obsidian Corridor", "Callimex"], "numbers": ["156 meters"], "domain": "spatial"}
+{"text": "Ravensholm overlooks the Mistwood Valley from an elevation of 724 meters.", "entities": ["Ravensholm", "Mistwood Valley"], "numbers": ["724 meters"], "domain": "spatial"}
+{"text": "The Phantom Desert stretches 340 km north from the Scorpion Gate to the Pale Mountains.", "entities": ["Phantom Desert", "Scorpion Gate", "Pale Mountains"], "numbers": ["340 km"], "domain": "spatial"}
+{"text": "Millbrook Station occupies 12,000 square meters of the Tanglewood Estate.", "entities": ["Millbrook Station", "Tanglewood Estate"], "numbers": ["12,000 square meters"], "domain": "spatial"}
+{"text": "The Starlight Archive lies 2.3 km beneath the surface of Crescent City.", "entities": ["Starlight Archive", "Crescent City"], "numbers": ["2.3 km"], "domain": "spatial"}
+{"text": "Westmarch borders Eastmarch along a 156 km frontier marked by the Silverstone River.", "entities": ["Westmarch", "Eastmarch", "Silverstone River"], "numbers": ["156 km"], "domain": "spatial"}
+{"text": "The Thornwick Bridge connects Oldport to the Isle of Grenholm, spanning 340 meters.", "entities": ["Thornwick Bridge", "Oldport", "Isle of Grenholm"], "numbers": ["340 meters"], "domain": "spatial"}
+{"text": "Felixmoor Academy occupies a hilltop 178 meters above the surrounding Greenwood Valley.", "entities": ["Felixmoor Academy", "Greenwood Valley"], "numbers": ["178 meters"], "domain": "spatial"}
+{"text": "The Void Chasm opens beneath Stonequarry Township, descending 2,847 meters into darkness.", "entities": ["Void Chasm", "Stonequarry Township"], "numbers": ["2,847 meters"], "domain": "spatial"}
+{"text": "Hearthstone Cottage sits in the Westfield Marshlands, 15 km from the nearest road.", "entities": ["Hearthstone Cottage", "Westfield Marshlands"], "numbers": ["15 km"], "domain": "spatial"}
+{"text": "The Aurora Peaks rise 5,234 meters above sea level in the Silverhorn Range.", "entities": ["Aurora Peaks", "Silverhorn Range"], "numbers": ["5,234 meters"], "domain": "spatial"}
+{"text": "Duskwater Lake measures 42 km across at its widest point, bordered by Pinewood and Mossbrook settlements.", "entities": ["Duskwater Lake", "Pinewood", "Mossbrook"], "numbers": ["42 km"], "domain": "spatial"}
+{"text": "The Hidden Gallery extends 380 meters through the bedrock beneath Merchantown.", "entities": ["Hidden Gallery", "Merchantown"], "numbers": ["380 meters"], "domain": "spatial"}
+{"text": "Starfall Crater spans 18 km in diameter on the moon Callisto VII.", "entities": ["Starfall Crater", "Callisto VII"], "numbers": ["18 km"], "domain": "spatial"}
+{"text": "The Crimson Corridor runs 2,100 meters south from Crimson Gate to the Palace Square of Valorian.", "entities": ["Crimson Corridor", "Crimson Gate", "Palace Square", "Valorian"], "numbers": ["2,100 meters"], "domain": "spatial"}
+{"text": "Blackthorn Manor overlooks Raven's Hollow from 312 meters above the valley floor.", "entities": ["Blackthorn Manor", "Raven's Hollow"], "numbers": ["312 meters"], "domain": "spatial"}
+{"text": "The Luminous Canyon stretches 267 km between Mount Farthel and the Starborne Plateaus.", "entities": ["Luminous Canyon", "Mount Farthel", "Starborne Plateaus"], "numbers": ["267 km"], "domain": "spatial"}
+{"text": "Ironkeep Fortress stands on the northern border of Steelmark Province, 89 meters tall.", "entities": ["Ironkeep Fortress", "Steelmark Province"], "numbers": ["89 meters"], "domain": "spatial"}
+{"text": "The Whispering Grotto lies 1,256 meters beneath Limestone Peak in the Harrow Mountains.", "entities": ["Whispering Grotto", "Limestone Peak", "Harrow Mountains"], "numbers": ["1,256 meters"], "domain": "spatial"}
+{"text": "Sunridge Town extends 8 km along the Aurion River's eastern bank.", "entities": ["Sunridge Town", "Aurion River"], "numbers": ["8 km"], "domain": "spatial"}
+{"text": "The Obsidian Tower rises 234 meters from the center of Darkholm City's market district.", "entities": ["Obsidian Tower", "Darkholm City"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Northreach Peninsula juts 67 km into the Cloudless Sea between Grayport and Winterhold.", "entities": ["Northreach Peninsula", "Cloudless Sea", "Grayport", "Winterhold"], "numbers": ["67 km"], "domain": "spatial"}
+{"text": "The Emerald Gardens occupy 45 hectares within the walled district of Fayhollow.", "entities": ["Emerald Gardens", "Fayhollow"], "numbers": ["45 hectares"], "domain": "spatial"}
+{"text": "Stormwatch Keep overlooks the Tempest Strait from a clifftop 523 meters high.", "entities": ["Stormwatch Keep", "Tempest Strait"], "numbers": ["523 meters"], "domain": "spatial"}
+{"text": "The Midnight Aqueduct carries water 134 km from Springmere Lake to Dusthaven Colony.", "entities": ["Midnight Aqueduct", "Springmere Lake", "Dusthaven Colony"], "numbers": ["134 km"], "domain": "spatial"}
+{"text": "Glimmersand Beach curves 12 km along the coastline between Cape Solace and Rocky Point.", "entities": ["Glimmersand Beach", "Cape Solace", "Rocky Point"], "numbers": ["12 km"], "domain": "spatial"}
+{"text": "The Starless Cavern opens 876 meters beneath the city of Moonhaven.", "entities": ["Starless Cavern", "Moonhaven"], "numbers": ["876 meters"], "domain": "spatial"}
+{"text": "Silvercrest Ridge rises 3,456 meters above the Ashwood Plain.", "entities": ["Silvercrest Ridge", "Ashwood Plain"], "numbers": ["3,456 meters"], "domain": "spatial"}
+{"text": "The Twilight Bridge spans 267 meters above the Shadowfell River near Thornwick.", "entities": ["Twilight Bridge", "Shadowfell River", "Thornwick"], "numbers": ["267 meters"], "domain": "spatial"}
+{"text": "Wanderglen Valley stretches 98 km from the Frostpeak Mountains to the Verdant Lowlands.", "entities": ["Wanderglen Valley", "Frostpeak Mountains", "Verdant Lowlands"], "numbers": ["98 km"], "domain": "spatial"}
+{"text": "The Adamant Keep sits 2,134 meters above sea level on the Crown of Kharthel.", "entities": ["Adamant Keep", "Crown of Kharthel"], "numbers": ["2,134 meters"], "domain": "spatial"}
+{"text": "Eastwick Harbor lies 23 km southeast of Highcastle, nestled in the Sapphire Inlet.", "entities": ["Eastwick Harbor", "Highcastle", "Sapphire Inlet"], "numbers": ["23 km"], "domain": "spatial"}
+{"text": "The Echoing Halls extend 521 meters through the interior of Mount Resonance.", "entities": ["Echoing Halls", "Mount Resonance"], "numbers": ["521 meters"], "domain": "spatial"}
+{"text": "Stonebrook Village occupies a hilltop 267 meters above the Brookwell Marshlands.", "entities": ["Stonebrook Village", "Brookwell Marshlands"], "numbers": ["267 meters"], "domain": "spatial"}
+{"text": "The Infinite Library stands in the center of Loreholm, a city of 50,000 inhabitants.", "entities": ["Infinite Library", "Loreholm"], "numbers": ["50,000"], "domain": "spatial"}
+{"text": "Northwall Peninsula extends 156 km into the Frosted Sea beyond Winterbeach.", "entities": ["Northwall Peninsula", "Frosted Sea", "Winterbeach"], "numbers": ["156 km"], "domain": "spatial"}
+{"text": "The Rusted Vault descends 1,234 meters into the abandoned mines beneath Ironhold.", "entities": ["Rusted Vault", "Ironhold"], "numbers": ["1,234 meters"], "domain": "spatial"}
+{"text": "Willowmere Lake measures 31 km in length, bordered by Fernwood Forest on three sides.", "entities": ["Willowmere Lake", "Fernwood Forest"], "numbers": ["31 km"], "domain": "spatial"}
+{"text": "The Sunlit Cavern sits 89 meters below Crystalline Peak within the Gemstone Quarry.", "entities": ["Sunlit Cavern", "Crystalline Peak", "Gemstone Quarry"], "numbers": ["89 meters"], "domain": "spatial"}
+{"text": "Goldenhaven lies 45 km northeast of the Obsidian Desert's western edge.", "entities": ["Goldenhaven", "Obsidian Desert"], "numbers": ["45 km"], "domain": "spatial"}
+{"text": "The Grand Canal of Waterfront City extends 8.5 km through its historic center.", "entities": ["Grand Canal", "Waterfront City"], "numbers": ["8.5 km"], "domain": "spatial"}
+{"text": "Stormcrest Mountain rises 4,678 meters above the Windward Valley below.", "entities": ["Stormcrest Mountain", "Windward Valley"], "numbers": ["4,678 meters"], "domain": "spatial"}
+{"text": "The Hidden Temple lies 567 meters beneath Hollowstone Village in a sealed underground chamber.", "entities": ["Hidden Temple", "Hollowstone Village"], "numbers": ["567 meters"], "domain": "spatial"}
+{"text": "Mistholm Region spans 2,500 square kilometers between the Ironwood Forest and Ashfall Wastes.", "entities": ["Mistholm Region", "Ironwood Forest", "Ashfall Wastes"], "numbers": ["2,500 square kilometers"], "domain": "spatial"}
+{"text": "The Floating Palace hovers 234 meters above the ground in the center of Aethermere.", "entities": ["Floating Palace", "Aethermere"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Blackstone Abbey occupies a monastery 312 meters up a narrow mountain pass.", "entities": ["Blackstone Abbey"], "numbers": ["312 meters"], "domain": "spatial"}
+{"text": "The Crystalline Spires reach 145 meters into the sky from the bedrock of Gemhold City.", "entities": ["Crystalline Spires", "Gemhold City"], "numbers": ["145 meters"], "domain": "spatial"}
+{"text": "Northbrook flows 167 km southward before joining the Merridane River at Three Bridges.", "entities": ["Northbrook", "Merridane River", "Three Bridges"], "numbers": ["167 km"], "domain": "spatial"}
+{"text": "The Deepest Well descends 2,456 meters into the bedrock beneath Wellspring Town.", "entities": ["Deepest Well", "Wellspring Town"], "numbers": ["2,456 meters"], "domain": "spatial"}
+{"text": "Silvervale stretches 34 km from the shadow of Sentinel Peak to Clearwater Springs.", "entities": ["Silvervale", "Sentinel Peak", "Clearwater Springs"], "numbers": ["34 km"], "domain": "spatial"}
+{"text": "The Shadowed Fortress stands 89 meters high on Darkhollow Isle, 12 km from the mainland.", "entities": ["Shadowed Fortress", "Darkhollow Isle"], "numbers": ["89 meters", "12 km"], "domain": "spatial"}
+{"text": "Brightwell Village is nestled in a valley 278 meters below the Sunlit Peaks.", "entities": ["Brightwell Village", "Sunlit Peaks"], "numbers": ["278 meters"], "domain": "spatial"}
+{"text": "The Spiral Tower of Nexis City rises 267 meters with 89 floors connecting the districts.", "entities": ["Spiral Tower", "Nexis City"], "numbers": ["267 meters", "89 floors"], "domain": "spatial"}
+{"text": "Midway Station sits exactly 450 km between Westend City and Eastwind Town on the coastal railway.", "entities": ["Midway Station", "Westend City", "Eastwind Town"], "numbers": ["450 km"], "domain": "spatial"}
+{"text": "The Vaulted Library contains 156 chambers spread across 45,000 square meters of floor space.", "entities": ["Vaulted Library"], "numbers": ["156 chambers", "45,000 square meters"], "domain": "spatial"}
+{"text": "Thornfield Valley descends 523 meters from the plateau rim to the river basin.", "entities": ["Thornfield Valley"], "numbers": ["523 meters"], "domain": "spatial"}
+{"text": "The Towering Pines of Greenwood Forest stretch 78 meters tall across 890 hectares.", "entities": ["Towering Pines", "Greenwood Forest"], "numbers": ["78 meters", "890 hectares"], "domain": "spatial"}
+{"text": "Northgate City borders Southmarch Domain along a fortified frontier 234 km in length.", "entities": ["Northgate City", "Southmarch Domain"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Submerged Archive rests 1,234 meters below sea level in the Abyssal Trench near Deepwater Port.", "entities": ["Submerged Archive", "Abyssal Trench", "Deepwater Port"], "numbers": ["1,234 meters"], "domain": "spatial"}
+{"text": "Westridge overlooks Eastbrook from 156 meters above, separated by a 2 km valley.", "entities": ["Westridge", "Eastbrook"], "numbers": ["156 meters", "2 km"], "domain": "spatial"}
+{"text": "The Marbled Hall spans 200 meters in length with a 45-meter-wide central atrium in Palazzo District.", "entities": ["Marbled Hall", "Palazzo District"], "numbers": ["200 meters", "45-meter"], "domain": "spatial"}
+{"text": "Ravenpeak stands 2,890 meters above the Misty Lowlands, visible from 50 km away.", "entities": ["Ravenpeak", "Misty Lowlands"], "numbers": ["2,890 meters", "50 km"], "domain": "spatial"}
+{"text": "The Shadowed Path winds 12 km through the Heart of Darkwood before reaching Ashton.", "entities": ["Shadowed Path", "Darkwood", "Ashton"], "numbers": ["12 km"], "domain": "spatial"}
+{"text": "Silverhood Estate comprises 234 hectares within Northmarch County.", "entities": ["Silverhood Estate", "Northmarch County"], "numbers": ["234 hectares"], "domain": "spatial"}
+{"text": "The Granite Monument rises 34 meters from the plaza of Centerholm, visible for miles around.", "entities": ["Granite Monument", "Centerholm"], "numbers": ["34 meters"], "domain": "spatial"}
+{"text": "Coldwater Gorge cuts 445 meters deep through the Stonewall Highlands for 78 km.", "entities": ["Coldwater Gorge", "Stonewall Highlands"], "numbers": ["445 meters", "78 km"], "domain": "spatial"}
+{"text": "The Tower of Starfall overlooks Nightshade Vale from 567 meters above the valley floor.", "entities": ["Tower of Starfall", "Nightshade Vale"], "numbers": ["567 meters"], "domain": "spatial"}
+{"text": "Verdant Plains extend 234 km from the Emerald Forest to the Crimson Badlands.", "entities": ["Verdant Plains", "Emerald Forest", "Crimson Badlands"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Hidden Spring lies 890 meters beneath Ashenvale Mountain inside a sealed grotto.", "entities": ["Hidden Spring", "Ashenvale Mountain"], "numbers": ["890 meters"], "domain": "spatial"}
+{"text": "Glimmering Heights rises 1,234 meters above the surrounding Silverwood Settlement.", "entities": ["Glimmering Heights", "Silverwood Settlement"], "numbers": ["1,234 meters"], "domain": "spatial"}
+{"text": "The Endless Corridor of Hollowmere Castle stretches 156 meters in absolute darkness.", "entities": ["Endless Corridor", "Hollowmere Castle"], "numbers": ["156 meters"], "domain": "spatial"}
+{"text": "Northhaven lies at latitude 67 degrees north, 234 km from the Arctic Extremity.", "entities": ["Northhaven", "Arctic Extremity"], "numbers": ["67 degrees", "234 km"], "domain": "spatial"}
+{"text": "The Floating Island of Aethermoor hangs 2,145 meters above Lowland Valley, defying gravity itself.", "entities": ["Floating Island", "Aethermoor", "Lowland Valley"], "numbers": ["2,145 meters"], "domain": "spatial"}
+{"text": "Westmarch Province encompasses 45,000 square kilometers bordered by three major mountain ranges.", "entities": ["Westmarch Province"], "numbers": ["45,000 square kilometers"], "domain": "spatial"}
+{"text": "The Cavern of Echoes extends 1,567 meters beneath Thornhollow City in interconnected chambers.", "entities": ["Cavern of Echoes", "Thornhollow City"], "numbers": ["1,567 meters"], "domain": "spatial"}
+{"text": "Sunhaven Beach curves 23 km along the coast between Seacliff and Mariner's Point.", "entities": ["Sunhaven Beach", "Seacliff", "Mariner's Point"], "numbers": ["23 km"], "domain": "spatial"}
+{"text": "The Obsidian Stronghold sits 234 meters above Blackmoor Swamp on a sheer clifftop.", "entities": ["Obsidian Stronghold", "Blackmoor Swamp"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Midland Crossing connects Northshire and Southhire, spanning 45 km of open terrain.", "entities": ["Midland Crossing", "Northshire", "Southhire"], "numbers": ["45 km"], "domain": "spatial"}
+{"text": "The Archives of Elderholm contain 12,000 volumes across 234 shelved chambers underground.", "entities": ["Archives of Elderholm"], "numbers": ["12,000 volumes", "234 chambers"], "domain": "spatial"}
+{"text": "Sapphire Lake measures 56 km in circumference, surrounded by pine forests on all sides.", "entities": ["Sapphire Lake"], "numbers": ["56 km"], "domain": "spatial"}
+{"text": "The Crystalline Tunnel runs 234 meters through the bedrock beneath Crystal Peak.", "entities": ["Crystalline Tunnel", "Crystal Peak"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Northmarch Abbey stands 567 meters above sea level on a remote mountainside.", "entities": ["Northmarch Abbey"], "numbers": ["567 meters"], "domain": "spatial"}
+{"text": "The Jade Gardens of Waterhollow City span 89 hectares in its historic district.", "entities": ["Jade Gardens", "Waterhollow City"], "numbers": ["89 hectares"], "domain": "spatial"}
+{"text": "Stormbringer Peak rises 3,234 meters from the Misty Basin floor, crowned with perpetual clouds.", "entities": ["Stormbringer Peak", "Misty Basin"], "numbers": ["3,234 meters"], "domain": "spatial"}
+{"text": "The Sunken Temple rests 1,234 meters below the surface of Glimmering Lake near Waterdeep.", "entities": ["Sunken Temple", "Glimmering Lake", "Waterdeep"], "numbers": ["1,234 meters"], "domain": "spatial"}
+{"text": "Goldenhall lies 78 km southwest of the Ironpeak Range in sheltered Goldenhall Valley.", "entities": ["Goldenhall", "Ironpeak Range", "Goldenhall Valley"], "numbers": ["78 km"], "domain": "spatial"}
+{"text": "The Grand Foyer of Silverhold Manor measures 67 meters across with a 23-meter ceiling.", "entities": ["Grand Foyer", "Silverhold Manor"], "numbers": ["67 meters", "23-meter"], "domain": "spatial"}
+{"text": "Mistridge Plateau rises 1,567 meters above the Shadowed Lands, stretching 234 km eastward.", "entities": ["Mistridge Plateau", "Shadowed Lands"], "numbers": ["1,567 meters", "234 km"], "domain": "spatial"}
+{"text": "The Hidden Valley of Thornwick lies 45 km inland from Brightwater Coast between cliffsides.", "entities": ["Hidden Valley", "Thornwick", "Brightwater Coast"], "numbers": ["45 km"], "domain": "spatial"}
+{"text": "Windholm Castle overlooks Whisperwind Valley from 345 meters above the valley floor.", "entities": ["Windholm Castle", "Whisperwind Valley"], "numbers": ["345 meters"], "domain": "spatial"}
+{"text": "The Luminescent Caverns extend 2,345 meters deep beneath Mount Starfire in Ravenshollow.", "entities": ["Luminescent Caverns", "Mount Starfire", "Ravenshollow"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Northbrook Stream flows 234 km from Alpine Springs to Rivermouth Harbor.", "entities": ["Northbrook Stream", "Alpine Springs", "Rivermouth Harbor"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Tower of Silence stands 156 meters high in the heart of Voiceless City.", "entities": ["Tower of Silence", "Voiceless City"], "numbers": ["156 meters"], "domain": "spatial"}
+{"text": "Sunburst Valley stretches 89 km from Brighthaven to Westmere across fertile farmland.", "entities": ["Sunburst Valley", "Brighthaven", "Westmere"], "numbers": ["89 km"], "domain": "spatial"}
+{"text": "The Crystalline Fortress sits 2,234 meters above sea level on the Crown of Kethral.", "entities": ["Crystalline Fortress", "Crown of Kethral"], "numbers": ["2,234 meters"], "domain": "spatial"}
+{"text": "Darkwood Forest covers 890 square kilometers between Shadowmere and Nightbrook settlements.", "entities": ["Darkwood Forest", "Shadowmere", "Nightbrook"], "numbers": ["890 square kilometers"], "domain": "spatial"}
+{"text": "The Obsidian Mirror lies 1,456 meters below Glasshollow in an underground lake chamber.", "entities": ["Obsidian Mirror", "Glasshollow"], "numbers": ["1,456 meters"], "domain": "spatial"}
+{"text": "Eastmarch borders Westmarch at the Ironpeak Mountains, spanning a 234 km frontier.", "entities": ["Eastmarch", "Westmarch", "Ironpeak Mountains"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Starlit Plaza of Luminary City measures 156 meters by 89 meters in total.", "entities": ["Starlit Plaza", "Luminary City"], "numbers": ["156 meters", "89 meters"], "domain": "spatial"}
+{"text": "Verdanthollow Valley descends 567 meters from the rimlands to the river valley floor.", "entities": ["Verdanthollow Valley"], "numbers": ["567 meters"], "domain": "spatial"}
+{"text": "The Infinite Library of Lorehaven contains 234 sections across 45 distinct story levels.", "entities": ["Infinite Library", "Lorehaven"], "numbers": ["234 sections", "45 story levels"], "domain": "spatial"}
+{"text": "Northstar Peak reaches 4,567 meters above the Starfall Plains below.", "entities": ["Northstar Peak", "Starfall Plains"], "numbers": ["4,567 meters"], "domain": "spatial"}
+{"text": "The Hidden Sanctuary rests 2,345 meters below Stonecliff in a sealed underground chamber.", "entities": ["Hidden Sanctuary", "Stonecliff"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Silverhorn Valley stretches 156 km between twin ridges of the Silverhorn Range.", "entities": ["Silverhorn Valley", "Silverhorn Range"], "numbers": ["156 km"], "domain": "spatial"}
+{"text": "The Moonlit Garden of Nighthollow spans 78 hectares within the city's central district.", "entities": ["Moonlit Garden", "Nighthollow"], "numbers": ["78 hectares"], "domain": "spatial"}
+{"text": "Stonewall Fortress stands 234 meters tall on the border of Eastmarch Province.", "entities": ["Stonewall Fortress", "Eastmarch Province"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "The Glimmering River flows 345 km from Frostveil Springs to Silvermere Delta.", "entities": ["Glimmering River", "Frostveil Springs", "Silvermere Delta"], "numbers": ["345 km"], "domain": "spatial"}
+{"text": "Whitehollow Island rises 456 meters above sea level, surrounded by reef systems.", "entities": ["Whitehollow Island"], "numbers": ["456 meters"], "domain": "spatial"}
+{"text": "The Cavern of Wonders descends 3,456 meters beneath Mount Magnificent into uncharted depths.", "entities": ["Cavern of Wonders", "Mount Magnificent"], "numbers": ["3,456 meters"], "domain": "spatial"}
+{"text": "Northmarch lies 234 km beyond the Frozen Gates in the far north of the realm.", "entities": ["Northmarch", "Frozen Gates"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Grand Plaza of Centerholm measures 234 meters across with ancient stone monuments.", "entities": ["Grand Plaza", "Centerholm"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Verdant Township occupies 567 hectares of the Emerald Lowlands south of Greenvale.", "entities": ["Verdant Township", "Emerald Lowlands", "Greenvale"], "numbers": ["567 hectares"], "domain": "spatial"}
+{"text": "The Shadowed Abyss descends 4,234 meters into the earth beneath Darkhollow Mountain.", "entities": ["Shadowed Abyss", "Darkhollow Mountain"], "numbers": ["4,234 meters"], "domain": "spatial"}
+{"text": "Sunbright reaches 2,345 meters elevation on the western edge of Crystalline Peaks.", "entities": ["Sunbright", "Crystalline Peaks"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "The Whispering Stream runs 89 km through Emerald Forest before entering Tranquil Vale.", "entities": ["Whispering Stream", "Emerald Forest", "Tranquil Vale"], "numbers": ["89 km"], "domain": "spatial"}
+{"text": "Nightshade Citadel overlooks Dark Marshes from 567 meters above on a limestone plateau.", "entities": ["Nightshade Citadel", "Dark Marshes"], "numbers": ["567 meters"], "domain": "spatial"}
+{"text": "The Starfall Meteor Crater measures 67 km in diameter on the plains near Fallenstar.", "entities": ["Starfall Meteor Crater", "Fallenstar"], "numbers": ["67 km"], "domain": "spatial"}
+{"text": "Westbrook Harbor connects to Eastbrook via a 234 km coastal route around Crescent Bay.", "entities": ["Westbrook Harbor", "Eastbrook", "Crescent Bay"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Deepstone Archives contain 89 chambers carved 1,567 meters below Mountainhome City.", "entities": ["Deepstone Archives", "Mountainhome City"], "numbers": ["89 chambers", "1,567 meters"], "domain": "spatial"}
+{"text": "Misthollow Valley receives morning light only, lying 234 meters below surrounding ridges.", "entities": ["Misthollow Valley"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "The Towering Oaks of Northforest reach 67 meters tall, covering 1,234 hectares of land.", "entities": ["Towering Oaks", "Northforest"], "numbers": ["67 meters", "1,234 hectares"], "domain": "spatial"}
+{"text": "Goldenhaven stands 45 km northeast of Ashenvale, situated between three mountain passes.", "entities": ["Goldenhaven", "Ashenvale"], "numbers": ["45 km"], "domain": "spatial"}
+{"text": "The Subterranean Palace extends 2,345 meters across in its central hall alone.", "entities": ["Subterranean Palace"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Northshire borders Midshire along a 156 km frontier marked by Shadowpeak Mountains.", "entities": ["Northshire", "Midshire", "Shadowpeak Mountains"], "numbers": ["156 km"], "domain": "spatial"}
+{"text": "The Phantom Falls cascade 234 meters down the cliff face into Misthaven Pool.", "entities": ["Phantom Falls", "Misthaven Pool"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Ravenmoor Township spreads across 890 hectares in the Misty Hollows east of Thornwick.", "entities": ["Ravenmoor Township", "Misty Hollows", "Thornwick"], "numbers": ["890 hectares"], "domain": "spatial"}
+{"text": "The Crystalline Spires of Gemhollow reach 345 meters into the sky from mineral deposits.", "entities": ["Crystalline Spires", "Gemhollow"], "numbers": ["345 meters"], "domain": "spatial"}
+{"text": "Starlight Valley stretches 234 km from Mount Starfall to the Diamond River Delta.", "entities": ["Starlight Valley", "Mount Starfall", "Diamond River"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Hidden Fortress sits 1,234 meters below Shadowpeak, accessible only by secret passage.", "entities": ["Hidden Fortress", "Shadowpeak"], "numbers": ["1,234 meters"], "domain": "spatial"}
+{"text": "Winterhold lies on the western shore, 89 km from Summercrest across Winter Strait.", "entities": ["Winterhold", "Summercrest", "Winter Strait"], "numbers": ["89 km"], "domain": "spatial"}
+{"text": "The Marble Towers of Luminarc rise 267 meters above the city, each with 47 levels.", "entities": ["Marble Towers", "Luminarc"], "numbers": ["267 meters", "47 levels"], "domain": "spatial"}
+{"text": "Northmere Lake covers 345 square kilometers, bordered by three provincial territories.", "entities": ["Northmere Lake"], "numbers": ["345 square kilometers"], "domain": "spatial"}
+{"text": "The Obsidian Chasm opens 3,456 meters deep beneath Shadowcrest Mountain.", "entities": ["Obsidian Chasm", "Shadowcrest Mountain"], "numbers": ["3,456 meters"], "domain": "spatial"}
+{"text": "Greenwick stretches along 67 km of riverbank between Northreach and Southmere.", "entities": ["Greenwick", "Northreach", "Southmere"], "numbers": ["67 km"], "domain": "spatial"}
+{"text": "The Sunken City of Deepmere lies 2,345 meters below sea level near Abyssal Point.", "entities": ["Sunken City", "Deepmere", "Abyssal Point"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Silverstream Forest covers 1,234 hectares between Whisperbrook and Silent Glade.", "entities": ["Silverstream Forest", "Whisperbrook", "Silent Glade"], "numbers": ["1,234 hectares"], "domain": "spatial"}
+{"text": "The Tower of Eternal Light stands 234 meters tall in Brilliance City's central plaza.", "entities": ["Tower of Eternal Light", "Brilliance City"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Mistwind Valley descends 456 meters from the plateau rim to the river gorge.", "entities": ["Mistwind Valley"], "numbers": ["456 meters"], "domain": "spatial"}
+{"text": "The Grand Library of Wisdomhall contains 234,000 volumes across 89 connected chambers.", "entities": ["Grand Library", "Wisdomhall"], "numbers": ["234,000 volumes", "89 chambers"], "domain": "spatial"}
+{"text": "Northgate lies 234 km north of Southgate along the King's Highway trade route.", "entities": ["Northgate", "Southgate", "King's Highway"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Shadowed Gorge cuts 567 meters deep through Stonewall Ridge, stretching 45 km.", "entities": ["Shadowed Gorge", "Stonewall Ridge"], "numbers": ["567 meters", "45 km"], "domain": "spatial"}
+{"text": "Wildflower Meadow sprawls 234 hectares at the foot of Blossom Peak.", "entities": ["Wildflower Meadow", "Blossom Peak"], "numbers": ["234 hectares"], "domain": "spatial"}
+{"text": "The Luminous Temple rises 156 meters above the city of Radianthollow in its heart.", "entities": ["Luminous Temple", "Radianthollow"], "numbers": ["156 meters"], "domain": "spatial"}
+{"text": "Misthaven lies 678 meters above sea level on the eastern slopes of Cloudpeak Mountain.", "entities": ["Misthaven", "Cloudpeak Mountain"], "numbers": ["678 meters"], "domain": "spatial"}
+{"text": "The Crystal Caverns extend 1,890 meters into bedrock beneath Shimmering Peak.", "entities": ["Crystal Caverns", "Shimmering Peak"], "numbers": ["1,890 meters"], "domain": "spatial"}
+{"text": "Northmarch Provinces span 67,000 square kilometers of the northern frontier realm.", "entities": ["Northmarch Provinces"], "numbers": ["67,000 square kilometers"], "domain": "spatial"}
+{"text": "The Shadowed City of Umbralis hides within Darkhollow Valley, 234 km from civilization.", "entities": ["Shadowed City", "Umbralis", "Darkhollow Valley"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "Westmoreland borders Eastmoreland at the Ironpeak Ridge, sharing a 156 km frontier.", "entities": ["Westmoreland", "Eastmoreland", "Ironpeak Ridge"], "numbers": ["156 km"], "domain": "spatial"}
+{"text": "The Floating Gardens of Aetheria hover 2,345 meters above Lowland Plain.", "entities": ["Floating Gardens", "Aetheria", "Lowland Plain"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Brightwater Stream flows 123 km from Crystal Springs through Five Valleys to Silver Sea.", "entities": ["Brightwater Stream", "Crystal Springs", "Five Valleys", "Silver Sea"], "numbers": ["123 km"], "domain": "spatial"}
+{"text": "The Sunlit Cathedral of Luminaire reaches 234 meters with twin spires of 267 meters.", "entities": ["Sunlit Cathedral", "Luminaire"], "numbers": ["234 meters", "267 meters"], "domain": "spatial"}
+{"text": "Northhollow sits 345 meters below the Sunlit Rim, nestled between granite walls.", "entities": ["Northhollow", "Sunlit Rim"], "numbers": ["345 meters"], "domain": "spatial"}
+{"text": "The Infinite Corridor of Hollowkeep stretches 1,234 meters through darkness beyond measure.", "entities": ["Infinite Corridor", "Hollowkeep"], "numbers": ["1,234 meters"], "domain": "spatial"}
+{"text": "Silverpine Valley extends 89 km between Twin Peaks before widening toward Rivermere.", "entities": ["Silverpine Valley", "Twin Peaks", "Rivermere"], "numbers": ["89 km"], "domain": "spatial"}
+{"text": "The Obsidian Temple sits 234 meters below Darkhollow City in sealed underground chambers.", "entities": ["Obsidian Temple", "Darkhollow City"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Northford lies 45 km northeast of Southford, separated by the Middlebrook Valley.", "entities": ["Northford", "Southford", "Middlebrook Valley"], "numbers": ["45 km"], "domain": "spatial"}
+{"text": "The Grand Amphitheater of Voiceholm measures 156 meters in diameter across its arena floor.", "entities": ["Grand Amphitheater", "Voiceholm"], "numbers": ["156 meters"], "domain": "spatial"}
+{"text": "Glimmering Peak rises 3,678 meters above sea level, visible for 78 km in clear weather.", "entities": ["Glimmering Peak"], "numbers": ["3,678 meters", "78 km"], "domain": "spatial"}
+{"text": "The Deepest Dungeon descends 5,234 meters beneath Ironhold Castle into absolute darkness.", "entities": ["Deepest Dungeon", "Ironhold Castle"], "numbers": ["5,234 meters"], "domain": "spatial"}
+{"text": "Southmarch lies 234 km south of Northmarch, separated by the Borderland Wastes.", "entities": ["Southmarch", "Northmarch", "Borderland Wastes"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Sunken Archives rest 1,567 meters below Crystalhollow in a sealed underwater vault.", "entities": ["Sunken Archives", "Crystalhollow"], "numbers": ["1,567 meters"], "domain": "spatial"}
+{"text": "Mistlake Valley stretches 67 km between the Misty Mountains and Shadowed Lowlands.", "entities": ["Mistlake Valley", "Misty Mountains", "Shadowed Lowlands"], "numbers": ["67 km"], "domain": "spatial"}
+{"text": "The Towering Monument of Victory rises 89 meters in the center of Triumphant Square.", "entities": ["Towering Monument", "Victory", "Triumphant Square"], "numbers": ["89 meters"], "domain": "spatial"}
+{"text": "Northend Township covers 456 hectares at the terminus of Eastway Road near Shadowmere.", "entities": ["Northend Township", "Eastway Road", "Shadowmere"], "numbers": ["456 hectares"], "domain": "spatial"}
+{"text": "The Ethereal Spires of Skyhollow reach 345 meters into the clouds above the city.", "entities": ["Ethereal Spires", "Skyhollow"], "numbers": ["345 meters"], "domain": "spatial"}
+{"text": "Westmere lies 78 km west of Eastmere, connected by a single mountain pass road.", "entities": ["Westmere", "Eastmere"], "numbers": ["78 km"], "domain": "spatial"}
+{"text": "The Obsidian Fortress stands 2,345 meters above sea level on Crown of Shadowpeak.", "entities": ["Obsidian Fortress", "Crown of Shadowpeak"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Northwood Forest covers 890 square kilometers of ancient timberland.", "entities": ["Northwood Forest"], "numbers": ["890 square kilometers"], "domain": "spatial"}
+{"text": "The Starlit Repository lies 1,234 meters beneath Starlight City in sealed vault chambers.", "entities": ["Starlit Repository", "Starlight City"], "numbers": ["1,234 meters"], "domain": "spatial"}
+{"text": "Verdant Hills rise 567 meters above the Fertile Plains, stretching 45 km northward.", "entities": ["Verdant Hills", "Fertile Plains"], "numbers": ["567 meters", "45 km"], "domain": "spatial"}
+{"text": "The Crystal Palace of Shimmerholm spans 234 meters in its grand hall with 56-meter ceilings.", "entities": ["Crystal Palace", "Shimmerholm"], "numbers": ["234 meters", "56-meter"], "domain": "spatial"}
+{"text": "Northbrook separates Eastbrook from Westbrook, forming a 23 km natural boundary.", "entities": ["Northbrook", "Eastbrook", "Westbrook"], "numbers": ["23 km"], "domain": "spatial"}
+{"text": "The Infinite City of Aeternus sprawls 567 square kilometers within Shadowhaven Valley.", "entities": ["Infinite City", "Aeternus", "Shadowhaven Valley"], "numbers": ["567 square kilometers"], "domain": "spatial"}
+{"text": "Misthollow rises 234 meters above Darkbrook Stream within the Mistwood Sanctuary.", "entities": ["Misthollow", "Darkbrook Stream", "Mistwood Sanctuary"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "The Sunken Temple of Deepmire rests 3,456 meters below the surface near Abyss Harbor.", "entities": ["Sunken Temple", "Deepmire", "Abyss Harbor"], "numbers": ["3,456 meters"], "domain": "spatial"}
+{"text": "Northridge stretches 156 km from Eastpeak to Westpeak across the mountain range crest.", "entities": ["Northridge", "Eastpeak", "Westpeak"], "numbers": ["156 km"], "domain": "spatial"}
+{"text": "The Grand Vault of Treasure rests 2,345 meters beneath Ironkeep in secure chambers.", "entities": ["Grand Vault", "Treasure", "Ironkeep"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Silverhaven occupies 234 hectares within protected Silverwood borders near Starfish Bay.", "entities": ["Silverhaven", "Silverwood", "Starfish Bay"], "numbers": ["234 hectares"], "domain": "spatial"}
+{"text": "The Crystalline Towers rise 267 meters above Gemlight City from quartz bedrock foundations.", "entities": ["Crystalline Towers", "Gemlight City"], "numbers": ["267 meters"], "domain": "spatial"}
+{"text": "Darkwood Gorge cuts 589 meters deep through Stonewall Mountains for 78 km eastward.", "entities": ["Darkwood Gorge", "Stonewall Mountains"], "numbers": ["589 meters", "78 km"], "domain": "spatial"}
+{"text": "The Floating Castle of Aethermist hovers 1,234 meters above Cloudhollow Valley floor.", "entities": ["Floating Castle", "Aethermist", "Cloudhollow Valley"], "numbers": ["1,234 meters"], "domain": "spatial"}
+{"text": "Northway Road connects Northgate to Southmarch, spanning 467 km through varied terrain.", "entities": ["Northway Road", "Northgate", "Southmarch"], "numbers": ["467 km"], "domain": "spatial"}
+{"text": "The Hidden Archives contain 156 sealed chambers 1,567 meters beneath Wisdomhollow.", "entities": ["Hidden Archives", "Wisdomhollow"], "numbers": ["156 chambers", "1,567 meters"], "domain": "spatial"}
+{"text": "Mistwood Valley spreads 345 hectares of ancient forest between two parallel ridges.", "entities": ["Mistwood Valley"], "numbers": ["345 hectares"], "domain": "spatial"}
+{"text": "The Sunlit Garden of Brighthaven spans 78 hectares in the city's northern district.", "entities": ["Sunlit Garden", "Brighthaven"], "numbers": ["78 hectares"], "domain": "spatial"}
+{"text": "Shadowpeak Mountain rises 4,234 meters, with its base 23 km from nearest settlements.", "entities": ["Shadowpeak Mountain"], "numbers": ["4,234 meters", "23 km"], "domain": "spatial"}
+{"text": "The Oblivion Pit descends 6,789 meters into unexplored depths beneath Darkhollow Peak.", "entities": ["Oblivion Pit", "Darkhollow Peak"], "numbers": ["6,789 meters"], "domain": "spatial"}
+{"text": "Northshire borders Southshire at Emerald River, with a 234 km shared frontier.", "entities": ["Northshire", "Southshire", "Emerald River"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Marble Monument rises 145 meters in Centerholm Square, carved from single stone block.", "entities": ["Marble Monument", "Centerholm Square"], "numbers": ["145 meters"], "domain": "spatial"}
+{"text": "Verdantshire Township occupies 567 hectares of fertile Emerald Lowland region.", "entities": ["Verdantshire Township", "Emerald Lowland"], "numbers": ["567 hectares"], "domain": "spatial"}
+{"text": "The Shadowed Archives extend 1,890 meters beneath Darkstone City in interconnected vaults.", "entities": ["Shadowed Archives", "Darkstone City"], "numbers": ["1,890 meters"], "domain": "spatial"}
+{"text": "Sunhaven lies 45 km north of Moonshadow Crossing on the eastern shore road.", "entities": ["Sunhaven", "Moonshadow Crossing"], "numbers": ["45 km"], "domain": "spatial"}
+{"text": "The Towering Arch of Splendor spans 156 meters across Triumph Valley near Gloryhollow.", "entities": ["Towering Arch", "Splendor", "Triumph Valley", "Gloryhollow"], "numbers": ["156 meters"], "domain": "spatial"}
+{"text": "Northmarch Province spreads 89,000 square kilometers between the Northern Wastelands.", "entities": ["Northmarch Province", "Northern Wastelands"], "numbers": ["89,000 square kilometers"], "domain": "spatial"}
+{"text": "The Infinite Library of Scholarhollow contains 567,000 volumes across 234 story levels.", "entities": ["Infinite Library", "Scholarhollow"], "numbers": ["567,000 volumes", "234 story levels"], "domain": "spatial"}
+{"text": "Mistfall Valley descends 678 meters from clifftop rim to river valley below.", "entities": ["Mistfall Valley"], "numbers": ["678 meters"], "domain": "spatial"}
+{"text": "The Sunken Palace of Atlantholm rests 4,567 meters beneath Deepwater Bay.", "entities": ["Sunken Palace", "Atlantholm", "Deepwater Bay"], "numbers": ["4,567 meters"], "domain": "spatial"}
+{"text": "Westmark lies 234 km west of Eastmark, joined by a single trading post at Midway Junction.", "entities": ["Westmark", "Eastmark", "Midway Junction"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Crystal Spires of Gemhollow rise 289 meters from mineral-rich bedrock formations.", "entities": ["Crystal Spires", "Gemhollow"], "numbers": ["289 meters"], "domain": "spatial"}
+{"text": "Northwood Valley stretches 123 km between Northridge and Southridge mountain crests.", "entities": ["Northwood Valley", "Northridge", "Southridge"], "numbers": ["123 km"], "domain": "spatial"}
+{"text": "The Obsidian Chamber lies 2,345 meters below Shadowkeep in a sealed natural cavern.", "entities": ["Obsidian Chamber", "Shadowkeep"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Silvermere Lake measures 67 km across, bordered by Silverpine Forest on western shore.", "entities": ["Silvermere Lake", "Silverpine Forest"], "numbers": ["67 km"], "domain": "spatial"}
+{"text": "The Grand Plaza of Radiantcity measures 234 meters by 156 meters with fountain centerpiece.", "entities": ["Grand Plaza", "Radiantcity"], "numbers": ["234 meters", "156 meters"], "domain": "spatial"}
+{"text": "Misthollow Township occupies 890 hectares of Misty Lowlands region.", "entities": ["Misthollow Township", "Misty Lowlands"], "numbers": ["890 hectares"], "domain": "spatial"}
+{"text": "The Infinite Chasm beneath Shadowed Peak descends 5,678 meters into utter darkness.", "entities": ["Infinite Chasm", "Shadowed Peak"], "numbers": ["5,678 meters"], "domain": "spatial"}
+{"text": "Eastmarch lies 156 km east of Westmarch along the Borderpath Trade Road.", "entities": ["Eastmarch", "Westmarch", "Borderpath Trade Road"], "numbers": ["156 km"], "domain": "spatial"}
+{"text": "The Starlight Cathedral rises 345 meters above Luminoushollow with crystalline spires.", "entities": ["Starlight Cathedral", "Luminoushollow"], "numbers": ["345 meters"], "domain": "spatial"}
+{"text": "Northmoor Fen sprawls 234 square kilometers of wetland between Mudspring and Marshend.", "entities": ["Northmoor Fen", "Mudspring", "Marshend"], "numbers": ["234 square kilometers"], "domain": "spatial"}
+{"text": "The Sunken Library of Deepmuse rests 3,234 meters below Libraryhollow City.", "entities": ["Sunken Library", "Deepmuse", "Libraryhollow City"], "numbers": ["3,234 meters"], "domain": "spatial"}
+{"text": "Verdant Stream flows 156 km from Greenspring through Meadowland to Rivermouth.", "entities": ["Verdant Stream", "Greenspring", "Meadowland", "Rivermouth"], "numbers": ["156 km"], "domain": "spatial"}
+{"text": "The Ethereal Tower of Aetheria rises 456 meters above Cloudhollow, defying physics.", "entities": ["Ethereal Tower", "Aetheria", "Cloudhollow"], "numbers": ["456 meters"], "domain": "spatial"}
+{"text": "Northlake lies 67 km northeast of Southmere, connected by scenic coastal road.", "entities": ["Northlake", "Southmere"], "numbers": ["67 km"], "domain": "spatial"}
+{"text": "The Hidden Garden of Thornhollow spans 156 hectares within secret walled boundaries.", "entities": ["Hidden Garden", "Thornhollow"], "numbers": ["156 hectares"], "domain": "spatial"}
+{"text": "Glimmercrest Peak reaches 2,789 meters above the Shadowland Plain.", "entities": ["Glimmercrest Peak", "Shadowland Plain"], "numbers": ["2,789 meters"], "domain": "spatial"}
+{"text": "The Obsidian Bridge spans 234 meters across the Abyssal Gorge near Shadowhollow.", "entities": ["Obsidian Bridge", "Abyssal Gorge", "Shadowhollow"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Silvermist Valley stretches 89 km between Twin Peaks, narrowing toward Riverhollow.", "entities": ["Silvermist Valley", "Twin Peaks", "Riverhollow"], "numbers": ["89 km"], "domain": "spatial"}
+{"text": "The Grand Library houses 345,000 volumes across 189 interconnected chambers.", "entities": ["Grand Library"], "numbers": ["345,000 volumes", "189 chambers"], "domain": "spatial"}
+{"text": "Westmoor lies 45 km west of Eastmoor on the edge of Mistwood Forest.", "entities": ["Westmoor", "Eastmoor", "Mistwood Forest"], "numbers": ["45 km"], "domain": "spatial"}
+{"text": "The Sunken Chamber of Deephollow rests 1,567 meters below the city's main square.", "entities": ["Sunken Chamber", "Deephollow"], "numbers": ["1,567 meters"], "domain": "spatial"}
+{"text": "Northend lies at the terminus of Kingdom Road, 234 km from the capital.", "entities": ["Northend", "Kingdom Road"], "numbers": ["234 km"], "domain": "spatial"}
+{"text": "The Crystal Cavern spans 2,345 meters beneath Mount Shimmer in the Deep Dark.", "entities": ["Crystal Cavern", "Mount Shimmer", "Deep Dark"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Mistbrook Valley covers 567 hectares between Misty Ridge and Shadowvale settlements.", "entities": ["Mistbrook Valley", "Misty Ridge", "Shadowvale"], "numbers": ["567 hectares"], "domain": "spatial"}
+{"text": "The Marble Palace of Luminous rises 289 meters with 78 decorated story levels.", "entities": ["Marble Palace", "Luminous"], "numbers": ["289 meters", "78 levels"], "domain": "spatial"}
+{"text": "Northshire borders Southshire at Mirror River, maintaining a 178 km frontier.", "entities": ["Northshire", "Southshire", "Mirror River"], "numbers": ["178 km"], "domain": "spatial"}
+{"text": "The Hidden Repository contains 234,567 scrolls across 156 sealed vault chambers.", "entities": ["Hidden Repository"], "numbers": ["234,567 scrolls", "156 chambers"], "domain": "spatial"}
+{"text": "Verdant Township spreads 678 hectares at the confluence of Emerald and Silver Rivers.", "entities": ["Verdant Township", "Emerald River", "Silver River"], "numbers": ["678 hectares"], "domain": "spatial"}
+{"text": "The Floating Citadel hovers 3,456 meters above Lowland Plateau in perpetual clouds.", "entities": ["Floating Citadel", "Lowland Plateau"], "numbers": ["3,456 meters"], "domain": "spatial"}
+{"text": "Eastwick lies 89 km east of Westwick along the Northern Trade Route.", "entities": ["Eastwick", "Westwick", "Northern Trade Route"], "numbers": ["89 km"], "domain": "spatial"}
+{"text": "The Sunlight Archives hold 456,789 documents spanning 234 categories across galleries.", "entities": ["Sunlight Archives"], "numbers": ["456,789 documents", "234 categories"], "domain": "spatial"}
+{"text": "Northbrook Stream flows 267 km from Alpine Heights to Riverside Harbor.", "entities": ["Northbrook Stream", "Alpine Heights", "Riverside Harbor"], "numbers": ["267 km"], "domain": "spatial"}
+{"text": "The Shadowed Cathedral descends 2,345 meters below Darkhollow into sacred depths.", "entities": ["Shadowed Cathedral", "Darkhollow"], "numbers": ["2,345 meters"], "domain": "spatial"}
+{"text": "Mistwood Forest covers 1,567 square kilometers between Mistbrook and Shadowmere.", "entities": ["Mistwood Forest", "Mistbrook", "Shadowmere"], "numbers": ["1,567 square kilometers"], "domain": "spatial"}
+{"text": "The Eternal Monument rises 234 meters in Timeless Plaza with ancient rune inscriptions.", "entities": ["Eternal Monument", "Timeless Plaza"], "numbers": ["234 meters"], "domain": "spatial"}
+{"text": "Northmarch Township occupies 456 hectares at the realm's northern frontier.", "entities": ["Northmarch Township"], "numbers": ["456 hectares"], "domain": "spatial"}
+{"text": "The Obsidian Vault lies 3,789 meters beneath Ironhollow in impenetrable stone.", "entities": ["Obsidian Vault", "Ironhollow"], "numbers": ["3,789 meters"], "domain": "spatial"}
+{"text": "Silverpine Village spreads across 234 hectares near Northmere Lake's eastern shore.", "entities": ["Silverpine Village", "Northmere Lake"], "numbers": ["234 hectares"], "domain": "spatial"}
+{"text": "The Grand Foyer spans 156 meters by 89 meters with a 45-meter high ceiling.", "entities": ["Grand Foyer"], "numbers": ["156 meters", "89 meters", "45-meter"], "domain": "spatial"}
+{"text": "Westhold lies 178 km west of Easthold along the Ridge Trail path.", "entities": ["Westhold", "Easthold", "Ridge Trail"], "numbers": ["178 km"], "domain": "spatial"}
+{"text": "The Sunken Shrine rests 4,234 meters below Mist Peak in sealed underground chamber.", "entities": ["Sunken Shrine", "Mist Peak"], "numbers": ["4,234 meters"], "domain": "spatial"}
+{"text": "Brightmoor Valley spreads 345 square kilometers of fertile land south of Sunridge.", "entities": ["Brightmoor Valley", "Sunridge"], "numbers": ["345 square kilometers"], "domain": "spatial"}
+{"text": "The Crystalline Archive holds 567 chambers across 2,345 meters of carved passages.", "entities": ["Crystalline Archive"], "numbers": ["567 chambers", "2,345 meters"], "domain": "spatial"}
+{"text": "Northsea Port stretches 12 km along the coast from Starfish Bay to Anchor Point.", "entities": ["Northsea Port", "Starfish Bay", "Anchor Point"], "numbers": ["12 km"], "domain": "spatial"}
+{"text": "The Infinite Bridge connects Northisle to Southisle, spanning 456 meters above water.", "entities": ["Infinite Bridge", "Northisle", "Southisle"], "numbers": ["456 meters"], "domain": "spatial"}
+{"text": "Misthollow occupies 234 hectares within Mistwood Sanctuary's protected core region.", "entities": ["Misthollow", "Mistwood Sanctuary"], "numbers": ["234 hectares"], "domain": "spatial"}
+{"text": "The Obsidian Peak rises 5,234 meters, with snow line at 3,456 meters elevation.", "entities": ["Obsidian Peak"], "numbers": ["5,234 meters", "3,456 meters"], "domain": "spatial"}

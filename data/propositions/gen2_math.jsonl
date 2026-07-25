@@ -1,0 +1,250 @@
+{"text": "During the auction, a rare manuscript sold for $12,450, which was 35% more than the seller's asking price of $9,200.", "entities": [], "numbers": ["$12,450", "35%", "$9,200"], "domain": "math"}
+{"text": "The satellite completes 14 orbits around Earth in a single day, so each orbit takes approximately 1,714 minutes.", "entities": [], "numbers": ["14", "1,714"], "domain": "math"}
+{"text": "Maria's knitting project requires 580 meters of yarn total; she has already completed 35% of the pattern using 203 meters.", "entities": ["Maria"], "numbers": ["580", "35%", "203"], "domain": "math"}
+{"text": "The irrigation pump delivers 2,400 liters per hour across 12 terraced fields, distributing 200 liters equally to each field.", "entities": [], "numbers": ["2,400", "12", "200"], "domain": "math"}
+{"text": "A freight container holds 24 metric tons of cargo; three containers shipped together weigh 72 metric tons total.", "entities": [], "numbers": ["24", "three", "72"], "domain": "math"}
+{"text": "At the charity auction, 45 items were sold with an average price of $280 each, generating $12,600 in total revenue.", "entities": [], "numbers": ["45", "$280", "$12,600"], "domain": "math"}
+{"text": "The space station orbits at an altitude of 408 kilometers and completes 15.5 orbits daily, covering approximately 41,600 kilometers per day.", "entities": [], "numbers": ["408", "15.5", "41,600"], "domain": "math"}
+{"text": "A knitter uses yarn that costs $8.50 per ball; creating one sweater requires 12 balls, totaling $102 in materials.", "entities": [], "numbers": ["$8.50", "12", "$102"], "domain": "math"}
+{"text": "The valley's irrigation system waters 340 acres; if 60% receives automated sprinklers, then 204 acres are manually watered.", "entities": [], "numbers": ["340", "60%", "204"], "domain": "math"}
+{"text": "A shipping vessel carries 4,800 containers at full capacity; it is currently loaded with containers worth $18.2 million total.", "entities": [], "numbers": ["4,800", "$18.2 million"], "domain": "math"}
+{"text": "During the livestock auction, beef cattle sold for an average of $1,250 per animal; 28 animals were auctioned for $35,000 total.", "entities": [], "numbers": ["$1,250", "28", "$35,000"], "domain": "math"}
+{"text": "A geostationary satellite maintains a fixed position above the equator at exactly 35,786 kilometers altitude from Earth's surface.", "entities": [], "numbers": ["35,786"], "domain": "math"}
+{"text": "The community knitting circle completed 23 baby blankets, each requiring 8 skeins of wool at $4.75 per skein.", "entities": [], "numbers": ["23", "8", "$4.75"], "domain": "math"}
+{"text": "The rice paddies require 50 inches of water annually; the irrigation system has delivered 38 inches so far this season.", "entities": [], "numbers": ["50", "38"], "domain": "math"}
+{"text": "Freight costs are $0.75 per kilogram; shipping a 1,200-kilogram shipment would cost $900 total.", "entities": [], "numbers": ["$0.75", "1,200", "$900"], "domain": "math"}
+{"text": "At the art auction, a painting sold for $45,600, then resold 6 months later for $68,400, representing a $22,800 profit.", "entities": [], "numbers": ["$45,600", "6", "$68,400", "$22,800"], "domain": "math"}
+{"text": "The ISS orbits Earth approximately every 90 minutes, meaning it experiences 16 sunrises and sunsets in a 24-hour period.", "entities": ["ISS", "Earth"], "numbers": ["90", "16", "24"], "domain": "math"}
+{"text": "A hand knitter produces scarves at a rate of 5 scarves per month; in 18 months, she will have completed 90 scarves.", "entities": [], "numbers": ["5", "18", "90"], "domain": "math"}
+{"text": "The farm's irrigation budget is $45,000 annually; with monthly expenses of $3,750, the full budget will be depleted in 12 months.", "entities": [], "numbers": ["$45,000", "$3,750", "12"], "domain": "math"}
+{"text": "A consolidated freight shipment combines 18 pallets weighing 85 kilograms each; the total shipment weight is 1,530 kilograms.", "entities": [], "numbers": ["18", "85", "1,530"], "domain": "math"}
+{"text": "The estate auction sold 156 items across three days at an average of $520 per item, generating approximately $81,120 in revenue.", "entities": [], "numbers": ["156", "three", "$520", "$81,120"], "domain": "math"}
+{"text": "Mercury completes one orbit around the Sun every 88 Earth days, traveling approximately 169 million kilometers in that orbital period.", "entities": ["Mercury", "Sun", "Earth"], "numbers": ["88", "169 million"], "domain": "math"}
+{"text": "The textile factory's knitting machine operates at 240 stitches per minute; creating one sweater requires 14,400 stitches total.", "entities": [], "numbers": ["240", "14,400"], "domain": "math"}
+{"text": "An irrigation drip line waters one row of vegetables with 1.2 liters per hour; 42 rows require 50.4 liters of water hourly.", "entities": [], "numbers": ["1.2", "42", "50.4"], "domain": "math"}
+{"text": "International freight regulations limit containers to 29 metric tons maximum; a container holding 27 metric tons is within compliance.", "entities": [], "numbers": ["29", "27"], "domain": "math"}
+{"text": "The auction house received 340 antique books valued collectively at $82,000; the average value per book is approximately $241.", "entities": [], "numbers": ["340", "$82,000", "$241"], "domain": "math"}
+{"text": "The Moon orbits Earth once every 27.3 days while rotating on its axis once in the same period, creating synchronous rotation.", "entities": ["Moon", "Earth"], "numbers": ["27.3"], "domain": "math"}
+{"text": "A knitting pattern specifies yarn weight in grams; 450 grams equals approximately 18 ounces, suitable for small garments.", "entities": [], "numbers": ["450", "18"], "domain": "math"}
+{"text": "The corn field requires 1 inch of water per week during growing season; over 16 weeks, it needs 16 inches total.", "entities": [], "numbers": ["1", "16"], "domain": "math"}
+{"text": "A freight broker negotiates rates with 15 trucking companies; each charges between $2.50 and $3.20 per kilometer.", "entities": [], "numbers": ["15", "$2.50", "$3.20"], "domain": "math"}
+{"text": "At the wine auction, 42 rare bottles sold for $8,400 total; the median price per bottle was $200.", "entities": [], "numbers": ["42", "$8,400", "$200"], "domain": "math"}
+{"text": "Venus rotates so slowly that one Venusian day is 243 Earth days long, longer than its orbital period of 225 Earth days.", "entities": ["Venus", "Earth"], "numbers": ["243", "225"], "domain": "math"}
+{"text": "The commercial knitting operation produces 450 sweaters monthly at a labor cost of $28 per sweater, totaling $12,600 monthly.", "entities": [], "numbers": ["450", "$28", "$12,600"], "domain": "math"}
+{"text": "Groundwater irrigation requires 6 hours of pumping daily; the well produces 800 gallons per hour, yielding 4,800 gallons daily.", "entities": [], "numbers": ["6", "800", "4,800"], "domain": "math"}
+{"text": "A cargo ship's fuel consumption is 280 liters per nautical mile; a voyage covering 8,500 nautical miles requires 2,380,000 liters.", "entities": [], "numbers": ["280", "8,500", "2,380,000"], "domain": "math"}
+{"text": "The quarter-horse auction drew 110 buyers competing for 38 prize animals; approximately 2.89 buyers bid per animal on average.", "entities": [], "numbers": ["110", "38", "2.89"], "domain": "math"}
+{"text": "Mars takes 687 Earth days to orbit the Sun, making a Martian year significantly longer than Earth's 365-day year.", "entities": ["Mars", "Earth", "Sun"], "numbers": ["687", "365"], "domain": "math"}
+{"text": "A knit shop sells yarn at $12 per skein; weekly revenue from yarn sales is $2,160, implying 180 skeins sold weekly.", "entities": [], "numbers": ["$12", "$2,160", "180"], "domain": "math"}
+{"text": "The strawberry field requires flood irrigation every 10 days; in a 90-day growing season, it receives 9 flood applications.", "entities": [], "numbers": ["10", "90", "9"], "domain": "math"}
+{"text": "Shipping hazardous materials costs 40% more than standard freight; if standard shipping is $500, hazmat costs $700 total.", "entities": [], "numbers": ["40%", "$500", "$700"], "domain": "math"}
+{"text": "The numismatic auction featured 67 rare coins selling for a combined $201,000; the average coin sold for approximately $3,000.", "entities": [], "numbers": ["67", "$201,000", "$3,000"], "domain": "math"}
+{"text": "Jupiter's Great Red Spot has a diameter of 24,000 kilometers; it could fit approximately 1.9 Earths inside this storm.", "entities": ["Jupiter", "Earth"], "numbers": ["24,000", "1.9"], "domain": "math"}
+{"text": "The knitting co-op distributes yarn in 50-gram units; one large shipment contains 250 units totaling 12,500 grams.", "entities": [], "numbers": ["50", "250", "12,500"], "domain": "math"}
+{"text": "The desert ranch's irrigation system costs $15,000 annually; spreading this over 12 months equals $1,250 per month.", "entities": [], "numbers": ["$15,000", "12", "$1,250"], "domain": "math"}
+{"text": "A freight forwarder arranges 22 shipments monthly; if each averages 850 kilograms, total monthly volume is 18,700 kilograms.", "entities": [], "numbers": ["22", "850", "18,700"], "domain": "math"}
+{"text": "At the mineral auction, quartz specimens totaled 85 units; 64% of specimens sold within the first hour.", "entities": [], "numbers": ["85", "64%"], "domain": "math"}
+{"text": "Neptune requires 165 Earth years to complete one orbit around the Sun, making it the slowest planetary orbiter.", "entities": ["Neptune", "Earth", "Sun"], "numbers": ["165"], "domain": "math"}
+{"text": "Textile manufacturers order yarn in batches; a knitting mill orders 4,500 kilograms monthly at $16 per kilogram.", "entities": [], "numbers": ["4,500", "$16"], "domain": "math"}
+{"text": "The vegetable garden requires 2 inches of rainfall weekly; last week received 1.5 inches, leaving a 0.5-inch deficit.", "entities": [], "numbers": ["2", "1.5", "0.5"], "domain": "math"}
+{"text": "Freight insurance premiums are 2.5% of cargo value; cargo worth $48,000 requires $1,200 in insurance coverage.", "entities": [], "numbers": ["2.5%", "$48,000", "$1,200"], "domain": "math"}
+{"text": "The jewelry auction sold 156 pieces with a total value of $468,000; the average piece valued at $3,000.", "entities": [], "numbers": ["156", "$468,000", "$3,000"], "domain": "math"}
+{"text": "Saturn's ring system spans 282,000 kilometers in diameter but consists of particles less than 1 kilometer thick on average.", "entities": ["Saturn"], "numbers": ["282,000", "1"], "domain": "math"}
+{"text": "The knitting pattern requires changing colors every 24 rows; completing 288 rows means 12 color transitions total.", "entities": [], "numbers": ["24", "288", "12"], "domain": "math"}
+{"text": "Orchards require 36 inches of water annually; spring irrigation provides 15 inches, leaving 21 inches needed from summer rains.", "entities": [], "numbers": ["36", "15", "21"], "domain": "math"}
+{"text": "A shipping container's tare weight is 2,700 kilograms; loaded with cargo, it weighs 26,500 kilograms, indicating 23,800 kilograms of cargo.", "entities": [], "numbers": ["2,700", "26,500", "23,800"], "domain": "math"}
+{"text": "The livestock auction sold cattle in 8 separate lots totaling 184 head; this averages 23 head per lot.", "entities": [], "numbers": ["8", "184", "23"], "domain": "math"}
+{"text": "Uranus completes its orbit in 84 Earth years; one Uranian year equals 84 Earth years of travel around the Sun.", "entities": ["Uranus", "Earth", "Sun"], "numbers": ["84"], "domain": "math"}
+{"text": "A knitting needle is typically 8 millimeters in diameter; a set of 40 needles would have a combined diameter of 320 millimeters.", "entities": [], "numbers": ["8", "40", "320"], "domain": "math"}
+{"text": "The rice paddy covers 42 hectares; each hectare requires 7,500 cubic meters of water per season.", "entities": [], "numbers": ["42", "7,500"], "domain": "math"}
+{"text": "International shipping quotes typically charge $850 per TEU; shipping 14 TEUs costs $11,900 total.", "entities": ["TEU"], "numbers": ["$850", "14", "$11,900"], "domain": "math"}
+{"text": "The automotive parts auction featured 320 lot items; 85% sold successfully, meaning 272 items found buyers.", "entities": [], "numbers": ["320", "85%", "272"], "domain": "math"}
+{"text": "The Sun is approximately 4.6 billion years old; it will continue fusing hydrogen for another 5 billion years.", "entities": ["Sun"], "numbers": ["4.6 billion", "5 billion"], "domain": "math"}
+{"text": "Yarn thickness varies; a worsted weight yarn weighs 200 grams per 400 meters, while a bulky yarn weighs 300 grams per 200 meters.", "entities": [], "numbers": ["200", "400", "300", "200"], "domain": "math"}
+{"text": "The irrigation canal supplies water to 18 farms; each farm receives 1,200 cubic meters per season.", "entities": [], "numbers": ["18", "1,200"], "domain": "math"}
+{"text": "Freight damage claims average $500 per incident; if 3% of shipments sustain damage, a carrier with 5,000 annual shipments expects $75,000 in claims.", "entities": [], "numbers": ["$500", "3%", "5,000", "$75,000"], "domain": "math"}
+{"text": "A rare book auction included first editions; 23 books sold for $34,500, averaging approximately $1,500 per book.", "entities": [], "numbers": ["23", "$34,500", "$1,500"], "domain": "math"}
+{"text": "The Moon's diameter is 3,474 kilometers, approximately 27% of Earth's diameter of 12,742 kilometers.", "entities": ["Moon", "Earth"], "numbers": ["3,474", "27%", "12,742"], "domain": "math"}
+{"text": "A knitter works on multiple projects simultaneously; she completes 2 scarves per week, 3 mittens per week, and 1 hat per week.", "entities": [], "numbers": ["2", "3", "1"], "domain": "math"}
+{"text": "Drip irrigation costs $0.08 per meter of tape installed; covering 250 meters costs $20 total.", "entities": [], "numbers": ["$0.08", "250", "$20"], "domain": "math"}
+{"text": "A cargo aircraft has a maximum payload of 120,000 kilograms; loaded at 90% capacity, it carries 108,000 kilograms.", "entities": [], "numbers": ["120,000", "90%", "108,000"], "domain": "math"}
+{"text": "The antique furniture auction cleared $156,000; with a 15% buyer's premium, total revenues reached $179,400.", "entities": [], "numbers": ["$156,000", "15%", "$179,400"], "domain": "math"}
+{"text": "Earth's atmosphere extends approximately 100 kilometers into space; commercial aircraft cruise at 12 kilometers altitude.", "entities": ["Earth"], "numbers": ["100", "12"], "domain": "math"}
+{"text": "The pattern requires 5 colors of yarn; purchasing 3 balls of each color at $6.50 per ball totals $97.50.", "entities": [], "numbers": ["5", "3", "$6.50", "$97.50"], "domain": "math"}
+{"text": "The agricultural field spans 180 acres; with furrow irrigation, 60 acres receive water per irrigation cycle.", "entities": [], "numbers": ["180", "60"], "domain": "math"}
+{"text": "Standard freight pallets measure 1.2 meters by 1 meter; a truck accommodates 20 pallets in one shipment.", "entities": [], "numbers": ["1.2", "1", "20"], "domain": "math"}
+{"text": "The baseball memorabilia auction sold 89 signed items averaging $2,500 each, generating $222,500 in revenue.", "entities": [], "numbers": ["89", "$2,500", "$222,500"], "domain": "math"}
+{"text": "Black holes have escape velocities exceeding 300,000 kilometers per second, the speed of light.", "entities": [], "numbers": ["300,000"], "domain": "math"}
+{"text": "The textile mill's production requires 75 kilograms of yarn daily; a 30-day month needs 2,250 kilograms.", "entities": [], "numbers": ["75", "30", "2,250"], "domain": "math"}
+{"text": "Sprinkler heads are positioned 3 meters apart in a grid pattern; a 24-meter by 18-meter lawn requires 56 sprinkler heads.", "entities": [], "numbers": ["3", "24", "18", "56"], "domain": "math"}
+{"text": "Shipping rates decrease with volume; less-than-truckload costs $2.50 per kilogram, but full truckload is $1.20 per kilogram.", "entities": [], "numbers": ["$2.50", "$1.20"], "domain": "math"}
+{"text": "The watch auction featured 45 Swiss timepieces with average sale price of $3,200 per watch, totaling $144,000.", "entities": ["Swiss"], "numbers": ["45", "$3,200", "$144,000"], "domain": "math"}
+{"text": "Light travels at approximately 300,000 kilometers per second; it takes 8 minutes to reach Earth from the Sun.", "entities": ["Earth", "Sun"], "numbers": ["300,000", "8"], "domain": "math"}
+{"text": "One skein of yarn contains approximately 180 meters; a sweater project requiring 2,700 meters needs exactly 15 skeins.", "entities": [], "numbers": ["180", "2,700", "15"], "domain": "math"}
+{"text": "The tomato crop requires 28 inches of water from planting to harvest; irrigation supplied 18 inches before the rainy season.", "entities": [], "numbers": ["28", "18"], "domain": "math"}
+{"text": "Container freight from Asia to North America typically costs $1,800 per container; shipping 28 containers totals $50,400.", "entities": ["Asia", "North America"], "numbers": ["$1,800", "28", "$50,400"], "domain": "math"}
+{"text": "The vintage car auction sold 34 vehicles for a combined $3.4 million; average sale price was approximately $100,000 per vehicle.", "entities": [], "numbers": ["34", "$3.4 million", "$100,000"], "domain": "math"}
+{"text": "The Andromeda Galaxy is 2.5 million light-years away; it approaches the Milky Way at 110 kilometers per second.", "entities": ["Andromeda", "Milky Way"], "numbers": ["2.5 million", "110"], "domain": "math"}
+{"text": "A crocheted blanket requires 8 skeins of yarn at $7 each, totaling $56 in materials before labor costs.", "entities": [], "numbers": ["8", "$7", "$56"], "domain": "math"}
+{"text": "The reservoir holds 5 million gallons; irrigation consumes 250,000 gallons daily, depleting reserves in 20 days.", "entities": [], "numbers": ["5 million", "250,000", "20"], "domain": "math"}
+{"text": "Oversized freight surcharges apply to cargo exceeding 2.4 meters in length; a 3-meter shipment incurs an additional $400 fee.", "entities": [], "numbers": ["2.4", "3", "$400"], "domain": "math"}
+{"text": "The coin collection auction featured 156 pieces with estimated values totaling $486,000; actual sale price reached $498,000.", "entities": [], "numbers": ["156", "$486,000", "$498,000"], "domain": "math"}
+{"text": "A neutron star packs the mass of our Sun into a 20-kilometer diameter sphere, creating extraordinary density.", "entities": ["Sun"], "numbers": ["20"], "domain": "math"}
+{"text": "The sweater pattern requires transitioning through 32 different stitch types; it repeats this sequence 18 times total.", "entities": [], "numbers": ["32", "18"], "domain": "math"}
+{"text": "Crop irrigation in arid climates uses 80% of available water resources; this highlights agriculture's critical water dependence.", "entities": [], "numbers": ["80%"], "domain": "math"}
+{"text": "A 40-foot shipping container holds 67 cubic meters of cargo space; a 20-foot container holds 33 cubic meters.", "entities": [], "numbers": ["40", "67", "20", "33"], "domain": "math"}
+{"text": "The sculpture auction sold 18 bronze pieces averaging $12,500 each; total proceeds of $225,000 benefited the art museum.", "entities": [], "numbers": ["18", "$12,500", "$225,000"], "domain": "math"}
+{"text": "The Sun's core temperature reaches 15 million degrees Celsius, enabling hydrogen fusion.", "entities": ["Sun", "Celsius"], "numbers": ["15 million"], "domain": "math"}
+{"text": "A hand weaver completes one tapestry every 40 hours; working 20 hours weekly, she finishes 2 tapestries per 4 weeks.", "entities": [], "numbers": ["40", "20", "2", "4"], "domain": "math"}
+{"text": "The peanut field requires 24 inches of water total; accumulated rainfall provided 9 inches, requiring 15 inches from irrigation.", "entities": [], "numbers": ["24", "9", "15"], "domain": "math"}
+{"text": "Insurance on freight shipments typically costs 0.75% of shipment value; a $40,000 shipment requires $300 insurance.", "entities": [], "numbers": ["0.75%", "$40,000", "$300"], "domain": "math"}
+{"text": "The porcelain auction included 92 pieces from various manufacturers; 78 pieces sold successfully within 2 hours.", "entities": [], "numbers": ["92", "78", "2"], "domain": "math"}
+{"text": "Alpha Centauri, the nearest star system, lies 4.37 light-years away; reaching it would require centuries with current technology.", "entities": ["Alpha Centauri"], "numbers": ["4.37"], "domain": "math"}
+{"text": "Knitting machine speed is measured in revolutions per minute; a fast machine achieves 2,000 RPM.", "entities": [], "numbers": ["2,000"], "domain": "math"}
+{"text": "A greenhouse with 850 square meters of growing space requires 8,500 liters of water daily during peak season.", "entities": [], "numbers": ["850", "8,500"], "domain": "math"}
+{"text": "Freight weight limits vary by destination; trucks can carry 36,000 kilograms on highways but only 15,000 kilograms on rural roads.", "entities": [], "numbers": ["36,000", "15,000"], "domain": "math"}
+{"text": "The rare stamp collection sold for $89,000 total; the most valuable single stamp brought $8,900.", "entities": [], "numbers": ["$89,000", "$8,900"], "domain": "math"}
+{"text": "Distances in space are so vast that we measure them in light-years; one light-year equals 9.46 trillion kilometers.", "entities": [], "numbers": ["9.46 trillion"], "domain": "math"}
+{"text": "A knitting pattern chart is 48 stitches wide and 64 rows tall; this 3,072-stitch pattern creates an intricate design.", "entities": [], "numbers": ["48", "64", "3,072"], "domain": "math"}
+{"text": "The citrus grove covers 240 acres; it requires 2.5 acre-feet of water annually, totaling 600 acre-feet overall.", "entities": [], "numbers": ["240", "2.5", "600"], "domain": "math"}
+{"text": "Cross-border freight shipments face tariffs of 5.5%; goods valued at $60,000 incur $3,300 in tariff costs.", "entities": [], "numbers": ["5.5%", "$60,000", "$3,300"], "domain": "math"}
+{"text": "The rare baseball cards auction sold 267 cards for $712,000; the average card sold for approximately $2,665.", "entities": [], "numbers": ["267", "$712,000", "$2,665"], "domain": "math"}
+{"text": "Pulsars rotate hundreds of times per second; the fastest pulsar rotates 716 times each second.", "entities": [], "numbers": ["716"], "domain": "math"}
+{"text": "Sock knitting requires coordination; one pair needs 2 separate sock pieces completed simultaneously using 4 needles.", "entities": [], "numbers": ["2", "4"], "domain": "math"}
+{"text": "A large agricultural region receives 40 inches of rainfall annually; irrigation supplements this with 20 additional inches.", "entities": [], "numbers": ["40", "20"], "domain": "math"}
+{"text": "Freight trains can carry 100 containers; at 22 metric tons each, a full train holds 2,200 metric tons.", "entities": [], "numbers": ["100", "22", "2,200"], "domain": "math"}
+{"text": "The jewelry box auction featured 340 items with estimated value of $510,000; final sale total reached $527,100.", "entities": [], "numbers": ["340", "$510,000", "$527,100"], "domain": "math"}
+{"text": "The observable universe has a radius of 46.5 billion light-years, vastly larger than our galaxy.", "entities": [], "numbers": ["46.5 billion"], "domain": "math"}
+{"text": "A spinning wheel operator can produce yarn at 100 grams per hour; producing 500 grams requires 5 hours.", "entities": [], "numbers": ["100", "500", "5"], "domain": "math"}
+{"text": "The apple orchard spans 180 acres with 45 trees per acre; total tree count is 8,100 trees requiring irrigation.", "entities": [], "numbers": ["180", "45", "8,100"], "domain": "math"}
+{"text": "Hazardous material shipping requires certified containers costing $600 each; a shipment using 4 containers totals $2,400.", "entities": [], "numbers": ["$600", "4", "$2,400"], "domain": "math"}
+{"text": "The old master paintings auction generated $18.9 million from 156 artworks; average value was approximately $121,154 per painting.", "entities": [], "numbers": ["$18.9 million", "156", "$121,154"], "domain": "math"}
+{"text": "Cosmic radiation background temperature is 2.7 Kelvin above absolute zero, remnant from the Big Bang.", "entities": ["Kelvin"], "numbers": ["2.7"], "domain": "math"}
+{"text": "The quilting collective produced 250 quilts; if each requires 36 hours of labor, total effort was 9,000 hours.", "entities": [], "numbers": ["250", "36", "9,000"], "domain": "math"}
+{"text": "Desert irrigation systems operate year-round; monthly water consumption of 80,000 gallons totals 960,000 gallons annually.", "entities": [], "numbers": ["80,000", "960,000"], "domain": "math"}
+{"text": "Ocean freight capacity is measured in TEUs; a modern container ship holds 20,000 TEUs at full capacity.", "entities": ["TEU"], "numbers": ["20,000"], "domain": "math"}
+{"text": "The investment art auction sold 89 modern pieces for $5.6 million; median price was approximately $62,900 per artwork.", "entities": [], "numbers": ["89", "$5.6 million", "$62,900"], "domain": "math"}
+{"text": "Binary star systems orbit their shared center of mass; Alpha Centauri A and B complete orbits every 80 years.", "entities": ["Alpha Centauri"], "numbers": ["80"], "domain": "math"}
+{"text": "A cable knit pattern requires special technique; achieving 48 cable crossings produces the signature twisted appearance.", "entities": [], "numbers": ["48"], "domain": "math"}
+{"text": "The cotton field requires precisely 36 inches of water from planting through harvest for optimal yield.", "entities": [], "numbers": ["36"], "domain": "math"}
+{"text": "Refrigerated freight maintains temperatures between minus 18 and minus 25 Celsius; tropical fruit requires minus 1 Celsius.", "entities": ["Celsius"], "numbers": ["minus 18", "minus 25", "minus 1"], "domain": "math"}
+{"text": "The vintage motorcycle auction featured 78 bikes selling for average prices of $8,500 each, totaling $663,000.", "entities": [], "numbers": ["78", "$8,500", "$663,000"], "domain": "math"}
+{"text": "The distance from Earth to the Moon is 384,400 kilometers; light covers this distance in 1.28 seconds.", "entities": ["Earth", "Moon"], "numbers": ["384,400", "1.28"], "domain": "math"}
+{"text": "Needle size affects knitting gauge; using 5-millimeter needles produces 18 stitches per 10 centimeters.", "entities": [], "numbers": ["5", "18", "10"], "domain": "math"}
+{"text": "Flood irrigation systematically waters large tracts; a 50-hectare field receives one complete irrigation every 8 days.", "entities": [], "numbers": ["50", "8"], "domain": "math"}
+{"text": "Standard wooden shipping pallets cost $14 each; pallets for a 50-container shipment total $700.", "entities": [], "numbers": ["$14", "50", "$700"], "domain": "math"}
+{"text": "The estate jewelry auction sold 234 pieces for $1.17 million; this averages $5,000 per piece.", "entities": [], "numbers": ["234", "$1.17 million", "$5,000"], "domain": "math"}
+{"text": "A galaxy contains approximately 200 billion stars; the Milky Way is a large galaxy by this estimate.", "entities": ["Milky Way"], "numbers": ["200 billion"], "domain": "math"}
+{"text": "Fair isle knitting incorporates two colors per row; a sweater with 160 rows changes colors 160 times.", "entities": ["Fair Isle"], "numbers": ["2", "160"], "domain": "math"}
+{"text": "The vegetable garden requires 1.5 inches of water weekly; over a 16-week growing season, it needs 24 inches total.", "entities": [], "numbers": ["1.5", "16", "24"], "domain": "math"}
+{"text": "Cold chain logistics require constant refrigeration; transport cost increases 35% compared to ambient temperature shipping.", "entities": [], "numbers": ["35%"], "domain": "math"}
+{"text": "The fine art auction sold 234 contemporary pieces for $28.3 million; average sale price was approximately $121,000 per artwork.", "entities": [], "numbers": ["234", "$28.3 million", "$121,000"], "domain": "math"}
+{"text": "A supernova explosion can briefly outshine an entire galaxy containing billions of stars.", "entities": [], "numbers": ["billions"], "domain": "math"}
+{"text": "The hand loom weaver works at 2 centimeters per hour; completing a 2-meter scarf requires 100 hours of labor.", "entities": [], "numbers": ["2", "100"], "domain": "math"}
+{"text": "Precision irrigation systems deliver exactly 10 millimeters of water per cycle; 6 cycles weekly provides 60 millimeters monthly.", "entities": [], "numbers": ["10", "6", "60"], "domain": "math"}
+{"text": "Air freight costs $8.50 per kilogram; shipping 250 kilograms via air freight costs $2,125 total.", "entities": [], "numbers": ["$8.50", "250", "$2,125"], "domain": "math"}
+{"text": "The rare guitar auction saw 45 instruments sell for $3.2 million; average guitar sold for approximately $71,111.", "entities": [], "numbers": ["45", "$3.2 million", "$71,111"], "domain": "math"}
+{"text": "The Andromeda Galaxy will collide with the Milky Way in approximately 4.5 billion years.", "entities": ["Andromeda", "Milky Way"], "numbers": ["4.5 billion"], "domain": "math"}
+{"text": "A macramé project uses braided knots; creating one wall hanging requires 450 meters of rope.", "entities": [], "numbers": ["450"], "domain": "math"}
+{"text": "The alfalfa field needs 36 inches of water annually; two irrigation seasons provide 22 inches, requiring 14 inches of rainfall.", "entities": [], "numbers": ["36", "22", "14"], "domain": "math"}
+{"text": "Rail freight offers lower costs than trucking; rail costs $0.06 per ton-kilometer versus truck's $0.18 per ton-kilometer.", "entities": [], "numbers": ["$0.06", "$0.18"], "domain": "math"}
+{"text": "The prestigious coin auction sold 312 numismatic items for $9.36 million; average coin brought $30,000.", "entities": [], "numbers": ["312", "$9.36 million", "$30,000"], "domain": "math"}
+{"text": "Earth's mass is approximately 5.97 sextillion kilograms; this represents one unit in cosmic mass measurements.", "entities": ["Earth"], "numbers": ["5.97 sextillion"], "domain": "math"}
+{"text": "The textile designer combines primary colors; using 12 shades each creates 1,728 possible color combinations.", "entities": [], "numbers": ["12", "1,728"], "domain": "math"}
+{"text": "Center-pivot irrigation systems rotate around a fixed point; one system covers 64.75 acres in a complete circle.", "entities": [], "numbers": ["64.75"], "domain": "math"}
+{"text": "Intermodal freight containers standardize at 40-foot lengths; two standard 20-foot containers equal one 40-foot container.", "entities": [], "numbers": ["40", "20"], "domain": "math"}
+{"text": "The manuscript auction featured 156 historic documents selling for $2.34 million total; average document valued at $15,000.", "entities": [], "numbers": ["156", "$2.34 million", "$15,000"], "domain": "math"}
+{"text": "Sound travels at 343 meters per second through air; it would take 8.7 seconds to hear a 3-kilometer distant echo.", "entities": [], "numbers": ["343", "8.7", "3"], "domain": "math"}
+{"text": "Tatting creates lace patterns through specific knots; one doily requires 5 hours of precise knotting.", "entities": [], "numbers": ["5"], "domain": "math"}
+{"text": "The wine country's irrigation district covers 2,400 acres; allocating water to 15 vineyards requires careful distribution planning.", "entities": [], "numbers": ["2,400", "15"], "domain": "math"}
+{"text": "Freight palletization standards require layers not exceeding 2 meters height; this ensures equipment compatibility.", "entities": [], "numbers": ["2"], "domain": "math"}
+{"text": "The collectible doll auction sold 267 dolls for $1.87 million; median sale price was approximately $7,000 per doll.", "entities": [], "numbers": ["267", "$1.87 million", "$7,000"], "domain": "math"}
+{"text": "An atom is primarily empty space; if the nucleus were 1 meter across, electrons would orbit at 100 kilometers distance.", "entities": [], "numbers": ["1", "100"], "domain": "math"}
+{"text": "The basket weaving collective creates 200 baskets monthly; selling each at $35 generates $7,000 monthly revenue.", "entities": [], "numbers": ["200", "$35", "$7,000"], "domain": "math"}
+{"text": "Subsurface drip irrigation delivers water directly to roots; this reduces water loss by 50% compared to surface irrigation.", "entities": [], "numbers": ["50%"], "domain": "math"}
+{"text": "A full truck load of freight weighs exactly 25 metric tons; shipping at $0.50 per kilogram costs $12,500.", "entities": [], "numbers": ["25", "$0.50", "$12,500"], "domain": "math"}
+{"text": "The antique watch auction featured 89 timepieces selling for $2.23 million; average price was approximately $25,056 per watch.", "entities": [], "numbers": ["89", "$2.23 million", "$25,056"], "domain": "math"}
+{"text": "The Earth's oceans contain approximately 1.335 billion cubic kilometers of water.", "entities": ["Earth"], "numbers": ["1.335 billion"], "domain": "math"}
+{"text": "Latch-hook rug making follows a grid pattern; a 48-by-36-inch rug requires 1,728 individual hooks.", "entities": [], "numbers": ["48", "36", "1,728"], "domain": "math"}
+{"text": "The strawberry patch requires consistent moisture; overhead irrigation applies 1 inch weekly.", "entities": [], "numbers": ["1"], "domain": "math"}
+{"text": "Dangerous goods freight requires specialized training; operators earn $45,000 to $65,000 annually.", "entities": [], "numbers": ["$45,000", "$65,000"], "domain": "math"}
+{"text": "The rare document auction saw 178 items sell for $5.34 million; this averaged approximately $30,000 per document.", "entities": [], "numbers": ["178", "$5.34 million", "$30,000"], "domain": "math"}
+{"text": "Earth orbits the Sun at approximately 30 kilometers per second, traveling 2.59 billion kilometers annually.", "entities": ["Earth", "Sun"], "numbers": ["30", "2.59 billion"], "domain": "math"}
+{"text": "The embroidery pattern contains 45 different stitches repeated across 9 panels, creating intricate symmetry.", "entities": [], "numbers": ["45", "9"], "domain": "math"}
+{"text": "The nursery's irrigation system waters 8,000 potted plants daily using 800 gallons of water.", "entities": [], "numbers": ["8,000", "800"], "domain": "math"}
+{"text": "Container freight rates fluctuate seasonally; summer rates peak at $4,500 per container from Asia to California.", "entities": ["Asia", "California"], "numbers": ["$4,500"], "domain": "math"}
+{"text": "The rare porcelain auction sold 134 pieces for $4.02 million; average piece brought approximately $30,000.", "entities": [], "numbers": ["134", "$4.02 million", "$30,000"], "domain": "math"}
+{"text": "The Sun loses approximately 600 million metric tons of mass daily through nuclear fusion.", "entities": ["Sun"], "numbers": ["600 million"], "domain": "math"}
+{"text": "Cross-stitch embroidery follows a counted grid; one small pattern contains 256 individual crosses.", "entities": [], "numbers": ["256"], "domain": "math"}
+{"text": "Greenhouse irrigation systems utilize recycled water; a 500-square-meter greenhouse conserves 1,500 gallons daily.", "entities": [], "numbers": ["500", "1,500"], "domain": "math"}
+{"text": "Intermodal freight transfers between trucks, trains, and ships; optimization reduces total shipping time by 20%.", "entities": [], "numbers": ["20%"], "domain": "math"}
+{"text": "The antique furniture auction generated $8.9 million from 234 pieces; average furniture sold for approximately $38,000.", "entities": [], "numbers": ["$8.9 million", "234", "$38,000"], "domain": "math"}
+{"text": "One AU, the average Earth-Sun distance, is 149.6 million kilometers, used as astronomy's standard distance unit.", "entities": ["AU", "Earth", "Sun"], "numbers": ["149.6 million"], "domain": "math"}
+{"text": "The tapestry museum acquired 12 historic textiles; each required 200 hours to weave originally.", "entities": [], "numbers": ["12", "200"], "domain": "math"}
+{"text": "Precision farming uses GPS-guided irrigation for 350-acre fields, reducing water waste significantly.", "entities": [], "numbers": ["350"], "domain": "math"}
+{"text": "Logistics companies track 50,000 shipments daily; with 2% damage rate, they process 1,000 damage claims daily.", "entities": [], "numbers": ["50,000", "2%", "1,000"], "domain": "math"}
+{"text": "The sculpture auction sold 67 modern pieces for $3.35 million; average sculpture sold for approximately $50,000.", "entities": [], "numbers": ["67", "$3.35 million", "$50,000"], "domain": "math"}
+{"text": "A parsec equals 3.26 light-years; astronomical distances often express in parsecs for convenience.", "entities": [], "numbers": ["3.26"], "domain": "math"}
+{"text": "The knitting retreat taught 45 participants; each completed 4 projects totaling 180 finished items.", "entities": [], "numbers": ["45", "4", "180"], "domain": "math"}
+{"text": "Dryland farming receives less than 10 inches of annual rainfall; irrigation remains essential in such climates.", "entities": [], "numbers": ["10"], "domain": "math"}
+{"text": "Direct shipping costs $3.50 per kilogram; a 5,000-kilogram shipment costs $17,500 total.", "entities": [], "numbers": ["$3.50", "5,000", "$17,500"], "domain": "math"}
+{"text": "The rare book auction sold 178 volumes for $2.67 million; median book sold for approximately $15,000 per volume.", "entities": [], "numbers": ["178", "$2.67 million", "$15,000"], "domain": "math"}
+{"text": "Jupiter has at least 95 known moons orbiting it; the largest, Ganymede, exceeds Mercury in diameter.", "entities": ["Jupiter", "Mercury"], "numbers": ["95"], "domain": "math"}
+{"text": "Felt making requires 200 grams of wool fibers; one artist produces 3 felted pieces weekly.", "entities": [], "numbers": ["200", "3"], "domain": "math"}
+{"text": "The cotton irrigation district manages 45,000 acres; systematic flooding applies 2 feet of water per irrigation cycle.", "entities": [], "numbers": ["45,000", "2"], "domain": "math"}
+{"text": "Container leasing costs $150 monthly per unit; leasing 40 containers annually costs $72,000.", "entities": [], "numbers": ["$150", "40", "$72,000"], "domain": "math"}
+{"text": "The jewelry and watch auction cleared $12.4 million from 445 items; average item fetched approximately $27,865.", "entities": [], "numbers": ["$12.4 million", "445", "$27,865"], "domain": "math"}
+{"text": "Cygnus X-1, a black hole, has an event horizon approximately 30 kilometers in diameter.", "entities": ["Cygnus X-1"], "numbers": ["30"], "domain": "math"}
+{"text": "The weaving workshop maintains an inventory of 120 different thread colors in 8 weight categories.", "entities": [], "numbers": ["120", "8"], "domain": "math"}
+{"text": "Micro-irrigation technologies deliver water efficiently; installation costs $800 per acre but saves 40% water annually.", "entities": [], "numbers": ["$800", "40%"], "domain": "math"}
+{"text": "Full container loads from Europe cost $8,500; shipping 6 containers to America totals $51,000.", "entities": ["Europe", "America"], "numbers": ["$8,500", "6", "$51,000"], "domain": "math"}
+{"text": "The vintage sports equipment auction sold 234 items for $1.17 million; average item sold for $5,000.", "entities": [], "numbers": ["234", "$1.17 million", "$5,000"], "domain": "math"}
+{"text": "Proxima Centauri, the nearest star, is 4.24 light-years away; it would require 80,000 years to reach with current spacecraft.", "entities": ["Proxima Centauri"], "numbers": ["4.24", "80,000"], "domain": "math"}
+{"text": "Bobbin lace requires precise threading; one intricate pattern uses 45 separate threads simultaneously.", "entities": [], "numbers": ["45"], "domain": "math"}
+{"text": "The rice paddies require 60 inches of water annually; monsoon seasons provide 45 inches naturally.", "entities": [], "numbers": ["60", "45"], "domain": "math"}
+{"text": "Standard freight dimensions are 40 feet by 8 feet by 8.5 feet; volume equals 2,720 cubic feet per container.", "entities": [], "numbers": ["40", "8", "8.5", "2,720"], "domain": "math"}
+{"text": "The musical instrument auction sold 123 pieces for $6.15 million; average instrument brought $50,000.", "entities": [], "numbers": ["123", "$6.15 million", "$50,000"], "domain": "math"}
+{"text": "The universe expands continuously; distant galaxies recede at velocities approaching the speed of light.", "entities": [], "numbers": [], "domain": "math"}
+{"text": "Needle felting combines wool fibers through repeated stabbing; one felted sculpture requires 500 stabs.", "entities": [], "numbers": ["500"], "domain": "math"}
+{"text": "Agricultural water markets allocate 1 acre-foot per farm; 200 farms collectively receive 200 acre-feet annually.", "entities": [], "numbers": ["1", "200"], "domain": "math"}
+{"text": "Dangerous goods surcharges increase shipping costs by 25%; standard freight of $400 costs $500 for hazardous materials.", "entities": [], "numbers": ["25%", "$400", "$500"], "domain": "math"}
+{"text": "The rare coin auction featured 445 specimens selling for $13.35 million; average coin brought $30,000.", "entities": [], "numbers": ["445", "$13.35 million", "$30,000"], "domain": "math"}
+{"text": "Our galaxy rotates so slowly that one complete rotation requires 230 million years.", "entities": [], "numbers": ["230 million"], "domain": "math"}
+{"text": "Crochet stitches vary in height; double crochet measures 1 inch tall for 18 stitches in 4 inches.", "entities": [], "numbers": ["1", "18", "4"], "domain": "math"}
+{"text": "Terrace farming maximizes water retention; a 5-terrace slope system reduces water loss by 35%.", "entities": [], "numbers": ["5", "35%"], "domain": "math"}
+{"text": "Bulk shipping discounts apply to orders exceeding 100,000 kilograms; pricing drops from $1.50 to $1.05 per kilogram.", "entities": [], "numbers": ["100,000", "$1.50", "$1.05"], "domain": "math"}
+{"text": "The fine art photography auction sold 89 prints for $2.67 million; average photograph brought approximately $30,000.", "entities": [], "numbers": ["89", "$2.67 million", "$30,000"], "domain": "math"}
+{"text": "The Magellanic Clouds are satellite galaxies orbiting the Milky Way at distances exceeding 160,000 light-years.", "entities": ["Magellanic Clouds", "Milky Way"], "numbers": ["160,000"], "domain": "math"}
+{"text": "The quilting pattern features 144 individual squares; arranged in a 12-by-12 grid creating symmetry.", "entities": [], "numbers": ["144", "12"], "domain": "math"}
+{"text": "Precision irrigation achieves 95% water efficiency; traditional methods lose 35% of water to evaporation.", "entities": [], "numbers": ["95%", "35%"], "domain": "math"}
+{"text": "Cross-country freight averaging 3,000 kilometers costs $4,500 per truckload; per-kilometer rate is $1.50.", "entities": [], "numbers": ["3,000", "$4,500", "$1.50"], "domain": "math"}
+{"text": "The rare textile auction featured 67 historic fabrics selling for $3.35 million; average textile brought $50,000.", "entities": [], "numbers": ["67", "$3.35 million", "$50,000"], "domain": "math"}
+{"text": "Gravitational lensing occurs when massive objects bend light; Einstein's theory predicted this phenomenon.", "entities": ["Einstein"], "numbers": [], "domain": "math"}
+{"text": "The cotton gin processes 500 pounds of cotton daily; operating continuously for 30 days yields 15,000 pounds.", "entities": [], "numbers": ["500", "30", "15,000"], "domain": "math"}
+{"text": "Knot density in carpets is measured as knots per square inch; Persian rugs average 400 KPSI.", "entities": ["Persian", "KPSI"], "numbers": ["400"], "domain": "math"}
+{"text": "The orchard irrigation system covers 125 acres; each acre receives 3 acre-feet of water annually.", "entities": [], "numbers": ["125", "3"], "domain": "math"}
+{"text": "Expedited freight adds 48-hour delivery; surcharge of $2,000 applies to 10,000-kilogram shipments.", "entities": [], "numbers": ["48", "$2,000", "10,000"], "domain": "math"}
+{"text": "The classic car auction sold 56 vehicles for $8.96 million; average car sold for $160,000.", "entities": [], "numbers": ["56", "$8.96 million", "$160,000"], "domain": "math"}
+{"text": "Omega Centauri, a globular cluster, contains approximately 10 million stars.", "entities": ["Omega Centauri"], "numbers": ["10 million"], "domain": "math"}
+{"text": "Tunisian crochet combines crochet and knitting techniques; producing one scarf requires 12 hours.", "entities": ["Tunisian"], "numbers": ["12"], "domain": "math"}
+{"text": "Furrow irrigation channels water between planted rows; a 300-meter field requires 15 parallel furrows.", "entities": [], "numbers": ["300", "15"], "domain": "math"}
+{"text": "Freight consolidation reduces per-unit shipping; combining 8 shipments into one saves $800 total.", "entities": [], "numbers": ["8", "$800"], "domain": "math"}
+{"text": "The luxury watch auction sold 78 timepieces for $11.7 million; average watch brought $150,000.", "entities": [], "numbers": ["78", "$11.7 million", "$150,000"], "domain": "math"}
+{"text": "Betelgeuse is a red supergiant with diameter 764 times larger than our Sun.", "entities": ["Betelgeuse", "Sun"], "numbers": ["764"], "domain": "math"}
+{"text": "Hardanger embroidery combines linen and drawn thread work; one sampler requires 25 hours.", "entities": ["Hardanger"], "numbers": ["25"], "domain": "math"}
+{"text": "Drip tubing costs $0.50 per meter; irrigating 800 meters costs $400 in materials.", "entities": [], "numbers": ["$0.50", "800", "$400"], "domain": "math"}
+{"text": "Port congestion delays add $50,000 per day; a 5-day delay costs $250,000 in additional fees.", "entities": [], "numbers": ["$50,000", "5", "$250,000"], "domain": "math"}
+{"text": "The rare photography book auction featured 34 volumes selling for $3.4 million total.", "entities": [], "numbers": ["34", "$3.4 million"], "domain": "math"}
+{"text": "Sirius is the brightest star in Earth's night sky at magnitude minus 1.46.", "entities": ["Sirius", "Earth"], "numbers": ["minus 1.46"], "domain": "math"}
+{"text": "Bruges lace originated in medieval Belgium; one handmade collar requires 200 hours.", "entities": ["Bruges", "Belgium"], "numbers": ["200"], "domain": "math"}
+{"text": "Smart irrigation systems adjust based on rainfall; reducing application by 15% conserves 1,200 gallons monthly.", "entities": [], "numbers": ["15%", "1,200"], "domain": "math"}
+{"text": "Break-bulk cargo costs $5,000 per ton to load; loading 24 tons costs $120,000.", "entities": [], "numbers": ["$5,000", "24", "$120,000"], "domain": "math"}
+{"text": "The vintage clothing auction sold 445 items for $2.23 million; average item brought $5,000.", "entities": [], "numbers": ["445", "$2.23 million", "$5,000"], "domain": "math"}
+{"text": "The Helix Nebula contains gas rings expanding at 10 kilometers per second.", "entities": ["Helix Nebula"], "numbers": ["10"], "domain": "math"}
+{"text": "Ikat dyeing requires precise technique; one bolt requires tying 500 knots to create patterns.", "entities": ["Ikat"], "numbers": ["500"], "domain": "math"}
+{"text": "Hydroponics grows 30% more produce using 90% less water than traditional farming.", "entities": [], "numbers": ["30%", "90%"], "domain": "math"}
+{"text": "Multimodal freight tracking integrates 4 transportation modes; efficiency gains save $3,500 per shipment.", "entities": [], "numbers": ["4", "$3,500"], "domain": "math"}
+{"text": "The rare manuscript auction saw 89 documents bring $6.71 million; average manuscript brought $75,400.", "entities": [], "numbers": ["89", "$6.71 million", "$75,400"], "domain": "math"}
+{"text": "Wolf-Rayet stars burn through fuel at extraordinary rates; one loses 10 million solar masses annually.", "entities": [], "numbers": ["10 million"], "domain": "math"}
+{"text": "Schiffli embroidery machines create decorative patterns; one unit produces 500 stitches per second.", "entities": ["Schiffli"], "numbers": ["500"], "domain": "math"}
+{"text": "Capillary irrigation uses soil's natural moisture gradient; water moves 2 meters horizontally underground.", "entities": [], "numbers": ["2"], "domain": "math"}

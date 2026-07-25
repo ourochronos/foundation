@@ -1,0 +1,200 @@
+{"text": "Priya Desai signed the lease on her apartment in Mumbai on June 14th, paying a $1,850 deposit.", "entities": ["Priya Desai", "Mumbai"], "numbers": ["June 14th", "$1,850"], "domain": "narrative"}
+{"text": "Chen Wei received an unexpected refund of $45.23 from an online retailer last week.", "entities": ["Chen Wei"], "numbers": ["$45.23"], "domain": "narrative"}
+{"text": "Amara Johnson started her new role as a graphic designer at the Portland office on January 15th.", "entities": ["Amara Johnson", "Portland"], "numbers": ["January 15th"], "domain": "narrative"}
+{"text": "Soren Andersen fixed his kitchen faucet himself, saving approximately $300 in plumber fees.", "entities": ["Soren Andersen"], "numbers": ["$300"], "domain": "narrative"}
+{"text": "Yuki Tanaka adopted a three-year-old cat named Miso from the Tokyo animal shelter.", "entities": ["Yuki Tanaka", "Miso", "Tokyo"], "numbers": ["three-year-old"], "domain": "narrative"}
+{"text": "Maria García renewed her driver's license in Seville; it expires in 8 years.", "entities": ["Maria García", "Seville"], "numbers": ["8 years"], "domain": "narrative"}
+{"text": "Dmitri Volkov painted his St. Petersburg apartment walls blue on Saturday afternoon.", "entities": ["Dmitri Volkov", "St. Petersburg"], "numbers": [], "domain": "narrative"}
+{"text": "Lakshmi Iyer married Arjun Verma at the Mumbai temple on March 22nd, 2024.", "entities": ["Lakshmi Iyer", "Arjun Verma", "Mumbai"], "numbers": ["March 22nd, 2024"], "domain": "narrative"}
+{"text": "Sophie Dubois found 200 euros in cash hidden inside her grandmother's Paris apartment.", "entities": ["Sophie Dubois", "Paris"], "numbers": ["200 euros"], "domain": "narrative"}
+{"text": "Miguel Santos ordered pizza for his daughter's birthday party at their São Paulo home.", "entities": ["Miguel Santos", "São Paulo"], "numbers": [], "domain": "narrative"}
+{"text": "Naomi Okonkwo secured a promotion to Senior Analyst at the Lagos office with 15% raise.", "entities": ["Naomi Okonkwo", "Lagos"], "numbers": ["15%"], "domain": "narrative"}
+{"text": "Lars Bergström installed new kitchen cabinets in his Stockholm home without professional help.", "entities": ["Lars Bergström", "Stockholm"], "numbers": [], "domain": "narrative"}
+{"text": "Fatima Al-Rashid enrolled her two children in the Abu Dhabi International School.", "entities": ["Fatima Al-Rashid", "Abu Dhabi International School"], "numbers": ["two"], "domain": "narrative"}
+{"text": "James O'Sullivan paid his Dublin property tax of 1,200 euros annually.", "entities": ["James O'Sullivan", "Dublin"], "numbers": ["1,200 euros"], "domain": "narrative"}
+{"text": "Kenji Nakamura celebrated his 40th birthday with close friends at a Tokyo restaurant.", "entities": ["Kenji Nakamura", "Tokyo"], "numbers": ["40th"], "domain": "narrative"}
+{"text": "Rosa Martinez donated 50 books to the Guadalajara library for a fundraiser.", "entities": ["Rosa Martinez", "Guadalajara"], "numbers": ["50"], "domain": "narrative"}
+{"text": "Amir Hassan bought a used bicycle for 150 Egyptian pounds at the Cairo market.", "entities": ["Amir Hassan", "Cairo"], "numbers": ["150 Egyptian pounds"], "domain": "narrative"}
+{"text": "Charlotte Moreau started a vegetable garden in her Lyon backyard this April.", "entities": ["Charlotte Moreau", "Lyon"], "numbers": ["April"], "domain": "narrative"}
+{"text": "Raj Patel opened a small consulting firm in Bangalore with his two partners.", "entities": ["Raj Patel", "Bangalore"], "numbers": ["two"], "domain": "narrative"}
+{"text": "Andreas Schmidt completed his university degree in Berlin after four years of study.", "entities": ["Andreas Schmidt", "Berlin"], "numbers": ["four years"], "domain": "narrative"}
+{"text": "Nia Thompson inherited her grandmother's jewelry collection in Atlanta last month.", "entities": ["Nia Thompson", "Atlanta"], "numbers": [], "domain": "narrative"}
+{"text": "Ibrahim Youssef leased commercial space in Cairo for his new bakery business.", "entities": ["Ibrahim Youssef", "Cairo"], "numbers": [], "domain": "narrative"}
+{"text": "Lidia Kowalski bought plane tickets to Warsaw for 420 dollars per person.", "entities": ["Lidia Kowalski", "Warsaw"], "numbers": ["$420"], "domain": "narrative"}
+{"text": "Hiroshi Yamamoto repaired his Tokyo apartment's heating system on November 3rd.", "entities": ["Hiroshi Yamamoto", "Tokyo"], "numbers": ["November 3rd"], "domain": "narrative"}
+{"text": "Elena Rossi opened a salon in Florence with an investment of 15,000 euros.", "entities": ["Elena Rossi", "Florence"], "numbers": ["15,000 euros"], "domain": "narrative"}
+{"text": "Jackson Clarke moved to Melbourne and signed a 12-month lease on his apartment.", "entities": ["Jackson Clarke", "Melbourne"], "numbers": ["12-month"], "domain": "narrative"}
+{"text": "Ananya Sharma started freelance writing earning 500 rupees per article last week.", "entities": ["Ananya Sharma"], "numbers": ["500 rupees"], "domain": "narrative"}
+{"text": "Hugo Léfevre quit his accounting job in Paris to pursue photography full-time.", "entities": ["Hugo Léfevre", "Paris"], "numbers": [], "domain": "narrative"}
+{"text": "Sophia Papadopoulos visited Athens for two weeks and stayed with her cousin.", "entities": ["Sophia Papadopoulos", "Athens"], "numbers": ["two weeks"], "domain": "narrative"}
+{"text": "Marcus Johnson purchased a used Toyota Camry for $8,500 in Denver.", "entities": ["Marcus Johnson", "Denver"], "numbers": ["$8,500"], "domain": "narrative"}
+{"text": "Yuki Matsuda opened her small bookstore in Kyoto with three employees.", "entities": ["Yuki Matsuda", "Kyoto"], "numbers": ["three"], "domain": "narrative"}
+{"text": "Nadia Abdel-Hakim moved into a studio apartment in Cairo's Nasr City.", "entities": ["Nadia Abdel-Hakim", "Cairo", "Nasr City"], "numbers": [], "domain": "narrative"}
+{"text": "Stefan Novak planted 30 oak trees in his backyard in Zagreb to offset emissions.", "entities": ["Stefan Novak", "Zagreb"], "numbers": ["30"], "domain": "narrative"}
+{"text": "Aaliyah Hassan signed a two-year contract with the Toronto marketing firm.", "entities": ["Aaliyah Hassan", "Toronto"], "numbers": ["two-year"], "domain": "narrative"}
+{"text": "Christos Papadimitriou renovated his Athens kitchen for 8,000 euros this summer.", "entities": ["Christos Papadimitriou", "Athens"], "numbers": ["8,000 euros"], "domain": "narrative"}
+{"text": "Darina Orlova adopted two rescue dogs from the Moscow shelter last Sunday.", "entities": ["Darina Orlova", "Moscow"], "numbers": ["two"], "domain": "narrative"}
+{"text": "Kwame Mensah received his MBA diploma from the University of Ghana on June 15th.", "entities": ["Kwame Mensah", "University of Ghana"], "numbers": ["June 15th"], "domain": "narrative"}
+{"text": "Valerie Beaumont sold her Parisian apartment and purchased one closer to work.", "entities": ["Valerie Beaumont", "Parisian"], "numbers": [], "domain": "narrative"}
+{"text": "Arjun Sharma donated 50,000 rupees to a Delhi charity supporting underprivileged children.", "entities": ["Arjun Sharma", "Delhi"], "numbers": ["50,000 rupees"], "domain": "narrative"}
+{"text": "Tomás García traveled to Buenos Aires for a two-week vacation with his family.", "entities": ["Tomás García", "Buenos Aires"], "numbers": ["two-week"], "domain": "narrative"}
+{"text": "Yuki Nakamura passed her driving test on her second attempt in Tokyo last month.", "entities": ["Yuki Nakamura", "Tokyo"], "numbers": ["second"], "domain": "narrative"}
+{"text": "Fiona McLeod started her Scottish restaurant business with 25,000 pounds initial investment.", "entities": ["Fiona McLeod", "Scottish"], "numbers": ["25,000 pounds"], "domain": "narrative"}
+{"text": "Abbas Al-Mansour retired from his Dubai bank position after 30 years of service.", "entities": ["Abbas Al-Mansour", "Dubai"], "numbers": ["30 years"], "domain": "narrative"}
+{"text": "Silvia Romano found a teaching job in Rome with a monthly salary of 1,400 euros.", "entities": ["Silvia Romano", "Rome"], "numbers": ["1,400 euros"], "domain": "narrative"}
+{"text": "Diego Morales inherited 2 acres of land in rural Mexico from his uncle.", "entities": ["Diego Morales", "Mexico"], "numbers": ["2 acres"], "domain": "narrative"}
+{"text": "Maria Nikolaeva moved to a Moscow apartment costing 45,000 rubles monthly.", "entities": ["Maria Nikolaeva", "Moscow"], "numbers": ["45,000 rubles"], "domain": "narrative"}
+{"text": "Ezra Thompson planted a community garden in his Brooklyn neighborhood with 10 neighbors.", "entities": ["Ezra Thompson", "Brooklyn"], "numbers": ["10"], "domain": "narrative"}
+{"text": "Yara El-Sayed established herself as a freelance graphic designer in Cairo.", "entities": ["Yara El-Sayed", "Cairo"], "numbers": [], "domain": "narrative"}
+{"text": "Pieter Vandermeulen renovated his Brussels home's bathroom in just three weeks.", "entities": ["Pieter Vandermeulen", "Brussels"], "numbers": ["three weeks"], "domain": "narrative"}
+{"text": "Anita Desai celebrated 25 years of marriage with her husband Vikram in Delhi.", "entities": ["Anita Desai", "Vikram", "Delhi"], "numbers": ["25 years"], "domain": "narrative"}
+{"text": "Carlos Ruiz sold his motorcycle in Mexico City for 18,000 pesos.", "entities": ["Carlos Ruiz", "Mexico City"], "numbers": ["18,000 pesos"], "domain": "narrative"}
+{"text": "Freya Johansson completed a 6-week professional course in Stockholm last month.", "entities": ["Freya Johansson", "Stockholm"], "numbers": ["6-week"], "domain": "narrative"}
+{"text": "Zainab Mohammed opened a boutique clothing store in Nairobi with her partner.", "entities": ["Zainab Mohammed", "Nairobi"], "numbers": [], "domain": "narrative"}
+{"text": "Giuseppe Romano invested 3,000 euros in renewable energy panels for his Naples home.", "entities": ["Giuseppe Romano", "Naples"], "numbers": ["3,000 euros"], "domain": "narrative"}
+{"text": "Priya Kapoor started tutoring part-time, earning 300 rupees per hour.", "entities": ["Priya Kapoor"], "numbers": ["300 rupees"], "domain": "narrative"}
+{"text": "Thomas Müller renovated his Berlin apartment and installed energy-efficient windows.", "entities": ["Thomas Müller", "Berlin"], "numbers": [], "domain": "narrative"}
+{"text": "Amandla Ncube completed a marathon in Cape Town in under four hours.", "entities": ["Amandla Ncube", "Cape Town"], "numbers": ["four hours"], "domain": "narrative"}
+{"text": "Samir Hassan purchased a land plot in Giza for 500,000 Egyptian pounds.", "entities": ["Samir Hassan", "Giza"], "numbers": ["500,000 Egyptian pounds"], "domain": "narrative"}
+{"text": "Lucia Martínez taught her first online cooking class from her Madrid kitchen.", "entities": ["Lucia Martínez", "Madrid"], "numbers": [], "domain": "narrative"}
+{"text": "Kenji Yamamoto received a 10% salary bonus from his Tokyo technology firm.", "entities": ["Kenji Yamamoto", "Tokyo"], "numbers": ["10%"], "domain": "narrative"}
+{"text": "Beatrice Fontana volunteered at a Rome animal shelter three times weekly.", "entities": ["Beatrice Fontana", "Rome"], "numbers": ["three"], "domain": "narrative"}
+{"text": "Mohammad Khalil sold his car in Saudi Arabia and bought a new one for 120,000 riyals.", "entities": ["Mohammad Khalil", "Saudi Arabia"], "numbers": ["120,000 riyals"], "domain": "narrative"}
+{"text": "Andrea Jensen moved to Copenhagen and rented a cozy apartment near the city center.", "entities": ["Andrea Jensen", "Copenhagen"], "numbers": [], "domain": "narrative"}
+{"text": "Ravi Menon enrolled his son in a Bangalore coding bootcamp costing 75,000 rupees.", "entities": ["Ravi Menon", "Bangalore"], "numbers": ["75,000 rupees"], "domain": "narrative"}
+{"text": "Sophie Moreau quit her Lyon job to travel through Southeast Asia for six months.", "entities": ["Sophie Moreau", "Lyon", "Southeast Asia"], "numbers": ["six months"], "domain": "narrative"}
+{"text": "Kwesi Owusu established a tech startup in Accra with initial funding of 50,000 dollars.", "entities": ["Kwesi Owusu", "Accra"], "numbers": ["$50,000"], "domain": "narrative"}
+{"text": "Maria Gonzalez purchased a used piano for her daughter in Buenos Aires.", "entities": ["Maria Gonzalez", "Buenos Aires"], "numbers": [], "domain": "narrative"}
+{"text": "Andrei Petrov started an online shop selling handmade crafts from Moscow.", "entities": ["Andrei Petrov", "Moscow"], "numbers": [], "domain": "narrative"}
+{"text": "Zoe Alexandrou designed and printed 500 business cards for her Athens consulting firm.", "entities": ["Zoe Alexandrou", "Athens"], "numbers": ["500"], "domain": "narrative"}
+{"text": "Ivan Horvat completed renovations to his Zagreb house, including a new roof.", "entities": ["Ivan Horvat", "Zagreb"], "numbers": [], "domain": "narrative"}
+{"text": "Parvati Iyer donated her old textbooks to a school library in Chennai.", "entities": ["Parvati Iyer", "Chennai"], "numbers": [], "domain": "narrative"}
+{"text": "Emmanuel Dubois started freelance translating in Paris earning 25 euros per hour.", "entities": ["Emmanuel Dubois", "Paris"], "numbers": ["25 euros"], "domain": "narrative"}
+{"text": "Amira Ahmed established a small beauty salon in Alexandria with two employees.", "entities": ["Amira Ahmed", "Alexandria"], "numbers": ["two"], "domain": "narrative"}
+{"text": "David Cohen purchased art supplies worth 200 dollars to start his hobby in Tel Aviv.", "entities": ["David Cohen", "Tel Aviv"], "numbers": ["$200"], "domain": "narrative"}
+{"text": "Yuki Sato volunteered at a Tokyo community center teaching English to seniors.", "entities": ["Yuki Sato", "Tokyo"], "numbers": [], "domain": "narrative"}
+{"text": "Catalina Torres inherited her grandfather's watch collection totaling 12 antique pieces.", "entities": ["Catalina Torres"], "numbers": ["12"], "domain": "narrative"}
+{"text": "Rashid Al-Maktoum opened a restaurant in Dubai specializing in Emirati cuisine.", "entities": ["Rashid Al-Maktoum", "Dubai"], "numbers": [], "domain": "narrative"}
+{"text": "Isabelle Dubois started a fitness routine at her Lyon gym three times per week.", "entities": ["Isabelle Dubois", "Lyon"], "numbers": ["three"], "domain": "narrative"}
+{"text": "Aryan Patel completed his medical internship in Ahmedabad after two years.", "entities": ["Aryan Patel", "Ahmedabad"], "numbers": ["two years"], "domain": "narrative"}
+{"text": "Marcus Williams relocated his photography business from Boston to Portland.", "entities": ["Marcus Williams", "Boston", "Portland"], "numbers": [], "domain": "narrative"}
+{"text": "Niki Nikolopoulos sold her artwork at an Athens gallery for 4,500 euros total.", "entities": ["Niki Nikolopoulos", "Athens"], "numbers": ["4,500 euros"], "domain": "narrative"}
+{"text": "Sergey Romanov purchased a small dacha outside Moscow for weekend retreats.", "entities": ["Sergey Romanov", "Moscow"], "numbers": [], "domain": "narrative"}
+{"text": "Amara Okafor started a podcast discussing business topics in Lagos.", "entities": ["Amara Okafor", "Lagos"], "numbers": [], "domain": "narrative"}
+{"text": "Henrik Larsson built a bookshelf for his daughter's room in Stockholm.", "entities": ["Henrik Larsson", "Stockholm"], "numbers": [], "domain": "narrative"}
+{"text": "Fatima Al-Zahra gave birth to twins at a Cairo maternity hospital.", "entities": ["Fatima Al-Zahra", "Cairo"], "numbers": ["twins"], "domain": "narrative"}
+{"text": "Leo Russo opened a bakery in Naples, Italy serving homemade bread and pastries.", "entities": ["Leo Russo", "Naples", "Italy"], "numbers": [], "domain": "narrative"}
+{"text": "Jasmine Li started practicing yoga at her Singapore neighborhood studio.", "entities": ["Jasmine Li", "Singapore"], "numbers": [], "domain": "narrative"}
+{"text": "Mikhail Sokolov renovated his St. Petersburg apartment floors over four weekends.", "entities": ["Mikhail Sokolov", "St. Petersburg"], "numbers": ["four weekends"], "domain": "narrative"}
+{"text": "Nina Gupta donated 100 masks to a Delhi hospital during the pandemic.", "entities": ["Nina Gupta", "Delhi"], "numbers": ["100"], "domain": "narrative"}
+{"text": "Jakob Schmidt purchased a new laptop for 900 euros to start freelance web design.", "entities": ["Jakob Schmidt"], "numbers": ["900 euros"], "domain": "narrative"}
+{"text": "Ayesha Rahman opened a bookstore café in Dhaka with her sister.", "entities": ["Ayesha Rahman", "Dhaka"], "numbers": [], "domain": "narrative"}
+{"text": "Pedro Santos hired a tutor for his son's mathematics at his Lisbon home.", "entities": ["Pedro Santos", "Lisbon"], "numbers": [], "domain": "narrative"}
+{"text": "Yuki Ito registered her new pottery studio in Kyoto with the local government.", "entities": ["Yuki Ito", "Kyoto"], "numbers": [], "domain": "narrative"}
+{"text": "Elena Valdez inherited 1,000,000 rupees from a distant relative in Pune.", "entities": ["Elena Valdez", "Pune"], "numbers": ["1,000,000 rupees"], "domain": "narrative"}
+{"text": "Christian Andersen adopted a rescue rabbit from a Copenhagen shelter.", "entities": ["Christian Andersen", "Copenhagen"], "numbers": [], "domain": "narrative"}
+{"text": "Radhika Sharma started a YouTube channel documenting her Delhi food blog daily.", "entities": ["Radhika Sharma", "YouTube", "Delhi"], "numbers": [], "domain": "narrative"}
+{"text": "Manuel González purchased beachfront property in Cancun for 2,000,000 pesos.", "entities": ["Manuel González", "Cancun"], "numbers": ["2,000,000 pesos"], "domain": "narrative"}
+{"text": "Xia Chen started working as an accountant at a Shanghai firm earning 8,000 yuan monthly.", "entities": ["Xia Chen", "Shanghai"], "numbers": ["8,000 yuan"], "domain": "narrative"}
+{"text": "Sophia Kontos opened a physical therapy clinic in Thessaloniki, Greece.", "entities": ["Sophia Kontos", "Thessaloniki", "Greece"], "numbers": [], "domain": "narrative"}
+{"text": "Thabo Mthembu completed a master's degree in engineering at the University of Johannesburg.", "entities": ["Thabo Mthembu", "University of Johannesburg"], "numbers": [], "domain": "narrative"}
+{"text": "Rania Al-Rashid launched an online boutique selling handmade jewelry from Dubai.", "entities": ["Rania Al-Rashid", "Dubai"], "numbers": [], "domain": "narrative"}
+{"text": "André Moreau invested 50,000 euros in a startup company in Paris.", "entities": ["André Moreau", "Paris"], "numbers": ["50,000 euros"], "domain": "narrative"}
+{"text": "Kavya Nair started a pet-sitting business in Kochi earning 400 rupees per day.", "entities": ["Kavya Nair", "Kochi"], "numbers": ["400 rupees"], "domain": "narrative"}
+{"text": "Ethan Roberts sold his vintage motorcycle for 12,000 dollars in Austin, Texas.", "entities": ["Ethan Roberts", "Austin", "Texas"], "numbers": ["$12,000"], "domain": "narrative"}
+{"text": "Layla Hassan volunteered at a Beirut community center teaching English.", "entities": ["Layla Hassan", "Beirut"], "numbers": [], "domain": "narrative"}
+{"text": "Francesco Gallo purchased a sports car in Rome after winning a promotion.", "entities": ["Francesco Gallo", "Rome"], "numbers": [], "domain": "narrative"}
+{"text": "Priya Malhotra renovated her Kolkata kitchen for 200,000 rupees.", "entities": ["Priya Malhotra", "Kolkata"], "numbers": ["200,000 rupees"], "domain": "narrative"}
+{"text": "Alexios Papadakis opened a traditional Greek taverna in Crete.", "entities": ["Alexios Papadakis", "Crete"], "numbers": [], "domain": "narrative"}
+{"text": "Samara Cohen completed a certified yoga teaching course in Tel Aviv.", "entities": ["Samara Cohen", "Tel Aviv"], "numbers": [], "domain": "narrative"}
+{"text": "Dmitry Kozlov started freelance writing for tech publications from Moscow.", "entities": ["Dmitry Kozlov", "Moscow"], "numbers": [], "domain": "narrative"}
+{"text": "Amara Mensah inherited a house in Accra from her late grandmother.", "entities": ["Amara Mensah", "Accra"], "numbers": [], "domain": "narrative"}
+{"text": "Luis Rodriguez purchased a coffee machine for his home office in Mexico City.", "entities": ["Luis Rodriguez", "Mexico City"], "numbers": [], "domain": "narrative"}
+{"text": "Yuki Watanabe started working as a substitute teacher in Tokyo earning 2,500 yen daily.", "entities": ["Yuki Watanabe", "Tokyo"], "numbers": ["2,500 yen"], "domain": "narrative"}
+{"text": "Miriam Solomon established a consulting firm in Jerusalem with 300,000 shekels capital.", "entities": ["Miriam Solomon", "Jerusalem"], "numbers": ["300,000 shekels"], "domain": "narrative"}
+{"text": "Henrik Bergman retired from his Stockholm job after working for 35 years.", "entities": ["Henrik Bergman", "Stockholm"], "numbers": ["35 years"], "domain": "narrative"}
+{"text": "Fatima Khalil donated 1,000 euros to a Cairo women's shelter.", "entities": ["Fatima Khalil", "Cairo"], "numbers": ["1,000 euros"], "domain": "narrative"}
+{"text": "Adrian Popescu started a fitness coaching business in Bucharest.", "entities": ["Adrian Popescu", "Bucharest"], "numbers": [], "domain": "narrative"}
+{"text": "Geeta Misra opened an art gallery in Delhi showcasing local artists.", "entities": ["Geeta Misra", "Delhi"], "numbers": [], "domain": "narrative"}
+{"text": "Xavier Laurent purchased a small farm outside Lyon to grow organic vegetables.", "entities": ["Xavier Laurent", "Lyon"], "numbers": [], "domain": "narrative"}
+{"text": "Aisha Okafor started a fashion design company in Lagos with her friends.", "entities": ["Aisha Okafor", "Lagos"], "numbers": [], "domain": "narrative"}
+{"text": "Matteo Rossini invested in solar panels for his Milan apartment costing 8,000 euros.", "entities": ["Matteo Rossini", "Milan"], "numbers": ["8,000 euros"], "domain": "narrative"}
+{"text": "Zainab Ibrahim sold her handmade crafts online, earning 300 dollars her first month.", "entities": ["Zainab Ibrahim"], "numbers": ["$300"], "domain": "narrative"}
+{"text": "Nikolai Solovyev opened a chess club in Moscow with 15 founding members.", "entities": ["Nikolai Solovyev", "Moscow"], "numbers": ["15"], "domain": "narrative"}
+{"text": "Sophia Andoniou started teaching piano lessons in Nicosia at 20 euros per hour.", "entities": ["Sophia Andoniou", "Nicosia"], "numbers": ["20 euros"], "domain": "narrative"}
+{"text": "Ravi Kumar completed a professional coding certification in Bangalore.", "entities": ["Ravi Kumar", "Bangalore"], "numbers": [], "domain": "narrative"}
+{"text": "Léa Fontaine opened a yoga studio in Marseille with two instructors.", "entities": ["Léa Fontaine", "Marseille"], "numbers": ["two"], "domain": "narrative"}
+{"text": "Hassan Mohamed inherited 500,000 riyals from his father's estate in Saudi Arabia.", "entities": ["Hassan Mohamed", "Saudi Arabia"], "numbers": ["500,000 riyals"], "domain": "narrative"}
+{"text": "Carla Miranda bought a 3-bedroom house in São Paulo for 200,000 dollars.", "entities": ["Carla Miranda", "São Paulo"], "numbers": ["3-bedroom", "$200,000"], "domain": "narrative"}
+{"text": "Yuki Hayashi started a small gardening business in Osaka earning 500 yen per client.", "entities": ["Yuki Hayashi", "Osaka"], "numbers": ["500 yen"], "domain": "narrative"}
+{"text": "Evelina Rossi donated her wedding dress to a Rome charity.", "entities": ["Evelina Rossi", "Rome"], "numbers": [], "domain": "narrative"}
+{"text": "Jamal Thompson started his own plumbing business in Chicago with one employee.", "entities": ["Jamal Thompson", "Chicago"], "numbers": ["one"], "domain": "narrative"}
+{"text": "Yara Mansour opened a small publishing house in Cairo focusing on local authors.", "entities": ["Yara Mansour", "Cairo"], "numbers": [], "domain": "narrative"}
+{"text": "Christoph Weber purchased new photography equipment in Berlin for 3,000 euros.", "entities": ["Christoph Weber", "Berlin"], "numbers": ["3,000 euros"], "domain": "narrative"}
+{"text": "Anjali Sharma started a mentorship program for women entrepreneurs in Mumbai.", "entities": ["Anjali Sharma", "Mumbai"], "numbers": [], "domain": "narrative"}
+{"text": "Ricardo Fernández inherited a vineyard in Argentina with 50 acres.", "entities": ["Ricardo Fernández", "Argentina"], "numbers": ["50 acres"], "domain": "narrative"}
+{"text": "Svetlana Volkova completed a master's degree in linguistics in St. Petersburg.", "entities": ["Svetlana Volkova", "St. Petersburg"], "numbers": [], "domain": "narrative"}
+{"text": "Nadia Al-Mansouri opened a fitness center in Abu Dhabi with 10 trainers.", "entities": ["Nadia Al-Mansouri", "Abu Dhabi"], "numbers": ["10"], "domain": "narrative"}
+{"text": "Ivan Marinkovic sold his house in Belgrade and moved to a smaller apartment.", "entities": ["Ivan Marinkovic", "Belgrade"], "numbers": [], "domain": "narrative"}
+{"text": "Priya Verma started a beauty channel on YouTube with makeup tutorials.", "entities": ["Priya Verma", "YouTube"], "numbers": [], "domain": "narrative"}
+{"text": "Tomas Horvath purchased a second-hand truck for his delivery business in Budapest.", "entities": ["Tomas Horvath", "Budapest"], "numbers": [], "domain": "narrative"}
+{"text": "Amira El-Sayed inherited a textile business from her mother in Alexandria, Egypt.", "entities": ["Amira El-Sayed", "Alexandria", "Egypt"], "numbers": [], "domain": "narrative"}
+{"text": "Klaus Mueller opened a craft brewery in Munich producing 5,000 liters monthly.", "entities": ["Klaus Mueller", "Munich"], "numbers": ["5,000 liters"], "domain": "narrative"}
+{"text": "Keisha Williams started a tutoring center in Atlanta serving 20 students.", "entities": ["Keisha Williams", "Atlanta"], "numbers": ["20"], "domain": "narrative"}
+{"text": "Yuki Nakamura opened a small art gallery in Kyoto displaying traditional paintings.", "entities": ["Yuki Nakamura", "Kyoto"], "numbers": [], "domain": "narrative"}
+{"text": "Dmitri Orlov inherited a publishing company in Moscow with 50 employees.", "entities": ["Dmitri Orlov", "Moscow"], "numbers": ["50"], "domain": "narrative"}
+{"text": "Silvia Costa established a dental practice in Lisbon with two dental chairs.", "entities": ["Silvia Costa", "Lisbon"], "numbers": ["two"], "domain": "narrative"}
+{"text": "Ahmed Hassan purchased auto repair equipment in Cairo worth 15,000 dollars.", "entities": ["Ahmed Hassan", "Cairo"], "numbers": ["$15,000"], "domain": "narrative"}
+{"text": "Laura Gómez renovated her Barcelona apartment kitchen for 12,000 euros.", "entities": ["Laura Gómez", "Barcelona"], "numbers": ["12,000 euros"], "domain": "narrative"}
+{"text": "Priya Desai started offering photography services charging 2,000 rupees per session.", "entities": ["Priya Desai"], "numbers": ["2,000 rupees"], "domain": "narrative"}
+{"text": "Soren Poulsen opened a microbrewery in Copenhagen with 500,000 kroner investment.", "entities": ["Soren Poulsen", "Copenhagen"], "numbers": ["500,000 kroner"], "domain": "narrative"}
+{"text": "Yara Khalil inherited jewelry worth 50,000 dollars from her grandmother in Beirut.", "entities": ["Yara Khalil", "Beirut"], "numbers": ["$50,000"], "domain": "narrative"}
+{"text": "Carlos Mendoza purchased 100 acres of land in rural Mexico for farming.", "entities": ["Carlos Mendoza", "Mexico"], "numbers": ["100 acres"], "domain": "narrative"}
+{"text": "Elena Dimitriou opened a travel agency in Athens serving 15 clients weekly.", "entities": ["Elena Dimitriou", "Athens"], "numbers": ["15"], "domain": "narrative"}
+{"text": "Rashid Al-Hamdani established a technology consulting firm in Baghdad.", "entities": ["Rashid Al-Hamdani", "Baghdad"], "numbers": [], "domain": "narrative"}
+{"text": "Jasmine Wong started a food delivery service in Hong Kong with 5 drivers.", "entities": ["Jasmine Wong", "Hong Kong"], "numbers": ["5"], "domain": "narrative"}
+{"text": "Alexei Mikhailov purchased art supplies worth 10,000 rubles for his Moscow studio.", "entities": ["Alexei Mikhailov", "Moscow"], "numbers": ["10,000 rubles"], "domain": "narrative"}
+{"text": "Amara Adeyemi inherited a family business in Lagos employing 30 people.", "entities": ["Amara Adeyemi", "Lagos"], "numbers": ["30"], "domain": "narrative"}
+{"text": "Felix Hoffmann opened a wine bar in Zurich with 40 seats.", "entities": ["Felix Hoffmann", "Zurich"], "numbers": ["40 seats"], "domain": "narrative"}
+{"text": "Priya Agarwal started an online fashion store selling 500,000 rupees merchandise annually.", "entities": ["Priya Agarwal"], "numbers": ["500,000 rupees"], "domain": "narrative"}
+{"text": "Nikolas Papadopoulos inherited a small hotel in Crete with 20 rooms.", "entities": ["Nikolas Papadopoulos", "Crete"], "numbers": ["20 rooms"], "domain": "narrative"}
+{"text": "Sven Anderson purchased farmland outside Stockholm covering 50 hectares.", "entities": ["Sven Anderson", "Stockholm"], "numbers": ["50 hectares"], "domain": "narrative"}
+{"text": "Zainab Hassan opened a small pharmacy in Alexandria, Egypt with two staff members.", "entities": ["Zainab Hassan", "Alexandria", "Egypt"], "numbers": ["two"], "domain": "narrative"}
+{"text": "Antonio Rossi invested 200,000 euros to open a restaurant in Rome.", "entities": ["Antonio Rossi", "Rome"], "numbers": ["200,000 euros"], "domain": "narrative"}
+{"text": "Amara Nkosi inherited a house in Johannesburg worth 300,000 dollars.", "entities": ["Amara Nkosi", "Johannesburg"], "numbers": ["$300,000"], "domain": "narrative"}
+{"text": "David Levin established a law practice in Tel Aviv with two attorneys.", "entities": ["David Levin", "Tel Aviv"], "numbers": ["two"], "domain": "narrative"}
+{"text": "Yuki Tanaka opened a bookstore in Osaka selling 5,000 titles.", "entities": ["Yuki Tanaka", "Osaka"], "numbers": ["5,000 titles"], "domain": "narrative"}
+{"text": "Katerina Volkova started a boutique hotel business in St. Petersburg with 15 rooms.", "entities": ["Katerina Volkova", "St. Petersburg"], "numbers": ["15 rooms"], "domain": "narrative"}
+{"text": "Hassan Khalil inherited 5,000,000 rupees in property from his uncle in Delhi.", "entities": ["Hassan Khalil", "Delhi"], "numbers": ["5,000,000 rupees"], "domain": "narrative"}
+{"text": "Camila Santos purchased an apartment building in São Paulo with 10 units.", "entities": ["Camila Santos", "São Paulo"], "numbers": ["10 units"], "domain": "narrative"}
+{"text": "Sophia Christopoulou opened a beauty school in Athens training 30 students.", "entities": ["Sophia Christopoulou", "Athens"], "numbers": ["30"], "domain": "narrative"}
+{"text": "Dimitri Petrov inherited a sports complex in Moscow with 8 facilities.", "entities": ["Dimitri Petrov", "Moscow"], "numbers": ["8"], "domain": "narrative"}
+{"text": "Natalia Kovac opened a veterinary clinic in Zagreb with two veterinarians.", "entities": ["Natalia Kovac", "Zagreb"], "numbers": ["two"], "domain": "narrative"}
+{"text": "Amira Ahmed inherited a cosmetics factory in Cairo with 100 employees.", "entities": ["Amira Ahmed", "Cairo"], "numbers": ["100"], "domain": "narrative"}
+{"text": "Henrik Johansson purchased a mountain lodge in Swedish Lapland for rental.", "entities": ["Henrik Johansson", "Swedish Lapland"], "numbers": [], "domain": "narrative"}
+{"text": "Priya Sharma opened a consulting firm in Bangalore with four partners.", "entities": ["Priya Sharma", "Bangalore"], "numbers": ["four"], "domain": "narrative"}
+{"text": "Rashid Al-Maktoum inherited a shopping mall in Dubai with 200 stores.", "entities": ["Rashid Al-Maktoum", "Dubai"], "numbers": ["200 stores"], "domain": "narrative"}
+{"text": "Lucia Romano opened a cooking school in Milan teaching 50 students monthly.", "entities": ["Lucia Romano", "Milan"], "numbers": ["50"], "domain": "narrative"}
+{"text": "Chen Wei inherited a textile plant in Shanghai with 500 employees.", "entities": ["Chen Wei", "Shanghai"], "numbers": ["500"], "domain": "narrative"}
+{"text": "Amara Mensah opened a music school in Accra with 10 instructors.", "entities": ["Amara Mensah", "Accra"], "numbers": ["10"], "domain": "narrative"}
+{"text": "Erik Svensson purchased equipment for his Stockholm construction company worth 1,000,000 kroner.", "entities": ["Erik Svensson", "Stockholm"], "numbers": ["1,000,000 kroner"], "domain": "narrative"}
+{"text": "Yara Youssef inherited a tourist resort in Cairo with 100 rooms.", "entities": ["Yara Youssef", "Cairo"], "numbers": ["100 rooms"], "domain": "narrative"}
+{"text": "Carlos Rodriguez opened a language school in Mexico City training 200 students.", "entities": ["Carlos Rodriguez", "Mexico City"], "numbers": ["200"], "domain": "narrative"}
+{"text": "Elena Papadopoulou inherited a shipping company in Athens with 5 cargo vessels.", "entities": ["Elena Papadopoulou", "Athens"], "numbers": ["5"], "domain": "narrative"}
+{"text": "Soren Nielsen purchased fishing rights for coastal Danish waters.", "entities": ["Soren Nielsen", "Danish"], "numbers": [], "domain": "narrative"}
+{"text": "Priya Bhatia opened a medical clinic in Delhi with three doctors.", "entities": ["Priya Bhatia", "Delhi"], "numbers": ["three"], "domain": "narrative"}
+{"text": "Dmitri Lebedev inherited an oil company in Russia generating 10,000,000 rubles annually.", "entities": ["Dmitri Lebedev", "Russia"], "numbers": ["10,000,000 rubles"], "domain": "narrative"}
+{"text": "Amara Okoro opened a solar energy company in Lagos.", "entities": ["Amara Okoro", "Lagos"], "numbers": [], "domain": "narrative"}
+{"text": "Michael O'Connor purchased a golf course in Dublin spanning 150 acres.", "entities": ["Michael O'Connor", "Dublin"], "numbers": ["150 acres"], "domain": "narrative"}
+{"text": "Yuki Sato inherited a hotel chain in Tokyo with 25 properties.", "entities": ["Yuki Sato", "Tokyo"], "numbers": ["25"], "domain": "narrative"}
+{"text": "Fatima Ibrahim opened an agricultural cooperative in Cairo with 50 members.", "entities": ["Fatima Ibrahim", "Cairo"], "numbers": ["50"], "domain": "narrative"}
+{"text": "Viktor Kovac purchased an island in Croatia for private development.", "entities": ["Viktor Kovac", "Croatia"], "numbers": [], "domain": "narrative"}
+{"text": "Priya Gupta opened a pharmaceutical startup in Bangalore with 20 employees.", "entities": ["Priya Gupta", "Bangalore"], "numbers": ["20"], "domain": "narrative"}
+{"text": "Hassan Al-Rashid inherited a construction company in Dubai with 100 employees.", "entities": ["Hassan Al-Rashid", "Dubai"], "numbers": ["100"], "domain": "narrative"}
+{"text": "Isabella Rossi inherited a wine vineyard in Tuscany spanning 100 acres.", "entities": ["Isabella Rossi", "Tuscany"], "numbers": ["100 acres"], "domain": "narrative"}
+{"text": "Chen Ming opened a technology park in Shanghai with 50 companies.", "entities": ["Chen Ming", "Shanghai"], "numbers": ["50"], "domain": "narrative"}
+{"text": "Amara Okafor inherited a broadcasting company in Lagos with 200 employees.", "entities": ["Amara Okafor", "Lagos"], "numbers": ["200"], "domain": "narrative"}
+{"text": "Wolfgang Schmidt purchased a castle in Bavaria for restoration and tourism.", "entities": ["Wolfgang Schmidt", "Bavaria"], "numbers": [], "domain": "narrative"}
+{"text": "Yuki Yamamoto inherited a luxury hotel in Kyoto with 60 rooms.", "entities": ["Yuki Yamamoto", "Kyoto"], "numbers": ["60 rooms"], "domain": "narrative"}
+{"text": "Nadia Al-Hamdani opened a research institute in Baghdad with 30 scientists.", "entities": ["Nadia Al-Hamdani", "Baghdad"], "numbers": ["30"], "domain": "narrative"}
+{"text": "Prem Rajesh inherited a financial consulting firm in Mumbai employing 75 people.", "entities": ["Prem Rajesh", "Mumbai"], "numbers": ["75"], "domain": "narrative"}

@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-07-23T00:19:11.126332+00:00",
+  "d_pe": 32,
+  "splits": {
+    "train_invert": [
+      "argument_swap",
+      "location_swap",
+      "quantity_double",
+      "negation",
+      "comparative_flip"
+    ],
+    "train_preserve": [
+      "active_passive",
+      "synonym_swap",
+      "clause_reorder"
+    ],
+    "held_structural": [
+      "causal_reverse",
+      "date_shift"
+    ],
+    "held_marked": [
+      "tense_shift",
+      "hedge"
+    ],
+    "held_valence": [
+      "presence_absence",
+      "success_failure",
+      "approval_rejection",
+      "superlative_flip",
+      "quantifier_change",
+      "increase_decrease"
+    ],
+    "held_preserve": [
+      "formality_shift",
+      "paraphrase"
+    ]
+  },
+  "random_init": {
+    "approval_rejection": 0.9941026568412781,
+    "causal_reverse": 0.9987669587135315,
+    "comparative_flip": 0.9969367980957031,
+    "date_shift": 0.9944913983345032,
+    "increase_decrease": 0.9960986375808716,
+    "quantity_double": 0.997493326663971,
+    "formality_shift": 0.9875423312187195,
+    "hedge": 0.9950196743011475,
+    "location_swap": 0.9930305480957031,
+    "negation": 0.9941168427467346,
+    "success_failure": 0.9947705864906311,
+    "paraphrase": 0.9973602890968323,
+    "active_passive": 0.9968507289886475,
+    "presence_absence": 0.9945747256278992,
+    "quantifier_change": 0.9979230761528015,
+    "clause_reorder": 0.999158501625061,
+    "superlative_flip": 0.9963709712028503,
+    "argument_swap": 0.9996280670166016,
+    "synonym_swap": 0.9978420734405518,
+    "tense_shift": 0.9982537627220154
+  },
+  "trained": {
+    "approval_rejection": 0.4281170070171356,
+    "causal_reverse": 0.9645592570304871,
+    "comparative_flip": 0.32610857486724854,
+    "date_shift": 0.7168353199958801,
+    "increase_decrease": 0.5316998362541199,
+    "quantity_double": 0.583987832069397,
+    "formality_shift": 0.6971313953399658,
+    "hedge": 0.9360037446022034,
+    "location_swap": 0.5484402775764465,
+    "negation": 0.27554768323898315,
+    "success_failure": 0.43509969115257263,
+    "paraphrase": 0.9537463784217834,
+    "active_passive": 0.9549405574798584,
+    "presence_absence": 0.30210942029953003,
+    "quantifier_change": 0.9360193014144897,
+    "clause_reorder": 0.9848222136497498,
+    "superlative_flip": 0.36641785502433777,
+    "argument_swap": 0.9774056673049927,
+    "synonym_swap": 0.9648385047912598,
+    "tense_shift": 0.948840320110321
+  },
+  "role_means": {
+    "train-invert": 0.5422980070114136,
+    "train-preserve": 0.9682004253069559,
+    "HELD-structural": 0.8406972885131836,
+    "HELD-marked": 0.9424220323562622,
+    "HELD-valence": 0.49991051852703094,
+    "HELD-preserve": 0.8254388868808746
+  },
+  "s_spread": 0.14249423146247864,
+  "s_domain_purity": 0.35719999999999996,
+  "verdict": "no transfer to held-out structural types"
+}

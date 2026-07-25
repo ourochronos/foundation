@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-07-22T20:44:28.681525+00:00",
+  "args": {
+    "epochs": 12,
+    "bs": 6,
+    "grad_accum": 5,
+    "gen_bs": 12,
+    "k_sparse": 24,
+    "sigma_max": 0.4,
+    "lr_proj": 0.001,
+    "lr_lora": 0.0002,
+    "max_len": 64,
+    "smoke": false
+  },
+  "steps": 1759,
+  "final_loss": 0.01957708310801536,
+  "conditions": {
+    "both_correct": {
+      "n": 250,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.11467889908256881,
+      "n_entities": 218,
+      "number_em": 0.20656370656370657,
+      "number_em_relaxed": 0.20656370656370657,
+      "n_numbers": 518
+    },
+    "sparse_shuffled": {
+      "n": 250,
+      "exact_text_rate": 0.004,
+      "entity_em": 0.11009174311926606,
+      "n_entities": 218,
+      "number_em": 0.2084942084942085,
+      "number_em_relaxed": 0.21235521235521235,
+      "n_numbers": 518
+    },
+    "dense_shuffled": {
+      "n": 250,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.0045871559633027525,
+      "n_entities": 218,
+      "number_em": 0.021235521235521235,
+      "number_em_relaxed": 0.021235521235521235,
+      "n_numbers": 518
+    },
+    "both_shuffled": {
+      "n": 250,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.0045871559633027525,
+      "n_entities": 218,
+      "number_em": 0.021235521235521235,
+      "number_em_relaxed": 0.021235521235521235,
+      "n_numbers": 518
+    }
+  },
+  "robustness": [
+    {
+      "n": 100,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.1015625,
+      "n_entities": 128,
+      "number_em": 0.15833333333333333,
+      "number_em_relaxed": 0.15833333333333333,
+      "n_numbers": 240,
+      "sigma": 0.0,
+      "latent_cos": 1.0
+    },
+    {
+      "n": 100,
+      "exact_text_rate": 0.01,
+      "entity_em": 0.078125,
+      "n_entities": 128,
+      "number_em": 0.17083333333333334,
+      "number_em_relaxed": 0.175,
+      "n_numbers": 240,
+      "sigma": 0.5,
+      "latent_cos": 0.8944271909999159
+    },
+    {
+      "n": 100,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.0625,
+      "n_entities": 128,
+      "number_em": 0.125,
+      "number_em_relaxed": 0.12916666666666668,
+      "n_numbers": 240,
+      "sigma": 1.0,
+      "latent_cos": 0.7071067811865475
+    },
+    {
+      "n": 100,
+      "exact_text_rate": 0.0,
+      "entity_em": 0.0078125,
+      "n_entities": 128,
+      "number_em": 0.058333333333333334,
+      "number_em_relaxed": 0.058333333333333334,
+      "n_numbers": 240,
+      "sigma": 2.0,
+      "latent_cos": 0.4472135954999579
+    }
+  ],
+  "v0_dense_only": {
+    "n": 250,
+    "exact_text_rate": 0.0,
+    "entity_em": 0.11467889908256881,
+    "n_entities": 218,
+    "number_em": 0.17374517374517376,
+    "number_em_relaxed": 0.1776061776061776,
+    "n_numbers": 518
+  }
+}

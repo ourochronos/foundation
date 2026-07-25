@@ -1,0 +1,132 @@
+{"relation": "quantity_double", "x": "The reservoir supplies 40 million liters each week.", "y": "The reservoir supplies 80 million liters each week."}
+{"relation": "quantity_double", "x": "The factory produces 500 units per hour.", "y": "The factory produces 1000 units per hour."}
+{"relation": "quantity_double", "x": "The investment returned 12 percent annual interest.", "y": "The investment returned 24 percent annual interest."}
+{"relation": "quantity_double", "x": "The recipe calls for 250 grams of flour.", "y": "The recipe calls for 500 grams of flour."}
+{"relation": "quantity_double", "x": "The athlete ran 10 kilometers in training.", "y": "The athlete ran 20 kilometers in training."}
+{"relation": "quantity_double", "x": "The bacterial colony contains 5 million cells.", "y": "The bacterial colony contains 10 million cells."}
+{"relation": "quantity_double", "x": "The patient requires 100 milligrams daily.", "y": "The patient requires 200 milligrams daily."}
+{"relation": "quantity_double", "x": "The car travels 8 kilometers per liter.", "y": "The car travels 16 kilometers per liter."}
+{"relation": "quantity_double", "x": "Store inventory includes 300 shirts.", "y": "Store inventory includes 600 shirts."}
+{"relation": "quantity_double", "x": "The farm produces 150 tons of wheat annually.", "y": "The farm produces 300 tons of wheat annually."}
+{"relation": "quantity_double", "x": "The power plant generates 600 megawatts.", "y": "The power plant generates 1200 megawatts."}
+{"relation": "quantity_double", "x": "The building requires 200 steel beams.", "y": "The building requires 400 steel beams."}
+{"relation": "quantity_double", "x": "School enrollment increased by 50 students.", "y": "School enrollment increased by 100 students."}
+{"relation": "quantity_double", "x": "The factory emits 2000 tons of CO2 annually.", "y": "The factory emits 4000 tons of CO2 annually."}
+{"relation": "quantity_double", "x": "The server processes 10000 requests per second.", "y": "The server processes 20000 requests per second."}
+{"relation": "quantity_double", "x": "The hurricane traveled 300 miles inland.", "y": "The hurricane traveled 600 miles inland."}
+{"relation": "quantity_double", "x": "The blood pressure reading was 120 over 80.", "y": "The blood pressure reading was 240 over 160."}
+{"relation": "quantity_double", "x": "The gene sequence contains 15 base pairs.", "y": "The gene sequence contains 30 base pairs."}
+{"relation": "quantity_double", "x": "The swimmer completed 25 laps today.", "y": "The swimmer completed 50 laps today."}
+{"relation": "quantity_double", "x": "Sales increased by 35 percent this quarter.", "y": "Sales increased by 70 percent this quarter."}
+{"relation": "quantity_double", "x": "The lake holds 500 million gallons of water.", "y": "The lake holds 1000 million gallons of water."}
+{"relation": "quantity_double", "x": "Production costs decreased by 18 dollars per unit.", "y": "Production costs decreased by 36 dollars per unit."}
+{"relation": "quantity_double", "x": "The cake baked for 45 minutes.", "y": "The cake baked for 90 minutes."}
+{"relation": "quantity_double", "x": "The team scored 72 points in the game.", "y": "The team scored 144 points in the game."}
+{"relation": "quantity_double", "x": "The enzyme breaks down 8 molecules per second.", "y": "The enzyme breaks down 16 molecules per second."}
+{"relation": "quantity_double", "x": "The patient's heart rate was 60 beats per minute.", "y": "The patient's heart rate was 120 beats per minute."}
+{"relation": "quantity_double", "x": "The truck can carry 5 tons of cargo.", "y": "The truck can carry 10 tons of cargo."}
+{"relation": "quantity_double", "x": "The store offers 20 percent discount on electronics.", "y": "The store offers 40 percent discount on electronics."}
+{"relation": "quantity_double", "x": "Annual rainfall in the region is 60 inches.", "y": "Annual rainfall in the region is 120 inches."}
+{"relation": "quantity_double", "x": "The circuit board has 256 transistors.", "y": "The circuit board has 512 transistors."}
+{"relation": "quantity_double", "x": "The marathon course is 42 kilometers long.", "y": "The marathon course is 84 kilometers long."}
+{"relation": "quantity_double", "x": "The mortgage rate is 4.5 percent annually.", "y": "The mortgage rate is 9 percent annually."}
+{"relation": "quantity_double", "x": "The oven temperature should reach 180 degrees Celsius.", "y": "The oven temperature should reach 360 degrees Celsius."}
+{"relation": "quantity_double", "x": "The orchestra has 88 musicians performing.", "y": "The orchestra has 176 musicians performing."}
+{"relation": "quantity_double", "x": "The virus infected 1000 cells in the sample.", "y": "The virus infected 2000 cells in the sample."}
+{"relation": "quantity_double", "x": "The helicopter altitude is 2000 feet above ground.", "y": "The helicopter altitude is 4000 feet above ground."}
+{"relation": "quantity_double", "x": "The loan principal is 50000 dollars.", "y": "The loan principal is 100000 dollars."}
+{"relation": "quantity_double", "x": "The recipe yields 12 servings.", "y": "The recipe yields 24 servings."}
+{"relation": "quantity_double", "x": "The soccer field measures 100 meters in length.", "y": "The soccer field measures 200 meters in length."}
+{"relation": "quantity_double", "x": "The bacteria reproduce every 20 minutes.", "y": "The bacteria reproduce every 40 minutes."}
+{"relation": "quantity_double", "x": "The document contains 500 words.", "y": "The document contains 1000 words."}
+{"relation": "quantity_double", "x": "The investment portfolio grew 25 percent annually.", "y": "The investment portfolio grew 50 percent annually."}
+{"relation": "quantity_double", "x": "The coal mine extracts 30 tons daily.", "y": "The coal mine extracts 60 tons daily."}
+{"relation": "quantity_double", "x": "The telescope has a magnification of 200 times.", "y": "The telescope has a magnification of 400 times."}
+{"relation": "quantity_double", "x": "The basketball player scored 15 three-pointers.", "y": "The basketball player scored 30 three-pointers."}
+{"relation": "quantity_double", "x": "The DNA molecule contains 200 base pairs.", "y": "The DNA molecule contains 400 base pairs."}
+{"relation": "quantity_double", "x": "The stock price increased by 8 dollars.", "y": "The stock price increased by 16 dollars."}
+{"relation": "quantity_double", "x": "The water treatment facility processes 2 million gallons daily.", "y": "The water treatment facility processes 4 million gallons daily."}
+{"relation": "quantity_double", "x": "The athlete's vertical jump is 24 inches.", "y": "The athlete's vertical jump is 48 inches."}
+{"relation": "quantity_double", "x": "The company has 75 employees on staff.", "y": "The company has 150 employees on staff."}
+{"relation": "quantity_double", "x": "The wine bottle contains 750 milliliters.", "y": "The wine bottle contains 1500 milliliters."}
+{"relation": "quantity_double", "x": "The disease mortality rate is 5 percent.", "y": "The disease mortality rate is 10 percent."}
+{"relation": "quantity_double", "x": "The garden uses 100 liters of water weekly.", "y": "The garden uses 200 liters of water weekly."}
+{"relation": "quantity_double", "x": "The metal bar weighs 2.5 kilograms.", "y": "The metal bar weighs 5 kilograms."}
+{"relation": "quantity_double", "x": "The concert ticket costs 50 dollars.", "y": "The concert ticket costs 100 dollars."}
+{"relation": "quantity_double", "x": "The satellite orbits Earth every 90 minutes.", "y": "The satellite orbits Earth every 180 minutes."}
+{"relation": "quantity_double", "x": "The book has 350 pages.", "y": "The book has 700 pages."}
+{"relation": "quantity_double", "x": "The polymer chain contains 100 monomers.", "y": "The polymer chain contains 200 monomers."}
+{"relation": "quantity_double", "x": "The warehouse stores 5000 boxes.", "y": "The warehouse stores 10000 boxes."}
+{"relation": "quantity_double", "x": "The quarterly revenue was 2 million dollars.", "y": "The quarterly revenue was 4 million dollars."}
+{"relation": "quantity_double", "x": "The bacteria count reached 10000 per milliliter.", "y": "The bacteria count reached 20000 per milliliter."}
+{"relation": "quantity_double", "x": "The laser beam has a wavelength of 532 nanometers.", "y": "The laser beam has a wavelength of 1064 nanometers."}
+{"relation": "quantity_double", "x": "The runner completed the race in 22 minutes.", "y": "The runner completed the race in 44 minutes."}
+{"relation": "quantity_double", "x": "The insurance policy costs 1200 dollars annually.", "y": "The insurance policy costs 2400 dollars annually."}
+{"relation": "quantity_double", "x": "The plant grows 3 centimeters per week.", "y": "The plant grows 6 centimeters per week."}
+{"relation": "quantity_double", "x": "The server memory is 16 gigabytes.", "y": "The server memory is 32 gigabytes."}
+{"relation": "quantity_double", "x": "The volcano erupted with 15 megatons of force.", "y": "The volcano erupted with 30 megatons of force."}
+{"relation": "quantity_double", "x": "The credit card limit is 5000 dollars.", "y": "The credit card limit is 10000 dollars."}
+{"relation": "quantity_double", "x": "The river flows 200 cubic meters per second.", "y": "The river flows 400 cubic meters per second."}
+{"relation": "quantity_double", "x": "The pharmaceutical batch contains 10000 tablets.", "y": "The pharmaceutical batch contains 20000 tablets."}
+{"relation": "quantity_double", "x": "The sound wave frequency is 440 hertz.", "y": "The sound wave frequency is 880 hertz."}
+{"relation": "quantity_double", "x": "The crop yield is 8 tons per hectare.", "y": "The crop yield is 16 tons per hectare."}
+{"relation": "quantity_double", "x": "The museum visitor count was 50000 last month.", "y": "The museum visitor count was 100000 last month."}
+{"relation": "quantity_double", "x": "The chemical reaction time is 15 seconds.", "y": "The chemical reaction time is 30 seconds."}
+{"relation": "quantity_double", "x": "The network bandwidth is 100 megabits per second.", "y": "The network bandwidth is 200 megabits per second."}
+{"relation": "quantity_double", "x": "The football field is 100 yards long.", "y": "The football field is 200 yards long."}
+{"relation": "quantity_double", "x": "The enzyme has a turnover rate of 1000 molecules per second.", "y": "The enzyme has a turnover rate of 2000 molecules per second."}
+{"relation": "quantity_double", "x": "The company profit margin is 12 percent.", "y": "The company profit margin is 24 percent."}
+{"relation": "quantity_double", "x": "The underground reservoir holds 80 million barrels.", "y": "The underground reservoir holds 160 million barrels."}
+{"relation": "quantity_double", "x": "The chess tournament had 32 participants.", "y": "The chess tournament had 64 participants."}
+{"relation": "quantity_double", "x": "The patient's BMI is 25 kilograms per square meter.", "y": "The patient's BMI is 50 kilograms per square meter."}
+{"relation": "quantity_double", "x": "The construction project uses 500 workers.", "y": "The construction project uses 1000 workers."}
+{"relation": "quantity_double", "x": "The solar panel produces 300 watts.", "y": "The solar panel produces 600 watts."}
+{"relation": "quantity_double", "x": "The train travels at 120 kilometers per hour.", "y": "The train travels at 240 kilometers per hour."}
+{"relation": "quantity_double", "x": "The university enrolled 8000 students this year.", "y": "The university enrolled 16000 students this year."}
+{"relation": "quantity_double", "x": "The earthquake measured 5.5 on the Richter scale.", "y": "The earthquake measured 11 on the Richter scale."}
+{"relation": "quantity_double", "x": "The battery capacity is 3000 milliampere-hours.", "y": "The battery capacity is 6000 milliampere-hours."}
+{"relation": "quantity_double", "x": "The restaurant serves 300 customers daily.", "y": "The restaurant serves 600 customers daily."}
+{"relation": "quantity_double", "x": "The protein structure contains 200 amino acids.", "y": "The protein structure contains 400 amino acids."}
+{"relation": "quantity_double", "x": "The aircraft flies at 500 miles per hour.", "y": "The aircraft flies at 1000 miles per hour."}
+{"relation": "quantity_double", "x": "The project budget is 250000 dollars.", "y": "The project budget is 500000 dollars."}
+{"relation": "quantity_double", "x": "The bacteria population is 1 million cells.", "y": "The bacteria population is 2 million cells."}
+{"relation": "quantity_double", "x": "The light bulb consumes 60 watts.", "y": "The light bulb consumes 120 watts."}
+{"relation": "quantity_double", "x": "The coal power plant burns 100 tons daily.", "y": "The coal power plant burns 200 tons daily."}
+{"relation": "quantity_double", "x": "The diamond has 50 carats.", "y": "The diamond has 100 carats."}
+{"relation": "quantity_double", "x": "The highway speed limit is 65 miles per hour.", "y": "The highway speed limit is 130 miles per hour."}
+{"relation": "quantity_double", "x": "The organic farm covers 40 acres.", "y": "The organic farm covers 80 acres."}
+{"relation": "quantity_double", "x": "The software update is 500 megabytes.", "y": "The software update is 1000 megabytes."}
+{"relation": "quantity_double", "x": "The temperature increase was 5 degrees Celsius.", "y": "The temperature increase was 10 degrees Celsius."}
+{"relation": "quantity_double", "x": "The pension fund has 3 billion dollars.", "y": "The pension fund has 6 billion dollars."}
+{"relation": "quantity_double", "x": "The ant colony contains 100 thousand ants.", "y": "The ant colony contains 200 thousand ants."}
+{"relation": "quantity_double", "x": "The car insurance deductible is 1000 dollars.", "y": "The car insurance deductible is 2000 dollars."}
+{"relation": "quantity_double", "x": "The radio station broadcasts at 98.5 megahertz.", "y": "The radio station broadcasts at 197 megahertz."}
+{"relation": "quantity_double", "x": "The beehive produces 20 pounds of honey.", "y": "The beehive produces 40 pounds of honey."}
+{"relation": "quantity_double", "x": "The industrial kiln reaches 1200 degrees Celsius.", "y": "The industrial kiln reaches 2400 degrees Celsius."}
+{"relation": "quantity_double", "x": "The parking lot has 200 spaces.", "y": "The parking lot has 400 spaces."}
+{"relation": "quantity_double", "x": "The fish farm produces 500 kilograms of fish.", "y": "The fish farm produces 1000 kilograms of fish."}
+{"relation": "quantity_double", "x": "The rocket accelerates at 9.8 meters per second squared.", "y": "The rocket accelerates at 19.6 meters per second squared."}
+{"relation": "quantity_double", "x": "The grocery store has 10 checkout lanes.", "y": "The grocery store has 20 checkout lanes."}
+{"relation": "quantity_double", "x": "The telescope mirror is 10 meters in diameter.", "y": "The telescope mirror is 20 meters in diameter."}
+{"relation": "quantity_double", "x": "The smartphone storage is 128 gigabytes.", "y": "The smartphone storage is 256 gigabytes."}
+{"relation": "quantity_double", "x": "The oil well produces 1000 barrels per day.", "y": "The oil well produces 2000 barrels per day."}
+{"relation": "quantity_double", "x": "The population growth rate is 2 percent annually.", "y": "The population growth rate is 4 percent annually."}
+{"relation": "quantity_double", "x": "The paper mill produces 500 tons weekly.", "y": "The paper mill produces 1000 tons weekly."}
+{"relation": "quantity_double", "x": "The disease incidence is 100 cases per 100000 people.", "y": "The disease incidence is 200 cases per 100000 people."}
+{"relation": "quantity_double", "x": "The fountain shoots water 15 meters high.", "y": "The fountain shoots water 30 meters high."}
+{"relation": "quantity_double", "x": "The retailer marks up items by 35 percent.", "y": "The retailer marks up items by 70 percent."}
+{"relation": "quantity_double", "x": "The wind turbine generates 2000 kilowatts.", "y": "The wind turbine generates 4000 kilowatts."}
+{"relation": "quantity_double", "x": "The tennis court is 78 feet long.", "y": "The tennis court is 156 feet long."}
+{"relation": "quantity_double", "x": "The archaeological site contains 500 artifacts.", "y": "The archaeological site contains 1000 artifacts."}
+{"relation": "quantity_double", "x": "The medication has a half-life of 6 hours.", "y": "The medication has a half-life of 12 hours."}
+{"relation": "quantity_double", "x": "The microorganism divides into 2 daughter cells.", "y": "The microorganism divides into 4 daughter cells."}
+{"relation": "quantity_double", "x": "The warehouse temperature is maintained at 18 degrees Celsius.", "y": "The warehouse temperature is maintained at 36 degrees Celsius."}
+{"relation": "quantity_double", "x": "The volcano's summit is 3000 meters above sea level.", "y": "The volcano's summit is 6000 meters above sea level."}
+{"relation": "quantity_double", "x": "The manufacturing process yields 80 percent efficiency.", "y": "The manufacturing process yields 160 percent efficiency."}
+{"relation": "quantity_double", "x": "The swimming pool contains 25000 gallons.", "y": "The swimming pool contains 50000 gallons."}
+{"relation": "quantity_double", "x": "The financial report shows assets of 1 million dollars.", "y": "The financial report shows assets of 2 million dollars."}
+{"relation": "quantity_double", "x": "The biological cell contains 46 chromosomes.", "y": "The biological cell contains 92 chromosomes."}
+{"relation": "quantity_double", "x": "The irrigation system delivers 50000 liters daily.", "y": "The irrigation system delivers 100000 liters daily."}
+{"relation": "quantity_double", "x": "The atomic nucleus has 26 protons.", "y": "The atomic nucleus has 52 protons."}
+{"relation": "quantity_double", "x": "The manufacturing defect rate is 0.5 percent.", "y": "The manufacturing defect rate is 1 percent."}
+{"relation": "quantity_double", "x": "The tennis match lasted 3 hours.", "y": "The tennis match lasted 6 hours."}

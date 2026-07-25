@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-07-23T04:27:21.592000+00:00",
+  "ckpt": "decoder_v2",
+  "n_pairs": 60,
+  "curve": [
+    {
+      "t": 0.0,
+      "roundtrip_cos_mean": 0.7925697565078735,
+      "roundtrip_cos_p10": 0.5807818174362183,
+      "mean_words": 15.683333333333334
+    },
+    {
+      "t": 0.25,
+      "roundtrip_cos_mean": 0.7256630659103394,
+      "roundtrip_cos_p10": 0.5419687628746033,
+      "mean_words": 16.116666666666667
+    },
+    {
+      "t": 0.5,
+      "roundtrip_cos_mean": 0.5618219375610352,
+      "roundtrip_cos_p10": 0.41793709993362427,
+      "mean_words": 16.066666666666666
+    },
+    {
+      "t": 0.75,
+      "roundtrip_cos_mean": 0.3061180114746094,
+      "roundtrip_cos_p10": 0.22825177013874054,
+      "mean_words": 15.45
+    },
+    {
+      "t": 1.0,
+      "roundtrip_cos_mean": 0.008646761998534203,
+      "roundtrip_cos_p10": -0.04531819000840187,
+      "mean_words": 15.666666666666666
+    }
+  ],
+  "endpoint_mean": 0.40060825925320387,
+  "midpoint": 0.5618219375610352,
+  "relative_drop": -0.4024222531216872,
+  "samples": {
+    "0.0": [
+      "Since the magnetic field reached 2.3 Gauss, the electron trajectories traced a curved path of 5 centimeters.",
+      "Since the warming plan cooled 0.8 degrees Celsius, fish catches fell dramatically due to coldest biomes.",
+      "Since the groundwater pump dropped 12.3 meters per year, municipal water tables were hypothesized to drop 8.9 billion gallons."
+    ],
+    "0.25": [
+      "Since the magnetic field reached 2.3 Gauss, the electron trajectories traced a curved path of 5 centimeters.",
+      "Since the warming plan cooled 0.8 degrees Celsius, fish catches fell dramatically due to coldest biomes.",
+      "Since the groundwater pump dropped 12.3 meters per year, municipal water tables dropped by 8.9 billion gallons."
+    ],
+    "0.5": [
+      "Since the magnetic field reached 2.3 Gauss, the electron trajectories traced a curved path of 5 centimeters.",
+      "Since the warming plan cooled 0.8 degrees Celsius, the fish biomass fell dramatically due to coldest fishing zones.",
+      "Since the municipal water pump dropped 1.2 meters per year, household tablets were queried in 8.3 billion gallons."
+    ],
+    "0.75": [
+      "Since the magnetic field reached 2.3 Gauss, the electron trajectories of Tesla field underwent radiation.",
+      "Since the fishing plan's biomass catch fell 41% due to warming oceans, the colony collapsed dramatically.",
+      "Since the water table dropped 12.3 meters, municipal pump operations were queried yearly."
+    ],
+    "1.0": [
+      "Since the magnetic field reached 3.2 Gauss, the electron trajectories of Tesla field underwent radiation.",
+      "Since the fishing plan's biomass catch fell 41% due to warming oceans, the colony collapsed dramatically.",
+      "Since the aquifer table dropped 12.3 meters, municipal water pumps were hacked per year."
+    ]
+  }
+}

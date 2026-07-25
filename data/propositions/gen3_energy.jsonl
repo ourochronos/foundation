@@ -1,0 +1,300 @@
+{"text": "Meridian Wind Complex in Alberta operates 847 turbines generating 1,240 megawatts of peak capacity.", "entities": ["Meridian Wind Complex", "Alberta"], "numbers": ["847", "1,240", "megawatts"], "domain": "energy"}
+{"text": "Battery storage facility maintains 98.5% charging efficiency across 8,000 operational cycles.", "entities": ["Battery storage facility"], "numbers": ["98.5%", "8,000"], "domain": "energy"}
+{"text": "Sunburst solar array achieves 23.4% capacity factor during peak production season.", "entities": ["Sunburst solar array"], "numbers": ["23.4%"], "domain": "energy"}
+{"text": "Grid transmission losses in Northeast region measured 7.2% during summer demand peak.", "entities": ["Northeast region"], "numbers": ["7.2%"], "domain": "energy"}
+{"text": "Riverside thermal plant delivers 412 megawatts at 43% efficiency rating.", "entities": ["Riverside thermal plant"], "numbers": ["412", "megawatts", "43%"], "domain": "energy"}
+{"text": "Tidal power station near Orkney Islands produces 45 megawatts from 120 tidal turbines.", "entities": ["Orkney Islands"], "numbers": ["45", "megawatts", "120"], "domain": "energy"}
+{"text": "Hydroelectric dam at Clearwater Valley maintains water level between 340 and 365 meters.", "entities": ["Clearwater Valley"], "numbers": ["340", "365", "meters"], "domain": "energy"}
+{"text": "Distributed solar network across 3,200 rooftops generates 285 megawatts peak capacity.", "entities": ["solar network"], "numbers": ["3,200", "285", "megawatts"], "domain": "energy"}
+{"text": "Wind farm outage in March lasted 18 hours affecting 156 megawatts supply.", "entities": ["Wind farm"], "numbers": ["18", "hours", "156", "megawatts"], "domain": "energy"}
+{"text": "Industrial tariff increased from $0.078 to $0.095 per kilowatt-hour this quarter.", "entities": ["Industrial tariff"], "numbers": ["0.078", "0.095"], "domain": "energy"}
+{"text": "Pumped hydro storage contains 287 megawatt-hours usable energy at 81% round-trip efficiency.", "entities": ["Pumped hydro storage"], "numbers": ["287", "megawatt-hours", "81%"], "domain": "energy"}
+{"text": "Coal plant retirement reduces regional capacity by 520 megawatts starting Q4 2026.", "entities": ["Coal plant"], "numbers": ["520", "megawatts", "Q4 2026"], "domain": "energy"}
+{"text": "Microgrid cluster near Portland integrates 450 distributed generation assets totaling 67 megawatts.", "entities": ["Portland", "Microgrid cluster"], "numbers": ["450", "67", "megawatts"], "domain": "energy"}
+{"text": "Nuclear facility achieved 94.3% capacity factor annually exceeding 98,000 gigawatt-hours generation.", "entities": ["Nuclear facility"], "numbers": ["94.3%", "98,000", "gigawatt-hours"], "domain": "energy"}
+{"text": "Lithium-ion battery pack stores 450 kilowatt-hours with 96% depth-of-discharge capability.", "entities": ["Lithium-ion battery pack"], "numbers": ["450", "kilowatt-hours", "96%"], "domain": "energy"}
+{"text": "Offshore wind installation scheduled for 2,800 megawatts using 420 turbines.", "entities": ["Offshore wind installation"], "numbers": ["2,800", "megawatts", "420"], "domain": "energy"}
+{"text": "Geothermal plant maintains baseline 89 megawatts output with 73% annual capacity factor.", "entities": ["Geothermal plant"], "numbers": ["89", "megawatts", "73%"], "domain": "energy"}
+{"text": "HVDC transmission line carries 1,600 megawatts between provinces with 3.2% loss rate.", "entities": ["HVDC transmission line"], "numbers": ["1,600", "megawatts", "3.2%"], "domain": "energy"}
+{"text": "Smart meter deployment across 1.2 million households enables real-time demand response.", "entities": ["Smart meter"], "numbers": ["1.2 million"], "domain": "energy"}
+{"text": "Grid frequency stabilizer injection prevents outage affecting 340,000 customers during event.", "entities": ["Grid frequency stabilizer"], "numbers": ["340,000"], "domain": "energy"}
+{"text": "Peaker plant operates 450 hours annually providing 156 megawatts emergency reserve capacity.", "entities": ["Peaker plant"], "numbers": ["450", "hours", "156", "megawatts"], "domain": "energy"}
+{"text": "Power factor correction hardware reduces reactive power by 28% saving $1.4 million annually.", "entities": ["Power factor correction hardware"], "numbers": ["28%", "1.4 million"], "domain": "energy"}
+{"text": "Biomass facility processes 285 tons daily generating 18.5 megawatts continuous power.", "entities": ["Biomass facility"], "numbers": ["285", "tons", "18.5", "megawatts"], "domain": "energy"}
+{"text": "Capacitor bank network stores 680 megavolt-amperes reactive power stabilizing voltage fluctuations.", "entities": ["Capacitor bank network"], "numbers": ["680", "megavolt-amperes"], "domain": "energy"}
+{"text": "District heating system distributes 142 megawatts thermal energy via 340 kilometers piping.", "entities": ["District heating system"], "numbers": ["142", "megawatts", "340", "kilometers"], "domain": "energy"}
+{"text": "Flexible load shifting program enrolls 78,000 industrial customers reducing peak demand 12%.", "entities": ["Flexible load shifting program"], "numbers": ["78,000", "12%"], "domain": "energy"}
+{"text": "Concentrated solar power plant reaches 650°C fluid temperature storing 15 hours heat.", "entities": ["Concentrated solar power plant"], "numbers": ["650°C", "15", "hours"], "domain": "energy"}
+{"text": "Substation transformer operates at 94.8% efficiency despite 87°C ambient temperature condition.", "entities": ["Substation transformer"], "numbers": ["94.8%", "87°C"], "domain": "energy"}
+{"text": "Demand response event curtailed 234 megawatts load within 8 minutes response time.", "entities": ["Demand response event"], "numbers": ["234", "megawatts", "8", "minutes"], "domain": "energy"}
+{"text": "Renewable portfolio standard mandates 65% clean energy by 2032 covering 2.4 million customers.", "entities": ["Renewable portfolio standard"], "numbers": ["65%", "2032", "2.4 million"], "domain": "energy"}
+{"text": "Superconducting cable installation requires 1,200 tons liquid nitrogen coolant annually.", "entities": ["Superconducting cable"], "numbers": ["1,200", "tons"], "domain": "energy"}
+{"text": "Interconnection queue contains 680 renewable projects totaling 145 gigawatts pending approval.", "entities": ["Interconnection queue"], "numbers": ["680", "145", "gigawatts"], "domain": "energy"}
+{"text": "Synchronous condenser provides 320 megavolt-amperes reactive support improving system stability margins.", "entities": ["Synchronous condenser"], "numbers": ["320", "megavolt-amperes"], "domain": "energy"}
+{"text": "Energy storage deployment expanded to 8,900 megawatt-hours total installed capacity nationwide.", "entities": ["Energy storage"], "numbers": ["8,900", "megawatt-hours"], "domain": "energy"}
+{"text": "Distributed battery network balances 2,340 residential systems coordinated via IoT platform.", "entities": ["Distributed battery network"], "numbers": ["2,340"], "domain": "energy"}
+{"text": "High-voltage line carries 765 kilovolts over 485 kilometers spanning three provinces.", "entities": ["High-voltage line"], "numbers": ["765", "kilovolts", "485", "kilometers"], "domain": "energy"}
+{"text": "Variable tariff structure charges $0.12 morning peak and $0.045 overnight rates.", "entities": ["Variable tariff structure"], "numbers": ["0.12", "0.045"], "domain": "energy"}
+{"text": "Harmonic filter reduces distortion from 8.7% to 3.2% protecting sensitive equipment.", "entities": ["Harmonic filter"], "numbers": ["8.7%", "3.2%"], "domain": "energy"}
+{"text": "Smart inverter technology coordinates 45,000 rooftop solar units reducing grid stress 34%.", "entities": ["Smart inverter technology"], "numbers": ["45,000", "34%"], "domain": "energy"}
+{"text": "Modular reactor design scales to 50 megawatts adaptable for industrial heat applications.", "entities": ["Modular reactor"], "numbers": ["50", "megawatts"], "domain": "energy"}
+{"text": "Grid-scale battery system stores 1.8 gigawatt-hours charged via 340 megawatts renewable input.", "entities": ["Grid-scale battery system"], "numbers": ["1.8", "gigawatt-hours", "340", "megawatts"], "domain": "energy"}
+{"text": "Outage statistics show 12.4 interruptions annually averaging 2.8 hours duration per customer.", "entities": ["Outage statistics"], "numbers": ["12.4", "2.8", "hours"], "domain": "energy"}
+{"text": "Community solar garden serves 560 households sharing 1.4 megawatts distributed capacity output.", "entities": ["Community solar garden"], "numbers": ["560", "1.4", "megawatts"], "domain": "energy"}
+{"text": "Transformer fleet replacement program upgrades 340 units reducing losses by 2.1% total.", "entities": ["Transformer fleet"], "numbers": ["340", "2.1%"], "domain": "energy"}
+{"text": "Virtual power plant orchestrates 890 participating microgrids managing 234 megawatts flexibility.", "entities": ["Virtual power plant"], "numbers": ["890", "234", "megawatts"], "domain": "energy"}
+{"text": "Wave energy converter pilot generates 1.2 megawatts testing 48-hour survival specification.", "entities": ["Wave energy converter"], "numbers": ["1.2", "megawatts", "48-hour"], "domain": "energy"}
+{"text": "Substation automation reduces outages 23% and restores 45% faster than manual systems.", "entities": ["Substation automation"], "numbers": ["23%", "45%"], "domain": "energy"}
+{"text": "Industrial customer consumes 2,340 megawatt-hours monthly paying $188,000 at variable rates.", "entities": ["Industrial customer"], "numbers": ["2,340", "megawatt-hours", "188,000"], "domain": "energy"}
+{"text": "Demand flexibility tender procured 567 megawatts response capacity at $67.50 per megawatt-hour.", "entities": ["Demand flexibility tender"], "numbers": ["567", "megawatts", "67.50"], "domain": "energy"}
+{"text": "Fuel cell system provides 8.5 megawatts output achieving 52% electrical efficiency rating.", "entities": ["Fuel cell system"], "numbers": ["8.5", "megawatts", "52%"], "domain": "energy"}
+{"text": "Hydro turbine running at 78% of nameplate capacity during low water season.", "entities": ["Hydro turbine"], "numbers": ["78%"], "domain": "energy"}
+{"text": "Protection relay coordination tested across 12 substations reducing nuisance tripping 56%.", "entities": ["Protection relay coordination"], "numbers": ["12", "56%"], "domain": "energy"}
+{"text": "Demand charge peak reduction saves large facility $340,000 annually through load management.", "entities": ["Demand charge peak reduction"], "numbers": ["340,000"], "domain": "energy"}
+{"text": "Floating solar installation spans 8.6 hectares producing 2.8 megawatts peak capacity output.", "entities": ["Floating solar installation"], "numbers": ["8.6", "hectares", "2.8", "megawatts"], "domain": "energy"}
+{"text": "Grid voltage deviation recorded ±3.2% excursion during equipment failure cascading event.", "entities": ["Grid voltage"], "numbers": ["3.2%"], "domain": "energy"}
+{"text": "Cogeneration plant recovers 67% waste heat generating 45 megawatts combined thermal output.", "entities": ["Cogeneration plant"], "numbers": ["67%", "45", "megawatts"], "domain": "energy"}
+{"text": "Feeder automation enables self-healing network recovering from faults in 2.3 seconds.", "entities": ["Feeder automation"], "numbers": ["2.3", "seconds"], "domain": "energy"}
+{"text": "Solar curtailment reduced from 18% to 4.2% via advanced forecasting algorithms.", "entities": ["Solar curtailment"], "numbers": ["18%", "4.2%"], "domain": "energy"}
+{"text": "Interconnected wind farms in corridor share 450 megawatts capacity utilizing 340 turbines.", "entities": ["Interconnected wind farms"], "numbers": ["450", "megawatts", "340"], "domain": "energy"}
+{"text": "Tariff structure adds 0.8 cents per kilowatt-hour carbon tax starting July 2026.", "entities": ["Tariff structure"], "numbers": ["0.8", "July 2026"], "domain": "energy"}
+{"text": "Voltage sag protection equipment prevents motor stalling during 0.65 per-unit voltage dip.", "entities": ["Voltage sag protection"], "numbers": ["0.65"], "domain": "energy"}
+{"text": "Biomass-to-electricity facility converts 890 tons daily feedstock producing 23 megawatts.", "entities": ["Biomass-to-electricity facility"], "numbers": ["890", "tons", "23", "megawatts"], "domain": "energy"}
+{"text": "Underground cable replacement project spans 67 kilometers upgrading 138 kilovolt transmission.", "entities": ["Underground cable replacement"], "numbers": ["67", "kilometers", "138", "kilovolt"], "domain": "energy"}
+{"text": "Demand response DR4 event successfully reduced consumption by 345 megawatts within 7 minutes.", "entities": ["Demand response DR4"], "numbers": ["345", "megawatts", "7", "minutes"], "domain": "energy"}
+{"text": "Renewable energy curtailment cost operators $23.4 million during annual oversupply period.", "entities": ["Renewable energy curtailment"], "numbers": ["23.4 million"], "domain": "energy"}
+{"text": "Isolated microgrid operates 890 customers disconnected from main grid during 3-month test.", "entities": ["Isolated microgrid"], "numbers": ["890", "customers", "3-month"], "domain": "energy"}
+{"text": "Frequency regulation service provider maintains ±0.1 hertz deviation operating 2,340 assets.", "entities": ["Frequency regulation service"], "numbers": ["0.1", "hertz", "2,340"], "domain": "energy"}
+{"text": "Hydro reservoir volume fluctuates 456 million cubic meters seasonally affecting output.", "entities": ["Hydro reservoir"], "numbers": ["456 million", "cubic meters"], "domain": "energy"}
+{"text": "Smart grid pilot deployed across 234 utility zones covering 12.8 million citizens.", "entities": ["Smart grid pilot"], "numbers": ["234", "12.8 million"], "domain": "energy"}
+{"text": "Power quality standards specify voltage tolerance ±10% and frequency ±0.2 hertz.", "entities": ["Power quality standards"], "numbers": ["10%", "0.2", "hertz"], "domain": "energy"}
+{"text": "Geothermal gradient reaches 35°C per kilometer enabling productive wells at 2,800 meters.", "entities": ["Geothermal gradient"], "numbers": ["35°C", "2,800", "meters"], "domain": "energy"}
+{"text": "Demand-side management program enrolled 340,000 participants achieving 156 megawatts reduction.", "entities": ["Demand-side management program"], "numbers": ["340,000", "156", "megawatts"], "domain": "energy"}
+{"text": "Grid modernization budget of $4.2 billion funds 890 infrastructure projects over five years.", "entities": ["Grid modernization"], "numbers": ["4.2 billion", "890", "five years"], "domain": "energy"}
+{"text": "Battery degradation modeling shows 2.1% capacity loss annually over 12-year design life.", "entities": ["Battery degradation modeling"], "numbers": ["2.1%", "12-year"], "domain": "energy"}
+{"text": "Time-of-use rates charge $0.28 peak versus $0.11 off-peak incentivizing consumption shifts.", "entities": ["Time-of-use rates"], "numbers": ["0.28", "0.11"], "domain": "energy"}
+{"text": "Transmission system achieved 99.97% uptime serving 5.6 million people continuously.", "entities": ["Transmission system"], "numbers": ["99.97%", "5.6 million"], "domain": "energy"}
+{"text": "Peaking capacity margin dropped to 8.3% approaching critical 15% reliability threshold.", "entities": ["Peaking capacity margin"], "numbers": ["8.3%", "15%"], "domain": "energy"}
+{"text": "Modular battery modules stack 48 units per container achieving 12 megawatt-hours density.", "entities": ["Modular battery modules"], "numbers": ["48", "12", "megawatt-hours"], "domain": "energy"}
+{"text": "Critical peak pricing adds $0.89 per kilowatt-hour during 12 designated annual event days.", "entities": ["Critical peak pricing"], "numbers": ["0.89", "12"], "domain": "energy"}
+{"text": "Reactive power compensation injection reduces voltage variation from 6.4% to 2.1%.", "entities": ["Reactive power compensation"], "numbers": ["6.4%", "2.1%"], "domain": "energy"}
+{"text": "Industrial park microgrid balances 456 megawatts across 78 connected industrial facilities.", "entities": ["Industrial park microgrid"], "numbers": ["456", "megawatts", "78"], "domain": "energy"}
+{"text": "Nighttime demand curve shows 34% lower consumption compared to 2.3 peak day average.", "entities": ["Nighttime demand curve"], "numbers": ["34%", "2.3"], "domain": "energy"}
+{"text": "Synchronous generator retrofit enables 230 megawatts inertial support improving stability.", "entities": ["Synchronous generator retrofit"], "numbers": ["230", "megawatts"], "domain": "energy"}
+{"text": "Ammonia synthesis facility requires 456 megawatts hydrogen production input annually.", "entities": ["Ammonia synthesis facility"], "numbers": ["456", "megawatts"], "domain": "energy"}
+{"text": "Thermal storage tank accumulates 8.9 megawatt-hours heat charging via solar array.", "entities": ["Thermal storage tank"], "numbers": ["8.9", "megawatt-hours"], "domain": "energy"}
+{"text": "Inverter farm comprises 340 converters managing 567 megawatts variable renewable input.", "entities": ["Inverter farm"], "numbers": ["340", "567", "megawatts"], "domain": "energy"}
+{"text": "Outage event cascading failure isolated 23 substations affecting 890,000 customers.", "entities": ["Outage event cascading"], "numbers": ["23", "890,000"], "domain": "energy"}
+{"text": "Power purchase agreement locks 234 megawatts renewable supply at $0.034 per kilowatt-hour.", "entities": ["Power purchase agreement"], "numbers": ["234", "megawatts", "0.034"], "domain": "energy"}
+{"text": "Transformer core loss specification requires efficiency exceeding 99.1% under load.", "entities": ["Transformer core loss"], "numbers": ["99.1%"], "domain": "energy"}
+{"text": "Demand flexibility market transacted $678 million offering 456 gigawatt-hours capacity.", "entities": ["Demand flexibility market"], "numbers": ["678 million", "456", "gigawatt-hours"], "domain": "energy"}
+{"text": "Submarine cable installation linking 340 megawatts undersea crossing 234 kilometers.", "entities": ["Submarine cable installation"], "numbers": ["340", "megawatts", "234", "kilometers"], "domain": "energy"}
+{"text": "Line loss analysis identified 12.4% technical losses recoverable via upgrade program.", "entities": ["Line loss analysis"], "numbers": ["12.4%"], "domain": "energy"}
+{"text": "Community choice aggregation serves 567,000 customers procuring 45% renewable energy.", "entities": ["Community choice aggregation"], "numbers": ["567,000", "45%"], "domain": "energy"}
+{"text": "Seasonal storage capacity stands at 2.3 terawatt-hours holding 6-month energy buffer.", "entities": ["Seasonal storage capacity"], "numbers": ["2.3", "terawatt-hours", "6-month"], "domain": "energy"}
+{"text": "Advanced metering infrastructure collected 12.8 billion meter readings during fiscal year.", "entities": ["Advanced metering infrastructure"], "numbers": ["12.8 billion"], "domain": "energy"}
+{"text": "Balancing market clearing prices averaged $45.67 per megawatt-hour during peak season.", "entities": ["Balancing market"], "numbers": ["45.67"], "domain": "energy"}
+{"text": "Demand forecast accuracy improved to 96.3% utilizing machine learning model deployment.", "entities": ["Demand forecast"], "numbers": ["96.3%"], "domain": "energy"}
+{"text": "Distributed energy resources fleet expanded to 45,000 units providing 234 megawatts.", "entities": ["Distributed energy resources"], "numbers": ["45,000", "234", "megawatts"], "domain": "energy"}
+{"text": "Transmission congestion costs operators $340 million annually during high demand periods.", "entities": ["Transmission congestion"], "numbers": ["340 million"], "domain": "energy"}
+{"text": "Synthetic inertia injection provides 89 megavolt-amperes reactive support via power electronics.", "entities": ["Synthetic inertia injection"], "numbers": ["89", "megavolt-amperes"], "domain": "energy"}
+{"text": "Building energy management reduces consumption 18% saving $234,000 annually facility-wide.", "entities": ["Building energy management"], "numbers": ["18%", "234,000"], "domain": "energy"}
+{"text": "Fuel switching program converts 456 megawatts natural gas capacity to renewable integration.", "entities": ["Fuel switching program"], "numbers": ["456", "megawatts"], "domain": "energy"}
+{"text": "Peak capacity adequacy margin exceeded 18.7% exceeding regulatory minimum 15% requirement.", "entities": ["Peak capacity adequacy"], "numbers": ["18.7%", "15%"], "domain": "energy"}
+{"text": "Solid oxide fuel cell system achieves 56% electrical efficiency with 34% cogeneration.", "entities": ["Solid oxide fuel cell"], "numbers": ["56%", "34%"], "domain": "energy"}
+{"text": "Voltage stability control coordinates 340 shunt reactors maintaining ±2.3% voltage band.", "entities": ["Voltage stability control"], "numbers": ["340", "2.3%"], "domain": "energy"}
+{"text": "Battery swap station for electric vehicles processes 890 exchanges daily across city.", "entities": ["Battery swap station"], "numbers": ["890"], "domain": "energy"}
+{"text": "Network reinforcement investment totals $1.8 billion constructing 234 kilometers new cable.", "entities": ["Network reinforcement"], "numbers": ["1.8 billion", "234", "kilometers"], "domain": "energy"}
+{"text": "Intermittency mitigation storage requirement increases to 8.9 gigawatt-hours meeting 2027 targets.", "entities": ["Intermittency mitigation"], "numbers": ["8.9", "gigawatt-hours", "2027"], "domain": "energy"}
+{"text": "Wholesale electricity prices ranged $23.45 to $89.67 per megawatt-hour quarterly.", "entities": ["Wholesale electricity prices"], "numbers": ["23.45", "89.67"], "domain": "energy"}
+{"text": "Photovoltaic efficiency roadmap targets 28% cells by 2028 advancing module cost decline.", "entities": ["Photovoltaic efficiency"], "numbers": ["28%", "2028"], "domain": "energy"}
+{"text": "Grid frequency excursion of 0.34 hertz recorded during generator trip event.", "entities": ["Grid frequency excursion"], "numbers": ["0.34", "hertz"], "domain": "energy"}
+{"text": "Islanded operation capability tested across 12 microgrids for 8-hour duration successfully.", "entities": ["Islanded operation"], "numbers": ["12", "8-hour"], "domain": "energy"}
+{"text": "Ancillary services procurement budget reached $456 million for reactive power management.", "entities": ["Ancillary services procurement"], "numbers": ["456 million"], "domain": "energy"}
+{"text": "Variable renewable penetration reached 34% annual average exceeding previous year 28%.", "entities": ["Variable renewable penetration"], "numbers": ["34%", "28%"], "domain": "energy"}
+{"text": "District cooling network supplies 56 megawatts thermal capacity via 234 kilometers piping.", "entities": ["District cooling network"], "numbers": ["56", "megawatts", "234", "kilometers"], "domain": "energy"}
+{"text": "Emergency reserve margin dropped to 6.2% during extreme weather event situation.", "entities": ["Emergency reserve margin"], "numbers": ["6.2%"], "domain": "energy"}
+{"text": "Magnetic thermal storage accumulates 12.3 megawatt-hours via superheated salt medium.", "entities": ["Magnetic thermal storage"], "numbers": ["12.3", "megawatt-hours"], "domain": "energy"}
+{"text": "Transmission line thermal rating increased 23% using advanced conductor materials.", "entities": ["Transmission line thermal rating"], "numbers": ["23%"], "domain": "energy"}
+{"text": "Residential solar adoption reached 8.9% household penetration with 340,000 installations.", "entities": ["Residential solar adoption"], "numbers": ["8.9%", "340,000"], "domain": "energy"}
+{"text": "Renewable curtailment rose to 12.1% of available generation during low demand season.", "entities": ["Renewable curtailment"], "numbers": ["12.1%"], "domain": "energy"}
+{"text": "Compressed air energy storage facility stores 4.5 megawatt-hours at 890 meter depth.", "entities": ["Compressed air energy storage"], "numbers": ["4.5", "megawatt-hours", "890", "meter"], "domain": "energy"}
+{"text": "Wide-area monitoring system covers 456 substations reporting 2,340 data points per second.", "entities": ["Wide-area monitoring system"], "numbers": ["456", "2,340"], "domain": "energy"}
+{"text": "Flexible ramping product price averaged $34.56 per megawatt during high wind days.", "entities": ["Flexible ramping product"], "numbers": ["34.56"], "domain": "energy"}
+{"text": "Power outage statistics recorded 2.3 SAIDI hours and 0.89 SAIFI interruptions annually.", "entities": ["Power outage statistics"], "numbers": ["2.3", "SAIDI", "0.89", "SAIFI"], "domain": "energy"}
+{"text": "Hybrid renewable facility combines 234 megawatts solar with 89 megawatts wind output.", "entities": ["Hybrid renewable facility"], "numbers": ["234", "megawatts", "89"], "domain": "energy"}
+{"text": "Tariff reform package adjusts rates increasing peak charge 8% and off-peak 12%.", "entities": ["Tariff reform package"], "numbers": ["8%", "12%"], "domain": "energy"}
+{"text": "Frequency nadir during event dropped to 58.3 hertz triggering emergency load shedding.", "entities": ["Frequency nadir"], "numbers": ["58.3", "hertz"], "domain": "energy"}
+{"text": "Smart switch network automates 890 distribution feeder sections with 12.3 second response.", "entities": ["Smart switch network"], "numbers": ["890", "12.3", "second"], "domain": "energy"}
+{"text": "Industrial combined heat and power plant exports 45 megawatts surplus to grid.", "entities": ["Industrial combined heat and power"], "numbers": ["45", "megawatts"], "domain": "energy"}
+{"text": "HVAC system retrofit reduces energy consumption 34% consuming 123 kilowatt-hours daily.", "entities": ["HVAC system retrofit"], "numbers": ["34%", "123", "kilowatt-hours"], "domain": "energy"}
+{"text": "Reserve margin policy maintains minimum 15% capacity buffer across 12-state grid region.", "entities": ["Reserve margin policy"], "numbers": ["15%", "12-state"], "domain": "energy"}
+{"text": "Spinning reserve obligation contracted 456 megawatts available within 10-minute window.", "entities": ["Spinning reserve obligation"], "numbers": ["456", "megawatts", "10-minute"], "domain": "energy"}
+{"text": "Export capacity to neighboring grid increased 89 megawatts via new 345 kilovolt line.", "entities": ["Export capacity"], "numbers": ["89", "megawatts", "345", "kilovolt"], "domain": "energy"}
+{"text": "Demand response penetration reached 23% of peak load available for curtailment events.", "entities": ["Demand response penetration"], "numbers": ["23%"], "domain": "energy"}
+{"text": "Energy efficiency standards require new appliances achieve minimum 89% efficiency rating.", "entities": ["Energy efficiency standards"], "numbers": ["89%"], "domain": "energy"}
+{"text": "Interconnection study queue grew to 1,234 applications requesting 456 gigawatts capacity.", "entities": ["Interconnection study queue"], "numbers": ["1,234", "456", "gigawatts"], "domain": "energy"}
+{"text": "Minimum load requirement dropped to 34% due to increased variable renewable deployment.", "entities": ["Minimum load requirement"], "numbers": ["34%"], "domain": "energy"}
+{"text": "Subsynchronous resonance analysis identified 45 hertz oscillation risk on 765 kilovolt line.", "entities": ["Subsynchronous resonance"], "numbers": ["45", "hertz", "765", "kilovolt"], "domain": "energy"}
+{"text": "Community solar project financed via $12.3 million bonds financing 340 subscriber accounts.", "entities": ["Community solar project"], "numbers": ["12.3 million", "340"], "domain": "energy"}
+{"text": "Congestion pricing during peak periods charges $2.34 per megawatt-hour congestion fee.", "entities": ["Congestion pricing"], "numbers": ["2.34"], "domain": "energy"}
+{"text": "Energy storage deployment targets 890 megawatt-hours by 2030 supporting renewables.", "entities": ["Energy storage deployment"], "numbers": ["890", "megawatt-hours", "2030"], "domain": "energy"}
+{"text": "Distribution automation reduced response time to fault events from 45 seconds to 3.2 seconds.", "entities": ["Distribution automation"], "numbers": ["45", "seconds", "3.2"], "domain": "energy"}
+{"text": "Demand forecast error reduced 23% utilizing deep learning neural networks.", "entities": ["Demand forecast error"], "numbers": ["23%"], "domain": "energy"}
+{"text": "Virtual machine learning asset controls 234 battery systems dispatching 890 megawatt-hours.", "entities": ["Virtual machine learning asset"], "numbers": ["234", "890", "megawatt-hours"], "domain": "energy"}
+{"text": "Substation modernization program replacing 567 legacy units with digital platforms.", "entities": ["Substation modernization"], "numbers": ["567"], "domain": "energy"}
+{"text": "Nighttime excess renewable energy stored 456 megawatt-hours via 89-hour charging window.", "entities": ["Nighttime excess renewable"], "numbers": ["456", "megawatt-hours", "89-hour"], "domain": "energy"}
+{"text": "Baseline load fell to 23% daily minimum requiring increased ramping flexibility.", "entities": ["Baseline load"], "numbers": ["23%"], "domain": "energy"}
+{"text": "Wave farm pilot consisting 12 converters generating 2.4 megawatts average output.", "entities": ["Wave farm pilot"], "numbers": ["12", "2.4", "megawatts"], "domain": "energy"}
+{"text": "Tariff default rate increases 7.8% effective January 2027 for residential customers.", "entities": ["Tariff default rate"], "numbers": ["7.8%", "January 2027"], "domain": "energy"}
+{"text": "Grid services market contracted 567 megawatts frequency response capability nationwide.", "entities": ["Grid services market"], "numbers": ["567", "megawatts"], "domain": "energy"}
+{"text": "Distributed battery storage integrated 45,000 residential units totaling 890 megawatt-hours.", "entities": ["Distributed battery storage"], "numbers": ["45,000", "890", "megawatt-hours"], "domain": "energy"}
+{"text": "Demand charge management saved industrial customer $567,000 annually via load timing.", "entities": ["Demand charge management"], "numbers": ["567,000"], "domain": "energy"}
+{"text": "Net metering policy compensates solar customers $0.234 per kilowatt-hour exported.", "entities": ["Net metering policy"], "numbers": ["0.234"], "domain": "energy"}
+{"text": "Grid stability index improved to 94.5% following advanced control system deployment.", "entities": ["Grid stability index"], "numbers": ["94.5%"], "domain": "energy"}
+{"text": "Seasonal peak demand reached 45,670 megawatts during extreme weather July events.", "entities": ["Seasonal peak demand"], "numbers": ["45,670", "megawatts"], "domain": "energy"}
+{"text": "Electric vehicle charging network expanded to 8,900 fast chargers across region.", "entities": ["Electric vehicle charging network"], "numbers": ["8,900"], "domain": "energy"}
+{"text": "Transmission loss reduction target aims for 4.2% technical losses by 2030 standards.", "entities": ["Transmission loss reduction"], "numbers": ["4.2%", "2030"], "domain": "energy"}
+{"text": "Day-ahead market clearing price averaged $56.78 per megawatt-hour this quarter.", "entities": ["Day-ahead market"], "numbers": ["56.78"], "domain": "energy"}
+{"text": "Reactive power reserve requirement maintains 340 megavolt-amperes surplus capacity.", "entities": ["Reactive power reserve"], "numbers": ["340", "megavolt-amperes"], "domain": "energy"}
+{"text": "Load forecast accuracy metric reached 98.2% using ensemble machine learning methods.", "entities": ["Load forecast accuracy"], "numbers": ["98.2%"], "domain": "energy"}
+{"text": "Demand side participation grew to 234 megawatts flexible load enrolled in programs.", "entities": ["Demand side participation"], "numbers": ["234", "megawatts"], "domain": "energy"}
+{"text": "Transmission rating uprate projects increase flow capacity 56 megawatts via software.", "entities": ["Transmission rating uprate"], "numbers": ["56", "megawatts"], "domain": "energy"}
+{"text": "Frequency regulation service revenue totaled $89.4 million compensating 567 participants.", "entities": ["Frequency regulation service"], "numbers": ["89.4 million", "567"], "domain": "energy"}
+{"text": "Geothermal heat pump deployment reached 23,400 units reducing heating costs 38%.", "entities": ["Geothermal heat pump"], "numbers": ["23,400", "38%"], "domain": "energy"}
+{"text": "Outage duration improvement target decreases average restoration time to 1.8 hours.", "entities": ["Outage duration improvement"], "numbers": ["1.8", "hours"], "domain": "energy"}
+{"text": "Distributed solar generation contributed 34% peak hour supply during summer season.", "entities": ["Distributed solar generation"], "numbers": ["34%"], "domain": "energy"}
+{"text": "Battery test protocol validates 2,000 cycle lifespan with 85% retained capacity.", "entities": ["Battery test protocol"], "numbers": ["2,000", "cycle", "85%"], "domain": "energy"}
+{"text": "Grid resilience score increased to 87.3% following cybersecurity infrastructure upgrade.", "entities": ["Grid resilience score"], "numbers": ["87.3%"], "domain": "energy"}
+{"text": "Demand flexibility service aggregated 890 commercial participants providing 156 megawatts.", "entities": ["Demand flexibility service"], "numbers": ["890", "156", "megawatts"], "domain": "energy"}
+{"text": "Ancillary services cost decreased 12.3% due to increased renewable resource availability.", "entities": ["Ancillary services cost"], "numbers": ["12.3%"], "domain": "energy"}
+{"text": "Peaking plant capacity factor fell to 18% reflecting increased renewable displacement.", "entities": ["Peaking plant capacity factor"], "numbers": ["18%"], "domain": "energy"}
+{"text": "Power factor improvement installation increased from 0.89 to 0.98 lagging conditions.", "entities": ["Power factor improvement"], "numbers": ["0.89", "0.98"], "domain": "energy"}
+{"text": "Underground cable installation project completed 234 kilometers on schedule budget.", "entities": ["Underground cable installation"], "numbers": ["234", "kilometers"], "domain": "energy"}
+{"text": "Demand index surpassed 123,456 megawatt peak hour during extreme weather event.", "entities": ["Demand index"], "numbers": ["123,456", "megawatt"], "domain": "energy"}
+{"text": "Tariff surcharge recovery amount totaled $234.5 million spread across 2.3 million accounts.", "entities": ["Tariff surcharge recovery"], "numbers": ["234.5 million", "2.3 million"], "domain": "energy"}
+{"text": "Renewable curtailment event cost $45.6 million abandoning 234 megawatts generation.", "entities": ["Renewable curtailment event"], "numbers": ["45.6 million", "234", "megawatts"], "domain": "energy"}
+{"text": "Grid frequency stability maintained within ±0.05 hertz band throughout monitoring period.", "entities": ["Grid frequency stability"], "numbers": ["0.05", "hertz"], "domain": "energy"}
+{"text": "Energy audit identified 2.8 megawatts waste reduction potential across industrial facilities.", "entities": ["Energy audit"], "numbers": ["2.8", "megawatts"], "domain": "energy"}
+{"text": "Demand response payment scheme distributed $34.2 million to 456,000 participating customers.", "entities": ["Demand response payment"], "numbers": ["34.2 million", "456,000"], "domain": "energy"}
+{"text": "Capacity payment rate set $78.90 per megawatt-day incentivizing resource adequacy.", "entities": ["Capacity payment rate"], "numbers": ["78.90"], "domain": "energy"}
+{"text": "Transmission congestion reduced 34% following network reinforcement project completion.", "entities": ["Transmission congestion"], "numbers": ["34%"], "domain": "energy"}
+{"text": "Isolated grid island operates 8,900 residents self-sufficiently via 45% renewable energy.", "entities": ["Isolated grid island"], "numbers": ["8,900", "45%"], "domain": "energy"}
+{"text": "Real-time pricing mechanism covers 234,000 customer accounts enabling dynamic response.", "entities": ["Real-time pricing mechanism"], "numbers": ["234,000"], "domain": "energy"}
+{"text": "Wind power ramp rate constraint limited 234 megawatts per 10-minute interval.", "entities": ["Wind power ramp rate"], "numbers": ["234", "megawatts", "10-minute"], "domain": "energy"}
+{"text": "Load shedding hierarchy prioritized 45 distribution circuits for outage management.", "entities": ["Load shedding hierarchy"], "numbers": ["45"], "domain": "energy"}
+{"text": "Electricity price spike reached $890 per megawatt-hour during capacity shortage event.", "entities": ["Electricity price spike"], "numbers": ["890"], "domain": "energy"}
+{"text": "Reserve requirement calculation shows 1,234 megawatts minimum committed spinning capacity.", "entities": ["Reserve requirement calculation"], "numbers": ["1,234", "megawatts"], "domain": "energy"}
+{"text": "Demand elasticity study shows 4.5% load reduction per 1% tariff increase.", "entities": ["Demand elasticity study"], "numbers": ["4.5%", "1%"], "domain": "energy"}
+{"text": "Congestion revenue rights auctioned $23.4 million annual payment stream this round.", "entities": ["Congestion revenue rights"], "numbers": ["23.4 million"], "domain": "energy"}
+{"text": "Negative pricing event forced 89 megawatts renewable curtailment during production glut.", "entities": ["Negative pricing event"], "numbers": ["89", "megawatts"], "domain": "energy"}
+{"text": "Renewable portfolio standard compliance achieved 56% clean energy exceeding 45% requirement.", "entities": ["Renewable portfolio standard"], "numbers": ["56%", "45%"], "domain": "energy"}
+{"text": "Grid voltage support required 234 megavolt-amperes injection during low generation period.", "entities": ["Grid voltage support"], "numbers": ["234", "megavolt-amperes"], "domain": "energy"}
+{"text": "Demand-side management participation rose to 78,000 customers providing 234 megawatts.", "entities": ["Demand-side management"], "numbers": ["78,000", "234", "megawatts"], "domain": "energy"}
+{"text": "Transmission system operator paid $567.8 million congestion costs this fiscal year.", "entities": ["Transmission system operator"], "numbers": ["567.8 million"], "domain": "energy"}
+{"text": "Solar capacity factor reached 23.4% average annual performance across 340 installations.", "entities": ["Solar capacity factor"], "numbers": ["23.4%", "340"], "domain": "energy"}
+{"text": "Wind curtailment minimization reduced wasted generation by 23% through better coordination.", "entities": ["Wind curtailment minimization"], "numbers": ["23%"], "domain": "energy"}
+{"text": "Frequency response procurement target set 234 megawatts to maintain grid stability.", "entities": ["Frequency response procurement"], "numbers": ["234", "megawatts"], "domain": "energy"}
+{"text": "Reactive power market pricing averaged $34.56 per megavolt-ampere-hour this period.", "entities": ["Reactive power market"], "numbers": ["34.56"], "domain": "energy"}
+{"text": "Transformer insulation aging models predict 12 remaining years service life maintenance.", "entities": ["Transformer insulation aging"], "numbers": ["12", "years"], "domain": "energy"}
+{"text": "Fault current limiting reactor installation reduced equipment duty 45% on 345 kilovolt bus.", "entities": ["Fault current limiting reactor"], "numbers": ["45%", "345", "kilovolt"], "domain": "energy"}
+{"text": "Network stability index fell to 72.3 requiring emergency ancillary services deployment.", "entities": ["Network stability index"], "numbers": ["72.3"], "domain": "energy"}
+{"text": "Battery swap-out cycles average 4.5 swaps per vehicle annually using 890 stations.", "entities": ["Battery swap-out cycles"], "numbers": ["4.5", "890"], "domain": "energy"}
+{"text": "Demand response revenue stream contributed $234.5 million profit sharing among 89 owners.", "entities": ["Demand response revenue"], "numbers": ["234.5 million", "89"], "domain": "energy"}
+{"text": "Voltage regulation function improved ±1.2% margin via 234 automated tap-changer operations.", "entities": ["Voltage regulation function"], "numbers": ["1.2%", "234"], "domain": "energy"}
+{"text": "Energy accounting system reconciled 2.3 terawatt-hours across 890 metering points.", "entities": ["Energy accounting system"], "numbers": ["2.3", "terawatt-hours", "890"], "domain": "energy"}
+{"text": "Industrial demand charge reduced $456,000 quarterly through strategic load shifting.", "entities": ["Industrial demand charge"], "numbers": ["456,000"], "domain": "energy"}
+{"text": "Solar irradiance data shows 1,240 watt-hours per square meter daily average.", "entities": ["Solar irradiance data"], "numbers": ["1,240", "watt-hours"], "domain": "energy"}
+{"text": "Transmission line maintenance scheduled quarterly inspecting 340 kilometers annually.", "entities": ["Transmission line maintenance"], "numbers": ["340", "kilometers"], "domain": "energy"}
+{"text": "Load profile analysis identified 78% nighttime consumption on holiday weekends.", "entities": ["Load profile analysis"], "numbers": ["78%"], "domain": "energy"}
+{"text": "Transient stability margin decreased to 0.34 seconds during low inertia condition.", "entities": ["Transient stability margin"], "numbers": ["0.34", "seconds"], "domain": "energy"}
+{"text": "Energy storage dispatch optimization achieved 89% round-trip efficiency target.", "entities": ["Energy storage dispatch"], "numbers": ["89%"], "domain": "energy"}
+{"text": "Demand forecast model training uses 5.6 years historical data spanning 2.3 billion records.", "entities": ["Demand forecast model"], "numbers": ["5.6", "years", "2.3 billion"], "domain": "energy"}
+{"text": "Grid interconnection timelines average 2.3 years for 456 megawatt renewable projects.", "entities": ["Grid interconnection"], "numbers": ["2.3", "years", "456", "megawatt"], "domain": "energy"}
+{"text": "Distribution feeder automation enabled 234 self-healing actions preventing 45 outages.", "entities": ["Distribution feeder automation"], "numbers": ["234", "45"], "domain": "energy"}
+{"text": "Tariff schedule restructuring reallocates $234 million revenue across customer classes.", "entities": ["Tariff schedule restructuring"], "numbers": ["234 million"], "domain": "energy"}
+{"text": "Renewable energy certificate price fluctuated $12.34 to $56.78 per megawatt-hour.", "entities": ["Renewable energy certificate"], "numbers": ["12.34", "56.78"], "domain": "energy"}
+{"text": "Power factor penalty charges manufacturers $0.045 per kilovolt-ampere reactive hour.", "entities": ["Power factor penalty"], "numbers": ["0.045"], "domain": "energy"}
+{"text": "Microgrids operate 8,900 residents achieving 92% energy independence target.", "entities": ["Microgrids"], "numbers": ["8,900", "92%"], "domain": "energy"}
+{"text": "Fault location algorithm pinpoints 234 cable failures within 0.5 kilometer accuracy.", "entities": ["Fault location algorithm"], "numbers": ["234", "0.5", "kilometer"], "domain": "energy"}
+{"text": "Peak shaving battery reduced demand charge spikes 67% avoiding $345,000 penalties.", "entities": ["Peak shaving battery"], "numbers": ["67%", "345,000"], "domain": "energy"}
+{"text": "Transmission line de-icing increases ampacity 34% during winter peak periods.", "entities": ["Transmission line de-icing"], "numbers": ["34%"], "domain": "energy"}
+{"text": "Demand response trigger activates when prices exceed $234 per megawatt-hour threshold.", "entities": ["Demand response trigger"], "numbers": ["234"], "domain": "energy"}
+{"text": "Grid modernization rollout covers 234 communities improving outage response 45%.", "entities": ["Grid modernization rollout"], "numbers": ["234", "45%"], "domain": "energy"}
+{"text": "Substation reliability metrics show 99.84% availability across 567 monitored units.", "entities": ["Substation reliability"], "numbers": ["99.84%", "567"], "domain": "energy"}
+{"text": "Variable tariff adjustment increased peak rate $0.034 per kilowatt-hour this month.", "entities": ["Variable tariff adjustment"], "numbers": ["0.034"], "domain": "energy"}
+{"text": "Demand management program enrolled 567,000 households reducing peak 234 megawatts.", "entities": ["Demand management program"], "numbers": ["567,000", "234", "megawatts"], "domain": "energy"}
+{"text": "Synchronous condenser sizing study recommends 456 megavolt-amperes capacity addition.", "entities": ["Synchronous condenser sizing"], "numbers": ["456", "megavolt-amperes"], "domain": "energy"}
+{"text": "Wholesale power cost inflation reached 34% year-over-year fuel price escalation.", "entities": ["Wholesale power cost"], "numbers": ["34%"], "domain": "energy"}
+{"text": "Harmonic distortion limit compliance requires total harmonic distortion below 5% threshold.", "entities": ["Harmonic distortion limit"], "numbers": ["5%"], "domain": "energy"}
+{"text": "Demand forecast error distribution shows standard deviation 2.3% from actual loads.", "entities": ["Demand forecast error"], "numbers": ["2.3%"], "domain": "energy"}
+{"text": "Battery storage capex decreased 45% annually driven by manufacturing scale improvement.", "entities": ["Battery storage capex"], "numbers": ["45%"], "domain": "energy"}
+{"text": "Substation transformer rated 345 megavolt-amperes with 89.2% average loading.", "entities": ["Substation transformer"], "numbers": ["345", "megavolt-amperes", "89.2%"], "domain": "energy"}
+{"text": "Renewable energy import capacity expanded 234 megawatts via three-country interconnection.", "entities": ["Renewable energy import"], "numbers": ["234", "megawatts", "three-country"], "domain": "energy"}
+{"text": "Demand elasticity price response shows 12% consumption reduction per 1% rate increase.", "entities": ["Demand elasticity"], "numbers": ["12%", "1%"], "domain": "energy"}
+{"text": "Grid inertia decreased to 3.4 seconds requiring synthetic inertia deployment.", "entities": ["Grid inertia"], "numbers": ["3.4", "seconds"], "domain": "energy"}
+{"text": "Transmission losses reduction initiative targets 3.8% from current 8.2% baseline.", "entities": ["Transmission losses reduction"], "numbers": ["3.8%", "8.2%"], "domain": "energy"}
+{"text": "Demand response capability reached 890 megawatts across 234 enrolled participants.", "entities": ["Demand response capability"], "numbers": ["890", "megawatts", "234"], "domain": "energy"}
+{"text": "Induction motor efficiency standards require minimum 94.5% efficiency rating.", "entities": ["Induction motor efficiency"], "numbers": ["94.5%"], "domain": "energy"}
+{"text": "Power transfer corridor improved 56 megawatts capacity through line uprating project.", "entities": ["Power transfer corridor"], "numbers": ["56", "megawatts"], "domain": "energy"}
+{"text": "Demand charge reduction strategy saves facility $234,000 annually via timing optimization.", "entities": ["Demand charge reduction"], "numbers": ["234,000"], "domain": "energy"}
+{"text": "Grid frequency support requirement increased to 340 megavolt-amperes reserve margin.", "entities": ["Grid frequency support"], "numbers": ["340", "megavolt-amperes"], "domain": "energy"}
+{"text": "Interconnected renewable portfolio produced 234 terawatt-hours meeting 67% demand.", "entities": ["Interconnected renewable portfolio"], "numbers": ["234", "terawatt-hours", "67%"], "domain": "energy"}
+{"text": "Load shedding event disconnected 234,000 customers during 45-minute emergency period.", "entities": ["Load shedding event"], "numbers": ["234,000", "45-minute"], "domain": "energy"}
+{"text": "Congestion event forced 89 megawatts wind generation curtailment costing $234,567.", "entities": ["Congestion event"], "numbers": ["89", "megawatts", "234,567"], "domain": "energy"}
+{"text": "Transmission system operator compensation totaled $456.7 million for ancillary services.", "entities": ["Transmission system operator"], "numbers": ["456.7 million"], "domain": "energy"}
+{"text": "Reserve requirement margin fell to 8.9% during extreme weather demand peak.", "entities": ["Reserve requirement margin"], "numbers": ["8.9%"], "domain": "energy"}
+{"text": "Demand index forecasting model achieves 97.8% accuracy utilizing 2.3 years training data.", "entities": ["Demand index forecasting"], "numbers": ["97.8%", "2.3", "years"], "domain": "energy"}
+{"text": "Cable ampacity derating factor 0.82 applied during 45°C ambient temperature condition.", "entities": ["Cable ampacity derating"], "numbers": ["0.82", "45°C"], "domain": "energy"}
+{"text": "Demand response dispatch reduced peak 234 megawatts achieving $89.4 million savings.", "entities": ["Demand response dispatch"], "numbers": ["234", "megawatts", "89.4 million"], "domain": "energy"}
+{"text": "Frequency regulation asset fleet comprises 567 fast-response units providing 890 megawatts.", "entities": ["Frequency regulation asset"], "numbers": ["567", "890", "megawatts"], "domain": "energy"}
+{"text": "Tariff increase of 5.6% effective September 2027 applies to all retail customers.", "entities": ["Tariff increase"], "numbers": ["5.6%", "September 2027"], "domain": "energy"}
+{"text": "Power quality event recording captured 0.34 second voltage dip affecting 234 sites.", "entities": ["Power quality event"], "numbers": ["0.34", "second", "234"], "domain": "energy"}
+{"text": "Grid resilience improvement plan budgets $2.3 billion across 890 infrastructure projects.", "entities": ["Grid resilience improvement"], "numbers": ["2.3 billion", "890"], "domain": "energy"}
+{"text": "Energy market clearing price spike to $567 per megawatt-hour during shortage event.", "entities": ["Energy market clearing"], "numbers": ["567"], "domain": "energy"}
+{"text": "Demand forecast accuracy improved 8.9% using advanced machine learning algorithms.", "entities": ["Demand forecast accuracy"], "numbers": ["8.9%"], "domain": "energy"}
+{"text": "Interconnection study processing timeline reduced from 2.3 years to 1.4 years.", "entities": ["Interconnection study"], "numbers": ["2.3", "years", "1.4", "years"], "domain": "energy"}
+{"text": "Battery cycle lifespan testing validates 3,000 cycles with 89% capacity retention.", "entities": ["Battery cycle lifespan"], "numbers": ["3,000", "89%"], "domain": "energy"}
+{"text": "Demand flexibility market transactions totaled $234.5 million this fiscal quarter.", "entities": ["Demand flexibility market"], "numbers": ["234.5 million"], "domain": "energy"}
+{"text": "Transmission line rating upgrade increased thermal capacity 45% via composite conductor.", "entities": ["Transmission line rating"], "numbers": ["45%"], "domain": "energy"}
+{"text": "Outage risk assessment model predicts 0.34 outages per 100 kilometers annually.", "entities": ["Outage risk assessment"], "numbers": ["0.34", "100", "kilometers"], "domain": "energy"}
+{"text": "Demand response aggregator manages 234 assets providing 89 megawatts flex capacity.", "entities": ["Demand response aggregator"], "numbers": ["234", "89", "megawatts"], "domain": "energy"}
+{"text": "Grid stability monitoring reports frequency variance within ±0.23 hertz band.", "entities": ["Grid stability monitoring"], "numbers": ["0.23", "hertz"], "domain": "energy"}
+{"text": "Renewable curtailment payment averaged $234.56 per megawatt-hour this month.", "entities": ["Renewable curtailment payment"], "numbers": ["234.56"], "domain": "energy"}
+{"text": "Industrial tariff adjustment adds $0.089 per kilowatt-hour carbon cost component.", "entities": ["Industrial tariff adjustment"], "numbers": ["0.089"], "domain": "energy"}
+{"text": "Distributed generation uptake reached 34% household penetration surpassing forecasts.", "entities": ["Distributed generation uptake"], "numbers": ["34%"], "domain": "energy"}
+{"text": "Grid emergency alert triggered when frequency drops below 59.5 hertz threshold.", "entities": ["Grid emergency alert"], "numbers": ["59.5", "hertz"], "domain": "energy"}
+{"text": "Reserve margin adequacy score achieved 89.3% exceeding 85% regulatory minimum.", "entities": ["Reserve margin adequacy"], "numbers": ["89.3%", "85%"], "domain": "energy"}
+{"text": "Demand charge peak capacity recorded 45,234 megawatts during extreme summer event.", "entities": ["Demand charge peak"], "numbers": ["45,234", "megawatts"], "domain": "energy"}
+{"text": "Smart grid deployment completed across 234 utility service territories.", "entities": ["Smart grid deployment"], "numbers": ["234"], "domain": "energy"}
+{"text": "Tariff reform package restructures $890 million annual revenue across customer segments.", "entities": ["Tariff reform package"], "numbers": ["890 million"], "domain": "energy"}
+{"text": "Energy efficiency rebate program paid $234.5 million incentivizing 567,000 upgrades.", "entities": ["Energy efficiency rebate"], "numbers": ["234.5 million", "567,000"], "domain": "energy"}
+{"text": "Frequency nadir protection setting adjusted to 58.5 hertz emergency threshold.", "entities": ["Frequency nadir protection"], "numbers": ["58.5", "hertz"], "domain": "energy"}
+{"text": "Demand side management achieved 234 megawatts peak reduction target this year.", "entities": ["Demand side management"], "numbers": ["234", "megawatts"], "domain": "energy"}
+{"text": "Virtual inertia injection provides 89 megavolt-amperes emergency reactive support.", "entities": ["Virtual inertia injection"], "numbers": ["89", "megavolt-amperes"], "domain": "energy"}
+{"text": "Distributed solar penetration reached 23.4% annual energy supply contribution.", "entities": ["Distributed solar penetration"], "numbers": ["23.4%"], "domain": "energy"}
+{"text": "Grid outage root cause analysis identified 34% failures from aging equipment.", "entities": ["Grid outage root cause"], "numbers": ["34%"], "domain": "energy"}
+{"text": "Battery storage round-trip efficiency achieved 94.5% during 2,000 charge cycles.", "entities": ["Battery storage round-trip"], "numbers": ["94.5%", "2,000"], "domain": "energy"}
+{"text": "Demand elasticity modeling shows 3.4% demand reduction per 10% price increase.", "entities": ["Demand elasticity modeling"], "numbers": ["3.4%", "10%"], "domain": "energy"}
+{"text": "Load forecasting system provides 0.5 hour ahead predictions with 96.2% accuracy.", "entities": ["Load forecasting system"], "numbers": ["0.5", "hour", "96.2%"], "domain": "energy"}
+{"text": "Grid modernization investment allocation spread $1.2 billion across five regions.", "entities": ["Grid modernization investment"], "numbers": ["1.2 billion", "five"], "domain": "energy"}
+{"text": "Renewable generation curtailment dropped to 2.3% through better coordination systems.", "entities": ["Renewable generation curtailment"], "numbers": ["2.3%"], "domain": "energy"}
+{"text": "Transmission reserve margin policy maintains minimum 18% capacity buffer requirement.", "entities": ["Transmission reserve margin"], "numbers": ["18%"], "domain": "energy"}
+{"text": "Demand response enrollment reached 234,000 accounts providing 345 megawatts.", "entities": ["Demand response enrollment"], "numbers": ["234,000", "345", "megawatts"], "domain": "energy"}
+{"text": "Grid frequency excursion protection engages at ±0.5 hertz deviation threshold.", "entities": ["Grid frequency excursion"], "numbers": ["0.5", "hertz"], "domain": "energy"}
+{"text": "Energy storage capex cost curves show 45% decline per watt-hour capacity.", "entities": ["Energy storage capex"], "numbers": ["45%"], "domain": "energy"}
+{"text": "Demand charge management revenue savings totaled $567 million across utility.", "entities": ["Demand charge management"], "numbers": ["567 million"], "domain": "energy"}
+{"text": "Interconnection backlog grew to 890 applications requesting 234 gigawatts capacity.", "entities": ["Interconnection backlog"], "numbers": ["890", "234", "gigawatts"], "domain": "energy"}
+{"text": "Tariff surcharge cost consumers additional $234 annually per household account.", "entities": ["Tariff surcharge"], "numbers": ["234"], "domain": "energy"}
+{"text": "Load profile variance study shows 45% deviation in consumption patterns.", "entities": ["Load profile variance"], "numbers": ["45%"], "domain": "energy"}
+{"text": "Grid emergency voltage support injected 340 megavolt-amperes stabilizing system.", "entities": ["Grid emergency voltage"], "numbers": ["340", "megavolt-amperes"], "domain": "energy"}
+{"text": "Demand forecast error metric averaged 2.8% mean absolute percentage error.", "entities": ["Demand forecast error"], "numbers": ["2.8%"], "domain": "energy"}
+{"text": "Battery cost reduction trajectory targets $89 per kilowatt-hour by 2028.", "entities": ["Battery cost reduction"], "numbers": ["89", "2028"], "domain": "energy"}
+{"text": "Reserve requirement market price averaged $45.67 per megawatt this period.", "entities": ["Reserve requirement market"], "numbers": ["45.67"], "domain": "energy"}
+{"text": "Grid modernization completion milestone achieved 67% project deployment status.", "entities": ["Grid modernization completion"], "numbers": ["67%"], "domain": "energy"}
+{"text": "Demand response dispatch service revenue stream contributed $234.8 million profit.", "entities": ["Demand response dispatch"], "numbers": ["234.8 million"], "domain": "energy"}
+{"text": "Demand dispatch algorithm optimized 234 asset schedules reducing operating costs 12%.", "entities": ["Demand dispatch algorithm"], "numbers": ["234", "12%"], "domain": "energy"}
+{"text": "Wind generation variability shows 890 megawatt ramp rates within 5-minute window.", "entities": ["Wind generation variability"], "numbers": ["890", "megawatts", "5-minute"], "domain": "energy"}
+{"text": "Grid frequency support auction procured 567 megawatts at $89.45 per megawatt-hour.", "entities": ["Grid frequency support auction"], "numbers": ["567", "megawatts", "89.45"], "domain": "energy"}
+{"text": "Energy storage optimization system reduced peak demand charges by $345,000 annually.", "entities": ["Energy storage optimization"], "numbers": ["345,000"], "domain": "energy"}
+{"text": "Demand management portfolio achieved 234 megawatts peak reduction across program.", "entities": ["Demand management portfolio"], "numbers": ["234", "megawatts"], "domain": "energy"}

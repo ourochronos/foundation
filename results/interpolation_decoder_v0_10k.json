@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-07-23T00:59:54.573532+00:00",
+  "ckpt": "decoder_v0",
+  "n_pairs": 60,
+  "curve": [
+    {
+      "t": 0.0,
+      "roundtrip_cos_mean": 0.5770571231842041,
+      "roundtrip_cos_p10": 0.3773173391819,
+      "mean_words": 15.783333333333333
+    },
+    {
+      "t": 0.25,
+      "roundtrip_cos_mean": 0.49187028408050537,
+      "roundtrip_cos_p10": 0.3336399495601654,
+      "mean_words": 15.966666666666667
+    },
+    {
+      "t": 0.5,
+      "roundtrip_cos_mean": 0.30363646149635315,
+      "roundtrip_cos_p10": 0.19833950698375702,
+      "mean_words": 16.383333333333333
+    },
+    {
+      "t": 0.75,
+      "roundtrip_cos_mean": 0.4751047194004059,
+      "roundtrip_cos_p10": 0.29538819193840027,
+      "mean_words": 16.133333333333333
+    },
+    {
+      "t": 1.0,
+      "roundtrip_cos_mean": 0.5846145749092102,
+      "roundtrip_cos_p10": 0.3954632878303528,
+      "mean_words": 16.25
+    }
+  ],
+  "endpoint_mean": 0.5808358490467072,
+  "midpoint": 0.30363646149635315,
+  "relative_drop": 0.4772422156884869,
+  "samples": {
+    "0.0": [
+      "Since the magnetic field intensified by 5.2 Tesla, the electron trajectories curved 4.1 meters each.",
+      "Because the plankton population fell 0.4 kilograms per square meter due to warming, fish migration dropped.",
+      "Since the aqueduct's water table fell by 1.2 million cubic meters annually, the lake's mercury index plummeted."
+    ],
+    "0.25": [
+      "Since the magnetic field intensified from 5 to 12 Tesla, the electron orbits stretched 4.5 meters.",
+      "As the plankton biomass declined by 48 percent due to warming, fish migration was already critically impaired.",
+      "The Aqueduct Pumping Company served 1.2 million gallons annually to the city's 1,000-meter-long water grid."
+    ],
+    "0.5": [
+      "Since the magnetic field strength reached 4.5 Tesla, the antenna's radius had to shrink by 2.1 meters.",
+      "During the Plague Years (1445-1448), the guild of Bricksham rulers was unable to maintain quality standards due to outbreak severity.",
+      "The Aquaculture Council regulated fish markets in Prague and controlled water consumption to 1.3 million liters annually."
+    ],
+    "0.75": [
+      "The Grand Bridge of Amsterdam spanned 67 meters and was completed in 1904 after extensive engineering work.",
+      "The Brushwork Guild of Prague controlled painting traditions and set wages for approximately 400 years.",
+      "The Council of Bakers at Grozny controlled food supply and price from 1456 until the 1980s."
+    ],
+    "1.0": [
+      "The Grand Bridge of Amsterdam spans 76 meters and was completed in 1904 at significant economic time.",
+      "The Brushwork Pianists Guild controlled artistic standards in Brussels from 1458 and maintained rigors for centuries.",
+      "The Butchers' Guild of Cologne controlled meat production from 1456 and regulated prices for five hundred years."
+    ]
+  }
+}

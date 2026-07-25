@@ -1,0 +1,250 @@
+{"text": "The sulfuric acid solution measured 1.84 g/cm\u00b3 at 25\u00b0C, exceeding water density.", "entities": [], "numbers": ["1.84 g/cm\u00b3", "25\u00b0C"], "domain": "measurement"}
+{"text": "Polaris maintains an apparent magnitude of 1.98, visible from 15 km distance.", "entities": ["Polaris"], "numbers": ["1.98", "15 km"], "domain": "measurement"}
+{"text": "The acoustic absorption coefficient reached 0.87 at 2000 Hz, doubling at 4000 Hz.", "entities": [], "numbers": ["0.87", "2000 Hz", "4000 Hz"], "domain": "measurement"}
+{"text": "Gauge R&R calculated 5.2% of tolerance, below 30% acceptance threshold.", "entities": [], "numbers": ["5.2%", "30%"], "domain": "measurement"}
+{"text": "Human erythrocyte diameter averages 7.5 \u03bcm, ranging 6.0 to 8.5 \u03bcm.", "entities": [], "numbers": ["7.5 \u03bcm", "6.0 to 8.5 \u03bcm"], "domain": "measurement"}
+{"text": "Tensile strength of cast iron measured 150 MPa with Young's modulus of 120 GPa.", "entities": [], "numbers": ["150 MPa", "120 GPa"], "domain": "measurement"}
+{"text": "Silicon wafer thickness tolerance: 725 \u00b1 25 \u03bcm at laser wavelength 632.8 nm.", "entities": [], "numbers": ["725 \u00b1 25 \u03bcm", "632.8 nm"], "domain": "measurement"}
+{"text": "E. coli population doubled every 20 minutes at 37\u00b0C with OD\u2086\u2080\u2080 of 0.65.", "entities": ["E. coli"], "numbers": ["20 minutes", "37\u00b0C"], "domain": "measurement"}
+{"text": "PM2.5 concentration peaked at 287 \u03bcg/m\u00b3, 2.3 times above baseline of 125 \u03bcg/m\u00b3.", "entities": [], "numbers": ["287 \u03bcg/m\u00b3", "125 \u03bcg/m\u00b3"], "domain": "measurement"}
+{"text": "Mercury vapor pressure reached 0.0017 Pa at 20\u00b0C, increasing to 12 Pa at 100\u00b0C.", "entities": [], "numbers": ["0.0017 Pa", "20\u00b0C", "12 Pa", "100\u00b0C"], "domain": "measurement"}
+{"text": "Titanium sample expanded 0.043 mm at 480\u00b0C, half the aluminum control's 0.081 mm.", "entities": [], "numbers": ["0.043 mm", "480\u00b0C", "0.081 mm"], "domain": "measurement"}
+{"text": "Betelgeuse exhibits surface temperature 3500 K with luminosity of 140,000 L\u2609.", "entities": ["Betelgeuse"], "numbers": ["3500 K", "140,000 L\u2609"], "domain": "measurement"}
+{"text": "Chlorine gas detection limit: 0.5 ppm, occupational exposure limit at 1 ppm.", "entities": [], "numbers": ["0.5 ppm", "1 ppm"], "domain": "measurement"}
+{"text": "Ceramic sample withstood 45 MPa before microcracking at 46.5 MPa.", "entities": [], "numbers": ["45 MPa", "46.5 MPa"], "domain": "measurement"}
+{"text": "Bacterial DNA damage increased 3.7-fold after 250 mJ/cm\u00b2 UV-B exposure.", "entities": [], "numbers": ["3.7-fold", "250 mJ/cm\u00b2"], "domain": "measurement"}
+{"text": "Olive oil viscosity: 82 mPa\u00b7s at 20\u00b0C, decreasing to 9 mPa\u00b7s at 100\u00b0C.", "entities": [], "numbers": ["82 mPa\u00b7s", "20\u00b0C", "9 mPa\u00b7s", "100\u00b0C"], "domain": "measurement"}
+{"text": "Vega's parallax measures 128.93 milliarcseconds, distance of 7.68 parsecs.", "entities": ["Vega"], "numbers": ["128.93 milliarcseconds", "7.68 parsecs"], "domain": "measurement"}
+{"text": "Granite density 2.65 g/cm\u00b3 compared to basalt at 3.0 g/cm\u00b3.", "entities": [], "numbers": ["2.65 g/cm\u00b3", "3.0 g/cm\u00b3"], "domain": "measurement"}
+{"text": "Specimen refractive index: 1.523 at 589 nm, flint glass at 25\u00b0C.", "entities": [], "numbers": ["1.523", "589 nm", "25\u00b0C"], "domain": "measurement"}
+{"text": "Chlorophyll a concentration in seawater: 2.4 mg/m\u00b3 with 15% error.", "entities": [], "numbers": ["2.4 mg/m\u00b3", "15%"], "domain": "measurement"}
+{"text": "Particle size distribution peaked at 1.8 \u03bcm with standard deviation 0.23 \u03bcm.", "entities": [], "numbers": ["1.8 \u03bcm", "0.23 \u03bcm"], "domain": "measurement"}
+{"text": "Sirius B temperature reaches 8,200 K with surface gravity of 380,000 g.", "entities": ["Sirius B"], "numbers": ["8,200 K", "380,000 g"], "domain": "measurement"}
+{"text": "Flame ionization detector response: 8.2 \u00d7 10\u2076 pA/ppm for methane.", "entities": [], "numbers": ["8.2 \u00d7 10\u2076 pA/ppm", "8.2 \u00d7 1"], "domain": "measurement"}
+{"text": "Crack propagation rate reached 3.2 mm per 10\u2075 cycles under 220 MPa.", "entities": [], "numbers": ["3.2 mm", "10\u2075 cycles", "220 MPa"], "domain": "measurement"}
+{"text": "Leaf photosynthetic rate: 18.5 \u03bcmol CO\u2082/m\u00b2/s at light 1200 \u03bcmol photons/m\u00b2/s.", "entities": [], "numbers": ["18.5 \u03bcmol CO\u2082/m\u00b2/s", "1200 \u03bcmol photons/m\u00b2/s"], "domain": "measurement"}
+{"text": "Reference resistor temperature coefficient: 0.0015%/K at \u00b125 ppm.", "entities": [], "numbers": ["0.0015%/K", "25 ppm"], "domain": "measurement"}
+{"text": "Neptune wind speed peaks at 2100 km/h, 100 times Earth's hurricane winds.", "entities": ["Neptune", "Earth"], "numbers": ["2100 km/h", "100 times"], "domain": "measurement"}
+{"text": "Absorption peak shifted from 455 nm to 489 nm upon pH increase 4.2 to 8.9.", "entities": [], "numbers": ["455 nm", "489 nm", "4.2", "8.9"], "domain": "measurement"}
+{"text": "Calibration accuracy: \u00b10.05% of full scale, linearity \u00b10.02%.", "entities": [], "numbers": ["0.05%", "0.02%"], "domain": "measurement"}
+{"text": "Rat liver mitochondria respiration rate: 150 nmol O\u2082/min at 37\u00b0C.", "entities": [], "numbers": ["150 nmol O\u2082/min", "37\u00b0C"], "domain": "measurement"}
+{"text": "Andromeda galaxy 1 trillion stars, Milky Way 100-200 billion.", "entities": ["Andromeda", "Milky Way"], "numbers": ["1 trillion", "100-200 billion"], "domain": "measurement"}
+{"text": "Skin conductance response 8.3 microsiemens, increasing 2.4\u00d7 during stress.", "entities": [], "numbers": ["8.3 microsiemens", "2.4\u00d7"], "domain": "measurement"}
+{"text": "Copper wire resistance 0.00534 \u03a9 at 20\u00b0C with resistivity 1.68 \u00d7 10\u207b\u2078 \u03a9\u00b7m.", "entities": [], "numbers": ["0.00534 \u03a9", "20\u00b0C", "1.68 \u00d7 10\u207b\u2078 \u03a9\u00b7m"], "domain": "measurement"}
+{"text": "Mycobacterium tuberculosis doubling time: 15 hours at 37\u00b0C.", "entities": ["Mycobacterium tuberculosis"], "numbers": ["15 hours", "37\u00b0C"], "domain": "measurement"}
+{"text": "Crystal lattice parameter a = 5.431 \u00c5 with axial ratio 1.633.", "entities": [], "numbers": ["5.431 \u00c5", "1.633"], "domain": "measurement"}
+{"text": "Carbon dioxide increased from 316 ppm in 1959 to 421 ppm in 2023.", "entities": [], "numbers": ["316 ppm", "421 ppm"], "domain": "measurement"}
+{"text": "Friction coefficient between dry surfaces: 0.68, reducing to 0.12 lubricated.", "entities": [], "numbers": ["0.68", "0.12"], "domain": "measurement"}
+{"text": "Proxima Centauri mass 0.12 solar masses, luminosity 0.0005 L\u2609.", "entities": ["Proxima Centauri"], "numbers": ["0.12 solar masses", "0.0005 L\u2609"], "domain": "measurement"}
+{"text": "Diffraction grating resolving power: 42,000 at 500 nm.", "entities": [], "numbers": ["42,000", "500 nm"], "domain": "measurement"}
+{"text": "Hemoglobin saturation reached 95% at partial oxygen pressure 90 mmHg.", "entities": ["Hemoglobin"], "numbers": ["95%", "90 mmHg"], "domain": "measurement"}
+{"text": "Polyethylene tensile modulus: 1.1 GPa at 20\u00b0C, 0.3 GPa at 80\u00b0C.", "entities": [], "numbers": ["1.1 GPa", "20\u00b0C", "0.3 GPa", "80\u00b0C"], "domain": "measurement"}
+{"text": "Glucose concentration in cerebrospinal fluid: 40-70 mg/dL, 60% of plasma.", "entities": ["Glucose"], "numbers": ["40-70 mg/dL", "60%"], "domain": "measurement"}
+{"text": "Optical fiber transmission loss 0.19 dB/km at 1550 nm wavelength.", "entities": [], "numbers": ["0.19 dB/km", "1550 nm"], "domain": "measurement"}
+{"text": "Jupiter's Great Red Spot rotates period of 6 days and 4 hours.", "entities": ["Jupiter", "Great Red Spot"], "numbers": ["6 days", "4 hours"], "domain": "measurement"}
+{"text": "Calibration curve r\u00b2 value: 0.9987 with detection limit 0.8 ppb.", "entities": [], "numbers": ["0.9987", "0.8 ppb"], "domain": "measurement"}
+{"text": "Protease activity increased 4.5-fold after 2 hours at 42\u00b0C.", "entities": [], "numbers": ["4.5-fold", "2 hours", "42\u00b0C"], "domain": "measurement"}
+{"text": "Adhesive bonding strength 8.9 MPa, variation coefficient 3.2%.", "entities": [], "numbers": ["8.9 MPa", "3.2%"], "domain": "measurement"}
+{"text": "Sunspot cycle averages 11 years, amplitude 40 to 120 relative units.", "entities": ["Sunspot"], "numbers": ["11 years", "40", "120"], "domain": "measurement"}
+{"text": "Insulin injection increased blood glucose 250 mg/dL within 4 hours.", "entities": ["Insulin"], "numbers": ["250 mg/dL", "4 hours"], "domain": "measurement"}
+{"text": "Thermal conductivity of foam: 0.035 W/m\u00b7K at mean temperature 25\u00b0C.", "entities": [], "numbers": ["0.035 W/m\u00b7K", "25\u00b0C"], "domain": "measurement"}
+{"text": "Gliese 581 d orbits every 66.8 days at distance 0.253 AU.", "entities": ["Gliese 581 d"], "numbers": ["66.8 days", "0.253 AU"], "domain": "measurement"}
+{"text": "Sound pressure level peaked 118 dB at 125 Hz during machinery.", "entities": [], "numbers": ["118 dB", "125 Hz"], "domain": "measurement"}
+{"text": "Enzyme kinetic parameters: Km = 2.3 \u03bcM and Vmax = 45 nmol/min.", "entities": [], "numbers": ["2.3 \u03bcM", "45 nmol/min"], "domain": "measurement"}
+{"text": "Granite permeability 1.2 \u00d7 10\u207b\u00b9\u2078 m\u00b2, approximately 0.0012 microdarcy.", "entities": [], "numbers": ["1.2 \u00d7 10\u207b\u00b9\u2078 m\u00b2", "0.0012 microdarcy"], "domain": "measurement"}
+{"text": "HPLC baseline noise at 254 nm: 2.5 mV with S/N 320.", "entities": ["HPLC"], "numbers": ["254 nm", "2.5 mV"], "domain": "measurement"}
+{"text": "Pulsar rotation period: 33.5 milliseconds with spin-down 3.7 \u00d7 10\u207b\u00b9\u2079 s/s.", "entities": ["Pulsar"], "numbers": ["33.5 milliseconds", "3.7 \u00d7 10\u207b\u00b9\u2079 s/s"], "domain": "measurement"}
+{"text": "Seawater pH 8.1 to 8.3, dissolved oxygen 8.5 mg/L at saturation.", "entities": [], "numbers": ["8.1", "8.3", "8.5 mg/L"], "domain": "measurement"}
+{"text": "Spectral emissivity at 1000\u00b0C measured 0.87 for oxidized steel.", "entities": [], "numbers": ["1000\u00b0C", "0.87"], "domain": "measurement"}
+{"text": "Cytokine IL-6 level: 8.2 pg/mL in patient, 1.5 pg/mL normal.", "entities": ["IL-6"], "numbers": ["8.2 pg/mL", "1.5 pg/mL"], "domain": "measurement"}
+{"text": "Fused silica refractive index: 1.46 at 589 nm and 20\u00b0C.", "entities": [], "numbers": ["1.46", "589 nm", "20\u00b0C"], "domain": "measurement"}
+{"text": "Orion nebula spans 65 light-years with mass 1000 solar masses.", "entities": ["Orion nebula"], "numbers": ["65 light-years", "1000 solar masses"], "domain": "measurement"}
+{"text": "Vibration acceleration amplitude: 2.8 g at resonance frequency 45 Hz.", "entities": [], "numbers": ["2.8 g", "45 Hz"], "domain": "measurement"}
+{"text": "Pure tungsten melting point: 3695 K, highest among metallic elements.", "entities": [], "numbers": ["2.818 \u00d7 10\u207b\u00b9\u2075 meters", "2.8 fm"], "domain": "measurement"}
+{"text": "Bacterial cell wall: 20-80 nm gram-positive, 10-20 nm gram-negative.", "entities": [], "numbers": ["20-80 nm", "10-20 nm"], "domain": "measurement"}
+{"text": "Potentiometric titration endpoint: 4.87 mL with \u00b10.02 mL repeatability.", "entities": [], "numbers": ["4.87 mL", "0.02 mL"], "domain": "measurement"}
+{"text": "Kepler-452b radius 1.6 times Earth's, orbit period 384.8 days.", "entities": ["Kepler-452b"], "numbers": ["1.6 times", "384.8 days"], "domain": "measurement"}
+{"text": "Filter pressure drop increased from 0.5 bar to 1.8 bar in 50 hours.", "entities": [], "numbers": ["0.5 bar", "1.8 bar", "50 hours"], "domain": "measurement"}
+{"text": "Cortisol peak level: 18.3 \u03bcg/dL at 8 AM, 3.1 \u03bcg/dL midnight.", "entities": ["Cortisol"], "numbers": ["18.3 \u03bcg/dL", "3.1 \u03bcg/dL"], "domain": "measurement"}
+{"text": "Specific heat capacity of aluminum: 0.897 J/g\u00b7K at room temperature.", "entities": [], "numbers": ["0.662 MeV", "0.66 MeV"], "domain": "measurement"}
+{"text": "Black hole event horizon radius: 2.95 km for 1 solar mass.", "entities": [], "numbers": ["2.95 km", "1 solar mass"], "domain": "measurement"}
+{"text": "Formaldehyde emission rate: 0.14 mg/m\u00b3/h, limit 0.2 mg/m\u00b3/h.", "entities": ["Formaldehyde"], "numbers": ["0.14 mg/m\u00b3/h", "0.2 mg/m\u00b3/h"], "domain": "measurement"}
+{"text": "Ion chromatography detection limit: 50 ppb chloride, 30 ppb nitrate.", "entities": [], "numbers": ["50 ppb", "30 ppb"], "domain": "measurement"}
+{"text": "Neutron star density: 4 \u00d7 10\u00b9\u2077 kg/m\u00b3, teaspoon weighs 6 billion tons.", "entities": ["Neutron star"], "numbers": ["4 \u00d7 10\u00b9\u2077 kg/m\u00b3", "6 billion tons"], "domain": "measurement"}
+{"text": "Diode reverse saturation current: 8.5 nA at 25\u00b0C, coefficient 0.08/K.", "entities": [], "numbers": ["8.5 nA", "25\u00b0C", "0.08 per K"], "domain": "measurement"}
+{"text": "Hemoglobin A1c: 6.2% in diabetic, normal 4.0-5.6%.", "entities": ["Hemoglobin A1c"], "numbers": ["6.2%", "4.0-5.6%"], "domain": "measurement"}
+{"text": "Coating thickness: 125 \u00b1 15 \u03bcm by eddy current, 8% uncertainty.", "entities": [], "numbers": ["125 \u00b1 15 \u03bcm", "8%"], "domain": "measurement"}
+{"text": "Mars atmospheric pressure 600 Pa, 0.6% of Earth's 101,325 Pa.", "entities": ["Mars", "Earth"], "numbers": ["600 Pa", "101,325 Pa"], "domain": "measurement"}
+{"text": "Tensile elongation: 34% with Young's modulus 210 GPa for steel.", "entities": [], "numbers": ["34%", "210 GPa"], "domain": "measurement"}
+{"text": "Toluene vapor concentration: 127 ppm at chamber temperature 22\u00b0C.", "entities": ["Toluene"], "numbers": ["127 ppm", "22\u00b0C"], "domain": "measurement"}
+{"text": "Crab Nebula expands at 1500 km/s, age approximately 954 years.", "entities": ["Crab Nebula"], "numbers": ["1500 km/s", "954 years"], "domain": "measurement"}
+{"text": "Fiber optic coupler insertion loss: 3.2 dB at 1310 nm.", "entities": [], "numbers": ["3.2 dB", "1310 nm"], "domain": "measurement"}
+{"text": "White blood cell count: 12,500 cells/\u03bcL, normal 4,500-11,000.", "entities": [], "numbers": ["12,500 cells/\u03bcL", "4,500-11,000 cells/\u03bcL"], "domain": "measurement"}
+{"text": "Poisson's ratio for composite: 0.28 under uniaxial loading.", "entities": [], "numbers": ["1.257 \u00d7 10\u207b\u2076 H/m", "1.26 \u00d7 10\u207b\u2076"], "domain": "measurement"}
+{"text": "Saturn's rings contain 2 \u00d7 10\u00b2\u2070 kg water ice and rock.", "entities": ["Saturn"], "numbers": ["2 \u00d7 10\u00b2\u2070 kg", "2 \u00d7 1"], "domain": "measurement"}
+{"text": "Piezoelectric coefficient d\u2083\u2083: -495 pC/N for PZT ceramic.", "entities": [], "numbers": ["0.01217 keV", "0.012 keV"], "domain": "measurement"}
+{"text": "Creatinine level 1.2 mg/dL, slightly elevated from 0.6-1.2 normal.", "entities": ["Creatinine"], "numbers": ["1.2 mg/dL", "0.6-1.2"], "domain": "measurement"}
+{"text": "Modulation transfer function at Nyquist: 0.15, aliasing risk evident.", "entities": [], "numbers": ["5.67 \u00d7 10\u207b\u2078 W/m\u00b2K\u2074", "5.7 \u00d7 10\u207b\u2078"], "domain": "measurement"}
+{"text": "Venus surface temperature 735 K, hotter than Mercury.", "entities": ["Venus", "Mercury"], "numbers": ["735 K", "735 K"], "domain": "measurement"}
+{"text": "Acoustic impedance mismatch: 88% reflection at 4 MHz transducer.", "entities": [], "numbers": ["88%", "4 MHz"], "domain": "measurement"}
+{"text": "Spectrophotometer absorbance at 600 nm: 0.342 with precision 0.003.", "entities": [], "numbers": ["600 nm", "0.342", "0.003"], "domain": "measurement"}
+{"text": "Testosterone level: 680 ng/dL, normal 300-1000 ng/dL.", "entities": ["Testosterone"], "numbers": ["680 ng/dL", "300-1000 ng/dL"], "domain": "measurement"}
+{"text": "Concrete compressive strength: 42 MPa after 28 days curing.", "entities": [], "numbers": ["42 MPa", "28 days"], "domain": "measurement"}
+{"text": "Alpha Centauri distance: 4.37 light-years, proper motion 3.7 arcsec/year.", "entities": ["Alpha Centauri"], "numbers": ["4.37 light-years", "3.7 arcsec/year"], "domain": "measurement"}
+{"text": "Transmission electron microscope resolution: 0.1 nm at 200 kV.", "entities": [], "numbers": ["0.1 nm", "200 kV"], "domain": "measurement"}
+{"text": "TNF-\u03b1 increased 3.2-fold in inflamed versus healthy tissue.", "entities": ["TNF-\u03b1"], "numbers": ["13.6 eV", "13.6 eV"], "domain": "measurement"}
+{"text": "Film thickness variation: 2.5 \u00b1 0.3 \u03bcm across substrate.", "entities": [], "numbers": ["2.5 \u00b1 0.3 \u03bcm", "2.5 \u00b1 0"], "domain": "measurement"}
+{"text": "Andromeda approaches Earth at 110 km/s, collision in 5 billion years.", "entities": ["Andromeda", "Earth"], "numbers": ["110 km/s", "5 billion years"], "domain": "measurement"}
+{"text": "Dielectric loss tangent: 0.0025 at 1 MHz frequency.", "entities": [], "numbers": ["0.0025", "1 MHz"], "domain": "measurement"}
+{"text": "Thyroid hormone TSH: 2.3 mIU/L, normal 0.5-5.0 mIU/L.", "entities": ["TSH"], "numbers": ["2.3 mIU/L", "0.5-5.0 mIU/L"], "domain": "measurement"}
+{"text": "Brittle polymer breakage rate: 2.1 \u00d7 10\u207b\u00b3 s\u207b\u00b9 at 50% strain.", "entities": [], "numbers": ["50%", "2.1 \u00d7 10\u207b\u00b3 s\u207b\u00b9"], "domain": "measurement"}
+{"text": "Solar constant at Earth's orbit: 1361 W/m\u00b2, varies 0.1%.", "entities": ["Earth"], "numbers": ["1361 W/m\u00b2", "0.1%"], "domain": "measurement"}
+{"text": "Surface roughness Ra: 1.6 \u03bcm after machining, 0.4 \u03bcm post-polish.", "entities": [], "numbers": ["1.6 \u03bcm", "0.4 \u03bcm"], "domain": "measurement"}
+{"text": "C-reactive protein: 45 mg/L during infection, 3 mg/L normal.", "entities": ["C-reactive protein"], "numbers": ["45 mg/L", "3 mg/L"], "domain": "measurement"}
+{"text": "Silicon bandgap energy: 1.12 eV at 25\u00b0C, coefficient -2.3 \u00d7 10\u207b\u2074 eV/K.", "entities": ["silicon"], "numbers": ["1.12 eV", "25\u00b0C"], "domain": "measurement"}
+{"text": "Betelgeuse radius 1000 solar radii, approximately 465 million km.", "entities": ["Betelgeuse"], "numbers": ["1000", "465 million km"], "domain": "measurement"}
+{"text": "X-ray diffraction peak FWHM: 0.084 degrees at 2\u03b8 = 43.3.", "entities": [], "numbers": ["0.084 degrees", "43.3 degrees"], "domain": "measurement"}
+{"text": "Liver function AST level: 35 U/L, normal 10-35 U/L.", "entities": ["AST"], "numbers": ["35 U/L", "10-35 U/L"], "domain": "measurement"}
+{"text": "Contact angle water hydrophobic surface: 112 \u00b1 3 degrees.", "entities": [], "numbers": ["112", "3 degrees"], "domain": "measurement"}
+{"text": "Quasar J0005+3820 luminosity 10\u00b9\u2074 L\u2609, redshift 7.642, age 13.1 Gyr.", "entities": ["J0005+3820"], "numbers": ["10\u00b9\u2074 L\u2609", "7.642"], "domain": "measurement"}
+{"text": "Fluorescence lifetime of rhodamine: 5.2 nanoseconds at 20\u00b0C.", "entities": ["rhodamine"], "numbers": ["5.2 nanoseconds", "20\u00b0C"], "domain": "measurement"}
+{"text": "Prothrombin time 12.4 seconds, normal 11-13.5 seconds.", "entities": ["PT"], "numbers": ["12.4 seconds", "11-13.5 seconds"], "domain": "measurement"}
+{"text": "Damping ratio \u03b6 = 0.05, quality factor Q \u2248 10.", "entities": [], "numbers": ["0.05", "10"], "domain": "measurement"}
+{"text": "Cassiopeia A expands at 18,000 km/s, age 330 years post-supernova.", "entities": ["Cassiopeia A"], "numbers": ["18,000 km/s", "330 years"], "domain": "measurement"}
+{"text": "Anion gap: 14 mEq/L suggesting metabolic acidosis.", "entities": [], "numbers": ["14 mEq/L", "14 mEq"], "domain": "measurement"}
+{"text": "Thermal diffusivity of aluminum: 0.85 cm\u00b2/s at 25\u00b0C.", "entities": [], "numbers": ["0.85 cm\u00b2/s", "25\u00b0C"], "domain": "measurement"}
+{"text": "Helix Nebula contains 36,000 solar masses of ionized gas.", "entities": ["Helix Nebula"], "numbers": ["36,000 solar masses", "36 ,00"], "domain": "measurement"}
+{"text": "X-ray Bragg angle: 28.44 degrees, d-spacing 3.14 Angstroms.", "entities": [], "numbers": ["28.44 degrees", "3.14 Angstroms"], "domain": "measurement"}
+{"text": "Troponin I cardiac marker: 0.8 ng/mL acute MI, 0.04 ng/mL normal.", "entities": ["Troponin I"], "numbers": ["0.8 ng/mL", "0.04 ng/mL"], "domain": "measurement"}
+{"text": "Polystyrene foam density: 24 kg/m\u00b3, R-value 3.7 per inch.", "entities": [], "numbers": ["24 kg/m\u00b3", "3.7"], "domain": "measurement"}
+{"text": "Supermassive black hole: 4.1 \u00b1 0.3 million solar masses.", "entities": [], "numbers": ["4.1 \u00b1 0.3 million solar masses", "4.1 \u00b1 0"], "domain": "measurement"}
+{"text": "Particle size modal diameter: 2.3 nm, std dev 1.8.", "entities": [], "numbers": ["2.3 nm", "1.8"], "domain": "measurement"}
+{"text": "Albumin level: 38 g/L, normal 35-50 g/L for healthy adult.", "entities": ["Albumin"], "numbers": ["38 g/L", "35-50 g/L"], "domain": "measurement"}
+{"text": "Elastic modulus gradient: 15 GPa surface, 8 GPa core.", "entities": [], "numbers": ["15 GPa", "8 GPa"], "domain": "measurement"}
+{"text": "Proxima Centauri flare brightened 1000 times in 10 minutes UV.", "entities": ["Proxima Centauri"], "numbers": ["1000 times", "10 minutes"], "domain": "measurement"}
+{"text": "Lipase enzyme activity: 82 U/L, normal 0-51 U/L.", "entities": ["Lipase"], "numbers": ["82 U/L", "0-51 U/L"], "domain": "measurement"}
+{"text": "Strain rate sensitivity m = 0.14 from constant rate tests.", "entities": [], "numbers": ["0.14", "0.133"], "domain": "measurement"}
+{"text": "Planetary nebula expansion: 39 km/s velocity, central star 95,000 K.", "entities": [], "numbers": ["39 km/s", "95,000 K"], "domain": "measurement"}
+{"text": "Platelet count: 245,000 per microliter, normal 150,000-400,000.", "entities": [], "numbers": ["245,000 per microliter", "150,000-400,000"], "domain": "measurement"}
+{"text": "Linear attenuation coefficient X-rays: 0.156 cm\u207b\u00b9 at 100 keV.", "entities": [], "numbers": ["0.156 cm\u207b\u00b9", "100 keV"], "domain": "measurement"}
+{"text": "Nebula outer shell expands 12 km/s, nebular radius 0.8 parsecs.", "entities": [], "numbers": ["12 km/s", "0.8 parsecs"], "domain": "measurement"}
+{"text": "Uric acid: 6.8 mg/dL slightly elevated, male normal 3.5-7.2.", "entities": ["Uric acid"], "numbers": ["6.8 mg/dL", "3.5-7.2 mg/dL"], "domain": "measurement"}
+{"text": "Critical angle total internal reflection: 41.8 degrees glass-air.", "entities": [], "numbers": ["41.8 degrees", "41.8 deg"], "domain": "measurement"}
+{"text": "Red giant star luminosity 6000 times solar, temperature 3200 K.", "entities": [], "numbers": ["6000 times", "3200 K"], "domain": "measurement"}
+{"text": "Blood urea nitrogen BUN: 18 mg/dL, normal 7-18 mg/dL.", "entities": ["BUN"], "numbers": ["18 mg/dL", "7-18 mg/dL"], "domain": "measurement"}
+{"text": "Fracture toughness K_IC: 25 MPa\u221am at 22\u00b0C, 15 at -40\u00b0C.", "entities": [], "numbers": ["25 MPa\u221am", "22\u00b0C", "15 MPa\u221am", "-40\u00b0C"], "domain": "measurement"}
+{"text": "Wolf-Rayet star wind velocity: 3000 km/s, mass loss 10\u207b\u2075 M\u2609/year.", "entities": ["Wolf-Rayet"], "numbers": ["3000 km/s", "10\u207b\u2075 M\u2609/year"], "domain": "measurement"}
+{"text": "Lactate blood level: 2.4 mmol/L indicating anaerobic metabolism.", "entities": ["Lactate"], "numbers": ["2.4 mmol/L", "2.4 mmo"], "domain": "measurement"}
+{"text": "Optical density 280 nm: 0.65 protein solution, 1.2 mg/mL.", "entities": [], "numbers": ["280 nm", "0.65", "1.2 mg/mL"], "domain": "measurement"}
+{"text": "WR 22 star luminosity 180,000 solar, stellar mass 80 M\u2609.", "entities": ["WR 22"], "numbers": ["180,000", "80 M\u2609"], "domain": "measurement"}
+{"text": "Glucose tolerance test 2-hour value: 145 mg/dL.", "entities": ["Glucose"], "numbers": ["145 mg/dL", "145 mg/"], "domain": "measurement"}
+{"text": "Quality factor resonator: 250 at 10 GHz, bandwidth 40 MHz.", "entities": [], "numbers": ["250", "10 GHz", "40 MHz"], "domain": "measurement"}
+{"text": "PSR J0218+4232 rotation frequency 430.8 Hz, timing 1 microsecond.", "entities": ["PSR J0218+4232"], "numbers": ["430.8 Hz", "1 microsecond"], "domain": "measurement"}
+{"text": "Free thyroxine T4: 1.2 ng/dL, normal 0.8-1.8 ng/dL.", "entities": ["T4"], "numbers": ["1.2 ng/dL", "0.8-1.8 ng/dL"], "domain": "measurement"}
+{"text": "Impedance transformation ratio 4:1, quarter-wave at 2.4 GHz.", "entities": [], "numbers": ["4:1", "2.4 GHz"], "domain": "measurement"}
+{"text": "Recurrent nova RS Ophiuchi brightens 7 magnitudes in 15 minutes.", "entities": ["RS Ophiuchi"], "numbers": ["7 magnitudes", "15 minutes"], "domain": "measurement"}
+{"text": "Creatine kinase CK: 850 U/L acute injury, 30-200 U/L normal.", "entities": ["CK"], "numbers": ["850 U/L", "30-200 U/L"], "domain": "measurement"}
+{"text": "Fiber coupling efficiency: 92% at 1550 nm, loss 0.08 dB.", "entities": [], "numbers": ["92%", "1550 nm", "0.08 dB"], "domain": "measurement"}
+{"text": "Accretion disk around black hole: 8 \u00d7 10\u2076 K temperature.", "entities": [], "numbers": ["8 \u00d7 10\u2076 K", "8 \u00d7 1"], "domain": "measurement"}
+{"text": "Cholesterol 220 mg/dL borderline, LDL 145 mg/dL high.", "entities": ["Cholesterol", "LDL"], "numbers": ["220 mg/dL", "145 mg/dL"], "domain": "measurement"}
+{"text": "Photonic crystal bandgap at 1.3 \u03bcm, fractional bandwidth 2.1%.", "entities": [], "numbers": ["1.3 \u03bcm", "2.1%"], "domain": "measurement"}
+{"text": "White dwarf temperature 12,000 K, radius 0.01 solar radii.", "entities": [], "numbers": ["12,000 K", "0.01 solar radii"], "domain": "measurement"}
+{"text": "Bilirubin total: 0.8 mg/dL, normal 0.2-1.2 mg/dL.", "entities": ["Bilirubin"], "numbers": ["0.8 mg/dL", "0.2-1.2 mg/dL"], "domain": "measurement"}
+{"text": "Butterworth filter 80 dB/decade rolloff at 1 kHz cutoff.", "entities": ["Butterworth"], "numbers": ["80 dB/decade", "1 kHz"], "domain": "measurement"}
+{"text": "T Tauri star magnetic field 2000 Gauss, rotation 8.5 days.", "entities": ["T Tauri"], "numbers": ["2000 Gauss", "8.5 days"], "domain": "measurement"}
+{"text": "Potassium level: 4.2 mEq/L, normal 3.5-5.0 mEq/L.", "entities": ["Potassium"], "numbers": ["4.2 mEq/L", "3.5-5.0 mEq/L"], "domain": "measurement"}
+{"text": "Gravitational wave chirp mass: 65 solar masses.", "entities": [], "numbers": ["65 solar masses", "65 sol"], "domain": "measurement"}
+{"text": "Symbiotic star AR Pavonis outburst 3 magnitudes over 100 days.", "entities": ["AR Pavonis"], "numbers": ["3 magnitudes", "100 days"], "domain": "measurement"}
+{"text": "Iron concentration in ore: 48.2%, acceptable range 45-52%.", "entities": ["Iron"], "numbers": ["48.2%", "45-52%"], "domain": "measurement"}
+{"text": "Gamma-ray detector energy resolution: 2.2% at 662 keV.", "entities": [], "numbers": ["2.2%", "662 keV"], "domain": "measurement"}
+{"text": "Triple-star Mizar orbital period: 20.5 years, eccentricity 0.62.", "entities": ["Mizar"], "numbers": ["20.5 years", "0.62"], "domain": "measurement"}
+{"text": "Sodium level in plasma: 138 mEq/L, normal 136-145.", "entities": ["Sodium"], "numbers": ["138 mEq/L", "136-145 mEq/L"], "domain": "measurement"}
+{"text": "RF matching network achieved 1.2 GHz bandwidth at 50 ohms.", "entities": [], "numbers": ["1.2 GHz", "50 ohms"], "domain": "measurement"}
+{"text": "Dwarf nova SS Cygni erupts every 50 days, amplitude 5 mag.", "entities": ["SS Cygni"], "numbers": ["50 days", "5 magnitudes"], "domain": "measurement"}
+{"text": "Magnesium supplement 400 mg/day, recommended 310-420 mg.", "entities": ["Magnesium"], "numbers": ["400 mg", "310-420 mg"], "domain": "measurement"}
+{"text": "Neutron detection efficiency: 45% at 2 MeV energy.", "entities": [], "numbers": ["45%", "2 MeV"], "domain": "measurement"}
+{"text": "Binary pulsar PSR B1913+16 orbital decay 2.64 ms/year.", "entities": ["PSR B1913+16"], "numbers": ["2.64 milliseconds per year", "2.64 mil"], "domain": "measurement"}
+{"text": "Chloride in sweat: 25 mEq/L, cystic fibrosis screening.", "entities": ["Chloride"], "numbers": ["25 mEq/L", "25 mEq"], "domain": "measurement"}
+{"text": "Slot antenna gain 8.2 dBi at 10 GHz, sidelobe -25 dB.", "entities": [], "numbers": ["8.2 dBi", "10 GHz", "-25 dB"], "domain": "measurement"}
+{"text": "Eclipsing binary \u03b5 Aurigae period 27.1 years, eccentricity 0.4.", "entities": ["\u03b5 Aurigae"], "numbers": ["27.1 years", "0.4"], "domain": "measurement"}
+{"text": "Phosphorus level: 3.2 mg/dL, normal 2.7-4.5 mg/dL.", "entities": ["Phosphorus"], "numbers": ["3.2 mg/dL", "2.7-4.5 mg/dL"], "domain": "measurement"}
+{"text": "Chirped fiber Bragg grating: 850 ps/nm dispersion, 30 cm fiber.", "entities": [], "numbers": ["850 ps/nm", "30 cm"], "domain": "measurement"}
+{"text": "Detached binary Algol eclipse every 2.87 days, magnitude drop 1.2.", "entities": ["Algol"], "numbers": ["2.87 days", "1.2"], "domain": "measurement"}
+{"text": "Manganese serum concentration: 0.8 ng/mL, optimal 0.5-1.2.", "entities": ["Manganese"], "numbers": ["0.8 ng/mL", "0.5-1.2 ng/mL"], "domain": "measurement"}
+{"text": "Metallic resonator Q-factor 1.5 times higher at 77 K.", "entities": [], "numbers": ["1.5 times", "77 K"], "domain": "measurement"}
+{"text": "Mira variable Omicron Ceti ranges magnitude 2 to 10, period 330 days.", "entities": ["Omicron Ceti"], "numbers": ["2", "10", "330 days"], "domain": "measurement"}
+{"text": "Zinc intake 12 mg/day, male requirement 11 mg/day.", "entities": ["Zinc"], "numbers": ["12 mg", "11 mg"], "domain": "measurement"}
+{"text": "Photonic lantern multimode to single mode, 87% efficiency.", "entities": [], "numbers": ["87%", "78.30%"], "domain": "measurement"}
+{"text": "Semi-regular variable Beta Pegasi amplitude 0.3 mag, period 43 days.", "entities": ["Beta Pegasi"], "numbers": ["0.3 magnitudes", "43 days"], "domain": "measurement"}
+{"text": "Copper requirement 0.9 mg/day, upper limit 10 mg/day.", "entities": ["Copper"], "numbers": ["0.9 mg", "10 mg"], "domain": "measurement"}
+{"text": "Tunable laser wavelength 1200-1600 nm, linewidth 0.3 nm.", "entities": [], "numbers": ["1200-1600 nm", "0.3 nm"], "domain": "measurement"}
+{"text": "Long-period variable R Coronae Australis outburst 1.5 magnitudes drop.", "entities": ["R Coronae Australis"], "numbers": ["1.5 magnitudes", "1.5 mag"], "domain": "measurement"}
+{"text": "Iodine requirement 150 \u03bcg/day, pregnancy 220 \u03bcg/day.", "entities": ["Iodine"], "numbers": ["150 \u03bcg", "220 \u03bcg"], "domain": "measurement"}
+{"text": "Supercontinuum broadened from 1 nm to 400 nm via nonlinearity.", "entities": [], "numbers": ["1 nm", "400 nm"], "domain": "measurement"}
+{"text": "Luminous blue variable P Cygni hydrogen line velocity 320 km/s.", "entities": ["P Cygni"], "numbers": ["320 km/s", "320 km/"], "domain": "measurement"}
+{"text": "Selenium supplement 55 \u03bcg/day adult RDA, limit 400 \u03bcg/day.", "entities": ["Selenium"], "numbers": ["55 \u03bcg", "400 \u03bcg"], "domain": "measurement"}
+{"text": "Integrated photonics fiber-chip coupling loss 2.8 dB per interface.", "entities": [], "numbers": ["2.8 dB", "2.8 dB"], "domain": "measurement"}
+{"text": "Nova eruption V1974 Cygni brightened 12 magnitudes in six weeks.", "entities": ["V1974 Cygni"], "numbers": ["12 magnitudes", "12 mag"], "domain": "measurement"}
+{"text": "Molybdenum in soil 0.8 mg/kg, agricultural range 0.2-3 mg/kg.", "entities": ["Molybdenum"], "numbers": ["0.8 mg/kg", "0.2-3 mg/kg"], "domain": "measurement"}
+{"text": "EO modulator 3 dB bandwidth 40 GHz, half-wave voltage 4.2 V.", "entities": [], "numbers": ["40 GHz", "4.2 V"], "domain": "measurement"}
+{"text": "Cobalt alloy hardness 52 HRC after precipitation hardening.", "entities": ["Cobalt"], "numbers": ["52 HRC", "52 HRC"], "domain": "measurement"}
+{"text": "Boron in fertilizer 1.8%, proper nutrient availability.", "entities": ["Boron"], "numbers": ["1.8%", "1.62%"], "domain": "measurement"}
+{"text": "Capacitor temperature rise 8\u00b0C at continuous 50 kV.", "entities": [], "numbers": ["8\u00b0C", "50 kV"], "domain": "measurement"}
+{"text": "Fluorine in toothpaste 1000 ppm for cavity prevention.", "entities": ["Fluorine"], "numbers": ["1000 ppm", "1000 ppm"], "domain": "measurement"}
+{"text": "Thermomechanical stress 12 MPa cool-down from 450\u00b0C.", "entities": [], "numbers": ["12 MPa", "450\u00b0C"], "domain": "measurement"}
+{"text": "Vanadium alloy hardness 48 HV, variation 3.2%.", "entities": ["Vanadium"], "numbers": ["48 HV", "3.2%"], "domain": "measurement"}
+{"text": "Sulfur in bituminous coal 2.4% weight.", "entities": ["Sulfur"], "numbers": ["2.4%", "2.16%"], "domain": "measurement"}
+{"text": "Hysteresis loss 0.45 W/kg at 1 T flux.", "entities": [], "numbers": ["0.45 W/kg", "1 T"], "domain": "measurement"}
+{"text": "Nickel in stainless steel 316L 10.5% for corrosion.", "entities": ["Nickel"], "numbers": ["10.5%", "9.45%"], "domain": "measurement"}
+{"text": "Mercury column height barometer: 750 mmHg to 755 mmHg daily.", "entities": [], "numbers": ["750 mmHg", "755 mmHg"], "domain": "measurement"}
+{"text": "Radium decay rate: 3.7 \u00d7 10\u00b9\u2070 decays/second per gram.", "entities": [], "numbers": ["3.7 \u00d7 10\u00b9\u2070 decays/second", "3.7 \u00d7 1"], "domain": "measurement"}
+{"text": "Optical rotation of sucrose: +66.5 degrees per decimeter.", "entities": [], "numbers": ["+66.5 degrees", "+66.5 deg"], "domain": "measurement"}
+{"text": "Uranium enrichment: 3.5% U-235 for fuel assembly.", "entities": [], "numbers": ["3.5%", "3.15%"], "domain": "measurement"}
+{"text": "Laser beam waist: 45 micrometers, Rayleigh range 2.3 mm.", "entities": [], "numbers": ["45 micrometers", "2.3 mm"], "domain": "measurement"}
+{"text": "Thorium half-life: 1.405 \u00d7 10\u00b9\u2070 years geological timescale.", "entities": [], "numbers": ["1.405 \u00d7 10\u00b9\u2070 years", "1.405 \u00d7 1"], "domain": "measurement"}
+{"text": "Carbon-14 decay constant: 1.21 \u00d7 10\u207b\u2074 per year.", "entities": [], "numbers": ["1.21 \u00d7 10\u207b\u2074 per year", "1.21 \u00d7 1"], "domain": "measurement"}
+{"text": "Potassium-40 abundance: 0.0117% with activity 30 Bq/kg.", "entities": [], "numbers": ["0.0117%", "30 Bq/kg"], "domain": "measurement"}
+{"text": "Compton wavelength shift: 0.71 \u00d7 10\u207b\u00b9\u00b2 meters at 90 degrees.", "entities": [], "numbers": ["0.71 \u00d7 10\u207b\u00b9\u00b2 meters", "90 degrees"], "domain": "measurement"}
+{"text": "Tritium beta decay: 18.6 keV endpoint energy.", "entities": [], "numbers": ["18.6 keV", "18.6 keV"], "domain": "measurement"}
+{"text": "Fine structure constant: 1/137.036 with uncertainty 0.000011.", "entities": [], "numbers": ["1/137.036", "0.000011"], "domain": "measurement"}
+{"text": "Cobalt-60 gamma rays: 1.17 MeV and 1.33 MeV energies.", "entities": [], "numbers": ["1.17 MeV", "1.33 MeV"], "domain": "measurement"}
+{"text": "Electron rest mass energy: 0.511 MeV equivalent.", "entities": [], "numbers": ["0.511 MeV", "0.511 MeV"], "domain": "measurement"}
+{"text": "Americium-241 alpha energy: 5.486 MeV, half-life 432.2 years.", "entities": [], "numbers": ["5.486 MeV", "432.2 years"], "domain": "measurement"}
+{"text": "Phonon density of states peak: 12 THz frequency.", "entities": [], "numbers": ["12 THz", "12 THz"], "domain": "measurement"}
+{"text": "Planck length: 1.616 \u00d7 10\u207b\u00b3\u2075 meters fundamental scale.", "entities": [], "numbers": ["1.616 \u00d7 10\u207b\u00b3\u2075 meters", "1.616 \u00d7 1"], "domain": "measurement"}
+{"text": "Plutonium-239 cross-section: 750 barns thermal neutrons.", "entities": [], "numbers": ["750 barns", "750 bar"], "domain": "measurement"}
+{"text": "Bohr magneton: 9.285 \u00d7 10\u207b\u00b2\u2074 J/T atomic moment.", "entities": [], "numbers": ["9.285 \u00d7 10\u207b\u00b2\u2074 J/T", "9.285 \u00d7 1"], "domain": "measurement"}
+{"text": "Xenon-133 half-life: 5.25 days medical tracer.", "entities": [], "numbers": ["5.25 days", "5.25 day"], "domain": "measurement"}
+{"text": "Lamb shift splitting: 0.0000134 electron volts.", "entities": [], "numbers": ["0.0000134 eV", "0.0000134 eV"], "domain": "measurement"}
+{"text": "Strontium-90 half-life: 28.8 years fission product.", "entities": [], "numbers": ["28.8 years", "28.8 yea"], "domain": "measurement"}
+{"text": "Classical electron radius: 2.818 \u00d7 10\u207b\u00b9\u2075 meters.", "entities": [], "numbers": ["2.818 \u00d7 10\u207b\u00b9\u2075 meters", "2.818 \u00d7 1"], "domain": "measurement"}
+{"text": "Iodine-131 beta energy: 0.606 MeV, half-life 8.02 days.", "entities": [], "numbers": ["0.606 MeV", "8.02 days"], "domain": "measurement"}
+{"text": "Electron gyromagnetic ratio: 1.76 \u00d7 10\u00b9\u00b9 rad/s/T.", "entities": [], "numbers": ["1.76 \u00d7 10\u00b9\u00b9 rad/s/T", "1.76 \u00d7 1"], "domain": "measurement"}
+{"text": "Cesium-137 gamma ray: 0.662 MeV, half-life 30.17 years.", "entities": [], "numbers": ["0.662 MeV", "30.17 years"], "domain": "measurement"}
+{"text": "Nuclear magneton: 5.051 \u00d7 10\u207b\u00b2\u2077 J/T unit.", "entities": [], "numbers": ["5.051 \u00d7 10\u207b\u00b2\u2077 J/T", "5.051 \u00d7 1"], "domain": "measurement"}
+{"text": "Technetium-99m half-life: 6.01 hours medical imaging.", "entities": [], "numbers": ["6.01 hours", "6.01 hou"], "domain": "measurement"}
+{"text": "Electron wavelength: 2.426 \u00d7 10\u207b\u00b9\u00b2 meters Compton.", "entities": [], "numbers": ["2.426 \u00d7 10\u207b\u00b9\u00b2 meters", "2.426 \u00d7 1"], "domain": "measurement"}
+{"text": "Molybdenum-99 yield: 6.1% fission producing Tc-99m.", "entities": [], "numbers": ["6.1%", "5.49%"], "domain": "measurement"}
+{"text": "Vacuum permittivity: 8.854 \u00d7 10\u207b\u00b9\u00b2 F/m constant.", "entities": [], "numbers": ["8.854 \u00d7 10\u207b\u00b9\u00b2 F/m", "8.854 \u00d7 1"], "domain": "measurement"}
+{"text": "Bromine-82 positron endpoint: 2.376 MeV, 35.3 hours.", "entities": [], "numbers": ["2.376 MeV", "35.3 hours"], "domain": "measurement"}
+{"text": "Vacuum permeability: 1.257 \u00d7 10\u207b\u2076 H/m constant.", "entities": [], "numbers": ["1.257 \u00d7 10\u207b\u2076 H/m", "1.257 \u00d7 1"], "domain": "measurement"}
+{"text": "Cobalt-57 M\u00f6ssbauer: 0.01217 keV narrow line.", "entities": [], "numbers": ["0.01217 keV", "0.01217 keV"], "domain": "measurement"}
+{"text": "Stefan-Boltzmann: 5.67 \u00d7 10\u207b\u2078 W/m\u00b2K\u2074 radiation.", "entities": [], "numbers": ["5.67 \u00d7 10\u207b\u2078 W/m\u00b2K\u2074", "5.67 \u00d7 1"], "domain": "measurement"}
+{"text": "Iron-55 half-life: 2.737 years positron source.", "entities": [], "numbers": ["2.737 years", "2.737 yea"], "domain": "measurement"}
+{"text": "Proton magnetic moment: 1.4106 \u00d7 10\u207b\u00b2\u2076 J/T.", "entities": [], "numbers": ["1.4106 \u00d7 10\u207b\u00b2\u2076 J/T", "1.4106 \u00d7 1"], "domain": "measurement"}
+{"text": "Gallium-67 photopeak: 93 keV nuclear medicine.", "entities": [], "numbers": ["93 keV", "93 keV"], "domain": "measurement"}
+{"text": "Rydberg energy: 13.6 eV atomic binding.", "entities": [], "numbers": ["13.6 eV", "13.6 eV"], "domain": "measurement"}
+{"text": "Indium-111 photopeaks: 171 keV and 245 keV.", "entities": [], "numbers": ["171 keV", "245 keV"], "domain": "measurement"}
+{"text": "Avogadro constant: 6.022 \u00d7 10\u00b2\u00b3 mol\u207b\u00b9.", "entities": [], "numbers": ["6.022 \u00d7 10\u00b2\u00b3 mol\u207b\u00b9", "6.022 \u00d7 1"], "domain": "measurement"}
+{"text": "Yttrium-90 beta endpoint: 2.28 MeV therapeutic.", "entities": [], "numbers": ["2.28 MeV", "2.28 MeV"], "domain": "measurement"}
+{"text": "Boltzmann constant: 1.381 \u00d7 10\u207b\u00b2\u00b3 J/K statistics.", "entities": [], "numbers": ["1.381 \u00d7 10\u207b\u00b2\u00b3 J/K", "1.381 \u00d7 1"], "domain": "measurement"}
+{"text": "Tantalum-182 gamma: 1.189 MeV, 114.4 days.", "entities": [], "numbers": ["1.189 MeV", "114.4 days"], "domain": "measurement"}
+{"text": "Gravitational constant G: 6.674 \u00d7 10\u207b\u00b9\u00b9 m\u00b3/kg/s\u00b2.", "entities": [], "numbers": ["6.674 \u00d7 10\u207b\u00b9\u00b9 m\u00b3/kg/s\u00b2", "6.674 \u00d7 1"], "domain": "measurement"}
+{"text": "Tin-117m half-life: 13.6 days conversion electrons.", "entities": [], "numbers": ["13.6 days", "13.6 day"], "domain": "measurement"}
+{"text": "Hafnium-178m isomer: 2.446 \u00d7 10\u00b9\u2075 year half-life.", "entities": [], "numbers": ["2.446 \u00d7 10\u00b9\u2075 years", "2.446 \u00d7 1"], "domain": "measurement"}
+{"text": "Curie activity standard: 3.7 \u00d7 10\u00b9\u2070 Bq per.", "entities": [], "numbers": ["3.7 \u00d7 10\u00b9\u2070 Bq", "3.7 \u00d7 1"], "domain": "measurement"}
+{"text": "Radon-222 half-life: 3.82 days gas diffusion.", "entities": [], "numbers": ["3.82 days", "3.82 day"], "domain": "measurement"}
+{"text": "Thorium-232 alpha: 4.081 MeV half-life 1.41 \u00d7 10\u00b9\u2070 y.", "entities": [], "numbers": ["4.081 MeV", "1.41 \u00d7 10\u00b9\u2070 y"], "domain": "measurement"}
+{"text": "Francium-223 half-life: 22 minutes rare element.", "entities": [], "numbers": ["22 minutes", "22 min"], "domain": "measurement"}
+{"text": "Uranium-235 neutron absorption cross-section: 680 barns at thermal energy.", "entities": [], "numbers": ["680 barns", "680"], "domain": "measurement"}
+{"text": "Neptunium-237 half-life: 2.144 \u00d7 10\u2076 years longest-lived actinide.", "entities": [], "numbers": ["2.144 \u00d7 10\u2076 years", "2.144 \u00d7 1"], "domain": "measurement"}

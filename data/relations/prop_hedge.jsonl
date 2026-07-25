@@ -1,0 +1,150 @@
+{"relation": "hedge", "x": "The enzyme breaks down the protein in 30 seconds.", "y": "The enzyme appears to break down the protein in approximately 30 seconds."}
+{"relation": "hedge", "x": "Vitamin D deficiency causes seasonal depression.", "y": "Vitamin D deficiency may contribute to seasonal depression."}
+{"relation": "hedge", "x": "The virus reproduces every 20 minutes.", "y": "The virus might reproduce every roughly 20 minutes."}
+{"relation": "hedge", "x": "Antibiotics kill bacteria within 4 hours.", "y": "Antibiotics appear to kill bacteria within approximately 4 hours."}
+{"relation": "hedge", "x": "Sleep deprivation impairs cognitive function.", "y": "Sleep deprivation may impair cognitive function."}
+{"relation": "hedge", "x": "The vaccine provides 95% protection against infection.", "y": "The vaccine appears to provide roughly 95% protection against infection."}
+{"relation": "hedge", "x": "Cholesterol levels rise with age.", "y": "Cholesterol levels might rise with age."}
+{"relation": "hedge", "x": "Neurons fire at 200 hertz.", "y": "Neurons appear to fire at approximately 200 hertz."}
+{"relation": "hedge", "x": "The drug reduces fever in 15 minutes.", "y": "The drug may reduce fever in roughly 15 minutes."}
+{"relation": "hedge", "x": "Red blood cells contain hemoglobin.", "y": "Red blood cells appear to contain hemoglobin."}
+{"relation": "hedge", "x": "Water freezes at 0 degrees Celsius.", "y": "Water typically freezes at approximately 0 degrees Celsius."}
+{"relation": "hedge", "x": "Sound travels at 343 meters per second.", "y": "Sound appears to travel at roughly 343 meters per second."}
+{"relation": "hedge", "x": "Iron rusts when exposed to oxygen.", "y": "Iron may rust when exposed to oxygen."}
+{"relation": "hedge", "x": "The half-life of carbon-14 is 5,730 years.", "y": "The half-life of carbon-14 appears to be roughly 5,730 years."}
+{"relation": "hedge", "x": "Light bends when passing through a prism.", "y": "Light might bend when passing through a prism."}
+{"relation": "hedge", "x": "Density increases as temperature decreases.", "y": "Density may increase as temperature decreases."}
+{"relation": "hedge", "x": "Sodium reacts violently with water.", "y": "Sodium appears to react violently with water."}
+{"relation": "hedge", "x": "Atoms bond through electron sharing.", "y": "Atoms might bond through electron sharing."}
+{"relation": "hedge", "x": "Pressure increases at 10 meters depth.", "y": "Pressure appears to increase at roughly 10 meters depth."}
+{"relation": "hedge", "x": "The speed of light is 299,792,458 meters per second.", "y": "The speed of light is approximately 299,792,458 meters per second."}
+{"relation": "hedge", "x": "JavaScript executes synchronously by default.", "y": "JavaScript appears to execute synchronously by default."}
+{"relation": "hedge", "x": "The algorithm runs in O(n log n) time.", "y": "The algorithm likely runs in roughly O(n log n) time."}
+{"relation": "hedge", "x": "Servers handle 10,000 concurrent connections.", "y": "Servers appear to handle roughly 10,000 concurrent connections."}
+{"relation": "hedge", "x": "Cloud storage reduces IT costs by 40%.", "y": "Cloud storage may reduce IT costs by roughly 40%."}
+{"relation": "hedge", "x": "Database queries return within 100 milliseconds.", "y": "Database queries might return within roughly 100 milliseconds."}
+{"relation": "hedge", "x": "The API endpoint responds in 50 milliseconds.", "y": "The API endpoint appears to respond in approximately 50 milliseconds."}
+{"relation": "hedge", "x": "Bitcoin transactions take 10 minutes.", "y": "Bitcoin transactions may take approximately 10 minutes."}
+{"relation": "hedge", "x": "The cache improves performance by 60%.", "y": "The cache appears to improve performance by roughly 60%."}
+{"relation": "hedge", "x": "Machine learning models require 1 million training examples.", "y": "Machine learning models may require roughly 1 million training examples."}
+{"relation": "hedge", "x": "The network bandwidth exceeds 1 gigabit per second.", "y": "The network bandwidth might exceed roughly 1 gigabit per second."}
+{"relation": "hedge", "x": "Inflation rose 3.5% last year.", "y": "Inflation appears to have risen roughly 3.5% last year."}
+{"relation": "hedge", "x": "The stock market crashed 1,000 points.", "y": "The stock market appears to have crashed roughly 1,000 points."}
+{"relation": "hedge", "x": "Real estate prices increase annually.", "y": "Real estate prices might increase annually."}
+{"relation": "hedge", "x": "Interest rates determine borrowing costs.", "y": "Interest rates appear to determine borrowing costs."}
+{"relation": "hedge", "x": "Unemployment fell to 4.2%.", "y": "Unemployment appears to have fallen to roughly 4.2%."}
+{"relation": "hedge", "x": "The dollar strengthens during trade wars.", "y": "The dollar may strengthen during trade wars."}
+{"relation": "hedge", "x": "Housing costs consume 30% of income.", "y": "Housing costs appear to consume roughly 30% of income."}
+{"relation": "hedge", "x": "GDP growth exceeded 2% annually.", "y": "GDP growth appears to have exceeded roughly 2% annually."}
+{"relation": "hedge", "x": "Cryptocurrency volatility exceeds 50% monthly.", "y": "Cryptocurrency volatility might exceed roughly 50% monthly."}
+{"relation": "hedge", "x": "Corporate profits increased $2 billion.", "y": "Corporate profits appear to have increased roughly $2 billion."}
+{"relation": "hedge", "x": "The Roman Empire fell in 476 AD.", "y": "The Roman Empire appears to have fallen in approximately 476 AD."}
+{"relation": "hedge", "x": "Mount Everest reaches 8,849 meters.", "y": "Mount Everest appears to reach approximately 8,849 meters."}
+{"relation": "hedge", "x": "The population of Tokyo is 37 million.", "y": "The population of Tokyo appears to be roughly 37 million."}
+{"relation": "hedge", "x": "World War II lasted 6 years.", "y": "World War II appears to have lasted roughly 6 years."}
+{"relation": "hedge", "x": "The Nile River spans 6,650 kilometers.", "y": "The Nile River appears to span roughly 6,650 kilometers."}
+{"relation": "hedge", "x": "Mesopotamia developed agriculture 10,000 years ago.", "y": "Mesopotamia appears to have developed agriculture roughly 10,000 years ago."}
+{"relation": "hedge", "x": "The Great Wall of China extends 21,000 kilometers.", "y": "The Great Wall of China appears to extend roughly 21,000 kilometers."}
+{"relation": "hedge", "x": "Napoleon died in 1821.", "y": "Napoleon appears to have died in approximately 1821."}
+{"relation": "hedge", "x": "Antarctica covers 14 million square kilometers.", "y": "Antarctica appears to cover roughly 14 million square kilometers."}
+{"relation": "hedge", "x": "The Silk Road connected Asia and Europe.", "y": "The Silk Road appears to have connected Asia and Europe."}
+{"relation": "hedge", "x": "Humans forget 70% of information within hours.", "y": "Humans may forget roughly 70% of information within hours."}
+{"relation": "hedge", "x": "Attention spans are declining globally.", "y": "Attention spans appear to be declining globally."}
+{"relation": "hedge", "x": "Stress raises cortisol levels.", "y": "Stress may raise cortisol levels."}
+{"relation": "hedge", "x": "People spend 4 hours daily on social media.", "y": "People appear to spend roughly 4 hours daily on social media."}
+{"relation": "hedge", "x": "Meditation reduces anxiety by 30%.", "y": "Meditation may reduce anxiety by roughly 30%."}
+{"relation": "hedge", "x": "Confidence increases with success.", "y": "Confidence might increase with success."}
+{"relation": "hedge", "x": "Procrastination affects 80% of students.", "y": "Procrastination appears to affect roughly 80% of students."}
+{"relation": "hedge", "x": "Facial expressions reveal 6 basic emotions.", "y": "Facial expressions appear to reveal roughly 6 basic emotions."}
+{"relation": "hedge", "x": "Sleep improves memory consolidation.", "y": "Sleep appears to improve memory consolidation."}
+{"relation": "hedge", "x": "Social isolation reduces life expectancy by 15 years.", "y": "Social isolation may reduce life expectancy by roughly 15 years."}
+{"relation": "hedge", "x": "The bridge supports 50,000 vehicles daily.", "y": "The bridge appears to support roughly 50,000 vehicles daily."}
+{"relation": "hedge", "x": "Steel melts at 1,500 degrees Celsius.", "y": "Steel appears to melt at approximately 1,500 degrees Celsius."}
+{"relation": "hedge", "x": "Production efficiency increased 25%.", "y": "Production efficiency appears to have increased roughly 25%."}
+{"relation": "hedge", "x": "The turbine generates 10 megawatts.", "y": "The turbine appears to generate roughly 10 megawatts."}
+{"relation": "hedge", "x": "Welding requires temperatures above 3,000 degrees Celsius.", "y": "Welding appears to require temperatures above roughly 3,000 degrees Celsius."}
+{"relation": "hedge", "x": "Concrete cures in 28 days.", "y": "Concrete appears to cure in roughly 28 days."}
+{"relation": "hedge", "x": "The pipeline carries 5 million barrels daily.", "y": "The pipeline appears to carry roughly 5 million barrels daily."}
+{"relation": "hedge", "x": "Manufacturing defects decreased 40%.", "y": "Manufacturing defects appear to have decreased roughly 40%."}
+{"relation": "hedge", "x": "Machinery operates within tolerance of 0.1 millimeters.", "y": "Machinery appears to operate within tolerance of roughly 0.1 millimeters."}
+{"relation": "hedge", "x": "Assembly lines produce 2,000 units hourly.", "y": "Assembly lines appear to produce roughly 2,000 units hourly."}
+{"relation": "hedge", "x": "Pi equals 3.14159265359.", "y": "Pi appears to equal approximately 3.14159265359."}
+{"relation": "hedge", "x": "Prime numbers become rarer as numbers increase.", "y": "Prime numbers appear to become rarer as numbers increase."}
+{"relation": "hedge", "x": "The Fibonacci sequence appears in nature.", "y": "The Fibonacci sequence may appear in nature."}
+{"relation": "hedge", "x": "Zero is neither positive nor negative.", "y": "Zero appears to be neither positive nor negative."}
+{"relation": "hedge", "x": "Infinity is not a number.", "y": "Infinity might not be a number."}
+{"relation": "hedge", "x": "Fractals have infinite complexity.", "y": "Fractals appear to have infinite complexity."}
+{"relation": "hedge", "x": "The sum of angles in triangles equals 180 degrees.", "y": "The sum of angles in triangles appears to equal 180 degrees."}
+{"relation": "hedge", "x": "Logarithms were invented in 1614.", "y": "Logarithms appear to have been invented in approximately 1614."}
+{"relation": "hedge", "x": "Complex numbers solve equations with negative roots.", "y": "Complex numbers appear to solve equations with negative roots."}
+{"relation": "hedge", "x": "Euler's identity connects 5 fundamental constants.", "y": "Euler's identity appears to connect 5 fundamental constants."}
+{"relation": "hedge", "x": "Global temperatures rose 1.1 degrees Celsius since 1850.", "y": "Global temperatures appear to have risen approximately 1.1 degrees Celsius since 1850."}
+{"relation": "hedge", "x": "Coral reefs bleach at 29 degrees Celsius.", "y": "Coral reefs appear to bleach at approximately 29 degrees Celsius."}
+{"relation": "hedge", "x": "The ozone layer recovers at 2% annually.", "y": "The ozone layer appears to recover at roughly 2% annually."}
+{"relation": "hedge", "x": "Rainforests contain 50% of Earth's species.", "y": "Rainforests appear to contain roughly 50% of Earth's species."}
+{"relation": "hedge", "x": "Ocean acidification increases 0.1 pH units per decade.", "y": "Ocean acidification appears to increase roughly 0.1 pH units per decade."}
+{"relation": "hedge", "x": "Plastic decomposes in 500 years.", "y": "Plastic appears to decompose in roughly 500 years."}
+{"relation": "hedge", "x": "Arctic ice melts at 13% per decade.", "y": "Arctic ice appears to melt at roughly 13% per decade."}
+{"relation": "hedge", "x": "Carbon dioxide levels exceed 420 parts per million.", "y": "Carbon dioxide levels appear to exceed roughly 420 parts per million."}
+{"relation": "hedge", "x": "Deforestation destroys 10 million hectares yearly.", "y": "Deforestation appears to destroy roughly 10 million hectares yearly."}
+{"relation": "hedge", "x": "Soil erosion reduces productivity by 30%.", "y": "Soil erosion appears to reduce productivity by roughly 30%."}
+{"relation": "hedge", "x": "Wheat yields 7 tons per hectare.", "y": "Wheat appears to yield roughly 7 tons per hectare."}
+{"relation": "hedge", "x": "Crop rotation improves soil nitrogen by 40%.", "y": "Crop rotation appears to improve soil nitrogen by roughly 40%."}
+{"relation": "hedge", "x": "Irrigation increases water usage 70%.", "y": "Irrigation appears to increase water usage roughly 70%."}
+{"relation": "hedge", "x": "Pesticides reduce crop loss by 35%.", "y": "Pesticides appear to reduce crop loss by roughly 35%."}
+{"relation": "hedge", "x": "Rice requires 2,000 liters of water per kilogram.", "y": "Rice appears to require roughly 2,000 liters of water per kilogram."}
+{"relation": "hedge", "x": "Fertilizer boosts growth within 2 weeks.", "y": "Fertilizer appears to boost growth within roughly 2 weeks."}
+{"relation": "hedge", "x": "Livestock consumes 80% of agricultural land.", "y": "Livestock appears to consume roughly 80% of agricultural land."}
+{"relation": "hedge", "x": "Bees pollinate 75% of global crops.", "y": "Bees appear to pollinate roughly 75% of global crops."}
+{"relation": "hedge", "x": "Climate stress reduces yields by 20%.", "y": "Climate stress may reduce yields by roughly 20%."}
+{"relation": "hedge", "x": "Soil pH ranges from 6 to 7 for most crops.", "y": "Soil pH appears to range from roughly 6 to 7 for most crops."}
+{"relation": "hedge", "x": "The statute of limitations lasts 3 years.", "y": "The statute of limitations appears to last roughly 3 years."}
+{"relation": "hedge", "x": "Criminal trials conclude within 18 months.", "y": "Criminal trials appear to conclude within roughly 18 months."}
+{"relation": "hedge", "x": "Contracts require mutual agreement.", "y": "Contracts appear to require mutual agreement."}
+{"relation": "hedge", "x": "Copyright protects works for 70 years.", "y": "Copyright appears to protect works for roughly 70 years."}
+{"relation": "hedge", "x": "Verdicts require unanimous jury consent.", "y": "Verdicts may require unanimous jury consent."}
+{"relation": "hedge", "x": "Legal fees consume 40% of settlement amounts.", "y": "Legal fees appear to consume roughly 40% of settlement amounts."}
+{"relation": "hedge", "x": "Bankruptcy filings increased 15% annually.", "y": "Bankruptcy filings appear to have increased roughly 15% annually."}
+{"relation": "hedge", "x": "Patents expire after 20 years.", "y": "Patents appear to expire after roughly 20 years."}
+{"relation": "hedge", "x": "Court delays exceed 2 years.", "y": "Court delays appear to exceed roughly 2 years."}
+{"relation": "hedge", "x": "Settlements reduce trial time by 60%.", "y": "Settlements appear to reduce trial time by roughly 60%."}
+{"relation": "hedge", "x": "The Sun is 4.6 billion years old.", "y": "The Sun appears to be roughly 4.6 billion years old."}
+{"relation": "hedge", "x": "Mars has a surface temperature of -80 degrees Celsius.", "y": "Mars appears to have a surface temperature of approximately -80 degrees Celsius."}
+{"relation": "hedge", "x": "Jupiter rotates in 10 hours.", "y": "Jupiter appears to rotate in roughly 10 hours."}
+{"relation": "hedge", "x": "Saturn's rings span 280,000 kilometers.", "y": "Saturn's rings appear to span roughly 280,000 kilometers."}
+{"relation": "hedge", "x": "Black holes warp spacetime.", "y": "Black holes appear to warp spacetime."}
+{"relation": "hedge", "x": "The Milky Way contains 200 billion stars.", "y": "The Milky Way appears to contain roughly 200 billion stars."}
+{"relation": "hedge", "x": "Light from distant galaxies takes 13 billion years.", "y": "Light from distant galaxies appears to take roughly 13 billion years."}
+{"relation": "hedge", "x": "Exoplanets outnumber stars 2 to 1.", "y": "Exoplanets appear to outnumber stars roughly 2 to 1."}
+{"relation": "hedge", "x": "The Sun's core reaches 15 million degrees.", "y": "The Sun's core appears to reach roughly 15 million degrees."}
+{"relation": "hedge", "x": "Mercury orbits the Sun in 88 days.", "y": "Mercury appears to orbit the Sun in roughly 88 days."}
+{"relation": "hedge", "x": "Shakespeare wrote 37 plays.", "y": "Shakespeare appears to have written roughly 37 plays."}
+{"relation": "hedge", "x": "The Bible contains 66 books.", "y": "The Bible appears to contain roughly 66 books."}
+{"relation": "hedge", "x": "Dante's Inferno has 9 circles.", "y": "Dante's Inferno appears to have 9 circles."}
+{"relation": "hedge", "x": "Epic poetry uses dactylic hexameter.", "y": "Epic poetry appears to use dactylic hexameter."}
+{"relation": "hedge", "x": "Novels average 80,000 words.", "y": "Novels appear to average roughly 80,000 words."}
+{"relation": "hedge", "x": "Haiku contains 5-7-5 syllables.", "y": "Haiku appears to contain roughly 5-7-5 syllables."}
+{"relation": "hedge", "x": "Symbolism enriches literary meaning.", "y": "Symbolism appears to enrich literary meaning."}
+{"relation": "hedge", "x": "Gothic literature emerged in 1764.", "y": "Gothic literature appears to have emerged in approximately 1764."}
+{"relation": "hedge", "x": "Metaphors enhance language.", "y": "Metaphors might enhance language."}
+{"relation": "hedge", "x": "Narratives require conflict.", "y": "Narratives appear to require conflict."}
+{"relation": "hedge", "x": "Sprints last 10 seconds.", "y": "Sprints appear to last roughly 10 seconds."}
+{"relation": "hedge", "x": "Basketball players jump 0.6 meters high.", "y": "Basketball players appear to jump roughly 0.6 meters high."}
+{"relation": "hedge", "x": "Olympic swimmers complete 100 meters in 48 seconds.", "y": "Olympic swimmers appear to complete 100 meters in roughly 48 seconds."}
+{"relation": "hedge", "x": "Tennis serves reach 200 kilometers per hour.", "y": "Tennis serves appear to reach roughly 200 kilometers per hour."}
+{"relation": "hedge", "x": "Athletes lose 2 liters of sweat hourly.", "y": "Athletes appear to lose roughly 2 liters of sweat hourly."}
+{"relation": "hedge", "x": "Football fields measure 100 yards.", "y": "Football fields appear to measure roughly 100 yards."}
+{"relation": "hedge", "x": "Boxing rounds last 3 minutes.", "y": "Boxing rounds appear to last roughly 3 minutes."}
+{"relation": "hedge", "x": "Marathon runners complete 42 kilometers in 2.5 hours.", "y": "Marathon runners appear to complete 42 kilometers in roughly 2.5 hours."}
+{"relation": "hedge", "x": "Cycling speeds exceed 40 kilometers per hour.", "y": "Cycling speeds appear to exceed roughly 40 kilometers per hour."}
+{"relation": "hedge", "x": "Gymnastics routines score within 20 points.", "y": "Gymnastics routines appear to score within roughly 20 points."}
+{"relation": "hedge", "x": "An apple contains 95 calories.", "y": "An apple appears to contain roughly 95 calories."}
+{"relation": "hedge", "x": "Chocolate contains 200 milligrams of phenols.", "y": "Chocolate appears to contain roughly 200 milligrams of phenols."}
+{"relation": "hedge", "x": "Humans need 2,000 calories daily.", "y": "Humans appear to need roughly 2,000 calories daily."}
+{"relation": "hedge", "x": "Coffee contains 95 milligrams of caffeine.", "y": "Coffee appears to contain roughly 95 milligrams of caffeine."}
+{"relation": "hedge", "x": "Fermentation takes 5 days.", "y": "Fermentation appears to take roughly 5 days."}
+{"relation": "hedge", "x": "Cheese requires 10 liters of milk per kilogram.", "y": "Cheese appears to require roughly 10 liters of milk per kilogram."}
+{"relation": "hedge", "x": "Cooking at 160 degrees kills bacteria.", "y": "Cooking at 160 degrees appears to kill bacteria."}
+{"relation": "hedge", "x": "Shelf life extends 6 months with preservatives.", "y": "Shelf life appears to extend roughly 6 months with preservatives."}
+{"relation": "hedge", "x": "Protein builds muscle tissue.", "y": "Protein may build muscle tissue."}
+{"relation": "hedge", "x": "Microwave ovens heat food in 3 minutes.", "y": "Microwave ovens appear to heat food in roughly 3 minutes."}

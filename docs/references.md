@@ -1,0 +1,55 @@
+# References
+
+Prior work we plan to leverage or are considering, grouped by component. Status: **[leveraging]** = design depends on it, **[considering]** = candidate approach, **[context]** = shapes thinking / risk map.
+
+> Link hygiene: arXiv IDs marked ✓ were verified this session; unmarked ones are from memory — spot-check on first serious use and fix here if wrong.
+
+## Codec & embedding inversion (docs/02)
+
+- **[leveraging]** BGE-M3 (BAAI, 2024) — [arXiv:2402.03216](https://arxiv.org/abs/2402.03216). Multi-functional embeddings: dense + sparse lexical + multi-vector from one pass. The sparse output is our identity channel.
+- **[leveraging]** vec2text — "Text Embeddings Reveal (Almost) As Much As Text" (Morris et al., EMNLP 2023) — [arXiv:2310.06816](https://arxiv.org/abs/2310.06816). Iterative embedding inversion; near-exact recovery for ~32-token inputs. Diagnostic baseline + evidence short-text reconstruction is feasible.
+- **[leveraging]** Whitening sentence representations (Su et al., 2021) — [arXiv:2103.15316](https://arxiv.org/abs/2103.15316). Isotropization of anisotropic embedding cones; prerequisite for rotation algebra (R5).
+- **[leveraging]** SONAR-LLM (2025) — [arXiv:2508.05305](https://arxiv.org/abs/2508.05305) ✓. Token-CE **through a frozen decoder** fixes embedding-space training brittleness — our planned upstream training signal.
+- **[considering]** SONAR (Meta, 2023) — [arXiv:2308.11466](https://arxiv.org/abs/2308.11466). Decodable-by-construction sentence embeddings; fallback encoder if BGE-M3 misses fidelity targets (D2).
+- **[considering]** ICAE — In-Context AutoEncoder (2023) — [arXiv:2307.06945](https://arxiv.org/abs/2307.06945); Gist tokens (2023) — [arXiv:2304.08467](https://arxiv.org/abs/2304.08467). Text → few soft tokens in LLM embedding space; alternative codec family.
+- **[context]** CALM — Continuous Autoregressive Language Models (2025, no ID recorded). Autoregression over robust autoencoder latents at scale; validates noise-injection + variational regularization for R1.
+
+## Latent-space reasoning (docs/00, 05)
+
+- **[leveraging]** Coconut — "Training LLMs to Reason in a Continuous Latent Space" (Meta, 2024) — [arXiv:2412.06769](https://arxiv.org/abs/2412.06769) ✓. Latent CoT works; thoughts can superpose alternatives (BFS-like). Entangled codec — our thesis is the decoupling.
+- **[leveraging]** LCM — Large Concept Models (Meta, 2024) — arXiv:2412.08821. The direct precedent: frozen SONAR codec + embedding-space reasoner. Its failure modes (off-manifold decoding, fluency) define our R1/R5.
+- **[context]** Latent CoT causal-structure study (2026) — [arXiv:2602.08783](https://arxiv.org/abs/2602.08783) ✓; Abstract latent CoT (2026) — [arXiv:2604.22709](https://arxiv.org/abs/2604.22709) ✓. Active-field markers; re-survey at Phase 3.
+- **[context]** CODI (self-distilled continuous CoT); HybridCoT (interleaved latent/text) — from 2025–26 literature; IDs not recorded.
+
+## Binding algebra — anchors & rotations (docs/03)
+
+- **[leveraging]** RotatE (2019) — [arXiv:1902.10197](https://arxiv.org/abs/1902.10197). KG relations as complex rotations; composition/inversion/symmetry for free. Blueprint for relational memory addressing.
+- **[leveraging]** RoPE / RoFormer (2021) — arXiv:2104.09864. Rotation composition preserving usable structure in transformer latents, at scale.
+- **[leveraging]** HRR — Holographic Reduced Representations (Plate, IEEE TNN 1995) and FHRR (Fourier variant). Phasor binding = block-diagonal rotations; decades of capacity theory (capacity ~linear in width → ultra-wide reasoner bet).
+- **[context]** VSA capacity theory (Frady et al., 2018); Kanerva's hyperdimensional computing survey (2009). Superposition capacity math.
+- **[leveraging]** Orthogonal Procrustes (Schönemann, 1966). Closed-form optimal rotation between paired point sets — the Phase-1.5 relational probe.
+
+## External memory & continual learning (docs/04)
+
+- **[leveraging]** Titans (Google, 2025) — [arXiv:2501.00663](https://arxiv.org/abs/2501.00663). Gradient-surprise-gated test-time memory; precedent for surprisal-gated writes.
+- **[leveraging]** Memory Layers at Scale (Meta, 2024) — [arXiv:2412.09764](https://arxiv.org/abs/2412.09764). Sparse KV memory beats dense params for factual capacity; supports T3's economics.
+- **[context]** kNN-LM (2019) — arXiv:1911.00172; RETRO (2021) — arXiv:2112.04426; Product-Key Memories (2019) — arXiv:1907.05242. Similarity-addressed retrieval lineage; ours differs by relational (rotation) addressing.
+
+## Recurrence & adaptive compute (docs/05)
+
+- **[leveraging]** Universal Transformer (2018) — [arXiv:1807.03819](https://arxiv.org/abs/1807.03819); ACT (Graves, 2016) — arXiv:1603.08983. Weight-tied depth recurrence + learned halting.
+- **[leveraging]** Recurrent-depth latent reasoning (Geiping et al., 2025) — [arXiv:2502.05171](https://arxiv.org/abs/2502.05171). 3.5B looped-core model; test-time compute scaling in latent space; random-depth training recipe.
+- **[considering]** Mixture-of-Recursions (2025) — arXiv:2507.10524. Token-level dynamic recursion depth with shared weights.
+- **[context]** TRM — Tiny Recursive Models (2025) — arXiv:2510.04871; HRM — Hierarchical Reasoning Model (2025) — arXiv:2506.21734. Tiny recursive nets beating large models on puzzles; existence proofs for capability-per-parameter via recurrence.
+
+## Minimal concept inventories (docs/03 anchor minimization)
+
+- **[context]** Longman Defining Vocabulary — ~2,000 words define the entire dictionary; existence proof for small compositional bases.
+- **[context]** "The Latent Structure of Dictionaries" (Vincent-Lamarre et al., 2016) — dictionary digraphs have a small grounding kernel (~10% of vocab, reducible) from which all words are definable. Formal analogue of anchor minimization.
+- **[context]** Natural Semantic Metalanguage (Wierzbicka) — ~65 semantic primes; lower-bound marker.
+
+## Datasets & data generation (docs/02)
+
+- **[leveraging]** Claude Haiku 4.5 (`claude-haiku-4-5`, 200K ctx, $1/$5 per MTok) via **Message Batches API** (50% off → $0.50/$2.50; ≤100k requests/batch, async ≤24h) — primary proposition generator.
+- **[leveraging]** GSM8K (2021) — arXiv:2110.14168 — rationale sentences; open CoT corpora (survey at data-prep time).
+- **[context]** Bonsai-27B (prism-ml, 1-bit Qwen3.6-27B) — local fallback generator; see `bonsai.sh`.

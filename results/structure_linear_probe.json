@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-07-22T23:53:37.828951+00:00",
+  "role_axis": {
+    "n": 150,
+    "align_mean": 0.17224957048892975,
+    "align_abs_mean": 0.2803390622138977,
+    "sign_consistency": 0.7533333333333333,
+    "null_mean": 0.005711901001632214,
+    "null_abs_mean": 0.04618597403168678,
+    "swap_diff_norm_mean": 0.21544815599918365,
+    "random_pair_norm_mean": 1.3113534450531006,
+    "signal_fraction": 0.16429449617862701
+  },
+  "polarity_axis": {
+    "n": 150,
+    "direction_consistency": 0.37307125329971313,
+    "consistency_null": -0.0002728491179488493,
+    "heldout_sign_acc": 1.0,
+    "heldout_pair_separation_acc": 1.0
+  },
+  "verdict": {
+    "role": "LINEARLY PRESENT (tiny but systematic) \u2014 pooling salvageable",
+    "polarity": "LINEAR DIRECTION EXISTS \u2014 polarity is a steerable axis"
+  }
+}
