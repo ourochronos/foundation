@@ -196,17 +196,38 @@ The architecture's long-context strategy is THE STORE, not an attention window:
 - Write side: the H1 3B decoder trained for MULTI-TRIPLE rendering (sequences
   of entries → flowing prose) — answers longer than one sentence.
 
-## Track I — Views & epistemics on a shared graph (stub; lit agent in flight)
+## Track I — Views & epistemics on a shared graph (design set; lit report in)
 
-Truth is view-conditioned, not absolute (user's KB-domain experience; program
-seed already exists: the epistemic hedge bit). Design direction — VIEWS ON A
-SHARED GRAPH, not orthogonal graphs: one store, shared identities/gists;
-a view = a query-time score term/mask over entry metadata (source, confidence,
-worldview, time) — composing exactly like id_weight/demote_ids. Dissolves an
-open problem: same-subject-relation conflict branches into TEMPORAL
-supersession vs PERSPECTIVE FORK (attributed disagreement; both entries
-persist, view-conditioned). Full design after the epistemics/"MAGMA" lit
-report lands.
+**The reference the user recalled**: MAGMA (arXiv 2601.03236, ACL 2026) — four
+orthogonal graphs (semantic/temporal/causal/entity) as views with
+policy-guided traversal — and notably it KEEPS a shared item set, validating
+"views on a shared graph." Our differentiation (novelty-checked, unclaimed):
+views as **additive score terms over a hybrid continuous+symbolic store** —
+MAGMA's views are discrete edge-sets walked by a policy; eSPARQL/DEC condition
+symbolic stores by hard logic; RA-RAG composes trust additively but as one
+global scalar with no perspective. Nothing combines all three of our pieces.
+
+Design (from the three literature lessons):
+- **I1. Conflict typing at write time as a metadata bit** — temporal
+  supersession vs epistemic disagreement vs semantic ambiguity (CONFLICTS
+  evidence: knowing the type is worth ~24 points downstream). Temporal →
+  supersede links (bi-temporal); epistemic → PERSPECTIVE FORK: both entries
+  persist with attribution + stance bits. Never force disagreement into
+  "old fact expired" (the Zep failure).
+- **I2. One shared item set; perspectives soft** — a view = query-time score
+  term over entry metadata, composing with gist/identity/demote terms. Plus
+  DEC's refinement: a **distinguished factual core** = the default view whose
+  scores apply absent any view term, so unattributed queries degrade
+  gracefully.
+- **I3. trust(view, source) as a learned, updateable weight** — per-view,
+  not global (the productive gap between RA-RAG and eSPARQL); updatable by
+  RA-RAG-style cross-source consistency voting. Rides the same additive
+  scoring.
+- **I4. Eval**: extend world v4 with attributed conflicting facts (two
+  sources, different objects, no temporal ordering) — queries under view A /
+  view B / no view; correct = view-consistent object, or surfaced
+  disagreement when unattributed. ConflictBank/CONFLICTS taxonomies for the
+  external rung.
 
 ## Northstar gap map (added 2026-07-25, second research sweep)
 
