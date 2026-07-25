@@ -93,6 +93,30 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-25 — D27: The triple-coherent hop — 0.998 with no text and no codec pass; the reasoner's hop primitive is defined (`results/hop_v1.json`)
+D26's open question — can anything latent close the hop gap — answered by three challengers against the 0.06 constant-translation floor (all text-free between hops, 400 held-out chains):
+
+| hop mechanism | P@1 |
+|---|---|
+| B constant translation (control — reproduces D26) | 0.060 |
+| B′ ridge linear map, α=0.1 / 1.0 / 10.0 | 0.552 / 0.273 / 0.068 |
+| **D triple-coherent: `z₁+t_hop` ⊕ identity hand-off ⊕ walk semantics** | **0.998** |
+
+**D matches the codec loop (0.998 = 0.998) at a fraction of the cost** — no decode, no re-encode. The hop primitive is pure store arithmetic over the triple:
+
+    hop(state) = retrieve( gist   : z_prev + t_relation        ← template level
+                           promote: ids(prev_entry) − ids(walk source)
+                           demote : ids(walk source)           ← attention moves ON
+                           exclude: visited entries )          ← walks don't backtrack
+
+Getting there required two pieces of **walk semantics** now in `MemoryStore.query` (`demote_ids`, `exclude`): without them the naive triple hop self-retrieves (fact₁ contains the handed-off entity too and `z₁+t_hop` stays near z₁ — measured 0.070). These aren't tuning hacks; they are the graph-walk invariants any multi-hop reasoner needs, discovered by the probe failing without them.
+
+**B′ is the theoretically interesting middle**: an input-dependent linear map recovers half the chains (0.552), so entity routing is *partially* linear — and only at light regularization, meaning the routing signal lives in fragile low-variance directions (the same place D10's ridge probe found the identities). D26's law refines: *constant* operators are dead for entity-dependent hops; linear conditioning gets halfway; the identity channel closes it exactly.
+
+**Also settled (negative, twice now)**: identity rescoring on single-hop retrieval does NOT activate under isotropic query noise — Δ ≤ +0.010 even at latent cos 0.55, because whitened gist retrieval itself barely degrades (0.763 → 0.732 at σ=1.5, a remarkable robustness result in its own right, consistent with D24). Rescoring's real role is *structural* — the hop hand-off — not error correction. Stop predicting it will "activate"; it already has the job it was built for.
+
+**For Phase 3**: the reasoner's interface to memory is now specified and measured — continuous relation steering + symbolic identity bookkeeping + walk state. A trained reasoner's job reduces to *emitting* these hop calls (choosing relations, managing the walk) rather than simulating retrieval in weights. Baseline to beat stands at 0.998 hand-coded.
+
 ## 2026-07-25 — D26: Memory at 9.9k + 2-hop composition — latent-only hops are DEAD, symbolic hand-off is mandatory, and it's D16's law again (`results/memory_v1.json`)
 Closed world scaled 27× (9,900 facts, 7 relations — `data/closed_world_v1.json`), plus 400 two-hop cases ("population of the capital of X") run three ways.
 

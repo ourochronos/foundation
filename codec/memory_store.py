@@ -71,11 +71,16 @@ class MemoryStore:
         self.shadowed[old_idx] = True
 
     def query(self, z_q: np.ndarray, query_ids: set[str] | None = None,
-              k: int = 5, id_weight: float = 0.5):
+              k: int = 5, id_weight: float = 0.5,
+              demote_ids: set[str] | None = None,
+              exclude: set[int] | None = None):
         """Top-k live entries by cos(gist) + id_weight * identity-overlap.
 
         Overlap = |query_ids ∩ entry_ids| / |query_ids| (how much of what the
         query names does the entry cover). id_weight=0 -> pure gist kNN.
+        demote_ids: identities to score AGAINST (a hop moves attention off
+        the previous subject, not just onto the new one). exclude: visited
+        entries — a graph walk must not return to its source node.
         """
         z_q = z_q / (np.linalg.norm(z_q) + 1e-12)
         score = self.Z @ z_q.astype(np.float32)
@@ -83,7 +88,13 @@ class MemoryStore:
             ov = np.array([len(query_ids & e) / max(len(query_ids), 1)
                            for e in self.ids], dtype=np.float32)
             score = score + id_weight * ov
+        if demote_ids and id_weight:
+            dv = np.array([len(demote_ids & e) / max(len(demote_ids), 1)
+                           for e in self.ids], dtype=np.float32)
+            score = score - id_weight * dv
         score = np.where(np.array(self.shadowed), -np.inf, score)
+        if exclude:
+            score[list(exclude)] = -np.inf
         top = np.argsort(-score)[:k]
         return [(int(i), float(score[i]), self.texts[i]) for i in top]
 
