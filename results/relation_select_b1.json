@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-25T16:58:56.859279+00:00",
+  "test_acc": 1.0,
+  "shuffled_control": 0.20502092050209206,
+  "chance": 0.16666666666666666,
+  "per_class": {
+    "capital_of": 1.0,
+    "ceo_of": 1.0,
+    "founded_in": 1.0,
+    "largest_city_of": 1.0,
+    "population_of": 1.0,
+    "2hop_composed": 1.0
+  },
+  "n_test": 478,
+  "verdict": "LINEAR \u2014 relation choice is type-level; the reasoner core can be tiny"
+}

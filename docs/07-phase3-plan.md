@@ -59,7 +59,7 @@ before.
   topic-only, D24/D28 rhetoric gets cut back, and the reasoner design leans
   even harder on symbols. If (i) ≫ (ii): the frame claim survives with an
   identity-clean instrument. Either outcome is useful; one GPU evening.
-- **A3. On-manifold error model** *(threat #6)*: replace isotropic noise with
+- ~~**A3**~~ ✅ D29 — gist collapses (0.128 @cos 0.80), identity rescoring activates (+0.857, holds 0.985). Original text: *(threat #6)*: replace isotropic noise with
   confusable-drift (interpolate query latent toward same-relation different-
   entity facts at matched cos). Expect gist retrieval to degrade sharply and
   identity rescoring to finally activate — which would *strengthen* the
@@ -86,7 +86,7 @@ before.
 
 ## Track B — Reasoner de-risk (parallel, CPU-cheap)
 
-- **B1. Relation-selection linear probe**: question gist → relation choice
+- ~~**B1**~~ ✅ D29 — 1.000 test acc, control at chance; provisional until re-run on v3 phrasings. Original text: question gist → relation choice
   (7-way + halt). If linearly separable (expected — relation choice is
   type-level, which is what the gist demonstrably carries), the core can be
   TINY and the "ultra-wide" clause of 05-reasoner.md is formally retired. The

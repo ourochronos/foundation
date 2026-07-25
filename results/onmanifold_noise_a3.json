@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-07-25T17:01:51.522093+00:00",
+  "n": 400,
+  "rows": [
+    {
+      "cos": 1.0,
+      "gist": 0.745,
+      "with_identity": 0.7475,
+      "delta": 0.0025000000000000577
+    },
+    {
+      "cos": 0.9,
+      "gist": 0.7975,
+      "with_identity": 0.94,
+      "delta": 0.14249999999999996
+    },
+    {
+      "cos": 0.8,
+      "gist": 0.1275,
+      "with_identity": 0.985,
+      "delta": 0.8574999999999999
+    },
+    {
+      "cos": 0.7,
+      "gist": 0.0,
+      "with_identity": 0.945,
+      "delta": 0.945
+    },
+    {
+      "cos": 0.55,
+      "gist": 0.0,
+      "with_identity": 0.795,
+      "delta": 0.795
+    }
+  ],
+  "isotropic_reference": "hop_v1.json noisy_paraphrase: gist flat to cos 0.55 (0.763->0.732), delta <= +0.010"
+}
