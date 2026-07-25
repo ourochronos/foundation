@@ -1,6 +1,6 @@
-# Current state — 2026-07-24
+# Current state — 2026-07-25
 
-**Resume here.** Read this + [decisions.md](decisions.md) (D1–D22) to pick up cold. Everything ran locally on the RX 9070.
+**Resume here.** Read this + [decisions.md](decisions.md) (D1–D24) to pick up cold. Everything ran locally on the RX 9070.
 
 ## Artifacts
 
@@ -65,9 +65,9 @@ Binding given-present 0.714 → **0.795** (mis-attachment −28% relative), numb
 
 ## Next queue (priority order)
 
-1. ~~Value-to-role binding~~ — landed (D22, above).
-2. **Codec-level `min(struct_sim, identity_sim)`** (D20 caveat) — date/location/quantity substitutions are identity edits by D3; routing them to the identity channel widens the structure channel's thin +0.011 margin. `check_structure_channel.py` shows the gap: "Tuesday"→"Saturday" scores 0.92 through the structure channel. Needs literal-normalizing comparison (naive string equality false-flags "around 3" → "approximately 03:00").
-3. **Cycle-under-noise for v2**: EM stays flat under gist noise by design (identities are symbolic); the metric that should degrade is the semantic frame — measure cycle cos across the σ sweep to see what noise actually costs now.
+1. ~~Value-to-role binding~~ — landed (D22).
+2. ~~Codec-level min(struct, identity)~~ — landed (D23): `codec/identity_channel.py`, bidirectional-mismatch rule, zero false flags; margin +0.011→**+0.022**, pair-AUC 0.942→**0.963** (`results/codec_compare_v0.json`, `scripts/probe_codec_compare.py`). Bottleneck now formality vs tense (both marked-feature cases).
+3. ~~Cycle-under-noise~~ — landed (D24): output quality INVARIANT to gist noise through σ=0.8 (2× training range); symbolic channels error-correct the gist. De-risks T1: the reasoner may be sloppy in continuous space (`results/cycle_noise_decoder_v2t.json`).
 4. ~~Interpolation at v2~~ — ran; it turned into a **channel-conflict experiment** (side channels fixed at A while gist slerps to B) and the identity channel won outright: output stays A's proposition at every t (D21 note). Design implication for Phase 2: **latent ops must update the triple coherently — moving the gist alone moves nothing.** A true v2 traversability probe needs path-following side channels.
 5. Then per roadmap: cycle k>1, anchor sweep at scale, memory-addressing design using the confirmed operator inventory (valence = translation, role-swap = slot exchange, tense = bit flip, hedge = bit flip — D15/D18/D20). The reasoner-facing latent is now the working triple.
 

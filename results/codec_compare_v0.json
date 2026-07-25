@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-07-25T09:42:24.655259+00:00",
+  "table": [
+    {
+      "relation": "active_passive",
+      "class": "preserve",
+      "n": 27,
+      "struct": 0.8984555307729745,
+      "identity": 1.0,
+      "combined": 0.8984555307729745
+    },
+    {
+      "relation": "approval_rejection",
+      "class": "changing",
+      "n": 29,
+      "struct": -0.43182448220664055,
+      "identity": 1.0,
+      "combined": -0.43182448220664055
+    },
+    {
+      "relation": "argument_swap",
+      "class": "changing",
+      "n": 27,
+      "struct": 0.5878998320779681,
+      "identity": 1.0,
+      "combined": 0.5878998320779681
+    },
+    {
+      "relation": "causal_reverse",
+      "class": "changing",
+      "n": 19,
+      "struct": 0.3087719298245613,
+      "identity": 1.0,
+      "combined": 0.3087719298245613
+    },
+    {
+      "relation": "clause_reorder",
+      "class": "preserve",
+      "n": 22,
+      "struct": 0.9524526587038328,
+      "identity": 1.0,
+      "combined": 0.9524526587038328
+    },
+    {
+      "relation": "cleft_construction",
+      "class": "preserve",
+      "n": 28,
+      "struct": 0.8557939252683094,
+      "identity": 1.0,
+      "combined": 0.8557939252683094
+    },
+    {
+      "relation": "comparative_flip",
+      "class": "changing",
+      "n": 19,
+      "struct": 0.010330221272612872,
+      "identity": 1.0,
+      "combined": 0.010330221272612872
+    },
+    {
+      "relation": "contraction_expansion",
+      "class": "preserve",
+      "n": 21,
+      "struct": 0.9749198688401115,
+      "identity": 1.0,
+      "combined": 0.9749198688401115
+    },
+    {
+      "relation": "date_shift",
+      "class": "changing",
+      "n": 21,
+      "struct": 0.6558257511683873,
+      "identity": 0.023809523809523808,
+      "combined": 0.023809523809523808
+    },
+    {
+      "relation": "formality_shift",
+      "class": "preserve",
+      "n": 24,
+      "struct": 0.6664582499199443,
+      "identity": 1.0,
+      "combined": 0.6664582499199443
+    },
+    {
+      "relation": "hedge",
+      "class": "changing",
+      "n": 25,
+      "struct": 0.5686920698483785,
+      "identity": 1.0,
+      "combined": 0.5686920698483785
+    },
+    {
+      "relation": "increase_decrease",
+      "class": "changing",
+      "n": 18,
+      "struct": -0.08785634436127213,
+      "identity": 1.0,
+      "combined": -0.08785634436127213
+    },
+    {
+      "relation": "location_swap",
+      "class": "changing",
+      "n": 21,
+      "struct": 0.49300793026174816,
+      "identity": 0.031746031746031744,
+      "combined": 0.017979752449762253
+    },
+    {
+      "relation": "negation",
+      "class": "changing",
+      "n": 29,
+      "struct": -0.13004374369208155,
+      "identity": 1.0,
+      "combined": -0.13004374369208155
+    },
+    {
+      "relation": "nominalization",
+      "class": "preserve",
+      "n": 30,
+      "struct": 0.9058223499192131,
+      "identity": 1.0,
+      "combined": 0.9058223499192131
+    },
+    {
+      "relation": "paraphrase",
+      "class": "preserve",
+      "n": 22,
+      "struct": 0.6948089139028029,
+      "identity": 1.0,
+      "combined": 0.6948089139028029
+    },
+    {
+      "relation": "presence_absence",
+      "class": "changing",
+      "n": 24,
+      "struct": -0.4547480947027604,
+      "identity": 1.0,
+      "combined": -0.4547480947027604
+    },
+    {
+      "relation": "quantifier_change",
+      "class": "changing",
+      "n": 28,
+      "struct": 0.06191270419263414,
+      "identity": 1.0,
+      "combined": 0.06191270419263414
+    },
+    {
+      "relation": "quantity_double",
+      "class": "changing",
+      "n": 23,
+      "struct": 0.5433369926784349,
+      "identity": 0.0,
+      "combined": 0.0
+    },
+    {
+      "relation": "success_failure",
+      "class": "changing",
+      "n": 22,
+      "struct": -0.14996962554075502,
+      "identity": 1.0,
+      "combined": -0.14996962554075502
+    },
+    {
+      "relation": "superlative_flip",
+      "class": "changing",
+      "n": 18,
+      "struct": -0.14368719266106686,
+      "identity": 1.0,
+      "combined": -0.14368719266106686
+    },
+    {
+      "relation": "synonym_swap",
+      "class": "preserve",
+      "n": 21,
+      "struct": 0.886051819438026,
+      "identity": 1.0,
+      "combined": 0.886051819438026
+    },
+    {
+      "relation": "tense_shift",
+      "class": "changing",
+      "n": 34,
+      "struct": 0.6444382089025834,
+      "identity": 1.0,
+      "combined": 0.6444382089025834
+    }
+  ],
+  "struct_alone": {
+    "margin": 0.010632498751557029,
+    "pair_auc": 0.9421820010055304,
+    "worst_changing": "date_shift",
+    "worst_preserving": "formality_shift"
+  },
+  "with_identity": {
+    "margin": 0.02202004101736088,
+    "pair_auc": 0.9634130575307046,
+    "worst_changing": "tense_shift",
+    "worst_preserving": "formality_shift"
+  }
+}
