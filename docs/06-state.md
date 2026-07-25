@@ -1,6 +1,6 @@
-# Current state — 2026-07-22, end of session 2
+# Current state — 2026-07-24
 
-**Resume here.** Read this + [decisions.md](decisions.md) (D1–D20) to pick up cold. Everything ran locally on the RX 9070.
+**Resume here.** Read this + [decisions.md](decisions.md) (D1–D22) to pick up cold. Everything ran locally on the RX 9070.
 
 ## Artifacts
 
@@ -59,15 +59,13 @@ The D3 triple works end-to-end: `[gist ; identities ; s]` doubles fidelity over 
 
 **Engineering note (cost a smoke-test cycle)**: zeroing *projected prefix embeddings* to drop a channel sends exact-zero vectors through every RMSNorm and yields non-finite LoRA gradients in backward (forward loss stays finite — 246 inf/NaN grads measured). Drop by zeroing the channel's *input* instead, so dropped rows get `proj(0)` — a learned in-distribution null embedding. Also: bf16 scalar parameters silently stop learning (updates round away below ~1e-3); keep learned scalars fp32 and cast at use.
 
-## In flight: slot-tagged identity prefixes (queue item 1, D21 residual)
+## Slot-tagged identities — LANDED (D22); decoder_v2t SHIPS
 
-- **Binding metric added** (`codec/evals/fidelity.py`: `binding_pairs`/`binding_rate` — number bound iff its parse-head word appears within ±3 tokens of it in the recon). **Baseline on decoder_v2: binding 0.522; given-present 0.714** — even when the value is present, it's mis-attached 29% of the time. n=201 pairs.
-- **Tagged channel built** (`scripts/build_tagged_sparse.py` → `results/sparse_tagged_v0.json`): number-like sparse tokens fused with their syntactic head at encode time ("0.4" → "0.4 bar"); 17,304/36,787 number tokens tagged (misses are comma-split subword fragments). Same schema as sparse_v0 — decoder arch unchanged, one variable.
-- **Training decoder_v2t** (`train_decoder_v2.py --sparse-file sparse_tagged_v0.json --max-sub 6 --tag v2t`, 12 ep, ~2h) — was running at session end; check `results/decoder_v2t_eval.json`. Success = binding_given_present up vs 0.714 without EM/cycle regression; then write D22 and promote v2t if it wins.
+Binding given-present 0.714 → **0.795** (mis-attachment −28% relative), number EM 0.668 → **0.720** (0.725 under σ=0.5 gist noise — the tags live in the noise-immune channel); entity −0.021 (≈noise), cycle flat. Ceiling is **coverage**: only 47% of number tokens taggable (BGE-M3 splits comma numbers); next lever if number fidelity plateaus = build identity slots from the validated labels directly, bypassing BGE-M3 lexical tokenization. Artifacts: `checkpoints/decoder_v2t/`, `results/decoder_v2t_eval.json`, `results/sparse_tagged_v0.json`, binding metric in `codec/evals/fidelity.py`.
 
 ## Next queue (priority order)
 
-1. ~~Value-to-role binding~~ — in flight above.
+1. ~~Value-to-role binding~~ — landed (D22, above).
 2. **Codec-level `min(struct_sim, identity_sim)`** (D20 caveat) — date/location/quantity substitutions are identity edits by D3; routing them to the identity channel widens the structure channel's thin +0.011 margin. `check_structure_channel.py` shows the gap: "Tuesday"→"Saturday" scores 0.92 through the structure channel. Needs literal-normalizing comparison (naive string equality false-flags "around 3" → "approximately 03:00").
 3. **Cycle-under-noise for v2**: EM stays flat under gist noise by design (identities are symbolic); the metric that should degrade is the semantic frame — measure cycle cos across the σ sweep to see what noise actually costs now.
 4. ~~Interpolation at v2~~ — ran; it turned into a **channel-conflict experiment** (side channels fixed at A while gist slerps to B) and the identity channel won outright: output stays A's proposition at every t (D21 note). Design implication for Phase 2: **latent ops must update the triple coherently — moving the gist alone moves nothing.** A true v2 traversability probe needs path-following side channels.

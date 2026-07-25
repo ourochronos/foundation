@@ -93,6 +93,20 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-24 — D22: Slot-tagged identity prefixes — binding errors cut by a quarter; v2t ships (`results/decoder_v2t_eval.json`)
+D21's residual (right values, wrong slots) attacked at encode time: each number-like sparse token is fused with its dependency head ("0.4" → "0.4 bar", `scripts/build_tagged_sparse.py`), so the value arrives pre-bound. Decoder architecture unchanged — slot *content* is the only variable. Measured with the new **binding metric** (`fidelity.binding_pairs/binding_rate`: a number is bound iff its parse-head word appears within ±3 tokens of it in the reconstruction):
+
+| | binding | binding given-present | number EM | number EM @σ=0.5 | entity EM | cycle |
+|---|---|---|---|---|---|---|
+| v2 (bag slots) | 0.522 | 0.714 | 0.668 | 0.662 | 0.483 | 0.810 |
+| **v2t (tagged)** | **0.617** | **0.795** | **0.720** | **0.725** | 0.462 | 0.809 |
+
+Mis-attachment given presence: 28.6% → **20.5%** (−28% relative). Number EM +5 pts, and the gain survives gist noise fully (identity channel is where the tags live). Cost: entity EM −0.021 (borderline noise at n≈236) and exact-rate −0.004; cycle unchanged. Attribution stays clean: shuffled-sparse binding = 0.005 — binding rides entirely on the identity channel.
+
+**Ceiling is coverage, not method**: only 47% of number tokens could be tagged — BGE-M3's lexical head splits comma-formatted numbers into fragments that don't match parse tokens ("4,200" → '4'+'200'). Perfect reconstructions now appear where tags exist; the surviving swaps cluster in untagged values. Next lever when this matters again: emit the identity channel from the validated labels directly (numbers + entities with heads, bypassing BGE-M3's lexical tokenization for the number slots) rather than smarter matching.
+
+**Ship**: decoder_v2t is the shipping codec decoder. **Revisit**: identity-channel-from-labels if number fidelity plateaus below ~0.85.
+
 ## 2026-07-22 — D21: Codec v2 — the hybrid latent WORKS; identities ride the symbolic channel and fidelity doubles (`results/decoder_v2_eval.json`)
 Decoder conditioned on the full D3 triple `[16 gist prefixes ; 24 sparse identity slots ; 2 s-vector prefixes]`, both D10 fixes applied (per-row max-normalized weights + learned fp32 gain, settled at 1.15; dense-drop p=0.25). 14,533 train / 12 epochs, final loss 0.0071 (v0: 0.0162 — identities make the task easier, as they should).
 
