@@ -2,6 +2,29 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-25 — D44: v0.6 hybrid reasoner LANDED — composition transfer at last (0.000 → 0.913/0.967 on 2 of 3 holdouts), ~0.4M learned params
+**The rung the reasoner arc was climbing toward** (`scripts/train_reasoner_v06.py`, `results/reasoner_v06.json`, checkpoints `reasoner_v06_det/ans.pt`): every component either learned from data or a measured store readout — zero hand schema anywhere.
+
+| component | what | provenance |
+|---|---|---|
+| detection | q_gist → which relations (multi-label, UNORDERED), 1024→256→9 | learned; singles + trained comps only |
+| answer type | q_gist → participation cluster of the answer, 1024→128→8 | learned (the D41 cosine aprof was mush: truncated chains outscored gold 0.392 vs 0.346) |
+| assembly | product of experts: detection log-odds + answer-cluster log-mass under last relation's range; participation-type feasibility gate; chains built ONLY from detected relations (det ≥ 0.2) and MUST contain confident ones (det > 0.5) | D41 unification, no tuned weights (aw=1.0 by construction) |
+| execution | D43 channel-separated walk | store arithmetic |
+| abstention | plan failure (no legal chain) OR hop-1 relation-mismatch readout (classify retrieved fact as argmax_r cos(z, proto_r+t_r)) | measured: readout alone recall 1.000 / false 0.010 |
+
+**Results** (detector-held-back questions for trained comps; all questions for holdouts; singles on held-out phrasings):
+- singles **0.993** (BC policy 0.757; oracle floor 0.743)
+- trained compositions: chain **1.000 across all 9**, P@1 0.944–1.000
+- **holdout compositions (never seen composed): cap_mayor 0.960/0.913, hq_loc_cap 1.000/0.967** — vs BC 0.000/0.000 through four versions, and vs hand-schema end-to-end 0.353/0.042
+- big_pop holdout **0.420** — residual detector failure: population_of is UNDER-detected (p 0.15–0.6) when paired with never-seen-together largest_city_of; the answer-type expert lifts it (0.34→0.42 at aw=1.0; sensitivity 0.46/0.54/0.60 at aw=0.5/1/2, NOT tuned — selecting aw on holdout performance would be leakage)
+- no_answer abstain **0.835**, and the leak analysis is the interesting part: 165/200 abstain at PLANNING (no legal chain — D37's type-invalid abstention, now derived), 2 at the hop-1 readout, and the 33 "leaks" are the detector *semantically reinterpreting* ill-posed questions — "the administrative center of Garmelgar Labs" answered with the company's HQ. Arguably correct behavior the benchmark scores as error.
+
+**Two abstention design laws, both measured this session:** (1) the feasibility gate silently REWRITES unanswerable questions into answerable ones unless confidently detected relations are required AND chains are restricted to detected relations — planning failure then becomes the abstention signal; (2) under the D43 walk, id-coverage is dead as an abstention signal (id_weight=1.0 retrieves the subject's wrong-relation fact with perfect coverage) — the readout must be relation classification of the retrieved entry.
+
+**What remains open**: big_pop-style detector entanglement (one relation's cue suppressing another's in a novel pairing — the pooled-gist limitation, v0.1's diagnosis, now isolated to detection probability calibration rather than architecture). Candidate fixes for v0.7: span-level detection features fused with the gist head, or composition-augmented detector training (synthesize nested questions from single-hop templates — no new world knowledge needed).
+**Revisit**: after J2/J4; benchmark shots (MQuAKE, MuSiQue) once the world-v4b tracks land.
+
 ## 2026-07-25 — D43: Walk execution SOLVED — the walk itself must obey channel separation (gold-chain exec 0.93–1.00, was 0.00–0.76)
 **The defect** (found tracing loc_cap_pop, where BOTH planners produced perfect chains and BOTH executed at 0.000): the D30-era walk queries hop k with `question_gist + t_rel`. But a multi-hop question's gist encodes the LAST hop's relation — "population of the capital of the country containing X" is population-flavored — so hop 1's `+ t_located_in` still lands on the subject's *population* fact. Measured: all 20 traced walks diverged at hop 1. A second, independent defect: the hand-off mask `ids(cur) − all_seen_ids` goes EMPTY on revisit compositions (half of v4's loc_cap_pop cases have the subject city as its country's capital — the answer entity is already in the question, so subtracting seen ids deletes the hand-off).
 
