@@ -93,6 +93,21 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-25 — D39: J1 — the crystallization dial, measured in one system (`results/promotion_j1.json`)
+500 hot facts LoRA-distilled into Qwen3-0.6B (plain-QA format, H1 safe config); both poles evaluated on UNSEEN phrasings; 100 of the same facts then superseded in the store.
+
+| | crystallized (weights) | externalized (store) |
+|---|---|---|
+| accuracy | **0.987** | 0.900 |
+| latency/query | 279 ms | **78 ms** |
+| after edits | **98% STALE, 0% updated** | 0.78 updated (see below) |
+
+**Finding 1 — the promotion rationale INVERTS in this architecture**: crystallized recall requires autoregressive generation; store addressing is one encoder pass + arithmetic — the store is 3.6× FASTER. Promotion buys hot-set accuracy (+0.087) and store-independence, NOT latency. T6's cache analogy needs this correction: weights are a slower, more accurate, unfixable cache here.
+**Finding 2 — staleness measured exactly**: crystallized copies answer the OLD world at 98% with 0% uptake of edits — the frozen-knowledge failure, quantified inside the same system that demonstrates the cure.
+**Finding 3 — the store's update rate traced through its fix arc**: threshold targeting 0.51 → D33-spec identity-agreement targeting **0.78** (fired 100/100; 22 residual wrong-targets are same-subject/different-relation entries, eliminated by design once relations-as-entries (D38) gives every entry a relation label → targeting becomes subject ∧ relation = exact). The remaining gap to ~1.0 is scheduled work, not open research.
+
+T6's first probe stands: both dial positions instrumented, the trade quantified (accuracy vs speed vs editability), and the frontier pole's terminal defect (staleness with no backing store) reproduced in miniature.
+
 ## 2026-07-25 — D38: Design session — the schema moves into the store; bootstrap tiers; T6 crystallization spectrum
 Three corrections/extensions from design discussion (user-driven), logged before implementation:
 1. **D37's planner inputs were closed-world schema living in code** (SIG/CUES/ANS_CUE) — the rigidity is not acceptable and the relational markers ("prepositions") are themselves knowledge. **The schema moves into the store**: relations become entries (learned operator vector + SOFT signature profiles over actual subject/object populations + instance provenance + surface cues); types become data-derived clusters refined by relational participation (a "city" IS the kind of thing with population/located/mayor facts); detection becomes RETRIEVAL over relation entries (scales with inventory, no fixed head); unification becomes additive SCORING (exact unification = the crisp-signature limiting case, which is why v0.5 looked magical on world v4); new relations are writes proposed by the ingestion surprisal gate. Validation experiment specified: zero-hand-schema planner on world v4, same holdouts.

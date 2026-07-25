@@ -293,7 +293,7 @@ of our A6b fix spec. Pipeline (all stages have recipes):
 
 ## Track J — T6: the crystallization spectrum (added 2026-07-25)
 
-- **J1. Promotion/staleness demonstration** (first probe, headline candidate):
+- ~~**J1**~~ ✅ D39 — crystallized 0.987acc/279ms/98% stale vs store 0.900acc/78ms/0.78 updated; promotion-for-latency INVERTS (store is 3.6× faster). Original:
   LoRA-distill ~500 hot facts into the decoder base (plain QA format, H1's
   gfx1201-safe config, no chat template, all-linear targets); measure
   retrieval-free accuracy + latency vs the store path; then supersede 100 of
