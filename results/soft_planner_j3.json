@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-07-25T22:02:33.284132+00:00",
+  "end_to_end": {
+    "big_pop": 0.48,
+    "cap_mayor": 0.52,
+    "cap_pop": 0.4909090909090909,
+    "ceo_born": 0.3055555555555556,
+    "hq_loc": 0.13333333333333333,
+    "hq_loc_cap": 0.24166666666666667,
+    "hq_mayor": 0.20666666666666667,
+    "hq_pop": 0.5888888888888889,
+    "loc_big": 0.1,
+    "loc_cap": 0.17222222222222222,
+    "loc_cap_pop": 0.0,
+    "mayor_born": 0.5666666666666667
+  },
+  "chain_correct": {
+    "big_pop": 0.6933333333333334,
+    "cap_mayor": 1.0,
+    "cap_pop": 0.6227272727272727,
+    "ceo_born": 0.9277777777777778,
+    "hq_loc": 0.3,
+    "hq_loc_cap": 1.0,
+    "hq_mayor": 1.0,
+    "hq_pop": 1.0,
+    "loc_big": 0.9,
+    "loc_cap": 0.4666666666666667,
+    "loc_cap_pop": 1.0,
+    "mayor_born": 0.95
+  },
+  "K": 18,
+  "hand_schema_reference": {
+    "big_pop": 0.553,
+    "cap_mayor": 0.353,
+    "hq_loc_cap": 0.042
+  }
+}

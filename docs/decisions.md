@@ -2,6 +2,48 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-25 — D42: The gist channel IS an interlingua — zero cross-lingual retrieval gap (J5, D40 validated)
+**Experiment** (`scripts/probe_crosslingual.py`, `results/crosslingual_j5.json`, `data/crosslingual_queries_v0.json`): 200 v4 single-hop queries translated to French/German (Haiku agent; invented entity names kept verbatim), retrieved against the untouched ENGLISH fact store.
+
+| queries | gist-only P@1 | hybrid (+identities) P@1 | identity coverage |
+|---|---|---|---|
+| English (same 200) | 0.630 | 0.705 | 1.000 |
+| French (n=100) | **0.650** | **0.720** | 0.970 |
+| German (n=100) | **0.610** | **0.700** | 0.940 |
+
+Crossing the language boundary costs **nothing** — FR is within noise of (numerically above) the EN baseline on both channels. The two channels transfer for *different reasons*, exactly as D40 predicted: the dense gist transfers because BGE-M3's multilingual training makes meaning language-invariant (the interlingua); the identity channel transfers because names are surface-copied symbols (language-parochial but language-INDEPENDENT for proper nouns — coverage drops only where the translator inflected a name, 3–6%). Baseline note: 0.63–0.70 is the honest de-templated single-hop regime (A1-era numbers), including held-out phrasings.
+**Implication for the program**: the store, operators, and planner never see the query language. Multilinguality lives entirely in the frozen encoder — a property we inherit, not one we must engineer. Decoder-side (answering IN French) remains untested and is a codec question, not a store question.
+**Revisit**: with morphologically distant languages (agent data was FR/DE only) or if a future encoder swap loses multilingual training.
+
+## 2026-07-25 — D41: Zero-hand-schema planning WORKS — and beats the hand schema on held-out compositions (J3, D38 §1 validated)
+**Experiment** (`scripts/probe_soft_planner.py`, `results/soft_planner_j3.json`): rebuild D37's typed-unification planner with NOTHING hand-written — no relation signatures, no cue lexicon, no answer-type table. Everything derives from the store: entity types = **relational-participation vectors** (normalized counts over (relation, role) — "a city is the kind of thing with population/located-in/mayor facts"); relation entries carry data-derived domain/range profiles (mean participation of their subjects/objects), a question-prototype (mean train-question embedding), and the translation operator; detection = noun-chunk/verb spans retrieved against relation prototypes; answer typing = participation-cluster prototypes from training questions.
+
+Chain-correct on v4 (all compositions; holdouts never seen as compositions):
+
+| composition | soft (zero-schema) | hand schema (D37) |
+|---|---|---|
+| **big_pop** (holdout) | **0.693** | 0.553 |
+| **cap_mayor** (holdout) | **1.000** | 0.353 |
+| **hq_loc_cap** (holdout) | **1.000** | — |
+| cap_pop | 0.623 | 1.000 |
+| hq_pop / hq_mayor / loc_cap_pop | 1.000 | — |
+| mayor_born / ceo_born / loc_big | 0.950 / 0.928 / 0.900 | — |
+| weak: hq_loc / loc_cap | 0.300 / 0.467 | — |
+
+Not degenerate: five distinct compositions each get distinct perfect chains. The weak cells are detection confusions between located_in/headquartered_in span vocabulary — an evidence problem, not a schema problem.
+
+**It took three attempts, and both failures localize informatively:**
+1. **v1 (surface types) FAILED** — k-means clusters over entity-NAME embeddings are phonological mush for invented names: mean off-diagonal domain-profile cosine **0.862** (indistinct). Diagnostics: detection recall@4 was fine (0.90); the scorer given gold candidates still scored 0.050 — the type signal itself carried nothing. *Types cannot come from what an entity is called.*
+2. **v2 (participation types, additive scoring) FAILED degenerately** — with type profiles now crisp, the question-INDEPENDENT compatibility terms dominated the weak detection terms and the planner emitted one globally link-compatible chain for every question (loc_big chain=1.000, all else 0.000).
+3. **v3 PASSED** — two structural fixes, both principled: detection scores became per-span softmax posteriors over relations (comparable scale, sharp margins), and type compatibility became a **hard feasibility gate** (min link cosine ≥ 0.35) rather than a score term, with ranking by detection evidence + answer-type match.
+
+**The design law this measured**: in detection∘unification planning, *evidence proposes, types dispose*. The question decides WHICH relations; unification decides only WHETHER an ordering is type-legal. Any scoring shape that lets type-compatibility outrank question evidence collapses to a question-independent argmax. This is the planning-level echo of the channel-separation law: question-dependent signal must dominate question-independent structure.
+
+**Second finding**: relational participation is the correct type system for a store (D38 §2's bootstrap tier 5, confirmed independently). It is store-content (no external ontology), crisp by construction, and available to any new entity after its first few facts.
+
+**Open (execution, not planning)**: P@1 lags chain-correct where walks need demote/exclude finesse (loc_cap_pop: chain 1.000, P@1 0.000 — 3-hop walk bug/limits; loc_big revisit semantics). Walk execution is v0.6's job; the planner it needed now exists with zero hand schema.
+**Revisit**: when v0.6 replaces the spaCy span extractor with learned detection.
+
 ## 2026-07-22 — D1: Codec-first roadmap
 Build and gate the NL↔latent codec before any reasoner/memory work. **Rationale**: every upstream failure is uninterpretable if the interface is unreliable; the codec doubles as the interpretability window. **Revisit**: never (ordering already paid for itself in prior art: LCM's failures were codec-boundary failures).
 

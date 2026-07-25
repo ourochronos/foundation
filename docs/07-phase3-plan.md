@@ -302,10 +302,14 @@ of our A6b fix spec. Pipeline (all stages have recipes):
 - **J2. Basis-floor curve**: shrink anchors N and measure interface +
   EXPRESSIVITY (known + novel content; expression size in bits of basis +
   symbols) until the knee — the empirical size of the mandatory shared core.
-- **J3. Zero-hand-schema planner** (D38 §1 validation): relations-as-entries,
+- ~~**J3**~~ ✅ D41 — zero-hand-schema planner BEATS hand schema on holdouts
+  (cap_mayor 1.000 vs 0.353; big_pop 0.693 vs 0.553); participation types +
+  evidence-proposes/types-dispose scoring. Original: relations-as-entries,
   detection-as-retrieval, soft unification; same v4 holdouts as D37.
-- **J5. Cross-lingual gap probe** (D40): FR/DE paraphrase queries vs the
-  English store; gist vs identity contribution measured separately.
+- ~~**J5**~~ ✅ D42 — ZERO cross-lingual gap (FR 0.650/0.720 vs EN 0.630/0.705
+  gist/hybrid; DE matches). Gist is the interlingua; identities transfer as
+  verbatim symbols. Original: FR/DE paraphrase queries vs the English store;
+  gist vs identity contribution measured separately.
 - **J4. Store-growth invariance**: policy trained on the v4 store evaluated
   after doubling the store + online operator updates — the continual-
   learning end-to-end check (D38 §2).
