@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-25T17:48:18.999845+00:00",
+  "n": 59,
+  "rows": [
+    {
+      "sigma": 0.0,
+      "entity_em": 0.6933333333333334,
+      "number_em": 0.5714285714285714,
+      "n_entities": 75,
+      "n_numbers": 112,
+      "binding": 0.42857142857142855
+    },
+    {
+      "sigma": 0.5,
+      "entity_em": 0.6933333333333334,
+      "number_em": 0.5803571428571429,
+      "n_entities": 75,
+      "n_numbers": 112,
+      "binding": 0.45454545454545453
+    }
+  ],
+  "reference_in_dist": {
+    "entity": 0.462,
+    "number": 0.72,
+    "binding": 0.617
+  }
+}

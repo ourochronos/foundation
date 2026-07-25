@@ -93,6 +93,15 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-25 — D33: Sprint tail — edit transparency pays its bill; OOD is a graded cost, not a collapse (`edit_stress_a6b.json`, `ood_codec_a7.json`)
+**A6b — supersession at n=200 on the de-templated world: 0.605** (was 0.900 at n=20), chained 0.640; controls hold (0.870) and the adversary's id-union pollution worry measures MINOR (3%). Diagnosis is precise: under varied edit phrasings the threshold-based shadow **fired only 114/200** (match scores p10 0.813 vs threshold 0.88), and **31 of the fired supersedes hit the wrong entry** under collisions. D25's "edits transparent" carries a templated-world qualifier; the fix is specified for store v1: supersession targeting must require subject-identity agreement + same-relation region — channel ownership, not a raw score threshold.
+
+**A7 — real-Wikipedia OOD (n=59 sentences, 75 entities / 112 numbers): graded degradation, no collapse.** Number EM 0.720 → **0.571**, binding 0.617 → **0.429** (multi-number prose saturates the 24 slots, as predicted); entity EM **0.693** (real-world entity tokens are easier than invented syllable names — not like-for-like, but no entity failure); **σ=0.5 noise-invariance HOLDS out of distribution** (0.693/0.580/0.455 — flat). Frame drift visible in samples, consistent with D32. In-distribution tables now cite these as the OOD companion numbers. Method note: the first A7 run scored ~0 — a probe bug (BGE-M3 sparse dicts are keyed by token-ID strings; feeding IDs as identity text makes the decoder hallucinate numerals). The sparse-decode step should move into a shared helper before it bites a third script.
+
+**A4 disposition**: new probes carry bootstrap/rank CIs (A5 shipped with one); the retroactive CI annex over old JSONs is deferred — every decision that hinged on a thin delta has been individually re-examined by the sprint anyway.
+
+**A8 launched** (equal-bit control: identities hash-embedded INTO the dense channel, z_dim 2048, no symbolic slots — the architecture-vs-information ablation). Prediction: v2e loses to v2t especially under noise, because h rides the noised channel. Results next entry.
+
 ## 2026-07-25 — D32: A2 — the gist is TOPIC-ONLY; the frame lives in the symbolic channels (`results/frame_cycle_a2.json`)
 The adversary's falsification design, executed: decode under true / same-domain-wrong / null gist (true symbols throughout), mask all identities to placeholders in recon AND reference, then compare. **True vs wrong gist: masked-cycle 0.750 vs 0.740 (+0.010); predicate recall 0.762 vs 0.746 (+0.016). Null gist: 0.729/0.742.** With identity anchoring removed from the instrument, the gist's frame contribution is 1–2 points; a null gist still yields 74% predicate recall from symbols+s alone.
 

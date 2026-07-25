@@ -64,7 +64,7 @@ before.
   entity facts at matched cos). Expect gist retrieval to degrade sharply and
   identity rescoring to finally activate — which would *strengthen* the
   architecture story while killing the "invariance" framing. One hour, cached.
-- **A4. Bootstrap CIs in fidelity/compare probes**; re-emit JSONs; mark every
+- **A4** (disposition per D33: new probes carry CIs; retro-annex deferred). Original: re-emit JSONs; mark every
   logged delta smaller than its CI (several D2x conclusions sit inside error
   bars — the +0.011 margin, the 0.006 "cost", the ±0.02 EM deltas).
 - ~~**A5**~~ ✅ D31 — natural-text struct AUC 0.767 (CI .70–.83); valence generalizes, symbolic normalizations are the gap. Original:
@@ -72,15 +72,15 @@ before.
   generator/prompt-author (converse predicates, "fail to X", "hardly/barely",
   un-normalized cleft variants); score ONCE through `pair_scores()`; bootstrap
   AUC; no code changes allowed after seeing results.
-- **A6** — ROC half ✅ D31 (43% false-flag on reformats; rule scoped). Edit-stress half pending. Original: 100 number-
+- ~~**A6**~~ ✅ D31/D33 — ROC 43% false-flag; edit stress 0.605@n=200 (shadow fired 114/200, 31 wrong targets) → store-v1 fix specified (identity-agreement targeting). Original: 100 number-
   reformatting/alias paraphrase pairs ("3 pm"↔"15:00", "a dozen"↔"12",
   "US"↔"United States") → false-flag rate for D23's rule; 200 edits with
   old-object queries and second-generation edits → does id-set union pollute?
-- **A7. OOD codec eval** *(threat #5)*: 250 real number-bearing sentences +
+- ~~**A7**~~ ✅ D33 — graded, no collapse: number 0.571, binding 0.429, entity 0.693; noise-invariance HOLDS OOD. Original: 250 real number-bearing sentences +
   250 two-sentence chunks through the unchanged v2t eval; re-run the σ-sweep
   on them. In-distribution tables get a "synthetic register" qualifier until
   this exists.
-- **A8. Equal-bit control for the paper** *(codec reviewer demand)*: identities
+- **A8** — IN FLIGHT (train_decoder_v2e.py, ~2h; prediction: loses under noise). Original: identities
   injected into the dense channel at matched bit budget — separates
   architecture-win from information-win.
 
