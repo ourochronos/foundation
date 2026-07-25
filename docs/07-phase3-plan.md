@@ -164,6 +164,68 @@ before.
   internally. Cheap interpretability probe; pairs with the looped-model
   mechanistic-analysis literature from the sweep.
 
+## Northstar gap map (added 2026-07-25, second research sweep)
+
+Between Track C's reasoner and the T3/T5 Northstar sit four gaps; three scouts
+mapped them (full reports in session record; citations in references.md):
+
+## Track F — Compute over retrieved values (the ALU)
+
+Verdict from the survey: **fixed symbolic op inventory as policy actions** —
+learned arithmetic is empirically dead (NALU lineage still failing single-op
+seeds in 2025); free-form code emission is the big-model pattern whose
+generation step is the small-model failure surface; every small-scale success
+(TagOp ~125M op-classifier + exact execution; ≤3B constrained-DSL 2025;
+SYRELM) shrank the action language to a closed op set. Trains from
+answer-only reward (WNSMN precedent).
+- **F1.** ALU ops in HopEnv: `compare | diff | count | filter | agg` over
+  identity-channel operands, TYPED (numbers/years/counts) with neuro-symbolic
+  action masking (ops whose operand types don't type-check are masked).
+- **F2.** The guarded failure mode is OPERAND SELECTION, not the op: operand
+  choice is part of the action; unit/scale mismatch (millions vs billions)
+  fails silently — magnitude tags ride the identity channel.
+- **F3.** World v4 adds compute questions ("which is larger", "how many
+  founded before 1950") with oracle traces.
+
+## Track G — Ingestion (documents → store)
+
+The field's biggest open problem is OUR solved mechanism: streaming
+supersession (Mem0 18%, GPT-4o 51.5% multi-hop, GRPO-3B 16.7% on fact
+consolidation) — "a store whose addressing natively detects same-subject-
+relation/different-object" is the survey's literal description of the gap and
+of our A6b fix spec. Pipeline (all stages have recipes):
+- **G1.** Segmentation: 2B-class APS distillate (solved; tune atomicity to
+  one-triple capacity).
+- **G2.** Extraction: fine-tuned 0.5–3B (distilled small BEATS prompted
+  frontier: F1 0.83 vs 0.66–0.69); never prompt-per-chunk.
+- **G3.** Write gate: SAGE-shaped three-way gate with OUR native signal —
+  translation-operator predictive retrieval ("can the store already predict
+  this fact?") — unpublished angle.
+- **G4.** Supersession: deterministic bi-temporal metadata + identity-
+  agreement targeting (the A6b fix); freshness is NEVER an LLM judgment
+  (+28pts for deterministic, 2606.01435).
+- **G5.** **Benchmark shot**: our store on MemoryAgentBench FactConsolidation
+  + EMERGE — the axis where every published system fails and ours is
+  structural. Headline-result candidate alongside MQuAKE-after-edit.
+
+## Track H — Training infrastructure (unblocks the 3B decoder)
+
+- **H1.** QLoRA on gfx1201 is OFFICIAL (bitsandbytes ≥0.50.0 validated;
+  Unsloth now Full-tier AMD+WSL — earlier skip-verdict reversed). The
+  gfx1201-safe config, from a same-GPU field report: NF4 base + LoRA
+  all-linear + `adamw_torch` (paged/8-bit bnb optimizers SILENTLY CORRUPT on
+  HIP) + gradient checkpointing + math-only SDPA + raw training loop; Qwen3
+  tied-embeddings trap: never modules_to_save=[lm_head,embed_tokens]. Try
+  bf16 LoRA first for 3B (~fits); NF4 unlocks 7B.
+- **H2.** **Pretrain-once / align-many decoder** (the structural win):
+  general-corpus decoder + 1k–8k-pair alignment per latent-space variant
+  (ALGEN lineage) instead of per-variant retraining — turns codec iteration
+  from training runs into alignment runs. CE-through-frozen-decoder
+  (SONAR-LLM) is the more sample-efficient objective vs embedding-space
+  regression. Pilot: 1k-pair alignment onto the current triple.
+- **H3.** u-μP for the 1–10M sweep harness; 10M tier as HP-transfer proxy
+  for any future from-scratch 0.6B-class run.
+
 ## Sequencing
 
 Week 1: A1–A4 + B1–B2 (A1 is the long pole; everything else is hours).

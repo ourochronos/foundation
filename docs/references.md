@@ -64,3 +64,12 @@ Prior work we plan to leverage or are considering, grouped by component. Status:
 **Retrieval-native**: Stop-RAG (2510.14337 — Q(λ) stop head); CoRAG (2501.14342 — rejection-sampled hop traces); When Iterative RAG Beats Ideal Evidence (2601.19827 — anchor-carry drop = our hand-off, named); GRAIL (2605.28641 — closest query-arithmetic competitor); DGPO (2508.20324 — THE sub-1B recipe: distill then guided RL; pure RL dead); ToolOrchestra (2511.21689); StepSearch/GiGPO lineage (per-step rewards); MuSiQue/FRAMES/GRADE (2508.16994) for external eval.
 
 **Codec/alignment**: LCM (2412.08821 — codec-boundary failures we route around); SONAR-LLM (2508.05305); CALM (2510.27688); 500xCompressor (2408.03094 — compression SOTA context); Sentence-Anchored Gists (2511.08128); vec2text (2310.06816); vec2vec (2505.12540) + mini-vec2vec (2510.02348 — linear maps suffice); Procrustes Bounds (2510.13406 — theorem for backbone transfer); Token Assorted (2502.03275); DLR (2606.29712 — discrete-beats-continuous for recoverability).
+
+
+## Added 2026-07-25 (Northstar sweep: compute, ingestion, training-eff)
+
+**Compute/ALU**: TAT-QA/TagOp (2105.07624 — op-classifier + exact execution at 125M, the proven small-scale shape); Replacing Thinking with Tool Usage (2507.05065 — constrained DSL beats free-form at ≤3B); QPL (2310.13575 — plans of simple operators beat monolithic code, more so for small parsers); WNSMN (2101.11802 — op-policy trains from answer-only reward); action masking (2602.10598); NALU→DMU lineage (learned arithmetic still failing, 2509.08180); PAL/CodeAct (big-model pattern).
+
+**Ingestion**: APS (2406.19803 — segmentation solved at 2B); Sub-Billion Super-Frontier (2606.22606 — distilled 0.5B F1 0.83 beats prompted frontier on RE); EDC (2404.03868); ATOM (2510.22590 — atomic facts + bi-temporal); KGGen/Wikontic (MINE benchmark); SAGE (2605.30711 — three-way novelty write gate); deterministic freshness (2606.01435 — +28pts over LLM arbitration); Supersede (2606.27472) + Mem0 18% FactConsolidation = the open gap our supersession targets; EMERGE (2507.03617 — the streaming-edit benchmark).
+
+**Training-eff**: bitsandbytes 0.50.0 (gfx1201 validated; paged/8-bit optimizers BROKEN on HIP — adamw_torch); Unsloth official AMD Full-tier incl. WSL; Level1Techs gfx1201 QLoRA field report (5 bugs + workarounds); SONAR-LLM objective sample-efficiency; ALGEN-lineage decoder alignment (1k–8k pairs vs 5M from scratch); u-μP / Cerebras-GPT HP transfer.
