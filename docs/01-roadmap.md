@@ -16,6 +16,12 @@ Rotations failed at lexical and proposition altitude with validated instruments 
 
 **Codec v2 landed (D21)**: the full triple `[gist ; identities ; structure]` doubles fidelity (0.483/0.668/0.810 vs 0.203/0.336/0.619 dense-only) with noise-immune identities — the D3 hybrid-latent bet confirmed end-to-end. Residual: value-to-role binding at generation. **Next before Phase 2**: slot-tagged identity prefixes (binding), identity-channel routing for substitutions (D20 caveat) — queue in [06-state.md](06-state.md). Phase 2's working latent is the triple.
 
+## Phase 2.5 — Expressibility gate (T2) ✅ PASSED (D28) + anchor minimization (open, cheap)
+
+**Added 2026-07-25** (from the D27 discussion of rotations vs projections): rotations are isometries — the morphism for *aligning* spaces (PRH-style), never for expressing novel content within one. Novelty in this architecture is (a) **compositional** — new anchor-combinations in the continuous span (projections + translations), and (b) **referential** — new symbols in the identity channel, unbounded and geometrically free. The manifold stays frozen; the expressible set evolves.
+
+**Gate (T2) ✅ (D28)**: passed far beyond the pre-registered D24 threshold — a 32-anchor projection (N=4096) is end-to-end indistinguishable from the true gist including the frame (cycle 0.811 vs 0.808), and a single nearest anchor from N=512 (input cos 0.343!) costs only 0.02 cycle. The continuous span only has to cover *type space* because entities ride symbols — so the anchor requirement collapsed: hundreds are near-sufficient, confirming the "low thousands" hunch with margin. Minimization curve is flat down to N=512; the breaking point below that is one afternoon of measurement when needed.
+
 ## Phase 2 — Binding algebra + external memory prototype
 
 Anchor inventory (data-derived first), relation operators (**translation-first per D15 — not rotations**; role-level ops from the structure channel), associative store, surprisal-gated writes. Spec: [04-memory.md](04-memory.md).

@@ -93,6 +93,25 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-25 — D28: Expressibility gate (T2) PASSES — and the anchor requirement collapses (`results/expressibility_v0.json`)
+Held-out gists replaced by k-means anchor projections (anchors fit on train only), decoded through the shipping codec with identities/s intact. Pre-registered prediction (D24): quality equals baseline wherever approx cos ≥ ~0.78. **Reality is far stronger — quality equals baseline at cos 0.34:**
+
+| gist input | input cos | entity EM | number EM | binding | cycle-vs-TRUE |
+|---|---|---|---|---|---|
+| true gist | 1.000 | 0.471 | 0.691 | 0.604 | 0.808 |
+| nearest anchor alone, N=512 | 0.343 | 0.459 | 0.665 | 0.538 | 0.786 |
+| 32-anchor projection, N=4096 | 0.666 | 0.488 | 0.709 | 0.588 | **0.811** |
+
+(All 9 sweep conditions — N ∈ {512, 1k, 4k} × m ∈ {1, 8, 32} — sit within noise of baseline on EM/binding.)
+
+**Readings:**
+1. **T2 passes**: `anchors + operators + symbols` is sufficient for expression. A 32-anchor projection is end-to-end indistinguishable from the true gist, *including the frame* (cycle 0.811 vs 0.808); even one anchor in 512 costs only 0.02 cycle.
+2. **Why the requirement collapsed**: the architecture already moved the unbounded content (entities, values) to symbols, so the continuous span only has to cover *type space* — frames, templates, topics — which is compact. The anchor budget question was implicitly "how many anchors to span propositions?"; the real question was "how many to span proposition *types*?", and the answer is orders of magnitude smaller. D6's over-provisioning to 100k was insurance against the wrong risk; the user's "low thousands" hunch is confirmed with margin to spare — **hundreds** are close to sufficient.
+3. **The codec is an error-corrector** (D24's anchor thesis, extended): from a gist two-thirds of the way to unrelated, symbols+structure regenerate the proposition and re-encoding lands back at the true address. For the reasoner this compounds D24: predicted latents can be *very* coarse — effectively "which anchor neighborhood + which symbols."
+4. **Caveat for honesty**: EM/binding are symbol-dominated metrics and could not have failed this gate alone; the frame-sensitive cycle check is what makes the pass meaningful. And this corpus's type diversity (56 domains, single-sentence propositions) bounds the claim — richer discourse types may need a larger span. Revisit at reasoner-scale tasks.
+
+**Anchor minimization (D6's deferred workstream) is now open and cheap**: the N-sweep is flat down to 512 — the breaking point lies BELOW 512 and can be found in one afternoon when it matters.
+
 ## 2026-07-25 — D27: The triple-coherent hop — 0.998 with no text and no codec pass; the reasoner's hop primitive is defined (`results/hop_v1.json`)
 D26's open question — can anything latent close the hop gap — answered by three challengers against the 0.06 constant-translation floor (all text-free between hops, 400 held-out chains):
 
