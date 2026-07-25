@@ -93,6 +93,17 @@ Three facts: (1) **No off-the-shelf encoder orders argument swap correctly** —
 3. **Re-diagnosis of D11/D12**: the adapter failures were an *objective* problem, not (as first believed) pure information loss — the hinge loss never had to find the structural axes when lexical detectors were cheaper.
 **Revisit**: after (a).
 
+## 2026-07-25 — D37: Composition SOLVED by typed unification — rung 2 passes; the reasoner's final shape (`results/typed_planner_v05.json`; lineage v0.2–v0.4 in `hop_policy_v02/03/04.json`)
+The chase, recorded in full because the negative results carry the argument:
+- **v0.2** (parse cue features added): holdouts unchanged at 0.000 — representation added, no gradient pressure (training loss was already ~0; the D10 lesson recurring at the policy level).
+- **v0.3** (question-gist dropout, the D10/D21 fix): still 0.000 — the shortcut wasn't the gist; it was the CUE-SET lookup itself, which is extensionally perfect on training data because type constraints make every trained hit-pattern unique. Nothing forces a comparative rule when a lookup table achieves zero loss.
+- **v0.4** (depth feature fixed — spaCy token views broke identity comparison; the disambiguating feature had been CONSTANT through v0.2–0.3): 0.020. Even with the right feature, live and pressured, BC does not induce the composition rule from 9 compositions.
+- **v0.5 — the reframe: the chain is not a learning target. It is COMPUTABLE by type unification**: chain = ordering of detected relations s.t. domain(r₁)=subject type, range(rᵢ)=domain(rᵢ₊₁), range(r_k)=answer type. Subject types come from the store's own facts; answer types from wh-words. Results on the SAME holdouts BC scored 0.000 on: **big_pop chain-correct 1.000, end-to-end 0.553** (gold-chain oracle: 0.600 — the planner matches it); **cap_mayor 0.353**; no-answer abstention **1.000** (type-invalid → structural abstain).
+
+**The law's fifth altitude, now with its constructive converse**: composition is structure; structure is symbolic — and once treated symbolically it is not merely learnable but EXACT. Residual failures are all upstream in the hand-written cue lexicon and answer-typing (chain-correct 0.000 on hq_mayor/loc-chains = detection gaps, not mechanism gaps).
+
+**The reasoner's final shape falls out** (v0.6, next): learned relation DETECTION (the v0.1 head — already beats floors per-relation) ∘ typed chain ASSEMBLY (unification, exact) ∘ store EXECUTION (D27 arithmetic) ∘ learned HALT/ABSTAIN (B2 readouts, 0.97–1.00). Every stage on the substrate that wins it. This is TagOp/QPL's small-model lesson (Track F) applied to the composition level itself, and it is what T1's claim will rest on: the "reasoning" a small system needs is detection + typed planning + retrieval arithmetic — no simulated computation in weights anywhere.
+
 ## 2026-07-25 — D36: Composition density does NOT buy transfer — the program law's FOURTH appearance, now at question understanding (`results/hop_policy_v01.json`, world v4)
 v0.1: nine trained compositions with shared hops (world v4: 8,859 facts, 9 relations, 12 compositions), three held out. Trained behavior is healthy — five new compositions work (mayor_born 0.613, hq_pop 0.579, hq_loc 0.452), loc_cap/loc_big now BEAT their oracle floors (0.176/0.136 vs 0.140/0.073), abstention holds (0.967, zero false), single 0.755. Mild interference on cap_pop (0.764→0.681) from the enlarged action space.
 

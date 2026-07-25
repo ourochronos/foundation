@@ -36,6 +36,12 @@ import argparse
 _ap = argparse.ArgumentParser()
 _ap.add_argument("--world", default="closed_world_v3")
 _ap.add_argument("--tag", default="v0")
+_ap.add_argument("--parse-feats", action="store_true",
+                 help="v0.2: relation-cue position/depth features (D36 fix)")
+_ap.add_argument("--q-drop", type=float, default=0.0,
+                 help="v0.3: drop the question-gist block during training "
+                      "(the D10/D21 move — starve the shortcut so the cue "
+                      "features carry gradient)")
 ARGS = _ap.parse_args()
 world = json.loads((ROOT / "data" / f"{ARGS.world}.json").read_text())
 facts, queries, hops = world["facts"], world["queries"], world["hops"]
@@ -65,6 +71,45 @@ def qids_of(text):
                       for t in doc if t.pos_ == "PROPN"]
                      + [t.text for t in doc if t.like_num])
 
+# D36 fix: the question's nesting order is content-conditional structure the
+# pooled gist cannot carry — expose it symbolically. Per relation: cue
+# presence + linear position + parse depth of its lexical cues.
+CUES = {"capital_of": {"capital", "seat", "government", "administrative"},
+        "largest_city_of": {"largest", "biggest", "populous", "urban"},
+        "ceo_of": {"ceo", "executive", "helm", "boss"},
+        "founded_in": {"founded", "established", "opened", "incorporated",
+                        "founding"},
+        "born_in": {"born", "birth"},
+        "population_of": {"population", "residents", "inhabitants",
+                           "headcount", "people", "live"},
+        "located_in": {"country", "nation", "belongs", "situated",
+                        "contains"},
+        "headquartered_in": {"headquartered", "headquarters", "based",
+                              "office", "operates"},
+        "mayor_of": {"mayor", "mayoralty", "hall"}}
+
+def qfeat(text, rels):
+    doc = nlp(text)
+    n = max(len(doc), 1)
+    out = []
+    for rel in rels:
+        cues = CUES.get(rel, set())
+        pos, dep = 1.0, 1.0
+        hit = 0.0
+        for t in doc:
+            if t.lemma_.lower() in cues or t.text.lower() in cues:
+                hit = 1.0
+                pos = min(pos, t.i / n)
+                d = 0
+                h = t
+                # spaCy Tokens are views — identity comparison never
+                # terminates at root; compare indices
+                while h.head.i != h.i and d < 12:
+                    h = h.head; d += 1
+                dep = min(dep, d / 12.0)
+        out += [hit, pos, dep]
+    return np.array(out, dtype=np.float32)
+
 store = MemoryStore()
 for f, zf in zip(facts, Zf):
     store.add(zf, f["entities"] + f["numbers"], f["text"])
@@ -80,36 +125,38 @@ for rel in RELS:
         Zq[tr], np.stack([Zf[queries[i]["fact_idx"]] for i in tr]))
 env = HopEnv(store, RELS, t_by_rel)
 
-def feats(obs):
+def feats(obs, qf=None):
     cz = obs.cur_z if obs.cur_z is not None else np.zeros(1024, np.float32)
     step1h = np.zeros(4, np.float32); step1h[min(obs.step, 3)] = 1
     ov = (len(obs.q_ids & obs.cur_ids) / max(len(obs.q_ids), 1)
           if obs.cur_ids else 0.0)
-    return np.concatenate([obs.q_z, cz,
-                           [obs.id_cov, obs.margin, obs.top_score, ov],
-                           step1h]).astype(np.float32)
+    parts = [obs.q_z, cz, [obs.id_cov, obs.margin, obs.top_score, ov], step1h]
+    if qf is not None:
+        parts.append(qf)
+    return np.concatenate(parts).astype(np.float32)
 
 # ---------- teacher-forced dataset ----------
 HOLDOUTS = set(world.get("holdout_compositions", ["big_pop"]))
 X_rows, y_rows, tags = [], [], []
-def add_case(q_z, q_ids, chain, tag, abstain=False):
+def add_case(q_z, q_ids, chain, tag, abstain=False, qtext=""):
+    qf = qfeat(qtext, RELS) if ARGS.parse_feats else None
     obs = env.reset(q_z, q_ids)
     for k, rel in enumerate(chain):
-        X_rows.append(feats(obs)); tags.append(tag)
+        X_rows.append(feats(obs, qf)); tags.append(tag)
         y_rows.append(A_ABST if (abstain and k == 1) else
                       (RELS.index(rel) if k < len(chain) else A_HALT))
         a = Action(relation=RELS.index(rel) if k < len(chain) else HALT,
                    hand_ids=(obs.cur_ids or set()) - q_ids if k else set(),
                    demote_ids=q_ids if k else set(), exclude_visited=k > 0)
         obs, _ = env.step(a)
-    X_rows.append(feats(obs)); tags.append(tag)
+    X_rows.append(feats(obs, qf)); tags.append(tag)
     y_rows.append(A_ABST if abstain else A_HALT)
 
 hop_m = hash_test_mask([h["text"] for h in hops], frac=0.3)   # 30% test
 for i, h in enumerate(hops):
     if h["kind"] in HOLDOUTS or hop_m[i]:
         continue
-    add_case(Zh[i], qids_of(h["text"]), h["chain"], "hop")
+    add_case(Zh[i], qids_of(h["text"]), h["chain"], "hop", qtext=h["text"])
 sing_m = hash_test_mask([queries[i]["text"] for i in
                          [j for j, q in enumerate(queries) if q["kind"] == "single"]],
                         frac=0.3)
@@ -117,14 +164,14 @@ singles = [j for j, q in enumerate(queries) if q["kind"] == "single"]
 for k, i in enumerate(singles):
     if sing_m[k]:
         continue
-    add_case(Zq[i], qids_of(queries[i]["text"]), [queries[i]["relation"]], "single")
+    add_case(Zq[i], qids_of(queries[i]["text"]), [queries[i]["relation"]], "single", qtext=queries[i]["text"])
 na = [j for j, q in enumerate(queries) if q["kind"] == "no_answer"]
 na_m = hash_test_mask([queries[i]["text"] for i in na], frac=0.3)
 for k, i in enumerate(na):
     if na_m[k]:
         continue
     add_case(Zq[i], qids_of(queries[i]["text"]), [queries[i]["relation"]],
-             "no_answer", abstain=True)
+             "no_answer", abstain=True, qtext=queries[i]["text"])
 
 X = torch.tensor(np.stack(X_rows)); y = torch.tensor(y_rows)
 print(f"[data] {len(X)} steps ({dict((t, tags.count(t)) for t in set(tags))})",
@@ -144,7 +191,12 @@ for ep in range(60):
     tot = 0.0
     for i in range(0, len(X), 512):
         b = perm[i:i + 512]
-        loss = lossf(net(X[b]), y[b])
+        Xb = X[b]
+        if ARGS.q_drop > 0:
+            Xb = Xb.clone()
+            drop = (torch.rand(len(b), 1, device=dev) < ARGS.q_drop).float()
+            Xb[:, :1024] = Xb[:, :1024] * (1 - drop)   # q_z is dims 0:1024
+        loss = lossf(net(Xb), y[b])
         opt.zero_grad(); loss.backward(); opt.step()
         tot += loss.item()
     if ep % 20 == 19:
@@ -155,10 +207,11 @@ print(f"[save] hop_policy_{ARGS.tag}.pt ({n_params:,} params)")
 
 # ---------- end-to-end eval: policy drives the env ----------
 @torch.no_grad()
-def policy_walk(q_z, q_ids, max_steps=4):
+def policy_walk(q_z, q_ids, max_steps=4, qtext=""):
+    qf = qfeat(qtext, RELS) if ARGS.parse_feats else None
     obs = env.reset(q_z, q_ids)
     for _ in range(max_steps + 1):
-        a_idx = int(net(torch.tensor(feats(obs))[None].to(dev)).argmax())
+        a_idx = int(net(torch.tensor(feats(obs, qf))[None].to(dev)).argmax())
         if a_idx == A_HALT:
             return env.cur, "halt"
         if a_idx == A_ABST:
@@ -180,22 +233,22 @@ floors = {"single": 0.743, "cap_pop": 0.756, "big_pop": 0.600,
 for kind in sorted({h["kind"] for h in hops}):
     cases = [(h, Zh[i]) for i, h in enumerate(hops) if h["kind"] == kind
              and (hop_m[i] or kind in HOLDOUTS)]
-    hit = sum(policy_walk(zq, qids_of(h["text"]))[0] == h["answer_fact"]
+    hit = sum(policy_walk(zq, qids_of(h["text"]), qtext=h["text"])[0] == h["answer_fact"]
               for h, zq in cases)
     res[kind] = hit / max(len(cases), 1)
     note = " [HELD-OUT COMPOSITION]" if kind in HOLDOUTS else ""
     print(f"[policy {kind:>12}] P@1 = {res[kind]:.3f} (n={len(cases)}, "
           f"oracle floor {floors.get(kind, float('nan'))}){note}", flush=True)
 tests = [i for k, i in enumerate(singles) if sing_m[k]][:400]
-hit = sum(policy_walk(Zq[i], qids_of(queries[i]["text"]))[0]
+hit = sum(policy_walk(Zq[i], qids_of(queries[i]["text"]), qtext=queries[i]["text"])[0]
           == queries[i]["fact_idx"] for i in tests)
 res["single"] = hit / len(tests)
 print(f"[policy       single] P@1 = {res['single']:.3f} (n={len(tests)}, "
       f"floor 0.743)")
 na_test = [i for k, i in enumerate(na) if na_m[k]]
-ab = sum(policy_walk(Zq[i], qids_of(queries[i]["text"]))[1] == "abstain"
+ab = sum(policy_walk(Zq[i], qids_of(queries[i]["text"]), qtext=queries[i]["text"])[1] == "abstain"
          for i in na_test)
-fa = sum(policy_walk(Zq[i], qids_of(queries[i]["text"]))[1] == "abstain"
+fa = sum(policy_walk(Zq[i], qids_of(queries[i]["text"]), qtext=queries[i]["text"])[1] == "abstain"
          for i in tests[:200])
 res["no_answer_abstain"] = ab / len(na_test)
 res["false_abstain"] = fa / 200
@@ -205,5 +258,5 @@ print(f"[policy    no_answer] abstain recall = {ab / len(na_test):.3f} "
 (ROOT / "results" / f"hop_policy_{ARGS.tag}.json").write_text(json.dumps(
     {"generated_at": datetime.now(timezone.utc).isoformat(),
      "n_params": n_params, "results": res, "floors": floors,
-     "holdout_compositions": sorted(HOLDOUTS)}, indent=2))
+     "holdout_compositions": sorted(HOLDOUTS), "parse_feats": ARGS.parse_feats, "q_drop": ARGS.q_drop}, indent=2))
 print(f"[done] results/hop_policy_{ARGS.tag}.json")
