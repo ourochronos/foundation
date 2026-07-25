@@ -32,10 +32,30 @@ from codec.role_bits import _nlp
 
 def unit(X): return X / (np.linalg.norm(X, axis=-1, keepdims=True) + 1e-12)
 
-world = json.loads((ROOT / "data" / "closed_world_v3.json").read_text())
+import argparse
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--world", default="closed_world_v3")
+_ap.add_argument("--tag", default="v0")
+ARGS = _ap.parse_args()
+world = json.loads((ROOT / "data" / f"{ARGS.world}.json").read_text())
 facts, queries, hops = world["facts"], world["queries"], world["hops"]
-z = np.load(ROOT / "results" / "closed_world_v3_emb.npz")
-Zf, Zq, Zh = z["Zf"], z["Zq"], z["Zh"]
+_cache = ROOT / "results" / f"{ARGS.world}_emb.npz"
+if _cache.exists():
+    z = np.load(_cache)
+    Zf, Zq, Zh = z["Zf"], z["Zq"], z["Zh"]
+else:
+    from codec.encode import M3Encoder
+    from codec import whiten as _W
+    _enc = M3Encoder()
+    _wh = _W.load(str(ROOT / "results" / "whiten_v0.npz"))
+    def _emb(ts):
+        d, _ = _enc.encode(ts, sparse=False)
+        return unit(_W.apply(d, _wh))
+    print(f"[encode] {len(facts)}+{len(queries)}+{len(hops)}", flush=True)
+    Zf = _emb([f["text"] for f in facts])
+    Zq = _emb([q["text"] for q in queries])
+    Zh = _emb([h["text"] for h in hops])
+    np.savez(_cache, Zf=Zf, Zq=Zq, Zh=Zh)
 nlp = _nlp()
 HELD = set(world["held_out_phrasings"])
 
@@ -70,7 +90,7 @@ def feats(obs):
                            step1h]).astype(np.float32)
 
 # ---------- teacher-forced dataset ----------
-HOLDOUT_COMP = "big_pop"
+HOLDOUTS = set(world.get("holdout_compositions", ["big_pop"]))
 X_rows, y_rows, tags = [], [], []
 def add_case(q_z, q_ids, chain, tag, abstain=False):
     obs = env.reset(q_z, q_ids)
@@ -87,7 +107,7 @@ def add_case(q_z, q_ids, chain, tag, abstain=False):
 
 hop_m = hash_test_mask([h["text"] for h in hops], frac=0.3)   # 30% test
 for i, h in enumerate(hops):
-    if h["kind"] == HOLDOUT_COMP or hop_m[i]:
+    if h["kind"] in HOLDOUTS or hop_m[i]:
         continue
     add_case(Zh[i], qids_of(h["text"]), h["chain"], "hop")
 sing_m = hash_test_mask([queries[i]["text"] for i in
@@ -130,8 +150,8 @@ for ep in range(60):
     if ep % 20 == 19:
         print(f"[train] ep{ep+1} loss={tot / (len(X) // 512 + 1):.4f}", flush=True)
 n_params = sum(p.numel() for p in net.parameters())
-torch.save(net.state_dict(), ROOT / "checkpoints" / "hop_policy_v0.pt")
-print(f"[save] hop_policy_v0.pt ({n_params:,} params)")
+torch.save(net.state_dict(), ROOT / "checkpoints" / f"hop_policy_{ARGS.tag}.pt")
+print(f"[save] hop_policy_{ARGS.tag}.pt ({n_params:,} params)")
 
 # ---------- end-to-end eval: policy drives the env ----------
 @torch.no_grad()
@@ -157,16 +177,15 @@ res = {}
 floors = {"single": 0.743, "cap_pop": 0.756, "big_pop": 0.600,
           "ceo_born": 0.375, "loc_cap": 0.140, "loc_big": 0.073,
           "loc_cap_pop": 0.000, "no_answer": 0.061}
-for kind in ("cap_pop", "big_pop", "ceo_born", "loc_cap", "loc_big",
-             "loc_cap_pop"):
+for kind in sorted({h["kind"] for h in hops}):
     cases = [(h, Zh[i]) for i, h in enumerate(hops) if h["kind"] == kind
-             and (hop_m[i] or kind == HOLDOUT_COMP)]
+             and (hop_m[i] or kind in HOLDOUTS)]
     hit = sum(policy_walk(zq, qids_of(h["text"]))[0] == h["answer_fact"]
               for h, zq in cases)
     res[kind] = hit / max(len(cases), 1)
-    note = " [HELD-OUT COMPOSITION]" if kind == HOLDOUT_COMP else ""
+    note = " [HELD-OUT COMPOSITION]" if kind in HOLDOUTS else ""
     print(f"[policy {kind:>12}] P@1 = {res[kind]:.3f} (n={len(cases)}, "
-          f"oracle floor {floors[kind]:.3f}){note}", flush=True)
+          f"oracle floor {floors.get(kind, float('nan'))}){note}", flush=True)
 tests = [i for k, i in enumerate(singles) if sing_m[k]][:400]
 hit = sum(policy_walk(Zq[i], qids_of(queries[i]["text"]))[0]
           == queries[i]["fact_idx"] for i in tests)
@@ -183,8 +202,8 @@ res["false_abstain"] = fa / 200
 print(f"[policy    no_answer] abstain recall = {ab / len(na_test):.3f} "
       f"(floor 0.061) | false-abstain on answerable = {fa / 200:.3f}")
 
-(ROOT / "results" / "hop_policy_v0.json").write_text(json.dumps(
+(ROOT / "results" / f"hop_policy_{ARGS.tag}.json").write_text(json.dumps(
     {"generated_at": datetime.now(timezone.utc).isoformat(),
      "n_params": n_params, "results": res, "floors": floors,
-     "holdout_composition": HOLDOUT_COMP}, indent=2))
-print("[done] results/hop_policy_v0.json")
+     "holdout_compositions": sorted(HOLDOUTS)}, indent=2))
+print(f"[done] results/hop_policy_{ARGS.tag}.json")
