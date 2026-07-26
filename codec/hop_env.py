@@ -97,6 +97,8 @@ class HopEnv:
             id_weight=self.id_weight if (a.hand_ids or a.demote_ids) else 0.0,
             demote_ids=a.demote_ids or None,
             exclude=self.visited if (a.exclude_visited and self.visited) else None)
+        if not r:                       # exhaustion: terminate, don't index
+            return self.obs, True
         top1, top2 = r[0], (r[1] if len(r) > 1 else (None, -np.inf, ""))
         self.cur = top1[0]
         self.visited.add(top1[0])

@@ -58,8 +58,8 @@
     }
   },
   "manifest": {
-    "generated_at": "2026-07-26T18:45:05.598459+00:00",
-    "commit": "df46dd1915c97ac473f748512378071510405ab8",
+    "generated_at": "2026-07-26T20:38:19.256665+00:00",
+    "commit": "f0e1f97929a3f209ca1a21a96743ef95e3352152",
     "dirty": true,
     "command": "scripts/k6_percase_clean.py",
     "seed": 0,

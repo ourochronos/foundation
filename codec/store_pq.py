@@ -31,8 +31,8 @@ class PQStore:
         self.texts: list[str] = []
         self.shadowed: list[bool] = []
         self._torch = None
-        self._mut_seq = 0          # audit: bumped by supersede()
-        self._cache_seq = -1       # audit: _mut_seq when cache was built
+        self._mut_seq = 0          # bumped by ANY mutation
+        self._cache_seq = -1       # _mut_seq when the GPU cache was built
 
     # ---- construction ----------------------------------------------------
     @classmethod
@@ -59,6 +59,14 @@ class PQStore:
             codes[:, s] = d2.argmin(1).astype(np.uint8)
         return codes
 
+    def _invalidate(self) -> None:
+        """INVARIANT: any mutation invalidates every derived cache; nothing
+        may key cache validity on entry COUNT (Bug 1, D68: supersede()
+        mutates codes in place, leaving the count unchanged — a
+        count-keyed cache silently scores pre-edit codes)."""
+        self._torch = None
+        self._mut_seq += 1
+
     def add(self, z: np.ndarray, identities: list[str], text: str) -> int:
         z = np.asarray(z, np.float32)
         if z.shape != (self.dim,):
@@ -67,6 +75,7 @@ class PQStore:
         c = self.encode(z)
         self.codes = c if self.codes is None else \
             np.concatenate([self.codes, c])
+        self._invalidate()
         toks = id_tokens(identities)
         self.ids.append(toks)
         self.content_ids.append(set(toks))
@@ -78,6 +87,7 @@ class PQStore:
         c = self.encode(Z)
         self.codes = c if self.codes is None else \
             np.concatenate([self.codes, c])
+        self._invalidate()
         for ids_, t in zip(ids_list, texts):
             toks = ids_ if isinstance(ids_, set) else id_tokens(ids_)
             self.ids.append(set(toks))
@@ -107,7 +117,7 @@ class PQStore:
         self.codes[new_idx] = self.codes[old_idx]     # address inheritance
         self.ids[new_idx] = self.ids[new_idx] | self.ids[old_idx]
         self.shadowed[old_idx] = True                 # content_ids untouched
-        self._mut_seq += 1
+        self._invalidate()
         from codec import store_audit as _au
         if _au.ENABLED:
             _au.counters["supersedes"] += 1
@@ -169,6 +179,8 @@ class PQStore:
                 _au.counters["deficit_lt_k"] += 1
             if nf == 0:
                 _au.counters["zero_finite"] += 1
-        top = np.argpartition(-sc, min(k, len(sc) - 1))[:k]
-        top = top[np.argsort(-sc[top])]
+        valid = np.flatnonzero(np.isfinite(sc))
+        if valid.size == 0:
+            return []                       # exhaustion terminates (Bug 2)
+        top = valid[np.argsort(-sc[valid])[:k]]
         return [(int(i), float(sc[i]), self.texts[i]) for i in top]

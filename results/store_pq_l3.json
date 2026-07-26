@@ -28,21 +28,21 @@
       ]
     }
   },
-  "ms_per_question": 8.464735008601565,
+  "ms_per_question": 9.499961979551395,
   "scale_bench": {
     "100000": {
-      "ms_per_query": 24.3999965605326,
+      "ms_per_query": 24.54875356052071,
       "codes_mb": 12.8
     },
     "1000000": {
-      "ms_per_query": 796.5237368398812,
+      "ms_per_query": 713.1461190397386,
       "codes_mb": 128.0
     }
   },
   "manifest": {
-    "generated_at": "2026-07-26T17:12:09.963488+00:00",
-    "commit": "6a21def708a4181cd1110b820ce3f5e7b75de075",
-    "dirty": false,
+    "generated_at": "2026-07-26T21:05:10.526441+00:00",
+    "commit": "3e855ec5d6a62db455f95d0138797e8c4d053bf6",
+    "dirty": true,
     "command": "scripts/probe_store_pq_l3.py",
     "seed": 0,
     "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",

@@ -142,3 +142,6 @@ out.write_text(json.dumps(
      "scale_bench": {str(k): v for k, v in bench.items()},
      "manifest": run_manifest(seed=0)}, indent=2))
 print(f"[done] {out.relative_to(ROOT)}")
+
+from codec import store_audit as _au
+_au.dump("pq_l3")

@@ -163,3 +163,6 @@ for name, ug, ub in variants:
 (ROOT / "results" / "k6_percase_clean.json").write_text(json.dumps(
     {"variants": out, "manifest": run_manifest(seed=0)}, indent=2))
 print("[done] results/k6_percase_clean.json", flush=True)
+
+from codec import store_audit as _au
+_au.dump("percase")

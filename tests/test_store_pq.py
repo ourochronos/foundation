@@ -10,7 +10,14 @@ D, S = 32, 8
 
 
 def _books(rng):
-    return rng.normal(size=(S, 16, D // S)).astype(np.float32)
+    d = D // S
+    B = (rng.normal(size=(S, 16, d)) * 0.01).astype(np.float32)
+    for s_ in range(S):
+        B[s_, 0] = 0.0
+        for j in range(d):
+            B[s_, 1 + j] = 0.0
+            B[s_, 1 + j, j] = 1.0
+    return B
 
 
 def test_add_query_roundtrip():

@@ -123,7 +123,10 @@ class MemoryStore:
                 _au.counters["deficit_lt_k"] += 1
             if nf == 0:
                 _au.counters["zero_finite"] += 1
-        top = np.argsort(-score)[:k]
+        valid = np.flatnonzero(np.isfinite(score))
+        if valid.size == 0:
+            return []                       # exhaustion terminates (Bug 2)
+        top = valid[np.argsort(-score[valid])[:k]]
         return [(int(i), float(score[i]), self.texts[i]) for i in top]
 
 
