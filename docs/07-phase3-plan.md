@@ -442,7 +442,7 @@ merges, redirects) are already measured at small scale.
   invariance checks on the growing store; artifact-refresh cadence. The
   "worth keeping running" test.
 
-ORDER after Phase A (D67): M4 FIRST (commodity store replaces the audited
+INFRA (2026-07-27): native PostgreSQL+pgvector live on localhost:5432, CLEAN (prior ekb/ekb_dev backed up to ~/backups/ekb-20260727 — verified dumps + readable schema SQL, which is PRIOR ART for Track I views/federation — then dropped per user). ORDER after Phase A (D67): M4 FIRST (commodity store replaces the audited
 custom engine), then M1-rescoped, M3, with M2 anytime.
 
 Build gate: **M1–M4 MEET TARGETS** (D64/F12 — not merely "have numbers")
