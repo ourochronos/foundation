@@ -28,9 +28,21 @@ exec(_head)  # noqa: S102
 from codec.manifest import run_manifest, wilson_ci                # noqa: E402
 from codec.walker import ChannelWalker as CW                      # noqa: E402
 
-# global (train-store) artifacts for blending
+# global artifacts from TRAIN-case facts ONLY (D64/F4: the first run used
+# ALL pooled facts including test cases' — code contradicted the entry's
+# anti-leakage claim)
+train_fact_idx = set()
+for c in cases:
+    if c["case_id"] not in set(w["train_case_ids"]):
+        continue
+    for (sl, rl, ol), t in zip(c["orig"]["triples_labeled"],
+                               c["orig"]["triples"]):
+        fi = fact_key.get((sl, t[1], ol))
+        if fi is not None:
+            train_fact_idx.add(fi)
+train_facts = [facts[i] for i in sorted(train_fact_idx)]
 g_subj, g_obj = {}, {}
-for f in facts:
+for f in train_facts:
     g_subj.setdefault(f["subject"], set()).add(f["relation"])
     g_obj.setdefault(f["object"], set()).add(f["relation"])
 G_BRIDGE = {(a, b) for n in set(g_subj) | set(g_obj)
@@ -38,7 +50,7 @@ G_BRIDGE = {(a, b) for n in set(g_subj) | set(g_obj)
 G_RNG = {}
 for r in RELS:
     v = np.zeros(KC)
-    for f in facts:
+    for f in train_facts:
         if f["relation"] == r and f["object"] in clus_of:
             v[clus_of[f["object"]]] += 1
     G_RNG[r] = v / (v.sum() + 1e-12)

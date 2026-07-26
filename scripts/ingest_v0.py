@@ -129,8 +129,12 @@ def measure():
     print(f"[measure] step-answer recall {hit}/{tot} = {hit/tot:.3f} | "
           f"both-steps-covered {sum(per_q)}/{len(per_q)} = "
           f"{sum(per_q)/len(per_q):.3f}", flush=True)
+    from codec.manifest import run_manifest, wilson_ci
     json.dump({"step_recall": hit / tot,
-               "full_coverage": sum(per_q) / len(per_q)},
+               "step_recall_ci95": wilson_ci(hit, tot),
+               "full_coverage": sum(per_q) / len(per_q),
+               "coverage_ci95": wilson_ci(sum(per_q), len(per_q)),
+               "manifest": run_manifest()},
               open(ROOT / "results" / "ingest_v0_extract.json", "w"),
               indent=2)
 
