@@ -400,9 +400,11 @@ interface with PGVector as the durability tier. Federation is explicitly
 post-PoC; its primitives (views, provenance batches, evidence-gated
 merges, redirects) are already measured at small scale.
 
-- **M1 (=R1). Relation canonicalization** — the D61 gate. Merge relation
-  phrases by paraphrase similarity + argument-distribution agreement;
-  redirects; counting-calibrated. **Targets (D64/F12): MuSiQue oracle-chain
+- **M1 (=R1). RE-SCOPED (D67): relation → curated-schema CLASSIFICATION**
+  (Wikidata properties; extractor prompted with the inventory). Open-vocab
+  induction (D66's 0.284 antonym wall) PARKED for schema-less sources.
+  New targets: mapping accuracy ≥ 0.85 on a 100-triple audit; ≥ 70% of
+  extracted triples mappable. Original approach text (historical): **Targets (D64/F12): MuSiQue oracle-chain
   QA ≥ 0.40 (≥70% of the 0.567 extraction ceiling); canonical relations in
   [30, 120] on the MuSiQue set; over-merge control — a 40-pair antonym/
   sibling set (born_in vs died_in style, identical type signatures) must
@@ -439,6 +441,9 @@ merges, redirects) are already measured at small scale.
 - **M7 (=R7). Continual soak**: scheduled ingest for a week; J4-protocol
   invariance checks on the growing store; artifact-refresh cadence. The
   "worth keeping running" test.
+
+ORDER after Phase A (D67): M4 FIRST (commodity store replaces the audited
+custom engine), then M1-rescoped, M3, with M2 anytime.
 
 Build gate: **M1–M4 MEET TARGETS** (D64/F12 — not merely "have numbers")
 → keeper architecture session (with the package restructure that earns
