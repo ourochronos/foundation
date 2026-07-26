@@ -1,4 +1,26 @@
 {
   "step_recall": 0.7166666666666667,
-  "full_coverage": 0.5666666666666667
+  "step_recall_ci95": [
+    0.6631845423956875,
+    0.7646699712719605
+  ],
+  "full_coverage": 0.5666666666666667,
+  "coverage_ci95": [
+    0.4866784070665957,
+    0.6433254410473084
+  ],
+  "manifest": {
+    "generated_at": "2026-07-26T18:46:56.095069+00:00",
+    "commit": "21038cbf86f0772d1b23c270e0e3d714bf299a87",
+    "dirty": true,
+    "command": "scripts/ingest_v0.py measure",
+    "seed": null,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    }
+  }
 }

@@ -1,0 +1,243 @@
+{
+  "n_relations": 687,
+  "n_canonical": 16,
+  "tau": 0.65,
+  "antonym_control": {
+    "pairs": 67,
+    "precision": 0.23880597014925375,
+    "merged_bad": [
+      [
+        "attended",
+        "career start"
+      ],
+      [
+        "attended",
+        "start"
+      ],
+      [
+        "attended",
+        "started career with"
+      ],
+      [
+        "birth date",
+        "death"
+      ],
+      [
+        "birth date",
+        "death date"
+      ],
+      [
+        "birth name",
+        "death"
+      ],
+      [
+        "birth name",
+        "death date"
+      ],
+      [
+        "birthplace",
+        "death"
+      ],
+      [
+        "birthplace",
+        "death date"
+      ],
+      [
+        "birthplace of",
+        "death"
+      ],
+      [
+        "birthplace of",
+        "death date"
+      ],
+      [
+        "born",
+        "died"
+      ],
+      [
+        "born",
+        "died on"
+      ],
+      [
+        "born",
+        "studied"
+      ],
+      [
+        "born",
+        "studied at"
+      ],
+      [
+        "born in",
+        "died"
+      ],
+      [
+        "born in",
+        "died on"
+      ],
+      [
+        "born in",
+        "studied"
+      ],
+      [
+        "born in",
+        "studied at"
+      ],
+      [
+        "born on",
+        "died"
+      ],
+      [
+        "born on",
+        "died on"
+      ],
+      [
+        "born on",
+        "studied"
+      ],
+      [
+        "born on",
+        "studied at"
+      ],
+      [
+        "career start",
+        "defended"
+      ],
+      [
+        "career start",
+        "end"
+      ],
+      [
+        "career start",
+        "extended"
+      ],
+      [
+        "career start",
+        "extends into"
+      ],
+      [
+        "career start",
+        "first vendor to ship"
+      ],
+      [
+        "career start",
+        "friend of"
+      ],
+      [
+        "career start",
+        "girlfriend is"
+      ],
+      [
+        "death",
+        "gave birth to"
+      ],
+      [
+        "death date",
+        "gave birth to"
+      ],
+      [
+        "defended",
+        "start"
+      ],
+      [
+        "defended",
+        "started career with"
+      ],
+      [
+        "end",
+        "start"
+      ],
+      [
+        "end",
+        "started career with"
+      ],
+      [
+        "extended",
+        "start"
+      ],
+      [
+        "extended",
+        "started career with"
+      ],
+      [
+        "extends into",
+        "start"
+      ],
+      [
+        "extends into",
+        "started career with"
+      ],
+      [
+        "first vendor to ship",
+        "start"
+      ],
+      [
+        "first vendor to ship",
+        "started career with"
+      ],
+      [
+        "friend of",
+        "start"
+      ],
+      [
+        "friend of",
+        "started career with"
+      ],
+      [
+        "girlfriend is",
+        "start"
+      ],
+      [
+        "girlfriend is",
+        "started career with"
+      ],
+      [
+        "joined",
+        "left"
+      ],
+      [
+        "joint venture between",
+        "left"
+      ],
+      [
+        "left",
+        "rejoined"
+      ],
+      [
+        "located south of",
+        "north of"
+      ],
+      [
+        "located south of",
+        "northwest of"
+      ]
+    ]
+  },
+  "qa_em": 0.02,
+  "qa_n": 150,
+  "qa_ci95": [
+    0.006824627715648315,
+    0.05714766586424165
+  ],
+  "targets": {
+    "count_range": [
+      30,
+      120
+    ],
+    "antonym_prec": 0.9,
+    "qa": 0.4
+  },
+  "manifest": {
+    "generated_at": "2026-07-26T18:48:08.429651+00:00",
+    "commit": "21038cbf86f0772d1b23c270e0e3d714bf299a87",
+    "dirty": true,
+    "command": "scripts/probe_canon_m1.py",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    }
+  }
+}
