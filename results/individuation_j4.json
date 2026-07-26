@@ -1,222 +1,227 @@
 {
   "B_seed43": {
     "big_pop": {
-      "chain": 0.54,
+      "chain": 0.42,
       "p1": 0.4066666666666667,
       "n": 150,
-      "flagged": 0,
+      "flagged": 1,
       "collided_n": 33,
-      "collided_p1": 0.0
+      "collided_p1": 0.3939393939393939
     },
     "cap_mayor": {
       "chain": 0.9533333333333334,
-      "p1": 0.7066666666666667,
+      "p1": 0.92,
       "n": 150,
       "flagged": 0,
       "collided_n": 54,
-      "collided_p1": 0.37037037037037035
+      "collided_p1": 0.9629629629629629
     },
     "cap_pop": {
       "chain": 1.0,
-      "p1": 0.7681818181818182,
+      "p1": 0.9590909090909091,
       "n": 220,
       "flagged": 0,
       "collided_n": 43,
-      "collided_p1": 0.0
+      "collided_p1": 0.9767441860465116
     },
     "ceo_born": {
       "chain": 1.0,
-      "p1": 0.7888888888888889,
+      "p1": 0.9888888888888889,
       "n": 180,
       "flagged": 0,
       "collided_n": 36,
-      "collided_p1": 0.0
+      "collided_p1": 1.0
     },
     "hq_loc": {
-      "chain": 0.0,
-      "p1": 0.0,
+      "chain": 1.0,
+      "p1": 0.9733333333333334,
       "n": 150,
       "flagged": 0,
       "collided_n": 36,
-      "collided_p1": 0.0
+      "collided_p1": 0.8888888888888888
     },
     "hq_loc_cap": {
-      "chain": 0.0,
-      "p1": 0.0,
+      "chain": 1.0,
+      "p1": 0.9583333333333334,
       "n": 120,
       "flagged": 0,
       "collided_n": 32,
-      "collided_p1": 0.0
+      "collided_p1": 0.9375
     },
     "hq_mayor": {
-      "chain": 0.0,
-      "p1": 0.0,
+      "chain": 1.0,
+      "p1": 0.9533333333333334,
       "n": 150,
       "flagged": 0,
       "collided_n": 55,
-      "collided_p1": 0.0
+      "collided_p1": 0.8727272727272727
     },
     "hq_pop": {
       "chain": 1.0,
-      "p1": 0.7944444444444444,
+      "p1": 0.9722222222222222,
       "n": 180,
       "flagged": 1,
       "collided_n": 37,
-      "collided_p1": 0.0
+      "collided_p1": 0.8648648648648649
     },
     "loc_big": {
-      "chain": 0.9933333333333333,
-      "p1": 0.8466666666666667,
+      "chain": 1.0,
+      "p1": 0.9066666666666666,
       "n": 150,
       "flagged": 29,
       "collided_n": 45,
-      "collided_p1": 0.5111111111111111
+      "collided_p1": 0.6888888888888889
     },
     "loc_cap": {
       "chain": 1.0,
-      "p1": 0.8333333333333334,
+      "p1": 0.8777777777777778,
       "n": 180,
       "flagged": 33,
       "collided_n": 56,
-      "collided_p1": 0.5535714285714286
+      "collided_p1": 0.6964285714285714
     },
     "loc_cap_pop": {
-      "chain": 0.21666666666666667,
-      "p1": 0.23333333333333334,
+      "chain": 1.0,
+      "p1": 0.8333333333333334,
       "n": 120,
       "flagged": 18,
       "collided_n": 24,
-      "collided_p1": 0.08333333333333333
+      "collided_p1": 0.4583333333333333
     },
     "mayor_born": {
       "chain": 1.0,
-      "p1": 0.6944444444444444,
+      "p1": 0.8888888888888888,
       "n": 180,
       "flagged": 37,
       "collided_n": 69,
-      "collided_p1": 0.2028985507246377
+      "collided_p1": 0.7101449275362319
     }
   },
   "A_seed41": {
     "big_pop": {
-      "chain": 0.5266666666666666,
-      "p1": 0.4266666666666667,
+      "chain": 0.42,
+      "p1": 0.42,
       "n": 150,
       "flagged": 0,
       "collided_n": 32,
-      "collided_p1": 0.0
+      "collided_p1": 0.375
     },
     "cap_mayor": {
-      "chain": 0.9666666666666667,
-      "p1": 0.78,
+      "chain": 0.96,
+      "p1": 0.9133333333333333,
       "n": 150,
       "flagged": 0,
       "collided_n": 57,
-      "collided_p1": 0.5614035087719298
+      "collided_p1": 0.9298245614035088
     },
     "cap_pop": {
       "chain": 1.0,
-      "p1": 0.7636363636363637,
+      "p1": 0.9590909090909091,
       "n": 220,
-      "flagged": 0,
+      "flagged": 3,
       "collided_n": 47,
-      "collided_p1": 0.0
+      "collided_p1": 0.9148936170212766
     },
     "ceo_born": {
       "chain": 1.0,
-      "p1": 0.7833333333333333,
+      "p1": 0.9888888888888889,
       "n": 180,
       "flagged": 1,
       "collided_n": 39,
-      "collided_p1": 0.02564102564102564
+      "collided_p1": 0.9743589743589743
     },
     "hq_loc": {
-      "chain": 0.0,
-      "p1": 0.0,
+      "chain": 1.0,
+      "p1": 0.98,
       "n": 150,
       "flagged": 0,
       "collided_n": 32,
-      "collided_p1": 0.0
+      "collided_p1": 0.90625
     },
     "hq_loc_cap": {
-      "chain": 0.0,
-      "p1": 0.0,
+      "chain": 1.0,
+      "p1": 0.9666666666666667,
       "n": 120,
       "flagged": 0,
       "collided_n": 29,
-      "collided_p1": 0.0
+      "collided_p1": 0.9310344827586207
     },
     "hq_mayor": {
-      "chain": 0.0,
-      "p1": 0.0,
+      "chain": 1.0,
+      "p1": 0.9933333333333333,
       "n": 150,
-      "flagged": 0,
+      "flagged": 1,
       "collided_n": 47,
-      "collided_p1": 0.0
+      "collided_p1": 1.0
     },
     "hq_pop": {
       "chain": 1.0,
-      "p1": 0.7722222222222223,
+      "p1": 0.9722222222222222,
       "n": 180,
       "flagged": 0,
       "collided_n": 40,
-      "collided_p1": 0.0
+      "collided_p1": 0.9
     },
     "loc_big": {
       "chain": 1.0,
-      "p1": 0.8133333333333334,
+      "p1": 0.8866666666666667,
       "n": 150,
       "flagged": 32,
       "collided_n": 48,
-      "collided_p1": 0.4375
+      "collided_p1": 0.6666666666666666
     },
     "loc_cap": {
       "chain": 1.0,
-      "p1": 0.7722222222222223,
+      "p1": 0.85,
       "n": 180,
       "flagged": 37,
       "collided_n": 49,
-      "collided_p1": 0.2857142857142857
+      "collided_p1": 0.5714285714285714
     },
     "loc_cap_pop": {
-      "chain": 0.21666666666666667,
-      "p1": 0.25,
+      "chain": 1.0,
+      "p1": 0.8833333333333333,
       "n": 120,
       "flagged": 19,
       "collided_n": 29,
-      "collided_p1": 0.06896551724137931
+      "collided_p1": 0.5517241379310345
     },
     "mayor_born": {
       "chain": 1.0,
-      "p1": 0.7666666666666667,
+      "p1": 0.9277777777777778,
       "n": 180,
       "flagged": 33,
       "collided_n": 61,
-      "collided_p1": 0.3114754098360656
+      "collided_p1": 0.7868852459016393
     }
   },
   "acceptance": {
-    "collided_p1": 0.2393617021276596,
-    "collided_n": 376,
+    "path_collided_p1": 0.94750656167979,
+    "path_collided_n": 381,
+    "entry_ambiguous": {
+      "p1": 0.453781512605042,
+      "flag_rate": 1.0,
+      "n": 119
+    },
     "collided_ci95": [
-      0.19900557192316276,
-      0.28498986196296244
+      0.9203138153761953,
+      0.9657650284909957
     ],
-    "clean_p1": 0.9771547248182763,
-    "clean_n": 963,
+    "clean_p1": 0.9775449101796407,
+    "clean_n": 1336,
     "baseline_D46": {
       "collided": 0.488,
       "clean": 0.964
     }
   },
   "registry": {
-    "eids": 10858,
+    "eids": 8800,
     "surface_names": 8151
   },
   "manifest": {
-    "generated_at": "2026-07-26T10:52:35.419394+00:00",
-    "commit": "7290399a131a28419de1240367b367a217dcf430",
-    "dirty": true,
+    "generated_at": "2026-07-26T11:07:25.307334+00:00",
+    "commit": "3594b58284087563f3ab7fc02df0f21c15085de3",
+    "dirty": false,
     "command": "scripts/probe_individuation_j4.py",
     "seed": 0,
     "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",

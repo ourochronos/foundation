@@ -2,6 +2,22 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-26 — D52: Individuation ACCEPTED — the growth tax is closed, and what remains is flagged genuine ambiguity
+**Result** (`probe_individuation_j4.py` rerun of the D46 protocol, `results/individuation_j4.json`; heads loaded from D44 checkpoints — no training): with the D49 registry at write time, on gold-planned seed-43 hops over the 2× store:
+
+| case class | exec P@1 | n | D46 (surface tokens) |
+|---|---|---|---|
+| **path-collided** (subject unique, collision on path/answer) | **0.948** ✓ target ≥0.90 | 381 | 0.488 (mixed) |
+| clean | 0.978 | 1336 | 0.964 |
+| entry-ambiguous (subject NAME collided, no context) | 0.454, **flag-rate 1.000** | 119 | — |
+
+Registry: 8,800 eids over 8,151 surface names — the ~649 cross-world collisions individuated exactly. Planning untouched (chain 1.000 everywhere but the known big_pop 0.420 / cap_mayor 0.95). Seed-41 regression at 2×: within D44 range.
+
+**Amendment (reasoned before the split was measured)**: D46's "collided ≥0.90" target conflated two populations. Entry-ambiguous questions ("population of North Halmelton" with two North Halmeltons and no disambiguating context) are *unanswerable as posed* — the ceiling is a coin flip and the honest metric is the ambiguity FLAG, which scored **1.000 recall**. The ≥0.90 target properly applies to path-collided cases, where it passed.
+
+**What it took (v1.1, one deviation logged)**: the docs/08 write-time profile gate had a cold-start circularity; v1.1 replaces it with **batch locality** — within one source, same name = same entity (discourse prior); across sources, absorption requires evidence (matching functional value/object or neighbor overlap), otherwise same name = new individual. Values act as pseudo-objects so functional conflicts fire on value facts too (born-1987 vs born-1990 splits two Jo Fosvens regardless of ingest order). First attempt also taught two probe-level lessons the hard way: dom/rng signatures scramble if subject/object eids aren't tracked separately (hq-chains died at 0.000 — caught by the seed-41 regression battery), and object-mention resolution without evidence mints spurious eids (10,858 → 8,800 after the fix). Split-repair pass for streaming ingest remains deferred.
+**Consequence**: K6 (MQuAKE) is unblocked — its 2,915/3,000 alias-bearing cases are exactly this machinery's territory. Aliases via redirect entries are acceptance test 2, still pending.
+
 ## 2026-07-26 — D53: J2/J2b — sparse anchor codes FAIL in the whitened space; the shared basis is BLOCK anchors (PQ), with graded knees in the registered order
 **J2 as registered** (`probe_basis_floor_j2.py`, `results/basis_floor_j2.json`): matching-pursuit anchor codes never reach either knee. At m=8 with EVERY train point as an anchor (~110 bits): reconstruction fid 0.684, retrieval 0.395 vs 0.580 full-z, detection agreement 0.905. (Amendment logged: N=65k was impossible — the anchor pool is the 16k corpus; top rung = all-train-points.) **Why**: the whitened space has effective rank ~523 (D10 era) — whitening deliberately spread variance across hundreds of directions, so ≤16 atoms from ANY global dictionary cannot span it. The D51 prediction (interface knee ≪ reconstruction knee) is **unresolvable in this family** — nothing knees — though the graded ORDERING held (detection > retrieval > reconstruction at every N).
 

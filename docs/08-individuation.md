@@ -86,7 +86,9 @@ timescale.
   natural data (K6), a learned scorer becomes a candidate — gated by the
   frozen-template discipline (D48).
 
-## Pre-registered acceptance tests (run when training pause lifts)
+## Pre-registered acceptance tests
+
+**Status 2026-07-26 (D52): test 1 PASSED** — path-collided 0.948 (≥0.90 ✓), clean 0.978, entry-ambiguous flagged at 1.000 recall (amendment in D52: entry-ambiguity is unanswerable-as-posed; the flag is the metric). Implementation note: v1.1 uses BATCH LOCALITY in place of the write-time profile gate (cold-start circularity); tests 2–4 pending.
 1. **J4 rerun** (`probe_store_growth.py` + resolver at write time):
    collided-case execution ≥ 0.90 (parity with clean 0.964 within CI);
    clean cases within CI of current; planning stays chain-Δ 0.000.
