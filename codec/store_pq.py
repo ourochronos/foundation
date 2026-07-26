@@ -31,6 +31,8 @@ class PQStore:
         self.texts: list[str] = []
         self.shadowed: list[bool] = []
         self._torch = None
+        self._mut_seq = 0          # audit: bumped by supersede()
+        self._cache_seq = -1       # audit: _mut_seq when cache was built
 
     # ---- construction ----------------------------------------------------
     @classmethod
@@ -105,12 +107,19 @@ class PQStore:
         self.codes[new_idx] = self.codes[old_idx]     # address inheritance
         self.ids[new_idx] = self.ids[new_idx] | self.ids[old_idx]
         self.shadowed[old_idx] = True                 # content_ids untouched
+        self._mut_seq += 1
+        from codec import store_audit as _au
+        if _au.ENABLED:
+            _au.counters["supersedes"] += 1
 
     # ---- query (ADC) -------------------------------------------------------
     def _scores(self, z_q: np.ndarray) -> np.ndarray:
         z_q = np.asarray(z_q, np.float32)
         lut = np.einsum("skd,sd->sk", self.books,
                         z_q.reshape(self.S, self.dsub))     # [S, K]
+        from codec import store_audit as _au
+        if _au.ENABLED:
+            _au.counters["pq_scores_calls"] += 1
         try:
             import torch
             if torch.cuda.is_available():
@@ -118,6 +127,11 @@ class PQStore:
                         self._torch[0].shape[0] != len(self.codes):
                     self._torch = (torch.tensor(self.codes,
                                                 device="cuda").long(), None)
+                    self._cache_seq = self._mut_seq
+                elif _au.ENABLED:
+                    _au.counters["pq_cache_uses"] += 1
+                    if self._cache_seq < self._mut_seq:
+                        _au.counters["pq_stale_cache_uses"] += 1
                 lut_t = torch.tensor(lut, device="cuda")
                 sc = lut_t.gather(  # [N, S] gather over K per subvector
                     1, self._torch[0].T).sum(0)
@@ -147,6 +161,14 @@ class PQStore:
         sc = np.where(np.array(self.shadowed), -np.inf, sc)
         if exclude:
             sc[list(exclude)] = -np.inf
+        from codec import store_audit as _au
+        if _au.ENABLED:
+            _au.counters["queries"] += 1
+            nf = int(np.isfinite(sc).sum())
+            if nf < k:
+                _au.counters["deficit_lt_k"] += 1
+            if nf == 0:
+                _au.counters["zero_finite"] += 1
         top = np.argpartition(-sc, min(k, len(sc) - 1))[:k]
         top = top[np.argsort(-sc[top])]
         return [(int(i), float(sc[i]), self.texts[i]) for i in top]

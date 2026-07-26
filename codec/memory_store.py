@@ -115,6 +115,14 @@ class MemoryStore:
         score = np.where(np.array(self.shadowed), -np.inf, score)
         if exclude:
             score[list(exclude)] = -np.inf
+        from codec import store_audit as _au
+        if _au.ENABLED:
+            _au.counters["queries"] += 1
+            nf = int(np.isfinite(score).sum())
+            if nf < k:
+                _au.counters["deficit_lt_k"] += 1
+            if nf == 0:
+                _au.counters["zero_finite"] += 1
         top = np.argsort(-score)[:k]
         return [(int(i), float(score[i]), self.texts[i]) for i in top]
 
