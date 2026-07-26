@@ -75,10 +75,19 @@ subs_of = {r: sorted({f["subject"] for f in facts if f["relation"] == r})
            for r in RELS}
 trained_pairs = {tuple(h["chain"]) for h in hops if len(h["chain"]) == 2
                  and h["kind"] not in w["holdout_compositions"]}
+# F1 (adversarial review, D64): holdout-chain pairs must NOT be augmented
+# either — v0.7's first run synthesized (capital_of, mayor_of), silently
+# consuming the cap_mayor holdout. Exclude every consecutive pair of every
+# holdout chain so the holdouts stay holdouts.
+holdout_pairs = set()
+for h in hops:
+    if h["kind"] in w["holdout_compositions"]:
+        holdout_pairs |= set(zip(h["chain"], h["chain"][1:]))
 aug_texts, aug_labels = [], []
 for r1 in NOM:
     for r2 in OUTER:
-        if (r1, r2) not in BRIDGE or (r1, r2) in trained_pairs or r1 == r2:
+        if (r1, r2) not in BRIDGE or (r1, r2) in trained_pairs \
+                or (r1, r2) in holdout_pairs or r1 == r2:
             continue
         for s_ in rng.sample(subs_of[r1], min(60, len(subs_of[r1]))):
             t = rng.choice(OUTER[r2]).format(x=NOM[r1].format(s=s_))

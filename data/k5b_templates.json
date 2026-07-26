@@ -1,0 +1,99 @@
+{
+  "single": {
+    "capital_of": [
+      "What's the capital of {s}?",
+      "Name the capital city of {s}.",
+      "Which city is capital of {s}?"
+    ],
+    "largest_city_of": [
+      "What's the largest city in {s}?",
+      "Name {s}'s biggest city.",
+      "Which city is the most populous in {s}?"
+    ],
+    "located_in": [
+      "What country is {s} located in?",
+      "{s} is in which country?",
+      "Which nation contains the city {s}?"
+    ],
+    "population_of": [
+      "How many people live in {s}?",
+      "What's the population of {s}?",
+      "How many inhabitants does {s} have?"
+    ],
+    "mayor_of": [
+      "Who is the mayor of {s}?",
+      "Who's currently mayor of {s}?",
+      "Name the current mayor of {s}."
+    ],
+    "ceo_of": [
+      "Who is the CEO of {s}?",
+      "Who's the CEO of {s}?",
+      "Name the CEO of {s}."
+    ],
+    "born_in": [
+      "What year was {s} born?",
+      "When was {s} born?",
+      "In what year did {s} come into the world?"
+    ],
+    "founded_in": [
+      "What year was {s} founded?",
+      "When was {s} established?",
+      "In what year did {s} start operations?"
+    ],
+    "headquartered_in": [
+      "What city is {s} headquartered in?",
+      "In which city does {s} have its headquarters?",
+      "Name the city where {s}'s headquarters is located."
+    ]
+  },
+  "hops": {
+    "cap_pop": [
+      "What's the population of {s}'s capital?",
+      "How many people live in the capital of {s}?"
+    ],
+    "big_pop": [
+      "What's the population of {s}'s largest city?",
+      "How many inhabitants does the biggest city in {s} have?"
+    ],
+    "ceo_born": [
+      "What year was the CEO of {s} born?",
+      "In what year was the current CEO of {s} born?"
+    ],
+    "mayor_born": [
+      "What year was the mayor of {s} born?",
+      "When was the current mayor of {s} born?"
+    ],
+    "hq_pop": [
+      "What's the population of {s}'s headquarters city?",
+      "How many people live in the city where {s} is headquartered?"
+    ],
+    "hq_loc": [
+      "In which country is {s} headquartered?",
+      "Which nation is {s} based in?"
+    ],
+    "hq_mayor": [
+      "Who is the mayor of {s}'s headquarters city?",
+      "Name the mayor of the city where {s} is headquartered."
+    ],
+    "loc_cap": [
+      "What's the capital of the country containing {s}?",
+      "Name the capital of the nation where {s} is located."
+    ],
+    "loc_big": [
+      "What's the largest city in the country that {s} is in?",
+      "Name the biggest city in the nation containing {s}."
+    ],
+    "cap_mayor": [
+      "Who's the mayor of {s}'s capital?",
+      "Name the mayor of the capital of {s}."
+    ],
+    "loc_cap_pop": [
+      "What's the population of the capital of the country where {s} is located?",
+      "How many people live in the capital of the nation containing {s}?"
+    ],
+    "hq_loc_cap": [
+      "What's the capital of the country where {s} is headquartered?",
+      "Name the capital of the nation where {s} maintains headquarters."
+    ]
+  }
+}

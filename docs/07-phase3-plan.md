@@ -402,35 +402,50 @@ merges, redirects) are already measured at small scale.
 
 - **M1 (=R1). Relation canonicalization** — the D61 gate. Merge relation
   phrases by paraphrase similarity + argument-distribution agreement;
-  redirects; counting-calibrated. Accept: MuSiQue QA unblocked; canonical
-  relation count sane on real data.
+  redirects; counting-calibrated. **Targets (D64/F12): MuSiQue oracle-chain
+  QA ≥ 0.40 (≥70% of the 0.567 extraction ceiling); canonical relations in
+  [30, 120] on the MuSiQue set; over-merge control — a 40-pair antonym/
+  sibling set (born_in vs died_in style, identical type signatures) must
+  keep precision ≥ 0.9.**
 - **M2 (=R2). Individuation recoverability** — can content geometry
   (fact-anchor clusters) re-derive the eid partition for same-name
-  entities? Yes → eids are a CACHE of derivable structure (crystallization
-  framing); no → identity genuinely needs the symbolic scaffold. Either
-  way a finding; settles the "eids feel external" question empirically.
+  entities? **Targets: pairwise-F1 ≥ 0.80 vs the registry partition, and
+  must beat the surface-only baseline by ≥ 15 points; below either →
+  identity needs the symbolic scaffold (also a finding, criterion-scored
+  not vibes-scored).**
 - **M3 (=R3). Wikipedia seed pilot** (AMENDED from ArXiv, user 2026-07-26:
   Wikipedia first — redirects = gold aliases, wikilinks = gold entity
   linking, infoboxes = extraction ground truth). Seed: Math +
-  Epistemology; branch by links. Measures: extraction vs infoboxes,
-  canonicalization on real terminology, cross-page linking, Track-I
-  conflicts on real disputed content. ArXiv = M3b after.
+  Epistemology PLUS an infobox-rich slice (mathematician biographies —
+  D64/F12: the thematic seed is infobox-sparse, so ground truth needs the
+  structured slice); branch by links. ~200 pages. **Targets: extraction
+  P/R vs infobox fields ≥ 0.6/0.5 on infobox-bearing pages; entity-link
+  accuracy vs wikilinks ≥ 0.8; ≥ 20 attributed conflicts surfaced with
+  ≥ 0.8 precision on a 25-item audit. Coreference (title-entity +
+  pronoun) is IN M3's scope, measured as an error term.** ArXiv = M3b.
 - **M4 (=R4). StoreBackend parity**: interface extracted from the walker's
   consumption (query/ids/content_ids/vec/supersede/texts/shadowed);
   MemoryStore/PQStore/PgStore(PGVector) conform; accept = K6+J4 batteries
   reproduce + latency at 100k/1M (absorbs D62's open GPU bench; pgvector
   quantization re-measured under the J2b protocol).
 - **M5 (=R5). Grounded synthesis**: subject_brief = retrieve subgraph →
-  summary with per-sentence store citations; faithfulness scored (every
-  sentence traceable), disputed points surfaced via views.
+  summary with per-sentence store citations. **Targets: entailment-judged
+  faithfulness ≥ 0.9 (each sentence cites an entry that entails it; judged
+  set n=50); distractor-subgraph control — unsupported-claim refusal
+  ≥ 0.8; disputed points surfaced via views on ≥ 0.8 of planted
+  conflicts.**
 - **M6 (=R6). Open-relation detection** — retire D61's oracle-chain scope
   after M1 (canonical relations → trainable det head → MuSiQue end-to-end).
 - **M7 (=R7). Continual soak**: scheduled ingest for a week; J4-protocol
   invariance checks on the growing store; artifact-refresh cadence. The
   "worth keeping running" test.
 
-Build gate: M1–M4 have numbers → keeper architecture session (with the
-package restructure that earns itself at that point).
+Build gate: **M1–M4 MEET TARGETS** (D64/F12 — not merely "have numbers")
+→ keeper architecture session (with the package restructure that earns
+itself at that point). Pre-publication additions from D64: MeLLo-style
+iterative 0.6B baseline + chat-template B1; M6 must compare fixed-head vs
+detection-as-retrieval (F15); M7 gets drift thresholds (weekly headline
+metrics within CI of day-0; rollback = snapshot restore).
 
 ## Sequencing
 
