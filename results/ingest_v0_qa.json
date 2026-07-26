@@ -1,0 +1,25 @@
+{
+  "em": 0.02,
+  "n": 150,
+  "ci95": [
+    0.006824627715648315,
+    0.05714766586424165
+  ],
+  "n_triples": 1771,
+  "n_relations": 688,
+  "scope": "oracle chain relations; open-relation detection is v1",
+  "manifest": {
+    "generated_at": "2026-07-26T17:07:49.975526+00:00",
+    "commit": "5dbe17d013da2e60af7f3089c821a45998c27e02",
+    "dirty": true,
+    "command": "scripts/ingest_v0.py qa",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    }
+  }
+}

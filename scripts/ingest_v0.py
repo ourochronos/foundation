@@ -117,10 +117,11 @@ def measure():
         found = 0
         for step in r["decomposition"]:
             ans = step["answer"].lower()
-            ok = any(ans in o.lower() or o.lower() in ans
+            ok = any(ans in str(t[2]).lower() or str(t[2]).lower() in ans
                      for pi in range(len(r["paragraphs"]))
-                     for _s, _rel, o in ext.get(f"{r['id']}#{pi}", [])
-                     if len(o) > 2)
+                     for t in ext.get(f"{r['id']}#{pi}", [])
+                     if isinstance(t, list) and len(t) == 3
+                     and len(str(t[2])) > 2)
             tot += 1
             hit += ok
             found += ok
@@ -154,7 +155,10 @@ def qa():
             d = ext.get(f"{r['id']}#{pi}")
             if not d:
                 continue
-            for s, rel, o in d["triples"]:
+            for t in d["triples"]:
+                if not (isinstance(t, list) and len(t) == 3):
+                    continue
+                s, rel, o = (str(x) for x in t)
                 rel = re.sub(r"[^a-z0-9 ]", "", rel).strip()
                 if rel:
                     all_facts.append({"batch": f"{r['id']}#{pi}",
