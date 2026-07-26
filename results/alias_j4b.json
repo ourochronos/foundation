@@ -1,15 +1,15 @@
 {
   "canonical_p1": 0.99,
-  "alias_p1": 0.825,
-  "ratio": 0.8333333333333334,
+  "alias_p1": 0.99,
+  "ratio": 1.0,
   "n": 200,
   "alias_ci95": [
-    0.7663545078991807,
-    0.8713955882539106
+    0.9642775148038205,
+    0.9972533993962251
   ],
   "manifest": {
-    "generated_at": "2026-07-26T15:13:36.179032+00:00",
-    "commit": "d90cf3f39fcdce13d60f26becc2480e73c27078b",
+    "generated_at": "2026-07-26T16:23:26.234270+00:00",
+    "commit": "e19e1b71c485fef6bb692bbb21b62c56d12de8e4",
     "dirty": true,
     "command": "scripts/probe_alias_j4b.py",
     "seed": 3,

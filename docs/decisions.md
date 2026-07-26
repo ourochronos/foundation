@@ -2,6 +2,10 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-26 — D59: v0.7 detector — both replicated weaknesses CLOSED by data alone; alias test PASSES at 1.000 with a fair generator
+**v0.7** (`train_reasoner_v07.py`, `results/reasoner_v07.json`; architecture unchanged, 1024→256→9): two augmentations — (1) pair-complete synthetic compositions for every co-occurrence-legal relation pair (one nominal template per relation + one outer bank; legality by counting, D54); (2) a 240-question "runs/leads/heads" contrast set (same verbs, city vs company subjects, opposite labels). **K5 frozen-template gate (pre-registered in D48): big_pop 0.500→1.000, cap_mayor 0.467→0.967, mayor_born 0.700→1.000, singles 0.900→0.936, all other cells ≥0.93 — no regressions.** v4 battery: true holdouts unchanged (cap_mayor 0.913, hq_loc_cap 0.967), singles 0.993, abstention 0.835→0.855. **Bookkeeping**: big_pop is hereby RETIRED as a compositional holdout (the augmentation covers its pair); the compositional-transfer claim rests on cap_mayor, hq_loc_cap, and K6's natural-data result. The pooled-gist entanglement (v0.1's diagnosis) is confirmed to be a DATA-coverage phenomenon, not architectural.
+**Aliases (D49 test 2, closed)**: with a uniqueness-enforced generator, alias P@1 = canonical P@1 = 0.990, **ratio 1.000** (`results/alias_j4b.json`). The earlier 0.833 was entirely my colliding truncations — which the resolver correctly flagged rather than resolving. Test 2 PASSED.
+
 ## 2026-07-26 — D58: K6 PRE-REGISTERED VERDICT — PASS in both settings, non-overlapping CIs, ~10× lower latency
 Final table (docs/09 primary criterion; `results/k6_*.json`):
 

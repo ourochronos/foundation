@@ -51,11 +51,21 @@ walker = ChannelWalker(store,
                        ops={r: art["rel_entry"][r]["t"] for r in art["RELS"]})
 
 
+_TAKEN: set = set()
+
+
 def alias_of(name: str) -> str:
+    """Derived alias, UNIQUENESS-ENFORCED (the first run's truncations
+    collided with each other — 96/200 — and the resolver correctly flagged
+    them ambiguous; that tested the flag, not aliasing. D59)."""
     parts = name.split()
-    if len(parts) > 1:
-        return parts[0][0] + ". " + " ".join(parts[1:])
-    return name[: max(5, len(name) - 4)]
+    cand = (parts[0][0] + ". " + " ".join(parts[1:])) if len(parts) > 1         else name[: max(5, len(name) - 4)]
+    n = len(cand)
+    while cand in _TAKEN:
+        n += 1
+        cand = name[:n] if n <= len(name) else name + f" ({n - len(name)})"
+    _TAKEN.add(cand)
+    return cand
 
 
 rng = random.Random(3)
