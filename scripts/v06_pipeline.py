@@ -192,7 +192,8 @@ def train_heads_with(art, world, Zq, Zh, seed=0, epochs=60):
 
 
 def make_planner(det_head, ans_head, art, det_floor=0.2, req_thr=0.5,
-                 feas_thr=0.35):
+                 feas_thr=0.35, max_k=3, cand_k=4, link_ok=None,
+                 entry_ok=None):
     """v0.6 final planner: PoE (detection log-odds + answer-cluster
     log-mass), participation feasibility gate, required+restricted
     detected relations (D44)."""
@@ -206,21 +207,29 @@ def make_planner(det_head, ans_head, art, det_floor=0.2, req_thr=0.5,
             ap = torch.softmax(ans_head(torch.tensor(q_emb)[None]),
                                -1)[0].numpy()
         det = {r: float(pv[j]) for j, r in enumerate(RELS)}
-        cand = [r for r in sorted(det, key=det.get, reverse=True)[:4]
+        cand = [r for r in sorted(det, key=det.get, reverse=True)[:cand_k]
                 if det[r] >= det_floor]
         req = {r for r in RELS if det[r] > req_thr}
         if subject not in name_i:
             return None
         subj_p = P_name[name_i[subject]]
         best, best_s = None, -1e9
-        for k in range(1, 4):
+        for k in range(1, max_k + 1):
             for pm in permutations(cand, k):
-                feas = cosd(subj_p, rel_entry[pm[0]]["dom"])
-                for a, b in zip(pm, pm[1:]):
-                    feas = min(feas, cosd(rel_entry[a]["rng"],
-                                          rel_entry[b]["dom"]))
-                if feas < feas_thr or not req <= set(pm):
-                    continue
+                if link_ok is not None:
+                    if (entry_ok is not None
+                            and not entry_ok(subject, pm[0])) or \
+                            any(not link_ok(a, b)
+                                for a, b in zip(pm, pm[1:])) or \
+                            not req <= set(pm):
+                        continue
+                else:
+                    feas = cosd(subj_p, rel_entry[pm[0]]["dom"])
+                    for a, b in zip(pm, pm[1:]):
+                        feas = min(feas, cosd(rel_entry[a]["rng"],
+                                              rel_entry[b]["dom"]))
+                    if feas < feas_thr or not req <= set(pm):
+                        continue
                 ev = sum(np.log(max(det[r], 1e-4)
                                 / (1 - min(det[r], 1 - 1e-4))) for r in pm)
                 ans = float(ap @ rng_cprof[pm[-1]])

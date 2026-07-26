@@ -102,9 +102,26 @@ torch.save(ans.state_dict(), ROOT / "checkpoints" / "k6_ans.pt")
 print(f"[heads] det n={len(X)} ans n={len(Xa_t)} over {R} relations",
       flush=True)
 
+# co-occurrence feasibility (D54): sparse Wikidata profiles make cosine
+# links collapse (97% of gold 3/4-hop chains under the 0.35 gate, median
+# 0.062) while detection recall@4 is 0.92-0.99 — the gate, not the head.
+# link_ok(A,B): some entity bridges obj(A)->subj(B) in the store.
+subj_slots = {}
+obj_slots = {}
+for f in facts:
+    subj_slots.setdefault(f["subject"], set()).add(f["relation"])
+    obj_slots.setdefault(f["object"], set()).add(f["relation"])
+BRIDGE = set()
+for n in names:
+    for a in obj_slots.get(n, ()):  
+        for b in subj_slots.get(n, ()):  
+            BRIDGE.add((a, b))
 art = dict(RELS=RELS, rel_entry=rel_entry, rng_cprof=rng_cprof,
            P_name=P_name, name_i=name_i)
-plan = P.make_planner(det, ans, art)
+plan = P.make_planner(det, ans, art, max_k=4, cand_k=5,
+                      link_ok=lambda a, b: (a, b) in BRIDGE,
+                      entry_ok=lambda subj, r: r in
+                      subj_slots.get(subj, ()))
 
 res = {}
 for nh in ("2hop", "3hop", "4hop"):
