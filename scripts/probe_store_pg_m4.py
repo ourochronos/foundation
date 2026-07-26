@@ -57,7 +57,7 @@ print(f"[pg] {1000*t_all/n_all:.0f} ms/question (MemoryStore ref "
 # (b) exact parity on sampled walks
 rng = np.random.default_rng(0)
 sample = rng.choice(len(hops), 300, replace=False)
-mism = tried = 0
+mism_idx = mism_ans = tried = 0
 for i in sample:
     h = hops[i]
     p = plan(Zh[i], h["subject"])
@@ -66,14 +66,17 @@ for i in sample:
     tried += 1
     a = walker.walk(id_tokens([h["subject"]]), p)
     b = wk_pg.walk(id_tokens([h["subject"]]), p)
-    mism += a != b
-print(f"[parity] {tried} walks, mismatches={mism}", flush=True)
+    mism_idx += a != b
+    mism_ans += (fact_obj.get(a) if a is not None else None) != \
+        (fact_obj.get(b) if b is not None else None)
+print(f"[parity] {tried} walks: index-mismatch={mism_idx}, "
+      f"ANSWER-mismatch={mism_ans}", flush=True)
 
 # (c) scale
 bench = {}
 for N, use_hnsw in ((100_000, False), (100_000, True), (1_000_000, True)):
     tbl = f"bench_{N}"
-    big = PgStore(table=tbl, fresh=(not use_hnsw or N == 1_000_000))
+    big = PgStore(table=tbl)          # tables persist; reuse loaded rows
     if len(big.texts) < N:
         made = len(big.texts)
         while made < N:
@@ -85,9 +88,10 @@ for N, use_hnsw in ((100_000, False), (100_000, True), (1_000_000, True)):
                 print(f"  [load {tbl}] {made:,}", flush=True)
     if use_hnsw:
         t0 = time.perf_counter()
-        big.build_hnsw()
-        print(f"  [hnsw {tbl}] built in {time.perf_counter()-t0:.0f}s",
-              flush=True)
+        big.build_hnsw(rebuild=True)
+        bench[f"{N}_hnsw_build_s"] = time.perf_counter() - t0
+        print(f"  [hnsw {tbl}] built in {time.perf_counter()-t0:.0f}s "
+              f"(tuned: 12GB maint mem, 8 workers)", flush=True)
     qs = rng.normal(size=(30, 1024)).astype(np.float32)
     t0 = time.perf_counter()
     for q in qs:
@@ -99,7 +103,8 @@ for N, use_hnsw in ((100_000, False), (100_000, True), (1_000_000, True)):
 
 (ROOT / "results" / "store_pg_m4.json").write_text(json.dumps(
     {"k6_battery": res, "ms_per_question": 1000 * t_all / n_all,
-     "walk_parity": {"n": tried, "mismatches": mism},
+     "walk_parity": {"n": tried, "index_mismatch": mism_idx,
+      "answer_mismatch": mism_ans},
      "bench_ms": bench,
      "manifest": run_manifest(seed=0)}, indent=2))
 print("[done] results/store_pg_m4.json", flush=True)

@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS {t} (
     invalidated_by integer,
     source_ref  text
 );
+CREATE INDEX IF NOT EXISTS {t}_ids_gin ON {t} USING gin (ids);
 """
 
 
@@ -140,43 +141,72 @@ class PgStore:
             return np.asarray(v.to_list(), np.float32)   # pgvector Vector
 
     def query(self, z_q, query_ids=None, k: int = 5, id_weight: float = 0.5,
-              demote_ids=None, exclude=None):
+              demote_ids=None, exclude=None, cand: int = 200):
+        """Hybrid top-k. Pure-dense: canonical index form (ties = engine
+        order; walker queries are always hybrid). Hybrid: candidates =
+        dense top-C UNION id-matching entries (GIN) — the id channel is
+        entity-selective in our regime (D43, id_weight 1.0), so dense-only
+        candidate generation drops gold facts ranked below top-C within
+        their relation class (measured: battery 0.745→0.286). Rescore
+        stage breaks ties on idx ASC for numpy-parity."""
         if not self.texts:
             return []
         z_q = np.asarray(z_q, np.float32)
         z_q = z_q / (np.linalg.norm(z_q) + 1e-12)
-        parts = [f"-(z <#> %s)"]          # <#> is negative inner product
-        params: list = [z_q]
-        if query_ids and id_weight:
-            qa = sorted(set(query_ids))
-            parts.append(
-                f"+ %s * (SELECT count(*) FROM unnest(ids) t "
-                f"WHERE t = ANY(%s))::float / %s")
-            params += [id_weight, qa, max(len(qa), 1)]
-        if demote_ids and id_weight:
-            da = sorted(set(demote_ids))
-            parts.append(
-                f"- %s * (SELECT count(*) FROM unnest(ids) t "
-                f"WHERE t = ANY(%s))::float / %s")
-            params += [id_weight, da, max(len(da), 1)]
-        score = " ".join(parts)
-        where = "NOT shadowed"
-        if exclude:
-            where += " AND NOT (idx = ANY(%s))"
-        sql = (f"SELECT idx, {score} AS s, body FROM {self.table} "
-               f"WHERE {where} ORDER BY s DESC LIMIT %s")
-        if exclude:
-            params.append(sorted(exclude))
-        params.append(k)
+        ex_sql = " AND NOT (idx = ANY(%s))" if exclude else ""
+        ex_par = [sorted(exclude)] if exclude else []
+        use_ids = bool(query_ids and id_weight)
+        use_dem = bool(demote_ids and id_weight)
         with self._conn.cursor() as cur:
-            cur.execute(sql, params)
-            return [(int(i), float(s), b) for i, s, b in cur.fetchall()]
+            if not use_ids and not use_dem:
+                cur.execute(
+                    f"SELECT idx, -(z <#> %s) AS s, body FROM {self.table} "
+                    f"WHERE NOT shadowed{ex_sql} "
+                    f"ORDER BY z <#> %s LIMIT %s",
+                    [z_q] + ex_par + [z_q, k])
+                return [(int(i), float(sc), b) for i, sc, b in cur.fetchall()]
+            score = "-(z <#> %s)"
+            params: list = [z_q]
+            qa = sorted(set(query_ids)) if use_ids else []
+            if use_ids:
+                score += (" + %s * (SELECT count(*) FROM unnest(ids) t "
+                          "WHERE t = ANY(%s))::float / %s")
+                params += [id_weight, qa, max(len(qa), 1)]
+            if use_dem:
+                da = sorted(set(demote_ids))
+                score += (" - %s * (SELECT count(*) FROM unnest(ids) t "
+                          "WHERE t = ANY(%s))::float / %s")
+                params += [id_weight, da, max(len(da), 1)]
+            cand_sql = (f"(SELECT idx, z, ids, body FROM {self.table} "
+                        f"WHERE NOT shadowed{ex_sql} "
+                        f"ORDER BY z <#> %s LIMIT %s)")
+            cand_par = ex_par + [z_q, max(cand, k)]
+            if use_ids:
+                cand_sql += (f" UNION (SELECT idx, z, ids, body FROM "
+                             f"{self.table} WHERE NOT shadowed{ex_sql} "
+                             f"AND ids && %s::text[])")
+                cand_par += ex_par + [qa]
+            sql = (f"WITH c AS ({cand_sql}) "
+                   f"SELECT idx, {score} AS s, body FROM c "
+                   f"ORDER BY s DESC, idx LIMIT %s")
+            cur.execute(sql, cand_par + params + [k])
+            return [(int(i), float(sc), b) for i, sc, b in cur.fetchall()]
 
     # ---- maintenance ------------------------------------------------------
-    def build_hnsw(self) -> None:
+    def build_hnsw(self, m: int = 16, ef_construction: int = 64,
+                   rebuild: bool = False) -> None:
+        """Parallel in-memory build needs maintenance_work_mem >= graph
+        size and workers > 0 (pgvector >= 0.6). Session SETs are
+        belt-and-braces over ALTER SYSTEM. Query-time recall knob is
+        hnsw.ef_search (default 40), not build-time."""
         with self._conn.cursor() as cur:
+            cur.execute("SET maintenance_work_mem = '12GB'")
+            cur.execute("SET max_parallel_maintenance_workers = 8")
+            if rebuild:
+                cur.execute(f"DROP INDEX IF EXISTS {self.table}_hnsw")
             cur.execute(f"CREATE INDEX IF NOT EXISTS {self.table}_hnsw ON "
-                        f"{self.table} USING hnsw (z vector_ip_ops)")
+                        f"{self.table} USING hnsw (z vector_ip_ops) "
+                        f"WITH (m = {m}, ef_construction = {ef_construction})")
 
     @classmethod
     def from_store(cls, store, **kw) -> "PgStore":

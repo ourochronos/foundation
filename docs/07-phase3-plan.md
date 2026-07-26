@@ -425,7 +425,7 @@ merges, redirects) are already measured at small scale.
   accuracy vs wikilinks ≥ 0.8; ≥ 20 attributed conflicts surfaced with
   ≥ 0.8 precision on a 25-item audit. Coreference (title-entity +
   pronoun) is IN M3's scope, measured as an error term.** ArXiv = M3b.
-- **M4 (=R4). StoreBackend parity**: interface extracted from the walker's
+- ~~**M4**~~ ✅ D70 — PgStore EXACT battery, 0/276 answer-parity, 1M @ 3.2 ms (15× under budget). Original: **M4 (=R4). StoreBackend parity**: interface extracted from the walker's
   consumption (query/ids/content_ids/vec/supersede/texts/shadowed);
   MemoryStore/PQStore/PgStore(PGVector) conform; accept = K6+J4 batteries
   reproduce + latency at 100k/1M (absorbs D62's open GPU bench; pgvector
