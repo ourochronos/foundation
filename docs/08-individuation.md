@@ -88,7 +88,7 @@ timescale.
 
 ## Pre-registered acceptance tests
 
-**Status 2026-07-26 (D52): test 1 PASSED** — path-collided 0.948 (≥0.90 ✓), clean 0.978, entry-ambiguous flagged at 1.000 recall (amendment in D52: entry-ambiguity is unanswerable-as-posed; the flag is the metric). Implementation note: v1.1 uses BATCH LOCALITY in place of the write-time profile gate (cold-start circularity); tests 2–4 pending.
+**Status 2026-07-26 (D52): test 1 PASSED** — path-collided 0.948 (≥0.90 ✓), clean 0.978, entry-ambiguous flagged at 1.000 recall (amendment in D52: entry-ambiguity is unanswerable-as-posed; the flag is the metric). Implementation note: v1.1 uses BATCH LOCALITY in place of the write-time profile gate (cold-start circularity). **Tests 2–4 CLOSED 2026-07-26**: aliases ratio 1.000 (uniqueness-fair generator); ambiguity flag 1.000 / spurious 0.000; edit-interaction parity (eid ripple 0.920 vs token 0.927) — with the edit-object rule settled as SUBJECT-PROVENANCE resolution (bare lookup 0.740; evidence-gated write minted spurious eids 0.000; the subject's batch disambiguates its own world's entities).
 1. **J4 rerun** (`probe_store_growth.py` + resolver at write time):
    collided-case execution ≥ 0.90 (parity with clean 0.964 within CI);
    clean cases within CI of current; planning stays chain-Δ 0.000.

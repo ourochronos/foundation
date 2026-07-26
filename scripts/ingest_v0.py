@@ -51,6 +51,26 @@ Triples:
 """
 
 
+def merge():
+    """Merge Haiku agent shards -> triples_v0.jsonl (extraction moved to
+    Haiku subagents per user 2026-07-26; Bonsai was a ROCm smoke test)."""
+    out = TRIPLES.open("w")
+    n = 0
+    for f in sorted((DATA / "shards").glob("out_*.jsonl")):
+        for line in f.read_text().splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                d = json.loads(line)
+                assert "pid" in d and isinstance(d["triples"], list)
+            except Exception:
+                continue
+            out.write(json.dumps(d) + "\n")
+            n += 1
+    print(f"[merge] {n} paragraph rows", flush=True)
+
+
 def extract():
     rows = json.loads((DATA / "musique_2hop_150.json").read_text())
     done = set()
@@ -228,4 +248,4 @@ def qa():
 
 
 if __name__ == "__main__":
-    {"extract": extract, "measure": measure, "qa": qa}[sys.argv[1]]()
+    {"extract": extract, "merge": merge, "measure": measure, "qa": qa}[sys.argv[1]]()

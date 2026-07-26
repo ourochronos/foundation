@@ -8,7 +8,7 @@
   "test4": {
     "eid": {
       "landed": 0.92,
-      "ripple": 0.0,
+      "ripple": 0.92,
       "ripple_n": 150
     },
     "token": {
@@ -18,8 +18,8 @@
     }
   },
   "manifest": {
-    "generated_at": "2026-07-26T16:41:34.124894+00:00",
-    "commit": "a42cef33538189f6a26d0866f85f3787f4d75f94",
+    "generated_at": "2026-07-26T16:51:25.957726+00:00",
+    "commit": "f4fb4d34b762ba36f2d9c10ff9a5d9eb4217f84d",
     "dirty": true,
     "command": "scripts/probe_d49_tests34.py",
     "seed": 11,
