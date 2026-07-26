@@ -1,10 +1,10 @@
 {
   "n_relations": 687,
-  "n_canonical": 16,
-  "tau": 0.65,
+  "n_canonical": 116,
+  "tau": 0.75,
   "antonym_control": {
     "pairs": 67,
-    "precision": 0.23880597014925375,
+    "precision": 0.28358208955223885,
     "merged_bad": [
       [
         "attended",
@@ -116,10 +116,6 @@
       ],
       [
         "career start",
-        "first vendor to ship"
-      ],
-      [
-        "career start",
         "friend of"
       ],
       [
@@ -164,14 +160,6 @@
       ],
       [
         "extends into",
-        "started career with"
-      ],
-      [
-        "first vendor to ship",
-        "start"
-      ],
-      [
-        "first vendor to ship",
         "started career with"
       ],
       [
@@ -227,8 +215,8 @@
     "qa": 0.4
   },
   "manifest": {
-    "generated_at": "2026-07-26T18:48:08.429651+00:00",
-    "commit": "21038cbf86f0772d1b23c270e0e3d714bf299a87",
+    "generated_at": "2026-07-26T18:49:33.399645+00:00",
+    "commit": "d641d758b8562ae280497d35cdf1e8f734de524b",
     "dirty": true,
     "command": "scripts/probe_canon_m1.py",
     "seed": 0,

@@ -93,7 +93,11 @@ for i in range(len(rels)):
         if vkind[a] != vkind[b]:
             continue
         evid = len(so_pairs[a] & so_pairs[b]) > 0
-        if evid or S[i, j] >= TAU:
+        # embeddings PROPOSE; frequent relations must show counting
+        # evidence (antonyms are distributional twins — "birth date" vs
+        # "death" merged at every tau until this gate)
+        both_freq = freq[a] >= 3 and freq[b] >= 3
+        if evid or (S[i, j] >= TAU and not both_freq):
             union(i, j)
             merged_pairs.append((a, b, float(S[i, j]), evid))
 canon_of = {}
@@ -154,15 +158,25 @@ for r in rows:
     n += 1
     if not cands:
         continue
-    eids = reg.resolve_query(max(cands, key=len))
+    # D52 machinery, properly: relation-gated resolution, then try ALL
+    # surviving candidates and keep the best hop-1 score ([:1] arbitrary
+    # pick was the QA floor — dozens of same-form eids across questions)
+    eids = reg.resolve_query(max(cands, key=len), chain[0])
     if not eids:
-        continue
-    got = walker.walk(set(eids[:1]), chain)
-    if got is None:
-        continue
+        eids = reg.resolve_query(max(cands, key=len))
     golds = {r["answer"].lower()} | {a.lower() for a in r["aliases"]}
-    obj = all_facts[got]["object"].lower()
-    hit += any(g in obj or obj in g for g in golds if len(g) > 2)
+    best_sc, best_obj = -1e9, None
+    for e in eids[:8]:
+        got = walker.walk({e}, chain)
+        if got is None:
+            continue
+        sc = store.query(walker.pt[chain[0]], {e}, k=1,
+                         id_weight=1.0)[0][1]
+        if sc > best_sc:
+            best_sc, best_obj = sc, all_facts[got]["object"].lower()
+    if best_obj is not None:
+        hit += any(g in best_obj or best_obj in g
+                   for g in golds if len(g) > 2)
 lo, hi = wilson_ci(hit, n)
 print(f"[m1] oracle-chain 2-hop EM = {hit}/{n} = {hit/n:.3f} "
       f"(CI {lo:.2f}-{hi:.2f}) [D61 baseline 0.020; target >=0.40; "
