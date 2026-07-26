@@ -358,8 +358,37 @@ of our A6b fix spec. Pipeline (all stages have recipes):
   [09-k6-protocol.md](09-k6-protocol.md)): MQuAKE-CF-3k, per-case + pooled
   stores, matched-scale local baseline, success criteria fixed before test
   contact. Runs after D49 individuation + training-pause lift.
-- CI workflow + LICENSE: deferred (no GPU runner; license is the user's
-  call on an internal repo).
+- ~~CI deferred~~ → un-parked with Track L (the CPU test suite now exists
+  and runs in 0.1s; gate every push). LICENSE: still the user's call.
+
+## Track L — Path to PoC (added 2026-07-26; goal: confidently build a PoC)
+
+Target demo: feed it documents, ask multi-hop questions in natural
+language, edit facts, watch answers update — at 100k+ facts and
+interactive latency, on the local GPU.
+
+- **L1. Finish K6 tail**: per-case setting (formal both-settings pass),
+  propagation-decay diagnosis (0.745→0.427→0.244 — likely multi-edit
+  chains), B1 single-hop recall, 3-phrasing sensitivity, MQuAKE-T.
+- **L2. Ingest v0** (was "codec v3 natural-text"): passage → propositions
+  → (subject, relation, object) + registry resolution (document = batch,
+  D52 locality). Extraction via local Bonsai-27B or Haiku subagents;
+  quality measured against MuSiQue-answerable before trusting it.
+- **L3. Store engine v2** (un-parked, PQ from J2b): 1024-bit PQ codes +
+  exact GPU top-k; acceptance = J4/K6 batteries reproduce within CI at
+  100k+ facts; latency budget ≤50 ms/query at 1M.
+- **L4. NL answer surface**: walked fact + question → one-sentence answer
+  (decoder_v2t or template+object); abstention/ambiguity phrased honestly.
+- **L5. v4b world — Track F compute + Track I views/conflicts** (the
+  epistemics differentiator: attributed conflicts, views as additive score
+  terms on ONE shared graph, D40 tiers operational).
+- **L6. CI** (un-parked): pytest on push; result-manifest lint (every new
+  results/*.json carries manifest + CIs).
+- **L7. PoC assembly**: CLI/notebook demo wiring L2–L4 over the K6+v4b
+  stores; scripted walkthrough = the demo IS the acceptance test.
+- Paper draft (Track D) proceeds in parallel from logged material.
+- STILL PARKED: T5 self-imitation, dial follow-ups beyond J1/J2b,
+  distributed ANN serving, streaming split-repair.
 
 ## Sequencing
 
