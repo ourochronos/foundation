@@ -1,0 +1,756 @@
+[
+ {
+  "pid": "P26",
+  "label": "spouse",
+  "aliases": [
+   "married to",
+   "wife",
+   "husband",
+   "partner"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P175",
+  "label": "performer",
+  "aliases": [
+   "performed by",
+   "artist",
+   "band",
+   "singer"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P750",
+  "label": "distributed by",
+  "aliases": [
+   "distributor",
+   "distribution"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P112",
+  "label": "founded by",
+  "aliases": [
+   "founder",
+   "co-founder",
+   "established by"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P127",
+  "label": "owned by",
+  "aliases": [
+   "owner",
+   "parent company",
+   "acquired by"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P108",
+  "label": "employer",
+  "aliases": [
+   "works for",
+   "employed by",
+   "company"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P159",
+  "label": "headquarters location",
+  "aliases": [
+   "headquartered in",
+   "head office",
+   "based in"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P176",
+  "label": "manufacturer",
+  "aliases": [
+   "made by",
+   "produced by",
+   "maker"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P131",
+  "label": "located in the administrative territorial entity",
+  "aliases": [
+   "located in",
+   "in the state of",
+   "in the province of",
+   "municipality"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P57",
+  "label": "director",
+  "aliases": [
+   "directed by",
+   "film director"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P50",
+  "label": "author",
+  "aliases": [
+   "written by",
+   "writer",
+   "novelist"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P123",
+  "label": "publisher",
+  "aliases": [
+   "published by"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P264",
+  "label": "record label",
+  "aliases": [
+   "label",
+   "signed to"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P463",
+  "label": "member of",
+  "aliases": [
+   "membership",
+   "belongs to organization"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P36",
+  "label": "capital",
+  "aliases": [
+   "capital city",
+   "seat of government"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P17",
+  "label": "country",
+  "aliases": [
+   "nation",
+   "in country",
+   "country of location"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P19",
+  "label": "place of birth",
+  "aliases": [
+   "born in",
+   "birthplace",
+   "birth city"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P20",
+  "label": "place of death",
+  "aliases": [
+   "died in",
+   "place of demise"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P569",
+  "label": "date of birth",
+  "aliases": [
+   "born on",
+   "birth year",
+   "birth date",
+   "dob"
+  ],
+  "value_kind": "value"
+ },
+ {
+  "pid": "P570",
+  "label": "date of death",
+  "aliases": [
+   "died on",
+   "death year",
+   "death date"
+  ],
+  "value_kind": "value"
+ },
+ {
+  "pid": "P69",
+  "label": "educated at",
+  "aliases": [
+   "attended",
+   "studied at",
+   "alma mater",
+   "school",
+   "university"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P106",
+  "label": "occupation",
+  "aliases": [
+   "profession",
+   "job",
+   "career as"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P39",
+  "label": "position held",
+  "aliases": [
+   "office",
+   "title held",
+   "became",
+   "elected"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P361",
+  "label": "part of",
+  "aliases": [
+   "component of",
+   "belongs to"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P136",
+  "label": "genre",
+  "aliases": [
+   "style",
+   "music genre",
+   "type of music"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P161",
+  "label": "cast member",
+  "aliases": [
+   "starring",
+   "stars",
+   "actor in",
+   "played in"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P86",
+  "label": "composer",
+  "aliases": [
+   "composed by",
+   "music by"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P58",
+  "label": "screenwriter",
+  "aliases": [
+   "screenplay by",
+   "written by (film)"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P162",
+  "label": "producer",
+  "aliases": [
+   "produced by (film)"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P178",
+  "label": "developer",
+  "aliases": [
+   "developed by",
+   "software developer"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P306",
+  "label": "operating system",
+  "aliases": [
+   "runs on",
+   "os"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P31",
+  "label": "instance of",
+  "aliases": [
+   "is a",
+   "type",
+   "kind of"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P27",
+  "label": "country of citizenship",
+  "aliases": [
+   "citizen of",
+   "nationality"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P35",
+  "label": "head of state",
+  "aliases": [
+   "president",
+   "monarch",
+   "leader of country"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P6",
+  "label": "head of government",
+  "aliases": [
+   "prime minister",
+   "mayor",
+   "premier",
+   "chancellor"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P30",
+  "label": "continent",
+  "aliases": [
+   "on continent"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P37",
+  "label": "official language",
+  "aliases": [
+   "language spoken",
+   "official tongue"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P38",
+  "label": "currency",
+  "aliases": [
+   "money",
+   "legal tender"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P47",
+  "label": "shares border with",
+  "aliases": [
+   "borders",
+   "adjacent to",
+   "neighboring"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P276",
+  "label": "location",
+  "aliases": [
+   "located at",
+   "venue",
+   "site"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P400",
+  "label": "platform",
+  "aliases": [
+   "game platform",
+   "console"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P413",
+  "label": "position played",
+  "aliases": [
+   "plays position",
+   "fielding position"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P54",
+  "label": "member of sports team",
+  "aliases": [
+   "plays for",
+   "team",
+   "club"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P641",
+  "label": "sport",
+  "aliases": [
+   "plays sport",
+   "discipline"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P495",
+  "label": "country of origin",
+  "aliases": [
+   "originates from",
+   "made in country"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P740",
+  "label": "location of formation",
+  "aliases": [
+   "formed in",
+   "founded in (place)"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P571",
+  "label": "inception",
+  "aliases": [
+   "founded in",
+   "established",
+   "created in",
+   "year founded",
+   "founding year"
+  ],
+  "value_kind": "value"
+ },
+ {
+  "pid": "P576",
+  "label": "dissolved",
+  "aliases": [
+   "dissolution",
+   "abolished",
+   "defunct since"
+  ],
+  "value_kind": "value"
+ },
+ {
+  "pid": "P1376",
+  "label": "capital of",
+  "aliases": [
+   "is capital of"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P937",
+  "label": "work location",
+  "aliases": [
+   "worked in",
+   "active in"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P800",
+  "label": "notable work",
+  "aliases": [
+   "famous for",
+   "known for",
+   "best known work"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P166",
+  "label": "award received",
+  "aliases": [
+   "won award",
+   "prize",
+   "honored with"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P1411",
+  "label": "nominated for",
+  "aliases": [
+   "nomination"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P102",
+  "label": "member of political party",
+  "aliases": [
+   "party",
+   "political affiliation"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P140",
+  "label": "religion",
+  "aliases": [
+   "faith",
+   "religious affiliation"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P103",
+  "label": "native language",
+  "aliases": [
+   "mother tongue",
+   "first language"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P1303",
+  "label": "instrument",
+  "aliases": [
+   "plays instrument"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P452",
+  "label": "industry",
+  "aliases": [
+   "business sector",
+   "field of business"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P1056",
+  "label": "product or material produced",
+  "aliases": [
+   "produces",
+   "makes product"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P155",
+  "label": "follows",
+  "aliases": [
+   "preceded by",
+   "successor of",
+   "comes after"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P156",
+  "label": "followed by",
+  "aliases": [
+   "succeeded by",
+   "next",
+   "comes before"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P179",
+  "label": "part of the series",
+  "aliases": [
+   "series",
+   "franchise"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P449",
+  "label": "original broadcaster",
+  "aliases": [
+   "aired on",
+   "network",
+   "broadcast by"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P272",
+  "label": "production company",
+  "aliases": [
+   "produced by (company)",
+   "studio"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P364",
+  "label": "original language of film or TV show",
+  "aliases": [
+   "language of film",
+   "filmed in language"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P407",
+  "label": "language of work or name",
+  "aliases": [
+   "written in language"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P1441",
+  "label": "present in work",
+  "aliases": [
+   "appears in",
+   "character in"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P674",
+  "label": "characters",
+  "aliases": [
+   "character",
+   "fictional character"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P170",
+  "label": "creator",
+  "aliases": [
+   "created by",
+   "designed by"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P84",
+  "label": "architect",
+  "aliases": [
+   "designed by (building)"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P138",
+  "label": "named after",
+  "aliases": [
+   "namesake",
+   "eponym",
+   "name origin"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P119",
+  "label": "place of burial",
+  "aliases": [
+   "buried in",
+   "interred at",
+   "grave"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P551",
+  "label": "residence",
+  "aliases": [
+   "lives in",
+   "resident of",
+   "home"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P1830",
+  "label": "owner of",
+  "aliases": [
+   "owns",
+   "possesses"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P355",
+  "label": "subsidiary",
+  "aliases": [
+   "subsidiaries",
+   "owns company"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P749",
+  "label": "parent organization",
+  "aliases": [
+   "parent org",
+   "division of"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P2341",
+  "label": "indigenous to",
+  "aliases": [
+   "native to"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P1532",
+  "label": "country for sport",
+  "aliases": [
+   "represents country"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P286",
+  "label": "head coach",
+  "aliases": [
+   "coached by",
+   "manager (sports)"
+  ],
+  "value_kind": "entity"
+ },
+ {
+  "pid": "P822",
+  "label": "mascot",
+  "aliases": [
+   "team mascot"
+  ],
+  "value_kind": "entity"
+ }
+]
