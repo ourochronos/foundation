@@ -299,9 +299,32 @@ of our A6b fix spec. Pipeline (all stages have recipes):
   retrieval-free accuracy + latency vs the store path; then supersede 100 of
   them in the store and measure crystallized copies answering STALE while
   store answers update. One system, both poles instrumented.
-- **J2. Basis-floor curve**: shrink anchors N and measure interface +
-  EXPRESSIVITY (known + novel content; expression size in bits of basis +
-  symbols) until the knee — the empirical size of the mandatory shared core.
+- **J2. Basis-floor curve** — design pre-registered 2026-07-25 (D51), runs
+  after the training pause. Operationalizes T6's expressivity invariant.
+  - **Basis**: k-means anchors over the whitened 16k corpus,
+    N ∈ {64, 256, 1k, 4k, 16k, 65k}.
+  - **Expression**: matching pursuit of a latent z onto ≤m anchors,
+    m ∈ {1, 2, 4, 8, 16}; expression size = m·log₂(N) bits (+ symbolic
+    identities, which ride outside the basis by D3 and are constant across
+    the sweep). Deliverable: the (N, m) fidelity surface and iso-fidelity
+    contours in BITS — "how big must a message between model and KB be."
+  - **Three graded metrics per (N, m)** (which one knees first is the
+    finding): (1) reconstruction cos(z, ẑ); (2) INTERFACE: v4 single-hop
+    retrieval P@1 querying with ẑ, and v0.6 detection-head agreement on ẑ
+    vs z (CPU-cheap, cached embeddings); (3) DECODE: decoder_v2t EM through
+    ẑ (deferred — GPU eval).
+  - **Novelty tax**: same surface on `ood_sentences_v0` + the K5
+    post-freeze questions; report Δm required for iso-fidelity vs
+    in-corpus — the "size the expression needs" for novel content,
+    measured.
+  - **Knee criterion (pre-registered, no eyeballing)**: smallest N with
+    retrieval-P@1(ẑ, m=8) ≥ 0.97 × full-z performance.
+  - **Falsifiable prediction (from D32 gist-is-topic)**: the INTERFACE knee
+    sits far below the reconstruction knee (retrieval is topic-level; full
+    decode-grade expressivity needs the big basis). If confirmed, T6's
+    "minimal shared core" is small for model↔KB traffic and the expensive
+    basis belongs to the codec boundary only. If refuted — interface needs
+    the big basis too — the crystallization dial loses its cheap end.
 - ~~**J3**~~ ✅ D41 — zero-hand-schema planner BEATS hand schema on holdouts
   (cap_mayor 1.000 vs 0.353; big_pop 0.693 vs 0.553); participation types +
   evidence-proposes/types-dispose scoring. Original: relations-as-entries,
@@ -331,9 +354,10 @@ of our A6b fix spec. Pipeline (all stages have recipes):
   phrasings WERE style-inflated); 9/12 comps hold 0.93–1.00; weak cells are
   one lexical family (mayor-as-"runs" ↔ ceo). Aliases blocked on D46
   individuation.
-- **K6. External benchmark shot**: MQuAKE-after-edit or MuSiQue subset vs a
-  retrieval+LLM baseline at matched latency — the first eval the
-  architecture did not help construct. After J4/K4.
+- **K6. External benchmark shot** — protocol PRE-REGISTERED (D50,
+  [09-k6-protocol.md](09-k6-protocol.md)): MQuAKE-CF-3k, per-case + pooled
+  stores, matched-scale local baseline, success criteria fixed before test
+  contact. Runs after D49 individuation + training-pause lift.
 - CI workflow + LICENSE: deferred (no GPU runner; license is the user's
   call on an internal repo).
 
