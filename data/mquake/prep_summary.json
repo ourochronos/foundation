@@ -1,0 +1,66 @@
+{
+  "n_cases": 3000,
+  "relations": [
+    "P1037",
+    "P106",
+    "P108",
+    "P112",
+    "P1308",
+    "P136",
+    "P140",
+    "P1412",
+    "P159",
+    "P169",
+    "P170",
+    "P175",
+    "P176",
+    "P178",
+    "P19",
+    "P20",
+    "P26",
+    "P27",
+    "P286",
+    "P30",
+    "P35",
+    "P36",
+    "P37",
+    "P40",
+    "P407",
+    "P413",
+    "P449",
+    "P488",
+    "P495",
+    "P50",
+    "P6",
+    "P641",
+    "P69",
+    "P740",
+    "P800",
+    "P937"
+  ],
+  "hop_distribution": {
+    "2": 1000,
+    "3": 1000,
+    "4": 1000
+  },
+  "cases_with_aliases": 2915,
+  "verbalization": "dataset cloze + answer (zero authorial templates)",
+  "file_hashes": {
+    "MQuAKE-CF-3k.json": "ce27a39c39f29835",
+    "MQuAKE-T.json": "58500a1d4aaf9e03"
+  },
+  "manifest": {
+    "generated_at": "2026-07-26T10:40:07.962386+00:00",
+    "commit": "f1aefb3fd0fa0c5dac35894faaea5b7c6af49127",
+    "dirty": true,
+    "command": "scripts/k6_mquake_prep.py",
+    "seed": null,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    }
+  }
+}
