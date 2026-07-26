@@ -2,6 +2,16 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-26 — D58: K6 PRE-REGISTERED VERDICT — PASS in both settings, non-overlapping CIs, ~10× lower latency
+Final table (docs/09 primary criterion; `results/k6_*.json`):
+
+| setting | ours | B1 matched-scale | note |
+|---|---|---|---|
+| pooled, all 1,043 edits live | 0.468 (0.602 clean-regime) @ 34 ms/q | 0.040 @ 336 ms/q | B1 = top-5 retrieval + Qwen3-0.6B |
+| per-case | **0.683** (0.745/0.774/0.537) | 0.352 @ 316 ms/q | B1 reader sees the ENTIRE store — strongest form |
+
+95% CIs non-overlapping in both settings. Edits land at 0.964; sibling-edit contamination (25.5%) quantified as a regime property. Remaining optional: B1 single-hop recall for the strong-pass gap comparison; MQuAKE-T; 3-phrasing sensitivity. **The architecture claim now stands on an external benchmark it did not help construct, against a matched-resource baseline, under pre-registered criteria.**
+
 ## 2026-07-26 — D57: Per-case setting FIXED (0.320 → 0.683) — the store was missing the edits' base facts; bridge starvation named as the tiny-store residual
 **The bug** (traced in 4 hops flat): multi-edit MQuAKE chains edit facts sitting on NEITHER the original nor the visible post-edit path (case 4: the chain enters India only after edit 1, and edit 2 rewrites India's capital — whose base fact "India|P36|New Delhi" my per-case store never contained, so the edit was silently skipped and hop-2 coverage went to 0.00). Pooled never suffered this — everything is global — which fully explains pooled > per-case. **Per-case stores must contain every edit's target_true base fact.**
 **Result** (`k6_percase_clean.py`, `results/k6_percase_clean.json`): per-case 2×2 over suspect artifacts:

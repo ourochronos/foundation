@@ -1,5 +1,7 @@
 # K6 protocol — first external benchmark (pre-registered 2026-07-25)
 
+**STATUS 2026-07-26: PRIMARY CRITERION PASSED in both settings (D58)** — pooled 0.468/0.602-clean vs 0.040; per-case 0.683 vs 0.352 (full-store reader); non-overlapping CIs; ~10× lower latency. Amendments logged in D54–D57.
+
 Written BEFORE any test-set contact. Changes after first contact are
 amendments, logged in decisions.md with the reason (A5 discipline).
 

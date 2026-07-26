@@ -1,0 +1,45 @@
+{
+  "results": {
+    "2hop": {
+      "p1": 0.34183673469387754,
+      "n": 196,
+      "p1_ci95": [
+        0.27904273359588166,
+        0.4107115517981503
+      ]
+    },
+    "3hop": {
+      "p1": 0.3417085427135678,
+      "n": 199,
+      "p1_ci95": [
+        0.2793674551004758,
+        0.41004536751579235
+      ]
+    },
+    "4hop": {
+      "p1": 0.37073170731707317,
+      "n": 205,
+      "p1_ci95": [
+        0.30755827632529487,
+        0.4386608677532795
+      ]
+    }
+  },
+  "overall": 0.3516666666666667,
+  "ms_per_question": 316.153007496517,
+  "note": "reader sees the ENTIRE per-case store (no retrieval loss)",
+  "manifest": {
+    "generated_at": "2026-07-26T16:14:01.451837+00:00",
+    "commit": "6d6ce3d5ea64bf1a115df7dbbd54e0fce2a29114",
+    "dirty": false,
+    "command": "scripts/k6_b1_percase.py",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    }
+  }
+}
