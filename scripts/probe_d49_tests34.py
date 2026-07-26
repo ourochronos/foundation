@@ -99,10 +99,20 @@ for mode in ("eid", "token"):
     new_idx = {}
     for e, ze in zip(edits, Ze):
         if mode == "eid":
-            se = reg.resolve_query(e["subject"], "capital_of")
-            oe = reg.resolve_query(e["new_obj"])
-            ids = ({se[0]} if len(se) == 1 else set()) \
-                | ({oe[0]} if len(oe) == 1 else set())
+            se_l = reg.resolve_query(e["subject"], "capital_of")
+            se = se_l[0] if len(se_l) == 1 else None
+            # edit-object resolution: disambiguate collided names by the
+            # SUBJECT's batch — "capital of X moved to CityY" means the
+            # CityY of X's own world. (Bare lookup: ambiguous for 26% →
+            # ripple 0.740; resolve_write with batch="edit": cross-batch
+            # rule minted fresh eids → ripple 0.000. Provenance wins.)
+            se_batch = reg.entities[se].batch if se else None
+            cands_o = reg.resolve_query(e["new_obj"])
+            same_b = [c for c in cands_o
+                      if reg._get(c).batch == se_batch]
+            oe = same_b[0] if len(same_b) == 1 else (
+                cands_o[0] if len(cands_o) == 1 else None)
+            ids = ({se} if se else set()) | ({oe} if oe else set())
             ni = st.add(ze, [], e["text"])
             st.ids[ni] = set(ids)
             st.content_ids[ni] = set(ids)

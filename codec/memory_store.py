@@ -64,6 +64,10 @@ class MemoryStore:
         self.shadowed.append(False)
         return len(self.texts) - 1
 
+    def vec(self, idx: int):
+        """Entry gist for readouts (PQStore reconstructs from codes)."""
+        return self.Z[idx]
+
     def shadow(self, idx: int) -> None:
         self.shadowed[idx] = True
 

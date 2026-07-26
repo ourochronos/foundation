@@ -91,6 +91,12 @@ class PQStore:
         pq.shadowed = list(store.shadowed)
         return pq
 
+    def vec(self, idx: int) -> np.ndarray:
+        """ADC-grade reconstruction from codes — J2b: classification-grade
+        at 1024 bits (detection agreement 1.000)."""
+        c = self.codes[idx]
+        return np.concatenate([self.books[s][c[s]] for s in range(self.S)])
+
     # ---- supersession (D33/D55 semantics) ---------------------------------
     def shadow(self, idx: int) -> None:
         self.shadowed[idx] = True

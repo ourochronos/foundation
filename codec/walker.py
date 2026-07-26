@@ -66,7 +66,7 @@ class ChannelWalker:
     # ---- readouts -------------------------------------------------------
     def classify(self, fact_idx: int) -> str:
         """Which relation does a stored fact express? argmax over proto+t."""
-        return self.relations[int(np.argmax(self.ptmat @ self.store.Z[fact_idx]))]
+        return self.relations[int(np.argmax(self.ptmat @ self.store.vec(fact_idx)))]
 
     def abstain_hop1(self, q_ids: set[str], relation: str) -> bool:
         """True if hop 1 for `relation` should abstain (coverage OR
