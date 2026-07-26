@@ -1,0 +1,60 @@
+{
+  "per_case": {
+    "2hop": {
+      "p1": 0.4387755102040816,
+      "n": 196,
+      "p1_ci95": [
+        0.37114013021978326,
+        0.5087647544488743
+      ]
+    },
+    "3hop": {
+      "p1": 0.3417085427135678,
+      "n": 199,
+      "p1_ci95": [
+        0.2793674551004758,
+        0.41004536751579235
+      ]
+    },
+    "4hop": {
+      "p1": 0.18536585365853658,
+      "n": 205,
+      "p1_ci95": [
+        0.138132638228986,
+        0.24417433509433653
+      ]
+    }
+  },
+  "per_case_overall": 0.32,
+  "pooled_diagnosis": {
+    "1edit|ok": 76,
+    "multiedit|diverge-hop2": 152,
+    "multiedit|ok": 21,
+    "multiedit|gold-fact-missing": 107,
+    "1edit|diverge-hop2": 87,
+    "1edit|wrong-chain": 14,
+    "1edit|no-plan": 21,
+    "multiedit|wrong-chain": 10,
+    "multiedit|no-plan": 45,
+    "1edit|diverge-hop1": 3,
+    "multiedit|diverge-hop3": 31,
+    "1edit|diverge-hop3": 18,
+    "multiedit|diverge-hop1": 4,
+    "multiedit|diverge-hop4": 8,
+    "1edit|diverge-hop4": 3
+  },
+  "manifest": {
+    "generated_at": "2026-07-26T15:50:28.397979+00:00",
+    "commit": "fdf994a2777da3c4d761d36d34a5a7b206151393",
+    "dirty": true,
+    "command": "scripts/k6_stage4_l1.py",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    }
+  }
+}

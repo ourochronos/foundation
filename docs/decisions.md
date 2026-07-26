@@ -2,6 +2,13 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-26 — D56: L1 diagnosis — a quarter of the mass-edit ceiling is the REGIME, not the system; hop-2 divergence is the residual mechanism target
+**Findings** (`k6_stage4_l1.py`, `results/k6_l1.json` + inline contamination count):
+1. **Sibling-edit contamination**: applying ALL 1,043 test edits at once shadows a gold post-edit path fact for **153/600 (25.5%) of cases** — those golds are unreachable BY CONSTRUCTION in the pooled regime (MQuAKE's labels assume only the case's own edits are active). Effective pooled ceiling ≈ 0.745; our 0.468 is ~63% of achievable. Mass-edit evaluations in the literature share this confound silently; ours is now quantified.
+2. **Failure anatomy (pooled, traced walks)**: dominant residual = **diverge-at-hop-2 right after the edited fact** (239 cases; overlaps heavily with contamination), then no-plan (66), wrong-chain (24), gold-fact-missing (107, multi-edit world-build gaps). Single-edit cases: 76 ok vs 87 hop-2 divergences.
+3. **Per-case setting: 0.320 PROVISIONAL** — below pooled, unexpectedly. A relaxed-gate rerun (0.307) accidentally flattened the answer-type expert (uniform range profiles), so gate starvation vs artifact remains unresolved; needs one clean pass with case-local range profiles before the docs/09 both-settings verdict can be declared.
+**Next mechanism candidates**: (a) exclude sibling-contaminated cases → re-report (clean-regime number); (b) per-case clean pass; (c) world-build gap for mismatched new_single_hops (the 107).
+
 ## 2026-07-26 — D54: First external benchmark — MQuAKE-CF-3k pre-edit multi-hop 0.86/0.87/0.82, after ONE fix: schema by counting, not geometry
 **Setup** (`k6_build_world.py`, `k6_stage2_preedit.py`, `results/k6_preedit.json`; protocol docs/09): 3,957 deduped facts (incl. post-edit-chain real facts), 36 Wikidata relations, case-level 80/20 split, heads (~0.4M) trained on train-split questions only, POOLED store (all test facts as mutual distractors), dataset-provided cloze verbalization (zero authorial templates).
 **First contact**: 2hop 0.556, 3/4hop ≈ 0 with abstain ~1.0. Diagnosis on train split: detection recall@4 was 0.92–0.99 over 36 relations — the tiny head scales to Wikidata fine. The killer was the v4-calibrated COSINE feasibility gate: MQuAKE entities carry 1–3 facts, participation profiles are near-one-hot, and 97% of gold 3/4-hop chains scored under the 0.35 gate (median 0.062) — a SPARSITY artifact, not type mismatch.
