@@ -390,6 +390,48 @@ interactive latency, on the local GPU.
 - STILL PARKED: T5 self-imitation, dial follow-ups beyond J1/J2b,
   distributed ANN serving, streaming split-repair.
 
+## Track M — Pre-build research (adopted with user 2026-07-26; run BEFORE
+## architecting the keeper system)
+
+Target after M: the keeper — a subagent service (ingest / ask / edit /
+subject_brief) over a durable KB, seeded from Wikipedia (Math +
+Epistemology, branching by links), later ArXiv. Scaling via a StoreBackend
+interface with PGVector as the durability tier. Federation is explicitly
+post-PoC; its primitives (views, provenance batches, evidence-gated
+merges, redirects) are already measured at small scale.
+
+- **M1 (=R1). Relation canonicalization** — the D61 gate. Merge relation
+  phrases by paraphrase similarity + argument-distribution agreement;
+  redirects; counting-calibrated. Accept: MuSiQue QA unblocked; canonical
+  relation count sane on real data.
+- **M2 (=R2). Individuation recoverability** — can content geometry
+  (fact-anchor clusters) re-derive the eid partition for same-name
+  entities? Yes → eids are a CACHE of derivable structure (crystallization
+  framing); no → identity genuinely needs the symbolic scaffold. Either
+  way a finding; settles the "eids feel external" question empirically.
+- **M3 (=R3). Wikipedia seed pilot** (AMENDED from ArXiv, user 2026-07-26:
+  Wikipedia first — redirects = gold aliases, wikilinks = gold entity
+  linking, infoboxes = extraction ground truth). Seed: Math +
+  Epistemology; branch by links. Measures: extraction vs infoboxes,
+  canonicalization on real terminology, cross-page linking, Track-I
+  conflicts on real disputed content. ArXiv = M3b after.
+- **M4 (=R4). StoreBackend parity**: interface extracted from the walker's
+  consumption (query/ids/content_ids/vec/supersede/texts/shadowed);
+  MemoryStore/PQStore/PgStore(PGVector) conform; accept = K6+J4 batteries
+  reproduce + latency at 100k/1M (absorbs D62's open GPU bench; pgvector
+  quantization re-measured under the J2b protocol).
+- **M5 (=R5). Grounded synthesis**: subject_brief = retrieve subgraph →
+  summary with per-sentence store citations; faithfulness scored (every
+  sentence traceable), disputed points surfaced via views.
+- **M6 (=R6). Open-relation detection** — retire D61's oracle-chain scope
+  after M1 (canonical relations → trainable det head → MuSiQue end-to-end).
+- **M7 (=R7). Continual soak**: scheduled ingest for a week; J4-protocol
+  invariance checks on the growing store; artifact-refresh cadence. The
+  "worth keeping running" test.
+
+Build gate: M1–M4 have numbers → keeper architecture session (with the
+package restructure that earns itself at that point).
+
 ## Sequencing
 
 Week 1: A1–A4 + B1–B2 (A1 is the long pole; everything else is hours).
