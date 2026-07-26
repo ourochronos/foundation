@@ -1,0 +1,74 @@
+{
+  "variants": {
+    "local": {
+      "overall": 0.67,
+      "by_hop": {
+        "2": 0.7448979591836735,
+        "3": 0.7537688442211056,
+        "4": 0.5170731707317073
+      },
+      "anatomy": {
+        "ok": 402,
+        "no-plan": 181,
+        "wrong-chain": 8,
+        "exec": 9
+      }
+    },
+    "+grng": {
+      "overall": 0.6716666666666666,
+      "by_hop": {
+        "2": 0.7448979591836735,
+        "3": 0.7587939698492462,
+        "4": 0.5170731707317073
+      },
+      "anatomy": {
+        "ok": 403,
+        "no-plan": 181,
+        "wrong-chain": 7,
+        "exec": 9
+      }
+    },
+    "+gbridge": {
+      "overall": 0.6816666666666666,
+      "by_hop": {
+        "2": 0.75,
+        "3": 0.7638190954773869,
+        "4": 0.5365853658536586
+      },
+      "anatomy": {
+        "ok": 409,
+        "exec": 111,
+        "wrong-chain": 15,
+        "no-plan": 65
+      }
+    },
+    "+both": {
+      "overall": 0.6833333333333333,
+      "by_hop": {
+        "2": 0.7448979591836735,
+        "3": 0.7738693467336684,
+        "4": 0.5365853658536586
+      },
+      "anatomy": {
+        "ok": 410,
+        "exec": 111,
+        "wrong-chain": 14,
+        "no-plan": 65
+      }
+    }
+  },
+  "manifest": {
+    "generated_at": "2026-07-26T16:09:39.352520+00:00",
+    "commit": "62291f433ce9f260a1deba0db7eff920ea1476d3",
+    "dirty": true,
+    "command": "scripts/k6_percase_clean.py",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    }
+  }
+}

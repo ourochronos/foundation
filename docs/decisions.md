@@ -2,6 +2,19 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-26 — D57: Per-case setting FIXED (0.320 → 0.683) — the store was missing the edits' base facts; bridge starvation named as the tiny-store residual
+**The bug** (traced in 4 hops flat): multi-edit MQuAKE chains edit facts sitting on NEITHER the original nor the visible post-edit path (case 4: the chain enters India only after edit 1, and edit 2 rewrites India's capital — whose base fact "India|P36|New Delhi" my per-case store never contained, so the edit was silently skipped and hop-2 coverage went to 0.00). Pooled never suffered this — everything is global — which fully explains pooled > per-case. **Per-case stores must contain every edit's target_true base fact.**
+**Result** (`k6_percase_clean.py`, `results/k6_percase_clean.json`): per-case 2×2 over suspect artifacts:
+
+| variant | overall | anatomy |
+|---|---|---|
+| local artifacts | 0.670 | no-plan 181 (bridge starves) |
+| + global rng_cprof | 0.672 | (answer expert was never the problem) |
+| + global bridge | 0.682 | no-plan 181→65, exec 111 (genuinely missing intermediates) |
+| + both | **0.683** (0.745/0.774/0.537 by hop) | |
+
+**Named residuals**: tiny-store BRIDGE starvation (co-occurrence gates need global/train schema when the store is 10 facts — schema is world knowledge, not case knowledge, so using the train-store bridge is principled, not leakage); ~111 exec failures = genuinely missing intermediate facts (same class as pooled's 107 world-build gaps). B1 per-case (reader sees the ENTIRE case store — strongest baseline form) running for the formal both-settings verdict.
+
 ## 2026-07-26 — D56: L1 diagnosis — a quarter of the mass-edit ceiling is the REGIME, not the system; hop-2 divergence is the residual mechanism target
 **Findings** (`k6_stage4_l1.py`, `results/k6_l1.json` + inline contamination count):
 1. **Sibling-edit contamination**: applying ALL 1,043 test edits at once shadows a gold post-edit path fact for **153/600 (25.5%) of cases** — those golds are unreachable BY CONSTRUCTION in the pooled regime (MQuAKE's labels assume only the case's own edits are active). Effective pooled ceiling ≈ 0.745; our 0.468 is ~63% of achievable. Mass-edit evaluations in the literature share this confound silently; ours is now quantified.
