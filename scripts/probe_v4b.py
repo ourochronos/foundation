@@ -57,7 +57,7 @@ for f, zf in zip(facts, Zf):
     store.add(zf, f["entities"] + f["numbers"], f["text"])
 conf_idx = {}
 for cf, zf in zip(b["conflict_facts"], Zcf):
-    i = store.add(zf, cf["entities"] + ["src:meridian"], cf["text"])
+    i = store.add(zf, cf["entities"] + ["srcmeridian"], cf["text"])
     conf_idx[cf["subject"]] = i
 walker = ChannelWalker(store,
                        protos={r: art["rel_entry"][r]["proto"] for r in RELS},
@@ -78,7 +78,7 @@ for i, f in enumerate(facts):
 for q, zq in zip(b["conflict_queries"], Zcq):
     hand = id_tokens([q["subject"]])
     if q["kind"] == "qualified":
-        hand = hand | {"src:meridian"}
+        hand = hand | {"srcmeridian"}
         r = store.query(walker.pt["capital_of"], hand, k=1, id_weight=1.0)
         got = r[0][0]
         q_n += 1
@@ -90,8 +90,8 @@ for q, zq in zip(b["conflict_queries"], Zcq):
         top2 = [x[0] for x in r[:2]]
         same_sr = (len(top2) == 2
                    and all(q["subject"] in store.texts[t] for t in top2)
-                   and (("src:meridian" in store.ids[top2[0]])
-                        != ("src:meridian" in store.ids[top2[1]])))
+                   and (("srcmeridian" in store.ids[top2[0]])
+                        != ("srcmeridian" in store.ids[top2[1]])))
         if q["kind"] == "unqualified_conflicted":
             u_n += 1; u_flag += same_sr
         else:
