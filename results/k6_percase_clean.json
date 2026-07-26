@@ -58,9 +58,9 @@
     }
   },
   "manifest": {
-    "generated_at": "2026-07-26T20:38:19.256665+00:00",
-    "commit": "f0e1f97929a3f209ca1a21a96743ef95e3352152",
-    "dirty": true,
+    "generated_at": "2026-07-26T21:09:02.342020+00:00",
+    "commit": "02a35d97a509d1c4d114f761141aa431b52dc1d5",
+    "dirty": false,
     "command": "scripts/k6_percase_clean.py",
     "seed": 0,
     "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",

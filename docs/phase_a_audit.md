@@ -119,3 +119,28 @@ that reproduction fails are verdicted needs-rerun.
 - `store.query` direct callers outside ChannelWalker (several probes index
   `r[0]` unguarded) would crash loudly on the fixed empty-return — correct
   behavior, but the callers should be swept in the fix step.
+
+## Step 5 — post-fix re-run and deltas
+
+Fixes landed in `02a35d9` (separate from instrumentation `f0e1f97`), with
+11 new tests including query→supersede→query on the LIVE GPU path (runs,
+passes — the first time that path was ever exercised) and
+MemoryStore/PQStore parity with exhaustion cases (39 total, green).
+
+Per-case rerun on FIXED code, audit counters still on:
+
+| variant | before fix | after fix | delta |
+|---|---|---|---|
+| local | 0.670 | 0.670 | **0.000** |
+| +grng | 0.675 | 0.675 | **0.000** |
+| +gbridge | 0.682 | 0.682 | **0.000** |
+| +both | 0.685 | 0.685 | **0.000** |
+
+Counters unchanged (2 zero-finite events in 7,507 queries) — those two
+walks now terminate with an empty result instead of continuing on a
+garbage entry, and both score as misses either way, so no headline number
+moved. Nothing was marked retracted or needs-rerun, so no other re-runs
+were owed. Test-suite note: the first version of the new tests used random
+codebooks that quantize distinct one-hot vectors to the same centroid —
+two tie-artifacts masqueraded as failures until the codebooks were made
+separable; documented in the test file.
