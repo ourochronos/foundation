@@ -30,7 +30,15 @@ CREATE TABLE IF NOT EXISTS {t} (
     ids         text[] NOT NULL DEFAULT '{{}}',
     content_ids text[] NOT NULL DEFAULT '{{}}',
     body        text NOT NULL DEFAULT '',
-    shadowed    boolean NOT NULL DEFAULT false
+    shadowed    boolean NOT NULL DEFAULT false,
+    -- Covalence Lesson 4 (D69): federation-ready columns cost nothing now
+    -- and are near-impossible to retrofit. UNUSED by current semantics.
+    clearance   smallint NOT NULL DEFAULT 0,
+    valid_from  timestamptz,
+    valid_until timestamptz,
+    recorded_at timestamptz NOT NULL DEFAULT now(),
+    invalidated_by integer,
+    source_ref  text
 );
 """
 
@@ -126,7 +134,10 @@ class PgStore:
     def vec(self, idx: int) -> np.ndarray:
         with self._conn.cursor() as cur:
             cur.execute(f"SELECT z FROM {self.table} WHERE idx=%s", (idx,))
-            return np.asarray(cur.fetchone()[0], np.float32)
+            v = cur.fetchone()[0]
+            if isinstance(v, np.ndarray):
+                return v.astype(np.float32)
+            return np.asarray(v.to_list(), np.float32)   # pgvector Vector
 
     def query(self, z_q, query_ids=None, k: int = 5, id_weight: float = 0.5,
               demote_ids=None, exclude=None):

@@ -48,6 +48,14 @@ def test_supersede_semantics():
     assert "x" not in st2.content_ids[new]
 
 
+def test_vec_roundtrip():
+    st = _st()
+    z = _basis(3)
+    i = st.add(z, ["v"], "v")
+    out = st.vec(i)
+    assert out.dtype == np.float32 and np.allclose(out, z, atol=1e-6)
+
+
 def test_exhaustion_returns_empty():
     st = _st()
     a = st.add(_basis(0), ["a"], "a")
