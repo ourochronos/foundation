@@ -2,6 +2,11 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-26 — D65: v0.7b + K5b — the corrected pipeline gives STRONGER transfer evidence and an honest negative
+**v0.7b** (holdout-chain pairs excluded from augmentation per D64/F1; `results/reasoner_v07.json` regenerated): v4 battery — **big_pop 0.360** (the prior 1.000 was coverage, not generalization — F2's suspicion confirmed by ablation), **cap_mayor 0.920/0.880 as a legitimate holdout**, singles 0.993, abstention 0.840.
+**K5b** (fresh-author frozen gate per D64/F2: Haiku-authored, cue-words banned, independent sampling, no component ever saw the strings; `results/k5b_probe.json`): singles **0.975**; **cap_mayor chain 1.000 / P@1 0.933 [CI 0.79–0.98]** and **hq_loc_cap 1.000/0.933** — composition transfer CONFIRMED on a clean instrument with untrained pairs; all trained compositions 0.867–1.000; **big_pop 0.000** — without pair coverage, K5b's phrasings of that composition are not detected at all.
+**Net position, stated plainly**: compositional transfer via typed unification is real (cap_mayor, hq_loc_cap, K6 natural data — three independent instruments). The big_pop detection entanglement is a REAL limit of pooled-gist detection for that relation pair — fixable by coverage (D59 measured that), not yet by generalization. D59's "weaknesses CLOSED by data alone" is retracted in favor of this entry. The "runs"-confusion fix DID survive the fresh instrument (mayor_born/cap_mayor cells at 1.000/0.933 with the cue family banned — the contrast set taught the distinction, not the test strings).
+
 ## 2026-07-26 — D64: Second adversarial review (internal agent) — 14/16 findings accepted; the failure pattern is CRITERIA DRIFT AT ACCEPTANCE, and the fixes are running
 Full report in the session record; ranked F1–F16. The reviewer verified every quoted number against its artifact (all match) and confirmed the negatives are recorded at headline prominence — then correctly indicted the acceptance discipline. Dispositions:
 - **F1 ACCEPTED+FIXED THE RIGHT WAY**: v0.7's pair augmentation had synthesized the cap_mayor holdout pair. Rather than retire it, v0.7b retrains with ALL holdout-chain pairs excluded — cap_mayor AND big_pop stay genuine holdouts. D59's "true holdouts unchanged" was false as written [corrected below].
