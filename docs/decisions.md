@@ -2,6 +2,12 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-27 — D71: M1-rescoped IN PROGRESS — trace killed the D66 mystery; classifier v2 at 0.56 vs 0.85 gate; ceiling named
+**The D66 pinned-at-3/150 break is SOLVED by trace** (5 rows, mandatory-first per house discipline): the chain mapper was cosine-matching MuSiQue's raw "»"-format decomposition strings against carrier sentences — near-random similarity — producing chains like ["abolitionist","abolitionist"]. Format normalization is a precondition for ANY open-text mapping; adopted.
+**M1 classifier arc** (`probe_schema_map_m1.py`, `results/schema_map_m1.json`; audit labels FROZEN pre-classifier in c3acfac): schema_v0 = 81 curated Wikidata properties. v1: τ calibrated on MQuAKE positives ONLY — no rejection class existed, τ collapsed to the floor, coverage 0.979 (mapped garbage), audit 0.40. v2: the 6 MQuAKE relations OUTSIDE schema became legitimate NONE calibration cases (τ→0.75) + per-instance value-kind gating: **audit 0.56 [CI 0.46–0.65] vs the ≥0.85 gate — NOT passed**; coverage 0.720.
+**Two findings with teeth**: (1) the registered ≥70%-mappable target measured EXTRACTION, not the classifier — gold-mappable rate in the frozen audit is 0.57 (43% of extracted triples are honest artifacts: "has", "improved", "struggled"); the coverage number is hereby reinterpreted against that base rate. (2) carrier-cosine classification has a NAMED ceiling on open phrases: textual dates escape the numeric is_value regex ("born"+"August 18, 1926" → place-of-birth), and generic verbs are near everything at any recall-preserving τ.
+**Next (D67 commodity rails, consistent)**: LLM-classification of the 687 distinct phrases into schema_v0 via Haiku agents (classification into a curated inventory is exactly what extraction already trusts an LLM to do), with the frozen audit as the unchanged gate; plus date-aware value detection. Then the MuSiQue QA rerun through mapped relations with the format-normalized chain mapper.
+
 ## 2026-07-27 — D70: M4 ACCEPTED — PgStore meets every registered clause; the store is now a commodity rail
 **Gate results** (`probe_store_pg_m4.py`, `results/store_pg_m4.json`; server tuned per this session: maintenance_work_mem 12GB, 8 parallel maintenance workers, shared_buffers 4GB):
 - **K6 battery through Postgres: EXACT** — 0.745/0.427/0.244 ≡ MemoryStore reference, 39 ms/question (ref 34).
