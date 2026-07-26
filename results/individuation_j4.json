@@ -1,0 +1,238 @@
+{
+  "B_seed43": {
+    "big_pop": {
+      "chain": 0.54,
+      "p1": 0.4066666666666667,
+      "n": 150,
+      "flagged": 0,
+      "collided_n": 33,
+      "collided_p1": 0.0
+    },
+    "cap_mayor": {
+      "chain": 0.9533333333333334,
+      "p1": 0.7066666666666667,
+      "n": 150,
+      "flagged": 0,
+      "collided_n": 54,
+      "collided_p1": 0.37037037037037035
+    },
+    "cap_pop": {
+      "chain": 1.0,
+      "p1": 0.7681818181818182,
+      "n": 220,
+      "flagged": 0,
+      "collided_n": 43,
+      "collided_p1": 0.0
+    },
+    "ceo_born": {
+      "chain": 1.0,
+      "p1": 0.7888888888888889,
+      "n": 180,
+      "flagged": 0,
+      "collided_n": 36,
+      "collided_p1": 0.0
+    },
+    "hq_loc": {
+      "chain": 0.0,
+      "p1": 0.0,
+      "n": 150,
+      "flagged": 0,
+      "collided_n": 36,
+      "collided_p1": 0.0
+    },
+    "hq_loc_cap": {
+      "chain": 0.0,
+      "p1": 0.0,
+      "n": 120,
+      "flagged": 0,
+      "collided_n": 32,
+      "collided_p1": 0.0
+    },
+    "hq_mayor": {
+      "chain": 0.0,
+      "p1": 0.0,
+      "n": 150,
+      "flagged": 0,
+      "collided_n": 55,
+      "collided_p1": 0.0
+    },
+    "hq_pop": {
+      "chain": 1.0,
+      "p1": 0.7944444444444444,
+      "n": 180,
+      "flagged": 1,
+      "collided_n": 37,
+      "collided_p1": 0.0
+    },
+    "loc_big": {
+      "chain": 0.9933333333333333,
+      "p1": 0.8466666666666667,
+      "n": 150,
+      "flagged": 29,
+      "collided_n": 45,
+      "collided_p1": 0.5111111111111111
+    },
+    "loc_cap": {
+      "chain": 1.0,
+      "p1": 0.8333333333333334,
+      "n": 180,
+      "flagged": 33,
+      "collided_n": 56,
+      "collided_p1": 0.5535714285714286
+    },
+    "loc_cap_pop": {
+      "chain": 0.21666666666666667,
+      "p1": 0.23333333333333334,
+      "n": 120,
+      "flagged": 18,
+      "collided_n": 24,
+      "collided_p1": 0.08333333333333333
+    },
+    "mayor_born": {
+      "chain": 1.0,
+      "p1": 0.6944444444444444,
+      "n": 180,
+      "flagged": 37,
+      "collided_n": 69,
+      "collided_p1": 0.2028985507246377
+    }
+  },
+  "A_seed41": {
+    "big_pop": {
+      "chain": 0.5266666666666666,
+      "p1": 0.4266666666666667,
+      "n": 150,
+      "flagged": 0,
+      "collided_n": 32,
+      "collided_p1": 0.0
+    },
+    "cap_mayor": {
+      "chain": 0.9666666666666667,
+      "p1": 0.78,
+      "n": 150,
+      "flagged": 0,
+      "collided_n": 57,
+      "collided_p1": 0.5614035087719298
+    },
+    "cap_pop": {
+      "chain": 1.0,
+      "p1": 0.7636363636363637,
+      "n": 220,
+      "flagged": 0,
+      "collided_n": 47,
+      "collided_p1": 0.0
+    },
+    "ceo_born": {
+      "chain": 1.0,
+      "p1": 0.7833333333333333,
+      "n": 180,
+      "flagged": 1,
+      "collided_n": 39,
+      "collided_p1": 0.02564102564102564
+    },
+    "hq_loc": {
+      "chain": 0.0,
+      "p1": 0.0,
+      "n": 150,
+      "flagged": 0,
+      "collided_n": 32,
+      "collided_p1": 0.0
+    },
+    "hq_loc_cap": {
+      "chain": 0.0,
+      "p1": 0.0,
+      "n": 120,
+      "flagged": 0,
+      "collided_n": 29,
+      "collided_p1": 0.0
+    },
+    "hq_mayor": {
+      "chain": 0.0,
+      "p1": 0.0,
+      "n": 150,
+      "flagged": 0,
+      "collided_n": 47,
+      "collided_p1": 0.0
+    },
+    "hq_pop": {
+      "chain": 1.0,
+      "p1": 0.7722222222222223,
+      "n": 180,
+      "flagged": 0,
+      "collided_n": 40,
+      "collided_p1": 0.0
+    },
+    "loc_big": {
+      "chain": 1.0,
+      "p1": 0.8133333333333334,
+      "n": 150,
+      "flagged": 32,
+      "collided_n": 48,
+      "collided_p1": 0.4375
+    },
+    "loc_cap": {
+      "chain": 1.0,
+      "p1": 0.7722222222222223,
+      "n": 180,
+      "flagged": 37,
+      "collided_n": 49,
+      "collided_p1": 0.2857142857142857
+    },
+    "loc_cap_pop": {
+      "chain": 0.21666666666666667,
+      "p1": 0.25,
+      "n": 120,
+      "flagged": 19,
+      "collided_n": 29,
+      "collided_p1": 0.06896551724137931
+    },
+    "mayor_born": {
+      "chain": 1.0,
+      "p1": 0.7666666666666667,
+      "n": 180,
+      "flagged": 33,
+      "collided_n": 61,
+      "collided_p1": 0.3114754098360656
+    }
+  },
+  "acceptance": {
+    "collided_p1": 0.2393617021276596,
+    "collided_n": 376,
+    "collided_ci95": [
+      0.19900557192316276,
+      0.28498986196296244
+    ],
+    "clean_p1": 0.9771547248182763,
+    "clean_n": 963,
+    "baseline_D46": {
+      "collided": 0.488,
+      "clean": 0.964
+    }
+  },
+  "registry": {
+    "eids": 10858,
+    "surface_names": 8151
+  },
+  "manifest": {
+    "generated_at": "2026-07-26T10:52:35.419394+00:00",
+    "commit": "7290399a131a28419de1240367b367a217dcf430",
+    "dirty": true,
+    "command": "scripts/probe_individuation_j4.py",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    },
+    "input_hashes": {
+      "world41": "b1eb011e5f5b05d3",
+      "world43": "dc79d22242bff34b"
+    },
+    "config": {
+      "heads": "loaded reasoner_v06_det/ans.pt (no training)",
+      "ingest_order": "value-functional -> country-splitting -> rest"
+    }
+  }
+}

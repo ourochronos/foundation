@@ -32,6 +32,7 @@ def is_value(s: str) -> bool:
 @dataclass
 class Entity:
     eid: str
+    batch: str = ""                                     # source of first mention
     forms: set[str] = field(default_factory=set)        # full surface forms
     form_tokens: set[str] = field(default_factory=set)  # token union
     slots: dict = field(default_factory=dict)           # (rel, role) -> count
@@ -56,10 +57,11 @@ class EntityRegistry:
             e = self.entities[e.redirect]
         return e
 
-    def _mint(self, form: str) -> Entity:
+    def _mint(self, form: str, batch: str = "") -> Entity:
         eid = f"e{self._n:05d}"
         self._n += 1
-        e = Entity(eid=eid, forms={form}, form_tokens=id_tokens([form]))
+        e = Entity(eid=eid, batch=batch, forms={form},
+                   form_tokens=id_tokens([form]))
         self.entities[eid] = e
         self.by_form.setdefault(form, set()).add(eid)
         return e
@@ -70,11 +72,18 @@ class EntityRegistry:
     # ---- write-time resolution (docs/08 §2) ------------------------------
     def resolve_write(self, form: str, rel: str, role: str,
                       other: str | None, fact_z: np.ndarray | None = None,
-                      functional: bool = False) -> str:
+                      functional: bool = False, batch: str = "") -> str:
         """Resolve a mention in an incoming fact to an eid (minting if
         needed) and record the fact's contribution. `other` is the other
         argument's eid (or None if it's a value). `functional` marks the
-        (rel, subject) slot as one-object-per-subject."""
+        (rel, subject) slot as one-object-per-subject.
+
+        BATCH LOCALITY (v1.1, D52): within one source batch, a surface form
+        resolves consistently (discourse prior); ACROSS batches, absorption
+        needs positive evidence — a matching functional value/object or
+        neighbor overlap. Same name from a different source is otherwise a
+        new individual. This is the standard entity-linking prior, stated
+        as store policy."""
         cands = self.candidates(form)
         survivors, scored = [], []
         for c in cands:
@@ -82,15 +91,23 @@ class EntityRegistry:
                 held = c.functional.get((rel, "s"))
                 if held is not None and other is not None and held != other:
                     continue                    # conflicting object: distinct
-            score = (len(c.neighbors & {other}) if other else 0) \
-                + 0.5 * bool(c.slots.get((rel, role)))
-            survivors.append(c); scored.append(score)
-        if len(survivors) == 1:
-            e = survivors[0]        # same name, no contradiction: same thing
-        elif survivors and max(scored) > 0:
-            e = survivors[int(np.argmax(scored))]
+            ev = (len(c.neighbors & {other}) if other else 0) \
+                + (1.0 if (functional and role == "s" and other is not None
+                           and c.functional.get((rel, "s")) == other) else 0)
+            same_batch = (c.batch == batch)
+            survivors.append((c, same_batch)); scored.append(
+                ev + (0.25 if same_batch else 0))
+        local = [(c, sb) for (c, sb) in survivors if sb]
+        if len(local) == 1 and (len(survivors) == 1
+                                or scored[[x[0] for x in survivors].index(
+                                    local[0][0])] >= max(scored)):
+            e = local[0][0]         # same source, no contradiction
+        elif survivors and max(scored) >= 1.0:
+            e = survivors[int(np.argmax(scored))][0]   # cross-batch evidence
+        elif len(local) == 1:
+            e = local[0][0]
         else:
-            e = self._mint(form)    # 0 candidates, or several w/o evidence
+            e = self._mint(form, batch)
         e.forms.add(form)
         e.form_tokens |= id_tokens([form])
         self.by_form.setdefault(form, set()).add(e.eid)

@@ -2,6 +2,21 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-26 — D53: J2/J2b — sparse anchor codes FAIL in the whitened space; the shared basis is BLOCK anchors (PQ), with graded knees in the registered order
+**J2 as registered** (`probe_basis_floor_j2.py`, `results/basis_floor_j2.json`): matching-pursuit anchor codes never reach either knee. At m=8 with EVERY train point as an anchor (~110 bits): reconstruction fid 0.684, retrieval 0.395 vs 0.580 full-z, detection agreement 0.905. (Amendment logged: N=65k was impossible — the anchor pool is the 16k corpus; top rung = all-train-points.) **Why**: the whitened space has effective rank ~523 (D10 era) — whitening deliberately spread variance across hundreds of directions, so ≤16 atoms from ANY global dictionary cannot span it. The D51 prediction (interface knee ≪ reconstruction knee) is **unresolvable in this family** — nothing knees — though the graded ORDERING held (detection > retrieval > reconstruction at every N).
+
+**J2b completes it** (`probe_pq_j2b.py`, `results/pq_j2b.json`): product quantization — S subspaces × 256 anchors each, i.e. *block-structured* anchors — at matched bits:
+
+| bits | corpus fid | retrieval P@1 (/0.580) | detection agree |
+|---|---|---|---|
+| 128 | 0.402 | 0.388 | 0.853 |
+| 256 | 0.513 | 0.497 | **0.985** |
+| 512 | 0.661 | 0.545 | **1.000** |
+| 1024 | 0.823 | **0.578** ✓ knee | 1.000 |
+
+**The graded knees land in exactly the registered order**: detection (the reasoner's actual input channel) is lossless at **512 bits**, retrieval crosses its 0.97× knee at **1024 bits**, reconstruction still hasn't kneed at 1024. **T6 quantified**: model↔KB messages cost ~256–512 bits for reasoning-grade traffic, ~1024 for retrieval-grade, more for decode-grade — a ~60× compression from the fp16 latent at the reasoning tier. **Design conclusion**: the crystallization dial's "minimal shared basis" is per-subspace codebooks, not a global sparse dictionary; global anchors (D6's framing) survive as retrieval geometry landmarks, not as the message code. D31's int8/PQ store-quantization tolerances and this result now tell one story.
+**Revisit**: decode-grade knee when GPU eval resumes (deferred metric); learned codebooks only if closed-form PQ proves insufficient downstream.
+
 ## 2026-07-25 — D49: Entity-individuation design adopted (symbolic-channel v2) — identity ≠ surface form, as store content
 **Full design: [08-individuation.md](08-individuation.md).** Decisions being logged: (1) entities get opaque **eids**; fact entries carry eid sets; numbers/years stay surface tokens (values, not individuals — D3 preserved). (2) Surface→eid **resolution is store content** (registry entries with growable surface forms, participation profile, gist anchor) — extends D38 (schema-in-store) and D40 (surface forms are contingent knowledge). (3) Resolver v1 is **closed-form** (surface overlap → type gate → functional-conflict gate → neighborhood score), calibrated by counting on synthetic unions with known ground truth; no learning. (4) Functional-relation conflicts are evidence of DISTINCTNESS unless the text marks change — the individuation/supersession boundary, made explicit. (5) Late-discovered equivalence = **redirect entries** (never rewrite; same philosophy as supersession). (6) Query-time ambiguity is **flagged, not silently resolved**. Acceptance tests pre-registered in the doc; #1 is the D46 J4 rerun with collided-case execution ≥ 0.90. **Rationale**: D46 measured surface-token identity as the sole store-growth cost; D48 blocked aliases on the same root. **Revisit**: if closed-form resolution fails on MQuAKE's natural names (K6), a learned scorer is the fallback, gated by frozen-template discipline.
 

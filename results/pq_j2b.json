@@ -1,0 +1,60 @@
+{
+  "results": {
+    "8": {
+      "bits": 64,
+      "corpus_fid": 0.3442,
+      "ood_fid": 0.2703,
+      "p1": 0.18,
+      "det_agree": 0.6475
+    },
+    "16": {
+      "bits": 128,
+      "corpus_fid": 0.4021,
+      "ood_fid": 0.3636,
+      "p1": 0.3875,
+      "det_agree": 0.8525
+    },
+    "32": {
+      "bits": 256,
+      "corpus_fid": 0.5127,
+      "ood_fid": 0.4974,
+      "p1": 0.4975,
+      "det_agree": 0.985
+    },
+    "64": {
+      "bits": 512,
+      "corpus_fid": 0.6608,
+      "ood_fid": 0.6556,
+      "p1": 0.545,
+      "det_agree": 1.0
+    },
+    "128": {
+      "bits": 1024,
+      "corpus_fid": 0.8232,
+      "ood_fid": 0.8204,
+      "p1": 0.5775,
+      "det_agree": 1.0
+    }
+  },
+  "base": {
+    "p1": 0.58
+  },
+  "interface_knee_bits": 1024,
+  "manifest": {
+    "generated_at": "2026-07-26T10:53:28.645836+00:00",
+    "commit": "7290399a131a28419de1240367b367a217dcf430",
+    "dirty": true,
+    "command": "scripts/probe_pq_j2b.py",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    },
+    "config": {
+      "K_per_sub": 256
+    }
+  }
+}

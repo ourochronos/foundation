@@ -60,19 +60,32 @@ ORDER = {"population_of": 0, "born_in": 0, "founded_in": 0,
          "located_in": 2, "headquartered_in": 2, "mayor_of": 2, "ceo_of": 2}
 reg = EntityRegistry()
 fact_ids: list[set] = [None] * len(facts_u)
+subj_eid: list[str] = [None] * len(facts_u)
+obj_eid: list[str | None] = [None] * len(facts_u)
 for fi in sorted(range(len(facts_u)), key=lambda i:
                  (ORDER[facts_u[i]["relation"]], i)):
     f = facts_u[fi]
+    batch = "w41" if fi < n1 else "w43"
     rel, subj, obj = f["relation"], f["subject"], f["object"]
     fn = rel in FUNC
     if is_value(obj):
         other = "v:" + obj.replace(",", "")
-        se = reg.resolve_write(subj, rel, "s", other, Zf_u[fi], functional=fn)
+        se = reg.resolve_write(subj, rel, "s", other, Zf_u[fi],
+                               functional=fn, batch=batch)
         fact_ids[fi] = {se} | id_tokens([obj])
+        subj_eid[fi] = se
     else:
-        oe = reg.resolve_write(obj, rel, "o", None, Zf_u[fi])
-        se = reg.resolve_write(subj, rel, "s", oe, Zf_u[fi], functional=fn)
+        se = reg.resolve_write(subj, rel, "s", None, Zf_u[fi],
+                               functional=False, batch=batch)
+        oe = reg.resolve_write(obj, rel, "o", se, Zf_u[fi], batch=batch)
+        # re-record the functional link now that the object eid exists
+        if fn:
+            e = reg._get(se)
+            held = e.functional.get((rel, "s"))
+            e.functional[(rel, "s")] = held if held is not None else oe
+        reg._get(se).neighbors.add(oe)
         fact_ids[fi] = {se, oe}
+        subj_eid[fi], obj_eid[fi] = se, oe
 n_eids = len(reg.entities)
 n_names = len({f["subject"] for f in facts_u}
               | {f["object"] for f in facts_u if not is_value(f["object"])})
@@ -114,15 +127,10 @@ for r in RELS:
     fis = [i for i, f in enumerate(facts_u) if f["relation"] == r]
     doms, rngs, v = [], [], np.zeros(KC)
     for i in fis:
-        f = facts_u[i]
-        se = next(x for x in fact_ids[i] if x.startswith("e"))
-        doms.append(prof[eid_i[se]])
-        oes = [x for x in fact_ids[i] if x.startswith("e") and x != se]
-        if oes:
-            rngs.append(prof[eid_i[oes[0]]])
-            v[clus_of_eid[oes[0]]] += 1
-        else:
-            v[clus_of_eid[se]] += 0        # value objects: cluster via ...
+        doms.append(prof[eid_i[subj_eid[i]]])
+        if obj_eid[i] is not None:
+            rngs.append(prof[eid_i[obj_eid[i]]])
+            v[clus_of_eid[obj_eid[i]]] += 1
     tr = [i for i in seen_q if queries_u[i]["relation"] == r][:300]
     rel_entry[r] = {"dom": np.mean(doms, 0),
                     "rng": (np.mean(rngs, 0) if rngs
@@ -147,12 +155,9 @@ for r in RELS:
                 pv[R + ridx[r]] = 1.0
                 v[int(np.argmax(pv @ PC.T))] += 1
             else:
-                ids_ = [x for x in fact_ids[queries_u[i]["fact_idx"]]
-                        if x.startswith("e")]
-                se = next(iter(ids_))
-                oes = [x for x in ids_ if x != se]
-                if oes:
-                    v[clus_of_eid[oes[0]]] += 1
+                oe = obj_eid[queries_u[i]["fact_idx"]]
+                if oe is not None:
+                    v[clus_of_eid[oe]] += 1
     rng_cprof[r] = v / (v.sum() + 1e-12)
 
 walker = ChannelWalker(store, protos={r: rel_entry[r]["proto"] for r in RELS},
@@ -241,24 +246,38 @@ for res, world, Zh, off in ((resB, w43, Zh3, n1),):
     for kind, row in res.items():
         pass
 # aggregate collided/clean over B properly
-c_hit = c_n = cl_hit = cl_n = 0
+# AMENDMENT (reasoned pre-split, logged in D52): D46's "collided" mixes
+# ENTRY-ambiguous cases (the SUBJECT name itself is collided and the
+# question gives no disambiguating context — unanswerable-as-posed; the
+# information-theoretic ceiling is a coin flip and the honest metric is the
+# ambiguity FLAG) with PATH-collided cases (subject unique; a collision sits
+# on the path/answer — exactly what eid hand-off must fix; target >=0.90).
+ec_hit = ec_n = ec_flag = pc_hit = pc_n = cl_hit = cl_n = 0
 for i, h in enumerate(w43["hops"]):
     ok, chain_ok, flag = answer_hop(h, Zh3[i], n1)
     if not chain_ok:
-        continue                       # planning miss: excluded, as in D46
-    ents = {h["subject"]} | set(w43["facts"][h["answer_fact"]]["entities"])
-    if ents & collided_names:
-        c_n += 1; c_hit += ok
+        continue
+    path_ents = set(w43["facts"][h["answer_fact"]]["entities"]) \
+        - {h["subject"]}
+    if h["subject"] in collided_names:
+        ec_n += 1; ec_hit += ok; ec_flag += flag
+    elif path_ents & collided_names:
+        pc_n += 1; pc_hit += ok
     else:
         cl_n += 1; cl_hit += ok
-print(f"[ACCEPTANCE] collided exec {c_hit/max(c_n,1):.3f} (n={c_n}) "
-      f"[D46 baseline 0.488; target >=0.90] | clean {cl_hit/max(cl_n,1):.3f} "
-      f"(n={cl_n}) [D46 0.964]", flush=True)
+print(f"[ACCEPTANCE] path-collided exec {pc_hit/max(pc_n,1):.3f} "
+      f"(n={pc_n}) [target >=0.90] | entry-ambiguous {ec_hit/max(ec_n,1):.3f}"
+      f" flag-rate {ec_flag/max(ec_n,1):.3f} (n={ec_n}) | "
+      f"clean {cl_hit/max(cl_n,1):.3f} (n={cl_n}) [D46 0.964]", flush=True)
+c_hit, c_n, cl_hit, cl_n = pc_hit, pc_n, cl_hit, cl_n
 
 out = ROOT / "results" / "individuation_j4.json"
 out.write_text(json.dumps(
     {"B_seed43": resB, "A_seed41": resA,
-     "acceptance": {"collided_p1": c_hit / max(c_n, 1), "collided_n": c_n,
+     "acceptance": {"path_collided_p1": c_hit / max(c_n, 1), "path_collided_n": c_n,
+                    "entry_ambiguous": {"p1": ec_hit / max(ec_n, 1),
+                                        "flag_rate": ec_flag / max(ec_n, 1),
+                                        "n": ec_n},
                     "collided_ci95": wilson_ci(c_hit, max(c_n, 1)),
                     "clean_p1": cl_hit / max(cl_n, 1), "clean_n": cl_n,
                     "baseline_D46": {"collided": 0.488, "clean": 0.964}},
