@@ -2,6 +2,9 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-26 — D62: PQStore accepted — K6 battery bit-parity at 1024-bit codes, 4× FASTER, 32× smaller; 1M-on-GPU is the one open bench
+**Acceptance** (`probe_store_pq_l3.py`, `results/store_pq_l3.json`; engine `codec/store_pq.py`, D55 semantics preserved, 28 tests): the full K6 pooled post-edit battery through PQ codes — **0.740/0.427/0.215 vs fp32 0.745/0.427/0.244** (all within CI) at **8 ms/question vs 34** (ADC LUT-gathers beat the fp32 matmul at store scale — compression made it FASTER). Codes: 13 MB per 100k entries vs 410 MB fp32. Scale bench (CPU-forced — the GPU was occupied): **24 ms/query at 100k ✓** within the ≤50 ms budget; **1M at 796 ms ✗ on numpy** — the GPU gather path is the designed answer and its bench is the one open L3 item. One API addition forced and landed properly: readouts go through `store.vec(idx)` on both engines (PQ reconstructs from codes — classification-grade per J2b).
+
 ## 2026-07-26 — D61: Ingest v0 — extraction is viable (0.717 step recall); QA is blocked on RELATION CANONICALIZATION, the symmetric twin of entity individuation
 **Pipeline** (`ingest_v0.py`, Haiku-shard extraction per D5): 300 MuSiQue supporting paragraphs → 1,771 triples. **Extraction quality: step-answer recall 0.717, full 2-hop coverage 0.567** (the honest QA ceiling for this subset). Registry ingest with document-as-batch locality worked as designed.
 **QA: 0.020 — and the number that explains it is 688 open relations from 1,771 triples.** Nearly every relation string is a singleton ("is fourth album by" / "album by" / "fourth album"), so per-relation prototypes/operators are fit from 1–3 examples (garbage), and oracle-chain mapping picks among 688 near-duplicates. The store machinery is fine; it was handed an unconsolidated relation vocabulary.
