@@ -1,0 +1,45 @@
+{
+  "post_edit": {
+    "2hop": {
+      "p1": 0.0663265306122449,
+      "n": 196,
+      "p1_ci95": [
+        0.039167474685938605,
+        0.11015879171705258
+      ]
+    },
+    "3hop": {
+      "p1": 0.01507537688442211,
+      "n": 199,
+      "p1_ci95": [
+        0.005139909827913118,
+        0.04337873723462238
+      ]
+    },
+    "4hop": {
+      "p1": 0.03902439024390244,
+      "n": 205,
+      "p1_ci95": [
+        0.019904392827067848,
+        0.0751034983210559
+      ]
+    }
+  },
+  "overall_p1": 0.04,
+  "ms_per_question": 335.57209902831045,
+  "reader": "Qwen3-0.6B, top-5 facts, greedy",
+  "manifest": {
+    "generated_at": "2026-07-26T15:40:49.817933+00:00",
+    "commit": "4a96b8124d2cebc3095e020f802668b9dab5aa7c",
+    "dirty": false,
+    "command": "scripts/k6_b1_baseline.py",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    }
+  }
+}
