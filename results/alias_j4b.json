@@ -1,0 +1,24 @@
+{
+  "canonical_p1": 0.99,
+  "alias_p1": 0.825,
+  "ratio": 0.8333333333333334,
+  "n": 200,
+  "alias_ci95": [
+    0.7663545078991807,
+    0.8713955882539106
+  ],
+  "manifest": {
+    "generated_at": "2026-07-26T15:13:36.179032+00:00",
+    "commit": "d90cf3f39fcdce13d60f26becc2480e73c27078b",
+    "dirty": true,
+    "command": "scripts/probe_alias_j4b.py",
+    "seed": 3,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    }
+  }
+}

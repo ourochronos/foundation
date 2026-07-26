@@ -1,0 +1,52 @@
+{
+  "results": {
+    "2hop": {
+      "p1": 0.5561224489795918,
+      "chain": 0.5561224489795918,
+      "abstain": 0.413265306122449,
+      "n": 196,
+      "p1_ci95": [
+        0.4861493119523306,
+        0.6239378771013999
+      ]
+    },
+    "3hop": {
+      "p1": 0.01507537688442211,
+      "chain": 0.01507537688442211,
+      "abstain": 0.9798994974874372,
+      "n": 199,
+      "p1_ci95": [
+        0.005139909827913118,
+        0.04337873723462238
+      ]
+    },
+    "4hop": {
+      "p1": 0.0,
+      "chain": 0.0,
+      "abstain": 1.0,
+      "n": 205,
+      "p1_ci95": [
+        0.0,
+        0.018394802568070728
+      ]
+    }
+  },
+  "setting": "pooled store, pre-edit, phrasing 0",
+  "manifest": {
+    "generated_at": "2026-07-26T15:14:07.990515+00:00",
+    "commit": "d90cf3f39fcdce13d60f26becc2480e73c27078b",
+    "dirty": true,
+    "command": "scripts/k6_stage2_preedit.py",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    },
+    "input_hashes": {
+      "world": "47e304445a4b8ce0"
+    }
+  }
+}
