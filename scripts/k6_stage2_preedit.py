@@ -28,7 +28,7 @@ KC = 8
 torch.manual_seed(0)
 w = json.loads((ROOT / "data" / "mquake" / "world_cf3k.json").read_text())
 facts, queries, hops = w["facts"], w["queries"], w["hops"]
-z = np.load(ROOT / "results" / "mquake_cf3k_emb.npz")
+z = np.load(ROOT / "results" / "mquake_cf3k_emb_v2.npz")
 Zf, Zq, Zh = z["Zf"], z["Zq"], z["Zh"]
 RELS = sorted({f["relation"] for f in facts})
 R = len(RELS)

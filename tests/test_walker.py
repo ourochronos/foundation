@@ -94,3 +94,15 @@ def test_classify(world):
     store, w, f = world
     assert w.classify(f["a_in_y"]) == "r1"
     assert w.classify(f["cap_y"]) == "r2"
+
+
+def test_hand_off_excludes_superseded_address_ids(world):
+    """After supersession the old object stays ADDRESSABLE but must not
+    ride the hand-off (the D55 MQuAKE propagation bug)."""
+    store, w, f = world
+    z = store.Z[f["cap_y"]].copy()
+    ni = store.add(_unit(_basis(1) + 0.05 * _basis(9)),
+                   ["landY", "cityNEW"], "capital of landY is cityNEW")
+    store.supersede(f["cap_y"], ni)
+    assert "cityc" in store.ids[ni]            # addressable by old object
+    assert "cityc" not in store.content_ids[ni]  # but never handed off

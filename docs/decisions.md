@@ -2,6 +2,18 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-26 — D54: First external benchmark — MQuAKE-CF-3k pre-edit multi-hop 0.86/0.87/0.82, after ONE fix: schema by counting, not geometry
+**Setup** (`k6_build_world.py`, `k6_stage2_preedit.py`, `results/k6_preedit.json`; protocol docs/09): 3,957 deduped facts (incl. post-edit-chain real facts), 36 Wikidata relations, case-level 80/20 split, heads (~0.4M) trained on train-split questions only, POOLED store (all test facts as mutual distractors), dataset-provided cloze verbalization (zero authorial templates).
+**First contact**: 2hop 0.556, 3/4hop ≈ 0 with abstain ~1.0. Diagnosis on train split: detection recall@4 was 0.92–0.99 over 36 relations — the tiny head scales to Wikidata fine. The killer was the v4-calibrated COSINE feasibility gate: MQuAKE entities carry 1–3 facts, participation profiles are near-one-hot, and 97% of gold 3/4-hop chains scored under the 0.35 gate (median 0.062) — a SPARSITY artifact, not type mismatch.
+**Fix (D38 doctrine again)**: replace profile-cosine links with a store-derived **co-occurrence gate** — `link_ok(A,B)` iff some entity bridges obj(A)→subj(B); entry gate = subject-has-slot; chain cap 4, candidates 5 (planner parameterized in `v06_pipeline.make_planner`). **Result: 2hop 0.862, 3hop 0.874, 4hop 0.820** (abstain 0.08–0.16), test cases, phrasing 0. Natural-language multi-hop over real facts, frozen encoder, closed-form artifacts, 0.4M learned params.
+**Law confirmed on external data**: every learned component transferred; the one hand-calibrated GEOMETRIC threshold did not. Schema knowledge (which relations chain) is counting over the store, not latent geometry.
+
+## 2026-07-26 — D55: Addresses and hand-off content must SEPARATE at supersession — mass-edit propagation 0.177 → 0.468
+**The pre-registered headline experiment** (`k6_stage3_edits.py`, `results/k6_postedit.json`): ALL 1,043 test-case counterfactual edits applied at once via `supersede` to the pooled store (the regime where parameter-editing collapses), then post-edit multi-hop.
+**Edits LAND: 0.964** single-hop recall at the edited address (supersession + address inheritance works at MQuAKE scale). But first-run propagation collapsed compounding-per-hop (0.388/0.111/0.039): `supersede`'s id-UNION — correct for ADDRESSING ("who replaced X?" still finds the entry) — sent BOTH old and new objects down the walker's hand-off, so hop k+1 retrieved the old world's fact about USA as often as Croatia's. This is the answer to A6/D33's open question: **id-set union pollutes, specifically the hand-off role.**
+**Mechanism (landed in codec/ with tests, per D45)**: `MemoryStore.content_ids` — an entry's OWN entities — separated from `ids` (address). `supersede` unions addresses only; `ChannelWalker` hands off content only. D33's law extended: keys/values separate at supersession, and so do addresses/content.
+**Post-edit result: 2hop 0.745 / 3hop 0.427 / 4hop 0.244, overall 0.468 @ 34 ms/question**; propagation gap 0.964−0.468 = 0.495. Per-hop decay says residual compounding remains (multi-edit chains, counterfactual-fact addressing) — next diagnosis target. B1 matched-scale baseline (same store, Qwen3-0.6B reader) running; per-case store setting and success-criteria verdict when it lands.
+
 ## 2026-07-26 — D52: Individuation ACCEPTED — the growth tax is closed, and what remains is flagged genuine ambiguity
 **Result** (`probe_individuation_j4.py` rerun of the D46 protocol, `results/individuation_j4.json`; heads loaded from D44 checkpoints — no training): with the D49 registry at write time, on gold-planned seed-43 hops over the 2× store:
 

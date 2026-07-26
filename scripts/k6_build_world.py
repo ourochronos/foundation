@@ -36,6 +36,17 @@ for c in cases:
     tl, tr = c["orig"]["triples_labeled"], c["orig"]["triples"]
     if len(tl) != len(c["single_hops"]):
         continue
+    # post-edit chains traverse REAL facts that only appear in
+    # new_single_hops (facts of the unedited world beyond the edit point);
+    # they belong in the base store. Counterfactual edit_triples do NOT —
+    # they enter only via supersession at the edits stage.
+    edit_keys = {tuple(t) for t in c["orig"]["edit_triples"]}
+    ntl, ntr = c["orig"]["new_triples_labeled"], c["orig"]["new_triples"]
+    if len(ntl) == len(c["new_single_hops"]):
+        for (sl, rl, ol), t, h in zip(ntl, ntr, c["new_single_hops"]):
+            if tuple(t) not in edit_keys:
+                add_fact(sl, t[1], ol,
+                         f"{h['cloze'].strip()} {h['answer'].strip()}.")
     chain, last = [], None
     ok = True
     for (sl, rl, ol), (s, r, o), h in zip(tl, tr, c["single_hops"]):
@@ -64,7 +75,7 @@ print(f"[k6-world] {len(facts)} unique facts, {len(queries)} single-q, "
       f"{len(hops)} hop-q, {len(rels)} relations", flush=True)
 
 import v06_pipeline as P
-cache = ROOT / "results" / "mquake_cf3k_emb.npz"
+cache = ROOT / "results" / "mquake_cf3k_emb_v2.npz"
 if not cache.exists():
     Zf = P.embed_texts([f["text"] for f in facts])
     Zq = P.embed_texts([q["text"] for q in queries])

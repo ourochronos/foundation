@@ -40,7 +40,13 @@ def id_tokens(strings: list[str]) -> set[str]:
 class MemoryStore:
     dim: int = 1024
     Z: np.ndarray = None                    # [N, dim] unit gists
-    ids: list[set] = field(default_factory=list)
+    ids: list[set] = field(default_factory=list)         # ADDRESS ids
+    content_ids: list[set] = field(default_factory=list)  # the entry's OWN
+    # entities — what a walk may hand off. Diverges from `ids` only after
+    # supersession: the old object must stay ADDRESSABLE ("who replaced
+    # X?") but must NOT ride the hand-off into the next hop (measured on
+    # MQuAKE: blanket union made post-edit walks carry old+new objects,
+    # compounding to 0.39/0.11/0.04 over 2/3/4 hops — D55).
     texts: list[str] = field(default_factory=list)
     shadowed: list[bool] = field(default_factory=list)
 
@@ -51,7 +57,9 @@ class MemoryStore:
                              f"got {z.shape}")
         z = (z / (np.linalg.norm(z) + 1e-12))[None]
         self.Z = z if self.Z is None else np.concatenate([self.Z, z])
-        self.ids.append(id_tokens(identities))
+        toks = id_tokens(identities)
+        self.ids.append(toks)
+        self.content_ids.append(set(toks))
         self.texts.append(text)
         self.shadowed.append(False)
         return len(self.texts) - 1
@@ -72,6 +80,8 @@ class MemoryStore:
         """
         self.Z[new_idx] = self.Z[old_idx]
         self.ids[new_idx] = self.ids[new_idx] | self.ids[old_idx]
+        # content_ids deliberately NOT unioned — hand-off carries only the
+        # new entry's own entities
         self.shadowed[old_idx] = True
 
     def query(self, z_q: np.ndarray, query_ids: set[str] | None = None,

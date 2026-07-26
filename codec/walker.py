@@ -101,5 +101,5 @@ class ChannelWalker:
             cov = len(hand & self.store.ids[cur]) / max(len(hand), 1)
             if k == 0 and cov < self.cov_abstain:
                 return None
-            hand = self.store.ids[cur] - hand
+            hand = self.store.content_ids[cur] - hand
         return cur

@@ -1,0 +1,54 @@
+{
+  "post_edit": {
+    "2hop": {
+      "p1": 0.7448979591836735,
+      "abstain": 0.07653061224489796,
+      "n": 196,
+      "p1_ci95": [
+        0.679567992175842,
+        0.8008124691495278
+      ]
+    },
+    "3hop": {
+      "p1": 0.4271356783919598,
+      "abstain": 0.10050251256281408,
+      "n": 199,
+      "p1_ci95": [
+        0.360426864802959,
+        0.49660443449659314
+      ]
+    },
+    "4hop": {
+      "p1": 0.24390243902439024,
+      "abstain": 0.16585365853658537,
+      "n": 205,
+      "p1_ci95": [
+        0.19017998996695418,
+        0.3070466162264479
+      ]
+    }
+  },
+  "overall_p1": 0.4683333333333333,
+  "edit_landed_single": 0.9635666347075743,
+  "propagation_gap": 0.495233301374241,
+  "ms_per_question": 33.82662612285154,
+  "n_edits": 1043,
+  "setting": "pooled store, ALL test edits applied at once",
+  "manifest": {
+    "generated_at": "2026-07-26T15:36:11.010102+00:00",
+    "commit": "bdd2756886484206accbdd3cfc899b6cfe82a7d4",
+    "dirty": true,
+    "command": "scripts/k6_stage3_edits.py",
+    "seed": 0,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+rocm7.2",
+      "gpu": "AMD Radeon RX 9070"
+    },
+    "input_hashes": {
+      "world": "f5139bd5325afc95"
+    }
+  }
+}
