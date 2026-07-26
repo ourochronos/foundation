@@ -18,8 +18,11 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import gen_closed_world as G
 from gen_closed_world_v3 import FACT_T, SURNAMES, TOWN_PREFIX, city_name, person_name
 
-OUT = ROOT / "data" / "closed_world_v4.json"
-rng = random.Random(41)
+import os
+SEED = int(os.environ.get("WORLD_SEED", "41"))
+OUT = ROOT / "data" / (f"closed_world_v4.json" if SEED == 41
+                       else f"closed_world_v4_s{SEED}.json")
+rng = random.Random(SEED)
 G.rng = rng
 
 FACT_T = dict(FACT_T)

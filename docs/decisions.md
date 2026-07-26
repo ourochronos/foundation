@@ -2,6 +2,34 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-25 — D46: Store growth is FREE except where entities lack individuation (J4 — planning invariant at 2×, execution loss is 100% surface-name collisions)
+**Protocol** (`scripts/probe_store_growth.py`, `results/store_growth_j4.json`): v0.6 heads + participation-cluster basis PC trained on seed-41 and FROZEN; store doubled with seed-43's facts (8,859 → 17,715; 649 cross-seed surface-name collisions); every store-side artifact recomputed closed-form over the union (participation vectors, dom/rng signatures, prototypes, operators, range-cluster profiles).
+
+**Result A (seed-41 questions vs 2× store): planning is PERFECTLY growth-invariant — chain-correct delta 0.000 on every composition.** The learned heads never see the store, and the recomputed signatures/prototypes stay aligned under the frozen basis. Execution pays 4–14 points (singles 0.993→0.963; abstention flat at 0.830).
+**Result B (seed-43 questions — subjects the heads NEVER saw): full transfer.** Chains 0.953–1.000 matching seed-41's pattern (holdouts included: cap_mayor 0.953, hq_loc_cap 1.000, big_pop 0.427 mirroring its known detection weakness); singles 0.970; abstention 0.840. The reasoner works on new store content with ZERO retraining — the continual-learning claim of D38 §2, measured end-to-end.
+**The execution tax is entirely collisions, not crowding**: splitting B's gold-planned cases by whether the subject/answer entities have a cross-world name collision — collided **0.488** (n=205) vs clean **0.964** (n=615). Clean cases at 2× are statistically the 1× rate. The id channel identifies entities by SURFACE TOKENS (`id_tokens`), so two entities named "North Halmelton" are indistinguishable *by construction* — this is the known symbolic-channel design gap (same root as K5's alias exclusion), now measured as the sole scaling cost.
+**Design consequence**: the next symbolic-channel upgrade is entity INDIVIDUATION (unique entity ids with surface-form → id resolution as store content, which also buys aliasing), not anything in the continuous machinery.
+**Revisit**: when the individuation mechanism lands; rerun this exact probe as its acceptance test.
+
+## 2026-07-25 — D47: The v0.6 results replicate across world seeds (K4 — no seed-41 luck)
+**Protocol** (`scripts/probe_multiseed_k4.py`, `results/multiseed_k4.json`): full pipeline (own store artifacts, own cluster basis, own heads) retrained per seed on three independently generated worlds (41/43/44). Headline spread:
+
+| metric | seeds 41 / 43 / 44 |
+|---|---|
+| single P@1 | 0.993 / 0.988 / 0.988 |
+| cap_mayor (holdout) chain | 0.960 / 0.947 / 0.967 |
+| hq_loc_cap (holdout) chain | 1.000 / 1.000 / 1.000 |
+| big_pop (holdout) chain | 0.420 / 0.440 / 0.407 |
+| no_answer abstain | 0.835 / 0.835 / 0.850 |
+
+Every claim in D44 is stable to ±0.02 across seeds — including the negative one: **big_pop's detection failure replicates (0.407–0.440), so it is structural** (population_of under-detection when paired with largest_city_of), not sampling noise. Multi-seed + CI reporting is now part of the standard protocol (K4 ✅).
+
+## 2026-07-25 — D48: Post-freeze templates cost 9 points on singles and expose ONE lexical confusion family (K5)
+**Protocol** (`scripts/probe_frozen_templates_k5.py`, `results/frozen_templates_k5.json`): 27 single + 24 hop templates written AFTER every component froze, in registers the generator bank never used (telegraphic, bureaucratic, colloquial-indirect). 360 single + 360 hop questions.
+**Results**: singles **0.900** (vs 0.993 on held-out phrasings — the held-out-phrasing eval WAS inflated by shared authorial style, as suspected in the A-track and by the external review). Compositions: chain 1.000 and P@1 0.933–1.000 on **9/12** — the structural machinery (types, unification, walk) is register-indifferent wherever detection holds. The three weak cells are one phenomenon: mayor_born 0.700 and cap_mayor 0.500 both use templates phrasing mayor as "the official who runs / at the top of" — colliding with ceo_of's cue family; big_pop 0.500 is its D44 weakness (actually *above* its in-distribution 0.42).
+**Reading**: template-register sensitivity lives entirely in the 265K detection head over a pooled gist; sharper templates → graceful degradation, not collapse. Entity ALIASES remain explicitly out of scope until the D46 individuation mechanism exists (same root cause).
+**Revisit**: v0.7 detector (span-fused features or composition-augmented training) should be accepted only if it closes big_pop AND the "runs" confusion under these frozen templates.
+
 ## 2026-07-25 — D45: External review integrated (GPT 5.6 Sol) — consolidation over scope
 **Context**: independent review of `main@96405b1`. Verdict: research thinking/methodology strong, reproducibility weak, and one sharp engineering finding — **the claimed system and the codebase were not the same thing**: the D43 executor lived in a probe script while `HopEnv.step()` still shipped the defective walk. Accepted almost wholesale; actions below. The review's phrasing of the current claim is adopted as the program's official one: *"the channel-separated planner and executor solve a deliberately adversarial synthetic relational world and generalize to selected unseen compositions"* — not "composition solved."
 

@@ -310,10 +310,10 @@ of our A6b fix spec. Pipeline (all stages have recipes):
   gist/hybrid; DE matches). Gist is the interlingua; identities transfer as
   verbatim symbols. Original: FR/DE paraphrase queries vs the English store;
   gist vs identity contribution measured separately.
-- **J4. Store-growth invariance**: v0.6 evaluated after doubling the store +
-  online operator/type/prototype updates — the continual-learning end-to-end
-  check (D38 §2). The v0.6 heads read only the question, so this isolates
-  the store-derived artifacts (participation types, protos, operators).
+- ~~**J4**~~ ✅ D46 — planning perfectly growth-invariant at 2× (chain Δ
+  0.000 everywhere); novel-entity questions transfer fully with zero
+  retraining; execution tax is 100% surface-name collisions (0.488 collided
+  vs 0.964 clean) → next symbolic upgrade = entity individuation.
 
 ## Track K — Consolidation (D45, external review 2026-07-25)
 
@@ -325,13 +325,12 @@ of our A6b fix spec. Pipeline (all stages have recipes):
   backfill on next regeneration.
 - ~~**K3. Tests**~~ ✅ `tests/` 16 passing (walker regression on the two
   measured failure modes, store invariants, env guards) + pyproject pins.
-- **K4. Multi-seed + CI reporting**: rerun the J3/v0.6 pipeline on ≥3 world
-  seeds; report spread, not just seed-41 point estimates. Fold into J4's
-  protocol (growth test doubles the store with a DIFFERENT seed's facts).
-- **K5. Frozen-generator eval**: hold the system fixed; generate new
-  phrasing templates + entity aliases AFTER freezing; measure the drop.
-  (The review's "fully unseen templates" condition — stronger than
-  held-out-phrasings, which shared the template bank's style.)
+- ~~**K4**~~ ✅ D47 — all D44 claims stable ±0.02 across seeds 41/43/44;
+  big_pop's failure replicates (structural, not luck).
+- ~~**K5**~~ ✅ D48 — post-freeze templates: singles 0.993→0.900 (held-out
+  phrasings WERE style-inflated); 9/12 comps hold 0.93–1.00; weak cells are
+  one lexical family (mayor-as-"runs" ↔ ceo). Aliases blocked on D46
+  individuation.
 - **K6. External benchmark shot**: MQuAKE-after-edit or MuSiQue subset vs a
   retrieval+LLM baseline at matched latency — the first eval the
   architecture did not help construct. After J4/K4.
