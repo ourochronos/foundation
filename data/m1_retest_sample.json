@@ -1,0 +1,802 @@
+[
+ {
+  "page": "Terence Tao",
+  "statement": "Terence Tao P166 Fields Medal in 2006",
+  "subject": "Terence Tao",
+  "pid": "P166",
+  "object": "Fields Medal in 2006",
+  "audit_correct": true
+ },
+ {
+  "page": "French Academy of Sciences",
+  "statement": "Napoleon Bonaparte was elected to the academy in 1798",
+  "subject": "Napoleon Bonaparte",
+  "pid": "P463",
+  "object": "French Academy of Sciences",
+  "audit_correct": true
+ },
+ {
+  "page": "Claude Shannon",
+  "statement": "Claude Shannon | P570 | February 24, 2001",
+  "subject": "Claude Shannon",
+  "pid": "P570",
+  "object": "February 24, 2001",
+  "audit_correct": true
+ },
+ {
+  "page": "Euclid",
+  "statement": "Euclid's system is now referred to as Euclidean geometry.",
+  "subject": "Euclid",
+  "pid": "P170",
+  "object": "Euclidean geometry",
+  "audit_correct": true
+ },
+ {
+  "page": "Carl Friedrich Gauss",
+  "statement": "Carl Friedrich Gauss | P106 | astronomer",
+  "subject": "Carl Friedrich Gauss",
+  "pid": "P106",
+  "object": "astronomer",
+  "audit_correct": true
+ },
+ {
+  "page": "John Edensor Littlewood",
+  "statement": "John Edensor Littlewood was born on 9 June 1885.",
+  "subject": "John Edensor Littlewood",
+  "pid": "P569",
+  "object": "9 June 1885",
+  "audit_correct": true
+ },
+ {
+  "page": "University of Cambridge",
+  "statement": "John Maynard Keynes was educated at University of Cambridge",
+  "subject": "John Maynard Keynes",
+  "pid": "P69",
+  "object": "University of Cambridge",
+  "audit_correct": true
+ },
+ {
+  "page": "Reason",
+  "statement": "Reason is philosophical concept.",
+  "subject": "Reason",
+  "pid": "P31",
+  "object": "philosophical concept",
+  "audit_correct": true
+ },
+ {
+  "page": "David Hilbert",
+  "statement": "David Hilbert was elected to the American Philosophical Society in 1932.",
+  "subject": "David Hilbert",
+  "pid": "P463",
+  "object": "American Philosophical Society",
+  "audit_correct": true
+ },
+ {
+  "page": "Al-Khwarizmi",
+  "statement": "Al-Khwarizmi's birthplace was Khwarazm",
+  "subject": "Al-Khwarizmi",
+  "pid": "P19",
+  "object": "Khwarazm",
+  "audit_correct": true
+ },
+ {
+  "page": "Paul Erd\u0151s",
+  "statement": "Paul Erd\u0151s developed the probabilistic method.",
+  "subject": "Probabilistic method",
+  "pid": "P170",
+  "object": "Paul Erd\u0151s",
+  "audit_correct": true
+ },
+ {
+  "page": "Fallibilism",
+  "statement": "Karl Popper refers to fallibilism as the notion that knowledge might turn out to be false.",
+  "subject": "Karl Popper",
+  "pid": "P50",
+  "object": "fallibilism theory",
+  "audit_correct": false
+ },
+ {
+  "page": "Gottfried Wilhelm Leibniz",
+  "statement": "Leibniz developed differential and integral calculus",
+  "subject": "Gottfried Wilhelm Leibniz",
+  "pid": "P50",
+  "object": "differential and integral calculus",
+  "audit_correct": false
+ },
+ {
+  "page": "Philosophy",
+  "statement": "Aristotle was a philosopher.",
+  "subject": "Aristotle",
+  "pid": "P106",
+  "object": "philosopher",
+  "audit_correct": true
+ },
+ {
+  "page": "Set theory",
+  "statement": "Bernard Bolzano P50 Paradoxes of the Infinite",
+  "subject": "Bernard Bolzano",
+  "pid": "P50",
+  "object": "Paradoxes of the Infinite",
+  "audit_correct": true
+ },
+ {
+  "page": "Computer science",
+  "statement": "Ada Lovelace's algorithm is considered the first published algorithm tailored for implementation on a computer.",
+  "subject": "Ada Lovelace",
+  "pid": "P571",
+  "object": "1843",
+  "audit_correct": false
+ },
+ {
+  "page": "Foundationalism",
+  "statement": "Descartes wrote Meditations",
+  "subject": "Ren\u00e9 Descartes",
+  "pid": "P50",
+  "object": "Meditations",
+  "audit_correct": true
+ },
+ {
+  "page": "Emmy Noether",
+  "statement": "Emmy Noether taught graduate and post-doctoral women at Bryn Mawr College including Marie Johanna Weiss and Olga Taussky-Todd.",
+  "subject": "Emmy Noether",
+  "pid": "P108",
+  "object": "Bryn Mawr College",
+  "audit_correct": true
+ },
+ {
+  "page": "University of G\u00f6ttingen",
+  "statement": "Klemens Wenzel Lothar von Metternich was educated at University of G\u00f6ttingen",
+  "subject": "Klemens Wenzel Lothar von Metternich",
+  "pid": "P69",
+  "object": "University of G\u00f6ttingen",
+  "audit_correct": true
+ },
+ {
+  "page": "Andrey Kolmogorov",
+  "statement": "Andrey Kolmogorov made foundational contributions to probability",
+  "subject": "Andrey Kolmogorov",
+  "pid": "P800",
+  "object": "probability theory",
+  "audit_correct": true
+ },
+ {
+  "page": "G. H. Hardy",
+  "statement": "Godfrey Harold Hardy was born on 7 February 1877.",
+  "subject": "Godfrey Harold Hardy",
+  "pid": "P569",
+  "object": "7 February 1877",
+  "audit_correct": true
+ },
+ {
+  "page": "Leonhard Euler",
+  "statement": "Leonhard Euler was a Swiss polymath.",
+  "subject": "Leonhard Euler",
+  "pid": "P27",
+  "object": "Swiss",
+  "audit_correct": true
+ },
+ {
+  "page": "Georg Cantor",
+  "statement": "Georg Cantor was born in Saint Petersburg, Russian Empire.",
+  "subject": "Georg Cantor",
+  "pid": "P19",
+  "object": "Saint Petersburg, Russian Empire",
+  "audit_correct": true
+ },
+ {
+  "page": "Thomas Kuhn",
+  "statement": "Thomas Samuel Kuhn P31 American historian and philosopher of science",
+  "subject": "Thomas Samuel Kuhn",
+  "pid": "P31",
+  "object": "American historian and philosopher of science",
+  "audit_correct": false
+ },
+ {
+  "page": "Western philosophy",
+  "statement": "Thales of Miletus was born in Ionia",
+  "subject": "Thales of Miletus",
+  "pid": "P19",
+  "object": "Ionia",
+  "audit_correct": true
+ },
+ {
+  "page": "Mathematical proof",
+  "statement": "Hypatia of Alexandria lived c. 350 CE.",
+  "subject": "Hypatia of Alexandria",
+  "pid": "P569",
+  "object": "350 CE",
+  "audit_correct": false
+ },
+ {
+  "page": "Continuous function",
+  "statement": "Karl Weierstrass considered that a function is continuous at a point.",
+  "subject": "Karl Weierstrass",
+  "pid": "P50",
+  "object": "theory of continuity at a point",
+  "audit_correct": false
+ },
+ {
+  "page": "University of Cambridge",
+  "statement": "Stephen Hawking was educated at University of Cambridge",
+  "subject": "Stephen Hawking",
+  "pid": "P69",
+  "object": "University of Cambridge",
+  "audit_correct": true
+ },
+ {
+  "page": "Economics",
+  "statement": "Alfred Marshall provided a widely cited definition in his textbook Principles of Economics in 1890.",
+  "subject": "Alfred Marshall",
+  "pid": "P800",
+  "object": "Principles of Economics",
+  "audit_correct": true
+ },
+ {
+  "page": "Aristotle",
+  "statement": "Aristotle wrote on metaphysics",
+  "subject": "Aristotle",
+  "pid": "P800",
+  "object": "Metaphysics",
+  "audit_correct": true
+ },
+ {
+  "page": "Combinatorics",
+  "statement": "Combinatorics | P31 | area of mathematics",
+  "subject": "Combinatorics",
+  "pid": "P31",
+  "object": "area of mathematics",
+  "audit_correct": true
+ },
+ {
+  "page": "Fractal",
+  "statement": "Benoit Mandelbrot coined the term fractal in 1975",
+  "subject": "Benoit Mandelbrot",
+  "pid": "P170",
+  "object": "fractal",
+  "audit_correct": true
+ },
+ {
+  "page": "Bernhard Riemann",
+  "statement": "Bernhard Riemann died in Selasca.",
+  "subject": "Bernhard Riemann",
+  "pid": "P20",
+  "object": "Selasca",
+  "audit_correct": true
+ },
+ {
+  "page": "Sophie Germain",
+  "statement": "Sophie Germain P166 grand prize from Paris Academy of Sciences",
+  "subject": "Sophie Germain",
+  "pid": "P166",
+  "object": "grand prize from Paris Academy of Sciences",
+  "audit_correct": true
+ },
+ {
+  "page": "Hypatia",
+  "statement": "Hypatia wrote a commentary on Diophantus's Arithmetica",
+  "subject": "Hypatia",
+  "pid": "P800",
+  "object": "commentary on Diophantus's Arithmetica",
+  "audit_correct": true
+ },
+ {
+  "page": "G. H. Hardy",
+  "statement": "Godfrey Harold Hardy had a sister named Gertrude Emily Hardy born in 1878 and died in 1963.",
+  "subject": "Gertrude Emily Hardy",
+  "pid": "P569",
+  "object": "1878",
+  "audit_correct": true
+ },
+ {
+  "page": "Fractal",
+  "statement": "Bernard Bolzano contributed to fractal studies",
+  "subject": "Bernard Bolzano",
+  "pid": "P50",
+  "object": "fractal studies",
+  "audit_correct": false
+ },
+ {
+  "page": "Sophie Germain",
+  "statement": "Sophie Germain P27 France",
+  "subject": "Sophie Germain",
+  "pid": "P27",
+  "object": "France",
+  "audit_correct": true
+ },
+ {
+  "page": "Continuum hypothesis",
+  "statement": "Kurt G\u00f6del proved in 1940 that the negation of the continuum hypothesis could not be proved in standard set theory.",
+  "subject": "Kurt G\u00f6del",
+  "pid": "P571",
+  "object": "1940",
+  "audit_correct": false
+ },
+ {
+  "page": "Age of Enlightenment",
+  "statement": "Newton published Principia Mathematica in 1687",
+  "subject": "Isaac Newton",
+  "pid": "P800",
+  "object": "Principia Mathematica",
+  "audit_correct": true
+ },
+ {
+  "page": "Harvard University",
+  "statement": "Harvard is located in Cambridge, Massachusetts",
+  "subject": "Harvard University",
+  "pid": "P131",
+  "object": "Cambridge",
+  "audit_correct": true
+ },
+ {
+  "page": "Euclid",
+  "statement": "Apollonius studied with Euclid's students in Alexandria.",
+  "subject": "Apollonius",
+  "pid": "P69",
+  "object": "Euclid's students",
+  "audit_correct": false
+ },
+ {
+  "page": "Wiley (publisher)",
+  "statement": "Wiley acquired Jossey-Bass in 1999",
+  "subject": "Jossey-Bass",
+  "pid": "P127",
+  "object": "Wiley",
+  "audit_correct": true
+ },
+ {
+  "page": "Alfred Tarski",
+  "statement": "Tarski is best known for his work on model theory",
+  "subject": "Alfred Tarski",
+  "pid": "P800",
+  "object": "model theory",
+  "audit_correct": true
+ },
+ {
+  "page": "Encyclop\u00e6dia Britannica",
+  "statement": "Colin Macfarquhar and Andrew Bell were Scottish printers and founders of Britannica.",
+  "subject": "Colin Macfarquhar",
+  "pid": "P112",
+  "object": "Encyclop\u00e6dia Britannica",
+  "audit_correct": false
+ },
+ {
+  "page": "Alfred Tarski",
+  "statement": "Alfred Tarski died on October 26, 1983",
+  "subject": "Alfred Tarski",
+  "pid": "P570",
+  "object": "October 26, 1983",
+  "audit_correct": true
+ },
+ {
+  "page": "Hyperbolic geometry",
+  "statement": "All theorems of absolute geometry including the first 28 propositions of Euclid's Elements apply in hyperbolic geometry",
+  "subject": "Euclid",
+  "pid": "P800",
+  "object": "Elements",
+  "audit_correct": true
+ },
+ {
+  "page": "Euclid's Elements",
+  "statement": "The Elements includes the Pythagorean theorem.",
+  "subject": "Elements",
+  "pid": "P800",
+  "object": "Pythagorean theorem",
+  "audit_correct": false
+ },
+ {
+  "page": "Willard Van Orman Quine",
+  "statement": "Willard Van Orman Quine served in the United States Navy",
+  "subject": "Willard Van Orman Quine",
+  "pid": "P108",
+  "object": "United States Navy",
+  "audit_correct": true
+ },
+ {
+  "page": "A priori and a posteriori",
+  "statement": "Immanuel Kant published the Critique of Pure Reason",
+  "subject": "Immanuel Kant",
+  "pid": "P800",
+  "object": "Critique of Pure Reason",
+  "audit_correct": true
+ },
+ {
+  "page": "Foundationalism",
+  "statement": "Gottlob Frege defended foundationalism in Die Grundlagen der Arithmetik",
+  "subject": "Gottlob Frege",
+  "pid": "P50",
+  "object": "Die Grundlagen der Arithmetik",
+  "audit_correct": true
+ },
+ {
+  "page": "Omar Khayyam",
+  "statement": "Omar Khayyam died in 1131.",
+  "subject": "Omar Khayyam",
+  "pid": "P20",
+  "object": "1131",
+  "audit_correct": false
+ },
+ {
+  "page": "Dover Publications",
+  "statement": "Dover Publications was founded in 1941 by Hayward and Blanche Cirker.",
+  "subject": "Dover Publications",
+  "pid": "P571",
+  "object": "1941",
+  "audit_correct": true
+ },
+ {
+  "page": "University of Oxford",
+  "statement": "Wadham College was founded in 1610",
+  "subject": "Wadham College",
+  "pid": "P571",
+  "object": "1610",
+  "audit_correct": true
+ },
+ {
+  "page": "Mathematician",
+  "statement": "Apollonius wrote Conics.",
+  "subject": "Apollonius",
+  "pid": "P800",
+  "object": "Conics",
+  "audit_correct": true
+ },
+ {
+  "page": "Terence Tao",
+  "statement": "Ben Green P108 University of Oxford",
+  "subject": "Ben Green",
+  "pid": "P108",
+  "object": "University of Oxford",
+  "audit_correct": true
+ },
+ {
+  "page": "Epistemic virtue",
+  "statement": "Michael DePaul and Linda Zagzebski edited Intellectual Virtue.",
+  "subject": "Michael DePaul",
+  "pid": "P170",
+  "object": "Intellectual Virtue",
+  "audit_correct": true
+ },
+ {
+  "page": "Analytic philosophy",
+  "statement": "Analytic philosophy emerged in the late 19th and early 20th centuries",
+  "subject": "analytic philosophy",
+  "pid": "P571",
+  "object": "late 19th century",
+  "audit_correct": true
+ },
+ {
+  "page": "Pragmatism",
+  "statement": "Pragmatism began in United States in 1870s.",
+  "subject": "Pragmatism",
+  "pid": "P571",
+  "object": "1870s",
+  "audit_correct": true
+ },
+ {
+  "page": "Archimedes",
+  "statement": "Archimedes is regarded as one of the greatest mathematicians of all time",
+  "subject": "Archimedes",
+  "pid": "P106",
+  "object": "mathematician",
+  "audit_correct": true
+ },
+ {
+  "page": "Quantum mechanics",
+  "statement": "Quantum mechanics is philosophical concept.",
+  "subject": "Quantum mechanics",
+  "pid": "P31",
+  "object": "philosophical concept",
+  "audit_correct": true
+ },
+ {
+  "page": "Katherine Johnson",
+  "statement": "Katherine Johnson was an American mathematician and human computer.",
+  "subject": "Katherine Johnson",
+  "pid": "P27",
+  "object": "American",
+  "audit_correct": true
+ },
+ {
+  "page": "University of Oxford",
+  "statement": "Walter de Merton was Lord Chancellor of England",
+  "subject": "Walter de Merton",
+  "pid": "P39",
+  "object": "Lord Chancellor of England",
+  "audit_correct": true
+ },
+ {
+  "page": "University of Oxford",
+  "statement": "University of Oxford is located in Oxford, England",
+  "subject": "University of Oxford",
+  "pid": "P131",
+  "object": "England",
+  "audit_correct": true
+ },
+ {
+  "page": "Emmy Noether",
+  "statement": "Emmy Noether died on 14 April 1935.",
+  "subject": "Emmy Noether",
+  "pid": "P570",
+  "object": "14 April 1935",
+  "audit_correct": true
+ },
+ {
+  "page": "Philosophical skepticism",
+  "statement": "Descartes used skepticism in philosophical method.",
+  "subject": "Descartes",
+  "pid": "P800",
+  "object": "skepticism",
+  "audit_correct": false
+ },
+ {
+  "page": "Claude Shannon",
+  "statement": "Claude Shannon | P69 | MIT",
+  "subject": "Claude Shannon",
+  "pid": "P69",
+  "object": "MIT",
+  "audit_correct": true
+ },
+ {
+  "page": "Critique of Pure Reason",
+  "statement": "Kant argued that knowledge of mathematics is both a priori and synthetic.",
+  "subject": "Immanuel Kant",
+  "pid": "P50",
+  "object": "theory of mathematical knowledge",
+  "audit_correct": false
+ },
+ {
+  "page": "Computer science",
+  "statement": "Herman Hollerith's company eventually became part of IBM.",
+  "subject": "Herman Hollerith",
+  "pid": "P127",
+  "object": "IBM",
+  "audit_correct": false
+ },
+ {
+  "page": "Isaac Newton",
+  "statement": "Isaac Newton's book Philosophiae Naturalis Principia Mathematica was first published in 1687.",
+  "subject": "Philosophiae Naturalis Principia Mathematica",
+  "pid": "P571",
+  "object": "1687",
+  "audit_correct": true
+ },
+ {
+  "page": "Continuous function",
+  "statement": "Peter Gustav Lejeune Dirichlet gave lectures that inspired Heine's work.",
+  "subject": "Peter Gustav Lejeune Dirichlet",
+  "pid": "P50",
+  "object": "lectures on uniform continuity",
+  "audit_correct": false
+ },
+ {
+  "page": "Biology",
+  "statement": "The Human Genome Project was launched in 1990 to map the human genome.",
+  "subject": null,
+  "pid": "P571",
+  "object": "1990",
+  "audit_correct": false
+ },
+ {
+  "page": "Willard Van Orman Quine",
+  "statement": "Willard Van Orman Quine died on December 25, 2000",
+  "subject": "Willard Van Orman Quine",
+  "pid": "P570",
+  "object": "December 25, 2000",
+  "audit_correct": true
+ },
+ {
+  "page": "Willard Van Orman Quine",
+  "statement": "Willard Van Orman Quine received his Ph.D. in philosophy from Harvard University in 1932",
+  "subject": "Willard Van Orman Quine",
+  "pid": "P69",
+  "object": "Harvard University",
+  "audit_correct": true
+ },
+ {
+  "page": "Principia Mathematica",
+  "statement": "Principia Mathematica is philosophical concept.",
+  "subject": "Principia Mathematica",
+  "pid": "P31",
+  "object": "philosophical concept",
+  "audit_correct": true
+ },
+ {
+  "page": "Continuum hypothesis",
+  "statement": "Hilbert presented 23 important open questions in 1900.",
+  "subject": "David Hilbert",
+  "pid": "P571",
+  "object": "1900",
+  "audit_correct": false
+ },
+ {
+  "page": "Abstract algebra",
+  "statement": "Gauss's 1801 study contributed to the concept of cyclic groups and abelian groups",
+  "subject": "Carl Friedrich Gauss",
+  "pid": "P800",
+  "object": "Fermat's little theorem",
+  "audit_correct": false
+ },
+ {
+  "page": "Age of Enlightenment",
+  "statement": "Many historians now date the end of the Enlightenment as the start of the 19th century",
+  "subject": "Age of Enlightenment",
+  "pid": "P576",
+  "object": "19th century",
+  "audit_correct": true
+ },
+ {
+  "page": "Hilary Putnam",
+  "statement": "Hilary Whitehall Putnam worked at Harvard University",
+  "subject": "Hilary Whitehall Putnam",
+  "pid": "P108",
+  "object": "Harvard University",
+  "audit_correct": true
+ },
+ {
+  "page": "Alvin Goldman",
+  "statement": "Alvin Goldman is a contemporary philosopher",
+  "subject": "Alvin Goldman",
+  "pid": "P106",
+  "object": "philosopher",
+  "audit_correct": true
+ },
+ {
+  "page": "Ludwig Wittgenstein",
+  "statement": "Wittgenstein was born in Vienna.",
+  "subject": "Ludwig Wittgenstein",
+  "pid": "P19",
+  "object": "Vienna",
+  "audit_correct": true
+ },
+ {
+  "page": "Combinatorics",
+  "statement": "Sushruta | P106 | Indian physician",
+  "subject": "Sushruta",
+  "pid": "P106",
+  "object": "Indian physician",
+  "audit_correct": true
+ },
+ {
+  "page": "Physics",
+  "statement": "Isidore of Miletus created compilation of Archimedes works.",
+  "subject": "Isidore of Miletus",
+  "pid": "P50",
+  "object": "Archimedes works",
+  "audit_correct": false
+ },
+ {
+  "page": "Baruch Spinoza",
+  "statement": "Baruch Spinoza authored Tractatus Theologico-Politicus.",
+  "subject": "Baruch Spinoza",
+  "pid": "P50",
+  "object": "Tractatus Theologico-Politicus",
+  "audit_correct": true
+ },
+ {
+  "page": "Immanuel Kant",
+  "statement": "Immanuel Kant published The False Subtlety of the Four Syllogistic Figures in 1762",
+  "subject": "Immanuel Kant",
+  "pid": "P800",
+  "object": "The False Subtlety of the Four Syllogistic Figures",
+  "audit_correct": true
+ },
+ {
+  "page": "Age of Enlightenment",
+  "statement": "The Encyclop\u00e9die was compiled by Denis Diderot and Jean le Rond d'Alembert",
+  "subject": "Encyclop\u00e9die",
+  "pid": "P170",
+  "object": "Denis Diderot",
+  "audit_correct": true
+ },
+ {
+  "page": "Western philosophy",
+  "statement": "Aristotle founded the Peripatetic school",
+  "subject": "Peripatetic school",
+  "pid": "P112",
+  "object": "Aristotle",
+  "audit_correct": true
+ },
+ {
+  "page": "Terence Tao",
+  "statement": "Terence Tao P166 Breakthrough Prize in Mathematics in 2014",
+  "subject": "Terence Tao",
+  "pid": "P166",
+  "object": "Breakthrough Prize in Mathematics in 2014",
+  "audit_correct": true
+ },
+ {
+  "page": "Emmy Noether",
+  "statement": "Emmy Noether's work on differential invariants in the calculus of variations, Noether's theorem, is one of the most important mathematical theorems.",
+  "subject": "Emmy Noether",
+  "pid": "P800",
+  "object": "Noether's theorem",
+  "audit_correct": true
+ },
+ {
+  "page": "Foundationalism",
+  "statement": "G.W. Leibniz accepted foundationalism",
+  "subject": "G.W. Leibniz",
+  "pid": "P106",
+  "object": "philosopher",
+  "audit_correct": false
+ },
+ {
+  "page": "Zermelo\u2013Fraenkel set theory",
+  "statement": "ZFC with the axiom of choice is the standard form of axiomatic set theory",
+  "subject": "ZFC",
+  "pid": "P31",
+  "object": "standard form of axiomatic set theory",
+  "audit_correct": true
+ },
+ {
+  "page": "Fermat's Last Theorem",
+  "statement": "Sophie Germain proved an approach for an entire class of primes",
+  "subject": "Sophie Germain",
+  "pid": "P50",
+  "object": "regular primes proof",
+  "audit_correct": false
+ },
+ {
+  "page": "John Locke",
+  "statement": "A Letter Concerning Toleration was published in 1689.",
+  "subject": "A Letter Concerning Toleration",
+  "pid": "P571",
+  "object": "1689",
+  "audit_correct": true
+ },
+ {
+  "page": "Leonhard Euler",
+  "statement": "Leonhard Euler was born on 15 April 1707.",
+  "subject": "Leonhard Euler",
+  "pid": "P569",
+  "object": "15 April 1707",
+  "audit_correct": true
+ },
+ {
+  "page": "Philosophy",
+  "statement": "Socrates was born in ancient Greece.",
+  "subject": "Socrates",
+  "pid": "P19",
+  "object": "Greece",
+  "audit_correct": true
+ },
+ {
+  "page": "Georg Cantor",
+  "statement": "Georg Cantor died on 6 January 1918.",
+  "subject": "Georg Cantor",
+  "pid": "P570",
+  "object": "6 January 1918",
+  "audit_correct": true
+ },
+ {
+  "page": "David Hume",
+  "statement": "David Hume was born on 7 May 1711 as David Home.",
+  "subject": "David Hume",
+  "pid": "P569",
+  "object": "7 May 1711",
+  "audit_correct": true
+ },
+ {
+  "page": "Mathematician",
+  "statement": "Pythagoras lived c. 582 BCE.",
+  "subject": "Pythagoras of Samos",
+  "pid": "P569",
+  "object": "582 BCE",
+  "audit_correct": false
+ },
+ {
+  "page": "Alfred Tarski",
+  "statement": "Alfred Tarski was born on January 14, 1901",
+  "subject": "Alfred Tarski",
+  "pid": "P569",
+  "object": "January 14, 1901",
+  "audit_correct": true
+ },
+ {
+  "page": "Truth",
+  "statement": "Truth P31 conformity to reality or fact",
+  "subject": "Truth",
+  "pid": "P31",
+  "object": "conformity to reality or fact",
+  "audit_correct": false
+ }
+]

@@ -2,6 +2,11 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-27 — D75: M1 re-test on Wikipedia — 0.76 vs the 0.85 gate; the number is CORPUS-STABLE and the residual is four promptable error families
+100-sample audit of v2 (statement, pid) assignments (`data/m1_retest_sample.json`, verdicts recorded): **0.76 [CI ≈0.66–0.84] — gate not met**, statistically indistinguishable from MuSiQue's 0.79 (D72). Mapping accuracy is a property of the EXTRACTION DISCIPLINE, not the corpus — the Wikipedia-will-fix-it hypothesis is REFUTED for this gate (it fixed extraction precision and artifacts, not relation assignment).
+**The 24 errors are four families, all statable as rules**: (1) concept-as-work — "developed calculus"/"contributed fallibilism theory" mapped to P50/P800 (~10; a work must be a titled artifact); (2) event-year subject-binding — "Hilbert presented X in 1900" → P571 on Hilbert (~5; inception attaches to the thing created); (3) "lived c. X" read as birth (2); (4) direction inversions on founder/owner (rare). All four are v3 prompt rules; a checker pass (second agent validating each (statement,pid) against exactly these four rules) is the cheap ensemble that doesn't repeat D72's recall-poisoning mistake because it only VETOES.
+**Track M scoreboard at close of this run**: M1 0.76–0.79 vs 0.85 (two corpora, families named) · M2 not yet run · M3 precision ✓ links ✓ conflicts-mechanism-rescoped recall 0.452-fair ✗ · M4 ✓✓ · M5–M7 pending. The build gate (M1–M4 meet targets) is honestly NOT yet satisfied — M1 and M3-recall are the two open numbers, both with named next moves.
+
 ## 2026-07-27 — D74: M3 v2 — two gates green, recall trajectory positive, and the conflict audit found the REAL lesson: conflicts require functionality-awareness
 **v2 changes** (object discipline, 8k text, 15–25 statement budget; 2,972 statements / 199 of 200 pages after gap re-sharding — agent-ops: 25-page × 8k shards exceed reliable single-agent capacity, ~13 pages is the safe unit):
 
