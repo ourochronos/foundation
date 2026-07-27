@@ -39,6 +39,11 @@ Continual ingest runs on a schedule with invariance checks — the system
   deliberately truncated summary box.
 - **G3. M2 recoverability**: pairwise-F1 ≥0.80 vs the registry partition,
   beating the surface-only baseline by ≥15 points (registered targets).
+  *CLOSED (D80)*: FAIL on the gate = the registered alternative finding —
+  geometry's ceiling is the surface baseline (raw-gist F1 0.597 = baseline
+  exactly; centered 0.169); identity is NOT recoverable from content
+  geometry; the eid scaffold is load-bearing and stays (it was already in
+  the PoC architecture, so nothing changes downstream).
 - **G4. M5 grounded synthesis**: subject_brief with per-sentence citations;
   entailment-judged faithfulness ≥0.9 (n=50), distractor-subgraph refusal
   ≥0.8, planted-dispute surfacing ≥0.8.

@@ -222,5 +222,6 @@ json.dump({
     "calib_sweep": sweep,
     "secondaries": sec,
     "manifest": run_manifest(seed=0),
-}, open(ROOT / "results" / "m2_recover.json", "w"), indent=1)
+}, open(ROOT / "results" / "m2_recover.json", "w"), indent=1,
+    default=lambda o: o.item() if hasattr(o, "item") else str(o))
 print("[done] results/m2_recover.json", flush=True)
