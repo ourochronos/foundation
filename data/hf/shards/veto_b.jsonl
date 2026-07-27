@@ -1,0 +1,6 @@
+{"page": "hf:internlm/internlm2-1_8b-reward", "subject": "internlm2-1_8b-reward", "pid": "P_ASSERTS", "object": "This model was applied to the RLHF training proces...", "rule": 6, "reason": "Object exceeds 8 words and is truncated"}
+{"page": "hf:j-hartmann/emotion-english-distilroberta-base", "subject": "emotion-english-distilroberta-base", "pid": "P_ASSERTS", "object": "With this model, you can classify emotions in Engl...", "rule": 6, "reason": "Object exceeds 8 words and is truncated"}
+{"page": "hf:jason9693/Qwen2.5-1.5B-apeach", "subject": "Qwen2.5-1.5B-apeach", "pid": "P_ASSERTS", "object": "This is the model card of a \ud83e\udd17 transformers model t...", "rule": 6, "reason": "Object exceeds 8 words and is truncated"}
+{"page": "hf:jhgan/ko-sroberta-multitask", "subject": "ko-sroberta-multitask", "pid": "P_ASSERTS", "object": "Using this model becomes easy when you have senten...", "rule": 6, "reason": "Object exceeds 8 words and is truncated"}
+{"page": "hf:knowledgator/gliclass-large-v1.0", "subject": "gliclass-large-v1.0", "pid": "P_ASSERTS", "object": "F: 1", "rule": 1, "reason": "Benchmark claim not found in card"}
+{"page": "hf:knowledgator/gliclass-large-v1.0", "subject": "gliclass-large-v1.0", "pid": "P_ASSERTS", "object": "datasets: .", "rule": 1, "reason": "Benchmark claim not found in card"}

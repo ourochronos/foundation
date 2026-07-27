@@ -1,0 +1,56 @@
+{
+ "protocol": "50 claims sampled seed-17 from 602 live post-veto rows (10 shards, 200 HF model cards); graded by the session model vs the FULL card_md plus the registry metadata fields, BEFORE ingest/scoring; labels frozen at write time. DEFECT threshold identical to arxivai50 (D92): (a) asserts what the source does not \u2014 inferred, absent, or contradicted; (b) drops a condition/qualifier that changes truth conditions; (c) the subject is not the model (extraction artifact). NOT defects: awkward phrasing, kind-field mislabels, 'The card states' without the model name (page provenance resolves it).",
+ "claim_mix_warning": "This precision is NOT comparable to the abstract audits without the split below: registry claims are copied from metadata FIELDS and are mechanically verifiable, so they are near-free. 15/50 sampled claims are registry claims and 0 of them are defective; card-CONTENT precision is the number to compare against arxivai50's 0.82.",
+ "defect_idx": [
+  1,
+  41,
+  44
+ ],
+ "defect_notes": {
+  "1": "'reports accuracy of 0.9700' \u2014 metric value with NO benchmark/dataset named; uninterpretable as stored (rule 4)",
+  "41": "'describes using Transformer-based models' \u2014 'Transformer-based' appears nowhere in the card; vacuous and inferred from background knowledge (rule 1)",
+  "44": "subject is 'The load tagger' \u2014 lifted from a Python comment '# load tagger' in the usage snippet, not the model (flair/ner-english); names a model that does not exist"
+ },
+ "borderlines_resolved_precise": {
+  "17_20": "'card indicates a model size of 149M/395M' \u2014 the size comes from the model NAME, not a stated parameter count; the hedged verb 'indicates' matches that evidential strength",
+  "8": "'The card states...' without naming the model \u2014 same exemption as arxivai50's 'The paper achieves X'",
+  "42": "card's own Uses section says 'text classification' while pipeline_tag says zero-shot-classification; registry field is a legitimate source per rule 5",
+  "30": "'used for training or evaluation' \u2014 a vague disjunction, but accurate",
+  "34": "'lists transformers.js as a characteristic' \u2014 awkward, but it IS a card tag"
+ },
+ "registry_idx": [
+  0,
+  2,
+  3,
+  4,
+  9,
+  11,
+  18,
+  19,
+  28,
+  32,
+  36,
+  39,
+  40,
+  43,
+  45
+ ],
+ "precise": 47,
+ "n": 50,
+ "precision": 0.94,
+ "ci95": [
+  0.8378265662912299,
+  0.9793854036353695
+ ],
+ "card_content_only": {
+  "n": 35,
+  "precise": 32,
+  "precision": 0.9142857142857143,
+  "ci95": [
+   0.7762040092883747,
+   0.970418168994703
+  ]
+ },
+ "gate": 0.6,
+ "passes_gate": true
+}

@@ -1,0 +1,276 @@
+{
+ "audit": "hf50",
+ "model": "gpt-5.6-sol",
+ "n": 50,
+ "n_judged": 50,
+ "raw_agreement": 0.96,
+ "cohens_kappa": 0.6453900709219855,
+ "disagreements": [
+  {
+   "idx": 17,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The card includes \u201c149M\u201d in the model name but does not explicitly identify it as the model size."
+  },
+  {
+   "idx": 41,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "The card describes the model as based on the Transformer-derived ModernBERT architecture."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "PRECISE",
+   "reason": "The model ID, unspecified license, and sentence-similarity pipeline match the registry fields."
+  },
+  "1": {
+   "verdict": "DEFECT",
+   "reason": "The metric claim omits its benchmark/evaluation set."
+  },
+  "2": {
+   "verdict": "PRECISE",
+   "reason": "The model ID, Apache-2.0 license, and zero-shot-classification pipeline match the registry fields."
+  },
+  "3": {
+   "verdict": "PRECISE",
+   "reason": "The model ID, CC-BY-NC-SA-4.0 license, and token-classification pipeline match the registry fields."
+  },
+  "4": {
+   "verdict": "PRECISE",
+   "reason": "The model ID and zero-shot-classification pipeline match the registry fields."
+  },
+  "5": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly states that the model gives softmax outputs for positive, negative, and neutral labels."
+  },
+  "6": {
+   "verdict": "PRECISE",
+   "reason": "The card describes producing sentence embeddings from encoded sentences."
+  },
+  "7": {
+   "verdict": "PRECISE",
+   "reason": "The card identifies PubMedBERT as the base model and describes biomedical entity inputs and representations."
+  },
+  "8": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly says the multilingual model is suitable for multilingual zero-shot classification."
+  },
+  "9": {
+   "verdict": "PRECISE",
+   "reason": "The model ID, MIT license, and feature-extraction pipeline match the registry fields."
+  },
+  "10": {
+   "verdict": "PRECISE",
+   "reason": "The base_model registry metadata names MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7."
+  },
+  "11": {
+   "verdict": "PRECISE",
+   "reason": "The registry has no specified license and lists the text-classification pipeline."
+  },
+  "12": {
+   "verdict": "PRECISE",
+   "reason": "The card metadata explicitly lists transformers as the library."
+  },
+  "13": {
+   "verdict": "PRECISE",
+   "reason": "The base_model metadata explicitly names typeform/mobilebert-uncased-mnli."
+  },
+  "14": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly says it fine-tuned the pretrained microsoft/MiniLM-L12-H384-uncased model."
+  },
+  "15": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly describes zero-shot classification usage for this NLI model."
+  },
+  "16": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly states that the model was fine-tuned and additionally trained on XNLI data."
+  },
+  "17": {
+   "verdict": "DEFECT",
+   "reason": "The card includes \u201c149M\u201d in the model name but does not explicitly identify it as the model size."
+  },
+  "18": {
+   "verdict": "PRECISE",
+   "reason": "The registry fields exactly match the stated model ID, license, and pipeline."
+  },
+  "19": {
+   "verdict": "PRECISE",
+   "reason": "The registry fields exactly match the stated model ID, license, and pipeline."
+  },
+  "20": {
+   "verdict": "PRECISE",
+   "reason": "The card identifies the model as ModernMed-395M."
+  },
+  "21": {
+   "verdict": "PRECISE",
+   "reason": "The model overview explicitly states a 32k context length."
+  },
+  "22": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly describes it as specialized for cancer genetics and cancer-related genetic entities."
+  },
+  "23": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly says it maps sentences and paragraphs to a 768-dimensional dense vector space."
+  },
+  "24": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly lists zero-shot entailment-based classification as a supported use."
+  },
+  "25": {
+   "verdict": "PRECISE",
+   "reason": "The card metadata explicitly lists Qwen/Qwen3-VL-8B-Instruct as the base model."
+  },
+  "26": {
+   "verdict": "PRECISE",
+   "reason": "The card reports accuracy 0.9885521685548412 for the SST-2 dataset."
+  },
+  "27": {
+   "verdict": "PRECISE",
+   "reason": "The card identifies it as a sentence-transformers model, links SBERT, and cites Sentence-BERT."
+  },
+  "28": {
+   "verdict": "PRECISE",
+   "reason": "The registry fields exactly match the stated model ID, license, and pipeline."
+  },
+  "29": {
+   "verdict": "PRECISE",
+   "reason": "The card states this claim verbatim."
+  },
+  "30": {
+   "verdict": "PRECISE",
+   "reason": "The card metadata lists nyu-mll/multi_nli, and the text says MultiNLI was used for training and evaluation."
+  },
+  "31": {
+   "verdict": "PRECISE",
+   "reason": "The card metadata names transformers as the library."
+  },
+  "32": {
+   "verdict": "PRECISE",
+   "reason": "The model ID, MIT license, and zero-shot-classification pipeline match the registry."
+  },
+  "33": {
+   "verdict": "PRECISE",
+   "reason": "The card reports fine-tuning on more than 1 billion sentence pairs."
+  },
+  "34": {
+   "verdict": "PRECISE",
+   "reason": "The card metadata includes the transformers.js tag."
+  },
+  "35": {
+   "verdict": "PRECISE",
+   "reason": "This description is stated directly in the card."
+  },
+  "36": {
+   "verdict": "PRECISE",
+   "reason": "The model ID, CC-BY-4.0 license, and feature-extraction pipeline match the registry."
+  },
+  "37": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly states that the model maps sentences and paragraphs to a 384-dimensional dense vector space."
+  },
+  "38": {
+   "verdict": "PRECISE",
+   "reason": "The card reports precision 0.9211550382257732 on the CoNLL-2003 test dataset."
+  },
+  "39": {
+   "verdict": "PRECISE",
+   "reason": "The model ID, MIT license, and feature-extraction pipeline match the registry."
+  },
+  "40": {
+   "verdict": "PRECISE",
+   "reason": "The model ID, Apache-2.0 license, and token-classification pipeline match the registry."
+  },
+  "41": {
+   "verdict": "PRECISE",
+   "reason": "The card describes the model as based on the Transformer-derived ModernBERT architecture."
+  },
+  "42": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly describes the model as fine-tuned for zero-shot classification."
+  },
+  "43": {
+   "verdict": "PRECISE",
+   "reason": "The model ID, Apache-2.0 license, and text-classification pipeline match the registry."
+  },
+  "44": {
+   "verdict": "DEFECT",
+   "reason": "Misidentifies the model as \u201cload tagger,\u201d a code-comment fragment."
+  },
+  "45": {
+   "verdict": "PRECISE",
+   "reason": "License and pipeline exactly match the registry fields."
+  },
+  "46": {
+   "verdict": "PRECISE",
+   "reason": "The card explicitly states it is fine-tuned from xlm-roberta-base."
+  },
+  "47": {
+   "verdict": "PRECISE",
+   "reason": "The card identifies IndoBERT as a model for Indonesian."
+  },
+  "48": {
+   "verdict": "PRECISE",
+   "reason": "The registry and card metadata specify zero-shot classification."
+  },
+  "49": {
+   "verdict": "PRECISE",
+   "reason": "The model index reports 73.0149 accuracy on that MTEB benchmark, correctly rounded to 73.01."
+  }
+ },
+ "my_labels": {
+  "0": "PRECISE",
+  "1": "DEFECT",
+  "2": "PRECISE",
+  "3": "PRECISE",
+  "4": "PRECISE",
+  "5": "PRECISE",
+  "6": "PRECISE",
+  "7": "PRECISE",
+  "8": "PRECISE",
+  "9": "PRECISE",
+  "10": "PRECISE",
+  "11": "PRECISE",
+  "12": "PRECISE",
+  "13": "PRECISE",
+  "14": "PRECISE",
+  "15": "PRECISE",
+  "16": "PRECISE",
+  "17": "PRECISE",
+  "18": "PRECISE",
+  "19": "PRECISE",
+  "20": "PRECISE",
+  "21": "PRECISE",
+  "22": "PRECISE",
+  "23": "PRECISE",
+  "24": "PRECISE",
+  "25": "PRECISE",
+  "26": "PRECISE",
+  "27": "PRECISE",
+  "28": "PRECISE",
+  "29": "PRECISE",
+  "30": "PRECISE",
+  "31": "PRECISE",
+  "32": "PRECISE",
+  "33": "PRECISE",
+  "34": "PRECISE",
+  "35": "PRECISE",
+  "36": "PRECISE",
+  "37": "PRECISE",
+  "38": "PRECISE",
+  "39": "PRECISE",
+  "40": "PRECISE",
+  "41": "DEFECT",
+  "42": "PRECISE",
+  "43": "PRECISE",
+  "44": "DEFECT",
+  "45": "PRECISE",
+  "46": "PRECISE",
+  "47": "PRECISE",
+  "48": "PRECISE",
+  "49": "PRECISE"
+ }
+}

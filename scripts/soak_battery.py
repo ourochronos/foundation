@@ -43,6 +43,16 @@ CASES = [
         kb.brief("Andrey Kolmogorov"))),
     ("arxiv_views_live", lambda:
         kb.views("independence relations")["status"] == "answered"),
+    # D92 sources. The AI slice's own subjects are per-paper method names
+    # (1,041 distinct over 1,106 claims), so the cross-paper invariant has
+    # to ride the citation axis — cited_by is the only surface in this
+    # corpus that joins papers at all.
+    ("ai_views_live", lambda:
+        kb.views("gte-Qwen2-1.5B-instruct")["status"] == "answered"),
+    ("ai_cited_by_live", lambda:
+        kb.cited_by("Qwen3 Technical Report")["n"] >= 20),
+    ("cited_work_is_one_entity", lambda:
+        len(kb.resolve_subject("Proximal Policy Optimization Algorithms")) == 1),
 ]
 
 results, fails = {}, []

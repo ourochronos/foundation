@@ -54,10 +54,41 @@ def kappa(a: list[str], b: list[str]) -> float:
     return (po - pe) / (1 - pe) if pe < 1 else 1.0
 
 
+ARGV_BUDGET = 110_000        # one `copilot -p` prompt; ARG_MAX bites near 1MB
+
+
 def run(name: str, items: list[dict], prompt: str, allowed: set[str],
-        mine: dict[int, str]):
-    raw = copilot(prompt)
-    got = parse_verdicts(raw, allowed)
+        mine: dict[int, str], blocks: list[str] | None = None,
+        header: str = ""):
+    """One `copilot -p` call when the prompt fits, else batched.
+
+    Sources with large evidence (HF cards run to 60k chars) blow past
+    ARG_MAX as one prompt. Shrinking the evidence is the WRONG fix —
+    truncation manufactured 6 of 8 disagreements on arxiv50 (D92) — so
+    batch instead and keep every item's evidence whole. Indices stay
+    global across batches, so the merged verdict map is identical to
+    what a single call would have produced.
+    """
+    if blocks is not None and len(prompt) > ARGV_BUDGET:
+        got, batch, size, n_calls = {}, [], 0, 0
+        batches = []
+        for b in blocks:
+            if batch and size + len(b) > ARGV_BUDGET - len(header):
+                batches.append(batch)
+                batch, size = [], 0
+            batch.append(b)
+            size += len(b)
+        if batch:
+            batches.append(batch)
+        print(f"[adjudicate] prompt {len(prompt)} chars > budget — "
+              f"{len(batches)} batches, evidence kept whole")
+        for bt in batches:
+            n_calls += 1
+            got.update(parse_verdicts(copilot(header + "\n\n".join(bt)),
+                                      allowed))
+        print(f"[adjudicate] {n_calls} calls, {len(got)} verdicts parsed")
+    else:
+        got = parse_verdicts(copilot(prompt), allowed)
     missing = [i for i in range(len(items)) if i not in got]
     if missing:
         print(f"[adjudicate] WARNING missing verdicts for idx {missing}")
@@ -123,6 +154,46 @@ if sys.argv[1] == "arxiv50":
 
 elif sys.argv[1] == "arxivai50":
     _abstract_audit("arxivai50", "arxiv_ai")
+
+elif sys.argv[1] == "hf50":
+    items = json.loads((ROOT / "data/hf/audit_sample_50.json").read_text())
+    cards = {}
+    for pp in (ROOT / "data/hf/cards").glob("*.json"):
+        d = json.loads(pp.read_text())
+        cards["hf:" + d["id"]] = d
+    labels = json.loads((ROOT / "data/hf/audit_labels_50.json").read_text())
+    mine = {i: ("DEFECT" if i in labels["defect_idx"] else "PRECISE")
+            for i in range(50)}
+    blocks = []
+    for i, s in enumerate(items):
+        c = cards.get(s["page"], {})
+        # cards run to 60k chars; the adjudicator gets the metadata fields
+        # in full plus a generous card window (truncation manufactured 6
+        # of 8 disagreements on arxiv50 — see D92 — so err long)
+        md = (c.get("card_md") or "")[:12000]
+        blocks.append(
+            f"### ITEM {i}\nCLAIM: {s['statement']}\n"
+            f"REGISTRY FIELDS: id={c.get('id')!r} license={c.get('license')!r} "
+            f"pipeline_tag={c.get('pipeline_tag')!r}\nCARD:\n{md}")
+    header = (
+        "You are an independent audit adjudicator. Each item is a claim "
+        "extracted from a Hugging Face model card. Judge whether the CLAIM "
+        "is a faithful, self-contained extraction from the CARD or the "
+        "REGISTRY FIELDS. Rules: the claim must be stated by the card or "
+        "the registry fields (never inferred from your own knowledge of "
+        "the model); a metric claim must carry its benchmark AND metric; "
+        "license/pipeline must match the registry fields; the subject must "
+        "be the model, not a fragment of a code sample. Cards are "
+        "self-reported, so an attributed frame ('the card states/reports/"
+        "claims') is correct and NOT a defect. Awkward phrasing is not a "
+        "defect. Verdict PRECISE or DEFECT.\n"
+        "Do not use any tools. Output ONLY a JSON array, one object per "
+        'ITEM below, format {"idx": <n>, "verdict": "PRECISE"|"DEFECT", '
+        '"reason": "<short>"} — nothing else. Use each item\'s OWN idx '
+        "from its ### ITEM header; they are not necessarily "
+        "consecutive from zero.\n\n")
+    run("hf50", items, header + "\n\n".join(blocks), {"PRECISE", "DEFECT"},
+        mine, blocks=blocks, header=header)
 
 elif sys.argv[1] == "g2fp25":
     items = json.loads(

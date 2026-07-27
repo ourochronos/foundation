@@ -430,6 +430,13 @@ class KB:
         for c in self._claims_for(eids[0], pid):
             by_page[c["page"]].append(
                 {"pid": c["pid"], "object": c["object"], "sid": c["sid"]})
+        if not by_page:
+            # known entity, nothing said ABOUT it — an entity can exist
+            # purely as an object (a cited work that cites nothing), and
+            # "answered" with an empty body is the dishonest status
+            return {"status": "abstain", "eid": eids[0],
+                    "reason": "entity known but no live claims about it",
+                    "views": {}}
         return {"status": "answered", "eid": eids[0],
                 "views": dict(sorted(by_page.items()))}
 

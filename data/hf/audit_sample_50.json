@@ -1,0 +1,402 @@
+[
+ {
+  "kind": "artifact",
+  "object": "License unspecified (pipeline sentence-similarity)",
+  "page": "hf:sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists sentence-transformers/multi-qa-MiniLM-L6-cos-v1 under license unspecified (pipeline: sentence-similarity).",
+  "subject": "multi-qa-MiniLM-L6-cos-v1"
+ },
+ {
+  "kind": "benchmark",
+  "object": "accuracy: 0.9700",
+  "page": "hf:lfcc/bert-portuguese-ner",
+  "pid": "P_ASSERTS",
+  "statement": "The bert-portuguese-ner card reports accuracy of 0.9700.",
+  "subject": "bert-portuguese-ner"
+ },
+ {
+  "kind": "artifact",
+  "object": "zero-shot-classification",
+  "page": "hf:cross-encoder/nli-deberta-v3-small",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists cross-encoder/nli-deberta-v3-small under license apache-2.0 (pipeline: zero-shot-classification).",
+  "subject": "nli-deberta-v3-small"
+ },
+ {
+  "kind": "license",
+  "object": "cc-by-nc-sa-4.0 (token-classification)",
+  "page": "hf:hantian/layoutreader",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists hantian/layoutreader under license cc-by-nc-sa-4.0 (pipeline: token-classification).",
+  "subject": "LayoutReader"
+ },
+ {
+  "kind": "artifact",
+  "object": "zero-shot-classification",
+  "page": "hf:cointegrated/rubert-base-cased-nli-threeway",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists cointegrated/rubert-base-cased-nli-threeway under pipeline: zero-shot-classification.",
+  "subject": "rubert-base-cased-nli-threeway"
+ },
+ {
+  "kind": "result",
+  "object": "three-class sentiment (positive/negative/neutral)",
+  "page": "hf:ProsusAI/finbert",
+  "pid": "P_ASSERTS",
+  "statement": "The finbert card reports that the model gives softmax outputs for three labels: positive, negative, or neutral.",
+  "subject": "finbert"
+ },
+ {
+  "kind": "task",
+  "object": "sentence embeddings",
+  "page": "hf:sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "pid": "P_ASSERTS",
+  "statement": "The paraphrase-multilingual-mpnet-base-v2 card states the model can be used for sentence embeddings.",
+  "subject": "paraphrase-multilingual-mpnet-base-v2"
+ },
+ {
+  "kind": "lineage",
+  "object": "PubMedBERT biomedical base",
+  "page": "hf:cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+  "pid": "P_ASSERTS",
+  "statement": "The SapBERT-from-PubMedBERT-fulltext card states the model is based on PubMedBERT for biomedical domain.",
+  "subject": "SapBERT-from-PubMedBERT-fulltext"
+ },
+ {
+  "kind": "task",
+  "object": "multilingual zero-shot classification",
+  "page": "hf:MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+  "pid": "P_ASSERTS",
+  "statement": "The card states the model is designed for multilingual zero-shot classification.",
+  "subject": "multilingual-MiniLMv2-L6-mnli-xnli"
+ },
+ {
+  "kind": "license",
+  "object": "mit (feature-extraction)",
+  "page": "hf:BAAI/bge-large-zh-v1.5",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists BAAI/bge-large-zh-v1.5 under license mit (pipeline: feature-extraction).",
+  "subject": "bge-large-zh-v1.5"
+ },
+ {
+  "kind": "lineage",
+  "object": "based on mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "page": "hf:Xenova/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "pid": "P_ASSERTS",
+  "statement": "The mDeBERTa-v3-base-xnli-multilingual-nli-2mil7 card states that mDeBERTa-v3-base-xnli-multilingual-nli-2mil7 is based on MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7.",
+  "subject": "mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
+ },
+ {
+  "kind": "artifact",
+  "object": "unknown license",
+  "page": "hf:j-hartmann/emotion-english-distilroberta-base",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists j-hartmann/emotion-english-distilroberta-base under license unknown (pipeline: text-classification).",
+  "subject": "emotion-english-distilroberta-base"
+ },
+ {
+  "kind": "task",
+  "object": "framework: transformers",
+  "page": "hf:livekit/turn-detector",
+  "pid": "P_ASSERTS",
+  "statement": "The turn-detector card states it uses the transformers library.",
+  "subject": "turn-detector"
+ },
+ {
+  "kind": "lineage",
+  "object": "based on mobilebert-uncased-mnli",
+  "page": "hf:Xenova/mobilebert-uncased-mnli",
+  "pid": "P_ASSERTS",
+  "statement": "The mobilebert-uncased-mnli card states that mobilebert-uncased-mnli is based on typeform/mobilebert-uncased-mnli.",
+  "subject": "mobilebert-uncased-mnli"
+ },
+ {
+  "kind": "lineage",
+  "object": "Base microsoft/MiniLM-L12-H384-uncased",
+  "page": "hf:sentence-transformers/all-MiniLM-L12-v2",
+  "pid": "P_ASSERTS",
+  "statement": "The all-MiniLM-L12-v2 card states it is fine-tuned from microsoft/MiniLM-L12-H384-uncased.",
+  "subject": "all-MiniLM-L12-v2"
+ },
+ {
+  "kind": "task",
+  "object": "zero-shot NLI classification",
+  "page": "hf:cross-encoder/nli-roberta-base",
+  "pid": "P_ASSERTS",
+  "statement": "The nli-roberta-base card indicates capability for zero-shot classification using NLI approach.",
+  "subject": "nli-roberta-base"
+ },
+ {
+  "kind": "lineage",
+  "object": "Trained on xnli",
+  "page": "hf:joeddav/xlm-roberta-large-xnli",
+  "pid": "P_ASSERTS",
+  "statement": "The xlm-roberta-large-xnli card states training on xnli.",
+  "subject": "xlm-roberta-large-xnli"
+ },
+ {
+  "kind": "size",
+  "object": "149M",
+  "page": "hf:OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M",
+  "pid": "P_ASSERTS",
+  "statement": "The OpenMed-NER-ChemicalDetect-ModernMed-149M card indicates a model size of 149M.",
+  "subject": "OpenMed-NER-ChemicalDetect-ModernMed-149M"
+ },
+ {
+  "kind": "artifact",
+  "object": "cc-by-nc-4.0, text-classification",
+  "page": "hf:tabularisai/multilingual-sentiment-analysis",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists tabularisai/multilingual-sentiment-analysis under license cc-by-nc-4.0 (pipeline: text-classification).",
+  "subject": "multilingual-sentiment-analysis"
+ },
+ {
+  "kind": "license",
+  "object": "afl-3.0",
+  "page": "hf:Davlan/xlm-roberta-large-ner-hrl",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists Davlan/xlm-roberta-large-ner-hrl under license afl-3.0 (pipeline: token-classification).",
+  "subject": "xlm-roberta-large-ner-hrl"
+ },
+ {
+  "kind": "size",
+  "object": "395M",
+  "page": "hf:OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-395M",
+  "pid": "P_ASSERTS",
+  "statement": "The OpenMed-NER-ChemicalDetect-ModernMed-395M card indicates a model size of 395M.",
+  "subject": "OpenMed-NER-ChemicalDetect-ModernMed-395M"
+ },
+ {
+  "kind": "size",
+  "object": "context length 32k",
+  "page": "hf:Qwen/Qwen3-Embedding-4B",
+  "pid": "P_ASSERTS",
+  "statement": "The Qwen3-Embedding-4B card states that Qwen3-Embedding-4B supports context length of 32k.",
+  "subject": "Qwen3-Embedding-4B"
+ },
+ {
+  "kind": "task",
+  "object": "Cancer Genetics",
+  "page": "hf:OpenMed/OpenMed-NER-OncologyDetect-BigMed-278M",
+  "pid": "P_ASSERTS",
+  "statement": "The OpenMed-NER-OncologyDetect-BigMed-278M card states that it is a specialized model for Cancer Genetics - cancer-related genetic entities.",
+  "subject": "OpenMed-NER-OncologyDetect-BigMed-278M"
+ },
+ {
+  "kind": "size",
+  "object": "768 dimensional embeddings",
+  "page": "hf:sentence-transformers/paraphrase-mpnet-base-v2",
+  "pid": "P_ASSERTS",
+  "statement": "The paraphrase-mpnet-base-v2 card states it maps sentences to a 768 dimensional dense vector space.",
+  "subject": "paraphrase-mpnet-base-v2"
+ },
+ {
+  "kind": "task",
+  "object": "zero-shot classification",
+  "page": "hf:tasksource/deberta-small-long-nli",
+  "pid": "P_ASSERTS",
+  "statement": "The deberta-small-long-nli card states the model can be used for zero-shot classification.",
+  "subject": "deberta-small-long-nli"
+ },
+ {
+  "kind": "lineage",
+  "object": "based on Qwen3-VL-8B-Instruct",
+  "page": "hf:Qwen/Qwen3-VL-Embedding-8B",
+  "pid": "P_ASSERTS",
+  "statement": "The Qwen3-VL-Embedding-8B card states that Qwen3-VL-Embedding-8B is based on Qwen/Qwen3-VL-8B-Instruct.",
+  "subject": "Qwen3-VL-Embedding-8B"
+ },
+ {
+  "kind": "benchmark",
+  "object": "accuracy 0.989",
+  "page": "hf:distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "pid": "P_ASSERTS",
+  "statement": "The DistilBERT base uncased finetuned SST-2 card reports accuracy of 0.9885521685548412 on sst2.",
+  "subject": "DistilBERT base uncased finetuned SST-2"
+ },
+ {
+  "kind": "method",
+  "object": "SBERT",
+  "page": "hf:sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "pid": "P_ASSERTS",
+  "statement": "The paraphrase-multilingual-mpnet-base-v2 card states the model uses SBERT.",
+  "subject": "paraphrase-multilingual-mpnet-base-v2"
+ },
+ {
+  "kind": "artifact",
+  "object": "apache-2.0 (sentence-similarity)",
+  "page": "hf:NeuML/pubmedbert-base-embeddings",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists NeuML/pubmedbert-base-embeddings under license apache-2.0 (pipeline: sentence-similarity).",
+  "subject": "pubmedbert-base-embeddings"
+ },
+ {
+  "kind": "method",
+  "object": "fine-tuned on 2M StockTwits posts",
+  "page": "hf:ElKulako/cryptobert",
+  "pid": "P_ASSERTS",
+  "statement": "The card reports CryptoBERT's sentiment classification head was fine-tuned on a balanced dataset of 2M labelled StockTwits posts.",
+  "subject": "CryptoBERT"
+ },
+ {
+  "kind": "lineage",
+  "object": "nyu-mll/multi_nli",
+  "page": "hf:cross-encoder/nli-deberta-v3-xsmall",
+  "pid": "P_ASSERTS",
+  "statement": "The nli-deberta-v3-xsmall card states the dataset nyu-mll/multi_nli is used for training or evaluation.",
+  "subject": "nli-deberta-v3-xsmall"
+ },
+ {
+  "kind": "task",
+  "object": "framework: transformers",
+  "page": "hf:kyutai/mimi",
+  "pid": "P_ASSERTS",
+  "statement": "The mimi card states it uses the transformers library.",
+  "subject": "mimi"
+ },
+ {
+  "kind": "license",
+  "object": "mit",
+  "page": "hf:MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli under license mit (pipeline: zero-shot-classification).",
+  "subject": "DeBERTa-v3-base-mnli-fever-anli"
+ },
+ {
+  "kind": "lineage",
+  "object": "Trained on 1B+ sentence pairs",
+  "page": "hf:sentence-transformers/all-MiniLM-L6-v2",
+  "pid": "P_ASSERTS",
+  "statement": "The all-MiniLM-L6-v2 card reports being fine-tuned on over 1 billion sentence pairs.",
+  "subject": "all-MiniLM-L6-v2"
+ },
+ {
+  "kind": "method",
+  "object": "transformers.js",
+  "page": "hf:openai/privacy-filter",
+  "pid": "P_ASSERTS",
+  "statement": "The privacy-filter card lists transformers.js as a characteristic.",
+  "subject": "privacy-filter"
+ },
+ {
+  "kind": "task",
+  "object": "Chemical Entity Recognition",
+  "page": "hf:OpenMed/OpenMed-NER-ChemicalDetect-MultiMed-568M",
+  "pid": "P_ASSERTS",
+  "statement": "The OpenMed-NER-ChemicalDetect-MultiMed-568M card states that it is a specialized model for Chemical Entity Recognition - chemical compounds and substances in biomedical literature.",
+  "subject": "OpenMed-NER-ChemicalDetect-MultiMed-568M"
+ },
+ {
+  "kind": "artifact",
+  "object": "cc-by-4.0, pipeline tag",
+  "page": "hf:kyutai/mimi",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists kyutai/mimi under license cc-by-4.0 (pipeline: feature-extraction).",
+  "subject": "mimi"
+ },
+ {
+  "kind": "size",
+  "object": "384 dimensional embeddings",
+  "page": "hf:sentence-transformers/all-MiniLM-L6-v2",
+  "pid": "P_ASSERTS",
+  "statement": "The all-MiniLM-L6-v2 card states it maps sentences to a 384 dimensional dense vector space.",
+  "subject": "all-MiniLM-L6-v2"
+ },
+ {
+  "kind": "benchmark",
+  "object": "precision 0.921",
+  "page": "hf:dslim/bert-base-NER",
+  "pid": "P_ASSERTS",
+  "statement": "The bert-base-NER card reports precision of 0.9211550382257732 on conll2003.",
+  "subject": "bert-base-NER"
+ },
+ {
+  "kind": "license",
+  "object": "mit (feature-extraction)",
+  "page": "hf:BAAI/bge-base-en",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists BAAI/bge-base-en under license mit (pipeline: feature-extraction).",
+  "subject": "bge-base-en"
+ },
+ {
+  "kind": "artifact",
+  "object": "apache-2.0, pipeline tag",
+  "page": "hf:microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank under license apache-2.0 (pipeline: token-classification).",
+  "subject": "llmlingua-2-bert-base-multilingual-cased-meetingbank"
+ },
+ {
+  "kind": "method",
+  "object": "Transformer-based",
+  "page": "hf:ibm-granite/granite-embedding-small-english-r2",
+  "pid": "P_ASSERTS",
+  "statement": "The Granite-Embedding-Small-English-R2 card describes using Transformer-based models.",
+  "subject": "Granite-Embedding-Small-English-R2"
+ },
+ {
+  "kind": "task",
+  "object": "zero-shot classification",
+  "page": "hf:typeform/distilbert-base-uncased-mnli",
+  "pid": "P_ASSERTS",
+  "statement": "The distilbert-base-uncased-mnli card states the model can be used for zero-shot classification.",
+  "subject": "distilbert-base-uncased-mnli"
+ },
+ {
+  "kind": "license",
+  "object": "apache-2.0 (text-classification)",
+  "page": "hf:CAMeL-Lab/bert-base-arabic-camelbert-da-sentiment",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists CAMeL-Lab/bert-base-arabic-camelbert-da-sentiment under license apache-2.0 (pipeline: text-classification).",
+  "subject": "bert-base-arabic-camelbert-da-sentiment"
+ },
+ {
+  "kind": "lineage",
+  "object": "trained on conll2003",
+  "page": "hf:flair/ner-english",
+  "pid": "P_ASSERTS",
+  "statement": "The load tagger card indicates training on the conll2003 dataset.",
+  "subject": "load tagger"
+ },
+ {
+  "kind": "license",
+  "object": "cc-by-nc-sa-4.0 (token-classification)",
+  "page": "hf:Babelscape/wikineural-multilingual-ner",
+  "pid": "P_ASSERTS",
+  "statement": "The Hugging Face registry lists Babelscape/wikineural-multilingual-ner under license cc-by-nc-sa-4.0 (pipeline: token-classification).",
+  "subject": "wikineural-multilingual-ner"
+ },
+ {
+  "kind": "lineage",
+  "object": "Base model xlm-roberta-base",
+  "page": "hf:papluca/xlm-roberta-base-language-detection",
+  "pid": "P_ASSERTS",
+  "statement": "The xlm-roberta-base-language-detection card states it is a fine-tuned version of xlm-roberta-base.",
+  "subject": "xlm-roberta-base-language-detection"
+ },
+ {
+  "kind": "task",
+  "object": "Indonesian language support",
+  "page": "hf:indobenchmark/indobert-base-p1",
+  "pid": "P_ASSERTS",
+  "statement": "The indobert-base-p1 card indicates support for Indonesian.",
+  "subject": "indobert-base-p1"
+ },
+ {
+  "kind": "task",
+  "object": "zero-shot classification",
+  "page": "hf:valhalla/distilbart-mnli-12-1",
+  "pid": "P_ASSERTS",
+  "statement": "The distilbart-mnli-12-1 card states the model can be used for zero-shot classification.",
+  "subject": "distilbart-mnli-12-1"
+ },
+ {
+  "kind": "result",
+  "object": "MTEB AmazonCounterfactualClassification (en): accuracy",
+  "page": "hf:Alibaba-NLP/gte-large-en-v1.5",
+  "pid": "P_ASSERTS",
+  "statement": "The gte-large-en-v1.5 card reports on MTEB AmazonCounterfactualClassification (en), achieving accuracy of 73.01.",
+  "subject": "gte-large-en-v1.5"
+ }
+]

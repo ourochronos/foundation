@@ -53,6 +53,9 @@ def main(argv=None) -> int:
     p = sub.add_parser("chain", help="multi-hop with identity hand-off")
     p.add_argument("subject"); p.add_argument("pids", nargs="+")
 
+    sub.add_parser("replay-edits",
+                   help="re-apply journalled edits after a rebuild")
+
     p = sub.add_parser("edit", help="supersede a claim")
     p.add_argument("subject"); p.add_argument("pid")
     p.add_argument("object")
@@ -75,7 +78,42 @@ def main(argv=None) -> int:
     elif a.cmd == "chain":
         _emit(_kb(a).chain(a.subject, a.pids))
     elif a.cmd == "edit":
-        _emit(_kb(a).edit(a.subject, a.pid, a.object, a.source))
+        r = _kb(a).edit(a.subject, a.pid, a.object, a.source)
+        # An edit is SOURCE, not derived state: rebuilding the store from
+        # shards replays every extracted claim but knows nothing about
+        # corrections a user made afterwards, so they vanish (caught by
+        # the soak battery's edit_persisted case after a D92 rebuild).
+        # Journal it next to the shards so a rebuild can replay it.
+        if r.get("status") == "edited":
+            j = os.path.join(os.path.dirname(os.path.dirname(
+                os.path.abspath(__file__))), "data", "edits.jsonl")
+            with open(j, "a") as f:
+                f.write(json.dumps({"subject": a.subject, "pid": a.pid,
+                                    "object": a.object,
+                                    "source": a.source,
+                                    "table": os.environ.get(
+                                        "FOUNDATION_TABLE", "poc")}) + "\n")
+        _emit(r)
+
+    elif a.cmd == "replay-edits":
+        kb = _kb(a)
+        j = os.path.join(os.path.dirname(os.path.dirname(
+            os.path.abspath(__file__))), "data", "edits.jsonl")
+        done, skipped = 0, 0
+        if os.path.exists(j):
+            for line in open(j):
+                line = line.strip()
+                if not line:
+                    continue
+                d = json.loads(line)
+                if d.get("table", "poc") != os.environ.get(
+                        "FOUNDATION_TABLE", "poc"):
+                    skipped += 1
+                    continue
+                if kb.edit(d["subject"], d["pid"], d["object"],
+                           d["source"]).get("status") == "edited":
+                    done += 1
+        _emit({"replayed": done, "skipped_other_table": skipped})
     elif a.cmd == "views":
         _emit(_kb(a).views(a.subject, a.pid))
     elif a.cmd == "brief":

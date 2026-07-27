@@ -6,12 +6,20 @@ record and KB.ingest_shards skips it. Match key = verbatim
 (page, subject, object). Rule-6 (duplicate) vetoes keep the FIRST live
 copy and null the rest; every other rule nulls all matches.
 
+AUTHORITATIVE AND IDEMPOTENT: every run first restores all previously
+vetoed rows, then applies the veto files as they stand now. A checker
+that revises its file — one pool shrank 14 vetoes to 1 after catching
+its own case-sensitivity false positives ("MNLI" absent, "mnli" present
+14 times) — must be able to *unveto*, or an intermediate read becomes
+permanent. Re-running is always safe; the veto files are the record.
+
 Usage: .venv/bin/python scripts/apply_vetoes.py data/arxiv_ai/shards
 """
 from __future__ import annotations
 
 import json
 import sys
+from collections import Counter
 from pathlib import Path
 
 shard_dir = Path(sys.argv[1])
@@ -25,11 +33,22 @@ for vf in sorted(shard_dir.glob("veto_*.jsonl")):
         vetoes[(d["page"], d["subject"], d["object"])] = d
 
 matched: set[tuple[str, str, str]] = set()
-n_nulled = n_live = 0
+n_nulled = n_live = n_restored = 0
 for f in sorted(shard_dir.glob("out_*.jsonl")):
     rows = [json.loads(x) for x in f.read_text().splitlines() if x.strip()]
     kept_one: set[tuple[str, str, str]] = set()
     changed = False
+    for r in rows:                      # restore first: vetoes are re-derived
+        if r.pop("vetoed", None):
+            r["pid"] = r.pop("veto_pid", None) or "P_ASSERTS"
+            r.pop("veto_rule", None)
+            changed = True
+            n_restored += 1
+    # rule 6 covers MALFORMED *and* DUPLICATE. Keep-the-first-copy is only
+    # right for a duplicate; applying it to a malformed row lets the
+    # malformed row survive. A duplicate is a key occurring more than once.
+    seen = Counter((r.get("page", ""), r.get("subject", ""),
+                    r.get("object", "")) for r in rows if r.get("pid"))
     for r in rows:
         if not r.get("pid"):
             continue
@@ -39,10 +58,11 @@ for f in sorted(shard_dir.glob("out_*.jsonl")):
             n_live += 1
             continue
         matched.add(key)
-        if v["rule"] == 6 and key not in kept_one:
+        if v["rule"] == 6 and seen[key] > 1 and key not in kept_one:
             kept_one.add(key)          # duplicate veto: first copy lives
             n_live += 1
             continue
+        r["veto_pid"] = r["pid"]        # keep it so a restore is exact
         r["pid"] = None
         r["vetoed"] = True
         r["veto_rule"] = v["rule"]
@@ -53,6 +73,6 @@ for f in sorted(shard_dir.glob("out_*.jsonl")):
 
 unmatched = [k for k in vetoes if k not in matched]
 print(f"[veto] {len(vetoes)} veto rows -> {n_nulled} rows nulled, "
-      f"{n_live} live")
+      f"{n_live} live (restored {n_restored} before re-applying)")
 for k in unmatched:
     print(f"[veto] UNMATCHED (check keys): {k}")

@@ -12,6 +12,10 @@ TABLE=${FOUNDATION_TABLE:-poc}
 export FOUNDATION_TABLE=$TABLE
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
+# Override by passing shard dirs as arguments (e.g. to stage a source
+# whose audit has not closed yet); the first dir ingested gets --fresh.
+DIRS=("$@")
+if [ ${#DIRS[@]} -eq 0 ]; then
 DIRS=(
   data/wiki/shards_final          # G2 wiki tranche
   data/wiki/shards_1k             # 1k-page tranche
@@ -20,6 +24,7 @@ DIRS=(
   data/arxiv_ai/shards_cites      # citation axis, mechanical (D92)
   data/hf/shards                  # HuggingFace parts inventory (D92)
 )
+fi
 
 first=1
 for d in "${DIRS[@]}"; do

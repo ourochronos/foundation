@@ -86,3 +86,56 @@ def test_brief_grounded(kb):
 
 def test_brief_refuses_unknown(kb):
     assert kb.brief("Carol Green")["abstain"]
+
+
+# --- D92: a page's canonical form is its TITLE, not its identifier -------
+# Wikipedia pages ARE their title, so page==subject canonicalizes them.
+# arXiv pages are IDs, which silently defeated that rule: every citing
+# paper minted its own eid for the same cited work and evidence counts
+# read zero. page_title fixes the citing side, object_page the cited one.
+
+CITES = [
+    {"page": "arxiv:2000.001", "page_title": "Paper One",
+     "subject": "Paper One", "pid": "P_CITES", "object": "Cited Work",
+     "object_page": "arxiv:1999.001",
+     "statement": "Paper One cites Cited Work."},
+    {"page": "arxiv:2000.002", "page_title": "Paper Two",
+     "subject": "Paper Two", "pid": "P_CITES", "object": "Cited Work",
+     "object_page": "arxiv:1999.001",
+     "statement": "Paper Two cites Cited Work."},
+    {"page": "arxiv:2000.003", "page_title": "Paper Three",
+     "subject": "Paper Three", "pid": "P_CITES", "object": "Cited Work",
+     "object_page": "arxiv:1999.001",
+     "statement": "Paper Three cites Cited Work."},
+]
+
+
+@pytest.fixture()
+def cite_kb(tmp_path):
+    d = tmp_path / "cites"
+    d.mkdir()
+    (d / "out_0.jsonl").write_text(
+        "\n".join(json.dumps(r) for r in CITES) + "\n")
+    kb = KB(backend="memory")
+    kb.ingest_shards(d, embed=False)
+    return kb
+
+
+def test_cited_work_is_one_entity(cite_kb):
+    # the cited work has no rows of its own — it only ever appears as an
+    # object — and must still be a single entity
+    assert len(cite_kb.resolve_subject("Cited Work")) == 1
+
+
+def test_cited_by_counts_every_citing_page(cite_kb):
+    r = cite_kb.cited_by("Cited Work")
+    assert r["status"] == "answered" and r["n"] == 3
+    assert r["sources"] == ["arxiv:2000.001", "arxiv:2000.002",
+                            "arxiv:2000.003"]
+
+
+def test_views_abstains_when_nothing_is_said_about_an_entity(cite_kb):
+    # known entity, but every claim points AT it — "answered" with an
+    # empty body would be the dishonest status
+    assert cite_kb.views("Cited Work")["status"] == "abstain"
+    assert cite_kb.views("Paper One")["status"] == "answered"
