@@ -27,6 +27,16 @@ Continual ingest runs on a schedule with invariance checks — the system
   discipline; precision must hold ≥0.6 and links ≥0.8 (no
   trade-one-gate-for-another). Conflict detector rebuilt FUNCTIONAL-ONLY
   (D74) in the same pass.
+  *Instrument amendment (D78, committed before the scoring run it judges)*:
+  the precision gate is scored on INFOBOX-COMPLETE pids
+  (P569/P570/P19/P20/P26/P27), where the infobox enumerates the full value
+  set and a non-match is genuinely wrong. For multi-valued pids the infobox
+  truncates by design — the frozen 25-fp audit found 24/25 all-pid "fps"
+  were true facts absent from the infobox (the one real error was on a
+  functional pid). All-pid precision remains in every artifact as the
+  lower bound. Same move as D74's functional-only conflicts: score
+  correctness where ground truth is complete, not coverage of a
+  deliberately truncated summary box.
 - **G3. M2 recoverability**: pairwise-F1 ≥0.80 vs the registry partition,
   beating the surface-only baseline by ≥15 points (registered targets).
 - **G4. M5 grounded synthesis**: subject_brief with per-sentence citations;

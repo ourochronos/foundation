@@ -1,0 +1,41 @@
+{
+ "n_statements": 6285,
+ "pid_rate": 0.4644391408114558,
+ "infobox": {
+  "pages": 67,
+  "precision": 0.5714285714285714,
+  "precision_ci95": [
+   0.5324668362955122,
+   0.6095244750983754
+  ],
+  "recall": 0.5235849056603774,
+  "recall_ci95": [
+   0.4760465444692539,
+   0.5706997279829809
+  ],
+  "recall_text_conditioned": 0.6563467492260062
+ },
+ "links": {
+  "acc": 0.8396485447556288,
+  "n": 1821,
+  "ci95": [
+   0.8220827461817711,
+   0.8557843081422863
+  ]
+ },
+ "conflicts_found": 53,
+ "manifest": {
+  "generated_at": "2026-07-27T04:24:25.848407+00:00",
+  "commit": "ab9d11f75ba1186214657d20d2ebeee1787ab416",
+  "dirty": true,
+  "command": "scripts/m3_measure.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  }
+ }
+}

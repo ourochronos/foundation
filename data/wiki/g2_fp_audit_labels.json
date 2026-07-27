@@ -1,0 +1,15 @@
+{
+  "protocol": "25 fps sampled (seed 31) from shards_final vs-infobox measurement (precision=0.571 artifact); each judged TRUE (fact correct, absent/unmatched in infobox) or FALSE (extraction wrong) from world knowledge; labels frozen BEFORE any re-scoring run (D64).",
+  "sample_file": "data/wiki/g2_fp_audit_25.json",
+  "false_idx": [22],
+  "true_idx": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23,24],
+  "notes": {
+    "22": "Brahmagupta died 850 — FALSE (died c. 668 CE); the one real error, on a FUNCTIONAL pid (P570)",
+    "11": "statement text degenerate ('award received') but (Gauss, P166, Lalande Prize) is a true fact",
+    "9_14": "P800 topic-grade objects (independence of r.v., normal distribution) — true facts, coarse known_for grade",
+    "12": "Berkeley spouse Anne Forster TRUE — infobox {{marriage|Anne Forster|1728}} template args DROPPED by strip_wiki (parser gap)",
+    "18": "Wittgenstein Austria TRUE — citizenship template parse gap, same family"
+  },
+  "count": {"true": 24, "false": 1, "n": 25},
+  "reading": "fp pool at 20k depth is ~96% true facts absent from truncated multi-valued infobox fields; vs-infobox all-pid precision measures infobox COVERAGE, not extraction correctness (lower bound only). The one real error sits on a functional pid, where infobox completeness holds."
+}

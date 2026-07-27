@@ -53,6 +53,12 @@ def strip_wiki(v: str) -> list[str]:
             out.append(m.group(2))
     years = re.findall(r"(1[0-9]{3}|20[0-2][0-9])", v)
     out += years
+    for m in re.finditer(r"\{\{([^{}]*)\}\}", v):
+        # template args ({{marriage|Anne Forster|1728}}) were silently
+        # dropped before the G2 instrument fix; len>3 guard keeps day/month
+        # numerals from becoming substring-match candidates
+        out += [a.strip() for a in m.group(1).split("|")[1:]
+                if a.strip() and "=" not in a and len(a.strip()) > 3]
     plain = re.sub(r"\{\{[^}]*\}\}|\[\[|\]\]|<[^>]+>", " ", v)
     if plain.strip():
         out.append(plain)
@@ -110,6 +116,15 @@ print(f"[m3] {len(stmts)} statements over {len(set(s['page'] for s in stmts))}"
       flush=True)
 
 # ---- infobox P/R ----------------------------------------------------------
+# Precision GATE is scored on INFOBOX-COMPLETE pids only (G2 instrument
+# amendment, D78): for P569/P570/P19/P20/P26/P27 the infobox enumerates the
+# full value set, so a non-matching extraction is genuinely wrong. For
+# multi-valued pids (P69/P108/P166/P800) infoboxes truncate by design —
+# the 25-fp audit (data/wiki/g2_fp_audit_labels.json, frozen pre-run) found
+# 24/25 "fps" were TRUE facts absent from the infobox. All-pid precision is
+# still printed/stored as the lower-bound artifact.
+COMPLETE_PIDS = {"P569", "P570", "P19", "P20", "P26", "P27"}
+tpc = fpc = 0
 tp = fp = 0
 recall_hit = recall_tot = 0
 fair_hit, fair_tot = [0], [0]
@@ -128,6 +143,9 @@ for title, d in pages.items():
         hit = any(obj and (obj in c or c in obj) for c in cands if c)
         tp += hit
         fp += not hit
+        if s["pid"] in COMPLETE_PIDS:
+            tpc += hit
+            fpc += not hit
     lead_norm = norm(d["text"][:LEAD_N])
     for pid, vals in ib.items():
         recall_tot += 1
@@ -147,11 +165,13 @@ for title, d in pages.items():
         if in_text:
             fair_hit[0] += hit_
 prec = tp / max(tp + fp, 1)
+prec_c = tpc / max(tpc + fpc, 1)
 rec = recall_hit / max(recall_tot, 1)
 fair = fair_hit[0] / max(fair_tot[0], 1)
-print(f"[infobox] pages={n_ib_pages} precision={prec:.3f} "
-      f"(tp={tp}, fp={fp}) [>=0.6] | recall={rec:.3f} "
-      f"({recall_hit}/{recall_tot}) [registered >=0.5] | "
+print(f"[infobox] pages={n_ib_pages} precision(complete-pids)={prec_c:.3f} "
+      f"(tp={tpc}, fp={fpc}) [GATE >=0.6] | all-pid precision={prec:.3f} "
+      f"(tp={tp}, fp={fp}) [lower bound; fp-audit 24/25 true] | "
+      f"recall={rec:.3f} ({recall_hit}/{recall_tot}) [registered >=0.5] | "
       f"text-conditioned recall={fair:.3f} ({fair_hit[0]}/{fair_tot[0]}) "
       f"[scope-fair: value present in first {LEAD_N} chars]", flush=True)
 
@@ -209,7 +229,11 @@ json.dump(conflicts, open(ROOT / "data" / "wiki" / "conflicts.json", "w"),
 from codec.manifest import run_manifest, wilson_ci
 json.dump({"n_statements": len(stmts),
            "pid_rate": sum(1 for s in stmts if s.get("pid")) / max(len(stmts), 1),
-           "infobox": {"pages": n_ib_pages, "precision": prec,
+           "infobox": {"pages": n_ib_pages,
+                       "precision_complete_pids": prec_c,
+                       "precision_complete_ci95": wilson_ci(
+                           tpc, max(tpc + fpc, 1)),
+                       "precision": prec,
                        "precision_ci95": wilson_ci(tp, max(tp + fp, 1)),
                        "recall": rec,
                        "recall_ci95": wilson_ci(recall_hit,

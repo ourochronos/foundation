@@ -1,0 +1,288 @@
+{"page": "Probability", "statement": "Probability is a number between 0 and 1", "subject": "Probability", "pid": null, "object": "a number between 0 and 1"}
+{"page": "Probability", "statement": "The probability of a fair coin head is 1/2", "subject": "A fair coin", "pid": null, "object": "probability 1/2 for heads"}
+{"page": "Probability", "statement": "Probability theory is used in statistics", "subject": "Probability theory", "pid": null, "object": "used in statistics"}
+{"page": "Probability", "statement": "The word probability derives from Latin probabilitas", "subject": "probability", "pid": null, "object": "derives from Latin probabilitas"}
+{"page": "Probability", "statement": "Gerolamo Cardano demonstrated odds as ratio", "subject": "Gerolamo Cardano", "pid": null, "object": "demonstrated odds ratio"}
+{"page": "Probability", "statement": "Probability doctrine dates to Fermat and Pascal correspondence", "subject": "Probability doctrine", "pid": "P571", "object": "1654"}
+{"page": "Probability", "statement": "Christiaan Huygens gave earliest known scientific treatment", "subject": "Christiaan Huygens", "pid": null, "object": "earliest scientific treatment"}
+{"page": "Probability", "statement": "Christiaan Huygens published in 1657", "subject": "Christiaan Huygens", "pid": "P800", "object": "probability treatise"}
+{"page": "Probability", "statement": "Jakob Bernoulli authored Ars Conjectandi", "subject": "Jakob Bernoulli", "pid": "P50", "object": "Ars Conjectandi"}
+{"page": "Probability", "statement": "Ars Conjectandi was published in 1713", "subject": "Ars Conjectandi", "pid": "P571", "object": "1713"}
+{"page": "Probability", "statement": "Abraham de Moivre authored Doctrine of Chances", "subject": "Abraham de Moivre", "pid": "P50", "object": "Doctrine of Chances"}
+{"page": "Probability", "statement": "Doctrine of Chances was published in 1718", "subject": "Doctrine of Chances", "pid": "P571", "object": "1718"}
+{"page": "Probability", "statement": "Roger Cotes authored Opera Miscellanea", "subject": "Roger Cotes", "pid": "P50", "object": "Opera Miscellanea"}
+{"page": "Probability", "statement": "Thomas Simpson applied theory of errors to observation", "subject": "Thomas Simpson", "pid": null, "object": "applied error theory"}
+{"page": "Probability", "statement": "Pierre-Simon Laplace proposed first law of error in 1774", "subject": "Pierre-Simon Laplace", "pid": null, "object": "first law of error"}
+{"page": "Probability", "statement": "Daniel Bernoulli introduced maximum product principle", "subject": "Daniel Bernoulli", "pid": null, "object": "maximum product principle"}
+{"page": "Probability theory", "statement": "Probability theory is branch of mathematics", "subject": "Probability theory", "pid": null, "object": "branch of mathematics"}
+{"page": "Probability theory", "statement": "Probability theory uses axioms", "subject": "Probability theory", "pid": null, "object": "uses axioms"}
+{"page": "Probability theory", "statement": "Probability measure assigns values between 0 and 1", "subject": "Probability measure", "pid": null, "object": "values between 0 and 1"}
+{"page": "Probability theory", "statement": "Discrete and continuous random variables studied in probability", "subject": "Probability theory", "pid": null, "object": "studies random variables"}
+{"page": "Probability theory", "statement": "Law of large numbers is major result", "subject": "Law of large numbers", "pid": null, "object": "major result in probability"}
+{"page": "Probability theory", "statement": "Central limit theorem is major result", "subject": "Central limit theorem", "pid": null, "object": "major result in probability"}
+{"page": "Probability theory", "statement": "Gerolamo Cardano analyzed games of chance in 16th century", "subject": "Gerolamo Cardano", "pid": null, "object": "analyzed games of chance"}
+{"page": "Probability theory", "statement": "Fermat and Pascal studied probability in 17th century", "subject": "Pierre de Fermat", "pid": null, "object": "studied probability"}
+{"page": "Probability theory", "statement": "Christiaan Huygens published on probability in 1657", "subject": "Christiaan Huygens", "pid": "P800", "object": "probability book"}
+{"page": "Probability theory", "statement": "Pierre Laplace completed classical definition in 19th century", "subject": "Pierre Laplace", "pid": null, "object": "classical definition"}
+{"page": "Probability theory", "statement": "Andrey Kolmogorov founded modern probability theory", "subject": "Andrey Nikolaevich Kolmogorov", "pid": null, "object": "founded modern theory"}
+{"page": "Probability theory", "statement": "Kolmogorov presented axiom system in 1933", "subject": "Andrey Nikolaevich Kolmogorov", "pid": "P571", "object": "1933"}
+{"page": "Probability theory", "statement": "Richard von Mises introduced sample space", "subject": "Richard von Mises", "pid": null, "object": "introduced sample space"}
+{"page": "Probability theory", "statement": "Bruno de Finetti proposed finite additivity", "subject": "Bruno de Finetti", "pid": null, "object": "finite additivity"}
+{"page": "Problem of induction", "statement": "Problem of induction questions rationality of predictions", "subject": "Problem of induction", "pid": null, "object": "questions predictions"}
+{"page": "Problem of induction", "statement": "David Hume formulated problem of induction in 1739", "subject": "David Hume", "pid": null, "object": "formulated problem"}
+{"page": "Problem of induction", "statement": "Hume argued no non-circular justification exists", "subject": "David Hume", "pid": null, "object": "no circular justification"}
+{"page": "Problem of induction", "statement": "Sextus Empiricus questioned inductive reasoning", "subject": "Sextus Empiricus", "pid": null, "object": "questioned induction"}
+{"page": "Problem of induction", "statement": "Karl Popper proposed critical rationalism", "subject": "Karl Popper", "pid": null, "object": "critical rationalism"}
+{"page": "Problem of induction", "statement": "Popper claimed science uses conjecture and falsification", "subject": "Karl Popper", "pid": null, "object": "conjecture and falsification"}
+{"page": "Problem of induction", "statement": "Jayarasi Bhatta was 9th century Indian skeptic", "subject": "Jayarasi Bhatta", "pid": "P569", "object": "9th century"}
+{"page": "Problem of induction", "statement": "Al-Ghazali connected induction to God's power", "subject": "al-Ghazali", "pid": null, "object": "God's absolute power"}
+{"page": "Problem of induction", "statement": "William of Ockham connected induction to God's power", "subject": "William of Ockham", "pid": null, "object": "God's absolute power"}
+{"page": "Problem of induction", "statement": "Duns Scotus justified inductive inference", "subject": "Duns Scotus", "pid": null, "object": "justified inference"}
+{"page": "Problem of induction", "statement": "Bertrand Russell authored The Problems of Philosophy", "subject": "Bertrand Russell", "pid": "P50", "object": "The Problems of Philosophy"}
+{"page": "Problem of induction", "statement": "Hume distinguished relations of ideas from facts", "subject": "David Hume", "pid": null, "object": "ideas and facts distinction"}
+{"page": "Problem of induction", "statement": "Hume argued facts rely on constant conjunction", "subject": "David Hume", "pid": null, "object": "constant conjunction"}
+{"page": "Pythagoras", "statement": "Pythagoras of Samos was born c. 570 BC", "subject": "Pythagoras of Samos", "pid": "P569", "object": "c. 570 BC"}
+{"page": "Pythagoras", "statement": "Pythagoras of Samos died c. 495 BC", "subject": "Pythagoras of Samos", "pid": "P570", "object": "c. 495 BC"}
+{"page": "Pythagoras", "statement": "Pythagoras was born on Samos", "subject": "Pythagoras of Samos", "pid": "P19", "object": "Samos"}
+{"page": "Pythagoras", "statement": "Pythagoras was philosopher", "subject": "Pythagoras of Samos", "pid": "P106", "object": "philosopher"}
+{"page": "Pythagoras", "statement": "School in Croton was founded c. 530 BC", "subject": "School of Pythagoras in Croton", "pid": "P571", "object": "c. 530 BC"}
+{"page": "Pythagoras", "statement": "Pythagoras is known for Pythagorean theorem", "subject": "Pythagoras of Samos", "pid": "P800", "object": "Pythagorean theorem"}
+{"page": "Pythagoras", "statement": "Pythagoras taught transmigration of souls", "subject": "Pythagoras of Samos", "pid": null, "object": "metempsychosis"}
+{"page": "Pythagoras", "statement": "Pythagoras discovered five regular solids", "subject": "Pythagoras of Samos", "pid": null, "object": "five regular solids"}
+{"page": "Pythagoras", "statement": "Pythagoras discovered Pythagorean tuning", "subject": "Pythagoras of Samos", "pid": null, "object": "Pythagorean tuning"}
+{"page": "Pythagoras", "statement": "Pythagoras identified Venus in morning and evening", "subject": "Pythagoras of Samos", "pid": null, "object": "Venus identity"}
+{"page": "Pythagoras", "statement": "Pythagoras influenced Plato", "subject": "Pythagoras of Samos", "pid": null, "object": "influenced Plato"}
+{"page": "Pythagoras", "statement": "Pythagoras influenced Aristotle", "subject": "Pythagoras of Samos", "pid": null, "object": "influenced Aristotle"}
+{"page": "Pythagoras", "statement": "Pythagoras father was Mnesarchus", "subject": "Pythagoras of Samos", "pid": null, "object": "son of Mnesarchus"}
+{"page": "Pythagoras", "statement": "Samos had advanced architecture with Tunnel of Eupalinos", "subject": "Samos", "pid": null, "object": "Tunnel of Eupalinos"}
+{"page": "Pythagoras", "statement": "Tunnel of Eupalinos is located in Samos", "subject": "Tunnel of Eupalinos", "pid": "P276", "object": "Samos"}
+{"page": "Pythagoras", "statement": "Pythagoras contemporary with Anaximander", "subject": "Pythagoras of Samos", "pid": null, "object": "contemporary with Anaximander"}
+{"page": "Pythagorean theorem", "statement": "Pythagorean theorem is fundamental Euclidean geometry relation", "subject": "Pythagorean theorem", "pid": null, "object": "fundamental in Euclidean geometry"}
+{"page": "Pythagorean theorem", "statement": "Pythagorean theorem relates right triangle sides", "subject": "Pythagorean theorem", "pid": null, "object": "relates sides of right triangle"}
+{"page": "Pythagorean theorem", "statement": "Pythagorean equation is a\u00b2+b\u00b2=c\u00b2", "subject": "Pythagorean theorem", "pid": null, "object": "a\u00b2+b\u00b2=c\u00b2"}
+{"page": "Pythagorean theorem", "statement": "Pythagoras was born c. 570 BC", "subject": "Pythagoras", "pid": "P569", "object": "c. 570 BC"}
+{"page": "Pythagorean theorem", "statement": "Theorem proven by many different methods", "subject": "Pythagorean theorem", "pid": null, "object": "multiple proofs"}
+{"page": "Pythagorean theorem", "statement": "Berlin Papyrus 6619 dated c. 1800 BC", "subject": "Berlin Papyrus 6619", "pid": "P571", "object": "c. 1800 BC"}
+{"page": "Pythagorean theorem", "statement": "Berlin Papyrus includes Pythagorean triple 6:8:10", "subject": "Berlin Papyrus 6619", "pid": null, "object": "Pythagorean triple 6:8:10"}
+{"page": "Pythagorean theorem", "statement": "Ancient Egyptians knew 3:4:5 right triangle", "subject": "Ancient Egyptians", "pid": null, "object": "3:4:5 triangle"}
+{"page": "Pythagorean theorem", "statement": "Plimpton 322 contains Pythagorean triples", "subject": "Plimpton 322", "pid": null, "object": "Pythagorean triples"}
+{"page": "Pythagorean theorem", "statement": "YBC 7289 calculates square diagonal", "subject": "YBC 7289", "pid": null, "object": "square diagonal calculation"}
+{"page": "Pythagorean theorem", "statement": "Baudhayana Shulba Sutra states Pythagorean theorem", "subject": "Baudhayana Shulba Sutra", "pid": null, "object": "Pythagorean theorem"}
+{"page": "Pythagorean theorem", "statement": "Baudhayana Shulba Sutra dated 8th to 5th century BC", "subject": "Baudhayana Shulba Sutra", "pid": "P571", "object": "8th to 5th century BC"}
+{"page": "Pythagorean theorem", "statement": "Apastamba Shulba Sutra dated c. 600 BC", "subject": "Apastamba Shulba Sutra", "pid": "P571", "object": "c. 600 BC"}
+{"page": "Pythagorean theorem", "statement": "Proclus discussed theorem in 5th century AD", "subject": "Proclus", "pid": null, "object": "discussed theorem"}
+{"page": "Pythagorean theorem", "statement": "Euclid presented oldest axiomatic proof c. 300 BC", "subject": "Euclid", "pid": null, "object": "oldest axiomatic proof"}
+{"page": "Quantum mechanics", "statement": "Quantum mechanics describes matter and light behavior", "subject": "Quantum mechanics", "pid": null, "object": "describes matter and light"}
+{"page": "Quantum mechanics", "statement": "Quantum mechanics applies at atomic scales", "subject": "Quantum mechanics", "pid": null, "object": "applies at atomic scales"}
+{"page": "Quantum mechanics", "statement": "Classical physics approximates quantum mechanics", "subject": "Classical physics", "pid": null, "object": "approximation of quantum"}
+{"page": "Quantum mechanics", "statement": "Quantum systems have discrete quantized energy", "subject": "Quantum systems", "pid": null, "object": "discrete quantized energy"}
+{"page": "Quantum mechanics", "statement": "Max Planck solved black-body radiation problem in 1900", "subject": "Max Planck", "pid": null, "object": "black-body radiation"}
+{"page": "Quantum mechanics", "statement": "Albert Einstein explained photoelectric effect in 1905", "subject": "Albert Einstein", "pid": null, "object": "photoelectric effect"}
+{"page": "Quantum mechanics", "statement": "Niels Bohr developed quantum mechanics mid-1920s", "subject": "Niels Bohr", "pid": null, "object": "quantum mechanics"}
+{"page": "Quantum mechanics", "statement": "Erwin Schr\u00f6dinger developed quantum mechanics mid-1920s", "subject": "Erwin Schr\u00f6dinger", "pid": null, "object": "quantum mechanics"}
+{"page": "Quantum mechanics", "statement": "Werner Heisenberg developed quantum mechanics mid-1920s", "subject": "Werner Heisenberg", "pid": null, "object": "quantum mechanics"}
+{"page": "Quantum mechanics", "statement": "Max Born developed quantum mechanics mid-1920s", "subject": "Max Born", "pid": null, "object": "quantum mechanics"}
+{"page": "Quantum mechanics", "statement": "Paul Dirac developed quantum mechanics mid-1920s", "subject": "Paul Dirac", "pid": null, "object": "quantum mechanics"}
+{"page": "Quantum mechanics", "statement": "Quantum electrodynamics agrees with experiment to 1 in 10^12", "subject": "Quantum electrodynamics", "pid": null, "object": "1 part in 10^12 agreement"}
+{"page": "Quantum mechanics", "statement": "Wave-particle duality is quantum feature", "subject": "Wave-particle duality", "pid": null, "object": "quantum feature"}
+{"page": "Quantum mechanics", "statement": "Uncertainty principle limits physical quantity prediction", "subject": "Uncertainty principle", "pid": null, "object": "limits prediction"}
+{"page": "Quantum mechanics", "statement": "Bell's theorem constrains hidden variables", "subject": "Bell's theorem", "pid": null, "object": "hidden variables constraint"}
+{"page": "Rational number", "statement": "Rational number expressed as quotient of integers", "subject": "Rational number", "pid": null, "object": "quotient of integers"}
+{"page": "Rational number", "statement": "Rational numbers form field", "subject": "Rational numbers", "pid": null, "object": "form a field"}
+{"page": "Rational number", "statement": "Rational numbers closed under addition and subtraction", "subject": "Rational numbers", "pid": null, "object": "closed under addition"}
+{"page": "Rational number", "statement": "Rational numbers closed under multiplication and division", "subject": "Rational numbers", "pid": null, "object": "closed under multiplication"}
+{"page": "Rational number", "statement": "Rational numbers denoted Q", "subject": "Rational numbers", "pid": null, "object": "denoted Q"}
+{"page": "Rational number", "statement": "Rational decimal terminates or repeats", "subject": "Rational number", "pid": null, "object": "decimal terminates or repeats"}
+{"page": "Rational number", "statement": "Irrational numbers include sqrt(2)", "subject": "Irrational number", "pid": null, "object": "includes sqrt(2)"}
+{"page": "Rational number", "statement": "Irrational numbers include pi", "subject": "Irrational number", "pid": null, "object": "includes pi"}
+{"page": "Rational number", "statement": "Irrational numbers include e", "subject": "Irrational number", "pid": null, "object": "includes e"}
+{"page": "Rational number", "statement": "Rational numbers countable set", "subject": "Rational numbers", "pid": null, "object": "countable set"}
+{"page": "Rational number", "statement": "Field of rationals unique field containing integers", "subject": "Field of rationals", "pid": null, "object": "unique field with integers"}
+{"page": "Rational number", "statement": "Rationals dense subset of reals", "subject": "Rational numbers", "pid": null, "object": "dense in real numbers"}
+{"page": "Rational number", "statement": "Rational number expressed as irreducible fraction", "subject": "Rational number", "pid": null, "object": "irreducible fraction"}
+{"page": "Rational number", "statement": "Term rational used since 1570", "subject": "Rational", "pid": "P571", "object": "1570"}
+{"page": "Rational number", "statement": "Term ratio first used c. 1660 English", "subject": "ratio", "pid": "P571", "object": "c. 1660"}
+{"page": "Rationalism", "statement": "Rationalism views reason as chief knowledge source", "subject": "Rationalism", "pid": null, "object": "reason as chief source"}
+{"page": "Rationalism", "statement": "Rationalism opposed empiricism during Enlightenment", "subject": "Rationalism", "pid": null, "object": "opposed empiricism"}
+{"page": "Rationalism", "statement": "Ren\u00e9 Descartes was rationalist philosopher", "subject": "Ren\u00e9 Descartes", "pid": "P106", "object": "philosopher"}
+{"page": "Rationalism", "statement": "Descartes emphasized innate knowledge", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "innate knowledge"}
+{"page": "Rationalism", "statement": "John Locke emphasized sensory knowledge", "subject": "John Locke", "pid": null, "object": "sensory knowledge"}
+{"page": "Rationalism", "statement": "Empiricists rejected innate knowledge", "subject": "Empiricism", "pid": null, "object": "rejects innate knowledge"}
+{"page": "Rationalism", "statement": "Baruch Spinoza was rationalist philosopher", "subject": "Baruch Spinoza", "pid": "P106", "object": "philosopher"}
+{"page": "Rationalism", "statement": "Gottfried Leibniz was rationalist philosopher", "subject": "Gottfried Leibniz", "pid": "P106", "object": "philosopher"}
+{"page": "Rationalism", "statement": "Spinoza claimed all knowledge from reason", "subject": "Baruch Spinoza", "pid": null, "object": "all knowledge from reason"}
+{"page": "Rationalism", "statement": "Leibniz claimed all knowledge from reason", "subject": "Gottfried Leibniz", "pid": null, "object": "all knowledge from reason"}
+{"page": "Rationalism", "statement": "Leibniz admitted practical empiricism needed", "subject": "Gottfried Leibniz", "pid": null, "object": "practical empiricism"}
+{"page": "Rationalism", "statement": "Rationalism emphasized reason-centered politics", "subject": "Rationalism", "pid": null, "object": "reason centered politics"}
+{"page": "Rationalism", "statement": "Rationalist term for free thinkers 17th-18th centuries", "subject": "Rationalist", "pid": null, "object": "free thinker label"}
+{"page": "Rationalism", "statement": "Rationalism associated with atheism and irreligion", "subject": "Rationalism", "pid": null, "object": "associated with atheism"}
+{"page": "Real analysis", "statement": "Real analysis develops calculus rigorously over reals", "subject": "Real analysis", "pid": null, "object": "develops calculus rigorous"}
+{"page": "Real analysis", "statement": "Real analysis taught in undergraduate courses", "subject": "Real analysis", "pid": null, "object": "undergraduate mathematics"}
+{"page": "Real analysis", "statement": "Real analysis taught in graduate courses", "subject": "Real analysis", "pid": null, "object": "graduate mathematics"}
+{"page": "Real analysis", "statement": "Real analysis over Euclidean spaces", "subject": "Real analysis", "pid": null, "object": "Euclidean spaces"}
+{"page": "Real analysis", "statement": "Real analysis studies continuous functions", "subject": "Real analysis", "pid": null, "object": "continuous functions"}
+{"page": "Real analysis", "statement": "Limit is fundamental concept in real analysis", "subject": "Limit", "pid": null, "object": "fundamental concept"}
+{"page": "Real analysis", "statement": "Continuity is key topic in real analysis", "subject": "Continuity", "pid": null, "object": "key topic"}
+{"page": "Real analysis", "statement": "Differentiation is studied in real analysis", "subject": "Differentiation", "pid": null, "object": "studied concept"}
+{"page": "Real analysis", "statement": "Integration is studied in real analysis", "subject": "Integration", "pid": null, "object": "studied concept"}
+{"page": "Real analysis", "statement": "Sequences are fundamental objects in real analysis", "subject": "Sequences", "pid": null, "object": "fundamental objects"}
+{"page": "Real analysis", "statement": "Series are studied in real analysis", "subject": "Series", "pid": null, "object": "studied objects"}
+{"page": "Real analysis", "statement": "Real analysis uses metric spaces", "subject": "Real analysis", "pid": null, "object": "uses metric spaces"}
+{"page": "Real analysis", "statement": "Convergence is key concept in real analysis", "subject": "Convergence", "pid": null, "object": "key concept"}
+{"page": "Real analysis", "statement": "Derivatives studied rigorously in real analysis", "subject": "Derivatives", "pid": null, "object": "rigorous treatment"}
+{"page": "Real analysis", "statement": "Integrals studied rigorously in real analysis", "subject": "Integrals", "pid": null, "object": "rigorous treatment"}
+{"page": "Real number", "statement": "Real number used to measure continuous quantity", "subject": "Real number", "pid": null, "object": "measures continuous quantity"}
+{"page": "Real number", "statement": "Real numbers include length measurements", "subject": "Real number", "pid": null, "object": "measures length"}
+{"page": "Real number", "statement": "Real numbers include duration measurements", "subject": "Real number", "pid": null, "object": "measures duration"}
+{"page": "Real number", "statement": "Real numbers include temperature measurements", "subject": "Real number", "pid": null, "object": "measures temperature"}
+{"page": "Real number", "statement": "Real numbers continuous on number line", "subject": "Real numbers", "pid": null, "object": "continuous on line"}
+{"page": "Real number", "statement": "Real numbers include rational numbers", "subject": "Real numbers", "pid": null, "object": "includes rationals"}
+{"page": "Real number", "statement": "Real numbers include irrational numbers", "subject": "Real numbers", "pid": null, "object": "includes irrationals"}
+{"page": "Real number", "statement": "Real numbers ordered by magnitude", "subject": "Real numbers", "pid": null, "object": "ordered set"}
+{"page": "Real number", "statement": "Real numbers form continuum", "subject": "Real numbers", "pid": null, "object": "form continuum"}
+{"page": "Real number", "statement": "Real number decimal representation finite or infinite", "subject": "Real number", "pid": null, "object": "decimal representation"}
+{"page": "Real number", "statement": "Real numbers complete ordered field", "subject": "Real numbers", "pid": null, "object": "complete ordered field"}
+{"page": "Real number", "statement": "Completeness axiom distinguishes reals from rationals", "subject": "Real numbers", "pid": null, "object": "completeness axiom"}
+{"page": "Real number", "statement": "Real numbers uncountable infinite set", "subject": "Real numbers", "pid": null, "object": "uncountable set"}
+{"page": "Real number", "statement": "Real numbers dense in topology", "subject": "Real numbers", "pid": null, "object": "dense in topology"}
+{"page": "Real number", "statement": "Rational numbers subset of real numbers", "subject": "Rational numbers", "pid": null, "object": "subset of reals"}
+{"page": "Reason", "statement": "Reason is capacity to apply logic consciously", "subject": "Reason", "pid": null, "object": "apply logic"}
+{"page": "Reason", "statement": "Reason draws valid conclusions", "subject": "Reason", "pid": null, "object": "draws conclusions"}
+{"page": "Reason", "statement": "Reason aims to seek truth", "subject": "Reason", "pid": null, "object": "seek truth"}
+{"page": "Reason", "statement": "Reason from new information", "subject": "Reason", "pid": null, "object": "new information"}
+{"page": "Reason", "statement": "Reason from existing information", "subject": "Reason", "pid": null, "object": "existing information"}
+{"page": "Reason", "statement": "Reason associated with rational thought", "subject": "Reason", "pid": null, "object": "rational thought"}
+{"page": "Reason", "statement": "Reason used in philosophy", "subject": "Reason", "pid": null, "object": "philosophical tool"}
+{"page": "Reason", "statement": "Logic is formal system for reason", "subject": "Logic", "pid": null, "object": "formal system"}
+{"page": "Reason", "statement": "Deduction uses reason", "subject": "Deduction", "pid": null, "object": "uses reason"}
+{"page": "Reason", "statement": "Induction uses reason", "subject": "Induction", "pid": null, "object": "uses reason"}
+{"page": "Reason", "statement": "Inference is application of reason", "subject": "Inference", "pid": null, "object": "application of reason"}
+{"page": "Reason", "statement": "Reason basis of rationalism", "subject": "Reason", "pid": null, "object": "basis of rationalism"}
+{"page": "Reason", "statement": "Reason contrasts with intuition", "subject": "Reason", "pid": null, "object": "contrasts with intuition"}
+{"page": "Reason", "statement": "Reason involves critical thinking", "subject": "Reason", "pid": null, "object": "critical thinking"}
+{"page": "Reason", "statement": "Reason used in scientific method", "subject": "Reason", "pid": null, "object": "scientific method"}
+{"page": "Reliabilism", "statement": "Reliabilism is epistemology theory", "subject": "Reliabilism", "pid": null, "object": "epistemology theory"}
+{"page": "Reliabilism", "statement": "Reliabilism theory of justification", "subject": "Reliabilism", "pid": null, "object": "justification theory"}
+{"page": "Reliabilism", "statement": "Reliabilism theory of knowledge", "subject": "Reliabilism", "pid": null, "object": "knowledge theory"}
+{"page": "Reliabilism", "statement": "Process reliabilism advanced in philosophy", "subject": "Process reliabilism", "pid": null, "object": "philosophical theory"}
+{"page": "Reliabilism", "statement": "Reliabilism focuses on cognitive processes", "subject": "Reliabilism", "pid": null, "object": "cognitive processes"}
+{"page": "Reliabilism", "statement": "Reliabilism examines belief formation", "subject": "Reliabilism", "pid": null, "object": "belief formation"}
+{"page": "Reliabilism", "statement": "Reliabilism concerns reliable information sources", "subject": "Reliabilism", "pid": null, "object": "reliable sources"}
+{"page": "Reliabilism", "statement": "Reliabilism contrasts with foundationalism", "subject": "Reliabilism", "pid": null, "object": "differs from foundationalism"}
+{"page": "Reliabilism", "statement": "Reliabilism contrasts with coherentism", "subject": "Reliabilism", "pid": null, "object": "differs from coherentism"}
+{"page": "Reliabilism", "statement": "Reliabilism developed in contemporary epistemology", "subject": "Reliabilism", "pid": null, "object": "contemporary theory"}
+{"page": "Reliabilism", "statement": "Reliability criterion for justified belief", "subject": "Reliability", "pid": null, "object": "justification criterion"}
+{"page": "Reliabilism", "statement": "Truth tracking important in reliabilism", "subject": "Truth tracking", "pid": null, "object": "reliabilism concept"}
+{"page": "Reliabilism", "statement": "Externalism aspect of reliabilism", "subject": "Externalism", "pid": null, "object": "reliabilism feature"}
+{"page": "Reliabilism", "statement": "Perception considered reliable source in reliabilism", "subject": "Perception", "pid": null, "object": "reliable in reliabilism"}
+{"page": "Ren\u00e9 Descartes", "statement": "Ren\u00e9 Descartes born 31 March 1596", "subject": "Ren\u00e9 Descartes", "pid": "P569", "object": "31 March 1596"}
+{"page": "Ren\u00e9 Descartes", "statement": "Ren\u00e9 Descartes died 11 February 1650", "subject": "Ren\u00e9 Descartes", "pid": "P570", "object": "11 February 1650"}
+{"page": "Ren\u00e9 Descartes", "statement": "Ren\u00e9 Descartes was French polymath", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "French polymath"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes worked in philosophy", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "philosophy"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes worked in metaphysics", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "metaphysics"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes worked in epistemology", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "epistemology"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes worked in ethics", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "ethics"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes was rationalist philosopher", "subject": "Ren\u00e9 Descartes", "pid": "P106", "object": "philosopher"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes founded modern Western philosophy", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "founded modern philosophy"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes introduced Cartesian coordinate system", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "Cartesian coordinates"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes authored works on mathematics", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "mathematics works"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes developed method of doubt", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "method of doubt"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes famous for cogito ergo sum", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "cogito ergo sum"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes influenced modern science", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "influenced science"}
+{"page": "Ren\u00e9 Descartes", "statement": "Descartes active in European thought", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "active in Europe"}
+{"page": "Riemann hypothesis", "statement": "Riemann hypothesis concerns zeta function zeros", "subject": "Riemann hypothesis", "pid": null, "object": "zeta function zeros"}
+{"page": "Riemann hypothesis", "statement": "Hypothesis states zeros at negative even integers", "subject": "Riemann hypothesis", "pid": null, "object": "negative even integers"}
+{"page": "Riemann hypothesis", "statement": "Hypothesis states zeros at complex real part 1/2", "subject": "Riemann hypothesis", "pid": null, "object": "complex real part 1/2"}
+{"page": "Riemann hypothesis", "statement": "Riemann hypothesis is conjecture in mathematics", "subject": "Riemann hypothesis", "pid": null, "object": "mathematical conjecture"}
+{"page": "Riemann hypothesis", "statement": "Riemann zeta function important in number theory", "subject": "Riemann zeta function", "pid": null, "object": "number theory"}
+{"page": "Riemann hypothesis", "statement": "Hypothesis relates primes to zeta zeros", "subject": "Riemann hypothesis", "pid": null, "object": "prime distribution"}
+{"page": "Riemann hypothesis", "statement": "Many mathematicians consider hypothesis important", "subject": "Riemann hypothesis", "pid": null, "object": "important in mathematics"}
+{"page": "Riemann hypothesis", "statement": "Hypothesis unproven for over 150 years", "subject": "Riemann hypothesis", "pid": null, "object": "unproven conjecture"}
+{"page": "Riemann hypothesis", "statement": "Computational evidence supports hypothesis", "subject": "Riemann hypothesis", "pid": null, "object": "computational support"}
+{"page": "Riemann hypothesis", "statement": "Riemann hypothesis foundation of analytic number theory", "subject": "Riemann hypothesis", "pid": null, "object": "analytic number theory"}
+{"page": "Riemann hypothesis", "statement": "Hypothesis implies results in prime number distribution", "subject": "Riemann hypothesis", "pid": null, "object": "prime distribution"}
+{"page": "Riemann hypothesis", "statement": "Many equivalent formulations of hypothesis exist", "subject": "Riemann hypothesis", "pid": null, "object": "equivalent formulations"}
+{"page": "Riemann hypothesis", "statement": "Million dollar prize offered for proof", "subject": "Riemann hypothesis", "pid": null, "object": "million dollar prize"}
+{"page": "Riemann hypothesis", "statement": "Hypothesis motivates research in mathematics", "subject": "Riemann hypothesis", "pid": null, "object": "motivates research"}
+{"page": "Routledge", "statement": "Routledge is English multinational publisher", "subject": "Routledge", "pid": null, "object": "English publisher"}
+{"page": "Routledge", "statement": "Routledge founded in 1836", "subject": "Routledge", "pid": "P571", "object": "1836"}
+{"page": "Routledge", "statement": "George Routledge founded Routledge", "subject": "Routledge", "pid": "P112", "object": "George Routledge"}
+{"page": "Routledge", "statement": "Routledge specializes in academic books", "subject": "Routledge", "pid": null, "object": "academic books"}
+{"page": "Routledge", "statement": "Routledge publishes academic journals", "subject": "Routledge", "pid": null, "object": "academic journals"}
+{"page": "Routledge", "statement": "Routledge provides online resources", "subject": "Routledge", "pid": null, "object": "online resources"}
+{"page": "Routledge", "statement": "Routledge covers philosophy", "subject": "Routledge", "pid": null, "object": "philosophy publications"}
+{"page": "Routledge", "statement": "Routledge covers social sciences", "subject": "Routledge", "pid": null, "object": "social sciences"}
+{"page": "Routledge", "statement": "Routledge covers humanities", "subject": "Routledge", "pid": null, "object": "humanities"}
+{"page": "Routledge", "statement": "Routledge is multinational company", "subject": "Routledge", "pid": null, "object": "multinational corporation"}
+{"page": "Routledge", "statement": "Routledge has long publishing history", "subject": "Routledge", "pid": null, "object": "long history"}
+{"page": "Routledge", "statement": "Routledge known for academic publishing", "subject": "Routledge", "pid": null, "object": "academic reputation"}
+{"page": "Routledge", "statement": "Routledge based in England", "subject": "Routledge", "pid": "P159", "object": "England"}
+{"page": "Routledge", "statement": "Routledge major academic publisher", "subject": "Routledge", "pid": null, "object": "major publisher"}
+{"page": "Royal Society", "statement": "Royal Society of London for Improving Natural Knowledge", "subject": "Royal Society", "pid": null, "object": "formal name"}
+{"page": "Royal Society", "statement": "Royal Society is learned society", "subject": "Royal Society", "pid": null, "object": "learned society"}
+{"page": "Royal Society", "statement": "Royal Society is UK national academy of sciences", "subject": "Royal Society", "pid": null, "object": "UK national academy"}
+{"page": "Royal Society", "statement": "Royal Society fulfills scientific mission", "subject": "Royal Society", "pid": null, "object": "scientific mission"}
+{"page": "Royal Society", "statement": "Royal Society based in United Kingdom", "subject": "Royal Society", "pid": "P159", "object": "United Kingdom"}
+{"page": "Royal Society", "statement": "Royal Society promotes science", "subject": "Royal Society", "pid": null, "object": "promotes science"}
+{"page": "Royal Society", "statement": "Royal Society supports natural knowledge", "subject": "Royal Society", "pid": null, "object": "natural knowledge"}
+{"page": "Royal Society", "statement": "Royal Society has fellows", "subject": "Royal Society", "pid": null, "object": "fellowship system"}
+{"page": "Royal Society", "statement": "Royal Society publishes scientific work", "subject": "Royal Society", "pid": null, "object": "publishes research"}
+{"page": "Royal Society", "statement": "Royal Society advances science", "subject": "Royal Society", "pid": null, "object": "advances science"}
+{"page": "Royal Society", "statement": "Royal Society coordinates scientific research", "subject": "Royal Society", "pid": null, "object": "coordinates research"}
+{"page": "Royal Society", "statement": "Royal Society prestigious organization", "subject": "Royal Society", "pid": null, "object": "prestigious institution"}
+{"page": "Royal Society", "statement": "Royal Society works internationally", "subject": "Royal Society", "pid": null, "object": "international work"}
+{"page": "Rudolf Carnap", "statement": "Paul Rudolf Carnap born 18 May 1891", "subject": "Rudolf Carnap", "pid": "P569", "object": "18 May 1891"}
+{"page": "Rudolf Carnap", "statement": "Rudolf Carnap died 14 September 1970", "subject": "Rudolf Carnap", "pid": "P570", "object": "14 September 1970"}
+{"page": "Rudolf Carnap", "statement": "Carnap was German philosopher", "subject": "Rudolf Carnap", "pid": null, "object": "German philosopher"}
+{"page": "Rudolf Carnap", "statement": "Carnap was German logician", "subject": "Rudolf Carnap", "pid": "P106", "object": "logician"}
+{"page": "Rudolf Carnap", "statement": "Carnap active in Europe before 1935", "subject": "Rudolf Carnap", "pid": null, "object": "active in Europe"}
+{"page": "Rudolf Carnap", "statement": "Carnap active in United States after 1935", "subject": "Rudolf Carnap", "pid": null, "object": "active in United States"}
+{"page": "Rudolf Carnap", "statement": "Carnap contributed to philosophical logic", "subject": "Rudolf Carnap", "pid": null, "object": "philosophical logic"}
+{"page": "Rudolf Carnap", "statement": "Carnap contributed to semantics", "subject": "Rudolf Carnap", "pid": null, "object": "semantics"}
+{"page": "Rudolf Carnap", "statement": "Carnap contributed to logical empiricism", "subject": "Rudolf Carnap", "pid": null, "object": "logical empiricism"}
+{"page": "Rudolf Carnap", "statement": "Carnap was major 20th century philosopher", "subject": "Rudolf Carnap", "pid": null, "object": "major 20th century figure"}
+{"page": "Rudolf Carnap", "statement": "Carnap influenced philosophy of science", "subject": "Rudolf Carnap", "pid": null, "object": "influenced philosophy of science"}
+{"page": "Rudolf Carnap", "statement": "Carnap worked on logical analysis", "subject": "Rudolf Carnap", "pid": null, "object": "logical analysis"}
+{"page": "Rudolf Carnap", "statement": "Carnap associated with Vienna Circle", "subject": "Rudolf Carnap", "pid": null, "object": "Vienna Circle"}
+{"page": "Rudolf Carnap", "statement": "Carnap developed analytic philosophy", "subject": "Rudolf Carnap", "pid": null, "object": "analytic philosophy"}
+{"page": "Scientific method", "statement": "Scientific method is empirical method for knowledge", "subject": "Scientific method", "pid": null, "object": "empirical knowledge"}
+{"page": "Scientific method", "statement": "Scientific method uses careful observation", "subject": "Scientific method", "pid": null, "object": "observation"}
+{"page": "Scientific method", "statement": "Scientific method uses rigorous skepticism", "subject": "Scientific method", "pid": null, "object": "skepticism"}
+{"page": "Scientific method", "statement": "Scientific method uses hypothesis testing", "subject": "Scientific method", "pid": null, "object": "hypothesis testing"}
+{"page": "Scientific method", "statement": "Scientific method uses experimental validation", "subject": "Scientific method", "pid": null, "object": "experimental validation"}
+{"page": "Scientific method", "statement": "Scientific method developed from ancient times", "subject": "Scientific method", "pid": null, "object": "ancient origins"}
+{"page": "Scientific method", "statement": "Scientific method developed through medieval times", "subject": "Scientific method", "pid": null, "object": "medieval development"}
+{"page": "Scientific method", "statement": "Scientific method foundation of science", "subject": "Scientific method", "pid": null, "object": "foundation of science"}
+{"page": "Scientific method", "statement": "Scientific method uses experimentation", "subject": "Scientific method", "pid": null, "object": "experimentation"}
+{"page": "Scientific method", "statement": "Scientific method uses reproducibility", "subject": "Scientific method", "pid": null, "object": "reproducibility"}
+{"page": "Scientific method", "statement": "Scientific method produces reliable knowledge", "subject": "Scientific method", "pid": null, "object": "reliable knowledge"}
+{"page": "Scientific method", "statement": "Scientific method rejects unfounded claims", "subject": "Scientific method", "pid": null, "object": "reject unfounded"}
+{"page": "Scientific method", "statement": "Scientific method empirical approach to truth", "subject": "Scientific method", "pid": null, "object": "empirical truth"}
+{"page": "Scientific method", "statement": "Scientific method basis of modern science", "subject": "Scientific method", "pid": null, "object": "modern science"}
+{"page": "Set theory", "statement": "Set theory is branch of mathematical logic", "subject": "Set theory", "pid": null, "object": "branch of mathematical logic"}
+{"page": "Set theory", "statement": "Set theory studies sets", "subject": "Set theory", "pid": null, "object": "studies sets"}
+{"page": "Set theory", "statement": "Set theory studies collections of objects", "subject": "Set theory", "pid": null, "object": "object collections"}
+{"page": "Set theory", "statement": "Sets can contain objects of any kind", "subject": "Set", "pid": null, "object": "any object types"}
+{"page": "Set theory", "statement": "Set theory developed rigorously", "subject": "Set theory", "pid": null, "object": "rigorous development"}
+{"page": "Set theory", "statement": "Set theory foundation of mathematics", "subject": "Set theory", "pid": null, "object": "mathematics foundation"}
+{"page": "Set theory", "statement": "Set theory defines mathematical structures", "subject": "Set theory", "pid": null, "object": "mathematical structures"}
+{"page": "Set theory", "statement": "Set theory studies cardinality", "subject": "Set theory", "pid": null, "object": "cardinality"}
+{"page": "Set theory", "statement": "Set theory studies infinity", "subject": "Set theory", "pid": null, "object": "infinity"}
+{"page": "Set theory", "statement": "Set theory uses axioms", "subject": "Set theory", "pid": null, "object": "axiomatic system"}
+{"page": "Set theory", "statement": "Set theory defines operations on sets", "subject": "Set theory", "pid": null, "object": "set operations"}
+{"page": "Set theory", "statement": "Set theory basis of formal logic", "subject": "Set theory", "pid": null, "object": "formal logic basis"}
+{"page": "Set theory", "statement": "Set theory supports modern mathematics", "subject": "Set theory", "pid": null, "object": "modern mathematics"}
+{"page": "Set theory", "statement": "Set theory essential to mathematical development", "subject": "Set theory", "pid": null, "object": "mathematical development"}
+{"page": "Social epistemology", "statement": "Social epistemology studies knowledge as collective achievement", "subject": "Social epistemology", "pid": null, "object": "collective knowledge"}
+{"page": "Social epistemology", "statement": "Social epistemology approaches epistemology", "subject": "Social epistemology", "pid": null, "object": "epistemology approach"}
+{"page": "Social epistemology", "statement": "Social epistemology examines knowledge construction", "subject": "Social epistemology", "pid": null, "object": "knowledge construction"}
+{"page": "Social epistemology", "statement": "Social epistemology studies social practices", "subject": "Social epistemology", "pid": null, "object": "social practices"}
+{"page": "Social epistemology", "statement": "Social epistemology analyzes testimony", "subject": "Social epistemology", "pid": null, "object": "testimony analysis"}
+{"page": "Social epistemology", "statement": "Social epistemology studies scientific communities", "subject": "Social epistemology", "pid": null, "object": "scientific communities"}
+{"page": "Social epistemology", "statement": "Social epistemology examines trust in knowledge", "subject": "Social epistemology", "pid": null, "object": "epistemic trust"}
+{"page": "Social epistemology", "statement": "Social epistemology contemporary field", "subject": "Social epistemology", "pid": null, "object": "contemporary philosophy"}
+{"page": "Social epistemology", "statement": "Social epistemology critiques individual epistemology", "subject": "Social epistemology", "pid": null, "object": "critiques individualism"}
+{"page": "Social epistemology", "statement": "Social epistemology emphasizes social context", "subject": "Social epistemology", "pid": null, "object": "social context"}
+{"page": "Social epistemology", "statement": "Social epistemology studies group knowledge", "subject": "Social epistemology", "pid": null, "object": "group knowledge"}
+{"page": "Social epistemology", "statement": "Social epistemology examines institutional knowledge", "subject": "Social epistemology", "pid": null, "object": "institutional knowledge"}
+{"page": "Social epistemology", "statement": "Social epistemology relevant to science policy", "subject": "Social epistemology", "pid": null, "object": "science policy"}

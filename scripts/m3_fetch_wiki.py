@@ -60,7 +60,8 @@ BIOS = ["Leonhard Euler", "Carl Friedrich Gauss", "Emmy Noether",
         "Pythagoras", "Maryam Mirzakhani", "Katherine Johnson",
         "Mary Cartwright", "Julia Robinson", "Olga Ladyzhenskaya"]
 SEEDS = MATH + EPIST + BIOS
-TARGET = 200
+import os
+TARGET = int(os.environ.get("WIKI_TARGET", "200"))
 
 
 def fetch(title: str) -> dict | None:
