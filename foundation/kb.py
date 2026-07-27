@@ -207,6 +207,9 @@ class KB:
                                  "page_title": (str(d["page_title"])
                                                 if d.get("page_title")
                                                 else None),
+                                 "object_page": (str(d["object_page"])
+                                                 if d.get("object_page")
+                                                 else None),
                                  "revid": d.get("revid"),
                                  "sid": f"{f.name}:{ln}"})
         # A page's canonical form is its TITLE. Wikipedia pages ARE their
@@ -229,6 +232,16 @@ class KB:
                     and r["subject"] not in self._canonical:
                 e = self.reg._mint(r["subject"], r["page"])
                 self._canonical[r["subject"]] = e.eid
+        # A link target is canonical for the page it names, even when that
+        # page contributes no rows of its own. Citation edges exposed this:
+        # a cited work whose own source had no bibliography never appeared
+        # as a subject, so every citing paper minted a fresh eid for it and
+        # the evidence count read zero. `object_page` is the extractor
+        # saying "this object IS that page's title" — a wikilink, declared.
+        for r in rows:
+            if r["object_page"] and r["object"] not in self._canonical:
+                e = self.reg._mint(r["object"], r["object_page"])
+                self._canonical[r["object"]] = e.eid
         Z = (self._embed([r["statement"] for r in rows])
              if embed and rows else
              np.zeros((len(rows), getattr(self.store, "dim", 1024)),

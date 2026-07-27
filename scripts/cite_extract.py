@@ -77,6 +77,9 @@ for h in sorted(HTML.glob("*.html.gz")):
             "pid": "P_CITES",
             "kind": "citation",
             "object": obj[:200],
+            # the cited work IS that page's title when it is in-corpus —
+            # declaring it makes one eid carry every citation of the work
+            "object_page": f"arxiv:{cited['arxiv_id']}" if cited else None,
             "statement": (f"{citing['title']} (arXiv:{citing['arxiv_id']}) "
                           f"cites {obj} (arXiv:{cid})."),
             "in_corpus": cited is not None})
