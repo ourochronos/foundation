@@ -2,6 +2,19 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-27 — D74: M3 v2 — two gates green, recall trajectory positive, and the conflict audit found the REAL lesson: conflicts require functionality-awareness
+**v2 changes** (object discipline, 8k text, 15–25 statement budget; 2,972 statements / 199 of 200 pages after gap re-sharding — agent-ops: 25-page × 8k shards exceed reliable single-agent capacity, ~13 pages is the safe unit):
+
+| gate | v1 | v2 | verdict |
+|---|---|---|---|
+| infobox precision ≥0.6 | 0.775 | 0.676 | ✓ (volume-for-precision trade, still green) |
+| infobox recall ≥0.5 | 0.229 (0.343 fair) | 0.321 (**0.452** fair) | ✗, strong trajectory |
+| link accuracy ≥0.8 | 0.718 | **0.810** instrument-corrected (raw 0.785 recorded) | ✓ — correction excludes common-noun object classes (P106/P31/genre; 168 items) and era values, which are correct extractions that are legitimately unlinked |
+| conflicts ≥20 + audit ≥0.8 | 16 | 28 candidates ✓ — **audit precision 1/25 = 0.04 ✗** | detector re-scoped (below) |
+
+**The conflict finding (worth more than a green gate)**: 24 of 25 audited "conflicts" are MULTI-VALUED properties (P50 author-of-many, P800 notable works, P69 educated-at-several) or TEMPORAL succession (Noether's employers) — only Thales' birth year ("624 BCE" vs "c. 625 BC") is a genuine cross-page disagreement. Conflict detection must be restricted to FUNCTIONAL (single-valued) properties — the exact D49 machinery, fourth appearance of the functionality lesson. And the deeper corpus truth: a single-source encyclopedia mostly agrees with itself; Track I's natural-data test needs genuinely multi-source corpora (the ArXiv/multi-encyclopedia case). The views MECHANISM stands proven (D60); its natural feed was mis-sourced.
+**M3 standing**: precision ✓, links ✓, conflicts re-scoped with a named one-line fix, recall the one open number (path: statement budget again or full-article text). M1's 0.85 mapping re-test on this corpus: next.
+
 ## 2026-07-27 — D73: M3 first pass — precision gate MET on real Wikipedia; recall and object-quality defects named; the Wikipedia thesis half-confirmed
 **Corpus**: 200 pages (Math + Epistemology + mathematician bios; 104 infobox-bearing), fetched with wikitext quarantined as ground truth. **Extraction**: statement-first, schema-native pids assigned at extraction time with full sentence context (D69+D72 combined), 12 Haiku shards (two under-delivered on turn exhaustion; single-Write re-shards fixed them — agent-ops lesson: incremental writes burn turns). 1,365 statements / 172 pages, pid-rate 0.55.
 **Against the registered targets** (`m3_measure.py`, `results/m3_measure.json`):

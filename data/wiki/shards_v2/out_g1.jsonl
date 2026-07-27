@@ -1,0 +1,223 @@
+{"page": "Computer science", "statement": "Wilhelm Schickard designed and constructed the first working mechanical calculator.", "subject": "Wilhelm Schickard", "pid": "P170", "object": "first working mechanical calculator"}
+{"page": "Computer science", "statement": "Wilhelm Schickard designed the mechanical calculator in 1623.", "subject": "Wilhelm Schickard", "pid": "P571", "object": "1623"}
+{"page": "Computer science", "statement": "Gottfried Leibniz demonstrated a digital mechanical calculator called the Stepped Reckoner.", "subject": "Gottfried Leibniz", "pid": "P170", "object": "Stepped Reckoner"}
+{"page": "Computer science", "statement": "Gottfried Leibniz demonstrated the digital mechanical calculator in 1673.", "subject": "Gottfried Leibniz", "pid": "P571", "object": "1673"}
+{"page": "Computer science", "statement": "Gottfried Leibniz documented the binary number system.", "subject": "Gottfried Leibniz", "pid": "P170", "object": "binary number system"}
+{"page": "Computer science", "statement": "Thomas Harriot documented the binary number system decades before Leibniz.", "subject": "Thomas Harriot", "pid": "P170", "object": "binary number system"}
+{"page": "Computer science", "statement": "Thomas de Colmar invented the simplified arithmometer.", "subject": "Thomas de Colmar", "pid": "P170", "object": "arithmometer"}
+{"page": "Computer science", "statement": "Thomas de Colmar launched the mechanical calculator industry in 1820.", "subject": "Thomas de Colmar", "pid": "P571", "object": "1820"}
+{"page": "Computer science", "statement": "Charles Babbage designed the Difference Engine.", "subject": "Charles Babbage", "pid": "P170", "object": "Difference Engine"}
+{"page": "Computer science", "statement": "Charles Babbage started the design of the Difference Engine in 1822.", "subject": "Charles Babbage", "pid": "P571", "object": "1822"}
+{"page": "Computer science", "statement": "Charles Babbage designed the Analytical Engine.", "subject": "Charles Babbage", "pid": "P170", "object": "Analytical Engine"}
+{"page": "Computer science", "statement": "Charles Babbage started developing the Analytical Engine in 1834.", "subject": "Charles Babbage", "pid": "P571", "object": "1834"}
+{"page": "Computer science", "statement": "Ada Lovelace wrote an algorithm to compute the Bernoulli numbers in 1843.", "subject": "Ada Lovelace", "pid": "P50", "object": "algorithm for Bernoulli numbers"}
+{"page": "Computer science", "statement": "Ada Lovelace's algorithm is considered the first published algorithm tailored for implementation on a computer.", "subject": "Ada Lovelace", "pid": "P571", "object": "1843"}
+{"page": "Computer science", "statement": "Herman Hollerith invented the tabulator.", "subject": "Herman Hollerith", "pid": "P170", "object": "tabulator"}
+{"page": "Computer science", "statement": "Herman Hollerith invented the tabulator around 1885.", "subject": "Herman Hollerith", "pid": "P571", "object": "1885"}
+{"page": "Computer science", "statement": "Herman Hollerith's company eventually became part of IBM.", "subject": "Herman Hollerith", "pid": "P127", "object": "IBM"}
+{"page": "Computer science", "statement": "Percy Ludgate published a design for a mechanical analytical engine.", "subject": "Percy Ludgate", "pid": "P170", "object": "mechanical analytical engine design"}
+{"page": "Computer science", "statement": "Percy Ludgate published the design in 1909.", "subject": "Percy Ludgate", "pid": "P571", "object": "1909"}
+{"page": "Computer science", "statement": "Leonardo Torres Quevedo was a Spanish engineer.", "subject": "Leonardo Torres Quevedo", "pid": "P27", "object": "Spain"}
+{"page": "Computer science", "statement": "Leonardo Torres Quevedo published Essays on Automatics.", "subject": "Leonardo Torres Quevedo", "pid": "P50", "object": "Essays on Automatics"}
+{"page": "Computer science", "statement": "Leonardo Torres Quevedo published Essays on Automatics in 1914.", "subject": "Leonardo Torres Quevedo", "pid": "P571", "object": "1914"}
+{"page": "Computer science", "statement": "Leonardo Torres Quevedo designed a theoretical electromechanical calculating machine.", "subject": "Leonardo Torres Quevedo", "pid": "P170", "object": "electromechanical calculating machine"}
+{"page": "Computer science", "statement": "Leonardo Torres Quevedo presented the Electromechanical Arithmometer in Paris in 1920.", "subject": "Leonardo Torres Quevedo", "pid": "P571", "object": "1920"}
+{"page": "Computer science", "statement": "Howard Aiken convinced IBM to develop the ASCC/Harvard Mark I.", "subject": "Howard Aiken", "pid": "P170", "object": "ASCC/Harvard Mark I"}
+{"page": "Computer science", "statement": "Howard Aiken convinced IBM to develop the ASCC/Harvard Mark I in 1937.", "subject": "Howard Aiken", "pid": "P571", "object": "1937"}
+{"page": "Computer science", "statement": "IBM founded the Watson Scientific Computing Laboratory.", "subject": "IBM", "pid": "P170", "object": "Watson Scientific Computing Laboratory"}
+{"page": "Computer science", "statement": "Watson Scientific Computing Laboratory is located at Columbia University in New York City.", "subject": "Watson Scientific Computing Laboratory", "pid": "P159", "object": "Columbia University"}
+{"page": "Computer science", "statement": "IBM founded the Watson Scientific Computing Laboratory in 1945.", "subject": "IBM", "pid": "P571", "object": "1945"}
+{"page": "Computer science", "statement": "Columbia University offered one of the first academic-credit courses in computer science in 1946.", "subject": "Columbia University", "pid": "P571", "object": "1946"}
+{"page": "Computer science", "statement": "The Cambridge Diploma in Computer Science began at the University of Cambridge Computer Laboratory.", "subject": "Cambridge Diploma in Computer Science", "pid": "P159", "object": "University of Cambridge Computer Laboratory"}
+{"page": "Computer science", "statement": "The Cambridge Diploma in Computer Science began in 1953.", "subject": "Cambridge Diploma in Computer Science", "pid": "P571", "object": "1953"}
+{"page": "Computer science", "statement": "The first computer science department in the United States was formed at Purdue University.", "subject": "Purdue University", "pid": "P170", "object": "first computer science department in the United States"}
+{"page": "Computer science", "statement": "The first computer science department in the United States was formed at Purdue University in 1962.", "subject": "Purdue University", "pid": "P571", "object": "1962"}
+{"page": "Continuous function", "statement": "A continuous function is a function where small variation in argument induces at most small variation in value.", "subject": "continuous function", "pid": null, "object": "mathematical property of no abrupt changes"}
+{"page": "Continuous function", "statement": "Bernard Bolzano gave the first form of the epsilon-delta definition of continuity.", "subject": "Bernard Bolzano", "pid": "P50", "object": "epsilon-delta definition of continuity"}
+{"page": "Continuous function", "statement": "Bernard Bolzano gave the epsilon-delta definition of continuity in 1817.", "subject": "Bernard Bolzano", "pid": "P571", "object": "1817"}
+{"page": "Continuous function", "statement": "Augustin-Louis Cauchy defined continuity of y=f(x).", "subject": "Augustin-Louis Cauchy", "pid": "P50", "object": "definition of continuity"}
+{"page": "Continuous function", "statement": "Cauchy's definition of continuity is found in Cours d'Analyse.", "subject": "Augustin-Louis Cauchy", "pid": "P50", "object": "Cours d'Analyse"}
+{"page": "Continuous function", "statement": "Bolzano provided formal definitions for pointwise continuity and uniform continuity in the 1830s.", "subject": "Bernard Bolzano", "pid": "P571", "object": "1830s"}
+{"page": "Continuous function", "statement": "Bolzano's work on continuity was not published until the 1930s.", "subject": "Bernard Bolzano", "pid": "P571", "object": "1930s"}
+{"page": "Continuous function", "statement": "Karl Weierstrass considered that a function is continuous at a point.", "subject": "Karl Weierstrass", "pid": "P50", "object": "theory of continuity at a point"}
+{"page": "Continuous function", "statement": "Eduard Heine provided the first published definition of uniform continuity.", "subject": "Eduard Heine", "pid": "P50", "object": "definition of uniform continuity"}
+{"page": "Continuous function", "statement": "Eduard Heine provided the definition of uniform continuity in 1872.", "subject": "Eduard Heine", "pid": "P571", "object": "1872"}
+{"page": "Continuous function", "statement": "Peter Gustav Lejeune Dirichlet gave lectures that inspired Heine's work.", "subject": "Peter Gustav Lejeune Dirichlet", "pid": "P50", "object": "lectures on uniform continuity"}
+{"page": "Continuous function", "statement": "Peter Gustav Lejeune Dirichlet gave lectures in 1854.", "subject": "Peter Gustav Lejeune Dirichlet", "pid": "P571", "object": "1854"}
+{"page": "Continuous function", "statement": "Édouard Goursat assumed continuity when function is defined.", "subject": "Édouard Goursat", "pid": "P50", "object": "definition of continuity"}
+{"page": "Continuous function", "statement": "Camille Jordan allowed continuity even if function defined only at a single point.", "subject": "Camille Jordan", "pid": "P50", "object": "definition of continuity"}
+{"page": "Continuous function", "statement": "Continuous function is a core concept of calculus and mathematical analysis.", "subject": "continuous function", "pid": null, "object": "core concept in calculus"}
+{"page": "Continuous function", "statement": "Uniform continuity is a stronger form of continuity.", "subject": "uniform continuity", "pid": null, "object": "stronger form of continuity"}
+{"page": "Continuous function", "statement": "The height of a growing flower over time is considered a continuous function.", "subject": "height of growing flower", "pid": null, "object": "continuous function"}
+{"page": "Continuous function", "statement": "The amount of money in a bank account over time is a discontinuous function.", "subject": "amount of money in bank account", "pid": null, "object": "discontinuous function"}
+{"page": "Continuum hypothesis", "statement": "Georg Cantor advanced the continuum hypothesis.", "subject": "Georg Cantor", "pid": "P50", "object": "continuum hypothesis"}
+{"page": "Continuum hypothesis", "statement": "Georg Cantor advanced the continuum hypothesis in 1878.", "subject": "Georg Cantor", "pid": "P571", "object": "1878"}
+{"page": "Continuum hypothesis", "statement": "The continuum hypothesis was first of Hilbert's 23 problems.", "subject": "continuum hypothesis", "pid": null, "object": "first of Hilbert's 23 problems"}
+{"page": "Continuum hypothesis", "statement": "Hilbert presented 23 important open questions in 1900.", "subject": "David Hilbert", "pid": "P571", "object": "1900"}
+{"page": "Continuum hypothesis", "statement": "Paul Cohen proved the independence of the continuum hypothesis from ZFC in 1963.", "subject": "Paul Cohen", "pid": "P571", "object": "1963"}
+{"page": "Continuum hypothesis", "statement": "Kurt Gödel proved in 1940 that the negation of the continuum hypothesis could not be proved in standard set theory.", "subject": "Kurt Gödel", "pid": "P571", "object": "1940"}
+{"page": "Continuum hypothesis", "statement": "Georg Cantor first introduced the continuum hypothesis in his 1878 paper Ein Beitrag zur Mannigfaltigkeitslehre.", "subject": "Georg Cantor", "pid": "P50", "object": "Ein Beitrag zur Mannigfaltigkeitslehre"}
+{"page": "Continuum hypothesis", "statement": "Cantor wrote to Gösta Mittag-Leffler on 25 October 1882 and formulated the continuum hypothesis.", "subject": "Georg Cantor", "pid": "P571", "object": "1882"}
+{"page": "Continuum hypothesis", "statement": "By the 1890s, many mathematicians in Germany and France were aware of the continuum hypothesis problem.", "subject": "continuum hypothesis", "pid": "P571", "object": "1890s"}
+{"page": "Continuum hypothesis", "statement": "Paul Tannery claimed to prove the continuum hypothesis as early as 1884.", "subject": "Paul Tannery", "pid": "P571", "object": "1884"}
+{"page": "Continuum hypothesis", "statement": "Beppo Levi claimed to have a proof in 1890.", "subject": "Beppo Levi", "pid": "P571", "object": "1890"}
+{"page": "Continuum hypothesis", "statement": "Gyula Kőnig announced he had disproven the continuum hypothesis at the 1904 ICM in Heidelberg.", "subject": "Gyula Kőnig", "pid": "P571", "object": "1904"}
+{"page": "Continuum hypothesis", "statement": "Felix Klein brought Kőnig's announcement to the attention of the Grand Duke of Baden Frederick I.", "subject": "Felix Klein", "pid": null, "object": "communicated Kőnig's announcement to Frederick I"}
+{"page": "Continuum hypothesis", "statement": "Felix Bernstein published an attempted proof of the continuum hypothesis in 1904.", "subject": "Felix Bernstein", "pid": "P571", "object": "1904"}
+{"page": "Continuum hypothesis", "statement": "Hilbert claimed to have solved the continuum hypothesis in 1926.", "subject": "David Hilbert", "pid": "P571", "object": "1926"}
+{"page": "Continuum hypothesis", "statement": "Gyula Kőnig established König's theorem in 1906.", "subject": "Gyula Kőnig", "pid": "P571", "object": "1906"}
+{"page": "Continuum hypothesis", "statement": "Felix Hausdorff introduced the concept of cofinality in 1908.", "subject": "Felix Hausdorff", "pid": "P571", "object": "1908"}
+{"page": "Continuum hypothesis", "statement": "Hausdorff formulated the generalized continuum hypothesis question.", "subject": "Felix Hausdorff", "pid": "P50", "object": "generalized continuum hypothesis question"}
+{"page": "Continuum hypothesis", "statement": "Alfred Tarski named the generalized continuum hypothesis in 1925.", "subject": "Alfred Tarski", "pid": "P571", "object": "1925"}
+{"page": "Continuum hypothesis", "statement": "Thoralf Skolem conjectured that the continuum hypothesis could not be settled by Zermelo set theory in 1923.", "subject": "Thoralf Skolem", "pid": "P571", "object": "1923"}
+{"page": "Critique of Pure Reason", "statement": "Critique of Pure Reason was written by Immanuel Kant.", "subject": "Critique of Pure Reason", "pid": "P50", "object": "Immanuel Kant"}
+{"page": "Critique of Pure Reason", "statement": "Critique of Pure Reason was published in 1781.", "subject": "Critique of Pure Reason", "pid": "P571", "object": "1781"}
+{"page": "Critique of Pure Reason", "statement": "A second edition of Critique of Pure Reason was published in 1787.", "subject": "Critique of Pure Reason", "pid": "P571", "object": "1787"}
+{"page": "Critique of Pure Reason", "statement": "Critique of Pure Reason is also referred to as Kant's First Critique.", "subject": "Critique of Pure Reason", "pid": null, "object": "Kant's First Critique"}
+{"page": "Critique of Pure Reason", "statement": "Immanuel Kant wrote Critique of Practical Reason.", "subject": "Immanuel Kant", "pid": "P50", "object": "Critique of Practical Reason"}
+{"page": "Critique of Pure Reason", "statement": "Critique of Practical Reason was published in 1788.", "subject": "Critique of Practical Reason", "pid": "P571", "object": "1788"}
+{"page": "Critique of Pure Reason", "statement": "Immanuel Kant wrote Critique of Judgment.", "subject": "Immanuel Kant", "pid": "P50", "object": "Critique of Judgment"}
+{"page": "Critique of Pure Reason", "statement": "Critique of Judgment was published in 1790.", "subject": "Critique of Judgment", "pid": "P571", "object": "1790"}
+{"page": "Critique of Pure Reason", "statement": "Kant built on the work of empiricist philosophers John Locke and David Hume.", "subject": "Immanuel Kant", "pid": null, "object": "built on empiricist philosophy"}
+{"page": "Critique of Pure Reason", "statement": "Kant built on the work of rationalist philosophers René Descartes, Gottfried Wilhelm Leibniz, and Christian Wolff.", "subject": "Immanuel Kant", "pid": null, "object": "built on rationalist philosophy"}
+{"page": "Critique of Pure Reason", "statement": "Kant expounded new ideas on the nature of space and time.", "subject": "Immanuel Kant", "pid": "P50", "object": "ideas on space and time"}
+{"page": "Critique of Pure Reason", "statement": "Kant sought to provide solutions to David Hume's skepticism regarding knowledge of cause and effect.", "subject": "Immanuel Kant", "pid": "P50", "object": "solution to Hume's skepticism on causality"}
+{"page": "Critique of Pure Reason", "statement": "Kant sought to provide solutions to René Descartes' skepticism regarding knowledge of the external world.", "subject": "Immanuel Kant", "pid": "P50", "object": "solution to Descartes' skepticism on external world"}
+{"page": "Critique of Pure Reason", "statement": "The distinctive character of analytic judgments is that they can be known to be true by analyzing concepts.", "subject": "analytic judgments", "pid": null, "object": "known by analysis of concepts"}
+{"page": "Critique of Pure Reason", "statement": "Kant considers the proposition All bodies are extended as an analytic judgment.", "subject": "All bodies are extended", "pid": null, "object": "analytic judgment"}
+{"page": "Critique of Pure Reason", "statement": "Kant considers the proposition All bodies are heavy as a synthetic judgment.", "subject": "All bodies are heavy", "pid": null, "object": "synthetic judgment"}
+{"page": "Critique of Pure Reason", "statement": "Before Kant, philosophers held that all a priori knowledge must be analytic.", "subject": "pre-Kantian philosophy", "pid": null, "object": "held all a priori knowledge is analytic"}
+{"page": "Critique of Pure Reason", "statement": "Kant argued that knowledge of mathematics is both a priori and synthetic.", "subject": "Immanuel Kant", "pid": "P50", "object": "theory of mathematical knowledge"}
+{"page": "Critique of Pure Reason", "statement": "Kant argued that knowledge of the first principles of natural science is both a priori and synthetic.", "subject": "Immanuel Kant", "pid": "P50", "object": "theory of natural science knowledge"}
+{"page": "Critique of Pure Reason", "statement": "Kant argued that knowledge of metaphysics is both a priori and synthetic.", "subject": "Immanuel Kant", "pid": "P50", "object": "theory of metaphysical knowledge"}
+{"page": "Critique of Pure Reason", "statement": "David Hume initially accepted the general view of rationalism about a priori knowledge.", "subject": "David Hume", "pid": null, "object": "initially accepted rationalism"}
+{"page": "Critique of Pure Reason", "statement": "David Hume discovered that some judgments related to cause and effect were synthetic, not analytic.", "subject": "David Hume", "pid": "P50", "object": "theory of causality as synthetic"}
+{"page": "Critique of Pure Reason", "statement": "Kant was brought up under the auspices of rationalism.", "subject": "Immanuel Kant", "pid": null, "object": "educated in rationalism"}
+{"page": "Critique of Pure Reason", "statement": "David Hume's skepticism first interrupted Kant's dogmatic slumber.", "subject": "David Hume", "pid": null, "object": "interrupted Kant's dogmatic slumber"}
+{"page": "Critique of Pure Reason", "statement": "Kant spent at least twelve years thinking about philosophical subjects before writing the Critique.", "subject": "Immanuel Kant", "pid": "P571", "object": "twelve years of study"}
+{"page": "Encyclopædia Britannica", "statement": "Encyclopædia Britannica is a general-knowledge English-language encyclopaedia.", "subject": "Encyclopædia Britannica", "pid": null, "object": "English-language encyclopaedia"}
+{"page": "Encyclopædia Britannica", "statement": "Encyclopædia Britannica has been published since 1768.", "subject": "Encyclopædia Britannica", "pid": "P571", "object": "1768"}
+{"page": "Encyclopædia Britannica", "statement": "Encyclopædia Britannica is currently owned by Encyclopædia Britannica, Inc.", "subject": "Encyclopædia Britannica", "pid": "P127", "object": "Encyclopædia Britannica, Inc."}
+{"page": "Encyclopædia Britannica", "statement": "The 2010 version of the 15th edition spans 32 volumes and 32,640 pages.", "subject": "Encyclopædia Britannica 15th edition", "pid": null, "object": "32 volumes, 32,640 pages"}
+{"page": "Encyclopædia Britannica", "statement": "The 2010 version of the 15th edition was the last printed edition of Encyclopædia Britannica.", "subject": "Encyclopædia Britannica", "pid": "P571", "object": "2010"}
+{"page": "Encyclopædia Britannica", "statement": "Since 2016, Encyclopædia Britannica has been published exclusively as an online encyclopaedia.", "subject": "Encyclopædia Britannica", "pid": "P571", "object": "2016"}
+{"page": "Encyclopædia Britannica", "statement": "Encyclopædia Britannica was first published between 1768 and 1771 in Edinburgh, Scotland.", "subject": "Encyclopædia Britannica", "pid": "P740", "object": "Edinburgh, Scotland"}
+{"page": "Encyclopædia Britannica", "statement": "The Britannica was printed for 245 years.", "subject": "Encyclopædia Britannica", "pid": "P571", "object": "245 years"}
+{"page": "Encyclopædia Britannica", "statement": "Britannica was the longest-running in-print encyclopaedia in the English language.", "subject": "Encyclopædia Britannica", "pid": null, "object": "longest-running in-print encyclopaedia"}
+{"page": "Encyclopædia Britannica", "statement": "The second edition of Britannica was extended to 10 volumes.", "subject": "Encyclopædia Britannica", "pid": null, "object": "10 volumes in second edition"}
+{"page": "Encyclopædia Britannica", "statement": "By the fourth edition (1801-1810), Britannica had expanded to 20 volumes.", "subject": "Encyclopædia Britannica", "pid": "P571", "object": "1801-1810"}
+{"page": "Encyclopædia Britannica", "statement": "The 9th edition (1875-1889) of Britannica is a landmark encyclopaedia for scholarship.", "subject": "Britannica 9th edition", "pid": "P571", "object": "1875-1889"}
+{"page": "Encyclopædia Britannica", "statement": "The 11th edition (1911) of Britannica is a landmark encyclopaedia for scholarship and literary style.", "subject": "Britannica 11th edition", "pid": "P571", "object": "1911"}
+{"page": "Encyclopædia Britannica", "statement": "Colin Macfarquhar and Andrew Bell were Scottish printers and founders of Britannica.", "subject": "Colin Macfarquhar", "pid": "P112", "object": "Encyclopædia Britannica"}
+{"page": "Encyclopædia Britannica", "statement": "Andrew Bell was a Scottish printer and founder of Britannica.", "subject": "Andrew Bell", "pid": "P112", "object": "Encyclopædia Britannica"}
+{"page": "Encyclopædia Britannica", "statement": "Archibald Constable was a Scottish bookseller who owned Britannica.", "subject": "Archibald Constable", "pid": "P127", "object": "Encyclopædia Britannica"}
+{"page": "Encyclopædia Britannica", "statement": "William Smellie compiled much of the first edition of Britannica from Scottish sources.", "subject": "William Smellie", "pid": "P50", "object": "Britannica first edition"}
+{"page": "Encyclopædia Britannica", "statement": "In 1932, Britannica adopted a policy of continuous revision.", "subject": "Encyclopædia Britannica", "pid": "P571", "object": "1932"}
+{"page": "Encyclopædia Britannica", "statement": "The 15th edition (1974-2010) has a three-part structure.", "subject": "Britannica 15th edition", "pid": "P571", "object": "1974"}
+{"page": "Encyclopædia Britannica", "statement": "In March 2012, Britannica announced it would no longer publish printed editions.", "subject": "Encyclopædia Britannica", "pid": "P571", "object": "2012"}
+{"page": "Encyclopædia Britannica", "statement": "Britannica faced competition from Microsoft Encarta.", "subject": "Encyclopædia Britannica", "pid": null, "object": "competed with Encarta"}
+{"page": "Encyclopædia Britannica", "statement": "Britannica later faced competition from Wikipedia.", "subject": "Encyclopædia Britannica", "pid": null, "object": "competed with Wikipedia"}
+{"page": "Epistemic virtue", "statement": "Epistemic virtues are identified by virtue epistemologists.", "subject": "virtue epistemologists", "pid": null, "object": "epistemic virtues"}
+{"page": "Epistemic virtue", "statement": "W. Jay Wood identified epistemic virtues based on research into medieval tradition.", "subject": "W. Jay Wood", "pid": "P170", "object": "epistemic virtues classification"}
+{"page": "Epistemic virtue", "statement": "Epistemic virtues are sometimes called intellectual virtues.", "subject": "epistemic virtues", "pid": null, "object": "intellectual virtues"}
+{"page": "Epistemic virtue", "statement": "Epistemology is the theory of what we know to be true according to perception and reality.", "subject": "epistemology", "pid": null, "object": "theory of knowledge"}
+{"page": "Epistemic virtue", "statement": "Epistemic virtues are characteristic habits that promote acquisition of true knowledge.", "subject": "epistemic virtues", "pid": null, "object": "habits promoting true knowledge"}
+{"page": "Epistemic virtue", "statement": "Being an epistemically virtuous person is often equated with being a critical thinker.", "subject": "epistemically virtuous person", "pid": null, "object": "critical thinker"}
+{"page": "Epistemic virtue", "statement": "Lorraine Daston and Peter Galison published Objectivity in 2007.", "subject": "Lorraine Daston", "pid": "P50", "object": "Objectivity"}
+{"page": "Epistemic virtue", "statement": "Objectivity was published by Zone Books in 2007.", "subject": "Objectivity", "pid": "P123", "object": "Zone Books"}
+{"page": "Epistemic virtue", "statement": "Michael DePaul and Linda Zagzebski edited Intellectual Virtue.", "subject": "Michael DePaul", "pid": "P170", "object": "Intellectual Virtue"}
+{"page": "Epistemic virtue", "statement": "Intellectual Virtue was published by Oxford University Press in 2003.", "subject": "Intellectual Virtue", "pid": "P123", "object": "Oxford University Press"}
+{"page": "Epistemology", "statement": "Epistemology is the branch of philosophy that examines the nature and limits of knowledge.", "subject": "epistemology", "pid": null, "object": "philosophical study of knowledge"}
+{"page": "Epistemology", "statement": "Epistemology explores propositional knowledge about facts.", "subject": "epistemology", "pid": null, "object": "propositional knowledge"}
+{"page": "Epistemology", "statement": "Epistemology explores practical knowledge in the form of skills.", "subject": "epistemology", "pid": null, "object": "practical knowledge"}
+{"page": "Epistemology", "statement": "Epistemology explores knowledge by acquaintance as familiarity through experience.", "subject": "epistemology", "pid": null, "object": "knowledge by acquaintance"}
+{"page": "Epistemology", "statement": "Skepticism questions the human ability to attain knowledge.", "subject": "skepticism", "pid": null, "object": "questions human knowledge ability"}
+{"page": "Epistemology", "statement": "Fallibilism says that knowledge is never certain.", "subject": "fallibilism", "pid": null, "object": "knowledge never certain"}
+{"page": "Epistemology", "statement": "Empiricists hold that all knowledge comes from sense experience.", "subject": "empiricists", "pid": null, "object": "knowledge from sense experience"}
+{"page": "Epistemology", "statement": "Rationalists believe that some knowledge does not depend on sense experience.", "subject": "rationalists", "pid": null, "object": "knowledge independent of experience"}
+{"page": "Epistemology", "statement": "Early reflections on knowledge are found in ancient Greek philosophy.", "subject": "ancient Greek philosophers", "pid": "P50", "object": "early epistemology"}
+{"page": "Epistemology", "statement": "Early reflections on knowledge are found in ancient Indian philosophy.", "subject": "ancient Indian philosophers", "pid": "P50", "object": "early epistemology"}
+{"page": "Epistemology", "statement": "Early reflections on knowledge are found in ancient Chinese philosophy.", "subject": "ancient Chinese philosophers", "pid": "P50", "object": "early epistemology"}
+{"page": "Epistemology", "statement": "The word epistemology comes from the Greek episteme meaning knowledge and logos meaning study.", "subject": "epistemology", "pid": "P407", "object": "Ancient Greek"}
+{"page": "Epistemology", "statement": "The word epistemology was coined only in the 19th century.", "subject": "epistemology", "pid": "P571", "object": "19th century"}
+{"page": "Epistemology", "statement": "Knowledge contrasts with ignorance.", "subject": "knowledge", "pid": null, "object": "contrasts with ignorance"}
+{"page": "Epistemology", "statement": "Epistemologists distinguish between propositional knowledge and non-propositional knowledge.", "subject": "epistemologists", "pid": "P50", "object": "types of knowledge"}
+{"page": "Euclid", "statement": "Euclid was an ancient Greek mathematician active as a geometer and logician.", "subject": "Euclid", "pid": "P27", "object": "Greece"}
+{"page": "Euclid", "statement": "Euclid is chiefly known for the Elements treatise.", "subject": "Euclid", "pid": "P50", "object": "Elements"}
+{"page": "Euclid", "statement": "Euclid flourished around 300 BC.", "subject": "Euclid", "pid": "P571", "object": "300 BC"}
+{"page": "Euclid", "statement": "Euclid is considered the father of geometry.", "subject": "Euclid", "pid": "P106", "object": "geometer"}
+{"page": "Euclid", "statement": "Euclid's system is now referred to as Euclidean geometry.", "subject": "Euclid", "pid": "P170", "object": "Euclidean geometry"}
+{"page": "Euclid", "statement": "Euclid synthesized theories from Eudoxus of Cnidus.", "subject": "Euclid", "pid": null, "object": "built on Eudoxus work"}
+{"page": "Euclid", "statement": "Euclid synthesized theories from Hippocrates of Chios.", "subject": "Euclid", "pid": null, "object": "built on Hippocrates work"}
+{"page": "Euclid", "statement": "Euclid synthesized theories from Thales.", "subject": "Euclid", "pid": null, "object": "built on Thales work"}
+{"page": "Euclid", "statement": "Euclid synthesized theories from Theaetetus.", "subject": "Euclid", "pid": null, "object": "built on Theaetetus work"}
+{"page": "Euclid", "statement": "Information about Euclid comes from Proclus and Pappus of Alexandria.", "subject": "Euclid", "pid": null, "object": "documented by Proclus and Pappus"}
+{"page": "Euclid", "statement": "Medieval Islamic mathematicians invented a fanciful biography of Euclid.", "subject": "Medieval Islamic mathematicians", "pid": "P50", "object": "biography of Euclid"}
+{"page": "Euclid", "statement": "Euclid spent his career in Alexandria.", "subject": "Euclid", "pid": "P937", "object": "Alexandria"}
+{"page": "Euclid", "statement": "Euclid lived after Plato's students.", "subject": "Euclid", "pid": "P571", "object": "after Plato's students"}
+{"page": "Euclid", "statement": "Euclid lived before Archimedes.", "subject": "Euclid", "pid": "P571", "object": "before Archimedes"}
+{"page": "Euclid", "statement": "Euclid is speculated to have studied at the Platonic Academy.", "subject": "Euclid", "pid": "P69", "object": "Platonic Academy"}
+{"page": "Euclid", "statement": "Euclid is speculated to have taught at the Musaeum.", "subject": "Euclid", "pid": "P108", "object": "Musaeum"}
+{"page": "Euclid", "statement": "Euclid wrote works on perspective.", "subject": "Euclid", "pid": "P50", "object": "works on perspective"}
+{"page": "Euclid", "statement": "Euclid wrote works on conic sections.", "subject": "Euclid", "pid": "P50", "object": "works on conic sections"}
+{"page": "Euclid", "statement": "Euclid wrote Optics, a central early text in the optics field.", "subject": "Euclid", "pid": "P50", "object": "Optics"}
+{"page": "Euclid", "statement": "Euclid wrote Data and Phaenomena.", "subject": "Euclid", "pid": "P50", "object": "Data and Phaenomena"}
+{"page": "Euclid", "statement": "Proclus placed Euclid during the rule of Ptolemy I.", "subject": "Euclid", "pid": "P571", "object": "reign of Ptolemy I"}
+{"page": "Euclid", "statement": "Ptolemy I ruled from 305/304 to 282 BC.", "subject": "Ptolemy I", "pid": "P571", "object": "305/304-282 BC"}
+{"page": "Euclid", "statement": "Alexander the Great founded Alexandria in 331 BC.", "subject": "Alexander the Great", "pid": "P740", "object": "Alexandria"}
+{"page": "Euclid", "statement": "Apollonius studied with Euclid's students in Alexandria.", "subject": "Apollonius", "pid": "P69", "object": "Euclid's students"}
+{"page": "Euclid", "statement": "The earliest original reference to Euclid is in Apollonius' prefatory letter to the Conics.", "subject": "Apollonius", "pid": "P50", "object": "prefatory letter to Conics"}
+{"page": "Euclid", "statement": "Apollonius' letter is from the early 2nd century BC.", "subject": "Apollonius", "pid": "P571", "object": "early 2nd century BC"}
+{"page": "Euclid's Elements", "statement": "The Elements is a mathematical treatise written circa 300 BC.", "subject": "Elements", "pid": "P571", "object": "300 BC"}
+{"page": "Euclid's Elements", "statement": "The Elements was written by Euclid.", "subject": "Elements", "pid": "P50", "object": "Euclid"}
+{"page": "Euclid's Elements", "statement": "The Elements is the oldest extant large-scale deductive treatment of mathematics.", "subject": "Elements", "pid": null, "object": "oldest deductive mathematics treatise"}
+{"page": "Euclid's Elements", "statement": "The Elements draws on the works of Hippocrates of Chios.", "subject": "Elements", "pid": null, "object": "based on Hippocrates"}
+{"page": "Euclid's Elements", "statement": "The Elements draws on the works of Eudoxus of Cnidus.", "subject": "Elements", "pid": null, "object": "based on Eudoxus"}
+{"page": "Euclid's Elements", "statement": "The Elements draws on the works of Theaetetus.", "subject": "Elements", "pid": null, "object": "based on Theaetetus"}
+{"page": "Euclid's Elements", "statement": "The Elements is a collection in 13 books.", "subject": "Elements", "pid": null, "object": "13 books"}
+{"page": "Euclid's Elements", "statement": "The Elements covers plane and solid Euclidean geometry.", "subject": "Elements", "pid": null, "object": "covers Euclidean geometry"}
+{"page": "Euclid's Elements", "statement": "The Elements covers elementary number theory.", "subject": "Elements", "pid": null, "object": "covers number theory"}
+{"page": "Euclid's Elements", "statement": "The Elements includes the Pythagorean theorem.", "subject": "Elements", "pid": "P800", "object": "Pythagorean theorem"}
+{"page": "Euclid's Elements", "statement": "The Elements includes Thales' theorem.", "subject": "Elements", "pid": "P800", "object": "Thales' theorem"}
+{"page": "Euclid's Elements", "statement": "The Elements includes the Euclidean algorithm for greatest common divisors.", "subject": "Elements", "pid": "P800", "object": "Euclidean algorithm"}
+{"page": "Euclid's Elements", "statement": "The Elements includes Euclid's theorem that there are infinitely many prime numbers.", "subject": "Elements", "pid": "P800", "object": "infinite primes theorem"}
+{"page": "Euclid's Elements", "statement": "The Elements was translated into Arabic in the medieval period.", "subject": "Elements", "pid": "P407", "object": "Arabic"}
+{"page": "Euclid's Elements", "statement": "The Elements was translated into Latin in the medieval period.", "subject": "Elements", "pid": "P407", "object": "Latin"}
+{"page": "Euclid's Elements", "statement": "Proclus wrote a commentary on the first book of the Elements.", "subject": "Proclus", "pid": "P50", "object": "Commentary on the First Book of Euclid's Elements"}
+{"page": "Euclidean geometry", "statement": "Euclidean geometry is a mathematical system attributed to Euclid.", "subject": "Euclidean geometry", "pid": null, "object": "system by Euclid"}
+{"page": "Euclidean geometry", "statement": "Euclid described Euclidean geometry in his textbook Elements.", "subject": "Euclid", "pid": "P50", "object": "Elements"}
+{"page": "Euclidean geometry", "statement": "Euclid's approach assumes a small set of intuitive axioms called postulates.", "subject": "Euclid", "pid": "P50", "object": "axiomatic method"}
+{"page": "Euclidean geometry", "statement": "The parallel postulate relates to parallel lines on a Euclidean plane.", "subject": "parallel postulate", "pid": null, "object": "axiom of Euclidean geometry"}
+{"page": "Euclidean geometry", "statement": "Euclid was the first to organize propositions into a logical system.", "subject": "Euclid", "pid": "P170", "object": "logical system of geometry"}
+{"page": "Euclidean geometry", "statement": "The Elements begins with plane geometry.", "subject": "Elements", "pid": "P800", "object": "plane geometry"}
+{"page": "Euclidean geometry", "statement": "Plane geometry is taught in secondary school as the first axiomatic system.", "subject": "plane geometry", "pid": null, "object": "taught in secondary school"}
+{"page": "Euclidean space", "statement": "Euclidean space is the fundamental space of geometry.", "subject": "Euclidean space", "pid": null, "object": "fundamental space of geometry"}
+{"page": "Euclidean space", "statement": "Euclidean space is intended to represent physical space.", "subject": "Euclidean space", "pid": null, "object": "represents physical space"}
+{"page": "Euclidean space", "statement": "In Euclid's Elements, Euclidean space was three-dimensional.", "subject": "Euclidean space", "pid": "P571", "object": "three-dimensional in Elements"}
+{"page": "Euclidean space", "statement": "In modern mathematics, there are Euclidean spaces of any positive integer dimension.", "subject": "Euclidean spaces", "pid": null, "object": "spaces of any dimension n"}
+{"page": "Euclidean space", "statement": "Euclidean lines are called Euclidean 1-spaces.", "subject": "Euclidean line", "pid": null, "object": "Euclidean 1-space"}
+{"page": "Euclidean space", "statement": "Euclidean planes are called Euclidean 2-spaces.", "subject": "Euclidean plane", "pid": null, "object": "Euclidean 2-space"}
+{"page": "Euclidean space", "statement": "Ancient Greek geometers introduced Euclidean space for modeling physical space.", "subject": "ancient Greek geometers", "pid": "P170", "object": "Euclidean space"}
+{"page": "Euclidean space", "statement": "Euclid collected the work of ancient Greek geometers in Elements.", "subject": "Euclid", "pid": "P50", "object": "Elements"}
+{"page": "Evidence", "statement": "Evidence for a proposition is what supports the proposition.", "subject": "evidence", "pid": null, "object": "supports propositions"}
+{"page": "Evidence", "statement": "Evidence is usually understood as an indication that the proposition is true.", "subject": "evidence", "pid": null, "object": "indicates truth"}
+{"page": "Evidence", "statement": "In epistemology, evidence is what justifies beliefs.", "subject": "evidence", "pid": null, "object": "justifies beliefs"}
+{"page": "Evidence", "statement": "In epistemology, evidence is what makes it rational to hold a certain doxastic attitude.", "subject": "evidence", "pid": null, "object": "makes beliefs rational"}
+{"page": "Evidence", "statement": "A perceptual experience of a tree may serve as evidence to justify the belief that there is a tree.", "subject": "perceptual experience", "pid": null, "object": "evidence for existence of tree"}
+{"page": "Evidence", "statement": "In epistemology, evidence is usually understood as a private mental state.", "subject": "evidence", "pid": null, "object": "private mental state"}
+{"page": "Evidence", "statement": "In phenomenology, evidence is limited to intuitive knowledge.", "subject": "phenomenology", "pid": null, "object": "evidence as intuitive knowledge"}
+{"page": "Evidence", "statement": "In science, scientific evidence is information gained through the scientific method.", "subject": "scientific evidence", "pid": null, "object": "gained through scientific method"}
+{"page": "Evidence", "statement": "In science, scientific evidence confirms or disconfirms scientific hypotheses.", "subject": "scientific evidence", "pid": null, "object": "confirms or disconfirms hypotheses"}
+{"page": "Fallibilism", "statement": "Fallibilism is the philosophical principle that propositions can be accepted even without conclusive proof.", "subject": "fallibilism", "pid": null, "object": "philosophical principle"}
+{"page": "Fallibilism", "statement": "The term fallibilism comes from Medieval Latin fallibilis meaning liable to error.", "subject": "fallibilism", "pid": "P407", "object": "Medieval Latin"}
+{"page": "Fallibilism", "statement": "Fallibilism holds that neither knowledge nor belief is certain.", "subject": "fallibilism", "pid": null, "object": "knowledge and belief not certain"}
+{"page": "Fallibilism", "statement": "The term fallibilism was coined in the late nineteenth century.", "subject": "fallibilism", "pid": "P571", "object": "late 19th century"}
+{"page": "Fallibilism", "statement": "Charles Sanders Peirce coined the term fallibilism.", "subject": "Charles Sanders Peirce", "pid": "P170", "object": "term fallibilism"}
+{"page": "Fallibilism", "statement": "Charles Sanders Peirce was an American philosopher.", "subject": "Charles Sanders Peirce", "pid": "P27", "object": "United States"}
+{"page": "Fallibilism", "statement": "Fallibilism was Peirce's response to foundationalism.", "subject": "Charles Sanders Peirce", "pid": "P50", "object": "fallibilism as response to foundationalism"}
+{"page": "Fallibilism", "statement": "Karl Popper refers to fallibilism as the notion that knowledge might turn out to be false.", "subject": "Karl Popper", "pid": "P50", "object": "fallibilism theory"}
+{"page": "Fallibilism", "statement": "Karl Popper was an Austrian-British philosopher.", "subject": "Karl Popper", "pid": "P27", "object": "Austria"}
+{"page": "Fallibilism", "statement": "Fallibilism is said to imply corrigibilism.", "subject": "fallibilism", "pid": null, "object": "implies corrigibilism"}
+{"page": "Fallibilism", "statement": "Corrigibilism is the principle that propositions are open to revision.", "subject": "corrigibilism", "pid": null, "object": "propositions open to revision"}
+{"page": "Fallibilism", "statement": "Fallibilism is often juxtaposed with infallibilism.", "subject": "fallibilism", "pid": null, "object": "contrasts with infallibilism"}
+{"page": "Fallibilism", "statement": "Scott F. Aikin is a philosopher discussing infinite regress.", "subject": "Scott F. Aikin", "pid": "P106", "object": "philosopher"}

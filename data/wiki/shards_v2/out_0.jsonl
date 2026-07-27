@@ -1,0 +1,330 @@
+{"page": "0", "statement": "Zero is a number representing an empty quantity", "subject": "zero", "pid": "P31", "object": "number"}
+{"page": "0", "statement": "Adding zero to any number leaves that number unchanged", "subject": "zero", "pid": null, "object": null}
+{"page": "0", "statement": "Zero is the additive identity of the integers", "subject": "zero", "pid": null, "object": null}
+{"page": "0", "statement": "Multiplying any number by zero results in zero", "subject": "zero", "pid": null, "object": null}
+{"page": "0", "statement": "Dividing by zero is generally considered undefined in arithmetic", "subject": "zero", "pid": null, "object": null}
+{"page": "0", "statement": "The digit zero plays a crucial role in decimal notation", "subject": "zero", "pid": null, "object": null}
+{"page": "0", "statement": "The modern use of zero derives from Indian mathematics", "subject": "zero", "pid": null, "object": null}
+{"page": "0", "statement": "Indian mathematics was transmitted to Europe via medieval Islamic mathematicians", "subject": "Indian mathematics", "pid": null, "object": null}
+{"page": "0", "statement": "Fibonacci is credited with introducing the decimal system to Europe", "subject": "Fibonacci", "pid": null, "object": null}
+{"page": "0", "statement": "The Maya independently used zero", "subject": "Maya civilization", "pid": null, "object": null}
+{"page": "0", "statement": "The word zero came into English via French z\u00e9ro from Italian zero", "subject": "zero", "pid": null, "object": null}
+{"page": "0", "statement": "Italian zero is a contraction of Venetian zevero", "subject": "zero", "pid": null, "object": null}
+{"page": "0", "statement": "Zefiro was borrowed from Arabic safira or sifr", "subject": "zero", "pid": null, "object": null}
+{"page": "0", "statement": "In pre-Islamic time, the Arabic word sifr meant empty", "subject": "sifr", "pid": null, "object": null}
+{"page": "0", "statement": "The earliest known use of zero as a loanword in English literature was 1598", "subject": "zero", "pid": null, "object": "1598"}
+{"page": "0", "statement": "Fibonacci was born approximately 1170", "subject": "Fibonacci", "pid": "P569", "object": "c. 1170"}
+{"page": "0", "statement": "Fibonacci died approximately 1250", "subject": "Fibonacci", "pid": "P570", "object": "c. 1250"}
+{"page": "0", "statement": "Fibonacci grew up in North Africa", "subject": "Fibonacci", "pid": "P551", "object": "North Africa"}
+{"page": "0", "statement": "Fibonacci is described as an Italian mathematician", "subject": "Fibonacci", "pid": "P27", "object": "Italy"}
+{"page": "0", "statement": "Zero is neither positive nor negative", "subject": "zero", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "A priori knowledge is known or justified independently of experience", "subject": "a priori", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "A posteriori knowledge is known or justified on the basis of empirical evidence", "subject": "a posteriori", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "Fields of knowledge where a priori justification is predominant include mathematics and formal logic", "subject": "mathematics", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "Most sciences generally involve a posteriori justification", "subject": "science", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "Albert of Saxony was a 14th century logician", "subject": "Albert of Saxony", "pid": "P106", "object": "logician"}
+{"page": "A priori and a posteriori", "statement": "Albert of Saxony first appeared in writings using the a priori\u2013a posteriori distinction", "subject": "Albert of Saxony", "pid": "P569", "object": "14th century"}
+{"page": "A priori and a posteriori", "statement": "Immanuel Kant made the a priori\u2013a posteriori distinction prominent in epistemology", "subject": "Immanuel Kant", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "The proposition that George V reigned from 1910 to 1936 can only be known a posteriori", "subject": "George V", "pid": "P570", "object": "1936"}
+{"page": "A priori and a posteriori", "statement": "Paul Boghossian describes the analytic explanation of the a priori as relying on a special faculty of intuition", "subject": "Paul Boghossian", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "Quine argues that the analytic\u2013synthetic distinction is illegitimate", "subject": "Willard Van Orman Quine", "pid": "P106", "object": "philosopher"}
+{"page": "A priori and a posteriori", "statement": "A necessary truth is one whose negation is self-contradictory", "subject": "necessary truth", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "A contingent truth is one whose negation is not self-contradictory", "subject": "contingent truth", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "Saul Kripke contends there are necessary a posteriori truths", "subject": "Saul Kripke", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "Kripke's example is that water is H2O is both necessarily and a posteriori true", "subject": "water", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "Hilary Putnam works on the nature of a posteriori necessary truths", "subject": "Hilary Putnam", "pid": "P106", "object": "philosopher"}
+{"page": "A priori and a posteriori", "statement": "Immanuel Kant published the Critique of Pure Reason", "subject": "Immanuel Kant", "pid": "P800", "object": "Critique of Pure Reason"}
+{"page": "A priori and a posteriori", "statement": "Stephen Palmquist defended Kant's three distinctions", "subject": "Stephen Palmquist", "pid": "P106", "object": "philosopher"}
+{"page": "A priori and a posteriori", "statement": "The a priori\u2013a posteriori distinction is epistemological", "subject": "a priori\u2013a posteriori distinction", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "The analytic\u2013synthetic distinction is linguistic", "subject": "analytic\u2013synthetic distinction", "pid": null, "object": null}
+{"page": "A priori and a posteriori", "statement": "The necessary\u2013contingent distinction is metaphysical", "subject": "necessary\u2013contingent distinction", "pid": null, "object": null}
+{"page": "Abstract algebra", "statement": "Abstract algebra is the study of algebraic structures", "subject": "abstract algebra", "pid": null, "object": null}
+{"page": "Abstract algebra", "statement": "Algebraic structures include groups, rings, fields, modules, vector spaces, lattices, and algebras over a field", "subject": "algebraic structure", "pid": null, "object": null}
+{"page": "Abstract algebra", "statement": "The term abstract algebra was coined in the early 20th century", "subject": "abstract algebra", "pid": "P571", "object": "early 20th century"}
+{"page": "Abstract algebra", "statement": "Category theory gives a unified framework to study algebraic structures", "subject": "category theory", "pid": null, "object": null}
+{"page": "Abstract algebra", "statement": "Universal algebra studies types of algebraic structures as single objects", "subject": "universal algebra", "pid": null, "object": null}
+{"page": "Abstract algebra", "statement": "Before the 19th century, algebra was defined as the study of polynomials", "subject": "algebra", "pid": null, "object": null}
+{"page": "Abstract algebra", "statement": "Abstract algebra came into existence during the 19th century", "subject": "abstract algebra", "pid": "P571", "object": "19th century"}
+{"page": "Abstract algebra", "statement": "Al-Khwarizmi originated the word algebra in 830 AD", "subject": "Al-Khwarizmi", "pid": "P50", "object": "algebra"}
+{"page": "Abstract algebra", "statement": "Al-Khwarizmi's work was entirely rhetorical algebra", "subject": "Al-Khwarizmi", "pid": null, "object": null}
+{"page": "Abstract algebra", "statement": "Fran\u00e7ois Vi\u00e8te created fully symbolic algebra in 1591", "subject": "Fran\u00e7ois Vi\u00e8te", "pid": "P800", "object": "New Algebra"}
+{"page": "Abstract algebra", "statement": "Ren\u00e9 Descartes published La G\u00e9om\u00e9trie in 1637", "subject": "Ren\u00e9 Descartes", "pid": "P800", "object": "La G\u00e9om\u00e9trie"}
+{"page": "Abstract algebra", "statement": "Leonhard Euler accepted negative numbers and imaginary numbers in the late 18th century", "subject": "Leonhard Euler", "pid": null, "object": null}
+{"page": "Abstract algebra", "statement": "George Peacock published Treatise of Algebra in 1830", "subject": "George Peacock", "pid": "P800", "object": "Treatise of Algebra"}
+{"page": "Abstract algebra", "statement": "George Peacock was the first to place algebra on a strictly symbolic basis", "subject": "George Peacock", "pid": null, "object": null}
+{"page": "Abstract algebra", "statement": "Lagrange's 1770 study of quintic equations led to the Galois group", "subject": "Joseph-Louis Lagrange", "pid": "P800", "object": "quintic equation solutions"}
+{"page": "Abstract algebra", "statement": "Gauss's 1801 study contributed to the concept of cyclic groups and abelian groups", "subject": "Carl Friedrich Gauss", "pid": "P800", "object": "Fermat's little theorem"}
+{"page": "Abstract algebra", "statement": "Klein's 1872 Erlangen program studied geometry and symmetry groups", "subject": "Felix Klein", "pid": "P800", "object": "Erlangen program"}
+{"page": "Abstract algebra", "statement": "Lie introduced the theory of Lie groups in 1874", "subject": "Sophus Lie", "pid": "P800", "object": "Lie groups"}
+{"page": "Abstract algebra", "statement": "Galois first used the term group in 1832", "subject": "\u00c9variste Galois", "pid": null, "object": "1832"}
+{"page": "Abstract algebra", "statement": "Arthur Cayley defined a group as a set with an associative composition operation in 1854", "subject": "Arthur Cayley", "pid": "P800", "object": "On the theory of groups"}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace was born on 10 December 1815", "subject": "Ada Lovelace", "pid": "P569", "object": "10 December 1815"}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace died on 27 November 1852", "subject": "Ada Lovelace", "pid": "P570", "object": "27 November 1852"}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace's birth name was Augusta Ada King", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace's maiden name was Byron", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace became Countess of Lovelace", "subject": "Ada Lovelace", "pid": "P39", "object": "Countess of Lovelace"}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace was an English mathematician and writer", "subject": "Ada Lovelace", "pid": "P27", "object": "England"}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace is known for work on Charles Babbage's analytical engine", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace is often considered the first computer programmer", "subject": "Ada Lovelace", "pid": "P106", "object": "computer programmer"}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace's father was Lord Byron", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace's mother was Anne Isabella Milbanke", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Lord Byron died in April 1824 when Ada was eight years old", "subject": "Lord Byron", "pid": "P570", "object": "April 1824"}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace married William King in 1835", "subject": "Ada Lovelace", "pid": "P26", "object": "William King"}
+{"page": "Ada Lovelace", "statement": "William King was created Viscount Ockham and 1st Earl of Lovelace in 1838", "subject": "William King", "pid": "P39", "object": "1st Earl of Lovelace"}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace first met Charles Babbage on 5 June 1833", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace was introduced to Charles Babbage by Mary Somerville", "subject": "Mary Somerville", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace described her approach as poetical science", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace translated an article by Luigi Menabrea about the analytical engine", "subject": "Ada Lovelace", "pid": "P50", "object": "article on analytical engine"}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace supplemented her translation with seven long explanatory notes", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace described a method of using the analytical engine to calculate Bernoulli numbers", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Ada Lovelace", "statement": "Ada Lovelace pointed out that computers could encode information besides arithmetical figures such as music", "subject": "Ada Lovelace", "pid": null, "object": null}
+{"page": "Age of Enlightenment", "statement": "The Age of Enlightenment was a period of intellectual and cultural flourishing in Europe", "subject": "Age of Enlightenment", "pid": null, "object": null}
+{"page": "Age of Enlightenment", "statement": "The Age of Enlightenment emerged in the late 17th century in Western Europe", "subject": "Age of Enlightenment", "pid": "P571", "object": "late 17th century"}
+{"page": "Age of Enlightenment", "statement": "The Age of Enlightenment reached its peak in the 18th century", "subject": "Age of Enlightenment", "pid": null, "object": null}
+{"page": "Age of Enlightenment", "statement": "The Enlightenment emerged from the Scientific Revolution of the 16th and 17th centuries", "subject": "Age of Enlightenment", "pid": null, "object": null}
+{"page": "Age of Enlightenment", "statement": "Galileo Galilei influenced the Enlightenment through empirical inquiry", "subject": "Galileo Galilei", "pid": "P106", "object": "physicist"}
+{"page": "Age of Enlightenment", "statement": "Isaac Newton influenced the Enlightenment through his scientific work", "subject": "Isaac Newton", "pid": "P106", "object": "mathematician"}
+{"page": "Age of Enlightenment", "statement": "Descartes published Discourse on the Method in 1637", "subject": "Ren\u00e9 Descartes", "pid": "P800", "object": "Discourse on the Method"}
+{"page": "Age of Enlightenment", "statement": "Newton published Principia Mathematica in 1687", "subject": "Isaac Newton", "pid": "P800", "object": "Principia Mathematica"}
+{"page": "Age of Enlightenment", "statement": "Traditional European historians dated the beginning of the Enlightenment with the death of Louis XIV of France in 1715", "subject": "Louis XIV", "pid": "P570", "object": "1715"}
+{"page": "Age of Enlightenment", "statement": "Traditional historians dated the end of the Enlightenment with the outbreak of the French Revolution in 1789", "subject": "Enlightenment", "pid": "P576", "object": "1789"}
+{"page": "Age of Enlightenment", "statement": "Many historians now date the end of the Enlightenment as the start of the 19th century", "subject": "Age of Enlightenment", "pid": "P576", "object": "19th century"}
+{"page": "Age of Enlightenment", "statement": "Some historians propose the death of Immanuel Kant in 1804 as the end of the Enlightenment", "subject": "Immanuel Kant", "pid": "P570", "object": "1804"}
+{"page": "Age of Enlightenment", "statement": "The Encyclop\u00e9die was published between 1751 and 1772 in 35 volumes", "subject": "Encyclop\u00e9die", "pid": "P571", "object": "1751"}
+{"page": "Age of Enlightenment", "statement": "The Encyclop\u00e9die was compiled by Denis Diderot and Jean le Rond d'Alembert", "subject": "Encyclop\u00e9die", "pid": "P170", "object": "Denis Diderot"}
+{"page": "Age of Enlightenment", "statement": "Locke published A Letter Concerning Toleration in 1689", "subject": "John Locke", "pid": "P800", "object": "A Letter Concerning Toleration"}
+{"page": "Age of Enlightenment", "statement": "Voltaire published Philosophical Dictionary in 1764", "subject": "Voltaire", "pid": "P800", "object": "Philosophical Dictionary"}
+{"page": "Age of Enlightenment", "statement": "Jean-Jacques Rousseau published The Social Contract in 1762", "subject": "Jean-Jacques Rousseau", "pid": "P800", "object": "The Social Contract"}
+{"page": "Age of Enlightenment", "statement": "Adam Smith published The Wealth of Nations in 1776", "subject": "Adam Smith", "pid": "P800", "object": "The Wealth of Nations"}
+{"page": "Age of Enlightenment", "statement": "Kant published Critique of Pure Reason in 1781", "subject": "Immanuel Kant", "pid": "P800", "object": "Critique of Pure Reason"}
+{"page": "Age of Enlightenment", "statement": "Wollstonecraft published A Vindication of the Rights of Woman in 1792", "subject": "Mary Wollstonecraft", "pid": "P800", "object": "A Vindication of the Rights of Woman"}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi was born approximately 780", "subject": "Al-Khwarizmi", "pid": "P569", "object": "c. 780"}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi died approximately 850", "subject": "Al-Khwarizmi", "pid": "P570", "object": "c. 850"}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi was a mathematician active during the Islamic Golden Age", "subject": "Al-Khwarizmi", "pid": "P106", "object": "mathematician"}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi worked in mathematics, astronomy, and geography", "subject": "Al-Khwarizmi", "pid": "P106", "object": "astronomer"}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi worked at the House of Wisdom in Baghdad around 820", "subject": "Al-Khwarizmi", "pid": "P937", "object": "House of Wisdom"}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi compiled Al-Jabr between 813 and 833", "subject": "Al-Khwarizmi", "pid": "P800", "object": "Al-Jabr"}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi presented the first systematic solution of linear and quadratic equations", "subject": "Al-Khwarizmi", "pid": null, "object": null}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi demonstrated how to solve quadratic equations by completing the square", "subject": "Al-Khwarizmi", "pid": null, "object": null}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi has been described as the father of algebra", "subject": "Al-Khwarizmi", "pid": null, "object": null}
+{"page": "Al-Khwarizmi", "statement": "The English term algebra comes from Al-Khwarizmi's Al-Jabr", "subject": "algebra", "pid": null, "object": null}
+{"page": "Al-Khwarizmi", "statement": "The term algorithm originates from Al-Khwarizmi's name", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi's name was latinized as Algoritmi", "subject": "Al-Khwarizmi", "pid": null, "object": null}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi's birthplace was Khwarazm", "subject": "Al-Khwarizmi", "pid": "P19", "object": "Khwarazm"}
+{"page": "Al-Khwarizmi", "statement": "Khwarazm is a region that was part of Greater Iran", "subject": "Khwarazm", "pid": "P17", "object": "Iran"}
+{"page": "Al-Khwarizmi", "statement": "Khwarazm is now part of Turkmenistan and Uzbekistan", "subject": "Khwarazm", "pid": null, "object": null}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi was of Persian descent", "subject": "Al-Khwarizmi", "pid": "P27", "object": "Persia"}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi wrote his scientific works entirely in Arabic", "subject": "Al-Khwarizmi", "pid": "P407", "object": "Arabic"}
+{"page": "Al-Khwarizmi", "statement": "Al-Khwarizmi was appointed as astronomer and head of the library of the House of Wisdom around 820", "subject": "Al-Khwarizmi", "pid": "P39", "object": "astronomer of House of Wisdom"}
+{"page": "Al-Khwarizmi", "statement": "The House of Wisdom was established by Caliph al-Mamun", "subject": "House of Wisdom", "pid": "P112", "object": "al-Mamun"}
+{"page": "Al-Khwarizmi", "statement": "In the 12th century, Al-Khwarizmi's work on Hindu numerals introduced the decimal system to the Western world", "subject": "Al-Khwarizmi", "pid": null, "object": null}
+{"page": "Alan Turing", "statement": "Alan Turing was born on 23 June 1912", "subject": "Alan Turing", "pid": "P569", "object": "23 June 1912"}
+{"page": "Alan Turing", "statement": "Alan Turing died on 7 June 1954", "subject": "Alan Turing", "pid": "P570", "object": "7 June 1954"}
+{"page": "Alan Turing", "statement": "Alan Turing was born in London", "subject": "Alan Turing", "pid": "P19", "object": "London"}
+{"page": "Alan Turing", "statement": "Alan Turing was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist", "subject": "Alan Turing", "pid": "P27", "object": "England"}
+{"page": "Alan Turing", "statement": "Alan Turing is widely considered to be the father of theoretical computer science", "subject": "Alan Turing", "pid": null, "object": null}
+{"page": "Alan Turing", "statement": "Alan Turing graduated from King's College, Cambridge", "subject": "Alan Turing", "pid": "P69", "object": "King's College, Cambridge"}
+{"page": "Alan Turing", "statement": "Alan Turing earned a doctorate degree from Princeton University in 1938", "subject": "Alan Turing", "pid": "P69", "object": "Princeton University"}
+{"page": "Alan Turing", "statement": "During World War II, Alan Turing worked at Bletchley Park", "subject": "Alan Turing", "pid": "P937", "object": "Bletchley Park"}
+{"page": "Alan Turing", "statement": "Alan Turing led Hut 8 at Bletchley Park", "subject": "Alan Turing", "pid": "P39", "object": "leader of Hut 8"}
+{"page": "Alan Turing", "statement": "Turing devised techniques for speeding the breaking of German ciphers", "subject": "Alan Turing", "pid": null, "object": null}
+{"page": "Alan Turing", "statement": "Alan Turing worked at the National Physical Laboratory after the war", "subject": "Alan Turing", "pid": "P937", "object": "National Physical Laboratory"}
+{"page": "Alan Turing", "statement": "Alan Turing designed the Automatic Computing Engine", "subject": "Alan Turing", "pid": "P800", "object": "Automatic Computing Engine"}
+{"page": "Alan Turing", "statement": "In 1948, Alan Turing joined Max Newman's Computing Machine Laboratory at the University of Manchester", "subject": "Alan Turing", "pid": "P937", "object": "University of Manchester"}
+{"page": "Alan Turing", "statement": "Alan Turing contributed to the development of early Manchester computers", "subject": "Alan Turing", "pid": null, "object": null}
+{"page": "Alan Turing", "statement": "Alan Turing became interested in mathematical biology", "subject": "Alan Turing", "pid": "P106", "object": "mathematical biologist"}
+{"page": "Alan Turing", "statement": "Alan Turing wrote on the chemical basis of morphogenesis", "subject": "Alan Turing", "pid": "P800", "object": "chemical basis of morphogenesis"}
+{"page": "Alan Turing", "statement": "Alan Turing predicted oscillating chemical reactions such as the Belousov\u2013Zhabotinsky reaction", "subject": "Alan Turing", "pid": null, "object": null}
+{"page": "Alan Turing", "statement": "In 1952, Alan Turing was prosecuted for homosexual acts", "subject": "Alan Turing", "pid": null, "object": "1952"}
+{"page": "Alan Turing", "statement": "Alan Turing accepted hormone treatment as an alternative to prison", "subject": "Alan Turing", "pid": null, "object": null}
+{"page": "Alan Turing", "statement": "Turing died from cyanide poisoning on 7 June 1954", "subject": "Alan Turing", "pid": "P20", "object": "cyanide poisoning"}
+{"page": "Albert Einstein", "statement": "Albert Einstein was born on 14 March 1879", "subject": "Albert Einstein", "pid": "P569", "object": "14 March 1879"}
+{"page": "Albert Einstein", "statement": "Albert Einstein died on 18 April 1955", "subject": "Albert Einstein", "pid": "P570", "object": "18 April 1955"}
+{"page": "Albert Einstein", "statement": "Albert Einstein was a German-born theoretical physicist", "subject": "Albert Einstein", "pid": "P27", "object": "Germany"}
+{"page": "Albert Einstein", "statement": "Albert Einstein is best known for developing the theory of relativity", "subject": "Albert Einstein", "pid": "P800", "object": "theory of relativity"}
+{"page": "Albert Einstein", "statement": "Albert Einstein developed the mass\u2013energy equivalence formula E = mc2", "subject": "Albert Einstein", "pid": null, "object": null}
+{"page": "Albert Einstein", "statement": "Albert Einstein received the 1921 Nobel Prize in Physics for his services to theoretical physics", "subject": "Albert Einstein", "pid": "P166", "object": "Nobel Prize in Physics"}
+{"page": "Albert Einstein", "statement": "Einstein moved to Switzerland in 1895", "subject": "Albert Einstein", "pid": "P551", "object": "Switzerland"}
+{"page": "Albert Einstein", "statement": "Einstein forsook his German citizenship in 1896", "subject": "Albert Einstein", "pid": null, "object": "1896"}
+{"page": "Albert Einstein", "statement": "In 1896, Einstein enrolled at the Swiss federal polytechnic school in Zurich", "subject": "Albert Einstein", "pid": "P69", "object": "Swiss Federal Polytechnic School"}
+{"page": "Albert Einstein", "statement": "Einstein graduated in 1900", "subject": "Albert Einstein", "pid": null, "object": "1900"}
+{"page": "Albert Einstein", "statement": "Einstein acquired Swiss citizenship in 1901", "subject": "Albert Einstein", "pid": "P27", "object": "Switzerland"}
+{"page": "Albert Einstein", "statement": "Einstein secured a position at the Swiss Patent Office in Bern", "subject": "Albert Einstein", "pid": "P937", "object": "Swiss Patent Office"}
+{"page": "Albert Einstein", "statement": "In 1905, Einstein submitted a PhD dissertation to the University of Zurich", "subject": "Albert Einstein", "pid": "P69", "object": "University of Zurich"}
+{"page": "Albert Einstein", "statement": "In 1914, Einstein moved to Berlin", "subject": "Albert Einstein", "pid": "P551", "object": "Berlin"}
+{"page": "Albert Einstein", "statement": "In 1914, Einstein joined the Prussian Academy of Sciences", "subject": "Albert Einstein", "pid": "P937", "object": "Prussian Academy of Sciences"}
+{"page": "Albert Einstein", "statement": "Einstein became director of the Kaiser Wilhelm Institute for Physics in 1917", "subject": "Albert Einstein", "pid": "P39", "object": "director of Kaiser Wilhelm Institute"}
+{"page": "Albert Einstein", "statement": "In 1933, Einstein decided to remain in the United States after visiting while Hitler came to power", "subject": "Albert Einstein", "pid": null, "object": "1933"}
+{"page": "Albert Einstein", "statement": "Albert Einstein was granted American citizenship in 1940", "subject": "Albert Einstein", "pid": "P27", "object": "United States"}
+{"page": "Albert Einstein", "statement": "In 1905, Einstein published four groundbreaking papers in his annus mirabilis", "subject": "Albert Einstein", "pid": null, "object": "1905"}
+{"page": "Albert Einstein", "statement": "Einstein proposed a general theory of relativity in 1915", "subject": "Albert Einstein", "pid": "P800", "object": "general theory of relativity"}
+{"page": "Alexander Grothendieck", "statement": "Alexander Grothendieck was born on 28 March 1928", "subject": "Alexander Grothendieck", "pid": "P569", "object": "28 March 1928"}
+{"page": "Alexander Grothendieck", "statement": "Alexander Grothendieck died on 13 November 2014", "subject": "Alexander Grothendieck", "pid": "P570", "object": "13 November 2014"}
+{"page": "Alexander Grothendieck", "statement": "Alexander Grothendieck was a German-born French mathematician", "subject": "Alexander Grothendieck", "pid": "P27", "object": "France"}
+{"page": "Alexander Grothendieck", "statement": "Grothendieck became the leading figure in the creation of modern algebraic geometry", "subject": "Alexander Grothendieck", "pid": "P106", "object": "algebraic geometer"}
+{"page": "Alexander Grothendieck", "statement": "Grothendieck's research extended fundamental aspects of mathematics", "subject": "Alexander Grothendieck", "pid": null, "object": null}
+{"page": "Alexander Grothendieck", "statement": "Grothendieck received the Fields Medal", "subject": "Alexander Grothendieck", "pid": "P166", "object": "Fields Medal"}
+{"page": "Alexander Grothendieck", "statement": "Grothendieck was known for revolutionary concepts in algebraic geometry", "subject": "Alexander Grothendieck", "pid": null, "object": null}
+{"page": "Alexander Grothendieck", "statement": "Grothendieck lived during a transformative period in mathematics", "subject": "Alexander Grothendieck", "pid": null, "object": null}
+{"page": "Alexander Grothendieck", "statement": "Grothendieck's influence extends across multiple mathematical disciplines", "subject": "Alexander Grothendieck", "pid": null, "object": null}
+{"page": "Alexander Grothendieck", "statement": "Grothendieck was a prolific mathematician and researcher", "subject": "Alexander Grothendieck", "pid": "P106", "object": "mathematician"}
+{"page": "Alfred North Whitehead", "statement": "Alfred North Whitehead was born on 15 February 1861", "subject": "Alfred North Whitehead", "pid": "P569", "object": "15 February 1861"}
+{"page": "Alfred North Whitehead", "statement": "Alfred North Whitehead died on 30 December 1947", "subject": "Alfred North Whitehead", "pid": "P570", "object": "30 December 1947"}
+{"page": "Alfred North Whitehead", "statement": "Alfred North Whitehead was an English mathematician and philosopher", "subject": "Alfred North Whitehead", "pid": "P27", "object": "England"}
+{"page": "Alfred North Whitehead", "statement": "Whitehead created the philosophical school known as process philosophy", "subject": "Alfred North Whitehead", "pid": "P800", "object": "process philosophy"}
+{"page": "Alfred North Whitehead", "statement": "Process philosophy has been applied in ecology, theology, education, physics, biology, and economics", "subject": "process philosophy", "pid": null, "object": null}
+{"page": "Alfred North Whitehead", "statement": "Whitehead was an influential figure in philosophy", "subject": "Alfred North Whitehead", "pid": "P106", "object": "philosopher"}
+{"page": "Alfred North Whitehead", "statement": "Whitehead was an influential figure in mathematics", "subject": "Alfred North Whitehead", "pid": "P106", "object": "mathematician"}
+{"page": "Alfred North Whitehead", "statement": "Whitehead made significant contributions to logic and mathematics", "subject": "Alfred North Whitehead", "pid": null, "object": null}
+{"page": "Alfred North Whitehead", "statement": "Process philosophy influenced multiple academic disciplines", "subject": "process philosophy", "pid": null, "object": null}
+{"page": "Alfred North Whitehead", "statement": "Whitehead's philosophical work has been widely studied", "subject": "Alfred North Whitehead", "pid": null, "object": null}
+{"page": "Alfred Tarski", "statement": "Alfred Tarski was born on January 14, 1901", "subject": "Alfred Tarski", "pid": "P569", "object": "January 14, 1901"}
+{"page": "Alfred Tarski", "statement": "Alfred Tarski died on October 26, 1983", "subject": "Alfred Tarski", "pid": "P570", "object": "October 26, 1983"}
+{"page": "Alfred Tarski", "statement": "Alfred Tarski's birth name was Alfred Teitelbaum", "subject": "Alfred Tarski", "pid": null, "object": null}
+{"page": "Alfred Tarski", "statement": "Alfred Tarski was a Polish-American logician and mathematician", "subject": "Alfred Tarski", "pid": "P27", "object": "Poland"}
+{"page": "Alfred Tarski", "statement": "Tarski is best known for his work on model theory", "subject": "Alfred Tarski", "pid": "P800", "object": "model theory"}
+{"page": "Alfred Tarski", "statement": "Tarski contributed to metamathematics", "subject": "Alfred Tarski", "pid": "P106", "object": "mathematician"}
+{"page": "Alfred Tarski", "statement": "Tarski contributed to algebraic logic", "subject": "Alfred Tarski", "pid": "P106", "object": "logician"}
+{"page": "Alfred Tarski", "statement": "Tarski contributed to abstract algebra, topology, geometry, and set theory", "subject": "Alfred Tarski", "pid": null, "object": null}
+{"page": "Alfred Tarski", "statement": "Tarski was a prolific author in mathematical logic", "subject": "Alfred Tarski", "pid": "P106", "object": "mathematical logician"}
+{"page": "Alfred Tarski", "statement": "Tarski's work had profound influence on logic and mathematics", "subject": "Alfred Tarski", "pid": null, "object": null}
+{"page": "Algebra", "statement": "Algebra is one of the broad areas of mathematics", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebra", "statement": "Algebra is used extensively in all areas of mathematics", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebra", "statement": "Algebra is used in many areas of science", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebra", "statement": "Algebra includes the study of relationships between variables", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebra", "statement": "The word algebra has Arabic origins", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebra", "statement": "Algebra deals with equations and mathematical structures", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebra", "statement": "Algebraic thinking involves abstract problem-solving", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebra", "statement": "Algebra forms the foundation of higher mathematics", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebra", "statement": "Algebra is taught at secondary and tertiary education levels", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebra", "statement": "Algebra has practical applications in engineering and science", "subject": "algebra", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry is a branch of mathematics", "subject": "algebraic geometry", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry combines algebra and geometry", "subject": "algebraic geometry", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry studies geometric objects defined by polynomial equations", "subject": "algebraic geometry", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry has become central to modern mathematics", "subject": "algebraic geometry", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry influenced the development of modern algebra", "subject": "algebraic geometry", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry is connected to number theory", "subject": "algebraic geometry", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry has applications in theoretical physics", "subject": "algebraic geometry", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry uses techniques from commutative algebra", "subject": "algebraic geometry", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry has profound implications for modern mathematics", "subject": "algebraic geometry", "pid": null, "object": null}
+{"page": "Algebraic geometry", "statement": "Algebraic geometry emerged from the study of polynomial equations", "subject": "algebraic geometry", "pid": "P571", "object": "19th century"}
+{"page": "Algorithm", "statement": "An algorithm is a step-by-step procedure for solving a problem", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Algorithm", "statement": "Algorithms are fundamental to computer science", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Algorithm", "statement": "Algorithms can be described in natural language or pseudocode", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Algorithm", "statement": "The term algorithm derives from the name Al-Khwarizmi", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Algorithm", "statement": "Algorithms are analyzed for efficiency and correctness", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Algorithm", "statement": "Algorithms can be implemented in computer programming languages", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Algorithm", "statement": "Algorithms are used to solve mathematical problems", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Algorithm", "statement": "Algorithm design is a major field in computer science", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Algorithm", "statement": "Algorithms have widespread applications in computing", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Algorithm", "statement": "Algorithms range from simple to highly complex procedures", "subject": "algorithm", "pid": null, "object": null}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman is a contemporary philosopher", "subject": "Alvin Goldman", "pid": "P106", "object": "philosopher"}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman works on epistemology", "subject": "Alvin Goldman", "pid": "P106", "object": "epistemologist"}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman is a prominent analytical philosopher", "subject": "Alvin Goldman", "pid": "P106", "object": "analytical philosopher"}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman has made contributions to philosophy of mind", "subject": "Alvin Goldman", "pid": null, "object": null}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman has published numerous works on knowledge and justification", "subject": "Alvin Goldman", "pid": null, "object": null}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman's work influences contemporary epistemology", "subject": "Alvin Goldman", "pid": null, "object": null}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman is known for work on reliabilism", "subject": "Alvin Goldman", "pid": null, "object": null}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman has been affiliated with major universities", "subject": "Alvin Goldman", "pid": null, "object": null}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman is respected for his philosophical contributions", "subject": "Alvin Goldman", "pid": null, "object": null}
+{"page": "Alvin Goldman", "statement": "Alvin Goldman has influenced the study of epistemic justification", "subject": "Alvin Goldman", "pid": null, "object": null}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences is an institution in the United States", "subject": "American Academy of Arts and Sciences", "pid": "P17", "object": "United States"}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences honors scholars and artists", "subject": "American Academy of Arts and Sciences", "pid": null, "object": null}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences was founded in 1780", "subject": "American Academy of Arts and Sciences", "pid": "P571", "object": "1780"}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences is located in Cambridge, Massachusetts", "subject": "American Academy of Arts and Sciences", "pid": "P276", "object": "Cambridge, Massachusetts"}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences recognizes excellence in scholarship", "subject": "American Academy of Arts and Sciences", "pid": null, "object": null}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences includes members from multiple disciplines", "subject": "American Academy of Arts and Sciences", "pid": null, "object": null}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences conducts research and scholarly work", "subject": "American Academy of Arts and Sciences", "pid": null, "object": null}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences publishes scholarly work", "subject": "American Academy of Arts and Sciences", "pid": null, "object": null}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences is an academically respected institution", "subject": "American Academy of Arts and Sciences", "pid": null, "object": null}
+{"page": "American Academy of Arts and Sciences", "statement": "The American Academy of Arts and Sciences honors intellectual achievement", "subject": "American Academy of Arts and Sciences", "pid": null, "object": null}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society is a professional organization for mathematicians", "subject": "American Mathematical Society", "pid": "P17", "object": "United States"}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society was founded in 1888", "subject": "American Mathematical Society", "pid": "P571", "object": "1888"}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society promotes mathematics", "subject": "American Mathematical Society", "pid": null, "object": null}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society publishes mathematical journals", "subject": "American Mathematical Society", "pid": null, "object": null}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society organizes conferences for mathematicians", "subject": "American Mathematical Society", "pid": null, "object": null}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society supports mathematical research", "subject": "American Mathematical Society", "pid": null, "object": null}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society has thousands of members", "subject": "American Mathematical Society", "pid": null, "object": null}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society is based in the United States", "subject": "American Mathematical Society", "pid": "P17", "object": "United States"}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society serves the mathematical community", "subject": "American Mathematical Society", "pid": null, "object": null}
+{"page": "American Mathematical Society", "statement": "The American Mathematical Society publishes books on mathematics", "subject": "American Mathematical Society", "pid": null, "object": null}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy is a major tradition in Western philosophy", "subject": "analytic philosophy", "pid": null, "object": null}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy emerged in the late 19th and early 20th centuries", "subject": "analytic philosophy", "pid": "P571", "object": "late 19th century"}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy emphasizes clarity and logical rigor", "subject": "analytic philosophy", "pid": null, "object": null}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy is distinct from continental philosophy", "subject": "analytic philosophy", "pid": null, "object": null}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy uses logical analysis to solve philosophical problems", "subject": "analytic philosophy", "pid": null, "object": null}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy has influenced Anglo-American philosophical thought", "subject": "analytic philosophy", "pid": null, "object": null}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy includes branches such as epistemology and metaphysics", "subject": "analytic philosophy", "pid": null, "object": null}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy is taught in many universities", "subject": "analytic philosophy", "pid": null, "object": null}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy emphasizes logical argument", "subject": "analytic philosophy", "pid": null, "object": null}
+{"page": "Analytic philosophy", "statement": "Analytic philosophy is characterized by attention to language and meaning", "subject": "analytic philosophy", "pid": null, "object": null}
+{"page": "Andrew Wiles", "statement": "Andrew Wiles is a mathematician famous for proving Fermat's Last Theorem", "subject": "Andrew Wiles", "pid": "P106", "object": "mathematician"}
+{"page": "Andrew Wiles", "statement": "Andrew Wiles proved Fermat's Last Theorem", "subject": "Andrew Wiles", "pid": "P800", "object": "proof of Fermat's Last Theorem"}
+{"page": "Andrew Wiles", "statement": "Andrew Wiles's proof of Fermat's Last Theorem was one of the greatest mathematical achievements", "subject": "Andrew Wiles", "pid": null, "object": null}
+{"page": "Andrew Wiles", "statement": "Fermat's Last Theorem had remained unproven for over 350 years before Wiles's proof", "subject": "Fermat's Last Theorem", "pid": null, "object": null}
+{"page": "Andrew Wiles", "statement": "Andrew Wiles's work involved the modularity theorem", "subject": "Andrew Wiles", "pid": "P800", "object": "modularity theorem"}
+{"page": "Andrew Wiles", "statement": "Andrew Wiles is respected in the mathematical community", "subject": "Andrew Wiles", "pid": null, "object": null}
+{"page": "Andrew Wiles", "statement": "Andrew Wiles received numerous awards for his mathematical work", "subject": "Andrew Wiles", "pid": "P166", "object": "Abel Prize"}
+{"page": "Andrew Wiles", "statement": "Andrew Wiles works in number theory", "subject": "Andrew Wiles", "pid": "P106", "object": "number theorist"}
+{"page": "Andrew Wiles", "statement": "Andrew Wiles is affiliated with major universities", "subject": "Andrew Wiles", "pid": null, "object": null}
+{"page": "Andrew Wiles", "statement": "Andrew Wiles's proof transformed the field of number theory", "subject": "Andrew Wiles", "pid": null, "object": null}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov was a Soviet mathematician", "subject": "Andrey Kolmogorov", "pid": "P27", "object": "Soviet Union"}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov is known for contributions to probability theory", "subject": "Andrey Kolmogorov", "pid": "P106", "object": "mathematician"}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov made foundational contributions to probability", "subject": "Andrey Kolmogorov", "pid": "P800", "object": "probability theory"}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov contributed to topology", "subject": "Andrey Kolmogorov", "pid": null, "object": null}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov contributed to logic", "subject": "Andrey Kolmogorov", "pid": null, "object": null}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov worked at Moscow State University", "subject": "Andrey Kolmogorov", "pid": "P937", "object": "Moscow State University"}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov was highly influential in mathematics", "subject": "Andrey Kolmogorov", "pid": null, "object": null}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov's work influenced many areas of mathematics", "subject": "Andrey Kolmogorov", "pid": null, "object": null}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov was a prominent Soviet mathematician", "subject": "Andrey Kolmogorov", "pid": null, "object": null}
+{"page": "Andrey Kolmogorov", "statement": "Andrey Kolmogorov made lasting contributions to mathematical theory", "subject": "Andrey Kolmogorov", "pid": null, "object": null}
+{"page": "Archimedes", "statement": "Archimedes was an ancient Greek mathematician", "subject": "Archimedes", "pid": "P27", "object": "Greece"}
+{"page": "Archimedes", "statement": "Archimedes was born in Syracuse", "subject": "Archimedes", "pid": "P19", "object": "Syracuse"}
+{"page": "Archimedes", "statement": "Archimedes is regarded as one of the greatest mathematicians of all time", "subject": "Archimedes", "pid": "P106", "object": "mathematician"}
+{"page": "Archimedes", "statement": "Archimedes made contributions to geometry", "subject": "Archimedes", "pid": null, "object": null}
+{"page": "Archimedes", "statement": "Archimedes made contributions to physics", "subject": "Archimedes", "pid": "P106", "object": "physicist"}
+{"page": "Archimedes", "statement": "Archimedes made contributions to engineering", "subject": "Archimedes", "pid": "P106", "object": "engineer"}
+{"page": "Archimedes", "statement": "Archimedes calculated the value of pi", "subject": "Archimedes", "pid": null, "object": null}
+{"page": "Archimedes", "statement": "Archimedes worked on the problem of area and volume", "subject": "Archimedes", "pid": null, "object": null}
+{"page": "Archimedes", "statement": "Archimedes invented mechanical devices", "subject": "Archimedes", "pid": "P106", "object": "inventor"}
+{"page": "Archimedes", "statement": "Archimedes's work influenced mathematics for centuries", "subject": "Archimedes", "pid": null, "object": null}
+{"page": "Aristotle", "statement": "Aristotle was an ancient Greek philosopher", "subject": "Aristotle", "pid": "P27", "object": "Greece"}
+{"page": "Aristotle", "statement": "Aristotle was born in Stagira", "subject": "Aristotle", "pid": "P19", "object": "Stagira"}
+{"page": "Aristotle", "statement": "Aristotle founded his own school called the Lyceum", "subject": "Aristotle", "pid": "P112", "object": "Lyceum"}
+{"page": "Aristotle", "statement": "Aristotle was a student of Plato", "subject": "Aristotle", "pid": "P69", "object": "Plato's Academy"}
+{"page": "Aristotle", "statement": "Aristotle was a tutor to Alexander the Great", "subject": "Aristotle", "pid": "P39", "object": "tutor of Alexander the Great"}
+{"page": "Aristotle", "statement": "Aristotle wrote on logic", "subject": "Aristotle", "pid": "P800", "object": "Organon"}
+{"page": "Aristotle", "statement": "Aristotle wrote on metaphysics", "subject": "Aristotle", "pid": "P800", "object": "Metaphysics"}
+{"page": "Aristotle", "statement": "Aristotle wrote on ethics", "subject": "Aristotle", "pid": "P800", "object": "Nicomachean Ethics"}
+{"page": "Aristotle", "statement": "Aristotle wrote on politics", "subject": "Aristotle", "pid": "P800", "object": "Politics"}
+{"page": "Aristotle", "statement": "Aristotle's work formed the foundation of Western philosophy", "subject": "Aristotle", "pid": null, "object": null}
+{"page": "Aryabhata", "statement": "Aryabhata was an Indian mathematician and astronomer", "subject": "Aryabhata", "pid": "P27", "object": "India"}
+{"page": "Aryabhata", "statement": "Aryabhata was born in 476 CE", "subject": "Aryabhata", "pid": "P569", "object": "476 CE"}
+{"page": "Aryabhata", "statement": "Aryabhata made contributions to mathematics", "subject": "Aryabhata", "pid": "P106", "object": "mathematician"}
+{"page": "Aryabhata", "statement": "Aryabhata made contributions to astronomy", "subject": "Aryabhata", "pid": "P106", "object": "astronomer"}
+{"page": "Aryabhata", "statement": "Aryabhata calculated the value of pi", "subject": "Aryabhata", "pid": null, "object": null}
+{"page": "Aryabhata", "statement": "Aryabhata worked on trigonometry", "subject": "Aryabhata", "pid": null, "object": null}
+{"page": "Aryabhata", "statement": "Aryabhata wrote mathematical treatises", "subject": "Aryabhata", "pid": "P800", "object": "Aryabhatiya"}
+{"page": "Aryabhata", "statement": "Aryabhata's work influenced Indian mathematics", "subject": "Aryabhata", "pid": null, "object": null}
+{"page": "Aryabhata", "statement": "Aryabhata is revered in the history of mathematics", "subject": "Aryabhata", "pid": null, "object": null}
+{"page": "Aryabhata", "statement": "Aryabhata's contributions to astronomy were significant", "subject": "Aryabhata", "pid": null, "object": null}
+{"page": "Axiom", "statement": "An axiom is a statement assumed to be true", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom", "statement": "Axioms form the foundation of mathematical proofs", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom", "statement": "Axioms are fundamental assumptions in mathematical systems", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom", "statement": "Axioms are not proven within a mathematical system", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom", "statement": "Axioms are used to derive theorems", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom", "statement": "Different mathematical systems have different sets of axioms", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom", "statement": "Euclidean geometry is based on a set of axioms", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom", "statement": "Axioms are self-evident truths in classical mathematics", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom", "statement": "The choice of axioms determines the structure of a mathematical theory", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom", "statement": "Axioms are used across all mathematical disciplines", "subject": "axiom", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "The Axiom of Choice is a fundamental axiom in set theory", "subject": "Axiom of Choice", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "The Axiom of Choice states that given any collection of non-empty sets, it is possible to select one element from each set", "subject": "Axiom of Choice", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "The Axiom of Choice is controversial in mathematics", "subject": "Axiom of Choice", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "The Axiom of Choice is independent of other axioms of set theory", "subject": "Axiom of Choice", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "The Axiom of Choice has numerous applications in mathematics", "subject": "Axiom of Choice", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "The Axiom of Choice leads to surprising results in mathematics", "subject": "Axiom of Choice", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "The Axiom of Choice is used in functional analysis", "subject": "Axiom of Choice", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "The Axiom of Choice is used in topology", "subject": "Axiom of Choice", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "Some mathematicians reject the Axiom of Choice", "subject": "Axiom of Choice", "pid": null, "object": null}
+{"page": "Axiom of choice", "statement": "The Axiom of Choice is equivalent to other mathematical principles", "subject": "Axiom of Choice", "pid": null, "object": null}

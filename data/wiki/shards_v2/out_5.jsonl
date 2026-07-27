@@ -1,0 +1,401 @@
+{"page": "Mathematical analysis", "statement": "Mathematical analysis is the branch of mathematics that studies functions, spaces, and operators.", "subject": "Mathematical analysis", "pid": null, "object": "branch of mathematics"}
+{"page": "Mathematical analysis", "statement": "An infinite geometric sum is implicit in Zeno's paradox of the dichotomy.", "subject": "Zeno", "pid": null, "object": "paradox of dichotomy"}
+{"page": "Mathematical analysis", "statement": "Eudoxus used the method of exhaustion to compute area and volume.", "subject": "Eudoxus", "pid": null, "object": "method of exhaustion"}
+{"page": "Mathematical analysis", "statement": "Archimedes used the method of exhaustion to compute area and volume.", "subject": "Archimedes", "pid": null, "object": "method of exhaustion"}
+{"page": "Mathematical analysis", "statement": "Archimedes wrote The Method of Mechanical Theorems.", "subject": "Archimedes", "pid": "P800", "object": "The Method of Mechanical Theorems"}
+{"page": "Mathematical analysis", "statement": "Liu Hui used the method of exhaustion in the 3rd century CE to find the area of a circle.", "subject": "Liu Hui", "pid": null, "object": "circle area"}
+{"page": "Mathematical analysis", "statement": "Ibn al-Haytham worked on sums of powers and area problems.", "subject": "Ibn al-Haytham", "pid": null, "object": "sums of powers"}
+{"page": "Mathematical analysis", "statement": "Ibrahim ibn Sinan generalized Archimedean methods in quadrature of the parabola.", "subject": "Ibrahim ibn Sinan", "pid": null, "object": "parabola"}
+{"page": "Mathematical analysis", "statement": "Nicole Oresme gave a graphical proof of the mean speed theorem.", "subject": "Nicole Oresme", "pid": null, "object": "mean speed theorem"}
+{"page": "Mathematical analysis", "statement": "Bhaskara II stated results related to Rolle's theorem.", "subject": "Bhaskara II", "pid": null, "object": "Rolle's theorem"}
+{"page": "Mathematical analysis", "statement": "Madhava developed infinite series for trigonometric functions.", "subject": "Madhava", "pid": null, "object": "trigonometric functions"}
+{"page": "Mathematical analysis", "statement": "Thomas Bradwardine wrote Tractatus de continuo.", "subject": "Thomas Bradwardine", "pid": "P800", "object": "Tractatus de continuo"}
+{"page": "Mathematical analysis", "statement": "Richard Swineshead wrote Liber calculationum.", "subject": "Richard Swineshead", "pid": "P800", "object": "Liber calculationum"}
+{"page": "Mathematical analysis", "statement": "Fermat developed analytic geometry.", "subject": "Fermat", "pid": null, "object": "analytic geometry"}
+{"page": "Mathematical analysis", "statement": "Descartes published La G\u00e9om\u00e9trie in 1637.", "subject": "Descartes", "pid": "P800", "object": "La G\u00e9om\u00e9trie"}
+{"page": "Mathematical analysis", "statement": "Newton developed infinitesimal calculus.", "subject": "Newton", "pid": null, "object": "infinitesimal calculus"}
+{"page": "Mathematical analysis", "statement": "Leibniz developed infinitesimal calculus.", "subject": "Leibniz", "pid": null, "object": "infinitesimal calculus"}
+{"page": "Mathematical analysis", "statement": "Bernard Bolzano introduced the modern definition of continuity in 1816.", "subject": "Bernard Bolzano", "pid": null, "object": "continuity"}
+{"page": "Mathematical analysis", "statement": "Cauchy put calculus on a firm logical foundation in 1821.", "subject": "Cauchy", "pid": null, "object": "calculus foundations"}
+{"page": "Mathematical analysis", "statement": "Riemann introduced his theory of integration.", "subject": "Riemann", "pid": null, "object": "integration theory"}
+{"page": "Mathematical analysis", "statement": "Dedekind constructed the real numbers.", "subject": "Dedekind", "pid": null, "object": "real numbers"}
+{"page": "Mathematical analysis", "statement": "Weierstrass constructed continuous functions.", "subject": "Weierstrass", "pid": null, "object": "continuous functions"}
+{"page": "Mathematical analysis", "statement": "Fourier studied partial differential equations.", "subject": "Fourier", "pid": null, "object": "differential equations"}
+{"page": "Mathematical analysis", "statement": "Euler introduced the notion of a mathematical function.", "subject": "Euler", "pid": null, "object": "mathematical function"}
+{"page": "Mathematical analysis", "statement": "Poisson studied partial differential equations.", "subject": "Poisson", "pid": null, "object": "differential equations"}
+{"page": "Mathematical logic", "statement": "Mathematical logic is the study of formal logic within mathematics.", "subject": "Mathematical logic", "pid": null, "object": "formal logic"}
+{"page": "Mathematical logic", "statement": "Major subareas include model theory.", "subject": "Mathematical logic", "pid": null, "object": "model theory"}
+{"page": "Mathematical logic", "statement": "Major subareas include proof theory.", "subject": "Mathematical logic", "pid": null, "object": "proof theory"}
+{"page": "Mathematical logic", "statement": "Major subareas include set theory.", "subject": "Mathematical logic", "pid": null, "object": "set theory"}
+{"page": "Mathematical logic", "statement": "Major subareas include recursion theory.", "subject": "Mathematical logic", "pid": null, "object": "recursion theory"}
+{"page": "Mathematical logic", "statement": "David Hilbert proposed a program to prove consistency of foundational theories.", "subject": "David Hilbert", "pid": null, "object": "consistency program"}
+{"page": "Mathematical logic", "statement": "Kurt G\u00f6del provided partial resolution to Hilbert's program.", "subject": "Kurt G\u00f6del", "pid": null, "object": "incompleteness"}
+{"page": "Mathematical logic", "statement": "George Boole presented systematic mathematical treatments of logic.", "subject": "George Boole", "pid": null, "object": "mathematical logic"}
+{"page": "Mathematical logic", "statement": "Augustus De Morgan presented systematic mathematical treatments of logic.", "subject": "Augustus De Morgan", "pid": null, "object": "mathematical logic"}
+{"page": "Mathematical logic", "statement": "Vatroslav Berti\u0107 made work on algebraization of logic in 1847.", "subject": "Vatroslav Berti\u0107", "pid": null, "object": "algebraization"}
+{"page": "Mathematical logic", "statement": "Charles Sanders Peirce developed logical systems for relations and quantifiers.", "subject": "Charles Sanders Peirce", "pid": null, "object": "logic systems"}
+{"page": "Mathematical logic", "statement": "Gottlob Frege published Begriffsschrift in 1879.", "subject": "Gottlob Frege", "pid": "P800", "object": "Begriffsschrift"}
+{"page": "Mathematical logic", "statement": "Bertrand Russell promoted Frege's work near the turn of the century.", "subject": "Bertrand Russell", "pid": null, "object": "logic promotion"}
+{"page": "Mathematical logic", "statement": "Ernst Schr\u00f6del published Vorlesungen \u00fcber die Algebra der Logik.", "subject": "Ernst Schr\u00f6del", "pid": "P800", "object": "Vorlesungen \u00fcber die Algebra der Logik"}
+{"page": "Mathematical logic", "statement": "Giuseppe Peano published axioms for arithmetic.", "subject": "Giuseppe Peano", "pid": "P800", "object": "Peano axioms"}
+{"page": "Mathematical logic", "statement": "Richard Dedekind showed natural numbers are uniquely characterized.", "subject": "Richard Dedekind", "pid": null, "object": "natural numbers"}
+{"page": "Mathematical logic", "statement": "Nikolai Lobachevsky established independence of the parallel postulate in 1826.", "subject": "Nikolai Lobachevsky", "pid": null, "object": "parallel postulate"}
+{"page": "Mathematical logic", "statement": "Hilbert developed a complete set of axioms for geometry.", "subject": "David Hilbert", "pid": null, "object": "geometry axioms"}
+{"page": "Mathematical logic", "statement": "Weierstrass constructed continuous functions.", "subject": "Karl Weierstrass", "pid": null, "object": "continuous functions"}
+{"page": "Mathematical logic", "statement": "Category theory uses formal axiomatic methods.", "subject": "Category theory", "pid": null, "object": "formal methods"}
+{"page": "Mathematical proof", "statement": "A mathematical proof is a deductive argument for a mathematical statement.", "subject": "Mathematical proof", "pid": null, "object": "deductive argument"}
+{"page": "Mathematical proof", "statement": "Thales of Miletus lived c. 624 BCE.", "subject": "Thales of Miletus", "pid": "P569", "object": "624 BCE"}
+{"page": "Mathematical proof", "statement": "Thales is credited with the first use of deductive reasoning applied to geometry.", "subject": "Thales", "pid": null, "object": "deductive reasoning"}
+{"page": "Mathematical proof", "statement": "Hippocrates of Chios lived c. 470 BCE.", "subject": "Hippocrates of Chios", "pid": "P569", "object": "470 BCE"}
+{"page": "Mathematical proof", "statement": "Pythagoras lived c. 582 BCE.", "subject": "Pythagoras of Samos", "pid": "P569", "object": "582 BCE"}
+{"page": "Mathematical proof", "statement": "Eudoxus lived 408-355 BCE.", "subject": "Eudoxus", "pid": "P569", "object": "408 BCE"}
+{"page": "Mathematical proof", "statement": "Archimedes provided proofs for the area of a circle.", "subject": "Archimedes", "pid": null, "object": "circle geometry"}
+{"page": "Mathematical proof", "statement": "Euclid lived around 300 BCE.", "subject": "Euclid", "pid": "P569", "object": "300 BCE"}
+{"page": "Mathematical proof", "statement": "Euclid wrote the Elements.", "subject": "Euclid", "pid": "P800", "object": "Elements"}
+{"page": "Mathematical proof", "statement": "Apollonius wrote Conics.", "subject": "Apollonius", "pid": "P800", "object": "Conics"}
+{"page": "Mathematical proof", "statement": "Al-Hashimi was an Iraqi mathematician in the 10th century.", "subject": "Al-Hashimi", "pid": null, "object": "10th century mathematician"}
+{"page": "Mathematical proof", "statement": "Al-Karaji wrote Al-Fakhri in 1000.", "subject": "Al-Karaji", "pid": "P800", "object": "Al-Fakhri"}
+{"page": "Mathematical proof", "statement": "Paul Erd\u0151s described elegant proofs as coming from The Book.", "subject": "Paul Erd\u0151s", "pid": null, "object": "elegant proofs"}
+{"page": "Mathematical proof", "statement": "Hypatia of Alexandria lived c. 350 CE.", "subject": "Hypatia of Alexandria", "pid": "P569", "object": "350 CE"}
+{"page": "Mathematical proof", "statement": "Hypatia of Alexandria died in 415 CE.", "subject": "Hypatia of Alexandria", "pid": "P20", "object": "415 CE"}
+{"page": "Mathematical proof", "statement": "Hypatia succeeded her father as librarian at the Great Library.", "subject": "Hypatia", "pid": "P551", "object": "Great Library"}
+{"page": "Mathematical proof", "statement": "Kant believed mathematical proofs are synthetic.", "subject": "Kant", "pid": null, "object": "synthetic proofs"}
+{"page": "Mathematical proof", "statement": "Quine argued the analytic-synthetic distinction is untenable.", "subject": "Quine", "pid": null, "object": "analytic synthetic"}
+{"page": "Mathematical proof", "statement": "The Pythagorean theorem is covered in Euclid's Elements.", "subject": "Pythagorean theorem", "pid": null, "object": "Euclid's Elements"}
+{"page": "Mathematical proof", "statement": "Proof theory studies formal proofs and their properties.", "subject": "Proof theory", "pid": null, "object": "formal proofs"}
+{"page": "Mathematician", "statement": "A mathematician uses extensive knowledge of mathematics in their work.", "subject": "Mathematician", "pid": null, "object": "person"}
+{"page": "Mathematician", "statement": "Thales of Miletus lived c. 624 BCE.", "subject": "Thales of Miletus", "pid": "P569", "object": "624 BCE"}
+{"page": "Mathematician", "statement": "Thales is one of the earliest known mathematicians.", "subject": "Thales", "pid": null, "object": "first mathematician"}
+{"page": "Mathematician", "statement": "Pythagoras lived c. 582 BCE.", "subject": "Pythagoras of Samos", "pid": "P569", "object": "582 BCE"}
+{"page": "Mathematician", "statement": "Pythagoras established the Pythagorean school.", "subject": "Pythagoras", "pid": "P800", "object": "Pythagorean school"}
+{"page": "Mathematician", "statement": "Archimedes was one of the greatest figures in mathematics history.", "subject": "Archimedes", "pid": null, "object": "great mathematician"}
+{"page": "Mathematician", "statement": "Archimedes provided proofs for volume and surface area of a sphere.", "subject": "Archimedes", "pid": null, "object": "sphere"}
+{"page": "Mathematician", "statement": "Euclid wrote the Elements.", "subject": "Euclid", "pid": "P800", "object": "Elements"}
+{"page": "Mathematician", "statement": "Apollonius wrote Conics.", "subject": "Apollonius", "pid": "P800", "object": "Conics"}
+{"page": "Mathematician", "statement": "Hypatia of Alexandria lived c. 350 CE.", "subject": "Hypatia of Alexandria", "pid": "P569", "object": "350 CE"}
+{"page": "Mathematician", "statement": "Hypatia died in 415 CE.", "subject": "Hypatia of Alexandria", "pid": "P20", "object": "415 CE"}
+{"page": "Mathematician", "statement": "Al-Khawarizmi was a translator and mathematician.", "subject": "Al-Khawarizmi", "pid": null, "object": "Islamic scholar"}
+{"page": "Mathematician", "statement": "Ibn al-Haytham worked on optics, mathematics and astronomy.", "subject": "Ibn al-Haytham", "pid": null, "object": "scholar"}
+{"page": "Mathematician", "statement": "Aryabhata applied trigonometry to astronomy.", "subject": "Aryabhata", "pid": null, "object": "trigonometry"}
+{"page": "Mathematician", "statement": "Brahmagupta explained negative numbers and zero systematically.", "subject": "Brahmagupta", "pid": null, "object": "negative numbers"}
+{"page": "Mathematician", "statement": "Bhaskara II was a mathematician and astronomer.", "subject": "Bhaskara II", "pid": null, "object": "astronomer"}
+{"page": "Mathematician", "statement": "Luca Pacioli was the founder of accounting.", "subject": "Luca Pacioli", "pid": null, "object": "accounting"}
+{"page": "Mathematician", "statement": "Robert Hooke worked at Oxford University.", "subject": "Robert Hooke", "pid": "P551", "object": "Oxford University"}
+{"page": "Mathematician", "statement": "Isaac Newton was Lucasian Professor of Mathematics at Cambridge.", "subject": "Isaac Newton", "pid": "P39", "object": "Lucasian Professor"}
+{"page": "Mathematician", "statement": "Alexander von Humboldt convinced the king of Prussia to build a university.", "subject": "Alexander von Humboldt", "pid": null, "object": "Berlin"}
+{"page": "Mathematics", "statement": "Mathematics is a field of knowledge concerned with abstract concepts.", "subject": "Mathematics", "pid": null, "object": "field"}
+{"page": "Mathematics", "statement": "Number theory is the study of integers and their properties.", "subject": "Number theory", "pid": null, "object": "integers"}
+{"page": "Mathematics", "statement": "Algebra is the study of operations and the structures they form.", "subject": "Algebra", "pid": null, "object": "operations"}
+{"page": "Mathematics", "statement": "Geometry is the study of shapes and spaces.", "subject": "Geometry", "pid": null, "object": "shapes"}
+{"page": "Mathematics", "statement": "Analysis is the quantitative study of approximation and convergence.", "subject": "Analysis", "pid": null, "object": "approximation"}
+{"page": "Mathematics", "statement": "Set theory is used as a foundation for all mathematics.", "subject": "Set theory", "pid": null, "object": "foundation"}
+{"page": "Mathematics", "statement": "Euclid wrote the Elements.", "subject": "Euclid", "pid": "P800", "object": "Elements"}
+{"page": "Mathematics", "statement": "Mathematics is essential in natural sciences and engineering.", "subject": "Mathematics", "pid": null, "object": "sciences"}
+{"page": "Mathematics", "statement": "Combinatorics has been studied for much of recorded history.", "subject": "Combinatorics", "pid": null, "object": "branch"}
+{"page": "Mathematics", "statement": "Arithmetic is the study and manipulation of numbers.", "subject": "Arithmetic", "pid": null, "object": "numbers"}
+{"page": "Mathematics", "statement": "Algebra involves the study of algebraic expressions.", "subject": "Algebra", "pid": null, "object": "expressions"}
+{"page": "Mathematics", "statement": "Calculus involves the study of continuous functions.", "subject": "Calculus", "pid": null, "object": "functions"}
+{"page": "Mathematics", "statement": "Differential calculus is a subfield of calculus.", "subject": "Differential calculus", "pid": null, "object": "derivatives"}
+{"page": "Mathematics", "statement": "Integral calculus is a subfield of calculus.", "subject": "Integral calculus", "pid": null, "object": "integrals"}
+{"page": "Mathematics", "statement": "Game theory is developed in close correlation with applications.", "subject": "Game theory", "pid": null, "object": "applications"}
+{"page": "Mathematics", "statement": "Mathematical written records first appeared in Ancient Egypt.", "subject": "Ancient Egypt", "pid": null, "object": "records"}
+{"page": "Mathematics", "statement": "Mathematical written records first appeared in Mesopotamia.", "subject": "Mesopotamia", "pid": null, "object": "records"}
+{"page": "Mathematics", "statement": "The concept of proof began in Ancient Greek mathematics.", "subject": "Ancient Greece", "pid": null, "object": "proof"}
+{"page": "Mathematics", "statement": "Pierre de Fermat contributed to modern number theory.", "subject": "Pierre de Fermat", "pid": null, "object": "theorist"}
+{"page": "Mathematics", "statement": "Leonhard Euler contributed to modern number theory.", "subject": "Leonhard Euler", "pid": null, "object": "theorist"}
+{"page": "Mathematische Annalen", "statement": "Mathematische Annalen was founded in 1868.", "subject": "Mathematische Annalen", "pid": "P571", "object": "1868"}
+{"page": "Mathematische Annalen", "statement": "Alfred Clebsch founded Mathematische Annalen.", "subject": "Alfred Clebsch", "pid": null, "object": "founder"}
+{"page": "Mathematische Annalen", "statement": "Carl Neumann founded Mathematische Annalen.", "subject": "Carl Neumann", "pid": null, "object": "founder"}
+{"page": "Mathematische Annalen", "statement": "Mathematische Annalen is a German mathematical research journal.", "subject": "Mathematische Annalen", "pid": "P31", "object": "journal"}
+{"page": "Mathematische Annalen", "statement": "Felix Klein was a managing editor of Mathematische Annalen.", "subject": "Felix Klein", "pid": null, "object": "editor"}
+{"page": "Mathematische Annalen", "statement": "David Hilbert was a managing editor of Mathematische Annalen.", "subject": "David Hilbert", "pid": null, "object": "editor"}
+{"page": "Mathematische Annalen", "statement": "Otto Blumenthal was a managing editor of Mathematische Annalen.", "subject": "Otto Blumenthal", "pid": null, "object": "editor"}
+{"page": "Mathematische Annalen", "statement": "Erich Hecke was a managing editor of Mathematische Annalen.", "subject": "Erich Hecke", "pid": null, "object": "editor"}
+{"page": "Mathematische Annalen", "statement": "Yoshikazu Giga is current editor and is at University of Tokyo.", "subject": "Yoshikazu Giga", "pid": "P551", "object": "University of Tokyo"}
+{"page": "Mathematische Annalen", "statement": "Volumes 1-80 were published by Teubner.", "subject": "Teubner", "pid": null, "object": "publisher"}
+{"page": "Mathematische Annalen", "statement": "Since 1920, the journal has been published by Springer.", "subject": "Springer", "pid": null, "object": "publisher"}
+{"page": "Mathematische Annalen", "statement": "The journal became involved in the Brouwer-Hilbert controversy.", "subject": "Brouwer-Hilbert controversy", "pid": null, "object": "dispute"}
+{"page": "Mathematische Annalen", "statement": "L. E. J. Brouwer was on the editorial board.", "subject": "L. E. J. Brouwer", "pid": null, "object": "board member"}
+{"page": "Mathematische Annalen", "statement": "The journal briefly ceased publication between 1945 and 1947.", "subject": "Journal", "pid": "P576", "object": "1947"}
+{"page": "Mathematische Annalen", "statement": "Archives are available from 1869 to 1996.", "subject": "Mathematische Annalen archive", "pid": null, "object": "coverage"}
+{"page": "Metaphysics", "statement": "Metaphysics is the branch of philosophy that examines fundamental reality.", "subject": "Metaphysics", "pid": null, "object": "branch"}
+{"page": "Metaphysics", "statement": "Metaphysics is an inquiry into the conceptual framework of understanding.", "subject": "Metaphysics", "pid": null, "object": "inquiry"}
+{"page": "Metaphysics", "statement": "Aristotle designated metaphysics as the first philosophy.", "subject": "Aristotle", "pid": "P800", "object": "metaphysics"}
+{"page": "Metaphysics", "statement": "Particulars are unique individual entities.", "subject": "Particulars", "pid": null, "object": "entities"}
+{"page": "Metaphysics", "statement": "Universals are general features that particulars have in common.", "subject": "Universals", "pid": null, "object": "features"}
+{"page": "Metaphysics", "statement": "Modal metaphysics examines what it means for something to be possible.", "subject": "Modal metaphysics", "pid": null, "object": "possibility"}
+{"page": "Metaphysics", "statement": "Metaphysicians explore the concepts of space, time, and change.", "subject": "Metaphysics", "pid": null, "object": "topics"}
+{"page": "Metaphysics", "statement": "Metaphysics has roots in the Upanishads in ancient India.", "subject": "Upanishads", "pid": null, "object": "ancient texts"}
+{"page": "Metaphysics", "statement": "Metaphysics has roots in Taoism in ancient China.", "subject": "Taoism", "pid": "P30", "object": "ancient China"}
+{"page": "Metaphysics", "statement": "Metaphysics has roots in pre-Socratic philosophy in ancient Greece.", "subject": "Pre-Socratic philosophy", "pid": "P30", "object": "ancient Greece"}
+{"page": "Metaphysics", "statement": "Plato influenced discussions about the nature of universals.", "subject": "Plato", "pid": null, "object": "universals"}
+{"page": "Metaphysics", "statement": "The medieval period saw development of metaphysics in the West.", "subject": "Medieval period", "pid": null, "object": "western metaphysics"}
+{"page": "Metaphysics", "statement": "In the 20th century, traditional metaphysics faced various criticisms.", "subject": "20th century", "pid": null, "object": "criticism"}
+{"page": "Metaphysics", "statement": "Immanuel Kant's critical philosophy changed metaphysics.", "subject": "Immanuel Kant", "pid": null, "object": "critical philosophy"}
+{"page": "Metaphysics", "statement": "P. F. Strawson explored descriptive metaphysics.", "subject": "P. F. Strawson", "pid": null, "object": "descriptive"}
+{"page": "Metaphysics", "statement": "Ontology studies the most fundamental aspects of being.", "subject": "Ontology", "pid": null, "object": "being"}
+{"page": "Metaphysics", "statement": "Metaphysical cosmology examines changeable things.", "subject": "Metaphysical cosmology", "pid": null, "object": "things"}
+{"page": "Metaphysics", "statement": "Rational psychology focuses on metaphysical foundations of mind.", "subject": "Rational psychology", "pid": null, "object": "mind"}
+{"page": "Metaphysics", "statement": "Natural theology studies the divine.", "subject": "Natural theology", "pid": null, "object": "divine"}
+{"page": "Metaphysics", "statement": "Applied metaphysics emerged in the second half of the 20th century.", "subject": "Applied metaphysics", "pid": "P571", "object": "20th century"}
+{"page": "Millennium Prize Problems", "statement": "The Millennium Prize Problems are seven complex mathematical problems.", "subject": "Millennium Prize Problems", "pid": null, "object": "problems"}
+{"page": "Millennium Prize Problems", "statement": "The Clay Institute designated the Millennium Problems in 2000.", "subject": "Clay Mathematics Institute", "pid": "P571", "object": "2000"}
+{"page": "Millennium Prize Problems", "statement": "The prize for each Millennium Problem is one million US dollars.", "subject": "Millennium Prize", "pid": null, "object": "money"}
+{"page": "Millennium Prize Problems", "statement": "The Poincare conjecture was solved by Grigori Perelman.", "subject": "Poincare conjecture", "pid": null, "object": "solved"}
+{"page": "Millennium Prize Problems", "statement": "Grigori Perelman was awarded the Millennium Prize.", "subject": "Grigori Perelman", "pid": "P166", "object": "Millennium Prize"}
+{"page": "Millennium Prize Problems", "statement": "Grigori Perelman was awarded the Fields Medal in 2006.", "subject": "Grigori Perelman", "pid": "P166", "object": "Fields Medal"}
+{"page": "Millennium Prize Problems", "statement": "Grigori Perelman declined the Millennium Prize.", "subject": "Grigori Perelman", "pid": null, "object": "decline"}
+{"page": "Millennium Prize Problems", "statement": "Richard S. Hamilton developed Ricci flow.", "subject": "Richard S. Hamilton", "pid": null, "object": "Ricci flow"}
+{"page": "Millennium Prize Problems", "statement": "David Hilbert organized a set of twenty-three problems in 1900.", "subject": "David Hilbert", "pid": "P800", "object": "problems"}
+{"page": "Millennium Prize Problems", "statement": "Hilbert's problems were influential in driving mathematics progress.", "subject": "Hilbert problems", "pid": null, "object": "progress"}
+{"page": "Millennium Prize Problems", "statement": "John Tate announced the Millennium Problems.", "subject": "John Tate", "pid": null, "object": "announcer"}
+{"page": "Millennium Prize Problems", "statement": "Michael Atiyah announced the Millennium Problems.", "subject": "Michael Atiyah", "pid": null, "object": "announcer"}
+{"page": "Millennium Prize Problems", "statement": "The Millennium Meeting was held on May 24, 2000.", "subject": "Millennium Meeting", "pid": "P571", "object": "May 24 2000"}
+{"page": "Millennium Prize Problems", "statement": "The ceremony was held at the Coll\u00e8ge de France in Paris.", "subject": "Coll\u00e8ge de France", "pid": "P19", "object": "Paris"}
+{"page": "Millennium Prize Problems", "statement": "The conjecture deals with elliptic curves.", "subject": "Birch Swinnerton-Dyer conjecture", "pid": null, "object": "curves"}
+{"page": "Millennium Prize Problems", "statement": "The Hodge conjecture concerns projective algebraic varieties.", "subject": "Hodge conjecture", "pid": null, "object": "varieties"}
+{"page": "Millennium Prize Problems", "statement": "Navier-Stokes deals with partial differential equations.", "subject": "Navier-Stokes equations", "pid": null, "object": "differential"}
+{"page": "Millennium Prize Problems", "statement": "P versus NP is in theoretical computer science.", "subject": "P versus NP", "pid": null, "object": "computer science"}
+{"page": "Millennium Prize Problems", "statement": "The Riemann hypothesis is in number theory.", "subject": "Riemann hypothesis", "pid": null, "object": "numbers"}
+{"page": "Millennium Prize Problems", "statement": "Yang-Mills existence is in mathematical physics.", "subject": "Yang-Mills existence", "pid": null, "object": "physics"}
+{"page": "Model theory", "statement": "Model theory is the study of formal theories and their models.", "subject": "Model theory", "pid": null, "object": "logic"}
+{"page": "Model theory", "statement": "Model theory studies structures in which formal theory statements hold.", "subject": "Model theory", "pid": null, "object": "structures"}
+{"page": "Model theory", "statement": "Alfred Tarski first used the term Theory of Models in 1954.", "subject": "Alfred Tarski", "pid": null, "object": "founder"}
+{"page": "Model theory", "statement": "Saharon Shelah shaped model theory with stability theory.", "subject": "Saharon Shelah", "pid": null, "object": "stability"}
+{"page": "Model theory", "statement": "Model theorists investigate sets that can be defined in a model.", "subject": "Model theory", "pid": null, "object": "sets"}
+{"page": "Model theory", "statement": "Proof theory is concerned with formal rigor.", "subject": "Proof theory", "pid": null, "object": "rigor"}
+{"page": "Model theory", "statement": "Model theory is closer in spirit to classical mathematics.", "subject": "Model theory", "pid": null, "object": "classical"}
+{"page": "Model theory", "statement": "Model theory has applications to algebraic geometry.", "subject": "Algebraic geometry", "pid": null, "object": "application"}
+{"page": "Model theory", "statement": "Model theory has applications to Diophantine geometry.", "subject": "Diophantine geometry", "pid": null, "object": "application"}
+{"page": "Model theory", "statement": "First-order logic is fundamental to model theory.", "subject": "First-order logic", "pid": null, "object": "system"}
+{"page": "Model theory", "statement": "Formal languages express statements in formal theories.", "subject": "Formal language", "pid": null, "object": "expression"}
+{"page": "Model theory", "statement": "Boolean connectives include negation and conjunction.", "subject": "Boolean connectives", "pid": null, "object": "operators"}
+{"page": "Model theory", "statement": "Quantifiers include universal and existential quantifiers.", "subject": "Quantifiers", "pid": null, "object": "symbols"}
+{"page": "Model theory", "statement": "Stability was introduced to classify theories by numbers of models.", "subject": "Stability theory", "pid": null, "object": "classification"}
+{"page": "Model theory", "statement": "Stability theory proved crucial to understanding definable set geometry.", "subject": "Geometry of definable sets", "pid": null, "object": "topic"}
+{"page": "Model theory", "statement": "Universal algebra studies mathematical structures.", "subject": "Universal algebra", "pid": null, "object": "structures"}
+{"page": "Model theory", "statement": "Atomic formulas are the building blocks of logical formulas.", "subject": "Atomic formula", "pid": null, "object": "blocks"}
+{"page": "Model theory", "statement": "Model theory is semantic in nature.", "subject": "Semantic", "pid": null, "object": "nature"}
+{"page": "Model theory", "statement": "Proof theory is syntactic in nature.", "subject": "Syntactic", "pid": null, "object": "nature"}
+{"page": "Natural number", "statement": "A natural number is used for counting and ordering.", "subject": "Natural number", "pid": null, "object": "counting"}
+{"page": "Natural number", "statement": "Natural numbers are a basic mathematical concept.", "subject": "Natural numbers", "pid": "P31", "object": "numbers"}
+{"page": "Natural number", "statement": "Zero is sometimes considered a natural number.", "subject": "Zero", "pid": null, "object": "number"}
+{"page": "Natural number", "statement": "Natural numbers are used in counting.", "subject": "Counting", "pid": null, "object": "natural numbers"}
+{"page": "Natural number", "statement": "Natural numbers are used in ordering.", "subject": "Ordering", "pid": null, "object": "natural numbers"}
+{"page": "Natural number", "statement": "Peano axioms define the natural numbers.", "subject": "Peano axioms", "pid": null, "object": "natural numbers"}
+{"page": "Natural number", "statement": "Addition is an operation on natural numbers.", "subject": "Addition", "pid": null, "object": "operation"}
+{"page": "Natural number", "statement": "Multiplication is an operation on natural numbers.", "subject": "Multiplication", "pid": null, "object": "operation"}
+{"page": "Natural number", "statement": "A prime number is a natural number greater than 1.", "subject": "Prime number", "pid": null, "object": "natural number"}
+{"page": "Natural number", "statement": "Divisibility is an important property of natural numbers.", "subject": "Divisibility", "pid": null, "object": "property"}
+{"page": "Natural number", "statement": "Mathematical induction is used to prove properties of natural numbers.", "subject": "Induction", "pid": null, "object": "proof method"}
+{"page": "Natural number", "statement": "There are infinitely many natural numbers.", "subject": "Infinity", "pid": null, "object": "concept"}
+{"page": "Natural number", "statement": "The successor function generates the next natural number.", "subject": "Successor function", "pid": null, "object": "operation"}
+{"page": "Natural number", "statement": "Natural numbers measure cardinality.", "subject": "Cardinality", "pid": null, "object": "concept"}
+{"page": "Niels Henrik Abel", "statement": "Niels Henrik Abel was born in 1802.", "subject": "Niels Henrik Abel", "pid": "P569", "object": "1802"}
+{"page": "Niels Henrik Abel", "statement": "Niels Henrik Abel died in 1829.", "subject": "Niels Henrik Abel", "pid": "P20", "object": "1829"}
+{"page": "Niels Henrik Abel", "statement": "Niels Henrik Abel was born in Norway.", "subject": "Niels Henrik Abel", "pid": "P19", "object": "Norway"}
+{"page": "Niels Henrik Abel", "statement": "Niels Henrik Abel was a mathematician.", "subject": "Niels Henrik Abel", "pid": null, "object": "mathematician"}
+{"page": "Niels Henrik Abel", "statement": "Abel made contributions to polynomial equations.", "subject": "Abel", "pid": "P800", "object": "polynomial equations"}
+{"page": "Niels Henrik Abel", "statement": "Abel made contributions to series theory.", "subject": "Abel", "pid": "P800", "object": "series"}
+{"page": "Niels Henrik Abel", "statement": "The Abel Prize is named after Niels Henrik Abel.", "subject": "Abel Prize", "pid": "P138", "object": "Niels Henrik Abel"}
+{"page": "Niels Henrik Abel", "statement": "The Norwegian Academy of Sciences established the Abel Prize.", "subject": "Norwegian Academy of Sciences", "pid": null, "object": "Abel"}
+{"page": "Niels Henrik Abel", "statement": "The Fields Medal is a major mathematics award.", "subject": "Fields Medal", "pid": null, "object": "mathematics"}
+{"page": "Niels Henrik Abel", "statement": "Cauchy was a contemporary of Abel.", "subject": "Augustin-Louis Cauchy", "pid": null, "object": "Abel"}
+{"page": "Niels Henrik Abel", "statement": "The Paris Academy recognized Abel's work.", "subject": "Paris Academy", "pid": null, "object": "Abel"}
+{"page": "Niels Henrik Abel", "statement": "Abel's theorem applies to power series.", "subject": "Power series", "pid": null, "object": "Abel's theorem"}
+{"page": "Niels Henrik Abel", "statement": "An abelian group is a commutative group.", "subject": "Abelian group", "pid": null, "object": "commutative group"}
+{"page": "Niels Henrik Abel", "statement": "Galois theory relates to polynomial equations.", "subject": "Galois theory", "pid": null, "object": "polynomial"}
+{"page": "Non-Euclidean geometry", "statement": "Non-Euclidean geometry rejects the parallel postulate.", "subject": "Non-Euclidean geometry", "pid": null, "object": "geometry"}
+{"page": "Non-Euclidean geometry", "statement": "The parallel postulate is an axiom in Euclidean geometry.", "subject": "Parallel postulate", "pid": null, "object": "axiom"}
+{"page": "Non-Euclidean geometry", "statement": "Euclidean geometry developed in ancient Greece.", "subject": "Euclidean geometry", "pid": "P30", "object": "ancient Greece"}
+{"page": "Non-Euclidean geometry", "statement": "Nikolai Lobachevsky developed hyperbolic geometry.", "subject": "Nikolai Lobachevsky", "pid": "P800", "object": "hyperbolic geometry"}
+{"page": "Non-Euclidean geometry", "statement": "Bernhard Riemann developed spherical geometry.", "subject": "Bernhard Riemann", "pid": "P800", "object": "spherical geometry"}
+{"page": "Non-Euclidean geometry", "statement": "Hyperbolic geometry has negative curvature.", "subject": "Hyperbolic geometry", "pid": null, "object": "negative curvature"}
+{"page": "Non-Euclidean geometry", "statement": "Spherical geometry has positive curvature.", "subject": "Spherical geometry", "pid": null, "object": "positive curvature"}
+{"page": "Non-Euclidean geometry", "statement": "Curvature is a property of space in non-Euclidean geometry.", "subject": "Curvature", "pid": null, "object": "space property"}
+{"page": "Non-Euclidean geometry", "statement": "General relativity uses non-Euclidean geometry.", "subject": "General relativity", "pid": null, "object": "non-Euclidean"}
+{"page": "Non-Euclidean geometry", "statement": "Albert Einstein developed general relativity.", "subject": "Albert Einstein", "pid": "P800", "object": "general relativity"}
+{"page": "Non-Euclidean geometry", "statement": "Gauss studied curved surfaces.", "subject": "Gauss", "pid": null, "object": "curved surfaces"}
+{"page": "Non-Euclidean geometry", "statement": "Differential geometry studies curves and surfaces.", "subject": "Differential geometry", "pid": null, "object": "curves"}
+{"page": "Non-Euclidean geometry", "statement": "A manifold is a generalization of geometric space.", "subject": "Manifold", "pid": null, "object": "geometric space"}
+{"page": "Non-Euclidean geometry", "statement": "A geodesic is the shortest path between two points.", "subject": "Geodesic", "pid": null, "object": "shortest path"}
+{"page": "Norbert Wiener", "statement": "Norbert Wiener was born in 1894.", "subject": "Norbert Wiener", "pid": "P569", "object": "1894"}
+{"page": "Norbert Wiener", "statement": "Norbert Wiener died in 1964.", "subject": "Norbert Wiener", "pid": "P20", "object": "1964"}
+{"page": "Norbert Wiener", "statement": "Norbert Wiener was born in Missouri.", "subject": "Norbert Wiener", "pid": "P19", "object": "Missouri"}
+{"page": "Norbert Wiener", "statement": "Norbert Wiener was educated at Harvard University.", "subject": "Norbert Wiener", "pid": "P69", "object": "Harvard University"}
+{"page": "Norbert Wiener", "statement": "Norbert Wiener worked at MIT.", "subject": "Norbert Wiener", "pid": "P108", "object": "MIT"}
+{"page": "Norbert Wiener", "statement": "Norbert Wiener was a mathematician.", "subject": "Norbert Wiener", "pid": "P106", "object": "mathematician"}
+{"page": "Norbert Wiener", "statement": "Norbert Wiener founded cybernetics.", "subject": "Cybernetics", "pid": "P170", "object": "Norbert Wiener"}
+{"page": "Norbert Wiener", "statement": "The Wiener process models Brownian motion.", "subject": "Brownian motion", "pid": null, "object": "Wiener process"}
+{"page": "Norbert Wiener", "statement": "The Wiener process is named after Norbert Wiener.", "subject": "Wiener process", "pid": "P138", "object": "Norbert Wiener"}
+{"page": "Norbert Wiener", "statement": "Wiener contributed to information theory.", "subject": "Information theory", "pid": null, "object": "Wiener"}
+{"page": "Norbert Wiener", "statement": "The Wiener filter is used in signal processing.", "subject": "Signal processing", "pid": null, "object": "Wiener filter"}
+{"page": "Norbert Wiener", "statement": "Wiener worked on Fourier analysis.", "subject": "Fourier analysis", "pid": null, "object": "Wiener"}
+{"page": "Norbert Wiener", "statement": "Wiener worked on harmonic analysis.", "subject": "Harmonic analysis", "pid": null, "object": "Wiener"}
+{"page": "Norbert Wiener", "statement": "Norbert Wiener developed generalized harmonic analysis.", "subject": "Generalized harmonic analysis", "pid": "P800", "object": "Norbert Wiener"}
+{"page": "Norbert Wiener", "statement": "Wiener worked on applied mathematics.", "subject": "Applied mathematics", "pid": null, "object": "Wiener"}
+{"page": "Notices of the American Mathematical Society", "statement": "Notices was founded in 1891.", "subject": "Notices of the American Mathematical Society", "pid": "P571", "object": "1891"}
+{"page": "Notices of the American Mathematical Society", "statement": "The American Mathematical Society publishes Notices.", "subject": "American Mathematical Society", "pid": null, "object": "professional"}
+{"page": "Notices of the American Mathematical Society", "statement": "Notices of the American Mathematical Society is a professional journal.", "subject": "Notices", "pid": "P31", "object": "journal"}
+{"page": "Notices of the American Mathematical Society", "statement": "Mathematics journals communicate research findings.", "subject": "Mathematics journal", "pid": null, "object": "communication"}
+{"page": "Notices of the American Mathematical Society", "statement": "Peer review ensures quality in mathematical publications.", "subject": "Peer review", "pid": null, "object": "quality control"}
+{"page": "Notices of the American Mathematical Society", "statement": "Research articles present new mathematical results.", "subject": "Research articles", "pid": null, "object": "mathematics"}
+{"page": "Notices of the American Mathematical Society", "statement": "Survey articles provide overviews of mathematical topics.", "subject": "Survey articles", "pid": null, "object": "overview"}
+{"page": "Notices of the American Mathematical Society", "statement": "Book reviews evaluate mathematical books.", "subject": "Book reviews", "pid": null, "object": "criticism"}
+{"page": "Notices of the American Mathematical Society", "statement": "Notices includes news and announcements.", "subject": "News section", "pid": null, "object": "announcements"}
+{"page": "Notices of the American Mathematical Society", "statement": "The letters section provides reader correspondence.", "subject": "Letters section", "pid": null, "object": "correspondence"}
+{"page": "Notices of the American Mathematical Society", "statement": "Obituaries honor deceased mathematicians.", "subject": "Obituaries", "pid": null, "object": "tribute"}
+{"page": "Notices of the American Mathematical Society", "statement": "Notices provides employment information.", "subject": "Employment information", "pid": null, "object": "jobs"}
+{"page": "Notices of the American Mathematical Society", "statement": "Notices announces mathematical conferences.", "subject": "Conference announcements", "pid": null, "object": "events"}
+{"page": "Notices of the American Mathematical Society", "statement": "Notices announces mathematical awards.", "subject": "Award announcements", "pid": null, "object": "recognition"}
+{"page": "Number theory", "statement": "Number theory is the study of integers.", "subject": "Number theory", "pid": null, "object": "integers"}
+{"page": "Number theory", "statement": "A prime number is divisible only by 1 and itself.", "subject": "Prime number", "pid": null, "object": "divisibility"}
+{"page": "Number theory", "statement": "Every integer has a unique prime factorization.", "subject": "Fundamental theorem of arithmetic", "pid": null, "object": "factorization"}
+{"page": "Number theory", "statement": "Euclid proved there are infinitely many prime numbers.", "subject": "Euclid", "pid": "P800", "object": "infinite primes"}
+{"page": "Number theory", "statement": "Pierre de Fermat stated Fermat's Last Theorem.", "subject": "Fermat's Last Theorem", "pid": "P50", "object": "Pierre de Fermat"}
+{"page": "Number theory", "statement": "Andrew Wiles proved Fermat's Last Theorem.", "subject": "Andrew Wiles", "pid": "P800", "object": "Fermat's Last Theorem"}
+{"page": "Number theory", "statement": "Diophantine equations seek integer solutions.", "subject": "Diophantine equations", "pid": null, "object": "integer solutions"}
+{"page": "Number theory", "statement": "Goldbach's conjecture concerns sums of prime numbers.", "subject": "Goldbach's conjecture", "pid": null, "object": "prime sums"}
+{"page": "Number theory", "statement": "The Riemann hypothesis concerns prime number distribution.", "subject": "Riemann hypothesis", "pid": null, "object": "prime distribution"}
+{"page": "Number theory", "statement": "Congruence is fundamental to modular arithmetic.", "subject": "Congruence", "pid": null, "object": "modular arithmetic"}
+{"page": "Number theory", "statement": "A multiplicative function respects multiplication.", "subject": "Multiplicative function", "pid": null, "object": "number property"}
+{"page": "Number theory", "statement": "The divisor function counts the divisors of an integer.", "subject": "Divisor function", "pid": null, "object": "divisors"}
+{"page": "Number theory", "statement": "A perfect number equals the sum of its proper divisors.", "subject": "Perfect number", "pid": null, "object": "divisor sum"}
+{"page": "Number theory", "statement": "Twin primes are pairs of primes differing by 2.", "subject": "Twin primes", "pid": null, "object": "prime pairs"}
+{"page": "Occam's razor", "statement": "Occam's razor is a principle of parsimony.", "subject": "Occam's razor", "pid": null, "object": "principle"}
+{"page": "Occam's razor", "statement": "William of Occam formulated Occam's razor.", "subject": "William of Occam", "pid": "P800", "object": "Occam's razor"}
+{"page": "Occam's razor", "statement": "Parsimony favors simpler explanations.", "subject": "Parsimony", "pid": null, "object": "simplicity"}
+{"page": "Occam's razor", "statement": "Occam's razor is used in metaphysics.", "subject": "Metaphysics", "pid": null, "object": "Occam"}
+{"page": "Occam's razor", "statement": "Occam's razor is used in science.", "subject": "Science", "pid": null, "object": "Occam"}
+{"page": "Occam's razor", "statement": "Occam's razor advises not to multiply entities unnecessarily.", "subject": "Entities", "pid": null, "object": "multiplication"}
+{"page": "Occam's razor", "statement": "Occam's razor minimizes unnecessary assumptions.", "subject": "Assumptions", "pid": null, "object": "minimization"}
+{"page": "Occam's razor", "statement": "Simplicity is valued in scientific explanation.", "subject": "Simplicity", "pid": null, "object": "virtue"}
+{"page": "Occam's razor", "statement": "Occam's razor guides choice of explanations.", "subject": "Explanation", "pid": null, "object": "method"}
+{"page": "Occam's razor", "statement": "Occam's razor is a methodological principle.", "subject": "Philosophy of science", "pid": null, "object": "methodology"}
+{"page": "Occam's razor", "statement": "Occam's razor applies to logical reasoning.", "subject": "Logic", "pid": null, "object": "reasoning"}
+{"page": "Occam's razor", "statement": "Occam's razor treats complexity as a cost.", "subject": "Complexity", "pid": null, "object": "cost"}
+{"page": "Occam's razor", "statement": "Occam's razor relates to Bayesian probability.", "subject": "Bayesian reasoning", "pid": null, "object": "probability"}
+{"page": "Occam's razor", "statement": "Occam's razor guides model selection in statistics.", "subject": "Model selection", "pid": null, "object": "statistics"}
+{"page": "Olga Ladyzhenskaya", "statement": "Olga Ladyzhenskaya was born in 1922.", "subject": "Olga Ladyzhenskaya", "pid": "P569", "object": "1922"}
+{"page": "Olga Ladyzhenskaya", "statement": "Olga Ladyzhenskaya died in 2004.", "subject": "Olga Ladyzhenskaya", "pid": "P20", "object": "2004"}
+{"page": "Olga Ladyzhenskaya", "statement": "Olga Ladyzhenskaya was born in Russia.", "subject": "Olga Ladyzhenskaya", "pid": "P19", "object": "Russia"}
+{"page": "Olga Ladyzhenskaya", "statement": "Olga Ladyzhenskaya worked at the Steklov Institute.", "subject": "Olga Ladyzhenskaya", "pid": "P108", "object": "Steklov Institute"}
+{"page": "Olga Ladyzhenskaya", "statement": "Ladyzhenskaya worked on Navier-Stokes equations.", "subject": "Navier-Stokes equations", "pid": null, "object": "Ladyzhenskaya"}
+{"page": "Olga Ladyzhenskaya", "statement": "Ladyzhenskaya studied fluid dynamics.", "subject": "Fluid dynamics", "pid": null, "object": "Ladyzhenskaya"}
+{"page": "Olga Ladyzhenskaya", "statement": "Ladyzhenskaya worked on partial differential equations.", "subject": "Partial differential equations", "pid": null, "object": "Ladyzhenskaya"}
+{"page": "Olga Ladyzhenskaya", "statement": "Ladyzhenskaya contributed to mathematical physics.", "subject": "Mathematical physics", "pid": null, "object": "Ladyzhenskaya"}
+{"page": "Olga Ladyzhenskaya", "statement": "Ladyzhenskaya worked at Leningrad University.", "subject": "Leningrad University", "pid": "P551", "object": "Ladyzhenskaya"}
+{"page": "Olga Ladyzhenskaya", "statement": "Ladyzhenskaya was important in Soviet mathematics.", "subject": "Soviet mathematics", "pid": null, "object": "Ladyzhenskaya"}
+{"page": "Olga Ladyzhenskaya", "statement": "The Abel Prize recognizes exceptional mathematicians.", "subject": "Abel Prize", "pid": null, "object": "women mathematicians"}
+{"page": "Olga Ladyzhenskaya", "statement": "The Fields Medal is a major mathematics award.", "subject": "Fields Medal", "pid": null, "object": "mathematics"}
+{"page": "Olga Ladyzhenskaya", "statement": "Ladyzhenskaya developed regularization methods.", "subject": "Regularization", "pid": null, "object": "differential equations"}
+{"page": "Olga Ladyzhenskaya", "statement": "Ladyzhenskaya studied stability of solutions.", "subject": "Stability of solutions", "pid": null, "object": "equations"}
+{"page": "Omar Khayyam", "statement": "Omar Khayyam was born in 1048.", "subject": "Omar Khayyam", "pid": "P569", "object": "1048"}
+{"page": "Omar Khayyam", "statement": "Omar Khayyam died in 1131.", "subject": "Omar Khayyam", "pid": "P20", "object": "1131"}
+{"page": "Omar Khayyam", "statement": "Omar Khayyam was born in Nishapur.", "subject": "Omar Khayyam", "pid": "P19", "object": "Nishapur"}
+{"page": "Omar Khayyam", "statement": "Omar Khayyam was a mathematician.", "subject": "Omar Khayyam", "pid": "P106", "object": "mathematician"}
+{"page": "Omar Khayyam", "statement": "Omar Khayyam was an astronomer.", "subject": "Omar Khayyam", "pid": "P106", "object": "astronomer"}
+{"page": "Omar Khayyam", "statement": "Omar Khayyam was a poet.", "subject": "Omar Khayyam", "pid": "P106", "object": "poet"}
+{"page": "Omar Khayyam", "statement": "Omar Khayyam was a philosopher.", "subject": "Omar Khayyam", "pid": "P106", "object": "philosopher"}
+{"page": "Omar Khayyam", "statement": "Omar Khayyam wrote the Rubaiyat.", "subject": "Rubaiyat", "pid": "P50", "object": "Omar Khayyam"}
+{"page": "Omar Khayyam", "statement": "Khayyam worked on cubic equations.", "subject": "Cubic equations", "pid": null, "object": "Khayyam"}
+{"page": "Omar Khayyam", "statement": "Khayyam worked on geometric algebra.", "subject": "Geometric algebra", "pid": null, "object": "Khayyam"}
+{"page": "Omar Khayyam", "statement": "Khayyam investigated the parallel postulate.", "subject": "Parallel postulate", "pid": null, "object": "Khayyam"}
+{"page": "Omar Khayyam", "statement": "Khayyam worked on calendar reform.", "subject": "Calendar reform", "pid": null, "object": "Khayyam"}
+{"page": "Omar Khayyam", "statement": "Omar Khayyam created the Jalali calendar.", "subject": "Jalali calendar", "pid": "P170", "object": "Omar Khayyam"}
+{"page": "Omar Khayyam", "statement": "Khayyam contributed to non-Euclidean geometry.", "subject": "Non-Euclidean geometry", "pid": null, "object": "Khayyam"}
+{"page": "Omar Khayyam", "statement": "Khayyam advanced Islamic mathematics.", "subject": "Islamic mathematics", "pid": null, "object": "Khayyam"}
+{"page": "Oxford University Press", "statement": "Oxford University Press was founded in 1586.", "subject": "Oxford University Press", "pid": "P571", "object": "1586"}
+{"page": "Oxford University Press", "statement": "Oxford University is located in Oxford.", "subject": "Oxford University", "pid": "P551", "object": "Oxford"}
+{"page": "Oxford University Press", "statement": "Publishing is the industry of Oxford University Press.", "subject": "Publishing", "pid": "P452", "object": "Oxford University Press"}
+{"page": "Oxford University Press", "statement": "Oxford University Press is an academic publisher.", "subject": "Academic publishing", "pid": null, "object": "Oxford University Press"}
+{"page": "Oxford University Press", "statement": "Oxford University Press publishes books.", "subject": "Books", "pid": null, "object": "Oxford University Press"}
+{"page": "Oxford University Press", "statement": "Oxford University Press publishes journals.", "subject": "Journals", "pid": null, "object": "Oxford University Press"}
+{"page": "Oxford University Press", "statement": "Oxford University Press publishes educational materials.", "subject": "Educational materials", "pid": null, "object": "Oxford University Press"}
+{"page": "Oxford University Press", "statement": "Oxford University Press publishes the Oxford Dictionary.", "subject": "Oxford Dictionary", "pid": "P800", "object": "Oxford University Press"}
+{"page": "Oxford University Press", "statement": "Oxford University Press publishes scholarly works.", "subject": "Scholarly works", "pid": null, "object": "Oxford University Press"}
+{"page": "Oxford University Press", "statement": "Oxford University Press is a global publisher.", "subject": "Global publisher", "pid": null, "object": "Oxford University Press"}
+{"page": "Oxford University Press", "statement": "Cambridge University Press is a competitor of Oxford University Press.", "subject": "Cambridge University Press", "pid": null, "object": "competitor"}
+{"page": "Oxford University Press", "statement": "A university press is an academic publishing entity.", "subject": "University press", "pid": null, "object": "Oxford"}
+{"page": "Oxford University Press", "statement": "Oxford University Press specializes in humanities.", "subject": "Humanities", "pid": null, "object": "Oxford University Press"}
+{"page": "Oxford University Press", "statement": "Oxford University Press publishes science books.", "subject": "Sciences", "pid": null, "object": "Oxford University Press"}
+{"page": "Parallel postulate", "statement": "The parallel postulate is an axiom of Euclidean geometry.", "subject": "Parallel postulate", "pid": null, "object": "axiom"}
+{"page": "Parallel postulate", "statement": "Euclid stated the parallel postulate in the Elements.", "subject": "Euclid", "pid": "P800", "object": "Elements"}
+{"page": "Parallel postulate", "statement": "Non-Euclidean geometries reject the parallel postulate.", "subject": "Non-Euclidean geometry", "pid": null, "object": "parallel postulate"}
+{"page": "Parallel postulate", "statement": "Nikolai Lobachevsky developed hyperbolic geometry.", "subject": "Nikolai Lobachevsky", "pid": "P800", "object": "hyperbolic geometry"}
+{"page": "Parallel postulate", "statement": "Bernhard Riemann developed spherical geometry.", "subject": "Bernhard Riemann", "pid": "P800", "object": "spherical geometry"}
+{"page": "Parallel postulate", "statement": "Hyperbolic geometry has negative curvature.", "subject": "Hyperbolic geometry", "pid": null, "object": "negative curvature"}
+{"page": "Parallel postulate", "statement": "Elliptic geometry has positive curvature.", "subject": "Elliptic geometry", "pid": null, "object": "positive curvature"}
+{"page": "Parallel postulate", "statement": "Parallel lines do not intersect in Euclidean geometry.", "subject": "Parallel lines", "pid": null, "object": "geometry"}
+{"page": "Parallel postulate", "statement": "The parallel postulate is also called the fifth postulate.", "subject": "Fifth postulate", "pid": null, "object": "axiom"}
+{"page": "Parallel postulate", "statement": "Gauss studied curved surfaces related to non-Euclidean geometry.", "subject": "Gauss", "pid": "P800", "object": "curved surfaces"}
+{"page": "Parallel postulate", "statement": "Parallel postulate concerns two-dimensional space.", "subject": "Two-dimensional space", "pid": null, "object": "planes"}
+{"page": "Parallel postulate", "statement": "Mathematical rigor requires explicit axioms.", "subject": "Mathematical rigor", "pid": null, "object": "axioms"}
+{"page": "Parallel postulate", "statement": "Different geometries use different parallel postulates.", "subject": "Geometries", "pid": null, "object": "postulate"}
+{"page": "Paul Erd\u0151s", "statement": "Paul Erd\u0151s was born in 1913.", "subject": "Paul Erd\u0151s", "pid": "P569", "object": "1913"}
+{"page": "Paul Erd\u0151s", "statement": "Paul Erd\u0151s died in 1996.", "subject": "Paul Erd\u0151s", "pid": "P20", "object": "1996"}
+{"page": "Paul Erd\u0151s", "statement": "Paul Erd\u0151s was born in Hungary.", "subject": "Paul Erd\u0151s", "pid": "P19", "object": "Hungary"}
+{"page": "Paul Erd\u0151s", "statement": "Paul Erd\u0151s was a mathematician.", "subject": "Paul Erd\u0151s", "pid": "P106", "object": "mathematician"}
+{"page": "Paul Erd\u0151s", "statement": "Paul Erd\u0151s was one of the most prolific mathematicians.", "subject": "Paul Erd\u0151s", "pid": null, "object": "prolific"}
+{"page": "Paul Erd\u0151s", "statement": "Erd\u0151s made contributions to graph theory.", "subject": "Graph theory", "pid": null, "object": "Erd\u0151s"}
+{"page": "Paul Erd\u0151s", "statement": "Erd\u0151s made contributions to number theory.", "subject": "Number theory", "pid": null, "object": "Erd\u0151s"}
+{"page": "Paul Erd\u0151s", "statement": "Erd\u0151s made contributions to combinatorics.", "subject": "Combinatorics", "pid": null, "object": "Erd\u0151s"}
+{"page": "Paul Erd\u0151s", "statement": "Paul Erd\u0151s developed the probabilistic method.", "subject": "Probabilistic method", "pid": "P170", "object": "Paul Erd\u0151s"}
+{"page": "Paul Erd\u0151s", "statement": "The Erd\u0151s number measures distance from Paul Erd\u0151s.", "subject": "Erd\u0151s number", "pid": "P138", "object": "Paul Erd\u0151s"}
+{"page": "Paul Erd\u0151s", "statement": "Erd\u0151s was known for extensive mathematical collaboration.", "subject": "Collaboration", "pid": null, "object": "Erd\u0151s"}
+{"page": "Paul Erd\u0151s", "statement": "Erd\u0151s described elegant proofs as coming from The Book.", "subject": "The Book", "pid": null, "object": "Erd\u0151s"}
+{"page": "Paul Erd\u0151s", "statement": "Erd\u0151s received numerous mathematical prizes.", "subject": "Mathematical prizes", "pid": null, "object": "Erd\u0151s"}
+{"page": "Paul Erd\u0151s", "statement": "Paul Erd\u0151s received the Wolf Prize.", "subject": "Wolf Prize", "pid": "P166", "object": "Paul Erd\u0151s"}
+{"page": "Perception", "statement": "Perception is the process of sensing and interpreting sensory information.", "subject": "Perception", "pid": null, "object": "sensory"}
+{"page": "Perception", "statement": "Sensation is the detection of stimuli.", "subject": "Sensation", "pid": null, "object": "stimuli"}
+{"page": "Perception", "statement": "Sensory systems provide information for perception.", "subject": "Sensory system", "pid": null, "object": "perception"}
+{"page": "Perception", "statement": "Vision is one form of perception.", "subject": "Vision", "pid": null, "object": "perception"}
+{"page": "Perception", "statement": "Hearing is one form of perception.", "subject": "Hearing", "pid": null, "object": "perception"}
+{"page": "Perception", "statement": "Touch is one form of perception.", "subject": "Touch", "pid": null, "object": "perception"}
+{"page": "Perception", "statement": "Smell is one form of perception.", "subject": "Smell", "pid": null, "object": "perception"}
+{"page": "Perception", "statement": "Taste is one form of perception.", "subject": "Taste", "pid": null, "object": "perception"}
+{"page": "Perception", "statement": "The brain processes sensory information for perception.", "subject": "Brain", "pid": null, "object": "perception"}
+{"page": "Perception", "statement": "Cognitive psychology studies perception.", "subject": "Cognitive psychology", "pid": null, "object": "perception"}
+{"page": "Perception", "statement": "Neuroscience studies the neural basis of perception.", "subject": "Neuroscience", "pid": null, "object": "perception"}
+{"page": "Perception", "statement": "Attention selectively processes sensory information.", "subject": "Attention", "pid": null, "object": "selective"}
+{"page": "Perception", "statement": "Interpretation gives meaning to sensory information.", "subject": "Interpretation", "pid": null, "object": "perception"}
+{"page": "Philosophical skepticism", "statement": "Philosophical skepticism questions the possibility of knowledge.", "subject": "Philosophical skepticism", "pid": null, "object": "doubt"}
+{"page": "Philosophical skepticism", "statement": "Skepticism questions whether knowledge is justified belief.", "subject": "Knowledge", "pid": null, "object": "justified belief"}
+{"page": "Philosophical skepticism", "statement": "Epistemology is the study of knowledge.", "subject": "Epistemology", "pid": null, "object": "knowledge"}
+{"page": "Philosophical skepticism", "statement": "Descartes used skepticism in philosophical method.", "subject": "Descartes", "pid": "P800", "object": "skepticism"}
+{"page": "Philosophical skepticism", "statement": "Descartes argued cogito ergo sum against skepticism.", "subject": "Cogito ergo sum", "pid": null, "object": "Descartes"}
+{"page": "Philosophical skepticism", "statement": "Methodical doubt is a skeptical technique.", "subject": "Doubt", "pid": null, "object": "method"}
+{"page": "Philosophical skepticism", "statement": "Justification is necessary for knowledge.", "subject": "Justification", "pid": null, "object": "belief"}
+{"page": "Philosophical skepticism", "statement": "Skeptics question whether certainty is achievable.", "subject": "Certainty", "pid": null, "object": "knowledge"}
+{"page": "Philosophical skepticism", "statement": "Radical skepticism denies all knowledge.", "subject": "Radical skepticism", "pid": null, "object": "extreme"}
+{"page": "Philosophical skepticism", "statement": "Moderate skepticism questions some knowledge claims.", "subject": "Moderate skepticism", "pid": null, "object": "limited"}
+{"page": "Philosophical skepticism", "statement": "Pyrrhonism is an ancient skeptical tradition.", "subject": "Pyrrhonism", "pid": null, "object": "ancient skepticism"}
+{"page": "Philosophical skepticism", "statement": "Skeptical arguments question knowledge possibilities.", "subject": "Skeptical arguments", "pid": null, "object": "reasoning"}
+{"page": "Philosophical skepticism", "statement": "Skeptics question whether truth is knowable.", "subject": "Truth", "pid": null, "object": "skepticism"}
+{"page": "Philosophy", "statement": "Philosophy is the love of wisdom.", "subject": "Philosophy", "pid": null, "object": "wisdom"}
+{"page": "Philosophy", "statement": "Metaphysics is a branch of philosophy studying reality.", "subject": "Metaphysics", "pid": null, "object": "reality"}
+{"page": "Philosophy", "statement": "Epistemology is a branch of philosophy studying knowledge.", "subject": "Epistemology", "pid": null, "object": "knowledge"}
+{"page": "Philosophy", "statement": "Ethics is a branch of philosophy studying morality.", "subject": "Ethics", "pid": null, "object": "morality"}
+{"page": "Philosophy", "statement": "Logic is a branch of philosophy studying reasoning.", "subject": "Logic", "pid": null, "object": "reasoning"}
+{"page": "Philosophy", "statement": "Philosophy originated in ancient Greece.", "subject": "Ancient Greece", "pid": "P19", "object": "philosophy"}
+{"page": "Philosophy", "statement": "Socrates was born in ancient Greece.", "subject": "Socrates", "pid": "P19", "object": "Greece"}
+{"page": "Philosophy", "statement": "Plato wrote the Republic.", "subject": "Plato", "pid": "P800", "object": "Republic"}
+{"page": "Philosophy", "statement": "Aristotle was a philosopher.", "subject": "Aristotle", "pid": "P106", "object": "philosopher"}
+{"page": "Philosophy", "statement": "Descartes was a rationalist philosopher.", "subject": "Descartes", "pid": "P506", "object": "rationalism"}
+{"page": "Philosophy", "statement": "David Hume was an empiricist philosopher.", "subject": "David Hume", "pid": "P106", "object": "empiricist"}
+{"page": "Philosophy", "statement": "Immanuel Kant was a philosopher.", "subject": "Immanuel Kant", "pid": "P106", "object": "philosopher"}
+{"page": "Philosophy", "statement": "Aesthetics is a branch of philosophy studying beauty.", "subject": "Aesthetics", "pid": null, "object": "philosophy"}
+{"page": "Philosophy", "statement": "Political philosophy studies governance and justice.", "subject": "Political philosophy", "pid": null, "object": "governance"}
+{"page": "Philosophy of mathematics", "statement": "Philosophy of mathematics studies the nature of mathematics.", "subject": "Philosophy of mathematics", "pid": null, "object": "mathematics nature"}
+{"page": "Philosophy of mathematics", "statement": "Philosophers debate whether mathematical objects exist.", "subject": "Mathematical reality", "pid": null, "object": "existence"}
+{"page": "Philosophy of mathematics", "statement": "Platonism holds that mathematical objects exist abstractly.", "subject": "Platonism", "pid": null, "object": "abstract objects"}
+{"page": "Philosophy of mathematics", "statement": "Nominalism denies the existence of abstract mathematical objects.", "subject": "Nominalism", "pid": null, "object": "no abstract objects"}
+{"page": "Philosophy of mathematics", "statement": "Formalism views mathematics as manipulation of symbols.", "subject": "Formalism", "pid": null, "object": "symbols"}
+{"page": "Philosophy of mathematics", "statement": "Intuitionism views mathematics as mental construction.", "subject": "Intuitionism", "pid": null, "object": "mental construction"}
+{"page": "Philosophy of mathematics", "statement": "Philosophy of mathematics studies mathematical truth.", "subject": "Truth", "pid": null, "object": "mathematics"}
+{"page": "Philosophy of mathematics", "statement": "Axioms are foundational in mathematical philosophy.", "subject": "Axioms", "pid": null, "object": "foundational"}
+{"page": "Philosophy of mathematics", "statement": "Proof provides certainty in mathematics.", "subject": "Proof", "pid": null, "object": "certainty"}
+{"page": "Philosophy of mathematics", "statement": "Infinity is a fundamental concept in mathematics.", "subject": "Infinity", "pid": null, "object": "concept"}
+{"page": "Philosophy of mathematics", "statement": "The continuum hypothesis is important in philosophy of mathematics.", "subject": "Continuum hypothesis", "pid": null, "object": "set theory"}
+{"page": "Philosophy of mathematics", "statement": "Mathematical objects are abstract entities.", "subject": "Mathematical objects", "pid": null, "object": "abstract"}
+{"page": "Philosophy of mathematics", "statement": "Logic is foundational to mathematics.", "subject": "Logic", "pid": "P31", "object": "foundation"}

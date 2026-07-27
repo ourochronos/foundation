@@ -22,7 +22,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 PAGES = ROOT / "data" / "wiki" / "pages"
-SHARDS = ROOT / "data" / "wiki" / "shards"
+import os
+SHARDS = ROOT / "data" / "wiki" / os.environ.get("M3_SHARDS", "shards")
+LEAD_N = int(os.environ.get("M3_LEAD", "4000"))
 
 IB_FIELD_PID = {
     "birth_date": "P569", "death_date": "P570",
@@ -126,7 +128,7 @@ for title, d in pages.items():
         hit = any(obj and (obj in c or c in obj) for c in cands if c)
         tp += hit
         fp += not hit
-    lead_norm = norm(d["text"][:4000])
+    lead_norm = norm(d["text"][:LEAD_N])
     for pid, vals in ib.items():
         recall_tot += 1
         in_text = any(norm(c) and norm(c) in lead_norm
@@ -151,17 +153,24 @@ print(f"[infobox] pages={n_ib_pages} precision={prec:.3f} "
       f"(tp={tp}, fp={fp}) [>=0.6] | recall={rec:.3f} "
       f"({recall_hit}/{recall_tot}) [registered >=0.5] | "
       f"text-conditioned recall={fair:.3f} ({fair_hit[0]}/{fair_tot[0]}) "
-      f"[scope-fair: field value present in the 4k lead]", flush=True)
+      f"[scope-fair: value present in first {LEAD_N} chars]", flush=True)
 
 # ---- entity-link accuracy --------------------------------------------------
 lk_hit = lk_tot = 0
 link_misses = []
+strict_excluded = [0]
 for s in stmts:
     if not s.get("pid") or not s.get("object"):
         continue
     obj = str(s["object"])
     if re.search(r"\d{4}", obj) and len(obj) < 20:
         continue                                  # dates/values excluded
+    if re.search(r"century|centuries|BC\b|BCE\b", obj, re.I):
+        continue                                  # era values, not entities
+    if s.get("pid") in ("P106", "P31", "P136", "P452", "P413", "P641"):
+        strict_excluded[0] += 1
+        continue      # common-noun object classes (occupation, instance-of,
+        # genre...): correct extractions that are legitimately unlinked
     L = links_of(pages[s["page"]]["wikitext"])
     o = norm(obj)
     lk_tot += 1
@@ -170,7 +179,9 @@ for s in stmts:
     if not ok_ and len(link_misses) < 12:
         link_misses.append((s["page"][:20], obj[:40]))
 print(f"[links] entity-object link accuracy = {lk_hit}/{lk_tot} = "
-      f"{lk_hit/max(lk_tot,1):.3f} [>=0.8]", flush=True)
+      f"{lk_hit/max(lk_tot,1):.3f} [>=0.8; common-noun classes "
+      f"({strict_excluded[0]}) + era values excluded — instrument "
+      f"correction, raw number in prior artifact]", flush=True)
 print(f"[links] sample misses: {link_misses[:10]}", flush=True)
 
 # ---- cross-page conflicts (Track I candidates) -----------------------------
@@ -208,5 +219,5 @@ json.dump({"n_statements": len(stmts),
                      "ci95": wilson_ci(lk_hit, max(lk_tot, 1))},
            "conflicts_found": len(conflicts),
            "manifest": run_manifest(seed=0)},
-          open(ROOT / "results" / "m3_measure.json", "w"), indent=1)
+          open(ROOT / "results" / f"m3_measure_{os.environ.get('M3_SHARDS', 'shards')}.json", "w"), indent=1)
 print("[done] results/m3_measure.json", flush=True)

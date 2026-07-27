@@ -1,0 +1,581 @@
+[
+ {
+  "subject": "descartes",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Mathematical analysis",
+    "object": "La G\u00e9om\u00e9trie"
+   },
+   {
+    "page": "Philosophical skepticism",
+    "object": "skepticism"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "euclid",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Prime number",
+    "object": "Elements"
+   },
+   {
+    "page": "Euclid",
+    "object": "Elements"
+   },
+   {
+    "page": "Euclid",
+    "object": "works on perspective"
+   },
+   {
+    "page": "Euclid",
+    "object": "works on conic sections"
+   },
+   {
+    "page": "Euclid",
+    "object": "Optics"
+   },
+   {
+    "page": "Euclid",
+    "object": "Data and Phaenomena"
+   },
+   {
+    "page": "Euclidean geometry",
+    "object": "Elements"
+   },
+   {
+    "page": "Euclidean geometry",
+    "object": "axiomatic method"
+   },
+   {
+    "page": "Euclidean space",
+    "object": "Elements"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "emmy noether",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "Emmy Noether",
+    "object": "University of Erlangen"
+   },
+   {
+    "page": "Emmy Noether",
+    "object": "University of G\u00f6ttingen"
+   },
+   {
+    "page": "Emmy Noether",
+    "object": "University of G\u00f6ttingen"
+   },
+   {
+    "page": "Emmy Noether",
+    "object": "Bryn Mawr College"
+   },
+   {
+    "page": "Emmy Noether",
+    "object": "Bryn Mawr College"
+   },
+   {
+    "page": "Emmy Noether",
+    "object": "Institute for Advanced Study"
+   },
+   {
+    "page": "Institute for Advanced Study",
+    "object": "Institute for Advanced Study"
+   }
+  ],
+  "audit_verdict": "temporal-succession"
+ },
+ {
+  "subject": "bertrand russell",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Bertrand Russell",
+    "object": "Principia Mathematica"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "An Essay on the Foundations of Geometry"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "On Denoting"
+   },
+   {
+    "page": "Gettier problem",
+    "object": "Human Knowledge: Its scope and limits"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "Russell's paradox"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "alan turing",
+  "pid": "P69",
+  "claims": [
+   {
+    "page": "Alan Turing",
+    "object": "King's College, Cambridge"
+   },
+   {
+    "page": "Alan Turing",
+    "object": "Princeton University"
+   },
+   {
+    "page": "University of Cambridge",
+    "object": "University of Cambridge"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "andrew wiles",
+  "pid": "P166",
+  "claims": [
+   {
+    "page": "Andrew Wiles",
+    "object": "Abel Prize"
+   },
+   {
+    "page": "Fermat's Last Theorem",
+    "object": "Abel Prize"
+   },
+   {
+    "page": "Fields Medal",
+    "object": "IMU silver plaque"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "bernard bolzano",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Continuous function",
+    "object": "epsilon-delta definition of continuity"
+   },
+   {
+    "page": "Fractal",
+    "object": "fractal studies"
+   },
+   {
+    "page": "Set theory",
+    "object": "Paradoxes of the Infinite"
+   }
+  ],
+  "audit_verdict": "extraction-noise"
+ },
+ {
+  "subject": "willard van orman quine",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "A priori and a posteriori",
+    "object": "philosopher"
+   },
+   {
+    "page": "Willard Van Orman Quine",
+    "object": "logician"
+   },
+   {
+    "page": "Willard Van Orman Quine",
+    "object": "philosopher"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "david hume",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "David Hume",
+    "object": "An Enquiry Concerning Human Understanding"
+   },
+   {
+    "page": "David Hume",
+    "object": "An Enquiry Concerning the Principles of Morals"
+   },
+   {
+    "page": "Critique of Pure Reason",
+    "object": "theory of causality as synthetic"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "euclid",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Mathematical proof",
+    "object": "Elements"
+   },
+   {
+    "page": "Mathematician",
+    "object": "Elements"
+   },
+   {
+    "page": "Mathematics",
+    "object": "Elements"
+   },
+   {
+    "page": "Number theory",
+    "object": "infinite primes"
+   },
+   {
+    "page": "Parallel postulate",
+    "object": "Elements"
+   },
+   {
+    "page": "Hyperbolic geometry",
+    "object": "Elements"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "gottlob frege",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Foundationalism",
+    "object": "Die Grundlagen der Arithmetik"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "mathematical logic"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "Die Grundlagen der Arithmetik"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "symbolic logic"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "quantification"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "predicate logic"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "analytic philosophy"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "sense and reference"
+   },
+   {
+    "page": "Set theory",
+    "object": "Foundations of Arithmetic"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "ren descartes",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Abstract algebra",
+    "object": "La G\u00e9om\u00e9trie"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "Discourse on the Method"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "grigori perelman",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Fields Medal",
+    "object": "Poincar\u00e9 conjecture"
+   },
+   {
+    "page": "Grigori Perelman",
+    "object": "Poincar\u00e9 conjecture"
+   },
+   {
+    "page": "Grigori Perelman",
+    "object": "Ricci flow"
+   },
+   {
+    "page": "Grigori Perelman",
+    "object": "differential geometry"
+   },
+   {
+    "page": "Grigori Perelman",
+    "object": "Alexandrov spaces"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "elements",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Euclid's Elements",
+    "object": "Pythagorean theorem"
+   },
+   {
+    "page": "Euclid's Elements",
+    "object": "Thales' theorem"
+   },
+   {
+    "page": "Euclid's Elements",
+    "object": "Euclidean algorithm"
+   },
+   {
+    "page": "Euclid's Elements",
+    "object": "infinite primes theorem"
+   },
+   {
+    "page": "Euclidean geometry",
+    "object": "plane geometry"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "brahmagupta",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Brahmagupta",
+    "object": "Br\u0101hmasphu\u1e6dasiddh\u0101nta"
+   },
+   {
+    "page": "Brahmagupta",
+    "object": "Khandakhadyaka"
+   },
+   {
+    "page": "Brahmagupta",
+    "object": "Graha\u1e47\u0101rkaj\u00f1\u0101na"
+   },
+   {
+    "page": "Geometry",
+    "object": "Br\u0101hmasphu\u1e6dasiddh\u0101nta"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "karl popper",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Fallibilism",
+    "object": "fallibilism theory"
+   },
+   {
+    "page": "Falsifiability",
+    "object": "falsifiability"
+   },
+   {
+    "page": "Falsifiability",
+    "object": "The Logic of Scientific Discovery"
+   }
+  ],
+  "audit_verdict": "extraction-noise"
+ },
+ {
+  "subject": "thomas harriot",
+  "pid": "P170",
+  "claims": [
+   {
+    "page": "Computer science",
+    "object": "binary number system"
+   },
+   {
+    "page": "Gottfried Wilhelm Leibniz",
+    "object": "binary system"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "aristotle",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Aristotle",
+    "object": "Organon"
+   },
+   {
+    "page": "Aristotle",
+    "object": "Metaphysics"
+   },
+   {
+    "page": "Aristotle",
+    "object": "Nicomachean Ethics"
+   },
+   {
+    "page": "Aristotle",
+    "object": "Politics"
+   },
+   {
+    "page": "Metaphysics",
+    "object": "metaphysics"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "david hume",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Philosophy",
+    "object": "empiricist"
+   },
+   {
+    "page": "Foundationalism",
+    "object": "philosopher"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "bertrand russell",
+  "pid": "P69",
+  "claims": [
+   {
+    "page": "Bertrand Russell",
+    "object": "Trinity College Cambridge"
+   },
+   {
+    "page": "University of Cambridge",
+    "object": "University of Cambridge"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "thales of miletus",
+  "pid": "P569",
+  "claims": [
+   {
+    "page": "Mathematical proof",
+    "object": "624 BCE"
+   },
+   {
+    "page": "Mathematician",
+    "object": "624 BCE"
+   },
+   {
+    "page": "Western philosophy",
+    "object": "c. 625 BC"
+   }
+  ],
+  "audit_verdict": "GENUINE"
+ },
+ {
+  "subject": "immanuel kant",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "A priori and a posteriori",
+    "object": "Critique of Pure Reason"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "Critique of Pure Reason"
+   },
+   {
+    "page": "Immanuel Kant",
+    "object": "Critique of Pure Reason"
+   },
+   {
+    "page": "Immanuel Kant",
+    "object": "transcendental idealism"
+   },
+   {
+    "page": "Immanuel Kant",
+    "object": "categorical imperative"
+   },
+   {
+    "page": "Immanuel Kant",
+    "object": "Physical Geography"
+   },
+   {
+    "page": "Immanuel Kant",
+    "object": "The False Subtlety of the Four Syllogistic Figures"
+   },
+   {
+    "page": "Immanuel Kant",
+    "object": "Universal Natural History and Theory of the Heavens"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "hypatia",
+  "pid": "P551",
+  "claims": [
+   {
+    "page": "Mathematical proof",
+    "object": "Great Library"
+   },
+   {
+    "page": "Hypatia",
+    "object": "Alexandria"
+   }
+  ],
+  "audit_verdict": "granularity"
+ },
+ {
+  "subject": "karl weierstrass",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Continuous function",
+    "object": "theory of continuity at a point"
+   },
+   {
+    "page": "Fractal",
+    "object": "fractal studies"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ },
+ {
+  "subject": "isaac newton",
+  "pid": "P69",
+  "claims": [
+   {
+    "page": "Isaac Newton",
+    "object": "The King's School"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "Trinity College"
+   },
+   {
+    "page": "University of Cambridge",
+    "object": "University of Cambridge"
+   }
+  ],
+  "audit_verdict": "multi-valued"
+ }
+]
