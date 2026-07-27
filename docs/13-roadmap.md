@@ -49,3 +49,21 @@ ArXiv-50 label resolutions under Sol with full abstracts · GLiREL
 bakeoff + T-REx instrument · 20k deep pass over the 800 new pages ·
 wire B2 minting into live ingest (T7 fast rung for the continuous
 channel) · topic-alias machinery (D83 weakness).
+
+## Re-ingestion & citation axis (user-directed 2026-07-27, second pass)
+
+- ~2.8 claims/paper is a FLOOR, not a ceiling — retention exists so the
+  system re-ingests sources as it improves: confirm existing claims
+  (corroboration counts), extract deeper (fulltext passes over the
+  retained HTML), and repair (D-repair rung). Reingest-to-confirm is the
+  T7 medium rung applied to sources.
+- CITATIONS: the retained HTML contains bibliographies — extraction
+  needs no new fetching. Representation already fits the claim model:
+  (page=arxiv:A, pid=P_CITES, object=<cited id/title>, statement =
+  citation context sentence when available). Corpus expansion = 
+  citation-vote branching (mirror of the wiki fetcher's link votes):
+  references cited by >=k in-corpus papers get fetched into the slice.
+  Track I bonus: citation-backed corroboration ("5 in-corpus papers cite
+  X for claim Y") becomes an evidence-count signal.
+- Queue: P_CITES extraction pass over papers_html (fleet, next session)
+  -> citation-vote fetch round -> corroboration counts surfaced in ask.
