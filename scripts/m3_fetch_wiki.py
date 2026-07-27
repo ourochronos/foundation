@@ -121,19 +121,35 @@ for t in queue:
         print(f"[fetch] seeds {n_seed}, total {len(have)}", flush=True)
 print(f"[fetch] seeds done: {len(have)} pages", flush=True)
 
-for t, votes in link_votes.most_common(400):
+for rnd in range(3):
     if len(have) >= TARGET:
         break
-    if votes < 3 or t in have:
-        continue
-    d = fetch(t)
-    time.sleep(0.3)
-    if not d or len(d["text"]) < 500 or d["title"] in have:
-        continue
-    (OUT / f"{slug(d['title'])}.json").write_text(json.dumps(d))
-    have.add(d["title"])
-    if len(have) % 20 == 0:
-        print(f"[fetch] total {len(have)}", flush=True)
+    # harvest votes from the on-disk corpus: resuming runs (all seeds
+    # cached) otherwise see an empty branch pool and stop at the seeds
+    link_votes = Counter()
+    for p in OUT.glob("*.json"):
+        for ln in links_of(json.loads(p.read_text())["wikitext"]):
+            if ln not in have:
+                link_votes[ln] += 1
+    print(f"[fetch] round {rnd}: {len(link_votes)} candidate links",
+          flush=True)
+    grew = False
+    for t, votes in link_votes.most_common(4 * TARGET):
+        if len(have) >= TARGET:
+            break
+        if votes < 3 or t in have:
+            continue
+        d = fetch(t)
+        time.sleep(0.3)
+        if not d or len(d["text"]) < 500 or d["title"] in have:
+            continue
+        (OUT / f"{slug(d['title'])}.json").write_text(json.dumps(d))
+        have.add(d["title"])
+        grew = True
+        if len(have) % 20 == 0:
+            print(f"[fetch] total {len(have)}", flush=True)
+    if not grew:
+        break
 
 n_ib = sum(1 for p in OUT.glob("*.json")
            if "{{Infobox" in json.loads(p.read_text())["wikitext"]
