@@ -1,0 +1,39 @@
+{
+ "a2": {
+  "wiki_only": {
+   "residual": 0.12303096078644193,
+   "parity_p1": 1.0,
+   "jaccard10": 0.5637912087912088
+  },
+  "joint": {
+   "residual": 0.0938270313688302,
+   "parity_p1": 1.0,
+   "jaccard10": 0.6328796203796204
+  },
+  "parity_gap": 0.0,
+  "resid_ratio": 1.3112528339814173,
+  "n_anchors": 256,
+  "pass": true
+ },
+ "b1b": {
+  "t0_size": 8002,
+  "null_parity": 1.0,
+  "arxiv_parity": 0.89,
+  "arxiv_jaccard10": 0.6416797907974379,
+  "pass_freeze": false
+ },
+ "manifest": {
+  "generated_at": "2026-07-27T15:30:05.407699+00:00",
+  "commit": "6ae69bbbab93b57ea90b404dcdbaf0b57fdd7eb1",
+  "dirty": false,
+  "command": "scripts/probe_a2_b1b.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  }
+ }
+}
