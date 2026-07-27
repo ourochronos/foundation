@@ -82,7 +82,7 @@ def subject_brief(subject: str, pool: list[dict],
             distinct.setdefault(_norm(e["object"]), []).append(e)
         if pid in FUNCTIONAL_PIDS and len(distinct) > 1:
             claims = "; ".join(
-                f"{es[0]['object']!r} (per {', '.join(sorted({x['page'] for x in es}))})"
+                f"{es[0]['object']!r} (per {', '.join(sorted({str(x['page']) for x in es}))})"
                 for _, es in sorted(distinct.items()))
             sentences.append({
                 "text": f"Sources disagree on {pid} for {subject}: {claims}.",
