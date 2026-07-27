@@ -81,6 +81,29 @@ def _norm(s: str) -> str:
                   re.sub(r"[^a-z0-9 ]", " ", str(s).lower())).strip()
 
 
+_MONTHS = {m: i + 1 for i, m in enumerate(
+    ["january", "february", "march", "april", "may", "june", "july",
+     "august", "september", "october", "november", "december"])}
+
+
+def canon_value(s: str) -> str:
+    """Date-format canonicalization for functional-pid distinctness:
+    '1903-04-25', 'April 25, 1903' and '25 April 1903' are ONE value —
+    format variants must not surface as disputes (D74's spurious-conflict
+    lesson at the format level). Non-dates fall back to _norm."""
+    t = str(s).strip().lower().rstrip(".")
+    m = re.fullmatch(r"(\d{4})-(\d{1,2})-(\d{1,2})", t)
+    if m:
+        return f"{int(m.group(1))}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
+    m = re.fullmatch(r"(\w+)\s+(\d{1,2}),?\s+(\d{4})", t)
+    if m and m.group(1) in _MONTHS:
+        return f"{int(m.group(3))}-{_MONTHS[m.group(1)]:02d}-{int(m.group(2)):02d}"
+    m = re.fullmatch(r"(\d{1,2})\s+(\w+),?\s+(\d{4})", t)
+    if m and m.group(2) in _MONTHS:
+        return f"{int(m.group(3))}-{_MONTHS[m.group(2)]:02d}-{int(m.group(1)):02d}"
+    return _norm(s)
+
+
 def _echo(subject: str, obj: str, statement: str) -> str | None:
     """Verbatim predicate span: statement text from the FIRST _ECHO_VERBS
     match through the end of the object's occurrence — no words dropped,
@@ -141,7 +164,9 @@ def subject_brief(subject: str, pool: list[dict],
         entries = by_pid[pid]
         distinct: dict[str, list[dict]] = {}
         for e in entries:
-            distinct.setdefault(_norm(e["object"]), []).append(e)
+            key = canon_value(e["object"]) if pid in FUNCTIONAL_PIDS \
+                else _norm(e["object"])
+            distinct.setdefault(key, []).append(e)
         if pid in FUNCTIONAL_PIDS and len(distinct) > 1:
             claims = "; ".join(
                 f"{es[0]['object']!r} (per {', '.join(sorted({str(x['page']) for x in es}))})"
