@@ -85,20 +85,24 @@ def run(name: str, items: list[dict], prompt: str, allowed: set[str],
     print(f"[done] {p.relative_to(ROOT)}")
 
 
-if sys.argv[1] == "arxiv50":
-    items = json.loads((ROOT / "data/arxiv/audit_sample_50.json").read_text())
+def _abstract_audit(name: str, slice_dir: str):
+    """Shared arXiv claim-audit adjudication: FULL abstracts (D86
+    truncation lesson — a clipped abstract manufactures NOT-ASSERTED
+    defects), labels frozen before the run, blind to the adjudicator."""
+    items = json.loads(
+        (ROOT / f"data/{slice_dir}/audit_sample_50.json").read_text())
     abstracts = {}
-    for pp in (ROOT / "data/arxiv/papers").glob("*.json"):
+    for pp in (ROOT / f"data/{slice_dir}/papers").glob("*.json"):
         d = json.loads(pp.read_text())
         abstracts["arxiv:" + d["arxiv_id"]] = d["abstract"]
     labels = json.loads(
-        (ROOT / "data/arxiv/audit_labels_50.json").read_text())
+        (ROOT / f"data/{slice_dir}/audit_labels_50.json").read_text())
     mine = {i: ("DEFECT" if i in labels["defect_idx"] else "PRECISE")
             for i in range(50)}
     blocks = []
     for i, s in enumerate(items):
         blocks.append(f"### ITEM {i}\nCLAIM: {s['statement']}\n"
-                      f"ABSTRACT: {abstracts.get(s['page'], '?')[:1400]}")
+                      f"ABSTRACT: {abstracts.get(s['page'], '?')}")
     prompt = (
         "You are an independent audit adjudicator. For each item below, "
         "judge whether the CLAIM is a faithful, self-contained extraction "
@@ -111,7 +115,14 @@ if sys.argv[1] == "arxiv50":
         "Do not use any tools. Output ONLY a JSON array of 50 objects, "
         'one per item, format {"idx": <n>, "verdict": "PRECISE"|"DEFECT", '
         '"reason": "<short>"} — nothing else.\n\n' + "\n\n".join(blocks))
-    run("arxiv50", items, prompt, {"PRECISE", "DEFECT"}, mine)
+    run(name, items, prompt, {"PRECISE", "DEFECT"}, mine)
+
+
+if sys.argv[1] == "arxiv50":
+    _abstract_audit("arxiv50", "arxiv")
+
+elif sys.argv[1] == "arxivai50":
+    _abstract_audit("arxivai50", "arxiv_ai")
 
 elif sys.argv[1] == "g2fp25":
     items = json.loads(

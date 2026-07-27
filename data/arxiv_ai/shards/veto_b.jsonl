@@ -1,0 +1,1 @@
+{"page": "arxiv:2607.21958v1", "subject": "LoRA-NSGDM algorithm", "pid": "P_ASSERTS", "object": "stochastic momentum gradient descent", "rule": 1, "reason": "Paper is about watermark detection using 'Rao-Blackwellized e-processes', not LoRA optimization methods"}
