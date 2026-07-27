@@ -28,6 +28,14 @@ PROTOCOL (pre-registered, committed BEFORE scoring — D64):
 - Deterministic clauses run at commit; faithfulness scored when the
   frozen judge labels land. Artifact: results/m5_brief.json.
 
+ROUND 2 (pre-registered with the renderer amendment, D81): round-1
+faithfulness 0.840 (42/50) — 6/8 failures were store-entry defects
+surfacing downstream, 2/8 template over-strength. Renderer gains
+verb-echo (render at evidence strength) + per-entry guards (quote-like
+objects, subjectless statements → withheld). Round 2 = FRESH sample,
+seed 8, fresh judges, labels frozen to
+data/m5_faithfulness_labels_r2.jsonl. Round-1 artifacts kept.
+
 Usage: .venv/bin/python scripts/probe_m5_brief.py [score]
   (no arg: render briefs + deterministic gates + judge shards;
    "score": apply frozen labels and finalize)
@@ -47,7 +55,9 @@ sys.path.insert(0, str(ROOT))
 from codec.brief import FUNCTIONAL_PIDS, subject_brief  # noqa: E402
 from codec.manifest import run_manifest, wilson_ci      # noqa: E402
 
-rng = random.Random(7)
+ROUND = 2
+rng = random.Random(8 if ROUND == 2 else 7)
+SFX = "_r2" if ROUND == 2 else ""
 
 entries = []
 for f in sorted((ROOT / "data/wiki/shards_final").glob("out_*.jsonl")):
@@ -92,7 +102,7 @@ for k, (s, i, sen) in enumerate(sample):
 J = ROOT / "data" / "m5_judge"
 J.mkdir(exist_ok=True)
 for half in (0, 1):
-    (J / f"in_{half}.json").write_text(json.dumps(
+    (J / f"in{SFX}_{half}.json").write_text(json.dumps(
         judge_items[half * 25:(half + 1) * 25], indent=1))
 
 # ---- distractor control (n=25, deterministic) ------------------------------
@@ -160,13 +170,16 @@ disp = {"n": len(planted), "ok": surfaced,
 print(f"[m5] dispute surfacing: {surfaced}/{len(planted)} = "
       f"{disp['rate']:.3f} [gate >=0.8]", flush=True)
 
-out = {"subjects": rich,
+out = {"round": ROUND, "subjects": rich,
        "n_sentences": sum(len(b["sentences"]) for b in briefs.values()),
+       "n_withheld": sum(len(b.get("withheld", []))
+                         for b in briefs.values()),
        "distractor": distr, "disputes": disp,
-       "faithfulness": None, "manifest": run_manifest(seed=7)}
+       "faithfulness": None,
+       "manifest": run_manifest(seed=8 if ROUND == 2 else 7)}
 
 # ---- faithfulness scoring (after frozen labels land) ------------------------
-LBL = ROOT / "data" / "m5_faithfulness_labels.jsonl"
+LBL = ROOT / "data" / f"m5_faithfulness_labels{SFX}.jsonl"
 if len(sys.argv) > 1 and sys.argv[1] == "score":
     labels = {}
     for line in LBL.read_text().splitlines():

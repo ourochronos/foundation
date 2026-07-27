@@ -1,0 +1,50 @@
+{"idx": 0, "verdict": "ENTAILED", "reason": "work listed as key association entails knowing for it"}
+{"idx": 1, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 2, "verdict": "ENTAILED", "reason": "English polymath entails English citizen"}
+{"idx": 3, "verdict": "ENTAILED", "reason": "published equals authored"}
+{"idx": 4, "verdict": "ENTAILED", "reason": "supervised and advised are synonymous"}
+{"idx": 5, "verdict": "ENTAILED", "reason": "being philosopher equals working as philosopher"}
+{"idx": 6, "verdict": "NOT_ENTAILED", "reason": "educated at vs by changes meaning; at suggests place"}
+{"idx": 7, "verdict": "ENTAILED", "reason": "same fact, standard variation"}
+{"idx": 8, "verdict": "ENTAILED", "reason": "authored equals wrote"}
+{"idx": 9, "verdict": "ENTAILED", "reason": "proving theorem equals authoring the proof"}
+{"idx": 10, "verdict": "ENTAILED", "reason": "alumnus entails educated at"}
+{"idx": 11, "verdict": "ENTAILED", "reason": "graduated entails educated at"}
+{"idx": 12, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 13, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 14, "verdict": "ENTAILED", "reason": "won gold equals received gold"}
+{"idx": 15, "verdict": "NOT_ENTAILED", "reason": "tutored person is not authored work"}
+{"idx": 16, "verdict": "ENTAILED", "reason": "property association entails lived in"}
+{"idx": 17, "verdict": "ENTAILED", "reason": "position property entails held position"}
+{"idx": 18, "verdict": "ENTAILED", "reason": "being logician equals working as logician"}
+{"idx": 19, "verdict": "ENTAILED", "reason": "accepted appointment entails worked at"}
+{"idx": 20, "verdict": "ENTAILED", "reason": "authored equals wrote"}
+{"idx": 21, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 22, "verdict": "ENTAILED", "reason": "member of entails was member"}
+{"idx": 23, "verdict": "ENTAILED", "reason": "attended school entails educated at"}
+{"idx": 24, "verdict": "NOT_ENTAILED", "reason": "visited is temporary; worked is sustained activity"}
+{"idx": 25, "verdict": "ENTAILED", "reason": "practiced atheist asserts atheism"}
+{"idx": 26, "verdict": "NOT_ENTAILED", "reason": "wrote ≠ is known for"}
+{"idx": 27, "verdict": "ENTAILED", "reason": "occupation property renders to work role"}
+{"idx": 28, "verdict": "ENTAILED", "reason": "lectured at is a form of worked at"}
+{"idx": 29, "verdict": "ENTAILED", "reason": "taught at is a form of worked at"}
+{"idx": 30, "verdict": "ENTAILED", "reason": "P937 denotes work location affiliation"}
+{"idx": 31, "verdict": "ENTAILED", "reason": "authored same claim as wrote, date immaterial"}
+{"idx": 32, "verdict": "NOT_ENTAILED", "reason": "associated with ≠ is known for"}
+{"idx": 33, "verdict": "ENTAILED", "reason": "exact match on birth date"}
+{"idx": 34, "verdict": "ENTAILED", "reason": "became full professor supports held position"}
+{"idx": 35, "verdict": "ENTAILED", "reason": "computer scientist renders to worked as"}
+{"idx": 36, "verdict": "ENTAILED", "reason": "received award unchanged by date omission"}
+{"idx": 37, "verdict": "ENTAILED", "reason": "mathematician renders to worked as"}
+{"idx": 38, "verdict": "ENTAILED", "reason": "published title confirms authored"}
+{"idx": 39, "verdict": "NOT_ENTAILED", "reason": "wrote ≠ is known for"}
+{"idx": 40, "verdict": "ENTAILED", "reason": "was clergyman equals worked as clergyman"}
+{"idx": 41, "verdict": "NOT_ENTAILED", "reason": "studied ≠ worked in (learning vs professional work)"}
+{"idx": 42, "verdict": "ENTAILED", "reason": "co-authored paper on topic counts as authored"}
+{"idx": 43, "verdict": "ENTAILED", "reason": "P800 property establishes known for claim"}
+{"idx": 44, "verdict": "ENTAILED", "reason": "exact quotation match on Nobel Prize citation"}
+{"idx": 45, "verdict": "ENTAILED", "reason": "P69 denotes educational institution"}
+{"idx": 46, "verdict": "NOT_ENTAILED", "reason": "early figure insufficient to establish philosopher profession"}
+{"idx": 47, "verdict": "ENTAILED", "reason": "wrote dialogue equals authored"}
+{"idx": 48, "verdict": "ENTAILED", "reason": "fundamental contributions establish known for"}
+{"idx": 49, "verdict": "ENTAILED", "reason": "elected Fellow equals received Fellow status"}

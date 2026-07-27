@@ -1,0 +1,25 @@
+{"idx": 0, "verdict": "ENTAILED", "reason": "work listed as key association entails knowing for it"}
+{"idx": 1, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 2, "verdict": "ENTAILED", "reason": "English polymath entails English citizen"}
+{"idx": 3, "verdict": "ENTAILED", "reason": "published equals authored"}
+{"idx": 4, "verdict": "ENTAILED", "reason": "supervised and advised are synonymous"}
+{"idx": 5, "verdict": "ENTAILED", "reason": "being philosopher equals working as philosopher"}
+{"idx": 6, "verdict": "NOT_ENTAILED", "reason": "educated at vs by changes meaning; at suggests place"}
+{"idx": 7, "verdict": "ENTAILED", "reason": "same fact, standard variation"}
+{"idx": 8, "verdict": "ENTAILED", "reason": "authored equals wrote"}
+{"idx": 9, "verdict": "ENTAILED", "reason": "proving theorem equals authoring the proof"}
+{"idx": 10, "verdict": "ENTAILED", "reason": "alumnus entails educated at"}
+{"idx": 11, "verdict": "ENTAILED", "reason": "graduated entails educated at"}
+{"idx": 12, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 13, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 14, "verdict": "ENTAILED", "reason": "won gold equals received gold"}
+{"idx": 15, "verdict": "NOT_ENTAILED", "reason": "tutored person is not authored work"}
+{"idx": 16, "verdict": "ENTAILED", "reason": "property association entails lived in"}
+{"idx": 17, "verdict": "ENTAILED", "reason": "position property entails held position"}
+{"idx": 18, "verdict": "ENTAILED", "reason": "being logician equals working as logician"}
+{"idx": 19, "verdict": "ENTAILED", "reason": "accepted appointment entails worked at"}
+{"idx": 20, "verdict": "ENTAILED", "reason": "authored equals wrote"}
+{"idx": 21, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 22, "verdict": "ENTAILED", "reason": "member of entails was member"}
+{"idx": 23, "verdict": "ENTAILED", "reason": "attended school entails educated at"}
+{"idx": 24, "verdict": "NOT_ENTAILED", "reason": "visited is temporary; worked is sustained activity"}
