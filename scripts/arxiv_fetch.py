@@ -64,3 +64,43 @@ for i in range(S):
     (SHARDS / f"in_{i}.json").write_text(json.dumps(
         papers[i * 20:(i + 1) * 20], indent=1))
 print(f"[done] {len(papers)} papers -> {S} shards of ~20", flush=True)
+
+# ---- source retention: full-text backfill (ARXIV_FULLTEXT=1) ---------------
+# data/*/papers* is the IMMUTABLE SOURCE LAYER (docs/13): keep the raw HTML
+# (gzipped) + a plain-text extract so extraction is always re-derivable.
+if os.environ.get("ARXIV_FULLTEXT") == "1":
+    import gzip
+    H = OUT.parent / "papers_html"
+    H.mkdir(exist_ok=True)
+    todo = []
+    for p in sorted(OUT.glob("*.json")):
+        d = json.loads(p.read_text())
+        if not d.get("fulltext"):
+            todo.append((p, d))
+    print(f"[fulltext] {len(todo)} papers to backfill", flush=True)
+    n_ok = 0
+    for p, d in todo:
+        aid = d["arxiv_id"]
+        try:
+            r = requests.get(f"https://arxiv.org/html/{aid}",
+                             headers=HDR, timeout=60)
+            if r.status_code != 200:
+                r = requests.get(f"https://arxiv.org/abs/{aid}",
+                                 headers=HDR, timeout=60)
+            html = r.text
+            (H / f"{aid.replace('/', '_')}.html.gz").write_bytes(
+                gzip.compress(html.encode()))
+            txt = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", html,
+                         flags=re.S | re.I)
+            txt = re.sub(r"<[^>]+>", " ", txt)
+            txt = re.sub(r"\s+", " ", txt).strip()
+            d["fulltext"] = txt[:40000]
+            d["fulltext_source"] = str(r.url)
+            p.write_text(json.dumps(d))
+            n_ok += 1
+        except Exception as e:
+            print(f"[fulltext] ! {aid}: {e}", flush=True)
+        time.sleep(1.0)
+        if n_ok % 50 == 0 and n_ok:
+            print(f"[fulltext] {n_ok}", flush=True)
+    print(f"[fulltext] done: {n_ok}/{len(todo)}", flush=True)
