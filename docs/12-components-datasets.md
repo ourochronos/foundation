@@ -73,6 +73,10 @@ measured bakeoff against the incumbent, logged as a D-entry.
 
 ## Independent adjudication status
 
+Standing adjudicator model (user 2026-07-27): **GPT 5.6 Sol** via
+`copilot --model gpt-5.6-sol` (default in scripts/adjudicate.py). The
+D86 runs used gpt-5.4 (historical; artifacts unchanged).
+
 Gemini CLI 0.52.0 installed; OAuth completes but Google has SUNSET the
 free individual Code Assist tier (`IneligibleTierError` → Antigravity
 migration). Path that works: AI Studio API key in `GEMINI_API_KEY`

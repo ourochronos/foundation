@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "adjudication"
 OUT.mkdir(exist_ok=True)
-MODEL = sys.argv[2] if len(sys.argv) > 2 else "gpt-5.4"
+MODEL = sys.argv[2] if len(sys.argv) > 2 else "gpt-5.6-sol"
 
 
 def copilot(prompt: str) -> str:
