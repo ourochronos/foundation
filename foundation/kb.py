@@ -169,6 +169,7 @@ class KB:
                                  "object": str(d["object"]),
                                  "statement": str(d["statement"]),
                                  "page": str(d.get("page", "?")),
+                                 "revid": d.get("revid"),
                                  "sid": f"{f.name}:{ln}"})
         # canonical-page claims first: the title entity must exist before
         # off-page mentions of the same form try to absorb into it (D82)
@@ -200,14 +201,17 @@ class KB:
                     [(c["idx"], c["subject"], c["subj_eid"], c["pid"],
                       c["object"], c["obj_eid"], c["page"], c["sid"])
                      for c in new])
+            revids = {r["sid"]: r.get("revid") for r in rows}
             for c in new:      # persist the token sets set post-add
+                src = c["page"] + (f"@{revids[c['sid']]}"
+                                   if revids.get(c["sid"]) else "")
                 with self._conn.cursor() as cur:
                     cur.execute(
                         f"UPDATE {self.store.table} SET ids=%s, "
                         f"content_ids=%s, source_ref=%s WHERE idx=%s",
                         (sorted(self.store.ids[c["idx"]]),
                          sorted(self.store.ids[c["idx"]]),
-                         c["page"], c["idx"]))
+                         src, c["idx"]))
         return {"ingested": len(new),
                 "eids": len(self.reg.entities),
                 "pages": len({c["page"] for c in new})}

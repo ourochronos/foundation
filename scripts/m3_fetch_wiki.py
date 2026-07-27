@@ -69,16 +69,18 @@ def fetch(title: str) -> dict | None:
         r = requests.get(API, params={
             "action": "query", "format": "json", "redirects": 1,
             "prop": "extracts|revisions", "explaintext": 1,
-            "rvprop": "content", "rvslots": "main",
+            "rvprop": "content|ids|timestamp", "rvslots": "main",
             "titles": title}, headers=HDR, timeout=30)
         pages = r.json()["query"]["pages"]
         pg = next(iter(pages.values()))
         if "missing" in pg:
             return None
-        wikitext = pg["revisions"][0]["slots"]["main"]["*"] \
-            if "revisions" in pg else ""
+        rev = pg["revisions"][0] if "revisions" in pg else {}
+        wikitext = rev.get("slots", {}).get("main", {}).get("*", "")
+        # revid pins provenance: claims cite title@revid, not a moving page
         return {"title": pg["title"], "text": pg.get("extract", ""),
-                "wikitext": wikitext}
+                "wikitext": wikitext, "revid": rev.get("revid"),
+                "rev_timestamp": rev.get("timestamp")}
     except Exception as e:
         print(f"  ! {title}: {e}", flush=True)
         return None
