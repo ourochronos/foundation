@@ -1,0 +1,402 @@
+[
+ {
+  "kind": "method",
+  "object": "detailed 3D structure encoding",
+  "page": "arxiv:2607.21595v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes complementary Explicit Geometry Tokens (EGTs) that encode detailed geometric structures from reconstructed 3D attributes.",
+  "subject": "Explicit Geometry Tokens"
+ },
+ {
+  "kind": "method",
+  "object": "next-token-prediction reconstruction",
+  "page": "arxiv:2607.21333v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper alleviates the mismatch between contrastive learning and implicit reasoning in SHIFT using fine-grained next-token-prediction-based reconstruction.",
+  "subject": "SHIFT fine-grained reconstruction"
+ },
+ {
+  "kind": "result",
+  "object": "individual responses beyond composite summary scores",
+  "page": "arxiv:2607.22514v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper shows that individual MDADI responses contain predictive information beyond that captured by composite or global summary scores in dysphagia risk assessment.",
+  "subject": "MDADI item-level predictive information"
+ },
+ {
+  "kind": "question",
+  "object": "set representation problem formulation",
+  "page": "arxiv:2607.21183v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper considers a representation question where it asks if a given set of explanations can represent any other explanation by symmetric difference size.",
+  "subject": "representation in propositional abduction"
+ },
+ {
+  "kind": "benchmark",
+  "object": "87.40% Pass@1 score on MBPP",
+  "page": "arxiv:2607.22471v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports MineValiCoder achieves Pass@1 score of 87.40% on MBPP.",
+  "subject": "MineValiCoder on MBPP"
+ },
+ {
+  "kind": "benchmark",
+  "object": "120 missions, 5 environments, 4 families",
+  "page": "arxiv:2607.22014v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces MissionBench, a benchmark comprising 120 missions across five simulated 3D environments and four task families for mission-level evaluation of MLLMs in aerial environments.",
+  "subject": "MissionBench aerial evaluation"
+ },
+ {
+  "kind": "result",
+  "object": "tunable distribution control",
+  "page": "arxiv:2607.22436v1",
+  "pid": "P_ASSERTS",
+  "statement": "The approach offers flexibility beyond structural constraints by allowing control over the mean of the off-diagonal entry distribution, enabling generation of correlation matrices reflecting realistic data properties.",
+  "subject": "matrix completion"
+ },
+ {
+  "kind": "result",
+  "object": "concentration bounds for plug-in estimators",
+  "page": "arxiv:2607.21847v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper derives concentration results for plug-in estimators of the L-ensemble, correlation kernel, and determinants given i.i.d. samples.",
+  "subject": "L-ensemble concentration"
+ },
+ {
+  "kind": "method",
+  "object": "shallow VQC trained classically",
+  "page": "arxiv:2607.20943v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper presents an analytically grounded variational surrogate framework in which a shallow Variational Quantum Circuit (VQC) is trained to reproduce the QPE measurement distribution without any quantum circuit simulation.",
+  "subject": "variational surrogate"
+ },
+ {
+  "kind": "result",
+  "object": "label efficiency",
+  "page": "arxiv:2607.22351v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports IQ-JEPA achieves 15.60 m/s at 10,000 labels on Fullwave 2.5 simulations, providing roughly threefold gain in label efficiency over supervised training.",
+  "subject": "IQ-JEPA pretraining"
+ },
+ {
+  "kind": "result",
+  "object": "no-reference quality improvement",
+  "page": "arxiv:2607.21219v1",
+  "pid": "P_ASSERTS",
+  "statement": "Experiments show that DART improves no-reference perceptual quality over prior restoration architectures while remaining compact and efficient.",
+  "subject": "DART perceptual quality"
+ },
+ {
+  "kind": "result",
+  "object": "couple bits per trainable parameter",
+  "page": "arxiv:2607.21351v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that adapters store a couple of bits per trainable parameter, well short of a full model's budget, on Qwen2.5 fine-tuning.",
+  "subject": "adapter bit capacity"
+ },
+ {
+  "kind": "method",
+  "object": "architecture limitations",
+  "page": "arxiv:2607.22361v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces causal complexity for masked architectures and shows that architectures with low causal complexity cannot solve the indexing primitive in constant layers.",
+  "subject": "causal complexity"
+ },
+ {
+  "kind": "result",
+  "object": "prior-judgment priming",
+  "page": "arxiv:2607.21558v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper shows that models are more influenced by views presented as their own prior judgments.",
+  "subject": "LLM social influence"
+ },
+ {
+  "kind": "result",
+  "object": "in-context learning retention",
+  "page": "arxiv:2607.21051v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper shows Experience Distillation retains at least 64.8% of the gains from in-context learning across both software-engineering and text-adventure domains.",
+  "subject": "Experience Distillation"
+ },
+ {
+  "kind": "method",
+  "object": "automated multi-variable control design",
+  "page": "arxiv:2607.21292v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper presents a structured large-language-model-driven workflow for automated multi-variable control design from dynamic process models, decomposing the design task into constrained code-generation steps.",
+  "subject": "LLM-driven control design workflow"
+ },
+ {
+  "kind": "benchmark",
+  "object": "gains on MIMIC and PhysioNet",
+  "page": "arxiv:2607.21922v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper achieves consistent gains on PhysioNet 2012, MIMIC-III, and MIMIC-IV in multi-step clinical forecasting.",
+  "subject": "clinical forecasting performance"
+ },
+ {
+  "kind": "benchmark",
+  "object": "4,496 dialogues, 11 languages",
+  "page": "arxiv:2607.21016v1",
+  "pid": "P_ASSERTS",
+  "statement": "CultureTalk-ID comprises 4,496 culturally grounded dialogues across 11 languages and 13 culturally salient topics, curated with native speakers.",
+  "subject": "multilingual cultural dialogues"
+ },
+ {
+  "kind": "method",
+  "object": "PDE solver with parameters",
+  "page": "arxiv:2607.21932v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes Generalized Neural Operator framework for PDEs with varied physical parameters and boundary conditions.",
+  "subject": "Generalized Neural Operator"
+ },
+ {
+  "kind": "result",
+  "object": "CLNER state-of-the-art",
+  "page": "arxiv:2607.22075v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that FSE achieves state-of-the-art performance in continual learning for named entity recognition scenarios on OntoNotes and FewNERD datasets.",
+  "subject": "FSE model"
+ },
+ {
+  "kind": "method",
+  "object": "unfaithfulness detection and repair",
+  "page": "arxiv:2607.21961v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes catch-n-repair, a model-agnostic framework that detects and rewrites unfaithful conversational turns while preserving conversational flow.",
+  "subject": "catch-n-repair framework"
+ },
+ {
+  "kind": "method",
+  "object": "radio astronomy radio-astronomy",
+  "page": "arxiv:2607.21677v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper investigates the use of LLMs and Small Language Models (SLMs) to generate and optimize code for large-scale sciences, focusing on radio astronomy and sustainability.",
+  "subject": "LLM/SLM code optimization"
+ },
+ {
+  "kind": "method",
+  "object": "federated architecture",
+  "page": "arxiv:2607.22153v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes Industrial Tokenization as a semantic interface and a federated industrial architecture where heterogeneous analytical subsystems expose standardized Industrial Tokens.",
+  "subject": "Industrial Tokenization"
+ },
+ {
+  "kind": "method",
+  "object": "reinforcement learning faithfulness",
+  "page": "arxiv:2607.21090v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes a Reinforcement Learning method to directly optimize the faithfulness of self-explanations.",
+  "subject": "RL self-explanation faithfulness"
+ },
+ {
+  "kind": "result",
+  "object": "canonical evaluation parity",
+  "page": "arxiv:2607.21685v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper demonstrates that under canonical evaluation BiomedBERT gives +0.020, within sampling noise of the bag-of-words 10-fold result.",
+  "subject": "BiomedBERT transformer performance"
+ },
+ {
+  "kind": "method",
+  "object": "classification of existing systems",
+  "page": "arxiv:2607.21873v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper establishes taxonomy of existing hybrid architectures for digital twins and Industry 4.0.",
+  "subject": "hybrid architecture taxonomy"
+ },
+ {
+  "kind": "benchmark",
+  "object": "relevant-sentence accuracy",
+  "page": "arxiv:2607.21692v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that Gemma-2-9B rises from 56% to 99% accuracy when restricted to the two relevant sentences on conflicting-fact retrieval tasks.",
+  "subject": "Gemma-2-9B restriction"
+ },
+ {
+  "kind": "method",
+  "object": "proposer-solver-controller co-evolution loop",
+  "page": "arxiv:2607.22529v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces Skill Self-Play (Skill-SP), a co-evolutionary framework comprising a proposer (generates tasks conditioned on skills), a solver (explores solutions), and a dynamic skill controller, orchestrated via a reinforcement learning loop.",
+  "subject": "Skill Self-Play co-evolutionary framework"
+ },
+ {
+  "kind": "method",
+  "object": "CVA formal model for AI agents",
+  "page": "arxiv:2607.21325v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces a preliminary formal abstraction for Cryptographically Verifiable Agent Authorization (CVA), defining compact candidate security properties including authorization soundness, principal binding, and request binding.",
+  "subject": "Cryptographically Verifiable Authorization"
+ },
+ {
+  "kind": "result",
+  "object": "Cybench audit findings",
+  "page": "arxiv:2607.21763v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper audits 22 frontier models on 23 Cybench capture-the-flag challenges and finds that under baseline conditions 37.1% of passes involved cheating and 21 of 22 models cheated at least once.",
+  "subject": "LLM cheating prevalence"
+ },
+ {
+  "kind": "result",
+  "object": "cyclic-peptide property prediction",
+  "page": "arxiv:2607.21561v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper demonstrates that encoding conformational ensembles into a single thermodynamically informed embedding improves cyclic-peptide property prediction.",
+  "subject": "conformational ensemble encoding"
+ },
+ {
+  "kind": "result",
+  "object": "2-3x more than Python",
+  "page": "arxiv:2607.21488v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper shows Rust constructs receive 2-3x more concept-specific circuitry than Python equivalents in both models.",
+  "subject": "Rust construct circuitry"
+ },
+ {
+  "kind": "method",
+  "object": "semantic-guided logical reasoning",
+  "page": "arxiv:2607.21933v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes HexLogicAgent, a framework that organizes natural-language meaning and guides logical reasoning through structured verification.",
+  "subject": "HexLogicAgent framework"
+ },
+ {
+  "kind": "result",
+  "object": "best editing and background preservation",
+  "page": "arxiv:2607.21318v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper shows that PC-Edit achieves the best editing quality and background preservation among methods without user-specified edit regions on PIE-Bench and EditRegion-Bench.",
+  "subject": "PC-Edit editing quality"
+ },
+ {
+  "kind": "benchmark",
+  "object": "CREMP-CycPeptMPDB R\u00b2=0.477",
+  "page": "arxiv:2607.21561v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that the pretrained EnsembleEGNN model reaches R\u00b2=0.477 and Pearson r=0.699 on the CREMP-CycPeptMPDB dataset, outperforming the sequence-only BERT baseline (R\u00b2=0.439, Pearson r=0.667).",
+  "subject": "pretrained EnsembleEGNN"
+ },
+ {
+  "kind": "method",
+  "object": "attribution-guided process feedback",
+  "page": "arxiv:2607.21106v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes AttriMem, an attribution-guided process-feedback framework for learning memory-construction policies with RL.",
+  "subject": "AttriMem"
+ },
+ {
+  "kind": "result",
+  "object": "role differentiation",
+  "page": "arxiv:2607.20923v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper shows that contributors on papers after 2022 reported narrower role sets on average, with less role overlap and more fluid, distinct responsibilities.",
+  "subject": "research team division of labor"
+ },
+ {
+  "kind": "result",
+  "object": "pretrained on 2,400+ hours EEG data",
+  "page": "arxiv:2607.21402v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that MSBraM is pretrained on over 2,400 hours of EEG data and achieves superior performance compared to other state-of-the-art pretrained models.",
+  "subject": "MSBraM EEG foundation model training"
+ },
+ {
+  "kind": "result",
+  "object": "proof checking cost",
+  "page": "arxiv:2607.21199v1",
+  "pid": "P_ASSERTS",
+  "statement": "The GroundFOX grounder is broadly comparable with other grounders, and proof checking with CheckFOX adds overhead within a small constant factor of grounding time.",
+  "subject": "CheckFOX overhead"
+ },
+ {
+  "kind": "benchmark",
+  "object": "highest hard-PASS rate",
+  "page": "arxiv:2607.20999v1",
+  "pid": "P_ASSERTS",
+  "statement": "On Compiler-Supported50, WML attains both the highest hard-PASS rate and the lowest cost per successful task.",
+  "subject": "WML on compiler tasks"
+ },
+ {
+  "kind": "method",
+  "object": "NL to causal protocols",
+  "page": "arxiv:2607.21173v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper translates natural language research questions into structured causal protocols and executable analysis code using Structural Causal Models.",
+  "subject": "ARA protocol construction"
+ },
+ {
+  "kind": "benchmark",
+  "object": "90.33% hard accuracy DeepSeek",
+  "page": "arxiv:2607.20999v1",
+  "pid": "P_ASSERTS",
+  "statement": "On SpreadsheetBench, WML reaches 90.33 +/- 1.53% Hard Accuracy with DeepSeek and 74.67 +/- 3.51% with Qwen3.6-Flash.",
+  "subject": "WML on spreadsheet tasks"
+ },
+ {
+  "kind": "result",
+  "object": "training distribution and RLHF driven",
+  "page": "arxiv:2607.21498v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper argues that overuse of the rhetorical figure epanorthosis in large language models is a trained disposition driven mainly by training distribution rich in promotional prose and by preference tuning (RLHF).",
+  "subject": "epanorthosis overuse"
+ },
+ {
+  "kind": "method",
+  "object": "ASP semantic characterization",
+  "page": "arxiv:2607.21201v1",
+  "pid": "P_ASSERTS",
+  "statement": "The framework is applied to the setting of difference constraints, focusing on the semantic characterization of clingo[DL].",
+  "subject": "HTb with difference constraints"
+ },
+ {
+  "kind": "result",
+  "object": "correlation across six sections",
+  "page": "arxiv:2607.20896v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that HierarchicalDAEW achieves the strongest correlation with ground-truth expression across six human Visium sections.",
+  "subject": "gene expression prediction"
+ },
+ {
+  "kind": "benchmark",
+  "object": "simulation for LLM interventions",
+  "page": "arxiv:2607.21306v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces Int-Bench, a simulation-based benchmark for evaluating LLM interventions during learning across code debugging, mathematics, and brain teasers domains.",
+  "subject": "Int-Bench evaluation framework"
+ },
+ {
+  "kind": "result",
+  "object": "zero-shot transfer",
+  "page": "arxiv:2607.22300v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper demonstrates that adapter merging reaches within 3.5 CHrF++ of supervised adaptation for Dari at zero additional cost without target-language data.",
+  "subject": "LoRA adapter merging"
+ },
+ {
+  "kind": "result",
+  "object": "high edge recall with evidence",
+  "page": "arxiv:2607.21859v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper achieves high edge recall on literature-based DAG cohort while retaining verifiable evidence trails absent from baselines.",
+  "subject": "DAG evaluation recall"
+ },
+ {
+  "kind": "result",
+  "object": "path planning efficiency",
+  "page": "arxiv:2607.22166v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper demonstrates that ImiPath achieves competitive path quality while improving search efficiency by reducing redundant node expansions under partial observability.",
+  "subject": "ImiPath"
+ },
+ {
+  "kind": "artifact",
+  "object": "NAP Bayesian framework",
+  "page": "arxiv:2607.21671v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces Neural Atom Prevalence (NAP), a principled Bayesian framework for structured node-level model selection in feedforward neural networks through a four-phase pipeline.",
+  "subject": "Neural Atom Prevalence"
+ }
+]

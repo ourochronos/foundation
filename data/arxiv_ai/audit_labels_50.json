@@ -1,0 +1,60 @@
+{
+ "protocol": "50 claims sampled seed-17 from 1,106 live post-veto rows (20 shards, 400 AI/ML papers); graded by the session model vs FULL abstracts BEFORE ingest/scoring; labels frozen at write time. DEFECT threshold (fixed before grading, applied uniformly): (a) asserts what the abstract does not \u2014 contamination, misattribution, strength escalation; (b) drops a condition/qualifier that changes truth conditions; (c) turns on a method named nowhere in the statement AND carries no 'The paper ...' frame to resolve the referent. NOT counted as defects: missing attribution frame where the artifact is named; 'The paper achieves X' with the system unnamed (page provenance resolves it); kind-field mislabels.",
+ "defect_idx": [
+  6,
+  7,
+  11,
+  12,
+  24,
+  31,
+  36,
+  43,
+  47
+ ],
+ "defect_families": {
+  "dropped_condition_or_qualifier": [
+   7,
+   12,
+   24,
+   47
+  ],
+  "dangling_referent_no_paper_frame": [
+   6,
+   43
+  ],
+  "misattribution_or_contamination": [
+   11,
+   31
+  ],
+  "strength_escalation_suggest_to_shows": [
+   36
+  ]
+ },
+ "defect_notes": {
+  "6": "'The approach offers flexibility...' \u2014 dangling 'The approach', no paper frame; subject 'matrix completion' is the broader class the problem falls within, not the method",
+  "7": "drops 'In the discrete setting' \u2014 concentration results hold only there; claim reads as unconditional",
+  "11": "binds the general 'couple of bits per trainable parameter' finding to 'Qwen2.5 fine-tuning'; the abstract attaches Qwen2.5 to the separate privacy-leakage result",
+  "12": "drops 'when the index appears at the end of the input' \u2014 load-bearing: the abstract explicitly contrasts the index-at-beginning case where small RNNs succeed in 1 layer",
+  "24": "'+0.020' with neither its metric (WSS@95%) nor its topic (Statins); number uninterpretable as stored",
+  "31": "cross-paper contamination: Rust-vs-Python circuitry claim on an autonomous-vehicle coordination paper (MAPS); same family as the vetoed LoRA-NSGDM row",
+  "36": "abstract 'suggest ... more distinct responsibilities' rendered under a 'shows' frame",
+  "43": "'The framework is applied to...' \u2014 dangling 'The framework', HTb named nowhere in the statement",
+  "47": "'absent from baselines' broadens the abstract's 'absent from LLM-only baselines'"
+ },
+ "borderlines_resolved_precise": {
+  "13": "'models' generic rather than 'LLMs'; dropped soft hedge 'generally' \u2014 referent resolves via page, no truth-condition change",
+  "16": "MissHyper unnamed under a 'The paper achieves' frame \u2014 threshold (c) exempts it",
+  "17": "no attribution frame, but CultureTalk-ID is named and content verbatim",
+  "40": "ARA unnamed under a paper frame; 'using SCMs' placement is a mild compression of the pipeline",
+  "49": "kind=artifact for a framework-introduction claim \u2014 field mislabel, not a truth defect"
+ },
+ "precise": 41,
+ "n": 50,
+ "precision": 0.82,
+ "ci95": [
+  0.6920368054529739,
+  0.902299172675462
+ ],
+ "gate": 0.6,
+ "passes_gate": true
+}
