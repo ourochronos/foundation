@@ -1,4 +1,5 @@
 {
+ "round": 2,
  "subjects": [
   "Maryam Mirzakhani",
   "Aristotle",
@@ -16,7 +17,8 @@
   "Plato",
   "Ren\u00e9 Descartes"
  ],
- "n_sentences": 469,
+ "n_sentences": 450,
+ "n_withheld": 29,
  "distractor": {
   "n": 25,
   "ok": 25,
@@ -28,29 +30,20 @@
  },
  "disputes": {
   "n": 25,
-  "ok": 25,
-  "rate": 1.0,
+  "ok": 24,
+  "rate": 0.96,
   "ci95": [
-   0.8668035060468213,
-   1.0
+   0.8045552759497747,
+   0.9929039496133008
   ]
  },
- "faithfulness": {
-  "n": 50,
-  "entailed": 42,
-  "rate": 0.84,
-  "ci95": [
-   0.7148551903823401,
-   0.9166267863791231
-  ],
-  "labels_file": "data/m5_faithfulness_labels.jsonl"
- },
+ "faithfulness": null,
  "manifest": {
-  "generated_at": "2026-07-27T04:45:36.968234+00:00",
-  "commit": "de7785cd456af0c8952136606a21506a8ddb21bd",
+  "generated_at": "2026-07-27T04:48:26.853170+00:00",
+  "commit": "648ab3c90b8cd03f27682faefc93f6f4c60e597d",
   "dirty": true,
-  "command": "scripts/probe_m5_brief.py score",
-  "seed": 7,
+  "command": "scripts/probe_m5_brief.py",
+  "seed": 8,
   "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
   "versions": {
    "python": "3.12.3",
@@ -58,6 +51,5 @@
    "torch": "2.13.0+rocm7.2",
    "gpu": "AMD Radeon RX 9070"
   }
- },
- "verdict": "FAIL"
+ }
 }
