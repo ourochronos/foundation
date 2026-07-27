@@ -84,7 +84,10 @@ for c in kb.claims:
         batches["T0_v3"].append(c["idx"])
     elif sid.startswith("out_g2"):
         batches["T1_g2"].append(c["idx"])
-    elif sid.startswith("out_1k"):
+    elif sid.startswith("out_"):
+        # 1k tranche rows were ingested from shards_1k directly, so their
+        # sids are bare out_N.jsonl (no corpus tag) — classifier fix only,
+        # instrument unchanged
         batches["T2_1k"].append(c["idx"])
 vec = {i: kb.store.vec(i) for b in batches.values() for i in b}
 order = [i for k in ("T0_v3", "T1_g2", "T2_1k", "T3_arxiv")

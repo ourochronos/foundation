@@ -1,0 +1,17 @@
+{
+ "batches": {
+  "T0_v3": 1420,
+  "T1_g2": 1644,
+  "T2_1k": 4938,
+  "T3_arxiv": 297
+ },
+ "n_anchors": 128,
+ "rows": [
+  {
+   "batch": "T0_v3",
+   "parity_p1": 1.0,
+   "jaccard10": 1.0,
+   "mean_pairwise_cos_frozen": -0.0006382982296779738,
+   "eff_rank_frozen": 426.15404201012836,
+   "anchor_resid_frozen": 0.357635220780409,
+   "reindex_warranted": 
