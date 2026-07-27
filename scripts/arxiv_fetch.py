@@ -23,8 +23,10 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "data" / "arxiv" / "papers"
-SHARDS = ROOT / "data" / "arxiv" / "shards"
+import os as _os
+SLICE = _os.environ.get("ARXIV_SLICE", "")
+OUT = ROOT / "data" / ("arxiv" + SLICE) / "papers"
+SHARDS = ROOT / "data" / ("arxiv" + SLICE) / "shards"
 OUT.mkdir(parents=True, exist_ok=True)
 SHARDS.mkdir(parents=True, exist_ok=True)
 API = "http://export.arxiv.org/api/query"
@@ -34,7 +36,7 @@ N = int(os.environ.get("ARXIV_N", "120"))
 got = 0
 for start in range(0, N, 100):
     r = requests.get(API, params={
-        "search_query": "cat:math.LO", "start": start,
+        "search_query": os.environ.get("ARXIV_QUERY", "cat:math.LO"), "start": start,
         "max_results": min(100, N - start),
         "sortBy": "submittedDate", "sortOrder": "descending"},
         headers=HDR, timeout=60)
