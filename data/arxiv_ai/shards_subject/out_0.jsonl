@@ -1,0 +1,50 @@
+{"page": "arxiv:2106.09685v2", "subject": "LoRA", "changed": false}
+{"page": "arxiv:2303.08774v6", "subject": "GPT-4", "changed": false}
+{"page": "arxiv:2304.08485v2", "subject": "LLaVA", "changed": false}
+{"page": "arxiv:2306.05685v4", "subject": "LLM-as-a-Judge", "changed": false}
+{"page": "arxiv:2308.10248v5", "subject": "Activation Addition", "changed": false}
+{"page": "arxiv:2308.12950v3", "subject": "Code Llama", "changed": false}
+{"page": "arxiv:2310.01405v4", "subject": "Representation Engineering", "changed": false}
+{"page": "arxiv:2310.06825v1", "subject": "Mistral 7B", "changed": false}
+{"page": "arxiv:2312.00752v2", "subject": "Mamba", "changed": false}
+{"page": "arxiv:2312.11805v5", "subject": "Gemini", "changed": false}
+{"page": "arxiv:2402.03300v3", "subject": "DeepSeekMath", "changed": false}
+{"page": "arxiv:2407.10671v4", "subject": "Qwen2", "changed": false}
+{"page": "arxiv:2408.03314v1", "subject": "test-time compute scaling", "changed": false}
+{"page": "arxiv:2409.12186v3", "subject": "Qwen2.5-Coder", "changed": false}
+{"page": "arxiv:2409.12191v2", "subject": "Qwen2-VL", "changed": false}
+{"page": "arxiv:2412.19437v2", "subject": "DeepSeek-V3", "changed": false}
+{"page": "arxiv:2501.13956v1", "subject": "Zep", "changed": false}
+{"page": "arxiv:2502.01456v2", "subject": "PRIME", "changed": false}
+{"page": "arxiv:2503.14476v2", "subject": "DAPO", "changed": false}
+{"page": "arxiv:2503.20783v2", "subject": "Dr. GRPO", "changed": false}
+{"page": "arxiv:2504.12516v1", "subject": "BrowseComp", "changed": false}
+{"page": "arxiv:2504.19413v1", "subject": "Mem0", "changed": false}
+{"page": "arxiv:2504.20073v2", "subject": "RAGEN", "changed": false}
+{"page": "arxiv:2505.09388v1", "subject": "Qwen3", "changed": false}
+{"page": "arxiv:2505.10978v3", "subject": "GiGPO", "changed": false}
+{"page": "arxiv:2506.05176v3", "subject": "Qwen3 Embedding", "changed": false}
+{"page": "arxiv:2507.06261v6", "subject": "Gemini 2.5", "changed": false}
+{"page": "arxiv:2509.16941v2", "subject": "SWE-Bench Pro", "changed": false}
+{"page": "arxiv:2512.02556v1", "subject": "DeepSeek-V3.2", "changed": false}
+{"page": "arxiv:2601.03267v2", "subject": "GPT-5", "changed": false}
+{"page": "arxiv:2601.20802v2", "subject": "SDPO", "changed": false}
+{"page": "arxiv:2604.13016v2", "subject": "on-policy distillation", "changed": false}
+{"page": "arxiv:2607.20891v1", "subject": "Deep Research agents", "changed": false}
+{"page": "arxiv:2607.20909v1", "subject": "RadioTrace", "changed": false}
+{"page": "arxiv:2607.20911v1", "subject": "WorkBuddy Bench", "changed": false}
+{"page": "arxiv:2607.20913v1", "subject": "selective adaptation", "changed": true, "why": "removed generic 'method' suffix"}
+{"page": "arxiv:2607.20914v1", "subject": "TRISHUL", "changed": false}
+{"page": "arxiv:2607.20916v1", "subject": "AIH-Infra", "changed": false}
+{"page": "arxiv:2607.20918v2", "subject": "OPOD", "changed": false}
+{"page": "arxiv:2607.20923v1", "subject": "LLM-era scientific collaboration", "changed": true, "why": "shortened from 'LLM-era scientific collaboration analysis'"}
+{"page": "arxiv:2607.20925v1", "subject": "dual-signal entity-importance framework", "changed": false}
+{"page": "arxiv:2607.20926v1", "subject": "SciExplore", "changed": false}
+{"page": "arxiv:2607.20933v1", "subject": "LLM code summarization", "changed": true, "why": "shortened from 'Transformer-assisted LLM code summarization' to focus on core contribution"}
+{"page": "arxiv:2607.20957v1", "subject": "ANNS indexing", "changed": true, "why": "fixed title fragment 'Fast ANNS'"}
+{"page": "arxiv:2607.20970v1", "subject": "INR time-series reformulation", "changed": false}
+{"page": "arxiv:2607.20972v1", "subject": "Cue-anchored memory", "changed": false}
+{"page": "arxiv:2607.20981v1", "subject": "Multimodal edge intelligence", "changed": true, "why": "removed 'survey' descriptor to shorten to core topic"}
+{"page": "arxiv:2607.20982v1", "subject": "GuardianAgentBench", "changed": false}
+{"page": "arxiv:2607.20988v1", "subject": "HyWorldVLA", "changed": false}
+{"page": "arxiv:2607.20993v1", "subject": "Concept Channel Probe", "changed": false}

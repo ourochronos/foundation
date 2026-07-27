@@ -1,0 +1,60 @@
+{"sid": "out_15.jsonl:18", "pid": "P_EVALUATES_ON", "why": "evaluation on... ImageNet-LT... challenging long-tailed recognition datasets"}
+{"sid": "out_15.jsonl:19", "pid": "P_BUILDS_ON", "why": "Deep Convolutional Large-Margin ℓp-SVDD; Large-margin ℓp-SVDD on deep representations"}
+{"sid": "out_15.jsonl:20", "pid": "DROP", "why": "related work mention: PANDA showed that adapting... can yield strong anomaly-detection performance"}
+{"sid": "out_15.jsonl:21", "pid": "DROP", "why": "related work mention: CSI learns discriminative embeddings through contrastive learning"}
+{"sid": "out_15.jsonl:22", "pid": "P_EVALUATES_ON", "why": "developed a collection of PINNs... to assess and compare the latent PDE mapping technique"}
+{"sid": "out_15.jsonl:23", "pid": "P_EVALUATES_ON", "why": "developed a collection... PI-DONs to assess and compare the latent PDE mapping technique"}
+{"sid": "out_15.jsonl:24", "pid": "P_BUILDS_ON", "why": "TRaM-VSR exploits the coarse-to-fine nature of DiTs; largely driven by Diffusion Transformers (DiTs)"}
+{"sid": "out_15.jsonl:25", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on three synthetic benchmarks (UDM10, SPMCS, and YouHQ40)"}
+{"sid": "out_15.jsonl:26", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on three synthetic benchmarks (UDM10, SPMCS, and YouHQ40)"}
+{"sid": "out_15.jsonl:27", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on three synthetic benchmarks (UDM10, SPMCS, and YouHQ40)"}
+{"sid": "out_15.jsonl:28", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on three... real-world benchmarks (RealVSR, MVSR4x, and VideoLQ)"}
+{"sid": "out_15.jsonl:29", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on three... real-world benchmarks (RealVSR, MVSR4x, and VideoLQ)"}
+{"sid": "out_15.jsonl:30", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on three... real-world benchmarks (RealVSR, MVSR4x, and VideoLQ)"}
+{"sid": "out_15.jsonl:31", "pid": "P_COMPARES_TO", "why": "We compare TRaM-VSR against... baselines including RealESRGAN; Quantitative comparison with state-of-the-art"}
+{"sid": "out_15.jsonl:32", "pid": "P_COMPARES_TO", "why": "We compare TRaM-VSR against... ResShift; Quantitative comparison with state-of-the-art methods"}
+{"sid": "out_15.jsonl:33", "pid": "P_COMPARES_TO", "why": "We compare TRaM-VSR against... RealBasicVSR; Quantitative comparison with state-of-the-art methods"}
+{"sid": "out_15.jsonl:34", "pid": "P_COMPARES_TO", "why": "We compare TRaM-VSR against... Upscale-A-Video; Quantitative comparison with state-of-the-art methods"}
+{"sid": "out_15.jsonl:35", "pid": "P_COMPARES_TO", "why": "We compare TRaM-VSR against... MGLD-VSR; Quantitative comparison with state-of-the-art methods"}
+{"sid": "out_15.jsonl:36", "pid": "P_COMPARES_TO", "why": "We compare TRaM-VSR against... STAR; Quantitative comparison with state-of-the-art methods"}
+{"sid": "out_15.jsonl:37", "pid": "P_COMPARES_TO", "why": "We compare TRaM-VSR against... and DOVE; Quantitative comparison with state-of-the-art methods"}
+{"sid": "out_15.jsonl:38", "pid": "P_COMPARES_TO", "why": "results table shows SeedVR2-7B as a comparison method; Quantitative comparison with state-of-the-art"}
+{"sid": "out_15.jsonl:39", "pid": "P_BUILDS_ON", "why": "Standard LoRA assigns the same rank; LoRA parameterizes weight updates as low-rank matrix products"}
+{"sid": "out_15.jsonl:40", "pid": "P_EVALUATES_ON", "why": "On mathematical reasoning with LLaMA 3 8B, IFCLoRA improves over LoRA by 1.36 percent"}
+{"sid": "out_15.jsonl:41", "pid": "P_EVALUATES_ON", "why": "Experiments on GSM8K and SuperGLUE show that, under the same rank budget, IFCLoRA provides consistent GSM8K gains"}
+{"sid": "out_15.jsonl:42", "pid": "P_EVALUATES_ON", "why": "Experiments on GSM8K and SuperGLUE show that, under the same rank budget, IFCLoRA provides consistent... SuperGLUE"}
+{"sid": "out_15.jsonl:43", "pid": "P_COMPARES_TO", "why": "IFCLoRA consistently outperforms LoRA, AdaLoRA, and EVA under matched training configurations"}
+{"sid": "out_15.jsonl:44", "pid": "P_COMPARES_TO", "why": "IFCLoRA consistently outperforms LoRA, AdaLoRA, and EVA across multiple models and tasks"}
+{"sid": "out_15.jsonl:45", "pid": "UNCERTAIN", "why": "*** no mention located ***"}
+{"sid": "out_15.jsonl:46", "pid": "UNCERTAIN", "why": "*** no mention located ***"}
+{"sid": "out_15.jsonl:47", "pid": "P_EVALUATES_ON", "why": "Dataset table row for ImageNet-LT with class probability distribution values"}
+{"sid": "out_15.jsonl:48", "pid": "DROP", "why": "related work mention: Although Balanced Softmax is widely adopted as a state-of-the-art rebalancing method"}
+{"sid": "out_15.jsonl:49", "pid": "P_BUILDS_ON", "why": "temporal factors are modeled using a learned Long short-term memory (LSTM)-based prior"}
+{"sid": "out_15.jsonl:50", "pid": "P_COMPARES_TO", "why": "Benchmark Models Setup... Group ICA (GICA)... ST-VTD vs. Benchmark Models: Performance Comparison"}
+{"sid": "out_15.jsonl:51", "pid": "P_COMPARES_TO", "why": "Benchmark Models Setup... PARAFAC2... ST-VTD vs. Benchmark Models: Performance Comparison"}
+{"sid": "out_15.jsonl:52", "pid": "P_COMPARES_TO", "why": "Benchmark Models Setup... Bayesian CP factorization (BCPF)... ST-VTD vs. Benchmark Models"}
+{"sid": "out_15.jsonl:53", "pid": "P_EVALUATES_ON", "why": "We study autoregressive modeling of patient trajectories from MIMIC-IV; ablations on MIMIC-IV"}
+{"sid": "out_15.jsonl:54", "pid": "P_BUILDS_ON", "why": "Clinical notes are encoded using BioMedBERT; BioMedBERT substantially outperforms BERT on notes"}
+{"sid": "out_15.jsonl:55", "pid": "P_BUILDS_ON", "why": "Chest X-ray images are encoded using BioMedCLIP; BioMedCLIP outperforms ViT-MAE on CXR"}
+{"sid": "out_15.jsonl:56", "pid": "P_BUILDS_ON", "why": "ECG with CSFM improves AUROC; CSFM outperforms ECG-FM on ECG"}
+{"sid": "out_15.jsonl:57", "pid": "P_EVALUATES_ON", "why": "On... NASA C-MAPSS label-scarce stitch data, TD improves RUL and failure-mode prediction"}
+{"sid": "out_15.jsonl:58", "pid": "P_BUILDS_ON", "why": "RUL and failure-mode prediction are formulated as vector General Value Function prediction"}
+{"sid": "out_16.jsonl:0", "pid": "P_EVALUATES_ON", "why": "industrial recommendation dataset covers a diverse range of offers"}
+{"sid": "out_16.jsonl:1", "pid": "P_BUILDS_ON", "why": "Hopformer models residuals using a pre-trained Transformer fine-tuned via Low-Rank Adaptation (LoRA)"}
+{"sid": "out_16.jsonl:2", "pid": "DROP", "why": "listing table of voice cloning models being evaluated; GPT-2 is architecture component of another model (XTTS v2)"}
+{"sid": "out_16.jsonl:3", "pid": "DROP", "why": "table listing model architectures; RLHF is a component of other models being compared (Qwen3, CosyVoice 3)"}
+{"sid": "out_16.jsonl:4", "pid": "DROP", "why": "related work/background: Initial approaches to aligning LLMs... such as reinforcement learning from human feedback"}
+{"sid": "out_16.jsonl:5", "pid": "DROP", "why": "background/generic discussion of RLHF in introduction"}
+{"sid": "out_16.jsonl:6", "pid": "DROP", "why": "generic/self-referential: RAG is the acronym for retrieval-augmented generation; describes RAG workflow usage"}
+{"sid": "out_16.jsonl:7", "pid": "P_EVALUATES_ON", "why": "For code, we use HumanEval+; report avg@8 and pass@8; benchmarks table shows HumanEval+"}
+{"sid": "out_16.jsonl:8", "pid": "P_EVALUATES_ON", "why": "mathematics suite comprises MATH-500; benchmarks table shows MATH-500 results"}
+{"sid": "out_16.jsonl:9", "pid": "P_BUILDS_ON", "why": "Knowledge distillation provides a natural mechanism for transfer; training student to imitate teacher"}
+{"sid": "out_16.jsonl:10", "pid": "P_COMPARES_TO", "why": "This implementation is similar to functions offered by... ChatGPT and Gemini"}
+{"sid": "out_16.jsonl:11", "pid": "P_BUILDS_ON", "why": "operationalized... through system prompting, retrieval-augmented generation, and stateful prompt orchestration"}
+{"sid": "out_16.jsonl:12", "pid": "P_EVALUATES_ON", "why": "we present TRACE-HEI, the first proof-of-concept dataset for time-reversed imaging"}
+{"sid": "out_16.jsonl:13", "pid": "P_BUILDS_ON", "why": "Motivated by... vision–language models like LLaVA; leverage the fine-tuned VLM"}
+{"sid": "out_16.jsonl:14", "pid": "P_BUILDS_ON", "why": "CLIP provides visual embeddings; each sampled patch is encoded via a frozen CLIP ViT-B/16 encoder"}
+{"sid": "out_16.jsonl:15", "pid": "DROP", "why": "generic architecture component: ViT is part of CLIP encoder (CLIP ViT-B/16); transformer architecture"}
+{"sid": "out_16.jsonl:16", "pid": "DROP", "why": "MAE is a metric (Mean Absolute Error); reducing density MAE by 35.5%"}
+{"sid": "out_16.jsonl:17", "pid": "DROP", "why": "phi (ϕ) is a mathematical variable/parameter in equations, not a resource"}
+{"sid": "out_16.jsonl:18", "pid": "UNCERTAIN", "why": "chain-of-thought mentioned in theoretical analysis of transformer requirements; unclear if Indexing method uses CoT"}

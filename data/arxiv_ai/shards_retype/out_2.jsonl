@@ -1,0 +1,60 @@
+{"sid": "out_10.jsonl:6", "pid": "P_EVALUATES_ON", "why": "Meerkat study audited Cybench traces and found 3.4% cheating; appears in research citation about evaluation/audit"}
+{"sid": "out_10.jsonl:7", "pid": "P_BUILDS_ON", "why": "robust variant of the smart predict-then-optimize approach; extends paradigm with robust optimization principles"}
+{"sid": "out_10.jsonl:8", "pid": "P_BUILDS_ON", "why": "We use the open-source NLA for Qwen-2.5-7B on ~30 matched Colombian-Spanish/English prompt pairs to probe"}
+{"sid": "out_10.jsonl:9", "pid": "P_BUILDS_ON", "why": "We use Natural Language Autoencoders (NLA) to verbalize residual-stream activations from layer 20"}
+{"sid": "out_10.jsonl:10", "pid": "P_EVALUATES_ON", "why": "We evaluate on the TF subset of Celeb-DF++ which contains 590 real videos and 17,500 TF-forged videos"}
+{"sid": "out_10.jsonl:11", "pid": "P_BUILDS_ON", "why": "leveraging RhythmFormer [26] for waveform extraction and lightweight 1D classifiers for discrimination"}
+{"sid": "out_10.jsonl:12", "pid": "P_COMPARES_TO", "why": "Controlled reproduction of DeepFakesON-Phys on Celeb-DF++ TF data documenting AUC degradation from 0.999 to 0.622"}
+{"sid": "out_10.jsonl:13", "pid": "P_BUILDS_ON", "why": "Qwen3-VL-4B...Each is adapted with QLoRA (4-bit, rank 16) using its native non-reasoning chat template"}
+{"sid": "out_10.jsonl:14", "pid": "P_BUILDS_ON", "why": "InternVL3.5-4B...Each is adapted with QLoRA (4-bit, rank 16) using its native non-reasoning chat template"}
+{"sid": "out_10.jsonl:15", "pid": "P_BUILDS_ON", "why": "Gemma 4 E2B...Each is adapted with QLoRA (4-bit, rank 16) using its native non-reasoning chat template"}
+{"sid": "out_10.jsonl:16", "pid": "P_COMPARES_TO", "why": "following DocSplit, S_pkt = 1/2 S_clu + 1/2 S_ord; alongside DocSplit's page, page+split, and page+split+order accuracies"}
+{"sid": "out_10.jsonl:17", "pid": "P_BUILDS_ON", "why": "integrates time series decomposition (Prophet) with natural language processing (NLP) techniques for roadblock forecasting"}
+{"sid": "out_10.jsonl:18", "pid": "P_COMPARES_TO", "why": "four external benchmarks were compared, including SARIMA and LightGBM; univariate SARIMA (B3)"}
+{"sid": "out_10.jsonl:19", "pid": "P_COMPARES_TO", "why": "four external baselines...LightGBM (B2); hybrid configuration (Prophet + NLP, C6) consistently outperforms purely statistical models"}
+{"sid": "out_10.jsonl:20", "pid": "P_COMPARES_TO", "why": "XGBoost with autoregressive features (B4) in external baselines; all evaluated under the same walk-forward scheme"}
+{"sid": "out_10.jsonl:21", "pid": "P_BUILDS_ON", "why": "A Spanish sentiment analysis model (RoBERTuito, via the pysentimiento library) was applied to obtain a continuous polarity score"}
+{"sid": "out_10.jsonl:22", "pid": "P_BUILDS_ON", "why": "A multilingual zero-shot classifier (mDeBERTa-v3-base-mnli-xnli) was used to assign each headline a continuous relevance score"}
+{"sid": "out_10.jsonl:23", "pid": "P_BUILDS_ON", "why": "QLPO, a sampling-based variant of GRPO that achieves length-aware policy optimization while leaving the reward function unchanged"}
+{"sid": "out_10.jsonl:24", "pid": "P_COMPARES_TO", "why": "We also compare against GFPO with K=16 and M=8; Group Filtered Policy Optimization faces generalization challenges"}
+{"sid": "out_10.jsonl:25", "pid": "P_EVALUATES_ON", "why": "We evaluate the trained models on five widely used reasoning benchmarks: MATH-500, GSM8K, OlympiadBench, GPQA and AIME 2024"}
+{"sid": "out_10.jsonl:26", "pid": "P_EVALUATES_ON", "why": "We use MATH-lighteval (Hendrycks et al., 2021) for the 3B setting and DAPO-MATH for remaining models; MATH-500 correctness via structured answer extraction"}
+{"sid": "out_10.jsonl:27", "pid": "P_EVALUATES_ON", "why": "OlympiadBench (He et al., 2024) in five widely used reasoning benchmarks; QLPO reduces OlympiadBench length from 17,138 to 6,621"}
+{"sid": "out_10.jsonl:28", "pid": "P_EVALUATES_ON", "why": "GPQA (Rein et al., 2024) in five widely used reasoning benchmarks; Table 1 reports accuracy-length trade-off"}
+{"sid": "out_10.jsonl:29", "pid": "P_EVALUATES_ON", "why": "AIME 2024 in five widely used reasoning benchmarks; We generate 16 responses per prompt for AIME24"}
+{"sid": "out_10.jsonl:30", "pid": "P_BUILDS_ON", "why": "We evaluate QLPO on a diverse set of models, including Qwen2.5-3B, Qwen2.5-32B; applied for length-aware optimization"}
+{"sid": "out_10.jsonl:31", "pid": "P_BUILDS_ON", "why": "DeepSeek-R1-Distill-Qwen-7B (DS-7B) in evaluated models; covers dense and MoE architectures"}
+{"sid": "out_12.jsonl:0", "pid": "P_EVALUATES_ON", "why": "All experiments use Isaac Lab rough-terrain velocity environments; VGCC is evaluated on three embodiments: Go2, ANYmal-D, and H1"}
+{"sid": "out_12.jsonl:1", "pid": "P_BUILDS_ON", "why": "Each is driven by its publicly distributed pretrained RSL-RL policy, which is the policy VGCC compensates; VGCC changes only the command"}
+{"sid": "out_12.jsonl:2", "pid": "P_BUILDS_ON", "why": "VRDQ builds on classical Q-learning; Variance-Reduced Diffused Q-Learning extends Q-learning over networks"}
+{"sid": "out_12.jsonl:3", "pid": "P_BUILDS_ON", "why": "ResUNet trained with Dice-dominant loss for primary segmentation; task-trained ResUNet remains the primary predictor"}
+{"sid": "out_12.jsonl:4", "pid": "P_BUILDS_ON", "why": "keeps SAM 3 frozen and uses it as a second-stage candidate generator; frozen SAM 3 branch returns concept masks"}
+{"sid": "out_12.jsonl:5", "pid": "P_EVALUATES_ON", "why": "The model is evaluated on 1 m resolution NAIP RGB imagery across 37 scenes; NAIP acquisition and polygon annotation as part of workflow"}
+{"sid": "out_12.jsonl:6", "pid": "P_BUILDS_ON", "why": "experiments are conducted with three backbone GNNs: GCN; backbone model for ACE evaluation"}
+{"sid": "out_12.jsonl:7", "pid": "P_BUILDS_ON", "why": "experiments are conducted with three backbone GNNs: LINKX; explicitly designed for heterophilic settings"}
+{"sid": "out_12.jsonl:8", "pid": "P_BUILDS_ON", "why": "experiments are conducted with three backbone GNNs: GloGNN; explicitly designed for heterophilic settings"}
+{"sid": "out_12.jsonl:9", "pid": "P_EVALUATES_ON", "why": "Table 1: Genius 87.42...impact of heterophily on coarsening-based training; evaluation dataset in results table"}
+{"sid": "out_12.jsonl:10", "pid": "P_EVALUATES_ON", "why": "Table 1: Gamers 62.18...performance drop of coarsening training; evaluation dataset in results table"}
+{"sid": "out_12.jsonl:11", "pid": "P_EVALUATES_ON", "why": "Table 1: Pokec 75.45...coarsening-based methods suffer substantially larger performance degradation; evaluation dataset"}
+{"sid": "out_12.jsonl:12", "pid": "P_EVALUATES_ON", "why": "Table 1: Arxiv 71.74...performance drop on heterophilic graphs; evaluation dataset in results table"}
+{"sid": "out_12.jsonl:13", "pid": "P_EVALUATES_ON", "why": "Table 1: Products 75.64...performance degradation on homophilic graphs; evaluation dataset in results table"}
+{"sid": "out_12.jsonl:14", "pid": "DROP", "why": "FatFormer mentioned in related-work discussion: 'recent literature has shifted toward...FatFormer utilizes a forgery-aware adapter'; no evidence this paper benchmarked against FatFormer"}
+{"sid": "out_12.jsonl:15", "pid": "DROP", "why": "SAFE mentioned in related-work discussion: 'SAFE (Li et al., 2025a) specifically target local structural artifacts'; part of background on prior methods, not experimental baseline"}
+{"sid": "out_12.jsonl:16", "pid": "DROP", "why": "C2P-CLIP mentioned in related-work: 'C2P-CLIP (Tan et al., 2025) injects category-related concepts'; background discussion of emerging trends, not paper's comparison"}
+{"sid": "out_12.jsonl:17", "pid": "P_BUILDS_ON", "why": "Denoising Diffusion Probabilistic Models emerging as dominant architectures; DDPM in Table 3 for artifact removal inpainting"}
+{"sid": "out_12.jsonl:18", "pid": "P_BUILDS_ON", "why": "Latent Diffusion Models emerging as dominant architectures reviewed; abstract lists as core methodology in survey"}
+{"sid": "out_12.jsonl:19", "pid": "P_BUILDS_ON", "why": "score-based generative models formulated via stochastic differential equations; SDE in Table 3 for missing angular data inpainting"}
+{"sid": "out_12.jsonl:20", "pid": "P_EVALUATES_ON", "why": "1,000 CT Sinograms from the DeepLesion Dataset; 4,000 CT Images from the DeepLesion Dataset in artifact removal results table"}
+{"sid": "out_12.jsonl:21", "pid": "P_EVALUATES_ON", "why": "We use three clinical IMTS benchmarks: PhysioNet 2012 (P12); ICU time-series records from first 48 hours processed at 1-hour resolution"}
+{"sid": "out_12.jsonl:22", "pid": "P_EVALUATES_ON", "why": "We use three clinical IMTS benchmarks: MIMIC-III; large critical-care EHR benchmark with ICU measurements discretized into 30-minute intervals"}
+{"sid": "out_12.jsonl:23", "pid": "P_EVALUATES_ON", "why": "We use three clinical IMTS benchmarks: MIMIC-IV; extends MIMIC data ecosystem with more recent and denser ICU records at 1-minute resolution"}
+{"sid": "out_12.jsonl:24", "pid": "P_COMPARES_TO", "why": "GRU-D represents missingness-aware recurrent modeling; comparison baseline in Table 2 multi-step forecasting performance"}
+{"sid": "out_12.jsonl:25", "pid": "P_COMPARES_TO", "why": "Event- and attention-based baselines include PrimeNet; Table 2 shows PrimeNet MSE/MAE results for comparison"}
+{"sid": "out_12.jsonl:26", "pid": "P_COMPARES_TO", "why": "Event- and attention-based baselines include mTAN; Table 2 shows mTAN results in multi-step forecasting"}
+{"sid": "out_12.jsonl:27", "pid": "P_COMPARES_TO", "why": "Event- and attention-based baselines include SeFT; Table 2 shows SeFT MSE/MAE performance results"}
+{"sid": "out_12.jsonl:28", "pid": "P_COMPARES_TO", "why": "Continuous-time and neural-flow baselines include NeuralFlows; Table 2 shows NeuralFlows in multi-step forecasting comparison"}
+{"sid": "out_12.jsonl:29", "pid": "P_COMPARES_TO", "why": "Continuous-time and neural-flow baselines include CRU; Table 2 shows CRU performance across P12, MIMIC-III, MIMIC-IV"}
+{"sid": "out_12.jsonl:30", "pid": "P_COMPARES_TO", "why": "Graph-structured and recent irregular forecasting baselines include Raindrop; comparison baseline mentioned in methods section"}
+{"sid": "out_12.jsonl:31", "pid": "P_COMPARES_TO", "why": "Graph-structured and recent irregular forecasting baselines include Warpformer; baseline for temporal attention-based irregular modeling"}
+{"sid": "out_12.jsonl:32", "pid": "P_COMPARES_TO", "why": "Graph-structured and recent irregular forecasting baselines include tPatchGNN; baseline for patch-based graph modeling"}
+{"sid": "out_12.jsonl:33", "pid": "P_COMPARES_TO", "why": "Graph-structured and recent irregular forecasting baselines include GraFITi; comparison baseline in methods description"}

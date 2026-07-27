@@ -1,0 +1,60 @@
+{"sid": "out_14.jsonl:39", "pid": "P_COMPARES_TO", "why": "appears in results table with LAMAR (Ours) as a competing reranker"}
+{"sid": "out_14.jsonl:40", "pid": "P_COMPARES_TO", "why": "appears in results table with LAMAR (Ours) as a competing reranker"}
+{"sid": "out_14.jsonl:41", "pid": "P_COMPARES_TO", "why": "appears in results table with LAMAR (Ours) as a competing reranker"}
+{"sid": "out_14.jsonl:42", "pid": "P_COMPARES_TO", "why": "appears in results table with LAMAR (Ours) as a competing reranker"}
+{"sid": "out_14.jsonl:43", "pid": "P_COMPARES_TO", "why": "appears in results table with LAMAR (Ours) as a competing reranker"}
+{"sid": "out_14.jsonl:44", "pid": "P_BUILDS_ON", "why": "LAMAR is a reranker that refines document ordering within RAG systems"}
+{"sid": "out_14.jsonl:45", "pid": "P_BUILDS_ON", "why": "MoE architecture based on decoder-only Transformer"}
+{"sid": "out_14.jsonl:46", "pid": "P_COMPARES_TO", "why": "Native multimodal pre-training avoids late fusion limitation"}
+{"sid": "out_14.jsonl:47", "pid": "P_BUILDS_ON", "why": "based on decoder-only Transformer architecture"}
+{"sid": "out_14.jsonl:48", "pid": "P_EVALUATES_ON", "why": "listed in datasets table with 32,561 samples, 2 classes"}
+{"sid": "out_14.jsonl:49", "pid": "P_EVALUATES_ON", "why": "listed in datasets table with 40,004 samples, 2 classes"}
+{"sid": "out_14.jsonl:50", "pid": "P_EVALUATES_ON", "why": "listed in datasets table with 30,000 samples, 2 classes"}
+{"sid": "out_14.jsonl:51", "pid": "P_EVALUATES_ON", "why": "listed in datasets table with 1,000 samples, 2 classes"}
+{"sid": "out_14.jsonl:52", "pid": "P_EVALUATES_ON", "why": "listed in datasets table with 93,888 samples, 2 classes"}
+{"sid": "out_14.jsonl:53", "pid": "P_EVALUATES_ON", "why": "listed in datasets table with 442 samples, regression task"}
+{"sid": "out_14.jsonl:54", "pid": "P_EVALUATES_ON", "why": "listed in datasets table with 308 samples, regression task"}
+{"sid": "out_14.jsonl:55", "pid": "DROP", "why": "related-work mention: ImageNet-pretrained backbones from prior assumption"}
+{"sid": "out_14.jsonl:56", "pid": "P_BUILDS_ON", "why": "uses LoRA control as adaptation technique in training"}
+{"sid": "out_14.jsonl:57", "pid": "P_BUILDS_ON", "why": "trains only the Transformer and fusion module"}
+{"sid": "out_14.jsonl:58", "pid": "P_COMPARES_TO", "why": "CLIP-SENet is a competing method compared in results"}
+{"sid": "out_14.jsonl:59", "pid": "DROP", "why": "HuggingFace is a vendor platform where BERT is downloaded from (incidental role)"}
+{"sid": "out_14.jsonl:60", "pid": "P_BUILDS_ON", "why": "uses PLM bert-base-cased from HuggingFace as contextual encoder"}
+{"sid": "out_14.jsonl:61", "pid": "P_COMPARES_TO", "why": "outperforming substantially larger Qwen3.5-9B (comparison baseline)"}
+{"sid": "out_14.jsonl:62", "pid": "DROP", "why": "Claude Code is one of several agent scaffolds used incidentally for trajectory synthesis"}
+{"sid": "out_14.jsonl:63", "pid": "P_BUILDS_ON", "why": "Nanbeige4.2-3B extends Nanbeige4.2 with Looped Transformer architecture"}
+{"sid": "out_14.jsonl:64", "pid": "P_BUILDS_ON", "why": "applies supervised fine-tuning (SFT) in post-training stage"}
+{"sid": "out_14.jsonl:65", "pid": "P_BUILDS_ON", "why": "develops multi-stage RL pipeline for training"}
+{"sid": "out_14.jsonl:66", "pid": "P_BUILDS_ON", "why": "adopts a Looped Transformer as base architecture"}
+{"sid": "out_14.jsonl:67", "pid": "P_COMPARES_TO", "why": "VAE appears in results table (TABLE III) as comparison baseline"}
+{"sid": "out_14.jsonl:68", "pid": "P_BUILDS_ON", "why": "Memory-Augmented NMF technique in title and method"}
+{"sid": "out_14.jsonl:69", "pid": "P_BUILDS_ON", "why": "operates on Linear Predictive Coding (LPC) spectrum"}
+{"sid": "out_14.jsonl:70", "pid": "P_COMPARES_TO", "why": "competing against PAE, which uses a Transformer-based architecture"}
+{"sid": "out_14.jsonl:71", "pid": "P_BUILDS_ON", "why": "reconstructs input as attention-weighted combination of spectral patterns"}
+{"sid": "out_14.jsonl:72", "pid": "P_EVALUATES_ON", "why": "evaluate ReDe on GSM8K reasoning benchmark"}
+{"sid": "out_14.jsonl:73", "pid": "P_EVALUATES_ON", "why": "constructed by combining MATH500 dataset for evaluation"}
+{"sid": "out_14.jsonl:74", "pid": "P_BUILDS_ON", "why": "evaluate method on Qwen3-8B/32B as base LRM models"}
+{"sid": "out_14.jsonl:75", "pid": "P_BUILDS_ON", "why": "REDE leverages final-answer attention as supervision signal"}
+{"sid": "out_14.jsonl:76", "pid": "P_BUILDS_ON", "why": "generative pretrained transformer combines structured EHR data"}
+{"sid": "out_14.jsonl:77", "pid": "P_BUILDS_ON", "why": "Parameters and Detailed SFT Settings in methodology section"}
+{"sid": "out_14.jsonl:78", "pid": "P_BUILDS_ON", "why": "cross-attention and attention-residual fusion in module architecture"}
+{"sid": "out_14.jsonl:79", "pid": "DROP", "why": "LAD is anatomical structure (left anterior descending artery), not technical resource"}
+{"sid": "out_14.jsonl:80", "pid": "P_COMPARES_TO", "why": "proposes RAE as alternative to VAE-based multimodal architectures"}
+{"sid": "out_15.jsonl:0", "pid": "P_EVALUATES_ON", "why": "measure continual learning on banking domain of tau-bench"}
+{"sid": "out_15.jsonl:1", "pid": "P_BUILDS_ON", "why": "uses Mistral Large as one of two agent models spanning deployment spectrum"}
+{"sid": "out_15.jsonl:2", "pid": "P_BUILDS_ON", "why": "replicated results on frontier model Claude Sonnet 5"}
+{"sid": "out_15.jsonl:3", "pid": "P_BUILDS_ON", "why": "benchmark uses BM25 retrieval over policy corpus as baseline"}
+{"sid": "out_15.jsonl:4", "pid": "P_COMPARES_TO", "why": "GPT-5.5-backed database agents evaluated among baseline groups"}
+{"sid": "out_15.jsonl:5", "pid": "P_BUILDS_ON", "why": "evaluate six foundation models under common ReAct workflow"}
+{"sid": "out_15.jsonl:6", "pid": "P_EVALUATES_ON", "why": "evaluate ESTR on agentic deep search task on BrowseComp-Plus"}
+{"sid": "out_15.jsonl:7", "pid": "P_EVALUATES_ON", "why": "tool-integrated math on multi-turn GSM8K benchmark"}
+{"sid": "out_15.jsonl:8", "pid": "P_EVALUATES_ON", "why": "evaluate on AIME 2024, 2025, and 2026 for mathematical reasoning"}
+{"sid": "out_15.jsonl:9", "pid": "P_COMPARES_TO", "why": "Sync is synchronous GRPO baseline for comparison"}
+{"sid": "out_15.jsonl:10", "pid": "P_COMPARES_TO", "why": "IcePop keeps token within fixed interval (competing asynchronous baseline)"}
+{"sid": "out_15.jsonl:11", "pid": "P_COMPARES_TO", "why": "KPop uses bidirectional KL threshold (competing asynchronous baseline)"}
+{"sid": "out_15.jsonl:12", "pid": "P_BUILDS_ON", "why": "FBA improves LLaVA-v1.5 model from 57.95 to 70.29 on HarborEval"}
+{"sid": "out_15.jsonl:13", "pid": "P_BUILDS_ON", "why": "FBA improves Qwen3-VL model from 81.09 to 83.37 on HarborEval"}
+{"sid": "out_15.jsonl:14", "pid": "P_EVALUATES_ON", "why": "HarborEval and harbor-related subsets of VRSBench evaluate performance"}
+{"sid": "out_15.jsonl:15", "pid": "P_EVALUATES_ON", "why": "HarborEval and harbor-related subsets of RSVQA evaluate performance"}
+{"sid": "out_15.jsonl:16", "pid": "P_EVALUATES_ON", "why": "evaluation on challenging long-tailed CIFAR-10-LT dataset"}
+{"sid": "out_15.jsonl:17", "pid": "P_EVALUATES_ON", "why": "evaluation on challenging long-tailed CIFAR-100-LT dataset"}

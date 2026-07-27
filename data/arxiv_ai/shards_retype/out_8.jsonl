@@ -1,0 +1,60 @@
+{"sid": "out_3.jsonl:53", "pid": "P_EVALUATES_ON", "why": "Gemini-3.5-flash in results table: 'Gemini-3.5-flash clearly leads (0.94)' — evaluated backbone"}
+{"sid": "out_3.jsonl:54", "pid": "P_EVALUATES_ON", "why": "'the sweep covers 22 backbones. Nineteen run locally and span the Qwen2.5... families' — evaluated on these models"}
+{"sid": "out_3.jsonl:55", "pid": "P_COMPARES_TO", "why": "Baselines list: 'BERT4Rec [ 38 ] : pretrains a bidirectional Transformer'"}
+{"sid": "out_3.jsonl:56", "pid": "DROP", "why": "Generic term Transformer mentioned in related-work baselines context only"}
+{"sid": "out_3.jsonl:57", "pid": "P_BUILDS_ON", "why": "Title: 'Faster IndexTTS-2: Accelerating... IndexTTS-2' — accelerating the base system"}
+{"sid": "out_3.jsonl:58", "pid": "DROP", "why": "TensorRT is a tool framework used for inference optimization, incidental role"}
+{"sid": "out_3.jsonl:59", "pid": "DROP", "why": "TensorRT-LLM is inference framework tool, incidental role in deployment"}
+{"sid": "out_3.jsonl:60", "pid": "P_BUILDS_ON", "why": "'IndexTTS-2 is... consisting of a GPT, a flow-matching Diffusion Transformer, and a vocoder' — component"}
+{"sid": "out_3.jsonl:61", "pid": "P_BUILDS_ON", "why": "'consisting of a GPT, a flow-matching Diffusion Transformer, and a vocoder' — component of system"}
+{"sid": "out_3.jsonl:62", "pid": "DROP", "why": "Claude Sonnet used as independent judge, incidental role as annotation tool"}
+{"sid": "out_3.jsonl:63", "pid": "DROP", "why": "Gemini used as judge and translation tool, incidental role"}
+{"sid": "out_3.jsonl:64", "pid": "P_EVALUATES_ON", "why": "'capability anchors (MMLU-Redux...) separate safety-specific degradation' — benchmark evaluation"}
+{"sid": "out_3.jsonl:65", "pid": "P_EVALUATES_ON", "why": "'capability anchors... GSM8K... separate safety-specific degradation' — benchmark evaluation"}
+{"sid": "out_3.jsonl:66", "pid": "P_EVALUATES_ON", "why": "'over-refusal on XSTest near 0.33' — explicit evaluation benchmark"}
+{"sid": "out_3.jsonl:67", "pid": "P_EVALUATES_ON", "why": "'multiple-choice bias avoidance under ambiguity (BBQ...) and BBQ accuracy' — evaluation metric"}
+{"sid": "out_4.jsonl:0", "pid": "P_EVALUATES_ON", "why": "'Experiments on the LongLaMP dataset show that PrefReward outperforms' — dataset for experiments"}
+{"sid": "out_4.jsonl:1", "pid": "P_BUILDS_ON", "why": "'we leverage Llama2-7B-Chat as the backbone model' — backbone for zero-shot"}
+{"sid": "out_4.jsonl:2", "pid": "P_BUILDS_ON", "why": "'we align Gemma-2B-IT using a dataset... on both... Gemma-2B-IT backbone' — fine-tuned backbone"}
+{"sid": "out_4.jsonl:3", "pid": "P_BUILDS_ON", "why": "'we employ... the Contriever dense retriever from facebook/contriever checkpoint' — retrieval component"}
+{"sid": "out_4.jsonl:4", "pid": "P_BUILDS_ON", "why": "'t-SNE projection of EfficientNet-B5 features' — classifier in their framework"}
+{"sid": "out_4.jsonl:5", "pid": "P_BUILDS_ON", "why": "'CycleGAN-generated normal counterfactual' — generative component in system"}
+{"sid": "out_4.jsonl:6", "pid": "P_COMPARES_TO", "why": "'compared against different widely used saliency methods... EigenCAM achieves the strongest' — comparison baseline"}
+{"sid": "out_4.jsonl:7", "pid": "P_COMPARES_TO", "why": "'compared against different widely used saliency methods... GradCAM and GradCAM++' — baselines"}
+{"sid": "out_4.jsonl:8", "pid": "P_COMPARES_TO", "why": "'compared against different widely used saliency methods... LIME' — comparison baseline"}
+{"sid": "out_4.jsonl:9", "pid": "P_BUILDS_ON", "why": "'Low-Rank Adaptation (LoRA)... is widely adopted: it injects trainable low-rank matrices' — core technique"}
+{"sid": "out_4.jsonl:10", "pid": "P_EVALUATES_ON", "why": "'Experiments on federated fine-tuning... over DomainNet and NICO++ demonstrate' — evaluation dataset"}
+{"sid": "out_4.jsonl:11", "pid": "P_EVALUATES_ON", "why": "'over DomainNet and NICO++ demonstrate improved accuracy-communication trade-offs' — evaluation dataset"}
+{"sid": "out_4.jsonl:12", "pid": "P_BUILDS_ON", "why": "'The autoregressive language model adopts BitNet-style ternary weights' — BitNet approach adopted"}
+{"sid": "out_4.jsonl:13", "pid": "P_BUILDS_ON", "why": "'we replace the original Qwen2.5-7B decoder with Qwen2.5-1.5B' — LM decoder component"}
+{"sid": "out_4.jsonl:14", "pid": "P_BUILDS_ON", "why": "'both 7-stage ConvNeXt backbones with 3200 × temporal downsampling' — backbone for encoders"}
+{"sid": "out_4.jsonl:15", "pid": "P_COMPARES_TO", "why": "'VibeVoice-ASR-BitNet is 1.6-2.3x faster than Whisper.cpp' — comparison baseline"}
+{"sid": "out_4.jsonl:16", "pid": "DROP", "why": "Related-work mention in background: 'Transformer-based architectures dominate the field, including FourCastNet'"}
+{"sid": "out_4.jsonl:17", "pid": "DROP", "why": "Related-work discussion: 'GraphCast (Lam et al. , 2023b ) utilizes Graph Neural Networks' in background"}
+{"sid": "out_4.jsonl:18", "pid": "DROP", "why": "Background on field standards: 'P-splines... have become one of the standard approaches' in Section 2"}
+{"sid": "out_4.jsonl:19", "pid": "P_BUILDS_ON", "why": "'CASC integrates... with stacked FAConvLSTM layers to preserve spatial and temporal structure' — component"}
+{"sid": "out_4.jsonl:20", "pid": "P_BUILDS_ON", "why": "'A graph attention transformer-based self-expressive network is introduced' — component in CASC"}
+{"sid": "out_4.jsonl:21", "pid": "P_BUILDS_ON", "why": "'RL fine-tuned Llama3.1-8B... show substantial improvements' — base model fine-tuned"}
+{"sid": "out_4.jsonl:22", "pid": "P_BUILDS_ON", "why": "'RL fine-tuned Llama3.1-8B and Qwen3-8B show substantial improvements' — base model fine-tuned"}
+{"sid": "out_4.jsonl:23", "pid": "P_EVALUATES_ON", "why": "'The Train and Test datasets are comprised of e-SNLI... Example taken... on ESNLI sample' — training/eval dataset"}
+{"sid": "out_4.jsonl:24", "pid": "P_EVALUATES_ON", "why": "'Train and Test datasets are comprised of e-SNLI and Social-IQA' — training/eval data"}
+{"sid": "out_4.jsonl:25", "pid": "P_EVALUATES_ON", "why": "'The OOD split is comprised of... StrategyQA... used exclusively to test' — evaluation dataset"}
+{"sid": "out_4.jsonl:26", "pid": "P_EVALUATES_ON", "why": "'The OOD split is comprised of ComVE and StrategyQA... used exclusively to test' — evaluation dataset"}
+{"sid": "out_4.jsonl:27", "pid": "P_BUILDS_ON", "why": "'Our answer is APEX, a framework built on a polynomial GNN architecture called PolyGIN' — core architecture"}
+{"sid": "out_4.jsonl:28", "pid": "P_BUILDS_ON", "why": "Title: 'Smooth Neural Point Processes via B-Splines' — core method built on B-splines"}
+{"sid": "out_4.jsonl:29", "pid": "P_COMPARES_TO", "why": "Results table rows show 'TIGER' and 'SASRec' with metrics 'Hit@20 Recall@20' — comparison baseline"}
+{"sid": "out_4.jsonl:30", "pid": "P_BUILDS_ON", "why": "'GRPO is commonly used for RL training for its efficiency' and 'Memory agent training with GRPO' — training algorithm"}
+{"sid": "out_4.jsonl:31", "pid": "P_EVALUATES_ON", "why": "'TOUR is a benchmark centered on three MuJoCo continuous-control environments from D4RL' — evaluation benchmark"}
+{"sid": "out_4.jsonl:32", "pid": "P_COMPARES_TO", "why": "'It evaluates Decision Transformer (DT) policies... MLP and Long Short-Term Memory (LSTM)' — compared policy types"}
+{"sid": "out_4.jsonl:33", "pid": "P_COMPARES_TO", "why": "'an Implicit Q-Learning (IQL)... companion analysis' — compared policy algorithm in benchmark"}
+{"sid": "out_4.jsonl:34", "pid": "P_BUILDS_ON", "why": "'The current model library... comprises classical statistical models (e.g., Naive, ARIMA)' — model in framework"}
+{"sid": "out_4.jsonl:35", "pid": "P_BUILDS_ON", "why": "'tree-based machine learning methods (e.g., XGBoost)' — model in their library"}
+{"sid": "out_4.jsonl:36", "pid": "P_BUILDS_ON", "why": "'several neural model families such as recurrent networks (e.g., RNN, LSTM, GRU, BiGRU)' — model family"}
+{"sid": "out_4.jsonl:37", "pid": "DROP", "why": "Generic term Transformer mentioned in background; specific variants (Informer, Autoformer) are the actual artifacts"}
+{"sid": "out_4.jsonl:38", "pid": "P_BUILDS_ON", "why": "'linear and decomposition-based models (e.g., N-BEATS)' — model in their library"}
+{"sid": "out_4.jsonl:39", "pid": "P_EVALUATES_ON", "why": "'We conduct the analysis on two representative datasets... namely OhioT1DM and DiaTrend' — evaluation dataset"}
+{"sid": "out_4.jsonl:40", "pid": "P_EVALUATES_ON", "why": "'two representative datasets among those currently supported, namely OhioT1DM and DiaTrend' — evaluation dataset"}
+{"sid": "out_4.jsonl:41", "pid": "P_BUILDS_ON", "why": "Title: 'Approximate Quantum State Preparation Through Proximal Policy Optimization' — RL algorithm used"}
+{"sid": "out_4.jsonl:42", "pid": "P_BUILDS_ON", "why": "'we propose an easy-to-use open-source library which allows PyTorch/Tensorflow models to be deployed and fully trained' extending AIfES — building on framework"}
+{"sid": "out_4.jsonl:43", "pid": "P_BUILDS_ON", "why": "'Estimating heat-related mortality risk... typically addressed with Distributed Lag Non-linear Models (DLNMs)' and 'RGNN' builds on DLNMs"}
+{"sid": "out_4.jsonl:44", "pid": "P_BUILDS_ON", "why": "'GATv2... extends graph attention networks... making it well-suited to heterogeneous hierarchies' — encoder component"}

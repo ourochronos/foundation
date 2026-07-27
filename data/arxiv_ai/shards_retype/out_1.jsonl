@@ -1,0 +1,60 @@
+{"sid": "out_0.jsonl:60", "pid": "P_BUILDS_ON", "why": "adopts process reward models for verifier; 'process-based verifiers can be used to score each individual step'"}
+{"sid": "out_0.jsonl:61", "pid": "P_EVALUATES_ON", "why": "MATH benchmark used for experiments; 'we focus on the MATH benchmark... For all experiments, we use the dataset split'"}
+{"sid": "out_0.jsonl:62", "pid": "P_BUILDS_ON", "why": "derived from Qwen2.5; 'models are derived from the Qwen2.5 LLMs, inheriting their advanced architecture'"}
+{"sid": "out_0.jsonl:63", "pid": "P_BUILDS_ON", "why": "integrates M-RoPE; 'model also integrates Multimodal Rotary Position Embedding (M-RoPE)'"}
+{"sid": "out_0.jsonl:64", "pid": "P_BUILDS_ON", "why": "adopts MLA; 'DeepSeek-V3 still adopts Multi-head Latent Attention (MLA)'"}
+{"sid": "out_0.jsonl:65", "pid": "P_BUILDS_ON", "why": "adopts DeepSeekMoE; 'adopts... DeepSeekMoE for cost-effective training'"}
+{"sid": "out_0.jsonl:66", "pid": "P_EVALUATES_ON", "why": "DMR benchmark for evaluation; 'We evaluate these mechanisms' efficacy using... Deep Memory Retrieval task (DMR)'"}
+{"sid": "out_0.jsonl:67", "pid": "P_EVALUATES_ON", "why": "LongMemEval benchmark; 'as well as the LongMemEval benchmark'"}
+{"sid": "out_0.jsonl:68", "pid": "P_COMPARES_TO", "why": "MemGPT is rival system; 'outperforms the current state-of-the-art system, MemGPT'"}
+{"sid": "out_1.jsonl:0", "pid": "P_BUILDS_ON", "why": "base model for RL training; 'we train Qwen2.5-Math-7B-Base with PRIME after lightweight SFT'"}
+{"sid": "out_1.jsonl:1", "pid": "UNCERTAIN", "why": "no mention located"}
+{"sid": "out_1.jsonl:2", "pid": "P_BUILDS_ON", "why": "PPO adopted for policy updates; 'We adopt PPO clip surrogate loss for more stable policy updates'"}
+{"sid": "out_1.jsonl:3", "pid": "P_BUILDS_ON", "why": "pretrained base model; 'We experiment over Qwen2.5-32B as the pretrained model for RL'"}
+{"sid": "out_1.jsonl:4", "pid": "P_EVALUATES_ON", "why": "AIME evaluation; 'achieves 50 points on AIME 2024'"}
+{"sid": "out_1.jsonl:5", "pid": "P_BUILDS_ON", "why": "improves upon GRPO; 'naive GRPO baseline suffers... we propose DAPO algorithm'"}
+{"sid": "out_1.jsonl:6", "pid": "P_BUILDS_ON", "why": "implementation built on verl; 'Our implementation is based on verl framework'"}
+{"sid": "out_1.jsonl:7", "pid": "P_BUILDS_ON", "why": "base models for RL-tuning; 'we RL-tune Qwen2.5-Math-7B using Dr. GRPO algorithm'"}
+{"sid": "out_1.jsonl:8", "pid": "P_EVALUATES_ON", "why": "AIME evaluation; 'achieves 43.3% accuracy on AIME 2024 with a 7B base model'"}
+{"sid": "out_1.jsonl:9", "pid": "P_EVALUATES_ON", "why": "MATH dataset for evaluation; 'RL-tune Qwen2.5-Math-7B using Dr. GRPO algorithm on MATH'"}
+{"sid": "out_1.jsonl:10", "pid": "P_BUILDS_ON", "why": "improves upon GRPO; 'identify the bias in optimization of GRPO... propose modification to eliminate bias'"}
+{"sid": "out_1.jsonl:11", "pid": "P_BUILDS_ON", "why": "base model investigated; 'We adopt the Llama-3.2-3B base model as our starting point'"}
+{"sid": "out_1.jsonl:12", "pid": "P_COMPARES_TO", "why": "model evaluated on benchmark; 'We evaluated a range of models... GPT-4o'"}
+{"sid": "out_1.jsonl:13", "pid": "P_COMPARES_TO", "why": "model evaluated on benchmark; 'We evaluated... OpenAI o1... achieves noticeably higher accuracy'"}
+{"sid": "out_1.jsonl:14", "pid": "P_EVALUATES_ON", "why": "LOCOMO benchmark; 'comprehensive evaluations on LOCOMO benchmark'"}
+{"sid": "out_1.jsonl:15", "pid": "P_BUILDS_ON", "why": "used as inference engine; 'All language model operations utilized GPT-4o-mini as the inference engine'"}
+{"sid": "out_1.jsonl:16", "pid": "P_BUILDS_ON", "why": "base models for training; 'we train Qwen-2.5 Instruct 0.5B models for symbolic tasks'"}
+{"sid": "out_1.jsonl:17", "pid": "P_EVALUATES_ON", "why": "evaluation environment; 'We evaluate RAGEN on four environments... WebShop'"}
+{"sid": "out_1.jsonl:18", "pid": "P_EVALUATES_ON", "why": "evaluation environment; 'We evaluate RAGEN on... Frozen Lake'"}
+{"sid": "out_1.jsonl:19", "pid": "P_BUILDS_ON", "why": "policy optimization method; 'Policy updates use GRPO or PPO'"}
+{"sid": "out_1.jsonl:20", "pid": "P_BUILDS_ON", "why": "policy optimization method; 'Models are trained with StarPO variants... Policy updates use GRPO or PPO'"}
+{"sid": "out_1.jsonl:21", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'evaluation datasets include... MMLU (5-shot)'"}
+{"sid": "out_1.jsonl:22", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'Math & STEM Tasks: ... GSM8K (4-shot, CoT)'"}
+{"sid": "out_1.jsonl:23", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'Math & STEM Tasks: ... MATH (4-shot, CoT)'"}
+{"sid": "out_1.jsonl:24", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'Coding Tasks: ... HumanEval'"}
+{"sid": "out_1.jsonl:25", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'We first train the LLM agents on two challenging benchmarks: ALFWorld'"}
+{"sid": "out_1.jsonl:26", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'We first train the LLM agents on... benchmarks: ALFWorld and WebShop'"}
+{"sid": "out_1.jsonl:27", "pid": "P_BUILDS_ON", "why": "base models for training; 'We use Qwen2.5-1.5B/3B/7B-Instruct as our base models'"}
+{"sid": "out_1.jsonl:28", "pid": "P_BUILDS_ON", "why": "base algorithm improved; 'GiGPO samples group of trajectories... computes macro relative advantages like vanilla GRPO'"}
+{"sid": "out_1.jsonl:29", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'comprehensive evaluations on LOCOMO benchmark... MTEB Multilingual benchmarks'"}
+{"sid": "out_1.jsonl:30", "pid": "P_BUILDS_ON", "why": "foundation base; 'Qwen3 Embedding models, which are constructed on top of the Qwen3 foundation models'"}
+{"sid": "out_1.jsonl:31", "pid": "UNCERTAIN", "why": "no mention located"}
+{"sid": "out_1.jsonl:32", "pid": "UNCERTAIN", "why": "no mention located"}
+{"sid": "out_1.jsonl:33", "pid": "P_COMPARES_TO", "why": "model evaluated on benchmark; 'Model Resolve (%) Claude Sonnet 4.5 43.6'"}
+{"sid": "out_1.jsonl:34", "pid": "P_COMPARES_TO", "why": "model evaluated on benchmark; 'Model... OpenAI GPT-5 (high) 41.8'"}
+{"sid": "out_1.jsonl:35", "pid": "P_BUILDS_ON", "why": "SWE-Bench Pro builds upon original; 'SWE-bench establishes the task... SWE-Bench Pro'"}
+{"sid": "out_1.jsonl:36", "pid": "UNCERTAIN", "why": "no mention located"}
+{"sid": "out_1.jsonl:37", "pid": "P_BUILDS_ON", "why": "GRPO used for RL training; 'DeepSeek-V3.2, we still adopt Group Relative Policy Optimization (GRPO)'"}
+{"sid": "out_1.jsonl:38", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'SWE-bench Verified (N=477)'"}
+{"sid": "out_1.jsonl:39", "pid": "P_BUILDS_ON", "why": "base model family; 'We use the Qwen3 model family for our experiments'"}
+{"sid": "out_1.jsonl:40", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'SDPO... achieves GRPO' final accuracy on LiveCodeBench v6'"}
+{"sid": "out_1.jsonl:41", "pid": "P_COMPARES_TO", "why": "baseline method compared; 'SDPO substantially outperforms GRPO'"}
+{"sid": "out_1.jsonl:42", "pid": "P_BUILDS_ON", "why": "base model; 'OPD from two teachers... into the same student (Qwen3-1.7B-Base)'"}
+{"sid": "out_1.jsonl:43", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'evaluated on AIME 2024, AIME 2025 and AMC 2023'"}
+{"sid": "out_1.jsonl:44", "pid": "P_EVALUATES_ON", "why": "evaluation benchmark; 'evaluate whether Deep Research agents... yielding instances built on DeepResearch Benchmark'"}
+{"sid": "out_10.jsonl:0", "pid": "P_EVALUATES_ON", "why": "dataset for training and evaluation; 'training a 150M transformer on 3B tokens from FineWeb'"}
+{"sid": "out_10.jsonl:1", "pid": "P_EVALUATES_ON", "why": "benchmark for evaluation; 'Framework analyzed against AdvBench (520 prompts)'"}
+{"sid": "out_10.jsonl:2", "pid": "P_EVALUATES_ON", "why": "dataset for evaluation; 'Evaluation... on the PG-19 validation split'"}
+{"sid": "out_10.jsonl:3", "pid": "P_COMPARES_TO", "why": "baseline method compared; 'improvement over BigBird... BigBird Zaheer et al.'"}
+{"sid": "out_10.jsonl:4", "pid": "P_COMPARES_TO", "why": "baseline method compared; 'Longformer... Methods compared... fixed patterns (e.g., BigBird and Longformer)'"}
+{"sid": "out_10.jsonl:5", "pid": "P_COMPARES_TO", "why": "baseline method compared; 'We compare seven attention methods... SBM-Transformer'"}

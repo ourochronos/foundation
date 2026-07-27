@@ -1,0 +1,60 @@
+{"sid": "out_4.jsonl:45", "pid": "P_BUILDS_ON", "why": "employs GraphSAGE for mean aggregation over geographic neighborhoods"}
+{"sid": "out_4.jsonl:46", "pid": "P_COMPARES_TO", "why": "As baselines we use the DLNM, Random Forests (RF)"}
+{"sid": "out_4.jsonl:47", "pid": "P_COMPARES_TO", "why": "As baselines we use... Gradient Boosted Models (GBM)"}
+{"sid": "out_4.jsonl:48", "pid": "P_COMPARES_TO", "why": "LSTM appears in results table as baseline"}
+{"sid": "out_4.jsonl:49", "pid": "P_COMPARES_TO", "why": "MLP appears in results table as baseline"}
+{"sid": "out_4.jsonl:50", "pid": "P_EVALUATES_ON", "why": "Cityscapes used for source-data families in transfer learning"}
+{"sid": "out_4.jsonl:51", "pid": "P_EVALUATES_ON", "why": "we used five source-data families: ApolloScape"}
+{"sid": "out_4.jsonl:52", "pid": "P_EVALUATES_ON", "why": "pedestrian-view samples from Mapillary Vistas"}
+{"sid": "out_4.jsonl:53", "pid": "P_BUILDS_ON", "why": "Segment Anything Model 2 (SAM2) pseudo-labels"}
+{"sid": "out_4.jsonl:54", "pid": "P_BUILDS_ON", "why": "We evaluated five semantic segmentation architectures... DeepLabV3Plus"}
+{"sid": "out_4.jsonl:55", "pid": "P_BUILDS_ON", "why": "evaluated five semantic segmentation architectures... UPerNet"}
+{"sid": "out_4.jsonl:56", "pid": "P_BUILDS_ON", "why": "ImageNet-pretrained MobileNetV3-Large-0.75 encoders"}
+{"sid": "out_4.jsonl:57", "pid": "UNCERTAIN", "why": "*** no mention located ***"}
+{"sid": "out_4.jsonl:58", "pid": "P_EVALUATES_ON", "why": "Experiments use three public video safety benchmarks: Video-SafetyBench"}
+{"sid": "out_4.jsonl:59", "pid": "P_EVALUATES_ON", "why": "Experiments use three public video safety benchmarks: VA-SafetyBench"}
+{"sid": "out_4.jsonl:60", "pid": "P_EVALUATES_ON", "why": "Experiments use three public video safety benchmarks: Omni-SafetyBench"}
+{"sid": "out_4.jsonl:61", "pid": "P_COMPARES_TO", "why": "We study six representative video-capable Video LLMs... Qwen2-VL"}
+{"sid": "out_4.jsonl:62", "pid": "P_COMPARES_TO", "why": "We study six representative video-capable Video LLMs... Qwen2.5-VL"}
+{"sid": "out_4.jsonl:63", "pid": "P_COMPARES_TO", "why": "We study six representative video-capable Video LLMs... InternVL3.5"}
+{"sid": "out_4.jsonl:64", "pid": "P_COMPARES_TO", "why": "We study six representative video-capable Video LLMs... InternVideo2.5"}
+{"sid": "out_4.jsonl:65", "pid": "P_COMPARES_TO", "why": "We study six representative video-capable Video LLMs... MiniCPM-o"}
+{"sid": "out_4.jsonl:66", "pid": "P_COMPARES_TO", "why": "We study six representative video-capable Video LLMs... MiniCPM-V"}
+{"sid": "out_5.jsonl:0", "pid": "P_EVALUATES_ON", "why": "CRAG-MM itself is the benchmark evaluated"}
+{"sid": "out_5.jsonl:1", "pid": "P_COMPARES_TO", "why": "generalized models... GPT-5... evaluated"}
+{"sid": "out_5.jsonl:2", "pid": "P_COMPARES_TO", "why": "alongside proprietary state-of-the-art models GPT-5-mini"}
+{"sid": "out_5.jsonl:3", "pid": "P_COMPARES_TO", "why": "Grounding-DINO... perform open-vocabulary object detection"}
+{"sid": "out_5.jsonl:4", "pid": "P_COMPARES_TO", "why": "Llama-3.2-11B... evaluated"}
+{"sid": "out_5.jsonl:5", "pid": "P_COMPARES_TO", "why": "OWL-ViT... perform open-vocabulary object detection"}
+{"sid": "out_5.jsonl:6", "pid": "P_COMPARES_TO", "why": "Qwen2.5-VL family... evaluated"}
+{"sid": "out_5.jsonl:7", "pid": "DROP", "why": "RAG not mentioned in contexts; generic technique reference"}
+{"sid": "out_5.jsonl:8", "pid": "P_BUILDS_ON", "why": "applies GKR to the registered HND backbone"}
+{"sid": "out_5.jsonl:9", "pid": "P_BUILDS_ON", "why": "GKR-HND combines a block-local GKR proof"}
+{"sid": "out_5.jsonl:10", "pid": "P_EVALUATES_ON", "why": "We evaluate ARA on the Automated Causal Reasoning Benchmark"}
+{"sid": "out_5.jsonl:11", "pid": "P_BUILDS_ON", "why": "structural equations, a direct acyclic graph"}
+{"sid": "out_5.jsonl:12", "pid": "DROP", "why": "HumanEval mentioned in related work background, not used by ICAE"}
+{"sid": "out_5.jsonl:13", "pid": "P_EVALUATES_ON", "why": "ICAE-Bench: Evaluating Coding Agents"}
+{"sid": "out_5.jsonl:14", "pid": "DROP", "why": "MBPP mentioned in related work background"}
+{"sid": "out_5.jsonl:15", "pid": "DROP", "why": "RepoBench mentioned in related work discussion"}
+{"sid": "out_5.jsonl:16", "pid": "DROP", "why": "SWE-Bench Pro mentioned in related work background"}
+{"sid": "out_5.jsonl:17", "pid": "DROP", "why": "SWE-bench mentioned in related work background"}
+{"sid": "out_5.jsonl:18", "pid": "P_EVALUATES_ON", "why": "adapted from AbsoluteDegradation... generates training pairs"}
+{"sid": "out_5.jsonl:19", "pid": "P_BUILDS_ON", "why": "We train the model using 8-bit Adam"}
+{"sid": "out_5.jsonl:20", "pid": "P_COMPARES_TO", "why": "Table 2 compares DART against BasicVSR"}
+{"sid": "out_5.jsonl:21", "pid": "P_COMPARES_TO", "why": "compares DART against... DeepRemaster"}
+{"sid": "out_5.jsonl:22", "pid": "P_COMPARES_TO", "why": "compares DART against... MambaOFR"}
+{"sid": "out_5.jsonl:23", "pid": "P_BUILDS_ON", "why": "using a frozen RAFT flow estimator"}
+{"sid": "out_5.jsonl:24", "pid": "P_EVALUATES_ON", "why": "DART is trained on REDS train_sharp"}
+{"sid": "out_5.jsonl:25", "pid": "P_COMPARES_TO", "why": "compares DART against... RTN"}
+{"sid": "out_5.jsonl:26", "pid": "P_EVALUATES_ON", "why": "SRWOV serves as a secondary benchmark"}
+{"sid": "out_5.jsonl:27", "pid": "P_COMPARES_TO", "why": "compares DART against... ShiftNet"}
+{"sid": "out_5.jsonl:28", "pid": "P_BUILDS_ON", "why": "Model TF conv... Llama-3.2-1B, Llama-3.2-3B, Llama-3.1-8B"}
+{"sid": "out_5.jsonl:29", "pid": "P_BUILDS_ON", "why": "Model... Llama-3.2-1B, Llama-3.2-3B tested"}
+{"sid": "out_5.jsonl:30", "pid": "UNCERTAIN", "why": "T5 not mentioned in contexts provided"}
+{"sid": "out_5.jsonl:31", "pid": "P_EVALUATES_ON", "why": "Across Qwen3 on ALFWorld"}
+{"sid": "out_5.jsonl:32", "pid": "P_BUILDS_ON", "why": "under group-normalized RL (GRPO)"}
+{"sid": "out_5.jsonl:33", "pid": "P_COMPARES_TO", "why": "st-Greek-BERT in results table"}
+{"sid": "out_5.jsonl:34", "pid": "P_EVALUATES_ON", "why": "We present CUP, a Greek book retrieval benchmark"}
+{"sid": "out_5.jsonl:35", "pid": "P_COMPARES_TO", "why": "Llama-Krikri-8B-Instruct in results"}
+{"sid": "out_5.jsonl:36", "pid": "P_COMPARES_TO", "why": "Qwen3-8B in results"}
+{"sid": "out_5.jsonl:37", "pid": "P_BUILDS_ON", "why": "We train the model using 8-bit Adam"}

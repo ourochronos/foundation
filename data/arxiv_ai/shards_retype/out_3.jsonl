@@ -1,0 +1,60 @@
+{"sid": "out_12.jsonl:34", "pid": "P_EVALUATES_ON", "why": "Validation focuses on Qwen2-1.5B-Instruct; explicit test set usage"}
+{"sid": "out_12.jsonl:35", "pid": "P_EVALUATES_ON", "why": "Validation focuses on TinyLlama-1.1B; explicit test set usage"}
+{"sid": "out_12.jsonl:36", "pid": "DROP", "why": "PINN discussed as related work and prior approach, not adopted by this paper"}
+{"sid": "out_12.jsonl:37", "pid": "DROP", "why": "Chain-of-Thought mentioned as existing category of methods, background only"}
+{"sid": "out_12.jsonl:38", "pid": "P_EVALUATES_ON", "why": "We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO"}
+{"sid": "out_12.jsonl:39", "pid": "P_EVALUATES_ON", "why": "We evaluate HexLogicAgent on five logical reasoning benchmarks: ProntoQA"}
+{"sid": "out_12.jsonl:40", "pid": "P_EVALUATES_ON", "why": "We evaluate HexLogicAgent on five logical reasoning benchmarks: ProofWriter"}
+{"sid": "out_12.jsonl:41", "pid": "P_EVALUATES_ON", "why": "We evaluate HexLogicAgent on five logical reasoning benchmarks: ProverQA"}
+{"sid": "out_12.jsonl:42", "pid": "P_EVALUATES_ON", "why": "We evaluate HexLogicAgent on five logical reasoning benchmarks: RepublicQA"}
+{"sid": "out_12.jsonl:43", "pid": "P_BUILDS_ON", "why": "we integrate RAG to allow the model to explicitly access external knowledge"}
+{"sid": "out_12.jsonl:44", "pid": "P_EVALUATES_ON", "why": "We evaluate the proposed MA-DAR framework on ICEWS14s benchmark dataset"}
+{"sid": "out_12.jsonl:45", "pid": "P_EVALUATES_ON", "why": "We evaluate the proposed MA-DAR framework on ICEWS18 benchmark dataset"}
+{"sid": "out_12.jsonl:46", "pid": "P_EVALUATES_ON", "why": "We evaluate the proposed MA-DAR framework on ICEWS05-15 benchmark dataset"}
+{"sid": "out_12.jsonl:47", "pid": "P_EVALUATES_ON", "why": "We evaluate the proposed MA-DAR framework on GDELT benchmark dataset"}
+{"sid": "out_12.jsonl:48", "pid": "P_BUILDS_ON", "why": "we integrate it with diverse representative base encoders, including RE-GCN; backbone encoder"}
+{"sid": "out_12.jsonl:49", "pid": "P_BUILDS_ON", "why": "we integrate it with diverse representative base encoders, including TiRGN; backbone encoder"}
+{"sid": "out_12.jsonl:50", "pid": "P_BUILDS_ON", "why": "we integrate it with diverse representative base encoders, including LogCL; backbone encoder"}
+{"sid": "out_12.jsonl:51", "pid": "P_BUILDS_ON", "why": "SIREN adapts PAIR from jailbreak-prompt search to iterative web-source editing"}
+{"sid": "out_12.jsonl:52", "pid": "P_BUILDS_ON", "why": "We next present the construction for the Gumbel-max watermark as a representative example"}
+{"sid": "out_12.jsonl:53", "pid": "UNCERTAIN", "why": "Context provided is abstract fragment; no clear mention of MLM usage in contexts"}
+{"sid": "out_12.jsonl:54", "pid": "P_COMPARES_TO", "why": "NotebookLM compared as existing system; catch-n-repair presented as improvement"}
+{"sid": "out_14.jsonl:0", "pid": "P_EVALUATES_ON", "why": "evaluate on a closed-loop visuomotor driving task in CARLA autonomous driving simulator"}
+{"sid": "out_14.jsonl:1", "pid": "UNCERTAIN", "why": "Context is section heading only; insufficient evidence of transformer backbone use"}
+{"sid": "out_14.jsonl:2", "pid": "P_EVALUATES_ON", "why": "evaluated on GSM8K benchmark dataset"}
+{"sid": "out_14.jsonl:3", "pid": "P_EVALUATES_ON", "why": "evaluated on the HumanEval benchmark dataset"}
+{"sid": "out_14.jsonl:4", "pid": "P_EVALUATES_ON", "why": "evaluated on MBPP benchmark dataset"}
+{"sid": "out_14.jsonl:5", "pid": "P_EVALUATES_ON", "why": "evaluated on IFEval benchmark dataset"}
+{"sid": "out_14.jsonl:6", "pid": "P_EVALUATES_ON", "why": "evaluated on the instruction-following subset of LiveBench"}
+{"sid": "out_14.jsonl:7", "pid": "P_EVALUATES_ON", "why": "evaluated on MATH-500 benchmark dataset"}
+{"sid": "out_14.jsonl:8", "pid": "P_EVALUATES_ON", "why": "models are trained on a subset of OpenMathInstruct-2"}
+{"sid": "out_14.jsonl:9", "pid": "P_EVALUATES_ON", "why": "models are trained on a subset of OpenCodeInstruct"}
+{"sid": "out_14.jsonl:10", "pid": "DROP", "why": "Background about field: statistics on models available; not about using HuggingFace"}
+{"sid": "out_14.jsonl:11", "pid": "P_EVALUATES_ON", "why": "models are trained on the Rank1 dataset"}
+{"sid": "out_14.jsonl:12", "pid": "P_EVALUATES_ON", "why": "evaluated on the pairwise ranking benchmark NevIR"}
+{"sid": "out_14.jsonl:13", "pid": "P_EVALUATES_ON", "why": "models are trained on the instruction subset from Tulu-3-SFT"}
+{"sid": "out_14.jsonl:14", "pid": "P_EVALUATES_ON", "why": "trained on task Knights and Knaves and evaluated on the same task"}
+{"sid": "out_14.jsonl:15", "pid": "P_BUILDS_ON", "why": "We adopt the open-source models Llama-3.2-3B as the base models"}
+{"sid": "out_14.jsonl:16", "pid": "P_BUILDS_ON", "why": "We adopt the open-source models Llama-3.1-8B as the base models"}
+{"sid": "out_14.jsonl:17", "pid": "P_BUILDS_ON", "why": "We adopt the open-source models Llama-3.X as the base models"}
+{"sid": "out_14.jsonl:18", "pid": "P_BUILDS_ON", "why": "Mistral-Small-3-24B adopted as the base models"}
+{"sid": "out_14.jsonl:19", "pid": "P_BUILDS_ON", "why": "Mistral-Small-3-24B adopted as the base models"}
+{"sid": "out_14.jsonl:20", "pid": "P_BUILDS_ON", "why": "we employ three representative RL algorithms: PPO"}
+{"sid": "out_14.jsonl:21", "pid": "P_BUILDS_ON", "why": "GRPO as the optimization algorithm employed for training"}
+{"sid": "out_14.jsonl:22", "pid": "P_BUILDS_ON", "why": "training paradigms classified as supervised fine-tuning (SFT) and RL; both employed"}
+{"sid": "out_14.jsonl:23", "pid": "P_BUILDS_ON", "why": "reinforcement learning (RL) is one of the training paradigms employed"}
+{"sid": "out_14.jsonl:24", "pid": "P_EVALUATES_ON", "why": "Multilingual RAG performance evaluated on XQuAD across language combinations"}
+{"sid": "out_14.jsonl:25", "pid": "P_EVALUATES_ON", "why": "Performance results on BELEBELE benchmark dataset"}
+{"sid": "out_14.jsonl:26", "pid": "P_EVALUATES_ON", "why": "MIRACL used for training and evaluation with 343K instances"}
+{"sid": "out_14.jsonl:27", "pid": "P_EVALUATES_ON", "why": "We use MMARCO as training datasets with 1.6M instances"}
+{"sid": "out_14.jsonl:28", "pid": "P_EVALUATES_ON", "why": "Performance table results on XGLUE benchmark"}
+{"sid": "out_14.jsonl:29", "pid": "P_EVALUATES_ON", "why": "Performance table results on HUME benchmark"}
+{"sid": "out_14.jsonl:30", "pid": "P_EVALUATES_ON", "why": "Performance table results on MLDR benchmark"}
+{"sid": "out_14.jsonl:31", "pid": "DROP", "why": "Qwen2.5 used as LLM to generate answers for evaluation; incidental tool role"}
+{"sid": "out_14.jsonl:32", "pid": "P_BUILDS_ON", "why": "Qwen3-Reranker-4B is used as the teacher model during training"}
+{"sid": "out_14.jsonl:33", "pid": "P_BUILDS_ON", "why": "Qwen3-Reranker-4B is used as the teacher model for knowledge distillation"}
+{"sid": "out_14.jsonl:34", "pid": "DROP", "why": "Llama-3.3 used as LLM to generate answers for evaluation; incidental tool role"}
+{"sid": "out_14.jsonl:35", "pid": "P_BUILDS_ON", "why": "LAMAR is initialized from the multilingual base encoder bge-m3-retromae"}
+{"sid": "out_14.jsonl:36", "pid": "P_BUILDS_ON", "why": "initialized from the multilingual base encoder bge-m3-retromae (BGE-M3 variant)"}
+{"sid": "out_14.jsonl:37", "pid": "P_COMPARES_TO", "why": "bge-reranker-v2-m3 shown in comparison results table as baseline"}
+{"sid": "out_14.jsonl:38", "pid": "P_COMPARES_TO", "why": "jina-reranker-v3 shown in comparison results table as baseline"}

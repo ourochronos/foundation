@@ -1,0 +1,60 @@
+{"sid": "out_16.jsonl:19", "pid": "P_EVALUATES_ON", "why": "we introduce TRACTA, a synthetic benchmark for temporal structural reasoning; The benchmark evaluates three tasks"}
+{"sid": "out_16.jsonl:20", "pid": "P_COMPARES_TO", "why": "we compare synthetic data augmentation against five baselines; we prompt three foundation models (GPT-4.1...)"}
+{"sid": "out_16.jsonl:21", "pid": "P_EVALUATES_ON", "why": "we fine-tuning Gemini-2.5-flash on the synthetic data and measuring translation performance on held-out test sets"}
+{"sid": "out_17.jsonl:0", "pid": "P_EVALUATES_ON", "why": "We evaluated AgentRCA on two complementary closed-loop industrial benchmarks. PRONTO is a real-world multiphase-flow facility"}
+{"sid": "out_17.jsonl:1", "pid": "P_EVALUATES_ON", "why": "The Tennessee Eastman Process (TEP) benchmark is a larger, more strongly coupled plant-wide chemical process used for evaluation"}
+{"sid": "out_17.jsonl:2", "pid": "P_COMPARES_TO", "why": "We therefore evaluate AgentRCA against widely established supervised fault diagnosis models: LightGBM"}
+{"sid": "out_17.jsonl:3", "pid": "P_COMPARES_TO", "why": "We evaluate AgentRCA against widely established supervised fault diagnosis models: MiniRocket"}
+{"sid": "out_17.jsonl:4", "pid": "DROP", "why": "Analysis of KV cache behavior in llama3 to illustrate problem motivation; not evaluation of own system on this resource"}
+{"sid": "out_17.jsonl:5", "pid": "P_COMPARES_TO", "why": "StreamingLLM retains only recent tokens and a fixed number of initial attention sink tokens, avoiding expensive scoring operations"}
+{"sid": "out_17.jsonl:6", "pid": "P_COMPARES_TO", "why": "H2O maintains a global importance score for each token by accumulating attention weights across all decoding steps"}
+{"sid": "out_17.jsonl:7", "pid": "P_COMPARES_TO", "why": "DuoAttention separates attention heads into retrieval and streaming types"}
+{"sid": "out_17.jsonl:8", "pid": "P_COMPARES_TO", "why": "SepLLM segments sequences into compressed representations, and Longformer introduces local-global attention patterns"}
+{"sid": "out_17.jsonl:9", "pid": "P_COMPARES_TO", "why": "recent research has explored various importance-based strategies to reduce KV cache footprint as competing approaches"}
+{"sid": "out_17.jsonl:10", "pid": "P_EVALUATES_ON", "why": "PRISM provides public external validation across values-guided, controversy-guided, and unguided protocols"}
+{"sid": "out_17.jsonl:11", "pid": "P_EVALUATES_ON", "why": "We evaluate eleven configurations from ten proprietary VLMs. They are Claude Opus 4.6"}
+{"sid": "out_17.jsonl:12", "pid": "P_EVALUATES_ON", "why": "We evaluate eleven configurations from ten proprietary VLMs. Claude Sonnet 5"}
+{"sid": "out_17.jsonl:13", "pid": "P_EVALUATES_ON", "why": "We evaluate eleven configurations from ten proprietary VLMs. GPT 5.4"}
+{"sid": "out_17.jsonl:14", "pid": "P_EVALUATES_ON", "why": "We evaluate eleven configurations from ten proprietary VLMs. Gemini 3.1 Pro"}
+{"sid": "out_17.jsonl:15", "pid": "P_EVALUATES_ON", "why": "We evaluate eleven configurations from ten proprietary VLMs. Qwen 3.7 Plus"}
+{"sid": "out_17.jsonl:16", "pid": "P_COMPARES_TO", "why": "3D understanding benchmarks... ScanQA, SQA3D, and Spatial457 with probes such as SpatialVLM shown in benchmark coverage table"}
+{"sid": "out_17.jsonl:17", "pid": "P_COMPARES_TO", "why": "SQA3D (Ma et al., 2023) is an existing 3D VQA benchmark compared in capability coverage analysis"}
+{"sid": "out_17.jsonl:18", "pid": "P_BUILDS_ON", "why": "All configurations drive a headless Blender through the same Model Context Protocol (MCP) interface; benchmark built on Blender"}
+{"sid": "out_17.jsonl:19", "pid": "P_EVALUATES_ON", "why": "Deep MI encoders... all ship as plausible frozen trunks; Does one Personalizer API run on heterogeneous frozen trunks"}
+{"sid": "out_17.jsonl:20", "pid": "P_EVALUATES_ON", "why": "EEG Conformer... all ship as plausible frozen trunks evaluated with the Personalizer API"}
+{"sid": "out_17.jsonl:21", "pid": "P_EVALUATES_ON", "why": "ATCNet... (among others) all ship as plausible frozen trunks for Personalizer evaluation"}
+{"sid": "out_17.jsonl:22", "pid": "P_EVALUATES_ON", "why": "The same Personalizer ladder runs on Hub REVE without a new API"}
+{"sid": "out_17.jsonl:23", "pid": "P_COMPARES_TO", "why": "treat fine-tune / PEFT as priced escape hatches; price the head against linear probe, point LoRA for comparison"}
+{"sid": "out_17.jsonl:24", "pid": "P_EVALUATES_ON", "why": "Dataset Acc frozen Acc head results table shows BNCI with accuracy 0.523-0.550"}
+{"sid": "out_17.jsonl:25", "pid": "P_EVALUATES_ON", "why": "Dataset results table shows Zhou dataset with accuracy 0.393-0.540"}
+{"sid": "out_17.jsonl:26", "pid": "P_EVALUATES_ON", "why": "Dataset results table shows Kumar dataset with accuracy 0.490-0.548"}
+{"sid": "out_17.jsonl:27", "pid": "P_BUILDS_ON", "why": "we incorporate an ARIMA forecaster, without requiring continuous human oversight; ARIMA-Based Forecasting Model core component"}
+{"sid": "out_17.jsonl:28", "pid": "P_EVALUATES_ON", "why": "V-A RPI V-B JETSON VI Evaluation: framework evaluated on RPI edge resource platform"}
+{"sid": "out_17.jsonl:29", "pid": "P_EVALUATES_ON", "why": "V-A RPI V-B JETSON VI Evaluation: framework evaluated on Jetson edge resource platform"}
+{"sid": "out_17.jsonl:30", "pid": "P_COMPARES_TO", "why": "Recent optimizers with matrix constraints, such as MuonH restrict matrix-valued parameters to norm spheres"}
+{"sid": "out_17.jsonl:31", "pid": "UNCERTAIN", "why": "*** no mention located *** — cannot determine relation without evidence in contexts"}
+{"sid": "out_17.jsonl:32", "pid": "P_BUILDS_ON", "why": "Large pretrained audio models such as CLAP (Wu et al., 2023)... map sound into high-dimensional embedding spaces"}
+{"sid": "out_17.jsonl:33", "pid": "P_BUILDS_ON", "why": "Large pretrained audio models such as... AST (Gong et al., 2021)... map sound into embeddings"}
+{"sid": "out_17.jsonl:34", "pid": "P_BUILDS_ON", "why": "Large pretrained audio models such as... BEATs (Chen et al., 2023) map sound into high-dimensional embedding spaces"}
+{"sid": "out_17.jsonl:35", "pid": "DROP", "why": "Routing has consequently become a central primitive for LLM deployment — generic field background, not a specific resource used"}
+{"sid": "out_17.jsonl:36", "pid": "P_BUILDS_ON", "why": "Prior work has used variational auto-encoders and diffusion models for generating diverse initial guesses for optimization"}
+{"sid": "out_17.jsonl:37", "pid": "P_BUILDS_ON", "why": "Prior work has used variational auto-encoders and diffusion models for this purpose in non-convex trajectory optimization"}
+{"sid": "out_18.jsonl:0", "pid": "P_BUILDS_ON", "why": "ADAPT-VQE was introduced to address the circuit depth problem; paper builds on this strategy"}
+{"sid": "out_18.jsonl:1", "pid": "P_BUILDS_ON", "why": "a compact Gemma 3-based model with no prior pretraining used as one of two complementary transformer architectures"}
+{"sid": "out_18.jsonl:2", "pid": "P_BUILDS_ON", "why": "a larger Nemotron 2 Nano model pretrained on a general-purpose dataset for circuit generation"}
+{"sid": "out_18.jsonl:3", "pid": "UNCERTAIN", "why": "QAOA mentioned in related work context; unclear whether paper itself studies QAOA parameter transfer"}
+{"sid": "out_18.jsonl:4", "pid": "P_COMPARES_TO", "why": "The Variational Quantum Eigensolver (VQE) has emerged as the leading paradigm for near-term quantum chemistry"}
+{"sid": "out_18.jsonl:5", "pid": "P_EVALUATES_ON", "why": "MineValiCoder achieves Pass@1 scores of 96.34% on HumanEval benchmark"}
+{"sid": "out_18.jsonl:6", "pid": "P_EVALUATES_ON", "why": "MineValiCoder achieves Pass@1 scores of 87.40% on MBPP benchmark"}
+{"sid": "out_18.jsonl:7", "pid": "P_EVALUATES_ON", "why": "MineValiCoder achieves Pass@1 scores of 64.00% on APPS benchmark"}
+{"sid": "out_18.jsonl:8", "pid": "P_EVALUATES_ON", "why": "MineValiCoder achieves Pass@1 scores of 51.33% on LiveCodeBench benchmark"}
+{"sid": "out_18.jsonl:9", "pid": "P_EVALUATES_ON", "why": "experiments on four LLMs with different scales, including GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B"}
+{"sid": "out_18.jsonl:10", "pid": "P_EVALUATES_ON", "why": "experiments on four LLMs with different scales, including... Llama3.1-8B"}
+{"sid": "out_18.jsonl:11", "pid": "P_EVALUATES_ON", "why": "experiments on four LLMs with different scales, including... Qwen2.5-Coder-7B"}
+{"sid": "out_18.jsonl:12", "pid": "DROP", "why": "CodeLlama is further trained on code-centric corpora — related work discussion of existing code models, not used in this paper"}
+{"sid": "out_18.jsonl:13", "pid": "DROP", "why": "StarCoder is trained on large-scale permissively licensed source code — related work background, not applied in this work"}
+{"sid": "out_18.jsonl:14", "pid": "P_EVALUATES_ON", "why": "We evaluate this idea on four datasets from the JUA legal retrieval ecosystem: JUA-Juris"}
+{"sid": "out_18.jsonl:15", "pid": "P_EVALUATES_ON", "why": "We evaluate this idea on four datasets from the JUA legal retrieval ecosystem: JurisTCU"}
+{"sid": "out_18.jsonl:16", "pid": "P_EVALUATES_ON", "why": "We evaluate this idea on four datasets from the JUA legal retrieval ecosystem: NormasTCU"}
+{"sid": "out_18.jsonl:17", "pid": "P_EVALUATES_ON", "why": "We evaluate this idea on four datasets from the JUA legal retrieval ecosystem: BR-TaxQA"}
+{"sid": "out_18.jsonl:18", "pid": "P_COMPARES_TO", "why": "late-interaction models such as ColBERT preserve more granular matching signals inside the retrieval model"}

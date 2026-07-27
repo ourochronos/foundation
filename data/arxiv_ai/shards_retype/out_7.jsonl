@@ -1,0 +1,60 @@
+{"sid": "out_18.jsonl:19", "pid": "P_BUILDS_ON", "why": "kappa-LoRA improves LoRA; 'existing LoRA methods still leave considerable room for improvement'"}
+{"sid": "out_18.jsonl:20", "pid": "P_EVALUATES_ON", "why": "HumanEval appears as results-table column header; 'evaluate on HumanEval'"}
+{"sid": "out_18.jsonl:21", "pid": "P_EVALUATES_ON", "why": "MBPP in results table; 'HumanEval and MBPP use a code fine-tuned model'"}
+{"sid": "out_18.jsonl:22", "pid": "P_EVALUATES_ON", "why": "GSM8K in results table; 'benchmark their mathematical reasoning capabilities on GSM8K'"}
+{"sid": "out_18.jsonl:23", "pid": "P_COMPARES_TO", "why": "GARCH baseline; 'showing better results than GARCH baseline on 8/16 symbols'"}
+{"sid": "out_18.jsonl:24", "pid": "P_EVALUATES_ON", "why": "TUEV evaluation dataset; 'test the method on three complementary datasets... TUEV benchmark'"}
+{"sid": "out_18.jsonl:25", "pid": "P_EVALUATES_ON", "why": "Pendigits matrix classification task; 'We evaluate the QSMs on two matrix representations of Pendigits'"}
+{"sid": "out_3.jsonl:0", "pid": "P_EVALUATES_ON", "why": "Challenge submission; 'The annual SISAP Indexing Challenge benchmarks ANNS approaches'; 'our submissions for the 2026 edition'"}
+{"sid": "out_3.jsonl:1", "pid": "P_EVALUATES_ON", "why": "Embedding model source; 'vectors produced from a BGE-M3 embedding model' used for evaluation task"}
+{"sid": "out_3.jsonl:2", "pid": "P_EVALUATES_ON", "why": "Feature source; 'Task 2 evaluates Maximum Inner Product Search (MIPS) on ... Llama-3.2-8B features'"}
+{"sid": "out_3.jsonl:3", "pid": "P_BUILDS_ON", "why": "DEG algorithm adopted; 'Dynamic Exploration Graph (DEG) [ 5 ] is explicitly optimized for this task'"}
+{"sid": "out_3.jsonl:4", "pid": "P_BUILDS_ON", "why": "EVP quantization adopted; 'FP16 vectors are quantized to 2-bit Equi-Voronoi Polytopes (EVP)'"}
+{"sid": "out_3.jsonl:5", "pid": "P_COMPARES_TO", "why": "Comparison baseline; 'the widely used HNSW [ 7 ] builds rapidly... In contrast, the Dynamic Exploration Graph (DEG)'"}
+{"sid": "out_3.jsonl:6", "pid": "P_COMPARES_TO", "why": "Representative baseline; 'We compare our framework with... CoordNet'; comparison section"}
+{"sid": "out_3.jsonl:7", "pid": "P_COMPARES_TO", "why": "Representative baseline; 'We compare our framework with... NeurComp'; comparison section"}
+{"sid": "out_3.jsonl:8", "pid": "P_COMPARES_TO", "why": "Representative baseline; 'representative INR architectures, including... SIREN'"}
+{"sid": "out_3.jsonl:9", "pid": "P_COMPARES_TO", "why": "Mixture-of-experts baseline; 'mixture-of-experts INRs, such as MoE-INR'; 'to enable a comparison'"}
+{"sid": "out_3.jsonl:10", "pid": "P_COMPARES_TO", "why": "Mixture-of-experts baseline; 'mixture-of-experts INRs, such as... Switch-NeRF'"}
+{"sid": "out_3.jsonl:11", "pid": "P_COMPARES_TO", "why": "Mixture-of-experts baseline; 'mixture-of-experts INRs, such as... Neural Experts'"}
+{"sid": "out_3.jsonl:12", "pid": "P_COMPARES_TO", "why": "Compression baseline; 'three typical solutions: ZFP'; 'strong non-learning baselines in our evaluation'"}
+{"sid": "out_3.jsonl:13", "pid": "P_COMPARES_TO", "why": "Compression baseline; 'three typical solutions: ZFP, SZ3'; 'strong non-learning baselines'"}
+{"sid": "out_3.jsonl:14", "pid": "P_COMPARES_TO", "why": "Compression baseline; 'three typical solutions... TTHRESH'; 'strong non-learning baselines'"}
+{"sid": "out_3.jsonl:15", "pid": "P_EVALUATES_ON", "why": "Evaluation metric; 'We use voxel-level metrics to evaluate numerical fidelity'; 'Learned Perceptual Image Patch Similarity (LPIPS)'"}
+{"sid": "out_3.jsonl:16", "pid": "P_EVALUATES_ON", "why": "Evaluation metric; 'These include the Peak Signal-to-Noise Ratio (PSNR)'"}
+{"sid": "out_3.jsonl:17", "pid": "P_EVALUATES_ON", "why": "Evaluation task; 'One naturalistic task on a pinned Apache Camel checkout'; 'implement the reverse option'"}
+{"sid": "out_3.jsonl:18", "pid": "DROP", "why": "Survey background discussion; 'The review traces this coupled landscape from foundational redundancy principles in Vision Transformers'; related-work mention"}
+{"sid": "out_3.jsonl:19", "pid": "P_EVALUATES_ON", "why": "Production framework evaluated; 'GABench covers 580 scenarios... evaluated on LangChain'"}
+{"sid": "out_3.jsonl:20", "pid": "P_EVALUATES_ON", "why": "Production framework evaluated; 'evaluated on... LlamaIndex'"}
+{"sid": "out_3.jsonl:21", "pid": "P_EVALUATES_ON", "why": "Production framework evaluated; 'evaluated on... Vectara'"}
+{"sid": "out_3.jsonl:22", "pid": "P_EVALUATES_ON", "why": "Model benchmarked; 'We benchmark six frontier models—Claude Opus 4.5'"}
+{"sid": "out_3.jsonl:23", "pid": "DROP", "why": "LLM judge role; 'scored by a Claude Sonnet 4.5 judge'; incidental evaluation tool, not benchmarked subject"}
+{"sid": "out_3.jsonl:24", "pid": "P_EVALUATES_ON", "why": "Model benchmarked; 'We benchmark six frontier models... GPT-5.2 Pro'"}
+{"sid": "out_3.jsonl:25", "pid": "P_EVALUATES_ON", "why": "Model benchmarked; 'We benchmark six frontier models... GPT-OSS-120B'"}
+{"sid": "out_3.jsonl:26", "pid": "P_EVALUATES_ON", "why": "Model benchmarked; 'We benchmark six frontier models... Gemini-3-Pro'"}
+{"sid": "out_3.jsonl:27", "pid": "P_EVALUATES_ON", "why": "Model benchmarked; 'We benchmark six frontier models... DeepSeek-V3.2'"}
+{"sid": "out_3.jsonl:28", "pid": "P_EVALUATES_ON", "why": "Model benchmarked; 'We benchmark six frontier models... Qwen3-Max'"}
+{"sid": "out_3.jsonl:29", "pid": "P_EVALUATES_ON", "why": "Utility for data generation; 'use Qwen3.6-plus to generate a short scene description'; part of experimental pipeline"}
+{"sid": "out_3.jsonl:30", "pid": "P_EVALUATES_ON", "why": "Vision-language model probed; 'study this on a 3D chest vision-language model ( Pillar-0 ) by probing its frozen vision embeddings'"}
+{"sid": "out_3.jsonl:31", "pid": "P_EVALUATES_ON", "why": "Model evaluated; 'we perform circuit discovery via EAP-IG on four open-weight language models: GPT-2 Small'"}
+{"sid": "out_3.jsonl:32", "pid": "P_EVALUATES_ON", "why": "Model evaluated; 'on four open-weight language models: Llama 3.2 3B'"}
+{"sid": "out_3.jsonl:33", "pid": "P_EVALUATES_ON", "why": "Model evaluated; 'on four open-weight language models... Gemma 3 4B'"}
+{"sid": "out_3.jsonl:34", "pid": "P_EVALUATES_ON", "why": "Model evaluated; 'on four open-weight language models... Qwen 3 4B'"}
+{"sid": "out_3.jsonl:35", "pid": "P_COMPARES_TO", "why": "Baseline SSM; 'outperforming the Mamba baselines in the principal comparisons'"}
+{"sid": "out_3.jsonl:36", "pid": "P_COMPARES_TO", "why": "Comparison baseline; 'remaining competitive with the Transformer'"}
+{"sid": "out_3.jsonl:37", "pid": "P_BUILDS_ON", "why": "Base algorithm; 'Adaptive Boosting (AdaBoost) has played a central role'; ADABORD adapts it for ordinal classification"}
+{"sid": "out_3.jsonl:38", "pid": "P_BUILDS_ON", "why": "Base learner; 'the decision tree classifier... which is used as base classifier'; 'Decision trees are the most commonly used base learners for boosting'"}
+{"sid": "out_3.jsonl:39", "pid": "P_EVALUATES_ON", "why": "Model trained for analysis; 'Training loss trajectories of a 16-layer, 16-head 187M Transformer on a 100B-token corpus'"}
+{"sid": "out_3.jsonl:40", "pid": "P_EVALUATES_ON", "why": "Model trained for analysis; 'ResNet-50 trained on the CIFAR-100 dataset'"}
+{"sid": "out_3.jsonl:41", "pid": "P_EVALUATES_ON", "why": "Evaluation dataset; 'ResNet-50 trained on the CIFAR-100 dataset'"}
+{"sid": "out_3.jsonl:42", "pid": "P_EVALUATES_ON", "why": "Summarization model evaluated; 'generate hundred summaries using Llama summarizer'"}
+{"sid": "out_3.jsonl:43", "pid": "P_EVALUATES_ON", "why": "Evaluation metric; 'we compute BERTScore for each generated summary'"}
+{"sid": "out_3.jsonl:44", "pid": "P_COMPARES_TO", "why": "Baseline model; 'We compare our EmoAgent-R1 with the following baselines: ... Video-LLaVA'"}
+{"sid": "out_3.jsonl:45", "pid": "P_COMPARES_TO", "why": "Baseline model; 'baselines: ... PandaGPT'"}
+{"sid": "out_3.jsonl:46", "pid": "P_COMPARES_TO", "why": "Baseline model; 'baselines: ... Video-ChatGPT'"}
+{"sid": "out_3.jsonl:47", "pid": "P_COMPARES_TO", "why": "Baseline model; 'baselines: ... VideoChat2'"}
+{"sid": "out_3.jsonl:48", "pid": "P_COMPARES_TO", "why": "Baseline model; 'baselines: ... LLaMA-VID'"}
+{"sid": "out_3.jsonl:49", "pid": "P_EVALUATES_ON", "why": "Benchmark adopted; 'we adopt MER-UniBench as the benchmark'; covers evaluation metrics"}
+{"sid": "out_3.jsonl:50", "pid": "P_BUILDS_ON", "why": "Algorithm adopted; 'The Formulation of RL with GRPO'; 'we propose a novel Progressive Group-Relative Policy Optimization (P-GRPO)'"}
+{"sid": "out_3.jsonl:51", "pid": "P_COMPARES_TO", "why": "Frontier reference; 'GPT-5-mini... are hosted-API frontier references'; performance table comparison"}
+{"sid": "out_3.jsonl:52", "pid": "P_COMPARES_TO", "why": "Frontier reference; 'DeepSeek-V4-flash... are hosted-API frontier references'; performance table"}
