@@ -1,0 +1,452 @@
+[
+ {
+  "page": "arxiv:2106.09685v2",
+  "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+  "abstract": "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation ",
+  "current_subjects": [
+   "LoRA"
+  ],
+  "n_claims": 4
+ },
+ {
+  "page": "arxiv:2303.08774v6",
+  "title": "GPT-4 Technical Report",
+  "abstract": "We report the development of GPT-4, a large-scale, multimodal model which can accept image and text inputs and produce text outputs. While less capable than humans in many real-world scenarios, GPT-4 exhibits human-level performance on various professional and academic benchmarks, including passing a simulated bar exam with a score around the top 10% of test takers. GPT-4 is a Transformer-based model pre-trained to predict the next token in a document. The post-training alignment process results in improved performance on measures of factuality and adherence to desired behavior. A core component of this project was developing infrastructure and optimization methods that behave predictably across a wide range of scales. This allowed us to accurately predict some aspects of GPT-4's performance based on models trained with no more than 1/1,000th the compute of GPT-4.",
+  "current_subjects": [
+   "GPT-4"
+  ],
+  "n_claims": 8
+ },
+ {
+  "page": "arxiv:2304.08485v2",
+  "title": "Visual Instruction Tuning",
+  "abstract": "Instruction tuning large language models (LLMs) using machine-generated instruction-following data has improved zero-shot capabilities on new tasks, but the idea is less explored in the multimodal field. In this paper, we present the first attempt to use language-only GPT-4 to generate multimodal language-image instruction-following data. By instruction tuning on such generated data, we introduce LLaVA: Large Language and Vision Assistant, an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding.Our early experiments show that LLaVA demonstrates impressive multimodel chat abilities, sometimes exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and yields a 85.1% relative score compared with GPT-4 on a synthetic multimodal instruction-following dataset. When fine-tuned on Science QA, the synergy of LLaVA and GPT-4 achieves a new state-of-the-art accuracy of 92.53%. We make GPT-4 generated visual instruction tuning data, our model and code base publicly available.",
+  "current_subjects": [
+   "LLaVA"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2306.05685v4",
+  "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+  "abstract": "Evaluating large language model (LLM) based chat assistants is challenging due to their broad capabilities and the inadequacy of existing benchmarks in measuring human preferences. To address this, we explore using strong LLMs as judges to evaluate these models on more open-ended questions. We examine the usage and limitations of LLM-as-a-judge, including position, verbosity, and self-enhancement biases, as well as limited reasoning ability, and propose solutions to mitigate some of them. We then verify the agreement between LLM judges and human preferences by introducing two benchmarks: MT-bench, a multi-turn question set; and Chatbot Arena, a crowdsourced battle platform. Our results reveal that strong LLM judges like GPT-4 can match both controlled and crowdsourced human preferences well, achieving over 80% agreement, the same level of agreement between humans. Hence, LLM-as-a-judge is a scalable and explainable way to approximate human preferences, which are otherwise very expensive to obtain. Additionally, we show our benchmark and traditional benchmarks complement each other by",
+  "current_subjects": [
+   "LLM-as-a-Judge"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2308.10248v5",
+  "title": "Steering Language Models With Activation Engineering",
+  "abstract": "Prompt engineering and finetuning aim to maximize language model performance on a given metric (like toxicity reduction). However, these methods do not fully elicit a model's capabilities. To reduce this gap, we introduce activation engineering: the inference-time modification of activations in order to control (or steer) model outputs. Specifically, we introduce the Activation Addition (ActAdd) technique, which contrasts the intermediate activations on prompt pairs (such as \"Love\" versus \"Hate\") to compute a steering vector (Subramani et al. 2022). By tactically adding in e.g. the \"Love\" - \"Hate\" steering vector during the forward pass, we achieve SOTA on negative-to-positive sentiment shift and detoxification using models including LLaMA-3 and OPT. ActAdd yields inference-time control over high-level output properties (like topic and sentiment) while preserving performance on off-target tasks. ActAdd is lightweight: it does not require any machine optimization and works with a single pair of data points, which enables rapid iteration over steering. ActAdd demonstrates the power of ",
+  "current_subjects": [
+   "Activation Addition"
+  ],
+  "n_claims": 4
+ },
+ {
+  "page": "arxiv:2308.12950v3",
+  "title": "Code Llama: Open Foundation Models for Code",
+  "abstract": "We release Code Llama, a family of large language models for code based on Llama 2 providing state-of-the-art performance among open models, infilling capabilities, support for large input contexts, and zero-shot instruction following ability for programming tasks. We provide multiple flavors to cover a wide range of applications: foundation models (Code Llama), Python specializations (Code Llama - Python), and instruction-following models (Code Llama - Instruct) with 7B, 13B, 34B and 70B parameters each. All models are trained on sequences of 16k tokens and show improvements on inputs with up to 100k tokens. 7B, 13B and 70B Code Llama and Code Llama - Instruct variants support infilling based on surrounding content. Code Llama reaches state-of-the-art performance among open models on several code benchmarks, with scores of up to 67% and 65% on HumanEval and MBPP, respectively. Notably, Code Llama - Python 7B outperforms Llama 2 70B on HumanEval and MBPP, and all our models outperform every other publicly available model on MultiPL-E. We release Code Llama under a permissive license ",
+  "current_subjects": [
+   "Code Llama"
+  ],
+  "n_claims": 4
+ },
+ {
+  "page": "arxiv:2310.01405v4",
+  "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
+  "abstract": "In this paper, we identify and characterize the emerging area of representation engineering (RepE), an approach to enhancing the transparency of AI systems that draws on insights from cognitive neuroscience. RepE places population-level representations, rather than neurons or circuits, at the center of analysis, equipping us with novel methods for monitoring and manipulating high-level cognitive phenomena in deep neural networks (DNNs). We provide baselines and an initial analysis of RepE techniques, showing that they offer simple yet effective solutions for improving our understanding and control of large language models. We showcase how these methods can provide traction on a wide range of safety-relevant problems, including honesty, harmlessness, power-seeking, and more, demonstrating the promise of top-down transparency research. We hope that this work catalyzes further exploration of RepE and fosters advancements in the transparency and safety of AI systems.",
+  "current_subjects": [
+   "Representation Engineering"
+  ],
+  "n_claims": 5
+ },
+ {
+  "page": "arxiv:2310.06825v1",
+  "title": "Mistral 7B",
+  "abstract": "We introduce Mistral 7B v0.1, a 7-billion-parameter language model engineered for superior performance and efficiency. Mistral 7B outperforms Llama 2 13B across all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics, and code generation. Our model leverages grouped-query attention (GQA) for faster inference, coupled with sliding window attention (SWA) to effectively handle sequences of arbitrary length with a reduced inference cost. We also provide a model fine-tuned to follow instructions, Mistral 7B -- Instruct, that surpasses the Llama 2 13B -- Chat model both on human and automated benchmarks. Our models are released under the Apache 2.0 license.",
+  "current_subjects": [
+   "Mistral 7B"
+  ],
+  "n_claims": 11
+ },
+ {
+  "page": "arxiv:2312.00752v2",
+  "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+  "abstract": "Foundation models, now powering most of the exciting applications in deep learning, are almost universally based on the Transformer architecture and its core attention module. Many subquadratic-time architectures such as linear attention, gated convolution and recurrent models, and structured state space models (SSMs) have been developed to address Transformers' computational inefficiency on long sequences, but they have not performed as well as attention on important modalities such as language. We identify that a key weakness of such models is their inability to perform content-based reasoning, and make several improvements. First, simply letting the SSM parameters be functions of the input addresses their weakness with discrete modalities, allowing the model to selectively propagate or forget information along the sequence length dimension depending on the current token. Second, even though this change prevents the use of efficient convolutions, we design a hardware-aware parallel algorithm in recurrent mode. We integrate these selective SSMs into a simplified end-to-end neural ne",
+  "current_subjects": [
+   "Mamba"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2312.11805v5",
+  "title": "Gemini: A Family of Highly Capable Multimodal Models",
+  "abstract": "This report introduces a new family of multimodal models, Gemini, that exhibit remarkable capabilities across image, audio, video, and text understanding. The Gemini family consists of Ultra, Pro, and Nano sizes, suitable for applications ranging from complex reasoning tasks to on-device memory-constrained use-cases. Evaluation on a broad range of benchmarks shows that our most-capable Gemini Ultra model advances the state of the art in 30 of 32 of these benchmarks - notably being the first model to achieve human-expert performance on the well-studied exam benchmark MMLU, and improving the state of the art in every one of the 20 multimodal benchmarks we examined. We believe that the new capabilities of the Gemini family in cross-modal reasoning and language understanding will enable a wide variety of use cases. We discuss our approach toward post-training and deploying Gemini models responsibly to users through services including Gemini, Gemini Advanced, Google AI Studio, and Cloud Vertex AI.",
+  "current_subjects": [
+   "Gemini"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2402.03300v3",
+  "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+  "abstract": "Mathematical reasoning poses a significant challenge for language models due to its complex and structured nature. In this paper, we introduce DeepSeekMath 7B, which continues pre-training DeepSeek-Coder-Base-v1.5 7B with 120B math-related tokens sourced from Common Crawl, together with natural language and code data. DeepSeekMath 7B has achieved an impressive score of 51.7% on the competition-level MATH benchmark without relying on external toolkits and voting techniques, approaching the performance level of Gemini-Ultra and GPT-4. Self-consistency over 64 samples from DeepSeekMath 7B achieves 60.9% on MATH. The mathematical reasoning capability of DeepSeekMath is attributed to two key factors: First, we harness the significant potential of publicly available web data through a meticulously engineered data selection pipeline. Second, we introduce Group Relative Policy Optimization (GRPO), a variant of Proximal Policy Optimization (PPO), that enhances mathematical reasoning abilities while concurrently optimizing the memory usage of PPO.",
+  "current_subjects": [
+   "DeepSeekMath"
+  ],
+  "n_claims": 7
+ },
+ {
+  "page": "arxiv:2407.10671v4",
+  "title": "Qwen2 Technical Report",
+  "abstract": "This report introduces the Qwen2 series, the latest addition to our large language models and large multimodal models. We release a comprehensive suite of foundational and instruction-tuned language models, encompassing a parameter range from 0.5 to 72 billion, featuring dense models and a Mixture-of-Experts model. Qwen2 surpasses most prior open-weight models, including its predecessor Qwen1.5, and exhibits competitive performance relative to proprietary models across diverse benchmarks on language understanding, generation, multilingual proficiency, coding, mathematics, and reasoning. The flagship model, Qwen2-72B, showcases remarkable performance: 84.2 on MMLU, 37.9 on GPQA, 64.6 on HumanEval, 89.5 on GSM8K, and 82.4 on BBH as a base language model. The instruction-tuned variant, Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench. Moreover, Qwen2 demonstrates robust multilingual capabilities, proficient in approximately 30 languages, spanning English, Chinese, Spanish, French, German, Arabic, Russian, Korean, Japanese, Thai, Vietnamese, and ",
+  "current_subjects": [
+   "Qwen2"
+  ],
+  "n_claims": 9
+ },
+ {
+  "page": "arxiv:2408.03314v1",
+  "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+  "abstract": "Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt? Answering this question has implications not only on the achievable performance of LLMs, but also on the future of LLM pretraining and how one should tradeoff inference-time and pre-training compute. Despite its importance, little research attempted to understand the scaling behaviors of various test-time inference methods. Moreover, current work largely provides negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models; and (2) updating the model's distribution over a response adaptively, given th",
+  "current_subjects": [
+   "test-time compute scaling"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2409.12186v3",
+  "title": "Qwen2.5-Coder Technical Report",
+  "abstract": "In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes six models: Qwen2.5-Coder-(0.5B/1.5B/3B/7B/14B/32B). As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable synthetic data generation, and balanced data mixing, Qwen2.5-Coder demonstrates impressive code generation capabilities while retaining general and math skills. These models have been evaluated on a wide range of code-related tasks, achieving state-of-the-art (SOTA) performance across more than 10 benchmarks, including code generation, completion, reasoning, and repair, consistently outperforming larger models of the same model size. We believe that the release of the Qwen2.5-Coder series will advance research in code intelligence and, with its permissive licensing, support wider adoption by developers in real-world applications.",
+  "current_subjects": [
+   "Qwen2.5-Coder"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2409.12191v2",
+  "title": "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution",
+  "abstract": "We present the Qwen2-VL Series, an advanced upgrade of the previous Qwen-VL models that redefines the conventional predetermined-resolution approach in visual processing. Qwen2-VL introduces the Naive Dynamic Resolution mechanism, which enables the model to dynamically process images of varying resolutions into different numbers of visual tokens. This approach allows the model to generate more efficient and accurate visual representations, closely aligning with human perceptual processes. The model also integrates Multimodal Rotary Position Embedding (M-RoPE), facilitating the effective fusion of positional information across text, images, and videos. We employ a unified paradigm for processing both images and videos, enhancing the model's visual perception capabilities. To explore the potential of large multimodal models, Qwen2-VL investigates the scaling laws for large vision-language models (LVLMs). By scaling both the model size-with versions at 2B, 8B, and 72B parameters-and the amount of training data, the Qwen2-VL Series achieves highly competitive performance. Notably, the Qw",
+  "current_subjects": [
+   "Qwen2-VL"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2412.19437v2",
+  "title": "DeepSeek-V3 Technical Report",
+  "abstract": "We present DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. To achieve efficient inference and cost-effective training, DeepSeek-V3 adopts Multi-head Latent Attention (MLA) and DeepSeekMoE architectures, which were thoroughly validated in DeepSeek-V2. Furthermore, DeepSeek-V3 pioneers an auxiliary-loss-free strategy for load balancing and sets a multi-token prediction training objective for stronger performance. We pre-train DeepSeek-V3 on 14.8 trillion diverse and high-quality tokens, followed by Supervised Fine-Tuning and Reinforcement Learning stages to fully harness its capabilities. Comprehensive evaluations reveal that DeepSeek-V3 outperforms other open-source models and achieves performance comparable to leading closed-source models. Despite its excellent performance, DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training. In addition, its training process is remarkably stable. Throughout the entire training process, we did not experience any irrecoverable loss spikes or perform any rollb",
+  "current_subjects": [
+   "DeepSeek-V3"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2501.13956v1",
+  "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+  "abstract": "We introduce Zep, a novel memory layer service for AI agents that outperforms the current state-of-the-art system, MemGPT, in the Deep Memory Retrieval (DMR) benchmark. Additionally, Zep excels in more comprehensive and challenging evaluations than DMR that better reflect real-world enterprise use cases. While existing retrieval-augmented generation (RAG) frameworks for large language model (LLM)-based agents are limited to static document retrieval, enterprise applications demand dynamic knowledge integration from diverse sources including ongoing conversations and business data. Zep addresses this fundamental limitation through its core component Graphiti -- a temporally-aware knowledge graph engine that dynamically synthesizes both unstructured conversational data and structured business data while maintaining historical relationships. In the DMR benchmark, which the MemGPT team established as their primary evaluation metric, Zep demonstrates superior performance (94.8% vs 93.4%). Beyond DMR, Zep's capabilities are further validated through the more challenging LongMemEval benchma",
+  "current_subjects": [
+   "Zep"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2502.01456v2",
+  "title": "Process Reinforcement through Implicit Rewards",
+  "abstract": "Dense process rewards have proven a more effective alternative to the sparse outcome-level rewards in the inference-time scaling of large language models (LLMs), particularly in tasks requiring complex multi-step reasoning. While dense rewards also offer an appealing choice for the reinforcement learning (RL) of LLMs since their fine-grained rewards have the potential to address some inherent issues of outcome rewards, such as training efficiency and credit assignment, this potential remains largely unrealized. This can be primarily attributed to the challenges of training process reward models (PRMs) online, where collecting high-quality process labels is prohibitively expensive, making them particularly vulnerable to reward hacking. To address these challenges, we propose PRIME (Process Reinforcement through IMplicit rEwards), which enables online PRM updates using only policy rollouts and outcome labels through implict process rewards. PRIME combines well with various advantage functions and forgoes the dedicated reward model training phrase that existing approaches require, subst",
+  "current_subjects": [
+   "PRIME"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2503.14476v2",
+  "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+  "abstract": "Inference scaling empowers LLMs with unprecedented reasoning ability, with reinforcement learning as the core technique to elicit complex reasoning. However, key technical details of state-of-the-art reasoning LLMs are concealed (such as in OpenAI o1 blog and DeepSeek R1 technical report), thus the community still struggles to reproduce their RL training results. We propose the $\\textbf{D}$ecoupled Clip and $\\textbf{D}$ynamic s$\\textbf{A}$mpling $\\textbf{P}$olicy $\\textbf{O}$ptimization ($\\textbf{DAPO}$) algorithm, and fully open-source a state-of-the-art large-scale RL system that achieves 50 points on AIME 2024 using Qwen2.5-32B base model. Unlike previous works that withhold training details, we introduce four key techniques of our algorithm that make large-scale LLM RL a success. In addition, we open-source our training code, which is built on the verl framework, along with a carefully curated and processed dataset. These components of our open-source system enhance reproducibility and support future research in large-scale LLM RL.",
+  "current_subjects": [
+   "DAPO"
+  ],
+  "n_claims": 4
+ },
+ {
+  "page": "arxiv:2503.20783v2",
+  "title": "Understanding R1-Zero-Like Training: A Critical Perspective",
+  "abstract": "DeepSeek-R1-Zero has shown that reinforcement learning (RL) at scale can directly enhance the reasoning capabilities of LLMs without supervised fine-tuning. In this work, we critically examine R1-Zero-like training by analyzing its two core components: base models and RL. We investigate a wide range of base models, including DeepSeek-V3-Base, to understand how pretraining characteristics influence RL performance. Our analysis reveals that DeepSeek-V3-Base already exhibit ''Aha moment'', while Qwen2.5 base models demonstrate strong reasoning capabilities even without prompt templates, suggesting potential pretraining biases. Additionally, we identify an optimization bias in Group Relative Policy Optimization (GRPO), which artificially increases response length (especially for incorrect outputs) during training. To address this, we introduce Dr. GRPO, an unbiased optimization method that improves token efficiency while maintaining reasoning performance. Leveraging these insights, we present a minimalist R1-Zero recipe that achieves 43.3% accuracy on AIME 2024 with a 7B base model, esta",
+  "current_subjects": [
+   "Dr. GRPO"
+  ],
+  "n_claims": 5
+ },
+ {
+  "page": "arxiv:2504.12516v1",
+  "title": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
+  "abstract": "We present BrowseComp, a simple yet challenging benchmark for measuring the ability for agents to browse the web. BrowseComp comprises 1,266 questions that require persistently navigating the internet in search of hard-to-find, entangled information. Despite the difficulty of the questions, BrowseComp is simple and easy-to-use, as predicted answers are short and easily verifiable against reference answers. BrowseComp for browsing agents can be seen as analogous to how programming competitions are an incomplete but useful benchmark for coding agents. While BrowseComp sidesteps challenges of a true user query distribution, like generating long answers or resolving ambiguity, it measures the important core capability of exercising persistence and creativity in finding information. BrowseComp can be found at https://github.com/openai/simple-evals.",
+  "current_subjects": [
+   "BrowseComp"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2504.19413v1",
+  "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+  "abstract": "Large Language Models (LLMs) have demonstrated remarkable prowess in generating contextually coherent responses, yet their fixed context windows pose fundamental challenges for maintaining consistency over prolonged multi-session dialogues. We introduce Mem0, a scalable memory-centric architecture that addresses this issue by dynamically extracting, consolidating, and retrieving salient information from ongoing conversations. Building on this foundation, we further propose an enhanced variant that leverages graph-based memory representations to capture complex relational structures among conversational elements. Through comprehensive evaluations on LOCOMO benchmark, we systematically compare our approaches against six baseline categories: (i) established memory-augmented systems, (ii) retrieval-augmented generation (RAG) with varying chunk sizes and k-values, (iii) a full-context approach that processes the entire conversation history, (iv) an open-source memory solution, (v) a proprietary model system, and (vi) a dedicated memory management platform. Empirical results show that our ",
+  "current_subjects": [
+   "Mem0"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2504.20073v2",
+  "title": "RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning",
+  "abstract": "Training large language models (LLMs) as interactive agents presents unique challenges including long-horizon decision making and interacting with stochastic environment feedback. While reinforcement learning (RL) has enabled progress in static tasks, multi-turn agent RL training remains underexplored. We propose StarPO (State-Thinking-Actions-Reward Policy Optimization), a general framework for trajectory-level agent RL, and introduce RAGEN, a modular system for training and evaluating LLM agents. Our study on four stylized environments reveals three core findings. First, our agent RL training shows a recurring mode of Echo Trap where reward variance cliffs and gradient spikes; we address this with StarPO-S, a stabilized variant with trajectory filtering, critic incorporation, and gradient stabilization. Second, we find the shaping of RL rollouts would benefit from diverse initial states, medium interaction granularity and more frequent sampling. Third, we show that without fine-grained, reasoning-aware reward signals, agent reasoning hardly emerge through multi-turn RL and they may",
+  "current_subjects": [
+   "RAGEN"
+  ],
+  "n_claims": 5
+ },
+ {
+  "page": "arxiv:2505.09388v1",
+  "title": "Qwen3 Technical Report",
+  "abstract": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework. This eliminates the need to switch between different models--such as chat-optimized models (e.g., GPT-4o) and dedicated reasoning models (e.g., QwQ-32B)--and enables dynamic mode switching based on user queries or chat templates. Meanwhile, Qwen3 introduces a thinking budget mechanism, allowing users to allocate computational resources adaptively during inference, thereby balancing latency and performance based on task complexity. Moreover, by leveraging the knowledge from the flagship models, we significantly reduce the computational resources required t",
+  "current_subjects": [
+   "Qwen3"
+  ],
+  "n_claims": 4
+ },
+ {
+  "page": "arxiv:2505.10978v3",
+  "title": "Group-in-Group Policy Optimization for LLM Agent Training",
+  "abstract": "Recent advances in group-based reinforcement learning (RL) have driven frontier large language models (LLMs) in single-turn tasks like mathematical reasoning. However, their scalability to multi-turn LLM agent training remains limited. Unlike static tasks, agent-environment interactions unfold over many steps and often yield sparse or delayed rewards, making credit assignment across individual steps significantly more challenging. In this work, we propose Group-in-Group Policy Optimization (GiGPO), a novel RL algorithm that achieves fine-grained credit assignment for LLM agents while preserving the appealing properties of group-based RL: critic-free, low memory, and stable convergence. GiGPO introduces a two-level structure for estimating relative advantage: (i) At the episode-level, GiGPO computes macro relative advantages based on groups of complete trajectories; (ii) At the step-level, GiGPO introduces an anchor state grouping mechanism that retroactively constructs step-level groups by identifying repeated environment states across trajectories. Actions stemming from the same sta",
+  "current_subjects": [
+   "GiGPO"
+  ],
+  "n_claims": 4
+ },
+ {
+  "page": "arxiv:2506.05176v3",
+  "title": "Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models",
+  "abstract": "In this work, we introduce the Qwen3 Embedding series, a significant advancement over its predecessor, the GTE-Qwen series, in text embedding and reranking capabilities, built upon the Qwen3 foundation models. Leveraging the Qwen3 LLMs' robust capabilities in multilingual text understanding and generation, our innovative multi-stage training pipeline combines large-scale unsupervised pre-training with supervised fine-tuning on high-quality datasets. Effective model merging strategies further ensure the robustness and adaptability of the Qwen3 Embedding series. During the training process, the Qwen3 LLMs serve not only as backbone models but also play a crucial role in synthesizing high-quality, rich, and diverse training data across multiple domains and languages, thus enhancing the training pipeline. The Qwen3 Embedding series offers a spectrum of model sizes (0.6B, 4B, 8B) for both embedding and reranking tasks, addressing diverse deployment scenarios where users can optimize for either efficiency or effectiveness. Empirical evaluations demonstrate that the Qwen3 Embedding series a",
+  "current_subjects": [
+   "Qwen3 Embedding"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2507.06261v6",
+  "title": "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities",
+  "abstract": "In this report, we introduce the Gemini 2.X model family: Gemini 2.5 Pro and Gemini 2.5 Flash, as well as our earlier Gemini 2.0 Flash and Flash-Lite models. Gemini 2.5 Pro is our most capable model yet, achieving SoTA performance on frontier coding and reasoning benchmarks. In addition to its incredible coding and reasoning skills, Gemini 2.5 Pro is a thinking model that excels at multimodal understanding and it is now able to process up to 3 hours of video content. Its unique combination of long context, multimodal and reasoning capabilities can be combined to unlock new agentic workflows. Gemini 2.5 Flash provides excellent reasoning abilities at a fraction of the compute and latency requirements and Gemini 2.0 Flash and Flash-Lite provide high performance at low latency and cost. Taken together, the Gemini 2.X model generation spans the full Pareto frontier of model capability vs cost, allowing users to explore the boundaries of what is possible with complex agentic problem solving.",
+  "current_subjects": [
+   "Gemini 2.5"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2509.16941v2",
+  "title": "SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?",
+  "abstract": "We introduce SWE-Bench Pro, a substantially more challenging benchmark that builds upon the best practices of SWE-BENCH [25], but is explicitly designed to capture realistic, complex, enterprise-level problems beyond the scope of SWE-BENCH. SWE-BENCH PRO contains 1,865 problems sourced from a diverse set of 41 actively maintained repositories spanning business applications, B2B services, and developer tools. The benchmark is partitioned into a public set with open access to problems sourced from 11 repositories, a held-out set of 12 repositories and a commercial set of 18 proprietary repositories where we have formal partnership agreements with early-stage startups. Problems in the held-out and the commercial set are not publicly accessible, but we release results on the commercial set. Our benchmark features long-horizon tasks that may require hours to days for a professional software engineer to complete, often involving patches across multiple files and substantial code modifications. All tasks are human-verified and augmented with sufficient context to ensure resolvability. To be",
+  "current_subjects": [
+   "SWE-Bench Pro"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2512.02556v1",
+  "title": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models",
+  "abstract": "We introduce DeepSeek-V3.2, a model that harmonizes high computational efficiency with superior reasoning and agent performance. The key technical breakthroughs of DeepSeek-V3.2 are as follows: (1) DeepSeek Sparse Attention (DSA): We introduce DSA, an efficient attention mechanism that substantially reduces computational complexity while preserving model performance in long-context scenarios. (2) Scalable Reinforcement Learning Framework: By implementing a robust reinforcement learning protocol and scaling post-training compute, DeepSeek-V3.2 performs comparably to GPT-5. Notably, our high-compute variant, DeepSeek-V3.2-Speciale, surpasses GPT-5 and exhibits reasoning proficiency on par with Gemini-3.0-Pro, achieving gold-medal performance in both the 2025 International Mathematical Olympiad (IMO) and the International Olympiad in Informatics (IOI). (3) Large-Scale Agentic Task Synthesis Pipeline: To integrate reasoning into tool-use scenarios, we developed a novel synthesis pipeline that systematically generates training data at scale. This methodology facilitates scalable agentic p",
+  "current_subjects": [
+   "DeepSeek-V3.2"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2601.03267v2",
+  "title": "OpenAI GPT-5 System Card",
+  "abstract": "This is the system card published alongside the OpenAI GPT-5 launch, August 2025. GPT-5 is a unified system with a smart and fast model that answers most questions, a deeper reasoning model for harder problems, and a real-time router that quickly decides which model to use based on conversation type, complexity, tool needs, and explicit intent (for example, if you say 'think hard about this' in the prompt). The router is continuously trained on real signals, including when users switch models, preference rates for responses, and measured correctness, improving over time. Once usage limits are reached, a mini version of each model handles remaining queries. This system card focuses primarily on gpt-5-thinking and gpt-5-main, while evaluations for other models are available in the appendix. The GPT-5 system not only outperforms previous models on benchmarks and answers questions more quickly, but -- more importantly -- is more useful for real-world queries. We've made significant advances in reducing hallucinations, improving instruction following, and minimizing sycophancy, and have l",
+  "current_subjects": [
+   "GPT-5"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2601.20802v2",
+  "title": "Reinforcement Learning via Self-Distillation",
+  "abstract": "Large language models are increasingly post-trained with reinforcement learning in verifiable domains such as code and math. Yet, current methods for reinforcement learning with verifiable rewards (RLVR) learn only from a scalar outcome reward per attempt, creating a severe credit-assignment bottleneck. Many verifiable environments actually provide rich textual feedback, such as runtime errors or judge evaluations, that explain why an attempt failed. We formalize this setting as reinforcement learning with rich feedback and introduce Self-Distillation Policy Optimization (SDPO), which converts tokenized feedback into a dense learning signal without any external teacher or explicit reward model. SDPO treats the current model conditioned on feedback as a self-teacher and distills its feedback-informed next-token predictions back into the policy. In this way, SDPO leverages the model's ability to retrospectively identify its own mistakes in-context. Across scientific reasoning, tool use, and competitive programming on LiveCodeBench v6, SDPO improves sample efficiency and final accuracy ",
+  "current_subjects": [
+   "SDPO"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2604.13016v2",
+  "title": "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe",
+  "abstract": "On-policy distillation (OPD) has become a core technique in the post-training of large language models, yet its training dynamics remain poorly understood. This paper provides a systematic investigation of OPD dynamics and mechanisms. We first identify that two conditions govern whether OPD succeeds or fails: (i) the student and teacher should share compatible thinking patterns; and (ii) even with consistent thinking patterns and higher scores, the teacher must offer genuinely new capabilities beyond what the student has seen during training. We validate these findings through weak-to-strong reverse distillation, showing that same-family 1.5B and 7B teachers are distributionally indistinguishable from the student's perspective. Probing into the token-level mechanism, we show that successful OPD is characterized by progressive alignment on high-probability tokens at student-visited states, a small shared token set that concentrates most of the probability mass (97%-99%). We further propose two practical strategies to recover failing OPD: off-policy cold start and teacher-aligned promp",
+  "current_subjects": [
+   "on-policy distillation"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.20891v1",
+  "title": "Is Deep Research Reliable? Misleading Knowledge Induces False Conclusions",
+  "abstract": "Deep Research agents extend LLM-based assistants into long-horizon workflows involving planning, retrieval, evidence synthesis, and report generation, yet their reliability in open information environments remains underexplored. A key concern is whether apparently credible but factually misleading knowledge encountered in such environments can propagate through these workflows and be adopted as false conclusions in final reports. To study this failure mode, we introduce MisKnow-Agent, a framework for constructing and validating misleading knowledge for Deep Research tasks. MisKnow-Agent generates misleading instances with controllable authority levels and styles, yielding 5,933 quality-controlled instances built on DeepResearch Benchmark tasks. Extensive experiments across open-source and closed-source Deep Research agents show that even limited exposure to misleading knowledge can induce false-conclusion adoption in final reports, revealing a broad reliability vulnerability in current Deep Research agents. Although search-enabled verifier models consistently identify the retained in",
+  "current_subjects": [
+   "Deep Research agents"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.20909v1",
+  "title": "RadioTrace: Transmitter-Aware Diffusion for Radio Map Estimation without Deployment-Time Fine-Tuning",
+  "abstract": "Radio map (RM) estimation aims to reconstruct the spatial distribution of wireless signal characteristics, such as received signal strength (RSS), from sparse measurements, a task that is critical for spectrum management, interference mitigation, and localization in modern wireless networks. Traditional approaches, including interpolation and deep learning, either struggle to capture complex propagation effects or require large-scale retraining for each new sampling pattern, which limits their generalization. More recently, prior-based methods have combined pre-trained generative models with measurements to reduce the need for deployment-time model fine-tuning, but they typically treat the prior as a simple regularizer and lack explicit transmitter-aware integration. In this paper, we propose RadioTrace, a novel RM estimation framework without deployment-time fine-tuning that tightly integrates sparse RSS measurements with a frozen pre-trained diffusion prior. RadioTrace incorporates transmitter (Tx) location estimation directly into the denoising loop, iteratively refining Tx coordi",
+  "current_subjects": [
+   "RadioTrace"
+  ],
+  "n_claims": 5
+ },
+ {
+  "page": "arxiv:2607.20911v1",
+  "title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+  "abstract": "We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction methodology, scoring protocol, and a cross-model leaderboard. At its core is a unified evaluation framework for constructing and running distribution-informed coding-agent tasks across four work domains - Code, Web, Office, and Security. Rather than adapting public issue text, every task is reverse-engineered from a real commit, pull request, or business scenario and rewritten as a short, colloquial, role-played request, so that a task's prompt is not recoverable by web-searching the underlying issue, pull request, or commit thread. Because the dataset is released openly - task directories, environment images, evaluation harness, tests, and reference solutions - contamination resistance rests on this construction together with dataset versioning rather than on secrecy. The four subsets - repository-level engineering, front-end development, office and business workflows, and red-/blue-team security - probe complementary facets of real work, each with its own ",
+  "current_subjects": [
+   "WorkBuddy Bench"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.20913v1",
+  "title": "Source-Prior-Driven Selective Adaptation for Efficient Diffusion Model Finetuning",
+  "abstract": "Fine-tuning large diffusion models for new domains or styles involves a trade-off: improving target-specific generation often degrades the pretrained model's broad generative capability. Existing full and parameter-efficient fine-tuning methods typically handle this trade-off only implicitly. In this work, we propose a novel source-prior-driven selective adaptation method to efficiently fine-tune diffusion models, achieving a favorable trade-off. Our method relies on two key observations: (1) the loss of general generative capability is highly inconsistent across pretrained parameters, and (2) parameters that have a relatively small impact on the model's general generative capability remain structurally inconsistent across layers and parameter types. Motivated by these observations, we first learn a static mask to explicitly identify parameters better suited for downstream adaptation, and then construct structured update strategies for the selected subset. Experiments show that our method achieves a better adaptation-retention trade-off than existing strong baselines.",
+  "current_subjects": [
+   "selective adaptation method"
+  ],
+  "n_claims": 9
+ },
+ {
+  "page": "arxiv:2607.20914v1",
+  "title": "Three-Pronged Spectral Control for Federated Parameter Efficient Fine Tuning",
+  "abstract": "Federated parameter-efficient fine-tuning (PEFT) enables communication-efficient adaptation of large pretrained models on decentralized edge data, but it remains fragile under non-IID client heterogeneity. In low-rank adaptation (LoRA), different clients may learn locally useful but spectrally misaligned update subspaces, causing high-variance aggregation and poor global transfer. We propose TRISHUL, a spectral-control framework for robust federated PEFT. TRISHUL follows the FL no-raw-data-sharing setting but does not itself provide formal privacy guarantees. TRISHUL uses shared frozen multi-head low-rank bases to obtain algebraically exact aggregation of compact core updates, applies nuclear norm proximal shrinkage to suppress client-specific high-rank spectral components before upload, and allocates adaptation heads non-uniformly across layers using a concave water filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-h",
+  "current_subjects": [
+   "TRISHUL"
+  ],
+  "n_claims": 10
+ },
+ {
+  "page": "arxiv:2607.20916v1",
+  "title": "Traceable Scholarship: Page Anchors and Ariadne's Thread for Humanistic Inquiry in the Age of Generative AI",
+  "abstract": "Generative AI lets large language models produce scholarly-looking text within seconds, yet fluency does not equal valid explanation. The deepest risk is not factual error alone but the appearance that an explanation is already established without clear sources, page numbers, editions, or evidence. We liken the page anchor to Ariadne's thread: within the labyrinth of generative fluency, it is the thread that leads the scholar back to the source. This paper proposes Traceable Scholarship as the minimum normative condition for AI-assisted humanistic research, situating it across the three revolutions of knowledge infrastructure: print, digital, and generative AI. We introduce page anchors, dual page numbers, citation-first generation, NO_EVIDENCE, human verification, four-level compliance, and Scope Contract, and present AIH-Infra as a three-layer reference implementation: Contexture (document structuring), Open WebUI AIH-Infra (traceable knowledge base), and AIH-Infra MCP Server (agent gateway). A case study on a 29-volume Kant Akademie-Ausgabe knowledge base illustrates how traceabil",
+  "current_subjects": [
+   "AIH-Infra"
+  ],
+  "n_claims": 7
+ },
+ {
+  "page": "arxiv:2607.20918v2",
+  "title": "OPOD: On-Policy Omni Distillation",
+  "abstract": "Omni-modal models can handle text, images, and audio in one system, but improving all of these abilities together remains difficult. Training a single model on pooled multimodal data often fails to match models specialized for individual modalities. On-policy distillation (OPD) offers a way to combine such specialists: the student generates a response, and a teacher evaluates that same response, so the student learns directly from behaviors it actually produces. Yet using several teachers can introduce competing guidance and improve one modality at the expense of another. We present On-Policy Omni Distillation (OPOD), which routes each student response to the matching text, image, or audio teacher. OPOD keeps teacher guidance only on tokens where the teacher assigns a higher probability than the student, adjusts the influence of each modality teacher independently during training, and asks the routed teacher to assess both the final answer and whether the reasoning supports the correct answer. Across twelve benchmarks and three backbone sizes, OPOD achieves the best average score at ",
+  "current_subjects": [
+   "OPOD"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.20923v1",
+  "title": "Scientific exploration, collaboration and labor division in the large language model era",
+  "abstract": "Large language models (LLMs) have rapidly and significantly entered scientific workflows, but it remains unclear how their diffusion is associated with changes in scientists' strategies in research directions and team building. We link PubMed Central full text with OpenAlex publication and collaboration histories for 775,323 scientists and analyze CRediT contribution statements from 137,120 multi-author papers. After 2022, scientists increasingly published across more intellectually distant fields and entered fields in which they had not previously worked. These increases in interdisciplinarity and exploration were especially pronounced among established scientists and scientists from non-English-speaking low- and middle-income countries. Authors with stronger AI-writing signals were already more interdisciplinary and exploratory before the widespread adoption of LLMs, and the gap widened further after 2022 compared with authors with weaker AI-writing signals. Scientists' collaboration networks also became more interdisciplinary after 2022. Yet, among authors with stronger AI-writing",
+  "current_subjects": [
+   "LLM-era scientific collaboration analysis"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.20925v1",
+  "title": "Representing Entity Importance in AI Knowledge Systems: A Dual-Signal Framework of Audience Evaluation and Structural Authority",
+  "abstract": "AI knowledge systems require representations of entity importance for retrieval, recommendation, evidence selection, and knowledge-intensive reasoning. Yet importance is often reduced to a single score derived from either human response or graph structure. Such compression may discard distinctions that matter when an AI system must choose among entities for different tasks. This study introduces an interpretable dual-signal representation in which each entity is characterized by an audience-evaluation dimension and a structural-authority dimension. The framework is evaluated using movie entities as an empirical validation domain. IMDb non-commercial datasets provide a rating-based audience ranking, Wikidata supports entity alignment, and English Wikipedia hyperlinks form the knowledge network on which PageRank estimates structural authority. Experiments on 482 entities and 13,690 directed relationships reveal a statistically significant but weak association between the two dimensions (Spearman rho = 0.2275, p &lt; 0.001). Their overlap is only 10% in the top 10 and 34% in the top 100",
+  "current_subjects": [
+   "dual-signal entity-importance framework"
+  ],
+  "n_claims": 4
+ },
+ {
+  "page": "arxiv:2607.20926v1",
+  "title": "SciExplore: Evaluating Autonomous Agents from Scientific Navigation to Information Integration",
+  "abstract": "Scientific research involves complex information-seeking and reasoning workflows across heterogeneous sources. However, existing benchmarks primarily emphasize general-domain retrieval or static scientific question answering, and therefore fail to assess key capabilities required in realistic scientific research workflows. We introduce SciExplore, a benchmark designed to evaluate scientific information-seeking and reasoning capabilities of LLMs and agents. SciExplore comprises four task types covering 103 expert-curated tasks across more than ten scientific disciplines: scientific database navigation, ambiguous literature retrieval, missing reference completion, and cross-source structured knowledge synthesis, which probe progressively higher-level abilities from entity-level reasoning and document-level identification to evidence-level grounding and domain-level synthesis. We evaluate over ten state-of-the-art LLMs and autonomous agents on SciExplore, revealing substantial performance gaps with performance degrading sharply as task complexity increases and extremely low accuracy on ",
+  "current_subjects": [
+   "SciExplore"
+  ],
+  "n_claims": 6
+ },
+ {
+  "page": "arxiv:2607.20933v1",
+  "title": "Transformer-Assisted LLM-Based Source Code Summarisation: to Enable More Secure Software Development",
+  "abstract": "Neural Source Code Summarisation (NSCS) aims to generate natural language summaries of source code to improve developers' and maintainers' understanding of code. Source code summaries are vital during the maintenance phase of the Secure Software Development Lifecycle (SSDLC), as they improve maintainers' understanding of code and help reduce the number of bugs and vulnerabilities in a software system. However, summaries are often missing, incomplete, or outdated in many software systems. Solutions to this problem use small, task-specific Transformer models or code-aware Large Language Models (LLMs). Task-specific Transformer-generated summaries often score well across many natural language generation (NLG) metrics, but these metrics reward lexical overlap rather than summary quality. Conversely, the ability of LLMs to capture semantics and produce high-quality summaries presents an exciting solution to this problem. This is especially relevant given the increased availability of LLMs and improvements in workstation hardware in recent years, which mean that some LLMs can now be run on",
+  "current_subjects": [
+   "Transformer-assisted LLM code summarization"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.20957v1",
+  "title": "Fast and Efficient Approximate Nearest Neighbor Search for High-Dimensional LLM Embeddings",
+  "abstract": "The annual SISAP Indexing Challenge benchmarks Approximate Nearest Neighbor Search (ANNS) algorithms under rigorous constraints. This paper presents our submissions for the 2026 edition, addressing both $k$-Nearest Neighbor Graph (kNNG) construction on 1024-dimensional BGE-M3 embeddings (Task 1) and Maximum Inner Product Search (MIPS) on unnormalized Llama-3.2-8B features (Task 2). To optimize construction speed, we utilize Equi-Voronoi Polytopes (EVP) for efficient quantization, supplemented by targeted reranking strategies to maintain high recall. For MIPS, we transform the asymmetric inner product problem into a Euclidean search space via dimensionality augmentation. To reduce query latency and optimize memory access, we introduce a 1D presorting mechanism via Fast Linear Assignment Sorting (FLAS) prior to graph construction. This significantly improves spatial locality and cache hit rates during subsequent graph traversal. Source Code: https://github.com/Visual-Computing/sisap26-deglib",
+  "current_subjects": [
+   "Fast ANNS"
+  ],
+  "n_claims": 6
+ },
+ {
+  "page": "arxiv:2607.20970v1",
+  "title": "From Scalars to Time Series: Rethinking Implicit Neural Representations for Time-Varying Volumetric Data",
+  "abstract": "Implicit neural representations (INRs) for time-varying volumetric data are typically trained using dense sampling over spatiotemporal coordinates, where each observation corresponds to a single point in space and time. This coordinate-wise formulation requires extensive sampling during optimization, leading to high computational cost and inefficient use of temporal structure. In this work, we revisit this design choice and show that dense spatiotemporal sampling is not necessary for learning time-varying fields. Instead, we represent the data as a collection of spatially indexed time series and train INRs using sequence-level supervision over each spatial location, rather than coordinate-wise scalar samples. This reformulation eliminates the need for dense spatiotemporal sampling and instead learns each spatial location from its full temporal evolution in a structured manner. We demonstrate that this representation is compatible with a range of existing INR architectures and consistently improves reconstruction quality, while significantly reducing training cost. Furthermore, we sho",
+  "current_subjects": [
+   "INR time-series reformulation"
+  ],
+  "n_claims": 11
+ },
+ {
+  "page": "arxiv:2607.20972v1",
+  "title": "Delivery, Not Storage: Cue-Anchored Working Memory as a Harness Property for Coding Agents",
+  "abstract": "Coding agents ship with one kind of memory: documents. Instruction files, plan artifacts, and auto-written memory directories are deliberately authored and deliberately retrieved: the agent must choose to write them and choose to read them back. Human expertise runs on a second tier that never gets written down: situationally-bound operational facts (gotchas, locations, local conventions) encoded as a side effect of the work and retrieved involuntarily when the situation cues them. We argue this second tier is the load-bearing one for long-running agents and must be a harness property, not an agent choice. We contribute: (1) a two-tier design theory grounded in the cognitive literature on memory offloading, incidental encoding, and event-based prospective memory, each mapped to an architectural requirement; (2) a cue-anchored memory model where memories carry first-class trigger conditions over a composable vocabulary (path, symbol, semantic, event, temporal), evaluated deterministically by the harness, a composition no surveyed academic or shipped system provides; (3) a controlled e",
+  "current_subjects": [
+   "Cue-anchored memory"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.20981v1",
+  "title": "Beyond Independent Optimization: Compression, MoE Routing, and Quantization Interactions in Multimodal Edge Intelligence",
+  "abstract": "Efficient multimodal inference is increasingly constrained not only by model quality or FLOP count, but also by the cost of preserving, moving, routing, caching, and quantizing multimodal representations under latency, memory, and energy constraints. This paper reviews recent advances in efficient vision-language and multimodal large language models, covering visual token compression, video token management, KV-cache optimization, Mixture-of-Experts (MoE) routing, low-bit quantization, edge deployment, and hardware-aware benchmarking. We argue that these techniques cannot be treated as independent optimizations. Visual token compression alters downstream feature distributions and MoE routing decisions, routing behavior affects expert utilization and quantization sensitivity, quantized router logits influence expert assignment, KV-cache policies determine retained multimodal evidence, and hardware constraints often transform computational savings into memory and communication bottlenecks. We organize the literature around these interactions and identify key design trade-offs, includin",
+  "current_subjects": [
+   "Multimodal edge intelligence survey"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.20982v1",
+  "title": "GuardianAgentBench: Where Agents Fail and How to Guard Them",
+  "abstract": "As large language model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe and reliable behavior becomes critical. We present GuardianAgentBench (GABench), a benchmark of 580 scenarios across six domains evaluated on three production-ready frameworks: LangChain, LlamaIndex, and Vectara. The benchmark incorporates rigorous multi-stage validation and five adversarial attack modes. Experiments with six state-of-the-art models reveal that even the strongest configuration achieves only 74.8% overall accuracy and expose two distinct failure regimes: stronger models under-call required tools, while weaker models mis-select and over-call tools. Performance degrades monotonically with both tool-set size and sequential turn depth, with long-horizon planning proving the steeper bottleneck. Our guardrail implementation consistently outperforms system-prompt-based defenses across all models, recovering 19.9% of failures at a false positive rate of just 0.5%. These results demonstrate that execution-time structural intervention improves saf",
+  "current_subjects": [
+   "GuardianAgentBench"
+  ],
+  "n_claims": 10
+ },
+ {
+  "page": "arxiv:2607.20988v1",
+  "title": "HyWorldVLA: A Vision-Language-Action Model with Hybrid World Modeling for Autonomous Driving",
+  "abstract": "Vision-Language-Action (VLA) models augmented with world modeling represent a promising paradigm for end-to-end autonomous driving. While pixel-level future prediction enables fine-grained spatiotemporal reasoning, it compromises robustness in noisy driving scenarios. Conversely, latent-based world models alleviate this sensitivity but often incur limited interpretability and representational degradation due to absent pixel-level grounding. To reconcile this trade-off, we propose HyWorldVLA, a hybrid world-VLA framework that unifies pixel-level supervision and latent representation learning. In the pre-training stage, HyWorldVLA predicts video latents encoded by a pre-trained video VAE, while simultaneously reconstructing video frames to provide precise pixel-level grounding. During the subsequent co-fine-tuning phase, the model exclusively predicts latent features, which are fed into an action expert to generate trajectories. Extensive experiments on NAVSIM v1 and v2 benchmarks demonstrate that HyWorldVLA significantly outperforms both pixel-based and latent-based world model baseli",
+  "current_subjects": [
+   "HyWorldVLA"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.20993v1",
+  "title": "Sparse Concept Channels in Frozen 3D CT Vision Encoders",
+  "abstract": "Large vision-language models are becoming increasingly dominant in 3D medical image interpretation, but we rarely know &lt;i&gt;which&lt;/i&gt; internal units encode clinical findings or &lt;i&gt;where&lt;/i&gt; that information lives in the representation. We first study this on a 3D chest vision-language model (Pillar-0) by probing its frozen vision embeddings. We show that (i) each radiological finding is encoded by a &lt;i&gt;sparse&lt;/i&gt; set of ~10 vision-encoder channels that match full-feature classification performance and far exceed a zero-shot text prompting; (ii) turning off the channels tied to one finding, that finding's score collapses while unrelated labels stay stable; and (iii) the same sparse probe &lt;i&gt;replicates&lt;/i&gt; on an architecturally unrelated 3D abdominal VLM (Merlin) suggesting a general property of frozen medical encoders. Our training-free concept channel probe (CCP) method, paired with a corpus-derived report template, outperforms published CT-CHAT on clinical efficacy and NLG metrics (F1 0.549 vs. 0.184; BLEU 0.483 vs. 0.373) at 22x lower l",
+  "current_subjects": [
+   "Concept Channel Probe"
+  ],
+  "n_claims": 1
+ }
+]
