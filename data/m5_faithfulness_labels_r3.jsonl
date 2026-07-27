@@ -1,0 +1,50 @@
+{"idx": 0, "verdict": "ENTAILED", "reason": "verbatim match with only punctuation difference"}
+{"idx": 1, "verdict": "ENTAILED", "reason": "verbatim match with only punctuation difference"}
+{"idx": 2, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 3, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 4, "verdict": "ENTAILED", "reason": "core claim preserved; qualifier 'for centuries' dropped"}
+{"idx": 5, "verdict": "ENTAILED", "reason": "telegraphic phrasing; meaning preserved from 'was supervised by'"}
+{"idx": 6, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 7, "verdict": "ENTAILED", "reason": "'country of citizenship' entails 'citizen of'"}
+{"idx": 8, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 9, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 10, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 11, "verdict": "ENTAILED", "reason": "core claim preserved; location qualifier dropped"}
+{"idx": 12, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 13, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 14, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 15, "verdict": "ENTAILED", "reason": "P569 notation expresses birth date; rendered clarifies as 'was born'"}
+{"idx": 16, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 17, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 18, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 19, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 20, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 21, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 22, "verdict": "ENTAILED", "reason": "verbatim match with notation"}
+{"idx": 23, "verdict": "ENTAILED", "reason": "verbatim match with notation"}
+{"idx": 24, "verdict": "ENTAILED", "reason": "core claim preserved; qualifiers dropped"}
+{"idx": 25, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 26, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 27, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 28, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 29, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 30, "verdict": "ENTAILED", "reason": "Source specifies Paris and 1955; rendered omits but core claim entailed"}
+{"idx": 31, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 32, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 33, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 34, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 35, "verdict": "ENTAILED", "reason": "Source says multiple times; rendered just says visited—weaker but entailed"}
+{"idx": 36, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 37, "verdict": "ENTAILED", "reason": "Source adds 'in Athens'; rendered omits but core claim entailed"}
+{"idx": 38, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 39, "verdict": "ENTAILED", "reason": "Mary Lucy Cartwright vs Mary Cartwright—same subject, naming variation permitted"}
+{"idx": 40, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 41, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 42, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 43, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 44, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 45, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 46, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 47, "verdict": "ENTAILED", "reason": "Source says invented calculus and developed equations; rendering subset is entailed"}
+{"idx": 48, "verdict": "ENTAILED", "reason": "Verbatim match"}
+{"idx": 49, "verdict": "ENTAILED", "reason": "Verbatim match"}

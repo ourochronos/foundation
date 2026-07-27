@@ -1,0 +1,25 @@
+{"idx": 0, "verdict": "ENTAILED", "reason": "verbatim match with only punctuation difference"}
+{"idx": 1, "verdict": "ENTAILED", "reason": "verbatim match with only punctuation difference"}
+{"idx": 2, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 3, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 4, "verdict": "ENTAILED", "reason": "core claim preserved; qualifier 'for centuries' dropped"}
+{"idx": 5, "verdict": "ENTAILED", "reason": "telegraphic phrasing; meaning preserved from 'was supervised by'"}
+{"idx": 6, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 7, "verdict": "ENTAILED", "reason": "'country of citizenship' entails 'citizen of'"}
+{"idx": 8, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 9, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 10, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 11, "verdict": "ENTAILED", "reason": "core claim preserved; location qualifier dropped"}
+{"idx": 12, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 13, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 14, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 15, "verdict": "ENTAILED", "reason": "P569 notation expresses birth date; rendered clarifies as 'was born'"}
+{"idx": 16, "verdict": "ENTAILED", "reason": "core claim preserved; year dropped"}
+{"idx": 17, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 18, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 19, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 20, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 21, "verdict": "ENTAILED", "reason": "verbatim match"}
+{"idx": 22, "verdict": "ENTAILED", "reason": "verbatim match with notation"}
+{"idx": 23, "verdict": "ENTAILED", "reason": "verbatim match with notation"}
+{"idx": 24, "verdict": "ENTAILED", "reason": "core claim preserved; qualifiers dropped"}

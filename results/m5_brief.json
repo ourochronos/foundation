@@ -37,12 +37,21 @@
    1.0
   ]
  },
- "faithfulness": null,
+ "faithfulness": {
+  "n": 50,
+  "entailed": 50,
+  "rate": 1.0,
+  "ci95": [
+   0.9286499658256813,
+   1.0
+  ],
+  "labels_file": "data/m5_faithfulness_labels_r3.jsonl"
+ },
  "manifest": {
-  "generated_at": "2026-07-27T04:54:10.427308+00:00",
-  "commit": "d8ec37136a7f31fb77752cb66c533eff51cd3b80",
+  "generated_at": "2026-07-27T04:55:28.197548+00:00",
+  "commit": "c18095b86b69dfdb23b179e00bbc153a264dfb67",
   "dirty": true,
-  "command": "scripts/probe_m5_brief.py",
+  "command": "scripts/probe_m5_brief.py score",
   "seed": 9,
   "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
   "versions": {
@@ -51,5 +60,6 @@
    "torch": "2.13.0+rocm7.2",
    "gpu": "AMD Radeon RX 9070"
   }
- }
+ },
+ "verdict": "PASS"
 }
