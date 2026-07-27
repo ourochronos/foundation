@@ -1,0 +1,304 @@
+{
+ "audit": "arxiv50",
+ "model": "gpt-5.4",
+ "n": 50,
+ "n_judged": 48,
+ "raw_agreement": 0.8333333333333334,
+ "cohens_kappa": 0.2643678160919542,
+ "disagreements": [
+  {
+   "idx": 9,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The provided abstract text is truncated before explicitly stating this full generalization."
+  },
+  {
+   "idx": 15,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Claim drops the stronger statement about every PA model of that size extending to one with no splendid extensions."
+  },
+  {
+   "idx": 18,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Abstract does not mention Cantor-Bendixson and derivative rank orthogonality."
+  },
+  {
+   "idx": 27,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Abstract says 'certain' complemented sets; claim overgeneralizes to all such sets."
+  },
+  {
+   "idx": 29,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The provided abstract is truncated before those substitution details are stated."
+  },
+  {
+   "idx": 34,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "Abstract explicitly says these statements are equiconsistent."
+  },
+  {
+   "idx": 37,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Claim omits the required assumption that the 2-category has PIE limits."
+  },
+  {
+   "idx": 48,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Abstract says new counterexamples among '(semi)products'; it does not explicitly single out semiproducts alone."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says they conjecture \u2193^nm is the maximum well-behaved relation for Polish groups."
+  },
+  "2": {
+   "verdict": "PRECISE",
+   "reason": "Abstract says the first generalization question has a positive answer in tree-like cases."
+  },
+  "3": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says this new degree structure is obtained by comparing tolerance relations by learnable families."
+  },
+  "4": {
+   "verdict": "PRECISE",
+   "reason": "This is stated verbatim in the abstract."
+  },
+  "5": {
+   "verdict": "PRECISE",
+   "reason": "A non-full Boolean hyperdoctrine is exhibited, and full means satisfying the generalized Beck-Chevalley condition."
+  },
+  "7": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says the statement is provable in ACA_0'."
+  },
+  "8": {
+   "verdict": "DEFECT",
+   "reason": "Abstract includes a condition: this holds only under the previously stated sufficient condition."
+  },
+  "9": {
+   "verdict": "DEFECT",
+   "reason": "The provided abstract text is truncated before explicitly stating this full generalization."
+  },
+  "10": {
+   "verdict": "PRECISE",
+   "reason": "This is stated explicitly as one of the paper\u2019s main results."
+  },
+  "11": {
+   "verdict": "PRECISE",
+   "reason": "Abstract states exactly this sharpness observation."
+  },
+  "12": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says the semantics is built from lower semilattices with a greatest element."
+  },
+  "13": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly proves GL complete over infinite \u03c9-scattered spaces."
+  },
+  "14": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says several LFIs are characterized this way."
+  },
+  "15": {
+   "verdict": "DEFECT",
+   "reason": "Claim drops the stronger statement about every PA model of that size extending to one with no splendid extensions."
+  },
+  "16": {
+   "verdict": "PRECISE",
+   "reason": "This is stated explicitly in the abstract."
+  },
+  "17": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says this for nilpotent Lie groups."
+  },
+  "18": {
+   "verdict": "DEFECT",
+   "reason": "Abstract does not mention Cantor-Bendixson and derivative rank orthogonality."
+  },
+  "19": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says it embeds that integration theory into Chunk and Permeate."
+  },
+  "20": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly studies five order types and says the analysis reveals two expressive levels."
+  },
+  "21": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly gives an example showing \u2193^Haar \u2260 \u2193^nm."
+  },
+  "22": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly states both independence notions, with the modularity qualifier for beautiful pairs."
+  },
+  "23": {
+   "verdict": "PRECISE",
+   "reason": "This list of hierarchy properties is stated verbatim in the abstract."
+  },
+  "24": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly presents new such product and semiproduct examples with FMP."
+  },
+  "25": {
+   "verdict": "PRECISE",
+   "reason": "This is stated verbatim in the abstract."
+  },
+  "26": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says this."
+  },
+  "27": {
+   "verdict": "DEFECT",
+   "reason": "Abstract says 'certain' complemented sets; claim overgeneralizes to all such sets."
+  },
+  "28": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly concludes this common-fragment claim."
+  },
+  "29": {
+   "verdict": "DEFECT",
+   "reason": "The provided abstract is truncated before those substitution details are stated."
+  },
+  "30": {
+   "verdict": "PRECISE",
+   "reason": "This is stated explicitly in the abstract."
+  },
+  "31": {
+   "verdict": "PRECISE",
+   "reason": "This is stated verbatim in the abstract."
+  },
+  "32": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly proves F_\u03c9 not \u2264_K H_\u03c9."
+  },
+  "33": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says it identifies all finitely many regular and normal Post complete conditional logics."
+  },
+  "34": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says these statements are equiconsistent."
+  },
+  "35": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says it extends bound extraction from normed to abstract metric structures."
+  },
+  "36": {
+   "verdict": "PRECISE",
+   "reason": "This is stated verbatim in the abstract."
+  },
+  "37": {
+   "verdict": "DEFECT",
+   "reason": "Claim omits the required assumption that the 2-category has PIE limits."
+  },
+  "38": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly characterizes conceptual completeness this way."
+  },
+  "39": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly states this relative consistency result."
+  },
+  "40": {
+   "verdict": "PRECISE",
+   "reason": "This is stated verbatim in the abstract."
+  },
+  "41": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says exactly 21 meaningful connectives were found among 10,816 rule pairs."
+  },
+  "42": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly proves both \u03a3^0_2-measurability and G_\u03b4 graph."
+  },
+  "43": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly states this under suitable syntactic assumptions."
+  },
+  "44": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says it proves a relative extension theorem of this form."
+  },
+  "45": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly proves modal completeness for several such logics with respect to the new semantics."
+  },
+  "46": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly says it proves both finite model property and decidability for this logic."
+  },
+  "47": {
+   "verdict": "PRECISE",
+   "reason": "Abstract explicitly treats the corresponding failure classes from Rainbow and Canonical Ramsey theorems as finiteness classes."
+  },
+  "48": {
+   "verdict": "DEFECT",
+   "reason": "Abstract says new counterexamples among '(semi)products'; it does not explicitly single out semiproducts alone."
+  },
+  "49": {
+   "verdict": "DEFECT",
+   "reason": "The provided abstract text is truncated before any claim about computable universality is stated."
+  }
+ },
+ "my_labels": {
+  "0": "PRECISE",
+  "1": "PRECISE",
+  "2": "PRECISE",
+  "3": "PRECISE",
+  "4": "PRECISE",
+  "5": "PRECISE",
+  "6": "PRECISE",
+  "7": "PRECISE",
+  "8": "DEFECT",
+  "9": "PRECISE",
+  "10": "PRECISE",
+  "11": "PRECISE",
+  "12": "PRECISE",
+  "13": "PRECISE",
+  "14": "PRECISE",
+  "15": "PRECISE",
+  "16": "PRECISE",
+  "17": "PRECISE",
+  "18": "PRECISE",
+  "19": "PRECISE",
+  "20": "PRECISE",
+  "21": "PRECISE",
+  "22": "PRECISE",
+  "23": "PRECISE",
+  "24": "PRECISE",
+  "25": "PRECISE",
+  "26": "PRECISE",
+  "27": "PRECISE",
+  "28": "PRECISE",
+  "29": "PRECISE",
+  "30": "PRECISE",
+  "31": "PRECISE",
+  "32": "PRECISE",
+  "33": "PRECISE",
+  "34": "DEFECT",
+  "35": "PRECISE",
+  "36": "PRECISE",
+  "37": "PRECISE",
+  "38": "PRECISE",
+  "39": "PRECISE",
+  "40": "PRECISE",
+  "41": "PRECISE",
+  "42": "PRECISE",
+  "43": "PRECISE",
+  "44": "PRECISE",
+  "45": "PRECISE",
+  "46": "PRECISE",
+  "47": "PRECISE",
+  "48": "PRECISE",
+  "49": "DEFECT"
+ }
+}

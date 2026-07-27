@@ -1,0 +1,145 @@
+{
+ "audit": "g2fp25",
+ "model": "gpt-5.4",
+ "n": 25,
+ "n_judged": 25,
+ "raw_agreement": 0.96,
+ "cohens_kappa": 0.6478873239436618,
+ "disagreements": [
+  {
+   "idx": 20,
+   "mine": "TRUE",
+   "theirs": "FALSE",
+   "their_reason": "Archimedes is not specifically known for proving the area formula of an ellipse."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "TRUE",
+   "reason": "Perelman studied at the famous Leningrad/St. Petersburg School No. 239."
+  },
+  "1": {
+   "verdict": "TRUE",
+   "reason": "Leibniz took his doctorate at the University of Altdorf and thus attended it."
+  },
+  "2": {
+   "verdict": "TRUE",
+   "reason": "Archimedes is classically associated with the theory of the lever and centers of gravity."
+  },
+  "3": {
+   "verdict": "TRUE",
+   "reason": "Cantor briefly studied at the Swiss Federal Polytechnic in Zurich before Berlin."
+  },
+  "4": {
+   "verdict": "TRUE",
+   "reason": "Wiener studied at G\u00f6ttingen and worked with leading mathematicians including Landau."
+  },
+  "5": {
+   "verdict": "TRUE",
+   "reason": "Hardy is well known for major work in analytic number theory."
+  },
+  "6": {
+   "verdict": "TRUE",
+   "reason": "Wiener studied at G\u00f6ttingen with David Hilbert."
+  },
+  "7": {
+   "verdict": "TRUE",
+   "reason": "Kolmogorov made important contributions on Fourier series early in his career."
+  },
+  "8": {
+   "verdict": "TRUE",
+   "reason": "Wiles received the Cole Prize in Number Theory in 1997."
+  },
+  "9": {
+   "verdict": "TRUE",
+   "reason": "Kolmogorov's probability work centrally involved independence of random variables."
+  },
+  "10": {
+   "verdict": "TRUE",
+   "reason": "Wiener's God & Golem, Inc. won the 1965 U.S. National Book Award in that category."
+  },
+  "11": {
+   "verdict": "TRUE",
+   "reason": "Gauss did receive the French Lalande Prize for his astronomical work."
+  },
+  "12": {
+   "verdict": "TRUE",
+   "reason": "George Berkeley married Anne Forster."
+  },
+  "13": {
+   "verdict": "TRUE",
+   "reason": "Wiener is famously recorded as finishing Ayer High School in 1906 at age 11."
+  },
+  "14": {
+   "verdict": "TRUE",
+   "reason": "Kolmogorov worked broadly in probability theory, including topics involving the normal distribution."
+  },
+  "15": {
+   "verdict": "TRUE",
+   "reason": "Wittgenstein taught at Cambridge in that broad period, with his professorship ending in 1947."
+  },
+  "16": {
+   "verdict": "TRUE",
+   "reason": "Locke was educated at Westminster School."
+  },
+  "17": {
+   "verdict": "TRUE",
+   "reason": "Galois representations were central to Wiles's number-theoretic research."
+  },
+  "18": {
+   "verdict": "TRUE",
+   "reason": "Wittgenstein was Austrian by origin and later British, so Austro-British is accurate."
+  },
+  "19": {
+   "verdict": "TRUE",
+   "reason": "Ladyzhenskaya entered Moscow State University in 1943 after earlier exclusion elsewhere."
+  },
+  "20": {
+   "verdict": "FALSE",
+   "reason": "Archimedes is not specifically known for proving the area formula of an ellipse."
+  },
+  "21": {
+   "verdict": "TRUE",
+   "reason": "Tarski's dissertation title is commonly rendered as On the Primitive Term of Logistic."
+  },
+  "22": {
+   "verdict": "FALSE",
+   "reason": "Brahmagupta is usually dated to have died around 668 CE, not 850."
+  },
+  "23": {
+   "verdict": "TRUE",
+   "reason": "Brahmagupta authored the Br\u0101hmasphu\u1e6dasiddh\u0101nta."
+  },
+  "24": {
+   "verdict": "TRUE",
+   "reason": "Perelman worked at the St. Petersburg branch of the Steklov Institute."
+  }
+ },
+ "my_labels": {
+  "0": "TRUE",
+  "1": "TRUE",
+  "2": "TRUE",
+  "3": "TRUE",
+  "4": "TRUE",
+  "5": "TRUE",
+  "6": "TRUE",
+  "7": "TRUE",
+  "8": "TRUE",
+  "9": "TRUE",
+  "10": "TRUE",
+  "11": "TRUE",
+  "12": "TRUE",
+  "13": "TRUE",
+  "14": "TRUE",
+  "15": "TRUE",
+  "16": "TRUE",
+  "17": "TRUE",
+  "18": "TRUE",
+  "19": "TRUE",
+  "20": "TRUE",
+  "21": "TRUE",
+  "22": "FALSE",
+  "23": "TRUE",
+  "24": "TRUE"
+ }
+}
