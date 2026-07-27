@@ -1,0 +1,726 @@
+[
+ {
+  "sid": "out_16.jsonl:19",
+  "page": "arxiv:2607.22365v1",
+  "subject": "Structural",
+  "object": "TRACTA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Structural is evaluated on TRACTA.",
+  "contexts": [
+   "[body] ...jectories, while the learning component models their temporal evolution. This separation aims to preserve interpretability while enabling the model to capture accumulation and interaction effects that are difficult to express through fixed rules alone. To study this hypothesis under controlled conditions, we introduce TRACTA ( Temporal Reasoning and Capability-Trajectory Analysis ), a synthetic benchmark for temporal structural reasoning in high-complexity event-driven systems, instantiated through MDO-like scenarios. The benchmark evaluates three tasks: early_warning , which anticipates future pattern activation; pattern_detection , which identifies c...",
+   "[body] ...affect performance on tasks involving temporal structural reasoning. Figure 1 summarizes the representation-aware comparison, the common task suite, and the diagnostic-only role of the full global-identifier view. The offline construction of the temporal targets is detailed in Figure 2 . Figure 1: Representation-aware TRACTA comparison. The full global-ID view is retained only for shortcut diagnostics. Raw-event models operate on the run-local aliased event view, whereas the semantic baseline and neuro-symbolic configuration use contextual direct-impact and accumulated capability trajectorie [...] Evaluation Synthetic data and simulation-based benchmar...",
+   "[body] ...truction choices, documentation, and benchmark use affect what model performance can validly be interpreted to mean [ 25 ] . Related work on data statements similarly argues that explicit dataset documentation can help clarify provenance, intended use, and limits of generalization [ 5 ] . These concerns are central to TRACTA, which is designed as a controlled methodological benchmark rather than as an operational validation. A major threat in benchmark design is that models may exploit dataset-specific shortcuts rather than the intended construct. Dataset bias has long been recognized as a challenge for cross-dataset generalization and benchmark validi..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:20",
+  "page": "arxiv:2607.22376v1",
+  "subject": "Factorial",
+  "object": "GPT-4",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Factorial compares to GPT-4.",
+  "contexts": [
+   "[body] ...ratio. Due to the lack of a glossary in the source grammar, the Mandan lexicon was extracted from the external Comparative Siouan Dictionary (Rankin et al. , 2015 ) . 4 Experiments 4.1 Experimental Setup Baselines. We compare synthetic data augmentation against five baselines. First, we prompt three foundation models (GPT-4.1, GPT-5.2, Gemini-2.5-flash) in a zero-shot setting without language-specific fine-tuning. Second, we use NLLB-200 (NLLB Team et al. , 2022 ) , a massively multilingual translation model, with typologically or geographically related proxy languages (Indonesian for Kalamang, Romansh for Tuatschin, Dakota for Mandan). Third, we defin..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:21",
+  "page": "arxiv:2607.22376v1",
+  "subject": "Factorial",
+  "object": "Gemini",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Factorial compares to Gemini.",
+  "contexts": [
+   "[body] ...ts, and grammatical rules from unstructured PDF text. These components are then used to generate synthetic parallel corpora by replacing words in extracted sentence templates while applying retrieved grammatical rules to maintain morphological and syntactic correctness. We evaluate the generated corpora by fine-tuning Gemini-2.5-flash on the synthetic data and measuring translation performance on held-out test sets from three typologically diverse and severely low-resource languages: Kalamang (agglutinative, Papuan), Tuatschin (analytic, Romance), and Mandan (polysynthetic, Siouan). We selected Gemini-2.5-flash for its fine-tuning API availability and...",
+   "[body] ...the generated corpora by fine-tuning Gemini-2.5-flash on the synthetic data and measuring translation performance on held-out test sets from three typologically diverse and severely low-resource languages: Kalamang (agglutinative, Papuan), Tuatschin (analytic, Romance), and Mandan (polysynthetic, Siouan). We selected Gemini-2.5-flash for its fine-tuning API availability and low inference cost. Through ablation studies, we analyze the impact of retrieval granularity (rule-level vs. section-level), target part-of-speech, and generation volume on translation quality. 2 Related Work Machine translation (MT) performance relies on large-scale parallel corpo...",
+   "[body] ...d S struct S_{\\text{struct}} is the proportion of exact POS and UniMorph feature matches between the query and the rule. The weighting (0.7/0.3) prioritizes semantic relevance and is a fixed hyperparameter that we do not optimize. We hold it constant across all languages. We retrieve the top-5 scoring rules and prompt Gemini-2.5-flash to generate the synthetic sentence by applying the retrieved rules to the replacement word within the original sentence context. We test two retrieval granularities: (a) codified rules with their textual descriptions, and (b) full source sections from the grammar book. The former provides compact, structured input; the la..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:0",
+  "page": "arxiv:2607.22385v1",
+  "subject": "AgentRCA",
+  "object": "PRONTO",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "AgentRCA is evaluated on the PRONTO real-world multiphase-flow facility.",
+  "contexts": [
+   "[body] ...al. ( 2009 ); Wang et al. ( 2023 ); Liu et al. ( 2024 , 2025 ) . However, these methods typically formulate root cause analysis as a supervised classification problem, learning direct mappings between measurements [...] evaluation protocol We evaluated AgentRCA on two complementary closed-loop industrial benchmarks. PRONTO Stief et al. ( 2019 ) is a real-world multiphase-flow facility with 17 process signals and four manually induced faults: air blockage, air leakage, diverted flow, and slugging. These faults are introduced with increasing severity over time, producing gradual deviations rather than abrupt class-separated events. The Tennessee Eastma...",
+   "[body] ...Downs and Vogel ( 1993 ) is a larger, more strongly coupled plant-wide chemical process with 52 variables and 21 fault scenarios. In both benchmarks, feedback control loops can compensate for local disturbances, producing distributed multivariate fault signatures that evolve over multiple time steps. A representative PRONTO recording is shown in Fig. \u02dc 2 . Each multivariate recording was segmented into fixed-length windows. To strictly evaluate zero-shot diagnostic capability, AgentRCA used only normal-operation windows to train its digital twin, reserving all fault windows for evaluation. We report Top-1 and Top-2 diagnostic accuracy, measuring wheth...",
+   "[body] ...atures from labeled failure data, AgentRCA must infer the correct diagnosis entirely from normal-operation baselines, standardized deviations, and textual fault descriptions. Full preprocessing and training details are provided in Sec. \u02dc 4 and Supplementary Materials. Figure 2: Example recording from \u201cTestday3\u201d of the PRONTO dataset Stief et al. ( 2019 ) . The plot shows a subset of flow, temperature, pressure, level, and control signals. Signals are standardized to Z-scores for visual comparison and therefore should be interpreted by their relative dynamics rather than their physical units. Shaded regions indicate normal and faulty operating intervals..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:1",
+  "page": "arxiv:2607.22385v1",
+  "subject": "AgentRCA",
+  "object": "Tennessee Eastman Process",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "AgentRCA is evaluated on the Tennessee Eastman Process benchmark.",
+  "contexts": [
+   "[body] ...TO Stief et al. ( 2019 ) is a real-world multiphase-flow facility with 17 process signals and four manually induced faults: air blockage, air leakage, diverted flow, and slugging. These faults are introduced with increasing severity over time, producing gradual deviations rather than abrupt class-separated events. The Tennessee Eastman Process (TEP) benchmark Downs and Vogel ( 1993 ) is a larger, more strongly coupled plant-wide chemical process with 52 variables and 21 fault scenarios. In both benchmarks, feedback control loops can compensate for local disturbances, producing distributed multivariate fault signatures that evolve over multiple time ste..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:2",
+  "page": "arxiv:2607.22385v1",
+  "subject": "AgentRCA",
+  "object": "LightGBM",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "AgentRCA is compared against LightGBM as a supervised baseline.",
+  "contexts": [
+   "[body] ...ate appears as the agent\u2019s primary or secondary diagnosis. Because standard unsupervised methods isolate anomalous variables rather than outputting categorical fault diagnoses, no directly comparable zero-shot baseline exists. We therefore evaluate AgentRCA against widely established supervised fault diagnosis models: LightGBM Ke et al. ( 2017 ) , an autoencoder with a classification head, and MiniRocket Dempster et al. ( 2021 ) with Ridge classification Hoerl and Kennard ( 1970 ) . This establishes a strict benchmark: while the supervised baselines learn explicit signatures from labeled failure data, AgentRCA must infer the correct diagnosis entirely...",
+   "[body] ...any faulty training examples. As shown in Fig. \u02dc 3 A, AgentRCA achieved 87.6% Top-1 accuracy across five operating states (four specific faults and normal operation) using solely normal-operation data and textual fault descriptions. This performance approaches that of supervised baselines trained on labeled examples: LightGBM and the autoencoder classifier achieved 99.0% and 99.6% respectively, while MiniRocket with ridge classification reached 94.5%. Notably, AgentRCA\u2019s Top-2 accuracy reached 96.8% ( Fig. \u02dc 3 B), demonstrating that it reliably recovers the correct diagnosis and that remaining errors are largely confined to final hypothesis ranking. T..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:3",
+  "page": "arxiv:2607.22385v1",
+  "subject": "AgentRCA",
+  "object": "MiniRocket",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "AgentRCA is compared against MiniRocket with Ridge classification.",
+  "contexts": [
+   "[body] ...nsupervised methods isolate anomalous variables rather than outputting categorical fault diagnoses, no directly comparable zero-shot baseline exists. We therefore evaluate AgentRCA against widely established supervised fault diagnosis models: LightGBM Ke et al. ( 2017 ) , an autoencoder with a classification head, and MiniRocket Dempster et al. ( 2021 ) with Ridge classification Hoerl and Kennard ( 1970 ) . This establishes a strict benchmark: while the supervised baselines learn explicit signatures from labeled failure data, AgentRCA must infer the correct diagnosis entirely from normal-operation baselines, standardized deviations, and textual fault d...",
+   "[body] ...accuracy across five operating states (four specific faults and normal operation) using solely normal-operation data and textual fault descriptions. This performance approaches that of supervised baselines trained on labeled examples: LightGBM and the autoencoder classifier achieved 99.0% and 99.6% respectively, while MiniRocket with ridge classification reached 94.5%. Notably, AgentRCA\u2019s Top-2 accuracy reached 96.8% ( Fig. \u02dc 3 B), demonstrating that it reliably recovers the correct diagnosis and that remaining errors are largely confined to final hypothesis ranking. Thus, AgentRCA recovers the vast majority of supervised diagnostic performance despite..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:4",
+  "page": "arxiv:2607.22389v1",
+  "subject": "HiKV",
+  "object": "Llama 3",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "HiKV is evaluated on Llama 3 large language models.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:5",
+  "page": "arxiv:2607.22389v1",
+  "subject": "HiKV",
+  "object": "StreamingLLM",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "HiKV outperforms StreamingLLM KV cache optimization.",
+  "contexts": [
+   "[body] ...Techniques Given the memory bottleneck discussed above, recent research has explored various importance-based strategies to reduce KV cache footprint, which can be broadly divided into two types. Heuristic methods [ 40 , 39 , 23 , 6 , 14 , 5 ] employ predefined eviction policies without dynamic importance computation. StreamingLLM [ 40 ] retains only recent tokens and a fixed number of initial attention sink tokens, avoiding expensive scoring operations. DuoAttention [ 39 ] separates attention heads into retrieval and streaming types. SepLLM [ 6 ] segments sequences into compressed representations, and Longformer [ 5 ] introduces local-global attention..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:6",
+  "page": "arxiv:2607.22389v1",
+  "subject": "HiKV",
+  "object": "H2O",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "HiKV outperforms H2O importance-aware KV cache method.",
+  "contexts": [
+   "[body] ...wing or pattern-based strategies often sacrifice accuracy in long-context scenarios where important information may reside beyond predefined boundaries. To solve the issues, importance-aware methods [ 50 , 25 , 24 , 1 , 51 , 55 , 41 , 29 , 33 ] dynamically track token significance through attention score accumulation. H2O [ 50 ] maintains a global importance score for each token by accumulating attention weights across all decoding steps, evicting tokens with the lowest scores when cache cap..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:7",
+  "page": "arxiv:2607.22389v1",
+  "subject": "HiKV",
+  "object": "DuoAttention",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "HiKV outperforms DuoAttention KV cache compression technique.",
+  "contexts": [
+   "[body] ...footprint, which can be broadly divided into two types. Heuristic methods [ 40 , 39 , 23 , 6 , 14 , 5 ] employ predefined eviction policies without dynamic importance computation. StreamingLLM [ 40 ] retains only recent tokens and a fixed number of initial attention sink tokens, avoiding expensive scoring operations. DuoAttention [ 39 ] separates attention heads into retrieval and streaming types. SepLLM [ 6 ] segments sequences into compressed representations, and Longformer [ 5 ] introduces local-global attention patterns. However, these rigid windowing or pattern-based strategies often sacrifice accuracy in long-context scenarios where important in..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:8",
+  "page": "arxiv:2607.22389v1",
+  "subject": "HiKV",
+  "object": "SepLLM",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "HiKV outperforms SepLLM sequence compression approach.",
+  "contexts": [
+   "[body] ...39 , 23 , 6 , 14 , 5 ] employ predefined eviction policies without dynamic importance computation. StreamingLLM [ 40 ] retains only recent tokens and a fixed number of initial attention sink tokens, avoiding expensive scoring operations. DuoAttention [ 39 ] separates attention heads into retrieval and streaming types. SepLLM [ 6 ] segments sequences into compressed representations, and Longformer [ 5 ] introduces local-global attention patterns. However, these rigid windowing or pattern-based strategies often sacrifice accuracy in long-context scenarios where important information may reside beyond predefined boundaries. To solve the issues, importance..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:9",
+  "page": "arxiv:2607.22389v1",
+  "subject": "HiKV",
+  "object": "Longformer",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "HiKV outperforms Longformer attention pattern approach.",
+  "contexts": [
+   "[body] ...namic importance computation. StreamingLLM [ 40 ] retains only recent tokens and a fixed number of initial attention sink tokens, avoiding expensive scoring operations. DuoAttention [ 39 ] separates attention heads into retrieval and streaming types. SepLLM [ 6 ] segments sequences into compressed representations, and Longformer [ 5 ] introduces local-global attention patterns. However, these rigid windowing or pattern-based strategies often sacrifice accuracy in long-context scenarios where important information may reside beyond predefined boundaries. To solve the issues, importance-aware methods [ 50 , 25 , 24 , 1 , 51 , 55 , 41 , 29 , 33 ] dynamica..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:10",
+  "page": "arxiv:2607.22392v1",
+  "subject": "conversation-conditioned request state analysis",
+  "object": "PRISM",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The study evaluates on 7,463 public PRISM conversations.",
+  "contexts": [
+   "[body] ...ion: How much of the observed request state is contained in any one prompt, and what does an isolated final prompt leave in history? We answer this question with 8,133 real human\u2013LLM conversations from two sources. The proprietary corpus contains a Drive-based discovery cohort and a non-overlapping replication cohort. PRISM provides public external validation across values-guided, controversy-guided, and unguided protocols (Kirk et al. , 2024 ) . We use only user turns. Assistant text is excluded from all outcomes. The paper contributes: \u2022 a formal distinction between a turn-local prompt and cumulative conversation-conditioned request state; \u2022 endpoint...",
+   "[body] ...eteness after turns one through five. 5.4 Intervals and sensitivities Commercial proportions use Wilson 95% confidence intervals; medians use distribution-free order-statistic intervals. Discovery-replication proportion differences use Newcombe intervals, while median differences use a 5,000-draw percentile bootstrap. PRISM intervals use 2,000 participant-clustered bootstrap draws because participants contribute multiple conversations. Rates are never pooled across commercial and PRISM sources. Sensitivities include exact user-side transcript deduplication, one conversation per PRISM participant, PRISM\u2019s balanced subset, exclusion of moderation-flagged...",
+   "[body] ...-statistic intervals. Discovery-replication proportion differences use Newcombe intervals, while median differences use a 5,000-draw percentile bootstrap. PRISM intervals use 2,000 participant-clustered bootstrap draws because participants contribute multiple conversations. Rates are never pooled across commercial and PRISM sources. Sensitivities include exact user-side transcript deduplication, one conversation per PRISM participant, PRISM\u2019s balanced subset, exclusion of moderation-flagged PRISM records, explicit-English-only commercial discovery, commercial openings of at most 500 words, substantive final turns, and leave-one-commercial-collection-ou..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:11",
+  "page": "arxiv:2607.22393v1",
+  "subject": "SceneActBench",
+  "object": "Claude Opus 4.6",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SceneActBench evaluates Claude Opus 4.6.",
+  "contexts": [
+   "[body] ...D benchmarks pose questions over a scan or rendered image and score a text answer, including ScanQA (Azuma et al., 2022 ) , SQA3D (Ma et al., 2023 ) , and Spatial457 (Wang et al., 2025 ) , with probes such as SpatialVLM [...] 4 Experiments 4.1 Setup We evaluate eleven configurations from ten proprietary VLMs. They are Claude Opus 4.6 (Anthropic, 2026a ) , Claude Sonnet 5 (Anthropic, 2026b ) , GPT 5.4 (Singh et al., 2026 ) , Gemini 3.1 Pro (Google DeepMind, 2026 ) , Qwen 3.7 Plus (Qwen Team, Alibaba, 2026 ) , MiniMax M3 (Lai et al., 2026 ) , Doubao Seed 2.0 Pro (Seed, 2026 ) , Step 3.7 Flash (StepFun, 2026 ) , MiMo 2.5 (Xiaomi, 2026 ) , and Kimi K2.6 (K...",
+   "[body] ...n Dynamic Overall Configuration ADD-S \u2193 \\downarrow Score \u2191 \\uparrow PE/AE \u2193 \\downarrow Score \u2191 \\uparrow MPE \u2193 \\downarrow Score \u2191 \\uparrow F@5% \u2191 \\uparrow Score \u2191 \\uparrow MME/LE \u2193 \\downarrow Score \u2191 \\uparrow Score \u2191 \\uparrow Doubao Seed 2.0 Pro High 0.905 77.4 4.825/54.5 34.5 0.404 59.6 0.088 8.8 0.471/0.150 70.7 50.2 Claude Opus 4.6 High 1.059 73.5 4.980/51.6 34.0 0.375 63.7 0.098 9.8 0.583/0.152 63.2 48.9 GPT 5.4 Medium 1.120 72.7 5.404/54.5 29.6 0.381 62.3 0.104 10.4 0.738/0.235 68.5 48.7 GPT 5.4 High 0.766 84.1 5.748/51.1 26.4 0.275 73.8 0.123 12.3 0.746/0.320 46.7 48.7 Qwen 3.7 Plus High 0.954 76.2 6.489/70.9 21.7 0.603 58.0 0.090 9.0 0.441/0.238..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:12",
+  "page": "arxiv:2607.22393v1",
+  "subject": "SceneActBench",
+  "object": "Claude Sonnet 5",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SceneActBench evaluates Claude Sonnet 5.",
+  "contexts": [
+   "[body] ...n or rendered image and score a text answer, including ScanQA (Azuma et al., 2022 ) , SQA3D (Ma et al., 2023 ) , and Spatial457 (Wang et al., 2025 ) , with probes such as SpatialVLM [...] 4 Experiments 4.1 Setup We evaluate eleven configurations from ten proprietary VLMs. They are Claude Opus 4.6 (Anthropic, 2026a ) , Claude Sonnet 5 (Anthropic, 2026b ) , GPT 5.4 (Singh et al., 2026 ) , Gemini 3.1 Pro (Google DeepMind, 2026 ) , Qwen 3.7 Plus (Qwen Team, Alibaba, 2026 ) , MiniMax M3 (Lai et al., 2026 ) , Doubao Seed 2.0 Pro (Seed, 2026 ) , Step 3.7 Flash (StepFun, 2026 ) , MiMo 2.5 (Xiaomi, 2026 ) , and Kimi K2.6 (Kimi, 2026 ) . Configurations labelled...",
+   "[body] ...der_code for Python, and render_scene_view for visual checks. Dynamic also provides read_reference_frames for retrieving video frames. The task budgets are 30 steps for Layout and Camera, 60 for Articulated, 35 for Reconstruction, and 80 for Dynamic. Appendix B.1 gives the full agent setup, and Appendix C.4.2 compares Claude Sonnet 5 High under this harness and the official Claude Code CLI. Overall score. The five tasks use different units, so we map each native metric to a score from 0 to 100 using q \u2193 q^{\\downarrow} for errors and q \u2191 q^{\\uparrow} for F@5% (Appendix B.2 ). Invalid outputs receive zero. Layout uses q \u2193 \u200b ( ADD \u200b - \u200b S ; 4 \u200b m ) q^{\\do...",
+   "[body] ...5.272/53.8 33.9 0.452 56.5 0.071 7.1 0.527/0.335 63.9 45.4 MiMo 2.5 High 0.824 79.4 6.618/58.2 25.0 0.639 49.8 0.091 9.1 0.827/0.299 43.7 41.4 Kimi K2.6 Reason 2.547 70.9 6.396/57.2 24.6 0.442 57.3 0.085 8.5 0.855/0.281 44.8 41.2 Step 3.7 Flash High 0.898 77.5 7.191/78.8 13.2 0.541 48.3 0.086 8.6 0.712/0.164 57.9 41.1 Claude Sonnet 5 High 21.488 51.9 6.045/54.3 27.3 0.425 57.8 0.105 10.5 1.000/1.330 49.9 39.5 MiniMax M3 High 4.188 58.1 5.703/64.1 25.6 0.428 58.4 0.096 9.6 0.755/0.426 41.4 38.6 4.3 Analysis 4.3.1 What determines the ranking? Overall rewards balance across tasks, not the number of task wins. GPT 5.4 High leads Layout , Articulated , and..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:13",
+  "page": "arxiv:2607.22393v1",
+  "subject": "SceneActBench",
+  "object": "GPT-5.4",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SceneActBench evaluates GPT 5.4.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:14",
+  "page": "arxiv:2607.22393v1",
+  "subject": "SceneActBench",
+  "object": "Gemini 3.1 Pro",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SceneActBench evaluates Gemini 3.1 Pro.",
+  "contexts": [
+   "[body] ...t al., 2022 ) , SQA3D (Ma et al., 2023 ) , and Spatial457 (Wang et al., 2025 ) , with probes such as SpatialVLM [...] 4 Experiments 4.1 Setup We evaluate eleven configurations from ten proprietary VLMs. They are Claude Opus 4.6 (Anthropic, 2026a ) , Claude Sonnet 5 (Anthropic, 2026b ) , GPT 5.4 (Singh et al., 2026 ) , Gemini 3.1 Pro (Google DeepMind, 2026 ) , Qwen 3.7 Plus (Qwen Team, Alibaba, 2026 ) , MiniMax M3 (Lai et al., 2026 ) , Doubao Seed 2.0 Pro (Seed, 2026 ) , Step 3.7 Flash (StepFun, 2026 ) , MiMo 2.5 (Xiaomi, 2026 ) , and Kimi K2.6 (Kimi, 2026 ) . Configurations labelled High use the provider\u2019s high setting. GPT 5.4 Medium is the lower-effo...",
+   "[body] ...5 4.980/51.6 34.0 0.375 63.7 0.098 9.8 0.583/0.152 63.2 48.9 GPT 5.4 Medium 1.120 72.7 5.404/54.5 29.6 0.381 62.3 0.104 10.4 0.738/0.235 68.5 48.7 GPT 5.4 High 0.766 84.1 5.748/51.1 26.4 0.275 73.8 0.123 12.3 0.746/0.320 46.7 48.7 Qwen 3.7 Plus High 0.954 76.2 6.489/70.9 21.7 0.603 58.0 0.090 9.0 0.441/0.238 66.0 46.2 Gemini 3.1 Pro High 6.953 65.4 5.272/53.8 33.9 0.452 56.5 0.071 7.1 0.527/0.335 63.9 45.4 MiMo 2.5 High 0.824 79.4 6.618/58.2 25.0 0.639 49.8 0.091 9.1 0.827/0.299 43.7 41.4 Kimi K2.6 Reason 2.547 70.9 6.396/57.2 24.6 0.442 57.3 0.085 8.5 0.855/0.281 44.8 41.2 Step 3.7 Flash High 0.898 77.5 7.191/78.8 13.2 0.541 48.3 0.086 8.6 0.712/0.164..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:15",
+  "page": "arxiv:2607.22393v1",
+  "subject": "SceneActBench",
+  "object": "Qwen 3.7 Plus",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SceneActBench evaluates Qwen 3.7 Plus.",
+  "contexts": [
+   "[body] ...and Spatial457 (Wang et al., 2025 ) , with probes such as SpatialVLM [...] 4 Experiments 4.1 Setup We evaluate eleven configurations from ten proprietary VLMs. They are Claude Opus 4.6 (Anthropic, 2026a ) , Claude Sonnet 5 (Anthropic, 2026b ) , GPT 5.4 (Singh et al., 2026 ) , Gemini 3.1 Pro (Google DeepMind, 2026 ) , Qwen 3.7 Plus (Qwen Team, Alibaba, 2026 ) , MiniMax M3 (Lai et al., 2026 ) , Doubao Seed 2.0 Pro (Seed, 2026 ) , Step 3.7 Flash (StepFun, 2026 ) , MiMo 2.5 (Xiaomi, 2026 ) , and Kimi K2.6 (Kimi, 2026 ) . Configurations labelled High use the provider\u2019s high setting. GPT 5.4 Medium is the lower-effort control. Kimi Reason enables reasoning....",
+   "[body] ...4.825/54.5 34.5 0.404 59.6 0.088 8.8 0.471/0.150 70.7 50.2 Claude Opus 4.6 High 1.059 73.5 4.980/51.6 34.0 0.375 63.7 0.098 9.8 0.583/0.152 63.2 48.9 GPT 5.4 Medium 1.120 72.7 5.404/54.5 29.6 0.381 62.3 0.104 10.4 0.738/0.235 68.5 48.7 GPT 5.4 High 0.766 84.1 5.748/51.1 26.4 0.275 73.8 0.123 12.3 0.746/0.320 46.7 48.7 Qwen 3.7 Plus High 0.954 76.2 6.489/70.9 21.7 0.603 58.0 0.090 9.0 0.441/0.238 66.0 46.2 Gemini 3.1 Pro High 6.953 65.4 5.272/53.8 33.9 0.452 56.5 0.071 7.1 0.527/0.335 63.9 45.4 MiMo 2.5 High 0.824 79.4 6.618/58.2 25.0 0.639 49.8 0.091 9.1 0.827/0.299 43.7 41.4 Kimi K2.6 Reason 2.547 70.9 6.396/57.2 24.6 0.442 57.3 0.085 8.5 0.855/0.281..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:16",
+  "page": "arxiv:2607.22393v1",
+  "subject": "SceneActBench",
+  "object": "ScanQA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SceneActBench compares against 3D VQA benchmark ScanQA.",
+  "contexts": [
+   "[body] ...chmark coverage. Coverage of five 3D capabilities and three evaluation properties ( \u2713 full, \u2713 partial, \u2717 none). {NoHyper} 3D capability Evaluation Benchmark Spatial grounding Egocentric spatial reasoning Kinematic reasoning Shape imagination Dynamic reasoning Geom. score Multi- obj. Inter- active 3D question answering ScanQA (Azuma et al., 2022 ) \u2713 \u2717 \u2717 \u2717 \u2717 \u2717 \u2713 \u2717 SQA3D (Ma et al., 2023 ) \u2713 \u2713 \u2717 \u2717 \u2717 \u2717 \u2713 \u2717 Spatial457 (Wang et al., 2025 ) \u2713 \u2717 \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 Code-driven 3D and embodied agents BlenderGym (Gu et al., 2025 ) \u2713 \u2717 \u2717 \u2713 \u2717 \u2713 \u2713 \u2713 3DCodeBench (Gao et al., 2026 ) \u2717 \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 GameDevBench (Chi et al., 2026 ) \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 \u2713 EmbodiedBench (Yang et al.,...",
+   "[body] ...\u2717 \u2717 \u2713 \u2717 \u2713 \u2713 \u2713 3DCodeBench (Gao et al., 2026 ) \u2717 \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 GameDevBench (Chi et al., 2026 ) \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 \u2713 EmbodiedBench (Yang et al., 2025 ) \u2713 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 \u2713 SceneActBench \u2713 \u2713 \u2713 \u2713 \u2713 \u2713 \u2713 \u2713 3D understanding benchmarks. Many 3D benchmarks pose questions over a scan or rendered image and score a text answer, including ScanQA (Azuma et al., 2022 ) , SQA3D (Ma et al., 2023 ) , and Spatial457 (Wang et al., 2025 ) , with probes such as SpatialVLM [...] 4 Experiments 4.1 Setup We evaluate eleven configurations from ten proprietary VLMs. They are Claude Opus 4.6 (Anthropic, 2026a ) , Claude Sonnet 5 (Anthropic, 2026b ) , GPT 5.4 (Singh et al., 2026 ) , Gemin..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:17",
+  "page": "arxiv:2607.22393v1",
+  "subject": "SceneActBench",
+  "object": "SQA3D",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SceneActBench compares against 3D VQA benchmark SQA3D.",
+  "contexts": [
+   "[body] ...ties and three evaluation properties ( \u2713 full, \u2713 partial, \u2717 none). {NoHyper} 3D capability Evaluation Benchmark Spatial grounding Egocentric spatial reasoning Kinematic reasoning Shape imagination Dynamic reasoning Geom. score Multi- obj. Inter- active 3D question answering ScanQA (Azuma et al., 2022 ) \u2713 \u2717 \u2717 \u2717 \u2717 \u2717 \u2713 \u2717 SQA3D (Ma et al., 2023 ) \u2713 \u2713 \u2717 \u2717 \u2717 \u2717 \u2713 \u2717 Spatial457 (Wang et al., 2025 ) \u2713 \u2717 \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 Code-driven 3D and embodied agents BlenderGym (Gu et al., 2025 ) \u2713 \u2717 \u2717 \u2713 \u2717 \u2713 \u2713 \u2713 3DCodeBench (Gao et al., 2026 ) \u2717 \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 GameDevBench (Chi et al., 2026 ) \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 \u2713 EmbodiedBench (Yang et al., 2025 ) \u2713 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 \u2713 SceneActBench \u2713 \u2713 \u2713 \u2713...",
+   "[body] ...et al., 2026 ) \u2717 \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 GameDevBench (Chi et al., 2026 ) \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 \u2713 EmbodiedBench (Yang et al., 2025 ) \u2713 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 \u2713 SceneActBench \u2713 \u2713 \u2713 \u2713 \u2713 \u2713 \u2713 \u2713 3D understanding benchmarks. Many 3D benchmarks pose questions over a scan or rendered image and score a text answer, including ScanQA (Azuma et al., 2022 ) , SQA3D (Ma et al., 2023 ) , and Spatial457 (Wang et al., 2025 ) , with probes such as SpatialVLM [...] 4 Experiments 4.1 Setup We evaluate eleven configurations from ten proprietary VLMs. They are Claude Opus 4.6 (Anthropic, 2026a ) , Claude Sonnet 5 (Anthropic, 2026b ) , GPT 5.4 (Singh et al., 2026 ) , Gemini 3.1 Pro (Google DeepMind, 202..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:18",
+  "page": "arxiv:2607.22393v1",
+  "subject": "SceneActBench",
+  "object": "Blender",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SceneActBench uses Blender as the 3D environment.",
+  "contexts": [
+   "[body] ...nding Egocentric spatial reasoning Kinematic reasoning Shape imagination Dynamic reasoning Geom. score Multi- obj. Inter- active 3D question answering ScanQA (Azuma et al., 2022 ) \u2713 \u2717 \u2717 \u2717 \u2717 \u2717 \u2713 \u2717 SQA3D (Ma et al., 2023 ) \u2713 \u2713 \u2717 \u2717 \u2717 \u2717 \u2713 \u2717 Spatial457 (Wang et al., 2025 ) \u2713 \u2717 \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 Code-driven 3D and embodied agents BlenderGym (Gu et al., 2025 ) \u2713 \u2717 \u2717 \u2713 \u2717 \u2713 \u2713 \u2713 3DCodeBench (Gao et al., 2026 ) \u2717 \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 GameDevBench (Chi et al., 2026 ) \u2717 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 \u2713 EmbodiedBench (Yang et al., 2025 ) \u2713 \u2717 \u2713 \u2717 \u2713 \u2717 \u2713 \u2713 SceneActBench \u2713 \u2713 \u2713 \u2713 \u2713 \u2713 \u2713 \u2713 3D understanding benchmarks. Many 3D benchmarks pose questions over a scan or rendered image and score a text answer...",
+   "[body] ...5 (Xiaomi, 2026 ) , and Kimi K2.6 (Kimi, 2026 ) . Configurations labelled High use the provider\u2019s high setting. GPT 5.4 Medium is the lower-effort control. Kimi Reason enables reasoning. To keep the comparison fair, we built one shared harness and ran every configuration through it. All configurations drive a headless Blender through the same Model Context Protocol (MCP) interface. The shared prompts name four core Blender tools: get_scene_info and get_object_info for inspection, execute_blender_code for Python, and render_scene_view for visual checks. Dynamic also provides read_reference_frames for retrieving video frames. The task budgets are 30 step...",
+   "[body] ...igh setting. GPT 5.4 Medium is the lower-effort control. Kimi Reason enables reasoning. To keep the comparison fair, we built one shared harness and ran every configuration through it. All configurations drive a headless Blender through the same Model Context Protocol (MCP) interface. The shared prompts name four core Blender tools: get_scene_info and get_object_info for inspection, execute_blender_code for Python, and render_scene_view for visual checks. Dynamic also provides read_reference_frames for retrieving video frames. The task budgets are 30 steps for Layout and Camera, 60 for Articulated, 35 for Reconstruction, and 80 for Dynamic. Appendix B...."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:19",
+  "page": "arxiv:2607.22397v1",
+  "subject": "Nimbus Personalizer",
+  "object": "EEGNet",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nimbus Personalizer works with EEGNet as a frozen trunk.",
+  "contexts": [
+   "[body] ...1 Introduction Deep MI encoders are no longer a single architecture: EEGNet (Lawhern et al. , 2018 ) , Shallow/Deep ConvNets (Schirrmeister et al. , 2017 ) , EEG Conformer (Song et al. , 2023 ) , and ATCNet (Altaheri et al. , 2023 ) (among others) all ship as plausible frozen trunks. Session and subject shift remain central failure modes (Lotte et al. , 2018 ; Jayaram et al. , 2016 ) . Our controlled stres...",
+   "[body] .... Empirical questions. 1. (Primary) Does one Personalizer API run on heterogeneous frozen trunks (classical + foundation) without per-trunk redesign? 2. Where does the Bayesian head improve utility under shift (supporting: capacity-dependent usefulness)? 3. Is that cheap path competitive with fine-tune / PEFT on cost (EEGNet classical; REVE foundation, including LoRA)? 4. How often does soft cal-only-when-clean transfer, versus a strict ordinal mid-tier schedule? Main takeaway. Ship one Personalizer API; treat fine-tune / PEFT as priced escape hatches. The interface is the product; head gains are evidence it is useful where capacity exists\u2014not a claim...",
+   "[body] ...a new API (Figure 9 ): under severe shift, L1 lifts mean utility on Zhou and Kumar; BNCI (3-channel) stays near chance\u2014capacity, not contract, is the limit. As a foundation spotlight we then price the head against linear probe, point LoRA (FFN/head linears; the PEFT intermediate method that is unfair to judge on tiny EEGNet alone), and mean-pooled last-layer / full FT under a matched label budget (Figure 10 , Table 6 ; Modal L40S, warm-start CE with early stopping). Full FT uses a pooled Linear head with differential LR (backbone 10 \u2212 5 10^{-5} , head 10 \u2212 3 10^{-3} ) rather than the encoder\u2019s raw token-level classifier, which is a weak strawman on mu..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:20",
+  "page": "arxiv:2607.22397v1",
+  "subject": "Nimbus Personalizer",
+  "object": "EEG Conformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nimbus Personalizer works with EEG Conformer as a frozen trunk.",
+  "contexts": [
+   "[body] ...1 Introduction Deep MI encoders are no longer a single architecture: EEGNet (Lawhern et al. , 2018 ) , Shallow/Deep ConvNets (Schirrmeister et al. , 2017 ) , EEG Conformer (Song et al. , 2023 ) , and ATCNet (Altaheri et al. , 2023 ) (among others) all ship as plausible frozen trunks. Session and subject shift remain central failure modes (Lotte et al. , 2018 ; Jayaram et al. , 2016 ) . Our controlled stress here is a synthetic channel-mix stress grid that induces channel mixing and bias (Secti..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:21",
+  "page": "arxiv:2607.22397v1",
+  "subject": "Nimbus Personalizer",
+  "object": "ATCNet",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nimbus Personalizer works with ATCNet as a frozen trunk.",
+  "contexts": [
+   "[body] ...1 Introduction Deep MI encoders are no longer a single architecture: EEGNet (Lawhern et al. , 2018 ) , Shallow/Deep ConvNets (Schirrmeister et al. , 2017 ) , EEG Conformer (Song et al. , 2023 ) , and ATCNet (Altaheri et al. , 2023 ) (among others) all ship as plausible frozen trunks. Session and subject shift remain central failure modes (Lotte et al. , 2018 ; Jayaram et al. , 2016 ) . Our controlled stress here is a synthetic channel-mix stress grid that induces channel mixing and bias (Section 3 )\u2014a proxy for recoverable distributio...",
+   "[abstract] ...on heterogeneous frozen trunks without a new personalization stack per architecture. Thesis (systems): the contribution is the trunk-agnostic API - not LDA-on-embeddings as an ML novelty - so OEMs integrate once and swap trunks. Evidence: the same surface runs on five classical trunks EEGNet, Shallow, Deep, Conformer, ATCNet x four MI datasets (18 cells) and on a foundation encoder (REVE) under the same Personalizer. Where embedding capacity exists, the head is a cheap default mid-point versus warm-start fine-tune or PEFT, costing orders of magnitude less adaptation wall time while recovering much of the fine-tune accuracy gain; calibration-only-when-c..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:22",
+  "page": "arxiv:2607.22397v1",
+  "subject": "Nimbus Personalizer",
+  "object": "REVE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nimbus Personalizer works with foundation encoder REVE.",
+  "contexts": [
+   "[body] ...ons. 1. (Primary) Does one Personalizer API run on heterogeneous frozen trunks (classical + foundation) without per-trunk redesign? 2. Where does the Bayesian head improve utility under shift (supporting: capacity-dependent usefulness)? 3. Is that cheap path competitive with fine-tune / PEFT on cost (EEGNet classical; REVE foundation, including LoRA)? 4. How often does soft cal-only-when-clean transfer, versus a strict ordinal mid-tier schedule? Main takeaway. Ship one Personalizer API; treat fine-tune / PEFT as priced escape hatches. The interface is the product; head gains are evidence it is useful where capacity exists\u2014not a claim that one classifie...",
+   "[body] ...\\times dataset cells, distinguishing a reliable calibration-only-when-clean default ( 12 / 18 12/18 ) from a conditional strict-ordinal schedule ( 5 / 18 5/18 ) (\u00a7 5 ). 4. An accuracy\u2013cost comparison positioning the head as a cheap default versus warm-start fine-tune and PEFT on every classical trunk and on foundation REVE (\u00a7 6 ). 5. A head-family study (LDA/QDA/Softmax) that scopes QDA-dominance to a channel-mix-on-BNCI [...] evaluation metrics). When FT \u2264 \\leq frozen we report absolute accuracies (recovery ratio vs FT \u0394 \u200b acc \\Delta\\mathrm{acc} is not meaningful). Bake-off wall ratio = wall FT / wall head =\\mathrm{wall}_{\\mathrm{FT}}/\\mathrm{wall}_{...",
+   "[body] ...rm{acc} is not meaningful). Bake-off wall ratio = wall FT / wall head =\\mathrm{wall}_{\\mathrm{FT}}/\\mathrm{wall}_{\\mathrm{head}} . Dataset Acc frozen Acc head Acc FT vs FT Bake-off wall BNCI 0.523 0.550 0.512 beats FT \u223c 23 \u00d7 {\\sim}23\\times Zhou 0.393 0.540 0.488 beats FT \u223c 22 \u00d7 {\\sim}22\\times 6.3 Spotlight: foundation REVE The same Personalizer ladder runs on Hub REVE (El Ouahidi et al. , 2025 ) without a new API (Figure 9 ): under severe shift, L1 lifts mean utility on Zhou and Kumar; BNCI (3-channel) stays near chance\u2014capacity, not contract, is the limit. As a foundation spotlight we then price the head against linear probe, point LoRA (FFN/head line..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:23",
+  "page": "arxiv:2607.22397v1",
+  "subject": "Nimbus Personalizer",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nimbus Personalizer considers LoRA as an optional escape hatch.",
+  "contexts": [
+   "[body] ...Personalizer API run on heterogeneous frozen trunks (classical + foundation) without per-trunk redesign? 2. Where does the Bayesian head improve utility under shift (supporting: capacity-dependent usefulness)? 3. Is that cheap path competitive with fine-tune / PEFT on cost (EEGNet classical; REVE foundation, including LoRA)? 4. How often does soft cal-only-when-clean transfer, versus a strict ordinal mid-tier schedule? Main takeaway. Ship one Personalizer API; treat fine-tune / PEFT as priced escape hatches. The interface is the product; head gains are evidence it is useful where capacity exists\u2014not a claim that one classifier always wins. Contribution...",
+   "[body] ...EVE The same Personalizer ladder runs on Hub REVE (El Ouahidi et al. , 2025 ) without a new API (Figure 9 ): under severe shift, L1 lifts mean utility on Zhou and Kumar; BNCI (3-channel) stays near chance\u2014capacity, not contract, is the limit. As a foundation spotlight we then price the head against linear probe, point LoRA (FFN/head linears; the PEFT intermediate method that is unfair to judge on tiny EEGNet alone), and mean-pooled last-layer / full FT under a matched label budget (Figure 10 , Table 6 ; Modal L40S, warm-start CE with early stopping). Full FT uses a pooled Linear head with differential LR (backbone 10 \u2212 5 10^{-5} , head 10 \u2212 3 10^{-3} )...",
+   "[body] ...0/L1/L2 Personalizer ladder (severe, n = 40 n{=}40 ). Head (L1) helps on Zhou and Kumar; BNCI remains a capacity boundary. Figure 10: Spotlight \u2014 Hub REVE denser baselines (severe, n = 40 n{=}40 ). Top: \u0394 \u200b acc \\Delta\\mathrm{acc} vs frozen Personalizer (cal fit only). Bottom: adaptation fit wall. Arms: head / linear / LoRA / last / full \u2014 LoRA is the honest PEFT intermediate method on a large pretrained trunk (EEGNet LoRA alone is not). Last-layer / full FT use the same mean-pooled Linear head as LoRA (not the encoder\u2019s raw token-level classifier); full FT uses differential LR. Table 6: Frozen REVE severe n = 40 n{=}40 : Personalizer vs LoRA / last-lay..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:24",
+  "page": "arxiv:2607.22397v1",
+  "subject": "Nimbus Personalizer",
+  "object": "BNCI",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Nimbus Personalizer is evaluated on BNCI dataset.",
+  "contexts": [
+   "[body] ...) from a conditional strict-ordinal schedule ( 5 / 18 5/18 ) (\u00a7 5 ). 4. An accuracy\u2013cost comparison positioning the head as a cheap default versus warm-start fine-tune and PEFT on every classical trunk and on foundation REVE (\u00a7 6 ). 5. A head-family study (LDA/QDA/Softmax) that scopes QDA-dominance to a channel-mix-on-BNCI [...] evaluation metrics). When FT \u2264 \\leq frozen we report absolute accuracies (recovery ratio vs FT \u0394 \u200b acc \\Delta\\mathrm{acc} is not meaningful). Bake-off wall ratio = wall FT / wall head =\\mathrm{wall}_{\\mathrm{FT}}/\\mathrm{wall}_{\\mathrm{head}} . Dataset Acc frozen Acc head Acc FT vs FT Bake-off wall BNCI 0.523 0.550 0.512 beats...",
+   "[body] ...-mix-on-BNCI [...] evaluation metrics). When FT \u2264 \\leq frozen we report absolute accuracies (recovery ratio vs FT \u0394 \u200b acc \\Delta\\mathrm{acc} is not meaningful). Bake-off wall ratio = wall FT / wall head =\\mathrm{wall}_{\\mathrm{FT}}/\\mathrm{wall}_{\\mathrm{head}} . Dataset Acc frozen Acc head Acc FT vs FT Bake-off wall BNCI 0.523 0.550 0.512 beats FT \u223c 23 \u00d7 {\\sim}23\\times Zhou 0.393 0.540 0.488 beats FT \u223c 22 \u00d7 {\\sim}22\\times 6.3 Spotlight: foundation REVE The same Personalizer ladder runs on Hub REVE (El Ouahidi et al. , 2025 ) without a new API (Figure 9 ): under severe shift, L1 lifts mean utility on Zhou and Kumar; BNCI (3-channel) stays near chance\u2014...",
+   "[body] ...Bake-off wall BNCI 0.523 0.550 0.512 beats FT \u223c 23 \u00d7 {\\sim}23\\times Zhou 0.393 0.540 0.488 beats FT \u223c 22 \u00d7 {\\sim}22\\times 6.3 Spotlight: foundation REVE The same Personalizer ladder runs on Hub REVE (El Ouahidi et al. , 2025 ) without a new API (Figure 9 ): under severe shift, L1 lifts mean utility on Zhou and Kumar; BNCI (3-channel) stays near chance\u2014capacity, not contract, is the limit. As a foundation spotlight we then price the head against linear probe, point LoRA (FFN/head linears; the PEFT intermediate method that is unfair to judge on tiny EEGNet alone), and mean-pooled last-layer / full FT under a matched label budget (Figure 10 , Table 6 ; M..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:25",
+  "page": "arxiv:2607.22397v1",
+  "subject": "Nimbus Personalizer",
+  "object": "Zhou",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Nimbus Personalizer is evaluated on Zhou dataset.",
+  "contexts": [
+   "[body] ...q frozen we report absolute accuracies (recovery ratio vs FT \u0394 \u200b acc \\Delta\\mathrm{acc} is not meaningful). Bake-off wall ratio = wall FT / wall head =\\mathrm{wall}_{\\mathrm{FT}}/\\mathrm{wall}_{\\mathrm{head}} . Dataset Acc frozen Acc head Acc FT vs FT Bake-off wall BNCI 0.523 0.550 0.512 beats FT \u223c 23 \u00d7 {\\sim}23\\times Zhou 0.393 0.540 0.488 beats FT \u223c 22 \u00d7 {\\sim}22\\times 6.3 Spotlight: foundation REVE The same Personalizer ladder runs on Hub REVE (El Ouahidi et al. , 2025 ) without a new API (Figure 9 ): under severe shift, L1 lifts mean utility on Zhou and Kumar; BNCI (3-channel) stays near chance\u2014capacity, not contract, is the limit. As a foundation...",
+   "[body] ...ead Acc FT vs FT Bake-off wall BNCI 0.523 0.550 0.512 beats FT \u223c 23 \u00d7 {\\sim}23\\times Zhou 0.393 0.540 0.488 beats FT \u223c 22 \u00d7 {\\sim}22\\times 6.3 Spotlight: foundation REVE The same Personalizer ladder runs on Hub REVE (El Ouahidi et al. , 2025 ) without a new API (Figure 9 ): under severe shift, L1 lifts mean utility on Zhou and Kumar; BNCI (3-channel) stays near chance\u2014capacity, not contract, is the limit. As a foundation spotlight we then price the head against linear probe, point LoRA (FFN/head linears; the PEFT intermediate method that is unfair to judge on tiny EEGNet alone), and mean-pooled last-layer / full FT under a matched label budget (Figure...",
+   "[body] ...). Full FT uses a pooled Linear head with differential LR (backbone 10 \u2212 5 10^{-5} , head 10 \u2212 3 10^{-3} ) rather than the encoder\u2019s raw token-level classifier, which is a weak strawman on multi-channel REVE. Figure 9: Frozen REVE under the same L0/L1/L2 Personalizer ladder (severe, n = 40 n{=}40 ). Head (L1) helps on Zhou and Kumar; BNCI remains a capacity boundary. Figure 10: Spotlight \u2014 Hub REVE denser baselines (severe, n = 40 n{=}40 ). Top: \u0394 \u200b acc \\Delta\\mathrm{acc} vs frozen Personalizer (cal fit only). Bottom: adaptation fit wall. Arms: head / linear / LoRA / last / full \u2014 LoRA is the honest PEFT intermediate method on a large pretrained trunk..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:26",
+  "page": "arxiv:2607.22397v1",
+  "subject": "Nimbus Personalizer",
+  "object": "Kumar",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Nimbus Personalizer is evaluated on Kumar dataset.",
+  "contexts": [
+   "[body] ...T vs FT Bake-off wall BNCI 0.523 0.550 0.512 beats FT \u223c 23 \u00d7 {\\sim}23\\times Zhou 0.393 0.540 0.488 beats FT \u223c 22 \u00d7 {\\sim}22\\times 6.3 Spotlight: foundation REVE The same Personalizer ladder runs on Hub REVE (El Ouahidi et al. , 2025 ) without a new API (Figure 9 ): under severe shift, L1 lifts mean utility on Zhou and Kumar; BNCI (3-channel) stays near chance\u2014capacity, not contract, is the limit. As a foundation spotlight we then price the head against linear probe, point LoRA (FFN/head linears; the PEFT intermediate method that is unfair to judge on tiny EEGNet alone), and mean-pooled last-layer / full FT under a matched label budget (Figure 10 , Tabl...",
+   "[body] ...T uses a pooled Linear head with differential LR (backbone 10 \u2212 5 10^{-5} , head 10 \u2212 3 10^{-3} ) rather than the encoder\u2019s raw token-level classifier, which is a weak strawman on multi-channel REVE. Figure 9: Frozen REVE under the same L0/L1/L2 Personalizer ladder (severe, n = 40 n{=}40 ). Head (L1) helps on Zhou and Kumar; BNCI remains a capacity boundary. Figure 10: Spotlight \u2014 Hub REVE denser baselines (severe, n = 40 n{=}40 ). Top: \u0394 \u200b acc \\Delta\\mathrm{acc} vs frozen Personalizer (cal fit only). Bottom: adaptation fit wall. Arms: head / linear / LoRA / last / full \u2014 LoRA is the honest PEFT intermediate method on a large pretrained trunk (EEGNet L...",
+   "[body] ...ntial LR. Table 6: Frozen REVE severe n = 40 n{=}40 : Personalizer vs LoRA / last-layer / full FT (mean accuracy and adapt wall; Modal L40S; pooled-head FT recipe). \u0394 \u200b acc \\Delta\\mathrm{acc} is vs frozen Personalizer (cal fit only). Wall ratio = wall / wall head =\\mathrm{wall}/\\mathrm{wall}_{\\mathrm{head}} . Zhou: 4; Kumar: 18. Dataset Acc frozen Acc head Acc LoRA Acc last Acc full Wall LoRA/head Wall full/head Zhou 0.365 0.412 0.452 0.395 0.393 \u223c 8 \u00d7 {\\sim}8\\times \u223c 36 \u00d7 {\\sim}36\\times Kumar 0.490 0.548 0.539 0.511 0.528 \u223c 16 \u00d7 {\\sim}16\\times \u223c 51 \u00d7 {\\sim}51\\times Price. Personalizer adapt wall stays sub-second ( \u223c 0.15 \u200b s {\\sim}0.15\\,\\mathrm{s} );..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:27",
+  "page": "arxiv:2607.22400v1",
+  "subject": "self-calibrating agentic AI framework",
+  "object": "ARIMA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework uses ARIMA-based forecasting model.",
+  "contexts": [
+   "[body] ...II Related Work II-A LLMs and Agentic AI in Network Management II-B Theoretical Modeling of AI Telemetry Data II-C Telemetry-Driven Workload Forecasting and Profiling Models, and Reproducibility II-D Edge Resource Orchestration and Multi-Agent Systems III Architecture IV System Model and Ground Truth Formulation IV-A ARIMA-Based Forecasting Model IV-B Adaptive Parameter Search Algorithm for Forecasting V Data V-A RPI V-B JETSON VI Evaluation VI-A Experimental Setup VI-B Parameter Configuration VI-C Workload Composition VI-D Evaluation Metrics VI-E Results VI-F Discussion VII Conclusion References License: arXiv.org perpetual non-exclusive license arXi...",
+   "[body] ...ncreasing operational drift over time. To address this challenge, we propose and experimentally evaluate an agentic AI framework, designed to enforce autonomous integrity within LLM-driven systems. We design a self-calibration mechanism that mitigates drift and dynamically approximates ground truth by incorporating an ARIMA forecaster, without requiring continuous human oversight. To demonstrate the effectiveness and reliability of our methodology, we apply it to the complex domain of profiling the resource usage of zero-knowledge workloads in edge computing networks. Experimental results show that the proposed self-calibrating agentic framework succes...",
+   "[body] ...achieving a higher accuracy than baseline LLM agents by 91.7% for resource usage prediction and improving the prediction speed by 71.7% compared to pure profiling, establishing a robust foundation for deploying autonomous AI in decentralized infrastructures. Furthermore, the ground truth generation using the proposed ARIMA leaping algorithm is 52% faster than a standard ARIMA forecasting algorithm, while achieving the same accuracy. I Introduction The exponential growth of distributed Artificial Intelligence (AI) applications is forcing network service providers to rethink their network architectures and deployment plans. AI training and inference pro..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:28",
+  "page": "arxiv:2607.22400v1",
+  "subject": "self-calibrating agentic AI framework",
+  "object": "RPI",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The framework is evaluated on RPI edge resource platform.",
+  "contexts": [
+   "[body] ...lemetry Data II-C Telemetry-Driven Workload Forecasting and Profiling Models, and Reproducibility II-D Edge Resource Orchestration and Multi-Agent Systems III Architecture IV System Model and Ground Truth Formulation IV-A ARIMA-Based Forecasting Model IV-B Adaptive Parameter Search Algorithm for Forecasting V Data V-A RPI V-B JETSON VI Evaluation VI-A Experimental Setup VI-B Parameter Configuration VI-C Workload Composition VI-D Evaluation Metrics VI-E Results VI-F Discussion VII Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.22400v1 [cs.NI] 24 Jul 2026 A Self-Calibrating Agentic AI Framework for Autonomous Edge Res..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:29",
+  "page": "arxiv:2607.22400v1",
+  "subject": "self-calibrating agentic AI framework",
+  "object": "Jetson",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The framework is evaluated on Jetson edge resource platform.",
+  "contexts": [
+   "[body] ...Data II-C Telemetry-Driven Workload Forecasting and Profiling Models, and Reproducibility II-D Edge Resource Orchestration and Multi-Agent Systems III Architecture IV System Model and Ground Truth Formulation IV-A ARIMA-Based Forecasting Model IV-B Adaptive Parameter Search Algorithm for Forecasting V Data V-A RPI V-B JETSON VI Evaluation VI-A Experimental Setup VI-B Parameter Configuration VI-C Workload Composition VI-D Evaluation Metrics VI-E Results VI-F Discussion VII Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.22400v1 [cs.NI] 24 Jul 2026 A Self-Calibrating Agentic AI Framework for Autonomous Edge Resource Al..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:30",
+  "page": "arxiv:2607.22444v1",
+  "subject": "analysis of matrix constraint optimizers",
+  "object": "MuonH",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "The work analyzes MuonH matrix constraint optimizer.",
+  "contexts": [
+   "[body] ...1 Introduction In deep networks with scale-invariant structure, parameter norms, learning rates, and optimizer update directions jointly determine how the model actually moves through parameter space [ ballsun , 1 , 2 ] . Recent optimizers with matrix constraints, such as MuonH [ li2025normuon , cesista2025stiefel , rmnp , MuonH ] , restrict matrix-valued parameters to norm spheres with prescribed radii in an effort to reduce the influence of parameter-scale variation on training dynamics. Although these methods have shown promising empirical performance in large-scale pretraining, the mechanism underlying...",
+   "[body] ...roduction In deep networks with scale-invariant structure, parameter norms, learning rates, and optimizer update directions jointly determine how the model actually moves through parameter space [ ballsun , 1 , 2 ] . Recent optimizers with matrix constraints, such as MuonH [ li2025normuon , cesista2025stiefel , rmnp , MuonH ] , restrict matrix-valued parameters to norm spheres with prescribed radii in an effort to reduce the influence of parameter-scale variation on training dynamics. Although these methods have shown promising empirical performance in large-scale pretraining, the mechanism underlying their advantage remains unclear. In particular, it...",
+   "[body] ...sting that scale control is the more relevant mechanism. Hyperball fixes the parameter norm and normalizes the update; once the transient variation in c t c_{t} subsides, its angular effective learning rate closely tracks the prescribed base learning-rate schedule instead of being attenuated by parameter-norm growth [ MuonH , blake2024umup , kosson2025weightdecay ] . Hyperball can thus be viewed as an optimizer with an approximately controlled angular step size, which can produce the same delayed-convergence phenomenon associated with a larger effective learning rate. To test whether the slower initial convergence of MuonH is attributable to its larger..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:31",
+  "page": "arxiv:2607.22445v1",
+  "subject": "dynamic capability scoping framework",
+  "object": "tool-augmented LLM agents",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework builds on tool-augmented LLM agent architectures.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:32",
+  "page": "arxiv:2607.22458v1",
+  "subject": "phylogenetic signal analysis",
+  "object": "CLAP",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The study uses CLAP audio foundation model.",
+  "contexts": [
+   "[body] ...2021; r = 0.47). In every one of those studies the acoustic distances came from hand-crafted spectral features: fundamental frequency, spectral entropy, spectral centroid, Mel-frequency cepstral coefficients (MFCCs). The set of available representations has grown a lot since then. Large pretrained audio models such as CLAP (Wu et al., 2023), AST (Gong et al., 2021), and BEATs (Chen et al., 2023) map sound into high-dimensional embedding spaces where semantically or structurally similar recordings sit close together. On bioacoustic benchmarks they clearly outperform MFCCs (Hagiwara et al., 2022; Miron et al., 2025). What is unknown is whether the geomet...",
+   "[body] ...cks, and the elaborate underwater songs of Weddell seals. The Watkins Marine Mammal Sound Database (Watkins et al., 2004) provides a curated, freely available collection across 32 species. We use the Watkins data to ask whether acoustic distances from four representations (an MFCC baseline; the general-purpose AST and CLAP; and the bioacoustic BEATs-bio) correlate with phylogenetic distance. We check whether any observed correlation just reflects dominant frequency, using a partial Mantel test, and we inspect the species pairs that sit furthest from the trend. We then repeat the whole procedure on birds. Birds are a separate radiation with a very diffe...",
+   "[body] ..., would be wrong. AST is also trained by supervised classification, on AudioSet event tags, and it comes out the strongest of all four models. If an objective effect exists, it is fine-grained species discrimination specifically, not supervised training as a category. The second is architecture. BirdNET is a CNN. AST, CLAP, and BEATs are transformers, whose attention may be better at capturing long-range spectro-temporal structure than convolutions are. The awkward part is that in our model set the only convolutional model is also the only species classifier, so we cannot separate an architecture effect from an objective effect. This is a real confound..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:33",
+  "page": "arxiv:2607.22458v1",
+  "subject": "phylogenetic signal analysis",
+  "object": "AST",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The study uses AST audio foundation model.",
+  "contexts": [
+   "[body] ...y one of those studies the acoustic distances came from hand-crafted spectral features: fundamental frequency, spectral entropy, spectral centroid, Mel-frequency cepstral coefficients (MFCCs). The set of available representations has grown a lot since then. Large pretrained audio models such as CLAP (Wu et al., 2023), AST (Gong et al., 2021), and BEATs (Chen et al., 2023) map sound into high-dimensional embedding spaces where semantically or structurally similar recordings sit close together. On bioacoustic benchmarks they clearly outperform MFCCs (Hagiwara et al., 2022; Miron et al., 2025). What is unknown is whether the geometry these models impose o...",
+   "[body] ...phin clicks, and the elaborate underwater songs of Weddell seals. The Watkins Marine Mammal Sound Database (Watkins et al., 2004) provides a curated, freely available collection across 32 species. We use the Watkins data to ask whether acoustic distances from four representations (an MFCC baseline; the general-purpose AST and CLAP; and the bioacoustic BEATs-bio) correlate with phylogenetic distance. We check whether any observed correlation just reflects dominant frequency, using a partial Mantel test, and we inspect the species pairs that sit furthest from the trend. We then repeat the whole procedure on birds. Birds are a separate radiation with a ve...",
+   "[body] ...ed the Watkins Marine Mammal Sound Database via HuggingFace ( confit/wmms-parquet ), supplemented from the full Archive.org release ( watkins-marine-mammal-sound-database-full-cuts ) for species with fewer than 20 clips in the curated set. The final dataset held 1,754 recordings across 32 species (Table S1), with at least 23 clips per spec [...] experiment was designed to test the domain-specificity hypothesis directly. The result was negative. BirdNET, trained end-to-end to separate 6,000 bird species, did not beat the general-purpose models on birds, and its point estimate came in lower. BEATs-bio behaved similarly. Matching the training domain to th..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:34",
+  "page": "arxiv:2607.22458v1",
+  "subject": "phylogenetic signal analysis",
+  "object": "BEATs",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The study uses BEATs audio foundation model.",
+  "contexts": [
+   "[body] ...oustic distances came from hand-crafted spectral features: fundamental frequency, spectral entropy, spectral centroid, Mel-frequency cepstral coefficients (MFCCs). The set of available representations has grown a lot since then. Large pretrained audio models such as CLAP (Wu et al., 2023), AST (Gong et al., 2021), and BEATs (Chen et al., 2023) map sound into high-dimensional embedding spaces where semantically or structurally similar recordings sit close together. On bioacoustic benchmarks they clearly outperform MFCCs (Hagiwara et al., 2022; Miron et al., 2025). What is unknown is whether the geometry these models impose on audio also reflects evoluti...",
+   "[body] ...erwater songs of Weddell seals. The Watkins Marine Mammal Sound Database (Watkins et al., 2004) provides a curated, freely available collection across 32 species. We use the Watkins data to ask whether acoustic distances from four representations (an MFCC baseline; the general-purpose AST and CLAP; and the bioacoustic BEATs-bio) correlate with phylogenetic distance. We check whether any observed correlation just reflects dominant frequency, using a partial Mantel test, and we inspect the species pairs that sit furthest from the trend. We then repeat the whole procedure on birds. Birds are a separate radiation with a very different vocal biology, includ...",
+   "[body] ...gs across 32 species (Table S1), with at least 23 clips per spec [...] experiment was designed to test the domain-specificity hypothesis directly. The result was negative. BirdNET, trained end-to-end to separate 6,000 bird species, did not beat the general-purpose models on birds, and its point estimate came in lower. BEATs-bio behaved similarly. Matching the training domain to the test group is not by itself enough to improve phylogenetic-signal recovery. In our setup it did not help. Why the domain-adapted models score lower is not identifiable from four models. Three explanations are compatible with what we see, and we cannot rule any of them out. T..."
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:35",
+  "page": "arxiv:2607.22465v1",
+  "subject": "TRACE-ROUTER",
+  "object": "LLM routing",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "TRACE-ROUTER builds on LLM routing primitives for model selection.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:36",
+  "page": "arxiv:2607.22467v1",
+  "subject": "learning projected gradient descent solver iterates",
+  "object": "variational autoencoders",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The work uses variational autoencoders for data-driven global search.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_17.jsonl:37",
+  "page": "arxiv:2607.22467v1",
+  "subject": "learning projected gradient descent solver iterates",
+  "object": "diffusion models",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The work uses diffusion models for generating initial guesses.",
+  "contexts": [
+   "[body] ...rative models are useful in this setting because they can represent a distribution over multiple locally optimal solutions rather than a single deterministic solution. Once trained, they can quickly generate diverse initial guesses for a new problem instance. Prior work has used variational auto-encoders [ 9 , 2 ] and diffusion models [ 7 , 8 , 6 , 3 , 4 ] for this purpose in non-convex trajectory optimization. The main limitation is the cost of collecting good training data. Existing approaches generally keep only the final converged solution from each offline solver run. Thus, producing a large dataset requires solving many problem instances with var..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:0",
+  "page": "arxiv:2607.22468v1",
+  "subject": "ADAPT-GQE",
+  "object": "ADAPT-VQE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ADAPT-GQE builds on ADAPT-VQE for ground-state preparation.",
+  "contexts": [
+   "[body] ...Plateaus ] . Third, the number of variational parameters grows rapidly with system size, compounding shot-noise requirements and rendering the classical optimization increasingly expensive [ McClean2016Theory , Grimsley2019ADAPTVQE ] . The Adaptive Derivative-Assembled Problem-Tailored Variational Quantum Eigensolver, ADAPT-VQE [ Grimsley2019ADAPTVQE ] , was introduced to address the circuit depth problem through a fundamentally different construction strategy. Rather than committing to a fixed ansatz a priori , ADAPT-VQE iterati [...] evaluation, demonstrating the potential of generative transformers for automated quantum circuit synthesis. Finally, p...",
+   "[body] ...2016Theory , Grimsley2019ADAPTVQE ] . The Adaptive Derivative-Assembled Problem-Tailored Variational Quantum Eigensolver, ADAPT-VQE [ Grimsley2019ADAPTVQE ] , was introduced to address the circuit depth problem through a fundamentally different construction strategy. Rather than committing to a fixed ansatz a priori , ADAPT-VQE iterati [...] evaluation, demonstrating the potential of generative transformers for automated quantum circuit synthesis. Finally, parameter transfer and warm-starting strategies exploit the smoothness of quantum energy landscapes across related problem instances. Xu et al. [ Xu2025QAOAParameterTransfer ] use Graph Attention Net...",
+   "[body] ...Methods This section describes the key components of developing language models for ground state circuit generation. Section 3.1 describes training dataset construction, including generating diverse conformational structures of imipramine and calculating high-quality energy-minimizing circuits for each conformer using ADAPT-VQE. Section 3.2 discusses training of our models, including how quantum circuits are represented as inputs and outputs for our transformer architectures ( 3.2.1 ), a strategy for encoding molecular information as multimodal input ( 3.2.2 ), and architecture and training specifics for the two distinct models we consider ( 3.2.3 and..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:1",
+  "page": "arxiv:2607.22468v1",
+  "subject": "ADAPT-GQE",
+  "object": "Gemma 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ADAPT-GQE uses Gemma 3-based model for circuit generation.",
+  "contexts": [
+   "[body] ....2.1 ), a strategy for encoding molecular information as multimodal input ( 3.2.2 ), and architecture and training specifics for the two distinct models we consider ( 3.2.3 and 3.2.4 ). In particular, the architecture and training sections detail two complementary transformer architectures used in this work: a compact Gemma 3-based model [ gemmateam2025gemma3technicalreport ] with no prior pretraining, and a larger Nemotron 2 Nano [ nvidia2025nvidianemotronnano2 ] model pretrained on a general-purpose dataset, together with the training pipelines used to adapt them for circuit generation. 3.1 Data Generation We generate data according to two requiremen..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:2",
+  "page": "arxiv:2607.22468v1",
+  "subject": "ADAPT-GQE",
+  "object": "Nemotron 2 Nano",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ADAPT-GQE uses Nemotron 2 Nano pretrained model for circuit generation.",
+  "contexts": [
+   "[body] ...re and training specifics for the two distinct models we consider ( 3.2.3 and 3.2.4 ). In particular, the architecture and training sections detail two complementary transformer architectures used in this work: a compact Gemma 3-based model [ gemmateam2025gemma3technicalreport ] with no prior pretraining, and a larger Nemotron 2 Nano [ nvidia2025nvidianemotronnano2 ] model pretrained on a general-purpose dataset, together with the training pipelines used to adapt them for circuit generation. 3.1 Data Generation We generate data according to two requirements aligned with real-world application. First, the dataset must broadly cover the accessible confor..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:3",
+  "page": "arxiv:2607.22468v1",
+  "subject": "ADAPT-GQE",
+  "object": "QAOA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ADAPT-GQE studies parameter transfer from QAOA optimization.",
+  "contexts": [
+   "[body] ...1 Introduction Quantum computers hold the promise of solving computational problems that are fundamentally intractable for classical hardware, with potential applications spanning combinatorial optimization, cryptography, materials discovery, and quantum chemistry [ Farhi2014QAOA , Shor1997Algorithms , Cao2019QuantumChemistry ] . A central primitive underlying many of these applications is quantum state preparation: the task of constructing a quantum circuit that drives a system into a target state, such as the ground state of a problem Hamiltonian. The quality and efficiency of state preparation directly det...",
+   "[body] ...a fixed ansatz a priori , ADAPT-VQE iterati [...] evaluation, demonstrating the potential of generative transformers for automated quantum circuit synthesis. Finally, parameter transfer and warm-starting strategies exploit the smoothness of quantum energy landscapes across related problem instances. Xu et al. [ Xu2025QAOAParameterTransfer ] use Graph Attention Networks to transfer optimized QAOA parameters across graph instances; Bincoletto et al. [ Bincoletto2025TransferableVQE ] develop transferable machine learning models that predict VQE circuit parameters across different molecules, demonstrating systematic transferability to systems larger than...",
+   "[body] ...g the potential of generative transformers for automated quantum circuit synthesis. Finally, parameter transfer and warm-starting strategies exploit the smoothness of quantum energy landscapes across related problem instances. Xu et al. [ Xu2025QAOAParameterTransfer ] use Graph Attention Networks to transfer optimized QAOA parameters across graph instances; Bincoletto et al. [ Bincoletto2025TransferableVQE ] develop transferable machine learning models that predict VQE circuit parameters across different molecules, demonstrating systematic transferability to systems larger than those seen in training; and Qracle [ Zhang2025Qracle ] uses a graph neural..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:4",
+  "page": "arxiv:2607.22468v1",
+  "subject": "ADAPT-GQE",
+  "object": "VQE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ADAPT-GQE uses VQE as baseline for circuit optimization.",
+  "contexts": [
+   "[body] ...isq ] . Circuits must be kept shallow, optimization must tolerate noise, and algorithms must work within tight resource budgets \u2014 requirements that existing state preparation methods satisfy only partially, and which motivate the development of more efficient, automated approaches. The Variational Quantum Eigensolver (VQE) [ Peruzzo2014VQE , McClean2016Theory ] has emerged as the leading paradigm for near-term quantum chemistry, offering a hybrid quantum-classical approach in which a parameterized quantum circuit (the ansatz) prepares a trial wavefunction and a classical optimizer minimizes the expected energy. VQE is appealing because, in principle, i...",
+   "[body] ...ust be kept shallow, optimization must tolerate noise, and algorithms must work within tight resource budgets \u2014 requirements that existing state preparation methods satisfy only partially, and which motivate the development of more efficient, automated approaches. The Variational Quantum Eigensolver (VQE) [ Peruzzo2014VQE , McClean2016Theory ] has emerged as the leading paradigm for near-term quantum chemistry, offering a hybrid quantum-classical approach in which a parameterized quantum circuit (the ansatz) prepares a trial wavefunction and a classical optimizer minimizes the expected energy. VQE is appealing because, in principle, it can be implement...",
+   "[body] ...Quantum Eigensolver (VQE) [ Peruzzo2014VQE , McClean2016Theory ] has emerged as the leading paradigm for near-term quantum chemistry, offering a hybrid quantum-classical approach in which a parameterized quantum circuit (the ansatz) prepares a trial wavefunction and a classical optimizer minimizes the expected energy. VQE is appealing because, in principle, it can be implemented using relatively shallow parametrized circuits and exhibits some robustness to hardware noise. However, VQE is subject to several well-documented and severe limitations. First, in practice its performance depends critically on the choice of ansatz. Widely used chemistry-inspire..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:5",
+  "page": "arxiv:2607.22471v1",
+  "subject": "MineValiCoder",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MineValiCoder is evaluated on HumanEval with Pass@1 of 96.34%.",
+  "contexts": [
+   "[body] ...t interactions and performs mutual validation scoring to achieve stable and reliable selection of the optimal code. Extensive evaluations on four LLMs across mainstream benchmarks show that MineValiCoder significantly outperforms state-of-the-art methods. Specifically, MineValiCoder achieves Pass@1 scores of 96.34% on HumanEval, 87.40% on MBPP, 64.00% on APPS, and 51.33% on LiveCodeBench. These results strongly validate the effectiveness of our method in mitigating LLM stochasticity and substantially boosting the overall performance of automated code generation. Our code is available at: https://anonymous.4open.science/r/MVCoder-E3DD . I Introduction L...",
+   "[body] ...developed LLM-based Test-Driven Development (TDD) methods, which exploit execution feedback from test cases to iteratively refine LLM-generated code. For instance, [...] experiments on four LLMs with different scales, including GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP, 64.00 % 64.00\\% on APPS, and 51.33 % 51.33\\% on LiveCodeBench. Figure 2: Overview...",
+   "[body] ...luding GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP, 64.00 % 64.00\\% on APPS, and 51.33 % 51.33\\% on LiveCodeBench. Figure 2: Overview of MineValiCoder. The framework first employs TCQM to generate validated test cases, followed by Parallel TDD for iterative code optimization. Finally, BiCoTeV leverages a bipartite graph to mutually validate code and test..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:6",
+  "page": "arxiv:2607.22471v1",
+  "subject": "MineValiCoder",
+  "object": "MBPP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MineValiCoder is evaluated on MBPP with Pass@1 of 87.40%.",
+  "contexts": [
+   "[body] ...rforms mutual validation scoring to achieve stable and reliable selection of the optimal code. Extensive evaluations on four LLMs across mainstream benchmarks show that MineValiCoder significantly outperforms state-of-the-art methods. Specifically, MineValiCoder achieves Pass@1 scores of 96.34% on HumanEval, 87.40% on MBPP, 64.00% on APPS, and 51.33% on LiveCodeBench. These results strongly validate the effectiveness of our method in mitigating LLM stochasticity and substantially boosting the overall performance of automated code generation. Our code is available at: https://anonymous.4open.science/r/MVCoder-E3DD . I Introduction Large Language Models...",
+   "[body] ...d Test-Driven Development (TDD) methods, which exploit execution feedback from test cases to iteratively refine LLM-generated code. For instance, [...] experiments on four LLMs with different scales, including GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP, 64.00 % 64.00\\% on APPS, and 51.33 % 51.33\\% on LiveCodeBench. Figure 2: Overview of MineValiCoder....",
+   "[body] ...n2.5-Coder-7B and Qwen3-4B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP, 64.00 % 64.00\\% on APPS, and 51.33 % 51.33\\% on LiveCodeBench. Figure 2: Overview of MineValiCoder. The framework first employs TCQM to generate validated test cases, followed by Parallel TDD for iterative code optimization. Finally, BiCoTeV leverages a bipartite graph to mutually validate code and test cases, mitigating LLM stochas..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:7",
+  "page": "arxiv:2607.22471v1",
+  "subject": "MineValiCoder",
+  "object": "APPS",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MineValiCoder is evaluated on APPS with Pass@1 of 64.00%.",
+  "contexts": [
+   "[body] ...lidation scoring to achieve stable and reliable selection of the optimal code. Extensive evaluations on four LLMs across mainstream benchmarks show that MineValiCoder significantly outperforms state-of-the-art methods. Specifically, MineValiCoder achieves Pass@1 scores of 96.34% on HumanEval, 87.40% on MBPP, 64.00% on APPS, and 51.33% on LiveCodeBench. These results strongly validate the effectiveness of our method in mitigating LLM stochasticity and substantially boosting the overall performance of automated code generation. Our code is available at: https://anonymous.4open.science/r/MVCoder-E3DD . I Introduction Large Language Models (LLMs) have achi...",
+   "[body] ...Development (TDD) methods, which exploit execution feedback from test cases to iteratively refine LLM-generated code. For instance, [...] experiments on four LLMs with different scales, including GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP, 64.00 % 64.00\\% on APPS, and 51.33 % 51.33\\% on LiveCodeBench. Figure 2: Overview of MineValiCoder. The framework...",
+   "[body] ...B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP, 64.00 % 64.00\\% on APPS, and 51.33 % 51.33\\% on LiveCodeBench. Figure 2: Overview of MineValiCoder. The framework first employs TCQM to generate validated test cases, followed by Parallel TDD for iterative code optimization. Finally, BiCoTeV leverages a bipartite graph to mutually validate code and test cases, mitigating LLM stochasticity to identify the op..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:8",
+  "page": "arxiv:2607.22471v1",
+  "subject": "MineValiCoder",
+  "object": "LiveCodeBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MineValiCoder is evaluated on LiveCodeBench with Pass@1 of 51.33%.",
+  "contexts": [
+   "[body] ...achieve stable and reliable selection of the optimal code. Extensive evaluations on four LLMs across mainstream benchmarks show that MineValiCoder significantly outperforms state-of-the-art methods. Specifically, MineValiCoder achieves Pass@1 scores of 96.34% on HumanEval, 87.40% on MBPP, 64.00% on APPS, and 51.33% on LiveCodeBench. These results strongly validate the effectiveness of our method in mitigating LLM stochasticity and substantially boosting the overall performance of automated code generation. Our code is available at: https://anonymous.4open.science/r/MVCoder-E3DD . I Introduction Large Language Models (LLMs) have achieved competitive per...",
+   "[body] ...D) methods, which exploit execution feedback from test cases to iteratively refine LLM-generated code. For instance, [...] experiments on four LLMs with different scales, including GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP, 64.00 % 64.00\\% on APPS, and 51.33 % 51.33\\% on LiveCodeBench. Figure 2: Overview of MineValiCoder. The framework first employs T...",
+   "[body] ...d benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP, 64.00 % 64.00\\% on APPS, and 51.33 % 51.33\\% on LiveCodeBench. Figure 2: Overview of MineValiCoder. The framework first employs TCQM to generate validated test cases, followed by Parallel TDD for iterative code optimization. Finally, BiCoTeV leverages a bipartite graph to mutually validate code and test cases, mitigating LLM stochasticity to identify the optimal code candidate. II Rela..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:9",
+  "page": "arxiv:2607.22471v1",
+  "subject": "MineValiCoder",
+  "object": "GPT-4",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MineValiCoder experiments use GPT-4 as one of four tested LLMs.",
+  "contexts": [
+   "[body] ...2 , 27 , 2 , 25 ] . To improve the reliability of generated code, substantial research has developed LLM-based Test-Driven Development (TDD) methods, which exploit execution feedback from test cases to iteratively refine LLM-generated code. For instance, [...] experiments on four LLMs with different scales, including GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\%..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:10",
+  "page": "arxiv:2607.22471v1",
+  "subject": "MineValiCoder",
+  "object": "Llama 3.1",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MineValiCoder experiments test Llama3.1-8B for code generation.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:11",
+  "page": "arxiv:2607.22471v1",
+  "subject": "MineValiCoder",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MineValiCoder experiments test Qwen2.5-Coder-7B for code generation.",
+  "contexts": [
+   "[body] ...To improve the reliability of generated code, substantial research has developed LLM-based Test-Driven Development (TDD) methods, which exploit execution feedback from test cases to iteratively refine LLM-generated code. For instance, [...] experiments on four LLMs with different scales, including GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP, 64.00 % 64...."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:12",
+  "page": "arxiv:2607.22471v1",
+  "subject": "MineValiCoder",
+  "object": "CodeLlama",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MineValiCoder builds on CodeLlama for code generation ability.",
+  "contexts": [
+   "[body] ...LMs. This section reviews representative methods and highlights the specific gaps that our approach aims to address. II-A Direct Code Generation with LLMs The impressive progress in code generation is largely driven by LLMs pre-trained on massive datasets of code and natural language [ 8 , 2 , 22 , 17 ] . For example, CodeLlama [ 22 ] is further trained on code-centric corpora to strengthen its programming ability, while StarCoder [ 17 ] is trained on large-scale permissively licensed source code covering diverse programming languages. Given a natural-language problem description, these models can directly produce plausible and syntactically correct co..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:13",
+  "page": "arxiv:2607.22471v1",
+  "subject": "MineValiCoder",
+  "object": "StarCoder",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MineValiCoder builds on StarCoder for code generation ability.",
+  "contexts": [
+   "[body] ...to address. II-A Direct Code Generation with LLMs The impressive progress in code generation is largely driven by LLMs pre-trained on massive datasets of code and natural language [ 8 , 2 , 22 , 17 ] . For example, CodeLlama [ 22 ] is further trained on code-centric corpora to strengthen its programming ability, while StarCoder [ 17 ] is trained on large-scale permissively licensed source code covering diverse programming languages. Given a natural-language problem description, these models can directly produce plausible and syntactically correct code, supporting a wide range of tasks from code completion to program synthesis. However, due to the large..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:14",
+  "page": "arxiv:2607.22479v1",
+  "subject": "legal nugget extraction",
+  "object": "JUA-Juris",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Legal nugget extraction is evaluated on JUA-Juris jurisprudential dataset.",
+  "contexts": [
+   "[body] ...risprudential texts in Brazilian legal collections? For answering this question, we compare a full-document dense retrieval baseline with a nugget-based index in which each retrieved nugget is aggregated back to its source document. We evaluate this idea on four datasets from the JUA legal retrieval ecosystem [ 14 ] : JUA-Juris, JurisTCU [ 5 ] , NormasTCU, and BR-TaxQA [ 7 ] . The experiments compare the nugget-based index against a full-document dense retrieval baseline using the same embedding model. The results indicate a clear split. Nugget retrieval substantially improves results on jurisprudential [...] evaluation and citation, but the nugget ac...",
+   "[body] ...part of the retrieval model, not merely implementation details, because they determine how granular evidence is translated into the document ranking expected by legal search benchmarks. 4 Experimental Setup 4.1 Datasets We evaluate on four Portuguese legal retrieval datasets from the JUA benchmark ecosystem [ 14 ] : \u2022 JUA-Juris : a jurisprudential retrieval task introduced as part of JUA. The corpus is derived from curated TCU jurisprudence excerpts, and each query is based on an enunciado , i.e., a concise statement of the legal thesis associated with a ruling. Relevance is binary and centered on the exact query\u2013document pair, making this dataset espe...",
+   "[body] ...from the Brazilian Federal Revenue Service. The retrieval task is question-driven: systems must retrieve the answer or reference material associated with a taxpayer question, with graded relevance reflecting primary and secondary linked answers. The main target of this study is jurisprudential retrieval. Accordingly, JUA-Juris and JurisTCU use the jurisprudence-oriented nugget prompt described in Section 3, which focuses on legal theses consolidated by rulings. NormasTCU and BR-TaxQA are included as out-of-genre checks: they allow us to test whether the same granular retrieval idea transfers beyond jurisprudence to normative and question-driven legal..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:15",
+  "page": "arxiv:2607.22479v1",
+  "subject": "legal nugget extraction",
+  "object": "JurisTCU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Legal nugget extraction is evaluated on JurisTCU from Brazilian Federal Court of Accounts.",
+  "contexts": [
+   "[body] ...al texts in Brazilian legal collections? For answering this question, we compare a full-document dense retrieval baseline with a nugget-based index in which each retrieved nugget is aggregated back to its source document. We evaluate this idea on four datasets from the JUA legal retrieval ecosystem [ 14 ] : JUA-Juris, JurisTCU [ 5 ] , NormasTCU, and BR-TaxQA [ 7 ] . The experiments compare the nugget-based index against a full-document dense retrieval baseline using the same embedding model. The results indicate a clear split. Nugget retrieval substantially improves results on jurisprudential [...] evaluation and citation, but the nugget acts as the f...",
+   "[body] ...he corpus is derived from curated TCU jurisprudence excerpts, and each query is based on an enunciado , i.e., a concise statement of the legal thesis associated with a ruling. Relevance is binary and centered on the exact query\u2013document pair, making this dataset especially close to thesis-to-jurisprudence retrieval. \u2022 JurisTCU : a jurisprudential corpus from the Brazilian Federal Court of Accounts with query relevance judgments [ 5 ] . The original collection contains curated jurisprudence records with metadata and textual fields such as ENUNCIADO and EXCERTO , which correspond to the summary of a ruling and the supporting decision excerpt. Its queries...",
+   "[body] ...ilian Federal Revenue Service. The retrieval task is question-driven: systems must retrieve the answer or reference material associated with a taxpayer question, with graded relevance reflecting primary and secondary linked answers. The main target of this study is jurisprudential retrieval. Accordingly, JUA-Juris and JurisTCU use the jurisprudence-oriented nugget prompt described in Section 3, which focuses on legal theses consolidated by rulings. NormasTCU and BR-TaxQA are included as out-of-genre checks: they allow us to test whether the same granular retrieval idea transfers beyond jurisprudence to normative and question-driven legal search. For th..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:16",
+  "page": "arxiv:2607.22479v1",
+  "subject": "legal nugget extraction",
+  "object": "NormasTCU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Legal nugget extraction is evaluated on NormasTCU normative documents.",
+  "contexts": [
+   "[body] ...lian legal collections? For answering this question, we compare a full-document dense retrieval baseline with a nugget-based index in which each retrieved nugget is aggregated back to its source document. We evaluate this idea on four datasets from the JUA legal retrieval ecosystem [ 14 ] : JUA-Juris, JurisTCU [ 5 ] , NormasTCU, and BR-TaxQA [ 7 ] . The experiments compare the nugget-based index against a full-document dense retrieval baseline using the same embedding model. The results indicate a clear split. Nugget retrieval substantially improves results on jurisprudential [...] evaluation and citation, but the nugget acts as the first-stage eviden...",
+   "[body] ...jurisprudence records with metadata and textual fields such as ENUNCIADO and EXCERTO , which correspond to the summary of a ruling and the supporting decision excerpt. Its queries include real keyword searches and synthetic queries derived from ruling summaries, with relevance judgments that were manually verified. \u2022 NormasTCU : a retrieval task over normative documents from the same legal-administrative domain. Unlike jurisprudential collections, these documents are normative acts that establish general rules and are typically organized into provisions such as articles and paragraphs. In JUA, documents are represented by combining the subject summary...",
+   "[body] ...ed with a taxpayer question, with graded relevance reflecting primary and secondary linked answers. The main target of this study is jurisprudential retrieval. Accordingly, JUA-Juris and JurisTCU use the jurisprudence-oriented nugget prompt described in Section 3, which focuses on legal theses consolidated by rulings. NormasTCU and BR-TaxQA are included as out-of-genre checks: they allow us to test whether the same granular retrieval idea transfers beyond jurisprudence to normative and question-driven legal search. For these two datasets, we use slightly different prompts, adapted to extract atomic legal facts from normative texts and tax question\u2013answ..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:17",
+  "page": "arxiv:2607.22479v1",
+  "subject": "legal nugget extraction",
+  "object": "BR-TaxQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Legal nugget extraction is evaluated on BR-TaxQA tax-law question answering.",
+  "contexts": [
+   "[body] ...ections? For answering this question, we compare a full-document dense retrieval baseline with a nugget-based index in which each retrieved nugget is aggregated back to its source document. We evaluate this idea on four datasets from the JUA legal retrieval ecosystem [ 14 ] : JUA-Juris, JurisTCU [ 5 ] , NormasTCU, and BR-TaxQA [ 7 ] . The experiments compare the nugget-based index against a full-document dense retrieval baseline using the same embedding model. The results indicate a clear split. Nugget retrieval substantially improves results on jurisprudential [...] evaluation and citation, but the nugget acts as the first-stage evidence used to find...",
+   "[body] ...ve domain. Unlike jurisprudential collections, these documents are normative acts that establish general rules and are typically organized into provisions such as articles and paragraphs. In JUA, documents are represented by combining the subject summary field with the full text of the norm, and relevance is graded. \u2022 BR-TaxQA : a tax-law question answering retrieval benchmark with references for Brazilian personal income tax law [ 7 ] . It is based on FAQ-style questions and answers from the Brazilian Federal Revenue Service. The retrieval task is question-driven: systems must retrieve the answer or reference material associated with a taxpayer questi...",
+   "[body] ...ayer question, with graded relevance reflecting primary and secondary linked answers. The main target of this study is jurisprudential retrieval. Accordingly, JUA-Juris and JurisTCU use the jurisprudence-oriented nugget prompt described in Section 3, which focuses on legal theses consolidated by rulings. NormasTCU and BR-TaxQA are included as out-of-genre checks: they allow us to test whether the same granular retrieval idea transfers beyond jurisprudence to normative and question-driven legal search. For these two datasets, we use slightly different prompts, adapted to extract atomic legal facts from normative texts and tax question\u2013answer material ra..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:18",
+  "page": "arxiv:2607.22479v1",
+  "subject": "legal nugget extraction",
+  "object": "ColBERT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nugget retrieval relates to ColBERT late-interaction dense retrieval models.",
+  "contexts": [
+   "[body] ...e vector may dilute the signal of the legal thesis that matters for the query. The idea of retrieving smaller information units has appeared in several contexts. Passage retrieval and retrieval-augmented generation commonly decompose long documents into retrievable chunks [ 11 ] , while late-interaction models such as ColBERT preserve more granular matching signals inside the retrieval model [ 9 ] . In question answering and evidence-centered retrieval, short atomic pieces of information can also serve as evidence units that are easier to rank, inspect, and combine than full documents. Recent RAG work has made this explicit through information nuggets..."
+  ]
+ }
+]

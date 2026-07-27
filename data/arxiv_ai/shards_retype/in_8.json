@@ -1,0 +1,725 @@
+[
+ {
+  "sid": "out_3.jsonl:53",
+  "page": "arxiv:2607.21019v1",
+  "subject": "HiMe",
+  "object": "Gemini",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "HiMe integrates Gemini.",
+  "contexts": [
+   "[body] ...een run locally and span the Qwen2.5 (Yang et al. , 2024 ) , Qwen3 (Yang et al. , 2025 ) , Qwen3.5 (Qwen Team, 2026a ) , Qwen3.6 (Qwen Team, 2026b ) and Gemma-4 (Google DeepMind, 2026 ) families from 1.5B to 35B parameters, along with nemotron-3-nano, granite-4.1-8b and glm-4.7-flash. GPT-5-mini, DeepSeek-V4-flash and Gemini-3.5-flash are hosted-API frontier references. On-device execution is the right target for privacy and latency, so the question that matters is how far local small backbones remain from frontier models. We benchmarked latency and show the results in Appendix E . 4.1 Per-role agentic capability We give every agent in HiMe the same ba...",
+   "[body] ...rate of asserting a number with no backing query, measured on the analysis tasks. Each role keeps its own oracle, so a failure can be attributed to the role that caused it, a diagnosis unavailable in a single-role agent design. Backbone Route Analysis Memory Plan Halluc. \u2193 \\downarrow MT S5 tok/sess s/sess \u2193 \\downarrow Gemini-3.5-flash \u2020 0.98 0.94 0.89 0.98 0.01 0.98 0.37 42k \u2013 DeepSeek-V4-flash \u2020 1.00 0.85 0.97 1.00 0.00 0.84 0.00 66k \u2013 GPT-5-mini \u2020 0.88 0.76 0.99 0.88 0.00 0.63 0.00 206k \u2013 Qwen3.6-27b 1.00 0.91 1.00 0.99 0.00 0.76 0.20 253k 97.3 Qwen3.5-35b-a3b 1.00 0.91 0.98 0.84 0.00 0.96 0.26 169k 21.3 Qwen3-32b 1.00 0.68 0.81 0.80 0.00 0.69 0.00 1...",
+   "[body] ...s results for 12 representative backbones. Three findings stand out. First, local deployment rivals hosted frontier models. The strongest local backbones reach an analysis score of 0.91 (Qwen3.6-27b and Qwen3.5-35b-a3b), matching or surpassing DeepSeek-V4-flash (0.85) and GPT-5-mini (0.76) with no hallucinations; only Gemini-3.5-flash clearly leads (0.94). Second, capability does not scale monotonically with model size. Qwen3-30b-a3b, despite \u223c \\sim 3B active of 30B total parameters, trails the smaller dense Qwen3-8b on analysis (0.36 versus 0.47) and memory (0.33 versus 0.96). Analysis is the most discriminative capability, ranging 0.00\u20130.94, while ro..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:54",
+  "page": "arxiv:2607.21019v1",
+  "subject": "HiMe",
+  "object": "Qwen",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "HiMe integrates Qwen.",
+  "contexts": [
+   "[body] ...m each of five public wearable corpora, namely LifeSnaps (Yfantidou et al. , 2022 ) , PMData (Thambawita et al. , 2020 ) , MMASH (Rossi et al. , 2020 ) , CovIdentify (Cho et al. , 2024 ) and GLOBEM (Xu et al. , 2022 ) , each through its own data adapter. The sweep covers 22 backbones. Nineteen run locally and span the Qwen2.5 (Yang et al. , 2024 ) , Qwen3 (Yang et al. , 2025 ) , Qwen3.5 (Qwen Team, 2026a ) , Qwen3.6 (Qwen Team, 2026b ) and Gemma-4 (Google DeepMind, 2026 ) families from 1.5B to 35B parameters, along with nemotron-3-nano, granite-4.1-8b and glm-4.7-flash. GPT-5-mini, DeepSeek-V4-flash and Gemini-3.5-flash are hosted-API frontier referenc...",
+   "[body] ...orpora, namely LifeSnaps (Yfantidou et al. , 2022 ) , PMData (Thambawita et al. , 2020 ) , MMASH (Rossi et al. , 2020 ) , CovIdentify (Cho et al. , 2024 ) and GLOBEM (Xu et al. , 2022 ) , each through its own data adapter. The sweep covers 22 backbones. Nineteen run locally and span the Qwen2.5 (Yang et al. , 2024 ) , Qwen3 (Yang et al. , 2025 ) , Qwen3.5 (Qwen Team, 2026a ) , Qwen3.6 (Qwen Team, 2026b ) and Gemma-4 (Google DeepMind, 2026 ) families from 1.5B to 35B parameters, along with nemotron-3-nano, granite-4.1-8b and glm-4.7-flash. GPT-5-mini, DeepSeek-V4-flash and Gemini-3.5-flash are hosted-API frontier references. On-device execution is the r...",
+   "[body] ...tidou et al. , 2022 ) , PMData (Thambawita et al. , 2020 ) , MMASH (Rossi et al. , 2020 ) , CovIdentify (Cho et al. , 2024 ) and GLOBEM (Xu et al. , 2022 ) , each through its own data adapter. The sweep covers 22 backbones. Nineteen run locally and span the Qwen2.5 (Yang et al. , 2024 ) , Qwen3 (Yang et al. , 2025 ) , Qwen3.5 (Qwen Team, 2026a ) , Qwen3.6 (Qwen Team, 2026b ) and Gemma-4 (Google DeepMind, 2026 ) families from 1.5B to 35B parameters, along with nemotron-3-nano, granite-4.1-8b and glm-4.7-flash. GPT-5-mini, DeepSeek-V4-flash and Gemini-3.5-flash are hosted-API frontier references. On-device execution is the right target for privacy and la..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:55",
+  "page": "arxiv:2607.21028v2",
+  "subject": "BARGE",
+  "object": "BERT4Rec",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "BARGE compares to BERT4Rec.",
+  "contexts": [
+   "[body] ...reats the recent interaction history as an image and applies horizontal and vertical convolutions to capture sequential patterns. \u2022 HGN [ 32 ] : models long- and short-term user interests through hierarchical gating networks. \u2022 GRU4Rec [ 19 ] : adopts a GRU-based recurrent network to encode the interaction sequence. \u2022 BERT4Rec [ 38 ] : pretrains a bidirectional Transformer with a masked-item prediction objective. \u2022 FDSA [ 50 ] : introduces a feature-level self-attention block that complements item-level attention. \u2022 SASRec [ 23 ] : uses a unidirectional self-attention network for next-item prediction. \u2022 S 3 -Rec [ 53 ] : pretrains a sequential encoder..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:56",
+  "page": "arxiv:2607.21028v2",
+  "subject": "BARGE",
+  "object": "Transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "BARGE builds on Transformer.",
+  "contexts": [
+   "[body] ...mage and applies horizontal and vertical convolutions to capture sequential patterns. \u2022 HGN [ 32 ] : models long- and short-term user interests through hierarchical gating networks. \u2022 GRU4Rec [ 19 ] : adopts a GRU-based recurrent network to encode the interaction sequence. \u2022 BERT4Rec [ 38 ] : pretrains a bidirectional Transformer with a masked-item prediction objective. \u2022 FDSA [ 50 ] : introduces a feature-level self-attention block that complements item-level attention. \u2022 SASRec [ 23 ] : uses a unidirectional self-attention network for next-item prediction. \u2022 S 3 -Rec [ 53 ] : pretrains a sequential encoder with mutual-information-based self-supervisi..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:57",
+  "page": "arxiv:2607.21042v1",
+  "subject": "Faster IndexTTS-2",
+  "object": "IndexTTS-2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Faster IndexTTS-2 accelerates IndexTTS-2.",
+  "contexts": [
+   "[body] ...Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs Abstract I Introduction II System Design II-A Preliminary: IndexTTS-2 II-B System Overview II-C GPT Acceleration with TensorRT-LLM II-D Streaming Synthesis III Experiments III-A Experimental Setup III-B Comparison of IndexTTS-2 and Faster Inde...",
+   "[body] ...Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs Abstract I Introduction II System Design II-A Preliminary: IndexTTS-2 II-B System Overview II-C GPT Acceleration with TensorRT-LLM II-D Streaming Synthesis III Experiments III-A Experimental Setup III-B Comparison of IndexTTS-2 and Faster IndexTTS-2 III-C Performance of Streaming Synthesis III-D Performance of Batched Synthesis IV Conclusion References License: arXiv.org perpetual non-exclusive l...",
+   "[body] ...aster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs Abstract I Introduction II System Design II-A Preliminary: IndexTTS-2 II-B System Overview II-C GPT Acceleration with TensorRT-LLM II-D Streaming Synthesis III Experiments III-A Experimental Setup III-B Comparison of IndexTTS-2 and Faster IndexTTS-2 III-C Performance of Streaming Synthesis III-D Performance of Batched Synthesis IV Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.21042v1 [cs.AI] 23 Jul 2026 Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs Muyang D..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:58",
+  "page": "arxiv:2607.21042v1",
+  "subject": "Faster IndexTTS-2",
+  "object": "TensorRT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Faster IndexTTS-2 accelerates TensorRT.",
+  "contexts": [
+   "[body] ...Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs Abstract I Introduction II System Design II-A Preliminary: IndexTTS-2 II-B System Overview II-C GPT Acceleration with TensorRT-LLM II-D Streaming Synthesis III Experiments III-A Experimental Setup III-B Comparison of IndexTTS-2 and Faster IndexTTS-2 III-C Performance of Streaming Synthesis III-D Performance of Batched Synthesis IV Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.21042v1 [cs.AI] 23 Jul 2026 Faster IndexT...",
+   "[body] ...a GPT, a flow-matching Diffusion Transformer, and a vocoder. Despite its high synthesis quality, its inference speed barely reaches real-time without streaming or batching support. We present Faster IndexTTS-2, which accelerates all neural network components of IndexTTS-2 for production deployment on GPUs using NVIDIA TensorRT and TensorRT-LLM. Faster IndexTTS-2 also enables streaming synthesis for latency-sensitive interactive applications, and batched inference across all components to maximize GPU utilization. Experiments on the Seed-TTS benchmark for both English and Chinese demonstrate up to 5.0 \u00d7 \\times speedup on the autoregressive GPT and 3.6 \u00d7...",
+   "[body] ...-matching Diffusion Transformer, and a vocoder. Despite its high synthesis quality, its inference speed barely reaches real-time without streaming or batching support. We present Faster IndexTTS-2, which accelerates all neural network components of IndexTTS-2 for production deployment on GPUs using NVIDIA TensorRT and TensorRT-LLM. Faster IndexTTS-2 also enables streaming synthesis for latency-sensitive interactive applications, and batched inference across all components to maximize GPU utilization. Experiments on the Seed-TTS benchmark for both English and Chinese demonstrate up to 5.0 \u00d7 \\times speedup on the autoregressive GPT and 3.6 \u00d7 \\times end-t..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:59",
+  "page": "arxiv:2607.21042v1",
+  "subject": "Faster IndexTTS-2",
+  "object": "TensorRT-LLM",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Faster IndexTTS-2 accelerates TensorRT-LLM.",
+  "contexts": [
+   "[body] ...Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs Abstract I Introduction II System Design II-A Preliminary: IndexTTS-2 II-B System Overview II-C GPT Acceleration with TensorRT-LLM II-D Streaming Synthesis III Experiments III-A Experimental Setup III-B Comparison of IndexTTS-2 and Faster IndexTTS-2 III-C Performance of Streaming Synthesis III-D Performance of Batched Synthesis IV Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.21042v1 [cs.AI] 23 Jul 2026 Faster IndexT...",
+   "[body] ...-matching Diffusion Transformer, and a vocoder. Despite its high synthesis quality, its inference speed barely reaches real-time without streaming or batching support. We present Faster IndexTTS-2, which accelerates all neural network components of IndexTTS-2 for production deployment on GPUs using NVIDIA TensorRT and TensorRT-LLM. Faster IndexTTS-2 also enables streaming synthesis for latency-sensitive interactive applications, and batched inference across all components to maximize GPU utilization. Experiments on the Seed-TTS benchmark for both English and Chinese demonstrate up to 5.0 \u00d7 \\times speedup on the autoregressive GPT and 3.6 \u00d7 \\times end-t...",
+   "[body] ...reaching real-time, making it difficult to deploy in production. Recent inference optimization frameworks [ 24 , 23 , 18 , 33 , 22 ] have greatly accelerated neural network deployment. Among these, NVIDIA TensorRT [ 24 ] accelerates inference through graph optimization, operator fusion, and mixed-precision inference. TensorRT-LLM [ 23 ] extends TensorRT for autoregressive large language models, providing optimized attention [...] Experiments Figure 2: Streaming synthesis quality and latency of Faster IndexTTS-2 in FP16 across chunk sizes and overlap sizes on the Seed-TTS test sets. III-A Experimental Setup \u25a0 \\blacksquare Model. Faster IndexTTS-2 has..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:60",
+  "page": "arxiv:2607.21042v1",
+  "subject": "Faster IndexTTS-2",
+  "object": "GPT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Faster IndexTTS-2 accelerates GPT.",
+  "contexts": [
+   "[body] ...Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs Abstract I Introduction II System Design II-A Preliminary: IndexTTS-2 II-B System Overview II-C GPT Acceleration with TensorRT-LLM II-D Streaming Synthesis III Experiments III-A Experimental Setup III-B Comparison of IndexTTS-2 and Faster IndexTTS-2 III-C Performance of Streaming Synthesis III-D Performance of Batched Synthesis IV Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.21042v1 [cs.AI] 23...",
+   "[body] ...Du, Shuang Yu, Junjie Lai Abstract Autoregressive text-to-speech models achieve strong naturalness but suffer from slow inference due to sequential token generation, limiting their deployment in production applications that require low latency. IndexTTS-2 is a state-of-the-art autoregressive TTS model consisting of a GPT, a flow-matching Diffusion Transformer, and a vocoder. Despite its high synthesis quality, its inference speed barely reaches real-time without streaming or batching support. We present Faster IndexTTS-2, which accelerates all neural network components of IndexTTS-2 for production deployment on GPUs using NVIDIA TensorRT and TensorRT-...",
+   "[body] ...T and TensorRT-LLM. Faster IndexTTS-2 also enables streaming synthesis for latency-sensitive interactive applications, and batched inference across all components to maximize GPU utilization. Experiments on the Seed-TTS benchmark for both English and Chinese demonstrate up to 5.0 \u00d7 \\times speedup on the autoregressive GPT and 3.6 \u00d7 \\times end-to-end, with minimal degradation in word error rate, speaker similarity, and naturalness. Our methodology provides a practical reference for efficiently accelerating similar autoregressive speech models on GPUs. 1 1 1 Audio samples: https://faster-indextts-2.github.io I Introduction Recent advances in large-scale..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:61",
+  "page": "arxiv:2607.21042v1",
+  "subject": "Faster IndexTTS-2",
+  "object": "Diffusion Transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Faster IndexTTS-2 accelerates Diffusion Transformer.",
+  "contexts": [
+   "[body] ...e Lai Abstract Autoregressive text-to-speech models achieve strong naturalness but suffer from slow inference due to sequential token generation, limiting their deployment in production applications that require low latency. IndexTTS-2 is a state-of-the-art autoregressive TTS model consisting of a GPT, a flow-matching Diffusion Transformer, and a vocoder. Despite its high synthesis quality, its inference speed barely reaches real-time without streaming or batching support. We present Faster IndexTTS-2, which accelerates all neural network components of IndexTTS-2 for production deployment on GPUs using NVIDIA TensorRT and TensorRT-LLM. Faster IndexTTS-...",
+   "[abstract] ...Autoregressive text-to-speech models achieve strong naturalness but suffer from slow inference due to sequential token generation, limiting their deployment in production applications that require low latency. IndexTTS-2 is a state-of-the-art autoregressive TTS model consisting of a GPT, a flow-matching Diffusion Transformer, and a vocoder. Despite its high synthesis quality, its inference speed barely reaches real-time without streaming or batching support. We present Faster IndexTTS-2, which accelerates all neural network components of IndexTTS-2 for production deployment on GPUs using NVIDIA TensorRT and TensorRT-LLM. Faster IndexTTS-..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:62",
+  "page": "arxiv:2607.21063v1",
+  "subject": "QuantiBias",
+  "object": "Claude Sonnet",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QuantiBias benchmarks Claude Sonnet.",
+  "contexts": [
+   "[body] ....7, top- p p 0.95, fixed token budgets, the model\u2019s own chat template). We score the full-ladder generative probe with an in-family Qwen3-8B lean judge, which is fast enough to run at scale, and validate that scoring with two independent judges drawn from different vendors and from families outside the evaluation set: Claude Sonnet-5 (Anthropic) and Gemini-2.5-pro (Google), both fixed frontier models never themselves quantized, so the quantization under test cannot affect the instrument that measures them. The lean judge\u2019s validated quantity is the binary neutral-versus-endorsing distinction, which it recovers at about 94% against MBTP\u2019s own labeled re...",
+   "[body] ...ses; its absolute endorsement level is judge-family-dependent and far below what the independent judges assign. 2 2 2 \u201cIn-family\u201d means the judge, Qwen3-8B, is from the same model family as the anchor under test, so it cannot independently measure the bias level (Wataoka et al. , 2024 ) ; the two out-of-family judges (Claude Sonnet-5 and Gemini-2.5-pro) supply that. On the open generations the in-family judge scores well below them, so its rates understate the level, and the selective gap rests on the independent judges. What we claim is the selective gap: the short-form safeguards stay flat while open-ended generation carries a high stereotype rate un..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:63",
+  "page": "arxiv:2607.21063v1",
+  "subject": "QuantiBias",
+  "object": "Gemini",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QuantiBias benchmarks Gemini.",
+  "contexts": [
+   "[body] ...udgets, the model\u2019s own chat template). We score the full-ladder generative probe with an in-family Qwen3-8B lean judge, which is fast enough to run at scale, and validate that scoring with two independent judges drawn from different vendors and from families outside the evaluation set: Claude Sonnet-5 (Anthropic) and Gemini-2.5-pro (Google), both fixed frontier models never themselves quantized, so the quantization under test cannot affect the instrument that measures them. The lean judge\u2019s validated quantity is the binary neutral-versus-endorsing distinction, which it recovers at about 94% against MBTP\u2019s own labeled reference responses; its absolute...",
+   "[body] ...dorsement level is judge-family-dependent and far below what the independent judges assign. 2 2 2 \u201cIn-family\u201d means the judge, Qwen3-8B, is from the same model family as the anchor under test, so it cannot independently measure the bias level (Wataoka et al. , 2024 ) ; the two out-of-family judges (Claude Sonnet-5 and Gemini-2.5-pro) supply that. On the open generations the in-family judge scores well below them, so its rates understate the level, and the selective gap rests on the independent judges. What we claim is the selective gap: the short-form safeguards stay flat while open-ended generation carries a high stereotype rate under every judge we r...",
+   "[body] ...) separate safety-specific degradation from general capability loss. Multilingual construction. MBTP is built parallel across the eight languages by machine translation with back-translation quality control. Forty English source items are canonical; each is rendered into the other seven languages by a frontier model (Gemini 2.5 Pro), holding the content fixed so that only the language of presentation varies. Every translated field is independently back-translated (Gemini 2.5 Flash) and scored against its source for gross drift, with low-agreement rows flagged rather than dropped and reserved for native-speaker validation. This yields the 320-item para..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:64",
+  "page": "arxiv:2607.21063v1",
+  "subject": "QuantiBias",
+  "object": "MMLU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QuantiBias benchmarks MMLU.",
+  "contexts": [
+   "[body] ...bpw, the reasoning-load contrast, and the independent-judge scoring harness. An independent generative benchmark (CEB (Wang et al. , 2024 ) ) provides a second instrument over disjoint items; a next-token benchmark (StereoSet (Nadeem et al. , 2021 ) ) serves as a short-form negative control; and 2 capability anchors (MMLU-Redux (Gema et al. , 2025 ) , GSM8K (Cobbe et al. , 2021 ) ) separate safety-specific degradation from general capability loss. Multilingual construction. MBTP is built parallel across the eight languages by machine translation with back-translation quality control. Forty English source items are canonical; each is rendered into the..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:65",
+  "page": "arxiv:2607.21063v1",
+  "subject": "QuantiBias",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QuantiBias benchmarks GSM8K.",
+  "contexts": [
+   "[body] ...and the independent-judge scoring harness. An independent generative benchmark (CEB (Wang et al. , 2024 ) ) provides a second instrument over disjoint items; a next-token benchmark (StereoSet (Nadeem et al. , 2021 ) ) serves as a short-form negative control; and 2 capability anchors (MMLU-Redux (Gema et al. , 2025 ) , GSM8K (Cobbe et al. , 2021 ) ) separate safety-specific degradation from general capability loss. Multilingual construction. MBTP is built parallel across the eight languages by machine translation with back-translation quality control. Forty English source items are canonical; each is rendered into the other seven languages by a frontier..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:66",
+  "page": "arxiv:2607.21063v1",
+  "subject": "QuantiBias",
+  "object": "XSTest",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QuantiBias benchmarks XSTest.",
+  "contexts": [
+   "[body] ...er independent-ensemble re-scoring is the reference measurement, whose levels supersede the lean judge\u2019s. Benchmarks. The first group tests explicit safeguards: refusal of directly harmful requests and their jailbreak-wrapped versions (StrongREJECT (Souly et al. , 2024 ) ), over-refusal of benign-but-alarming prompts (XSTest (R\u00f6ttger et al. , 2024 ) ), and multiple-choice bias avoidance under ambiguity (BBQ (Parrish et al. , 2022 ) ). The second measures implicit behavior with a multilingual generative stereotype probe, MBTP (Kaneko et al. , 2026 ) , spanning 8 languages (Arabic, Chinese, English, French, German, Japanese, Russian, Spanish) and 13 soci...",
+   "[body] ...y rate carries a Wilson 95% interval. The safety checks hold flat. Table A3 reports the safeguard, capability, and MBTP benchmarks across the full Qwen3.6-27B ladder, from 16 to 1.13 measured bpw. The safeguards standard evaluations probe do not move: refusal of directly harmful requests stays at 0.98, over-refusal on XSTest near 0.33, and BBQ accuracy u..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:67",
+  "page": "arxiv:2607.21063v1",
+  "subject": "QuantiBias",
+  "object": "BBQ",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QuantiBias benchmarks BBQ.",
+  "contexts": [
+   "[body] ...the lean judge\u2019s. Benchmarks. The first group tests explicit safeguards: refusal of directly harmful requests and their jailbreak-wrapped versions (StrongREJECT (Souly et al. , 2024 ) ), over-refusal of benign-but-alarming prompts (XSTest (R\u00f6ttger et al. , 2024 ) ), and multiple-choice bias avoidance under ambiguity (BBQ (Parrish et al. , 2022 ) ). The second measures implicit behavior with a multilingual generative stereotype probe, MBTP (Kaneko et al. , 2026 ) , spanning 8 languages (Arabic, Chinese, English, French, German, Japanese, Russian, Spanish) and 13 social categories (Table A1 ). Each of its items pairs an open-ended request with a matched...",
+   "[body] ...n 95% interval. The safety checks hold flat. Table A3 reports the safeguard, capability, and MBTP benchmarks across the full Qwen3.6-27B ladder, from 16 to 1.13 measured bpw. The safeguards standard evaluations probe do not move: refusal of directly harmful requests stays at 0.98, over-refusal on XSTest near 0.33, and BBQ accuracy u..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:0",
+  "page": "arxiv:2607.21067v1",
+  "subject": "PrefReward",
+  "object": "LongLaMP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "PrefReward is evaluated on the LongLaMP dataset for personalized review writing.",
+  "contexts": [
+   "[body] ...eference matrix and integrates it into the decoding process as a reward signal. PrefReward consists of two stages: (1) extracting a user-specific preference matrix that summarizes individual stylistic tendencies, and (2) using the matrix to guide generation via a KL-divergence-based reward function. Experiments on the LongLaMP dataset show that PrefReward outperforms non-personalized and retrieval-based baselines in both generation quality and personalization interpretability. Personalized Generation, User preference modeling, Large language model \u2020 \u2020 copyright: acmlicensed \u2020 \u2020 journalyear: 2018 \u2020 \u2020 doi: XXXXXXX.XXXXXXX \u2020 \u2020 conference: The Web Conferen...",
+   "[body] ...methods require additional training to reliably align model outputs with user preferences \u2014 this includes supervised fine-tuning, preference-conditioned adapters, or reinforcement learning procedures. Such training demands labeled [...] Experiments 5.1. Experimental Setup 5.1.1. Datasets. We conduct experiments on the LongLaMP dataset, which provides user-level profiles and historical interaction records with long-context text samples (Kumar et al . , 2024 ) . We focus on the personalized review writing task. For each user, We randomly sample K = 2 K=2 representative profiles per user as the basis for preference extraction. 5.1.2. Baselines. We compare...",
+   "[body] ...The candidate with the highest KL-based reward is selected as the final output. All models are evaluated on NVIDIA A100 GPU. For the retriever, we employ both the BM25 implementation from rank_bm25 and the Contriever dense retriever from \u2019s facebook/contriever checkpoint. Table 1. Overall performance comparison on the LongLaMP dataset across two backbone LLMs. Best results under each model are highlighted in bold. Backbone Method ROUGE-1 ROUGE-L METEOR Zero-shot NonPers 0.3139 0.1445 0.1934 RAG (BM25) 0.2980 0.1417 0.1850 RAG (CT) 0.3022 0.1429 0.1880 CoS ( \u03bb \\lambda =1.0) 0.2539 0.1245 0.1602 CoS ( \u03bb \\lambda =2.0) 0.2365 0.1163 0.1513 \\rowcolor [HTML]..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:1",
+  "page": "arxiv:2607.21067v1",
+  "subject": "PrefReward",
+  "object": "Llama2-7B-Chat",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "PrefReward leverages Llama2-7B-Chat as the backbone model for zero-shot experiments.",
+  "contexts": [
+   "[body] ...trics. Following prior works (Kumar et al . , 2024 ) on personalized generation and retrieval-augmented LLMs, we adopt three widely used evaluation metrics to assess generation quality and personalization effectiveness: ROUGE-1, ROUGE-L, and METEOR. 5.1.4. Implementation Details. For zero-shot experiments, we leverage Llama2-7B-Chat as the backbone model. For aligned experiments, we align Gemma-2B-IT using a dataset of (prompt, target output) pairs. During preference extraction, we set the preference label list \ud835\udcab \\mathcal{P} to include 41 stylistic dimensions (e.g., formal , concise , vivid , humor , modest , energy , etc.) following prior work (Kim et...",
+   "[body] ...ned NonPers 0.2603 0.1359 0.1431 RAG (BM25) 0.3276 0.1736 0.1998 RAG (CT) 0.3277 0.1733 0.1999 CoS ( \u03bb \\lambda =1.0) 0.2869 0.1393 0.1945 CoS ( \u03bb \\lambda =2.0) 0.2491 0.1193 0.1713 \\rowcolor [HTML]F2F2F2 PrefReward 0.3387 0.1751 0.2090 5.2. Overall Results Table 1 reports the overall performance of all methods on both Llama2-7B-Chat and the aligned Gemma-2B-IT backbone. We evaluate using ROUGE-1, ROUGE-L, and METEOR, and the following observations can be made: \u2022 PrefReward consistently achieves the best performance across both models. On all three metrics, PrefReward surpasses strong personalization baselines, demonstrating that explicit preference mat..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:2",
+  "page": "arxiv:2607.21067v1",
+  "subject": "PrefReward",
+  "object": "Gemma-2B-IT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "PrefReward aligns Gemma-2B-IT for aligned experiments.",
+  "contexts": [
+   "[body] ...eration and retrieval-augmented LLMs, we adopt three widely used evaluation metrics to assess generation quality and personalization effectiveness: ROUGE-1, ROUGE-L, and METEOR. 5.1.4. Implementation Details. For zero-shot experiments, we leverage Llama2-7B-Chat as the backbone model. For aligned experiments, we align Gemma-2B-IT using a dataset of (prompt, target output) pairs. During preference extraction, we set the preference label list \ud835\udcab \\mathcal{P} to include 41 stylistic dimensions (e.g., formal , concise , vivid , humor , modest , energy , etc.) following prior work (Kim et al . , 2025 ) . Token-level logits are extracted at each generation ste...",
+   "[body] ...1 RAG (BM25) 0.3276 0.1736 0.1998 RAG (CT) 0.3277 0.1733 0.1999 CoS ( \u03bb \\lambda =1.0) 0.2869 0.1393 0.1945 CoS ( \u03bb \\lambda =2.0) 0.2491 0.1193 0.1713 \\rowcolor [HTML]F2F2F2 PrefReward 0.3387 0.1751 0.2090 5.2. Overall Results Table 1 reports the overall performance of all methods on both Llama2-7B-Chat and the aligned Gemma-2B-IT backbone. We evaluate using ROUGE-1, ROUGE-L, and METEOR, and the following observations can be made: \u2022 PrefReward consistently achieves the best performance across both models. On all three metrics, PrefReward surpasses strong personalization baselines, demonstrating that explicit preference matrices combined with KL-divergen...",
+   "[body] ...ligned generation. The gains are stable across backbones, indicating that the proposed method is model-agnostic and generalizes well to different LLM architectures. \u2022 RAG and CoS remain limited in long-context personalization. Retrieval-based approaches (BM25 and Contriever) provide moderate improvements\u2014especially on Gemma-2B-IT\u2014but their effectiveness is constrained by retrieval noise and their inability to capture persistent user-level stylistic tendencies. CoS, although training-free and lightweight, relies solely on contextual perturbation and thus struggles to maintain stable personalization when user histories grow longer or more complicated. Ov..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:3",
+  "page": "arxiv:2607.21067v1",
+  "subject": "PrefReward",
+  "object": "Contriever",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "PrefReward uses Contriever for dense embedding-based retrieval in RAG.",
+  "contexts": [
+   "[body] ...rative ability of the model. \u2022 RAG (BM25) : Retrieval-Augmented Generation using BM25 retriever to fetch relevant user profiles for contextual grounding. It provides a retrieval-based personalization reference (Salemi et al . , 2024a ) . \u2022 RAG (CT) : A retrieval-enhanced method that leverages dense embeddings from the Contriever model to retrieve user history semantically (Lei et al . , 2023 ) . \u2022 CoS ( \u03bb = 1.0 , 2.0 \\lambda=1.0,2.0 ) : Context Steering (CoS) is a training-free decoding method that amplifies user-specific context in generation. It compares outputs with and without context and uses \u03bb \\lambda to control the degree of personalization (He...",
+   "[body] ...{c}=10 candidate outputs per prompt using nucleus sampling ( p = 0.95 p=0.95 ) and temperature \u03c4 = 0.8 \\tau=0.8 . The candidate with the highest KL-based reward is selected as the final output. All models are evaluated on NVIDIA A100 GPU. For the retriever, we employ both the BM25 implementation from rank_bm25 and the Contriever dense retriever from \u2019s facebook/contriever checkpoint. Table 1. Overall performance comparison on the LongLaMP dataset across two backbone LLMs. Best results under each model are highlighted in bold. Backbone Method ROUGE-1 ROUGE-L METEOR Zero-shot NonPers 0.3139 0.1445 0.1934 RAG (BM25) 0.2980 0.1417 0.1850 RAG (CT) 0.3022 0....",
+   "[body] ...cleus sampling ( p = 0.95 p=0.95 ) and temperature \u03c4 = 0.8 \\tau=0.8 . The candidate with the highest KL-based reward is selected as the final output. All models are evaluated on NVIDIA A100 GPU. For the retriever, we employ both the BM25 implementation from rank_bm25 and the Contriever dense retriever from \u2019s facebook/contriever checkpoint. Table 1. Overall performance comparison on the LongLaMP dataset across two backbone LLMs. Best results under each model are highlighted in bold. Backbone Method ROUGE-1 ROUGE-L METEOR Zero-shot NonPers 0.3139 0.1445 0.1934 RAG (BM25) 0.2980 0.1417 0.1850 RAG (CT) 0.3022 0.1429 0.1880 CoS ( \u03bb \\lambda =1.0) 0.2539 0.1..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:4",
+  "page": "arxiv:2607.21068v1",
+  "subject": "CounterFundus",
+  "object": "EfficientNet-B5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CounterFundus integrates EfficientNet-B5 for retinal disease detection.",
+  "contexts": [
+   "[body] ...st, glaucoma exhibits the lowest IoU@0.3 of 0.480, likely because diffuse optic-disc cupping is less sharply captured under binary thresholding set at \u03c4 ( = 0.3 ) \\tau(=0.3) [ 21 ] . To examine whether the classifier and generator converge toward pathology-relevant representations, Fig. 5 shows the t-SNE projection of EfficientNet-B5 features using 200 samples per class. The well-separated clusters indicate geometrically distinct disease representations, consistent with the high CCAS across disease classes reported in Table 7 . Together, the near-symmetric confidence shift in Table 5 and separated feature clusters in Fig. 5 suggest that the classifier...",
+   "[body] ...lasses reported in Table 7 . Together, the near-symmetric confidence shift in Table 5 and separated feature clusters in Fig. 5 suggest that the classifier and generator independently capture overlapping pathology-relevant features [ 13 ] , supporting CCAS as a reliable assessment metric. Figure 5 : t-SNE projection of EfficientNet-B5 features. Further supporting this observation, Fig. 6 shows that counterfactual difference maps overlap well with classifier-discriminative regions. Moreover, EigenCAM also exhibits strong spatial agreement between the original fundus images and the counterfactuals, indicating reliable localization of pathological evidence...",
+   "[body] ...lowest pointing accuracy of 0.08, indicating that superpixel-level perturbations are less suitable for localizing continuous pathological regions in fundus images. GradCAM++ performs below GradCAM despite its higher-order gradient formulation, suggesting that first-order activation decomposition better represents the EfficientNet-B5 feature space in the present retinal disease detection task. The clear IoU@0.3 margin between EigenCAM and the gradient-based methods, i.e., 0.563 vs. 0.22, further indicates that covariance-based activation decomposition provides stronger spatial consistency with the counterfactual evidence [ 8 ] . The qualitative compari..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:5",
+  "page": "arxiv:2607.21068v1",
+  "subject": "CounterFundus",
+  "object": "CycleGAN",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CounterFundus uses CycleGAN for disease-to-normal fundus image translation.",
+  "contexts": [
+   "[body] ...ly motivating the spatial alignment protocol proposed in this work. Focusing on generating realistic counterfactual images through generative models, GAN-based counterfactual generation was later explored by Mertes e \u200b t et a \u200b l al . [ 9 ] , while Narayanaswamy e \u200b t et a \u200b l al . [ 10 ] extended this direction using CycleGAN-based abnormal-to-normal image translation. More recently, diffusion models have emerged as an alternative to GAN-based counterfactual generation, with Atad e \u200b t et a \u200b l al . [ 11 ] implementing a diffusion autoencoder for RetinaMNIST and Zigutyte e \u200b t et a \u200b l al . [ 12 ] using DDIM conditioning for histopathology explainabil...",
+   "[body] ...e translation. More recently, diffusion models have emerged as an alternative to GAN-based counterfactual generation, with Atad e \u200b t et a \u200b l al . [ 11 ] implementing a diffusion autoencoder for RetinaMNIST and Zigutyte e \u200b t et a \u200b l al . [ 12 ] using DDIM conditioning for histopathology explainability. In parallel, CycleGAN [ 13 ] has also shown substantial efficacy in fundus domain adaptation [ 14 ] as well as in multi-modal retinal image synthesis [ 15 ] . Moreover, Xue e [...] Evaluation Across Disease Categories This section evaluates the spatial agreement between counterfactual difference maps and classifier-derived saliency across retinal dise...",
+   "[body] ...Using EigenCAM Class Spearman Correlation ( \u03c1 \\rho ) IoU@0.3 PA Cataract 0.938 0.521 0.46 Diab. Ret. 0.959 0.689 0.64 Glaucoma 0.952 0.48 0.54 Overall 0.95 0.563 0.547 Figure 6 : CCAS visualization for (1) diabetic retinopathy, (2) glaucoma and (3) cataract disease classes. Columns show (a) original fundus image, (b) CycleGAN-generated normal counterfactual, (c) weighted difference map and (d) EigenCAM saliency map, respectively. 5.6 Explainability Analysis of the Proposed CounterFundus Framework In this section, CCAS is evaluated as an XAI assessment measure using EigenCAM across 50 samples per class and compared against different widely used salienc..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:6",
+  "page": "arxiv:2607.21068v1",
+  "subject": "CounterFundus",
+  "object": "EigenCAM",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "CounterFundus compares explainability against EigenCAM, which achieves strongest CCAS performance.",
+  "contexts": [
+   "[body] ...This section evaluates the spatial agreement between counterfactual difference maps and classifier-derived saliency across retinal disease categories. To avoid unstable counterfactual responses, samples having difference map standard deviations greater than 0.35 are excluded. Both the counterfactual difference map and EigenCAM saliency map are also resized to 56 \u00d7 56 56\\times 56 , with a circular ROI having radius of 0.35 \u200b H 0.35H . The CCAS metrics are computed using 50 samples per class and the results are reported in Table 7 , from which Spearman correlation is seen to exceed 0.93 for all classes, indicating strong rank-order agreement between coun...",
+   "[body] ...6\\times 56 , with a circular ROI having radius of 0.35 \u200b H 0.35H . The CCAS metrics are computed using 50 samples per class and the results are reported in Table 7 , from which Spearman correlation is seen to exceed 0.93 for all classes, indicating strong rank-order agreement between counterfactual difference maps and EigenCAM saliency. Diabetic retinopathy achieves the highest IoU@0.3 of 0.689 and P \u200b A PA of 0.64, consistent with spatially concentrated retinal hemorrhages being localized by both the generator and classifier [ 18 ] . In contrast, glaucoma exhibits the lowest IoU@0.3 of 0.480, likely because diffuse optic-disc cupping is less sharply c...",
+   "[body] ...ndently capture overlapping pathology-relevant features [ 13 ] , supporting CCAS as a reliable assessment metric. Figure 5 : t-SNE projection of EfficientNet-B5 features. Further supporting this observation, Fig. 6 shows that counterfactual difference maps overlap well with classifier-discriminative regions. Moreover, EigenCAM also exhibits strong spatial agreement between the original fundus images and the counterfactuals, indicating reliable localization of pathological evidence under the proposed CCAS protocol. Table 7 : Per-class CCAS Results Using EigenCAM Class Spearman Correlation ( \u03c1 \\rho ) IoU@0.3 PA Cataract 0.938 0.521 0.46 Diab. Ret. 0.959..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:7",
+  "page": "arxiv:2607.21068v1",
+  "subject": "CounterFundus",
+  "object": "GradCAM",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "CounterFundus evaluates performance against GradCAM and GradCAM++ saliency methods.",
+  "contexts": [
+   "[body] ...due to their black box-like decision making mechanism [ 1 , 2 ] . Also, clinicians require spatially grounded evidence behind pathological predictions, whereas most post-hoc explanation methods fall short, providing limited clinical interpretability. [ 3 ] . In this context, gradient-based attribution methods such as GradCAM [ 4 ] and its variants [ 5 ] can highlight discriminative regions within the classifiers\u2019 feature space but are fundamentally tied to the model\u2019s internal gradients and offer no insight how the same fundus image would appear without pathological changes. Perturbation-based methods, such as LIME [ 6 ] , rely on superpixel masking,...",
+   "[body] ...) weighted difference map and (d) EigenCAM saliency map, respectively. 5.6 Explainability Analysis of the Proposed CounterFundus Framework In this section, CCAS is evaluated as an XAI assessment measure using EigenCAM across 50 samples per class and compared against different widely used saliency methods. Among these, GradCAM and GradCAM++ are computed using class-specific targets, whereas LIME is implemented with 200 perturbation samples while retaining the top five superpixel features. The method-level aggregated CCAS results are reported in Table 8 . Table 8 : CCAS-based Comparison of XAI Interpretability Method Spearman Correlation ( \u03c1 \\rho ) IoU@0...",
+   "[body] ...ifference map and (d) EigenCAM saliency map, respectively. 5.6 Explainability Analysis of the Proposed CounterFundus Framework In this section, CCAS is evaluated as an XAI assessment measure using EigenCAM across 50 samples per class and compared against different widely used saliency methods. Among these, GradCAM and GradCAM++ are computed using class-specific targets, whereas LIME is implemented with 200 perturbation samples while retaining the top five superpixel features. The method-level aggregated CCAS results are reported in Table 8 . Table 8 : CCAS-based Comparison of XAI Interpretability Method Spearman Correlation ( \u03c1 \\rho ) IoU@0.3 PA GradCA..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:8",
+  "page": "arxiv:2607.21068v1",
+  "subject": "CounterFundus",
+  "object": "LIME",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "CounterFundus compares against LIME for saliency-based explanation.",
+  "contexts": [
+   "[body] ...tion methods such as GradCAM [ 4 ] and its variants [ 5 ] can highlight discriminative regions within the classifiers\u2019 feature space but are fundamentally tied to the model\u2019s internal gradients and offer no insight how the same fundus image would appear without pathological changes. Perturbation-based methods, such as LIME [ 6 ] , rely on superpixel masking, where the segmented regions are often biologically arbitrary and may not correspond to clinically meaningful structures such as the optic disc, macula or vessel arcades. Therefore, the research gap between saliency maps and clinical semantics remains unaddressed, particularly in multi-class retinal...",
+   "[body] ...6 Explainability Analysis of the Proposed CounterFundus Framework In this section, CCAS is evaluated as an XAI assessment measure using EigenCAM across 50 samples per class and compared against different widely used saliency methods. Among these, GradCAM and GradCAM++ are computed using class-specific targets, whereas LIME is implemented with 200 perturbation samples while retaining the top five superpixel features. The method-level aggregated CCAS results are reported in Table 8 . Table 8 : CCAS-based Comparison of XAI Interpretability Method Spearman Correlation ( \u03c1 \\rho ) IoU@0.3 PA GradCAM 0.751 0.22 0.26 GradCAM++ 0.629 0.187 0.253 LIME 0.4 0.2 0....",
+   "[body] ...is implemented with 200 perturbation samples while retaining the top five superpixel features. The method-level aggregated CCAS results are reported in Table 8 . Table 8 : CCAS-based Comparison of XAI Interpretability Method Spearman Correlation ( \u03c1 \\rho ) IoU@0.3 PA GradCAM 0.751 0.22 0.26 GradCAM++ 0.629 0.187 0.253 LIME 0.4 0.2 0.08 EigenCAM 0.95 0.563 0.547 Among the evaluated XAI methods, EigenCAM achieves the strongest performance across all CCAS metrics. LIME records the lowest pointing accuracy of 0.08, indicating that superpixel-level perturbations are less suitable for localizing continuous pathological regions in fundus images. GradCAM++ per..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:9",
+  "page": "arxiv:2607.21074v1",
+  "subject": "SpecTraL",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SpecTraL addresses aggregation challenges in federated LoRA fine-tuning.",
+  "contexts": [
+   "[body] ...pting them to downstream tasks through full fine-tuning remains computationally expensive. Parameter-efficient fine-tuning (PEFT) methods Houlsby et al. ( 2019 ); Hu et al. ( 2021 ) address this by updating only a small number of additional parameters while keeping the backbone frozen. Among them, Low-Rank Adaptation (LoRA) Hu et al. ( 2021 ) is widely adopted: it injects trainable low-rank matrices \ud835\udc01 \u2208 \u211d m \u00d7 r \\mathbf{B}\\in\\mathbb{R}^{m\\times r} and \ud835\udc00 \u2208 \u211d r \u00d7 n \\mathbf{A}\\in\\mathbb{R}^{r\\times n} into frozen Transformer layers, greatly reducing memory and compute requirements. When training data is distributed across institutions or edge devices, Fede...",
+   "[body] ...nto frozen Transformer layers, greatly reducing memory and compute requirements. When training data is distributed across institutions or edge devices, Federated Learning (FL) McMahan et al. ( 2017 ) enables collaborative fine-tuning by training locally on clients and aggregating updates at a central server. Combining LoRA with FL provides a communication-efficient solution for distributed fine-tuning, but introduces new challenges arising from data heterogeneity Li et al. ( 2020 ); Karimireddy et al. ( 2020 ); Li et al. ( 2021 ); Acar et al. ( 2021 ) (differences in local data distributions) and computational heterogeneity Cho et al. ( 2024 ); Nguyen...",
+   "[body] ...m data heterogeneity Li et al. ( 2020 ); Karimireddy et al. ( 2020 ); Li et al. ( 2021 ); Acar et al. ( 2021 ) (differences in local data distributions) and computational heterogeneity Cho et al. ( 2024 ); Nguyen et al. ( 2022 ); Diao et al. ( 2021 ) (differences in client resources). Recent work has begun integrating LoRA into FL frameworks Zhang et al. ( 2023 ); Sun et al. ( 2024 ); He et al. ( 2024 ); Bai et al. ( 2024 ); Ramesh and Dass ( 2025 ) , but effective aggregation of LoRA adapters remains challenging. An effective federated LoRA aggregation mechanism must simultaneously satisfy five requirements: (1) exact aggregation , recovering the true..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:10",
+  "page": "arxiv:2607.21074v1",
+  "subject": "SpecTraL",
+  "object": "DomainNet",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SpecTraL experiments on federated fine-tuning of Vision Transformers using DomainNet.",
+  "contexts": [
+   "[abstract] ...ranks without manual hyperparameter tuning. To match local ranks in subsequent rounds, we introduce a padding-aware initialization framework that lets clients incorporate residual LoRA dimensions without re-merging them into the pre-trained base model. Experiments on federated fine-tuning of ViT-B/16 and ViT-L/16 over DomainNet and NICO++ demonstrate improved accuracy-communication trade-offs, reduced server computation, and elimination of hyperparameter search for rank selection. Our code is available at https://github.com/DASS-Lab-Group/SpecTraL..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:11",
+  "page": "arxiv:2607.21074v1",
+  "subject": "SpecTraL",
+  "object": "NICO++",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SpecTraL demonstrates improved accuracy-communication trade-offs on NICO++.",
+  "contexts": [
+   "[abstract] ...manual hyperparameter tuning. To match local ranks in subsequent rounds, we introduce a padding-aware initialization framework that lets clients incorporate residual LoRA dimensions without re-merging them into the pre-trained base model. Experiments on federated fine-tuning of ViT-B/16 and ViT-L/16 over DomainNet and NICO++ demonstrate improved accuracy-communication trade-offs, reduced server computation, and elimination of hyperparameter search for rank selection. Our code is available at https://github.com/DASS-Lab-Group/SpecTraL..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:12",
+  "page": "arxiv:2607.21075v1",
+  "subject": "VibeVoice-ASR-BitNet",
+  "object": "BitNet",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VibeVoice-ASR-BitNet adopts BitNet-style ternary weights for quantization.",
+  "contexts": [
+   "[body] ...ch as Whisper.cpp [ 6 ] and llama.cpp [ 5 ] have made local deployment feasible, they typically fail to achieve real-time performance (RTF &lt; 1 &lt;1 ) for large models on resource-constrained devices, or require high thread counts that saturate the CPU budget of edge hardware. In this work, we present VibeVoice-ASR-BitNet (Figure 1 ), which addresses these challenges through heterogeneous quantization co-designed with the computational profile of each model component. The VAE tokenizer, encompassing both acoustic and semantic encoders, is IO-bound due to its convolutional architecture and is quantized to full-pipeline I8_S to reduce memory bandwidth...",
+   "[body] ...gned with the computational profile of each model component. The VAE tokenizer, encompassing both acoustic and semantic encoders, is IO-bound due to its convolutional architecture and is quantized to full-pipeline I8_S to reduce memory bandwidth by 2 \u00d7 2\\times relative to FP16. The autoregressive language model adopts BitNet-style ternary weights I2_S [ 11 ] , compressing weights by 8 \u00d7 8\\times relative to FP16 and leveraging INT8 multiply-add kernels to reduce memory bandwidth pressure during both prefill and decode stages. Combined with custom SIMD kernels and operator fusion in the ggml framework, the total model size is compressed from 4.62 GB to 1...",
+   "[body] ...d from 4.62 GB to 1.58 GB, a 2.9 \u00d7 2.9\\times reduction, and the system achieves real-time inference with RTF &lt; 1 &lt;1 on commodity CPUs with as few as 3 threads, while maintaining competitive accuracy with only modest degradation relative to the FP16 baseline. 2 Method 2.1 Model Architecture Overview VibeVoice-ASR-BitNet inherits the architecture of VibeVoice-ASR [ 13 ] : a VAE tokenizer\u2014acoustic encoder + semantic encoder, both 7-stage ConvNeXt [ 10 ] backbones with 3200 \u00d7 3200\\times temporal downsampling from 24 kHz to 7.5 Hz\u2014followed by an autoregressive language model decoder. To reduce memory footprint for edge CPU deployment, we replace the o..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:13",
+  "page": "arxiv:2607.21075v1",
+  "subject": "VibeVoice-ASR-BitNet",
+  "object": "Qwen2.5-1.5B",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VibeVoice-ASR-BitNet replaces Qwen2.5-7B with Qwen2.5-1.5B as the LM decoder.",
+  "contexts": [
+   "[body] ...13 ] : a VAE tokenizer\u2014acoustic encoder + semantic encoder, both 7-stage ConvNeXt [ 10 ] backbones with 3200 \u00d7 3200\\times temporal downsampling from 24 kHz to 7.5 Hz\u2014followed by an autoregressive language model decoder. To reduce memory footprint for edge CPU deployment, we replace the original Qwen2.5-7B decoder with Qwen2.5-1.5B. The full architecture is shown in Figure 2 . We refer readers to Peng et al. [ 13 ] for details of the base model. Figure 2 : Model architecture of VibeVoice-ASR-BitNet. Left: VAE tokenizer, 7-stage ConvNeXt with I8_S fused operators. Right: LM decoder, 28-layer Transformer with I2_S ternary weights. 2.2 Heterogeneous Quanti...",
+   "[body] ....3 \\approx 3.3 ), while progressive QAT converges to \u2248 0.91 \\approx 0.91 in three stages (GELU \u2192 \\to ReLU finetune, \u03b1 \\alpha : 0 \u2192 \\to 1 blending, \u03b1 = 1 \\alpha=1 full quantization). 2.3.2 Language Model To reduce memory footprint for edge CPU deployment, we replace the original Qwen2.5-7B decoder in VibeVoice-ASR with Qwen2.5-1.5B. Despite the 4.7 \u00d7 4.7\\times parameter reduction, experiments show that this substitution causes only modest accuracy degradation on ASR tasks (typically 1\u20134% absolute WER increase; see Section 3.3 ), confirming that a 1.5B-class LM is sufficient for speech recognition. After the INT8 VAE tokenizer is trained, it is frozen an..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:14",
+  "page": "arxiv:2607.21075v1",
+  "subject": "VibeVoice-ASR-BitNet",
+  "object": "ConvNeXt",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VibeVoice-ASR-BitNet uses ConvNeXt as the backbone for VAE acoustic and semantic encoders.",
+  "contexts": [
+   "[body] ...commodity CPUs with as few as 3 threads, while maintaining competitive accuracy with only modest degradation relative to the FP16 baseline. 2 Method 2.1 Model Architecture Overview VibeVoice-ASR-BitNet inherits the architecture of VibeVoice-ASR [ 13 ] : a VAE tokenizer\u2014acoustic encoder + semantic encoder, both 7-stage ConvNeXt [ 10 ] backbones with 3200 \u00d7 3200\\times temporal downsampling from 24 kHz to 7.5 Hz\u2014followed by an autoregressive language model decoder. To reduce memory footprint for edge CPU deployment, we replace the original Qwen2.5-7B decoder with Qwen2.5-1.5B. The full architecture is shown in Figure 2 . We refer readers to Peng et al. [...",
+   "[body] ...coder. To reduce memory footprint for edge CPU deployment, we replace the original Qwen2.5-7B decoder with Qwen2.5-1.5B. The full architecture is shown in Figure 2 . We refer readers to Peng et al. [ 13 ] for details of the base model. Figure 2 : Model architecture of VibeVoice-ASR-BitNet. Left: VAE tokenizer, 7-stage ConvNeXt with I8_S fused operators. Right: LM decoder, 28-layer Transformer with I2_S ternary weights. 2.2 Heterogeneous Quantization The two stages of VibeVoice-ASR exhibit fundamentally different computational profiles, motivating a heterogeneous quantization strategy rather than a uniform precision reduction. 2.2.1 I8_S: Full-Pipeline..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:15",
+  "page": "arxiv:2607.21075v1",
+  "subject": "VibeVoice-ASR-BitNet",
+  "object": "Whisper.cpp",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "VibeVoice-ASR-BitNet is 1.6-2.3x faster than Whisper.cpp at comparable model sizes.",
+  "contexts": [
+   "[body] ...M4T [ 2 ] , and VibeVoice-ASR [ 13 ] rely on server-grade hardware to meet latency requirements. However, cloud-based inference introduces privacy concerns\u2014sensitive audio data must leave the device\u2014and network-dependent latency that is unacceptable for real-time applications. While CPU-based inference engines such as Whisper.cpp [ 6 ] and llama.cpp [ 5 ] have made local deployment feasible, they typically fail to achieve real-time performance (RTF &lt; 1 &lt;1 ) for large models on resource-constrained devices, or require high thread counts that saturate the CPU budget of edge hardware. In this work, we present VibeVoice-ASR-BitNet (Figure 1 ), which...",
+   "[abstract] ..., we employ a progressive quantization-aware training strategy. For inference, we implement custom SIMD kernels and fused operators within the ggml framework targeting both ARM and x86 platforms, achieving real-time recognition with RTF &lt; 1 using as few as 3 CPU threads. VibeVoice-ASR-BitNet is 1.6-2.3x faster than Whisper.cpp at comparable model sizes (~1.6 GB), with only modest accuracy degradation compared to the FP16 baseline...."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:16",
+  "page": "arxiv:2607.21080v1",
+  "subject": "SOFT",
+  "object": "FourCastNet",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SOFT compares against FourCastNet, a Transformer-based weather prediction model.",
+  "contexts": [
+   "[body] ...ated Work 2.1. Deep Learning Weather Prediction and Long-Horizon Training Strategy Deep learning methods address the high computational costs and limited efficiency of traditional numerical weather prediction (Bauer et al. , 2015 ; Brotzge et al. , 2023 ) . Transformer-based architectures dominate the field, including FourCastNet (Pathak et al. , 2022 ) , Pangu (Bi et al. , 2023 ) , Aurora (Bodnar et al. , 2025 ) , Stormer (Nguyen et al. , 2024 ) , ClimaX (Nguyen et al. , 2023 ) , WeatherGFM (Zhao et al. , 2024 ) , Fuxi (Chen et al. , 2023b ) , and FengWu (Chen et al. , 2023a ) . Alternatively, GraphCast (Lam et al. , 2023b ) utilizes Graph Neural Netw..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:17",
+  "page": "arxiv:2607.21080v1",
+  "subject": "SOFT",
+  "object": "GraphCast",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SOFT is evaluated against GraphCast, a GNN-based weather prediction baseline.",
+  "contexts": [
+   "[body] ...ectures dominate the field, including FourCastNet (Pathak et al. , 2022 ) , Pangu (Bi et al. , 2023 ) , Aurora (Bodnar et al. , 2025 ) , Stormer (Nguyen et al. , 2024 ) , ClimaX (Nguyen et al. , 2023 ) , WeatherGFM (Zhao et al. , 2024 ) , Fuxi (Chen et al. , 2023b ) , and FengWu (Chen et al. , 2023a ) . Alternatively, GraphCast (Lam et al. , 2023b ) utilizes Graph Neural Networks (GNNs). Despite their short-term accuracy, these models suffer from rapid error growth during long-horizon autoregressive inference. Previous work identifies several primary mitigation strategies. MultiStep rollout tuning (Lam et al. , 2023a ) minimizes error by training on a..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:18",
+  "page": "arxiv:2607.21083v1",
+  "subject": "A-splines for GAMs",
+  "object": "P-splines",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The proposed method compares against P-splines as the standard regularization approach in GAMs.",
+  "contexts": [
+   "[body] ...niques. The former seeks to identify a parsimonious set of knots capable of adequately representing the underlying response structure. In contrast, regularization approaches fix a relatively large set of knots and control smoothness through a penalty term on the spline coefficients. On the one hand, penalized splines (P-splines) (Eilers and Marx,, 1996 ) , which combine B-spline regression with a smoothness penalty, have become one of the standard approaches for smooth regression. In this framework, smoothing is reduced to selecting appropriate penalty parameters, typically through generalized cross-validation or automatic procedures such as the Fellne...",
+   "[body] ...ments, including both simulation studies and real-data applications. Finally, Section 5 presents the conclusions and discusses directions for future research. 2 Background and notation This section briefly reviews B-spline regression and the role of knot placement in smooth curve estimation (Section 2.1 ), followed by P-splines and smoothing parameter estimation via the Fellner\u2013Schall algorithm (Section 2.2 ). 2.1 B-spline regression Consider the univariate regression model with continuous covariate X X and response Y Y , y i = f \u200b ( x i ) + \u03b5 i , i = 1 , \u2026 , n , y_{i}=f(x_{i})+\\varepsilon_{i},\\qquad i=1,\\ldots,n, (1) where f f is an unknown smooth fun...",
+   "[abstract] ...unction and the number of coefficients to be estimated. Therefore, the knots' choice affects the model's flexibility, influencing its smoothness and goodness-of-fit. Traditionally, this problem has been addressed either by explicitly selecting knots, via knot-selection algorithms, or by regularization methods, such as P-splines, which automatically tune the regressor's smoothness. The latter have become the standard in generalized additive models (GAMs). In contrast, knot-selection techniques, frequently neglected because of computational or modeling limitations, provide certain advantages which can be valuable in some contexts. In this work, we introd..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:19",
+  "page": "arxiv:2607.21088v1",
+  "subject": "CASC",
+  "object": "FAConvLSTM",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CASC integrates stacked FAConvLSTM layers to preserve spatial and temporal structure.",
+  "contexts": [
+   "[body] ...CASC: Causal Adversarial Subspace Clustering for Multivariate Spatiotemporal Data Abstract I Introduction II Background and Motivation III Related Work IV Problem Definition V Methodology V-A Generator ( G G ) V-A 1 Notation and Input Representation V-A 2 Spatiotemporal Encoder (FAConvLSTM with Residual Temporal Blocks) V-A 3 Latent Bottleneck Representation V-A 4 Patchification for Graph Efficiency. V-A 5 Bidirectional Temporal Graph Attention (Bi-TGAT) Bottleneck V-A 6 Per-Timestep Clustering Head with Temperature and Balance V-A 7 Causal Subspace Preservation Loss V-A 8 Dynamic Temporal Subspace Evolution Loss...",
+   "[body] ...cs inherent in complex spatiotemporal systems. To address these limitations, we propose a novel Causal Adversarial Subspace Clustering (CASC) framework for discovering evolving latent regimes in high-dimensional spatiotemporal data. CASC integrates a U-Net-inspired deep adversarial clustering architecture with stacked FAConvLSTM layers to preserve spatial and temporal structure while learning robust latent representations. A graph attention transformer-based self-expressive network is introduced to jointly model local spatial relationships, global dependencies, and long-range temporal interactions. Furthermore, we propose two new learning objectives: (...",
+   "[abstract] ...cs inherent in complex spatiotemporal systems. To address these limitations, we propose a novel Causal Adversarial Subspace Clustering (CASC) framework for discovering evolving latent regimes in high-dimensional spatiotemporal data. CASC integrates a U-Net-inspired deep adversarial clustering architecture with stacked FAConvLSTM layers to preserve spatial and temporal structure while learning robust latent representations. A graph attention transformer-based self-expressive network is introduced to jointly model local spatial relationships, global dependencies, and long-range temporal interactions. Furthermore, we propose two new learning objectives: (..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:20",
+  "page": "arxiv:2607.21088v1",
+  "subject": "CASC",
+  "object": "Graph Attention Transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CASC uses a graph attention transformer to jointly model spatial relationships and temporal interactions.",
+  "contexts": [
+   "[body] ...arial Subspace Clustering (CASC) framework for discovering evolving latent regimes in high-dimensional spatiotemporal data. CASC integrates a U-Net-inspired deep adversarial clustering architecture with stacked FAConvLSTM layers to preserve spatial and temporal structure while learning robust latent representations. A graph attention transformer-based self-expressive network is introduced to jointly model local spatial relationships, global dependencies, and long-range temporal interactions. Furthermore, we propose two new learning objectives: (1) a Causal Subspace Preservation Loss that aligns self-expression coefficients with latent causal relationsh...",
+   "[abstract] ...arial Subspace Clustering (CASC) framework for discovering evolving latent regimes in high-dimensional spatiotemporal data. CASC integrates a U-Net-inspired deep adversarial clustering architecture with stacked FAConvLSTM layers to preserve spatial and temporal structure while learning robust latent representations. A graph attention transformer-based self-expressive network is introduced to jointly model local spatial relationships, global dependencies, and long-range temporal interactions. Furthermore, we propose two new learning objectives: (1) a Causal Subspace Preservation Loss that aligns self-expression coefficients with latent causal relationsh..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:21",
+  "page": "arxiv:2607.21090v1",
+  "subject": "RL-based faithfulness training",
+  "object": "Llama3.1-8B",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RL fine-tuned Llama3.1-8B shows substantial improvements on Phi-CCT faithfulness metric.",
+  "contexts": [
+   "[abstract] ...decisions, and (2) whether RL can directly optimize for the disclosure of these factors thereby improving LLM self-explanations' faithfulness. We experiment with two intervention types: random-word insertions and user-bias insertions, using a per-sample reward derived from the Phi-CCT correlation metric. RL fine-tuned Llama3.1-8B and Qwen3-8B show substantial improvements on the Phi-CCT faithfulness metric, with in-distribution scores rising from near-zero to as high as 0.664, and out-of-distribution scores reaching up to 0.691 on held-out tasks such as StrategyQA. Cross-intervention generalization is weaker but more interesting: a priori we would not...",
+   "[abstract] ...ores rising from near-zero to as high as 0.664, and out-of-distribution scores reaching up to 0.691 on held-out tasks such as StrategyQA. Cross-intervention generalization is weaker but more interesting: a priori we would not expect a model trained only on random word insertions to generalize to user-bias phrases, yet Llama3.1-8B shows non-zero transfer in this direction. The reverse direction and Qwen3-8B do not replicate this, indicating model-dependent and setup-dependent effects we cannot yet explain. Lastly we analyze model behavior to rule out reward gaming behaviors that often plague RL training. Ultimately, we show that models can be trained to..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:22",
+  "page": "arxiv:2607.21090v1",
+  "subject": "RL-based faithfulness training",
+  "object": "Qwen3-8B",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RL fine-tuned Qwen3-8B shows substantial improvements on Phi-CCT faithfulness metric.",
+  "contexts": [
+   "[body] ...ng step, factual and counterfactual prompts are sampled from the dataset and passed into the current model to obtain decisions and explanations. These are used to compute influence and mention labels, which in turn are used to compute rewards. The model is then updated with GRPO using these rewards. Example taken from Qwen3-8B on ESNLI sample. 3.3 Our research hypotheses Our study comprises three hypotheses: (1) Influence Introspection: With supervised fine-tuning, models can detect which interventions flip their own decisions. We fine-tune using binary Yes/No labels for \u2110 \\mathcal{I} and measure correlation between predicted and true influence of fact...",
+   "[abstract] ...2) whether RL can directly optimize for the disclosure of these factors thereby improving LLM self-explanations' faithfulness. We experiment with two intervention types: random-word insertions and user-bias insertions, using a per-sample reward derived from the Phi-CCT correlation metric. RL fine-tuned Llama3.1-8B and Qwen3-8B show substantial improvements on the Phi-CCT faithfulness metric, with in-distribution scores rising from near-zero to as high as 0.664, and out-of-distribution scores reaching up to 0.691 on held-out tasks such as StrategyQA. Cross-intervention generalization is weaker but more interesting: a priori we would not expect a model t...",
+   "[abstract] ...aching up to 0.691 on held-out tasks such as StrategyQA. Cross-intervention generalization is weaker but more interesting: a priori we would not expect a model trained only on random word insertions to generalize to user-bias phrases, yet Llama3.1-8B shows non-zero transfer in this direction. The reverse direction and Qwen3-8B do not replicate this, indicating model-dependent and setup-dependent effects we cannot yet explain. Lastly we analyze model behavior to rule out reward gaming behaviors that often plague RL training. Ultimately, we show that models can be trained to implicitly identify influential factors and disclose them, offering a scalable p..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:23",
+  "page": "arxiv:2607.21090v1",
+  "subject": "RL-based faithfulness training",
+  "object": "e-SNLI",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Models are trained and evaluated on e-SNLI for self-explanation faithfulness.",
+  "contexts": [
+   "[body] ...whether this learned behavior transfers to OOD data and intervention types (random insertions vs. user-bias edits). 3.4 Data Splits and Domains To evaluate both robust learning and generalization, we partition our data into Train, Test, and Out-of-Distribution (OOD) splits. The Train and Test datasets are comprised of e-SNLI (Camburu et al. , 2018 ) and Social-IQA (Sap et al. , 2019 ) . The OOD split is comprised of ComVE (Wang et al. , 2020 ) and StrategyQA (Geva et al. , 2021 ) , used exclusively to test the transferability of the model\u2019s abilities. 3.5 Evaluation metrics for faithfulness and generalizability We evaluate influence introspection via p..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:24",
+  "page": "arxiv:2607.21090v1",
+  "subject": "RL-based faithfulness training",
+  "object": "Social-IQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Models are trained on Social-IQA as part of the Train and Test split.",
+  "contexts": [
+   "[body] ...ers to OOD data and intervention types (random insertions vs. user-bias edits). 3.4 Data Splits and Domains To evaluate both robust learning and generalization, we partition our data into Train, Test, and Out-of-Distribution (OOD) splits. The Train and Test datasets are comprised of e-SNLI (Camburu et al. , 2018 ) and Social-IQA (Sap et al. , 2019 ) . The OOD split is comprised of ComVE (Wang et al. , 2020 ) and StrategyQA (Geva et al. , 2021 ) , used exclusively to test the transferability of the model\u2019s abilities. 3.5 Evaluation metrics for faithfulness and generalizability We evaluate influence introspection via predicted vs true label correlation o..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:25",
+  "page": "arxiv:2607.21090v1",
+  "subject": "RL-based faithfulness training",
+  "object": "StrategyQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "StrategyQA is used as an out-of-distribution benchmark to test cross-intervention generalization.",
+  "contexts": [
+   "[body] ...and Domains To evaluate both robust learning and generalization, we partition our data into Train, Test, and Out-of-Distribution (OOD) splits. The Train and Test datasets are comprised of e-SNLI (Camburu et al. , 2018 ) and Social-IQA (Sap et al. , 2019 ) . The OOD split is comprised of ComVE (Wang et al. , 2020 ) and StrategyQA (Geva et al. , 2021 ) , used exclusively to test the transferability of the model\u2019s abilities. 3.5 Evaluation metrics for faithfulness and generalizability We evaluate influence introspection via predicted vs true label correlation over the entire dataset. We evaluate influence-mention alignment via correlation over the entire...",
+   "[abstract] ...a per-sample reward derived from the Phi-CCT correlation metric. RL fine-tuned Llama3.1-8B and Qwen3-8B show substantial improvements on the Phi-CCT faithfulness metric, with in-distribution scores rising from near-zero to as high as 0.664, and out-of-distribution scores reaching up to 0.691 on held-out tasks such as StrategyQA. Cross-intervention generalization is weaker but more interesting: a priori we would not expect a model trained only on random word insertions to generalize to user-bias phrases, yet Llama3.1-8B shows non-zero transfer in this direction. The reverse direction and Qwen3-8B do not replicate this, indicating model-dependent and se..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:26",
+  "page": "arxiv:2607.21090v1",
+  "subject": "RL-based faithfulness training",
+  "object": "ComVE",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ComVE is used as an out-of-distribution benchmark for held-out task evaluation.",
+  "contexts": [
+   "[body] ...er-bias edits). 3.4 Data Splits and Domains To evaluate both robust learning and generalization, we partition our data into Train, Test, and Out-of-Distribution (OOD) splits. The Train and Test datasets are comprised of e-SNLI (Camburu et al. , 2018 ) and Social-IQA (Sap et al. , 2019 ) . The OOD split is comprised of ComVE (Wang et al. , 2020 ) and StrategyQA (Geva et al. , 2021 ) , used exclusively to test the transferability of the model\u2019s abilities. 3.5 Evaluation metrics for faithfulness and generalizability We evaluate influence introspection via predicted vs true label correlation over the entire dataset. We evaluate influence-mention alignment..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:27",
+  "page": "arxiv:2607.21094v1",
+  "subject": "APEX",
+  "object": "GIN",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "APEX proposes PolyGIN, a GIN-style graph network for exact attribution.",
+  "contexts": [
+   "[body] ...model-attribution co-design perspective. Rather than applying a numerical attribution method to an arbitrary nonlinear GNN, we ask whether the GNN architecture can be designed so that the attribution integral becomes exactly computable. Our answer is APEX, a framework built on a polynomial GNN architecture called PolyGIN. PolyGIN replaces non-polynomial components, such as ReLU activations and standard normalization layers, with polynomial or linear operations. As a result, the model output remains a multivariate polynomial in the input node features. This algebraic structure gives a finite degree bound for the derivative along the Aumann\u2013Shapley inte...",
+   "[body] ...tribution co-design perspective. Rather than applying a numerical attribution method to an arbitrary nonlinear GNN, we ask whether the GNN architecture can be designed so that the attribution integral becomes exactly computable. Our answer is APEX, a framework built on a polynomial GNN architecture called PolyGIN. PolyGIN replaces non-polynomial components, such as ReLU activations and standard normalization layers, with polynomial or linear operations. As a result, the model output remains a multivariate polynomial in the input node features. This algebraic structure gives a finite degree bound for the derivative along the Aumann\u2013Shapley integration p...",
+   "[body] ...aic structure gives a finite degree bound for the derivative along the Aumann\u2013Shapley integration path. Once this degree bound is known, Gauss\u2013Legendre quadrature provides an exact finite-sum evaluation of the path integral. Throughout this paper, APEX refers to the complete co-designed framework consisting of the PolyGIN predictive architecture and its architecture-certified exact attribution procedure, rather than to one aspect alone. Figure 1: Motivation of APEX. Standard path-integral attribution methods approximate the integral with numerical sampling, which introduces a trade-off between quadrature error and computation. Under th [...] evaluation..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:28",
+  "page": "arxiv:2607.21098v1",
+  "subject": "Neural TPP with B-splines",
+  "object": "B-splines",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The proposed method directly parametrizes the CIF as a non-negative combination of B-spline basis functions.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:29",
+  "page": "arxiv:2607.21101v1",
+  "subject": "TIGER",
+  "object": "SASRec",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TIGER is compared against SASRec under temporal cold-start evaluation.",
+  "contexts": [
+   "[body] ...ation. \u201cCold ratio\u201d denotes the average proportion of test targets whose item IDs are absent from the training period. Hit@20 and Recall@20 denote the average values among all windows. Detailed results for each window and other order metrics are presented in Tables 7 , 8 , 9 , 10 , 11 and 12 . Dataset Cold ratio TIGER SASRec Seen H@20 Seen R@20 Unseen H@20 Unseen R@20 Seen H@20 Seen R@20 Unseen H@20 Unseen R@20 Beauty 0.948 0.01334 0.00258 0.00023 0.00000 0.08367 0.01170 0.00414 0.00068 Sports 0.947 0.01406 0.00851 0.00020 0.00004 0.04968 0.06943 0.00416 0.00022 Toys 0.910 0.02340 0.01371 0.00009 0.00000 0.05232 0.05590 0.00146 0.00003 Sephora 0.773 0...."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:30",
+  "page": "arxiv:2607.21106v1",
+  "subject": "AttriMem",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "AttriMem uses Group Relative Policy Optimization (GRPO) for RL training.",
+  "contexts": [
+   "[body] ...s a structured memory bank from long-term dialogue through extraction, compression, and update, then answers questions via memory retrieval. During RL training, token-level attribution produce local process rewards, which complement the global outcome reward for fine-grained memory learning. Memory agent training with GRPO. GRPO is commonly used for RL training for its efficiency since it does not require a value model ( shao2024deepseekmath ) . The outcome-only variant of GRPO is often used for RL with verifiable reward (RLVR) . For each training example, the policy samples G G memory-construction trajectories. A frozen retriever then retrieves inform...",
+   "[body] ...ructured memory bank from long-term dialogue through extraction, compression, and update, then answers questions via memory retrieval. During RL training, token-level attribution produce local process rewards, which complement the global outcome reward for fine-grained memory learning. Memory agent training with GRPO. GRPO is commonly used for RL training for its efficiency since it does not require a value model ( shao2024deepseekmath ) . The outcome-only variant of GRPO is often used for RL with verifiable reward (RLVR) . For each training example, the policy samples G G memory-construction trajectories. A frozen retriever then retrieves information...",
+   "[body] ...g, token-level attribution produce local process rewards, which complement the global outcome reward for fine-grained memory learning. Memory agent training with GRPO. GRPO is commonly used for RL training for its efficiency since it does not require a value model ( shao2024deepseekmath ) . The outcome-only variant of GRPO is often used for RL with verifiable reward (RLVR) . For each training example, the policy samples G G memory-construction trajectories. A frozen retriever then retrieves information from each resulting memory store, and a separate answer model (e.g., Claude) generates the final answer; neither component is part of the trained policy..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:31",
+  "page": "arxiv:2607.21111v1",
+  "subject": "TOUR",
+  "object": "D4RL",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TOUR evaluates trajectory-level unlearning using D4RL locomotion environments.",
+  "contexts": [
+   "[body] ...valuated so that apparent membership reduction is not confused with residual memorization, retain-side artifacts, or utility collapse? We answer this question with T rajectory-level mem O rization and U nlearning in offline R L ( TOUR ). TOUR is a benchmark centered on three MuJoCo continuous-control environments from D4RL (Fu et al. , 2020 ) , three locomotion data variants, and an exploratory AntMaze extension. It evaluates Decision Transformer (DT) policies (Chen et al. , 2021 ; Liu et al. , 2023 ; Wang et al. , 2024a ) , MLP and Long Short-Term Memory (LSTM) policy families, and an Implicit Q-Learning (IQL) (Kostrikov et al. , 2022 ) companion anal...",
+   "[abstract] ...attack, or policy collapse that destroys useful behavior. We introduce Trajectory-level memOrization and Unlearning in offline RL (TOUR), a benchmark that combines trajectory-level partitioning, matched non-member controls, retraining references, retained-performance anchors, and multi-attack privacy auditing. Across D4RL locomotion experiments and an exploratory AntMaze extension, TOUR shows that common deletion baselines have environment-dependent privacy-utility behavior. Retraining and fine-tuning often provide stronger retained-utility references than uniform GA+Refit, while TrajDeleter remains a useful comparator but is not uniformly stronger un..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:32",
+  "page": "arxiv:2607.21111v1",
+  "subject": "TOUR",
+  "object": "Decision Transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "TOUR evaluates Decision Transformer policies with trajectory-level deletion.",
+  "contexts": [
+   "[body] ...ts, or utility collapse? We answer this question with T rajectory-level mem O rization and U nlearning in offline R L ( TOUR ). TOUR is a benchmark centered on three MuJoCo continuous-control environments from D4RL (Fu et al. , 2020 ) , three locomotion data variants, and an exploratory AntMaze extension. It evaluates Decision Transformer (DT) policies (Chen et al. , 2021 ; Liu et al. , 2023 ; Wang et al. , 2024a ) , MLP and Long Short-Term Memory (LSTM) policy families, and an Implicit Q-Learning (IQL) (Kostrikov et al. , 2022 ) companion analysis. The benchmark standardizes trajectory-level deletion, matched non-member construction, retraining refere..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:33",
+  "page": "arxiv:2607.21111v1",
+  "subject": "TOUR",
+  "object": "Implicit Q-Learning",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "TOUR provides an Implicit Q-Learning (IQL) companion analysis for offline RL unlearning.",
+  "contexts": [
+   "[body] ...ee MuJoCo continuous-control environments from D4RL (Fu et al. , 2020 ) , three locomotion data variants, and an exploratory AntMaze extension. It evaluates Decision Transformer (DT) policies (Chen et al. , 2021 ; Liu et al. , 2023 ; Wang et al. , 2024a ) , MLP and Long Short-Term Memory (LSTM) policy families, and an Implicit Q-Learning (IQL) (Kostrikov et al. , 2022 ) companion analysis. The benchmark standardizes trajectory-level deletion, matched non-member construction, retraining references, retained-performance anchors, and a multi-family membership audit. The main comparisons use settings in which retained task performance makes privacy-utility..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:34",
+  "page": "arxiv:2607.21117v1",
+  "subject": "GlucoTune",
+  "object": "ARIMA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GlucoTune includes classical ARIMA models in its integrated model library.",
+  "contexts": [
+   "[body] ...lt; 70 mg/dL) may result in severe acute adverse events [ 10 ] . The widespread adoption of Continuous Glucose Monitoring (CGM) devices has enabled the development of a broad range of Machine Learning (ML) and Deep Learning (DL) approaches for BGC prediction. Existing methods span classical statistical models, such as ARIMA [ 29 ] , traditional machine learning approaches, such as Random Forests [ 3 ] , and modern deep learning architectures including CNNs [ 13 ] , RNNs [ 17 , 15 ] , and Transformers [ 32 , 4 ] . As the number and diversity of predictive models continue to grow, ensuring fair comparisons and reproducible experimental evaluation has bec...",
+   "[body] ...nchmarked within a unified and reproducible environment. The current model library spans multiple methodological families, including classical statistical approaches, traditional machine learning algorithms, and a wide range of neural architectures. Specifically, it comprises classical statistical models (e.g., Naive, ARIMA), tree-based machine learning methods (e.g., XGBoost), and several neural model families such as recurrent networks (e.g., RNN, LSTM, GRU, BiGRU), convolutional and temporal convolutional networks (e.g., TCN), Transformer-based architectures (e.g., Informer, Autoformer, FEDformer), linear and decomposition-based models (e.g., N-BEAT..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:35",
+  "page": "arxiv:2607.21117v1",
+  "subject": "GlucoTune",
+  "object": "XGBoost",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GlucoTune integrates XGBoost as a tree-based machine learning approach.",
+  "contexts": [
+   "[body] ...ment. The current model library spans multiple methodological families, including classical statistical approaches, traditional machine learning algorithms, and a wide range of neural architectures. Specifically, it comprises classical statistical models (e.g., Naive, ARIMA), tree-based machine learning methods (e.g., XGBoost), and several neural model families such as recurrent networks (e.g., RNN, LSTM, GRU, BiGRU), convolutional and temporal convolutional networks (e.g., TCN), Transformer-based architectures (e.g., Informer, Autoformer, FEDformer), linear and decomposition-based models (e.g., N-BEATS), as well as more recent approaches including MLP..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:36",
+  "page": "arxiv:2607.21117v1",
+  "subject": "GlucoTune",
+  "object": "LSTM",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GlucoTune includes LSTM and GRU recurrent networks for glucose prediction.",
+  "contexts": [
+   "[body] ...lassical statistical approaches, traditional machine learning algorithms, and a wide range of neural architectures. Specifically, it comprises classical statistical models (e.g., Naive, ARIMA), tree-based machine learning methods (e.g., XGBoost), and several neural model families such as recurrent networks (e.g., RNN, LSTM, GRU, BiGRU), convolutional and temporal convolutional networks (e.g., TCN), Transformer-based architectures (e.g., Informer, Autoformer, FEDformer), linear and decomposition-based models (e.g., N-BEATS), as well as more recent approaches including MLP-Mixer variants, probabilistic models, graph-based models, and LLM-based approaches..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:37",
+  "page": "arxiv:2607.21117v1",
+  "subject": "GlucoTune",
+  "object": "Transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GlucoTune integrates Transformer-based architectures including Informer, Autoformer, and FEDformer.",
+  "contexts": [
+   "[body] ...d range of Machine Learning (ML) and Deep Learning (DL) approaches for BGC prediction. Existing methods span classical statistical models, such as ARIMA [ 29 ] , traditional machine learning approaches, such as Random Forests [ 3 ] , and modern deep learning architectures including CNNs [ 13 ] , RNNs [ 17 , 15 ] , and Transformers [ 32 , 4 ] . As the number and diversity of predictive models continue to grow, ensuring fair comparisons and reproducible experimental evaluation has become increasingly important. A major source of experimental variability lies in the preprocessing stage, where methodological choices differ substantially across studies. The...",
+   "[body] ...de range of neural architectures. Specifically, it comprises classical statistical models (e.g., Naive, ARIMA), tree-based machine learning methods (e.g., XGBoost), and several neural model families such as recurrent networks (e.g., RNN, LSTM, GRU, BiGRU), convolutional and temporal convolutional networks (e.g., TCN), Transformer-based architectures (e.g., Informer, Autoformer, FEDformer), linear and decomposition-based models (e.g., N-BEATS), as well as more recent approaches including MLP-Mixer variants, probabilistic models, graph-based models, and LLM-based approaches. Most of the implemented models have been selected for their relevance to blood g..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:38",
+  "page": "arxiv:2607.21117v1",
+  "subject": "GlucoTune",
+  "object": "N-BEATS",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GlucoTune includes N-BEATS as a decomposition-based forecasting model.",
+  "contexts": [
+   "[body] ...ased machine learning methods (e.g., XGBoost), and several neural model families such as recurrent networks (e.g., RNN, LSTM, GRU, BiGRU), convolutional and temporal convolutional networks (e.g., TCN), Transformer-based architectures (e.g., Informer, Autoformer, FEDformer), linear and decomposition-based models (e.g., N-BEATS), as well as more recent approaches including MLP-Mixer variants, probabilistic models, graph-based models, and LLM-based approaches. Most of the implemented models have been selected for their relevance to blood glucose prediction tasks. In addition, the library includes well-established general-purpose time series forecasting mo..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:39",
+  "page": "arxiv:2607.21117v1",
+  "subject": "GlucoTune",
+  "object": "OhioT1DM",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GlucoTune evaluates methods on OhioT1DM blood glucose dataset.",
+  "contexts": [
+   "[body] ...gn a unified benchmarking framework covering all currently supported models. The evaluation begins by preprocessing the selected datasets using the configurable pipeline of GlucoTune, ensuring consistency across experiments. We conduct the analysis on two representative datasets among those currently supported, namely OhioT1DM and DiaTrend, considering PH of 30 and 60 minutes, and comparing configurations with and without SMOTE-based data augmentation. All models are trained and evaluated under the same protocol to ensure fair comparison across heterogeneous families: we adopt a temporal split, apply max normalization, and optimize using Mean Squared E..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:40",
+  "page": "arxiv:2607.21117v1",
+  "subject": "GlucoTune",
+  "object": "DiaTrend",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GlucoTune evaluates methods on DiaTrend blood glucose dataset.",
+  "contexts": [
+   "[body] ...benchmarking framework covering all currently supported models. The evaluation begins by preprocessing the selected datasets using the configurable pipeline of GlucoTune, ensuring consistency across experiments. We conduct the analysis on two representative datasets among those currently supported, namely OhioT1DM and DiaTrend, considering PH of 30 and 60 minutes, and comparing configurations with and without SMOTE-based data augmentation. All models are trained and evaluated under the same protocol to ensure fair comparison across heterogeneous families: we adopt a temporal split, apply max normalization, and optimize using Mean Squared Error (MSE) lo..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:41",
+  "page": "arxiv:2607.21121v1",
+  "subject": "QSP via PPO",
+  "object": "Proximal Policy Optimization",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework employs proximal policy optimization for quantum circuit architecture search.",
+  "contexts": [
+   "[body] ...s and random states. The remainder of the paper is organized as follows. In Section 2 , the proposed architecture is presented in detail, including its main components and the underlying theoretical background. In particular, the section introduces the fundamentals of reinforcement learning, the Actor-Critic paradigm, proximal policy optimization, and, finally, the proposed architecture for approximate QSP. In Secti [...] experiments. The agent is updated every 128 128 steps. The penalty factor p p and the multiplier \u03bb \\lambda are set to 10 10 . The threshold that the agent must reach in order to receive the final reward of 50 50 is set to 10 \u2212 14 10^{...",
+   "[abstract] ...ramework for approximate quantum state preparation (QSP) is proposed. QSP is a challenging task, since the search space grows exponentially with the number of qubits, making the identification of the optimal circuit non-trivial. To address this problem, deep reinforcement learning is employed through an agent based on proximal policy optimization. The objective of the agent is to identify the best possible approximation of the target state while simultaneously minimizing the number of gates used. At each step, the agent appends a new gate to the circuit and recomputes the fidelity between the approximated state and the target states. Various experiment..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:42",
+  "page": "arxiv:2607.21130v1",
+  "subject": "AIfES for RISC-V",
+  "object": "AIfES",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework extends AIfES with RISC-V Zfh/Zvfh support for on-device training.",
+  "contexts": [
+   "[body] ...can be leveraged to reduce the memory footprint over float32 and yield SIMD execution from Zvfh. Consequently, to address the lack of open-source ODT frameworks optimized for RISC-V single-core supporting Zfh and/or Zvfh, we propose an easy-to-use open-source library 1 1 1 https://gitlab.emse.fr/securityml/frameworks/aifes4riscv which allows PyTorch/Tensorflow models to be deployed and fully trained on RISC-V single-core featuring Zfh/Zvfh support. In Table 1 , we compare different available ODT frameworks. Although being a RISC-V-targeted open-source framework that offers full scalar float16 ODT capabilities, PULP-Trainlib [ nadalini2022pulp ] is spe...",
+   "[body] ...e featuring Zfh/Zvfh support. In Table 1 , we compare different available ODT frameworks. Although being a RISC-V-targeted open-source framework that offers full scalar float16 ODT capabilities, PULP-Trainlib [ nadalini2022pulp ] is specific to RISC-V multi-core platforms and limited to a batch size of 1. In contrast, AIfES [ wulfert2024aifes ] is a full ODT capable framework supporting batch sizes greater than 1, but lacks both float16 and RISC-V-specific support. Table 1: Comparison of our framework with others RISC-V Full ODT Float16 Batch Open Work support capability support size source [ ribeiro2025decentor ] \u2713 \u2717 \u2717 1 \u2717 [ deutel2024device ] \u2717 \u2713 \u2717 \u2265...",
+   "[body] ...h support. In Table 1 , we compare different available ODT frameworks. Although being a RISC-V-targeted open-source framework that offers full scalar float16 ODT capabilities, PULP-Trainlib [ nadalini2022pulp ] is specific to RISC-V multi-core platforms and limited to a batch size of 1. In contrast, AIfES [ wulfert2024aifes ] is a full ODT capable framework supporting batch sizes greater than 1, but lacks both float16 and RISC-V-specific support. Table 1: Comparison of our framework with others RISC-V Full ODT Float16 Batch Open Work support capability support size source [ ribeiro2025decentor ] \u2713 \u2717 \u2717 1 \u2717 [ deutel2024device ] \u2717 \u2713 \u2717 \u2265 1 \\geq 1 \u2717 [ nadal..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:43",
+  "page": "arxiv:2607.21131v1",
+  "subject": "RGNN",
+  "object": "Distributed Lag Non-linear Models",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RGNN augments DLNMs with GNN encoder while preserving interpretable risk curves.",
+  "contexts": [
+   "[body] ...1 Introduction A central task in environmental epidemiology is estimating mortality risk from temperature exposure. The dominant tool is the Distributed Lag Non-linear Model (DLNM) [ 4 ] , which produces an interpretable exposure-response surface over a lag dimension. This captures, for instance, that cold mortality peaks 7\u201314 days after exposure while heat mortality concentrates in the immediate 3-day window. DLNMs operate purely on temporal signals, however, making no use of...",
+   "[body] ...1: Risk surfaces, in units of deaths per 100k, for London. Left: Vanilla DLNM. Right: RGNN-Calibrated. Here we briefly summarise the current state of modelling the heat-mortality relationship. DLNMs are proposed and formalised in-detail in Gasparrini et al. [ 4 ] , and Boudreault et al. [ 1 ] review ML approaches. 2.1 Distributed Lag Non-linear Models (DLNMs) A DLNM [ 4 ] models a scalar health outcome at location i i and time t t as a linear combination of a cross-basis matrix that encodes the joint non-linear and lagged relationship between an exposure and the outcome: y ^ i \u200b t = \ud835\udc98 i \u22c5 \ud835\udc02\ud835\udc01 i \u200b t , \\hat{y}_{it}=\\boldsymbol{w}_{i}\\cdot\\mathbf{CB}_{it},...",
+   "[abstract] ...Estimating heat-related mortality risk is a core task in environmental epidemiology, typically addressed with Distributed Lag Non-linear Models (DLNMs); interpretable exposure-response surfaces fitted to temperature-mortality time series. DLNMs are effective but ignore demographic and geographic context, despite well-established relevance to heat vulnerability. We propose Risk Graph Neural Networks (RGNNs), a hierarchical GNN encoder that uses gr..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:44",
+  "page": "arxiv:2607.21131v1",
+  "subject": "RGNN",
+  "object": "GATv2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RGNN uses GATv2 graph attention networks for hierarchical demographic feature encoding.",
+  "contexts": [
+   "[body] ...all areas with sparse death counts, and provides no mechanism for borrowing strength from neighbouring or demographically similar locations. 2.2 Graph Neural Networks (GNNs) Graph Neural Networks [ 9 ] generalise neural networks to graph-structured data by iteratively aggregating information from local neighbourhoods. GATv2 [ 13 ] extends graph attention networks with a more expressive attention mechanism in which both source and target node features jointly determine attention weights, making it well-suited to heterogeneous hierarchies where child nodes vary substantially in informativeness. GraphSAGE [ 6 ] performs mean aggregation over sampled neigh..."
+  ]
+ }
+]

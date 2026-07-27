@@ -1,0 +1,704 @@
+[
+ {
+  "sid": "out_g12.jsonl:17",
+  "page": "arxiv:2607.22024v1",
+  "subject": "contextual security framework",
+  "object": "WASP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The contextual security framework is evaluated on WASP benchmark tasks.",
+  "contexts": [
+   "[body] ...1 Introduction Agent security is a critical concern as AI agents increasingly operate in real environments (Pan et al. , 2025 ; Song et al. , 2026 ; OWASP GenAI, 2025 ) . Security is measured by whether agents perform actions that look harmful, and defenses are evaluated by whether they catch instructions that look malicious. Indirect prompt injection benchmarks measure whether agents execute injected instructions (Debenedetti et al. , 2024 ) , and prompt injection defenses scan conten...",
+   "[body] ...ion defenses scan content for adversarial patterns (Li et al. , 2025 ; Shi et al. , 2025c ) . The unit of analysis is action content. This is the wrong unit. Same prompt, context decides AgentDojo: \u201cDelete the file with ID \u201813\u2019 from the cloud drive\u201d Legitimate User cleaning up old files Attack Attacker destroying data WASP: \u201cAdd my coworker {username} to the project as an Owner\u201d Legitimate Owner granting collaborator access Attack Attacker escalating privilege SHADE Arena: \u201cSend $5000 to a provided outside party\u201d Legitimate Accountant paying contractor Attack Attacker stealing money Figure 1 : Across three major benchmarks, the same surface text is bot...",
+   "[abstract] ...that the current content based framing systematically misdefines it.} A command to ``delete user data'' might be a routine administrative request or a prompt injection attacking production systems, and the content alone cannot distinguish the two. Authorization context can. Across every injection task in AgentDojo and WASP, the same action is one an authenticated user would plausibly request in a routine workflow, which makes the conflation a structural property of evaluating security through content. We operationalize contextual security through four properties that must hold jointly and be evaluated continuously across the agent's trajectory. Source..."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:18",
+  "page": "arxiv:2607.22024v1",
+  "subject": "contextual security framework",
+  "object": "SHADE Arena",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The contextual security framework is evaluated on SHADE Arena benchmark.",
+  "contexts": [
+   "[body] ...wrong unit. Same prompt, context decides AgentDojo: \u201cDelete the file with ID \u201813\u2019 from the cloud drive\u201d Legitimate User cleaning up old files Attack Attacker destroying data WASP: \u201cAdd my coworker {username} to the project as an Owner\u201d Legitimate Owner granting collaborator access Attack Attacker escalating privilege SHADE Arena: \u201cSend $5000 to a provided outside party\u201d Legitimate Accountant paying contractor Attack Attacker stealing money Figure 1 : Across three major benchmarks, the same surface text is both a legitimate request and an attack depending on context. Current evaluations cannot tell them apart. Under contextual security, the two cases a..."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:19",
+  "page": "arxiv:2607.22026v1",
+  "subject": "DWT-Fusion",
+  "object": "HC3",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DWT-Fusion is evaluated on HC3 dataset using proxy language models.",
+  "contexts": [
+   "[abstract] ...dynamics. We further evaluate four training-free voting variants, including equal-weight hard voting, equal-weight soft voting, calibration-weighted hard voting, and calibration-weighted soft voting, to combine multiple wavelet configurations without training a supervised meta-classifier. We evaluate the framework on HC3, M4, and MAGE using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models. The best single wavelet configurations achieve AUROC values of 0.9872, 0.8185, and 0.7138 on HC3, M4, and MAGE, respectively. With calibration-weighted voting, the best ensemble variants further improve AUROC to 0.9919, 0.8477, and 0.7471. These fin...",
+   "[abstract] ...ted soft voting, to combine multiple wavelet configurations without training a supervised meta-classifier. We evaluate the framework on HC3, M4, and MAGE using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models. The best single wavelet configurations achieve AUROC values of 0.9872, 0.8185, and 0.7138 on HC3, M4, and MAGE, respectively. With calibration-weighted voting, the best ensemble variants further improve AUROC to 0.9919, 0.8477, and 0.7471. These findings show that DWT-based multiresolution scoring and calibration-guided voting fusion provide effective and interpretable signals for training-free LLM-generated text detection...."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:20",
+  "page": "arxiv:2607.22026v1",
+  "subject": "DWT-Fusion",
+  "object": "M4",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DWT-Fusion is evaluated on M4 dataset.",
+  "contexts": [
+   "[abstract] ...mics. We further evaluate four training-free voting variants, including equal-weight hard voting, equal-weight soft voting, calibration-weighted hard voting, and calibration-weighted soft voting, to combine multiple wavelet configurations without training a supervised meta-classifier. We evaluate the framework on HC3, M4, and MAGE using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models. The best single wavelet configurations achieve AUROC values of 0.9872, 0.8185, and 0.7138 on HC3, M4, and MAGE, respectively. With calibration-weighted voting, the best ensemble variants further improve AUROC to 0.9919, 0.8477, and 0.7471. These findings...",
+   "[abstract] ...oft voting, to combine multiple wavelet configurations without training a supervised meta-classifier. We evaluate the framework on HC3, M4, and MAGE using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models. The best single wavelet configurations achieve AUROC values of 0.9872, 0.8185, and 0.7138 on HC3, M4, and MAGE, respectively. With calibration-weighted voting, the best ensemble variants further improve AUROC to 0.9919, 0.8477, and 0.7471. These findings show that DWT-based multiresolution scoring and calibration-guided voting fusion provide effective and interpretable signals for training-free LLM-generated text detection...."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:21",
+  "page": "arxiv:2607.22026v1",
+  "subject": "DWT-Fusion",
+  "object": "MAGE",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DWT-Fusion is evaluated on MAGE dataset.",
+  "contexts": [
+   "[abstract] ...further evaluate four training-free voting variants, including equal-weight hard voting, equal-weight soft voting, calibration-weighted hard voting, and calibration-weighted soft voting, to combine multiple wavelet configurations without training a supervised meta-classifier. We evaluate the framework on HC3, M4, and MAGE using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models. The best single wavelet configurations achieve AUROC values of 0.9872, 0.8185, and 0.7138 on HC3, M4, and MAGE, respectively. With calibration-weighted voting, the best ensemble variants further improve AUROC to 0.9919, 0.8477, and 0.7471. These findings show th...",
+   "[abstract] ...ng, to combine multiple wavelet configurations without training a supervised meta-classifier. We evaluate the framework on HC3, M4, and MAGE using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models. The best single wavelet configurations achieve AUROC values of 0.9872, 0.8185, and 0.7138 on HC3, M4, and MAGE, respectively. With calibration-weighted voting, the best ensemble variants further improve AUROC to 0.9919, 0.8477, and 0.7471. These findings show that DWT-based multiresolution scoring and calibration-guided voting fusion provide effective and interpretable signals for training-free LLM-generated text detection...."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:22",
+  "page": "arxiv:2607.22026v1",
+  "subject": "DWT-Fusion",
+  "object": "GPT-Neo",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DWT-Fusion uses GPT-Neo-2.7B as a proxy causal language model.",
+  "contexts": [
+   "[abstract] ...aluate four training-free voting variants, including equal-weight hard voting, equal-weight soft voting, calibration-weighted hard voting, and calibration-weighted soft voting, to combine multiple wavelet configurations without training a supervised meta-classifier. We evaluate the framework on HC3, M4, and MAGE using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models. The best single wavelet configurations achieve AUROC values of 0.9872, 0.8185, and 0.7138 on HC3, M4, and MAGE, respectively. With calibration-weighted voting, the best ensemble variants further improve AUROC to 0.9919, 0.8477, and 0.7471. These findings show that DWT-base..."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:23",
+  "page": "arxiv:2607.22026v1",
+  "subject": "DWT-Fusion",
+  "object": "GPT-J",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DWT-Fusion uses GPT-J-6B as a proxy causal language model.",
+  "contexts": [
+   "[abstract] ...aining-free voting variants, including equal-weight hard voting, equal-weight soft voting, calibration-weighted hard voting, and calibration-weighted soft voting, to combine multiple wavelet configurations without training a supervised meta-classifier. We evaluate the framework on HC3, M4, and MAGE using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models. The best single wavelet configurations achieve AUROC values of 0.9872, 0.8185, and 0.7138 on HC3, M4, and MAGE, respectively. With calibration-weighted voting, the best ensemble variants further improve AUROC to 0.9919, 0.8477, and 0.7471. These findings show that DWT-based multiresolut..."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:24",
+  "page": "arxiv:2607.22026v1",
+  "subject": "DWT-Fusion",
+  "object": "Falcon",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DWT-Fusion uses Falcon-7B as a proxy causal language model.",
+  "contexts": [
+   "[abstract] ...e voting variants, including equal-weight hard voting, equal-weight soft voting, calibration-weighted hard voting, and calibration-weighted soft voting, to combine multiple wavelet configurations without training a supervised meta-classifier. We evaluate the framework on HC3, M4, and MAGE using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models. The best single wavelet configurations achieve AUROC values of 0.9872, 0.8185, and 0.7138 on HC3, M4, and MAGE, respectively. With calibration-weighted voting, the best ensemble variants further improve AUROC to 0.9919, 0.8477, and 0.7471. These findings show that DWT-based multiresolution scorin..."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:25",
+  "page": "arxiv:2607.22026v1",
+  "subject": "DWT-Fusion",
+  "object": "Llama 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DWT-Fusion uses LLaMA-3-8B as a proxy causal language model.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:26",
+  "page": "arxiv:2607.22081v1",
+  "subject": "LFS-FRAME",
+  "object": "CIC-MalMem-2022",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LFS-FRAME is evaluated on CIC-MalMem-2022 obfuscated malware dataset.",
+  "contexts": [
+   "[body] ...vanced ensemble techniques, stacking stands out for its meta-learning approach, where a second-level model learns to optimally blend predictions from diverse base classifiers. Wolpert [ 16 ] formalized stacking in 1992, which renewed interest not only in multiclass settings, but also intrusion detec [...] experiments. CIC-MalMem-2022 : Obfuscated malware is a malware that hides to avoid detection and extermination. The obfuscated malware dataset is designed to test obfuscated malware detection methods through memory. The dataset was created to represent as close to a real-world situation as possible using malware that is prevalent in the real world. It..."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:27",
+  "page": "arxiv:2607.22081v1",
+  "subject": "LFS-FRAME",
+  "object": "KAN",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LFS-FRAME integrates Kolmogorov-Arnold Networks (KAN) as a functional learner.",
+  "contexts": [
+   "[body] ...variables. Similarly, neural network models can represent complex nonlinear interactions but frequently suffer from overfitting and generalization issues. To address these limitations, we propose LFS-FRAME, a leakage-free stacked ensemble framework that integrates functional learning using Kolmogorov-Arnold Networks (KAN) and rule-based learning via XGBoost for robust multiclass classification. The proposed framework constructs unbiased meta-features by employing a strict out-of-fold stacking strategy to ensure complete isolation between training and validation data hence preventing performance leakage. By learning over probabilistic outputs from hete...",
+   "[body] ...ampling. The goal is to increase per-class sample counts so that multi-class attribution experiments (e.g., 15/16-class tasks) have sufficient data. The train, test and validation split chosen with these datasets is 70:15:15. Sample dataset is available in our GitHub repository. Figure 2: Confusion Matrix derived from KAN+XGB with OOF for 16CC. Figure 3: KAN-XGB-16CC. V-B Learning Models In this section we describe the functional learner(KAN), rule-based learners(XGB) and the combination with OOF. Kolmogorov\u2013Arnold Network (KAN): The Kolmogorov\u2013Arnold Network (KAN) serves as a functional learner that models smooth multivariate mappings f : \u211d d \u2192 \u211d C f:...",
+   "[body] ...class sample counts so that multi-class attribution experiments (e.g., 15/16-class tasks) have sufficient data. The train, test and validation split chosen with these datasets is 70:15:15. Sample dataset is available in our GitHub repository. Figure 2: Confusion Matrix derived from KAN+XGB with OOF for 16CC. Figure 3: KAN-XGB-16CC. V-B Learning Models In this section we describe the functional learner(KAN), rule-based learners(XGB) and the combination with OOF. Kolmogorov\u2013Arnold Network (KAN): The Kolmogorov\u2013Arnold Network (KAN) serves as a functional learner that models smooth multivariate mappings f : \u211d d \u2192 \u211d C f:\\mathbb{R}^{d}\\rightarrow\\mathbb{R}^{..."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:28",
+  "page": "arxiv:2607.22081v1",
+  "subject": "LFS-FRAME",
+  "object": "XGBoost",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LFS-FRAME integrates XGBoost as a rule-based learner.",
+  "contexts": [
+   "[body] ...{phd2201101012, artiwari}@iiti.ac.in, sharmila@sit.ac.in Abstract Multiclass classification is a fundamental problem across a wide range of domains. It is still challenging due to possession of high inter-class similarity, class imbalance datasets, and variability in data distributions. Rule-based classifiers such as XGBoost often achieve stronger performance on structured features, but they are limited in capturing smooth functional relationships among variables. Similarly, neural network models can represent complex nonlinear interactions but frequently suffer from overfitting and generalization issues. To address these limitations, we propose LFS-F...",
+   "[body] ...work models can represent complex nonlinear interactions but frequently suffer from overfitting and generalization issues. To address these limitations, we propose LFS-FRAME, a leakage-free stacked ensemble framework that integrates functional learning using Kolmogorov-Arnold Networks (KAN) and rule-based learning via XGBoost for robust multiclass classification. The proposed framework constructs unbiased meta-features by employing a strict out-of-fold stacking strategy to ensure complete isolation between training and validation data hence preventing performance leakage. By learning over probabilistic outputs from heterogeneous base learners, the meta...",
+   "[body] ...) , which are transformed into class probabilities via a softmax function. This formulation enables KAN to capture global, continuous feature interactions efficiently; however, its reliance on smooth approximations can limit its ability to model sharp class boundaries when used in isolation. Extreme Gradient Boosting (XGBoost): XGBoost is employed as a rule-based learner that models class posterior probabilities through an additive ensemble of decision trees, expressed as y ^ = \u2211 m = 1 M f m \u200b ( \ud835\udc31 ) \\hat{y}=\\sum_{m=1}^{M}f_{m}(\\mathbf{x}) , where each f m f_{m} represents a regression tree optimized via gradient boosting. In the multiclass setting, a s..."
+  ]
+ },
+ {
+  "sid": "out_g12.jsonl:29",
+  "page": "arxiv:2607.22081v1",
+  "subject": "LFS-FRAME",
+  "object": "Random Forest",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "LFS-FRAME is compared against Random Forest with hyperparameter tuning.",
+  "contexts": [
+   "[body] ...acking for reliable and generalizable multiclass classification. I Introduction Ensemble learning has emerged as a cornerstone of modern machine learning, enabling the combination of multiple models to achieve superior predictive performance over individual learners [ 1 ] . Initially popularized through bagging (e.g., Random Forests) and boosting (e.g., AdaBoost, Gradient Boosting) in the late 1990s and early 2000s, ensemble methods gained prominence by exploiting the bias-variance tradeoff, reducing overfitting, and improving generalization on complex datasets. Their rise accelerated with the availability of computational resources and large-scale dat...",
+   "[body] ...ance under higher number of class cases, with accuracies falling to the lower 60% to 70% for higher number of classes. This suggests that, representation learning and data balancing help in simpler scenarios, but these methods struggle to preserve discriminative capability as number of classes increases. Although, the Random Forest with hyperparameter tuning [ 24 ] improves 4CC performance to 89.07%, demonstrating the strength of rule-based learners on structured features. However, there is a sharp decline to 68.2% in..."
+  ]
+ },
+ {
+  "sid": "out_g2.jsonl:0",
+  "page": "arxiv:2607.20999v1",
+  "subject": "WML",
+  "object": "DeepSeek",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "WML builds on DeepSeek for agent task execution.",
+  "contexts": [
+   "[abstract] ...tocols. A six-module Workflow-Guided Skill Optimization (WGSO) loop then selects provenance- and scope-aware third-party knowledge, applies bounded patches, evaluates candidates, and stores verified outcomes in optimizer-side memory. On SpreadsheetBench, WML reaches 90.33 +/- 1.53 and 74.67 +/- 3.51 Hard Accuracy with DeepSeek and Qwen3.6-Flash, respectively; without additional optimization, the learned Skills transfer to WikiTableQuestions with 84.00 +/- 2.00 and 83.00 +/- 2.00 Denotation Accuracy. On Compiler-Supported50, WML attains both the highest hard-PASS rate and the lowest cost per successful task; compiled execution sharply reduces tokens and..."
+  ]
+ },
+ {
+  "sid": "out_g2.jsonl:1",
+  "page": "arxiv:2607.20999v1",
+  "subject": "WML",
+  "object": "Qwen3.6-Flash",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "WML builds on Qwen3.6-Flash for agent task execution.",
+  "contexts": [
+   "[abstract] ...-module Workflow-Guided Skill Optimization (WGSO) loop then selects provenance- and scope-aware third-party knowledge, applies bounded patches, evaluates candidates, and stores verified outcomes in optimizer-side memory. On SpreadsheetBench, WML reaches 90.33 +/- 1.53 and 74.67 +/- 3.51 Hard Accuracy with DeepSeek and Qwen3.6-Flash, respectively; without additional optimization, the learned Skills transfer to WikiTableQuestions with 84.00 +/- 2.00 and 83.00 +/- 2.00 Denotation Accuracy. On Compiler-Supported50, WML attains both the highest hard-PASS rate and the lowest cost per successful task; compiled execution sharply reduces tokens and calls relati..."
+  ]
+ },
+ {
+  "sid": "out_g2.jsonl:2",
+  "page": "arxiv:2607.20999v1",
+  "subject": "WML",
+  "object": "SpreadsheetBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "WML evaluates on SpreadsheetBench.",
+  "contexts": [
+   "[abstract] ...ects to L3 resources and relational defects across mechanisms to L2 composition protocols. A six-module Workflow-Guided Skill Optimization (WGSO) loop then selects provenance- and scope-aware third-party knowledge, applies bounded patches, evaluates candidates, and stores verified outcomes in optimizer-side memory. On SpreadsheetBench, WML reaches 90.33 +/- 1.53 and 74.67 +/- 3.51 Hard Accuracy with DeepSeek and Qwen3.6-Flash, respectively; without additional optimization, the learned Skills transfer to WikiTableQuestions with 84.00 +/- 2.00 and 83.00 +/- 2.00 Denotation Accuracy. On Compiler-Supported50, WML attains both the highest hard-PASS rate and..."
+  ]
+ },
+ {
+  "sid": "out_g2.jsonl:3",
+  "page": "arxiv:2607.20999v1",
+  "subject": "WML",
+  "object": "WikiTableQuestions",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "WML evaluates learned skills on WikiTableQuestions.",
+  "contexts": [
+   "[abstract] ...re third-party knowledge, applies bounded patches, evaluates candidates, and stores verified outcomes in optimizer-side memory. On SpreadsheetBench, WML reaches 90.33 +/- 1.53 and 74.67 +/- 3.51 Hard Accuracy with DeepSeek and Qwen3.6-Flash, respectively; without additional optimization, the learned Skills transfer to WikiTableQuestions with 84.00 +/- 2.00 and 83.00 +/- 2.00 Denotation Accuracy. On Compiler-Supported50, WML attains both the highest hard-PASS rate and the lowest cost per successful task; compiled execution sharply reduces tokens and calls relative to a direct SkillAgent while retaining most of its successful tasks. Code and artifacts ar..."
+  ]
+ },
+ {
+  "sid": "out_g2.jsonl:4",
+  "page": "arxiv:2607.20999v1",
+  "subject": "WML",
+  "object": "Compiler-Supported50",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "WML evaluates on Compiler-Supported50 benchmark.",
+  "contexts": [
+   "[abstract] ...s verified outcomes in optimizer-side memory. On SpreadsheetBench, WML reaches 90.33 +/- 1.53 and 74.67 +/- 3.51 Hard Accuracy with DeepSeek and Qwen3.6-Flash, respectively; without additional optimization, the learned Skills transfer to WikiTableQuestions with 84.00 +/- 2.00 and 83.00 +/- 2.00 Denotation Accuracy. On Compiler-Supported50, WML attains both the highest hard-PASS rate and the lowest cost per successful task; compiled execution sharply reduces tokens and calls relative to a direct SkillAgent while retaining most of its successful tasks. Code and artifacts are available at https://github.com/xiaolin9595/workflow-localized-mechanism-learnin..."
+  ]
+ },
+ {
+  "sid": "out_g2.jsonl:5",
+  "page": "arxiv:2607.20999v1",
+  "subject": "WML",
+  "object": "SkillAgent",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "WML compiled execution reduces tokens relative to SkillAgent baseline.",
+  "contexts": [
+   "[abstract] ...t additional optimization, the learned Skills transfer to WikiTableQuestions with 84.00 +/- 2.00 and 83.00 +/- 2.00 Denotation Accuracy. On Compiler-Supported50, WML attains both the highest hard-PASS rate and the lowest cost per successful task; compiled execution sharply reduces tokens and calls relative to a direct SkillAgent while retaining most of its successful tasks. Code and artifacts are available at https://github.com/xiaolin9595/workflow-localized-mechanism-learning...."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:0",
+  "page": "arxiv:2607.21279v1",
+  "subject": "Unified moral-value dataset",
+  "object": "ETHICS",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The dataset merges ETHICS with other moral-value sources into unified format.",
+  "contexts": [
+   "[body] ...onto the behavior of AI systems. For the former, human values are generally understood as the fundamental principles that guide individual judgment and behavioral choices. For many years, researchers have been trying to summarize and categorize human values, leading to two main approaches: philosophy such as normative ethics Deigh ( 2025 ) and psychology such as Moral Foundations Theory Graham et al. ( 2013 ) . For the latter, existing research typically describes the alignment process as aligning the model output with human preferences, social norms, or ethical principles through specific training strategies Amodei et al. ( 2016 ) . Nevertheless, due...",
+   "[body] ...t high-quality moral-value datasets according to three criteria: (1) they are publicly available, (2) they provide annotations consisting of scenarios and corresponding moral judgments, and (3) they contain a sufficient number of instances for instruction tuning. After carefully reviewing the available data, we select ETHICS Hendrycks et al. ( 2021 ) 1 1 1 https://huggingface.co/datasets/hendrycks/ethics , UNIMORAL Kumar and Jurgens ( 2025 ) 2 2 2 https://huggingface.co/datasets/shivaniku/UniMoral and SOCIAL-CHEM-101 Forbes et al. ( 2020 ) 3 3 3 https://huggingface.co/datasets/tasksource/social-chemistry-101 to construct our unified value dataset. We f...",
+   "[body] ...licly available, (2) they provide annotations consisting of scenarios and corresponding moral judgments, and (3) they contain a sufficient number of instances for instruction tuning. After carefully reviewing the available data, we select ETHICS Hendrycks et al. ( 2021 ) 1 1 1 https://huggingface.co/datasets/hendrycks/ethics , UNIMORAL Kumar and Jurgens ( 2025 ) 2 2 2 https://huggingface.co/datasets/shivaniku/UniMoral and SOCIAL-CHEM-101 Forbes et al. ( 2020 ) 3 3 3 https://huggingface.co/datasets/tasksource/social-chemistry-101 to construct our unified value dataset. We first build the data preprocessing module to filter and recombine the three select..."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:1",
+  "page": "arxiv:2607.21279v1",
+  "subject": "Unified moral-value dataset",
+  "object": "UNIMORAL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The dataset integrates UNIMORAL as a source corpus for value annotation.",
+  "contexts": [
+   "[body] ...ilable, (2) they provide annotations consisting of scenarios and corresponding moral judgments, and (3) they contain a sufficient number of instances for instruction tuning. After carefully reviewing the available data, we select ETHICS Hendrycks et al. ( 2021 ) 1 1 1 https://huggingface.co/datasets/hendrycks/ethics , UNIMORAL Kumar and Jurgens ( 2025 ) 2 2 2 https://huggingface.co/datasets/shivaniku/UniMoral and SOCIAL-CHEM-101 Forbes et al. ( 2020 ) 3 3 3 https://huggingface.co/datasets/tasksource/social-chemistry-101 to construct our unified value dataset. We first build the data preprocessing module to filter and recombine the three selected datase...",
+   "[body] ...judgments, and (3) they contain a sufficient number of instances for instruction tuning. After carefully reviewing the available data, we select ETHICS Hendrycks et al. ( 2021 ) 1 1 1 https://huggingface.co/datasets/hendrycks/ethics , UNIMORAL Kumar and Jurgens ( 2025 ) 2 2 2 https://huggingface.co/datasets/shivaniku/UniMoral and SOCIAL-CHEM-101 Forbes et al. ( 2020 ) 3 3 3 https://huggingface.co/datasets/tasksource/social-chemistry-101 to construct our unified value dataset. We first build the data preprocessing module to filter and recombine the three selected datasets based on the characteristics of each dataset, converting them into a unified stru...",
+   "[body] ...seline action is selected is labeled as 1. For the Commonsense subdataset, a label of 1 denotes morally wrong behavior, while 0 denotes behavior that is not morally wrong, which is the opposite of the convention used in the other subdatasets. Therefore, we flip these labels before merging them with the others. For the UNIMORAL dataset, we first perform base text construction, in which the original information spanning multiple fields is concatenated into a single scenario. Each data entry is expanded into two entries, each corresponding to one of the possible actions provided by the original dataset. After concatenation, the data is further expanded to..."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:2",
+  "page": "arxiv:2607.21279v1",
+  "subject": "Unified moral-value dataset",
+  "object": "SOCIAL-CHEM-101",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The dataset combines SOCIAL-CHEM-101 into unified instruction-response format.",
+  "contexts": [
+   "[body] ...nd (3) they contain a sufficient number of instances for instruction tuning. After carefully reviewing the available data, we select ETHICS Hendrycks et al. ( 2021 ) 1 1 1 https://huggingface.co/datasets/hendrycks/ethics , UNIMORAL Kumar and Jurgens ( 2025 ) 2 2 2 https://huggingface.co/datasets/shivaniku/UniMoral and SOCIAL-CHEM-101 Forbes et al. ( 2020 ) 3 3 3 https://huggingface.co/datasets/tasksource/social-chemistry-101 to construct our unified value dataset. We first build the data preprocessing module to filter and recombine the three selected datasets based on the characteristics of each dataset, converting them into a unified structure for sub...",
+   "[body] ...from 1 to 5 within the action_criteria field. To obtain binary labels indicating whether an action is morally correct (1) or not (0), we apply a label filtering process to convert these ratings. Specifically, ratings of 1 and 2 are mapped to 0, ratings of 4 and 5 are mapped to 1, and ratings of 3 are discarded. In the SOCIAL-CHEM-101 dataset, the key fields for our value dataset construction are Action , Rot_judgement , Rot_moral_foundations and Action_agree . For each data entry, the Action and Rot_judgement fields are concatenated to form the scenario during base text construction. Meanw..."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:3",
+  "page": "arxiv:2607.21279v1",
+  "subject": "Unified moral-value dataset",
+  "object": "OLMES",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The dataset is evaluated using OLMES (Open Language Model Evaluation Standard) benchmarking.",
+  "contexts": [
+   "[body] ...e-aware behaviors. At the same time, it maintains strong general task performance. In summary, our contributions are listed as follows: \u2022 We review and collect three moral-value datasets and integrate them into a unified dataset with a consistent format and schema. We then train a ModernBERT m [...] Evaluation System (OLMES) Gu et al. ( 2025 ) to standardize the benchmarking process, including prompt formatting, few-shot configurations, and scoring procedures. For value-related tasks, we follow the evaluation pipeline of Value-Action Gap Shen et al. ( 2025 ) , which allows us to examine the consistency between a model\u2019s value endorsement and its behavi..."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:4",
+  "page": "arxiv:2607.21292v1",
+  "subject": "LLM-driven process control workflow",
+  "object": "Bayesian optimization",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The workflow uses Bayesian optimization for automated controller parameter tuning and performance reduction.",
+  "contexts": [
+   "[body] ...validation feedback. The proposed approach is demonstrated on a nonlinear gas-preheater benchmark with coupled pressure and temperature dynamics. The generated workflow produces a physically consistent decentralized PI (proportional-integral) feedback-feedforward control structure and an executable tuning environment. Bayesian optimization reduces the closed loop performance objective, which aggregates set-point tracking and disturbance-rejection errors for the controlled variables, by approximately 26.5 % 26.5\\% relative to the initial controller generated by the workflow, mainly through improved pressure-loop transient performance. This figure quanti...",
+   "[body] ...ate the feasibility of using structured large-language-model-based code generation to construct executable control-design workflows, while also highlighting the need for broader validation on larger plantwide-control benchmarks. Keywords: Large language models, Agentic AI, Autonomous control design, Plantwide control, Bayesian optimization I Introduction The broader move toward autonomous industrial operation is creating a need for engineering workflows that can adapt control designs when process configurations, operating objectives, or unit interconnections change, as can occur in modular and reconfigurable process systems. In such settings, the contr...",
+   "[abstract] ...validation feedback. The proposed approach is demonstrated on a nonlinear gas-preheater benchmark with coupled pressure and temperature dynamics. The generated workflow produces a physically consistent decentralized PI (proportional-integral) feedback-feedforward control structure and an executable tuning environment. Bayesian optimization reduces the closed loop performance objective, which aggregates set-point tracking and disturbance-rejection errors for the controlled variables, by approximately 26.5% relative to the initial controller generated by the workflow, mainly through improved pressure-loop transient performance. This figure quantifies the..."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:5",
+  "page": "arxiv:2607.21300v1",
+  "subject": "FAUN",
+  "object": "StyleGAN2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "FAUN uses StyleGAN2 to generate synthetic faces for constructing the FAIRGET benchmark.",
+  "contexts": [
+   "[body] ...unlearning. FAIRGET is about 10 \u00d7 \\times bigger than existing VQA unlearning benchmarks (see Tab. \u02dc 1 ), featuring 4k identities and over 225k Q&amp;A pairs spread over 13 profile attributes covering textual and visual modalities ( Fig. \u02dc 1 right). Visual modality. Images are obtained starting from 450k unconditioned StyleGAN2 [ karras2019style ] generated faces. As we want equal representation of gender, age, and ethnicity in the benchmark, we annotate each image with the FairFace [ karkkainen2021fairface ] model. This allows us to subsample 4k identity images while preserving balance among attributes. To simulate intra-identity variability, each ima..."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:6",
+  "page": "arxiv:2607.21300v1",
+  "subject": "FAUN",
+  "object": "FairFace",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "FAUN leverages FairFace for demographic annotation of benchmark images.",
+  "contexts": [
+   "[body] ...pread over 13 profile attributes covering textual and visual modalities ( Fig. \u02dc 1 right). Visual modality. Images are obtained starting from 450k unconditioned StyleGAN2 [ karras2019style ] generated faces. As we want equal representation of gender, age, and ethnicity in the benchmark, we annotate each image with the FairFace [ karkkainen2021fairface ] model. This allows us to subsample 4k identity images while preserving balance among attributes. To simulate intra-identity variability, each image is augmented 10 times using Arc2Face [ papantoniou2024arc2face ] . As original annotations can change after augmenting images, we apply a second round of an...",
+   "[body] ...ributes covering textual and visual modalities ( Fig. \u02dc 1 right). Visual modality. Images are obtained starting from 450k unconditioned StyleGAN2 [ karras2019style ] generated faces. As we want equal representation of gender, age, and ethnicity in the benchmark, we annotate each image with the FairFace [ karkkainen2021fairface ] model. This allows us to subsample 4k identity images while preserving balance among attributes. To simulate intra-identity variability, each image is augmented 10 times using Arc2Face [ papantoniou2024arc2face ] . As original annotations can change after augmenting images, we apply a second round of annotation with FairFace, a...",
+   "[body] ...] model. This allows us to subsample 4k identity images while preserving balance among attributes. To simulate intra-identity variability, each image is augmented 10 times using Arc2Face [ papantoniou2024arc2face ] . As original annotations can change after augmenting images, we apply a second round of annotation with FairFace, and choose attributes based on majority voting. This results in 40k pictures with balanced attributes. Identities and corresponding images are finally evenly split into two subsets, one used for training and unlearning ( i.e . , unlearning split), and the other for probing MLLMs\u2019 fairness ( i.e . , fairness split). Textual modal..."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:7",
+  "page": "arxiv:2607.21300v1",
+  "subject": "FAUN",
+  "object": "DeepSeek",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "FAUN uses DeepSeek to generate attribute-specific question templates for the VQA benchmark.",
+  "contexts": [
+   "[body] ...ions, may be correlated with protected attributes, others ( e.g . , profession) are independent. From these profiles, we generate a large pool of Q&amp;A pairs. Contrary to previous approaches that sample questions via LLM prompting [ liu2025protecting , mabenchmarking ] , we generate attribute-specific templates with DeepSeek [ guo2025deepseek ] ( e.g . , \u201cIn what city does &lt;name&gt; live in?\u201d, \u201cWhere is this individual from?\u201d) and populate them with identity-specific values. This allows us to synthesize novel Q&amp;As at scale, covering information about identities while maintaining control over diversity, correctness, and fairness. Thus, for each...",
+   "[body] ...lated with protected attributes, others ( e.g . , profession) are independent. From these profiles, we generate a large pool of Q&amp;A pairs. Contrary to previous approaches that sample questions via LLM prompting [ liu2025protecting , mabenchmarking ] , we generate attribute-specific templates with DeepSeek [ guo2025deepseek ] ( e.g . , \u201cIn what city does &lt;name&gt; live in?\u201d, \u201cWhere is this individual from?\u201d) and populate them with identity-specific values. This allows us to synthesize novel Q&amp;As at scale, covering information about identities while maintaining control over diversity, correctness, and fairness. Thus, for each identity and attr..."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:8",
+  "page": "arxiv:2607.21300v1",
+  "subject": "FAUN",
+  "object": "FIUBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "FAUN is evaluated on both FAIRGET and the established FIUBench for unlearning quality and fairness.",
+  "contexts": [
+   "[abstract] ...Additionally, we propose FAUN, the first unlearning algorithm for MLLMs that forgets unlearning data while preserving model fairness. FAUN exploits a bias-aware activation steering mechanism to unlearn identities while accounting for the unbalanced nature of the forget data. Experiments on FAIRGET and the established FIUBench demonstrate our method's superiority both in unlearning quality and fairness...."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:9",
+  "page": "arxiv:2607.21302v1",
+  "subject": "Expert Behavior Prior (EBP)",
+  "object": "Gym",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "EBP is evaluated on robotic control tasks from the Gym benchmark.",
+  "contexts": [
+   "[body] ...ffline Pre-training for Online RL III-B Online RL with Offline Policy Priors III-C Online RL with Online Policy Priors IV Methods IV-A Online Training Policy Prior IV-B Expert Policy Guidance IV-C Policy Gradient Correction IV-D Actor Network Convergence Analysis V Experiments V-A Experimental Setup V-B Experiments on Gym Environment V-C Experiments on PyBullet Environment V-D Experiments on DMControl Suite V-E EBP Analysis and Ablation Study VI Discussion VII Conclusions and Future Work References A Evaluation Environments and Hyperparameter Setup A-A Three Continuous Control Environments A-B Hyperparameter Setup License: CC BY 4.0 arXiv:2607.21302v1...",
+   "[body] ...ropose an expert policy guidance (EPG) mechanism that selects expert actions from a generative support set, and we integrate a policy gradient correction (PGC) module to harmonize Q-guidance with expert supervision, promoting stable and consistent policy improvement. Extensive experiments conducted on robotic control (Gym, PyBullet) and industrial control (DMControl) benchmarks demonstrate that EBP significantly outperforms state-of-the-art online RL algorithms, achieving higher sample efficiency and more stable convergence. Index Terms: online reinforcement learning, expert policy priors, generative support set, policy gradient correction, stable poli...",
+   "[abstract] ...ropose an expert policy guidance (EPG) mechanism that selects expert actions from a generative support set, and we integrate a policy gradient correction (PGC) module to harmonize Q-guidance with expert supervision, promoting stable and consistent policy improvement. Extensive experiments conducted on robotic control (Gym, PyBullet) and industrial control (DMControl) benchmarks demonstrate that EBP significantly outperforms state-of-the-art online RL algorithms, achieving higher sample efficiency and more stable convergence...."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:10",
+  "page": "arxiv:2607.21302v1",
+  "subject": "Expert Behavior Prior (EBP)",
+  "object": "PyBullet",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "EBP demonstrates improved sample efficiency on PyBullet control environments.",
+  "contexts": [
+   "[body] ...II-B Online RL with Offline Policy Priors III-C Online RL with Online Policy Priors IV Methods IV-A Online Training Policy Prior IV-B Expert Policy Guidance IV-C Policy Gradient Correction IV-D Actor Network Convergence Analysis V Experiments V-A Experimental Setup V-B Experiments on Gym Environment V-C Experiments on PyBullet Environment V-D Experiments on DMControl Suite V-E EBP Analysis and Ablation Study VI Discussion VII Conclusions and Future Work References A Evaluation Environments and Hyperparameter Setup A-A Three Continuous Control Environments A-B Hyperparameter Setup License: CC BY 4.0 arXiv:2607.21302v1 [cs.AI] 23 Jul 2026 Expert Behavior...",
+   "[body] ...e an expert policy guidance (EPG) mechanism that selects expert actions from a generative support set, and we integrate a policy gradient correction (PGC) module to harmonize Q-guidance with expert supervision, promoting stable and consistent policy improvement. Extensive experiments conducted on robotic control (Gym, PyBullet) and industrial control (DMControl) benchmarks demonstrate that EBP significantly outperforms state-of-the-art online RL algorithms, achieving higher sample efficiency and more stable convergence. Index Terms: online reinforcement learning, expert policy priors, generative support set, policy gradient correction, stable policy im...",
+   "[abstract] ...e an expert policy guidance (EPG) mechanism that selects expert actions from a generative support set, and we integrate a policy gradient correction (PGC) module to harmonize Q-guidance with expert supervision, promoting stable and consistent policy improvement. Extensive experiments conducted on robotic control (Gym, PyBullet) and industrial control (DMControl) benchmarks demonstrate that EBP significantly outperforms state-of-the-art online RL algorithms, achieving higher sample efficiency and more stable convergence...."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:11",
+  "page": "arxiv:2607.21302v1",
+  "subject": "Expert Behavior Prior (EBP)",
+  "object": "DMControl",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "EBP is tested on industrial control benchmarks from DMControl.",
+  "contexts": [
+   "[body] ...s III-C Online RL with Online Policy Priors IV Methods IV-A Online Training Policy Prior IV-B Expert Policy Guidance IV-C Policy Gradient Correction IV-D Actor Network Convergence Analysis V Experiments V-A Experimental Setup V-B Experiments on Gym Environment V-C Experiments on PyBullet Environment V-D Experiments on DMControl Suite V-E EBP Analysis and Ablation Study VI Discussion VII Conclusions and Future Work References A Evaluation Environments and Hyperparameter Setup A-A Three Continuous Control Environments A-B Hyperparameter Setup License: CC BY 4.0 arXiv:2607.21302v1 [cs.AI] 23 Jul 2026 Expert Behavior Prior Reinforcement Learning Gong Gao 1...",
+   "[body] ...mechanism that selects expert actions from a generative support set, and we integrate a policy gradient correction (PGC) module to harmonize Q-guidance with expert supervision, promoting stable and consistent policy improvement. Extensive experiments conducted on robotic control (Gym, PyBullet) and industrial control (DMControl) benchmarks demonstrate that EBP significantly outperforms state-of-the-art online RL algorithms, achieving higher sample efficiency and more stable convergence. Index Terms: online reinforcement learning, expert policy priors, generative support set, policy gradient correction, stable policy improvement I Introduction Online re...",
+   "[abstract] ...mechanism that selects expert actions from a generative support set, and we integrate a policy gradient correction (PGC) module to harmonize Q-guidance with expert supervision, promoting stable and consistent policy improvement. Extensive experiments conducted on robotic control (Gym, PyBullet) and industrial control (DMControl) benchmarks demonstrate that EBP significantly outperforms state-of-the-art online RL algorithms, achieving higher sample efficiency and more stable convergence...."
+  ]
+ },
+ {
+  "sid": "out_g3.jsonl:12",
+  "page": "arxiv:2607.21302v1",
+  "subject": "Expert Behavior Prior (EBP)",
+  "object": "TD3",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "EBP outperforms TD3 as a baseline in online reinforcement learning experiments.",
+  "contexts": [
+   "[body] ...tages of training, which may bias policy updates toward conservative behaviors and weaken exploration, particularly in environments with complex dynamics or multi-modal reward structures. IV Methods Figure 1 : Detailed description of the Toy environment and a comparative analysis of the policies learned by the EBP and TD3 algorithms. To better monitor the value-based RL agents, we introduce a simple simulation environment named ToyEnv: S S = [0, 1000]; A A =[-6, 6]; T \u200b ( s , a ) T(s,a) = s s + a a . Given \u0398 \\Theta = {(0, -81),(1, -27),(2, 12),(3, -9),(4, 81),(5, -81)}, the reward for every tuple of ( s , a ) (s,a) relies on the next state: u \u200b ( x , \u03b2...",
+   "[body] ...{1}{\\sigma\\sqrt{5\\pi}}}{e^{-0.1{{(\\frac{{x-\\beta}}{\\sigma})}^{2}}}} (4) R \u200b ( s , a ) \\displaystyle R(s,a) = \u2211 ( \u03b2 , \u03c3 ) \u2208 \u0398 u \u200b ( T \u200b ( s , a ) , \u03b2 , \u03c3 ) . \\displaystyle=\\sum\\limits_{(\\beta,\\sigma)\\in\\Theta}{u(T(s,a),\\beta,\\sigma)}. We conducted comparative experiments using the proposed EBP algorithm and the vanilla TD3 algorithm in the ToyEnv environment, with each method trained for 2 2 M timesteps. As a diagnostic baseline, we visualize the learned state value distributions over the one-dimensional state space in ToyEnv. After training, we evaluated the predicted state values of both EBP and TD3. Specifically, the state value is computed as Q \u03b8 \u200b...",
+   "[body] ...posed EBP algorithm and the vanilla TD3 algorithm in the ToyEnv environment, with each method trained for 2 2 M timesteps. As a diagnostic baseline, we visualize the learned state value distributions over the one-dimensional state space in ToyEnv. After training, we evaluated the predicted state values of both EBP and TD3. Specifically, the state value is computed as Q \u03b8 \u200b ( s , \u03c0 \u200b ( s ) ) Q_{\\theta}(s,\\pi(s)) , which represents the action value induced by the current policy. The resulting state value profiles over the entire one-dimensional state space are illustrated in Fig. 1 . As shown in Fig. 1 , EBP more accurately captures the overall structure..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:0",
+  "page": "arxiv:2607.21414v1",
+  "subject": "approximate logical regression",
+  "object": "PRIMF",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Approximate regression with axioms adopts the strategy of Pre-Image Filtering to restrict regression to partial states.",
+  "contexts": [
+   "[body] ...Approximating Regression with Axioms Approximate regression is a weakened version of regression. It provides a sufficient condition, but does not guarantee that it contains the necessary conditions. Our model of regression approximation follows a similar strategy to Muise et al. ( 2014 ). They use Pre-Image Filtering (PRIMF), which restricts regression to produce a partial state, such that when an action is applied, it satisfies \u03d5 \\phi . PRIMF works with problems with conditional effects. This is done by calculating a set of variables called S \u200b u \u200b p \u200b p \u200b o \u200b r \u200b t Support , which is the union of the preconditions and variables which influence the co...",
+   "[body] ...condition, but does not guarantee that it contains the necessary conditions. Our model of regression approximation follows a similar strategy to Muise et al. ( 2014 ). They use Pre-Image Filtering (PRIMF), which restricts regression to produce a partial state, such that when an action is applied, it satisfies \u03d5 \\phi . PRIMF works with problems with conditional effects. This is done by calculating a set of variables called S \u200b u \u200b p \u200b p \u200b o \u200b r \u200b t Support , which is the union of the preconditions and variables which influence the conditions an action uses in its conditional effects. We similarly treat S \u200b u \u200b p \u200b p \u200b o \u200b r \u200b t Support as the preconditi...",
+   "[body] ..., we also rely on having a complete state available for the computation. This formula takes a state s s and an action o o . It also takes an extra partial state, p p , such that the action o o when applied to s s takes you to a third state which entails p p . In this formula, s s would be called a context state. While PRIMF primarily uses this context state to understand which conditional effects are used, we use it to ensure that derived variables are handled correctly. Definition 4.1 (Approximate Regression) . The approximate regression of an action is an arbitrary formula that defines the sufficient conditions of what must hold prior to an action, s..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:1",
+  "page": "arxiv:2607.21480v1",
+  "subject": "finite-sample auditing",
+  "object": "PAC learning",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Certification method applies distribution-free guarantees from classical PAC learning to high-recall candidate generation.",
+  "contexts": [
+   "[body] ...eport estimated recall together with approximate confidence intervals. Our aim is different: we derive finite-sample one-sided certificates for missed relevant mass and recall, using binomial or hypergeometric inversion according to the sampling design. Several existing frameworks provide useful ingredients. Classical PAC learning provides distribution-free guarantees on generalisation error [ 46 , 3 ] . Candidate generation asks instead for one-sided coverage of a latent relevant set. Recent distribution-free risk-control frameworks (e.g., Learn then Test [ 1 ] , Conformal Risk Control [ 2 ] ) provide general finite-sample machinery for controlling ex..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:2",
+  "page": "arxiv:2607.21480v1",
+  "subject": "finite-sample auditing",
+  "object": "Learn then Test",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Certification method specializes distribution-free risk-control ideas from Learn then Test framework.",
+  "contexts": [
+   "[body] ...ng to the sampling design. Several existing frameworks provide useful ingredients. Classical PAC learning provides distribution-free guarantees on generalisation error [ 46 , 3 ] . Candidate generation asks instead for one-sided coverage of a latent relevant set. Recent distribution-free risk-control frameworks (e.g., Learn then Test [ 1 ] , Conformal Risk Control [ 2 ] ) provide general finite-sample machinery for controlling expected losses, including risks such as false negative rate. We specialise these ideas to high-recall candidate generation, where the central statistical design choice is where to spend labels. We first analyse fixed candidate g..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:3",
+  "page": "arxiv:2607.21480v1",
+  "subject": "finite-sample auditing",
+  "object": "Conformal Risk Control",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Certification method specializes distribution-free risk-control ideas from Conformal Risk Control framework.",
+  "contexts": [
+   "[body] ...n. Several existing frameworks provide useful ingredients. Classical PAC learning provides distribution-free guarantees on generalisation error [ 46 , 3 ] . Candidate generation asks instead for one-sided coverage of a latent relevant set. Recent distribution-free risk-control frameworks (e.g., Learn then Test [ 1 ] , Conformal Risk Control [ 2 ] ) provide general finite-sample machinery for controlling expected losses, including risks such as false negative rate. We specialise these ideas to high-recall candidate generation, where the central statistical design choice is where to spend labels. We first analyse fixed candidate generators, then extend t..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:4",
+  "page": "arxiv:2607.21488v1",
+  "subject": "MAPS",
+  "object": "HighwayEnv",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MAPS is tested across 72 intersection configurations in HighwayEnv.",
+  "contexts": [
+   "[abstract] ...r agents integrate this embedding with local observations to execute vehicle-specific control, decoupling strategic intent from tactical execution and enabling independent optimization of each module. As a proof-of-concept evaluation of this coordination mechanism, we test MAPS across 72 intersection configurations in HighwayEnv. MAPS achieves collision-free navigation while significantly reducing average travel time, outperforming state-of-the-art baselines. The learned proto-plans further exhibit robust generalization: a system trained with three agents achieves a 94% success rate when deployed zero-shot to five-agent scenarios, confirming that proto..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:5",
+  "page": "arxiv:2607.21488v1",
+  "subject": "MAPS",
+  "object": "PPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Master and Worker agents in MAPS are trained using Proximal Policy Optimization.",
+  "contexts": [
+   "[body] ...ces SR to 84% during training and 80% during evaluation. 3.5.3 Episode Termination An episode terminates when (i) all vehicles reach their destinations, (ii) a collision occurs, or (iii) the 50-step limit is reached. 3.6 Network Architecture Both Master and Worker agents are trained using Proximal Policy Optimization (PPO) [ Schulman et al . (2017) ] . Each Worker module consists of separate policy and value networks with four fully-conn..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:6",
+  "page": "arxiv:2607.21491v1",
+  "subject": "concept-circuit analysis",
+  "object": "Qwen2.5-Coder",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Concept-circuit extraction method is extended to Qwen2.5-Coder for a 2x2 cross-language study.",
+  "contexts": [
+   "[abstract] ...Do independently trained language models come to represent the same thing in the same way? We answer for code, extending a recently introduced concept-circuit extraction method to a 2x2 design -- Python and Rust crossed with Qwen2.5-Coder-7B and DeepSeek-Coder-V1-6.7B -- and measuring a complete inventory of grammatical concepts (58 Python, 57 Rust) identically in all four cells: the smallest design that separates what depends on the task, the language, and the model. The answer splits into three parts. What earns dedicated circuitry is set by the task: the m..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:7",
+  "page": "arxiv:2607.21491v1",
+  "subject": "concept-circuit analysis",
+  "object": "DeepSeek-Coder-V1",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Concept-circuit extraction method is extended to DeepSeek-Coder-V1 for cross-model representation comparison.",
+  "contexts": [
+   "[abstract] ...Do independently trained language models come to represent the same thing in the same way? We answer for code, extending a recently introduced concept-circuit extraction method to a 2x2 design -- Python and Rust crossed with Qwen2.5-Coder-7B and DeepSeek-Coder-V1-6.7B -- and measuring a complete inventory of grammatical concepts (58 Python, 57 Rust) identically in all four cells: the smallest design that separates what depends on the task, the language, and the model. The answer splits into three parts. What earns dedicated circuitry is set by the task: the models agree on which..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:8",
+  "page": "arxiv:2607.21498v1",
+  "subject": "Epanorthosis Index",
+  "object": "Claude Haiku",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Epanorthosis density is measured across three model sizes including Claude Haiku.",
+  "contexts": [
+   "[body] ...Liberty ), and oratory (inaugural and commemorative addresses, among them Lincoln, Jefferson, and T. Roosevelt). The model sample comprises short texts from neutral, genre-specific prompts that never mention correction or any rhetorical figure, generated across three model sizes from a single instruction-tuned family (Claude Haiku, Sonnet, and Opus, which share one alignment pipeline) and eight genres (seven with a human baseline, plus a model-only promotional register). Every text, human and model, is cut into windows of a few hundred words; density counts the emphatic-correction family (\u201cnot X, but Y\u201d, \u201cnot only X but Y\u201d, and the sentence-split \u201cNot..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:9",
+  "page": "arxiv:2607.21498v1",
+  "subject": "Epanorthosis Index",
+  "object": "Claude Sonnet",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Epanorthosis density is measured across three model sizes including Claude Sonnet.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:10",
+  "page": "arxiv:2607.21498v1",
+  "subject": "Epanorthosis Index",
+  "object": "Claude Opus",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Epanorthosis density is measured across three model sizes including Claude Opus.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:11",
+  "page": "arxiv:2607.21498v1",
+  "subject": "Epanorthosis Index",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Mitigation techniques are centered on lightweight LoRA adapters to control epanorthosis in generated text.",
+  "contexts": [
+   "[body] ...rshoot in oratory (about twofold, near threefold in Italian, concentrated in the larger tiers) and undershoot in informal question-and-answer writing, while matching humans in argument, journalism, and encyclopedic prose. Three constructive contributions follow: a survey of mitigation techniques centred on lightweight LoRA adapters; a demonstration, in Italian, that a one-line instruction cuts the figure by half to nearly three-quarters and that a supervised-fine-tuning adapter removes it almost entirely, with a scaling coefficient that dials the reduction back onto the human rate; and the argument that the target is calibration to the human rate for e...",
+   "[body] ...dials the reduction back onto the human rate; and the argument that the target is calibration to the human rate for each genre , not elimination. It closes on the stakes: the real risk is that we begin to write like the machines. Keywords: epanorthosis, rhetoric, large language models, autoregressive generation, RLHF, LoRA, controllable text generation, AI-text detection 1. Introduction Read the next answer a chatbot gives you, or the next motivational post that scrolls through a professional feed, and a structure begins to surface that, once seen, is difficult to unsee: \u00abI am not a consultant. I am an architect of change.\u00bb \u00abWe do not sell products. We...",
+   "[abstract] ...rshoot in oratory (about twofold, near threefold in Italian, concentrated in the larger tiers) and undershoot in informal question-and-answer writing, while matching humans in argument, journalism, and encyclopedic prose. Three constructive contributions follow: a survey of mitigation techniques centred on lightweight LoRA adapters; a demonstration, in Italian, that a one-line instruction cuts the figure by half to nearly three-quarters and that a supervised-fine-tuning adapter removes it almost entirely, with a scaling coefficient that dials the reduction back onto the human rate; and the argument that the target is calibration to the human rate for e..."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:12",
+  "page": "arxiv:2607.21503v1",
+  "subject": "Maximem Synap",
+  "object": "LongMemEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Maximem Synap reports 92% on the LongMemEval benchmark for memory evaluation.",
+  "contexts": [
+   "[abstract] ...quadratically in conversation length, crude summarization buys linear cost at the price of an accuracy cliff, and only validated compaction achieves linear cost with preserved fidelity. We describe a reference implementation, Maximem Synap, that realizes the five primitives as a multi-tenant service and reports 92% on LongMemEval and 93.2% on LoCoMo under the configuration detailed in Section 6. We close with dimensions existing benchmarks do not yet capture, latency, token efficiency, and context-rot resistance, and the frontier of decision-level and organization-level context the category points toward...."
+  ]
+ },
+ {
+  "sid": "out_g4.jsonl:13",
+  "page": "arxiv:2607.21503v1",
+  "subject": "Maximem Synap",
+  "object": "LoCoMo",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Maximem Synap reports 93.2% on the LoCoMo benchmark for memory evaluation.",
+  "contexts": [
+   "[abstract] ...tion length, crude summarization buys linear cost at the price of an accuracy cliff, and only validated compaction achieves linear cost with preserved fidelity. We describe a reference implementation, Maximem Synap, that realizes the five primitives as a multi-tenant service and reports 92% on LongMemEval and 93.2% on LoCoMo under the configuration detailed in Section 6. We close with dimensions existing benchmarks do not yet capture, latency, token efficiency, and context-rot resistance, and the frontier of decision-level and organization-level context the category points toward...."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:0",
+  "page": "arxiv:2607.21522v1",
+  "subject": "GS-Agent",
+  "object": "gpt-5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GS-Agent builds on gpt-5 as its foundation model for reasoning and planning.",
+  "contexts": [
+   "[body] ...d with a vision-language model (VLM) tool to provide visual feedback on generated videos. Implementation Details. We employ Genesis (Authors, 2024 ) as our underlying physics engine, leveraging its capacity to simulate diverse materials and its fast, photo-realistic rendering system. Unless otherwise specified, we use gpt-5 as the foundation model backbone for both our method and the baselines. To ensure a fair comparison, all output is rendered at 720p resolution to match the constraints of the baseline video generative models, although GS-Agent inherently supports rendering at much higher resolutions. 4.2 Main Results Table 1 : Main results. We repor..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:1",
+  "page": "arxiv:2607.21522v1",
+  "subject": "GS-Agent",
+  "object": "Genesis",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GS-Agent builds on Genesis physics engine for simulation and rendering.",
+  "contexts": [
+   "[body] ...g et al. , 2024a ) , a well-established agentic framework for software engineering tasks. Because SWE-Agent natively lacks visual capabilities, we introduce SWE-Agent w/ Visual , a variant equipped with a vision-language model (VLM) tool to provide visual feedback on generated videos. Implementation Details. We employ Genesis (Authors, 2024 ) as our underlying physics engine, leveraging its capacity to simulate diverse materials and its fast, photo-realistic rendering system. Unless otherwise specified, we use gpt-5 as the foundation model backbone for both our method and the baselines. To ensure a fair comparison, all output is rendered at 720p resolu..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:2",
+  "page": "arxiv:2607.21522v1",
+  "subject": "GS-Agent",
+  "object": "NewtonGen",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GS-Agent evaluates on the NewtonGen benchmark with 24 scenes testing physical laws.",
+  "contexts": [
+   "[body] ...ts Figure 3 : Qualitative comparisons between GS-Agent and the baseline methods. More cases are presented in the Appendix C . 4.1 Experimental Setup To systematically evaluate GS-Agent\u2019s ability to construct 4D physical worlds, we conduct experiments across two evaluation suites. The first comprises 24 scenes from the NewtonGen benchmark Yuan et al. ( 2025 ) , specifically designed to test 12 distinct physical laws (e.g., parabolic motion, deformation). To assess the novel capabilities unlocked by our method, we collected a second suite of 30 complex scenes featuring non-continuous dynamics in multi-object interactions (e.g., collisions) and dynamic ca...",
+   "[body] ...fically designed to test 12 distinct physical laws (e.g., parabolic motion, deformation). To assess the novel capabilities unlocked by our method, we collected a second suite of 30 complex scenes featuring non-continuous dynamics in multi-object interactions (e.g., collisions) and dynamic camera controls. Metrics. The NewtonGen benchmark reports the Physical Invariance Score (PIS), which measures the relative standard deviation of theoretically invariant physical quantities (e.g., vertical acceleration during parabolic motion). While the original paper utilizes SAM2 to segment objects per frame and approximate centroids for this calculation ( Video-PIS...",
+   "[body] ...h our method and the baselines. To ensure a fair comparison, all output is rendered at 720p resolution to match the constraints of the baseline video generative models, although GS-Agent inherently supports rendering at much higher resolutions. 4.2 Main Results Table 1 : Main results. We report the average PIS over 24 NewtonGen scenes and alignment score and aesthetic metric over 30 scenes here, the best is in bold , and the second best is in underline . Method Video-PIS State-PIS Alignment Score Aesthetic Sora2 (OpenAI, 2025 ) 0.62 - 30.6 48.5 Wan2.2 (Wan et al. , 2025 ) 0.46 - 29.8 58.1 SWE-Agent (Yang et al. , 2024a ) 0.41 0.44 25.8 42.0 SWE-Agent w..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:3",
+  "page": "arxiv:2607.21522v1",
+  "subject": "GS-Agent",
+  "object": "Sora 2",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "GS-Agent compares against Sora 2 for text-to-video generation baseline.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:4",
+  "page": "arxiv:2607.21522v1",
+  "subject": "GS-Agent",
+  "object": "Wan 2.2",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "GS-Agent compares against Wan 2.2 as an open-source video generation baseline.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:5",
+  "page": "arxiv:2607.21522v1",
+  "subject": "GS-Agent",
+  "object": "SWE-Agent",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "GS-Agent compares against SWE-Agent as an agentic baseline for task execution.",
+  "contexts": [
+   "[body] ...w the given instructions. We evaluate GS-Agent on scenes involving complex interactions among liquids, deformable objects, and rigid bodies, as well as diverse camera and lighting controls. Compared to state-of-the-art text-to-video models (Sora2 (OpenAI, 2025 ) and Wan2.2 (Wan et al. , 2025 ) ) and agentic baselines (SWE-Agent (Yang et al. , 2024a ) and our enhanced variant with visual feedback), GS-Agent generates 4D worlds that demonstrate higher physical plausibility, stronger instruction fidelity, and finer controllability. Moreover, its agentic design allows it to identify and address unexpected failures in a fully autonomous manner. We envision...",
+   "[body] ...two lines of baselines: text-to-video generative models and foundation agents that can code to solve tasks. For text-to-video generative models, we compare with Sora-2 (OpenAI, 2025 ) and Wan2.2 (Wan et al. , 2025 ) , representative closed-source and open-source state-of-the-art. For foundation agents, we compare with SWE-Agent (Yang et al. , 2024a ) , a well-established agentic framework for software engineering tasks. Because SWE-Agent natively lacks visual capabilities, we introduce SWE-Agent w/ Visual , a variant equipped with a vision-language model (VLM) tool to provide visual feedback on generated videos. Implementation Details. We employ Genesi...",
+   "[body] ...text-to-video generative models, we compare with Sora-2 (OpenAI, 2025 ) and Wan2.2 (Wan et al. , 2025 ) , representative closed-source and open-source state-of-the-art. For foundation agents, we compare with SWE-Agent (Yang et al. , 2024a ) , a well-established agentic framework for software engineering tasks. Because SWE-Agent natively lacks visual capabilities, we introduce SWE-Agent w/ Visual , a variant equipped with a vision-language model (VLM) tool to provide visual feedback on generated videos. Implementation Details. We employ Genesis (Authors, 2024 ) as our underlying physics engine, leveraging its capacity to simulate diverse materials and i..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:6",
+  "page": "arxiv:2607.21529v1",
+  "subject": "ElasticTTT",
+  "object": "VidTTA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "ElasticTTT compares against VidTTA in head-to-head human evaluation for video editing.",
+  "contexts": [
+   "[body] ...e Cancellation via Contrastive CFG B Details on Experiment Setup B.1 Implementation Details of Baseline Models B.2 Implementation Details of ElasticTTT C Details on Evaluation Metrics C.1 Automatic Metrics C.2 Judge-Based Metrics D Details on Human Evaluation D.1 Evaluation Setup D.2 Head-to-head Human Evaluation with VidTTA E More Evaluation Results E.1 Fewer Steps Evaluation E.2 More TTT Steps with TDR E.3 Efficient Alignment-Editing Trade-off Via TDR F Correlation Analysis of VLM and Human Judgments G Prompt Design for VLM Judgment H Demonstration of Asynchronous Noise Scheduling Masks I Limitations and Future Work I.1 Limitation I.2 Future Work J M..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:7",
+  "page": "arxiv:2607.21530v1",
+  "subject": "SyncPetri",
+  "object": "Petri nets",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SyncPetri builds on Petri nets to model API resources, lifecycle conditions, and causal dependencies.",
+  "contexts": [
+   "[body] ...ted runner preserve schedule-sensitive structure? 8.4 RQ3: Can feedback repair recover from a concrete mismatch without changing the scenario? 8.5 RQ4: Is the artifact boundary strict enough to isolate the generic pipeline from the subject-specific model? 8.6 Threats to Validity 9 Related Work Model-based testing with Petri nets. Stateful API testing and deep-state exploration. LLM-based test generation. Systematic concurrency exploration. Positioning. 10 Conclusion References License: CC BY 4.0 arXiv:2607.21530v1 [cs.SE] 23 Jul 2026 From Resource Flow to Executable Tests: Petri-Net-Guided LLM Test Generation for Concurrent Stateful Rust APIs Kaiwen Zh..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:8",
+  "page": "arxiv:2607.21535v1",
+  "subject": "Windowed-MTP",
+  "object": "Qwen3.6-35B",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Windowed-MTP builds on Qwen3.6-35B as a base model architecture.",
+  "contexts": [
+   "[body] ...s noted, we evaluate on a single NVIDIA B200 GPU (tensor-parallel degree 1) with bf16 KV in SGLang [Zheng et al., 2024 ] , using its built-in MTP/NEXTN speculative-decoding engine and CUDA graphs; the batch-concurrency study (Fig. 5 ) instead uses two B200s at TP2. Models (NVFP4 weights; exact checkpoints in App. A ): Qwen3.6-35B-A3B (GDN-MoE, MoE-FFN MTP), Qwen3.5-122B-A10B (GDN-MoE, MoE-FFN MTP), and Nemotron-3-Super-120B-A12B (Mamba2-hybrid, 8 GQA full-attn layers, MoE-FFN MTP, NoPE). Windowed-MTP uses W = 4032 W{=}4032 , n sink = 64 n_{\\text{sink}}{=}64 . Benchmarks at a fixed 1.04M-token input span RULER [Hsieh et al., 2024 ] (single/multi-value/m...",
+   "[body] ...accepted length (native \u2192 \\to windowed); TPOT: per-output-token latency in ms (native \u2192 \\to windowed). Even where AL \\mathrm{AL} falls (Qwen-122B), TPOT still drops because the per-step cost saving outweighs the acceptance change. model win vs native win vs dense AL \\mathrm{AL} (nat \u2192 \\to win) TPOT ms (nat \u2192 \\to win) Qwen3.6-35B +53% 2.55 \u00d7 \\times 4.49 \u2192 \\to 4.74 5.94 \u2192 \\to 3.89 Qwen3.5-122B +11% 1.75 \u00d7 \\times 5.57 \u2192 \\to 4.74 6.09 \u2192 \\to 5.46 Nemotron-3-120B +23% 1.5..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:9",
+  "page": "arxiv:2607.21535v1",
+  "subject": "Windowed-MTP",
+  "object": "Qwen3.5-122B",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Windowed-MTP builds on Qwen3.5-122B as a base model architecture.",
+  "contexts": [
+   "[body] ...B200 GPU (tensor-parallel degree 1) with bf16 KV in SGLang [Zheng et al., 2024 ] , using its built-in MTP/NEXTN speculative-decoding engine and CUDA graphs; the batch-concurrency study (Fig. 5 ) instead uses two B200s at TP2. Models (NVFP4 weights; exact checkpoints in App. A ): Qwen3.6-35B-A3B (GDN-MoE, MoE-FFN MTP), Qwen3.5-122B-A10B (GDN-MoE, MoE-FFN MTP), and Nemotron-3-Super-120B-A12B (Mamba2-hybrid, 8 GQA full-attn layers, MoE-FFN MTP, NoPE). Windowed-MTP uses W = 4032 W{=}4032 , n sink = 64 n_{\\text{sink}}{=}64 . Benchmarks at a fixed 1.04M-token input span RULER [Hsieh et al., 2024 ] (single/multi-value/multi-query needle retrieval, variable tr...",
+   "[body] ...n latency in ms (native \u2192 \\to windowed). Even where AL \\mathrm{AL} falls (Qwen-122B), TPOT still drops because the per-step cost saving outweighs the acceptance change. model win vs native win vs dense AL \\mathrm{AL} (nat \u2192 \\to win) TPOT ms (nat \u2192 \\to win) Qwen3.6-35B +53% 2.55 \u00d7 \\times 4.49 \u2192 \\to 4.74 5.94 \u2192 \\to 3.89 Qwen3.5-122B +11% 1.75 \u00d7 \\times 5.57 \u2192 \\to 4.74 6.09 \u2192 \\to 5.46 Nemotron-3-120B +23% 1.5..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:10",
+  "page": "arxiv:2607.21535v1",
+  "subject": "Windowed-MTP",
+  "object": "Nemotron-3-Super-120B",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Windowed-MTP builds on Nemotron-3-Super-120B as a base model architecture.",
+  "contexts": [
+   "[body] ...KV in SGLang [Zheng et al., 2024 ] , using its built-in MTP/NEXTN speculative-decoding engine and CUDA graphs; the batch-concurrency study (Fig. 5 ) instead uses two B200s at TP2. Models (NVFP4 weights; exact checkpoints in App. A ): Qwen3.6-35B-A3B (GDN-MoE, MoE-FFN MTP), Qwen3.5-122B-A10B (GDN-MoE, MoE-FFN MTP), and Nemotron-3-Super-120B-A12B (Mamba2-hybrid, 8 GQA full-attn layers, MoE-FFN MTP, NoPE). Windowed-MTP uses W = 4032 W{=}4032 , n sink = 64 n_{\\text{sink}}{=}64 . Benchmarks at a fixed 1.04M-token input span RULER [Hsieh et al., 2024 ] (single/multi-value/multi-query needle retrieval, variable tracking, common-/frequent-word aggregation) as..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:11",
+  "page": "arxiv:2607.21535v1",
+  "subject": "Windowed-MTP",
+  "object": "StreamingLLM",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Windowed-MTP applies StreamingLLM-style sliding window with attention sink to draft attention.",
+  "contexts": [
+   "[body] ...( 0.80 \u00d7 0.80\\times on Qwen-122B code QA, 0.97 \u00d7 0.97\\times on the hybrid Nemotron; Table 13 ), and deeper d = 9 d{=}9 drafts do not rescue it (\u00a7 6 ). Our observation is simple: the draft only needs to be a good enough guesser , and good local guesses do not require the full million-token history. We therefore apply a StreamingLLM-style sliding window plus attention sink [Xiao et al., 2024 ] to the draft\u2019s attention only , leaving verification at full attention. This bounds the draft\u2019s KV working set to W + sink W+\\text{sink} tokens (a 4K window is 0.4 % 0.4\\% of 1M) and is lossless by construction : the full-attention target still decides every accept...",
+   "[abstract] ...minate the draft cost -- precisely where speculation is most valuable. The effect compounds with draft length (a deep native draft can turn net-negative, slower than no speculation) and sharpens under hybrid/linear-attention targets, where cheaper verification leaves the draft's full-attention read exposed. We apply a StreamingLLM-style sliding window plus attention sink to the draft's attention only (Windowed-MTP), leaving full-attention verification intact. It is training-free, drop-in, and lossless by construction: the full-attention target still decides every accepted token, so windowing changes only which tokens are proposed, never which are accep..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:12",
+  "page": "arxiv:2607.21535v1",
+  "subject": "Windowed-MTP",
+  "object": "speculative decoding",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Windowed-MTP optimizes speculative decoding by reducing draft KV cache access at long context.",
+  "contexts": [
+   "[body] ...1 Introduction Speculative decoding (SD) [Leviathan et al., 2023 , Chen et al., 2023a ] is a standard tool for reducing the per-token latency of autoregressive LLMs: a draft proposes \u03b3 \\gamma candidate tokens and the target verifies them in one batched forward, accepting the longest correct prefix. Because the target decides acceptance, SD is exact \u2014the...",
+   "[abstract] ...Speculative decoding accelerates autoregressive generation by having a cheap draft propose tokens that a target verifies in parallel. Frontier models increasingly ship a built-in Multi-Token-Prediction (MTP/NEXTN) draft head under the assumption that the draft is negligibly cheap. At million-token context this breaks: an MTP draft head ty..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:13",
+  "page": "arxiv:2607.21535v1",
+  "subject": "Windowed-MTP",
+  "object": "RULER",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Windowed-MTP evaluates on RULER benchmark for needle retrieval and aggregation tasks.",
+  "contexts": [
+   "[body] ...act checkpoints in App. A ): Qwen3.6-35B-A3B (GDN-MoE, MoE-FFN MTP), Qwen3.5-122B-A10B (GDN-MoE, MoE-FFN MTP), and Nemotron-3-Super-120B-A12B (Mamba2-hybrid, 8 GQA full-attn layers, MoE-FFN MTP, NoPE). Windowed-MTP uses W = 4032 W{=}4032 , n sink = 64 n_{\\text{sink}}{=}64 . Benchmarks at a fixed 1.04M-token input span RULER [Hsieh et al., 2024 ] (single/multi-value/multi-query needle retrieval, variable tracking, common-/frequent-word aggregation) as a controlled easy \u2192 \\to hard difficulty axis; LongBench-v2 [Bai et al., 2024 ] realistic long-context code-reasoning QA; and BABILong [Kuratov et al., 2024 ] multi-fact reasoning QA. We report acceptance l...",
+   "[body] ...depends only on the KV length S S the draft attends over, not on how it arises: the symmetric short-prompt/long-generation regime reaches the same S S by accumulated decode, and windowing caps the draft\u2019s per-step cost there identically. Reproducibility of the 1M inputs. No input is tiled or repeated to reach length. RULER uses its standard, published length-controlled construction (needles/queries embedded in a distractor haystack); LongBench-v2 and BABILong use real documents naturally longer than 1M tokens, tail-truncated to the exact window. All inputs are produced by seeded, in-repository generators and reproduce byte-for-byte. Positional validit...",
+   "[body] ...MoE-FFN MTP is heavier (top-22 of 512 experts vs. top-8 of 256), so the windowable \ud835\udcaa \u200b ( S ) \\mathcal{O}(S) attention scan is a smaller fraction of its per-draft-step cost\u2014giving a still-substantial + 28 % +28\\% vs. the Qwen drafts\u2019 + 30 +30 \u2013 44 % 44\\% . Table 2 : 1M context, d = 7 d{=}7 , B=1, bf16 KV, single B200, RULER niah_multiquery_enum (multi-needle retrieval). win vs native is end-to-end (includes acceptance); win vs dense is vs. no speculation; the matched-acceptance cost-side is in Table 1 . AL \\mathrm{AL} : mean accepted length (native \u2192 \\to windowed); TPOT: per-output-token latency in ms (native \u2192 \\to windowed). Even where AL \\mathrm{AL}..."
+  ]
+ }
+]

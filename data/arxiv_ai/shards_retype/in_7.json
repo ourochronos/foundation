@@ -1,0 +1,737 @@
+[
+ {
+  "sid": "out_18.jsonl:19",
+  "page": "arxiv:2607.22489v1",
+  "subject": "kappa-LoRA",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "kappa-LoRA improves Low-Rank Adaptation by selective matrix updates.",
+  "contexts": [
+   "[body] ...ate all parameters of the model, incurring high computational and memory costs. Parameter-Efficient Fine-Tuning (PEFT) methods have emerged to alleviate this burden, including adapter modules Houlsby et al. ( 2019 ) , prefix tuning Li and Liang ( 2021 ) , prompt tuning Lester et al. ( 2021 ) , and Low-Rank Adaptation (LoRA) Hu et al. ( 2021 ) . While these techniques substantially reduce the number of trainable parameters, LoRA has emerged as one of the most widely adopted PEFT methods due to its simplicity, compatibility with Transformer architectures, and strong empirical performance across a broad range of downstream tasks. However, existing LoRA me...",
+   "[body] ...ning (PEFT) methods have emerged to alleviate this burden, including adapter modules Houlsby et al. ( 2019 ) , prefix tuning Li and Liang ( 2021 ) , prompt tuning Lester et al. ( 2021 ) , and Low-Rank Adaptation (LoRA) Hu et al. ( 2021 ) . While these techniques substantially reduce the number of trainable parameters, LoRA has emerged as one of the most widely adopted PEFT methods due to its simplicity, compatibility with Transformer architectures, and strong empirical performance across a broad range of downstream tasks. However, existing LoRA methods still leave considerable room for improvement in how adaptation capacity is allocated across the mode...",
+   "[body] ...l. ( 2021 ) . While these techniques substantially reduce the number of trainable parameters, LoRA has emerged as one of the most widely adopted PEFT methods due to its simplicity, compatibility with Transformer architectures, and strong empirical performance across a broad range of downstream tasks. However, existing LoRA methods still leave considerable room for improvement in how adaptation capacity is allocated across the model. In particular, LoRA approximates parameter updates with low-rank matrices, significantly reducing the number of trainable parameters adapted during fine-tuning Hu et al. ( 2021 ) . Despite its successes, LoRA introduces cer..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:20",
+  "page": "arxiv:2607.22489v1",
+  "subject": "kappa-LoRA",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "kappa-LoRA is evaluated on HumanEval benchmark.",
+  "contexts": [
+   "[body] ...\\frac{\\sigma_{\\max}(W)}{\\sigma_{\\min}(W)}, (1) and is a standard tool in numerical linear algebra for quantifying the s [...] 4 Experiments Table 1: \u03ba \\kappa -LoRA on NLG tasks. The results are averaged over three runs, with standard deviations included. The GSM8K and MATH datasets share a math fine-tuned model, while HumanEval and MBPP use a code fine-tuned model. MT-Bench utilizes a conversation fine-tuned model. The \"Avg. time\" represents the average fine-tuning time for the three models. Model Method Avg. Time(\u2193) Math Code Conversation GSM8K(\u2191) MATH(\u2191) HumanEval(\u2191) MBPP(\u2191) MT-Bench(\u2191) LLaMA 2-7B full -LoRA 7071s 41.40\u00b10.21 5.06\u00b10.17 21.8\u00b10.2 33.4\u00b10...",
+   "[body] ...s included. The GSM8K and MATH datasets share a math fine-tuned model, while HumanEval and MBPP use a code fine-tuned model. MT-Bench utilizes a conversation fine-tuned model. The \"Avg. time\" represents the average fine-tuning time for the three models. Model Method Avg. Time(\u2193) Math Code Conversation GSM8K(\u2191) MATH(\u2191) HumanEval(\u2191) MBPP(\u2191) MT-Bench(\u2191) LLaMA 2-7B full -LoRA 7071s 41.40\u00b10.21 5.06\u00b10.17 21.8\u00b10.2 33.4\u00b10.3 4.99\u00b10.02 \u03ba \\kappa -LoRA 5948s(-15.9%) 39.29\u00b10.35 5.30\u00b10.24 21.3\u00b10.2 37.6\u00b10.4 5.10\u00b10.03 Mistral-7B full -LoRA 7251s 70.51\u00b10.25 19.76\u00b10.32 48.2\u00b10.1 63.2\u00b10.2 6.29\u00b10.05 \u03ba \\kappa -LoRA 6119s(-15.6%) 70.60\u00b10.18 19.84\u00b10.54 45.1\u00b10.2 63.3\u00b10.4 6.44\u00b1...",
+   "[body] ...ma-7B (Team et al. , 2024 ) on the MetaMathQA dataset (Yu et al. , 2023a ) to benchmark their mathematical reasoning capabilities on GSM8K (Cobbe et al. , 2021 ) and MATH (Hendrycks et al. , 2021 ) . To assess coding proficiency, we further fine-tune these models on CodeFeedback (Zheng et al. , 2024b ) and evaluate on HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) . For conversational ability, we train on WizardLM-Evol-Instruct (Xu et al. , 2023a ) and evaluate on MT-Bench (Zheng et al. , 2024a ) . Following Meng et al. ( 2024 ) , all models are fine-tuned for a single epoch on a 100K-example subset of each dataset to bound training c..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:21",
+  "page": "arxiv:2607.22489v1",
+  "subject": "kappa-LoRA",
+  "object": "MBPP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "kappa-LoRA is evaluated on MBPP benchmark.",
+  "contexts": [
+   "[body] ...\\max}(W)}{\\sigma_{\\min}(W)}, (1) and is a standard tool in numerical linear algebra for quantifying the s [...] 4 Experiments Table 1: \u03ba \\kappa -LoRA on NLG tasks. The results are averaged over three runs, with standard deviations included. The GSM8K and MATH datasets share a math fine-tuned model, while HumanEval and MBPP use a code fine-tuned model. MT-Bench utilizes a conversation fine-tuned model. The \"Avg. time\" represents the average fine-tuning time for the three models. Model Method Avg. Time(\u2193) Math Code Conversation GSM8K(\u2191) MATH(\u2191) HumanEval(\u2191) MBPP(\u2191) MT-Bench(\u2191) LLaMA 2-7B full -LoRA 7071s 41.40\u00b10.21 5.06\u00b10.17 21.8\u00b10.2 33.4\u00b10.3 4.99\u00b10.02 \u03ba...",
+   "[body] ...he GSM8K and MATH datasets share a math fine-tuned model, while HumanEval and MBPP use a code fine-tuned model. MT-Bench utilizes a conversation fine-tuned model. The \"Avg. time\" represents the average fine-tuning time for the three models. Model Method Avg. Time(\u2193) Math Code Conversation GSM8K(\u2191) MATH(\u2191) HumanEval(\u2191) MBPP(\u2191) MT-Bench(\u2191) LLaMA 2-7B full -LoRA 7071s 41.40\u00b10.21 5.06\u00b10.17 21.8\u00b10.2 33.4\u00b10.3 4.99\u00b10.02 \u03ba \\kappa -LoRA 5948s(-15.9%) 39.29\u00b10.35 5.30\u00b10.24 21.3\u00b10.2 37.6\u00b10.4 5.10\u00b10.03 Mistral-7B full -LoRA 7251s 70.51\u00b10.25 19.76\u00b10.32 48.2\u00b10.1 63.2\u00b10.2 6.29\u00b10.05 \u03ba \\kappa -LoRA 6119s(-15.6%) 70.60\u00b10.18 19.84\u00b10.54 45.1\u00b10.2 63.3\u00b10.4 6.44\u00b10.04 Gemma-7B...",
+   "[body] ...etaMathQA dataset (Yu et al. , 2023a ) to benchmark their mathematical reasoning capabilities on GSM8K (Cobbe et al. , 2021 ) and MATH (Hendrycks et al. , 2021 ) . To assess coding proficiency, we further fine-tune these models on CodeFeedback (Zheng et al. , 2024b ) and evaluate on HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) . For conversational ability, we train on WizardLM-Evol-Instruct (Xu et al. , 2023a ) and evaluate on MT-Bench (Zheng et al. , 2024a ) . Following Meng et al. ( 2024 ) , all models are fine-tuned for a single epoch on a 100K-example subset of each dataset to bound training compute and ensure a fair comparison..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:22",
+  "page": "arxiv:2607.22489v1",
+  "subject": "kappa-LoRA",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "kappa-LoRA is evaluated on GSM8K benchmark.",
+  "contexts": [
+   "[body] ...lue, \u03ba \u200b ( W ) = \u03c3 max \u200b ( W ) \u03c3 min \u200b ( W ) , \\kappa(W)\\;=\\;\\frac{\\sigma_{\\max}(W)}{\\sigma_{\\min}(W)}, (1) and is a standard tool in numerical linear algebra for quantifying the s [...] 4 Experiments Table 1: \u03ba \\kappa -LoRA on NLG tasks. The results are averaged over three runs, with standard deviations included. The GSM8K and MATH datasets share a math fine-tuned model, while HumanEval and MBPP use a code fine-tuned model. MT-Bench utilizes a conversation fine-tuned model. The \"Avg. time\" represents the average fine-tuning time for the three models. Model Method Avg. Time(\u2193) Math Code Conversation GSM8K(\u2191) MATH(\u2191) HumanEval(\u2191) MBPP(\u2191) MT-Bench(\u2191) LLa...",
+   "[body] ...tandard deviations included. The GSM8K and MATH datasets share a math fine-tuned model, while HumanEval and MBPP use a code fine-tuned model. MT-Bench utilizes a conversation fine-tuned model. The \"Avg. time\" represents the average fine-tuning time for the three models. Model Method Avg. Time(\u2193) Math Code Conversation GSM8K(\u2191) MATH(\u2191) HumanEval(\u2191) MBPP(\u2191) MT-Bench(\u2191) LLaMA 2-7B full -LoRA 7071s 41.40\u00b10.21 5.06\u00b10.17 21.8\u00b10.2 33.4\u00b10.3 4.99\u00b10.02 \u03ba \\kappa -LoRA 5948s(-15.9%) 39.29\u00b10.35 5.30\u00b10.24 21.3\u00b10.2 37.6\u00b10.4 5.10\u00b10.03 Mistral-7B full -LoRA 7251s 70.51\u00b10.25 19.76\u00b10.32 48.2\u00b10.1 63.2\u00b10.2 6.29\u00b10.05 \u03ba \\kappa -LoRA 6119s(-15.6%) 70.60\u00b10.18 19.84\u00b10.54 45.1\u00b10...",
+   "[body] ...ate \u03ba \\kappa -LoRA algorithms across a diverse set of NLG tasks, see Table 1 . Specifically, we fine-tune LLaMA 2-7B (Touvron et al. , 2023 ) , Mistral-7B (Jiang et al. , 2023 ) , and Gemma-7B (Team et al. , 2024 ) on the MetaMathQA dataset (Yu et al. , 2023a ) to benchmark their mathematical reasoning capabilities on GSM8K (Cobbe et al. , 2021 ) and MATH (Hendrycks et al. , 2021 ) . To assess coding proficiency, we further fine-tune these models on CodeFeedback (Zheng et al. , 2024b ) and evaluate on HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) . For conversational ability, we train on WizardLM-Evol-Instruct (Xu et al. , 2023a ) an..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:23",
+  "page": "arxiv:2607.22491v1",
+  "subject": "Susceptible Architectures",
+  "object": "GARCH",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Susceptible Architectures volatility models are compared against GARCH baseline.",
+  "contexts": [
+   "[body] ...1 Introduction Volatility forecasting is an unusually hard task in for ML models. The target is often persistent, heteroskedastic, heavy-tailed, and regime dependent. There are several strong classical models that explain a large part of the log volatility with acceptable accuracy. For example, GARCH encodes conditional variance recursion [ Bollerslev1 ] ; HAR represents heterogeneous daily, weekly, and monthly persistence [ Corsi1 ] ; HARQ-style version of HAR focusing on the reliability of realized-variance measurements [ Bollerslev2 ] . Any competitive non-linear model should beat all these baselines and improve on the residu...",
+   "[body] ...ining bias, the model\u2019s performance is not statistically differentiable from random noise on almost all individual stocks. 3 Results Based on specific diagnostic metrics, our QRC models (both quantum and quantum-inspired) show forecasting potential beating AR baseline in all experiments and showing better results than GARCH baseline on 8/16 symbols: AAPL, IWM, MSFT, NVDA, QQQ, SPY, XLP, XLK. In particular, our model wins on the biggest individual equities, but the 95% CI for \u0394 \\Delta QLIKE crosses zero: \u2022 AAPL: 95% CI (-0.225 to 0.0192) - Not significant. \u2022 MSFT: 95% CI (-0.203 to 0.043) - Not significant. \u2022 NVDA: 95% CI (-0.221 to 0.115) - Not signifi...",
+   "[body] ...ro: \u2022 AAPL: 95% CI (-0.225 to 0.0192) - Not significant. \u2022 MSFT: 95% CI (-0.203 to 0.043) - Not significant. \u2022 NVDA: 95% CI (-0.221 to 0.115) - Not significant. \u2022 QQQ: 95% CI (-0.270 to 0.001) - Not significant, boundary. Because the upper bound of these intervals is positive, we cannot reject the null hypothesis that GARCH is just as good/better on these high-volume assets. When averaged across different markets, Phase-QRC-MoE effectively did not show a statistically detectable average difference with GARCH (Figure 5 ). Figure 5: Symbol-level confidence intervals for the QLIKE loss differential relative to AR-Ridge. Each point denotes the estimated me..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:24",
+  "page": "arxiv:2607.22508v1",
+  "subject": "bag-of-waves",
+  "object": "TUEV",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "bag-of-waves is evaluated on TUEV clinical EEG event classification benchmark.",
+  "contexts": [
+   "[body] ...regimes Abstract I Introduction II Method II-A Shift-invariant k-means dictionary learning II-B Preprocessing and gain-stripping II-C Feature extraction: counts and transitions II-D Downstream models II-E Evaluation protocols III Datasets IV Results IV-A Mouse EEG: genotype clustering IV-B Dementia classification IV-C TUEV: event classification IV-D Linear classifiers and bag-of-waves against hidden Markov models V Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.22508v1 [cs.LG] 24 Jul 2026 Interpretable EEG biomarkers with bag-of-waves: Spatial and temporal waveform dictionaries for low-data regimes Athanasios Papast...",
+   "[body] ...regional and cross-channel spatial atoms for the multichannel case. We test the method on three complementary datasets, each probing a different aspect: single-channel mouse genotype clustering with only sixteen animals (the low-data and temporal case), resting-state dementia classification (the spatial case), and the TUEV benchmark, a six-way classification of clinical EEG events (a high-data comparison against strong deep and foundation baselines). Across all three datasets, bag-of-waves achieves performance competitive with state-of-the-art deep and foundation models. Yet, it operates with a fraction of the parameter count and provides full interpre...",
+   "[body] ...gainst genotype, with robustness checked over three seeds, twelve random hold-out splits, and a permutation null over 200 label shuffles ( p &lt; 0.01 p&lt;0.01 ). For the dementia task we use five-fold stratified cross-validation at the subject level, with subject-disjoint folds, and report accuracy and macro F1. For TUEV we use the official patient-disjoint split and report Cohen kappa, weighted F1, and balanced accuracy. III Datasets Mouse Scn8a EEG. Heterozygous Scn8a mice (strain B6(C3Fe)- Scn8a 8J /Frk, Jackson Laboratory stock 012945) exhibit spike-wave discharges characteristic of absence seizures [ 8 ] . Ten heterozygous mice and six wild-type..."
+  ]
+ },
+ {
+  "sid": "out_18.jsonl:25",
+  "page": "arxiv:2607.22516v1",
+  "subject": "Quantum Spectral Models",
+  "object": "Pendigits",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Quantum Spectral Models are evaluated on Pendigits matrix classification task.",
+  "contexts": [
+   "[abstract] ...d non-overlapping patch-local block Hamiltonians. Their outputs admit truncated Fourier representations in which input-dependent spectral gaps supply candidate phase carriers, while spectral subspaces help determine their coefficients. We evaluate the QSMs and comparison quantum models on two matrix representations of Pendigits and two controlled synthetic tasks defined by spectral statistics. At the largest evaluated circuit depth, QSM variants lead the tested quantum models in mean test accuracy across all four benchmarks. The patch-local QSM leads on Pendigits, whereas the global block-Hamiltonian QSM leads on the controlled spectral tasks. Ablation...",
+   "[abstract] ...valuate the QSMs and comparison quantum models on two matrix representations of Pendigits and two controlled synthetic tasks defined by spectral statistics. At the largest evaluated circuit depth, QSM variants lead the tested quantum models in mean test accuracy across all four benchmarks. The patch-local QSM leads on Pendigits, whereas the global block-Hamiltonian QSM leads on the controlled spectral tasks. Ablations show a task-dependent reversal: subspace-preserving controls perform better on Pendigits, whereas spectral-value-only controls lead among the tested ablations on the synthetic tasks. Together, these results shed new light on quantum machi...",
+   "[abstract] ...circuit depth, QSM variants lead the tested quantum models in mean test accuracy across all four benchmarks. The patch-local QSM leads on Pendigits, whereas the global block-Hamiltonian QSM leads on the controlled spectral tasks. Ablations show a task-dependent reversal: subspace-preserving controls perform better on Pendigits, whereas spectral-value-only controls lead among the tested ablations on the synthetic tasks. Together, these results shed new light on quantum machine-learning model design by showing how input-conditioned spectral representations can provide an analysable inductive bias, while offering a broader perspective on structure-aware..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:0",
+  "page": "arxiv:2607.20957v1",
+  "subject": "Fast ANNS",
+  "object": "SISAP Indexing Challenge",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Fast ANNS evaluates on SISAP Indexing Challenge.",
+  "contexts": [
+   "[body] ...ng metrics on high-dimensional feature vectors. The computational effort depends on the distance function, dimensionality, and data type. For massive datasets or complex distance functions, exact comparisons become too slow. Therefore, approximate nearest neighbor search (ANNS) algorithms are indispensable. The annual SISAP Indexing Challenge benchmarks ANNS approaches under strict constraints. The 2026 edition introduces larger datasets and unnormalized feature vectors. Submissions run in Docker containers restricted to 8 vCPUs and 24 GB of RAM on a AMD EPYC 7F72 processor. The challenge comprises three tasks, of which we address the first two. To ens...",
+   "[abstract] ...The annual SISAP Indexing Challenge benchmarks Approximate Nearest Neighbor Search (ANNS) algorithms under rigorous constraints. This paper presents our submissions for the 2026 edition, addressing both $k$-Nearest Neighbor Graph (kNNG) construction on 1024-dimensional BGE-M3 embeddings (Task 1) and Maximum Inner Product Search (MIPS) on unnormalize..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:1",
+  "page": "arxiv:2607.20957v1",
+  "subject": "Fast ANNS",
+  "object": "BGE-M3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Fast ANNS builds on BGE-M3.",
+  "contexts": [
+   "[body] ...iments were conducted on an Intel Xeon 8581C virtual machine configured with identical resource limits and restricted to AVX2 instructions. Task 1 requires computing an approximate k k -Nearest Neighbor Graph (kNNG) for k = 15 k=15 . The dataset contains 6.4 million normalized, 1024-dimensional vectors produced from a BGE-M3 embedding model. Similarity is measured via dot product. The goal is to reduce the total computation time, which includes preprocessing, index building, search, and post-processing. Submissions must achieve at least 0.8 average recall within an 8-hour time limit. Task 2 evaluates Maximum Inner Product Search (MIPS) on LLM-inspired...",
+   "[abstract] ...The annual SISAP Indexing Challenge benchmarks Approximate Nearest Neighbor Search (ANNS) algorithms under rigorous constraints. This paper presents our submissions for the 2026 edition, addressing both $k$-Nearest Neighbor Graph (kNNG) construction on 1024-dimensional BGE-M3 embeddings (Task 1) and Maximum Inner Product Search (MIPS) on unnormalized Llama-3.2-8B features (Task 2). To optimize construction speed, we utilize Equi-Voronoi Polytopes (EVP) for efficient quantization, supplemented by targeted reranking strategies to maintain high recall. For MIPS, we transform the asymmetric inner product pr..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:2",
+  "page": "arxiv:2607.20957v1",
+  "subject": "Fast ANNS",
+  "object": "Llama-3.2-8B",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Fast ANNS evaluates on Llama-3.2-8B.",
+  "contexts": [
+   "[body] ...ssing, index building, search, and post-processing. Submissions must achieve at least 0.8 average recall within an 8-hour time limit. Task 2 evaluates Maximum Inner Product Search (MIPS) on LLM-inspired workloads under distribution shifts. The dataset consists of 256,000 unnormalized, 128-dimensional embeddings from a Llama-3.2-8B model. The objective is to find the k = 30 k=30 maximum inner products for a provided set of queries. Unlike Task 1, the evaluation measures only the search phase time. Submissions are limited to 1 hour of runtime and must reach a recall of 0.8. The 2025 challenge already featured a k k -NN graph construction task on 3 millio...",
+   "[body] ...requires a total execution time of 297 seconds. This duration comprises 52% graph construction, 5% EVP quantization, 34% exploration and reranking, and the remaining fraction for disk loading. 5 Task 2 with Dimension Expansion and FLAS Unlike Task 1, Task 2 evaluates Maximum Inner Product Search (MIPS) on unnormalized Llama-3.2-8B embeddings, where varying vector norms distort traditional proximity spaces. Preliminary baseline experiments using an exhaustive linear search with EVP yielded a recall of only 0.08, demonstrating how direction-only quantization strips the magnitude information required for MIPS. To address these geometric constraints and ma...",
+   "[abstract] ...ge benchmarks Approximate Nearest Neighbor Search (ANNS) algorithms under rigorous constraints. This paper presents our submissions for the 2026 edition, addressing both $k$-Nearest Neighbor Graph (kNNG) construction on 1024-dimensional BGE-M3 embeddings (Task 1) and Maximum Inner Product Search (MIPS) on unnormalized Llama-3.2-8B features (Task 2). To optimize construction speed, we utilize Equi-Voronoi Polytopes (EVP) for efficient quantization, supplemented by targeted reranking strategies to maintain high recall. For MIPS, we transform the asymmetric inner product problem into a Euclidean search space via dimensionality augmentation. To reduce quer..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:3",
+  "page": "arxiv:2607.20957v1",
+  "subject": "Fast ANNS",
+  "object": "DEG",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Fast ANNS builds on DEG.",
+  "contexts": [
+   "[body] ...sed HNSW [ 7 ] builds rapidly, its hierarchical design prioritizes long-distance navigation edges for out-of-sample queries. When forcing a local exploration search on its bottom layer, the algorithm easily gets trapped in local minima due to missing connectivity guarantees. In contrast, the Dynamic Exploration Graph (DEG) [ 5 ] is explicitly optimized for this task. It [...] Empirical evaluation demonstrates a failure to achieve target recall when relying exclusively on EVP for graph construction and search. The resulting topology requires a hybrid-precision approach and a dedicated reranking phase to recover accuracy while preserving throughput. 4.1...",
+   "[body] ...4.1 Evaluated Approaches To evaluate the trade-offs between construction speed and accuracy, we vary vector representation across three pipeline components: graph construction , the database vector format, and the query vector . Five distinct algorithmic configurations are evaluated (top table in Figure 1 ): \u2219 \\bullet DEG FP16: Graph constructed, stored, and queried entirely using FP16 vectors. Extracting the 15 nearest neighbors directly from the raw graph edges yields a recall below the 0.8 threshold, while increasing the vertex degree to improve accuracy drastically inflates build times. Therefore, a local exploration search is initiated from each v...",
+   "[body] ...ry vector . Five distinct algorithmic configurations are evaluated (top table in Figure 1 ): \u2219 \\bullet DEG FP16: Graph constructed, stored, and queried entirely using FP16 vectors. Extracting the 15 nearest neighbors directly from the raw graph edges yields a recall below the 0.8 threshold, while increasing the vertex degree to improve accuracy drastically inflates build times. Therefore, a local exploration search is initiated from each vertex to extract the true 15 nearest neighbors without compromising construction speed. \u2219 \\bullet DEG EVP: FP16 vectors are quantized to 2-bit Equi-Voronoi Polytopes (EVP). Both graph construction and the subsequent l..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:4",
+  "page": "arxiv:2607.20957v1",
+  "subject": "Fast ANNS",
+  "object": "EVP",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Fast ANNS builds on EVP.",
+  "contexts": [
+   "[body] ...search on its bottom layer, the algorithm easily gets trapped in local minima due to missing connectivity guarantees. In contrast, the Dynamic Exploration Graph (DEG) [ 5 ] is explicitly optimized for this task. It [...] Empirical evaluation demonstrates a failure to achieve target recall when relying exclusively on EVP for graph construction and search. The resulting topology requires a hybrid-precision approach and a dedicated reranking phase to recover accuracy while preserving throughput. 4.1 Evaluated Approaches To evaluate the trade-offs between construction speed and accuracy, we vary vector representation across three pipeline components: gra...",
+   "[body] ...from the raw graph edges yields a recall below the 0.8 threshold, while increasing the vertex degree to improve accuracy drastically inflates build times. Therefore, a local exploration search is initiated from each vertex to extract the true 15 nearest neighbors without compromising construction speed. \u2219 \\bullet DEG EVP: FP16 vectors are quantized to 2-bit Equi-Voronoi Polytopes (EVP). Both graph construction and the subsequent local exploration search rely entirely on the symmetric EVP metric. \u2219 \\bullet DEG EVP Asym: The initial graph construction matches the symmetric EVP Baseline. During local exploration, original FP16 vectors serve as queries, u...",
+   "[body] ..., while increasing the vertex degree to improve accuracy drastically inflates build times. Therefore, a local exploration search is initiated from each vertex to extract the true 15 nearest neighbors without compromising construction speed. \u2219 \\bullet DEG EVP: FP16 vectors are quantized to 2-bit Equi-Voronoi Polytopes (EVP). Both graph construction and the subsequent local exploration search rely entirely on the symmetric EVP metric. \u2219 \\bullet DEG EVP Asym: The initial graph construction matches the symmetric EVP Baseline. During local exploration, original FP16 vectors serve as queries, utilizing an asymmetric distance function against the stored EVP d..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:5",
+  "page": "arxiv:2607.20957v1",
+  "subject": "Fast ANNS",
+  "object": "HNSW",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Fast ANNS compares to HNSW.",
+  "contexts": [
+   "[body] ...and the exact nearest neighbors. However, directly building an index that inherently possesses high graph quality is still slow. Often, a faster strategy is to quickly build a proximity graph, then extract the true top- k k neighbors via a local search initialized directly at each target vertex. While the widely used HNSW [ 7 ] builds rapidly, its hierarchical design prioritizes long-distance navigation edges for out-of-sample queries. When forcing a local exploration search on its bottom layer, the algorithm easily gets trapped in local minima due to missing connectivity guarantees. In contrast, the Dynamic Exploration Graph (DEG) [ 5 ] is explicitly..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:6",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "CoordNet",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to CoordNet.",
+  "contexts": [
+   "[body] ...We compare our framework with both open-source learning-based INR models and traditional lossy compression techniques. The evaluation includes two major categories: neural implicit representations and conventional error-bounded compressors. For neural baselines, we consider representative INR architectures, including CoordNet [ 11 ] , NeurComp [ 21 ] , and SIREN [ 30 ] , which employ coordinate-based MLPs for volumetric representation. We also include mixture-of-experts INRs, such as MoE-INR [ 7 ] , Switch-NeRF [ 43 ] and Neural Experts [ 3 ] . Although originally designed for scene rendering, image, or mesh representation, we adapt these MoE-based IN...",
+   "[body] ...e the network backbones from learning-based baselines under the sequence prediction setting. The corresponding results and discussion are provided in Section \u02dc 5.2 . For rendering evaluation, identical view parameters, transfer functions, and lighting settings are applied across all methods. (a) NeurComp (b) SIREN (c) CoordNet (d) ours (e) GT Figure 3 : Comparison of volume rendering results on learning-based INR methods using the vortex data set, and the CR is 1,120. 4.2 Comparison Against Learning-based Methods We compare our framework with representative learning-based INR models across multiple time-varying volumetric datasets. The quantitative rec...",
+   "[body] ...approximately 49.2 \u00d7 \\times and 31.5 \u00d7 \\times , respectively. This efficiency gain mainly comes from our formulation. Under the same compression ratio settings, our framework achieves the highest PSNR on the ionization (PD) and argon bubble datasets, and the second best PSNR on the other two datasets. While the gap to CoordNet on combustion (CHI) is marginal, MoE-INR achieves a larger improvement on vortex, indicating that coordinate-wise MoE models can be advantageous for datasets with complex temporal dynamics. This behavior is related to temporal coherence: full-sequence prediction is more challenging when temporal trajectories are high-frequency an..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:7",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "NeurComp",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to NeurComp.",
+  "contexts": [
+   "[body] ...amework with both open-source learning-based INR models and traditional lossy compression techniques. The evaluation includes two major categories: neural implicit representations and conventional error-bounded compressors. For neural baselines, we consider representative INR architectures, including CoordNet [ 11 ] , NeurComp [ 21 ] , and SIREN [ 30 ] , which employ coordinate-based MLPs for volumetric representation. We also include mixture-of-experts INRs, such as MoE-INR [ 7 ] , Switch-NeRF [ 43 ] and Neural Experts [ 3 ] . Although originally designed for scene rendering, image, or mesh representation, we adapt these MoE-based INRs to the time-var...",
+   "[body] ...ion, we further evaluate the network backbones from learning-based baselines under the sequence prediction setting. The corresponding results and discussion are provided in Section \u02dc 5.2 . For rendering evaluation, identical view parameters, transfer functions, and lighting settings are applied across all methods. (a) NeurComp (b) SIREN (c) CoordNet (d) ours (e) GT Figure 3 : Comparison of volume rendering results on learning-based INR methods using the vortex data set, and the CR is 1,120. 4.2 Comparison Against Learning-based Methods We compare our framework with representative learning-based INR models across multiple time-varying volumetric dataset..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:8",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "SIREN",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to SIREN.",
+  "contexts": [
+   "[body] ...-source learning-based INR models and traditional lossy compression techniques. The evaluation includes two major categories: neural implicit representations and conventional error-bounded compressors. For neural baselines, we consider representative INR architectures, including CoordNet [ 11 ] , NeurComp [ 21 ] , and SIREN [ 30 ] , which employ coordinate-based MLPs for volumetric representation. We also include mixture-of-experts INRs, such as MoE-INR [ 7 ] , Switch-NeRF [ 43 ] and Neural Experts [ 3 ] . Although originally designed for scene rendering, image, or mesh representation, we adapt these MoE-based INRs to the time-varying volumetric compre...",
+   "[body] ...er evaluate the network backbones from learning-based baselines under the sequence prediction setting. The corresponding results and discussion are provided in Section \u02dc 5.2 . For rendering evaluation, identical view parameters, transfer functions, and lighting settings are applied across all methods. (a) NeurComp (b) SIREN (c) CoordNet (d) ours (e) GT Figure 3 : Comparison of volume rendering results on learning-based INR methods using the vortex data set, and the CR is 1,120. 4.2 Comparison Against Learning-based Methods We compare our framework with representative learning-based INR models across multiple time-varying volumetric datasets. The quanti..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:9",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "MoE-INR",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to MoE-INR.",
+  "contexts": [
+   "[body] ...al implicit representations and conventional error-bounded compressors. For neural baselines, we consider representative INR architectures, including CoordNet [ 11 ] , NeurComp [ 21 ] , and SIREN [ 30 ] , which employ coordinate-based MLPs for volumetric representation. We also include mixture-of-experts INRs, such as MoE-INR [ 7 ] , Switch-NeRF [ 43 ] and Neural Experts [ 3 ] . Although originally designed for scene rendering, image, or mesh representation, we adapt these MoE-based INRs to the time-varying volumetric compression setting to enable a comparison of MoE modeling strategies. For traditional lossy compressors, we select three typical soluti...",
+   "[body] ...mes , respectively. This efficiency gain mainly comes from our formulation. Under the same compression ratio settings, our framework achieves the highest PSNR on the ionization (PD) and argon bubble datasets, and the second best PSNR on the other two datasets. While the gap to CoordNet on combustion (CHI) is marginal, MoE-INR achieves a larger improvement on vortex, indicating that coordinate-wise MoE models can be advantageous for datasets with complex temporal dynamics. This behavior is related to temporal coherence: full-sequence prediction is more challenging when temporal trajectories are high-frequency and weakly coherent. Detailed per-time-step..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:10",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "Switch-NeRF",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to Switch-NeRF.",
+  "contexts": [
+   "[body] ...esentations and conventional error-bounded compressors. For neural baselines, we consider representative INR architectures, including CoordNet [ 11 ] , NeurComp [ 21 ] , and SIREN [ 30 ] , which employ coordinate-based MLPs for volumetric representation. We also include mixture-of-experts INRs, such as MoE-INR [ 7 ] , Switch-NeRF [ 43 ] and Neural Experts [ 3 ] . Although originally designed for scene rendering, image, or mesh representation, we adapt these MoE-based INRs to the time-varying volumetric compression setting to enable a comparison of MoE modeling strategies. For traditional lossy compressors, we select three typical solutions: ZFP [ 19 ]..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:11",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "Neural Experts",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to Neural Experts.",
+  "contexts": [
+   "[body] ...ional error-bounded compressors. For neural baselines, we consider representative INR architectures, including CoordNet [ 11 ] , NeurComp [ 21 ] , and SIREN [ 30 ] , which employ coordinate-based MLPs for volumetric representation. We also include mixture-of-experts INRs, such as MoE-INR [ 7 ] , Switch-NeRF [ 43 ] and Neural Experts [ 3 ] . Although originally designed for scene rendering, image, or mesh representation, we adapt these MoE-based INRs to the time-varying volumetric compression setting to enable a comparison of MoE modeling strategies. For traditional lossy compressors, we select three typical solutions: ZFP [ 19 ] , SZ3 [ 18 ] , and TTHR..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:12",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "ZFP",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to ZFP.",
+  "contexts": [
+   "[body] ...RF [ 43 ] and Neural Experts [ 3 ] . Although originally designed for scene rendering, image, or mesh representation, we adapt these MoE-based INRs to the time-varying volumetric compression setting to enable a comparison of MoE modeling strategies. For traditional lossy compressors, we select three typical solutions: ZFP [ 19 ] , SZ3 [ 18 ] , and TTHRESH [ 2 ] . These methods represent widely adopted error-bounded compression approaches for scientific volumetric data and serve as strong non-learning baselines in our evaluation. All learning-based methods are trained under the same optimizer and learning rate schedule for comparison. To evaluate the pe..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:13",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "SZ3",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to SZ3.",
+  "contexts": [
+   "[body] ...Neural Experts [ 3 ] . Although originally designed for scene rendering, image, or mesh representation, we adapt these MoE-based INRs to the time-varying volumetric compression setting to enable a comparison of MoE modeling strategies. For traditional lossy compressors, we select three typical solutions: ZFP [ 19 ] , SZ3 [ 18 ] , and TTHRESH [ 2 ] . These methods represent widely adopted error-bounded compression approaches for scientific volumetric data and serve as strong non-learning baselines in our evaluation. All learning-based methods are trained under the same optimizer and learning rate schedule for comparison. To evaluate the performance of..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:14",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "TTHRESH",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to TTHRESH.",
+  "contexts": [
+   "[body] ...3 ] . Although originally designed for scene rendering, image, or mesh representation, we adapt these MoE-based INRs to the time-varying volumetric compression setting to enable a comparison of MoE modeling strategies. For traditional lossy compressors, we select three typical solutions: ZFP [ 19 ] , SZ3 [ 18 ] , and TTHRESH [ 2 ] . These methods represent widely adopted error-bounded compression approaches for scientific volumetric data and serve as strong non-learning baselines in our evaluation. All learning-based methods are trained under the same optimizer and learning rate schedule for comparison. To evaluate the performance of our method agains..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:15",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "LPIPS",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "INR time-series reformulation evaluates on LPIPS.",
+  "contexts": [
+   "[body] ...s, including reconstruction quality and perceptual similarity. We use voxel-level metrics to evaluate numerical fidelity with respect to the ground truth. These include the Peak Signal-to-Noise Ratio (PSNR), which measures pixel-wise intensity differences. We also include the Learned Perceptual Image Patch Similarity (LPIPS) [ 40 ] , which correlates well with human perception by computing distances between deep features extracted from a pretrained AlexNet [ 17 ] . Beyond low-level fidelity, we evaluate the perceptual and structural realism of the reconstruction using high-level metrics. DreamSim [ 4 ] calculates the cosine distance between features ex..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:16",
+  "page": "arxiv:2607.20970v1",
+  "subject": "INR time-series reformulation",
+  "object": "PSNR",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "INR time-series reformulation evaluates on PSNR.",
+  "contexts": [
+   "[body] ...e difference between the reconstruction volumes and the ground truth (GT) volumes is assessed from multiple perspectives, including reconstruction quality and perceptual similarity. We use voxel-level metrics to evaluate numerical fidelity with respect to the ground truth. These include the Peak Signal-to-Noise Ratio (PSNR), which measures pixel-wise intensity differences. We also include the Learned Perceptual Image Patch Similarity (LPIPS) [ 40 ] , which correlates well with human perception by computing distances between deep features extracted from a pretrained AlexNet [ 17 ] . Beyond low-level fidelity, we evaluate the perceptual and structural re...",
+   "[body] ...to 59.9 \u00d7 \\times and decompression speedups from 25.7 \u00d7 \\times to 38.0 \u00d7 \\times , corresponding to average improvements of approximately 49.2 \u00d7 \\times and 31.5 \u00d7 \\times , respectively. This efficiency gain mainly comes from our formulation. Under the same compression ratio settings, our framework achieves the highest PSNR on the ionization (PD) and argon bubble datasets, and the second best PSNR on the other two datasets. While the gap to CoordNet on combustion (CHI) is marginal, MoE-INR achieves a larger improvement on vortex, indicating that coordinate-wise MoE models can be advantageous for datasets with complex temporal dynamics. This behavior is...",
+   "[body] ...times , corresponding to average improvements of approximately 49.2 \u00d7 \\times and 31.5 \u00d7 \\times , respectively. This efficiency gain mainly comes from our formulation. Under the same compression ratio settings, our framework achieves the highest PSNR on the ionization (PD) and argon bubble datasets, and the second best PSNR on the other two datasets. While the gap to CoordNet on combustion (CHI) is marginal, MoE-INR achieves a larger improvement on vortex, indicating that coordinate-wise MoE models can be advantageous for datasets with complex temporal dynamics. This behavior is related to temporal coherence: full-sequence prediction is more challenging..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:17",
+  "page": "arxiv:2607.20972v1",
+  "subject": "Cue-anchored memory",
+  "object": "Apache Camel",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Cue-anchored memory evaluates on Apache Camel.",
+  "contexts": [
+   "[body] ...evaluation\u2019s design point: if the same knowledge, delivered through two unrelated mechanisms, produces the same behavioral signature \u2014 and its absence through a third (voluntary tools) produces none \u2014 the effect is the delivery architecture, not the implementation. 5 Evaluation Setup. One naturalistic task on a pinned Apache Camel checkout ( \u223c \\sim 169k indexed chunks): implement the reverse option for the stream-mode Resequencer EIP (Enterprise Integration Pattern), a real feature requiring cross-module exploration (model layer, processor engine, reifier wiring, catalog/schema surfaces), gated by a harness-provided acceptance test that must pass unmod..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:18",
+  "page": "arxiv:2607.20981v1",
+  "subject": "Multimodal edge intelligence survey",
+  "object": "Vision Transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Multimodal edge intelligence survey covers Vision Transformer.",
+  "contexts": [
+   "[body] ...dded systems impose tight constraints on latency, memory usage, and power consumption. As inference energy usage may scale super-linearly with the level of accuracy achieved, efficiency becomes a primary concern (Yang et al. , 2024 ) . The review traces this coupled landscape from foundational redundancy principles in Vision Transformers (He et al. , 2022 ; Jaegle et al. , 2021 ; Tong et al. , 2022 ) through KV-cache management, MoE routing, quantization, edge deployment, and hardware-aware evaluation benchmarks (Kwon et al. , 2023 ; Tschand et al. , 2025 ; John et al. , 2024 ; Sukthanker et al. , 2024 ) . The review is organized around five primary th...",
+   "[body] ...levers also create failure conditions: compression shifts the token distribution, sparse routing can become imbalanced under shifted inputs, and memory hierarchies can make expert and cache movement more expensive than arithmetic. This section fixes the architectural vocabulary used by the later failure analyses. 2.1 Vision Transformers and Multimodal Architectures Vision Transformers (ViTs) apply the multi-head self-attention mechanism to sequences of image patches, treating each patch as an independent token. The spatial redundancy of this representation is substantial: masked reconstruction pre-training produces competitive visual representations e...",
+   "[body] ...on shifts the token distribution, sparse routing can become imbalanced under shifted inputs, and memory hierarchies can make expert and cache movement more expensive than arithmetic. This section fixes the architectural vocabulary used by the later failure analyses. 2.1 Vision Transformers and Multimodal Architectures Vision Transformers (ViTs) apply the multi-head self-attention mechanism to sequences of image patches, treating each patch as an independent token. The spatial redundancy of this representation is substantial: masked reconstruction pre-training produces competitive visual representations even when 75%\u201385% of input patches are hidden, bec..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:19",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "LangChain",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks LangChain.",
+  "contexts": [
+   "[body] ...Tur et al. , 2025 ; Tian et al. , 2025 ; Debenedetti et al. , 2024 ; Zhan et al. , 2024 ; Lee et al. , 2024 ; Luo et al. , 2025a ; Yuan et al. , 2024 ) , yet shares three limitations. First, most evaluate agents in simulated or custom-built environments rather than the production frameworks practitioners deploy\u2014e.g., LangChain (Chase, 2026 ) and LlamaIndex (Liu, 2026 ) \u2014widening the gap between findings and practice. Second, many rely on limited automatic validation with insufficient human examination, missing subtle, context-dependent violations. Third, although many guardrails have been proposed (Xiang et al. , 2024 ; Chen et al. , 2025 ; Chen and C...",
+   "[body] ...practitioners without guidance on which defenses work in practice. To address these gaps, we introduce GuardianAgentBench (GABench) , a comprehensive benchmark for evaluating LLM agent safety and guardrail effectiveness on production-ready platforms. GABench covers 580 scenarios across six agent domains, evaluated on LangChain (Chase, 2026 ) , LlamaIndex (Liu, 2026 ) , and Vectara (Vectara, Inc., 2026 ) . Each scenario is produced by a multi-stage generation pipeline that constructs user prompts, simulated tool responses, ground truth execution traces, and evaluation criteria, and is further subjected to five adversarial attack modes targeting distinc...",
+   "[abstract] ...As large language model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe and reliable behavior becomes critical. We present GuardianAgentBench (GABench), a benchmark of 580 scenarios across six domains evaluated on three production-ready frameworks: LangChain, LlamaIndex, and Vectara. The benchmark incorporates rigorous multi-stage validation and five adversarial attack modes. Experiments with six state-of-the-art models reveal that even the strongest configuration achieves only 74.8% overall accuracy and expose two distinct failure regimes: stronger models under-call required tools,..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:20",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "LlamaIndex",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks LlamaIndex.",
+  "contexts": [
+   "[body] ...al. , 2025 ; Debenedetti et al. , 2024 ; Zhan et al. , 2024 ; Lee et al. , 2024 ; Luo et al. , 2025a ; Yuan et al. , 2024 ) , yet shares three limitations. First, most evaluate agents in simulated or custom-built environments rather than the production frameworks practitioners deploy\u2014e.g., LangChain (Chase, 2026 ) and LlamaIndex (Liu, 2026 ) \u2014widening the gap between findings and practice. Second, many rely on limited automatic validation with insufficient human examination, missing subtle, context-dependent violations. Third, although many guardrails have been proposed (Xiang et al. , 2024 ; Chen et al. , 2025 ; Chen and Cong, 2025 ; Kamath et al. , 2...",
+   "[body] ...ance on which defenses work in practice. To address these gaps, we introduce GuardianAgentBench (GABench) , a comprehensive benchmark for evaluating LLM agent safety and guardrail effectiveness on production-ready platforms. GABench covers 580 scenarios across six agent domains, evaluated on LangChain (Chase, 2026 ) , LlamaIndex (Liu, 2026 ) , and Vectara (Vectara, Inc., 2026 ) . Each scenario is produced by a multi-stage generation pipeline that constructs user prompts, simulated tool responses, ground truth execution traces, and evaluation criteria, and is further subjected to five adversarial attack modes targeting distinct failure patterns. We benc...",
+   "[body] ...while weaker models repeatedly call wrong tools or make incorrect selections (up to 58% of failures combined). Performance degrades monotonically with both tool-set size and sequential turn depth, with long-horizon planning proving the steeper bottleneck. As a proof of concept, we implement three guardrails within the LlamaIndex framework and show that they [...] evaluation of multi-step orchestration. Response Evaluation Criteria. Finally, the framework defines criteria for a satisfactory answer: appropriate proactive actions (e.g., relevant follow-ups) and behaviors to avoid (e.g., hallucinating information or ignoring available tools). Explicit cri..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:21",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "Vectara",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks Vectara.",
+  "contexts": [
+   "[body] ...practice. To address these gaps, we introduce GuardianAgentBench (GABench) , a comprehensive benchmark for evaluating LLM agent safety and guardrail effectiveness on production-ready platforms. GABench covers 580 scenarios across six agent domains, evaluated on LangChain (Chase, 2026 ) , LlamaIndex (Liu, 2026 ) , and Vectara (Vectara, Inc., 2026 ) . Each scenario is produced by a multi-stage generation pipeline that constructs user prompts, simulated tool responses, ground truth execution traces, and evaluation criteria, and is further subjected to five adversarial attack modes targeting distinct failure patterns. We benchmark six frontier models\u2014Clau...",
+   "[body] .... To address these gaps, we introduce GuardianAgentBench (GABench) , a comprehensive benchmark for evaluating LLM agent safety and guardrail effectiveness on production-ready platforms. GABench covers 580 scenarios across six agent domains, evaluated on LangChain (Chase, 2026 ) , LlamaIndex (Liu, 2026 ) , and Vectara (Vectara, Inc., 2026 ) . Each scenario is produced by a multi-stage generation pipeline that constructs user prompts, simulated tool responses, ground truth execution traces, and evaluation criteria, and is further subjected to five adversarial attack modes targeting distinct failure patterns. We benchmark six frontier models\u2014Claude Opus 4...",
+   "[abstract] ...model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe and reliable behavior becomes critical. We present GuardianAgentBench (GABench), a benchmark of 580 scenarios across six domains evaluated on three production-ready frameworks: LangChain, LlamaIndex, and Vectara. The benchmark incorporates rigorous multi-stage validation and five adversarial attack modes. Experiments with six state-of-the-art models reveal that even the strongest configuration achieves only 74.8% overall accuracy and expose two distinct failure regimes: stronger models under-call required tools, while weaker models mis-se..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:22",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "Claude Opus 4.5",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks Claude Opus 4.5.",
+  "contexts": [
+   "[body] ..., Inc., 2026 ) . Each scenario is produced by a multi-stage generation pipeline that constructs user prompts, simulated tool responses, ground truth execution traces, and evaluation criteria, and is further subjected to five adversarial attack modes targeting distinct failure patterns. We benchmark six frontier models\u2014Claude Opus 4.5 (Anthropic, 2025a ) , GPT-5.2 Pro (OpenAI, 2025a ) , GPT-OSS-120B (OpenAI, 2025b ) , Gemini-3-Pro (Gemini Team, Google DeepMind, 2025 ) , DeepSeek-V3.2 (DeepSeek-AI, 2025 ) , and Qwen3-Max (Yang et al. , 2025 ) \u2014and find that even the strongest configuration achieves only 74.8 overall accuracy, confirming substantial room..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:23",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "Claude Sonnet 4.5",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks Claude Sonnet 4.5.",
+  "contexts": [
+   "[body] ..., truncated content) with successful tool execution. Tests gap detection, limitation communication, and acknowledgment of incomplete fulfillment. Table 2: Adversarial modification operations for testing agent robustness. 3.3 Agent Evaluation Each scenario executes end-to-end on production frameworks and is scored by a Claude Sonnet 4.5 (Anthropic, 2025b ) judge along two dimensions: response correctness (whether the answer accurately synthesizes tool outputs without hallucination) and action correctness (whether the tool invocation sequence matches the ground truth execution graph in selection, arguments, and ordering). Overall correctness requires bot...",
+   "[body] ...e check_eligibility ). Table 3: Taxonomy of agent failure types identified during action trace evaluation. 3.4 Scenario Validation Generated scenarios undergo multi-stage validation combining automatic verification with human examination. Automatic validation uses deterministic Python scripts for structural checks and Claude Sonnet 4.5 (Anthropic, 2025b ) \u2014chosen for its accuracy\u2013cost balance\u2014for semantic correctness. When a step fails\u2014e.g., intent generation yielding ambiguous or unsatisfiable prompts\u2014the system regenerates with feedback from both checks, looping until the component passes before proceeding to the next stage. We then evaluate each sce...",
+   "[body] ...s accuracy\u2013cost balance\u2014for semantic correctness. When a step fails\u2014e.g., intent generation yielding ambiguous or unsatisfiable prompts\u2014the system regenerates with feedback from both checks, looping until the component passes before proceeding to the next stage. We then evaluate each scenario against production agents\u2014Claude Sonnet 4.5, GPT-5.2 Pro, and Gemini-3-Pro\u2014collecting full traces and..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:24",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "GPT-5.2 Pro",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks GPT-5.2 Pro.",
+  "contexts": [
+   "[body] ...uced by a multi-stage generation pipeline that constructs user prompts, simulated tool responses, ground truth execution traces, and evaluation criteria, and is further subjected to five adversarial attack modes targeting distinct failure patterns. We benchmark six frontier models\u2014Claude Opus 4.5 (Anthropic, 2025a ) , GPT-5.2 Pro (OpenAI, 2025a ) , GPT-OSS-120B (OpenAI, 2025b ) , Gemini-3-Pro (Gemini Team, Google DeepMind, 2025 ) , DeepSeek-V3.2 (DeepSeek-AI, 2025 ) , and Qwen3-Max (Yang et al. , 2025 ) \u2014and find that even the strongest configuration achieves only 74.8 overall accuracy, confirming substantial room for improvement. Failure analysis unco...",
+   "[body] ...ance\u2014for semantic correctness. When a step fails\u2014e.g., intent generation yielding ambiguous or unsatisfiable prompts\u2014the system regenerates with feedback from both checks, looping until the component passes before proceeding to the next stage. We then evaluate each scenario against production agents\u2014Claude Sonnet 4.5, GPT-5.2 Pro, and Gemini-3-Pro\u2014collecting full traces and..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:25",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "GPT-OSS-120B",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks GPT-OSS-120B.",
+  "contexts": [
+   "[body] ...n pipeline that constructs user prompts, simulated tool responses, ground truth execution traces, and evaluation criteria, and is further subjected to five adversarial attack modes targeting distinct failure patterns. We benchmark six frontier models\u2014Claude Opus 4.5 (Anthropic, 2025a ) , GPT-5.2 Pro (OpenAI, 2025a ) , GPT-OSS-120B (OpenAI, 2025b ) , Gemini-3-Pro (Gemini Team, Google DeepMind, 2025 ) , DeepSeek-V3.2 (DeepSeek-AI, 2025 ) , and Qwen3-Max (Yang et al. , 2025 ) \u2014and find that even the strongest configuration achieves only 74.8 overall accuracy, confirming substantial room for improvement. Failure analysis uncovers two qualitatively distinct..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:26",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "Gemini-3-Pro",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks Gemini-3-Pro.",
+  "contexts": [
+   "[body] ...prompts, simulated tool responses, ground truth execution traces, and evaluation criteria, and is further subjected to five adversarial attack modes targeting distinct failure patterns. We benchmark six frontier models\u2014Claude Opus 4.5 (Anthropic, 2025a ) , GPT-5.2 Pro (OpenAI, 2025a ) , GPT-OSS-120B (OpenAI, 2025b ) , Gemini-3-Pro (Gemini Team, Google DeepMind, 2025 ) , DeepSeek-V3.2 (DeepSeek-AI, 2025 ) , and Qwen3-Max (Yang et al. , 2025 ) \u2014and find that even the strongest configuration achieves only 74.8 overall accuracy, confirming substantial room for improvement. Failure analysis uncovers two qualitatively distinct regimes: stronger models fail p...",
+   "[body] ...correctness. When a step fails\u2014e.g., intent generation yielding ambiguous or unsatisfiable prompts\u2014the system regenerates with feedback from both checks, looping until the component passes before proceeding to the next stage. We then evaluate each scenario against production agents\u2014Claude Sonnet 4.5, GPT-5.2 Pro, and Gemini-3-Pro\u2014collecting full traces and..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:27",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "DeepSeek-V3.2",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks DeepSeek-V3.2.",
+  "contexts": [
+   "[body] ...tion traces, and evaluation criteria, and is further subjected to five adversarial attack modes targeting distinct failure patterns. We benchmark six frontier models\u2014Claude Opus 4.5 (Anthropic, 2025a ) , GPT-5.2 Pro (OpenAI, 2025a ) , GPT-OSS-120B (OpenAI, 2025b ) , Gemini-3-Pro (Gemini Team, Google DeepMind, 2025 ) , DeepSeek-V3.2 (DeepSeek-AI, 2025 ) , and Qwen3-Max (Yang et al. , 2025 ) \u2014and find that even the strongest configuration achieves only 74.8 overall accuracy, confirming substantial room for improvement. Failure analysis uncovers two qualitatively distinct regimes: stronger models fail primarily by omitting required tool calls (52\u201357% of f..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:28",
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "object": "Qwen3-Max",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GuardianAgentBench benchmarks Qwen3-Max.",
+  "contexts": [
+   "[body] ...is further subjected to five adversarial attack modes targeting distinct failure patterns. We benchmark six frontier models\u2014Claude Opus 4.5 (Anthropic, 2025a ) , GPT-5.2 Pro (OpenAI, 2025a ) , GPT-OSS-120B (OpenAI, 2025b ) , Gemini-3-Pro (Gemini Team, Google DeepMind, 2025 ) , DeepSeek-V3.2 (DeepSeek-AI, 2025 ) , and Qwen3-Max (Yang et al. , 2025 ) \u2014and find that even the strongest configuration achieves only 74.8 overall accuracy, confirming substantial room for improvement. Failure analysis uncovers two qualitatively distinct regimes: stronger models fail primarily by omitting required tool calls (52\u201357% of failures), while weaker models repeatedly..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:29",
+  "page": "arxiv:2607.20988v1",
+  "subject": "HyWorldVLA",
+  "object": "Qwen",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "HyWorldVLA uses Qwen.",
+  "contexts": [
+   "[body] ...) , a unified multimodal autoregressive model. VideoVAEPlus Fine-tuning. We initialize from the 4-channel VideoVAEPlus (Xing et al. , 2024 ) pre-trained model and fine-tune it on the NuPlan dataset (Caesar et al. , 2021 ) . For each video segment, we uniformly sample 8 frames resized to 216 \u00d7 216 216\\times 216 and use Qwen3.6-plus to generate a short scene description. The training is performed on 4 PPUs (Alibaba Cloud, 2026 ) with a per-PPU batch size of 1. The weights of the adversarial loss and the KL loss are set to 0.5 and 1e-6 respectively, and the adversarial loss is enabled after 50K steps. We train the model for 100K steps, enabling it to lear..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:30",
+  "page": "arxiv:2607.20993v1",
+  "subject": "Concept Channel Probe",
+  "object": "Pillar-0",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Concept Channel Probe probes Pillar-0.",
+  "contexts": [
+   "[body] ...ethgen 3 , Michael Krauthammer 1 Abstract Large vision-language models are becoming increasingly dominant in 3D medical image interpretation, but we rarely know which internal units encode clinical findings or where that information lives in the representation. We first study this on a 3D chest vision-language model ( Pillar-0 ) by probing its frozen vision embeddings. We show that (i) each radiological finding is encoded by a sparse set of \u223c \\sim 10 vision-encoder channels that match full-feature classification performance and far exceed a zero-shot text prompting; (ii) turning off the channels tied to one finding, that finding\u2019s score collapses while...",
+   "[body] ...detector for any finding with at least five positive calibration volumes and abstain otherwise; on CT-RATE all 18 18 findings qualify, while a few of the rarest RadChest-CT and Merlin native labels fall below this floor. 3D VLM Backbones and K K selection We run CCP on frozen precomputed vision-encoder embeddings from Pillar-0 ( D = 1152 D=1152 ) and Merlin ( D = 512 D=512 ). On Pillar-0 channel ranking and probe directions are fit on a 600 600 -volume calibration set; K K is chosen on a disjoint 800 800 -volume train holdout by grid-searching K \u2208 { 1 , 2 , 5 , 10 , 20 , 50 , 100 , 200 , D } K\\in\\{1,2,5,10,20,50,100,200,D\\} and taking the smallest K K...",
+   "[body] ...on volumes and abstain otherwise; on CT-RATE all 18 18 findings qualify, while a few of the rarest RadChest-CT and Merlin native labels fall below this floor. 3D VLM Backbones and K K selection We run CCP on frozen precomputed vision-encoder embeddings from Pillar-0 ( D = 1152 D=1152 ) and Merlin ( D = 512 D=512 ). On Pillar-0 channel ranking and probe directions are fit on a 600 600 -volume calibration set; K K is chosen on a disjoint 800 800 -volume train holdout by grid-searching K \u2208 { 1 , 2 , 5 , 10 , 20 , 50 , 100 , 200 , D } K\\in\\{1,2,5,10,20,50,100,200,D\\} and taking the smallest K K within 0.005 0.005 mean AUROC of full- D D ( K \u2217 = 10 K^{*}=10..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:31",
+  "page": "arxiv:2607.20995v1",
+  "subject": "Animacy circuit analysis",
+  "object": "GPT-2 Small",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Animacy circuit analysis evaluates on GPT-2 Small.",
+  "contexts": [
+   "[body] ...ether the model prefers an animate or inanimate concept to continue the sentence (see the example above). Following modern approaches in mechanistic interpretability, we perform circuit discovery via Edge Attribution Patching with Integrated Gradients (EAP-IG; Hanna et al. , 2024 ) on four open-weight language models: GPT-2 Small, Llama 3.2 3B, Gemma 3 4B, and Qwen 3 4B (Team et al. , 2025 ; Yang et al. , 2025 ; Grattafiori et al. , 2024 ; Radford et al. , 2019 ) . Figure 1 summarizes the full workflow, from dataset construction and metric-based filtering to circuit discovery and transfer evaluation. For each of these models, we identify a circuit for...",
+   "[body] ...scovery and the remainder for evaluation. Detailed sample counts and representative high- and low-margin examples are provided in Appendix D as well as a circuit discovery run on the shared dataset (Appendix N ). 3.4 Circuit discovery We apply EAP-IG on four open-weight models: Gemma 3 4B, Qwen 3 4B, Llama 3.2 3B, and GPT-2 Small, which we use as a smaller baseline model (Team et al. , 2025 ; Yang et al. , 2025 ; Grattafiori et al. , 2024 ; Radford et al. , 2019 ) . We provide further details on EAP-IG in Appendix E . To rank the edges and later evaluate the resulting circuits, we report both task accuracy and faithfulness. Hanna et al. ( 2024 ) showed..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:32",
+  "page": "arxiv:2607.20995v1",
+  "subject": "Animacy circuit analysis",
+  "object": "Llama 3.2",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Animacy circuit analysis evaluates on Llama 3.2.",
+  "contexts": [
+   "[body] ...el prefers an animate or inanimate concept to continue the sentence (see the example above). Following modern approaches in mechanistic interpretability, we perform circuit discovery via Edge Attribution Patching with Integrated Gradients (EAP-IG; Hanna et al. , 2024 ) on four open-weight language models: GPT-2 Small, Llama 3.2 3B, Gemma 3 4B, and Qwen 3 4B (Team et al. , 2025 ; Yang et al. , 2025 ; Grattafiori et al. , 2024 ; Radford et al. , 2019 ) . Figure 1 summarizes the full workflow, from dataset construction and metric-based filtering to circuit discovery and transfer evaluation. For each of these models, we identify a circuit for animacy that...",
+   "[body] ...e task. A pair is counted as correct if it satisfies Equation 1 , because this requires two binary sign conditions to be satisfied simultaneously, the random baseline is 25 % 25\\% . Under this metric, all models performed well above the random baseline: GPT-2 retained 4,721 out of 9,532 pairs, corresponding to 49.53%; Llama 3.2 3B retained 4,734 pairs (49.66%); Gemma 3 4B retained 4,371 pairs (45.86%); and Qwen 3 4B retained 4,300 pairs (45.11%). These numbers quantify how often each model expressed the intended clean/corrupt animate-inanimate contrast. Following standard practice, for each model we retain only the samples where the task is successful...",
+   "[body] ...s were used for discovery and the remainder for evaluation. Detailed sample counts and representative high- and low-margin examples are provided in Appendix D as well as a circuit discovery run on the shared dataset (Appendix N ). 3.4 Circuit discovery We apply EAP-IG on four open-weight models: Gemma 3 4B, Qwen 3 4B, Llama 3.2 3B, and GPT-2 Small, which we use as a smaller baseline model (Team et al. , 2025 ; Yang et al. , 2025 ; Grattafiori et al. , 2024 ; Radford et al. , 2019 ) . We provide further details on EAP-IG in Appendix E . To rank the edges and later evaluate the resulting circuits, we report both task accuracy and faithfulness. Hanna et a..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:33",
+  "page": "arxiv:2607.20995v1",
+  "subject": "Animacy circuit analysis",
+  "object": "Gemma 3",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Animacy circuit analysis evaluates on Gemma 3.",
+  "contexts": [
+   "[body] ...animate or inanimate concept to continue the sentence (see the example above). Following modern approaches in mechanistic interpretability, we perform circuit discovery via Edge Attribution Patching with Integrated Gradients (EAP-IG; Hanna et al. , 2024 ) on four open-weight language models: GPT-2 Small, Llama 3.2 3B, Gemma 3 4B, and Qwen 3 4B (Team et al. , 2025 ; Yang et al. , 2025 ; Grattafiori et al. , 2024 ; Radford et al. , 2019 ) . Figure 1 summarizes the full workflow, from dataset construction and metric-based filtering to circuit discovery and transfer evaluation. For each of these models, we identify a circuit for animacy that is both suffic...",
+   "[body] ...atisfies Equation 1 , because this requires two binary sign conditions to be satisfied simultaneously, the random baseline is 25 % 25\\% . Under this metric, all models performed well above the random baseline: GPT-2 retained 4,721 out of 9,532 pairs, corresponding to 49.53%; Llama 3.2 3B retained 4,734 pairs (49.66%); Gemma 3 4B retained 4,371 pairs (45.86%); and Qwen 3 4B retained 4,300 pairs (45.11%). These numbers quantify how often each model expressed the intended clean/corrupt animate-inanimate contrast. Following standard practice, for each model we retain only the samples where the task is successful (see numbers above), and use them to run cir...",
+   "[body] ...fic dataset, 500 samples were used for discovery and the remainder for evaluation. Detailed sample counts and representative high- and low-margin examples are provided in Appendix D as well as a circuit discovery run on the shared dataset (Appendix N ). 3.4 Circuit discovery We apply EAP-IG on four open-weight models: Gemma 3 4B, Qwen 3 4B, Llama 3.2 3B, and GPT-2 Small, which we use as a smaller baseline model (Team et al. , 2025 ; Yang et al. , 2025 ; Grattafiori et al. , 2024 ; Radford et al. , 2019 ) . We provide further details on EAP-IG in Appendix E . To rank the edges and later evaluate the resulting circuits, we report both task accuracy and f..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:34",
+  "page": "arxiv:2607.20995v1",
+  "subject": "Animacy circuit analysis",
+  "object": "Qwen 3",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Animacy circuit analysis evaluates on Qwen 3.",
+  "contexts": [
+   "[body] ...mate concept to continue the sentence (see the example above). Following modern approaches in mechanistic interpretability, we perform circuit discovery via Edge Attribution Patching with Integrated Gradients (EAP-IG; Hanna et al. , 2024 ) on four open-weight language models: GPT-2 Small, Llama 3.2 3B, Gemma 3 4B, and Qwen 3 4B (Team et al. , 2025 ; Yang et al. , 2025 ; Grattafiori et al. , 2024 ; Radford et al. , 2019 ) . Figure 1 summarizes the full workflow, from dataset construction and metric-based filtering to circuit discovery and transfer evaluation. For each of these models, we identify a circuit for animacy that is both sufficient and necessa...",
+   "[body] ...o binary sign conditions to be satisfied simultaneously, the random baseline is 25 % 25\\% . Under this metric, all models performed well above the random baseline: GPT-2 retained 4,721 out of 9,532 pairs, corresponding to 49.53%; Llama 3.2 3B retained 4,734 pairs (49.66%); Gemma 3 4B retained 4,371 pairs (45.86%); and Qwen 3 4B retained 4,300 pairs (45.11%). These numbers quantify how often each model expressed the intended clean/corrupt animate-inanimate contrast. Following standard practice, for each model we retain only the samples where the task is successful (see numbers above), and use them to run circuit discovery. By construction, each resultin...",
+   "[body] ...500 samples were used for discovery and the remainder for evaluation. Detailed sample counts and representative high- and low-margin examples are provided in Appendix D as well as a circuit discovery run on the shared dataset (Appendix N ). 3.4 Circuit discovery We apply EAP-IG on four open-weight models: Gemma 3 4B, Qwen 3 4B, Llama 3.2 3B, and GPT-2 Small, which we use as a smaller baseline model (Team et al. , 2025 ; Yang et al. , 2025 ; Grattafiori et al. , 2024 ; Radford et al. , 2019 ) . We provide further details on EAP-IG in Appendix E . To rank the edges and later evaluate the resulting circuits, we report both task accuracy and faithfulness...."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:35",
+  "page": "arxiv:2607.21000v1",
+  "subject": "Naju",
+  "object": "Mamba",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Naju compares to Mamba.",
+  "contexts": [
+   "[body] ...1 Introduction Transformers dominate modern sequence modeling, but full self-attention scales quadratically with sequence length, limiting its use in long-context settings. State space models (SSMs), most notably Mamba [ 9 ] , provide an alternative with linear-time sequence mixing through input-dependent state transitions implemented by hardware-aware parallel scans. Most SSMs begin from a continuous-time system, h \u02d9 \u200b ( \u03c4 ) = A \u200b h \u200b ( \u03c4 ) + B \u200b u \u200b ( \u03c4 ) , y \u200b ( \u03c4 ) = C \u200b h \u200b ( \u03c4 ) , \\dot{h}(\\tau)=Ah(\\tau)+Bu(\\tau),\\qquad y(\\tau)=Ch(\\tau), (1)...",
+   "[abstract] ...ry tracking places two opposing demands on a recurrent state: near-lossless retention of stored bindings over long horizons, and active overwriting of stale ones. In our diagnostic suite, the strongest efficient baselines tend to solve only one side well. Continuous-time-parameterized state-space models (SSMs) such as Mamba obtain their discrete recurrence by zero-order-hold discretization of a continuous-time system; we argue that this detour is unnecessary for memory tracking and parameterize the discrete transition directly. Naju (Native Adaptive Junction Unit) factorizes the recurrent update, schematically $x_n = f_n\\odot x_{n-1} + i_n\\odot(B_n u_n...",
+   "[abstract] ...ention and overwriting at 4x the training length. Beyond the diagnostic suite, we evaluate Naju on WikiText-103 language modeling, Long Range Arena, and multi-query associative recall. Across these settings, Naju consistently combines strong long-range memory with competitive or superior performance, outperforming the Mamba baselines in the principal comparisons while remaining competitive with the Transformer and preserving linear-time, linear-memory scaling...."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:36",
+  "page": "arxiv:2607.21000v1",
+  "subject": "Naju",
+  "object": "Transformer",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Naju compares to Transformer.",
+  "contexts": [
+   "[body] ...1 Introduction Transformers dominate modern sequence modeling, but full self-attention scales quadratically with sequence length, limiting its use in long-context settings. State space models (SSMs), most notably Mamba [ 9 ] , provide an alternative with linear-time sequence mixing through input-dependent state transitions implemented by hardware-aware...",
+   "[abstract] ...evaluate Naju on WikiText-103 language modeling, Long Range Arena, and multi-query associative recall. Across these settings, Naju consistently combines strong long-range memory with competitive or superior performance, outperforming the Mamba baselines in the principal comparisons while remaining competitive with the Transformer and preserving linear-time, linear-memory scaling...."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:37",
+  "page": "arxiv:2607.21003v1",
+  "subject": "ADABORD",
+  "object": "AdaBoost",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ADABORD builds on AdaBoost.",
+  "contexts": [
+   "[body] ...pproaches for OC [ 30 ] , including simplifying the problem to related tasks (nominal classification or regression), ordinal binary decompositions or threshold models. However, as discussed later, OC has received less attention in ensemble learning research. Among ensemble classification techniques, Adaptive Boosting (AdaBoost) has played a central role due to its strong empirical performance and solid theoretical foundations. From a statistical learning perspective, AdaBoost can be interpreted as a forward stage-wise additive modelling procedure that minimises an exponential loss function in the function space [ 22 ] . Under this view, the ensemble is...",
+   "[body] ...reshold models. However, as discussed later, OC has received less attention in ensemble learning research. Among ensemble classification techniques, Adaptive Boosting (AdaBoost) has played a central role due to its strong empirical performance and solid theoretical foundations. From a statistical learning perspective, AdaBoost can be interpreted as a forward stage-wise additive modelling procedure that minimises an exponential loss function in the function space [ 22 ] . Under this view, the ensemble is constructed sequentially by adding weak learners that approximate the negative functional gradient of the loss with respect to the current model, resul...",
+   "[body] ...lting in a form of functional gradient descent. The multiclass SAMME extension [ 59 ] preserves this interpretation by optimising a multiclass exponential loss and producing a weighted additive classifier whose learning dynamics are fully determined by the choice of the loss function. Despite its success, the original AdaBoost algorithm, and its multiclass variants, are not explicitly designed for OC problems. The exponential loss underlying AdaBoost treats all misclassification errors uniformly, regardless of their relative distance in the ordered label space. Consequently, the functional gradient descent process does not exploit ordinal relationships..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:38",
+  "page": "arxiv:2607.21003v1",
+  "subject": "ADABORD",
+  "object": "Decision Tree",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ADABORD builds on Decision Tree.",
+  "contexts": [
+   "[body] ...of [ 46 ] without assuming any distance between class labels. Moreover, OEAdaBoost has also been shown to outperform other well-known approaches, such as Random Forest (RF) [ 9 ] and a neural network model specifically adapted for OC (NNRank) [ 13 ] . In this work, ADABORD and its two key components are proposed: the decision tree classifier with Ordinal Gini (OGini) splitting criterion, which is used as base classifier, and the absolute Ranked Probability Score (aRPS), which is used as error function. Decision trees are the most commonly used base learners for boosting, particularly shallow trees, since boosting can combine such simple models in a hi...",
+   "[body] ...ral network model specifically adapted for OC (NNRank) [ 13 ] . In this work, ADABORD and its two key components are proposed: the decision tree classifier with Ordinal Gini (OGini) splitting criterion, which is used as base classifier, and the absolute Ranked Probability Score (aRPS), which is used as error function. Decision trees are the most commonly used base learners for boosting, particularly shallow trees, since boosting can combine such simple models in a highly adaptive and powerful manner [ 31 ] . Moreover, since the aRPS error function is defined on cumulative probabilities, it does not require mapping class labels to arbitrary increasing r...",
+   "[abstract] ...al classification and thereby losing performance potential. In this work, ADABORD, an AdaBoost framework specifically designed for ordinal classification problems, is introduced. The ordinal nature of the classes is incorporated into two key components of the well-known AdaBoost algorithm: 1) the base estimator, where decision trees with the ordinal Gini splitting criterion are proposed; 2) the error function used to update sample weights at each stage and the weights of the classifier in the final ensemble model, given by the absolute ranked probability score, a measure that accounts for both the ordering and the distance between classes. ADABORD is e..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:39",
+  "page": "arxiv:2607.21005v1",
+  "subject": "Weight-norm criticality analysis",
+  "object": "Transformer",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Weight-norm criticality analysis evaluates on Transformer.",
+  "contexts": [
+   "[body] ...1 Introduction (a) Transformer (b) ResNet-50 Figure 1 : The impact of weight decay \u03bb \\lambda on training loss. Larger weight decay leads to more frequent loss spikes. (a) Training loss trajectories of a 16-layer, 16-head 187M Transformer on a 100B-token corpus. (b) ResNet-50 trained on the CIFAR-100 dataset. In training deep neural networks, the loss spike...",
+   "[body] ...1 Introduction (a) Transformer (b) ResNet-50 Figure 1 : The impact of weight decay \u03bb \\lambda on training loss. Larger weight decay leads to more frequent loss spikes. (a) Training loss trajectories of a 16-layer, 16-head 187M Transformer on a 100B-token corpus. (b) ResNet-50 trained on the CIFAR-100 dataset. In training deep neural networks, the loss spike phenomenon\u2014referring to a sudden increase in the training loss at certain steps\u2014is often encountered. The mechanisms underlying a loss spike can be complex and may involve multiple factors, including: (i) da...",
+   "[body] ...ning-rate criticality , collectively explaining the emergence of loss spikes. Concretely, we study the interaction between normalization (e.g., BatchNorm (BN) (Ioffe and Szegedy, 2015 ) and LayerNorm (LN) (Ba et al. , 2016 ) ) and weight decay, and show that it can readily induce loss spikes, as demonstrated by both a Transformer network (Vaswani et al. , 2017 ) and a ResNet-50 (He et al. , 2016 ) in Fig. 1 . The key reason is that normalization introduces scale-invariant components, so that the loss can be insensitive to rescaling certain weights, while the local curvature is not. We begin by studying where the learned solution lies in the loss landsc..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:40",
+  "page": "arxiv:2607.21005v1",
+  "subject": "Weight-norm criticality analysis",
+  "object": "ResNet-50",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Weight-norm criticality analysis evaluates on ResNet-50.",
+  "contexts": [
+   "[body] ...1 Introduction (a) Transformer (b) ResNet-50 Figure 1 : The impact of weight decay \u03bb \\lambda on training loss. Larger weight decay leads to more frequent loss spikes. (a) Training loss trajectories of a 16-layer, 16-head 187M Transformer on a 100B-token corpus. (b) ResNet-50 trained on the CIFAR-100 dataset. In training deep neural networks, the loss spike phenomenon\u2014refer...",
+   "[body] ...1 Introduction (a) Transformer (b) ResNet-50 Figure 1 : The impact of weight decay \u03bb \\lambda on training loss. Larger weight decay leads to more frequent loss spikes. (a) Training loss trajectories of a 16-layer, 16-head 187M Transformer on a 100B-token corpus. (b) ResNet-50 trained on the CIFAR-100 dataset. In training deep neural networks, the loss spike phenomenon\u2014referring to a sudden increase in the training loss at certain steps\u2014is often encountered. The mechanisms underlying a loss spike can be complex and may involve multiple factors, including: (i) data , where a heterogeneous mini-batch yi...",
+   "[body] ...emergence of loss spikes. Concretely, we study the interaction between normalization (e.g., BatchNorm (BN) (Ioffe and Szegedy, 2015 ) and LayerNorm (LN) (Ba et al. , 2016 ) ) and weight decay, and show that it can readily induce loss spikes, as demonstrated by both a Transformer network (Vaswani et al. , 2017 ) and a ResNet-50 (He et al. , 2016 ) in Fig. 1 . The key reason is that normalization introduces scale-invariant components, so that the loss can be insensitive to rescaling certain weights, while the local curvature is not. We begin by studying where the learned solution lies in the loss landscape. We find that, as the weight decay coefficient..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:41",
+  "page": "arxiv:2607.21005v1",
+  "subject": "Weight-norm criticality analysis",
+  "object": "CIFAR-100",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Weight-norm criticality analysis evaluates on CIFAR-100.",
+  "contexts": [
+   "[body] ...1 Introduction (a) Transformer (b) ResNet-50 Figure 1 : The impact of weight decay \u03bb \\lambda on training loss. Larger weight decay leads to more frequent loss spikes. (a) Training loss trajectories of a 16-layer, 16-head 187M Transformer on a 100B-token corpus. (b) ResNet-50 trained on the CIFAR-100 dataset. In training deep neural networks, the loss spike phenomenon\u2014referring to a sudden increase in the training loss at certain steps\u2014is often encountered. The mechanisms underlying a loss spike can be complex and may involve multiple factors, including: (i) data , where a heterogeneous mini-batch yields a noisy or erratic g...",
+   "[body] ...zation, we sweep the weight decay coefficient over { 0 , 0.5 , 1 } \\{0,\\,0.5,\\,1\\} while keeping all other training settings fixed. The resulting training-loss curves are shown in Fig. 1(a) . Complete model architecture and optimization hyperparameters are provided in Appendix A.1.1 . ResNet-50 image classification on CIFAR-100. To verify that the phenomenon is not specific to autoregressive Transformers or language data, we next train a standard ResNet-50 on CIFAR-100 (Krizhevsky, 2009 ) using stochastic gradient descent (SGD). We again vary only the weight decay coefficient while holding all other hyperparameters fixed, and report the training loss i...",
+   "[body] ...g training-loss curves are shown in Fig. 1(a) . Complete model architecture and optimization hyperparameters are provided in Appendix A.1.1 . ResNet-50 image classification on CIFAR-100. To verify that the phenomenon is not specific to autoregressive Transformers or language data, we next train a standard ResNet-50 on CIFAR-100 (Krizhevsky, 2009 ) using stochastic gradient descent (SGD). We again vary only the weight decay coefficient while holding all other hyperparameters fixed, and report the training loss in Fig. 1(b) . Full training details are deferred to Appendix A.1.2 . Mechanistic probe on MNIST: fully connected image classification with optio..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:42",
+  "page": "arxiv:2607.21010v1",
+  "subject": "LLM-summarizer stability probe",
+  "object": "Llama",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LLM-summarizer stability probe uses Llama.",
+  "contexts": [
+   "[body] ...ions due to probabilistic decoding strategies (e.g. sampling, temperature scaling, etc.) employed in LLMs. To gain insight into the stochastic variations in LLM-generated summaries, we select a random document from CNN/DM dataset 1 1 1 See Sec. 5.1 for details of the CNN/DM dataset and generate hundred summaries using Llama summarizer 2 2 2 See details in Sec. 5.2 with fixed input prompt and parameters. Next, we compute BERTScore for each generated summary against the corresponding gold standard reference summary of the document and visualize the score distribution using a box-plot (Fig. 1 ). Substantial and significant semantic variations in the gener...",
+   "[body] ...ns about repeatability and reproducibility of LLM-generated summaries. Furthermore, this observation motivates the conjecture that the assessment of an LLM-summarizer based on single generated summary per document leads to untrustworthy outcome. Figure 1 : Distribution of BERTScore values of 100 summaries generated by Llama-summarizer for a document from CNN/DM dataset. 1.1 Significance of the Problem Robustness, one of the dimensions of trustworthy AI, is defined by 2023-AI-risk-tabassi as a system\u2019s ability to maintain its performance level under various circumstances . Variations along semantic and factuality dimensions in LLM-generated summaries, e..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:43",
+  "page": "arxiv:2607.21010v1",
+  "subject": "LLM-summarizer stability probe",
+  "object": "BERTScore",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LLM-summarizer stability probe uses BERTScore.",
+  "contexts": [
+   "[body] ...s. To gain insight into the stochastic variations in LLM-generated summaries, we select a random document from CNN/DM dataset 1 1 1 See Sec. 5.1 for details of the CNN/DM dataset and generate hundred summaries using Llama summarizer 2 2 2 See details in Sec. 5.2 with fixed input prompt and parameters. Next, we compute BERTScore for each generated summary against the corresponding gold standard reference summary of the document and visualize the score distribution using a box-plot (Fig. 1 ). Substantial and significant semantic variations in the generated summaries are obvious, with the BERTScore values ranging from [0.41, 0.71]. These variations are to...",
+   "[body] ...input prompt and parameters. Next, we compute BERTScore for each generated summary against the corresponding gold standard reference summary of the document and visualize the score distribution using a box-plot (Fig. 1 ). Substantial and significant semantic variations in the generated summaries are obvious, with the BERTScore values ranging from [0.41, 0.71]. These variations are too significant to be ignored, and raise concerns about repeatability and reproducibility of LLM-generated summaries. Furthermore, this observation motivates the conjecture that the assessment of an LLM-summarizer based on single generated summary per document leads to untru...",
+   "[body] ...too significant to be ignored, and raise concerns about repeatability and reproducibility of LLM-generated summaries. Furthermore, this observation motivates the conjecture that the assessment of an LLM-summarizer based on single generated summary per document leads to untrustworthy outcome. Figure 1 : Distribution of BERTScore values of 100 summaries generated by Llama-summarizer for a document from CNN/DM dataset. 1.1 Significance of the Problem Robustness, one of the dimensions of trustworthy AI, is defined by 2023-AI-risk-tabassi as a system\u2019s ability to maintain its performance level under various circumstances . Variations along semantic and fact..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:44",
+  "page": "arxiv:2607.21013v1",
+  "subject": "EmoAgent-R1",
+  "object": "Video-LLaVA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "EmoAgent-R1 compares to Video-LLaVA.",
+  "contexts": [
+   "[body] ...an et al. , 2025a ) as the evaluation metric, which is set to 1 if the label y y is included in the MLLM output and 0 otherwise. For sentiment analysis, we adopt the weighted average F-score (WAF) as the evaluation metric. Baselines. We compare our EmoAgent-R1 with the following baselines: Otter (Li et al. , 2025b ) , Video-LLaVA (Lin et al. , 2024 ) , PandaGPT (Su et al. , 2023 ) , Video-ChatGPT (Maaz et al. , 2024 ) , VideoChat2 (Li et al. , 2024c ) , LLaMA-VID (Li et al. , 2024d ) , VideoChat (Li et al. , 2024b ) , Chat-UniVi (Jin et al. , 2023 ) , mPLUG-Owl (Ye et al. , 2024 ) , AffectGPT (Lian et al. , 2025a ) , and AffectGPT-R1 (Lian et al. , 202...",
+   "[body] ...experiment results on MER-UniBench are shown in Table 2 . We can see that EmoAgent-R1 achieves a new state-of-the-art with a mean score of 77.85% . This performance not only surpasses the previous best specialist method, AffectGPT-R1 (75.95%), but also demonstrates a substantial lead over general-purpose MLLMs such as Video-LLaVA (44.40%) and mPLUG-Owl (62.45%), validating the efficacy of our reinforcement learning-based dynamic agent specialization method in bridging the gap between general video understanding and affective computing. In specific tasks, EmoAgent-R1 also exhibits exceptional robustness. For sentiment analysis, EmoAgent-R1 consistently..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:45",
+  "page": "arxiv:2607.21013v1",
+  "subject": "EmoAgent-R1",
+  "object": "PandaGPT",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "EmoAgent-R1 compares to PandaGPT.",
+  "contexts": [
+   "[body] ...on metric, which is set to 1 if the label y y is included in the MLLM output and 0 otherwise. For sentiment analysis, we adopt the weighted average F-score (WAF) as the evaluation metric. Baselines. We compare our EmoAgent-R1 with the following baselines: Otter (Li et al. , 2025b ) , Video-LLaVA (Lin et al. , 2024 ) , PandaGPT (Su et al. , 2023 ) , Video-ChatGPT (Maaz et al. , 2024 ) , VideoChat2 (Li et al. , 2024c ) , LLaMA-VID (Li et al. , 2024d ) , VideoChat (Li et al. , 2024b ) , Chat-UniVi (Jin et al. , 2023 ) , mPLUG-Owl (Ye et al. , 2024 ) , AffectGPT (Lian et al. , 2025a ) , and AffectGPT-R1 (Lian et al. , 2025b ) . Please refer to the Suppleme..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:46",
+  "page": "arxiv:2607.21013v1",
+  "subject": "EmoAgent-R1",
+  "object": "Video-ChatGPT",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "EmoAgent-R1 compares to Video-ChatGPT.",
+  "contexts": [
+   "[body] ...the label y y is included in the MLLM output and 0 otherwise. For sentiment analysis, we adopt the weighted average F-score (WAF) as the evaluation metric. Baselines. We compare our EmoAgent-R1 with the following baselines: Otter (Li et al. , 2025b ) , Video-LLaVA (Lin et al. , 2024 ) , PandaGPT (Su et al. , 2023 ) , Video-ChatGPT (Maaz et al. , 2024 ) , VideoChat2 (Li et al. , 2024c ) , LLaMA-VID (Li et al. , 2024d ) , VideoChat (Li et al. , 2024b ) , Chat-UniVi (Jin et al. , 2023 ) , mPLUG-Owl (Ye et al. , 2024 ) , AffectGPT (Lian et al. , 2025a ) , and AffectGPT-R1 (Lian et al. , 2025b ) . Please refer to the Supplementary Materials for their brief..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:47",
+  "page": "arxiv:2607.21013v1",
+  "subject": "EmoAgent-R1",
+  "object": "VideoChat2",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "EmoAgent-R1 compares to VideoChat2.",
+  "contexts": [
+   "[body] ...output and 0 otherwise. For sentiment analysis, we adopt the weighted average F-score (WAF) as the evaluation metric. Baselines. We compare our EmoAgent-R1 with the following baselines: Otter (Li et al. , 2025b ) , Video-LLaVA (Lin et al. , 2024 ) , PandaGPT (Su et al. , 2023 ) , Video-ChatGPT (Maaz et al. , 2024 ) , VideoChat2 (Li et al. , 2024c ) , LLaMA-VID (Li et al. , 2024d ) , VideoChat (Li et al. , 2024b ) , Chat-UniVi (Jin et al. , 2023 ) , mPLUG-Owl (Ye et al. , 2024 ) , AffectGPT (Lian et al. , 2025a ) , and AffectGPT-R1 (Lian et al. , 2025b ) . Please refer to the Supplementary Materials for their brief introduction . Implementation Details..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:48",
+  "page": "arxiv:2607.21013v1",
+  "subject": "EmoAgent-R1",
+  "object": "LLaMA-VID",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "EmoAgent-R1 compares to LLaMA-VID.",
+  "contexts": [
+   "[body] ...ment analysis, we adopt the weighted average F-score (WAF) as the evaluation metric. Baselines. We compare our EmoAgent-R1 with the following baselines: Otter (Li et al. , 2025b ) , Video-LLaVA (Lin et al. , 2024 ) , PandaGPT (Su et al. , 2023 ) , Video-ChatGPT (Maaz et al. , 2024 ) , VideoChat2 (Li et al. , 2024c ) , LLaMA-VID (Li et al. , 2024d ) , VideoChat (Li et al. , 2024b ) , Chat-UniVi (Jin et al. , 2023 ) , mPLUG-Owl (Ye et al. , 2024 ) , AffectGPT (Lian et al. , 2025a ) , and AffectGPT-R1 (Lian et al. , 2025b ) . Please refer to the Supplementary Materials for their brief introduction . Implementation Details. During training, we set the lear..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:49",
+  "page": "arxiv:2607.21013v1",
+  "subject": "EmoAgent-R1",
+  "object": "MER-UniBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "EmoAgent-R1 evaluates on MER-UniBench.",
+  "contexts": [
+   "[body] ...er-Conditioned CoT Emotional Reasoning Synthesis 3.3.3 Expert Routing Corpus Synthesis 3.3.4 Cold-Start Training 3.4 Phase II: Reinforcement Learning 3.4.1 The Formulation of RL with GRPO 3.4.2 Progressive Group Relative Policy Optimization 3.4.3 Reward Modeling 4 Experiments 4.1 Experiment Settings 4.2 Performance on MER-UniBench 5 Generalization on General benchmarks 5.1 Ablation Study 5.1.1 Effectiveness of Cold-Start Strategies 5.1.2 The Superiority of P-GRPO 5.1.3 Necessity of Dynamic Agent Specialization Architecture 5.2 Scaling Analysis 6 Conclusion References License: CC BY 4.0 arXiv:2607.21013v1 [cs.AI] 23 Jul 2026 EmoAgent-R1: Towards Multimo...",
+   "[body] ...ement learning, we apply a rigorous filtering mechanism to the RL dataset: instances where the teacher model fails to generate consistent, high-quality reasoning paths are discarded as noise. This results in a final high-quality corpus of 169k samples in total. To evaluate the capabilities of our EmoAgent-R1, we adopt MER-UniBench (Lian et al. , 2025a ) as the benchmark. The MER-UniBench is a unified benchmark with evaluation metrics tailored for typical MER tasks and the free-form, natural language output style of MLLMs. It covers sentiment analysis tasks, basic emotion recognition tasks, and fine-grained emotion understanding tasks. Metrics. We adopt...",
+   "[body] ...the RL dataset: instances where the teacher model fails to generate consistent, high-quality reasoning paths are discarded as noise. This results in a final high-quality corpus of 169k samples in total. To evaluate the capabilities of our EmoAgent-R1, we adopt MER-UniBench (Lian et al. , 2025a ) as the benchmark. The MER-UniBench is a unified benchmark with evaluation metrics tailored for typical MER tasks and the free-form, natural language output style of MLLMs. It covers sentiment analysis tasks, basic emotion recognition tasks, and fine-grained emotion understanding tasks. Metrics. We adopt the same metrics in MER-UniBench (Lian et al. , 2025a ) t..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:50",
+  "page": "arxiv:2607.21013v1",
+  "subject": "EmoAgent-R1",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "EmoAgent-R1 builds on GRPO.",
+  "contexts": [
+   "[body] ...Formulation 3.2 Dynamic Agent Specialization Architecture 3.3 Phase I: Cold-Start Training 3.3.1 Reasoning Corpus Construction 3.3.2 Answer-Conditioned CoT Emotional Reasoning Synthesis 3.3.3 Expert Routing Corpus Synthesis 3.3.4 Cold-Start Training 3.4 Phase II: Reinforcement Learning 3.4.1 The Formulation of RL with GRPO 3.4.2 Progressive Group Relative Policy Optimization 3.4.3 Reward Modeling 4 Experiments 4.1 Experiment Settings 4.2 Performance on MER-UniBench 5 Generalization on General benchmarks 5.1 Ablation Study 5.1.1 Effectiveness of Cold-Start Strategies 5.1.2 The Superiority of P-GRPO 5.1.3 Necessity of Dynamic Agent Specialization Archite...",
+   "[body] ...arning 3.4.1 The Formulation of RL with GRPO 3.4.2 Progressive Group Relative Policy Optimization 3.4.3 Reward Modeling 4 Experiments 4.1 Experiment Settings 4.2 Performance on MER-UniBench 5 Generalization on General benchmarks 5.1 Ablation Study 5.1.1 Effectiveness of Cold-Start Strategies 5.1.2 The Superiority of P-GRPO 5.1.3 Necessity of Dynamic Agent Specialization Architecture 5.2 Scaling Analysis 6 Conclusion References License: CC BY 4.0 arXiv:2607.21013v1 [cs.AI] 23 Jul 2026 EmoAgent-R1: Towards Multimodal Emotion Understanding with Reinforcement Learning-based Dynamic Agent Specialization Lihuang Fang Guangdong University of Technology Guangz...",
+   "[body] ...conditioned chain-of-thought data and agent routing data. Then, we further train the MLLM with reinforcement learning to perceive emotions in a two-step agentic workflow with agent selection and agent specialization. To effectively train EmoAgent-R1, we propose a novel Progressive Group-Relative Policy Optimization (P-GRPO) to combine group-based relative advantages with a PMI-inspired progressive token-level modulation to transform sparse rewards into fine-grained learning signals, mitigating the coarse-grained uniform credit assignment issue in GRPO. Extensive experiments on MER benchmarks demonstrate the superiority of our EmoAgent-R1 in stronger em..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:51",
+  "page": "arxiv:2607.21019v1",
+  "subject": "HiMe",
+  "object": "GPT-5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "HiMe integrates GPT-5.",
+  "contexts": [
+   "[body] ...e sweep covers 22 backbones. Nineteen run locally and span the Qwen2.5 (Yang et al. , 2024 ) , Qwen3 (Yang et al. , 2025 ) , Qwen3.5 (Qwen Team, 2026a ) , Qwen3.6 (Qwen Team, 2026b ) and Gemma-4 (Google DeepMind, 2026 ) families from 1.5B to 35B parameters, along with nemotron-3-nano, granite-4.1-8b and glm-4.7-flash. GPT-5-mini, DeepSeek-V4-flash and Gemini-3.5-flash are hosted-API frontier references. On-device execution is the right target for privacy and latency, so the question that matters is how far local small backbones remain from frontier models. We benchmarked latency and show the results in Appendix E . 4.1 Per-role agentic capability We gi...",
+   "[body] ...ilure can be attributed to the role that caused it, a diagnosis unavailable in a single-role agent design. Backbone Route Analysis Memory Plan Halluc. \u2193 \\downarrow MT S5 tok/sess s/sess \u2193 \\downarrow Gemini-3.5-flash \u2020 0.98 0.94 0.89 0.98 0.01 0.98 0.37 42k \u2013 DeepSeek-V4-flash \u2020 1.00 0.85 0.97 1.00 0.00 0.84 0.00 66k \u2013 GPT-5-mini \u2020 0.88 0.76 0.99 0.88 0.00 0.63 0.00 206k \u2013 Qwen3.6-27b 1.00 0.91 1.00 0.99 0.00 0.76 0.20 253k 97.3 Qwen3.5-35b-a3b 1.00 0.91 0.98 0.84 0.00 0.96 0.26 169k 21.3 Qwen3-32b 1.00 0.68 0.81 0.80 0.00 0.69 0.00 178k 55.9 Gemma-4-26b-a4b 1.00 0.48 0.93 0.33 0.26 0.89 0.44 236k 32.8 Qwen3-8b 0.61 0.47 0.96 0.57 0.00 0.68 0.00 194k 45...",
+   "[body] ...in Table A2 . Per-role results. Table 1 reports results for 12 representative backbones. Three findings stand out. First, local deployment rivals hosted frontier models. The strongest local backbones reach an analysis score of 0.91 (Qwen3.6-27b and Qwen3.5-35b-a3b), matching or surpassing DeepSeek-V4-flash (0.85) and GPT-5-mini (0.76) with no hallucinations; only Gemini-3.5-flash clearly leads (0.94). Second, capability does not scale monotonically with model size. Qwen3-30b-a3b, despite \u223c \\sim 3B active of 30B total parameters, trails the smaller dense Qwen3-8b on analysis (0.36 versus 0.47) and memory (0.33 versus 0.96). Analysis is the most discrim..."
+  ]
+ },
+ {
+  "sid": "out_3.jsonl:52",
+  "page": "arxiv:2607.21019v1",
+  "subject": "HiMe",
+  "object": "DeepSeek-V4",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "HiMe integrates DeepSeek-V4.",
+  "contexts": [
+   "[body] ...rs 22 backbones. Nineteen run locally and span the Qwen2.5 (Yang et al. , 2024 ) , Qwen3 (Yang et al. , 2025 ) , Qwen3.5 (Qwen Team, 2026a ) , Qwen3.6 (Qwen Team, 2026b ) and Gemma-4 (Google DeepMind, 2026 ) families from 1.5B to 35B parameters, along with nemotron-3-nano, granite-4.1-8b and glm-4.7-flash. GPT-5-mini, DeepSeek-V4-flash and Gemini-3.5-flash are hosted-API frontier references. On-device execution is the right target for privacy and latency, so the question that matters is how far local small backbones remain from frontier models. We benchmarked latency and show the results in Appendix E . 4.1 Per-role agentic capability We give every age...",
+   "[body] ...n the analysis tasks. Each role keeps its own oracle, so a failure can be attributed to the role that caused it, a diagnosis unavailable in a single-role agent design. Backbone Route Analysis Memory Plan Halluc. \u2193 \\downarrow MT S5 tok/sess s/sess \u2193 \\downarrow Gemini-3.5-flash \u2020 0.98 0.94 0.89 0.98 0.01 0.98 0.37 42k \u2013 DeepSeek-V4-flash \u2020 1.00 0.85 0.97 1.00 0.00 0.84 0.00 66k \u2013 GPT-5-mini \u2020 0.88 0.76 0.99 0.88 0.00 0.63 0.00 206k \u2013 Qwen3.6-27b 1.00 0.91 1.00 0.99 0.00 0.76 0.20 253k 97.3 Qwen3.5-35b-a3b 1.00 0.91 0.98 0.84 0.00 0.96 0.26 169k 21.3 Qwen3-32b 1.00 0.68 0.81 0.80 0.00 0.69 0.00 178k 55.9 Gemma-4-26b-a4b 1.00 0.48 0.93 0.33 0.26 0.89 0.44...",
+   "[body] ...The full 22-backbone sweep is in Table A2 . Per-role results. Table 1 reports results for 12 representative backbones. Three findings stand out. First, local deployment rivals hosted frontier models. The strongest local backbones reach an analysis score of 0.91 (Qwen3.6-27b and Qwen3.5-35b-a3b), matching or surpassing DeepSeek-V4-flash (0.85) and GPT-5-mini (0.76) with no hallucinations; only Gemini-3.5-flash clearly leads (0.94). Second, capability does not scale monotonically with model size. Qwen3-30b-a3b, despite \u223c \\sim 3B active of 30B total parameters, trails the smaller dense Qwen3-8b on analysis (0.36 versus 0.47) and memory (0.33 versus 0.96)...."
+  ]
+ }
+]

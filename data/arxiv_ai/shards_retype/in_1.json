@@ -1,0 +1,746 @@
+[
+ {
+  "sid": "out_0.jsonl:60",
+  "page": "arxiv:2408.03314v1",
+  "subject": "test-time compute scaling",
+  "object": "process reward models",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Test-time compute scaling uses process-based verifier reward models.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:61",
+  "page": "arxiv:2408.03314v1",
+  "subject": "test-time compute scaling",
+  "object": "MATH",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Test-time compute experiments conducted on MATH benchmark.",
+  "contexts": [
+   "[body] ...details. Prior work studying inference-time computation provides mixed results. On the one hand, some works show that current LLMs can use test-time computation to improve their outputs [ 4 , 23 , 8 , 30 , 48 ] , on the other hand, other work shows that the effectiveness of these methods on more complex tasks such as math reasoning remains highly limited [ 15 , 37 , 43 ] , even though reasoning problems often require drawing inferences about existing knowledge as opposed to new knowledge. These sorts of conflicting findings motivate the need for a systematic an [...] experiments do not account for this cost largely for simplicity, since our goal is to...",
+   "[body] ...followed by the analysis results in the subsequent sections. Datasets. We expect test-time compute to be most helpful when models already have all the basic \u201cknowledge\u201d needed to answer a question, and instead the primary challenge is about drawing (complex) inferences from this knowledge. To this end, we focus on the MATH [ 13 ] benchmark, which consists of high-school competition level math problems with a range of difficulty levels. For all experiments, we use the dataset split consisting of 12k train and 500 test questions, used in Lightman et al. [ 22 ] . Models. We conduct our analysis using the PaLM 2-S* [ 3 ] (Codey) base model. We believe this...",
+   "[body] ...We expect test-time compute to be most helpful when models already have all the basic \u201cknowledge\u201d needed to answer a question, and instead the primary challenge is about drawing (complex) inferences from this knowledge. To this end, we focus on the MATH [ 13 ] benchmark, which consists of high-school competition level math problems with a range of difficulty levels. For all experiments, we use the dataset split consisting of 12k train and 500 test questions, used in Lightman et al. [ 22 ] . Models. We conduct our analysis using the PaLM 2-S* [ 3 ] (Codey) base model. We believe this model is representative of the capabilities of many contemporary LLMs,..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:62",
+  "page": "arxiv:2409.12186v3",
+  "subject": "Qwen2.5-Coder",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Qwen2.5-Coder is built upon Qwen2.5 architecture with code pre-training.",
+  "contexts": [
+   "[body] ...Wu et al., 2024b ) . However, in comparison with the recently state-of-the-art proprietary LLMs, Claude-3.5-Sonnet (Anthropic, 2024 ) and GPT-4o (OpenAI, 2024 ) , the code LLMs are still falling behind, either open-source or proprietary models. Building upon our previous work, CodeQwen1.5, we are excited to introduce Qwen2.5-Coder , a new series of language models designed to achieve top-tier performance in coding tasks at various model sizes. Qwen2.5-Coder models are derived from the Qwen2.5 LLMs, inheriting their advanced architecture and tokenizer. These models are trained on extensive datasets and further fine-tuned on carefully curated instructio...",
+   "[body] ...024 ) and GPT-4o (OpenAI, 2024 ) , the code LLMs are still falling behind, either open-source or proprietary models. Building upon our previous work, CodeQwen1.5, we are excited to introduce Qwen2.5-Coder , a new series of language models designed to achieve top-tier performance in coding tasks at various model sizes. Qwen2.5-Coder models are derived from the Qwen2.5 LLMs, inheriting their advanced architecture and tokenizer. These models are trained on extensive datasets and further fine-tuned on carefully curated instruction datasets specifically designed for coding tasks. We are committed to fostering research and innovation in the field of code LLM...",
+   "[body] ...e LLMs are still falling behind, either open-source or proprietary models. Building upon our previous work, CodeQwen1.5, we are excited to introduce Qwen2.5-Coder , a new series of language models designed to achieve top-tier performance in coding tasks at various model sizes. Qwen2.5-Coder models are derived from the Qwen2.5 LLMs, inheriting their advanced architecture and tokenizer. These models are trained on extensive datasets and further fine-tuned on carefully curated instruction datasets specifically designed for coding tasks. We are committed to fostering research and innovation in the field of code LLMs, coding agents, and coding assistant app..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:63",
+  "page": "arxiv:2409.12191v2",
+  "subject": "Qwen2-VL",
+  "object": "Multimodal Rotary Position Embedding",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Qwen2-VL integrates Multimodal Rotary Position Embedding (M-RoPE).",
+  "contexts": [
+   "[body] ...1 Introduction 2 Approach 2.1 Model Architecture Naive Dynamic Resolution Multimodal Rotary Position Embedding (M-RoPE) Unified Image and Video Understanding 2.2 Training 2.2.1 Data Format. Dialogue Data. Visual Grounding. Visual Agent. 2.3 Multimodal Model Infrastructure Storage. Parallelism. Software. 3 Experiments 3.1 Compare to SOTAs 3.2 Quantitative Results 3.2.1 General Visual Question Answering 3.2.2 Doc...",
+   "[body] ...Dynamic Resolution mechanism, which enables the model to dynamically process images of varying resolutions into different numbers of visual tokens. This approach allows the model to generate more efficient and accurate visual representations, closely aligning with human perceptual processes. The model also integrates Multimodal Rotary Position Embedding (M-RoPE), facilitating the effective fusion of positional information across text, images, and videos. We employ a unified paradigm for processing both images and videos, enhancing the model\u2019s visual perception capabilities. To explore the potential of large multimodal models, Qwen2-VL investigates the...",
+   "[abstract] ...Dynamic Resolution mechanism, which enables the model to dynamically process images of varying resolutions into different numbers of visual tokens. This approach allows the model to generate more efficient and accurate visual representations, closely aligning with human perceptual processes. The model also integrates Multimodal Rotary Position Embedding (M-RoPE), facilitating the effective fusion of positional information across text, images, and videos. We employ a unified paradigm for processing both images and videos, enhancing the model's visual perception capabilities. To explore the potential of large multimodal models, Qwen2-VL investigates the..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:64",
+  "page": "arxiv:2412.19437v2",
+  "subject": "DeepSeek-V3",
+  "object": "Multi-head Latent Attention",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DeepSeek-V3 adopts Multi-head Latent Attention (MLA) architecture.",
+  "contexts": [
+   "[body] ...1 Introduction 2 Architecture 2.1 Basic Architecture 2.1.1 Multi-Head Latent Attention 2.1.2 DeepSeekMoE with Auxiliary-Loss-Free Load Balancing 2.2 Multi-Token Prediction 3 Infrastructures 3.1 Compute Clusters 3.2 Training Framework 3.2.1 DualPipe and Computation-Communication Overlap 3.2.2 Efficient Implementation of Cross-Node All-to-All Communication 3.2.3 Extremely Memory Saving with Minimal...",
+   "[body] ...le up our models and introduce DeepSeek-V3, a large Mixture-of-Experts (MoE) model with 671B parameters, of which 37B are activated for each token. With a forward-looking perspective, we consistently strive for strong model performance and economical costs. Therefore, in terms of architecture, DeepSeek-V3 still adopts Multi-head Latent Attention (MLA) (DeepSeek-AI, 2024c ) for efficient inference and DeepSeekMoE (Dai et al., 2024 ) for cost-effective training. These two architectures have been validated in DeepSeek-V2 (DeepSeek-AI, 2024c ) , demonstrating their capability to maintain robust model performance while achieving efficient training and infer...",
+   "[body] ..., Reinforcement Learning (RL), the corresponding evaluations, and discussions (Section 5 ). Lastly, we conclude this work, discuss existing limitations of DeepSeek-V3, and propose potential directions for future research (Section 6 ). 2 Architecture We first introduce the basic architecture of DeepSeek-V3, featured by Multi-head Latent Attention (MLA) (DeepSeek-AI, 2024c ) for efficient inference and DeepSeekMoE (Dai et al., 2024 ) for economical training. Then, we present a Multi-Token Prediction (MTP) training objective, which we have observed to enhance the overall performance on evaluation benchmarks. For other minor details not explicitly mentione..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:65",
+  "page": "arxiv:2412.19437v2",
+  "subject": "DeepSeek-V3",
+  "object": "DeepSeekMoE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DeepSeek-V3 uses DeepSeekMoE architecture for mixture of experts.",
+  "contexts": [
+   "[body] ...1 Introduction 2 Architecture 2.1 Basic Architecture 2.1.1 Multi-Head Latent Attention 2.1.2 DeepSeekMoE with Auxiliary-Loss-Free Load Balancing 2.2 Multi-Token Prediction 3 Infrastructures 3.1 Compute Clusters 3.2 Training Framework 3.2.1 DualPipe and Computation-Communication Overlap 3.2.2 Efficient Implementation of Cross-Node All-to-All Communication 3.2.3 Extremely Memory Saving with Minimal Overhead 3.3 FP8 Training 3.3.1 M...",
+   "[body] ...ith 671B parameters, of which 37B are activated for each token. With a forward-looking perspective, we consistently strive for strong model performance and economical costs. Therefore, in terms of architecture, DeepSeek-V3 still adopts Multi-head Latent Attention (MLA) (DeepSeek-AI, 2024c ) for efficient inference and DeepSeekMoE (Dai et al., 2024 ) for cost-effective training. These two architectures have been validated in DeepSeek-V2 (DeepSeek-AI, 2024c ) , demonstrating their capability to maintain robust model performance while achieving efficient training and inference. Beyond the basic architecture, we implement two additional strategies to furth...",
+   "[body] ...on 5 ). Lastly, we conclude this work, discuss existing limitations of DeepSeek-V3, and propose potential directions for future research (Section 6 ). 2 Architecture We first introduce the basic architecture of DeepSeek-V3, featured by Multi-head Latent Attention (MLA) (DeepSeek-AI, 2024c ) for efficient inference and DeepSeekMoE (Dai et al., 2024 ) for economical training. Then, we present a Multi-Token Prediction (MTP) training objective, which we have observed to enhance the overall performance on evaluation benchmarks. For other minor details not explicitly mentioned, DeepSeek-V3 adheres to the settings of DeepSeek-V2 (DeepSeek-AI, 2024c ) . Figure..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:66",
+  "page": "arxiv:2501.13956v1",
+  "subject": "Zep",
+  "object": "Deep Memory Retrieval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Zep outperforms MemGPT on Deep Memory Retrieval (DMR) benchmark.",
+  "contexts": [
+   "[body] ...cluding their periods of validity. This approach enables the knowledge graph to represent a complex, evolving world. As Zep is a production system, we\u2019ve focused heavily on the accuracy, latency, and scalability of its memory retrieval mechanisms. We evaluate these mechanisms\u2019 efficacy using two existing benchmarks: a Deep Memory Retrieval task (DMR) from MemGPT [ 3 ] , as well as the LongMemEval benchmark [ 7 ] . 2 Knowledge Graph Construction In Zep, memory is powered by a temporally-aware dynamic knowledge graph \ud835\udca2 = ( \ud835\udca9 , \u2130 , \u03d5 ) \ud835\udca2 \ud835\udca9 \u2130 italic-\u03d5 \\mathcal{G}=(\\mathcal{N},\\mathcal{E},\\phi) caligraphic_G = ( caligraphic_N , caligraphic_E , italic_\u03d5 ) ,...",
+   "[abstract] ...We introduce Zep, a novel memory layer service for AI agents that outperforms the current state-of-the-art system, MemGPT, in the Deep Memory Retrieval (DMR) benchmark. Additionally, Zep excels in more comprehensive and challenging evaluations than DMR that better reflect real-world enterprise use cases. While existing retrieval-augmented generation (RAG) frameworks for large language model (LLM)-based agents are limited to static document retrieval, enterprise appl..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:67",
+  "page": "arxiv:2501.13956v1",
+  "subject": "Zep",
+  "object": "LongMemEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Zep is validated through LongMemEval benchmark with complex temporal reasoning.",
+  "contexts": [
+   "[body] ...ge graph to represent a complex, evolving world. As Zep is a production system, we\u2019ve focused heavily on the accuracy, latency, and scalability of its memory retrieval mechanisms. We evaluate these mechanisms\u2019 efficacy using two existing benchmarks: a Deep Memory Retrieval task (DMR) from MemGPT [ 3 ] , as well as the LongMemEval benchmark [ 7 ] . 2 Knowledge Graph Construction In Zep, memory is powered by a temporally-aware dynamic knowledge graph \ud835\udca2 = ( \ud835\udca9 , \u2130 , \u03d5 ) \ud835\udca2 \ud835\udca9 \u2130 italic-\u03d5 \\mathcal{G}=(\\mathcal{N},\\mathcal{E},\\phi) caligraphic_G = ( caligraphic_N , caligraphic_E , italic_\u03d5 ) , where \ud835\udca9 \ud835\udca9 \\mathcal{N} caligraphic_N represents nodes, \u2130 \u2130 \\mathcal{E...",
+   "[abstract] ...versational data and structured business data while maintaining historical relationships. In the DMR benchmark, which the MemGPT team established as their primary evaluation metric, Zep demonstrates superior performance (94.8% vs 93.4%). Beyond DMR, Zep's capabilities are further validated through the more challenging LongMemEval benchmark, which better reflects enterprise use cases through complex temporal reasoning tasks. In this evaluation, Zep achieves substantial results with accuracy improvements of up to 18.5% while simultaneously reducing response latency by 90% compared to baseline implementations. These results are particularly pronounced in..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:68",
+  "page": "arxiv:2501.13956v1",
+  "subject": "Zep",
+  "object": "MemGPT",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Zep outperforms MemGPT as state-of-the-art memory service.",
+  "contexts": [
+   "[body] ...nsuitable for this future. Since entire conversation histories, business datasets, and other domain-specific content cannot fit effectively inside LLM context windows, new approaches need to be developed for agent memory. Adding memory to LLM-powered agents isn\u2019t a new idea\u2014this concept has been explored previously in MemGPT [ 3 ] . Recently, Knowledge Graphs (KGs) have been employed to enhance RAG architectures to address many of the shortcomings of traditional IR techniques [ 4 ] . In this paper, we introduce Zep [ 5 ] , a memory layer service powered by Graphiti [ 6 ] , a dynamic, temporally-aware knowledge graph engine. Zep ingests and synthesizes...",
+   "[body] ...s approach enables the knowledge graph to represent a complex, evolving world. As Zep is a production system, we\u2019ve focused heavily on the accuracy, latency, and scalability of its memory retrieval mechanisms. We evaluate these mechanisms\u2019 efficacy using two existing benchmarks: a Deep Memory Retrieval task (DMR) from MemGPT [ 3 ] , as well as the LongMemEval benchmark [ 7 ] . 2 Knowledge Graph Construction In Zep, memory is powered by a temporally-aware dynamic knowledge graph \ud835\udca2 = ( \ud835\udca9 , \u2130 , \u03d5 ) \ud835\udca2 \ud835\udca9 \u2130 italic-\u03d5 \\mathcal{G}=(\\mathcal{N},\\mathcal{E},\\phi) caligraphic_G = ( caligraphic_N , caligraphic_E , italic_\u03d5 ) , where \ud835\udca9 \ud835\udca9 \\mathcal{N} caligraphic_N re...",
+   "[abstract] ...We introduce Zep, a novel memory layer service for AI agents that outperforms the current state-of-the-art system, MemGPT, in the Deep Memory Retrieval (DMR) benchmark. Additionally, Zep excels in more comprehensive and challenging evaluations than DMR that better reflect real-world enterprise use cases. While existing retrieval-augmented generation (RAG) frameworks for large language model (LLM)-based agents are limited to static document retrieval,..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:0",
+  "page": "arxiv:2502.01456v2",
+  "subject": "PRIME",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "PRIME is applied to Qwen2.5-Math-7B-Base for RL training.",
+  "contexts": [
+   "[body] ...model or even the base model (\u00a7 B.4 ). In summary, starting from one single language model, the PRIME framework can efficiently accomplish the generation of dense rewards, the initialization and updating of reward models, as well as the reinforcement learning (RL) training of the policy model. In experiments, we train Qwen2.5-Math-7B-Base (Yang et al., 2024b ) with PRIME after a lightweight SFT warmup stage. Compared to RL using outcome rewards only, PRIME achieves a 2.5 \u00d7 2.5\\times sample efficiency gain and a 6.9 % 6.9\\% performance improvements on c [...] experiments: A i = r o \u200b ( \ud835\udc32 i ) \u2212 1 K \u2212 1 \u200b \u2211 j \u2260 i r o \u200b ( \ud835\udc32 j ) A^{i}=r_{o}(\\mathbf{y}^{i})-...",
+   "[abstract] ...ome labels through implict process rewards. PRIME combines well with various advantage functions and forgoes the dedicated reward model training phrase that existing approaches require, substantially reducing the development overhead. We demonstrate PRIME's effectiveness on competitional math and coding. Starting from Qwen2.5-Math-7B-Base, PRIME achieves a 15.1% average improvement across several key reasoning benchmarks over the SFT model. Notably, our resulting model, Eurus-2-7B-PRIME, surpasses Qwen2.5-Math-7B-Instruct on seven reasoning benchmarks with 10% of its training data....",
+   "[abstract] ...e, substantially reducing the development overhead. We demonstrate PRIME's effectiveness on competitional math and coding. Starting from Qwen2.5-Math-7B-Base, PRIME achieves a 15.1% average improvement across several key reasoning benchmarks over the SFT model. Notably, our resulting model, Eurus-2-7B-PRIME, surpasses Qwen2.5-Math-7B-Instruct on seven reasoning benchmarks with 10% of its training data...."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:1",
+  "page": "arxiv:2502.01456v2",
+  "subject": "PRIME",
+  "object": "AIME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "PRIME is evaluated on reasoning benchmarks including AIME.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:2",
+  "page": "arxiv:2502.01456v2",
+  "subject": "PRIME",
+  "object": "PPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "PRIME works with PPO for policy optimization.",
+  "contexts": [
+   "[body] ...ma^{s-t}\\cdot\\left[r_{\\phi}(y^{i}_{s})-\\frac{1}{K-1}\\sum_{j\\neq i}r_{\\phi}\\left(\\mathbf{y}^{j}\\right)\\right]}_{\\text{RLOO with implicit process rewards}}+\\underbrace{r_{o}\\left(\\mathbf{y}^{i}\\right)-\\frac{1}{K-1}\\sum_{j\\neq i}r_{o}\\left(\\mathbf{y}^{j}\\right)}_{\\text{RLOO with outcome rewards}} (5) Updating policy with PPO loss. We adopt PPO clip surrogate loss for more stable policy updates: L CLIP \u200b ( \u03b8 ) = \\displaystyle L_{\\text{CLIP}}(\\theta)= \ud835\udd3c t \u200b [ min \u2061 ( \u03c0 \u03b8 \u200b ( y t | \ud835\udc32 &lt; t ) \u03c0 \u03b8 old \u200b ( y t | \ud835\udc32 &lt; t ) \u200b A t , clip \u200b ( \u03c0 \u03b8 \u200b ( y t | \ud835\udc32 &lt; t ) \u03c0 \u03b8 old \u200b ( y t | \ud835\udc32 &lt; t ) , 1 \u2212 \u03f5 , 1 + \u03f5 ) \u200b A t ) ] \\displaystyle\\mathbb{E}_{t}\\Biggl[\\min\\b...",
+   "[body] ...r_{\\phi}(y^{i}_{s})-\\frac{1}{K-1}\\sum_{j\\neq i}r_{\\phi}\\left(\\mathbf{y}^{j}\\right)\\right]}_{\\text{RLOO with implicit process rewards}}+\\underbrace{r_{o}\\left(\\mathbf{y}^{i}\\right)-\\frac{1}{K-1}\\sum_{j\\neq i}r_{o}\\left(\\mathbf{y}^{j}\\right)}_{\\text{RLOO with outcome rewards}} (5) Updating policy with PPO loss. We adopt PPO clip surrogate loss for more stable policy updates: L CLIP \u200b ( \u03b8 ) = \\displaystyle L_{\\text{CLIP}}(\\theta)= \ud835\udd3c t \u200b [ min \u2061 ( \u03c0 \u03b8 \u200b ( y t | \ud835\udc32 &lt; t ) \u03c0 \u03b8 old \u200b ( y t | \ud835\udc32 &lt; t ) \u200b A t , clip \u200b ( \u03c0 \u03b8 \u200b ( y t | \ud835\udc32 &lt; t ) \u03c0 \u03b8 old \u200b ( y t | \ud835\udc32 &lt; t ) , 1 \u2212 \u03f5 , 1 + \u03f5 ) \u200b A t ) ] \\displaystyle\\mathbb{E}_{t}\\Biggl[\\min\\biggl(\\frac{\\pi_{\\th..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:3",
+  "page": "arxiv:2503.14476v2",
+  "subject": "DAPO",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DAPO uses Qwen2.5-32B as the pretrained model for RL.",
+  "contexts": [
+   "[body] ...of existing reasoning models [ 1 , 2 , 8 , 9 , 10 , 11 ] . In this paper, we reveal significant obstacles in large-scale RL training and open-source a scalable RL system with fully open-sourced algorithm, training code and dataset that provides democratized solutions with industry-level RL results. We experiment over Qwen2.5-32B [ 12 ] as the pretrained model for RL. In our initial GRPO run, we achieved only 30 points on AIME \u2014 a performance significantly below DeepSeek\u2019s RL (47 points). A thorough analysis reveals that the naive GRPO baseline suffers from several key issues such as entropy collapse, reward noise, and training instability. The broader...",
+   "[body] ...18 , 19 ] suggesting that critical training details may have been omitted in the R1 paper that are required to develop an industry-level, large-scale, and reproducible RL system. To close this gap, we release an open-source state-of-the-art system for large-scale LLM RL, which achieves 50 points on AIME 2024 based on Qwen2.5-32B model, outperforming previous state-of-the-art results achieved by DeepSeek-R1-Zero-Qwen-32B [ 2 ] (47 points) using 50% training steps (Figure 1 ). We propose the D ecoupled Clip and D ynamic s A mpling P olicy O ptimization ( DAPO ) algorithm, and introduce 4 key techniques to make RL shine in the long-CoT RL scenario. Detai...",
+   "[abstract] ...ty still struggles to reproduce their RL training results. We propose the $\\textbf{D}$ecoupled Clip and $\\textbf{D}$ynamic s$\\textbf{A}$mpling $\\textbf{P}$olicy $\\textbf{O}$ptimization ($\\textbf{DAPO}$) algorithm, and fully open-source a state-of-the-art large-scale RL system that achieves 50 points on AIME 2024 using Qwen2.5-32B base model. Unlike previous works that withhold training details, we introduce four key techniques of our algorithm that make large-scale LLM RL a success. In addition, we open-source our training code, which is built on the verl framework, along with a carefully curated and processed dataset. These components of our open-sour..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:4",
+  "page": "arxiv:2503.14476v2",
+  "subject": "DAPO",
+  "object": "AIME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DAPO achieves 50 points on AIME 2024.",
+  "contexts": [
+   "[body] ...such as OpenAI\u2019s o1 [ 1 ] and DeepSeek\u2019s R1 [ 2 ] brings a profound paradigm shift to Large Language Models (LLMs) [ 3 , 4 , 5 , 6 , 7 ] . Test-time scaling enables longer Chain-of-Thought thinking and induces sophisticated reasoning behaviors, which makes the models superior in competitive math and coding tasks like AIME and Codeforces. The central technique driving the revolution is large-scale Reinforcement Learning (RL), which elicits complex reasoning behaviors such as self-verification and iterative refinement. However, the actual algorithm and key recipe for scalable RL training remains a myth, hidden from technical reports of existing reasonin...",
+   "[body] ...in large-scale RL training and open-source a scalable RL system with fully open-sourced algorithm, training code and dataset that provides democratized solutions with industry-level RL results. We experiment over Qwen2.5-32B [ 12 ] as the pretrained model for RL. In our initial GRPO run, we achieved only 30 points on AIME \u2014 a performance significantly below DeepSeek\u2019s RL (47 points). A thorough analysis reveals that the naive GRPO baseline suffers from several key issues such as entropy collapse, reward noise, and training instability. The broader community has encountered similar challenges in reproducing DeepSeek\u2019s results [ 13 , 14 , 15 , 16 , 17 ,...",
+   "[body] ...14 , 15 , 16 , 17 , 18 , 19 ] suggesting that critical training details may have been omitted in the R1 paper that are required to develop an industry-level, large-scale, and reproducible RL system. To close this gap, we release an open-source state-of-the-art system for large-scale LLM RL, which achieves 50 points on AIME 2024 based on Qwen2.5-32B model, outperforming previous state-of-the-art results achieved by DeepSeek-R1-Zero-Qwen-32B [ 2 ] (47 points) using 50% training steps (Figure 1 ). We propose the D ecoupled Clip and D ynamic s A mpling P olicy O ptimization ( DAPO ) algorithm, and introduce 4 key techniques to make RL shine in the long-CoT..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:5",
+  "page": "arxiv:2503.14476v2",
+  "subject": "DAPO",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DAPO proposes improvements over GRPO algorithm.",
+  "contexts": [
+   "[body] ...s paper, we reveal significant obstacles in large-scale RL training and open-source a scalable RL system with fully open-sourced algorithm, training code and dataset that provides democratized solutions with industry-level RL results. We experiment over Qwen2.5-32B [ 12 ] as the pretrained model for RL. In our initial GRPO run, we achieved only 30 points on AIME \u2014 a performance significantly below DeepSeek\u2019s RL (47 points). A thorough analysis reveals that the naive GRPO baseline suffers from several key issues such as entropy collapse, reward noise, and training instability. The broader community has encountered similar challenges in reproducing DeepS...",
+   "[body] ...de and dataset that provides democratized solutions with industry-level RL results. We experiment over Qwen2.5-32B [ 12 ] as the pretrained model for RL. In our initial GRPO run, we achieved only 30 points on AIME \u2014 a performance significantly below DeepSeek\u2019s RL (47 points). A thorough analysis reveals that the naive GRPO baseline suffers from several key issues such as entropy collapse, reward noise, and training instability. The broader community has encountered similar challenges in reproducing DeepSeek\u2019s results [ 13 , 14 , 15 , 16 , 17 , 18 , 19 ] suggesting that critical training details may have been omitted in the R1 paper that are required to...",
+   "[body] ...o t \u2223 q , o &lt; t ) , 1 \u2212 \u03b5 , 1 + \u03b5 ) \u2062 A ^ t ) ] , \\displaystyle\\mathcal{J}_{\\text{PPO}}(\\theta)=\\mathbb{E}_{(q,a)\\sim\\mathcal{D}% ,o_{\\leq t}\\sim\\pi_{\\theta_{\\text{old}}}(\\cdot\\mid q)}\\Bigg{[}\\min\\Bigg{(}% \\frac{\\pi_{\\theta}(o_{t}\\mid q,o_{&lt;t})}{\\pi_{\\theta_{\\text{old} [...] experiments using naive PPO [ 21 ] or GRPO [ 38 ] , we observed the entropy collapse phenomenon: the entropy of the policy decreases quickly as training progresses ( Figure 2(b) ). The sampled responses of certain groups tend to be nearly identical. This indicates limited exploration and early deterministic policy, which can hinder the scaling process. We propose the Clip-Hig..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:6",
+  "page": "arxiv:2503.14476v2",
+  "subject": "DAPO",
+  "object": "verl",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DAPO implementation is built on the verl framework.",
+  "contexts": [
+   "[body] ...shine in the long-CoT RL scenario. Details are presented in Section 3 . 1. Clip-Higher , which promotes the diversity of the system and avoids entropy collapse; 2. Dynamic Sampling , which improves training efficiency and stability; 3. Token-Level Policy Gradient Loss , which is critical in long-CoT RL scenarios; 4. Overlong Reward Shaping , which reduces reward noise and stabilizes training. Our implementation is based on verl [ 20 ] . By fully releasing our state-of-the-art RL system including training code and data, we aim to reveal valuable insights to large-scale LLM RL that benefit the larger community. 2 Preliminary 2.1 Proximal Policy Optimiza...",
+   "[body] ...diversity of the system and avoids entropy collapse; 2. Dynamic Sampling , which improves training efficiency and stability; 3. Token-Level Policy Gradient Loss , which is critical in long-CoT RL scenarios; 4. Overlong Reward Shaping , which reduces reward noise and stabilizes training. Our implementation is based on verl [ 20 ] . By fully releasing our state-of-the-art RL system including training code and data, we aim to reveal valuable insights to large-scale LLM RL that benefit the larger community. 2 Preliminary 2.1 Proximal Policy Optimization (PPO) PPO [ 21 ] introduces a clipped surrogate objective for policy optimization. By constraining the...",
+   "[abstract] ...state-of-the-art large-scale RL system that achieves 50 points on AIME 2024 using Qwen2.5-32B base model. Unlike previous works that withhold training details, we introduce four key techniques of our algorithm that make large-scale LLM RL a success. In addition, we open-source our training code, which is built on the verl framework, along with a carefully curated and processed dataset. These components of our open-source system enhance reproducibility and support future research in large-scale LLM RL...."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:7",
+  "page": "arxiv:2503.20783v2",
+  "subject": "Dr. GRPO",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Dr. GRPO is evaluated using Qwen2.5 base models.",
+  "contexts": [
+   "[body] ...on is also accompanied by the \u201cAha moment\u201d, at which the model learns emergent skills such as self-reflections. In this paper, we aim to understand R1-Zero-like training by studying two essential components: base models and RL . In the first part, we investigate various attributes of base models, with the focus on the Qwen2.5 model family (Yang et al., 2024a ; b ) , which has been used in recent attempts to reproduce R1-Zero (Pan et al., 2025 ; Zeng et al., 2025 ; Liu et al., 2025b ; Hu et al., 2025 ) , as well as DeepSeek-V3-Base (Liu et al., 2024 ) , from which the real R1-Zero model was RL-tuned. In the second part, we identify the bias in optimizat...",
+   "[body] ...rogressively longer incorrect responses. To this end, we propose a simple modification to eliminate the bias, i.e., to get GRPO Done Right ( Dr. GRPO ), which leads to better token efficiency (highlighted in Fig. 1 ). Our analysis on base models and RL suggests a minimalist recipe for R1-Zero-like training: we RL-tune Qwen2.5-Math-7B using the (unbiased) Dr. GRPO algorithm on MATH (Hendrycks et al., 2021 ) level 3-5 questions with the Qwen-Math template, and achieve state-of-the-art performance ( Fig. 2 ) with only 27 27 hours compute on 8 \u00d7 8\\times A100 GPUs. We hope our findings presented in this paper, models released, and the codebase open-sourced...",
+   "[body] ...RPO compared to the baseline (Plot 4), suggesting that an unbiased optimizer also mitigates overthinking (Chen et al., 2024 ) . Figure 6: The average benchmark accuracy of different {template, question set} combinations during RL training. 3.3 A Duet of Template and Question Set Coverage in RL dynamics Recall that the Qwen2.5-Math base models can readily answer questions with high accuracy without any prompt template ( Sec. 2.2 ). Based on this intriguing observation, we are interested in how different templates affect the RL training. Furthermore, given the general belief that larger question set coverage leads to better performance (Luo et al., 2025..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:8",
+  "page": "arxiv:2503.20783v2",
+  "subject": "Dr. GRPO",
+  "object": "AIME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Dr. GRPO achieves 43.3% accuracy on AIME 2024 with a 7B base model.",
+  "contexts": [
+   "[body] ...question coverage. Experimental settings . Starting from the Qwen2.5-Math-1.5B base model, we apply R1 template, Qwen-Math template and No template respectively to run RL using Dr. GRPO. All experiments are repeated for different question sets that are detailed in Table 3 . Question set # Description ORZ 57k Combining AIME, Numina-Math, Tulu3 MATH; diverse and large amount MATH 12k High-school math competition questions GSM 8k Simpler grade-school math questions ASDiv 2k Basic algebra ( + \u2212 \u00d7 \u00f7 ) +-\\times\\div) questions Table 3: Different question sets that have different levels of difficulty and coverage. Results . Fig. 6 shows the RL curves of differ...",
+   "[abstract] ...increases response length (especially for incorrect outputs) during training. To address this, we introduce Dr. GRPO, an unbiased optimization method that improves token efficiency while maintaining reasoning performance. Leveraging these insights, we present a minimalist R1-Zero recipe that achieves 43.3% accuracy on AIME 2024 with a 7B base model, establishing a new state-of-the-art. Our code is available at https://github.com/sail-sg/understand-r1-zero...."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:9",
+  "page": "arxiv:2503.20783v2",
+  "subject": "Dr. GRPO",
+  "object": "MATH",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Dr. GRPO is evaluated on MATH dataset.",
+  "contexts": [
+   "[body] ...vely longer incorrect responses. To this end, we propose a simple modification to eliminate the bias, i.e., to get GRPO Done Right ( Dr. GRPO ), which leads to better token efficiency (highlighted in Fig. 1 ). Our analysis on base models and RL suggests a minimalist recipe for R1-Zero-like training: we RL-tune Qwen2.5-Math-7B using the (unbiased) Dr. GRPO algorithm on MATH (Hendrycks et al., 2021 ) level 3-5 questions with the Qwen-Math template, and achieve state-of-the-art performance ( Fig. 2 ) with only 27 27 hours compute on 8 \u00d7 8\\times A100 GPUs. We hope our findings presented in this paper, models released, and the codebase open-sourced could be...",
+   "[body] ...opose a simple modification to eliminate the bias, i.e., to get GRPO Done Right ( Dr. GRPO ), which leads to better token efficiency (highlighted in Fig. 1 ). Our analysis on base models and RL suggests a minimalist recipe for R1-Zero-like training: we RL-tune Qwen2.5-Math-7B using the (unbiased) Dr. GRPO algorithm on MATH (Hendrycks et al., 2021 ) level 3-5 questions with the Qwen-Math template, and achieve state-of-the-art performance ( Fig. 2 ) with only 27 27 hours compute on 8 \u00d7 8\\times A100 GPUs. We hope our findings presented in this paper, models released, and the codebase open-sourced could benefit future research in the field. As an overview,...",
+   "[body] ...RPO Done Right ( Dr. GRPO ), which leads to better token efficiency (highlighted in Fig. 1 ). Our analysis on base models and RL suggests a minimalist recipe for R1-Zero-like training: we RL-tune Qwen2.5-Math-7B using the (unbiased) Dr. GRPO algorithm on MATH (Hendrycks et al., 2021 ) level 3-5 questions with the Qwen-Math template, and achieve state-of-the-art performance ( Fig. 2 ) with only 27 27 hours compute on 8 \u00d7 8\\times A100 GPUs. We hope our findings presented in this paper, models released, and the codebase open-sourced could benefit future research in the field. As an overview, we summarize the takeaways of this paper below: Overview of take..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:10",
+  "page": "arxiv:2503.20783v2",
+  "subject": "Dr. GRPO",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Dr. GRPO improves upon GRPO algorithm.",
+  "contexts": [
+   "[body] ...et al., 2024a ; b ) , which has been used in recent attempts to reproduce R1-Zero (Pan et al., 2025 ; Zeng et al., 2025 ; Liu et al., 2025b ; Hu et al., 2025 ) , as well as DeepSeek-V3-Base (Liu et al., 2024 ) , from which the real R1-Zero model was RL-tuned. In the second part, we identify the bias in optimization of GRPO (Shao et al., 2024 ) , which may lead to progressively longer incorrect responses. To this end, we propose a simple modification to eliminate the bias, i.e., to get GRPO Done Right ( Dr. GRPO ), which leads to better token efficiency (highlighted in Fig. 1 ). Our analysis on base models and RL suggests a minimalist recipe for R1-Zero...",
+   "[body] ...as DeepSeek-V3-Base (Liu et al., 2024 ) , from which the real R1-Zero model was RL-tuned. In the second part, we identify the bias in optimization of GRPO (Shao et al., 2024 ) , which may lead to progressively longer incorrect responses. To this end, we propose a simple modification to eliminate the bias, i.e., to get GRPO Done Right ( Dr. GRPO ), which leads to better token efficiency (highlighted in Fig. 1 ). Our analysis on base models and RL suggests a minimalist recipe for R1-Zero-like training: we RL-tune Qwen2.5-Math-7B using the (unbiased) Dr. GRPO algorithm on MATH (Hendrycks et al., 2021 ) level 3-5 questions with the Qwen-Math template, and...",
+   "[body] ...iu et al., 2024 ) , from which the real R1-Zero model was RL-tuned. In the second part, we identify the bias in optimization of GRPO (Shao et al., 2024 ) , which may lead to progressively longer incorrect responses. To this end, we propose a simple modification to eliminate the bias, i.e., to get GRPO Done Right ( Dr. GRPO ), which leads to better token efficiency (highlighted in Fig. 1 ). Our analysis on base models and RL suggests a minimalist recipe for R1-Zero-like training: we RL-tune Qwen2.5-Math-7B using the (unbiased) Dr. GRPO algorithm on MATH (Hendrycks et al., 2021 ) level 3-5 questions with the Qwen-Math template, and achieve state-of-the-a..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:11",
+  "page": "arxiv:2503.20783v2",
+  "subject": "Dr. GRPO",
+  "object": "Llama 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Paper investigates Llama-3.2-3B base model for R1-Zero-like training.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:12",
+  "page": "arxiv:2504.12516v1",
+  "subject": "BrowseComp",
+  "object": "GPT-4o",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "BrowseComp evaluates GPT-4o and its variants on web browsing tasks.",
+  "contexts": [
+   "[body] ...the AI community is a function of reliability, difficulty, and ease-of-use, BrowseComp was designed with the following properties: \u2022 Challenging questions. Human trainers made [...] 4 Evaluation of models 4.1 Performance of OpenAI models We evaluated a range of models on BrowseComp, including models without browsing\u2014GPT-4o ( gpt-4o-2024-08-06 ), GPT-4.5 ( gpt-4.5-preview-2025-02-27 ), and OpenAI o1 ( o1-2024-12-17 - medium reasoning effort ) \u2014as well as GPT-4o with browsing ( gpt-4o-search-preview-2025-03-11 ) and OpenAI Deep Research ( OpenAI , 2025a ) , an agent model explicitly trained for persistent web browsing. As shown in Table 3 , GPT-4o and...",
+   "[body] ...ommunity is a function of reliability, difficulty, and ease-of-use, BrowseComp was designed with the following properties: \u2022 Challenging questions. Human trainers made [...] 4 Evaluation of models 4.1 Performance of OpenAI models We evaluated a range of models on BrowseComp, including models without browsing\u2014GPT-4o ( gpt-4o-2024-08-06 ), GPT-4.5 ( gpt-4.5-preview-2025-02-27 ), and OpenAI o1 ( o1-2024-12-17 - medium reasoning effort ) \u2014as well as GPT-4o with browsing ( gpt-4o-search-preview-2025-03-11 ) and OpenAI Deep Research ( OpenAI , 2025a ) , an agent model explicitly trained for persistent web browsing. As shown in Table 3 , GPT-4o and GPT-4.5 a...",
+   "[body] ...nging questions. Human trainers made [...] 4 Evaluation of models 4.1 Performance of OpenAI models We evaluated a range of models on BrowseComp, including models without browsing\u2014GPT-4o ( gpt-4o-2024-08-06 ), GPT-4.5 ( gpt-4.5-preview-2025-02-27 ), and OpenAI o1 ( o1-2024-12-17 - medium reasoning effort ) \u2014as well as GPT-4o with browsing ( gpt-4o-search-preview-2025-03-11 ) and OpenAI Deep Research ( OpenAI , 2025a ) , an agent model explicitly trained for persistent web browsing. As shown in Table 3 , GPT-4o and GPT-4.5 achieved near-zero accuracy, highlighting the difficulty of the benchmark: without strong reasoning or tool use, models fail to retr..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:13",
+  "page": "arxiv:2504.12516v1",
+  "subject": "BrowseComp",
+  "object": "OpenAI o1",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "BrowseComp tests OpenAI o1 reasoning capabilities on browsing tasks.",
+  "contexts": [
+   "[body] ...e, BrowseComp was designed with the following properties: \u2022 Challenging questions. Human trainers made [...] 4 Evaluation of models 4.1 Performance of OpenAI models We evaluated a range of models on BrowseComp, including models without browsing\u2014GPT-4o ( gpt-4o-2024-08-06 ), GPT-4.5 ( gpt-4.5-preview-2025-02-27 ), and OpenAI o1 ( o1-2024-12-17 - medium reasoning effort ) \u2014as well as GPT-4o with browsing ( gpt-4o-search-preview-2025-03-11 ) and OpenAI Deep Research ( OpenAI , 2025a ) , an agent model explicitly trained for persistent web browsing. As shown in Table 3 , GPT-4o and GPT-4.5 achieved near-zero accuracy, highlighting the difficulty of the be...",
+   "[body] ...ting the difficulty of the benchmark: without strong reasoning or tool use, models fail to retrieve the kinds of obscure, multi-hop facts BrowseComp targets. Table 3: Accuracy and calibration of OpenAI models on BrowseComp. Model Accuracy (%) Calibration Error (%) GPT-4o 0.6 69 GPT-4o w/ browsing 1.9 82 GPT-4.5 0.9 68 OpenAI o1 9.9 65 Deep Research 2 2 2 Note that the Deep Research model is trained on data that specifically teach the model to be good at BrowsingComp tasks. 51.5 91 Enabling browsing for GPT-4o led to a modest improvement in accuracy (from 0.6% to 1.9%), but performance remained low. This indicates that browsing alone is not sufficient\u2014m...",
+   "[body] ...51.5 91 Enabling browsing for GPT-4o led to a modest improvement in accuracy (from 0.6% to 1.9%), but performance remained low. This indicates that browsing alone is not sufficient\u2014models must also be capable of reasoning strategically, identifying relevant search paths, and interpreting retrieved content. Meanwhile, OpenAI o1, which has no browsing capability but stronger reasoning ability, achieves noticeably higher accuracy, suggesting that some BrowseComp answers can be surfaced through inference over internal knowledge. Overall, these results indicate that both tool use and reasoning contribute meaningfully to performance on BrowseComp. Deep Rese..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:14",
+  "page": "arxiv:2504.19413v1",
+  "subject": "Mem0",
+  "object": "LOCOMO",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mem0 is evaluated on LOCOMO benchmark.",
+  "contexts": [
+   "[abstract] ...ly extracting, consolidating, and retrieving salient information from ongoing conversations. Building on this foundation, we further propose an enhanced variant that leverages graph-based memory representations to capture complex relational structures among conversational elements. Through comprehensive evaluations on LOCOMO benchmark, we systematically compare our approaches against six baseline categories: (i) established memory-augmented systems, (ii) retrieval-augmented generation (RAG) with varying chunk sizes and k-values, (iii) a full-context approach that processes the entire conversation history, (iv) an open-source memory solution, (v) a prop..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:15",
+  "page": "arxiv:2504.19413v1",
+  "subject": "Mem0",
+  "object": "GPT-4o-mini",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Mem0 uses GPT-4o-mini as the inference engine for language model operations.",
+  "contexts": [
+   "[body] ...ans, who dynamically integrate new information and revise outdated beliefs, LLMs effectively \u201c [...] evaluation, we configured the system with \u2018 m \ud835\udc5a m italic_m \u2019 = 10 previous messages for contextual reference and \u2018 s \ud835\udc60 s italic_s \u2019 = 10 similar memories for comparative analysis. All language model operations utilized GPT-4o-mini as the inference engine. The vector database employs dense embeddings to facilitate efficient similarity search during the update phase. 2.2 Mem0 g superscript Mem0 \ud835\udc54 \\texttt{Mem0}^{\\tiny g} Mem0 start_POSTSUPERSCRIPT italic_g end_POSTSUPERSCRIPT The Mem0 g superscript Mem0 \ud835\udc54 \\texttt{Mem0}^{\\tiny g} Mem0 start_POSTSUPERSCRIPT..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:16",
+  "page": "arxiv:2504.20073v2",
+  "subject": "RAGEN",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RAGEN trains Qwen-2.5 Instruct models for agent learning.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:17",
+  "page": "arxiv:2504.20073v2",
+  "subject": "RAGEN",
+  "object": "WebShop",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "RAGEN evaluates on WebShop environment.",
+  "contexts": [
+   "[body] ...nts. Training LLM agents on real-world tasks like web browsing often depends on pretrained priors and heavy task-specific engineering. We evaluate RAGEN on four environments spanning different complexities: Bandit (single-turn, stochastic), Sokoban (multi-turn, deterministic), Frozen Lake (multi-turn, stochastic), and WebShop (multi-turn, open-domain). The first three symbolic environments are minimalistic and fully controllable , while WebShop adds real-world understanding and reasoning . Together, they enable analysis of generalization across varied decision-making challenges. Using this setup, we analyze three key dimensions of agent learning, and s...",
+   "[body] ...engineering. We evaluate RAGEN on four environments spanning different complexities: Bandit (single-turn, stochastic), Sokoban (multi-turn, deterministic), Frozen Lake (multi-turn, stochastic), and WebShop (multi-turn, open-domain). The first three symbolic environments are minimalistic and fully controllable , while WebShop adds real-world understanding and reasoning . Together, they enable analysis of generalization across varied decision-making challenges. Using this setup, we analyze three key dimensions of agent learning, and summarize below findings that reveal core challenges and design principles for stable agent RL training: 1. Gradient Stabi...",
+   "[body] ...[...] 3 Experiment Setup 3.1 Environments and Tasks We evaluate LLM agents on four environments spanning symbolic and realistic decision-making: Bandit tests risk-sensitive reasoning under noisy feedback; Sokoban requires irreversible symbolic planning; Frozen Lake combines planning with probabilistic transitions; and WebShop involves natural language grounding and web environment interaction. The first three symbolic environments are deliberately minimal and fully controllable to support clean analysis, while WebShop introduces realistic task structure and language input. Environment visualizations are in Appendix C.1 . 3.2 Training Settings In our ma..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:18",
+  "page": "arxiv:2504.20073v2",
+  "subject": "RAGEN",
+  "object": "Frozen Lake",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "RAGEN evaluates on Frozen Lake environment.",
+  "contexts": [
+   "[body] ...under multi-turn and stochastic environments. Training LLM agents on real-world tasks like web browsing often depends on pretrained priors and heavy task-specific engineering. We evaluate RAGEN on four environments spanning different complexities: Bandit (single-turn, stochastic), Sokoban (multi-turn, deterministic), Frozen Lake (multi-turn, stochastic), and WebShop (multi-turn, open-domain). The first three symbolic environments are minimalistic and fully controllable , while WebShop adds real-world understanding and reasoning . Together, they enable analysis of generalization across varied decision-making challenges. Using this setup, we analyze thr...",
+   "[body] ...out factors for stable agent RL training: (1) ensuring that rollo [...] 3 Experiment Setup 3.1 Environments and Tasks We evaluate LLM agents on four environments spanning symbolic and realistic decision-making: Bandit tests risk-sensitive reasoning under noisy feedback; Sokoban requires irreversible symbolic planning; Frozen Lake combines planning with probabilistic transitions; and WebShop involves natural language grounding and web environment interaction. The first three symbolic environments are deliberately minimal and fully controllable to support clean analysis, while WebShop introduces realistic task structure and language input. Environment vi...",
+   "[body] ...agent tasks (Figure 3 ). Symbolic environments like Bandit and Sokoban show early improvements but eventually collapse. PPO is more stable than GRPO in these settings, collapsing later and achieving higher performance, likely due to its critic providing smoother reward estimates. Interestingly, GRPO is more stable on Frozen Lake, likely due to the difficulty of estimating state values in this task, which may destabilize PPO (see Appendix I ). On WebShop, both methods succeed, likely due to strong language prior and high initial rewards reducing the need for a critic. Figure 3 : Baseline StarPO performance across environments. Symbolic tasks like Bandi..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:19",
+  "page": "arxiv:2504.20073v2",
+  "subject": "RAGEN",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RAGEN uses GRPO for policy optimization.",
+  "contexts": [
+   "[body] ...Shop. We also report various model performance in Appendix D . Models are trained with StarPO variants on H100 GPUs for 100-200 rollout\u2013update iterations. Each batch samples P = 8 \ud835\udc43 8 P{=}8 italic_P = 8 prompts, with N = 16 \ud835\udc41 16 N{=}16 italic_N = 16 rollouts per prompt, up to 5 turns and 10 actions. Policy updates use GRPO or PPO with GAE ( \u03b3 = 1.0 , \u03bb = 1.0 formulae-sequence \ud835\udefe 1.0 \ud835\udf06 1.0 \\gamma{=}1.0,\\lambda{=}1.0 italic_\u03b3 = 1.0 , italic_\u03bb = 1.0 ), Adam optimizer, entropy bonus ( \u03b2 = 0.001 \ud835\udefd 0.001 \\beta{=}0.001 italic_\u03b2 = 0.001 ), and a response-format penalty ( \u2212 0.1 0.1 -0.1 - 0.1 ). More details can be found in Appendix C.2 . 3.3 Evaluation Metrics...",
+   "[body] ...tails can be found in Appendix C.3 . 4 Experimental Results and Findings 4.1 Multi-turn Agent RL Training Introduces New Instability Pattern We evaluate baseline StarPO across agent tasks (Figure 3 ). Symbolic environments like Bandit and Sokoban show early improvements but eventually collapse. PPO is more stable than GRPO in these settings, collapsing later and achieving higher performance, likely due to its critic providing smoother reward estimates. Interestingly, GRPO is more stable on Frozen Lake, likely due to the difficulty of estimating state values in this task, which may destabilize PPO (see Appendix I ). On WebShop, both methods succeed, lik...",
+   "[body] ...baseline StarPO across agent tasks (Figure 3 ). Symbolic environments like Bandit and Sokoban show early improvements but eventually collapse. PPO is more stable than GRPO in these settings, collapsing later and achieving higher performance, likely due to its critic providing smoother reward estimates. Interestingly, GRPO is more stable on Frozen Lake, likely due to the difficulty of estimating state values in this task, which may destabilize PPO (see Appendix I ). On WebShop, both methods succeed, likely due to strong language prior and high initial rewards reducing the need for a critic. Figure 3 : Baseline StarPO performance across environments. Sy..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:20",
+  "page": "arxiv:2504.20073v2",
+  "subject": "RAGEN",
+  "object": "PPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RAGEN uses PPO for policy optimization.",
+  "contexts": [
+   "[body] ...hinking- A ctions- R eward P olicy O ptimization). StarPO provides a unified view of multi-turn, trajectory-level agent training with flexible control over reasoning, reward assignment, and prompt-rollout structure. Built on top of StarPO, we develop RAGEN , a modular agent training and evaluation system designed to support the study of RL-based training in LLM Agents. RAGEN implements the full training loop\u2014including rollout generation, reward assignment, and trajectory optimization\u2014serving as a research infrastructure for systematic analysis of LLM agent training dynamics under multi-turn and stochastic environments. Training LLM agents on real-world...",
+   "[body] ...tive reasoning under noisy feedback; Sokoban requires irreversible symbolic planning; Frozen Lake combines planning with probabilistic transitions; and WebShop involves natural language grounding and web environment interaction. The first three symbolic environments are deliberately minimal and fully controllable to support clean analysis, while WebShop introduces realistic task structure and language input. Environment visualizations are in Appendix C.1 . 3.2 Training Settings In our main experiments, we train Qwen-2.5 Instruct 0.5B models for three symbolic tasks and its 3B variant for the challenging WebShop. We also report various model performance...",
+   "[body] ...also report various model performance in Appendix D . Models are trained with StarPO variants on H100 GPUs for 100-200 rollout\u2013update iterations. Each batch samples P = 8 \ud835\udc43 8 P{=}8 italic_P = 8 prompts, with N = 16 \ud835\udc41 16 N{=}16 italic_N = 16 rollouts per prompt, up to 5 turns and 10 actions. Policy updates use GRPO or PPO with GAE ( \u03b3 = 1.0 , \u03bb = 1.0 formulae-sequence \ud835\udefe 1.0 \ud835\udf06 1.0 \\gamma{=}1.0,\\lambda{=}1.0 italic_\u03b3 = 1.0 , italic_\u03bb = 1.0 ), Adam optimizer, entropy bonus ( \u03b2 = 0.001 \ud835\udefd 0.001 \\beta{=}0.001 italic_\u03b2 = 0.001 ), and a response-format penalty ( \u2212 0.1 0.1 -0.1 - 0.1 ). More details can be found in Appendix C.2 . 3.3 Evaluation Metrics We evalu..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:21",
+  "page": "arxiv:2505.09388v1",
+  "subject": "Qwen3",
+  "object": "MMLU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen3 is evaluated on MMLU benchmark.",
+  "contexts": [
+   "[body] ...ions of the base language models of the Qwen3 series. The evaluation of base models mainly focuses on their performance in general knowledge, reasoning, mathematics, scientific knowledge, coding, and multilingual capabilities. The evaluation datasets for pre-trained base models include 15 benchmarks: \u2022 General Tasks : MMLU ( mmlu ) (5-shot), MMLU-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of Huma...",
+   "[body] ...the base language models of the Qwen3 series. The evaluation of base models mainly focuses on their performance in general knowledge, reasoning, mathematics, scientific knowledge, coding, and multilingual capabilities. The evaluation datasets for pre-trained base models include 15 benchmarks: \u2022 General Tasks : MMLU ( mmlu ) (5-shot), MMLU-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of HumanEval (...",
+   "[body] ...e models of the Qwen3 series. The evaluation of base models mainly focuses on their performance in general knowledge, reasoning, mathematics, scientific knowledge, coding, and multilingual capabilities. The evaluation datasets for pre-trained base models include 15 benchmarks: \u2022 General Tasks : MMLU ( mmlu ) (5-shot), MMLU-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of HumanEval ( humaneval ) , MB..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:22",
+  "page": "arxiv:2505.09388v1",
+  "subject": "Qwen3",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen3 is evaluated on GSM8K mathematical reasoning benchmark.",
+  "contexts": [
+   "[body] ...abilities. The evaluation datasets for pre-trained base models include 15 benchmarks: \u2022 General Tasks : MMLU ( mmlu ) (5-shot), MMLU-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of HumanEval ( humaneval ) , MBPP ( mbpp ) , Humaneval+, MBPP+) ( evalplus ) , MultiPL-E ( multiple ) (0-shot) (Python, C++, JAVA, PHP, TypeScript, C#, Bash, JavaScript), MBPP-3shot ( mbpp ) , CRUX-O of CRUXEval (1-shot) (...",
+   "[body] ...s. The evaluation datasets for pre-trained base models include 15 benchmarks: \u2022 General Tasks : MMLU ( mmlu ) (5-shot), MMLU-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of HumanEval ( humaneval ) , MBPP ( mbpp ) , Humaneval+, MBPP+) ( evalplus ) , MultiPL-E ( multiple ) (0-shot) (Python, C++, JAVA, PHP, TypeScript, C#, Bash, JavaScript), MBPP-3shot ( mbpp ) , CRUX-O of CRUXEval (1-shot) ( gu2024cr..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:23",
+  "page": "arxiv:2505.09388v1",
+  "subject": "Qwen3",
+  "object": "MATH",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen3 is evaluated on MATH benchmark.",
+  "contexts": [
+   "[body] .... Finally, we set the predicted optimal learning rate and batch size strategy for each dense or MoE model. 3.3 Pre-training Evaluation We conduct comprehensive evaluations of the base language models of the Qwen3 series. The evaluation of base models mainly focuses on their performance in general knowledge, reasoning, mathematics, scientific knowledge, coding, and multilingual capabilities. The evaluation datasets for pre-trained base models include 15 benchmarks: \u2022 General Tasks : MMLU ( mmlu ) (5-shot), MMLU-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp;...",
+   "[body] ...s, scientific knowledge, coding, and multilingual capabilities. The evaluation datasets for pre-trained base models include 15 benchmarks: \u2022 General Tasks : MMLU ( mmlu ) (5-shot), MMLU-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of HumanEval ( humaneval ) , MBPP ( mbpp ) , Humaneval+, MBPP+) ( evalplus ) , MultiPL-E ( multiple ) (0-shot) (Python, C++, JAVA, PHP, TypeScript, C#, Bash, JavaScript),...",
+   "[body] ...ets for pre-trained base models include 15 benchmarks: \u2022 General Tasks : MMLU ( mmlu ) (5-shot), MMLU-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of HumanEval ( humaneval ) , MBPP ( mbpp ) , Humaneval+, MBPP+) ( evalplus ) , MultiPL-E ( multiple ) (0-shot) (Python, C++, JAVA, PHP, TypeScript, C#, Bash, JavaScript), MBPP-3shot ( mbpp ) , CRUX-O of CRUXEval (1-shot) ( gu2024cruxeval ) . \u2022 Multilingu..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:24",
+  "page": "arxiv:2505.09388v1",
+  "subject": "Qwen3",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen3 is evaluated on HumanEval coding benchmark.",
+  "contexts": [
+   "[body] ...-shot), MMLU-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of HumanEval ( humaneval ) , MBPP ( mbpp ) , Humaneval+, MBPP+) ( evalplus ) , MultiPL-E ( multiple ) (0-shot) (Python, C++, JAVA, PHP, TypeScript, C#, Bash, JavaScript), MBPP-3shot ( mbpp ) , CRUX-O of CRUXEval (1-shot) ( gu2024cruxeval ) . \u2022 Multilingual Tasks : MGSM ( mgsm ) (8-shot, CoT), MMMLU ( mmmlu ) (5-shot), INCLUDE ( romanou2024in...",
+   "[body] ...-Pro ( mmlupro ) (5-shot, CoT), MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of HumanEval ( humaneval ) , MBPP ( mbpp ) , Humaneval+, MBPP+) ( evalplus ) , MultiPL-E ( multiple ) (0-shot) (Python, C++, JAVA, PHP, TypeScript, C#, Bash, JavaScript), MBPP-3shot ( mbpp ) , CRUX-O of CRUXEval (1-shot) ( gu2024cruxeval ) . \u2022 Multilingual Tasks : MGSM ( mgsm ) (8-shot, CoT), MMMLU ( mmmlu ) (5-shot), INCLUDE ( romanou2024includeevaluat...",
+   "[body] ..., MMLU-redux ( mmluredux ) (5-shot), BBH ( bbh ) (3-shot, CoT), SuperGPQA ( supergpqa ) (5-shot, CoT). \u2022 Math &amp; STEM Tasks : GPQA ( gpqa ) (5-shot, CoT), GSM8K ( gsm8k ) (4-shot, CoT), MATH ( math ) (4-shot, CoT). \u2022 Coding Tasks : EvalPlus ( evalplus ) (0-shot) (Average of HumanEval ( humaneval ) , MBPP ( mbpp ) , Humaneval+, MBPP+) ( evalplus ) , MultiPL-E ( multiple ) (0-shot) (Python, C++, JAVA, PHP, TypeScript, C#, Bash, JavaScript), MBPP-3shot ( mbpp ) , CRUX-O of CRUXEval (1-shot) ( gu2024cruxeval ) . \u2022 Multilingual Tasks : MGSM ( mgsm ) (8-shot, CoT), MMMLU ( mmmlu ) (5-shot), INCLUDE ( romanou2024includeevaluatingmultilinguallanguage ) (5-s..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:25",
+  "page": "arxiv:2505.10978v3",
+  "subject": "GiGPO",
+  "object": "ALFWorld",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GiGPO is evaluated on ALFWorld benchmark for agent training.",
+  "contexts": [
+   "[body] ...oduction Large Language Models (LLMs) achiam2023gpt ; team2023gemini ; yang2024qwen2 ; liu2024deepseek have leapt from static question-answer systems to versatile agents that perceive, reason, and act in open-ended environments. For instance, they now power embodied assistants that navigate simulated homes shridhar2020alfworld ; li2024embodied , mobile and web navigators that plan multi-step browsing sessions furuta2024multimodal ; zheng2024gpt ; gou2025navigating ; feng2025towards , and autonomous explorers in interactive games wang2023voyager ; wang2024mobile . In these settings, LLM agents need to perceive, reason, and act in multi-turn loops, which...",
+   "[body] ...generation wei2025swe , where reward arrives immediately and credit assignment is straightforward. In contrast, LLM agents operating in external environments face fundamentally different learning landscapes. Their behavior unfolds over long episodes with tens of decision steps and tens of thousands of tokens (e.g., an ALFWorld shridhar2020alfworld episode may include up to 50 steps and over 20k tokens). Rewards are typically sparse (sometimes arriving only at the end of an episode), and the impact of any individual action may only manifest much later in the trajectory. This substantially complicates the credit assignment for individual steps and increa...",
+   "[body] ..., where reward arrives immediately and credit assignment is straightforward. In contrast, LLM agents operating in external environments face fundamentally different learning landscapes. Their behavior unfolds over long episodes with tens of decision steps and tens of thousands of tokens (e.g., an ALFWorld shridhar2020alfworld episode may include up to 50 steps and over 20k tokens). Rewards are typically sparse (sometimes arriving only at the end of an episode), and the impact of any individual action may only manifest much later in the trajectory. This substantially complicates the credit assignment for individual steps and increases the challenge of..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:26",
+  "page": "arxiv:2505.10978v3",
+  "subject": "GiGPO",
+  "object": "WebShop",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GiGPO is evaluated on WebShop for e-commerce agent tasks.",
+  "contexts": [
+   "[body] ...LLM agents; (2) the ablation study of GiGPO; (3) the dynamic trend of step-level group G S \u200b ( \ud835\udc94 ~ ) G^{S}(\\tilde{\\bm{s}}) over the course of training; (4) the computational budget of GiGPO. 5.1 Experiment Setup Benchmarks. We first train the LLM agents on two challenging benchmarks: ALFWorld shridhar2020alfworld and WebShop yao2022webshop . ALFWorld is an embodied environment designed to assess the ability of LLM agents to perform multi-step decision-making. In each episode, the agent receives a text goal and must accomplish it through multi-turn interaction with the environment. It includes 3,827 task instances across six categories of common househ...",
+   "[body] ...) the ablation study of GiGPO; (3) the dynamic trend of step-level group G S \u200b ( \ud835\udc94 ~ ) G^{S}(\\tilde{\\bm{s}}) over the course of training; (4) the computational budget of GiGPO. 5.1 Experiment Setup Benchmarks. We first train the LLM agents on two challenging benchmarks: ALFWorld shridhar2020alfworld and WebShop yao2022webshop . ALFWorld is an embodied environment designed to assess the ability of LLM agents to perform multi-step decision-making. In each episode, the agent receives a text goal and must accomplish it through multi-turn interaction with the environment. It includes 3,827 task instances across six categories of common household activities:...",
+   "[body] ...must accomplish it through multi-turn interaction with the environment. It includes 3,827 task instances across six categories of common household activities: Pick &amp; Place (Pick), Examine in Light (Look), Clean &amp; Place (Clean), Heat &amp; Place (Heat), Cool &amp; Place (Cool), and Pick Two &amp; Place (Pick2). WebShop is a complex, web-based interactive environment designed to test the LLM agents in realistic online shopping scenarios. To complete the task, the agent must interact with a simulated HTML-based shopping website to search for, navigate to, and ultimately purchase a suitable item. It contains over 1.1 million products and 12k user i..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:27",
+  "page": "arxiv:2505.10978v3",
+  "subject": "GiGPO",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GiGPO uses Qwen2.5 models as base for agent training.",
+  "contexts": [
+   "[body] ...c-free methods RLOO kool2019buy ; ahmadian2024back and GRPO shao2024deepseekmath , which perform advantage estimation over trajectory groups. For search-augmented QA, we compare GiGPO with R1-Instruct, Search-R1 jin2025search , ZeroSearch sun2025zerosearch , and StepSearch wang2025stepsearch . Training details. We use Qwen2.5-1.5B/3B/7B-Instruct yang2024qwen2 as our base models. The weighting coefficient \u03c9 \\omega is set to 1 1 with no further tuning. For ALFWorld and WebShop, all RL training methods (including ours and the baselines) use exactly the same hyperparameter configurations. The rollout group size N N for group-based RL methods is set to 8. F...",
+   "[body] ...= std F_{\\text{norm}}=\\text{std} , while GiGPO w/o std uses F norm = 1 F_{\\text{norm}}=1 . Type Method ALFWorld WebShop Pick Look Clean Heat Cool Pick2 All Score Succ. Closed-Source Model Prompting GPT-4o 75.3 60.8 31.2 56.7 21.6 49.8 48.0 31.8 23.7 Prompting Gemini-2.5-Pro 92.8 63.3 62.1 69.0 26.6 58.7 60.3 42.5 35.9 Qwen2.5-1.5B-Instruct Prompting Qwen2.5 5.9 5.5 3.3 9.7 4.2 0.0 4.1 23.1 5.2 Prompting ReAct 17.4 20.5 15.7 6.2 7.7 2.0 12.8 40.1 11.3 Prompting Reflexion 35.3 22.2 21.7 13.6 19.4 3.7 21.8 55.8 21.9 RL Training PPO (with critic) 64.8 \u00b13.5 40.5 \u00b16.9 57.1 \u00b14.9 60.6 \u00b16.6 46.4 \u00b14.0 47.4 \u00b11.9 54.4 \u00b13.1 73.8 \u00b13.0 51.5 \u00b12.9 RL Training RLOO 88.3...",
+   "[body] ..., while GiGPO w/o std uses F norm = 1 F_{\\text{norm}}=1 . Type Method ALFWorld WebShop Pick Look Clean Heat Cool Pick2 All Score Succ. Closed-Source Model Prompting GPT-4o 75.3 60.8 31.2 56.7 21.6 49.8 48.0 31.8 23.7 Prompting Gemini-2.5-Pro 92.8 63.3 62.1 69.0 26.6 58.7 60.3 42.5 35.9 Qwen2.5-1.5B-Instruct Prompting Qwen2.5 5.9 5.5 3.3 9.7 4.2 0.0 4.1 23.1 5.2 Prompting ReAct 17.4 20.5 15.7 6.2 7.7 2.0 12.8 40.1 11.3 Prompting Reflexion 35.3 22.2 21.7 13.6 19.4 3.7 21.8 55.8 21.9 RL Training PPO (with critic) 64.8 \u00b13.5 40.5 \u00b16.9 57.1 \u00b14.9 60.6 \u00b16.6 46.4 \u00b14.0 47.4 \u00b11.9 54.4 \u00b13.1 73.8 \u00b13.0 51.5 \u00b12.9 RL Training RLOO 88.3 \u00b13.0 52.8 \u00b18.6 71.0 \u00b15.9 62.8 \u00b1..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:28",
+  "page": "arxiv:2505.10978v3",
+  "subject": "GiGPO",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GiGPO improves upon GRPO for multi-turn agent training.",
+  "contexts": [
+   "[body] ...g-horizon planning and decision-making. Reinforcement learning (RL) sutton2018reinforcement has become a crucial recipe for post-training LLMs, leading to frontier models like OpenAI o1 openai2024 and DeepSeek R1 guo2025deepseek . In particular, group-based RL algorithms such as RLOO kool2019buy ; ahmadian2024back and GRPO shao2024deepseekmath have proven especially effective in large-scale training. These methods replace value-function estimation with simple yet powerful relative advantage estimation within groups of rollouts. This group-based advantage computation enjoys favorable properties such as low memory overhead, critic-free optimization, and...",
+   "[body] ...m that nests two-dimensional notions of credit assignment, better-suited for the multi-turn optimization of LLM agents. (i) At the episode level , GiGPO samples a group of complete trajectories under identical task and initial-state conditions, and computes macro relative advantages based on total returns like vanilla GRPO shao2024deepseekmath . This captures the overall effectiveness of each trajectory and reflects the completeness of task execution. (ii) At the step level , GiGPO introduces a novel anchor state grouping mechanism for fine-grained relative advantages estimation. Specifically, it retroactively identifies the repeated environment states...",
+   "[body] ...n shinn2024reflexion , which rely on in-context prompting to guide multi-step behavior without parameter updates. (3) RL training methods: PPO schulman2017proximal , a widely used actor-critic algorithm that requires an additional value model, and group-based critic-free methods RLOO kool2019buy ; ahmadian2024back and GRPO shao2024deepseekmath , which perform advantage estimation over trajectory groups. For search-augmented QA, we compare GiGPO with R1-Instruct, Search-R1 jin2025search , ZeroSearch sun2025zerosearch , and StepSearch wang2025stepsearch . Training details. We use Qwen2.5-1.5B/3B/7B-Instruct yang2024qwen2 as our base models. The weighting..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:29",
+  "page": "arxiv:2506.05176v3",
+  "subject": "Qwen3 Embedding",
+  "object": "MTEB",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen3 Embedding is evaluated on MTEB multilingual benchmarks.",
+  "contexts": [
+   "[body] ...two-stage training scheme in a similar manner, consisting of high-quality supervised fine tuning and a model mergin [...] experiments reveal that the embedding model trained with these synthetic data performs exceptionally well in downstream evaluations, particularly surpassing many previously supervised models in the MTEB Multilingual benchmarks. This motivates us to filter the synthetic data to identify high-quality pairs for inclusion in a second stage of supervised training. We employ a simple cosine similarity calculation to select data pairs, retaining those with a cosine similarity greater than 0.7 from randomly sampled data. Ultimately, approxi...",
+   "[body] ...79.40 Qwen3 Embedding Models Qwen3-Embedding-0.6B 0.6B 64.33 56.00 72.22 66.83 52.33 5.09 24.59 80.83 61.41 64.64 76.17 Qwen3-Embedding-4B 4B 69.45 60.86 79.36 72.33 57.15 11.56 26.77 85.05 65.08 69.60 80.86 Qwen3-Embedding-8B 8B 70.58 61.69 80.89 74.00 57.65 10.06 28.66 86.40 65.63 70.88 81.08 Table 2: Performance on MTEB Multilingual (Enevoldsen et al., 2025 ) . For compared models, the scores are retrieved from MTEB online leaderboard on June 4th, 2025. 4 Evaluation We conduct comprehensive and fair evaluations across multiple benchmarks to assess the capabilities of Qwen3 Embedding models. 4.1 Settings For the text embedding models, we utilize the...",
+   "[body] ....83 61.41 64.64 76.17 Qwen3-Embedding-4B 4B 69.45 60.86 79.36 72.33 57.15 11.56 26.77 85.05 65.08 69.60 80.86 Qwen3-Embedding-8B 8B 70.58 61.69 80.89 74.00 57.65 10.06 28.66 86.40 65.63 70.88 81.08 Table 2: Performance on MTEB Multilingual (Enevoldsen et al., 2025 ) . For compared models, the scores are retrieved from MTEB online leaderboard on June 4th, 2025. 4 Evaluation We conduct comprehensive and fair evaluations across multiple benchmarks to assess the capabilities of Qwen3 Embedding models. 4.1 Settings For the text embedding models, we utilize the Massive Multilingual Text Embedding Benchmark (MMTEB) (Enevoldsen et al., 2025 ) for evaluation. M..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:30",
+  "page": "arxiv:2506.05176v3",
+  "subject": "Qwen3 Embedding",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Qwen3 Embedding is built upon Qwen3 foundation models.",
+  "contexts": [
+   "[body] ...s enable models to capture semantic relationships between texts, while effective reranking mechanisms ensure that the most relevant results are prioritized. Recently, emerging application paradigms such as Retrieval-Augmented Generation (RAG) and agent systems, driven by the advancement of large language models (e.g., Qwen3 (Yang et al., 2025 ) , GPT-4o (Hurst et al., 2024 ) ), have introduced new requirements and challenges for text embedding and reranking, both in terms of model training paradigms and application scenarios. Despite significant advancements, training embedding and reranking models that perform well in scalability, contextual understan...",
+   "[body] ...tasks (Su et al., 2023 ) . Similarly, for reranking model training, advancements have been realized through both zero-shot methods based on user prompts and approaches combining supervised fine-tuning (Ma et al., 2023 ; Pradeep et al., 2023 ; Zhang et al., 2024a ; Zhuang et al., 2024 ) . In this work, we introduce the Qwen3 Embedding series models, which are constructed on top of the Qwen3 foundation models. The Qwen3 foundation has simultaneously released base and instruct model versions, and we exploit the robust multilingual text understanding and generation capabilities of these models to fully realize their potential in training embedding and rera...",
+   "[body] ...advancements have been realized through both zero-shot methods based on user prompts and approaches combining supervised fine-tuning (Ma et al., 2023 ; Pradeep et al., 2023 ; Zhang et al., 2024a ; Zhuang et al., 2024 ) . In this work, we introduce the Qwen3 Embedding series models, which are constructed on top of the Qwen3 foundation models. The Qwen3 foundation has simultaneously released base and instruct model versions, and we exploit the robust multilingual text understanding and generation capabilities of these models to fully realize their potential in training embedding and reranking models. To train the embedding models, we implement a multi-s..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:31",
+  "page": "arxiv:2507.06261v6",
+  "subject": "Gemini 2.5",
+  "object": "AIME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Gemini 2.5 is evaluated on AIME reasoning benchmark.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:32",
+  "page": "arxiv:2507.06261v6",
+  "subject": "Gemini 2.5",
+  "object": "Codeforces",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Gemini 2.5 is evaluated on Codeforces competitive programming tasks.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:33",
+  "page": "arxiv:2509.16941v2",
+  "subject": "SWE-Bench Pro",
+  "object": "Claude Sonnet 4.5",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SWE-Bench Pro evaluates Claude Sonnet 4.5 on software engineering tasks.",
+  "contexts": [
+   "[body] ...p the problem. 5 Results We present the results on SWE-Bench Pro . Below, we detail the evaluation criteria, scaffold, and settings for reproducibility. We evaluate a suite of models, including frontier models, open-weight models, and models fine-tuned on SWE-bench-like trajectories (e.g. SWE-Smith). Model Resolve (%) Claude Sonnet 4.5 43.6 Claude Sonnet 4 42.7 OpenAI GPT-5 (high) 41.8 Claude Haiku 4.5 39.5 Kimi K2 Instruct 27.7 OpenAI GPT-OSS 120B 16.2 Table 1 : Model performance on the public set of SWE-Bench Pro (N=731). Models are evaluated using SWE-Agent [ yang2024sweagent ] , without any ambiguity (e.g. we provide the augmented problem statement..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:34",
+  "page": "arxiv:2509.16941v2",
+  "subject": "SWE-Bench Pro",
+  "object": "GPT-5",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SWE-Bench Pro evaluates OpenAI GPT-5 on software engineering tasks.",
+  "contexts": [
+   "[body] ...SWE-Bench Pro . Below, we detail the evaluation criteria, scaffold, and settings for reproducibility. We evaluate a suite of models, including frontier models, open-weight models, and models fine-tuned on SWE-bench-like trajectories (e.g. SWE-Smith). Model Resolve (%) Claude Sonnet 4.5 43.6 Claude Sonnet 4 42.7 OpenAI GPT-5 (high) 41.8 Claude Haiku 4.5 39.5 Kimi K2 Instruct 27.7 OpenAI GPT-OSS 120B 16.2 Table 1 : Model performance on the public set of SWE-Bench Pro (N=731). Models are evaluated using SWE-Agent [ yang2024sweagent ] , without any ambiguity (e.g. we provide the augmented problem statement, requirements, interface). Model Resolve (%) Claud...",
+   "[body] ...i K2 Instruct 27.7 OpenAI GPT-OSS 120B 16.2 Table 1 : Model performance on the public set of SWE-Bench Pro (N=731). Models are evaluated using SWE-Agent [ yang2024sweagent ] , without any ambiguity (e.g. we provide the augmented problem statement, requirements, interface). Model Resolve (%) Claude Opus 4.1 17.8 OpenAI GPT-5 (high) 15.7 OpenAI GPT-5 (medium) 14.9 Gemini 2.5 Pro Preview 10.1 Claude Sonnet 4 9.1 OpenAI GPT-4o 3.6 Table 2 : Model performance on the commercial set of SWE-Bench Pro (N=276). Commercial problems are sourced from startup repositories, where each problem is augmented with an environment and relevant information. Scaffold. We use...",
+   "[body] ...GPT-OSS 120B 16.2 Table 1 : Model performance on the public set of SWE-Bench Pro (N=731). Models are evaluated using SWE-Agent [ yang2024sweagent ] , without any ambiguity (e.g. we provide the augmented problem statement, requirements, interface). Model Resolve (%) Claude Opus 4.1 17.8 OpenAI GPT-5 (high) 15.7 OpenAI GPT-5 (medium) 14.9 Gemini 2.5 Pro Preview 10.1 Claude Sonnet 4 9.1 OpenAI GPT-4o 3.6 Table 2 : Model performance on the commercial set of SWE-Bench Pro (N=276). Commercial problems are sourced from startup repositories, where each problem is augmented with an environment and relevant information. Scaffold. We use the SWE-Agent [ yang2024..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:35",
+  "page": "arxiv:2509.16941v2",
+  "subject": "SWE-Bench Pro",
+  "object": "SWE-Bench",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SWE-Bench Pro builds upon the original SWE-Bench benchmark.",
+  "contexts": [
+   "[body] ...1 Introduction Large Language Model (LLM) agents have been widely adopted in modern software development workflows. SWE-bench [ jimenez2024swebench ] and related works [ yang2024swebenchmm , zan2024multiswe , yang2024sweagent , zhang2025swebench , swebenchverified ] establish the task of issue resolution as a de-facto standard for assessing their capability and usefulness. In this setting, an agent is given an entire codebase, a task description (e.g.,...",
+   "[body] ...wled corpora used to pre-train LLMs [ brown2020language ] . As a result, constructing benchmarks from public GitHub repositories is inherently difficult, since many are already accessible as training data. Second, existing tasks may not adequately capture the complexity of real-world software engineering. For example, SWE-Bench Verified [ jimenez2024swebench ] includes a substantial proportion of relatively trivial problems (161 out of 500) that require only one- to two-line modifications. In contrast, industrial software engineering, particularly in enterprise settings, often demands multi-file modifications spanning hundreds of lines [ hassan2009pred...",
+   "[body] ...ng, particularly in enterprise settings, often demands multi-file modifications spanning hundreds of lines [ hassan2009predicting , steidl2017evaluating ] . This discrepancy raises concerns about whether current benchmarks truly reflect the challenges faced in practical development scenarios. Our first contribution in SWE-Bench Pro is a novel data collection strategy designed to mitigate data contamination . Specifically, our approach involves two complementary measures: (1) exclusively selecting repositories distributed under strong copyleft licenses (GPL) to construct a public set (11 repositories) and a held-out set (12 repositories), and (2) acquir..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:36",
+  "page": "arxiv:2512.02556v1",
+  "subject": "DeepSeek-V3.2",
+  "object": "AIME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DeepSeek-V3.2 is evaluated on AIME mathematical reasoning benchmark.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:37",
+  "page": "arxiv:2512.02556v1",
+  "subject": "DeepSeek-V3.2",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DeepSeek-V3.2 uses GRPO for reinforcement learning training.",
+  "contexts": [
+   "[body] ...ults demonstrate that models trained on the distilled data achieve performance levels only marginally below those of domain-specific specialists, with the performance gap being effectively eliminated through subsequent RL training. Mixed RL Training For DeepSeek-V3.2, we still adopt Group Relative Policy Optimization (GRPO) ( deepseekmath ; deepseekr1 ) as the RL training algorithm. As DeepSeek-V3.2-Exp, we merge reasoning, agent, and human alignment training into one RL stage. This approach effectively balances performance across diverse domains while circumventing the catastrophic forgetting issues commonly associated with multi-stage training paradi..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:38",
+  "page": "arxiv:2601.03267v2",
+  "subject": "GPT-5",
+  "object": "SWE-bench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GPT-5 is evaluated on SWE-bench Verified for code tasks.",
+  "contexts": [
+   "[body] ...ting Virology 6.1.1.3 ProtocolQA Open-Ended 6.1.1.4 Tacit Knowledge and Troubleshooting 6.1.1.5 TroubleshootingBench 6.1.1.6 External Evaluations by SecureBio 6.1.2 Cybersecurity 6.1.2.1 Capture the Flag (CTF) Challenges 6.1.2.2 Cyber range 6.1.2.3 External Evaluations by Pattern Labs 6.1.3 AI Self-Improvement 6.1.3.1 SWE-bench Verified (N=477) 6.1.3.2 OpenAI PRs 6.1.3.3 MLE-Bench 6.1.3.4 SWE-Lancer 6.1.3.5 PaperBench 6.1.3.6 OPQA 6.1.3.7 External Evaluations by METR 6.2 Research Category Update: Sandbagging 6.2.1 External Evaluations by Apollo Research 6.3 Safeguards for High Biological and Chemical Risk 6.3.1 Threat model and biological threat taxono..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:39",
+  "page": "arxiv:2601.20802v2",
+  "subject": "SDPO",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SDPO uses Qwen3 model family for experiments.",
+  "contexts": [
+   "[body] ...1 Introduction Figure 1: SDPO substantially outperforms an improved version of Group Relative Policy Optimization (GRPO) on LCB v6 with Qwen3-8B. Further, SDPO achieves GRPO\u2019s final accuracy in 4 \u00d7 4\\times fewer generations. Claude Sonnet 4 is the strongest instruct model on the public LCBv6 leaderboard. Shaded regions show the standard deviation across 3 seeds. Progress in deep reinforcement learning has shown that iterating on experience\u2014acting, receiving feedback, and...",
+   "[body] ...tests and coding platforms like LeetCode, where the public tests are used for evaluation during training and the private tests are used for validation (Chen et al., 2022 ; Le et al., 2022 ; El-Kishky et al., 2025 ; Samadi et al., 2025 ) . 5 5 5 We select public tests as a 50% random subset of private tests. We use the Qwen3 (Yang et al., 2025a ) model family for our experiments, with Qwen3-8B as default unless otherwise specified. We report the average accuracy over 4 rollouts and use the same GRPO baseline as outlined in Section \u02dc 3.1 . Results. Figure \u02dc 1 compares the learning curves of SDPO and GRPO on LCBv6. We find that SDPO achieves a substantial...",
+   "[body] ...e used for evaluation during training and the private tests are used for validation (Chen et al., 2022 ; Le et al., 2022 ; El-Kishky et al., 2025 ; Samadi et al., 2025 ) . 5 5 5 We select public tests as a 50% random subset of private tests. We use the Qwen3 (Yang et al., 2025a ) model family for our experiments, with Qwen3-8B as default unless otherwise specified. We report the average accuracy over 4 rollouts and use the same GRPO baseline as outlined in Section \u02dc 3.1 . Results. Figure \u02dc 1 compares the learning curves of SDPO and GRPO on LCBv6. We find that SDPO achieves a substantially higher final accuracy (48.8%) than GRPO (41.2%) while also outpe..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:40",
+  "page": "arxiv:2601.20802v2",
+  "subject": "SDPO",
+  "object": "LiveCodeBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SDPO is evaluated on LiveCodeBench v6 competitive programming benchmark.",
+  "contexts": [
+   "[abstract] ...eats the current model conditioned on feedback as a self-teacher and distills its feedback-informed next-token predictions back into the policy. In this way, SDPO leverages the model's ability to retrospectively identify its own mistakes in-context. Across scientific reasoning, tool use, and competitive programming on LiveCodeBench v6, SDPO improves sample efficiency and final accuracy over strong RLVR baselines. Notably, SDPO also outperforms baselines in standard RLVR environments that only return scalar feedback by using successful rollouts as implicit feedback for failed attempts. Finally, applying SDPO to individual questions at test time accelera..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:41",
+  "page": "arxiv:2601.20802v2",
+  "subject": "SDPO",
+  "object": "GRPO",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SDPO is compared against GRPO baseline.",
+  "contexts": [
+   "[body] ...1 Introduction Figure 1: SDPO substantially outperforms an improved version of Group Relative Policy Optimization (GRPO) on LCB v6 with Qwen3-8B. Further, SDPO achieves GRPO\u2019s final accuracy in 4 \u00d7 4\\times fewer generations. Claude Sonnet 4 is the strongest instruct model on the public LCBv6 leaderboard. Shaded regions show the standard deviation across 3 seeds. Progress in deep reinforcement learning has shown that iterating on experience\u2014acting, rec...",
+   "[body] ...1 Introduction Figure 1: SDPO substantially outperforms an improved version of Group Relative Policy Optimization (GRPO) on LCB v6 with Qwen3-8B. Further, SDPO achieves GRPO\u2019s final accuracy in 4 \u00d7 4\\times fewer generations. Claude Sonnet 4 is the strongest instruct model on the public LCBv6 leaderboard. Shaded regions show the standard deviation across 3 seeds. Progress in deep reinforcement learning has shown that iterating on experience\u2014acting, receiving feedback, and updating a policy\u2014can unlock capa...",
+   "[body] ...ifiable rewards (RLVR): given a question x x , the model samples an answer y \u223c \u03c0 \u03b8 ( \u22c5 \u2223 x ) {y\\sim\\pi_{\\theta}(\\cdot\\mid x)} and receives a scalar reward r \u2208 \u211d r\\in\\mathbb{R} , often binary (e.g., unit-tests pass/fail in code generation). Modern policy gradient RLVR methods such as Group Relative Policy Optimization (GRPO; Shao et al., 2024 ) estimate advantages from these sparse outcome rewards. Furthermore, when all rollouts in a group receive the same (often zero) reward, GRPO advantages collapse to zero and learning stalls. To overcome this sparsity, one might prefer distillation from a strong teacher (Guo et al., 2025 ; Yang et al., 2025a ; Lu &a..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:42",
+  "page": "arxiv:2604.13016v2",
+  "subject": "on-policy distillation",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "On-policy distillation study uses Qwen3 models.",
+  "contexts": [
+   "[body] ...1 Introduction On-policy distillation (OPD) has rapidly emerged as a core technique for large language model (LLM) post-training. Recent industry efforts, including Qwen3 [Yang et al., 2025 ] , MiMo [Xiao et al., 2026 ] and GLM-5 [Zeng et al., 2026 ] , all adopt OPD in their post-training pipelines and report substantial gains, establishing it as a competitive complement to conventional supervised fine-tuning (SFT) and outcome-reward reinforcement learning (RL). Thinking Machines Lab [Lu and Lab, 202...",
+   "[body] ...et al., 2026 ] and GLM-5 [Zeng et al., 2026 ] , all adopt OPD in their post-training pipelines and report substantial gains, establishing it as a competitive complement to conventional supervised fine-tuning (SFT) and outcome-reward reinforcement learning (RL). Thinking Machines Lab [Lu and Lab, 2025 ] replicates the Qwen3 OPD recipe at a fraction of the RL compute cost, independently confirming that on-policy, dense supervision is a practically efficient alternative. Unlike off-policy distillation, which trains the student on fixed teacher-generated sequences and suffers from exposure bias [Bengio et al., 2015 ] , OPD has the student generate its own...",
+   "[body] ...e student has seen during training. Even with consistent thinking patterns and higher scores, a teacher may offer no genuinely new knowledge, leaving OPD without a driving signal ( Section \u02dc 3.2 ). 3.1 Thinking-Pattern Consistency Figure 2 : OPD from two teachers with different thinking patterns into the same student (Qwen3-1.7B-Base). The GRPO teacher achieves stronger performance (left) and higher initial overlap ratio (right), suggesting that thinking pattern compatibility governs OPD effectiveness. We first study whether OPD requires compatible thinking patterns between the student and the teacher. A stronger teacher does not guarantee better disti..."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:43",
+  "page": "arxiv:2604.13016v2",
+  "subject": "on-policy distillation",
+  "object": "AIME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "On-policy distillation is evaluated on AIME mathematical reasoning.",
+  "contexts": [
+   "[body] ...hinking pattern to be closer to that of the GRPO-trained teacher. We conduct two OPD experiments using the DAPO-Math-17K dataset [Yu et al., 2025 ] , differing only in the choice of teacher model. Unless otherwise specified, all experiments use the default hyperparameters described in Appendix A.2 and are evaluated on AIME 2024 [Li et al., 2024 ] , AIME 2025 [Balunovi\u0107 et al., 2025 ] and AMC 2023 [Li et al., 2024 ] . Following standard practice, we sample 16 solutions per problem with temperature 0.7 and top- p p 0.95, using a maximum validation response length of 31,744 tokens. We report average accuracy over 16 samples (avg@16) as the primary evaluat...",
+   "[body] ...that of the GRPO-trained teacher. We conduct two OPD experiments using the DAPO-Math-17K dataset [Yu et al., 2025 ] , differing only in the choice of teacher model. Unless otherwise specified, all experiments use the default hyperparameters described in Appendix A.2 and are evaluated on AIME 2024 [Li et al., 2024 ] , AIME 2025 [Balunovi\u0107 et al., 2025 ] and AMC 2023 [Li et al., 2024 ] . Following standard practice, we sample 16 solutions per problem with temperature 0.7 and top- p p 0.95, using a maximum validation response length of 31,744 tokens. We report average accuracy over 16 samples (avg@16) as the primary evaluation metric...."
+  ]
+ },
+ {
+  "sid": "out_1.jsonl:44",
+  "page": "arxiv:2607.20891v1",
+  "subject": "Deep Research agents",
+  "object": "DeepResearch Benchmark",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Study evaluates Deep Research agents on DeepResearch Benchmark tasks.",
+  "contexts": [
+   "[body] ...generated instances remain factually misleading, MisKnow-Agent applies search-guided cross-model refinement and quality filtering, followed by lightweight manual screening. After selecting the document generator through a qualitative comparison, we obtain 5,933 quality-controlled misleading-knowledge instances across DeepResearch Benchmark. Using this constructed dataset, we evaluate whether Deep Research agents adopt the predefined false conclusion in their final reports, rather than merely mentioning, quoting, or refuting the misleading content. We test two open-source frameworks, each paired with three backbone LLMs, together with one closed-source...",
+   "[body] ...aining instances constitute the final set \u2133 q i \\mathcal{M}_{q_{i}} , and the full constructed dataset is \u2133 = \u22c3 i = 1 N \u2133 q i . \\mathcal{M}=\\bigcup_{i=1}^{N}\\mathcal{M}_{q_{i}}. (6) After verification and quality screening, MisKnow-Agent yields 5,933 quality-controlled misleading-knowledge instances for tasks from the DeepResearch Bench. 3.4 Defense Strategy We evaluate two complementary defenses. The pre-research defense uses a verification-enhanced prompt to activate the research model\u2019s own evidence-verification capability throughout the Deep Research workflow. The post-research defense leverages the ability of search-enabled agents to identify misl...",
+   "[abstract] ...onclusions in final reports. To study this failure mode, we introduce MisKnow-Agent, a framework for constructing and validating misleading knowledge for Deep Research tasks. MisKnow-Agent generates misleading instances with controllable authority levels and styles, yielding 5,933 quality-controlled instances built on DeepResearch Benchmark tasks. Extensive experiments across open-source and closed-source Deep Research agents show that even limited exposure to misleading knowledge can induce false-conclusion adoption in final reports, revealing a broad reliability vulnerability in current Deep Research agents. Although search-enabled verifier models co..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:0",
+  "page": "arxiv:2607.21716v1",
+  "subject": "Quadratic optimization proxy",
+  "object": "FineWeb",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Quadratic model evaluated on FineWeb dataset (3B tokens from FineWeb).",
+  "contexts": [
+   "[body] ...ke a leap of faith when applying them to neural networks. In this work, we aim to tighten this connection and stress test the quadratic model by asking: To what extent does the quadratic model actually capture the training dynamics of LLMs? In Section \u02dc 3 , we test this by training a 150M transformer on 3B tokens from FineWeb and save intermediate checkpoints every 10% of training. We then Taylor expand the model and the loss around each checkpoint and train on this proxy loss for 10% of the total tokens, and compare this to the original optimization trajectory. We do this for two proxies. The first, prox , linearizes the model but maintains the cross-..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:1",
+  "page": "arxiv:2607.21735v1",
+  "subject": "Evidential framework for red-team evaluations",
+  "object": "AdvBench",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Framework analyzed against AdvBench (520 prompts) as a representative safety evaluation suite.",
+  "contexts": [
+   "[body] ...x} exactly when p &gt; p min p&gt;p_{\\min} . \u220e The arithmetic theorem is encouraging at the rates where much safety-relevant behaviour actually sits. At p = 10 \u2212 2 p=10^{-2} , a factor-of-two update needs 138 prompts, an order-of-magnitude update needs 457, and holding false certification below five percent needs 298. AdvBench, at n = 520 n=520 , clears all three. 4.3 Below the boundary: what no benchmark establishes Theorem 2 (Impossibility of informative null-result certification) . Fix \u03c4 \\tau , r r , and N max N_{\\max} as above. Fix any scoring rule, and let p p denote the harm rate the category exhibits under that rule. If p &lt; p min \u200b ( \u03c4 , N ma..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:2",
+  "page": "arxiv:2607.21752v1",
+  "subject": "Compression-guided sparse attention",
+  "object": "PG-19",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Method evaluated on PG-19 byte-level language modeling with 92M parameters and 8K context.",
+  "contexts": [
+   "[body] ...n Section 4.1 ; experiment-specific changes are noted below. 4.1 Common Experimental Setup Model. Byte-level autoregressive Transformer (ByteLM, 92M params): 768 hidden dim, 12 layers, 12 heads, 3072 FFN width, vocabulary 256, tied input/output embeddings, gradient checkpointing, and bfloat16 mixed precision. Dataset. PG-19 Rae et al. ( 2020 ) (28,602 Project Gutenberg books), encoded as raw UTF-8 bytes and chunked to 8192 bytes ( \u2248 \\approx 1500 words). A fixed random ordering (seed 42) ensures that all methods within an experiment see identical data. Training. AdamW Loshchilov and Hutter ( 2019 ) with learning rate 3 \u00d7 10 \u2212 4 3\\times 10^{-4} , weight...",
+   "[body] ...ate 3 \u00d7 10 \u2212 4 3\\times 10^{-4} , weight decay 0.1, \u03b2 = ( 0.9 , 0.95 ) \\beta=(0.9,0.95) , 2000-step linear warmup followed by cosine decay, 20K total steps, and effective batch size 16\u201320 across 4\u20135 H100 GPUs. All models use initialization seed 42. Evaluation. Bits-per-byte (BPB = cross-entropy / ln \u2061 2 /\\ln 2 ) on the PG-19 validation split, computed over 30 chunks at the training sequence length. Mask construction. Each sequence is divided into 128-byte blocks; we compute r i = | gzip \u200b ( b i ) | / 128 r_{i}=|\\texttt{gzip}(b_{i})|/128 , mark blocks above the per-sequence mean as \u201cliteral\u201d (informationally dense), and connect all literal-to-literal pai...",
+   "[body] ...tionally dense), and connect all literal-to-literal pairs for long-range attention, plus a \u00b1 1 \\pm 1 -block local window. No fixed-position global tokens are used. 4.2 Experiment 1: How does compression-guided attention compare to existing methods? We compare seven attention methods using the same 92M-parameter model, PG-19 data, sequence length 8192, and 20K training steps. Methods differ only in mask construction: \u2022 Dense: Full O \u200b ( N 2 ) O(N^{2}) attention. \u2022 Local Only: \u00b1 1 \\pm 1 -block sliding window (256 bytes); no globals or long-range edges. \u2022 Longformer Beltagy et al. ( 2020 ) : \u00b1 4 \\pm 4 -block window + global tokens every 8 blocks. \u2022 BigBir..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:3",
+  "page": "arxiv:2607.21752v1",
+  "subject": "Compression-guided sparse attention",
+  "object": "BigBird",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Compression-guided attention compared against BigBird (fixed sparse attention baseline).",
+  "contexts": [
+   "[body] ...ore which positions should be connected \u2014a question that has driven increasingly sophisticated sparse attention methods. Fixed patterns: simple but blind. Early sparse attention methods used predetermined connectivity patterns. Longformer Beltagy et al. ( 2020 ) employs a sliding window with fixed global tokens, while BigBird Zaheer et al. ( 2020 ) augments this with random long-range edges. These approaches are efficient and simple, but their connectivity is independent of the input : the same mask is used whether the sequence is a legal contract or a children\u2019s story. At shorter contexts (1K\u20134K tokens), this is often sufficient because the fixed patt...",
+   "[body] ...ethod to use classical data compression for adaptive attention-mask construction, requiring zero additional parameters and no custom kernels. (ii) Through controlled ablations, we provide a clean component decomposition : gzip-derived literal-to-literal connections account for \u2212 - 0.43 BPB (68% of the improvement over BigBird), the local window for \u2212 - 0.12 BPB (19%), and removing fixed global [...] Experiments consistently show that global tokens degrade performance (Section 4.3 ), likely because they bias attention toward positions selected by index rather than content. The final block-level mask is \ud835\udc0c = \ud835\udc0c lit \u222a \ud835\udc0c local \u222a \ud835\udc08 \\mathbf{M}=\\mathbf{M}^{\\tex...",
+   "[body] ...quence length 8192, and 20K training steps. Methods differ only in mask construction: \u2022 Dense: Full O \u200b ( N 2 ) O(N^{2}) attention. \u2022 Local Only: \u00b1 1 \\pm 1 -block sliding window (256 bytes); no globals or long-range edges. \u2022 Longformer Beltagy et al. ( 2020 ) : \u00b1 4 \\pm 4 -block window + global tokens every 8 blocks. \u2022 BigBird Zaheer et al. ( 2020 ) : Local + global tokens + 6 fixed random long-range edges per block. \u2022 SBM-Transformer Cho et al. ( 2022 ) : Learned stochastic block model with per-head clusters, Bernoulli sampling, and STE; +247K parameters...."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:4",
+  "page": "arxiv:2607.21752v1",
+  "subject": "Compression-guided sparse attention",
+  "object": "Longformer",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Compression-guided attention compared against Longformer (fixed sparse attention with global tokens).",
+  "contexts": [
+   "[body] ...isms that restrict which positions each token can attend to. The central challenge is therefore which positions should be connected \u2014a question that has driven increasingly sophisticated sparse attention methods. Fixed patterns: simple but blind. Early sparse attention methods used predetermined connectivity patterns. Longformer Beltagy et al. ( 2020 ) employs a sliding window with fixed global tokens, while BigBird Zaheer et al. ( 2020 ) augments this with random long-range edges. These approaches are efficient and simple, but their connectivity is independent of the input : the same mask is used whether the sequence is a legal contract or a children\u2019...",
+   "[body] ...methods? We compare seven attention methods using the same 92M-parameter model, PG-19 data, sequence length 8192, and 20K training steps. Methods differ only in mask construction: \u2022 Dense: Full O \u200b ( N 2 ) O(N^{2}) attention. \u2022 Local Only: \u00b1 1 \\pm 1 -block sliding window (256 bytes); no globals or long-range edges. \u2022 Longformer Beltagy et al. ( 2020 ) : \u00b1 4 \\pm 4 -block window + global tokens every 8 blocks. \u2022 BigBird Zaheer et al. ( 2020 ) : Local + global tokens + 6 fixed random long-range edges per block. \u2022 SBM-Transformer Cho et al. ( 2022 ) : Learned stochastic block model with per-head clusters, Bernoulli sampling, and STE; +247K parameters....",
+   "[abstract] ...Data-adaptive sparse attention masks substantially outperform fixed patterns (e.g., BigBird and Longformer) and can even exceed dense attention on long sequences. Existing adaptive approaches---including SBM-Transformer, Dynamic Mask Attention, and NSA---typically require additional learnable parameters, custom gradient estimators, or specialized CUDA kernels. We show that classical data compression provides an effective masking sig..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:5",
+  "page": "arxiv:2607.21752v1",
+  "subject": "Compression-guided sparse attention",
+  "object": "SBM-Transformer",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Method compared against SBM-Transformer (learned stochastic block model with Bernoulli sampling).",
+  "contexts": [
+   "[body] ...space of useful connections grows quadratically, and fixed patterns increasingly fail. Learned masks: effective but complex. Recent work addresses this limitation by learning masks from the input. Routing Transformer Roy et al. ( 2021 ) clusters queries using online k k -means and restricts attention within clusters. SBM-Transformer Cho et al. ( 2022 ) models attention as a stochastic block model with learnable memberships and Bernoulli mask sampling via straight-through estimation. NSA Yuan et al. ( 2025 ) uses learned gating networks to select compressed token blocks, while Dynamic Mask Attention trains per-head mask predictors using specialized CUD...",
+   "[body] ...\u200b ( N 2 ) O(N^{2}) attention. \u2022 Local Only: \u00b1 1 \\pm 1 -block sliding window (256 bytes); no globals or long-range edges. \u2022 Longformer Beltagy et al. ( 2020 ) : \u00b1 4 \\pm 4 -block window + global tokens every 8 blocks. \u2022 BigBird Zaheer et al. ( 2020 ) : Local + global tokens + 6 fixed random long-range edges per block. \u2022 SBM-Transformer Cho et al. ( 2022 ) : Learned stochastic block model with per-head clusters, Bernoulli sampling, and STE; +247K parameters....",
+   "[abstract] ...Data-adaptive sparse attention masks substantially outperform fixed patterns (e.g., BigBird and Longformer) and can even exceed dense attention on long sequences. Existing adaptive approaches---including SBM-Transformer, Dynamic Mask Attention, and NSA---typically require additional learnable parameters, custom gradient estimators, or specialized CUDA kernels. We show that classical data compression provides an effective masking signal with \\textbf{no additional parameters}. By computing per-block gzip compression ratios, we identify non-..."
+  ]
+ }
+]

@@ -1,0 +1,713 @@
+[
+ {
+  "sid": "out_g5.jsonl:14",
+  "page": "arxiv:2607.21535v1",
+  "subject": "Windowed-MTP",
+  "object": "LongBench-v2",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Windowed-MTP evaluates on LongBench-v2 for realistic long-context code-reasoning QA.",
+  "contexts": [
+   "[body] ...MoE-FFN MTP, NoPE). Windowed-MTP uses W = 4032 W{=}4032 , n sink = 64 n_{\\text{sink}}{=}64 . Benchmarks at a fixed 1.04M-token input span RULER [Hsieh et al., 2024 ] (single/multi-value/multi-query needle retrieval, variable tracking, common-/frequent-word aggregation) as a controlled easy \u2192 \\to hard difficulty axis; LongBench-v2 [Bai et al., 2024 ] realistic long-context code-reasoning QA; and BABILong [Kuratov et al., 2024 ] multi-fact reasoning QA. We report acceptance length, per-token latency (TPOT), and speedup vs. both the native MTP draft and the no-speculation dense baseline, and screen all generations for degenerate repetition. Concretely, \u201c...",
+   "[body] ...tion regime reaches the same S S by accumulated decode, and windowing caps the draft\u2019s per-step cost there identically. Reproducibility of the 1M inputs. No input is tiled or repeated to reach length. RULER uses its standard, published length-controlled construction (needles/queries embedded in a distractor haystack); LongBench-v2 and BABILong use real documents naturally longer than 1M tokens, tail-truncated to the exact window. All inputs are produced by seeded, in-repository generators and reproduce byte-for-byte. Positional validity at 1M is handled at the model level\u2014YaRN for the Qwen models, native NoPE for Nemotron\u2014and applied identically to the..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:15",
+  "page": "arxiv:2607.21535v1",
+  "subject": "Windowed-MTP",
+  "object": "BABILong",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Windowed-MTP evaluates on BABILong for multi-fact reasoning QA at million-token context.",
+  "contexts": [
+   "[body] ...{sink}}{=}64 . Benchmarks at a fixed 1.04M-token input span RULER [Hsieh et al., 2024 ] (single/multi-value/multi-query needle retrieval, variable tracking, common-/frequent-word aggregation) as a controlled easy \u2192 \\to hard difficulty axis; LongBench-v2 [Bai et al., 2024 ] realistic long-context code-reasoning QA; and BABILong [Kuratov et al., 2024 ] multi-fact reasoning QA. We report acceptance length, per-token latency (TPOT), and speedup vs. both the native MTP draft and the no-speculation dense baseline, and screen all generations for degenerate repetition. Concretely, \u201c1M context\u201d is a fixed 1 , 040 , 000 1{,}040{,}000 -token prompt for every benc...",
+   "[body] ...es the same S S by accumulated decode, and windowing caps the draft\u2019s per-step cost there identically. Reproducibility of the 1M inputs. No input is tiled or repeated to reach length. RULER uses its standard, published length-controlled construction (needles/queries embedded in a distractor haystack); LongBench-v2 and BABILong use real documents naturally longer than 1M tokens, tail-truncated to the exact window. All inputs are produced by seeded, in-repository generators and reproduce byte-for-byte. Positional validity at 1M is handled at the model level\u2014YaRN for the Qwen models, native NoPE for Nemotron\u2014and applied identically to the dense baseline a..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:16",
+  "page": "arxiv:2607.21540v1",
+  "subject": "DONDO",
+  "object": "w2v-BERT 2.0",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DONDO builds on w2v-BERT 2.0 self-supervised speech encoder for ASR fine-tuning.",
+  "contexts": [
+   "[body] ...s afterthoughts, and the resulting models are placed in the commons rather than behind a paywall. DONDO addresses this gap for a concrete, regionally organised set of African languages. Rather than pursue a single very large multilingual model, we take a pragmatic, reproducible route: start from the publicly available w2v-BERT 2.0 encoder, which has itself been pre-trained on very large volumes of multilingual audio, and fine-tune it for ASR on the languages of interest. To obtain transcribed audio at all for many of these languages we rely on read speech from religious texts. Such recordings are attractive for low-resource work because they exist for...",
+   "[abstract] ...We present DONDO, a family of open, permissively licensed automatic speech recognition (ASR) base models for African languages, built on the w2v-BERT 2.0 self-supervised speech encoder. DONDO comprises twenty-one monolingual models and five multilingual models spanning twenty-seven language varieties across Ghana, Sierra Leone, Nigeria, Senegal, Kenya and Zimbabwe. Models are fine-tuned primarily on read speech drawn from religious texts, which offer broad, license-clear and o..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:17",
+  "page": "arxiv:2607.21542v1",
+  "subject": "ZF2ST",
+  "object": "maximum mean discrepancy",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ZF2ST builds on maximum mean discrepancy (MMD) as a foundational statistical testing method.",
+  "contexts": [
+   "[body] ...the same population. It underlies applications including model criticism (Sutherland et al. , 2016 ) , dataset comparison (Gretton et al. , 2012 ) , and distribution-shift detection (Rabanser et al. , 2019 ) . Classical nonparametric tests compare expectations over a class of test functions. Kernel methods such as the maximum mean discrepancy compare mean embeddings in a reproducing kernel Hilbert space (Gretton et al. , 2012 ) , while more recent methods improve testing power by learning test locations, kernels, deep representations, or witness functions (Jitkrittum et al. , 2016 ; Sutherland et al. , 2016 ; Liu et al. , 2020 ; K\u00fcbler et al. , 2022 )..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:18",
+  "page": "arxiv:2607.21542v1",
+  "subject": "ZF2ST",
+  "object": "zero-flow criterion",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ZF2ST builds on the zero-flow criterion for learning how samples from distributions are misaligned.",
+  "contexts": [
+   "[body] ...ation (Butakov et al. , 2025 ) . Motivated by these developments, we explore their use in two-sample testing. Rather than using a flow model to synthesize additional observations, we use its learned vector field as a structured witness for describing and testing how two distributions differ. Our approach builds on the zero-flow criterion (Wang et al. , 2026 ) . We independently pair observations from the two distributions and consider the midpoint and displacement of each pair. Conditional on the midpoint, the average displacement defines a vector field that vanishes exactly when the two distributions are equal. A nonzero field therefore provides a vec...",
+   "[abstract] ...We propose a new approach to two-sample testing for deciding whether two sets of samples are drawn from the same distribution. The test is built on a statistical discrepancy based on the zero-flow criterion, termed zero-flow discrepancy (ZFD). We prove the validity of ZFD and propose a practical testing procedure, termed the zero-flow two-sample test (ZF2ST). The key idea is to learn how samples from the two distributions are locally misaligned and use the resulting directional pattern as evidence of distributional differ..."
+  ]
+ },
+ {
+  "sid": "out_g5.jsonl:19",
+  "page": "arxiv:2607.21548v1",
+  "subject": "neural-DSE-solver",
+  "object": "physics-informed neural networks",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The neural DSE solver builds on physics-informed neural networks (PINNs) for solving functional equations.",
+  "contexts": [
+   "[body] ...ations this vertex is normally modeled, and different choices can change the gluon propagator considerably [ 17 , 4 , 11 ] . Neural representations offer another way to solve differential and integral equations. Early approaches used trial functions in which boundary conditions were incorporated explicitly [ 22 ] . In physics-informed neural networks (PINNs) the equation residual is part of the loss function [ 30 , 21 ] . Related techniques were applied to many-body wave functions, quantum-mechanical systems, and operator learning [ 28 , 7 , 23 ] . For functional equations, a neural representation is attractive because it is continuous and differentiab..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:0",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "Qwen3-Omni",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "X\u00b3-OPD is initialized from Qwen3-Omni as its student model base.",
+  "contexts": [
+   "[body] ...oustic events whose evidence is not recoverable from a transcript, and reasoning conditioned on paralinguistic cues such as prosody, hesitation, and emotional shifts in spoken dialogue. Therefore, closing the audio-text reasoning gap [...] 5 Experiments 5.1 Experimental Setup Backbones. The student is initialized from Qwen3-Omni-30B-A3B-Thinking (Xu et al. , 2025c ) , whose acoustic encoder and LLM backbone are kept jointly trainable while the speech tokenizer is frozen. The teacher is Qwen3-235B-A22B-Thinking (Yang et al. , 2025 ) , held frozen throughout. The teacher reads x t x_{t} and the student reads x a x_{a} under the modality-paired schema of...",
+   "[body] ...lash-Preview, synthesizes audio via CosyVoice 3 (Du et al. , 2025 ) at 24 24 kHz, and filters with SenseVoice (SpeechTeam, 2024 ) ASR back-translation at WER \u2264 5 % \\!\\leq\\!5\\% . Tier-2 draws audio and captions from AudioCaps (Kim et al. , 2019 ) and Clotho v2.1 (Drossos et al. , 2019 ) , with captions reconstructed by Qwen3-Omni-30B-A3B-Captioner and human-verified on a 5 % 5\\% subset before caption\u2013question\u2013answer consistency filtering. Tier-3 is built on dyadic and multi-party spoken dialogues from IEMOCAP (Busso et al. , 2008 ) and MELD (Poria et al. , 2019 ) , augmented with prosody- and turn-level meta-captions. The offline warm-start SFT pass use...",
+   "[body] ...sample, AdamW with constant learning rate 2 \u00d7 10 \u2212 6 2\\!\\times\\!10^{-6} . Rollouts use vLLM (Kwon et al. , 2023 ) at temperature 1.0 1.0 . All runs are in the verl (Sheng et al. , 2025 ) framework on 32 \u00d7 32\\!\\times\\! NVIDIA H20. For a fair comparison, we additionally train two baselines, all initialized from the same Qwen3-Omni-30B-A3B-Thinking student checkpoint: (1) Standard SFT, fine-tuned on a supervised corpus in which each prompt is paired with a reasoning trace produced offline by the text-only teacher Qwen3-235B-A22B-Thinking together with the ground-truth answer, so that the student learns to imitate the teacher\u2019s chain-of-thought and to emit..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:1",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "X\u00b3-OPD uses Qwen3-235B-A22B-Thinking as the teacher model.",
+  "contexts": [
+   "[body] ...oustic events whose evidence is not recoverable from a transcript, and reasoning conditioned on paralinguistic cues such as prosody, hesitation, and emotional shifts in spoken dialogue. Therefore, closing the audio-text reasoning gap [...] 5 Experiments 5.1 Experimental Setup Backbones. The student is initialized from Qwen3-Omni-30B-A3B-Thinking (Xu et al. , 2025c ) , whose acoustic encoder and LLM backbone are kept jointly trainable while the speech tokenizer is frozen. The teacher is Qwen3-235B-A22B-Thinking (Yang et al. , 2025 ) , held frozen throughout. The teacher reads x t x_{t} and the student reads x a x_{a} under the modality-paired schema of...",
+   "[body] ...oken dialogue. Therefore, closing the audio-text reasoning gap [...] 5 Experiments 5.1 Experimental Setup Backbones. The student is initialized from Qwen3-Omni-30B-A3B-Thinking (Xu et al. , 2025c ) , whose acoustic encoder and LLM backbone are kept jointly trainable while the speech tokenizer is frozen. The teacher is Qwen3-235B-A22B-Thinking (Yang et al. , 2025 ) , held frozen throughout. The teacher reads x t x_{t} and the student reads x a x_{a} under the modality-paired schema of Section 4.1 . Training data. The three-tier corpus contains 27.8K Tier-1, 32K Tier-2, and 12K Tier-3 instances, fully shuffled at the batch level. Tier-1 takes text prompt...",
+   "[body] ...lash-Preview, synthesizes audio via CosyVoice 3 (Du et al. , 2025 ) at 24 24 kHz, and filters with SenseVoice (SpeechTeam, 2024 ) ASR back-translation at WER \u2264 5 % \\!\\leq\\!5\\% . Tier-2 draws audio and captions from AudioCaps (Kim et al. , 2019 ) and Clotho v2.1 (Drossos et al. , 2019 ) , with captions reconstructed by Qwen3-Omni-30B-A3B-Captioner and human-verified on a 5 % 5\\% subset before caption\u2013question\u2013answer consistency filtering. Tier-3 is built on dyadic and multi-party spoken dialogues from IEMOCAP (Busso et al. , 2008 ) and MELD (Poria et al. , 2019 ) , augmented with prosody- and turn-level meta-captions. The offline warm-start SFT pass use..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:2",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "MMSU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD is evaluated on MMSU benchmark across multiple dimensions.",
+  "contexts": [
+   "[body] ...round-truth answer, so that the student learns to imitate the teacher\u2019s chain-of-thought and to emit the correct final response; (2) Generalized Knowledge Distillation (GKD) (Tan et al. , 2023 ) , which optimizes the student policy against the same teacher under the forward KL divergence on on-policy student rollouts. MMSU MMAU BIG Bench Model Sem. Phon. Style Traits Sound Speech Music Audio \\rowcolor gray!15 Closed-Source LALMs GPT-4o-Audio (OpenAI, 2024 ) 59.7 41.6 21.4 39.7 64.6 66.7 56.3 88.5 Gemini-3-Flash (Comanici et al. , 2025 ) 70.2 53.6 38.5 46.1 75.4 80.6 71.0 80.8 \\rowcolor gray!15 Open-Weight LALMs Qwen2-Audio-Instruct (Xu et al. , 2025a )...",
+   "[body] ...king (Xu et al. , 2025c ) 81.8 73.2 65.2 42.7 85.7 81.5 74.9 87.9 \\rowcolor gray!15 Ablation Baselines SFT ( \u2112 off \\mathcal{L}_{\\mathrm{off}} ) 82.1 69.7 62.4 42.8 86.4 81.9 70.7 86.7 GKD 80.2 68.4 63.1 41.1 85.1 82.3 69.2 84.3 X 3 -OPD (ours) 83.7 72.1 64.2 42.9 88.3 82.9 72.4 93.6 Table 1: Main evaluation results on MMSU, MMAU, and BIG Bench Audio. MMSU evaluation dimensions include Semantics (Sem.), Phonology (Phon.), Style, and Traits. Bold indicates the best performance in each column. Evaluation benchmarks. We evaluate our framework across three levels of domain shift. The in-domain evaluation covers benchmarks that directly probe audio-grounded...",
+   "[body] ....2 65.2 42.7 85.7 81.5 74.9 87.9 \\rowcolor gray!15 Ablation Baselines SFT ( \u2112 off \\mathcal{L}_{\\mathrm{off}} ) 82.1 69.7 62.4 42.8 86.4 81.9 70.7 86.7 GKD 80.2 68.4 63.1 41.1 85.1 82.3 69.2 84.3 X 3 -OPD (ours) 83.7 72.1 64.2 42.9 88.3 82.9 72.4 93.6 Table 1: Main evaluation results on MMSU, MMAU, and BIG Bench Audio. MMSU evaluation dimensions include Semantics (Sem.), Phonology (Phon.), Style, and Traits. Bold indicates the best performance in each column. Evaluation benchmarks. We evaluate our framework across three levels of domain shift. The in-domain evaluation covers benchmarks that directly probe audio-grounded reasoning: MMSU (Wang et al. , 20..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:3",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "MMAU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD is evaluated on MMAU benchmark.",
+  "contexts": [
+   "[body] ...-truth answer, so that the student learns to imitate the teacher\u2019s chain-of-thought and to emit the correct final response; (2) Generalized Knowledge Distillation (GKD) (Tan et al. , 2023 ) , which optimizes the student policy against the same teacher under the forward KL divergence on on-policy student rollouts. MMSU MMAU BIG Bench Model Sem. Phon. Style Traits Sound Speech Music Audio \\rowcolor gray!15 Closed-Source LALMs GPT-4o-Audio (OpenAI, 2024 ) 59.7 41.6 21.4 39.7 64.6 66.7 56.3 88.5 Gemini-3-Flash (Comanici et al. , 2025 ) 70.2 53.6 38.5 46.1 75.4 80.6 71.0 80.8 \\rowcolor gray!15 Open-Weight LALMs Qwen2-Audio-Instruct (Xu et al. , 2025a ) 38.5...",
+   "[body] ...Xu et al. , 2025c ) 81.8 73.2 65.2 42.7 85.7 81.5 74.9 87.9 \\rowcolor gray!15 Ablation Baselines SFT ( \u2112 off \\mathcal{L}_{\\mathrm{off}} ) 82.1 69.7 62.4 42.8 86.4 81.9 70.7 86.7 GKD 80.2 68.4 63.1 41.1 85.1 82.3 69.2 84.3 X 3 -OPD (ours) 83.7 72.1 64.2 42.9 88.3 82.9 72.4 93.6 Table 1: Main evaluation results on MMSU, MMAU, and BIG Bench Audio. MMSU evaluation dimensions include Semantics (Sem.), Phonology (Phon.), Style, and Traits. Bold indicates the best performance in each column. Evaluation benchmarks. We evaluate our framework across three levels of domain shift. The in-domain evaluation covers benchmarks that directly probe audio-grounded reason...",
+   "[body] ...raits. Bold indicates the best performance in each column. Evaluation benchmarks. We evaluate our framework across three levels of domain shift. The in-domain evaluation covers benchmarks that directly probe audio-grounded reasoning: MMSU (Wang et al. , 2026 ) along its four axes (Semantics, Phonology, Style, Traits), MMAU (Sakshi et al. , 2024 ) on Sound/Speech/Music, and BIG Bench Audio aggregating acoustic QA, multi-event reasoning, audio-temporal grounding, and paralinguistic inference. We then stress-test intermediate reasoning quality on the held-out MMAR benchmark, where we evaluate two CoT-quality metrics, Rubrics and CRS . Finally, we evaluate..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:4",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "BIG Bench Audio",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD is evaluated on BIG Bench Audio benchmark.",
+  "contexts": [
+   "[body] ..., 2025c ) 81.8 73.2 65.2 42.7 85.7 81.5 74.9 87.9 \\rowcolor gray!15 Ablation Baselines SFT ( \u2112 off \\mathcal{L}_{\\mathrm{off}} ) 82.1 69.7 62.4 42.8 86.4 81.9 70.7 86.7 GKD 80.2 68.4 63.1 41.1 85.1 82.3 69.2 84.3 X 3 -OPD (ours) 83.7 72.1 64.2 42.9 88.3 82.9 72.4 93.6 Table 1: Main evaluation results on MMSU, MMAU, and BIG Bench Audio. MMSU evaluation dimensions include Semantics (Sem.), Phonology (Phon.), Style, and Traits. Bold indicates the best performance in each column. Evaluation benchmarks. We evaluate our framework across three levels of domain shift. The in-domain evaluation covers benchmarks that directly probe audio-grounded reasoning: MMSU...",
+   "[body] ...n. Evaluation benchmarks. We evaluate our framework across three levels of domain shift. The in-domain evaluation covers benchmarks that directly probe audio-grounded reasoning: MMSU (Wang et al. , 2026 ) along its four axes (Semantics, Phonology, Style, Traits), MMAU (Sakshi et al. , 2024 ) on Sound/Speech/Music, and BIG Bench Audio aggregating acoustic QA, multi-event reasoning, audio-temporal grounding, and paralinguistic inference. We then stress-test intermediate reasoning quality on the held-out MMAR benchmark, where we evaluate two CoT-quality metrics, Rubrics and CRS . Finally, we evaluate out-of-distribution generalization on benchmarks with s...",
+   "[abstract] ...eech, audio-event reasoning grounded in complex acoustic scenes, and spoken-dialogue reasoning involving paralinguistic cues. This design extends cross-modal distillation beyond textually recoverable content to reasoning grounded in non-linguistic events, prosody, and conversational context. Experiments on MMSU, MMAU, BIG Bench Audio, and MMAR demonstrate that X$^3$-OPD substantially improves audio-grounded reasoning and chain-of-thought quality while largely preserving the model's existing capabilities under domain shift...."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:5",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "MMAR",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD is tested on MMAR for CoT-quality metrics.",
+  "contexts": [
+   "[body] ...g et al. , 2026 ) along its four axes (Semantics, Phonology, Style, Traits), MMAU (Sakshi et al. , 2024 ) on Sound/Speech/Music, and BIG Bench Audio aggregating acoustic QA, multi-event reasoning, audio-temporal grounding, and paralinguistic inference. We then stress-test intermediate reasoning quality on the held-out MMAR benchmark, where we evaluate two CoT-quality metrics, Rubrics and CRS . Finally, we evaluate out-of-distribution generalization on benchmarks with significant domain shifts, including the audio-visual WorldSense (Xu et al. , 2025c ) , video reasoning DailyOmni. 5.2 Main Results Table 5.1 contrasts X 3 -OPD with state-of-the-art close...",
+   "[body] ...te out-of-distribution generalization on benchmarks with significant domain shifts, including the audio-visual WorldSense (Xu et al. , 2025c ) , video reasoning DailyOmni. 5.2 Main Results Table 5.1 contrasts X 3 -OPD with state-of-the-art closed- and open-source systems, as well as controlled in-house baselines. We summarize our core observations below. Significant Enhancements in Cross-Modal Reasoning. Built upon the Qwen3-Omni-Thinking baseline, X 3 -OPD demonstrates substantial improvements in complex audio-grounded reasoning. Compared to its base model, X 3 -OPD not only pushes the BI...",
+   "[abstract] ...soning grounded in complex acoustic scenes, and spoken-dialogue reasoning involving paralinguistic cues. This design extends cross-modal distillation beyond textually recoverable content to reasoning grounded in non-linguistic events, prosody, and conversational context. Experiments on MMSU, MMAU, BIG Bench Audio, and MMAR demonstrate that X$^3$-OPD substantially improves audio-grounded reasoning and chain-of-thought quality while largely preserving the model's existing capabilities under domain shift...."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:6",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "WorldSense",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD is evaluated on WorldSense for out-of-distribution generalization.",
+  "contexts": [
+   "[body] ...poral grounding, and paralinguistic inference. We then stress-test intermediate reasoning quality on the held-out MMAR benchmark, where we evaluate two CoT-quality metrics, Rubrics and CRS . Finally, we evaluate out-of-distribution generalization on benchmarks with significant domain shifts, including the audio-visual WorldSense (Xu et al. , 2025c ) , video reasoning DailyOmni. 5.2 Main Results Table 5.1 contrasts X 3 -OPD with state-of-the-art closed- and open-source systems, as well as controlled in-house baselines. We summarize our core observations below. Significant Enhancements in Cross-Modal Reasoning. Built upon the Qwen3-Omni-Thinking baseline..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:7",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "AudioCaps",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD training uses AudioCaps for Tier-2 audio and captions.",
+  "contexts": [
+   "[body] ...al. , 2025 ) and NaturalReasoning (Yuan et al. , 2025 ) , rewrites them into spoken style with Gemini-3-Flash-Preview, synthesizes audio via CosyVoice 3 (Du et al. , 2025 ) at 24 24 kHz, and filters with SenseVoice (SpeechTeam, 2024 ) ASR back-translation at WER \u2264 5 % \\!\\leq\\!5\\% . Tier-2 draws audio and captions from AudioCaps (Kim et al. , 2019 ) and Clotho v2.1 (Drossos et al. , 2019 ) , with captions reconstructed by Qwen3-Omni-30B-A3B-Captioner and human-verified on a 5 % 5\\% subset before caption\u2013question\u2013answer consistency filtering. Tier-3 is built on dyadic and multi-party spoken dialogues from IEMOCAP (Busso et al. , 2008 ) and MELD (Poria et..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:8",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "Clotho",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD training uses Clotho v2.1 for Tier-2 audio and captions.",
+  "contexts": [
+   "[body] ...Yuan et al. , 2025 ) , rewrites them into spoken style with Gemini-3-Flash-Preview, synthesizes audio via CosyVoice 3 (Du et al. , 2025 ) at 24 24 kHz, and filters with SenseVoice (SpeechTeam, 2024 ) ASR back-translation at WER \u2264 5 % \\!\\leq\\!5\\% . Tier-2 draws audio and captions from AudioCaps (Kim et al. , 2019 ) and Clotho v2.1 (Drossos et al. , 2019 ) , with captions reconstructed by Qwen3-Omni-30B-A3B-Captioner and human-verified on a 5 % 5\\% subset before caption\u2013question\u2013answer consistency filtering. Tier-3 is built on dyadic and multi-party spoken dialogues from IEMOCAP (Busso et al. , 2008 ) and MELD (Poria et al. , 2019 ) , augmented with pros..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:9",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "IEMOCAP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD training uses IEMOCAP for Tier-3 spoken dialogue data.",
+  "contexts": [
+   "[body] ...raws audio and captions from AudioCaps (Kim et al. , 2019 ) and Clotho v2.1 (Drossos et al. , 2019 ) , with captions reconstructed by Qwen3-Omni-30B-A3B-Captioner and human-verified on a 5 % 5\\% subset before caption\u2013question\u2013answer consistency filtering. Tier-3 is built on dyadic and multi-party spoken dialogues from IEMOCAP (Busso et al. , 2008 ) and MELD (Poria et al. , 2019 ) , augmented with prosody- and turn-level meta-captions. The offline warm-start SFT pass uses a 12K subset sampled under a tier ratio of 5 : 3 : 2 5\\!:\\!3\\!:\\!2 , deliberately over-weighting Tier-1 and Tier-3 to anchor the model\u2019s logical reasoning format and sensitivity to par..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:10",
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "object": "MELD",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD training uses MELD for Tier-3 spoken dialogue data.",
+  "contexts": [
+   "[body] ...aps (Kim et al. , 2019 ) and Clotho v2.1 (Drossos et al. , 2019 ) , with captions reconstructed by Qwen3-Omni-30B-A3B-Captioner and human-verified on a 5 % 5\\% subset before caption\u2013question\u2013answer consistency filtering. Tier-3 is built on dyadic and multi-party spoken dialogues from IEMOCAP (Busso et al. , 2008 ) and MELD (Poria et al. , 2019 ) , augmented with prosody- and turn-level meta-captions. The offline warm-start SFT pass uses a 12K subset sampled under a tier ratio of 5 : 3 : 2 5\\!:\\!3\\!:\\!2 , deliberately over-weighting Tier-1 and Tier-3 to anchor the model\u2019s logical reasoning format and sensitivity to paralinguistic cues before the RL stag..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:11",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "Qwen3-VL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VCSD is evaluated on Qwen3-VL model family at multiple scales.",
+  "contexts": [
+   "[body] ...le remaining unlikely under the original image. We therefore assign complementary roles to the two teacher predictions: the original-image distribution identifies plausible candidates, while the conditioning contrast sharpens their relative pr [...] 4 Experiments 4.1 Setup Models and training data. We evaluate VCSD on Qwen3-VL (Bai et al. , 2025 ) at 2B, 4B, and 8B and on Qwen3.5 (Qwen Team, 2026 ) at 2B, 4B, and 9B. All post-training methods are trained on the ViRL39K single-image dataset (Wang et al. , 2026a ) . Baselines. Each model block compares the unmodified base model, the published answer-hint OPSD method (Zhao et al. , 2026 ) , and VCSD. The...",
+   "[body] ...per prompt, a learning rate of 2 \u00d7 10 \u2212 6 2\\times 10^{-6} , and 10 10 warmup steps followed by a constant learning rate. All models use a fixed budget of 90 90 optimization steps on 8 8 NVIDIA B200 GPUs. 4.2 Main results Table 1: Main results on seven benchmarks. We compare the base model, OPSD, and VCSD across three Qwen3-VL and three Qwen3.5 model scales. Acc. denotes the average accuracy over the seven evaluation benchmarks. VCSD consistently outperforms both the base model and OPSD, improving the average accuracy by + 1.86 % +1.86\\% to + 4.77 % +4.77\\% over the corresponding base models while achieving the best overall performance across nearly al...",
+   "[body] ...he base model and OPSD, improving the average accuracy by + 1.86 % +1.86\\% to + 4.77 % +4.77\\% over the corresponding base models while achieving the best overall performance across nearly all model scales. The highest score in each column is shown in bold. Model Method BLINK MMStar V \u2217 MathVista HR4K HR8K HalluB Acc. Qwen3-VL-2B Base 53.02 57.47 72.77 62.50 71.13 67.38 51.60 62.27 OPSD 56.02 60.73 75.92 64.70 76.25 71.25 49.36 64.89 VCSD (ours) 57.29 63.73 78.01 66.10 77.25 73.25 53.68 67.04 (+4.77) Qwen3-VL-4B Base 67.18 68.93 80.63 73.90 79.88 73.75 54.81 71.30 OPSD 64.97 68.73 83.77 74.10 78.12 75.63 54.50 71.40 VCSD (ours) 66.86 68.73 83.77 74.90..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:12",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "Qwen3.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VCSD is evaluated on Qwen3.5 model family at multiple scales.",
+  "contexts": [
+   "[body] ...efore assign complementary roles to the two teacher predictions: the original-image distribution identifies plausible candidates, while the conditioning contrast sharpens their relative pr [...] 4 Experiments 4.1 Setup Models and training data. We evaluate VCSD on Qwen3-VL (Bai et al. , 2025 ) at 2B, 4B, and 8B and on Qwen3.5 (Qwen Team, 2026 ) at 2B, 4B, and 9B. All post-training methods are trained on the ViRL39K single-image dataset (Wang et al. , 2026a ) . Baselines. Each model block compares the unmodified base model, the published answer-hint OPSD method (Zhao et al. , 2026 ) , and VCSD. The OPSD target model is conditioned on the reference answe...",
+   "[body] ...ning rate of 2 \u00d7 10 \u2212 6 2\\times 10^{-6} , and 10 10 warmup steps followed by a constant learning rate. All models use a fixed budget of 90 90 optimization steps on 8 8 NVIDIA B200 GPUs. 4.2 Main results Table 1: Main results on seven benchmarks. We compare the base model, OPSD, and VCSD across three Qwen3-VL and three Qwen3.5 model scales. Acc. denotes the average accuracy over the seven evaluation benchmarks. VCSD consistently outperforms both the base model and OPSD, improving the average accuracy by + 1.86 % +1.86\\% to + 4.77 % +4.77\\% over the corresponding base models while achieving the best overall performance across nearly all model scales. The...",
+   "[body] ...54.81 71.30 OPSD 64.97 68.73 83.77 74.10 78.12 75.63 54.50 71.40 VCSD (ours) 66.86 68.73 83.77 74.90 80.50 77.00 60.37 73.16 (+1.86) Qwen3-VL-8B Base 69.65 70.67 82.72 76.50 77.38 71.12 59.51 72.51 OPSD 67.81 70.20 85.34 77.30 81.12 74.62 59.64 73.72 VCSD (ours) 70.38 74.07 87.43 77.90 84.12 79.25 60.69 76.26 (+3.75) Qwen3.5-2B Base 59.02 67.67 83.25 74.10 73.75 72.25 50.22 68.61 OPSD 59.44 67.00 79.58 69.70 75.00 68.75 43.76 66.18 VCSD (ours) 64.86 69.40 83.77 76.50 78.50 70.75 56.77 71.51 (+2.90) Qwen3.5-4B Base 64.97 73.00 82.20 81.70 81.38 74.00 60.36 73.94 OPSD 64.44 71.40 84.29 77.60 82.75 78.75 58.22 73.92 VCSD (ours) 66.70 75.00 84.82 82.20 85..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:13",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "ViRL39K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "VCSD is trained on the ViRL39K single-image dataset.",
+  "contexts": [
+   "[body] ...ution identifies plausible candidates, while the conditioning contrast sharpens their relative pr [...] 4 Experiments 4.1 Setup Models and training data. We evaluate VCSD on Qwen3-VL (Bai et al. , 2025 ) at 2B, 4B, and 8B and on Qwen3.5 (Qwen Team, 2026 ) at 2B, 4B, and 9B. All post-training methods are trained on the ViRL39K single-image dataset (Wang et al. , 2026a ) . Baselines. Each model block compares the unmodified base model, the published answer-hint OPSD method (Zhao et al. , 2026 ) , and VCSD. The OPSD target model is conditioned on the reference answer while the student receives only the original question and image. VCSD retains the on-poli...",
+   "[abstract] ...token-wise log-probability difference highlights candidates whose likelihood is specifically increased by the instance-level visual content. We use this contrast to sharpen the teacher's original-image distribution within its plausible support, and distill the resulting full-distribution target into the student. Using ViRL39K dataset, VCSD consistently outperforms matched OPSD across Qwen3-VL and Qwen3.5 models. For example, on Qwen3-VL, it improves the seven-benchmark aggregate from $62.27\\% \\rightarrow 67.04\\%$ at 2B, $71.30\\% \\rightarrow 73.16\\%$ at 4B, and $72.51\\% \\rightarrow 76.26\\%$ at 8B. Furthermore, VCSD requires no external teacher, privileg..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:14",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "BLINK",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "VCSD is evaluated on BLINK for general visual perception.",
+  "contexts": [
+   "[body] ...reference answer while the student receives only the original question and image. VCSD retains the on-policy rollout structure but constructs its target from the paired original and content-erased image conditions without consuming the answer. Benchmarks and aggregate metric. We evaluate general visual perception with BLINK (Fu et al. , 2024 ) and MMStar (Chen et al. , 2024 ) , visual mathematics with MathVista (Lu et al. , 2024 ) , fine-grained and high-resolution perception with V \u2217 Bench (Wu and Xie, 2023 ) and HRBench4K/8K (Wang et al. , 2025b ) , and hallucination with HallusionBench (Guan et al. , 2024 ) . The reported Acc is the unweighted mean...",
+   "[body] ...benchmarks. VCSD consistently outperforms both the base model and OPSD, improving the average accuracy by + 1.86 % +1.86\\% to + 4.77 % +4.77\\% over the corresponding base models while achieving the best overall performance across nearly all model scales. The highest score in each column is shown in bold. Model Method BLINK MMStar V \u2217 MathVista HR4K HR8K HalluB Acc. Qwen3-VL-2B Base 53.02 57.47 72.77 62.50 71.13 67.38 51.60 62.27 OPSD 56.02 60.73 75.92 64.70 76.25 71.25 49.36 64.89 VCSD (ours) 57.29 63.73 78.01 66.10 77.25 73.25 53.68 67.04 (+4.77) Qwen3-VL-4B Base 67.18 68.93 80.63 73.90 79.88 73.75 54.81 71.30 OPSD 64.97 68.73 83.77 74.10 78.12 75.63...",
+   "[body] ...6 78.80 81.50 78.12 56.80 74.73 VCSD (ours) 72.23 78.87 85.86 85.00 87.00 81.50 64.19 79.24 (+4.27) Table 1 reports the primary comparison across two Qwen model families and three scales per family. VCSD improves over answer-hint OPSD across visual capabilities. On Qwen3-VL-2B, VCSD improves every benchmark over OPSD: BLINK + 1.27 % +1.27\\% , MMStar + 3.00 % +3.00\\% , V \u2217 Bench + 2.09 % +2.09\\% , MathVista + 1.40 % +1.40\\% , HRBench4K + 1.00 % +1.00\\% , HRBench8K + 2.00 % +2.00\\% , and HallusionBench + 4.32 % +4.32\\% . This yields a + 2.15 % +2.15\\% aggregate gain, with improvements spanning general perception, visual mathematics, fine-grained and high..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:15",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "MMStar",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "VCSD is evaluated on MMStar for general visual perception.",
+  "contexts": [
+   "[body] ...dent receives only the original question and image. VCSD retains the on-policy rollout structure but constructs its target from the paired original and content-erased image conditions without consuming the answer. Benchmarks and aggregate metric. We evaluate general visual perception with BLINK (Fu et al. , 2024 ) and MMStar (Chen et al. , 2024 ) , visual mathematics with MathVista (Lu et al. , 2024 ) , fine-grained and high-resolution perception with V \u2217 Bench (Wu and Xie, 2023 ) and HRBench4K/8K (Wang et al. , 2025b ) , and hallucination with HallusionBench (Guan et al. , 2024 ) . The reported Acc is the unweighted mean over these seven benchmarks; H...",
+   "[body] ...marks. VCSD consistently outperforms both the base model and OPSD, improving the average accuracy by + 1.86 % +1.86\\% to + 4.77 % +4.77\\% over the corresponding base models while achieving the best overall performance across nearly all model scales. The highest score in each column is shown in bold. Model Method BLINK MMStar V \u2217 MathVista HR4K HR8K HalluB Acc. Qwen3-VL-2B Base 53.02 57.47 72.77 62.50 71.13 67.38 51.60 62.27 OPSD 56.02 60.73 75.92 64.70 76.25 71.25 49.36 64.89 VCSD (ours) 57.29 63.73 78.01 66.10 77.25 73.25 53.68 67.04 (+4.77) Qwen3-VL-4B Base 67.18 68.93 80.63 73.90 79.88 73.75 54.81 71.30 OPSD 64.97 68.73 83.77 74.10 78.12 75.63 54.50...",
+   "[body] ...74.73 VCSD (ours) 72.23 78.87 85.86 85.00 87.00 81.50 64.19 79.24 (+4.27) Table 1 reports the primary comparison across two Qwen model families and three scales per family. VCSD improves over answer-hint OPSD across visual capabilities. On Qwen3-VL-2B, VCSD improves every benchmark over OPSD: BLINK + 1.27 % +1.27\\% , MMStar + 3.00 % +3.00\\% , V \u2217 Bench + 2.09 % +2.09\\% , MathVista + 1.40 % +1.40\\% , HRBench4K + 1.00 % +1.00\\% , HRBench8K + 2.00 % +2.00\\% , and HallusionBench + 4.32 % +4.32\\% . This yields a + 2.15 % +2.15\\% aggregate gain, with improvements spanning general perception, visual mathematics, fine-grained and high-resolution perception, a..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:16",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "MathVista",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "VCSD is evaluated on MathVista for visual mathematics.",
+  "contexts": [
+   "[body] ...D retains the on-policy rollout structure but constructs its target from the paired original and content-erased image conditions without consuming the answer. Benchmarks and aggregate metric. We evaluate general visual perception with BLINK (Fu et al. , 2024 ) and MMStar (Chen et al. , 2024 ) , visual mathematics with MathVista (Lu et al. , 2024 ) , fine-grained and high-resolution perception with V \u2217 Bench (Wu and Xie, 2023 ) and HRBench4K/8K (Wang et al. , 2025b ) , and hallucination with HallusionBench (Guan et al. , 2024 ) . The reported Acc is the unweighted mean over these seven benchmarks; HallusionBench entry first averages aAcc, fAcc, and qAcc...",
+   "[body] ...consistently outperforms both the base model and OPSD, improving the average accuracy by + 1.86 % +1.86\\% to + 4.77 % +4.77\\% over the corresponding base models while achieving the best overall performance across nearly all model scales. The highest score in each column is shown in bold. Model Method BLINK MMStar V \u2217 MathVista HR4K HR8K HalluB Acc. Qwen3-VL-2B Base 53.02 57.47 72.77 62.50 71.13 67.38 51.60 62.27 OPSD 56.02 60.73 75.92 64.70 76.25 71.25 49.36 64.89 VCSD (ours) 57.29 63.73 78.01 66.10 77.25 73.25 53.68 67.04 (+4.77) Qwen3-VL-4B Base 67.18 68.93 80.63 73.90 79.88 73.75 54.81 71.30 OPSD 64.97 68.73 83.77 74.10 78.12 75.63 54.50 71.40 VCSD...",
+   "[body] ...64.19 79.24 (+4.27) Table 1 reports the primary comparison across two Qwen model families and three scales per family. VCSD improves over answer-hint OPSD across visual capabilities. On Qwen3-VL-2B, VCSD improves every benchmark over OPSD: BLINK + 1.27 % +1.27\\% , MMStar + 3.00 % +3.00\\% , V \u2217 Bench + 2.09 % +2.09\\% , MathVista + 1.40 % +1.40\\% , HRBench4K + 1.00 % +1.00\\% , HRBench8K + 2.00 % +2.00\\% , and HallusionBench + 4.32 % +4.32\\% . This yields a + 2.15 % +2.15\\% aggregate gain, with improvements spanning general perception, visual mathematics, fine-grained and high-resolution perception, and hallucination rather than being driven by a single b..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:17",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "V* Bench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "VCSD is evaluated on V* Bench for fine-grained and high-resolution perception.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:18",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "HRBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "VCSD is evaluated on HRBench for high-resolution perception.",
+  "contexts": [
+   "[body] ...ge conditions without consuming the answer. Benchmarks and aggregate metric. We evaluate general visual perception with BLINK (Fu et al. , 2024 ) and MMStar (Chen et al. , 2024 ) , visual mathematics with MathVista (Lu et al. , 2024 ) , fine-grained and high-resolution perception with V \u2217 Bench (Wu and Xie, 2023 ) and HRBench4K/8K (Wang et al. , 2025b ) , and hallucination with HallusionBench (Guan et al. , 2024 ) . The reported Acc is the unweighted mean over these seven benchmarks; HallusionBench entry first averages aAcc, fAcc, and qAcc. Training configuration. Unless otherwise stated, VCSD uses \u03b1 = 1.0 \\alpha=1.0 , \u03b2 = 0.1 \\beta=0.1 , and T KD = 2...",
+   "[body] ...eports the primary comparison across two Qwen model families and three scales per family. VCSD improves over answer-hint OPSD across visual capabilities. On Qwen3-VL-2B, VCSD improves every benchmark over OPSD: BLINK + 1.27 % +1.27\\% , MMStar + 3.00 % +3.00\\% , V \u2217 Bench + 2.09 % +2.09\\% , MathVista + 1.40 % +1.40\\% , HRBench4K + 1.00 % +1.00\\% , HRBench8K + 2.00 % +2.00\\% , and HallusionBench + 4.32 % +4.32\\% . This yields a + 2.15 % +2.15\\% aggregate gain, with improvements spanning general perception, visual mathematics, fine-grained and high-resolution perception, and hallucination rather than being driven by a single benchmark. The advantage persi...",
+   "[body] ...across two Qwen model families and three scales per family. VCSD improves over answer-hint OPSD across visual capabilities. On Qwen3-VL-2B, VCSD improves every benchmark over OPSD: BLINK + 1.27 % +1.27\\% , MMStar + 3.00 % +3.00\\% , V \u2217 Bench + 2.09 % +2.09\\% , MathVista + 1.40 % +1.40\\% , HRBench4K + 1.00 % +1.00\\% , HRBench8K + 2.00 % +2.00\\% , and HallusionBench + 4.32 % +4.32\\% . This yields a + 2.15 % +2.15\\% aggregate gain, with improvements spanning general perception, visual mathematics, fine-grained and high-resolution perception, and hallucination rather than being driven by a single benchmark. The advantage persists across model families and..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:19",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "HallusionBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "VCSD is evaluated on HallusionBench for hallucination assessment.",
+  "contexts": [
+   "[body] ...gregate metric. We evaluate general visual perception with BLINK (Fu et al. , 2024 ) and MMStar (Chen et al. , 2024 ) , visual mathematics with MathVista (Lu et al. , 2024 ) , fine-grained and high-resolution perception with V \u2217 Bench (Wu and Xie, 2023 ) and HRBench4K/8K (Wang et al. , 2025b ) , and hallucination with HallusionBench (Guan et al. , 2024 ) . The reported Acc is the unweighted mean over these seven benchmarks; HallusionBench entry first averages aAcc, fAcc, and qAcc. Training configuration. Unless otherwise stated, VCSD uses \u03b1 = 1.0 \\alpha=1.0 , \u03b2 = 0.1 \\beta=0.1 , and T KD = 2 T_{\\mathrm{KD}}=2 , with uniform response-position weights. T...",
+   "[body] ..., 2024 ) , visual mathematics with MathVista (Lu et al. , 2024 ) , fine-grained and high-resolution perception with V \u2217 Bench (Wu and Xie, 2023 ) and HRBench4K/8K (Wang et al. , 2025b ) , and hallucination with HallusionBench (Guan et al. , 2024 ) . The reported Acc is the unweighted mean over these seven benchmarks; HallusionBench entry first averages aAcc, fAcc, and qAcc. Training configuration. Unless otherwise stated, VCSD uses \u03b1 = 1.0 \\alpha=1.0 , \u03b2 = 0.1 \\beta=0.1 , and T KD = 2 T_{\\mathrm{KD}}=2 , with uniform response-position weights. The EMA target uses an update rate of \u03c1 = 0.05 \\rho=0.05 . We optimize the full-vocabulary forward-KL objecti...",
+   "[body] ...nd three scales per family. VCSD improves over answer-hint OPSD across visual capabilities. On Qwen3-VL-2B, VCSD improves every benchmark over OPSD: BLINK + 1.27 % +1.27\\% , MMStar + 3.00 % +3.00\\% , V \u2217 Bench + 2.09 % +2.09\\% , MathVista + 1.40 % +1.40\\% , HRBench4K + 1.00 % +1.00\\% , HRBench8K + 2.00 % +2.00\\% , and HallusionBench + 4.32 % +4.32\\% . This yields a + 2.15 % +2.15\\% aggregate gain, with improvements spanning general perception, visual mathematics, fine-grained and high-resolution perception, and hallucination rather than being driven by a single benchmark. The advantage persists across model families and scales. Across all six configura..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:20",
+  "page": "arxiv:2607.21556v1",
+  "subject": "VCSD",
+  "object": "OPSD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "VCSD is compared against OPSD baseline method across all benchmarks.",
+  "contexts": [
+   "[body] ...ed from its own policy while using an external teacher for dense token-level supervision. This aligns training with the student\u2019s inference-time trajectories, but typically requires a stronger teacher, increasing post-training cost and complexity (Liu et al. , 2026 ; Yoon et al. , 2026 ) . On-policy self-distillation (OPSD) removes the external teacher by deriving targets from the same model, often through an exponential moving average (EMA) teacher. However, when the student and self-teacher receive the same information at the same prefix, the target may add little beyond the student\u2019s current prediction. Thus, on-policy sampling determines where lear...",
+   "[body] ...oving average (EMA) teacher. However, when the student and self-teacher receive the same information at the same prefix, the target may add little beyond the student\u2019s current prediction. Thus, on-policy sampling determines where learning occurs, but not what additional supervision the self-teacher provides. Effective OPSD still requires a teacher\u2013student asymmetry that makes the self-teacher more informative than the student. Existing methods construct this asymmetry through auxiliary information that is available to the self-teacher but not to the student, as illustrated in Figure 1 . For language reasoning tasks, the teacher may be conditioned on pr...",
+   "[body] ...ing data. We evaluate VCSD on Qwen3-VL (Bai et al. , 2025 ) at 2B, 4B, and 8B and on Qwen3.5 (Qwen Team, 2026 ) at 2B, 4B, and 9B. All post-training methods are trained on the ViRL39K single-image dataset (Wang et al. , 2026a ) . Baselines. Each model block compares the unmodified base model, the published answer-hint OPSD method (Zhao et al. , 2026 ) , and VCSD. The OPSD target model is conditioned on the reference answer while the student receives only the original question and image. VCSD retains the on-policy rollout structure but constructs its target from the paired original and content-erased image conditions without consuming the answer. Benchm..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:21",
+  "page": "arxiv:2607.21559v1",
+  "subject": "consensus anomaly detection",
+  "object": "Isolation Forest",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework integrates Isolation Forest as one of multiple anomaly detection algorithms.",
+  "contexts": [
+   "[body] ...laria activity at the provincial level and integrated into national surveillance dashboards [ 31 ] . Similar approaches have also been applied to respiratory disease surveillance using primary healthcare records and transformer-based frameworks for COVID-19 monitoring [ 18 ] . Among the most widely used algorithms are Isolation Forest, which isolates anomalous observations by exploiting the property that anomalies are relatively few and distinct; Local Outlier Factor, which identifies observations with substantially lower local density than their neighbours; autoencoders, which detect anomalies through elevated reconstruction error after learning a com..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:22",
+  "page": "arxiv:2607.21559v1",
+  "subject": "consensus anomaly detection",
+  "object": "Local Outlier Factor",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework integrates Local Outlier Factor as one of multiple anomaly detection algorithms.",
+  "contexts": [
+   "[body] ...een applied to respiratory disease surveillance using primary healthcare records and transformer-based frameworks for COVID-19 monitoring [ 18 ] . Among the most widely used algorithms are Isolation Forest, which isolates anomalous observations by exploiting the property that anomalies are relatively few and distinct; Local Outlier Factor, which identifies observations with substantially lower local density than their neighbours; autoencoders, which detect anomalies through elevated reconstruction error after learning a compressed representation of normal behaviour; and Elliptic Envelope, which identifies observations with low probability under an assu..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:23",
+  "page": "arxiv:2607.21559v1",
+  "subject": "consensus anomaly detection",
+  "object": "Elliptic Envelope",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework integrates Elliptic Envelope as one of multiple anomaly detection algorithms.",
+  "contexts": [
+   "[body] ...g the property that anomalies are relatively few and distinct; Local Outlier Factor, which identifies observations with substantially lower local density than their neighbours; autoencoders, which detect anomalies through elevated reconstruction error after learning a compressed representation of normal behaviour; and Elliptic Envelope, which identifies observations with low probability under an assumed multivariate Gaussian distribution. Because malaria transmission exhibits multiple temporal behaviours, including abrupt surges, persistent departures from seasonal expectations, gradual changes in long-term transmission intensity, and age-specific vari..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:24",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "Epilepsy",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TimePNS is evaluated on the Epilepsy dataset from UCR Archive.",
+  "contexts": [
+   "[body] ...23 ) : FreqShapes, SeqComb-MV, and Low-VAR. These datasets are carefully designed to cover diverse temporal dynamics in multivariate settings, where correctly identifying salient features at different timesteps is non-trivial. For real-world evaluation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:25",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "ERing",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TimePNS is evaluated on the ERing dataset from UCR Archive.",
+  "contexts": [
+   "[body] ...he model actually relies on. When applied to new time series data, such fragile correlations may no longer persist, making these explanations unreliable under distribution shift (Yang et al. , 2023 ; Sch\u00f6lkopf et al. , 2021 ) . In contrast, the complementary notion of necessity provides an additional criterion for filtering out correlated but non-essential subsequences. In Pearl\u2019s framework, necessity is captured through a counterfactual \u2018what-if\u2019 question: would the outcome fail to occur if the factor of interest were absent (Pearl, 2009 ) ? This counterfactual view sharpens the notion of time series explanation: a factor is not explanatory simply bec...",
+   "[body] ...qShapes, SeqComb-MV, and Low-VAR. These datasets are carefully designed to cover diverse temporal dynamics in multivariate settings, where correctly identifying salient features at different timesteps is non-trivial. For real-world evaluation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based meth..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:26",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "ArticularyWordRecognition",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TimePNS is evaluated on the ArticularyWordRecognition dataset from UCR Archive.",
+  "contexts": [
+   "[body] ...qComb-MV, and Low-VAR. These datasets are carefully designed to cover diverse temporal dynamics in multivariate settings, where correctly identifying salient features at different timesteps is non-trivial. For real-world evaluation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, includ..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:27",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "TimeX",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against TimeX baseline method.",
+  "contexts": [
+   "[body] ...s non-trivial. For real-world evaluation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets...",
+   "[body] ...valuation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated sali...",
+   "[body] ...ng and localization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods can be effective when the synthetic signal is clean and explicit. Nevertheless, TimePNS delivers the most consistent AUPRC gains, which is important for identifying compact and precise explanatory subsequences. For real-world datasets, wh..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:28",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "TimeX++",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against TimeX++ baseline method.",
+  "contexts": [
+   "[body] ...valuation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated sali...",
+   "[body] ...alization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods can be effective when the synthetic signal is clean and explicit. Nevertheless, TimePNS delivers the most consistent AUPRC gains, which is important for identifying compact and precise explanatory subsequences. For real-world datasets, where ground..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:29",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "Dynamask",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against Dynamask baseline method.",
+  "contexts": [
+   "[body] ...s from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated saliency maps with the ground-truth..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:30",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "CORTX",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against CORTX baseline method.",
+  "contexts": [
+   "[body] ...n (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated saliency maps with the ground-truth predictive regions specified by the data-generating process. These regions serve as suffic...",
+   "[body] ...quality on synthetic datasets with ground-truth saliency. TimePNS achieves the best AUPRC on all three datasets and the best AUP on SeqComb-MV and FreqShape, showing that the proposed necessity-aware refinement improves the ranking and localization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods can be ef...",
+   "[body] ...hree datasets and the best AUP on SeqComb-MV and FreqShape, showing that the proposed necessity-aware refinement improves the ranking and localization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods can be effective when the synthetic signal is clean and explicit. Nevertheless, TimePNS delivers the most c..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:31",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "WinIT",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against WinIT baseline method.",
+  "contexts": [
+   "[body] ...temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated saliency maps with the ground-truth predictive regions specified by the data-generating process. These regions serve as sufficient and necessary explanatory s...",
+   "[body] ...nation quality on synthetic datasets with ground-truth saliency. TimePNS achieves the best AUPRC on all three datasets and the best AUP on SeqComb-MV and FreqShape, showing that the proposed necessity-aware refinement improves the ranking and localization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods ca..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:32",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "SGT+GRAD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against SGT+GRAD baseline method.",
+  "contexts": [
+   "[body] ...Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated saliency maps with the ground-truth predictive regions specified by the data-generating process. These regions serve as sufficient and necessary explanatory signals. Following Crabb\u00e9 and Van..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:33",
+  "page": "arxiv:2607.21577v1",
+  "subject": "defect detection system",
+  "object": "YOLO",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "The paper addresses training challenges faced by baseline models such as YOLO.",
+  "contexts": [
+   "[abstract] ...articularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity of real-world industrial defects images. To overcome this limitation, this paper introduces a novel synthetic data generation framework tailored for rotogravure printing quality control. The proposed pipeline automatically generates high-fidelity images of specific p..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:34",
+  "page": "arxiv:2607.21577v1",
+  "subject": "defect detection system",
+  "object": "RFDETR",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework trains a state-of-the-art RFDETR object-detection model on synthetic data.",
+  "contexts": [
+   "[abstract] ...ipeline automatically generates high-fidelity images of specific printing defects (creases, streaks, misregistration, etc.) and outputs corresponding bounding boxes and annotations. To validate the framework, a synthetic dataset of 7533 images was generated and used to train the state-of-the-art object-detection model RFDETR. Experimental results demonstrate that the model trained on our synthetic data achieves a Mean Average Precision (mAP) of 80.9\\% on real industrial testing samples. This framework provides a zero-cost, rapid-deployment solution for automating defect inspection in printing lines without requiring massive manual data collection...."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:35",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "Concrete",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "NAP is validated on the UCI Concrete dataset.",
+  "contexts": [
+   "[body] ...ed at the end of the previous paragraph. It treats each neuron as an atom in the sense of Fokou\u00e9 ( 2008 ) , assigns it a posterior inclusion probability through a spike-and-slab variational posterior, and selects the final architecture by identifying the most likely layer size and retaining the most prevalent neurons. Concretely, the spike-and-slab Independent Gaussian prior of Jantre et al. ( 2023 ) provides the variational machinery for computing neuron-level inclusion probabilities within a feedforward network, while the Bayesian Lottery Ticket initialises the procedure from a compressed, well-conditioned subnetwork rather than a redundant dense one...",
+   "[abstract] ...t variational training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignora..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:36",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "YearPredictionMSD",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "NAP is validated on the UCI YearPredictionMSD dataset.",
+  "contexts": [
+   "[abstract] ...nal training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignorance accoun..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:37",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "MNIST",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "NAP is evaluated on MNIST for image classification.",
+  "contexts": [
+   "[abstract] ...d Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignorance accounts for only 3 to 4% of total...",
+   "[abstract] ...model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignorance accounts for only 3 to 4% of total predictive variance across all experiments, and regression reliability diagrams confirm a near-nominal predictive interval coverage (93.4% observed against a 95% target). These..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:38",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "Lottery Ticket Hypothesis",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NAP builds on the Lottery Ticket Hypothesis for structured pruning.",
+  "contexts": [
+   "[body] ...eliminate those with nonsignificant or not positive contribution to the success of final machine learning task ( Han et al. ( 2015 ); Jantre et al. ( 2023 ) ). Today, research on interpretable and sparse neural network architectures has achieved great progress with the development of an empirical framework such as the Lottery ticket hypothesis ( Frankle and Carbin ( 2019 ) ) able to prune up to 80% of the network with at least the same performance as the dense network. This frame has been converted into Bayesian to develop the Bayesian winning ticket ( Kuhn et al. ( 2026 ) ) for uncertainty quantification. However, it performs at the weights level and..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:39",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "Bayesian Lottery Ticket",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NAP adopts Bayesian Lottery Ticket for probabilistic node-level model selection.",
+  "contexts": [
+   "[body] ...Also, premature pruning can in some cases result in a loss of accuracy due to nodes removed in earlier stages of the training that could contribute considerably by the end of the training. These limitations highlight the need of a unified framework, which combines both the ability to compress efficiently by using the Bayesian Lottery Ticket approach, as well as the inclusion of neurons probabilistically, which results in efficient sparse networks. The main objective of this thesis is to develop a neural atom prevalence method for neural network model construction as an answe [...] experiment is random reinitialization: the winning ticket\u2019s mask m m ap...",
+   "[body] ...ts the final architecture by identifying the most likely layer size and retaining the most prevalent neurons. Concretely, the spike-and-slab Independent Gaussian prior of Jantre et al. ( 2023 ) provides the variational machinery for computing neuron-level inclusion probabilities within a feedforward network, while the Bayesian Lottery Ticket initialises the procedure from a compressed, well-conditioned subnetwork rather than a redundant dense one. The Poisson-Binomial distribution then replaces the fixed cut-off of the Median Probability model with a data-driven optimal layer size, mirroring the adaptive threshold that Fokou\u00e9 introduced for linear atom...",
+   "[abstract] ...d reliable uncertainty quantification. This paper introduces Neural Atom Prevalence (NAP), a principled Bayesian framework for structured node-level model selection in feedforward neural networks. NAP introduces the neural atom (activation unit) and functions as a hybrid method operating through a four-phase pipeline: Bayesian Lottery Ticket (BLT) identification via Iterative Magnitude Pruning (IMP), soft variational training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:40",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "Spike and Slab Independent Gaussian",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NAP uses Spike and Slab Independent Gaussian variational family for neuron-level inclusion probabilities.",
+  "contexts": [
+   "[abstract] ...ework for structured node-level model selection in feedforward neural networks. NAP introduces the neural atom (activation unit) and functions as a hybrid method operating through a four-phase pipeline: Bayesian Lottery Ticket (BLT) identification via Iterative Magnitude Pruning (IMP), soft variational training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:41",
+  "page": "arxiv:2607.21673v1",
+  "subject": "WARDEN",
+  "object": "AdaODD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "WARDEN addresses limitations in the AdaODD memory-bank detector.",
+  "contexts": [
+   "[body] ...pt, because both the in-distribution (ID) data and the outliers it sees at test time differ from anything available at training. The modern test-time-adaptation literature resolves this tension by pseudo-labelling: memory-bank detectors append the most ID-looking stream points to an ID bank (e.g. Zhang et al. , 2023 , AdaODD) , or the most OOD-looking points to an OOD dictionary (e.g. Yang et al. , 2025 , OODD) , and re-score against the updated banks. These methods report substantial gains under favorable stream mixes. They also, as we show, fail in a specific, predictable, and severe way under realistic ones. Self-poisoning is a phase transition, not..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:42",
+  "page": "arxiv:2607.21673v1",
+  "subject": "WARDEN",
+  "object": "OODD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "WARDEN compares against the OODD method for adaptive OOD detection.",
+  "contexts": [
+   "[body] ...er from anything available at training. The modern test-time-adaptation literature resolves this tension by pseudo-labelling: memory-bank detectors append the most ID-looking stream points to an ID bank (e.g. Zhang et al. , 2023 , AdaODD) , or the most OOD-looking points to an OOD dictionary (e.g. Yang et al. , 2025 , OODD) , and re-score against the updated banks. These methods report substantial gains under favorable stream mixes. They also, as we show, fail in a specific, predictable, and severe way under realistic ones. Self-poisoning is a phase transition, not noise. When the stream is temporally clustered (bursty) and contamination is low (the st..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:0",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "ETTh1",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the ETTh1 electricity forecasting benchmark.",
+  "contexts": [
+   "[body] ...1: Detailed information about the datasets. The cycle length W W follows the values reported in CycleNet [ 16 ] and TQNet [ 17 ] , where it is determined via autocorrelation analysis (ACF). We also report the learning rate used for each dataset. Dataset Channels Timesteps Interval Cycle Length W W Learning Rate Domain ETTh1 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTh2 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm1 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 8...",
+   "[body] ...0.319 0.348 0.311 0.348 0.597 0.542 0.377 0.422 0.637 0.591 0.369 0.427 720 0.404 0.400 0.397 0.396 0.389 0.391 0.392 0.394 0.405 0.407 0.412 0.407 1.730 1.042 0.558 0.524 0.960 0.735 0.554 0.522 Avg 0.278 0.323 0.277 0.323 0.266 0.314 0.274 0.322 0.287 0.332 0.288 0.332 0.757 0.610 0.358 0.404 0.571 0.537 0.350 0.401 ETTh1 96 0.373 0.396 0.371 0.393 0.375 0.395 0.382 0.403 0.381 0.405 0.386 0.405 0.423 0.448 0.479 0.464 0.654 0.599 0.386 0.400 192 0.425 0.424 0.428 0.426 0.427 0.428 0.429 0.435 0.435 0.436 0.441 0.436 0.471 0.474 0.525 0.492 0.719 0.631 0.437 0.432 336 0.466 0.446 0.476 0.446 0.472 0.409 0.468 0.448 0.480 0.458 0.487 0.458 0.570 0.546..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:1",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "ETTh2",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the ETTh2 electricity forecasting benchmark.",
+  "contexts": [
+   "[body] ...follows the values reported in CycleNet [ 16 ] and TQNet [ 17 ] , where it is determined via autocorrelation analysis (ACF). We also report the learning rate used for each dataset. Dataset Channels Timesteps Interval Cycle Length W W Learning Rate Domain ETTh1 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTh2 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm1 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation W..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:2",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "ETTm1",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the ETTm1 electricity forecasting benchmark.",
+  "contexts": [
+   "[body] ..., where it is determined via autocorrelation analysis (ACF). We also report the learning rate used for each dataset. Dataset Channels Timesteps Interval Cycle Length W W Learning Rate Domain ETTh1 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTh2 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm1 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather...",
+   "[body] ...ults are shown in bold and the second-best results are shown in underline . Models CARNet (ours) TQnet [ 17 ] CycleNet [ 16 ] TimeXer [ 19 ] SOFTS [ 13 ] iTransformer [ 2 ] Crossformer [ 23 ] TiDE [ 24 ] SCINet [ 25 ] DLinear [ 18 ] Metric MSE MAE MSE MAE MSE MAE MSE MAE MSE MAE MSE MAE MSE MAE MSE MAE MSE MAE MSE MAE ETTm1 96 0.309 0.352 0.311 0.353 0.319 0.360 0.318 0.356 0.325 0.368 0.334 0.368 0.404 0.426 0.364 0.387 0.418 0.438 0.345 0.372 192 0.354 0.379 0.356 0.378 0.360 0.381 0.362 0.383 0.375 0.391 0.377 0.391 0.450 0.451 0.398 0.400 0.439 0.450 0.380 0.389 336 0.388 0.401 0.390 0.401 0.389 0.403 0.395 0.407 0.405 0.420 0.426 0.420 0.532 0.515..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:3",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "ETTm2",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the ETTm2 electricity forecasting benchmark.",
+  "contexts": [
+   "[body] ...also report the learning rate used for each dataset. Dataset Channels Timesteps Interval Cycle Length W W Learning Rate Domain ETTh1 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTh2 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm1 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather Solar 137 52,560 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Energy PE...",
+   "[body] ...0.405 0.420 0.426 0.420 0.532 0.515 0.428 0.425 0.490 0.485 0.413 0.413 720 0.454 0.438 0.452 0.440 0.447 0.441 0.452 0.441 0.466 0.459 0.491 0.459 0.666 0.589 0.487 0.461 0.595 0.550 0.474 0.453 Avg 0.376 0.393 0.377 0.393 0.379 0.396 0.382 0.397 0.393 0.410 0.407 0.410 0.513 0.495 0.419 0.418 0.486 0.481 0.419 0.424 ETTm2 96 0.171 0.254 0.173 0.256 0.163 0.246 0.171 0.256 0.180 0.264 0.180 0.264 0.287 0.366 0.207 0.305 0.286 0.377 0.193 0.292 192 0.239 0.298 0.238 0.298 0.229 0.290 0.237 0.299 0.246 0.309 0.250 0.309 0.414 0.492 0.290 0.364 0.399 0.445 0.284 0.362 336 0.298 0.338 0.301 0.340 0.284 0.327 0.296 0.338 0.319 0.348 0.311 0.348 0.597 0.542..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:4",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "Electricity",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the Electricity multivariate time series benchmark.",
+  "contexts": [
+   "[body] ...e length W W follows the values reported in CycleNet [ 16 ] and TQNet [ 17 ] , where it is determined via autocorrelation analysis (ACF). We also report the learning rate used for each dataset. Dataset Channels Timesteps Interval Cycle Length W W Learning Rate Domain ETTh1 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTh2 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm1 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Tran...",
+   "[body] ...TQNet [ 17 ] , where it is determined via autocorrelation analysis (ACF). We also report the learning rate used for each dataset. Dataset Channels Timesteps Interval Cycle Length W W Learning Rate Domain ETTh1 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTh2 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm1 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{...",
+   "[body] ...s (ACF). We also report the learning rate used for each dataset. Dataset Channels Timesteps Interval Cycle Length W W Learning Rate Domain ETTh1 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTh2 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm1 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather Solar 137 52,560 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:5",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "Traffic",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the Traffic multivariate time series benchmark.",
+  "contexts": [
+   "[body] ...1 Introduction Accurately modeling cross-variate dependencies is critical for multivariate time series forecasting (MTSF), which underpins a wide range of real-world applications, including energy planning, medical forecasting, climate analysis, and traffic monitoring [ 27 , 28 , 29 , 30 ] . Recent Transformer-based models that explicitly capture inter-variable interactions, such as iTransformer [ 2 ] , have demonstrated clear advantages over channel-independent approaches like PatchTST [ 1 ] . However, the quadratic complexity of attention has motivated the development of efficient...",
+   "[body] ...400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTh2 7 14,400 1 hour 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm1 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather Solar 137 52,560 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Energy PEMS03 358 26,208 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS04 307 16,992 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportatio..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:6",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "Weather",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the Weather multivariate time series benchmark.",
+  "contexts": [
+   "[body] ...ur 24 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm1 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather Solar 137 52,560 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Energy PEMS03 358 26,208 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS04 307 16,992 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS07 883 28,224 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation...",
+   "[body] ...00 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather Solar 137 52,560 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Energy PEMS03 358 26,208 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS04 307 16,992 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS07 883 28,224 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS08 170 17,856 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3}..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:7",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "Solar",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the Solar energy forecasting benchmark.",
+  "contexts": [
+   "[body] ...ns 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity ETTm2 7 57,600 15 mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather Solar 137 52,560 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Energy PEMS03 358 26,208 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS04 307 16,992 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS07 883 28,224 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS08 170 17,856 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transpor..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:8",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "PEMS03",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the PEMS03 transportation forecasting benchmark.",
+  "contexts": [
+   "[body] ...mins 96 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Electricity Electricity 321 26,304 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather Solar 137 52,560 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Energy PEMS03 358 26,208 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS04 307 16,992 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS07 883 28,224 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS08 170 17,856 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Table 2: Multivariate forecasting results on 12 real-wor..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:9",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "PEMS04",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the PEMS04 transportation forecasting benchmark.",
+  "contexts": [
+   "[body] ...hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Electricity Traffic 862 17,544 1 hour 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather Solar 137 52,560 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Energy PEMS03 358 26,208 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS04 307 16,992 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS07 883 28,224 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS08 170 17,856 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Table 2: Multivariate forecasting results on 12 real-world benchmark datasets under prediction horizons H \u2208 { 96 , 192 , 336 ,..."
+  ]
+ },
+ {
+  "sid": "out_g7.jsonl:10",
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "object": "PEMS07",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CARNet is evaluated on the PEMS07 transportation forecasting benchmark.",
+  "contexts": [
+   "[body] ...our 168 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Weather 21 52,696 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Weather Solar 137 52,560 10 mins 144 1 \u00d7 10 \u2212 4 1\\times 10^{-4} Energy PEMS03 358 26,208 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS04 307 16,992 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS07 883 28,224 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation PEMS08 170 17,856 5 mins 288 1 \u00d7 10 \u2212 3 1\\times 10^{-3} Transportation Table 2: Multivariate forecasting results on 12 real-world benchmark datasets under prediction horizons H \u2208 { 96 , 192 , 336 , 720 } H\\in\\{96,192,336,720\\} and H \u2208 { 12 , 24 , 48 , 96 } H\\in\\{12,24,..."
+  ]
+ }
+]

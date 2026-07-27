@@ -1,0 +1,721 @@
+[
+ {
+  "sid": "out_14.jsonl:39",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "zerank-2-reranker",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on zerank-2-reranker.",
+  "contexts": [
+   "[body] ...by F1. Qwen2.5-32B-Instruct (Qwen et al. 2025 ) and Llama-3.3-70B-Instruct (Grattafiori et al. 2024 ) generate answers from gold documents for all 16 combinations of Arabic, German, English, and Chinese. Figure 2: Language coherence of Jina-reranker-v3 (Wang et al. 2025 ) , Qwen3-Reranker-4B (Zhang et al. 2025 ) , and zerank-2-reranker (Pipitone et al. 2025 ) across twelve languages using oracle candidate sets from XQuAD. (a) Top-1 document language distributions. Rows correspond to query languages, columns correspond to document languages, and each cell reports how frequently a document in the corresponding language is ranked first. (b) Mean rank of t...",
+   "[body] ...ctxl-rerank-v2-instruct-multilingual-1b 1B 88.79 94.92 93.27 94.64 97.54 96.72 91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge-reranker-v2-gemma 2B 86.63 93.42 91.24 84.55 92.49 90.04 85.59 92.96 4 Qwen3-Reranker-4B 4B 33.03 58.81 48.61 43.31 67.02 58.79 38.17 62.92 14 zerank-2-reranker 4B 63.13 79.98 74.31 74.71 87.16 83.22 68.92 83.57 10 Prism-Qwen3.5-Reranker-4B 4B 70.53 85.19 80.64 67.32 83.23 76.95 68.93 84.21 9 LAMAR (Ours) 0.6B 96.89 98.59 98.10 94.66 97.60 96.79 95.78 98.10 1 Table 3: Language-coherence results on the parallel oracle subsets of XQuAD and BE..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:40",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "Llama-Nemotron-Rerank",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on Llama-Nemotron-Rerank.",
+  "contexts": [
+   "[body] ...58.89 79.62 13 bge-reranker-v2-m3 0.6B 84.67 92.20 89.89 84.83 92.65 90.32 84.75 92.43 5 Qwen3-Reranker-0.6B 0.6B 61.72 79.58 73.56 67.67 82.85 77.78 64.70 81.22 12 jina-reranker-v3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.83 98.02 97.39 94.32 97.21 96.37 95.08 97.62 2 ctxl-rerank-v2-instruct-multilingual-1b 1B 88.79 94.92 93.27 94.64 97.54 96.72 91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge-reranker-v2-gemma 2B 86.63 93.42 91.24 84.55 92.49 90.04 85.59 92.96 4 Qwen3-Reran..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:41",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "gte-multilingual-reranker",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on gte-multilingual-reranker.",
+  "contexts": [
+   "[body] ...e of 2 \u00d7 10 \u2212 5 2\\times 10^{-5} and a batch size of 384. In Stage 2, the coefficient \u03bb \\lambda for \u2112 LC \\mathcal{L}_{\\mathrm{LC}} is set to 2, with a learning rate of 1 \u00d7 10 \u2212 6 1\\times 10^{-6} and a batch size of 32. Model Size XQuAD (12) BELEBELE (14) nDCG Avg. Rank nDCG@1 nDCG@10 MRR@10 nDCG@1 nDCG@10 MRR@10 @1 @10 gte-multilingual-reranker-base 0.3B 82.59 91.51 88.89 77.05 88.58 85.08 79.82 90.05 6 jina-reranker-v2-base-multilingual 0.3B 57.30 79.36 72.55 60.47 79.88 73.49 58.89 79.62 13 bge-reranker-v2-m3 0.6B 84.67 92.20 89.89 84.83 92.65 90.32 84.75 92.43 5 Qwen3-Reranker-0.6B 0.6B 61.72 79.58 73.56 67.67 82.85 77.78 64.70 81.22 12 jina-reranker..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:42",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "ctxl-rerank-v2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on ctxl-rerank-v2.",
+  "contexts": [
+   "[body] ...92.43 5 Qwen3-Reranker-0.6B 0.6B 61.72 79.58 73.56 67.67 82.85 77.78 64.70 81.22 12 jina-reranker-v3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.83 98.02 97.39 94.32 97.21 96.37 95.08 97.62 2 ctxl-rerank-v2-instruct-multilingual-1b 1B 88.79 94.92 93.27 94.64 97.54 96.72 91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge-reranker-v2-gemma 2B 86.63 93.42 91.24 84.55 92.49 90.04 85.59 92.96 4 Qwen3-Reranker-4B 4B 33.03 58.81 48.61 43.31 67.02 58.79 38.17 62.92 14 zerank-2-reranker 4B..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:43",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "Prism-Qwen3.5-Reranker",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on Prism-Qwen3.5-Reranker.",
+  "contexts": [
+   "[body] ...0.05 6 jina-reranker-v2-base-multilingual 0.3B 57.30 79.36 72.55 60.47 79.88 73.49 58.89 79.62 13 bge-reranker-v2-m3 0.6B 84.67 92.20 89.89 84.83 92.65 90.32 84.75 92.43 5 Qwen3-Reranker-0.6B 0.6B 61.72 79.58 73.56 67.67 82.85 77.78 64.70 81.22 12 jina-reranker-v3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.83 98.02 97.39 94.32 97.21 96.37 95.08 97.62 2 ctxl-rerank-v2-instruct-multilingual-1b 1B 88.79 94.92 93.27 94.64 97.54 96.72 91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge...",
+   "[body] ...nker-v3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.83 98.02 97.39 94.32 97.21 96.37 95.08 97.62 2 ctxl-rerank-v2-instruct-multilingual-1b 1B 88.79 94.92 93.27 94.64 97.54 96.72 91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge-reranker-v2-gemma 2B 86.63 93.42 91.24 84.55 92.49 90.04 85.59 92.96 4 Qwen3-Reranker-4B 4B 33.03 58.81 48.61 43.31 67.02 58.79 38.17 62.92 14 zerank-2-reranker 4B 63.13 79.98 74.31 74.71 87.16 83.22 68.92 83.57 10 Prism-Qwen3.5-Reranker-4B 4B 70.53 85.19...",
+   "[body] ...96.72 91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge-reranker-v2-gemma 2B 86.63 93.42 91.24 84.55 92.49 90.04 85.59 92.96 4 Qwen3-Reranker-4B 4B 33.03 58.81 48.61 43.31 67.02 58.79 38.17 62.92 14 zerank-2-reranker 4B 63.13 79.98 74.31 74.71 87.16 83.22 68.92 83.57 10 Prism-Qwen3.5-Reranker-4B 4B 70.53 85.19 80.64 67.32 83.23 76.95 68.93 84.21 9 LAMAR (Ours) 0.6B 96.89 98.59 98.10 94.66 97.60 96.79 95.78 98.10 1 Table 3: Language-coherence results on the parallel oracle subsets of XQuAD and BE..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:44",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "RAG",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on RAG.",
+  "contexts": [
+   "[body] ...1 Introduction Retrieval-Augmented Generation (RAG) mitigates the limitations of generation based solely on a large language model\u2019s internal knowledge by retrieving external documents and providing them as input to the model (Lewis et al. 2021 ; Gao et al. 2023 ) . The answer generated by a RAG system depends strongly on whether the retrieved documents are relevant to the query (Glas...",
+   "[body] ...1 Introduction Retrieval-Augmented Generation (RAG) mitigates the limitations of generation based solely on a large language model\u2019s internal knowledge by retrieving external documents and providing them as input to the model (Lewis et al. 2021 ; Gao et al. 2023 ) . The answer generated by a RAG system depends strongly on whether the retrieved documents are relevant to the query (Glass et al. 2022 ; Asai et al. 2023 ) . A first-stage retriever returns a set of candidate documents, not all of which are equally useful for generating the answer. A reranker therefore refines their ordering so that the most useful documents are pl...",
+   "[body] ...Asai et al. 2023 ) . A first-stage retriever returns a set of candidate documents, not all of which are equally useful for generating the answer. A reranker therefore refines their ordering so that the most useful documents are placed at the top and provided to the LLM (Nogueira and Cho 2020 ; Nogueira et al. 2020 ) . RAG systems are increasingly used in settings where user queries and knowledge sources span multiple languages (Chirkova et al. 2024 ) . In multilingual RAG, the candidate set may contain semantically relevant documents written both in the query language and in other languages (Asai et al. 2021 ; Ranaldi et al. 2026 ) . A multilingual rer..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:45",
+  "page": "arxiv:2607.22043v1",
+  "subject": "Scaling Native",
+  "object": "MoE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Scaling Native builds on MoE.",
+  "contexts": [
+   "[body] ...re-training relies on late fusion ( shukor2025scalingnmm ) . Typically, this approach couples a pre-trained language model with a vision encoder ( radford2021clip ; zhai2023siglip ; tschannen2025siglip2 ) via a projection layer, followed by continued training on multimodal data ( kimi2026kimi25 ; liu2023llava ; lin2026moellava ) . Although this strategy efficiently leverages existing pre-trained weights, it introduces a fundamental asymmetry. Specifically, vision and language representations are learned independently, from distinct data distributions, and under different optimization objectives. To resolve this asymmetry, researchers have explored nati...",
+   "[body] ...eb pages, books, academic papers, and other domains. Moreover, we construct a large-scale multimodal dataset comprising web-crawled image-text pairs and interleaved image-text documents. By converting images into continuous patch embeddings, we produce a total of 75B multimodal tokens. Model Architecture . We employ a MoE architecture based on a decoder-only Transformer. Rather than using traditional vision encoders, we rely exclusively on a single patch embedding layer to project images directly into continuous patch embeddings. Notably, we train these MoE models using an auxiliary-loss-free approach ( liu2024deepseekv3 ) . More implementation details...",
+   "[body] ..., we produce a total of 75B multimodal tokens. Model Architecture . We employ a MoE architecture based on a decoder-only Transformer. Rather than using traditional vision encoders, we rely exclusively on a single patch embedding layer to project images directly into continuous patch embeddings. Notably, we train these MoE models using an auxiliary-loss-free approach ( liu2024deepseekv3 ) . More implementation details are provided in Appendix A . Figure 1: IsoFLOP curves (language objective). For a range of model sizes, we adjust the number of training tokens to maintain a constant final FLOPs, setting the cosine cycle length to match this target comput..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:46",
+  "page": "arxiv:2607.22043v1",
+  "subject": "Scaling Native",
+  "object": "late-fusion",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Scaling Native builds on late-fusion.",
+  "contexts": [
+   "[abstract] ...their reliance on text-only pre-training restricts the perception of the multimodal physical world. Native multimodal pre-training avoids this limitation by training models from scratch on multimodal inputs, thereby achieving deep cross-modal integration and mitigating optimization asymmetries inherent to traditional late-fusion architectures. Despite these advantages, the scaling properties of this paradigm remain systematically uncharacterized. To address this gap, we investigate the optimal model size and token count for training a transformer-based vision-language model under a fixed computational budget. We demonstrate that minimal objective loss..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:47",
+  "page": "arxiv:2607.22043v1",
+  "subject": "Scaling Native",
+  "object": "transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Scaling Native builds on transformer.",
+  "contexts": [
+   "[body] ...er domains. Moreover, we construct a large-scale multimodal dataset comprising web-crawled image-text pairs and interleaved image-text documents. By converting images into continuous patch embeddings, we produce a total of 75B multimodal tokens. Model Architecture . We employ a MoE architecture based on a decoder-only Transformer. Rather than using traditional vision encoders, we rely exclusively on a single patch embedding layer to project images directly into continuous patch embeddings. Notably, we train these MoE models using an auxiliary-loss-free approach ( liu2024deepseekv3 ) . More implementation details are provided in Appendix A . Figure 1: I...",
+   "[abstract] ...ving deep cross-modal integration and mitigating optimization asymmetries inherent to traditional late-fusion architectures. Despite these advantages, the scaling properties of this paradigm remain systematically uncharacterized. To address this gap, we investigate the optimal model size and token count for training a transformer-based vision-language model under a fixed computational budget. We demonstrate that minimal objective loss adheres to a predictable compute law, whereas compute-optimal model sizes and token counts scale as power laws. Notably, language and multimodal objectives manifest distinct scaling behaviors. The language allocation law..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:48",
+  "page": "arxiv:2607.22045v1",
+  "subject": "CEL",
+  "object": "Adult Census",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CEL is evaluated on Adult Census.",
+  "contexts": [
+   "[body] ...3) and regression (5) tasks, spanning domains such as finance and social sciences to test methods across different distributions and complexities. Table 1 summarizes their characteristics. Table 1: Datasets included in CEL with feature types, distribution and references. Dataset Task N N Cat Num C C Label Distribution Adult Census [ 2 ] Clf. 32,561 8 4 2 0: 75.9%, 1: 24.1% Audit [ 29 ] Clf. 775 0 23 2 0: 60.6%, 1: 39.4% Bank Marketing [ 19 ] Clf. 40,004 9 7 2 0: 88.3%, 1: 11.7% Blobs Clf. 1,500 0 2 3 0, 1, 2: 33.3% each Credit Default [ 35 ] Clf. 30,000 9 14 2 0: 77.9%, 1: 22.1% Digits [ 28 ] Clf. 1,797 0 64 10 Balanced ( \u223c \\sim 10% each) German Credit..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:49",
+  "page": "arxiv:2607.22045v1",
+  "subject": "CEL",
+  "object": "Bank Marketing",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CEL is evaluated on Bank Marketing.",
+  "contexts": [
+   "[body] ...different distributions and complexities. Table 1 summarizes their characteristics. Table 1: Datasets included in CEL with feature types, distribution and references. Dataset Task N N Cat Num C C Label Distribution Adult Census [ 2 ] Clf. 32,561 8 4 2 0: 75.9%, 1: 24.1% Audit [ 29 ] Clf. 775 0 23 2 0: 60.6%, 1: 39.4% Bank Marketing [ 19 ] Clf. 40,004 9 7 2 0: 88.3%, 1: 11.7% Blobs Clf. 1,500 0 2 3 0, 1, 2: 33.3% each Credit Default [ 35 ] Clf. 30,000 9 14 2 0: 77.9%, 1: 22.1% Digits [ 28 ] Clf. 1,797 0 64 10 Balanced ( \u223c \\sim 10% each) German Credit [ 9 ] Clf. 1,000 11 7 2 0: 70.0%, 1: 30.0% GMC [ 24 ] Clf. 16,714 3 7 2 0: 50.0%, 1: 50.0% HELOC [ 6 ]..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:50",
+  "page": "arxiv:2607.22045v1",
+  "subject": "CEL",
+  "object": "Credit Default",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CEL is evaluated on Credit Default.",
+  "contexts": [
+   "[body] ...included in CEL with feature types, distribution and references. Dataset Task N N Cat Num C C Label Distribution Adult Census [ 2 ] Clf. 32,561 8 4 2 0: 75.9%, 1: 24.1% Audit [ 29 ] Clf. 775 0 23 2 0: 60.6%, 1: 39.4% Bank Marketing [ 19 ] Clf. 40,004 9 7 2 0: 88.3%, 1: 11.7% Blobs Clf. 1,500 0 2 3 0, 1, 2: 33.3% each Credit Default [ 35 ] Clf. 30,000 9 14 2 0: 77.9%, 1: 22.1% Digits [ 28 ] Clf. 1,797 0 64 10 Balanced ( \u223c \\sim 10% each) German Credit [ 9 ] Clf. 1,000 11 7 2 0: 70.0%, 1: 30.0% GMC [ 24 ] Clf. 16,714 3 7 2 0: 50.0%, 1: 50.0% HELOC [ 6 ] Clf. 10,459 0 23 2 0: 52.2%, 1: 47.8% Law [ 17 ] Clf. 2,216 2 3 2 0: 50.0%, 1: 50.0% Lending Club [ 10..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:51",
+  "page": "arxiv:2607.22045v1",
+  "subject": "CEL",
+  "object": "German Credit",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CEL is evaluated on German Credit.",
+  "contexts": [
+   "[body] ...ensus [ 2 ] Clf. 32,561 8 4 2 0: 75.9%, 1: 24.1% Audit [ 29 ] Clf. 775 0 23 2 0: 60.6%, 1: 39.4% Bank Marketing [ 19 ] Clf. 40,004 9 7 2 0: 88.3%, 1: 11.7% Blobs Clf. 1,500 0 2 3 0, 1, 2: 33.3% each Credit Default [ 35 ] Clf. 30,000 9 14 2 0: 77.9%, 1: 22.1% Digits [ 28 ] Clf. 1,797 0 64 10 Balanced ( \u223c \\sim 10% each) German Credit [ 9 ] Clf. 1,000 11 7 2 0: 70.0%, 1: 30.0% GMC [ 24 ] Clf. 16,714 3 7 2 0: 50.0%, 1: 50.0% HELOC [ 6 ] Clf. 10,459 0 23 2 0: 52.2%, 1: 47.8% Law [ 17 ] Clf. 2,216 2 3 2 0: 50.0%, 1: 50.0% Lending Club [ 10 ] Clf. 93,888 4 8 2 0: 29.6%, 1: 70.4% Moons Clf. 1,024 0 2 2 0: 50.0%, 1: 50.0% Wine [ 27 ] Clf. 178 0 13 3 0: 33.1, 1:..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:52",
+  "page": "arxiv:2607.22045v1",
+  "subject": "CEL",
+  "object": "Lending Club",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CEL is evaluated on Lending Club.",
+  "contexts": [
+   "[body] ...dit Default [ 35 ] Clf. 30,000 9 14 2 0: 77.9%, 1: 22.1% Digits [ 28 ] Clf. 1,797 0 64 10 Balanced ( \u223c \\sim 10% each) German Credit [ 9 ] Clf. 1,000 11 7 2 0: 70.0%, 1: 30.0% GMC [ 24 ] Clf. 16,714 3 7 2 0: 50.0%, 1: 50.0% HELOC [ 6 ] Clf. 10,459 0 23 2 0: 52.2%, 1: 47.8% Law [ 17 ] Clf. 2,216 2 3 2 0: 50.0%, 1: 50.0% Lending Club [ 10 ] Clf. 93,888 4 8 2 0: 29.6%, 1: 70.4% Moons Clf. 1,024 0 2 2 0: 50.0%, 1: 50.0% Wine [ 27 ] Clf. 178 0 13 3 0: 33.1, 1: 39.9, 2: 27% Synthetic Regr. 1,000 0 2 Cont. [0, 1] Concrete [ 34 ] Regr. 1,030 0 8 Cont. [0, 1] Diabetes [ 5 ] Regr. 442 0 10 Cont. [0, 1] Yacht [ 7 ] Regr. 308 0 6 Cont. [0, 1] SCM20D [ 31 ] Regr. 8,..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:53",
+  "page": "arxiv:2607.22045v1",
+  "subject": "CEL",
+  "object": "Diabetes",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CEL is evaluated on Diabetes.",
+  "contexts": [
+   "[body] ...lf. 10,459 0 23 2 0: 52.2%, 1: 47.8% Law [ 17 ] Clf. 2,216 2 3 2 0: 50.0%, 1: 50.0% Lending Club [ 10 ] Clf. 93,888 4 8 2 0: 29.6%, 1: 70.4% Moons Clf. 1,024 0 2 2 0: 50.0%, 1: 50.0% Wine [ 27 ] Clf. 178 0 13 3 0: 33.1, 1: 39.9, 2: 27% Synthetic Regr. 1,000 0 2 Cont. [0, 1] Concrete [ 34 ] Regr. 1,030 0 8 Cont. [0, 1] Diabetes [ 5 ] Regr. 442 0 10 Cont. [0, 1] Yacht [ 7 ] Regr. 308 0 6 Cont. [0, 1] SCM20D [ 31 ] Regr. 8,966 0 61 Cont. (16) [ 0 , 1 ] 16 [0,1]^{16} Consistent preprocessing is applied across all datasets. Continuous features are scaled to the [ 0 , 1 ] [0,1] range using Min-Max normalization. Categorical features are handled based on the..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:54",
+  "page": "arxiv:2607.22045v1",
+  "subject": "CEL",
+  "object": "Yacht",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CEL is evaluated on Yacht.",
+  "contexts": [
+   "[body] ...17 ] Clf. 2,216 2 3 2 0: 50.0%, 1: 50.0% Lending Club [ 10 ] Clf. 93,888 4 8 2 0: 29.6%, 1: 70.4% Moons Clf. 1,024 0 2 2 0: 50.0%, 1: 50.0% Wine [ 27 ] Clf. 178 0 13 3 0: 33.1, 1: 39.9, 2: 27% Synthetic Regr. 1,000 0 2 Cont. [0, 1] Concrete [ 34 ] Regr. 1,030 0 8 Cont. [0, 1] Diabetes [ 5 ] Regr. 442 0 10 Cont. [0, 1] Yacht [ 7 ] Regr. 308 0 6 Cont. [0, 1] SCM20D [ 31 ] Regr. 8,966 0 61 Cont. (16) [ 0 , 1 ] 16 [0,1]^{16} Consistent preprocessing is applied across all datasets. Continuous features are scaled to the [ 0 , 1 ] [0,1] range using Min-Max normalization. Categorical features are handled based on the method\u2019s requirements For discriminative mo..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:55",
+  "page": "arxiv:2607.22068v1",
+  "subject": "Rethinking Multi-Branch",
+  "object": "ImageNet",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Rethinking Multi-Branch is evaluated on ImageNet.",
+  "contexts": [
+   "[body] ...mentary inductive biases yield retrieval cues that neither captures alone [ 7 ] . The shared, rarely questioned assumption is that more diverse representations are better : each branch contributes unique correct matches, and their aggregation surpasses any single stream [ 5 , 4 ] . That assumption was established with ImageNet-pretrained, lightweight backbones, where no single extractor was near saturation and diversity was a cheap path to coverage. Foundation models change the premise. DINOv3 already rivals specialized state of the art without fine-tuning [ 8 ] , and in Re-ID simply fine-tuning a foundation encoder is competitive with elaborate archit..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:56",
+  "page": "arxiv:2607.22068v1",
+  "subject": "Rethinking Multi-Branch",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Rethinking Multi-Branch builds on LoRA.",
+  "contexts": [
+   "[body] ...odes both, and the fusion\u2019s apparent + 4.9 +4.9 gain is measured against a jointly degraded base\u2014then give fusion every advantage: an asymmetric frozen-anchor scheme that freezes the strong 88.19 ConvNeXt as a semantic anchor and trains only the Transformer and the fusion module, under three independent recipes plus a LoRA control , ruling out the objection that the weaker branch was merely under-trained. Our findings are consistently negative for the diversity premise\u2014and, we argue, this is the contribution. Multiple heads over a shared backbone become more alike with training, not less\u2014consistent with the view that solutions sharing an optimization t..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:57",
+  "page": "arxiv:2607.22068v1",
+  "subject": "Rethinking Multi-Branch",
+  "object": "transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Rethinking Multi-Branch builds on transformer.",
+  "contexts": [
+   "[body] ...ogress in vehicle and person Re-ID has been driven by representational diversity . Multi-branch and multi-granularity networks split features into parallel streams [ 4 , 5 ] ; part-based and jigsaw modules extract local descriptors [ 6 ] ; and a growing line of work fuses heterogeneous backbones\u2014typically a CNN with a Transformer\u2014on the premise that their complementary inductive biases yield retrieval cues that neither captures alone [ 7 ] . The shared, rarely questioned assumption is that more diverse representations are better : each branch contributes unique correct matches, and their aggregation surpasses any single stream [ 5 , 4 ] . That assumpti...",
+   "[body] ...of two foundation backbones collapses\u2014a learning rate tolerable for one erodes both, and the fusion\u2019s apparent + 4.9 +4.9 gain is measured against a jointly degraded base\u2014then give fusion every advantage: an asymmetric frozen-anchor scheme that freezes the strong 88.19 ConvNeXt as a semantic anchor and trains only the Transformer and the fusion module, under three independent recipes plus a LoRA control , ruling out the objection that the weaker branch was merely under-trained. Our findings are consistently negative for the diversity premise\u2014and, we argue, this is the contribution. Multiple heads over a shared backbone become more alike with training,...",
+   "[abstract] ...Multi-branch architectures and CNN-Transformer fusion have long been regarded as effective ways to improve vehicle re-identification (Re-ID) by combining complementary representations. In this work, we revisit this assumption in the foundation-model era through a comprehensive empirical study. A single DINOv3-pretrained ConvNeXt trained with a tuned recipe achieves 88.19 m..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:58",
+  "page": "arxiv:2607.22068v1",
+  "subject": "Rethinking Multi-Branch",
+  "object": "CLIP",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Rethinking Multi-Branch builds on CLIP.",
+  "contexts": [
+   "[body] ...but with unverified protocols and no public implementation, so they are not established to be comparable to the filtered rows (which we verified against the original MBR evaluation code). Method Metadata Small mAP Large mAP Protocol MBR-4B [ 5 ] none 87.97 77.15 verified MBR-4B-LAI [ 5 ] cam.+view 88.12 77.41 verified CLIP-SENet [ 21 ] \u2020 none 89.1 \u2014 self-rep. Option A (ours) none 88.19 77.47 verified + re-ranking none 92.38 83.68 verified \u2020 As reported by the authors; no public implementation is available, the abstract does not state which VeRi-Wild split the figure refers to, and we could not verify whether cross-camera junk filtering is applied. This...",
+   "[body] ...hot on VeRi-776 (never seen in training), Option A reaches 66.02 mAP / 87.07 R1 (+re-ranking: 69.27). As a matched in-domain reference we use the same Option A architecture trained in-domain on VeRi-776 (84.07 mAP, Section 5-5.2 ); this remains below self-reported specialized systems we could not protocol-verify (e.g. CLIP-SENet 92.9 on VeRi-776 [ 21 ] ). Relative to this matched in-domain reference, the \u2212 18.0 -18.0 mAP gap with an intact R1 of 87.07 indicates the model learned generic vehicle discrimination rather than overfitting the source domain; the degradation is consistent with fine-tuning\u2019s known out-of-distribution cost [ 10 ] and with domain..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:59",
+  "page": "arxiv:2607.22075v1",
+  "subject": "FSE",
+  "object": "HuggingFace",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "FSE is evaluated on HuggingFace.",
+  "contexts": [
+   "[body] ...alance, while still maintaining Macro-F1 for the final coarse-grained types. For all span-based models, we only keep the entity with the highest predicted score and discard the overlapping others when predicting overlapped spans. 4.3 Implementation Details For contextual encoder, we use PLM bert-base-cased [ 24 ] from HuggingFace followed by a BiLSTM with an output hidden size of 400 and subsequently apply 0.2 dropout rate. (i.e., d h = 400 d^{h}\\!=\\!400 ). We set d o = d l = 50 d^{o}\\!=\\!d^{l}\\!=\\!50 on FFNs to enable simultaneous modeling of fast and slow expert as treating link computation as an additional head in span modeling. We fine-tune all par..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:60",
+  "page": "arxiv:2607.22075v1",
+  "subject": "FSE",
+  "object": "BERT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "FSE builds on BERT.",
+  "contexts": [
+   "[body] ...ssify all possible text spans, providing richer representations and often yielding superior performance. Notably, recent large language models (LLMs) show promise in CLNER owing to their strong generalization capabilities. However, empirical studies [ 6 ] reveal that LLMs still underperform their smaller, NER-specific Bert-based counterparts. Moreover, The prohibitive computational demands and challenges in dynamic updates of large parameters also hinder its practical deployment. Figure 1: Compared to learning massive spans in traditional methods, the fast expert in FSE efficiently learns a few links to filter out most spans, which reduces the learning...",
+   "[body] ...ere still exist unsolved challenges from two aspects: 1) First, task interference may lead to conflicting parameter updates during continual learning. Thus, models capable of explicitly modeling task-shared information can facilitate stability in this process. However, existing span-based methods, which only share the Bert base encoder, fail to explore additional high-level information specific to NER that could be shared between different tasks. For example, when a span text \u201d [PER] at \u201d (a person entity but followed by a preposition) has already been learned as a non-entity span in previous tasks, this pattern is also unlikely to be the entity in sub...",
+   "[body] ...thin tasks due to severe imbalance, while still maintaining Macro-F1 for the final coarse-grained types. For all span-based models, we only keep the entity with the highest predicted score and discard the overlapping others when predicting overlapped spans. 4.3 Implementation Details For contextual encoder, we use PLM bert-base-cased [ 24 ] from HuggingFace followed by a BiLSTM with an output hidden size of 400 and subsequently apply 0.2 dropout rate. (i.e., d h = 400 d^{h}\\!=\\!400 ). We set d o = d l = 50 d^{o}\\!=\\!d^{l}\\!=\\!50 on FFNs to enable simultaneous modeling of fast and slow expert as treating link computation as an additional head in span mo..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:61",
+  "page": "arxiv:2607.22083v1",
+  "subject": "Nanbeige4.2-3B",
+  "object": "Qwen3.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nanbeige4.2-3B builds on Qwen3.5.",
+  "contexts": [
+   "[body] ...nd process rewards to provide denser credit assignment and stabilize learning over complex trajectories. The resulting model shows a broad agentic capability profile at its scale. Nanbeige4.2-3B achieves strong performance on complex tool-use, office-agent, and code-agent benchmarks, outperforming substantially larger Qwen3.5-9B Qwen Team ( 2026 ) and Gemma4-12B Team et al. ( 2026 ) across diverse evaluations. It also remains competitive in mathematical, coding, and scientific reasoning, as well as alignment. When deployed within a general agent framework such [...] evaluation. Verification and Closed-Loop Task Evolution. Before trajectory synthesis,...",
+   "[abstract] ...Think responses to improve overall model quality and reduce failure cases, length-controlled reasoning RL to balance accuracy and reasoning efficiency, and agentic RL with outcome and process rewards to stabilize long-horizon training. Extensive evaluations show that Nanbeige4.2-3B outperforms larger models, including Qwen3.5-9B and Gemma4-12B, across diverse agentic benchmarks while remaining competitive on reasoning and alignment tasks. Performance with OpenClaw further supports its use as a compact local personal assistant...."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:62",
+  "page": "arxiv:2607.22083v1",
+  "subject": "Nanbeige4.2-3B",
+  "object": "Claude",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nanbeige4.2-3B builds on Claude.",
+  "contexts": [
+   "[body] ...sk space to systematically concentrate on weaknesses detected during the model\u2019s own evolution. Trajectory Synthesis across Diverse Scaffolds. To prevent model over-fitting to specific prompt templates or tool-use conventions, we deploy multiple heterogeneous agent scaffolds within our containerized sandbox, including Claude Code, OpenHands, SWE-agent, and specialized Codex-based drivers. Given the same repository state and fail-to-pass verification tasks, each agent independently explores and resolves problems in parallel. Their distinct system prompts, context compression policies, and editing interfaces induce diverse solution strategies (e.g., broa..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:63",
+  "page": "arxiv:2607.22083v1",
+  "subject": "Nanbeige4.2-3B",
+  "object": "Nanbeige4.2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nanbeige4.2-3B builds on Nanbeige4.2.",
+  "contexts": [
+   "[body] ...tasks Ivison et al. ( 2026 ); Bai et al. ( 2026 ) , rather than serving as general-purpose agents. Although effective in their target environments, they leave open whether one compact model can support diverse agentic capabilities without sacrificing general reasoning ability. To investigate this question, we present Nanbeige4.2-3B , a compact model designed to maximize general-purpose agentic capabilities while retaining strong reasoning performance. Rather than scaling parameters, Nanbeige4.2-3B adopts a Looped Transformer Bae et al. ( 2026 ) . The architecture reuses the same Transformer stack to process hidden states for an additional pass, increa...",
+   "[body] ...her one compact model can support diverse agentic capabilities without sacrificing general reasoning ability. To investigate this question, we present Nanbeige4.2-3B , a compact model designed to maximize general-purpose agentic capabilities while retaining strong reasoning performance. Rather than scaling parameters, Nanbeige4.2-3B adopts a Looped Transformer Bae et al. ( 2026 ) . The architecture reuses the same Transformer stack to process hidden states for an additional pass, increasing effective model capacity without introducing additional parameters. Pretraining with this looped architecture from scratch on 28T tokens, with an expanded corpus an...",
+   "[body] ...prove reasoning efficiency by balancing concise reasoning and sufficient exploration. Finally, we perform agentic RL with combined outcome and process rewards to provide denser credit assignment and stabilize learning over complex trajectories. The resulting model shows a broad agentic capability profile at its scale. Nanbeige4.2-3B achieves strong performance on complex tool-use, office-agent, and code-agent benchmarks, outperforming substantially larger Qwen3.5-9B Qwen Team ( 2026 ) and Gemma4-12B Team et al. ( 2026 ) across diverse evaluations. It also remains competitive in mathematical, coding, and scientific reasoning, as well as alignment. When..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:64",
+  "page": "arxiv:2607.22083v1",
+  "subject": "Nanbeige4.2-3B",
+  "object": "SFT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nanbeige4.2-3B builds on SFT.",
+  "contexts": [
+   "[body] ...city without introducing additional parameters. Pretraining with this looped architecture from scratch on 28T tokens, with an expanded corpus and a refined data mixture, yields a strong base model. This provides a solid foundation for subsequent post-training stages. After pretraining, we apply supervised fine-tuning (SFT) to develop broad agentic capabilities. We first build a hybrid environment pool comprising real-world environments with a large collection of synthesized ones. Within these environments, we construct execution-grounded trajectories across repository-level software engineering, complex tool use, and artifact-centric office tasks, with...",
+   "[body] ...s across repository-level software engineering, complex tool use, and artifact-centric office tasks, with diverse task assets and agentic scaffolds. We then filter trajectories at both the trajectory and turn levels using execution signals and rubric-based assessments to maintain data quality at scale. Building on the SFT model, we further develop a multi-stage RL pipeline that targets response quality, reasoning efficiency, and stable agentic learning. We first apply a two-stage RLHF across both Think and Non-Think responses to mitigate common failure modes such as hallucinations, repetitive generation, and instruction-following errors. We then introd...",
+   "[abstract] ...across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer stack to increase capacity without adding parameters. For SFT data and trajectory construction, we expand the diversity of executable environments, task assets, and agentic scaffolds through real-world deployment and large-scale synthesis. Our RL pipeline applies mixed-mode RLHF over Think and Non-Think responses to improve overall model quality and reduce failure cases, length-controlled reason..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:65",
+  "page": "arxiv:2607.22083v1",
+  "subject": "Nanbeige4.2-3B",
+  "object": "RL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nanbeige4.2-3B builds on RL.",
+  "contexts": [
+   "[body] ...on 28T tokens, with an expanded corpus and a refined data mixture, yields a strong base model. This provides a solid foundation for subsequent post-training stages. After pretraining, we apply supervised fine-tuning (SFT) to develop broad agentic capabilities. We first build a hybrid environment pool comprising real-world environments with a large collection of synthesized ones. Within these environments, we construct execution-grounded trajectories across repository-level software engineering, complex tool use, and artifact-centric office tasks, with diverse task assets and agentic scaffolds. We then filter trajectories at both the trajectory and turn...",
+   "[body] ...ng, complex tool use, and artifact-centric office tasks, with diverse task assets and agentic scaffolds. We then filter trajectories at both the trajectory and turn levels using execution signals and rubric-based assessments to maintain data quality at scale. Building on the SFT model, we further develop a multi-stage RL pipeline that targets response quality, reasoning efficiency, and stable agentic learning. We first apply a two-stage RLHF across both Think and Non-Think responses to mitigate common failure modes such as hallucinations, repetitive generation, and instruction-following errors. We then introduce length-controlled reasoning RL to improv...",
+   "[body] ...rajectories at both the trajectory and turn levels using execution signals and rubric-based assessments to maintain data quality at scale. Building on the SFT model, we further develop a multi-stage RL pipeline that targets response quality, reasoning efficiency, and stable agentic learning. We first apply a two-stage RLHF across both Think and Non-Think responses to mitigate common failure modes such as hallucinations, repetitive generation, and instruction-following errors. We then introduce length-controlled reasoning RL to improve reasoning efficiency by balancing concise reasoning and sufficient exploration. Finally, we perform agentic RL with com..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:66",
+  "page": "arxiv:2607.22083v1",
+  "subject": "Nanbeige4.2-3B",
+  "object": "transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Nanbeige4.2-3B builds on transformer.",
+  "contexts": [
+   "[body] ...rt diverse agentic capabilities without sacrificing general reasoning ability. To investigate this question, we present Nanbeige4.2-3B , a compact model designed to maximize general-purpose agentic capabilities while retaining strong reasoning performance. Rather than scaling parameters, Nanbeige4.2-3B adopts a Looped Transformer Bae et al. ( 2026 ) . The architecture reuses the same Transformer stack to process hidden states for an additional pass, increasing effective model capacity without introducing additional parameters. Pretraining with this looped architecture from scratch on 28T tokens, with an expanded corpus and a refined data mixture, yield...",
+   "[body] ...ng ability. To investigate this question, we present Nanbeige4.2-3B , a compact model designed to maximize general-purpose agentic capabilities while retaining strong reasoning performance. Rather than scaling parameters, Nanbeige4.2-3B adopts a Looped Transformer Bae et al. ( 2026 ) . The architecture reuses the same Transformer stack to process hidden states for an additional pass, increasing effective model capacity without introducing additional parameters. Pretraining with this looped architecture from scratch on 28T tokens, with an expanded corpus and a refined data mixture, yields a strong base model. This provides a solid foundation for subsequ...",
+   "[abstract] ...mpact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer stack to increase capacity without adding parameters. For SFT data and trajectory construction, we expand the diversity of executable environments, task assets, and agentic scaffolds through real-world deployment and large-scale synthesis. Our RL pipeline applies mixed-mode RLHF over Think and Non-Think r..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:67",
+  "page": "arxiv:2607.22086v1",
+  "subject": "NMF",
+  "object": "VAE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NMF builds on VAE.",
+  "contexts": [
+   "[body] ...MemNMF underperformed AudDSR, which can benefit from training on broader machine data and from anomaly augmentation strategies, whereas our setting focuses on learning only from the target normal data within each machine section. TABLE III : AUC scores for each machine type on the MIMII [ 21 ] dataset. Model AE [ 23 ] VAE [ 23 ] GRLNet [ 23 ] MemNMF-512 MemNMF-768 -6 dB Fan 68.7 71.5 69.9 74.2 76.4 Pump 71.0 71.0 77.5 75.7 77.3..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:68",
+  "page": "arxiv:2607.22086v1",
+  "subject": "NMF",
+  "object": "NMF",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NMF builds on NMF.",
+  "contexts": [
+   "[body] ...MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection Abstract I Introduction II Related Work III Method III-A Linear Predictive Coding (LPC) Spectrum III-B Memory-Network-Based Non-Negative Matrix Factorization III-B 1 Non-Negative Matrix Factorization III-B 2 Memory Network Training IV Experiments IV-A Setup IV-B Main r...",
+   "[body] ...MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection Abstract I Introduction II Related Work III Method III-A Linear Predictive Coding (LPC) Spectrum III-B Memory-Network-Based Non-Negative Matrix Factorization III-B 1 Non-Negative Matrix Factorization III-B 2 Memory Network Training IV Experiments IV-A Setup IV-B Main results on DCASE2020T2...",
+   "[body] ...ation III-B 1 Non-Negative Matrix Factorization III-B 2 Memory Network Training IV Experiments IV-A Setup IV-B Main results on DCASE2020T2 IV-C Results on MIMII IV-C 1 Memory sizes IV-C 2 Design choices V Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.22086v1 [cs.SD] 24 Jul 2026 MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection Phurich Saengthong, Takahiro Shinozaki Institute of Science Tokyo, Japan Abstract Autoencoder-based anomalous sound detection is attractive for machine condition monitoring because it can be trained using only normal recordings and yields an interpretable anomaly score..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:69",
+  "page": "arxiv:2607.22086v1",
+  "subject": "NMF",
+  "object": "LPC",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NMF builds on LPC.",
+  "contexts": [
+   "[body] ...MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection Abstract I Introduction II Related Work III Method III-A Linear Predictive Coding (LPC) Spectrum III-B Memory-Network-Based Non-Negative Matrix Factorization III-B 1 Non-Negative Matrix Factorization III-B 2 Memory Network Training IV Experiments IV-A Setup IV-B Main results on DCASE2020T2 IV-C Re...",
+   "[body] ...MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection Abstract I Introduction II Related Work III Method III-A Linear Predictive Coding (LPC) Spectrum III-B Memory-Network-Based Non-Negative Matrix Factorization III-B 1 Non-Negative Matrix Factorization III-B 2 Memory Network Training IV Experiments IV-A Setup IV-B Main results on DCASE2020T2 IV-C Results on MIMII IV-C 1 Memory sizes IV-C 2 Design choices V Conclusion References License: arXiv.org perpetual non-exclusive l...",
+   "[body] ...trix Factorization III-B 2 Memory Network Training IV Experiments IV-A Setup IV-B Main results on DCASE2020T2 IV-C Results on MIMII IV-C 1 Memory sizes IV-C 2 Design choices V Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.22086v1 [cs.SD] 24 Jul 2026 MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection Phurich Saengthong, Takahiro Shinozaki Institute of Science Tokyo, Japan Abstract Autoencoder-based anomalous sound detection is attractive for machine condition monitoring because it can be trained using only normal recordings and yields an interpretable anomaly score from reconstruction error. M..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:70",
+  "page": "arxiv:2607.22086v1",
+  "subject": "NMF",
+  "object": "transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NMF builds on transformer.",
+  "contexts": [
+   "[body] ...across sec-dev and sec-eval using the arithmetic mean of AUC and pAUC (Amean). On this aggregate metric, our MemNMF achieved consistent improvements over the AE baseline and competitive performance against recent AE-based approaches (e.g., ANP-IDNN). On sec-dev , MemNMF was competitive with PAE, which uses a stronger Transformer-based architecture, suggesting that a substantial portion of the gain can be attributed to the LPC-spectrum input and the proposed memory-based reconstruction. However, MemNMF underperformed AudDSR, which can benefit from training on broader machine data and from anomaly augmentation strategies, whereas our setting focuses on..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:71",
+  "page": "arxiv:2607.22086v1",
+  "subject": "NMF",
+  "object": "Attention",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NMF builds on Attention.",
+  "contexts": [
+   "[body] ...ell, weakening normal\u2013anomaly separation. We propose MemNMF, a constrained reconstruction method that operates on the Linear Predictive Coding spectrum, a compact estimate of the spectral envelope. MemNMF initializes a memory module from an NMF dictionary learned on normal LPC spectra and reconstructs each input as an attention-weighted combination of prototypical normal spectral patterns. Experiments on MIMII and DCASE 2020 Task 2 across multiple machine types and operating conditions show that LPC-spectrum inputs improve a standard autoencoder baseline and that MemNMF yields further gains, with especially strong robustness under noisy, non-stationary...",
+   "[abstract] ...ll, weakening normal--anomaly separation. We propose MemNMF, a constrained reconstruction method that operates on the Linear Predictive Coding spectrum, a compact estimate of the spectral envelope. MemNMF initializes a memory module from an NMF dictionary learned on normal LPC spectra and reconstructs each input as an attention-weighted combination of prototypical normal spectral patterns. Experiments on MIMII and DCASE 2020 Task 2 across multiple machine types and operating conditions show that LPC-spectrum inputs improve a standard autoencoder baseline and that MemNMF yields further gains, with especially strong robustness under noisy, non-stationary..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:72",
+  "page": "arxiv:2607.22098v1",
+  "subject": "Reasoning Denoiser",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Reasoning Denoiser is evaluated on GSM8K.",
+  "contexts": [
+   "[body] ...alternative labeling methods is verified in Appendix C.5 ). By default, model outputs are generated with greedy decoding. Additional prompt, dataset, sampling strategies, and implementation details are provided in Appendices A.1 , A.2 , C.3 , and A.4 , respectively. We also report qualitative case studies, results on GSM8K [ 11 ] , the impact of filtering on task accuracy, and additional evaluation metrics in Appendices C.1 , C.6 , C.9 , and C.10 , respectively. Baselines. We first compare detection performance using the original unfiltered reasoning trace and our filtered one under four representative hallucination detectors: probing-based detector (..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:73",
+  "page": "arxiv:2607.22098v1",
+  "subject": "Reasoning Denoiser",
+  "object": "MATH-500",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Reasoning Denoiser is evaluated on MATH-500.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:74",
+  "page": "arxiv:2607.22098v1",
+  "subject": "Reasoning Denoiser",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Reasoning Denoiser builds on Qwen3.",
+  "contexts": [
+   "[body] ...ayer embeddings. (b) Confidence-based signals fail to distinguish informative and noisy steps, as their score distributions overlap heavily. (c) Naive k k NN-based on raw step embeddings can identify irrelevant steps but fails to separate repetitive from informative ones. Experiments are based on AIME 2024 [ 26 ] with Qwen3-8B [ 64 ] . We annotate the reasoning steps into informative, irrelevant, and repetitive categories. Annotation details are in Appendix A.3 . A key challenge is that long reasoning traces often contain noisy steps that are weakly informative for hallucination detection. By examining LRM trajectories, we identify two prevalent forms...",
+   "[body] ...wering, respectively. For all datasets, we use 25% of the available data for testing, reserve 100 examples for validation, and use the remaining data for training. We evaluate all methods using AUROC, and all reported results are averaged over three random seeds. We evaluate our method on two widely used LRM families: Qwen3-8B/32B [ 64 ] and DeepSeek-R1-Distill-Llama-8B/DeepSeek-R1-Distill-Qwen-32B [ 17 ] . Correctness labels are obtained using a strong external judge model Qwen3-32B following prior work [ 66 ] (robustness to alternative labeling methods is verified in Appendix C.5 ). By default, model outputs are generated with greedy decoding. Additi...",
+   "[body] ...ing. We evaluate all methods using AUROC, and all reported results are averaged over three random seeds. We evaluate our method on two widely used LRM families: Qwen3-8B/32B [ 64 ] and DeepSeek-R1-Distill-Llama-8B/DeepSeek-R1-Distill-Qwen-32B [ 17 ] . Correctness labels are obtained using a strong external judge model Qwen3-32B following prior work [ 66 ] (robustness to alternative labeling methods is verified in Appendix C.5 ). By default, model outputs are generated with greedy decoding. Additional prompt, dataset, sampling strategies, and implementation details are provided in Appendices A.1 , A.2 , C.3 , and A.4 , respectively. We also report quali..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:75",
+  "page": "arxiv:2607.22098v1",
+  "subject": "Reasoning Denoiser",
+  "object": "Attention",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Reasoning Denoiser builds on Attention.",
+  "contexts": [
+   "[abstract] ...etection performance. Existing confidence-based scores and naive embedding-based filtering fail to reliably separate noisy from informative steps. To address this challenge, we propose REDE, a novel learning framework for denoising reasoning traces for hallucination detection. Specifically, REDE leverages final-answer attention as an automatic supervision signal to shape the step-level representation space, yielding refined embeddings in which noisy steps can be reliably identified and filtered. REDE can be readily plugged into diverse hallucination detectors by operating on the filtered reasoning trajectory after removing noisy steps. Extensive experi..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:76",
+  "page": "arxiv:2607.22114v1",
+  "subject": "EHR",
+  "object": "transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "EHR builds on transformer.",
+  "contexts": [
+   "[body] ...tient timelines, train GPT-2 (Radford et al. , 2019 ) style models with next-token prediction, and evaluate them by rolling out future events from a clinical prediction point to obtain zero-shot predictions for downstream tasks. Foresight (Kraljevic et al. , 2024 ) models patient timelines with a generative pretrained transformer that combines structured EHR data and free text to predict future clinical concepts and outcomes. CoMET (Waxler et al. , 2025 ) demonstrates that autoregressive medical event pretraining with a next-token prediction objective scales to larger models and da [...] 4 Experiments and Results Method ICU Mortality ICU Readmission IC..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:77",
+  "page": "arxiv:2607.22115v1",
+  "subject": "SQL",
+  "object": "SFT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SQL builds on SFT.",
+  "contexts": [
+   "[body] ...Conclusion References A Details of Human-in-the-Loop Validation A.1 Automatic Quality Metrics A.2 Reject-Regenerate Feedback Loop A.3 Human Validation Protocol A.3.1 Annotator Setup A.3.2 Validation Criteria A.3.3 Disagreement Resolution A.3.4 Statistics. B Details in Generating DataOperators C Parameters and Detailed SFT Settings D Row-Level RBAC Feasibility Study E Per-Difficulty Results License: arXiv.org perpetual non-exclusive license arXiv:2607.22115v1 [cs.DB] 24 Jul 2026 Benchmarking Text-to-SQL under Role-Based Access Control Yang Fei National University of Singapore yfei11@u.nus.edu , Yangfan Jiang National University of Singapore jyangfan@u.n..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:78",
+  "page": "arxiv:2607.22136v1",
+  "subject": "Dynamic Commonsense",
+  "object": "Attention",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Dynamic Commonsense builds on Attention.",
+  "contexts": [
+   "[body] ...and empathetic response generation. Additional design motivations and implementation details are provided in Appendix B . 4.2 Commonsense Encoding and Cross-source Coordination (SCE-AttnRes) Figure 3 illustrates the SCE-AttnRes module, which consists of three steps: commonsense encoding, cross-source coordination, and attention-residual fusion. Figure 3: Overview of the SCE-AttnRes module for cross-source commonsense coordination. Given dialogue D D and situation S S , COMET generates five commonsense relations per source. The two streams are independently encoded, fused via cross-attention (situation \u2192 \\to dialogue), and adaptively balanced via attent...",
+   "[body] ...ommonsense encoding, cross-source coordination, and attention-residual fusion. Figure 3: Overview of the SCE-AttnRes module for cross-source commonsense coordination. Given dialogue D D and situation S S , COMET generates five commonsense relations per source. The two streams are independently encoded, fused via cross-attention (situation \u2192 \\to dialogue), and adaptively balanced via attention-residual selection. The coordinated representations are used for dialogue refinement, while the original encoded commonsense representations are preserved as relation-level memories for AGCF. 4.2.1 Commonsense Encoding COMET generates five relations for each sourc...",
+   "[body] ...dual fusion. Figure 3: Overview of the SCE-AttnRes module for cross-source commonsense coordination. Given dialogue D D and situation S S , COMET generates five commonsense relations per source. The two streams are independently encoded, fused via cross-attention (situation \u2192 \\to dialogue), and adaptively balanced via attention-residual selection. The coordinated representations are used for dialogue refinement, while the original encoded commonsense representations are preserved as relation-level memories for AGCF. 4.2.1 Commonsense Encoding COMET generates five relations for each source. The four cognitive relations are encoded using a shared cogniti..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:79",
+  "page": "arxiv:2607.22139v1",
+  "subject": "CARDIAG",
+  "object": "LAD",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CARDIAG builds on LAD.",
+  "contexts": [
+   "[body] ...gmenting a single selected part of the artery tree: Zhang et al. [ 48 ] design Progressive Perception Learning framework (PPL) in which they utilize features at different resolution levels (local, surrounding, semantic) for improved performance. However the approach is limited to highlighting left anterior descending (LAD), right coronary artery (RCA) and left circumflex (LCX). Other notable approaches are: Park et al. [ 29 ] proposal to also use ensembling as a way to improve Dice score of the segmentation, Jun et al. [ 17 ] introduce T-Net - a variation on U Net to account for multiple-size feature maps in a single block. While the findings are impor...",
+   "[body] ...udy especially the use of multi-scale features proves crucial later, these approaches solve a task fundamentally easier than what we partake, as the main segments are more coarse-grained and cover bigger areas. Even a simple U Net can reach F 1 &gt; 0.80 F_{1}&gt;0.80 as shown by Xian et al. [ 41 ] . Furthermore, RCA, LAD and LCX are typically observed by a clinician from different perspectives, which makes the task closer to binary segmentation than multi-class labelling. The goal of binary segmentation is to assign all of the image pixels to two classes - either vessel (foreground) or non-vessel (background). While it is still simpler than multi-clas..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:80",
+  "page": "arxiv:2607.22148v1",
+  "subject": "dRAE",
+  "object": "VAE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "dRAE builds on VAE.",
+  "contexts": [
+   "[body] ...have conventionally been separated by their representation designs. Visual encoders optimized for understanding [ 42 , 37 , 55 ] , excel at mapping images to high-dimensional, semantically rich spaces via vision transformers (ViTs) [ 13 , 20 ] , whereas generative frameworks typically rely on variational autoencoders (VAEs) [ 24 , 43 , 15 , 38 ] to compress images into low-dimensional manifolds. While modern VAEs are highly optimized for localized pixel reconstruction, scaling their latent dimensions is constrained by the KL-divergence prior and practical difficulties [ 65 ] . Consequently, most unified multimodal models resort to disjointed pipelines\u2014...",
+   "[body] ...d for understanding [ 42 , 37 , 55 ] , excel at mapping images to high-dimensional, semantically rich spaces via vision transformers (ViTs) [ 13 , 20 ] , whereas generative frameworks typically rely on variational autoencoders (VAEs) [ 24 , 43 , 15 , 38 ] to compress images into low-dimensional manifolds. While modern VAEs are highly optimized for localized pixel reconstruction, scaling their latent dimensions is constrained by the KL-divergence prior and practical difficulties [ 65 ] . Consequently, most unified multimodal models resort to disjointed pipelines\u2014employing a ViT for comprehension and an independent VAE for generation. Recently, a promisi...",
+   "[body] ...olds. While modern VAEs are highly optimized for localized pixel reconstruction, scaling their latent dimensions is constrained by the KL-divergence prior and practical difficulties [ 65 ] . Consequently, most unified multimodal models resort to disjointed pipelines\u2014employing a ViT for comprehension and an independent VAE for generation. Recently, a promising trend has emerged to bridge this architectural gap. Frameworks [ 61 , 70 ] such as the representation autoencoder (RAE) demonstrate that high-dimensional features from contrastive or self-supervised models can be directly used to reconstruct images via a simple ViT. As these pretrained representat..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:0",
+  "page": "arxiv:2607.22157v1",
+  "subject": "Spark memory system",
+  "object": "tau-bench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The study evaluates continual learning on the banking domain of tau-bench.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:1",
+  "page": "arxiv:2607.22157v1",
+  "subject": "Spark memory system",
+  "object": "Mistral Large",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Spark is evaluated on Mistral Large, an open-weights model.",
+  "contexts": [
+   "[body] ...del\u2019s training set. The benchmark\u2019s primary metric is pass^k : a task counts only if the agent solves it in all k k independent trials. It is a deliberately strict reliability measure. Our protocol modifies its interpretation, as described below. Models. We use two agent models, chosen to span the deployment spectrum: Mistral Large (version 2512), a capable open-weights model that an organisation with data sovereignty requirements could realistically self-host, and Claude Sonnet 5, a frontier model run at medium reasoning effort. The customer simulator is GPT-5.2, matching the benchmark\u2019s public leaderboard configuration. 3.3 Experiment 1: continual le...",
+   "[body] ...and Claude Sonnet 5, a frontier model run at medium reasoning effort. The customer simulator is GPT-5.2, matching the benchmark\u2019s public leaderboard configuration. 3.3 Experiment 1: continual learning The first experiment measures continual learning from post-episode feedback. Both models run it on the full task set: Mistral Large under all three conditions,...",
+   "[abstract] ...a static-RAG control retrieving over the complete policy corpus, learning from the one-bit outcome verdict lifts single-trial success to 1.6$\\times$ the baseline, and learning from corrections to 2.6$\\times$, converting 22 of the 84 tasks the baseline never solves. The result spans the deployment spectrum, measured on Mistral Large, an open-weights model that organisations with data sovereignty requirements can self-host, and replicated on a frontier model, Claude Sonnet 5. The accumulated memory also transfers: each model, reading the store built by the other, rises above its own no-memory baseline. The harness, protocol, and data are released...."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:2",
+  "page": "arxiv:2607.22157v1",
+  "subject": "Spark memory system",
+  "object": "Claude Sonnet 5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The study replicates results on Claude Sonnet 5, a frontier model.",
+  "contexts": [
+   "[body] ...rately strict reliability measure. Our protocol modifies its interpretation, as described below. Models. We use two agent models, chosen to span the deployment spectrum: Mistral Large (version 2512), a capable open-weights model that an organisation with data sovereignty requirements could realistically self-host, and Claude Sonnet 5, a frontier model run at medium reasoning effort. The customer simulator is GPT-5.2, matching the benchmark\u2019s public leaderboard configuration. 3.3 Experiment 1: continual learning The first experiment measures continual learning from post-episode feedback. Both models run it on the full task set: Mistral Large under all t...",
+   "[abstract] ...times$ the baseline, and learning from corrections to 2.6$\\times$, converting 22 of the 84 tasks the baseline never solves. The result spans the deployment spectrum, measured on Mistral Large, an open-weights model that organisations with data sovereignty requirements can self-host, and replicated on a frontier model, Claude Sonnet 5. The accumulated memory also transfers: each model, reading the store built by the other, rises above its own no-memory baseline. The harness, protocol, and data are released...."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:3",
+  "page": "arxiv:2607.22157v1",
+  "subject": "Spark memory system",
+  "object": "BM25",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The benchmark uses BM25 retrieval over the policy corpus as the baseline.",
+  "contexts": [
+   "[body] ...plying agents with knowledge is retrieval-augmented generation (RAG), which offers a strong but static foundation. We use RAG as the baseline in this study. We compare the baseline against learning from two grades of supervision, leading to the following three conditions: \u2022 baseline : the benchmark\u2019s stock agent, with BM25 retrieval over the complete corpus of roughly 700 policy documents that govern the tasks: a static RAG control. \u2022 experience : the agent receives a single correct-or-incorrect verdict on the completed episode. It must generate its own lessons from that one bit: approaches that worked are kept, approaches that failed are marked to be...",
+   "[body] ...version 1.0.1 of the benchmark, which was current at the time of this study. The banking domain withholds the policy. The agent receives no business rules upfront and must discover both the rules and the available tools by searching a corpus of roughly 700 interconnected policy documents with a retrieval tool (sparse BM25 retrieval in our configuration). This makes the domain hard: published frontier results sit around 25% single-trial success, and even in the benchmark\u2019s gold configuration, which places the task-critical documents directly in the system prompt, the best models reach only about 40% shi2026tauknowledge . Knowledge the model does not al..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:4",
+  "page": "arxiv:2607.22165v1",
+  "subject": "DBA-Bench",
+  "object": "GPT-5.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DBA-Bench evaluates GPT-5.5-backed database agents among baseline groups.",
+  "contexts": [
+   "[body] ...s; and restores snapshots with scenario-specific checks before each run. The benchmark contains 106 scenarios across seven task domains, with two public difficulty labels based on reference-path diagnostic depth and environmental complexity. We evaluate nine baseline groups, including six foundation-model systems, two GPT-5.5-backed database agents, and a Human DBA reference. Across 848 automated runs, Diagnosis, Outcome, and Safe Pass rates are 32.7%, 19.6%, and 12.4%; the best automated baseline reaches 17.9% Safe Pass versus 93.4% for the Human DBA reference. Automated Safe Pass falls from 19.6% on Easy scenarios to 7.6% on Hard scenarios, underscor...",
+   "[body] ...shboards, SQL terminals, and database management consoles. Each benchmark run forms a closed operational loop: the agent localizes evidence in a live faulty environment, applies remediation, and verifies the outcome while the workload remains active. We evaluate six foundation models under a common ReAct workflow, two GPT-5.5-backed database agents, and a Human DBA reference. Across 848 automated runs, Diagnosis Pass, Outcome Pass, and Safe Pass are 32.7%, 19.6%, and 12.4%, respectively. The best automated Safe Pass rate is 17.9%, versus 93.4% for the Human DBA reference, a 75.5-percentage-point gap. Automated Safe Pass falls from 19.6% on Easy scenari...",
+   "[abstract] ...s; and restores snapshots with scenario-specific checks before each run. The benchmark contains 106 scenarios across seven task domains, with two public difficulty labels based on reference-path diagnostic depth and environmental complexity. We evaluate nine baseline groups, including six foundation-model systems, two GPT-5.5-backed database agents, and a Human DBA reference. Across 848 automated runs, Diagnosis, Outcome, and Safe Pass rates are 32.7%, 19.6%, and 12.4%; the best automated baseline reaches 17.9% Safe Pass versus 93.4% for the Human DBA reference. Automated Safe Pass falls from 19.6% on Easy scenarios to 7.6% on Hard scenarios, underscor..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:5",
+  "page": "arxiv:2607.22165v1",
+  "subject": "DBA-Bench",
+  "object": "ReAct",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DBA-Bench evaluates six foundation models under a common ReAct workflow.",
+  "contexts": [
+   "[body] ...using monitoring dashboards, SQL terminals, and database management consoles. Each benchmark run forms a closed operational loop: the agent localizes evidence in a live faulty environment, applies remediation, and verifies the outcome while the workload remains active. We evaluate six foundation models under a common ReAct workflow, two GPT-5.5-backed database agents, and a Human DBA reference. Across 848 automated runs, Diagnosis Pass, Outcome Pass, and Safe Pass are 32.7%, 19.6%, and 12.4%, respectively. The best automated Safe Pass rate is 17.9%, versus 93.4% for the Human DBA reference, a 75.5-percentage-point gap. Automated Safe Pass falls from 1..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:6",
+  "page": "arxiv:2607.22186v1",
+  "subject": "ESTR",
+  "object": "BrowseComp-Plus",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ESTR is evaluated on agentic deep search on BrowseComp-Plus.",
+  "contexts": [
+   "[body] ...ucing abrupt surges in token entropy and importance ratios at switch points. \u2022 We establish a fundamental ent [...] 5 Experiment 5.1 Setup Tasks. We evaluate ESTR on two task families. Long-horizon multi-turn tool use produces long rollouts that interleave reasoning with external tool calls: (i) agentic deep search on BrowseComp-Plus (Chen et al. 2025 ) with Qwen3-30B-A3B (Team 2025 ) ; and (ii) tool-integrated math on multi-turn GSM8K (Cobbe et al. 2021 ) under a binary exact-match reward. Mathematical reasoning tests generalization beyond the long-horizon regime: we train on DAPO-Math (Yu et al. 2025 ) with Qwen2.5-7B (Team 2024 ) and evaluate on AIM...",
+   "[body] ...eline colocates generation and training on the same total hardware, so all efficiency comparisons are made under equal resource budgets. Full hyperparameters, per-task resource splits, training configurations, and hyperparameter sensitivity studies are provided in the appendix. Figure 4: Validation accuracy (avg@1) on BrowseComp-Plus across asynchronous methods. 5.2 Long-Horizon Multi-Turn Tool Use Using the staleness definition from Eq. ( 2 ), we evaluate two long-horizon settings: agentic search on BrowseComp-Plus ( \u0394 intra = 5 \\Delta^{\\mathrm{intra}}{=}5 , \u0394 inter = 1 \\Delta^{\\mathrm{inter}}{=}1 ), and tool-integrated math on GSM8K ( \u0394 intra = 5 \\De...",
+   "[body] ...raining configurations, and hyperparameter sensitivity studies are provided in the appendix. Figure 4: Validation accuracy (avg@1) on BrowseComp-Plus across asynchronous methods. 5.2 Long-Horizon Multi-Turn Tool Use Using the staleness definition from Eq. ( 2 ), we evaluate two long-horizon settings: agentic search on BrowseComp-Plus ( \u0394 intra = 5 \\Delta^{\\mathrm{intra}}{=}5 , \u0394 inter = 1 \\Delta^{\\mathrm{inter}}{=}1 ), and tool-integrated math on GSM8K ( \u0394 intra = 5 \\Delta^{\\mathrm{intra}}{=}5 , \u0394 inter = 13 \\Delta^{\\mathrm{inter}}{=}13 ). In both settings, ESTR significantly outperforms all other asynchronous baselines. By scaling the trust region to..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:7",
+  "page": "arxiv:2607.22186v1",
+  "subject": "ESTR",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ESTR is tested on tool-integrated math tasks on multi-turn GSM8K.",
+  "contexts": [
+   "[body] ...] 5 Experiment 5.1 Setup Tasks. We evaluate ESTR on two task families. Long-horizon multi-turn tool use produces long rollouts that interleave reasoning with external tool calls: (i) agentic deep search on BrowseComp-Plus (Chen et al. 2025 ) with Qwen3-30B-A3B (Team 2025 ) ; and (ii) tool-integrated math on multi-turn GSM8K (Cobbe et al. 2021 ) under a binary exact-match reward. Mathematical reasoning tests generalization beyond the long-horizon regime: we train on DAPO-Math (Yu et al. 2025 ) with Qwen2.5-7B (Team 2024 ) and evaluate on AIME 2024 (Zhang and Math-AI 2024 ) , 2025 (Zhang and Math-AI 2025 ) , and 2026 (Zhang and Math-AI 2026 ) . Baselines...",
+   "[body] ...on BrowseComp-Plus across asynchronous methods. 5.2 Long-Horizon Multi-Turn Tool Use Using the staleness definition from Eq. ( 2 ), we evaluate two long-horizon settings: agentic search on BrowseComp-Plus ( \u0394 intra = 5 \\Delta^{\\mathrm{intra}}{=}5 , \u0394 inter = 1 \\Delta^{\\mathrm{inter}}{=}1 ), and tool-integrated math on GSM8K ( \u0394 intra = 5 \\Delta^{\\mathrm{intra}}{=}5 , \u0394 inter = 13 \\Delta^{\\mathrm{inter}}{=}13 ). In both settings, ESTR significantly outperforms all other asynchronous baselines. By scaling the trust region to local entropy, ESTR successfully stabilizes training while preserving the legitimate exploration naturally induced by intra-traject...",
+   "[body] ...mics for all tasks are provided in the Appendix. (a) Policy entropy (b) Rollout\u2013target KL Figure 5: BCP training dynamics (Qwen3-30B-A3B): ESTR sustains a steady, stable policy entropy and achieves the best train-inference consistency (lowest rollout\u2013target KL) among all asynchronous methods. Under the more aggressive GSM8K configuration, Figure 6 shows that IcePop and KPop destabilize, with their training scores dropping irreversibly within a few hundred steps, whereas ESTR trains stably and achieves the highest performance. As reported in Table 1 , ESTR reaches 95.7 on GSM8K, essentially matching synchronous GRPO, while the asynchronous baselines col..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:8",
+  "page": "arxiv:2607.22186v1",
+  "subject": "ESTR",
+  "object": "AIME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ESTR is evaluated on AIME 2024, 2025, and 2026 for mathematical reasoning.",
+  "contexts": [
+   "[body] ...Chen et al. 2025 ) with Qwen3-30B-A3B (Team 2025 ) ; and (ii) tool-integrated math on multi-turn GSM8K (Cobbe et al. 2021 ) under a binary exact-match reward. Mathematical reasoning tests generalization beyond the long-horizon regime: we train on DAPO-Math (Yu et al. 2025 ) with Qwen2.5-7B (Team 2024 ) and evaluate on AIME 2024 (Zhang and Math-AI 2024 ) , 2025 (Zhang and Math-AI 2025 ) , and 2026 (Zhang and Math-AI 2026 ) . Baselines. All methods share the same experimental configuration, differing only in the token-level acceptance rule; all masking baselines act on the same off-policy ratio \u03c0 \u03b8 / \u03bc \\pi_{\\theta}/\\mu as ESTR. Sync is synchronous GRPO (...",
+   "[body] ...8 \\Delta^{\\mathrm{intra}}{=}8 , \u0394 inter = 10 \\Delta^{\\mathrm{inter}}{=}10 ). Na\u00efve asynchronous training collapses irreversibly early in training; IcePop and KPop avoid collapse but plateau at a lower reward; ESTR improves throughout training and attains the highest final reward. Table 1 reports downstream accuracy on AIME 2024\u20132026: ESTR reaches an avg@4 of 17.04 17.04 , closely approaching the synchronous baseline of 17.54 17.54 despite the aggressive staleness. Furthermore, it achieves the highest pass@4 of 28.38 28.38 compared to 27.68 27.68 for the synchronous baseline, indicating that the preserved high-ent..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:9",
+  "page": "arxiv:2607.22186v1",
+  "subject": "ESTR",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ESTR is compared against synchronous GRPO as a baseline.",
+  "contexts": [
+   "[body] ...ng and Math-AI 2024 ) , 2025 (Zhang and Math-AI 2025 ) , and 2026 (Zhang and Math-AI 2026 ) . Baselines. All methods share the same experimental configuration, differing only in the token-level acceptance rule; all masking baselines act on the same off-policy ratio \u03c0 \u03b8 / \u03bc \\pi_{\\theta}/\\mu as ESTR. Sync is synchronous GRPO (Guo et al. 2025 ) ; Async is vanilla asynchronous training with no correction; IcePop (Team et al. 2025 ) keeps a token when its ratio lies within a fixed interval; and KPop (Guo et al. 2026 ) keeps a token when the bidirectional binary KL between behavior and target token probabilities stays below a threshold. Implementation. All e...",
+   "[body] ...r the more aggressive GSM8K configuration, Figure 6 shows that IcePop and KPop destabilize, with their training scores dropping irreversibly within a few hundred steps, whereas ESTR trains stably and achieves the highest performance. As reported in Table 1 , ESTR reaches 95.7 on GSM8K, essentially matching synchronous GRPO, while the asynchronous baselines collapse to 60\u201371. This shared failure stems from the baselines\u2019 fundamental design. Magnitude-only correction discards the high- | \u03b4 t | |\\delta_{t}| tokens that carry essential exploration at high entropy, so these methods degrade and eventually fail as the off-policy gap expands. ESTR instead eval...",
+   "[abstract] ...y deviation by its local entropy, requiring no auxiliary forward passes or explicit version-switch detection. Across long-horizon agentic tasks and mathematical reasoning benchmarks, ESTR consistently outperforms existing asynchronous methods and achieves the best train-inference consistency. Compared with synchronous GRPO, ESTR attains comparable accuracy while improving training speed by $2.6\\times$...."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:10",
+  "page": "arxiv:2607.22186v1",
+  "subject": "ESTR",
+  "object": "IcePop",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "ESTR outperforms IcePop across long-horizon and mathematical reasoning tasks.",
+  "contexts": [
+   "[body] ...2026 ) . Baselines. All methods share the same experimental configuration, differing only in the token-level acceptance rule; all masking baselines act on the same off-policy ratio \u03c0 \u03b8 / \u03bc \\pi_{\\theta}/\\mu as ESTR. Sync is synchronous GRPO (Guo et al. 2025 ) ; Async is vanilla asynchronous training with no correction; IcePop (Team et al. 2025 ) keeps a token when its ratio lies within a fixed interval; and KPop (Guo et al. 2026 ) keeps a token when the bidirectional binary KL between behavior and target token probabilities stays below a threshold. Implementation. All experiments are implemented in the verl framework (Sheng et al. 2025 ) on H800 GPUs (8...",
+   "[body] ...scaling the trust region to local entropy, ESTR successfully stabilizes training while preserving the legitimate exploration naturally induced by intra-trajectory version switches. On BrowseComp-Plus, ESTR reaches 37.3 avg@1, surpassing all asynchronous baselines by a clear margin, as detailed in Table 1 (Async 28.9, IcePop 32.5, KPop 34.9). The underlying training dynamics provide further insights. Figure 5(a) illustrates that ESTR maintains a steady increase in policy entropy, ensuring progressive exploration. Concurrently, Figure 5(b) demonstrates that ESTR achieves the best train-inference consistency by effectively controlling the rollout\u2013target...",
+   "[body] ...pendix. (a) Policy entropy (b) Rollout\u2013target KL Figure 5: BCP training dynamics (Qwen3-30B-A3B): ESTR sustains a steady, stable policy entropy and achieves the best train-inference consistency (lowest rollout\u2013target KL) among all asynchronous methods. Under the more aggressive GSM8K configuration, Figure 6 shows that IcePop and KPop destabilize, with their training scores dropping irreversibly within a few hundred steps, whereas ESTR trains stably and achieves the highest performance. As reported in Table 1 , ESTR reaches 95.7 on GSM8K, essentially matching synchronous GRPO, while the asynchronous baselines collapse to 60\u201371. This shared failure stems..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:11",
+  "page": "arxiv:2607.22186v1",
+  "subject": "ESTR",
+  "object": "KPop",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "ESTR consistently outperforms KPop on both asynchronous training tasks.",
+  "contexts": [
+   "[body] ...in the token-level acceptance rule; all masking baselines act on the same off-policy ratio \u03c0 \u03b8 / \u03bc \\pi_{\\theta}/\\mu as ESTR. Sync is synchronous GRPO (Guo et al. 2025 ) ; Async is vanilla asynchronous training with no correction; IcePop (Team et al. 2025 ) keeps a token when its ratio lies within a fixed interval; and KPop (Guo et al. 2026 ) keeps a token when the bidirectional binary KL between behavior and target token probabilities stays below a threshold. Implementation. All experiments are implemented in the verl framework (Sheng et al. 2025 ) on H800 GPUs (8 per node), using disaggregated rollout and training pools in the asynchronous setting. Th...",
+   "[body] ...trust region to local entropy, ESTR successfully stabilizes training while preserving the legitimate exploration naturally induced by intra-trajectory version switches. On BrowseComp-Plus, ESTR reaches 37.3 avg@1, surpassing all asynchronous baselines by a clear margin, as detailed in Table 1 (Async 28.9, IcePop 32.5, KPop 34.9). The underlying training dynamics provide further insights. Figure 5(a) illustrates that ESTR maintains a steady increase in policy entropy, ensuring progressive exploration. Concurrently, Figure 5(b) demonstrates that ESTR achieves the best train-inference consistency by effectively controlling the rollout\u2013target KL divergence...",
+   "[body] ...Policy entropy (b) Rollout\u2013target KL Figure 5: BCP training dynamics (Qwen3-30B-A3B): ESTR sustains a steady, stable policy entropy and achieves the best train-inference consistency (lowest rollout\u2013target KL) among all asynchronous methods. Under the more aggressive GSM8K configuration, Figure 6 shows that IcePop and KPop destabilize, with their training scores dropping irreversibly within a few hundred steps, whereas ESTR trains stably and achieves the highest performance. As reported in Table 1 , ESTR reaches 95.7 on GSM8K, essentially matching synchronous GRPO, while the asynchronous baselines collapse to 60\u201371. This shared failure stems from the b..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:12",
+  "page": "arxiv:2607.22205v1",
+  "subject": "FBA",
+  "object": "LLaVA-v1.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "FBA improves LLaVA-v1.5 on HarborEval from 57.95 to 70.29.",
+  "contexts": [
+   "[body] ...multi-source understanding across RGB, SAR, PAN, and NIR imagery. The above-mentioned capabilities are developed along the staged route prior to the final harbor-scenario evaluation. Backbone Training Route Main Perception Spatial Robustness Generation Overall Object Zone Modality Relation Grid Negative Reject Report LLaVA-v1.5 full-pipeline validation from multimodal initialization LLaVA-v1.5 Official Model (ref.) 46.22 71.42 51.67 48.54 51.12 32.13 47.15 40.24 27.47 Direct-SFT 57.95 75.07 66.67 50.88 60.67 48.37 52.03 37.28 72.60 G 0 \u2192 C 2 , 3 G_{0}\\!\\rightarrow\\!C_{2,3} 55.34 42.41 52.22 61.40 68.09 45.86 52.85 58.69 61.20 I 0 \u2192 S 1 \u2192 C 2 , 3 I_{0}...",
+   "[body] ...The above-mentioned capabilities are developed along the staged route prior to the final harbor-scenario evaluation. Backbone Training Route Main Perception Spatial Robustness Generation Overall Object Zone Modality Relation Grid Negative Reject Report LLaVA-v1.5 full-pipeline validation from multimodal initialization LLaVA-v1.5 Official Model (ref.) 46.22 71.42 51.67 48.54 51.12 32.13 47.15 40.24 27.47 Direct-SFT 57.95 75.07 66.67 50.88 60.67 48.37 52.03 37.28 72.60 G 0 \u2192 C 2 , 3 G_{0}\\!\\rightarrow\\!C_{2,3} 55.34 42.41 52.22 61.40 68.09 45.86 52.85 58.69 61.20 I 0 \u2192 S 1 \u2192 C 2 , 3 I_{0}\\!\\rightarrow\\!S_{1}\\!\\rightarrow\\!C_{2,3} 55.74 73.85 51.11 57.89...",
+   "[body] ...HarborEval VRSBench RSVQA OpenEval Existing RS-MLLMs GeoChat [CVPR\u201924] 7B 318K * 47.49 53.44 51.46 21.78 SkyEyeGPT [ISPRS\u201925] 7B 968K 28.28 36.72 36.72 12.33 LHRS-Bot-Nova [ISPRS\u201925] 7B 2.02M 39.73 28.40 31.15 22.96 SkySenseGPT [ISPRS\u201926] 7B 3.00M 47.24 42.99 42.98 35.78 Models trained with the proposed paradigm FBA (LLaVA-v1.5) 7B 810K 70.29 57.62 53.96 61.47 FBA (Qwen3-VL) 8B 810K 83.37 67.77 63.00 76.67 Table 2: Scenario-level comparison with existing RS-MLLMs on HarborEval, VRSBench, RSVQA, and OpenEval. * GeoChat is initialized from LLaVA-1.5 and its reported data scale excludes the inherited \u223c \\sim 1.22M general-purpose samples for consistency...."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:13",
+  "page": "arxiv:2607.22205v1",
+  "subject": "FBA",
+  "object": "Qwen3-VL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "FBA improves Qwen3-VL on HarborEval from 81.09 to 83.37.",
+  "contexts": [
+   "[body] ..., 3 I_{0}\\!\\rightarrow\\!S_{1}\\!\\rightarrow\\!C_{2,3} 55.74 73.85 51.11 57.89 59.55 31.74 34.96 67.46 69.34 FBA: I 0 \u2192 S 1 \u2192 S 2 \u2192 S 3 I_{0}\\!\\rightarrow\\!S_{1}\\!\\rightarrow\\!S_{2}\\!\\rightarrow\\!S_{3} 70.29 73.47 67.22 80.12 69.10 43.82 69.11 85.80 73.70 Native MLLM adaptation from official visual-instruction-tuned base Qwen3-VL B 0 B_{0} 70.37 80.06 74.44 76.02 40.91 65.81 65.85 94.67 65.24 Direct-SFT 81.09 87.99 78.33 81.29 81.46 66.06 78.05 95.27 80.23 B 0 \u2192 C 2 , 3 B_{0}\\!\\rightarrow\\!C_{2,3} 72.84 88.06 39.44 58.48 82.58 65.70 74.80 98.82 69.25 B 0 \u2192 S 1 \u2192 C 2 , 3 B_{0}\\!\\rightarrow\\!S_{1}\\!\\rightarrow\\!C_{2,3} 79.36 82.06 80.56 81.97 84.27 67.56 65...",
+   "[body] ...LLMs GeoChat [CVPR\u201924] 7B 318K * 47.49 53.44 51.46 21.78 SkyEyeGPT [ISPRS\u201925] 7B 968K 28.28 36.72 36.72 12.33 LHRS-Bot-Nova [ISPRS\u201925] 7B 2.02M 39.73 28.40 31.15 22.96 SkySenseGPT [ISPRS\u201926] 7B 3.00M 47.24 42.99 42.98 35.78 Models trained with the proposed paradigm FBA (LLaVA-v1.5) 7B 810K 70.29 57.62 53.96 61.47 FBA (Qwen3-VL) 8B 810K 83.37 67.77 63.00 76.67 Table 2: Scenario-level comparison with existing RS-MLLMs on HarborEval, VRSBench, RSVQA, and OpenEval. * GeoChat is initialized from LLaVA-1.5 and its reported data scale excludes the inherited \u223c \\sim 1.22M general-purpose samples for consistency. HarborEval for Scenario Diagnosis HarborEval is a...",
+   "[abstract] ...scenario tuning for downstream performance. We construct HarborEval, an eight-track diagnostic benchmark covering perception, spatial understanding, robustness, and generation. Under comparable training budgets, HarborEval increases from 57.95 with Direct-SFT to 70.29 with FBA on LLaVA-v1.5, and from 81.09 to 83.37 on Qwen3-VL. FBA also outperforms Collapsed-SFT and leads on harbor-related VRSBench/RSVQA subsets and OpenEval. Stage-wise and role-replacement analyses validate progressive gap filling and stage-specific roles. Public examples and release updates for CPRS, HarborEval, code, and trained weights are available at https://github.com/Z0ngL1ng/f..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:14",
+  "page": "arxiv:2607.22205v1",
+  "subject": "FBA",
+  "object": "VRSBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "FBA is evaluated on harbor-related subsets of VRSBench.",
+  "contexts": [
+   "[body] ...tial understanding, robustness, and generat [...] Evaluation Protocol The evaluation of the proposed paradigm is conducted at two levels using various metrics. RS-VL Val. and MultiSource Val. assess intermediate capabilities acquired along the staged route, while HarborEval, together with the harbor-related subsets of VRSBench and RSVQA (Li, Ding, and Elhoseiny 2024 ; Lobry et al. 2020 ) , and OpenEval evaluate final harbor-scenario performance. All scores are reported on a scale of 0\u2013100 and are rounded to two decimal places. Further details on benchmark construction and split statistics, together with the per-track scoring protocols, including answer...",
+   "[body] ...7 84.27 67.56 65.85 98.82 73.76 FBA: B 0 \u2192 S 1 \u2192 S 2 \u2192 S 3 B_{0}\\!\\rightarrow\\!S_{1}\\!\\rightarrow\\!S_{2}\\!\\rightarrow\\!S_{3} 83.37 92.42 81.11 82.46 83.15 68.61 79.67 98.22 81.32 Table 1: HarborEval diagnostic results for scenario-specialized RS-MLLMs under different training routes. Model Params Data Scale HarborEval VRSBench RSVQA OpenEval Existing RS-MLLMs GeoChat [CVPR\u201924] 7B 318K * 47.49 53.44 51.46 21.78 SkyEyeGPT [ISPRS\u201925] 7B 968K 28.28 36.72 36.72 12.33 LHRS-Bot-Nova [ISPRS\u201925] 7B 2.02M 39.73 28.40 31.15 22.96 SkySenseGPT [ISPRS\u201926] 7B 3.00M 47.24 42.99 42.98 35.78 Models trained with the proposed paradigm FBA (LLaVA-v1.5) 7B 810K 70.29 57.62...",
+   "[body] ...Bot-Nova [ISPRS\u201925] 7B 2.02M 39.73 28.40 31.15 22.96 SkySenseGPT [ISPRS\u201926] 7B 3.00M 47.24 42.99 42.98 35.78 Models trained with the proposed paradigm FBA (LLaVA-v1.5) 7B 810K 70.29 57.62 53.96 61.47 FBA (Qwen3-VL) 8B 810K 83.37 67.77 63.00 76.67 Table 2: Scenario-level comparison with existing RS-MLLMs on HarborEval, VRSBench, RSVQA, and OpenEval. * GeoChat is initialized from LLaVA-1.5 and its reported data scale excludes the inherited \u223c \\sim 1.22M general-purpose samples for consistency. HarborEval for Scenario Diagnosis HarborEval is an eight-track diagnostic benchmark spanning RGB, SAR, PAN, and NIR imagery from harbor and non-harbor scenes, with..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:15",
+  "page": "arxiv:2607.22205v1",
+  "subject": "FBA",
+  "object": "RSVQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "FBA is evaluated on harbor-related subsets of RSVQA.",
+  "contexts": [
+   "[body] ...nding, robustness, and generat [...] Evaluation Protocol The evaluation of the proposed paradigm is conducted at two levels using various metrics. RS-VL Val. and MultiSource Val. assess intermediate capabilities acquired along the staged route, while HarborEval, together with the harbor-related subsets of VRSBench and RSVQA (Li, Ding, and Elhoseiny 2024 ; Lobry et al. 2020 ) , and OpenEval evaluate final harbor-scenario performance. All scores are reported on a scale of 0\u2013100 and are rounded to two decimal places. Further details on benchmark construction and split statistics, together with the per-track scoring protocols, including answer matching, ca...",
+   "[body] ...7.56 65.85 98.82 73.76 FBA: B 0 \u2192 S 1 \u2192 S 2 \u2192 S 3 B_{0}\\!\\rightarrow\\!S_{1}\\!\\rightarrow\\!S_{2}\\!\\rightarrow\\!S_{3} 83.37 92.42 81.11 82.46 83.15 68.61 79.67 98.22 81.32 Table 1: HarborEval diagnostic results for scenario-specialized RS-MLLMs under different training routes. Model Params Data Scale HarborEval VRSBench RSVQA OpenEval Existing RS-MLLMs GeoChat [CVPR\u201924] 7B 318K * 47.49 53.44 51.46 21.78 SkyEyeGPT [ISPRS\u201925] 7B 968K 28.28 36.72 36.72 12.33 LHRS-Bot-Nova [ISPRS\u201925] 7B 2.02M 39.73 28.40 31.15 22.96 SkySenseGPT [ISPRS\u201926] 7B 3.00M 47.24 42.99 42.98 35.78 Models trained with the proposed paradigm FBA (LLaVA-v1.5) 7B 810K 70.29 57.62 53.96 61....",
+   "[body] ...ISPRS\u201925] 7B 2.02M 39.73 28.40 31.15 22.96 SkySenseGPT [ISPRS\u201926] 7B 3.00M 47.24 42.99 42.98 35.78 Models trained with the proposed paradigm FBA (LLaVA-v1.5) 7B 810K 70.29 57.62 53.96 61.47 FBA (Qwen3-VL) 8B 810K 83.37 67.77 63.00 76.67 Table 2: Scenario-level comparison with existing RS-MLLMs on HarborEval, VRSBench, RSVQA, and OpenEval. * GeoChat is initialized from LLaVA-1.5 and its reported data scale excludes the inherited \u223c \\sim 1.22M general-purpose samples for consistency. HarborEval for Scenario Diagnosis HarborEval is an eight-track diagnostic benchmark spanning RGB, SAR, PAN, and NIR imagery from harbor and non-harbor scenes, with source rec..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:16",
+  "page": "arxiv:2607.22212v1",
+  "subject": "DLM-SVDD",
+  "object": "CIFAR-10-LT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DLM-SVDD is evaluated on long-tailed CIFAR-10-LT dataset.",
+  "contexts": [
+   "[body] ...tributions. This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible. I Introduction Visual anomaly detection has become a [...] evaluation on additional and challenging long-tailed recognition datasets, namely CIFAR-10-LT and CIFAR-100-LT [ 18 , 17 ] , and ImageNet-LT [ 26 ] , which were not considered in the initial version; (ii) a systematic study of kernel approximation methods, including Nystr\u00f6m, RFF, QMC-RFF, ORF, SORF, Fastfood, and RPCholesky, along with an accuracy\u2013efficiency trade-off analysis to render the proposed approach a practica..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:17",
+  "page": "arxiv:2607.22212v1",
+  "subject": "DLM-SVDD",
+  "object": "CIFAR-100-LT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DLM-SVDD is evaluated on long-tailed CIFAR-100-LT dataset.",
+  "contexts": [
+   "[body] ...work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible. I Introduction Visual anomaly detection has become a [...] evaluation on additional and challenging long-tailed recognition datasets, namely CIFAR-10-LT and CIFAR-100-LT [ 18 , 17 ] , and ImageNet-LT [ 26 ] , which were not considered in the initial version; (ii) a systematic study of kernel approximation methods, including Nystr\u00f6m, RFF, QMC-RFF, ORF, SORF, Fastfood, and RPCholesky, along with an accuracy\u2013efficiency trade-off analysis to render the proposed approach a practical proposition on..."
+  ]
+ }
+]

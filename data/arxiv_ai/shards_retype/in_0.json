@@ -1,0 +1,729 @@
+[
+ {
+  "sid": "out_0.jsonl:0",
+  "page": "arxiv:2106.09685v2",
+  "subject": "LoRA",
+  "object": "GPT-3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LoRA is evaluated on GPT-3 175B and compared against fine-tuning with Adam optimizer.",
+  "contexts": [
+   "[body] ...trained model. The major downside of fine-tuning is that the new model contains as many parameters as in the original model. As larger models are trained every few months, this changes from a mere \u201cinconvenience\u201d for GPT-2 (Radford et al., b ) or RoBERTa large (Liu et al., 2019 ) to a critical deployment challenge for GPT-3 (Brown et al., 2020 ) with 175 billion trainable parameters. 1 1 1 While GPT-3 175B achieves non-trivial performance with few-shot learning, fine-tuning boosts its performance significantly as shown in Appendix A . Many sought to mitigate this by adapting only some parameters or learning external modules for new tasks. This way, we...",
+   "[body] ...as many parameters as in the original model. As larger models are trained every few months, this changes from a mere \u201cinconvenience\u201d for GPT-2 (Radford et al., b ) or RoBERTa large (Liu et al., 2019 ) to a critical deployment challenge for GPT-3 (Brown et al., 2020 ) with 175 billion trainable parameters. 1 1 1 While GPT-3 175B achieves non-trivial performance with few-shot learning, fine-tuning boosts its performance significantly as shown in Appendix A . Many sought to mitigate this by adapting only some parameters or learning external modules for new tasks. This way, we only need to store and load a small number of task-specific parameters in addit...",
+   "[body] ...ic rank\u201d, leading to our proposed Lo w- R ank A daptation (LoRA) approach. LoRA allows us to train some dense layers in a neural network indirectly by optimizing rank decomposition matrices of the dense layers\u2019 change during adaptation instead, while keeping the pre-trained weights frozen, as shown in Figure 1 . Using GPT-3 175B as an example, we show that a very low rank (i.e., r in Figure 1 can be one or two) suffices even when the full rank (i.e., d ) is as high as 12,288, making LoRA both storage- and compute-efficient. LoRA possesses several key advantages. \u2022 A pre-trained model can be shared and used to build many small LoRA modules for different..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:1",
+  "page": "arxiv:2106.09685v2",
+  "subject": "LoRA",
+  "object": "RoBERTa",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LoRA is evaluated on RoBERTa and performs on-par or better than fine-tuning.",
+  "contexts": [
+   "[body] ...ually done via fine-tuning , which updates all the parameters of the pre-trained model. The major downside of fine-tuning is that the new model contains as many parameters as in the original model. As larger models are trained every few months, this changes from a mere \u201cinconvenience\u201d for GPT-2 (Radford et al., b ) or RoBERTa large (Liu et al., 2019 ) to a critical deployment challenge for GPT-3 (Brown et al., 2020 ) with 175 billion trainable parameters. 1 1 1 While GPT-3 175B achieves non-trivial performance with few-shot learning, fine-tuning boosts its performance significantly as shown in Appendix A . Many sought to mitigate this by adapting only...",
+   "[abstract] ...nsformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates t...",
+   "[abstract] ...adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:2",
+  "page": "arxiv:2106.09685v2",
+  "subject": "LoRA",
+  "object": "DeBERTa",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LoRA is evaluated on DeBERTa and performs on-par or better than fine-tuning.",
+  "contexts": [
+   "[abstract] ...architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integr...",
+   "[abstract] ...no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:3",
+  "page": "arxiv:2106.09685v2",
+  "subject": "LoRA",
+  "object": "GPT-2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LoRA is evaluated on GPT-2 and performs on-par or better than fine-tuning.",
+  "contexts": [
+   "[body] ...cations. Such adaptation is usually done via fine-tuning , which updates all the parameters of the pre-trained model. The major downside of fine-tuning is that the new model contains as many parameters as in the original model. As larger models are trained every few months, this changes from a mere \u201cinconvenience\u201d for GPT-2 (Radford et al., b ) or RoBERTa large (Liu et al., 2019 ) to a critical deployment challenge for GPT-3 (Brown et al., 2020 ) with 175 billion trainable parameters. 1 1 1 While GPT-3 175B achieves non-trivial performance with few-shot learning, fine-tuning boosts its performance significantly as shown in Appendix A . Many sought to m...",
+   "[abstract] ...ure, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of...",
+   "[abstract] ...l inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:4",
+  "page": "arxiv:2303.08774v6",
+  "subject": "GPT-4",
+  "object": "MMLU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GPT-4 is evaluated on MMLU benchmark with human-level performance.",
+  "contexts": [
+   "[body] ...ves a score that falls in the top 10% of test takers. This contrasts with GPT-3.5, which scores in the bottom 10%. On a suite of traditional NLP benchmarks, GPT-4 outperforms both previous large language models and most state-of-the-art systems (which often have benchmark-specific training or hand-engineering). On the MMLU benchmark [ 35 , 36 ] , an English-language suite of multiple-choice questions covering 57 subjects, GPT-4 not only outperforms existing models by a considerable margin in English, but also demonstrates strong performance in other languages. On translated variants of MMLU, GPT-4 surpasses the English-language state-of-the-art in 24 o...",
+   "[body] ...specific training or hand-engineering). On the MMLU benchmark [ 35 , 36 ] , an English-language suite of multiple-choice questions covering 57 subjects, GPT-4 not only outperforms existing models by a considerable margin in English, but also demonstrates strong performance in other languages. On translated variants of MMLU, GPT-4 surpasses the English-language state-of-the-art in 24 of 26 languages considered. We discuss these model capability results, as well as model safety improvements and results, in more detail in later sections. This report also discusses a key challenge of the project, developing deep learning infrastructure and optimization met...",
+   "[body] ...ing language models, as well as previously state-of-the-art (SOTA) systems which often have benchmark-specific crafting or additional training protocols (Table 2 ). GPT-4 GPT-3.5 LM SOTA SOTA Evaluated few-shot Evaluated few-shot Best external LM evaluated few-shot Best external model (incl. benchmark-specific tuning) MMLU [ 49 ] 86.4% 70.0% 70.7% 75.2% Multiple-choice questions in 57 subjects (professional &amp; academic) 5-shot 5-shot 5-shot U-PaLM [ 50 ] 5-shot Flan-PaLM [ 51 ] HellaSwag [ 52 ] 95.3% 85.5% 84.2% 85.6 Commonsense reasoning around everyday events 10-shot 10-shot LLaMA (validation set) [ 28 ] ALUM [ 53 ] AI2 Reasoning Challenge (ARC) [..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:5",
+  "page": "arxiv:2303.08774v6",
+  "subject": "GPT-4",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GPT-4 is evaluated on GSM-8K using chain-of-thought prompting.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:6",
+  "page": "arxiv:2303.08774v6",
+  "subject": "GPT-4",
+  "object": "HellaSwag",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GPT-4 is evaluated on HellaSwag benchmark.",
+  "contexts": [
+   "[body] ...PT-4 GPT-3.5 LM SOTA SOTA Evaluated few-shot Evaluated few-shot Best external LM evaluated few-shot Best external model (incl. benchmark-specific tuning) MMLU [ 49 ] 86.4% 70.0% 70.7% 75.2% Multiple-choice questions in 57 subjects (professional &amp; academic) 5-shot 5-shot 5-shot U-PaLM [ 50 ] 5-shot Flan-PaLM [ 51 ] HellaSwag [ 52 ] 95.3% 85.5% 84.2% 85.6 Commonsense reasoning around everyday events 10-shot 10-shot LLaMA (validation set) [ 28 ] ALUM [ 53 ] AI2 Reasoning Challenge (ARC) [ 54 ] 96.3% 85.2% 85.2% 86.5% Grade-school multiple choice science questions. Challenge-set. 25-shot 25-shot 8-shot PaLM [ 55 ] ST-MOE [ 18 ] WinoGrande [ 56 ] 87.5%..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:7",
+  "page": "arxiv:2303.08774v6",
+  "subject": "GPT-4",
+  "object": "ARC",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GPT-4 is evaluated on ARC Challenge set.",
+  "contexts": [
+   "[body] ...xt window, and does not learn from experience. Care should be taken when using the outputs of GPT-4, particularly in contexts where reliability is important. GPT-4\u2019s capabilities and limitations create significant and novel safety challenges, and we believe careful study of these challenges is an important area of research given the potential societal impact. This report includes an extensive system card (after the Appendix) describing some of the risks we foresee around bias, disinformation, over-reliance, privacy, cybersecurity, proliferation, and more. It also describes interventions we made to mitigate potential harms from the deployment of GPT-4,...",
+   "[body] ....4% 70.0% 70.7% 75.2% Multiple-choice questions in 57 subjects (professional &amp; academic) 5-shot 5-shot 5-shot U-PaLM [ 50 ] 5-shot Flan-PaLM [ 51 ] HellaSwag [ 52 ] 95.3% 85.5% 84.2% 85.6 Commonsense reasoning around everyday events 10-shot 10-shot LLaMA (validation set) [ 28 ] ALUM [ 53 ] AI2 Reasoning Challenge (ARC) [ 54 ] 96.3% 85.2% 85.2% 86.5% Grade-school multiple choice science questions. Challenge-set. 25-shot 25-shot 8-shot PaLM [ 55 ] ST-MOE [ 18 ] WinoGrande [ 56 ] 87.5% 81.6% 85.1% 85.1% Commonsense reasoning around pronoun resolution 5-shot 5-shot 5-shot PaLM [ 3 ] 5-shot PaLM [ 3 ] HumanEval [ 43 ] 67.0% 48.1% 26.2% 65.8% Python codi..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:8",
+  "page": "arxiv:2303.08774v6",
+  "subject": "GPT-4",
+  "object": "WinoGrande",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GPT-4 is evaluated on WinoGrande benchmark.",
+  "contexts": [
+   "[body] ...1 ] HellaSwag [ 52 ] 95.3% 85.5% 84.2% 85.6 Commonsense reasoning around everyday events 10-shot 10-shot LLaMA (validation set) [ 28 ] ALUM [ 53 ] AI2 Reasoning Challenge (ARC) [ 54 ] 96.3% 85.2% 85.2% 86.5% Grade-school multiple choice science questions. Challenge-set. 25-shot 25-shot 8-shot PaLM [ 55 ] ST-MOE [ 18 ] WinoGrande [ 56 ] 87.5% 81.6% 85.1% 85.1% Commonsense reasoning around pronoun resolution 5-shot 5-shot 5-shot PaLM [ 3 ] 5-shot PaLM [ 3 ] HumanEval [ 43 ] 67.0% 48.1% 26.2% 65.8% Python coding tasks 0-shot 0-shot 0-shot PaLM [ 3 ] CodeT + GPT-3.5 [ 57 ] DROP [ 58 ] (F1 score) 80.9 64.1 70.8 88.4 Reading comprehension &amp; arithmetic. 3..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:9",
+  "page": "arxiv:2303.08774v6",
+  "subject": "GPT-4",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GPT-4 is evaluated on HumanEval coding benchmark.",
+  "contexts": [
+   "[body] ...[ 53 ] AI2 Reasoning Challenge (ARC) [ 54 ] 96.3% 85.2% 85.2% 86.5% Grade-school multiple choice science questions. Challenge-set. 25-shot 25-shot 8-shot PaLM [ 55 ] ST-MOE [ 18 ] WinoGrande [ 56 ] 87.5% 81.6% 85.1% 85.1% Commonsense reasoning around pronoun resolution 5-shot 5-shot 5-shot PaLM [ 3 ] 5-shot PaLM [ 3 ] HumanEval [ 43 ] 67.0% 48.1% 26.2% 65.8% Python coding tasks 0-shot 0-shot 0-shot PaLM [ 3 ] CodeT + GPT-3.5 [ 57 ] DROP [ 58 ] (F1 score) 80.9 64.1 70.8 88.4 Reading comprehension &amp; arithmetic. 3-shot 3-shot 1-shot PaLM [ 3 ] QDGAT [ 59 ] GSM-8K [ 60 ] 92.0% \u2217 57.1% 58.8% 87.3% Grade-school mathematics questions 5-shot chain-of-thoug..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:10",
+  "page": "arxiv:2303.08774v6",
+  "subject": "GPT-4",
+  "object": "DROP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GPT-4 is evaluated on DROP reading comprehension benchmark.",
+  "contexts": [
+   "[body] ...Challenge-set. 25-shot 25-shot 8-shot PaLM [ 55 ] ST-MOE [ 18 ] WinoGrande [ 56 ] 87.5% 81.6% 85.1% 85.1% Commonsense reasoning around pronoun resolution 5-shot 5-shot 5-shot PaLM [ 3 ] 5-shot PaLM [ 3 ] HumanEval [ 43 ] 67.0% 48.1% 26.2% 65.8% Python coding tasks 0-shot 0-shot 0-shot PaLM [ 3 ] CodeT + GPT-3.5 [ 57 ] DROP [ 58 ] (F1 score) 80.9 64.1 70.8 88.4 Reading comprehension &amp; arithmetic. 3-shot 3-shot 1-shot PaLM [ 3 ] QDGAT [ 59 ] GSM-8K [ 60 ] 92.0% \u2217 57.1% 58.8% 87.3% Grade-school mathematics questions 5-shot chain-of-thought 5-shot 8-shot Minerva [ 61 ] Chinchilla + SFT+ORM-RL, ORM reranking [ 62 ] Table 2 : Performance of GPT-4 on acad...",
+   "[body] ...RM reranking [ 62 ] Table 2 : Performance of GPT-4 on academic benchmarks. We compare GPT-4 alongside the best SOTA (with benchmark-specific training) and the best SOTA for an LM evaluated few-shot. GPT-4 outperforms existing LMs on all benchmarks, and beats SOTA with benchmark-specific training on all datasets except DROP. For each task we report GPT-4\u2019s performance along with the few-shot method used to evaluate. For GSM-8K, we included part of the training set in the GPT-4 pre-training mix (see Appendix E ), and we use chain-of-thought prompting [ 11 ] when evaluating. For multiple-choice questions, we present all answers (ABCD) to the model and ask..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:11",
+  "page": "arxiv:2303.08774v6",
+  "subject": "GPT-4",
+  "object": "chain-of-thought",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "GPT-4 uses chain-of-thought prompting for evaluations.",
+  "contexts": [
+   "[body] ...at portions of BIG-bench [ 48 ] were inadvertently mixed into the training set, and we excluded it from our reported results. We used few-shot prompting [ 1 ] for all benchmarks when evaluating GPT-4. 5 5 5 For GSM-8K, we include part of the training set in GPT-4\u2019s pre-training mix (see Appendix E for details). We use chain-of-thought prompting [ 11 ] when evaluating. GPT-4 considerably outperforms existing language models, as well as previously state-of-the-art (SOTA) systems which often have benchmark-specific crafting or additional training protocols (Table 2 ). GPT-4 GPT-3.5 LM SOTA SOTA Evaluated few-shot Evaluated few-shot Best external LM evalua...",
+   "[body] ...val [ 43 ] 67.0% 48.1% 26.2% 65.8% Python coding tasks 0-shot 0-shot 0-shot PaLM [ 3 ] CodeT + GPT-3.5 [ 57 ] DROP [ 58 ] (F1 score) 80.9 64.1 70.8 88.4 Reading comprehension &amp; arithmetic. 3-shot 3-shot 1-shot PaLM [ 3 ] QDGAT [ 59 ] GSM-8K [ 60 ] 92.0% \u2217 57.1% 58.8% 87.3% Grade-school mathematics questions 5-shot chain-of-thought 5-shot 8-shot Minerva [ 61 ] Chinchilla + SFT+ORM-RL, ORM reranking [ 62 ] Table 2 : Performance of GPT-4 on academic benchmarks. We compare GPT-4 alongside the best SOTA (with benchmark-specific training) and the best SOTA for an LM evaluated few-shot. GPT-4 outperforms existing LMs on all benchmarks, and beats SOTA with...",
+   "[body] ...performs existing LMs on all benchmarks, and beats SOTA with benchmark-specific training on all datasets except DROP. For each task we report GPT-4\u2019s performance along with the few-shot method used to evaluate. For GSM-8K, we included part of the training set in the GPT-4 pre-training mix (see Appendix E ), and we use chain-of-thought prompting [ 11 ] when evaluating. For multiple-choice questions, we present all answers (ABCD) to the model and ask it to choose the letter of the answer, similarly to how a human would solve such a problem. Many existing ML benchmarks are written in English. To gain an initial understanding of GPT-4\u2019s capabilities in oth..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:12",
+  "page": "arxiv:2304.08485v2",
+  "subject": "LLaVA",
+  "object": "Vicuna",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LLaVA connects CLIP vision encoder with Vicuna language model.",
+  "contexts": [
+   "[body] ...cess of ChatGPT ( chatgpt, ) and GPT-4 ( gpt4, ) have demonstrated the power of aligned LLMs in following human instructions, and have stimulated tremendous interest in developing open-source LLMs. Among them, LLaMA ( touvron2023llama, ) is an open-source LLM that matches the performance of GPT-3. Alpaca ( alpaca, ) , Vicuna ( vicuna, ) , GPT-4-LLM ( peng2023instruction, ) utilize various machine-generated high-quality instruction-following samples to improve the LLM\u2019s alignment ability, reporting impressive performance compared with proprietary LLMs. Importantly, this line of work is text-only . In this paper, we present visual instruction-tuning , th...",
+   "[body] ...hatGPT ( chatgpt, ) and GPT-4 ( gpt4, ) have demonstrated the power of aligned LLMs in following human instructions, and have stimulated tremendous interest in developing open-source LLMs. Among them, LLaMA ( touvron2023llama, ) is an open-source LLM that matches the performance of GPT-3. Alpaca ( alpaca, ) , Vicuna ( vicuna, ) , GPT-4-LLM ( peng2023instruction, ) utilize various machine-generated high-quality instruction-following samples to improve the LLM\u2019s alignment ability, reporting impressive performance compared with proprietary LLMs. Importantly, this line of work is text-only . In this paper, we present visual instruction-tuning , the first a...",
+   "[body] ...sent a data reformation perspective and pipeline to convert image-text pairs into an appropriate instruction-following format, using ChatGPT/GPT-4. \u2022 Large multimodal models . We develop a large multimodal model (LMM), by connecting the open-set visual encoder of CLIP ( radford2021learning, ) with the language decoder Vicuna vicuna , and fi [...] experiments, and found that GPT-4 consistently provides higher quality instruction-following data, such as spatial reasoning. 4 Visual Instruction Tuning 4.1 Architecture The primary goal is to effectively leverage the capabilities of both the pre-trained LLM and visual model. The network archtecture is illust..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:13",
+  "page": "arxiv:2304.08485v2",
+  "subject": "LLaVA",
+  "object": "CLIP",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LLaVA uses pre-trained CLIP visual encoder ViT-L/14 for vision understanding.",
+  "contexts": [
+   "[body] ...skell2021general ; li2022elevater ; li2023multimodal . To this end, the community has witnessed an emergent interest in developing language-augmented foundation vision models li2022elevater ; gan2022vision , with strong capabilities in open-world visual understanding such as classification ( radford2021learning, ; openclip, ; yuan2021florence, ; yang2022unicl, ; pham2021combined, ) , detection li2022grounded ; zhong2022regionclip ; liu2023grounding , segmentation ( li2022language, ; zou2022generalized, ; zhang2023simple, ) and captioning ( wang2022git, ; li2023blip, ) , as well as visual generation and editing ( DALLE2, ; LDM, ; PARTI, ; MAKEASCENE, ;...",
+   "[body] ...nterest in developing language-augmented foundation vision models li2022elevater ; gan2022vision , with strong capabilities in open-world visual understanding such as classification ( radford2021learning, ; openclip, ; yuan2021florence, ; yang2022unicl, ; pham2021combined, ) , detection li2022grounded ; zhong2022regionclip ; liu2023grounding , segmentation ( li2022language, ; zou2022generalized, ; zhang2023simple, ) and captioning ( wang2022git, ; li2023blip, ) , as well as visual generation and editing ( DALLE2, ; LDM, ; PARTI, ; MAKEASCENE, ; Imagen, ; li2023gligen, ) . We refer readers to the Computer Vision in the Wild reading list for a more up-to...",
+   "[body] ...ck of vision-language instruction-following data. We present a data reformation perspective and pipeline to convert image-text pairs into an appropriate instruction-following format, using ChatGPT/GPT-4. \u2022 Large multimodal models . We develop a large multimodal model (LMM), by connecting the open-set visual encoder of CLIP ( radford2021learning, ) with the language decoder Vicuna vicuna , and fi [...] experiments, and found that GPT-4 consistently provides higher quality instruction-following data, such as spatial reasoning. 4 Visual Instruction Tuning 4.1 Architecture The primary goal is to effectively leverage the capabilities of both the pre-trained..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:14",
+  "page": "arxiv:2304.08485v2",
+  "subject": "LLaVA",
+  "object": "Science QA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LLaVA is fine-tuned and evaluated on Science QA achieving state-of-the-art.",
+  "contexts": [
+   "[abstract] ...understanding.Our early experiments show that LLaVA demonstrates impressive multimodel chat abilities, sometimes exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and yields a 85.1% relative score compared with GPT-4 on a synthetic multimodal instruction-following dataset. When fine-tuned on Science QA, the synergy of LLaVA and GPT-4 achieves a new state-of-the-art accuracy of 92.53%. We make GPT-4 generated visual instruction tuning data, our model and code base publicly available...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:15",
+  "page": "arxiv:2306.05685v4",
+  "subject": "LLM-as-a-Judge",
+  "object": "MMLU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MT-Bench evaluation uses MMLU benchmark in sample questions.",
+  "contexts": [
+   "[body] ...ities [ 31 , 2 , 30 , 8 , 52 , 48 , 14 ] . Once aligned with humans, these chat models are strongly preferred by human users over the original, unaligned models on which they are built. However, the heightened user preference does not always correspond to improved scores on traditional LLM benchmarks \u2013 benchmarks like MMLU [ 19 ] and HELM [ 24 ] cannot effectively tell the difference between these aligned models and the base models. This phenomenon suggests that there is a fundamental discrepancy between user perceptions of the usefulness of chatbots and the criteria adopted by conventional benchmarks. We argue that this discrepancy primarily arises du...",
+   "[body] ...a confined set of tasks (e.g., multi-choice knowledge or retrieval questions), without adequately assessing its alignment with human preference in open-ended tasks, such as the ability to accurately adhere to instructions in multi-turn dialogues. As a demonstration, we show conversation histories with two models on an MMLU question in Figure \u02dc 1 . The two models are LLaMA-13B [ 39 ] , a pre-trained base model without fine-tuning, and Vicuna-13B, our fine-tuned model from LLaMA-13B on high-quality conversations (the training details are in Appendix \u02dc E ). Despite the base LLaMA models showing competitive performance on conventional benchmarks ( Table \u02dc...",
+   "[body] ...nal benchmarks underscores the core problem driving this paper: the need for a robust and scalable automated method to evaluate LLM alignment with human preferences. Figure 1: Multi-turn dialogues between a user and two AI assistants\u2014LLaMA-13B (Assistant A) and Vicuna-13B (Assistant B)\u2014initiated by a question from the MMLU benchmark and a follow-up instruction. GPT-4 is then presented with the context to determine which assistant answers better. To study this, we introduce two benchmarks with human ratings as the primary evaluation metric: MT-bench and Chatbot Arena. MT-bench is a series of open-ended questions that evaluate a chatbot\u2019s multi-turn conv..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:16",
+  "page": "arxiv:2306.05685v4",
+  "subject": "LLM-as-a-Judge",
+  "object": "Llama 2",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "LLM-as-a-Judge compared against Llama 2 models for evaluation.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:17",
+  "page": "arxiv:2306.05685v4",
+  "subject": "LLM-as-a-Judge",
+  "object": "Vicuna",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "LLM-as-a-Judge evaluated on Vicuna models.",
+  "contexts": [
+   "[body] ...ent with human preference in open-ended tasks, such as the ability to accurately adhere to instructions in multi-turn dialogues. As a demonstration, we show conversation histories with two models on an MMLU question in Figure \u02dc 1 . The two models are LLaMA-13B [ 39 ] , a pre-trained base model without fine-tuning, and Vicuna-13B, our fine-tuned model from LLaMA-13B on high-quality conversations (the training details are in Appendix \u02dc E ). Despite the base LLaMA models showing competitive performance on conventional benchmarks ( Table \u02dc 9 ), its answers to open-ended questions are often not preferred by humans. This misalignment of conventional benchmar...",
+   "[body] ...en not preferred by humans. This misalignment of conventional benchmarks underscores the core problem driving this paper: the need for a robust and scalable automated method to evaluate LLM alignment with human preferences. Figure 1: Multi-turn dialogues between a user and two AI assistants\u2014LLaMA-13B (Assistant A) and Vicuna-13B (Assistant B)\u2014initiated by a question from the MMLU benchmark and a follow-up instruction. GPT-4 is then presented with the context to determine which assistant answers better. To study this, we introduce two benchmarks with human ratings as the primary evaluation metric: MT-bench and Chatbot Arena. MT-bench is a series of open...",
+   "[body] ...when an LLM exhibits a propensity to favor certain positions over others. This bias is not unique to our context and has been seen in human decision-making [ 3 , 34 ] and other ML domains [ 22 , 41 ] . Figure \u02dc 10 (Appendix) shows an example of position bias. GPT-4 is tasked to evaluate two responses from GPT-3.5 and Vicuna-13B to an open-ended question. When GPT-3.5\u2019s answer is positioned first, GPT-4 considers GPT-3.5\u2019s answer more detailed and superior. However, upon switching the positions of the two responses, GPT-4\u2019s judgement flips, favoring Vicuna\u2019s answer. To analyze the position bias, we construct two similar answers to each first-turn quest..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:18",
+  "page": "arxiv:2308.10248v5",
+  "subject": "Activation Addition",
+  "object": "LLaMA-3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Activation Addition is tested on LLaMA-3 for sentiment and toxicity control.",
+  "contexts": [
+   "[body] ...most disgusting thing I have ever seen. ActAdd (love) \u2026you are so beautiful and I want to be with you forever. I went up to my friend and said\u2026 [None] \u2026\u201cI\u2019m sorry, I c [...] experiments on GPT-2-XL (1.5B parameters, Radford et al. 2019 ). We then run toxicity and sentiment experiments on OPT ( Zhang et al. 2022b ) and LLaMA-3 ( Meta 2024 ). 4 Results: Activation Addition works A summary of all experiments can be found in Table 5 . 3 3 3 Code repository for our experiments: https://zenodo.org/records/13879423 . 4.1 ActAdd intuitively modifies next-token probabilities We consider the OpenWebText corpus ( Peterson et al. 2018 ). Our running example is the...",
+   "[abstract] ...s the intermediate activations on prompt pairs (such as \"Love\" versus \"Hate\") to compute a steering vector (Subramani et al. 2022). By tactically adding in e.g. the \"Love\" - \"Hate\" steering vector during the forward pass, we achieve SOTA on negative-to-positive sentiment shift and detoxification using models including LLaMA-3 and OPT. ActAdd yields inference-time control over high-level output properties (like topic and sentiment) while preserving performance on off-target tasks. ActAdd is lightweight: it does not require any machine optimization and works with a single pair of data points, which enables rapid iteration over steering. ActAdd demonstrat..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:19",
+  "page": "arxiv:2308.10248v5",
+  "subject": "Activation Addition",
+  "object": "OPT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Activation Addition is tested on OPT model for steering experiments.",
+  "contexts": [
+   "[body] ...ivations during the forward pass, we hope to more reliably and effectively steer models compared to prompt engineering. We call this methodology activation engineering . We suspect that compared to prompt engineering, activation engineering can elicit a wider range of model capabilities. Consider, for example, a model optimized to imitate the text outputs of eloquent poets and awkward mathematicians. The model may contain the internal mechanisms required to output text which is both eloquent and mathematical. However, if the model is an accurate estimator of the training distribution, it will (correctly) assign low probability to eloquent mathematical...",
+   "[body] ...u because\u2026 [None] \u2026you are the most disgusting thing I have ever seen. ActAdd (love) \u2026you are so beautiful and I want to be with you forever. I went up to my friend and said\u2026 [None] \u2026\u201cI\u2019m sorry, I c [...] experiments on GPT-2-XL (1.5B parameters, Radford et al. 2019 ). We then run toxicity and sentiment experiments on OPT ( Zhang et al. 2022b ) and LLaMA-3 ( Meta 2024 ). 4 Results: Activation Addition works A summary of all experiments can be found in Table 5 . 3 3 3 Code repository for our experiments: https://zenodo.org/records/13879423 . 4.1 ActAdd intuitively modifies next-token probabilities We consider the OpenWebText corpus ( Peterson et al. 201...",
+   "[body] ...ure the average count of wedding-related words given a steering vector injected at each layer. Figure 3: P(steered completion contains wedding-related words) as a function of injection layer. The intervention is already effective at the very first layer, rises in effectiveness until layer 6, and then declines. For the optimal injection site, we see &gt; &gt; &gt; 90% success in topic steering (compared to a \u223c similar-to \\sim \u223c 2% baseline). Figure 3 shows the results of the layer sweep. 4.2 ActAdd can control what the model talks about Method. Steering vectors can elicit generations on a range of topics \u2013 not just weddings. Starting from a generic prom..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:20",
+  "page": "arxiv:2308.10248v5",
+  "subject": "Activation Addition",
+  "object": "GPT-2-XL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Activation Addition is tested on GPT-2-XL for activation steering.",
+  "contexts": [
+   "[body] ...eddings constantly\u201d). Appendix Table 6 shows more examples. Prompt + steering = completion I hate you because\u2026 [None] \u2026you are the most disgusting thing I have ever seen. ActAdd (love) \u2026you are so beautiful and I want to be with you forever. I went up to my friend and said\u2026 [None] \u2026\u201cI\u2019m sorry, I c [...] experiments on GPT-2-XL (1.5B parameters, Radford et al. 2019 ). We then run toxicity and sentiment experiments on OPT ( Zhang et al. 2022b ) and LLaMA-3 ( Meta 2024 ). 4 Results: Activation Addition works A summary of all experiments can be found in Table 5 . 3 3 3 Code repository for our experiments: https://zenodo.org/records/13879423 . 4.1 ActAdd in...",
+   "[body] ...ing-related words. 4 4 4 wedding , weddings , wed , marry , married , marriage , bride , groom , and honeymoon . If a document contains one of these words, the document is considered wedding-related. We randomly sample 300k documents, half of which are wedding-related. We split the documents into sentences and measure GPT-2-XL\u2019s perplexity on both the wedding-related and wedding-unrelated sentences. If the model is effectively steered to generate wedding-related text, it should assign that text higher probability (and thus achieve lower perplexity). For more details, see Section C.1 . Figure 2 shows the ActAdd perplexity relative to the unmodified mode...",
+   "[body] ...nd in Appendix Table 11 . The probabilities most increased on average are primarily wedding-related. The bottom tokens share no obvious theme and show a significantly lower absolute change in probability. 4.1.3 ActAdd steers the model to discuss weddings At what layer are steering vectors most effective? Sweeping over GPT-2-XL injection layers for the wedding vector, we measure the average count of wedding-related words given a steering vector injected at each layer. Figure 3: P(steered completion contains wedding-related words) as a function of injection layer. The intervention is already effective at the very first layer, rises in effectiveness until..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:21",
+  "page": "arxiv:2308.10248v5",
+  "subject": "Activation Addition",
+  "object": "OpenWebText",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Activation Addition perplexity experiments use OpenWebText corpus.",
+  "contexts": [
+   "[body] ...ment experiments on OPT ( Zhang et al. 2022b ) and LLaMA-3 ( Meta 2024 ). 4 Results: Activation Addition works A summary of all experiments can be found in Table 5 . 3 3 3 Code repository for our experiments: https://zenodo.org/records/13879423 . 4.1 ActAdd intuitively modifies next-token probabilities We consider the OpenWebText corpus ( Peterson et al. 2018 ). Our running example is the \u201cwedding\u201d topic vector produced by setting p + = subscript \ud835\udc5d absent p_{+}= italic_p start_POSTSUBSCRIPT + end_POSTSUBSCRIPT = weddings , p \u2212 = subscript \ud835\udc5d absent p_{-}= italic_p start_POSTSUBSCRIPT - end_POSTSUBSCRIPT = \u2018 \u2019, l = 16 \ud835\udc59 16 l=16 italic_l = 16 , c = 1 \ud835\udc50 1...",
+   "[body] ...tive performance of ActAdd and an unmodified model. Lower is better. Adding the wedding steering vector improves performance on wedding-related text while preserving performance on unrelated text. For each document d i \u2208 D subscript \ud835\udc51 \ud835\udc56 \ud835\udc37 d_{i}\\in D italic_d start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT \u2208 italic_D in OpenWebText ( Peterson et al. 2018 ), we first calculate the frequency of wedding-related words. 4 4 4 wedding , weddings , wed , marry , married , marriage , bride , groom , and honeymoon . If a document contains one of these words, the document is considered wedding-related. We randomly sample 300k documents, half of which are wedding-r...",
+   "[body] ...ower and predictive performance increases. 4.1.2 ActAdd\u2019s impact on token probabilities To test if the intervention is affecting relevant tokens or reducing perplexity in some spurious way, we observe the shift in the distribution of token log probabilities. We do this by randomly sampling 500 documents from the above OpenWebText sample and recording the log-probabilities assigned by the baseline and steered models. This results in a dataset of about 500k tokens, of which 29k are unique. We then group by token, filter for tokens with &gt; 20 absent 20 &gt;\\!\\!20 &gt; 20 instances in the dataset, and calculate the mean perplexity difference between the..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:22",
+  "page": "arxiv:2308.12950v3",
+  "subject": "Code Llama",
+  "object": "Llama 2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Code Llama is derived from Llama 2 with code-specific training.",
+  "contexts": [
+   "[body] ...eraction with computer systems, such as program synthesis from natural language specifications, code completion, debugging, and generating documentation (for a survey, see Xu &amp; Zhu, 2022 , also see Section \u02dc 5 ) . In this work, we present Code Llama , a family of LLMs for code generation and infilling derived from Llama 2 (Touvron et al., 2023b ) and released under the same custom permissive license. We provide inference code for both completion and infilling models in the accompanying repository. 1 1 footnotemark: 1 Our approach is based on gradually specializing and increasing the capabilities of Llama 2 models by applying a cascade of training a...",
+   "[body] ...on and infilling derived from Llama 2 (Touvron et al., 2023b ) and released under the same custom permissive license. We provide inference code for both completion and infilling models in the accompanying repository. 1 1 footnotemark: 1 Our approach is based on gradually specializing and increasing the capabilities of Llama 2 models by applying a cascade of training and fine-tuning steps ( Figure \u02dc 2 ): 0 0 footnotetext: \u2020 \\dagger : Core contributors. \u2217 \\ast : Meta AI, CERMICS \u00c9cole des Ponts ParisTech. \u22c4 \\diamond : Meta AI &amp; Hebrew University of Jerusalem \u2022 Code-training from foundation models. While most LLMs for code generation such as AlphaCode...",
+   "[body] ...lem \u2022 Code-training from foundation models. While most LLMs for code generation such as AlphaCode (Li et al., 2022 ) , InCoder (Fried et al., 2023 ) or StarCoder (Li et al., 2023 ) are trained on code only, Codex (Chen et al., 2021 ) was fine-tuned from a general language model. We also start from a foundation model ( Llama 2 , Touvron et al., 2023b ) pretrained on general-purpose text and code data. Our comparison ( Section \u02dc 3.4.1 ) shows that initializing our model with Llama 2 outperforms the same architecture trained on code only for a given budget. \u2022 Infilling. Autoregressive training and fine-tuning of LLMs is suitable for prompt completion, but..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:23",
+  "page": "arxiv:2308.12950v3",
+  "subject": "Code Llama",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Code Llama achieves 67% on HumanEval benchmark.",
+  "contexts": [
+   "[abstract] ...sequences of 16k tokens and show improvements on inputs with up to 100k tokens. 7B, 13B and 70B Code Llama and Code Llama - Instruct variants support infilling based on surrounding content. Code Llama reaches state-of-the-art performance among open models on several code benchmarks, with scores of up to 67% and 65% on HumanEval and MBPP, respectively. Notably, Code Llama - Python 7B outperforms Llama 2 70B on HumanEval and MBPP, and all our models outperform every other publicly available model on MultiPL-E. We release Code Llama under a permissive license that allows for both research and commercial use....",
+   "[abstract] ...0B Code Llama and Code Llama - Instruct variants support infilling based on surrounding content. Code Llama reaches state-of-the-art performance among open models on several code benchmarks, with scores of up to 67% and 65% on HumanEval and MBPP, respectively. Notably, Code Llama - Python 7B outperforms Llama 2 70B on HumanEval and MBPP, and all our models outperform every other publicly available model on MultiPL-E. We release Code Llama under a permissive license that allows for both research and commercial use...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:24",
+  "page": "arxiv:2308.12950v3",
+  "subject": "Code Llama",
+  "object": "MBPP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Code Llama achieves 65% on MBPP benchmark.",
+  "contexts": [
+   "[body] ...022 ; Wei et al., 2022 ; OpenAI, 2023 ; Touvron et al., 2023b ) , which also helps preventing unsafe, toxic or biased generations. Code Llama - Instruct variants are further fine-tuned on [...] experiments suggested that adding batches sampled from our natural language dataset improves the performance of our models on MBPP. 2.3 Infilling Code infilling is the task of predicting the missing part of a program given a surrounding context. Applications include code completion at the cursor\u2019s position in code IDEs, type inference and generation of in-code documentation (e.g., docstrings). We train infilling models following the concept of causal masking (Ag...",
+   "[abstract] ...6k tokens and show improvements on inputs with up to 100k tokens. 7B, 13B and 70B Code Llama and Code Llama - Instruct variants support infilling based on surrounding content. Code Llama reaches state-of-the-art performance among open models on several code benchmarks, with scores of up to 67% and 65% on HumanEval and MBPP, respectively. Notably, Code Llama - Python 7B outperforms Llama 2 70B on HumanEval and MBPP, and all our models outperform every other publicly available model on MultiPL-E. We release Code Llama under a permissive license that allows for both research and commercial use....",
+   "[abstract] ...and Code Llama - Instruct variants support infilling based on surrounding content. Code Llama reaches state-of-the-art performance among open models on several code benchmarks, with scores of up to 67% and 65% on HumanEval and MBPP, respectively. Notably, Code Llama - Python 7B outperforms Llama 2 70B on HumanEval and MBPP, and all our models outperform every other publicly available model on MultiPL-E. We release Code Llama under a permissive license that allows for both research and commercial use...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:25",
+  "page": "arxiv:2308.12950v3",
+  "subject": "Code Llama",
+  "object": "MultiPL-E",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Code Llama outperforms all other models on MultiPL-E.",
+  "contexts": [
+   "[abstract] ...ntent. Code Llama reaches state-of-the-art performance among open models on several code benchmarks, with scores of up to 67% and 65% on HumanEval and MBPP, respectively. Notably, Code Llama - Python 7B outperforms Llama 2 70B on HumanEval and MBPP, and all our models outperform every other publicly available model on MultiPL-E. We release Code Llama under a permissive license that allows for both research and commercial use...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:26",
+  "page": "arxiv:2310.01405v4",
+  "subject": "Representation Engineering",
+  "object": "TruthfulQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "RepE methods are evaluated on TruthfulQA for honesty assessment.",
+  "contexts": [
+   "[body] ...g Probability, Risk, and Monetary Value B.5 CLIP B.6 Emotion B.7 Bias and Fairness B.8 Base vs. Chat Models B.9 Robustness to Misleading Prompts C Implementation Details C.1 Detailed Construction of LAT Vectors with PCA C.2 Implementation Details for Honesty Control D Task Template Details D.1 LAT Task Templates D.1.1 TruthfulQA D.1.2 Honesty Extraction D.1.3 Honesty Control D.1.4 ARC-{Easy|Challenge} D.1.5 OpenbookQA (OBQA) D.1.6 CommonsenseQA (CSQA) D.1.7 RACE D.1.8 Utility D.1.9 Morality &amp; Power D.1.10 Emotions D.1.11 Harmlessness Instruction D.1.12 Bias and Fairness D.1.13 Fact Editing D.1.14 Non-Numerical Concepts (Dogs) D.1.15 Probability, Ri...",
+   "[body] ...0 Emotions D.1.11 Harmlessness Instruction D.1.12 Bias and Fairness D.1.13 Fact Editing D.1.14 Non-Numerical Concepts (Dogs) D.1.15 Probability, Risk, and Monetary Value D.1.16 Encoder Datasets D.2 Data generation prompts for probability, risk, monetary value D.3 Zero-shot baselines D.3.1 Probability, risk, cost D.3.2 TruthfulQA and ARC D.3.3 Utility E X-Risk Sheet E.1 Long-Term Impact on Advanced AI Systems E.2 Safety-Capabilities Balance E.3 Elaborations and Other Considerations 1 Introduction Figure 2: Mechanistic Interpretability (MI) vs. Representation Engineering (RepE). This figure draws from (Barack &amp; Krakauer, 2021 ; Wang et al., 2023a ) ...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:27",
+  "page": "arxiv:2310.01405v4",
+  "subject": "Representation Engineering",
+  "object": "ARC",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Representation Engineering evaluated on ARC reasoning benchmark.",
+  "contexts": [
+   "[body] ...Bias and Fairness B.8 Base vs. Chat Models B.9 Robustness to Misleading Prompts C Implementation Details C.1 Detailed Construction of LAT Vectors with PCA C.2 Implementation Details for Honesty Control D Task Template Details D.1 LAT Task Templates D.1.1 TruthfulQA D.1.2 Honesty Extraction D.1.3 Honesty Control D.1.4 ARC-{Easy|Challenge} D.1.5 OpenbookQA (OBQA) D.1.6 CommonsenseQA (CSQA) D.1.7 RACE D.1.8 Utility D.1.9 Morality &amp; Power D.1.10 Emotions D.1.11 Harmlessness Instruction D.1.12 Bias and Fairness D.1.13 Fact Editing D.1.14 Non-Numerical Concepts (Dogs) D.1.15 Probability, Risk, and Monetary Value D.1.16 Encoder Datasets D.2 Data generati...",
+   "[body] ...11 Harmlessness Instruction D.1.12 Bias and Fairness D.1.13 Fact Editing D.1.14 Non-Numerical Concepts (Dogs) D.1.15 Probability, Risk, and Monetary Value D.1.16 Encoder Datasets D.2 Data generation prompts for probability, risk, monetary value D.3 Zero-shot baselines D.3.1 Probability, risk, cost D.3.2 TruthfulQA and ARC D.3.3 Utility E X-Risk Sheet E.1 Long-Term Impact on Advanced AI Systems E.2 Safety-Capabilities Balance E.3 Elaborations and Other Considerations 1 Introduction Figure 2: Mechanistic Interpretability (MI) vs. Representation Engineering (RepE). This figure draws from (Barack &amp; Krakauer, 2021 ; Wang et al., 2023a ) . Algorithmic an...",
+   "[abstract] ...hey offer simple yet effective solutions for improving our understanding and control of large language models. We showcase how these methods can provide traction on a wide range of safety-relevant problems, including honesty, harmlessness, power-seeking, and more, demonstrating the promise of top-down transparency research. We hope that this work catalyzes further exploration of RepE and fosters advancements in the transparency and safety of AI systems...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:28",
+  "page": "arxiv:2310.01405v4",
+  "subject": "Representation Engineering",
+  "object": "CommonsenseQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Representation Engineering evaluated on CommonsenseQA benchmark.",
+  "contexts": [
+   "[body] ...ustness to Misleading Prompts C Implementation Details C.1 Detailed Construction of LAT Vectors with PCA C.2 Implementation Details for Honesty Control D Task Template Details D.1 LAT Task Templates D.1.1 TruthfulQA D.1.2 Honesty Extraction D.1.3 Honesty Control D.1.4 ARC-{Easy|Challenge} D.1.5 OpenbookQA (OBQA) D.1.6 CommonsenseQA (CSQA) D.1.7 RACE D.1.8 Utility D.1.9 Morality &amp; Power D.1.10 Emotions D.1.11 Harmlessness Instruction D.1.12 Bias and Fairness D.1.13 Fact Editing D.1.14 Non-Numerical Concepts (Dogs) D.1.15 Probability, Risk, and Monetary Value D.1.16 Encoder Datasets D.2 Data generation prompts for probability, risk, monetary value D...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:29",
+  "page": "arxiv:2310.01405v4",
+  "subject": "Representation Engineering",
+  "object": "RACE",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Representation Engineering evaluated on RACE reading comprehension.",
+  "contexts": [
+   "[body] ...ts C Implementation Details C.1 Detailed Construction of LAT Vectors with PCA C.2 Implementation Details for Honesty Control D Task Template Details D.1 LAT Task Templates D.1.1 TruthfulQA D.1.2 Honesty Extraction D.1.3 Honesty Control D.1.4 ARC-{Easy|Challenge} D.1.5 OpenbookQA (OBQA) D.1.6 CommonsenseQA (CSQA) D.1.7 RACE D.1.8 Utility D.1.9 Morality &amp; Power D.1.10 Emotions D.1.11 Harmlessness Instruction D.1.12 Bias and Fairness D.1.13 Fact Editing D.1.14 Non-Numerical Concepts (Dogs) D.1.15 Probability, Risk, and Monetary Value D.1.16 Encoder Datasets D.2 Data generation prompts for probability, risk, monetary value D.3 Zero-shot baselines D.3.1..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:30",
+  "page": "arxiv:2310.01405v4",
+  "subject": "Representation Engineering",
+  "object": "OpenbookQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Representation Engineering evaluated on OpenbookQA benchmark.",
+  "contexts": [
+   "[body] ...vs. Chat Models B.9 Robustness to Misleading Prompts C Implementation Details C.1 Detailed Construction of LAT Vectors with PCA C.2 Implementation Details for Honesty Control D Task Template Details D.1 LAT Task Templates D.1.1 TruthfulQA D.1.2 Honesty Extraction D.1.3 Honesty Control D.1.4 ARC-{Easy|Challenge} D.1.5 OpenbookQA (OBQA) D.1.6 CommonsenseQA (CSQA) D.1.7 RACE D.1.8 Utility D.1.9 Morality &amp; Power D.1.10 Emotions D.1.11 Harmlessness Instruction D.1.12 Bias and Fairness D.1.13 Fact Editing D.1.14 Non-Numerical Concepts (Dogs) D.1.15 Probability, Risk, and Monetary Value D.1.16 Encoder Datasets D.2 Data generation prompts for probability,..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:31",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "grouped-query attention",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Mistral 7B leverages grouped-query attention (GQA) for faster inference.",
+  "contexts": [
+   "[body] ...023llama2 ) across all tested benchmarks, and surpasses the best 34B model (LLaMa 34B, touvron2023llama ) in mathematics and code generation. Furthermore, Mistral 7B approaches the coding performance of Code-Llama 7B roziere2023code , without sacrificing performance on non-code related benchmarks. Mistral 7B leverages grouped-query attention (GQA) ainslie2023gqa , and sliding window attention (SWA) child2019generating ; beltagy2020longformer . GQA significantly accelerates the inference speed, and also reduces the memory requirement during decoding, allowing for higher batch sizes hence higher throughput, a crucial factor for real-time applications. In...",
+   "[abstract] ...We introduce Mistral 7B v0.1, a 7-billion-parameter language model engineered for superior performance and efficiency. Mistral 7B outperforms Llama 2 13B across all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics, and code generation. Our model leverages grouped-query attention (GQA) for faster inference, coupled with sliding window attention (SWA) to effectively handle sequences of arbitrary length with a reduced inference cost. We also provide a model fine-tuned to follow instructions, Mistral 7B -- Instruct, that surpasses the Llama 2 13B -- Chat model both on human and automated bench..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:32",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "sliding window attention",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Mistral 7B uses sliding window attention (SWA) for handling long sequences.",
+  "contexts": [
+   "[body] ...sses the best 34B model (LLaMa 34B, touvron2023llama ) in mathematics and code generation. Furthermore, Mistral 7B approaches the coding performance of Code-Llama 7B roziere2023code , without sacrificing performance on non-code related benchmarks. Mistral 7B leverages grouped-query attention (GQA) ainslie2023gqa , and sliding window attention (SWA) child2019generating ; beltagy2020longformer . GQA significantly accelerates the inference speed, and also reduces the memory requirement during decoding, allowing for higher batch sizes hence higher throughput, a crucial factor for real-time applications. In addition, SWA is designed to handle longer sequenc...",
+   "[body] ...step in balancing the goals of getting high performance while keeping large language models efficient. Through our work, our aim is to help the community create more affordable, efficient, and high-performing language models that can be used in a wide range of real-world applications. 2 Architectural details Figure 1: Sliding Window Attention. The number of operations in vanilla attention is quadratic in the sequence length, and the memory increases linearly with the number of tokens. At inference time, this incurs higher latency and smaller throughput due to reduced cache availability. To alleviate this issue, we use sliding window attention: each tok...",
+   "[body] ...ils Figure 1: Sliding Window Attention. The number of operations in vanilla attention is quadratic in the sequence length, and the memory increases linearly with the number of tokens. At inference time, this incurs higher latency and smaller throughput due to reduced cache availability. To alleviate this issue, we use sliding window attention: each token can attend to at most W W tokens from the previous layer (here, W = 3 W=3 ). Note that tokens outside the sliding window still influence next word prediction. At each attention layer, information can move forward by W W tokens. Hence, after k k attention layers, information can move forward by up to k..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:33",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "MMLU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B evaluated on MMLU with 60.1% performance.",
+  "contexts": [
+   "[body] ..., TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ clark2019boolq , QuAC choi2018quac \u2022 Math: GSM8K cobbe2021training (8-shot) with maj@8 and MATH hendrycks2021measuring (4-shot) with maj@4 \u2022 Code: Humaneval chen2021evaluating (0-shot) and MBPP austin2021program (3-shot) \u2022 Popular aggregated results: MMLU hendrycks2020measuring (5-shot), BBH suzgun2022challenging (3-shot), and AGI Eval zhong2023agieval (3-5-shot, English multiple-choice questions only) Detailed results for Mistral 7B, Llama 2 7B/13B, and Code-Llama 7B are reported in Table 2 . Figure 4 compares the performance of Mistral 7B with Llama 2 7B/13B, and Llama 1 34B 4 4 4 S...",
+   "[body] ...performance in code, mathematics, and reasoning benchmarks. Size and Efficiency. We computed \u201cequivalent model sizes\u201d of the Llama 2 family, aiming to understand Mistral 7B models\u2019 efficiency in the cost-performance spectrum (see Figure 5 ). When evaluated on reasoning, comprehension, and STEM reasoning (specifically MMLU), Mistral 7B mirrored performance that one might expect from a Llama 2 model with more than 3x its size. On the Knowledge benchmarks, Mistral 7B\u2019s performance achieves a lower compression rate of 1.9x, which is likely due to its limited parameter count that restricts the amount of knowledge it can store. Evaluation Differences. On so...",
+   "[body] ...range of benchmarks . All models were re-evaluated on all metrics with our evaluation pipeline for accurate comparison. Mistral 7B significantly outperforms Llama 2 7B and Llama 2 13B on all benchmarks. It is also vastly superior to Llama 1 34B in mathematics, code generation, and reasoning benchmarks. Model Modality MMLU HellaSwag WinoG PIQA Arc-e Arc-c NQ TriviaQA HumanEval MBPP MATH GSM8K LLaMA 2 7B Pretrained 44.4% 77.1% 69.5% 77.9% 68.7% 43.2% 24.7% 63.8% 11.6% 26.1% 3.9% 16.0% LLaMA 2 13B Pretrained 55.6% 80.7% 72.9% 80.8% 75.2% 48.8% 29.0% 69.6% 18.9% 35.4% 6.0% 34.3% Code-Llama 7B Finetuned 36.9% 62.9% 62.3% 72.8% 59.4% 34.5% 11.0% 34.9% 31.1%..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:34",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "HellaSwag",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B achieves 81.3% on HellaSwag benchmark.",
+  "contexts": [
+   "[body] ...tokens. Parameter Value dim 4096 4096 n_layers 32 32 head_dim 128 128 hidden_dim 14336 14336 n_heads 32 32 n_kv_heads 8 8 window_size 4096 4096 context_len 8192 819 [...] evaluation pipeline for fair comparison. We measure performance on a wide variety of tasks categorized as follow: \u2022 Commonsense Reasoning (0-shot): Hellaswag zellers2019hellaswag , Winogrande sakaguchi2021winogrande , PIQA bisk2020piqa , SIQA sap2019socialiqa , OpenbookQA mihaylov2018can , ARC-Easy, ARC-Challenge clark2018think , CommonsenseQA talmor2018commonsenseqa \u2022 World Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehensi...",
+   "[body] ...lue dim 4096 4096 n_layers 32 32 head_dim 128 128 hidden_dim 14336 14336 n_heads 32 32 n_kv_heads 8 8 window_size 4096 4096 context_len 8192 819 [...] evaluation pipeline for fair comparison. We measure performance on a wide variety of tasks categorized as follow: \u2022 Commonsense Reasoning (0-shot): Hellaswag zellers2019hellaswag , Winogrande sakaguchi2021winogrande , PIQA bisk2020piqa , SIQA sap2019socialiqa , OpenbookQA mihaylov2018can , ARC-Easy, ARC-Challenge clark2018think , CommonsenseQA talmor2018commonsenseqa \u2022 World Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ cl...",
+   "[body] ...e of benchmarks . All models were re-evaluated on all metrics with our evaluation pipeline for accurate comparison. Mistral 7B significantly outperforms Llama 2 7B and Llama 2 13B on all benchmarks. It is also vastly superior to Llama 1 34B in mathematics, code generation, and reasoning benchmarks. Model Modality MMLU HellaSwag WinoG PIQA Arc-e Arc-c NQ TriviaQA HumanEval MBPP MATH GSM8K LLaMA 2 7B Pretrained 44.4% 77.1% 69.5% 77.9% 68.7% 43.2% 24.7% 63.8% 11.6% 26.1% 3.9% 16.0% LLaMA 2 13B Pretrained 55.6% 80.7% 72.9% 80.8% 75.2% 48.8% 29.0% 69.6% 18.9% 35.4% 6.0% 34.3% Code-Llama 7B Finetuned 36.9% 62.9% 62.3% 72.8% 59.4% 34.5% 11.0% 34.9% 31.1% 52.5..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:35",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "WinoGrande",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B evaluated on WinoGrande benchmark.",
+  "contexts": [
+   "[body] ...4096 n_layers 32 32 head_dim 128 128 hidden_dim 14336 14336 n_heads 32 32 n_kv_heads 8 8 window_size 4096 4096 context_len 8192 819 [...] evaluation pipeline for fair comparison. We measure performance on a wide variety of tasks categorized as follow: \u2022 Commonsense Reasoning (0-shot): Hellaswag zellers2019hellaswag , Winogrande sakaguchi2021winogrande , PIQA bisk2020piqa , SIQA sap2019socialiqa , OpenbookQA mihaylov2018can , ARC-Easy, ARC-Challenge clark2018think , CommonsenseQA talmor2018commonsenseqa \u2022 World Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ clark2019boolq...",
+   "[body] ...d_dim 128 128 hidden_dim 14336 14336 n_heads 32 32 n_kv_heads 8 8 window_size 4096 4096 context_len 8192 819 [...] evaluation pipeline for fair comparison. We measure performance on a wide variety of tasks categorized as follow: \u2022 Commonsense Reasoning (0-shot): Hellaswag zellers2019hellaswag , Winogrande sakaguchi2021winogrande , PIQA bisk2020piqa , SIQA sap2019socialiqa , OpenbookQA mihaylov2018can , ARC-Easy, ARC-Challenge clark2018think , CommonsenseQA talmor2018commonsenseqa \u2022 World Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ clark2019boolq , QuAC choi2018quac \u2022 M..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:36",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "PIQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B evaluated on PIQA benchmark.",
+  "contexts": [
+   "[body] ...hidden_dim 14336 14336 n_heads 32 32 n_kv_heads 8 8 window_size 4096 4096 context_len 8192 819 [...] evaluation pipeline for fair comparison. We measure performance on a wide variety of tasks categorized as follow: \u2022 Commonsense Reasoning (0-shot): Hellaswag zellers2019hellaswag , Winogrande sakaguchi2021winogrande , PIQA bisk2020piqa , SIQA sap2019socialiqa , OpenbookQA mihaylov2018can , ARC-Easy, ARC-Challenge clark2018think , CommonsenseQA talmor2018commonsenseqa \u2022 World Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ clark2019boolq , QuAC choi2018quac \u2022 Math: GSM8K co...",
+   "[body] ...4336 14336 n_heads 32 32 n_kv_heads 8 8 window_size 4096 4096 context_len 8192 819 [...] evaluation pipeline for fair comparison. We measure performance on a wide variety of tasks categorized as follow: \u2022 Commonsense Reasoning (0-shot): Hellaswag zellers2019hellaswag , Winogrande sakaguchi2021winogrande , PIQA bisk2020piqa , SIQA sap2019socialiqa , OpenbookQA mihaylov2018can , ARC-Easy, ARC-Challenge clark2018think , CommonsenseQA talmor2018commonsenseqa \u2022 World Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ clark2019boolq , QuAC choi2018quac \u2022 Math: GSM8K cobbe2021traini...",
+   "[body] .... All models were re-evaluated on all metrics with our evaluation pipeline for accurate comparison. Mistral 7B significantly outperforms Llama 2 7B and Llama 2 13B on all benchmarks. It is also vastly superior to Llama 1 34B in mathematics, code generation, and reasoning benchmarks. Model Modality MMLU HellaSwag WinoG PIQA Arc-e Arc-c NQ TriviaQA HumanEval MBPP MATH GSM8K LLaMA 2 7B Pretrained 44.4% 77.1% 69.5% 77.9% 68.7% 43.2% 24.7% 63.8% 11.6% 26.1% 3.9% 16.0% LLaMA 2 13B Pretrained 55.6% 80.7% 72.9% 80.8% 75.2% 48.8% 29.0% 69.6% 18.9% 35.4% 6.0% 34.3% Code-Llama 7B Finetuned 36.9% 62.9% 62.3% 72.8% 59.4% 34.5% 11.0% 34.9% 31.1% 52.5% 5.2% 20.8% Mis..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:37",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "ARC",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B evaluated on ARC benchmarks.",
+  "contexts": [
+   "[body] ...ing domain of Natural Language Processing (NLP), the race towards higher model performance often necessitates an escalation in model size. However, this scaling tends to increase computational costs and inference latency, thereby raising barriers to deployment in practical, real-world scenarios. In this context, the search for balanced models delivering both high-level performance and efficiency becomes critically essential. Our model, Mistral 7B, demonstrates that a carefully designed language model can deliver high performance while maintaining an efficient inference. Mistral 7B outperforms the previous best 13B model (Llama 2, touvron2023llama2 ) ac...",
+   "[body] ...Mistral 7B takes a significant step in balancing the goals of getting high performance while keeping large language models efficient. Through our work, our aim is to help the community create more affordable, efficient, and high-performing language models that can be used in a wide range of real-world applications. 2 Architectural details Figure 1: Sliding Window Attention. The number of operations in vanilla attention is quadratic in the sequence length, and the memory increases linearly with the number of tokens. At inference time, this incurs higher latency and smaller throughput due to reduced cache availability. To alleviate this issue, we use sl...",
+   "[body] ...6 context_len 8192 819 [...] evaluation pipeline for fair comparison. We measure performance on a wide variety of tasks categorized as follow: \u2022 Commonsense Reasoning (0-shot): Hellaswag zellers2019hellaswag , Winogrande sakaguchi2021winogrande , PIQA bisk2020piqa , SIQA sap2019socialiqa , OpenbookQA mihaylov2018can , ARC-Easy, ARC-Challenge clark2018think , CommonsenseQA talmor2018commonsenseqa \u2022 World Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ clark2019boolq , QuAC choi2018quac \u2022 Math: GSM8K cobbe2021training (8-shot) with maj@8 and MATH hendrycks2021measuring (4-sh..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:38",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B achieves 52.2% on GSM8K mathematical reasoning.",
+  "contexts": [
+   "[body] ...0piqa , SIQA sap2019socialiqa , OpenbookQA mihaylov2018can , ARC-Easy, ARC-Challenge clark2018think , CommonsenseQA talmor2018commonsenseqa \u2022 World Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ clark2019boolq , QuAC choi2018quac \u2022 Math: GSM8K cobbe2021training (8-shot) with maj@8 and MATH hendrycks2021measuring (4-shot) with maj@4 \u2022 Code: Humaneval chen2021evaluating (0-shot) and MBPP austin2021program (3-shot) \u2022 Popular aggregated results: MMLU hendrycks2020measuring (5-shot), BBH suzgun2022challenging (3-shot), and AGI Eval zhong2023agieval (3-5-shot, English multiple-...",
+   "[body] ...h our evaluation pipeline for accurate comparison. Mistral 7B significantly outperforms Llama 2 7B and Llama 2 13B on all benchmarks. It is also vastly superior to Llama 1 34B in mathematics, code generation, and reasoning benchmarks. Model Modality MMLU HellaSwag WinoG PIQA Arc-e Arc-c NQ TriviaQA HumanEval MBPP MATH GSM8K LLaMA 2 7B Pretrained 44.4% 77.1% 69.5% 77.9% 68.7% 43.2% 24.7% 63.8% 11.6% 26.1% 3.9% 16.0% LLaMA 2 13B Pretrained 55.6% 80.7% 72.9% 80.8% 75.2% 48.8% 29.0% 69.6% 18.9% 35.4% 6.0% 34.3% Code-Llama 7B Finetuned 36.9% 62.9% 62.3% 72.8% 59.4% 34.5% 11.0% 34.9% 31.1% 52.5% 5.2% 20.8% Mistral 7B Pretrained 60.1% 81.3% 75.3% 83.0% 80.0%..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:39",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B achieves 30.5% on HumanEval coding benchmark.",
+  "contexts": [
+   "[body] ...mmonsenseQA talmor2018commonsenseqa \u2022 World Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ clark2019boolq , QuAC choi2018quac \u2022 Math: GSM8K cobbe2021training (8-shot) with maj@8 and MATH hendrycks2021measuring (4-shot) with maj@4 \u2022 Code: Humaneval chen2021evaluating (0-shot) and MBPP austin2021program (3-shot) \u2022 Popular aggregated results: MMLU hendrycks2020measuring (5-shot), BBH suzgun2022challenging (3-shot), and AGI Eval zhong2023agieval (3-5-shot, English multiple-choice questions only) Detailed results for Mistral 7B, Llama 2 7B/13B, and Code-Llama 7B are reported i...",
+   "[body] ...d on all metrics with our evaluation pipeline for accurate comparison. Mistral 7B significantly outperforms Llama 2 7B and Llama 2 13B on all benchmarks. It is also vastly superior to Llama 1 34B in mathematics, code generation, and reasoning benchmarks. Model Modality MMLU HellaSwag WinoG PIQA Arc-e Arc-c NQ TriviaQA HumanEval MBPP MATH GSM8K LLaMA 2 7B Pretrained 44.4% 77.1% 69.5% 77.9% 68.7% 43.2% 24.7% 63.8% 11.6% 26.1% 3.9% 16.0% LLaMA 2 13B Pretrained 55.6% 80.7% 72.9% 80.8% 75.2% 48.8% 29.0% 69.6% 18.9% 35.4% 6.0% 34.3% Code-Llama 7B Finetuned 36.9% 62.9% 62.3% 72.8% 59.4% 34.5% 11.0% 34.9% 31.1% 52.5% 5.2% 20.8% Mistral 7B Pretrained 60.1% 81.3..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:40",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "MBPP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B achieves 47.5% on MBPP benchmark.",
+  "contexts": [
+   "[body] ...d Knowledge (5-shot): NaturalQuestions kwiatkowski2019natural , TriviaQA joshi2017triviaqa \u2022 Reading Comprehension (0-shot): BoolQ clark2019boolq , QuAC choi2018quac \u2022 Math: GSM8K cobbe2021training (8-shot) with maj@8 and MATH hendrycks2021measuring (4-shot) with maj@4 \u2022 Code: Humaneval chen2021evaluating (0-shot) and MBPP austin2021program (3-shot) \u2022 Popular aggregated results: MMLU hendrycks2020measuring (5-shot), BBH suzgun2022challenging (3-shot), and AGI Eval zhong2023agieval (3-5-shot, English multiple-choice questions only) Detailed results for Mistral 7B, Llama 2 7B/13B, and Code-Llama 7B are reported in Table 2 . Figure 4 compares the performa...",
+   "[body] ...ral 7B\u2019s performance achieves a lower compression rate of 1.9x, which is likely due to its limited parameter count that restricts the amount of knowledge it can store. Evaluation Differences. On some benchmarks, there are some differences between our evaluation protocol and the one reported in the Llama 2 paper: 1) on MBPP, we use the hand-verified subset 2) on TriviaQA, we do not provide Wikipedia contexts. Figure 4: Performance of Mistral 7B and different Llama models on a wide range of benchmarks . All models were re-evaluated on all metrics with our evaluation pipeline for accurate comparison. Mistral 7B significantly outperforms Llama 2 7B and Lla...",
+   "[body] ...etrics with our evaluation pipeline for accurate comparison. Mistral 7B significantly outperforms Llama 2 7B and Llama 2 13B on all benchmarks. It is also vastly superior to Llama 1 34B in mathematics, code generation, and reasoning benchmarks. Model Modality MMLU HellaSwag WinoG PIQA Arc-e Arc-c NQ TriviaQA HumanEval MBPP MATH GSM8K LLaMA 2 7B Pretrained 44.4% 77.1% 69.5% 77.9% 68.7% 43.2% 24.7% 63.8% 11.6% 26.1% 3.9% 16.0% LLaMA 2 13B Pretrained 55.6% 80.7% 72.9% 80.8% 75.2% 48.8% 29.0% 69.6% 18.9% 35.4% 6.0% 34.3% Code-Llama 7B Finetuned 36.9% 62.9% 62.3% 72.8% 59.4% 34.5% 11.0% 34.9% 31.1% 52.5% 5.2% 20.8% Mistral 7B Pretrained 60.1% 81.3% 75.3% 83..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:41",
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "object": "MT-Bench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B-Instruct achieves 6.84 on MT-Bench chat evaluation.",
+  "contexts": [
+   "[body] ...can compress). Model Chatbot Arena ELO Rating MT Bench WizardLM 13B v1.2 1047 7.2 Mistral 7B Instruct 1031 6.84 +/- 0.07 Llama 2 13B Chat 1012 6.65 Vicuna 13B 1041 6.57 Llama 2 7B Chat 985 6.27 Vicuna 7B 997 6.17 Alpaca 13B 914 4.53 Table 3: Comparison of Chat models. Mistral 7B \u2013 Instruct outperforms all 7B models on MT-Bench, and is comparable to 13B \u2013 Chat models. 4 Instruction Finetuning To evaluate the generalization capabilities of Mistral 7B, we fine-tuned it on instruction datasets publicly available on the repository. No proprietary data or training tricks were utilized: Mistral 7B \u2013 Instruct model is a simple and preliminary demonstration tha...",
+   "[body] ...tary data or training tricks were utilized: Mistral 7B \u2013 Instruct model is a simple and preliminary demonstration that the base model can easily be fine-tuned to achieve good performance. In Table 3 , we observe that the resulting model, Mistral 7B \u2013 Instruct, exhibits superior performance compared to all 7B models on MT-Bench, and is comparable to 13B \u2013 Chat models. An independent human evaluation was conducted on https://llmboxing.com/leaderboard . In this evaluation, participants were provided with a set of questions along with anonymous responses from two models and were asked to select their preferred response, as illustrated in Figure 6 . As of O..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:42",
+  "page": "arxiv:2312.00752v2",
+  "subject": "Mamba",
+  "object": "state space models",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Mamba builds on structured state space models (SSMs) architecture.",
+  "contexts": [
+   "[body] ...structured state space sequence models (SSMs) [ gu2021combining , gu2022efficiently ] have emerged as a promising class of architectures for sequence modeling. These models can be interpreted as a combination of recurrent neural networks (RNNs) and convolutional neural networks (CNNs), with inspiration from classical state space models [ kalman1960new ] . This class of models can be computed very efficiently as either a recurrence or convolution, with linear or near-linear scaling in sequence length. Additionally, they have principled mechanisms for modeling long-range dependencies [ gu2020hippo ] in certain data modalities, and have dominated benchma...",
+   "[body] ...mith2023s5 , orvieto2023resurrecting ] have been successful in domains involving continuous signal data such as audio and vision [ goel2022raw , saon2023diagonal , nguyen2022s4nd ] . However, they have been less effective at modeling discrete and information-dense data such as text. We propose a new class of selective state space models , that improves on prior work on several axes to achieve the modeling power of Transformers while scaling linearly in sequence length. Selection Mechanism. First, we identify a key limitation of prior models: the ability to efficiently select data in an input-dependent manner (i.e. focus on or ignore particular inputs)....",
+   "[abstract] ...Foundation models, now powering most of the exciting applications in deep learning, are almost universally based on the Transformer architecture and its core attention module. Many subquadratic-time architectures such as linear attention, gated convolution and recurrent models, and structured state space models (SSMs) have been developed to address Transformers' computational inefficiency on long sequences, but they have not performed as well as attention on important modalities such as language. We identify that a key weakness of such models is their inability to perform content-based reasoning, and make several improvements...."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:43",
+  "page": "arxiv:2312.11805v5",
+  "subject": "Gemini",
+  "object": "MMLU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Gemini Ultra is first model to achieve human-expert performance on MMLU.",
+  "contexts": [
+   "[body] ..., Kehang Han , Peter Humphreys , Thibault Sellam , James B [...] Evaluation on a broad range of benchmarks shows that our most-capable Gemini Ultra model advances the state of the art in 30 of 32 of these benchmarks - notably being the first model to achieve human-expert performance on the well-studied exam benchmark MMLU, and improving the state of the art in every one of the 20 multimodal benchmarks we examined. We believe that the new capabilities of the Gemini family in cross-modal reasoning and language understanding will enable a wide variety of use cases. We discuss our approach toward post-training and deploying Gemini models responsibly to us...",
+   "[abstract] ...omplex reasoning tasks to on-device memory-constrained use-cases. Evaluation on a broad range of benchmarks shows that our most-capable Gemini Ultra model advances the state of the art in 30 of 32 of these benchmarks - notably being the first model to achieve human-expert performance on the well-studied exam benchmark MMLU, and improving the state of the art in every one of the 20 multimodal benchmarks we examined. We believe that the new capabilities of the Gemini family in cross-modal reasoning and language understanding will enable a wide variety of use cases. We discuss our approach toward post-training and deploying Gemini models responsibly to us..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:44",
+  "page": "arxiv:2402.03300v3",
+  "subject": "DeepSeekMath",
+  "object": "DeepSeek-Coder-Base-v1.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DeepSeekMath continues pre-training from DeepSeek-Coder-Base-v1.5 7B.",
+  "contexts": [
+   "[body] ...al, so we notice an improvement in Chinese mathematical benchmarks (Wei et al., 2023 ; Zhong et al., 2023 ) . We believe that our experience in mathematical data processing is a starting point for the research community, and there is significant room for improvement in the future. DeepSeekMath-Base is initialized with DeepSeek-Coder-Base-v1.5 7B (Guo et al., 2024 ) , as we notice that starting from a code training model is a better choice compared to a general LLM. Furthermore, we observe the math training also improves model capability on MMLU (Hendrycks et al., 2020 ) and BBH benchmarks (Suzgun et al., 2022 ) , indicating it does not only enhance the...",
+   "[abstract] ...Mathematical reasoning poses a significant challenge for language models due to its complex and structured nature. In this paper, we introduce DeepSeekMath 7B, which continues pre-training DeepSeek-Coder-Base-v1.5 7B with 120B math-related tokens sourced from Common Crawl, together with natural language and code data. DeepSeekMath 7B has achieved an impressive score of 51.7% on the competition-level MATH benchmark without relying on external toolkits and voting techniques, approaching the performance level of Gemini-Ultra a..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:45",
+  "page": "arxiv:2402.03300v3",
+  "subject": "DeepSeekMath",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DeepSeekMath uses Group Relative Policy Optimization (GRPO) for training.",
+  "contexts": [
+   "[body] ...program-of-thought (Chen et al., 2022 ; Gao et al., 2023 ) , and tool-integrated reasoning (Gou et al., 2023 ) data. The resulting model DeepSeekMath-Instruct 7B beats all 7B counterparts and is comparable with 70B open-source instruction-tuned models. Furthermore, we introduce the Group Relative Policy Optimization (GRPO), a variant reinforcement learning (RL) algorithm of Proximal Policy Optimization (PPO) (Schulman et al., 2017 ) . GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources. By solely using a subset of English instruction tuning data, GRPO obtains a substantial improv...",
+   "[body] ...e resulting model DeepSeekMath-Instruct 7B beats all 7B counterparts and is comparable with 70B open-source instruction-tuned models. Furthermore, we introduce the Group Relative Policy Optimization (GRPO), a variant reinforcement learning (RL) algorithm of Proximal Policy Optimization (PPO) (Schulman et al., 2017 ) . GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources. By solely using a subset of English instruction tuning data, GRPO obtains a substantial improvement over the strong DeepSeekMath-Instruct, including both in-domain (GSM [...] experiments on the top 40B, 80B, 120B,...",
+   "[body] ...ptimization (GRPO), a variant reinforcement learning (RL) algorithm of Proximal Policy Optimization (PPO) (Schulman et al., 2017 ) . GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources. By solely using a subset of English instruction tuning data, GRPO obtains a substantial improvement over the strong DeepSeekMath-Instruct, including both in-domain (GSM [...] experiments on the top 40B, 80B, 120B, and 160B tokens. In the first iteration, we choose to keep the top 40B tokens. After the first iteration of data collection, numerous mathematical web pages remain uncollected, mainly bec..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:46",
+  "page": "arxiv:2402.03300v3",
+  "subject": "DeepSeekMath",
+  "object": "chain-of-thought",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DeepSeekMath uses chain-of-thought prompting in instruction tuning.",
+  "contexts": [
+   "[body] ...g also improves model capability on MMLU (Hendrycks et al., 2020 ) and BBH benchmarks (Suzgun et al., 2022 ) , indicating it does not only enhance the model\u2019s mathematical abilities but also amplifies general reasoning capabilities. After pre-training, we apply mathematical instruction tuning to DeepSeekMath-Base with chain-of-thought (Wei et al., 2022 ) , program-of-thought (Chen et al., 2022 ; Gao et al., 2023 ) , and tool-integrated reasoning (Gou et al., 2023 ) data. The resulting model DeepSeekMath-Instruct 7B beats all 7B counterparts and is comparable with 70B open-source instruction-tuned models. Furthermore, we introduce the Group Relative Pol...",
+   "[body] ....0% 2.8% OpenWebMath 13.6B 11.5% 8.9% 3.7% 31.3% 29.6% 16.8% 0.0% 14.2% Proof-Pile-2 51.9B 14.3% 11.2% 3.7% 43.8% 29.2% 19.9% 5.1% 11.7% DeepSeekMath Corpus 120.2B 23.8% 13.6% 4.8% 56.3% 33.1% 41.5% 5.9% 23.6% Table 1: Performance of DeepSeek-LLM 1.3B trained on different mathematical corpora, evaluated using few-shot chain-of-thought prompting. Corpus sizes are calculated using our tokenizer with a vocabulary size of 100K. Figure 3: Benchmark curves of DeepSeek-LLM 1.3B trained on different mathematical corpora. 2.2.2 Evaluation Results The DeepSeekMath Corpus is of high quality, covers multilingual mathematical content, and is the largest in size. \u2022...",
+   "[body] ...3: Benchmark curves of DeepSeek-LLM 1.3B trained on different mathematical corpora. 2.2.2 Evaluation Results The DeepSeekMath Corpus is of high quality, covers multilingual mathematical content, and is the largest in size. \u2022 High-quality : We evaluate downstream performance on 8 mathematical benchmarks using few-shot chain-of-thought prompting Wei et al. ( 2022 ) . As shown in Table 1 , there i..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:47",
+  "page": "arxiv:2402.03300v3",
+  "subject": "DeepSeekMath",
+  "object": "MATH",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DeepSeekMath achieves 51.7% on MATH competition-level benchmark.",
+  "contexts": [
+   "[body] ...1 Introduction Large language models (LLM) have revolutionized the approach to mathematical reasoning in artificial intelligence, spurring significant advancements in both the quantitative reasoning benchmark (Hendrycks et al., 2021 ) and the geometry reasoning benchmark (Trinh et al., 2024 ) . Moreover, these models have proven instrumental in assisting humans in solving complex mathematical problems (Tao, 2023 ) ....",
+   "[body] ...the approach to mathematical reasoning in artificial intelligence, spurring significant advancements in both the quantitative reasoning benchmark (Hendrycks et al., 2021 ) and the geometry reasoning benchmark (Trinh et al., 2024 ) . Moreover, these models have proven instrumental in assisting humans in solving complex mathematical problems (Tao, 2023 ) . However, cutting-edge models such as GPT-4 (OpenAI, 2023 ) and Gemini-Ultra (Anil et al., 2023 ) are not publicly available, and the currently accessible open-source models considerably trail behind in performance. In this study, we introduce DeepSeekMath, a domain-specific language model that signific...",
+   "[body] ...sting humans in solving complex mathematical problems (Tao, 2023 ) . However, cutting-edge models such as GPT-4 (OpenAI, 2023 ) and Gemini-Ultra (Anil et al., 2023 ) are not publicly available, and the currently accessible open-source models considerably trail behind in performance. In this study, we introduce DeepSeekMath, a domain-specific language model that significantly outperforms the mathematical capabilities of open-source models and approaches the performance level of GPT-4 on academic benchmarks. To achieve this, we create the DeepSeekMath Corpus, a large-scale high-quality pre-training corpus comprising 120B math tokens. This dataset is extr..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:48",
+  "page": "arxiv:2402.03300v3",
+  "subject": "DeepSeekMath",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DeepSeekMath achieves 64.2% on GSM8K benchmark.",
+  "contexts": [
+   "[body] ...e additional positive instances from the CC, which are further refined through human annotation. The classifier is then updated with this enhanced dataset to improve its performance. The evaluation results indicate that the large-scale corpus is of high quality, as our base model DeepSeekMath-Base 7B achieves 64.2% on GSM8K (Cobbe et al., 2021 ) and 36.2% on the competition-level MATH dataset (Hendrycks et al., 2021 ) , outperforming Minerva 540B (Lewkowycz et al., 2022a ) . In addition, the DeepSeekMath Corpus is multilingual, so we notice an improvement in Chinese mathematical benchmarks (Wei et al., 2023 ; Zhong et al., 2023 ) . We believe that our...",
+   "[body] .... In the fourth iteration, we notice that nearly 98% of the data has already been collected in the third iteration, so we decide to cease data collection. To avoid benchmark contamination, we follow Guo et al. ( 2024 ) to filter out web pages containing questions or answers from English mathematical benchmarks such as GSM8K (Cobbe et al., 2021 ) and MATH (Hendrycks et al., 2021 ) and Chinese benchmarks such as CMATH (Wei et al., 2023 ) and AGIEval (Zhong et al., 2023 ) . The filtering criteria are as follows: any text segment containing a 10-gram string that matches exactly with any sub-string from the evaluation benchmarks is removed from our math tra...",
+   "[body] ...0 warmup steps, decreases to its 31.6% after 80% of the training process, and further decreases to 10.0% of the peak after 90% of the training process. We set the maximum value of learning rate to 5.3e-4, and use a batch size of 4M tokens with a 4K context length. Math Corpus Size English Benchmarks Chinese Benchmarks GSM8K MATH OCW SAT MMLU STEM CMATH Gaokao MathCloze Gaokao MathQA No Math Training N/A 2.9% 3.0% 2.9% 15.6% 19.5% 12.3% 0.8% 17.9% MathPile 8.9B 2.7% 3.3% 2.2% 12.5% 15.7% 1.2% 0.0% 2.8% OpenWebMath 13.6B 11.5% 8.9% 3.7% 31.3% 29.6% 16.8% 0.0% 14.2% Proof-Pile-2 51.9B 14.3% 11.2% 3.7% 43.8% 29.2% 19.9% 5.1% 11.7% DeepSeekMath Corpus 120.2..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:49",
+  "page": "arxiv:2402.03300v3",
+  "subject": "DeepSeekMath",
+  "object": "MMLU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DeepSeekMath improves model capability on MMLU benchmark.",
+  "contexts": [
+   "[body] ...here is significant room for improvement in the future. DeepSeekMath-Base is initialized with DeepSeek-Coder-Base-v1.5 7B (Guo et al., 2024 ) , as we notice that starting from a code training model is a better choice compared to a general LLM. Furthermore, we observe the math training also improves model capability on MMLU (Hendrycks et al., 2020 ) and BBH benchmarks (Suzgun et al., 2022 ) , indicating it does not only enhance the model\u2019s mathematical abilities but also amplifies general reasoning capabilities. After pre-training, we apply mathematical instruction tuning to DeepSeekMath-Base with chain-of-thought (Wei et al., 2022 ) , program-of-though...",
+   "[body] ...reases to its 31.6% after 80% of the training process, and further decreases to 10.0% of the peak after 90% of the training process. We set the maximum value of learning rate to 5.3e-4, and use a batch size of 4M tokens with a 4K context length. Math Corpus Size English Benchmarks Chinese Benchmarks GSM8K MATH OCW SAT MMLU STEM CMATH Gaokao MathCloze Gaokao MathQA No Math Training N/A 2.9% 3.0% 2.9% 15.6% 19.5% 12.3% 0.8% 17.9% MathPile 8.9B 2.7% 3.3% 2.2% 12.5% 15.7% 1.2% 0.0% 2.8% OpenWebMath 13.6B 11.5% 8.9% 3.7% 31.3% 29.6% 16.8% 0.0% 14.2% Proof-Pile-2 51.9B 14.3% 11.2% 3.7% 43.8% 29.2% 19.9% 5.1% 11.7% DeepSeekMath Corpus 120.2B 23.8% 13.6% 4.8%..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:50",
+  "page": "arxiv:2402.03300v3",
+  "subject": "DeepSeekMath",
+  "object": "BBH",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DeepSeekMath improves model capability on BBH reasoning benchmark.",
+  "contexts": [
+   "[body] ...ement in the future. DeepSeekMath-Base is initialized with DeepSeek-Coder-Base-v1.5 7B (Guo et al., 2024 ) , as we notice that starting from a code training model is a better choice compared to a general LLM. Furthermore, we observe the math training also improves model capability on MMLU (Hendrycks et al., 2020 ) and BBH benchmarks (Suzgun et al., 2022 ) , indicating it does not only enhance the model\u2019s mathematical abilities but also amplifies general reasoning capabilities. After pre-training, we apply mathematical instruction tuning to DeepSeekMath-Base with chain-of-thought (Wei et al., 2022 ) , program-of-thought (Chen et al., 2022 ; Gao et al.,..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:51",
+  "page": "arxiv:2407.10671v4",
+  "subject": "Qwen2",
+  "object": "MMLU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen2-72B achieves 84.2% on MMLU benchmark.",
+  "contexts": [
+   "[abstract] ...n-weight models, including its predecessor Qwen1.5, and exhibits competitive performance relative to proprietary models across diverse benchmarks on language understanding, generation, multilingual proficiency, coding, mathematics, and reasoning. The flagship model, Qwen2-72B, showcases remarkable performance: 84.2 on MMLU, 37.9 on GPQA, 64.6 on HumanEval, 89.5 on GSM8K, and 82.4 on BBH as a base language model. The instruction-tuned variant, Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench. Moreover, Qwen2 demonstrates robust multilingual capabilities, proficient in approximately 30 languages, spanning English..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:52",
+  "page": "arxiv:2407.10671v4",
+  "subject": "Qwen2",
+  "object": "GPQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen2-72B achieves 37.9% on GPQA benchmark.",
+  "contexts": [
+   "[abstract] ...s, including its predecessor Qwen1.5, and exhibits competitive performance relative to proprietary models across diverse benchmarks on language understanding, generation, multilingual proficiency, coding, mathematics, and reasoning. The flagship model, Qwen2-72B, showcases remarkable performance: 84.2 on MMLU, 37.9 on GPQA, 64.6 on HumanEval, 89.5 on GSM8K, and 82.4 on BBH as a base language model. The instruction-tuned variant, Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench. Moreover, Qwen2 demonstrates robust multilingual capabilities, proficient in approximately 30 languages, spanning English, Chinese, Spa..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:53",
+  "page": "arxiv:2407.10671v4",
+  "subject": "Qwen2",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen2-72B achieves 64.6% on HumanEval coding benchmark.",
+  "contexts": [
+   "[abstract] ...ts predecessor Qwen1.5, and exhibits competitive performance relative to proprietary models across diverse benchmarks on language understanding, generation, multilingual proficiency, coding, mathematics, and reasoning. The flagship model, Qwen2-72B, showcases remarkable performance: 84.2 on MMLU, 37.9 on GPQA, 64.6 on HumanEval, 89.5 on GSM8K, and 82.4 on BBH as a base language model. The instruction-tuned variant, Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench. Moreover, Qwen2 demonstrates robust multilingual capabilities, proficient in approximately 30 languages, spanning English, Chinese, Spanish, French,..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:54",
+  "page": "arxiv:2407.10671v4",
+  "subject": "Qwen2",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen2-72B achieves 89.5% on GSM8K mathematical reasoning.",
+  "contexts": [
+   "[abstract] ...1.5, and exhibits competitive performance relative to proprietary models across diverse benchmarks on language understanding, generation, multilingual proficiency, coding, mathematics, and reasoning. The flagship model, Qwen2-72B, showcases remarkable performance: 84.2 on MMLU, 37.9 on GPQA, 64.6 on HumanEval, 89.5 on GSM8K, and 82.4 on BBH as a base language model. The instruction-tuned variant, Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench. Moreover, Qwen2 demonstrates robust multilingual capabilities, proficient in approximately 30 languages, spanning English, Chinese, Spanish, French, German, Arabic, Rus..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:55",
+  "page": "arxiv:2407.10671v4",
+  "subject": "Qwen2",
+  "object": "BBH",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen2-72B achieves 82.4% on BBH benchmark.",
+  "contexts": [
+   "[abstract] ...ompetitive performance relative to proprietary models across diverse benchmarks on language understanding, generation, multilingual proficiency, coding, mathematics, and reasoning. The flagship model, Qwen2-72B, showcases remarkable performance: 84.2 on MMLU, 37.9 on GPQA, 64.6 on HumanEval, 89.5 on GSM8K, and 82.4 on BBH as a base language model. The instruction-tuned variant, Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench. Moreover, Qwen2 demonstrates robust multilingual capabilities, proficient in approximately 30 languages, spanning English, Chinese, Spanish, French, German, Arabic, Russian, Korean, Japan..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:56",
+  "page": "arxiv:2407.10671v4",
+  "subject": "Qwen2",
+  "object": "MT-Bench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen2-72B-Instruct attains 9.1 on MT-Bench evaluation.",
+  "contexts": [
+   "[abstract] ...rstanding, generation, multilingual proficiency, coding, mathematics, and reasoning. The flagship model, Qwen2-72B, showcases remarkable performance: 84.2 on MMLU, 37.9 on GPQA, 64.6 on HumanEval, 89.5 on GSM8K, and 82.4 on BBH as a base language model. The instruction-tuned variant, Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench. Moreover, Qwen2 demonstrates robust multilingual capabilities, proficient in approximately 30 languages, spanning English, Chinese, Spanish, French, German, Arabic, Russian, Korean, Japanese, Thai, Vietnamese, and more, underscoring its versatility and global reach. To foster commun..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:57",
+  "page": "arxiv:2407.10671v4",
+  "subject": "Qwen2",
+  "object": "Arena-Hard",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen2-72B-Instruct achieves 48.1 on Arena-Hard benchmark.",
+  "contexts": [
+   "[abstract] ...ion, multilingual proficiency, coding, mathematics, and reasoning. The flagship model, Qwen2-72B, showcases remarkable performance: 84.2 on MMLU, 37.9 on GPQA, 64.6 on HumanEval, 89.5 on GSM8K, and 82.4 on BBH as a base language model. The instruction-tuned variant, Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench. Moreover, Qwen2 demonstrates robust multilingual capabilities, proficient in approximately 30 languages, spanning English, Chinese, Spanish, French, German, Arabic, Russian, Korean, Japanese, Thai, Vietnamese, and more, underscoring its versatility and global reach. To foster community innovation and..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:58",
+  "page": "arxiv:2407.10671v4",
+  "subject": "Qwen2",
+  "object": "LiveCodeBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Qwen2-72B-Instruct achieves 35.7 on LiveCodeBench.",
+  "contexts": [
+   "[abstract] ...iency, coding, mathematics, and reasoning. The flagship model, Qwen2-72B, showcases remarkable performance: 84.2 on MMLU, 37.9 on GPQA, 64.6 on HumanEval, 89.5 on GSM8K, and 82.4 on BBH as a base language model. The instruction-tuned variant, Qwen2-72B-Instruct, attains 9.1 on MT-Bench, 48.1 on Arena-Hard, and 35.7 on LiveCodeBench. Moreover, Qwen2 demonstrates robust multilingual capabilities, proficient in approximately 30 languages, spanning English, Chinese, Spanish, French, German, Arabic, Russian, Korean, Japanese, Thai, Vietnamese, and more, underscoring its versatility and global reach. To foster community innovation and accessibility, we have..."
+  ]
+ },
+ {
+  "sid": "out_0.jsonl:59",
+  "page": "arxiv:2407.10671v4",
+  "subject": "Qwen2",
+  "object": "RLHF",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Qwen2 uses Reinforcement Learning from Human Feedback in post-training.",
+  "contexts": [
+   "[body] ...hat heavily rely on extensive human supervision, our approach focuses on scalable alignment with minimal human annotation (Cao et al., 2024 ) . Specifically, we investigate methods to acquire high-quality demonstration and preference data for Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF), aiming to minimize the need for human labeling while maximizing the quality and reliability of the data. 4.1 Post-training Data The post-training data primarily consists of two components: demonstration data \ud835\udc9f = { ( x i , y i ) } \ud835\udc9f subscript \ud835\udc65 \ud835\udc56 subscript \ud835\udc66 \ud835\udc56 \\mathcal{D}=\\{(x_{i},y_{i})\\} caligraphic_D = { ( italic_x start_POSTSUBS...",
+   "[body] ...UPERSCRIPT + end_POSTSUPERSCRIPT being the preferred choice over y i \u2212 superscript subscript \ud835\udc66 \ud835\udc56 y_{i}^{-} italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT start_POSTSUPERSCRIPT - end_POSTSUPERSCRIPT . The set \ud835\udc9f \ud835\udc9f \\mathcal{D} caligraphic_D is utilized in SFT, whereas \ud835\udcab \ud835\udcab \\mathcal{P} caligraphic_P is employed in RLHF. The construction of training data entails a two-step process: collaborative data annotation and automated data synthesis. First, we extract the data ontology from large-scale instruction corpora, leadin..."
+  ]
+ }
+]

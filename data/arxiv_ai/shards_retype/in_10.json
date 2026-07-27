@@ -1,0 +1,732 @@
+[
+ {
+  "sid": "out_5.jsonl:38",
+  "page": "arxiv:2607.21284v1",
+  "subject": "LM",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LM builds on LoRA.",
+  "contexts": [
+   "[body] ...of 0.01 0.01 . Training runs for 60k steps with a linear warmup over the first 1k steps, after which the learning rate decays linearly to zero. We select the best checkpoint based on validation perplexity with early stopping (patience = 3 =3 ), evaluating every 1k steps. For parameter-efficient fine-tuning, we employ LoRA (Hu et al. , 2021 ) with rank r = 16 r=16 , scaling factor \u03b1 = 16 \\alpha=16 , and no dropout, applying adapters to the attention projections ( q q , k k , v v , o o ) as well as the gating and feed-forward layers. This configuration keeps the number of trainable parameters small while allowing the model to adapt effectively to the HT..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:39",
+  "page": "arxiv:2607.21284v1",
+  "subject": "LM",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LM builds on Qwen2.5.",
+  "contexts": [
+   "[body] ...el to adapt effectively to the HTML conversion task. Model BLEU \u2191 \\uparrow METEOR \u2191 \\uparrow ROUGE-L \u2191 \\uparrow Lev. \u2193 \\downarrow Jaro-W. \u2191 \\uparrow Parsing libraries news-please 0.599 0.702 0.669 0.386 0.741 Boilerpipe 0.599 0.654 0.680 0.380 0.728 Pre-trained language models ReaderLM-v2 0.098 0.294 0.275 0.830 0.544 Qwen2.5-32B-Instruct 0.077 0.249 0.168 0.821 0.601 Fine-tuned language models Qwen2.5-1.5B 0.590 0.652 0.677 0.384 0.774 Qwen2.5-1.5B + SimCTG 0.623 0.678 0.707 0.342 0.786 news-crawler-LM 0.671 0.739 0.749 0.295 0.820 Table 3: Results for HTML-to-plaintext task. 3.3 Metrics BLEU (Papineni et al. , 2002 ) measures n-gram precision between...",
+   "[body] ...EOR \u2191 \\uparrow ROUGE-L \u2191 \\uparrow Lev. \u2193 \\downarrow Jaro-W. \u2191 \\uparrow Parsing libraries news-please 0.599 0.702 0.669 0.386 0.741 Boilerpipe 0.599 0.654 0.680 0.380 0.728 Pre-trained language models ReaderLM-v2 0.098 0.294 0.275 0.830 0.544 Qwen2.5-32B-Instruct 0.077 0.249 0.168 0.821 0.601 Fine-tuned language models Qwen2.5-1.5B 0.590 0.652 0.677 0.384 0.774 Qwen2.5-1.5B + SimCTG 0.623 0.678 0.707 0.342 0.786 news-crawler-LM 0.671 0.739 0.749 0.295 0.820 Table 3: Results for HTML-to-plaintext task. 3.3 Metrics BLEU (Papineni et al. , 2002 ) measures n-gram precision between the predicted and reference text, combined with a brevity penalty to discoura...",
+   "[body] ...ownarrow Jaro-W. \u2191 \\uparrow Parsing libraries news-please 0.599 0.702 0.669 0.386 0.741 Boilerpipe 0.599 0.654 0.680 0.380 0.728 Pre-trained language models ReaderLM-v2 0.098 0.294 0.275 0.830 0.544 Qwen2.5-32B-Instruct 0.077 0.249 0.168 0.821 0.601 Fine-tuned language models Qwen2.5-1.5B 0.590 0.652 0.677 0.384 0.774 Qwen2.5-1.5B + SimCTG 0.623 0.678 0.707 0.342 0.786 news-crawler-LM 0.671 0.739 0.749 0.295 0.820 Table 3: Results for HTML-to-plaintext task. 3.3 Metrics BLEU (Papineni et al. , 2002 ) measures n-gram precision between the predicted and reference text, combined with a brevity penalty to discourage overly short outputs. We compute BLEU us..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:40",
+  "page": "arxiv:2607.21291v1",
+  "subject": "Adaptive",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Adaptive builds on Qwen2.5.",
+  "contexts": [
+   "[body] ...; (ii) lightweight routing via an MLP-based token router for dynamic per-layer selection without redesigning the Transformer backbone; (iii) a feature-preserving alignment objective that preserves intermediate and final dense-teacher representations under sparse inference; and (iv) empirical validation on GPT-NeoX and Qwen2.5, achieving better accuracy\u2013efficiency trade-offs than strong depth-sparse baselines under comparable sparsity. 2 Related Work 2.1 Sparse Conditional Computation in LLMs Sparse conditional computation has become a major direction for efficiency. Mixture-of-Experts (MoE) methods activate only a subset of experts per token, increasin...",
+   "[body] ...expert sparsity has shown that representation-level supervision \u2014 aligning intermediate features rat [...] 4 Experiments This section provides an empirical evaluation of AdaDSF covering settings, protocols, and analysis. 4.1 Experimental Setup Models. AdaDSF is evaluated on three representative models: GPT-NeoX-130M, Qwen2.5-0.5B, and Qwen2.5-1.5B. Datasets. Two regimes are considered. GPT-NeoX is trained on Wikitext103, representing a pretraining scenario. Qwen2.5 models are trained on instruction-tuning data \u2014 GenQA [ 4 ] , InfinityInstruct [ 14 ] , and OpenHermes2.5 [ 25 ] \u2014 to simulate settings without pretraining resources. Evaluation Tasks. We e...",
+   "[body] ...as shown that representation-level supervision \u2014 aligning intermediate features rat [...] 4 Experiments This section provides an empirical evaluation of AdaDSF covering settings, protocols, and analysis. 4.1 Experimental Setup Models. AdaDSF is evaluated on three representative models: GPT-NeoX-130M, Qwen2.5-0.5B, and Qwen2.5-1.5B. Datasets. Two regimes are considered. GPT-NeoX is trained on Wikitext103, representing a pretraining scenario. Qwen2.5 models are trained on instruction-tuning data \u2014 GenQA [ 4 ] , InfinityInstruct [ 14 ] , and OpenHermes2.5 [ 25 ] \u2014 to simulate settings without pretraining resources. Evaluation Tasks. We evaluate on languag..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:41",
+  "page": "arxiv:2607.21306v1",
+  "subject": "AI",
+  "object": "GPT-5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "AI builds on GPT-5.",
+  "contexts": [
+   "[body] ...he student model, which was prompted to show its reasoning step-by-step. We selected this model because it exhibits intermediate baseline performance on each of our selected domains, providing sufficient headroom to observe learning from teacher interventions. For teacher models, we evaluated two closed-source models (GPT-5.2, Gemini 3 Flash) and two open-source models (GPT-OSS-120B, DeepSeek-V3.2). We ran each model three times per question. We used GPT-5.2 as the judge model for evaluating student answers. All student and teacher models were run with temperature 0.7, and the judge model was run with temperature 0. For each experiment and the results...",
+   "[body] ...ne performance on each of our selected domains, providing sufficient headroom to observe learning from teacher interventions. For teacher models, we evaluated two closed-source models (GPT-5.2, Gemini 3 Flash) and two open-source models (GPT-OSS-120B, DeepSeek-V3.2). We ran each model three times per question. We used GPT-5.2 as the judge model for evaluating student answers. All student and teacher models were run with temperature 0.7, and the judge model was run with temperature 0. For each experiment and the results that follow, we set a fixed increment size of s = 50 s=50 characters (i.e., teachers in the Standard monitoring condition received 50-c..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:42",
+  "page": "arxiv:2607.21306v1",
+  "subject": "AI",
+  "object": "Llama 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "AI builds on Llama 3.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:43",
+  "page": "arxiv:2607.21306v1",
+  "subject": "AI",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "AI builds on Qwen2.5.",
+  "contexts": [
+   "[body] ...led the 500 most popular and easiest problems ( Appendix A.1 ). For the generalization evaluation, we first sampled 150 problems per domain to generate variant questions via the pipeline described in \u00a7 \\S 3.4 . We then subsampled 100 successfully validated reference-variant pairs per domain (300 total). Models We used Qwen2.5-7B-Instruct as the student model, which was prompted to show its reasoning step-by-step. We selected this model because it exhibits intermediate baseline performance on each of our selected domains, providing sufficient headroom to observe learning from teacher interventions. For teacher models, we evaluated two closed-source mode..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:0",
+  "page": "arxiv:2607.21307v1",
+  "subject": "CT-TEL",
+  "object": "ClinicalTrials.gov",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CT-TEL is evaluated on real-world trials from ClinicalTrials.gov.",
+  "contexts": [
+   "[body] ...tical bottleneck: manually translating thousands of complex clinical trials into TEL is labor-intensive and error-prone. This paper introduces a highly scalable approach: utilizing LLMs to bridge the gap between narrative clinical trial protocols and formal TEL representations. By automating the forward translation of ClinicalTrials.gov texts into TEL and rigorously validating the semantic fidelity via LLM reverse-translation, we present a robust workflow that maps real-world protocols to computable logical structures. Figure 1 illustrates our core paradigm. First, LLMs are utilized to translate unstructured source clinical trials into formal TEL. Next...",
+   "[abstract] ...framework for modeling these elements, manual encoding remains a prohibitive bottleneck. We introduce the CT-TEL workflow: a scalable pipeline leveraging Large Language Models (LLMs) to translate narrative clinical protocols into TEL formulas. We applied CT-TEL to generate logical models for 23 real-world trials from ClinicalTrials.gov. We evaluated translation fidelity via a back-translation approach, using LLMs to convert TEL formulas back into natural language and measuring semantic similarity against source texts. The resulting semantic retention suggests that LLMs may offer a pathway for mapping informal protocols to computable logic, providing p..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:1",
+  "page": "arxiv:2607.21307v1",
+  "subject": "CT-TEL",
+  "object": "Temporal Ensemble Logic",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CT-TEL builds on Temporal Ensemble Logic (TEL) for representing clinical trial protocols.",
+  "contexts": [
+   "[body] ...intermediate representation bridges unstructured protocol narratives and the precise syntactic requirements of temporal logic. The extracted terms and defined events from both sub-tasks are committed to the CT-TEL Library, forming the ontology-grounded event vocabulary used by all downstream steps. Formalization into Temporal Ensemble Logic. The extracted event arrays are converted into canonical TEL formulas through a four-step process, executed by the LLM prompted as a formal logic engineer. All propositions, logic blocks, and canonical formulas are deposited in the CT-TEL Library. Step 1: Propositionalization. Each distinct clinical event, conditio...",
+   "[abstract] ...The reliance on unstructured free text for documenting clinical trial protocols creates a significant barrier to automated reasoning, cohort discovery, and trial simulation. The lack of formal structure obscures critical temporal phenotypes, such as dynamic eligibility criteria and event timing constraints. Although Temporal Ensemble Logic (TEL) offers an expressive framework for modeling these elements, manual encoding remains a prohibitive bottleneck. We introduce the CT-TEL workflow: a scalable pipeline leveraging Large Language Models (LLMs) to translate narrative clinical protocols into TEL formulas. We applied CT-TEL to generate logical models..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:2",
+  "page": "arxiv:2607.21307v1",
+  "subject": "CT-TEL",
+  "object": "UMLS",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The system links extracted entities to Unified Medical Language System (UMLS) concept identifiers.",
+  "contexts": [
+   "[body] ...tially without relying on fragile string matching. Ontological semantic mapping. The LLM processes each JSON record using in-context learning to identify named clinical entities: diseases, drugs, procedures, demographics, and biomarkers. The LLM is prompted to link extracted strings to Unified Medical Language System (UMLS) [ 14 ] concept identifiers. Because zero-shot entity linking tends to hallucinate identifiers and mishandle ambiguous acronyms, the output is augmented with the Alzheimer\u2019s Disease Common Data Element Ontology for Clinical Trials (AD-CDO) [ 15 ] , a domain-specific reference terminology for Alzheimer\u2019s disease clinical trials, which..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:3",
+  "page": "arxiv:2607.21324v1",
+  "subject": "GRADRAG",
+  "object": "SQuALITY",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GRADRAG is evaluated on the SQuALITY benchmark.",
+  "contexts": [
+   "[body] ...e upstream components such as retrievers or graph construction modules. In this work, we study document-grounded query answering and query-focused summarization, where retrieval operates within a given document (or document set) by selecting relevant spans for each query. This setting corresponds to benchmarks such as SQuALITY and QMSum , where each query is paired with long documents. Although these documents fit within modern LLM context windows, our goal is not to compare RAG with full-context inference but to use these benchmarks as a controlled testbed for analyzing how different RAG pipelines behave and how coordination between their components c...",
+   "[body] ...o influence upstream decisions, GradRAG enables coordinated improvements beyond one-step answer rewriting. Rather than optimizing retrieval, structuring, and generation independently, the framework aligns their behavior through feedback-driven prompt refinement within a bounded test-time budget. We evaluate GradRAG on SQuALITY and QMSum using two representative retrieval paradigms. The first is a flat (chunk-based) retrieval pipeline, where the system iteratively rewrites search queries and retrieves document chunks using a hybrid dense\u2013lexical retriever following an IRCoT-style strategy (Trivedi et al. , 2023 ) . The second is a graph-based retrieval...",
+   "[abstract] ...or critiques downstream answers and supporting evidence, producing actionable feedback that a Prompt Optimizer uses to iteratively update adaptive agents, such as retrievers, graph constructors, and answerers. The Evaluator also triggers early stopping when the output is deemed satisfactory. We evaluate GRADRAG on the SQUALITY and QMSUM benchmarks under two retrieval paradigms: flat chunk-based retrieval using IRCoT-style query refinement (Trivedi et al., 2023), and graph-based retrieval that constructs and iteratively enriches an entity-relation graph from the document. Across both settings, GRADRAG consistently outperforms one-step refinement baselin..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:4",
+  "page": "arxiv:2607.21324v1",
+  "subject": "GRADRAG",
+  "object": "QMSUM",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "GRADRAG is evaluated on the QMSUM benchmark.",
+  "contexts": [
+   "[body] ...mponents such as retrievers or graph construction modules. In this work, we study document-grounded query answering and query-focused summarization, where retrieval operates within a given document (or document set) by selecting relevant spans for each query. This setting corresponds to benchmarks such as SQuALITY and QMSum , where each query is paired with long documents. Although these documents fit within modern LLM context windows, our goal is not to compare RAG with full-context inference but to use these benchmarks as a controlled testbed for analyzing how different RAG pipelines behave and how coordination between their components can be improve...",
+   "[body] ...pstream decisions, GradRAG enables coordinated improvements beyond one-step answer rewriting. Rather than optimizing retrieval, structuring, and generation independently, the framework aligns their behavior through feedback-driven prompt refinement within a bounded test-time budget. We evaluate GradRAG on SQuALITY and QMSum using two representative retrieval paradigms. The first is a flat (chunk-based) retrieval pipeline, where the system iteratively rewrites search queries and retrieves document chunks using a hybrid dense\u2013lexical retriever following an IRCoT-style strategy (Trivedi et al. , 2023 ) . The second is a graph-based retrieval pipeline that...",
+   "[abstract] ...downstream answers and supporting evidence, producing actionable feedback that a Prompt Optimizer uses to iteratively update adaptive agents, such as retrievers, graph constructors, and answerers. The Evaluator also triggers early stopping when the output is deemed satisfactory. We evaluate GRADRAG on the SQUALITY and QMSUM benchmarks under two retrieval paradigms: flat chunk-based retrieval using IRCoT-style query refinement (Trivedi et al., 2023), and graph-based retrieval that constructs and iteratively enriches an entity-relation graph from the document. Across both settings, GRADRAG consistently outperforms one-step refinement baselines that updat..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:5",
+  "page": "arxiv:2607.21324v1",
+  "subject": "GRADRAG",
+  "object": "IRCoT",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "GRADRAG compares against IRCoT-style query refinement baselines.",
+  "contexts": [
+   "[body] ...inement within a bounded test-time budget. We evaluate GradRAG on SQuALITY and QMSum using two representative retrieval paradigms. The first is a flat (chunk-based) retrieval pipeline, where the system iteratively rewrites search queries and retrieves document chunks using a hybrid dense\u2013lexical retriever following an IRCoT-style strategy (Trivedi et al. , 2023 ) . The second is a graph-based retrieval pipeline that extracts and iteratively enriches an entity\u2013relation graph to assemble evidence for answerin [...] evaluation step, the Evaluator returns a discrete decision indicating whether the current output is satisfactory. Refinement cycles stop when...",
+   "[body] ...p a , f t ) p_{a}\\leftarrow\\text{Optimize}(p_{a},f_{t}) 16: end for 17: end for 18: return final answer y T y_{T} 3.1 Vector RAG Technical Details For flat retrieval, we implement a document-grounded Vector RAG pipeline in which the input document is segmented into overlapping text chunks. A Retrieval Agent follows an IRCoT-style strategy (Trivedi et al. , 2023 ) , iteratively generating sub-queries based on the context retrieved so far. Each sub-query triggers a hybrid retrieval step that combines dense similarity search and lexical matching to select relevant chunks. Within GradRAG , the Retrieval Agent is adaptive: its prompt may be updated across r...",
+   "[body] ...we evaluate GradRAG under two retrieval paradigms: flat (chunk-based) retrieval and graph-based retrieval . For each paradigm, we compare a one-step refinement baseline , in which feedback updates only the answer generator, against a full GradRAG variant that propagates feedback to multiple agents. The systems are: \u2022 IRCoT (Trivedi et al. , 2023 ) + One-Step Refinement: A vector-based RAG pipeline in which only the Answer Generation Agent is adaptive. The Retrieval Agent uses a fixed prompt, so improvements arise solely from iterative answer rewriting. \u2022 Full GradRAG Vector: The same pipeline,..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:6",
+  "page": "arxiv:2607.21325v1",
+  "subject": "CVA",
+  "object": "Groth16 zk-SNARK",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CVA instantiates a zero-knowledge proof of concept over a Groth16 zk-SNARK construction.",
+  "contexts": [
+   "[body] ...lly Verifiable Agent Authorization (CVA), define a compact set of candidate security properties including authorization soundness, principal binding, request binding, policy binding, and replay resistance, and provide an executable zero-knowledge proof of concept that instantiates selected elements of the model over a Groth16 zk-SNARK construction. We further identify and formalize the structural separation among identity binding, authorization-request binding, and runtime execution binding as a central open problem in the design of secure agentic systems (a distinction not explicitly addressed by current agentic security frameworks) and present a fals...",
+   "[abstract] ...lly Verifiable Agent Authorization (CVA), define a compact set of candidate security properties including authorization soundness, principal binding, request binding, policy binding, and replay resistance, and provide an executable zero-knowledge proof of concept that instantiates selected elements of the model over a Groth16 zk-SNARK construction. We further identify and formalize the structural separation among identity binding, authorization-request binding, and runtime execution binding as a central open problem in the design of secure agentic systems (a distinction {not explicitly addressed by} current agentic security frameworks) and present a fa..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:7",
+  "page": "arxiv:2607.21332v1",
+  "subject": "Chengdu-MFA",
+  "object": "Montreal Forced Aligner",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Chengdu-MFA builds on the Montreal Forced Aligner (MFA) toolkit.",
+  "contexts": [
+   "[body] ...zing speech transcription with audio at the utterance, word, and phone levels [ yuan2023using , chodroff2025comparing ] . By automating time-aligned annotations, dedicated aligners such as the Penn Forced Aligner [ yuan2008speaker ] , the Prosodylab-Aligner [ gorman2011prosodylab ] , FAVE [ rosenfelder2014fave ] , the Montreal Forced Aligner (MFA) [ mcauliffe2017montreal ] , and Charsiu Forced Aligner [ Zhu2022PhoneToAudio ] , have greatly facilitated large-scale phonetic and sociolinguistic research. However, existing models for phonetic forced alignment are predominantly trained on standardized, high-resource languages (e.g., Standard Mandarin). When..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:8",
+  "page": "arxiv:2607.21332v1",
+  "subject": "Chengdu-FC",
+  "object": "Wav2Vec2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Chengdu-FC fine-tunes Wav2Vec2 on frame classification for text-independent alignment.",
+  "contexts": [
+   "[body] ...rs. 3.2 Training Setup 3.2.1 Chengdu MFA We trained the Chengdu-MFA acoustic model using MFA toolkit version 3.3.3 [ mcauliffe2017montreal ] . Following the standard practice in G2P modeling for Chinese varieties, each syllable nucleus combined with its tone was modeled as a single unit. 3.2.2 Chengdu FC We fine-tined Wav2Vec2-base, Wav2Vec2-large, XLS-R-300m, Charsiu Madnarin-FC on Chengdu Mandarin respectively. We dub the finetuned models as Chengdu-FC-base , Chengdu-FC-large , Chengdu-FC-xlsr and Chengdu-FC-charsiu . The training was done using AdamW with a weight decay of 1 \u00d7 10 \u2212 4 1\\times 10^{-4} , and a batch size of 8 on a single NVIDIA RTX 309...",
+   "[body] ...g Setup 3.2.1 Chengdu MFA We trained the Chengdu-MFA acoustic model using MFA toolkit version 3.3.3 [ mcauliffe2017montreal ] . Following the standard practice in G2P modeling for Chinese varieties, each syllable nucleus combined with its tone was modeled as a single unit. 3.2.2 Chengdu FC We fine-tined Wav2Vec2-base, Wav2Vec2-large, XLS-R-300m, Charsiu Madnarin-FC on Chengdu Mandarin respectively. We dub the finetuned models as Chengdu-FC-base , Chengdu-FC-large , Chengdu-FC-xlsr and Chengdu-FC-charsiu . The training was done using AdamW with a weight decay of 1 \u00d7 10 \u2212 4 1\\times 10^{-4} , and a batch size of 8 on a single NVIDIA RTX 3090 GPU. The trai..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:9",
+  "page": "arxiv:2607.21332v1",
+  "subject": "Chengdu-FC",
+  "object": "XLS-R",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Chengdu-FC fine-tunes XLS-R on frame classification for text-independent alignment.",
+  "contexts": [
+   "[body] ...engdu MFA We trained the Chengdu-MFA acoustic model using MFA toolkit version 3.3.3 [ mcauliffe2017montreal ] . Following the standard practice in G2P modeling for Chinese varieties, each syllable nucleus combined with its tone was modeled as a single unit. 3.2.2 Chengdu FC We fine-tined Wav2Vec2-base, Wav2Vec2-large, XLS-R-300m, Charsiu Madnarin-FC on Chengdu Mandarin respectively. We dub the finetuned models as Chengdu-FC-base , Chengdu-FC-large , Chengdu-FC-xlsr and Chengdu-FC-charsiu . The training was done using AdamW with a weight decay of 1 \u00d7 10 \u2212 4 1\\times 10^{-4} , and a batch size of 8 on a single NVIDIA RTX 3090 GPU. The training ran for 10..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:10",
+  "page": "arxiv:2607.21332v1",
+  "subject": "Chengdu-FC",
+  "object": "Standard Mandarin-MFA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Chengdu-MFA outperforms Standard Mandarin baseline models on alignment quality.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:11",
+  "page": "arxiv:2607.21333v1",
+  "subject": "SHIFT",
+  "object": "BRIGHT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SHIFT is evaluated on the BRIGHT reasoning-intensive retrieval benchmark.",
+  "contexts": [
+   "[body] ...ReasonEmbed (Chen et al. , 2026b ) , which is a reasoning-intensive dataset that contains 81K training examples from 12 domains. Each query is paired with a reasoning path generated by GPT-4o-mini (OpenAI et al. , 2024 ) . For evaluation, we keep the same settings as LaSER. We use three reasoning-intensive benchmarks: Bright (SU et al. , 2025 ) for in-domain evaluation, and two out-of-domain benchmarks: FollowIR (Weller et al. , 2025 ) and BrowseComp-Plus (Chen et al. , 2025b ) . The statistics of datasets are shown in Table 1 . Table 1: Statistics of the datasets used in our experiments. \u201cQ\u201d and \u201cC\u201d denote query and corpus, respectively. \u201cLen.\u201d denote...",
+   "[body] .... The statistics of datasets are shown in Table 1 . Table 1: Statistics of the datasets used in our experiments. \u201cQ\u201d and \u201cC\u201d denote query and corpus, respectively. \u201cLen.\u201d denotes average token count. \u201cR. Len.\u201d denotes average reasoning length. Dataset # Q # C Q Len. Reas. Len. Train ReasonEmb 81,659 \u2013 222.1 984.8 Test Bright (ID) 1,384 1,145,164 240.8 2,412.8 FollowIR (OOD) 104 98,312 76.6 \u2013 BC-Plus (OOD) 830 100,195 123.2 \u2013 Following the evaluation in LaSER, we report nDCG@10 for Bright, and Recall@5, Recall@100, and Recall@1000 for BrowseComp-Plus. For FollowIR, each subset is evaluated with both a standard retrieval metric and p-MRR, a pairwise metr...",
+   "[body] ...en.\u201d denotes average token count. \u201cR. Len.\u201d denotes average reasoning length. Dataset # Q # C Q Len. Reas. Len. Train ReasonEmb 81,659 \u2013 222.1 984.8 Test Bright (ID) 1,384 1,145,164 240.8 2,412.8 FollowIR (OOD) 104 98,312 76.6 \u2013 BC-Plus (OOD) 830 100,195 123.2 \u2013 Following the evaluation in LaSER, we report nDCG@10 for Bright, and Recall@5, Recall@100, and Recall@1000 for BrowseComp-Plus. For FollowIR, each subset is evaluated with both a standard retrieval metric and p-MRR, a pairwise metric designed to measure instruction-following ability. Specifically, in addition to p-MRR, we report MAP@5 for the Robust\u201904 and Core\u201917 subsets, and nDCG@5 for the Ne..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:12",
+  "page": "arxiv:2607.21333v1",
+  "subject": "SHIFT",
+  "object": "FollowIR",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SHIFT is evaluated on the FollowIR out-of-domain benchmark.",
+  "contexts": [
+   "[body] ...ns 81K training examples from 12 domains. Each query is paired with a reasoning path generated by GPT-4o-mini (OpenAI et al. , 2024 ) . For evaluation, we keep the same settings as LaSER. We use three reasoning-intensive benchmarks: Bright (SU et al. , 2025 ) for in-domain evaluation, and two out-of-domain benchmarks: FollowIR (Weller et al. , 2025 ) and BrowseComp-Plus (Chen et al. , 2025b ) . The statistics of datasets are shown in Table 1 . Table 1: Statistics of the datasets used in our experiments. \u201cQ\u201d and \u201cC\u201d denote query and corpus, respectively. \u201cLen.\u201d denotes average token count. \u201cR. Len.\u201d denotes average reasoning length. Dataset # Q # C Q Le...",
+   "[body] ...Table 1 . Table 1: Statistics of the datasets used in our experiments. \u201cQ\u201d and \u201cC\u201d denote query and corpus, respectively. \u201cLen.\u201d denotes average token count. \u201cR. Len.\u201d denotes average reasoning length. Dataset # Q # C Q Len. Reas. Len. Train ReasonEmb 81,659 \u2013 222.1 984.8 Test Bright (ID) 1,384 1,145,164 240.8 2,412.8 FollowIR (OOD) 104 98,312 76.6 \u2013 BC-Plus (OOD) 830 100,195 123.2 \u2013 Following the evaluation in LaSER, we report nDCG@10 for Bright, and Recall@5, Recall@100, and Recall@1000 for BrowseComp-Plus. For FollowIR, each subset is evaluated with both a standard retrieval metric and p-MRR, a pairwise metric designed to measure instruction-followi...",
+   "[body] ...h. Dataset # Q # C Q Len. Reas. Len. Train ReasonEmb 81,659 \u2013 222.1 984.8 Test Bright (ID) 1,384 1,145,164 240.8 2,412.8 FollowIR (OOD) 104 98,312 76.6 \u2013 BC-Plus (OOD) 830 100,195 123.2 \u2013 Following the evaluation in LaSER, we report nDCG@10 for Bright, and Recall@5, Recall@100, and Recall@1000 for BrowseComp-Plus. For FollowIR, each subset is evaluated with both a standard retrieval metric and p-MRR, a pairwise metric designed to measure instruction-following ability. Specifically, in addition to p-MRR, we report MAP@5 for the Robust\u201904 and Core\u201917 subsets, and nDCG@5 for the News\u201921 subset. 4.2 Baselines We compare SHIFT with four groups of retrievers..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:13",
+  "page": "arxiv:2607.21333v1",
+  "subject": "SHIFT",
+  "object": "BrowseComp-Plus",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SHIFT is evaluated on the BrowseComp-Plus out-of-domain benchmark.",
+  "contexts": [
+   "[body] ...ins. Each query is paired with a reasoning path generated by GPT-4o-mini (OpenAI et al. , 2024 ) . For evaluation, we keep the same settings as LaSER. We use three reasoning-intensive benchmarks: Bright (SU et al. , 2025 ) for in-domain evaluation, and two out-of-domain benchmarks: FollowIR (Weller et al. , 2025 ) and BrowseComp-Plus (Chen et al. , 2025b ) . The statistics of datasets are shown in Table 1 . Table 1: Statistics of the datasets used in our experiments. \u201cQ\u201d and \u201cC\u201d denote query and corpus, respectively. \u201cLen.\u201d denotes average token count. \u201cR. Len.\u201d denotes average reasoning length. Dataset # Q # C Q Len. Reas. Len. Train ReasonEmb 81,659...",
+   "[body] ...erage reasoning length. Dataset # Q # C Q Len. Reas. Len. Train ReasonEmb 81,659 \u2013 222.1 984.8 Test Bright (ID) 1,384 1,145,164 240.8 2,412.8 FollowIR (OOD) 104 98,312 76.6 \u2013 BC-Plus (OOD) 830 100,195 123.2 \u2013 Following the evaluation in LaSER, we report nDCG@10 for Bright, and Recall@5, Recall@100, and Recall@1000 for BrowseComp-Plus. For FollowIR, each subset is evaluated with both a standard retrieval metric and p-MRR, a pairwise metric designed to measure instruction-following ability. Specifically, in addition to p-MRR, we report MAP@5 for the Robust\u201904 and Core\u201917 subsets, and nDCG@5 for the News\u201921 subset. 4.2 Baselines We compare SHIFT with four..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:14",
+  "page": "arxiv:2607.21333v1",
+  "subject": "SHIFT",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SHIFT uses Qwen3 as a backbone for retrieval.",
+  "contexts": [
+   "[body] ...re SHIFT with four groups of retrievers reported by LaSER. Unless otherwise specified, trainable baselines use the same backbone and training data as our model. Dense retrievers. We evaluate both BERT-based and LLM-based retrievers, including BGE-M3 (Chen et al. , 2025a ) , E5-Large-Instruct (Wang et al. , 2024a ) and Qwen3-Embedding (Zhang et al. , 2025a ) . We also train a fair contrastive baseline on our composite training set, which isolates the gain from our architecture. Rewrite-then-retrieve pipelines. This group explicitly rewrites the input query before retrieval. We use BGE-Reasoner-Rewriter-7B from ReasonEmbed (Chen et al. , 2026b ) to gener...",
+   "[body] ...Models Size StackExchange Coding Theorem-based Avg. Bio. Earth. Econ. Psy. Rob. Stack. Sus. Leet. Pony AoPS TheoQ. TheoT. Standard Dense Retrievers BGE-M3 0.6B 7.2 13.3 12.5 12.8 12.6 10.0 10.1 15.6 30.7 1.5 5.6 5.0 11.4 Multilingual-E5-Large-Instruct 0.6B 15.0 24.6 14.0 14.6 16.1 10.3 13.8 15.1 2.1 3.0 11.6 6.9 12.3 Qwen3-Embedding-0.6B 0.6B 12.7 26.3 17.9 16.5 12.5 12.4 12.2 14.3 0.7 3.1 17.2 26.5 14.4 Qwen3-Embedding-8B 8B 14.7 17.9 15.5 19.9 9.1 12.9 16.5 17.4 0.8 2.5 16.8 24.5 14.0 Basic Contrastive Learning Fair Baseline (Qwen3-0.6B) 0.6B 28.8 31.6 25.2 28.1 15.1 22.3 24.2 8.8 3.5 2.1 14.1 15.4 18.3 Fair Baseline (Qwen3-8B) 8B 49.7 51.2 26.9 37....",
+   "[body] ...us. Leet. Pony AoPS TheoQ. TheoT. Standard Dense Retrievers BGE-M3 0.6B 7.2 13.3 12.5 12.8 12.6 10.0 10.1 15.6 30.7 1.5 5.6 5.0 11.4 Multilingual-E5-Large-Instruct 0.6B 15.0 24.6 14.0 14.6 16.1 10.3 13.8 15.1 2.1 3.0 11.6 6.9 12.3 Qwen3-Embedding-0.6B 0.6B 12.7 26.3 17.9 16.5 12.5 12.4 12.2 14.3 0.7 3.1 17.2 26.5 14.4 Qwen3-Embedding-8B 8B 14.7 17.9 15.5 19.9 9.1 12.9 16.5 17.4 0.8 2.5 16.8 24.5 14.0 Basic Contrastive Learning Fair Baseline (Qwen3-0.6B) 0.6B 28.8 31.6 25.2 28.1 15.1 22.3 24.2 8.8 3.5 2.1 14.1 15.4 18.3 Fair Baseline (Qwen3-8B) 8B 49.7 51.2 26.9 37.4 23.4 28.0 34.1 3.7 3.2 2.8 16.8 31.8 25.7 Fair Baseline (LLaMA3.1-8B) 8B 57.7 40.9 24.6..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:15",
+  "page": "arxiv:2607.21333v1",
+  "subject": "SHIFT",
+  "object": "LLaMA 3.1",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SHIFT uses LLaMA 3.1 as a backbone for retrieval.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:16",
+  "page": "arxiv:2607.21333v1",
+  "subject": "SHIFT",
+  "object": "BGE-M3",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SHIFT compares against BGE-M3 dense retriever baseline.",
+  "contexts": [
+   "[body] ...nd Core\u201917 subsets, and nDCG@5 for the News\u201921 subset. 4.2 Baselines We compare SHIFT with four groups of retrievers reported by LaSER. Unless otherwise specified, trainable baselines use the same backbone and training data as our model. Dense retrievers. We evaluate both BERT-based and LLM-based retrievers, including BGE-M3 (Chen et al. , 2025a ) , E5-Large-Instruct (Wang et al. , 2024a ) and Qwen3-Embedding (Zhang et al. , 2025a ) . We also train a fair contrastive baseline on our composite training set, which isolates the gain from our architecture. Rewrite-then-retrieve pipelines. This group explicitly rewrites the input query before retrieval. We...",
+   "[body] ...t results among models with the same backbone are formatted in bold. \u2020 \\dagger indicates the pipeline method that uses an external LLM to rewrite queries during inference. Models Size StackExchange Coding Theorem-based Avg. Bio. Earth. Econ. Psy. Rob. Stack. Sus. Leet. Pony AoPS TheoQ. TheoT. Standard Dense Retrievers BGE-M3 0.6B 7.2 13.3 12.5 12.8 12.6 10.0 10.1 15.6 30.7 1.5 5.6 5.0 11.4 Multilingual-E5-Large-Instruct 0.6B 15.0 24.6 14.0 14.6 16.1 10.3 13.8 15.1 2.1 3.0 11.6 6.9 12.3 Qwen3-Embedding-0.6B 0.6B 12.7 26.3 17.9 16.5 12.5 12.4 12.2 14.3 0.7 3.1 17.2 26.5 14.4 Qwen3-Embedding-8B 8B 14.7 17.9 15.5 19.9 9.1 12.9 16.5 17.4 0.8 2.5 16.8 24.5 1..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:17",
+  "page": "arxiv:2607.21333v1",
+  "subject": "SHIFT",
+  "object": "LaSER",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SHIFT compares against LaSER implicit-reasoning retriever.",
+  "contexts": [
+   "[body] ...ments 4.1 Datasets and Evaluation We train SHIFT on ReasonEmbed (Chen et al. , 2026b ) , which is a reasoning-intensive dataset that contains 81K training examples from 12 domains. Each query is paired with a reasoning path generated by GPT-4o-mini (OpenAI et al. , 2024 ) . For evaluation, we keep the same settings as LaSER. We use three reasoning-intensive benchmarks: Bright (SU et al. , 2025 ) for in-domain evaluation, and two out-of-domain benchmarks: FollowIR (Weller et al. , 2025 ) and BrowseComp-Plus (Chen et al. , 2025b ) . The statistics of datasets are shown in Table 1 . Table 1: Statistics of the datasets used in our experiments. \u201cQ\u201d and \u201cC\u201d...",
+   "[body] ...and corpus, respectively. \u201cLen.\u201d denotes average token count. \u201cR. Len.\u201d denotes average reasoning length. Dataset # Q # C Q Len. Reas. Len. Train ReasonEmb 81,659 \u2013 222.1 984.8 Test Bright (ID) 1,384 1,145,164 240.8 2,412.8 FollowIR (OOD) 104 98,312 76.6 \u2013 BC-Plus (OOD) 830 100,195 123.2 \u2013 Following the evaluation in LaSER, we report nDCG@10 for Bright, and Recall@5, Recall@100, and Recall@1000 for BrowseComp-Plus. For FollowIR, each subset is evaluated with both a standard retrieval metric and p-MRR, a pairwise metric designed to measure instruction-following ability. Specifically, in addition to p-MRR, we report MAP@5 for the Robust\u201904 and Core\u201917 s...",
+   "[body] ...d with both a standard retrieval metric and p-MRR, a pairwise metric designed to measure instruction-following ability. Specifically, in addition to p-MRR, we report MAP@5 for the Robust\u201904 and Core\u201917 subsets, and nDCG@5 for the News\u201921 subset. 4.2 Baselines We compare SHIFT with four groups of retrievers reported by LaSER. Unless otherwise specified, trainable baselines use the same backbone and training data as our model. Dense retrievers. We evaluate both BERT-based and LLM-based retrievers, including BGE-M3 (Chen et al. , 2025a ) , E5-Large-Instruct (Wang et al. , 2024a ) and Qwen3-Embedding (Zhang et al. , 2025a ) . We also train a fair contrasti..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:18",
+  "page": "arxiv:2607.21333v1",
+  "subject": "SHIFT",
+  "object": "GIRCSE",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SHIFT compares against GIRCSE implicit-reasoning retriever.",
+  "contexts": [
+   "[body] ...These methods integrate generation and retrieval in a single model by first producing explicit reasoning traces or auxiliary textual outputs before forming the final representation. We compare with Search-R3 (Gui and Cheng, 2026 ) and GRACE (Sun et al. , 2025 ) . Implicit-reasoning retrievers. Finally, we compare with GIRCSE (Tsai et al. , 2026 ) and LaSER (Jin et al. , 2026 ) , which use latent tokens to perform intermediate reasoning before producing retrieval embeddings. Table 2: Main retrieval performance on the Bright benchmark. We report nDCG@10 for all subsets. The best results among models with the same backbone are formatted in bold. \u2020 \\dagger...",
+   "[body] ...ite-then-Retrieve (Qwen3-8B) \u2020 \\dagger 8B 53.1 54.3 32.1 34.8 20.5 31.1 32.2 3.2 15.2 4.1 17.4 38.8 28.1 Rewrite-then-Retrieve (LLaMA3.1-8B) \u2020 \\dagger 8B 63.1 54.5 27.7 40.6 17.1 28.1 28.2 1.6 11.4 3.8 16.1 30.3 26.9 Search-R3 (Qwen2.5-1.5B) 1.5B 13.8 8.3 4.2 3.5 4.5 12.4 4.6 16.7 3.0 0.6 8.5 11.7 7.7 Latent Reasoning GIRCSE (Qwen3-0.6B) 0.6B 29.0 32.8 24.7 30.6 13.6 24.0 26.6 11.1 1.1 1.3 13.5 20.6 19.1 GIRCSE (Qwen3-8B) 8B 59.0 56.5 27.2 40.3 19.0 28.5 31.4 3.2 3.6 1.7 14.0 27.2 26.0 GIRCSE (LLaMA3.1-8B) 8B 50.6 43.4 28.3 35.7 14.3 26.9 26.4 6.0 5.2 0.5 11.6 15.1 22.0 LaSER (Qwen3-0.6B) 0.6B 50.0 45.9 25.7 32.4 18.4 27.1 26.5 9.1 2.7 1.2 16.0 22.4 23...",
+   "[body] ...1 17.4 38.8 28.1 Rewrite-then-Retrieve (LLaMA3.1-8B) \u2020 \\dagger 8B 63.1 54.5 27.7 40.6 17.1 28.1 28.2 1.6 11.4 3.8 16.1 30.3 26.9 Search-R3 (Qwen2.5-1.5B) 1.5B 13.8 8.3 4.2 3.5 4.5 12.4 4.6 16.7 3.0 0.6 8.5 11.7 7.7 Latent Reasoning GIRCSE (Qwen3-0.6B) 0.6B 29.0 32.8 24.7 30.6 13.6 24.0 26.6 11.1 1.1 1.3 13.5 20.6 19.1 GIRCSE (Qwen3-8B) 8B 59.0 56.5 27.2 40.3 19.0 28.5 31.4 3.2 3.6 1.7 14.0 27.2 26.0 GIRCSE (LLaMA3.1-8B) 8B 50.6 43.4 28.3 35.7 14.3 26.9 26.4 6.0 5.2 0.5 11.6 15.1 22.0 LaSER (Qwen3-0.6B) 0.6B 50.0 45.9 25.7 32.4 18.4 27.1 26.5 9.1 2.7 1.2 16.0 22.4 23.1 LaSER (Qwen3-8B) 8B 58.0 51.8 29.0 44.1 26.0 32.9 34.5 9.2 11.7 1.6 18.7 34.0 29.3 La..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:19",
+  "page": "arxiv:2607.21340v1",
+  "subject": "CM-LRS",
+  "object": "MMLU",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CM-LRS references MMLU as an open-domain benchmark but evaluates at workflow level.",
+  "contexts": [
+   "[body] ...ages, revenue multiples, covenant thresholds - are decision-bearing and errors compound downstream. 3. Outputs must withstand human review by bankers, analysts, and compliance, and may face regulatory scrutiny. These properties are not adequately tested by current LLM evaluation methods. Open-domain benchmarks such as MMLU (Hendrycks et al., 2021 ) and BIG-Bench Hard (Suzgun et al., 2022 ) test knowledge and reasoning generally, but neither traceability nor workflow completeness. Holistic frameworks such as HELM (Liang et al., 2022 ) broaden coverage across scenarios but do not evaluate the workflow-output layer specifically. Finance-domain benchmarks..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:20",
+  "page": "arxiv:2607.21340v1",
+  "subject": "CM-LRS",
+  "object": "FinanceBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CM-LRS extends finance-domain benchmarks like FinanceBench to workflow-output layer.",
+  "contexts": [
+   "[body] ...(Suzgun et al., 2022 ) test knowledge and reasoning generally, but neither traceability nor workflow completeness. Holistic frameworks such as HELM (Liang et al., 2022 ) broaden coverage across scenarios but do not evaluate the workflow-output layer specifically. Finance-domain benchmarks have advanced significantly: FinanceBench (Islam et al., 2023 ) tests question\u2013answering against real financial documents; FinQA (Chen et al., 2021 ) and ConvFinQA (Chen et al., 2022 ) evaluate numerical reasoning over financial tables and reports; RAGAS (Es et al., 2023 ) evaluates RAG-pipeline component reliability. These are valuable but evaluate at the QA-pair or...",
+   "[abstract] ...the question is rarely whether a large language model can produce a fluent draft, but whether the draft is bankable: defensible in front of a counter-party or a regulator, with the documents in hand. Existing methods address parts of that gap: open-domain QA benchmarks reward surface accuracy, and finance benchmarks (FinanceBench, FinQA, ConvFinQA) advance document-grounded and numerical QA but evaluate at the question-answer layer rather than the workflow outputs practitioners defend. We introduce CM-LRS, a Capital Markets LLM Reliability Score, evaluating outputs at the workflow-output layer across seven dimensions: factual accuracy, evidence tracea..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:21",
+  "page": "arxiv:2607.21340v1",
+  "subject": "CM-LRS",
+  "object": "FinQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CM-LRS extends finance-domain benchmarks like FinQA to workflow-output layer.",
+  "contexts": [
+   "[body] ...orkflow completeness. Holistic frameworks such as HELM (Liang et al., 2022 ) broaden coverage across scenarios but do not evaluate the workflow-output layer specifically. Finance-domain benchmarks have advanced significantly: FinanceBench (Islam et al., 2023 ) tests question\u2013answering against real financial documents; FinQA (Chen et al., 2021 ) and ConvFinQA (Chen et al., 2022 ) evaluate numerical reasoning over financial tables and reports; RAGAS (Es et al., 2023 ) evaluates RAG-pipeline component reliability. These are valuable but evaluate at the QA-pair or component layer, not the workflow-output layer where deployment decisions are actually made....",
+   "[body] ...eworks such as HELM (Liang et al., 2022 ) broaden coverage across scenarios but do not evaluate the workflow-output layer specifically. Finance-domain benchmarks have advanced significantly: FinanceBench (Islam et al., 2023 ) tests question\u2013answering against real financial documents; FinQA (Chen et al., 2021 ) and ConvFinQA (Chen et al., 2022 ) evaluate numerical reasoning over financial tables and reports; RAGAS (Es et al., 2023 ) evaluates RAG-pipeline component reliability. These are valuable but evaluate at the QA-pair or component layer, not the workflow-output layer where deployment decisions are actually made. Practitioners deploying LLMs in thi...",
+   "[abstract] ...is rarely whether a large language model can produce a fluent draft, but whether the draft is bankable: defensible in front of a counter-party or a regulator, with the documents in hand. Existing methods address parts of that gap: open-domain QA benchmarks reward surface accuracy, and finance benchmarks (FinanceBench, FinQA, ConvFinQA) advance document-grounded and numerical QA but evaluate at the question-answer layer rather than the workflow outputs practitioners defend. We introduce CM-LRS, a Capital Markets LLM Reliability Score, evaluating outputs at the workflow-output layer across seven dimensions: factual accuracy, evidence traceability, numeri..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:22",
+  "page": "arxiv:2607.21340v1",
+  "subject": "CM-LRS",
+  "object": "Sonnet 4.6",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "CM-LRS compares performance across frontier models including Sonnet 4.6.",
+  "contexts": [
+   "[abstract] ...n-terms extraction) over public SEC EDGAR filings, a public UK takeover release, and fictional synthetic supplements, scoring four models against four independent LLM judges spanning three model families. Three findings. First, the frontier closed-source models cluster within 0.22 points on four-judge averaged CM-LRS (Sonnet 4.6 = 4.31, Opus 4.7 = 4.30, GPT-5.5 = 4.09); all four judges place the open-weights baseline (Llama 3.3 70B = 3.15) last. Second, that gap concentrates on retrieval (2.23) and synthesis (2.15), not extraction (0.84). Third, Decision Usefulness shows the widest cross-model dispersion of any dimension (4.0 points on issuer profiling..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:23",
+  "page": "arxiv:2607.21340v1",
+  "subject": "CM-LRS",
+  "object": "Opus 4.7",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "CM-LRS compares performance across frontier models including Opus 4.7.",
+  "contexts": [
+   "[abstract] ...over public SEC EDGAR filings, a public UK takeover release, and fictional synthetic supplements, scoring four models against four independent LLM judges spanning three model families. Three findings. First, the frontier closed-source models cluster within 0.22 points on four-judge averaged CM-LRS (Sonnet 4.6 = 4.31, Opus 4.7 = 4.30, GPT-5.5 = 4.09); all four judges place the open-weights baseline (Llama 3.3 70B = 3.15) last. Second, that gap concentrates on retrieval (2.23) and synthesis (2.15), not extraction (0.84). Third, Decision Usefulness shows the widest cross-model dispersion of any dimension (4.0 points on issuer profiling) and top-tier inte..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:24",
+  "page": "arxiv:2607.21340v1",
+  "subject": "CM-LRS",
+  "object": "GPT-5.5",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "CM-LRS compares performance across frontier models including GPT-5.5.",
+  "contexts": [
+   "[abstract] ...EDGAR filings, a public UK takeover release, and fictional synthetic supplements, scoring four models against four independent LLM judges spanning three model families. Three findings. First, the frontier closed-source models cluster within 0.22 points on four-judge averaged CM-LRS (Sonnet 4.6 = 4.31, Opus 4.7 = 4.30, GPT-5.5 = 4.09); all four judges place the open-weights baseline (Llama 3.3 70B = 3.15) last. Second, that gap concentrates on retrieval (2.23) and synthesis (2.15), not extraction (0.84). Third, Decision Usefulness shows the widest cross-model dispersion of any dimension (4.0 points on issuer profiling) and top-tier inter-judge agreement..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:25",
+  "page": "arxiv:2607.21340v1",
+  "subject": "CM-LRS",
+  "object": "Llama 3.3 70B",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "CM-LRS uses Llama 3.3 70B as open-weights baseline for comparison.",
+  "contexts": [
+   "[abstract] ...ic supplements, scoring four models against four independent LLM judges spanning three model families. Three findings. First, the frontier closed-source models cluster within 0.22 points on four-judge averaged CM-LRS (Sonnet 4.6 = 4.31, Opus 4.7 = 4.30, GPT-5.5 = 4.09); all four judges place the open-weights baseline (Llama 3.3 70B = 3.15) last. Second, that gap concentrates on retrieval (2.23) and synthesis (2.15), not extraction (0.84). Third, Decision Usefulness shows the widest cross-model dispersion of any dimension (4.0 points on issuer profiling) and top-tier inter-judge agreement (mean r = 0.52). Plausibility is cheap. Bankability is the bar...."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:26",
+  "page": "arxiv:2607.21343v1",
+  "subject": "M3-Gen",
+  "object": "TCGA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "M3-Gen is evaluated on the TCGA dataset for gene expression generation.",
+  "contexts": [
+   "[body] ...ability to produce realistic, functionally meaningful gene expression profiles. 2 Data and Methods At a high level, M 3 -Gen consists of three main stages: (i) a preprocessing phase, where we extract and filter image patches from tissue slides and summarize clinical metada [...] 3 Experiments We test our method on the TCGA dataset, comparing our results with standard generative models. The dataset provides both tissue slides and clinical descriptions of each patient, associated with a gene expression profile derived from RNA-seq. For storage and computational purposes, we select only a subset of TCGA by keeping only the samples having a tissue slide of...",
+   "[body] ...xperiments We test our method on the TCGA dataset, comparing our results with standard generative models. The dataset provides both tissue slides and clinical descriptions of each patient, associated with a gene expression profile derived from RNA-seq. For storage and computational purposes, we select only a subset of TCGA by keeping only the samples having a tissue slide of dimension less than 70 MB, for a total of 1224 clinical cases. 3.1 Experimental Setup We performed our experiments on a machine with the AMD Ryzen 1950X CPU, with 128 GB of RAM, using two NVIDIA A6000 GPUs with 48 GB of VRAM. We employed PyTorch 3 3 3 https://pytorch.org/ version 2...",
+   "[abstract] ...ology images and clinical metadata. M$^3$-Gen learns a unified latent representation from the clinical variables and the images, leveraging contrastive learning, and exploits the embeddings of the two modalities to guide a generative model in producing biologically coherent gene expression profiles. Evaluations on the TCGA dataset demonstrate that M$^3$-Gen generates realistic and functionally meaningful gene expression data. Importantly, by integrating multiple modalities in an attention-based mechanism, M$^3$-Gen provides intrinsic explainability: it allows the identification of which regions of the histopathology images most strongly influenced the..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:27",
+  "page": "arxiv:2607.21343v1",
+  "subject": "M3-Gen",
+  "object": "Generative Adversarial Networks",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "M3-Gen builds on GANs for generating gene expression profiles.",
+  "contexts": [
+   "[body] ...d standardized, gene expression profiles remain costly, privacy-sensitive, and limited in scale [ 8 ] . This imbalance not only constrains the scope of multimodal studies but also prevents researchers from fully exploiting the rich contextual information contained in clinical and morphological data. Generative AI\u2014from Generative Adversarial Networks (GANs) to denoising diffusion models\u2014presents a promising solution. By learning complex, high-dimensional data distributions, these methods can produce realistic synthetic transcriptomic profiles that augment scarce cohorts and safeguard patient privacy [ 14 ] . Despite early successes in generating gene\u2010ex...",
+   "[abstract] ...understanding. However, gene expression data acquisition remains constrained by high costs and privacy concerns, limiting its use in multimodal research and AI-driven applications. We present MultiModal Molecular Generation (M$^3$-Gen), a novel framework for the generation of gene expression profiles by conditioning a Generative Adversarial Network on histopathology images and clinical metadata. M$^3$-Gen learns a unified latent representation from the clinical variables and the images, leveraging contrastive learning, and exploits the embeddings of the two modalities to guide a generative model in producing biologically coherent gene expression profil..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:28",
+  "page": "arxiv:2607.21343v1",
+  "subject": "M3-Gen",
+  "object": "Conditional WGAN-GP",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "M3-Gen employs Conditional WGAN-GP for multimodal generation.",
+  "contexts": [
+   "[body] ...space but also includes representative image patches for each class. This visualization highlights how the contrastive learning approach effectively separates images according to both class-specific and morphological features, producing well-separated clusters that capture meaningful relationships within the data. 3.4 Conditional WGAN-GP Results We train our Conditional WGAN-GP for 500 epochs using a latent dimension of 256 and the Adam optimizer with a starting learning rate of 0.0005, which decreases by a factor of 0.5 every 50 epochs. Table \u02dc 1 presents the results for the unsupervised and detectability metrics, comparing a vanilla WGAN-GP model wit...",
+   "[body] ...age patches for each class. This visualization highlights how the contrastive learning approach effectively separates images according to both class-specific and morphological features, producing well-separated clusters that capture meaningful relationships within the data. 3.4 Conditional WGAN-GP Results We train our Conditional WGAN-GP for 500 epochs using a latent dimension of 256 and the Adam optimizer with a starting learning rate of 0.0005, which decreases by a factor of 0.5 every 50 epochs. Table \u02dc 1 presents the results for the unsupervised and detectability metrics, comparing a vanilla WGAN-GP model without conditioning against our proposed st..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:29",
+  "page": "arxiv:2607.21343v1",
+  "subject": "M3-Gen",
+  "object": "contrastive learning",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "M3-Gen uses contrastive learning to align clinical and image embeddings.",
+  "contexts": [
+   "[body] ...ore) of models trained on synthetic data and tested on real data to classify the disease type of a patient from RNA-seq. 3.3 Contrastive Pretraining Results Our feature extractors, UNI and Clinical ModernBERT, are pretrained, respectively, on WSI data and medical descriptions. Thus, to align their representations with contrastive learning, we freeze the pretrained layers and train only the linear projection. At each training step we select 16 random patches to be fed as input to the Image Encoder. We train the model for 20 epochs using a batch size of 8 and the Adam optimizer, with a learning rate of 0.0001 0.0001 . Figure \u02dc 2 shows the effectiveness o...",
+   "[body] ...cting the 32 most similar patches to the text embedding and computing the mean of these embeddings we can still separate well the embedding space using images. This insight gives an additional motivation to use attention in our conditional model. Figure 2 : TSNE visualizations of the embeddings after pre-training with contrastive learning. Different colors indicate different disease types. Furthermore, in Figure \u02dc 6 , we provide a more detailed visualization of the image embeddings after contrastive pretraining, including representative patches for each class, which highlights how the contrastive learning objective structures the latent space according...",
+   "[body] ...tions of the embeddings after pre-training with contrastive learning. Different colors indicate different disease types. Furthermore, in Figure \u02dc 6 , we provide a more detailed visualization of the image embeddings after contrastive pretraining, including representative patches for each class, which highlights how the contrastive learning objective structures the latent space according to morphological similarity, grouping patches with comparable tissue organization or cellular composition while maintaining clear separation between different disease classes. Figure 3 : t-SNE visualization of image embeddings obtained after contrastive pretraining. The..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:30",
+  "page": "arxiv:2607.21343v1",
+  "subject": "M3-Gen",
+  "object": "UNI",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "M3-Gen uses UNI as a pretrained Vision Transformer for histopathology tiles.",
+  "contexts": [
+   "[body] ...pite early successes in generating gene\u2010expression data (e.g., Panaccione et al. [ 10 ] , Vinas et al. [ 15 ] , Lacan et al. [ 6 ] ), most approaches rely on limited inputs and overlook critical clinical and histological context. To overcome these limitations, we introduce M 3 -Gen (MultiModal Molecular Generation), a unified framework that learns a shared latent representation of clinical variables and histopathology images to produce biologically coherent gene expression profiles in silico . To the best of our knowledge, we are the first to address the problem of conditioning a generative model of gene expressions on both images and text. In contrast...",
+   "[body] ...ed our experiments on a machine with the AMD Ryzen 1950X CPU, with 128 GB of RAM, using two NVIDIA A6000 GPUs with 48 GB of VRAM. We employed PyTorch 3 3 3 https://pytorch.org/ version 2.6.0 to define our model and perform the experimental evaluation, and CUDA version 12.4 for model training on the GPU devices. We use UNI [ 1 ] as an Image Encoder, which offers a pretrained Vision Transformer for histopathology tiles. As a Text Encoder, we exploit Clinical ModernBERT [ 7 ] 4 4 4 https://huggingface.co/Simonlee711/Clinical\u02d9ModernBERT 5 5 5 Both UNI and Clinical ModernBERT are accessible through Huggingface . We add a linear projection layer to the embed...",
+   "[body] ...erimental evaluation, and CUDA version 12.4 for model training on the GPU devices. We use UNI [ 1 ] as an Image Encoder, which offers a pretrained Vision Transformer for histopathology tiles. As a Text Encoder, we exploit Clinical ModernBERT [ 7 ] 4 4 4 https://huggingface.co/Simonlee711/Clinical\u02d9ModernBERT 5 5 5 Both UNI and Clinical ModernBERT are accessible through Huggingface . We add a linear projection layer to the embeddings of these two models to have the same embedding size for both modalities. In our experiments, we use an embedding size of 128. 3.2 Evaluation Metrics We evaluate our approach with three classes of metrics: (i) unsupervised me..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:31",
+  "page": "arxiv:2607.21343v1",
+  "subject": "M3-Gen",
+  "object": "Clinical ModernBERT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "M3-Gen uses Clinical ModernBERT as a text encoder for clinical variables.",
+  "contexts": [
+   "[body] ...employed PyTorch 3 3 3 https://pytorch.org/ version 2.6.0 to define our model and perform the experimental evaluation, and CUDA version 12.4 for model training on the GPU devices. We use UNI [ 1 ] as an Image Encoder, which offers a pretrained Vision Transformer for histopathology tiles. As a Text Encoder, we exploit Clinical ModernBERT [ 7 ] 4 4 4 https://huggingface.co/Simonlee711/Clinical\u02d9ModernBERT 5 5 5 Both UNI and Clinical ModernBERT are accessible through Huggingface . We add a linear projection layer to the embeddings of these two models to have the same embedding size for both modalities. In our experiments, we use an embedding size of 128....",
+   "[body] ...l evaluation, and CUDA version 12.4 for model training on the GPU devices. We use UNI [ 1 ] as an Image Encoder, which offers a pretrained Vision Transformer for histopathology tiles. As a Text Encoder, we exploit Clinical ModernBERT [ 7 ] 4 4 4 https://huggingface.co/Simonlee711/Clinical\u02d9ModernBERT 5 5 5 Both UNI and Clinical ModernBERT are accessible through Huggingface . We add a linear projection layer to the embeddings of these two models to have the same embedding size for both modalities. In our experiments, we use an embedding size of 128. 3.2 Evaluation Metrics We evaluate our approach with three classes of metrics: (i) unsupervised metrics (P...",
+   "[body] ...core means high similarity between real and generated data), and (iii) utility , which assesses the performance (Accuracy and F1-score) of models trained on synthetic data and tested on real data to classify the disease type of a patient from RNA-seq. 3.3 Contrastive Pretraining Results Our feature extractors, UNI and Clinical ModernBERT, are pretrained, respectively, on WSI data and medical descriptions. Thus, to align their representations with contrastive learning, we freeze the pretrained layers and train only the linear projection. At each training step we select 16 random patches to be fed as input to the Image Encoder. We train the model for 20..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:32",
+  "page": "arxiv:2607.21351v1",
+  "subject": "Adapter capacity measurement",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The work analyzes the capacity of LoRA adapters for parameter-efficient fine-tuning.",
+  "contexts": [
+   "[body] ...inforcement Learning Write Less? Discussion Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.21351v1 [cs.LG] 23 Jul 2026 How Many Bits Can an Adapter Write? Measuring the Capacity and Memorization of Parameter-Efficient Fine-Tuning Kaizhen Tan 1 , Heqing Du 2 , Yang Feng 2 Abstract A LoRA adapter is a few megabytes that almost everyone treats as a skill rather than a record of the data behind it. We put that assumption on a scale. Extending compression-based memorization analysis to the frozen-base setting, we measure directly\u2014in bits\u2014how much a low-rank adapter writes into a model it never changes. The answer is both...",
+   "[body] ...rets that supervised fine-tuning copies down verbatim, an adapter trained on verifiable rewards never records. Measuring what fine-tuning writes\u2014rather than attacking it after the fact\u2014turns a piece of folklore into a quantity one can design against. Introduction Adapter files circulate as if they were harmless diffs. LoRA adapters (Hu et al. 2022 ) are shared through public model hubs, exchanged as low-rank updates between federated clients, and passed between teams as task adapters\u2014on the tacit understanding that a small file carries a skill, not the data that taught it. Nobody has checked that understanding against a measurement. The arithmetic alon...",
+   "[abstract] ...A LoRA adapter is a few megabytes that almost everyone treats as a skill rather than a record of the data behind it. We put that assumption on a scale. Extending compression-based memorization analysis to the frozen-base setting, we measure directly, in bits, how much a low-rank adapter writes into a model it never changes. The answer is bo..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:33",
+  "page": "arxiv:2607.21351v1",
+  "subject": "Adapter capacity measurement",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Capacity measurement is applied to realistic fine-tunes of Qwen2.5.",
+  "contexts": [
+   "[body] ...a full model\u2019s budget; but that figure turns less on how many parameters an adapter carries than on where they sit. Move the same parameter budget from attention into the MLP and it holds nearly twice as much; strip the frozen base of its structure and the capacity all but disappears. Turned on realistic fine-tunes of Qwen2.5, the same instrument shows privacy leakage rising with the bits an adapter writes rather than the parameters it nominally has, and it draws a clean line between supervised and reinforcement learning: the secrets that supervised fine-tuning copies down verbatim, an adapter trained on verifiable rewards never records. Measuring what...",
+   "[abstract] ...full model's budget, but that figure turns less on how many parameters an adapter carries than on where they sit. Move the same parameter budget from attention into the MLP and it holds nearly twice as much; strip the frozen base of its structure and the capacity all but disappears. Applied to realistic fine-tunes of Qwen2.5, the same instrument shows privacy leakage rising with the bits an adapter writes rather than the parameters it nominally has, and it draws a clean line between supervised and reinforcement learning: the secrets that supervised fine-tuning copies down verbatim, an adapter trained on verifiable rewards never records. Measuring what..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:34",
+  "page": "arxiv:2607.21353v1",
+  "subject": "representation-level unlearning analysis",
+  "object": "CIFAR-10",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Representation-level unlearning is evaluated on CIFAR-10.",
+  "contexts": [
+   "[body] ...ors, including the unlearning objective, optimization schedule, and computational budget, are held constant. This design allows us to isolate the contribution of mask selection itself. Figure 1: The saliency mask does not change what survives. Mean forget-class prototype recovery ( k = 5 k{=}5 ) across ten classes. On CIFAR-10 all three conditions are equivalent (TOST, Table 2 [...] evaluation as a complementary perspective on unlearning. 2.2 Parameter Selection and Saliency-Based Unlearning A large family of approximate unlearning methods performs targeted modifications of model parameters rather than retraining the entire model. Existing approaches i...",
+   "[abstract] ...based saliency. Although such methods are widely adopted, the actual contribution of saliency-based weight selection to representation-level forgetting remains unclear. In this work, we perform the first controlled ablation of the saliency masking mechanism used by SalUn. Using a matched-compute experimental design on CIFAR-10 and CIFAR-100 with ResNet-18, we compare saliency-based masking against random masks of equal sparsity and unconstrained updates, while keeping the unlearning objective, optimization schedule, and computational budget fixed. Across multiple representation-level evaluations, including linear probing, prototype recovery, and layer-...",
+   "[abstract] ...y. Although such methods are widely adopted, the actual contribution of saliency-based weight selection to representation-level forgetting remains unclear. In this work, we perform the first controlled ablation of the saliency masking mechanism used by SalUn. Using a matched-compute experimental design on CIFAR-10 and CIFAR-100 with ResNet-18, we compare saliency-based masking against random masks of equal sparsity and unconstrained updates, while keeping the unlearning objective, optimization schedule, and computational budget fixed. Across multiple representation-level evaluations, including linear probing, prototype recovery, and layer-wise CKA, the..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:35",
+  "page": "arxiv:2607.21353v1",
+  "subject": "representation-level unlearning analysis",
+  "object": "CIFAR-100",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Representation-level unlearning is evaluated on CIFAR-100.",
+  "contexts": [
+   "[abstract] ...y. Although such methods are widely adopted, the actual contribution of saliency-based weight selection to representation-level forgetting remains unclear. In this work, we perform the first controlled ablation of the saliency masking mechanism used by SalUn. Using a matched-compute experimental design on CIFAR-10 and CIFAR-100 with ResNet-18, we compare saliency-based masking against random masks of equal sparsity and unconstrained updates, while keeping the unlearning objective, optimization schedule, and computational budget fixed. Across multiple representation-level evaluations, including linear probing, prototype recovery, and layer-wise CKA, the..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:36",
+  "page": "arxiv:2607.21353v1",
+  "subject": "representation-level unlearning analysis",
+  "object": "SalUn",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The work performs ablation of SalUn's saliency masking mechanism.",
+  "contexts": [
+   "[body] ...modern unlearning methods? One influential family of methods addresses forgetting through selective parameter updates. Rather than modifying all model weights during unlearning, these approaches first identify a subset of parameters relevant to the information to be forgotten and restrict optimization to that subset. SalUn (Fan et al., 2024 ) , a representative example of this paradigm, computes a gradient-based saliency mask and updates only the weights selected by that mask. The underlying intuition is appealing: if forgetting-relevant parameters can be identified accurately, modifying only those parameters should improve both efficiency and deletio...",
+   "[body] ...rlying intuition is appealing: if forgetting-relevant parameters can be identified accurately, modifying only those parameters should improve both efficiency and deletion quality. Despite the widespread adoption of saliency-based masking, its actual role remains surprisingly unclear. Existing studies typically compare SalUn against alternative unlearning methods, but rarely isolate the masking mechanism itself. Consequently, the effect of weight selection remains confounded with the forgetting objective that operates on top of it. This leaves open a fundamental scientific question: Does saliency-based weight selection truly drive representation-level f...",
+   "[body] ...ive representation-level forgetting, or would any mask of comparable size produce the same outcome? In this paper, we answer this question through a controlled matched-compute ablation. Starting from the same pretrained model, we evaluate three conditions that differ only in the identity of the updated parameters: (i) SalUn\u2019s gradient-saliency mask, (ii) a random mask with identical sparsity, and (iii) unconstrained fine-tuning without masking. All other factors, including the unlearning objective, optimization schedule, and computational budget, are held constant. This design allows us to isolate the contribution of mask selection itself. Figure 1: Th..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:37",
+  "page": "arxiv:2607.21353v1",
+  "subject": "representation-level unlearning analysis",
+  "object": "ResNet-18",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Experiments use ResNet-18 as the architecture for representation-level evaluation.",
+  "contexts": [
+   "[abstract] ...h methods are widely adopted, the actual contribution of saliency-based weight selection to representation-level forgetting remains unclear. In this work, we perform the first controlled ablation of the saliency masking mechanism used by SalUn. Using a matched-compute experimental design on CIFAR-10 and CIFAR-100 with ResNet-18, we compare saliency-based masking against random masks of equal sparsity and unconstrained updates, while keeping the unlearning objective, optimization schedule, and computational budget fixed. Across multiple representation-level evaluations, including linear probing, prototype recovery, and layer-wise CKA, the three configur..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:38",
+  "page": "arxiv:2607.21354v1",
+  "subject": "NetSim",
+  "object": "integer programming",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SPORD integrates simulation with integer programming for supply chain optimization.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:39",
+  "page": "arxiv:2607.21354v1",
+  "subject": "NetSim",
+  "object": "Apache Spark",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SPORD employs Apache Spark for generating high-quality solutions rapidly.",
+  "contexts": [
+   "[body] ...simulation architecture based on Matrix Computing. By vectorizing complex discrete events, we transform the simulation process into matrix operations handled by CPU/GPU stacks, achieving a computational acceleration of 10 to 100 times. The inherent efficiency of parallel simulation extends beyond specialized hardware. Apache Spark generates high-quality solutions rapidly, even without GPU dependency. Furthermore, to overcome the computational bottlenecks incurred by coupled orders with precedence constraints, we integrate a list-scheduling algorithm based on topological sorting. 3. We demonstrate the operational viability of the SPORD method through it..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:40",
+  "page": "arxiv:2607.21356v1",
+  "subject": "persona subspace analysis",
+  "object": "Qwen2.5-14B-Instruct",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Persona subspace extraction uses Qwen2.5-14B-Instruct as the base model.",
+  "contexts": [
+   "[body] ...ue. The two accounts disagree about whether the coupling exists before training starts, about whether it survives having a particular subspace held out, and about the sign of the effect when a fixed budget of bad data is spread across more domains. This paper tests the accounts on one released instruction-tuned model, Qwen2.5-14B-Instruct (Qwen Team, 2024 ) , with published misalignment organisms (Turner et al., 2025 ) . We extract a candidate structure from the frozen model before any misalignment fine-tune exists, then test it causally from both sides with matched random controls, test whether it behaves as one object across independently trained org...",
+   "[abstract] ...t broadly misaligned on questions unrelated to the training data, a phenomenon called emergent misalignment. We ask why the narrow lesson generalizes at all, and we find that narrow fine-tuning recruits a persona structure that is present in the model before the fine-tune exists. From a frozen instruction-tuned model (Qwen2.5-14B-Instruct) we extract per-domain persona subspaces by contrastive teacher forcing and find that 4 unrelated domains share one low-rank core at 657x a random-subspace null, with 82% of that core lying outside a style core built at matched diversity. The literal first optimizer step of fine-tuning on insecure code climbs a broad-..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:41",
+  "page": "arxiv:2607.21356v1",
+  "subject": "persona subspace analysis",
+  "object": "contrastive teacher forcing",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Persona subspaces are extracted via contrastive teacher forcing.",
+  "contexts": [
+   "[abstract] ...a phenomenon called emergent misalignment. We ask why the narrow lesson generalizes at all, and we find that narrow fine-tuning recruits a persona structure that is present in the model before the fine-tune exists. From a frozen instruction-tuned model (Qwen2.5-14B-Instruct) we extract per-domain persona subspaces by contrastive teacher forcing and find that 4 unrelated domains share one low-rank core at 657x a random-subspace null, with 82% of that core lying outside a style core built at matched diversity. The literal first optimizer step of fine-tuning on insecure code climbs a broad-misalignment margin harder than the same code framed as education..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:42",
+  "page": "arxiv:2607.21371v1",
+  "subject": "DINOde",
+  "object": "Pascal VOC 2012",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DINOde is evaluated on Pascal VOC 2012 for open-vocabulary semantic segmentation.",
+  "contexts": [
+   "[body] ...duct extensive experiments on eight common OVSS benchmarks. Following the categorization in prior literature [ tcl , freeda , clip_dinoiser , talk2dino ] , these datasets are divided into two groups based on the inclusion of a background (bg) class. The first group consists of three benchmarks with a background class: Pascal VOC 2012 (V21) [ pascalvoc ] , Pascal Context (C60) [ pascalcontext ] , and COCO Object (Object) [ cocostuff ] , containing 21, 60, and 81 classes, respectively. The second group includes five benchmarks without a background class. Specifically, we evaluate on COCO Stuff (Stuff) [ cocostuff ] , Cityscapes (City) [ cityscape ] , and...",
+   "[body] ..., respectively. The second group includes five benchmarks without a background class. Specifically, we evaluate on COCO Stuff (Stuff) [ cocostuff ] , Cityscapes (City) [ cityscape ] , and ADE20K (ADE) [ ade20k_1 , ade20k_2 ] , which comprise 171, 19, and 150 classes, respectively. Furthermore, we report performance on Pascal VOC 2012 (V20) [ pascalvoc ] and Pascal Context (C59) [ pascalcontext ] , both of which exclude the background class to provide a comprehensive comparison. Evaluation Protocol and Metrics. We follow the evaluation protocols established in previous works [ groupvit22 , tcl , clip_dinoiser , talk2dino ] . During inference, for a fair..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:43",
+  "page": "arxiv:2607.21371v1",
+  "subject": "DINOde",
+  "object": "COCO",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DINOde is evaluated on COCO datasets for open-vocabulary semantic segmentation.",
+  "contexts": [
+   "[body] ...ation in prior literature [ tcl , freeda , clip_dinoiser , talk2dino ] , these datasets are divided into two groups based on the inclusion of a background (bg) class. The first group consists of three benchmarks with a background class: Pascal VOC 2012 (V21) [ pascalvoc ] , Pascal Context (C60) [ pascalcontext ] , and COCO Object (Object) [ cocostuff ] , containing 21, 60, and 81 classes, respectively. The second group includes five benchmarks without a background class. Specifically, we evaluate on COCO Stuff (Stuff) [ cocostuff ] , Cityscapes (City) [ cityscape ] , and ADE20K (ADE) [ ade20k_1 , ade20k_2 ] , which comprise 171, 19, and 150 classes, re...",
+   "[body] ...re [ tcl , freeda , clip_dinoiser , talk2dino ] , these datasets are divided into two groups based on the inclusion of a background (bg) class. The first group consists of three benchmarks with a background class: Pascal VOC 2012 (V21) [ pascalvoc ] , Pascal Context (C60) [ pascalcontext ] , and COCO Object (Object) [ cocostuff ] , containing 21, 60, and 81 classes, respectively. The second group includes five benchmarks without a background class. Specifically, we evaluate on COCO Stuff (Stuff) [ cocostuff ] , Cityscapes (City) [ cityscape ] , and ADE20K (ADE) [ ade20k_1 , ade20k_2 ] , which comprise 171, 19, and 150 classes, respectively. Furthermore...",
+   "[body] ...nsists of three benchmarks with a background class: Pascal VOC 2012 (V21) [ pascalvoc ] , Pascal Context (C60) [ pascalcontext ] , and COCO Object (Object) [ cocostuff ] , containing 21, 60, and 81 classes, respectively. The second group includes five benchmarks without a background class. Specifically, we evaluate on COCO Stuff (Stuff) [ cocostuff ] , Cityscapes (City) [ cityscape ] , and ADE20K (ADE) [ ade20k_1 , ade20k_2 ] , which comprise 171, 19, and 150 classes, respectively. Furthermore, we report performance on Pascal VOC 2012 (V20) [ pascalvoc ] and Pascal Context (C59) [ pascalcontext ] , both of which exclude the background class to provide..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:44",
+  "page": "arxiv:2607.21371v1",
+  "subject": "DINOde",
+  "object": "Cityscapes",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DINOde is evaluated on Cityscapes for open-vocabulary semantic segmentation.",
+  "contexts": [
+   "[body] ...ackground class: Pascal VOC 2012 (V21) [ pascalvoc ] , Pascal Context (C60) [ pascalcontext ] , and COCO Object (Object) [ cocostuff ] , containing 21, 60, and 81 classes, respectively. The second group includes five benchmarks without a background class. Specifically, we evaluate on COCO Stuff (Stuff) [ cocostuff ] , Cityscapes (City) [ cityscape ] , and ADE20K (ADE) [ ade20k_1 , ade20k_2 ] , which comprise 171, 19, and 150 classes, respectively. Furthermore, we report performance on Pascal VOC 2012 (V20) [ pascalvoc ] and Pascal Context (C59) [ pascalcontext ] , both of which exclude the background class to provide a comprehensive comparison. Evaluat...",
+   "[body] ...of ODE steps . Segmentation maps are obtained using the aligned text embedding \ud835\udc33 t k \\mathbf{z}_{t_{k}} at each step k \u2208 { 1 , 2 , \u2026 , 10 } k\\in\\{1,2,\\ldots,10\\} . (Left) Average mIoU across eight benchmarks, showing the progressive performance improvement during the manifold transition. (Right) Qualitative results on Cityscapes across steps. Analysis of Progressive Manifold Transitions. To verify whether STF effectively learns the progressive manifold transition via ODE as intended, we perform quantitative and qualitative comparisons across varying numbers of ODE integration steps. The average mIoU across eight benchmarks for each step is illustrated...",
+   "[body] ...etween steps 8 and 10, the mIoU curve shows a more gradual yet steady improvement. This suggests that once the embeddings reach the vicinity of the DINO manifold, the STF module performs fine-grained adjustments to converge toward the optimal semantic coordinates within the visual space. The qualitative results on the Cityscapes dataset, shown in Fig. 3 , consistently align with these quantitative observations. In the first 8 steps, we observe rapid improvements in global structure and semantic consistency. In the subsequent steps, the results exhibit further improvements in fine details. In conclusion, these results demonstrate that our STF successful..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:45",
+  "page": "arxiv:2607.21371v1",
+  "subject": "DINOde",
+  "object": "ADE20K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DINOde is evaluated on ADE20K for open-vocabulary semantic segmentation.",
+  "contexts": [
+   "[body] ...[ pascalvoc ] , Pascal Context (C60) [ pascalcontext ] , and COCO Object (Object) [ cocostuff ] , containing 21, 60, and 81 classes, respectively. The second group includes five benchmarks without a background class. Specifically, we evaluate on COCO Stuff (Stuff) [ cocostuff ] , Cityscapes (City) [ cityscape ] , and ADE20K (ADE) [ ade20k_1 , ade20k_2 ] , which comprise 171, 19, and 150 classes, respectively. Furthermore, we report performance on Pascal VOC 2012 (V20) [ pascalvoc ] and Pascal Context (C59) [ pascalcontext ] , both of which exclude the background class to provide a comprehensive comparison. Evaluation Protocol and Metrics. We follow th...",
+   "[body] ..., Pascal Context (C60) [ pascalcontext ] , and COCO Object (Object) [ cocostuff ] , containing 21, 60, and 81 classes, respectively. The second group includes five benchmarks without a background class. Specifically, we evaluate on COCO Stuff (Stuff) [ cocostuff ] , Cityscapes (City) [ cityscape ] , and ADE20K (ADE) [ ade20k_1 , ade20k_2 ] , which comprise 171, 19, and 150 classes, respectively. Furthermore, we report performance on Pascal VOC 2012 (V20) [ pascalvoc ] and Pascal Context (C59) [ pascalcontext ] , both of which exclude the background class to provide a comprehensive comparison. Evaluation Protocol and Metrics. We follow the evaluation pr...",
+   "[body] ...ntext (C60) [ pascalcontext ] , and COCO Object (Object) [ cocostuff ] , containing 21, 60, and 81 classes, respectively. The second group includes five benchmarks without a background class. Specifically, we evaluate on COCO Stuff (Stuff) [ cocostuff ] , Cityscapes (City) [ cityscape ] , and ADE20K (ADE) [ ade20k_1 , ade20k_2 ] , which comprise 171, 19, and 150 classes, respectively. Furthermore, we report performance on Pascal VOC 2012 (V20) [ pascalvoc ] and Pascal Context (C59) [ pascalcontext ] , both of which exclude the background class to provide a comprehensive comparison. Evaluation Protocol and Metrics. We follow the evaluation protocols est..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:46",
+  "page": "arxiv:2607.21371v1",
+  "subject": "DINOde",
+  "object": "DINOv3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DINOde uses DINOv3 as the visual backbone for feature extraction.",
+  "contexts": [
+   "[body] ...] , leverages DINOv2\u2019s self-attention heads to selectively align the most relevant visual regions with textual concepts. While this approach aligns DINOv2 spatial tokens with CLIP text embeddings without fine-tuning the backbones, it simply bridges the two feature spaces using a non-linear mapping function. Recently, DINOv3 [ dinov3 ] has enabled the preservation of high-quality spatially detailed features through its Gram anchoring regularizer. Notably, simply aligning DINOv3 with the CLIP text embedding space using an MLP provides a surprisingly strong baseline with competitive performance. While aligning two frozen modalities is efficient and strai...",
+   "[body] ...rages DINOv2\u2019s self-attention heads to selectively align the most relevant visual regions with textual concepts. While this approach aligns DINOv2 spatial tokens with CLIP text embeddings without fine-tuning the backbones, it simply bridges the two feature spaces using a non-linear mapping function. Recently, DINOv3 [ dinov3 ] has enabled the preservation of high-quality spatially detailed features through its Gram anchoring regularizer. Notably, simply aligning DINOv3 with the CLIP text embedding space using an MLP provides a surprisingly strong baseline with competitive performance. While aligning two frozen modalities is efficient and straightforwar...",
+   "[body] ...spatial tokens with CLIP text embeddings without fine-tuning the backbones, it simply bridges the two feature spaces using a non-linear mapping function. Recently, DINOv3 [ dinov3 ] has enabled the preservation of high-quality spatially detailed features through its Gram anchoring regularizer. Notably, simply aligning DINOv3 with the CLIP text embedding space using an MLP provides a surprisingly strong baseline with competitive performance. While aligning two frozen modalities is efficient and straightforward to optimize, MLP-based schemes that attempt to approximate this complex cro [...] 4 Experiments 4.1 Experimental Settings Datasets. To evaluate t..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:47",
+  "page": "arxiv:2607.21371v1",
+  "subject": "DINOde",
+  "object": "CLIP",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DINOde aligns CLIP text embeddings with the DINO visual manifold.",
+  "contexts": [
+   "[body] ...t open nature of the environment, where unseen categories frequently emerge. Consequently, recent research has pivoted toward open-vocabulary semantic segmentation (OVSS), which aims to segment unseen classes. The emergence of large-scale vision-language pretraining such as the Contrastive Language-Image Pre-training (CLIP [ CLIP ] ) model has significantly advanced this direction by providing a robust alignment between visual features and textual semantics. Early works such as LSeg [ LSeg2022 ] and TCL [ tcl ] employ static contrastive losses to establish direct pixel-text correspondences, while others like MaskCLIP [ maskclip23 ] extract dense pseudo...",
+   "[body] ...nature of the environment, where unseen categories frequently emerge. Consequently, recent research has pivoted toward open-vocabulary semantic segmentation (OVSS), which aims to segment unseen classes. The emergence of large-scale vision-language pretraining such as the Contrastive Language-Image Pre-training (CLIP [ CLIP ] ) model has significantly advanced this direction by providing a robust alignment between visual features and textual semantics. Early works such as LSeg [ LSeg2022 ] and TCL [ tcl ] employ static contrastive losses to establish direct pixel-text correspondences, while others like MaskCLIP [ maskclip23 ] extract dense pseudo-masks...",
+   "[body] ...Image Pre-training (CLIP [ CLIP ] ) model has significantly advanced this direction by providing a robust alignment between visual features and textual semantics. Early works such as LSeg [ LSeg2022 ] and TCL [ tcl ] employ static contrastive losses to establish direct pixel-text correspondences, while others like MaskCLIP [ maskclip23 ] extract dense pseudo-masks directly from frozen encoders for training-free inference. More recently, frameworks have introduced hierarchical region-level grouping as seen in GroupViT [ groupvit22 ] , or integrated specialized mask-adapted segmentation modules like OVSeg [ ovseg23 ] and FC-CLIP [ yu2023convolutions ] to..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:48",
+  "page": "arxiv:2607.21371v1",
+  "subject": "DINOde",
+  "object": "Talk2DINO",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "DINOde compares against Talk2DINO as a concurrent vision-text alignment approach.",
+  "contexts": [
+   "[body] ...xt ] aligns a frozen DINOv2 backbone with a newly trained text encoder for open-vocabulary segmentation via locked image-text alignment. However, it requires training a text encoder from scratch on large-scale paired data and demands extensive computational resources for vision-text alignment. Another concurrent work, Talk2DINO [ talk2dino ] , leverages DINOv2\u2019s self-attention heads to selectively align the most relevant visual regions with textual concepts. While this approach aligns DINOv2 spatial tokens with CLIP text embeddings without fine-tuning the backbones, it simply bridges the two feature spaces using a non-linear mapping function. Recently,...",
+   "[body] ...a frozen DINOv2 backbone with a newly trained text encoder for open-vocabulary segmentation via locked image-text alignment. However, it requires training a text encoder from scratch on large-scale paired data and demands extensive computational resources for vision-text alignment. Another concurrent work, Talk2DINO [ talk2dino ] , leverages DINOv2\u2019s self-attention heads to selectively align the most relevant visual regions with textual concepts. While this approach aligns DINOv2 spatial tokens with CLIP text embeddings without fine-tuning the backbones, it simply bridges the two feature spaces using a non-linear mapping function. Recently, DINOv3 [ di...",
+   "[body] ...hat attempt to approximate this complex cro [...] 4 Experiments 4.1 Experimental Settings Datasets. To evaluate the robustness and generalizability of our proposed method, we conduct extensive experiments on eight common OVSS benchmarks. Following the categorization in prior literature [ tcl , freeda , clip_dinoiser , talk2dino ] , these datasets are divided into two groups based on the inclusion of a background (bg) class. The first group consists of three benchmarks with a background class: Pascal VOC 2012 (V21) [ pascalvoc ] , Pascal Context (C60) [ pascalcontext ] , and COCO Object (Object) [ cocostuff ] , containing 21, 60, and 81 classes, respect..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:49",
+  "page": "arxiv:2607.21372v1",
+  "subject": "M2S",
+  "object": "MNIST",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "M2S is evaluated on MNIST for discrete image generation.",
+  "contexts": [
+   "[body] ...tion tasks. All models use the uniform forward process (Appendix B ) with \u03b1 t = 1 \u2212 t \\alpha_{t}=1-t and \u03b2 t = t \\beta_{t}=t . For a fair comparison, M2S adopts the same DiT [ 19 ] backbone and parameter count as the mainstream baselines; full hyperparameters are given in Appendix C . Image Generation: We train M2S on MNIST, representing each 28 \u00d7 28 28\\times 28 image as a sequence over \ud835\udcae = { 0 , 1 , \u2026 , 255 } \\mathcal{S}=\\{0,1,\\ldots,255\\} . Using identical architectures, parameter counts, optimization hyperparameters, training budgets, and samplers, M2S reduces FID by more than 52 points relative to SEDD at every tested sampling budget, with full det...",
+   "[body] ...ers FID-50k from 42.83 42.83 to 28.09 28.09 (a 34.4 % 34.4\\% reduction); qualitative samples and the complete protocol are reported in Appendix C.2 . It also improves over the D3PM and Campbell et al. results in Table 1 . This result provides evidence that the Bayes-realizable parameterization remains effective beyond MNIST. Full training and evaluation details are given in Appendix C.2 . Table 1: CIFAR-10 test BPD ( \u2193 \\downarrow ). M2S and SEDD are evaluated under the same test protocol; the remaining baseline values are published results. \u2264 \\leq denotes a variational upper bound. The M2S and SEDD estimates are rounded to three decimal places. M2S is..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:50",
+  "page": "arxiv:2607.21372v1",
+  "subject": "M2S",
+  "object": "CIFAR-10",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "M2S is evaluated on CIFAR-10 for discrete image generation.",
+  "contexts": [
+   "[body] ...0 , 1 , \u2026 , 255 } \\mathcal{S}=\\{0,1,\\ldots,255\\} . Using identical architectures, parameter counts, optimization hyperparameters, training budgets, and samplers, M2S reduces FID by more than 52 points relative to SEDD at every tested sampling budget, with full details provided in Appendix C.1 . We also evaluate M2S on CIFAR-10 using a 28.4M-parameter U-Net with self-attention. Following the MD4 setup, we match its total training budget of 512M image presentations while using pure-uniform corruption and the M2S parameterization. Without data augmentation, the model reaches a test BPD upper bound of 3.129 3.129 , compared with 3.173 3.173 for SEDD under...",
+   "[body] ...ive samples and the complete protocol are reported in Appendix C.2 . It also improves over the D3PM and Campbell et al. results in Table 1 . This result provides evidence that the Bayes-realizable parameterization remains effective beyond MNIST. Full training and evaluation details are given in Appendix C.2 . Table 1: CIFAR-10 test BPD ( \u2193 \\downarrow ). M2S and SEDD are evaluated under the same test protocol; the remaining baseline values are published results. \u2264 \\leq denotes a variational upper bound. The M2S and SEDD estimates are rounded to three decimal places. M2S is trained without data augmentation. A dash denotes an unreported parameter count....",
+   "[abstract] .... The construction applies to any known coordinate-wise continuous-time Markov chain (CTMC) satisfying a mild support condition. For uniform corruption, it maps the probability simplex onto the bridge polytope; for absorbing-mask corruption, the resulting objective recovers MD4 exactly. In a controlled 28.4M-parameter CIFAR-10 comparison, M2S lowers test BPD from $3.173$ to $3.129$ and FID-50k from $\\CifarSEDDFID$ to $\\CifarMtwoSFID$. A 170M-parameter M2S model trained on about 262B OpenWebText token slots outperforms the evaluated pure-uniform SEDD, GIDD, and Neural CTMC checkpoints at every tested sampling budget, reaching generative PPL $143.3$ at 1..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:51",
+  "page": "arxiv:2607.21372v1",
+  "subject": "M2S",
+  "object": "OpenWebText",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "M2S is trained and evaluated on OpenWebText for language modeling.",
+  "contexts": [
+   "[body] .... Absorb [ 4 ] 28M \u2264 3.52 \\leq 3.52 MD4 [ 23 ] 28M \u2264 2.75 \\leq\\mathbf{2.75} Discrete-Gaussian diffusion D3PM Gauss + logistic [ 1 ] 36M \u2264 3.44 \\leq 3.44 Campbell et al. ( \u03c4 \\tau LDR) [ 4 ] 36M \u2264 3.59 \\leq 3.59 Language Modeling: We compare M2S against SEDD [ 15 ] , MDLM [ 21 ] , GIDD [ 28 ] , and Neural CTMC [ 14 ] on OpenWebText [ 9 ] . To ensure a fair comparison, M2S and all baselines (SEDD, MDLM, GIDD, Neural CTMC) use an identical backbone architecture (12-layer DiT-style Transformer, 768 hidden dim, 12 heads, \u223c \\sim 169M parameters); the only difference across methods is the parameterization of the reverse process and its associated loss. For GID...",
+   "[body] ...od is run with multiple sampling seeds and we report the best PPL across seeds. (a) (b) Figure 3 : (a) Generative-PPL comparison between M2S and the evaluated baselines. (b) Generative-PPL comparison of M2S Euler and Bayes samplers under linear and cosine time grids. Table 2 : Generative perplexity ( \u2193 \\downarrow ) on OpenWebText for varying numbers of sampling steps. All checkpoints use DiT-style backbones at a comparable parameter scale. Bold : best overall per column; underline : best among rows with a reported 262B-token training budget. Type Method Train Toks Max Len 16 32 64 128 mask SEDD [ 15 ] 682B 1024 825.5 825.5 337.9 337.9 186.5 186.5 127.2...",
+   "[abstract] ...bability simplex onto the bridge polytope; for absorbing-mask corruption, the resulting objective recovers MD4 exactly. In a controlled 28.4M-parameter CIFAR-10 comparison, M2S lowers test BPD from $3.173$ to $3.129$ and FID-50k from $\\CifarSEDDFID$ to $\\CifarMtwoSFID$. A 170M-parameter M2S model trained on about 262B OpenWebText token slots outperforms the evaluated pure-uniform SEDD, GIDD, and Neural CTMC checkpoints at every tested sampling budget, reaching generative PPL $143.3$ at 128 steps versus $183.6$ for the strongest pure-uniform baseline...."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:52",
+  "page": "arxiv:2607.21372v1",
+  "subject": "M2S",
+  "object": "SEDD",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "M2S improves upon Score Entropy Discrete Diffusion (SEDD).",
+  "contexts": [
+   "[body] ...freely parameterized score need not be induced by the conditional clean-token mean under the forward process. MD4 therefore predicts this mean and constructs the masked reverse model from it. We ask a vector-level question: whether one valid clean-token posterior induces the complete concrete-score vector predicted by SEDD. We call this property Bayes realizability . It reduces to MD4\u2019s score\u2013mean constraint for an absorbing mask, but under pure-uniform corruption it couples all K \u2212 1 K-1 scores. In score-based CTMC models, each reverse jump rate uses a concrete score ratio p t \u200b ( x i \u2192 y ) / p t \u200b ( x ) p_{t}(x^{i\\to y})/p_{t}(x) . SEDD [ 15 ] predic...",
+   "[body] ...DD. We call this property Bayes realizability . It reduces to MD4\u2019s score\u2013mean constraint for an absorbing mask, but under pure-uniform corruption it couples all K \u2212 1 K-1 scores. In score-based CTMC models, each reverse jump rate uses a concrete score ratio p t \u200b ( x i \u2192 y ) / p t \u200b ( x ) p_{t}(x^{i\\to y})/p_{t}(x) . SEDD [ 15 ] predicts each ratio with an exponentiated network output, guaranteeing positive scores and nonnegative continuous-time reverse jump rates. Positivity alone, however, does not ensure that all candidate score ratios arise from one clean-token posterior. Formally, at noisy state x x and site i i with k = x i k=x^{i} , a candidate...",
+   "[body] ...only require s y &gt; 0 s_{y}&gt;0 . The coordinate box is necessary but not sufficient for Bayes realizability: the complete score vector must lie in the strictly smaller bridge polytope \ud835\udcab t , k = B t , k \u200b ( \u0394 K \u2212 1 ) \u228a \ud835\udc9e t , k \\mathcal{P}_{t,k}=B_{t,k}(\\Delta^{K-1})\\subsetneq\\mathcal{C}_{t,k} . Thus, constraining a SEDD head to positive outputs is insufficient to ensure Bayes realizability: its output may lie outside both the bridge polytope and even the coordinate box. Score entropy therefore has the correct population optimum but does not enforce Bayes realizability away from that optimum. Figure 1 visualizes the distinction for K = 3 K=3 . The co..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:53",
+  "page": "arxiv:2607.21372v1",
+  "subject": "M2S",
+  "object": "MD4",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "M2S builds on MD4 for mean-based parameterization of discrete diffusion.",
+  "contexts": [
+   "[body] ...the probability simplex over a vocabulary of size K K . Unlike absorbing-mask training, which reduces to a weighted clean-token cross-entropy on marked positions, uniform corruption does not reveal which positions changed and requires the reverse model to coordinate transitions across the full vocabulary [ 21 , 23 ] . MD4 [ 23 ] already highlights a closely related parameterization issue for absorbing-mask diffusion: a freely parameterized score need not be induced by the conditional clean-token mean under the forward process. MD4 therefore predicts this mean and constructs the masked reverse model from it. We ask a vector-level question: whether one v...",
+   "[body] ...changed and requires the reverse model to coordinate transitions across the full vocabulary [ 21 , 23 ] . MD4 [ 23 ] already highlights a closely related parameterization issue for absorbing-mask diffusion: a freely parameterized score need not be induced by the conditional clean-token mean under the forward process. MD4 therefore predicts this mean and constructs the masked reverse model from it. We ask a vector-level question: whether one valid clean-token posterior induces the complete concrete-score vector predicted by SEDD. We call this property Bayes realizability . It reduces to MD4\u2019s score\u2013mean constraint for an absorbing mask, but under pure-...",
+   "[body] ...l clean-token mean under the forward process. MD4 therefore predicts this mean and constructs the masked reverse model from it. We ask a vector-level question: whether one valid clean-token posterior induces the complete concrete-score vector predicted by SEDD. We call this property Bayes realizability . It reduces to MD4\u2019s score\u2013mean constraint for an absorbing mask, but under pure-uniform corruption it couples all K \u2212 1 K-1 scores. In score-based CTMC models, each reverse jump rate uses a concrete score ratio p t \u200b ( x i \u2192 y ) / p t \u200b ( x ) p_{t}(x^{i\\to y})/p_{t}(x) . SEDD [ 15 ] predicts each ratio with an exponentiated network output, guaranteeing..."
+  ]
+ }
+]

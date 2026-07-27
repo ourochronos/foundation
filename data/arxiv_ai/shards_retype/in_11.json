@@ -1,0 +1,734 @@
+[
+ {
+  "sid": "out_6.jsonl:54",
+  "page": "arxiv:2607.21372v1",
+  "subject": "M2S",
+  "object": "discrete diffusion",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "M2S builds on discrete diffusion models for token generation.",
+  "contexts": [
+   "[body] ...1 Introduction Discrete diffusion models generate finite-valued data by reversing a continuous-time Markov chain (CTMC) that progressively corrupts a sample [ 1 , 4 ] . We study pure-uniform corruption, which treats vocabulary states symmetrically without an absorbing mask token. For site i i , let X 0 i X_{0}^{i} denote the clean token and \u03bc i \u22c6 ( x ,...",
+   "[body] ...parameter count. Method # Params BPD ( \u2193 \\downarrow ) Autoregressive PixelRNN [ 26 ] \u2013 3.00 3.00 Gated PixelCNN [ 27 ] \u2013 3.03 3.03 PixelCNN++ [ 22 ] 53M 2.92 2.92 PixelSNAIL [ 5 ] 46M 2.85 2.85 Image Transformer [ 18 ] \u2013 2.90 2.90 Sparse Transformer [ 6 ] 59M 2.80 2.80 Method # Params BPD ( \u2193 \\downarrow ) Pure-uniform discrete diffusion M2S (ours) 28.4M \u2264 3.129 \\boldsymbol{\\leq 3.129} SEDD [ 15 ] 28.4M \u2264 3.173 \\leq 3.173 Absorbing-mask discrete diffusion D3PM Absorb [ 1 ] 37M \u2264 4.40 \\leq 4.40 Campbell et al. Absorb [ 4 ] 28M \u2264 3.52 \\leq 3.52 MD4 [ 23 ] 28M \u2264 2.75 \\leq\\mathbf{2.75} Discrete-Gaussian diffusion D3PM Gauss + logistic [ 1 ] 36M \u2264 3.44 \\leq...",
+   "[body] ...3.03 3.03 PixelCNN++ [ 22 ] 53M 2.92 2.92 PixelSNAIL [ 5 ] 46M 2.85 2.85 Image Transformer [ 18 ] \u2013 2.90 2.90 Sparse Transformer [ 6 ] 59M 2.80 2.80 Method # Params BPD ( \u2193 \\downarrow ) Pure-uniform discrete diffusion M2S (ours) 28.4M \u2264 3.129 \\boldsymbol{\\leq 3.129} SEDD [ 15 ] 28.4M \u2264 3.173 \\leq 3.173 Absorbing-mask discrete diffusion D3PM Absorb [ 1 ] 37M \u2264 4.40 \\leq 4.40 Campbell et al. Absorb [ 4 ] 28M \u2264 3.52 \\leq 3.52 MD4 [ 23 ] 28M \u2264 2.75 \\leq\\mathbf{2.75} Discrete-Gaussian diffusion D3PM Gauss + logistic [ 1 ] 36M \u2264 3.44 \\leq 3.44 Campbell et al. ( \u03c4 \\tau LDR) [ 4 ] 36M \u2264 3.59 \\leq 3.59 Language Modeling: We compare M2S against SEDD [ 15 ] , MD..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:55",
+  "page": "arxiv:2607.21372v1",
+  "subject": "M2S",
+  "object": "GIDD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "M2S outperforms GIDD on language modeling benchmarks.",
+  "contexts": [
+   "[body] ...1 ] 37M \u2264 4.40 \\leq 4.40 Campbell et al. Absorb [ 4 ] 28M \u2264 3.52 \\leq 3.52 MD4 [ 23 ] 28M \u2264 2.75 \\leq\\mathbf{2.75} Discrete-Gaussian diffusion D3PM Gauss + logistic [ 1 ] 36M \u2264 3.44 \\leq 3.44 Campbell et al. ( \u03c4 \\tau LDR) [ 4 ] 36M \u2264 3.59 \\leq 3.59 Language Modeling: We compare M2S against SEDD [ 15 ] , MDLM [ 21 ] , GIDD [ 28 ] , and Neural CTMC [ 14 ] on OpenWebText [ 9 ] . To ensure a fair comparison, M2S and all baselines (SEDD, MDLM, GIDD, Neural CTMC) use an identical backbone architecture (12-layer DiT-style Transformer, 768 hidden dim, 12 heads, \u223c \\sim 169M parameters); the only difference across methods is the parameterization of the reverse...",
+   "[body] ...-Gaussian diffusion D3PM Gauss + logistic [ 1 ] 36M \u2264 3.44 \\leq 3.44 Campbell et al. ( \u03c4 \\tau LDR) [ 4 ] 36M \u2264 3.59 \\leq 3.59 Language Modeling: We compare M2S against SEDD [ 15 ] , MDLM [ 21 ] , GIDD [ 28 ] , and Neural CTMC [ 14 ] on OpenWebText [ 9 ] . To ensure a fair comparison, M2S and all baselines (SEDD, MDLM, GIDD, Neural CTMC) use an identical backbone architecture (12-layer DiT-style Transformer, 768 hidden dim, 12 heads, \u223c \\sim 169M parameters); the only difference across methods is the parameterization of the reverse process and its associated loss. For GIDD we report results with p unif \u2208 { 0.0 , 0.1 , 0.2 } p_{\\mathrm{unif}}\\in\\{0.0,0.1,...",
+   "[body] .... To ensure a fair comparison, M2S and all baselines (SEDD, MDLM, GIDD, Neural CTMC) use an identical backbone architecture (12-layer DiT-style Transformer, 768 hidden dim, 12 heads, \u223c \\sim 169M parameters); the only difference across methods is the parameterization of the reverse process and its associated loss. For GIDD we report results with p unif \u2208 { 0.0 , 0.1 , 0.2 } p_{\\mathrm{unif}}\\in\\{0.0,0.1,0.2\\} , where p unif = 0.0 p_{\\mathrm{unif}}=0.0 corresponds to a pure mask process. For evaluation, we draw 1024 unconditional samples from each model and score them with a pretrained Gemma2-9B model to obtain generative perplexity (PPL); each method i..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:56",
+  "page": "arxiv:2607.21372v1",
+  "subject": "M2S",
+  "object": "Neural CTMC",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "M2S outperforms Neural CTMC on language modeling benchmarks.",
+  "contexts": [
+   "[body] ...eq 4.40 Campbell et al. Absorb [ 4 ] 28M \u2264 3.52 \\leq 3.52 MD4 [ 23 ] 28M \u2264 2.75 \\leq\\mathbf{2.75} Discrete-Gaussian diffusion D3PM Gauss + logistic [ 1 ] 36M \u2264 3.44 \\leq 3.44 Campbell et al. ( \u03c4 \\tau LDR) [ 4 ] 36M \u2264 3.59 \\leq 3.59 Language Modeling: We compare M2S against SEDD [ 15 ] , MDLM [ 21 ] , GIDD [ 28 ] , and Neural CTMC [ 14 ] on OpenWebText [ 9 ] . To ensure a fair comparison, M2S and all baselines (SEDD, MDLM, GIDD, Neural CTMC) use an identical backbone architecture (12-layer DiT-style Transformer, 768 hidden dim, 12 heads, \u223c \\sim 169M parameters); the only difference across methods is the parameterization of the reverse process and its as...",
+   "[body] ...ian diffusion D3PM Gauss + logistic [ 1 ] 36M \u2264 3.44 \\leq 3.44 Campbell et al. ( \u03c4 \\tau LDR) [ 4 ] 36M \u2264 3.59 \\leq 3.59 Language Modeling: We compare M2S against SEDD [ 15 ] , MDLM [ 21 ] , GIDD [ 28 ] , and Neural CTMC [ 14 ] on OpenWebText [ 9 ] . To ensure a fair comparison, M2S and all baselines (SEDD, MDLM, GIDD, Neural CTMC) use an identical backbone architecture (12-layer DiT-style Transformer, 768 hidden dim, 12 heads, \u223c \\sim 169M parameters); the only difference across methods is the parameterization of the reverse process and its associated loss. For GIDD we report results with p unif \u2208 { 0.0 , 0.1 , 0.2 } p_{\\mathrm{unif}}\\in\\{0.0,0.1,0.2\\}...",
+   "[abstract] ...esulting objective recovers MD4 exactly. In a controlled 28.4M-parameter CIFAR-10 comparison, M2S lowers test BPD from $3.173$ to $3.129$ and FID-50k from $\\CifarSEDDFID$ to $\\CifarMtwoSFID$. A 170M-parameter M2S model trained on about 262B OpenWebText token slots outperforms the evaluated pure-uniform SEDD, GIDD, and Neural CTMC checkpoints at every tested sampling budget, reaching generative PPL $143.3$ at 128 steps versus $183.6$ for the strongest pure-uniform baseline...."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:57",
+  "page": "arxiv:2607.21381v1",
+  "subject": "SeeExplainer",
+  "object": "MUTAG",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SeeExplainer is evaluated on MUTAG graph classification dataset.",
+  "contexts": [
+   "[body] ...ow does SeeExplainer perform in visualization? TABLE I: The fidelity comparison between SeeExplainer and baselines on benchmark datasets with GIN and GCN (%). Higher values indicate better fidelity. For clarity, the best result is highlighted in bold and the second-best result is represented by underline . GNNs Method MUTAG Mutagenicity NCI1 IMDB-BINARY ENZYMES PROTEINS NCI109 DHFR BZR DD PGExplainer 18.284 7.802 -0.817 14.082 5.064 13.350 6.788 0.820 0.374 25.019 DeepLIFT 30.168 19.742 12.179 4.008 9.869 12.790 10.416 8.042 1.576 -52.911 GNNExpaliner 1.076 5.549 4.358 14.870 10.244 15.742 1.931 2.770 8.243 29.511 GIN GraphLime 41.270 11.882 -5.028 -4....",
+   "[body] ...s SeeExplainer perform in visualization? TABLE I: The fidelity comparison between SeeExplainer and baselines on benchmark datasets with GIN and GCN (%). Higher values indicate better fidelity. For clarity, the best result is highlighted in bold and the second-best result is represented by underline . GNNs Method MUTAG Mutagenicity NCI1 IMDB-BINARY ENZYMES PROTEINS NCI109 DHFR BZR DD PGExplainer 18.284 7.802 -0.817 14.082 5.064 13.350 6.788 0.820 0.374 25.019 DeepLIFT 30.168 19.742 12.179 4.008 9.869 12.790 10.416 8.042 1.576 -52.911 GNNExpaliner 1.076 5.549 4.358 14.870 10.244 15.742 1.931 2.770 8.243 29.511 GIN GraphLime 41.270 11.882 -5.028 -4.118 39...",
+   "[body] ...-0.910 3.562 5.165 20.479 22.289 66.919 Eig-Search 6.746 57.726 57.582 24.091 18.469 28.485 36.753 54.393 66.141 88.519 SeeExplainer 63.305 87.700 82.457 48.297 39.052 62.700 54.132 55.280 75.923 96.111 V-A Experimental Setup Datasets: We evaluate our method on several standard graph classification datasets, including MUTAG [ 53 ] , Mutagenicity [ 54 ] , NCI1 [ 55 ] , IMDB-BINARY [ 4 ] , ENZYMES [ 6 ] , PROTEINS [ 56 ] , NCI109 [ 57 ] , DHFR [ 7 ] , BZR [ 25 ] , and DD [ 5 ] . Table II lists the basic information of datasets. TABLE II: Dataset Information. Datasets Graphs Avg. Nodes Avg. Edges MUTAG 188 17.93 19.79 Mutagenicity 4337 30.32 30.77 NCI1 41..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:58",
+  "page": "arxiv:2607.21381v1",
+  "subject": "SeeExplainer",
+  "object": "NCI1",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SeeExplainer is evaluated on NCI1 graph classification dataset.",
+  "contexts": [
+   "[body] ...r perform in visualization? TABLE I: The fidelity comparison between SeeExplainer and baselines on benchmark datasets with GIN and GCN (%). Higher values indicate better fidelity. For clarity, the best result is highlighted in bold and the second-best result is represented by underline . GNNs Method MUTAG Mutagenicity NCI1 IMDB-BINARY ENZYMES PROTEINS NCI109 DHFR BZR DD PGExplainer 18.284 7.802 -0.817 14.082 5.064 13.350 6.788 0.820 0.374 25.019 DeepLIFT 30.168 19.742 12.179 4.008 9.869 12.790 10.416 8.042 1.576 -52.911 GNNExpaliner 1.076 5.549 4.358 14.870 10.244 15.742 1.931 2.770 8.243 29.511 GIN GraphLime 41.270 11.882 -5.028 -4.118 39.576 30.368 7...",
+   "[body] ...I: The fidelity comparison between SeeExplainer and baselines on benchmark datasets with GIN and GCN (%). Higher values indicate better fidelity. For clarity, the best result is highlighted in bold and the second-best result is represented by underline . GNNs Method MUTAG Mutagenicity NCI1 IMDB-BINARY ENZYMES PROTEINS NCI109 DHFR BZR DD PGExplainer 18.284 7.802 -0.817 14.082 5.064 13.350 6.788 0.820 0.374 25.019 DeepLIFT 30.168 19.742 12.179 4.008 9.869 12.790 10.416 8.042 1.576 -52.911 GNNExpaliner 1.076 5.549 4.358 14.870 10.244 15.742 1.931 2.770 8.243 29.511 GIN GraphLime 41.270 11.882 -5.028 -4.118 39.576 30.368 7.380 -1.658 -2.060 47.270 GradCAM...",
+   "[body] ...19 Eig-Search 6.746 57.726 57.582 24.091 18.469 28.485 36.753 54.393 66.141 88.519 SeeExplainer 63.305 87.700 82.457 48.297 39.052 62.700 54.132 55.280 75.923 96.111 V-A Experimental Setup Datasets: We evaluate our method on several standard graph classification datasets, including MUTAG [ 53 ] , Mutagenicity [ 54 ] , NCI1 [ 55 ] , IMDB-BINARY [ 4 ] , ENZYMES [ 6 ] , PROTEINS [ 56 ] , NCI109 [ 57 ] , DHFR [ 7 ] , BZR [ 25 ] , and DD [ 5 ] . Table II lists the basic information of datasets. TABLE II: Dataset Information. Datasets Graphs Avg. Nodes Avg. Edges MUTAG 188 17.93 19.79 Mutagenicity 4337 30.32 30.77 NCI1 4110 29.87 32.30 PROTEINS 1113 39.06 72..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:59",
+  "page": "arxiv:2607.21381v1",
+  "subject": "SeeExplainer",
+  "object": "PROTEINS",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SeeExplainer is evaluated on PROTEINS graph classification dataset.",
+  "contexts": [
+   "[body] ...n? TABLE I: The fidelity comparison between SeeExplainer and baselines on benchmark datasets with GIN and GCN (%). Higher values indicate better fidelity. For clarity, the best result is highlighted in bold and the second-best result is represented by underline . GNNs Method MUTAG Mutagenicity NCI1 IMDB-BINARY ENZYMES PROTEINS NCI109 DHFR BZR DD PGExplainer 18.284 7.802 -0.817 14.082 5.064 13.350 6.788 0.820 0.374 25.019 DeepLIFT 30.168 19.742 12.179 4.008 9.869 12.790 10.416 8.042 1.576 -52.911 GNNExpaliner 1.076 5.549 4.358 14.870 10.244 15.742 1.931 2.770 8.243 29.511 GIN GraphLime 41.270 11.882 -5.028 -4.118 39.576 30.368 7.380 -1.658 -2.060 47.270...",
+   "[body] ....485 36.753 54.393 66.141 88.519 SeeExplainer 63.305 87.700 82.457 48.297 39.052 62.700 54.132 55.280 75.923 96.111 V-A Experimental Setup Datasets: We evaluate our method on several standard graph classification datasets, including MUTAG [ 53 ] , Mutagenicity [ 54 ] , NCI1 [ 55 ] , IMDB-BINARY [ 4 ] , ENZYMES [ 6 ] , PROTEINS [ 56 ] , NCI109 [ 57 ] , DHFR [ 7 ] , BZR [ 25 ] , and DD [ 5 ] . Table II lists the basic information of datasets. TABLE II: Dataset Information. Datasets Graphs Avg. Nodes Avg. Edges MUTAG 188 17.93 19.79 Mutagenicity 4337 30.32 30.77 NCI1 4110 29.87 32.30 PROTEINS 1113 39.06 72.82 IMDB-BINARY 1000 19.77 96.53 NCI109 4127 29.68...",
+   "[body] ..., NCI1 [ 55 ] , IMDB-BINARY [ 4 ] , ENZYMES [ 6 ] , PROTEINS [ 56 ] , NCI109 [ 57 ] , DHFR [ 7 ] , BZR [ 25 ] , and DD [ 5 ] . Table II lists the basic information of datasets. TABLE II: Dataset Information. Datasets Graphs Avg. Nodes Avg. Edges MUTAG 188 17.93 19.79 Mutagenicity 4337 30.32 30.77 NCI1 4110 29.87 32.30 PROTEINS 1113 39.06 72.82 IMDB-BINARY 1000 19.77 96.53 NCI109 4127 29.68 32.13 DHFR 756 42.43 44.54 BZR 405 35.75 38.36 DD 1178 284.32 715.66 ENZYMES 600 32.63 62.14 TABLE III: Benchmark model information. BL, BH, and ACC indicate the best number of layers, the best hidden units, and the best accuracy, respectively. Datasets GIN GCN BL BH..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:60",
+  "page": "arxiv:2607.21381v1",
+  "subject": "SeeExplainer",
+  "object": "DD",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SeeExplainer is evaluated on DD graph classification dataset.",
+  "contexts": [
+   "[body] ...graph neural networks (GNNs) by selecting important edges to induce subgraphs, where edge importance is assessed by perturbing each edge and observing changes in the model predictions. However, they often neglect the synergistic effects among edges, which are crucial for accurately characterizing edge importance. To address this issue, we propose SeeExplainer , a parameter-free explainer to interpret GNNs. Specifically, we first introduce a granular-ball graph refinement mechanism that decomposes a graph into several disjoint granular-balls with no fixed size, and utilize them as nodes to construct a structural graph. This process can better capture t...",
+   "[body] ...comparison between SeeExplainer and baselines on benchmark datasets with GIN and GCN (%). Higher values indicate better fidelity. For clarity, the best result is highlighted in bold and the second-best result is represented by underline . GNNs Method MUTAG Mutagenicity NCI1 IMDB-BINARY ENZYMES PROTEINS NCI109 DHFR BZR DD PGExplainer 18.284 7.802 -0.817 14.082 5.064 13.350 6.788 0.820 0.374 25.019 DeepLIFT 30.168 19.742 12.179 4.008 9.869 12.790 10.416 8.042 1.576 -52.911 GNNExpaliner 1.076 5.549 4.358 14.870 10.244 15.742 1.931 2.770 8.243 29.511 GIN GraphLime 41.270 11.882 -5.028 -4.118 39.576 30.368 7.380 -1.658 -2.060 47.270 GradCAM 12.251 16.283 3....",
+   "[body] ...57 48.297 39.052 62.700 54.132 55.280 75.923 96.111 V-A Experimental Setup Datasets: We evaluate our method on several standard graph classification datasets, including MUTAG [ 53 ] , Mutagenicity [ 54 ] , NCI1 [ 55 ] , IMDB-BINARY [ 4 ] , ENZYMES [ 6 ] , PROTEINS [ 56 ] , NCI109 [ 57 ] , DHFR [ 7 ] , BZR [ 25 ] , and DD [ 5 ] . Table II lists the basic information of datasets. TABLE II: Dataset Information. Datasets Graphs Avg. Nodes Avg. Edges MUTAG 188 17.93 19.79 Mutagenicity 4337 30.32 30.77 NCI1 4110 29.87 32.30 PROTEINS 1113 39.06 72.82 IMDB-BINARY 1000 19.77 96.53 NCI109 4127 29.68 32.13 DHFR 756 42.43 44.54 BZR 405 35.75 38.36 DD 1178 284.32 7..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:61",
+  "page": "arxiv:2607.21381v1",
+  "subject": "SeeExplainer",
+  "object": "Graph Isomorphism Networks",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SeeExplainer explains Graph Isomorphism Networks (GIN).",
+  "contexts": [
+   "[body] ....335 \u00b1 0.100 PROTEINS 4 128 0.732 \u00b1 0.044 3 128 0.734 \u00b1 0.037 NCI109 4 64 0.766 \u00b1 0.024 3 32 0.727 \u00b1 0.030 DHFR 4 64 0.803 \u00b1 0.059 3 128 0.734 \u00b1 0.074 BZR 4 32 0.840 \u00b1 0.023 5 128 0.852 \u00b1 0.021 DD 1 128 0.727 \u00b1 0.032 3 128 0.735 \u00b1 0.029 Experimental Settings: In our evaluation, we consider two variants of GNNs, namely Graph Isomorphism Networks (GIN) [ 27 ] and Graph Convolutional Networks (GCN) [ 26 ] . For the training of these GNNs, we use grid search to adjust the hyperparameters and find the best combination. We set the epochs to 100 100 , the batch size to 128 128 , the learning rate to 0.01 0.01 , the learning rate decay factor to 0.5 0.5 , and..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:62",
+  "page": "arxiv:2607.21381v1",
+  "subject": "SeeExplainer",
+  "object": "Graph Convolutional Networks",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SeeExplainer explains Graph Convolutional Networks (GCN).",
+  "contexts": [
+   "[body] ...128 0.734 \u00b1 0.037 NCI109 4 64 0.766 \u00b1 0.024 3 32 0.727 \u00b1 0.030 DHFR 4 64 0.803 \u00b1 0.059 3 128 0.734 \u00b1 0.074 BZR 4 32 0.840 \u00b1 0.023 5 128 0.852 \u00b1 0.021 DD 1 128 0.727 \u00b1 0.032 3 128 0.735 \u00b1 0.029 Experimental Settings: In our evaluation, we consider two variants of GNNs, namely Graph Isomorphism Networks (GIN) [ 27 ] and Graph Convolutional Networks (GCN) [ 26 ] . For the training of these GNNs, we use grid search to adjust the hyperparameters and find the best combination. We set the epochs to 100 100 , the batch size to 128 128 , the learning rate to 0.01 0.01 , the learning rate decay factor to 0.5 0.5 , and the learning rate decay step size to 50 50 ...."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:63",
+  "page": "arxiv:2607.21381v1",
+  "subject": "SeeExplainer",
+  "object": "GNNExplainer",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SeeExplainer outperforms GNNExplainer on graph explanation fidelity.",
+  "contexts": [
+   "[body] ...cludes CUDA 11.3, Python 3.9.18, Pytorch 1.11.0, and NetworkX 3.2.1. The detailed information of the model is shown in Table III . Baselines. We extensively compared our method with the most widely used and the state-of-the-art explain algorithms. The comparison methods including PGExplainer [ 20 ] , DeepLIFT [ 58 ] , GNNExplainer [ 10 ] , GraphLime [ 16 ] , GradCAM [ 59 ] , and Eig-Search [ 17 ] . Metrics. In this paper, we employ standard metrics of fidelity as evaluation criteria, where higher values indicate superior performance. F \u200b i \u200b d \u200b e \u200b l \u200b i \u200b t \u200b y + Fidelity^{+} measures the change in model prediction when the explanatory subgraphs G ~..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:64",
+  "page": "arxiv:2607.21381v1",
+  "subject": "SeeExplainer",
+  "object": "GraphLime",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SeeExplainer outperforms GraphLime on graph explanation fidelity.",
+  "contexts": [
+   "[body] .... GNNs Method MUTAG Mutagenicity NCI1 IMDB-BINARY ENZYMES PROTEINS NCI109 DHFR BZR DD PGExplainer 18.284 7.802 -0.817 14.082 5.064 13.350 6.788 0.820 0.374 25.019 DeepLIFT 30.168 19.742 12.179 4.008 9.869 12.790 10.416 8.042 1.576 -52.911 GNNExpaliner 1.076 5.549 4.358 14.870 10.244 15.742 1.931 2.770 8.243 29.511 GIN GraphLime 41.270 11.882 -5.028 -4.118 39.576 30.368 7.380 -1.658 -2.060 47.270 GradCAM 12.251 16.283 3.512 -4.038 0.023 -5.163 5.253 7.816 15.741 69.570 Eig-Search 13.409 55.563 41.870 11.861 26.591 17.124 52.972 62.048 42.258 72.127 SeeExplainer 64.193 78.639 69.842 53.566 69.190 58.437 68.281 76.214 54.947 95.681 PGExplainer 20.262 1.33...",
+   "[body] ...27 SeeExplainer 64.193 78.639 69.842 53.566 69.190 58.437 68.281 76.214 54.947 95.681 PGExplainer 20.262 1.331 3.958 10.465 1.176 11.819 -0.289 -4.426 8.045 13.639 DeepLIFT 1.922 12.625 3.767 11.048 6.267 13.723 2.946 4.224 -0.683 20.700 GNNExpaliner 1.958 12.720 3.618 11.130 6.028 13.700 3.006 4.240 -0.206 20.054 GCN GraphLime 38.920 2.638 2.868 -10.792 15.704 25.400 -6.772 -9.316 -3.514 33.710 GradCAM 2.926 18.683 9.068 3.765 -0.910 3.562 5.165 20.479 22.289 66.919 Eig-Search 6.746 57.726 57.582 24.091 18.469 28.485 36.753 54.393 66.141 88.519 SeeExplainer 63.305 87.700 82.457 48.297 39.052 62.700 54.132 55.280 75.923 96.111 V-A Experimental Setup Da...",
+   "[body] ...on 3.9.18, Pytorch 1.11.0, and NetworkX 3.2.1. The detailed information of the model is shown in Table III . Baselines. We extensively compared our method with the most widely used and the state-of-the-art explain algorithms. The comparison methods including PGExplainer [ 20 ] , DeepLIFT [ 58 ] , GNNExplainer [ 10 ] , GraphLime [ 16 ] , GradCAM [ 59 ] , and Eig-Search [ 17 ] . Metrics. In this paper, we employ standard metrics of fidelity as evaluation criteria, where higher values indicate superior performance. F \u200b i \u200b d \u200b e \u200b l \u200b i \u200b t \u200b y + Fidelity^{+} measures the change in model prediction when the explanatory subgraphs G ~ \\tilde{G} is removed,..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:65",
+  "page": "arxiv:2607.21384v1",
+  "subject": "EEG foundation model",
+  "object": "CHB-MIT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The EEG foundation model is fine-tuned and evaluated on the CHB-MIT seizure detection benchmark.",
+  "contexts": [
+   "[body] ...vative techniques, such as masked modeling, cross-view contrastive alignment, and temporal consistency losses. These methods are designed to create rich, seizure-relevant representations without requiring labeled data. To assess the efficacy and generalization of our pretrained model, we fine-tuned it on the canonical CHB-MIT seizure detection benchmark and additional seizure detection datasets, and conducted extensive experiments comparing different model variants. On the standard CHB-MIT split, our best single model achieved an AUROC of 0.874, and an ensemble variant reached 0.878 AUROC, representing state-of-the-art performance on this benchmark. In...",
+   "[body] ...ant representations without requiring labeled data. To assess the efficacy and generalization of our pretrained model, we fine-tuned it on the canonical CHB-MIT seizure detection benchmark and additional seizure detection datasets, and conducted extensive experiments comparing different model variants. On the standard CHB-MIT split, our best single model achieved an AUROC of 0.874, and an ensemble variant reached 0.878 AUROC, representing state-of-the-art performance on this benchmark. In addition to standard train-test splits, we evaluated performance under a leave-one-subject-out (LOSO) protocol, which is rarely reported in prior EEG seizure modeling...",
+   "[body] ...hlight that evaluation protocols are heterogeneous and optimistic, with few models adopting strict LOSO as default [ 7 ] . Unlike prior unimodal EFMs such as CBraMod and BrainRVQ, our model jointly aligns raw EEG, time-frequency, and text within a single LOSO-validated backbone. III Unified EEG Pipeline We validate on CHB-MIT [ 4 ] , SEED-DV [ 23 ] , and TUH EEG [ 33 ] . All recordings are segmented into non-overlapping 15-second windows, resampled to 256 Hz (3,840 samples/channel), bandpass filtered (0.5\u201370 Hz) with optional 50/60 Hz notch filtering, and per-channel z-score normalized. CWT scalograms are computed using a Complex Morlet wavelet over 0...."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:66",
+  "page": "arxiv:2607.21384v1",
+  "subject": "EEG foundation model",
+  "object": "SEED-DV",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The EEG foundation model is evaluated on SEED-DV for emotion recognition.",
+  "contexts": [
+   "[body] ...uation protocols are heterogeneous and optimistic, with few models adopting strict LOSO as default [ 7 ] . Unlike prior unimodal EFMs such as CBraMod and BrainRVQ, our model jointly aligns raw EEG, time-frequency, and text within a single LOSO-validated backbone. III Unified EEG Pipeline We validate on CHB-MIT [ 4 ] , SEED-DV [ 23 ] , and TUH EEG [ 33 ] . All recordings are segmented into non-overlapping 15-second windows, resampled to 256 Hz (3,840 samples/channel), bandpass filtered (0.5\u201370 Hz) with optional 50/60 Hz notch filtering, and per-channel z-score normalized. CWT scalograms are computed using a Complex Morlet wavelet over 0.5\u201370 Hz with F =...",
+   "[body] ...er 0.5\u201370 Hz with F = 64 F=64 logarithmically spaced frequency bins, yielding \ud835\udc17 tf \u2208 \u211d C \u00d7 F \u00d7 T \\mathbf{X}_{\\text{tf}}\\in\\mathbb{R}^{C\\times F\\times T} . Channel names are harmonized and dataset-specific orderings enforced to enable a single model to ingest all three datasets. CHB-MIT (23 ch, 256 Hz, seizure labels), SEED-DV (62 ch, 200 Hz, affect labels), and TUH EEG (19 ch, variable Hz, unlabeled) are each segmented into non-overlapping 15-second windows at 256 Hz, bandpass filtered (0.5\u201370 Hz), per-channel z-score normalized, and paired with CWT scalograms ( F = 64 F=64 , 0.5\u201370 Hz). IV Model Architecture Figure 1: Architecture of the proposed mult..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:67",
+  "page": "arxiv:2607.21384v1",
+  "subject": "EEG foundation model",
+  "object": "TUH EEG",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The EEG foundation model is evaluated on TUH EEG dataset.",
+  "contexts": [
+   "[body] ...heterogeneous and optimistic, with few models adopting strict LOSO as default [ 7 ] . Unlike prior unimodal EFMs such as CBraMod and BrainRVQ, our model jointly aligns raw EEG, time-frequency, and text within a single LOSO-validated backbone. III Unified EEG Pipeline We validate on CHB-MIT [ 4 ] , SEED-DV [ 23 ] , and TUH EEG [ 33 ] . All recordings are segmented into non-overlapping 15-second windows, resampled to 256 Hz (3,840 samples/channel), bandpass filtered (0.5\u201370 Hz) with optional 50/60 Hz notch filtering, and per-channel z-score normalized. CWT scalograms are computed using a Complex Morlet wavelet over 0.5\u201370 Hz with F = 64 F=64 logarithmica...",
+   "[body] ...y spaced frequency bins, yielding \ud835\udc17 tf \u2208 \u211d C \u00d7 F \u00d7 T \\mathbf{X}_{\\text{tf}}\\in\\mathbb{R}^{C\\times F\\times T} . Channel names are harmonized and dataset-specific orderings enforced to enable a single model to ingest all three datasets. CHB-MIT (23 ch, 256 Hz, seizure labels), SEED-DV (62 ch, 200 Hz, affect labels), and TUH EEG (19 ch, variable Hz, unlabeled) are each segmented into non-overlapping 15-second windows at 256 Hz, bandpass filtered (0.5\u201370 Hz), per-channel z-score normalized, and paired with CWT scalograms ( F = 64 F=64 , 0.5\u201370 Hz). IV Model Architecture Figure 1: Architecture of the proposed multimodal EEG foundation model. (A) Input: raw..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:68",
+  "page": "arxiv:2607.21384v1",
+  "subject": "EEG foundation model",
+  "object": "Mamba",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The EEG foundation model uses a Mamba architecture for raw signal encoding.",
+  "contexts": [
+   "[body] ...ss different datasets or in various situations. However, recent studies in foundation models and self-supervised learning suggest that an adaptable EEG backbone could support a range of EEG related tasks. In this study, we have developed a multimodal EEG foundation model that combines a raw signal encoder based on the Mamba architecture, a Vision Transformer (ViT)-style encoder for time-frequency data, and a lightweight encoder for text, all within a shared embedding space. The pretraining process relies on several innovative techniques, such as masked modeling, cross-view contrastive alignment, and temporal consistency losses. These methods are design...",
+   "[body] ...erlapping 15-second windows at 256 Hz, bandpass filtered (0.5\u201370 Hz), per-channel z-score normalized, and paired with CWT scalograms ( F = 64 F=64 , 0.5\u201370 Hz). IV Model Architecture Figure 1: Architecture of the proposed multimodal EEG foundation model. (A) Input: raw EEG windows and CWT scalograms. (B) Dual Encoder: Mamba-based raw encoder, TF Transformer encoder, and retrieval-augmented text branch, each projecting to 256-D. (C) Fusion and pretraining objectives. For downstream seizure detection, only channel adapters and classification head (7.5% of parameters) are fine-tuned. The model learns a shared representation from two informative views of e...",
+   "[body] ...ith the EEG embeddings via a contrastive objective. Raw windows are represented as \ud835\udc17 \u200b raw \u2208 \u211d C \u00d7 T \\mathbf{X}{\\text{raw}}\\in\\mathbb{R}^{C\\times T} with T = 3840 T=3840 . A 1D convolutional patch embedding with patch size 64 yields N = T / 64 = 60 N=T/64=60 tokens per window. The resulting tokens are passed through a Mamba backbone that generates token-level features z \u200b raw \u2208 \u211d B \u00d7 N \u00d7 d z{\\text{raw}}\\in\\mathbb{R}^{B\\times N\\times d} and a pooled embedding e raw \u2208 \u211d B \u00d7 d e_{\\text{raw}}\\in\\mathbb{R}^{B\\times d} with d = 256 d=256 . Time\u2013frequency windows are stored as \ud835\udc17 \u200b tf \u2208 \u211d C \u00d7 F \u00d7 T \\mathbf{X}{\\text{tf}}\\in\\mathbb{R}^{C\\times F\\times T} , compu..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:69",
+  "page": "arxiv:2607.21384v1",
+  "subject": "EEG foundation model",
+  "object": "Vision Transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The EEG foundation model uses Vision Transformer (ViT) encoder for time-frequency data.",
+  "contexts": [
+   "[body] ...or in various situations. However, recent studies in foundation models and self-supervised learning suggest that an adaptable EEG backbone could support a range of EEG related tasks. In this study, we have developed a multimodal EEG foundation model that combines a raw signal encoder based on the Mamba architecture, a Vision Transformer (ViT)-style encoder for time-frequency data, and a lightweight encoder for text, all within a shared embedding space. The pretraining process relies on several innovative techniques, such as masked modeling, cross-view contrastive alignment, and temporal consistency losses. These methods are designed to create rich, sei...",
+   "[abstract] ...or in various situations. However, recent studies in foundation models and self-supervised learning suggest that an adaptable EEG backbone could support a range of EEG related tasks. In this study, we have developed a multimodal EEG foundation model that combines a raw signal encoder based on the Mamba architecture, a Vision Transformer (ViT)-style encoder for time-frequency data, and a lightweight encoder for text, all within a shared embedding space. The pretraining process relies on several innovative techniques, such as masked modeling, cross-view contrastive alignment, and temporal consistency losses. These methods are designed to create rich, sei..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:70",
+  "page": "arxiv:2607.21384v1",
+  "subject": "EEG foundation model",
+  "object": "contrastive learning",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The EEG foundation model uses cross-view contrastive alignment for multimodal pretraining.",
+  "contexts": [
+   "[body] ...EG Foundation Models and Multimodal Approaches Model / Category Modalities &amp; Alignment Evaluation (Subject-Level) Notes Citations Early EEG-FMs (surveyed) Raw EEG only; sequence/patch transformers Mixed protocols; rarely LOSO/N-LOSO Limited and heterogeneous evaluation protocols [ 12 , 32 ] LEAD Raw EEG; AD-guided contrastive learning LOSO evaluation at subject level Dementia-specific foundation model [ 24 ] BraMod Raw EEG; criss-cross spatial/temporal modeling Cross-dataset evaluation; not text-aligned Designed for broad BCI tasks [ 12 ] Multimodal physiological FMs (non EEG-text) Multiple physiological signals; cross-modal reconstruction Patient-..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:71",
+  "page": "arxiv:2607.21391v1",
+  "subject": "VISC analysis",
+  "object": "generalized additive models",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VISC analysis uses generalized additive models (GAM/GAMM) for formant trajectory modeling.",
+  "contexts": [
+   "[body] ...e the nature of formant change. Research on VISC has been carried out predominantly on laboratory-controlled speech. Laboratory speech offers high acoustic quality and tight experimental control. On the other hand, laboratory speech can be very different from natural spontaneous speech. More recent studies made use of Generalized Additive Mixed Models (GAMM Wood, 2017 ) to analyse formant trajectories in connected speech or spontaneous speech. GAMMs are particularly well-suited for modelling non-linear time series data, as they can model entire trajectories while at the same time taking into account the variation contributed by random-effect factors su...",
+   "[abstract] ...This study investigates vowel-inherent spectral change (VISC) in spontaneous conversational Mandarin. Using the generalized additive model and word embeddings from distributional semantics, we show that, when controlling for variables such as vowel duration, gender, speaker identity, co-articulation, vowel identity, and utterance position, vowel formant trajectory dynamics have word-specific components that are tied to their meaning in context: The..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:72",
+  "page": "arxiv:2607.21391v1",
+  "subject": "VISC analysis",
+  "object": "word embeddings",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VISC analysis uses word embeddings from distributional semantics to predict formant trajectories.",
+  "contexts": [
+   "[abstract] ...This study investigates vowel-inherent spectral change (VISC) in spontaneous conversational Mandarin. Using the generalized additive model and word embeddings from distributional semantics, we show that, when controlling for variables such as vowel duration, gender, speaker identity, co-articulation, vowel identity, and utterance position, vowel formant trajectory dynamics have word-specific components that are tied to their meaning in context: The F1 and F2 trajectories of word..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:73",
+  "page": "arxiv:2607.21400v1",
+  "subject": "VoLN-MLLM",
+  "object": "VoLN-UAV",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "VoLN-MLLM is evaluated on the VoLN-UAV benchmark with 7,210 episodes.",
+  "contexts": [
+   "[body] ...te. We instantiate VoLN in aerial navigation, where an Unmanned Aerial Vehicle (UAV) operates in continuous 3D space under substantial viewpoint and scale variation and flight-dynamics constraints. This setting stresses cross-view re-identification, cue selection, and closed-loop control simultaneously. Our benchmark, VoLN-UAV, spans diverse simulated environments and embeds the cue-discrimination problem in the scene itself: active beacons provide route-relevant guidance, while passive beacons with similar visual forms provide structured distractors. Evaluation measures goal convergence, trajectory quality, and closed-loop reliability. To provide an i...",
+   "[body] ...that are relevant to the current task. For evaluation, each task instance associates \ud835\udcb1 \\mathcal{V} with a goal region G \u200b ( \ud835\udcb1 ) \u2282 \ud835\udcae G(\\mathcal{V})\\subset\\mathcal{S} . Starting from a designated initial pose, the agent has at most T T steps and succeeds by issuing the stop action inside G \u200b ( \ud835\udcb1 ) G(\\mathcal{V}) . 4 The VoLN-UAV Benchmark 4.1 Simulation Environments VoLN-UAV is built with Unreal Engine and Microsoft AirSim, which provide high-fidelity rendering and UAV simulation across the benchmark environments. The environment pool contains 17 distinct environments drawn from selected scenes adapted from existing open-source aerial VLN benchmarks, inc...",
+   "[body] ...uation, each task instance associates \ud835\udcb1 \\mathcal{V} with a goal region G \u200b ( \ud835\udcb1 ) \u2282 \ud835\udcae G(\\mathcal{V})\\subset\\mathcal{S} . Starting from a designated initial pose, the agent has at most T T steps and succeeds by issuing the stop action inside G \u200b ( \ud835\udcb1 ) G(\\mathcal{V}) . 4 The VoLN-UAV Benchmark 4.1 Simulation Environments VoLN-UAV is built with Unreal Engine and Microsoft AirSim, which provide high-fidelity rendering and UAV simulation across the benchmark environments. The environment pool contains 17 distinct environments drawn from selected scenes adapted from existing open-source aerial VLN benchmarks, including AerialVLN Liu et al. ( 2023 ) and OpenUA..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:74",
+  "page": "arxiv:2607.21400v1",
+  "subject": "VoLN-MLLM",
+  "object": "self-supervised vision features",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VoLN-MLLM aligns self-supervised visual features with semantic space.",
+  "contexts": [
+   "[body] ...route-relevant guidance, while passive beacons with similar visual forms provide structured distractors. Evaluation measures goal convergence, trajectory quality, and closed-loop reliability. To provide an initial solution, we introduce VoLN-MLLM, a two-stage visual\u2013semantic planning framework. The first stage aligns self-supervised visual features with a structured semantic space, providing comparable representations for observations, goal views, and visible scene cues. The second stage integrates the aligned visual evidence with goal views and proprioception to generate short-horizon UAV trajectories in closed loop. The resulting experiments provide...",
+   "[abstract] ...pret, and select online. We instantiate VoLN for aerial navigation through VoLN-UAV, a 7,210-episode benchmark that combines long-horizon goal-directed flight, continuous 3D motion, large viewpoint changes, and context-dependent beacon selection. We further provide VoLN-MLLM as an initial reference baseline. It aligns self-supervised visual features with a structured semantic space and predicts short-horizon waypoint segments from observation history, goal views, retrieved visual--semantic tokens, and proprioception. On the five-environment Test-Unseen split, it obtains success rates of 7.4%, 4.5%, and 1.8% on Easy, Normal, and Hard episodes, respectiv..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:75",
+  "page": "arxiv:2607.21400v1",
+  "subject": "VoLN-MLLM",
+  "object": "Unreal Engine",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VoLN-UAV benchmark is built with Unreal Engine and Microsoft AirSim.",
+  "contexts": [
+   "[body] ...nce associates \ud835\udcb1 \\mathcal{V} with a goal region G \u200b ( \ud835\udcb1 ) \u2282 \ud835\udcae G(\\mathcal{V})\\subset\\mathcal{S} . Starting from a designated initial pose, the agent has at most T T steps and succeeds by issuing the stop action inside G \u200b ( \ud835\udcb1 ) G(\\mathcal{V}) . 4 The VoLN-UAV Benchmark 4.1 Simulation Environments VoLN-UAV is built with Unreal Engine and Microsoft AirSim, which provide high-fidelity rendering and UAV simulation across the benchmark environments. The environment pool contains 17 distinct environments drawn from selected scenes adapted from existing open-source aerial VLN benchmarks, including AerialVLN Liu et al. ( 2023 ) and OpenUAV Wang et al. ( 2025 )..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:76",
+  "page": "arxiv:2607.21401v1",
+  "subject": "ResponseGuard",
+  "object": "HarmBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ResponseGuard is evaluated on HarmBench for multimodal harmfulness detection.",
+  "contexts": [
+   "[body] ...armful , y y 8: end if 9: end while 10: return unharmful , y y 4 Experimental Setup Benchmarks. We evaluate on the public multimodal suite released with a recent reasoning guard (Liu et al. 2025b ) , which reports both a response harmfulness track and a prompt harmfulness track. The response track has five text cells, HarmBench-Response (HBr), Safe RLHF (SRL), BeaverTails (BT), XSTest-Response (XSh), and WildGuard-Response (WGr), together with the vision preference set as an image cell (SPA-VL). The prompt track has ToxicChat (TC), HarmBench-Prompt (HBp), OpenAI Moderation (OAI), Aegis (Aeg), SimpleSafetyTests (SST), and WildGuard-Prompt (WGp), togethe...",
+   "[body] ...a response harmfulness track and a prompt harmfulness track. The response track has five text cells, HarmBench-Response (HBr), Safe RLHF (SRL), BeaverTails (BT), XSTest-Response (XSh), and WildGuard-Response (WGr), together with the vision preference set as an image cell (SPA-VL). The prompt track has ToxicChat (TC), HarmBench-Prompt (HBp), OpenAI Moderation (OAI), Aegis (Aeg), SimpleSafetyTests (SST), and WildGuard-Prompt (WGp), together with two image cells, harmful images (HarmImg) and the vision preference prompt split (SPA-VL) (Lin and others 2023 ; Mazeika and others 2024 ; Markov and others 2023 ; Ghosh and others 2024 ; Vidgen and others 2023..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:77",
+  "page": "arxiv:2607.21401v1",
+  "subject": "ResponseGuard",
+  "object": "WildGuard",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ResponseGuard is evaluated on WildGuard benchmarks.",
+  "contexts": [
+   "[body] ...hmarks. We evaluate on the public multimodal suite released with a recent reasoning guard (Liu et al. 2025b ) , which reports both a response harmfulness track and a prompt harmfulness track. The response track has five text cells, HarmBench-Response (HBr), Safe RLHF (SRL), BeaverTails (BT), XSTest-Response (XSh), and WildGuard-Response (WGr), together with the vision preference set as an image cell (SPA-VL). The prompt track has ToxicChat (TC), HarmBench-Prompt (HBp), OpenAI Moderation (OAI), Aegis (Aeg), SimpleSafetyTests (SST), and WildGuard-Prompt (WGp), together with two image cells, harmful images (HarmImg) and the vision preference prompt split...",
+   "[body] ...ext cells, HarmBench-Response (HBr), Safe RLHF (SRL), BeaverTails (BT), XSTest-Response (XSh), and WildGuard-Response (WGr), together with the vision preference set as an image cell (SPA-VL). The prompt track has ToxicChat (TC), HarmBench-Prompt (HBp), OpenAI Moderation (OAI), Aegis (Aeg), SimpleSafetyTests (SST), and WildGuard-Prompt (WGp), together with two image cells, harmful images (HarmImg) and the vision preference prompt split (SPA-VL) (Lin and others 2023 ; Mazeika and others 2024 ; Markov and others 2023 ; Ghosh and others 2024 ; Vidgen and others 2023 ; Han and others 2024 ; Ji and others 2023 ; Dai and others 2023 ; R\u00f6ttger and others 2024..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:78",
+  "page": "arxiv:2607.21401v1",
+  "subject": "ResponseGuard",
+  "object": "vision-language embeddings",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ResponseGuard uses vision-language embeddings for safety classification.",
+  "contexts": [
+   "[body] ...age, and text-image inputs. We keep the inputs and the gold labels and discard the reasoning chains, since our guard never generates one. The reasoning guard and its Eco variant are trained on the same corpus. The two reference guards are used off the shelf. Models. ResponseGuard-2B is our primary guard, built on a 2B vision-language embedding backbone (Li et al. 2026 ) . We add two further label-only guards built on the SmolVLM backbones (Marafioti and others 2025 ) , SmolGuard-2B and SmolGuard-500M, to show that the recipe is not tied to one backbone. Our reasoning baseline is a 3B chain-of-thought vision-language guard (Liu et al. 2025b ) , a recent..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:79",
+  "page": "arxiv:2607.21401v1",
+  "subject": "ResponseGuard",
+  "object": "SmolVLM",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ResponseGuard is built on SmolVLM backbones.",
+  "contexts": [
+   "[body] ...e our guard never generates one. The reasoning guard and its Eco variant are trained on the same corpus. The two reference guards are used off the shelf. Models. ResponseGuard-2B is our primary guard, built on a 2B vision-language embedding backbone (Li et al. 2026 ) . We add two further label-only guards built on the SmolVLM backbones (Marafioti and others 2025 ) , SmolGuard-2B and SmolGuard-500M, to show that the recipe is not tied to one backbone. Our reasoning baseline is a 3B chain-of-thought vision-language guard (Liu et al. 2025b ) , a recent open guard of its kind on this suite. We also report its efficiency-tuned Eco variant (Liu et al. 2025b..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:80",
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "object": "TUEV",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MSBraM is evaluated on TUEV for EEG event-type classification.",
+  "contexts": [
+   "[body] ...and Lu, 2017 ) , and gait prediction (He et al. , 2018 ) . Early studies primarily relied on traditional machine learning methods, which required hand-crafted feature engineering based on expert kn [...] Experiments and Results Tasks Datasets Rate (Hz) # Channels # Samples Duration (s) Target Event Type Classification TUEV (Obeid and Picone, 2016 ) 250 23 112,237 5 6-class Abnormal Detection TUAB (Obeid and Picone, 2016 ) 250 23 409,083 10 2-class Motor Imagery Classifcation BCIC-2a (Tangermann et al. , 2012 ) 250 22 5,088 4 4-class PhysioNet-MI (Schalk et al. , 2004 ) 160 64 9,837 4 4-class Emotion Recognition SEED-V (Liu et al. , 2021 ) 1,000 62 117,...",
+   "[body] ...tatistics include sampling rate, number of channels, sample sizes, sample duration, and target. Figure 3. Radar plots comparing MSBraM (red) with other latest foundation models across 10 tasks and 12 datasets in terms of balanced accuracy for classification tasks and Pearson\u2019s correlation for regression tasks. Methods TUEV TUAB Balanced Accuracy Cohen\u2019s Kappa Weighted F1 Balanced Accuracy AUCPR AUROC SPaRCNet .4161 \u00b1 \\pm .0262 .4233 \u00b1 \\pm .0181 .7024 \u00b1 \\pm .0104 .7896 \u00b1 \\pm .0018 .8414 \u00b1 \\pm .0018 .8676 \u00b1 \\pm .0012 ContraWR .4384 \u00b1 \\pm .0349 .3912 \u00b1 \\pm .0237 .6893 \u00b1 \\pm .0136 .7746 \u00b1 \\pm .0041 .8421 \u00b1 \\pm .0104 .8456 \u00b1 \\pm .0074 CNN-Transformer .4087...",
+   "[body] ...168 .7881 \u00b1 \\pm .0076 .8002 \u00b1 \\pm .0036 .8888 \u00b1 \\pm .0073 .8847 \u00b1 \\pm .0080 MSBraM .6682 \u00b1 \\pm .0198 .6785 \u00b1 \\pm .0106 .8399 \u00b1 \\pm .0054 .8317 \u00b1 \\pm .0051 .9034 \u00b1 \\pm .0052 .9085 \u00b1 \\pm .0024 Table 2. Performance comparison between MSBraM and other supervised and self-supervised models on the event type classification (TUEV) and the abnormal detection (TUAB). Methods BCIC-2a PhysioNet-MI Balanced Accuracy Cohen\u2019s Kappa Weighted F1 Balanced Accuracy Cohen\u2019s Kappa Weighted F1 SPaRCNet .4635 \u00b1 \\pm .0117 .2847 \u00b1 \\pm .0147 .4432 \u00b1 \\pm .0126 .5932 \u00b1 \\pm .0152 .4564 \u00b1 \\pm .0234 .5937 \u00b1 \\pm .0147 ContraWR .4678 \u00b1 \\pm .0125 .2905 \u00b1 \\pm .0160 .4413 \u00b1 \\pm .0142 .5..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:81",
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "object": "TUAB",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MSBraM is evaluated on TUAB for EEG abnormal detection.",
+  "contexts": [
+   "[body] ...imarily relied on traditional machine learning methods, which required hand-crafted feature engineering based on expert kn [...] Experiments and Results Tasks Datasets Rate (Hz) # Channels # Samples Duration (s) Target Event Type Classification TUEV (Obeid and Picone, 2016 ) 250 23 112,237 5 6-class Abnormal Detection TUAB (Obeid and Picone, 2016 ) 250 23 409,083 10 2-class Motor Imagery Classifcation BCIC-2a (Tangermann et al. , 2012 ) 250 22 5,088 4 4-class PhysioNet-MI (Schalk et al. , 2004 ) 160 64 9,837 4 4-class Emotion Recognition SEED-V (Liu et al. , 2021 ) 1,000 62 117,744 1 5-class FACED (Chen et al. , 2023 ) 250 32 10,332 10 9-class Error Re...",
+   "[body] ...tics include sampling rate, number of channels, sample sizes, sample duration, and target. Figure 3. Radar plots comparing MSBraM (red) with other latest foundation models across 10 tasks and 12 datasets in terms of balanced accuracy for classification tasks and Pearson\u2019s correlation for regression tasks. Methods TUEV TUAB Balanced Accuracy Cohen\u2019s Kappa Weighted F1 Balanced Accuracy AUCPR AUROC SPaRCNet .4161 \u00b1 \\pm .0262 .4233 \u00b1 \\pm .0181 .7024 \u00b1 \\pm .0104 .7896 \u00b1 \\pm .0018 .8414 \u00b1 \\pm .0018 .8676 \u00b1 \\pm .0012 ContraWR .4384 \u00b1 \\pm .0349 .3912 \u00b1 \\pm .0237 .6893 \u00b1 \\pm .0136 .7746 \u00b1 \\pm .0041 .8421 \u00b1 \\pm .0104 .8456 \u00b1 \\pm .0074 CNN-Transformer .4087 \u00b1 \\pm...",
+   "[body] ....0036 .8888 \u00b1 \\pm .0073 .8847 \u00b1 \\pm .0080 MSBraM .6682 \u00b1 \\pm .0198 .6785 \u00b1 \\pm .0106 .8399 \u00b1 \\pm .0054 .8317 \u00b1 \\pm .0051 .9034 \u00b1 \\pm .0052 .9085 \u00b1 \\pm .0024 Table 2. Performance comparison between MSBraM and other supervised and self-supervised models on the event type classification (TUEV) and the abnormal detection (TUAB). Methods BCIC-2a PhysioNet-MI Balanced Accuracy Cohen\u2019s Kappa Weighted F1 Balanced Accuracy Cohen\u2019s Kappa Weighted F1 SPaRCNet .4635 \u00b1 \\pm .0117 .2847 \u00b1 \\pm .0147 .4432 \u00b1 \\pm .0126 .5932 \u00b1 \\pm .0152 .4564 \u00b1 \\pm .0234 .5937 \u00b1 \\pm .0147 ContraWR .4678 \u00b1 \\pm .0125 .2905 \u00b1 \\pm .0160 .4413 \u00b1 \\pm .0142 .5892 \u00b1 \\pm .0133 .4527 \u00b1 \\pm .0248..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:82",
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "object": "BCIC-2a",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MSBraM is evaluated on BCIC-2a for motor imagery classification.",
+  "contexts": [
+   "[body] ...eature engineering based on expert kn [...] Experiments and Results Tasks Datasets Rate (Hz) # Channels # Samples Duration (s) Target Event Type Classification TUEV (Obeid and Picone, 2016 ) 250 23 112,237 5 6-class Abnormal Detection TUAB (Obeid and Picone, 2016 ) 250 23 409,083 10 2-class Motor Imagery Classifcation BCIC-2a (Tangermann et al. , 2012 ) 250 22 5,088 4 4-class PhysioNet-MI (Schalk et al. , 2004 ) 160 64 9,837 4 4-class Emotion Recognition SEED-V (Liu et al. , 2021 ) 1,000 62 117,744 1 5-class FACED (Chen et al. , 2023 ) 250 32 10,332 10 9-class Error Related Negativity KaggleERN (Margaux et al. , 2012 ) 200 56 8,840 2 2-class Seizure De...",
+   "[body] ...pm .0073 .8847 \u00b1 \\pm .0080 MSBraM .6682 \u00b1 \\pm .0198 .6785 \u00b1 \\pm .0106 .8399 \u00b1 \\pm .0054 .8317 \u00b1 \\pm .0051 .9034 \u00b1 \\pm .0052 .9085 \u00b1 \\pm .0024 Table 2. Performance comparison between MSBraM and other supervised and self-supervised models on the event type classification (TUEV) and the abnormal detection (TUAB). Methods BCIC-2a PhysioNet-MI Balanced Accuracy Cohen\u2019s Kappa Weighted F1 Balanced Accuracy Cohen\u2019s Kappa Weighted F1 SPaRCNet .4635 \u00b1 \\pm .0117 .2847 \u00b1 \\pm .0147 .4432 \u00b1 \\pm .0126 .5932 \u00b1 \\pm .0152 .4564 \u00b1 \\pm .0234 .5937 \u00b1 \\pm .0147 ContraWR .4678 \u00b1 \\pm .0125 .2905 \u00b1 \\pm .0160 .4413 \u00b1 \\pm .0142 .5892 \u00b1 \\pm .0133 .4527 \u00b1 \\pm .0248 .5918 \u00b1 \\pm .01...",
+   "[body] ...4 .4984 \u00b1 \\pm .0085 .6417 \u00b1 \\pm .0091 .5222 \u00b1 \\pm .0169 .6427 \u00b1 \\pm .0100 MSBraM .5770 \u00b1 \\pm .0070 .4360 \u00b1 \\pm .0093 .5673 \u00b1 \\pm .0061 .6608 \u00b1 \\pm .0040 .5477 \u00b1 \\pm .0054 .6615 \u00b1 \\pm .0040 Table 3. Performance comparison between MSBraM and supervised and self-supervised models on the motor imagery classification task (BCIC-2a and PhysioNet-MI). Methods SEED-VIG MoBI r R2 Score RMSE \u2193 \\downarrow r R2 Score RMSE \u2193 \\downarrow SPaRCNet .5715 \u00b1 \\pm .0163 .2433 \u00b1 \\pm .0055 .2798 \u00b1 \\pm .0043 .6466 \u00b1 \\pm .0069 .3688 \u00b1 \\pm .0101 .1151 \u00b1 \\pm .0011 ContraWR .5854 \u00b1 \\pm .0142 .2453 \u00b1 \\pm .0062 .2782 \u00b1 \\pm .0056 .1306 \u00b1 \\pm .0085 .0198 \u00b1 \\pm .0031 .1416 \u00b1 \\pm .0001..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:83",
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "object": "CHB-MIT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MSBraM is evaluated on CHB-MIT for seizure detection.",
+  "contexts": [
+   "[body] ...2012 ) 250 22 5,088 4 4-class PhysioNet-MI (Schalk et al. , 2004 ) 160 64 9,837 4 4-class Emotion Recognition SEED-V (Liu et al. , 2021 ) 1,000 62 117,744 1 5-class FACED (Chen et al. , 2023 ) 250 32 10,332 10 9-class Error Related Negativity KaggleERN (Margaux et al. , 2012 ) 200 56 8,840 2 2-class Seizure Detection CHB-MIT (Shoeb, 2009 ) 256 16 320,848 10 2-class Mental Disorder Diagnosis Mumtaz2016 (Mumtaz, 2016 ) 256 19 7,143 5 2-class Mental Stress Detection EEGMAT (Zyma et al. , 2019 ) 500 20 1,707 5 2-class Vigilance Estimation SEED-VIG (Zheng and Lu, 2017 ) 200 17 20,355 8 regression Gait Prediction MoBI (He et al. , 2018 ) 100 60 57,384 2 reg..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:84",
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "object": "vector-quantized reconstruction",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MSBraM uses vector-quantized reconstruction for neural tokenization.",
+  "contexts": [
+   "[body] ...this challenge, we propose MSBraM , a M ulti- S cale self-supervised Bra in foundation M odel designed to learn hierarchical EEG representations. MSBraM follows a two-stage pretraining framework. First, a multi-scale neural tokenizer discretizes raw EEG signals into semantic codes at different temporal resolutions via vector-quantized reconstruction. Second, the model is pretrained to predict masked codes using a curriculum multi-scale masking strategy, progressively integrating fine-grained local patterns with global temporal context. We pretrain MSBraM on over 2,400 hours of EEG data and evaluate it across 10 downstream tasks on 12 public datasets. E...",
+   "[abstract] ...dress this challenge, we propose MSBraM, a Multi-Scale self-supervised Brain foundation Model designed to learn hierarchical EEG representations. MSBraM follows a two-stage pretraining framework. First, a multi-scale neural tokenizer discretizes raw EEG signals into semantic codes at different temporal resolutions via vector-quantized reconstruction. Second, the model is pretrained to predict masked codes using a curriculum multi-scale masking strategy, progressively integrating fine-grained local patterns with global temporal context. We pretrain MSBraM on over 2,400 hours of EEG data and evaluate it across 10 downstream tasks on 12 public datasets. E..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:85",
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "object": "masked language modeling",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MSBraM uses masked code prediction for pretraining.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:86",
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "object": "LaBraM",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MSBraM outperforms LaBraM-base on multiple EEG downstream tasks.",
+  "contexts": [
+   "[body] ...\u00b1 \\pm .0188 .6783 \u00b1 \\pm .0120 .7848 \u00b1 \\pm .0038 .8448 \u00b1 \\pm .0065 .8569 \u00b1 \\pm .0051 ST-Transformer .3984 \u00b1 \\pm .0228 .3765 \u00b1 \\pm .0306 .6823 \u00b1 \\pm .0190 .7966 \u00b1 \\pm .0023 .8521 \u00b1 \\pm .0026 .8707 \u00b1 \\pm .0019 BIOT .5281 \u00b1 \\pm .0225 .5273 \u00b1 \\pm .0249 .7492 \u00b1 \\pm .0082 .7959 \u00b1 \\pm .0057 .8792 \u00b1 \\pm .0023 .8815 \u00b1 \\pm .0043 LaBraM-base .6473 \u00b1 \\pm .0072 .6367 \u00b1 \\pm .0161 .8219 \u00b1 \\pm .0077 .8140 \u00b1 \\pm .0019 .8965 \u00b1 \\pm .0016 .9022 \u00b1 \\pm .0009 EEGPT-large .5398 \u00b1 \\pm .0317 .6107 \u00b1 \\pm .0225 .7994 \u00b1 \\pm .0085 .7709 \u00b1 \\pm .0186 .8575 \u00b1 \\pm .0129 .8767 \u00b1 \\pm .0063 CBraMod-small .6219 \u00b1 \\pm .0093 .5994 \u00b1 \\pm .0168 .7881 \u00b1 \\pm .0076 .8002 \u00b1 \\pm .0036 .8888 \u00b1 \\pm .0...",
+   "[body] ...\u00b1 \\pm .0176 .4238 \u00b1 \\pm .0139 .5726 \u00b1 \\pm .0092 .4323 \u00b1 \\pm .0182 .5701 \u00b1 \\pm .0079 ST-Transformer .4575 \u00b1 \\pm .0145 .2733 \u00b1 \\pm .0198 .4471 \u00b1 \\pm .0142 .6035 \u00b1 \\pm .0081 .4712 \u00b1 \\pm .0199 .6053 \u00b1 \\pm .0075 BIOT .4748 \u00b1 \\pm .0093 .2997 \u00b1 \\pm .0139 .4607 \u00b1 \\pm .0125 .6153 \u00b1 \\pm .0154 .4875 \u00b1 \\pm .0272 .6158 \u00b1 \\pm .0197 LaBraM-base .4869 \u00b1 \\pm .0085 .3159 \u00b1 \\pm .0154 .4758 \u00b1 \\pm .0103 .6173 \u00b1 \\pm .0122 .4912 \u00b1 \\pm .0192 .6177 \u00b1 \\pm .0141 EEGPT-large .3948 \u00b1 \\pm .0266 .1931 \u00b1 \\pm .0354 .3663 \u00b1 \\pm .0349 .5094 \u00b1 \\pm .0108 .3456 \u00b1 \\pm .0144 .4937 \u00b1 \\pm .0121 CBraMod-small .5138 \u00b1 \\pm .0066 .3518 \u00b1 \\pm .0094 .4984 \u00b1 \\pm .0085 .6417 \u00b1 \\pm .0091 .5222 \u00b1 \\pm .0..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:87",
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "object": "CBraMod",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MSBraM outperforms CBraMod-small on multiple EEG downstream tasks.",
+  "contexts": [
+   "[body] ...m .0249 .7492 \u00b1 \\pm .0082 .7959 \u00b1 \\pm .0057 .8792 \u00b1 \\pm .0023 .8815 \u00b1 \\pm .0043 LaBraM-base .6473 \u00b1 \\pm .0072 .6367 \u00b1 \\pm .0161 .8219 \u00b1 \\pm .0077 .8140 \u00b1 \\pm .0019 .8965 \u00b1 \\pm .0016 .9022 \u00b1 \\pm .0009 EEGPT-large .5398 \u00b1 \\pm .0317 .6107 \u00b1 \\pm .0225 .7994 \u00b1 \\pm .0085 .7709 \u00b1 \\pm .0186 .8575 \u00b1 \\pm .0129 .8767 \u00b1 \\pm .0063 CBraMod-small .6219 \u00b1 \\pm .0093 .5994 \u00b1 \\pm .0168 .7881 \u00b1 \\pm .0076 .8002 \u00b1 \\pm .0036 .8888 \u00b1 \\pm .0073 .8847 \u00b1 \\pm .0080 MSBraM .6682 \u00b1 \\pm .0198 .6785 \u00b1 \\pm .0106 .8399 \u00b1 \\pm .0054 .8317 \u00b1 \\pm .0051 .9034 \u00b1 \\pm .0052 .9085 \u00b1 \\pm .0024 Table 2. Performance comparison between MSBraM and other supervised and self-supervised models on the e...",
+   "[body] ...m .0139 .4607 \u00b1 \\pm .0125 .6153 \u00b1 \\pm .0154 .4875 \u00b1 \\pm .0272 .6158 \u00b1 \\pm .0197 LaBraM-base .4869 \u00b1 \\pm .0085 .3159 \u00b1 \\pm .0154 .4758 \u00b1 \\pm .0103 .6173 \u00b1 \\pm .0122 .4912 \u00b1 \\pm .0192 .6177 \u00b1 \\pm .0141 EEGPT-large .3948 \u00b1 \\pm .0266 .1931 \u00b1 \\pm .0354 .3663 \u00b1 \\pm .0349 .5094 \u00b1 \\pm .0108 .3456 \u00b1 \\pm .0144 .4937 \u00b1 \\pm .0121 CBraMod-small .5138 \u00b1 \\pm .0066 .3518 \u00b1 \\pm .0094 .4984 \u00b1 \\pm .0085 .6417 \u00b1 \\pm .0091 .5222 \u00b1 \\pm .0169 .6427 \u00b1 \\pm .0100 MSBraM .5770 \u00b1 \\pm .0070 .4360 \u00b1 \\pm .0093 .5673 \u00b1 \\pm .0061 .6608 \u00b1 \\pm .0040 .5477 \u00b1 \\pm .0054 .6615 \u00b1 \\pm .0040 Table 3. Performance comparison between MSBraM and supervised and self-supervised models on the motor i..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:88",
+  "page": "arxiv:2607.21403v1",
+  "subject": "JITAI-Twins",
+  "object": "HeartSteps",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "JITAI-Twins are validated on the long-running HeartSteps series (v2-v4).",
+  "contexts": [
+   "[body] ...A Diffusion-Model Subpopulation Digital Twin for Mobile Health Deployment: A Case Study on the HeartSteps Intervention Abstract. 1 Why a Digital Twin for Mobile Health? 1.1 Related work 2 The HeartSteps Program as a Case Study 3 Proposed Digital Twin Approach 3.1 The formal setting 3.2 Why a diffusion model 3.3 Architecture at a glance 3.4 Generic pipeline 4 Evaluation Using a Replay of HeartSteps 4.1 Pipeline details for HeartStep...",
+   "[body] ...A Diffusion-Model Subpopulation Digital Twin for Mobile Health Deployment: A Case Study on the HeartSteps Intervention Abstract. 1 Why a Digital Twin for Mobile Health? 1.1 Related work 2 The HeartSteps Program as a Case Study 3 Proposed Digital Twin Approach 3.1 The formal setting 3.2 Why a diffusion model 3.3 Architecture at a glance 3.4 Generic pipeline 4 Evaluation Using a Replay of HeartSteps 4.1 Pipeline details for HeartSteps 4.2 What we generate 4.3 How we evaluate 4.4 Fidelity of the twin and the full pipeline 4.5 Cap...",
+   "[body] ...ent: A Case Study on the HeartSteps Intervention Abstract. 1 Why a Digital Twin for Mobile Health? 1.1 Related work 2 The HeartSteps Program as a Case Study 3 Proposed Digital Twin Approach 3.1 The formal setting 3.2 Why a diffusion model 3.3 Architecture at a glance 3.4 Generic pipeline 4 Evaluation Using a Replay of HeartSteps 4.1 Pipeline details for HeartSteps 4.2 What we generate 4.3 How we evaluate 4.4 Fidelity of the twin and the full pipeline 4.5 Capturing demographic conditioning 4.6 What the twin learned about the intervention 4.7 Evaluating the LLM-predicted calibration target 4.8 What the evaluation shows 5 Discussion A Exploratory Data Ana..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:89",
+  "page": "arxiv:2607.21403v1",
+  "subject": "JITAI-Twins",
+  "object": "All of Us",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "JITAI-Twins are pretrained on All of Us national observational cohort data.",
+  "contexts": [
+   "[body] ...iffusion Framework B.2 Network Stack B.3 Residual Block B.4 Temporal Consistency B.5 Survey Conditioning via Cross-Attention B.6 Log-Compressed Step Representation B.7 Architecture Hyperparameters B.8 Ablations: Bidirectional and FiLM-Conditioned Variants C Participant Embedding Construction D Stage 1: Pre-training on All of Us E Stage 2: Fine-tuning on HeartSteps Trials E.1 Hyperparameter Summary F Inference-time calibration: sampler derivation G Comparison of calibration approaches H Producing the calibration target: LLM prompts and coordinate conversion H.1 Step 1: qualitative reasoning (protocol-only prompt) H.2 Step 2: diurnal shape (level from da...",
+   "[body] ...nd recruited a similar population (cardiac-rehabilitation patients in Seattle), whereas v4 enrolled a different subpopulation (overweight, sedentary adults) and ran in a different place and time (Southern California, after the onset of the pandemic). Figure 2 shows that v2/v3 participants in Seattle, like the national All of Us cohort the twin is pre-trained on, exhibit a single mid-day peak around 12\u20133 PM, while v4 participants in Southern California show a bimodal pattern with peaks in the morning (6\u20139 AM) and late afternoon (3\u20136 PM), a plausible signature of post-pandemic hybrid work. Figure 2. Mean and standard deviation of step-count by hour of da...",
+   "[body] ...d-day peak around 12\u20133 PM, while v4 participants in Southern California show a bimodal pattern with peaks in the morning (6\u20139 AM) and late afternoon (3\u20136 PM), a plausible signature of post-pandemic hybrid work. Figure 2. Mean and standard deviation of step-count by hour of day across the HeartSteps deployments and the All of Us (AoU) pre-training cohort. All of Us ramirez2022all is a national observational cohort run by the NIH: hundreds of thousands of volunteers across the United States contribute health data, and a large subset wears commercial activity trackers in daily life without receiving any intervention. The roughly 1 , 500 1{,}500 tracker-we..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:90",
+  "page": "arxiv:2607.21403v1",
+  "subject": "JITAI-Twins",
+  "object": "diffusion models",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "JITAI-Twins build on conditional time-series diffusion models.",
+  "contexts": [
+   "[body] ...tribution well by construction, but they lose temporal coherence, splicing real hours together in unrealistic orders. Our twin departs from both by learning a conditional generative model that reproduces temporal structure and between-participant heterogeneity, not just the marginal. Conditional time-series diffusion. Diffusion models were introduced for image generation ho2020denoising and adapted to time series for audio synthesis kongdiffwave , probabilistic forecasting rasul2021autoregressive , and imputation with structured state-space backbones alcaraz2022diffusion . We build on TimeWeaver narasimhan2024time , which conditions a state-space diffu...",
+   "[body] ...ainty quantification kennedy2001bayesian . Our calibration step is a generative, inference-time analogue that adapts a fixed model rather than re-estimating its parameters. Rather than retraining for each target population, we tilt the sampler at inference time, drawing on reward-tilted and guidance-based sampling for diffusion models moitra2026steering . This lets a single fine-tuned twin be calibrated to many target populations through one trust parameter, and it is what makes calibration from pre-deployment knowledge alone practical. 2. The HeartSteps Program as a Case Study HeartSteps is a smartphone app that promotes physical activity through cont..."
+  ]
+ },
+ {
+  "sid": "out_6.jsonl:91",
+  "page": "arxiv:2607.21403v1",
+  "subject": "JITAI-Twins",
+  "object": "Thompson sampling",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "JITAI-Twins simulate contextual bandits trained with Thompson sampling.",
+  "contexts": [
+   "[body] ...ering a contextually tailored activity suggestion, based on the participant\u2019s current context (time of day, recent activity, weather, and so on) and the algorithm\u2019s evolving belief about which contexts the participant is most receptive to. The algorithm deployed in HeartSteps is a contextual bandit trained online with Thompson sampling: it maintains a Bayesian model of how the current context predicts a participant\u2019s response to the contextually tailored activity suggestions, and at each decision point randomizes whether to send one in proportion to its current belief that sending will help liao2020personalized . Four micro-randomized trials of HeartSt..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:0",
+  "page": "arxiv:2607.21404v1",
+  "subject": "MemTools",
+  "object": "ALFWorld",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MemTools is evaluated on ALFWorld.",
+  "contexts": [
+   "[body] ...logic of the framework, where the benchmark data, the evaluation logic, and the memory implementation operate as strictly independent variables during experiments. \u2b07 # Import core API, benchmark datasets, protocols, and modular components (omitted for brevity) ... # Step 1: Load benchmark and configure LLM benchmark = ALFWorldBenchmark ( data_path = \"...\" ) llm = LLM ( model_name = \"xxx\" ) # Step 2: Assemble memory pipeline from pluggable components ms = MemorySystem ( backend = InMemoryStore (), retrieval = BM25Search (), # built-in component formation = ExpelFormation ( llm = llm , max_rules =20), # existing system\u2019s component utilization = PromptInj..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:1",
+  "page": "arxiv:2607.21405v1",
+  "subject": "M\u00f6bius RoPE",
+  "object": "FineWeb-Edu",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "M\u00f6bius RoPE was pretrained on FineWeb-Edu tokens.",
+  "contexts": [
+   "[abstract] ...he two ends of the sequence are deterministically coupled through a closed-form Dirichlet \"dipole\"; to our knowledge this is the first anti-periodic boundary condition in positional encoding. We verify the theory numerically to $\\sim 10^{-6}$ and pretrain 48 models spanning six 160M-class and three 410M-class arms (2B FineWeb-Edu tokens each; the hybrid arm puts M\u00f6bius frequencies on 25% of heads). Hybrid perplexity is unchanged (29.66 vs. 29.72), but needle-in-a-haystack retrieval becomes reliable: $90.3\\pm5.7\\%$ versus $63.3\\pm31.4\\%$ at context 512 ($n=6$ seeds), observed worst seed 86% versus 14%, robust variance tests $p=0.013$-$0.029$ (unadjusted..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:2",
+  "page": "arxiv:2607.21407v1",
+  "subject": "neural surrogate",
+  "object": "U-Net",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The surrogate builds on a conditional U-Net forward model.",
+  "contexts": [
+   "[body] ...esult, a prediction arrives with no built-in way to tell whether it can be trusted, which is exactly what one needs in the sharp, undersampled regimes where the surrogate is most likely to be wrong. We present here a cycle-consistent neural surrogate for two-dimensional edge-plasma fields. At its core is a conditional U-Net forward model F \u03b8 F_{\\theta} that maps five scalar control parameters to the two-dimensional plasma state ( T e T_{e} , T i T_{i} , n e n_{e} , u a u_{a} ). A gradient-based inverse procedure then recovers the control parameters from a target field by optimizing through the frozen forward model. A cycle-consistency constraint ties t...",
+   "[body] ...-3}} for n e n_{e} , to regularize near-zero values). The parallel velocity u a u_{a} changes sign along the flow and is instead standardized with a symmetric-log transform before centering and scaling. The five input scalars are standardized with a plain mean/standard-deviation z-score. Encoder. The network follows a U-Net architecture [ 30 ] with three resolution levels. At each level, an input feature map is processed by two 3 \u00d7 3 3\\times 3 convolutions, each followed by group normalization and a SiLU activation: \ud835\udc18 \u2032 \\displaystyle\\mathbf{Y}^{\\prime} = \\displaystyle\\;=\\; \u03c3 \u200b ( GN \u200b ( \ud835\udc16 \u2217 \ud835\udc18 ) ) , \\displaystyle\\sigma\\!\\big(\\mathrm{GN}(\\mathbf{W}*\\mathb...",
+   "[abstract] ...r scans, optimization, or real-time control. Machine-learning surrogates offer a fast alternative, yet most are forward-only: they cannot recover input parameters from observations or assess the reliability of their predictions. We introduce a cycle-consistent neural surrogate for edge plasmas, combining a conditional U-Net forward model with an optimization-based inverse method built on the frozen forward network. The forward model maps five control parameters to two-dimensional plasma-state fields on the SOLPS-ITER mesh; the inverse method enforces consistency between forward and inverse predictions, a self-supervised quality check needing no ground-..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:3",
+  "page": "arxiv:2607.21407v1",
+  "subject": "neural surrogate",
+  "object": "SOLPS-ITER",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "The neural surrogate is compared to SOLPS-ITER.",
+  "contexts": [
+   "[body] ...nsity profiles, and the radiation patterns, live at the macroscopic scale of the whole boundary and evolve over milliseconds to seconds. Predictively bridging these scales is essential for current and future devices, yet it remains computationally challenging [ 34 , 27 ] . For SOL physics, the state-of-the-art tool is SOLPS-ITER, which couples a two-dimensional Braginskii fluid solver (B2.5) to a kinetic Monte Carlo neutral transport model (EIRENE) on a triangulated vessel mesh [ 28 ] . This multiphysics code has been used extensively to design and interpret experiments on existing devices and to evaluate divertor concepts for future machines. It is al...",
+   "[abstract] ...he reliability of their predictions. We introduce a cycle-consistent neural surrogate for edge plasmas, combining a conditional U-Net forward model with an optimization-based inverse method built on the frozen forward network. The forward model maps five control parameters to two-dimensional plasma-state fields on the SOLPS-ITER mesh; the inverse method enforces consistency between forward and inverse predictions, a self-supervised quality check needing no ground-truth labels at inference. An ensemble of multilayer perceptrons also predicts electron temperature and density profiles at the outboard midplane and divertor targets, with uncertainty estimat...",
+   "[abstract] ...control parameters are recovered with Pearson $r\\ge0.97$. A $k$-d tree warm start yields a database completion rate above 95%, versus roughly 30% outright failures when cold-started. With about $4\\times10^6$ parameters, the model produces full 2D predictions in milliseconds, five to six orders of magnitude faster than SOLPS-ITER, enabling real-time control, parameter scans, uncertainty analysis, and digital twins...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:4",
+  "page": "arxiv:2607.21412v1",
+  "subject": "Euclid-MCP",
+  "object": "SWI-Prolog",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Euclid-MCP builds on SWI-Prolog for deterministic logical reasoning.",
+  "contexts": [
+   "[body] ...ms the actual deduction. The system\u2019s core contributions are: \u2022 A high-level logical description language ( Euclid-IR ) for expressing business rules, security policies, and other domain constraints in a human-readable, declarative form. \u2022 An automatic translation layer that compiles these descriptions into executable SWI-Prolog clauses, preserving structure and enabling straightforward auditing. \u2022 A compact MCP tool interface that exposes reasoning operations (deduction, diagnosis, scenario analysis, validation) and supports a structured translate-run-inspect-repair loop, including access to proof trees for interpretability. \u2022 Representative use cases...",
+   "[body] ...rcoming the limitations of semantic retrieval in rule-centric applications. 3 Euclid-MCP Architecture This section describes the design of Euclid -MCP, from high-level architecture to the Euclid-IR language, translation to Prolog, and MCP integration. The system is implemented as a Python-based MCP server that invokes SWI-Prolog as a local reasoning backend and exposes a small, purpose-built tool surface for policy and rule reasoning. The use of SWI-Prolog in the current prototype is a tactical choice , not an architectural dependency. Euclid -MCP is designed around an engine-agnostic intermediate representation ( Euclid-IR ) that can be lowered to Pro...",
+   "[body] ...esign of Euclid -MCP, from high-level architecture to the Euclid-IR language, translation to Prolog, and MCP integration. The system is implemented as a Python-based MCP server that invokes SWI-Prolog as a local reasoning backend and exposes a small, purpose-built tool surface for policy and rule reasoning. The use of SWI-Prolog in the current prototype is a tactical choice , not an architectural dependency. Euclid -MCP is designed around an engine-agnostic intermediate representation ( Euclid-IR ) that can be lowered to Prolog or to alternative inference engines (e.g., Datalog engines, SMT solvers, custom rule engines) without changing the user-facing..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:5",
+  "page": "arxiv:2607.21419v1",
+  "subject": "PATS",
+  "object": "ALFWorld",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "PATS is evaluated on ALFWorld.",
+  "contexts": [
+   "[body] ...ised to support current sampling rather than to converge toward complete task knowledge. Policy learning remains standard GRPO with environmental rewards, and the Bank is discarded at deployment. Figure 2 contrasts this view with persistent accumulation, monotonic withdrawal, and problem-side curricula. Experiments on ALFWorld and WebShop at two model scales and on seven search-augmented QA benchmarks show that Pats remains effective after support removal. Without its scaffold, it improves over same-scale GRPO by up to 18.6 percentage points and remains competitive with skill-retaining SkillRL using fewer prompt tokens. Figure 1 shows the intended comp...",
+   "[abstract] ...ps weak policies to complete challenging tasks. As policy improves, redundant context is revised or removed to reduce reliance on explicit guidance while preserving useful rollout variation. The policy is optimized with environmental rewards using standard RLVR, and the training scaffold is discarded at deployment. On ALFWorld and WebShop, Pats improves over strong baselines by up to 18.6%. Across seven search-augmented QA benchmarks, it remains competitive while using 32.1% fewer prompt tokens than the baseline...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:6",
+  "page": "arxiv:2607.21419v1",
+  "subject": "PATS",
+  "object": "WebShop",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "PATS is evaluated on WebShop.",
+  "contexts": [
+   "[body] ...rt current sampling rather than to converge toward complete task knowledge. Policy learning remains standard GRPO with environmental rewards, and the Bank is discarded at deployment. Figure 2 contrasts this view with persistent accumulation, monotonic withdrawal, and problem-side curricula. Experiments on ALFWorld and WebShop at two model scales and on seven search-augmented QA benchmarks show that Pats remains effective after support removal. Without its scaffold, it improves over same-scale GRPO by up to 18.6 percentage points and remains competitive with skill-retaining SkillRL using fewer prompt tokens. Figure 1 shows the intended competence-depend...",
+   "[abstract] ...ies to complete challenging tasks. As policy improves, redundant context is revised or removed to reduce reliance on explicit guidance while preserving useful rollout variation. The policy is optimized with environmental rewards using standard RLVR, and the training scaffold is discarded at deployment. On ALFWorld and WebShop, Pats improves over strong baselines by up to 18.6%. Across seven search-augmented QA benchmarks, it remains competitive while using 32.1% fewer prompt tokens than the baseline...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:7",
+  "page": "arxiv:2607.21419v1",
+  "subject": "PATS",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "PATS uses GRPO for policy optimization.",
+  "contexts": [
+   "[body] ...ti-turn interaction (Yao et al. 2022b ; Shridhar et al. 2020 ; Yao et al. 2022a ) . Reinforcement learning (RL) can improve these agents from experience, but only from behavior that the current policy manages to sample. On long-horizon tasks, a weak policy often repeats the same failure. Group-relative methods such as GRPO then receive rollout groups with little outcome contrast and, consequently, little learning signal (Shao et al. 2024 ) . External skills can help a weak policy reach otherwise inaccessible behavior (Shinn et al. 2023 ; Zhao et al. 2023 ; Wang et al. 2023 ; Xia et al. 2026 ) . Their value during training, however, differs from their v...",
+   "[body] ...k pressure determine how much support the next group receives; as the policy\u2019s residual failures change, the Bank may expand, revise, compress, or reconstruct its guidance. The Bank is therefore revised to support current sampling rather than to converge toward complete task knowledge. Policy learning remains standard GRPO with environmental rewards, and the Bank is discarded at deployment. Figure 2 contrasts this view with persistent accumulation, monotonic withdrawal, and problem-side curricula. Experiments on ALFWorld and WebShop at two model scales and on seven search-augmented QA benchmarks show that Pats remains effective after support removal. W...",
+   "[body] ...ent. Figure 2 contrasts this view with persistent accumulation, monotonic withdrawal, and problem-side curricula. Experiments on ALFWorld and WebShop at two model scales and on seven search-augmented QA benchmarks show that Pats remains effective after support removal. Without its scaffold, it improves over same-scale GRPO by up to 18.6 percentage points and remains competitive with skill-retaining SkillRL using fewer prompt tokens. Figure 1 shows the intended competence-dependent pattern: support expands while a weak policy needs concrete guidance and contracts as validation improves. Together with Bank histories and ablations, this trajectory connect..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:8",
+  "page": "arxiv:2607.21424v1",
+  "subject": "evaluation framework",
+  "object": "AudioCards",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The framework is evaluated on AudioCards dataset.",
+  "contexts": [
+   "[body] ...terministic computational metrics [ 9 , 15 , 4 ] to precisely evaluate numerical and acoustic measurements. Crucially, each axis is evaluated by a field-specific metric that is normalized to a commensurable [ 0 , 1 ] [0,1] scale, facilitating seamless aggregation into a unified score. To validate our framework, we use AudioCards [ 19 ] , a structurally annotated sound effect dataset organized via the Universal Category System [ 22 ] , which we further augment with computed acoustic measurements. We establish that an ideal metric must remain robust to meaning-preserving paraphrases while maintaining acute sensitivity to genuine semantic and acoustic err...",
+   "[body] ...enuine model failure. Inspired by behavioral testing methodologies in natural language processing [ 18 ] and recent perturbation-based evaluations in audio captioning [ 5 ] , we employ a controlled perturbation study. We systematically inject specific, graded errors of known types and severities into ground-truth (GT) AudioCards. Crucially, our perturbation protocol isolates distinct error modes rather than blending them into a generic severity scale. This allows us to ascertain not merely whether an overall score degrades, but precisely which evaluation axis responds to a specific error type, providing both a granular diagnostic of metric calibration...",
+   "[abstract] ...properties. However, evaluating this heterogeneous data remains a significant challenge. Existing caption metrics focus on flat textual outputs and fail to reliably assess multimodal attributes. To bridge this gap, we propose a multi-axis evaluation framework tailored for structured audio descriptions. Building on the AudioCards dataset, we evaluate outputs across five orthogonal axes: tag-sets, descriptions, logical reasoning, numeric measurements, and spectral profiles. Our approach combines Large Language Model (LLM) judges to capture semantic nuance with deterministic computational metrics to precisely measure acoustic deviations. To rigorously val..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:9",
+  "page": "arxiv:2607.21427v1",
+  "subject": "context-weighted DFM",
+  "object": "OpenWebText",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Context-weighted DFM is evaluated on OpenWebText.",
+  "contexts": [
+   "[body] ...endpoints, but shifts intermediate updates toward better-conditioned tokens. The resulting formulation provides both an inference-time sampler that requires no fine-tuning, and a scaled cross-entropy objective that reweights the training signal. Context-weighted sampling improves generation quality across domains: on OpenWebText [ 9 ] , it improves MAUVE by up to 24%, while for molecule generation [ 24 ] , it increases the number of valid and novel samples by up to 2.8 \u00d7 2.8\\times and 1.9 \u00d7 1.9\\times , respectively. Our loss objective reduces generative perplexity on OpenWebText by up to 63%, and matches a strong block diffusion baseline while retaini...",
+   "[body] ...weighted sampling improves generation quality across domains: on OpenWebText [ 9 ] , it improves MAUVE by up to 24%, while for molecule generation [ 24 ] , it increases the number of valid and novel samples by up to 2.8 \u00d7 2.8\\times and 1.9 \u00d7 1.9\\times , respectively. Our loss objective reduces generative perplexity on OpenWebText by up to 63%, and matches a strong block diffusion baseline while retaining any-order generation. Our contributions are: \u2022 We empirically show that prediction entropy is closely linked to available local context, with denser unmasked neighborhoods leading to lower uncertainty. \u2022 We modify the CTMC transition dynamics to depend...",
+   "[body] ...ized as follows: section \u02dc 2 reviews Discrete Flow Matching and probability path design, section \u02dc 3 presents our empirical motivation and context-weighted formulation, section \u02dc 4 evaluates the proposed sampler [...] 4 Experiments We evaluate our method on two domains: text and molecular generation. For text, we use OpenWebText (OWT) [ 9 ] , a large-scale corpus, while for molecules we use QM9 in SMILES format [ 24 ] , a significantly smaller dataset that allows us to study performance in the low-data regime. We follow the MDLM architecture and training setup to ensure fair comparison [ 25 ] . Our OWT model has approximately 170M parameters; for QM9,..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:10",
+  "page": "arxiv:2607.21427v1",
+  "subject": "context-weighted DFM",
+  "object": "QM9",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Context-weighted DFM is evaluated on QM9 for molecule generation.",
+  "contexts": [
+   "[body] ...path design, section \u02dc 3 presents our empirical motivation and context-weighted formulation, section \u02dc 4 evaluates the proposed sampler [...] 4 Experiments We evaluate our method on two domains: text and molecular generation. For text, we use OpenWebText (OWT) [ 9 ] , a large-scale corpus, while for molecules we use QM9 in SMILES format [ 24 ] , a significantly smaller dataset that allows us to study performance in the low-data regime. We follow the MDLM architecture and training setup to ensure fair comparison [ 25 ] . Our OWT model has approximately 170M parameters; for QM9, we modify only the vocabulary, resulting in a model with approximately 92M...",
+   "[body] ...) [ 9 ] , a large-scale corpus, while for molecules we use QM9 in SMILES format [ 24 ] , a significantly smaller dataset that allows us to study performance in the low-data regime. We follow the MDLM architecture and training setup to ensure fair comparison [ 25 ] . Our OWT model has approximately 170M parameters; for QM9, we modify only the vocabulary, resulting in a model with approximately 92M parameters. For text, we report generative perplexity (Gen. PPL), computed with GPT-2 [ 23 ] , entropy to measure text diversity, and MAUVE as a balanced quality\u2013diversity metric [ 22 ] . For QM9, we report the number of valid molecules and the number of novel...",
+   "[body] ...WT model has approximately 170M parameters; for QM9, we modify only the vocabulary, resulting in a model with approximately 92M parameters. For text, we report generative perplexity (Gen. PPL), computed with GPT-2 [ 23 ] , entropy to measure text diversity, and MAUVE as a balanced quality\u2013diversity metric [ 22 ] . For QM9, we report the number of valid molecules and the number of novel samples (out of 1024 generations). All setup details are provided in the appendix section \u02dc B.1 . 4.1 Inference-time context-weighted sampling Figure 3: Neighbor-weighted sampling improves generation quality without fine-tuning or computational overhead. At larger NFE, i..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:11",
+  "page": "arxiv:2607.21427v1",
+  "subject": "context-weighted DFM",
+  "object": "GPT-2",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Generative perplexity is computed using GPT-2.",
+  "contexts": [
+   "[body] ...the low-data regime. We follow the MDLM architecture and training setup to ensure fair comparison [ 25 ] . Our OWT model has approximately 170M parameters; for QM9, we modify only the vocabulary, resulting in a model with approximately 92M parameters. For text, we report generative perplexity (Gen. PPL), computed with GPT-2 [ 23 ] , entropy to measure text diversity, and MAUVE as a balanced quality\u2013diversity metric [ 22 ] . For QM9, we report the number of valid molecules and the number of novel samples (out of 1024 generations). All setup details are provided in the appendix section \u02dc B.1 . 4.1 Inference-time context-weighted sampling Figure 3: Neighb..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:12",
+  "page": "arxiv:2607.21433v1",
+  "subject": "convergence detector",
+  "object": "DeepSeek-R1-Distill-Qwen-7B",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The study uses DeepSeek-R1-Distill-Qwen-7B model.",
+  "contexts": [
+   "[body] ...h of the generated thinking is actually productive. A generation that produces 10,000 tokens of circular reasoning before timing out consumes the same compute as one that converges cleanly at 4,000 tokens\u2014yet the two outcomes differ drastically in accuracy. We investigate this question through two studies conducted on DeepSeek-R1-Distill-Qwen-7B, a 7-billion parameter model distilled from DeepSeek-R1 and built on the Qwen2 architecture (Yang and others, 2024 ) . We evaluate it across three benchmarks spanning a wide difficulty range: GSM8K (Cobbe et al. , 2021 ) (grade school), MATH-500 (Hendrycks et al. , 2021 ) (competition-level), and a 200-problem...",
+   "[body] ...ampling variability for n = 200 n=200 . 4.1.3 Probe design Activation probe. A logistic regression classifier ( C = 1.0 C=1.0 , L-BFGS solver, 2,000 max iterations) trained on the hidden-state activation vector at a given layer and checkpoint position. The input dimensionality equals the model\u2019s hidden size (3,584 for DeepSeek-R1-Distill-Qwen-7B). Behavioral baseline. A logistic regression classifier with identical hyperparameters, trained on seven surface-level features observable without model internals: \u2022 Entropy statistics: mean, maximum, standard deviation, and linear trend (slope of entropy over generated tokens). \u2022 N-gram repetition rates: fract...",
+   "[abstract] ...Chain-of-thought reasoning models such as DeepSeek-R1-Distill-Qwen-7B exhibit a bimodal convergence pattern: generations either terminate within a token budget (converged) or exhaust it without reaching a conclusion (non-converged). We characterize this phenomenon empirically, showing that converged generations achieve 90.3% accuracy on AIME 1983-2024 while non-converged ones ach..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:13",
+  "page": "arxiv:2607.21433v1",
+  "subject": "convergence detector",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Convergence is evaluated on GSM8K.",
+  "contexts": [
+   "[body] ...comes differ drastically in accuracy. We investigate this question through two studies conducted on DeepSeek-R1-Distill-Qwen-7B, a 7-billion parameter model distilled from DeepSeek-R1 and built on the Qwen2 architecture (Yang and others, 2024 ) . We evaluate it across three benchmarks spanning a wide difficulty range: GSM8K (Cobbe et al. , 2021 ) (grade school), MATH-500 (Hendrycks et al. , 2021 ) (competition-level), and a 200-problem subset of AIME 1983\u20132024 (Neubig, 2024 ) (olympiad-level). In the first study (Section 3 ), we adapt the budget-forcing technique of Muennighoff et al. ( 2025 ) into a logits processor that constrains the model\u2019s thinkin...",
+   "[body] ...odel\u2019s thinking phase to a specified token count. By sweeping budgets from 256 to 4,096 tokens and comparing against an uncapped baseline (10,000-token ceiling), we characterize the marginal value of additional thinking tokens across difficulty levels. Our central finding is that accuracy saturates remarkably early on GSM8K and MATH-500, while AIME reveals a bimodal failure mode where a large fraction of generations never converge regardless of budget. In the second study (Section 4 ), we ask whether this convergence failure is predictable from the model\u2019s internal state before the failure becomes behaviorally apparent. We instrument the model with for...",
+   "[body] ...y comparing these probes against a behavioral baseline that uses only surface-level signals (logit entropy, repetition statistics), we isolate the contribution of internal representations to early detection. The contributions of this work are: \u2022 Empirical evidence that thinking token budgets saturate at 256 tokens for GSM8K and MATH-500, challenging the assumption that more thinking is uniformly beneficial. \u2022 Characterization of a bimodal convergence pattern on AIME that is only partially explained by problem difficulty ( r 2 \u2248 0.19 r^{2}\\approx 0.19 ) and wastes approximately 40% of inference compute on doomed generations. \u2022 Layer sweep across all 28..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:14",
+  "page": "arxiv:2607.21433v1",
+  "subject": "convergence detector",
+  "object": "MATH-500",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Convergence is evaluated on MATH-500.",
+  "contexts": [
+   "[body] ...stigate this question through two studies conducted on DeepSeek-R1-Distill-Qwen-7B, a 7-billion parameter model distilled from DeepSeek-R1 and built on the Qwen2 architecture (Yang and others, 2024 ) . We evaluate it across three benchmarks spanning a wide difficulty range: GSM8K (Cobbe et al. , 2021 ) (grade school), MATH-500 (Hendrycks et al. , 2021 ) (competition-level), and a 200-problem subset of AIME 1983\u20132024 (Neubig, 2024 ) (olympiad-level). In the first study (Section 3 ), we adapt the budget-forcing technique of Muennighoff et al. ( 2025 ) into a logits processor that constrains the model\u2019s thinking phase to a specified token count. By sweepi...",
+   "[body] ...nking phase to a specified token count. By sweeping budgets from 256 to 4,096 tokens and comparing against an uncapped baseline (10,000-token ceiling), we characterize the marginal value of additional thinking tokens across difficulty levels. Our central finding is that accuracy saturates remarkably early on GSM8K and MATH-500, while AIME reveals a bimodal failure mode where a large fraction of generations never converge regardless of budget. In the second study (Section 4 ), we ask whether this convergence failure is predictable from the model\u2019s internal state before the failure becomes behaviorally apparent. We instrument the model with forward hooks...",
+   "[body] ...g these probes against a behavioral baseline that uses only surface-level signals (logit entropy, repetition statistics), we isolate the contribution of internal representations to early detection. The contributions of this work are: \u2022 Empirical evidence that thinking token budgets saturate at 256 tokens for GSM8K and MATH-500, challenging the assumption that more thinking is uniformly beneficial. \u2022 Characterization of a bimodal convergence pattern on AIME that is only partially explained by problem difficulty ( r 2 \u2248 0.19 r^{2}\\approx 0.19 ) and wastes approximately 40% of inference compute on doomed generations. \u2022 Layer sweep across all 28 model laye..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:15",
+  "page": "arxiv:2607.21433v1",
+  "subject": "convergence detector",
+  "object": "AIME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Convergence is evaluated on AIME 1983-2024.",
+  "contexts": [
+   "[body] ...7-billion parameter model distilled from DeepSeek-R1 and built on the Qwen2 architecture (Yang and others, 2024 ) . We evaluate it across three benchmarks spanning a wide difficulty range: GSM8K (Cobbe et al. , 2021 ) (grade school), MATH-500 (Hendrycks et al. , 2021 ) (competition-level), and a 200-problem subset of AIME 1983\u20132024 (Neubig, 2024 ) (olympiad-level). In the first study (Section 3 ), we adapt the budget-forcing technique of Muennighoff et al. ( 2025 ) into a logits processor that constrains the model\u2019s thinking phase to a specified token count. By sweeping budgets from 256 to 4,096 tokens and comparing against an uncapped baseline (10,00...",
+   "[body] ...specified token count. By sweeping budgets from 256 to 4,096 tokens and comparing against an uncapped baseline (10,000-token ceiling), we characterize the marginal value of additional thinking tokens across difficulty levels. Our central finding is that accuracy saturates remarkably early on GSM8K and MATH-500, while AIME reveals a bimodal failure mode where a large fraction of generations never converge regardless of budget. In the second study (Section 4 ), we ask whether this convergence failure is predictable from the model\u2019s internal state before the failure becomes behaviorally apparent. We instrument the model with forward hooks to capture hidd...",
+   "[body] ...contribution of internal representations to early detection. The contributions of this work are: \u2022 Empirical evidence that thinking token budgets saturate at 256 tokens for GSM8K and MATH-500, challenging the assumption that more thinking is uniformly beneficial. \u2022 Characterization of a bimodal convergence pattern on AIME that is only partially explained by problem difficulty ( r 2 \u2248 0.19 r^{2}\\approx 0.19 ) and wastes approximately 40% of inference compute on doomed generations. \u2022 Layer sweep across all 28 model layers at token 150, identifying layer 20 as the strongest signal carrier (AUC 0.608 \u00b1 0.080 0.608\\pm 0.080 ) and revealing that convergence..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:16",
+  "page": "arxiv:2607.21434v1",
+  "subject": "AIA",
+  "object": "DreamID-V",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "AIA extends DreamID-V with adaptive anchor placement.",
+  "contexts": [
+   "[body] ...t model can learn. This asymmetry is, we argue, the central reason pure generation has outrun transfer: swap models trained without explicit pairs [ 15 , 14 , 13 ] must reconcile identity injection and attribute preservation implicitly, and their identity similarity has lagged that of image face swapping (IFS) [ 2 ] . DreamID-V [ 1 ] confronts the missing-pair problem directly. Its data factory, SyncID-Pipe, pre-trains an Identity-Anchored Video Synthesizer (IVS): a first\u2013last-frame-to-video (FLF2V) foundation model with a trainable Adaptive Pose-Attention adapter injected into frozen diffusion-transformer (DiT) [ 8 ] blocks, conditioned on the first a...",
+   "[body] ...s the student inherits. Our starting observation is that in this factory, appearance identity enters each minted video at exactly two temporal sites, fixed a priori at the clip boundaries. Everything in between is constrained only by the pose sequence, which is dense in time but carries no appearance evidence of B B : DreamID-V\u2019s own expression-adaptation step deliberately retargets the landmark sequence through a 3D face reconstruction precisely so that the dense conditioning does not leak source identity [ 1 ] . Between the anchors, the synthesizer is free to drift back toward its own manifold on the one attribute\u2014identity\u2014for which no dense referenc...",
+   "[body] ...rgets the landmark sequence through a 3D face reconstruction precisely so that the dense conditioning does not leak source identity [ 1 ] . Between the anchors, the synthesizer is free to drift back toward its own manifold on the one attribute\u2014identity\u2014for which no dense reference exists. Consistent with this reading, DreamID-V reports that identity similarity remains high in frontal views and mild motion but degrades considerably during profile views and intense actions, and its final Identity-Coherence Reinforcement Learning (IRL) stage exists to re-weight training toward exactly those low-similarity segments [ 1 ] . Its published ablations cover the..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:17",
+  "page": "arxiv:2607.21437v1",
+  "subject": "Agent-Guided Concept Discovery",
+  "object": "DreaMS",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework builds on DreaMS foundation model.",
+  "contexts": [
+   "[body] ...to improve REIMS-based margin assessment, including Bayesian neural networks for uncertainty estimation and image-based representations of mass spectra [ 8 , 6 ] . More recently, a foundation model pretrained on large-scale tandem mass spectrometry data, Deep Representations Empowering the Annotation of Mass Spectra (DreaMS) [ 5 ] , has been proposed and later adapted for REIMS applications [ 7 ] . However, fine-tuning this foundation model on small, labeled ex vivo REIMS datasets risks overfitting and limits generalization to noisy intraoperative data. Moreover, despite strong performance, these models largely remain black boxes, offering limited ins...",
+   "[body] ...concept and then queries metabolic databases to ground these concepts in biological knowledge. These links generate a knowledge graph connecting concepts to m [...] 3 Experiments Our experiments consist of the following evaluations: (i) Classification performance comparison. We compare the proposed framework against a DreaMS-based baseline that performs classification on foundation model embeddings, on two REIMS mass spectrometry datasets. (ii) Concept quality evaluation. We assess interpretability and biological relevance by examining how concept activations vary with hormone receptor status and align with established metabolic pathways. (iii) General...",
+   "[body] ..., and all experiments are repeated 30 times to report mean and standard deviation. Full code and configurations will be publicly available after acceptance. 3 Results and Discussion 3.0.1 Classification performance comparison The classification results are shown in Table 1 . Overall, the proposed model outperforms the DreaMS baseline across both datasets. This indicates that incorporating agent-guided concept embeddings, with the goal of improving generalization and interpretability, does not sacrifice classification performance and can even improve it. On the Skin Cancer dataset, we observe an approximate 7% relative improvement in balanced accuracy,..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:18",
+  "page": "arxiv:2607.21437v1",
+  "subject": "Agent-Guided Concept Discovery",
+  "object": "Qwen2.5-7B-Instruct",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The reasoning agent uses Qwen2.5-7B-Instruct.",
+  "contexts": [
+   "[body] ...ation to intraoperative data. We assess by evaluating performance on an in vivo REIMS case acquired during surgery. (iv) Ablation studies. We analyze the contribution of key components by ablating biochemical knowledge base integration and knowledge graph grounding. Implementation Details. The reasoning agent uses the Qwen2.5-7B-Instruct model. The model learns K = 8 K=8 concepts and is trained using Adam with a learning rate of 10 \u2212 3 10^{-3} and a batch size of 32 32 for up to 40 epochs. Datasets are split into training, validation, and test sets, hyperparameters are selected on the validation set, and all experiments are repeated 30 times to report..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:19",
+  "page": "arxiv:2607.21445v1",
+  "subject": "TriviaRoomQA",
+  "object": "MMLU",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TriviaRoomQA is compared to MMLU benchmark.",
+  "contexts": [
+   "[body] ...1 Introduction Current large language models (LLMs) perform strongly on academic and reasoning-oriented benchmarks, such as MMLU (Hendrycks et al. , 2021 ) , GSM8K (Cobbe et al. , 2021 ) , and AIME. 1 1 1 https://artificialanalysis.ai/evaluations/aime-2025 However, strong performance on these benchmarks does not necessarily imply reliable knowledge of everyday facts, popular culture, contemporary events, or culturally grounded information. Recent work has star..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:20",
+  "page": "arxiv:2607.21445v1",
+  "subject": "TriviaRoomQA",
+  "object": "GSM8K",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TriviaRoomQA is compared to GSM8K benchmark.",
+  "contexts": [
+   "[body] ...1 Introduction Current large language models (LLMs) perform strongly on academic and reasoning-oriented benchmarks, such as MMLU (Hendrycks et al. , 2021 ) , GSM8K (Cobbe et al. , 2021 ) , and AIME. 1 1 1 https://artificialanalysis.ai/evaluations/aime-2025 However, strong performance on these benchmarks does not necessarily imply reliable knowledge of everyday facts, popular culture, contemporary events, or culturally grounded information. Recent work has started to evaluate LLM knowledge beyo..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:21",
+  "page": "arxiv:2607.21445v1",
+  "subject": "TriviaRoomQA",
+  "object": "AIME",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TriviaRoomQA is compared to AIME benchmark.",
+  "contexts": [
+   "[body] ...1 Introduction Current large language models (LLMs) perform strongly on academic and reasoning-oriented benchmarks, such as MMLU (Hendrycks et al. , 2021 ) , GSM8K (Cobbe et al. , 2021 ) , and AIME. 1 1 1 https://artificialanalysis.ai/evaluations/aime-2025 However, strong performance on these benchmarks does not necessarily imply reliable knowledge of everyday facts, popular culture, contemporary events, or culturally grounded information. Recent work has started to evaluate LLM knowledge beyond academic benchmarks, focusing on...",
+   "[body] ...1 Introduction Current large language models (LLMs) perform strongly on academic and reasoning-oriented benchmarks, such as MMLU (Hendrycks et al. , 2021 ) , GSM8K (Cobbe et al. , 2021 ) , and AIME. 1 1 1 https://artificialanalysis.ai/evaluations/aime-2025 However, strong performance on these benchmarks does not necessarily imply reliable knowledge of everyday facts, popular culture, contemporary events, or culturally grounded information. Recent work has started to evaluate LLM knowledge beyond academic benchmarks, focusing on cultural knowledge, long-tail facts, and general fact..."
+  ]
+ }
+]

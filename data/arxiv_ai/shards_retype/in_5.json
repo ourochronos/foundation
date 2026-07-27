@@ -1,0 +1,721 @@
+[
+ {
+  "sid": "out_15.jsonl:18",
+  "page": "arxiv:2607.22212v1",
+  "subject": "DLM-SVDD",
+  "object": "ImageNet-LT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DLM-SVDD is evaluated on ImageNet-LT benchmark for long-tailed recognition.",
+  "contexts": [
+   "[body] ...IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible. I Introduction Visual anomaly detection has become a [...] evaluation on additional and challenging long-tailed recognition datasets, namely CIFAR-10-LT and CIFAR-100-LT [ 18 , 17 ] , and ImageNet-LT [ 26 ] , which were not considered in the initial version; (ii) a systematic study of kernel approximation methods, including Nystr\u00f6m, RFF, QMC-RFF, ORF, SORF, Fastfood, and RPCholesky, along with an accuracy\u2013efficiency trade-off analysis to render the proposed approach a practical proposition on large datasets; (iii) a clarif..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:19",
+  "page": "arxiv:2607.22212v1",
+  "subject": "DLM-SVDD",
+  "object": "SVDD",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DLM-SVDD draws on the large-margin \u2113p-Support Vector Data Description approach.",
+  "contexts": [
+   "[body] ...Deep Convolutional Large-Margin \u2113_\ud835\udc5d-SVDD for Visual Anomaly Detection Abstract I Introduction II Related Work II-A Boundary-based and deep data-description methods II-B Representation learning and transfer-based anomaly detection II-C Open-set, OOD, and long-tailed evaluation protocols II-D Kernel approximation and scalable boundary optimization II-E Positioning of the prop...",
+   "[body] ...ion methods II-B Representation learning and transfer-based anomaly detection II-C Open-set, OOD, and long-tailed evaluation protocols II-D Kernel approximation and scalable boundary optimization II-E Positioning of the proposed approach III Methodology III-A Problem setup and notation III-B Large-margin \u2113 p \\ell_{p} -SVDD on deep representations III-C Alternating optimization III-C 1 Boundary update under fixed representations III-C 2 CNN update given the boundary III-D Decision function III-E Kernel approximation strategies for improved scalability III-F Convergence analysis IV Experiments IV-A Datasets, evaluation scenarios, and performance metrics....",
+   "[body] ...kernel approximation IV-G 3 Effect of RBF kernel bandwidth IV-G 4 Effect of within-task anomaly supervision IV-G 5 Sensitivity to training-population imbalance V Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2607.22212v1 [cs.CV] 24 Jul 2026 Deep Convolutional Large-Margin \u2113 p \\ell_{p} -SVDD for Visual Anomaly Detection Alireza Dastmalchi Saei, and Shervin Rahimzadeh Arashloo A. Dastmalchi Saei and S. R. Arashloo are with the Department of Computer Engineering, Bilkent University, 06800 Ankara, T\u00fcrkiye. Corresponding author: S.R. Arashloo (e-mail: sh.rahimzadeh@hotmail.com). Abstract Visual anomaly detection requires ada..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:20",
+  "page": "arxiv:2607.22212v1",
+  "subject": "DLM-SVDD",
+  "object": "PANDA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "DLM-SVDD shows strong performance compared to PANDA on anomaly detection.",
+  "contexts": [
+   "[body] ...equently updated using a loss function induced by the margin constraints of this explicitly recovered boundary. II-B Representation learning and transfer-based anomaly detection A complementary line of anomaly detection work focuses on representation quality than the exact form of the decision boundary. As an example, PANDA [ 41 ] showed that adapting ImageNet-pretrained features can yield strong anomaly-detection performance when overfitting to the nominal class is controlled. Mean-Shifted Contrastive learning (MSC) [ 42 ] further improves pretrained encoders by modifying the contrastive objective to avoid feature collapse and produce more discriminat..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:21",
+  "page": "arxiv:2607.22212v1",
+  "subject": "DLM-SVDD",
+  "object": "CSI",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "DLM-SVDD outperforms CSI on multiple anomaly detection benchmarks.",
+  "contexts": [
+   "[body] ...olled. Mean-Shifted Contrastive learning (MSC) [ 42 ] further improves pretrained encoders by modifying the contrastive objective to avoid feature collapse and produce more discriminative anomaly scores. Self-supervised and contrastive novelty detectors follow a similar representation-first philosophy. As an instance, CSI [ 49 ] learns discriminative embeddings through contrastive learning on distributionally shifted views while Outlier Exposure [ 10 ] improves robustness using auxiliary outliers and UNODE [ 32 ] pursues universal novelty detection through adaptive contrastive learning whereas FIRM [ 27 ] focuses on learning in-distribution representat..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:22",
+  "page": "arxiv:2607.22215v1",
+  "subject": "Latent PDE mapping",
+  "object": "PINNs",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Latent PDE mapping is demonstrated using physics-informed neural networks.",
+  "contexts": [
+   "[body] ...fully connected network with eight hidden layers, with 64 neurons in each layer (Figure 3 a), resulting in 33,280 trainable parameters in all hidden layers. The inputs comprised space-time points, as well as geometric descriptors for the given geometry, where applicable. An overview of the hyperparameters used in the PINNs is provided in Table 6 of Appendix C . The PI-DON s [ 43 ] employed separate branch and trunk networks (Figure 3 b), each with six hidden layers of 50 neurons per layer resulting in 30,601 trainable parameters in the hidden layers. Additionally, the trunk network had an output layer of 100 neurons, while the branch network had an ou...",
+   "[body] ...activation function in the hidden layers, while the outputs were sent through the sigmoid and softplus activation functions to generate the transmembrane potential V ^ \\hat{V} and recovery variable W ^ \\hat{W} , respectively. 2.5 Ablation models, training procedures and evaluation methods We developed a collection of PINNs [ 35 ] and PI-DONs [ 43 ] to assess and compare the latent PDE mapping technique (Table 2 )..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:23",
+  "page": "arxiv:2607.22215v1",
+  "subject": "Latent PDE mapping",
+  "object": "PI-DON",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Latent PDE mapping is tested with physics-informed deep operator networks.",
+  "contexts": [
+   "[body] ..., with 64 neurons in each layer (Figure 3 a), resulting in 33,280 trainable parameters in all hidden layers. The inputs comprised space-time points, as well as geometric descriptors for the given geometry, where applicable. An overview of the hyperparameters used in the PINNs is provided in Table 6 of Appendix C . The PI-DON s [ 43 ] employed separate branch and trunk networks (Figure 3 b), each with six hidden layers of 50 neurons per layer resulting in 30,601 trainable parameters in the hidden layers. Additionally, the trunk network had an output layer of 100 neurons, while the branch network had an output layer of 50 neurons, inspired by the archite...",
+   "[body] ...re equal to the number of observed data measurements for the PINN ( \ud835\udca9 s = \ud835\udca9 d \u200b a \u200b t \u200b a = 14 \\mathcal{N}_{\\mathrm{s}}=\\mathcal{N}_{data}=14 ), while in 3D, the number of sensor locations and observed data measurements were increased to \ud835\udca9 s = \ud835\udca9 d \u200b a \u200b t \u200b a = 42 \\mathcal{N}_{\\mathrm{s}}=\\mathcal{N}_{data}=42 for the PI-DON . Furthermore, we used an interpolation scheme to compute the transmembrane potential V V at the fixed sensor locations. An overview of the hyperparameter settings for the PI-DONs is provided in Table 7 of Appendix C . Figure 3: Schematic of the neural network architectures employed in our study. (a) The PINN architecture consisted...",
+   "[body] ...locations and observed data measurements were increased to \ud835\udca9 s = \ud835\udca9 d \u200b a \u200b t \u200b a = 42 \\mathcal{N}_{\\mathrm{s}}=\\mathcal{N}_{data}=42 for the PI-DON . Furthermore, we used an interpolation scheme to compute the transmembrane potential V V at the fixed sensor locations. An overview of the hyperparameter settings for the PI-DONs is provided in Table 7 of Appendix C . Figure 3: Schematic of the neural network architectures employed in our study. (a) The PINN architecture consisted of a fully connected neural network containing eight hidden layers with 64 neurons in each layer. Space-time points ( \ud835\udc7f , \u03c4 \\boldsymbol{X},\\tau ) and a geometric descriptor s s w..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:24",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "DiT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "TRaM-VSR builds on Diffusion Transformer priors for video super-resolution.",
+  "contexts": [
+   "[body] ...1 Introduction Video super-resolution (VSR) aims to recover high-resolution (HR) videos from low-quality (LQ) inputs while preserving temporal consistency across frames. Recently, diffusion-based approaches have achieved remarkable progress, largely driven by Diffusion Transformers (DiTs) and large-scale text-to-video priors [ peebles2023dit , blattmann2023align , esser2023structure , singer2023make , villegas2023phenaki , khachatryan2023text2video ] . Leveraging powerful generative priors, recent VSR works [ zhou2024upscale , wang2025seedvr , he2024venhancer ] achieve impressive performance in super-resolution. Howe...",
+   "[body] ...super-resolution (VSR) aims to recover high-resolution (HR) videos from low-quality (LQ) inputs while preserving temporal consistency across frames. Recently, diffusion-based approaches have achieved remarkable progress, largely driven by Diffusion Transformers (DiTs) and large-scale text-to-video priors [ peebles2023dit , blattmann2023align , esser2023structure , singer2023make , villegas2023phenaki , khachatryan2023text2video ] . Leveraging powerful generative priors, recent VSR works [ zhou2024upscale , wang2025seedvr , he2024venhancer ] achieve impressive performance in super-resolution. However, these models incur substantial computational cost,...",
+   "[body] ...ly pronounced when spatio-temporal dependencies are not sufficiently modeled within the one-step diffusion process. Figure 1 : Motivation of TRaM-VSR. ToMeSD [ bolya2023tomesd ] (top right) yields scattered heatmaps that miss dynamic objects and prompt semantics. Instead, TRaM-VSR exploits the coarse-to-fine nature of DiTs: our offline planner locates safe compressible depths (Intervals 1 and 2), where our semantic-temporal scoring (bottom right) precisely highlights critical tokens. Notably, this scoring forms complementary focus regions across intervals, synergistically preserving both global motion and fine details. More discussion and analysis can..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:25",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "UDM10",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRaM-VSR is evaluated on the UDM10 real-world video super-resolution benchmark.",
+  "contexts": [
+   "[body] ...on by jointly leveraging context-aware video priors and network-level priors . For the video context, we learn a token importance map that captures both spatial and temporal relationships across frames, allowing the model to rank tokens according to their [...] 5 Experiments Figure 3 : Visual comparison on real-world UDM10 [ tao2017detail ] (top) and synthetic YouHQ40 [ zhou2024upscale ] (bottom). TRaM-VSR recovers substantially sharper fine textures and structurally coherent edges compared to recent baselines. 5.1 Experimental Settings Datasets. Following standard VSR evaluation protocols, all experiments are conducted at a \u00d7 4 \\times 4 upscaling fac...",
+   "[body] ...). TRaM-VSR recovers substantially sharper fine textures and structurally coherent edges compared to recent baselines. 5.1 Experimental Settings Datasets. Following standard VSR evaluation protocols, all experiments are conducted at a \u00d7 4 \\times 4 upscaling factor. We evaluate our method on three synthetic benchmarks (UDM10 [ tao2017detail ] , SPMCS [ yi2019progressive ] , and YouHQ40 [ zhou2024upscale ] ) and three real-world benchmarks (RealVSR [ yang2021real ] , MVSR4x [ wang2023benchmark ] , and VideoLQ [ chan2022investigating ] ). The synthetic datasets employ the same degradation pipeline used during training. RealVSR and MVSR4x contain real-worl...",
+   "[body] ...d blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VSR [ yang2024motion ] STAR [ xie2025star ] DOVE [ chen2025dove ] SeedVR2- 7B [ wang2025seedvr2 ] Ours [ wang2021real ] UDM10 PSNR \u2191 \\uparrow 24.04 23.65 24.13 21.72 24.23 23.47 26.48 25.47 26.73 SSIM \u2191 \\uparrow 0.7107 0.6016 0.6801 0.5913 0.6957 0.6804 0.7827 0.7582 0.7759 LPIPS \u2193 \\downarrow 0.3877 0.5537 0.3908 0.4116 0.3272 0.4242 0.2696 0.2507 0.2678 DISTS \u2193 \\downarrow 0.2184 0.2898 0.2067 0.2230 0.1677 0.2156 0.1492 0.1263 0.1450 CLIP-IQA \u2191 \\uparrow 0..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:26",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "SPMCS",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRaM-VSR is evaluated on the SPMCS synthetic benchmark.",
+  "contexts": [
+   "[body] ...antially sharper fine textures and structurally coherent edges compared to recent baselines. 5.1 Experimental Settings Datasets. Following standard VSR evaluation protocols, all experiments are conducted at a \u00d7 4 \\times 4 upscaling factor. We evaluate our method on three synthetic benchmarks (UDM10 [ tao2017detail ] , SPMCS [ yi2019progressive ] , and YouHQ40 [ zhou2024upscale ] ) and three real-world benchmarks (RealVSR [ yang2021real ] , MVSR4x [ wang2023benchmark ] , and VideoLQ [ chan2022investigating ] ). The synthetic datasets employ the same degradation pipeline used during training. RealVSR and MVSR4x contain real-world LQ\u2013HQ pairs captured in...",
+   "[body] ...row 0.3877 0.5537 0.3908 0.4116 0.3272 0.4242 0.2696 0.2507 0.2678 DISTS \u2193 \\downarrow 0.2184 0.2898 0.2067 0.2230 0.1677 0.2156 0.1492 0.1263 0.1450 CLIP-IQA \u2191 \\uparrow 0.4189 0.4344 0.3494 0.4697 0.4557 0.2417 0.5107 0.2958 0.4547 E w \u200b a \u200b r \u200b p \u2217 \u2193 E^{*}_{warp}\\downarrow 4.83 6.12 3.10 3.97 3.59 2.08 1.77 2.20 1.73 SPMCS PSNR \u2191 \\uparrow 21.22 21.68 22.17 18.81 22.39 21.24 23.11 22.53 23.18 SSIM \u2191 \\uparrow 0.5613 0.5153 0.5638 0.4113 0.5896 0.5441 0.6210 0.6187 0.6237 LPIPS \u2193 \\downarrow 0.3721 0.4467 0.3662 0.4468 0.3263 0.5257 0.2888 0.2781 0.2883 DISTS \u2193 \\downarrow 0.2220 0.2697 0.2164 0.2452 0.1960 0.2872 0.1713 0.1530 0.1613 CLIP-IQA \u2191 \\uparrow 0..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:27",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "YouHQ40",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRaM-VSR is evaluated on the YouHQ40 synthetic benchmark.",
+  "contexts": [
+   "[body] ...priors and network-level priors . For the video context, we learn a token importance map that captures both spatial and temporal relationships across frames, allowing the model to rank tokens according to their [...] 5 Experiments Figure 3 : Visual comparison on real-world UDM10 [ tao2017detail ] (top) and synthetic YouHQ40 [ zhou2024upscale ] (bottom). TRaM-VSR recovers substantially sharper fine textures and structurally coherent edges compared to recent baselines. 5.1 Experimental Settings Datasets. Following standard VSR evaluation protocols, all experiments are conducted at a \u00d7 4 \\times 4 upscaling factor. We evaluate our method on three synthet...",
+   "[body] ...structurally coherent edges compared to recent baselines. 5.1 Experimental Settings Datasets. Following standard VSR evaluation protocols, all experiments are conducted at a \u00d7 4 \\times 4 upscaling factor. We evaluate our method on three synthetic benchmarks (UDM10 [ tao2017detail ] , SPMCS [ yi2019progressive ] , and YouHQ40 [ zhou2024upscale ] ) and three real-world benchmarks (RealVSR [ yang2021real ] , MVSR4x [ wang2023benchmark ] , and VideoLQ [ chan2022investigating ] ). The synthetic datasets employ the same degradation pipeline used during training. RealVSR and MVSR4x contain real-world LQ\u2013HQ pairs captured in the wild, whereas VideoLQ consists...",
+   "[body] ...row 0.3721 0.4467 0.3662 0.4468 0.3263 0.5257 0.2888 0.2781 0.2883 DISTS \u2193 \\downarrow 0.2220 0.2697 0.2164 0.2452 0.1960 0.2872 0.1713 0.1530 0.1613 CLIP-IQA \u2191 \\uparrow 0.5238 0.5442 0.3513 0.5248 0.4348 0.2646 0.5690 0.4271 0.5588 E w \u200b a \u200b r \u200b p \u2217 \u2193 E^{*}_{warp}\\downarrow 5.61 8.07 1.88 4.22 1.68 1.01 1.04 1.38 0.97 YouHQ40 PSNR \u2191 \\uparrow 22.82 23.32 22.39 19.62 23.17 22.64 24.30 23.30 24.38 SSIM \u2191 \\uparrow 0.6337 0.6273 0.5895 0.4824 0.6194 0.6323 0.6740 0.6659 0.6856 LPIPS \u2193 \\downarrow 0.3571 0.4211 0.4091 0.4268 0.3608 0.4600 0.2997 0.2705 0.2903 DISTS \u2193 \\downarrow 0.1790 0.2159 0.1933 0.2012 0.1685 0.2287 0.1477 0.1117 0.1370 CLIP-IQA \u2191 \\uparrow..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:28",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "RealVSR",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRaM-VSR is evaluated on RealVSR real-world benchmark.",
+  "contexts": [
+   "[body] ...Experimental Settings Datasets. Following standard VSR evaluation protocols, all experiments are conducted at a \u00d7 4 \\times 4 upscaling factor. We evaluate our method on three synthetic benchmarks (UDM10 [ tao2017detail ] , SPMCS [ yi2019progressive ] , and YouHQ40 [ zhou2024upscale ] ) and three real-world benchmarks (RealVSR [ yang2021real ] , MVSR4x [ wang2023benchmark ] , and VideoLQ [ chan2022investigating ] ). The synthetic datasets employ the same degradation pipeline used during training. RealVSR and MVSR4x contain real-world LQ\u2013HQ pairs captured in the wild, whereas VideoLQ consists of internet-sourced videos without ground-truth HR. Evaluation...",
+   "[body] ...tic benchmarks (UDM10 [ tao2017detail ] , SPMCS [ yi2019progressive ] , and YouHQ40 [ zhou2024upscale ] ) and three real-world benchmarks (RealVSR [ yang2021real ] , MVSR4x [ wang2023benchmark ] , and VideoLQ [ chan2022investigating ] ). The synthetic datasets employ the same degradation pipeline used during training. RealVSR and MVSR4x contain real-world LQ\u2013HQ pairs captured in the wild, whereas VideoLQ consists of internet-sourced videos without ground-truth HR. Evaluation Metrics. For datasets with HR references, we report standard fidelity metrics (PSNR and SSIM [ wang2004image ] ) and perceptual full-reference metrics (LPIPS [ zhang2018unreasonabl...",
+   "[body] ...row 0.3571 0.4211 0.4091 0.4268 0.3608 0.4600 0.2997 0.2705 0.2903 DISTS \u2193 \\downarrow 0.1790 0.2159 0.1933 0.2012 0.1685 0.2287 0.1477 0.1117 0.1370 CLIP-IQA \u2191 \\uparrow 0.4704 0.4633 0.3964 0.5258 0.4657 0.2739 0.4985 0.3321 0.4676 E w \u200b a \u200b r \u200b p \u2217 \u2193 E^{*}_{warp}\\downarrow 5.91 5.75 3.08 6.84 3.45 2.21 2.05 4.03 1.70 RealVSR PSNR \u2191 \\uparrow 20.85 20.81 22.12 20.29 22.02 17.43 22.32 22.09 22.37 SSIM \u2191 \\uparrow 0.7105 0.6277 0.7163 0.5945 0.6774 0.5215 0.7301 0.7181 0.7288 LPIPS \u2193 \\downarrow 0.2016 0.2312 0.1870 0.2671 0.2182 0.2943 0.1851 0.2014 0.1911 DISTS \u2193 \\downarrow 0.1279 0.1435 0.0983 0.1425 0.1169 0.1599 0.0978 0.1146 0.1005 CLIP-IQA \u2191 \\uparrow..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:29",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "MVSR4x",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRaM-VSR is evaluated on MVSR4x benchmark containing real-world LQ-HQ pairs.",
+  "contexts": [
+   "[body] ...ets. Following standard VSR evaluation protocols, all experiments are conducted at a \u00d7 4 \\times 4 upscaling factor. We evaluate our method on three synthetic benchmarks (UDM10 [ tao2017detail ] , SPMCS [ yi2019progressive ] , and YouHQ40 [ zhou2024upscale ] ) and three real-world benchmarks (RealVSR [ yang2021real ] , MVSR4x [ wang2023benchmark ] , and VideoLQ [ chan2022investigating ] ). The synthetic datasets employ the same degradation pipeline used during training. RealVSR and MVSR4x contain real-world LQ\u2013HQ pairs captured in the wild, whereas VideoLQ consists of internet-sourced videos without ground-truth HR. Evaluation Metrics. For datasets with...",
+   "[body] ...ks (UDM10 [ tao2017detail ] , SPMCS [ yi2019progressive ] , and YouHQ40 [ zhou2024upscale ] ) and three real-world benchmarks (RealVSR [ yang2021real ] , MVSR4x [ wang2023benchmark ] , and VideoLQ [ chan2022investigating ] ). The synthetic datasets employ the same degradation pipeline used during training. RealVSR and MVSR4x contain real-world LQ\u2013HQ pairs captured in the wild, whereas VideoLQ consists of internet-sourced videos without ground-truth HR. Evaluation Metrics. For datasets with HR references, we report standard fidelity metrics (PSNR and SSIM [ wang2004image ] ) and perceptual full-reference metrics (LPIPS [ zhang2018unreasonable ] and DIST...",
+   "[body] ...row 0.2016 0.2312 0.1870 0.2671 0.2182 0.2943 0.1851 0.2014 0.1911 DISTS \u2193 \\downarrow 0.1279 0.1435 0.0983 0.1425 0.1169 0.1599 0.0978 0.1146 0.1005 CLIP-IQA \u2191 \\uparrow 0.7472 0.5553 0.2905 0.4855 0.4510 0.3641 0.5207 0.2872 0.5062 E w \u200b a \u200b r \u200b p \u2217 \u2193 E^{*}_{warp}\\downarrow 6.32 9.55 4.45 6.25 3.16 9.88 3.52 3.54 3.23 MVSR4x PSNR \u2191 \\uparrow 22.47 21.58 21.80 20.42 22.77 22...."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:30",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "VideoLQ",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRaM-VSR is evaluated on VideoLQ benchmark with internet-sourced videos.",
+  "contexts": [
+   "[body] ...ion protocols, all experiments are conducted at a \u00d7 4 \\times 4 upscaling factor. We evaluate our method on three synthetic benchmarks (UDM10 [ tao2017detail ] , SPMCS [ yi2019progressive ] , and YouHQ40 [ zhou2024upscale ] ) and three real-world benchmarks (RealVSR [ yang2021real ] , MVSR4x [ wang2023benchmark ] , and VideoLQ [ chan2022investigating ] ). The synthetic datasets employ the same degradation pipeline used during training. RealVSR and MVSR4x contain real-world LQ\u2013HQ pairs captured in the wild, whereas VideoLQ consists of internet-sourced videos without ground-truth HR. Evaluation Metrics. For datasets with HR references, we report standard...",
+   "[body] ...Q40 [ zhou2024upscale ] ) and three real-world benchmarks (RealVSR [ yang2021real ] , MVSR4x [ wang2023benchmark ] , and VideoLQ [ chan2022investigating ] ). The synthetic datasets employ the same degradation pipeline used during training. RealVSR and MVSR4x contain real-world LQ\u2013HQ pairs captured in the wild, whereas VideoLQ consists of internet-sourced videos without ground-truth HR. Evaluation Metrics. For datasets with HR references, we report standard fidelity metrics (PSNR and SSIM [ wang2004image ] ) and perceptual full-reference metrics (LPIPS [ zhang2018unreasonable ] and DISTS [ ding2020image ] ). For no-reference perceptual evaluation, we em..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:31",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "RealESRGAN",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRaM-VSR is compared against RealESRGAN on video super-resolution benchmarks.",
+  "contexts": [
+   "[body] ...t inference time, TRaM-VSR does not require any manually provided caption or prompt; all quantitative and visual results are obtained under this prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and bl..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:32",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "ResShift",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRaM-VSR outperforms ResShift on multiple video super-resolution benchmarks.",
+  "contexts": [
+   "[body] ...s not require any manually provided caption or prompt; all quantitative and visual results are obtained under this prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ]...",
+   "[body] ...pscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VSR [ yang2024motion ] STAR [ xie2025star ] DOVE [ chen2025dove ] SeedVR2- 7B [ wang2025seedvr2 ] Ours [ wang2021real ] UDM10 PSNR \u2191 \\uparrow 24.04 23.65 24.13 21.72 24.23 23.47 26.48 25.47 26.73 SSIM \u2191 \\uparrow 0.7107 0.6016 0...."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:33",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "RealBasicVSR",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRaM-VSR is compared against RealBasicVSR baseline.",
+  "contexts": [
+   "[body] ...ded caption or prompt; all quantitative and visual results are obtained under this prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ES...",
+   "[body] ...le ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VSR [ yang2024motion ] STAR [ xie2025star ] DOVE [ chen2025dove ] SeedVR2- 7B [ wang2025seedvr2 ] Ours [ wang2021real ] UDM10 PSNR \u2191 \\uparrow 24.04 23.65 24.13 21.72 24.23 23.47 26.48 25.47 26.73 SSIM \u2191 \\uparrow 0.7107 0.6016 0.6801 0.5913 0.6957 0.6804 0.78..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:34",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "Upscale-A-Video",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRaM-VSR is compared against Upscale-A-Video.",
+  "contexts": [
+   "[body] ...nd visual results are obtained under this prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025e..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:35",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "MGLD-VSR",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRaM-VSR is compared against MGLD-VSR.",
+  "contexts": [
+   "[body] ...his prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022inve..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:36",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "STAR",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRaM-VSR is compared against STAR method.",
+  "contexts": [
+   "[body] ...omparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [...",
+   "[body] ...State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upsca...",
+   "[body] ...ative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VSR [ yang2024motion ] STAR [ xie2025star ] DOVE [ chen2025dove ] SeedVR2- 7B [ wang2025seedvr2 ] Ours [ wang2021real ] UDM10 PSNR \u2191 \\uparrow 24.04 23.65 24.13 21.72 24.23 23.47 26.48 25.47 26.73 SSIM \u2191 \\uparrow 0.7107 0.6016 0.6801 0.5913 0.6957 0.6804 0.7827 0.7582 0.7759 LPIPS \u2193 \\downarrow 0.3877 0.5537 0.3908 0.4116 0.3272 0.4242 0.2696 0.2507 0.2678 DISTS..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:37",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "DOVE",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRaM-VSR is compared against DOVE baseline.",
+  "contexts": [
+   "[body] ...incur substantial computational cost, as dense spatio-temporal tokens must be processed through deep transformer stacks with quadratic attention complexity. To improve efficiency, a line of research explores lightweight generation pipelines, among which one-step diffusion has emerged as a promising paradigm [ chen2025dove , sun2025onestepvsr , li2025osdiffvsr ] . By collapsing the iterative denoising process into a single forward pass, these approaches substantially reduce inference latency. However, this efficiency often comes at the cost of temporal stability [ chen2025dove , sun2025onestepvsr ] . Without the progressive refinement provided by multi...",
+   "[body] ...step diffusion has emerged as a promising paradigm [ chen2025dove , sun2025onestepvsr , li2025osdiffvsr ] . By collapsing the iterative denoising process into a single forward pass, these approaches substantially reduce inference latency. However, this efficiency often comes at the cost of temporal stability [ chen2025dove , sun2025onestepvsr ] . Without the progressive refinement provided by multiple diffusion steps, generation errors cannot be gradually corrected and may accumulate over time, leading to artifacts such as shadow flickering and temporally inconsistent textures across frames. This issue becomes particularly pronounced when spatio-tempor...",
+   "[body] ...-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VS..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:38",
+  "page": "arxiv:2607.22231v1",
+  "subject": "TRaM-VSR",
+  "object": "SeedVR2",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRaM-VSR is compared against SeedVR2-7B.",
+  "contexts": [
+   "[body] ...ods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VSR [ yang2024motion ] STAR [ xie2025star ] DOVE [ chen2025dove ] SeedVR2- 7B [ wang2025seedvr2 ] Ours [ wang2021real ] UDM10 PSNR \u2191 \\uparrow 24.04 23.65 24.13 21.72 24.23 23.47 26.48 25.47 26.73 SSIM \u2191 \\uparrow 0.7107 0.6016 0.6801 0.5913 0.6957 0.6804 0.7827 0.7582 0.7759 LPIPS \u2193 \\downarrow 0.3877 0.5537 0.3908 0.4116 0.3272 0.4242 0.2696 0.2507 0.2678 DISTS \u2193 \\downarrow 0.2184 0.2898 0.2067 0.2230 0....",
+   "[body] ...est results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VSR [ yang2024motion ] STAR [ xie2025star ] DOVE [ chen2025dove ] SeedVR2- 7B [ wang2025seedvr2 ] Ours [ wang2021real ] UDM10 PSNR \u2191 \\uparrow 24.04 23.65 24.13 21.72 24.23 23.47 26.48 25.47 26.73 SSIM \u2191 \\uparrow 0.7107 0.6016 0.6801 0.5913 0.6957 0.6804 0.7827 0.7582 0.7759 LPIPS \u2193 \\downarrow 0.3877 0.5537 0.3908 0.4116 0.3272 0.4242 0.2696 0.2507 0.2678 DISTS \u2193 \\downarrow 0.2184 0.2898 0.2067 0.2230 0.1677 0.2156 0.1492 0.1..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:39",
+  "page": "arxiv:2607.22251v1",
+  "subject": "IFCLoRA",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "IFCLoRA improves upon Low-Rank Adaptation for parameter-efficient fine-tuning.",
+  "contexts": [
+   "[body] ...g et al. , 2025 ) . However, as model sizes continue to grow, full fine-tuning faces prohibitively high memory and storage costs. Parameter-efficient fine-tuning (PEFT) has accordingly emerged as a practical paradigm for adapting large models with limited trainable parameters (Han et al. , 2024 ) . Among PEFT methods, LoRA parameterizes weight updates as low-rank matrix products, substantially reducing the number of trainable parameters while maintaining competitive performance (Hu et al. , 2022 ) . Standard LoRA assigns the same rank to all target layers and modules, implicitly assuming that different positions contribute similarly to the task. In low...",
+   "[body] ...s a practical paradigm for adapting large models with limited trainable parameters (Han et al. , 2024 ) . Among PEFT methods, LoRA parameterizes weight updates as low-rank matrix products, substantially reducing the number of trainable parameters while maintaining competitive performance (Hu et al. , 2022 ) . Standard LoRA assigns the same rank to all target layers and modules, implicitly assuming that different positions contribute similarly to the task. In low-budget settings, however, Transformer layers and modules exhibit substantial functional heterogeneity. Prior analyses of Transformer circuits and feed-forward memories further suggest that atte...",
+   "[body] ...putational subgraphs (Conmy et al. , 2023 ; Syed et al. , 2024 ) . Graph centrality analysis provides tools for quantifying global node importance (Page et al. , 1999 ; Newman, 2018 ) . Yet these two perspectives have not been directly combined into a pre-fine-tuning rank-allocation mechanism. Figure 1 : Comparison of LoRA, AdaLoRA, and IFCLoRA rank-allocation strategies. Figure 1 compares standard LoRA, AdaLoRA, and IFCLoRA from the perspective of when and how ranks are allocated. To this end, we propose IFCLoRA, a topology-aware low-rank adaptation framework that completes rank allocation in a single pre-fine-tuning pass. Given a small calibration se..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:40",
+  "page": "arxiv:2607.22251v1",
+  "subject": "IFCLoRA",
+  "object": "LLaMA 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "IFCLoRA is evaluated on LLaMA 3 8B for mathematical reasoning.",
+  "contexts": [
+   "[abstract] ...ion. Ranks are then assigned once under a global budget. Across multiple models, tasks, and low-rank settings, IFCLoRA consistently outperforms LoRA, AdaLoRA, and EVA under matched training configurations and total rank budgets, while retaining training costs comparable to standard LoRA. On mathematical reasoning with LLaMA 3 8B, IFCLoRA improves over LoRA by 1.36 percent at rank 4 and 1.82 percent at rank 8. Further analysis shows task-dependent, non-uniform rank profiles, indicating that global information-flow structure provides an informative and interpretable prior for low-budget parameter-efficient fine-tuning...."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:41",
+  "page": "arxiv:2607.22251v1",
+  "subject": "IFCLoRA",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "IFCLoRA is evaluated on GSM8K for mathematical reasoning tasks.",
+  "contexts": [
+   "[body] ...e-fine-tuning pass. Given a small calibration set, IFCLoRA performs lightweight tracing on a frozen model to construct a task-conditioned interaction graph, then fuses a topology prior with local gradient sensitivity into an Information-Flow Centrality score for one-shot budget-constrained rank routing. Experiments on GSM8K and SuperGLUE show that, under the same rank budget, IFCLoRA provides consistent GSM8K gains across three backbone models and a generally favorable but task-dependent SuperGLUE profile. Further analysis shows that the learned rank distribution varies across tasks and concentrates capacity on a small number of structurally important...",
+   "[body] ...on a frozen model to construct a task-conditioned interaction graph, then fuses a topology prior with local gradient sensitivity into an Information-Flow Centrality score for one-shot budget-constrained rank routing. Experiments on GSM8K and SuperGLUE show that, under the same rank budget, IFCLoRA provides consistent GSM8K gains across three backbone models and a generally favorable but task-dependent SuperGLUE profile. Further analysis shows that the learned rank distribution varies across tasks and concentrates capacity on a small number of structurally important modules, providing a topology-based implementation of parameter routing in PEFT. The ma..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:42",
+  "page": "arxiv:2607.22251v1",
+  "subject": "IFCLoRA",
+  "object": "SuperGLUE",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "IFCLoRA is evaluated on SuperGLUE benchmark.",
+  "contexts": [
+   "[body] ...ing pass. Given a small calibration set, IFCLoRA performs lightweight tracing on a frozen model to construct a task-conditioned interaction graph, then fuses a topology prior with local gradient sensitivity into an Information-Flow Centrality score for one-shot budget-constrained rank routing. Experiments on GSM8K and SuperGLUE show that, under the same rank budget, IFCLoRA provides consistent GSM8K gains across three backbone models and a generally favorable but task-dependent SuperGLUE profile. Further analysis shows that the learned rank distribution varies across tasks and concentrates capacity on a small number of structurally important modules, p...",
+   "[body] ...ology prior with local gradient sensitivity into an Information-Flow Centrality score for one-shot budget-constrained rank routing. Experiments on GSM8K and SuperGLUE show that, under the same rank budget, IFCLoRA provides consistent GSM8K gains across three backbone models and a generally favorable but task-dependent SuperGLUE profile. Further analysis shows that the learned rank distribution varies across tasks and concentrates capacity on a small number of structurally important modules, providing a topology-based implementation of parameter routing in PEFT. The main contributions of this paper are: 1. We propose IFCLoRA, a topology-aware one-shot r..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:43",
+  "page": "arxiv:2607.22251v1",
+  "subject": "IFCLoRA",
+  "object": "AdaLoRA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "IFCLoRA outperforms AdaLoRA under matched rank budgets.",
+  "contexts": [
+   "[body] ...onal subgraphs (Conmy et al. , 2023 ; Syed et al. , 2024 ) . Graph centrality analysis provides tools for quantifying global node importance (Page et al. , 1999 ; Newman, 2018 ) . Yet these two perspectives have not been directly combined into a pre-fine-tuning rank-allocation mechanism. Figure 1 : Comparison of LoRA, AdaLoRA, and IFCLoRA rank-allocation strategies. Figure 1 compares standard LoRA, AdaLoRA, and IFCLoRA from the perspective of when and how ranks are allocated. To this end, we propose IFCLoRA, a topology-aware low-rank adaptation framework that completes rank allocation in a single pre-fine-tuning pass. Given a small calibration set, IFC...",
+   "[body] ...ysis provides tools for quantifying global node importance (Page et al. , 1999 ; Newman, 2018 ) . Yet these two perspectives have not been directly combined into a pre-fine-tuning rank-allocation mechanism. Figure 1 : Comparison of LoRA, AdaLoRA, and IFCLoRA rank-allocation strategies. Figure 1 compares standard LoRA, AdaLoRA, and IFCLoRA from the perspective of when and how ranks are allocated. To this end, we propose IFCLoRA, a topology-aware low-rank adaptation framework that completes rank allocation in a single pre-fine-tuning pass. Given a small calibration set, IFCLoRA performs lightweight tracing on a frozen model to construct a task-conditione...",
+   "[abstract] ...topology prior with local gradient sensitivity to compute Information-Flow Centrality scores, which estimate each module's adaptation importance under multi-hop propagation. Ranks are then assigned once under a global budget. Across multiple models, tasks, and low-rank settings, IFCLoRA consistently outperforms LoRA, AdaLoRA, and EVA under matched training configurations and total rank budgets, while retaining training costs comparable to standard LoRA. On mathematical reasoning with LLaMA 3 8B, IFCLoRA improves over LoRA by 1.36 percent at rank 4 and 1.82 percent at rank 8. Further analysis shows task-dependent, non-uniform rank profiles, indicating..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:44",
+  "page": "arxiv:2607.22251v1",
+  "subject": "IFCLoRA",
+  "object": "EVA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "IFCLoRA consistently outperforms EVA across multiple models and tasks.",
+  "contexts": [
+   "[body] ...e similarly to the task. In low-budget settings, however, Transformer layers and modules exhibit substantial functional heterogeneity. Prior analyses of Transformer circuits and feed-forward memories further suggest that attention heads, FFN blocks, and residual pathways play distinct roles in information processing (Geva et al. , 2021 ; Wang et al. , 2022 ; Meng et al. , 2022 ; Syed et al. , 2024 ) . These components differ in how they store, route, and transform information. In low-budget regimes, model performance can be sensitive to whether limited capacity is concentrated on task-relevant information-propagation paths or spread uniformly. Although...",
+   "[body] ...y distinct roles in information processing (Geva et al. , 2021 ; Wang et al. , 2022 ; Meng et al. , 2022 ; Syed et al. , 2024 ) . These components differ in how they store, route, and transform information. In low-budget regimes, model performance can be sensitive to whether limited capacity is concentrated on task-relevant information-propagation paths or spread uniformly. Although adaptive rank-allocation methods improve over uniform allocation (Zhang et al. , 2023 ; He et al. , 2025 ; Ed-dib et al. , 2025 ) , they still mainly rely on local statistics during training and introduce additional overhead. A natural question is therefore whether a global...",
+   "[body] ..., 2025 ) , they still mainly rely on local statistics during training and introduce additional overhead. A natural question is therefore whether a global perspective that explicitly characterizes cross-layer information flow can provide a better allocation signal. Mechanistic interpretability reveals traceable task-relevant computational subgraphs (Conmy et al. , 2023 ; Syed et al. , 2024 ) . Graph centrality analysis provides tools for quantifying global node importance (Page et al. , 1999 ; Newman, 2018 ) . Yet these two perspectives have not been directly combined into a pre-fine-tuning rank-allocation mechanism. Figure 1 : Comparison of LoRA, AdaLo..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:45",
+  "page": "arxiv:2607.22258v1",
+  "subject": "CBS",
+  "object": "CIFAR-10-LT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CBS is evaluated on CIFAR-10-LT with various imbalance ratios.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:46",
+  "page": "arxiv:2607.22258v1",
+  "subject": "CBS",
+  "object": "CIFAR-100-LT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CBS is evaluated on CIFAR-100-LT for long-tailed recognition.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:47",
+  "page": "arxiv:2607.22258v1",
+  "subject": "CBS",
+  "object": "ImageNet-LT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CBS is evaluated on ImageNet-LT benchmark.",
+  "contexts": [
+   "[body] ...cal{N}|} for head classes and lower for tail classes. Values represent the average relative difference \u0394 \u200b p ^ \\Delta\\hat{p} . Dataset Head Medium Tail C10-LT10 1.13 -0.31 -5.28 C10-LT50 1.11 -1.70 -16.48 C10-LT100 0.84 -2.50 -20.10 C100-LT10 6.39 -5.30 -29.40 C100-LT50 4.81 -12.48 -58.94 C100-LT100 3.84 -17.65 -71.61 ImageNet-LT 0.49 -1.51 -12.93 Class probability distributions approximation Given that both probability distributions p \u200b ( y = c ) {p}(y=c) and p ^ \u200b ( y = c ) \\hat{p}(y=c) are closely related to | \ud835\udca9 c | | \ud835\udca9 | \\frac{|\\mathcal{N}_{c}|}{|\\mathcal{N}|} , we approximate them as p \u200b ( y = c ) = | \ud835\udca9 c | | \ud835\udca9 | \u200b \u03ba c / \u2211 c \u2032 \u2208 \ud835\udc9e | \ud835\udca9 c \u2032 | | \ud835\udca9 |..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:48",
+  "page": "arxiv:2607.22258v1",
+  "subject": "CBS",
+  "object": "Balanced Softmax",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "CBS outperforms Balanced Softmax, the previous state-of-the-art rebalancing method.",
+  "contexts": [
+   "[body] ...it is challenging to generate high-quality values for the weights [ 34 ] . To address the challenges in imbalanced classification, in this paper, we make three contributions to the imbalanced learning community, as follows. \u2022 Based on a theoretical Bayesian framework and heuristic power-law functions, we propose Class-Balanced Softmax (CBS) for imbalanced classification. CBS is a simple, computationally inexpensive logit adjustment method that can be seamlessly integrate [...] experimental setup for Figure 2 and Tables 1 and 2 is introduced in Section 5.2 . Table 2: Relative difference between class probability and class frequency | \ud835\udca9 c | | \ud835\udca9 | \\frac{|...",
+   "[abstract] ...Deep learning models using traditional softmax classifiers have achieved remarkable success in various classification tasks. However, their performance degrades significantly on imbalanced datasets. Although Balanced Softmax is widely adopted as a state-of-the-art rebalancing method, it possesses inherent limitations, such as yielding disproportionately lower testing accuracy for tail classes. To mitigate these shortcomings, we propose the Class-Balanced Softmax (CBS). Rooted in a theoretical Bayesian framework and a heuristic power-law assum...",
+   "[abstract] ...er, their performance degrades significantly on imbalanced datasets. Although Balanced Softmax is widely adopted as a state-of-the-art rebalancing method, it possesses inherent limitations, such as yielding disproportionately lower testing accuracy for tail classes. To mitigate these shortcomings, we propose the Class-Balanced Softmax (CBS). Rooted in a theoretical Bayesian framework and a heuristic power-law assumption, the CBS is a simple logit adjustment that is computationally inexpensive and easily integrated into existing pipelines. Furthermore, we characterise a fundamental phenomenon in models trained on imbalanced data, termed the preference i..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:49",
+  "page": "arxiv:2607.22262v1",
+  "subject": "ST-VTD",
+  "object": "LSTM",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ST-VTD models temporal factors using learned LSTM-based priors.",
+  "contexts": [
+   "[body] ...) framework that combines a tensor factorization generative model with structured priors to jointly represent spatial maps and temporal dynamics. Spatial factors are regularized to promote a low-rank structure inspired by the LL1 decomposition, while temporal factors are modeled using a learned Long short-term memory (LSTM)-based prior, enabling flexible and adaptive dynamics. Posterior inference is performed using an amortized variational formulation by unrolling iterations of an optimization algorithm, leading to an interpretable and parameter-efficient architecture. The proposed inference framework employs a warm-start strategy based on group indepe...",
+   "[abstract] ...) framework that combines a tensor factorization generative model with structured priors to jointly represent spatial maps and temporal dynamics. Spatial factors are regularized to promote a low-rank structure inspired by the LL1 decomposition, while temporal factors are modeled using a learned Long short-term memory (LSTM)-based prior, enabling flexible and adaptive dynamics. Posterior inference is performed using an amortized variational formulation by unrolling iterations of an optimization algorithm, leading to an interpretable and parameter-efficient architecture. The proposed inference framework employs a warm-start strategy based on group indepe..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:50",
+  "page": "arxiv:2607.22262v1",
+  "subject": "ST-VTD",
+  "object": "Group ICA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "ST-VTD significantly improves over Group ICA baseline on latent factor recovery.",
+  "contexts": [
+   "[body] ...Variational Low-rank Tensor Decomposition for Multisubject Spatiotemporal Data Analysis Abstract I Introduction II Proposed Model and Inference Strategy II-A Generative Model II-B Inference strategy II-C Optimization III Experiments III-A Hybrid Synthetic Data III-B Benchmark Models Setup Group ICA (GICA) Multilinear rank- ( L r , L r , 1 ) (L_{r},L_{r},1) decomposition Bayesian CP factorization (BCPF) PARAFAC2 III-C ST-VTD Setup and Ablations III-D ST-VTD vs. Benchmark Models: Performance Comparison IV Conclusion and Discussion References License: arXiv.org perpetual non-exclusive license arXiv:2607.22262v1 [stat.ML] 24 J...",
+   "[body] ...ourse (b), the observed data slice at time t = 150 t=150 for subject n = 1 n=1 (c), and the 10 selected spatial maps overlaid on the data slice (d). III-B Benchmark Models Setup We consider four benchmark decomposition methods representing complementary structural assumptions for multi-subject spatiotemporal analysis. Group ICA (GICA) The centered subject-level data matrices ( \ud835\udc17 ( n ) ) \u22a4 \u2208 \u211d V \u00d7 T \\big(\\mathbf{X}^{(n)}\\big)^{\\top}\\in\\mathbb{R}^{V\\times T} are concatenated along the temporal dimension to obtain \ud835\udc17 g \u2208 \u211d V \u00d7 ( N \u22c5 T ) \\mathbf{X}_{g}\\in\\mathbb{R}^{V\\times(N\\cdot T)} , with V = 900 V=900 . A rank- K K PCA basis \ud835\udc14 \u2208 \u211d V \u00d7 K \\mathbf{U}\\in\\ma..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:51",
+  "page": "arxiv:2607.22262v1",
+  "subject": "ST-VTD",
+  "object": "PARAFAC2",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "ST-VTD outperforms PARAFAC2 on synthetic fMRI data.",
+  "contexts": [
+   "[body] ...s Abstract I Introduction II Proposed Model and Inference Strategy II-A Generative Model II-B Inference strategy II-C Optimization III Experiments III-A Hybrid Synthetic Data III-B Benchmark Models Setup Group ICA (GICA) Multilinear rank- ( L r , L r , 1 ) (L_{r},L_{r},1) decomposition Bayesian CP factorization (BCPF) PARAFAC2 III-C ST-VTD Setup and Ablations III-D ST-VTD vs. Benchmark Models: Performance Comparison IV Conclusion and Discussion References License: arXiv.org perpetual non-exclusive license arXiv:2607.22262v1 [stat.ML] 24 Jul 2026 Variational Low-rank Tensor Decomposition for Multisubject Spatiotemporal Data Analysis Laura M. Montaldo \u2217...",
+   "[body] ...model [ 18 ] for fully observed tensors, using a fixed rank R = K R=K . The model was initialized with the maximum-likelihood SVD-based scheme and run without automatic rank pruning. Noise precision was updated during inference. The resulting factors were used to recover subject-specific spatial maps and time courses. PARAFAC2 Temporal factors are allowed to vary across subjects, while the spatial maps are shared. The subject-level data matrix \ud835\udc17 ( n ) \u2208 \u211d T \u00d7 V \\mathbf{X}^{(n)}\\in\\mathbb{R}^{T\\times V} is modeled as \ud835\udc17 ( n ) \u2248 \ud835\udc02 ( n ) \u200b diag \u200b ( \ud835\udc1a ( n ) ) \u200b \ud835\udc19 \u22a4 \\mathbf{X}^{(n)}\\approx\\mathbf{C}^{(n)}\\,\\mathrm{diag}(\\mathbf{a}^{(n)})\\,\\mathbf{Z}^{\\top} ,..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:52",
+  "page": "arxiv:2607.22262v1",
+  "subject": "ST-VTD",
+  "object": "Bayesian CP factorization",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "ST-VTD is compared against Bayesian CP factorization for tensor decomposition.",
+  "contexts": [
+   "[body] ...bject Spatiotemporal Data Analysis Abstract I Introduction II Proposed Model and Inference Strategy II-A Generative Model II-B Inference strategy II-C Optimization III Experiments III-A Hybrid Synthetic Data III-B Benchmark Models Setup Group ICA (GICA) Multilinear rank- ( L r , L r , 1 ) (L_{r},L_{r},1) decomposition Bayesian CP factorization (BCPF) PARAFAC2 III-C ST-VTD Setup and Ablations III-D ST-VTD vs. Benchmark Models: Performance Comparison IV Conclusion and Discussion References License: arXiv.org perpetual non-exclusive license arXiv:2607.22262v1 [stat.ML] 24 Jul 2026 Variational Low-rank Tensor Decomposition for Multisubject Spatiotemporal D...",
+   "[body] ...-squares solver, with random initialization. The resulting spatial and temporal factors were then rescaled to the original data norm and stored as subject-specific spatial maps \ud835\udc19 ( n ) \u2208 \u211d V \u00d7 K \\mathbf{Z}^{(n)}\\in\\mathbb{R}^{V\\times K} and temporal courses \ud835\udc02 ( n ) \u2208 \u211d T \u00d7 K \\mathbf{C}^{(n)}\\in\\mathbb{R}^{T\\times K} . Bayesian CP factorization (BCPF) For each subject, the centered input tensor was decomposed with the BCPF model [ 18 ] for fully observed tensors, using a fixed rank R = K R=K . The model was initialized with the maximum-likelihood SVD-based scheme and run without automatic rank pruning. Noise precision was updated during inference. The r..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:53",
+  "page": "arxiv:2607.22264v1",
+  "subject": "multimodal EHR model",
+  "object": "MIMIC-IV",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The model is evaluated on MIMIC-IV for zero-shot ICU mortality prediction.",
+  "contexts": [
+   "[body] ...EHR backbone to use ECG, CXR, and clinical notes with latent compression and cross-attention. We propose a compression module, inspired by Perceiver (Jaegle et al. , 2021 ) , that compresses modality information into a small number of latents, improving model efficiency and performance. Through controlled ablations on MIMIC-IV, we show that latent compression is essential for effective and efficient fusion of long modality sequences, and that encoder choice has a clear within-modality effect. However, we also find that simply adding auxiliary modalities does not guarantee improvement on ICU mortality: only one bimodal configuration (notes with BioMedBE...",
+   "[body] ..., and a unified three-modality model does not surpass it either. This points to a need for more flexible fusion architectures and clinically contextual evaluation that can reveal where each modality genuinely contributes. 2 Method 2.1 Problem Setup and Data We study autoregressive modeling of patient trajectories from MIMIC-IV v3.1 (Johnson et al. , 2024 ) . Following ETHOS (Renc et al. , 2024 ) , we convert MIMIC-IV and MIMIC-IV-ED (Johnson et al. , 2023b ) into the Medical Event Data Standard (MEDS) format (Arnrich et al. , 2024 ) and tokenize each patient\u2019s record into a chronologically ordered sequence x [...] Evaluation We focus on zero-shot ICU...",
+   "[body] ...ore flexible fusion architectures and clinically contextual evaluation that can reveal where each modality genuinely contributes. 2 Method 2.1 Problem Setup and Data We study autoregressive modeling of patient trajectories from MIMIC-IV v3.1 (Johnson et al. , 2024 ) . Following ETHOS (Renc et al. , 2024 ) , we convert MIMIC-IV and MIMIC-IV-ED (Johnson et al. , 2023b ) into the Medical Event Data Standard (MEDS) format (Arnrich et al. , 2024 ) and tokenize each patient\u2019s record into a chronologically ordered sequence x [...] Evaluation We focus on zero-shot ICU mortality prediction. Following ETHOS (Renc et al. , 2024 ) , evaluation conditions on the l..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:54",
+  "page": "arxiv:2607.22264v1",
+  "subject": "multimodal EHR model",
+  "object": "BioMedBERT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Clinical notes are encoded using BioMedBERT as the pretrained encoder.",
+  "contexts": [
+   "[body] ...show that latent compression is essential for effective and efficient fusion of long modality sequences, and that encoder choice has a clear within-modality effect. However, we also find that simply adding auxiliary modalities does not guarantee improvement on ICU mortality: only one bimodal configuration (notes with BioMedBERT) marginally exceeds the EHR-only baseline, and a unified three-modality model does not surpass it either. This points to a need for more flexible fusion architectures and clinically contextual evaluation that can reveal where each modality genuinely contributes. 2 Method 2.1 Problem Setup and Data We study autoregressive modeli...",
+   "[body] ...baseline at 0.8651/0.4561/0.7182 (AUROC/AUPRC/F1). Adding an auxiliary modality does not uniformly improve over this baseline: CXR with either encoder performs below the baseline across all three metrics; ECG with CSFM (Gu et al. , 2026 ) improves AUROC (0.8703 vs. 0.8651) but lowers AUPRC and F1; clinical notes with BioMedBERT (Gu et al. , 2020 ) is the only configuration to exceed the baseline on both AUROC and AUPRC (0.8751/0.4599), while still trailing on F1. Encoder choice nonetheless has a clear within-modality effect: BioMedCLIP (Zhang et al. , 2023 ) outperforms ViT-MAE (He et al. , 2022 ) on CXR; CSFM outperforms ECG-FM (McKeen et al. , 2025...",
+   "[body] ...ne on both AUROC and AUPRC (0.8751/0.4599), while still trailing on F1. Encoder choice nonetheless has a clear within-modality effect: BioMedCLIP (Zhang et al. , 2023 ) outperforms ViT-MAE (He et al. , 2022 ) on CXR; CSFM outperforms ECG-FM (McKeen et al. , 2025 ) on ECG with a notable AUPRC gap (0.426 vs. 0.407); and BioMedBERT substantially outperforms BERT (Devlin et al. , 2019 ) on notes across all metrics. For CXR and notes, the advantage comes from domain-adapted pretraining over general-purpose models; for ECG, CSFM benefits from training on a larger and more diverse cardiac corpus. The unified model conditioned on all three modalities (Table 2..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:55",
+  "page": "arxiv:2607.22264v1",
+  "subject": "multimodal EHR model",
+  "object": "BioMedCLIP",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Chest X-ray images are encoded using BioMedCLIP encoder.",
+  "contexts": [
+   "[body] ...th CSFM (Gu et al. , 2026 ) improves AUROC (0.8703 vs. 0.8651) but lowers AUPRC and F1; clinical notes with BioMedBERT (Gu et al. , 2020 ) is the only configuration to exceed the baseline on both AUROC and AUPRC (0.8751/0.4599), while still trailing on F1. Encoder choice nonetheless has a clear within-modality effect: BioMedCLIP (Zhang et al. , 2023 ) outperforms ViT-MAE (He et al. , 2022 ) on CXR; CSFM outperforms ECG-FM (McKeen et al. , 2025 ) on ECG with a notable AUPRC gap (0.426 vs. 0.407); and BioMedBERT substantially outperforms BERT (Devlin et al. , 2019 ) on notes across all metrics. For CXR and notes, the advantage comes from domain-adapted p...",
+   "[body] ...rms BERT (Devlin et al. , 2019 ) on notes across all metrics. For CXR and notes, the advantage comes from domain-adapted pretraining over general-purpose models; for ECG, CSFM benefits from training on a larger and more diverse cardiac corpus. The unified model conditioned on all three modalities (Table 2 , final row; BioMedCLIP for CXR, CSFM for ECG, and BioMedBERT for notes) also fails to surpass the EHR-only baseline, indicating that simply combining modalities does not yield additive gains. Discussion. Our results show that these design choices matter substantially, yet they are often left uninvestigated. We note, however, that the rollout-based ev..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:56",
+  "page": "arxiv:2607.22264v1",
+  "subject": "multimodal EHR model",
+  "object": "CSFM",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ECG waveforms are encoded using the CSFM pretrained encoder.",
+  "contexts": [
+   "[body] ...tion. Table 2 evaluates pretrained encoder choice in bimodal settings on ICU mortality, with the EHR-only baseline at 0.8651/0.4561/0.7182 (AUROC/AUPRC/F1). Adding an auxiliary modality does not uniformly improve over this baseline: CXR with either encoder performs below the baseline across all three metrics; ECG with CSFM (Gu et al. , 2026 ) improves AUROC (0.8703 vs. 0.8651) but lowers AUPRC and F1; clinical notes with BioMedBERT (Gu et al. , 2020 ) is the only configuration to exceed the baseline on both AUROC and AUPRC (0.8751/0.4599), while still trailing on F1. Encoder choice nonetheless has a clear within-modality effect: BioMedCLIP (Zhang et al...",
+   "[body] ...d F1; clinical notes with BioMedBERT (Gu et al. , 2020 ) is the only configuration to exceed the baseline on both AUROC and AUPRC (0.8751/0.4599), while still trailing on F1. Encoder choice nonetheless has a clear within-modality effect: BioMedCLIP (Zhang et al. , 2023 ) outperforms ViT-MAE (He et al. , 2022 ) on CXR; CSFM outperforms ECG-FM (McKeen et al. , 2025 ) on ECG with a notable AUPRC gap (0.426 vs. 0.407); and BioMedBERT substantially outperforms BERT (Devlin et al. , 2019 ) on notes across all metrics. For CXR and notes, the advantage comes from domain-adapted pretraining over general-purpose models; for ECG, CSFM benefits from training on a...",
+   "[body] ...22 ) on CXR; CSFM outperforms ECG-FM (McKeen et al. , 2025 ) on ECG with a notable AUPRC gap (0.426 vs. 0.407); and BioMedBERT substantially outperforms BERT (Devlin et al. , 2019 ) on notes across all metrics. For CXR and notes, the advantage comes from domain-adapted pretraining over general-purpose models; for ECG, CSFM benefits from training on a larger and more diverse cardiac corpus. The unified model conditioned on all three modalities (Table 2 , final row; BioMedCLIP for CXR, CSFM for ECG, and BioMedBERT for notes) also fails to surpass the EHR-only baseline, indicating that simply combining modalities does not yield additive gains. Discussion...."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:57",
+  "page": "arxiv:2607.22268v1",
+  "subject": "vector GVF model",
+  "object": "C-MAPSS",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The GVF model is evaluated on NASA C-MAPSS label-scarce stitch data.",
+  "contexts": [
+   "[abstract] ...ry identifies the Bellman fixed point of the vector GVFs, characterizes the linear projected-TD limit and its relation to complete-return Monte Carlo regression under realizability, and explains when bootstrapped TD targets are less variable than Monte Carlo returns. On an event-triggered multimode simulation and NASA C-MAPSS label-scarce stitch data, TD improves RUL and failure-mode prediction relative to a supervised same-backbone Monte Carlo control, especially under scarce complete labels. Practically, fragmented, identity-free degradation records can contribute local Bellman transitions instead of being discarded until complete run-to-failure labe..."
+  ]
+ },
+ {
+  "sid": "out_15.jsonl:58",
+  "page": "arxiv:2607.22268v1",
+  "subject": "vector GVF model",
+  "object": "General Value Functions",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RUL and failure-mode prediction are formulated as vector General Value Function prediction.",
+  "contexts": [
+   "[body] ...redictive state from the definition of the prognostic target: different sensor representations may be used without changing the hitting-time and hitting-probability quantities being predicted. These quantities share a forward-looking structure: each prediction summarizes future evolution until a terminal event occurs. General value functions (GVFs) provide a compact language for defining such temporally [...] experiments. Remark 2 (TD target validity under censoring) . Fix t t and a prefix observed through t + n t+n , with absorption time T T possibly unobserved. The MC target y t MC y_{t}^{\\mathrm{MC}} (Eq. ( 6 )) is well-defined from this prefix onl...",
+   "[abstract] ...ve maintenance. Many data-driven pipelines use fixed-window supervised learning with complete terminal labels; such routes do not naturally encode the temporal recursion linking successive degradation-state predictions when observations are partial or unit identities are unavailable. We formulate prognostics as vector General Value Function (GVF) prediction on an absorbing degradation process, treating RUL and failure-mode probabilities as temporally consistent targets rather than independent window-level labels, and estimate them with a multi-step temporal-difference estimator, TD($n,\u03bb$). Supporting theory identifies the Bellman fixed point of the vec..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:0",
+  "page": "arxiv:2607.22287v1",
+  "subject": "Recommendations",
+  "object": "Amazon",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Recommendations is evaluated on Amazon.",
+  "contexts": [
+   "[body] ...ems bought 7.34 % 7.34\\% 1.42 1.42 % % of users with \u2265 \\geq 3 items bought 3.62 % 3.62\\% 0.53 0.53 % The item catalog within our industrial recommendation dataset covers a diverse range of offers: \u2022 Telecommunications Services: including voice and Wi-Fi plans. \u2022 TV &amp; Streaming Subscriptions: such as DAZN, Netflix, Amazon Prime, Disney+, and TIMVISION. \u2022 Promotional Discounts: such as percentage-off deals or limited-time offer. \u2022 Smart Home Devices: for example, Google Nest or security cameras. \u2022 Network Equipment: including routers and related hardware. The nature of offers allowing for collective access or use by a group (such as a family) has a d..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:1",
+  "page": "arxiv:2607.22299v1",
+  "subject": "Hopformer",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Hopformer builds on LoRA.",
+  "contexts": [
+   "[body] ...l covariates into a lower-dimensional shared trend space. We provide an oracle inequality for this estimator, showing that SPA yields near-optimal bias-variance trade-off under mild sparsity assumptions. In the second stage, Hopformer models residuals using a pre-trained Transformer fine-tuned via Low-Rank Adaptation (LoRA) (Hu et al. , 2022 ) , a parameter-efficient fine tuning (PEFT) method. We adopt LoRA not only for its empirical efficiency, but also because it enables generalization guarantees under time series dependence: building on information-theoretic arguments, our theory shows that PEFT reduces the mutual information between model and data....",
+   "[body] ...ity for this estimator, showing that SPA yields near-optimal bias-variance trade-off under mild sparsity assumptions. In the second stage, Hopformer models residuals using a pre-trained Transformer fine-tuned via Low-Rank Adaptation (LoRA) (Hu et al. , 2022 ) , a parameter-efficient fine tuning (PEFT) method. We adopt LoRA not only for its empirical efficiency, but also because it enables generalization guarantees under time series dependence: building on information-theoretic arguments, our theory shows that PEFT reduces the mutual information between model and data. Our experiments show that it outperforms both zero-shot and full fine-tuning. The sec...",
+   "[body] ...2 2 \\hat{\\omega}_{\\bm{p}}\\in\\arg\\min_{\\pi\\in\\mathbb{R}^{\\bm{p}}}\\left\\|\\mathbf{X}-\\mathbf{Z}\\pi\\right\\|_{2}^{2} ) for our ablation study. In the second stage, we use the Chronos-bolt-small (Chronos) to implement three models: a zero-shot model without fine-tuning, a fully fine-tuned model, and a model fine-tuned using LoRA. For LoRA, we employ a low-rank adaptation with rank = 8, a scaling factor of \u03b1 = 16 \\alpha=16 , and a dropout rate of 5%, applied to the query, key, value, and output projections. We fine-tune models for 100 gradient steps. We run all reported experiments on an Ubuntu server with 4 \u00d7 1080Ti GPUs and 96 CPUs. We evaluate Hopformer us..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:2",
+  "page": "arxiv:2607.22304v1",
+  "subject": "Speech",
+  "object": "GPT-2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Speech builds on GPT-2.",
+  "contexts": [
+   "[body] ...te eight open-source voice cloning models that cover autoregressive, flow-matching, and hybrid architectures (Table 1 ), selected for architectural diversity and reported quality. Table 1: Voice cloning models evaluated. Only the models marked with \u2020 \\dagger are used for RQ2 (cross-lingual). Model Architecture XTTS v2 GPT-2 autoregressive + Perceiver Zonos Mamba2 SSM + Transformer decoder E2-TTS Flow-matching, character-level input F5-TTS Flow-matching, ConvNeXt text encoder OpenAudio S1-mini \u2020 \u2217 {}^{*}\\dagger Qwen3 LLM + online RLHF CosyVoice 2 \u2020 Autoregressive + flow-matching CosyVoice 3 \u2020 LLM + flow-matching, RL post-training MaskGCT \u2020 Masked genera..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:3",
+  "page": "arxiv:2607.22304v1",
+  "subject": "Speech",
+  "object": "RLHF",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Speech builds on RLHF.",
+  "contexts": [
+   "[body] ...ated. Only the models marked with \u2020 \\dagger are used for RQ2 (cross-lingual). Model Architecture XTTS v2 GPT-2 autoregressive + Perceiver Zonos Mamba2 SSM + Transformer decoder E2-TTS Flow-matching, character-level input F5-TTS Flow-matching, ConvNeXt text encoder OpenAudio S1-mini \u2020 \u2217 {}^{*}\\dagger Qwen3 LLM + online RLHF CosyVoice 2 \u2020 Autoregressive + flow-matching CosyVoice 3 \u2020 LLM + flow-matching, RL post-training MaskGCT \u2020 Masked generative codec transformer *Hereafter referred to as OpenAudio. 2.2 Datasets and Tasks Table 2 summarises the datasets and tasks used. For RQ1, we use four public datasets covering emotion, sentiment, sarcasm, and accen..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:4",
+  "page": "arxiv:2607.22305v1",
+  "subject": "Roadmap",
+  "object": "RLHF",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Roadmap builds on RLHF.",
+  "contexts": [
+   "[body] ...1 Introduction Initial approaches to aligning large language models (LLMs) to human values and intentions, such as reinforcement learning from human feedback (RLHF), aggregate the preferences of many annotators into a single reward, resulting in flattening the diversity of human values into one monolithic objective (Casper et al., 2023 ) . A growing body of work argues that AI systems should represent and serve the legitimate diversity of human values and preferences between and within individu..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:5",
+  "page": "arxiv:2607.22305v1",
+  "subject": "Roadmap",
+  "object": "reinforcement learning",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Roadmap builds on reinforcement learning.",
+  "contexts": [
+   "[body] ...1 Introduction Initial approaches to aligning large language models (LLMs) to human values and intentions, such as reinforcement learning from human feedback (RLHF), aggregate the preferences of many annotators into a single reward, resulting in flattening the diversity of human values into one monolithic objective (Casper et al., 2023 ) . A growing body of work argues that AI systems should represent and serve the legitimate diversity of human values..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:6",
+  "page": "arxiv:2607.22319v1",
+  "subject": "RAG",
+  "object": "retrieval augmented generation",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RAG builds on retrieval augmented generation.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:7",
+  "page": "arxiv:2607.22334v1",
+  "subject": "Cross-Tokenizer",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Cross-Tokenizer is evaluated on HumanEval.",
+  "contexts": [
+   "[body] ...ode benchmarks. A symbolic verifier scores mathematics by accepting any equivalent expression, whereas code is evaluated by sandboxed execution against each benchmark\u2019s official tests and limits. The mathematics suite comprises MATH-500 [ 53 , 54 ] and the February 2026 AIME and HMMT contests [ 55 ] . For code, we use HumanEval+ [ 56 ] , the most recent official LiveCodeBench window [ 57 ] , and the official TACO test split [ 52 ] at its easy / medium labels. From 8 8 samples per problem, we report avg@8 and pass@8 ; each arm is represented by the checkpoint with the highest six-benchmark average. Decoding settings, metric definitions, and the paired-b...",
+   "[body] .../ medium labels. From 8 8 samples per problem, we report avg@8 and pass@8 ; each arm is represented by the checkpoint with the highest six-benchmark average. Decoding settings, metric definitions, and the paired-bootstrap protocol appear in Appendices \u02dc F and H.4 . Mathematics Code Method AIME 2026 HMMT 2026 MATH-500 HumanEval+ LiveCodeBench TACO Avg. avg@8 pass@8 avg@8 pass@8 avg@8 pass@8 avg@8 pass@8 avg@8 pass@8 avg@8 pass@8 avg@8 pass@8 Qwen3.5-2B (base) 7.5 26.7 10.6 18.2 60.5 84.6 52.5 84.0 11.6 17.6 5.3 11.7 24.7 40.5 Qwen3-32B 71.7 86.7 47.3 63.6 93.7 97.2 82.2 96.9 56.5 73.1 53.2 64.3 67.4 80.3 SimCT 35.8 56.7 18.9 30.3 83.4 93.6 56.4 87.7 10..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:8",
+  "page": "arxiv:2607.22334v1",
+  "subject": "Cross-Tokenizer",
+  "object": "MATH",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Cross-Tokenizer is evaluated on MATH.",
+  "contexts": [
+   "[body] ...1 Introduction Open-weight language models [ 1 , 2 , 3 , 4 , 5 ] have advanced rapidly, with different model families exhibiting complementary strengths in mathematical reasoning, complex problem solving, agentic coding, and tool use. In practical deployments, it is often desirable to consolidate these diverse capabilities into a single compact model. Beyond capability integration, such consolidation can improve inference efficiency by reducing computational and memory overhead and avoiding...",
+   "[body] ...7 [ 5 ] sits farthest ( 0.81 0.81 ). We abbreviate the second teacher as GLM-Z1-9B and denote the pairs P1, P2, and P3, respectively, in later figures and tables. Because teacher capability also varies, all comparisons are made within a pair. Training data. Training uses 20 , 000 20{,}000 prompts, split evenly between mathematics and code. We draw 10 10 k problems with exact integer answers from DAPO-Math [ 51 ] and 10 10 k TACO problems [ 52 ] , each with a recovered executable test suite. Implementation details. Except for SeqKD, every arm trains on-policy. Rollouts are sampled from the student at temperature 1.0 1.0 under its release decode settings...",
+   "[body] ...nd denote the pairs P1, P2, and P3, respectively, in later figures and tables. Because teacher capability also varies, all comparisons are made within a pair. Training data. Training uses 20 , 000 20{,}000 prompts, split evenly between mathematics and code. We draw 10 10 k problems with exact integer answers from DAPO-Math [ 51 ] and 10 10 k TACO problems [ 52 ] , each with a recovered executable test suite. Implementation details. Except for SeqKD, every arm trains on-policy. Rollouts are sampled from the student at temperature 1.0 1.0 under its release decode settings, with a maximum length of 27 , 648 27{,}648 tokens. After each response is re-rende..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:9",
+  "page": "arxiv:2607.22334v1",
+  "subject": "Cross-Tokenizer",
+  "object": "knowledge distillation",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Cross-Tokenizer builds on knowledge distillation.",
+  "contexts": [
+   "[body] ...capability integration, such consolidation can improve inference efficiency by reducing computational and memory overhead and avoiding the need to deploy or route requests among multiple specialized models. This motivates transferring knowledge from heterogeneous teacher models into an efficient student model [ 6 ] . Knowledge distillation provides a natural mechanism for this transfer by training the student to imitate the teacher\u2019s predictive behavior [ 7 , 8 , 9 , 10 ] . On-policy distillation (OPD) performs this transfer along student-generated trajectories, querying the teacher at the states the student actually visits [ 11 , 12 , 13 , 14 ] . Its..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:10",
+  "page": "arxiv:2607.22345v1",
+  "subject": "Mini",
+  "object": "Gemini",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Mini compares to Gemini.",
+  "contexts": [
+   "[body] ...an upload mechanism for PDF documents, where users could upload lecture slides by drag and drop. The system could access these PDFs using RAG, providing it with context-sensitive topic knowledge. This implementation is similar to functions offered by chat interfaces of popular generative AI systems such as ChatGPT and Gemini, but these functions are less commonly used for HRI implementations such as the baseline Reachy Mini Conversation App . To apply \u201ceducational strategies\u201d, we used dynamic system prompting and stateful prompt orchestration. The robot was instructed to use scaffolding strategies, including Socratic questioning (i.e., questions that g..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:11",
+  "page": "arxiv:2607.22345v1",
+  "subject": "Mini",
+  "object": "retrieval augmented generation",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Mini builds on retrieval augmented generation.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:12",
+  "page": "arxiv:2607.22352v1",
+  "subject": "Time-Reversed",
+  "object": "TRACE-HEI",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Time-Reversed is evaluated on TRACE-HEI.",
+  "contexts": [
+   "[body] ...Time-Reversed Imaging: Inferring Past Human\u2013Environment Interactions from Multimodal Data Abstract I Introduction II Related Work III Time-Reversed Imaging III-A Problem Formulation III-B Structured Past-Event Description III-C VLM-Guided Diffusion for Past-Scene Reconstruction IV Experimental Protocol IV-A TRACE-HEI Dataset IV-B Benchmark and Evaluation Metrics IV-B 1 Past-Event Inference Action Accuracy Object Accuracy Material Accuracy Exact Match Top-3 Accuracy IV-B 2 Past-Frame Reconstruction Low-Level Metrics Feature-Level Metrics High-Level Metrics V Experimental Results V-A VLM Comparison for Past-Event Description V-B Prompt Structu...",
+   "[body] ...w paradigm that infers what just happened in a scene from fading multimodal traces. Instead of extrapolating or interpolating video frames, our goal is to infer past human\u2013environment interactions from residual physical imprints observable in thermal, ultraviolet, and visible spectra. To study this problem, we present TRACE-HEI, the first proof-of-concept dataset for time-reversed imaging, containing synchronized tri-modal video sequences of actions such as sitting, touching, moving objects, and liquid spills, captured across diverse materials and recorded up to three minutes after contact. To establish the benchmark, we proposed a multimodal inference...",
+   "[abstract] ...w paradigm that infers what just happened in a scene from fading multimodal traces. Instead of extrapolating or interpolating video frames, our goal is to infer past human-environment interactions from residual physical imprints observable in thermal, ultraviolet, and visible spectra. To study this problem, we present TRACE-HEI, the first proof-of-concept dataset for time-reversed imaging, containing synchronized tri-modal video sequences of actions such as sitting, touching, moving objects, and liquid spills, captured across diverse materials and recorded up to three minutes after contact. To establish the benchmark, we propose a multimodal inference..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:13",
+  "page": "arxiv:2607.22355v1",
+  "subject": "Single-Image",
+  "object": "LLaVA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Single-Image builds on LLaVA.",
+  "contexts": [
+   "[body] ...g (Sec. 3.1 ), and mask-aware contrastive alignment. This stage produces a material likelihood matrix P \u2208 \u211d N \u00d7 K P\\in\\mathbb{R}^{N\\times K} for the N N sampled points across K K candidate materials. CLIP visual and text embeddings. Motivated by the sophisticated world knowledge embedded in vision\u2013language models like LLaVA [ liu2023visualinstructiontuning ] , we leverage the fine-tuned VLM (Sec. 3.1 ) to propose candidate materials and their intrinsic physical properties ( e.g . , density, Young\u2019s modulus, and thickness) in textual form. As mentioned above, each sampled patch is encoded via a frozen CLIP ViT-B/16 encoder [ ilharco_gabriel_2021_5143773..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:14",
+  "page": "arxiv:2607.22355v1",
+  "subject": "Single-Image",
+  "object": "CLIP",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Single-Image builds on CLIP.",
+  "contexts": [
+   "[body] ...ists of three main components: 1) 3D-Aware Visual Sampling . We perform geometry-aware 2D sampling that approximates voxel centers when lifted into 3D. This enables coarse but spatially structured reasoning from a single view. 2) Material Probability Estimation . For each sampled region (centered with sampled points), CLIP provides visual embeddings while a fine-tuned Vision Language Model (VLM) proposes material candidates and associated physical attributes such as density, Young\u2019s modulus, and thickness. A mask-aware contrastive module aligns visual patches with material semantics and produces material likelihoods for each pseudo-voxel. 3) Physical P...",
+   "[body] ...3 ). Since s s depends on estimated depth and camera intrinsics, we analyze sensitivity to perturbations of these quantities in the Supplementary. Using the spacing s s , we sample N N non-overlapping 2D points over the object. A square patch of side length s s is cropped around each point and embedded using a frozen CLIP ViT-B/16 encoder [ ilharco_gabriel_2021_5143773 ] , yielding visual descriptors { f i } i = 1 N \u2208 \u211d D \\{f_{i}\\}_{i=1}^{N}\\in\\mathbb{R}^{D} . This stage provides a spatially structured set of 3D-aware visual tokens that approximate voxel centers for subsequent reasoning. The detailed sampling algorithm is presented in Supplementary ma...",
+   "[body] ...niform spacing (top) causes voxel overlap and redundancy; our adaptive spacing (bottom) produces non-overlapping coverage that better approximates a surface voxel grid. 3.3 Material Probability Estimation To infer material categories and their associated physical attributes from local appearance cues, SiPhy integrates CLIP-based visual features, VLM-driven material reasoning (Sec. 3.1 ), and mask-aware contrastive alignment. This stage produces a material likelihood matrix P \u2208 \u211d N \u00d7 K P\\in\\mathbb{R}^{N\\times K} for the N N sampled points across K K candidate materials. CLIP visual and text embeddings. Motivated by the sophisticated world knowledge embe..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:15",
+  "page": "arxiv:2607.22355v1",
+  "subject": "Single-Image",
+  "object": "ViT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Single-Image builds on ViT.",
+  "contexts": [
+   "[body] ...nement . The physical property value at each point is obtained [...] experiments confirm that a naive fixed-spacing baseline results in suboptimal performance ( Tab. \u02dc 1 ), primarily due to virtual voxel overlap and redundancy ( Fig. \u02dc 3 ). Since s s depends on estimated depth and camera intrinsics, we analyze sensitivity to perturbations of these quantities in the Supplementary. Using the spacing s s , we sample N N non-overlapping 2D points over the object. A square patch of side length s s is cropped around each point and embedded using a frozen CLIP ViT-B/16 encoder [ ilharco_gabriel_2021_5143773 ] , yielding visual descriptors { f i } i = 1 N \u2208 \u211d...",
+   "[body] ...Since s s depends on estimated depth and camera intrinsics, we analyze sensitivity to perturbations of these quantities in the Supplementary. Using the spacing s s , we sample N N non-overlapping 2D points over the object. A square patch of side length s s is cropped around each point and embedded using a frozen CLIP ViT-B/16 encoder [ ilharco_gabriel_2021_5143773 ] , yielding visual descriptors { f i } i = 1 N \u2208 \u211d D \\{f_{i}\\}_{i=1}^{N}\\in\\mathbb{R}^{D} . This stage provides a spatially structured set of 3D-aware visual tokens that approximate voxel centers for subsequent reasoning. The detailed sampling algorithm is presented in Supplementary materia...",
+   "[body] ...ision\u2013language models like LLaVA [ liu2023visualinstructiontuning ] , we leverage the fine-tuned VLM (Sec. 3.1 ) to propose candidate materials and their intrinsic physical properties ( e.g . , density, Young\u2019s modulus, and thickness) in textual form. As mentioned above, each sampled patch is encoded via a frozen CLIP ViT-B/16 encoder [ ilharco_gabriel_2021_5143773 ] to extract visual features { \ud835\udc1f i } i = 1 N \\{\\mathbf{f}_{i}\\}_{i=1}^{N} . Simultaneously, the candidate material names generated by the VLM are projected into the same latent space using the CLIP text encoder, resulting in embeddings { \ud835\udc2d k } k = 1 K \\{\\mathbf{t}_{k}\\}_{k=1}^{K} . While the..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:16",
+  "page": "arxiv:2607.22355v1",
+  "subject": "Single-Image",
+  "object": "MAE",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Single-Image compares to MAE.",
+  "contexts": [
+   "[abstract] ...istency, while a heaviness-aware refinement improves thickness and volume estimation for dense objects. Across ABO-500, MVImgNet-100, and PhysXNet-100, SiPhy achieves state-of-the-art single-image performance, surpassing multi-view reconstruction methods by improving mass MnRE by up to 93% (vs. PUGS), reducing density MAE by 35.5% (vs. NeRF2Physics), and lowering Young's modulus error by 23.5%. We further validate SiPhy on real hand-object interaction datasets, demonstrating its potential as a data annotation engine for physical understanding from single-view imagery...."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:17",
+  "page": "arxiv:2607.22356v1",
+  "subject": "Order",
+  "object": "Phi",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Order builds on Phi.",
+  "contexts": [
+   "[body] ...ly pickups pressures these platforms to make rapid decisions, typically within seconds, involving two tightly coupled processes: order dispatching and routing ( mao2025faster ) . Order dispatching determines the assignment of accumulated orders to candidate couriers, considering constraints such as time windows, geographical proximity, and courier availability, while routing sequences the assigned pickup locations for each courier to minimize travel time and service penalties. At each dispatching wave (e.g., every 5 minutes), the platform faces a dynamic decision scenario: couriers are distributed across the service region, each carrying previously dis...",
+   "[body] ...d+1}:=1 , := k , j d + 1 + k , i d t r d k \u200b i \u200b j {}_{k,j}^{d+1}:={}_{k,i}^{d}+t_{r_{d}^{k}ij} , ( x \u00af k d + 1 , y \u00af k d + 1 ) := ( x \u00af j , y \u00af j ) (\\overline{x}_{k}^{d+1},\\overline{y}_{k}^{d+1}):=(\\overline{x}_{j},\\overline{y}_{j}) and R k , j d := \u00d7 t r d k \u200b i \u200b j + \u00d7 p j R_{k,j}^{d}:=\\alpha\\times t_{r_{d}^{k}ij}+\\phi\\times p_{j} , where r d k = \u230a d k , i t \u230b r_{d}^{k}=\\left\\lfloor\\frac{{}_{k,i}^{d}}{\\Delta t}\\right\\rfloor is the last time interval and ( x \u00af j , y \u00af j ) (\\overline{x}_{j},\\overline{y}_{j}) is the coordination of order j j . Objective Function : The objective function is set to be the same as Equation ( 6 ), while both considering th..."
+  ]
+ },
+ {
+  "sid": "out_16.jsonl:18",
+  "page": "arxiv:2607.22361v1",
+  "subject": "Indexing",
+  "object": "chain-of-thought",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Indexing builds on chain-of-thought.",
+  "contexts": [
+   "[body] ...n ] = { 1 , \u2026 , n } [n]=\\{1,\\ldots,n\\} . Peng et al., ( 2024 ) introduced this task and used communication complexity to show that 1-layer transformers with n o \u200b ( 1 ) n^{o(1)} parameters and n o \u200b ( 1 ) n^{o(1)} bits of precision cannot solve it. They further showed that such transformers require \u03a9 \u200b ( k ) \\Omega(k) chain-of-thought iterations for k k -fold composition, i \u21a6 f k \u2218 f k \u2212 1 \u2218 \u2026 \u2218 f 1 \u200b ( i ) . i\\mapsto f_{k}\\circ f_{k-1}\\circ\\ldots\\circ f_{1}(i). Afterwards, Kozachinskiy et al., ( 2025 ) removed the bounded-precision assumption, proving the same impossibility for infinite-precision 1-layer transformers with n o \u200b ( 1 ) n^{o(1)} paramete...",
+   "[body] ...ision 1-layer transformers with n o \u200b ( 1 ) n^{o(1)} parameters. They have also introduced the binary relation composition primitive and have conjectured that it cannot be done by O \u200b ( 1 ) O(1) -layer small transformers. At the same time, Barcelo et al., ( 2025 ) showed that k k -fold composition requires exactly k k chain-of-thought steps for 1-layer transformers of any size, although only under unique hard attention. In their breakthrough work, Chen et al., ( 2025 ) were able to extend this analysis to multi-layer transformers. They have shown that n o \u200b ( 1 ) n^{o(1)} -parameter n o \u200b ( 1 ) n^{o(1)} -precision transformers with masking require k k..."
+  ]
+ }
+]

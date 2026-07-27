@@ -1,0 +1,717 @@
+[
+ {
+  "sid": "out_12.jsonl:34",
+  "page": "arxiv:2607.21927v1",
+  "subject": "RIS-Kernel",
+  "object": "Qwen2-1.5B",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "RIS-Kernel is validated on Qwen2-1.5B-Instruct for long-context document analysis.",
+  "contexts": [
+   "[body] ...ve training limits. This paper describes the RIS-Kernel architecture, a systems-level implementation that injects runtime sparsity directly into unmodified language models [ 6 ] through two sampling regimes: Stochastic Mode for global coverage and Structural Mode for local community preservation. Validation focuses on Qwen2-1.5B-Instruct [ 7 ] and TinyLlama-1.1B [ 8 ] . Sub-2B parameter models define the most restrictive regime for long-context factual retrieval: compact enough to run on CPU hardware without GPU acceleration, yet architecturally complete enough to respond meaningfully to context delivered at inference time. Factual accuracy demands inf...",
+   "[body] ...ion factors of 4 \u00d7 4\\times or greater. The 2 \u00d7 2\\times boundary ( 4 \u00d7 4\\times for Qwen2 relative to its 32k limit) marks the operational range within which RIS ensemble coverage translates into measurable retrieval gain (Figure 6 ). Figure 6: Accuracy as a function of context window size under linear and YaRN scaling, Qwen2-1.5B, at the best-performing density and seed count for each window. Within the native positional limit ( \u2264 \\leq 32k), both methods are equivalent (scaling factor = 1.0 =~1.0 ). At 65,536 tokens, linear scaling drops to 15.6%\u201323.4% depending on density, while YaRN reaches 57.8%\u201362.5%. Zero-context baselines: 51.56% (for 64k) and 59....",
+   "[abstract] ...requires costly GPU clusters. The Reduced Interaction Sampling (RIS) inference engine addresses this constraint as a model-agnostic architecture. Without modifying weights, RIS reduces self-attention complexity to O(N log N) using sparse stochastic geometry that fits within commodity memory limits. We validate RIS on Qwen2-1.5B-Instruct across two regimes. In controlled evaluations at 32,768 tokens (where native dense attention serves as the upper bound), RIS-Stochastic at 1% density and 70 ensemble seeds achieves 75.00% accuracy, outperforming the native dense baseline (71.88%), while RIS-Stochastic at 5% density and 10 seeds matches it (71.88%). Thi..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:35",
+  "page": "arxiv:2607.21927v1",
+  "subject": "RIS-Kernel",
+  "object": "TinyLlama-1.1B",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "RIS-Kernel is validated on TinyLlama-1.1B for demonstrating architectural lower bounds.",
+  "contexts": [
+   "[body] ...describes the RIS-Kernel architecture, a systems-level implementation that injects runtime sparsity directly into unmodified language models [ 6 ] through two sampling regimes: Stochastic Mode for global coverage and Structural Mode for local community preservation. Validation focuses on Qwen2-1.5B-Instruct [ 7 ] and TinyLlama-1.1B [ 8 ] . Sub-2B parameter models define the most restrictive regime for long-context factual retrieval: compact enough to run on CPU hardware without GPU acceleration, yet architecturally complete enough to respond meaningfully to context delivered at inference time. Factual accuracy demands inference-time context delivery [..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:36",
+  "page": "arxiv:2607.21932v1",
+  "subject": "Generalized Neural Operator",
+  "object": "PINN",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The Generalized Neural Operator addresses limitations of Physics-Informed Neural Networks for parametric PDEs.",
+  "contexts": [
+   "[body] ...environmental interactions, learning a foundational physical neural model requires generalization across PDE parameters and boundary conditions. Figure 1 : Trilemma of existing PDE solvers. Traditional numerical solvers guarantee mathematical rigor but are computationally expensive and demand instance-specific design. PINNs maintain this rigor and offer efficient inference, yet still require instance-specific retraining. Neural operators achieve favorable accuracy-efficiency tradeoffs and physics-agnostic deployment, but often yield ill-posed predictions. Existing foundational models achieve physics-agnostic deployment but suffer from computational ine...",
+   "[abstract] ...ition-agnostic deployment and physical fidelity. Purely data-driven operators infer the underlying physics implicitly and thus lack the explicit constraints needed to ensure physically valid solutions across varying domains, rendering the learning problem ill-posed. On the other hand, Physics-Informed Neural Networks (PINNs) enforce rigorous physical constraints but necessitate costly, instance-specific optimization. Furthermore, the massive scale of emerging foundational operators has severely degraded their inference speeds, making them computationally uncompetitive with traditional numerical solvers. To address this bottleneck between condition-agno..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:37",
+  "page": "arxiv:2607.21933v1",
+  "subject": "HexLogicAgent",
+  "object": "chain-of-thought",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "HexLogicAgent extends chain-of-thought reasoning with semantic organization via hexagonal structure.",
+  "contexts": [
+   "[body] ...a typical LLM reasoning setting, where a model receives natural-language premises and a question, and produces a conclusion with or without external reasoning tools [ formal-logic-2003introduction ] . Existing methods can be grouped into three categories: (1) Linear Reasoning (LR) methods, such as Naive Prompting and Chain-of-Thought (CoT) prompting [ CO [...] 4 Experiments In this section, we conduct extensive experiments to evaluate the effectiveness, robustness, and internal design of HexLogicAgent. Specifically, we aim to answer the following research questions (RQs): \u2022 RQ1: How does HexLogicAgent perform against representative linear, aggregate,..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:38",
+  "page": "arxiv:2607.21933v1",
+  "subject": "HexLogicAgent",
+  "object": "FOLIO",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "HexLogicAgent is evaluated on FOLIO controlled deductive reasoning benchmark.",
+  "contexts": [
+   "[body] ..., backbone models, and baseline methods(Section 4.1 ). Finally, we provide qualitative case studies to illustrate how hexagonal semantic structuring and reflective verification affect the reasoning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoni...",
+   "[body] ...and baseline methods(Section 4.1 ). Finally, we provide qualitative case studies to illustrate how hexagonal semantic structuring and reflective verification affect the reasoning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evalu...",
+   "[body] ...line methods(Section 4.1 ). Finally, we provide qualitative case studies to illustrate how hexagonal semantic structuring and reflective verification affect the reasoning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evaluates mult..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:39",
+  "page": "arxiv:2607.21933v1",
+  "subject": "HexLogicAgent",
+  "object": "ProntoQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "HexLogicAgent is evaluated on ProntoQA multi-hop deduction benchmark.",
+  "contexts": [
+   "[body] ...ds(Section 4.1 ). Finally, we provide qualitative case studies to illustrate how hexagonal semantic structuring and reflective verification affect the reasoning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evaluates multi-hop dedu...",
+   "[body] ...022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evaluates multi-hop deduction over synthetic proof chains, while ProofWriter tests rule-based reasoning under open-world assum..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:40",
+  "page": "arxiv:2607.21933v1",
+  "subject": "HexLogicAgent",
+  "object": "ProofWriter",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "HexLogicAgent is evaluated on ProofWriter rule-based reasoning benchmark.",
+  "contexts": [
+   "[body] ...tive case studies to illustrate how hexagonal semantic structuring and reflective verification affect the reasoning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evaluates multi-hop deduction over synthetic proof chains, while Proo...",
+   "[body] ...ustrate how hexagonal semantic structuring and reflective verification affect the reasoning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evaluates multi-hop deduction over synthetic proof chains, while ProofWriter tests rule-based...",
+   "[body] ...gonal semantic structuring and reflective verification affect the reasoning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evaluates multi-hop deduction over synthetic proof chains, while ProofWriter tests rule-based reasoning under..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:41",
+  "page": "arxiv:2607.21933v1",
+  "subject": "HexLogicAgent",
+  "object": "ProverQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "HexLogicAgent is evaluated on ProverQA logical reasoning benchmark.",
+  "contexts": [
+   "[body] ...tructuring and reflective verification affect the reasoning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evaluates multi-hop deduction over synthetic proof chains, while ProofWriter tests rule-based reasoning under open-world assu...",
+   "[body] ...tive verification affect the reasoning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evaluates multi-hop deduction over synthetic proof chains, while ProofWriter tests rule-based reasoning under open-world assum..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:42",
+  "page": "arxiv:2607.21933v1",
+  "subject": "HexLogicAgent",
+  "object": "RepublicQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "HexLogicAgent is evaluated on RepublicQA logical reasoning benchmark.",
+  "contexts": [
+   "[body] ...soning process (Appendix). 4.1 Experimental Settings Benchmarks. We evaluate HexLogicAgent on five logical reasoning benchmarks: FOLIO [ Benchmark-FOLIO2022folio ] , ProntoQA [ Benchmark-Pronto-2022language ] , ProofWriter [ Benchmark-ProofWriter-2020proofwriter ] , ProverQA [ Benchmark-ProverQA-ICLR-2025large ] , and RepublicQA [ zhang2026semanticawarelogicalreasoningsemiotic ] . These benchmarks cover three complementary scenarios: 1. Controlled deductive reasoning. ProntoQA evaluates multi-hop deduction over synthetic proof chains, while ProofWriter tests rule-based reasoning under open-world assum..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:43",
+  "page": "arxiv:2607.21936v1",
+  "subject": "ARI",
+  "object": "RAG",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ARI builds on retrieval-augmented generation to integrate external knowledge for document restoration.",
+  "contexts": [
+   "[body] ...ation. Our method utilizes a pre-trained LLM that has indirectly learned from extensive datasets including historical knowledge and documents available on the web. This implicitly learned context acts as vital external knowledge, significantly improving the restoration of damaged characters. Additionally, we integrate RAG to allow the model to explicitly access external knowledge by incorporating relevant documents into the prompt. Finally, we developed our model, ARI ( A rchive R estoration I ntelligen [...] evaluation dataset D RD D_{\\text{RD}} . The remaining data comprised 10K documents each for testing and validation, with the other 2.02M used for...",
+   "[body] ...RD D_{\\text{RD}} . The remaining data comprised 10K documents each for testing and validation, with the other 2.02M used for training. To prevent data leakage, we strictly removed from the training corpus any samples duplicated in the validation or test sets. This training corpus acted as the retrieval source for the RAG system and was used to train our model and baselines. For building the test dataset using the test corpus, we introduced synthetic corruptions at random positions, taking into account the distribution of corruption span lengths observed in real damaged documents. We set the corruption rate stochastically to best emulate the original d...",
+   "[body] ...oduced synthetic corruptions at random positions, taking into account the distribution of corruption span lengths observed in real damaged documents. We set the corruption rate stochastically to best emulate the original data\u2019s corruption distribution. Specifically, the rate was centered around a mean of 2.96% (the average rate from the original corrupted documents), and we guaranteed a minimum of one corrupted character per document. In addition, assessing the reconstruction accuracy of the damaged parts is crucial, especially in cases requiring external data. Accordingly, we designed our valid and test datasets to comprise the following two versions:..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:44",
+  "page": "arxiv:2607.21949v1",
+  "subject": "MA-DAR",
+  "object": "ICEWS14s",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MA-DAR is evaluated on ICEWS14s temporal knowledge graph benchmark.",
+  "contexts": [
+   "[body] ...viate scale imbalance and resolve norm domination ? \u2022 RQ5 (Gating Analysis): How does the Polarization Penalty mitigate semantic blurring and encourage decisive dimension-wise routing? Experimental Setup Datasets We evaluate the proposed MA-DAR framework on four widely used Temporal Knowledge Graph benchmark datasets: ICEWS14s, ICEWS18, ICEWS05-15, and GDELT. The detailed statistics of these temporal knowledge graph benchmarks, including their chronological snapshots and temporal granularities, are provided in the supplementary material. Baselines We compare MA-DAR against representative state-of-the-art baselines from different paradigms: (1) continua...",
+   "[body] ...al. 2022 ) , and LogCL (Meng et al. 2023 ) . Implementation Details Following common settings in continual TKG reasoning, the embedding dimension d d is set to 200, the learning rate is set to 0.001, and optimization is performed using Adam. The historical replay sample size k k is configured to 35, 25, 40, and 32 for ICEWS14s, ICEWS18, ICEWS05-15, and GDELT, respectively, with \u03bc = 1 \\mu=1 . For the internal routing operations within MA-DAR, the stability constant \u03f5 \\epsilon in Manifold Alignment is fixed at 1 \u00d7 10 \u2212 5 1\\times 10^{-5} . The Dynamic Gating network is implemented as a shallow MLP with sigmoid activation. Its hidden dimension, number of l...",
+   "[body] ...e the lower section presents the performance of representative base encoders equipped with our MA-DAR plugin to demonstrate the improvements brought by MA-DAR. Table 2: Ablation study of the proposed MA-DAR on three datasets across representative base encoders. \u201cw/o\u201d denotes the removal of a specific component. Method ICEWS14s ICEWS18 ICEWS05-15 MRR H@1 H@10 MRR H@1 H@10 MRR H@1 H@10 Base Encoder: RE-GCN w/o MA (Manifold Alignment) 51.92 40.95 72.20 35.36 23.53 59.18 54.01 43.82 75.83 w/o DG (Dynamic Gating) 51.44 40.61 71.20 34.91 23.16 58.62 54.68 43.27 75.49 w/o PP (Polarization Penalty) 52.28 41.34 72.36 36.21 24.17 60.68 55.13 44.17 76.04 + MA-DAR..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:45",
+  "page": "arxiv:2607.21949v1",
+  "subject": "MA-DAR",
+  "object": "ICEWS18",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MA-DAR is evaluated on ICEWS18 temporal knowledge graph benchmark.",
+  "contexts": [
+   "[body] ...e imbalance and resolve norm domination ? \u2022 RQ5 (Gating Analysis): How does the Polarization Penalty mitigate semantic blurring and encourage decisive dimension-wise routing? Experimental Setup Datasets We evaluate the proposed MA-DAR framework on four widely used Temporal Knowledge Graph benchmark datasets: ICEWS14s, ICEWS18, ICEWS05-15, and GDELT. The detailed statistics of these temporal knowledge graph benchmarks, including their chronological snapshots and temporal granularities, are provided in the supplementary material. Baselines We compare MA-DAR against representative state-of-the-art baselines from different paradigms: (1) continual knowledg...",
+   "[body] ..., and LogCL (Meng et al. 2023 ) . Implementation Details Following common settings in continual TKG reasoning, the embedding dimension d d is set to 200, the learning rate is set to 0.001, and optimization is performed using Adam. The historical replay sample size k k is configured to 35, 25, 40, and 32 for ICEWS14s, ICEWS18, ICEWS05-15, and GDELT, respectively, with \u03bc = 1 \\mu=1 . For the internal routing operations within MA-DAR, the stability constant \u03f5 \\epsilon in Manifold Alignment is fixed at 1 \u00d7 10 \u2212 5 1\\times 10^{-5} . The Dynamic Gating network is implemented as a shallow MLP with sigmoid activation. Its hidden dimension, number of layers, and...",
+   "[body] ...er section presents the performance of representative base encoders equipped with our MA-DAR plugin to demonstrate the improvements brought by MA-DAR. Table 2: Ablation study of the proposed MA-DAR on three datasets across representative base encoders. \u201cw/o\u201d denotes the removal of a specific component. Method ICEWS14s ICEWS18 ICEWS05-15 MRR H@1 H@10 MRR H@1 H@10 MRR H@1 H@10 Base Encoder: RE-GCN w/o MA (Manifold Alignment) 51.92 40.95 72.20 35.36 23.53 59.18 54.01 43.82 75.83 w/o DG (Dynamic Gating) 51.44 40.61 71.20 34.91 23.16 58.62 54.68 43.27 75.49 w/o PP (Polarization Penalty) 52.28 41.34 72.36 36.21 24.17 60.68 55.13 44.17 76.04 + MA-DAR (Full) 5..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:46",
+  "page": "arxiv:2607.21949v1",
+  "subject": "MA-DAR",
+  "object": "ICEWS05-15",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MA-DAR is evaluated on ICEWS05-15 temporal knowledge graph benchmark.",
+  "contexts": [
+   "[body] ...ce and resolve norm domination ? \u2022 RQ5 (Gating Analysis): How does the Polarization Penalty mitigate semantic blurring and encourage decisive dimension-wise routing? Experimental Setup Datasets We evaluate the proposed MA-DAR framework on four widely used Temporal Knowledge Graph benchmark datasets: ICEWS14s, ICEWS18, ICEWS05-15, and GDELT. The detailed statistics of these temporal knowledge graph benchmarks, including their chronological snapshots and temporal granularities, are provided in the supplementary material. Baselines We compare MA-DAR against representative state-of-the-art baselines from different paradigms: (1) continual knowledge graph r...",
+   "[body] ...gCL (Meng et al. 2023 ) . Implementation Details Following common settings in continual TKG reasoning, the embedding dimension d d is set to 200, the learning rate is set to 0.001, and optimization is performed using Adam. The historical replay sample size k k is configured to 35, 25, 40, and 32 for ICEWS14s, ICEWS18, ICEWS05-15, and GDELT, respectively, with \u03bc = 1 \\mu=1 . For the internal routing operations within MA-DAR, the stability constant \u03f5 \\epsilon in Manifold Alignment is fixed at 1 \u00d7 10 \u2212 5 1\\times 10^{-5} . The Dynamic Gating network is implemented as a shallow MLP with sigmoid activation. Its hidden dimension, number of layers, and dropout...",
+   "[body] ...on presents the performance of representative base encoders equipped with our MA-DAR plugin to demonstrate the improvements brought by MA-DAR. Table 2: Ablation study of the proposed MA-DAR on three datasets across representative base encoders. \u201cw/o\u201d denotes the removal of a specific component. Method ICEWS14s ICEWS18 ICEWS05-15 MRR H@1 H@10 MRR H@1 H@10 MRR H@1 H@10 Base Encoder: RE-GCN w/o MA (Manifold Alignment) 51.92 40.95 72.20 35.36 23.53 59.18 54.01 43.82 75.83 w/o DG (Dynamic Gating) 51.44 40.61 71.20 34.91 23.16 58.62 54.68 43.27 75.49 w/o PP (Polarization Penalty) 52.28 41.34 72.36 36.21 24.17 60.68 55.13 44.17 76.04 + MA-DAR (Full) 52.51 41...."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:47",
+  "page": "arxiv:2607.21949v1",
+  "subject": "MA-DAR",
+  "object": "GDELT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MA-DAR is evaluated on GDELT temporal knowledge graph benchmark.",
+  "contexts": [
+   "[body] ...orm domination ? \u2022 RQ5 (Gating Analysis): How does the Polarization Penalty mitigate semantic blurring and encourage decisive dimension-wise routing? Experimental Setup Datasets We evaluate the proposed MA-DAR framework on four widely used Temporal Knowledge Graph benchmark datasets: ICEWS14s, ICEWS18, ICEWS05-15, and GDELT. The detailed statistics of these temporal knowledge graph benchmarks, including their chronological snapshots and temporal granularities, are provided in the supplementary material. Baselines We compare MA-DAR against representative state-of-the-art baselines from different paradigms: (1) continual knowledge graph reasoning methods...",
+   "[body] ...2023 ) . Implementation Details Following common settings in continual TKG reasoning, the embedding dimension d d is set to 200, the learning rate is set to 0.001, and optimization is performed using Adam. The historical replay sample size k k is configured to 35, 25, 40, and 32 for ICEWS14s, ICEWS18, ICEWS05-15, and GDELT, respectively, with \u03bc = 1 \\mu=1 . For the internal routing operations within MA-DAR, the stability constant \u03f5 \\epsilon in Manifold Alignment is fixed at 1 \u00d7 10 \u2212 5 1\\times 10^{-5} . The Dynamic Gating network is implemented as a shallow MLP with sigmoid activation. Its hidden dimension, number of layers, and dropout rate are selecte..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:48",
+  "page": "arxiv:2607.21949v1",
+  "subject": "MA-DAR",
+  "object": "RE-GCN",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MA-DAR is integrated with RE-GCN as a representative base TKG encoder.",
+  "contexts": [
+   "[body] ...025b ) ; and (2) representative TKG reasoning methods with specialized modeling strategies, including RPC (Liang et al. 2023 ) , L 2 TKG (Zhang et al. 2023b ) , and HisRES (Zhang et al. 2025a ) . To demonstrate the plug-and-play capability of MA-DAR, we integrate it with diverse representative base encoders, including RE-GCN (Li et al. 2021 ) , TiRGN (Li et al. 2022 ) , and LogCL (Meng et al. 2023 ) . Implementation Details Following common settings in continual TKG reasoning, the embedding dimension d d is set to 200, the learning rate is set to 0.001, and optimization is performed using Adam. The historical replay sample size k k is configured to 35,...",
+   "[body] ...Alignment is fixed at 1 \u00d7 10 \u2212 5 1\\times 10^{-5} . The Dynamic Gating network is implemented as a shallow MLP with sigmoid activation. Its hidden dimension, number of layers, and dropout rate are selected according to the adopted backbone encoder. The polarization penalty coefficient is set to \u03bb = 0.2 \\lambda=0.2 for RE-GCN and \u03bb = 0.5 \\lambda=0.5 for TiRGN and LogCL. Detailed backbone-specific configurations are provided in the supplementary material. To ensure fair evaluation, the auxiliary loss coefficient \u03b1 \\alpha follows the default structural objectives of different base encoders: \u03b1 = 0.1 \\alpha=0.1 for RE-GCN\u2019s static constraints, \u03b1 = 1.0 \\alph...",
+   "[body] ...= 0.2 \\lambda=0.2 for RE-GCN and \u03bb = 0.5 \\lambda=0.5 for TiRGN and LogCL. Detailed backbone-specific configurations are provided in the supplementary material. To ensure fair evaluation, the auxiliary loss coefficient \u03b1 \\alpha follows the default structural objectives of different base encoders: \u03b1 = 0.1 \\alpha=0.1 for RE-GCN\u2019s static constraints, \u03b1 = 1.0 \\alpha=1.0 for TiRGN\u2019s evolution loss, and \u03b1 = 0.5 \\alpha=0.5 for LogCL\u2019s graph contrastive objective. Detailed hyperparameter analysis is provided in the supplementary material. To assess robustness to random initialization, we repeat the representative RE-GCN+MA-DAR configuration three times with dif..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:49",
+  "page": "arxiv:2607.21949v1",
+  "subject": "MA-DAR",
+  "object": "TiRGN",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MA-DAR is integrated with TiRGN as a representative base TKG encoder.",
+  "contexts": [
+   "[body] ...tive TKG reasoning methods with specialized modeling strategies, including RPC (Liang et al. 2023 ) , L 2 TKG (Zhang et al. 2023b ) , and HisRES (Zhang et al. 2025a ) . To demonstrate the plug-and-play capability of MA-DAR, we integrate it with diverse representative base encoders, including RE-GCN (Li et al. 2021 ) , TiRGN (Li et al. 2022 ) , and LogCL (Meng et al. 2023 ) . Implementation Details Following common settings in continual TKG reasoning, the embedding dimension d d is set to 200, the learning rate is set to 0.001, and optimization is performed using Adam. The historical replay sample size k k is configured to 35, 25, 40, and 32 for ICEWS14...",
+   "[body] ...\\times 10^{-5} . The Dynamic Gating network is implemented as a shallow MLP with sigmoid activation. Its hidden dimension, number of layers, and dropout rate are selected according to the adopted backbone encoder. The polarization penalty coefficient is set to \u03bb = 0.2 \\lambda=0.2 for RE-GCN and \u03bb = 0.5 \\lambda=0.5 for TiRGN and LogCL. Detailed backbone-specific configurations are provided in the supplementary material. To ensure fair evaluation, the auxiliary loss coefficient \u03b1 \\alpha follows the default structural objectives of different base encoders: \u03b1 = 0.1 \\alpha=0.1 for RE-GCN\u2019s static constraints, \u03b1 = 1.0 \\alpha=1.0 for TiRGN\u2019s evolution loss, a...",
+   "[body] ...for TiRGN and LogCL. Detailed backbone-specific configurations are provided in the supplementary material. To ensure fair evaluation, the auxiliary loss coefficient \u03b1 \\alpha follows the default structural objectives of different base encoders: \u03b1 = 0.1 \\alpha=0.1 for RE-GCN\u2019s static constraints, \u03b1 = 1.0 \\alpha=1.0 for TiRGN\u2019s evolution loss, and \u03b1 = 0.5 \\alpha=0.5 for LogCL\u2019s graph contrastive objective. Detailed hyperparameter analysis is provided in the supplementary material. To assess robustness to random initialization, we repeat the representative RE-GCN+MA-DAR configuration three times with different random seeds on all four datasets. The mean r..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:50",
+  "page": "arxiv:2607.21949v1",
+  "subject": "MA-DAR",
+  "object": "LogCL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MA-DAR is integrated with LogCL as a representative base TKG encoder.",
+  "contexts": [
+   "[body] ...h specialized modeling strategies, including RPC (Liang et al. 2023 ) , L 2 TKG (Zhang et al. 2023b ) , and HisRES (Zhang et al. 2025a ) . To demonstrate the plug-and-play capability of MA-DAR, we integrate it with diverse representative base encoders, including RE-GCN (Li et al. 2021 ) , TiRGN (Li et al. 2022 ) , and LogCL (Meng et al. 2023 ) . Implementation Details Following common settings in continual TKG reasoning, the embedding dimension d d is set to 200, the learning rate is set to 0.001, and optimization is performed using Adam. The historical replay sample size k k is configured to 35, 25, 40, and 32 for ICEWS14s, ICEWS18, ICEWS05-15, and GD...",
+   "[body] ...{-5} . The Dynamic Gating network is implemented as a shallow MLP with sigmoid activation. Its hidden dimension, number of layers, and dropout rate are selected according to the adopted backbone encoder. The polarization penalty coefficient is set to \u03bb = 0.2 \\lambda=0.2 for RE-GCN and \u03bb = 0.5 \\lambda=0.5 for TiRGN and LogCL. Detailed backbone-specific configurations are provided in the supplementary material. To ensure fair evaluation, the auxiliary loss coefficient \u03b1 \\alpha follows the default structural objectives of different base encoders: \u03b1 = 0.1 \\alpha=0.1 for RE-GCN\u2019s static constraints, \u03b1 = 1.0 \\alpha=1.0 for TiRGN\u2019s evolution loss, and \u03b1 = 0.5...",
+   "[body] ...nfigurations are provided in the supplementary material. To ensure fair evaluation, the auxiliary loss coefficient \u03b1 \\alpha follows the default structural objectives of different base encoders: \u03b1 = 0.1 \\alpha=0.1 for RE-GCN\u2019s static constraints, \u03b1 = 1.0 \\alpha=1.0 for TiRGN\u2019s evolution loss, and \u03b1 = 0.5 \\alpha=0.5 for LogCL\u2019s graph contrastive objective. Detailed hyperparameter analysis is provided in the supplementary material. To assess robustness to random initialization, we repeat the representative RE-GCN+MA-DAR configuration three times with different random seeds on all four datasets. The mean results are reported in the main paper, while the co..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:51",
+  "page": "arxiv:2607.21951v1",
+  "subject": "SIREN",
+  "object": "PAIR",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "SIREN adapts the PAIR jailbreaking loop for iterative adversarial manipulation of web-RAG rankings.",
+  "contexts": [
+   "[body] ...Instance 9.9 Token Usage 10 Discussion Defensive implications. Limitations. 11 Conclusion References A Results by Query\u2013Model Context B Per-Technique Full-Sweep Results C Complete Technique Taxonomy D Ethical Considerations License: CC BY 4.0 arXiv:2607.21951v1 [cs.IR] 24 Jul 2026 SIREN ( Luring LLMs onto the Rocks ): PAIR-Driven Preference Manipulation in Web-RAG Recommenders Evan Caville e.caville@uq.net.au 0009-0005-3313-8297 The University of Queensland Brisbane Queensland Australia , Siamak Layeghy The University of Queensland Brisbane Queensland Australia siamak.layeghy@uq.net.au , Billy Sung Curtin University Perth Western Australia Australia bi...",
+   "[body] ...cated products, retrieval poisoning, and rank promotion. However, these studies do not compare how different edits to an already retrieved page change the model\u2019s final ranking while the surrounding source set remains unchanged. To address this gap, we propose SIREN , an automated attacker\u2013judge method that adapts the PAIR jailbreaking loop to competitive rank manipulation, with the goal of moving a chosen entity to rank 1 in an LLM-generated recommendation. SIREN retrieves and captures webpages using Anthropic\u2019s web tools, then iteratively edits a retrieved source using an interpretable taxonomy of 23 content-poisoning techniques. The custom-RAG repla...",
+   "[body] ...cts the model\u2019s final ranking. The replay uses Anthropic\u2019s documented search_result interface rather than the live web_search_tool_result path. The experiment therefore measures preference manipulation under a fixed supplied context rather than across the full live web-search pipeline. 5. The SIREN Method SIREN adapts PAIR (Chao et al. , 2025 ) from jailbreak-prompt search to iterative web-source editing. Each trial fixes one technique \u03c4 \\tau and uses three model roles. The attacker proposes edits, the target answers from the replayed sources, and the judge extracts the target entity\u2019s rank and returns feedback (Figure 2 ). Attacker \ud835\udc9c \\mathcal{A} techn..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:52",
+  "page": "arxiv:2607.21958v1",
+  "subject": "watermark detector",
+  "object": "Gumbel-max watermark",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The detector is instantiated for the Gumbel-max watermark, reducing detection to pivot-based sequential testing.",
+  "contexts": [
+   "[body] ...marking mechanism. In contrast, our proposed framework operates with a reduced filtration rather than the full filtration. This construction is in the spirit of Rao\u2013Blackwellization, leading to a more stable and efficient sequential procedure while preserving validity for online testing (de Roos et al., 2025 ) . 3.2 A Gumbel-max watermark example The specific form of T t T_{t} and the corresponding null reference distribution depend on the watermarking mechanism (Aaronson, 2023 ; Kirchenbauer et al., 2023 ) . We next present the construction for the Gumbel-max watermark as a representative example. Our method, however, is not tied to this specific desi...",
+   "[body] ...cedure while preserving validity for online testing (de Roos et al., 2025 ) . 3.2 A Gumbel-max watermark example The specific form of T t T_{t} and the corresponding null reference distribution depend on the watermarking mechanism (Aaronson, 2023 ; Kirchenbauer et al., 2023 ) . We next present the construction for the Gumbel-max watermark as a representative example. Our method, however, is not tied to this specific design and extends naturally to other watermarking mechanisms. We now specialize the above framework to the Gumbel-max watermark and derive the corresponding reduced testing problem explicitly. At time t t , the LLMs produce a NTP distribut...",
+   "[body] ...watermarking mechanism (Aaronson, 2023 ; Kirchenbauer et al., 2023 ) . We next present the construction for the Gumbel-max watermark as a representative example. Our method, however, is not tied to this specific design and extends naturally to other watermarking mechanisms. We now specialize the above framework to the Gumbel-max watermark and derive the corresponding reduced testing problem explicitly. At time t t , the LLMs produce a NTP distribution P t P_{t} . Given the watermark key K K and the current generation context, we generate a pseudo-random vector \u03b6 t = ( U t , w ) w \u2208 \ud835\udcb1 \\zeta_{t}=(U_{t,w})_{w\\in\\mathcal{V}} , where U t , w \u223c i . i . d . U..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:53",
+  "page": "arxiv:2607.21961v1",
+  "subject": "catch-n-repair",
+  "object": "masked language modeling",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "catch-n-repair builds on MLM-based approaches for grounding podcast generation in documents.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:54",
+  "page": "arxiv:2607.21961v1",
+  "subject": "catch-n-repair",
+  "object": "NotebookLM",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "The paper positions catch-n-repair as an improvement over NotebookLM for faithful podcast generation.",
+  "contexts": [
+   "[body] ...dium but also the increasing trust placed in podcasts as a source of information. Until recently, however, podcasting largely remained a medium of consumption, where listeners tuned in to content created and curated by human hosts. The paradigm is now shifting with the advent of generative AI systems, such as Google\u2019s NotebookLM 1 1 1 https://notebooklm.google.com/ , which can produce podcast-style narratives directly from source materials. This shift opens up the possibility of personalized podcast creation at scale, where individuals and organizations can generate podcasts tailored to their own needs and interests. Figure 1: Example of unfaithfulness...",
+   "[body] ...ing trust placed in podcasts as a source of information. Until recently, however, podcasting largely remained a medium of consumption, where listeners tuned in to content created and curated by human hosts. The paradigm is now shifting with the advent of generative AI systems, such as Google\u2019s NotebookLM 1 1 1 https://notebooklm.google.com/ , which can produce podcast-style narratives directly from source materials. This shift opens up the possibility of personalized podcast creation at scale, where individuals and organizations can generate podcasts tailored to their own needs and interests. Figure 1: Example of unfaithfulness in generated podcast tra...",
+   "[body] ..., 2026 ) , prior work has primarily focused on fluency, structure, and audio delivery, leaving the question of grounding to the source document largely unexplored. To illustrate this challenge, consider the example in Figure 1 . The source is the Attention Is All You Need paper 2 2 2 https://arxiv.org/pdf/1706.03762 . NotebookLM generated a transcript mentioning ChatGPT as part of the paper\u2019s legacy; while true in hindsight, ChatGPT did not exist in 2017 and there is no mention of ChatGPT in the source paper making this an unfaithful statement. This example highlights a subtle but critical distinction between factual correctness and faithfulness to the..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:0",
+  "page": "arxiv:2607.22038v1",
+  "subject": "Sparse",
+  "object": "CARLA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Sparse is evaluated on CARLA.",
+  "contexts": [
+   "[body] ...the hardware to skip masked tiles without software intervention; and a tiled inference accelerator with configurable parallelism, double-buffered memory, and INT8 datapath that natively supports sparse tile execution. We prototype on an AMD/Xilinx Alveo U50 FPGA and evaluate on a closed-loop visuomotor driving task in CARLA autonomous driving simulator. Task-conditional sparsity reduces FLOPs by 66\u201376% while maintaining driving quality. On-device latency decreases by 51\u201359%, from 9.12 ms to 3.74\u20134.44 ms (2.1\u20132.4 \u00d7 \\times speedup), with energy per [...] experiments, \u03bb = 0.002 \\lambda=0.002 produces an average of 28% active tiles ( \u223c \\sim 72% pruned) ac...",
+   "[body] ...FLOPs by 66\u201376% while maintaining driving quality. On-device latency decreases by 51\u201359%, from 9.12 ms to 3.74\u20134.44 ms (2.1\u20132.4 \u00d7 \\times speedup), with energy per [...] experiments, \u03bb = 0.002 \\lambda=0.002 produces an average of 28% active tiles ( \u223c \\sim 72% pruned) across tasks while maintaining driving fidelity in CARLA. The sparsity is not uniform across tasks: the gating network learns that left turns require more representational capacity (28.9% of FLOPs active) than braking (23.9%), reflecting the inherent complexity of each maneuver in right-hand traffic. 3.2. Accelerator Architecture The accelerator is a tiled inference engine (Figure 4 ) tha...",
+   "[abstract] ...the hardware to skip masked tiles without software intervention; and a tiled inference accelerator with configurable parallelism, double-buffered memory, and INT8 datapath that natively supports sparse tile execution. We prototype on an AMD/Xilinx Alveo U50 FPGA and evaluate on a closed-loop visuomotor driving task in CARLA autonomous driving simulator. Task-conditional sparsity reduces FLOPs by 66-76% while maintaining driving quality. On-device latency decreases by 51-59%, from 9.12 ms to 3.74-4.44 ms (2.1-2.4x speedup), with energy per inference dropping from 263 to 108-128mJ...."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:1",
+  "page": "arxiv:2607.22038v1",
+  "subject": "Sparse",
+  "object": "transformer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Sparse builds on transformer.",
+  "contexts": [
+   "[body] ...rator Architecture 3.3 Neural Instruction Set Architecture 3.4 Tile Skipping 3.5 Deployment Pipeline 4 Evaluation 4.1 Experimental Setup 4.2 Task-Conditional Sparsity Analysis 4.3 Static Pruning Comparison 4.4 On-Device Latency 4.5 GPU Comparison 4.6 Resource Utilization and Power 4.7 Driving Quality 4.8 Generality to Transformer Backbones 4.9 Comparison with Prior Work 5 Related Work 6 Conclusion References A Artifact Appendix A.1 Abstract A.2 Artifact check-list (meta-information) A.3 Description A.3.1 How to access A.3.2 Hardware dependencies A.3.3 Software dependencies A.3.4 Data sets A.3.5 Models A.4 Installation A.5 Experiment workflow A.6 Evalua..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:2",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on GSM8K.",
+  "contexts": [
+   "[body] ...as the optimization algorithm. Experiment Tasks and Data Our evaluation spans five tasks that permit automatic verification: math , code , instruction following (IF) , logical puzzles (puzzle) , and ranking (rank) . For math , models are trained on a subset of OpenMathInstruct-2 (Ahmad et al. , 2025 ) and evaluated on GSM8K (Cobbe et al. , 2021 ) and MATH-500 (Hendrycks et al. , 2021 ; Lightman et al. , 2023 ) . For code , models are trained on a subset of OpenCodeInstruct (Ahmad et al. , 2025 ) and evaluated on the HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) datasets. For instruction following , models are trained on the instructi..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:3",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on HumanEval.",
+  "contexts": [
+   "[body] ...king (rank) . For math , models are trained on a subset of OpenMathInstruct-2 (Ahmad et al. , 2025 ) and evaluated on GSM8K (Cobbe et al. , 2021 ) and MATH-500 (Hendrycks et al. , 2021 ; Lightman et al. , 2023 ) . For code , models are trained on a subset of OpenCodeInstruct (Ahmad et al. , 2025 ) and evaluated on the HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) datasets. For instruction following , models are trained on the instruction subset from Tulu-3-SFT (Lambert et al. , 2025 ) and evaluated on IFEval (Zhou et al. , 2023b ) and the instruction-following subset of LiveBench (White et al. , 2024 ) . For logical puzzles , models..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:4",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "MBPP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on MBPP.",
+  "contexts": [
+   "[body] ...trained on a subset of OpenMathInstruct-2 (Ahmad et al. , 2025 ) and evaluated on GSM8K (Cobbe et al. , 2021 ) and MATH-500 (Hendrycks et al. , 2021 ; Lightman et al. , 2023 ) . For code , models are trained on a subset of OpenCodeInstruct (Ahmad et al. , 2025 ) and evaluated on the HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) datasets. For instruction following , models are trained on the instruction subset from Tulu-3-SFT (Lambert et al. , 2025 ) and evaluated on IFEval (Zhou et al. , 2023b ) and the instruction-following subset of LiveBench (White et al. , 2024 ) . For logical puzzles , models are trained on task Knights and Knav..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:5",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "IFEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on IFEval.",
+  "contexts": [
+   "[body] ...023 ) . For code , models are trained on a subset of OpenCodeInstruct (Ahmad et al. , 2025 ) and evaluated on the HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) datasets. For instruction following , models are trained on the instruction subset from Tulu-3-SFT (Lambert et al. , 2025 ) and evaluated on IFEval (Zhou et al. , 2023b ) and the instruction-following subset of LiveBench (White et al. , 2024 ) . For logical puzzles , models are trained on task Knights and Knaves (Johnson-Laird and Byrne, 1990 ) with synthetic data using templates implemented by Xie et al. ( 2024 ) and evaluated on the same task. For rank , models are trained o..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:6",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "LiveBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on LiveBench.",
+  "contexts": [
+   "[body] ...(Ahmad et al. , 2025 ) and evaluated on the HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) datasets. For instruction following , models are trained on the instruction subset from Tulu-3-SFT (Lambert et al. , 2025 ) and evaluated on IFEval (Zhou et al. , 2023b ) and the instruction-following subset of LiveBench (White et al. , 2024 ) . For logical puzzles , models are trained on task Knights and Knaves (Johnson-Laird and Byrne, 1990 ) with synthetic data using templates implemented by Xie et al. ( 2024 ) and evaluated on the same task. For rank , models are trained on the Rank1 dataset (Weller et al. , 2025 ) and evaluated on the pairw..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:7",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "MATH-500",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on MATH-500.",
+  "contexts": [
+   "[body] ...periment Tasks and Data Our evaluation spans five tasks that permit automatic verification: math , code , instruction following (IF) , logical puzzles (puzzle) , and ranking (rank) . For math , models are trained on a subset of OpenMathInstruct-2 (Ahmad et al. , 2025 ) and evaluated on GSM8K (Cobbe et al. , 2021 ) and MATH-500 (Hendrycks et al. , 2021 ; Lightman et al. , 2023 ) . For code , models are trained on a subset of OpenCodeInstruct (Ahmad et al. , 2025 ) and evaluated on the HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) datasets. For instruction following , models are trained on the instruction subset from Tulu-3-SFT (Lamber..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:8",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "OpenMathInstruct-2",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on OpenMathInstruct-2.",
+  "contexts": [
+   "[body] ...nalyses default to Llama-3.1-8B as the base model and GRPO as the optimization algorithm. Experiment Tasks and Data Our evaluation spans five tasks that permit automatic verification: math , code , instruction following (IF) , logical puzzles (puzzle) , and ranking (rank) . For math , models are trained on a subset of OpenMathInstruct-2 (Ahmad et al. , 2025 ) and evaluated on GSM8K (Cobbe et al. , 2021 ) and MATH-500 (Hendrycks et al. , 2021 ; Lightman et al. , 2023 ) . For code , models are trained on a subset of OpenCodeInstruct (Ahmad et al. , 2025 ) and evaluated on the HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) datasets. For..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:9",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "OpenCodeInstruct",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on OpenCodeInstruct.",
+  "contexts": [
+   "[body] ...struction following (IF) , logical puzzles (puzzle) , and ranking (rank) . For math , models are trained on a subset of OpenMathInstruct-2 (Ahmad et al. , 2025 ) and evaluated on GSM8K (Cobbe et al. , 2021 ) and MATH-500 (Hendrycks et al. , 2021 ; Lightman et al. , 2023 ) . For code , models are trained on a subset of OpenCodeInstruct (Ahmad et al. , 2025 ) and evaluated on the HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) datasets. For instruction following , models are trained on the instruction subset from Tulu-3-SFT (Lambert et al. , 2025 ) and evaluated on IFEval (Zhou et al. , 2023b ) and the instruction-following subset of Liv..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:10",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "HuggingFace",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on HuggingFace.",
+  "contexts": [
+   "[body] ...models (LLMs) have fundamentally reshaped the landscape of artificial intelligence, capturing growing interest from both academia and industry (Team, 2024 ; Grattafiori et al. , 2024 ; Xiang et al. , 2025 ) . Recent statistics show that there are now more than 270,000 models with over 3 billion parameters available on HuggingFace 1 1 1 https://huggingface.co/models . These large models often exhibit diverse capabilities and strengths (Shao et al. , 2024 ; Ahmad et al. , 2025 ; Toshniwal et al. , 2025 ) , prompting researchers to investigate ensemble techniques that integrate the specialized abilities of different models (Li et al. , 2023 ; Chen et al....",
+   "[body] ...ntally reshaped the landscape of artificial intelligence, capturing growing interest from both academia and industry (Team, 2024 ; Grattafiori et al. , 2024 ; Xiang et al. , 2025 ) . Recent statistics show that there are now more than 270,000 models with over 3 billion parameters available on HuggingFace 1 1 1 https://huggingface.co/models . These large models often exhibit diverse capabilities and strengths (Shao et al. , 2024 ; Ahmad et al. , 2025 ; Toshniwal et al. , 2025 ) , prompting researchers to investigate ensemble techniques that integrate the specialized abilities of different models (Li et al. , 2023 ; Chen et al. , 2025 ; Ruan et al. , 202..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:11",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "Rank1",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on Rank1.",
+  "contexts": [
+   "[body] ...b ) and the instruction-following subset of LiveBench (White et al. , 2024 ) . For logical puzzles , models are trained on task Knights and Knaves (Johnson-Laird and Byrne, 1990 ) with synthetic data using templates implemented by Xie et al. ( 2024 ) and evaluated on the same task. For rank , models are trained on the Rank1 dataset (Weller et al. , 2025 ) and evaluated on the pairwise ranking benchmark NevIR . Further details are listed in appendix F . Model Merging Settings We evaluate four model merging strategies: model averaging ( Averaging for short) (Choshen et al. , 2022 ) , TIEs (Yadav et al. , 2023 ) , Task-Arithmetic ( Arithmetic for short) (..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:12",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "NevIR",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on NevIR.",
+  "contexts": [
+   "[body] ...ical puzzles , models are trained on task Knights and Knaves (Johnson-Laird and Byrne, 1990 ) with synthetic data using templates implemented by Xie et al. ( 2024 ) and evaluated on the same task. For rank , models are trained on the Rank1 dataset (Weller et al. , 2025 ) and evaluated on the pairwise ranking benchmark NevIR . Further details are listed in appendix F . Model Merging Settings We evaluate four model merging strategies: model averaging ( Averaging for short) (Choshen et al. , 2022 ) , TIEs (Yadav et al. , 2023 ) , Task-Arithmetic ( Arithmetic for short) (Ilharco et al. , 2023 ) and DARE+TIEs ( DARE for short) (Yu et al. , 2024 ) . In our e..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:13",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "Tulu-3-SFT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on Tulu-3-SFT.",
+  "contexts": [
+   "[body] ...TH-500 (Hendrycks et al. , 2021 ; Lightman et al. , 2023 ) . For code , models are trained on a subset of OpenCodeInstruct (Ahmad et al. , 2025 ) and evaluated on the HumanEval (Chen et al. , 2021 ) and MBPP (Austin et al. , 2021 ) datasets. For instruction following , models are trained on the instruction subset from Tulu-3-SFT (Lambert et al. , 2025 ) and evaluated on IFEval (Zhou et al. , 2023b ) and the instruction-following subset of LiveBench (White et al. , 2024 ) . For logical puzzles , models are trained on task Knights and Knaves (Johnson-Laird and Byrne, 1990 ) with synthetic data using templates implemented by Xie et al. ( 2024 ) and evalua..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:14",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "Knights and Knaves",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Enough is evaluated on Knights and Knaves.",
+  "contexts": [
+   "[body] ...(Austin et al. , 2021 ) datasets. For instruction following , models are trained on the instruction subset from Tulu-3-SFT (Lambert et al. , 2025 ) and evaluated on IFEval (Zhou et al. , 2023b ) and the instruction-following subset of LiveBench (White et al. , 2024 ) . For logical puzzles , models are trained on task Knights and Knaves (Johnson-Laird and Byrne, 1990 ) with synthetic data using templates implemented by Xie et al. ( 2024 ) and evaluated on the same task. For rank , models are trained on the Rank1 dataset (Weller et al. , 2025 ) and evaluated on the pairwise ranking benchmark NevIR . Further details are listed in appendix F . Model Mergi..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:15",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "Llama 3.2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enough builds on Llama 3.2.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:16",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "Llama 3.1",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enough builds on Llama 3.1.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:17",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "Llama 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enough builds on Llama 3.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:18",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "Mistral Small 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enough builds on Mistral Small 3.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:19",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "Mistral Small",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enough builds on Mistral Small.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:20",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "PPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enough builds on PPO.",
+  "contexts": [
+   "[body] ...2) T [...] 1 Experiment Setup Models and Settings We adopt the open-source models Llama-3.2-3B (Grattafiori et al. , 2024 ) , Llama-3.1-8B (Grattafiori et al. , 2024 ) , and Mistral-Small-3-24B 2 2 2 https://mistral.ai/news/mistral-small-3 as the base models. For training, we employ three representative RL algorithms: PPO (Schulman et al. , 2017 ) , GRPO (Shao et al. , 2024 ) , and Reinforce ++ (Ahmadian et al. , 2024 ) . Unless otherwise specified, all experiments and analyses default to Llama-3.1-8B as the base model and GRPO as the optimization algorithm. Experiment Tasks and Data Our evaluation spans five tasks that permit automatic verification: m...",
+   "[body] ...sing TIEs merging, applied to both SFT and RL models. The values in parentheses indicate the relative performance drop compared to the original unmerged model. To further assess the generality of RL algorithms in the context of model merging, we extend our analysis beyond GRPO by incorporating two additional algorithm-PPO and Reinforce++ with TIEs merging. As shown in Figure 2 , across all RL algorithms, the merged models consistently exhibit significantly lower performance degradation compared to those trained with SFT. After TIEs merging, SFT models exhibit a substantial 28.7% decrease in IF, whereas RL models experience only negligible performance l...",
+   "[body] ...s shown in Figure 2 , across all RL algorithms, the merged models consistently exhibit significantly lower performance degradation compared to those trained with SFT. After TIEs merging, SFT models exhibit a substantial 28.7% decrease in IF, whereas RL models experience only negligible performance losses (GRPO: -0.3%, PPO: -2.5%,..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:21",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enough builds on GRPO.",
+  "contexts": [
+   "[body] ...dels and Settings We adopt the open-source models Llama-3.2-3B (Grattafiori et al. , 2024 ) , Llama-3.1-8B (Grattafiori et al. , 2024 ) , and Mistral-Small-3-24B 2 2 2 https://mistral.ai/news/mistral-small-3 as the base models. For training, we employ three representative RL algorithms: PPO (Schulman et al. , 2017 ) , GRPO (Shao et al. , 2024 ) , and Reinforce ++ (Ahmadian et al. , 2024 ) . Unless otherwise specified, all experiments and analyses default to Llama-3.1-8B as the base model and GRPO as the optimization algorithm. Experiment Tasks and Data Our evaluation spans five tasks that permit automatic verification: math , code , instruction followi...",
+   "[body] ...istral.ai/news/mistral-small-3 as the base models. For training, we employ three representative RL algorithms: PPO (Schulman et al. , 2017 ) , GRPO (Shao et al. , 2024 ) , and Reinforce ++ (Ahmadian et al. , 2024 ) . Unless otherwise specified, all experiments and analyses default to Llama-3.1-8B as the base model and GRPO as the optimization algorithm. Experiment Tasks and Data Our evaluation spans five tasks that permit automatic verification: math , code , instruction following (IF) , logical puzzles (puzzle) , and ranking (rank) . For math , models are trained on a subset of OpenMathInstruct-2 (Ahmad et al. , 2025 ) and evaluated on GSM8K (Cobbe et...",
+   "[body] ...52.8 61.5 Averaging 52.0(-16%) 56.0(-7.4%) 49.2(-23%) 30.8(-65%) 51.6(-2.3%) 47.9(-22%) TIEs 56.8(-8.3%) 58.0(-4.1%) 47.5(-25%) 35.8(-58%) 51.3(-2.7%) 49.9(-19%) Arithmetic 52.4(-15%) 56.3(-7.0%) 48.2(-25%) 44.9(-48%) 51.1(-3.3%) 50.6(-18%) DARE 58.2(-6.1%) 58.0(-4.1%) 46.7(-27%) 38.0(-56%) 49.3(-6.7%) 50.0(-19%) RL (GRPO) 64.6 65.6 90.0 85.2 55.7 72.2 Averaging 62.1(-3.9%) 61.7(-5.9%) 84.4(-6.2%) 37.8(-56%) 54.4(-2.3%) 60.1(-17%) TIEs 63.3(-2.0%) 64.3(-2.0%) 90.0(-0%) 64.6(-24%) 53.1(-4.7%) 67.1(-7.1%) Arithmetic 62.6(-3.1%) 63.8(-2.7%) 89.2(-0.9%) 60.7(-29%) 54.6(-2.0%) 66.2(-8.3%) DARE 63.5(-1.7%) 64.2(-2.1%) 89.9(-0.1%) 65.0(-24%) 53.1(-4.7%) 67.1..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:22",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "SFT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enough builds on SFT.",
+  "contexts": [
+   "[body] ...ls involved have already been trained on different tasks. Nonetheless, the approach used to train these task-specific models\u2014which critically impacts the ultimate effectiveness of the merged model\u2014has been largely overlooked. In the era of LLMs, training paradigms can be broadly classified into supervised fine-tuning (SFT) and reinforcement learning (RL) (Hu et al. , 2025 ; DeepSeek-AI et al. , 2025 ) . Most existing works focus on merging models trained via SFT, leaving differences between SFT and RL in the context of model merging largely unexplored and deserving of further investigation. Figure 1: Comparison of performance changes between SFT and RF...",
+   "[body] ...mpacts the ultimate effectiveness of the merged model\u2014has been largely overlooked. In the era of LLMs, training paradigms can be broadly classified into supervised fine-tuning (SFT) and reinforcement learning (RL) (Hu et al. , 2025 ; DeepSeek-AI et al. , 2025 ) . Most existing works focus on merging models trained via SFT, leaving differences between SFT and RL in the context of model merging largely unexplored and deserving of further investigation. Figure 1: Comparison of performance changes between SFT and RFT in model merging. In this work, we investigate the role of fine-tuning paradigms (SFT and RL) in model merging. A series of controlled experi...",
+   "[body] ...of the merged model\u2014has been largely overlooked. In the era of LLMs, training paradigms can be broadly classified into supervised fine-tuning (SFT) and reinforcement learning (RL) (Hu et al. , 2025 ; DeepSeek-AI et al. , 2025 ) . Most existing works focus on merging models trained via SFT, leaving differences between SFT and RL in the context of model merging largely unexplored and deserving of further investigation. Figure 1: Comparison of performance changes between SFT and RFT in model merging. In this work, we investigate the role of fine-tuning paradigms (SFT and RL) in model merging. A series of controlled experiments are conducted across five r..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:23",
+  "page": "arxiv:2607.22039v1",
+  "subject": "Enough",
+  "object": "RL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enough builds on RL.",
+  "contexts": [
+   "[body] ...(Li et al. , 2023 ; Chen et al. , 2025 ; Ruan et al. , 2025 ) . Among these techniques, model merging\u2014which directly fuses the parameters of independently fine-tuned models without requiring access to the original training data, expensive retraining, or the maintenance of multiple checkpoints\u2014has emerged as a particularly promising solution (Lu et al. , 2024 ; Yang et al. , 2024b ) . A central challenge in model merging is preserving performance when integrating different models, as interference between parameters can lead to performance degradation in the merged model, a phenomenon commonly referred to as task conflicts . To mitigate this issue, prior...",
+   "[body] ...et al. , 2023 ; Yadav et al. , 2023 ; Yu et al. , 2024 ) , typically under the assumption that the models involved have already been trained on different tasks. Nonetheless, the approach used to train these task-specific models\u2014which critically impacts the ultimate effectiveness of the merged model\u2014has been largely overlooked. In the era of LLMs, training paradigms can be broadly classified into supervised fine-tuning (SFT) and reinforcement learning (RL) (Hu et al. , 2025 ; DeepSeek-AI et al. , 2025 ) . Most existing works focus on merging models trained via SFT, leaving differences between SFT and RL in the context of model merging largely unexplored...",
+   "[body] ...ined on different tasks. Nonetheless, the approach used to train these task-specific models\u2014which critically impacts the ultimate effectiveness of the merged model\u2014has been largely overlooked. In the era of LLMs, training paradigms can be broadly classified into supervised fine-tuning (SFT) and reinforcement learning (RL) (Hu et al. , 2025 ; DeepSeek-AI et al. , 2025 ) . Most existing works focus on merging models trained via SFT, leaving differences between SFT and RL in the context of model merging largely unexplored and deserving of further investigation. Figure 1: Comparison of performance changes between SFT and RFT in model merging. In this work,..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:24",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "XQuAD",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LAMAR is evaluated on XQuAD.",
+  "contexts": [
+   "[body] ...the candidate set may contain semantically relevant documents written both in the query language and in other languages (Asai et al. 2021 ; Ranaldi et al. 2026 ) . A multilingual reranker must therefore compare and order these documents across languages (Zhang et al. 2025 ) . Figure 1: Multilingual RAG performance on XQuAD across query and document language combinations, measured by F1. Qwen2.5-32B-Instruct (Qwen et al. 2025 ) and Llama-3.3-70B-Instruct (Grattafiori et al. 2024 ) generate answers from gold documents for all 16 combinations of Arabic, German, English, and Chinese. Figure 2: Language coherence of Jina-reranker-v3 (Wang et al. 2025 ) , Q...",
+   "[body] ...) generate answers from gold documents for all 16 combinations of Arabic, German, English, and Chinese. Figure 2: Language coherence of Jina-reranker-v3 (Wang et al. 2025 ) , Qwen3-Reranker-4B (Zhang et al. 2025 ) , and zerank-2-reranker (Pipitone et al. 2025 ) across twelve languages using oracle candidate sets from XQuAD. (a) Top-1 document language distributions. Rows correspond to query languages, columns correspond to document languages, and each cell reports how frequently a document in the corresponding language is ranked first. (b) Mean rank of the gold document in the same language as the query. Stronger language coherence corresponds to diag...",
+   "[body] ...ACL triplet. Each triplet is used repeatedly while maintaining a balanced distribution of source and target language combinations across the training set. Dataset language coverage and the data synthesis algorithms used in each stage are provided in Appendix A. Benchmark # Lang. Languages Language-Coherence Evaluation XQuAD 12 ar, de, el, en, es, hi, ro, ru, th, tr, vi, zh BELEBELE 14 ar, de, en, es, fr, hi, id, it, ja, nl, pt, ru, vi, zh Multilingual Reranking Evaluation MIRACL 18 ar, bn, de, en, es, fa, fi, fr, hi, id, ja, ko, ru, sw, te, th, yo, zh XGLUE 7 de, en, es, fr, it, pt, zh HUME 3 da, en, no MLDR 13 ar, de, en, es, fr, hi, it, ja, ko, pt, r..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:25",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "BELEBELE",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LAMAR is evaluated on BELEBELE.",
+  "contexts": [
+   "[body] ...aining a balanced distribution of source and target language combinations across the training set. Dataset language coverage and the data synthesis algorithms used in each stage are provided in Appendix A. Benchmark # Lang. Languages Language-Coherence Evaluation XQuAD 12 ar, de, el, en, es, hi, ro, ru, th, tr, vi, zh BELEBELE 14 ar, de, en, es, fr, hi, id, it, ja, nl, pt, ru, vi, zh Multilingual Reranking Evaluation MIRACL 18 ar, bn, de, en, es, fa, fi, fr, hi, id, ja, ko, ru, sw, te, th, yo, zh XGLUE 7 de, en, es, fr, it, pt, zh HUME 3 da, en, no MLDR 13 ar, de, en, es, fr, hi, it, ja, ko, pt, ru, th, zh Wikipedia 16 bg, bn, cs, da, de, en, fa, fi, h...",
+   "[body] ...en3-Reranker-4B (Zhang et al. 2025 ) is used as the teacher, with a learning rate of 2 \u00d7 10 \u2212 5 2\\times 10^{-5} and a batch size of 384. In Stage 2, the coefficient \u03bb \\lambda for \u2112 LC \\mathcal{L}_{\\mathrm{LC}} is set to 2, with a learning rate of 1 \u00d7 10 \u2212 6 1\\times 10^{-6} and a batch size of 32. Model Size XQuAD (12) BELEBELE (14) nDCG Avg. Rank nDCG@1 nDCG@10 MRR@10 nDCG@1 nDCG@10 MRR@10 @1 @10 gte-multilingual-reranker-base 0.3B 82.59 91.51 88.89 77.05 88.58 85.08 79.82 90.05 6 jina-reranker-v2-base-multilingual 0.3B 57.30 79.36 72.55 60.47 79.88 73.49 58.89 79.62 13 bge-reranker-v2-m3 0.6B 84.67 92.20 89.89 84.83 92.65 90.32 84.75 92.43 5 Qwen3-Rer..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:26",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "MIRACL",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LAMAR is evaluated on MIRACL.",
+  "contexts": [
+   "[body] ...ribes the training data and implementation details for LAMAR, along with the baselines and evaluation setup. Stage Dataset # Lang. # Instances Training Instance Stage 1 MMARCO 14 1.6M ( ( q i en , d j en ) , ( q i \u2113 q , d j \u2113 d ) ) \\big((q_{i}^{\\mathrm{en}},d_{j}^{\\mathrm{en}}),(q_{i}^{\\ell_{q}},d_{j}^{\\ell_{d}})\\big) MIRACL 51 343K RLHN 1 4.6M Stage 2 MIRACL 51 8.5K ( q s , d s + , d t + , d s \u2212 , d t \u2212 ) (q_{s},d_{s}^{+},d_{t}^{+},d_{s}^{-},d_{t}^{-}) Table 1: Training data used for LAMAR, with language coverage, number of constructed instances, and input format reported for each dataset and training stage. 4.1 Training Dataset. We use MMARCO (Bonifa...",
+   "[body] ...ntation details for LAMAR, along with the baselines and evaluation setup. Stage Dataset # Lang. # Instances Training Instance Stage 1 MMARCO 14 1.6M ( ( q i en , d j en ) , ( q i \u2113 q , d j \u2113 d ) ) \\big((q_{i}^{\\mathrm{en}},d_{j}^{\\mathrm{en}}),(q_{i}^{\\ell_{q}},d_{j}^{\\ell_{d}})\\big) MIRACL 51 343K RLHN 1 4.6M Stage 2 MIRACL 51 8.5K ( q s , d s + , d t + , d s \u2212 , d t \u2212 ) (q_{s},d_{s}^{+},d_{t}^{+},d_{s}^{-},d_{t}^{-}) Table 1: Training data used for LAMAR, with language coverage, number of constructed instances, and input format reported for each dataset and training stage. 4.1 Training Dataset. We use MMARCO (Bonifacio et al. 2021 ) , MIRACL (Zhang e...",
+   "[body] ...L 51 8.5K ( q s , d s + , d t + , d s \u2212 , d t \u2212 ) (q_{s},d_{s}^{+},d_{t}^{+},d_{s}^{-},d_{t}^{-}) Table 1: Training data used for LAMAR, with language coverage, number of constructed instances, and input format reported for each dataset and training stage. 4.1 Training Dataset. We use MMARCO (Bonifacio et al. 2021 ) , MIRACL (Zhang et al. 2022 ) multilingual triplets, and RLHN (Thakur et al. 2025 ) as training datasets. MMARCO and MIRACL provide semantically corresponding parallel data across multiple languages; MMARCO associates each query with one positive document, whereas MIRACL additionally provides one negative document. RLHN contains only Englis..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:27",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "MMARCO",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LAMAR is evaluated on MMARCO.",
+  "contexts": [
+   "[body] ...is particularly pronounced for English queries, where documents written in other languages are often ranke [...] 4 Experimental Setup This section describes the training data and implementation details for LAMAR, along with the baselines and evaluation setup. Stage Dataset # Lang. # Instances Training Instance Stage 1 MMARCO 14 1.6M ( ( q i en , d j en ) , ( q i \u2113 q , d j \u2113 d ) ) \\big((q_{i}^{\\mathrm{en}},d_{j}^{\\mathrm{en}}),(q_{i}^{\\ell_{q}},d_{j}^{\\ell_{d}})\\big) MIRACL 51 343K RLHN 1 4.6M Stage 2 MIRACL 51 8.5K ( q s , d s + , d t + , d s \u2212 , d t \u2212 ) (q_{s},d_{s}^{+},d_{t}^{+},d_{s}^{-},d_{t}^{-}) Table 1: Training data used for LAMAR, with languag...",
+   "[body] ...51 343K RLHN 1 4.6M Stage 2 MIRACL 51 8.5K ( q s , d s + , d t + , d s \u2212 , d t \u2212 ) (q_{s},d_{s}^{+},d_{t}^{+},d_{s}^{-},d_{t}^{-}) Table 1: Training data used for LAMAR, with language coverage, number of constructed instances, and input format reported for each dataset and training stage. 4.1 Training Dataset. We use MMARCO (Bonifacio et al. 2021 ) , MIRACL (Zhang et al. 2022 ) multilingual triplets, and RLHN (Thakur et al. 2025 ) as training datasets. MMARCO and MIRACL provide semantically corresponding parallel data across multiple languages; MMARCO associates each query with one positive document, whereas MIRACL additionally provides one negative d...",
+   "[body] ...1: Training data used for LAMAR, with language coverage, number of constructed instances, and input format reported for each dataset and training stage. 4.1 Training Dataset. We use MMARCO (Bonifacio et al. 2021 ) , MIRACL (Zhang et al. 2022 ) multilingual triplets, and RLHN (Thakur et al. 2025 ) as training datasets. MMARCO and MIRACL provide semantically corresponding parallel data across multiple languages; MMARCO associates each query with one positive document, whereas MIRACL additionally provides one negative document. RLHN contains only English examples, with each query associated with multiple positive and negative documents. Based on these ori..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:28",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "XGLUE",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LAMAR is evaluated on XGLUE.",
+  "contexts": [
+   "[body] ...provided in Appendix A. Benchmark # Lang. Languages Language-Coherence Evaluation XQuAD 12 ar, de, el, en, es, hi, ro, ru, th, tr, vi, zh BELEBELE 14 ar, de, en, es, fr, hi, id, it, ja, nl, pt, ru, vi, zh Multilingual Reranking Evaluation MIRACL 18 ar, bn, de, en, es, fa, fi, fr, hi, id, ja, ko, ru, sw, te, th, yo, zh XGLUE 7 de, en, es, fr, it, pt, zh HUME 3 da, en, no MLDR 13 ar, de, en, es, fr, hi, it, ja, ko, pt, ru, th, zh Wikipedia 16 bg, bn, cs, da, de, en, fa, fi, hi, it, nl, no, pt, ro, sr, sv Table 2: Benchmarks and language coverage for language-coherence and multilingual reranking evaluation. 4.2 Training Details LAMAR is initialized from t..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:29",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "HUME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LAMAR is evaluated on HUME.",
+  "contexts": [
+   "[body] ...Lang. Languages Language-Coherence Evaluation XQuAD 12 ar, de, el, en, es, hi, ro, ru, th, tr, vi, zh BELEBELE 14 ar, de, en, es, fr, hi, id, it, ja, nl, pt, ru, vi, zh Multilingual Reranking Evaluation MIRACL 18 ar, bn, de, en, es, fa, fi, fr, hi, id, ja, ko, ru, sw, te, th, yo, zh XGLUE 7 de, en, es, fr, it, pt, zh HUME 3 da, en, no MLDR 13 ar, de, en, es, fr, hi, it, ja, ko, pt, ru, th, zh Wikipedia 16 bg, bn, cs, da, de, en, fa, fi, hi, it, nl, no, pt, ro, sr, sv Table 2: Benchmarks and language coverage for language-coherence and multilingual reranking evaluation. 4.2 Training Details LAMAR is initialized from the multilingual base encoder bge-m3..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:30",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "MLDR",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "LAMAR is evaluated on MLDR.",
+  "contexts": [
+   "[body] ...anguage-Coherence Evaluation XQuAD 12 ar, de, el, en, es, hi, ro, ru, th, tr, vi, zh BELEBELE 14 ar, de, en, es, fr, hi, id, it, ja, nl, pt, ru, vi, zh Multilingual Reranking Evaluation MIRACL 18 ar, bn, de, en, es, fa, fi, fr, hi, id, ja, ko, ru, sw, te, th, yo, zh XGLUE 7 de, en, es, fr, it, pt, zh HUME 3 da, en, no MLDR 13 ar, de, en, es, fr, hi, it, ja, ko, pt, ru, th, zh Wikipedia 16 bg, bn, cs, da, de, en, fa, fi, hi, it, nl, no, pt, ro, sr, sv Table 2: Benchmarks and language coverage for language-coherence and multilingual reranking evaluation. 4.2 Training Details LAMAR is initialized from the multilingual base encoder bge-m3-retromae (Chen et..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:31",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on Qwen2.5.",
+  "contexts": [
+   "[body] ...both in the query language and in other languages (Asai et al. 2021 ; Ranaldi et al. 2026 ) . A multilingual reranker must therefore compare and order these documents across languages (Zhang et al. 2025 ) . Figure 1: Multilingual RAG performance on XQuAD across query and document language combinations, measured by F1. Qwen2.5-32B-Instruct (Qwen et al. 2025 ) and Llama-3.3-70B-Instruct (Grattafiori et al. 2024 ) generate answers from gold documents for all 16 combinations of Arabic, German, English, and Chinese. Figure 2: Language coherence of Jina-reranker-v3 (Wang et al. 2025 ) , Qwen3-Reranker-4B (Zhang et al. 2025 ) , and zerank-2-reranker (Pipitone..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:32",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "Qwen3.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on Qwen3.5.",
+  "contexts": [
+   "[body] ...jina-reranker-v2-base-multilingual 0.3B 57.30 79.36 72.55 60.47 79.88 73.49 58.89 79.62 13 bge-reranker-v2-m3 0.6B 84.67 92.20 89.89 84.83 92.65 90.32 84.75 92.43 5 Qwen3-Reranker-0.6B 0.6B 61.72 79.58 73.56 67.67 82.85 77.78 64.70 81.22 12 jina-reranker-v3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.83 98.02 97.39 94.32 97.21 96.37 95.08 97.62 2 ctxl-rerank-v2-instruct-multilingual-1b 1B 88.79 94.92 93.27 94.64 97.54 96.72 91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge-reran...",
+   "[body] ...3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.83 98.02 97.39 94.32 97.21 96.37 95.08 97.62 2 ctxl-rerank-v2-instruct-multilingual-1b 1B 88.79 94.92 93.27 94.64 97.54 96.72 91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge-reranker-v2-gemma 2B 86.63 93.42 91.24 84.55 92.49 90.04 85.59 92.96 4 Qwen3-Reranker-4B 4B 33.03 58.81 48.61 43.31 67.02 58.79 38.17 62.92 14 zerank-2-reranker 4B 63.13 79.98 74.31 74.71 87.16 83.22 68.92 83.57 10 Prism-Qwen3.5-Reranker-4B 4B 70.53 85.19 80.64...",
+   "[body] ...91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge-reranker-v2-gemma 2B 86.63 93.42 91.24 84.55 92.49 90.04 85.59 92.96 4 Qwen3-Reranker-4B 4B 33.03 58.81 48.61 43.31 67.02 58.79 38.17 62.92 14 zerank-2-reranker 4B 63.13 79.98 74.31 74.71 87.16 83.22 68.92 83.57 10 Prism-Qwen3.5-Reranker-4B 4B 70.53 85.19 80.64 67.32 83.23 76.95 68.93 84.21 9 LAMAR (Ours) 0.6B 96.89 98.59 98.10 94.66 97.60 96.79 95.78 98.10 1 Table 3: Language-coherence results on the parallel oracle subsets of XQuAD and BE..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:33",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on Qwen3.",
+  "contexts": [
+   "[body] ...and document language combinations, measured by F1. Qwen2.5-32B-Instruct (Qwen et al. 2025 ) and Llama-3.3-70B-Instruct (Grattafiori et al. 2024 ) generate answers from gold documents for all 16 combinations of Arabic, German, English, and Chinese. Figure 2: Language coherence of Jina-reranker-v3 (Wang et al. 2025 ) , Qwen3-Reranker-4B (Zhang et al. 2025 ) , and zerank-2-reranker (Pipitone et al. 2025 ) across twelve languages using oracle candidate sets from XQuAD. (a) Top-1 document language distributions. Rows correspond to query languages, columns correspond to document languages, and each cell reports how frequently a document in the corresponding...",
+   "[body] ...zed from the multilingual base encoder bge-m3-retromae (Chen et al. 2024 ) , and all training is conducted on eight NVIDIA RTX A6000 GPUs. Both stages are trained for one epoch with a maximum sequence length of 8,192, a warmup ratio of 0.1, the AdamW optimizer, a linear decay scheduler, and bf16 precision. In Stage 1, Qwen3-Reranker-4B (Zhang et al. 2025 ) is used as the teacher, with a learning rate of 2 \u00d7 10 \u2212 5 2\\times 10^{-5} and a batch size of 384. In Stage 2, the coefficient \u03bb \\lambda for \u2112 LC \\mathcal{L}_{\\mathrm{LC}} is set to 2, with a learning rate of 1 \u00d7 10 \u2212 6 1\\times 10^{-6} and a batch size of 32. Model Size XQuAD (12) BELEBELE (14) nDCG...",
+   "[body] ...4) nDCG Avg. Rank nDCG@1 nDCG@10 MRR@10 nDCG@1 nDCG@10 MRR@10 @1 @10 gte-multilingual-reranker-base 0.3B 82.59 91.51 88.89 77.05 88.58 85.08 79.82 90.05 6 jina-reranker-v2-base-multilingual 0.3B 57.30 79.36 72.55 60.47 79.88 73.49 58.89 79.62 13 bge-reranker-v2-m3 0.6B 84.67 92.20 89.89 84.83 92.65 90.32 84.75 92.43 5 Qwen3-Reranker-0.6B 0.6B 61.72 79.58 73.56 67.67 82.85 77.78 64.70 81.22 12 jina-reranker-v3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.83 98.02 97.39 94.32 97.21 96.37 95.08 97.62 2 ctxl-rerank-v2-instruct-mult..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:34",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "Llama 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on Llama 3.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:35",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "BGE-M3-RetroMAE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on BGE-M3-RetroMAE.",
+  "contexts": [
+   "[body] ...no MLDR 13 ar, de, en, es, fr, hi, it, ja, ko, pt, ru, th, zh Wikipedia 16 bg, bn, cs, da, de, en, fa, fi, hi, it, nl, no, pt, ro, sr, sv Table 2: Benchmarks and language coverage for language-coherence and multilingual reranking evaluation. 4.2 Training Details LAMAR is initialized from the multilingual base encoder bge-m3-retromae (Chen et al. 2024 ) , and all training is conducted on eight NVIDIA RTX A6000 GPUs. Both stages are trained for one epoch with a maximum sequence length of 8,192, a warmup ratio of 0.1, the AdamW optimizer, a linear decay scheduler, and bf16 precision. In Stage 1, Qwen3-Reranker-4B (Zhang et al. 2025 ) is used as the teach..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:36",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "BGE-M3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on BGE-M3.",
+  "contexts": [
+   "[body] ...no MLDR 13 ar, de, en, es, fr, hi, it, ja, ko, pt, ru, th, zh Wikipedia 16 bg, bn, cs, da, de, en, fa, fi, hi, it, nl, no, pt, ro, sr, sv Table 2: Benchmarks and language coverage for language-coherence and multilingual reranking evaluation. 4.2 Training Details LAMAR is initialized from the multilingual base encoder bge-m3-retromae (Chen et al. 2024 ) , and all training is conducted on eight NVIDIA RTX A6000 GPUs. Both stages are trained for one epoch with a maximum sequence length of 8,192, a warmup ratio of 0.1, the AdamW optimizer, a linear decay scheduler, and bf16 precision. In Stage 1, Qwen3-Reranker-4B (Zhang et al. 2025 ) is used as the teach..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:37",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "BGE-Reranker",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on BGE-Reranker.",
+  "contexts": [
+   "[body] ...1\\times 10^{-6} and a batch size of 32. Model Size XQuAD (12) BELEBELE (14) nDCG Avg. Rank nDCG@1 nDCG@10 MRR@10 nDCG@1 nDCG@10 MRR@10 @1 @10 gte-multilingual-reranker-base 0.3B 82.59 91.51 88.89 77.05 88.58 85.08 79.82 90.05 6 jina-reranker-v2-base-multilingual 0.3B 57.30 79.36 72.55 60.47 79.88 73.49 58.89 79.62 13 bge-reranker-v2-m3 0.6B 84.67 92.20 89.89 84.83 92.65 90.32 84.75 92.43 5 Qwen3-Reranker-0.6B 0.6B 61.72 79.58 73.56 67.67 82.85 77.78 64.70 81.22 12 jina-reranker-v3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.8...",
+   "[body] ...anker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.83 98.02 97.39 94.32 97.21 96.37 95.08 97.62 2 ctxl-rerank-v2-instruct-multilingual-1b 1B 88.79 94.92 93.27 94.64 97.54 96.72 91.72 96.23 3 Prism-Qwen3.5-Reranker-2B 2B 70.41 85.34 79.58 60.62 79.62 70.27 65.52 82.48 11 bge-reranker-v2-gemma 2B 86.63 93.42 91.24 84.55 92.49 90.04 85.59 92.96 4 Qwen3-Reranker-4B 4B 33.03 58.81 48.61 43.31 67.02 58.79 38.17 62.92 14 zerank-2-reranker 4B 63.13 79.98 74.31 74.71 87.16 83.22 68.92 83.57 10 Prism-Qwen3.5-Reranker-4B 4B 70.53 85.19 80.64 67.32 83.23 76.95 68.93 84.21 9 LAMAR (Ours) 0.6B 96.89 98.59 98.10 94.66..."
+  ]
+ },
+ {
+  "sid": "out_14.jsonl:38",
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "object": "Jina-Reranker",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on Jina-Reranker.",
+  "contexts": [
+   "[body] ...RAG performance on XQuAD across query and document language combinations, measured by F1. Qwen2.5-32B-Instruct (Qwen et al. 2025 ) and Llama-3.3-70B-Instruct (Grattafiori et al. 2024 ) generate answers from gold documents for all 16 combinations of Arabic, German, English, and Chinese. Figure 2: Language coherence of Jina-reranker-v3 (Wang et al. 2025 ) , Qwen3-Reranker-4B (Zhang et al. 2025 ) , and zerank-2-reranker (Pipitone et al. 2025 ) across twelve languages using oracle candidate sets from XQuAD. (a) Top-1 document language distributions. Rows correspond to query languages, columns correspond to document languages, and each cell reports how fre...",
+   "[body] ...\\lambda for \u2112 LC \\mathcal{L}_{\\mathrm{LC}} is set to 2, with a learning rate of 1 \u00d7 10 \u2212 6 1\\times 10^{-6} and a batch size of 32. Model Size XQuAD (12) BELEBELE (14) nDCG Avg. Rank nDCG@1 nDCG@10 MRR@10 nDCG@1 nDCG@10 MRR@10 @1 @10 gte-multilingual-reranker-base 0.3B 82.59 91.51 88.89 77.05 88.58 85.08 79.82 90.05 6 jina-reranker-v2-base-multilingual 0.3B 57.30 79.36 72.55 60.47 79.88 73.49 58.89 79.62 13 bge-reranker-v2-m3 0.6B 84.67 92.20 89.89 84.83 92.65 90.32 84.75 92.43 5 Qwen3-Reranker-0.6B 0.6B 61.72 79.58 73.56 67.67 82.85 77.78 64.70 81.22 12 jina-reranker-v3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B...",
+   "[body] ...tilingual-reranker-base 0.3B 82.59 91.51 88.89 77.05 88.58 85.08 79.82 90.05 6 jina-reranker-v2-base-multilingual 0.3B 57.30 79.36 72.55 60.47 79.88 73.49 58.89 79.62 13 bge-reranker-v2-m3 0.6B 84.67 92.20 89.89 84.83 92.65 90.32 84.75 92.43 5 Qwen3-Reranker-0.6B 0.6B 61.72 79.58 73.56 67.67 82.85 77.78 64.70 81.22 12 jina-reranker-v3 0.6B 77.75 88.31 84.79 78.10 88.43 85.10 77.93 88.37 7 Prism-Qwen3.5-Reranker-0.8B 0.8B 72.28 86.74 82.21 71.11 85.81 79.70 71.70 86.28 8 llama-nemotron-rerank-1b-v2 1B 95.83 98.02 97.39 94.32 97.21 96.37 95.08 97.62 2 ctxl-rerank-v2-instruct-multilingual-1b 1B 88.79 94.92 93.27 94.64 97.54 96.72 91.72 96.23 3 Prism-Qwen3..."
+  ]
+ }
+]

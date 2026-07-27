@@ -1,0 +1,729 @@
+[
+ {
+  "sid": "out_10.jsonl:6",
+  "page": "arxiv:2607.21763v1",
+  "subject": "Anti-cheat prompt mitigation",
+  "object": "Cybench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Anti-cheat evaluation conducted across 22 models on Cybench capture-the-flag challenges.",
+  "contexts": [
+   "[body] ...enchmark scores undermine both. This is not a hypothetical concern. Prior work has documented the problem, but underestimated its scale. The National Institute of Standards and Technology (NIST) Center for AI Safety and Innovation (CAISI) documented agents searching the internet for challenge flags and walkthroughs on Cybench [ 24 ] , finding cheating in approximately 0.3% of logs [ 13 ] . The Meerkat study audited multiple benchmarks and found that 3.4% of successful Cybench traces involved cheating, with four models implicated [ 17 ] . Concurrently with this work, the UK AI Security Institute reported that every model they tested for cheating on cybe...",
+   "[body] ...titute of Standards and Technology (NIST) Center for AI Safety and Innovation (CAISI) documented agents searching the internet for challenge flags and walkthroughs on Cybench [ 24 ] , finding cheating in approximately 0.3% of logs [ 13 ] . The Meerkat study audited multiple benchmarks and found that 3.4% of successful Cybench traces involved cheating, with four models implicated [ 17 ] . Concurrently with this work, the UK AI Security Institute reported that every model they tested for cheating on cybersecurity evaluations attempted it at least once, with models acknowledging their cheating as impermissible less than half the time when asked [ 20 ] . M...",
+   "[body] ...tly with this work, the UK AI Security Institute reported that every model they tested for cheating on cybersecurity evaluations attempted it at least once, with models acknowledging their cheating as impermissible less than half the time when asked [ 20 ] . Meanwhile, Anthropic\u2019s Claude Opus 4.6 system card described Cybench as \u201csaturated,\u201d reporting near-100% pass rates computed from raw outcomes without transcript audits [ 1 ] . Together, these low cheating rates and unchecked pass rates suggest a marginal problem, but this characterization is misleading. If prior estimates were representative, cheating would be a marginal artifact affecting a small..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:7",
+  "page": "arxiv:2607.21773v1",
+  "subject": "Robust predict-then-optimize",
+  "object": "smart predict-then-optimize",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Method extends smart predict-then-optimize paradigm with robust optimization principles.",
+  "contexts": [
+   "[body] ...1 Introduction 1.1 Contributions 2 Background and literature review 2.1 Smart Predict-then-Optimize 2.2 Notations 3 A new paradigm: smart predict-then-robustly-optimize 3.1 Surrogate gap analysis 4 Performance guarantees of downstream robustness 5 Upstream robustification vs SPrO 6 Numerical experiments - a network flow problem 6.1 Training stability (Theorem 3.2 ) 6.2 Out-of-sample regret under data contamin...",
+   "[body] ...1 Introduction 1.1 Contributions 2 Background and literature review 2.1 Smart Predict-then-Optimize 2.2 Notations 3 A new paradigm: smart predict-then-robustly-optimize 3.1 Surrogate gap analysis 4 Performance guarantees of downstream robustness 5 Upstream robustification vs SPrO 6 Numerical experiments - a network flow problem 6.1 Training stability (Theorem 3.2 ) 6.2 Out-of-sample regret under data contamination 6.3 Sensitivity analysis on budget of uncertainty and...",
+   "[body] ...et under data contamination 6.3 Sensitivity analysis on budget of uncertainty and problem dimension 7 Concluding remarks References License: CC BY 4.0 arXiv:2607.21773v1 [cs.LG] 23 Jul 2026 \\RRHSecondLine \\LRHSecondLine \\OneAndAHalfSpacedXI \\TheoremsNumberedThrough \\ECRepeatTheorems \\EquationsNumberedThrough \\RUNTITLE Smart predict-then-robustly-optimize \\TITLE Smart predict-then-robustly-optimize \\ARTICLEAUTHORS \\AUTHOR Aakil Caunhye, Xuefei Lu, Belen Martin-Barragan \\ABSTRACT In this paper, we propose and study a robust variant of the smart predict-then-optimize approach that accounts for prediction shifts due to disturbance in the covariate feature..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:8",
+  "page": "arxiv:2607.21774v1",
+  "subject": "Colombian identity inference probe",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Probing conducted on Qwen2.5-7B-Instruct residual streams using NLA methodology.",
+  "contexts": [
+   "[body] ...5 \u00d7 \\times Neutral 5 \u00d7 \\times Explicit Colombian 5 \u00d7 \\times Implicit Colombian 5 \u00d7 \\times Neutral pair pair pair Figure 2: Dataset structure. Each of the 15 base stories is realized in Spanish-English pairs; the explicitness factor (explicit / implicit / neutral) varies between stories, yielding n = 5 n{=}5 per cell. Qwen2.5-7B-Instruct \u2192 \\to forward pass (1 deterministic run) \u2192 { h \u2113 \u200b [ 1 ] , \u2026 , h \u2113 \u200b [ N ] } \\to\\{h_{\\ell}[1],\\dots,h_{\\ell}[N]\\} , h \u2113 \u2208 \u211d 3584 h_{\\ell}\\in\\mathbb{R}^{3584} 1 Divide N N tokens into 4 positional quartiles q k = \u230a k \u200b N / 4 \u230b , k \u2208 { 1 , 2 , 3 , 4 } q_{k}=\\lfloor kN/4\\rfloor,\\;k\\!\\in\\!\\{1,2,3,4\\} \u2192 \\to extract the fina...",
+   "[abstract] ...Large language models may infer demographic attributes from subtle linguistic cues even when those attributes are not explicitly stated. This pilot study examines whether Qwen2.5-7B-Instruct internally represents Colombian identity, socioeconomic status, or stereotype-related information when processing Colombian-Spanish and English prompts. We use Natural Language Autoencoders (NLA) to verbalize residual-stream activations from layer 20 across four positional quartiles per prompt. Our dataset contains 30..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:9",
+  "page": "arxiv:2607.21774v1",
+  "subject": "Colombian identity inference probe",
+  "object": "Natural Language Autoencoders",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Methodology builds on Natural Language Autoencoders for activation-level interpretability.",
+  "contexts": [
+   "[body] ...d\u2014from cues never stated explicitly, and these inferences shape generation even when unverbalized: instruction-tuned models refuse over 98% of explicit demographic queries yet still condition outputs on inferred attributes (Bouchaud and Ramaciotti, 2025 ) . Fraser-Taliente et al. ( 2026 ) illustrate this directly with Natural Language Autoencoders (NLA): their language-switching case study shows a model representing a user as Russian several tokens before any lexical cue, later traced to mislabeled training data. Whether an analogous unverbalized inference occurs for Spanish is unknown, despite evidence it should matter most for the varieties most ofte...",
+   "[body] ...nostalgebraist, 2020 ; Belrose et al. , 2023 ; Ghandeharioun et al. , 2024 ) , and training a reader model\u2014via sparse dictionaries (Cunningham et al. , 2024 ) or a full verbalizer\u2014to translate activations into free text (Chen et al. , 2024 ; Pan et al. , 2024 ; Karvonen et al. , 2025 ) . We adopt the latter, using the Natural Language Autoencoder (NLA) of Fraser-Taliente et al. ( 2026 ) as our probing instrument; their language-switching case study, where the verbalizer surfaces a latent nationality inference before any lexical cue appears in the prompt, motivates asking whether an analogous unverbalized inference occurs for Colombian Spanish. A parall...",
+   "[abstract] ...demographic attributes from subtle linguistic cues even when those attributes are not explicitly stated. This pilot study examines whether Qwen2.5-7B-Instruct internally represents Colombian identity, socioeconomic status, or stereotype-related information when processing Colombian-Spanish and English prompts. We use Natural Language Autoencoders (NLA) to verbalize residual-stream activations from layer 20 across four positional quartiles per prompt. Our dataset contains 30 prompts arranged as 15 matched Spanish-English pairs, spanning explicit Colombian cues, implicit Colombian cues, and neutral controls. We report descriptive rates and qualitative e..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:10",
+  "page": "arxiv:2607.21776v1",
+  "subject": "rPPG talking-face deepfake detector",
+  "object": "Celeb-DF++",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "rPPG detector evaluated on Celeb-DF++ talking-face subset under subject-independent protocol.",
+  "contexts": [
+   "[body] ...1 Introduction Deepfake video generation has advanced to the point where forgeries routinely deceive both human viewers and automated forensic systems. The Celeb-DF++ benchmark [ 9 ] catalogues 22 contemporary synthesis methods organized into three categories: face-swap (FS), face-reenactment (FR), and talking-face (TF). Among these, TF presents a distinctive forensic challenge. TF methods, including SadTalker [ 24 ] , IP-LAP [ 25 ] , AniTalker [ 11 ] , EDTalk [ 16 ] , Real3D-Portrait [ 21 ]...",
+   "[body] ...epfakes, leveraging RhythmFormer [ 26 ] for waveform extraction and lightweight 1D classifiers for discrimination, achieving AUC (Area Under the ROC Curve) 0.806 within 2.4 points of the best published general-purpose detector while using only the physiological channel. \u2022 Controlled reproduction of DeepFakesON-Phys on Celeb-DF++ TF data, documenting an AUC degradation from 0.999 (original FS evaluation) to 0.622, quantifying the distribution shift between 2020-era FS training data and contemporary TF forgeries. \u2022 Method-stratified analysis across all seven TF generators revealing a stable AUC range of 0.690\u20130.985, directly traceable to each method\u2019s pi...",
+   "[body] ...hile the ViT shows no improvement over the 1D baselines. We attribute this to both representations\u2019 dependence on absolute amplitude structure, which normalization explicitly removes, and report this as a rigorous negative result rather than an omission. 4 Experimental Setup 4.1 Dataset We evaluate on the TF subset of Celeb-DF++ [ 9 ] , which contains 590 real videos sourced from 59 unique celebrity identities and 17,500 TF-forged videos spanning seven synthesis methods (2,500 per method). rPPG waveforms are extracted from all videos, yielding 585 real waveforms (585 source videos with stride-60 temporal windowing produce 2,435 waveforms in total) and..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:11",
+  "page": "arxiv:2607.21776v1",
+  "subject": "rPPG talking-face deepfake detector",
+  "object": "RhythmFormer",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Method builds on RhythmFormer for per-video rPPG waveform extraction.",
+  "contexts": [
+   "[body] ...udio temporal inconsistency [ 12 , 6 ] . To our knowledge, no prior work applies rPPG-based detection specifically to TF forgeries, where the physiological argument is strongest. We address this gap with the following contributions: \u2022 First rPPG-based detection framework specifically targeting TF deepfakes, leveraging RhythmFormer [ 26 ] for waveform extraction and lightweight 1D classifiers for discrimination, achieving AUC (Area Under the ROC Curve) 0.806 within 2.4 points of the best published general-purpose detector while using only the physiological channel. \u2022 Controlled reproduction of DeepFakesON-Phys on Celeb-DF++ TF data, documenting an AUC d...",
+   "[abstract] ...y. Unlike face-swap ma- nipulation, TF synthesis has no underlying real video from which to inherit physiological characteristics, making re- mote photoplethysmography (rPPG) a uniquely motivated detection modality for this forgery category. We propose a detection framework that extracts per-video rPPG wave- forms via RhythmFormer and trains a suite of lightweight classifiers to distinguish real from synthesized physiologi- cal signals. Evaluated on the TF subset of Celeb-DF++ un- der a strict subject-independent protocol, where test identi- ties are completely separated from training identities, our 1D ResNet achieves an AUC of 0.806 and EER of 27.8%,..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:12",
+  "page": "arxiv:2607.21776v1",
+  "subject": "rPPG talking-face deepfake detector",
+  "object": "DeepFakesON-Phys",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Reproduced DeepFakesON-Phys (prior rPPG detector) for comparison, showing AUC degradation on talking-face data.",
+  "contexts": [
+   "[body] ...hysiological signal in FS settings. In TF synthesis, no such substrate exists. Any apparent physiological signal in a TF-generated video must be produced de novo by the generator itself, and current generators make no attempt to reproduce coherent rPPG patterns. Prior rPPG-based deepfake detectors, FakeCatcher [ 3 ] , DeepFakesON-Phys [ 7 ] , DeepRhythm [ 15 ] , and subsequent work [ 1 , 10 , 19 ] , were developed and evaluated exclusively on FS data, where rPPG is theoretically least advantaged. The TF detection literature, meanwhile, is dominated by audio-visual approaches that exploit lip-audio temporal inconsistency [ 12 , 6 ] . To our knowledge, n...",
+   "[body] ...ally targeting TF deepfakes, leveraging RhythmFormer [ 26 ] for waveform extraction and lightweight 1D classifiers for discrimination, achieving AUC (Area Under the ROC Curve) 0.806 within 2.4 points of the best published general-purpose detector while using only the physiological channel. \u2022 Controlled reproduction of DeepFakesON-Phys on Celeb-DF++ TF data, documenting an AUC degradation from 0.999 (original FS evaluation) to 0.622, quantifying the distribution shift between 2020-era FS training data and contemporary TF forgeries. \u2022 Method-stratified analysis across all seven TF generators revealing a stable AUC range of 0.690\u20130.985, directly traceable...",
+   "[abstract] ...ties are completely separated from training identities, our 1D ResNet achieves an AUC of 0.806 and EER of 27.8%, placing it within 2.4 points of the best published general- purpose detector (Effort, ICML 2025) while operating ex- clusively on the physiological channel. We document a con- trolled reproduction study of DeepFakesON-Phys, the rep- resentative prior rPPG detector, demonstrating degrada- tion from AUC 0.999 on legacy face-swap data to 0.622 on the TF subset of Celeb-DF++. We further show that detec- tion difficulty is strongly method-dependent: AUC ranges from 0.985 (Real3DPortrait) to 0.690 (IP-LAP) across the seven TF generators, with the..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:13",
+  "page": "arxiv:2607.21780v1",
+  "subject": "Document packet splitting system",
+  "object": "Qwen3-VL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Method fine-tunes Qwen3-VL-4B with QLoRA for document packet splitting.",
+  "contexts": [
+   "[body] ...airing each with a one-line description. We report results on the test split (210 packets per variant) and evaluate all models with t \u200b e \u200b m \u200b p \u200b e \u200b r \u200b a \u200b t \u200b u \u200b r \u200b e = 1.0 temperature=1.0 and reasoning disabled. 5.3 Supervised Fine-Tuning In addition to flagship MLLMs, we benchmark small , open -weight models: Qwen3-VL-4B , InternVL3.5-4B , and Gemma 4 E2B . Each is adapted with QLoRA (4-bit, rank 16) using its native non-reasoning chat template to match the zero-shot setting. To ensure a fair comparison, we cap the per-page image resolution at approximately 512 \u00d7 512 512\\times 512 , equalizing the per-page token budget while keeping multi-page..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:14",
+  "page": "arxiv:2607.21780v1",
+  "subject": "Document packet splitting system",
+  "object": "InternVL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Method fine-tunes InternVL3.5-4B for document packet splitting with QLoRA.",
+  "contexts": [
+   "[body] ...th a one-line description. We report results on the test split (210 packets per variant) and evaluate all models with t \u200b e \u200b m \u200b p \u200b e \u200b r \u200b a \u200b t \u200b u \u200b r \u200b e = 1.0 temperature=1.0 and reasoning disabled. 5.3 Supervised Fine-Tuning In addition to flagship MLLMs, we benchmark small , open -weight models: Qwen3-VL-4B , InternVL3.5-4B , and Gemma 4 E2B . Each is adapted with QLoRA (4-bit, rank 16) using its native non-reasoning chat template to match the zero-shot setting. To ensure a fair comparison, we cap the per-page image resolution at approximately 512 \u00d7 512 512\\times 512 , equalizing the per-page token budget while keeping multi-page packets withi..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:15",
+  "page": "arxiv:2607.21780v1",
+  "subject": "Document packet splitting system",
+  "object": "Gemma",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Method fine-tunes Gemma 4 E2B for document packet splitting.",
+  "contexts": [
+   "[body] ...tion. We report results on the test split (210 packets per variant) and evaluate all models with t \u200b e \u200b m \u200b p \u200b e \u200b r \u200b a \u200b t \u200b u \u200b r \u200b e = 1.0 temperature=1.0 and reasoning disabled. 5.3 Supervised Fine-Tuning In addition to flagship MLLMs, we benchmark small , open -weight models: Qwen3-VL-4B , InternVL3.5-4B , and Gemma 4 E2B . Each is adapted with QLoRA (4-bit, rank 16) using its native non-reasoning chat template to match the zero-shot setting. To ensure a fair comparison, we cap the per-page image resolution at approximately 512 \u00d7 512 512\\times 512 , equalizing the per-page token budget while keeping multi-page packets within GPU memory. We trai..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:16",
+  "page": "arxiv:2607.21780v1",
+  "subject": "Document packet splitting system",
+  "object": "DocSplit",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Results compared against DocSplit baseline for page, page+split, and page+split+order accuracies.",
+  "contexts": [
+   "[body] .... S ord S_{\\mathrm{ord}} is the mean \u03c4 a \\tau_{a} over all predicted multi-page sub-documents (defined as 1 1 if a packet contains none). The overall packet score equally weights the two components, S pkt = 1 2 \u200b S clu + 1 2 \u200b S ord S_{\\mathrm{pkt}}=\\tfrac{1}{2}S_{\\mathrm{clu}}+\\tfrac{1}{2}S_{\\mathrm{ord}} , following DocSplit. Like DocSplit, S pkt S_{\\mathrm{pkt}} evaluates partition structure rather than labels. We therefore report typing separately as page accuracy, PgAcc = 1 n \u200b \u2211 j = 1 n \ud835\udfd9 \u200b [ t ^ \u200b ( j ) = t \u200b ( j ) ] \\mathrm{PgAcc}=\\frac{1}{n}\\sum_{j=1}^{n}\\mathds{1}\\!\\left[\\hat{t}(j)=t(j)\\right] , alongside DocSplit\u2019s page, page+split, and page...",
+   "[body] ...hrm{ord}} is the mean \u03c4 a \\tau_{a} over all predicted multi-page sub-documents (defined as 1 1 if a packet contains none). The overall packet score equally weights the two components, S pkt = 1 2 \u200b S clu + 1 2 \u200b S ord S_{\\mathrm{pkt}}=\\tfrac{1}{2}S_{\\mathrm{clu}}+\\tfrac{1}{2}S_{\\mathrm{ord}} , following DocSplit. Like DocSplit, S pkt S_{\\mathrm{pkt}} evaluates partition structure rather than labels. We therefore report typing separately as page accuracy, PgAcc = 1 n \u200b \u2211 j = 1 n \ud835\udfd9 \u200b [ t ^ \u200b ( j ) = t \u200b ( j ) ] \\mathrm{PgAcc}=\\frac{1}{n}\\sum_{j=1}^{n}\\mathds{1}\\!\\left[\\hat{t}(j)=t(j)\\right] , alongside DocSplit\u2019s page, page+split, and page+split+order ac...",
+   "[body] ...rd}} , following DocSplit. Like DocSplit, S pkt S_{\\mathrm{pkt}} evaluates partition structure rather than labels. We therefore report typing separately as page accuracy, PgAcc = 1 n \u200b \u2211 j = 1 n \ud835\udfd9 \u200b [ t ^ \u200b ( j ) = t \u200b ( j ) ] \\mathrm{PgAcc}=\\frac{1}{n}\\sum_{j=1}^{n}\\mathds{1}\\!\\left[\\hat{t}(j)=t(j)\\right] , alongside DocSplit\u2019s page, page+split, and page+split+order accuracies. All metrics are averaged over the test packets. 5.2 Training-Free Zero-Shot Inference We evaluate five flagship MLLMs spanning proprietary and open-weight ecosystems: the proprietary Gemini-3.5-Flash , GPT-5.4 , and Qwen 3.6 Plus , and the open-weight GLM-4.6V and Kimi K2.5 , a..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:17",
+  "page": "arxiv:2607.21785v1",
+  "subject": "Hybrid probabilistic forecasting system",
+  "object": "Prophet",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "System integrates Prophet time series decomposition with NLP techniques for roadblock forecasting.",
+  "contexts": [
+   "[body] ...10 ] . Despite the magnitude of this economic and social impact, and the consolidation of roadblocks as a recurring event, there are no predictive systems that allow anticipating the o [...] evaluation that quantifies the marginal value provided by semantic press representations over temporal decomposition models like Prophet [ 22 ] , nor one that compares such an architecture against independent machine learning and time series benchmarks. The present proposal addresses both gaps: it intentionally combines the interpretability of temporal decomposition with the local precision of encoder-only models and calibrated gradient boosting, and validates the...",
+   "[abstract] ...timated at losses equivalent to 4% of the national Gross Domestic Product. Despite their recurrence and impact, there is a lack of local predictive systems to anticipate these events for logistical decision-making. This paper presents a hybrid probabilistic forecasting system that integrates time series decomposition (Prophet) with natural language processing (NLP) techniques applied to a six-year corpus of Bolivian news coverage. The methodology employs vector semantic embeddings and zero-shot classification models to capture signals of discursive escalation prior to the materialization of the roadblocks. Using an expanding walk-forward validation sch...",
+   "[abstract] ...o the materialization of the roadblocks. Using an expanding walk-forward validation scheme applied over 1,762 days and seven forecasting horizons (H+1 to H+7), seven internal configurations and four external benchmarks were compared, including SARIMA and LightGBM. The results demonstrate that the hybrid configuration (Prophet + NLP, C6) consistently outperforms purely statistical models, achieving an AUC-ROC of 0.677 at H+1 and reducing the Brier Score by 10.9% relative to the baseline temporal model (0.220 vs. 0.247), maintaining a statistically significant error reduction across all evaluated horizons ($p &lt; 0.02$). This research validates that the..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:18",
+  "page": "arxiv:2607.21785v1",
+  "subject": "Hybrid probabilistic forecasting system",
+  "object": "SARIMA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "SARIMA compared as external baseline to hybrid Prophet+NLP configuration.",
+  "contexts": [
+   "[body] ...both gaps: it intentionally combines the interpretability of temporal decomposition with the local precision of encoder-only models and calibrated gradient boosting, and validates the contribution of the semantic component against four external baselines\u2014regularized logistic regression (B1), LightGBM (B2), univariate SARIMA (B3), and XGBoost with autoregressive features (B4)\u2014all evaluated under the same walk-forward scheme, with hyperparameters optimized over a tuning window separate from the final evaluation period to ensure the comparison is free of model selection bias. 3 Data and Methodology 3.1 Data Sources For this study, two independent informa...",
+   "[abstract] ...ot classification models to capture signals of discursive escalation prior to the materialization of the roadblocks. Using an expanding walk-forward validation scheme applied over 1,762 days and seven forecasting horizons (H+1 to H+7), seven internal configurations and four external benchmarks were compared, including SARIMA and LightGBM. The results demonstrate that the hybrid configuration (Prophet + NLP, C6) consistently outperforms purely statistical models, achieving an AUC-ROC of 0.677 at H+1 and reducing the Brier Score by 10.9% relative to the baseline temporal model (0.220 vs. 0.247), maintaining a statistically significant error reduction acr..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:19",
+  "page": "arxiv:2607.21785v1",
+  "subject": "Hybrid probabilistic forecasting system",
+  "object": "LightGBM",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "LightGBM compared as external machine learning baseline for roadblock forecasting.",
+  "contexts": [
+   "[body] ...present proposal addresses both gaps: it intentionally combines the interpretability of temporal decomposition with the local precision of encoder-only models and calibrated gradient boosting, and validates the contribution of the semantic component against four external baselines\u2014regularized logistic regression (B1), LightGBM (B2), univariate SARIMA (B3), and XGBoost with autoregressive features (B4)\u2014all evaluated under the same walk-forward scheme, with hyperparameters optimized over a tuning window separate from the final evaluation period to ensure the comparison is free of model selection bias. 3 Data and Methodology 3.1 Data Sources For this stud...",
+   "[abstract] ...cation models to capture signals of discursive escalation prior to the materialization of the roadblocks. Using an expanding walk-forward validation scheme applied over 1,762 days and seven forecasting horizons (H+1 to H+7), seven internal configurations and four external benchmarks were compared, including SARIMA and LightGBM. The results demonstrate that the hybrid configuration (Prophet + NLP, C6) consistently outperforms purely statistical models, achieving an AUC-ROC of 0.677 at H+1 and reducing the Brier Score by 10.9% relative to the baseline temporal model (0.220 vs. 0.247), maintaining a statistically significant error reduction across all eva..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:20",
+  "page": "arxiv:2607.21785v1",
+  "subject": "Hybrid probabilistic forecasting system",
+  "object": "XGBoost",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "XGBoost with autoregressive features compared as external baseline.",
+  "contexts": [
+   "[body] ...tentionally combines the interpretability of temporal decomposition with the local precision of encoder-only models and calibrated gradient boosting, and validates the contribution of the semantic component against four external baselines\u2014regularized logistic regression (B1), LightGBM (B2), univariate SARIMA (B3), and XGBoost with autoregressive features (B4)\u2014all evaluated under the same walk-forward scheme, with hyperparameters optimized over a tuning window separate from the final evaluation period to ensure the comparison is free of model selection bias. 3 Data and Methodology 3.1 Data Sources For this study, two independent information sources with..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:21",
+  "page": "arxiv:2607.21785v1",
+  "subject": "Hybrid probabilistic forecasting system",
+  "object": "RoBERTuito",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "System uses RoBERTuito for Spanish sentiment analysis of news items.",
+  "contexts": [
+   "[body] ...rmed physical roadblock (reference weight 1.0) \u2013 March or roadblock announcement (0.60) \u2013 Strike or union demand (0.20) \u2013 Unrelated content (0.0). Additionally, the discrete level with the highest probability ( Nivel_Bloqueo_ZS ) was recorded for each news item. Sentiment analysis. A Spanish sentiment analysis model ( RoBERTuito , via the pysentimiento library) was applied to obtain a continuous polarity score per news item. Vector semantic representation. Each headline was transformed into a 384-dimensional vector using the multilingual sentence embeddings model paraphrase-multilingual-MiniLM-L12-v2 . A preliminary evaluation was conducted on reducing..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:22",
+  "page": "arxiv:2607.21785v1",
+  "subject": "Hybrid probabilistic forecasting system",
+  "object": "mDeBERTa-v3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "System uses mDeBERTa-v3-base for multilingual zero-shot classification of roadblock relevance.",
+  "contexts": [
+   "[body] ...cluding periods of inactivity that do not provide a predictive signal for the studied phenomenon. 3.3 Textual Feature Extraction Three feature extraction processes were applied to each filtered news item using pre-trained language models: Road relevance classification (zero-shot). A multilingual zero-shot classifier ( mDeBERTa-v3-base-mnli-xnli ) was used to assign each headline a continuous relevance score with respect to four levels of road conflict intensity: \u2013 Confirmed physical roadblock (reference weight 1.0) \u2013 March or roadblock announcement (0.60) \u2013 Strike or union demand (0.20) \u2013 Unrelated content (0.0). Additionally, the discrete level with t..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:23",
+  "page": "arxiv:2607.21793v1",
+  "subject": "Length-aware policy optimization",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Method proposes quadrant-weighted sampling variant of GRPO for length control.",
+  "contexts": [
+   "[body] ...yzed the emergence of Large Reasoning Models (LRMs), such as OpenAI o-series (Jaech et al. , 2024 ; OpenAI, 2025 ) , Gemini 3 (Google, 2025 ) , Claude 4.5 (Anthropic, 2025b ; a ) , Grok 4 (xAI, 2025 ) , DeepSeek-R1 (Guo et al. , 2025 ) , Qwen3 (Yang et al. , 2025 ) , Kimi-K2 (Team et al. , 2025a ) . RL methods such as GRPO (Shao et al. , 2024 ) promote long Chain-of-Thought reasoning, improving self-reflection and allowing LRMs to handle complex mathematical, coding and agentic tasks (Luo et al. , 2025 ; Team et al. , 2025b ; Feng et al. , 2025 ) . However, this unbounded optimization paradigm has introduced a severe byproduct: the length explosion phe...",
+   "[body] ...ient, QLPO naturally coerces the model to favor concise reasoning while protecting the model\u2019s capacity on complex tasks. We conduct a comprehensive evaluation of QLPO, demonstrating its effectiveness and robustness. Our primary contributions are summarized as follows: \u2022 We introduce QLPO , a sampling-based variant of GRPO that achieves length-aware policy optimization while leaving the reward function, advantage estimator, and downstream GRPO optimization unchanged. \u2022 We introduce a group\u2013trajectory gradient analysis for group-based RL algorithms, which decomposes optimization into group-level gradient [...] 4 Experiments 4.1 Experimental Setup Model...",
+   "[body] ...e conduct a comprehensive evaluation of QLPO, demonstrating its effectiveness and robustness. Our primary contributions are summarized as follows: \u2022 We introduce QLPO , a sampling-based variant of GRPO that achieves length-aware policy optimization while leaving the reward function, advantage estimator, and downstream GRPO optimization unchanged. \u2022 We introduce a group\u2013trajectory gradient analysis for group-based RL algorithms, which decomposes optimization into group-level gradient [...] 4 Experiments 4.1 Experimental Setup Models and datasets. We evaluate QLPO on a diverse set of models, including Qwen2.5-3B, Qwen2.5-32B, Qwen3-30B-A3B, DeepScaleR-1..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:24",
+  "page": "arxiv:2607.21793v1",
+  "subject": "Length-aware policy optimization",
+  "object": "GFPO",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Method compared against Group Filtered Policy Optimization (GFPO).",
+  "contexts": [
+   "[body] ...r from complex designs with delicate hyperparameters that are difficult to tune. A bad coefficient easily distorts the RL objective, leading to a sharp performance drop on harder problems that require deep and extensive deductive steps. Other heuristic resampling approaches, such as Group Filtered Policy Optimization (GFPO) (Shrivastava et al. , 2026 ) , often face generalization challenges. Although selecting the shortest responses can be effective in certain scenarios, this strategy ignores the negative gradient contribution of incorrect samples and may even backfire, resulting in worse inference efficiency. Figure 2 illustrates one such failure case...",
+   "[body] ...up size but different rollout budgets. To isolate the effect of quadrant-weighted selection from the effect of additional sampling, we further evaluate rollout-matched GRPO with K = M = 16 K=M=16 , which generates the same number of trajectories as QLPO but updates the policy using all of them. We also compare against GFPO with K = 16 K=16 and M = 8 M=8 . We additionally compare against several open-source efficiency-oriented reasoning models, including L1, Laser, and ThinkPrune, using their publicly released checkpoints (Aggarwal and Welleck, 2025 ; Liu et al. , 2026b ; Fang et al. , 2025 ; Hou et al. , 2025 ) . Training Configuration and Hyperparamet..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:25",
+  "page": "arxiv:2607.21793v1",
+  "subject": "Length-aware policy optimization",
+  "object": "GSM8K",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QLPO evaluated on GSM8K reasoning benchmark across multiple models.",
+  "contexts": [
+   "[body] ...QLPO has the same policy-update group size as standard GRPO, but uses a larger rollout candidate pool. The rollout-matched comparison in Section 5.1 controls for this difference in sampling budget. Evaluation. We evaluate the trained models on five widely used reasoning benchmarks: MATH-500 (Lightman et al. , 2023 ) , GSM8K (Cobbe et al. , 2021 ) , OlympiadBench (He et al. , 2024 ) , GPQA (Rein et al. , 2024 ) and AIME 2024. Unless otherwise specified, we sample model responses at temperature T = 0.8 T=0.8 with a maximum generation length of 32k tokens. We generate 16 responses per prompt for AIME24 and 3 responses per prompt for the remaining benchmar...",
+   "[body] ..., OlympiadBench (He et al. , 2024 ) , GPQA (Rein et al. , 2024 ) and AIME 2024. Unless otherwise specified, we sample model responses at temperature T = 0.8 T=0.8 with a maximum generation length of 32k tokens. We generate 16 responses per prompt for AIME24 and 3 responses per prompt for the remaining benchmarks. For GSM8K and MATH-500, correctness is determined by structured answer extraction followed by normalized exact matching. For the remaining benchmarks, we first apply rule-based matching; only when such matching fails do we fall back to GPT-4.1 as an auxiliary verifier. We report pass@1 accuracy and average output length, and use these metrics...",
+   "[body] ...matching. For the remaining benchmarks, we first apply rule-based matching; only when such matching fails do we fall back to GPT-4.1 as an auxiliary verifier. We report pass@1 accuracy and average output length, and use these metrics to evaluate the accuracy-efficiency trade-off of each method. 4.2 Main Results Model GSM8K MATH-500 OlympiadBench GPQA AIME24 Acc. Len. Acc. Len. Acc. Len. Acc. Len. Acc. Len. DeepScaleR-1.5B 77.3 4,021 82.4 4,159 46.6 9,265 17.2 15,062 38.8 9,978 + GRPO 85.2 3,434 87.2 4,095 50.7 17,138 28.2 27,758 40.8 9,674 \\rowcolor gray!10 + QLPO 85.4 1,707 87.8 2,639 50.0 6,621 28.2 23,199 40.8 6,285 DS-7B 89.3 2,145 88.0 4,174 54.6..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:26",
+  "page": "arxiv:2607.21793v1",
+  "subject": "Length-aware policy optimization",
+  "object": "MATH",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QLPO evaluated on MATH reasoning benchmark for accuracy-length trade-off.",
+  "contexts": [
+   "[body] ...gle, 2025 ) , Claude 4.5 (Anthropic, 2025b ; a ) , Grok 4 (xAI, 2025 ) , DeepSeek-R1 (Guo et al. , 2025 ) , Qwen3 (Yang et al. , 2025 ) , Kimi-K2 (Team et al. , 2025a ) . RL methods such as GRPO (Shao et al. , 2024 ) promote long Chain-of-Thought reasoning, improving self-reflection and allowing LRMs to handle complex mathematical, coding and agentic tasks (Luo et al. , 2025 ; Team et al. , 2025b ; Feng et al. , 2025 ) . However, this unbounded optimization paradigm has introduced a severe byproduct: the length explosion phenomenon. Driven by a reward signal that exclusively favors the final correct answer, LRMs consistently develop excessively verbose...",
+   "[body] ...s strategy ignores the negative gradient contribution of incorrect samples and may even backfire, resulting in worse inference efficiency. Figure 2 illustrates one such failure case, whose underlying mechanism is discussed in detail in Sec. 3.3 . Figure 2: Training dynamics of different methods for Qwen2.5-32B on DAPO-MATH. To alleviate the length explosion problem while overcoming the aforementioned limitations, we shift the paradigm from explicit reward hacking and empirical filtering to structured data resampling. In this paper, we propose QLPO ( Q uadrant-weighted sampling for L ength-aware P olicy O ptimization), a simple and robust RL algorithm....",
+   "[body] ...-A3B, DeepScaleR-1.5B-Preview (DeepScaleR-1.5B) and DeepSeek-R1-Distill-Qwen-7B (DS-7B) (Yang et al. , 2024 ; 2025 ) . These models cover both dense and MoE architectures, as well as different levels of reasoning ability, allowing us to test whether QLPO generalizes across model families and capability regimes. We use MATH-lighteval (Hendrycks et al. , 2021 ) for the 3B setting and DAPO-MATH (Yu et al. , 2025 ) for the remaining models. In addition to text reasoning, we also conduct preliminary experiments in multimodal reasoning and code generation. Specifically, we evaluate QLPO for Qwen2.5-3B-VL (Bai et al. , 2025 ) on Geo3K (Lu et al. , 2021 ) and..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:27",
+  "page": "arxiv:2607.21793v1",
+  "subject": "Length-aware policy optimization",
+  "object": "OlympiadBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QLPO evaluated on OlympiadBench for mathematical problem-solving.",
+  "contexts": [
+   "[body] ...group size as standard GRPO, but uses a larger rollout candidate pool. The rollout-matched comparison in Section 5.1 controls for this difference in sampling budget. Evaluation. We evaluate the trained models on five widely used reasoning benchmarks: MATH-500 (Lightman et al. , 2023 ) , GSM8K (Cobbe et al. , 2021 ) , OlympiadBench (He et al. , 2024 ) , GPQA (Rein et al. , 2024 ) and AIME 2024. Unless otherwise specified, we sample model responses at temperature T = 0.8 T=0.8 with a maximum generation length of 32k tokens. We generate 16 responses per prompt for AIME24 and 3 responses per prompt for the remaining benchmarks. For GSM8K and MATH-500, cor...",
+   "[body] ...the remaining benchmarks, we first apply rule-based matching; only when such matching fails do we fall back to GPT-4.1 as an auxiliary verifier. We report pass@1 accuracy and average output length, and use these metrics to evaluate the accuracy-efficiency trade-off of each method. 4.2 Main Results Model GSM8K MATH-500 OlympiadBench GPQA AIME24 Acc. Len. Acc. Len. Acc. Len. Acc. Len. Acc. Len. DeepScaleR-1.5B 77.3 4,021 82.4 4,159 46.6 9,265 17.2 15,062 38.8 9,978 + GRPO 85.2 3,434 87.2 4,095 50.7 17,138 28.2 27,758 40.8 9,674 \\rowcolor gray!10 + QLPO 85.4 1,707 87.8 2,639 50.0 6,621 28.2 23,199 40.8 6,285 DS-7B 89.3 2,145 88.0 4,174 54.6 8,977 38.4 11,...",
+   "[body] ...,355 \\rowcolor gray!10 + QLPO 96.1 1,215 96.8 3,528 89.3 7,070 60.6 4,016 82.1 9,692 Table 1: Accuracy\u2013length trade-off across models under the base, GRPO, and QLPO settings. QLPO Improves the Accuracy\u2013Length Trade-off The magnitude of compression is substantial across a wide range of scales. For example, QLPO reduces OlympiadBench length from 17,138 to 6,621 for DeepScaleR-1.5B, AIME length from 12,..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:28",
+  "page": "arxiv:2607.21793v1",
+  "subject": "Length-aware policy optimization",
+  "object": "GPQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QLPO evaluated on GPQA graduate-level question-answering benchmark.",
+  "contexts": [
+   "[body] ...es a larger rollout candidate pool. The rollout-matched comparison in Section 5.1 controls for this difference in sampling budget. Evaluation. We evaluate the trained models on five widely used reasoning benchmarks: MATH-500 (Lightman et al. , 2023 ) , GSM8K (Cobbe et al. , 2021 ) , OlympiadBench (He et al. , 2024 ) , GPQA (Rein et al. , 2024 ) and AIME 2024. Unless otherwise specified, we sample model responses at temperature T = 0.8 T=0.8 with a maximum generation length of 32k tokens. We generate 16 responses per prompt for AIME24 and 3 responses per prompt for the remaining benchmarks. For GSM8K and MATH-500, correctness is determined by structured...",
+   "[body] ...benchmarks, we first apply rule-based matching; only when such matching fails do we fall back to GPT-4.1 as an auxiliary verifier. We report pass@1 accuracy and average output length, and use these metrics to evaluate the accuracy-efficiency trade-off of each method. 4.2 Main Results Model GSM8K MATH-500 OlympiadBench GPQA AIME24 Acc. Len. Acc. Len. Acc. Len. Acc. Len. Acc. Len. DeepScaleR-1.5B 77.3 4,021 82.4 4,159 46.6 9,265 17.2 15,062 38.8 9,978 + GRPO 85.2 3,434 87.2 4,095 50.7 17,138 28.2 27,758 40.8 9,674 \\rowcolor gray!10 + QLPO 85.4 1,707 87.8 2,639 50.0 6,621 28.2 23,199 40.8 6,285 DS-7B 89.3 2,145 88.0 4,174 54.6 8,977 38.4 11,321 56.7 13,14..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:29",
+  "page": "arxiv:2607.21793v1",
+  "subject": "Length-aware policy optimization",
+  "object": "AIME",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "QLPO evaluated on AIME 2024 advanced mathematical reasoning benchmark.",
+  "contexts": [
+   "[body] ...ool. The rollout-matched comparison in Section 5.1 controls for this difference in sampling budget. Evaluation. We evaluate the trained models on five widely used reasoning benchmarks: MATH-500 (Lightman et al. , 2023 ) , GSM8K (Cobbe et al. , 2021 ) , OlympiadBench (He et al. , 2024 ) , GPQA (Rein et al. , 2024 ) and AIME 2024. Unless otherwise specified, we sample model responses at temperature T = 0.8 T=0.8 with a maximum generation length of 32k tokens. We generate 16 responses per prompt for AIME24 and 3 responses per prompt for the remaining benchmarks. For GSM8K and MATH-500, correctness is determined by structured answer extraction followed by...",
+   "[body] ...s: MATH-500 (Lightman et al. , 2023 ) , GSM8K (Cobbe et al. , 2021 ) , OlympiadBench (He et al. , 2024 ) , GPQA (Rein et al. , 2024 ) and AIME 2024. Unless otherwise specified, we sample model responses at temperature T = 0.8 T=0.8 with a maximum generation length of 32k tokens. We generate 16 responses per prompt for AIME24 and 3 responses per prompt for the remaining benchmarks. For GSM8K and MATH-500, correctness is determined by structured answer extraction followed by normalized exact matching. For the remaining benchmarks, we first apply rule-based matching; only when such matching fails do we fall back to GPT-4.1 as an auxiliary verifier. We rep...",
+   "[body] ...marks, we first apply rule-based matching; only when such matching fails do we fall back to GPT-4.1 as an auxiliary verifier. We report pass@1 accuracy and average output length, and use these metrics to evaluate the accuracy-efficiency trade-off of each method. 4.2 Main Results Model GSM8K MATH-500 OlympiadBench GPQA AIME24 Acc. Len. Acc. Len. Acc. Len. Acc. Len. Acc. Len. DeepScaleR-1.5B 77.3 4,021 82.4 4,159 46.6 9,265 17.2 15,062 38.8 9,978 + GRPO 85.2 3,434 87.2 4,095 50.7 17,138 28.2 27,758 40.8 9,674 \\rowcolor gray!10 + QLPO 85.4 1,707 87.8 2,639 50.0 6,621 28.2 23,199 40.8 6,285 DS-7B 89.3 2,145 88.0 4,174 54.6 8,977 38.4 11,321 56.7 13,144 + G..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:30",
+  "page": "arxiv:2607.21793v1",
+  "subject": "Length-aware policy optimization",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "QLPO applied to Qwen2.5 models (3B to 32B parameters) for reasoning optimization.",
+  "contexts": [
+   "[body] ...rtain scenarios, this strategy ignores the negative gradient contribution of incorrect samples and may even backfire, resulting in worse inference efficiency. Figure 2 illustrates one such failure case, whose underlying mechanism is discussed in detail in Sec. 3.3 . Figure 2: Training dynamics of different methods for Qwen2.5-32B on DAPO-MATH. To alleviate the length explosion problem while overcoming the aforementioned limitations, we shift the paradigm from explicit reward hacking and empirical filtering to structured data resampling. In this paper, we propose QLPO ( Q uadrant-weighted sampling for L ength-aware P olicy O ptimization), a simple and r...",
+   "[body] ...ntage estimator, and downstream GRPO optimization unchanged. \u2022 We introduce a group\u2013trajectory gradient analysis for group-based RL algorithms, which decomposes optimization into group-level gradient [...] 4 Experiments 4.1 Experimental Setup Models and datasets. We evaluate QLPO on a diverse set of models, including Qwen2.5-3B, Qwen2.5-32B, Qwen3-30B-A3B, DeepScaleR-1.5B-Preview (DeepScaleR-1.5B) and DeepSeek-R1-Distill-Qwen-7B (DS-7B) (Yang et al. , 2024 ; 2025 ) . These models cover both dense and MoE architectures, as well as different levels of reasoning ability, allowing us to test whether QLPO generalizes across model families and capability re...",
+   "[body] ...tor, and downstream GRPO optimization unchanged. \u2022 We introduce a group\u2013trajectory gradient analysis for group-based RL algorithms, which decomposes optimization into group-level gradient [...] 4 Experiments 4.1 Experimental Setup Models and datasets. We evaluate QLPO on a diverse set of models, including Qwen2.5-3B, Qwen2.5-32B, Qwen3-30B-A3B, DeepScaleR-1.5B-Preview (DeepScaleR-1.5B) and DeepSeek-R1-Distill-Qwen-7B (DS-7B) (Yang et al. , 2024 ; 2025 ) . These models cover both dense and MoE architectures, as well as different levels of reasoning ability, allowing us to test whether QLPO generalizes across model families and capability regimes. We us..."
+  ]
+ },
+ {
+  "sid": "out_10.jsonl:31",
+  "page": "arxiv:2607.21793v1",
+  "subject": "Length-aware policy optimization",
+  "object": "DeepSeek-R1",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "QLPO applied to DeepSeek-R1-Distill-Qwen for length-aware optimization.",
+  "contexts": [
+   "[body] ...in the accuracy-length landscape. The integration of Reinforcement Learning (RL) into Large Language Models has catalyzed the emergence of Large Reasoning Models (LRMs), such as OpenAI o-series (Jaech et al. , 2024 ; OpenAI, 2025 ) , Gemini 3 (Google, 2025 ) , Claude 4.5 (Anthropic, 2025b ; a ) , Grok 4 (xAI, 2025 ) , DeepSeek-R1 (Guo et al. , 2025 ) , Qwen3 (Yang et al. , 2025 ) , Kimi-K2 (Team et al. , 2025a ) . RL methods such as GRPO (Shao et al. , 2024 ) promote long Chain-of-Thought reasoning, improving self-reflection and allowing LRMs to handle complex mathematical, coding and agentic tasks (Luo et al. , 2025 ; Team et al. , 2025b ; Feng et al....",
+   "[body] ...ajectory gradient analysis for group-based RL algorithms, which decomposes optimization into group-level gradient [...] 4 Experiments 4.1 Experimental Setup Models and datasets. We evaluate QLPO on a diverse set of models, including Qwen2.5-3B, Qwen2.5-32B, Qwen3-30B-A3B, DeepScaleR-1.5B-Preview (DeepScaleR-1.5B) and DeepSeek-R1-Distill-Qwen-7B (DS-7B) (Yang et al. , 2024 ; 2025 ) . These models cover both dense and MoE architectures, as well as different levels of reasoning ability, allowing us to test whether QLPO generalizes across model families and capability regimes. We use MATH-lighteval (Hendrycks et al. , 2021 ) for the 3B setting and DAPO-MA..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:0",
+  "page": "arxiv:2607.21867v1",
+  "subject": "VGCC",
+  "object": "Isaac Lab",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "VGCC is evaluated on Isaac Lab rough-terrain velocity environments for Go2, ANYmal-D, and H1 embodiments.",
+  "contexts": [
+   "[body] ...ency-matched mixture, and what deployment decision does the audit return (Section 4.7 )? Q1 establishes the optional feature source; Q2 places concrete adapters on the efficiency frontier; Q3 is the paper\u2019s main claim\u2014existence versus recoverability versus allocation. 4.1 Setup Figure 3: The three embodiments in their Isaac Lab rough-terrain velocity environments: the Go2 and ANYmal-D quadrupeds and the H1 humanoid. Each is driven by its publicly distributed pretrained RSL-RL policy, which is the policy VGCC compensates; VGCC changes only the command that policy receives, never its weights. The two quadrupeds share every gate parameter unchanged; the h...",
+   "[body] ...n by its publicly distributed pretrained RSL-RL policy, which is the policy VGCC compensates; VGCC changes only the command that policy receives, never its weights. The two quadrupeds share every gate parameter unchanged; the humanoid differs only in its posture thresholds. Environments and robots. All experiments use Isaac Lab (Mittal et al. , 2023 ) rough-terrain velocity environments with three embodiments (Figure 3 ): Isaac-Velocity-Rough-Unitree-Go2-v0 and Isaac-Velocity-Rough-Anymal-D-v0 (quadrupeds) and Isaac-Velocity-Rough-H1-v0 (humanoid), with the publicly distributed pretrained RSL-RL checkpoints (Rudin et al. , 2022 ; Schwarke et al. , 2025..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:1",
+  "page": "arxiv:2607.21867v1",
+  "subject": "VGCC",
+  "object": "RSL-RL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VGCC compensates publicly distributed pretrained RSL-RL locomotion policies.",
+  "contexts": [
+   "[body] ...apters on the efficiency frontier; Q3 is the paper\u2019s main claim\u2014existence versus recoverability versus allocation. 4.1 Setup Figure 3: The three embodiments in their Isaac Lab rough-terrain velocity environments: the Go2 and ANYmal-D quadrupeds and the H1 humanoid. Each is driven by its publicly distributed pretrained RSL-RL policy, which is the policy VGCC compensates; VGCC changes only the command that policy receives, never its weights. The two quadrupeds share every gate parameter unchanged; the humanoid differs only in its posture thresholds. Environments and robots. All experiments use Isaac Lab (Mittal et al. , 2023 ) rough-terrain velocity envi...",
+   "[body] ...nvironments and robots. All experiments use Isaac Lab (Mittal et al. , 2023 ) rough-terrain velocity environments with three embodiments (Figure 3 ): Isaac-Velocity-Rough-Unitree-Go2-v0 and Isaac-Velocity-Rough-Anymal-D-v0 (quadrupeds) and Isaac-Velocity-Rough-H1-v0 (humanoid), with the publicly distributed pretrained RSL-RL checkpoints (Rudin et al. , 2022 ; Schwarke et al. , 2025 ) as the compensated policies. The task is target reaching: move the base to a target g g specified relative to the start pose. Success requires no early termination, final XY distance below 0.3 0.3 m, and final height above 70 % 70\\% of spawn height. Final height is a termi..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:2",
+  "page": "arxiv:2607.21876v1",
+  "subject": "VRDQ",
+  "object": "Q-learning",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "VRDQ builds on the classical Q-learning algorithm for decentralized reinforcement learning.",
+  "contexts": [
+   "[body] ...Variance-Reduced Q-Learning over Static and Time-Varying Networks Abstract I Introduction II Notation and Problem Formulation III Variance-Reduced Diffused Q-Learning IV Main Result V Simulation Results for VRDQ VI Q-Learning over Time-Varying Networks VII Analysis VIII Conclusion References License: CC BY 4.0 arXiv:2607.21876v1 [cs.LG] 24 Jul 2026 Varian...",
+   "[body] ...Variance-Reduced Q-Learning over Static and Time-Varying Networks Abstract I Introduction II Notation and Problem Formulation III Variance-Reduced Diffused Q-Learning IV Main Result V Simulation Results for VRDQ VI Q-Learning over Time-Varying Networks VII Analysis VIII Conclusion References License: CC BY 4.0 arXiv:2607.21876v1 [cs.LG] 24 Jul 2026 Variance-Reduced Q-Learning over Static and Time-Varying Networks Sreejeet Maity \u2020,* , Feng Zhu \u2020,* , Aritra Mitra * , and Robert W. Heath Jr \u2020 \\...",
+   "[body] ...Variance-Reduced Q-Learning over Static and Time-Varying Networks Abstract I Introduction II Notation and Problem Formulation III Variance-Reduced Diffused Q-Learning IV Main Result V Simulation Results for VRDQ VI Q-Learning over Time-Varying Networks VII Analysis VIII Conclusion References License: CC BY 4.0 arXiv:2607.21876v1 [cs.LG] 24 Jul 2026 Variance-Reduced Q-Learning over Static and Time-Varying Networks Sreejeet Maity \u2020,* , Feng Zhu \u2020,* , Aritra Mitra * , and Robert W. Heath Jr \u2020 \\dagger Equal Contribution. * The authors are with the Depar..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:3",
+  "page": "arxiv:2607.21881v1",
+  "subject": "farmland segmentation model",
+  "object": "ResUNet",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The farmland mapping system builds on ResUNet trained with Dice-dominant loss for primary segmentation.",
+  "contexts": [
+   "[body] ...ings, and many within-scene transitions that are mixed within a 10 m satellite pixel. [...] experiments in very small fields show that performance depends strongly on image scale and temporal fusion [ 31 ] . The present design keeps SAM 3 frozen and uses it as a second-stage candidate generator, while the task-trained ResUNet remains the primary predictor. This division of labor tests whether open-vocabulary concept masks can complement domain learning through a transparent fusion rule without introducing another farmland-specific training stage. 3 Materials and methods 3.1 Problem definition and workflow Let I \u2208 [ 0 , 1 ] H \u00d7 W \u00d7 3 I\\in[0,1]^{H\\times...",
+   "[body] ...f \u03b8 \u200b ( I ) P_{r}=f_{\\theta}(I) and a binary mask M r M_{r} . The target is semantic farmland extent. Boundaries are implied by the spatial transition between 1 and 0; no instance identifier is assigned to individual parcels. Figure 1 summarizes five stages: NAIP acquisition and polygon annotation; patch construction; ResUNet training; dual inference with frozen SAM 3 and logical-OR fusion; and sliding-window stitching into regional masks. Figura 1: Hybrid ResUNet and SAM 3 workflow for farmland-extent and visible-boundary segmentation from NAIP imagery. The learned branch predicts P r P_{r} and thresholds it to M r M_{r} ; the frozen SAM 3 branch retu...",
+   "[body] ...ransition between 1 and 0; no instance identifier is assigned to individual parcels. Figure 1 summarizes five stages: NAIP acquisition and polygon annotation; patch construction; ResUNet training; dual inference with frozen SAM 3 and logical-OR fusion; and sliding-window stitching into regional masks. Figura 1: Hybrid ResUNet and SAM 3 workflow for farmland-extent and visible-boundary segmentation from NAIP imagery. The learned branch predicts P r P_{r} and thresholds it to M r M_{r} ; the frozen SAM 3 branch returns concept masks for the prompt \u201cagricultural farmland field.\u201d Masks are unioned, fused by logical OR, and stitched at scene scale. 3.2 NAIP..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:4",
+  "page": "arxiv:2607.21881v1",
+  "subject": "farmland segmentation model",
+  "object": "SAM 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The system fuses a frozen SAM 3 branch prompted with 'agricultural farmland field' for boundary refinement.",
+  "contexts": [
+   "[body] ...ng distance, fine enough to resolve narrow roads, field margins, orchard texture, buildings, and many within-scene transitions that are mixed within a 10 m satellite pixel. [...] experiments in very small fields show that performance depends strongly on image scale and temporal fusion [ 31 ] . The present design keeps SAM 3 frozen and uses it as a second-stage candidate generator, while the task-trained ResUNet remains the primary predictor. This division of labor tests whether open-vocabulary concept masks can complement domain learning through a transparent fusion rule without introducing another farmland-specific training stage. 3 Materials and meth...",
+   "[body] ...mask M r M_{r} . The target is semantic farmland extent. Boundaries are implied by the spatial transition between 1 and 0; no instance identifier is assigned to individual parcels. Figure 1 summarizes five stages: NAIP acquisition and polygon annotation; patch construction; ResUNet training; dual inference with frozen SAM 3 and logical-OR fusion; and sliding-window stitching into regional masks. Figura 1: Hybrid ResUNet and SAM 3 workflow for farmland-extent and visible-boundary segmentation from NAIP imagery. The learned branch predicts P r P_{r} and thresholds it to M r M_{r} ; the frozen SAM 3 branch returns concept masks for the prompt \u201cagricultura...",
+   "[body] ...tween 1 and 0; no instance identifier is assigned to individual parcels. Figure 1 summarizes five stages: NAIP acquisition and polygon annotation; patch construction; ResUNet training; dual inference with frozen SAM 3 and logical-OR fusion; and sliding-window stitching into regional masks. Figura 1: Hybrid ResUNet and SAM 3 workflow for farmland-extent and visible-boundary segmentation from NAIP imagery. The learned branch predicts P r P_{r} and thresholds it to M r M_{r} ; the frozen SAM 3 branch returns concept masks for the prompt \u201cagricultural farmland field.\u201d Masks are unioned, fused by logical OR, and stitched at scene scale. 3.2 NAIP imagery and..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:5",
+  "page": "arxiv:2607.21881v1",
+  "subject": "farmland segmentation model",
+  "object": "NAIP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The model is evaluated on 1 m resolution NAIP RGB imagery across 37 scenes.",
+  "contexts": [
+   "[body] ...enchmark and mapping efforts have underscored both the demand for field-level products and the cost of producing them at scale [ 16 , 17 ] . High-resolution aerial photography offers a complementary route to medium-resolution satellite mapping. The U.S. Department of Agriculture\u2019s National Agriculture Imagery Program (NAIP) provides broad, repeatedly acquired aerial coverage of the United States [ 18 ] . The imagery used in this study has a 1 m ground sampling distance, fine enough to resolve narrow roads, field margins, orchard texture, buildings, and many within-scene transitions that are mixed within a 10 m satellite pixel. [...] experiments in very...",
+   "[body] ...n of labor tests whether open-vocabulary concept masks can complement domain learning through a transparent fusion rule without introducing another farmland-specific training stage. 3 Materials and methods 3.1 Problem definition and workflow Let I \u2208 [ 0 , 1 ] H \u00d7 W \u00d7 3 I\\in[0,1]^{H\\times W\\times 3} denote a normalized NAIP RGB image and Y \u2208 { 0 , 1 } H \u00d7 W Y\\in\\{0,1\\}^{H\\times W} the reference mask, where 1 represents annotated farmland and 0 represents background. The model estimates a probability surface P r = f \u03b8 \u200b ( I ) P_{r}=f_{\\theta}(I) and a binary mask M r M_{r} . The target is semantic farmland extent. Boundaries are implied by the spatial tr...",
+   "[body] ...background. The model estimates a probability surface P r = f \u03b8 \u200b ( I ) P_{r}=f_{\\theta}(I) and a binary mask M r M_{r} . The target is semantic farmland extent. Boundaries are implied by the spatial transition between 1 and 0; no instance identifier is assigned to individual parcels. Figure 1 summarizes five stages: NAIP acquisition and polygon annotation; patch construction; ResUNet training; dual inference with frozen SAM 3 and logical-OR fusion; and sliding-window stitching into regional masks. Figura 1: Hybrid ResUNet and SAM 3 workflow for farmland-extent and visible-boundary segmentation from NAIP imagery. The learned branch predicts P r P_{r}..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:6",
+  "page": "arxiv:2607.21885v1",
+  "subject": "ACE",
+  "object": "GCN",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ACE is evaluated with GCN as a backbone architecture for graph neural networks.",
+  "contexts": [
+   "[body] ...scale to define an auxiliary loss with respect to the full-graph labels. To further stabilize training, we adopt homoscedastic uncertainty [Kendall et al., 2018 ] to adaptively weigh the auxiliary objective against the primary coarsening loss. ACE\u2019s modularity [...] experiments are conducted with three backbone GNNs: GCN [Kipf and Welling, 2017 ] , LINKX [Lim et al., 2021 ] , and GloGNN [Li et al., 2022 ] , where the latter two are explicitly designed for heterophilic settings. Full details follow Section 4.1 . Table 1 : Impact of heterophily on coarsening-based training. \u201c-\u201d denotes full-graph training, and \u0394 \u2193 \\Delta\\downarrow indicates the average...",
+   "[body] ...plicitly designed for heterophilic settings. Full details follow Section 4.1 . Table 1 : Impact of heterophily on coarsening-based training. \u201c-\u201d denotes full-graph training, and \u0394 \u2193 \\Delta\\downarrow indicates the average performance drop of coarsening training relative to full-graph training for each dataset. Backbone GCN LINKX GloGNN \u0394 \u2193 \\Delta\\downarrow Method - SCAL FGC SGBGC - SCAL FGC SGBGC - SCAL FGC SGBGC Genius 87.42 67.47 70.13 71.22 90.77 60.62 65.49 62.68 90.66 59.47 63.81 67.33 26.26 Gamers 62.18 47.39 40.14 44.62 66.06 50.13 42.48 47.60 66.19 46.28 45.92 47.15 19.07 Pokec 75.45 50.44 53.81 55.48 82.04 56.48 57.63 54.18 83.00 61.58 66.91 63..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:7",
+  "page": "arxiv:2607.21885v1",
+  "subject": "ACE",
+  "object": "LINKX",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ACE is evaluated with LINKX, a heterophily-specialized GNN architecture.",
+  "contexts": [
+   "[body] ...s with respect to the full-graph labels. To further stabilize training, we adopt homoscedastic uncertainty [Kendall et al., 2018 ] to adaptively weigh the auxiliary objective against the primary coarsening loss. ACE\u2019s modularity [...] experiments are conducted with three backbone GNNs: GCN [Kipf and Welling, 2017 ] , LINKX [Lim et al., 2021 ] , and GloGNN [Li et al., 2022 ] , where the latter two are explicitly designed for heterophilic settings. Full details follow Section 4.1 . Table 1 : Impact of heterophily on coarsening-based training. \u201c-\u201d denotes full-graph training, and \u0394 \u2193 \\Delta\\downarrow indicates the average performance drop of coarsening t...",
+   "[body] ...itly designed for heterophilic settings. Full details follow Section 4.1 . Table 1 : Impact of heterophily on coarsening-based training. \u201c-\u201d denotes full-graph training, and \u0394 \u2193 \\Delta\\downarrow indicates the average performance drop of coarsening training relative to full-graph training for each dataset. Backbone GCN LINKX GloGNN \u0394 \u2193 \\Delta\\downarrow Method - SCAL FGC SGBGC - SCAL FGC SGBGC - SCAL FGC SGBGC Genius 87.42 67.47 70.13 71.22 90.77 60.62 65.49 62.68 90.66 59.47 63.81 67.33 26.26 Gamers 62.18 47.39 40.14 44.62 66.06 50.13 42.48 47.60 66.19 46.28 45.92 47.15 19.07 Pokec 75.45 50.44 53.81 55.48 82.04 56.48 57.63 54.18 83.00 61.58 66.91 63.77...",
+   "[body] ...6.50 Results in Table 1 reveals a striking trend: all coarsening-based methods suffer substantially larger performance degradation on heterophilic graphs compared to homophilic ones\u2014often nearly four times larger\u2014and this occurs consistently across all backbone models, including heterophily-specialized architectures (LINKX and GloGNN). Notably, these heterophily-oriented models exhibit even larger performance drops, underscoring that the difficulty stems not from the model itself but from a more fundamental limitation of coarsening-based training under heterophilic settings . More empirical results supporting this observation are presented in the main..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:8",
+  "page": "arxiv:2607.21885v1",
+  "subject": "ACE",
+  "object": "GloGNN",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "ACE is evaluated with GloGNN, a heterophily-specialized GNN architecture.",
+  "contexts": [
+   "[body] ...labels. To further stabilize training, we adopt homoscedastic uncertainty [Kendall et al., 2018 ] to adaptively weigh the auxiliary objective against the primary coarsening loss. ACE\u2019s modularity [...] experiments are conducted with three backbone GNNs: GCN [Kipf and Welling, 2017 ] , LINKX [Lim et al., 2021 ] , and GloGNN [Li et al., 2022 ] , where the latter two are explicitly designed for heterophilic settings. Full details follow Section 4.1 . Table 1 : Impact of heterophily on coarsening-based training. \u201c-\u201d denotes full-graph training, and \u0394 \u2193 \\Delta\\downarrow indicates the average performance drop of coarsening training relative to full-graph t...",
+   "[body] ...esigned for heterophilic settings. Full details follow Section 4.1 . Table 1 : Impact of heterophily on coarsening-based training. \u201c-\u201d denotes full-graph training, and \u0394 \u2193 \\Delta\\downarrow indicates the average performance drop of coarsening training relative to full-graph training for each dataset. Backbone GCN LINKX GloGNN \u0394 \u2193 \\Delta\\downarrow Method - SCAL FGC SGBGC - SCAL FGC SGBGC - SCAL FGC SGBGC Genius 87.42 67.47 70.13 71.22 90.77 60.62 65.49 62.68 90.66 59.47 63.81 67.33 26.26 Gamers 62.18 47.39 40.14 44.62 66.06 50.13 42.48 47.60 66.19 46.28 45.92 47.15 19.07 Pokec 75.45 50.44 53.81 55.48 82.04 56.48 57.63 54.18 83.00 61.58 66.91 63.77 22.35...",
+   "[body] ...lts in Table 1 reveals a striking trend: all coarsening-based methods suffer substantially larger performance degradation on heterophilic graphs compared to homophilic ones\u2014often nearly four times larger\u2014and this occurs consistently across all backbone models, including heterophily-specialized architectures (LINKX and GloGNN). Notably, these heterophily-oriented models exhibit even larger performance drops, underscoring that the difficulty stems not from the model itself but from a more fundamental limitation of coarsening-based training under heterophilic settings . More empirical results supporting this observation are presented in the main experimen..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:9",
+  "page": "arxiv:2607.21885v1",
+  "subject": "ACE",
+  "object": "Genius",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ACE is evaluated on the Genius heterophilic graph benchmark.",
+  "contexts": [
+   "[body] ...of heterophily on coarsening-based training. \u201c-\u201d denotes full-graph training, and \u0394 \u2193 \\Delta\\downarrow indicates the average performance drop of coarsening training relative to full-graph training for each dataset. Backbone GCN LINKX GloGNN \u0394 \u2193 \\Delta\\downarrow Method - SCAL FGC SGBGC - SCAL FGC SGBGC - SCAL FGC SGBGC Genius 87.42 67.47 70.13 71.22 90.77 60.62 65.49 62.68 90.66 59.47 63.81 67.33 26.26 Gamers 62.18 47.39 40.14 44.62 66.06 50.13 42.48 47.60 66.19 46.28 45.92 47.15 19.07 Pokec 75.45 50.44 53.81 55.48 82.04 56.48 57.63 54.18 83.00 61.58 66.91 63.77 22.35 Arxiv 71.74 63.42 65.52 64.12 69.54 57.71 59.38 61.55 72.68 57.09 61.73 61.24 7.79 Pro..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:10",
+  "page": "arxiv:2607.21885v1",
+  "subject": "ACE",
+  "object": "Gamers",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ACE is evaluated on the Gamers heterophilic graph benchmark.",
+  "contexts": [
+   "[body] ...\\Delta\\downarrow indicates the average performance drop of coarsening training relative to full-graph training for each dataset. Backbone GCN LINKX GloGNN \u0394 \u2193 \\Delta\\downarrow Method - SCAL FGC SGBGC - SCAL FGC SGBGC - SCAL FGC SGBGC Genius 87.42 67.47 70.13 71.22 90.77 60.62 65.49 62.68 90.66 59.47 63.81 67.33 26.26 Gamers 62.18 47.39 40.14 44.62 66.06 50.13 42.48 47.60 66.19 46.28 45.92 47.15 19.07 Pokec 75.45 50.44 53.81 55.48 82.04 56.48 57.63 54.18 83.00 61.58 66.91 63.77 22.35 Arxiv 71.74 63.42 65.52 64.12 69.54 57.71 59.38 61.55 72.68 57.09 61.73 61.24 7.79 Products 75.64 68.37 71.28 71.96 74.59 62.49 67.52 64.93 77.48 66.53 70.46 69.11 6.50 Re..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:11",
+  "page": "arxiv:2607.21885v1",
+  "subject": "ACE",
+  "object": "Pokec",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ACE is evaluated on the Pokec heterophilic graph benchmark.",
+  "contexts": [
+   "[body] ...ive to full-graph training for each dataset. Backbone GCN LINKX GloGNN \u0394 \u2193 \\Delta\\downarrow Method - SCAL FGC SGBGC - SCAL FGC SGBGC - SCAL FGC SGBGC Genius 87.42 67.47 70.13 71.22 90.77 60.62 65.49 62.68 90.66 59.47 63.81 67.33 26.26 Gamers 62.18 47.39 40.14 44.62 66.06 50.13 42.48 47.60 66.19 46.28 45.92 47.15 19.07 Pokec 75.45 50.44 53.81 55.48 82.04 56.48 57.63 54.18 83.00 61.58 66.91 63.77 22.35 Arxiv 71.74 63.42 65.52 64.12 69.54 57.71 59.38 61.55 72.68 57.09 61.73 61.24 7.79 Products 75.64 68.37 71.28 71.96 74.59 62.49 67.52 64.93 77.48 66.53 70.46 69.11 6.50 Results in Table 1 reveals a striking trend: all coarsening-based methods suffer substa..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:12",
+  "page": "arxiv:2607.21885v1",
+  "subject": "ACE",
+  "object": "Arxiv",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ACE is evaluated on the Arxiv homophilic graph benchmark.",
+  "contexts": [
+   "[body] ...wnarrow Method - SCAL FGC SGBGC - SCAL FGC SGBGC - SCAL FGC SGBGC Genius 87.42 67.47 70.13 71.22 90.77 60.62 65.49 62.68 90.66 59.47 63.81 67.33 26.26 Gamers 62.18 47.39 40.14 44.62 66.06 50.13 42.48 47.60 66.19 46.28 45.92 47.15 19.07 Pokec 75.45 50.44 53.81 55.48 82.04 56.48 57.63 54.18 83.00 61.58 66.91 63.77 22.35 Arxiv 71.74 63.42 65.52 64.12 69.54 57.71 59.38 61.55 72.68 57.09 61.73 61.24 7.79 Products 75.64 68.37 71.28 71.96 74.59 62.49 67.52 64.93 77.48 66.53 70.46 69.11 6.50 Results in Table 1 reveals a striking trend: all coarsening-based methods suffer substantially larger performance degradation on heterophilic graphs compared to homophilic..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:13",
+  "page": "arxiv:2607.21885v1",
+  "subject": "ACE",
+  "object": "Products",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ACE is evaluated on the Products homophilic graph benchmark.",
+  "contexts": [
+   "[body] ...7 70.13 71.22 90.77 60.62 65.49 62.68 90.66 59.47 63.81 67.33 26.26 Gamers 62.18 47.39 40.14 44.62 66.06 50.13 42.48 47.60 66.19 46.28 45.92 47.15 19.07 Pokec 75.45 50.44 53.81 55.48 82.04 56.48 57.63 54.18 83.00 61.58 66.91 63.77 22.35 Arxiv 71.74 63.42 65.52 64.12 69.54 57.71 59.38 61.55 72.68 57.09 61.73 61.24 7.79 Products 75.64 68.37 71.28 71.96 74.59 62.49 67.52 64.93 77.48 66.53 70.46 69.11 6.50 Results in Table 1 reveals a striking trend: all coarsening-based methods suffer substantially larger performance degradation on heterophilic graphs compared to homophilic ones\u2014often nearly four times larger\u2014and this occurs consistently across all backbo..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:14",
+  "page": "arxiv:2607.21897v1",
+  "subject": "ISPCloak",
+  "object": "FatFormer",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "ISPCloak compares against FatFormer deepfake detector which uses forgery-aware adapters.",
+  "contexts": [
+   "[body] ...hitecture-specific noise or checkerboard patterns inherently tied to the generation process (Tariq et al. , 2024 ) . To enhance cross-domain generalization, recent literature has shifted toward more sophisticated feature extraction paradigms. One line of research focuses on structural and multi-domain inconsistencies: FatFormer (Liu et al. , 2024b ) utilizes a forgery-aware adapter to fuse image and frequency features, whereas SAFE (Li et al. , 2025a ) and NPR (Tan et al. , 2024b ) specifically target local structural artifacts and neighboring pixel relationships introduced by up-sampling operations. Another emerging trend exploits vision-language prio..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:15",
+  "page": "arxiv:2607.21897v1",
+  "subject": "ISPCloak",
+  "object": "SAFE",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "ISPCloak compares against SAFE which targets local structural artifacts in deepfake detection.",
+  "contexts": [
+   "[body] ...4 ) . To enhance cross-domain generalization, recent literature has shifted toward more sophisticated feature extraction paradigms. One line of research focuses on structural and multi-domain inconsistencies: FatFormer (Liu et al. , 2024b ) utilizes a forgery-aware adapter to fuse image and frequency features, whereas SAFE (Li et al. , 2025a ) and NPR (Tan et al. , 2024b ) specifically target local structural artifacts and neighboring pixel relationships introduced by up-sampling operations. Another emerging trend exploits vision-language priors; for instance, C2P-CLIP (Tan et al. , 2025 ) injects category-related concepts into the image encoder to boo..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:16",
+  "page": "arxiv:2607.21897v1",
+  "subject": "ISPCloak",
+  "object": "C2P-CLIP",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "ISPCloak compares against C2P-CLIP which injects category-related concepts into CLIP for detection.",
+  "contexts": [
+   "[body] ...es a forgery-aware adapter to fuse image and frequency features, whereas SAFE (Li et al. , 2025a ) and NPR (Tan et al. , 2024b ) specifically target local structural artifacts and neighboring pixel relationships introduced by up-sampling operations. Another emerging trend exploits vision-language priors; for instance, C2P-CLIP (Tan et al. , 2025 ) injects category-related concepts into the image encoder to boost CLIP\u2019s detection potential, while AIDE ( Yan et al. , ) synergizes CLIP embeddings with multi-scale frequency patches. Additionally, approaches like LGrad (Tan et al. , 2023 ) map images into a gradient space using pre-trained CNNs to extract d..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:17",
+  "page": "arxiv:2607.21904v1",
+  "subject": "diffusion-based inpainting survey",
+  "object": "DDPM",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The survey reviews denoising diffusion probabilistic models (DDPM) as a dominant architecture for medical image inpainting.",
+  "contexts": [
+   "[body] ...-based inpainting approaches for artifact removal in medical imaging were identified and are summarized in Table LABEL:tab:my-table2 . Table 3. Summary of Reviewed Works on Artifact Removal Inpainting. Artifact Type Article Year Category Image Distribution Results Metal Artifact Tong et al. ( Tong et al. , 2023 ) 2023 DDPM 1,000 CT Sinograms from the DeepLesion Dataset SSIM = 0.961 PSNR = 33.440 Mei et al. ( Mei et al. , 2023 ) 2023 SGM 50 CBCT Volumes from the SICAS Medical Image Repository MAE = 0.069 PSNR = 43.070 Karageorgos et al. ( Karageorgos et al. , 2024 ) 2024 DDPM 11,560 CT Sinograms from the DeepLesion and UCLH Stroke EIT Datasets SSIM = 0....",
+   "[body] ...Results Metal Artifact Tong et al. ( Tong et al. , 2023 ) 2023 DDPM 1,000 CT Sinograms from the DeepLesion Dataset SSIM = 0.961 PSNR = 33.440 Mei et al. ( Mei et al. , 2023 ) 2023 SGM 50 CBCT Volumes from the SICAS Medical Image Repository MAE = 0.069 PSNR = 43.070 Karageorgos et al. ( Karageorgos et al. , 2024 ) 2024 DDPM 11,560 CT Sinograms from the DeepLesion and UCLH Stroke EIT Datasets SSIM = 0.964 PSNR = 46.160 Wu et al. ( Wu et al. , 2025a ) 2025 DDPM 4,000 CT Images from the DeepLesion Dataset SSIM = 0.966 PSNR = 33.440 Wu et al. ( Wu et al. , 2025b ) 2025 DDPM 10 CBCT Volumes from the 2016 NIH-AAPM LDCT Grand Challenge Dataset SSIM = 0.914 PSN...",
+   "[body] ...440 Mei et al. ( Mei et al. , 2023 ) 2023 SGM 50 CBCT Volumes from the SICAS Medical Image Repository MAE = 0.069 PSNR = 43.070 Karageorgos et al. ( Karageorgos et al. , 2024 ) 2024 DDPM 11,560 CT Sinograms from the DeepLesion and UCLH Stroke EIT Datasets SSIM = 0.964 PSNR = 46.160 Wu et al. ( Wu et al. , 2025a ) 2025 DDPM 4,000 CT Images from the DeepLesion Dataset SSIM = 0.966 PSNR = 33.440 Wu et al. ( Wu et al. , 2025b ) 2025 DDPM 10 CBCT Volumes from the 2016 NIH-AAPM LDCT Grand Challenge Dataset SSIM = 0.914 PSNR = 35.010 Schaub et al. ( Schaub et al. , 2025 ) 2025 SGM/NCSN 10 CBCT Volumes from a Private Dataset SSIM = 0.985 PSNR = 50.388 Missing..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:18",
+  "page": "arxiv:2607.21904v1",
+  "subject": "diffusion-based inpainting survey",
+  "object": "Latent Diffusion",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The survey reviews latent diffusion models as a dominant architecture for medical image inpainting.",
+  "contexts": [
+   "[body] ...1 Introduction 2 Methodology 3 Diffusion Models: Overview and Proposed Taxonomy 3.1 Denoising Diffusion Probabilistic Models 3.2 Latent Diffusion Models 3.3 Score-Based Generative Models 3.4 Stochastic Differential Equations 4 Results 4.1 Overall Analysis 4.2 Artifact Removal 4.3 Inpainting for Data Augmentation to Improve Performance of Downstream Tasks 4.4 Inpainting Pseudo-Healthy Tissue 4.5 Other Applications 5 Discussion 5.1 Image Datasets 5.2 Methodology Cate...",
+   "[body] ...he main architectures, applications, datasets, and evaluation strategies reported across 60 studies. In addition, we propose a taxonomy for diffusion-based approaches. The analysis reveals a rapid growth of research interest in diffusion-based medical image inpainting, with denoising diffusion probabilistic models and latent diffusion models emerging as the dominant architectures. The reviewed studies mainly focus on artifact removal, data augmentation, pseudo-healthy tissue reconstruction, and anomaly detection, particularly in magnetic resonance imaging and computed tomography imaging. Overall, diffusion models demonstrate strong performance in produ...",
+   "[abstract] ...he main architectures, applications, datasets, and evaluation strategies reported across 60 studies. In addition, we propose a taxonomy for diffusion-based approaches. The analysis reveals a rapid growth of research interest in diffusion-based medical image inpainting, with denoising diffusion probabilistic models and latent diffusion models emerging as the dominant architectures. The reviewed studies mainly focus on artifact removal, data augmentation, pseudo-healthy tissue reconstruction, and anomaly detection, particularly in magnetic resonance imaging and computed tomography imaging. Overall, diffusion models demonstrate strong performance in produ..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:19",
+  "page": "arxiv:2607.21904v1",
+  "subject": "diffusion-based inpainting survey",
+  "object": "SDE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The survey covers score-based generative models formulated via stochastic differential equations (SDE).",
+  "contexts": [
+   "[body] ....966 PSNR = 33.440 Wu et al. ( Wu et al. , 2025b ) 2025 DDPM 10 CBCT Volumes from the 2016 NIH-AAPM LDCT Grand Challenge Dataset SSIM = 0.914 PSNR = 35.010 Schaub et al. ( Schaub et al. , 2025 ) 2025 SGM/NCSN 10 CBCT Volumes from a Private Dataset SSIM = 0.985 PSNR = 50.388 Missing Angular Data Koo ( Koo , 2023 ) 2023 SDE 3 Phantom CT Sinograms PSNR = 42.215 SSIM = 0.930 Guo et al. ( Guo et al. , 2025 ) 2025 SDE 21,100 CT Sinograms from the C4KC-KiTS Dataset PSNR = 37.510 SSIM = 0.968 LPIPS = 0.012 Jewelry Obstruction Ji and He ( Ji and He , 2023 ) 2023 DDPM 3,247 Bone Scans Images from the BS-80K Dataset PSNR = 30.365 SSIM = 0.882 Black Shadows Dong e...",
+   "[body] ...IH-AAPM LDCT Grand Challenge Dataset SSIM = 0.914 PSNR = 35.010 Schaub et al. ( Schaub et al. , 2025 ) 2025 SGM/NCSN 10 CBCT Volumes from a Private Dataset SSIM = 0.985 PSNR = 50.388 Missing Angular Data Koo ( Koo , 2023 ) 2023 SDE 3 Phantom CT Sinograms PSNR = 42.215 SSIM = 0.930 Guo et al. ( Guo et al. , 2025 ) 2025 SDE 21,100 CT Sinograms from the C4KC-KiTS Dataset PSNR = 37.510 SSIM = 0.968 LPIPS = 0.012 Jewelry Obstruction Ji and He ( Ji and He , 2023 ) 2023 DDPM 3,247 Bone Scans Images from the BS-80K Dataset PSNR = 30.365 SSIM = 0.882 Black Shadows Dong et al. ( Dong et al. , 2024 ) 2024 DDPM 9,416 Ophthalmic Images from the Biobank, DRIVE, Cata..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:20",
+  "page": "arxiv:2607.21904v1",
+  "subject": "diffusion-based inpainting survey",
+  "object": "DeepLesion",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The survey reviews studies using DeepLesion dataset for CT sinogram artifact removal with diffusion models.",
+  "contexts": [
+   "[body] ...artifact removal in medical imaging were identified and are summarized in Table LABEL:tab:my-table2 . Table 3. Summary of Reviewed Works on Artifact Removal Inpainting. Artifact Type Article Year Category Image Distribution Results Metal Artifact Tong et al. ( Tong et al. , 2023 ) 2023 DDPM 1,000 CT Sinograms from the DeepLesion Dataset SSIM = 0.961 PSNR = 33.440 Mei et al. ( Mei et al. , 2023 ) 2023 SGM 50 CBCT Volumes from the SICAS Medical Image Repository MAE = 0.069 PSNR = 43.070 Karageorgos et al. ( Karageorgos et al. , 2024 ) 2024 DDPM 11,560 CT Sinograms from the DeepLesion and UCLH Stroke EIT Datasets SSIM = 0.964 PSNR = 46.160 Wu et al. ( Wu...",
+   "[body] ...( Tong et al. , 2023 ) 2023 DDPM 1,000 CT Sinograms from the DeepLesion Dataset SSIM = 0.961 PSNR = 33.440 Mei et al. ( Mei et al. , 2023 ) 2023 SGM 50 CBCT Volumes from the SICAS Medical Image Repository MAE = 0.069 PSNR = 43.070 Karageorgos et al. ( Karageorgos et al. , 2024 ) 2024 DDPM 11,560 CT Sinograms from the DeepLesion and UCLH Stroke EIT Datasets SSIM = 0.964 PSNR = 46.160 Wu et al. ( Wu et al. , 2025a ) 2025 DDPM 4,000 CT Images from the DeepLesion Dataset SSIM = 0.966 PSNR = 33.440 Wu et al. ( Wu et al. , 2025b ) 2025 DDPM 10 CBCT Volumes from the 2016 NIH-AAPM LDCT Grand Challenge Dataset SSIM = 0.914 PSNR = 35.010 Schaub et al. ( Schaub...",
+   "[body] ...2023 ) 2023 SGM 50 CBCT Volumes from the SICAS Medical Image Repository MAE = 0.069 PSNR = 43.070 Karageorgos et al. ( Karageorgos et al. , 2024 ) 2024 DDPM 11,560 CT Sinograms from the DeepLesion and UCLH Stroke EIT Datasets SSIM = 0.964 PSNR = 46.160 Wu et al. ( Wu et al. , 2025a ) 2025 DDPM 4,000 CT Images from the DeepLesion Dataset SSIM = 0.966 PSNR = 33.440 Wu et al. ( Wu et al. , 2025b ) 2025 DDPM 10 CBCT Volumes from the 2016 NIH-AAPM LDCT Grand Challenge Dataset SSIM = 0.914 PSNR = 35.010 Schaub et al. ( Schaub et al. , 2025 ) 2025 SGM/NCSN 10 CBCT Volumes from a Private Dataset SSIM = 0.985 PSNR = 50.388 Missing Angular Data Koo ( Koo , 2023..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:21",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "PhysioNet 2012",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MissHyper is evaluated on PhysioNet 2012 clinical ICU time-series benchmark.",
+  "contexts": [
+   "[body] ...records, where patient state is reflected by sparse and partially observed measurements such as vital signs, laboratory tests, and treatment-related indicators. Forecasting future values from these records supports early warning, risk monitoring, and resource planning in intensive care units. Public benchmarks such as PhysioNet 2012, MIMIC-III, and MIMIC-IV have made this setting a standard testbed for clinical temporal modeling [ 18 , 52 , 28 , 27 ] . Prior benchmarking studies have also shown that preprocessing choices and task definitions can strongly affect clinical time-series evaluation [ 42 , 22 , 57 ] . Unlike sensor streams collected at fixed...",
+   "[body] ...he experiments examine three questions: whether MissHyper improves over representative irregular forecasting baselines, whether each encoder component contributes to the gain, and whether the support-density window is robust to reasonable choices. 4.1 Experimental Setup Datasets. We use three clinical IMTS benchmarks: PhysioNet 2012 (P12), MIMIC-III, and MIMIC-IV [ 52 , 28 , 27 ] . PhysioNet 2012 provides ICU time-series records from the first 48 hours of patient stays and is processed at a 1-hour resolution. MIMIC-III is a large critical-care EHR benchmark whose ICU measurements are discretized into 30-minute intervals under the same setup. MIMIC-IV e...",
+   "[body] ...s over representative irregular forecasting baselines, whether each encoder component contributes to the gain, and whether the support-density window is robust to reasonable choices. 4.1 Experimental Setup Datasets. We use three clinical IMTS benchmarks: PhysioNet 2012 (P12), MIMIC-III, and MIMIC-IV [ 52 , 28 , 27 ] . PhysioNet 2012 provides ICU time-series records from the first 48 hours of patient stays and is processed at a 1-hour resolution. MIMIC-III is a large critical-care EHR benchmark whose ICU measurements are discretized into 30-minute intervals under the same setup. MIMIC-IV extends the MIMIC data ecosystem with more recent and denser ICU r..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:22",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "MIMIC-III",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MissHyper is evaluated on MIMIC-III critical-care EHR benchmark.",
+  "contexts": [
+   "[body] ...atient state is reflected by sparse and partially observed measurements such as vital signs, laboratory tests, and treatment-related indicators. Forecasting future values from these records supports early warning, risk monitoring, and resource planning in intensive care units. Public benchmarks such as PhysioNet 2012, MIMIC-III, and MIMIC-IV have made this setting a standard testbed for clinical temporal modeling [ 18 , 52 , 28 , 27 ] . Prior benchmarking studies have also shown that preprocessing choices and task definitions can strongly affect clinical time-series evaluation [ 42 , 22 , 57 ] . Unlike sensor streams collected at fixed frequencies, cli...",
+   "[body] ...three questions: whether MissHyper improves over representative irregular forecasting baselines, whether each encoder component contributes to the gain, and whether the support-density window is robust to reasonable choices. 4.1 Experimental Setup Datasets. We use three clinical IMTS benchmarks: PhysioNet 2012 (P12), MIMIC-III, and MIMIC-IV [ 52 , 28 , 27 ] . PhysioNet 2012 provides ICU time-series records from the first 48 hours of patient stays and is processed at a 1-hour resolution. MIMIC-III is a large critical-care EHR benchmark whose ICU measurements are discretized into 30-minute intervals under the same setup. MIMIC-IV extends the MIMIC data...",
+   "[body] ...port-density window is robust to reasonable choices. 4.1 Experimental Setup Datasets. We use three clinical IMTS benchmarks: PhysioNet 2012 (P12), MIMIC-III, and MIMIC-IV [ 52 , 28 , 27 ] . PhysioNet 2012 provides ICU time-series records from the first 48 hours of patient stays and is processed at a 1-hour resolution. MIMIC-III is a large critical-care EHR benchmark whose ICU measurements are discretized into 30-minute intervals under the same setup. MIMIC-IV extends the MIMIC data ecosystem with more recent and denser ICU records, which are processed at a 1-minute resolution. Because clinical benchmark construction and extraction choices can affect ti..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:23",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "MIMIC-IV",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MissHyper is evaluated on MIMIC-IV extended clinical benchmarks.",
+  "contexts": [
+   "[body] ...reflected by sparse and partially observed measurements such as vital signs, laboratory tests, and treatment-related indicators. Forecasting future values from these records supports early warning, risk monitoring, and resource planning in intensive care units. Public benchmarks such as PhysioNet 2012, MIMIC-III, and MIMIC-IV have made this setting a standard testbed for clinical temporal modeling [ 18 , 52 , 28 , 27 ] . Prior benchmarking studies have also shown that preprocessing choices and task definitions can strongly affect clinical time-series evaluation [ 42 , 22 , 57 ] . Unlike sensor streams collected at fixed frequencies, clinical observati...",
+   "[body] ...s: whether MissHyper improves over representative irregular forecasting baselines, whether each encoder component contributes to the gain, and whether the support-density window is robust to reasonable choices. 4.1 Experimental Setup Datasets. We use three clinical IMTS benchmarks: PhysioNet 2012 (P12), MIMIC-III, and MIMIC-IV [ 52 , 28 , 27 ] . PhysioNet 2012 provides ICU time-series records from the first 48 hours of patient stays and is processed at a 1-hour resolution. MIMIC-III is a large critical-care EHR benchmark whose ICU measurements are discretized into 30-minute intervals under the same setup. MIMIC-IV extends the MIMIC data ecosystem with...",
+   "[body] ...2012 (P12), MIMIC-III, and MIMIC-IV [ 52 , 28 , 27 ] . PhysioNet 2012 provides ICU time-series records from the first 48 hours of patient stays and is processed at a 1-hour resolution. MIMIC-III is a large critical-care EHR benchmark whose ICU measurements are discretized into 30-minute intervals under the same setup. MIMIC-IV extends the MIMIC data ecosystem with more recent and denser ICU records, which are processed at a 1-minute resolution. Because clinical benchmark construction and extraction choices can affect time-series evaluation, we follow established preprocessing protocols for these datasets [ 42 , 22 , 57 ] . These datasets contain sparse..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:24",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "GRU-D",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MissHyper compares against GRU-D as a missingness-aware recurrent baseline.",
+  "contexts": [
+   "[body] ...aselines and implementation. We compare MissHyper with representative methods for irregular multivariate time-series forecasting. Event- and attention-based baselines include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61 ] . The most controlled comparison is the direct hypergraph baseline, where MissHyper uses the same construction and propagation operators but re...",
+   "[body] ...92 0.6811 \u00b1 \\pm 0.0472 0.5361 \u00b1 \\pm 0.0118 0.5203 \u00b1 \\pm 0.0061 SeFT 0.7694 \u00b1 \\pm 0.0020 0.6728 \u00b1 \\pm 0.0030 0.9286 \u00b1 \\pm 0.0017 0.6641 \u00b1 \\pm 0.0009 0.6735 \u00b1 \\pm 0.0003 0.5912 \u00b1 \\pm 0.0004 GNeuralFlow 0.8251 \u00b1 \\pm 0.0287 0.6812 \u00b1 \\pm 0.0094 0.9012 \u00b1 \\pm 0.0186 0.6483 \u00b1 \\pm 0.0069 0.5023 \u00b1 \\pm 0.0017 0.4915 \u00b1 \\pm 0.0005 GRU-D 0.3467 \u00b1 \\pm 0...."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:25",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "PrimeNet",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MissHyper compares against PrimeNet for event-based temporal modeling.",
+  "contexts": [
+   "[body] ...s evaluated on the held-out test split. We use the dataset-specific discretization described above, following prior IMTS forecasting protocols. Baselines and implementation. We compare MissHyper with representative methods for irregular multivariate time-series forecasting. Event- and attention-based baselines include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61...",
+   "[body] ...10^{-4} . Backbone-related hyperparameters are kept fixed across the direct hypergraph comparison to isolate the effect of event initialization. 4.2 Main Results Table 2 : Multi-step forecasting performance (mean \u00b1 \\pm std over 5 runs). Lower is better. P12 (PhysioNet) MIMIC-III MIMIC-IV Method MSE MAE MSE MAE MSE MAE PrimeNet 0.7981 \u00b1 \\pm 0.0001 0.6872 \u00b1 \\pm 0.0002 0.9105 \u00b1 \\pm 0.0002 0.6657 \u00b1 \\pm 0.0001 0.6682 \u00b1 \\pm 0.0001 0.5891 \u00b1 \\pm 0.0002 NeuralFlows 0.4098 \u00b1 \\pm 0.0031 0.4492 \u00b1 \\pm 0.0024 0.6127 \u00b1 \\pm 0.0098 0.5342 \u00b1 \\pm 0.0061 0.4712 \u00b1 \\pm 0.0021 0.4782 \u00b1 \\pm 0.0012 CRU 0.6215 \u00b1 \\pm 0.0042 0.5791 \u00b1 \\pm 0.0035 0.5921 \u00b1 \\pm 0.0101 0.5178 \u00b1 \\pm 0...."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:26",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "mTAN",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MissHyper compares against mTAN for attention-based irregular time-series modeling.",
+  "contexts": [
+   "[body] ...d on the held-out test split. We use the dataset-specific discretization described above, following prior IMTS forecasting protocols. Baselines and implementation. We compare MissHyper with representative methods for irregular multivariate time-series forecasting. Event- and attention-based baselines include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61 ] . The mo...",
+   "[body] ...002 0.6657 \u00b1 \\pm 0.0001 0.6682 \u00b1 \\pm 0.0001 0.5891 \u00b1 \\pm 0.0002 NeuralFlows 0.4098 \u00b1 \\pm 0.0031 0.4492 \u00b1 \\pm 0.0024 0.6127 \u00b1 \\pm 0.0098 0.5342 \u00b1 \\pm 0.0061 0.4712 \u00b1 \\pm 0.0021 0.4782 \u00b1 \\pm 0.0012 CRU 0.6215 \u00b1 \\pm 0.0042 0.5791 \u00b1 \\pm 0.0035 0.5921 \u00b1 \\pm 0.0101 0.5178 \u00b1 \\pm 0.0050 0.4368 \u00b1 \\pm 0.0019 0.4574 \u00b1 \\pm 0.0009 mTAN 0.3826 \u00b1 \\pm 0.0040 0.4318 \u00b1 \\pm 0.0031 0.9473 \u00b1 \\pm 0.1092 0.6811 \u00b1 \\pm 0.0472 0.5361 \u00b1 \\pm 0.0118 0.5203 \u00b1 \\pm 0.0061 SeFT 0.7694 \u00b1 \\pm 0.0020 0.6728 \u00b1 \\pm 0.0030 0.9286 \u00b1 \\pm 0.0017 0.6641 \u00b1 \\pm 0.0009 0.6735 \u00b1 \\pm 0.0003 0.5912 \u00b1 \\pm 0.0004 GNeuralFlow 0.8251 \u00b1 \\pm 0.0287 0.6812 \u00b1 \\pm 0.0094 0.9012 \u00b1 \\pm 0.0186 0.6483 \u00b1 \\pm 0.006..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:27",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "SeFT",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MissHyper compares against SeFT for set functions on time-series.",
+  "contexts": [
+   "[body] ...eld-out test split. We use the dataset-specific discretization described above, following prior IMTS forecasting protocols. Baselines and implementation. We compare MissHyper with representative methods for irregular multivariate time-series forecasting. Event- and attention-based baselines include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61 ] . The most control...",
+   "[body] ...\\pm 0.0098 0.5342 \u00b1 \\pm 0.0061 0.4712 \u00b1 \\pm 0.0021 0.4782 \u00b1 \\pm 0.0012 CRU 0.6215 \u00b1 \\pm 0.0042 0.5791 \u00b1 \\pm 0.0035 0.5921 \u00b1 \\pm 0.0101 0.5178 \u00b1 \\pm 0.0050 0.4368 \u00b1 \\pm 0.0019 0.4574 \u00b1 \\pm 0.0009 mTAN 0.3826 \u00b1 \\pm 0.0040 0.4318 \u00b1 \\pm 0.0031 0.9473 \u00b1 \\pm 0.1092 0.6811 \u00b1 \\pm 0.0472 0.5361 \u00b1 \\pm 0.0118 0.5203 \u00b1 \\pm 0.0061 SeFT 0.7694 \u00b1 \\pm 0.0020 0.6728 \u00b1 \\pm 0.0030 0.9286 \u00b1 \\pm 0.0017 0.6641 \u00b1 \\pm 0.0009 0.6735 \u00b1 \\pm 0.0003 0.5912 \u00b1 \\pm 0.0004 GNeuralFlow 0.8251 \u00b1 \\pm 0.0287 0.6812 \u00b1 \\pm 0.0094 0.9012 \u00b1 \\pm 0.0186 0.6483 \u00b1 \\pm 0.0069 0.5023 \u00b1 \\pm 0.0017 0.4915 \u00b1 \\pm 0.0005 GRU-D 0.3467 \u00b1 \\pm 0...."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:28",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "NeuralFlows",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MissHyper compares against NeuralFlows for continuous-time neural dynamics.",
+  "contexts": [
+   "[body] ...above, following prior IMTS forecasting protocols. Baselines and implementation. We compare MissHyper with representative methods for irregular multivariate time-series forecasting. Event- and attention-based baselines include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61 ] . The most controlled comparison is the direct hypergraph baseline, where MissHyper uses th...",
+   "[body] ...initialization. 4.2 Main Results Table 2 : Multi-step forecasting performance (mean \u00b1 \\pm std over 5 runs). Lower is better. P12 (PhysioNet) MIMIC-III MIMIC-IV Method MSE MAE MSE MAE MSE MAE PrimeNet 0.7981 \u00b1 \\pm 0.0001 0.6872 \u00b1 \\pm 0.0002 0.9105 \u00b1 \\pm 0.0002 0.6657 \u00b1 \\pm 0.0001 0.6682 \u00b1 \\pm 0.0001 0.5891 \u00b1 \\pm 0.0002 NeuralFlows 0.4098 \u00b1 \\pm 0.0031 0.4492 \u00b1 \\pm 0.0024 0.6127 \u00b1 \\pm 0.0098 0.5342 \u00b1 \\pm 0.0061 0.4712 \u00b1 \\pm 0.0021 0.4782 \u00b1 \\pm 0.0012 CRU 0.6215 \u00b1 \\pm 0.0042 0.5791 \u00b1 \\pm 0.0035 0.5921 \u00b1 \\pm 0.0101 0.5178 \u00b1 \\pm 0.0050 0.4368 \u00b1 \\pm 0.0019 0.4574 \u00b1 \\pm 0.0009 mTAN 0.3826 \u00b1 \\pm 0.0040 0.4318 \u00b1 \\pm 0.0031 0.9473 \u00b1 \\pm 0.1092 0.6811 \u00b1 \\pm 0.0472..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:29",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "CRU",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MissHyper compares against CRU for continuous recurrent modeling.",
+  "contexts": [
+   "[body] ...ing prior IMTS forecasting protocols. Baselines and implementation. We compare MissHyper with representative methods for irregular multivariate time-series forecasting. Event- and attention-based baselines include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61 ] . The most controlled comparison is the direct hypergraph baseline, where MissHyper uses the same constr...",
+   "[body] ...ysioNet) MIMIC-III MIMIC-IV Method MSE MAE MSE MAE MSE MAE PrimeNet 0.7981 \u00b1 \\pm 0.0001 0.6872 \u00b1 \\pm 0.0002 0.9105 \u00b1 \\pm 0.0002 0.6657 \u00b1 \\pm 0.0001 0.6682 \u00b1 \\pm 0.0001 0.5891 \u00b1 \\pm 0.0002 NeuralFlows 0.4098 \u00b1 \\pm 0.0031 0.4492 \u00b1 \\pm 0.0024 0.6127 \u00b1 \\pm 0.0098 0.5342 \u00b1 \\pm 0.0061 0.4712 \u00b1 \\pm 0.0021 0.4782 \u00b1 \\pm 0.0012 CRU 0.6215 \u00b1 \\pm 0.0042 0.5791 \u00b1 \\pm 0.0035 0.5921 \u00b1 \\pm 0.0101 0.5178 \u00b1 \\pm 0.0050 0.4368 \u00b1 \\pm 0.0019 0.4574 \u00b1 \\pm 0.0009 mTAN 0.3826 \u00b1 \\pm 0.0040 0.4318 \u00b1 \\pm 0.0031 0.9473 \u00b1 \\pm 0.1092 0.6811 \u00b1 \\pm 0.0472 0.5361 \u00b1 \\pm 0.0118 0.5203 \u00b1 \\pm 0.0061 SeFT 0.7694 \u00b1 \\pm 0.0020 0.6728 \u00b1 \\pm 0.0030 0.9286 \u00b1 \\pm 0.0017 0.6641 \u00b1 \\pm 0.0009 0.6735..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:30",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "Raindrop",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MissHyper compares against Raindrop for graph-based irregular forecasting.",
+  "contexts": [
+   "[body] ...Event- and attention-based baselines include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61 ] . The most controlled comparison is the direct hypergraph baseline, where MissHyper uses the same construction and propagation operators but replaces the event initialization stage [ 32 ] . All experiments are conducted on a Linux server with a single NVIDIA GeForce RTX 40..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:31",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "Warpformer",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MissHyper compares against Warpformer for temporal attention-based irregular modeling.",
+  "contexts": [
+   "[body] ...attention-based baselines include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61 ] . The most controlled comparison is the direct hypergraph baseline, where MissHyper uses the same construction and propagation operators but replaces the event initialization stage [ 32 ] . All experiments are conducted on a Linux server with a single NVIDIA GeForce RTX 4090 GPU. Th..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:32",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "tPatchGNN",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MissHyper compares against tPatchGNN for patch-based graph modeling.",
+  "contexts": [
+   "[body] ...ased baselines include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61 ] . The most controlled comparison is the direct hypergraph baseline, where MissHyper uses the same construction and propagation operators but replaces the event initialization stage [ 32 ] . All experiments are conducted on a Linux server with a single NVIDIA GeForce RTX 4090 GPU. The implementa..."
+  ]
+ },
+ {
+  "sid": "out_12.jsonl:33",
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "object": "GraFITi",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "MissHyper compares against GraFITi for graph-based irregular forecasting.",
+  "contexts": [
+   "[body] ...include PrimeNet, mTAN, and SeFT [ 9 , 51 , 23 ] . Continuous-time and neural-flow baselines include NeuralFlows, CRU, and GNeuralFlow [ 3 , 47 , 40 ] . GRU-D represents missingness-aware recurrent modeling [ 6 ] . Graph-structured and recent irregular forecasting baselines include Raindrop, Warpformer, tPatchGNN, and GraFITi [ 67 , 64 , 66 , 61 ] . The most controlled comparison is the direct hypergraph baseline, where MissHyper uses the same construction and propagation operators but replaces the event initialization stage [ 32 ] . All experiments are conducted on a Linux server with a single NVIDIA GeForce RTX 4090 GPU. The implementation uses PyTor..."
+  ]
+ }
+]

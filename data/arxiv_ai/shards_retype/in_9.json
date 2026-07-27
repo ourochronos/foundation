@@ -1,0 +1,725 @@
+[
+ {
+  "sid": "out_4.jsonl:45",
+  "page": "arxiv:2607.21131v1",
+  "subject": "RGNN",
+  "object": "GraphSAGE",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RGNN employs GraphSAGE for mean aggregation over geographic neighborhoods.",
+  "contexts": [
+   "[body] ...information from local neighbourhoods. GATv2 [ 13 ] extends graph attention networks with a more expressive attention mechanism in which both source and target node features jointly determine attention weights, making it well-suited to heterogeneous hierarchies where child nodes vary substantially in informativeness. GraphSAGE [ 6 ] performs mean aggregation over sampled neighbourhoods and is widely used for spatial smoothing on geographic graphs. GNNs have been applied to urban analytics tasks including traffic forecasting [ 8 ] and a [...] 4 Experiments Table 1: Region-level holdout evaluation across 10 regions of England and Wales. Values are mean..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:46",
+  "page": "arxiv:2607.21131v1",
+  "subject": "RGNN",
+  "object": "Random Forest",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "RGNN is compared against Random Forest as a baseline for heat-mortality prediction.",
+  "contexts": [
+   "[body] ...m). We demonstrate three RGNN variants, which share the same codebase and architecture, differing only in the depth of the administrative hierarchy: rgnn (LAD \u2192 \\to Region, 2 levels) rgnn_lsoa (LSOA \u2192 \\to LAD \u2192 \\to Region, 3 levels) rgnn_oa (OA \u2192 \\to LSOA \u2192 \\to LAD \u2192 \\to Region, 4 levels) As baselines we use the DLNM, Random Forests (RF), Gradient Boosted Models (GBM), Long Short-Term Memory networks (LSTMs) and Multi-Layer Perceptrons (MLP). RFs report their own uncertainty estimates through their ensemble, and for GBMs we use heteroscedastic noise on training residuals (std ( y \u2212 y ^ ) (y-\\hat{y}) ). We take two holdout sets in 2018 and 2022, both un..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:47",
+  "page": "arxiv:2607.21131v1",
+  "subject": "RGNN",
+  "object": "Gradient Boosted Models",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "RGNN evaluation includes GBM as a baseline method.",
+  "contexts": [
+   "[body] ...ree RGNN variants, which share the same codebase and architecture, differing only in the depth of the administrative hierarchy: rgnn (LAD \u2192 \\to Region, 2 levels) rgnn_lsoa (LSOA \u2192 \\to LAD \u2192 \\to Region, 3 levels) rgnn_oa (OA \u2192 \\to LSOA \u2192 \\to LAD \u2192 \\to Region, 4 levels) As baselines we use the DLNM, Random Forests (RF), Gradient Boosted Models (GBM), Long Short-Term Memory networks (LSTMs) and Multi-Layer Perceptrons (MLP). RFs report their own uncertainty estimates through their ensemble, and for GBMs we use heteroscedastic noise on training residuals (std ( y \u2212 y ^ ) (y-\\hat{y}) ). We take two holdout sets in 2018 and 2022, both unprecedented years for..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:48",
+  "page": "arxiv:2607.21131v1",
+  "subject": "RGNN",
+  "object": "LSTM",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "RGNN is compared against LSTM for heat-mortality prediction.",
+  "contexts": [
+   "[body] ...narrow Pearson \u2191 \\uparrow CRPS \u2193 \\downarrow Cov@90% \u2191 \\uparrow 2018 DLNM 0.33 \u00b1 \\pm 0.07 0.25 \u00b1 \\pm 0.05 0.32 \u00b1 \\pm 0.05 0.19 \u00b1 \\pm 0.04 0.73 \u00b1 \\pm 0.03 RF 0.29 \u00b1 \\pm 0.06 0.22 \u00b1 \\pm 0.04 0.45 \u00b1 \\pm 0.04 0.19 \u00b1 \\pm 0.04 0.36 \u00b1 \\pm 0.02 GBM 0.28 \u00b1 \\pm 0.06 0.21 \u00b1 \\pm 0.04 0.37 \u00b1 \\pm 0.06 0.16 \u00b1 \\pm 0.03 0.78 \u00b1 \\pm 0.03 LSTM \u2020 0.27 \u00b1 \\pm 0.04 0.21 \u00b1 \\pm 0.03 0.55 \u00b1 \\pm 0.10 \u2014 \u2014 MLP \u2020 0.29 \u00b1 \\pm 0.05 0.23 \u00b1 \\pm 0.04 0.48 \u00b1 \\pm 0.07 \u2014 \u2014 RGNN 0.24 \u00b1 \\pm 0.04 0.19 \u00b1 \\pm 0.03 0.52 \u00b1 \\pm 0.08 0.14 \u00b1 \\pm 0.02 0.97 \u00b1 \\pm 0.02 RGNN-LSOA 0.24 \u00b1 \\pm 0.05 0.19 \u00b1 \\pm 0.04 0.56 \u00b1 \\pm 0.05 0.14 \u00b1 \\pm 0.02 0.99 \u00b1 \\pm 0.01 RGNN-OA 0.23 \u00b1 \\pm 0.04 0.19 \u00b1 \\pm 0.03 0.56 \u00b1 \\...",
+   "[body] ....19 \u00b1 \\pm 0.03 0.56 \u00b1 \\pm 0.05 0.14 \u00b1 \\pm 0.02 0.98 \u00b1 \\pm 0.01 2022 DLNM 0.54 \u00b1 \\pm 0.09 0.44 \u00b1 \\pm 0.07 0.49 \u00b1 \\pm 0.11 0.36 \u00b1 \\pm 0.05 0.43 \u00b1 \\pm 0.06 RF 0.52 \u00b1 \\pm 0.08 0.43 \u00b1 \\pm 0.06 0.46 \u00b1 \\pm 0.07 0.40 \u00b1 \\pm 0.06 0.11 \u00b1 \\pm 0.03 GBM 0.52 \u00b1 \\pm 0.08 0.43 \u00b1 \\pm 0.06 0.40 \u00b1 \\pm 0.08 0.35 \u00b1 \\pm 0.05 0.39 \u00b1 \\pm 0.07 LSTM \u2020 0.53 \u00b1 \\pm 0.07 0.46 \u00b1 \\pm 0.06 0.40 \u00b1 \\pm 0.13 \u2014 \u2014 MLP \u2020 0.53 \u00b1 \\pm 0.08 0.46 \u00b1 \\pm 0.07 0.48 \u00b1 \\pm 0.11 \u2014 \u2014 RGNN 0.39 \u00b1 \\pm 0.04 0.31 \u00b1 \\pm 0.03 0.47 \u00b1 \\pm 0.07 0.22 \u00b1 \\pm 0.02 0.87 \u00b1 \\pm 0.03 RGNN-LSOA 0.39 \u00b1 \\pm 0.03 0.32 \u00b1 \\pm 0.02 0.40 \u00b1 \\pm 0.07 0.22 \u00b1 \\pm 0.02 0.89 \u00b1 \\pm 0.03 RGNN-OA 0.43 \u00b1 \\pm 0.04 0.36 \u00b1 \\pm 0.03 0.40 \u00b1 \\...",
+   "[body] ...e, differing only in the depth of the administrative hierarchy: rgnn (LAD \u2192 \\to Region, 2 levels) rgnn_lsoa (LSOA \u2192 \\to LAD \u2192 \\to Region, 3 levels) rgnn_oa (OA \u2192 \\to LSOA \u2192 \\to LAD \u2192 \\to Region, 4 levels) As baselines we use the DLNM, Random Forests (RF), Gradient Boosted Models (GBM), Long Short-Term Memory networks (LSTMs) and Multi-Layer Perceptrons (MLP). RFs report their own uncertainty estimates through their ensemble, and for GBMs we use heteroscedastic noise on training residuals (std ( y \u2212 y ^ ) (y-\\hat{y}) ). We take two holdout sets in 2018 and 2022, both unprecedented years for heat exposure in the UK. We detrend for long-term trend, season..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:49",
+  "page": "arxiv:2607.21131v1",
+  "subject": "RGNN",
+  "object": "MLP",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "RGNN comparison includes MLP as a baseline.",
+  "contexts": [
+   "[body] ...row 2018 DLNM 0.33 \u00b1 \\pm 0.07 0.25 \u00b1 \\pm 0.05 0.32 \u00b1 \\pm 0.05 0.19 \u00b1 \\pm 0.04 0.73 \u00b1 \\pm 0.03 RF 0.29 \u00b1 \\pm 0.06 0.22 \u00b1 \\pm 0.04 0.45 \u00b1 \\pm 0.04 0.19 \u00b1 \\pm 0.04 0.36 \u00b1 \\pm 0.02 GBM 0.28 \u00b1 \\pm 0.06 0.21 \u00b1 \\pm 0.04 0.37 \u00b1 \\pm 0.06 0.16 \u00b1 \\pm 0.03 0.78 \u00b1 \\pm 0.03 LSTM \u2020 0.27 \u00b1 \\pm 0.04 0.21 \u00b1 \\pm 0.03 0.55 \u00b1 \\pm 0.10 \u2014 \u2014 MLP \u2020 0.29 \u00b1 \\pm 0.05 0.23 \u00b1 \\pm 0.04 0.48 \u00b1 \\pm 0.07 \u2014 \u2014 RGNN 0.24 \u00b1 \\pm 0.04 0.19 \u00b1 \\pm 0.03 0.52 \u00b1 \\pm 0.08 0.14 \u00b1 \\pm 0.02 0.97 \u00b1 \\pm 0.02 RGNN-LSOA 0.24 \u00b1 \\pm 0.05 0.19 \u00b1 \\pm 0.04 0.56 \u00b1 \\pm 0.05 0.14 \u00b1 \\pm 0.02 0.99 \u00b1 \\pm 0.01 RGNN-OA 0.23 \u00b1 \\pm 0.04 0.19 \u00b1 \\pm 0.03 0.56 \u00b1 \\pm 0.05 0.14 \u00b1 \\pm 0.02 0.98 \u00b1 \\pm 0.01 2022 DLNM 0.54 \u00b1 \\p...",
+   "[body] ....01 2022 DLNM 0.54 \u00b1 \\pm 0.09 0.44 \u00b1 \\pm 0.07 0.49 \u00b1 \\pm 0.11 0.36 \u00b1 \\pm 0.05 0.43 \u00b1 \\pm 0.06 RF 0.52 \u00b1 \\pm 0.08 0.43 \u00b1 \\pm 0.06 0.46 \u00b1 \\pm 0.07 0.40 \u00b1 \\pm 0.06 0.11 \u00b1 \\pm 0.03 GBM 0.52 \u00b1 \\pm 0.08 0.43 \u00b1 \\pm 0.06 0.40 \u00b1 \\pm 0.08 0.35 \u00b1 \\pm 0.05 0.39 \u00b1 \\pm 0.07 LSTM \u2020 0.53 \u00b1 \\pm 0.07 0.46 \u00b1 \\pm 0.06 0.40 \u00b1 \\pm 0.13 \u2014 \u2014 MLP \u2020 0.53 \u00b1 \\pm 0.08 0.46 \u00b1 \\pm 0.07 0.48 \u00b1 \\pm 0.11 \u2014 \u2014 RGNN 0.39 \u00b1 \\pm 0.04 0.31 \u00b1 \\pm 0.03 0.47 \u00b1 \\pm 0.07 0.22 \u00b1 \\pm 0.02 0.87 \u00b1 \\pm 0.03 RGNN-LSOA 0.39 \u00b1 \\pm 0.03 0.32 \u00b1 \\pm 0.02 0.40 \u00b1 \\pm 0.07 0.22 \u00b1 \\pm 0.02 0.89 \u00b1 \\pm 0.03 RGNN-OA 0.43 \u00b1 \\pm 0.04 0.36 \u00b1 \\pm 0.03 0.40 \u00b1 \\pm 0.07 0.25 \u00b1 \\pm 0.02 0.83 \u00b1 \\pm 0.04 We collect daily te...",
+   "[body] ...e administrative hierarchy: rgnn (LAD \u2192 \\to Region, 2 levels) rgnn_lsoa (LSOA \u2192 \\to LAD \u2192 \\to Region, 3 levels) rgnn_oa (OA \u2192 \\to LSOA \u2192 \\to LAD \u2192 \\to Region, 4 levels) As baselines we use the DLNM, Random Forests (RF), Gradient Boosted Models (GBM), Long Short-Term Memory networks (LSTMs) and Multi-Layer Perceptrons (MLP). RFs report their own uncertainty estimates through their ensemble, and for GBMs we use heteroscedastic noise on training residuals (std ( y \u2212 y ^ ) (y-\\hat{y}) ). We take two holdout sets in 2018 and 2022, both unprecedented years for heat exposure in the UK. We detrend for long-term trend, seasonality, day-of-week effects, and publ..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:50",
+  "page": "arxiv:2607.21137v1",
+  "subject": "Sidewalk segmentation",
+  "object": "Cityscapes",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The framework references Cityscapes as a standard urban-scene segmentation benchmark.",
+  "contexts": [
+   "[body] ...s as sidewalk creates a false-safe representation of an unsafe region. This road-sidewalk confusion is therefore a safety-critical failure mode that motivates evaluation beyond overall segmentation accuracy. 1.2 Dataset and taxonomy limitations in sidewalk navigation Most urban-scene segmentation benchmarks, including Cityscapes [ 7 ] , ApolloScape [ 12 ] , Mapillary Vistas [ 20 ] , CamVid [ 2 ] , and BDD100K [ 36 ] , were developed for vehicle-centered perception. While valuable for general road-scene understanding, their viewpoint, scale, and annotation priorities do not fully reflect smartphone-based pedestrian navigation. Sidewalks often occupy sma...",
+   "[body] ...validation set supported training-stage comparison and model selection, while the held-out test set was reserved for final evaluation. 3.2 Source-Data Harmonization and Transfer Setup To evaluate transfer learning under a common pedestrian-navigation label space, we used five source-data families: ApolloScape [ 12 ] , Cityscapes [ 7 ] , SANPO [ 31 ] , SideGuide [ 21 ] , and AllData, the combined multi-source setting. As these datasets differ in viewpoint, scene composition, annotation detail, and class definitions, all labels were mapped to the SENSATION-DS 9-class taxonomy using dataset-specific mapping tables before training. Classes that could not b..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:51",
+  "page": "arxiv:2607.21137v1",
+  "subject": "Sidewalk segmentation",
+  "object": "ApolloScape",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Models are trained using ApolloScape as a source-data family for transfer learning.",
+  "contexts": [
+   "[body] ...es a false-safe representation of an unsafe region. This road-sidewalk confusion is therefore a safety-critical failure mode that motivates evaluation beyond overall segmentation accuracy. 1.2 Dataset and taxonomy limitations in sidewalk navigation Most urban-scene segmentation benchmarks, including Cityscapes [ 7 ] , ApolloScape [ 12 ] , Mapillary Vistas [ 20 ] , CamVid [ 2 ] , and BDD100K [ 36 ] , were developed for vehicle-centered perception. While valuable for general road-scene understanding, their viewpoint, scale, and annotation priorities do not fully reflect smartphone-based pedestrian navigation. Sidewalks often occupy small image regions an...",
+   "[body] ...ghout the study. The validation set supported training-stage comparison and model selection, while the held-out test set was reserved for final evaluation. 3.2 Source-Data Harmonization and Transfer Setup To evaluate transfer learning under a common pedestrian-navigation label space, we used five source-data families: ApolloScape [ 12 ] , Cityscapes [ 7 ] , SANPO [ 31 ] , SideGuide [ 21 ] , and AllData, the combined multi-source setting. As these datasets differ in viewpoint, scene composition, annotation detail, and class definitions, all labels were mapped to the SENSATION-DS 9-class taxonomy using dataset-specific mapping tables before training. Cla..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:52",
+  "page": "arxiv:2607.21137v1",
+  "subject": "Sidewalk segmentation",
+  "object": "Mapillary Vistas",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Sidewalk segmentation sources SENSATION-DS data from Mapillary Vistas.",
+  "contexts": [
+   "[body] ...sentation of an unsafe region. This road-sidewalk confusion is therefore a safety-critical failure mode that motivates evaluation beyond overall segmentation accuracy. 1.2 Dataset and taxonomy limitations in sidewalk navigation Most urban-scene segmentation benchmarks, including Cityscapes [ 7 ] , ApolloScape [ 12 ] , Mapillary Vistas [ 20 ] , CamVid [ 2 ] , and BDD100K [ 36 ] , were developed for vehicle-centered perception. While valuable for general road-scene understanding, their viewpoint, scale, and annotation priorities do not fully reflect smartphone-based pedestrian navigation. Sidewalks often occupy small image regions and may lack accessibil...",
+   "[body] ...ical classes and correspond to class 1 and class 2, respectively. Dataset design, class selection, and interpretation of safety-critical failures were informed by the experience of a blind first author. The dataset contains 2,752 image-mask pairs assembled from three complementary sources: pedestrian-view samples from Mapillary Vistas [ 20 ] , sidewalk image-mask pairs released through [ 27 ] , and newly captured chest-height images from German urban environments annotated using the EXACT toolset [ 19 ] . A fixed train/validation/test split of 2,190/281/281 images (approximately 80%/10%/10%) was used throughout the study. The validation set supported t..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:53",
+  "page": "arxiv:2607.21137v1",
+  "subject": "Sidewalk segmentation",
+  "object": "Segment Anything Model 2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework uses SAM2 pseudo-labels for supervised domain adaptation.",
+  "contexts": [
+   "[abstract] ..., a chest-height pedestrian-view dataset with 2,752 image-mask pairs and nine-class navigation-relevant taxonomy. External urban and sidewalk datasets were harmonized to this label space, and five segmentation architectures were evaluated using staged target-domain adaptation with mask-conditioned synthetic images and Segment Anything Model 2 (SAM2) pseudo-labels. Models were assessed using mean Intersection over Union (mIoU), road- and sidewalk-specific metrics, Road-as-Sidewalk Error Rate as a proxy false-safe measure, and Android Open Neural Network Exchange benchmarking. Synthetic augmentation generally improved segmentation accuracy, whereas SAM2..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:54",
+  "page": "arxiv:2607.21137v1",
+  "subject": "Sidewalk segmentation",
+  "object": "DeepLabV3Plus",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DeepLabV3Plus is evaluated as a semantic segmentation architecture.",
+  "contexts": [
+   "[body] ...ization enabled direct comparison of models across all source-data families under a consistent target taxonomy. 3.3 Model Architectures, Optimization, and Staged Target-Domain Adaptation We evaluated five semantic segmentation architectures implemented with segmentation_models_pytorch [ 13 ] and timm encoders [ 32 ] : DeepLabV3Plus [ 5 ] , Feature Pyramid Network (FPN) [ 17 ] , Pyramid Attention Network (PAN) [ 16 ] , UPerNet [ 33 ] , and SegFormer [ 34 ] . DeepLabV3Plus, FPN, PAN, and UPerNet used ImageNet-pretrained MobileNetV3-Large-0.75 encoders [ 8 , 11 ] , while SegFormer used the MiT-B0 encoder [ 34 ] . These architectures were selected to compa...",
+   "[body] ...ization, and Staged Target-Domain Adaptation We evaluated five semantic segmentation architectures implemented with segmentation_models_pytorch [ 13 ] and timm encoders [ 32 ] : DeepLabV3Plus [ 5 ] , Feature Pyramid Network (FPN) [ 17 ] , Pyramid Attention Network (PAN) [ 16 ] , UPerNet [ 33 ] , and SegFormer [ 34 ] . DeepLabV3Plus, FPN, PAN, and UPerNet used ImageNet-pretrained MobileNetV3-Large-0.75 encoders [ 8 , 11 ] , while SegFormer used the MiT-B0 encoder [ 34 ] . These architectures were selected to compare lightweight convolutional encoder\u2013decoder models with a compact transformer while remaining suitable for smartphone deployment. Figure 2: T...",
+   "[abstract] ...Error Rate as a proxy false-safe measure, and Android Open Neural Network Exchange benchmarking. Synthetic augmentation generally improved segmentation accuracy, whereas SAM2 pseudo-labels more consistently reduced Road-as-Sidewalk errors. UPerNet-MobileNetV3 achieved the highest offline mIoU (0.715 +/- 0.006), while DeepLabV3Plus-MobileNetV3 achieved the lowest Road-as-Sidewalk Error Rate (0.079) and highest Android runtime at 512x384 (7.383 FPS). These results show that assistive sidewalk perception should be evaluated jointly by segmentation accuracy, proxy false-safe behavior, and smartphone deployment feasibility, while real-world benefit require..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:55",
+  "page": "arxiv:2607.21137v1",
+  "subject": "Sidewalk segmentation",
+  "object": "UPerNet",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "UPerNet achieved the highest offline mIoU for sidewalk segmentation.",
+  "contexts": [
+   "[body] ...taxonomy. 3.3 Model Architectures, Optimization, and Staged Target-Domain Adaptation We evaluated five semantic segmentation architectures implemented with segmentation_models_pytorch [ 13 ] and timm encoders [ 32 ] : DeepLabV3Plus [ 5 ] , Feature Pyramid Network (FPN) [ 17 ] , Pyramid Attention Network (PAN) [ 16 ] , UPerNet [ 33 ] , and SegFormer [ 34 ] . DeepLabV3Plus, FPN, PAN, and UPerNet used ImageNet-pretrained MobileNetV3-Large-0.75 encoders [ 8 , 11 ] , while SegFormer used the MiT-B0 encoder [ 34 ] . These architectures were selected to compare lightweight convolutional encoder\u2013decoder models with a compact transformer while remaining suitabl...",
+   "[body] ...main Adaptation We evaluated five semantic segmentation architectures implemented with segmentation_models_pytorch [ 13 ] and timm encoders [ 32 ] : DeepLabV3Plus [ 5 ] , Feature Pyramid Network (FPN) [ 17 ] , Pyramid Attention Network (PAN) [ 16 ] , UPerNet [ 33 ] , and SegFormer [ 34 ] . DeepLabV3Plus, FPN, PAN, and UPerNet used ImageNet-pretrained MobileNetV3-Large-0.75 encoders [ 8 , 11 ] , while SegFormer used the MiT-B0 encoder [ 34 ] . These architectures were selected to compare lightweight convolutional encoder\u2013decoder models with a compact transformer while remaining suitable for smartphone deployment. Figure 2: Training-stage pipeline for st...",
+   "[abstract] ...ection over Union (mIoU), road- and sidewalk-specific metrics, Road-as-Sidewalk Error Rate as a proxy false-safe measure, and Android Open Neural Network Exchange benchmarking. Synthetic augmentation generally improved segmentation accuracy, whereas SAM2 pseudo-labels more consistently reduced Road-as-Sidewalk errors. UPerNet-MobileNetV3 achieved the highest offline mIoU (0.715 +/- 0.006), while DeepLabV3Plus-MobileNetV3 achieved the lowest Road-as-Sidewalk Error Rate (0.079) and highest Android runtime at 512x384 (7.383 FPS). These results show that assistive sidewalk perception should be evaluated jointly by segmentation accuracy, proxy false-safe be..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:56",
+  "page": "arxiv:2607.21137v1",
+  "subject": "Sidewalk segmentation",
+  "object": "MobileNetV3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Sidewalk segmentation models use ImageNet-pretrained MobileNetV3 encoders.",
+  "contexts": [
+   "[body] ...semantic segmentation architectures implemented with segmentation_models_pytorch [ 13 ] and timm encoders [ 32 ] : DeepLabV3Plus [ 5 ] , Feature Pyramid Network (FPN) [ 17 ] , Pyramid Attention Network (PAN) [ 16 ] , UPerNet [ 33 ] , and SegFormer [ 34 ] . DeepLabV3Plus, FPN, PAN, and UPerNet used ImageNet-pretrained MobileNetV3-Large-0.75 encoders [ 8 , 11 ] , while SegFormer used the MiT-B0 encoder [ 34 ] . These architectures were selected to compare lightweight convolutional encoder\u2013decoder models with a compact transformer while remaining suitable for smartphone deployment. Figure 2: Training-stage pipeline for staged target-domain adaptation to...",
+   "[abstract] ...ver Union (mIoU), road- and sidewalk-specific metrics, Road-as-Sidewalk Error Rate as a proxy false-safe measure, and Android Open Neural Network Exchange benchmarking. Synthetic augmentation generally improved segmentation accuracy, whereas SAM2 pseudo-labels more consistently reduced Road-as-Sidewalk errors. UPerNet-MobileNetV3 achieved the highest offline mIoU (0.715 +/- 0.006), while DeepLabV3Plus-MobileNetV3 achieved the lowest Road-as-Sidewalk Error Rate (0.079) and highest Android runtime at 512x384 (7.383 FPS). These results show that assistive sidewalk perception should be evaluated jointly by segmentation accuracy, proxy false-safe behavior,...",
+   "[abstract] ...a proxy false-safe measure, and Android Open Neural Network Exchange benchmarking. Synthetic augmentation generally improved segmentation accuracy, whereas SAM2 pseudo-labels more consistently reduced Road-as-Sidewalk errors. UPerNet-MobileNetV3 achieved the highest offline mIoU (0.715 +/- 0.006), while DeepLabV3Plus-MobileNetV3 achieved the lowest Road-as-Sidewalk Error Rate (0.079) and highest Android runtime at 512x384 (7.383 FPS). These results show that assistive sidewalk perception should be evaluated jointly by segmentation accuracy, proxy false-safe behavior, and smartphone deployment feasibility, while real-world benefit requires validation w..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:57",
+  "page": "arxiv:2607.21143v1",
+  "subject": "RegretBench",
+  "object": "AmbigQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "RegretBench relates to AmbigQA which exposes multiple valid interpretations of ambiguous questions.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:58",
+  "page": "arxiv:2607.21151v1",
+  "subject": "V-DEAL",
+  "object": "Video-SafetyBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "V-DEAL evaluates six Video LLMs using Video-SafetyBench.",
+  "contexts": [
+   "[body] ...ic refusal axis. These projection values serve as refusal-alignment scores, providing a quantitative measure of how strongly the sample activates refusal-relevant internal representations relative to alternative attack conditions. 3.2 Experimental Setup Benchmarks. Experiments use three public video safety benchmarks: Video-SafetyBench [Liu et al. , 2026a , Ren et al. , 2025b ] , VA-SafetyBench [Lu et al. , 2025b , Mei et al. , 2024a ] , and Omni-SafetyBench [Pan et al. , 2025 ] . These benchmarks collectively cover harmful video attacks, safety alignment under video-conditioned inputs, and unimodal video safety risks. In total, the evaluation includes...",
+   "[body] ..., VA-SafetyBench [Lu et al. , 2025b , Mei et al. , 2024a ] , and Omni-SafetyBench [Pan et al. , 2025 ] . These benchmarks collectively cover harmful video attacks, safety alignment under video-conditioned inputs, and unimodal video safety risks. In total, the evaluation includes 5,020 video samples drawn from the full Video-SafetyBench dataset, the video subset of VA-SafetyBench, and the unimodal video subset of Omni-SafetyBench. External safety data. For representation analysis, we additionally use XSTest [R\u00f6ttger et al. , 2024 , Ren et al. , 2025a ] and MM-SafetyBench [Liu et al. , 2024a ] as external safety data. XSTest provides relatively clean tex..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:59",
+  "page": "arxiv:2607.21151v1",
+  "subject": "V-DEAL",
+  "object": "VA-SafetyBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "V-DEAL evaluation includes VA-SafetyBench for safety alignment assessment.",
+  "contexts": [
+   "[body] ...ment scores, providing a quantitative measure of how strongly the sample activates refusal-relevant internal representations relative to alternative attack conditions. 3.2 Experimental Setup Benchmarks. Experiments use three public video safety benchmarks: Video-SafetyBench [Liu et al. , 2026a , Ren et al. , 2025b ] , VA-SafetyBench [Lu et al. , 2025b , Mei et al. , 2024a ] , and Omni-SafetyBench [Pan et al. , 2025 ] . These benchmarks collectively cover harmful video attacks, safety alignment under video-conditioned inputs, and unimodal video safety risks. In total, the evaluation includes 5,020 video samples drawn from the full Video-SafetyBench data...",
+   "[body] .... , 2024a ] , and Omni-SafetyBench [Pan et al. , 2025 ] . These benchmarks collectively cover harmful video attacks, safety alignment under video-conditioned inputs, and unimodal video safety risks. In total, the evaluation includes 5,020 video samples drawn from the full Video-SafetyBench dataset, the video subset of VA-SafetyBench, and the unimodal video subset of Omni-SafetyBench. External safety data. For representation analysis, we additionally use XSTest [R\u00f6ttger et al. , 2024 , Ren et al. , 2025a ] and MM-SafetyBench [Liu et al. , 2024a ] as external safety data. XSTest provides relatively clean text-only contrastive cases for refusal versus com..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:60",
+  "page": "arxiv:2607.21151v1",
+  "subject": "V-DEAL",
+  "object": "Omni-SafetyBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "V-DEAL uses Omni-SafetyBench for comprehensive video safety evaluation.",
+  "contexts": [
+   "[body] ...he sample activates refusal-relevant internal representations relative to alternative attack conditions. 3.2 Experimental Setup Benchmarks. Experiments use three public video safety benchmarks: Video-SafetyBench [Liu et al. , 2026a , Ren et al. , 2025b ] , VA-SafetyBench [Lu et al. , 2025b , Mei et al. , 2024a ] , and Omni-SafetyBench [Pan et al. , 2025 ] . These benchmarks collectively cover harmful video attacks, safety alignment under video-conditioned inputs, and unimodal video safety risks. In total, the evaluation includes 5,020 video samples drawn from the full Video-SafetyBench dataset, the video subset of VA-SafetyBench, and the unimodal video...",
+   "[body] ...2025 ] . These benchmarks collectively cover harmful video attacks, safety alignment under video-conditioned inputs, and unimodal video safety risks. In total, the evaluation includes 5,020 video samples drawn from the full Video-SafetyBench dataset, the video subset of VA-SafetyBench, and the unimodal video subset of Omni-SafetyBench. External safety data. For representation analysis, we additionally use XSTest [R\u00f6ttger et al. , 2024 , Ren et al. , 2025a ] and MM-SafetyBench [Liu et al. , 2024a ] as external safety data. XSTest provides relatively clean text-only contrastive cases for refusal versus compliance, while MM-SafetyBench supplies multimodal..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:61",
+  "page": "arxiv:2607.21151v1",
+  "subject": "V-DEAL",
+  "object": "Qwen2-VL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "V-DEAL studies Qwen2-VL as a representative Video LLM.",
+  "contexts": [
+   "[body] ...ss four attack conditions involving either harmful video or text-only input, with particular attention to whether the condition pairing harmful videos with benign queries yields the highest attack success rate despite the absence of explicit textual harmfulness. Model Behav. Avg. Acc R-Score Realign. VH-HQ VH-BQ 0S 8S Qwen2-VL 33.6 59.1 0.948 \u2212 - 0.15 2.35 0.12 Qwen2.5-VL \u2020 27.4 42.7 0.933 \u2212 - 0.13 0.28 0.32 IVideo2.5 34.0 36.1 0.950 20.70 0.00 0.00 IVL3.5 35.7 49.1 0.955 \u2212 - 0.16 2.15 0.08 MCPM-o 20.2 47.8 0.885 10.79 0.00 0.00 MCPM-V 64.2 55.2 0.811 9.72 0.00 0.00 Average 35.84 48.33 0.914 N/A 0.80 0.09 Table 1: Summary of V-DEAL results across six t...",
+   "[body] ...ide suitable supervision for refusal-related representation analysis but do not match the main video attack setting studied in this paper; therefore, they are not included in the behavioural benchmark suite. Models. We study six representative video-capable Video LLMs spanning major current open-source model families: Qwen2-VL-7B [Wang et al. , 2024a , Fu et al. , 2025a ] , Qwen2.5-VL-7B [Bai et al. , 2025 ] , InternVL3.5-8B [Wang et al. , 2025c ] , InternVideo2.5-8B (8B) [Wang et al. , 2025d ] , MiniCPM-o-4.5 (9B) [Cui et al. , 2026 , Ren and Wang, 2025 ] , MiniCPM-V-4.5 (8B) [Yu et al. , 2026 ] . Attack conditions. Behavioural evaluation uses four se..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:62",
+  "page": "arxiv:2607.21151v1",
+  "subject": "V-DEAL",
+  "object": "Qwen2.5-VL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "V-DEAL evaluates Qwen2.5-VL for video safety de-calibration.",
+  "contexts": [
+   "[body] ...armful video or text-only input, with particular attention to whether the condition pairing harmful videos with benign queries yields the highest attack success rate despite the absence of explicit textual harmfulness. Model Behav. Avg. Acc R-Score Realign. VH-HQ VH-BQ 0S 8S Qwen2-VL 33.6 59.1 0.948 \u2212 - 0.15 2.35 0.12 Qwen2.5-VL \u2020 27.4 42.7 0.933 \u2212 - 0.13 0.28 0.32 IVideo2.5 34.0 36.1 0.950 20.70 0.00 0.00 IVL3.5 35.7 49.1 0.955 \u2212 - 0.16 2.15 0.08 MCPM-o 20.2 47.8 0.885 10.79 0.00 0.00 MCPM-V 64.2 55.2 0.811 9.72 0.00 0.00 Average 35.84 48.33 0.914 N/A 0.80 0.09 Table 1: Summary of V-DEAL results across six target models. Behaviour reports ASR under th...",
+   "[body] ...on analysis but do not match the main video attack setting studied in this paper; therefore, they are not included in the behavioural benchmark suite. Models. We study six representative video-capable Video LLMs spanning major current open-source model families: Qwen2-VL-7B [Wang et al. , 2024a , Fu et al. , 2025a ] , Qwen2.5-VL-7B [Bai et al. , 2025 ] , InternVL3.5-8B [Wang et al. , 2025c ] , InternVideo2.5-8B (8B) [Wang et al. , 2025d ] , MiniCPM-o-4.5 (9B) [Cui et al. , 2026 , Ren and Wang, 2025 ] , MiniCPM-V-4.5 (8B) [Yu et al. , 2026 ] . Attack conditions. Behavioural evaluation uses four settings: text-only harmful query (T-HQ), text-only benign..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:63",
+  "page": "arxiv:2607.21151v1",
+  "subject": "V-DEAL",
+  "object": "InternVL3.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "V-DEAL tests InternVL3.5 as a representative Video LLM family.",
+  "contexts": [
+   "[body] ...video attack setting studied in this paper; therefore, they are not included in the behavioural benchmark suite. Models. We study six representative video-capable Video LLMs spanning major current open-source model families: Qwen2-VL-7B [Wang et al. , 2024a , Fu et al. , 2025a ] , Qwen2.5-VL-7B [Bai et al. , 2025 ] , InternVL3.5-8B [Wang et al. , 2025c ] , InternVideo2.5-8B (8B) [Wang et al. , 2025d ] , MiniCPM-o-4.5 (9B) [Cui et al. , 2026 , Ren and Wang, 2025 ] , MiniCPM-V-4.5 (8B) [Yu et al. , 2026 ] . Attack conditions. Behavioural evaluation uses four settings: text-only harmful query (T-HQ), text-only benign query (T-BQ), harmful video with harm..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:64",
+  "page": "arxiv:2607.21151v1",
+  "subject": "V-DEAL",
+  "object": "InternVideo2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "V-DEAL evaluates InternVideo2.5 for safety alignment.",
+  "contexts": [
+   "[body] ...per; therefore, they are not included in the behavioural benchmark suite. Models. We study six representative video-capable Video LLMs spanning major current open-source model families: Qwen2-VL-7B [Wang et al. , 2024a , Fu et al. , 2025a ] , Qwen2.5-VL-7B [Bai et al. , 2025 ] , InternVL3.5-8B [Wang et al. , 2025c ] , InternVideo2.5-8B (8B) [Wang et al. , 2025d ] , MiniCPM-o-4.5 (9B) [Cui et al. , 2026 , Ren and Wang, 2025 ] , MiniCPM-V-4.5 (8B) [Yu et al. , 2026 ] . Attack conditions. Behavioural evaluation uses four settings: text-only harmful query (T-HQ), text-only benign query (T-BQ), harmful video with harmful query (VH-HQ), and harmful video wit..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:65",
+  "page": "arxiv:2607.21151v1",
+  "subject": "V-DEAL",
+  "object": "MiniCPM-o",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "V-DEAL assesses MiniCPM-o as a Video LLM baseline.",
+  "contexts": [
+   "[body] ...avioural benchmark suite. Models. We study six representative video-capable Video LLMs spanning major current open-source model families: Qwen2-VL-7B [Wang et al. , 2024a , Fu et al. , 2025a ] , Qwen2.5-VL-7B [Bai et al. , 2025 ] , InternVL3.5-8B [Wang et al. , 2025c ] , InternVideo2.5-8B (8B) [Wang et al. , 2025d ] , MiniCPM-o-4.5 (9B) [Cui et al. , 2026 , Ren and Wang, 2025 ] , MiniCPM-V-4.5 (8B) [Yu et al. , 2026 ] . Attack conditions. Behavioural evaluation uses four settings: text-only harmful query (T-HQ), text-only benign query (T-BQ), harmful video with harmful query (VH-HQ), and harmful video with benign query (VH-B..."
+  ]
+ },
+ {
+  "sid": "out_4.jsonl:66",
+  "page": "arxiv:2607.21151v1",
+  "subject": "V-DEAL",
+  "object": "MiniCPM-V",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "V-DEAL includes MiniCPM-V in the evaluation of Video LLM safety.",
+  "contexts": [
+   "[body] ...ideo-capable Video LLMs spanning major current open-source model families: Qwen2-VL-7B [Wang et al. , 2024a , Fu et al. , 2025a ] , Qwen2.5-VL-7B [Bai et al. , 2025 ] , InternVL3.5-8B [Wang et al. , 2025c ] , InternVideo2.5-8B (8B) [Wang et al. , 2025d ] , MiniCPM-o-4.5 (9B) [Cui et al. , 2026 , Ren and Wang, 2025 ] , MiniCPM-V-4.5 (8B) [Yu et al. , 2026 ] . Attack conditions. Behavioural evaluation uses four settings: text-only harmful query (T-HQ), text-only benign query (T-BQ), harmful video with harmful query (VH-HQ), and harmful video with benign query (VH-B..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:0",
+  "page": "arxiv:2607.21155v1",
+  "subject": "CRAG-MM",
+  "object": "CRAG-MM",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "CRAG-MM is evaluated on CRAG-MM.",
+  "contexts": [
+   "[body] ...1 Introduction Figure 1 : Illustrative summary of the stage-wise evaluation enabled by CRAG-MM-Diagnostics , thanks to new types of metadata we add. The three stages evaluated are (1) language-based visual grounding, (2) object identification, and (3) knowledge extraction &amp; reasoning, and are further detailed in the figure. Recent advances in Vision-Language Models (VLMs) have accelerated interest in their deployment in...",
+   "[body] ...calized region to a canonical entity (e.g., a Wikipedia page) [ Mensink2023EncyclopedicVV , Narayan2025DeepMMSearchR1EM ] ; and 3 knowledge retrieval and reasoning , which answers the question after possible textual and visual information retrieval [ marino2019ok , chen2023can ] . To enable this analysis, we introduce CRAG-MM-Diagnostics , a benchmark built on top of CRAG-MM [ cragMM2025 ] , as described in Section \u02dc 3 . While CRAG-MM provides a foundation for KI-VQA in egocentric, visually complex scenes, it serves primarily as an end-to-end benchmark without the structural markers needed to diagnose internal model failures. CRAG-MM-Diagnostics transf...",
+   "[body] ...pedia page) [ Mensink2023EncyclopedicVV , Narayan2025DeepMMSearchR1EM ] ; and 3 knowledge retrieval and reasoning , which answers the question after possible textual and visual information retrieval [ marino2019ok , chen2023can ] . To enable this analysis, we introduce CRAG-MM-Diagnostics , a benchmark built on top of CRAG-MM [ cragMM2025 ] , as described in Section \u02dc 3 . While CRAG-MM provides a foundation for KI-VQA in egocentric, visually complex scenes, it serves primarily as an end-to-end benchmark without the structural markers needed to diagnose internal model failures. CRAG-MM-Diagnostics transforms this resource into a diagnostic framework by..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:1",
+  "page": "arxiv:2607.21155v1",
+  "subject": "CRAG-MM",
+  "object": "GPT-5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CRAG-MM builds on GPT-5.",
+  "contexts": [
+   "[body] ...in Section \u02dc 6 (when performing stage 3 evaluation). Among the generalized models that jointly encode images and text, we include open-source architectures Llama-3.2-11B [ meta2024llama ] and the Qwen2.5-VL family (ranging from 3B to 72B parameters) [ Bai2025Qwen25VLTR ] , alongside proprietary state-of-the-art models GPT-5 and GPT-5-mini . The specialized models focus explicitly on alignment between language and visual regions: Grounding-DINO [ Liu2023GroundingDM ] and OWL-ViT [ minderer2022simple ] perform open-vocabulary object detection by aligning text embeddings with image features for precise localization. Detailed prompts and details for this t...",
+   "[body] ...\u02dc 6 (when performing stage 3 evaluation). Among the generalized models that jointly encode images and text, we include open-source architectures Llama-3.2-11B [ meta2024llama ] and the Qwen2.5-VL family (ranging from 3B to 72B parameters) [ Bai2025Qwen25VLTR ] , alongside proprietary state-of-the-art models GPT-5 and GPT-5-mini . The specialized models focus explicitly on alignment between language and visual regions: Grounding-DINO [ Liu2023GroundingDM ] and OWL-ViT [ minderer2022simple ] perform open-vocabulary object detection by aligning text embeddings with image features for precise localization. Detailed prompts and details for this task are in...",
+   "[body] ...from query ambiguity rather than visual processing deficits. 4.2 Analyses and Findings Figure \u02dc 2 details the IoU per model, per referring expression type, and across all examples through the \u2018 all \u2019 bar. The Qwen2.5-VL family demonstrates robust grounding across all sizes, peaking at 67.8% accuracy. Llama-3.2 and the GPT-5 variants, however, have markedly lower performance. The fact that even the smallest Qwen is quite good at this task is likely because the model family was explicitly trained to understand bounding boxes [ Bai2025Qwen25VLTR ] ; the GPT-5 results, in particular, underscore that spatial understanding of images does not naturally emerge..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:2",
+  "page": "arxiv:2607.21155v1",
+  "subject": "CRAG-MM",
+  "object": "GPT-5-mini",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CRAG-MM builds on GPT-5-mini.",
+  "contexts": [
+   "[body] ...\u02dc 6 (when performing stage 3 evaluation). Among the generalized models that jointly encode images and text, we include open-source architectures Llama-3.2-11B [ meta2024llama ] and the Qwen2.5-VL family (ranging from 3B to 72B parameters) [ Bai2025Qwen25VLTR ] , alongside proprietary state-of-the-art models GPT-5 and GPT-5-mini . The specialized models focus explicitly on alignment between language and visual regions: Grounding-DINO [ Liu2023GroundingDM ] and OWL-ViT [ minderer2022simple ] perform open-vocabulary object detection by aligning text embeddings with image features for precise localization. Detailed prompts and details for this task are in...",
+   "[body] ...gure \u02dc 1 ). Disambiguation resulted in a substantial performance surge, a mean 44.0% improvement (see hatched bars in Figure \u02dc 2 ). This indicates that a lack of linguistic specificity is a primary bottleneck. The gains are largest for Qwen models, whereas disambiguated queries do not improve performance for Llama and GPT-5-mini , underscoring that their subpar performance is a more fundamental issue with these models\u2019 spatial reasoning abilities rather than merely the result of ambiguity. The presence of ambiguous queries in CRAG-MM is likely due to the data\u2019s egocentric nature. If a QA pair..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:3",
+  "page": "arxiv:2607.21155v1",
+  "subject": "CRAG-MM",
+  "object": "Grounding-DINO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CRAG-MM builds on Grounding-DINO.",
+  "contexts": [
+   "[body] ...text, we include open-source architectures Llama-3.2-11B [ meta2024llama ] and the Qwen2.5-VL family (ranging from 3B to 72B parameters) [ Bai2025Qwen25VLTR ] , alongside proprietary state-of-the-art models GPT-5 and GPT-5-mini . The specialized models focus explicitly on alignment between language and visual regions: Grounding-DINO [ Liu2023GroundingDM ] and OWL-ViT [ minderer2022simple ] perform open-vocabulary object detection by aligning text embeddings with image features for precise localization. Detailed prompts and details for this task are included in Appendix 0.C ; the prompts provide models with the question and image, and require outputting...",
+   "[body] ...nding of images does not naturally emerge, even in SOTA models. Even if GPT-5 can perform KI-VQA in general, the fact that it struggles with explicit grounding in this first stage limits the explainability and interpretability of the model. When contrasting the generalized and specialized models, it is noteworthy that Grounding-DINO performs remarkably well; despite its modest 0.2B parameters, it rivals the Qwen models in accuracy, presenting a highly efficient alternative for modular KI-VQA pipelines that include grounding. Figure 3 : Visual grounding scores along four dimensions of visual complexity (black squares indicate model mean). These plots sh...",
+   "[body] ...targets are the most straightforward to ground, ambiguous expressions represent a severe challenge. This gap is especially pronounced for smaller models (e.g., Qwen 3B and 7B), highlighting the role of model capacity in handling linguistic nuance and multimodal integration. Moreover, results demonstrate that although Grounding-DINO performs similarly to the Qwen family overall, it falls short of the larger models in samples with complex referring expressions (i.e., in the case of a \u2018knowledge-intensive cue\u2019 and \u2018ambiguous\u2019 examples). Ambiguity is a bottleneck for visual grounding. To isolate the effects of ambiguity, we compared performance on samples..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:4",
+  "page": "arxiv:2607.21155v1",
+  "subject": "CRAG-MM",
+  "object": "Llama 3.2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CRAG-MM builds on Llama 3.2.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:5",
+  "page": "arxiv:2607.21155v1",
+  "subject": "CRAG-MM",
+  "object": "OWL-ViT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CRAG-MM builds on OWL-ViT.",
+  "contexts": [
+   "[body] ...Llama-3.2-11B [ meta2024llama ] and the Qwen2.5-VL family (ranging from 3B to 72B parameters) [ Bai2025Qwen25VLTR ] , alongside proprietary state-of-the-art models GPT-5 and GPT-5-mini . The specialized models focus explicitly on alignment between language and visual regions: Grounding-DINO [ Liu2023GroundingDM ] and OWL-ViT [ minderer2022simple ] perform open-vocabulary object detection by aligning text embeddings with image features for precise localization. Detailed prompts and details for this task are included in Appendix 0.C ; the prompts provide models with the question and image, and require outputting precise bounding box coordinates. Evaluat..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:6",
+  "page": "arxiv:2607.21155v1",
+  "subject": "CRAG-MM",
+  "object": "Qwen2.5-VL",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CRAG-MM builds on Qwen2.5-VL.",
+  "contexts": [
+   "[body] ...performance of both, to inform building KI-VQA solutions that integrate specialized models, which we will perform later on, in Section \u02dc 6 (when performing stage 3 evaluation). Among the generalized models that jointly encode images and text, we include open-source architectures Llama-3.2-11B [ meta2024llama ] and the Qwen2.5-VL family (ranging from 3B to 72B parameters) [ Bai2025Qwen25VLTR ] , alongside proprietary state-of-the-art models GPT-5 and GPT-5-mini . The specialized models focus explicitly on alignment between language and visual regions: Grounding-DINO [ Liu2023GroundingDM ] and OWL-ViT [ minderer2022simple ] perform open-vocabulary object...",
+   "[body] ...targets reveal high sensitivity to expression type. (2) Gains from disambiguation suggest many failures arise from query ambiguity rather than visual processing deficits. 4.2 Analyses and Findings Figure \u02dc 2 details the IoU per model, per referring expression type, and across all examples through the \u2018 all \u2019 bar. The Qwen2.5-VL family demonstrates robust grounding across all sizes, peaking at 67.8% accuracy. Llama-3.2 and the GPT-5 variants, however, have markedly lower performance. The fact that even the smallest Qwen is quite good at this task is likely because the model family was explicitly trained to understand bounding boxes [ Bai2025Qwen25VLTR..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:7",
+  "page": "arxiv:2607.21155v1",
+  "subject": "CRAG-MM",
+  "object": "RAG",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "CRAG-MM builds on RAG.",
+  "contexts": [
+   "[body] ...1 Introduction Figure 1 : Illustrative summary of the stage-wise evaluation enabled by CRAG-MM-Diagnostics , thanks to new types of metadata we add. The three stages evaluated are (1) language-based visual grounding, (2) object identification, and (3) knowledge extraction &amp; reasoning, and are further detailed in the figure. Recent advances in Vision-Language Models (VLMs) have accelerated interest in their deployment in...",
+   "[body] ...adata we add. The three stages evaluated are (1) language-based visual grounding, (2) object identification, and (3) knowledge extraction &amp; reasoning, and are further detailed in the figure. Recent advances in Vision-Language Models (VLMs) have accelerated interest in their deployment in real-world applications [ cragMM2025 , Narayan2025DeepMMSearchR1EM , deitke2025molmo , Bai2025Qwen25VLTR ] . A core requirement for these assistants is the ability to interpret visual scenes and provide informative responses, typically evaluated through Visual Question Answering (VQA) benchmarks. However, while standard VQA often focuses on describing visible attri...",
+   "[body] ...utter [ marino2019ok , Mensink2023EncyclopedicVV , chen2023can ] . In contrast, real-world scenes contain multiple, often visually similar objects, with less salient and off-center targets (see Figure \u02dc 1 ). Challenging benchmarks that do include visually complex images often focus only on end-task evaluation [ hu2025mragbench , cragMM2025 ] , obscuring the root causes of failure (i.e., whether errors stem from flawed visual grounding, incorrect entity identification, or downstream reasoning). For example, when a model fails to answer the question in Figure \u02dc 1 , is the issue target identification or missing knowledge? In this work, we take a step towa..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:8",
+  "page": "arxiv:2607.21162v1",
+  "subject": "Agree",
+  "object": "GKR",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Agree builds on GKR.",
+  "contexts": [
+   "[body] ...ormer [ 9 ] reduces this arithmetization burden by separating a polynomial backbone from compact non-polynomial correction modules. Its original modular verification procedure, however, still propagates a full hidden state through L L dense blocks and retains O \u200b ( L \u200b d 2 ) O(Ld^{2}) client work. We therefore present GKR-HND, which applies GKR [ 10 , 11 ] to the registered HND backbone. GKR-HND combines a block-local GKR proof with delegated public computation. The retained verifier checks the proof transcript and the openings against the registered model. It derives the remaining public evaluation queries from the checked transcript and sends them to...",
+   "[body] ...s arithmetization burden by separating a polynomial backbone from compact non-polynomial correction modules. Its original modular verification procedure, however, still propagates a full hidden state through L L dense blocks and retains O \u200b ( L \u200b d 2 ) O(Ld^{2}) client work. We therefore present GKR-HND, which applies GKR [ 10 , 11 ] to the registered HND backbone. GKR-HND combines a block-local GKR proof with delegated public computation. The retained verifier checks the proof transcript and the openings against the registered model. It derives the remaining public evaluation queries from the checked transcript and sends them to an assigned computatio...",
+   "[body] ...ial backbone from compact non-polynomial correction modules. Its original modular verification procedure, however, still propagates a full hidden state through L L dense blocks and retains O \u200b ( L \u200b d 2 ) O(Ld^{2}) client work. We therefore present GKR-HND, which applies GKR [ 10 , 11 ] to the registered HND backbone. GKR-HND combines a block-local GKR proof with delegated public computation. The retained verifier checks the proof transcript and the openings against the registered model. It derives the remaining public evaluation queries from the checked transcript and sends them to an assigned computation worker. The worker does not receive an expecte..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:9",
+  "page": "arxiv:2607.21162v1",
+  "subject": "Agree",
+  "object": "GKR-HND",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Agree builds on GKR-HND.",
+  "contexts": [
+   "[body] ...ormer [ 9 ] reduces this arithmetization burden by separating a polynomial backbone from compact non-polynomial correction modules. Its original modular verification procedure, however, still propagates a full hidden state through L L dense blocks and retains O \u200b ( L \u200b d 2 ) O(Ld^{2}) client work. We therefore present GKR-HND, which applies GKR [ 10 , 11 ] to the registered HND backbone. GKR-HND combines a block-local GKR proof with delegated public computation. The retained verifier checks the proof transcript and the openings against the registered model. It derives the remaining public evaluation queries from the checked transcript and sends them to...",
+   "[body] ...ial backbone from compact non-polynomial correction modules. Its original modular verification procedure, however, still propagates a full hidden state through L L dense blocks and retains O \u200b ( L \u200b d 2 ) O(Ld^{2}) client work. We therefore present GKR-HND, which applies GKR [ 10 , 11 ] to the registered HND backbone. GKR-HND combines a block-local GKR proof with delegated public computation. The retained verifier checks the proof transcript and the openings against the registered model. It derives the remaining public evaluation queries from the checked transcript and sends them to an assigned computation worker. The worker does not receive an expecte...",
+   "[body] ...Its signed response is bound to the model, request, block, operation, and transcript. With an honest retained verifier and prover\u2013worker non-collusion, disagreement causes rejection, while accepted block results can be composed through their public boundaries. The contributions are summarized as follows. \u2022 We propose GKR-HND, a method for verifying the outsourced polynomial backbone of HND inference without replaying dense products, under a threat model with an honest retained verifier and non-colluding prover and worker. \u2022 We separate retained cryptographic verification from public terminal computation and bind the assigned worker\u2019s response to each..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:10",
+  "page": "arxiv:2607.21173v1",
+  "subject": "Automated",
+  "object": "Automated Causal Reasoning Benchmark",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Automated is evaluated on Automated Causal Reasoning Benchmark.",
+  "contexts": [
+   "[abstract] ...ructural Causal Models (SCMs) with known ground-truth effects. This synthetic-data step can also support pipeline development when access to confidential data, such as medical data, is restricted. The generated analysis is then evaluated under controlled violations of identification assumptions. We evaluate ARA on the Automated Causal Reasoning Benchmark, assessing recovery of identification strategies, causal quantities, treatment and outcome variables, and consistency between generated code and approved protocol. Protocol construction and adversarial validation did not consistently improve numerical agreement with benchmark estimates compared with st..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:11",
+  "page": "arxiv:2607.21173v1",
+  "subject": "Automated",
+  "object": "Structural Causal Models",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Automated builds on Structural Causal Models.",
+  "contexts": [
+   "[abstract] .... ARA integrates protocol construction, synthetic data generation, and adversarial validation into a unified pipeline. The framework translates natural language research questions into structured causal protocols and executable analysis code by first constructing a protocol and then generating synthetic datasets using Structural Causal Models (SCMs) with known ground-truth effects. This synthetic-data step can also support pipeline development when access to confidential data, such as medical data, is restricted. The generated analysis is then evaluated under controlled violations of identification assumptions. We evaluate ARA on the Automated Causal R..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:12",
+  "page": "arxiv:2607.21217v1",
+  "subject": "ICAE",
+  "object": "HumanEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ICAE is evaluated on HumanEval.",
+  "contexts": [
+   "[body] ...ional correctness, artifact quality, structural fidelity, interaction quality, and controlled factors. II Related Work II-A Software-Agent Benchmarks Code-agent evaluation has gradually moved from isolated function synthesis toward repository-level and tool-using software engineering. Function-level benchmarks such as HumanEval [ 7 ] and MBPP [ 4 ] measure local programming ability under relatively self-contained problem statements [ 8 , 5 ] . Later benchmarks extend the evaluation context from single functions to files, repositories, and executable development environments. RepoBench [ 24 ] evaluates repository-level code completion with cross-file re...",
+   "[body] ...plements prior 0-to-1 benchmarks by moving the focus from implementing a given specification to discovering and implementing a partially specified product target. II-C Ambiguity and Clarification A growing line of work studies how code models handle unclear, incomplete, or interactive specifications [ 18 , 19 , 13 ] . HumanEvalComm modifies HumanEval-style problems with inconsistency, ambiguity, and incompleteness to evaluate whether models ask useful clarification questions [ 31 ] . Orchid studies the impact of requirement ambiguity on function-level code generation and categorizes ambiguity into lexical, syntactic, semantic, and vagueness-related for...",
+   "[body] ...enchmarks by moving the focus from implementing a given specification to discovering and implementing a partially specified product target. II-C Ambiguity and Clarification A growing line of work studies how code models handle unclear, incomplete, or interactive specifications [ 18 , 19 , 13 ] . HumanEvalComm modifies HumanEval-style problems with inconsistency, ambiguity, and incompleteness to evaluate whether models ask useful clarification questions [ 31 ] . Orchid studies the impact of requirement ambiguity on function-level code generation and categorizes ambiguity into lexical, syntactic, semantic, and vagueness-related forms [ 33 ] . When Benchm..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:13",
+  "page": "arxiv:2607.21217v1",
+  "subject": "ICAE",
+  "object": "ICAE-Bench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ICAE is evaluated on ICAE-Bench.",
+  "contexts": [
+   "[body] ...ICAE-Bench: Evaluating Coding Agents as Interactive Project Builders Abstract I Introduction II Related Work II-A Software-Agent Benchmarks II-B 0-to-1 Repository Generation II-C Ambiguity and Clarification III ICAE-Bench III-A Benchmark Instance Definition III-B Benchmark Construction Repository Selection and Test Refactoring GroundPRD S...",
+   "[body] ...ICAE-Bench: Evaluating Coding Agents as Interactive Project Builders Abstract I Introduction II Related Work II-A Software-Agent Benchmarks II-B 0-to-1 Repository Generation II-C Ambiguity and Clarification III ICAE-Bench III-A Benchmark Instance Definition III-B Benchmark Construction Repository Selection and Test Refactoring GroundPRD Synthesis and Fuzzification Enhanced Behavioral Cases Ultimate Image Generation III-C Artifact Verification Generation Harness III-D Benchmark Statistics Golden LOC. Golden File Count. III-E Interactive User Agen...",
+   "[body] ...is IV-C 1 Failure Mode Taxonomy IV-C 2 Effect of Test Scaffolding IV-C 3 Impact of Agent Frameworks IV-C 4 Impact of User Agent Capability IV-C 5 Impact of Interaction Budgets IV-C 6 Impact of Thinking Configuration IV-C 7 Impact of Execution Environment IV-C 8 Cross-lingual Generalization V Discussion V-A Validity of ICAE-Bench-Lite. V-B Reliability of Subjective Metrics. V-C Runtime and Token Usage. VI Conclusion and Future Work References A Prompt for Test Refactoring and GroundPRD Construction B Prompt for Enhanced Test Case Generation C Prompts for Fuzzy L1/L2 PRD Construction D Prompts for Fuzzy PRD Semantic Equivalence Judge E Prompts for Fuzzy..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:14",
+  "page": "arxiv:2607.21217v1",
+  "subject": "ICAE",
+  "object": "MBPP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ICAE is evaluated on MBPP.",
+  "contexts": [
+   "[body] ...rtifact quality, structural fidelity, interaction quality, and controlled factors. II Related Work II-A Software-Agent Benchmarks Code-agent evaluation has gradually moved from isolated function synthesis toward repository-level and tool-using software engineering. Function-level benchmarks such as HumanEval [ 7 ] and MBPP [ 4 ] measure local programming ability under relatively self-contained problem statements [ 8 , 5 ] . Later benchmarks extend the evaluation context from single functions to files, repositories, and executable development environments. RepoBench [ 24 ] evaluates repository-level code completion with cross-file retrieval and completi..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:15",
+  "page": "arxiv:2607.21217v1",
+  "subject": "ICAE",
+  "object": "RepoBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ICAE is evaluated on RepoBench.",
+  "contexts": [
+   "[body] ...g software engineering. Function-level benchmarks such as HumanEval [ 7 ] and MBPP [ 4 ] measure local programming ability under relatively self-contained problem statements [ 8 , 5 ] . Later benchmarks extend the evaluation context from single functions to files, repositories, and executable development environments. RepoBench [ 24 ] evaluates repository-level code completion with cross-file retrieval and completion tasks, while M2RC-Eval [ 21 ] studies multi-file and multi-repository contextual reasoning. Issue-resolution benchmarks further place agents inside existing repositories and ask them to generate patches for real software issues, including...",
+   "[body] ...keeps repository structure, class definitions, and function signatures, so the core challenge is to fill in missing implementations rather than clarify underspecified product requirements. A second design provides a full natural-language project specification and asks the agent to realize it in an empty workspace. NL2RepoBench [ 10 ] , RepoGenesis [ 26 ] , PRDBench [ 14 ] , ProjectEval [ 23 ] , and RealBench [ 20 ] all move closer to end-to-end project building, but they still largely assume that the agent has been given the decisive requirements needed to start implementation. Another line of work relaxes implementation constraints while keeping the..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:16",
+  "page": "arxiv:2607.21217v1",
+  "subject": "ICAE",
+  "object": "SWE-Bench Pro",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ICAE is evaluated on SWE-Bench Pro.",
+  "contexts": [
+   "[body] ...cross-file retrieval and completion tasks, while M2RC-Eval [ 21 ] studies multi-file and multi-repository contextual reasoning. Issue-resolution benchmarks further place agents inside existing repositories and ask them to generate patches for real software issues, including SWE-bench [ 17 ] , Multi-SWE-bench [ 36 ] , SWE-Bench Pro [ 9 ] , and SWE-Compass [ 32 ] . Recent surveys summarize this broader transition from code models to autonomous software-engineering agents [ 16 , 22 , 11 ] . These benchmarks are essential for measuring local coding, repository context use, tool execution, and issue-driven editing. However, they mostly assume that the targ..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:17",
+  "page": "arxiv:2607.21217v1",
+  "subject": "ICAE",
+  "object": "SWE-bench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "ICAE is evaluated on SWE-bench.",
+  "contexts": [
+   "[body] ...luates repository-level code completion with cross-file retrieval and completion tasks, while M2RC-Eval [ 21 ] studies multi-file and multi-repository contextual reasoning. Issue-resolution benchmarks further place agents inside existing repositories and ask them to generate patches for real software issues, including SWE-bench [ 17 ] , Multi-SWE-bench [ 36 ] , SWE-Bench Pro [ 9 ] , and SWE-Compass [ 32 ] . Recent surveys summarize this broader transition from code models to autonomous software-engineering agents [ 16 , 22 , 11 ] . These benchmarks are essential for measuring local coding, repository context use, tool execution, and issue-driven editin...",
+   "[body] ...ode completion with cross-file retrieval and completion tasks, while M2RC-Eval [ 21 ] studies multi-file and multi-repository contextual reasoning. Issue-resolution benchmarks further place agents inside existing repositories and ask them to generate patches for real software issues, including SWE-bench [ 17 ] , Multi-SWE-bench [ 36 ] , SWE-Bench Pro [ 9 ] , and SWE-Compass [ 32 ] . Recent surveys summarize this broader transition from code models to autonomous software-engineering agents [ 16 , 22 , 11 ] . These benchmarks are essential for measuring local coding, repository context use, tool execution, and issue-driven editing. However, they mostly a...",
+   "[body] ...cross-file retrieval and completion tasks, while M2RC-Eval [ 21 ] studies multi-file and multi-repository contextual reasoning. Issue-resolution benchmarks further place agents inside existing repositories and ask them to generate patches for real software issues, including SWE-bench [ 17 ] , Multi-SWE-bench [ 36 ] , SWE-Bench Pro [ 9 ] , and SWE-Compass [ 32 ] . Recent surveys summarize this broader transition from code models to autonomous software-engineering agents [ 16 , 22 , 11 ] . These benchmarks are essential for measuring local coding, repository context use, tool execution, and issue-driven editing. However, they mostly assume that the targ..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:18",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "AbsoluteDegradation",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DART is evaluated on AbsoluteDegradation.",
+  "contexts": [
+   "[body] ...i \u200b c \u200b e \\lambda_{rec},\\lambda_{adv},\\lambda_{mask},\\lambda_{dice} 1.0 , 0.01 , 0.5 , 0.5 1.0,\\ 0.01,\\ 0.5,\\ 0.5 4.1 Datasets, Metrics, and Implementation Training data. DART is trained on REDS [ Nah_2019_CVPR_Workshops_REDS ] train_sharp (720p, 24 fps). During training, a synthetic degradation pipeline, adapted from AbsoluteDegradation [ absolutedegradation_eval_2026 ] , generates training pairs online, yielding for each 256 \u00d7 256 256\\times 256 crop a ground-truth sharp frame, a synthetically degraded version of it, and a continuous artifact mask: the mask outlines exactly where the synthetic defects were applied and undergoes the same degradation as...",
+   "[body] ...},\\lambda_{adv},\\lambda_{mask},\\lambda_{dice} 1.0 , 0.01 , 0.5 , 0.5 1.0,\\ 0.01,\\ 0.5,\\ 0.5 4.1 Datasets, Metrics, and Implementation Training data. DART is trained on REDS [ Nah_2019_CVPR_Workshops_REDS ] train_sharp (720p, 24 fps). During training, a synthetic degradation pipeline, adapted from AbsoluteDegradation [ absolutedegradation_eval_2026 ] , generates training pairs online, yielding for each 256 \u00d7 256 256\\times 256 crop a ground-truth sharp frame, a synthetically degraded version of it, and a continuous artifact mask: the mask outlines exactly where the synthetic defects were applied and undergoes the same degradation as the degraded frame it...",
+   "[body] ...s \u200b k \\mathcal{L}_{mask} ( Eq. \u02dc 9 ). The official 30 REDS val_sharp clips are reserved as a synthetic, full-reference proxy test set, used only for the ablation study in Sec. \u02dc 4.4 . Real-world evaluation. No clean references exist for genuine archival footage, so evaluation on real data is necessarily no-reference. AbsoluteDegradation [ absolutedegradation_eval_2026 ] , a 13,252-frame, lossless-PNG corpus of public-domain archival footage (1896\u20131918), is the primary target domain; SRWOV [ mao2025making ] , 216 lower-resolution, JPEG-compressed real-world clips, serves as a secondary benchmark. Metrics. Real-footage quality is scored with three no-re..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:19",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "Adam",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DART builds on Adam.",
+  "contexts": [
+   "[body] ...degradation, shifting old-film restoration from passive reconstruction to explicit damage-aware processing. \u2022 We propose a multi-scale Dilation Pyramid MaskNet trained with direct continuous-mask supervision, enabling th [...] 4 Experiments Table 1 : Training settings and loss weights of DART. Setting Value Optimizer Adam ( \u03b2 1 = 0.9 , \u03b2 2 = 0.99 \\beta_{1}{=}0.9,\\beta_{2}{=}0.99 ) Learning rate 2 \u00d7 10 \u2212 4 2\\times 10^{-4} (linear decay) Epochs 20 Window / crop / batch 7 frames / 256 \u00d7 256 256{\\times}256 / 1 clip Precision FP16 (mixed) \u03bb r \u200b e \u200b c , \u03bb a \u200b d \u200b v , \u03bb m \u200b a \u200b s \u200b k , \u03bb d \u200b i \u200b c \u200b e \\lambda_{rec},\\lambda_{adv},\\lambda_{mask},\\lambda_{dice}..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:20",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "BasicVSR",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "DART compares to BasicVSR.",
+  "contexts": [
+   "[body] ...temporal coherence, and operate in a setting where clean reference videos are unavailable for real archival footage. Recent video restoration methods have made substantial progress by exploiting temporal information across frames through alignment, recurrent propagation, and transformer-based reconstruction [ chan2021basicvsr , chan2022basicvsrpp , liang2022rvrt , li2023simple ] . These ideas have also been adapted to old-film restoration, where models must handle stronger and more diverse artifacts than in standard video enhancement [ deepremaster , wan2022bringing , lin2024restoring , mao2025making ] . However, most existing restorers still treat de...",
+   "[body] ..., and operate in a setting where clean reference videos are unavailable for real archival footage. Recent video restoration methods have made substantial progress by exploiting temporal information across frames through alignment, recurrent propagation, and transformer-based reconstruction [ chan2021basicvsr , chan2022basicvsrpp , liang2022rvrt , li2023simple ] . These ideas have also been adapted to old-film restoration, where models must handle stronger and more diverse artifacts than in standard video enhancement [ deepremaster , wan2022bringing , lin2024restoring , mao2025making ] . However, most existing restorers still treat degradation only impl...",
+   "[body] ...weights. Every competing architecture in Sec. \u02dc 4.2 is retrained from scratch on identical data using its own published hyperparameters, so all comparisons in this section share a common training source and evaluation protocol. 4.2 Comparison with State of the Art Quantitative results. Table \u02dc 2 compares DART against BasicVSR [ chan2021basicvsr ] , BasicVSR++ [ chan2022basicvsrpp ] , ShiftNet [ li2023simple ] , DeepRemaster [ deepremaster ] , RTN [ wan2022bringing ] , and MambaOFR [ mao2025making ] , all retrained on identical data. DART outperforms all baselines on every metric on AbsoluteDegradation. On SRWOV it remains the best on MUSIQ and MANIQA,..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:21",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "DeepRemaster",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "DART compares to DeepRemaster.",
+  "contexts": [
+   "[body] ...frames through alignment, recurrent propagation, and transformer-based reconstruction [ chan2021basicvsr , chan2022basicvsrpp , liang2022rvrt , li2023simple ] . These ideas have also been adapted to old-film restoration, where models must handle stronger and more diverse artifacts than in standard video enhancement [ deepremaster , wan2022bringing , lin2024restoring , mao2025making ] . However, most existing restorers still treat degradation only implicitly, reconstructing clean frames without being told where damage occurs or how severe it is, so defect localization is learned only indirectly through the reconstruction loss rather than as a supervise...",
+   "[body] ...using its own published hyperparameters, so all comparisons in this section share a common training source and evaluation protocol. 4.2 Comparison with State of the Art Quantitative results. Table \u02dc 2 compares DART against BasicVSR [ chan2021basicvsr ] , BasicVSR++ [ chan2022basicvsrpp ] , ShiftNet [ li2023simple ] , DeepRemaster [ deepremaster ] , RTN [ wan2022bringing ] , and MambaOFR [ mao2025making ] , all retrained on identical data. DART outperforms all baselines on every metric on AbsoluteDegradation. On SRWOV it remains the best on MUSIQ and MANIQA, the two metrics that correlate most closely with human perceptual judgment, and is edged out on...",
+   "[body] ...published hyperparameters, so all comparisons in this section share a common training source and evaluation protocol. 4.2 Comparison with State of the Art Quantitative results. Table \u02dc 2 compares DART against BasicVSR [ chan2021basicvsr ] , BasicVSR++ [ chan2022basicvsrpp ] , ShiftNet [ li2023simple ] , DeepRemaster [ deepremaster ] , RTN [ wan2022bringing ] , and MambaOFR [ mao2025making ] , all retrained on identical data. DART outperforms all baselines on every metric on AbsoluteDegradation. On SRWOV it remains the best on MUSIQ and MANIQA, the two metrics that correlate most closely with human perceptual judgment, and is edged out only on CLIPIQA+,..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:22",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "MambaOFR",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "DART compares to MambaOFR.",
+  "contexts": [
+   "[body] ...n this section share a common training source and evaluation protocol. 4.2 Comparison with State of the Art Quantitative results. Table \u02dc 2 compares DART against BasicVSR [ chan2021basicvsr ] , BasicVSR++ [ chan2022basicvsrpp ] , ShiftNet [ li2023simple ] , DeepRemaster [ deepremaster ] , RTN [ wan2022bringing ] , and MambaOFR [ mao2025making ] , all retrained on identical data. DART outperforms all baselines on every metric on AbsoluteDegradation. On SRWOV it remains the best on MUSIQ and MANIQA, the two metrics that correlate most closely with human perceptual judgment, and is edged out only on CLIPIQA+, where ShiftNet scores narrowly higher (0.458 v...",
+   "[body] ...0.2844 0.4086 57.6442 0.3104 BasicVSR++ [ chan2022basicvsrpp ] 0.3685 42.9144 0.2375 0.4428 58.0442 0.3231 ShiftNet [ li2023simple ] 0.4309 46.7724 0.2764 0.4578 57.9334 0.3336 DeepRemaster [ deepremaster ] 0.3574 44.7540 0.2542 0.3722 53.5473 0.2637 RTN [ wan2022bringing ] 0.4220 46.8737 0.2661 0.4441 58.4585 0.3321 MambaOFR [ mao2025making ] 0.4190 47.2436 0.2777 0.4402 57.3551 0.3210 DART (Ours) 0.4334 51.2304 0.3011 0.4488 59.4263 0.3427 Qualitative results. Figure \u02dc 3 tracks three consecutive frames from an archival newsreel clip. BasicVSR++ and MambaOFR leave the emulsion out of focus and lets speckle persist across all three frames; RTN removes...",
+   "[body] ...3.5473 0.2637 RTN [ wan2022bringing ] 0.4220 46.8737 0.2661 0.4441 58.4585 0.3321 MambaOFR [ mao2025making ] 0.4190 47.2436 0.2777 0.4402 57.3551 0.3210 DART (Ours) 0.4334 51.2304 0.3011 0.4488 59.4263 0.3427 Qualitative results. Figure \u02dc 3 tracks three consecutive frames from an archival newsreel clip. BasicVSR++ and MambaOFR leave the emulsion out of focus and lets speckle persist across all three frames; RTN removes some noise but leaves faint vertical scratch tracks; DART alone produces a stable, sharp, and temporally consistent reconstruction. Figure \u02dc 4 extends the comparison t..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:23",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "RAFT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "DART builds on RAFT.",
+  "contexts": [
+   "[body] ...sistent margins throughout this section. On the synthetic proxy set, standard full-reference PSNR, SSIM [ wang2004image ] , and LPIPS [ zhang2018unreasonable ] are reported for ablation studies. Implementation. DART is implemented in PyTorch and trained on two NVIDIA A100 GPUs with FP16 mixed precision, using a frozen RAFT [ teed2020raft ] flow estimator. Table \u02dc 1 lists the remaining training settings and loss weights. Every competing architecture in Sec. \u02dc 4.2 is retrained from scratch on identical data using its own published hyperparameters, so all comparisons in this section share a common training source and evaluation protocol. 4.2 Comparison wi...",
+   "[body] ...throughout this section. On the synthetic proxy set, standard full-reference PSNR, SSIM [ wang2004image ] , and LPIPS [ zhang2018unreasonable ] are reported for ablation studies. Implementation. DART is implemented in PyTorch and trained on two NVIDIA A100 GPUs with FP16 mixed precision, using a frozen RAFT [ teed2020raft ] flow estimator. Table \u02dc 1 lists the remaining training settings and loss weights. Every competing architecture in Sec. \u02dc 4.2 is retrained from scratch on identical data using its own published hyperparameters, so all comparisons in this section share a common training source and evaluation protocol. 4.2 Comparison with State of the..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:24",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "REDS",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DART is evaluated on REDS.",
+  "contexts": [
+   "[body] ...p / batch 7 frames / 256 \u00d7 256 256{\\times}256 / 1 clip Precision FP16 (mixed) \u03bb r \u200b e \u200b c , \u03bb a \u200b d \u200b v , \u03bb m \u200b a \u200b s \u200b k , \u03bb d \u200b i \u200b c \u200b e \\lambda_{rec},\\lambda_{adv},\\lambda_{mask},\\lambda_{dice} 1.0 , 0.01 , 0.5 , 0.5 1.0,\\ 0.01,\\ 0.5,\\ 0.5 4.1 Datasets, Metrics, and Implementation Training data. DART is trained on REDS [ Nah_2019_CVPR_Workshops_REDS ] train_sharp (720p, 24 fps). During training, a synthetic degradation pipeline, adapted from AbsoluteDegradation [ absolutedegradation_eval_2026 ] , generates training pairs online, yielding for each 256 \u00d7 256 256\\times 256 crop a ground-truth sharp frame, a synthetically degraded version of it, and a...",
+   "[body] ...256{\\times}256 / 1 clip Precision FP16 (mixed) \u03bb r \u200b e \u200b c , \u03bb a \u200b d \u200b v , \u03bb m \u200b a \u200b s \u200b k , \u03bb d \u200b i \u200b c \u200b e \\lambda_{rec},\\lambda_{adv},\\lambda_{mask},\\lambda_{dice} 1.0 , 0.01 , 0.5 , 0.5 1.0,\\ 0.01,\\ 0.5,\\ 0.5 4.1 Datasets, Metrics, and Implementation Training data. DART is trained on REDS [ Nah_2019_CVPR_Workshops_REDS ] train_sharp (720p, 24 fps). During training, a synthetic degradation pipeline, adapted from AbsoluteDegradation [ absolutedegradation_eval_2026 ] , generates training pairs online, yielding for each 256 \u00d7 256 256\\times 256 crop a ground-truth sharp frame, a synthetically degraded version of it, and a continuous artifact mask: the m...",
+   "[body] ...rame, a synthetically degraded version of it, and a continuous artifact mask: the mask outlines exactly where the synthetic defects were applied and undergoes the same degradation as the degraded frame itself. This mask provides the supervision target for \u2112 m \u200b a \u200b s \u200b k \\mathcal{L}_{mask} ( Eq. \u02dc 9 ). The official 30 REDS val_sharp clips are reserved as a synthetic, full-reference proxy test set, used only for the ablation study in Sec. \u02dc 4.4 . Real-world evaluation. No clean references exist for genuine archival footage, so evaluation on real data is necessarily no-reference. AbsoluteDegradation [ absolutedegradation_eval_2026 ] , a 13,252-frame, los..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:25",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "RTN",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "DART compares to RTN.",
+  "contexts": [
+   "[body] ...rameters, so all comparisons in this section share a common training source and evaluation protocol. 4.2 Comparison with State of the Art Quantitative results. Table \u02dc 2 compares DART against BasicVSR [ chan2021basicvsr ] , BasicVSR++ [ chan2022basicvsrpp ] , ShiftNet [ li2023simple ] , DeepRemaster [ deepremaster ] , RTN [ wan2022bringing ] , and MambaOFR [ mao2025making ] , all retrained on identical data. DART outperforms all baselines on every metric on AbsoluteDegradation. On SRWOV it remains the best on MUSIQ and MANIQA, the two metrics that correlate most closely with human perceptual judgment, and is edged out only on CLIPIQA+, where ShiftNet s...",
+   "[body] ...entical data. DART outperforms all baselines on every metric on AbsoluteDegradation. On SRWOV it remains the best on MUSIQ and MANIQA, the two metrics that correlate most closely with human perceptual judgment, and is edged out only on CLIPIQA+, where ShiftNet scores narrowly higher (0.458 vs. 0.449). DART outperforms RTN, the architecture whose Swin restoration backbone it shares, on every metric across both datasets; therefore, this consistent margin isolates what the degradation-aware additions themselves contribute, rather than reflecting a larger or differently-trained network. Table 2 : Quantitative comparison of restoration architectures, all tr...",
+   "[body] ...9 0.3890 42.8591 0.2307 BasicVSR [ chan2021basicvsr ] 0.4049 49.5797 0.2844 0.4086 57.6442 0.3104 BasicVSR++ [ chan2022basicvsrpp ] 0.3685 42.9144 0.2375 0.4428 58.0442 0.3231 ShiftNet [ li2023simple ] 0.4309 46.7724 0.2764 0.4578 57.9334 0.3336 DeepRemaster [ deepremaster ] 0.3574 44.7540 0.2542 0.3722 53.5473 0.2637 RTN [ wan2022bringing ] 0.4220 46.8737 0.2661 0.4441 58.4585 0.3321 MambaOFR [ mao2025making ] 0.4190 47.2436 0.2777 0.4402 57.3551 0.3210 DART (Ours) 0.4334 51.2304 0.3011 0.4488 59.4263 0.3427 Qualitative results. Figure \u02dc 3 tracks three consecutive frames from an archival newsreel clip. BasicVSR++ and MambaOFR leave the emulsion out of..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:26",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "SRWOV",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "DART is evaluated on SRWOV.",
+  "contexts": [
+   "[body] ...in Sec. \u02dc 4.4 . Real-world evaluation. No clean references exist for genuine archival footage, so evaluation on real data is necessarily no-reference. AbsoluteDegradation [ absolutedegradation_eval_2026 ] , a 13,252-frame, lossless-PNG corpus of public-domain archival footage (1896\u20131918), is the primary target domain; SRWOV [ mao2025making ] , 216 lower-resolution, JPEG-compressed real-world clips, serves as a secondary benchmark. Metrics. Real-footage quality is scored with three no-reference metrics: CLIPIQA+ [ wang2023exploring ] for general naturalness and perceptual alignment, and MUSIQ [ ke2021musiq ] and MANIQA [ yang2022maniqa ] , which correla...",
+   "[body] ...\u02dc 2 compares DART against BasicVSR [ chan2021basicvsr ] , BasicVSR++ [ chan2022basicvsrpp ] , ShiftNet [ li2023simple ] , DeepRemaster [ deepremaster ] , RTN [ wan2022bringing ] , and MambaOFR [ mao2025making ] , all retrained on identical data. DART outperforms all baselines on every metric on AbsoluteDegradation. On SRWOV it remains the best on MUSIQ and MANIQA, the two metrics that correlate most closely with human perceptual judgment, and is edged out only on CLIPIQA+, where ShiftNet scores narrowly higher (0.458 vs. 0.449). DART outperforms RTN, the architecture whose Swin restoration backbone it shares, on every metric across both datasets; there...",
+   "[body] ...efore, this consistent margin isolates what the degradation-aware additions themselves contribute, rather than reflecting a larger or differently-trained network. Table 2 : Quantitative comparison of restoration architectures, all trained on the AbsoluteDegradation pipeline and evaluated on the AbsoluteDegradation and SRWOV [ mao2025making ] datasets. Bold marks the best score, and underline marks the second best, in each metric column. The input frames row denotes the unrestored degraded footage and serves as a reference floor. AbsoluteDegradation Dataset SRWOV Dataset Model CLIPIQA+ \u2191 \\uparrow MUSIQ \u2191 \\uparrow MANIQA \u2191 \\uparrow CLIPIQA+ \u2191 \\uparrow MU..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:27",
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "object": "ShiftNet",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "DART compares to ShiftNet.",
+  "contexts": [
+   "[body] ...om scratch on identical data using its own published hyperparameters, so all comparisons in this section share a common training source and evaluation protocol. 4.2 Comparison with State of the Art Quantitative results. Table \u02dc 2 compares DART against BasicVSR [ chan2021basicvsr ] , BasicVSR++ [ chan2022basicvsrpp ] , ShiftNet [ li2023simple ] , DeepRemaster [ deepremaster ] , RTN [ wan2022bringing ] , and MambaOFR [ mao2025making ] , all retrained on identical data. DART outperforms all baselines on every metric on AbsoluteDegradation. On SRWOV it remains the best on MUSIQ and MANIQA, the two metrics that correlate most closely with human perceptual j...",
+   "[body] ...022bringing ] , and MambaOFR [ mao2025making ] , all retrained on identical data. DART outperforms all baselines on every metric on AbsoluteDegradation. On SRWOV it remains the best on MUSIQ and MANIQA, the two metrics that correlate most closely with human perceptual judgment, and is edged out only on CLIPIQA+, where ShiftNet scores narrowly higher (0.458 vs. 0.449). DART outperforms RTN, the architecture whose Swin restoration backbone it shares, on every metric across both datasets; therefore, this consistent margin isolates what the degradation-aware additions themselves contribute, rather than reflecting a larger or differently-trained network. Ta...",
+   "[body] ...CLIPIQA+ \u2191 \\uparrow MUSIQ \u2191 \\uparrow MANIQA \u2191 \\uparrow CLIPIQA+ \u2191 \\uparrow MUSIQ \u2191 \\uparrow MANIQA \u2191 \\uparrow Input frames 0.2483 26.8418 0.1619 0.3890 42.8591 0.2307 BasicVSR [ chan2021basicvsr ] 0.4049 49.5797 0.2844 0.4086 57.6442 0.3104 BasicVSR++ [ chan2022basicvsrpp ] 0.3685 42.9144 0.2375 0.4428 58.0442 0.3231 ShiftNet [ li2023simple ] 0.4309 46.7724 0.2764 0.4578 57.9334 0.3336 DeepRemaster [ deepremaster ] 0.3574 44.7540 0.2542 0.3722 53.5473 0.2637 RTN [ wan2022bringing ] 0.4220 46.8737 0.2661 0.4441 58.4585 0.3321 MambaOFR [ mao2025making ] 0.4190 47.2436 0.2777 0.4402 57.3551 0.3210 DART (Ours) 0.4334 51.2304 0.3011 0.4488 59.4263 0.3427 Q..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:28",
+  "page": "arxiv:2607.21231v1",
+  "subject": "Progressive",
+  "object": "Llama 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Progressive builds on Llama 3.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:29",
+  "page": "arxiv:2607.21231v1",
+  "subject": "Progressive",
+  "object": "Llama 3.2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Progressive builds on Llama 3.2.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:30",
+  "page": "arxiv:2607.21268v1",
+  "subject": "Econ",
+  "object": "T5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Econ builds on T5.",
+  "contexts": [
+   "[body] ...comparison. Failure Overall Task Preferred Gap Full Base Full Base Diff. T1 Human capital Base 1.50 1.80 1.40 2.50 3.00 \u2212 0.50 -0.50 T2 Drug procurement Full 1.00 1.20 1.80 3.00 2.50 + 0.50 +0.50 T3 Nutrition DSGE Full 1.50 1.10 1.50 3.00 2.50 + 0.50 +0.50 T4 Nutrition label Full 2.50 0.70 1.40 4.00 2.50 + 1.50 +1.50 T5 Agri-food DSGE Full 1.50 1.00 1.80 3.00 2.50 + 0.50 +0.50 Mean (Full in 4/5) \u2013 1.60 1.16 1.58 3.10 2.60 + 0.50 +0.50 Table 3: Task-level results. Failure is the mean of F1\u2013F5 across evaluators (lower better); Overall is the mean holistic-usefulness rating (higher better); Gap is the mean pairwise preference magnitude on a 0\u20133 scale; Di..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:31",
+  "page": "arxiv:2607.21273v1",
+  "subject": "The",
+  "object": "AlFWorld",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The is evaluated on AlFWorld.",
+  "contexts": [
+   "[abstract] ...Dense per-step supervision is an appealing remedy for sparse-reward, long-horizon LLM agents: reward the agent for predicting its next observation, and memory should follow. We show that under group-normalized RL (GRPO), this recipe does not merely fail -- it destroys the policy. Across Qwen3-1.7B/4B/8B on ALFWorld, a potential-based prediction reward drives every run into a degenerate absorbing state (prediction accuracy -&gt; 1.0, task success -&gt; 0,episode length pinned at the horizon): the \"dark room\" pathology, built automatically by the optimizer. A single-factor ablation localizes the cause -- removing only GRPO's std normalization..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:32",
+  "page": "arxiv:2607.21273v1",
+  "subject": "The",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The builds on GRPO.",
+  "contexts": [
+   "[body] ...ost \u03bb \\lambda \u2014exactly the guarantee the shaping literature asks for\u2014and yet every run collapses. The root cause lives one level below returns, in the advantage estimator. Sparse success makes all-fail groups common, and inside an all-fail group the only within-group variation is the \u03b5 \\varepsilon -scale shaping term; GRPO\u2019s z-scoring divides by the group\u2019s own standard deviation, so the normalized advantage is invariant to the shaping coefficient (Proposition 1 )\u2014bounded rewards become full-scale pressure, and no dose reduction short of zero changes the update. This observation generalizes into the organizing principle of the paper, a variance-profile...",
+   "[body] ...tion accuracy 1.0 1.0 , horizon-pinned length, success 0 ); post-collapse entropy rebound tracking reference-model entropy (a KL-pullback signature); and irreversibility under two interventions. 2. Causal localization with theory. A single-factor rescue (the collapsed and rescued arms differ only in norm_adv_by_std_in_grpo ; 0% \u2192 \\to 51.6%), explained by the \u03bb \\lambda -invariance of all-fail-group advantages (Proposition 1 ); the same algebra shows why annealing fails. Our shaping is policy-dependent, so Ng-style invariance (Ng et al., 1999 ) never applied. 3. Variance-profile criterion. A signal-side safety rule (Proposition 2 ) with three retrodictio...",
+   "[body] ...basin. The advantage fingerprint makes the amplification visible: all-fail-group advantages reach \u00b1 5 \\pm 5 \u2013 7 7 under std normalization versus the honest \u00b1 0.1 \\pm 0.1 scale ( = \u03bb =\\lambda ) without it. 4.3 Analysis: bounded returns, unbounded advantages Let a group contain G G trajectories with returns R i R_{i} ; GRPO\u2019s normalized advantage and our per-step shaping reward are A ^ i = R i \u2212 R \u00af \u03c3 R + \u03f5 , r pred \u200b ( t ) = \u03bb \u200b ( \u03a6 t \u2212 \u03a6 t \u2212 1 ) , \\hat{A}_{i}\\;=\\;\\frac{R_{i}-\\bar{R}}{\\sigma_{R}+\\epsilon},\\qquad r_{\\mathrm{pred}}(t)\\;=\\;\\lambda\\,\\bigl(\\Phi_{t}-\\Phi_{t-1}\\bigr), (1) where \u03a6 t \u2208 [ 0 , 1 ] \\Phi_{t}\\in[0,1] scores the policy\u2019s own predicti..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:33",
+  "page": "arxiv:2607.21274v1",
+  "subject": "Comparative",
+  "object": "BERT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Comparative builds on BERT.",
+  "contexts": [
+   "[body] ...(Lexical) okapi-BM25 0.567 0.721 0.788 0.808 0.622 0.537 0.544 0.567 0.652 0.452 Greek-Specific Dense (Semantic) Models. Values reported for (model/model*). Sorted by ndcg@9. xlm-r 0.423 /0.385 0.519 /0.490 0.577 /0.558 0.673/ 0.683 0.518 /0.504 0.370 /0.350 0.372 /0.354 0.403 /0.388 0.487 /0.460 0.289 /0.258 st-Greek-BERT 0.192/0.202 0.346/0.375 0.500/0.471 0.606/0.558 0.379/0.375 0.178/0.181 0.203/0.201 0.226/0.222 0.305/0.304 0.155/0.151 Multilingual Dense (Semantic) Models. Values reported for (model/model*). Sorted by ndcg@9. nemotron 0.606/ 0.663 0.721/0.798 0.827/0.894 0.865/0.923 0.650/ 0.690 0.517/0.555 0.534/ 0.582 0.571/ 0.619 0.684/ 0.748 0..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:34",
+  "page": "arxiv:2607.21274v1",
+  "subject": "Comparative",
+  "object": "CUP",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Comparative is evaluated on CUP.",
+  "contexts": [
+   "[body] ...1 Introduction 2 Related Work 3 Dataset &amp; Benchmark 4 Evaluation 5 Conclusion and Future Work References License: CC BY 4.0 arXiv:2607.21274v1 [cs.CL] 23 Jul 2026 A Comparative Evaluation of Embeddings and LLMs in a Greek Book Publisher Setting \u2013 The CUP Dataset Katerina Papantoniou ICS-FORTH Heraklion Greece papanton@ics.forth.gr , Panagiotis Papadakos ICS-FORTH Heraklion Greece papadako@ics.forth.gr , Theodore Patkos ICS-FORTH Heraklion Greece patkos@ics.forth.gr , Dimitris Garefalakis Crete University Press Heraklion Greece garefalakis@cup.gr , Nikos Vardakis Crete University Press...",
+   "[body] ...k Publisher Setting \u2013 The CUP Dataset Katerina Papantoniou ICS-FORTH Heraklion Greece papanton@ics.forth.gr , Panagiotis Papadakos ICS-FORTH Heraklion Greece papadako@ics.forth.gr , Theodore Patkos ICS-FORTH Heraklion Greece patkos@ics.forth.gr , Dimitris Garefalakis Crete University Press Heraklion Greece garefalakis@cup.gr , Nikos Vardakis Crete University Press Heraklion Greece vardakis@cup.gr and Dimitris Plexousakis ICS-FORTH Heraklion Greece dp@ics.forth.gr University of Crete, Computer Science Department, Heraklion, Greece Abstract. We present CUP, a Greek book retrieval benchmark consisting of 868 catalog records and 104 expert-annotated querie...",
+   "[body] ...klion Greece papanton@ics.forth.gr , Panagiotis Papadakos ICS-FORTH Heraklion Greece papadako@ics.forth.gr , Theodore Patkos ICS-FORTH Heraklion Greece patkos@ics.forth.gr , Dimitris Garefalakis Crete University Press Heraklion Greece garefalakis@cup.gr , Nikos Vardakis Crete University Press Heraklion Greece vardakis@cup.gr and Dimitris Plexousakis ICS-FORTH Heraklion Greece dp@ics.forth.gr University of Crete, Computer Science Department, Heraklion, Greece Abstract. We present CUP, a Greek book retrieval benchmark consisting of 868 catalog records and 104 expert-annotated queries with graded relevance judgments. We evaluate sparse (BM25), dense (sent..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:35",
+  "page": "arxiv:2607.21274v1",
+  "subject": "Comparative",
+  "object": "Llama",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Comparative builds on Llama.",
+  "contexts": [
+   "[body] ...97 0.464 0.467 0.494 0.652 0.376 Results over the LLM-based summarized TOC field using s 0.4 + (d1 0.6 + d2 0.4 ) 0.6 hybrid model. Sorted by ndcg@9. EuroLLM-9B-Instruct-2512 0.558 0.712 0.827 0.865 0.621 0.510 0.508 0.530 0.652 0.383 Meltemi-7B-Instruct-v1.5 0.587 0.750 0.798 0.913 0.628 0.513 0.502 0.539 0.679 0.405 Llama-Krikri-8B-Instruct 0.548 0.663 0.788 0.827 0.608 0.472 0.495 0.528 0.623 0.389 Qwen3-8B 0.519 0.654 0.779 0.817 0.586 0.470 0.475 0.486 0.606 0.368 Deepseek-r1-qwen3-8b 0.577 0.673 0.788 0.856 0.591 0.460 0.463 0.491 0.648 0.350 base TOC 0.404 0.490 0.635 0.712 0.475 0.327 0.335 0.361 0.475 0.259 LLM-based post-filtering and reranki...",
+   "[body] ...ost-filtering and reranking using s 0.4 + (d1 0.6 + d2 0.4 ) 0.6 hybrid model. Sorted by ndcg@9. Qwen3-8B 0.750 0.885 0.913 - 0.711 0.687 0.666 0.650 0.821 0.558 DeepSeek-R1-Qwen3-8B 0.712 0.875 0.904 - 0.636 0.636 0.620 0.606 0.791 0.499 EuroLLM-9B-Instruct-2512 0.692 0.827 0.865 - 0.626 0.632 0.598 0.584 0.765 0.505 Llama-Krikri-8B-Instruct 0.740 0.856 0.865 - 0.636 0.653 0.595 0.581 0.793 0.505 Meltemi-7B-Instruct-v1.5 0.077 0.077 0.077 - 0.060 0.052 0.043 0.042 0.077 0.034 Table 2 . Results for sparse, dense models, hybrid fusion methods, and LLM-based summarization and reranking. 4. Evaluation We construct sparse and dense representations over fiv..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:36",
+  "page": "arxiv:2607.21274v1",
+  "subject": "Comparative",
+  "object": "Qwen",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Comparative builds on Qwen.",
+  "contexts": [
+   "[body] ....517/0.555 0.534/ 0.582 0.571/ 0.619 0.684/ 0.748 0.411/0.465 nomic 0.654/0.635 0.798/ 0.817 0.904 /0.865 0.923/0.923 0.682/0.686 0.566 /0.561 0.567/0.577 0.605/0.617 0.745/0.735 0.473 /0.469 bge-m3 0.596/0.606 0.712/0.788 0.875/0.894 0.933 /0.904 0.645/0.668 0.501/0.547 0.520/0.559 0.557/0.584 0.683/0.713 0.413/0.445 qwen-4B (prompt-based) 0.596 0.788 0.856 0.904 0.666 0.546 0.552 0.585 0.698 0.443 e5-large 0.596/0.529 0.721/0.750 0.846/0.885 0.933 /0.904 0.633/0.639 0.491/0.500 0.505/0.521 0.540/0.550 0.680/0.658 0.383/0.407 snowflake 0.577/0.577 0.740/0.740 0.894/0.894 0.913/0.913 0.646/0.639 0.506/0.484 0.520/0.525 0.561/0.548 0.688/0.678 0.429/0.4...",
+   "[body] ...9 0.491/0.500 0.505/0.521 0.540/0.550 0.680/0.658 0.383/0.407 snowflake 0.577/0.577 0.740/0.740 0.894/0.894 0.913/0.913 0.646/0.639 0.506/0.484 0.520/0.525 0.561/0.548 0.688/0.678 0.429/0.412 e5-base 0.452/0.529 0.673/0.673 0.798/0.779 0.827/0.827 0.561/0.585 0.395/0.436 0.424/0.443 0.455/0.482 0.575/0.617 0.313/0.365 qwen0.6B (prompt-based) 0.490 0.615 0.779 0.827 0.557 0.400 0.407 0.454 0.582 0.307 mpnet 0.433/0.404 0.529/0.519 0.587/0.615 0.683/0.673 0.509/0.503 0.374/0.357 0.363/0.361 0.390/0.385 0.494/0.482 0.271/0.269 minilm 0.385/0.375 0.510/0.481 0.606/0.519 0.692/0.625 0.480/0.469 0.336/0.328 0.325/0.305 0.354/0.345 0.463/0.435 0.245/0.227 dis...",
+   "[body] ...g s 0.4 + (d1 0.6 + d2 0.4 ) 0.6 hybrid model. Sorted by ndcg@9. EuroLLM-9B-Instruct-2512 0.558 0.712 0.827 0.865 0.621 0.510 0.508 0.530 0.652 0.383 Meltemi-7B-Instruct-v1.5 0.587 0.750 0.798 0.913 0.628 0.513 0.502 0.539 0.679 0.405 Llama-Krikri-8B-Instruct 0.548 0.663 0.788 0.827 0.608 0.472 0.495 0.528 0.623 0.389 Qwen3-8B 0.519 0.654 0.779 0.817 0.586 0.470 0.475 0.486 0.606 0.368 Deepseek-r1-qwen3-8b 0.577 0.673 0.788 0.856 0.591 0.460 0.463 0.491 0.648 0.350 base TOC 0.404 0.490 0.635 0.712 0.475 0.327 0.335 0.361 0.475 0.259 LLM-based post-filtering and reranking using s 0.4 + (d1 0.6 + d2 0.4 ) 0.6 hybrid model. Sorted by ndcg@9. Qwen3-8B 0.75..."
+  ]
+ },
+ {
+  "sid": "out_5.jsonl:37",
+  "page": "arxiv:2607.21284v1",
+  "subject": "LM",
+  "object": "Adam",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "LM builds on Adam.",
+  "contexts": [
+   "[body] ...show the distribution of subword token counts for HTML inputs, plaintext and JSON outputs in Figure \u02dc 2 . Figure 2: Distributions of subword token counts of the training data. We show HTML input counts (top), plaintext output counts (middle), and JSON output counts (bottom). 3.2 Training We train the model using 8-bit Adam (Kingma and Ba, 2017 ; Dettmers et al. , 2022 ) with a batch size of 1 1 , a learning rate of 4 \u200b e \u2212 5 4e^{-5} , and a weight decay of 0.01 0.01 . Training runs for 60k steps with a linear warmup over the first 1k steps, after which the learning rate decays linearly to zero. We select the best checkpoint based on validation perplexi..."
+  ]
+ }
+]

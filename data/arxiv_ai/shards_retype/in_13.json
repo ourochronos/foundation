@@ -1,0 +1,714 @@
+[
+ {
+  "sid": "out_g1.jsonl:1",
+  "page": "arxiv:2607.20909v1",
+  "subject": "RadioTrace",
+  "object": "BART-Lab",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "RadioTrace is evaluated on the BART-Lab dataset with finer-grained building layouts and intricate propagation characteristics.",
+  "contexts": [
+   "[body] ...T \\Omega_{T} IV Theoretical Analysis V Experiments V-A Dataset V-B Setup 1 1 1 The source code is available at https://github.com/YannLeo/RadioTrace V-B 1 Sampling modes V-B 2 Implementation Details V-B 3 Baselines V-C Metrics V-D Results of comparable experiments V-D 1 Results on RadioMapSeer dataset V-D 2 Results on BART-Lab dataset V-E Ablation Studies V-F Hyperparameter sensitivity V-F 1 Variance \u03c3 2 \\sigma^{2} of the Gaussian Tx map V-F 2 Momentum coefficient \u03b2 \\beta in GD V-G Results under noisy observations V-H Localization accuracy V-I Extreme low sampling rate performance V-J Runtime and complexity V-K Scalability V-L Empirical Behavior of Tx...",
+   "[body] ...-consistent starting point. Moreover, we provide a stochastic stability analysis for the Tx-coordinate refinement component, showing that the Tx update remains stable under perturbations [...] Experiments V-A Dataset In this study, we evaluate the performance of the proposed method using the RadioMapSeer [ 7 ] and the BART-Lab dataset [ 20 ] . The RadioMapSeer dataset contains 700 building maps, each with 80 Tx locations. These building maps cover major cities such as Ankara, Berlin, and so on. The heights of Tx, receivers, and buildings are defined as 1.5 meters (m), 1.5 m, and 25 m, respectively. The Tx power is set to 23 dBm, and the carrier frequen...",
+   "[body] ...t Tx selections from the same building, converting the composite back to dBm. To ensure a controlled comparison and isolate geometric/propagation effects, we set all Tx to the same power (23 dBm) when composing multi-Tx scenes; thus, variation arises from layout and occlusions rather than per-Tx power differences. The BART-Lab is a more challenging dataset than RadioMapSeer, due to its finer-grained building layouts and more intricate propagation characteristics. The dataset is generated using Altair Feko over regions in the United States, where the environmental maps are obtained from OpenStreetMap. In each scenario, buildings are modeled with a heigh..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:2",
+  "page": "arxiv:2607.20909v1",
+  "subject": "RadioTrace",
+  "object": "RadioDiff",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "RadioTrace adopts the pre-trained measurement-free RM generation model provided by RadioDiff without additional fine-tuning.",
+  "contexts": [
+   "[body] ...across the accessible area. Restricted-area sampling is much more challenging than random sampling case, especially when there exists Tx inside the restricted areas. V-B 2 Implementation Details For the diffusion-based measurement-free RM generation model used in RadioTrace, we adopt the pre-trained model provided by RadioDiff [ 15 ] , without any additional fine-tuning or retraining. The RadioDiff backbone comprises a U-Net core [ 11 ] with approximately 137M parameters and a Swin-Transformer\u2013based conditional embedding network [ 8 ] with about 87M parameters. The reverse denoising process is performed with T = 100 T=100 steps. For the Tx map generat...",
+   "[body] ...nging than random sampling case, especially when there exists Tx inside the restricted areas. V-B 2 Implementation Details For the diffusion-based measurement-free RM generation model used in RadioTrace, we adopt the pre-trained model provided by RadioDiff [ 15 ] , without any additional fine-tuning or retraining. The RadioDiff backbone comprises a U-Net core [ 11 ] with approximately 137M parameters and a Swin-Transformer\u2013based conditional embedding network [ 8 ] with about 87M parameters. The reverse denoising process is performed with T = 100 T=100 steps. For the Tx map generation, we set the standard deviation of the Gaussian kernel to \u03c3 = 10 \\sigm..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:3",
+  "page": "arxiv:2607.20909v1",
+  "subject": "RadioTrace",
+  "object": "Kriging",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "RadioTrace compares against Kriging, which formulates RM estimation as spatial interpolation from sparse RSS samples.",
+  "contexts": [
+   "[body] ...\u03ba = 0.8 \\kappa=0.8 . The max iterations of PG-KMeans L max = 10 L_{\\max}=10 . The Tx coordinate set before PG-KMeans is initialized by selecting the R R locations with the highest RSS values. V-B 3 Baselines To better contextualize the reported gains, we briefly introduce the main baselines used in our experiments. \u2022 Kriging [ 10 ] formulates RM estimation as spatial interpolation from sparse RSS samples via a hand-crafted covariance model. It does not use Tx locations or learned generative priors. \u2022 RME-GAN [ 21 ] is a supervised..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:4",
+  "page": "arxiv:2607.20909v1",
+  "subject": "RadioTrace",
+  "object": "RME-GAN",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "RadioTrace is compared to RME-GAN, a supervised baseline for radio map estimation.",
+  "contexts": [
+   "[body] ...lues. V-B 3 Baselines To better contextualize the reported gains, we briefly introduce the main baselines used in our experiments. \u2022 Kriging [ 10 ] formulates RM estimation as spatial interpolation from sparse RSS samples via a hand-crafted covariance model. It does not use Tx locations or learned generative priors. \u2022 RME-GAN [ 21 ] is a supervised..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:5",
+  "page": "arxiv:2607.20911v1",
+  "subject": "WorkBuddy Bench",
+  "object": "SWE-bench",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "WorkBuddy Bench addresses limitations of SWE-bench, which fixes task sets at release time and is exposed to web-searchable contamination.",
+  "contexts": [
+   "[body] ...the four tracks \u2013 Code, Web, Office, and Security \u2013 share one open task-directory format (center); every task is scored in an isolated sandbox under two agent harnesses (right). Coding agents are weighed today against two very different kinds of benchmark, each with a different trade-off. Static, public suites such as SWE-bench and SWE-bench Verified [ 1 , 2 ] fix a task set at release time: their problem statements, and often their solutions, circulate openly on the web, so a rising score can reflect memorization of a specific issue thread or pull request rather than genuine repository-level reasoning, and their scope is narrow \u2013 overwhelmingly single...",
+   "[body] ...s \u2013 Code, Web, Office, and Security \u2013 share one open task-directory format (center); every task is scored in an isolated sandbox under two agent harnesses (right). Coding agents are weighed today against two very different kinds of benchmark, each with a different trade-off. Static, public suites such as SWE-bench and SWE-bench Verified [ 1 , 2 ] fix a task set at release time: their problem statements, and often their solutions, circulate openly on the web, so a rising score can reflect memorization of a specific issue thread or pull request rather than genuine repository-level reasoning, and their scope is narrow \u2013 overwhelmingly single-issue bug res..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:6",
+  "page": "arxiv:2607.20911v1",
+  "subject": "WorkBuddy Bench",
+  "object": "SWE-bench Verified",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "WorkBuddy Bench is positioned against SWE-bench Verified as an existing public coding-agent benchmark.",
+  "contexts": [
+   "[body] ...s \u2013 Code, Web, Office, and Security \u2013 share one open task-directory format (center); every task is scored in an isolated sandbox under two agent harnesses (right). Coding agents are weighed today against two very different kinds of benchmark, each with a different trade-off. Static, public suites such as SWE-bench and SWE-bench Verified [ 1 , 2 ] fix a task set at release time: their problem statements, and often their solutions, circulate openly on the web, so a rising score can reflect memorization of a specific issue thread or pull request rather than genuine repository-level reasoning, and their scope is narrow \u2013 overwhelmingly single-issue bug res..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:7",
+  "page": "arxiv:2607.20911v1",
+  "subject": "WorkBuddy Bench",
+  "object": "CursorBench",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "WorkBuddy Bench addresses the closed-benchmark trade-off exemplified by CursorBench, a vendor production benchmark.",
+  "contexts": [
+   "[body] ...l reasoning, and their scope is narrow \u2013 overwhelmingly single-issue bug resolution. The same crawlability problem holds beyond code: benchmarks for front-end generation [ 3 ] and web agents [ 4 ] draw on public repositories, screenshots, and websites that are themselves crawlable. Vendor production benchmarks such as CursorBench [ 5 ] take the opposite approach, drawing tasks from real production sessions so that the task distribution tracks how an agent is actually used \u2013 but the benchmark itself is closed: an external party cannot inspect its task distribution, rule out selection bias toward the vendor\u2019s own agent, or confirm that its task mix gener..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:8",
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation method",
+  "object": "Stable Diffusion 1.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The method fine-tunes Stable Diffusion 1.5 for new domains including WikiArt, Cyberpunk, and Anime.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:9",
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation method",
+  "object": "Stable Diffusion 3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The method fine-tunes Stable Diffusion 3 for the Pokemon domain with varying parameter budgets.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:10",
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation method",
+  "object": "LoRA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "The method compares against LoRA as a representative low-rank adaptation baseline.",
+  "contexts": [
+   "[body] ...et/50k source) protocol, where available. The Trade-off is computed within each dataset and each parameter group. WikiArt (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 47.62 28.67 18.71 31.46 1.07 DoRA (r=8) 46.33 28.61 18.85 31.47 1.05 SaRA 54.61 28.94 18.48 31.46 1.21 Linear-Only 45.03 28.59 19.20 31.50 1.04 21.4M LoRA 40.45 28.08 18.93 31.39 2.41 DoRA 39.46 28.03 18.70 31.28 2.32 SaRA 25.59 27.28 33.16 29.36 2.67 Linear-Only 17.15 26.86 18.52 31.25 1.00 All-Layers 30.81 27.63 19.13 31.38 1...",
+   "[body] ...(\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 47.62 28.67 18.71 31.46 1.07 DoRA (r=8) 46.33 28.61 18.85 31.47 1.05 SaRA 54.61 28.94 18.48 31.46 1.21 Linear-Only 45.03 28.59 19.20 31.50 1.04 21.4M LoRA 40.45 28.08 18.93 31.39 2.41 DoRA 39.46 28.03 18.70 31.28 2.32 SaRA 25.59 27.28 33.16 29.36 2.67 Linear-Only 17.15 26.86 18.52 31.25 1.00 All-Layers 30.81 27.63 19.13 31.38 1.86 50M LoRA 32.36 27.76 18.65 30.85 1.84 DoRA 33.08 27.78 18.92 30.70 1.91 SaRA 17.55 27.27 55.71 27.12 2.99 All-Layers 22.24 27.12 22.81 30.98 1.55 Anime (SD1....",
+   "[body] ...31.46 1.07 DoRA (r=8) 46.33 28.61 18.85 31.47 1.05 SaRA 54.61 28.94 18.48 31.46 1.21 Linear-Only 45.03 28.59 19.20 31.50 1.04 21.4M LoRA 40.45 28.08 18.93 31.39 2.41 DoRA 39.46 28.03 18.70 31.28 2.32 SaRA 25.59 27.28 33.16 29.36 2.67 Linear-Only 17.15 26.86 18.52 31.25 1.00 All-Layers 30.81 27.63 19.13 31.38 1.86 50M LoRA 32.36 27.76 18.65 30.85 1.84 DoRA 33.08 27.78 18.92 30.70 1.91 SaRA 17.55 27.27 55.71 27.12 2.99 All-Layers 22.24 27.12 22.81 30.98 1.55 Anime (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:11",
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation method",
+  "object": "DoRA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "The method compares against DoRA as a parameter-efficient fine-tuning baseline.",
+  "contexts": [
+   "[body] .... The Trade-off is computed within each dataset and each parameter group. WikiArt (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 47.62 28.67 18.71 31.46 1.07 DoRA (r=8) 46.33 28.61 18.85 31.47 1.05 SaRA 54.61 28.94 18.48 31.46 1.21 Linear-Only 45.03 28.59 19.20 31.50 1.04 21.4M LoRA 40.45 28.08 18.93 31.39 2.41 DoRA 39.46 28.03 18.70 31.28 2.32 SaRA 25.59 27.28 33.16 29.36 2.67 Linear-Only 17.15 26.86 18.52 31.25 1.00 All-Layers 30.81 27.63 19.13 31.38 1.86 50M LoRA 32.36 27.76 18.65 30.85 1.8...",
+   "[body] ...\u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 47.62 28.67 18.71 31.46 1.07 DoRA (r=8) 46.33 28.61 18.85 31.47 1.05 SaRA 54.61 28.94 18.48 31.46 1.21 Linear-Only 45.03 28.59 19.20 31.50 1.04 21.4M LoRA 40.45 28.08 18.93 31.39 2.41 DoRA 39.46 28.03 18.70 31.28 2.32 SaRA 25.59 27.28 33.16 29.36 2.67 Linear-Only 17.15 26.86 18.52 31.25 1.00 All-Layers 30.81 27.63 19.13 31.38 1.86 50M LoRA 32.36 27.76 18.65 30.85 1.84 DoRA 33.08 27.78 18.92 30.70 1.91 SaRA 17.55 27.27 55.71 27.12 2.99 All-Layers 22.24 27.12 22.81 30.98 1.55 Anime (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193...",
+   "[body] ...18.85 31.47 1.05 SaRA 54.61 28.94 18.48 31.46 1.21 Linear-Only 45.03 28.59 19.20 31.50 1.04 21.4M LoRA 40.45 28.08 18.93 31.39 2.41 DoRA 39.46 28.03 18.70 31.28 2.32 SaRA 25.59 27.28 33.16 29.36 2.67 Linear-Only 17.15 26.86 18.52 31.25 1.00 All-Layers 30.81 27.63 19.13 31.38 1.86 50M LoRA 32.36 27.76 18.65 30.85 1.84 DoRA 33.08 27.78 18.92 30.70 1.91 SaRA 17.55 27.27 55.71 27.12 2.99 All-Layers 22.24 27.12 22.81 30.98 1.55 Anime (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 63.44 24.36 19.94..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:12",
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation method",
+  "object": "SaRA",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "The method compares against SaRA as a sparse adaptation strategy baseline.",
+  "contexts": [
+   "[body] ...hould not be unnecessarily sacrificed during adaptation. Second, the model acquires strong target-specific capability for a desired domain or style. Thus, our aim is to achieve a trade-off between these two capabilities. \\begin{overpic}[width=403.26341pt]{images/Figure1.pdf} { \\put(76.0,41.3){~\\cite[cite]{[\\@@bibref{}{sara}{}{}]}} } \\end{overpic} Figure 1: All methods are fine-tuned on SD1.5 for the Pokemon and Wikiart domain with approximately 10M trainable parameters, and are then prompted using original COCO-style prompts rather than target-style prompts. \\begin{overpic}[width=346.89731pt]{images/Figure2.pdf} { \\par} \\end{overpic} Figure 2: Trade-of...",
+   "[body] ...dataset and each parameter group. WikiArt (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 47.62 28.67 18.71 31.46 1.07 DoRA (r=8) 46.33 28.61 18.85 31.47 1.05 SaRA 54.61 28.94 18.48 31.46 1.21 Linear-Only 45.03 28.59 19.20 31.50 1.04 21.4M LoRA 40.45 28.08 18.93 31.39 2.41 DoRA 39.46 28.03 18.70 31.28 2.32 SaRA 25.59 27.28 33.16 29.36 2.67 Linear-Only 17.15 26.86 18.52 31.25 1.00 All-Layers 30.81 27.63 19.13 31.38 1.86 50M LoRA 32.36 27.76 18.65 30.85 1.84 DoRA 33.08 27.78 18.92 30.70 1.91 SaRA...",
+   "[body] ...w sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 47.62 28.67 18.71 31.46 1.07 DoRA (r=8) 46.33 28.61 18.85 31.47 1.05 SaRA 54.61 28.94 18.48 31.46 1.21 Linear-Only 45.03 28.59 19.20 31.50 1.04 21.4M LoRA 40.45 28.08 18.93 31.39 2.41 DoRA 39.46 28.03 18.70 31.28 2.32 SaRA 25.59 27.28 33.16 29.36 2.67 Linear-Only 17.15 26.86 18.52 31.25 1.00 All-Layers 30.81 27.63 19.13 31.38 1.86 50M LoRA 32.36 27.76 18.65 30.85 1.84 DoRA 33.08 27.78 18.92 30.70 1.91 SaRA 17.55 27.27 55.71 27.12 2.99 All-Layers 22.24 27.12 22.81 30.98 1.55 Anime (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP (..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:13",
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation method",
+  "object": "WikiArt",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Fine-tuning and evaluation are conducted on the WikiArt domain using the quick and rigorous protocols.",
+  "contexts": [
+   "[body] ...et-specific capability for a desired domain or style. Thus, our aim is to achieve a trade-off between these two capabilities. \\begin{overpic}[width=403.26341pt]{images/Figure1.pdf} { \\put(76.0,41.3){~\\cite[cite]{[\\@@bibref{}{sara}{}{}]}} } \\end{overpic} Figure 1: All methods are fine-tuned on SD1.5 for the Pokemon and Wikiart domain with approximately 10M trainable parameters, and are then prompted using original COCO-style prompts rather than target-style prompts. \\begin{overpic}[width=346.89731pt]{images/Figure2.pdf} { \\par} \\end{overpic} Figure 2: Trade-off between target specialization and general capability retention on SD1.5 using the Pokemon qui...",
+   "[body] ...ng and making it difficult to form a concentrated and effective adaptation channel. 4 Experiments and Results Table 1: Comparisons on SD1.5 and SD3. All target/source metrics are reported using the (5k target/50k source) protocol, where available. The Trade-off is computed within each dataset and each parameter group. WikiArt (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 47.62 28.67 18.71 31.46 1.07 DoRA (r=8) 46.33 28.61 18.85 31.47 1.05 SaRA 54.61 28.94 18.48 31.46 1.21 Linear-Only 45.03 28...",
+   "[body] ...31.98 1.00 10M LoRA (r=16) 21.17 33.32 27.77 32.06 1.52 DoRA (r=16) 21.71 33.27 28.29 32.06 1.59 SaRA 48.97 32.48 47.69 30.66 6.03 Linear-Only 19.58 33.17 24.78 32.00 1.25 All-Layers 15.63 33.12 25.31 32.00 1.02 Experimental Setup. We conduct experiments on two diffusion backbones with distinct target-domain datasets: WikiArt , Cyberpunk , and Anime for SD1.5, and Pokemon for SD3. We compare against three representative parameter-efficient fine-tuning baselines, LoRA [ 15 ] , DoRA [ 27 ] , and SaRA [ 16 ] that together span the most widely used low-rank and sparse adaptation strategies for diffusion models. We evaluate target-domain adaptation with Ker..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:14",
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation method",
+  "object": "Cyberpunk",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Fine-tuning and evaluation are conducted on the Cyberpunk domain across parameter budgets.",
+  "contexts": [
+   "[body] ...23.35 20.64 31.37 1.35 DoRA 26.23 23.62 21.00 31.37 1.20 SaRA 30.41 23.50 90.70 28.24 6.00 Linear-Only 22.28 23.87 33.11 31.35 1.60 All-Layers 29.73 23.52 35.51 31.45 2.30 50M LoRA 34.90 23.84 21.68 31.32 1.53 DoRA 24.20 23.32 21.87 31.40 1.07 SaRA 38.06 24.24 180.93 22.19 13.95 All-Layers 22.77 23.61 87.20 30.70 4.02 Cyberpunk (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 10.98 35.34 20.97 31.48 1.49 DoRA (r=8) 11.22 35.41 21.53 31.51 1.56 SaRA 11.22 35.59 23.26 31.29 1.69 Linear-Only 7.37 3...",
+   "[body] ...10M LoRA (r=16) 21.17 33.32 27.77 32.06 1.52 DoRA (r=16) 21.71 33.27 28.29 32.06 1.59 SaRA 48.97 32.48 47.69 30.66 6.03 Linear-Only 19.58 33.17 24.78 32.00 1.25 All-Layers 15.63 33.12 25.31 32.00 1.02 Experimental Setup. We conduct experiments on two diffusion backbones with distinct target-domain datasets: WikiArt , Cyberpunk , and Anime for SD1.5, and Pokemon for SD3. We compare against three representative parameter-efficient fine-tuning baselines, LoRA [ 15 ] , DoRA [ 27 ] , and SaRA [ 16 ] that together span the most widely used low-rank and sparse adaptation strategies for diffusion models. We evaluate target-domain adaptation with Kernel Incept..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:15",
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation method",
+  "object": "Anime",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Fine-tuning and evaluation are conducted on the Anime domain with different parameter configurations.",
+  "contexts": [
+   "[body] ...5 28.08 18.93 31.39 2.41 DoRA 39.46 28.03 18.70 31.28 2.32 SaRA 25.59 27.28 33.16 29.36 2.67 Linear-Only 17.15 26.86 18.52 31.25 1.00 All-Layers 30.81 27.63 19.13 31.38 1.86 50M LoRA 32.36 27.76 18.65 30.85 1.84 DoRA 33.08 27.78 18.92 30.70 1.91 SaRA 17.55 27.27 55.71 27.12 2.99 All-Layers 22.24 27.12 22.81 30.98 1.55 Anime (SD1.5) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 1.6M LoRA (r=8) 63.44 24.36 19.94 31.44 1.76 DoRA (r=8) 36.59 24.01 19.61 31.47 1.00 SaRA 41.44 23.32 27.44 31.30 1.58 Linear-Only 39.47 23.4...",
+   "[body] ...21.17 33.32 27.77 32.06 1.52 DoRA (r=16) 21.71 33.27 28.29 32.06 1.59 SaRA 48.97 32.48 47.69 30.66 6.03 Linear-Only 19.58 33.17 24.78 32.00 1.25 All-Layers 15.63 33.12 25.31 32.00 1.02 Experimental Setup. We conduct experiments on two diffusion backbones with distinct target-domain datasets: WikiArt , Cyberpunk , and Anime for SD1.5, and Pokemon for SD3. We compare against three representative parameter-efficient fine-tuning baselines, LoRA [ 15 ] , DoRA [ 27 ] , and SaRA [ 16 ] that together span the most widely used low-rank and sparse adaptation strategies for diffusion models. We evaluate target-domain adaptation with Kernel Inception Distance (KI..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:16",
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation method",
+  "object": "Pokemon",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Fine-tuning and evaluation are conducted on the Pokemon domain for both SD1.5 and SD3.",
+  "contexts": [
+   "[body] ...strong target-specific capability for a desired domain or style. Thus, our aim is to achieve a trade-off between these two capabilities. \\begin{overpic}[width=403.26341pt]{images/Figure1.pdf} { \\put(76.0,41.3){~\\cite[cite]{[\\@@bibref{}{sara}{}{}]}} } \\end{overpic} Figure 1: All methods are fine-tuned on SD1.5 for the Pokemon and Wikiart domain with approximately 10M trainable parameters, and are then prompted using original COCO-style prompts rather than target-style prompts. \\begin{overpic}[width=346.89731pt]{images/Figure2.pdf} { \\par} \\end{overpic} Figure 2: Trade-off between target specialization and general capability retention on SD1.5 using the...",
+   "[body] ...omain with approximately 10M trainable parameters, and are then prompted using original COCO-style prompts rather than target-style prompts. \\begin{overpic}[width=346.89731pt]{images/Figure2.pdf} { \\par} \\end{overpic} Figure 2: Trade-off between target specialization and general capability retention on SD1.5 using the Pokemon quick protocol. Existing finetuning methods still struggle to achieve a satisfactory balance between target adaptation and capability retention (Figs. 1 and 2 ). Low-rank adaptation methods and knowledge-aware singular-value adaptation improve parameter efficiency by constraining the update parameterizations [ 15 , 27 , 47 , 21 ,...",
+   "[body] ...10.23 35.74 22.40 31.43 1.41 DoRA 9.38 35.88 21.94 31.55 1.27 SaRA 10.29 35.73 30.65 30.72 1.95 Linear-Only 7.39 36.42 26.17 31.28 1.19 All-Layers 8.71 36.33 25.43 31.29 1.37 50M LoRA 9.76 35.90 22.56 31.38 1.04 DoRA 9.40 35.97 22.59 31.40 1.00 SaRA 10.71 35.67 40.75 29.93 2.06 All-Layers 10.25 36.24 30.00 31.01 1.45 Pokemon (SD3) Params Method tKID ( \u00d7 10 3 ) \u2193 (\\times 10^{3})\\downarrow tCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow sFID \u2193 \\downarrow sCLIP ( \u00d7 10 2 ) \u2191 (\\times 10^{2})\\uparrow Trade-off \u2193 \\downarrow 2.5M LoRA (r=4) 17.33 33.08 26.97 32.05 1.22 DoRA (r=4) 18.53 33.09 27.98 32.10 1.35 SaRA 18.25 33.52 24.58 31.95 1.17 Linear-Only 17.24 33.3..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:17",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "TRISHUL extends LoRA to federated settings using shared frozen multi-head low-rank bases.",
+  "contexts": [
+   "[body] ...Three-Pronged Spectral Control for Federated Parameter Efficient Fine Tuning Abstract I Introduction I-A Motivation and Challenges I-B Novelty and Contributions II Related Work II-A FL under Heterogeneity II-B PEFT in FL Settings II-C Spectral Regularization and LoRA II-D Resource Allocation in Federated Setting II-E Our Proposed Approach III Design Details of Proposed TRISHUL III-A Problem Formulation and Spectral-Control Objective III-B Multi-Head Low-Rank Parameterization III-B 1 Background: LoRA and Its Federated Limitation III-B 2 Exact Multi-Head Adaptation III-B 3 Initialization of Frozen...",
+   "[body] ...A FL under Heterogeneity II-B PEFT in FL Settings II-C Spectral Regularization and LoRA II-D Resource Allocation in Federated Setting II-E Our Proposed Approach III Design Details of Proposed TRISHUL III-A Problem Formulation and Spectral-Control Objective III-B Multi-Head Low-Rank Parameterization III-B 1 Background: LoRA and Its Federated Limitation III-B 2 Exact Multi-Head Adaptation III-B 3 Initialization of Frozen Bases III-B 4 Key Properties for Edge Federated Learning Exact aggregation. Handling computational heterogeneity Communication efficiency III-C Client-Side Optimization with Nuclear-Norm III-D Concave Water-Filling Head Allocation III-E...",
+   "[body] ...ils: {shiva.pokhrel@deakin.edu.au, s225219805@deakin.edu.au, aie13@columbia.edu} Abstract Federated parameter-efficient fine-tuning (PEFT) enables communication-efficient adaptation of large pretrained models on decentralized edge data, but it remains fragile under non-IID client heterogeneity. In low-rank adaptation (LoRA), different clients may learn locally useful but spectrally misaligned update subspaces, causing high-variance aggregation and poor global transfer. We propose TRISHUL , a spectral-control framework for robust federated PEFT. TRISHUL follows the FL no-raw-data-sharing setting but does not itself provide formal privacy guarantees. TRI..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:18",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "LLaMA 3.2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "TRISHUL is evaluated on LLaMA 3.2-1B as a base model for language benchmarks.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:19",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "CIFAR-100",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRISHUL is evaluated on CIFAR-100 for vision benchmark experiments.",
+  "contexts": [
+   "[body] ...ss layers using a concave water-filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity. 1 1 1 See Trishul Github for implementation details. I Introduction Large pretrained models have become the foundation of modern art...",
+   "[abstract] ...ss layers using a concave water filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity...."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:20",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "SVHN",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRISHUL is evaluated on SVHN for vision benchmark experiments.",
+  "contexts": [
+   "[body] ...sing a concave water-filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity. 1 1 1 See Trishul Github for implementation details. I Introduction Large pretrained models have become the foundation of modern artificial int...",
+   "[abstract] ...sing a concave water filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity...."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:21",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "20 Newsgroups",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRISHUL is evaluated on 20 Newsgroups for language benchmark experiments.",
+  "contexts": [
+   "[body] ...concave water-filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity. 1 1 1 See Trishul Github for implementation details. I Introduction Large pretrained models have become the foundation of modern artificial intellige...",
+   "[abstract] ...concave water filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity...."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:22",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "MRQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRISHUL is evaluated on MRQA for language benchmark experiments.",
+  "contexts": [
+   "[body] ...filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity. 1 1 1 See Trishul Github for implementation details. I Introduction Large pretrained models have become the foundation of modern artificial intelligence, but adapti...",
+   "[abstract] ...filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity...."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:23",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "GLUE",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TRISHUL is evaluated on GLUE with LLaMA 3.2-1B as the scaling benchmark.",
+  "contexts": [
+   "[body] ...cy Scope, and Deployment Considerations IV Experiments IV-A Experimental Setup IV-A 1 Datasets and Models IV-A 2 Federated Partitioning IV-A 3 Parameter Budget and Hyperparameter IV-A 4 Baseline implementation IV-B Main Results: Vision and Language IV-B 1 Vision and Language Benchmarks IV-B 2 Scaling to LLaMA3.2-1B on GLUE IV-C Ablation Studies and Analysis IV-C 1 Effect of Nuclear-Norm Regularization Effect of singular-value thresholding Direct spectral inconsistency analysis IV-C 2 Sensitivity to the Regularization Parameter \u03bb \\lambda Bias\u2013variance tradeoff of spectral shrinkage IV-C 3 Extreme Heterogeneity Spectral behavior under stronger heterogene...",
+   "[body] ...e water-filling budget rule derived from pretrained l [...] Experimental Setup IV-A 1 Datasets and Models IV-A 2 Federated Partitioning IV-A 3 Parameter Budget and Hyperparameter IV-A 4 Baseline implementation IV-B Main Results: Vision and Language IV-B 1 Vision and Language Benchmarks IV-B 2 Scaling to LLaMA3.2-1B on GLUE IV-C Ablation Studies and Analysis IV-C 1 Effect of Nuclear-Norm Regularization Effect of singular-value thresholding Direct spectral inconsistency analysis IV-C 2 Sensitivity to the Regularization Parameter \u03bb \\lambda Bias\u2013variance tradeoff of spectral shrinkage IV-C 3 Extreme Heterogeneity Spectral behavior under stronger heterogene...",
+   "[body] ...dget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity. 1 1 1 See Trishul Github for implementation details. I Introduction Large pretrained models have become the foundation of modern artificial intelligence, but adapting them ef..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:24",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "FedAvg",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRISHUL improves over FedAvg, a classical federated optimization method.",
+  "contexts": [
+   "[body] ...Client data distributions are inherently non-IID, reflecting diverse user behaviors, environments, and tasks. This heterogeneity induces statistically inconsistent local updates, which can interfere destructively during aggregation and degrade global model performance. Classical federated optimization methods such as FedAvg [ 20 ] , FedProx [ 16 ] and SCAFFOLD [ 13 ] attempt to mitigate this issue through gradient correction, proximal regularization, or normalized aggregation. However, these approaches operate primarily at the level of optimization dynamics and do not explicitly control the structure of parameter updates. The key problem is not only r..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:25",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "FedProx",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRISHUL is compared against FedProx, which uses proximal regularization for federated learning.",
+  "contexts": [
+   "[body] ...tributions are inherently non-IID, reflecting diverse user behaviors, environments, and tasks. This heterogeneity induces statistically inconsistent local updates, which can interfere destructively during aggregation and degrade global model performance. Classical federated optimization methods such as FedAvg [ 20 ] , FedProx [ 16 ] and SCAFFOLD [ 13 ] attempt to mitigate this issue through gradient correction, proximal regularization, or normalized aggregation. However, these approaches operate primarily at the level of optimization dynamics and do not explicitly control the structure of parameter updates. The key problem is not only reducing trainabl..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:26",
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "object": "SCAFFOLD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TRISHUL is compared against SCAFFOLD, which employs variance reduction for federated optimization.",
+  "contexts": [
+   "[body] ...rently non-IID, reflecting diverse user behaviors, environments, and tasks. This heterogeneity induces statistically inconsistent local updates, which can interfere destructively during aggregation and degrade global model performance. Classical federated optimization methods such as FedAvg [ 20 ] , FedProx [ 16 ] and SCAFFOLD [ 13 ] attempt to mitigate this issue through gradient correction, proximal regularization, or normalized aggregation. However, these approaches operate primarily at the level of optimization dynamics and do not explicitly control the structure of parameter updates. The key problem is not only reducing trainable parameters, but e..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:27",
+  "page": "arxiv:2607.20916v1",
+  "subject": "AIH-Infra",
+  "object": "Open WebUI",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "AIH-Infra Layer 2 (traceable knowledge base) extends Open WebUI for retrieval with page-level citation.",
+  "contexts": [
+   "[body] ...he three layers can be used, deployed, and evolved independently, connected by file formats and API protocols; explicit knowledge boundaries \u2014no unbounded retrieval; all retrieval must specify a knowledge scope. The following describes the three layers according to the actual versions as of June 2026 (Contexture v0.5, Open WebUI AIH-Infra v1.3, MCP Server v1.x). 5.1 Layer 1: Contexture Document Structuring Contexture addresses not generic OCR but the scholarly citability of digitized documents. It converts PDFs, images, and scans into intermediate representations that preserve page numbers, structure, and layout information. Its core outputs include: \u2022...",
+   "[body] ...viding three entry points: Streamlit GUI, CLI batch processing, and FastAPI local API. Its key value is to give materials a citable structure before they enter AI systems\u2014not to turn documents into \u201cclean text,\u201d but to preserve, as far as possible, their coordinates as scholarly materials in digital form. 5.2 Layer 2: Open WebUI AIH-Infra Traceable Knowledge Base Open WebUI AIH-Infra organizes structured documents such as Scholarly Markdown into knowledge bases and provides retrieval and Q&amp;A with page-level citation. Its core capabilities include: \u2022 Knowledge-base-level control of chunk size, overlap, splitter, and file enablement status, plus Chun...",
+   "[body] ...batch processing, and FastAPI local API. Its key value is to give materials a citable structure before they enter AI systems\u2014not to turn documents into \u201cclean text,\u201d but to preserve, as far as possible, their coordinates as scholarly materials in digital form. 5.2 Layer 2: Open WebUI AIH-Infra Traceable Knowledge Base Open WebUI AIH-Infra organizes structured documents such as Scholarly Markdown into knowledge bases and provides retrieval and Q&amp;A with page-level citation. Its core capabilities include: \u2022 Knowledge-base-level control of chunk size, overlap, splitter, and file enablement status, plus Chunks inspection (checking chunk granularity, pag..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:28",
+  "page": "arxiv:2607.20916v1",
+  "subject": "AIH-Infra",
+  "object": "Surya",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Contexture (Layer 1) supports Surya as one backend option for OCR and document processing.",
+  "contexts": [
+   "[body] ...eneralized (whole-page understanding by general vision-language models), VLM-Specialized (specialized document models or local small models), and Markdown post-processing (review and revision of existing outputs); \u2022 Backend Catalog : not bound to a single engine; supports free combination and diagnostic replacement of Surya, Calamari, PaddleOCR, Tesseract, DocLayout-YOLO, and various vision-language models. The four lines are technical routes rather than mechanical classifications of document types; the same material may be processed by different routes depending on cost, audit requirements, and model availability. Contexture adopts a local single-user..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:29",
+  "page": "arxiv:2607.20916v1",
+  "subject": "AIH-Infra",
+  "object": "Calamari",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Contexture supports Calamari as a document processing backend alongside other OCR engines.",
+  "contexts": [
+   "[body] ...zed (whole-page understanding by general vision-language models), VLM-Specialized (specialized document models or local small models), and Markdown post-processing (review and revision of existing outputs); \u2022 Backend Catalog : not bound to a single engine; supports free combination and diagnostic replacement of Surya, Calamari, PaddleOCR, Tesseract, DocLayout-YOLO, and various vision-language models. The four lines are technical routes rather than mechanical classifications of document types; the same material may be processed by different routes depending on cost, audit requirements, and model availability. Contexture adopts a local single-user form,..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:30",
+  "page": "arxiv:2607.20916v1",
+  "subject": "AIH-Infra",
+  "object": "PaddleOCR",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Contexture supports PaddleOCR as an OCR backend option for free combination with other engines.",
+  "contexts": [
+   "[body] ...-page understanding by general vision-language models), VLM-Specialized (specialized document models or local small models), and Markdown post-processing (review and revision of existing outputs); \u2022 Backend Catalog : not bound to a single engine; supports free combination and diagnostic replacement of Surya, Calamari, PaddleOCR, Tesseract, DocLayout-YOLO, and various vision-language models. The four lines are technical routes rather than mechanical classifications of document types; the same material may be processed by different routes depending on cost, audit requirements, and model availability. Contexture adopts a local single-user form, providing..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:31",
+  "page": "arxiv:2607.20916v1",
+  "subject": "AIH-Infra",
+  "object": "Tesseract",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Contexture supports Tesseract as a diagnostic-replaceable OCR backend.",
+  "contexts": [
+   "[body] ...standing by general vision-language models), VLM-Specialized (specialized document models or local small models), and Markdown post-processing (review and revision of existing outputs); \u2022 Backend Catalog : not bound to a single engine; supports free combination and diagnostic replacement of Surya, Calamari, PaddleOCR, Tesseract, DocLayout-YOLO, and various vision-language models. The four lines are technical routes rather than mechanical classifications of document types; the same material may be processed by different routes depending on cost, audit requirements, and model availability. Contexture adopts a local single-user form, providing three entry..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:32",
+  "page": "arxiv:2607.20916v1",
+  "subject": "AIH-Infra",
+  "object": "DocLayout-YOLO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Contexture supports DocLayout-YOLO for document layout detection as a backend option.",
+  "contexts": [
+   "[body] ...general vision-language models), VLM-Specialized (specialized document models or local small models), and Markdown post-processing (review and revision of existing outputs); \u2022 Backend Catalog : not bound to a single engine; supports free combination and diagnostic replacement of Surya, Calamari, PaddleOCR, Tesseract, DocLayout-YOLO, and various vision-language models. The four lines are technical routes rather than mechanical classifications of document types; the same material may be processed by different routes depending on cost, audit requirements, and model availability. Contexture adopts a local single-user form, providing three entry points: St..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:33",
+  "page": "arxiv:2607.20916v1",
+  "subject": "AIH-Infra",
+  "object": "Kant Akademie-Ausgabe",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "AIH-Infra is evaluated on a case study using a 29-volume Kant Akademie-Ausgabe knowledge base.",
+  "contexts": [
+   "[abstract] ...tation-first generation, NO_EVIDENCE, human verification, four-level compliance, and Scope Contract, and present AIH-Infra as a three-layer reference implementation: Contexture (document structuring), Open WebUI AIH-Infra (traceable knowledge base), and AIH-Infra MCP Server (agent gateway). A case study on a 29-volume Kant Akademie-Ausgabe knowledge base illustrates how traceability supports retrieval correction, evidence grading, and judgment downgrading. Traceability is not a software feature; it is the condition under which humanistic research can remain public and refutable in the age of generative AI...."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:34",
+  "page": "arxiv:2607.20918v2",
+  "subject": "OPOD",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "OPOD builds on GRPO as the common policy-optimization algorithm for training specialist models.",
+  "contexts": [
+   "[body] ...aining can strengthen these capabilities while also introducing cross-modal trade-offs (Zhang et al., 2025 ) . This motivates our central question: How can we integrate modality-specific expertise into one omni-modal policy without degrading its other capabilities? Figure 1: Motivating observations for OPOD . (a) With GRPO held fixed, text, image, and audio specialists exhibit complementary strengths, whereas a model trained on pooled data does not consistently match them. These specialists subsequently serve as teachers. (b) The same teachers show frequent pairwise conflicts in their parameter-displacement directions relative to the common base model....",
+   "[body] ...mon base model. (c) OPOD produces broader benchmark gains than the base model, native OPD, and ExOPD. The simplest reinforcement-learning strategy is to post-train one model on the union of text, image, and audio data. We examine how well this strategy preserves modality-specific gains in a controlled diagnostic using GRPO as the common policy-optimization algorithm (Shao et al., 2024 ) . Starting from the same base model, we train three specialists separately on their corresponding modality data and a fourth model on the pooled data. The three specialists, which subsequently serve as our teachers, develop complementary strengths, whereas the pooled mo..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:35",
+  "page": "arxiv:2607.20918v2",
+  "subject": "OPOD",
+  "object": "on-policy distillation",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "OPOD extends on-policy distillation by routing each student response to the matching modality teacher.",
+  "contexts": [
+   "[body] ...o transfer the behavior of several teachers into a single student without retaining an ensemble at inference (Hinton et al., 2015 ; You et al., 2017 ; Wan et al., 2024 ) . Conventional sequence distillation often relies on fixed or teacher-generated responses that may differ from the responses produced by the student. On-policy distillation (OPD) instead lets the student generate a response and asks the teacher to evaluate that same response (Gu et al., 2024 ; Agarwal et al., 2024 ) . Among possible consolidation strategies, this makes OPD a natural fit for our setting: each student response can be routed by its modality to the corresponding specialist...",
+   "[abstract] ...Omni-modal models can handle text, images, and audio in one system, but improving all of these abilities together remains difficult. Training a single model on pooled multimodal data often fails to match models specialized for individual modalities. On-policy distillation (OPD) offers a way to combine such specialists: the student generates a response, and a teacher evaluates that same response, so the student learns directly from behaviors it actually produces. Yet using several teachers can introduce competing guidance and improve one modality at the expense of another. We present..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:36",
+  "page": "arxiv:2607.20918v2",
+  "subject": "OPOD",
+  "object": "ExOPD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "OPOD produces broader benchmark gains than native OPD and ExOPD baselines.",
+  "contexts": [
+   "[body] ...trained on pooled data does not consistently match them. These specialists subsequently serve as teachers. (b) The same teachers show frequent pairwise conflicts in their parameter-displacement directions relative to the common base model. (c) OPOD produces broader benchmark gains than the base model, native OPD, and ExOPD. The simplest reinforcement-learning strategy is to post-train one model on the union of text, image, and audio data. We examine how well this strategy preserves modality-specific gains in a controlled diagnostic using GRPO as the common policy-optimization algorithm (Shao et al., 2024 ) . Starting from the same base model, we train..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:37",
+  "page": "arxiv:2607.20923v1",
+  "subject": "LLM-era scientific collaboration analysis",
+  "object": "PubMed Central",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The study links PubMed Central full text with collaboration histories for 775,323 scientists.",
+  "contexts": [
+   "[body] ...ison, Madison, WI, USA. \u2217 Corresponding author. Email: chaoqun.ni@wisc.edu Abstract Large language models (LLMs) have rapidly and significantly entered scientific workflows, but it remains unclear how their diffusion is associated with changes in scientists\u2019 strategies in research directions and team building. We link PubMed Central full text with OpenAlex publication and collaboration histories for 775,323 scientists and analyze CRediT contribution statements from 137,120 multi-author papers. After 2022, scientists increasingly published across more intellectually distant fields and entered fields in which they had not previously worked. These increas...",
+   "[abstract] ...Large language models (LLMs) have rapidly and significantly entered scientific workflows, but it remains unclear how their diffusion is associated with changes in scientists' strategies in research directions and team building. We link PubMed Central full text with OpenAlex publication and collaboration histories for 775,323 scientists and analyze CRediT contribution statements from 137,120 multi-author papers. After 2022, scientists increasingly published across more intellectually distant fields and entered fields in which they had not previously worked. These increas..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:38",
+  "page": "arxiv:2607.20923v1",
+  "subject": "LLM-era scientific collaboration analysis",
+  "object": "OpenAlex",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The study uses OpenAlex publication and collaboration histories to analyze changes after 2022.",
+  "contexts": [
+   "[body] ...esponding author. Email: chaoqun.ni@wisc.edu Abstract Large language models (LLMs) have rapidly and significantly entered scientific workflows, but it remains unclear how their diffusion is associated with changes in scientists\u2019 strategies in research directions and team building. We link PubMed Central full text with OpenAlex publication and collaboration histories for 775,323 scientists and analyze CRediT contribution statements from 137,120 multi-author papers. After 2022, scientists increasingly published across more intellectually distant fields and entered fields in which they had not previously worked. These increases in interdisciplinarity and...",
+   "[abstract] ...Large language models (LLMs) have rapidly and significantly entered scientific workflows, but it remains unclear how their diffusion is associated with changes in scientists' strategies in research directions and team building. We link PubMed Central full text with OpenAlex publication and collaboration histories for 775,323 scientists and analyze CRediT contribution statements from 137,120 multi-author papers. After 2022, scientists increasingly published across more intellectually distant fields and entered fields in which they had not previously worked. These increases in interdisciplinarity and..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:39",
+  "page": "arxiv:2607.20923v1",
+  "subject": "LLM-era scientific collaboration analysis",
+  "object": "CRediT",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The study analyzes CRediT contribution statements from 137,120 multi-author papers.",
+  "contexts": [
+   "[body] ...ave rapidly and significantly entered scientific workflows, but it remains unclear how their diffusion is associated with changes in scientists\u2019 strategies in research directions and team building. We link PubMed Central full text with OpenAlex publication and collaboration histories for 775,323 scientists and analyze CRediT contribution statements from 137,120 multi-author papers. After 2022, scientists increasingly published across more intellectually distant fields and entered fields in which they had not previously worked. These increases in interdisciplinarity and exploration were especially pronounced among established scientists and scientists f...",
+   "[body] ...less on one another to perform research tasks. Overall, this study reflects that the LLM era coincides with a broader reorganization of scientific exploration, collaboration, and the division of labor. Keywords: large language models, scientific collaboration, interdisciplinarity, research exploration, labor division, CRediT Introduction The rise of large language models (LLMs) and related artificial intelligence (AI) tools has profoundly influenced how knowledge is created and shared 37 . Since the public diffusion and large-scale application of LLM after the release of ChatGPT in November 2022 and GPT-4 in March 2023, LLM tools have been rapidly evol...",
+   "[abstract] ...ave rapidly and significantly entered scientific workflows, but it remains unclear how their diffusion is associated with changes in scientists' strategies in research directions and team building. We link PubMed Central full text with OpenAlex publication and collaboration histories for 775,323 scientists and analyze CRediT contribution statements from 137,120 multi-author papers. After 2022, scientists increasingly published across more intellectually distant fields and entered fields in which they had not previously worked. These increases in interdisciplinarity and exploration were especially pronounced among established scientists and scientists f..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:40",
+  "page": "arxiv:2607.20925v1",
+  "subject": "dual-signal entity-importance framework",
+  "object": "PageRank",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework uses PageRank to estimate structural authority from knowledge network position.",
+  "contexts": [
+   "[body] ...preference; the second is grounded in relational structure. Neither is inherently superior, because they answer different questions. An entity with a strong audience-evaluation rank may have limited structural authority, while an entity with a weaker audience rank may occupy a central position in a knowledge network. PageRank estimates importance through links from other important nodes ( Page et al. , 1999 ) ; HITS distinguishes hubs from authorities ( Kleinberg , 1999 ) ; and centrality research provides multiple accounts of network position ( Freeman , 1978 ) . These approaches demonstrate that relational importance can emerge independently of dire...",
+   "[abstract] ...ce-evaluation dimension and a structural-authority dimension. The framework is evaluated using movie entities as an empirical validation domain. IMDb non-commercial datasets provide a rating-based audience ranking, Wikidata supports entity alignment, and English Wikipedia hyperlinks form the knowledge network on which PageRank estimates structural authority. Experiments on 482 entities and 13,690 directed relationships reveal a statistically significant but weak association between the two dimensions (Spearman rho = 0.2275, p &lt; 0.001). Their overlap is only 10% in the top 10 and 34% in the top 100, while entity-level divergence occurs in both direct..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:41",
+  "page": "arxiv:2607.20925v1",
+  "subject": "dual-signal entity-importance framework",
+  "object": "IMDb",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The framework is evaluated using IMDb non-commercial datasets providing audience-evaluation ranking.",
+  "contexts": [
+   "[body] ...cted with directors, actors, genres, historical contexts, cultural references, and other entities. The domain therefore provides a controlled environment for testing the representational framework; movies are the validation setting rather than the theoretical research target. The candidate set was constructed from the IMDb non-commercial title.basics and title.ratings datasets ( IMDb , 2026 ) . The two tables were merged by the IMDb title identifier ( tconst ). Records were retained when they represented a movie, were marked as non-adult, had a known release year, had an average rating of at least 7.0, and had received at least 50,000 votes. Eligible r...",
+   "[body] ...ural references, and other entities. The domain therefore provides a controlled environment for testing the representational framework; movies are the validation setting rather than the theoretical research target. The candidate set was constructed from the IMDb non-commercial title.basics and title.ratings datasets ( IMDb , 2026 ) . The two tables were merged by the IMDb title identifier ( tconst ). Records were retained when they represented a movie, were marked as non-adult, had a known release year, had an average rating of at least 7.0, and had received at least 50,000 votes. Eligible records were ordered by average rating in descending order and...",
+   "[body] ...erefore provides a controlled environment for testing the representational framework; movies are the validation setting rather than the theoretical research target. The candidate set was constructed from the IMDb non-commercial title.basics and title.ratings datasets ( IMDb , 2026 ) . The two tables were merged by the IMDb title identifier ( tconst ). Records were retained when they represented a movie, were marked as non-adult, had a known release year, had an average rating of at least 7.0, and had received at least 50,000 votes. Eligible records were ordered by average rating in descending order and then by vote count in descending order; the first..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:42",
+  "page": "arxiv:2607.20925v1",
+  "subject": "dual-signal entity-importance framework",
+  "object": "Wikidata",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Wikidata is used for cross-source entity alignment between IMDb and Wikipedia.",
+  "contexts": [
+   "[body] ...andidate-set construction rules. Field or operation Rule Title type titleType = movie Adult-content flag isAdult = 0 Release year Known value (not missing) Average rating At least 7.0 Vote count At least 50,000 Ordering Average rating descending, then vote count descending Candidate-set size First 500 eligible records Wikidata was used for cross-source entity alignment ( Vrande\u010di\u0107 and Kr\u00f6tzsch , 2014 ) . Each candidate was queried by its IMDb identifier through Wikidata property P345, and the corresponding English Wikipedia article was retrieved when available. The final analytical sample contains 482 entities that had a usable cross-source mapping and...",
+   "[body] ...missing) Average rating At least 7.0 Vote count At least 50,000 Ordering Average rating descending, then vote count descending Candidate-set size First 500 eligible records Wikidata was used for cross-source entity alignment ( Vrande\u010di\u0107 and Kr\u00f6tzsch , 2014 ) . Each candidate was queried by its IMDb identifier through Wikidata property P345, and the corresponding English Wikipedia article was retrieved when available. The final analytical sample contains 482 entities that had a usable cross-source mapping and participated in the induced Wikipedia hyperlink graph. Candidates without a complete mapping or without a retained intra-sample graph connection...",
+   "[body] ...reflects alignment and graph-construction coverage rather than an additional evaluation threshold. The resulting dataset integrates three sources: \u2022 IMDb non-commercial datasets: provide identifiers, titles, release years, weighted average ratings, and vote counts used to construct the audience-evaluation dimension. \u2022 Wikidata identifiers: align IMDb records with English Wikipedia pages. \u2022 English Wikipedia hyperlinks: provide directed relationships among the aligned movie entities. The derived datasets, analysis scripts, and reported results are archived in repository commit 9f14a19 . 3.3 Knowledge Graph Construction The knowledge graph is represented..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:43",
+  "page": "arxiv:2607.20925v1",
+  "subject": "dual-signal entity-importance framework",
+  "object": "Wikipedia",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "English Wikipedia hyperlinks form the knowledge network on which structural authority is computed.",
+  "contexts": [
+   "[body] ...ast 50,000 Ordering Average rating descending, then vote count descending Candidate-set size First 500 eligible records Wikidata was used for cross-source entity alignment ( Vrande\u010di\u0107 and Kr\u00f6tzsch , 2014 ) . Each candidate was queried by its IMDb identifier through Wikidata property P345, and the corresponding English Wikipedia article was retrieved when available. The final analytical sample contains 482 entities that had a usable cross-source mapping and participated in the induced Wikipedia hyperlink graph. Candidates without a complete mapping or without a retained intra-sample graph connection did not enter the final comparison. The reduction from...",
+   "[body] ...nt ( Vrande\u010di\u0107 and Kr\u00f6tzsch , 2014 ) . Each candidate was queried by its IMDb identifier through Wikidata property P345, and the corresponding English Wikipedia article was retrieved when available. The final analytical sample contains 482 entities that had a usable cross-source mapping and participated in the induced Wikipedia hyperlink graph. Candidates without a complete mapping or without a retained intra-sample graph connection did not enter the final comparison. The reduction from 500 candidates to 482 analytical entities therefore reflects alignment and graph-construction coverage rather than an additional evaluation threshold. The resulting dat...",
+   "[body] ...her than an additional evaluation threshold. The resulting dataset integrates three sources: \u2022 IMDb non-commercial datasets: provide identifiers, titles, release years, weighted average ratings, and vote counts used to construct the audience-evaluation dimension. \u2022 Wikidata identifiers: align IMDb records with English Wikipedia pages. \u2022 English Wikipedia hyperlinks: provide directed relationships among the aligned movie entities. The derived datasets, analysis scripts, and reported results are archived in repository commit 9f14a19 . 3.3 Knowledge Graph Construction The knowledge graph is represented as a directed graph G = ( V , E ) G=(V,E) , where V V..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:44",
+  "page": "arxiv:2607.20926v1",
+  "subject": "SciExplore",
+  "object": "DeepSeek V3.2",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SciExplore evaluates DeepSeek-V3.2 as an open-source foundation LLM baseline.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:45",
+  "page": "arxiv:2607.20926v1",
+  "subject": "SciExplore",
+  "object": "Qwen 2.5",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SciExplore evaluates Qwen 2.5-72B-Instruct as an open-source foundation model.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:46",
+  "page": "arxiv:2607.20926v1",
+  "subject": "SciExplore",
+  "object": "Qwen 3",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SciExplore evaluates Qwen 3 variants with different parameter counts and reasoning capabilities.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:47",
+  "page": "arxiv:2607.20926v1",
+  "subject": "SciExplore",
+  "object": "GPT-5.1",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SciExplore evaluates GPT-5.1 as a closed-source foundation LLM.",
+  "contexts": [
+   "[body] ...y T1 T2 T3 T4 Overall Item Row \\rowcolor gray!15 Foundation LLMs DeepSeek-V3.2 Open-Source 20.51 6.25 5.95 8.32 2.25 11.06 Qwen2.5-72B-Instruct Open-Source 7.69 0.00 0.00 8.63 6.94 4.99 Qwen3-30B-A3B-Thinking Open-Source 10.26 0.00 3.57 2.54 1.60 4.50 Qwen3-235B-A22B-Thinking Open-Source 20.51 3.12 0.00 7.85 4.15 7.87 GPT-5.1 Closed-Source 17.95 9.38 9.66 8.76 4.83 12.83 Gemini-2.5-Pro Closed-Source 20.51 6.25 4.17 10.57 3.78 11.25 Gemini-3-Pro Closed-Source 23.08 12.50 13.69 16.23 7.29 19.08 \\rowcolor gray!15 LLMs with Search Tools DeepSeek-V3.2 w/ search Open-Source 17.95 9.38 9.66 9.2..."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:48",
+  "page": "arxiv:2607.20926v1",
+  "subject": "SciExplore",
+  "object": "Gemini 2.5-Pro",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SciExplore evaluates Gemini-2.5-Pro as a closed-source foundation model.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:49",
+  "page": "arxiv:2607.20926v1",
+  "subject": "SciExplore",
+  "object": "Gemini 3-Pro",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "SciExplore evaluates Gemini-3-Pro as a closed-source foundation model.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:50",
+  "page": "arxiv:2607.20933v1",
+  "subject": "Transformer-assisted LLM code summarization",
+  "object": "CodeSum Bart",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The method uses CodeSum Bart outputs in prompt engineering to improve LLM-generated code summaries.",
+  "contexts": [
+   "[body] ...LLMs, including two code-aware LLMs, using these four prompts, on the dataset described in Section 3 . In order to perform this evaluation, we use three variants of the Bleu metric, Rouge -L, and Bert Score. 4.1 Methodology for RQ. 1 We began by comparing a zero-shot prompt to a one-shot prompt using the outputs of a CodeSum Bart model on the same task to generate the examples for the one-shot prompting. We used the Evaluation split from the dataset for this task. Google\u2019s LLM Prompt Engineering guide 2 2 2 kaggle.com/whitepaper-prompt-engineering defines a zero-shot prompt as \u201c[\u2026] the simplest type of prompt. It only provides a description of a task...",
+   "[body] ...a code comment. The structure for the \u201cExplicit\u201d prompt can be found in Table 4 . The major difference between \u201cImplicit\u201d and \u201cExplicit\u201d prompts is that the prompt labels the example summary given and informs the model that it exists. Prompt Part Prompt Instruction \u201cYou are a source code summarisation model. \u201d Context CodeSum Bart -generated summary Input Data \u201cWhen given a prompt containing an example summary and some source code,\u201d + Source code Output Indicator \u201cyou return a one-sentence English-language summary of the code.\u201d Table 4: Explicit One-Shot Prompt Structure. The structure for the \u201cExplicit requesting improvement\u201d prompt can be found in Ta...",
+   "[body] ...e,\u201d + Source code Output Indicator \u201cyou return a one-sentence English-language summary of the code.\u201d Table 4: Explicit One-Shot Prompt Structure. The structure for the \u201cExplicit requesting improvement\u201d prompt can be found in Table 5 . Prompt Part Prompt Instruction \u201cYou are a source code summarisation model. \u201d Context CodeSum Bart -generated summary Input Data \u201cWhen given a prompt containing an example summary and some source code,\u201d + Source code Output Indicator \u201cyou improve that summary by returning an improved one-sentence English-language summary of the code.\u201d Table 5: Explicit Requesting Improvement One-Shot Prompt Structure. Upon finding a sizeab..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:0",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "AlphaEvolve",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MetaEvolve builds on the AlphaEvolve framework which demonstrates iterative refinement with environment feedback.",
+  "contexts": [
+   "[body] ...1 Introduction Test-time scaling has emerged as a powerful paradigm for unlocking the potential of large language models (LLMs) (Muennighoff et al. , 2025 ; Zhang et al. , 2025 ) . Recent frameworks such as AlphaEvolve (Novikov et al. , 2025 ) show that iterative refinement with environment feedback can not only improve solution quality but also discover novel results beyond existing human knowledge (Jiang et al. , 2026 ; Wang et al. , 2025b ; Acikgoz et al. , 2026 ) . We hypothesize that this success critically depends on core meta-skills t...",
+   "[body] ...lti-round refinement. \u2022 Reflexion (Shinn et al. , 2023 ) : The model generates verbal self-reflections on training problems, which are stored in memory. At test time, the most similar training problems are retrieved along with their reflections, and the model generates solutions conditioned on this prior experience. \u2022 AlphaEvolve (Novikov et al. , 2025 ) : The model iteratively improves solutions through an evolutionary search algorithm that applies code modifications guided by continuous evaluator feedback. Evolution Rounds Number to Sample Keep Top N N Keep Top N N (Re-Validation) Fixed settings sample = 10 =10 , keep N = 5 N=5 rounds = 5 =5 , keep N...",
+   "[body] ...ducted on 10 TACO problems. The best configuration within each group is highlighted in gray and shown in bold . Note that results are only compared within each group of three but not across groups, as cross-group comparisons are confounded by different fixed conditions. 3.1.3 Evolutionary Search Algorithm Pipeline For AlphaEvolve and MetaEvolve , we use the same evolutionary search algorithm implemented in OpenEvolve (Sharma, 2025 ) to ensure fair comparison; the only difference lies in the backbone LLM used to generate solutions at each evolution step. For each problem, we sample 10 responses from the same base model (Qwen3-14B) and select the most ef..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:1",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "APPS",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on APPS, an in-distribution coding benchmark.",
+  "contexts": [
+   "[body] ...ment rate by 10.01% on in-distribution tasks and 24.12% on out-of-distribution tasks over the strongest b [...] 3 Experiments 3.1 Experimental Setup 3.1.1 Benchmarks Coding We evaluate MetaEvolve on seven coding benchmarks spanning both in-distribution and out-of-distribution settings. The in-distribution benchmarks \u2014 APPS, TACO, CodeContests, and Codeforces \u2014 correspond to the four data sources used during training. The out-of-distribution benchmarks \u2014 Atcoder (Imajuku et al. , 2025 ) , Leetcode (Xia et al. , 2025 ) , and USACO (Shi et al. , 2024 ) \u2014 are held out entirely during training and serve to evaluate the generalization of the learned self-evo...",
+   "[body] ...volution rounds, 20 parent programs per round with one candidate generated per parent, and the top 5 candidates retained. The population is maintained across 5 parallel islands with migration every 5 generations, using an exploration-exploitation-random ratio of 0.6:0.2:0.2. In-Distribution Out-of-Distribution Methods APPS TACO CodeContests Codeforces Atcoder Leetcode USACO Best-of-N 3.99% 2.91% 1.72% 4.20% 14.02% 6.48% 2.12% Self-Refine (single) 1.57% 0.91% 0.10% 2.63% 0.66% 0.00% 2.83% Self-Refine (multiple) 0.57% 0.87% 0.51% 2.69% 0.97% 0.01% 4.68% Reflexion 0.19% 0.36% 0.43% 1.03% 0.37% 0.00% 2.26% AlphaEvolve 42.21% 33.93% 24.89% 19.06% 27.01..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:2",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "TACO",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on TACO, an in-distribution coding benchmark.",
+  "contexts": [
+   "[body] ...ate by 10.01% on in-distribution tasks and 24.12% on out-of-distribution tasks over the strongest b [...] 3 Experiments 3.1 Experimental Setup 3.1.1 Benchmarks Coding We evaluate MetaEvolve on seven coding benchmarks spanning both in-distribution and out-of-distribution settings. The in-distribution benchmarks \u2014 APPS, TACO, CodeContests, and Codeforces \u2014 correspond to the four data sources used during training. The out-of-distribution benchmarks \u2014 Atcoder (Imajuku et al. , 2025 ) , Leetcode (Xia et al. , 2025 ) , and USACO (Shi et al. , 2024 ) \u2014 are held out entirely during training and serve to evaluate the generalization of the learned self-evolution...",
+   "[body] ...0 =10 , keep N = 5 N=5 rounds = 5 =5 , keep N = 5 N=5 rounds = 5 =5 , sample = 10 =10 rounds = 10 =10 , sample = 20 =20 Varied value 5 10 15 10 20 30 2 7 5 5 10 14 Avg Impr. Rate 1.08% 2.40% 1.26% 1.08% 2.76% 1.70% 1.15% 1.61% 1.08% 2.21% 1.25% 1.04% Table 1: Ablation study on evolution hyperparameters conducted on 10 TACO problems. The best configuration within each group is highlighted in gray and shown in bold . Note that results are only compared within each group of three but not across groups, as cross-group comparisons are confounded by different fixed conditions. 3.1.3 Evolutionary Search Algorithm Pipeline For AlphaEvolve and MetaEvolve , we u...",
+   "[body] ...top M M are retained to update the population, with periodic migration between islands to maintain diversity. The final best program\u2019s combined score is recorded as the outcome. Evolution Hyperparameters Setting We conduct ablation studies over evolution rounds, programs sampled per round, and top- N N retained, on 10 TACO problems (details in Appendix B ). Since each group fixes different hyperparameters, we select the best value within each group independently rather than the globally highest-scoring configuration, which would conflate the effects of different fixed conditions. Based on the results in Table 1 , all our following experiments use 10 ev..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:3",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "CodeContests",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on CodeContests, an in-distribution coding benchmark.",
+  "contexts": [
+   "[body] ...10.01% on in-distribution tasks and 24.12% on out-of-distribution tasks over the strongest b [...] 3 Experiments 3.1 Experimental Setup 3.1.1 Benchmarks Coding We evaluate MetaEvolve on seven coding benchmarks spanning both in-distribution and out-of-distribution settings. The in-distribution benchmarks \u2014 APPS, TACO, CodeContests, and Codeforces \u2014 correspond to the four data sources used during training. The out-of-distribution benchmarks \u2014 Atcoder (Imajuku et al. , 2025 ) , Leetcode (Xia et al. , 2025 ) , and USACO (Shi et al. , 2024 ) \u2014 are held out entirely during training and serve to evaluate the generalization of the learned self-evolution meta-...",
+   "[body] ...ounds, 20 parent programs per round with one candidate generated per parent, and the top 5 candidates retained. The population is maintained across 5 parallel islands with migration every 5 generations, using an exploration-exploitation-random ratio of 0.6:0.2:0.2. In-Distribution Out-of-Distribution Methods APPS TACO CodeContests Codeforces Atcoder Leetcode USACO Best-of-N 3.99% 2.91% 1.72% 4.20% 14.02% 6.48% 2.12% Self-Refine (single) 1.57% 0.91% 0.10% 2.63% 0.66% 0.00% 2.83% Self-Refine (multiple) 0.57% 0.87% 0.51% 2.69% 0.97% 0.01% 4.68% Reflexion 0.19% 0.36% 0.43% 1.03% 0.37% 0.00% 2.26% AlphaEvolve 42.21% 33.93% 24.89% 19.06% 27.01..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:4",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "Codeforces",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on Codeforces, an in-distribution coding benchmark.",
+  "contexts": [
+   "[body] ...ribution tasks and 24.12% on out-of-distribution tasks over the strongest b [...] 3 Experiments 3.1 Experimental Setup 3.1.1 Benchmarks Coding We evaluate MetaEvolve on seven coding benchmarks spanning both in-distribution and out-of-distribution settings. The in-distribution benchmarks \u2014 APPS, TACO, CodeContests, and Codeforces \u2014 correspond to the four data sources used during training. The out-of-distribution benchmarks \u2014 Atcoder (Imajuku et al. , 2025 ) , Leetcode (Xia et al. , 2025 ) , and USACO (Shi et al. , 2024 ) \u2014 are held out entirely during training and serve to evaluate the generalization of the learned self-evolution meta-skills. For each b...",
+   "[body] ...ent programs per round with one candidate generated per parent, and the top 5 candidates retained. The population is maintained across 5 parallel islands with migration every 5 generations, using an exploration-exploitation-random ratio of 0.6:0.2:0.2. In-Distribution Out-of-Distribution Methods APPS TACO CodeContests Codeforces Atcoder Leetcode USACO Best-of-N 3.99% 2.91% 1.72% 4.20% 14.02% 6.48% 2.12% Self-Refine (single) 1.57% 0.91% 0.10% 2.63% 0.66% 0.00% 2.83% Self-Refine (multiple) 0.57% 0.87% 0.51% 2.69% 0.97% 0.01% 4.68% Reflexion 0.19% 0.36% 0.43% 1.03% 0.37% 0.00% 2.26% AlphaEvolve 42.21% 33.93% 24.89% 19.06% 27.01..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:5",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "AtCoder",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on AtCoder, an out-of-distribution coding benchmark held out during training.",
+  "contexts": [
+   "[body] ...ntal Setup 3.1.1 Benchmarks Coding We evaluate MetaEvolve on seven coding benchmarks spanning both in-distribution and out-of-distribution settings. The in-distribution benchmarks \u2014 APPS, TACO, CodeContests, and Codeforces \u2014 correspond to the four data sources used during training. The out-of-distribution benchmarks \u2014 Atcoder (Imajuku et al. , 2025 ) , Leetcode (Xia et al. , 2025 ) , and USACO (Shi et al. , 2024 ) \u2014 are held out entirely during training and serve to evaluate the generalization of the learned self-evolution meta-skills. For each benchmark, we randomly sample 50 test cases to construct the evaluation set, as each problem requires multipl...",
+   "[body] ...s per round with one candidate generated per parent, and the top 5 candidates retained. The population is maintained across 5 parallel islands with migration every 5 generations, using an exploration-exploitation-random ratio of 0.6:0.2:0.2. In-Distribution Out-of-Distribution Methods APPS TACO CodeContests Codeforces Atcoder Leetcode USACO Best-of-N 3.99% 2.91% 1.72% 4.20% 14.02% 6.48% 2.12% Self-Refine (single) 1.57% 0.91% 0.10% 2.63% 0.66% 0.00% 2.83% Self-Refine (multiple) 0.57% 0.87% 0.51% 2.69% 0.97% 0.01% 4.68% Reflexion 0.19% 0.36% 0.43% 1.03% 0.37% 0.00% 2.26% AlphaEvolve 42.21% 33.93% 24.89% 19.06% 27.01..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:6",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "LeetCode",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on LeetCode, an out-of-distribution coding benchmark held out during training.",
+  "contexts": [
+   "[body] ...We evaluate MetaEvolve on seven coding benchmarks spanning both in-distribution and out-of-distribution settings. The in-distribution benchmarks \u2014 APPS, TACO, CodeContests, and Codeforces \u2014 correspond to the four data sources used during training. The out-of-distribution benchmarks \u2014 Atcoder (Imajuku et al. , 2025 ) , Leetcode (Xia et al. , 2025 ) , and USACO (Shi et al. , 2024 ) \u2014 are held out entirely during training and serve to evaluate the generalization of the learned self-evolution meta-skills. For each benchmark, we randomly sample 50 test cases to construct the evaluation set, as each problem requires multiple rounds of evolution with full pro...",
+   "[body] ...und with one candidate generated per parent, and the top 5 candidates retained. The population is maintained across 5 parallel islands with migration every 5 generations, using an exploration-exploitation-random ratio of 0.6:0.2:0.2. In-Distribution Out-of-Distribution Methods APPS TACO CodeContests Codeforces Atcoder Leetcode USACO Best-of-N 3.99% 2.91% 1.72% 4.20% 14.02% 6.48% 2.12% Self-Refine (single) 1.57% 0.91% 0.10% 2.63% 0.66% 0.00% 2.83% Self-Refine (multiple) 0.57% 0.87% 0.51% 2.69% 0.97% 0.01% 4.68% Reflexion 0.19% 0.36% 0.43% 1.03% 0.37% 0.00% 2.26% AlphaEvolve 42.21% 33.93% 24.89% 19.06% 27.01..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:7",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "USACO",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on USACO, an out-of-distribution coding benchmark held out during training.",
+  "contexts": [
+   "[body] ...ng benchmarks spanning both in-distribution and out-of-distribution settings. The in-distribution benchmarks \u2014 APPS, TACO, CodeContests, and Codeforces \u2014 correspond to the four data sources used during training. The out-of-distribution benchmarks \u2014 Atcoder (Imajuku et al. , 2025 ) , Leetcode (Xia et al. , 2025 ) , and USACO (Shi et al. , 2024 ) \u2014 are held out entirely during training and serve to evaluate the generalization of the learned self-evolution meta-skills. For each benchmark, we randomly sample 50 test cases to construct the evaluation set, as each problem requires multiple rounds of evolution with full program execution, making large-scale e...",
+   "[body] ...one candidate generated per parent, and the top 5 candidates retained. The population is maintained across 5 parallel islands with migration every 5 generations, using an exploration-exploitation-random ratio of 0.6:0.2:0.2. In-Distribution Out-of-Distribution Methods APPS TACO CodeContests Codeforces Atcoder Leetcode USACO Best-of-N 3.99% 2.91% 1.72% 4.20% 14.02% 6.48% 2.12% Self-Refine (single) 1.57% 0.91% 0.10% 2.63% 0.66% 0.00% 2.83% Self-Refine (multiple) 0.57% 0.87% 0.51% 2.69% 0.97% 0.01% 4.68% Reflexion 0.19% 0.36% 0.43% 1.03% 0.37% 0.00% 2.26% AlphaEvolve 42.21% 33.93% 24.89% 19.06% 27.01..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:8",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "Qwen3-14B",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MetaEvolve is evaluated using Qwen3-14B as the base model for all test-time scaling baselines.",
+  "contexts": [
+   "[body] ...m the AlgoTune benchmark (Press et al. , 2025 ) that are included in OpenEvolve (Sharma, 2025 ) , spanning linear algebra, signal processing, and scientific computing \u2014 domains that are fundamentally different from coding. 3.1.2 Baselines We compare against the following test-time scaling baselines, all implemented on Qwen3-14B (Yang et al. , 2025 ) for fair comparison: \u2022 Best-of-N (Wang et al. , 2023c ) : We sample multiple solutions for each problem and select the one with the highest execution-based score. \u2022 Self-Refine (Madaan et al. , 2023 ) : The model is presented with its previous solution and the corresponding score, and asked to generate a re...",
+   "[body] ...Pipeline For AlphaEvolve and MetaEvolve , we use the same evolutionary search algorithm implemented in OpenEvolve (Sharma, 2025 ) to ensure fair comparison; the only difference lies in the backbone LLM used to generate solutions at each evolution step. For each problem, we sample 10 responses from the same base model (Qwen3-14B) and select the most efficient correct solution as the shared starting point. The model then performs K K rounds of evolution: at each round, the controller samples N N parent programs from an island-based population, constructs contextual prompts containing each parent\u2019s code, fitness score, and evolution history, and generates..."
+  ]
+ },
+ {
+  "sid": "out_g11.jsonl:9",
+  "page": "arxiv:2607.21971v1",
+  "subject": "MetaEvolve",
+  "object": "AlgoTune",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on AlgoTune, an open-ended algorithm optimization benchmark spanning linear algebra, signal processing, and scientific computing.",
+  "contexts": [
+   "[body] ...luation set, as each problem requires multiple rounds of evolution with full program execution, making large-scale evaluation prohibitively expensive under limited computational resources. Open-ended Problems To examine whether the learned meta-skills can broadly transfer to multiple domains, we adopt 8 tasks from the AlgoTune benchmark (Press et al. , 2025 ) that are included in OpenEvolve (Sharma, 2025 ) , spanning linear algebra, signal processing, and scientific computing \u2014 domains that are fundamentally different from coding. 3.1.2 Baselines We compare against the following test-time scaling baselines, all implemented on Qwen3-14B (Yang et al. , 2..."
+  ]
+ }
+]

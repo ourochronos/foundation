@@ -1,0 +1,719 @@
+[
+ {
+  "sid": "out_7.jsonl:22",
+  "page": "arxiv:2607.21445v1",
+  "subject": "TriviaRoomQA",
+  "object": "Llama-70B-Instruct",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Models including Llama-70B-Instruct are evaluated on TriviaRoomQA.",
+  "contexts": [
+   "[body] ...8,640 # of topics 288 # of categories 24 TriviaRoomQA-Multi # of questions 3,300 # of topics 110 # of categories 21 Annotation Topics, Categories, Level, Continent \u22c6 , Time period \u22c6 Table 2: Statistics and annotation information for the TriviaRoomQA dataset. Annotations marked with \u22c6 were produced automatically using Llama-70B-Instruct. To estimate topic rarity, we used Infini-Gram (Liu et al. , 2024 ) 6 6 6 https://infini-gram.io to check the frequency of topic key words in the OLMo-3-7B-Instruct training data. 7 7 7 We use this model as its training data is directly accessible through Infini-Gram. We found that 21% of the topics occur fewer than 100...",
+   "[body] ...this particular corpus. We also checked whether OpenQuizzDB appears in FineWeb2 (Penedo et al. , 2025 ) : the full 20TB corpus contains only 214 mentions of the website, suggesting that OpenQuizzDB is not substantially represented in FineWeb2 and may be limited in CommonCrawl-derived training corpora. Finally, we use Llama-70B-Instruct to assign approximate geographic and temporal metadata to each question, when applicable. 8 8 8 The exact prompts for the continent and time-period annotation tasks are provided in Appendix B . Specifically, we annotate questions with the continent and time period to which they are most closely related. These labels are..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:23",
+  "page": "arxiv:2607.21446v1",
+  "subject": "KroQuant",
+  "object": "PixArt-\u03a3",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "KroQuant is evaluated on PixArt-\u03a3 model.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:24",
+  "page": "arxiv:2607.21446v1",
+  "subject": "KroQuant",
+  "object": "SANA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "KroQuant is evaluated on SANA model.",
+  "contexts": [
+   "[body] ...w FID \u2193 \\downarrow IR \u2191 \\uparrow LPIPS \u2193 \\downarrow PSNR \u2191 \\uparrow PixArt- \u03a3 \\Sigma FP16 (reference) 16.6 0.948 \u2014 \u2014 24.8 0.966 \u2014 \u2014 Smoothing SVDQuant 19.3 0.876 0.433 15.2 23.3 0.904 0.476 13.9 Smoothing LoRaQ 17.5 0.952 0.381 16.4 23.7 0.970 0.399 15.0 KroQuant (Ours) LoRaQ 16.9 0.989 0.347 16.5 21.9 1.01 0.378 15.2 SANA BF16 (reference) 16.2 1.09 \u2014 \u2014 22.4 1.07 \u2014 \u2014 Smoothing SVDQuant 16.6 1.07 0.256 17.1 23.8 1.02 0.285 15.4 Smoothing LoRaQ 17.4 1.09 0.229 17.7 24.1 1.03 0.259 15.9 KroQuant (Ours) LoRaQ 16.6 1.09 0.206 18.4 23.6 1.04 0.241 16.4 FLUX.1-schnell BF16 (reference) 19.2 0.938 \u2014 \u2014 20.8 0.932 \u2014 \u2014 Smoothing SVDQuant 20.1 0.952 0.378 15.7 22.4...",
+   "[body] ...oQuant (Ours) LoRaQ 19.8 0.880 0.336 16.9 21.2 0.982 0.283 16.6 4.1 Experimental setup Models. We evaluate on three diffusion transformers of increasing scale and architectural diversity: \u2022 PixArt- \u03a3 \\Sigma (Chen et al. , 2024a ) with 0.6 billion parameters, a single-stream architecture for text-to-image generation. \u2022 SANA (Xie et al. , 2025 ) with 1.6 billion parameters, a single-stream architecture for text-to-image generation with 1x1 convolution layers in the FFN module. \u2022 FLUX.1-schnell (Black-Forest-Labs, 2024 ) with 12 billion parameters, a double-stream architecture for text-to-image generation. Calibration dataset. Following the protocol of SV...",
+   "[body] ...his granularity, as also adopted by Bouquet et al. ( 2026 ) . We refer to Appendix D for a description of the blockwise quantizer. We provide a full description of the experiments for reproducibility in Appendix D . 4.2 Main quantitative results Table 1 compares KroQuant against prior PTQ methods on PixArt- \u03a3 \\Sigma , SANA, and FLUX.1-schnell across two benchmarks. The smoothing method used by SVDQuant and LoRaQ are the same as described in Li et al. ( 2025 ); Bouquet et al. ( 2026 ) . KroQuant matches or improves upon all baselines on PixArt- \u03a3 \\Sigma and SANA across both benchmarks. On MJHQ-30K, KroQuant reduces LPIPS by 0.034 0.034 (relative 8.9 % 8..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:25",
+  "page": "arxiv:2607.21446v1",
+  "subject": "KroQuant",
+  "object": "FLUX.1-schnell",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "KroQuant is evaluated on FLUX.1-schnell model.",
+  "contexts": [
+   "[body] ...23.7 0.970 0.399 15.0 KroQuant (Ours) LoRaQ 16.9 0.989 0.347 16.5 21.9 1.01 0.378 15.2 SANA BF16 (reference) 16.2 1.09 \u2014 \u2014 22.4 1.07 \u2014 \u2014 Smoothing SVDQuant 16.6 1.07 0.256 17.1 23.8 1.02 0.285 15.4 Smoothing LoRaQ 17.4 1.09 0.229 17.7 24.1 1.03 0.259 15.9 KroQuant (Ours) LoRaQ 16.6 1.09 0.206 18.4 23.6 1.04 0.241 16.4 FLUX.1-schnell BF16 (reference) 19.2 0.938 \u2014 \u2014 20.8 0.932 \u2014 \u2014 Smoothing SVDQuant 20.1 0.952 0.378 15.7 22.4 0.869 0.589 13.3 Smoothing LoRaQ 19.9 0.921 0.331 16.7 22.0 0.961 0.343 15.8 KroQuant (Ours) LoRaQ 19.8 0.880 0.336 16.9 21.2 0.982 0.283 16.6 4.1 Experimental setup Models. We evaluate on three diffusion transformers of increasing...",
+   "[body] ...architectural diversity: \u2022 PixArt- \u03a3 \\Sigma (Chen et al. , 2024a ) with 0.6 billion parameters, a single-stream architecture for text-to-image generation. \u2022 SANA (Xie et al. , 2025 ) with 1.6 billion parameters, a single-stream architecture for text-to-image generation with 1x1 convolution layers in the FFN module. \u2022 FLUX.1-schnell (Black-Forest-Labs, 2024 ) with 12 billion parameters, a double-stream architecture for text-to-image generation. Calibration dataset. Following the protocol of SVDQuant (Li et al. , 2025 ) and LoRaQ (Bouquet et al. , 2026 ) , we use 128 text prompts drawn from the COCO 2017 validation captions (Chen et al. , 2015 ) as cali...",
+   "[body] ...arity, as also adopted by Bouquet et al. ( 2026 ) . We refer to Appendix D for a description of the blockwise quantizer. We provide a full description of the experiments for reproducibility in Appendix D . 4.2 Main quantitative results Table 1 compares KroQuant against prior PTQ methods on PixArt- \u03a3 \\Sigma , SANA, and FLUX.1-schnell across two benchmarks. The smoothing method used by SVDQuant and LoRaQ are the same as described in Li et al. ( 2025 ); Bouquet et al. ( 2026 ) . KroQuant matches or improves upon all baselines on PixArt- \u03a3 \\Sigma and SANA across both benchmarks. On MJHQ-30K, KroQuant reduces LPIPS by 0.034 0.034 (relative 8.9 % 8.9\\% ) ove..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:26",
+  "page": "arxiv:2607.21446v1",
+  "subject": "KroQuant",
+  "object": "SVDQuant",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "KroQuant is compared to SVDQuant.",
+  "contexts": [
+   "[body] ...1 Introduction Figure 1 : Pipeline comparison for W4A4 quantization of a linear layer in a DiT block. ( 2(a) ) SVDQuant splits the weight into a quantized residual and an SVD-truncated FP16 low-rank branch. ( 2(b) ) LoRaQ replaces the SVD truncation by a data-free low-rank branch that can itself be quantized below 16 bits. ( 2(c) ) KroQuant additionally inserts a learned block-diagonal activation transform T T before quantization, complementing Lo...",
+   "[body] ...branch that can itself be quantized below 16 bits. ( 2(c) ) KroQuant additionally inserts a learned block-diagonal activation transform T T before quantization, complementing LoRaQ\u2019s weight-side correction. P P and P S \u200b V \u200b D P_{SVD} are the 4-bit residual matrix defined as a function of the low rank components. (a) SVDQuant. (b) LoRaQ. (c) KroQuant. Post-training quantization (PTQ) to 4-bit precision is the natural way to deploy billion-parameter diffusion transformers (DiTs), and is supported natively in current accelerators via the OCP Microscaling standard (Microsoft et al. , 2023 ) . The bottleneck is activation outliers (Xiao et al. , 2023 ) :...",
+   "[body] ...step, and per-step cost becomes the binding design constraint. While the per-step cost is affordable with per-channel scaling transforms that entail diagonal matrices, this strategy offers only limited expressivity and thus quantization accuracy. This trade-off is taken by recent weight-splitting PTQ pipelines such as SVDQuant (Li et al. , 2025 ) and LoRaQ (Bouquet et al. , 2026 ) , which decompose each weight into a low-bit residual and a low-rank correction branch. By contrast, existing non- [...] 4 Experiments Table 1 : (MXFP4 E2M1, W4A4) on MJHQ-30K and SDCI (5k samples each). LR decomposition rank is 128, MXFP4e2 dataformat for the LoRaQ backbone...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:27",
+  "page": "arxiv:2607.21446v1",
+  "subject": "KroQuant",
+  "object": "LoRaQ",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "KroQuant is compared to LoRaQ.",
+  "contexts": [
+   "[body] ...1 Introduction Figure 1 : Pipeline comparison for W4A4 quantization of a linear layer in a DiT block. ( 2(a) ) SVDQuant splits the weight into a quantized residual and an SVD-truncated FP16 low-rank branch. ( 2(b) ) LoRaQ replaces the SVD truncation by a data-free low-rank branch that can itself be quantized below 16 bits. ( 2(c) ) KroQuant additionally inserts a learned block-diagonal activation transform T T before quantization, complementing LoRaQ\u2019s weight-side correction. P P and P S \u200b V \u200b D P_{SVD} are the 4-bit residual matrix defined as a func...",
+   "[body] ...e weight into a quantized residual and an SVD-truncated FP16 low-rank branch. ( 2(b) ) LoRaQ replaces the SVD truncation by a data-free low-rank branch that can itself be quantized below 16 bits. ( 2(c) ) KroQuant additionally inserts a learned block-diagonal activation transform T T before quantization, complementing LoRaQ\u2019s weight-side correction. P P and P S \u200b V \u200b D P_{SVD} are the 4-bit residual matrix defined as a function of the low rank components. (a) SVDQuant. (b) LoRaQ. (c) KroQuant. Post-training quantization (PTQ) to 4-bit precision is the natural way to deploy billion-parameter diffusion transformers (DiTs), and is supported natively in cu...",
+   "[body] ...an itself be quantized below 16 bits. ( 2(c) ) KroQuant additionally inserts a learned block-diagonal activation transform T T before quantization, complementing LoRaQ\u2019s weight-side correction. P P and P S \u200b V \u200b D P_{SVD} are the 4-bit residual matrix defined as a function of the low rank components. (a) SVDQuant. (b) LoRaQ. (c) KroQuant. Post-training quantization (PTQ) to 4-bit precision is the natural way to deploy billion-parameter diffusion transformers (DiTs), and is supported natively in current accelerators via the OCP Microscaling standard (Microsoft et al. , 2023 ) . The bottleneck is activation outliers (Xiao et al. , 2023 ) : a small subset..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:28",
+  "page": "arxiv:2607.21453v2",
+  "subject": "TTEL",
+  "object": "Qwen3-8B",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TTEL is evaluated on Qwen3-8B.",
+  "contexts": [
+   "[abstract] ...which an error occurred. The algorithm then truncates the trajectory and branches a new generation, maximally reusing the valid prefix. Extensive evaluations demonstrate that TTEL establishes strictly dominating Pareto frontiers across sequential reasoning domains, measured by pass-at-k vs. generated-token cost. With Qwen3-8B on LiveCodeBench, TTEL attains a pass@64 of 71.0% while generating approximately half as many tokens as independent sampling (360.4k vs. 735.0k). Generalizing to math benchmarks AIME-2025 and HMMT-2025, TTEL cleanly outperforms competing test-time baselines across both Qwen3-8B and Qwen3-4B-Thinking-2507....",
+   "[abstract] ...pass-at-k vs. generated-token cost. With Qwen3-8B on LiveCodeBench, TTEL attains a pass@64 of 71.0% while generating approximately half as many tokens as independent sampling (360.4k vs. 735.0k). Generalizing to math benchmarks AIME-2025 and HMMT-2025, TTEL cleanly outperforms competing test-time baselines across both Qwen3-8B and Qwen3-4B-Thinking-2507...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:29",
+  "page": "arxiv:2607.21453v2",
+  "subject": "TTEL",
+  "object": "LiveCodeBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TTEL is evaluated on LiveCodeBench.",
+  "contexts": [
+   "[abstract] ...ror occurred. The algorithm then truncates the trajectory and branches a new generation, maximally reusing the valid prefix. Extensive evaluations demonstrate that TTEL establishes strictly dominating Pareto frontiers across sequential reasoning domains, measured by pass-at-k vs. generated-token cost. With Qwen3-8B on LiveCodeBench, TTEL attains a pass@64 of 71.0% while generating approximately half as many tokens as independent sampling (360.4k vs. 735.0k). Generalizing to math benchmarks AIME-2025 and HMMT-2025, TTEL cleanly outperforms competing test-time baselines across both Qwen3-8B and Qwen3-4B-Thinking-2507...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:30",
+  "page": "arxiv:2607.21453v2",
+  "subject": "TTEL",
+  "object": "AIME-2025",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TTEL is evaluated on AIME-2025.",
+  "contexts": [
+   "[abstract] ...ishes strictly dominating Pareto frontiers across sequential reasoning domains, measured by pass-at-k vs. generated-token cost. With Qwen3-8B on LiveCodeBench, TTEL attains a pass@64 of 71.0% while generating approximately half as many tokens as independent sampling (360.4k vs. 735.0k). Generalizing to math benchmarks AIME-2025 and HMMT-2025, TTEL cleanly outperforms competing test-time baselines across both Qwen3-8B and Qwen3-4B-Thinking-2507...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:31",
+  "page": "arxiv:2607.21453v2",
+  "subject": "TTEL",
+  "object": "HMMT-2025",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TTEL is evaluated on HMMT-2025.",
+  "contexts": [
+   "[abstract] ...dominating Pareto frontiers across sequential reasoning domains, measured by pass-at-k vs. generated-token cost. With Qwen3-8B on LiveCodeBench, TTEL attains a pass@64 of 71.0% while generating approximately half as many tokens as independent sampling (360.4k vs. 735.0k). Generalizing to math benchmarks AIME-2025 and HMMT-2025, TTEL cleanly outperforms competing test-time baselines across both Qwen3-8B and Qwen3-4B-Thinking-2507...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:32",
+  "page": "arxiv:2607.21458v1",
+  "subject": "token-level detector",
+  "object": "Writing",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The detector is evaluated on Writing dataset.",
+  "contexts": [
+   "[body] ...1 Introduction Large language model (LLM)-generated text is increasingly used in academic writing, education, news production, and creative writing (Milano et al. , 2023 ; Demszky et al. , 2023 ; Doshi and Hauser, 2024 ; Xie et al. , 2023 ) . In practice, a final document is often neither entirely human-written nor entirely LLM-generated, but typically contains interleaved human-written and LLM-generated segments. For example,...",
+   "[body] ...1 Introduction Large language model (LLM)-generated text is increasingly used in academic writing, education, news production, and creative writing (Milano et al. , 2023 ; Demszky et al. , 2023 ; Doshi and Hauser, 2024 ; Xie et al. , 2023 ) . In practice, a final document is often neither entirely human-written nor entirely LLM-generated, but typically contains interleaved human-written and LLM-generated segments. For example, an author may draft the main argument while using...",
+   "[body] ...s the data generation process interpretable. Second, because the LLM continuation is generated conditionally on the human-written prefix, the authorship boundary remains fluent, making the setting more realistic than directly concatenating unrelated human and LLM texts. Third, this setting approximates common human\u2013AI writing workflows in which a writer keeps part of a model-generated continuation while modifying or replacing other parts. Text sources and LLM for coauthoring . Implementing the aforementioned design requires human-written source texts. We use three corpora: Writing (Fan et al. , 2018 ) , XSUM (Narayan et al. , 2018 ) , and ESSAY (Verma..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:33",
+  "page": "arxiv:2607.21458v1",
+  "subject": "token-level detector",
+  "object": "XSUM",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The detector is evaluated on XSUM dataset.",
+  "contexts": [
+   "[body] ...approximates common human\u2013AI writing workflows in which a writer keeps part of a model-generated continuation while modifying or replacing other parts. Text sources and LLM for coauthoring . Implementing the aforementioned design requires human-written source texts. We use three corpora: Writing (Fan et al. , 2018 ) , XSUM (Narayan et al. , 2018 ) , and ESSAY (Verma et al. , 2024 ) . For each corpus, we randomly sample 100 human-written texts and apply the generation procedure above to obtain 100 coauthored texts. These corpora cover different writing styles: Writing contains story-style texts, XSUM contains news-style texts, and ESSAY contains educati...",
+   "[body] ...rpora: Writing (Fan et al. , 2018 ) , XSUM (Narayan et al. , 2018 ) , and ESSAY (Verma et al. , 2024 ) . For each corpus, we randomly sample 100 human-written texts and apply the generation procedure above to obtain 100 coauthored texts. These corpora cover different writing styles: Writing contains story-style texts, XSUM contains news-style texts, and ESSAY contains education-related texts. The coauthoring LLM is google/gemma-2b-it (Team et al. , 2024 ) , which is publicly available at https://huggingface.co/google/gemma-2b-it . Evaluation criterion . For each text, we compute token-level detection scores and evaluate them against the ground-truth to..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:34",
+  "page": "arxiv:2607.21458v1",
+  "subject": "token-level detector",
+  "object": "ESSAY",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "The detector is evaluated on ESSAY dataset.",
+  "contexts": [
+   "[body] ...workflows in which a writer keeps part of a model-generated continuation while modifying or replacing other parts. Text sources and LLM for coauthoring . Implementing the aforementioned design requires human-written source texts. We use three corpora: Writing (Fan et al. , 2018 ) , XSUM (Narayan et al. , 2018 ) , and ESSAY (Verma et al. , 2024 ) . For each corpus, we randomly sample 100 human-written texts and apply the generation procedure above to obtain 100 coauthored texts. These corpora cover different writing styles: Writing contains story-style texts, XSUM contains news-style texts, and ESSAY contains education-related texts. The coauthoring LL...",
+   "[body] ..., XSUM (Narayan et al. , 2018 ) , and ESSAY (Verma et al. , 2024 ) . For each corpus, we randomly sample 100 human-written texts and apply the generation procedure above to obtain 100 coauthored texts. These corpora cover different writing styles: Writing contains story-style texts, XSUM contains news-style texts, and ESSAY contains education-related texts. The coauthoring LLM is google/gemma-2b-it (Team et al. , 2024 ) , which is publicly available at https://huggingface.co/google/gemma-2b-it . Evaluation criterion . For each text, we compute token-level detection scores and evaluate them against the ground-truth token labels using area under the curv..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:35",
+  "page": "arxiv:2607.21458v1",
+  "subject": "token-level detector",
+  "object": "Gemma-2b-it",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Detection uses Gemma-2b-it for coauthoring.",
+  "contexts": [
+   "[body] ...or each corpus, we randomly sample 100 human-written texts and apply the generation procedure above to obtain 100 coauthored texts. These corpora cover different writing styles: Writing contains story-style texts, XSUM contains news-style texts, and ESSAY contains education-related texts. The coauthoring LLM is google/gemma-2b-it (Team et al. , 2024 ) , which is publicly available at https://huggingface.co/google/gemma-2b-it . Evaluation criterion . For each text, we compute token-level detection scores and evaluate them against the ground-truth token labels using area under the curve (AUC). We then report the median AUC across documents in each datase...",
+   "[body] ...ve to obtain 100 coauthored texts. These corpora cover different writing styles: Writing contains story-style texts, XSUM contains news-style texts, and ESSAY contains education-related texts. The coauthoring LLM is google/gemma-2b-it (Team et al. , 2024 ) , which is publicly available at https://huggingface.co/google/gemma-2b-it . Evaluation criterion . For each text, we compute token-level detection scores and evaluate them against the ground-truth token labels using area under the curve (AUC). We then report the median AUC across documents in each dataset. Table 1: Ablation of aggregation methods as q q varies from 1 to 8. Dataset Kernel | Adj k \u200b (..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:36",
+  "page": "arxiv:2607.21461v2",
+  "subject": "AREX",
+  "object": "BrowseComp",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "AREX is evaluated on BrowseComp.",
+  "contexts": [
+   "[abstract] ...hrough agentic mid-training and long-horizon reinforcement learning. To mitigate sparse final rewards during long horizon learning, we emphasize key steps where decisive evidence is acquired or erroneous research directions are corrected. We instantiate a dense 4B model and a 122B-A10B Mixture-of-Experts model. Across BrowseComp, WideSearch, DeepSearchQA, Humanity's Last Exam (HLE), and other reasoning and tool-use benchmarks, AREX substantially outperforms comparable-scale baselines and remains competitive with models using substantially more activated parameters...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:37",
+  "page": "arxiv:2607.21461v2",
+  "subject": "AREX",
+  "object": "WideSearch",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "AREX is evaluated on WideSearch.",
+  "contexts": [
+   "[abstract] ...ic mid-training and long-horizon reinforcement learning. To mitigate sparse final rewards during long horizon learning, we emphasize key steps where decisive evidence is acquired or erroneous research directions are corrected. We instantiate a dense 4B model and a 122B-A10B Mixture-of-Experts model. Across BrowseComp, WideSearch, DeepSearchQA, Humanity's Last Exam (HLE), and other reasoning and tool-use benchmarks, AREX substantially outperforms comparable-scale baselines and remains competitive with models using substantially more activated parameters...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:38",
+  "page": "arxiv:2607.21461v2",
+  "subject": "AREX",
+  "object": "DeepSearchQA",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "AREX is evaluated on DeepSearchQA.",
+  "contexts": [
+   "[abstract] ...ing and long-horizon reinforcement learning. To mitigate sparse final rewards during long horizon learning, we emphasize key steps where decisive evidence is acquired or erroneous research directions are corrected. We instantiate a dense 4B model and a 122B-A10B Mixture-of-Experts model. Across BrowseComp, WideSearch, DeepSearchQA, Humanity's Last Exam (HLE), and other reasoning and tool-use benchmarks, AREX substantially outperforms comparable-scale baselines and remains competitive with models using substantially more activated parameters...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:39",
+  "page": "arxiv:2607.21461v2",
+  "subject": "AREX",
+  "object": "Humanity's Last Exam",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "AREX is evaluated on Humanity's Last Exam.",
+  "contexts": [
+   "[abstract] ...orizon reinforcement learning. To mitigate sparse final rewards during long horizon learning, we emphasize key steps where decisive evidence is acquired or erroneous research directions are corrected. We instantiate a dense 4B model and a 122B-A10B Mixture-of-Experts model. Across BrowseComp, WideSearch, DeepSearchQA, Humanity's Last Exam (HLE), and other reasoning and tool-use benchmarks, AREX substantially outperforms comparable-scale baselines and remains competitive with models using substantially more activated parameters...."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:40",
+  "page": "arxiv:2607.21475v1",
+  "subject": "randomized cache eviction",
+  "object": "H2O",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Error certificates are compared to H2O eviction.",
+  "contexts": [
+   "[body] ...d state therefore returns the same reading in a world where the eviction was harmless and in a world where it destroyed the answer. We call this structural property silent failure , and we later measure its empirical form at scale: across thousands of scored generations on real tasks, the retained-attention entropy of H2O- and SnapKV-style eviction predicts their own eviction-induced failures at AUC 0.50, with intervals tight enough to pin it to chance. The escape comes from survey statistics rather than from a better score. If the tail of the cache is evicted by Poisson sampling with inclusion probabilities \u03c0 i \\pi_{i} that the algorithm itself choose..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:41",
+  "page": "arxiv:2607.21475v1",
+  "subject": "randomized cache eviction",
+  "object": "SnapKV",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "Error certificates are compared to SnapKV eviction.",
+  "contexts": [
+   "[body] ...herefore returns the same reading in a world where the eviction was harmless and in a world where it destroyed the answer. We call this structural property silent failure , and we later measure its empirical form at scale: across thousands of scored generations on real tasks, the retained-attention entropy of H2O- and SnapKV-style eviction predicts their own eviction-induced failures at AUC 0.50, with intervals tight enough to pin it to chance. The escape comes from survey statistics rather than from a better score. If the tail of the cache is evicted by Poisson sampling with inclusion probabilities \u03c0 i \\pi_{i} that the algorithm itself chooses, then t..."
+  ]
+ },
+ {
+  "sid": "out_7.jsonl:42",
+  "page": "arxiv:2607.21475v1",
+  "subject": "randomized cache eviction",
+  "object": "LongBench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "Cache eviction is evaluated on LongBench.",
+  "contexts": [
+   "[body] ...curacy tax relative to top- k k (Section 4 ). On synthetic long-context suites the certificate transfers to task level: 16 of 16 model\u2013task cells show positive certificate\u2013failure AUC (mean 0.836). On real workloads, three pre-registered claims died honestly. Question-aware eviction at 25\u201350% budgets is nearly free on LongBench tasks at both 6k and 16k contexts, so overall failure is dominated by task difficulty that no cache-side signal can see; mean output log-probability, a baseline the KV literature does not [...] experiments \u03b5 = 10 \u2212 6 \\varepsilon=10^{-6} , and the certainty layer consists of the protected positions (four attention sinks, thirty-..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:0",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "ClawEval",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "OpenForgeRL is evaluated on ClawEval.",
+  "contexts": [
+   "[body] ...ents to multimodal GUI browser- and computer-use agents. In the daily tool-use setting, OpenForge-Claw (30B-A3B MoE) trains on 3 popular harnesses (ZeroClaw, OpenClaw, and Codex) in addition to the standard ReACT loop, and reaches 31.7 31.7 ( pass 3 \\mathrm{pass}^{3} ) and 55.9 55.9 ( pass \u200b @ \u200b 3 \\mathrm{pass}@3 ) on ClawEval (Ye et al. , 2026 ) , 33.7 33.7 on QwenClawBench (Qwen Team and Data Team, 2026 ) , and 28.1 28.1 on MCPAtlas (Bandi et al. , 2026 ) . In the GUI setting, OpenForge-GUI (8 [...] experiment our framework in diverse environments, we therefore also built a simple pipeline to synthesize SFT and RL tasks for such data-scarce domains (...",
+   "[body] ...Microsoft Azure as the cloud provider for rollout containers. We use a batch size of 8 8 and a group size of 8 8 , and train on 8 \u00d7 \\times B200 GPUs. For additional details, including training hyperparameters and training curves, see Section A.1 . Evaluation Benchmarks We evaluate on two popular claw-based benchmarks, ClawEval (Ye et al. , 2026 ) and QwenClawBench (Qwen Team and Data Team, 2026 ) , and one broader tool-call benchmark, MCPAtlas (Bandi et al. , 2026 ) . For ClawEval, we use the 2026-04-08 release and follow the official protocol, reporting p \u200b a \u200b s \u200b s 3 pass^{3} and p \u200b a \u200b s \u200b s \u200b @ \u200b 3 pass@3 with the benchmark\u2019s default ReACT loop a...",
+   "[body] ...itional details, including training hyperparameters and training curves, see Section A.1 . Evaluation Benchmarks We evaluate on two popular claw-based benchmarks, ClawEval (Ye et al. , 2026 ) and QwenClawBench (Qwen Team and Data Team, 2026 ) , and one broader tool-call benchmark, MCPAtlas (Bandi et al. , 2026 ) . For ClawEval, we use the 2026-04-08 release and follow the official protocol, reporting p \u200b a \u200b s \u200b s 3 pass^{3} and p \u200b a \u200b s \u200b s \u200b @ \u200b 3 pass@3 with the benchmark\u2019s default ReACT loop as the harness. For QwenClawBench, we follow the official implementation and solve the tasks with OpenClaw (O..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:1",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "OSWorld",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "OpenForgeRL is evaluated on OSWorld.",
+  "contexts": [
+   "[abstract] ...idate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some h..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:2",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "Mind2Web",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "OpenForgeRL is evaluated on Mind2Web.",
+  "contexts": [
+   "[abstract] ...e, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:3",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "WebVoyager",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "OpenForgeRL is evaluated on WebVoyager.",
+  "contexts": [
+   "[abstract] ...nd environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others,..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:4",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "MCPAtlas",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "OpenForgeRL is evaluated on MCPAtlas.",
+  "contexts": [
+   "[body] ...B MoE) trains on 3 popular harnesses (ZeroClaw, OpenClaw, and Codex) in addition to the standard ReACT loop, and reaches 31.7 31.7 ( pass 3 \\mathrm{pass}^{3} ) and 55.9 55.9 ( pass \u200b @ \u200b 3 \\mathrm{pass}@3 ) on ClawEval (Ye et al. , 2026 ) , 33.7 33.7 on QwenClawBench (Qwen Team and Data Team, 2026 ) , and 28.1 28.1 on MCPAtlas (Bandi et al. , 2026 ) . In the GUI setting, OpenForge-GUI (8 [...] experiment our framework in diverse environments, we therefore also built a simple pipeline to synthesize SFT and RL tasks for such data-scarce domains (e.g., claw/daily tool use and computer use). We give a high-level overview below and defer full details to Sec...",
+   "[body] ...train on 8 \u00d7 \\times B200 GPUs. For additional details, including training hyperparameters and training curves, see Section A.1 . Evaluation Benchmarks We evaluate on two popular claw-based benchmarks, ClawEval (Ye et al. , 2026 ) and QwenClawBench (Qwen Team and Data Team, 2026 ) , and one broader tool-call benchmark, MCPAtlas (Bandi et al. , 2026 ) . For ClawEval, we use the 2026-04-08 release and follow the official protocol, reporting p \u200b a \u200b s \u200b s 3 pass^{3} and p \u200b a \u200b s \u200b s \u200b @ \u200b 3 pass@3 with the benchmark\u2019s default ReACT loop as the harness. For QwenClawBench, we follow the official implementation and solve the tasks with OpenClaw (O..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:5",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "OpenForgeRL builds on Qwen3.",
+  "contexts": [
+   "[body] ...study the effect of training on diverse harnesses, we pair each task with one of four harnesses for its rollouts: ReACT (solving the task via a simple loop), ZeroClaw, OpenClaw, and Codex. Training dataset statistics is shown in Table 1 and Figure 4 . For more details, please see Section B.2 . Training Details We use Qwen3-30B-A3B-Thinking (Yang et al. , 2025 ) as the backbone model for training. For SFT, we distill trajectories from a stronger teacher model (MiniMax-M2.5, MiniMax ( 2026 ) ): we sample N = 3 N=3 rollouts per task and keep only the successful ones for training. For RL, we continue from the SFT checkpoint and train with GRPO (Guo et al...."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:6",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "Claude",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "OpenForgeRL builds on Claude.",
+  "contexts": [
+   "[body] ...web browsers and desktops (Zhou et al. , 2024 ; Xue et al. , 2025 ; Xie et al. , 2024 ) . To operate effectively in these settings, state-of-the-art agents are rarely a bare language or vision-language model; instead, they are wrapped in increasingly sophisticated inference harnesses : orchestration scaffolds such as Claude Code (Anthropic, 2025 ) , Codex (OpenAI, 2025a ) , and OpenClaw (OpenClaw, 2025 ) that manage multi-turn interaction, tool use, and context while linking the model to external systems such as MCP servers (Anthropic, 2024 ) , browsers, and GUIs. This harness layer is now central to agentic capability: recent progress on agentic benc...",
+   "[abstract] ...Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:7",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "Codex",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "OpenForgeRL builds on Codex.",
+  "contexts": [
+   "[body] ...et al. , 2024 ; Xue et al. , 2025 ; Xie et al. , 2024 ) . To operate effectively in these settings, state-of-the-art agents are rarely a bare language or vision-language model; instead, they are wrapped in increasingly sophisticated inference harnesses : orchestration scaffolds such as Claude Code (Anthropic, 2025 ) , Codex (OpenAI, 2025a ) , and OpenClaw (OpenClaw, 2025 ) that manage multi-turn interaction, tool use, and context while linking the model to external systems such as MCP servers (Anthropic, 2024 ) , browsers, and GUIs. This harness layer is now central to agentic capability: recent progress on agentic benchmarks comes as much from harness...",
+   "[body] ...underlying RL algorithm. We validate OpenForge RL across a broad spectrum of complex agentic settings, ranging from daily tool-use and claw-based agents to multimodal GUI browser- and computer-use agents. In the daily tool-use setting, OpenForge-Claw (30B-A3B MoE) trains on 3 popular harnesses (ZeroClaw, OpenClaw, and Codex) in addition to the standard ReACT loop, and reaches 31.7 31.7 ( pass 3 \\mathrm{pass}^{3} ) and 55.9 55.9 ( pass \u200b @ \u200b 3 \\mathrm{pass}@3 ) on ClawEval (Ye et al. , 2026 ) , 33.7 33.7 on QwenClawBench (Qwen Team and Data Team, 2026 ) , and 28.1 28.1 on MCPAtlas (Bandi et al. , 2026 ) . In the GUI setting, OpenForge-GUI (8 [...] exper...",
+   "[body] ...ates the pipeline, and Section B.1 provides full details. Because each environment is defined by a custom Dockerfile, the pipeline extends naturally from Linux/CLI tasks (e.g., claw) to GUI and computer-use tasks (e.g., rendering virtual displays with Xvfb), and can pre-install arbitrary harnesses such as OpenClaw and Codex. The resulting tasks and environments support both SFT (via distillation from a stronger model\u2019s rollouts) and RL. We will release these data and this pipeline for future use. Figure 4: Distribution (%) of tasks used in the Claw, Computer-Use, and Browser-Use domains (top to bottom) for OpenForge RL training. SFT-task distributions..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:8",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "MiniMax",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "OpenForgeRL builds on MiniMax.",
+  "contexts": [
+   "[body] ...simple loop), ZeroClaw, OpenClaw, and Codex. Training dataset statistics is shown in Table 1 and Figure 4 . For more details, please see Section B.2 . Training Details We use Qwen3-30B-A3B-Thinking (Yang et al. , 2025 ) as the backbone model for training. For SFT, we distill trajectories from a stronger teacher model (MiniMax-M2.5, MiniMax ( 2026 ) ): we sample N = 3 N=3 rollouts per task and keep only the successful ones for training. For RL, we continue from the SFT checkpoint and train with GRPO (Guo et al. , 2025 ; Shao et al. , 2024 ) . To instantiate OpenForge RL , we use veRL (Sheng et al. , 2024 ) as the training backend and Microsoft Azure as...",
+   "[body] ...ZeroClaw, OpenClaw, and Codex. Training dataset statistics is shown in Table 1 and Figure 4 . For more details, please see Section B.2 . Training Details We use Qwen3-30B-A3B-Thinking (Yang et al. , 2025 ) as the backbone model for training. For SFT, we distill trajectories from a stronger teacher model (MiniMax-M2.5, MiniMax ( 2026 ) ): we sample N = 3 N=3 rollouts per task and keep only the successful ones for training. For RL, we continue from the SFT checkpoint and train with GRPO (Guo et al. , 2025 ; Shao et al. , 2024 ) . To instantiate OpenForge RL , we use veRL (Sheng et al. , 2024 ) as the training backend and Microsoft Azure as the cloud prov..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:9",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "GRPO",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "OpenForgeRL builds on GRPO.",
+  "contexts": [
+   "[body] ...3-30B-A3B-Thinking (Yang et al. , 2025 ) as the backbone model for training. For SFT, we distill trajectories from a stronger teacher model (MiniMax-M2.5, MiniMax ( 2026 ) ): we sample N = 3 N=3 rollouts per task and keep only the successful ones for training. For RL, we continue from the SFT checkpoint and train with GRPO (Guo et al. , 2025 ; Shao et al. , 2024 ) . To instantiate OpenForge RL , we use veRL (Sheng et al. , 2024 ) as the training backend and Microsoft Azure as the cloud provider for rollout containers. We use a batch size of 8 8 and a group size of 8 8 , and train on 8 \u00d7 \\times B200 GPUs. For additional details, including training hyper..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:10",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "ReACT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "OpenForgeRL builds on ReACT.",
+  "contexts": [
+   "[body] ...e OpenForge RL across a broad spectrum of complex agentic settings, ranging from daily tool-use and claw-based agents to multimodal GUI browser- and computer-use agents. In the daily tool-use setting, OpenForge-Claw (30B-A3B MoE) trains on 3 popular harnesses (ZeroClaw, OpenClaw, and Codex) in addition to the standard ReACT loop, and reaches 31.7 31.7 ( pass 3 \\mathrm{pass}^{3} ) and 55.9 55.9 ( pass \u200b @ \u200b 3 \\mathrm{pass}@3 ) on ClawEval (Ye et al. , 2026 ) , 33.7 33.7 on QwenClawBench (Qwen Team and Data Team, 2026 ) , and 28.1 28.1 on MCPAtlas (Bandi et al. , 2026 ) . In the GUI setting, OpenForge-GUI (8 [...] experiment our framework in diverse envi...",
+   "[body] ...for OpenForge RL training. SFT-task distributions are similar and shown in Figure A6 . Table 1: Statistics of SFT and RL data used for Claw and GUI agent training. For GUI, we used a slightly modified version of the Kimi-Agent and Molmo-Web harness (see Sections C.3 and C.4 ). Claw GUI(Computer) GUI(Browser) Harnesses ReACT*,ZeroClaw,OpenClaw,Codex Kimi-Agent* MolmoWeb* # SFT Trajectories 892 795 1,496 # RL tasks 343 252 900 4 Experiments In this section, we use OpenForge RL to train agents across a range of harnesses and environments. We then evaluate the trained agents across six popular benchmarks, spanning both text-based tool-use (claw) and multim...",
+   "[body] ...wBench (AI, 2026 ) , which together supply examples that reflect how people daily usage of claw-based agents. Table 1 and Figure 4 report the statistics and category distribution of the resulting tasks. To study the effect of training on diverse harnesses, we pair each task with one of four harnesses for its rollouts: ReACT (solving the task via a simple loop), ZeroClaw, OpenClaw, and Codex. Training dataset statistics is shown in Table 1 and Figure 4 . For more details, please see Section B.2 . Training Details We use Qwen3-30B-A3B-Thinking (Yang et al. , 2025 ) as the backbone model for training. For SFT, we distill trajectories from a stronger teach..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:11",
+  "page": "arxiv:2607.21557v2",
+  "subject": "OpenForgeRL",
+  "object": "SFT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "OpenForgeRL builds on SFT.",
+  "contexts": [
+   "[body] ...@ \u200b 3 \\mathrm{pass}@3 ) on ClawEval (Ye et al. , 2026 ) , 33.7 33.7 on QwenClawBench (Qwen Team and Data Team, 2026 ) , and 28.1 28.1 on MCPAtlas (Bandi et al. , 2026 ) . In the GUI setting, OpenForge-GUI (8 [...] experiment our framework in diverse environments, we therefore also built a simple pipeline to synthesize SFT and RL tasks for such data-scarce domains (e.g., claw/daily tool use and computer use). We give a high-level overview below and defer full details to Section B.1 . The pipeline is built to mimic how a human would curate a task (Xie et al. , 2026 ; Zhou et al. , 2025 ) . Given a target domain and a number of tasks, it spawns agents in...",
+   "[body] ...Because each environment is defined by a custom Dockerfile, the pipeline extends naturally from Linux/CLI tasks (e.g., claw) to GUI and computer-use tasks (e.g., rendering virtual displays with Xvfb), and can pre-install arbitrary harnesses such as OpenClaw and Codex. The resulting tasks and environments support both SFT (via distillation from a stronger model\u2019s rollouts) and RL. We will release these data and this pipeline for future use. Figure 4: Distribution (%) of tasks used in the Claw, Computer-Use, and Browser-Use domains (top to bottom) for OpenForge RL training. SFT-task distributions are similar and shown in Figure A6 . Table 1: Statistics...",
+   "[body] ...nd Codex. The resulting tasks and environments support both SFT (via distillation from a stronger model\u2019s rollouts) and RL. We will release these data and this pipeline for future use. Figure 4: Distribution (%) of tasks used in the Claw, Computer-Use, and Browser-Use domains (top to bottom) for OpenForge RL training. SFT-task distributions are similar and shown in Figure A6 . Table 1: Statistics of SFT and RL data used for Claw and GUI agent training. For GUI, we used a slightly modified version of the Kimi-Agent and Molmo-Web harness (see Sections C.3 and C.4 ). Claw GUI(Computer) GUI(Browser) Harnesses ReACT*,ZeroClaw,OpenClaw,Codex Kimi-Agent* Molm..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:12",
+  "page": "arxiv:2607.21561v1",
+  "subject": "Graph Learning on Ensembles of Cyclic Peptides",
+  "object": "BERT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Graph Learning on Ensembles of Cyclic Peptides builds on BERT.",
+  "contexts": [
+   "[body] ...te metrics over all held-out examples. In each run, 3 folds were used for training, 1 fold for validation, and 1 fold is kept as an unseen test fold used only for post-training prediction. EnsembleEGNN uses all-atom representations (i.e., atom-level node tokens and conformer coordinates) with 12 nearest neighbors, and BERT uses 1D sequence. The target is log \u2061 ( P app ) \\log(P_{\\text{app}}) , and we evaluated MAE, RMSE, Pearson r r , and R 2 R^{2} . All models used the same data splits and fine-tuning protocol ( Table S1 ). 3.3 Baselines We compared four transfer variants under identical training and evaluation splits: (1) BERT-only , a sequence-only b...",
+   "[body] ...ors, and BERT uses 1D sequence. The target is log \u2061 ( P app ) \\log(P_{\\text{app}}) , and we evaluated MAE, RMSE, Pearson r r , and R 2 R^{2} . All models used the same data splits and fine-tuning protocol ( Table S1 ). 3.3 Baselines We compared four transfer variants under identical training and evaluation splits: (1) BERT-only , a sequence-only baseline utilizing the PeptideCLM-2- encoder ( feller2026scaling ) ; (2) EnsembleEGNN-random-init , the geometric model trained from random initialization without pretraining; (3) EnsembleEGNN , the pretrained geometric model; and (4) Hybrid , the full co-training EnsembleEGNN and PeptideCLM-2 with concatenated...",
+   "[body] ...metrics. Cross validation of predictive accuracy on heldout CREMP-CycPeptMPDB data ( n = 2979 n=2979 ). Values are reported as the mean \u00b1 \\pm standard error across 3 independent training replicates. Model R 2 R^{2} Pearson r r MAE RMSE Random-init 0.005 \u00b1 \\pm 0.004 0.113 \u00b1 \\pm 0.016 0.457 \u00b1 \\pm 0.003 0.601 \u00b1 \\pm 0.001 BERT-only 0.439 \u00b1 \\pm 0.053 0.667 \u00b1 \\pm 0.035 0.334 \u00b1 \\pm 0.014 0.451 \u00b1 \\pm 0.022 EnsembleEGNN 0.477 \u00b1 \\pm 0.009 0.699 \u00b1 \\pm 0.009 0.319 \u00b1 \\pm 0.002 0.436 \u00b1 \\pm 0.004 Hybrid 0.538 \u00b1 \\pm 0.029 0.737 \u00b1 \\pm 0.016 0.304 \u00b1 \\pm 0.008 0.409 \u00b1 \\pm 0.013 Table 2: Detailed fold-wise R 2 R^{2} evaluation. Comparison of predictive performance across..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:13",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "PMC-Patients",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MedGame is evaluated on PMC-Patients.",
+  "contexts": [
+   "[body] ...ector supports identity preservation and causal coherence across downstream rendering and interaction. Our contributions are summarized as follows: (1) We in [...] evaluation scores. Details about generated-output statistics are provided in Appendix C . Figure 3: Overview of MedGame Bench. The benchmark contains 5,000 PMC-Patients cases split into 4,000 training and 1,000 test cases, balanced across eight medical specialties with 625 cases each. Among the test cases, 409 have at least one high-similarity patient variant in the training set; here, high-similarity variants refer to PMC-Patients relations with score 2, corresponding to patient summaries f...",
+   "[body] ...rview of MedGame Bench. The benchmark contains 5,000 PMC-Patients cases split into 4,000 training and 1,000 test cases, balanced across eight medical specialties with 625 cases each. Among the test cases, 409 have at least one high-similarity patient variant in the training set; here, high-similarity variants refer to PMC-Patients relations with score 2, corresponding to patient summaries from the same source article. We analyze this related-case overlap in Appendix E.4 . Benchmark Tasks. MedGame Bench contains two evaluation tracks aligned with the two-engine design of MedGame. Medical Narrative Generation evaluates whether a model can convert a patie..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:14",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "MedGame Bench",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "MedGame is evaluated on MedGame Bench.",
+  "contexts": [
+   "[body] ...ask dependencies through this graph, the Director supports identity preservation and causal coherence across downstream rendering and interaction. Our contributions are summarized as follows: (1) We in [...] evaluation scores. Details about generated-output statistics are provided in Appendix C . Figure 3: Overview of MedGame Bench. The benchmark contains 5,000 PMC-Patients cases split into 4,000 training and 1,000 test cases, balanced across eight medical specialties with 625 cases each. Among the test cases, 409 have at least one high-similarity patient variant in the training set; here, high-similarity variants refer to PMC-Patients relations with s...",
+   "[body] ...es each. Among the test cases, 409 have at least one high-similarity patient variant in the training set; here, high-similarity variants refer to PMC-Patients relations with score 2, corresponding to patient summaries from the same source article. We analyze this related-case overlap in Appendix E.4 . Benchmark Tasks. MedGame Bench contains two evaluation tracks aligned with the two-engine design of MedGame. Medical Narrative Generation evaluates whether a model can convert a patient summary into a structured Clinical Storyline with valid Acts, Scenes, Decision Nodes, learner choices, and feedback. Story Direction evaluates whether a model can translat...",
+   "[body] ...am et al. ( 2024 ) , MedGemma Sellergren et al. ( 2025 ) , Claude, and Gemini Team et al. ( 2023 ) . For Medical Narrative Generation, prompted baselines use a 2-shot setting; for Story Direction, prompted baselines use a zero-shot setting. We further fine-tune open-source models on the corresponding training split of MedGame Bench, with the complete model list shown in Tables 2 and 3 . Open-source models in the fine-tuned setting are adapted with LoRA Hu et al. ( 2022 ) in Rank 32 and Alpha 6..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:15",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MedGame builds on Qwen3.",
+  "contexts": [
+   "[body] ...best performance, underlined the second-best, \u2217 denotes fine-tuned models. Model Structure Validation Story Adaptation Medical Accuracy Educational JSON \u2191 \\uparrow Schema \u2191 \\uparrow Strict \u2191 \\uparrow CCI \u2191 \\uparrow CSU \u2191 \\uparrow NQ \u2191 \\uparrow CDA \u2191 \\uparrow ODA \u2191 \\uparrow MEA \u2191 \\uparrow QDQ \u2191 \\uparrow FQ \u2191 \\uparrow \u26ab Qwen3-32B 87.4 84.5 79.4 7.04 5.41 6.92 5.78 4.95 5.04 6.21 5.94 \u26ab Gemma-3-27B 95.6 69.2 58.7 7.67 7.11 7.21 6.08 5.82 5.43 6.12 6.02 \u26ab MedGemma-27B 95.3 76.1 59.3 7.25 7.02 7.53 6.43 6.22 5.78 6.53 6.61 \u26ab Qwen3.5-27B 92.1 91.7 90.8 8.43 8.51 7.89 6.82 6.63 6.32 6.89 6.92 \u25c6 Claude-Sonnet-4.5 99.7 99.5 99.5 8.74 6.99 7.99 7.01 6.77 6.73 7....",
+   "[body] ...\\uparrow CSU \u2191 \\uparrow NQ \u2191 \\uparrow CDA \u2191 \\uparrow ODA \u2191 \\uparrow MEA \u2191 \\uparrow QDQ \u2191 \\uparrow FQ \u2191 \\uparrow \u26ab Qwen3-32B 87.4 84.5 79.4 7.04 5.41 6.92 5.78 4.95 5.04 6.21 5.94 \u26ab Gemma-3-27B 95.6 69.2 58.7 7.67 7.11 7.21 6.08 5.82 5.43 6.12 6.02 \u26ab MedGemma-27B 95.3 76.1 59.3 7.25 7.02 7.53 6.43 6.22 5.78 6.53 6.61 \u26ab Qwen3.5-27B 92.1 91.7 90.8 8.43 8.51 7.89 6.82 6.63 6.32 6.89 6.92 \u25c6 Claude-Sonnet-4.5 99.7 99.5 99.5 8.74 6.99 7.99 7.01 6.77 6.73 7.33 7.52 \u25c6 Gemini-3-Pro 100.0 100.0 100.0 8.78 8.65 8.02 7.26 7.20 6.92 7.10 7.36 \u26ab Qwen3.5-9B \u2217 93.8 91.7 90.9 7.95 8.30 7.67 6.55 6.13 5.71 6.72 6.54 \u26ab Qwen3-32B \u2217 99.6 99.3 99.1 8.23 8.50 7.95 6.60 6.31 5...",
+   "[body] ...7.21 6.08 5.82 5.43 6.12 6.02 \u26ab MedGemma-27B 95.3 76.1 59.3 7.25 7.02 7.53 6.43 6.22 5.78 6.53 6.61 \u26ab Qwen3.5-27B 92.1 91.7 90.8 8.43 8.51 7.89 6.82 6.63 6.32 6.89 6.92 \u25c6 Claude-Sonnet-4.5 99.7 99.5 99.5 8.74 6.99 7.99 7.01 6.77 6.73 7.33 7.52 \u25c6 Gemini-3-Pro 100.0 100.0 100.0 8.78 8.65 8.02 7.26 7.20 6.92 7.10 7.36 \u26ab Qwen3.5-9B \u2217 93.8 91.7 90.9 7.95 8.30 7.67 6.55 6.13 5.71 6.72 6.54 \u26ab Qwen3-32B \u2217 99.6 99.3 99.1 8.23 8.50 7.95 6.60 6.31 5.87 6.82 6.76 \u26ab Gemma-3-27B \u2217 99.7 99.4 98.9 7.77 8.41 7.86 6.39 6.01 5.56 6.79 6.57 \u26ab MedGemma-27B \u2217 99.2 99.0 98.5 8.18 8.42 7.92 6.64 6.32 5.90 6.88 6.83 \u26ab Qwen3.5-27B \u2217 99.9 99.8 99.5 8.62 8.62 8.00 7.05 6.85 6.58..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:16",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "GPT-5.2",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MedGame builds on GPT-5.2.",
+  "contexts": [
+   "[body] ...C), measuring whether generated task plans select appropriate resources, follow tool API usage rules, and provide parameters that match the narrative context. Structure Validation is performed with automated rule-based checking, while content-oriented indicators are scored by LLM-as-a-Judge Zheng et al. ( 2023 ) using GPT-5.2 2 2 2 https://openai.com/index/introducing-gpt-5-2/ , with each indicator rated on a 1\u201310 scale. Complete rubrics, validation rules, and evaluation prompts are provided in Appendix D . Table 2: Quantitative results on Medical Narrative Generation. \u26ab denotes open-source models and \u25c6 denotes commercial models. Bold indicates the bes..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:17",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "Claude",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MedGame builds on Claude.",
+  "contexts": [
+   "[body] ...EA \u2191 \\uparrow QDQ \u2191 \\uparrow FQ \u2191 \\uparrow \u26ab Qwen3-32B 87.4 84.5 79.4 7.04 5.41 6.92 5.78 4.95 5.04 6.21 5.94 \u26ab Gemma-3-27B 95.6 69.2 58.7 7.67 7.11 7.21 6.08 5.82 5.43 6.12 6.02 \u26ab MedGemma-27B 95.3 76.1 59.3 7.25 7.02 7.53 6.43 6.22 5.78 6.53 6.61 \u26ab Qwen3.5-27B 92.1 91.7 90.8 8.43 8.51 7.89 6.82 6.63 6.32 6.89 6.92 \u25c6 Claude-Sonnet-4.5 99.7 99.5 99.5 8.74 6.99 7.99 7.01 6.77 6.73 7.33 7.52 \u25c6 Gemini-3-Pro 100.0 100.0 100.0 8.78 8.65 8.02 7.26 7.20 6.92 7.10 7.36 \u26ab Qwen3.5-9B \u2217 93.8 91.7 90.9 7.95 8.30 7.67 6.55 6.13 5.71 6.72 6.54 \u26ab Qwen3-32B \u2217 99.6 99.3 99.1 8.23 8.50 7.95 6.60 6.31 5.87 6.82 6.76 \u26ab Gemma-3-27B \u2217 99.7 99.4 98.9 7.77 8.41 7.86 6.39 6.01...",
+   "[body] ...dGame in collaborative and learner-facing use. 6.1 Implementation Details We evaluate both MedGame generation tasks with a mixture of open-source general-purpose LLMs, medical LLMs, and commercial frontier models, including Qwen Yang et al. ( 2025a ) , Gemma Team et al. ( 2024 ) , MedGemma Sellergren et al. ( 2025 ) , Claude, and Gemini Team et al. ( 2023 ) . For Medical Narrative Generation, prompted baselines use a 2-shot setting; for Story Direction, prompted baselines use a zero-shot setting. We further fine-tune open-source models on the corresponding training split of MedGame Bench, with the complete model list shown in Tables 2 and 3 . Open-sour..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:18",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "Gemini",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MedGame builds on Gemini.",
+  "contexts": [
+   "[body] ...5.41 6.92 5.78 4.95 5.04 6.21 5.94 \u26ab Gemma-3-27B 95.6 69.2 58.7 7.67 7.11 7.21 6.08 5.82 5.43 6.12 6.02 \u26ab MedGemma-27B 95.3 76.1 59.3 7.25 7.02 7.53 6.43 6.22 5.78 6.53 6.61 \u26ab Qwen3.5-27B 92.1 91.7 90.8 8.43 8.51 7.89 6.82 6.63 6.32 6.89 6.92 \u25c6 Claude-Sonnet-4.5 99.7 99.5 99.5 8.74 6.99 7.99 7.01 6.77 6.73 7.33 7.52 \u25c6 Gemini-3-Pro 100.0 100.0 100.0 8.78 8.65 8.02 7.26 7.20 6.92 7.10 7.36 \u26ab Qwen3.5-9B \u2217 93.8 91.7 90.9 7.95 8.30 7.67 6.55 6.13 5.71 6.72 6.54 \u26ab Qwen3-32B \u2217 99.6 99.3 99.1 8.23 8.50 7.95 6.60 6.31 5.87 6.82 6.76 \u26ab Gemma-3-27B \u2217 99.7 99.4 98.9 7.77 8.41 7.86 6.39 6.01 5.56 6.79 6.57 \u26ab MedGemma-27B \u2217 99.2 99.0 98.5 8.18 8.42 7.92 6.64 6.32 5....",
+   "[body] ...laborative and learner-facing use. 6.1 Implementation Details We evaluate both MedGame generation tasks with a mixture of open-source general-purpose LLMs, medical LLMs, and commercial frontier models, including Qwen Yang et al. ( 2025a ) , Gemma Team et al. ( 2024 ) , MedGemma Sellergren et al. ( 2025 ) , Claude, and Gemini Team et al. ( 2023 ) . For Medical Narrative Generation, prompted baselines use a 2-shot setting; for Story Direction, prompted baselines use a zero-shot setting. We further fine-tune open-source models on the corresponding training split of MedGame Bench, with the complete model list shown in Tables 2 and 3 . Open-source models in..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:19",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "Gemma",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MedGame builds on Gemma.",
+  "contexts": [
+   "[body] ...models. Model Structure Validation Story Adaptation Medical Accuracy Educational JSON \u2191 \\uparrow Schema \u2191 \\uparrow Strict \u2191 \\uparrow CCI \u2191 \\uparrow CSU \u2191 \\uparrow NQ \u2191 \\uparrow CDA \u2191 \\uparrow ODA \u2191 \\uparrow MEA \u2191 \\uparrow QDQ \u2191 \\uparrow FQ \u2191 \\uparrow \u26ab Qwen3-32B 87.4 84.5 79.4 7.04 5.41 6.92 5.78 4.95 5.04 6.21 5.94 \u26ab Gemma-3-27B 95.6 69.2 58.7 7.67 7.11 7.21 6.08 5.82 5.43 6.12 6.02 \u26ab MedGemma-27B 95.3 76.1 59.3 7.25 7.02 7.53 6.43 6.22 5.78 6.53 6.61 \u26ab Qwen3.5-27B 92.1 91.7 90.8 8.43 8.51 7.89 6.82 6.63 6.32 6.89 6.92 \u25c6 Claude-Sonnet-4.5 99.7 99.5 99.5 8.74 6.99 7.99 7.01 6.77 6.73 7.33 7.52 \u25c6 Gemini-3-Pro 100.0 100.0 100.0 8.78 8.65 8.02 7.26 7.20 6...",
+   "[body] ...cational JSON \u2191 \\uparrow Schema \u2191 \\uparrow Strict \u2191 \\uparrow CCI \u2191 \\uparrow CSU \u2191 \\uparrow NQ \u2191 \\uparrow CDA \u2191 \\uparrow ODA \u2191 \\uparrow MEA \u2191 \\uparrow QDQ \u2191 \\uparrow FQ \u2191 \\uparrow \u26ab Qwen3-32B 87.4 84.5 79.4 7.04 5.41 6.92 5.78 4.95 5.04 6.21 5.94 \u26ab Gemma-3-27B 95.6 69.2 58.7 7.67 7.11 7.21 6.08 5.82 5.43 6.12 6.02 \u26ab MedGemma-27B 95.3 76.1 59.3 7.25 7.02 7.53 6.43 6.22 5.78 6.53 6.61 \u26ab Qwen3.5-27B 92.1 91.7 90.8 8.43 8.51 7.89 6.82 6.63 6.32 6.89 6.92 \u25c6 Claude-Sonnet-4.5 99.7 99.5 99.5 8.74 6.99 7.99 7.01 6.77 6.73 7.33 7.52 \u25c6 Gemini-3-Pro 100.0 100.0 100.0 8.78 8.65 8.02 7.26 7.20 6.92 7.10 7.36 \u26ab Qwen3.5-9B \u2217 93.8 91.7 90.9 7.95 8.30 7.67 6.55 6.13 5.7...",
+   "[body] ...7.89 6.82 6.63 6.32 6.89 6.92 \u25c6 Claude-Sonnet-4.5 99.7 99.5 99.5 8.74 6.99 7.99 7.01 6.77 6.73 7.33 7.52 \u25c6 Gemini-3-Pro 100.0 100.0 100.0 8.78 8.65 8.02 7.26 7.20 6.92 7.10 7.36 \u26ab Qwen3.5-9B \u2217 93.8 91.7 90.9 7.95 8.30 7.67 6.55 6.13 5.71 6.72 6.54 \u26ab Qwen3-32B \u2217 99.6 99.3 99.1 8.23 8.50 7.95 6.60 6.31 5.87 6.82 6.76 \u26ab Gemma-3-27B \u2217 99.7 99.4 98.9 7.77 8.41 7.86 6.39 6.01 5.56 6.79 6.57 \u26ab MedGemma-27B \u2217 99.2 99.0 98.5 8.18 8.42 7.92 6.64 6.32 5.90 6.88 6.83 \u26ab Qwen3.5-27B \u2217 99.9 99.8 99.5 8.62 8.62 8.00 7.05 6.85 6.58 6.99 7.12 6 Experiments We organize our experiments around two perspectives. RQ1 and RQ2 evaluate LLM capabilities on the two core MedGame..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:20",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "MedGemma",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MedGame builds on MedGemma.",
+  "contexts": [
+   "[body] ...Educational JSON \u2191 \\uparrow Schema \u2191 \\uparrow Strict \u2191 \\uparrow CCI \u2191 \\uparrow CSU \u2191 \\uparrow NQ \u2191 \\uparrow CDA \u2191 \\uparrow ODA \u2191 \\uparrow MEA \u2191 \\uparrow QDQ \u2191 \\uparrow FQ \u2191 \\uparrow \u26ab Qwen3-32B 87.4 84.5 79.4 7.04 5.41 6.92 5.78 4.95 5.04 6.21 5.94 \u26ab Gemma-3-27B 95.6 69.2 58.7 7.67 7.11 7.21 6.08 5.82 5.43 6.12 6.02 \u26ab MedGemma-27B 95.3 76.1 59.3 7.25 7.02 7.53 6.43 6.22 5.78 6.53 6.61 \u26ab Qwen3.5-27B 92.1 91.7 90.8 8.43 8.51 7.89 6.82 6.63 6.32 6.89 6.92 \u25c6 Claude-Sonnet-4.5 99.7 99.5 99.5 8.74 6.99 7.99 7.01 6.77 6.73 7.33 7.52 \u25c6 Gemini-3-Pro 100.0 100.0 100.0 8.78 8.65 8.02 7.26 7.20 6.92 7.10 7.36 \u26ab Qwen3.5-9B \u2217 93.8 91.7 90.9 7.95 8.30 7.67 6.55 6.13...",
+   "[body] ...6.99 7.99 7.01 6.77 6.73 7.33 7.52 \u25c6 Gemini-3-Pro 100.0 100.0 100.0 8.78 8.65 8.02 7.26 7.20 6.92 7.10 7.36 \u26ab Qwen3.5-9B \u2217 93.8 91.7 90.9 7.95 8.30 7.67 6.55 6.13 5.71 6.72 6.54 \u26ab Qwen3-32B \u2217 99.6 99.3 99.1 8.23 8.50 7.95 6.60 6.31 5.87 6.82 6.76 \u26ab Gemma-3-27B \u2217 99.7 99.4 98.9 7.77 8.41 7.86 6.39 6.01 5.56 6.79 6.57 \u26ab MedGemma-27B \u2217 99.2 99.0 98.5 8.18 8.42 7.92 6.64 6.32 5.90 6.88 6.83 \u26ab Qwen3.5-27B \u2217 99.9 99.8 99.5 8.62 8.62 8.00 7.05 6.85 6.58 6.99 7.12 6 Experiments We organize our experiments around two perspectives. RQ1 and RQ2 evaluate LLM capabilities on the two core MedGame generation tasks, including case-grounded medical narrative generation...",
+   "[body] ...ic fine-tuning. RQ3 and RQ4 examine MedGame in collaborative and learner-facing use. 6.1 Implementation Details We evaluate both MedGame generation tasks with a mixture of open-source general-purpose LLMs, medical LLMs, and commercial frontier models, including Qwen Yang et al. ( 2025a ) , Gemma Team et al. ( 2024 ) , MedGemma Sellergren et al. ( 2025 ) , Claude, and Gemini Team et al. ( 2023 ) . For Medical Narrative Generation, prompted baselines use a 2-shot setting; for Story Direction, prompted baselines use a zero-shot setting. We further fine-tune open-source models on the corresponding training split of MedGame Bench, with the complete model li..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:21",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MedGame builds on LoRA.",
+  "contexts": [
+   "[body] ...n, prompted baselines use a 2-shot setting; for Story Direction, prompted baselines use a zero-shot setting. We further fine-tune open-source models on the corresponding training split of MedGame Bench, with the complete model list shown in Tables 2 and 3 . Open-source models in the fine-tuned setting are adapted with LoRA Hu et al. ( 2022 ) in Rank 32 and Alpha 6..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:22",
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "object": "zero-shot",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "MedGame builds on zero-shot.",
+  "contexts": [
+   "[body] ...LMs, medical LLMs, and commercial frontier models, including Qwen Yang et al. ( 2025a ) , Gemma Team et al. ( 2024 ) , MedGemma Sellergren et al. ( 2025 ) , Claude, and Gemini Team et al. ( 2023 ) . For Medical Narrative Generation, prompted baselines use a 2-shot setting; for Story Direction, prompted baselines use a zero-shot setting. We further fine-tune open-source models on the corresponding training split of MedGame Bench, with the complete model list shown in Tables 2 and 3 . Open-source models in the fine-tuned setting are adapted with LoRA Hu et al. ( 2022 ) in Rank 32 and Alpha 6..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:23",
+  "page": "arxiv:2607.21595v1",
+  "subject": "3D-Aware VLMs Implicit",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "3D-Aware VLMs Implicit builds on Qwen2.5.",
+  "contexts": [
+   "[body] ...[ vgllm , fan2025vlm , wu2025spatial , huang2025mllms ] that solely rely on implicit 3D representations, VLM-IE3D introduces two complementary geometry-aware representations to intrinsically inject strong 3D inductive biases into VLMs: (i) Implicit Geometry Toke [...] 4 Experiments 4.1 Implementation Details We adopt Qwen2.5-VL-3B [ Qwen2.5-VL ] as our VLM backbone and AnySplat [ anysplat ] as our 3D geometry encoder. The 2D visual encoder is the same as that in Qwen2.5-VL [ Qwen2.5-VL ] . We train the model for one epoch using the Adam optimizer with a warmup ratio of 0.03. The learning rate is gradually increased to 1e-5 and subsequently decayed to...",
+   "[body] ...25vlm , wu2025spatial , huang2025mllms ] that solely rely on implicit 3D representations, VLM-IE3D introduces two complementary geometry-aware representations to intrinsically inject strong 3D inductive biases into VLMs: (i) Implicit Geometry Toke [...] 4 Experiments 4.1 Implementation Details We adopt Qwen2.5-VL-3B [ Qwen2.5-VL ] as our VLM backbone and AnySplat [ anysplat ] as our 3D geometry encoder. The 2D visual encoder is the same as that in Qwen2.5-VL [ Qwen2.5-VL ] . We train the model for one epoch using the Adam optimizer with a warmup ratio of 0.03. The learning rate is gradually increased to 1e-5 and subsequently decayed to zero. The batch...",
+   "[body] ...etry-aware representations to intrinsically inject strong 3D inductive biases into VLMs: (i) Implicit Geometry Toke [...] 4 Experiments 4.1 Implementation Details We adopt Qwen2.5-VL-3B [ Qwen2.5-VL ] as our VLM backbone and AnySplat [ anysplat ] as our 3D geometry encoder. The 2D visual encoder is the same as that in Qwen2.5-VL [ Qwen2.5-VL ] . We train the model for one epoch using the Adam optimizer with a warmup ratio of 0.03. The learning rate is gradually increased to 1e-5 and subsequently decayed to zero. The batch size is set to 1 per GPU. During training, the 2D visual encoder and 3D geometry encoder are frozen, while the VLM backbone and 3D e..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:24",
+  "page": "arxiv:2607.21665v1",
+  "subject": "Physically Constrained Federated",
+  "object": "ReACT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Physically Constrained Federated builds on ReACT.",
+  "contexts": [
+   "[body] ...ystem controlled through RAN Intelligent Controllers (RICs) [ 16 ] . The non-real-time RIC (Non-RT RIC) hosts rApps for management and model training, and the near-real-time RIC (Near-RT RIC) hosts xApps for online inference and control [ 16 ] . This architecture makes proactive service assurance feasible. Rather than reacting to a breached service-level agreement (SLA), an operator can predict per-slice SLA violations a short horizon ahead and act before they occur [ 6 ] . SLA-violation prediction in O-RAN is intrinsically distributed, and the trust boundaries run inside a single network. Network slices are leased to enterprises and mobile virtual net..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:25",
+  "page": "arxiv:2607.21672v1",
+  "subject": "Pixels for Programs?",
+  "object": "Codex",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Pixels for Programs? builds on Codex.",
+  "contexts": [
+   "[body] ...ize. Provider Models Successful calls Complete pairs Anthropic 4 360 180 OpenAI 6 540 270 Gemini 5 450 225 Anthropic requests use the Messages API and one output token. OpenAI requests use the Responses API, high image detail, and at most 16 output tokens; the configured reasoning effort is \u201cnone\u201d except \u201clow\u201d for the Codex model. Gemini requests use Vertex AI generate_content with at most 16 output tokens and an eight-second inter-request delay. All variants append exactly: \u201cSummarize what this code does in one sentence.\u201d Output quality is not scored; generation exists only to produce a valid request and usage response. Each provider script writes a J..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:26",
+  "page": "arxiv:2607.21672v1",
+  "subject": "Pixels for Programs?",
+  "object": "Gemini",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Pixels for Programs? builds on Gemini.",
+  "contexts": [
+   "[body] ...5 complete text/image pairs, aggregate image-to-text ratios are 0.135, 0.194, and 0.242, corresponding to reported input-token reductions of 86.5%, 80.6%, and 75.8%, respectively. These totals conceal materially different break-even behavior: Anthropic and OpenAI images receive lower counts at every tested size, while Gemini images require 6.95 times as many tokens at 20 lines and cross below text only at 200 lines in the aggregate. A targeted audit also reproduces non-monotonic Gemini image accounting across a page boundary. This study measures black-box request accounting for one compact rendering pipeline. It does not measure semantic fidelity, task...",
+   "[body] ..., respectively. These totals conceal materially different break-even behavior: Anthropic and OpenAI images receive lower counts at every tested size, while Gemini images require 6.95 times as many tokens at 20 lines and cross below text only at 200 lines in the aggregate. A targeted audit also reproduces non-monotonic Gemini image accounting across a page boundary. This study measures black-box request accounting for one compact rendering pipeline. It does not measure semantic fidelity, task accuracy, latency, monetary cost, or coding-agent efficiency. We release the scripts, revision-pinned corpus specification, raw usage records, validators, and dete...",
+   "[body] ...ned source prefix and task instruction, but the compact-image arm additionally transforms indentation before rendering. Reported usage measures the complete pipeline rather than a modality-only causal effect. 3.4. Providers, requests, and collection We queried four Anthropic model aliases, six OpenAI aliases, and five Gemini aliases during July 2026. Table 1 reports successful calls and complete pairs for each provider. Table 1. Measurement coverage. A complete pair contains successful raw-text and compact-image requests for the same provider, model, language, and size. Provider Models Successful calls Complete pairs Anthropic 4 360 180 OpenAI 6 540 27..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:27",
+  "page": "arxiv:2607.21677v1",
+  "subject": "Enhancing SLMs for",
+  "object": "Qwen3",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enhancing SLMs for builds on Qwen3.",
+  "contexts": [
+   "[body] ...ting IV-B 4 Ideas for the optimization step IV-B 5 Sustainability metric IV-C Adaptations for benchmarking V Results V-A Small multi-sampling generation vs large single-generation V-B Agentic AI method: Using compiler errors as feedback V-C Analysis of errors in the generated code V-C 1 Qwen2.5-Coder-3B-Instruct V-C 2 Qwen3-4B with thinking enabled V-C 3 Hybrid mode V-C 4 Qwen3-Coder-Next with thinking enabled VI Discussion VII Conclusions &amp; Future directions References License: CC BY 4.0 arXiv:2607.21677v1 [cs.SE] 23 Jul 2026 Enhancing SLMs for Sustainable Code Optimization in Radio-Astronomy Elisa Chiarotto Jingbo Li P. Chris Broekema Rob V. van...",
+   "[body] ...ainability metric IV-C Adaptations for benchmarking V Results V-A Small multi-sampling generation vs large single-generation V-B Agentic AI method: Using compiler errors as feedback V-C Analysis of errors in the generated code V-C 1 Qwen2.5-Coder-3B-Instruct V-C 2 Qwen3-4B with thinking enabled V-C 3 Hybrid mode V-C 4 Qwen3-Coder-Next with thinking enabled VI Discussion VII Conclusions &amp; Future directions References License: CC BY 4.0 arXiv:2607.21677v1 [cs.SE] 23 Jul 2026 Enhancing SLMs for Sustainable Code Optimization in Radio-Astronomy Elisa Chiarotto Jingbo Li P. Chris Broekema Rob V. van Nieuwpoort Abstract Recent Large Language Models (LLMs)...",
+   "[body] ...d by using only a naive implementation, which already increases performance. For this experiment, we used an AMD EPYC 9255 system with 48 cores and 768 GiB memory, with no GPUs. IV-B 1 Base models We used 3 models from the Qwen family and 2 models from other families as a control group: 1. Qwen2.5-Coder-3B-Instruct 2. Qwen3-4B 3. Qwen3-Coder-Next (Mixture of Experts: 80B-A3B) 4. CodeLlama-7b-Instruct-hf: 5. CodeGemma-7b-it All models were imported from using the Transformers library. There are two main roles in the agent: one is the \u201ccoder\u201d, which will write that baseline code when the code is not provided, and one is the \u201cdebugger\u201d, which will try to..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:28",
+  "page": "arxiv:2607.21677v1",
+  "subject": "Enhancing SLMs for",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enhancing SLMs for builds on Qwen2.5.",
+  "contexts": [
+   "[body] ...tools IV-B 3 Reasoning and prompting IV-B 4 Ideas for the optimization step IV-B 5 Sustainability metric IV-C Adaptations for benchmarking V Results V-A Small multi-sampling generation vs large single-generation V-B Agentic AI method: Using compiler errors as feedback V-C Analysis of errors in the generated code V-C 1 Qwen2.5-Coder-3B-Instruct V-C 2 Qwen3-4B with thinking enabled V-C 3 Hybrid mode V-C 4 Qwen3-Coder-Next with thinking enabled VI Discussion VII Conclusions &amp; Future directions References License: CC BY 4.0 arXiv:2607.21677v1 [cs.SE] 23 Jul 2026 Enhancing SLMs for Sustainable Code Optimization in Radio-Astronomy Elisa Chiarotto Jingbo...",
+   "[body] ...nce of a single larger model run? Can this be done with equal or fewer resources? 2. Can the use of compiler feedback as context improve the performance of small language models? IV-A Small multi-sampling generation vs large single generation To investigate the first research question, we compared repeated sampling of Qwen2.5-Coder-7B with single generation using Qwen2.5-Coder-32B. We evaluated the models on CrossCodeEval [ 26 ] , a multilingual benchmark for repository-level cross-file code completion, in the rg1 setting with cross-file context retrieved using UniXCoder similarity. We evaluated both models on Python and C#, using 10 seeds to construct...",
+   "[body] ...done with equal or fewer resources? 2. Can the use of compiler feedback as context improve the performance of small language models? IV-A Small multi-sampling generation vs large single generation To investigate the first research question, we compared repeated sampling of Qwen2.5-Coder-7B with single generation using Qwen2.5-Coder-32B. We evaluated the models on CrossCodeEval [ 26 ] , a multilingual benchmark for repository-level cross-file code completion, in the rg1 setting with cross-file context retrieved using UniXCoder similarity. We evaluated both models on Python and C#, using 10 seeds to construct 10 groups of 150 randomly sampled tasks for e..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:29",
+  "page": "arxiv:2607.21677v1",
+  "subject": "Enhancing SLMs for",
+  "object": "Gemma",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enhancing SLMs for builds on Gemma.",
+  "contexts": [
+   "[body] ...t, we used an AMD EPYC 9255 system with 48 cores and 768 GiB memory, with no GPUs. IV-B 1 Base models We used 3 models from the Qwen family and 2 models from other families as a control group: 1. Qwen2.5-Coder-3B-Instruct 2. Qwen3-4B 3. Qwen3-Coder-Next (Mixture of Experts: 80B-A3B) 4. CodeLlama-7b-Instruct-hf: 5. CodeGemma-7b-it All models were imported from using the Transformers library. There are two main roles in the agent: one is the \u201ccoder\u201d, which will write that baseline code when the code is not provided, and one is the \u201cdebugger\u201d, which will try to fix the code if it returns an error (either due to syntax or failed unit tests). We explored th..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:30",
+  "page": "arxiv:2607.21677v1",
+  "subject": "Enhancing SLMs for",
+  "object": "RAG",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Enhancing SLMs for builds on RAG.",
+  "contexts": [
+   "[body] ...ackground and Related Work III-A SLMs and LLMs under fixed compute budgets III-B Retrieval Augmented Generation III-C Reasoning schemas III-D External tools IV Methodology IV-A Small multi-sampling generation vs large single generation IV-B Agentic AI method: Using compiler errors as feedback IV-B 1 Base models IV-B 2 RAG and tools IV-B 3 Reasoning and prompting IV-B 4 Ideas for the optimization step IV-B 5 Sustainability metric IV-C Adaptations for benchmarking V Results V-A Small multi-sampling generation vs large single-generation V-B Agentic AI method: Using compiler errors as feedback V-C Analysis of errors in the generated code V-C 1 Qwen2.5-Code...",
+   "[body] ...demonstrate that multi-sampling SLMs can match or surpass larger single-generation models with fewer computational resources. We also show that feeding compiler output back into the SLMs leads to consistent improvements across all tested models. Our approach is generic, and can also use Retrieval Augmented Generation (RAG) as well as static and dynamic analysis tools in the code generation pipeline. I Introduction Modern Large Language Models (LLMs) are now widely used for code generation tasks, with ever increasing quality [ 15 , 53 , 14 , 33 ] . The amount of information LLMs can store is directly correlated with their size [ 43 , 47 , 42 ] , and the...",
+   "[body] ...ements with the black dashed line are implemented but not relevant for the experiments. Another approach to address the fact that smaller models tend to have lower performance than larger models, is to use an agentic workflow. We implemented this to give the LMs access to the existing codebase and domain knowledge via RAG, along with feedback from tools integrated in a revision loop (see Fig. 4 ), which will be used to test the model\u2019s suggestions and reach better performance. Among the tools, we included a tool to run the code (either an interpreter or a compiler) to check syntactic correctness and, if unit tests are provided, it will also check seman..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:31",
+  "page": "arxiv:2607.21680v1",
+  "subject": "Encoding Invisible Causation for Bridge Diagnostic Agents",
+  "object": "BERT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Encoding Invisible Causation for Bridge Diagnostic Agents builds on BERT.",
+  "contexts": [
+   "[body] ...erse unseen samples (47.0% vs. 34.0%). 4. Class-wise Failure Mode Analysis : A 100-sample diverse evaluation across all 10 classes reveals systematic failure classes (Water Accumulation: 0%, Soil Liquefaction: \u2264 \\leq 10%, ASR: \u2264 \\leq 20%), identifying where targeted data augmentation is most needed. 2 Related Work 2.1 BERT Fine-tuning for Sequence Classification BERT [ 6 ] established the paradigm of pre-training large Transformer models and fine-tuning them on downstream tasks. For classification, a linear head is appended to the [CLS] token representation. Japanese-specific models such as cl-tohoku/bert-large-japanese-v2 [ 21 ] extend this paradigm t...",
+   "[body] ...ss-wise Failure Mode Analysis : A 100-sample diverse evaluation across all 10 classes reveals systematic failure classes (Water Accumulation: 0%, Soil Liquefaction: \u2264 \\leq 10%, ASR: \u2264 \\leq 20%), identifying where targeted data augmentation is most needed. 2 Related Work 2.1 BERT Fine-tuning for Sequence Classification BERT [ 6 ] established the paradigm of pre-training large Transformer models and fine-tuning them on downstream tasks. For classification, a linear head is appended to the [CLS] token representation. Japanese-specific models such as cl-tohoku/bert-large-japanese-v2 [ 21 ] extend this paradigm to morphologically rich Japanese text using ch...",
+   "[body] ...most needed. 2 Related Work 2.1 BERT Fine-tuning for Sequence Classification BERT [ 6 ] established the paradigm of pre-training large Transformer models and fine-tuning them on downstream tasks. For classification, a linear head is appended to the [CLS] token representation. Japanese-specific models such as cl-tohoku/bert-large-japanese-v2 [ 21 ] extend this paradigm to morphologically rich Japanese text using character-level tokenization, making them well-suited for domain-specific inspection texts that frequently include technical compound nouns. 2.2 Parameter-Efficient Fine-Tuning and Quantization LoRA [ 10 ] inserts low-rank adapters into pr [...]..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:32",
+  "page": "arxiv:2607.21680v1",
+  "subject": "Encoding Invisible Causation for Bridge Diagnostic Agents",
+  "object": "ReACT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Encoding Invisible Causation for Bridge Diagnostic Agents builds on ReACT.",
+  "contexts": [
+   "[body] ...s the number of qualified engineers. A fundamental asymmetry underlies the inspection process: damage is visible but its cause is not . An inspector can observe surface cracking, spalling, or efflorescence, yet correctly diagnosing the root cause\u2014whether salt-induced rebar corrosion, freeze\u2013thaw cycling, alkali\u2013silica reaction (ASR), or fatigue from traffic loading\u2014demands years of domain expertise encoded as tacit knowledge. This invisible causal layer is precisely what impedes automation: off-the-shelf image classifiers label damage types but cannot explain why the damage occurred. We argue that this tacit causal knowledge can be encoded from existin..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:33",
+  "page": "arxiv:2607.21680v1",
+  "subject": "Encoding Invisible Causation for Bridge Diagnostic Agents",
+  "object": "LoRA",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Encoding Invisible Causation for Bridge Diagnostic Agents builds on LoRA.",
+  "contexts": [
+   "[body] ...abling context-aware damage cause classification at training and inference time. 2. Golden Testset Construction : We introduce a stratified, deduplicated, and difficulty-tagged benchmark of 116 samples spanning all 10 damage cause classes (Section 5.6 ), enabling reproducible comparison across fine-tuning methods. 3. QLoRA as Optimal Fine-tuning Strategy : A controlled comparison of LoRA, QLoRA, and QA-LoRA on the Golden Testset demonstrates that QLoRA achieves identical test accuracy (87.07%) to full-precision LoRA while delivering 11% faster inference, 72% lower GPU memory (1.45 GB \u2192 \\to 0.40 GB), and superior generalization on 100 diverse unseen sam...",
+   "[body] ...nference time. 2. Golden Testset Construction : We introduce a stratified, deduplicated, and difficulty-tagged benchmark of 116 samples spanning all 10 damage cause classes (Section 5.6 ), enabling reproducible comparison across fine-tuning methods. 3. QLoRA as Optimal Fine-tuning Strategy : A controlled comparison of LoRA, QLoRA, and QA-LoRA on the Golden Testset demonstrates that QLoRA achieves identical test accuracy (87.07%) to full-precision LoRA while delivering 11% faster inference, 72% lower GPU memory (1.45 GB \u2192 \\to 0.40 GB), and superior generalization on 100 diverse unseen samples (47.0% vs. 34.0%). 4. Class-wise Failure Mode Analysis : A 10...",
+   "[body] ...e time. 2. Golden Testset Construction : We introduce a stratified, deduplicated, and difficulty-tagged benchmark of 116 samples spanning all 10 damage cause classes (Section 5.6 ), enabling reproducible comparison across fine-tuning methods. 3. QLoRA as Optimal Fine-tuning Strategy : A controlled comparison of LoRA, QLoRA, and QA-LoRA on the Golden Testset demonstrates that QLoRA achieves identical test accuracy (87.07%) to full-precision LoRA while delivering 11% faster inference, 72% lower GPU memory (1.45 GB \u2192 \\to 0.40 GB), and superior generalization on 100 diverse unseen samples (47.0% vs. 34.0%). 4. Class-wise Failure Mode Analysis : A 100-sampl..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:34",
+  "page": "arxiv:2607.21680v1",
+  "subject": "Encoding Invisible Causation for Bridge Diagnostic Agents",
+  "object": "RAG",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Encoding Invisible Causation for Bridge Diagnostic Agents builds on RAG.",
+  "contexts": [
+   "*** no mention located ***"
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:35",
+  "page": "arxiv:2607.21685v1",
+  "subject": "Evaluation design conditions the expert-vs-auto MeSH gap",
+  "object": "BERT",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Evaluation design conditions the expert-vs-auto MeSH gap builds on BERT.",
+  "contexts": [
+   "[body] ...ult rather than an experimental variable. This paper takes up both questions through a controlled experiment on three Cohen topics, holding the MeSH vocabulary constant and varying only the assignment mechanism. Two classifier families serve as the test platform: a bag-of-words logistic regression classifier and BiomedBERT (formerly PubMedBERT) Gu et al. ( 2021 ) , a domain-pretrained contextual transformer. We characterise each topic-classifier combination as a distribution \u2014 seven-rerun for bag-of-words, five-seed for BiomedBERT \u2014 and supplement the main comparison with two robustness analyses on the Statins finding (subsampling to matched corpus siz...",
+   "[body] ...perimental variable. This paper takes up both questions through a controlled experiment on three Cohen topics, holding the MeSH vocabulary constant and varying only the assignment mechanism. Two classifier families serve as the test platform: a bag-of-words logistic regression classifier and BiomedBERT (formerly PubMedBERT) Gu et al. ( 2021 ) , a domain-pretrained contextual transformer. We characterise each topic-classifier combination as a distribution \u2014 seven-rerun for bag-of-words, five-seed for BiomedBERT \u2014 and supplement the main comparison with two robustness analyses on the Statins finding (subsampling to matched corpus size; 10-fold cross-vali...",
+   "[body] ...Two classifier families serve as the test platform: a bag-of-words logistic regression classifier and BiomedBERT (formerly PubMedBERT) Gu et al. ( 2021 ) , a domain-pretrained contextual transformer. We characterise each topic-classifier combination as a distribution \u2014 seven-rerun for bag-of-words, five-seed for BiomedBERT \u2014 and supplement the main comparison with two robustness analyses on the Statins finding (subsampling to matched corpus size; 10-fold cross-validation at full corpus size) and an empirical power analysis on the per-topic variances. Our research questions and paired hypotheses are: \u2022 RQ1 / H1. Does mechanical MeSH assignment produce c..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:36",
+  "page": "arxiv:2607.21692v1",
+  "subject": "Learning What Matters",
+  "object": "Qwen2.5",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Learning What Matters builds on Qwen2.5.",
+  "contexts": [
+   "[abstract] ...tor trained on attention achieves 41% accuracy, while the same selector trained on causal evidence reaches 99% and matches the teacher. These evidence sets require no annotation: recovered from a frozen teacher by masking alone, they train selectors to the same accuracy. We find the same conflict in pretrained models: Qwen2.5-3B gives more attention to an outdated fact than the current one on 58% of conflicting-fact examples despite answering correctly, while Gemma-2-9B rises from 56% to 99% accuracy when restricted to the two relevant sentences. Attention shows where a model looks, not necessarily what its answer depends on; across the regimes we test..."
+  ]
+ },
+ {
+  "sid": "out_9.jsonl:37",
+  "page": "arxiv:2607.21692v1",
+  "subject": "Learning What Matters",
+  "object": "Gemma",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "Learning What Matters builds on Gemma.",
+  "contexts": [
+   "[abstract] ...idence sets require no annotation: recovered from a frozen teacher by masking alone, they train selectors to the same accuracy. We find the same conflict in pretrained models: Qwen2.5-3B gives more attention to an outdated fact than the current one on 58% of conflicting-fact examples despite answering correctly, while Gemma-2-9B rises from 56% to 99% accuracy when restricted to the two relevant sentences. Attention shows where a model looks, not necessarily what its answer depends on; across the regimes we tested, that dependence matched or outperformed attention as a training target...."
+  ]
+ },
+ {
+  "sid": "out_g1.jsonl:0",
+  "page": "arxiv:2607.20909v1",
+  "subject": "RadioTrace",
+  "object": "RadioMapSeer",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "RadioTrace is evaluated on the RadioMapSeer dataset containing 700 building maps with 80 Tx locations each.",
+  "contexts": [
+   "[body] ...D Initialization for Tx Coordinates \u03a9 T \\Omega_{T} IV Theoretical Analysis V Experiments V-A Dataset V-B Setup 1 1 1 The source code is available at https://github.com/YannLeo/RadioTrace V-B 1 Sampling modes V-B 2 Implementation Details V-B 3 Baselines V-C Metrics V-D Results of comparable experiments V-D 1 Results on RadioMapSeer dataset V-D 2 Results on BART-Lab dataset V-E Ablation Studies V-F Hyperparameter sensitivity V-F 1 Variance \u03c3 2 \\sigma^{2} of the Gaussian Tx map V-F 2 Momentum coefficient \u03b2 \\beta in GD V-G Results under noisy observations V-H Localization accuracy V-I Extreme low sampling rate performance V-J Runtime and complexity V-K Sca...",
+   "[body] ...ate and provides a geometry-consistent starting point. Moreover, we provide a stochastic stability analysis for the Tx-coordinate refinement component, showing that the Tx update remains stable under perturbations [...] Experiments V-A Dataset In this study, we evaluate the performance of the proposed method using the RadioMapSeer [ 7 ] and the BART-Lab dataset [ 20 ] . The RadioMapSeer dataset contains 700 building maps, each with 80 Tx locations. These building maps cover major cities such as Ankara, Berlin, and so on. The heights of Tx, receivers, and buildings are defined as 1.5 meters (m), 1.5 m, and 25 m, respectively. The Tx power is set to 23 d...",
+   "[body] ...reover, we provide a stochastic stability analysis for the Tx-coordinate refinement component, showing that the Tx update remains stable under perturbations [...] Experiments V-A Dataset In this study, we evaluate the performance of the proposed method using the RadioMapSeer [ 7 ] and the BART-Lab dataset [ 20 ] . The RadioMapSeer dataset contains 700 building maps, each with 80 Tx locations. These building maps cover major cities such as Ankara, Berlin, and so on. The heights of Tx, receivers, and buildings are defined as 1.5 meters (m), 1.5 m, and 25 m, respectively. The Tx power is set to 23 dBm, and the carrier frequency is 5.9 GHz. The RM are gene..."
+  ]
+ }
+]
