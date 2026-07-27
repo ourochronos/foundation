@@ -41,6 +41,8 @@ CASES = [
     ("brief_grounded", lambda: (lambda b: not b["abstain"] and all(
         s["citations"] for s in b["sentences"]))(
         kb.brief("Andrey Kolmogorov"))),
+    ("arxiv_views_live", lambda:
+        kb.views("independence relations")["status"] == "answered"),
 ]
 
 results, fails = {}, []
