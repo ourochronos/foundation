@@ -1,0 +1,802 @@
+[
+ {
+  "page": "Epistemic virtue",
+  "statement": "Linda Zagzebski wrote Virtues of the Mind in 1996.",
+  "subject": "Linda Zagzebski",
+  "pid": "P50",
+  "object": "Virtues of the Mind",
+  "audit_correct": true
+ },
+ {
+  "page": "Mathematics",
+  "statement": "Pythagoras (P106): mathematician",
+  "subject": "Pythagoras",
+  "pid": "P106",
+  "object": "mathematician",
+  "audit_correct": true
+ },
+ {
+  "page": "Thomas Kuhn",
+  "statement": "Kuhn wrote The Structure of Scientific Revolutions 1962",
+  "subject": "Thomas Kuhn",
+  "pid": "P50",
+  "object": "The Structure of Scientific Revolutions",
+  "audit_correct": true
+ },
+ {
+  "page": "John Edensor Littlewood",
+  "statement": "John Edensor Littlewood (P570) 6 September 1977",
+  "subject": "John Edensor Littlewood",
+  "pid": "P570",
+  "object": "6 September 1977",
+  "audit_correct": true
+ },
+ {
+  "page": "Omar Khayyam",
+  "statement": "Omar Khayyam contributed to deeper understanding of Euclid's parallel axiom",
+  "subject": "Omar Khayyam",
+  "pid": "P800",
+  "object": "Euclid's parallel axiom",
+  "audit_correct": false
+ },
+ {
+  "page": "Georg Cantor",
+  "statement": "Rudolph Cantor was born in 1886",
+  "subject": "Rudolph Cantor",
+  "pid": "P569",
+  "object": "1886",
+  "audit_correct": true
+ },
+ {
+  "page": "Olga Ladyzhenskaya",
+  "statement": "Olga Ladyzhenskaya provided first rigorous proofs of convergence of finite difference method for Navier-Stokes equations",
+  "subject": "Olga Ladyzhenskaya",
+  "pid": "P800",
+  "object": "Navier-Stokes equations",
+  "audit_correct": false
+ },
+ {
+  "page": "Philosophy",
+  "statement": "Wittgenstein was an Austrian philosopher",
+  "subject": "Wittgenstein",
+  "pid": "P106",
+  "object": "philosopher",
+  "audit_correct": true
+ },
+ {
+  "page": "Euclidean geometry",
+  "statement": "Euclidean geometry is an example of synthetic geometry.",
+  "subject": "Euclidean geometry",
+  "pid": "P31",
+  "object": "synthetic geometry",
+  "audit_correct": true
+ },
+ {
+  "page": "Perception",
+  "statement": "The percept is the mental recreation of the distal stimulus",
+  "subject": "percept",
+  "pid": "P31",
+  "object": "mental recreation",
+  "audit_correct": false
+ },
+ {
+  "page": "Philosophy of science",
+  "statement": "Determinism holds that all events are caused by prior events",
+  "subject": "Determinism",
+  "pid": "P31",
+  "object": "philosophical view",
+  "audit_correct": false
+ },
+ {
+  "page": "Gottfried Wilhelm Leibniz",
+  "statement": "Gottfried Wilhelm Leibniz attended University of Leipzig",
+  "subject": "Gottfried Wilhelm Leibniz",
+  "pid": "P69",
+  "object": "University of Leipzig",
+  "audit_correct": true
+ },
+ {
+  "page": "Abstract algebra",
+  "statement": "published Treatise of Algebra",
+  "subject": "George Peacock",
+  "pid": "P50",
+  "object": "Treatise of Algebra",
+  "audit_correct": true
+ },
+ {
+  "page": "Alan Turing",
+  "statement": "was mathematician and logician",
+  "subject": "Alan Turing",
+  "pid": "P106",
+  "object": "mathematician",
+  "audit_correct": true
+ },
+ {
+  "page": "Ludwig Wittgenstein",
+  "statement": "Tractatus Logico-Philosophicus (P50): Ludwig Wittgenstein",
+  "subject": "Tractatus Logico-Philosophicus",
+  "pid": "P50",
+  "object": "Ludwig Wittgenstein",
+  "audit_correct": true
+ },
+ {
+  "page": "Princeton University Press",
+  "statement": "Princeton University Press was founded as the university's publishing arm",
+  "subject": "Princeton University Press",
+  "pid": "P749",
+  "object": "Princeton University",
+  "audit_correct": true
+ },
+ {
+  "page": "Metaphysics",
+  "statement": "Plato (P570): 348 BCE",
+  "subject": "Plato",
+  "pid": "P570",
+  "object": "348 BCE",
+  "audit_correct": true
+ },
+ {
+  "page": "Aryabhata",
+  "statement": "Pataliputra is located in Bihar",
+  "subject": "Pataliputra",
+  "pid": "P131",
+  "object": "Bihar",
+  "audit_correct": true
+ },
+ {
+  "page": "Differential equation",
+  "statement": "The theory of dynamical systems analyzes qualitative aspects of solutions",
+  "subject": "dynamical systems",
+  "pid": "P31",
+  "object": "mathematics",
+  "audit_correct": false
+ },
+ {
+  "page": "Gottfried Wilhelm Leibniz",
+  "statement": "Gottfried Wilhelm Leibniz was born on 1 July 1646",
+  "subject": "Gottfried Wilhelm Leibniz",
+  "pid": "P569",
+  "object": "1 July 1646",
+  "audit_correct": true
+ },
+ {
+  "page": "Gottfried Wilhelm Leibniz",
+  "statement": "Gottfried Wilhelm Leibniz was born in Leipzig",
+  "subject": "Gottfried Wilhelm Leibniz",
+  "pid": "P19",
+  "object": "Leipzig",
+  "audit_correct": true
+ },
+ {
+  "page": "Andrew Wiles",
+  "statement": "studied at Oxford",
+  "subject": "Andrew Wiles",
+  "pid": "P69",
+  "object": "Oxford University",
+  "audit_correct": true
+ },
+ {
+  "page": "Millennium Prize Problems",
+  "statement": "Bernhard Riemann (P569): 1826",
+  "subject": "Bernhard Riemann",
+  "pid": "P569",
+  "object": "1826",
+  "audit_correct": true
+ },
+ {
+  "page": "Mathematical proof",
+  "statement": "Al-Fakhri (P571): 1000",
+  "subject": "Al-Fakhri",
+  "pid": "P571",
+  "object": "1000",
+  "audit_correct": true
+ },
+ {
+  "page": "Srinivasa Ramanujan",
+  "statement": "Ramanujan born 22 December 1887",
+  "subject": "Srinivasa Ramanujan",
+  "pid": "P569",
+  "object": "22 December 1887",
+  "audit_correct": true
+ },
+ {
+  "page": "Natural number",
+  "statement": "Peano axioms (P50): Giuseppe Peano",
+  "subject": "Peano axioms",
+  "pid": "P50",
+  "object": "Giuseppe Peano",
+  "audit_correct": true
+ },
+ {
+  "page": "Alfred Tarski",
+  "statement": "was at Berkeley",
+  "subject": "Tarski",
+  "pid": "P937",
+  "object": "University of California Berkeley",
+  "audit_correct": true
+ },
+ {
+  "page": "Karl Popper",
+  "statement": "Karl Popper (P50) The Logic of Scientific Discovery",
+  "subject": "Karl Popper",
+  "pid": "P50",
+  "object": "The Logic of Scientific Discovery",
+  "audit_correct": true
+ },
+ {
+  "page": "Physics",
+  "statement": "Astrophysics applies physics to celestial objects",
+  "subject": "Astrophysics",
+  "pid": "P31",
+  "object": "field of physics",
+  "audit_correct": false
+ },
+ {
+  "page": "Paul Erd\u0151s",
+  "statement": "Paul Erd\u0151s was a Hungarian mathematician",
+  "subject": "Paul Erd\u0151s",
+  "pid": "P27",
+  "object": "Hungary",
+  "audit_correct": true
+ },
+ {
+  "page": "Claude Shannon",
+  "statement": "Claude Shannon graduated from MIT with a PhD in mathematics in 1940",
+  "subject": "Claude Shannon",
+  "pid": "P69",
+  "object": "MIT",
+  "audit_correct": true
+ },
+ {
+  "page": "Willard Van Orman Quine",
+  "statement": "Quine was Edgar Pierce Chair of Philosophy Harvard 1956-1978",
+  "subject": "Willard Van Orman Quine",
+  "pid": "P108",
+  "object": "Harvard University",
+  "audit_correct": true
+ },
+ {
+  "page": "Ludwig Wittgenstein",
+  "statement": "Ludwig Wittgenstein (P569): 26 April 1889",
+  "subject": "Ludwig Wittgenstein",
+  "pid": "P569",
+  "object": "26 April 1889",
+  "audit_correct": true
+ },
+ {
+  "page": "Alexander Grothendieck",
+  "statement": "was born in Berlin",
+  "subject": "Grothendieck",
+  "pid": "P19",
+  "object": "Berlin",
+  "audit_correct": true
+ },
+ {
+  "page": "Edmund Gettier",
+  "statement": "Edmund Gettier taught philosophy at Wayne State University from 1957 to 1967",
+  "subject": "Edmund Gettier",
+  "pid": "P108",
+  "object": "Wayne State University",
+  "audit_correct": true
+ },
+ {
+  "page": "Bertrand Russell",
+  "statement": "Bertrand Russell died on 2 February 1970",
+  "subject": "Bertrand Russell",
+  "pid": "P570",
+  "object": "2 February 1970",
+  "audit_correct": true
+ },
+ {
+  "page": "Complex analysis",
+  "statement": "Weierstrass was a mathematician associated with complex numbers",
+  "subject": "Weierstrass",
+  "pid": "P106",
+  "object": "mathematician",
+  "audit_correct": true
+ },
+ {
+  "page": "Albert Einstein",
+  "statement": "enrolled in polytechnic",
+  "subject": "Albert Einstein",
+  "pid": "P69",
+  "object": "Swiss federal polytechnic",
+  "audit_correct": true
+ },
+ {
+  "page": "Norbert Wiener",
+  "statement": "Cybernetics (P50): Norbert Wiener",
+  "subject": "Cybernetics",
+  "pid": "P50",
+  "object": "Norbert Wiener",
+  "audit_correct": true
+ },
+ {
+  "page": "Encyclop\u00e6dia Britannica",
+  "statement": "Encyclop\u00e6dia Britannica has been published since 1768",
+  "subject": "Encyclop\u00e6dia Britannica",
+  "pid": "P571",
+  "object": "1768",
+  "audit_correct": true
+ },
+ {
+  "page": "Plato",
+  "statement": "The Academy was founded in 387 BC",
+  "subject": "Academy",
+  "pid": "P571",
+  "object": "387 BC",
+  "audit_correct": true
+ },
+ {
+  "page": "Knowledge",
+  "statement": "Gettier problem (P571) 1963",
+  "subject": "Gettier problem",
+  "pid": "P571",
+  "object": "1963",
+  "audit_correct": true
+ },
+ {
+  "page": "Mathematical proof",
+  "statement": "Thales (P570): 546 BCE",
+  "subject": "Thales",
+  "pid": "P570",
+  "object": "546 BCE",
+  "audit_correct": true
+ },
+ {
+  "page": "Omar Khayyam",
+  "statement": "Omar Khayyam entered service of Malik-Shah in 1074",
+  "subject": "Omar Khayyam",
+  "pid": "P108",
+  "object": "Malik-Shah",
+  "audit_correct": true
+ },
+ {
+  "page": "Edmund Gettier",
+  "statement": "Edmund Lee Gettier III was born on October 31, 1927",
+  "subject": "Edmund Gettier",
+  "pid": "P569",
+  "object": "October 31, 1927",
+  "audit_correct": true
+ },
+ {
+  "page": "Euclidean space",
+  "statement": "Abstract vector spaces allowed algebraic definition of Euclidean spaces.",
+  "subject": "Vector spaces",
+  "pid": "P31",
+  "object": "algebraic structures",
+  "audit_correct": false
+ },
+ {
+  "page": "American Academy of Arts and Sciences",
+  "statement": "is in United States",
+  "subject": "Academy",
+  "pid": "P17",
+  "object": "United States",
+  "audit_correct": true
+ },
+ {
+  "page": "Olga Ladyzhenskaya",
+  "statement": "Olga Ladyzhenskaya was a Russian mathematician",
+  "subject": "Olga Ladyzhenskaya",
+  "pid": "P27",
+  "object": "Russia",
+  "audit_correct": true
+ },
+ {
+  "page": "Gottfried Wilhelm Leibniz",
+  "statement": "Gottfried Wilhelm Leibniz was a scientist",
+  "subject": "Gottfried Wilhelm Leibniz",
+  "pid": "P106",
+  "object": "scientist",
+  "audit_correct": true
+ },
+ {
+  "page": "Axiom",
+  "statement": "Alessandro Padoa was a mathematician",
+  "subject": "Padoa",
+  "pid": "P106",
+  "object": "mathematician",
+  "audit_correct": true
+ },
+ {
+  "page": "Fourier transform",
+  "statement": "The Fourier transform is a mathematical tool.",
+  "subject": "Fourier transform",
+  "pid": "P31",
+  "object": "mathematical tool",
+  "audit_correct": true
+ },
+ {
+  "page": "Geometry",
+  "statement": "Geometry is the mathematical study of shapes, sizes, and spatial relationships.",
+  "subject": "Geometry",
+  "pid": "P31",
+  "object": "mathematical science",
+  "audit_correct": true
+ },
+ {
+  "page": "Princeton University",
+  "statement": "Princeton University founded the Institute for Advanced Study",
+  "subject": "Institute for Advanced Study",
+  "pid": "P112",
+  "object": "Princeton University",
+  "audit_correct": true
+ },
+ {
+  "page": "Aryabhata",
+  "statement": "Nilakantha Somayaji wrote Aryabhatiya Bhasya",
+  "subject": "Nilakantha Somayaji",
+  "pid": "P800",
+  "object": "Aryabhatiya Bhasya",
+  "audit_correct": true
+ },
+ {
+  "page": "Complex analysis",
+  "statement": "Complex analysis is traditionally known as the theory of functions of a complex variable",
+  "subject": "Complex analysis",
+  "pid": "P31",
+  "object": "mathematical analysis",
+  "audit_correct": false
+ },
+ {
+  "page": "Pragmatism",
+  "statement": "John Dewey was a major figure in pragmatism",
+  "subject": "John Dewey",
+  "pid": "P106",
+  "object": "philosopher",
+  "audit_correct": false
+ },
+ {
+  "page": "Olga Ladyzhenskaya",
+  "statement": "The Ladyzhenskaya Prize in Mathematical Physics was created in 2022 in her honor",
+  "subject": "Ladyzhenskaya Prize in Mathematical Physics",
+  "pid": "P571",
+  "object": "2022",
+  "audit_correct": true
+ },
+ {
+  "page": "Pragmatism",
+  "statement": "Pragmatism is a philosophical school that judges theories by their practical consequences",
+  "subject": "Pragmatism",
+  "pid": "P31",
+  "object": "philosophical school",
+  "audit_correct": true
+ },
+ {
+  "page": "Maryam Mirzakhani",
+  "statement": "Maryam Mirzakhani (P937): Princeton University",
+  "subject": "Maryam Mirzakhani",
+  "pid": "P937",
+  "object": "Princeton University",
+  "audit_correct": true
+ },
+ {
+  "page": "G\u00f6del's incompleteness theorems",
+  "statement": "The incompleteness theorems were proven by Kurt G\u00f6del.",
+  "subject": "Kurt G\u00f6del",
+  "pid": "P50",
+  "object": "incompleteness theorems",
+  "audit_correct": true
+ },
+ {
+  "page": "Knot theory",
+  "statement": "Vaughan Jones (P800) Jones polynomial",
+  "subject": "Vaughan Jones",
+  "pid": "P800",
+  "object": "Jones polynomial",
+  "audit_correct": true
+ },
+ {
+  "page": "Differential equation",
+  "statement": "In his 1671 work Newton listed three kinds of differential equations",
+  "subject": "Isaac Newton",
+  "pid": "P50",
+  "object": "Methodus fluxionum",
+  "audit_correct": true
+ },
+ {
+  "page": "Physics",
+  "statement": "Special relativity describes motion at high speeds",
+  "subject": "Special relativity",
+  "pid": "P31",
+  "object": "theory of physics",
+  "audit_correct": false
+ },
+ {
+  "page": "Mathematician",
+  "statement": "Gottfried Leibniz (P106): mathematician",
+  "subject": "Gottfried Leibniz",
+  "pid": "P106",
+  "object": "mathematician",
+  "audit_correct": true
+ },
+ {
+  "page": "John Locke",
+  "statement": "John Locke (P69) Westminster School",
+  "subject": "John Locke",
+  "pid": "P69",
+  "object": "Westminster School",
+  "audit_correct": true
+ },
+ {
+  "page": "Logical positivism",
+  "statement": "Der logische Aufbau der Welt (P50): Rudolf Carnap",
+  "subject": "Der logische Aufbau der Welt",
+  "pid": "P50",
+  "object": "Rudolf Carnap",
+  "audit_correct": true
+ },
+ {
+  "page": "Norbert Wiener",
+  "statement": "Norbert Wiener (P106): computer scientist",
+  "subject": "Norbert Wiener",
+  "pid": "P106",
+  "object": "computer scientist",
+  "audit_correct": true
+ },
+ {
+  "page": "Paul Erd\u0151s",
+  "statement": "Paul Erd\u0151s relocated to the United States in 1938",
+  "subject": "Paul Erd\u0151s",
+  "pid": "P937",
+  "object": "United States",
+  "audit_correct": false
+ },
+ {
+  "page": "Maryam Mirzakhani",
+  "statement": "Maryam Mirzakhani (P166): Fields Medal",
+  "subject": "Maryam Mirzakhani",
+  "pid": "P166",
+  "object": "Fields Medal",
+  "audit_correct": true
+ },
+ {
+  "page": "Internalism and externalism",
+  "statement": "W.D. Falk (P50) 'Ought' and Motivation",
+  "subject": "W.D. Falk",
+  "pid": "P50",
+  "object": "'Ought' and Motivation",
+  "audit_correct": true
+ },
+ {
+  "page": "Maryam Mirzakhani",
+  "statement": "Maryam Mirzakhani (P166): Clay Research Award",
+  "subject": "Maryam Mirzakhani",
+  "pid": "P166",
+  "object": "Clay Research Award",
+  "audit_correct": true
+ },
+ {
+  "page": "Information theory",
+  "statement": "Information theory is a field of study",
+  "subject": "information theory",
+  "pid": "P31",
+  "object": "field",
+  "audit_correct": true
+ },
+ {
+  "page": "Alfred North Whitehead",
+  "statement": "died 30 December 1947",
+  "subject": "Whitehead",
+  "pid": "P570",
+  "object": "1947-12-30",
+  "audit_correct": true
+ },
+ {
+  "page": "Blaise Pascal",
+  "statement": "Blaise Pascal was an inventor",
+  "subject": "Blaise Pascal",
+  "pid": "P106",
+  "object": "inventor",
+  "audit_correct": true
+ },
+ {
+  "page": "Emmy Noether",
+  "statement": "David Hilbert invited Emmy Noether to join mathematics department at University of G\u00f6ttingen in 1915",
+  "subject": "Emmy Noether",
+  "pid": "P108",
+  "object": "University of G\u00f6ttingen",
+  "audit_correct": false
+ },
+ {
+  "page": "Paul Erd\u0151s",
+  "statement": "Paul Erd\u0151s was born on 26 March 1913",
+  "subject": "Paul Erd\u0151s",
+  "pid": "P569",
+  "object": "26 March 1913",
+  "audit_correct": true
+ },
+ {
+  "page": "Abstract algebra",
+  "statement": "published La G\u00e9om\u00e9trie",
+  "subject": "Descartes",
+  "pid": "P50",
+  "object": "La G\u00e9om\u00e9trie",
+  "audit_correct": true
+ },
+ {
+  "page": "Parallel postulate",
+  "statement": "The parallel postulate is the fifth postulate in Euclid's Elements",
+  "subject": "parallel postulate",
+  "pid": "P361",
+  "object": "Euclid's Elements",
+  "audit_correct": true
+ },
+ {
+  "page": "Aryabhata",
+  "statement": "Bhaskara I was a mathematician",
+  "subject": "Bhaskara I",
+  "pid": "P106",
+  "object": "mathematician",
+  "audit_correct": true
+ },
+ {
+  "page": "Plato",
+  "statement": "Plato lived from 428 to 348 BC",
+  "subject": "Plato",
+  "pid": "P569",
+  "object": "428 BC",
+  "audit_correct": false
+ },
+ {
+  "page": "Probability",
+  "statement": "Doctrine of Chances was published in 1718",
+  "subject": "Doctrine of Chances",
+  "pid": "P571",
+  "object": "1718",
+  "audit_correct": true
+ },
+ {
+  "page": "Philosophy of mathematics",
+  "statement": "Infinity is a fundamental concept in philosophy of mathematics",
+  "subject": "infinity",
+  "pid": "P31",
+  "object": "mathematical concept",
+  "audit_correct": true
+ },
+ {
+  "page": "George Berkeley",
+  "statement": "An Essay Towards a New Theory of Vision was published in 1709",
+  "subject": "An Essay Towards a New Theory of Vision",
+  "pid": "P571",
+  "object": "1709",
+  "audit_correct": true
+ },
+ {
+  "page": "Prime number",
+  "statement": "Twin primes are pairs of primes that differ by 2",
+  "subject": "twin primes",
+  "pid": "P31",
+  "object": "prime pair",
+  "audit_correct": true
+ },
+ {
+  "page": "Rudolf Carnap",
+  "statement": "Rudolf Carnap died 14 September 1970",
+  "subject": "Rudolf Carnap",
+  "pid": "P570",
+  "object": "14 September 1970",
+  "audit_correct": true
+ },
+ {
+  "page": "Internalism and externalism",
+  "statement": "'Ought' and Motivation (P571) 1947",
+  "subject": "'Ought' and Motivation",
+  "pid": "P571",
+  "object": "1947",
+  "audit_correct": true
+ },
+ {
+  "page": "Plato",
+  "statement": "Plato wrote Critias",
+  "subject": "Critias",
+  "pid": "P50",
+  "object": "Plato",
+  "audit_correct": true
+ },
+ {
+  "page": "Stanford Encyclopedia of Philosophy",
+  "statement": "SEP published maintained by Stanford University",
+  "subject": "Stanford Encyclopedia of Philosophy",
+  "pid": "P123",
+  "object": "Stanford University",
+  "audit_correct": true
+ },
+ {
+  "page": "Claude Shannon",
+  "statement": "Claude Shannon was a mathematician",
+  "subject": "Claude Shannon",
+  "pid": "P106",
+  "object": "mathematician",
+  "audit_correct": true
+ },
+ {
+  "page": "Euclidean geometry",
+  "statement": "Euclid described Euclidean geometry in his textbook Elements.",
+  "subject": "Euclid",
+  "pid": "P50",
+  "object": "Elements",
+  "audit_correct": true
+ },
+ {
+  "page": "Epistemology",
+  "statement": "Knowledge by acquaintance means having immediate familiarity with something.",
+  "subject": "Knowledge by acquaintance",
+  "pid": "P31",
+  "object": "experiential knowledge",
+  "audit_correct": false
+ },
+ {
+  "page": "Terence Tao",
+  "statement": "Tao studied at Princeton University",
+  "subject": "Terence Tao",
+  "pid": "P69",
+  "object": "Princeton University",
+  "audit_correct": true
+ },
+ {
+  "page": "Kurt G\u00f6del",
+  "statement": "Kurt G\u00f6del (P50) Incompleteness theorems",
+  "subject": "Kurt G\u00f6del",
+  "pid": "P50",
+  "object": "Incompleteness theorems",
+  "audit_correct": true
+ },
+ {
+  "page": "Karl Popper",
+  "statement": "Karl Popper (P166) Fellow of the Royal Society",
+  "subject": "Karl Popper",
+  "pid": "P166",
+  "object": "Fellow of the Royal Society",
+  "audit_correct": true
+ },
+ {
+  "page": "Kurt G\u00f6del",
+  "statement": "Kurt G\u00f6del (P106) logician",
+  "subject": "Kurt G\u00f6del",
+  "pid": "P106",
+  "object": "logician",
+  "audit_correct": true
+ },
+ {
+  "page": "Probability",
+  "statement": "Probability doctrine dates to Fermat and Pascal correspondence",
+  "subject": "Probability doctrine",
+  "pid": "P571",
+  "object": "1654",
+  "audit_correct": false
+ },
+ {
+  "page": "International Congress of Mathematicians",
+  "statement": "David Hilbert (P800) Hilbert's problems",
+  "subject": "David Hilbert",
+  "pid": "P800",
+  "object": "Hilbert's problems",
+  "audit_correct": true
+ },
+ {
+  "page": "Gottlob Frege",
+  "statement": "Gottlob Frege wrote The Foundations of Arithmetic",
+  "subject": "Gottlob Frege",
+  "pid": "P800",
+  "object": "The Foundations of Arithmetic",
+  "audit_correct": true
+ },
+ {
+  "page": "Category theory",
+  "statement": "Saunders Mac Lane was a mathematician",
+  "subject": "Saunders Mac Lane",
+  "pid": "P106",
+  "object": "mathematician",
+  "audit_correct": true
+ },
+ {
+  "page": "Epistemology",
+  "statement": "Knowledge is an awareness, familiarity, understanding, or skill.",
+  "subject": "Knowledge",
+  "pid": "P31",
+  "object": "cognitive state",
+  "audit_correct": true
+ }
+]

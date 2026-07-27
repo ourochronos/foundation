@@ -1,0 +1,413 @@
+{"page": "Integer", "statement": "Zero (P31) integer", "subject": "Zero", "pid": "P31", "object": "integer"}
+{"page": "Integer", "statement": "The set of natural numbers (P361) integers", "subject": "The set of natural numbers", "pid": "P361", "object": "integers"}
+{"page": "Integer", "statement": "Integers (None) closed under addition", "subject": "Integers", "pid": null, "object": "closed under addition"}
+{"page": "Integer", "statement": "Integers (None) closed under multiplication", "subject": "Integers", "pid": null, "object": "closed under multiplication"}
+{"page": "Integer", "statement": "Integers (None) closed under subtraction", "subject": "Integers", "pid": null, "object": "closed under subtraction"}
+{"page": "Integer", "statement": "Integers (None) not closed under division", "subject": "Integers", "pid": null, "object": "not closed under division"}
+{"page": "Integer", "statement": "Leonhard Euler (P50) Elements of Algebra", "subject": "Leonhard Euler", "pid": "P50", "object": "Elements of Algebra"}
+{"page": "Integer", "statement": "Elements of Algebra (P571) 1765", "subject": "Elements of Algebra", "pid": "P571", "object": "1765"}
+{"page": "Integer", "statement": "Georg Cantor (None) introduced infinite sets and set theory", "subject": "Georg Cantor", "pid": null, "object": "introduced infinite sets and set theory"}
+{"page": "Integer", "statement": "The letter Z (P138) Zahlen (German word for numbers)", "subject": "The letter Z", "pid": "P138", "object": "Zahlen (German word for numbers)"}
+{"page": "Integer", "statement": "David Hilbert (None) attributed with Z notation for integers", "subject": "David Hilbert", "pid": null, "object": "attributed with Z notation for integers"}
+{"page": "Integer", "statement": "Alg\u00e8bre (P50) Nicolas Bourbaki", "subject": "Alg\u00e8bre", "pid": "P50", "object": "Nicolas Bourbaki"}
+{"page": "Integer", "statement": "Alg\u00e8bre (P571) 1947", "subject": "Alg\u00e8bre", "pid": "P571", "object": "1947"}
+{"page": "Integer", "statement": "Integers (None) form smallest ring containing natural numbers", "subject": "Integers", "pid": null, "object": "form smallest ring containing natural numbers"}
+{"page": "Integer", "statement": "Integers (None) form abelian group under addition", "subject": "Integers", "pid": null, "object": "form abelian group under addition"}
+{"page": "Integer", "statement": "Whole numbers (None) synonymous with integers until 1950s", "subject": "Whole numbers", "pid": null, "object": "synonymous with integers until 1950s"}
+{"page": "Integer", "statement": "American teachers (None) taught whole numbers as excluding negatives since 1950s", "subject": "American teachers", "pid": null, "object": "taught whole numbers as excluding negatives since 1950s"}
+{"page": "Integer", "statement": "Natural numbers (P361) rational numbers", "subject": "Natural numbers", "pid": "P361", "object": "rational numbers"}
+{"page": "Integer", "statement": "Rational numbers (P361) real numbers", "subject": "Rational numbers", "pid": "P361", "object": "real numbers"}
+{"page": "Integer", "statement": "Integer word (P138) Latin integer meaning whole", "subject": "Integer word", "pid": "P138", "object": "Latin integer meaning whole"}
+{"page": "Integer", "statement": "Entire (word) (P138) French entier", "subject": "Entire (word)", "pid": "P138", "object": "French entier"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P569) 4 January 1643", "subject": "Isaac Newton", "pid": "P569", "object": "4 January 1643"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P570) 31 March 1727", "subject": "Isaac Newton", "pid": "P570", "object": "31 March 1727"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P19) Woolsthorpe Manor", "subject": "Isaac Newton", "pid": "P19", "object": "Woolsthorpe Manor"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P27) England", "subject": "Isaac Newton", "pid": "P27", "object": "England"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P106) mathematician", "subject": "Isaac Newton", "pid": "P106", "object": "mathematician"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P106) physicist", "subject": "Isaac Newton", "pid": "P106", "object": "physicist"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P106) astronomer", "subject": "Isaac Newton", "pid": "P106", "object": "astronomer"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P69) The King's School", "subject": "Isaac Newton", "pid": "P69", "object": "The King's School"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P69) Trinity College, University of Cambridge", "subject": "Isaac Newton", "pid": "P69", "object": "Trinity College, University of Cambridge"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P39) Lucasian Professor of Mathematics", "subject": "Isaac Newton", "pid": "P39", "object": "Lucasian Professor of Mathematics"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P39) Warden of the Royal Mint", "subject": "Isaac Newton", "pid": "P39", "object": "Warden of the Royal Mint"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P39) Master of the Royal Mint", "subject": "Isaac Newton", "pid": "P39", "object": "Master of the Royal Mint"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P39) president of the Royal Society", "subject": "Isaac Newton", "pid": "P39", "object": "president of the Royal Society"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P50) Philosophiae Naturalis Principia Mathematica", "subject": "Isaac Newton", "pid": "P50", "object": "Philosophiae Naturalis Principia Mathematica"}
+{"page": "Isaac Newton", "statement": "Philosophiae Naturalis Principia Mathematica (P571) 1687", "subject": "Philosophiae Naturalis Principia Mathematica", "pid": "P571", "object": "1687"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P50) Opticks", "subject": "Isaac Newton", "pid": "P50", "object": "Opticks"}
+{"page": "Isaac Newton", "statement": "Opticks (P571) 1704", "subject": "Opticks", "pid": "P571", "object": "1704"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (None) formulated laws of motion", "subject": "Isaac Newton", "pid": null, "object": "formulated laws of motion"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (None) formulated universal gravitation", "subject": "Isaac Newton", "pid": null, "object": "formulated universal gravitation"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (None) knighted by Queen Anne", "subject": "Isaac Newton", "pid": null, "object": "knighted by Queen Anne"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P551) London", "subject": "Isaac Newton", "pid": "P551", "object": "London"}
+{"page": "Isaac Newton", "statement": "Isaac Newton (P551) Woolsthorpe", "subject": "Isaac Newton", "pid": "P551", "object": "Woolsthorpe"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P569) 9 June 1885", "subject": "John Edensor Littlewood", "pid": "P569", "object": "9 June 1885"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P570) 6 September 1977", "subject": "John Edensor Littlewood", "pid": "P570", "object": "6 September 1977"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P19) Rochester, Kent", "subject": "John Edensor Littlewood", "pid": "P19", "object": "Rochester, Kent"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P27) British", "subject": "John Edensor Littlewood", "pid": "P27", "object": "British"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P69) St Paul's School", "subject": "John Edensor Littlewood", "pid": "P69", "object": "St Paul's School"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P69) Trinity College, University of Cambridge", "subject": "John Edensor Littlewood", "pid": "P69", "object": "Trinity College, University of Cambridge"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P69) University of Manchester", "subject": "John Edensor Littlewood", "pid": "P69", "object": "University of Manchester"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P106) mathematician", "subject": "John Edensor Littlewood", "pid": "P106", "object": "mathematician"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P39) Rouse Ball Professor of Mathematics", "subject": "John Edensor Littlewood", "pid": "P39", "object": "Rouse Ball Professor of Mathematics"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P166) Fellow of the Royal Society", "subject": "John Edensor Littlewood", "pid": "P166", "object": "Fellow of the Royal Society"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P166) Royal Medal", "subject": "John Edensor Littlewood", "pid": "P166", "object": "Royal Medal"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P166) Sylvester Medal", "subject": "John Edensor Littlewood", "pid": "P166", "object": "Sylvester Medal"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P166) Copley Medal", "subject": "John Edensor Littlewood", "pid": "P166", "object": "Copley Medal"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P166) De Morgan Medal", "subject": "John Edensor Littlewood", "pid": "P166", "object": "De Morgan Medal"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P50) A Mathematician's Miscellany", "subject": "John Edensor Littlewood", "pid": "P50", "object": "A Mathematician's Miscellany"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (P39) president of London Mathematical Society", "subject": "John Edensor Littlewood", "pid": "P39", "object": "president of London Mathematical Society"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (None) worked on analysis", "subject": "John Edensor Littlewood", "pid": null, "object": "worked on analysis"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (None) worked on number theory", "subject": "John Edensor Littlewood", "pid": null, "object": "worked on number theory"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (None) worked on differential equations", "subject": "John Edensor Littlewood", "pid": null, "object": "worked on differential equations"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (None) collaborated with G. H. Hardy", "subject": "John Edensor Littlewood", "pid": null, "object": "collaborated with G. H. Hardy"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (None) collaborated with Srinivasa Ramanujan", "subject": "John Edensor Littlewood", "pid": null, "object": "collaborated with Srinivasa Ramanujan"}
+{"page": "John Edensor Littlewood", "statement": "John Edensor Littlewood (None) collaborated with Mary Cartwright", "subject": "John Edensor Littlewood", "pid": null, "object": "collaborated with Mary Cartwright"}
+{"page": "John Locke", "statement": "John Locke (P569) 29 August 1632", "subject": "John Locke", "pid": "P569", "object": "29 August 1632"}
+{"page": "John Locke", "statement": "John Locke (P570) 28 October 1704", "subject": "John Locke", "pid": "P570", "object": "28 October 1704"}
+{"page": "John Locke", "statement": "John Locke (P19) Wrington, Somerset", "subject": "John Locke", "pid": "P19", "object": "Wrington, Somerset"}
+{"page": "John Locke", "statement": "John Locke (P27) English", "subject": "John Locke", "pid": "P27", "object": "English"}
+{"page": "John Locke", "statement": "John Locke (P106) philosopher", "subject": "John Locke", "pid": "P106", "object": "philosopher"}
+{"page": "John Locke", "statement": "John Locke (P106) physician", "subject": "John Locke", "pid": "P106", "object": "physician"}
+{"page": "John Locke", "statement": "John Locke (P69) Westminster School", "subject": "John Locke", "pid": "P69", "object": "Westminster School"}
+{"page": "John Locke", "statement": "John Locke (P69) Christ Church, Oxford", "subject": "John Locke", "pid": "P69", "object": "Christ Church, Oxford"}
+{"page": "John Locke", "statement": "John Locke (P50) A Letter Concerning Toleration", "subject": "John Locke", "pid": "P50", "object": "A Letter Concerning Toleration"}
+{"page": "John Locke", "statement": "A Letter Concerning Toleration (P571) 1689", "subject": "A Letter Concerning Toleration", "pid": "P571", "object": "1689"}
+{"page": "John Locke", "statement": "John Locke (P50) Two Treatises of Government", "subject": "John Locke", "pid": "P50", "object": "Two Treatises of Government"}
+{"page": "John Locke", "statement": "Two Treatises of Government (P571) 1689", "subject": "Two Treatises of Government", "pid": "P571", "object": "1689"}
+{"page": "John Locke", "statement": "John Locke (P50) An Essay Concerning Human Understanding", "subject": "John Locke", "pid": "P50", "object": "An Essay Concerning Human Understanding"}
+{"page": "John Locke", "statement": "An Essay Concerning Human Understanding (P571) 1689", "subject": "An Essay Concerning Human Understanding", "pid": "P571", "object": "1689"}
+{"page": "John Locke", "statement": "John Locke (P551) Oxford", "subject": "John Locke", "pid": "P551", "object": "Oxford"}
+{"page": "John Locke", "statement": "John Locke (P551) Netherlands", "subject": "John Locke", "pid": "P551", "object": "Netherlands"}
+{"page": "John Locke", "statement": "John Locke (P551) London", "subject": "John Locke", "pid": "P551", "object": "London"}
+{"page": "John Locke", "statement": "John Locke (P166) Fellow of the Royal Society", "subject": "John Locke", "pid": "P166", "object": "Fellow of the Royal Society"}
+{"page": "John Locke", "statement": "John Locke (P937) Netherlands", "subject": "John Locke", "pid": "P937", "object": "Netherlands"}
+{"page": "John Locke", "statement": "Two Treatises of Government (None) influenced Declaration of Independence", "subject": "Two Treatises of Government", "pid": null, "object": "influenced Declaration of Independence"}
+{"page": "John Locke", "statement": "John Locke (None) influenced Voltaire", "subject": "John Locke", "pid": null, "object": "influenced Voltaire"}
+{"page": "John Locke", "statement": "John Locke (None) influenced Jean-Jacques Rousseau", "subject": "John Locke", "pid": null, "object": "influenced Jean-Jacques Rousseau"}
+{"page": "John von Neumann", "statement": "John von Neumann (P569) December 28, 1903", "subject": "John von Neumann", "pid": "P569", "object": "December 28, 1903"}
+{"page": "John von Neumann", "statement": "John von Neumann (P570) February 8, 1957", "subject": "John von Neumann", "pid": "P570", "object": "February 8, 1957"}
+{"page": "John von Neumann", "statement": "John von Neumann (P19) Budapest", "subject": "John von Neumann", "pid": "P19", "object": "Budapest"}
+{"page": "John von Neumann", "statement": "John von Neumann (P27) Hungarian", "subject": "John von Neumann", "pid": "P27", "object": "Hungarian"}
+{"page": "John von Neumann", "statement": "John von Neumann (P27) American", "subject": "John von Neumann", "pid": "P27", "object": "American"}
+{"page": "John von Neumann", "statement": "John von Neumann (P106) mathematician", "subject": "John von Neumann", "pid": "P106", "object": "mathematician"}
+{"page": "John von Neumann", "statement": "John von Neumann (P106) physicist", "subject": "John von Neumann", "pid": "P106", "object": "physicist"}
+{"page": "John von Neumann", "statement": "John von Neumann (P106) computer scientist", "subject": "John von Neumann", "pid": "P106", "object": "computer scientist"}
+{"page": "John von Neumann", "statement": "John von Neumann (P106) engineer", "subject": "John von Neumann", "pid": "P106", "object": "engineer"}
+{"page": "John von Neumann", "statement": "John von Neumann (None) pioneered mathematical framework of quantum physics", "subject": "John von Neumann", "pid": null, "object": "pioneered mathematical framework of quantum physics"}
+{"page": "John von Neumann", "statement": "John von Neumann (None) developed functional analysis", "subject": "John von Neumann", "pid": null, "object": "developed functional analysis"}
+{"page": "John von Neumann", "statement": "John von Neumann (None) developed game theory", "subject": "John von Neumann", "pid": null, "object": "developed game theory"}
+{"page": "John von Neumann", "statement": "John von Neumann (None) introduced cellular automata", "subject": "John von Neumann", "pid": null, "object": "introduced cellular automata"}
+{"page": "John von Neumann", "statement": "John von Neumann (None) introduced universal constructor", "subject": "John von Neumann", "pid": null, "object": "introduced universal constructor"}
+{"page": "John von Neumann", "statement": "John von Neumann (None) introduced digital computer concept", "subject": "John von Neumann", "pid": null, "object": "introduced digital computer concept"}
+{"page": "John von Neumann", "statement": "John von Neumann (P166) Medal of Freedom", "subject": "John von Neumann", "pid": "P166", "object": "Medal of Freedom"}
+{"page": "John von Neumann", "statement": "John von Neumann (None) worked on Manhattan Project", "subject": "John von Neumann", "pid": null, "object": "worked on Manhattan Project"}
+{"page": "John von Neumann", "statement": "John von Neumann (None) chaired Strategic Missile Evaluation Committee", "subject": "John von Neumann", "pid": null, "object": "chaired Strategic Missile Evaluation Committee"}
+{"page": "John von Neumann", "statement": "John von Neumann (None) member of Atomic Energy Commission", "subject": "John von Neumann", "pid": null, "object": "member of Atomic Energy Commission"}
+{"page": "John von Neumann", "statement": "von Neumann (moon crater) (P138) John von Neumann", "subject": "von Neumann (moon crater)", "pid": "P138", "object": "John von Neumann"}
+{"page": "International Congress of Mathematicians", "statement": "International Congress of Mathematicians (P31) conference", "subject": "International Congress of Mathematicians", "pid": "P31", "object": "conference"}
+{"page": "International Congress of Mathematicians", "statement": "International Congress of Mathematicians (None) meets once every four years", "subject": "International Congress of Mathematicians", "pid": null, "object": "meets once every four years"}
+{"page": "International Congress of Mathematicians", "statement": "International Congress of Mathematicians (P127) International Mathematical Union", "subject": "International Congress of Mathematicians", "pid": "P127", "object": "International Mathematical Union"}
+{"page": "International Congress of Mathematicians", "statement": "Fields Medal (P571) 1936", "subject": "Fields Medal", "pid": "P571", "object": "1936"}
+{"page": "International Congress of Mathematicians", "statement": "Fields Medal (P138) John Charles Fields", "subject": "Fields Medal", "pid": "P138", "object": "John Charles Fields"}
+{"page": "International Congress of Mathematicians", "statement": "IMU Abacus Medal (None) known before 2022 as Nevanlinna Prize", "subject": "IMU Abacus Medal", "pid": null, "object": "known before 2022 as Nevanlinna Prize"}
+{"page": "International Congress of Mathematicians", "statement": "International Congress of Mathematicians 1897 (P571) 1897", "subject": "International Congress of Mathematicians 1897", "pid": "P571", "object": "1897"}
+{"page": "International Congress of Mathematicians", "statement": "Hilbert's problems (P571) 1900", "subject": "Hilbert's problems", "pid": "P571", "object": "1900"}
+{"page": "International Congress of Mathematicians", "statement": "David Hilbert (P800) Hilbert's problems", "subject": "David Hilbert", "pid": "P800", "object": "Hilbert's problems"}
+{"page": "International Congress of Mathematicians", "statement": "Landau's problems (P571) 1912", "subject": "Landau's problems", "pid": "P571", "object": "1912"}
+{"page": "International Congress of Mathematicians", "statement": "Landau's problems (P138) Edmund Landau", "subject": "Landau's problems", "pid": "P138", "object": "Edmund Landau"}
+{"page": "International Congress of Mathematicians", "statement": "International Research Council (P571) 1919", "subject": "International Research Council", "pid": "P571", "object": "1919"}
+{"page": "International Congress of Mathematicians", "statement": "Union Mathematique Internationale (P571) 1920", "subject": "Union Mathematique Internationale", "pid": "P571", "object": "1920"}
+{"page": "International Congress of Mathematicians", "statement": "International Mathematical Union (P571) 1951", "subject": "International Mathematical Union", "pid": "P571", "object": "1951"}
+{"page": "International Congress of Mathematicians", "statement": "Emmy Noether (None) first woman to give ICM plenary lecture", "subject": "Emmy Noether", "pid": null, "object": "first woman to give ICM plenary lecture"}
+{"page": "International Congress of Mathematicians", "statement": "Emmy Noether (None) gave ICM plenary lecture at 1932 ICM in Z\u00fcrich", "subject": "Emmy Noether", "pid": null, "object": "gave ICM plenary lecture at 1932 ICM in Z\u00fcrich"}
+{"page": "International Congress of Mathematicians", "statement": "Karen Uhlenbeck (None) second woman to give ICM plenary lecture", "subject": "Karen Uhlenbeck", "pid": null, "object": "second woman to give ICM plenary lecture"}
+{"page": "International Congress of Mathematicians", "statement": "Karen Uhlenbeck (None) gave ICM plenary lecture at 1990 ICM in Kyoto", "subject": "Karen Uhlenbeck", "pid": null, "object": "gave ICM plenary lecture at 1990 ICM in Kyoto"}
+{"page": "International Congress of Mathematicians", "statement": "Joseph Stalin (P570) 1953", "subject": "Joseph Stalin", "pid": "P570", "object": "1953"}
+{"page": "International Congress of Mathematicians", "statement": "Felix Klein (None) put forward idea of international congress of mathematicians", "subject": "Felix Klein", "pid": null, "object": "put forward idea of international congress of mathematicians"}
+{"page": "International Congress of Mathematicians", "statement": "Georg Cantor (None) put forward idea of international congress of mathematicians", "subject": "Georg Cantor", "pid": null, "object": "put forward idea of international congress of mathematicians"}
+{"page": "Internet Archive", "statement": "Internet Archive (P571) 1996", "subject": "Internet Archive", "pid": "P571", "object": "1996"}
+{"page": "Internet Archive", "statement": "Internet Archive (P31) non-profit library", "subject": "Internet Archive", "pid": "P31", "object": "non-profit library"}
+{"page": "Internet Archive", "statement": "Internet Archive (P112) Brewster Kahle", "subject": "Internet Archive", "pid": "P112", "object": "Brewster Kahle"}
+{"page": "Internet Archive", "statement": "Internet Archive (P159) San Francisco", "subject": "Internet Archive", "pid": "P159", "object": "San Francisco"}
+{"page": "Internet Archive", "statement": "Brewster Kahle (P50) Internet Archive", "subject": "Brewster Kahle", "pid": "P50", "object": "Internet Archive"}
+{"page": "Internet Archive", "statement": "archive.org (None) website run by Internet Archive", "subject": "archive.org", "pid": null, "object": "website run by Internet Archive"}
+{"page": "Internet Archive", "statement": "Wayback Machine (None) contains more than 1 trillion web captures", "subject": "Wayback Machine", "pid": null, "object": "contains more than 1 trillion web captures"}
+{"page": "Internet Archive", "statement": "USA Today (None) first page archived in December 1996", "subject": "USA Today", "pid": null, "object": "first page archived in December 1996"}
+{"page": "Internet Archive", "statement": "Wayback Machine (P571) 2001", "subject": "Wayback Machine", "pid": "P571", "object": "2001"}
+{"page": "Internet Archive", "statement": "Prelinger Archives (P571) 1999", "subject": "Prelinger Archives", "pid": "P571", "object": "1999"}
+{"page": "Internet Archive", "statement": "Internet Archive Europe (P571) 2004", "subject": "Internet Archive Europe", "pid": "P571", "object": "2004"}
+{"page": "Internet Archive", "statement": "Internet Archive of Canada (P571) 2016", "subject": "Internet Archive of Canada", "pid": "P571", "object": "2016"}
+{"page": "Internet Archive", "statement": "Open Library (P112) Internet Archive", "subject": "Open Library", "pid": "P112", "object": "Internet Archive"}
+{"page": "Internet Archive", "statement": "Internet Archive (None) received donations of 78 rpm discs from Boston Public Library", "subject": "Internet Archive", "pid": null, "object": "received donations of 78 rpm discs from Boston Public Library"}
+{"page": "Internet Archive", "statement": "Internet Archive (P31) 501(c)(3) nonprofit", "subject": "Internet Archive", "pid": "P31", "object": "501(c)(3) nonprofit"}
+{"page": "Internet Archive", "statement": "Internet Archive (None) annual budget 37 million dollars in 2019", "subject": "Internet Archive", "pid": null, "object": "annual budget 37 million dollars in 2019"}
+{"page": "Internet Archive", "statement": "Hachette Book Group (None) filed lawsuit against Internet Archive in 2020", "subject": "Hachette Book Group", "pid": null, "object": "filed lawsuit against Internet Archive in 2020"}
+{"page": "Internet Archive", "statement": "Penguin Random House (None) filed lawsuit against Internet Archive in 2020", "subject": "Penguin Random House", "pid": null, "object": "filed lawsuit against Internet Archive in 2020"}
+{"page": "Internet Archive", "statement": "Internet Archive (None) designated as Federal Depository Library in July 2025", "subject": "Internet Archive", "pid": null, "object": "designated as Federal Depository Library in July 2025"}
+{"page": "Internet Archive", "statement": "Internet Archive (None) opened European branch headquarters in September 2025", "subject": "Internet Archive", "pid": null, "object": "opened European branch headquarters in September 2025"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (P571) 1995", "subject": "Internet Encyclopedia of Philosophy", "pid": "P571", "object": "1995"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (P112) James Fieser", "subject": "Internet Encyclopedia of Philosophy", "pid": "P112", "object": "James Fieser"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (P31) online encyclopedia", "subject": "Internet Encyclopedia of Philosophy", "pid": "P31", "object": "online encyclopedia"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (P407) English", "subject": "Internet Encyclopedia of Philosophy", "pid": "P407", "object": "English"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) contains around 900 articles", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "contains around 900 articles"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) peer-reviewed and blind-refereed", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "peer-reviewed and blind-refereed"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "James Fieser (None) co-founder of Internet Encyclopedia of Philosophy", "subject": "James Fieser", "pid": null, "object": "co-founder of Internet Encyclopedia of Philosophy"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Bradley Dowden (None) general editor since 1999", "subject": "Bradley Dowden", "pid": null, "object": "general editor since 1999"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (P306) WordPress", "subject": "Internet Encyclopedia of Philosophy", "pid": "P306", "object": "WordPress"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) received 8.2 million unique viewers annually", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "received 8.2 million unique viewers annually"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) most visited encyclopedia of professionally written philosophy articles", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "most visited encyclopedia of professionally written philosophy articles"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) website redesigned in 2009", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "website redesigned in 2009"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) 75% of usage through internet searches", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "75% of usage through internet searches"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) listed by American Library Association", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "listed by American Library Association"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) listed by Federation of Australasian Philosophy in Schools Associations", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "listed by Federation of Australasian Philosophy in Schools Associations"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) contributors from 35 countries", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "contributors from 35 countries"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) intended audience is philosophy students and faculty", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "intended audience is philosophy students and faculty"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (P31) scholarly resource", "subject": "Internet Encyclopedia of Philosophy", "pid": "P31", "object": "scholarly resource"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) articles include annotated bibliography", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "articles include annotated bibliography"}
+{"page": "Internet Encyclopedia of Philosophy", "statement": "Internet Encyclopedia of Philosophy (None) searchable by alphabetical index", "subject": "Internet Encyclopedia of Philosophy", "pid": null, "object": "searchable by alphabetical index"}
+{"page": "Internalism and externalism", "statement": "Internalism (None) thesis that no fact provides reasons for action independently of desires", "subject": "Internalism", "pid": null, "object": "thesis that no fact provides reasons for action independently of desires"}
+{"page": "Internalism and externalism", "statement": "Externalism (None) thesis that reasons are identified with objective features of world", "subject": "Externalism", "pid": null, "object": "thesis that reasons are identified with objective features of world"}
+{"page": "Internalism and externalism", "statement": "Motivational internalism (None) view that moral convictions are intrinsically motivating", "subject": "Motivational internalism", "pid": null, "object": "view that moral convictions are intrinsically motivating"}
+{"page": "Internalism and externalism", "statement": "Motivational externalism (None) view that no necessary connection between moral convictions and motives", "subject": "Motivational externalism", "pid": null, "object": "view that no necessary connection between moral convictions and motives"}
+{"page": "Internalism and externalism", "statement": "W.D. Falk (P50) 'Ought' and Motivation", "subject": "W.D. Falk", "pid": "P50", "object": "'Ought' and Motivation"}
+{"page": "Internalism and externalism", "statement": "'Ought' and Motivation (P571) 1947", "subject": "'Ought' and Motivation", "pid": "P571", "object": "1947"}
+{"page": "Internalism and externalism", "statement": "Amoralist (None) knows moral things but is not motivated to do them", "subject": "Amoralist", "pid": null, "object": "knows moral things but is not motivated to do them"}
+{"page": "Internalism and externalism", "statement": "Bernard Williams (P50) Reasons and Persons", "subject": "Bernard Williams", "pid": "P50", "object": "Reasons and Persons"}
+{"page": "Internalism and externalism", "statement": "Internal reason (None) something one has in light of subjective motivational set", "subject": "Internal reason", "pid": null, "object": "something one has in light of subjective motivational set"}
+{"page": "Internalism and externalism", "statement": "External reason (None) something one has independent of subjective motivational set", "subject": "External reason", "pid": null, "object": "something one has independent of subjective motivational set"}
+{"page": "Internalism and externalism", "statement": "Access internalism (None) requires believer have internal access to justifiers", "subject": "Access internalism", "pid": null, "object": "requires believer have internal access to justifiers"}
+{"page": "Internalism and externalism", "statement": "Ontological internalism (None) justification established by mental states", "subject": "Ontological internalism", "pid": null, "object": "justification established by mental states"}
+{"page": "Internalism and externalism", "statement": "New evil demon problem (None) supports internalism against reliabilism", "subject": "New evil demon problem", "pid": null, "object": "supports internalism against reliabilism"}
+{"page": "Internalism and externalism", "statement": "Reliabilism (None) beliefs justified via reliable belief-forming processes", "subject": "Reliabilism", "pid": null, "object": "beliefs justified via reliable belief-forming processes"}
+{"page": "Internalism and externalism", "statement": "Epistemic externalism (None) emerged during late 20th century", "subject": "Epistemic externalism", "pid": null, "object": "emerged during late 20th century"}
+{"page": "Internalism and externalism", "statement": "Internalism (None) claims reasons for action must explain one's action", "subject": "Internalism", "pid": null, "object": "claims reasons for action must explain one's action"}
+{"page": "Internalism and externalism", "statement": "Externalism (None) claims one can have reasons for action without relevant desire", "subject": "Externalism", "pid": null, "object": "claims one can have reasons for action without relevant desire"}
+{"page": "Internalism and externalism", "statement": "Epistemology (None) field that studies internalism and externalism", "subject": "Epistemology", "pid": null, "object": "field that studies internalism and externalism"}
+{"page": "Internalism and externalism", "statement": "Internal-external distinction (None) divides ontology into observation and question parts", "subject": "Internal-external distinction", "pid": null, "object": "divides ontology into observation and question parts"}
+{"page": "Internalism and externalism", "statement": "Philosophy (None) studies internalism and externalism across multiple areas", "subject": "Philosophy", "pid": null, "object": "studies internalism and externalism across multiple areas"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P569) December 8, 1919", "subject": "Julia Robinson", "pid": "P569", "object": "December 8, 1919"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P570) July 2, 1985", "subject": "Julia Robinson", "pid": "P570", "object": "July 2, 1985"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P19) St Louis, Missouri", "subject": "Julia Robinson", "pid": "P19", "object": "St Louis, Missouri"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P27) American", "subject": "Julia Robinson", "pid": "P27", "object": "American"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P106) mathematician", "subject": "Julia Robinson", "pid": "P106", "object": "mathematician"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P69) University of California, Berkeley", "subject": "Julia Robinson", "pid": "P69", "object": "University of California, Berkeley"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P69) San Diego State College", "subject": "Julia Robinson", "pid": "P69", "object": "San Diego State College"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P937) University of California, Berkeley", "subject": "Julia Robinson", "pid": "P937", "object": "University of California, Berkeley"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (None) worked on Diophantine equations", "subject": "Julia Robinson", "pid": null, "object": "worked on Diophantine equations"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (None) worked on computability theory", "subject": "Julia Robinson", "pid": null, "object": "worked on computability theory"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (None) worked on mathematical logic", "subject": "Julia Robinson", "pid": null, "object": "worked on mathematical logic"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P166) Fellow of the American Academy of Arts and Sciences", "subject": "Julia Robinson", "pid": "P166", "object": "Fellow of the American Academy of Arts and Sciences"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (None) elected to National Academy of Sciences", "subject": "Julia Robinson", "pid": null, "object": "elected to National Academy of Sciences"}
+{"page": "Julia Robinson", "statement": "Hilbert's tenth problem (None) solved partially by Julia Robinson", "subject": "Hilbert's tenth problem", "pid": null, "object": "solved partially by Julia Robinson"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P39) first woman president-elect of American Mathematical Society", "subject": "Julia Robinson", "pid": "P39", "object": "first woman president-elect of American Mathematical Society"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (P166) Noether Lecture Award", "subject": "Julia Robinson", "pid": "P166", "object": "Noether Lecture Award"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (None) collaborated with Martin Davis", "subject": "Julia Robinson", "pid": null, "object": "collaborated with Martin Davis"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (None) collaborated with Hilary Putnam", "subject": "Julia Robinson", "pid": null, "object": "collaborated with Hilary Putnam"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (None) worked on MRDP theorem", "subject": "Julia Robinson", "pid": null, "object": "worked on MRDP theorem"}
+{"page": "Julia Robinson", "statement": "Julia Robinson (None) contributed to recursive function theory", "subject": "Julia Robinson", "pid": null, "object": "contributed to recursive function theory"}
+{"page": "Karl Popper", "statement": "Karl Popper (P569) July 28, 1902", "subject": "Karl Popper", "pid": "P569", "object": "July 28, 1902"}
+{"page": "Karl Popper", "statement": "Karl Popper (P570) September 17, 1994", "subject": "Karl Popper", "pid": "P570", "object": "September 17, 1994"}
+{"page": "Karl Popper", "statement": "Karl Popper (P19) Vienna", "subject": "Karl Popper", "pid": "P19", "object": "Vienna"}
+{"page": "Karl Popper", "statement": "Karl Popper (P27) Austrian", "subject": "Karl Popper", "pid": "P27", "object": "Austrian"}
+{"page": "Karl Popper", "statement": "Karl Popper (P106) philosopher", "subject": "Karl Popper", "pid": "P106", "object": "philosopher"}
+{"page": "Karl Popper", "statement": "Karl Popper (P106) economist", "subject": "Karl Popper", "pid": "P106", "object": "economist"}
+{"page": "Karl Popper", "statement": "Karl Popper (P106) social theorist", "subject": "Karl Popper", "pid": "P106", "object": "social theorist"}
+{"page": "Karl Popper", "statement": "Karl Popper (P69) University of Vienna", "subject": "Karl Popper", "pid": "P69", "object": "University of Vienna"}
+{"page": "Karl Popper", "statement": "Karl Popper (P50) The Logic of Scientific Discovery", "subject": "Karl Popper", "pid": "P50", "object": "The Logic of Scientific Discovery"}
+{"page": "Karl Popper", "statement": "The Logic of Scientific Discovery (P571) 1934", "subject": "The Logic of Scientific Discovery", "pid": "P571", "object": "1934"}
+{"page": "Karl Popper", "statement": "Karl Popper (P50) The Open Society and Its Enemies", "subject": "Karl Popper", "pid": "P50", "object": "The Open Society and Its Enemies"}
+{"page": "Karl Popper", "statement": "The Open Society and Its Enemies (P571) 1945", "subject": "The Open Society and Its Enemies", "pid": "P571", "object": "1945"}
+{"page": "Karl Popper", "statement": "Karl Popper (P50) The Poverty of Historicism", "subject": "Karl Popper", "pid": "P50", "object": "The Poverty of Historicism"}
+{"page": "Karl Popper", "statement": "The Poverty of Historicism (P571) 1957", "subject": "The Poverty of Historicism", "pid": "P571", "object": "1957"}
+{"page": "Karl Popper", "statement": "Karl Popper (None) developed falsificationism", "subject": "Karl Popper", "pid": null, "object": "developed falsificationism"}
+{"page": "Karl Popper", "statement": "Karl Popper (None) developed critical rationalism", "subject": "Karl Popper", "pid": null, "object": "developed critical rationalism"}
+{"page": "Karl Popper", "statement": "Karl Popper (P937) London School of Economics", "subject": "Karl Popper", "pid": "P937", "object": "London School of Economics"}
+{"page": "Karl Popper", "statement": "Karl Popper (P166) Fellow of the Royal Society", "subject": "Karl Popper", "pid": "P166", "object": "Fellow of the Royal Society"}
+{"page": "Karl Popper", "statement": "Karl Popper (P166) Lenz Medal", "subject": "Karl Popper", "pid": "P166", "object": "Lenz Medal"}
+{"page": "Karl Popper", "statement": "Karl Popper (P551) New Zealand", "subject": "Karl Popper", "pid": "P551", "object": "New Zealand"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P569) August 26, 1918", "subject": "Katherine Johnson", "pid": "P569", "object": "August 26, 1918"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P570) February 24, 2020", "subject": "Katherine Johnson", "pid": "P570", "object": "February 24, 2020"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P19) White Sulphur Springs, West Virginia", "subject": "Katherine Johnson", "pid": "P19", "object": "White Sulphur Springs, West Virginia"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P27) American", "subject": "Katherine Johnson", "pid": "P27", "object": "American"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P106) mathematician", "subject": "Katherine Johnson", "pid": "P106", "object": "mathematician"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P106) physicist", "subject": "Katherine Johnson", "pid": "P106", "object": "physicist"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P69) West Virginia University", "subject": "Katherine Johnson", "pid": "P69", "object": "West Virginia University"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P69) Howard University", "subject": "Katherine Johnson", "pid": "P69", "object": "Howard University"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P937) National Aeronautics and Space Administration", "subject": "Katherine Johnson", "pid": "P937", "object": "National Aeronautics and Space Administration"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (None) calculated trajectories for NASA", "subject": "Katherine Johnson", "pid": null, "object": "calculated trajectories for NASA"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (None) worked on Project Mercury", "subject": "Katherine Johnson", "pid": null, "object": "worked on Project Mercury"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (None) worked on Apollo program", "subject": "Katherine Johnson", "pid": null, "object": "worked on Apollo program"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (None) worked on Space Shuttle program", "subject": "Katherine Johnson", "pid": null, "object": "worked on Space Shuttle program"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P166) Presidential Medal of Freedom", "subject": "Katherine Johnson", "pid": "P166", "object": "Presidential Medal of Freedom"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (None) pioneering African American mathematician", "subject": "Katherine Johnson", "pid": null, "object": "pioneering African American mathematician"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (P551) Hampton, Virginia", "subject": "Katherine Johnson", "pid": "P551", "object": "Hampton, Virginia"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (None) worked at NACA before NASA", "subject": "Katherine Johnson", "pid": null, "object": "worked at NACA before NASA"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (None) calculated orbital trajectories", "subject": "Katherine Johnson", "pid": null, "object": "calculated orbital trajectories"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (None) collaborated with Mary Jackson", "subject": "Katherine Johnson", "pid": null, "object": "collaborated with Mary Jackson"}
+{"page": "Katherine Johnson", "statement": "Katherine Johnson (None) collaborated with Christine Darden", "subject": "Katherine Johnson", "pid": null, "object": "collaborated with Christine Darden"}
+{"page": "Knot theory", "statement": "Knot theory (P31) branch of mathematics", "subject": "Knot theory", "pid": "P31", "object": "branch of mathematics"}
+{"page": "Knot theory", "statement": "Knot theory (P31) subfield of topology", "subject": "Knot theory", "pid": "P31", "object": "subfield of topology"}
+{"page": "Knot theory", "statement": "Knot theory (None) studies knots in 3-dimensional space", "subject": "Knot theory", "pid": null, "object": "studies knots in 3-dimensional space"}
+{"page": "Knot theory", "statement": "Knot theory (None) grew from requirements of chemistry and physics", "subject": "Knot theory", "pid": null, "object": "grew from requirements of chemistry and physics"}
+{"page": "Knot theory", "statement": "Knot invariant (None) distinguishes one knot type from another", "subject": "Knot invariant", "pid": null, "object": "distinguishes one knot type from another"}
+{"page": "Knot theory", "statement": "Alexander polynomial (None) knot invariant discovered in 1923", "subject": "Alexander polynomial", "pid": null, "object": "knot invariant discovered in 1923"}
+{"page": "Knot theory", "statement": "Alexander polynomial (P571) 1923", "subject": "Alexander polynomial", "pid": "P571", "object": "1923"}
+{"page": "Knot theory", "statement": "James Alexander (P800) Alexander polynomial", "subject": "James Alexander", "pid": "P800", "object": "Alexander polynomial"}
+{"page": "Knot theory", "statement": "Jones polynomial (None) knot invariant discovered in 1984", "subject": "Jones polynomial", "pid": null, "object": "knot invariant discovered in 1984"}
+{"page": "Knot theory", "statement": "Vaughan Jones (P800) Jones polynomial", "subject": "Vaughan Jones", "pid": "P800", "object": "Jones polynomial"}
+{"page": "Knot theory", "statement": "Jones polynomial (P571) 1984", "subject": "Jones polynomial", "pid": "P571", "object": "1984"}
+{"page": "Knot theory", "statement": "Kauffman polynomial (None) knot invariant", "subject": "Kauffman polynomial", "pid": null, "object": "knot invariant"}
+{"page": "Knot theory", "statement": "Homology theory (None) used in knot theory", "subject": "Homology theory", "pid": null, "object": "used in knot theory"}
+{"page": "Knot theory", "statement": "Knot group (None) algebraic structure associated with knot", "subject": "Knot group", "pid": null, "object": "algebraic structure associated with knot"}
+{"page": "Knot theory", "statement": "Seifert surface (None) surface bounded by knot", "subject": "Seifert surface", "pid": null, "object": "surface bounded by knot"}
+{"page": "Knot theory", "statement": "3-manifold (None) related to knot theory", "subject": "3-manifold", "pid": null, "object": "related to knot theory"}
+{"page": "Knot theory", "statement": "Torus knot (None) type of knot studied in knot theory", "subject": "Torus knot", "pid": null, "object": "type of knot studied in knot theory"}
+{"page": "Knot theory", "statement": "Prime knot (None) cannot be decomposed into simpler knots", "subject": "Prime knot", "pid": null, "object": "cannot be decomposed into simpler knots"}
+{"page": "Knot theory", "statement": "Unknot (None) trivial knot with no crossings", "subject": "Unknot", "pid": null, "object": "trivial knot with no crossings"}
+{"page": "Knot theory", "statement": "Reidemeister move (None) local move preserving knot type", "subject": "Reidemeister move", "pid": null, "object": "local move preserving knot type"}
+{"page": "Knowledge", "statement": "Knowledge (P31) familiarity with something", "subject": "Knowledge", "pid": "P31", "object": "familiarity with something"}
+{"page": "Knowledge", "statement": "Knowledge (None) can be acquired through experience", "subject": "Knowledge", "pid": null, "object": "can be acquired through experience"}
+{"page": "Knowledge", "statement": "Knowledge (None) can be acquired through reason", "subject": "Knowledge", "pid": null, "object": "can be acquired through reason"}
+{"page": "Knowledge", "statement": "Epistemology (None) study of knowledge", "subject": "Epistemology", "pid": null, "object": "study of knowledge"}
+{"page": "Knowledge", "statement": "Belief (None) necessary component of knowledge", "subject": "Belief", "pid": null, "object": "necessary component of knowledge"}
+{"page": "Knowledge", "statement": "Justified true belief (None) traditional definition of knowledge", "subject": "Justified true belief", "pid": null, "object": "traditional definition of knowledge"}
+{"page": "Knowledge", "statement": "Gettier problem (None) challenges justified true belief definition", "subject": "Gettier problem", "pid": null, "object": "challenges justified true belief definition"}
+{"page": "Knowledge", "statement": "Edmund Gettier (P50) Gettier problem", "subject": "Edmund Gettier", "pid": "P50", "object": "Gettier problem"}
+{"page": "Knowledge", "statement": "Gettier problem (P571) 1963", "subject": "Gettier problem", "pid": "P571", "object": "1963"}
+{"page": "Knowledge", "statement": "Propositional knowledge (None) knowledge that something is the case", "subject": "Propositional knowledge", "pid": null, "object": "knowledge that something is the case"}
+{"page": "Knowledge", "statement": "Procedural knowledge (None) knowledge how to do something", "subject": "Procedural knowledge", "pid": null, "object": "knowledge how to do something"}
+{"page": "Knowledge", "statement": "Acquaintance knowledge (None) direct familiarity with something", "subject": "Acquaintance knowledge", "pid": null, "object": "direct familiarity with something"}
+{"page": "Knowledge", "statement": "A priori knowledge (None) knowledge independent of experience", "subject": "A priori knowledge", "pid": null, "object": "knowledge independent of experience"}
+{"page": "Knowledge", "statement": "A posteriori knowledge (None) knowledge derived from experience", "subject": "A posteriori knowledge", "pid": null, "object": "knowledge derived from experience"}
+{"page": "Knowledge", "statement": "Analytic knowledge (None) based on definitions and logic", "subject": "Analytic knowledge", "pid": null, "object": "based on definitions and logic"}
+{"page": "Knowledge", "statement": "Synthetic knowledge (None) based on facts about world", "subject": "Synthetic knowledge", "pid": null, "object": "based on facts about world"}
+{"page": "Knowledge", "statement": "Empiricism (None) all knowledge comes from sensory experience", "subject": "Empiricism", "pid": null, "object": "all knowledge comes from sensory experience"}
+{"page": "Knowledge", "statement": "Rationalism (None) some knowledge comes from reason alone", "subject": "Rationalism", "pid": null, "object": "some knowledge comes from reason alone"}
+{"page": "Knowledge", "statement": "Skepticism (None) doubts possibility of knowledge", "subject": "Skepticism", "pid": null, "object": "doubts possibility of knowledge"}
+{"page": "Knowledge", "statement": "Constructivism (None) knowledge is constructed by the mind", "subject": "Constructivism", "pid": null, "object": "knowledge is constructed by the mind"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P569) April 28, 1906", "subject": "Kurt G\u00f6del", "pid": "P569", "object": "April 28, 1906"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P570) January 14, 1978", "subject": "Kurt G\u00f6del", "pid": "P570", "object": "January 14, 1978"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P19) Brno, Moravia", "subject": "Kurt G\u00f6del", "pid": "P19", "object": "Brno, Moravia"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P27) Austro-Hungarian", "subject": "Kurt G\u00f6del", "pid": "P27", "object": "Austro-Hungarian"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P27) American", "subject": "Kurt G\u00f6del", "pid": "P27", "object": "American"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P106) mathematician", "subject": "Kurt G\u00f6del", "pid": "P106", "object": "mathematician"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P106) logician", "subject": "Kurt G\u00f6del", "pid": "P106", "object": "logician"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P69) University of Vienna", "subject": "Kurt G\u00f6del", "pid": "P69", "object": "University of Vienna"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P937) University of Vienna", "subject": "Kurt G\u00f6del", "pid": "P937", "object": "University of Vienna"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P937) Institute for Advanced Study", "subject": "Kurt G\u00f6del", "pid": "P937", "object": "Institute for Advanced Study"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P50) Incompleteness theorems", "subject": "Kurt G\u00f6del", "pid": "P50", "object": "Incompleteness theorems"}
+{"page": "Kurt G\u00f6del", "statement": "Incompleteness theorems (P571) 1931", "subject": "Incompleteness theorems", "pid": "P571", "object": "1931"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (None) proved incompleteness theorems", "subject": "Kurt G\u00f6del", "pid": null, "object": "proved incompleteness theorems"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (None) proved completeness theorem", "subject": "Kurt G\u00f6del", "pid": null, "object": "proved completeness theorem"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (None) worked on continuum hypothesis", "subject": "Kurt G\u00f6del", "pid": null, "object": "worked on continuum hypothesis"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P166) Albert Einstein Commemorative Award", "subject": "Kurt G\u00f6del", "pid": "P166", "object": "Albert Einstein Commemorative Award"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (None) contributed to mathematical logic", "subject": "Kurt G\u00f6del", "pid": null, "object": "contributed to mathematical logic"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (None) contributed to set theory", "subject": "Kurt G\u00f6del", "pid": null, "object": "contributed to set theory"}
+{"page": "Kurt G\u00f6del", "statement": "Kurt G\u00f6del (P551) Princeton, New Jersey", "subject": "Kurt G\u00f6del", "pid": "P551", "object": "Princeton, New Jersey"}
+{"page": "Kurt G\u00f6del", "statement": "Incompleteness theorem (None) fundamental result in mathematical logic", "subject": "Incompleteness theorem", "pid": null, "object": "fundamental result in mathematical logic"}
+{"page": "Latin", "statement": "Latin (P31) language", "subject": "Latin", "pid": "P31", "object": "language"}
+{"page": "Latin", "statement": "Latin (P27) Italy", "subject": "Latin", "pid": "P27", "object": "Italy"}
+{"page": "Latin", "statement": "Latin (None) used in Roman Empire", "subject": "Latin", "pid": null, "object": "used in Roman Empire"}
+{"page": "Latin", "statement": "Latin (None) ancestor of Romance languages", "subject": "Latin", "pid": null, "object": "ancestor of Romance languages"}
+{"page": "Latin", "statement": "Latin (P407) writing system is Latin script", "subject": "Latin", "pid": "P407", "object": "writing system is Latin script"}
+{"page": "Latin", "statement": "Latin (None) developed from Latium dialect", "subject": "Latin", "pid": null, "object": "developed from Latium dialect"}
+{"page": "Latin", "statement": "Classical Latin (None) language of Roman authors", "subject": "Classical Latin", "pid": null, "object": "language of Roman authors"}
+{"page": "Latin", "statement": "Medieval Latin (None) used during Middle Ages", "subject": "Medieval Latin", "pid": null, "object": "used during Middle Ages"}
+{"page": "Latin", "statement": "Ecclesiastical Latin (None) used by Roman Catholic Church", "subject": "Ecclesiastical Latin", "pid": null, "object": "used by Roman Catholic Church"}
+{"page": "Latin", "statement": "Latin language (None) spoken in Ancient Rome", "subject": "Latin language", "pid": null, "object": "spoken in Ancient Rome"}
+{"page": "Latin", "statement": "Latin (None) influenced development of English", "subject": "Latin", "pid": null, "object": "influenced development of English"}
+{"page": "Latin", "statement": "Latin (None) influenced development of French", "subject": "Latin", "pid": null, "object": "influenced development of French"}
+{"page": "Latin", "statement": "Latin (None) influenced development of Spanish", "subject": "Latin", "pid": null, "object": "influenced development of Spanish"}
+{"page": "Latin", "statement": "Romance languages (P155) Latin", "subject": "Romance languages", "pid": "P155", "object": "Latin"}
+{"page": "Latin", "statement": "Roman Empire (None) used Latin as official language", "subject": "Roman Empire", "pid": null, "object": "used Latin as official language"}
+{"page": "Latin", "statement": "Latin literature (None) includes works of Virgil", "subject": "Latin literature", "pid": null, "object": "includes works of Virgil"}
+{"page": "Latin", "statement": "Latin literature (None) includes works of Ovid", "subject": "Latin literature", "pid": null, "object": "includes works of Ovid"}
+{"page": "Latin", "statement": "Latin grammar (None) complex system of declensions", "subject": "Latin grammar", "pid": null, "object": "complex system of declensions"}
+{"page": "Latin", "statement": "Latin verb (None) complex conjugation patterns", "subject": "Latin verb", "pid": null, "object": "complex conjugation patterns"}
+{"page": "Latin", "statement": "Latin alphabet (P138) Latin language", "subject": "Latin alphabet", "pid": "P138", "object": "Latin language"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P569) April 15, 1707", "subject": "Leonhard Euler", "pid": "P569", "object": "April 15, 1707"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P570) September 18, 1783", "subject": "Leonhard Euler", "pid": "P570", "object": "September 18, 1783"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P19) Basel", "subject": "Leonhard Euler", "pid": "P19", "object": "Basel"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P27) Swiss", "subject": "Leonhard Euler", "pid": "P27", "object": "Swiss"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P106) mathematician", "subject": "Leonhard Euler", "pid": "P106", "object": "mathematician"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P106) physicist", "subject": "Leonhard Euler", "pid": "P106", "object": "physicist"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P69) University of Basel", "subject": "Leonhard Euler", "pid": "P69", "object": "University of Basel"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P69) Academy of Sciences, Saint Petersburg", "subject": "Leonhard Euler", "pid": "P69", "object": "Academy of Sciences, Saint Petersburg"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P937) Academy of Sciences, Saint Petersburg", "subject": "Leonhard Euler", "pid": "P937", "object": "Academy of Sciences, Saint Petersburg"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P937) Prussian Academy of Sciences", "subject": "Leonhard Euler", "pid": "P937", "object": "Prussian Academy of Sciences"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P937) University of Saint Petersburg", "subject": "Leonhard Euler", "pid": "P937", "object": "University of Saint Petersburg"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (P50) Elements of Algebra", "subject": "Leonhard Euler", "pid": "P50", "object": "Elements of Algebra"}
+{"page": "Leonhard Euler", "statement": "Elements of Algebra (P571) 1765", "subject": "Elements of Algebra", "pid": "P571", "object": "1765"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (None) made major contributions to analysis", "subject": "Leonhard Euler", "pid": null, "object": "made major contributions to analysis"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (None) made major contributions to number theory", "subject": "Leonhard Euler", "pid": null, "object": "made major contributions to number theory"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (None) made major contributions to topology", "subject": "Leonhard Euler", "pid": null, "object": "made major contributions to topology"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (None) worked on graph theory", "subject": "Leonhard Euler", "pid": null, "object": "worked on graph theory"}
+{"page": "Leonhard Euler", "statement": "Leonhard Euler (None) worked on calculus", "subject": "Leonhard Euler", "pid": null, "object": "worked on calculus"}
+{"page": "Leonhard Euler", "statement": "Euler's formula (P138) Leonhard Euler", "subject": "Euler's formula", "pid": "P138", "object": "Leonhard Euler"}
+{"page": "Leonhard Euler", "statement": "Euler characteristic (P138) Leonhard Euler", "subject": "Euler characteristic", "pid": "P138", "object": "Leonhard Euler"}
+{"page": "Linear algebra", "statement": "Linear algebra (P31) branch of mathematics", "subject": "Linear algebra", "pid": "P31", "object": "branch of mathematics"}
+{"page": "Linear algebra", "statement": "Linear algebra (None) studies vectors and matrices", "subject": "Linear algebra", "pid": null, "object": "studies vectors and matrices"}
+{"page": "Linear algebra", "statement": "Linear algebra (None) studies linear equations", "subject": "Linear algebra", "pid": null, "object": "studies linear equations"}
+{"page": "Linear algebra", "statement": "Linear algebra (None) studies linear transformations", "subject": "Linear algebra", "pid": null, "object": "studies linear transformations"}
+{"page": "Linear algebra", "statement": "Vector space (P31) fundamental concept in linear algebra", "subject": "Vector space", "pid": "P31", "object": "fundamental concept in linear algebra"}
+{"page": "Linear algebra", "statement": "Matrix (P31) array of numbers", "subject": "Matrix", "pid": "P31", "object": "array of numbers"}
+{"page": "Linear algebra", "statement": "Eigenvalue (None) scalar associated with linear transformation", "subject": "Eigenvalue", "pid": null, "object": "scalar associated with linear transformation"}
+{"page": "Linear algebra", "statement": "Eigenvector (None) vector not changed in direction by transformation", "subject": "Eigenvector", "pid": null, "object": "vector not changed in direction by transformation"}
+{"page": "Linear algebra", "statement": "Linear transformation (None) preserves vector addition and scalar multiplication", "subject": "Linear transformation", "pid": null, "object": "preserves vector addition and scalar multiplication"}
+{"page": "Linear algebra", "statement": "Basis (None) set of linearly independent vectors", "subject": "Basis", "pid": null, "object": "set of linearly independent vectors"}
+{"page": "Linear algebra", "statement": "Dimension (None) number of basis vectors in vector space", "subject": "Dimension", "pid": null, "object": "number of basis vectors in vector space"}
+{"page": "Linear algebra", "statement": "Rank (None) dimension of image of linear transformation", "subject": "Rank", "pid": null, "object": "dimension of image of linear transformation"}
+{"page": "Linear algebra", "statement": "Determinant (None) scalar value of square matrix", "subject": "Determinant", "pid": null, "object": "scalar value of square matrix"}
+{"page": "Linear algebra", "statement": "Inverse matrix (None) matrix that undoes another matrix", "subject": "Inverse matrix", "pid": null, "object": "matrix that undoes another matrix"}
+{"page": "Linear algebra", "statement": "Orthogonal matrix (None) matrix whose columns are orthonormal vectors", "subject": "Orthogonal matrix", "pid": null, "object": "matrix whose columns are orthonormal vectors"}
+{"page": "Linear algebra", "statement": "Symmetric matrix (None) matrix equal to its transpose", "subject": "Symmetric matrix", "pid": null, "object": "matrix equal to its transpose"}
+{"page": "Linear algebra", "statement": "Hermitian matrix (None) matrix equal to its conjugate transpose", "subject": "Hermitian matrix", "pid": null, "object": "matrix equal to its conjugate transpose"}
+{"page": "Linear algebra", "statement": "Gaussian elimination (None) algorithm for solving linear systems", "subject": "Gaussian elimination", "pid": null, "object": "algorithm for solving linear systems"}
+{"page": "Linear algebra", "statement": "QR decomposition (None) factorization of matrix", "subject": "QR decomposition", "pid": null, "object": "factorization of matrix"}
+{"page": "Linear algebra", "statement": "Singular value decomposition (None) matrix factorization method", "subject": "Singular value decomposition", "pid": null, "object": "matrix factorization method"}
+{"page": "Logic", "statement": "Logic (P31) study of reasoning", "subject": "Logic", "pid": "P31", "object": "study of reasoning"}
+{"page": "Logic", "statement": "Logic (P31) formal science", "subject": "Logic", "pid": "P31", "object": "formal science"}
+{"page": "Logic", "statement": "Logic (None) studies valid arguments", "subject": "Logic", "pid": null, "object": "studies valid arguments"}
+{"page": "Logic", "statement": "Logic (None) studies inference", "subject": "Logic", "pid": null, "object": "studies inference"}
+{"page": "Logic", "statement": "Propositional logic (None) logic of propositions", "subject": "Propositional logic", "pid": null, "object": "logic of propositions"}
+{"page": "Logic", "statement": "Predicate logic (None) logic with quantifiers", "subject": "Predicate logic", "pid": null, "object": "logic with quantifiers"}
+{"page": "Logic", "statement": "First-order logic (None) quantifies over individuals", "subject": "First-order logic", "pid": null, "object": "quantifies over individuals"}
+{"page": "Logic", "statement": "Second-order logic (None) quantifies over properties", "subject": "Second-order logic", "pid": null, "object": "quantifies over properties"}
+{"page": "Logic", "statement": "Modal logic (None) logic of necessity and possibility", "subject": "Modal logic", "pid": null, "object": "logic of necessity and possibility"}
+{"page": "Logic", "statement": "Temporal logic (None) logic of time", "subject": "Temporal logic", "pid": null, "object": "logic of time"}
+{"page": "Logic", "statement": "Fuzzy logic (None) logic with continuous truth values", "subject": "Fuzzy logic", "pid": null, "object": "logic with continuous truth values"}
+{"page": "Logic", "statement": "Three-valued logic (None) includes true, false, and unknown", "subject": "Three-valued logic", "pid": null, "object": "includes true, false, and unknown"}
+{"page": "Logic", "statement": "Aristotle (P800) laws of thought", "subject": "Aristotle", "pid": "P800", "object": "laws of thought"}
+{"page": "Logic", "statement": "Laws of thought (P571) ancient times", "subject": "Laws of thought", "pid": "P571", "object": "ancient times"}
+{"page": "Logic", "statement": "Boolean algebra (None) algebraic structure for logic", "subject": "Boolean algebra", "pid": null, "object": "algebraic structure for logic"}
+{"page": "Logic", "statement": "Truth table (None) lists all possible truth values", "subject": "Truth table", "pid": null, "object": "lists all possible truth values"}
+{"page": "Logic", "statement": "Tautology (None) statement always true", "subject": "Tautology", "pid": null, "object": "statement always true"}
+{"page": "Logic", "statement": "Contradiction (None) statement always false", "subject": "Contradiction", "pid": null, "object": "statement always false"}
+{"page": "Logic", "statement": "Contingent statement (None) statement that can be true or false", "subject": "Contingent statement", "pid": null, "object": "statement that can be true or false"}
+{"page": "Logic", "statement": "Logical inference (None) deriving conclusions from premises", "subject": "Logical inference", "pid": null, "object": "deriving conclusions from premises"}
+{"page": "Justification (epistemology)", "statement": "Justification (P31) concept in epistemology", "subject": "Justification", "pid": "P31", "object": "concept in epistemology"}
+{"page": "Justification (epistemology)", "statement": "Justification (None) answers question of why beliefs are rational", "subject": "Justification", "pid": null, "object": "answers question of why beliefs are rational"}
+{"page": "Justification (epistemology)", "statement": "Epistemic justification (None) makes belief rational", "subject": "Epistemic justification", "pid": null, "object": "makes belief rational"}
+{"page": "Justification (epistemology)", "statement": "Justification (None) necessary condition for knowledge", "subject": "Justification", "pid": null, "object": "necessary condition for knowledge"}
+{"page": "Justification (epistemology)", "statement": "Justified true belief (None) traditional analysis of knowledge", "subject": "Justified true belief", "pid": null, "object": "traditional analysis of knowledge"}
+{"page": "Justification (epistemology)", "statement": "Foundationalism (None) all justified beliefs rest on basic justified beliefs", "subject": "Foundationalism", "pid": null, "object": "all justified beliefs rest on basic justified beliefs"}
+{"page": "Justification (epistemology)", "statement": "Regress problem (None) challenge to foundationalism", "subject": "Regress problem", "pid": null, "object": "challenge to foundationalism"}
+{"page": "Justification (epistemology)", "statement": "Coherentism (None) justified beliefs cohere with each other", "subject": "Coherentism", "pid": null, "object": "justified beliefs cohere with each other"}
+{"page": "Justification (epistemology)", "statement": "Foundationalist (None) believes some beliefs are self-justifying", "subject": "Foundationalist", "pid": null, "object": "believes some beliefs are self-justifying"}
+{"page": "Justification (epistemology)", "statement": "Coherentist (None) believes beliefs justified by coherence with others", "subject": "Coherentist", "pid": null, "object": "believes beliefs justified by coherence with others"}
+{"page": "Justification (epistemology)", "statement": "Internalism (None) justification depends on internal mental states", "subject": "Internalism", "pid": null, "object": "justification depends on internal mental states"}
+{"page": "Justification (epistemology)", "statement": "Externalism (None) justification depends on external factors", "subject": "Externalism", "pid": null, "object": "justification depends on external factors"}
+{"page": "Justification (epistemology)", "statement": "Access internalism (None) believer must have access to justifiers", "subject": "Access internalism", "pid": null, "object": "believer must have access to justifiers"}
+{"page": "Justification (epistemology)", "statement": "Ontological internalism (None) justification established by mental states", "subject": "Ontological internalism", "pid": null, "object": "justification established by mental states"}
+{"page": "Justification (epistemology)", "statement": "Reliabilism (None) justified beliefs come from reliable processes", "subject": "Reliabilism", "pid": null, "object": "justified beliefs come from reliable processes"}
+{"page": "Justification (epistemology)", "statement": "Proper functionalism (None) justification requires proper cognitive function", "subject": "Proper functionalism", "pid": null, "object": "justification requires proper cognitive function"}
+{"page": "Justification (epistemology)", "statement": "Tracking theory (None) justified belief tracks truth", "subject": "Tracking theory", "pid": null, "object": "justified belief tracks truth"}
+{"page": "Justification (epistemology)", "statement": "Virtue epistemology (None) justification involves intellectual virtues", "subject": "Virtue epistemology", "pid": null, "object": "justification involves intellectual virtues"}
+{"page": "Justification (epistemology)", "statement": "Social epistemology (None) justification involves social factors", "subject": "Social epistemology", "pid": null, "object": "justification involves social factors"}
+{"page": "Justification (epistemology)", "statement": "Gettier problem (None) challenges justified true belief account", "subject": "Gettier problem", "pid": null, "object": "challenges justified true belief account"}
+{"page": "Justification (epistemology)", "statement": "Evidentialist (None) justification requires proportional evidence", "subject": "Evidentialist", "pid": null, "object": "justification requires proportional evidence"}
+{"page": "Justification (epistemology)", "statement": "Non-evidentialist (None) justification possible without proportional evidence", "subject": "Non-evidentialist", "pid": null, "object": "justification possible without proportional evidence"}
+{"page": "Justification (epistemology)", "statement": "Defeater (None) undermines justification of belief", "subject": "Defeater", "pid": null, "object": "undermines justification of belief"}
+{"page": "Justification (epistemology)", "statement": "Rebutting defeater (None) suggests belief is false", "subject": "Rebutting defeater", "pid": null, "object": "suggests belief is false"}
+{"page": "Justification (epistemology)", "statement": "Undercutting defeater (None) undermines justification without contradicting belief", "subject": "Undercutting defeater", "pid": null, "object": "undermines justification without contradicting belief"}
