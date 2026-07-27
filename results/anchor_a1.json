@@ -1,0 +1,102 @@
+{
+ "n_vectors": 3065,
+ "curve": [
+  {
+   "N": 8,
+   "residual": 0.3569274831124387,
+   "parity_p1": 0.04,
+   "jaccard10": 0.09755555933574507
+  },
+  {
+   "N": 16,
+   "residual": 0.3156061333613983,
+   "parity_p1": 0.09,
+   "jaccard10": 0.18178323826156645
+  },
+  {
+   "N": 32,
+   "residual": 0.26512190986708994,
+   "parity_p1": 0.33,
+   "jaccard10": 0.38314410907290175
+  },
+  {
+   "N": 64,
+   "residual": 0.19817934658244263,
+   "parity_p1": 0.79,
+   "jaccard10": 0.5797381703264057
+  },
+  {
+   "N": 128,
+   "residual": 0.13398799774995707,
+   "parity_p1": 0.96,
+   "jaccard10": 0.7159007659007659
+  },
+  {
+   "N": 256,
+   "residual": 0.06934093864069424,
+   "parity_p1": 0.98,
+   "jaccard10": 0.8700932400932401
+  },
+  {
+   "N": 512,
+   "residual": 0.01822651096871386,
+   "parity_p1": 1.0,
+   "jaccard10": 0.9606060606060606
+  },
+  {
+   "N": 1024,
+   "residual": 0.00011915031798226394,
+   "parity_p1": 1.0,
+   "jaccard10": 1.0
+  }
+ ],
+ "control": [
+  {
+   "N": 8,
+   "residual": 0.477660212619036,
+   "parity_p1": 0.27,
+   "jaccard10": 0.09492346061231509
+  },
+  {
+   "N": 16,
+   "residual": 0.27928677791770384,
+   "parity_p1": 0.89,
+   "jaccard10": 0.19059437810211802
+  },
+  {
+   "N": 32,
+   "residual": 0.0001684838376118103,
+   "parity_p1": 1.0,
+   "jaccard10": 0.9945454545454546
+  },
+  {
+   "N": 64,
+   "residual": 4.3176761553742615e-05,
+   "parity_p1": 1.0,
+   "jaccard10": 1.0
+  },
+  {
+   "N": 128,
+   "residual": 3.83912250279117e-05,
+   "parity_p1": 1.0,
+   "jaccard10": 1.0
+  }
+ ],
+ "control_pass": true,
+ "knee_Nstar": 256,
+ "criteria": "parity>=0.95 & jaccard10>=0.8",
+ "manifest": {
+  "generated_at": "2026-07-27T08:49:46.667623+00:00",
+  "commit": "694d3c2195395e2fe4524ec07d275e88be30e754",
+  "dirty": true,
+  "command": "scripts/probe_anchor_a1.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  }
+ }
+}

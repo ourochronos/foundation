@@ -1,15 +1,119 @@
 [
  {
-  "subject": "zero",
-  "pid": "P31",
+  "subject": "language truth and logic",
+  "pid": "P571",
   "claims": [
    {
-    "page": "0",
-    "object": "number"
+    "page": "A. J. Ayer",
+    "object": "1936"
    },
    {
-    "page": "Integer",
-    "object": "integer"
+    "page": "Logical positivism",
+    "object": "1933"
+   }
+  ]
+ },
+ {
+  "subject": "g h hardy",
+  "pid": "P27",
+  "claims": [
+   {
+    "page": "A Mathematician's Apology",
+    "object": "United Kingdom"
+   },
+   {
+    "page": "G. H. Hardy",
+    "object": "English"
+   }
+  ]
+ },
+ {
+  "subject": "david hume",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "A Treatise of Human Nature",
+    "object": "philosopher"
+   },
+   {
+    "page": "An Enquiry Concerning Human Understanding",
+    "object": "philosopher"
+   },
+   {
+    "page": "David Hume",
+    "object": "historian"
+   },
+   {
+    "page": "David Hume",
+    "object": "economist"
+   },
+   {
+    "page": "David Hume",
+    "object": "essayist"
+   }
+  ]
+ },
+ {
+  "subject": "charles sanders peirce",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Abductive reasoning",
+    "object": "philosopher"
+   },
+   {
+    "page": "Abductive reasoning",
+    "object": "logician"
+   },
+   {
+    "page": "Charles Sanders Peirce",
+    "object": "mathematician"
+   },
+   {
+    "page": "Charles Sanders Peirce",
+    "object": "logician"
+   },
+   {
+    "page": "Charles Sanders Peirce",
+    "object": "philosopher"
+   },
+   {
+    "page": "Charles Sanders Peirce",
+    "object": "chemist"
+   },
+   {
+    "page": "Pragmatism",
+    "object": "philosopher"
+   },
+   {
+    "page": "Pragmatism",
+    "object": "logician"
+   }
+  ]
+ },
+ {
+  "subject": "niels henrik abel",
+  "pid": "P27",
+  "claims": [
+   {
+    "page": "Abel Prize",
+    "object": "Norway"
+   },
+   {
+    "page": "Abel\u2013Ruffini theorem",
+    "object": "Norway"
+   },
+   {
+    "page": "Abelian group",
+    "object": "Norway"
+   },
+   {
+    "page": "Niels Henrik Abel",
+    "object": "Norway"
+   },
+   {
+    "page": "Niels Henrik Abel",
+    "object": "Norwegian"
    }
   ]
  },
@@ -17,6 +121,14 @@
   "subject": "brahmagupta",
   "pid": "P800",
   "claims": [
+   {
+    "page": "Algebraic equation",
+    "object": "Br\u0101hmasphu\u1e6dasiddh\u0101nta"
+   },
+   {
+    "page": "Quadratic form",
+    "object": "Br\u0101hmasphu\u1e6dasiddh\u0101nta"
+   },
    {
     "page": "0",
     "object": "Brahmasputha Siddhanta"
@@ -48,9 +160,1721 @@
   ]
  },
  {
+  "subject": "muhammad ibn musa al khwarizmi",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Algebraic equation",
+    "object": "mathematician"
+   },
+   {
+    "page": "Al-Khwarizmi",
+    "object": "mathematician"
+   },
+   {
+    "page": "Al-Khwarizmi",
+    "object": "astronomer"
+   }
+  ]
+ },
+ {
+  "subject": "group",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Algebraic structure",
+    "object": "algebraic structure"
+   },
+   {
+    "page": "Group (mathematics)",
+    "object": "algebraic structure"
+   },
+   {
+    "page": "Mathematical object",
+    "object": "mathematical object"
+   },
+   {
+    "page": "Mathematical structure",
+    "object": "algebraic structure"
+   }
+  ]
+ },
+ {
+  "subject": "constantine i",
+  "pid": "P39",
+  "claims": [
+   {
+    "page": "Christianity",
+    "object": "Roman Emperor"
+   },
+   {
+    "page": "Christianity",
+    "object": "convener of Council of Nicaea"
+   },
+   {
+    "page": "Byzantine Empire",
+    "object": "Roman Emperor"
+   }
+  ]
+ },
+ {
+  "subject": "cicero",
+  "pid": "P569",
+  "claims": [
+   {
+    "page": "Cicero",
+    "object": "106-01-03"
+   },
+   {
+    "page": "Superstition",
+    "object": "106 BCE"
+   }
+  ]
+ },
+ {
+  "subject": "cicero",
+  "pid": "P570",
+  "claims": [
+   {
+    "page": "Cicero",
+    "object": "43-12-07"
+   },
+   {
+    "page": "Superstition",
+    "object": "43 BCE"
+   }
+  ]
+ },
+ {
+  "subject": "circle",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Circle",
+    "object": "geometric shape"
+   },
+   {
+    "page": "Curvature",
+    "object": "geometric shape"
+   },
+   {
+    "page": "Manifold",
+    "object": "one-dimensional manifold"
+   }
+  ]
+ },
+ {
+  "subject": "archimedes",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Circle",
+    "object": "Measurement of a Circle"
+   },
+   {
+    "page": "Archimedes",
+    "object": "calculus"
+   },
+   {
+    "page": "Archimedes",
+    "object": "method of exhaustion"
+   },
+   {
+    "page": "Archimedes",
+    "object": "area of a circle"
+   },
+   {
+    "page": "Archimedes",
+    "object": "surface area and volume of a sphere"
+   },
+   {
+    "page": "Archimedes",
+    "object": "area of an ellipse"
+   },
+   {
+    "page": "Archimedes",
+    "object": "area under a parabola"
+   },
+   {
+    "page": "Archimedes",
+    "object": "approximation of pi"
+   },
+   {
+    "page": "Archimedes",
+    "object": "Archimedean spiral"
+   },
+   {
+    "page": "Archimedes",
+    "object": "system for large numbers"
+   },
+   {
+    "page": "Archimedes",
+    "object": "law of the lever"
+   },
+   {
+    "page": "Archimedes",
+    "object": "center of gravity"
+   },
+   {
+    "page": "Archimedes",
+    "object": "Archimedes' principle"
+   },
+   {
+    "page": "Archimedes",
+    "object": "measurement of the Sun"
+   },
+   {
+    "page": "Archimedes",
+    "object": "planetarium"
+   },
+   {
+    "page": "Archimedes",
+    "object": "Archimedes' screw pump"
+   },
+   {
+    "page": "Archimedes",
+    "object": "compound pulleys"
+   },
+   {
+    "page": "Archimedes",
+    "object": "war machines"
+   },
+   {
+    "page": "Archimedes",
+    "object": "The Sand-Reckoner"
+   },
+   {
+    "page": "Archimedes",
+    "object": "On Spirals"
+   }
+  ]
+ },
+ {
+  "subject": "agrippa",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Circular reasoning",
+    "object": "Five Tropes of Agrippa"
+   },
+   {
+    "page": "Pyrrhonism",
+    "object": "five modes of Agrippa"
+   }
+  ]
+ },
+ {
+  "subject": "david hume",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Circular reasoning",
+    "object": "problem of induction"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "A Treatise of Human Nature"
+   },
+   {
+    "page": "David Hume",
+    "object": "A Treatise of Human Nature"
+   }
+  ]
+ },
+ {
+  "subject": "classical logic",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Classical logic",
+    "object": "system of deductive logic"
+   },
+   {
+    "page": "Truth value",
+    "object": "two-valued logic"
+   }
+  ]
+ },
+ {
+  "subject": "george boole",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Classical logic",
+    "object": "Boolean logic"
+   },
+   {
+    "page": "George Boole",
+    "object": "algebraic logic"
+   },
+   {
+    "page": "George Boole",
+    "object": "differential equations"
+   }
+  ]
+ },
+ {
+  "subject": "bertrand russell",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Classical logic",
+    "object": "Principia Mathematica"
+   },
+   {
+    "page": "Philosophy of language",
+    "object": "analytic philosophy"
+   },
+   {
+    "page": "Pure mathematics",
+    "object": "work on paradoxes"
+   },
+   {
+    "page": "Type theory",
+    "object": "ramified theory of types"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "At the end of those five minutes, I had become a completely different person."
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "On Denoting"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "to my surprise, when I got up to speak, I was given the greatest ovation that was possible to give anybody"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "Confiscated by Cambridge Police"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "Introduction to Mathematical Philosophy"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "The Analysis of Mind"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "in the House of Commons with well-known campaigners, including Arnold Lupton, who had been an MP and had also endured imprisonment for"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "Soviet Russia\u20141920"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "Mr. Bertrand Russell, having died according to the Japanese press, is unable to give interviews to Japanese journalists"
+   },
+   {
+    "page": "Gettier problem",
+    "object": "Human Knowledge: Its scope and limits"
+   }
+  ]
+ },
+ {
+  "subject": "classical mechanics",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Classical mechanics",
+    "object": "17th century"
+   },
+   {
+    "page": "Mechanics",
+    "object": "Ancient Greece"
+   }
+  ]
+ },
+ {
+  "subject": "clay mathematics institute",
+  "pid": "P112",
+  "claims": [
+   {
+    "page": "Clay Mathematics Institute",
+    "object": "Landon T. Clay"
+   },
+   {
+    "page": "Millennium Prize Problems",
+    "object": "Millennium Prize"
+   }
+  ]
+ },
+ {
+  "subject": "rene descartes",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Common sense",
+    "object": "Discourse on Method"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "Discourse on the Method"
+   }
+  ]
+ },
+ {
+  "subject": "commutative algebra",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Commutative algebra",
+    "object": "branch of algebra"
+   },
+   {
+    "page": "Commutative ring",
+    "object": "field of mathematics"
+   },
+   {
+    "page": "Ring theory",
+    "object": "major area of ring theory"
+   }
+  ]
+ },
+ {
+  "subject": "kurt godel",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Compactness theorem",
+    "object": "compactness theorem"
+   },
+   {
+    "page": "Computability theory",
+    "object": "computability"
+   }
+  ]
+ },
+ {
+  "subject": "kurt g del",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Constructible universe",
+    "object": "The Consistency of the Axiom of Choice and of the Generalized Continuum-Hypothesis"
+   },
+   {
+    "page": "G\u00f6del's incompleteness theorems",
+    "object": "incompleteness theorems"
+   }
+  ]
+ },
+ {
+  "subject": "constructivism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Constructivism (philosophy of mathematics)",
+    "object": "philosophical position on mathematics"
+   },
+   {
+    "page": "Philosophy of mathematics",
+    "object": "mathematical philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "goldbach s conjecture",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Constructivism (philosophy of mathematics)",
+    "object": "unsolved problem in number theory"
+   },
+   {
+    "page": "Christian Goldbach",
+    "object": "conjecture"
+   }
+  ]
+ },
+ {
+  "subject": "german idealism",
+  "pid": "P112",
+  "claims": [
+   {
+    "page": "Continental philosophy",
+    "object": "Johann Gottlieb Fichte"
+   },
+   {
+    "page": "Continental philosophy",
+    "object": "Friedrich Schelling"
+   },
+   {
+    "page": "Continental philosophy",
+    "object": "Georg Wilhelm Friedrich Hegel"
+   },
+   {
+    "page": "Georg Wilhelm Friedrich Hegel",
+    "object": "Georg Wilhelm Friedrich Hegel"
+   },
+   {
+    "page": "German idealism",
+    "object": "Immanuel Kant"
+   }
+  ]
+ },
+ {
+  "subject": "truth value",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Correspondence theory of truth",
+    "object": "property of statements"
+   },
+   {
+    "page": "Truth value",
+    "object": "logical value"
+   }
+  ]
+ },
+ {
+  "subject": "finite set",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Countable set",
+    "object": "countable set"
+   },
+   {
+    "page": "Finite set",
+    "object": "mathematical collection"
+   }
+  ]
+ },
+ {
+  "subject": "natural numbers",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Countable set",
+    "object": "countable set"
+   },
+   {
+    "page": "Total order",
+    "object": "totally ordered set"
+   }
+  ]
+ },
+ {
+  "subject": "integers",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Countable set",
+    "object": "countable set"
+   },
+   {
+    "page": "Total order",
+    "object": "totally ordered set"
+   }
+  ]
+ },
+ {
+  "subject": "augustin louis cauchy",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Curvature",
+    "object": "oscillating circle theorem"
+   },
+   {
+    "page": "Augustin-Louis Cauchy",
+    "object": "calculus theorems"
+   }
+  ]
+ },
+ {
+  "subject": "daniel dennett",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Daniel Dennett",
+    "object": "philosopher"
+   },
+   {
+    "page": "Daniel Dennett",
+    "object": "cognitive scientist"
+   },
+   {
+    "page": "Belief",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "de morgan medal",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "De Morgan Medal",
+    "object": "mathematics prize"
+   },
+   {
+    "page": "De Morgan Medal",
+    "object": "society's most prestigious award"
+   },
+   {
+    "page": "De Morgan Medal",
+    "object": "triennial award"
+   },
+   {
+    "page": "London Mathematical Society",
+    "object": "triennial prize"
+   }
+  ]
+ },
+ {
+  "subject": "mary cartwright",
+  "pid": "P166",
+  "claims": [
+   {
+    "page": "De Morgan Medal",
+    "object": "De Morgan Medal"
+   },
+   {
+    "page": "Mary Cartwright",
+    "object": "De Morgan Medal"
+   },
+   {
+    "page": "Mary Cartwright",
+    "object": "Sylvester Medal"
+   }
+  ]
+ },
+ {
+  "subject": "deduction",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Deductive reasoning",
+    "object": "logical process"
+   },
+   {
+    "page": "Philosophy of science",
+    "object": "reasoning method"
+   }
+  ]
+ },
+ {
+  "subject": "inductive reasoning",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Deductive reasoning",
+    "object": "opposite of deduction"
+   },
+   {
+    "page": "Inductive reasoning",
+    "object": "reasoning"
+   }
+  ]
+ },
+ {
+  "subject": "aristotle",
+  "pid": "P937",
+  "claims": [
+   {
+    "page": "Democritus",
+    "object": "Democritus"
+   },
+   {
+    "page": "Aristotle",
+    "object": "physics"
+   },
+   {
+    "page": "Aristotle",
+    "object": "ethics"
+   }
+  ]
+ },
+ {
+  "subject": "determinism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Determinism",
+    "object": "metaphysical view"
+   },
+   {
+    "page": "Determinism",
+    "object": "single determinate system"
+   },
+   {
+    "page": "Philosophy of science",
+    "object": "philosophical view"
+   }
+  ]
+ },
+ {
+  "subject": "differentiable manifold",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Differentiable manifold",
+    "object": "type of manifold"
+   },
+   {
+    "page": "Differentiable manifold",
+    "object": "topological manifold with a globally defined differential structure"
+   },
+   {
+    "page": "Manifold",
+    "object": "manifold with structure"
+   }
+  ]
+ },
+ {
+  "subject": "duhem quine thesis",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Duhem\u2013Quine thesis",
+    "object": "philosophical concept"
+   },
+   {
+    "page": "Falsifiability",
+    "object": "philosophical thesis"
+   }
+  ]
+ },
+ {
+  "subject": "edmund husserl",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Edmund Husserl",
+    "object": "philosopher"
+   },
+   {
+    "page": "Edmund Husserl",
+    "object": "mathematician"
+   },
+   {
+    "page": "Transcendental idealism",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "edmund husserl",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "Edmund Husserl",
+    "object": "University of Halle"
+   },
+   {
+    "page": "Edmund Husserl",
+    "object": "University of G\u00f6ttingen"
+   },
+   {
+    "page": "Edmund Husserl",
+    "object": "University of Freiburg"
+   },
+   {
+    "page": "University of G\u00f6ttingen",
+    "object": "University of G\u00f6ttingen"
+   }
+  ]
+ },
+ {
+  "subject": "electromagnetism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Electromagnetism",
+    "object": "fundamental force"
+   },
+   {
+    "page": "Physics",
+    "object": "field of physics"
+   }
+  ]
+ },
+ {
+  "subject": "ernst mach",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Ernst Mach",
+    "object": "physics of shock waves"
+   },
+   {
+    "page": "Philosophy of mind",
+    "object": "neutral monism"
+   }
+  ]
+ },
+ {
+  "subject": "ernst zermelo",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Ernst Zermelo",
+    "object": "logician"
+   },
+   {
+    "page": "Ernst Zermelo",
+    "object": "mathematician"
+   },
+   {
+    "page": "Axiom of choice",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "erwin schr dinger",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Erwin Schr\u00f6dinger",
+    "object": "Schr\u00f6dinger equation"
+   },
+   {
+    "page": "Erwin Schr\u00f6dinger",
+    "object": "quantum entanglement"
+   },
+   {
+    "page": "Schr\u00f6dinger equation",
+    "object": "Schr\u00f6dinger equation"
+   }
+  ]
+ },
+ {
+  "subject": "thomas aquinas",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Essence",
+    "object": "commentary on De hebdomadibus"
+   },
+   {
+    "page": "Thomas Aquinas",
+    "object": "Summa Theologiae"
+   },
+   {
+    "page": "Thomas Aquinas",
+    "object": "Summa contra Gentiles"
+   },
+   {
+    "page": "Thomas Aquinas",
+    "object": "Disputed Questions on Truth"
+   }
+  ]
+ },
+ {
+  "subject": "ethics",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Ethics",
+    "object": "philosophical study"
+   },
+   {
+    "page": "Ethics",
+    "object": "moral philosophy"
+   },
+   {
+    "page": "Philosophy",
+    "object": "branch of philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "euclid",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Euclid's theorem",
+    "object": "Elements"
+   },
+   {
+    "page": "Euclidean algorithm",
+    "object": "Elements"
+   },
+   {
+    "page": "Axiom",
+    "object": "Elements"
+   },
+   {
+    "page": "Euclid",
+    "object": "Elements"
+   },
+   {
+    "page": "Mathematical proof",
+    "object": "Elements"
+   },
+   {
+    "page": "Mathematics",
+    "object": "Elements"
+   },
+   {
+    "page": "Non-Euclidean geometry",
+    "object": "Elements"
+   },
+   {
+    "page": "Prime number",
+    "object": "proof of infinite primes"
+   }
+  ]
+ },
+ {
+  "subject": "plato",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Eudaimonia",
+    "object": "Definitions"
+   },
+   {
+    "page": "Philosophical realism",
+    "object": "Theory of Forms"
+   },
+   {
+    "page": "Philosophy of language",
+    "object": "Cratylus dialogue"
+   }
+  ]
+ },
+ {
+  "subject": "leonhard euler",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Euler characteristic",
+    "object": "1758"
+   },
+   {
+    "page": "Euler's formula",
+    "object": "c. 1740"
+   }
+  ]
+ },
+ {
+  "subject": "charles darwin",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Evolution",
+    "object": "On the Origin of Species"
+   },
+   {
+    "page": "Natural selection",
+    "object": "On the Origin of Species"
+   },
+   {
+    "page": "Charles Darwin",
+    "object": "On the Origin of Species"
+   },
+   {
+    "page": "Charles Darwin",
+    "object": "The Descent of Man, and Selection in Relation to Sex"
+   },
+   {
+    "page": "Charles Darwin",
+    "object": "Fertilisation of Orchids"
+   },
+   {
+    "page": "Charles Darwin",
+    "object": "The Expression of the Emotions in Man and Animals"
+   }
+  ]
+ },
+ {
+  "subject": "charles darwin",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Evolution",
+    "object": "naturalist"
+   },
+   {
+    "page": "Natural selection",
+    "object": "naturalist"
+   },
+   {
+    "page": "Charles Darwin",
+    "object": "naturalist"
+   },
+   {
+    "page": "Charles Darwin",
+    "object": "geologist"
+   },
+   {
+    "page": "Charles Darwin",
+    "object": "biologist"
+   }
+  ]
+ },
+ {
+  "subject": "s ren kierkegaard",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Existentialism",
+    "object": "philosopher"
+   },
+   {
+    "page": "S\u00f8ren Kierkegaard",
+    "object": "philosopher"
+   },
+   {
+    "page": "S\u00f8ren Kierkegaard",
+    "object": "theologian"
+   }
+  ]
+ },
+ {
+  "subject": "friedrich nietzsche",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Existentialism",
+    "object": "philosopher"
+   },
+   {
+    "page": "Friedrich Nietzsche",
+    "object": "philosopher"
+   },
+   {
+    "page": "Friedrich Nietzsche",
+    "object": "writer"
+   }
+  ]
+ },
+ {
+  "subject": "jean paul sartre",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Existentialism",
+    "object": "philosopher"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "philosopher"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "writer"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "teacher"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "theologian"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "physician"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "critic"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "activist"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "novelist"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "playwright"
+   }
+  ]
+ },
+ {
+  "subject": "felix klein",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "Felix Klein",
+    "object": "Technische Hochschule M\u00fcnchen"
+   },
+   {
+    "page": "Felix Klein",
+    "object": "University of Erlangen"
+   },
+   {
+    "page": "Felix Klein",
+    "object": "University of G\u00f6ttingen"
+   },
+   {
+    "page": "University of G\u00f6ttingen",
+    "object": "University of G\u00f6ttingen"
+   }
+  ]
+ },
+ {
+  "subject": "charles darwin",
+  "pid": "P166",
+  "claims": [
+   {
+    "page": "Fellow of the Royal Society",
+    "object": "Fellow of the Royal Society"
+   },
+   {
+    "page": "Charles Darwin",
+    "object": "Royal Medal"
+   }
+  ]
+ },
+ {
+  "subject": "albert einstein",
+  "pid": "P166",
+  "claims": [
+   {
+    "page": "Fellow of the Royal Society",
+    "object": "Fellow of the Royal Society"
+   },
+   {
+    "page": "Albert Einstein",
+    "object": "Nobel Prize in Physics"
+   },
+   {
+    "page": "Albert Einstein",
+    "object": "Nobel Prize in Physics"
+   }
+  ]
+ },
+ {
+  "subject": "pierre de fermat",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Fermat's little theorem",
+    "object": "mathematician"
+   },
+   {
+    "page": "Pierre de Fermat",
+    "object": "mathematician"
+   },
+   {
+    "page": "Pierre de Fermat",
+    "object": "mathematician"
+   },
+   {
+    "page": "Pierre de Fermat",
+    "object": "mathematician"
+   },
+   {
+    "page": "Pierre de Fermat",
+    "object": "mathematician"
+   },
+   {
+    "page": "Pierre de Fermat",
+    "object": "lawyer"
+   },
+   {
+    "page": "Pierre de Fermat",
+    "object": "mathematician"
+   },
+   {
+    "page": "Pierre de Fermat",
+    "object": "mathematician"
+   },
+   {
+    "page": "Pierre de Fermat",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "infinite set",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Finite set",
+    "object": "uncountable collection"
+   },
+   {
+    "page": "Infinite set",
+    "object": "mathematical concept"
+   }
+  ]
+ },
+ {
+  "subject": "alonzo church",
+  "pid": "P184",
+  "claims": [
+   {
+    "page": "Alonzo Church",
+    "object": "Oswald Veblen"
+   },
+   {
+    "page": "Turing machine",
+    "object": "Alan Turing"
+   }
+  ]
+ },
+ {
+  "subject": "alonzo church",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Alonzo Church",
+    "object": "lambda calculus"
+   },
+   {
+    "page": "Alonzo Church",
+    "object": "Church\u2013Turing thesis"
+   },
+   {
+    "page": "Alonzo Church",
+    "object": "Church\u2013Rosser theorem"
+   },
+   {
+    "page": "Alonzo Church",
+    "object": "Introduction to Mathematical Logic"
+   },
+   {
+    "page": "Type theory",
+    "object": "simple theory of types"
+   }
+  ]
+ },
+ {
+  "subject": "john locke",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "An Essay Concerning Human Understanding",
+    "object": "philosopher"
+   },
+   {
+    "page": "John Locke",
+    "object": "Philosopher"
+   },
+   {
+    "page": "John Locke",
+    "object": "Physician"
+   },
+   {
+    "page": "John Locke",
+    "object": "philosopher"
+   },
+   {
+    "page": "John Locke",
+    "object": "physician"
+   }
+  ]
+ },
+ {
+  "subject": "gottlob frege",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Formal language",
+    "object": "Begriffsschrift"
+   },
+   {
+    "page": "Formal language",
+    "object": "Grundgesetze der Arithmetik"
+   },
+   {
+    "page": "Metamathematics",
+    "object": "Begriffsschrift"
+   },
+   {
+    "page": "Begriffsschrift",
+    "object": "Begriffsschrift"
+   }
+  ]
+ },
+ {
+  "subject": "euclid",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Foundations of mathematics",
+    "object": "Elements"
+   },
+   {
+    "page": "Pythagorean theorem",
+    "object": "Elements"
+   },
+   {
+    "page": "Mathematician",
+    "object": "Elements"
+   },
+   {
+    "page": "Euclid",
+    "object": "Elements"
+   },
+   {
+    "page": "Euclid",
+    "object": "Optics"
+   },
+   {
+    "page": "Euclid",
+    "object": "Data"
+   },
+   {
+    "page": "Euclidean geometry",
+    "object": "Elements"
+   },
+   {
+    "page": "Euclidean space",
+    "object": "Elements"
+   }
+  ]
+ },
+ {
+  "subject": "francis bacon",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Francis Bacon",
+    "object": "philosopher and statesman"
+   },
+   {
+    "page": "Natural science",
+    "object": "scientist"
+   }
+  ]
+ },
+ {
+  "subject": "function",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Function (mathematics)",
+    "object": "mathematical concept"
+   },
+   {
+    "page": "Mathematical object",
+    "object": "mathematical object"
+   }
+  ]
+ },
+ {
+  "subject": "hilbert space",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Functional analysis",
+    "object": "complete normed vector space"
+   },
+   {
+    "page": "Hilbert space",
+    "object": "abstract vector space"
+   }
+  ]
+ },
+ {
+  "subject": "galileo galilei",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Galileo Galilei",
+    "object": "astronomer"
+   },
+   {
+    "page": "Galileo Galilei",
+    "object": "physicist"
+   },
+   {
+    "page": "Galileo Galilei",
+    "object": "engineer"
+   },
+   {
+    "page": "Natural science",
+    "object": "scientist"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "scientist"
+   }
+  ]
+ },
+ {
+  "subject": "abel ruffini theorem",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Galois theory",
+    "object": "Paulo Ruffini"
+   },
+   {
+    "page": "Galois theory",
+    "object": "Niels Henrik Abel"
+   },
+   {
+    "page": "Niels Henrik Abel",
+    "object": "Niels Henrik Abel"
+   }
+  ]
+ },
+ {
+  "subject": "sphere",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Gaussian curvature",
+    "object": "geometric shape"
+   },
+   {
+    "page": "Manifold",
+    "object": "two-dimensional manifold"
+   },
+   {
+    "page": "Sphere",
+    "object": "geometric shape"
+   }
+  ]
+ },
+ {
+  "subject": "torus",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Gaussian curvature",
+    "object": "geometric surface"
+   },
+   {
+    "page": "Manifold",
+    "object": "two-dimensional manifold"
+   },
+   {
+    "page": "Torus",
+    "object": "geometric shape"
+   }
+  ]
+ },
+ {
+  "subject": "albert einstein",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "General relativity",
+    "object": "General relativity"
+   },
+   {
+    "page": "Manhattan Project",
+    "object": "Einstein-Szilard letter"
+   },
+   {
+    "page": "Princeton University Press",
+    "object": "The Meaning of Relativity"
+   }
+  ]
+ },
+ {
+  "subject": "einstein field equations",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "General relativity",
+    "object": "Einstein field equations"
+   },
+   {
+    "page": "Theory of relativity",
+    "object": "1915"
+   }
+  ]
+ },
+ {
+  "subject": "grigori perelman",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "Geometrization conjecture",
+    "object": "mathematician"
+   },
+   {
+    "page": "Grigori Perelman",
+    "object": "Steklov Institute"
+   }
+  ]
+ },
+ {
+  "subject": "grigori perelman",
+  "pid": "P166",
+  "claims": [
+   {
+    "page": "Geometrization conjecture",
+    "object": "Fields Medal"
+   },
+   {
+    "page": "Geometrization conjecture",
+    "object": "Clay Mathematics Prize"
+   },
+   {
+    "page": "Poincar\u00e9 conjecture",
+    "object": "Science Breakthrough of the Year"
+   }
+  ]
+ },
+ {
+  "subject": "george boole",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "George Boole",
+    "object": "mathematician"
+   },
+   {
+    "page": "Propositional logic",
+    "object": "logician"
+   }
+  ]
+ },
+ {
+  "subject": "german empire",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "German Empire",
+    "object": "German Empire"
+   },
+   {
+    "page": "Anschluss",
+    "object": "1871"
+   }
+  ]
+ },
+ {
+  "subject": "giuseppe peano",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Giuseppe Peano",
+    "object": "mathematician"
+   },
+   {
+    "page": "Giuseppe Peano",
+    "object": "glottologist"
+   },
+   {
+    "page": "Logicism",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "giuseppe peano",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Giuseppe Peano",
+    "object": "Peano axioms"
+   },
+   {
+    "page": "Giuseppe Peano",
+    "object": "Peano curve"
+   },
+   {
+    "page": "Giuseppe Peano",
+    "object": "Calcolo differenziale, e principii di calcolo integrale"
+   },
+   {
+    "page": "Giuseppe Peano",
+    "object": "Latino sine flexione"
+   },
+   {
+    "page": "Mathematical logic",
+    "object": "Peano axioms"
+   }
+  ]
+ },
+ {
+  "subject": "fourier transform",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Harmonic analysis",
+    "object": "basic example"
+   },
+   {
+    "page": "Fourier transform",
+    "object": "mathematical tool"
+   }
+  ]
+ },
+ {
+  "subject": "plimpton 322",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "History of mathematics",
+    "object": "2000-1900 BCE"
+   },
+   {
+    "page": "Pythagorean triple",
+    "object": "about 1800 BCE"
+   },
+   {
+    "page": "Pythagorean theorem",
+    "object": "c. 1800 BC"
+   }
+  ]
+ },
+ {
+  "subject": "rhind mathematical papyrus",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "History of mathematics",
+    "object": "1800 BCE"
+   },
+   {
+    "page": "Square root",
+    "object": "1650 BC"
+   }
+  ]
+ },
+ {
+  "subject": "moscow mathematical papyrus",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "History of mathematics",
+    "object": "1890 BCE"
+   },
+   {
+    "page": "Volume",
+    "object": "1820 BCE"
+   }
+  ]
+ },
+ {
+  "subject": "david hilbert",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "History of mathematics",
+    "object": "mathematician"
+   },
+   {
+    "page": "Proof theory",
+    "object": "mathematician"
+   },
+   {
+    "page": "Pure mathematics",
+    "object": "mathematician"
+   },
+   {
+    "page": "David Hilbert",
+    "object": "philosopher"
+   },
+   {
+    "page": "Mathematician",
+    "object": "mathematician"
+   },
+   {
+    "page": "Mathematics",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "aryabhata",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "History of mathematics",
+    "object": "astronomer"
+   },
+   {
+    "page": "Aryabhata",
+    "object": "mathematician"
+   },
+   {
+    "page": "Aryabhata",
+    "object": "astronomer"
+   }
+  ]
+ },
+ {
+  "subject": "topological space",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Homeomorphism",
+    "object": "geometric object"
+   },
+   {
+    "page": "Mathematical structure",
+    "object": "topological structure"
+   },
+   {
+    "page": "Topological space",
+    "object": "mathematical concept"
+   }
+  ]
+ },
+ {
+  "subject": "albert einstein",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "Humboldt University of Berlin",
+    "object": "Humboldt University of Berlin"
+   },
+   {
+    "page": "Institute for Advanced Study",
+    "object": "Institute for Advanced Study"
+   },
+   {
+    "page": "Princeton University",
+    "object": "Princeton University"
+   }
+  ]
+ },
+ {
+  "subject": "ibn al haytham",
+  "pid": "P570",
+  "claims": [
+   {
+    "page": "Ibn al-Haytham",
+    "object": "c. 1040 CE"
+   },
+   {
+    "page": "Book of Optics",
+    "object": "c. 1040 AD"
+   }
+  ]
+ },
+ {
+  "subject": "ibn al haytham",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Ibn al-Haytham",
+    "object": "mathematician"
+   },
+   {
+    "page": "Ibn al-Haytham",
+    "object": "astronomer"
+   },
+   {
+    "page": "Ibn al-Haytham",
+    "object": "physicist"
+   },
+   {
+    "page": "Parallel postulate",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
   "subject": "george berkeley",
   "pid": "P800",
   "claims": [
+   {
+    "page": "Idealism",
+    "object": "immaterialism"
+   },
    {
     "page": "Age of Enlightenment",
     "object": "A Treatise Concerning the Principles of Human Knowledge"
@@ -114,9 +1938,537 @@
   ]
  },
  {
+  "subject": "rene descartes",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Imaginary unit",
+    "object": "term imaginary"
+   },
+   {
+    "page": "Metaphysics",
+    "object": "Meditations"
+   }
+  ]
+ },
+ {
+  "subject": "john wallis",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Infinitesimal",
+    "object": "Treatise on the Conic Sections"
+   },
+   {
+    "page": "John Wallis",
+    "object": "s school in Tenterden in 1625 following an outbreak of plague. Wallis was first exposed to mathematics in 1631, at Felsted School (then known as Martin Holbeach"
+   },
+   {
+    "page": "John Wallis",
+    "object": "s in 1640, afterwards entering the priesthood. From 1643 to 1649, he served as a nonvoting scribe at the Westminster Assembly. He was elected to a fellowship at Queens"
+   },
+   {
+    "page": "John Wallis",
+    "object": "unbreakable"
+   },
+   {
+    "page": "John Wallis",
+    "object": "rifling his Neighbours, and adorning himself with their spoyls"
+   }
+  ]
+ },
+ {
+  "subject": "instrumentalism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Instrumentalism",
+    "object": "methodological view"
+   },
+   {
+    "page": "Instrumentalism",
+    "object": "antirealism"
+   },
+   {
+    "page": "Philosophy of science",
+    "object": "philosophical view"
+   }
+  ]
+ },
+ {
+  "subject": "international mathematical union",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "International Mathematical Union",
+    "object": "1920"
+   },
+   {
+    "page": "International Mathematical Union",
+    "object": "1950"
+   },
+   {
+    "page": "International Congress of Mathematicians",
+    "object": "1951"
+   }
+  ]
+ },
+ {
+  "subject": "intuitionism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Intuitionism",
+    "object": "mathematical philosophy"
+   },
+   {
+    "page": "Intuitionism",
+    "object": "constructivism"
+   },
+   {
+    "page": "Intuitionism",
+    "object": "constructivism"
+   },
+   {
+    "page": "Philosophy of mathematics",
+    "object": "mathematical philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "avicenna",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Islamic philosophy",
+    "object": "philosopher"
+   },
+   {
+    "page": "Avicenna",
+    "object": "philosopher"
+   },
+   {
+    "page": "Avicenna",
+    "object": "physician"
+   }
+  ]
+ },
+ {
+  "subject": "j robert oppenheimer",
+  "pid": "P69",
+  "claims": [
+   {
+    "page": "J. Robert Oppenheimer",
+    "object": "Harvard University"
+   },
+   {
+    "page": "J. Robert Oppenheimer",
+    "object": "University of G\u00f6ttingen"
+   },
+   {
+    "page": "University of G\u00f6ttingen",
+    "object": "University of G\u00f6ttingen"
+   },
+   {
+    "page": "University of G\u00f6ttingen",
+    "object": "University of G\u00f6ttingen"
+   }
+  ]
+ },
+ {
+  "subject": "j robert oppenheimer",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "J. Robert Oppenheimer",
+    "object": "University of California, Berkeley"
+   },
+   {
+    "page": "Institute for Advanced Study",
+    "object": "Institute for Advanced Study"
+   }
+  ]
+ },
+ {
+  "subject": "j robert oppenheimer",
+  "pid": "P39",
+  "claims": [
+   {
+    "page": "J. Robert Oppenheimer",
+    "object": "Director of Los Alamos Laboratory"
+   },
+   {
+    "page": "J. Robert Oppenheimer",
+    "object": "Director of the Institute for Advanced Study"
+   },
+   {
+    "page": "Manhattan Project",
+    "object": "director of Los Alamos Laboratory"
+   }
+  ]
+ },
+ {
+  "subject": "james clerk maxwell",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "James Clerk Maxwell",
+    "object": "physicist"
+   },
+   {
+    "page": "James Clerk Maxwell",
+    "object": "mathematician"
+   },
+   {
+    "page": "Statistical mechanics",
+    "object": "physicist"
+   }
+  ]
+ },
+ {
+  "subject": "jean jacques rousseau",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Jean-Jacques Rousseau",
+    "object": "Age of Sensibility"
+   },
+   {
+    "page": "Jean-Jacques Rousseau",
+    "object": "Jean-Jacques Rousseau, Citizen of Geneva"
+   },
+   {
+    "page": "Jean-Jacques Rousseau",
+    "object": "Small Council"
+   },
+   {
+    "page": "Jean-Jacques Rousseau",
+    "object": "A sovereign that never performs an act of sovereignty is an imaginary being"
+   },
+   {
+    "page": "Jean-Jacques Rousseau",
+    "object": "s father, Isaac, was not in the city then, but Jean-Jacques"
+   },
+   {
+    "page": "Jean-Jacques Rousseau",
+    "object": "A Genevan watchmaker is a man who can be introduced anywhere; a Parisian watchmaker is only fit to talk about watches"
+   },
+   {
+    "page": "Jean-Jacques Rousseau",
+    "object": "s father at the age of 31. Isaac"
+   },
+   {
+    "page": "Jean-Jacques Rousseau",
+    "object": "I was born almost dying, they had little hope of saving me"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "Discourse on Inequality"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "The Social Contract"
+   }
+  ]
+ },
+ {
+  "subject": "jean paul sartre",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "a writer should not allow himself to be turned into an institution."
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "bad faith"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "authentic"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "became the dominant theme of Sartre"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "\u00catre et le N\u00e9ant, 1943). Sartre provided an introduction to his philosophy in his work Existentialism Is a Humanism (L"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "s early academic career included teaching in several French lyc\u00e9es and engaging in provocative pranks and debates.\nSartre"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "s cousin. When he was twelve, Sartre"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "Image dans la vie psychologique: r\u00f4le et nature"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "s philosophical development was his weekly attendance at Alexandre Koj\u00e8ve"
+   },
+   {
+    "page": "Jean-Paul Sartre",
+    "object": "s interest in phenomenology. However Sartre"
+   },
+   {
+    "page": "Phenomenology (philosophy)",
+    "object": "existential phenomenology"
+   }
+  ]
+ },
+ {
+  "subject": "jerry fodor",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Jerry Fodor",
+    "object": "philosopher"
+   },
+   {
+    "page": "Jerry Fodor",
+    "object": "author"
+   },
+   {
+    "page": "Jerry Fodor",
+    "object": "professor"
+   },
+   {
+    "page": "Jerry Fodor",
+    "object": "psychologist"
+   },
+   {
+    "page": "Jerry Fodor",
+    "object": "linguist"
+   },
+   {
+    "page": "Jerry Fodor",
+    "object": "critic"
+   },
+   {
+    "page": "Belief",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "johannes kepler",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Johannes Kepler",
+    "object": "philosopher"
+   },
+   {
+    "page": "Johannes Kepler",
+    "object": "mathematician"
+   },
+   {
+    "page": "Johannes Kepler",
+    "object": "astronomer"
+   },
+   {
+    "page": "Johannes Kepler",
+    "object": "teacher"
+   },
+   {
+    "page": "Johannes Kepler",
+    "object": "professor"
+   },
+   {
+    "page": "Natural science",
+    "object": "scientist"
+   }
+  ]
+ },
+ {
+  "subject": "john dewey",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "John Dewey",
+    "object": "philosopher"
+   },
+   {
+    "page": "John Dewey",
+    "object": "economist"
+   },
+   {
+    "page": "John Dewey",
+    "object": "teacher"
+   },
+   {
+    "page": "John Dewey",
+    "object": "professor"
+   },
+   {
+    "page": "John Dewey",
+    "object": "psychologist"
+   },
+   {
+    "page": "John Dewey",
+    "object": "reformer"
+   },
+   {
+    "page": "Pragmatism",
+    "object": "philosopher"
+   },
+   {
+    "page": "Pragmatism",
+    "object": "educator"
+   }
+  ]
+ },
+ {
+  "subject": "john maynard keynes",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "John Maynard Keynes",
+    "object": "economist"
+   },
+   {
+    "page": "John Maynard Keynes",
+    "object": "reformer"
+   },
+   {
+    "page": "London School of Economics",
+    "object": "economist"
+   }
+  ]
+ },
+ {
+  "subject": "plato",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Ancient Greek philosophy",
+    "object": "philosopher"
+   },
+   {
+    "page": "Polymath",
+    "object": "polymath"
+   }
+  ]
+ },
+ {
+  "subject": "aristotle",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Ancient Greek philosophy",
+    "object": "philosopher"
+   },
+   {
+    "page": "Polymath",
+    "object": "polymath"
+   }
+  ]
+ },
+ {
+  "subject": "right angle",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Angle",
+    "object": "angle"
+   },
+   {
+    "page": "Right angle",
+    "object": "angle"
+   },
+   {
+    "page": "Right angle",
+    "object": "quarter turn"
+   }
+  ]
+ },
+ {
+  "subject": "k nigsberg",
+  "pid": "P276",
+  "claims": [
+   {
+    "page": "K\u00f6nigsberg",
+    "object": "Baltic region"
+   },
+   {
+    "page": "Seven Bridges of K\u00f6nigsberg",
+    "object": "Kaliningrad"
+   }
+  ]
+ },
+ {
+  "subject": "karl marx",
+  "pid": "P27",
+  "claims": [
+   {
+    "page": "Karl Marx",
+    "object": "Prussia"
+   },
+   {
+    "page": "Marxism",
+    "object": "Germany"
+   }
+  ]
+ },
+ {
+  "subject": "king s college chapel",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "King's College, Cambridge",
+    "object": "1446"
+   },
+   {
+    "page": "King's College, Cambridge",
+    "object": "1544"
+   },
+   {
+    "page": "Cambridge",
+    "object": "1446"
+   }
+  ]
+ },
+ {
+  "subject": "syntax",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Linguistics",
+    "object": "linguistic area"
+   },
+   {
+    "page": "Syntax",
+    "object": "linguistic study"
+   }
+  ]
+ },
+ {
+  "subject": "semantics",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Linguistics",
+    "object": "linguistic area"
+   },
+   {
+    "page": "Semantics",
+    "object": "branch of linguistics"
+   }
+  ]
+ },
+ {
   "subject": "alan turing",
   "pid": "P106",
   "claims": [
+   {
+    "page": "List of pioneers in computer science",
+    "object": "computer pioneer"
+   },
    {
     "page": "Alan Turing",
     "object": "mathematician"
@@ -140,6 +2492,2490 @@
    {
     "page": "Mathematician",
     "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "leonhard euler",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Logarithm",
+    "object": "exponential function"
+   },
+   {
+    "page": "Graph theory",
+    "object": "Solutio Problematis ad Geometriam Situs Pertinentis"
+   },
+   {
+    "page": "Topology",
+    "object": "Seven Bridges of K\u00f6nigsberg"
+   },
+   {
+    "page": "Topology",
+    "object": "polyhedron formula"
+   }
+  ]
+ },
+ {
+  "subject": "complex logarithm",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Logarithm",
+    "object": "logarithm type"
+   },
+   {
+    "page": "Lp space",
+    "object": "logarithm variant"
+   }
+  ]
+ },
+ {
+  "subject": "logical positivism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Logical truth",
+    "object": "20th century movement"
+   },
+   {
+    "page": "Logical positivism",
+    "object": "philosophical movement"
+   }
+  ]
+ },
+ {
+  "subject": "gottlob frege",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Logicism",
+    "object": "logician"
+   },
+   {
+    "page": "Naive set theory",
+    "object": "mathematician"
+   },
+   {
+    "page": "Proposition",
+    "object": "logician"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "philosopher"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "logician"
+   },
+   {
+    "page": "Gottlob Frege",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "bertrand russell",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Logicism",
+    "object": "philosopher"
+   },
+   {
+    "page": "Naive set theory",
+    "object": "philosopher"
+   },
+   {
+    "page": "Proposition",
+    "object": "logician"
+   },
+   {
+    "page": "Analytic philosophy",
+    "object": "philosopher"
+   },
+   {
+    "page": "Axiom of choice",
+    "object": "philosopher"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "philosopher"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "logician"
+   },
+   {
+    "page": "Bertrand Russell",
+    "object": "social reformer"
+   },
+   {
+    "page": "Coherentism",
+    "object": "philosopher"
+   },
+   {
+    "page": "Mathematician",
+    "object": "mathematician"
+   },
+   {
+    "page": "Philosophy of mathematics",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "alfred north whitehead",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Logicism",
+    "object": "mathematician"
+   },
+   {
+    "page": "Alfred North Whitehead",
+    "object": "mathematician"
+   },
+   {
+    "page": "Alfred North Whitehead",
+    "object": "philosopher"
+   },
+   {
+    "page": "Alfred North Whitehead",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "principia mathematica",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Logicism",
+    "object": "Russell and Whitehead"
+   },
+   {
+    "page": "Type theory",
+    "object": "Whitehead and Russell"
+   },
+   {
+    "page": "Principia Mathematica",
+    "object": "Alfred North Whitehead"
+   }
+  ]
+ },
+ {
+  "subject": "principia mathematica",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Logicism",
+    "object": "1903"
+   },
+   {
+    "page": "Principia Mathematica",
+    "object": "1910"
+   },
+   {
+    "page": "Principia Mathematica",
+    "object": "1910"
+   },
+   {
+    "page": "Principia Mathematica",
+    "object": "1910"
+   },
+   {
+    "page": "Principia Mathematica",
+    "object": "1912"
+   },
+   {
+    "page": "Principia Mathematica",
+    "object": "1913"
+   }
+  ]
+ },
+ {
+  "subject": "zermelo fraenkel set theory",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Logicism",
+    "object": "axiomatic system"
+   },
+   {
+    "page": "Russell's paradox",
+    "object": "set theory"
+   }
+  ]
+ },
+ {
+  "subject": "kurt g del",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Logicism",
+    "object": "logician"
+   },
+   {
+    "page": "Kurt G\u00f6del",
+    "object": "Philosopher"
+   },
+   {
+    "page": "Kurt G\u00f6del",
+    "object": "Mathematician"
+   },
+   {
+    "page": "Kurt G\u00f6del",
+    "object": "Physicist"
+   },
+   {
+    "page": "Kurt G\u00f6del",
+    "object": "mathematician"
+   },
+   {
+    "page": "Kurt G\u00f6del",
+    "object": "logician"
+   }
+  ]
+ },
+ {
+  "subject": "set theory",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Logicism",
+    "object": "mathematical field"
+   },
+   {
+    "page": "Philosophy of mathematics",
+    "object": "mathematical theory"
+   }
+  ]
+ },
+ {
+  "subject": "mary cartwright",
+  "pid": "P39",
+  "claims": [
+   {
+    "page": "London Mathematical Society",
+    "object": "first female president"
+   },
+   {
+    "page": "Mary Cartwright",
+    "object": "Fellow of the Royal Society"
+   },
+   {
+    "page": "Mary Cartwright",
+    "object": "President of Mathematical Association"
+   },
+   {
+    "page": "Mary Cartwright",
+    "object": "President of London Mathematical Society"
+   },
+   {
+    "page": "Mary Cartwright",
+    "object": "Mistress of Girton"
+   }
+  ]
+ },
+ {
+  "subject": "manifold",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Manifold",
+    "object": "topological space"
+   },
+   {
+    "page": "Mathematical object",
+    "object": "mathematical object"
+   }
+  ]
+ },
+ {
+  "subject": "martin heidegger",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Martin Heidegger",
+    "object": "Being and Time"
+   },
+   {
+    "page": "Martin Heidegger",
+    "object": "The Origin of the Work of Art"
+   },
+   {
+    "page": "Martin Heidegger",
+    "object": "Contributions to Philosophy"
+   },
+   {
+    "page": "Phenomenology (philosophy)",
+    "object": "phenomenological philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "karl marx",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Materialism",
+    "object": "historical materialism"
+   },
+   {
+    "page": "Princeton University Press",
+    "object": "Capital: Critique of Political Economy, Volume 1"
+   }
+  ]
+ },
+ {
+  "subject": "blaise pascal",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Mathematical induction",
+    "object": "Trait du triangle arithmetique"
+   },
+   {
+    "page": "Blaise Pascal",
+    "object": "War, defaulted on the government"
+   },
+   {
+    "page": "Blaise Pascal",
+    "object": "Probability theory and the discoveries following it changed the way we regard uncertainty, risk, decision-making, and an individual"
+   },
+   {
+    "page": "Blaise Pascal",
+    "object": "Nature abhors a vacuum)."
+   },
+   {
+    "page": "Blaise Pascal",
+    "object": "New experiments with the vacuum"
+   },
+   {
+    "page": "Blaise Pascal",
+    "object": "would not let anyone other than these men attend him...It was a good choice, for the old man survived and was able to walk again..."
+   },
+   {
+    "page": "Blaise Pascal",
+    "object": "t work, either. At the heart of this was...Blaise"
+   },
+   {
+    "page": "Blaise Pascal",
+    "object": "He retired very sadly to his rooms without seeing Jacqueline, who was waiting in the little parlor..."
+   },
+   {
+    "page": "Blaise Pascal",
+    "object": "Fire. God of Abraham, God of Isaac, God of Jacob, not of the philosophers and the scholars..."
+   },
+   {
+    "page": "Blaise Pascal",
+    "object": "I will not forget thy word. Amen."
+   }
+  ]
+ },
+ {
+  "subject": "jakob bernoulli",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Mathematical induction",
+    "object": "mathematical induction"
+   },
+   {
+    "page": "Probability",
+    "object": "Ars Conjectandi"
+   }
+  ]
+ },
+ {
+  "subject": "ring",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Mathematical object",
+    "object": "mathematical object"
+   },
+   {
+    "page": "Mathematical structure",
+    "object": "algebraic structure"
+   },
+   {
+    "page": "Ring (mathematics)",
+    "object": "algebraic structure"
+   },
+   {
+    "page": "Ring (mathematics)",
+    "object": "abelian group"
+   }
+  ]
+ },
+ {
+  "subject": "field",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Mathematical object",
+    "object": "mathematical object"
+   },
+   {
+    "page": "Mathematical structure",
+    "object": "algebraic structure"
+   }
+  ]
+ },
+ {
+  "subject": "vector space",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Mathematical object",
+    "object": "mathematical object"
+   },
+   {
+    "page": "Mathematical structure",
+    "object": "algebraic structure"
+   },
+   {
+    "page": "Vector space",
+    "object": "mathematical structure"
+   },
+   {
+    "page": "Linear algebra",
+    "object": "fundamental concept in linear algebra"
+   }
+  ]
+ },
+ {
+  "subject": "matrix",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Mathematical object",
+    "object": "mathematical object"
+   },
+   {
+    "page": "Matrix (mathematics)",
+    "object": "rectangular array"
+   },
+   {
+    "page": "Linear algebra",
+    "object": "array of numbers"
+   }
+  ]
+ },
+ {
+  "subject": "topology",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Mathematical object",
+    "object": "mathematical object"
+   },
+   {
+    "page": "Topology",
+    "object": "branch of mathematics"
+   }
+  ]
+ },
+ {
+  "subject": "lagrangian mechanics",
+  "pid": "P937",
+  "claims": [
+   {
+    "page": "Mathematical physics",
+    "object": "mathematical physics"
+   },
+   {
+    "page": "Momentum",
+    "object": "momentum"
+   }
+  ]
+ },
+ {
+  "subject": "metric space",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Mathematical structure",
+    "object": "topological structure"
+   },
+   {
+    "page": "Metric space",
+    "object": "mathematical concept"
+   }
+  ]
+ },
+ {
+  "subject": "al khwarizmi",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Mathematics in the medieval Islamic world",
+    "object": "algebra"
+   },
+   {
+    "page": "Al-Khwarizmi",
+    "object": "Al-Jabr"
+   }
+  ]
+ },
+ {
+  "subject": "omar khayyam",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Mathematics in the medieval Islamic world",
+    "object": "mathematician"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "mathematician"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "poet"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "astronomer"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "mathematician"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "astronomer"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "astronomer"
+   }
+  ]
+ },
+ {
+  "subject": "omar khayyam",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Mathematics in the medieval Islamic world",
+    "object": "geometric algebra"
+   },
+   {
+    "page": "Saccheri quadrilateral",
+    "object": "Risala fi sharh ma ashkala min musadarai kitab Uqlidis"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "Treatise on Algebra"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "solar year calculation"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "Jalali calendar"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "Commentary on the Difficulties Concerning the Postulates of Euclid's Elements"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "Treatise On the Division of a Quadrant of a Circle"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "treatise on binomial theorem"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "extraction of nth roots"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "Euclid's parallel axiom"
+   }
+  ]
+ },
+ {
+  "subject": "max born",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "Max Born",
+    "object": "University of G\u00f6ttingen"
+   },
+   {
+    "page": "Max Born",
+    "object": "St John's College Cambridge"
+   },
+   {
+    "page": "Max Born",
+    "object": "University of Edinburgh"
+   },
+   {
+    "page": "University of G\u00f6ttingen",
+    "object": "University of G\u00f6ttingen"
+   }
+  ]
+ },
+ {
+  "subject": "max weber",
+  "pid": "P69",
+  "claims": [
+   {
+    "page": "Max Weber",
+    "object": "Heidelberg University"
+   },
+   {
+    "page": "Max Weber",
+    "object": "Friedrich Wilhelm University of Berlin"
+   },
+   {
+    "page": "Max Weber",
+    "object": "University of G\u00f6ttingen"
+   },
+   {
+    "page": "University of G\u00f6ttingen",
+    "object": "University of G\u00f6ttingen"
+   }
+  ]
+ },
+ {
+  "subject": "archimedes",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Mechanics",
+    "object": "mathematician"
+   },
+   {
+    "page": "Archimedes",
+    "object": "mathematician"
+   },
+   {
+    "page": "Archimedes",
+    "object": "physicist"
+   },
+   {
+    "page": "Archimedes",
+    "object": "engineer"
+   },
+   {
+    "page": "Archimedes",
+    "object": "astronomer"
+   },
+   {
+    "page": "Archimedes",
+    "object": "inventor"
+   },
+   {
+    "page": "Archimedes",
+    "object": "mathematician"
+   },
+   {
+    "page": "Archimedes",
+    "object": "physicist"
+   },
+   {
+    "page": "Archimedes",
+    "object": "engineer"
+   },
+   {
+    "page": "Archimedes",
+    "object": "astronomer"
+   },
+   {
+    "page": "Archimedes",
+    "object": "inventor"
+   }
+  ]
+ },
+ {
+  "subject": "ren descartes",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Meditations on First Philosophy",
+    "object": "Meditations on First Philosophy"
+   },
+   {
+    "page": "Philosophy of mind",
+    "object": "substance dualism"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "Discourse on the Method"
+   }
+  ]
+ },
+ {
+  "subject": "ren descartes",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Meditations on First Philosophy",
+    "object": "philosopher"
+   },
+   {
+    "page": "Natural science",
+    "object": "scientist"
+   },
+   {
+    "page": "Rationalism",
+    "object": "philosopher"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "michael faraday",
+  "pid": "P569",
+  "claims": [
+   {
+    "page": "Michael Faraday",
+    "object": "1791-09-22"
+   },
+   {
+    "page": "Quantum field theory",
+    "object": "1845"
+   }
+  ]
+ },
+ {
+  "subject": "andrew wiles",
+  "pid": "P937",
+  "claims": [
+   {
+    "page": "Modularity theorem",
+    "object": "mathematics"
+   },
+   {
+    "page": "Andrew Wiles",
+    "object": "number theory"
+   },
+   {
+    "page": "Andrew Wiles",
+    "object": "Oxford University"
+   }
+  ]
+ },
+ {
+  "subject": "wittgenstein",
+  "pid": "P937",
+  "claims": [
+   {
+    "page": "Modus ponens",
+    "object": "logic"
+   },
+   {
+    "page": "Nachlass",
+    "object": "Nachlass"
+   }
+  ]
+ },
+ {
+  "subject": "kurt g del",
+  "pid": "P937",
+  "claims": [
+   {
+    "page": "Moritz Schlick",
+    "object": "Vienna Circle"
+   },
+   {
+    "page": "Kurt G\u00f6del",
+    "object": "University of Vienna"
+   },
+   {
+    "page": "Kurt G\u00f6del",
+    "object": "Institute for Advanced Study"
+   }
+  ]
+ },
+ {
+  "subject": "natural language",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Natural language",
+    "object": "language"
+   },
+   {
+    "page": "Theory",
+    "object": "medium"
+   }
+  ]
+ },
+ {
+  "subject": "natural law",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Natural law",
+    "object": "philosophical theory"
+   },
+   {
+    "page": "Christian Wolff (philosopher)",
+    "object": "philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "aristotle",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Natural law",
+    "object": "philosopher"
+   },
+   {
+    "page": "Substance theory",
+    "object": "philosopher"
+   },
+   {
+    "page": "Aristotle",
+    "object": "philosopher"
+   },
+   {
+    "page": "Aristotle",
+    "object": "natural scientist"
+   },
+   {
+    "page": "Aristotle",
+    "object": "logician"
+   },
+   {
+    "page": "Aristotle",
+    "object": "zoologist"
+   },
+   {
+    "page": "Aristotle",
+    "object": "philosopher"
+   },
+   {
+    "page": "Aristotle",
+    "object": "polymath"
+   },
+   {
+    "page": "Philosophy",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "isaac newton",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Natural science",
+    "object": "scientist"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "mathematician"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "physicist"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "astronomer"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "alchemist"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "theologian"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "author"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "inventor"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "mathematician"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "physicist"
+   },
+   {
+    "page": "Isaac Newton",
+    "object": "astronomer"
+   },
+   {
+    "page": "Mathematician",
+    "object": "mathematician"
+   },
+   {
+    "page": "Physics",
+    "object": "physicist"
+   }
+  ]
+ },
+ {
+  "subject": "nature",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Nature",
+    "object": "concept"
+   },
+   {
+    "page": "Nature (journal)",
+    "object": "scientific journal"
+   }
+  ]
+ },
+ {
+  "subject": "negative number",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Negative number",
+    "object": "real number"
+   },
+   {
+    "page": "Subtraction",
+    "object": "result"
+   }
+  ]
+ },
+ {
+  "subject": "plotinus",
+  "pid": "P570",
+  "claims": [
+   {
+    "page": "Neoplatonism",
+    "object": "271 AD"
+   },
+   {
+    "page": "Plotinus",
+    "object": "270 AD"
+   }
+  ]
+ },
+ {
+  "subject": "nominalism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Nominalism",
+    "object": "philosophical position"
+   },
+   {
+    "page": "Philosophy of mathematics",
+    "object": "mathematical philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "oxford english dictionary",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Oxford English Dictionary",
+    "object": "1857"
+   },
+   {
+    "page": "Oxford English Dictionary",
+    "object": "1884"
+   },
+   {
+    "page": "Oxford English Dictionary",
+    "object": "1895"
+   },
+   {
+    "page": "Oxford English Dictionary",
+    "object": "1928"
+   },
+   {
+    "page": "Oxford English Dictionary",
+    "object": "1989"
+   },
+   {
+    "page": "Oxford English Dictionary",
+    "object": "2000"
+   },
+   {
+    "page": "Oxford University Press",
+    "object": "1928"
+   }
+  ]
+ },
+ {
+  "subject": "university of paris",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Paris",
+    "object": "1190"
+   },
+   {
+    "page": "University of Paris",
+    "object": "1150"
+   }
+  ]
+ },
+ {
+  "subject": "ludwig wittgenstein",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Philosophy of language",
+    "object": "Tractatus Logico-Philosophicus"
+   },
+   {
+    "page": "Ludwig Wittgenstein",
+    "object": "Tractatus Logico-Philosophicus"
+   },
+   {
+    "page": "Ludwig Wittgenstein",
+    "object": "Philosophical Investigations"
+   }
+  ]
+ },
+ {
+  "subject": "willard van orman quine",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Philosophy of language",
+    "object": "philosophical logic"
+   },
+   {
+    "page": "Willard Van Orman Quine",
+    "object": "New Foundations"
+   },
+   {
+    "page": "Willard Van Orman Quine",
+    "object": "On What There Is"
+   },
+   {
+    "page": "Willard Van Orman Quine",
+    "object": "Two Dogmas of Empiricism"
+   },
+   {
+    "page": "Willard Van Orman Quine",
+    "object": "The Web of Belief"
+   },
+   {
+    "page": "Willard Van Orman Quine",
+    "object": "Word and Object"
+   }
+  ]
+ },
+ {
+  "subject": "baruch spinoza",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Philosophy of mind",
+    "object": "monism"
+   },
+   {
+    "page": "Baruch Spinoza",
+    "object": "one of the most important books of Western thought"
+   },
+   {
+    "page": "Baruch Spinoza",
+    "object": "the renegade Jew who gave us modernity"
+   },
+   {
+    "page": "Baruch Spinoza",
+    "object": "Espinosa, daughter of his uncle Abraham d"
+   },
+   {
+    "page": "Baruch Spinoza",
+    "object": "t write the Torah, influencing Spinoza"
+   },
+   {
+    "page": "Baruch Spinoza",
+    "object": "in the presence of the said Espinoza"
+   },
+   {
+    "page": "Baruch Spinoza",
+    "object": "Principles of Philosophy, which he completed in two weeks, communicating and interpreting Descartes"
+   },
+   {
+    "page": "Baruch Spinoza",
+    "object": "Tractatus Theologico-Politicus"
+   },
+   {
+    "page": "Baruch Spinoza",
+    "object": "Ethics"
+   }
+  ]
+ },
+ {
+  "subject": "william james",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Philosophy of mind",
+    "object": "neutral monism"
+   },
+   {
+    "page": "William James",
+    "object": "The Principles of Psychology"
+   },
+   {
+    "page": "William James",
+    "object": "Essays in Radical Empiricism"
+   },
+   {
+    "page": "William James",
+    "object": "The Varieties of Religious Experience"
+   }
+  ]
+ },
+ {
+  "subject": "aristotle",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "Platonic Academy",
+    "object": "Platonic Academy"
+   },
+   {
+    "page": "Aristotle",
+    "object": "Lyceum"
+   },
+   {
+    "page": "Aristotle",
+    "object": "Lyceum"
+   },
+   {
+    "page": "Aristotle",
+    "object": "Alexander the Great"
+   }
+  ]
+ },
+ {
+  "subject": "arcesilaus",
+  "pid": "P39",
+  "claims": [
+   {
+    "page": "Platonic Academy",
+    "object": "scholarch"
+   },
+   {
+    "page": "Platonism",
+    "object": "advocate of skepticism"
+   }
+  ]
+ },
+ {
+  "subject": "david hilbert",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Playfair's axiom",
+    "object": "Foundations of Geometry"
+   },
+   {
+    "page": "International Congress of Mathematicians",
+    "object": "Hilbert's problems"
+   },
+   {
+    "page": "Non-Euclidean geometry",
+    "object": "geometry axioms"
+   }
+  ]
+ },
+ {
+  "subject": "poincar conjecture",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Poincar\u00e9 conjecture",
+    "object": "1904"
+   },
+   {
+    "page": "Grigori Perelman",
+    "object": "2003"
+   }
+  ]
+ },
+ {
+  "subject": "henri poincar",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Poincar\u00e9 disk model",
+    "object": "Poincar\u00e9 disk model"
+   },
+   {
+    "page": "Theory of relativity",
+    "object": "special relativity"
+   },
+   {
+    "page": "Topology",
+    "object": "Analysis Situs"
+   }
+  ]
+ },
+ {
+  "subject": "henri poincar",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Poincar\u00e9 disk model",
+    "object": "Science and Hypothesis"
+   },
+   {
+    "page": "Celestial mechanics",
+    "object": "New Methods of Celestial Mechanics"
+   },
+   {
+    "page": "Celestial mechanics",
+    "object": "Lectures on Celestial Mechanics"
+   }
+  ]
+ },
+ {
+  "subject": "plato",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Political philosophy",
+    "object": "Republic"
+   },
+   {
+    "page": "Plato",
+    "object": "Cratylus"
+   },
+   {
+    "page": "Plato",
+    "object": "Theaetetus"
+   },
+   {
+    "page": "Plato",
+    "object": "Lysis"
+   },
+   {
+    "page": "Plato",
+    "object": "Menexenus"
+   },
+   {
+    "page": "Plato",
+    "object": "Timaeus"
+   },
+   {
+    "page": "Plato",
+    "object": "Statesman"
+   },
+   {
+    "page": "Plato",
+    "object": "Sophist"
+   },
+   {
+    "page": "Plato",
+    "object": "Republic"
+   },
+   {
+    "page": "Plato",
+    "object": "Phaedo"
+   },
+   {
+    "page": "Plato",
+    "object": "Protagoras"
+   },
+   {
+    "page": "Plato",
+    "object": "Euthyphro"
+   },
+   {
+    "page": "Plato",
+    "object": "Parmenides"
+   },
+   {
+    "page": "Plato",
+    "object": "Philebus"
+   },
+   {
+    "page": "Plato",
+    "object": "Laws"
+   },
+   {
+    "page": "Plato",
+    "object": "Meno"
+   }
+  ]
+ },
+ {
+  "subject": "square",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Polygon",
+    "object": "polygon"
+   },
+   {
+    "page": "Quadrilateral",
+    "object": "regular quadrilateral"
+   }
+  ]
+ },
+ {
+  "subject": "regular polygon",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Polygon",
+    "object": "polygon type"
+   },
+   {
+    "page": "Regular polygon",
+    "object": "geometric figure"
+   }
+  ]
+ },
+ {
+  "subject": "polynomial",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Polynomial",
+    "object": "mathematical expression"
+   },
+   {
+    "page": "Polynomial",
+    "object": "algebraic expression"
+   },
+   {
+    "page": "Polynomial",
+    "object": "finite sum"
+   },
+   {
+    "page": "Polynomial",
+    "object": "fundamental algebra concept"
+   },
+   {
+    "page": "Power series",
+    "object": "power series"
+   }
+  ]
+ },
+ {
+  "subject": "prior analytics",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Posterior Analytics",
+    "object": "companion work"
+   },
+   {
+    "page": "Prior Analytics",
+    "object": "logical treatise"
+   }
+  ]
+ },
+ {
+  "subject": "taylor series",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Power series",
+    "object": "power series"
+   },
+   {
+    "page": "Taylor series",
+    "object": "mathematical series"
+   }
+  ]
+ },
+ {
+  "subject": "power set",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Power set",
+    "object": "set"
+   },
+   {
+    "page": "Power set",
+    "object": "mathematical structure"
+   },
+   {
+    "page": "Subset",
+    "object": "set"
+   }
+  ]
+ },
+ {
+  "subject": "premise",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Premise",
+    "object": "proposition"
+   },
+   {
+    "page": "Premise",
+    "object": "statement"
+   },
+   {
+    "page": "Premise",
+    "object": "starting point"
+   },
+   {
+    "page": "Prior Analytics",
+    "object": "statement"
+   }
+  ]
+ },
+ {
+  "subject": "proclus",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Proclus",
+    "object": "philosopher"
+   },
+   {
+    "page": "Proclus",
+    "object": "mathematician"
+   },
+   {
+    "page": "Axiom",
+    "object": "mathematician"
+   },
+   {
+    "page": "Euclid",
+    "object": "scholar"
+   }
+  ]
+ },
+ {
+  "subject": "property",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Property (philosophy)",
+    "object": "philosophical concept"
+   },
+   {
+    "page": "Substance theory",
+    "object": "accident"
+   }
+  ]
+ },
+ {
+  "subject": "gottfried leibniz",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Propositional logic",
+    "object": "logician"
+   },
+   {
+    "page": "Mathematician",
+    "object": "mathematician"
+   },
+   {
+    "page": "Rationalism",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "augustus de morgan",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Propositional logic",
+    "object": "logician"
+   },
+   {
+    "page": "Augustus De Morgan",
+    "object": "mathematician"
+   },
+   {
+    "page": "Augustus De Morgan",
+    "object": "logician"
+   }
+  ]
+ },
+ {
+  "subject": "brahmagupta",
+  "pid": "P569",
+  "claims": [
+   {
+    "page": "Quadratic form",
+    "object": "628 CE"
+   },
+   {
+    "page": "Brahmagupta",
+    "object": "800"
+   },
+   {
+    "page": "Brahmagupta",
+    "object": "c. 598 CE"
+   }
+  ]
+ },
+ {
+  "subject": "carl friedrich gauss",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Quadratic form",
+    "object": "Disquisitiones Arithmeticae"
+   },
+   {
+    "page": "Quadratic reciprocity",
+    "object": "proofs of quadratic reciprocity"
+   },
+   {
+    "page": "Carl Friedrich Gauss",
+    "object": "Disquisitiones Arithmeticae"
+   },
+   {
+    "page": "Carl Friedrich Gauss",
+    "object": "Theoria motus corporum coelestium"
+   },
+   {
+    "page": "Number theory",
+    "object": "Disquisitiones Arithmeticae"
+   }
+  ]
+ },
+ {
+  "subject": "leonhard euler",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Quadratic reciprocity",
+    "object": "mathematician"
+   },
+   {
+    "page": "Trigonometry",
+    "object": "mathematician"
+   },
+   {
+    "page": "Leonhard Euler",
+    "object": "Philosopher"
+   },
+   {
+    "page": "Leonhard Euler",
+    "object": "Mathematician"
+   },
+   {
+    "page": "Leonhard Euler",
+    "object": "Physicist"
+   },
+   {
+    "page": "Leonhard Euler",
+    "object": "Engineer"
+   },
+   {
+    "page": "Leonhard Euler",
+    "object": "Scientist"
+   },
+   {
+    "page": "Group theory",
+    "object": "mathematician"
+   },
+   {
+    "page": "Leonhard Euler",
+    "object": "mathematician"
+   },
+   {
+    "page": "Leonhard Euler",
+    "object": "physicist"
+   },
+   {
+    "page": "Mathematician",
+    "object": "mathematician"
+   },
+   {
+    "page": "Mathematics",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "reductionism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Reductionism",
+    "object": "philosophical viewpoint"
+   },
+   {
+    "page": "Philosophy of science",
+    "object": "philosophical approach"
+   }
+  ]
+ },
+ {
+  "subject": "richard feynman",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Richard Feynman",
+    "object": "physicist"
+   },
+   {
+    "page": "Mathematician",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "bertrand russell",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Russell's paradox",
+    "object": "Russell's paradox"
+   },
+   {
+    "page": "Principia Mathematica",
+    "object": "Principia Mathematica"
+   },
+   {
+    "page": "Principia Mathematica",
+    "object": "The Principles of Mathematics"
+   },
+   {
+    "page": "Problem of induction",
+    "object": "The Problems of Philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "saccheri quadrilateral",
+  "pid": "P138",
+  "claims": [
+   {
+    "page": "Saccheri quadrilateral",
+    "object": "Giovanni Gerolamo Saccheri"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "Omar Khayyam"
+   }
+  ]
+ },
+ {
+  "subject": "science",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Science",
+    "object": "systematic discipline"
+   },
+   {
+    "page": "Science (journal)",
+    "object": "academic journal"
+   }
+  ]
+ },
+ {
+  "subject": "scientific method",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Science",
+    "object": "empirical cycle"
+   },
+   {
+    "page": "Philosophy of science",
+    "object": "methodology"
+   }
+  ]
+ },
+ {
+  "subject": "augustin louis cauchy",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Augustin-Louis Cauchy",
+    "object": "mathematician"
+   },
+   {
+    "page": "Augustin-Louis Cauchy",
+    "object": "engineer"
+   },
+   {
+    "page": "Augustin-Louis Cauchy",
+    "object": "physicist"
+   },
+   {
+    "page": "Continuous function",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "leonhard euler",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Seven Bridges of K\u00f6nigsberg",
+    "object": "Solutio problematis ad geometriam situs pertinentis"
+   },
+   {
+    "page": "Integer",
+    "object": "Elements of Algebra"
+   },
+   {
+    "page": "Leonhard Euler",
+    "object": "Elements of Algebra"
+   }
+  ]
+ },
+ {
+  "subject": "skepticism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Skepticism",
+    "object": "questioning attitude"
+   },
+   {
+    "page": "Epistemology",
+    "object": "school of philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "special relativity",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Special relativity",
+    "object": "physical theory"
+   },
+   {
+    "page": "Physics",
+    "object": "theory of physics"
+   }
+  ]
+ },
+ {
+  "subject": "aryabhata",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Square root",
+    "object": "Aryabhatiya"
+   },
+   {
+    "page": "Aryabhata",
+    "object": "Aryabhatta"
+   },
+   {
+    "page": "Aryabhata",
+    "object": "one belonging to the A\u015bmaka country."
+   },
+   {
+    "page": "Aryabhata",
+    "object": "Lanka"
+   },
+   {
+    "page": "Aryabhata",
+    "object": "Add four to 100, multiply by eight, and then add 62,000. By this rule the circumference of a circle with a diameter of 20,000 can be approached."
+   },
+   {
+    "page": "Aryabhata",
+    "object": "Aryabhata discussed the concept of sine in his work by the name of ardha-jya, which literally means"
+   },
+   {
+    "page": "Aryabhata",
+    "object": "his description of relativity of motion"
+   },
+   {
+    "page": "Aryabhata",
+    "object": "Aryabhatiya"
+   },
+   {
+    "page": "Aryabhata",
+    "object": "Arya-siddhanta"
+   }
+  ]
+ },
+ {
+  "subject": "stephen hawking",
+  "pid": "P69",
+  "claims": [
+   {
+    "page": "Stephen Hawking",
+    "object": "University College, Oxford"
+   },
+   {
+    "page": "Stephen Hawking",
+    "object": "Trinity Hall, Cambridge"
+   },
+   {
+    "page": "University of Cambridge",
+    "object": "University of Cambridge"
+   }
+  ]
+ },
+ {
+  "subject": "boethius",
+  "pid": "P570",
+  "claims": [
+   {
+    "page": "Syllogism",
+    "object": "526 CE"
+   },
+   {
+    "page": "Boethius",
+    "object": "524 AD"
+   }
+  ]
+ },
+ {
+  "subject": "the logic of scientific discovery",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "The Logic of Scientific Discovery",
+    "object": "1959"
+   },
+   {
+    "page": "Falsifiability",
+    "object": "1934"
+   },
+   {
+    "page": "Karl Popper",
+    "object": "1934"
+   }
+  ]
+ },
+ {
+  "subject": "bertrand russell",
+  "pid": "P69",
+  "claims": [
+   {
+    "page": "The Principles of Mathematics",
+    "object": "Peano"
+   },
+   {
+    "page": "University of Cambridge",
+    "object": "University of Cambridge"
+   }
+  ]
+ },
+ {
+  "subject": "theaetetus",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Theaetetus (dialogue)",
+    "object": "philosophical work"
+   },
+   {
+    "page": "Theaetetus (dialogue)",
+    "object": "founding work of epistemology"
+   },
+   {
+    "page": "Theaetetus (dialogue)",
+    "object": "investigation of knowledge"
+   },
+   {
+    "page": "Theaetetus (mathematician)",
+    "object": "Greek mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "theaetetus",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Theaetetus (dialogue)",
+    "object": "dialogue form"
+   },
+   {
+    "page": "Theaetetus (dialogue)",
+    "object": "discussion of episteme"
+   },
+   {
+    "page": "Theaetetus (mathematician)",
+    "object": "theory of irrational numbers"
+   }
+  ]
+ },
+ {
+  "subject": "general relativity",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Theoretical physics",
+    "object": "early 20th century"
+   },
+   {
+    "page": "Theory of relativity",
+    "object": "1915"
+   }
+  ]
+ },
+ {
+  "subject": "karl popper",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Theoretical physics",
+    "object": "The Logic of Scientific Discovery"
+   },
+   {
+    "page": "Karl Popper",
+    "object": "The Logic of Scientific Discovery"
+   },
+   {
+    "page": "Karl Popper",
+    "object": "The Open Society and Its Enemies"
+   },
+   {
+    "page": "Karl Popper",
+    "object": "The Poverty of Historicism"
+   }
+  ]
+ },
+ {
+  "subject": "mathematical logic",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Theory",
+    "object": "formal method"
+   },
+   {
+    "page": "Mathematical logic",
+    "object": "formal logic study"
+   }
+  ]
+ },
+ {
+  "subject": "thermodynamics",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Thermodynamics",
+    "object": "branch of physics"
+   },
+   {
+    "page": "Physics",
+    "object": "field of physics"
+   }
+  ]
+ },
+ {
+  "subject": "james clerk maxwell",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Thermodynamics",
+    "object": "statistical thermodynamics"
+   },
+   {
+    "page": "Oxford University Press",
+    "object": "A Treatise on Electricity & Magnetism"
+   }
+  ]
+ },
+ {
+  "subject": "thomas jefferson",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Thomas Jefferson",
+    "object": "Declaration of Independence"
+   },
+   {
+    "page": "Thomas Jefferson",
+    "object": "Democratic-Republican Party"
+   },
+   {
+    "page": "United States Declaration of Independence",
+    "object": "Declaration of Independence"
+   }
+  ]
+ },
+ {
+  "subject": "tractatus logico philosophicus",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Tractatus Logico-Philosophicus",
+    "object": "1918"
+   },
+   {
+    "page": "Tractatus Logico-Philosophicus",
+    "object": "1921"
+   },
+   {
+    "page": "Tractatus Logico-Philosophicus",
+    "object": "1922"
+   },
+   {
+    "page": "Logical positivism",
+    "object": "1921"
+   },
+   {
+    "page": "Ludwig Wittgenstein",
+    "object": "1921"
+   }
+  ]
+ },
+ {
+  "subject": "ptolemy",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Trigonometry",
+    "object": "Almagest"
+   },
+   {
+    "page": "0",
+    "object": "Syntaxis Mathematica"
+   }
+  ]
+ },
+ {
+  "subject": "boolean algebra",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Truth value",
+    "object": "algebraic structure"
+   },
+   {
+    "page": "Boolean algebra",
+    "object": "branch of algebra"
+   }
+  ]
+ },
+ {
+  "subject": "two treatises of government",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Two Treatises of Government",
+    "object": "1689"
+   },
+   {
+    "page": "Two Treatises of Government",
+    "object": "1680-1681"
+   },
+   {
+    "page": "John Locke",
+    "object": "1689"
+   }
+  ]
+ },
+ {
+  "subject": "john locke",
+  "pid": "P27",
+  "claims": [
+   {
+    "page": "Two Treatises of Government",
+    "object": "England"
+   },
+   {
+    "page": "John Locke",
+    "object": "English"
+   }
+  ]
+ },
+ {
+  "subject": "university of chicago",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "University of Chicago",
+    "object": "1890"
+   },
+   {
+    "page": "International Congress of Mathematicians",
+    "object": "1892"
+   }
+  ]
+ },
+ {
+  "subject": "voltaire",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Voltaire",
+    "object": "Candide"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "Letters on the English"
+   },
+   {
+    "page": "Age of Enlightenment",
+    "object": "Philosophical Dictionary"
+   }
+  ]
+ },
+ {
+  "subject": "alfred tarski",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Banach\u2013Tarski paradox",
+    "object": "Banach\u2013Tarski paradox paper"
+   },
+   {
+    "page": "Alfred Tarski",
+    "object": "On the Primitive Term of Logistic"
+   },
+   {
+    "page": "Alfred Tarski",
+    "object": "A decision method for elementary algebra and geometry"
+   },
+   {
+    "page": "Alfred Tarski",
+    "object": "Undecidable theories"
+   }
+  ]
+ },
+ {
+  "subject": "fermat s last theorem",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Wiles's proof of Fermat's Last Theorem",
+    "object": "1637"
+   },
+   {
+    "page": "Fermat's Last Theorem",
+    "object": "1995"
+   },
+   {
+    "page": "Fermat's Last Theorem",
+    "object": "1621"
+   }
+  ]
+ },
+ {
+  "subject": "william of ockham",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "William of Ockham",
+    "object": "philosopher"
+   },
+   {
+    "page": "William of Ockham",
+    "object": "Franciscan friar"
+   },
+   {
+    "page": "Occam's razor",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "american mathematical society",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Blackboard bold",
+    "object": "1985"
+   },
+   {
+    "page": "American Mathematical Society",
+    "object": "1888"
+   },
+   {
+    "page": "Notices of the American Mathematical Society",
+    "object": "1888"
+   }
+  ]
+ },
+ {
+  "subject": "boethius",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Boethius",
+    "object": "polymath"
+   },
+   {
+    "page": "Axiom",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "buddhism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Buddhism",
+    "object": "religion"
+   },
+   {
+    "page": "Philosophy",
+    "object": "philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "carl gustav hempel",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "Carl Gustav Hempel",
+    "object": "University of Chicago"
+   },
+   {
+    "page": "Carl Gustav Hempel",
+    "object": "City College of New York"
+   },
+   {
+    "page": "Carl Gustav Hempel",
+    "object": "Yale University"
+   },
+   {
+    "page": "Carl Gustav Hempel",
+    "object": "Princeton University"
+   },
+   {
+    "page": "Carl Gustav Hempel",
+    "object": "University of Pittsburgh"
+   },
+   {
+    "page": "Rudolf Carnap",
+    "object": "University of Chicago"
+   }
+  ]
+ },
+ {
+  "subject": "ren descartes",
+  "pid": "P569",
+  "claims": [
+   {
+    "page": "Cartesian doubt",
+    "object": "1596-03-31"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "31 March 1596"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "31 March 1596"
+   }
+  ]
+ },
+ {
+  "subject": "ren descartes",
+  "pid": "P570",
+  "claims": [
+   {
+    "page": "Cartesian doubt",
+    "object": "1650-02-11"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "11 February 1650"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "11 February 1650"
+   }
+  ]
+ },
+ {
+  "subject": "charles darwin",
+  "pid": "P69",
+  "claims": [
+   {
+    "page": "Charles Darwin",
+    "object": "University of Edinburgh"
+   },
+   {
+    "page": "Charles Darwin",
+    "object": "Christ's College, Cambridge"
+   },
+   {
+    "page": "University of Cambridge",
+    "object": "University of Cambridge"
+   }
+  ]
+ },
+ {
+  "subject": "robert hooke",
+  "pid": "P108",
+  "claims": [
+   {
+    "page": "Christ Church, Oxford",
+    "object": "Christ Church, Oxford"
+   },
+   {
+    "page": "Royal Society",
+    "object": "Royal Society"
+   }
+  ]
+ },
+ {
+  "subject": "christiaan huygens",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Christiaan Huygens",
+    "object": "De Motu Corporum ex Percussione"
+   },
+   {
+    "page": "Christiaan Huygens",
+    "object": "De Vi Centrifuga"
+   },
+   {
+    "page": "Christiaan Huygens",
+    "object": "Trait\u00e9 de la Lumi\u00e8re"
+   },
+   {
+    "page": "Christiaan Huygens",
+    "object": "Horologium Oscillatorium"
+   },
+   {
+    "page": "Christiaan Huygens",
+    "object": "Titan"
+   },
+   {
+    "page": "Probability",
+    "object": "probability treatise"
+   },
+   {
+    "page": "Probability theory",
+    "object": "probability book"
+   }
+  ]
+ },
+ {
+  "subject": "rationalism",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Christian Wolff (philosopher)",
+    "object": "philosophy"
+   },
+   {
+    "page": "Epistemology",
+    "object": "epistemological school"
+   },
+   {
+    "page": "Philosophy of science",
+    "object": "philosophical view"
+   }
+  ]
+ },
+ {
+  "subject": "metaphysics",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Christian Wolff (philosopher)",
+    "object": "discipline"
+   },
+   {
+    "page": "Metaphysics",
+    "object": "branch of philosophy"
+   },
+   {
+    "page": "Philosophy",
+    "object": "branch of philosophy"
+   }
+  ]
+ },
+ {
+  "subject": "omar khayyam",
+  "pid": "P19",
+  "claims": [
+   {
+    "page": "Analytic geometry",
+    "object": "Persia"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "Nishapur"
+   },
+   {
+    "page": "Omar Khayyam",
+    "object": "Nishapur"
+   }
+  ]
+ },
+ {
+  "subject": "ren descartes",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Analytic geometry",
+    "object": "La G\u00e9om\u00e9trie"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "Compendium of Music"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "Regulae ad Directionem Ingenii"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "Discourse on the Method"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "The Meteors"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "Dioptrics"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "Geometry"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "Meditations on First Philosophy"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "Principles of Philosophy"
+   },
+   {
+    "page": "Ren\u00e9 Descartes",
+    "object": "The Passions of the Soul"
+   }
+  ]
+ },
+ {
+  "subject": "zero",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "0",
+    "object": "number"
+   },
+   {
+    "page": "Integer",
+    "object": "integer"
    }
   ]
  },
@@ -206,54 +5042,6 @@
   ]
  },
  {
-  "subject": "andrew wiles",
-  "pid": "P50",
-  "claims": [
-   {
-    "page": "Andrew Wiles",
-    "object": "Annals of Mathematics"
-   },
-   {
-    "page": "Fermat's Last Theorem",
-    "object": "Fermat's Last Theorem proof"
-   }
-  ]
- },
- {
-  "subject": "aristotle",
-  "pid": "P106",
-  "claims": [
-   {
-    "page": "Aristotle",
-    "object": "philosopher"
-   },
-   {
-    "page": "Aristotle",
-    "object": "natural scientist"
-   },
-   {
-    "page": "Aristotle",
-    "object": "logician"
-   },
-   {
-    "page": "Aristotle",
-    "object": "zoologist"
-   },
-   {
-    "page": "Aristotle",
-    "object": "philosopher"
-   },
-   {
-    "page": "Aristotle",
-    "object": "polymath"
-   },
-   {
-    "page": "Philosophy",
-    "object": "philosopher"
-   }
-  ]
- },
- {
   "subject": "john von neumann",
   "pid": "P50",
   "claims": [
@@ -264,24 +5052,6 @@
    {
     "page": "Game theory",
     "object": "game theory"
-   }
-  ]
- },
- {
-  "subject": "bertrand russell",
-  "pid": "P50",
-  "claims": [
-   {
-    "page": "Principia Mathematica",
-    "object": "Principia Mathematica"
-   },
-   {
-    "page": "Principia Mathematica",
-    "object": "The Principles of Mathematics"
-   },
-   {
-    "page": "Problem of induction",
-    "object": "The Problems of Philosophy"
    }
   ]
  },
@@ -318,40 +5088,6 @@
    {
     "page": "Pythagoras",
     "object": "c. 495 BC"
-   }
-  ]
- },
- {
-  "subject": "euclid",
-  "pid": "P50",
-  "claims": [
-   {
-    "page": "Pythagorean theorem",
-    "object": "Elements"
-   },
-   {
-    "page": "Mathematician",
-    "object": "Elements"
-   },
-   {
-    "page": "Euclid",
-    "object": "Elements"
-   },
-   {
-    "page": "Euclid",
-    "object": "Optics"
-   },
-   {
-    "page": "Euclid",
-    "object": "Data"
-   },
-   {
-    "page": "Euclidean geometry",
-    "object": "Elements"
-   },
-   {
-    "page": "Euclidean space",
-    "object": "Elements"
    }
   ]
  },
@@ -404,70 +5140,6 @@
    {
     "page": "Mathematics",
     "object": "mathematician"
-   }
-  ]
- },
- {
-  "subject": "bertrand russell",
-  "pid": "P800",
-  "claims": [
-   {
-    "page": "Bertrand Russell",
-    "object": "At the end of those five minutes, I had become a completely different person."
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "On Denoting"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "to my surprise, when I got up to speak, I was given the greatest ovation that was possible to give anybody"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "Confiscated by Cambridge Police"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "Introduction to Mathematical Philosophy"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "The Analysis of Mind"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "in the House of Commons with well-known campaigners, including Arnold Lupton, who had been an MP and had also endured imprisonment for"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "Soviet Russia\u20141920"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "Mr. Bertrand Russell, having died according to the Japanese press, is unable to give interviews to Japanese journalists"
-   },
-   {
-    "page": "Gettier problem",
-    "object": "Human Knowledge: Its scope and limits"
-   }
-  ]
- },
- {
-  "subject": "carl friedrich gauss",
-  "pid": "P800",
-  "claims": [
-   {
-    "page": "Carl Friedrich Gauss",
-    "object": "Disquisitiones Arithmeticae"
-   },
-   {
-    "page": "Carl Friedrich Gauss",
-    "object": "Theoria motus corporum coelestium"
-   },
-   {
-    "page": "Number theory",
-    "object": "Disquisitiones Arithmeticae"
    }
   ]
  },
@@ -552,20 +5224,6 @@
   ]
  },
  {
-  "subject": "albert einstein",
-  "pid": "P108",
-  "claims": [
-   {
-    "page": "Institute for Advanced Study",
-    "object": "Institute for Advanced Study"
-   },
-   {
-    "page": "Princeton University",
-    "object": "Princeton University"
-   }
-  ]
- },
- {
   "subject": "john von neumann",
   "pid": "P108",
   "claims": [
@@ -590,106 +5248,6 @@
    {
     "page": "Princeton University",
     "object": "Princeton University"
-   }
-  ]
- },
- {
-  "subject": "isaac newton",
-  "pid": "P106",
-  "claims": [
-   {
-    "page": "Isaac Newton",
-    "object": "mathematician"
-   },
-   {
-    "page": "Isaac Newton",
-    "object": "physicist"
-   },
-   {
-    "page": "Isaac Newton",
-    "object": "astronomer"
-   },
-   {
-    "page": "Isaac Newton",
-    "object": "alchemist"
-   },
-   {
-    "page": "Isaac Newton",
-    "object": "theologian"
-   },
-   {
-    "page": "Isaac Newton",
-    "object": "author"
-   },
-   {
-    "page": "Isaac Newton",
-    "object": "inventor"
-   },
-   {
-    "page": "Isaac Newton",
-    "object": "mathematician"
-   },
-   {
-    "page": "Isaac Newton",
-    "object": "physicist"
-   },
-   {
-    "page": "Isaac Newton",
-    "object": "astronomer"
-   },
-   {
-    "page": "Mathematician",
-    "object": "mathematician"
-   },
-   {
-    "page": "Physics",
-    "object": "physicist"
-   }
-  ]
- },
- {
-  "subject": "leonhard euler",
-  "pid": "P106",
-  "claims": [
-   {
-    "page": "Leonhard Euler",
-    "object": "Philosopher"
-   },
-   {
-    "page": "Leonhard Euler",
-    "object": "Mathematician"
-   },
-   {
-    "page": "Leonhard Euler",
-    "object": "Physicist"
-   },
-   {
-    "page": "Leonhard Euler",
-    "object": "Engineer"
-   },
-   {
-    "page": "Leonhard Euler",
-    "object": "Scientist"
-   },
-   {
-    "page": "Group theory",
-    "object": "mathematician"
-   },
-   {
-    "page": "Leonhard Euler",
-    "object": "mathematician"
-   },
-   {
-    "page": "Leonhard Euler",
-    "object": "physicist"
-   },
-   {
-    "page": "Mathematician",
-    "object": "mathematician"
-   },
-   {
-    "page": "Mathematics",
-    "object": "mathematician"
    }
   ]
  },
@@ -744,44 +5302,6 @@
   ]
  },
  {
-  "subject": "bertrand russell",
-  "pid": "P106",
-  "claims": [
-   {
-    "page": "Analytic philosophy",
-    "object": "philosopher"
-   },
-   {
-    "page": "Axiom of choice",
-    "object": "philosopher"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "philosopher"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "logician"
-   },
-   {
-    "page": "Bertrand Russell",
-    "object": "social reformer"
-   },
-   {
-    "page": "Coherentism",
-    "object": "philosopher"
-   },
-   {
-    "page": "Mathematician",
-    "object": "mathematician"
-   },
-   {
-    "page": "Philosophy of mathematics",
-    "object": "mathematician"
-   }
-  ]
- },
- {
   "subject": "brahmagupta",
   "pid": "P106",
   "claims": [
@@ -796,50 +5316,6 @@
    {
     "page": "Brahmagupta",
     "object": "astronomer"
-   }
-  ]
- },
- {
-  "subject": "euclid",
-  "pid": "P800",
-  "claims": [
-   {
-    "page": "Axiom",
-    "object": "Elements"
-   },
-   {
-    "page": "Euclid",
-    "object": "Elements"
-   },
-   {
-    "page": "Mathematical proof",
-    "object": "Elements"
-   },
-   {
-    "page": "Mathematics",
-    "object": "Elements"
-   },
-   {
-    "page": "Non-Euclidean geometry",
-    "object": "Elements"
-   },
-   {
-    "page": "Prime number",
-    "object": "proof of infinite primes"
-   }
-  ]
- },
- {
-  "subject": "proclus",
-  "pid": "P106",
-  "claims": [
-   {
-    "page": "Axiom",
-    "object": "mathematician"
-   },
-   {
-    "page": "Euclid",
-    "object": "scholar"
    }
   ]
  },
@@ -874,36 +5350,6 @@
    {
     "page": "Prime number theorem",
     "object": "mathematician"
-   }
-  ]
- },
- {
-  "subject": "charles sanders peirce",
-  "pid": "P106",
-  "claims": [
-   {
-    "page": "Charles Sanders Peirce",
-    "object": "mathematician"
-   },
-   {
-    "page": "Charles Sanders Peirce",
-    "object": "logician"
-   },
-   {
-    "page": "Charles Sanders Peirce",
-    "object": "philosopher"
-   },
-   {
-    "page": "Charles Sanders Peirce",
-    "object": "chemist"
-   },
-   {
-    "page": "Pragmatism",
-    "object": "philosopher"
-   },
-   {
-    "page": "Pragmatism",
-    "object": "logician"
    }
   ]
  },
@@ -950,24 +5396,6 @@
   ]
  },
  {
-  "subject": "david hilbert",
-  "pid": "P106",
-  "claims": [
-   {
-    "page": "David Hilbert",
-    "object": "philosopher"
-   },
-   {
-    "page": "Mathematician",
-    "object": "mathematician"
-   },
-   {
-    "page": "Mathematics",
-    "object": "mathematician"
-   }
-  ]
- },
- {
   "subject": "knowledge",
   "pid": "P31",
   "claims": [
@@ -993,20 +5421,6 @@
     "page": "Empiricism",
     "object": "epistemology"
    },
-   {
-    "page": "Epistemology",
-    "object": "epistemological school"
-   },
-   {
-    "page": "Philosophy of science",
-    "object": "philosophical view"
-   }
-  ]
- },
- {
-  "subject": "rationalism",
-  "pid": "P31",
-  "claims": [
    {
     "page": "Epistemology",
     "object": "epistemological school"
@@ -1064,38 +5478,6 @@
   ]
  },
  {
-  "subject": "leonhard euler",
-  "pid": "P800",
-  "claims": [
-   {
-    "page": "Graph theory",
-    "object": "Solutio Problematis ad Geometriam Situs Pertinentis"
-   },
-   {
-    "page": "Topology",
-    "object": "Seven Bridges of K\u00f6nigsberg"
-   },
-   {
-    "page": "Topology",
-    "object": "polyhedron formula"
-   }
-  ]
- },
- {
-  "subject": "david hilbert",
-  "pid": "P800",
-  "claims": [
-   {
-    "page": "International Congress of Mathematicians",
-    "object": "Hilbert's problems"
-   },
-   {
-    "page": "Non-Euclidean geometry",
-    "object": "geometry axioms"
-   }
-  ]
- },
- {
   "subject": "logic",
   "pid": "P31",
   "claims": [
@@ -1114,20 +5496,6 @@
   ]
  },
  {
-  "subject": "gottfried leibniz",
-  "pid": "P106",
-  "claims": [
-   {
-    "page": "Mathematician",
-    "object": "mathematician"
-   },
-   {
-    "page": "Rationalism",
-    "object": "philosopher"
-   }
-  ]
- },
- {
   "subject": "quantum mechanics",
   "pid": "P31",
   "claims": [
@@ -1138,20 +5506,6 @@
    {
     "page": "Physics",
     "object": "field of physics"
-   }
-  ]
- },
- {
-  "subject": "christiaan huygens",
-  "pid": "P800",
-  "claims": [
-   {
-    "page": "Probability",
-    "object": "probability treatise"
-   },
-   {
-    "page": "Probability theory",
-    "object": "probability book"
    }
   ]
  },

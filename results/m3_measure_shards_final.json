@@ -1,38 +1,38 @@
 {
- "n_statements": 6285,
- "pid_rate": 0.4644391408114558,
+ "n_statements": 13435,
+ "pid_rate": 0.5848157796799405,
  "infobox": {
-  "pages": 67,
-  "precision_complete_pids": 0.8957654723127035,
+  "pages": 242,
+  "precision_complete_pids": 0.9015918958031838,
   "precision_complete_ci95": [
-   0.8565544758711058,
-   0.9251941703847363
+   0.8771126320464285,
+   0.9216305635250513
   ],
-  "precision": 0.5899843505477308,
+  "precision": 0.6504782928623988,
   "precision_ci95": [
-   0.5514217159152806,
-   0.6274714982139855
+   0.624735048396216,
+   0.6753731960248524
   ],
-  "recall": 0.544392523364486,
+  "recall": 0.4608695652173913,
   "recall_ci95": [
-   0.4970232748911894,
-   0.5909719529886627
+   0.43573402960004437,
+   0.4862056870451301
   ],
-  "recall_text_conditioned": 0.6788990825688074
+  "recall_text_conditioned": 0.5972602739726027
  },
  "links": {
-  "acc": 0.8396485447556288,
-  "n": 1821,
+  "acc": 0.8192360163710778,
+  "n": 4398,
   "ci95": [
-   0.8220827461817711,
-   0.8557843081422863
+   0.80758559778314,
+   0.8303292240496131
   ]
  },
- "conflicts_found": 53,
+ "conflicts_found": 266,
  "manifest": {
-  "generated_at": "2026-07-27T04:31:56.254190+00:00",
-  "commit": "f1c44c7631a7d8305c050a90b18950796ba791f0",
-  "dirty": false,
+  "generated_at": "2026-07-27T09:28:25.242058+00:00",
+  "commit": "6e12276a77747a74cb4948332393354b9f4cd4bb",
+  "dirty": true,
   "command": "scripts/m3_measure.py",
   "seed": 0,
   "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
