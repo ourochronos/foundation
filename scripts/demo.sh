@@ -12,7 +12,7 @@ need() { echo "$2" | grep -q "$1" || { printf '  \033[31mFAIL\033[0m %s\n' "$3";
 
 echo "== Act 1: ingest (fresh store) =="
 OUT=$($PY -m foundation ingest data/wiki/shards_final --fresh 2>/dev/null)
-need '"ingested": 3' "$OUT" "claims ingested into fresh table"
+need '"ingested": [0-9]\{4,\}' "$OUT" "claims ingested into fresh table (4+ digits)"
 
 echo "== Act 2: ask (provenance + honest statuses) =="
 OUT=$($PY -m foundation ask "Norbert Wiener" P69 2>/dev/null)

@@ -74,11 +74,43 @@ class KB:
             self.store = MemoryStore()
             self._conn = None
 
-    # ---- registry replay (deterministic; claims log is the truth) ---------
+    # ---- registry replay (claims log is the truth: stored eids are
+    # authoritative — rebuild state, never re-resolve) -----------------------
+    def _entity_with_eid(self, eid: str, form: str, batch: str):
+        from codec.individuation import Entity
+        e = self.reg.entities.get(eid)
+        if e is None:
+            e = Entity(eid=eid, batch=batch, forms={form},
+                       form_tokens=id_tokens([form]))
+            self.reg.entities[eid] = e
+            n = int(eid[1:]) if eid[1:].isdigit() else 0
+            self.reg._n = max(self.reg._n, n + 1)
+        e.forms.add(form)
+        e.form_tokens |= id_tokens([form])
+        self.reg.by_form.setdefault(form, set()).add(eid)
+        return e
+
     def _replay_registry(self) -> None:
         for c in self.claims:
-            self._resolve(c["subject"], c["pid"], c["object"], c["page"],
-                          record=False)
+            fn = c["pid"] in FUNCTIONAL_PIDS
+            e = self._entity_with_eid(c["subj_eid"], c["subject"],
+                                      c["page"])
+            e.slots[(c["pid"], "s")] = e.slots.get((c["pid"], "s"), 0) + 1
+            if c["subject"] == c["page"]:
+                self._canonical.setdefault(c["subject"], c["subj_eid"])
+            if c["obj_eid"]:
+                o = self._entity_with_eid(c["obj_eid"], c["object"],
+                                          c["page"])
+                o.slots[(c["pid"], "o")] = \
+                    o.slots.get((c["pid"], "o"), 0) + 1
+                o.neighbors.add(c["subj_eid"])
+                e.neighbors.add(c["obj_eid"])
+                if fn:
+                    e.functional.setdefault((c["pid"], "s"), c["obj_eid"])
+                if c["object"] == c["page"]:
+                    self._canonical.setdefault(c["object"], c["obj_eid"])
+            else:
+                e.neighbors.add("v:" + str(c["object"]).replace(",", ""))
 
     def _record(self, eid: str, form: str, pid: str, role: str,
                 other: str | None, z) -> None:
@@ -174,6 +206,15 @@ class KB:
         # canonical-page claims first: the title entity must exist before
         # off-page mentions of the same form try to absorb into it (D82)
         rows.sort(key=lambda r: r["subject"] != r["page"])
+        # canonical PRE-PASS: an OBJECT mention of a person can precede
+        # that person's own page rows even after the sort (it rides some
+        # OTHER page's subject==page row) and would mint a stray eid —
+        # pre-mint every title entity before resolving anything
+        for r in rows:
+            if r["subject"] == r["page"] \
+                    and r["subject"] not in self._canonical:
+                e = self.reg._mint(r["subject"], r["page"])
+                self._canonical[r["subject"]] = e.eid
         Z = (self._embed([r["statement"] for r in rows])
              if embed and rows else
              np.zeros((len(rows), getattr(self.store, "dim", 1024)),
