@@ -1,0 +1,177 @@
+[
+ {
+  "idx": 0,
+  "subject": "George Berkeley",
+  "rendered": "George Berkeley is known for Three Dialogues Between Hylas and Philonous.",
+  "source_statement": "George Berkeley (P800): Three Dialogues Between Hylas and Philonous",
+  "source_page": "George Berkeley"
+ },
+ {
+  "idx": 1,
+  "subject": "Mary Lucy Cartwright",
+  "rendered": "Mary Lucy Cartwright was born on 17 December 1900.",
+  "source_statement": "Mary Lucy Cartwright was born on 17 December 1900",
+  "source_page": 1
+ },
+ {
+  "idx": 2,
+  "subject": "Isaac Newton",
+  "rendered": "Isaac Newton was a citizen of England.",
+  "source_statement": "Isaac Newton was an English polymath.",
+  "source_page": "Isaac Newton"
+ },
+ {
+  "idx": 3,
+  "subject": "Alfred Tarski",
+  "rendered": "Alfred Tarski authored Undecidable theories.",
+  "source_statement": "Alfred Tarski published Undecidable theories in 1953",
+  "source_page": "Alfred Tarski"
+ },
+ {
+  "idx": 4,
+  "subject": "Maryam Mirzakhani",
+  "rendered": "Maryam Mirzakhani was advised by Curtis T. McMullen.",
+  "source_statement": "Maryam Mirzakhani was supervised by Curtis T. McMullen at Harvard",
+  "source_page": 2
+ },
+ {
+  "idx": 5,
+  "subject": "Aristotle",
+  "rendered": "Aristotle worked as a philosopher.",
+  "source_statement": "Aristotle was a Greek philosopher",
+  "source_page": "Aristotle"
+ },
+ {
+  "idx": 6,
+  "subject": "Plato",
+  "rendered": "Plato was educated at Socrates.",
+  "source_statement": "Plato was educated by Socrates.",
+  "source_page": "Plato"
+ },
+ {
+  "idx": 7,
+  "subject": "Paul Erd\u0151s",
+  "rendered": "Paul Erd\u0151s worked at University of Pennsylvania.",
+  "source_statement": "Paul Erd\u0151s worked at the University of Pennsylvania",
+  "source_page": "Paul Erd\u0151s"
+ },
+ {
+  "idx": 8,
+  "subject": "Aristotle",
+  "rendered": "Aristotle authored Physics.",
+  "source_statement": "Aristotle wrote the Physics",
+  "source_page": "Aristotle"
+ },
+ {
+  "idx": 9,
+  "subject": "Andrew Wiles",
+  "rendered": "Andrew Wiles authored Fermat's Last Theorem proof.",
+  "source_statement": "Fermat's Last Theorem was proved by Andrew Wiles.",
+  "source_page": "Fermat's Last Theorem"
+ },
+ {
+  "idx": 10,
+  "subject": "Bertrand Russell",
+  "rendered": "Bertrand Russell was educated at University of Cambridge.",
+  "source_statement": "was an alumnus of the University of Cambridge",
+  "source_page": "University of Cambridge"
+ },
+ {
+  "idx": 11,
+  "subject": "Maryam Mirzakhani",
+  "rendered": "Maryam Mirzakhani was educated at Sharif University of Technology.",
+  "source_statement": "Maryam Mirzakhani graduated from Sharif University of Technology in 1999",
+  "source_page": 2
+ },
+ {
+  "idx": 12,
+  "subject": "Paul Erd\u0151s",
+  "rendered": "Paul Erd\u0151s was born on 26 March 1913.",
+  "source_statement": "Paul Erd\u0151s was born on 26 March 1913",
+  "source_page": "Paul Erd\u0151s"
+ },
+ {
+  "idx": 13,
+  "subject": "Norbert Wiener",
+  "rendered": "Norbert Wiener died in Stockholm.",
+  "source_statement": "Norbert Wiener died in Stockholm",
+  "source_page": "Norbert Wiener"
+ },
+ {
+  "idx": 14,
+  "subject": "Maryam Mirzakhani",
+  "rendered": "Maryam Mirzakhani received the International Mathematical Olympiad gold medal.",
+  "source_statement": "Maryam Mirzakhani won gold medal in International Mathematical Olympiad in Hong Kong in 1994",
+  "source_page": 2
+ },
+ {
+  "idx": 15,
+  "subject": "Aristotle",
+  "rendered": "Aristotle authored Alexander the Great.",
+  "source_statement": "Aristotle tutored Alexander the Great",
+  "source_page": "Aristotle"
+ },
+ {
+  "idx": 16,
+  "subject": "Isaac Newton",
+  "rendered": "Isaac Newton lived in London.",
+  "source_statement": "Isaac Newton (P551) London",
+  "source_page": "Isaac Newton"
+ },
+ {
+  "idx": 17,
+  "subject": "Isaac Newton",
+  "rendered": "Isaac Newton held the position of Master of the Royal Mint.",
+  "source_statement": "Isaac Newton (P39) Master of the Royal Mint",
+  "source_page": "Isaac Newton"
+ },
+ {
+  "idx": 18,
+  "subject": "Aristotle",
+  "rendered": "Aristotle worked as a logician.",
+  "source_statement": "Aristotle was a logician",
+  "source_page": "Aristotle"
+ },
+ {
+  "idx": 19,
+  "subject": "Norbert Wiener",
+  "rendered": "Norbert Wiener worked at National Defense Research Committee.",
+  "source_statement": "Norbert Wiener accepted an appointment with the National Defense Research Committee in 1941",
+  "source_page": "Norbert Wiener"
+ },
+ {
+  "idx": 20,
+  "subject": "Aristotle",
+  "rendered": "Aristotle authored Nicomachean Ethics.",
+  "source_statement": "Aristotle wrote the Nicomachean Ethics",
+  "source_page": "Aristotle"
+ },
+ {
+  "idx": 21,
+  "subject": "Bertrand Russell",
+  "rendered": "Bertrand Russell was born on 18 May 1872.",
+  "source_statement": "Bertrand Russell was born on 18 May 1872",
+  "source_page": "Bertrand Russell"
+ },
+ {
+  "idx": 22,
+  "subject": "Isaac Newton",
+  "rendered": "Isaac Newton was a member of Trinity College, Cambridge.",
+  "source_statement": "Isaac Newton member Trinity College Cambridge",
+  "source_page": "Trinity College, Cambridge"
+ },
+ {
+  "idx": 23,
+  "subject": "Maryam Mirzakhani",
+  "rendered": "Maryam Mirzakhani was educated at Tehran Farzanegan School.",
+  "source_statement": "Maryam Mirzakhani attended Tehran Farzanegan School",
+  "source_page": 2
+ },
+ {
+  "idx": 24,
+  "subject": "Plato",
+  "rendered": "Plato worked in Syracuse.",
+  "source_statement": "Plato visited Syracuse in roughly 385 BC.",
+  "source_page": "Plato"
+ }
+]

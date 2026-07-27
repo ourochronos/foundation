@@ -1,0 +1,53 @@
+{
+ "subjects": [
+  "Maryam Mirzakhani",
+  "Aristotle",
+  "Mary Lucy Cartwright",
+  "Norbert Wiener",
+  "George Berkeley",
+  "Andrew Wiles",
+  "Isaac Newton",
+  "Archimedes",
+  "Paul Erd\u0151s",
+  "Bertrand Russell",
+  "Alfred Tarski",
+  "Andrey Kolmogorov",
+  "Gottfried Wilhelm Leibniz",
+  "Plato",
+  "Ren\u00e9 Descartes"
+ ],
+ "n_sentences": 469,
+ "distractor": {
+  "n": 25,
+  "ok": 25,
+  "rate": 1.0,
+  "ci95": [
+   0.8668035060468213,
+   1.0
+  ]
+ },
+ "disputes": {
+  "n": 25,
+  "ok": 25,
+  "rate": 1.0,
+  "ci95": [
+   0.8668035060468213,
+   1.0
+  ]
+ },
+ "faithfulness": null,
+ "manifest": {
+  "generated_at": "2026-07-27T04:43:31.978534+00:00",
+  "commit": "fbbc96894291352f92387d5cc043a5880cf10879",
+  "dirty": true,
+  "command": "scripts/probe_m5_brief.py",
+  "seed": 7,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  }
+ }
+}

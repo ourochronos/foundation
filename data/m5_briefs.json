@@ -1,0 +1,3870 @@
+{
+ "Maryam Mirzakhani": {
+  "sentences": [
+   {
+    "text": "Maryam Mirzakhani was born in Tehran.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_8.jsonl:73"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani died in Stanford.",
+    "kind": "fact",
+    "pid": "P20",
+    "citations": [
+     "out_g2_8.jsonl:74"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani was married to Jan Vondrak.",
+    "kind": "fact",
+    "pid": "P26",
+    "citations": [
+     "out_g2_8.jsonl:94"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani was a citizen of Iran.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_g2_8.jsonl:75"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani was born on 12 May 1977.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_8.jsonl:71"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani died on 14 July 2017.",
+    "kind": "fact",
+    "pid": "P570",
+    "citations": [
+     "out_g2_8.jsonl:72"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_8.jsonl:76"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani worked at Princeton University.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_8.jsonl:81"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani worked at Stanford University.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_8.jsonl:82"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the American Academy of Arts and Sciences.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:93"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the American Philosophical Society.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:91"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the Blumenthal Award.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:87"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the Clay Mathematics Institute research fellow.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ga.jsonl:118"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the Clay Research Award.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:89"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the Fields Medal.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:86"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the foreign associate to French Academy of Sciences.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ga.jsonl:142"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the foreign associate to the French Academy of Sciences.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:90"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the gold medal at International Mathematical Olympiad.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ga.jsonl:104"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the gold medal in Iranian National Olympiad.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ga.jsonl:103"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the International Mathematical Olympiad gold medal.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:84"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the National Academy of Sciences.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:92"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the Ruth Lyttle Satter Prize in Mathematics.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ga.jsonl:139"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the Satter Prize.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:88"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani received the Simons Investigator Award.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ga.jsonl:140"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani was advised by Curtis T. McMullen.",
+    "kind": "fact",
+    "pid": "P184",
+    "citations": [
+     "out_g2_8.jsonl:80"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani held the position of full professor at Stanford University.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_8.jsonl:83"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani authored Elementary Number Theory, Challenging Problems.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_ga.jsonl:110"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani lived in Palo Alto.",
+    "kind": "fact",
+    "pid": "P551",
+    "citations": [
+     "out_g2_8.jsonl:99"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani was educated at Harvard University.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_8.jsonl:79"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani was educated at Sharif University of Technology.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_8.jsonl:78"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani was educated at Tehran Farzanegan School.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_8.jsonl:77"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani worked in Princeton University.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_v3_6.jsonl:72"
+    ]
+   },
+   {
+    "text": "Maryam Mirzakhani worked in Stanford University.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_v3_6.jsonl:66"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Aristotle": {
+  "sentences": [
+   {
+    "text": "Aristotle was born in Stagira.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_1.jsonl:235"
+    ]
+   },
+   {
+    "text": "Aristotle died in Chalcis.",
+    "kind": "fact",
+    "pid": "P20",
+    "citations": [
+     "out_g2_1.jsonl:267"
+    ]
+   },
+   {
+    "text": "Sources disagree on P27 for Aristotle: 'Ancient Greece' (per Aristotle); 'Greece' (per Aristotle).",
+    "kind": "dispute",
+    "pid": "P27",
+    "citations": [
+     "out_g2_1.jsonl:239",
+     "out_v3_1.jsonl:21"
+    ]
+   },
+   {
+    "text": "Sources disagree on P569 for Aristotle: '350 BCE' (per Fallibilism); '384 BC' (per Aristotle, Occam's razor); '384 BCE' (per Mathematical proof, Metaphysics).",
+    "kind": "dispute",
+    "pid": "P569",
+    "citations": [
+     "out_g2_1.jsonl:233",
+     "out_v3_1.jsonl:17",
+     "out_v3_7.jsonl:10",
+     "out_v3_3.jsonl:162",
+     "out_v3_6.jsonl:149",
+     "out_v3_6.jsonl:219"
+    ]
+   },
+   {
+    "text": "Sources disagree on P570 for Aristotle: '322 BC' (per Aristotle); '322 BCE' (per Mathematical proof, Metaphysics).",
+    "kind": "dispute",
+    "pid": "P570",
+    "citations": [
+     "out_g2_1.jsonl:234",
+     "out_v3_1.jsonl:18",
+     "out_v3_6.jsonl:150",
+     "out_v3_6.jsonl:220"
+    ]
+   },
+   {
+    "text": "Aristotle worked as a logician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:238"
+    ]
+   },
+   {
+    "text": "Aristotle worked as a natural scientist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:237"
+    ]
+   },
+   {
+    "text": "Aristotle worked as a philosopher.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:236"
+    ]
+   },
+   {
+    "text": "Aristotle worked as a polymath.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_1.jsonl:23"
+    ]
+   },
+   {
+    "text": "Aristotle worked as a zoologist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:261"
+    ]
+   },
+   {
+    "text": "Aristotle worked at Alexander the Great.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:245"
+    ]
+   },
+   {
+    "text": "Aristotle worked at Lyceum.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:243"
+    ]
+   },
+   {
+    "text": "Aristotle was founded by Peripatetic school.",
+    "kind": "fact",
+    "pid": "P112",
+    "citations": [
+     "out_v3_1.jsonl:26"
+    ]
+   },
+   {
+    "text": "Aristotle is located in Chalcidice.",
+    "kind": "fact",
+    "pid": "P131",
+    "citations": [
+     "out_v3_1.jsonl:20"
+    ]
+   },
+   {
+    "text": "Aristotle authored Alexander the Great.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_v3_1.jsonl:27"
+    ]
+   },
+   {
+    "text": "Aristotle authored Metaphysics.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:253"
+    ]
+   },
+   {
+    "text": "Aristotle authored Nicomachean Ethics.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:251"
+    ]
+   },
+   {
+    "text": "Aristotle authored Organon.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:255"
+    ]
+   },
+   {
+    "text": "Aristotle authored Physics.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:254"
+    ]
+   },
+   {
+    "text": "Aristotle authored Poetics.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:257"
+    ]
+   },
+   {
+    "text": "Aristotle authored Politics.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:252"
+    ]
+   },
+   {
+    "text": "Aristotle authored Rhetoric.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:256"
+    ]
+   },
+   {
+    "text": "Aristotle was educated at Plato.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:242"
+    ]
+   },
+   {
+    "text": "Aristotle was educated at Plato's Academy.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:240"
+    ]
+   },
+   {
+    "text": "Aristotle is known for animal anatomy.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:262"
+    ]
+   },
+   {
+    "text": "Aristotle is known for classification of organisms.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:248"
+    ]
+   },
+   {
+    "text": "Aristotle is known for concept of form.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:259"
+    ]
+   },
+   {
+    "text": "Aristotle is known for concept of substance.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:258"
+    ]
+   },
+   {
+    "text": "Aristotle is known for doctrine of mean.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:263"
+    ]
+   },
+   {
+    "text": "Aristotle is known for four causes.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:247"
+    ]
+   },
+   {
+    "text": "Aristotle is known for laws of thought.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_5.jsonl:380"
+    ]
+   },
+   {
+    "text": "Aristotle is known for Metaphysics.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_1.jsonl:30"
+    ]
+   },
+   {
+    "text": "Aristotle is known for Nicomachean Ethics.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_1.jsonl:31"
+    ]
+   },
+   {
+    "text": "Aristotle is known for On the Soul.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_1.jsonl:33"
+    ]
+   },
+   {
+    "text": "Aristotle is known for Organon.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_6.jsonl:156"
+    ]
+   },
+   {
+    "text": "Aristotle is known for Physics.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_1.jsonl:29"
+    ]
+   },
+   {
+    "text": "Aristotle is known for Poetics.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_1.jsonl:34"
+    ]
+   },
+   {
+    "text": "Aristotle is known for Politics.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_1.jsonl:32"
+    ]
+   },
+   {
+    "text": "Aristotle is known for Posterior Analytics.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_1.jsonl:52"
+    ]
+   },
+   {
+    "text": "Aristotle is known for potentiality and actuality.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:260"
+    ]
+   },
+   {
+    "text": "Aristotle is known for theory of the syllogism.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:246"
+    ]
+   },
+   {
+    "text": "Aristotle is known for Western philosophy.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:264"
+    ]
+   },
+   {
+    "text": "Aristotle worked in ethics.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_1.jsonl:250"
+    ]
+   },
+   {
+    "text": "Aristotle worked in physics.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_1.jsonl:249"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Mary Lucy Cartwright": {
+  "sentences": [
+   {
+    "text": "Mary Lucy Cartwright was born in Aynho.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_8.jsonl:39"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright died in Cambridge.",
+    "kind": "fact",
+    "pid": "P20",
+    "citations": [
+     "out_g2_8.jsonl:40"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was a citizen of United Kingdom.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_g2_ga.jsonl:49"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was born on 17 December 1900.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_8.jsonl:37"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright died on 3 April 1998.",
+    "kind": "fact",
+    "pid": "P570",
+    "citations": [
+     "out_g2_8.jsonl:38"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_8.jsonl:41"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright worked at Alice Ottley School.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_8.jsonl:47"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright worked at Brown University.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_8.jsonl:62"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright worked at Claremont Graduate School.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_8.jsonl:63"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright worked at Girton College.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_8.jsonl:54"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright worked at Girton College, Cambridge.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ga.jsonl:69"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright worked at University of Cambridge.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ga.jsonl:82"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright worked at Wycombe Abbey School.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_8.jsonl:48"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright: P1344 \u2014 J. E. Littlewood.",
+    "kind": "fact",
+    "pid": "P1344",
+    "citations": [
+     "out_g2_8.jsonl:56"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright received the blue plaque.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:68"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright received the Dame Commander of the Order of the British Empire.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:67"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright received the De Morgan Medal.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:65"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright received the Fellow of the Royal Society.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:58"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright received the Honorary Fellow of Royal Society of Edinburgh.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ga.jsonl:93"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright received the Honorary Fellow of The Royal Society of Edinburgh.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:66"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright received the Sylvester Medal.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:64"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright received the Yarrow Research Fellowship.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_8.jsonl:53"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was advised by G. H. Hardy.",
+    "kind": "fact",
+    "pid": "P184",
+    "citations": [
+     "out_g2_8.jsonl:50"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright held the position of Mistress of Girton.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_8.jsonl:59"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright held the position of president of Cambridge Association of University Women.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_8.jsonl:61"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright held the position of Reader in the Theory of Functions.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_8.jsonl:60"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was educated at Godolphin School.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_8.jsonl:44"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was educated at Gravely Manor School.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_8.jsonl:43"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was educated at Leamington High School.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_8.jsonl:42"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was educated at Oxford.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_8.jsonl:49"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was educated at St Hugh's College.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_8.jsonl:45"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was educated at St Hugh's College, Oxford.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_ga.jsonl:57"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright was educated at University of Oxford.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_ga.jsonl:63"
+    ]
+   },
+   {
+    "text": "Mary Lucy Cartwright is known for The Zeros of Integral Functions of Special Types.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_ga.jsonl:66"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Norbert Wiener": {
+  "sentences": [
+   {
+    "text": "Norbert Wiener was born in Columbia, Missouri.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_ra.jsonl:59"
+    ]
+   },
+   {
+    "text": "Norbert Wiener died in Stockholm.",
+    "kind": "fact",
+    "pid": "P20",
+    "citations": [
+     "out_g2_ra.jsonl:60"
+    ]
+   },
+   {
+    "text": "Norbert Wiener was married to Margaret Engemann.",
+    "kind": "fact",
+    "pid": "P26",
+    "citations": [
+     "out_g2_ra.jsonl:67"
+    ]
+   },
+   {
+    "text": "Sources disagree on P27 for Norbert Wiener: 'American' (per Norbert Wiener); 'United States' (per Norbert Wiener).",
+    "kind": "dispute",
+    "pid": "P27",
+    "citations": [
+     "out_g2_ra.jsonl:61",
+     "out_v3_6.jsonl:326"
+    ]
+   },
+   {
+    "text": "Norbert Wiener was born on November 26, 1894.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_ra.jsonl:57"
+    ]
+   },
+   {
+    "text": "Norbert Wiener died on March 18, 1964.",
+    "kind": "fact",
+    "pid": "P570",
+    "citations": [
+     "out_g2_ra.jsonl:58"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked as a computer scientist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_6.jsonl:327"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_6.jsonl:328"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked as a philosopher.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_6.jsonl:333"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at Boston Herald.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:89"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at Coll\u00e8ge de France.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:97"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at General Electric.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:87"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at Harvard.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:86"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at Indian Statistical Institute, Calcutta.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:99"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at Massachusetts Institute of Technology.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:62"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at MIT.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:92"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at National Defense Research Committee.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:96"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at Netherlands Central Institute for Brain Research.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:101"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at Tata Institute of Fundamental Research.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:98"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at Tsing-Hua University.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:94"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked at University of Naples.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_ra.jsonl:100"
+    ]
+   },
+   {
+    "text": "Norbert Wiener: P119 \u2014 Vittum Hill Cemetery.",
+    "kind": "fact",
+    "pid": "P119",
+    "citations": [
+     "out_g2_ra.jsonl:112"
+    ]
+   },
+   {
+    "text": "Norbert Wiener received the B\u00f6cher Memorial Prize.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ra.jsonl:105"
+    ]
+   },
+   {
+    "text": "Norbert Wiener received the National Medal of Science.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ra.jsonl:106"
+    ]
+   },
+   {
+    "text": "Norbert Wiener received the U.S. National Book Award.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_ra.jsonl:107"
+    ]
+   },
+   {
+    "text": "Norbert Wiener was a member of China Aid Society.",
+    "kind": "fact",
+    "pid": "P463",
+    "citations": [
+     "out_g2_ra.jsonl:95"
+    ]
+   },
+   {
+    "text": "Norbert Wiener authored Encyclopedia Americana.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_ra.jsonl:88"
+    ]
+   },
+   {
+    "text": "Norbert Wiener was educated at Ayer High School.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_ra.jsonl:74"
+    ]
+   },
+   {
+    "text": "Norbert Wiener was educated at Cambridge University.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_ra.jsonl:82"
+    ]
+   },
+   {
+    "text": "Norbert Wiener was educated at Cornell.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_ra.jsonl:78"
+    ]
+   },
+   {
+    "text": "Norbert Wiener was educated at Harvard.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_ra.jsonl:77"
+    ]
+   },
+   {
+    "text": "Norbert Wiener was educated at Tufts College.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_ra.jsonl:75"
+    ]
+   },
+   {
+    "text": "Norbert Wiener was educated at University of G\u00f6ttingen.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_ra.jsonl:83"
+    ]
+   },
+   {
+    "text": "Norbert Wiener is known for Behavior, Purpose and Teleology.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_ra.jsonl:102"
+    ]
+   },
+   {
+    "text": "Norbert Wiener is known for Cybernetics.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_ra.jsonl:103"
+    ]
+   },
+   {
+    "text": "Norbert Wiener is known for God & Golem, Inc.: A Comment on Certain Points where Cybernetics Impinges on Religion.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_ra.jsonl:104"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked in Aberdeen Proving Ground.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_ra.jsonl:90"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked in Europe.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_ra.jsonl:81"
+    ]
+   },
+   {
+    "text": "Norbert Wiener worked in Massachusetts Institute of Technology.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_v3_6.jsonl:329"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "George Berkeley": {
+  "sentences": [
+   {
+    "text": "George Berkeley was born in Dysart Castle, County Kilkenny, Ireland.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_5.jsonl:2"
+    ]
+   },
+   {
+    "text": "Sources disagree on P20 for George Berkeley: 'Christ Church Cathedral, Oxford' (per George Berkeley); 'Oxford' (per George Berkeley).",
+    "kind": "dispute",
+    "pid": "P20",
+    "citations": [
+     "out_g2_5.jsonl:3",
+     "out_v3_4.jsonl:27"
+    ]
+   },
+   {
+    "text": "George Berkeley was married to Anne Forster.",
+    "kind": "fact",
+    "pid": "P26",
+    "citations": [
+     "out_g2_5.jsonl:18"
+    ]
+   },
+   {
+    "text": "Sources disagree on P27 for George Berkeley: 'Anglo-Irish' (per George Berkeley); 'Ireland' (per George Berkeley).",
+    "kind": "dispute",
+    "pid": "P27",
+    "citations": [
+     "out_g2_5.jsonl:4",
+     "out_v3_4.jsonl:31"
+    ]
+   },
+   {
+    "text": "Sources disagree on P569 for George Berkeley: '12 March 1685' (per George Berkeley); '1685' (per Metaphysics).",
+    "kind": "dispute",
+    "pid": "P569",
+    "citations": [
+     "out_g2_5.jsonl:0",
+     "out_v3_4.jsonl:25",
+     "out_v3_6.jsonl:223"
+    ]
+   },
+   {
+    "text": "Sources disagree on P570 for George Berkeley: '14 January 1753' (per George Berkeley); '1753' (per Metaphysics).",
+    "kind": "dispute",
+    "pid": "P570",
+    "citations": [
+     "out_g2_5.jsonl:1",
+     "out_v3_4.jsonl:26",
+     "out_v3_6.jsonl:224"
+    ]
+   },
+   {
+    "text": "George Berkeley worked as a clergyman.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_4.jsonl:30"
+    ]
+   },
+   {
+    "text": "George Berkeley worked as a philosopher.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_4.jsonl:28"
+    ]
+   },
+   {
+    "text": "George Berkeley worked as a writer.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_4.jsonl:29"
+    ]
+   },
+   {
+    "text": "George Berkeley worked at Trinity College Dublin.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_5.jsonl:7"
+    ]
+   },
+   {
+    "text": "George Berkeley held the position of Bishop of Cloyne.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_5.jsonl:8"
+    ]
+   },
+   {
+    "text": "George Berkeley held the position of Dean of Derry.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_5.jsonl:17"
+    ]
+   },
+   {
+    "text": "George Berkeley held the position of Dean of Dromore.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_5.jsonl:16"
+    ]
+   },
+   {
+    "text": "George Berkeley lived in Newport.",
+    "kind": "fact",
+    "pid": "P551",
+    "citations": [
+     "out_v3_4.jsonl:54"
+    ]
+   },
+   {
+    "text": "George Berkeley was educated at Kilkenny College.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_5.jsonl:5"
+    ]
+   },
+   {
+    "text": "George Berkeley was educated at Trinity College Dublin.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_5.jsonl:6"
+    ]
+   },
+   {
+    "text": "George Berkeley is known for A Treatise Concerning the Principles of Human Knowledge.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_0.jsonl:60"
+    ]
+   },
+   {
+    "text": "George Berkeley is known for Alciphron.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:24"
+    ]
+   },
+   {
+    "text": "George Berkeley is known for An Essay Towards a New Theory of Vision.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:20"
+    ]
+   },
+   {
+    "text": "George Berkeley is known for De Motu.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:23"
+    ]
+   },
+   {
+    "text": "George Berkeley is known for Further Thoughts on Tar-water.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:27"
+    ]
+   },
+   {
+    "text": "George Berkeley is known for Siris: A Chain of Philosophical Reflexions and Inquiries Concerning the Virtues of Tarwater.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:26"
+    ]
+   },
+   {
+    "text": "George Berkeley is known for The Analyst.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:25"
+    ]
+   },
+   {
+    "text": "George Berkeley is known for Three Dialogues Between Hylas and Philonous.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:22"
+    ]
+   },
+   {
+    "text": "George Berkeley worked in Bermuda.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_5.jsonl:32"
+    ]
+   },
+   {
+    "text": "George Berkeley worked in Newport, Rhode Island.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_5.jsonl:31"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Andrew Wiles": {
+  "sentences": [
+   {
+    "text": "Andrew Wiles was born in Cambridge.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_1.jsonl:125"
+    ]
+   },
+   {
+    "text": "Andrew Wiles was married to Nada Canaan.",
+    "kind": "fact",
+    "pid": "P26",
+    "citations": [
+     "out_g2_1.jsonl:142"
+    ]
+   },
+   {
+    "text": "Andrew Wiles was a citizen of United Kingdom.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_v3_0.jsonl:377"
+    ]
+   },
+   {
+    "text": "Sources disagree on P569 for Andrew Wiles: '1953' (per Andrew Wiles); 'April 11, 1953' (per Andrew Wiles).",
+    "kind": "dispute",
+    "pid": "P569",
+    "citations": [
+     "out_g2_1.jsonl:124",
+     "out_v3_0.jsonl:362"
+    ]
+   },
+   {
+    "text": "Andrew Wiles worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:126"
+    ]
+   },
+   {
+    "text": "Andrew Wiles worked at Oxford.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:133"
+    ]
+   },
+   {
+    "text": "Andrew Wiles worked at Princeton University.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:144"
+    ]
+   },
+   {
+    "text": "Andrew Wiles worked at University of Oxford.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:127"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the Abel Prize.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:130"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the American Academy of Arts and Sciences.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:158"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the Cole Prize.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:159"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the Copley Medal.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:131"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the De Morgan Medal.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:161"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the Fellow of the Royal Society.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:157"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the Guggenheim Fellowship.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:141"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the Knight Commander of the Order of the British Empire.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:132"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the MacArthur Fellowship.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:134"
+    ]
+   },
+   {
+    "text": "Andrew Wiles received the Wolfskehl Prize.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:160"
+    ]
+   },
+   {
+    "text": "Andrew Wiles was a member of Royal Society.",
+    "kind": "fact",
+    "pid": "P463",
+    "citations": [
+     "out_v3_0.jsonl:369"
+    ]
+   },
+   {
+    "text": "Andrew Wiles authored Annals of Mathematics.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:152"
+    ]
+   },
+   {
+    "text": "Andrew Wiles authored Fermat's Last Theorem proof.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_v3_3.jsonl:214"
+    ]
+   },
+   {
+    "text": "Andrew Wiles was educated at Cambridge University.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_v3_0.jsonl:365"
+    ]
+   },
+   {
+    "text": "Andrew Wiles was educated at Clare College, Cambridge.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:140"
+    ]
+   },
+   {
+    "text": "Andrew Wiles was educated at Merton College, Oxford.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:139"
+    ]
+   },
+   {
+    "text": "Andrew Wiles was educated at Oxford.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:138"
+    ]
+   },
+   {
+    "text": "Andrew Wiles was educated at Oxford University.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_v3_0.jsonl:364"
+    ]
+   },
+   {
+    "text": "Andrew Wiles is known for elliptic curves.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:154"
+    ]
+   },
+   {
+    "text": "Andrew Wiles is known for Fermat's Last Theorem.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:128"
+    ]
+   },
+   {
+    "text": "Andrew Wiles is known for Fermat's Last Theorem proof.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_6.jsonl:370"
+    ]
+   },
+   {
+    "text": "Andrew Wiles is known for Galois representations.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:153"
+    ]
+   },
+   {
+    "text": "Andrew Wiles is known for modular forms.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:155"
+    ]
+   },
+   {
+    "text": "Andrew Wiles is known for proof of Fermat's Last Theorem.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:148"
+    ]
+   },
+   {
+    "text": "Andrew Wiles worked in number theory.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_1.jsonl:129"
+    ]
+   },
+   {
+    "text": "Andrew Wiles worked in Oxford University.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_v3_0.jsonl:373"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Isaac Newton": {
+  "sentences": [
+   {
+    "text": "Isaac Newton was born in Woolsthorpe Manor.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_v3_5.jsonl:23"
+    ]
+   },
+   {
+    "text": "Isaac Newton was a citizen of England.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_g2_6.jsonl:138"
+    ]
+   },
+   {
+    "text": "Isaac Newton was born on 4 January 1643.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_6.jsonl:136"
+    ]
+   },
+   {
+    "text": "Sources disagree on P570 for Isaac Newton: '1727' (per Royal Society); '31 March 1727' (per Isaac Newton).",
+    "kind": "dispute",
+    "pid": "P570",
+    "citations": [
+     "out_g2_6.jsonl:137",
+     "out_v3_5.jsonl:22",
+     "out_g2_rb.jsonl:12"
+    ]
+   },
+   {
+    "text": "Isaac Newton worked as a alchemist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_6.jsonl:142"
+    ]
+   },
+   {
+    "text": "Isaac Newton worked as a astronomer.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_6.jsonl:141"
+    ]
+   },
+   {
+    "text": "Isaac Newton worked as a author.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_6.jsonl:144"
+    ]
+   },
+   {
+    "text": "Isaac Newton worked as a inventor.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_6.jsonl:145"
+    ]
+   },
+   {
+    "text": "Isaac Newton worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_6.jsonl:139"
+    ]
+   },
+   {
+    "text": "Isaac Newton worked as a physicist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_6.jsonl:140"
+    ]
+   },
+   {
+    "text": "Isaac Newton worked as a theologian.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_6.jsonl:143"
+    ]
+   },
+   {
+    "text": "Isaac Newton was created by calculus.",
+    "kind": "fact",
+    "pid": "P170",
+    "citations": [
+     "out_v3_2.jsonl:248"
+    ]
+   },
+   {
+    "text": "Isaac Newton held the position of Lucasian Professor of Mathematics.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_v3_5.jsonl:30"
+    ]
+   },
+   {
+    "text": "Isaac Newton held the position of Lucasian Professor of Mathematics & Physics.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_8.jsonl:149"
+    ]
+   },
+   {
+    "text": "Isaac Newton held the position of Master of the Royal Mint.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_v3_5.jsonl:32"
+    ]
+   },
+   {
+    "text": "Isaac Newton held the position of president of the Royal Society.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_v3_5.jsonl:33"
+    ]
+   },
+   {
+    "text": "Isaac Newton held the position of Warden of the Royal Mint.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_v3_5.jsonl:31"
+    ]
+   },
+   {
+    "text": "Isaac Newton was a member of Trinity College, Cambridge.",
+    "kind": "fact",
+    "pid": "P463",
+    "citations": [
+     "out_v3_9.jsonl:123"
+    ]
+   },
+   {
+    "text": "Isaac Newton authored Methodus fluxionum.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_v3_2.jsonl:250"
+    ]
+   },
+   {
+    "text": "Isaac Newton authored Opticks.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_v3_5.jsonl:36"
+    ]
+   },
+   {
+    "text": "Isaac Newton authored Philosophiae Naturalis Principia Mathematica.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_v3_5.jsonl:34"
+    ]
+   },
+   {
+    "text": "Isaac Newton authored Principia Mathematica.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_v3_0.jsonl:91"
+    ]
+   },
+   {
+    "text": "Isaac Newton lived in London.",
+    "kind": "fact",
+    "pid": "P551",
+    "citations": [
+     "out_v3_5.jsonl:41"
+    ]
+   },
+   {
+    "text": "Isaac Newton lived in Woolsthorpe.",
+    "kind": "fact",
+    "pid": "P551",
+    "citations": [
+     "out_v3_5.jsonl:42"
+    ]
+   },
+   {
+    "text": "Isaac Newton was educated at The King's School.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_v3_5.jsonl:28"
+    ]
+   },
+   {
+    "text": "Isaac Newton was educated at Trinity College, University of Cambridge.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_v3_5.jsonl:29"
+    ]
+   },
+   {
+    "text": "Isaac Newton was educated at University of Cambridge.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_12.jsonl:20"
+    ]
+   },
+   {
+    "text": "Isaac Newton is known for Philosophi\u00e6 Naturalis Principia Mathematica.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_6.jsonl:148"
+    ]
+   },
+   {
+    "text": "Isaac Newton is known for Principia Mathematica.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_0.jsonl:55"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Archimedes": {
+  "sentences": [
+   {
+    "text": "Archimedes was born in Syracuse.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_1.jsonl:200"
+    ]
+   },
+   {
+    "text": "Archimedes died in Syracuse.",
+    "kind": "fact",
+    "pid": "P20",
+    "citations": [
+     "out_g2_1.jsonl:223"
+    ]
+   },
+   {
+    "text": "Archimedes was born on c. 287 BC.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_1.jsonl:198"
+    ]
+   },
+   {
+    "text": "Sources disagree on P570 for Archimedes: '212 BC' (per Archimedes); 'c. 212 BC' (per Archimedes).",
+    "kind": "dispute",
+    "pid": "P570",
+    "citations": [
+     "out_g2_1.jsonl:199",
+     "out_v3_1.jsonl:1"
+    ]
+   },
+   {
+    "text": "Archimedes worked as a astronomer.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:204"
+    ]
+   },
+   {
+    "text": "Archimedes worked as a engineer.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:203"
+    ]
+   },
+   {
+    "text": "Archimedes worked as a inventor.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:205"
+    ]
+   },
+   {
+    "text": "Archimedes worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:201"
+    ]
+   },
+   {
+    "text": "Archimedes worked as a physicist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:202"
+    ]
+   },
+   {
+    "text": "Archimedes is known for approximation of pi.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:212"
+    ]
+   },
+   {
+    "text": "Archimedes is known for Archimedean spiral.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:213"
+    ]
+   },
+   {
+    "text": "Archimedes is known for Archimedes' principle.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:217"
+    ]
+   },
+   {
+    "text": "Archimedes is known for Archimedes' screw pump.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:220"
+    ]
+   },
+   {
+    "text": "Archimedes is known for area of a circle.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:208"
+    ]
+   },
+   {
+    "text": "Archimedes is known for area of an ellipse.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:210"
+    ]
+   },
+   {
+    "text": "Archimedes is known for area under a parabola.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:211"
+    ]
+   },
+   {
+    "text": "Archimedes is known for calculus.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:206"
+    ]
+   },
+   {
+    "text": "Archimedes is known for center of gravity.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:216"
+    ]
+   },
+   {
+    "text": "Archimedes is known for compound pulleys.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:221"
+    ]
+   },
+   {
+    "text": "Archimedes is known for law of the lever.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:215"
+    ]
+   },
+   {
+    "text": "Archimedes is known for measurement of the Sun.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:218"
+    ]
+   },
+   {
+    "text": "Archimedes is known for method of exhaustion.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:207"
+    ]
+   },
+   {
+    "text": "Archimedes is known for On Spirals.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_1.jsonl:10"
+    ]
+   },
+   {
+    "text": "Archimedes is known for planetarium.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:219"
+    ]
+   },
+   {
+    "text": "Archimedes is known for surface area and volume of a sphere.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:209"
+    ]
+   },
+   {
+    "text": "Archimedes is known for system for large numbers.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:214"
+    ]
+   },
+   {
+    "text": "Archimedes is known for The Sand-Reckoner.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_1.jsonl:9"
+    ]
+   },
+   {
+    "text": "Archimedes is known for war machines.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:222"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Paul Erd\u0151s": {
+  "sentences": [
+   {
+    "text": "Paul Erd\u0151s was born in Budapest.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_9.jsonl:114"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s died in Warsaw.",
+    "kind": "fact",
+    "pid": "P20",
+    "citations": [
+     "out_g2_9.jsonl:115"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s was a citizen of Hungary.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_g2_9.jsonl:116"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s was born on 26 March 1913.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_9.jsonl:112"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s died on 20 September 1996.",
+    "kind": "fact",
+    "pid": "P570",
+    "citations": [
+     "out_g2_9.jsonl:113"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked as a approximation theorist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_9.jsonl:152"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked as a graph theorist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_9.jsonl:149"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked as a mathematical analyst.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_9.jsonl:151"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_9.jsonl:117"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked as a mathematician in discrete mathematics.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_9.jsonl:148"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked as a number theorist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_9.jsonl:150"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked as a probability theorist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_9.jsonl:154"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked as a set theorist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_9.jsonl:153"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked at Institute for Advanced Study.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_9.jsonl:140"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked at Notre Dame.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_9.jsonl:142"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked at Purdue.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_9.jsonl:143"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked at Stanford.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_9.jsonl:144"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked at Syracuse.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_9.jsonl:145"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked at University of Pennsylvania.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_9.jsonl:141"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked at Victoria University of Manchester.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_9.jsonl:136"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s authored Happy Ending problem paper.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_9.jsonl:129"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s was educated at Lip\u00f3t Fej\u00e9r.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_v3_7.jsonl:113"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s was educated at University of Budapest.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_9.jsonl:127"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s is known for Bertrand's postulate.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_7.jsonl:111"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s is known for proof for Bertrand's postulate.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_9.jsonl:130"
+    ]
+   },
+   {
+    "text": "Paul Erd\u0151s worked in United States.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_9.jsonl:139"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Bertrand Russell": {
+  "sentences": [
+   {
+    "text": "Sources disagree on P27 for Bertrand Russell: 'England' (per Bertrand Russell); 'English' (per Bertrand Russell).",
+    "kind": "dispute",
+    "pid": "P27",
+    "citations": [
+     "out_g2_2.jsonl:92",
+     "out_v3_1.jsonl:84"
+    ]
+   },
+   {
+    "text": "Bertrand Russell was born on 18 May 1872.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_2.jsonl:88"
+    ]
+   },
+   {
+    "text": "Bertrand Russell died on 2 February 1970.",
+    "kind": "fact",
+    "pid": "P570",
+    "citations": [
+     "out_g2_2.jsonl:89"
+    ]
+   },
+   {
+    "text": "Bertrand Russell worked as a logician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_1.jsonl:86"
+    ]
+   },
+   {
+    "text": "Bertrand Russell worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_6.jsonl:173"
+    ]
+   },
+   {
+    "text": "Bertrand Russell worked as a philosopher.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_0.jsonl:344"
+    ]
+   },
+   {
+    "text": "Bertrand Russell worked as a social reformer.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_1.jsonl:87"
+    ]
+   },
+   {
+    "text": "Bertrand Russell worked at Princeton University.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_v3_7.jsonl:357"
+    ]
+   },
+   {
+    "text": "Bertrand Russell: P140 \u2014 atheist.",
+    "kind": "fact",
+    "pid": "P140",
+    "citations": [
+     "out_g2_2.jsonl:116"
+    ]
+   },
+   {
+    "text": "Bertrand Russell: P140 \u2014 Christian.",
+    "kind": "fact",
+    "pid": "P140",
+    "citations": [
+     "out_g2_2.jsonl:115"
+    ]
+   },
+   {
+    "text": "Bertrand Russell: P156 \u2014 Principia Mathematica.",
+    "kind": "fact",
+    "pid": "P156",
+    "citations": [
+     "out_g2_10.jsonl:40"
+    ]
+   },
+   {
+    "text": "Bertrand Russell received the Nobel Prize in Literature \"in recognition of his varied and significant writings in which he champions humanitarian ideals and freedom of thought\".",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_2.jsonl:91"
+    ]
+   },
+   {
+    "text": "Bertrand Russell held the position of Hardy.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_2.jsonl:118"
+    ]
+   },
+   {
+    "text": "Bertrand Russell authored Principia Mathematica.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_10.jsonl:37"
+    ]
+   },
+   {
+    "text": "Bertrand Russell authored The Principles of Mathematics.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_10.jsonl:41"
+    ]
+   },
+   {
+    "text": "Bertrand Russell authored The Problems of Philosophy.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_v3_8.jsonl:40"
+    ]
+   },
+   {
+    "text": "Bertrand Russell lived in Pembroke Lodge in Richmond Park.",
+    "kind": "fact",
+    "pid": "P551",
+    "citations": [
+     "out_g2_2.jsonl:119"
+    ]
+   },
+   {
+    "text": "Bertrand Russell was educated at University of Cambridge.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_12.jsonl:22"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for At the end of those five minutes, I had become a completely different person..",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_2.jsonl:102"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for Confiscated by Cambridge Police.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_2.jsonl:106"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for Human Knowledge: Its scope and limits.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_v3_4.jsonl:59"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for in the House of Commons with well-known campaigners, including Arnold Lupton, who had been an MP and had also endured imprisonment for.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_2.jsonl:110"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for Introduction to Mathematical Philosophy.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_2.jsonl:107"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for Mr. Bertrand Russell, having died according to the Japanese press, is unable to give interviews to Japanese journalists.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_2.jsonl:114"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for On Denoting.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_2.jsonl:103"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for Soviet Russia\u20141920.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_2.jsonl:113"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for The Analysis of Mind.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_2.jsonl:108"
+    ]
+   },
+   {
+    "text": "Bertrand Russell is known for to my surprise, when I got up to speak, I was given the greatest ovation that was possible to give anybody.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_2.jsonl:105"
+    ]
+   },
+   {
+    "text": "Bertrand Russell worked in Pembroke Lodge in Richmond Park.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_2.jsonl:90"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Alfred Tarski": {
+  "sentences": [
+   {
+    "text": "Alfred Tarski was born in Poland.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_1.jsonl:2"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was married to Maria Witkowska.",
+    "kind": "fact",
+    "pid": "P26",
+    "citations": [
+     "out_g2_1.jsonl:8"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was a citizen of United States.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_g2_1.jsonl:5"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was born on January 14, 1901.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_1.jsonl:0"
+    ]
+   },
+   {
+    "text": "Alfred Tarski died on October 26, 1983.",
+    "kind": "fact",
+    "pid": "P570",
+    "citations": [
+     "out_g2_1.jsonl:1"
+    ]
+   },
+   {
+    "text": "Alfred Tarski worked as a logician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:4"
+    ]
+   },
+   {
+    "text": "Alfred Tarski worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:3"
+    ]
+   },
+   {
+    "text": "Alfred Tarski worked at City College of New York.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:26"
+    ]
+   },
+   {
+    "text": "Alfred Tarski worked at Harvard University.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:25"
+    ]
+   },
+   {
+    "text": "Alfred Tarski worked at Institut Henri Poincar\u00e9.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:29"
+    ]
+   },
+   {
+    "text": "Alfred Tarski worked at Institute for Advanced Study in Princeton.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:27"
+    ]
+   },
+   {
+    "text": "Alfred Tarski worked at Princeton University.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:24"
+    ]
+   },
+   {
+    "text": "Alfred Tarski worked at University College, London.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:28"
+    ]
+   },
+   {
+    "text": "Alfred Tarski worked at University of California, Berkeley.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_1.jsonl:9"
+    ]
+   },
+   {
+    "text": "Alfred Tarski received the Berkeley Citation.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:34"
+    ]
+   },
+   {
+    "text": "Alfred Tarski received the British Academy.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:31"
+    ]
+   },
+   {
+    "text": "Alfred Tarski received the Royal Netherlands Academy of Arts and Sciences.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:32"
+    ]
+   },
+   {
+    "text": "Alfred Tarski received the United States National Academy of Sciences.",
+    "kind": "fact",
+    "pid": "P166",
+    "citations": [
+     "out_g2_1.jsonl:11"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was a member of Association for Symbolic Logic.",
+    "kind": "fact",
+    "pid": "P463",
+    "citations": [
+     "out_g2_1.jsonl:12"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was a member of International Union for the History and Philosophy of Science.",
+    "kind": "fact",
+    "pid": "P463",
+    "citations": [
+     "out_g2_1.jsonl:35"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was a member of Lw\u00f3w\u2013Warsaw school of logic.",
+    "kind": "fact",
+    "pid": "P463",
+    "citations": [
+     "out_g2_1.jsonl:10"
+    ]
+   },
+   {
+    "text": "Alfred Tarski authored A decision method for elementary algebra and geometry.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:18"
+    ]
+   },
+   {
+    "text": "Alfred Tarski authored On the Primitive Term of Logistic.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:17"
+    ]
+   },
+   {
+    "text": "Alfred Tarski authored Undecidable theories.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:38"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was educated at Jan \u0141ukasiewicz.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:20"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was educated at Stanis\u0142aw Le\u015bniewski.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:7"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was educated at Stefan Mazurkiewicz.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:22"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was educated at University of Warsaw.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:6"
+    ]
+   },
+   {
+    "text": "Alfred Tarski was educated at Wac\u0142aw Sierpi\u0144ski.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_1.jsonl:23"
+    ]
+   },
+   {
+    "text": "Alfred Tarski is known for Banach\u2013Tarski paradox.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:15"
+    ]
+   },
+   {
+    "text": "Alfred Tarski is known for cylindric algebras.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:16"
+    ]
+   },
+   {
+    "text": "Alfred Tarski is known for decidability of elementary algebra and geometry.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:37"
+    ]
+   },
+   {
+    "text": "Alfred Tarski is known for On the Primitive Term of Logistic.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:19"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Andrey Kolmogorov": {
+  "sentences": [
+   {
+    "text": "Andrey Kolmogorov was a citizen of Soviet Union.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_g2_1.jsonl:167"
+    ]
+   },
+   {
+    "text": "Sources disagree on P569 for Andrey Kolmogorov: '1903-04-25' (per Andrey Kolmogorov); 'April 25, 1903' (per Andrey Kolmogorov).",
+    "kind": "dispute",
+    "pid": "P569",
+    "citations": [
+     "out_g2_1.jsonl:164",
+     "out_v3_0.jsonl:381"
+    ]
+   },
+   {
+    "text": "Sources disagree on P570 for Andrey Kolmogorov: '1987-10-20' (per Andrey Kolmogorov); 'October 20, 1987' (per Andrey Kolmogorov).",
+    "kind": "dispute",
+    "pid": "P570",
+    "citations": [
+     "out_g2_1.jsonl:165",
+     "out_v3_0.jsonl:382"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:166"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov worked as a probability theorist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_g2_1.jsonl:191"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov authored probability papers.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_1.jsonl:190"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for algorithmic information theory.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:174"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for axiomatization of probability.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:176"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for classical mechanics.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:172"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for conditional probability.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:187"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for Fourier series.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:194"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for functional analysis.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:173"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for independence of random variables.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:186"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for intuitionistic logic.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:170"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for Kolmogorov-Arnold representation theorem.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:177"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for Kolmogorov complexity.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:189"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for limit theorems.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:185"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for Markov chains.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:181"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for measure theory.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:188"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for metric geometry.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:196"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for modern mathematics.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:192"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for modern probability theory.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:168"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for normal distribution.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:184"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for probability theory.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:178"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for random variables.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:183"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for real analysis.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:195"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for stochastic processes.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:182"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for topology.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:169"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov is known for turbulence.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_1.jsonl:171"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov worked in computer science.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_1.jsonl:175"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov worked in dynamical systems.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_1.jsonl:179"
+    ]
+   },
+   {
+    "text": "Andrey Kolmogorov worked in perturbation theory.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_1.jsonl:180"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Gottfried Wilhelm Leibniz": {
+  "sentences": [
+   {
+    "text": "Gottfried Wilhelm Leibniz was born in Leipzig.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_5.jsonl:39"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz died in Hanover.",
+    "kind": "fact",
+    "pid": "P20",
+    "citations": [
+     "out_g2_5.jsonl:40"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz was a citizen of German.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_g2_5.jsonl:41"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz was born on 1 July 1646.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_5.jsonl:37"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz died on 14 November 1716.",
+    "kind": "fact",
+    "pid": "P570",
+    "citations": [
+     "out_g2_5.jsonl:38"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked as a diplomat.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_4.jsonl:79"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked as a mathematician.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_4.jsonl:76"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked as a philosopher.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_4.jsonl:77"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked as a scientist.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_4.jsonl:78"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked at Electorate of Mainz.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_5.jsonl:45"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked at Herzog August Library.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_5.jsonl:47"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked at House of Hanover.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_5.jsonl:46"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz was created by Leibniz wheel.",
+    "kind": "fact",
+    "pid": "P170",
+    "citations": [
+     "out_v3_4.jsonl:87"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz held the position of Imperial Court Councillor.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_5.jsonl:49"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz held the position of Privy Counselor of Justice.",
+    "kind": "fact",
+    "pid": "P39",
+    "citations": [
+     "out_g2_5.jsonl:48"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz was educated at University of Altdorf.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_5.jsonl:43"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz was educated at University of G\u00f6ttingen.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_5.jsonl:44"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz was educated at University of Jena.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_v3_4.jsonl:82"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz was educated at University of Leipzig.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_5.jsonl:42"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz is known for Acta Eruditorum.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:58"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz is known for De Arte Combinatoria.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:57"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz is known for Scriptores rerum Brunsvicensium.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:59"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz is known for Theodic\u00e9e.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_5.jsonl:60"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked in Hanover.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_5.jsonl:66"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked in London.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_5.jsonl:65"
+    ]
+   },
+   {
+    "text": "Gottfried Wilhelm Leibniz worked in Paris.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_5.jsonl:64"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Plato": {
+  "sentences": [
+   {
+    "text": "Plato was born in Athens.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_gb.jsonl:2"
+    ]
+   },
+   {
+    "text": "Plato died in Athens.",
+    "kind": "fact",
+    "pid": "P20",
+    "citations": [
+     "out_g2_gb.jsonl:3"
+    ]
+   },
+   {
+    "text": "Plato was a citizen of Athens.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_g2_gb.jsonl:5"
+    ]
+   },
+   {
+    "text": "Sources disagree on P569 for Plato: '428 BC' (per Plato); '428 BCE' (per Metaphysics); 'c. 428-423 BC' (per Plato).",
+    "kind": "dispute",
+    "pid": "P569",
+    "citations": [
+     "out_g2_gb.jsonl:0",
+     "out_v3_6.jsonl:215",
+     "out_v3_7.jsonl:261"
+    ]
+   },
+   {
+    "text": "Sources disagree on P570 for Plato: '348-347 BC' (per Plato); '348 BCE' (per Metaphysics).",
+    "kind": "dispute",
+    "pid": "P570",
+    "citations": [
+     "out_g2_gb.jsonl:1",
+     "out_v3_6.jsonl:216"
+    ]
+   },
+   {
+    "text": "Plato worked as a philosopher.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_7.jsonl:163"
+    ]
+   },
+   {
+    "text": "Plato worked at Dionysius II.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_v3_7.jsonl:275"
+    ]
+   },
+   {
+    "text": "Plato: P119 \u2014 Academy, Athens.",
+    "kind": "fact",
+    "pid": "P119",
+    "citations": [
+     "out_g2_gb.jsonl:4"
+    ]
+   },
+   {
+    "text": "Plato authored Cratylus.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:31"
+    ]
+   },
+   {
+    "text": "Plato authored Euthyphro.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:41"
+    ]
+   },
+   {
+    "text": "Plato authored Laws.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:44"
+    ]
+   },
+   {
+    "text": "Plato authored Lysis.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:33"
+    ]
+   },
+   {
+    "text": "Plato authored Menexenus.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:34"
+    ]
+   },
+   {
+    "text": "Plato authored Meno.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:45"
+    ]
+   },
+   {
+    "text": "Plato authored Parmenides.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:42"
+    ]
+   },
+   {
+    "text": "Plato authored Phaedo.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:39"
+    ]
+   },
+   {
+    "text": "Plato authored Philebus.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:43"
+    ]
+   },
+   {
+    "text": "Plato authored Protagoras.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:40"
+    ]
+   },
+   {
+    "text": "Plato authored Republic.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:38"
+    ]
+   },
+   {
+    "text": "Plato authored Sophist.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:37"
+    ]
+   },
+   {
+    "text": "Plato authored Statesman.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:36"
+    ]
+   },
+   {
+    "text": "Plato authored Theaetetus.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:32"
+    ]
+   },
+   {
+    "text": "Plato authored Timaeus.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:35"
+    ]
+   },
+   {
+    "text": "Plato was educated at Socrates.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_gb.jsonl:10"
+    ]
+   },
+   {
+    "text": "Plato worked in Megara.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_gb.jsonl:17"
+    ]
+   },
+   {
+    "text": "Plato worked in Sicily.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_v3_7.jsonl:274"
+    ]
+   },
+   {
+    "text": "Plato worked in Syracuse.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_gb.jsonl:24"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ },
+ "Ren\u00e9 Descartes": {
+  "sentences": [
+   {
+    "text": "Ren\u00e9 Descartes was born in La Haye en Touraine, France.",
+    "kind": "fact",
+    "pid": "P19",
+    "citations": [
+     "out_g2_gb.jsonl:133"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes died in Stockholm, Sweden.",
+    "kind": "fact",
+    "pid": "P20",
+    "citations": [
+     "out_g2_gb.jsonl:134"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes was married to Helena Jans van der Strom.",
+    "kind": "fact",
+    "pid": "P26",
+    "citations": [
+     "out_g2_gb.jsonl:167"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes was a citizen of France.",
+    "kind": "fact",
+    "pid": "P27",
+    "citations": [
+     "out_g2_gb.jsonl:135"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes was born on 31 March 1596.",
+    "kind": "fact",
+    "pid": "P569",
+    "citations": [
+     "out_g2_gb.jsonl:131"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes died on 11 February 1650.",
+    "kind": "fact",
+    "pid": "P570",
+    "citations": [
+     "out_g2_gb.jsonl:132"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes worked as a philosopher.",
+    "kind": "fact",
+    "pid": "P106",
+    "citations": [
+     "out_v3_8.jsonl:106"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes worked at Dutch States Army.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_gb.jsonl:146"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes worked at University of Franeker.",
+    "kind": "fact",
+    "pid": "P108",
+    "citations": [
+     "out_g2_gb.jsonl:161"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes: P119 \u2014 Abbey of Saint-Germain-des-Pr\u00e9s.",
+    "kind": "fact",
+    "pid": "P119",
+    "citations": [
+     "out_g2_gb.jsonl:138"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes: P119 \u2014 Adolf Fredrik Church, Stockholm.",
+    "kind": "fact",
+    "pid": "P119",
+    "citations": [
+     "out_g2_gb.jsonl:136"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes authored Compendium of Music.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:150"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes authored Dioptrics.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:174"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes authored Discourse on the Method.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:172"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes authored Geometry.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:175"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes authored Meditations on First Philosophy.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:177"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes authored Principles of Philosophy.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:178"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes authored Regulae ad Directionem Ingenii.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:159"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes authored The Meteors.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:173"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes authored The Passions of the Soul.",
+    "kind": "fact",
+    "pid": "P50",
+    "citations": [
+     "out_g2_gb.jsonl:188"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes lived in Egmond-Binnen.",
+    "kind": "fact",
+    "pid": "P551",
+    "citations": [
+     "out_g2_gb.jsonl:182"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes lived in Stockholm.",
+    "kind": "fact",
+    "pid": "P551",
+    "citations": [
+     "out_g2_gb.jsonl:195"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes was established in 1637.",
+    "kind": "fact",
+    "pid": "P571",
+    "citations": [
+     "out_v3_3.jsonl:114"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes was educated at Jesuit College of La Fl\u00e8che.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_gb.jsonl:142"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes was educated at Leiden University.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_gb.jsonl:163"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes was educated at University of Poitiers.",
+    "kind": "fact",
+    "pid": "P69",
+    "citations": [
+     "out_g2_gb.jsonl:144"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes is known for Discourse on the Method.",
+    "kind": "fact",
+    "pid": "P800",
+    "citations": [
+     "out_g2_0.jsonl:54"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes worked in Loreto.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_gb.jsonl:155"
+    ]
+   },
+   {
+    "text": "Ren\u00e9 Descartes worked in Swedish Empire.",
+    "kind": "fact",
+    "pid": "P937",
+    "citations": [
+     "out_g2_gb.jsonl:194"
+    ]
+   }
+  ],
+  "abstain": false,
+  "reason": ""
+ }
+}
