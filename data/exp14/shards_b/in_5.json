@@ -1,0 +1,494 @@
+[
+ {
+  "arxiv_id": "2607.21779v1",
+  "title": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+  "abstract": "Accurate ab initio molecular dynamics (AIMD) simulations of complex, fluxional chemical systems are severely limited by the high computational scaling of correlated electronic structure methods. To overcome this bottleneck, we present a robust, graph-theoretic molecular fragmentation framework integrated with machine learning to directly model post-Hartree-Fock nuclear forces at coupled cluster accuracy. Bypassing the limitations of automatic differentiation on learned energy surfaces that may struggle with link-atom Jacobians, our approach directly predicts nuclear force vectors. By projecting these vectors onto fragment-fixed principal axes of inertia, we establish co-variant descriptors that naturally preserve rotational, translational, and permutational invariance. The methodology achieves exceptional high parameter efficiency through a vector-valued training protocol that reduces trainable parameters by over an order of magnitude, while an unsupervised mini-batch k-means space tessellation algorithm constructs highly representative training databases using only 10% to 20% of reference configurations. We rigorously validated this framework on the highly fluxional solvated Zundel cation H_{13}O_6^+ ). Our fully machine-learning-predicted AIMD trajectories successfully reproduced complex dynamical signatures and key structural characteristics, including radial distribution functions and the velocity autocorrelation power spectrum. Ultimately, this scalable, systematically improvable framework bridges the gap between high-level correlated wavefunction theories and long-timescale reactive sampling, laying the foundation for advanced, LLM-inspired transfer learning in modern chemical dynamics simulations.",
+  "authors": [
+   "Xiao Zhu",
+   "Srinivasan S. Iyengar"
+  ],
+  "published": "2026-07-23T19:49:22Z",
+  "store_candidates": [
+   {
+    "eid": "e09888",
+    "name": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+    "source": "arxiv:2607.21779v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.848
+   },
+   {
+    "eid": "e09775",
+    "name": "A Polynomial Architecture-Attribution Co-Design Framework for Exact Aumann-Shapley Attribution in GNNs",
+    "source": "arxiv:2607.21094v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.584
+   },
+   {
+    "eid": "e05175",
+    "name": "graph theory",
+    "source": "Matrix (mathematics)",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e07205",
+    "name": "graph theory",
+    "source": "Graph theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e08085",
+    "name": "federated learning aggregation",
+    "source": "arxiv:2607.20890v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.577
+   },
+   {
+    "eid": "e09877",
+    "name": "Explainable quantum-compressed machine learning for complex fluid flows",
+    "source": "arxiv:2607.21688v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e08934",
+    "name": "convex optimization with graph structure",
+    "source": "arxiv:2607.22436v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.561
+   },
+   {
+    "eid": "e09734",
+    "name": "Information-Theoretically Secure Aggregation for Lightweight Federated Learning: Resilient to Dropouts and Adversaries",
+    "source": "arxiv:2607.20890v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e07044",
+    "name": "Graph theory",
+    "source": "Combinatorics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e03968",
+    "name": "artificial neural networks",
+    "source": "Cognitive science",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e08492",
+    "name": "segmentation model on NAIP",
+    "source": "arxiv:2607.21881v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e09965",
+    "name": "Latent PDE mapping for efficient physics-informed learning across geometries with limited data",
+    "source": "arxiv:2607.22215v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e08304",
+    "name": "document-level stability analysis",
+    "source": "arxiv:2607.21010v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.479
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22286v1",
+  "title": "An Insight on Evaluation Metrics Under the Imbalanced Case of Anomaly Detection",
+  "abstract": "Anomaly detection is inherently characterised by severe class imbalance, making the interpretation of evaluation metrics challenging. Although metrics such as AUROC, AUPR, F1-score, and MCC are widely used, their values convey different meanings depending on the anomaly ratio. In this work, we analyse the behaviour of those four common anomaly detection metrics under varying levels of imbalance. We focus on the study of metric landscapes, visualisations that relate metric values to true positive and true negative rates, providing an intuitive view of metric preferences and stability. Our analysis offers practical guidance for interpreting and comparing anomaly detection results across datasets with different imbalance ratios.",
+  "authors": [
+   "Romain Hermary",
+   "Nesryne Mejri",
+   "Djamila Aouada"
+  ],
+  "published": "2026-07-24T13:25:06Z",
+  "store_candidates": [
+   {
+    "eid": "e07519",
+    "name": "proof anomaly measurements",
+    "source": "arxiv:2606.28572v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.596
+   },
+   {
+    "eid": "e00989",
+    "name": "numerical or occasionally qualitative measurement",
+    "source": "Distance",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e09590",
+    "name": "malaria anomaly detection",
+    "source": "arxiv:2607.21559v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e05173",
+    "name": "numerical analysis",
+    "source": "Matrix (mathematics)",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e03577",
+    "name": "mathematical analysis",
+    "source": "Complex analysis",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e05549",
+    "name": "mathematical analysis",
+    "source": "Power series",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e00327",
+    "name": "Numerical analysis",
+    "source": "Numerical analysis",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e04752",
+    "name": "Nonstandard analysis",
+    "source": "Infinitesimal",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e09454",
+    "name": "multi-benchmark evaluation",
+    "source": "arxiv:2607.21461v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e00735",
+    "name": "Mathematical analysis",
+    "source": "Mathematical analysis",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e08155",
+    "name": "metric improvements",
+    "source": "arxiv:2607.20933v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e01425",
+    "name": "pattern recognition",
+    "source": "Intuition",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.546
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22305v1",
+  "title": "A Roadmap to Impactful Pluralistic Alignment Research",
+  "abstract": "Pluralistic value alignment---the goal of building AI systems that represent and serve diverse human values and perspectives---has emerged as an active research agenda. Yet, there's no public evidence that it has shaped the training or evaluation of the AI systems people actually use. We audit the public behavior documents and evaluations of frontier labs, finding none name pluralism as a goal, and as of this writing, no clear indication that production models are explicitly trained or tested for it. This goes against the primary motivations and goals of pluralistic alignment, which revolve around making a positive difference in the models serving billions of users worldwide. We argue that the pluralistic alignment research community should focus on supporting impact and adoption in deployed, widely-used AI systems. We provide evidence for the adoption problem, present three main reasons behind it, and discuss three corresponding areas for future research to address it: 1. The primary justifications for pluralistic alignment so far have been normative or speculative. We need studies showing empirically how pluralistic AI benefits users or society. 2. The pluralistic alignment research community has not settled when pluralistic behavior is warranted or what pluralism ideally looks like in practice. We need to establish a concrete goal for developers to operationalize. 3. Current methods trade off against other desiderata of LLMs in ways that are largely unmeasured, and existing metrics are not \"hill-climbable.\" We need trade-off-aware evaluations and methods that meet the requirements of production systems. This paper serves as a collective call to action for the pluralistic alignment researchers: progress requires moving beyond normative justification toward empirical foundations, a concrete account of ideal pluralistic behavior, and practical methods and evaluations built for adoption.",
+  "authors": [
+   "Elinor Poole-Dayan",
+   "Jillian Fisher",
+   "Atoosa Kasirzadeh",
+   "Jacob Andreas",
+   "Mitchell Gordon",
+   "Michiel A. Bakker"
+  ],
+  "published": "2026-07-24T13:46:03Z",
+  "store_candidates": [
+   {
+    "eid": "e09972",
+    "name": "A Roadmap to Impactful Pluralistic Alignment Research",
+    "source": "arxiv:2607.22305v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.661
+   },
+   {
+    "eid": "e09766",
+    "name": "QuantiBias: Benchmarking Quantization-Induced Bias in LLMs",
+    "source": "arxiv:2607.21063v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e08950",
+    "name": "interpretive reflective approach for understanding AI-supported learning",
+    "source": "arxiv:2607.22463v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e07737",
+    "name": "tolerant learning",
+    "source": "arxiv:2607.06694v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   },
+   {
+    "eid": "e08364",
+    "name": "preference agent alignment",
+    "source": "arxiv:2607.21757v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e07736",
+    "name": "tolerant learning framework",
+    "source": "arxiv:2607.06694v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e07738",
+    "name": "tolerant learning hierarchy",
+    "source": "arxiv:2607.06694v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e08463",
+    "name": "robotics policy learning",
+    "source": "arxiv:2607.21856v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e08847",
+    "name": "tutoring behavior alignment",
+    "source": "arxiv:2607.22345v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e09884",
+    "name": "Humanly: A Configurable and Traceable Environment for Human-AI Collaborative Writing",
+    "source": "arxiv:2607.21758v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e01427",
+    "name": "decision-making",
+    "source": "Intuition",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e07983",
+    "name": "framework suitable for results",
+    "source": "arxiv:2607.17512v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.545
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22392v1",
+  "title": "The Prompt Is Not the Query: How Request State Evolves Across Multi-Turn AI Conversations",
+  "abstract": "AI-search evaluation commonly treats a prompt as a stable query that can be counted, classified, and replayed in isolation. A conversation makes that unit of analysis questionable: each user turn can add a constraint, revise an assumption, request evidence, or refer to alternatives established earlier. We replace latent \"intent\" with an observable construct, conversation-conditioned request state, and measure how that state is distributed across user turns. The analysis reuses frozen rules and the governed cohort of a preceding conversation study: 670 English commercial multi-turn conversations in a discovery-replication design and 7,463 public PRISM conversations from 1,389 participants. In the commercial corpus, the final prompt contains a median 35.6% of the session's unique user-side content vocabulary; in PRISM, the median is 36.4%. The final prompt contains at most half of that vocabulary in 68.4% and 74.3% of conversations, respectively. More importantly, transparent rules detect at least one request-state dimension in history but not in the final prompt in 50.3% of commercial conversations and 44.8% of PRISM conversations. Among dimension-bearing conversations, the final prompt reproduces the full observed dimension set in only 26.1% and 26.2%. At the same time, the final prompt adds a previously unseen dimension in 17.9% and 19.3%, showing that the endpoint is neither a summary nor merely a reference: it is often another state update. Length-matched nulls show that low lexical coverage is largely a consequence of turn length, so vocabulary results are interpreted as information availability, not semantic drift. The categorical results support session-level measurement for AI search. They do not estimate the causal effect of history on model answers.",
+  "authors": [
+   "Benjamin Tannenbaum"
+  ],
+  "published": "2026-07-24T15:16:26Z",
+  "store_candidates": [
+   {
+    "eid": "e09985",
+    "name": "The Prompt Is Not the Query: How Request State Evolves Across Multi-Turn AI Conversations",
+    "source": "arxiv:2607.22392v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.768
+   },
+   {
+    "eid": "e09782",
+    "name": "One More Turn, Less Regret: A Regret-Based Multi-Turn Benchmark for LLMs' Clarification Policies",
+    "source": "arxiv:2607.21143v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e14128",
+    "name": "sentiment analysis",
+    "source": "hf:yiyanghkust/finbert-tone",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e14077",
+    "name": "sentiment analysis",
+    "source": "hf:tabularisai/multilingual-sentiment-analysis",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e08389",
+    "name": "AI-integrated inquiry",
+    "source": "arxiv:2607.21777v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e13709",
+    "name": "multilingual sentiment analysis",
+    "source": "hf:cardiffnlp/twitter-roberta-base-sentiment",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e13718",
+    "name": "multilingual sentiment analysis",
+    "source": "hf:cointegrated/rubert-base-cased-nli-threeway",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e05072",
+    "name": "artificial intelligence",
+    "source": "Massachusetts Institute of Technology",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.528
+   },
+   {
+    "eid": "e09558",
+    "name": "audio reasoning improvement",
+    "source": "arxiv:2607.21550v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.524
+   },
+   {
+    "eid": "e03968",
+    "name": "artificial neural networks",
+    "source": "Cognitive science",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.523
+   },
+   {
+    "eid": "e10010",
+    "name": "Solving math word problems with process- and outcome-based feedback",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.523
+   },
+   {
+    "eid": "e10011",
+    "name": "Training language models to follow instructions with human feedback",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.52
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22513v1",
+  "title": "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science",
+  "abstract": "Commercial large language models are increasingly used as knowledge references, yet their stance on contested scientific claims is neither stable nor transparent. We tested how four major LLM families (Claude, Grok, GPT, Gemini) evaluate ethnonationalist pseudo-science derived from Frank Salter's biosocial framework across four temporal snapshots (October 2025-February 2026), via both API and web interfaces. Grok's Fast versions (which power the default user experience on X) consistently assigned credibility scores of 70-75, two to five times higher than all other models (which scored 15-40). This pattern was absent from control prompts testing basic evolutionary consensus and refuted Lamarckian claims, where all models performed comparably. Three additional findings emerged: (1) a silent patch reversed Grok's behaviour from chaotic to stably high validation overnight, without any public documentation; (2) the same Grok model identifier produced radically divergent outputs via API (75) and web (5.5) three months later; (3) refusal to rate the pseudo-scientific claim, the most defensible response observed, appeared in two model families through different interfaces (Claude Opus 4.1 categorically via web, GPT-5.1 Chat intermittently via API) and eroded in the successor version of each. These results indicate that the epistemic stance of a commercial LLM is not a stable property of the model but a contingent effect of deployment configuration: system prompts, safety layers, interface routing, and silent updates. This remains opaque to users and researchers alike. We argue this constitutes a matter of public concern requiring new forms of epistemic accountability.",
+  "authors": [
+   "Davide Scarso",
+   "Hugo Noronha de Almeida",
+   "Joaquim Pina"
+  ],
+  "published": "2026-07-24T17:32:43Z",
+  "store_candidates": [
+   {
+    "eid": "e08302",
+    "name": "LLM-summarizer stability",
+    "source": "arxiv:2607.21010v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e09774",
+    "name": "Training Large Language Models for Self-Explanation Faithfulness",
+    "source": "arxiv:2607.21090v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e09813",
+    "name": "Scaling Up Formal Representation of Clinical Trial Protocols in Ensemble Logic Using LLMs: A Preliminary Study",
+    "source": "arxiv:2607.21307v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e08304",
+    "name": "document-level stability analysis",
+    "source": "arxiv:2607.21010v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e10034",
+    "name": "MemGPT: Towards LLMs as Operating Systems",
+    "source": "arxiv:2607.20972v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e09582",
+    "name": "LLM receptiveness",
+    "source": "arxiv:2607.21558v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e09722",
+    "name": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+    "source": "arxiv:2503.14476v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e08765",
+    "name": "LLM research analysis",
+    "source": "arxiv:2607.22182v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e08091",
+    "name": "Deep Research reliability",
+    "source": "arxiv:2607.20891v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.534
+   },
+   {
+    "eid": "e09939",
+    "name": "Small Vision-Language Models Know When They Are Wrong But Cannot Say So: A Two-Model Study of Stated versus Internal Confidence Under Realistic Image Degradation",
+    "source": "arxiv:2607.22034v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.533
+   },
+   {
+    "eid": "e08088",
+    "name": "communication and latency",
+    "source": "arxiv:2607.20890v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.533
+   },
+   {
+    "eid": "e09909",
+    "name": "When Is a Learned Command Adapter Worth It? Closed-Loop Identification and Counterfactual Auditing of Frozen Locomotion Policies",
+    "source": "arxiv:2607.21867v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.531
+   }
+  ]
+ }
+]

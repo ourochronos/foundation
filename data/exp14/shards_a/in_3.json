@@ -1,0 +1,244 @@
+[
+ {
+  "arxiv_id": "2607.21932v1",
+  "title": "Generalized Neural Operator for Parametric and Boundary-Value Problems",
+  "abstract": "Developing foundational neural simulators for Partial Differential Equations (PDEs) requires robust generalization across diverse physical parameters and boundary conditions. However, current deep learning approaches largely face a structural trade-off between condition-agnostic deployment and physical fidelity. Purely data-driven operators infer the underlying physics implicitly and thus lack the explicit constraints needed to ensure physically valid solutions across varying domains, rendering the learning problem ill-posed. On the other hand, Physics-Informed Neural Networks (PINNs) enforce rigorous physical constraints but necessitate costly, instance-specific optimization. Furthermore, the massive scale of emerging foundational operators has severely degraded their inference speeds, making them computationally uncompetitive with traditional numerical solvers. To address this bottleneck between condition-agnostic deployment, physical rigor, and inference efficiency, we propose a \\textit{Generalized Neural Operator}. By formalizing the classical conditions for well-posedness within neural operators, our framework demonstrates the theoretical benefits of explicitly conditioning on PDE parameters and boundary conditions. To implement this synthesis without compromising computational speed, we introduce three novel architectural components: a parameter-gated mixture of kernels for efficient parameter generalization, a generalized boundary transfer operator that projects arbitrary boundary constraints into a unified latent Dirichlet representation, and a specialized training objective to ensure stability. Extensive experiments demonstrate that our theoretically grounded approach achieves superior generalization across heterogeneous physical regimes while maintaining strict inference efficiency comparable to conventional numerical baselines.",
+  "authors": [
+   "Ruoyan Li",
+   "Yizhou Sun",
+   "Wei Wang"
+  ],
+  "published": "2026-07-24T03:10:32Z"
+ },
+ {
+  "arxiv_id": "2607.21958v1",
+  "title": "Efficient Online LLM Watermark Detection via Rao-Blackwellized E-Processes",
+  "abstract": "As large language models (LLMs) are increasingly deployed, reliable and efficient mechanisms for distinguishing AI-generated text from human-written content have become essential. Statistical watermarking has emerged as a promising solution, yet most existing methods are typically fixed-horizon procedures, precluding valid early stopping in streaming generation. In this paper, we develop an efficient online watermark detection framework with anytime-valid inference based on Rao-Blackwellized e-processes, enabling recursive token-level evidence updates without storing the full history. In particular, we instantiate the framework for the Gumbel-max watermark and reduce the original token-level dependence testing problem to a pivot-induced sequential testing problem with an explicit null distribution. Theoretically, we prove anytime-valid Type I error control under arbitrary optional stopping and establish positive asymptotic log-growth under watermarking, implying consistency of the proposed stopping rules. Simulations and experiments on real LLM-generated text demonstrate efficient online detection with rigorous anytime-valid guarantees.",
+  "authors": [
+   "Lu Luo",
+   "Dandan Mo",
+   "Chengdong Xu",
+   "Ting Li",
+   "Jinhan Xie",
+   "Huiqiong Li",
+   "Niansheng Tang"
+  ],
+  "published": "2026-07-24T04:10:36Z"
+ },
+ {
+  "arxiv_id": "2607.21961v1",
+  "title": "On Improving Faithfulness of Podcasts from Documents",
+  "abstract": "Large language models (LLMs) are increasingly used to generate long-form conversational content such as podcasts from textual sources. While these systems produce fluent and engaging narratives, they often introduce ungrounded information. In this work, we present the first systematic study of faithfulness in document-grounded podcast generation, where grounding must be maintained across conversational turns in long-form, multi-speaker transcripts. We construct a dataset of over 1500 documents spanning five domains and generate podcast transcripts using multiple LLMs. We introduce a turn-level LLM-as-a-judge framework for evaluating whether conversational turns are supported by the source document, and validate its reliability through human studies. Our analysis shows that even state-of-the-art models, including GPT-4o, frequently generate ungrounded content. To mitigate this issue, we propose catch-n-repair, a model-agnostic framework that detects and rewrites unfaithful conversational turns while preserving conversational flow. Experiments demonstrate consistent improvements in faithfulness across both in-domain and out-of-domain settings.",
+  "authors": [
+   "Soumya Dutta",
+   "Tejas Indulal Dhamecha",
+   "Pannaga Shivaswamy"
+  ],
+  "published": "2026-07-24T04:17:56Z"
+ },
+ {
+  "arxiv_id": "2607.21975v1",
+  "title": "On the Convergence of Stochastic Low-Rank Adaptation",
+  "abstract": "Low-rank adaptation (LoRA) optimizes $J(B,A)=\\mathcal L(W_\\mathrm{base}+sBA)$ over two adapters $B \\in \\mathbb{R}^{m \\times r}$ and $A \\in \\mathbb{R}^{r \\times n}$ that form a low-rank update to a frozen pretrained weight matrix $W_\\mathrm{base} \\in \\mathbb{R}^{m \\times n}$. The prior analysis shows LoRA-GD takes $\\exp\\{\\mathcal{O}(\u03b5^{-2})\\}$ oracle calls to find an $\u03b5$-stationary point such that $\\|\\nabla J(B,A)\\|\\leq \u03b5$ in the deterministic setting. We sharpen the analysis and show that $\\mathcal{O}(\u03b5^{-4})$ full-gradient evaluations suffice for the same first-order criterion. We further study stochastic LoRA under unbiased gradient estimates and finite variance. We propose LoRA-NSGDM, which finds an $\u03b5$-stationary point with $\\mathcal{O}(\u03b5^{-8})$ stochastic oracle complexity. Under the additional mean-square smoothness condition, we use variance reduction strategy and propose LoRA-STORM, which improves the stochastic oracle complexity to $\\mathcal{O}(\u03b5^{-6})$.",
+  "authors": [
+   "Ru Wang",
+   "Chengchang Liu",
+   "John C. S. Lui"
+  ],
+  "published": "2026-07-24T04:41:26Z"
+ },
+ {
+  "arxiv_id": "2607.21985v1",
+  "title": "Unified Static-Dynamic Pruning for Efficient LLM Inference",
+  "abstract": "The increasing deployment of large language models (LLMs) has magnified the computational and memory bottlenecks of autoregressive decoding, where low compute intensity and bandwidth-bound kernels dominate inference cost. Weight pruning offers a promising remedy, but existing methods remain confined to either static pruning (SP), which permanently removes redundant weights but lacks adaptivity, or dynamic pruning (DP), which adapts to input sparsity but introduces runtime irregularity. This paper presents SPDP, a unified sparse-inference framework that integrates unstructured SP with input-adaptive DP for efficient LLM inference on GPUs. SPDP co-designs a new Tiled-Column-wise Bitmap Compressed (Tiled-CBC) format and two complementary GPU kernels: (1) a CUDA-core spMspV kernel featuring Hybrid Activation-aware Dynamic Shared-Memory Bitmap Decoding (HAD-SMBD) for fine-grained, runtime activation skipping, and (2) a Tensor-Core SpMM kernel optimized for prefill computation. This joint format-kernel design harmonizes static and dynamic sparsity, maintaining bandwidth-efficient memory access and high compute intensity under both phases of LLM inference. Comprehensive evaluations on inference-optimized GPUs demonstrate that SPDP achieves 1.24x-1.37x average speedup (up to 2.51x) over state-of-the- art sparse frameworks such as SpInfer, while matching. perplexity with up to 25% higher sparsity. SPDP advances the inference efficiency-quality Pareto frontier, showing that unified static-dynamic pruning can deliver substantial throughput and performance-per-watt improvements in large-scale LLM serving",
+  "authors": [
+   "Jinhyeok Kim",
+   "Yejoon Lee",
+   "Jaeyoung Do"
+  ],
+  "published": "2026-07-24T05:19:41Z"
+ },
+ {
+  "arxiv_id": "2607.22014v1",
+  "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
+  "abstract": "Multimodal Large Language Models (MLLMs) are emerging as core reasoning modules for embodied agents, yet it remains unclear how well general-purpose models can solve long-horizon embodied tasks from a single high-level instruction. We introduce MissionBench, a benchmark for mission-level evaluation of MLLMs in aerial 3D environments. It comprises 120 missions across five simulated 3D environments and four task families. Agents must autonomously plan, navigate, and report outcomes using only egocentric observations and its action history, without aerial-specific fine-tuning. Across 22 open- and closed-source MLLMs, the strongest model succeeds on fewer than 35% of missions compared to 84.4% human performance, highlighting the difficulty of multi-step embodied tasks. Despite large variations between model families, we observe gains from scaling, indicating that larger general-purpose models possess stronger zero-shot embodied capabilities. Our analysis shows that mission-level competence requires coordinating multiple capabilities beyond spatial perception, including multi-step planning and adaptive reasoning. This motivates closed-loop evaluation and highlights both the promise and risk of scaling-driven improvements for embodied AI.",
+  "authors": [
+   "Suman Navaratnarajah",
+   "Taehyoung Kim",
+   "Jona Ruthardt",
+   "Ishaan Bhimwal",
+   "Ryousuke Yamada",
+   "Yannik Blei",
+   "Wolfram Burgard",
+   "Yuki M Asano"
+  ],
+  "published": "2026-07-24T06:22:50Z"
+ },
+ {
+  "arxiv_id": "2607.22068v1",
+  "title": "Rethinking Multi-Branch and Cross-Backbone Fusion for Vehicle Re-Identification in the Foundation-Model Era",
+  "abstract": "Multi-branch architectures and CNN-Transformer fusion have long been regarded as effective ways to improve vehicle re-identification (Re-ID) by combining complementary representations. In this work, we revisit this assumption in the foundation-model era through a comprehensive empirical study. A single DINOv3-pretrained ConvNeXt trained with a tuned recipe achieves 88.19 mAP on VeRi-Wild Small and 77.47 mAP on VeRi-Wild Large using visual cues alone, matching the strongest protocol-verified metadata-dependent multi-branch baseline. Applying training-free re-ranking further improves performance to 92.38 and 83.68 mAP, respectively. Using this strong baseline together with retrieval-level branch diagnostics, we evaluate whether increasing representational diversity still provides measurable gains. Across both benchmarks, concatenating multiple branches built on a shared backbone changes the best single-branch performance by less than one mAP point while increasing the embedding dimension by 4x, and the resulting representation has an effective rank close to the original feature dimension. We further study cross-backbone fusion using an asymmetric frozen-anchor strategy to combine ConvNeXt and Vision Transformer representations. Despite these favorable conditions, Transformer branches consistently remain 13-15 mAP below the ConvNeXt backbone, and paired per-query bootstrap analysis estimates the largest observed fusion gain to be only +0.11 mAP (95% confidence interval). Our results suggest that, under the evaluated setting, improving a single strong foundation-model backbone together with retrieval-stage re-ranking is more effective than increasing architectural complexity through additional branches or heterogeneous backbones. We restrict our conclusions to single-seed training and one family of foundation models and discuss conditions under which these observations may not hold.",
+  "authors": [
+   "Yu Wang",
+   "Hongyu Yang"
+  ],
+  "published": "2026-07-24T08:10:53Z"
+ },
+ {
+  "arxiv_id": "2607.22081v1",
+  "title": "A Leakage-Free Stacked Ensemble Method for Multiclass Classification",
+  "abstract": "Multiclass classification is a fundamental problem across a wide range of domains. It is still challenging due to possession of high inter-class similarity, class imbalance datasets, and variability in data distributions. Rule-based classifiers such as XGBoost often achieve stronger performance on structured features, but they are limited in capturing smooth functional relationships among variables. Similarly, neural network models can represent complex nonlinear interactions but frequently suffer from overfitting and generalization issues. To address these limitations, we propose LFS-FRAME, a Leakage-Free Stacked ensemble framework that integrates functional learning using Kolmogorov-Arnold Networks (KAN) and rule-based learning via XGBoost for robust multiclass classification. The proposed framework constructs unbiased meta-features by employing a strict out-of-fold stacking strategy to ensure complete isolation between training and validation data hence preventing performance leakage. By learning over probabilistic outputs from heterogeneous base learners, the meta-classifier effectively exploits both global functional patterns and sharp decision boundaries present in the complex data. Experimental evaluations on multi-class datasets demonstrate that LFS-FRAME improves performance metrics, and overall accuracy is 89.85% in identifying major families and 81.74% in identifying sub-families relative to strong single-model baselines. These results highlight the effectiveness of leakage-free functional and rule-based stacking for reliable and generalizable multiclass classification.",
+  "authors": [
+   "S. P. Sharmila",
+   "Aruna Tiwari"
+  ],
+  "published": "2026-07-24T08:26:40Z"
+ },
+ {
+  "arxiv_id": "2607.22086v1",
+  "title": "MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection",
+  "abstract": "Autoencoder-based anomalous sound detection is attractive for machine condition monitoring because it can be trained using only normal recordings and yields an interpretable anomaly score from reconstruction error. Most prior work uses spectrogram autoencoders, but reconstructing detailed time--frequency patterns is sensitive to noise and transients, and models can reconstruct some anomalous inputs well, weakening normal--anomaly separation. We propose MemNMF, a constrained reconstruction method that operates on the Linear Predictive Coding spectrum, a compact estimate of the spectral envelope. MemNMF initializes a memory module from an NMF dictionary learned on normal LPC spectra and reconstructs each input as an attention-weighted combination of prototypical normal spectral patterns. Experiments on MIMII and DCASE 2020 Task 2 across multiple machine types and operating conditions show that LPC-spectrum inputs improve a standard autoencoder baseline and that MemNMF yields further gains, with especially strong robustness under noisy, non-stationary settings.",
+  "authors": [
+   "Phurich Saengthong",
+   "Takahiro Shinozaki"
+  ],
+  "published": "2026-07-24T08:34:12Z"
+ },
+ {
+  "arxiv_id": "2607.22098v1",
+  "title": "Reasoning Denoiser: Denoising Reasoning Traces for Hallucination Detection in Large Reasoning Models",
+  "abstract": "Large reasoning models (LRMs) generate long reasoning traces before producing final answers. While these traces may contain useful signals for hallucination detection, harnessing them is non-trivial because long trajectories often include noisy steps that obscure the cues relevant to truthfulness assessment. In this paper, we identify two prevalent forms of reasoning noises, i.e., irrelevant steps and repetitive steps, and show that both substantially degrade hallucination detection performance. Existing confidence-based scores and naive embedding-based filtering fail to reliably separate noisy from informative steps. To address this challenge, we propose REDE, a novel learning framework for denoising reasoning traces for hallucination detection. Specifically, REDE leverages final-answer attention as an automatic supervision signal to shape the step-level representation space, yielding refined embeddings in which noisy steps can be reliably identified and filtered. REDE can be readily plugged into diverse hallucination detectors by operating on the filtered reasoning trajectory after removing noisy steps. Extensive experiments on multiple reasoning benchmarks show that REDE consistently improves detection performance over competitive baselines.",
+  "authors": [
+   "Junlin Fang",
+   "Do Nguyen-Thanh",
+   "Xiaogang Xu",
+   "Zhen Fang",
+   "Sean Du"
+  ],
+  "published": "2026-07-24T08:48:17Z"
+ },
+ {
+  "arxiv_id": "2607.22115v1",
+  "title": "Benchmarking Text-to-SQL under Role-Based Access Control",
+  "abstract": "Given a database S and a natural language question Q, text-to-SQL systems aim to generate an SQL query that correctly answers Q when executed against S. Currently, popular text-to-SQL benchmarks mostly assume unrestricted access to S; in practice, however, user access is often restricted, e.g., through role-based access control (RBAC) policies. This leads to a potential disconnect between benchmarking results and real-world performance: an LLM with high benchmark scores might perform poorly in an access-controlled environment, by frequently violating RBAC, or rejecting a query q that could be answered with only permitted data in S. Motivated by this, we present a comprehensive text-to-SQL benchmarking framework with realistic RBAC constraints, which features an LLM-assisted workflow that augments existing text-to-SQL benchmarks with plausible user roles and access policies. To do so, we formulate the problem of role synthesis as a structured reasoning process over the database schema, in which the LLM first infers the application context from the schema, and then derives role responsibilities and access scopes consistent with this context. This process is audited by human-in-the-loop quality control, in which domain experts perform metric-guided screening on the generated roles. Besides the augmented dataset, the proposed framework also contains evaluation metrics that identify RBAC-specific failure modes, and disentangle SQL utility from access-control compliance. We apply the proposed framework to several widely-used benchmarks, and conduct a systematic empirical study of state-of-the-art text-to-SQL systems. The results show that many solutions (especially open-weight LLMs) with high benchmarking scores under an unrestricted setting suffer sharp performance degradation once access constraints are in place, due to frequent RBAC violations.",
+  "authors": [
+   "Yang Fei",
+   "Yangfan Jiang",
+   "Yin Yang",
+   "Xiaokui Xiao"
+  ],
+  "published": "2026-07-24T09:10:58Z"
+ },
+ {
+  "arxiv_id": "2607.22153v1",
+  "title": "Industrial Tokenization for LLM-Based Health Intelligence: A Federated Architecture for Industrial Evidence Integration",
+  "abstract": "Industrial health management increasingly relies on heterogeneous information sources, including condition monitoring systems, supervisory control and data acquisition systems, maintenance records, inspection results, and prognostic models. Although large language models provide new opportunities for cross-source reasoning, industrial data and analytical outputs differ substantially in structure, temporal resolution, physical meaning, and reliability. Directly integrating such heterogeneous information into a monolithic model may reduce interpretability, traceability, and adaptability to equipment and data changes. This paper introduces Industrial Tokenization, a conceptual interface for transforming source-specific analytical outputs into structured and machine-interpretable units of industrial evidence, termed Industrial Tokens. Unlike numerical tokens used to encode raw time-series data, Industrial Tokens represent domain-grounded evidence together with source, temporal scope, operating context, analytical meaning, quality or confidence information, and provenance. Based on this concept, a federated industrial architecture is proposed, where heterogeneous analytical subsystems retain autonomy while exposing standardized Industrial Tokens to a central reasoning layer. As an initial implementation, this study presents an end-to-end DiagnosisToken pathway based on vibration-diagnostic outputs, rule-based event aggregation, structured textual token generation, and LLM-based interpretation. Other Industrial Tokens, including SCADA-based condition-monitoring tokens, maintenance tokens, and prognostic tokens, are reserved as future extensions. The proposed framework positions Industrial Tokenization as a semantic interface between domain-specific industrial intelligence and LLM- or agent-based reasoning, rather than another method for encoding raw industrial data.",
+  "authors": [
+   "Deshui Li",
+   "Xiao-Ming Yuan",
+   "Zishun Wang"
+  ],
+  "published": "2026-07-24T09:56:48Z"
+ },
+ {
+  "arxiv_id": "2607.22173v1",
+  "title": "Bowel Obstruction Detection and Localization on Abdominal CT with Deep Learning",
+  "abstract": "Bowel obstruction is a common and potentially life-threatening gastrointestinal condition. In the face of rising diagnostic workloads, the automated diagnosis of bowel obstruction on CT scans supports radiologists by accelerating detection and improving patient outcomes. In this work, we propose a deep learning framework with a multi-task objective that jointly detects bowel obstruction and localizes its transition zone. Additionally, we extend the method with an inherently interpretable classification method that locates the suspected transition point within a slice. It does so by learning a probabilistic selection mask that faithfully bases the classifier's prediction solely on a small image region. The proposed method is evaluated on an internal dataset comprising 1,427 abdominal CTs. Here, the model achieves an obstruction detection test accuracy of 93% and a Hit@10 transition zone localization of 95%. As the first method to reliably localize the transition zone, this marks a significant step towards the automated identification of this critical clinical landmark.",
+  "authors": [
+   "Moritz Vandenhirtz",
+   "Andrea Agostini",
+   "Dana Belde",
+   "M\u00e9lanie Roschewitz",
+   "Ismaiel Chikh Bakri",
+   "Tilo Niemann",
+   "Andr\u00e9 Euler",
+   "Julia E Vogt"
+  ],
+  "published": "2026-07-24T10:23:12Z"
+ },
+ {
+  "arxiv_id": "2607.22201v1",
+  "title": "Trajectory-Regularized Stochastic Optimal Control via KL Divergence",
+  "abstract": "We introduce trajectory-regularized stochastic optimal control (TRSOC), which augments standard stochastic optimal control (SOC) with a Kullback--Leibler (KL) divergence between controlled and reference trajectory distributions. Using Girsanov's theorem, the trajectory KL reduces to a quadratic drift mismatch penalty, yielding a modified running cost that preserves the dynamic programming (DP) structure. We derive the corresponding Hamilton--Jacobi--Bellman (HJB) equation and characterize the optimal policy. In the linear-quadratic (LQ) setting, the formulation admits a closed-form solution with an augmented control cost. Experiments show that the regularization parameter induces a trade-off between performance-driven and reference-preserving behavior, including cases with reference dynamics learned from offline data.",
+  "authors": [
+   "Mintae Kim",
+   "Koushil Sreenath"
+  ],
+  "published": "2026-07-24T11:15:27Z"
+ },
+ {
+  "arxiv_id": "2607.22218v1",
+  "title": "Why Large Language Models and Humans Converge and Diverge in Evaluating Creativity",
+  "abstract": "Despite the growing use of large language models (LLMs) as creativity evaluators, evidence of their alignment with human evaluations remains mixed, raising the question of when and why their judgments converge with or diverge from human judgments. Across three studies and six widely used LLMs, we addressed this gap by identifying the standards underlying LLM creativity evaluation and examining their downstream implications. Study 1 showed that LLMs generally relied on a narrower subset of human creativity evaluation standards. Convergence with human standards was strongest in the novelty dimension, whereas divergence was clearest in the contextual dimension, which captures social, market, and reputational information. Moreover, each LLM exhibited distinct, model-specific standards that varied substantially in breadth. These differences in evaluation standards were reflected in actual creativity judgments. Study 2 (N = 1,103 ideas) showed that LLM evaluations were moderately correlated with human evaluations, and individual LLMs with broader standards better distinguished ideas humans judged as more versus less creative. Study 3 (N = 1,195) showed that LLMs were less sensitive to contextual information: such information significantly altered human creativity ratings but left LLM ratings largely unchanged. Together, our findings help explain the mixed evidence on LLM-human alignment, showing that alignment depends on the evidence a judgment demands and the standards each model applies. LLMs may resemble humans when evaluations emphasize intrinsic qualities such as novelty, yet diverge when judgments require contextual information. Selecting an LLM evaluator is therefore a consequential decision: different models, applying different standards, recognize different ideas as creative.",
+  "authors": [
+   "Pengzhao Lyu",
+   "Yeun Joon Kim",
+   "Hanlin Xiao",
+   "Yingyue Luna Luan"
+  ],
+  "published": "2026-07-24T11:37:19Z"
+ },
+ {
+  "arxiv_id": "2607.22221v1",
+  "title": "Convergence analysis of a family of Zermelo-type iterations for the Bradley--Terry model",
+  "abstract": "Zermelo's algorithm is a classical method for computing the maximum likelihood estimator in the Bradley--Terry (BT) model, but its convergence can be slow in practice. To accelerate computation, Newman introduced a family of Zermelo-type fixed-point iterations parameterized by $\u03b1$, with Zermelo's algorithm recovered at $\u03b1=1$. Empirical evidence suggests that the choice $\u03b1=0$ often converges substantially faster, making it a promising alternative, yet the mechanism underlying this acceleration remains elusive. This paper provides theoretical insight into this phenomenon through a systematic local convergence analysis. We derive closed-form expressions for local convergence factors under synchronous and asynchronous updates and analyze their dependence on $\u03b1$ via spectral analysis of the associated Jacobian matrices. For synchronous updates, we show that the algorithm may fail to converge when $\u03b1&lt;1$, and its local convergence factor is quasi-convex in $\u03b1$ under the population BT model. In contrast, asynchronous updates are always locally convergent, and their local convergence factor is provably monotonically increasing in $\u03b1$ under the population BT model of consistently ordered bipartite comparison graphs, establishing the optimality of $\u03b1=0$ in this setting. We further establish asymptotic approximation results for the population convergence factors under the BT model, justifying their practical relevance. Numerical experiments on synthetic and real-world datasets confirm the theory. Our analysis complements existing convergence results and shows that the acceleration of $\u03b1=0$ arises not only from the parameter choice but, more importantly, from the use of asynchronous updates.",
+  "authors": [
+   "Ruijian Han",
+   "Ding Lu",
+   "Yiming Xu"
+  ],
+  "published": "2026-07-24T11:39:24Z"
+ },
+ {
+  "arxiv_id": "2607.22238v1",
+  "title": "Optimization of time-consuming experimental conditions using pseudo-experimental data guided by adaptive polynomial regression",
+  "abstract": "Bayesian optimization (BO) is an optimization method that sequentially proposes the next candidate explainable variables for optimizing target variables by balancing exploration and exploitation. BO is often used under a limited evaluation budget, such as hyperparameter tuning of deep learning. Despite its effectiveness, conventional BO may have poor convergence in practical experimental science where each evaluation is often costly and time-consuming. Recently, BO methods have been proposed that accelerate optimization by using pseudo-experimental data that simulate experimental data. However, when only a limited number of experimental data are available, the generated pseudo-experimental data may be of insufficient quality. In this study, we developed PolyBO to improve optimization time by generating high-quality pseudo-experimental data even when the number of trials is limited. PolyBO performs BO efficiently by generating pseudo-experimental data with an adaptively updated versatile parametric model. This low-capacity polynomial regression model is intended to enable efficient BO even with limited experimental data. PolyBO updates the BO surrogate model with a combined dataset consisting of experimental data and pseudo-experimental data and then performs optimization. Using synthetic benchmark functions with diverse landscapes, we found that PolyBO reduced the optimization time by a median of 42\\%. For a real-world material composition optimization problem, PolyBO reduced the optimization time by a median of 96\\% compared with conventional methods. Overall, PolyBO achieves efficient optimization in settings where each experiment requires a long time.",
+  "authors": [
+   "Hirotaka Sugawara",
+   "Yujin Taguchi",
+   "Kei Minagawa",
+   "Yusuke Hiki",
+   "Takashi Morikura",
+   "Akira Funahashi"
+  ],
+  "published": "2026-07-24T12:16:53Z"
+ },
+ {
+  "arxiv_id": "2607.22251v1",
+  "title": "IFCLoRA: Topology-Aware Rank Allocation for Parameter-Efficient Fine-Tuning",
+  "abstract": "Low-Rank Adaptation (LoRA) is a widely used parameter-efficient fine-tuning method for large language models, but its performance depends strongly on how a fixed rank budget is distributed across Transformer modules. Existing adaptive-rank methods usually rely on local gradient statistics collected during training, which introduces extra memory and computation and overlooks task-conditioned global information flow. We propose IFCLoRA, a topology-aware rank allocation method applied before fine-tuning. Using a small calibration set and a frozen pretrained model, IFCLoRA builds a sparse task-conditioned interaction graph whose nodes represent LoRA-compatible modules. It combines a global information-flow topology prior with local gradient sensitivity to compute Information-Flow Centrality scores, which estimate each module's adaptation importance under multi-hop propagation. Ranks are then assigned once under a global budget. Across multiple models, tasks, and low-rank settings, IFCLoRA consistently outperforms LoRA, AdaLoRA, and EVA under matched training configurations and total rank budgets, while retaining training costs comparable to standard LoRA. On mathematical reasoning with LLaMA 3 8B, IFCLoRA improves over LoRA by 1.36 percent at rank 4 and 1.82 percent at rank 8. Further analysis shows task-dependent, non-uniform rank profiles, indicating that global information-flow structure provides an informative and interpretable prior for low-budget parameter-efficient fine-tuning.",
+  "authors": [
+   "Wei Zhang",
+   "Xinwu Liu",
+   "Yihang Cheng"
+  ],
+  "published": "2026-07-24T12:34:46Z"
+ },
+ {
+  "arxiv_id": "2607.22258v1",
+  "title": "Class-Balanced Softmax: A Bayes Theory-Based Method for Long-Tailed Recognition",
+  "abstract": "Deep learning models using traditional softmax classifiers have achieved remarkable success in various classification tasks. However, their performance degrades significantly on imbalanced datasets. Although Balanced Softmax is widely adopted as a state-of-the-art rebalancing method, it possesses inherent limitations, such as yielding disproportionately lower testing accuracy for tail classes. To mitigate these shortcomings, we propose the Class-Balanced Softmax (CBS). Rooted in a theoretical Bayesian framework and a heuristic power-law assumption, the CBS is a simple logit adjustment that is computationally inexpensive and easily integrated into existing pipelines. Furthermore, we characterise a fundamental phenomenon in models trained on imbalanced data, termed the preference issue, wherein models exhibit higher training error and a larger generalisation gap for classes with limited data. To quantify this issue, we introduce a novel metric and demonstrate that CBS effectively mitigates the preference issue. Extensive experiments on large-scale benchmarks show that CBS is highly scalable and outperforms existing methods, including Balanced Softmax.",
+  "authors": [
+   "Yi-Hang Zhu",
+   "Rajeev Raman",
+   "Shiqi Su",
+   "Jianyuan Sun",
+   "Xinyu Yang",
+   "Nan Xing",
+   "Huiyu Zhou"
+  ],
+  "published": "2026-07-24T12:46:03Z"
+ },
+ {
+  "arxiv_id": "2607.22268v1",
+  "title": "General Value Functions for Remaining Useful Life and Failure-Mode Prediction",
+  "abstract": "Remaining useful life (RUL) prediction and failure-mode classification are central tasks in predictive maintenance. Many data-driven pipelines use fixed-window supervised learning with complete terminal labels; such routes do not naturally encode the temporal recursion linking successive degradation-state predictions when observations are partial or unit identities are unavailable. We formulate prognostics as vector General Value Function (GVF) prediction on an absorbing degradation process, treating RUL and failure-mode probabilities as temporally consistent targets rather than independent window-level labels, and estimate them with a multi-step temporal-difference estimator, TD($n,\u03bb$). Supporting theory identifies the Bellman fixed point of the vector GVFs, characterizes the linear projected-TD limit and its relation to complete-return Monte Carlo regression under realizability, and explains when bootstrapped TD targets are less variable than Monte Carlo returns. On an event-triggered multimode simulation and NASA C-MAPSS label-scarce stitch data, TD improves RUL and failure-mode prediction relative to a supervised same-backbone Monte Carlo control, especially under scarce complete labels. Practically, fragmented, identity-free degradation records can contribute local Bellman transitions instead of being discarded until complete run-to-failure labels are available.",
+  "authors": [
+   "Hao Yan",
+   "Ali Sarabi",
+   "Qing Zou",
+   "Boyang Xu"
+  ],
+  "published": "2026-07-24T13:04:32Z"
+ }
+]

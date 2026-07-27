@@ -2,6 +2,35 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-27 — D94: Arm A PASSES (identity belongs at the SOURCE) · Arm B declines 148/148 — and the reason is that the linkable population is not in subject position
+Run of the D93/docs-14 protocol, criteria unchanged from pre-registration. 100 held-out papers, store rebuilt without their own `P_ASSERTS` claims (0 leaked, verified).
+
+**ARM A PASSES ALL THREE CRITERIA — source-local consolidation is a large, free win.**
+
+| | arm 0 (D92 process) | **arm A** | criterion |
+|---|---|---|---|
+| subjects per claim | 0.912 | **0.373** | ≤0.60 ✓ |
+| singleton-subject rate | 0.935 | **0.114** | — |
+| subjects per paper | 2.48 | **1.14** | — |
+| claims per paper | 2.72 | **3.06** | no recall loss ✓ |
+| statement precision | 0.82 [0.69–0.90] | **0.88 [0.76–0.94]** | CIs overlap ✓ |
+
+Entity structure collapsed from "every claim invents a subject" to "a paper has roughly one entity that its claims share" — **from one instruction, with no store, no retrieval, and no architectural change**, and precision moved *up* rather than down (nominally; the CIs overlap, so the honest claim is no regression). All 6 defects fall inside families D92 already named (dropped-qualifier ×4, added-scope, strength-escalation), so no new family ✓. Comparison caveat recorded in the labels file: arm 0 is the same extraction PROCESS audited over the full slice, not a paired sample of these 100 papers.
+
+**ARM B FAILS its headline criterion at 0.000 — it linked NOTHING. 148 entities, 148 declines.** Every safety criterion passed (zero Wikipedia merges, all 10 planted decoys declined, zero invented eids) but **those passes are unearned**: nothing was linked, so nothing was risked.
+
+**Why, and this is the finding.** The held-out papers' subjects are their own newly-introduced methods, which by construction have no store entry — declining was largely CORRECT. The entities papers genuinely share sit one layer down, and are systematically **not in subject position**: across arm A's output, ALFWorld, WebShop, PPO, Qwen, DeepSeek, Llama, Atari, MIMII, VeRi-Wild and CEFR appear **0 times as a subject and 21 times inside statements** (LoRA/GRPO/QLoRA are subjects only when the paper's own contribution is about them; 21 subject occurrences vs 44 statement mentions overall). **The experiment offered candidates for a population that mostly should not match, and never asked about the population that would.** Cross-paper identity in this corpus lives in the benchmark / base-model / dataset layer, which the claim model currently carries as object text — the topic-axis gap flagged at D83 and re-flagged in docs/13, now located precisely.
+
+**Two honest defects in my own instrument, registered rather than patched away.**
+1. **The `decline_rate > 0` criterion is one-sided.** It was written to catch an extractor that links everything and calls the gate decorative; it does not catch an extractor that links nothing, which passes it at 1.000 while making every other B criterion vacuous. It should have been `0 < decline_rate < 1`. Fixed in docs/14 for any re-run.
+2. **The Arm B prompt is a confound.** Its decline language is strong and trap-heavy ("when in doubt, decline"; "entirely normal and correct to link ZERO"). **Arm B therefore measured my prompt's caution, not the model's ability to link** — it does NOT establish that store-aware linking is unworkable, only that this specification yields nothing. A balanced-language arm is needed before any conclusion about linking capability.
+
+**Secondary finding**: handing the extractor a candidate list made consolidation slightly WORSE — subjects/claim 0.407 vs A's 0.373, singleton rate 0.331 vs 0.114 — while none of the candidates were used. Extra context traded against adherence to the naming rule.
+
+**Predictions scored**: (1) "Arm A captures most of the gain" — **CONFIRMED**, and stronger than predicted: it captured all of it. (2) "B's failures will be related-work links" and (3) "cross-domain bleed will be non-zero" — **UNSCORABLE, vacuously**; with zero links there were no failures to characterise. Recording them as unscored rather than as passes.
+
+**Adoption** (the pre-registered "A passes, B fails" branch): **ship Arm A's naming rule into the extraction prompt for all future ingest**; identity proposal belongs at the source. Store-aware linking is NOT refuted — it is untested, and the right test targets shared resources (benchmarks, base models, datasets) as first-class entities rather than paper methods. That is the next lever, and it is the same one docs/13 named for P2.
+
 ## 2026-07-27 — D93: Extraction-time identity PRE-REGISTERED (docs/14) — and D92's fragmentation finding was understated: it is CLAIM-level, 95%
 **Provocation** (user): treat identity as something the extracting model resolves against the store while reading a source, rather than as a downstream pre-processor — while keeping deterministic source-specific preprocessing where the source structures its own content.
 

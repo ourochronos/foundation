@@ -1,0 +1,1968 @@
+[
+ {
+  "arxiv_id": "2607.21291v1",
+  "title": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+  "abstract": "Large language models (LLMs) achieve strong generation and reasoning performance, but the Transformer architecture incurs high inference cost. Existing acceleration methods often rely on task-specific fine-tuning or training from scratch, increasing adaptation cost and limiting cross-task usability. We present an Adaptive Depth Sparse Framework (AdaDSF) that converts off-the-shelf pre-trained LLMs into depth-sparse models without full retraining. Our key insight is that layers contribute unequally to representation transformation, characterized by the cosine similarity between layer input and output hidden states. Based on this, AdaDSF assigns layer-wise token retention ratios from similarity statistics, uses a lightweight router to select informative tokens at each layer, and introduces a feature-preserving alignment objective to match intermediate and final representations between sparse and dense models. On GPT-NeoX and Qwen2.5 over language modeling and commonsense reasoning, AdaDSF substantially reduces inference FLOPs while preserving performance close to dense counterparts. Under comparable sparsity, AdaDSF consistently yields smaller accuracy degradation than strong baselines including MoD, D-LLM, and DLO.",
+  "authors": [
+   "Yidu Wu",
+   "Xiang Wang",
+   "Kejie Zhao",
+   "Zhangchi Wang",
+   "Qinghai Guo",
+   "Xiaoying Tang"
+  ],
+  "published": "2026-07-23T13:13:04Z",
+  "store_candidates": [
+   {
+    "eid": "e09811",
+    "name": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+    "source": "arxiv:2607.21291v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.767
+   },
+   {
+    "eid": "e08153",
+    "name": "Transformer-Assisted LLM",
+    "source": "arxiv:2607.20933v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.614
+   },
+   {
+    "eid": "e09938",
+    "name": "DWT-Fusion: A Signal-Based Framework for Training-Free LLM-Generated Text Detection",
+    "source": "arxiv:2607.22026v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e09722",
+    "name": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+    "source": "arxiv:2503.14476v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.577
+   },
+   {
+    "eid": "e09882",
+    "name": "Parameter-free Adaptive Sparse Attention via Compression-Based Content Selection",
+    "source": "arxiv:2607.21752v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e09916",
+    "name": "RIS-Kernel: A Model-Agnostic Architecture for Long-Context LLM Inference via Sparse Attention",
+    "source": "arxiv:2607.21927v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e09517",
+    "name": "discrete diffusion language model",
+    "source": "arxiv:2607.21519v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e09612",
+    "name": "open-source LLM fine-tuning",
+    "source": "arxiv:2607.21570v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e10008",
+    "name": "Generating Long Sequences with Sparse Transformers",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   },
+   {
+    "eid": "e08253",
+    "name": "predicts latents, reconstructs frames",
+    "source": "arxiv:2607.20988v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.561
+   },
+   {
+    "eid": "e08345",
+    "name": "attention latency reduction",
+    "source": "arxiv:2607.21731v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e10007",
+    "name": "LLaMA: Open and Efficient Foundation Language Models",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.553
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21324v1",
+  "title": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
+  "abstract": "Retrieval-Augmented Generation (RAG) systems increasingly employ multiple LLM agents. Yet, most prior work optimizes components in isolation rather than coordinating improvements across the pipeline. We introduce GRADRAG, a framework for cross-component prompt adaptation that models the RAG pipeline as a computational graph and propagates structured evaluation feedback to update upstream agents. An Evaluator critiques downstream answers and supporting evidence, producing actionable feedback that a Prompt Optimizer uses to iteratively update adaptive agents, such as retrievers, graph constructors, and answerers. The Evaluator also triggers early stopping when the output is deemed satisfactory. We evaluate GRADRAG on the SQUALITY and QMSUM benchmarks under two retrieval paradigms: flat chunk-based retrieval using IRCoT-style query refinement (Trivedi et al., 2023), and graph-based retrieval that constructs and iteratively enriches an entity-relation graph from the document. Across both settings, GRADRAG consistently outperforms one-step refinement baselines that update only the final generator, achieving a 12-15 percentage point net preference margin in LLM-judged pairwise comparisons, with most gains realized within two refinement iterations.",
+  "authors": [
+   "Paolo Pedinotti",
+   "Enrico Santus"
+  ],
+  "published": "2026-07-23T13:54:38Z",
+  "store_candidates": [
+   {
+    "eid": "e09814",
+    "name": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
+    "source": "arxiv:2607.21324v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.761
+   },
+   {
+    "eid": "e09974",
+    "name": "Towards Trustworthy and Cost-Efficient Data Integration: From Na\u00efve RAG to Agentic RAG",
+    "source": "arxiv:2607.22319v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e09764",
+    "name": "Bridging the Structural Gap: Adapting Autoregressive Generation for Recommendation",
+    "source": "arxiv:2607.21028v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.569
+   },
+   {
+    "eid": "e09726",
+    "name": "RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning",
+    "source": "arxiv:2504.20073v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e09412",
+    "name": "reasoning agent refinement",
+    "source": "arxiv:2607.21437v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e09041",
+    "name": "classification performance improvement",
+    "source": "arxiv:2607.21068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e01358",
+    "name": "optimization tool",
+    "source": "Heuristic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e09250",
+    "name": "hybrid retrieval",
+    "source": "arxiv:2607.21274v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e09589",
+    "name": "judgment-updating process model",
+    "source": "arxiv:2607.21558v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e09973",
+    "name": "Evolution-Aware MSA Reasoning for Subsampling via Factor Graphs",
+    "source": "arxiv:2607.22314v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.556
+   },
+   {
+    "eid": "e08253",
+    "name": "predicts latents, reconstructs frames",
+    "source": "arxiv:2607.20988v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e09051",
+    "name": "adaptive splines for GAMs",
+    "source": "arxiv:2607.21083v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.552
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21332v1",
+  "title": "Phonetic forced alignment for low-resource language varieties: Model training and evaluation on Chengdu Mandarin",
+  "abstract": "Phonetic forced alignment is a key technique in phonetic research, yet existing alignment systems lack specialized models for low-resource language varieties. We address this by training text-dependent and text-independent aligners for Chengdu Mandarin using a 17-hour corpus and a custom G2P dictionary. We trained a text-dependent GMM-HMM model (Chengdu-MFA) and fine-tuned a pretrained audio encoder on frame classification with Chengdu-MFA's pseudo label for text-independent alignment (Chengdu-FC). Evaluation on an expert-annotated test set show that both methods significantly outperform Standard Mandarin baselines. Chengdu-MFA reduced average phone boundary differences by 31.8%, while Chengdu-FC achieved a 61.2% reduction. This work establishes a practical bootstrapping pipeline for developing accurate aligners for under-resourced varieties without labor- and time-intensive manual annotation.",
+  "authors": [
+   "Zhiheng Qian",
+   "Aini Li",
+   "Hai Hu",
+   "Liang Zhao"
+  ],
+  "published": "2026-07-23T14:00:09Z",
+  "store_candidates": [
+   {
+    "eid": "e08874",
+    "name": "low-resource machine translation",
+    "source": "arxiv:2607.22376v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e09981",
+    "name": "A Factorial Study of Synthetic Data Generation for Low-Resource Machine Translation using Grammar Books",
+    "source": "arxiv:2607.22376v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e09542",
+    "name": "multilingual model performance",
+    "source": "arxiv:2607.21540v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e04912",
+    "name": "Phonetics",
+    "source": "Linguistics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.542
+   },
+   {
+    "eid": "e09824",
+    "name": "Word meaning co-determines vowel-inherent spectral change. A corpus-based investigation of conversational Mandarin",
+    "source": "arxiv:2607.21391v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.542
+   },
+   {
+    "eid": "e10007",
+    "name": "LLaMA: Open and Efficient Foundation Language Models",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e09248",
+    "name": "multilingual embeddings",
+    "source": "arxiv:2607.21274v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e09621",
+    "name": "quality control framework",
+    "source": "arxiv:2607.21577v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.437
+   },
+   {
+    "eid": "e08700",
+    "name": "competitive on multilingual benchmarks",
+    "source": "arxiv:2607.22042v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.539
+   },
+   {
+    "eid": "e02423",
+    "name": "linguistic study",
+    "source": "Syntax",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.533
+   },
+   {
+    "eid": "e13578",
+    "name": "supports English and Chinese languages",
+    "source": "hf:Qwen/Qwen2.5-Math-PRM-7B",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.532
+   },
+   {
+    "eid": "e10011",
+    "name": "Training language models to follow instructions with human feedback",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.532
+   },
+   {
+    "eid": "e00167",
+    "name": "Harmonic analysis",
+    "source": "Harmonic analysis",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.532
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21381v1",
+  "title": "Towards Faithful Graph Explanations with Synergistic Edge Effects via Granular Balls",
+  "abstract": "Instance-level explanations aim to reveal the rationale behind a model's decisions for a specific graph. Previous methods explain graph neural networks (GNNs) by selecting important edges to induce subgraphs, where edge importance is assessed by perturbing each edge and observing changes in the model predictions. However, they often neglect the synergistic effects among edges, which are crucial for accurately characterizing edge importance. To address this issue, we propose SeeExplainer, a parameter-free explainer to interpret GNNs. Specifically, we first introduce a granular-ball graph refinement mechanism that decomposes a graph into several disjoint granular-balls with no fixed size, and utilize them as nodes to construct a structural graph. This process can better capture the synergistic effects among edges. Then, we perturb nodes and edges in the structural graph to generate explanatory subgraphs based on their respective contributions. Experiments on several graph classification datasets of different networks show that SeeExplainer outperforms state-of-the-art baselines.",
+  "authors": [
+   "Jiancu Chen",
+   "Shuyin Xia",
+   "Guan Wang",
+   "Degang Chen",
+   "Fan Chen"
+  ],
+  "published": "2026-07-23T14:44:51Z",
+  "store_candidates": [
+   {
+    "eid": "e09822",
+    "name": "Towards Faithful Graph Explanations with Synergistic Edge Effects via Granular Balls",
+    "source": "arxiv:2607.21381v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.768
+   },
+   {
+    "eid": "e07205",
+    "name": "graph theory",
+    "source": "Graph theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.61
+   },
+   {
+    "eid": "e05175",
+    "name": "graph theory",
+    "source": "Matrix (mathematics)",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.61
+   },
+   {
+    "eid": "e08815",
+    "name": "graph coarsening",
+    "source": "arxiv:2607.22287v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.608
+   },
+   {
+    "eid": "e07044",
+    "name": "Graph theory",
+    "source": "Combinatorics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.587
+   },
+   {
+    "eid": "e08883",
+    "name": "practical GNN mechanisms",
+    "source": "arxiv:2607.22381v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.581
+   },
+   {
+    "eid": "e09226",
+    "name": "subgraph filter learning",
+    "source": "arxiv:2607.21263v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e09888",
+    "name": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+    "source": "arxiv:2607.21779v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e03317",
+    "name": "graph theorist",
+    "source": "Paul Erd\u0151s",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e07757",
+    "name": "measurability and graph",
+    "source": "arxiv:2607.08064v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e09639",
+    "name": "graph and sequence generation",
+    "source": "arxiv:2607.21595v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e09632",
+    "name": "graph control paradigm",
+    "source": "arxiv:2607.21580v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.561
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21402v1",
+  "title": "MSBraM: A Multi-scale Self-supervised Brain Foundation Model for Hierarchical EEG Dynamics Learning",
+  "abstract": "Self-supervised foundation models have recently shown strong potential for electroencephalogram (EEG)-based analysis. However, existing approaches struggle to capture the inherently multi-scale temporal structure of EEG signals, where local neural patterns and long-range dependencies jointly encode task-relevant information. This limitation hampers cross-scale representation learning and generalization across diverse downstream tasks. To address this challenge, we propose MSBraM, a Multi-Scale self-supervised Brain foundation Model designed to learn hierarchical EEG representations. MSBraM follows a two-stage pretraining framework. First, a multi-scale neural tokenizer discretizes raw EEG signals into semantic codes at different temporal resolutions via vector-quantized reconstruction. Second, the model is pretrained to predict masked codes using a curriculum multi-scale masking strategy, progressively integrating fine-grained local patterns with global temporal context. We pretrain MSBraM on over 2,400 hours of EEG data and evaluate it across 10 downstream tasks on 12 public datasets. Extensive experiments show that MSBraM achieves superior performance on other state-of-the-art pretrained models, demonstrating strong generalization and transferability. These results indicate that explicitly modeling multi-scale temporal dynamics is critical for effective EEG foundation models.",
+  "authors": [
+   "Tao Zhou",
+   "Jing Han",
+   "Lingyu Shu",
+   "Zixing Zhang"
+  ],
+  "published": "2026-07-23T15:03:04Z",
+  "store_candidates": [
+   {
+    "eid": "e09827",
+    "name": "MSBraM: A Multi-scale Self-supervised Brain Foundation Model for Hierarchical EEG Dynamics Learning",
+    "source": "arxiv:2607.21402v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.869
+   },
+   {
+    "eid": "e09364",
+    "name": "multimodal EEG foundation model",
+    "source": "arxiv:2607.21384v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.658
+   },
+   {
+    "eid": "e09823",
+    "name": "Multimodal Pretraining for Generalizable EEG Representation Learning",
+    "source": "arxiv:2607.21384v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.616
+   },
+   {
+    "eid": "e09970",
+    "name": "Autoregressive EHR Foundation Models with Multimodal Inputs",
+    "source": "arxiv:2607.22264v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.606
+   },
+   {
+    "eid": "e08807",
+    "name": "multimodal EHR models",
+    "source": "arxiv:2607.22264v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.59
+   },
+   {
+    "eid": "e09952",
+    "name": "Pretraining EHR Foundation Models with Patient-Aware Sampling",
+    "source": "arxiv:2607.22114v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e10000",
+    "name": "Interpretable EEG biomarkers with bag-of-waves: Spatial and temporal waveform dictionaries for low-data regimes",
+    "source": "arxiv:2607.22508v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e09248",
+    "name": "multilingual embeddings",
+    "source": "arxiv:2607.21274v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e08581",
+    "name": "TextSLIP brain MRI pretraining",
+    "source": "arxiv:2607.21970v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e08897",
+    "name": "EEG adaptation efficiency",
+    "source": "arxiv:2607.22397v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e09208",
+    "name": "multi-dimensional diagnostics",
+    "source": "arxiv:2607.21217v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e05246",
+    "name": "short-term memory",
+    "source": "Memory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.537
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21403v1",
+  "title": "A Diffusion-Model Subpopulation Digital Twin for Mobile Health Deployment: A Case Study on the HeartSteps Intervention",
+  "abstract": "Mobile-health interventions increasingly use online learning and decision making algorithms to personalize when to nudge users toward healthier behavior, but a poorly designed algorithm can burden and disengage participants. New algorithm design decisions should therefore be vetted against realistic simulated users before each real-life deployment. We propose a method to develop ``JITAI-Twins'': digital twins of a target subpopulation for comparing candidate online algorithms before a just-in-time adaptive intervention (JITAI) deployment. The method builds on a conditional time-series diffusion model that is temporally consistent (future actions do not affect the generated past), and it supports repeated updating from three sources of information, in three steps: pre-training on a large observational dataset, fine-tuning on small prior intervention deployments in related populations, and inference-time calibration to the next target population from domain-scientist expertise. We validate the twin at each pre-deployment stage of the long-running HeartSteps series (v2 through v4) of physical-activity suggestion intervention deployments, treating each successive deployment as an upcoming study. The proposed method reproduces the target subpopulation's temporal and between-participant structure better than simpler simulators. These results suggest that our twin can be used to simulate a target deployment before it runs, the prerequisite for testing and informing online algorithm design decisions.",
+  "authors": [
+   "Ziping Xu",
+   "Yuyi Chang",
+   "Chenshun Ni",
+   "Nithin Sugavanam",
+   "Asim H. Gazi",
+   "Pedja Klasnja",
+   "Emre Ertin",
+   "Susan A. Murphy"
+  ],
+  "published": "2026-07-23T15:03:16Z",
+  "store_candidates": [
+   {
+    "eid": "e08118",
+    "name": "diffusion model fine-tuning",
+    "source": "arxiv:2607.20913v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.577
+   },
+   {
+    "eid": "e02884",
+    "name": "Simulating Minds",
+    "source": "Alvin Goldman",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.559
+   },
+   {
+    "eid": "e09739",
+    "name": "Source-Prior-Driven Selective Adaptation for Efficient Diffusion Model Finetuning",
+    "source": "arxiv:2607.20913v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.556
+   },
+   {
+    "eid": "e09952",
+    "name": "Pretraining EHR Foundation Models with Patient-Aware Sampling",
+    "source": "arxiv:2607.22114v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e09851",
+    "name": "Diffusion Language Model for Recommendation",
+    "source": "arxiv:2607.21519v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e09285",
+    "name": "simulation for LLM interventions",
+    "source": "arxiv:2607.21306v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e08333",
+    "name": "patient-specific predictions",
+    "source": "arxiv:2607.21688v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e09589",
+    "name": "judgment-updating process model",
+    "source": "arxiv:2607.21558v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e05906",
+    "name": "experimental study",
+    "source": "Statistics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.535
+   },
+   {
+    "eid": "e08731",
+    "name": "Patient Sampling",
+    "source": "arxiv:2607.22114v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.534
+   },
+   {
+    "eid": "e09954",
+    "name": "One Hand Watches The Other: Dynamic Multi-Agent Cooperation for Sample-Efficient Bimanual Manipulation in Dynamic Environments",
+    "source": "arxiv:2607.22119v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.532
+   },
+   {
+    "eid": "e09517",
+    "name": "discrete diffusion language model",
+    "source": "arxiv:2607.21519v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.532
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21405v1",
+  "title": "Anti-Periodic Positional Encoding: M\u00f6bius Boundary Conditions Make In-Context Retrieval Reliable",
+  "abstract": "M\u00f6bius RoPE is a rotary positional encoding built on the anti-periodic frequency ladder $\u03b8_i=\u03c0(2i+1)/N$: every rotation plane advances by an odd multiple of $\u03c0$ across the training context, so the positional holonomy is $-1$ and the two ends of the sequence are deterministically coupled through a closed-form Dirichlet \"dipole\"; to our knowledge this is the first anti-periodic boundary condition in positional encoding. We verify the theory numerically to $\\sim 10^{-6}$ and pretrain 48 models spanning six 160M-class and three 410M-class arms (2B FineWeb-Edu tokens each; the hybrid arm puts M\u00f6bius frequencies on 25% of heads). Hybrid perplexity is unchanged (29.66 vs. 29.72), but needle-in-a-haystack retrieval becomes reliable: $90.3\\pm5.7\\%$ versus $63.3\\pm31.4\\%$ at context 512 ($n=6$ seeds), observed worst seed 86% versus 14%, robust variance tests $p=0.013$-$0.029$ (unadjusted), recurring at 410M (Levene $p=0.040$). Matched controls isolate the mechanism: an aperiodic ladder in the same frequency band reproduces none of the effect, and a periodic (holonomy $+1$) ladder only a fraction. Swapping trained models' frequency table back to standard RoPE (weights frozen) collapses retrieval, with damage concentrated on far needles: trained models depend on this long-range geometry. A NoPE arm is even more reliable at short context but pays a 13% perplexity tax and extrapolates worst; only the anti-periodic hybrid pairs baseline perplexity with a high reliability floor. The effect is scoped to single-needle retrieval within the training window; a one-line frequency swap thus provides zero-cost insurance against the retrieval seed lottery.",
+  "authors": [
+   "Ji Ho Bae"
+  ],
+  "published": "2026-07-23T15:04:44Z",
+  "store_candidates": [
+   {
+    "eid": "e09829",
+    "name": "Anti-Periodic Positional Encoding: M\u00f6bius Boundary Conditions Make In-Context Retrieval Reliable",
+    "source": "arxiv:2607.21405v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.731
+   },
+   {
+    "eid": "e08809",
+    "name": "modality encoding",
+    "source": "arxiv:2607.22264v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e09606",
+    "name": "conformational ensemble encoding",
+    "source": "arxiv:2607.21561v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e08910",
+    "name": "arrangement-aware harmonic retrieval system",
+    "source": "arxiv:2607.22413v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e08175",
+    "name": "error reduction",
+    "source": "arxiv:2607.20939v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e08610",
+    "name": "model-specific encoding patterns",
+    "source": "arxiv:2607.21988v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e09351",
+    "name": "HOPE framework for network compression",
+    "source": "arxiv:2607.21366v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e08139",
+    "name": "cross-modal robustness",
+    "source": "arxiv:2607.20918v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.539
+   },
+   {
+    "eid": "e09355",
+    "name": "ODE-based continuous alignment framework",
+    "source": "arxiv:2607.21371v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.538
+   },
+   {
+    "eid": "e09049",
+    "name": "prediction error reduction",
+    "source": "arxiv:2607.21080v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e09250",
+    "name": "hybrid retrieval",
+    "source": "arxiv:2607.21274v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e09958",
+    "name": "dRAE: Representation Autoencoder with Hyper-Spherical Codes",
+    "source": "arxiv:2607.22148v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.535
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21407v1",
+  "title": "Cycle-Consistent and Uncertainty-Aware Neural Surrogates for Tokamak Edge Plasmas",
+  "abstract": "The boundary and divertor plasma govern how a tokamak exhausts power and particles, setting heat fluxes, target conditions, and the onset of detachment. Predicting these quantities is essential for operating current and future devices, but edge simulations that resolve them are too slow for parameter scans, optimization, or real-time control. Machine-learning surrogates offer a fast alternative, yet most are forward-only: they cannot recover input parameters from observations or assess the reliability of their predictions. We introduce a cycle-consistent neural surrogate for edge plasmas, combining a conditional U-Net forward model with an optimization-based inverse method built on the frozen forward network. The forward model maps five control parameters to two-dimensional plasma-state fields on the SOLPS-ITER mesh; the inverse method enforces consistency between forward and inverse predictions, a self-supervised quality check needing no ground-truth labels at inference. An ensemble of multilayer perceptrons also predicts electron temperature and density profiles at the outboard midplane and divertor targets, with uncertainty estimates that flag where more simulations are needed. The forward model achieves normalized root-mean-square errors below 2.6% and Pearson correlations above 0.95 for all fields. Cycle-consistency regularization raises the average cyclical $R^2$ from 0.59 to 0.99 without degrading forward accuracy and enables recovery of the core fueling rate; all five control parameters are recovered with Pearson $r\\ge0.97$. A $k$-d tree warm start yields a database completion rate above 95%, versus roughly 30% outright failures when cold-started. With about $4\\times10^6$ parameters, the model produces full 2D predictions in milliseconds, five to six orders of magnitude faster than SOLPS-ITER, enabling real-time control, parameter scans, uncertainty analysis, and digital twins.",
+  "authors": [
+   "Abdourahmane Diaw",
+   "Sebastian De Pascuale",
+   "Jae-Sun Park",
+   "Ivan Paradela Perez",
+   "Jeremy D. Lore",
+   "Stefan Dasbach"
+  ],
+  "published": "2026-07-23T15:06:57Z",
+  "store_candidates": [
+   {
+    "eid": "e09830",
+    "name": "Cycle-Consistent and Uncertainty-Aware Neural Surrogates for Tokamak Edge Plasmas",
+    "source": "arxiv:2607.21407v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.758
+   },
+   {
+    "eid": "e08253",
+    "name": "predicts latents, reconstructs frames",
+    "source": "arxiv:2607.20988v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.575
+   },
+   {
+    "eid": "e08805",
+    "name": "inverse optimization",
+    "source": "arxiv:2607.22263v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e09049",
+    "name": "prediction error reduction",
+    "source": "arxiv:2607.21080v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e08632",
+    "name": "higher accuracy, faster convergence",
+    "source": "arxiv:2607.22004v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e08377",
+    "name": "robust predict-then-optimize",
+    "source": "arxiv:2607.21774v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e08118",
+    "name": "diffusion model fine-tuning",
+    "source": "arxiv:2607.20913v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e08956",
+    "name": "7-8 point accuracy gain over latency-matched interpolation",
+    "source": "arxiv:2607.22465v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.535
+   },
+   {
+    "eid": "e08340",
+    "name": "quadratic model predictivity",
+    "source": "arxiv:2607.21716v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.533
+   },
+   {
+    "eid": "e09344",
+    "name": "emergent misalignment in fine-tuning",
+    "source": "arxiv:2607.21356v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.533
+   },
+   {
+    "eid": "e08369",
+    "name": "improved approximation",
+    "source": "arxiv:2607.21761v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.531
+   },
+   {
+    "eid": "e05726",
+    "name": "theoretical model",
+    "source": "Quantum field theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.527
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21419v1",
+  "title": "PATS: Policy-Aware Training Scaffolding for Agentic Reinforcement Learning",
+  "abstract": "In long-horizon LLM agent reinforcement learning, weak policies often repeat similar failures, producing uninformative rollout trajectories and limiting effective policy optimization. Existing skill-centric methods improve exploration by optimizing, filtering, or internalizing reusable skills. However, they remain centered on the skills themselves rather than being designed as adaptive training-time support for the evolving policy. To address this, we propose a policy-centric training paradigm that reframes skills as a dynamic training scaffold. Our framework, Pats, converts rollout groups from the latest policy into evidence cards and uses task-specific evaluation to adjust the context used in subsequent rollouts. Concrete guidance helps weak policies to complete challenging tasks. As policy improves, redundant context is revised or removed to reduce reliance on explicit guidance while preserving useful rollout variation. The policy is optimized with environmental rewards using standard RLVR, and the training scaffold is discarded at deployment. On ALFWorld and WebShop, Pats improves over strong baselines by up to 18.6%. Across seven search-augmented QA benchmarks, it remains competitive while using 32.1% fewer prompt tokens than the baseline.",
+  "authors": [
+   "Yipeng Shi",
+   "Zhipeng Ma",
+   "Yue Wang",
+   "Qitai Tan",
+   "Yang Li",
+   "Peng Chen",
+   "Zhengzhou Zhu"
+  ],
+  "published": "2026-07-23T15:24:35Z",
+  "store_candidates": [
+   {
+    "eid": "e09833",
+    "name": "PATS: Policy-Aware Training Scaffolding for Agentic Reinforcement Learning",
+    "source": "arxiv:2607.21419v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.803
+   },
+   {
+    "eid": "e08463",
+    "name": "robotics policy learning",
+    "source": "arxiv:2607.21856v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.65
+   },
+   {
+    "eid": "e09932",
+    "name": "Learning as Reasoning Unfolds: Progressive Rollout Allocation for Efficient Reinforcement Learning",
+    "source": "arxiv:2607.22002v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.648
+   },
+   {
+    "eid": "e09727",
+    "name": "Group-in-Group Policy Optimization for LLM Agent Training",
+    "source": "arxiv:2504.20073v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.628
+   },
+   {
+    "eid": "e09758",
+    "name": "Workflow-Localized Mechanism Learning: Attribution-Guided Repair and Knowledge Reuse for Structured Agent Skills",
+    "source": "arxiv:2607.20999v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.614
+   },
+   {
+    "eid": "e09001",
+    "name": "regression in LLM agent skills",
+    "source": "arxiv:2607.22520v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.614
+   },
+   {
+    "eid": "e09008",
+    "name": "reinforcement learning agent for alternative route decisions",
+    "source": "arxiv:2607.22525v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.603
+   },
+   {
+    "eid": "e09926",
+    "name": "Teaching LLMs to Self-Evolve: Cultivating Core Meta-Skills with Reinforcement Learning",
+    "source": "arxiv:2607.21971v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.598
+   },
+   {
+    "eid": "e09801",
+    "name": "Explainability Framework for Policy-Aware Autonomous Agents",
+    "source": "arxiv:2607.21209v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.593
+   },
+   {
+    "eid": "e09891",
+    "name": "QLPO: Quadrant-weighted Sampling for Length-aware Policy Optimization",
+    "source": "arxiv:2607.21793v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.591
+   },
+   {
+    "eid": "e09192",
+    "name": "policy-aware agent explanations",
+    "source": "arxiv:2607.21209v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.587
+   },
+   {
+    "eid": "e08280",
+    "name": "workflow-guided skill optimization",
+    "source": "arxiv:2607.20999v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.585
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21424v1",
+  "title": "An Evaluation Framework for Structured Audio Captions Validated by Controlled Perturbations",
+  "abstract": "Recent advancements in automated audio captioning (AAC) have shifted from monolithic sentence generation toward structured formats that explicitly disentangle distinct acoustic and semantic properties. However, evaluating this heterogeneous data remains a significant challenge. Existing caption metrics focus on flat textual outputs and fail to reliably assess multimodal attributes. To bridge this gap, we propose a multi-axis evaluation framework tailored for structured audio descriptions. Building on the AudioCards dataset, we evaluate outputs across five orthogonal axes: tag-sets, descriptions, logical reasoning, numeric measurements, and spectral profiles. Our approach combines Large Language Model (LLM) judges to capture semantic nuance with deterministic computational metrics to precisely measure acoustic deviations. To rigorously validate the reliability of this framework, we introduce a controlled perturbation testing protocol that injects typed, graded errors into groundtruth annotations. Our results demonstrate that this framework successfully distinguishes meaning-preserving paraphrases from genuine semantic and acoustic corruptions.",
+  "authors": [
+   "Liang-Yuan Wu",
+   "Sripathi Sridhar",
+   "Mark Cartwright",
+   "Magdalena Fuentes"
+  ],
+  "published": "2026-07-23T15:26:52Z",
+  "store_candidates": [
+   {
+    "eid": "e09834",
+    "name": "An Evaluation Framework for Structured Audio Captions Validated by Controlled Perturbations",
+    "source": "arxiv:2607.21424v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.796
+   },
+   {
+    "eid": "e09633",
+    "name": "structured semantic interfaces",
+    "source": "arxiv:2607.21580v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.589
+   },
+   {
+    "eid": "e00167",
+    "name": "Harmonic analysis",
+    "source": "Harmonic analysis",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.588
+   },
+   {
+    "eid": "e09558",
+    "name": "audio reasoning improvement",
+    "source": "arxiv:2607.21550v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.578
+   },
+   {
+    "eid": "e09197",
+    "name": "human feedback validation",
+    "source": "arxiv:2607.21209v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.575
+   },
+   {
+    "eid": "e09960",
+    "name": "From Isolated Tasks to Structured Capabilities: A Multilayer Taxonomy for Large Language Models",
+    "source": "arxiv:2607.22182v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e09413",
+    "name": "adaptive semantic descriptions",
+    "source": "arxiv:2607.21437v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e08304",
+    "name": "document-level stability analysis",
+    "source": "arxiv:2607.21010v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e10012",
+    "name": "Evaluating Large Language Models Trained on Code",
+    "source": "arxiv:2306.05685v4",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e08034",
+    "name": "syntactic framework",
+    "source": "arxiv:2607.19587v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e07620",
+    "name": "semantic characterisation",
+    "source": "arxiv:2606.31870v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e13889",
+    "name": "audio",
+    "source": "hf:kyutai/mimi",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.555
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21427v1",
+  "title": "Context-weighted Discrete Flow Matching",
+  "abstract": "Discrete flow matching provides a flexible framework for generative modeling on discrete structures. However, the standard factorized training objective exposes the model to targets of varying difficulty, mixing well-conditioned, predictable tokens with ambiguous, high-entropy ones. We empirically demonstrate that the uncertainty over the value of each token is closely related to the density of available context in its neighborhood. Motivated by this observation, we propose a simple modification to the underlying continuous-time Markov chain (CTMC) that incorporates local context information. Our context-weighted sampler improves generation quality with negligible computational overhead, while our scaled cross-entropy loss function reweights the training signal from different tokens and reduces generative perplexity by up to 63% on OpenWebText. Moreover, our approach matches a strong semi-autoregressive block diffusion baseline in quality while retaining the ability to perform generation in any order. These results highlight the role of local context as an important factor in discrete generative modeling and show that simple context-aware modifications can significantly improve both sampling and training efficiency.",
+  "authors": [
+   "Daniil Cherniavskii",
+   "Daniel Severo",
+   "Karen Ullrich"
+  ],
+  "published": "2026-07-23T15:29:49Z",
+  "store_candidates": [
+   {
+    "eid": "e09835",
+    "name": "Context-weighted Discrete Flow Matching",
+    "source": "arxiv:2607.21427v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.725
+   },
+   {
+    "eid": "e09517",
+    "name": "discrete diffusion language model",
+    "source": "arxiv:2607.21519v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.583
+   },
+   {
+    "eid": "e09022",
+    "name": "Item Context-Aware Attention",
+    "source": "arxiv:2607.21028v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e08533",
+    "name": "long-context accuracy",
+    "source": "arxiv:2607.21927v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.57
+   },
+   {
+    "eid": "e09836",
+    "name": "Token Budget Saturation and Mechanistic Early Detection of Reasoning Non-Convergence in Chain-of-Thought Models",
+    "source": "arxiv:2607.21433v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.569
+   },
+   {
+    "eid": "e08547",
+    "name": "LatentFlow system",
+    "source": "arxiv:2607.21941v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e09811",
+    "name": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+    "source": "arxiv:2607.21291v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   },
+   {
+    "eid": "e09804",
+    "name": "Progressive Cramming: Reliable Token Compression and What It Reveals",
+    "source": "arxiv:2607.21231v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e09635",
+    "name": "increasing dimensionality flows",
+    "source": "arxiv:2607.21595v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e08280",
+    "name": "workflow-guided skill optimization",
+    "source": "arxiv:2607.20999v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e09636",
+    "name": "Expanding Flow Maps",
+    "source": "arxiv:2607.21595v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e09496",
+    "name": "Agentic Context Management",
+    "source": "arxiv:2607.21503v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21433v1",
+  "title": "Token Budget Saturation and Mechanistic Early Detection of Reasoning Non-Convergence in Chain-of-Thought Models",
+  "abstract": "Chain-of-thought reasoning models such as DeepSeek-R1-Distill-Qwen-7B exhibit a bimodal convergence pattern: generations either terminate within a token budget (converged) or exhaust it without reaching a conclusion (non-converged). We characterize this phenomenon empirically, showing that converged generations achieve 90.3% accuracy on AIME 1983-2024 while non-converged ones achieve only 6.6%, with an overall convergence rate of 62.0%. We then ask whether this outcome is detectable early in the thinking chain using internal model representations. Training linear probes on hidden-state activations at token positions 50-300, we find that layer-20 activations at token 150 achieve AUC 0.608 (+-0.080, 5-fold CV), reliably above chance even at token 50. Activation probes consistently outperform behavioral baselines derived from token entropy and repetition statistics. A sweep-level permutation test yields p=0.063 (100,000 permutations), consistent with a modest signal that our sample size cannot confirm at conventional thresholds. These findings suggest that convergence fate is partially encoded in intermediate representations well before the generation ends, opening a path toward early-exit inference and adaptive compute allocation.",
+  "authors": [
+   "Renuka Oladri",
+   "Niveda Jawahar",
+   "Abdirisak Mohamed"
+  ],
+  "published": "2026-07-23T15:37:04Z",
+  "store_candidates": [
+   {
+    "eid": "e09836",
+    "name": "Token Budget Saturation and Mechanistic Early Detection of Reasoning Non-Convergence in Chain-of-Thought Models",
+    "source": "arxiv:2607.21433v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.748
+   },
+   {
+    "eid": "e09444",
+    "name": "token-level detection method",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.594
+   },
+   {
+    "eid": "e08662",
+    "name": "wavelet analysis of token sequences",
+    "source": "arxiv:2607.22026v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.589
+   },
+   {
+    "eid": "e09498",
+    "name": "token cost asymptotic analysis",
+    "source": "arxiv:2607.21503v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e08888",
+    "name": "attention computation acceleration",
+    "source": "arxiv:2607.22389v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.579
+   },
+   {
+    "eid": "e10022",
+    "name": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+    "source": "arxiv:2412.16720v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.577
+   },
+   {
+    "eid": "e09412",
+    "name": "reasoning agent refinement",
+    "source": "arxiv:2607.21437v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e08794",
+    "name": "inference acceleration",
+    "source": "arxiv:2607.22231v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e01425",
+    "name": "pattern recognition",
+    "source": "Intuition",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e13577",
+    "name": "reward model for reasoning verification",
+    "source": "hf:Qwen/Qwen2.5-Math-PRM-7B",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e09804",
+    "name": "Progressive Cramming: Reliable Token Compression and What It Reveals",
+    "source": "arxiv:2607.21231v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e08232",
+    "name": "deterministic memory injection",
+    "source": "arxiv:2607.20972v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21434v1",
+  "title": "Adaptive Identity Anchoring: Closed-Loop Keyframe Placement for Synthetic Paired Supervision in Video Face Swapping",
+  "abstract": "Video face swapping has no natural paired supervision: no real footage exists of one person's face performing another person's video. The strongest current answer, DreamID-V's SyncID-Pipe, mints pairs by replacing the identity in exactly two frames of a real clip -- the first and the last -- and regenerating the rest from a pose sequence alone. Pose carries no appearance evidence of the swapped-in identity, so over long clips, occlusions, and extreme pose excursions the synthesized identity has a long unanchored span on which to drift; no published ablation examines anchor count or placement. We propose Adaptive Identity Anchoring (AIA): (i) generalize the synthesizer to arbitrary anchor sets, architecturally natural for diffusion-forcing-style transformers where conditioning on a frame is clamping its tokens to zero noise; (ii) place anchors by a closed feedback loop that scores every generated frame against the real reference identity and inserts an image-face-swapped anchor at the worst-scoring frame until the pair passes a threshold or exhausts a budget; (iii) reuse the loop's verdict as an automatic data filter. A second pathology, the beauty-filter look of over-smoothed skin, has the same root cause: micro-texture, like identity, is priced by none of the pipeline's objectives. We therefore pair AIA with Reality-Referenced Texture Restoration: matched re-graining from each real frame's non-face regions, band-split transfer of sub-identity micro-texture from the real footage, and a second, spectral acceptance channel refereed by the footage's own spectrum. Identity-anchor density, we argue, is a controllable quality dial, and we specify falsifiable experiments -- drift-versus-gap curves, uniform-versus-adaptive placement at matched budgets, student training on AIA-minted data, and texture ablations with a human beauty-filter study -- that would validate or refute the proposal.",
+  "authors": [
+   "Logan Robbins"
+  ],
+  "published": "2026-07-23T15:37:55Z",
+  "store_candidates": [
+   {
+    "eid": "e09837",
+    "name": "Adaptive Identity Anchoring: Closed-Loop Keyframe Placement for Synthetic Paired Supervision in Video Face Swapping",
+    "source": "arxiv:2607.21434v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.813
+   },
+   {
+    "eid": "e08821",
+    "name": "supervised adaptation",
+    "source": "arxiv:2607.22300v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.6
+   },
+   {
+    "eid": "e04730",
+    "name": "additive identity",
+    "source": "Identity element",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.587
+   },
+   {
+    "eid": "e04670",
+    "name": "Anchoring effect",
+    "source": "Heuristic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e09618",
+    "name": "synthetic defect images",
+    "source": "arxiv:2607.21577v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.561
+   },
+   {
+    "eid": "e05072",
+    "name": "artificial intelligence",
+    "source": "Massachusetts Institute of Technology",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.542
+   },
+   {
+    "eid": "e08119",
+    "name": "selective adaptation method",
+    "source": "arxiv:2607.20913v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e08637",
+    "name": "adaptive AD prioritization",
+    "source": "arxiv:2607.22009v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e09170",
+    "name": "vibe-coding with verification",
+    "source": "arxiv:2607.21196v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.534
+   },
+   {
+    "eid": "e09783",
+    "name": "V-DEAL: Diagnosing Video Safety De-Calibration as an Understanding-Refusal Coupling Failure",
+    "source": "arxiv:2607.21151v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.533
+   },
+   {
+    "eid": "e09707",
+    "name": "Visual Instruction Tuning",
+    "source": "arxiv:2304.08485v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.531
+   },
+   {
+    "eid": "e09527",
+    "name": "prior-preserving video editing",
+    "source": "arxiv:2607.21529v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.53
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21447v1",
+  "title": "RUMBA: Russian User Memory Benchmark",
+  "abstract": "The ability to handle long-term memory in LLMs is becoming increasingly critical, yet existing benchmarks remain English-centric and rely on aggregate retrieval metrics, failing to capture interactions between long-range context, temporal information, and reasoning. To address this, we introduce RUMBA (Russian User Memory BenchmArk) - a new benchmark for long-term conversational memory that provides a fine-grained taxonomy of memory-centric question types and a unified methodology accounting for semantic type, session scope, temporal reasoning, and the explicitness of temporal expressions. RUMBA consists of timestamped user-assistant dialogues with QA pairs requiring retrieval, combination, and reasoning across sessions. While designed for Russian, we also provide an aligned English subset under the same methodology. We evaluate contemporary memory systems and long-context models, and show how RUMBA serves as a diagnostic tool to analyze model behavior across benchmark slices and identify strengths and failure modes of different memory mechanisms.",
+  "authors": [
+   "Elizaveta Shevtsova",
+   "Inna Glebkina",
+   "Mark Baushenko",
+   "Pavel Gulyaev",
+   "Alena Fenogenova"
+  ],
+  "published": "2026-07-23T15:52:31Z",
+  "store_candidates": [
+   {
+    "eid": "e06373",
+    "name": "Long-term working memory",
+    "source": "Child prodigy",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.606
+   },
+   {
+    "eid": "e08570",
+    "name": "LLM-agent memory evaluation library",
+    "source": "arxiv:2607.21962v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e08293",
+    "name": "linear-time, linear-memory",
+    "source": "arxiv:2607.21000v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e05246",
+    "name": "short-term memory",
+    "source": "Memory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e08700",
+    "name": "competitive on multilingual benchmarks",
+    "source": "arxiv:2607.22042v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e08765",
+    "name": "LLM research analysis",
+    "source": "arxiv:2607.22182v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.556
+   },
+   {
+    "eid": "e13917",
+    "name": "llmlingua-2-bert-base-multilingual-cased-meetingbank",
+    "source": "hf:microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e09067",
+    "name": "benchmarking leaderboard",
+    "source": "arxiv:2607.21117v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e13709",
+    "name": "multilingual sentiment analysis",
+    "source": "hf:cardiffnlp/twitter-roberta-base-sentiment",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e13718",
+    "name": "multilingual sentiment analysis",
+    "source": "hf:cointegrated/rubert-base-cased-nli-threeway",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e09412",
+    "name": "reasoning agent refinement",
+    "source": "arxiv:2607.21437v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e09923",
+    "name": "Ground Truth First: A Longitudinal Evaluation Instrument for Agent Memory, and the Tenure Crossover in Memory-Architecture Rankings",
+    "source": "arxiv:2607.21962v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21480v1",
+  "title": "Finite-Sample Coverage Audits for High-Recall Candidate Generation: Certification and Learning-Theoretic Design",
+  "abstract": "An initial high-recall stage in an empirical pipeline decides which items pass to later review, labelling, or modelling, and relevant items it misses are lost to every subsequent stage. We study how many audit labels are needed to certify, with finite-sample validity, that this missed relevant mass is small, and our main results characterise the label complexity of this problem. We first show that no procedure using only labels from inside the candidate set can certify any non-trivial bound on the missed mass: the audit must sample the excluded pool, the only region where unrecovered relevant items can lie. We then prove a matching finite-corpus lower bound. Any valid audit that certifies fewer than $m$ missed relevant items with high probability when none are present, even if adaptive and permitted to label the entire included pool, must inspect on the order of $N_0/m$ excluded-pool labels. Excluded-pool auditing is therefore minimax rate-optimal, not merely convenient, for missed-mass certification in the zero-miss regime. Building on this characterisation, we develop an exact finite-sample toolkit, using binomial and hypergeometric inversion rather than asymptotic approximation, that certifies missed mass, converts it to recall through a two-pool design, certifies pre-specified families of nested candidate generators simultaneously, and produces stress-test certificates against declared perturbation mechanisms. These certificates can be paired with observable review burden to select the least burdensome pre-specified candidate generator meeting a missed-mass target. Every guarantee holds under one discipline: the candidate generator, or the pre-specified family from which it is selected, and the audit rule are fixed before the certification labels are examined.",
+  "authors": [
+   "Martin Anthony",
+   "Kaveh Salehzadeh Nobari"
+  ],
+  "published": "2026-07-23T16:21:30Z",
+  "store_candidates": [
+   {
+    "eid": "e09843",
+    "name": "Finite-Sample Coverage Audits for High-Recall Candidate Generation: Certification and Learning-Theoretic Design",
+    "source": "arxiv:2607.21480v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.75
+   },
+   {
+    "eid": "e08175",
+    "name": "error reduction",
+    "source": "arxiv:2607.20939v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   },
+   {
+    "eid": "e07675",
+    "name": "formal verification in Lean",
+    "source": "arxiv:2607.01544v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e09872",
+    "name": "Self-Poisoning in Adaptive Out-of-Distribution Detection: A Sharp-Threshold Theory and Certified Label-Free Calibration",
+    "source": "arxiv:2607.21673v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e08851",
+    "name": "label efficiency",
+    "source": "arxiv:2607.22351v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e08912",
+    "name": "learned embedding for compatibility scoring",
+    "source": "arxiv:2607.22413v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e08646",
+    "name": "improved rationale and inference quality",
+    "source": "arxiv:2607.22013v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.485
+   },
+   {
+    "eid": "e09579",
+    "name": "improves reliability self-verification",
+    "source": "arxiv:2607.21557v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e08353",
+    "name": "safety audit adequacy",
+    "source": "arxiv:2607.21735v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e09842",
+    "name": "Error Certificates for KV-Cache Eviction via Randomized Design",
+    "source": "arxiv:2607.21475v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e08947",
+    "name": "dataset validation",
+    "source": "arxiv:2607.22445v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e08198",
+    "name": "evidence capacity in selection",
+    "source": "arxiv:2607.20950v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e08470",
+    "name": "high edge recall with evidence",
+    "source": "arxiv:2607.21859v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.538
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21491v1",
+  "title": "What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations",
+  "abstract": "Do independently trained language models come to represent the same thing in the same way? We answer for code, extending a recently introduced concept-circuit extraction method to a 2x2 design -- Python and Rust crossed with Qwen2.5-Coder-7B and DeepSeek-Coder-V1-6.7B -- and measuring a complete inventory of grammatical concepts (58 Python, 57 Rust) identically in all four cells: the smallest design that separates what depends on the task, the language, and the model. The answer splits into three parts. What earns dedicated circuitry is set by the task: the models agree on which concepts receive circuits (Spearman $\u03c1$ = 0.638 for Python, 0.673 for Rust, both p &lt; $10^{-7}$). Where those circuits sit is set by the model: Qwen processes concepts in a late band (~L17-19), DeepSeek at L6-7, for both languages. How circuits grow across layers is also set by the model: Qwen gives its atomic concepts an early spike that DeepSeek does not. \"Are circuits universal?\" thus has no single answer: yes for What, no for Where and How -- universality is a property of representational content, not of computational organisation. None of this structure was fixed in advance. The agreement could have landed anywhere between independence and identity; it lands at $\u03c1\\approx 0.65$. Rust constructs receive 2-3x more concept-specific circuitry than their Python equivalents, in both models. Both models share neurons between the languages (6/7 and 7/7 paired constructs), DeepSeek 1.94x more than Qwen -- a direction no prior result predicts. And Qwen binds nine keywords of Rust's type-and-trait machinery into one tight neuron cluster (Jaccard 0.535 vs null 0.112, p &lt; 0.001), a semantic dimension invisible in surface syntax. Ablation and linear probes confirm the circuits are functional. All claims are scoped to this 2x2; whether the per-model profile predicts a third model is the designed next test.",
+  "authors": [
+   "Piotr Wilam"
+  ],
+  "published": "2026-07-23T16:34:14Z",
+  "store_candidates": [
+   {
+    "eid": "e09845",
+    "name": "What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations",
+    "source": "arxiv:2607.21491v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.643
+   },
+   {
+    "eid": "e00021",
+    "name": "Circular reasoning",
+    "source": "Circular reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.583
+   },
+   {
+    "eid": "e09757",
+    "name": "Where Animacy Lives in Large Language Models: Tracing the Circuits of the Animacy Concept",
+    "source": "arxiv:2607.20995v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e07223",
+    "name": "reasoning",
+    "source": "Inductive reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e09717",
+    "name": "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution",
+    "source": "arxiv:2409.12191v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.569
+   },
+   {
+    "eid": "e09713",
+    "name": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+    "source": "arxiv:2402.03300v3",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e04205",
+    "name": "deductive reasoning",
+    "source": "Deductive reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.559
+   },
+   {
+    "eid": "e09556",
+    "name": "reasoning corpus",
+    "source": "arxiv:2607.21550v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e10012",
+    "name": "Evaluating Large Language Models Trained on Code",
+    "source": "arxiv:2306.05685v4",
+    "source_kind": "arXiv paper",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e09412",
+    "name": "reasoning agent refinement",
+    "source": "arxiv:2607.21437v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e01359",
+    "name": "problem solving",
+    "source": "Heuristic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e04601",
+    "name": "problem solving",
+    "source": "George P\u00f3lya",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.55
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21498v1",
+  "title": "Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it",
+  "abstract": "A rhetorical figure that Cicero and Quintilian catalogued two thousand years ago reappears, systematically, in the text of large language models: epanorthosis, the self-correction of the specimen \u00abThis is not a course. It is a journey of transformation\u00bb. This essay argues that the overuse is a trained disposition, driven mainly by a training distribution rich in promotional prose and by preference tuning (RLHF) that rewards confident, emphatic phrasing; the left-to-right nature of generation is an amplifier rather than the root cause. Building on evidence that models diverge from human rhetorical style, and on Fontanier's classification of epanorthosis as a figure of thought, it sets out a programme that scores the figure against genre-specific human baselines through an Epanorthosis Index (density relative to the human rate). A first measurement, on three sizes of one instruction-tuned model family, finds mis-calibration by register in both directions: the models overshoot in oratory (about twofold, near threefold in Italian, concentrated in the larger tiers) and undershoot in informal question-and-answer writing, while matching humans in argument, journalism, and encyclopedic prose. Three constructive contributions follow: a survey of mitigation techniques centred on lightweight LoRA adapters; a demonstration, in Italian, that a one-line instruction cuts the figure by half to nearly three-quarters and that a supervised-fine-tuning adapter removes it almost entirely, with a scaling coefficient that dials the reduction back onto the human rate; and the argument that the target is calibration to the human rate for each genre, not elimination. It closes on the stakes: the real risk is that we begin to write like the machines.",
+  "authors": [
+   "Federico Boggia"
+  ],
+  "published": "2026-07-23T16:47:39Z",
+  "store_candidates": [
+   {
+    "eid": "e09847",
+    "name": "Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it",
+    "source": "arxiv:2607.21498v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.795
+   },
+   {
+    "eid": "e09774",
+    "name": "Training Large Language Models for Self-Explanation Faithfulness",
+    "source": "arxiv:2607.21090v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.577
+   },
+   {
+    "eid": "e09412",
+    "name": "reasoning agent refinement",
+    "source": "arxiv:2607.21437v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e13500",
+    "name": "sentence-transformers fine-tuning",
+    "source": "hf:NeuML/pubmedbert-base-embeddings",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e09732",
+    "name": "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe",
+    "source": "arxiv:2604.13016v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e05432",
+    "name": "grammar analysis",
+    "source": "Philosophy of language",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e10011",
+    "name": "Training language models to follow instructions with human feedback",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e10012",
+    "name": "Evaluating Large Language Models Trained on Code",
+    "source": "arxiv:2306.05685v4",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e04882",
+    "name": "linguistic anthropology",
+    "source": "Anthropology",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e02423",
+    "name": "linguistic study",
+    "source": "Syntax",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e09930",
+    "name": "Analysing Self-Harm Representations in Language Models: a Cross-Architecture Study",
+    "source": "arxiv:2607.21988v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e08794",
+    "name": "inference acceleration",
+    "source": "arxiv:2607.22231v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21542v1",
+  "title": "Zero-Flow Two-Sample Tests",
+  "abstract": "We propose a new approach to two-sample testing for deciding whether two sets of samples are drawn from the same distribution. The test is built on a statistical discrepancy based on the zero-flow criterion, termed zero-flow discrepancy (ZFD). We prove the validity of ZFD and propose a practical testing procedure, termed the zero-flow two-sample test (ZF2ST). The key idea is to learn how samples from the two distributions are locally misaligned and use the resulting directional pattern as evidence of distributional difference. By separating witness learning from hypothesis evaluation, ZF2ST can use flexible neural networks while maintaining valid statistical calibration. We develop both regression-based and power-maximized approaches for learning the witness. Experiments on synthetic and image datasets demonstrate that ZF2ST can achieve strong testing power for structured distributional changes while maintaining well-calibrated type-I error.",
+  "authors": [
+   "Yakun Wang",
+   "Leyang Wang",
+   "Song Liu",
+   "Taiji Suzuki"
+  ],
+  "published": "2026-07-23T17:27:23Z",
+  "store_candidates": [
+   {
+    "eid": "e09857",
+    "name": "Zero-Flow Two-Sample Tests",
+    "source": "arxiv:2607.21542v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.726
+   },
+   {
+    "eid": "e01928",
+    "name": "blood flow study",
+    "source": "Navier\u2013Stokes equations",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e05896",
+    "name": "random sampling",
+    "source": "Statistics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e09235",
+    "name": "1000 samples with event intervals",
+    "source": "arxiv:2607.21267v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e07412",
+    "name": "hypothesis testing",
+    "source": "Philosophy of science",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.539
+   },
+   {
+    "eid": "e06377",
+    "name": "Flow experience",
+    "source": "Child prodigy",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e03086",
+    "name": "the study of fluids",
+    "source": "Blaise Pascal",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.536
+   },
+   {
+    "eid": "e07773",
+    "name": "consistency proof",
+    "source": "arxiv:2607.08206v3",
+    "source_kind": "arXiv paper",
+    "similarity": 0.518
+   },
+   {
+    "eid": "e04012",
+    "name": "consistency proof",
+    "source": "Consistency",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.518
+   },
+   {
+    "eid": "e09888",
+    "name": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+    "source": "arxiv:2607.21779v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.518
+   },
+   {
+    "eid": "e05906",
+    "name": "experimental study",
+    "source": "Statistics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.517
+   },
+   {
+    "eid": "e08731",
+    "name": "Patient Sampling",
+    "source": "arxiv:2607.22114v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.517
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21573v1",
+  "title": "Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity",
+  "abstract": "Faithful explanations of time-series classifiers should identify subsequences that are not only sufficient to preserve a black-box model's prediction, but also necessary for maintaining it. However, existing sufficiency-oriented methods can assign high importance to spurious subsequences that support the prediction without being essential to the model's decision. We introduce \\textbf{TimePNS}, a necessity-aware framework for time-series explanation. Inspired by Pearl's counterfactual notion of necessity, TimePNS assesses whether a temporal factor is necessary by intervening on it and measuring whether the original prediction is disrupted. The framework adopts a two-stage design. Stage I learns an identifiable causal generative process together with a sufficiency-oriented explanation mask. Stage II performs counterfactual interventions on temporal factors to derive necessity signals, which supervise a temporal gate that refines the initial explanation by suppressing non-essential components and emphasizing counterfactually necessary ones. Experiments on synthetic and real-world time-series benchmarks show that TimePNS more accurately identifies decision-critical subsequences and consistently improves sufficiency-necessity trade-offs over strong baselines.",
+  "authors": [
+   "Hongnan Ma",
+   "Yiwei Shi",
+   "Mengyue Yang",
+   "Weiru Liu"
+  ],
+  "published": "2026-07-23T17:52:01Z",
+  "store_candidates": [
+   {
+    "eid": "e09866",
+    "name": "Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity",
+    "source": "arxiv:2607.21573v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.743
+   },
+   {
+    "eid": "e09195",
+    "name": "penalty-based counterfactuals",
+    "source": "arxiv:2607.21209v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e09234",
+    "name": "temporal evidence annotations",
+    "source": "arxiv:2607.21267v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e07720",
+    "name": "necessity of non-periodicity",
+    "source": "arxiv:2607.05542v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e08942",
+    "name": "learning-rate schedule necessity",
+    "source": "arxiv:2607.22444v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e09193",
+    "name": "ASP-based explainability framework",
+    "source": "arxiv:2607.21209v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.539
+   },
+   {
+    "eid": "e09836",
+    "name": "Token Budget Saturation and Mechanistic Early Detection of Reasoning Non-Convergence in Chain-of-Thought Models",
+    "source": "arxiv:2607.21433v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.538
+   },
+   {
+    "eid": "e08351",
+    "name": "benchmark sufficiency",
+    "source": "arxiv:2607.21735v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e09135",
+    "name": "model explanation comparison tools",
+    "source": "arxiv:2607.21186v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.536
+   },
+   {
+    "eid": "e09489",
+    "name": "scenario-based assessment tool",
+    "source": "arxiv:2607.21495v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.535
+   },
+   {
+    "eid": "e04378",
+    "name": "Consequentialism",
+    "source": "Ethics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.535
+   },
+   {
+    "eid": "e09768",
+    "name": "Counterfactual Explainability Framework With CycleGAN And Counterfactual-Classifier Alignnment Score for Retinal Disease Classification",
+    "source": "arxiv:2607.21068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.534
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21574v1",
+  "title": "Surprisal Theory is Tautological (without Rational Grounding)",
+  "abstract": "Surprisal theory holds that the human processing difficulty of a linguistic unit in context is an affine function of its surprisal under some language model. I argue this claim is a tautology without further constraint: for any non-negative difficulty measure over units in context, there exists a language model whose surprisal is an affine function of it under mild technical conditions. Therefore, because any pattern of difficulty is consistent with some language model, without an additional constraint on the language model, surprisal theory makes no falsifiable predictions. The tautology was long obscured by an assumption implicit in two decades of psycholinguistic work---that the relevant language model is the distribution that generated the training corpus, so that improving corpus fit improves predictions of human behavior. Recent empirical work has undermined this assumption, demonstrating that better corpus models can be worse predictors of processing difficulty. I conclude that breaking the tautology requires a rationalist intervention, i.e., the relevant language model must be derived from a non-empirically motivated model of the comprehender, which could be based on, for instance, memory constraints or processing goals, and that, thus, does not depend on the behavioral data surprisal theory is meant to explain.",
+  "authors": [
+   "Ryan Cotterell"
+  ],
+  "published": "2026-07-23T17:54:37Z",
+  "store_candidates": [
+   {
+    "eid": "e09867",
+    "name": "Surprisal Theory is Tautological (without Rational Grounding)",
+    "source": "arxiv:2607.21574v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.729
+   },
+   {
+    "eid": "e03883",
+    "name": "abductive reasoning",
+    "source": "Abductive reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.628
+   },
+   {
+    "eid": "e07223",
+    "name": "reasoning",
+    "source": "Inductive reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.607
+   },
+   {
+    "eid": "e05992",
+    "name": "A tautology",
+    "source": "Tautology (logic)",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.604
+   },
+   {
+    "eid": "e03750",
+    "name": "study of reasoning",
+    "source": "Logic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.603
+   },
+   {
+    "eid": "e02921",
+    "name": "perturbation theory",
+    "source": "Andrey Kolmogorov",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.598
+   },
+   {
+    "eid": "e04205",
+    "name": "deductive reasoning",
+    "source": "Deductive reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.597
+   },
+   {
+    "eid": "e04666",
+    "name": "Heuristic reasoning",
+    "source": "Heuristic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.585
+   },
+   {
+    "eid": "e09556",
+    "name": "reasoning corpus",
+    "source": "arxiv:2607.21550v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e07160",
+    "name": "confirmation theory",
+    "source": "Evidence",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e06063",
+    "name": "Scientific theory",
+    "source": "Theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e00127",
+    "name": "An Essay Concerning Human Understanding",
+    "source": "An Essay Concerning Human Understanding",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.572
+   }
+  ]
+ }
+]

@@ -1,0 +1,1980 @@
+[
+ {
+  "arxiv_id": "2607.20908v1",
+  "title": "Multi-turn RL with Structural and Performance Aware Rewards for CUDA Kernel Generation",
+  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a powerful technique to enhance the reasoning capacity of LLMs for optimized code generation. However, existing RLVR approaches primarily rely on outcome-based signals such as correctness and speedup, overlooking performance-critical structural properties of programs that are essential for generating optimized code. In this work, we propose CudaPerf, a reflective RL framework that incorporates both verifiable execution rewards and structural code-aware rewards derived from parallelization features (e.g., memory coalescing, occupancy, Arithmatic Intensity, and synchronization patterns). CudaPerf operates in two stages: (1) an offline pairwise ranking module that learns to distinguish strong and weak program candidates via contrastive comparisons, and (2) an online RL training phase that jointly optimizes for correctness, performance, and structural efficiency through a unified reward signal. To further enhance learning, CudaPerf utilizes iterative refinement using execution feedback enabling progressive improvement of generated candidates. We also introduce a dataset comprising 2.9k C to CUDA and 1k PyTorch to CUDA programs, each paired with diverse input configurations and multiple CUDA implementations encompassing diverse optimization strategies. CudaPerf is evaluated across multiple benchmarks comprising both C to CUDA and PyTorch to CUDA transformations. Empirical findings suggest that CudaPerf significantly outperforms strong baselines, including Qwen-3-32B (for C to CUDA) and CUDA Agent (for PyTorch to CUDA) by achieving up to 5X &amp; 3.32X improvements in speedup, and 17% &amp; 7% improvements in correctness, respectively.",
+  "authors": [
+   "Quazi Ishtiaque Mahmud",
+   "Nesreen K. Ahmed",
+   "Ali Jannesari"
+  ],
+  "published": "2026-07-23T04:06:41Z",
+  "store_candidates": [
+   {
+    "eid": "e09736",
+    "name": "Multi-turn RL with Structural and Performance Aware Rewards for CUDA Kernel Generation",
+    "source": "arxiv:2607.20908v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.749
+   },
+   {
+    "eid": "e08622",
+    "name": "efficient RL with reward variance",
+    "source": "arxiv:2607.22002v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.628
+   },
+   {
+    "eid": "e13577",
+    "name": "reward model for reasoning verification",
+    "source": "hf:Qwen/Qwen2.5-Math-PRM-7B",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.606
+   },
+   {
+    "eid": "e10023",
+    "name": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "source": "arxiv:2502.01456v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.598
+   },
+   {
+    "eid": "e09721",
+    "name": "Process Reinforcement through Implicit Rewards",
+    "source": "arxiv:2502.01456v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.59
+   },
+   {
+    "eid": "e09054",
+    "name": "reinforcement learning faithfulness",
+    "source": "arxiv:2607.21090v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.589
+   },
+   {
+    "eid": "e09449",
+    "name": "recursively self-improving research",
+    "source": "arxiv:2607.21461v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.582
+   },
+   {
+    "eid": "e09726",
+    "name": "RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning",
+    "source": "arxiv:2504.20073v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e09561",
+    "name": "multimodal reasoning reinforcement",
+    "source": "arxiv:2607.21552v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e09041",
+    "name": "classification performance improvement",
+    "source": "arxiv:2607.21068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e08379",
+    "name": "robust optimization performance",
+    "source": "arxiv:2607.21774v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e09059",
+    "name": "computational efficiency",
+    "source": "arxiv:2607.21098v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.20926v1",
+  "title": "SciExplore: Evaluating Autonomous Agents from Scientific Navigation to Information Integration",
+  "abstract": "Scientific research involves complex information-seeking and reasoning workflows across heterogeneous sources. However, existing benchmarks primarily emphasize general-domain retrieval or static scientific question answering, and therefore fail to assess key capabilities required in realistic scientific research workflows. We introduce SciExplore, a benchmark designed to evaluate scientific information-seeking and reasoning capabilities of LLMs and agents. SciExplore comprises four task types covering 103 expert-curated tasks across more than ten scientific disciplines: scientific database navigation, ambiguous literature retrieval, missing reference completion, and cross-source structured knowledge synthesis, which probe progressively higher-level abilities from entity-level reasoning and document-level identification to evidence-level grounding and domain-level synthesis. We evaluate over ten state-of-the-art LLMs and autonomous agents on SciExplore, revealing substantial performance gaps with performance degrading sharply as task complexity increases and extremely low accuracy on the most challenging structured synthesis tasks. These results highlight significant limitations of current models and agents in realistic scientific information-seeking scenarios.",
+  "authors": [
+   "Yinhao Tang",
+   "Youqing Fang",
+   "Yanan Sun",
+   "Wenran Liu",
+   "Weiming Zhang",
+   "Bin Liu",
+   "Kuikun Liu",
+   "Wenwei Zhang",
+   "Kai Chen"
+  ],
+  "published": "2026-07-23T05:17:00Z",
+  "store_candidates": [
+   {
+    "eid": "e09743",
+    "name": "SciExplore: Evaluating Autonomous Agents from Scientific Navigation to Information Integration",
+    "source": "arxiv:2607.20926v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.751
+   },
+   {
+    "eid": "e08765",
+    "name": "LLM research analysis",
+    "source": "arxiv:2607.22182v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.619
+   },
+   {
+    "eid": "e09449",
+    "name": "recursively self-improving research",
+    "source": "arxiv:2607.21461v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.591
+   },
+   {
+    "eid": "e10031",
+    "name": "AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+    "source": "arxiv:2601.20802v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.581
+   },
+   {
+    "eid": "e09801",
+    "name": "Explainability Framework for Policy-Aware Autonomous Agents",
+    "source": "arxiv:2607.21209v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.581
+   },
+   {
+    "eid": "e09663",
+    "name": "60+ tasks multiple benchmarks",
+    "source": "arxiv:2607.21670v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e10023",
+    "name": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "source": "arxiv:2502.01456v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.577
+   },
+   {
+    "eid": "e09724",
+    "name": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
+    "source": "arxiv:2504.12516v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e04922",
+    "name": "academic research",
+    "source": "List of pioneers in computer science",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e10001",
+    "name": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
+    "source": "arxiv:2607.22511v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.572
+   },
+   {
+    "eid": "e09905",
+    "name": "LeAct: Learning to Reason from Expert Actions",
+    "source": "arxiv:2607.21856v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e09713",
+    "name": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+    "source": "arxiv:2402.03300v3",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21005v1",
+  "title": "Weight-norm Criticality: A Mechanism for Loss Spikes Induced by the Normalization and Weight Decay",
+  "abstract": "Most explanations of training instability focus on \\emph{learning-rate criticality}, typically characterized by the Edge of Stability, beyond which optimization becomes unstable. We argue that, in practical deep neural network training, there is an additional and often overlooked \\emph{weight-norm criticality}. This criticality is induced by the interaction between normalization (which introduces scale-invariant components) and weight decay (which persistently shrinks parameter norms). As the weight decay coefficient increases, the norms of scale-invariant weights are progressively driven toward zero. Meanwhile, the sharpness of the loss landscape increases rapidly, destabilizing the optimization dynamics and resulting in abrupt loss spikes. This perspective provides a rationale for why weight penalties can improve generalization yet cannot be made arbitrarily strong: excessive decay drives scale-invariant weight norms past a critical boundary and destabilizes training. Our work provides a new mechanistic understanding of loss spikes through the lens of \\emph{weight-norm criticality}. Moreover, \\emph{weight-norm criticality} yields testable predictions that we validate empirically in networks with scale-invariant components, providing empirical support for the proposed mechanism.",
+  "authors": [
+   "Xiaolong Li",
+   "Zhangchen Zhou",
+   "Zhi-Qin John Xu"
+  ],
+  "published": "2026-07-23T07:39:03Z",
+  "store_candidates": [
+   {
+    "eid": "e09760",
+    "name": "Weight-norm Criticality: A Mechanism for Loss Spikes Induced by the Normalization and Weight Decay",
+    "source": "arxiv:2607.21005v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.797
+   },
+   {
+    "eid": "e09904",
+    "name": "Searching the Space of Feed-Forward Neural-Network Weight-Update Rules with Fixed Depth Symbolic Regression",
+    "source": "arxiv:2607.21855v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.57
+   },
+   {
+    "eid": "e08454",
+    "name": "neural network weight-update discovery",
+    "source": "arxiv:2607.21855v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e08754",
+    "name": "frozen-weights learning",
+    "source": "arxiv:2607.22157v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e10005",
+    "name": "Decoupled Weight Decay Regularization",
+    "source": "arxiv:2106.09685v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e08111",
+    "name": "robustness analysis",
+    "source": "arxiv:2607.20909v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e08380",
+    "name": "stability improvement",
+    "source": "arxiv:2607.21774v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e08542",
+    "name": "delays reasoning degradation",
+    "source": "arxiv:2607.21933v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e09344",
+    "name": "emergent misalignment in fine-tuning",
+    "source": "arxiv:2607.21356v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.539
+   },
+   {
+    "eid": "e08155",
+    "name": "metric improvements",
+    "source": "arxiv:2607.20933v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e09961",
+    "name": "Deconstructing Off-Policy Ratios: Entropy-Scaled Trust Regions for Asynchronous Reinforcement Learning",
+    "source": "arxiv:2607.22186v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.535
+   },
+   {
+    "eid": "e09996",
+    "name": "Beyond Negative-Ridge Endpoints: Mixed-Sign Spectral Regularization via Negative-Shifted Gradient Descent",
+    "source": "arxiv:2607.22474v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.534
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21013v1",
+  "title": "EmoAgent-R1: Towards Multimodal Emotion Understanding with Reinforcement Learning-based Dynamic Agent Specialization",
+  "abstract": "Multimodal large language models (MLLMs) have achieved impressive performance in multimodal emotion recognition (MER) tasks and lifted MER to a new level that is complex emotion understanding with advanced video understanding abilities and natural language description. However, existing MLLM-based methods often use a fixed prompt to perceive the emotions, ignoring the dynamicity and complexity of the emotion source in the multimodal inputs. To address these issues, we propose a novel Reinforcement Learning-based Dynamic Agent Specialization framework (\\textbf{EmoAgent-R1}) to optimize the emotion recognition, reasoning, and generalization abilities of an MLLM with dynamic agent specialization based on reinforcement learning. Specifically, we first adopt a cold start strategy to endow an MLLM with preliminary emotion recognition, reasoning, and agent routing ability by training with synthetic answer-conditioned chain-of-thought data and agent routing data. Then, we further train the MLLM with reinforcement learning to perceive emotions in a two-step agentic workflow with agent selection and agent specialization. To effectively train EmoAgent-R1, we propose a novel Progressive Group-Relative Policy Optimization (P-GRPO) to combine group-based relative advantages with a PMI-inspired progressive token-level modulation to transform sparse rewards into fine-grained learning signals, mitigating the coarse-grained uniform credit assignment issue in GRPO. Extensive experiments on MER benchmarks demonstrate the superiority of our EmoAgent-R1 in stronger emotion reasoning performance and improved optimization stability.",
+  "authors": [
+   "Lihuang Fang",
+   "Yuchen Zou",
+   "kebin Jin",
+   "Jinghui Qin"
+  ],
+  "published": "2026-07-23T07:52:40Z",
+  "store_candidates": [
+   {
+    "eid": "e09761",
+    "name": "EmoAgent-R1: Towards Multimodal Emotion Understanding with Reinforcement Learning-based Dynamic Agent Specialization",
+    "source": "arxiv:2607.21013v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.797
+   },
+   {
+    "eid": "e13431",
+    "name": "multilingual emotion detection",
+    "source": "hf:MilaNLProc/xlm-emo-t",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.665
+   },
+   {
+    "eid": "e09561",
+    "name": "multimodal reasoning reinforcement",
+    "source": "arxiv:2607.21552v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.648
+   },
+   {
+    "eid": "e10023",
+    "name": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "source": "arxiv:2502.01456v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.637
+   },
+   {
+    "eid": "e09726",
+    "name": "RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning",
+    "source": "arxiv:2504.20073v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.607
+   },
+   {
+    "eid": "e14075",
+    "name": "multilingual-sentiment-analysis",
+    "source": "hf:tabularisai/multilingual-sentiment-analysis",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.618
+   },
+   {
+    "eid": "e09412",
+    "name": "reasoning agent refinement",
+    "source": "arxiv:2607.21437v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.612
+   },
+   {
+    "eid": "e13709",
+    "name": "multilingual sentiment analysis",
+    "source": "hf:cardiffnlp/twitter-roberta-base-sentiment",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.611
+   },
+   {
+    "eid": "e13718",
+    "name": "multilingual sentiment analysis",
+    "source": "hf:cointegrated/rubert-base-cased-nli-threeway",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.611
+   },
+   {
+    "eid": "e09726",
+    "name": "RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning",
+    "source": "arxiv:2504.20073v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.607
+   },
+   {
+    "eid": "e09727",
+    "name": "Group-in-Group Policy Optimization for LLM Agent Training",
+    "source": "arxiv:2504.20073v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.602
+   },
+   {
+    "eid": "e09008",
+    "name": "reinforcement learning agent for alternative route decisions",
+    "source": "arxiv:2607.22525v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.596
+   },
+   {
+    "eid": "e09542",
+    "name": "multilingual model performance",
+    "source": "arxiv:2607.21540v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.592
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21042v1",
+  "title": "Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs",
+  "abstract": "Autoregressive text-to-speech models achieve strong naturalness but suffer from slow inference due to sequential token generation, limiting their deployment in production applications that require low latency. IndexTTS-2 is a state-of-the-art autoregressive TTS model consisting of a GPT, a flow-matching Diffusion Transformer, and a vocoder. Despite its high synthesis quality, its inference speed barely reaches real-time without streaming or batching support. We present Faster IndexTTS-2, which accelerates all neural network components of IndexTTS-2 for production deployment on GPUs using NVIDIA TensorRT and TensorRT-LLM. Faster IndexTTS-2 also enables streaming synthesis for latency-sensitive interactive applications, and batched inference across all components to maximize GPU utilization. Experiments on the Seed-TTS benchmark for both English and Chinese demonstrate up to 5.0$\\times$ speedup on the autoregressive GPT and 3.6$\\times$ end-to-end, with minimal degradation in word error rate, speaker similarity, and naturalness. Our methodology provides a practical reference for efficiently accelerating similar autoregressive speech models on GPUs.",
+  "authors": [
+   "Muyang Du",
+   "Shuang Yu",
+   "Junjie Lai"
+  ],
+  "published": "2026-07-23T08:24:21Z",
+  "store_candidates": [
+   {
+    "eid": "e09765",
+    "name": "Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs",
+    "source": "arxiv:2607.21042v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.876
+   },
+   {
+    "eid": "e08794",
+    "name": "inference acceleration",
+    "source": "arxiv:2607.22231v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.622
+   },
+   {
+    "eid": "e08347",
+    "name": "inference speedup",
+    "source": "arxiv:2607.21731v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.596
+   },
+   {
+    "eid": "e08888",
+    "name": "attention computation acceleration",
+    "source": "arxiv:2607.22389v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e08137",
+    "name": "benchmark performance",
+    "source": "arxiv:2607.20918v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e08727",
+    "name": "benchmark performance",
+    "source": "arxiv:2607.22083v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e09528",
+    "name": "ElasticTTT performance",
+    "source": "arxiv:2607.21529v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   },
+   {
+    "eid": "e08345",
+    "name": "attention latency reduction",
+    "source": "arxiv:2607.21731v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e08874",
+    "name": "low-resource machine translation",
+    "source": "arxiv:2607.22376v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e08730",
+    "name": "speech translation and identification",
+    "source": "arxiv:2607.22100v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e08679",
+    "name": "compute and latency reduction",
+    "source": "arxiv:2607.22038v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e09542",
+    "name": "multilingual model performance",
+    "source": "arxiv:2607.21540v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.545
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21067v1",
+  "title": "PrefReward: Learning User Preference Matrix for Personalized Text Generation",
+  "abstract": "Large Language Models (LLMs) have demonstrated remarkable ability in generating personalized content by leveraging user histories and contextual cues. However, most existing personalization approaches rely on implicit representations within model parameters, making it difficult to interpret user-specific preferences or effectively handle long-context dependencies. To address these challenges, we propose PrefReward, a novel preference-aware generative framework that explicitly models user styles through a structured preference matrix and integrates it into the decoding process as a reward signal. PrefReward consists of two stages: (1) extracting a user-specific preference matrix that summarizes individual stylistic tendencies, and (2) using the matrix to guide generation via a KL-divergence-based reward function. Experiments on the LongLaMP dataset show that PrefReward outperforms non-personalized and retrieval-based baselines in both generation quality and personalization interpretability.",
+  "authors": [
+   "Yue Wu",
+   "Chengbing Wang",
+   "Yimeng Bai",
+   "Xiaoyan Zhao",
+   "Yang Zhang",
+   "Fuli Feng"
+  ],
+  "published": "2026-07-23T09:00:20Z",
+  "store_candidates": [
+   {
+    "eid": "e09767",
+    "name": "PrefReward: Learning User Preference Matrix for Personalized Text Generation",
+    "source": "arxiv:2607.21067v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.817
+   },
+   {
+    "eid": "e09764",
+    "name": "Bridging the Structural Gap: Adapting Autoregressive Generation for Recommendation",
+    "source": "arxiv:2607.21028v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.596
+   },
+   {
+    "eid": "e13577",
+    "name": "reward model for reasoning verification",
+    "source": "hf:Qwen/Qwen2.5-Math-PRM-7B",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e10011",
+    "name": "Training language models to follow instructions with human feedback",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e10007",
+    "name": "LLaMA: Open and Efficient Foundation Language Models",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e09585",
+    "name": "prior-judgment priming",
+    "source": "arxiv:2607.21558v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.57
+   },
+   {
+    "eid": "e09841",
+    "name": "Detecting LLM-Generated Tokens in Human--LLM Coauthored Text",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e09851",
+    "name": "Diffusion Language Model for Recommendation",
+    "source": "arxiv:2607.21519v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e09774",
+    "name": "Training Large Language Models for Self-Explanation Faithfulness",
+    "source": "arxiv:2607.21090v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e09811",
+    "name": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+    "source": "arxiv:2607.21291v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e10012",
+    "name": "Evaluating Large Language Models Trained on Code",
+    "source": "arxiv:2306.05685v4",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e10023",
+    "name": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "source": "arxiv:2502.01456v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21069v1",
+  "title": "From Evaluation to Optimisation: Hierarchy-Aware Training Signals for CWE Prediction in Python",
+  "abstract": "The original ALPHA benchmark introduced a taxonomy-aware penalty for evaluating CWE-level vulnerability prediction in Python and proposed that the penalty could theoretically also serve as a training signal. This paper provides that validation. We compare three delivery mechanisms: supervised fine-tuning, a dual-head classification loss, and reinforcement learning with a dense reward derived from the normalised penalty. We find that supervised approaches consistently regress below the zero-shot baseline under distribution shift, while GRPO succeeds. Our best policy reduces the cumulative ALPHA penalty of Qwen2.5-Coder-7B on Security Hardening and Adversarial Testing (SVEN) dataset by 27.9% under greedy decoding, and by 25.5% under sampled decoding(p = 0.005, Welch's t-test), reaching statistical parity with its 4.5x larger zero-shot teacher. We conclude that the value of a hierarchical penalty as a training signal depends largely on the directness of its delivery.",
+  "authors": [
+   "Muntasir Adnan",
+   "Manile Srun",
+   "Carlos C. N. Kuhn"
+  ],
+  "published": "2026-07-23T09:02:46Z",
+  "store_candidates": [
+   {
+    "eid": "e07735",
+    "name": "tolerant learning for c.e. sets",
+    "source": "arxiv:2607.06694v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e07738",
+    "name": "tolerant learning hierarchy",
+    "source": "arxiv:2607.06694v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.572
+   },
+   {
+    "eid": "e09054",
+    "name": "reinforcement learning faithfulness",
+    "source": "arxiv:2607.21090v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e09041",
+    "name": "classification performance improvement",
+    "source": "arxiv:2607.21068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e13577",
+    "name": "reward model for reasoning verification",
+    "source": "hf:Qwen/Qwen2.5-Math-PRM-7B",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.556
+   },
+   {
+    "eid": "e09049",
+    "name": "prediction error reduction",
+    "source": "arxiv:2607.21080v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.556
+   },
+   {
+    "eid": "e08175",
+    "name": "error reduction",
+    "source": "arxiv:2607.20939v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.556
+   },
+   {
+    "eid": "e08871",
+    "name": "reward hacking",
+    "source": "arxiv:2607.22368v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.556
+   },
+   {
+    "eid": "e08962",
+    "name": "augmented training data from intermediate solver iterates",
+    "source": "arxiv:2607.22467v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e09255",
+    "name": "instruction-tuning aligned dataset",
+    "source": "arxiv:2607.21279v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e08137",
+    "name": "benchmark performance",
+    "source": "arxiv:2607.20918v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e08727",
+    "name": "benchmark performance",
+    "source": "arxiv:2607.22083v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21074v1",
+  "title": "Spectral Transformation for Layer-wise Global Rank Discovery in Federated LoRA for Vision Transformers",
+  "abstract": "Fine-tuning Vision Transformers (ViTs) with low-rank adapters (LoRA) promises better communication efficiency under federated setup, yet existing aggregation strategies face fundamental limitations. Independently averaging these LoRA factors is mathematically inconsistent, introducing cross-term aggregation error. In contrast, approaches that preserve heterogeneous client ranks by concatenating local adapters on the server substantially increase download cost and often require merging global LoRA updates into pretrained weights on the clients, causing reinitialization lag and unstable convergence. Other approaches further increase server-side overhead by reconstructing dense weight updates or training auxiliary models to refine aggregation error. In this work, we propose SpecTraL, spectral transformation for layer-wise global rank discovery, that resolves these challenges within a unified design. SpecTraL stacks local LoRA modules from clients and performs orthonormal Householder Transformation of the stacked adapters directly in the low-rank latent space, eliminating dense reconstruction of the global update and any auxiliary refinement on the server. By leveraging the Spiked Covariance Model from Random Matrix Theory, SpecTraL analytically separates the global consensus signal from non-IID noise, discovering optimal layer-wise global ranks without manual hyperparameter tuning. To match local ranks in subsequent rounds, we introduce a padding-aware initialization framework that lets clients incorporate residual LoRA dimensions without re-merging them into the pre-trained base model. Experiments on federated fine-tuning of ViT-B/16 and ViT-L/16 over DomainNet and NICO++ demonstrate improved accuracy-communication trade-offs, reduced server computation, and elimination of hyperparameter search for rank selection. Our code is available at https://github.com/DASS-Lab-Group/SpecTraL",
+  "authors": [
+   "Hariharan Ramesh",
+   "Jyotikrishna Dass"
+  ],
+  "published": "2026-07-23T09:07:56Z",
+  "store_candidates": [
+   {
+    "eid": "e09769",
+    "name": "Spectral Transformation for Layer-wise Global Rank Discovery in Federated LoRA for Vision Transformers",
+    "source": "arxiv:2607.21074v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.758
+   },
+   {
+    "eid": "e09967",
+    "name": "IFCLoRA: Topology-Aware Rank Allocation for Parameter-Efficient Fine-Tuning",
+    "source": "arxiv:2607.22251v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.6
+   },
+   {
+    "eid": "e08994",
+    "name": "selective LoRA fine-tuning by condition number ranking",
+    "source": "arxiv:2607.22489v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.586
+   },
+   {
+    "eid": "e09928",
+    "name": "MoE$^2$-LoRA: When MoE Models Meet MoE-style Low-Rank Adaptation",
+    "source": "arxiv:2607.21978v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.584
+   },
+   {
+    "eid": "e09903",
+    "name": "SCALE: Self-Supervised Constraint-Aware Layout GEneration for Local P&amp;R DRV Fixing at Advanced Nodes",
+    "source": "arxiv:2607.21850v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.578
+   },
+   {
+    "eid": "e09705",
+    "name": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "source": "arxiv:2106.09685v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e09717",
+    "name": "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution",
+    "source": "arxiv:2409.12191v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e07792",
+    "name": "layer classification by commutativity",
+    "source": "arxiv:2607.09032v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e06053",
+    "name": "spectral line analyses",
+    "source": "Theoretical physics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e09927",
+    "name": "On the Convergence of Stochastic Low-Rank Adaptation",
+    "source": "arxiv:2607.21975v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.561
+   },
+   {
+    "eid": "e09041",
+    "name": "classification performance improvement",
+    "source": "arxiv:2607.21068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e10035",
+    "name": "Understanding intermediate layers using linear classifier probes",
+    "source": "arxiv:2607.20993v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.553
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21088v1",
+  "title": "CASC: Causal Adversarial Subspace Clustering for Multivariate Spatiotemporal Data",
+  "abstract": "Deep subspace clustering plays a critical role in applications involving multivariate spatiotemporal data, such as sea ice monitoring, disease spread analysis, and tracking neuro-degeneration over time. Despite recent advances, existing methods primarily rely on geometric self-expressiveness, assume static subspace structures, and often fail to capture causal dependencies, local spatial interactions, and long-range temporal dynamics inherent in complex spatiotemporal systems. To address these limitations, we propose a novel Causal Adversarial Subspace Clustering (CASC) framework for discovering evolving latent regimes in high-dimensional spatiotemporal data. CASC integrates a U-Net-inspired deep adversarial clustering architecture with stacked FAConvLSTM layers to preserve spatial and temporal structure while learning robust latent representations. A graph attention transformer-based self-expressive network is introduced to jointly model local spatial relationships, global dependencies, and long-range temporal interactions. Furthermore, we propose two new learning objectives: (1) a Causal Subspace Preservation Loss that aligns self-expression coefficients with latent causal relationships, encouraging clusters to reflect underlying causal processes rather than simple feature similarity, and (2) a Dynamic Temporal Subspace Evolution Loss that captures evolving subspace structures and temporal regime transitions in nonstationary environments. Together, these components transform deep subspace clustering from a correlation-driven paradigm into a causal-temporal regime discovery framework.",
+  "authors": [
+   "Francis Ndikum Nji",
+   "Vandana Janeja",
+   "Jianwu Wang"
+  ],
+  "published": "2026-07-23T09:19:17Z",
+  "store_candidates": [
+   {
+    "eid": "e09773",
+    "name": "CASC: Causal Adversarial Subspace Clustering for Multivariate Spatiotemporal Data",
+    "source": "arxiv:2607.21088v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.794
+   },
+   {
+    "eid": "e08549",
+    "name": "latent space analysis",
+    "source": "arxiv:2607.21941v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.589
+   },
+   {
+    "eid": "e14090",
+    "name": "clustering",
+    "source": "hf:thenlper/gte-large",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.587
+   },
+   {
+    "eid": "e09022",
+    "name": "Item Context-Aware Attention",
+    "source": "arxiv:2607.21028v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.575
+   },
+   {
+    "eid": "e09878",
+    "name": "Learning What Matters: Supervising Sparse Attention Routing with Causal Evidence Sets",
+    "source": "arxiv:2607.21692v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e08888",
+    "name": "attention computation acceleration",
+    "source": "arxiv:2607.22389v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.572
+   },
+   {
+    "eid": "e08345",
+    "name": "attention latency reduction",
+    "source": "arxiv:2607.21731v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e09977",
+    "name": "Time-Reversed Imaging: A Multimodal Benchmark and Framework for Reconstructing Past Human-Environment Interactions",
+    "source": "arxiv:2607.22352v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   },
+   {
+    "eid": "e09406",
+    "name": "semantic-aware task clustering",
+    "source": "arxiv:2607.21426v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e09940",
+    "name": "DCS: A Unified Conditional Sensitivity Framework for Cross-Modal Copyright Infringement Detection",
+    "source": "arxiv:2607.22035v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e14081",
+    "name": "contrastive learning",
+    "source": "hf:tasksource/ModernBERT-large-nli",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e09888",
+    "name": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+    "source": "arxiv:2607.21779v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21094v1",
+  "title": "A Polynomial Architecture-Attribution Co-Design Framework for Exact Aumann-Shapley Attribution in GNNs",
+  "abstract": "We study feature-level and node-level explanations for graph neural networks (GNNs) through the lens of Aumann-Shapley attribution. Path-integral methods such as Integrated Gradients provide an axiomatic formulation of attribution, but their practical use in deep GNNs typically relies on finite-sample numerical approximations to the path integral, requiring a trade-off between quadrature error and computational cost. This paper proposes APEX, a model-attribution co-design framework that makes the attribution integral exactly computable under a polynomial GNN architecture. The key component is PolyGIN, a GIN-style graph network whose message-passing, normalization, and transformation operations preserve a bounded multivariate polynomial form for scalar model scores, such as pre-softmax logits. We show that, for a PolyGIN with $L$ polynomial transformation blocks, the derivative along the attribution path has degree at most $2^L-1$. Therefore, Gauss--Legendre quadrature can evaluate the Aumann--Shapley path integral exactly, up to floating-point precision, with $2^{L-1}$ deterministic evaluation points. The resulting attributions can be computed at the feature level and then aggregated into node-level scores while preserving completeness. Experiments on synthetic and real-world graph benchmarks show that PolyGIN maintains competitive predictive performance, while the complete APEX framework achieves higher attribution fidelity than the compared baselines and substantially reduces the number of evaluations required for path integration.",
+  "authors": [
+   "Bizu Feng",
+   "Zhimu Yang",
+   "Shuming Wang",
+   "Shaode Yu",
+   "Yuan Cheng",
+   "Xiaojun Qian",
+   "Zixin Hu"
+  ],
+  "published": "2026-07-23T09:26:15Z",
+  "store_candidates": [
+   {
+    "eid": "e09775",
+    "name": "A Polynomial Architecture-Attribution Co-Design Framework for Exact Aumann-Shapley Attribution in GNNs",
+    "source": "arxiv:2607.21094v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.806
+   },
+   {
+    "eid": "e09468",
+    "name": "attribution mechanism",
+    "source": "arxiv:2607.21475v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.586
+   },
+   {
+    "eid": "e09888",
+    "name": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+    "source": "arxiv:2607.21779v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e08934",
+    "name": "convex optimization with graph structure",
+    "source": "arxiv:2607.22436v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.542
+   },
+   {
+    "eid": "e09051",
+    "name": "adaptive splines for GAMs",
+    "source": "arxiv:2607.21083v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.533
+   },
+   {
+    "eid": "e01988",
+    "name": "graphical representation",
+    "source": "Number line",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.533
+   },
+   {
+    "eid": "e05175",
+    "name": "graph theory",
+    "source": "Matrix (mathematics)",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.527
+   },
+   {
+    "eid": "e07205",
+    "name": "graph theory",
+    "source": "Graph theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.527
+   },
+   {
+    "eid": "e09644",
+    "name": "Implicit Geometry Tokens",
+    "source": "arxiv:2607.21595v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.525
+   },
+   {
+    "eid": "e05519",
+    "name": "Polynomial degree",
+    "source": "Polynomial",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.525
+   },
+   {
+    "eid": "e07145",
+    "name": "Analytic geometry",
+    "source": "Euclidean geometry",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.523
+   },
+   {
+    "eid": "e04595",
+    "name": "geometric analysis",
+    "source": "Geometrization conjecture",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.522
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21106v1",
+  "title": "AttriMem: Attribution-Guided Process Feedback for Agent Memory Learning",
+  "abstract": "Effective memory is crucial for LLM agents, yet constructing it effectively remains challenging. A memory-construction policy decides what information to extract, store, update, compress, or discard as interactions accumulate. Heuristic memory methods rely on subjective, task-specific rules, which can misalign with downstream objectives and limit cross-task adaptability. RL-based methods, by contrast, learn from task feedback but mainly use outcome- or module-level rewards. These coarse signals indicate task success but cannot identify which intermediate memory contents support the final answer, creating a fine-grained credit-assignment bottleneck. However, constructing such process feedback is prohibitively difficult because intermediate memory decisions lack unique ground-truth targets, while the appropriate credit varies with the agent's uncertain reasoning trajectory and therefore cannot be specified in advance. We propose AttriMem, an attribution-guided process-feedback framework for learning memory-construction policies with RL. AttriMem augments the global outcome reward with local rewards derived from token-level contributions to the final answer. Experiments on long-horizon dialogue question answering show that AttriMem outperforms retrieval-based, heuristic, and RL-based baselines, generalizes across benchmarks and answer models, stabilizes RL optimization.",
+  "authors": [
+   "Qinfeng Li",
+   "Yuntai Bao",
+   "Xinyan Yu",
+   "Hongze Chen",
+   "Wenqi Zhang",
+   "Xuhong Zhang"
+  ],
+  "published": "2026-07-23T09:35:34Z",
+  "store_candidates": [
+   {
+    "eid": "e08570",
+    "name": "LLM-agent memory evaluation library",
+    "source": "arxiv:2607.21962v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.625
+   },
+   {
+    "eid": "e06373",
+    "name": "Long-term working memory",
+    "source": "Child prodigy",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.613
+   },
+   {
+    "eid": "e09758",
+    "name": "Workflow-Localized Mechanism Learning: Attribution-Guided Repair and Knowledge Reuse for Structured Agent Skills",
+    "source": "arxiv:2607.20999v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.612
+   },
+   {
+    "eid": "e09468",
+    "name": "attribution mechanism",
+    "source": "arxiv:2607.21475v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.597
+   },
+   {
+    "eid": "e08230",
+    "name": "voluntary memory in agents",
+    "source": "arxiv:2607.20972v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.597
+   },
+   {
+    "eid": "e08228",
+    "name": "cue-anchored memory for agents",
+    "source": "arxiv:2607.20972v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.594
+   },
+   {
+    "eid": "e09721",
+    "name": "Process Reinforcement through Implicit Rewards",
+    "source": "arxiv:2502.01456v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.591
+   },
+   {
+    "eid": "e09001",
+    "name": "regression in LLM agent skills",
+    "source": "arxiv:2607.22520v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.59
+   },
+   {
+    "eid": "e10010",
+    "name": "Solving math word problems with process- and outcome-based feedback",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.59
+   },
+   {
+    "eid": "e09923",
+    "name": "Ground Truth First: A Longitudinal Evaluation Instrument for Agent Memory, and the Tenure Crossover in Memory-Architecture Rankings",
+    "source": "arxiv:2607.21962v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.589
+   },
+   {
+    "eid": "e10011",
+    "name": "Training language models to follow instructions with human feedback",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.588
+   },
+   {
+    "eid": "e09008",
+    "name": "reinforcement learning agent for alternative route decisions",
+    "source": "arxiv:2607.22525v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.58
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21111v1",
+  "title": "TOUR: A Trajectory-Level Unlearning Benchmark for Offline Reinforcement Learning",
+  "abstract": "Offline Reinforcement Learning (RL) agents are trained on fixed behavioral trajectories, which makes trajectory-level deletion important when selected data must be removed after training. Evaluating such deletion is difficult because a lower membership score can reflect trajectory removal, residual memorization visible to another attack, or policy collapse that destroys useful behavior. We introduce Trajectory-level memOrization and Unlearning in offline RL (TOUR), a benchmark that combines trajectory-level partitioning, matched non-member controls, retraining references, retained-performance anchors, and multi-attack privacy auditing. Across D4RL locomotion experiments and an exploratory AntMaze extension, TOUR shows that common deletion baselines have environment-dependent privacy-utility behavior. Retraining and fine-tuning often provide stronger retained-utility references than uniform GA+Refit, while TrajDeleter remains a useful comparator but is not uniformly stronger under the same audit. Reference-model, threshold, deviation, equivalence, action-error, representation-based, and query-limited attacks further show that a single likelihood-based membership score can overstate deletion quality. In the evaluated settings, conclusions about offline RL unlearning are therefore not stable under single-score auditing. They depend on matched non-member construction, retraining-relative calibration, attack family, retained utility, and explicit scope for diagnostic architecture or component-level evidence.",
+  "authors": [
+   "Chaofan Pan",
+   "Lingfei Ren",
+   "Xiangyu Jiang",
+   "Yanhua Li",
+   "Xuemei Cao",
+   "Xiangkun Wang",
+   "Hao Yu",
+   "Wei Wei",
+   "Xin Yang"
+  ],
+  "published": "2026-07-23T09:40:40Z",
+  "store_candidates": [
+   {
+    "eid": "e09777",
+    "name": "TOUR: A Trajectory-Level Unlearning Benchmark for Offline Reinforcement Learning",
+    "source": "arxiv:2607.21111v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.794
+   },
+   {
+    "eid": "e09961",
+    "name": "Deconstructing Off-Policy Ratios: Entropy-Scaled Trust Regions for Asynchronous Reinforcement Learning",
+    "source": "arxiv:2607.22186v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.601
+   },
+   {
+    "eid": "e09276",
+    "name": "fair unlearning evaluation",
+    "source": "arxiv:2607.21300v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.6
+   },
+   {
+    "eid": "e09008",
+    "name": "reinforcement learning agent for alternative route decisions",
+    "source": "arxiv:2607.22525v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.583
+   },
+   {
+    "eid": "e09334",
+    "name": "representation-level class unlearning",
+    "source": "arxiv:2607.21353v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.581
+   },
+   {
+    "eid": "e09782",
+    "name": "One More Turn, Less Regret: A Regret-Based Multi-Turn Benchmark for LLMs' Clarification Policies",
+    "source": "arxiv:2607.21143v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e09054",
+    "name": "reinforcement learning faithfulness",
+    "source": "arxiv:2607.21090v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.579
+   },
+   {
+    "eid": "e09103",
+    "name": "route planning and failure prediction",
+    "source": "arxiv:2607.21156v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e08942",
+    "name": "learning-rate schedule necessity",
+    "source": "arxiv:2607.22444v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e09085",
+    "name": "regret-based evaluation framework",
+    "source": "arxiv:2607.21143v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e09909",
+    "name": "When Is a Learned Command Adapter Worth It? Closed-Loop Identification and Counterfactual Auditing of Frozen Locomotion Policies",
+    "source": "arxiv:2607.21867v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e08175",
+    "name": "error reduction",
+    "source": "arxiv:2607.20939v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21120v1",
+  "title": "Relative Value Learning",
+  "abstract": "In reinforcement learning, critics typically estimate absolute state values $V(s)$, estimating how good a particular situation is in isolation. However, it turns out that only differences in value are relevant for control. Motivated by this, we propose Relative Value Learning (RV), a framework that learns value differences directly via an antisymmetric function $\u0394(s_i, s_j) = V(s_i) - V(s_j)$. We introduce a pairwise Bellman operator and prove it is a $\u03b3$-contraction with a unique fixed point equal to the true value differences, derive well-posed $1$-step, $n$-step and $\u03bb$-return targets and reconstruct generalized advantage estimation from pairwise differences to obtain an unbiased policy-gradient estimator (R-GAE). Beyond theoretical results, we integrate RV with PPO and achieve competitive performance on the Atari benchmark (49 ALE games) compared to standard PPO, indicating that relative value estimation is an effective alternative to absolute critics.",
+  "authors": [
+   "Marc H\u00f6ftmann",
+   "Jan Robine",
+   "Stefan Harmeling"
+  ],
+  "published": "2026-07-23T09:55:45Z",
+  "store_candidates": [
+   {
+    "eid": "e14081",
+    "name": "contrastive learning",
+    "source": "hf:tasksource/ModernBERT-large-nli",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.61
+   },
+   {
+    "eid": "e07564",
+    "name": "reverse mathematics analysis",
+    "source": "arxiv:2606.29802v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.597
+   },
+   {
+    "eid": "e08901",
+    "name": "Koopman operator learning",
+    "source": "arxiv:2607.22399v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.597
+   },
+   {
+    "eid": "e09008",
+    "name": "reinforcement learning agent for alternative route decisions",
+    "source": "arxiv:2607.22525v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.587
+   },
+   {
+    "eid": "e09054",
+    "name": "reinforcement learning faithfulness",
+    "source": "arxiv:2607.21090v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.581
+   },
+   {
+    "eid": "e08586",
+    "name": "meta-skill cultivation via reinforcement learning",
+    "source": "arxiv:2607.21971v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.579
+   },
+   {
+    "eid": "e09321",
+    "name": "contrastive learning unified representation",
+    "source": "arxiv:2607.21343v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.579
+   },
+   {
+    "eid": "e09777",
+    "name": "TOUR: A Trajectory-Level Unlearning Benchmark for Offline Reinforcement Learning",
+    "source": "arxiv:2607.21111v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.577
+   },
+   {
+    "eid": "e07661",
+    "name": "statistical learning rates",
+    "source": "arxiv:2607.01266v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e09926",
+    "name": "Teaching LLMs to Self-Evolve: Cultivating Core Meta-Skills with Reinforcement Learning",
+    "source": "arxiv:2607.21971v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e09932",
+    "name": "Learning as Reasoning Unfolds: Progressive Rollout Allocation for Efficient Reinforcement Learning",
+    "source": "arxiv:2607.22002v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e02934",
+    "name": "real analysis",
+    "source": "Andrey Kolmogorov",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.565
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21130v1",
+  "title": "Hardware-Software Co-Design for Float16 On-Device Training on RISC-V Single-Core",
+  "abstract": "By leveraging standard RISC-V extensions, namely Zfh (scalar float16) and Zvfh (vector float16), this work proposes an open-source framework to enable complete on-device training on resource-constrained RISC-V single-core. Our approach allows memory footprint reduction by about 50% as compared to using float32 and with minimal model performance degradation. We also facilitate transfer learning and fine-tuning scenarios by incorporating layer-freezing capabilities. Our work builds onto AIfES, an open-source, modular and generic DNN training and inference framework for embedded systems that can be extended with custom hardware-specific functions. The benefits of float16 is further emphasized by outlining the low area overhead of Zfh on a RV64GC super-scalar out-of-order FPGA softcore (+1.15% LUT6 and +0.05% FF at 175MHz). Finally, we discuss the architecture of a Zvfh implementation within the same RISC-V core.",
+  "authors": [
+   "Benjamin Hubinet",
+   "Pierre-Alain Moellic",
+   "Olivier Savry",
+   "Olivier Potin",
+   "Jean-Baptiste Rigaud"
+  ],
+  "published": "2026-07-23T10:06:11Z",
+  "store_candidates": [
+   {
+    "eid": "e08184",
+    "name": "VQC depth on noisy hardware",
+    "source": "arxiv:2607.20943v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e08996",
+    "name": "16.2% faster fine-tuning with 4.5% memory reduction",
+    "source": "arxiv:2607.22489v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e09133",
+    "name": "comparable performance, better scalability",
+    "source": "arxiv:2607.21186v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e08535",
+    "name": "CPU-only deployment",
+    "source": "arxiv:2607.21927v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e08625",
+    "name": "VIGOR coding performance",
+    "source": "arxiv:2607.22002v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e09568",
+    "name": "VCSD performance",
+    "source": "arxiv:2607.21556v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.532
+   },
+   {
+    "eid": "e09059",
+    "name": "computational efficiency",
+    "source": "arxiv:2607.21098v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.53
+   },
+   {
+    "eid": "e08175",
+    "name": "error reduction",
+    "source": "arxiv:2607.20939v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.528
+   },
+   {
+    "eid": "e09707",
+    "name": "Visual Instruction Tuning",
+    "source": "arxiv:2304.08485v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.525
+   },
+   {
+    "eid": "e08727",
+    "name": "benchmark performance",
+    "source": "arxiv:2607.22083v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.524
+   },
+   {
+    "eid": "e08137",
+    "name": "benchmark performance",
+    "source": "arxiv:2607.20918v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.524
+   },
+   {
+    "eid": "e08887",
+    "name": "KV cache speedup",
+    "source": "arxiv:2607.22389v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.522
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21187v1",
+  "title": "Case study: proving sqrt(2) irrational with LPTP and an LLM",
+  "abstract": "We present the interactions with an LLM (Large Language Model) aiming at proving that the square root of 2 is not a rational number in an LP (Logic Programming) context. We start from a few basic pure logic programming predicate definitions. We rely on the LPTP (Logic Program Theorem Prover) system for stating and proving properties about logic programs. As the proof language of LPTP is based on natural deduction, the proofs are human readable. In our case study, we sketch in LPTP the usual proof showing the irrationality of the square root of 2. Then we describe the interactions we had with the LLM. We end up with a complete formal proof, partially generated by an LLM and fully proof-checked by LPTP.",
+  "authors": [
+   "Fred Mesnard",
+   "\u00c9tienne Payet",
+   "Wim Vanhoof"
+  ],
+  "published": "2026-07-23T11:15:38Z",
+  "store_candidates": [
+   {
+    "eid": "e09789",
+    "name": "Case study: proving sqrt(2) irrational with LPTP and an LLM",
+    "source": "arxiv:2607.21187v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.799
+   },
+   {
+    "eid": "e09291",
+    "name": "LLMs map protocols to logic",
+    "source": "arxiv:2607.21307v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.598
+   },
+   {
+    "eid": "e09794",
+    "name": "Case study: solving P-99 with LPTP and an LLM",
+    "source": "arxiv:2607.21196v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.595
+   },
+   {
+    "eid": "e07223",
+    "name": "reasoning",
+    "source": "Inductive reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.583
+   },
+   {
+    "eid": "e02428",
+    "name": "logical system",
+    "source": "Term logic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e01885",
+    "name": "logical system",
+    "source": "Modal logic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e06218",
+    "name": "logical system",
+    "source": "Type theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e05590",
+    "name": "logical system",
+    "source": "Prior Analytics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e01143",
+    "name": "logical system",
+    "source": "First-order logic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e09580",
+    "name": "LLM moral reasoning",
+    "source": "arxiv:2607.21558v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e02027",
+    "name": "logically contradictory statement",
+    "source": "Paradox",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e03775",
+    "name": "mathematical logic",
+    "source": "Model theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.569
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21197v1",
+  "title": "Declarative Problem Solving in UAM Strategic Deconfliction",
+  "abstract": "The growing demand for Urban Air Mobility (UAM) introduces significant challenges in airspace management, particularly within densely populated metropolitan regions. As the number of aerial vehicles-such as drones, air taxis, and helicopters-continues to rise, so does the risk of mid-air collisions and conflicts with existing air traffic and obstacles. Ensuring safe and efficient UAM operations requires robust strategic deconfliction mechanisms. We propose an Answer Set Programming (ASP) based approach for strategic deconfliction, focusing on time synchronization and route optimization for conflict-free flight plans. The solution is benchmarked against Constraint Programming (CP), emphasizing scalability and resource use. Results show that ASP offers faster execution and better scalability for small to medium cases, while CP maintains stable memory but degrades with complexity.",
+  "authors": [
+   "Gioacchino Sterlicchio",
+   "Angelo Oddi",
+   "Riccardo Rasconi",
+   "Francesca Alessandra Lisi"
+  ],
+  "published": "2026-07-23T11:18:34Z",
+  "store_candidates": [
+   {
+    "eid": "e09795",
+    "name": "Declarative Problem Solving in UAM Strategic Deconfliction",
+    "source": "arxiv:2607.21197v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.741
+   },
+   {
+    "eid": "e01359",
+    "name": "problem solving",
+    "source": "Heuristic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e04601",
+    "name": "problem solving",
+    "source": "George P\u00f3lya",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e09625",
+    "name": "rapid automation deployment",
+    "source": "arxiv:2607.21577v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e08636",
+    "name": "maximizing incident response time",
+    "source": "arxiv:2607.22009v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e01355",
+    "name": "approach to problem solving",
+    "source": "Heuristic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e08637",
+    "name": "adaptive AD prioritization",
+    "source": "arxiv:2607.22009v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e09133",
+    "name": "comparable performance, better scalability",
+    "source": "arxiv:2607.21186v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.534
+   },
+   {
+    "eid": "e09212",
+    "name": "crammed trajectories",
+    "source": "arxiv:2607.21231v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.532
+   },
+   {
+    "eid": "e09599",
+    "name": "control strategy prioritization",
+    "source": "arxiv:2607.21559v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.531
+   },
+   {
+    "eid": "e01427",
+    "name": "decision-making",
+    "source": "Intuition",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.529
+   },
+   {
+    "eid": "e09242",
+    "name": "multi-agent coordination",
+    "source": "arxiv:2607.21268v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.529
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21200v1",
+  "title": "Transformer-based Diffusion models for Hydrological Time Series Probabilistic Imputation and Forecasting",
+  "abstract": "The modeling of hydrometeorological time series with limited observations is a key challenge in the monitoring of hydro-systems and water resources, as well as for flood or drought risk assessment. Due to the high variability of the underlying processes and the sparsity of available measurements, traditional statistical approaches often struggle to accurately represent their dynamics. In this context, recent advances in deep learning offer a promising direction for improving the representation and generation of complex temporal processes sampled at several observation sites. This study investigates the application of transformer-based diffusion models to the simulation and reconstruction of hydrological time series. The proposed framework is applied to the joint modeling of water quantity and quality at six sites spread across three adjacent headwater catchments located in North-East France on a limestone plateau covered by forests and field crops. The model is calibrated and validated using available observational data, which has been quality controlled and corrected for sensor drift and malfunction through collaborative efforts by LNE metrology expertise and Andra monthly quality control over more than 15 years. Its performance is compared with several established baseline approaches commonly used for time series modeling. Quantitative evaluation metrics are employed to assess the ability of the proposed method to reproduce key temporal characteristics of the observed signals in two settings: the imputation of incomplete time series and the forecasting of upcoming hydrological conditions. Results support the effectiveness of the transformer-based approach and highlight its capacity to capture and simulate the complex patterns present in hydrological data. In particular, the results indicate that diffusion models can efficiently sample realistic time series distributions under observation settings with variable missing data for both forecasting and imputation.",
+  "authors": [
+   "Ferdinand Bhavsar",
+   "Lionel Benoit",
+   "Maxime Savatier",
+   "Edith Gabriel"
+  ],
+  "published": "2026-07-23T11:19:27Z",
+  "store_candidates": [
+   {
+    "eid": "e08118",
+    "name": "diffusion model fine-tuning",
+    "source": "arxiv:2607.20913v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.648
+   },
+   {
+    "eid": "e09971",
+    "name": "Hopformer: Homogeneity-Pursuit Transformer for Time Series Forecasting",
+    "source": "arxiv:2607.22299v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.621
+   },
+   {
+    "eid": "e09398",
+    "name": "conditional diffusion model",
+    "source": "arxiv:2607.21421v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.598
+   },
+   {
+    "eid": "e09739",
+    "name": "Source-Prior-Driven Selective Adaptation for Efficient Diffusion Model Finetuning",
+    "source": "arxiv:2607.20913v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.591
+   },
+   {
+    "eid": "e13824",
+    "name": "multilingual",
+    "source": "hf:hivetrace/gliner-guard-omni",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.415
+   },
+   {
+    "eid": "e08407",
+    "name": "hybrid forecasting performance",
+    "source": "arxiv:2607.21785v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.578
+   },
+   {
+    "eid": "e13829",
+    "name": "Transformer-based",
+    "source": "hf:ibm-granite/granite-embedding-small-english-r2",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e08405",
+    "name": "hybrid probabilistic forecasting",
+    "source": "arxiv:2607.21785v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.572
+   },
+   {
+    "eid": "e09835",
+    "name": "Context-weighted Discrete Flow Matching",
+    "source": "arxiv:2607.21427v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.569
+   },
+   {
+    "eid": "e09517",
+    "name": "discrete diffusion language model",
+    "source": "arxiv:2607.21519v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e08775",
+    "name": "diffusion approximation error",
+    "source": "arxiv:2607.22199v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   },
+   {
+    "eid": "e09737",
+    "name": "RadioTrace: Transmitter-Aware Diffusion for Radio Map Estimation without Deployment-Time Fine-Tuning",
+    "source": "arxiv:2607.20909v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e13576",
+    "name": "implemented with transformers",
+    "source": "hf:Qwen/Qwen2.5-Math-PRM-7B",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.552
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21202v1",
+  "title": "Hybrid MKNF with Classical Negation in the Rule Component",
+  "abstract": "Hybrid MKNF knowledge bases under the well-founded semantics integrate Description Logics with Logic Programming. However, they do not support classical negation in the rule component, limiting their ability to represent explicit negative knowledge. This limitation is particularly significant in safety-critical applications, where reasoning often requires explicit negative information rather than interpreting the absence of information as evidence of absence. To address this issue, we introduce an extension of Hybrid MKNF that supports classical negation in the rule component. We formally define the syntax and semantics of the extended language and present a general procedure for computing its well-founded model.",
+  "authors": [
+   "Arun Raveendran Nair Sheela",
+   "Christophe Rey",
+   "Florence De Grancey"
+  ],
+  "published": "2026-07-23T11:20:15Z",
+  "store_candidates": [
+   {
+    "eid": "e09798",
+    "name": "Hybrid MKNF with Classical Negation in the Rule Component",
+    "source": "arxiv:2607.21202v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.79
+   },
+   {
+    "eid": "e09799",
+    "name": "A New Well-Supported Semantics for Description Logic Programs",
+    "source": "arxiv:2607.21203v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.57
+   },
+   {
+    "eid": "e01433",
+    "name": "negation",
+    "source": "Intuitionism",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e08538",
+    "name": "semantic-guided logical reasoning",
+    "source": "arxiv:2607.21933v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e00876",
+    "name": "logical fallacy",
+    "source": "Circular reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e09800",
+    "name": "How Rules Represent Causal Knowledge: Causal Modeling with Probabilistic Logic Programming",
+    "source": "arxiv:2607.21208v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.539
+   },
+   {
+    "eid": "e07620",
+    "name": "semantic characterisation",
+    "source": "arxiv:2606.31870v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.538
+   },
+   {
+    "eid": "e09561",
+    "name": "multimodal reasoning reinforcement",
+    "source": "arxiv:2607.21552v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e06181",
+    "name": "classical logic",
+    "source": "Truth value",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e07575",
+    "name": "weak negation modal axioms",
+    "source": "arxiv:2606.30297v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.535
+   },
+   {
+    "eid": "e00022",
+    "name": "Classical logic",
+    "source": "Classical logic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.535
+   },
+   {
+    "eid": "e08053",
+    "name": "conditional logic extensions",
+    "source": "arxiv:2607.21320v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.535
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21219v1",
+  "title": "DART: A Degradation-Aware Recurrent Transformer for Archival Film Restoration",
+  "abstract": "Archival film restoration is a challenging problem because historical footage contains compound degradations such as scratches, dust, blur, noise, flicker, and photometric aging, while clean reference videos are unavailable. Existing video restoration methods largely treat these degradations implicitly, reconstructing frames without explicit knowledge of where damage occurs or how severe it is. We propose DART, a degradation-aware recurrent transformer for archival film restoration. DART predicts and propagates a soft defect mask through time, using it to guide temporal fusion and condition the restoration network on both damage location and severity. This makes the restoration process explicitly aware of film artifacts rather than relying only on reconstruction losses. Experiments on real archival benchmarks show that DART improves no-reference perceptual quality over prior restoration architectures while remaining compact and efficient, producing cleaner and more temporally consistent restorations of structured film damage.",
+  "authors": [
+   "Miko\u0142aj Jastrz\u0119bski",
+   "Wojciech Koz\u0142owski",
+   "Kamil Adamczewski"
+  ],
+  "published": "2026-07-23T11:34:51Z",
+  "store_candidates": [
+   {
+    "eid": "e09815",
+    "name": "SHIFT: Self-reconstruction Harnesses Implicit Fine-grained Thinking for Retrieval",
+    "source": "arxiv:2607.21333v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e09308",
+    "name": "SHIFT fine-grained reconstruction",
+    "source": "arxiv:2607.21333v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e08253",
+    "name": "predicts latents, reconstructs frames",
+    "source": "arxiv:2607.20988v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e08544",
+    "name": "retrieval-augmented document restoration",
+    "source": "arxiv:2607.21936v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e09918",
+    "name": "Leveraging External Knowledge for Historical Document Restoration via Retrieval-Augmented Large Language Models",
+    "source": "arxiv:2607.21936v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.535
+   },
+   {
+    "eid": "e08542",
+    "name": "delays reasoning degradation",
+    "source": "arxiv:2607.21933v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.532
+   },
+   {
+    "eid": "e09538",
+    "name": "decode latency improvement",
+    "source": "arxiv:2607.21535v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.53
+   },
+   {
+    "eid": "e08345",
+    "name": "attention latency reduction",
+    "source": "arxiv:2607.21731v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.524
+   },
+   {
+    "eid": "e09620",
+    "name": "defect detection automation",
+    "source": "arxiv:2607.21577v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.523
+   },
+   {
+    "eid": "e08853",
+    "name": "reconstructing past interactions",
+    "source": "arxiv:2607.22352v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.522
+   },
+   {
+    "eid": "e09045",
+    "name": "real-time recognition",
+    "source": "arxiv:2607.21075v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.522
+   },
+   {
+    "eid": "e09853",
+    "name": "ElasticTTT: Prior-Preserving Test-Time Tuning for Video Editing",
+    "source": "arxiv:2607.21529v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.521
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21273v1",
+  "title": "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works",
+  "abstract": "Dense per-step supervision is an appealing remedy for sparse-reward, long-horizon LLM agents: reward the agent for predicting its next observation, and memory should follow. We show that under group-normalized RL (GRPO), this recipe does not merely fail -- it destroys the policy. Across Qwen3-1.7B/4B/8B on ALFWorld, a potential-based prediction reward drives every run into a degenerate absorbing state (prediction accuracy -&gt; 1.0, task success -&gt; 0,episode length pinned at the horizon): the \"dark room\" pathology, built automatically by the optimizer. A single-factor ablation localizes the cause -- removing only GRPO's std normalization turns the same reward from catastrophic (0%) into baseline parity -- and a two-line proposition explains why: in all-fail groups the z-scored advantage is invariant to the shaping coefficient, so bounded rewards become unbounded pressure and annealing cannot help. Our central insight generalizes this: what z-scoring amplifies is a dense signal's within-group variance while all-fail groups dominate, so signals whose variance decays by mastery are structurally amplifier-safe.This variance-profile criterion retrodicts our collapses, carries preregistered predictions for arms that had not yet run, and is consistent with published reward-channel successes (a compatibility check, not an independent test). Finally, a controlled signal-delivery matrix (identical signal, varying only the consumption mechanism) shows the reward channel is at best neutral while the auxiliary-loss channel gains ~20 points -- and a shuffled-gold placebo matches the true-gold arm, so the gap survives without correct labels. Endpoints are single-seed; seed replication and group-size controls are preregistered and in progress.",
+  "authors": [
+   "Yu Wang"
+  ],
+  "published": "2026-07-23T12:50:18Z",
+  "store_candidates": [
+   {
+    "eid": "e09807",
+    "name": "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works",
+    "source": "arxiv:2607.21273v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.815
+   },
+   {
+    "eid": "e13577",
+    "name": "reward model for reasoning verification",
+    "source": "hf:Qwen/Qwen2.5-Math-PRM-7B",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.611
+   },
+   {
+    "eid": "e08622",
+    "name": "efficient RL with reward variance",
+    "source": "arxiv:2607.22002v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.605
+   },
+   {
+    "eid": "e09001",
+    "name": "regression in LLM agent skills",
+    "source": "arxiv:2607.22520v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.603
+   },
+   {
+    "eid": "e09721",
+    "name": "Process Reinforcement through Implicit Rewards",
+    "source": "arxiv:2502.01456v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.597
+   },
+   {
+    "eid": "e10004",
+    "name": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
+    "source": "arxiv:2607.22520v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.592
+   },
+   {
+    "eid": "e09894",
+    "name": "Adversarial Prompts for Acceptance Collapse in Speculative Decoding",
+    "source": "arxiv:2607.21804v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.587
+   },
+   {
+    "eid": "e08542",
+    "name": "delays reasoning degradation",
+    "source": "arxiv:2607.21933v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.58
+   },
+   {
+    "eid": "e09811",
+    "name": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+    "source": "arxiv:2607.21291v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e08871",
+    "name": "reward hacking",
+    "source": "arxiv:2607.22368v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e09727",
+    "name": "Group-in-Group Policy Optimization for LLM Agent Training",
+    "source": "arxiv:2504.20073v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.572
+   },
+   {
+    "eid": "e09049",
+    "name": "prediction error reduction",
+    "source": "arxiv:2607.21080v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.572
+   }
+  ]
+ }
+]

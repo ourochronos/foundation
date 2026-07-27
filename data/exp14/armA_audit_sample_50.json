@@ -1,0 +1,402 @@
+[
+ {
+  "kind": "result",
+  "object": "domain-specific pretraining",
+  "page": "arxiv:2607.22458v1",
+  "pid": "P_ASSERTS",
+  "statement": "Domain-specific pretraining (BirdNET for birds, BEATs-bio) does not improve recovery of phylogenetic signal compared to general-purpose foundation models on bird vocalizations.",
+  "subject": "audio foundation models"
+ },
+ {
+  "kind": "method",
+  "object": "memory-augmented NMF on LPC",
+  "page": "arxiv:2607.22086v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes MemNMF, a constrained reconstruction method that operates on Linear Predictive Coding spectrum for anomalous sound detection.",
+  "subject": "MemNMF"
+ },
+ {
+  "kind": "result",
+  "object": "select copyrighted works despite alternatives",
+  "page": "arxiv:2607.21799v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that comparing state-of-the-art LLM agents against a human baseline, agents select copyrighted works despite the availability of public-domain alternatives.",
+  "subject": "LLM agents"
+ },
+ {
+  "kind": "method",
+  "object": "homoscedastic uncertainty weighting",
+  "page": "arxiv:2607.21885v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper adopts homoscedastic uncertainty weighting in ACE to adaptively balance the training objective of coarsened-graph loss and full-graph auxiliary loss with augmented node features.",
+  "subject": "Adaptive Complementary Enhancement"
+ },
+ {
+  "kind": "result",
+  "object": "distinguishes human from automated typing",
+  "page": "arxiv:2607.21758v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports a red-teaming study shows the Humanly Typing Detector distinguishes human hand typing from automated typing.",
+  "subject": "Humanly Typing Detector"
+ },
+ {
+  "kind": "result",
+  "object": "Improves ALFWorld/WebShop by 18.6%",
+  "page": "arxiv:2607.21419v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports PATS improves over strong baselines on ALFWorld and WebShop by up to 18.6%.",
+  "subject": "PATS"
+ },
+ {
+  "kind": "method",
+  "object": "statement audit verification",
+  "page": "arxiv:2607.22511v1",
+  "pid": "P_ASSERTS",
+  "statement": "CausalForge augments kernel verification with statement audit comparing each formal theorem against informal claim to ensure faithfulness of formalization.",
+  "subject": "CausalForge"
+ },
+ {
+  "kind": "method",
+  "object": "Bayesian hierarchical framework",
+  "page": "arxiv:2607.21745v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces Deep Sigma Point Processes that use a hierarchical Gaussian process framework with Bayesian inference to predict RCS in synthetic aperture radar imagery.",
+  "subject": "Deep Sigma Point Processes"
+ },
+ {
+  "kind": "result",
+  "object": "dense prediction failure",
+  "page": "arxiv:2607.21273v1",
+  "pid": "P_ASSERTS",
+  "statement": "Dense per-step prediction reward under GRPO drives degenerate absorbing states where prediction accuracy approaches 1.0 and task success collapses to 0.",
+  "subject": "GRPO reward channel"
+ },
+ {
+  "kind": "method",
+  "object": "credit assignment mechanism",
+  "page": "arxiv:2607.21013v1",
+  "pid": "P_ASSERTS",
+  "statement": "P-GRPO combines group-based relative advantages with PMI-inspired progressive token-level modulation to transform sparse rewards into fine-grained learning signals.",
+  "subject": "P-GRPO"
+ },
+ {
+  "kind": "method",
+  "object": "classifies 10-class damage causes",
+  "page": "arxiv:2607.21680v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes a Damage Cause Encoder that classifies 10-class damage causes from visible damage descriptions for use in autonomous bridge diagnostic agents.",
+  "subject": "Damage Cause Encoder"
+ },
+ {
+  "kind": "method",
+  "object": "reduces testing to pivot-based framework",
+  "page": "arxiv:2607.21958v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper instantiates the framework for Gumbel-max watermark and reduces token-level dependence testing to a pivot-induced sequential testing problem with explicit null distribution.",
+  "subject": "Rao-Blackwellized e-processes"
+ },
+ {
+  "kind": "method",
+  "object": "denoises reasoning traces for detection",
+  "page": "arxiv:2607.22098v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes REDE, a novel learning framework for denoising reasoning traces for hallucination detection in large reasoning models.",
+  "subject": "REDE"
+ },
+ {
+  "kind": "result",
+  "object": "87.07% test accuracy",
+  "page": "arxiv:2607.21680v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports QLoRA achieves 87.07% test accuracy on the Golden Testset (116 stratified samples).",
+  "subject": "QLoRA"
+ },
+ {
+  "kind": "result",
+  "object": "coverage improvement diverse topics",
+  "page": "arxiv:2607.22375v1",
+  "pid": "P_ASSERTS",
+  "statement": "IDEAgent achieves non-zero Yield on 8x more topics than baseline approaches.",
+  "subject": "IDEAgent"
+ },
+ {
+  "kind": "result",
+  "object": "RKHS asymptotically isometric to Euclidean",
+  "page": "arxiv:2607.21823v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper shows that, up to isotropic scaling, the Gaussian RBF reproducing kernel Hilbert space is asymptotically isometric to Euclidean space in the large bandwidth limit.",
+  "subject": "Gaussian RBF kernel"
+ },
+ {
+  "kind": "artifact",
+  "object": "embodied reasoning benchmark for MLLMs",
+  "page": "arxiv:2607.22014v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces MissionBench, a benchmark for mission-level evaluation of multimodal large language models in aerial 3D environments.",
+  "subject": "MissionBench"
+ },
+ {
+  "kind": "method",
+  "object": "Parameter-free GNN explainer",
+  "page": "arxiv:2607.21381v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes SeeExplainer, a parameter-free explainer to interpret graph neural networks by capturing synergistic effects among edges.",
+  "subject": "SeeExplainer"
+ },
+ {
+  "kind": "result",
+  "object": "deployment impact Pinterest",
+  "page": "arxiv:2607.22518v1",
+  "pid": "P_ASSERTS",
+  "statement": "PinEqualizer deployed at Pinterest for two years with significant improvements in fresh content exploration, overall user engagement, and content ecosystem health.",
+  "subject": "PinEqualizer"
+ },
+ {
+  "kind": "method",
+  "object": "polynomial message-passing",
+  "page": "arxiv:2607.21094v1",
+  "pid": "P_ASSERTS",
+  "statement": "PolyGIN is a GIN-style graph network whose operations preserve a bounded multivariate polynomial form for scalar model scores.",
+  "subject": "PolyGIN"
+ },
+ {
+  "kind": "method",
+  "object": "Granular-ball graph refinement mechanism",
+  "page": "arxiv:2607.21381v1",
+  "pid": "P_ASSERTS",
+  "statement": "SeeExplainer introduces a granular-ball graph refinement mechanism that decomposes a graph into disjoint granular-balls and constructs a structural graph to capture synergistic edge effects.",
+  "subject": "SeeExplainer"
+ },
+ {
+  "kind": "method",
+  "object": "Closed-loop anchor placement for faces",
+  "page": "arxiv:2607.21434v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes Adaptive Identity Anchoring (AIA), a method that places identity anchors via closed feedback loop scoring every generated frame and inserting image-face-swapped anchor at worst-scoring frames.",
+  "subject": "Adaptive Identity Anchoring"
+ },
+ {
+  "kind": "method",
+  "object": "Digital twins for adaptive interventions",
+  "page": "arxiv:2607.21403v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes a method to develop JITAI-Twins, digital twins of a target subpopulation for comparing candidate online algorithms before just-in-time adaptive intervention deployment.",
+  "subject": "JITAI-Twins"
+ },
+ {
+  "kind": "result",
+  "object": "state-of-art EEG performance",
+  "page": "arxiv:2607.22508v1",
+  "pid": "P_ASSERTS",
+  "statement": "bag-of-waves achieves performance competitive with state-of-the-art deep and foundation models across single-channel genotype clustering, dementia classification, and clinical event benchmarks.",
+  "subject": "bag-of-waves"
+ },
+ {
+  "kind": "result",
+  "object": "Excluded-pool auditing is minimax optimal",
+  "page": "arxiv:2607.21480v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proves that excluded-pool auditing is minimax rate-optimal for missed-mass certification, characterizing label complexity via a matching finite-corpus lower bound.",
+  "subject": "coverage audit framework"
+ },
+ {
+  "kind": "result",
+  "object": "single policy across five cities",
+  "page": "arxiv:2607.21831v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports a single trained city-policy instance executed across all five city graphs, with heterogeneous outcomes on unseen road networks.",
+  "subject": "graph neural network traffic control"
+ },
+ {
+  "kind": "method",
+  "object": "Framework for RAG prompt adaptation",
+  "page": "arxiv:2607.21324v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces GRADRAG, a framework for cross-component prompt adaptation that models the RAG pipeline as a computational graph and propagates structured evaluation feedback.",
+  "subject": "GRADRAG"
+ },
+ {
+  "kind": "result",
+  "object": "cross-benchmark generalization",
+  "page": "arxiv:2607.21106v1",
+  "pid": "P_ASSERTS",
+  "statement": "AttriMem generalizes across benchmarks and answer models while stabilizing RL optimization.",
+  "subject": "AttriMem"
+ },
+ {
+  "kind": "method",
+  "object": "integrates collaborative filtering",
+  "page": "arxiv:2607.21802v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes StARS integrates collaborative filtering with learnable scene representations to generate user-specific appropriateness scores.",
+  "subject": "StARS"
+ },
+ {
+  "kind": "result",
+  "object": "foundation models outperform fusion",
+  "page": "arxiv:2607.22068v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper demonstrates that improving a single strong foundation-model backbone together with retrieval-stage re-ranking is more effective than increasing architectural complexity through additional branches.",
+  "subject": "DINOv3-ConvNeXt"
+ },
+ {
+  "kind": "result",
+  "object": "Atari performance",
+  "page": "arxiv:2607.21120v1",
+  "pid": "P_ASSERTS",
+  "statement": "When integrated with PPO, Relative Value Learning achieves competitive performance on the Atari benchmark (49 ALE games).",
+  "subject": "Relative Value Learning"
+ },
+ {
+  "kind": "result",
+  "object": "interpretable reasoning traces",
+  "page": "arxiv:2607.22385v1",
+  "pid": "P_ASSERTS",
+  "statement": "AgentRCA produces transparent reasoning traces that explicitly link observed symptoms to underlying physical causes.",
+  "subject": "AgentRCA"
+ },
+ {
+  "kind": "result",
+  "object": "optimal bias-variance trade-off",
+  "page": "arxiv:2607.22299v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proves that Hopformer's Sparsity Pattern Aggregation achieves near-optimal bias-variance trade-off via an oracle inequality.",
+  "subject": "Hopformer"
+ },
+ {
+  "kind": "result",
+  "object": "Outperforms state-of-the-art baselines",
+  "page": "arxiv:2607.21381v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports SeeExplainer outperforms state-of-the-art baselines on several graph classification datasets.",
+  "subject": "SeeExplainer"
+ },
+ {
+  "kind": "result",
+  "object": "vetting F1 0.86 and 88% accuracy",
+  "page": "arxiv:2607.21835v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that for vetting 16 MCP-style tools including 8 malicious variants, ASP reaches a deny-class F1 of 0.86 and 88% accuracy using description, syscall, and observed-effect evidence.",
+  "subject": "ToolGuardian"
+ },
+ {
+  "kind": "result",
+  "object": "mechanistic understanding",
+  "page": "arxiv:2607.21005v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper provides mechanistic understanding of loss spikes through the lens of weight-norm criticality.",
+  "subject": "weight-norm criticality"
+ },
+ {
+  "kind": "method",
+  "object": "transforms outputs to structured tokens",
+  "page": "arxiv:2607.22153v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper introduces Industrial Tokenization, a conceptual interface for transforming source-specific analytical outputs into structured Industrial Tokens.",
+  "subject": "Industrial Tokenization"
+ },
+ {
+  "kind": "result",
+  "object": "outperforms unsimplified agent 87% vs 54%",
+  "page": "arxiv:2607.21887v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports 87.4% for the level-appropriate agent compared to 54.1% for the unsimplified agent in producing dialogue at the learner's proficiency level.",
+  "subject": "level-appropriate conversational agent"
+ },
+ {
+  "kind": "result",
+  "object": "federated accuracy-communication",
+  "page": "arxiv:2607.21074v1",
+  "pid": "P_ASSERTS",
+  "statement": "Experiments on federated fine-tuning of ViT-B/16 and ViT-L/16 demonstrate improved accuracy-communication trade-offs and reduced server computation.",
+  "subject": "SpecTraL"
+ },
+ {
+  "kind": "result",
+  "object": "training data quality dominant lever",
+  "page": "arxiv:2607.21861v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that across roughly 100 training runs, training-data quality is the dominant lever on closed-book accuracy, outweighing LoRA rank, learning rate, and two alternative architectures combined.",
+  "subject": "LoRA"
+ },
+ {
+  "kind": "method",
+  "object": "rank discovery",
+  "page": "arxiv:2607.21074v1",
+  "pid": "P_ASSERTS",
+  "statement": "SpecTraL leverages the Spiked Covariance Model from Random Matrix Theory to analytically separate the global consensus signal from non-IID noise.",
+  "subject": "SpecTraL"
+ },
+ {
+  "kind": "result",
+  "object": "MASE improvement forecasting",
+  "page": "arxiv:2607.22299v1",
+  "pid": "P_ASSERTS",
+  "statement": "Hopformer sets new state of the art, improving MASE by average of 6.56% across synthetic and real-world forecasting benchmarks.",
+  "subject": "Hopformer"
+ },
+ {
+  "kind": "result",
+  "object": "no statistically significant FLA reduction",
+  "page": "arxiv:2607.21887v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper reports that a preliminary pilot study with Japanese university students did not yield statistically significant evidence that the system reduces foreign language anxiety levels, likely due to small sample size.",
+  "subject": "level-appropriate conversational agent"
+ },
+ {
+  "kind": "result",
+  "object": "C to CUDA speedup",
+  "page": "arxiv:2607.20908v1",
+  "pid": "P_ASSERTS",
+  "statement": "CudaPerf achieves up to 5X improvements in speedup on C to CUDA transformations compared to Qwen-3-32B.",
+  "subject": "CudaPerf"
+ },
+ {
+  "kind": "result",
+  "object": "exposes embodied reasoning limitations",
+  "page": "arxiv:2607.22014v1",
+  "pid": "P_ASSERTS",
+  "statement": "Across 22 open- and closed-source MLLMs evaluated on MissionBench, the strongest model succeeds on fewer than 35% of missions compared to 84.4% human performance.",
+  "subject": "MissionBench"
+ },
+ {
+  "kind": "conjecture",
+  "object": "Surprisal theory is tautological",
+  "page": "arxiv:2607.21574v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper argues that surprisal theory is a tautology without further constraint: for any non-negative difficulty measure, there exists a language model whose surprisal is an affine function of it.",
+  "subject": "surprisal theory"
+ },
+ {
+  "kind": "method",
+  "object": "Converts pre-trained LLMs to sparse models",
+  "page": "arxiv:2607.21291v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper proposes AdaDSF, a method that converts off-the-shelf pre-trained LLMs into depth-sparse models without full retraining.",
+  "subject": "AdaDSF"
+ },
+ {
+  "kind": "result",
+  "object": "layer-level interpretability",
+  "page": "arxiv:2607.22428v1",
+  "pid": "P_ASSERTS",
+  "statement": "Interactive layer selection and intervention controls enable artists to build practical layer-level intuition about how different pipeline components shape generated images.",
+  "subject": "interactive model bending"
+ },
+ {
+  "kind": "method",
+  "object": "2x2 circuit analysis for code models",
+  "page": "arxiv:2607.21491v1",
+  "pid": "P_ASSERTS",
+  "statement": "The paper extends concept-circuit extraction to a 2x2 design (Python and Rust crossed with Qwen2.5-Coder and DeepSeek-Coder), measuring 58-57 grammatical concepts identically across all cells.",
+  "subject": "concept-circuit extraction"
+ },
+ {
+  "kind": "result",
+  "object": "GARCH baseline comparison",
+  "page": "arxiv:2607.22491v1",
+  "pid": "P_ASSERTS",
+  "statement": "SUSA performs competitively with GARCH, achieving statistically significant QLIKE improvements for specific assets (IWM, XLP).",
+  "subject": "SUSA"
+ }
+]

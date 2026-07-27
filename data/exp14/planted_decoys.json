@@ -1,0 +1,72 @@
+[
+ {
+  "shard": 0,
+  "page": "arxiv:2607.21013v1",
+  "eid": "e09726",
+  "name": "RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning",
+  "source": "arxiv:2504.20073v2"
+ },
+ {
+  "shard": 0,
+  "page": "arxiv:2607.21200v1",
+  "eid": "e13824",
+  "name": "multilingual",
+  "source": "hf:hivetrace/gliner-guard-omni"
+ },
+ {
+  "shard": 1,
+  "page": "arxiv:2607.21332v1",
+  "eid": "e09621",
+  "name": "quality control framework",
+  "source": "arxiv:2607.21577v1"
+ },
+ {
+  "shard": 1,
+  "page": "arxiv:2607.21480v1",
+  "eid": "e08646",
+  "name": "improved rationale and inference quality",
+  "source": "arxiv:2607.22013v1"
+ },
+ {
+  "shard": 2,
+  "page": "arxiv:2607.21702v1",
+  "eid": "e08821",
+  "name": "supervised adaptation",
+  "source": "arxiv:2607.22300v1"
+ },
+ {
+  "shard": 2,
+  "page": "arxiv:2607.21779v1",
+  "eid": "e08304",
+  "name": "document-level stability analysis",
+  "source": "arxiv:2607.21010v1"
+ },
+ {
+  "shard": 3,
+  "page": "arxiv:2607.22086v1",
+  "eid": "e02919",
+  "name": "probability theory",
+  "source": "Andrey Kolmogorov"
+ },
+ {
+  "shard": 3,
+  "page": "arxiv:2607.22153v1",
+  "eid": "e09819",
+  "name": "Gradient Concentration, Not Weight Saliency, Explains Representation-Level Class Unlearning",
+  "source": "arxiv:2607.21353v1"
+ },
+ {
+  "shard": 4,
+  "page": "arxiv:2607.22355v1",
+  "eid": "e09854",
+  "name": "From Resource Flow to Executable Tests: Petri-Net-Guided LLM Test Generation for Concurrent Stateful Rust APIs",
+  "source": "arxiv:2607.21530v1"
+ },
+ {
+  "shard": 4,
+  "page": "arxiv:2607.22385v1",
+  "eid": "e13505",
+  "name": "Anatomical Entity Recognition",
+  "source": "hf:OpenMed/OpenMed-NER-AnatomyDetect-ElectraMed-109M"
+ }
+]

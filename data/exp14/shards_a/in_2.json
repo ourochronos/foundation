@@ -1,0 +1,228 @@
+[
+ {
+  "arxiv_id": "2607.21579v1",
+  "title": "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$",
+  "abstract": "Barzilai--Borwein (BB) method has shown strong practical performance in continuous optimization, yet its convergence dynamics remains poorly understood. In particular, a central unresolved question is whether BB converges superlinearly for almost every strictly convex quadratic problem and initialization. We provide a negative answer to this question. Specifically, for every finite dimension $n\\geq4$, we construct a nonempty open, hence positive-Lebesgue-measure, family of strictly convex quadratic problems and initial points for which the long Barzilai--Borwein method (BB1) converges but cannot converge root-superlinearly. More precisely, with the explicit constants $\u03c1_{\\min}=10^{-6},\u03c1_{\\max}=0.61$, every spectral component of the gradient is bounded above and below by the corresponding geometric sequence. Consequently, the gradient norm and the energy norm of the error satisfy two-sided geometric estimates with the same rates, while the objective gap satisfies the corresponding estimates with squared rates. In particular, all three quantities are bounded below by geometric sequences, ruling out superlinear convergence. The construction is highly nontrivial, based on a computer-assisted proof of a nonresonant, attracting seven-cycle of the projectivized BB dynamics in dimension four.",
+  "authors": [
+   "Dawei Li",
+   "Xiaotian Jiang",
+   "Mingyi Hong"
+  ],
+  "published": "2026-07-23T17:56:05Z"
+ },
+ {
+  "arxiv_id": "2607.21680v1",
+  "title": "Encoding Invisible Causation for Bridge Diagnostic Agents: Triple-Guided Retrieval-Augmented Fine-Tuning with QLoRA",
+  "abstract": "Bridge infrastructure deteriorates gradually, yet its root causes---salt intrusion, freezing, fatigue cracking, and others---remain invisible to the naked eye. Expert diagnosis relies on tacit knowledge built over years of practice. We address the challenge of automating this latent causal reasoning by proposing a Damage Cause Encoder that classifies 10-class damage causes from visible damage descriptions $S_i$ for use in autonomous bridge diagnostic agents. Our approach chains three components: (i)Knowledge Triple Extraction---a large language model extracts causal triples of the form (damage $\\xrightarrow{\\mathtt{caused\\_by}}$ cause) from 15--35 diagnostic PDF manuals and indexes them in a FAISS vector store; (ii)Retrieval-Augmented Context---at training and inference time, relevant causal triples $\\mathcal{C}_i$ are retrieved and concatenated with $S_i$, converting implicit domain knowledge into explicit Encoder context; (iii)Systematic Fine-tuning Comparison---we conduct a rigorous comparison of LoRA, QLoRA, and QA-LoRA on a fixed Golden Testset (116 stratified samples), demonstrating that QLoRA achieves the optimal trade-off: identical test accuracy (87.07%) to full-precision LoRA, 11% faster inference, 72% lower GPU memory, and superior generalization across diverse unseen inputs. A controlled Golden Testset---stratified, deduplicated, and difficulty-tagged---is introduced as a reusable benchmark contribution. QLoRA further outperforms LoRA by 13 percentage points on a 100-sample diverse evaluation spanning all 10 damage cause classes.These findings enable memory-efficient, high-accuracy diagnostic agents on consumer-grade hardware for edge deployment.",
+  "authors": [
+   "Takato Yasuno"
+  ],
+  "published": "2026-07-23T13:18:57Z"
+ },
+ {
+  "arxiv_id": "2607.21685v1",
+  "title": "Evaluation design conditions the expert-vs-auto MeSH gap: a controlled comparison of bag-of-words and BiomedBERT on the Cohen benchmark",
+  "abstract": "A systematic review begins with someone reading thousands of abstracts to identify the few that are relevant, and classifiers are used to prioritise that reading. Their inputs are often augmented with Medical Subject Headings (MeSH), assigned either by expert indexers weeks or months after publication or by automatic tools at once. To our knowledge the two have not been compared directly as classifier features, and no previous work has asked whether that comparison's outcome depends on how the classifier is evaluated. Using the Cohen et al. (2006) drug-class benchmark on three topics, we characterise a bag-of-words logistic regression classifier (seven reruns) and BiomedBERT (five seeds), then examine how the Statins result changes under alternative designs. Under the canonical 5-fold full-corpus design, the bag-of-words expert-vs-auto gap on Statins is +0.096 WSS@95%. Matching the corpus size to the smaller topics (n = 803) reduces it to +0.033 (95% bootstrap CI includes zero), and 10-fold cross-validation at full size to +0.021 (CI narrowly excludes zero). Under canonical evaluation BiomedBERT gives +0.020, within sampling noise of the bag-of-words 10-fold result. A power analysis indicates a Statins-sized effect would not have been detectable at the Opioids or ADHD variance, so those nulls are design-limited rather than informative. A representation asymmetry remains: 15.1% of Statins inputs exceed BiomedBERT's 512-token limit when expert MeSH terms are appended, so truncation may contribute to the smaller transformer gap, although this cannot be separated from training volume here. In screening pipelines using transformers or 10-fold bag-of-words, the gap on the topics tested is about 0.02 WSS@95%, with CIs spanning zero on at least one bound. More broadly, benchmark conclusions about feature sources can change substantially under reasonable changes to the evaluation design.",
+  "authors": [
+   "Samuel M. Okoe-Mensah"
+  ],
+  "published": "2026-07-23T14:37:23Z"
+ },
+ {
+  "arxiv_id": "2607.21702v1",
+  "title": "An Introduction to Bayesian and Frequentist Simulation-Based Inference with Machine Learning",
+  "abstract": "Simulation-based inference (SBI) with machine learning is an increasingly important tool for solving inverse problems in science and engineering, including parameter inference and the inversion of detector effects. We provide an overview of the Bayesian and frequentist statistical frameworks, describe how machine-learning-based SBI methods, such as neural posterior estimation and neural likelihood estimation, can be used for parameter estimation within these frameworks, and show that the same methods can also be applied to Empirical Bayes or unfolding tasks. We also discuss how to validate inference results and the limitations of SBI with machine learning.",
+  "authors": [
+   "Maximilian Dax",
+   "Theo Heimel",
+   "Gilles Louppe"
+  ],
+  "published": "2026-07-23T18:00:01Z"
+ },
+ {
+  "arxiv_id": "2607.21721v1",
+  "title": "Prior laundering: learned priors with inherited, undetectable overconfidence",
+  "abstract": "Learned generative priors are increasingly used for ill-posed Bayesian inverse problems, their posterior uncertainty treated as earned from data. But training one requires truths, scarce in seismic and medical imaging, so the recourse is an archive of legacy reconstructions---prior laundering. Where the measurements are uninformative the posterior reverts to the prior, so the uncertainty reported there is the archive's, not the data's, and nothing in deployment reveals it: truths differing only on those directions induce identical data laws, and self-consistency checks such as simulation-based calibration pass whatever the prior believes. That belief has an exact source: averaging the legacy posterior over the measurements yields the old regularizer advanced a single expectation--maximization step---improved where the data resolve, frozen where they cannot. It is overconfident wherever the inherited belief is tighter than the truth. A single-best archive is worse, collapsing the blind credible interval to zero width. Deployed, a diffusion prior fit to the archive under-covers the operator's blind subspace, unlike a truth-trained control, and a normalizing flow does the same on a nonlinear groundwater operator. We recommend reporting which directions the measurements resolve, separating confidence the data support from belief inherited through the pipeline.",
+  "authors": [
+   "Ali Siahkoohi",
+   "Sina Alemohammad"
+  ],
+  "published": "2026-07-23T18:04:12Z"
+ },
+ {
+  "arxiv_id": "2607.21745v1",
+  "title": "Deep Sigma Point Processes for RCS Modeling in Spaceborne SAR Imagery",
+  "abstract": "Radar cross-section (RCS) modeling is foundational to advancing the utility and sensitivity of spaceborne radar systems. This study introduces a deep sigma-point process (DSPP) model for predicting RCS in synthetic aperture radar (SAR) imagery using a RADARSAT-2 dataset containing 208,191 verified ships. The DSPP model not only strives for predictive accuracy but also characterizes the uncertainty inherent in the intricate relationships among radar signals, ship parameters, and environmental conditions. Unlike traditional approaches that rely on deterministic equations with static parameters, the DSPP uses a hierarchical Gaussian process framework with Bayesian inference to capture variability and uncertainty in RCS predictions. By generating predictive distributions rather than single estimates, the model accounts for the complex dynamics governing radar returns. Using a Matern kernel with automatic relevance determination, the DSPP identifies and ranks critical features across radar, operational, and environmental domains, thereby supporting transparency and interpretability. Performance evaluations demonstrate the model's superiority over linear regression baselines, with a 20.83 percent reduction in root mean squared error, a 25.89 percent increase in R-squared, and a 44.4 percent reduction in both the residual interquartile range and median absolute deviation on the test data. By providing calibrated uncertainty bounds, the DSPP enhances prediction reliability and supports robust decision-making. This work represents a shift toward probabilistic models that incorporate the inherent uncertainty of complex phenomena. By transitioning from fixed equations to distributions over outcomes, the DSPP fosters a deeper understanding of RCS behavior and enables systems to operate effectively in dynamic environments.",
+  "authors": [
+   "Khalid El-Darymli",
+   "Christoph H. Gierull",
+   "Katerina Biron",
+   "Weimin Huang"
+  ],
+  "published": "2026-07-23T18:54:28Z"
+ },
+ {
+  "arxiv_id": "2607.21758v1",
+  "title": "Humanly: A Configurable and Traceable Environment for Human-AI Collaborative Writing",
+  "abstract": "Teachers, conference chairs, and public readers all judge writing from limited evidence, seeing only a finished document and not the process that produced it. Final text alone cannot reveal whether a document was produced through human typing, AI generation, or mixed human-AI collaboration. Existing process-tracking tools help, but many are tied to host-document histories, provide coarse activity records, and offer limited control over the writing environment. Humanly is a writing platform that makes the writing process itself the evidence. Users configure writing environments for personal documents or assigned tasks and draft in a workspace that records writing activity and in-platform AI assistance. Humanly can package a completed session into a sealed writing certificate with configuration-aware anomaly behavior review. It can support writing scenarios such as course assignments, peer review, and personal certification. Our user study shows that Humanly is helpful across roles, and a red-teaming study shows that the Humanly Typing Detector distinguishes human hand typing from automated typing.",
+  "authors": [
+   "Shenzhe Zhu",
+   "Haoqian Zhang",
+   "Xu Yang",
+   "Jingyu Tang",
+   "Yi Nian",
+   "Xiaoxue Du",
+   "Shu Yang",
+   "Alex Pentland",
+   "Joachim Baumann",
+   "Jiaxin Pei"
+  ],
+  "published": "2026-07-23T19:20:03Z"
+ },
+ {
+  "arxiv_id": "2607.21772v1",
+  "title": "Reliability-Aware Bayesian Optimization of 1310 nm PCSELs with FDTD Verification",
+  "abstract": "Near 1310 nm photonic-crystal surface-emitting lasers (PCSELs) are attractive narrow-beam sources for optical communication and sensing, but their final design refinement is costly. Small geometry changes simultaneously shift the band-edge resonance, cavity leakage, far-field divergence, and the numerical stability of a high-$Q$ decay fit, while every full-wave trial requires a time-domain simulation. We couple a commercial finite-difference time-domain solver to a reliability-aware Bayesian optimization (BO) loop over eight local design variables. Each completed simulation updates the surrogate used to choose the next geometry. Candidate ranking combines wavelength and beam-quality requirements with a reliability-adjusted metric $Q_{\\mathrm{eff}}$ derived from the solver-reported relative fit-error estimate $dQ/Q$. Across three 80-evaluation runs from the same reference model, BO produced 5--15 candidates per run that passed the joint filter. Designs reconstructed from fresh model copies retained $Q_{\\mathrm{eff}}=4.33\\times10^6$--$7.76\\times10^6$, a 60--108-fold increase over the baseline metric, at 1308.23--1310.90~nm with approximately $0.84^{\\circ}$ divergence. Under equal budgets, BO gave the highest mean strict-filter yield (9.0 candidates), compared with differential evolution (7.0) and Latin-hypercube sampling (1.5), although the controls occasionally matched the peak $Q_{\\mathrm{eff}}$. Field maps, resonance spectra, and local perturbations further identify an index-related wavelength handle and a hole-size-related leakage handle. The resulting FDTD budget produces a pool of wavelength-compatible, narrow-beam, and reproducible high-$Q$ PCSEL candidates without trusting a single optimistic decay fit.",
+  "authors": [
+   "Jinglin Yu",
+   "Feiyang Wu",
+   "Longying Wen",
+   "Chongxian Yuan",
+   "Renjie Li",
+   "Zhaoyu Zhang"
+  ],
+  "published": "2026-07-23T19:35:55Z"
+ },
+ {
+  "arxiv_id": "2607.21779v1",
+  "title": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+  "abstract": "Accurate ab initio molecular dynamics (AIMD) simulations of complex, fluxional chemical systems are severely limited by the high computational scaling of correlated electronic structure methods. To overcome this bottleneck, we present a robust, graph-theoretic molecular fragmentation framework integrated with machine learning to directly model post-Hartree-Fock nuclear forces at coupled cluster accuracy. Bypassing the limitations of automatic differentiation on learned energy surfaces that may struggle with link-atom Jacobians, our approach directly predicts nuclear force vectors. By projecting these vectors onto fragment-fixed principal axes of inertia, we establish co-variant descriptors that naturally preserve rotational, translational, and permutational invariance. The methodology achieves exceptional high parameter efficiency through a vector-valued training protocol that reduces trainable parameters by over an order of magnitude, while an unsupervised mini-batch k-means space tessellation algorithm constructs highly representative training databases using only 10% to 20% of reference configurations. We rigorously validated this framework on the highly fluxional solvated Zundel cation H_{13}O_6^+ ). Our fully machine-learning-predicted AIMD trajectories successfully reproduced complex dynamical signatures and key structural characteristics, including radial distribution functions and the velocity autocorrelation power spectrum. Ultimately, this scalable, systematically improvable framework bridges the gap between high-level correlated wavefunction theories and long-timescale reactive sampling, laying the foundation for advanced, LLM-inspired transfer learning in modern chemical dynamics simulations.",
+  "authors": [
+   "Xiao Zhu",
+   "Srinivasan S. Iyengar"
+  ],
+  "published": "2026-07-23T19:49:22Z"
+ },
+ {
+  "arxiv_id": "2607.21799v1",
+  "title": "Agentic Evaluation of Copyright Law Compliance",
+  "abstract": "Large language model (LLM) agents increasingly perform commercial tasks that involve retrieving external content such as images and, where appropriate, reproducing that content. LLM agents should comply with the law, including copyright law. Presently, however, we lack adequate frameworks to assess whether they do so in practice. To that end, we introduce \\textbf{Copyright-Bench}, a benchmark designed to evaluate \\textit{LLM agents' compliance with} \\emph{copyright law}. Copyright-Bench is comprised of realistic commercial tasks---website development, merchandise design, and pitch deck production---that involve agents selecting between public-domain content (the use of which is \\textit{legal}) and copyrighted content (the use of which is \\textit{infringing} in this setting).The evaluation introduces prompt variations that simulate different user preferences, as well as time pressure.Comparing state-of-the-art LLM agents against a human baseline, we find that: (1) agents select copyrighted works despite the availability of public-domain alternatives; and (2) for open-weights models, violation rates increase in response to certain user preferences and simulated time pressure.",
+  "authors": [
+   "Zheng Hui",
+   "Doni Bloomfield",
+   "Noam Kolt"
+  ],
+  "published": "2026-07-23T20:32:36Z"
+ },
+ {
+  "arxiv_id": "2607.21802v1",
+  "title": "StARS: Socially Appropriate Robot Actions via a Recommender System-Driven Approach",
+  "abstract": "Social appropriateness in human-robot interaction (HRI) is not universal: different people can judge the same robot action differently in the same situation. To capture this inter-subject variability, we reformulate socially appropriate action generation as a preference modelling problem inspired by recommender systems, treating annotators as users, contexts/scenes as items, and appropriateness scores over a set of candidate robot actions as targets. We propose StARS, a novel model-agnostic framework that integrates collaborative filtering with learnable scene representations to generate user-specific appropriateness scores over candidate robot actions. StARS is model-agnostic: it can be integrated with various scene encoders and backbones, enabling personalisation without redesigning the underlying model. We evaluate StARS on two socially aware robotics datasets, MannersDB+ and SocNav1, and analyse robustness under sparse preference feedback. Across datasets and backbones, StARS consistently improves performance and agreement with annotators, supporting personalised action selection aligned with user norms. Our code is publicly available at https://github.com/Cambridge-AFAR/StARS.git.",
+  "authors": [
+   "Erencem Ozbey",
+   "Fethiye Irmak Dogan",
+   "Jin Huang",
+   "Hatice Gunes"
+  ],
+  "published": "2026-07-23T20:38:07Z"
+ },
+ {
+  "arxiv_id": "2607.21823v1",
+  "title": "Data eccentricity, asymptotics of Gaussian RBF reproducing kernel Hilbert space, and kernel PCA",
+  "abstract": "We show that, up to isotropic scaling, the Gaussian RBF reproducing kernel Hilbert space (RKHS) is asymptotically isometric to Euclidean space in the large bandwidth limit. This strongly suggests that kernel-based constructions reliant on metric properties of the RKHS will yield results for Gaussian RBF kernels that similarly approach those of linear kernels for large bandwidths. The asymptotic behavior of Gaussian CKA can be understood in this light. We further consider kernel PCA, showing that Gaussian RBF eigenvalues, eigenprojections, and principal components all converge to those of classical (linear) PCA as bandwidth $\u03c3\\rightarrow \\infty$. For a given data representation, both the RKHS feature embeddings and the orthogonal PCA eigenframes of the two kernel types differ asymptotically by a geometric similarity transformation, up to a residual of size $O \\left (\\frac\u03c1\u03c3 \\right )^2$, where $\u03c1$ is a measure of geometric eccentricity of the representation, equal to the ratio of maximum to median pairwise distance between data examples. Experiments over a diverse collection of data sets demonstrate that $\u03c1$ provides a simple and reliable predictor of dataset-specific convergence behavior in the top principal directions.",
+  "authors": [
+   "Sergio A. Alvarez"
+  ],
+  "published": "2026-07-23T21:18:41Z"
+ },
+ {
+  "arxiv_id": "2607.21831v1",
+  "title": "A Graph-Based Control Interface for Traffic Signals on Heterogeneous Road Networks",
+  "abstract": "We present a traffic-signal control interface in which a shared graph neural network assigns scores to individual traffic movements. Each junction converts these scores into its own variable-sized set of legal signal phases using a deterministic incidence matrix. Directed corridor nodes provide traffic context, while movement nodes represent controlled input-to-output paths through junctions. Typed mean aggregation produces one scalar per movement; phase definitions and signal timing remain outside the learned network. This makes graph size and junction-specific action count independent of the learned parameter shapes. PPO experiments evaluate the interface on unseen synthetic grid geometries, altered signal coverage, and five heterogeneous city graphs. The policies retained performance across unseen geometries within the synthetic grid family, while changes in signal coverage exposed sensitivity to a signal-coverage distribution shift. A single trained city-policy instance executed across all five city graphs, with heterogeneous outcomes. These results provide feasibility evidence rather than a general estimate of transfer to arbitrary road networks.",
+  "authors": [
+   "Bertil Braun"
+  ],
+  "published": "2026-07-23T21:44:55Z"
+ },
+ {
+  "arxiv_id": "2607.21835v1",
+  "title": "ToolGuardian: Declarative Security for AI Agent-Tool Interactions",
+  "abstract": "LLM agents increasingly rely on external tools, expanding capability while creating a new security boundary: third-party tools may appear benign at the interface level while embedding unsafe behavior in implementation. Existing defenses rely on weak metadata, collapse characterization and policy judgment into a single decision, or use heuristic/LLM enforcement that lacks deterministic, auditable reasoning over task context and multi-tool composition. This paper presents ToolGuardian, a policy-driven framework for securing agent-tool interactions through pre-admission vetting and task-aware runtime authorization. ToolGuardian uses progressive characterization to convert evidence into structured facts: descriptions capture declared intent, system-call traces expose coarse behavior, mock execution reveals observed effects, and source analysis identifies latent behavior. ToolGuardian's core contribution is an Answer Set Programming (ASP)-based declarative policy layer that reasons explicitly over capabilities, effects, task context, and composition. We compare ASP against heuristic and LLM-based policy realizations using identical inputs and output contracts. We evaluate ToolGuardian on 16 MCP-style tools, including 8 malicious variants derived from real open-source tools, and 20 runtime scenarios. For vetting, ASP reaches a deny-class F1 of 0.86 and 88% accuracy using description, syscall, and observed-effect evidence. For runtime authorization, fully specified realizations classify all scenarios correctly, while ablations show that removing compositional and conformance rules substantially degrades performance.",
+  "authors": [
+   "Arun Ravindran",
+   "Saurabh Deochake"
+  ],
+  "published": "2026-07-23T21:53:34Z"
+ },
+ {
+  "arxiv_id": "2607.21842v1",
+  "title": "Quantifying Political Partisanship for Cross-Platform Analyses",
+  "abstract": "Research on political polarization on social media depends on the ability to reliably measure partisanship in user-generated content. However, existing approaches are typically tailored to platform-specific properties, such as structural affordances or linguistic conventions, which hurts generalizability across platforms. This limitation is increasingly consequential as the social media ecosystem fragments and fringe, alt-tech platforms emerge alongside mainstream ones. We propose a text-based, platform-portable methodology for measuring political partisanship in social media posts, anchored by an external news-credibility signal. Posts are embedded using a transformer-based sentence encoder and clustered into topic groups, which are labeled using the aggregated AllSides media bias scores of cited news outlets. A partisanship axis is then constructed in the embedding space as the difference between centroids of oppositely labeled clusters, and individual posts are scored by projection onto this axis. We apply the method to a corpus of approximately 1.3 million posts collected from Bluesky and Truth Social during the six months preceding the 2024 U.S. presidential election, providing the first cross-platform comparison of partisanship distributions on these two ideologically asymmetric platforms. The resulting partisanship scores correlate significantly with held-out AllSides media bias scores both in-distribution and out-of-distribution on an independent Twitter corpus, and recover within-platform partisan dynamics that platform identity alone cannot explain.",
+  "authors": [
+   "Fathima Ameen",
+   "Christopher G. Healey"
+  ],
+  "published": "2026-07-23T22:12:17Z"
+ },
+ {
+  "arxiv_id": "2607.21850v1",
+  "title": "SCALE: Self-Supervised Constraint-Aware Layout GEneration for Local P&amp;R DRV Fixing at Advanced Nodes",
+  "abstract": "As semiconductor manufacturing advances toward sub-2nm nodes, local place-and-route (P&amp;R) design-rule violation (DRV) fixing is increasingly limited by complex rule interactions, dense multi-layer routing geometries, and foundry-specific constraints. While Large Language Models (LLMs) have recently demonstrated strong capabilities in EDA scripting and documentation, their application to visual layout understanding remains largely unexplored: diagnosing DRC violations from layout imagery demands precise geometric reasoning and foundry-specific rule knowledge absent from general-purpose VLM training. We propose SCALE, a framework with a self-supervised layout-generation stage for local DRV fixing at advanced nodes. Multi-layer layout geometry is serialized into structured text, and a fine-tuned language model learns to reconstruct randomly masked polygons from surrounding BEOL context alone without violation labels. At inference, natural-language rule constraints and high-temperature sampling steer generation toward diverse, violation-prone layout variants validated by an industrial signoff DRC checker, producing DRC-annotated layout--violation pairs used to fine-tune a domain-adapted DRC-VLM. This VLM provides rule-aware geometric guidance for local DRV repair, boosting state-of-the-art agents' solve rates by +12--25% (up to 97%) on 100 real sub-2nm cases spanning enclosure, spacing, width, and color-spacing violations.",
+  "authors": [
+   "Chia-Tung Ho",
+   "Haoyu Yang",
+   "Guanglei Zhou",
+   "Yoshi Nishi",
+   "Yaguang Li",
+   "Walker Turner",
+   "Cunxi Yu",
+   "Yiran Chen",
+   "Brucek Khailany"
+  ],
+  "published": "2026-07-23T22:38:04Z"
+ },
+ {
+  "arxiv_id": "2607.21861v1",
+  "title": "Data Quality over Capacity: Internalizing Documents into LoRA Adapters for Closed-Book QA",
+  "abstract": "We study baking documents directly into the weights of a 4-bit Gemma-4-e4b model via LoRA, so a system can answer questions about a corpus closed-book: no retrieval and no context-window budget. Across roughly 100 training runs from single documents to a 99-document corpus, we find that once adapter capacity is adequate, training-data quality is the dominant lever on closed-book accuracy, outweighing LoRA rank, learning rate, and two alternative architectures combined; capacity itself is a hard gate below which no data intervention helps. A single curation pass (shortening gold answers to canonical 1-6 word spans and dropping trivia) moved closed-book accuracy from 57.7% to 85.7% on a 15-document corpus, a larger jump than any architectural change. We confirm a capacity trend (rank must grow with corpus size) entangled with a coupling between rank and learning rate that we initially misdiagnosed. On a 15-document slice we add a real retrieval baseline: the internalized adapter (84.2% recall) beats a BM25-RAG pipeline with a base reader (58.9%) and even a realistic gold-chunk oracle (65.6%) at lower latency. We report the full arc, including three misdiagnoses, as a case study in debugging LLM training empirically.",
+  "authors": [
+   "Joan Figuerola Hurtado"
+  ],
+  "published": "2026-07-23T23:14:59Z"
+ },
+ {
+  "arxiv_id": "2607.21873v1",
+  "title": "Multi-Agent System-driven Digital Twins for predictive maintenance: architectures, technologies and open research challenges",
+  "abstract": "Digital twins have emerged as a foundational technology within the context of Industry 4.0, offering a paradigm for the real-time virtual representation of physical systems. However, managing their growing complexity, particularly in distributed industrial environments, requires intelligent architectures capable of autonomous decision-making, dynamic adaptability, and inter-agent coordination. This systematic review explores the intersection between Multi-Agent Systems and Digital Twins, with a particular focus on predictive maintenance applications in resource-constrained contexts. Through a critical analysis of over 547 papers published in high-impact journals (IEEE Transactions, Nature, Elsevier, MDPI), we establish a taxonomy of existing hybrid architectures, identify persistent technological bottlenecks, and formulate three open research questions concerning: (i) the deployment of artificial intelligence on resource-constrained microcontrollers, (ii) distributed multi-node coordination via lightweight communication protocols, and (iii) the hierarchical orchestration of Digital Twins toward smart factory control integrating residual life estimation and explainable Artificial Intelligence. The results of this analysis reveal that, despite significant progress, no existing system offers an integrated embedded-distributed hierarchical solution that simultaneously meets the requirements of Industry 5.0.",
+  "authors": [
+   "Korota Ars\u00e8ne Coulibaly",
+   "Mohamed Hamlich"
+  ],
+  "published": "2026-07-24T00:09:53Z"
+ },
+ {
+  "arxiv_id": "2607.21885v1",
+  "title": "Remedying Coarsening-Based GNN Training under Heterophily via Adaptive Complementary Enhancement",
+  "abstract": "Coarsening-based training for graph neural networks (GNNs), i.e.\\ training on coarsened graphs rather than the original large ones, has become a promising direction for scaling GNNs to massive graphs. However, prior work has been evaluated almost exclusively on \\textit{homophilic} graphs, leaving the more challenging \\textit{heterophilic} settings underexplored. We show, both empirically and theoretically, that existing coarsening-based training methods suffer significant performance degradation on heterophilic graphs due to inevitable loss of graph information during coarsening. To address this, we propose {\\bf A}daptive {\\bf C}omplementary {\\bf E}nhancement, a plug-and-play, model-agnostic strategy that reintegrates the information discarded in coarsening: ACE learns a projector for re-constructing original node features and applies \\textit{anisotropic structural regularization} to embed local heterophily. We further adopt \\textit{homoscedastic uncertainty weighting} to adaptively balance the combined training objective of primary coarsened-graph training loss and full-graph auxiliary loss with augmented node features re-constructed by the heterophily-aware projector. Extensive experiments show that ACE drives consistent gains on heterophilic benchmarks while preserving competitive results on homophilic graphs with minimal computational overhead. Code is available at the GitHub repository: https://github.com/vasile-paskardlgm/ACE.",
+  "authors": [
+   "Guoming Li",
+   "Jian Yang",
+   "Xukun Wang",
+   "Zixiao Wang",
+   "Shangsong Liang",
+   "Yifan Chen"
+  ],
+  "published": "2026-07-24T01:29:28Z"
+ },
+ {
+  "arxiv_id": "2607.21887v1",
+  "title": "Towards Reducing Foreign Language Anxiety Using Level-Appropriate Embodied Conversational Agents",
+  "abstract": "Foreign language anxiety (FLA) can be a major barrier to second language acquisition (SLA), especially in conversational contexts. With the proliferation of large language models (LLMs) throughout all areas of life, recent work suggests that interacting with LLM agents can be instrumental within the field of SLA and foreign language education, especially for reducing FLA. Related work also suggests that linguistic demands and task complexity can be predictors of FLA, implying that the use of demanding, complex language could lead to learners experiencing higher FLA. In this paper, we propose a novel multi-agent embodied conversational system that generates level-appropriate dialogue for English language learners. These levels are based on those defined by the Common European Framework of Reference for Languages (CEFR) to describe non-native listener and speaker proficiency. Using a \"generate-evaluate-regenerate\" loop with multiple LLM agents and a level classifier, it achieves a desired simplicity that is adaptive to the user's proficiency level. We also share the results of a preliminary small-sample pilot study that tested this system with Japanese university students, to see whether it would yield lower FLA levels than an unsimplified embodied conversational agent. Analysis of conversational output showed that 87.4% of dialogue sentences generated by the proposed multi-agent system fell within one predicted CEFR level of the learner's self-assessed proficiency, compared to 54.1% for the unsimplified agent. This suggests that the novel system is better able to produce output at an appropriate level for the learner. Though this study did not yield statistically significant evidence that the system reduces FLA levels in Japanese learners of English, likely due to a small sample size, it provides usability findings and culturally-informed design insights that will inform future study.",
+  "authors": [
+   "Krishan Rajaratnam",
+   "Wenbin Gan",
+   "Yuan Sun"
+  ],
+  "published": "2026-07-24T01:31:13Z"
+ }
+]

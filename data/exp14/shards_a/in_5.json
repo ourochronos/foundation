@@ -1,0 +1,57 @@
+[
+ {
+  "arxiv_id": "2607.21779v1",
+  "title": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+  "abstract": "Accurate ab initio molecular dynamics (AIMD) simulations of complex, fluxional chemical systems are severely limited by the high computational scaling of correlated electronic structure methods. To overcome this bottleneck, we present a robust, graph-theoretic molecular fragmentation framework integrated with machine learning to directly model post-Hartree-Fock nuclear forces at coupled cluster accuracy. Bypassing the limitations of automatic differentiation on learned energy surfaces that may struggle with link-atom Jacobians, our approach directly predicts nuclear force vectors. By projecting these vectors onto fragment-fixed principal axes of inertia, we establish co-variant descriptors that naturally preserve rotational, translational, and permutational invariance. The methodology achieves exceptional high parameter efficiency through a vector-valued training protocol that reduces trainable parameters by over an order of magnitude, while an unsupervised mini-batch k-means space tessellation algorithm constructs highly representative training databases using only 10% to 20% of reference configurations. We rigorously validated this framework on the highly fluxional solvated Zundel cation H_{13}O_6^+ ). Our fully machine-learning-predicted AIMD trajectories successfully reproduced complex dynamical signatures and key structural characteristics, including radial distribution functions and the velocity autocorrelation power spectrum. Ultimately, this scalable, systematically improvable framework bridges the gap between high-level correlated wavefunction theories and long-timescale reactive sampling, laying the foundation for advanced, LLM-inspired transfer learning in modern chemical dynamics simulations.",
+  "authors": [
+   "Xiao Zhu",
+   "Srinivasan S. Iyengar"
+  ],
+  "published": "2026-07-23T19:49:22Z"
+ },
+ {
+  "arxiv_id": "2607.22286v1",
+  "title": "An Insight on Evaluation Metrics Under the Imbalanced Case of Anomaly Detection",
+  "abstract": "Anomaly detection is inherently characterised by severe class imbalance, making the interpretation of evaluation metrics challenging. Although metrics such as AUROC, AUPR, F1-score, and MCC are widely used, their values convey different meanings depending on the anomaly ratio. In this work, we analyse the behaviour of those four common anomaly detection metrics under varying levels of imbalance. We focus on the study of metric landscapes, visualisations that relate metric values to true positive and true negative rates, providing an intuitive view of metric preferences and stability. Our analysis offers practical guidance for interpreting and comparing anomaly detection results across datasets with different imbalance ratios.",
+  "authors": [
+   "Romain Hermary",
+   "Nesryne Mejri",
+   "Djamila Aouada"
+  ],
+  "published": "2026-07-24T13:25:06Z"
+ },
+ {
+  "arxiv_id": "2607.22305v1",
+  "title": "A Roadmap to Impactful Pluralistic Alignment Research",
+  "abstract": "Pluralistic value alignment---the goal of building AI systems that represent and serve diverse human values and perspectives---has emerged as an active research agenda. Yet, there's no public evidence that it has shaped the training or evaluation of the AI systems people actually use. We audit the public behavior documents and evaluations of frontier labs, finding none name pluralism as a goal, and as of this writing, no clear indication that production models are explicitly trained or tested for it. This goes against the primary motivations and goals of pluralistic alignment, which revolve around making a positive difference in the models serving billions of users worldwide. We argue that the pluralistic alignment research community should focus on supporting impact and adoption in deployed, widely-used AI systems. We provide evidence for the adoption problem, present three main reasons behind it, and discuss three corresponding areas for future research to address it: 1. The primary justifications for pluralistic alignment so far have been normative or speculative. We need studies showing empirically how pluralistic AI benefits users or society. 2. The pluralistic alignment research community has not settled when pluralistic behavior is warranted or what pluralism ideally looks like in practice. We need to establish a concrete goal for developers to operationalize. 3. Current methods trade off against other desiderata of LLMs in ways that are largely unmeasured, and existing metrics are not \"hill-climbable.\" We need trade-off-aware evaluations and methods that meet the requirements of production systems. This paper serves as a collective call to action for the pluralistic alignment researchers: progress requires moving beyond normative justification toward empirical foundations, a concrete account of ideal pluralistic behavior, and practical methods and evaluations built for adoption.",
+  "authors": [
+   "Elinor Poole-Dayan",
+   "Jillian Fisher",
+   "Atoosa Kasirzadeh",
+   "Jacob Andreas",
+   "Mitchell Gordon",
+   "Michiel A. Bakker"
+  ],
+  "published": "2026-07-24T13:46:03Z"
+ },
+ {
+  "arxiv_id": "2607.22392v1",
+  "title": "The Prompt Is Not the Query: How Request State Evolves Across Multi-Turn AI Conversations",
+  "abstract": "AI-search evaluation commonly treats a prompt as a stable query that can be counted, classified, and replayed in isolation. A conversation makes that unit of analysis questionable: each user turn can add a constraint, revise an assumption, request evidence, or refer to alternatives established earlier. We replace latent \"intent\" with an observable construct, conversation-conditioned request state, and measure how that state is distributed across user turns. The analysis reuses frozen rules and the governed cohort of a preceding conversation study: 670 English commercial multi-turn conversations in a discovery-replication design and 7,463 public PRISM conversations from 1,389 participants. In the commercial corpus, the final prompt contains a median 35.6% of the session's unique user-side content vocabulary; in PRISM, the median is 36.4%. The final prompt contains at most half of that vocabulary in 68.4% and 74.3% of conversations, respectively. More importantly, transparent rules detect at least one request-state dimension in history but not in the final prompt in 50.3% of commercial conversations and 44.8% of PRISM conversations. Among dimension-bearing conversations, the final prompt reproduces the full observed dimension set in only 26.1% and 26.2%. At the same time, the final prompt adds a previously unseen dimension in 17.9% and 19.3%, showing that the endpoint is neither a summary nor merely a reference: it is often another state update. Length-matched nulls show that low lexical coverage is largely a consequence of turn length, so vocabulary results are interpreted as information availability, not semantic drift. The categorical results support session-level measurement for AI search. They do not estimate the causal effect of history on model answers.",
+  "authors": [
+   "Benjamin Tannenbaum"
+  ],
+  "published": "2026-07-24T15:16:26Z"
+ },
+ {
+  "arxiv_id": "2607.22513v1",
+  "title": "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science",
+  "abstract": "Commercial large language models are increasingly used as knowledge references, yet their stance on contested scientific claims is neither stable nor transparent. We tested how four major LLM families (Claude, Grok, GPT, Gemini) evaluate ethnonationalist pseudo-science derived from Frank Salter's biosocial framework across four temporal snapshots (October 2025-February 2026), via both API and web interfaces. Grok's Fast versions (which power the default user experience on X) consistently assigned credibility scores of 70-75, two to five times higher than all other models (which scored 15-40). This pattern was absent from control prompts testing basic evolutionary consensus and refuted Lamarckian claims, where all models performed comparably. Three additional findings emerged: (1) a silent patch reversed Grok's behaviour from chaotic to stably high validation overnight, without any public documentation; (2) the same Grok model identifier produced radically divergent outputs via API (75) and web (5.5) three months later; (3) refusal to rate the pseudo-scientific claim, the most defensible response observed, appeared in two model families through different interfaces (Claude Opus 4.1 categorically via web, GPT-5.1 Chat intermittently via API) and eroded in the successor version of each. These results indicate that the epistemic stance of a commercial LLM is not a stable property of the model but a contingent effect of deployment configuration: system prompts, safety layers, interface routing, and silent updates. This remains opaque to users and researchers alike. We argue this constitutes a matter of public concern requiring new forms of epistemic accountability.",
+  "authors": [
+   "Davide Scarso",
+   "Hugo Noronha de Almeida",
+   "Joaquim Pina"
+  ],
+  "published": "2026-07-24T17:32:43Z"
+ }
+]

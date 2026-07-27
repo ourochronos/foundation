@@ -1,0 +1,246 @@
+[
+ {
+  "arxiv_id": "2607.20908v1",
+  "title": "Multi-turn RL with Structural and Performance Aware Rewards for CUDA Kernel Generation",
+  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a powerful technique to enhance the reasoning capacity of LLMs for optimized code generation. However, existing RLVR approaches primarily rely on outcome-based signals such as correctness and speedup, overlooking performance-critical structural properties of programs that are essential for generating optimized code. In this work, we propose CudaPerf, a reflective RL framework that incorporates both verifiable execution rewards and structural code-aware rewards derived from parallelization features (e.g., memory coalescing, occupancy, Arithmatic Intensity, and synchronization patterns). CudaPerf operates in two stages: (1) an offline pairwise ranking module that learns to distinguish strong and weak program candidates via contrastive comparisons, and (2) an online RL training phase that jointly optimizes for correctness, performance, and structural efficiency through a unified reward signal. To further enhance learning, CudaPerf utilizes iterative refinement using execution feedback enabling progressive improvement of generated candidates. We also introduce a dataset comprising 2.9k C to CUDA and 1k PyTorch to CUDA programs, each paired with diverse input configurations and multiple CUDA implementations encompassing diverse optimization strategies. CudaPerf is evaluated across multiple benchmarks comprising both C to CUDA and PyTorch to CUDA transformations. Empirical findings suggest that CudaPerf significantly outperforms strong baselines, including Qwen-3-32B (for C to CUDA) and CUDA Agent (for PyTorch to CUDA) by achieving up to 5X &amp; 3.32X improvements in speedup, and 17% &amp; 7% improvements in correctness, respectively.",
+  "authors": [
+   "Quazi Ishtiaque Mahmud",
+   "Nesreen K. Ahmed",
+   "Ali Jannesari"
+  ],
+  "published": "2026-07-23T04:06:41Z"
+ },
+ {
+  "arxiv_id": "2607.20926v1",
+  "title": "SciExplore: Evaluating Autonomous Agents from Scientific Navigation to Information Integration",
+  "abstract": "Scientific research involves complex information-seeking and reasoning workflows across heterogeneous sources. However, existing benchmarks primarily emphasize general-domain retrieval or static scientific question answering, and therefore fail to assess key capabilities required in realistic scientific research workflows. We introduce SciExplore, a benchmark designed to evaluate scientific information-seeking and reasoning capabilities of LLMs and agents. SciExplore comprises four task types covering 103 expert-curated tasks across more than ten scientific disciplines: scientific database navigation, ambiguous literature retrieval, missing reference completion, and cross-source structured knowledge synthesis, which probe progressively higher-level abilities from entity-level reasoning and document-level identification to evidence-level grounding and domain-level synthesis. We evaluate over ten state-of-the-art LLMs and autonomous agents on SciExplore, revealing substantial performance gaps with performance degrading sharply as task complexity increases and extremely low accuracy on the most challenging structured synthesis tasks. These results highlight significant limitations of current models and agents in realistic scientific information-seeking scenarios.",
+  "authors": [
+   "Yinhao Tang",
+   "Youqing Fang",
+   "Yanan Sun",
+   "Wenran Liu",
+   "Weiming Zhang",
+   "Bin Liu",
+   "Kuikun Liu",
+   "Wenwei Zhang",
+   "Kai Chen"
+  ],
+  "published": "2026-07-23T05:17:00Z"
+ },
+ {
+  "arxiv_id": "2607.21005v1",
+  "title": "Weight-norm Criticality: A Mechanism for Loss Spikes Induced by the Normalization and Weight Decay",
+  "abstract": "Most explanations of training instability focus on \\emph{learning-rate criticality}, typically characterized by the Edge of Stability, beyond which optimization becomes unstable. We argue that, in practical deep neural network training, there is an additional and often overlooked \\emph{weight-norm criticality}. This criticality is induced by the interaction between normalization (which introduces scale-invariant components) and weight decay (which persistently shrinks parameter norms). As the weight decay coefficient increases, the norms of scale-invariant weights are progressively driven toward zero. Meanwhile, the sharpness of the loss landscape increases rapidly, destabilizing the optimization dynamics and resulting in abrupt loss spikes. This perspective provides a rationale for why weight penalties can improve generalization yet cannot be made arbitrarily strong: excessive decay drives scale-invariant weight norms past a critical boundary and destabilizes training. Our work provides a new mechanistic understanding of loss spikes through the lens of \\emph{weight-norm criticality}. Moreover, \\emph{weight-norm criticality} yields testable predictions that we validate empirically in networks with scale-invariant components, providing empirical support for the proposed mechanism.",
+  "authors": [
+   "Xiaolong Li",
+   "Zhangchen Zhou",
+   "Zhi-Qin John Xu"
+  ],
+  "published": "2026-07-23T07:39:03Z"
+ },
+ {
+  "arxiv_id": "2607.21013v1",
+  "title": "EmoAgent-R1: Towards Multimodal Emotion Understanding with Reinforcement Learning-based Dynamic Agent Specialization",
+  "abstract": "Multimodal large language models (MLLMs) have achieved impressive performance in multimodal emotion recognition (MER) tasks and lifted MER to a new level that is complex emotion understanding with advanced video understanding abilities and natural language description. However, existing MLLM-based methods often use a fixed prompt to perceive the emotions, ignoring the dynamicity and complexity of the emotion source in the multimodal inputs. To address these issues, we propose a novel Reinforcement Learning-based Dynamic Agent Specialization framework (\\textbf{EmoAgent-R1}) to optimize the emotion recognition, reasoning, and generalization abilities of an MLLM with dynamic agent specialization based on reinforcement learning. Specifically, we first adopt a cold start strategy to endow an MLLM with preliminary emotion recognition, reasoning, and agent routing ability by training with synthetic answer-conditioned chain-of-thought data and agent routing data. Then, we further train the MLLM with reinforcement learning to perceive emotions in a two-step agentic workflow with agent selection and agent specialization. To effectively train EmoAgent-R1, we propose a novel Progressive Group-Relative Policy Optimization (P-GRPO) to combine group-based relative advantages with a PMI-inspired progressive token-level modulation to transform sparse rewards into fine-grained learning signals, mitigating the coarse-grained uniform credit assignment issue in GRPO. Extensive experiments on MER benchmarks demonstrate the superiority of our EmoAgent-R1 in stronger emotion reasoning performance and improved optimization stability.",
+  "authors": [
+   "Lihuang Fang",
+   "Yuchen Zou",
+   "kebin Jin",
+   "Jinghui Qin"
+  ],
+  "published": "2026-07-23T07:52:40Z"
+ },
+ {
+  "arxiv_id": "2607.21042v1",
+  "title": "Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs",
+  "abstract": "Autoregressive text-to-speech models achieve strong naturalness but suffer from slow inference due to sequential token generation, limiting their deployment in production applications that require low latency. IndexTTS-2 is a state-of-the-art autoregressive TTS model consisting of a GPT, a flow-matching Diffusion Transformer, and a vocoder. Despite its high synthesis quality, its inference speed barely reaches real-time without streaming or batching support. We present Faster IndexTTS-2, which accelerates all neural network components of IndexTTS-2 for production deployment on GPUs using NVIDIA TensorRT and TensorRT-LLM. Faster IndexTTS-2 also enables streaming synthesis for latency-sensitive interactive applications, and batched inference across all components to maximize GPU utilization. Experiments on the Seed-TTS benchmark for both English and Chinese demonstrate up to 5.0$\\times$ speedup on the autoregressive GPT and 3.6$\\times$ end-to-end, with minimal degradation in word error rate, speaker similarity, and naturalness. Our methodology provides a practical reference for efficiently accelerating similar autoregressive speech models on GPUs.",
+  "authors": [
+   "Muyang Du",
+   "Shuang Yu",
+   "Junjie Lai"
+  ],
+  "published": "2026-07-23T08:24:21Z"
+ },
+ {
+  "arxiv_id": "2607.21067v1",
+  "title": "PrefReward: Learning User Preference Matrix for Personalized Text Generation",
+  "abstract": "Large Language Models (LLMs) have demonstrated remarkable ability in generating personalized content by leveraging user histories and contextual cues. However, most existing personalization approaches rely on implicit representations within model parameters, making it difficult to interpret user-specific preferences or effectively handle long-context dependencies. To address these challenges, we propose PrefReward, a novel preference-aware generative framework that explicitly models user styles through a structured preference matrix and integrates it into the decoding process as a reward signal. PrefReward consists of two stages: (1) extracting a user-specific preference matrix that summarizes individual stylistic tendencies, and (2) using the matrix to guide generation via a KL-divergence-based reward function. Experiments on the LongLaMP dataset show that PrefReward outperforms non-personalized and retrieval-based baselines in both generation quality and personalization interpretability.",
+  "authors": [
+   "Yue Wu",
+   "Chengbing Wang",
+   "Yimeng Bai",
+   "Xiaoyan Zhao",
+   "Yang Zhang",
+   "Fuli Feng"
+  ],
+  "published": "2026-07-23T09:00:20Z"
+ },
+ {
+  "arxiv_id": "2607.21069v1",
+  "title": "From Evaluation to Optimisation: Hierarchy-Aware Training Signals for CWE Prediction in Python",
+  "abstract": "The original ALPHA benchmark introduced a taxonomy-aware penalty for evaluating CWE-level vulnerability prediction in Python and proposed that the penalty could theoretically also serve as a training signal. This paper provides that validation. We compare three delivery mechanisms: supervised fine-tuning, a dual-head classification loss, and reinforcement learning with a dense reward derived from the normalised penalty. We find that supervised approaches consistently regress below the zero-shot baseline under distribution shift, while GRPO succeeds. Our best policy reduces the cumulative ALPHA penalty of Qwen2.5-Coder-7B on Security Hardening and Adversarial Testing (SVEN) dataset by 27.9% under greedy decoding, and by 25.5% under sampled decoding(p = 0.005, Welch's t-test), reaching statistical parity with its 4.5x larger zero-shot teacher. We conclude that the value of a hierarchical penalty as a training signal depends largely on the directness of its delivery.",
+  "authors": [
+   "Muntasir Adnan",
+   "Manile Srun",
+   "Carlos C. N. Kuhn"
+  ],
+  "published": "2026-07-23T09:02:46Z"
+ },
+ {
+  "arxiv_id": "2607.21074v1",
+  "title": "Spectral Transformation for Layer-wise Global Rank Discovery in Federated LoRA for Vision Transformers",
+  "abstract": "Fine-tuning Vision Transformers (ViTs) with low-rank adapters (LoRA) promises better communication efficiency under federated setup, yet existing aggregation strategies face fundamental limitations. Independently averaging these LoRA factors is mathematically inconsistent, introducing cross-term aggregation error. In contrast, approaches that preserve heterogeneous client ranks by concatenating local adapters on the server substantially increase download cost and often require merging global LoRA updates into pretrained weights on the clients, causing reinitialization lag and unstable convergence. Other approaches further increase server-side overhead by reconstructing dense weight updates or training auxiliary models to refine aggregation error. In this work, we propose SpecTraL, spectral transformation for layer-wise global rank discovery, that resolves these challenges within a unified design. SpecTraL stacks local LoRA modules from clients and performs orthonormal Householder Transformation of the stacked adapters directly in the low-rank latent space, eliminating dense reconstruction of the global update and any auxiliary refinement on the server. By leveraging the Spiked Covariance Model from Random Matrix Theory, SpecTraL analytically separates the global consensus signal from non-IID noise, discovering optimal layer-wise global ranks without manual hyperparameter tuning. To match local ranks in subsequent rounds, we introduce a padding-aware initialization framework that lets clients incorporate residual LoRA dimensions without re-merging them into the pre-trained base model. Experiments on federated fine-tuning of ViT-B/16 and ViT-L/16 over DomainNet and NICO++ demonstrate improved accuracy-communication trade-offs, reduced server computation, and elimination of hyperparameter search for rank selection. Our code is available at https://github.com/DASS-Lab-Group/SpecTraL",
+  "authors": [
+   "Hariharan Ramesh",
+   "Jyotikrishna Dass"
+  ],
+  "published": "2026-07-23T09:07:56Z"
+ },
+ {
+  "arxiv_id": "2607.21088v1",
+  "title": "CASC: Causal Adversarial Subspace Clustering for Multivariate Spatiotemporal Data",
+  "abstract": "Deep subspace clustering plays a critical role in applications involving multivariate spatiotemporal data, such as sea ice monitoring, disease spread analysis, and tracking neuro-degeneration over time. Despite recent advances, existing methods primarily rely on geometric self-expressiveness, assume static subspace structures, and often fail to capture causal dependencies, local spatial interactions, and long-range temporal dynamics inherent in complex spatiotemporal systems. To address these limitations, we propose a novel Causal Adversarial Subspace Clustering (CASC) framework for discovering evolving latent regimes in high-dimensional spatiotemporal data. CASC integrates a U-Net-inspired deep adversarial clustering architecture with stacked FAConvLSTM layers to preserve spatial and temporal structure while learning robust latent representations. A graph attention transformer-based self-expressive network is introduced to jointly model local spatial relationships, global dependencies, and long-range temporal interactions. Furthermore, we propose two new learning objectives: (1) a Causal Subspace Preservation Loss that aligns self-expression coefficients with latent causal relationships, encouraging clusters to reflect underlying causal processes rather than simple feature similarity, and (2) a Dynamic Temporal Subspace Evolution Loss that captures evolving subspace structures and temporal regime transitions in nonstationary environments. Together, these components transform deep subspace clustering from a correlation-driven paradigm into a causal-temporal regime discovery framework.",
+  "authors": [
+   "Francis Ndikum Nji",
+   "Vandana Janeja",
+   "Jianwu Wang"
+  ],
+  "published": "2026-07-23T09:19:17Z"
+ },
+ {
+  "arxiv_id": "2607.21094v1",
+  "title": "A Polynomial Architecture-Attribution Co-Design Framework for Exact Aumann-Shapley Attribution in GNNs",
+  "abstract": "We study feature-level and node-level explanations for graph neural networks (GNNs) through the lens of Aumann-Shapley attribution. Path-integral methods such as Integrated Gradients provide an axiomatic formulation of attribution, but their practical use in deep GNNs typically relies on finite-sample numerical approximations to the path integral, requiring a trade-off between quadrature error and computational cost. This paper proposes APEX, a model-attribution co-design framework that makes the attribution integral exactly computable under a polynomial GNN architecture. The key component is PolyGIN, a GIN-style graph network whose message-passing, normalization, and transformation operations preserve a bounded multivariate polynomial form for scalar model scores, such as pre-softmax logits. We show that, for a PolyGIN with $L$ polynomial transformation blocks, the derivative along the attribution path has degree at most $2^L-1$. Therefore, Gauss--Legendre quadrature can evaluate the Aumann--Shapley path integral exactly, up to floating-point precision, with $2^{L-1}$ deterministic evaluation points. The resulting attributions can be computed at the feature level and then aggregated into node-level scores while preserving completeness. Experiments on synthetic and real-world graph benchmarks show that PolyGIN maintains competitive predictive performance, while the complete APEX framework achieves higher attribution fidelity than the compared baselines and substantially reduces the number of evaluations required for path integration.",
+  "authors": [
+   "Bizu Feng",
+   "Zhimu Yang",
+   "Shuming Wang",
+   "Shaode Yu",
+   "Yuan Cheng",
+   "Xiaojun Qian",
+   "Zixin Hu"
+  ],
+  "published": "2026-07-23T09:26:15Z"
+ },
+ {
+  "arxiv_id": "2607.21106v1",
+  "title": "AttriMem: Attribution-Guided Process Feedback for Agent Memory Learning",
+  "abstract": "Effective memory is crucial for LLM agents, yet constructing it effectively remains challenging. A memory-construction policy decides what information to extract, store, update, compress, or discard as interactions accumulate. Heuristic memory methods rely on subjective, task-specific rules, which can misalign with downstream objectives and limit cross-task adaptability. RL-based methods, by contrast, learn from task feedback but mainly use outcome- or module-level rewards. These coarse signals indicate task success but cannot identify which intermediate memory contents support the final answer, creating a fine-grained credit-assignment bottleneck. However, constructing such process feedback is prohibitively difficult because intermediate memory decisions lack unique ground-truth targets, while the appropriate credit varies with the agent's uncertain reasoning trajectory and therefore cannot be specified in advance. We propose AttriMem, an attribution-guided process-feedback framework for learning memory-construction policies with RL. AttriMem augments the global outcome reward with local rewards derived from token-level contributions to the final answer. Experiments on long-horizon dialogue question answering show that AttriMem outperforms retrieval-based, heuristic, and RL-based baselines, generalizes across benchmarks and answer models, stabilizes RL optimization.",
+  "authors": [
+   "Qinfeng Li",
+   "Yuntai Bao",
+   "Xinyan Yu",
+   "Hongze Chen",
+   "Wenqi Zhang",
+   "Xuhong Zhang"
+  ],
+  "published": "2026-07-23T09:35:34Z"
+ },
+ {
+  "arxiv_id": "2607.21111v1",
+  "title": "TOUR: A Trajectory-Level Unlearning Benchmark for Offline Reinforcement Learning",
+  "abstract": "Offline Reinforcement Learning (RL) agents are trained on fixed behavioral trajectories, which makes trajectory-level deletion important when selected data must be removed after training. Evaluating such deletion is difficult because a lower membership score can reflect trajectory removal, residual memorization visible to another attack, or policy collapse that destroys useful behavior. We introduce Trajectory-level memOrization and Unlearning in offline RL (TOUR), a benchmark that combines trajectory-level partitioning, matched non-member controls, retraining references, retained-performance anchors, and multi-attack privacy auditing. Across D4RL locomotion experiments and an exploratory AntMaze extension, TOUR shows that common deletion baselines have environment-dependent privacy-utility behavior. Retraining and fine-tuning often provide stronger retained-utility references than uniform GA+Refit, while TrajDeleter remains a useful comparator but is not uniformly stronger under the same audit. Reference-model, threshold, deviation, equivalence, action-error, representation-based, and query-limited attacks further show that a single likelihood-based membership score can overstate deletion quality. In the evaluated settings, conclusions about offline RL unlearning are therefore not stable under single-score auditing. They depend on matched non-member construction, retraining-relative calibration, attack family, retained utility, and explicit scope for diagnostic architecture or component-level evidence.",
+  "authors": [
+   "Chaofan Pan",
+   "Lingfei Ren",
+   "Xiangyu Jiang",
+   "Yanhua Li",
+   "Xuemei Cao",
+   "Xiangkun Wang",
+   "Hao Yu",
+   "Wei Wei",
+   "Xin Yang"
+  ],
+  "published": "2026-07-23T09:40:40Z"
+ },
+ {
+  "arxiv_id": "2607.21120v1",
+  "title": "Relative Value Learning",
+  "abstract": "In reinforcement learning, critics typically estimate absolute state values $V(s)$, estimating how good a particular situation is in isolation. However, it turns out that only differences in value are relevant for control. Motivated by this, we propose Relative Value Learning (RV), a framework that learns value differences directly via an antisymmetric function $\u0394(s_i, s_j) = V(s_i) - V(s_j)$. We introduce a pairwise Bellman operator and prove it is a $\u03b3$-contraction with a unique fixed point equal to the true value differences, derive well-posed $1$-step, $n$-step and $\u03bb$-return targets and reconstruct generalized advantage estimation from pairwise differences to obtain an unbiased policy-gradient estimator (R-GAE). Beyond theoretical results, we integrate RV with PPO and achieve competitive performance on the Atari benchmark (49 ALE games) compared to standard PPO, indicating that relative value estimation is an effective alternative to absolute critics.",
+  "authors": [
+   "Marc H\u00f6ftmann",
+   "Jan Robine",
+   "Stefan Harmeling"
+  ],
+  "published": "2026-07-23T09:55:45Z"
+ },
+ {
+  "arxiv_id": "2607.21130v1",
+  "title": "Hardware-Software Co-Design for Float16 On-Device Training on RISC-V Single-Core",
+  "abstract": "By leveraging standard RISC-V extensions, namely Zfh (scalar float16) and Zvfh (vector float16), this work proposes an open-source framework to enable complete on-device training on resource-constrained RISC-V single-core. Our approach allows memory footprint reduction by about 50% as compared to using float32 and with minimal model performance degradation. We also facilitate transfer learning and fine-tuning scenarios by incorporating layer-freezing capabilities. Our work builds onto AIfES, an open-source, modular and generic DNN training and inference framework for embedded systems that can be extended with custom hardware-specific functions. The benefits of float16 is further emphasized by outlining the low area overhead of Zfh on a RV64GC super-scalar out-of-order FPGA softcore (+1.15% LUT6 and +0.05% FF at 175MHz). Finally, we discuss the architecture of a Zvfh implementation within the same RISC-V core.",
+  "authors": [
+   "Benjamin Hubinet",
+   "Pierre-Alain Moellic",
+   "Olivier Savry",
+   "Olivier Potin",
+   "Jean-Baptiste Rigaud"
+  ],
+  "published": "2026-07-23T10:06:11Z"
+ },
+ {
+  "arxiv_id": "2607.21187v1",
+  "title": "Case study: proving sqrt(2) irrational with LPTP and an LLM",
+  "abstract": "We present the interactions with an LLM (Large Language Model) aiming at proving that the square root of 2 is not a rational number in an LP (Logic Programming) context. We start from a few basic pure logic programming predicate definitions. We rely on the LPTP (Logic Program Theorem Prover) system for stating and proving properties about logic programs. As the proof language of LPTP is based on natural deduction, the proofs are human readable. In our case study, we sketch in LPTP the usual proof showing the irrationality of the square root of 2. Then we describe the interactions we had with the LLM. We end up with a complete formal proof, partially generated by an LLM and fully proof-checked by LPTP.",
+  "authors": [
+   "Fred Mesnard",
+   "\u00c9tienne Payet",
+   "Wim Vanhoof"
+  ],
+  "published": "2026-07-23T11:15:38Z"
+ },
+ {
+  "arxiv_id": "2607.21197v1",
+  "title": "Declarative Problem Solving in UAM Strategic Deconfliction",
+  "abstract": "The growing demand for Urban Air Mobility (UAM) introduces significant challenges in airspace management, particularly within densely populated metropolitan regions. As the number of aerial vehicles-such as drones, air taxis, and helicopters-continues to rise, so does the risk of mid-air collisions and conflicts with existing air traffic and obstacles. Ensuring safe and efficient UAM operations requires robust strategic deconfliction mechanisms. We propose an Answer Set Programming (ASP) based approach for strategic deconfliction, focusing on time synchronization and route optimization for conflict-free flight plans. The solution is benchmarked against Constraint Programming (CP), emphasizing scalability and resource use. Results show that ASP offers faster execution and better scalability for small to medium cases, while CP maintains stable memory but degrades with complexity.",
+  "authors": [
+   "Gioacchino Sterlicchio",
+   "Angelo Oddi",
+   "Riccardo Rasconi",
+   "Francesca Alessandra Lisi"
+  ],
+  "published": "2026-07-23T11:18:34Z"
+ },
+ {
+  "arxiv_id": "2607.21200v1",
+  "title": "Transformer-based Diffusion models for Hydrological Time Series Probabilistic Imputation and Forecasting",
+  "abstract": "The modeling of hydrometeorological time series with limited observations is a key challenge in the monitoring of hydro-systems and water resources, as well as for flood or drought risk assessment. Due to the high variability of the underlying processes and the sparsity of available measurements, traditional statistical approaches often struggle to accurately represent their dynamics. In this context, recent advances in deep learning offer a promising direction for improving the representation and generation of complex temporal processes sampled at several observation sites. This study investigates the application of transformer-based diffusion models to the simulation and reconstruction of hydrological time series. The proposed framework is applied to the joint modeling of water quantity and quality at six sites spread across three adjacent headwater catchments located in North-East France on a limestone plateau covered by forests and field crops. The model is calibrated and validated using available observational data, which has been quality controlled and corrected for sensor drift and malfunction through collaborative efforts by LNE metrology expertise and Andra monthly quality control over more than 15 years. Its performance is compared with several established baseline approaches commonly used for time series modeling. Quantitative evaluation metrics are employed to assess the ability of the proposed method to reproduce key temporal characteristics of the observed signals in two settings: the imputation of incomplete time series and the forecasting of upcoming hydrological conditions. Results support the effectiveness of the transformer-based approach and highlight its capacity to capture and simulate the complex patterns present in hydrological data. In particular, the results indicate that diffusion models can efficiently sample realistic time series distributions under observation settings with variable missing data for both forecasting and imputation.",
+  "authors": [
+   "Ferdinand Bhavsar",
+   "Lionel Benoit",
+   "Maxime Savatier",
+   "Edith Gabriel"
+  ],
+  "published": "2026-07-23T11:19:27Z"
+ },
+ {
+  "arxiv_id": "2607.21202v1",
+  "title": "Hybrid MKNF with Classical Negation in the Rule Component",
+  "abstract": "Hybrid MKNF knowledge bases under the well-founded semantics integrate Description Logics with Logic Programming. However, they do not support classical negation in the rule component, limiting their ability to represent explicit negative knowledge. This limitation is particularly significant in safety-critical applications, where reasoning often requires explicit negative information rather than interpreting the absence of information as evidence of absence. To address this issue, we introduce an extension of Hybrid MKNF that supports classical negation in the rule component. We formally define the syntax and semantics of the extended language and present a general procedure for computing its well-founded model.",
+  "authors": [
+   "Arun Raveendran Nair Sheela",
+   "Christophe Rey",
+   "Florence De Grancey"
+  ],
+  "published": "2026-07-23T11:20:15Z"
+ },
+ {
+  "arxiv_id": "2607.21219v1",
+  "title": "DART: A Degradation-Aware Recurrent Transformer for Archival Film Restoration",
+  "abstract": "Archival film restoration is a challenging problem because historical footage contains compound degradations such as scratches, dust, blur, noise, flicker, and photometric aging, while clean reference videos are unavailable. Existing video restoration methods largely treat these degradations implicitly, reconstructing frames without explicit knowledge of where damage occurs or how severe it is. We propose DART, a degradation-aware recurrent transformer for archival film restoration. DART predicts and propagates a soft defect mask through time, using it to guide temporal fusion and condition the restoration network on both damage location and severity. This makes the restoration process explicitly aware of film artifacts rather than relying only on reconstruction losses. Experiments on real archival benchmarks show that DART improves no-reference perceptual quality over prior restoration architectures while remaining compact and efficient, producing cleaner and more temporally consistent restorations of structured film damage.",
+  "authors": [
+   "Miko\u0142aj Jastrz\u0119bski",
+   "Wojciech Koz\u0142owski",
+   "Kamil Adamczewski"
+  ],
+  "published": "2026-07-23T11:34:51Z"
+ },
+ {
+  "arxiv_id": "2607.21273v1",
+  "title": "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works",
+  "abstract": "Dense per-step supervision is an appealing remedy for sparse-reward, long-horizon LLM agents: reward the agent for predicting its next observation, and memory should follow. We show that under group-normalized RL (GRPO), this recipe does not merely fail -- it destroys the policy. Across Qwen3-1.7B/4B/8B on ALFWorld, a potential-based prediction reward drives every run into a degenerate absorbing state (prediction accuracy -&gt; 1.0, task success -&gt; 0,episode length pinned at the horizon): the \"dark room\" pathology, built automatically by the optimizer. A single-factor ablation localizes the cause -- removing only GRPO's std normalization turns the same reward from catastrophic (0%) into baseline parity -- and a two-line proposition explains why: in all-fail groups the z-scored advantage is invariant to the shaping coefficient, so bounded rewards become unbounded pressure and annealing cannot help. Our central insight generalizes this: what z-scoring amplifies is a dense signal's within-group variance while all-fail groups dominate, so signals whose variance decays by mastery are structurally amplifier-safe.This variance-profile criterion retrodicts our collapses, carries preregistered predictions for arms that had not yet run, and is consistent with published reward-channel successes (a compatibility check, not an independent test). Finally, a controlled signal-delivery matrix (identical signal, varying only the consumption mechanism) shows the reward channel is at best neutral while the auxiliary-loss channel gains ~20 points -- and a shuffled-gold placebo matches the true-gold arm, so the gap survives without correct labels. Endpoints are single-seed; seed replication and group-size controls are preregistered and in progress.",
+  "authors": [
+   "Yu Wang"
+  ],
+  "published": "2026-07-23T12:50:18Z"
+ }
+]

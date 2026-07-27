@@ -1,0 +1,201 @@
+{"page": "Linguistics", "revid": 1363646490, "subject": "Linguistics", "pid": "P31", "object": "scientific field", "statement": "Linguistics is the scientific study of language."}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Linguistics", "pid": null, "object": "core areas", "statement": "Linguistics encompasses syntax, semantics, morphology, phonetics, phonology, and pragmatics."}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Syntax", "pid": "P31", "object": "linguistic area", "statement": "Syntax is the study of rules governing sentence structure."}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Semantics", "pid": "P31", "object": "linguistic area", "statement": "Semantics deals with meaning in language."}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Morphology", "pid": "P31", "object": "linguistic area", "statement": "Morphology is the study of word structure."}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Phonetics", "pid": "P31", "object": "linguistic area", "statement": "Phonetics is the study of speech sounds and sign language gestures."}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Phonology", "pid": "P31", "object": "linguistic area", "statement": "Phonology studies abstract sound systems of languages."}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Pragmatics", "pid": "P31", "object": "linguistic area", "statement": "Pragmatics studies how context contributes to meaning."}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Biolinguistics", "pid": null, "object": "linguistic subdiscipline", "statement": "Biolinguistics studies biological variables and language evolution.", "vetoed": true}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Psycholinguistics", "pid": null, "object": "linguistic subdiscipline", "statement": "Psycholinguistics studies psychological factors in human language.", "vetoed": true}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Theoretical linguistics", "pid": null, "object": "branch of linguistics", "statement": "Theoretical linguistics develops frameworks for describing language universals.", "vetoed": true}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Applied linguistics", "pid": null, "object": "branch of linguistics", "statement": "Applied linguistics uses scientific findings for practical language education.", "vetoed": true}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Mathematical linguistics", "pid": null, "object": "branch of linguistics", "statement": "Mathematical linguistics applies mathematics to model linguistic phenomena.", "vetoed": true}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Computational linguistics", "pid": null, "object": "branch of linguistics", "statement": "Computational linguistics models natural language computationally.", "vetoed": true}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Historical linguistics", "pid": "P31", "object": "subdiscipline", "statement": "Historical linguistics studies language change over time."}
+{"page": "Linguistics", "revid": 1363646490, "subject": "Linguistics", "pid": null, "object": "related fields", "statement": "Linguistics is related to philosophy of language, stylistics, rhetoric, semiotics, lexicography, and translation."}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "Computer science pioneers", "pid": "P31", "object": "historical figures", "statement": "Pioneers in computer science made transformative breakthroughs in computing."}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "Computer Pioneer Award", "pid": null, "object": "award", "statement": "The Computer Pioneer Award recognizes computer pioneers.", "vetoed": true}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "IEEE John von Neumann Medal", "pid": "P31", "object": "award", "statement": "The IEEE John von Neumann Medal honors computing pioneers."}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "Grace Murray Hopper Award", "pid": null, "object": "award", "statement": "The Grace Murray Hopper Award recognizes computing contributions.", "vetoed": true}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "History of computing", "pid": null, "object": "field of study", "statement": "History of computing documents computer development.", "vetoed": true}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "Computing history", "pid": "P937", "object": "academic research", "statement": "Computing history research covers computing hardware and software."}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "Turing Award", "pid": "P31", "object": "award", "statement": "The Turing Award is a major computing science award."}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "Women in computing", "pid": null, "object": "field of study", "statement": "Women in computing documents female contributions to computer science.", "vetoed": true}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "John von Neumann", "pid": "P106", "object": "computer pioneer", "statement": "John von Neumann is honored with a computing medal."}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "Grace Hopper", "pid": "P106", "object": "computer pioneer", "statement": "Grace Hopper is recognized with an award for computing."}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "Alan Turing", "pid": "P106", "object": "computer pioneer", "statement": "Alan Turing is honored with a computing award."}
+{"page": "List of pioneers in computer science", "revid": 1363541651, "subject": "Computing pioneers", "pid": "P31", "object": "historical category", "statement": "Computing pioneers are those who made transformative breakthroughs in computing."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Logarithm", "pid": "P31", "object": "mathematical concept", "statement": "A logarithm is the exponent by which a base must be raised to produce a number."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Common logarithm", "pid": null, "object": "logarithm type", "statement": "Common logarithm uses base 10.", "vetoed": true}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Natural logarithm", "pid": null, "object": "logarithm type", "statement": "Natural logarithm has e as its base.", "vetoed": true}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Binary logarithm", "pid": null, "object": "logarithm type", "statement": "Binary logarithm uses base 2.", "vetoed": true}
+{"page": "Logarithm", "revid": 1365861236, "subject": "John Napier", "pid": "P800", "object": "logarithms", "statement": "John Napier introduced logarithms in 1614."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Logarithm", "pid": null, "object": "historical application", "statement": "Logarithms simplified calculations before computers."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Leonhard Euler", "pid": "P800", "object": "exponential function", "statement": "Leonhard Euler connected logarithms to exponential functions in the 18th century."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Euler", "pid": "P800", "object": "natural logarithm base", "statement": "Leonhard Euler introduced e as the base of natural logarithms."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Slide rule", "pid": "P31", "object": "calculating tool", "statement": "Slide rules used logarithms for quick calculations."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Logarithmic scales", "pid": "P31", "object": "mathematical tool", "statement": "Logarithmic scales compress wide-ranging values."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Decibel", "pid": null, "object": "logarithmic unit", "statement": "Decibel expresses signal power ratios logarithmically.", "vetoed": true}
+{"page": "Logarithm", "revid": 1365861236, "subject": "pH", "pid": null, "object": "logarithmic measure", "statement": "pH measures solution acidity logarithmically.", "vetoed": true}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Logarithm", "pid": null, "object": "product rule", "statement": "Logarithm of a product equals sum of logarithms."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Logarithm", "pid": null, "object": "quotient rule", "statement": "Logarithm of a quotient equals difference of logarithms."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Logarithm", "pid": null, "object": "power rule", "statement": "Logarithm of a power equals the power times the logarithm."}
+{"page": "Logarithm", "revid": 1365861236, "subject": "Complex logarithm", "pid": "P31", "object": "logarithm type", "statement": "Complex logarithm is the inverse of complex exponential function."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Logical truth", "pid": "P31", "object": "fundamental logic concept", "statement": "Logical truth is a statement true under all interpretations."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Logical truth", "pid": null, "object": "philosophical importance", "statement": "Logical truths are necessarily true statements."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Tautology", "pid": "P31", "object": "logical concept", "statement": "Tautology is a formula true under any interpretation."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Analytic truth", "pid": null, "object": "type of truth", "statement": "Analytic truths are true by definition.", "vetoed": true}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Logical truth", "pid": null, "object": "contrast", "statement": "Logical truths contrast with contingent facts."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Contingent truth", "pid": null, "object": "type of truth", "statement": "Contingent truths are true in this world but could be false.", "vetoed": true}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Logical constants", "pid": null, "object": "logical elements", "statement": "Logical constants include connectives and quantifiers.", "vetoed": true}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Logical positivism", "pid": "P31", "object": "20th century movement", "statement": "Logical positivism attempted to reduce science to pure logic."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "W. V. O. Quine", "pid": "P106", "object": "philosopher", "statement": "W. V. O. Quine questioned the analytic-synthetic distinction."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Non-classical logic", "pid": null, "object": "formal system", "statement": "Non-classical logic includes systems different from standard logic.", "vetoed": true}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Truth values", "pid": "P31", "object": "logical concept", "statement": "Truth values determine statement interpretation."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Logical form", "pid": "P31", "object": "logical concept", "statement": "Logical form is determined by semantic or syntactic structure."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Rule of inference", "pid": "P31", "object": "logical concept", "statement": "Rules of inference connect logical truth to logical consequence."}
+{"page": "Logical truth", "revid": 1355661175, "subject": "Logical implication", "pid": null, "object": "logical relation", "statement": "Logical implication connects statements through logical incompatibility.", "vetoed": true}
+{"page": "Logicism", "revid": 1347189030, "subject": "Logicism", "pid": null, "object": "philosophy of mathematics", "statement": "Logicism claims mathematics is reducible to logic.", "vetoed": true}
+{"page": "Logicism", "revid": 1347189030, "subject": "Gottlob Frege", "pid": "P106", "object": "logician", "statement": "Gottlob Frege initiated the logicist programme."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Richard Dedekind", "pid": "P106", "object": "mathematician", "statement": "Richard Dedekind developed logicism."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Giuseppe Peano", "pid": "P106", "object": "mathematician", "statement": "Giuseppe Peano contributed to logicism."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Bertrand Russell", "pid": "P106", "object": "philosopher", "statement": "Bertrand Russell championed logicism."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Alfred North Whitehead", "pid": "P106", "object": "mathematician", "statement": "Alfred North Whitehead championed logicism."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Russell's paradox", "pid": null, "object": "logical paradox", "statement": "Russell's paradox showed inconsistency in Frege's system.", "vetoed": true}
+{"page": "Logicism", "revid": 1347189030, "subject": "Principia Mathematica", "pid": "P50", "object": "Russell and Whitehead", "statement": "Principia Mathematica documented the logicist programme."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Principia Mathematica", "pid": "P571", "object": "1903", "statement": "Russell wrote The Principles of Mathematics in 1903."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Zermelo-Fraenkel set theory", "pid": "P31", "object": "axiomatic system", "statement": "Zermelo-Fraenkel set theory provides axioms for mathematics."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Kurt G\u00f6del", "pid": "P106", "object": "logician", "statement": "Kurt G\u00f6del proved incompleteness theorems."}
+{"page": "Logicism", "revid": 1347189030, "subject": "G\u00f6del's incompleteness", "pid": null, "object": "logicism impact", "statement": "Incompleteness theorems limited the logicist programme."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Analytic philosophy", "pid": "P31", "object": "philosophical movement", "statement": "Logicism contributed to analytic philosophy development."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Logicism", "pid": null, "object": "mathematical foundation", "statement": "Logicism seeks to derive all mathematics from logic alone."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Set theory", "pid": "P31", "object": "mathematical field", "statement": "Set theory provides logical foundations for mathematics."}
+{"page": "Logicism", "revid": 1347189030, "subject": "Frege", "pid": "P800", "object": "Grundgesetze der Arithmetik", "statement": "Frege's Grundgesetze der Arithmetik advanced logicism."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "London Mathematical Society", "pid": "P31", "object": "learned society", "statement": "LMS is the UK's primary mathematical learned society."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "London Mathematical Society", "pid": "P571", "object": "1865", "statement": "LMS was established on 16 January 1865."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "Augustus De Morgan", "pid": "P39", "object": "first president", "statement": "Augustus De Morgan was LMS's first president."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "London Mathematical Society", "pid": "P159", "object": "University College", "statement": "LMS meetings were initially held at University College."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "London Mathematical Society", "pid": "P159", "object": "Burlington House", "statement": "LMS moved into Burlington House, Piccadilly."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "American Mathematical Society", "pid": "P112", "object": "London Mathematical Society", "statement": "LMS was the model for founding the American Mathematical Society in 1888."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "Mary Cartwright", "pid": "P39", "object": "first female president", "statement": "Mary Cartwright was LMS's first female president in 1961-62."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "London Mathematical Society", "pid": null, "object": "royal charter", "statement": "LMS received a royal charter in 1965."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "De Morgan House", "pid": "P276", "object": "Russell Square, Bloomsbury", "statement": "LMS relocated to De Morgan House at 57-58 Russell Square in 1998."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "London Mathematical Society", "pid": null, "object": "150th anniversary", "statement": "LMS celebrated 150 years in 2015."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "De Morgan Medal", "pid": "P31", "object": "triennial prize", "statement": "De Morgan Medal is LMS's most prestigious award."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "P\u00f3lya Prize", "pid": null, "object": "biennial award", "statement": "P\u00f3lya Prize awards mathematics excellence biennially.", "vetoed": true}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "Fr\u00f6hlich Prize", "pid": "P31", "object": "biennial award", "statement": "Fr\u00f6hlich Prize recognizes mathematical research."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "Shephard Prize", "pid": "P31", "object": "biennial award", "statement": "Shephard Prize is awarded for mathematical excellence."}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "Whitehead Prize", "pid": null, "object": "annual award", "statement": "Whitehead Prize awards mathematical achievements.", "vetoed": true}
+{"page": "London Mathematical Society", "revid": 1348263440, "subject": "Emmy Noether Fellowships", "pid": null, "object": "fellowship programme", "statement": "LMS awards Emmy Noether Fellowships.", "vetoed": true}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "London School of Economics", "pid": "P31", "object": "public research university", "statement": "LSE is a public research university in London."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "London School of Economics", "pid": "P571", "object": "1895", "statement": "LSE was founded in 1895."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "Sidney Webb", "pid": null, "object": "LSE", "statement": "Sidney Webb founded LSE.", "vetoed": true}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "Beatrice Webb", "pid": null, "object": "LSE", "statement": "Beatrice Webb founded LSE.", "vetoed": true}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "Graham Wallas", "pid": null, "object": "LSE", "statement": "Graham Wallas founded LSE.", "vetoed": true}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "George Bernard Shaw", "pid": null, "object": "LSE", "statement": "George Bernard Shaw founded LSE.", "vetoed": true}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "Henry Hunt Hutchinson", "pid": "P127", "object": "LSE", "statement": "Henry Hunt Hutchinson left 20,000 pounds to establish LSE."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "Fabian Society", "pid": "P112", "object": "LSE founders", "statement": "LSE founders were members of the Fabian Society."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "London School of Economics", "pid": "P17", "object": "United Kingdom", "statement": "LSE is located in the United Kingdom."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "London School of Economics", "pid": "P276", "object": "Central London", "statement": "LSE is in Central London near Covent Garden and Holborn."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "London School of Economics", "pid": "P463", "object": "University of London", "statement": "LSE is a member institution of the University of London."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "London School of Economics", "pid": "P463", "object": "Russell Group", "statement": "LSE is a member of the Russell Group."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "LSE", "pid": null, "object": "student enrollment", "statement": "LSE had under 13,000 students as of 2023-24."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "John Maynard Keynes", "pid": "P106", "object": "economist", "statement": "Keynes developed Keynesian economics theories."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "Friedrich Hayek", "pid": "P106", "object": "economist", "statement": "Hayek followed the Austrian School of economics."}
+{"page": "London School of Economics", "revid": 1365301635, "subject": "Lionel Robbins", "pid": "P106", "object": "economist", "statement": "Robbins was an LSE economist involved in 1930s economic debates."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P569", "object": "22 January 1788", "statement": "Byron was born on 22 January 1788."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P570", "object": "19 April 1824", "statement": "Byron died on 19 April 1824."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P19", "object": "Holles Street, London", "statement": "Byron was born on Holles Street in London."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P106", "object": "British poet", "statement": "Byron was a British poet."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P31", "object": "Romantic figure", "statement": "Byron was a major figure of the Romantic movement."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "Don Juan", "pid": "P50", "object": "Byron", "statement": "Don Juan is a lengthy narrative by Byron."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "Childe Harold's Pilgrimage", "pid": "P50", "object": "Byron", "statement": "Childe Harold's Pilgrimage is a major work by Byron."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "Hebrew Melodies", "pid": "P50", "object": "Byron", "statement": "Hebrew Melodies contains Byron's shorter poems."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P69", "object": "Trinity College Cambridge", "statement": "Byron was educated at Trinity College, Cambridge."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P27", "object": "British", "statement": "Byron held British citizenship."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P39", "object": "6th Baron Byron", "statement": "Byron was the 6th Baron Byron of Rochdale."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "Newstead Abbey", "pid": "P127", "object": "Byron", "statement": "Byron inherited Newstead Abbey in Nottinghamshire."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P551", "object": "Venice", "statement": "Byron lived in Venice, Italy."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P551", "object": "Ravenna", "statement": "Byron lived in Ravenna, Italy."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P551", "object": "Pisa", "statement": "Byron lived in Pisa, Italy."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P551", "object": "Genoa", "statement": "Byron lived in Genoa, Italy."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P463", "object": "Greek War of Independence", "statement": "Byron joined the Greek War of Independence against Ottoman Empire."}
+{"page": "Lord Byron", "revid": 1363756777, "subject": "George Noel Gordon Byron", "pid": "P20", "object": "Missolonghi", "statement": "Byron died at Missolonghi, Greece, during military campaign."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": "P31", "object": "function spaces", "statement": "Lp spaces are function spaces defined using the p-norm."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lebesgue spaces", "pid": "P138", "object": "Henri Lebesgue", "statement": "Lebesgue spaces are named after Henri Lebesgue."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": "P112", "object": "Frigyes Riesz", "statement": "Frigyes Riesz first introduced Lp spaces."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": null, "object": "Banach spaces", "statement": "Lp spaces form an important class of Banach spaces.", "vetoed": true}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": "P31", "object": "topological vector spaces", "statement": "Lp spaces are topological vector spaces."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp norm", "pid": "P31", "object": "mathematical concept", "statement": "The p-norm generalizes Euclidean distance."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Euclidean norm", "pid": "P31", "object": "p-norm variant", "statement": "Euclidean norm is the 2-norm in vector spaces."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": "P937", "object": "functional analysis", "statement": "Lp spaces form key structure in functional analysis."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": "P937", "object": "measure theory", "statement": "Lp spaces apply to measure and probability spaces."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": "P937", "object": "physics", "statement": "Lebesgue spaces solve problems in physics."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": "P937", "object": "statistics", "statement": "Lp spaces apply to statistical theory and problems."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": "P937", "object": "economics", "statement": "Lp spaces apply to economic theory and analysis."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": "P937", "object": "engineering", "statement": "Lp spaces solve problems in engineering applications."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Complex logarithm", "pid": "P31", "object": "logarithm variant", "statement": "Complex logarithm is the inverse of complex exponential function."}
+{"page": "Lp space", "revid": 1357872614, "subject": "Lp spaces", "pid": null, "object": "mathematical importance", "statement": "Lp spaces are fundamental in modern analysis and mathematics."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "MIT Press", "pid": "P31", "object": "university press", "statement": "MIT Press is a university press."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "MIT Press", "pid": "P127", "object": "MIT", "statement": "MIT Press is operated by the Massachusetts Institute of Technology."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "MIT Press", "pid": "P123", "object": "academic publisher", "statement": "MIT Press publishes more than 300 books annually."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "MIT Press", "pid": "P123", "object": "academic journals", "statement": "MIT Press publishes over 40 academic journals annually."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "MIT Press", "pid": "P17", "object": "United States", "statement": "MIT Press is located in Cambridge, Massachusetts."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "MIT Press", "pid": "P276", "object": "Cambridge, Massachusetts", "statement": "MIT Press is based in Cambridge, Massachusetts."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "MIT Press", "pid": "P571", "object": "1926", "statement": "MIT Press traces origins to 1926 with Problems of Atomic Dynamics."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "Max Born", "pid": "P800", "object": "Problems of Atomic Dynamics", "statement": "Max Born authored Problems of Atomic Dynamics published by MIT in 1926."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "Technology Press", "pid": "P571", "object": "1932", "statement": "MIT established Technology Press in 1932."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "James R. Killian, Jr.", "pid": null, "object": "Technology Press", "statement": "James R. Killian, Jr. founded Technology Press at MIT.", "vetoed": true}
+{"page": "MIT Press", "revid": 1364006529, "subject": "Technology Press", "pid": "P463", "object": "John Wiley & Sons", "statement": "Technology Press partnered with John Wiley & Sons."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "Technology Press", "pid": "P571", "object": "1961", "statement": "Technology Press was renamed MIT Press in 1961."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "Carroll Bowen", "pid": "P39", "object": "first director", "statement": "Carroll Bowen was appointed MIT Press's first director in 1962."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "MIT Press", "pid": null, "object": "publishing scope", "statement": "MIT Press publishes across art, design, architecture, business, cognitive science, and computer science."}
+{"page": "MIT Press", "revid": 1364006529, "subject": "MIT Press", "pid": null, "object": "open access", "statement": "MIT Press pioneers open access models in academic publishing."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "MacTutor History of Mathematics Archive", "pid": "P31", "object": "online archive", "statement": "MacTutor is a website containing historical mathematician biographies."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "MacTutor", "pid": "P127", "object": "University of St Andrews", "statement": "MacTutor is hosted by the University of St Andrews in Scotland."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "John J. O'Connor", "pid": null, "object": "MacTutor", "statement": "John J. O'Connor maintains MacTutor archive.", "vetoed": true}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "Edmund F. Robertson", "pid": "P112", "object": "MacTutor", "statement": "Edmund F. Robertson maintains MacTutor archive."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "MacTutor", "pid": null, "object": "subject coverage", "statement": "MacTutor contains biographies of more than 3200 mathematicians and scientists."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "MacTutor", "pid": null, "object": "topic scope", "statement": "MacTutor covers information on famous curves and history of mathematics topics."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "Mathematical MacTutor system", "pid": "P31", "object": "HyperCard database", "statement": "Mathematical MacTutor was a HyperCard database by O'Connor and Robertson."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "MacTutor", "pid": "P166", "object": "European Academic Software award", "statement": "MacTutor won the European Academic Software award in 1994."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "MacTutor", "pid": "P571", "object": "1994", "statement": "The MacTutor website was founded in 1994."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "O'Connor and Robertson", "pid": "P166", "object": "Hirst Prize", "statement": "O'Connor and Robertson won the Hirst Prize in 2015."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "Hirst Prize", "pid": "P50", "object": "London Mathematical Society", "statement": "The Hirst Prize is awarded by the London Mathematical Society."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "MacTutor", "pid": null, "object": "influence", "statement": "MacTutor is described as the most widely used web-based resource in mathematics history."}
+{"page": "MacTutor History of Mathematics Archive", "revid": 1301855573, "subject": "MacTutor", "pid": "P937", "object": "mathematics history", "statement": "MacTutor serves as a primary resource for mathematics history research."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": "P31", "object": "capital city", "statement": "Madrid is the capital and most populous city of Spain."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": "P17", "object": "Spain", "statement": "Madrid is located in Spain."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": "P36", "object": "Spain", "statement": "Madrid is the capital of Spain."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": "P276", "object": "Iberian Peninsula", "statement": "Madrid lies on the Iberian Peninsula."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": null, "object": "geography", "statement": "Madrid lies on the River Manzanares at about 660 metres above sea level."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": null, "object": "population", "statement": "Madrid had a population of over 3.4 million in 2025."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": null, "object": "metropolitan area", "statement": "Madrid's metropolitan area has approximately 6.8 million people."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": "P131", "object": "Spain", "statement": "Madrid is the capital of the autonomous community of Madrid."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": null, "object": "political status", "statement": "Madrid is the political, economic and cultural centre of Spain."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": null, "object": "european rank", "statement": "Madrid is the second-largest city in the European Union after Berlin."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": "P571", "object": "9th century", "statement": "Madrid's primitive core dates back to the late 9th century."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": null, "object": "medieval period", "statement": "Madrid consolidated in the Late Middle Ages as a sizeable town."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": null, "object": "administrative role", "statement": "Madrid became the permanent seat of the Hispanic Monarchy's court after 1561."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": "P937", "object": "economic hub", "statement": "Madrid has the second-largest GDP in the European Union."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Madrid", "pid": null, "object": "global status", "statement": "Madrid is ranked as an alpha world city by the Globalization and World Cities Research Network."}
+{"page": "Madrid", "revid": 1365963241, "subject": "Telef\u00f3nica", "pid": "P159", "object": "Madrid", "statement": "Telef\u00f3nica is a major Spanish company headquartered in Madrid."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P569", "object": "1135 or 1138", "statement": "Maimonides was born on Passover Eve of 1135 or 1138."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P570", "object": "12 December 1204", "statement": "Maimonides died on 12 December 1204."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P19", "object": "C\u00f3rdoba", "statement": "Maimonides was originally from C\u00f3rdoba."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P106", "object": "rabbi", "statement": "Maimonides was a Sephardic Jewish rabbi."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P106", "object": "Torah scholar", "statement": "Maimonides was one of the most prolific Torah scholars of the Middle Ages."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P31", "object": "influential thinker", "statement": "Maimonides is widely acknowledged as one of the most influential Jewish figures."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P551", "object": "Fez", "statement": "Maimonides resided in Fez during his exile."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P551", "object": "Acre", "statement": "Maimonides lived in Acre during his exile."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P551", "object": "Jerusalem", "statement": "Maimonides stayed in Jerusalem during his travels."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P551", "object": "Alexandria", "statement": "Maimonides lived in Alexandria before settling in Egypt."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P551", "object": "Cairo and Fustat", "statement": "Maimonides settled between Fustat and Cairo from 1168 to 1171."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P106", "object": "astronomer", "statement": "Maimonides was renowned as an astronomer."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P106", "object": "philosopher", "statement": "Maimonides was a renowned philosopher."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P106", "object": "physician", "statement": "Maimonides was renowned as a physician."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P108", "object": "Saladin", "statement": "Maimonides was appointed personal physician to Saladin of the Ayyubid Sultanate."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": "P800", "object": "Mishneh Torah", "statement": "Maimonides' fourteen-volume Mishneh Torah is a cornerstone of Jewish scholarship."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Tomb of Maimonides", "pid": "P276", "object": "Tiberias", "statement": "The Tomb of Maimonides in Tiberias is an important Jewish pilgrimage site."}
+{"page": "Maimonides", "revid": 1364414983, "subject": "Maimonides", "pid": null, "object": "intellectual legacy", "statement": "Maimonides' writings on halakha and Jewish ethics were acclaimed across the Jewish world."}

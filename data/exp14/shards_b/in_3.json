@@ -1,0 +1,1978 @@
+[
+ {
+  "arxiv_id": "2607.21932v1",
+  "title": "Generalized Neural Operator for Parametric and Boundary-Value Problems",
+  "abstract": "Developing foundational neural simulators for Partial Differential Equations (PDEs) requires robust generalization across diverse physical parameters and boundary conditions. However, current deep learning approaches largely face a structural trade-off between condition-agnostic deployment and physical fidelity. Purely data-driven operators infer the underlying physics implicitly and thus lack the explicit constraints needed to ensure physically valid solutions across varying domains, rendering the learning problem ill-posed. On the other hand, Physics-Informed Neural Networks (PINNs) enforce rigorous physical constraints but necessitate costly, instance-specific optimization. Furthermore, the massive scale of emerging foundational operators has severely degraded their inference speeds, making them computationally uncompetitive with traditional numerical solvers. To address this bottleneck between condition-agnostic deployment, physical rigor, and inference efficiency, we propose a \\textit{Generalized Neural Operator}. By formalizing the classical conditions for well-posedness within neural operators, our framework demonstrates the theoretical benefits of explicitly conditioning on PDE parameters and boundary conditions. To implement this synthesis without compromising computational speed, we introduce three novel architectural components: a parameter-gated mixture of kernels for efficient parameter generalization, a generalized boundary transfer operator that projects arbitrary boundary constraints into a unified latent Dirichlet representation, and a specialized training objective to ensure stability. Extensive experiments demonstrate that our theoretically grounded approach achieves superior generalization across heterogeneous physical regimes while maintaining strict inference efficiency comparable to conventional numerical baselines.",
+  "authors": [
+   "Ruoyan Li",
+   "Yizhou Sun",
+   "Wei Wang"
+  ],
+  "published": "2026-07-24T03:10:32Z",
+  "store_candidates": [
+   {
+    "eid": "e09917",
+    "name": "Generalized Neural Operator for Parametric and Boundary-Value Problems",
+    "source": "arxiv:2607.21932v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.724
+   },
+   {
+    "eid": "e09994",
+    "name": "Complexity Bounds and Approaches to Learning Projected Gradient Descent Solver Iterates",
+    "source": "arxiv:2607.22467v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.579
+   },
+   {
+    "eid": "e09965",
+    "name": "Latent PDE mapping for efficient physics-informed learning across geometries with limited data",
+    "source": "arxiv:2607.22215v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.57
+   },
+   {
+    "eid": "e08883",
+    "name": "practical GNN mechanisms",
+    "source": "arxiv:2607.22381v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.559
+   },
+   {
+    "eid": "e09655",
+    "name": "generalization validation",
+    "source": "arxiv:2607.21665v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e09704",
+    "name": "Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation",
+    "source": "arxiv:1308.3432v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e05715",
+    "name": "generalization",
+    "source": "Quadratic reciprocity",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e09933",
+    "name": "Energy Manifold Natural Gradient Descent: Riemannian Optimization for Neural PDE Solvers",
+    "source": "arxiv:2607.22004v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e09559",
+    "name": "substantially improved generalization",
+    "source": "arxiv:2607.21550v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e09966",
+    "name": "Optimization of time-consuming experimental conditions using pseudo-experimental data guided by adaptive polynomial regression",
+    "source": "arxiv:2607.22238v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e05389",
+    "name": "partial differential equations",
+    "source": "Partial differential equation",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e09049",
+    "name": "prediction error reduction",
+    "source": "arxiv:2607.21080v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21958v1",
+  "title": "Efficient Online LLM Watermark Detection via Rao-Blackwellized E-Processes",
+  "abstract": "As large language models (LLMs) are increasingly deployed, reliable and efficient mechanisms for distinguishing AI-generated text from human-written content have become essential. Statistical watermarking has emerged as a promising solution, yet most existing methods are typically fixed-horizon procedures, precluding valid early stopping in streaming generation. In this paper, we develop an efficient online watermark detection framework with anytime-valid inference based on Rao-Blackwellized e-processes, enabling recursive token-level evidence updates without storing the full history. In particular, we instantiate the framework for the Gumbel-max watermark and reduce the original token-level dependence testing problem to a pivot-induced sequential testing problem with an explicit null distribution. Theoretically, we prove anytime-valid Type I error control under arbitrary optional stopping and establish positive asymptotic log-growth under watermarking, implying consistency of the proposed stopping rules. Simulations and experiments on real LLM-generated text demonstrate efficient online detection with rigorous anytime-valid guarantees.",
+  "authors": [
+   "Lu Luo",
+   "Dandan Mo",
+   "Chengdong Xu",
+   "Ting Li",
+   "Jinhan Xie",
+   "Huiqiong Li",
+   "Niansheng Tang"
+  ],
+  "published": "2026-07-24T04:10:36Z",
+  "store_candidates": [
+   {
+    "eid": "e09921",
+    "name": "Efficient Online LLM Watermark Detection via Rao-Blackwellized E-Processes",
+    "source": "arxiv:2607.21958v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.811
+   },
+   {
+    "eid": "e09841",
+    "name": "Detecting LLM-Generated Tokens in Human--LLM Coauthored Text",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.615
+   },
+   {
+    "eid": "e09444",
+    "name": "token-level detection method",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e09938",
+    "name": "DWT-Fusion: A Signal-Based Framework for Training-Free LLM-Generated Text Detection",
+    "source": "arxiv:2607.22026v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e09445",
+    "name": "LLM-generated content localization",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e08304",
+    "name": "document-level stability analysis",
+    "source": "arxiv:2607.21010v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e09854",
+    "name": "From Resource Flow to Executable Tests: Petri-Net-Guided LLM Test Generation for Concurrent Stateful Rust APIs",
+    "source": "arxiv:2607.21530v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e09722",
+    "name": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+    "source": "arxiv:2503.14476v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e09490",
+    "name": "multimodal LLM framework",
+    "source": "arxiv:2607.21496v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e09090",
+    "name": "video LLM harmful content recognition",
+    "source": "arxiv:2607.21151v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e07675",
+    "name": "formal verification in Lean",
+    "source": "arxiv:2607.01544v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e09045",
+    "name": "real-time recognition",
+    "source": "arxiv:2607.21075v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.542
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21961v1",
+  "title": "On Improving Faithfulness of Podcasts from Documents",
+  "abstract": "Large language models (LLMs) are increasingly used to generate long-form conversational content such as podcasts from textual sources. While these systems produce fluent and engaging narratives, they often introduce ungrounded information. In this work, we present the first systematic study of faithfulness in document-grounded podcast generation, where grounding must be maintained across conversational turns in long-form, multi-speaker transcripts. We construct a dataset of over 1500 documents spanning five domains and generate podcast transcripts using multiple LLMs. We introduce a turn-level LLM-as-a-judge framework for evaluating whether conversational turns are supported by the source document, and validate its reliability through human studies. Our analysis shows that even state-of-the-art models, including GPT-4o, frequently generate ungrounded content. To mitigate this issue, we propose catch-n-repair, a model-agnostic framework that detects and rewrites unfaithful conversational turns while preserving conversational flow. Experiments demonstrate consistent improvements in faithfulness across both in-domain and out-of-domain settings.",
+  "authors": [
+   "Soumya Dutta",
+   "Tejas Indulal Dhamecha",
+   "Pannaga Shivaswamy"
+  ],
+  "published": "2026-07-24T04:17:56Z",
+  "store_candidates": [
+   {
+    "eid": "e09922",
+    "name": "On Improving Faithfulness of Podcasts from Documents",
+    "source": "arxiv:2607.21961v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.727
+   },
+   {
+    "eid": "e09774",
+    "name": "Training Large Language Models for Self-Explanation Faithfulness",
+    "source": "arxiv:2607.21090v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.621
+   },
+   {
+    "eid": "e09841",
+    "name": "Detecting LLM-Generated Tokens in Human--LLM Coauthored Text",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.609
+   },
+   {
+    "eid": "e09117",
+    "name": "transcript-based and tool-based",
+    "source": "arxiv:2607.21180v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e10012",
+    "name": "Evaluating Large Language Models Trained on Code",
+    "source": "arxiv:2306.05685v4",
+    "source_kind": "arXiv paper",
+    "similarity": 0.57
+   },
+   {
+    "eid": "e08304",
+    "name": "document-level stability analysis",
+    "source": "arxiv:2607.21010v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e09859",
+    "name": "X$^3$-OPD: Distilling Reasoning into Large Audio-Language Models via On-Policy Alignment",
+    "source": "arxiv:2607.21550v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e08765",
+    "name": "LLM research analysis",
+    "source": "arxiv:2607.22182v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e09612",
+    "name": "open-source LLM fine-tuning",
+    "source": "arxiv:2607.21570v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e09445",
+    "name": "LLM-generated content localization",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.559
+   },
+   {
+    "eid": "e09854",
+    "name": "From Resource Flow to Executable Tests: Petri-Net-Guided LLM Test Generation for Concurrent Stateful Rust APIs",
+    "source": "arxiv:2607.21530v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e10007",
+    "name": "LLaMA: Open and Efficient Foundation Language Models",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21975v1",
+  "title": "On the Convergence of Stochastic Low-Rank Adaptation",
+  "abstract": "Low-rank adaptation (LoRA) optimizes $J(B,A)=\\mathcal L(W_\\mathrm{base}+sBA)$ over two adapters $B \\in \\mathbb{R}^{m \\times r}$ and $A \\in \\mathbb{R}^{r \\times n}$ that form a low-rank update to a frozen pretrained weight matrix $W_\\mathrm{base} \\in \\mathbb{R}^{m \\times n}$. The prior analysis shows LoRA-GD takes $\\exp\\{\\mathcal{O}(\u03b5^{-2})\\}$ oracle calls to find an $\u03b5$-stationary point such that $\\|\\nabla J(B,A)\\|\\leq \u03b5$ in the deterministic setting. We sharpen the analysis and show that $\\mathcal{O}(\u03b5^{-4})$ full-gradient evaluations suffice for the same first-order criterion. We further study stochastic LoRA under unbiased gradient estimates and finite variance. We propose LoRA-NSGDM, which finds an $\u03b5$-stationary point with $\\mathcal{O}(\u03b5^{-8})$ stochastic oracle complexity. Under the additional mean-square smoothness condition, we use variance reduction strategy and propose LoRA-STORM, which improves the stochastic oracle complexity to $\\mathcal{O}(\u03b5^{-6})$.",
+  "authors": [
+   "Ru Wang",
+   "Chengchang Liu",
+   "John C. S. Lui"
+  ],
+  "published": "2026-07-24T04:41:26Z",
+  "store_candidates": [
+   {
+    "eid": "e09928",
+    "name": "MoE$^2$-LoRA: When MoE Models Meet MoE-style Low-Rank Adaptation",
+    "source": "arxiv:2607.21978v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.695
+   },
+   {
+    "eid": "e09705",
+    "name": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "source": "arxiv:2106.09685v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.67
+   },
+   {
+    "eid": "e09927",
+    "name": "On the Convergence of Stochastic Low-Rank Adaptation",
+    "source": "arxiv:2607.21975v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.669
+   },
+   {
+    "eid": "e08592",
+    "name": "MoE-style low-rank adaptation for MoE models",
+    "source": "arxiv:2607.21978v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.637
+   },
+   {
+    "eid": "e08994",
+    "name": "selective LoRA fine-tuning by condition number ranking",
+    "source": "arxiv:2607.22489v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.613
+   },
+   {
+    "eid": "e08175",
+    "name": "error reduction",
+    "source": "arxiv:2607.20939v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.584
+   },
+   {
+    "eid": "e08991",
+    "name": "LoRA condition number analysis",
+    "source": "arxiv:2607.22489v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.579
+   },
+   {
+    "eid": "e08819",
+    "name": "LoRA adapters",
+    "source": "arxiv:2607.22300v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e05002",
+    "name": "logarithm variant",
+    "source": "Lp space",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.575
+   },
+   {
+    "eid": "e00302",
+    "name": "Natural logarithm",
+    "source": "Natural logarithm",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e08481",
+    "name": "Go2 adaptation analysis",
+    "source": "arxiv:2607.21867v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   },
+   {
+    "eid": "e04928",
+    "name": "logarithms",
+    "source": "Logarithm",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.564
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.21985v1",
+  "title": "Unified Static-Dynamic Pruning for Efficient LLM Inference",
+  "abstract": "The increasing deployment of large language models (LLMs) has magnified the computational and memory bottlenecks of autoregressive decoding, where low compute intensity and bandwidth-bound kernels dominate inference cost. Weight pruning offers a promising remedy, but existing methods remain confined to either static pruning (SP), which permanently removes redundant weights but lacks adaptivity, or dynamic pruning (DP), which adapts to input sparsity but introduces runtime irregularity. This paper presents SPDP, a unified sparse-inference framework that integrates unstructured SP with input-adaptive DP for efficient LLM inference on GPUs. SPDP co-designs a new Tiled-Column-wise Bitmap Compressed (Tiled-CBC) format and two complementary GPU kernels: (1) a CUDA-core spMspV kernel featuring Hybrid Activation-aware Dynamic Shared-Memory Bitmap Decoding (HAD-SMBD) for fine-grained, runtime activation skipping, and (2) a Tensor-Core SpMM kernel optimized for prefill computation. This joint format-kernel design harmonizes static and dynamic sparsity, maintaining bandwidth-efficient memory access and high compute intensity under both phases of LLM inference. Comprehensive evaluations on inference-optimized GPUs demonstrate that SPDP achieves 1.24x-1.37x average speedup (up to 2.51x) over state-of-the- art sparse frameworks such as SpInfer, while matching. perplexity with up to 25% higher sparsity. SPDP advances the inference efficiency-quality Pareto frontier, showing that unified static-dynamic pruning can deliver substantial throughput and performance-per-watt improvements in large-scale LLM serving",
+  "authors": [
+   "Jinhyeok Kim",
+   "Yejoon Lee",
+   "Jaeyoung Do"
+  ],
+  "published": "2026-07-24T05:19:41Z",
+  "store_candidates": [
+   {
+    "eid": "e09694",
+    "name": "energy-efficient SLM enhancement",
+    "source": "arxiv:2607.21677v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.59
+   },
+   {
+    "eid": "e09690",
+    "name": "LLM/SLM code optimization",
+    "source": "arxiv:2607.21677v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.585
+   },
+   {
+    "eid": "e09811",
+    "name": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+    "source": "arxiv:2607.21291v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.584
+   },
+   {
+    "eid": "e09013",
+    "name": "Skill-SP performance improvements",
+    "source": "arxiv:2607.22529v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.575
+   },
+   {
+    "eid": "e09140",
+    "name": "SCM encoding efficiency gains",
+    "source": "arxiv:2607.21188v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e08996",
+    "name": "16.2% faster fine-tuning with 4.5% memory reduction",
+    "source": "arxiv:2607.22489v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e09696",
+    "name": "multi-sampling SLM performance",
+    "source": "arxiv:2607.21677v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e08679",
+    "name": "compute and latency reduction",
+    "source": "arxiv:2607.22038v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.559
+   },
+   {
+    "eid": "e09066",
+    "name": "standardized preprocessing workflows",
+    "source": "arxiv:2607.21117v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e09059",
+    "name": "computational efficiency",
+    "source": "arxiv:2607.21098v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.556
+   },
+   {
+    "eid": "e09938",
+    "name": "DWT-Fusion: A Signal-Based Framework for Training-Free LLM-Generated Text Detection",
+    "source": "arxiv:2607.22026v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e09804",
+    "name": "Progressive Cramming: Reliable Token Compression and What It Reveals",
+    "source": "arxiv:2607.21231v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22014v1",
+  "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
+  "abstract": "Multimodal Large Language Models (MLLMs) are emerging as core reasoning modules for embodied agents, yet it remains unclear how well general-purpose models can solve long-horizon embodied tasks from a single high-level instruction. We introduce MissionBench, a benchmark for mission-level evaluation of MLLMs in aerial 3D environments. It comprises 120 missions across five simulated 3D environments and four task families. Agents must autonomously plan, navigate, and report outcomes using only egocentric observations and its action history, without aerial-specific fine-tuning. Across 22 open- and closed-source MLLMs, the strongest model succeeds on fewer than 35% of missions compared to 84.4% human performance, highlighting the difficulty of multi-step embodied tasks. Despite large variations between model families, we observe gains from scaling, indicating that larger general-purpose models possess stronger zero-shot embodied capabilities. Our analysis shows that mission-level competence requires coordinating multiple capabilities beyond spatial perception, including multi-step planning and adaptive reasoning. This motivates closed-loop evaluation and highlights both the promise and risk of scaling-driven improvements for embodied AI.",
+  "authors": [
+   "Suman Navaratnarajah",
+   "Taehyoung Kim",
+   "Jona Ruthardt",
+   "Ishaan Bhimwal",
+   "Ryousuke Yamada",
+   "Yannik Blei",
+   "Wolfram Burgard",
+   "Yuki M Asano"
+  ],
+  "published": "2026-07-24T06:22:50Z",
+  "store_candidates": [
+   {
+    "eid": "e09542",
+    "name": "multilingual model performance",
+    "source": "arxiv:2607.21540v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.603
+   },
+   {
+    "eid": "e09490",
+    "name": "multimodal LLM framework",
+    "source": "arxiv:2607.21496v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.59
+   },
+   {
+    "eid": "e09963",
+    "name": "Filling Before Advancing: Capability-Gap-Driven Post-Training for Scenario-Specialized Remote Sensing MLLMs",
+    "source": "arxiv:2607.22205v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.584
+   },
+   {
+    "eid": "e09001",
+    "name": "regression in LLM agent skills",
+    "source": "arxiv:2607.22520v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.578
+   },
+   {
+    "eid": "e09648",
+    "name": "VLM-IE3D 3D task performance",
+    "source": "arxiv:2607.21595v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.577
+   },
+   {
+    "eid": "e09663",
+    "name": "60+ tasks multiple benchmarks",
+    "source": "arxiv:2607.21670v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e09708",
+    "name": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+    "source": "arxiv:2306.05685v4",
+    "source_kind": "arXiv paper",
+    "similarity": 0.569
+   },
+   {
+    "eid": "e10039",
+    "name": "SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?",
+    "source": "arxiv:2607.21217v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e09285",
+    "name": "simulation for LLM interventions",
+    "source": "arxiv:2607.21306v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e08807",
+    "name": "multimodal EHR models",
+    "source": "arxiv:2607.22264v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.561
+   },
+   {
+    "eid": "e13476",
+    "name": "multilingual zero-shot classification",
+    "source": "hf:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e13480",
+    "name": "multilingual zero-shot classification",
+    "source": "hf:MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.558
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22068v1",
+  "title": "Rethinking Multi-Branch and Cross-Backbone Fusion for Vehicle Re-Identification in the Foundation-Model Era",
+  "abstract": "Multi-branch architectures and CNN-Transformer fusion have long been regarded as effective ways to improve vehicle re-identification (Re-ID) by combining complementary representations. In this work, we revisit this assumption in the foundation-model era through a comprehensive empirical study. A single DINOv3-pretrained ConvNeXt trained with a tuned recipe achieves 88.19 mAP on VeRi-Wild Small and 77.47 mAP on VeRi-Wild Large using visual cues alone, matching the strongest protocol-verified metadata-dependent multi-branch baseline. Applying training-free re-ranking further improves performance to 92.38 and 83.68 mAP, respectively. Using this strong baseline together with retrieval-level branch diagnostics, we evaluate whether increasing representational diversity still provides measurable gains. Across both benchmarks, concatenating multiple branches built on a shared backbone changes the best single-branch performance by less than one mAP point while increasing the embedding dimension by 4x, and the resulting representation has an effective rank close to the original feature dimension. We further study cross-backbone fusion using an asymmetric frozen-anchor strategy to combine ConvNeXt and Vision Transformer representations. Despite these favorable conditions, Transformer branches consistently remain 13-15 mAP below the ConvNeXt backbone, and paired per-query bootstrap analysis estimates the largest observed fusion gain to be only +0.11 mAP (95% confidence interval). Our results suggest that, under the evaluated setting, improving a single strong foundation-model backbone together with retrieval-stage re-ranking is more effective than increasing architectural complexity through additional branches or heterogeneous backbones. We restrict our conclusions to single-seed training and one family of foundation models and discuss conditions under which these observations may not hold.",
+  "authors": [
+   "Yu Wang",
+   "Hongyu Yang"
+  ],
+  "published": "2026-07-24T08:10:53Z",
+  "store_candidates": [
+   {
+    "eid": "e09946",
+    "name": "Rethinking Multi-Branch and Cross-Backbone Fusion for Vehicle Re-Identification in the Foundation-Model Era",
+    "source": "arxiv:2607.22068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.728
+   },
+   {
+    "eid": "e08934",
+    "name": "convex optimization with graph structure",
+    "source": "arxiv:2607.22436v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.57
+   },
+   {
+    "eid": "e09454",
+    "name": "multi-benchmark evaluation",
+    "source": "arxiv:2607.21461v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.561
+   },
+   {
+    "eid": "e09107",
+    "name": "registered-model Transformer verification",
+    "source": "arxiv:2607.21162v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e08808",
+    "name": "modality fusion with alignment",
+    "source": "arxiv:2607.22264v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e09256",
+    "name": "mixed instruction-tuning",
+    "source": "arxiv:2607.21279v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e09494",
+    "name": "multimodal fusion",
+    "source": "arxiv:2607.21496v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e08696",
+    "name": "multilingual cross-encoder for reranking",
+    "source": "arxiv:2607.22042v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e09728",
+    "name": "Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models",
+    "source": "arxiv:2506.05176v3",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e02747",
+    "name": "Difference Engine",
+    "source": "Charles Babbage",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e09308",
+    "name": "SHIFT fine-grained reconstruction",
+    "source": "arxiv:2607.21333v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e09041",
+    "name": "classification performance improvement",
+    "source": "arxiv:2607.21068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.544
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22081v1",
+  "title": "A Leakage-Free Stacked Ensemble Method for Multiclass Classification",
+  "abstract": "Multiclass classification is a fundamental problem across a wide range of domains. It is still challenging due to possession of high inter-class similarity, class imbalance datasets, and variability in data distributions. Rule-based classifiers such as XGBoost often achieve stronger performance on structured features, but they are limited in capturing smooth functional relationships among variables. Similarly, neural network models can represent complex nonlinear interactions but frequently suffer from overfitting and generalization issues. To address these limitations, we propose LFS-FRAME, a Leakage-Free Stacked ensemble framework that integrates functional learning using Kolmogorov-Arnold Networks (KAN) and rule-based learning via XGBoost for robust multiclass classification. The proposed framework constructs unbiased meta-features by employing a strict out-of-fold stacking strategy to ensure complete isolation between training and validation data hence preventing performance leakage. By learning over probabilistic outputs from heterogeneous base learners, the meta-classifier effectively exploits both global functional patterns and sharp decision boundaries present in the complex data. Experimental evaluations on multi-class datasets demonstrate that LFS-FRAME improves performance metrics, and overall accuracy is 89.85% in identifying major families and 81.74% in identifying sub-families relative to strong single-model baselines. These results highlight the effectiveness of leakage-free functional and rule-based stacking for reliable and generalizable multiclass classification.",
+  "authors": [
+   "S. P. Sharmila",
+   "Aruna Tiwari"
+  ],
+  "published": "2026-07-24T08:26:40Z",
+  "store_candidates": [
+   {
+    "eid": "e09948",
+    "name": "A Leakage-Free Stacked Ensemble Method for Multiclass Classification",
+    "source": "arxiv:2607.22081v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.751
+   },
+   {
+    "eid": "e09408",
+    "name": "multi-tasking framework",
+    "source": "arxiv:2607.21426v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.585
+   },
+   {
+    "eid": "e09734",
+    "name": "Information-Theoretically Secure Aggregation for Lightweight Federated Learning: Resilient to Dropouts and Adversaries",
+    "source": "arxiv:2607.20890v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e08085",
+    "name": "federated learning aggregation",
+    "source": "arxiv:2607.20890v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e09490",
+    "name": "multimodal LLM framework",
+    "source": "arxiv:2607.21496v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e08298",
+    "name": "ADABORD on multi-class datasets",
+    "source": "arxiv:2607.21003v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e08912",
+    "name": "learned embedding for compatibility scoring",
+    "source": "arxiv:2607.22413v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.559
+   },
+   {
+    "eid": "e09407",
+    "name": "cooperative multi-task learning",
+    "source": "arxiv:2607.21426v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e09888",
+    "name": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+    "source": "arxiv:2607.21779v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e09265",
+    "name": "shared model across team-based tasks",
+    "source": "arxiv:2607.21290v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e09932",
+    "name": "Learning as Reasoning Unfolds: Progressive Rollout Allocation for Efficient Reinforcement Learning",
+    "source": "arxiv:2607.22002v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e09722",
+    "name": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+    "source": "arxiv:2503.14476v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22086v1",
+  "title": "MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection",
+  "abstract": "Autoencoder-based anomalous sound detection is attractive for machine condition monitoring because it can be trained using only normal recordings and yields an interpretable anomaly score from reconstruction error. Most prior work uses spectrogram autoencoders, but reconstructing detailed time--frequency patterns is sensitive to noise and transients, and models can reconstruct some anomalous inputs well, weakening normal--anomaly separation. We propose MemNMF, a constrained reconstruction method that operates on the Linear Predictive Coding spectrum, a compact estimate of the spectral envelope. MemNMF initializes a memory module from an NMF dictionary learned on normal LPC spectra and reconstructs each input as an attention-weighted combination of prototypical normal spectral patterns. Experiments on MIMII and DCASE 2020 Task 2 across multiple machine types and operating conditions show that LPC-spectrum inputs improve a standard autoencoder baseline and that MemNMF yields further gains, with especially strong robustness under noisy, non-stationary settings.",
+  "authors": [
+   "Phurich Saengthong",
+   "Takahiro Shinozaki"
+  ],
+  "published": "2026-07-24T08:34:12Z",
+  "store_candidates": [
+   {
+    "eid": "e09950",
+    "name": "MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection",
+    "source": "arxiv:2607.22086v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.832
+   },
+   {
+    "eid": "e09030",
+    "name": "spectral methods under noise",
+    "source": "arxiv:2607.21039v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e02919",
+    "name": "probability theory",
+    "source": "Andrey Kolmogorov",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.377
+   },
+   {
+    "eid": "e09538",
+    "name": "decode latency improvement",
+    "source": "arxiv:2607.21535v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e10002",
+    "name": "Quantum Spectral Model: Data Reuploading with Input-Conditioned Frequency Support",
+    "source": "arxiv:2607.22516v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e06373",
+    "name": "Long-term working memory",
+    "source": "Child prodigy",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e09558",
+    "name": "audio reasoning improvement",
+    "source": "arxiv:2607.21550v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.553
+   },
+   {
+    "eid": "e09381",
+    "name": "enables systematic isolation of memory variables",
+    "source": "arxiv:2607.21404v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e08253",
+    "name": "predicts latents, reconstructs frames",
+    "source": "arxiv:2607.20988v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e09417",
+    "name": "improved accuracy sensitivity",
+    "source": "arxiv:2607.21437v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.542
+   },
+   {
+    "eid": "e01425",
+    "name": "pattern recognition",
+    "source": "Intuition",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e08912",
+    "name": "learned embedding for compatibility scoring",
+    "source": "arxiv:2607.22413v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e08345",
+    "name": "attention latency reduction",
+    "source": "arxiv:2607.21731v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.539
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22098v1",
+  "title": "Reasoning Denoiser: Denoising Reasoning Traces for Hallucination Detection in Large Reasoning Models",
+  "abstract": "Large reasoning models (LRMs) generate long reasoning traces before producing final answers. While these traces may contain useful signals for hallucination detection, harnessing them is non-trivial because long trajectories often include noisy steps that obscure the cues relevant to truthfulness assessment. In this paper, we identify two prevalent forms of reasoning noises, i.e., irrelevant steps and repetitive steps, and show that both substantially degrade hallucination detection performance. Existing confidence-based scores and naive embedding-based filtering fail to reliably separate noisy from informative steps. To address this challenge, we propose REDE, a novel learning framework for denoising reasoning traces for hallucination detection. Specifically, REDE leverages final-answer attention as an automatic supervision signal to shape the step-level representation space, yielding refined embeddings in which noisy steps can be reliably identified and filtered. REDE can be readily plugged into diverse hallucination detectors by operating on the filtered reasoning trajectory after removing noisy steps. Extensive experiments on multiple reasoning benchmarks show that REDE consistently improves detection performance over competitive baselines.",
+  "authors": [
+   "Junlin Fang",
+   "Do Nguyen-Thanh",
+   "Xiaogang Xu",
+   "Zhen Fang",
+   "Sean Du"
+  ],
+  "published": "2026-07-24T08:48:17Z",
+  "store_candidates": [
+   {
+    "eid": "e09951",
+    "name": "Reasoning Denoiser: Denoising Reasoning Traces for Hallucination Detection in Large Reasoning Models",
+    "source": "arxiv:2607.22098v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.758
+   },
+   {
+    "eid": "e08542",
+    "name": "delays reasoning degradation",
+    "source": "arxiv:2607.21933v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.608
+   },
+   {
+    "eid": "e09558",
+    "name": "audio reasoning improvement",
+    "source": "arxiv:2607.21550v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.606
+   },
+   {
+    "eid": "e07223",
+    "name": "reasoning",
+    "source": "Inductive reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.585
+   },
+   {
+    "eid": "e03750",
+    "name": "study of reasoning",
+    "source": "Logic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.582
+   },
+   {
+    "eid": "e04205",
+    "name": "deductive reasoning",
+    "source": "Deductive reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.579
+   },
+   {
+    "eid": "e09412",
+    "name": "reasoning agent refinement",
+    "source": "arxiv:2607.21437v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.575
+   },
+   {
+    "eid": "e08156",
+    "name": "chemical reasoning hallucination",
+    "source": "arxiv:2607.20935v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e08646",
+    "name": "improved rationale and inference quality",
+    "source": "arxiv:2607.22013v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e04667",
+    "name": "reasoning method",
+    "source": "Heuristic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e07415",
+    "name": "reasoning method",
+    "source": "Philosophy of science",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e08206",
+    "name": "RL robustness in latent reasoning",
+    "source": "arxiv:2607.20952v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22115v1",
+  "title": "Benchmarking Text-to-SQL under Role-Based Access Control",
+  "abstract": "Given a database S and a natural language question Q, text-to-SQL systems aim to generate an SQL query that correctly answers Q when executed against S. Currently, popular text-to-SQL benchmarks mostly assume unrestricted access to S; in practice, however, user access is often restricted, e.g., through role-based access control (RBAC) policies. This leads to a potential disconnect between benchmarking results and real-world performance: an LLM with high benchmark scores might perform poorly in an access-controlled environment, by frequently violating RBAC, or rejecting a query q that could be answered with only permitted data in S. Motivated by this, we present a comprehensive text-to-SQL benchmarking framework with realistic RBAC constraints, which features an LLM-assisted workflow that augments existing text-to-SQL benchmarks with plausible user roles and access policies. To do so, we formulate the problem of role synthesis as a structured reasoning process over the database schema, in which the LLM first infers the application context from the schema, and then derives role responsibilities and access scopes consistent with this context. This process is audited by human-in-the-loop quality control, in which domain experts perform metric-guided screening on the generated roles. Besides the augmented dataset, the proposed framework also contains evaluation metrics that identify RBAC-specific failure modes, and disentangle SQL utility from access-control compliance. We apply the proposed framework to several widely-used benchmarks, and conduct a systematic empirical study of state-of-the-art text-to-SQL systems. The results show that many solutions (especially open-weight LLMs) with high benchmarking scores under an unrestricted setting suffer sharp performance degradation once access constraints are in place, due to frequent RBAC violations.",
+  "authors": [
+   "Yang Fei",
+   "Yangfan Jiang",
+   "Yin Yang",
+   "Xiaokui Xiao"
+  ],
+  "published": "2026-07-24T09:10:58Z",
+  "store_candidates": [
+   {
+    "eid": "e09953",
+    "name": "Benchmarking Text-to-SQL under Role-Based Access Control",
+    "source": "arxiv:2607.22115v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.771
+   },
+   {
+    "eid": "e09959",
+    "name": "DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents",
+    "source": "arxiv:2607.22165v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.603
+   },
+   {
+    "eid": "e09472",
+    "name": "benchmark tasks",
+    "source": "arxiv:2607.21482v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.598
+   },
+   {
+    "eid": "e08727",
+    "name": "benchmark performance",
+    "source": "arxiv:2607.22083v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.593
+   },
+   {
+    "eid": "e08137",
+    "name": "benchmark performance",
+    "source": "arxiv:2607.20918v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.593
+   },
+   {
+    "eid": "e09067",
+    "name": "benchmarking leaderboard",
+    "source": "arxiv:2607.21117v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e08700",
+    "name": "competitive on multilingual benchmarks",
+    "source": "arxiv:2607.22042v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.564
+   },
+   {
+    "eid": "e08869",
+    "name": "agent benchmark auditing",
+    "source": "arxiv:2607.22368v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e09841",
+    "name": "Detecting LLM-Generated Tokens in Human--LLM Coauthored Text",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.559
+   },
+   {
+    "eid": "e09766",
+    "name": "QuantiBias: Benchmarking Quantization-Induced Bias in LLMs",
+    "source": "arxiv:2607.21063v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e09454",
+    "name": "multi-benchmark evaluation",
+    "source": "arxiv:2607.21461v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e08758",
+    "name": "database operations benchmark",
+    "source": "arxiv:2607.22165v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22153v1",
+  "title": "Industrial Tokenization for LLM-Based Health Intelligence: A Federated Architecture for Industrial Evidence Integration",
+  "abstract": "Industrial health management increasingly relies on heterogeneous information sources, including condition monitoring systems, supervisory control and data acquisition systems, maintenance records, inspection results, and prognostic models. Although large language models provide new opportunities for cross-source reasoning, industrial data and analytical outputs differ substantially in structure, temporal resolution, physical meaning, and reliability. Directly integrating such heterogeneous information into a monolithic model may reduce interpretability, traceability, and adaptability to equipment and data changes. This paper introduces Industrial Tokenization, a conceptual interface for transforming source-specific analytical outputs into structured and machine-interpretable units of industrial evidence, termed Industrial Tokens. Unlike numerical tokens used to encode raw time-series data, Industrial Tokens represent domain-grounded evidence together with source, temporal scope, operating context, analytical meaning, quality or confidence information, and provenance. Based on this concept, a federated industrial architecture is proposed, where heterogeneous analytical subsystems retain autonomy while exposing standardized Industrial Tokens to a central reasoning layer. As an initial implementation, this study presents an end-to-end DiagnosisToken pathway based on vibration-diagnostic outputs, rule-based event aggregation, structured textual token generation, and LLM-based interpretation. Other Industrial Tokens, including SCADA-based condition-monitoring tokens, maintenance tokens, and prognostic tokens, are reserved as future extensions. The proposed framework positions Industrial Tokenization as a semantic interface between domain-specific industrial intelligence and LLM- or agent-based reasoning, rather than another method for encoding raw industrial data.",
+  "authors": [
+   "Deshui Li",
+   "Xiao-Ming Yuan",
+   "Zishun Wang"
+  ],
+  "published": "2026-07-24T09:56:48Z",
+  "store_candidates": [
+   {
+    "eid": "e09841",
+    "name": "Detecting LLM-Generated Tokens in Human--LLM Coauthored Text",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.605
+   },
+   {
+    "eid": "e08798",
+    "name": "industrial multi-case study",
+    "source": "arxiv:2607.22260v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.573
+   },
+   {
+    "eid": "e09946",
+    "name": "Rethinking Multi-Branch and Cross-Backbone Fusion for Vehicle Re-Identification in the Foundation-Model Era",
+    "source": "arxiv:2607.22068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.562
+   },
+   {
+    "eid": "e09633",
+    "name": "structured semantic interfaces",
+    "source": "arxiv:2607.21580v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.559
+   },
+   {
+    "eid": "e09291",
+    "name": "LLMs map protocols to logic",
+    "source": "arxiv:2607.21307v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   },
+   {
+    "eid": "e07675",
+    "name": "formal verification in Lean",
+    "source": "arxiv:2607.01544v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.552
+   },
+   {
+    "eid": "e09439",
+    "name": "token-level error localization",
+    "source": "arxiv:2607.21453v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e09444",
+    "name": "token-level detection method",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e09819",
+    "name": "Gradient Concentration, Not Weight Saliency, Explains Representation-Level Class Unlearning",
+    "source": "arxiv:2607.21353v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.383
+   },
+   {
+    "eid": "e07969",
+    "name": "logical formalization via kernels",
+    "source": "arxiv:2607.17174v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e09836",
+    "name": "Token Budget Saturation and Mechanistic Early Detection of Reasoning Non-Convergence in Chain-of-Thought Models",
+    "source": "arxiv:2607.21433v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e08796",
+    "name": "AI in product line engineering",
+    "source": "arxiv:2607.22260v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e09234",
+    "name": "temporal evidence annotations",
+    "source": "arxiv:2607.21267v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.541
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22173v1",
+  "title": "Bowel Obstruction Detection and Localization on Abdominal CT with Deep Learning",
+  "abstract": "Bowel obstruction is a common and potentially life-threatening gastrointestinal condition. In the face of rising diagnostic workloads, the automated diagnosis of bowel obstruction on CT scans supports radiologists by accelerating detection and improving patient outcomes. In this work, we propose a deep learning framework with a multi-task objective that jointly detects bowel obstruction and localizes its transition zone. Additionally, we extend the method with an inherently interpretable classification method that locates the suspected transition point within a slice. It does so by learning a probabilistic selection mask that faithfully bases the classifier's prediction solely on a small image region. The proposed method is evaluated on an internal dataset comprising 1,427 abdominal CTs. Here, the model achieves an obstruction detection test accuracy of 93% and a Hit@10 transition zone localization of 95%. As the first method to reliably localize the transition zone, this marks a significant step towards the automated identification of this critical clinical landmark.",
+  "authors": [
+   "Moritz Vandenhirtz",
+   "Andrea Agostini",
+   "Dana Belde",
+   "M\u00e9lanie Roschewitz",
+   "Ismaiel Chikh Bakri",
+   "Tilo Niemann",
+   "Andr\u00e9 Euler",
+   "Julia E Vogt"
+  ],
+  "published": "2026-07-24T10:23:12Z",
+  "store_candidates": [
+   {
+    "eid": "e09491",
+    "name": "cognitive impairment detection",
+    "source": "arxiv:2607.21496v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e13902",
+    "name": "turn-detection",
+    "source": "hf:livekit/turn-detector",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.549
+   },
+   {
+    "eid": "e09595",
+    "name": "spatial distinction finding",
+    "source": "arxiv:2607.21559v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e09202",
+    "name": "partition change detection",
+    "source": "arxiv:2607.21210v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e13986",
+    "name": "English prompt injection detection",
+    "source": "hf:protectai/deberta-v3-base-prompt-injection-v2",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e08261",
+    "name": "finding collapse on ablation",
+    "source": "arxiv:2607.20993v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.538
+   },
+   {
+    "eid": "e05224",
+    "name": "diagnosis",
+    "source": "Medicine",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e08833",
+    "name": "structure prediction",
+    "source": "arxiv:2607.22314v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.536
+   },
+   {
+    "eid": "e08661",
+    "name": "DWT-Fusion LLM detection",
+    "source": "arxiv:2607.22026v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.534
+   },
+   {
+    "eid": "e09439",
+    "name": "token-level error localization",
+    "source": "arxiv:2607.21453v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.534
+   },
+   {
+    "eid": "e09956",
+    "name": "CARDIAG: A Dense Segment Classification Benchmark of Deep Learning Architectures for Coronary Angiography",
+    "source": "arxiv:2607.22139v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.528
+   },
+   {
+    "eid": "e09620",
+    "name": "defect detection automation",
+    "source": "arxiv:2607.21577v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.525
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22201v1",
+  "title": "Trajectory-Regularized Stochastic Optimal Control via KL Divergence",
+  "abstract": "We introduce trajectory-regularized stochastic optimal control (TRSOC), which augments standard stochastic optimal control (SOC) with a Kullback--Leibler (KL) divergence between controlled and reference trajectory distributions. Using Girsanov's theorem, the trajectory KL reduces to a quadratic drift mismatch penalty, yielding a modified running cost that preserves the dynamic programming (DP) structure. We derive the corresponding Hamilton--Jacobi--Bellman (HJB) equation and characterize the optimal policy. In the linear-quadratic (LQ) setting, the formulation admits a closed-form solution with an augmented control cost. Experiments show that the regularization parameter induces a trade-off between performance-driven and reference-preserving behavior, including cases with reference dynamics learned from offline data.",
+  "authors": [
+   "Mintae Kim",
+   "Koushil Sreenath"
+  ],
+  "published": "2026-07-24T11:15:27Z",
+  "store_candidates": [
+   {
+    "eid": "e09962",
+    "name": "Trajectory-Regularized Stochastic Optimal Control via KL Divergence",
+    "source": "arxiv:2607.22201v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.743
+   },
+   {
+    "eid": "e08377",
+    "name": "robust predict-then-optimize",
+    "source": "arxiv:2607.21774v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.575
+   },
+   {
+    "eid": "e09270",
+    "name": "Bayesian optimization for control tuning",
+    "source": "arxiv:2607.21292v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e08776",
+    "name": "KL divergence bound",
+    "source": "arxiv:2607.22199v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.561
+   },
+   {
+    "eid": "e08463",
+    "name": "robotics policy learning",
+    "source": "arxiv:2607.21856v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e08120",
+    "name": "adaptation-retention trade-off",
+    "source": "arxiv:2607.20913v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e08175",
+    "name": "error reduction",
+    "source": "arxiv:2607.20939v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e00021",
+    "name": "Circular reasoning",
+    "source": "Circular reasoning",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e09007",
+    "name": "RL for air traffic control decision-making",
+    "source": "arxiv:2607.22525v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.547
+   },
+   {
+    "eid": "e08936",
+    "name": "tunable distribution control",
+    "source": "arxiv:2607.22436v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e08805",
+    "name": "inverse optimization",
+    "source": "arxiv:2607.22263v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.546
+   },
+   {
+    "eid": "e09927",
+    "name": "On the Convergence of Stochastic Low-Rank Adaptation",
+    "source": "arxiv:2607.21975v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22218v1",
+  "title": "Why Large Language Models and Humans Converge and Diverge in Evaluating Creativity",
+  "abstract": "Despite the growing use of large language models (LLMs) as creativity evaluators, evidence of their alignment with human evaluations remains mixed, raising the question of when and why their judgments converge with or diverge from human judgments. Across three studies and six widely used LLMs, we addressed this gap by identifying the standards underlying LLM creativity evaluation and examining their downstream implications. Study 1 showed that LLMs generally relied on a narrower subset of human creativity evaluation standards. Convergence with human standards was strongest in the novelty dimension, whereas divergence was clearest in the contextual dimension, which captures social, market, and reputational information. Moreover, each LLM exhibited distinct, model-specific standards that varied substantially in breadth. These differences in evaluation standards were reflected in actual creativity judgments. Study 2 (N = 1,103 ideas) showed that LLM evaluations were moderately correlated with human evaluations, and individual LLMs with broader standards better distinguished ideas humans judged as more versus less creative. Study 3 (N = 1,195) showed that LLMs were less sensitive to contextual information: such information significantly altered human creativity ratings but left LLM ratings largely unchanged. Together, our findings help explain the mixed evidence on LLM-human alignment, showing that alignment depends on the evidence a judgment demands and the standards each model applies. LLMs may resemble humans when evaluations emphasize intrinsic qualities such as novelty, yet diverge when judgments require contextual information. Selecting an LLM evaluator is therefore a consequential decision: different models, applying different standards, recognize different ideas as creative.",
+  "authors": [
+   "Pengzhao Lyu",
+   "Yeun Joon Kim",
+   "Hanlin Xiao",
+   "Yingyue Luna Luan"
+  ],
+  "published": "2026-07-24T11:37:19Z",
+  "store_candidates": [
+   {
+    "eid": "e08307",
+    "name": "significant differences across LLMs",
+    "source": "arxiv:2607.21010v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.608
+   },
+   {
+    "eid": "e09390",
+    "name": "neuro-symbolic reasoning comparison with LLMs",
+    "source": "arxiv:2607.21412v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.596
+   },
+   {
+    "eid": "e09841",
+    "name": "Detecting LLM-Generated Tokens in Human--LLM Coauthored Text",
+    "source": "arxiv:2607.21458v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.59
+   },
+   {
+    "eid": "e10011",
+    "name": "Training language models to follow instructions with human feedback",
+    "source": "arxiv:2303.08774v6",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e08467",
+    "name": "LLM-based causal judgment",
+    "source": "arxiv:2607.21859v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.576
+   },
+   {
+    "eid": "e08765",
+    "name": "LLM research analysis",
+    "source": "arxiv:2607.22182v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.572
+   },
+   {
+    "eid": "e08306",
+    "name": "LLM variability in summarization",
+    "source": "arxiv:2607.21010v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   },
+   {
+    "eid": "e07204",
+    "name": "Human Knowledge: Its scope and limits",
+    "source": "Gettier problem",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e09838",
+    "name": "When Trivia Is Not Trivial: Everyday Knowledge Failures in Multilingual LLMs",
+    "source": "arxiv:2607.21445v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e10012",
+    "name": "Evaluating Large Language Models Trained on Code",
+    "source": "arxiv:2306.05685v4",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e09943",
+    "name": "LAMAR: An Open Language-Aware Multilingual Alignment Reranker",
+    "source": "arxiv:2607.22042v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.559
+   },
+   {
+    "eid": "e09582",
+    "name": "LLM receptiveness",
+    "source": "arxiv:2607.21558v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.557
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22221v1",
+  "title": "Convergence analysis of a family of Zermelo-type iterations for the Bradley--Terry model",
+  "abstract": "Zermelo's algorithm is a classical method for computing the maximum likelihood estimator in the Bradley--Terry (BT) model, but its convergence can be slow in practice. To accelerate computation, Newman introduced a family of Zermelo-type fixed-point iterations parameterized by $\u03b1$, with Zermelo's algorithm recovered at $\u03b1=1$. Empirical evidence suggests that the choice $\u03b1=0$ often converges substantially faster, making it a promising alternative, yet the mechanism underlying this acceleration remains elusive. This paper provides theoretical insight into this phenomenon through a systematic local convergence analysis. We derive closed-form expressions for local convergence factors under synchronous and asynchronous updates and analyze their dependence on $\u03b1$ via spectral analysis of the associated Jacobian matrices. For synchronous updates, we show that the algorithm may fail to converge when $\u03b1&lt;1$, and its local convergence factor is quasi-convex in $\u03b1$ under the population BT model. In contrast, asynchronous updates are always locally convergent, and their local convergence factor is provably monotonically increasing in $\u03b1$ under the population BT model of consistently ordered bipartite comparison graphs, establishing the optimality of $\u03b1=0$ in this setting. We further establish asymptotic approximation results for the population convergence factors under the BT model, justifying their practical relevance. Numerical experiments on synthetic and real-world datasets confirm the theory. Our analysis complements existing convergence results and shows that the acceleration of $\u03b1=0$ arises not only from the parameter choice but, more importantly, from the use of asynchronous updates.",
+  "authors": [
+   "Ruijian Han",
+   "Ding Lu",
+   "Yiming Xu"
+  ],
+  "published": "2026-07-24T11:39:24Z",
+  "store_candidates": [
+   {
+    "eid": "e08632",
+    "name": "higher accuracy, faster convergence",
+    "source": "arxiv:2607.22004v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.568
+   },
+   {
+    "eid": "e08888",
+    "name": "attention computation acceleration",
+    "source": "arxiv:2607.22389v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.566
+   },
+   {
+    "eid": "e08794",
+    "name": "inference acceleration",
+    "source": "arxiv:2607.22231v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.563
+   },
+   {
+    "eid": "e08487",
+    "name": "convergence with speedup",
+    "source": "arxiv:2607.21876v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.561
+   },
+   {
+    "eid": "e00569",
+    "name": "Zermelo set theory",
+    "source": "Zermelo set theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.561
+   },
+   {
+    "eid": "e09927",
+    "name": "On the Convergence of Stochastic Low-Rank Adaptation",
+    "source": "arxiv:2607.21975v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.55
+   },
+   {
+    "eid": "e00568",
+    "name": "Zermelo\u2013Fraenkel set theory",
+    "source": "Zermelo\u2013Fraenkel set theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e00762",
+    "name": "Zermelo-Fraenkel set theory",
+    "source": "Zermelo-Fraenkel set theory",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e08347",
+    "name": "inference speedup",
+    "source": "arxiv:2607.21731v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e08369",
+    "name": "improved approximation",
+    "source": "arxiv:2607.21761v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   },
+   {
+    "eid": "e06781",
+    "name": "Convergence",
+    "source": "3",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.54
+   },
+   {
+    "eid": "e03350",
+    "name": "Convergence",
+    "source": "Mathematical Association of America",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.54
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22238v1",
+  "title": "Optimization of time-consuming experimental conditions using pseudo-experimental data guided by adaptive polynomial regression",
+  "abstract": "Bayesian optimization (BO) is an optimization method that sequentially proposes the next candidate explainable variables for optimizing target variables by balancing exploration and exploitation. BO is often used under a limited evaluation budget, such as hyperparameter tuning of deep learning. Despite its effectiveness, conventional BO may have poor convergence in practical experimental science where each evaluation is often costly and time-consuming. Recently, BO methods have been proposed that accelerate optimization by using pseudo-experimental data that simulate experimental data. However, when only a limited number of experimental data are available, the generated pseudo-experimental data may be of insufficient quality. In this study, we developed PolyBO to improve optimization time by generating high-quality pseudo-experimental data even when the number of trials is limited. PolyBO performs BO efficiently by generating pseudo-experimental data with an adaptively updated versatile parametric model. This low-capacity polynomial regression model is intended to enable efficient BO even with limited experimental data. PolyBO updates the BO surrogate model with a combined dataset consisting of experimental data and pseudo-experimental data and then performs optimization. Using synthetic benchmark functions with diverse landscapes, we found that PolyBO reduced the optimization time by a median of 42\\%. For a real-world material composition optimization problem, PolyBO reduced the optimization time by a median of 96\\% compared with conventional methods. Overall, PolyBO achieves efficient optimization in settings where each experiment requires a long time.",
+  "authors": [
+   "Hirotaka Sugawara",
+   "Yujin Taguchi",
+   "Kei Minagawa",
+   "Yusuke Hiki",
+   "Takashi Morikura",
+   "Akira Funahashi"
+  ],
+  "published": "2026-07-24T12:16:53Z",
+  "store_candidates": [
+   {
+    "eid": "e09966",
+    "name": "Optimization of time-consuming experimental conditions using pseudo-experimental data guided by adaptive polynomial regression",
+    "source": "arxiv:2607.22238v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.744
+   },
+   {
+    "eid": "e01358",
+    "name": "optimization tool",
+    "source": "Heuristic",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.578
+   },
+   {
+    "eid": "e08379",
+    "name": "robust optimization performance",
+    "source": "arxiv:2607.21774v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.577
+   },
+   {
+    "eid": "e08441",
+    "name": "simulation-based empirical Bayes",
+    "source": "arxiv:2607.21843v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.571
+   },
+   {
+    "eid": "e09270",
+    "name": "Bayesian optimization for control tuning",
+    "source": "arxiv:2607.21292v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.57
+   },
+   {
+    "eid": "e09395",
+    "name": "reduces variables by up to 70%",
+    "source": "arxiv:2607.21414v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e08737",
+    "name": "manipulation efficiency",
+    "source": "arxiv:2607.22119v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e08377",
+    "name": "robust predict-then-optimize",
+    "source": "arxiv:2607.21774v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e08119",
+    "name": "selective adaptation method",
+    "source": "arxiv:2607.20913v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.548
+   },
+   {
+    "eid": "e09059",
+    "name": "computational efficiency",
+    "source": "arxiv:2607.21098v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e05906",
+    "name": "experimental study",
+    "source": "Statistics",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.544
+   },
+   {
+    "eid": "e10019",
+    "name": "Proximal Policy Optimization Algorithms",
+    "source": "arxiv:2402.03300v3",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22251v1",
+  "title": "IFCLoRA: Topology-Aware Rank Allocation for Parameter-Efficient Fine-Tuning",
+  "abstract": "Low-Rank Adaptation (LoRA) is a widely used parameter-efficient fine-tuning method for large language models, but its performance depends strongly on how a fixed rank budget is distributed across Transformer modules. Existing adaptive-rank methods usually rely on local gradient statistics collected during training, which introduces extra memory and computation and overlooks task-conditioned global information flow. We propose IFCLoRA, a topology-aware rank allocation method applied before fine-tuning. Using a small calibration set and a frozen pretrained model, IFCLoRA builds a sparse task-conditioned interaction graph whose nodes represent LoRA-compatible modules. It combines a global information-flow topology prior with local gradient sensitivity to compute Information-Flow Centrality scores, which estimate each module's adaptation importance under multi-hop propagation. Ranks are then assigned once under a global budget. Across multiple models, tasks, and low-rank settings, IFCLoRA consistently outperforms LoRA, AdaLoRA, and EVA under matched training configurations and total rank budgets, while retaining training costs comparable to standard LoRA. On mathematical reasoning with LLaMA 3 8B, IFCLoRA improves over LoRA by 1.36 percent at rank 4 and 1.82 percent at rank 8. Further analysis shows task-dependent, non-uniform rank profiles, indicating that global information-flow structure provides an informative and interpretable prior for low-budget parameter-efficient fine-tuning.",
+  "authors": [
+   "Wei Zhang",
+   "Xinwu Liu",
+   "Yihang Cheng"
+  ],
+  "published": "2026-07-24T12:34:46Z",
+  "store_candidates": [
+   {
+    "eid": "e09967",
+    "name": "IFCLoRA: Topology-Aware Rank Allocation for Parameter-Efficient Fine-Tuning",
+    "source": "arxiv:2607.22251v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.827
+   },
+   {
+    "eid": "e09705",
+    "name": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "source": "arxiv:2106.09685v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.649
+   },
+   {
+    "eid": "e08994",
+    "name": "selective LoRA fine-tuning by condition number ranking",
+    "source": "arxiv:2607.22489v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.638
+   },
+   {
+    "eid": "e09928",
+    "name": "MoE$^2$-LoRA: When MoE Models Meet MoE-style Low-Rank Adaptation",
+    "source": "arxiv:2607.21978v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.636
+   },
+   {
+    "eid": "e08592",
+    "name": "MoE-style low-rank adaptation for MoE models",
+    "source": "arxiv:2607.21978v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.592
+   },
+   {
+    "eid": "e09943",
+    "name": "LAMAR: An Open Language-Aware Multilingual Alignment Reranker",
+    "source": "arxiv:2607.22042v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.584
+   },
+   {
+    "eid": "e09927",
+    "name": "On the Convergence of Stochastic Low-Rank Adaptation",
+    "source": "arxiv:2607.21975v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.582
+   },
+   {
+    "eid": "e09769",
+    "name": "Spectral Transformation for Layer-wise Global Rank Discovery in Federated LoRA for Vision Transformers",
+    "source": "arxiv:2607.21074v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.578
+   },
+   {
+    "eid": "e08695",
+    "name": "LAMAR language-aware reranker",
+    "source": "arxiv:2607.22042v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.575
+   },
+   {
+    "eid": "e09041",
+    "name": "classification performance improvement",
+    "source": "arxiv:2607.21068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.574
+   },
+   {
+    "eid": "e09612",
+    "name": "open-source LLM fine-tuning",
+    "source": "arxiv:2607.21570v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.572
+   },
+   {
+    "eid": "e09811",
+    "name": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+    "source": "arxiv:2607.21291v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.567
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22258v1",
+  "title": "Class-Balanced Softmax: A Bayes Theory-Based Method for Long-Tailed Recognition",
+  "abstract": "Deep learning models using traditional softmax classifiers have achieved remarkable success in various classification tasks. However, their performance degrades significantly on imbalanced datasets. Although Balanced Softmax is widely adopted as a state-of-the-art rebalancing method, it possesses inherent limitations, such as yielding disproportionately lower testing accuracy for tail classes. To mitigate these shortcomings, we propose the Class-Balanced Softmax (CBS). Rooted in a theoretical Bayesian framework and a heuristic power-law assumption, the CBS is a simple logit adjustment that is computationally inexpensive and easily integrated into existing pipelines. Furthermore, we characterise a fundamental phenomenon in models trained on imbalanced data, termed the preference issue, wherein models exhibit higher training error and a larger generalisation gap for classes with limited data. To quantify this issue, we introduce a novel metric and demonstrate that CBS effectively mitigates the preference issue. Extensive experiments on large-scale benchmarks show that CBS is highly scalable and outperforms existing methods, including Balanced Softmax.",
+  "authors": [
+   "Yi-Hang Zhu",
+   "Rajeev Raman",
+   "Shiqi Su",
+   "Jianyuan Sun",
+   "Xinyu Yang",
+   "Nan Xing",
+   "Huiyu Zhou"
+  ],
+  "published": "2026-07-24T12:46:03Z",
+  "store_candidates": [
+   {
+    "eid": "e09931",
+    "name": "From Perturbation Correction to Geometry-Aware Sampling: Sharpness-Guided Equilibrium Sampling for Balanced Flat Minima in Long-Tailed Learning",
+    "source": "arxiv:2607.21999v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.594
+   },
+   {
+    "eid": "e09256",
+    "name": "mixed instruction-tuning",
+    "source": "arxiv:2607.21279v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.565
+   },
+   {
+    "eid": "e07735",
+    "name": "tolerant learning for c.e. sets",
+    "source": "arxiv:2607.06694v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.56
+   },
+   {
+    "eid": "e09454",
+    "name": "multi-benchmark evaluation",
+    "source": "arxiv:2607.21461v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.558
+   },
+   {
+    "eid": "e08616",
+    "name": "geometry-aware sampling for long-tailed learning",
+    "source": "arxiv:2607.21999v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.556
+   },
+   {
+    "eid": "e09041",
+    "name": "classification performance improvement",
+    "source": "arxiv:2607.21068v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.555
+   },
+   {
+    "eid": "e09255",
+    "name": "instruction-tuning aligned dataset",
+    "source": "arxiv:2607.21279v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e08862",
+    "name": "softmax transformers",
+    "source": "arxiv:2607.22361v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.554
+   },
+   {
+    "eid": "e08912",
+    "name": "learned embedding for compatibility scoring",
+    "source": "arxiv:2607.22413v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.551
+   },
+   {
+    "eid": "e00706",
+    "name": "Complex analysis",
+    "source": "Complex analysis",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e04493",
+    "name": "complex analysis",
+    "source": "Fundamental group",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e08753",
+    "name": "bias mitigation",
+    "source": "arxiv:2607.22149v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.543
+   }
+  ]
+ },
+ {
+  "arxiv_id": "2607.22268v1",
+  "title": "General Value Functions for Remaining Useful Life and Failure-Mode Prediction",
+  "abstract": "Remaining useful life (RUL) prediction and failure-mode classification are central tasks in predictive maintenance. Many data-driven pipelines use fixed-window supervised learning with complete terminal labels; such routes do not naturally encode the temporal recursion linking successive degradation-state predictions when observations are partial or unit identities are unavailable. We formulate prognostics as vector General Value Function (GVF) prediction on an absorbing degradation process, treating RUL and failure-mode probabilities as temporally consistent targets rather than independent window-level labels, and estimate them with a multi-step temporal-difference estimator, TD($n,\u03bb$). Supporting theory identifies the Bellman fixed point of the vector GVFs, characterizes the linear projected-TD limit and its relation to complete-return Monte Carlo regression under realizability, and explains when bootstrapped TD targets are less variable than Monte Carlo returns. On an event-triggered multimode simulation and NASA C-MAPSS label-scarce stitch data, TD improves RUL and failure-mode prediction relative to a supervised same-backbone Monte Carlo control, especially under scarce complete labels. Practically, fragmented, identity-free degradation records can contribute local Bellman transitions instead of being discarded until complete run-to-failure labels are available.",
+  "authors": [
+   "Hao Yan",
+   "Ali Sarabi",
+   "Qing Zou",
+   "Boyang Xu"
+  ],
+  "published": "2026-07-24T13:04:32Z",
+  "store_candidates": [
+   {
+    "eid": "e09103",
+    "name": "route planning and failure prediction",
+    "source": "arxiv:2607.21156v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.597
+   },
+   {
+    "eid": "e09655",
+    "name": "generalization validation",
+    "source": "arxiv:2607.21665v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.57
+   },
+   {
+    "eid": "e08833",
+    "name": "structure prediction",
+    "source": "arxiv:2607.22314v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.545
+   },
+   {
+    "eid": "e07786",
+    "name": "multivalued functions",
+    "source": "arxiv:2607.08909v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.542
+   },
+   {
+    "eid": "e02914",
+    "name": "functional analysis",
+    "source": "Andrey Kolmogorov",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e04995",
+    "name": "functional analysis",
+    "source": "Lp space",
+    "source_kind": "Wikipedia article",
+    "similarity": 0.541
+   },
+   {
+    "eid": "e09049",
+    "name": "prediction error reduction",
+    "source": "arxiv:2607.21080v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e09257",
+    "name": "preserves general-task performance",
+    "source": "arxiv:2607.21279v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.537
+   },
+   {
+    "eid": "e09904",
+    "name": "Searching the Space of Feed-Forward Neural-Network Weight-Update Rules with Fixed Depth Symbolic Regression",
+    "source": "arxiv:2607.21855v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.529
+   },
+   {
+    "eid": "e07534",
+    "name": "Kalman-style functors",
+    "source": "arxiv:2606.28672v2",
+    "source_kind": "arXiv paper",
+    "similarity": 0.526
+   },
+   {
+    "eid": "e08363",
+    "name": "output validity improvement",
+    "source": "arxiv:2607.21756v1",
+    "source_kind": "arXiv paper",
+    "similarity": 0.526
+   },
+   {
+    "eid": "e13967",
+    "name": "punctuation prediction",
+    "source": "hf:oliverguhr/fullstop-punctuation-multilang-large",
+    "source_kind": "HuggingFace model card",
+    "similarity": 0.524
+   }
+  ]
+ }
+]

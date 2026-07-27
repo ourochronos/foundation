@@ -1,0 +1,47 @@
+{
+ "protocol": "ARM A of docs/14 (D93). 50 claims sampled seed-17 from the 286 live rows present after the 5 main shards (before the in_5 gap shard), graded vs FULL abstracts BEFORE any scoring; labels frozen at write time. Threshold IDENTICAL to D92/arxivai50 \u2014 the instrument is unchanged so the arms stay comparable: (a) asserts what the abstract does not; (b) drops a condition/qualifier that changes truth conditions; (c) turns on a method named nowhere in the statement AND carries no paper frame. NOT defects: missing attribution frame where the artifact is named, grammar, kind-field mislabels.",
+ "baseline_caveat": "Arm 0 comparator is the D92 arxivai50 audit (0.82 [0.69-0.90]), which sampled the same extraction PROCESS over the full 400-paper slice rather than these 100 papers specifically. Process-level comparison, not paired-sample.",
+ "defect_idx": [
+  8,
+  24,
+  25,
+  29,
+  37,
+  39
+ ],
+ "defect_families": {
+  "dropped_condition_or_qualifier": [
+   8,
+   24,
+   37,
+   39
+  ],
+  "added_scope_not_asserted": [
+   25
+  ],
+  "strength_escalation": [
+   29
+  ]
+ },
+ "defect_notes": {
+  "8": "states the GRPO dark-room collapse unscoped; abstract scopes it to Qwen3-1.7B/4B/8B on ALFWorld",
+  "24": "drops 'in the zero-miss regime' from the minimax-optimality claim",
+  "25": "adds 'on unseen road networks'; the paper explicitly disclaims general transfer ('feasibility evidence rather than a general estimate of transfer')",
+  "29": "'demonstrates' for the abstract's 'suggest', and drops 'under the evaluated setting'",
+  "37": "drops 'within one predicted CEFR level of self-assessed proficiency' \u2014 that qualifier IS the metric definition, so 87.4% means something else without it",
+  "39": "drops 'once adapter capacity is adequate', which the abstract immediately calls a hard gate"
+ },
+ "borderlines_resolved_precise": {
+  "45": "drops 'under mild technical conditions' \u2014 boilerplate hedge, not a scope restriction like D92 idx 7's 'in the discrete setting'",
+  "38": "drops datasets (DomainNet, NICO++) from a non-numeric empirical claim \u2014 same call as D92 idx 10",
+  "47": "drops 'in Stable Diffusion 1.5' from a qualitative claim",
+  "28": "'proposes StARS integrates' \u2014 grammar, not truth"
+ },
+ "precise": 44,
+ "n": 50,
+ "precision": 0.88,
+ "ci95": [
+  0.7619492111337642,
+  0.9438247628937535
+ ]
+}

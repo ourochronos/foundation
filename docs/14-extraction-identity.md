@@ -3,6 +3,24 @@
 Registered BEFORE any run, per the D64 criteria-drift rule. Criteria,
 instruments, and predictions below are frozen at commit time.
 
+> **RESULT (D94, same day).** Arm A **PASSED** every criterion —
+> subjects/claim 0.912 → **0.373**, singleton rate 0.935 → **0.114**,
+> statement precision **0.88 [0.76–0.94]** vs baseline 0.82 [0.69–0.90]
+> (no regression), claims/paper *up*. Arm B **FAILED**: it linked
+> nothing at all, 148 entities → 148 declines, cross-paper rate 0.000.
+> The reason is that the shared entities are not in subject position —
+> papers' subjects are their own new methods. Full analysis, plus two
+> registered defects in this document's own instrument, in D94.
+>
+> **Criterion defect found by the run, corrected here for any re-run:**
+> `decline rate > 0` is one-sided. It catches an extractor that links
+> everything; it does NOT catch one that links nothing, which passes at
+> 1.000 and makes every other Arm B criterion vacuous. The correct
+> bound is **`0 < decline rate < 1`**. Any future linking arm must also
+> use balanced prompt language — Arm B's decline-heavy wording is a
+> confound, so this run tested the prompt's caution, not the model's
+> ability to link.
+
 ## What provoked it
 
 User proposal: rather than treating identity as a downstream

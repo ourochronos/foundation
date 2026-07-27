@@ -1,0 +1,14 @@
+{
+ "heldout": 100,
+ "dropped_rows": 272,
+ "kept_rows": 26333,
+ "source_dirs": [
+  "data/wiki/shards_final",
+  "data/wiki/shards_1k",
+  "data/arxiv/shards",
+  "data/arxiv_ai/shards",
+  "data/arxiv_ai/shards_cites",
+  "data/hf/shards"
+ ],
+ "seed": 14
+}

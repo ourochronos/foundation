@@ -1,0 +1,99 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-27T19:24:27.155761+00:00",
+  "commit": "a6898a6d8a7507eba8c161fa135c81be997e4a03",
+  "dirty": true,
+  "command": "scripts/exp14_score.py",
+  "seed": 14,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "protocol": "docs/14-extraction-identity.md (D93, pre-registered)",
+   "heldout_papers": 100,
+   "store": "linkexp"
+  }
+ },
+ "arm0": {
+  "arm": "0-baseline",
+  "papers": 100,
+  "claims": 272,
+  "distinct_subjects": 248,
+  "subjects_per_claim": 0.912,
+  "claims_per_paper": 2.72,
+  "subjects_per_paper": 2.48,
+  "singleton_subjects": 232,
+  "singleton_rate": 0.935
+ },
+ "armA": {
+  "arm": "A",
+  "papers": 100,
+  "claims": 306,
+  "distinct_subjects": 114,
+  "subjects_per_claim": 0.373,
+  "claims_per_paper": 3.06,
+  "subjects_per_paper": 1.14,
+  "singleton_subjects": 13,
+  "singleton_rate": 0.114
+ },
+ "armB": {
+  "arm": "B",
+  "papers": 100,
+  "claims": 364,
+  "distinct_subjects": 148,
+  "subjects_per_claim": 0.407,
+  "claims_per_paper": 3.64,
+  "subjects_per_paper": 1.48,
+  "singleton_subjects": 49,
+  "singleton_rate": 0.331,
+  "entities": 148,
+  "entities_linked": 0,
+  "entities_declined": 148,
+  "decline_rate": 1.0,
+  "links_total": 0,
+  "links_invented_eid": 0,
+  "cross_paper_links": 0,
+  "cross_paper_subject_rate": 0.0,
+  "wikipedia_links": 0,
+  "wikipedia_link_examples": [],
+  "planted_decoys_offered": 10,
+  "planted_decoys_linked": 0,
+  "planted_decoy_hits": [],
+  "link_targets_sample": []
+ },
+ "criteria_mechanical": {
+  "A_subjects_per_claim_le_0.60": {
+   "pass": true,
+   "value": 0.373
+  },
+  "B_cross_paper_subject_rate_gt_0.10": {
+   "pass": false,
+   "value": 0.0
+  },
+  "B_zero_wikipedia_false_merges": {
+   "pass": true,
+   "value": 0
+  },
+  "B_all_planted_decoys_declined": {
+   "pass": true,
+   "value": 0
+  },
+  "B_decline_rate_gt_0": {
+   "pass": true,
+   "value": 1.0
+  },
+  "B_no_invented_eids": {
+   "pass": true,
+   "value": 0
+  }
+ },
+ "criteria_pending_audit": [
+  "A: statement precision CI overlaps arm 0 (frozen 50-audit)",
+  "A: no new defect family",
+  "B: link precision >= 0.90 (frozen 50-link audit + Sol)"
+ ]
+}
