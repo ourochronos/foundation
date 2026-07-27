@@ -1,0 +1,20 @@
+{
+ "protocol": "50 claims sampled seed-13 from 297 live post-veto rows; graded vs FULL abstracts; strict rules: qualifier drops and unverified glosses = defect; labels frozen before ingest/score",
+ "defect_idx": [
+  8,
+  34,
+  49
+ ],
+ "notes": {
+  "8": "claim asserts unconditional NATP transfer; abstract scopes it 'under this sufficient condition'",
+  "34": "'measure-bearing topological spaces' gloss for equiconsistent statement (4) not verified",
+  "49": "'universal relation that is not computably universal' phrasing not located in abstract"
+ },
+ "precise": 47,
+ "n": 50,
+ "precision": 0.94,
+ "ci95": [
+  0.8378265662912299,
+  0.9793854036353695
+ ]
+}
