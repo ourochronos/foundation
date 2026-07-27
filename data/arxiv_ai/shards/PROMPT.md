@@ -3,6 +3,30 @@
 Input: your assigned `in_K.json` — a JSON array of ~20 arXiv AI/ML paper
 records {arxiv_id, title, abstract, authors, published}.
 
+## Step 1 — name the paper's ENTITIES before writing any claim (D94)
+
+Decide the small set of things the paper is *about*: the method or model
+it introduces, the benchmark or dataset it uses or releases, the task,
+the artifact. **Typically 1–3 per paper; rarely more than 4.**
+
+Write each as the SHORTEST NAME THAT STANDS ALONE — the name the authors
+would use in a later paper. Prefer the bare proper name.
+
+- Good: `SHIFT`, `MissHyper`, `MedGame`, `CultureTalk-ID`, `MMLU-Pro`
+- Bad: `SHIFT retrieval performance`, `MedGame user perception`
+
+If the method has no proper name, use a short descriptive noun phrase
+and REUSE IT VERBATIM across every claim about it.
+
+Every claim's `subject` MUST be one of those names, copied
+character-for-character. **Claims sharing a subject is the expected,
+correct outcome — not a duplicate.** Without this rule 95% of subjects
+were used exactly once and the store had no entity structure at all;
+with it, subjects-per-claim fell 0.912 → 0.373 at no cost to precision
+(D94).
+
+## Step 2 — extract the claims
+
 Extract ATTRIBUTED CLAIMS from each abstract. Rules (precision beats
 recall; violations poison downstream):
 
@@ -24,16 +48,19 @@ recall; violations poison downstream):
 5. ARTIFACT CLAIMS: model/dataset/code releases become kind=artifact
    claims with name, and size/license when stated ("The paper releases
    the 7B-parameter X model under Apache-2.0").
-6. subject = the principal method/model/topic of the claim, a SHORT noun
-   phrase from the abstract; kind = one of result | method | artifact |
-   benchmark | conjecture | question.
+6. subject = one of the entity names chosen in Step 1, verbatim; kind =
+   one of result | method | artifact | benchmark | conjecture | question.
 7. 2-6 claims per abstract; too-vague abstracts get ZERO rather than a
    stretch.
 
 Compose ALL rows first, then ONE Write call to your assigned
 `out_K.jsonl` — one JSON object per line:
-{"page": "arxiv:<arxiv_id>", "subject": "<topic>", "pid": "P_ASSERTS",
+{"page": "arxiv:<arxiv_id>", "page_title": "<paper title>",
+ "subject": "<one of the Step-1 entity names>", "pid": "P_ASSERTS",
  "kind": "<kind>", "object": "<short label, <=8 words>",
  "statement": "<the full attributed claim sentence>"}
 
-Final text: just "done: N claims from M papers".
+`page_title` carries the paper's title so ingest can canonicalize it —
+a page's canonical form is its TITLE, not its identifier (D92).
+
+Final text: just "done: N claims from M papers over E entities".

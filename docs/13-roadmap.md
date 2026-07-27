@@ -78,15 +78,22 @@ channel) · topic-alias machinery (D83 weakness).
 Both source types are ACCEPTED and ingested; the corpus is live at
 18,787 claims. What D92 changed about the plan:
 
-- **The reflexive-use goal is now blocked on topic identity, not on
-  corpus size.** The AI slice has **zero subjects spanning more than one
-  paper** (1,041 distinct subjects over 1,106 claims) — papers name their
-  own methods, so "the ML literature disagrees constantly" is currently
-  unobservable at the subject level. Track I across papers works only
-  along the citation axis. **Next lever for P2 is a topic/benchmark axis**
-  (benchmarks and tasks as first-class entities: `P_EVALUATES_ON`
-  extracted as objects), not more papers. This is the same topic-alias
-  weakness flagged at D83, now measured.
+- **The reflexive-use goal is blocked on topic identity, not corpus
+  size** — and D93/D94 split that into two separate problems, one now
+  solved:
+  - *Within-source fragmentation* (the dominant term, 95% of subjects
+    used exactly once) — **SOLVED by an extraction-prompt rule**, no
+    store needed: subjects/claim 0.912 → 0.373 at no precision cost
+    (D94). Shipped into the arXiv prompt; **port it to the wiki and HF
+    prompts before their next fleet run.**
+  - *Cross-source identity* — still open, and D94 located it precisely:
+    the entities papers actually share (ALFWorld, PPO, Qwen, Atari,
+    MMLU…) appear **0 times as subjects and 21 times inside statements**.
+    They are carried as object text, so no amount of subject-level
+    linking can reach them. **Next lever: promote benchmarks, datasets
+    and base models to first-class entities** (a `P_EVALUATES_ON` /
+    `P_BUILDS_ON` axis), then re-test linking against that population
+    with balanced prompt language and a two-sided decline bound.
 - Citation-vote branching is proven and can widen the slice whenever
   wanted (cited-by>=k → fetch).
 - Deeper re-ingestion (fulltext passes over the retained HTML) remains
