@@ -1,24 +1,154 @@
-{"statement": "Baruch Spinoza was born in Amsterdam", "subject": "Baruch Spinoza", "pid": "P19", "object": "Amsterdam", "page": "Baruch Spinoza"}
+{"statement": "Baruch Spinoza was born on 24 November 1632", "subject": "Baruch Spinoza", "pid": "P569", "object": "24 November 1632", "page": "Baruch Spinoza"}
+{"statement": "Baruch Spinoza died on 21 February 1677", "subject": "Baruch Spinoza", "pid": "P570", "object": "21 February 1677", "page": "Baruch Spinoza"}
 {"statement": "Baruch Spinoza was a philosopher", "subject": "Baruch Spinoza", "pid": "P106", "object": "philosopher", "page": "Baruch Spinoza"}
-{"statement": "Baruch Spinoza was from Dutch Republic", "subject": "Baruch Spinoza", "pid": "P17", "object": "Dutch Republic", "page": "Baruch Spinoza"}
+{"statement": "Baruch Spinoza was a lead", "subject": "Baruch Spinoza", "pid": "P106", "object": "lead", "page": "Baruch Spinoza"}
+{"statement": "Baruch Spinoza was born in Amsterdam to ", "subject": "Baruch Spinoza", "pid": "P19", "object": "Amsterdam to ", "page": "Baruch Spinoza"}
+{"statement": "Baruch Spinoza was a prom", "subject": "Baruch Spinoza", "pid": "P106", "object": "prom", "page": "Baruch Spinoza"}
+{"statement": "Baruch Spinoza was active in 1656", "subject": "Baruch Spinoza", "pid": "P571", "object": "1656", "page": "Baruch Spinoza"}
+{"statement": "Baruch Spinoza was a foremost merchant", "subject": "Baruch Spinoza", "pid": "P106", "object": "foremost merchant", "page": "Baruch Spinoza"}
+{"statement": "Baruch Spinoza was a community leader", "subject": "Baruch Spinoza", "pid": "P106", "object": "community leader", "page": "Baruch Spinoza"}
+{"statement": "Bayesian epistemology was a formal approach to various topics", "subject": "Bayesian epistemology", "pid": "P106", "object": "formal approach to various topics", "page": "Bayesian epistemology"}
+{"statement": "Bayesian epistemology was a analogy between the Bayesian norms", "subject": "Bayesian epistemology", "pid": "P106", "object": "analogy between the Bayesian norms", "page": "Bayesian epistemology"}
 {"statement": "Belief was a mental state of having some stance", "subject": "Belief", "pid": "P106", "object": "mental state of having some stance", "page": "Belief"}
+{"statement": "Belief was a subjective", "subject": "Belief", "pid": "P106", "object": "subjective", "page": "Belief"}
+{"statement": "Belief was a mental st", "subject": "Belief", "pid": "P106", "object": "mental st", "page": "Belief"}
+{"statement": "Belief was a entire spectrum", "subject": "Belief", "pid": "P106", "object": "entire spectrum", "page": "Belief"}
+{"statement": "Belief was a traditionally dom", "subject": "Belief", "pid": "P106", "object": "traditionally dom", "page": "Belief"}
 {"statement": "Bernhard Riemann was born on 17 September 1826", "subject": "Bernhard Riemann", "pid": "P569", "object": "17 September 1826", "page": "Bernhard Riemann"}
 {"statement": "Bernhard Riemann died on 20 July 1866", "subject": "Bernhard Riemann", "pid": "P570", "object": "20 July 1866", "page": "Bernhard Riemann"}
-{"statement": "Bernhard Riemann was of German origin", "subject": "Bernhard Riemann", "pid": null, "object": "German", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was a German mathematician", "subject": "Bernhard Riemann", "pid": "P106", "object": "German mathematician", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was a German m", "subject": "Bernhard Riemann", "pid": "P106", "object": "German m", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann made contributions to analysis", "subject": "Bernhard Riemann", "pid": null, "object": "analysis", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann is known for the first rigorous formulation of the integral", "subject": "Bernhard Riemann", "pid": null, "object": "the first rigorous formulation of the integral", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was a poor Lutheran pastor", "subject": "Bernhard Riemann", "pid": "P106", "object": "poor Lutheran pastor", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was active in 1846", "subject": "Bernhard Riemann", "pid": "P571", "object": "1846", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was a second", "subject": "Bernhard Riemann", "pid": "P106", "object": "second", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was active in 1842", "subject": "Bernhard Riemann", "pid": "P571", "object": "1842", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was active in 1847", "subject": "Bernhard Riemann", "pid": "P571", "object": "1847", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was active in 1849", "subject": "Bernhard Riemann", "pid": "P571", "object": "1849", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was active in 1854", "subject": "Bernhard Riemann", "pid": "P571", "object": "1854", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was a attempt to promote Riemann to extraord", "subject": "Bernhard Riemann", "pid": "P106", "object": "attempt to promote Riemann to extraord", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was active in 1866", "subject": "Bernhard Riemann", "pid": "P571", "object": "1866", "page": "Bernhard Riemann"}
+{"statement": "Bernhard Riemann was a dedic", "subject": "Bernhard Riemann", "pid": "P106", "object": "dedic", "page": "Bernhard Riemann"}
 {"statement": "Bertrand Russell was born on 18 May 1872", "subject": "Bertrand Russell", "pid": "P569", "object": "18 May 1872", "page": "Bertrand Russell"}
 {"statement": "Bertrand Russell died on 2 February 1970", "subject": "Bertrand Russell", "pid": "P570", "object": "2 February 1970", "page": "Bertrand Russell"}
-{"statement": "Bertrand Russell was of English origin", "subject": "Bertrand Russell", "pid": null, "object": "English", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell was a English philosopher", "subject": "Bertrand Russell", "pid": "P106", "object": "English philosopher", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell was active in 1878", "subject": "Bertrand Russell", "pid": "P571", "object": "1878", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell was active in 1890", "subject": "Bertrand Russell", "pid": "P571", "object": "1890", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell published Principia Mathematica", "subject": "Bertrand Russell", "pid": null, "object": "Principia Mathematica", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell was active in 1893", "subject": "Bertrand Russell", "pid": "P571", "object": "1893", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell was a pacifist", "subject": "Bertrand Russell", "pid": "P106", "object": "pacifist", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell was active in 1943", "subject": "Bertrand Russell", "pid": "P571", "object": "1943", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell received Nobel Prize", "subject": "Bertrand Russell", "pid": "P166", "object": "Nobel Prize", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell was active in 1536", "subject": "Bertrand Russell", "pid": "P571", "object": "1536", "page": "Bertrand Russell"}
+{"statement": "Bertrand Russell was a daughter", "subject": "Bertrand Russell", "pid": "P106", "object": "daughter", "page": "Bertrand Russell"}
+{"statement": "Biology was a scientific study", "subject": "Biology", "pid": "P106", "object": "scientific study", "page": "Biology"}
+{"statement": "Biology was a broad n", "subject": "Biology", "pid": "P106", "object": "broad n", "page": "Biology"}
+{"statement": "Biology was active in 1766", "subject": "Biology", "pid": "P571", "object": "1766", "page": "Biology"}
+{"statement": "Biology was active in 1799", "subject": "Biology", "pid": "P571", "object": "1799", "page": "Biology"}
+{"statement": "Biology was a cell", "subject": "Biology", "pid": "P106", "object": "cell", "page": "Biology"}
+{"statement": "Biology was a focus", "subject": "Biology", "pid": "P106", "object": "focus", "page": "Biology"}
+{"statement": "Biology was active in 1735", "subject": "Biology", "pid": "P571", "object": "1735", "page": "Biology"}
 {"statement": "Blaise Pascal was born on 19 June 1623", "subject": "Blaise Pascal", "pid": "P569", "object": "19 June 1623", "page": "Blaise Pascal"}
 {"statement": "Blaise Pascal died on 19 August 1662", "subject": "Blaise Pascal", "pid": "P570", "object": "19 August 1662", "page": "Blaise Pascal"}
-{"statement": "Blaise Pascal was of French origin", "subject": "Blaise Pascal", "pid": null, "object": "French", "page": "Blaise Pascal"}
+{"statement": "Blaise Pascal was a French mathematician", "subject": "Blaise Pascal", "pid": "P106", "object": "French mathematician", "page": "Blaise Pascal"}
+{"statement": "Blaise Pascal was a French m", "subject": "Blaise Pascal", "pid": "P106", "object": "French m", "page": "Blaise Pascal"}
 {"statement": "Blaise Pascal was a child prodigy", "subject": "Blaise Pascal", "pid": "P106", "object": "child prodigy", "page": "Blaise Pascal"}
-{"statement": "Brahmagupta was of Indian origin", "subject": "Brahmagupta", "pid": null, "object": "Indian", "page": "Brahmagupta"}
+{"statement": "Blaise Pascal was a pioneer", "subject": "Blaise Pascal", "pid": "P106", "object": "pioneer", "page": "Blaise Pascal"}
+{"statement": "Blaise Pascal made contributions to the study of fluids", "subject": "Blaise Pascal", "pid": null, "object": "the study of fluids", "page": "Blaise Pascal"}
+{"statement": "Blaise Pascal was active in 1647", "subject": "Blaise Pascal", "pid": "P571", "object": "1647", "page": "Blaise Pascal"}
+{"statement": "Blaise Pascal was active in 1662", "subject": "Blaise Pascal", "pid": "P571", "object": "1662", "page": "Blaise Pascal"}
+{"statement": "Blaise Pascal died in Paris at the age ", "subject": "Blaise Pascal", "pid": "P20", "object": "Paris at the age ", "page": "Blaise Pascal"}
+{"statement": "Blaise Pascal was a local judge", "subject": "Blaise Pascal", "pid": "P106", "object": "local judge", "page": "Blaise Pascal"}
+{"statement": "Blaise Pascal was a key member", "subject": "Blaise Pascal", "pid": "P106", "object": "key member", "page": "Blaise Pascal"}
+{"statement": "Blaise Pascal was a work", "subject": "Blaise Pascal", "pid": "P106", "object": "work", "page": "Blaise Pascal"}
+{"statement": "Brahmagupta was a Indian mathematician", "subject": "Brahmagupta", "pid": "P106", "object": "Indian mathematician", "page": "Brahmagupta"}
+{"statement": "Brahmagupta was a Indian m", "subject": "Brahmagupta", "pid": "P106", "object": "Indian m", "page": "Brahmagupta"}
+{"statement": "Brahmagupta was a author", "subject": "Brahmagupta", "pid": "P106", "object": "author", "page": "Brahmagupta"}
+{"statement": "Brahmagupta was a capital", "subject": "Brahmagupta", "pid": "P106", "object": "capital", "page": "Brahmagupta"}
+{"statement": "Brahmagupta was a centre", "subject": "Brahmagupta", "pid": "P106", "object": "centre", "page": "Brahmagupta"}
+{"statement": "Brahmagupta was a astronomer", "subject": "Brahmagupta", "pid": "P106", "object": "astronomer", "page": "Brahmagupta"}
+{"statement": "Brahmagupta was a spread", "subject": "Brahmagupta", "pid": "P106", "object": "spread", "page": "Brahmagupta"}
+{"statement": "Bulletin of the American Mathematical Society was a quarterly m", "subject": "Bulletin of the American Mathematical Society", "pid": "P106", "object": "quarterly m", "page": "Bulletin of the American Mathematical Society"}
+{"statement": "Calculus was a branch", "subject": "Calculus", "pid": "P106", "object": "branch", "page": "Calculus"}
+{"statement": "Calculus was a collection", "subject": "Calculus", "pid": "P106", "object": "collection", "page": "Calculus"}
+{"statement": "Cambridge University Press was a university press", "subject": "Cambridge University Press", "pid": "P106", "object": "university press", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1534", "subject": "Cambridge University Press", "pid": "P571", "object": "1534", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was a oldest university press", "subject": "Cambridge University Press", "pid": "P106", "object": "oldest university press", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1584", "subject": "Cambridge University Press", "pid": "P571", "object": "1584", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was a book", "subject": "Cambridge University Press", "pid": "P106", "object": "book", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1629", "subject": "Cambridge University Press", "pid": "P571", "object": "1629", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1833", "subject": "Cambridge University Press", "pid": "P571", "object": "1833", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1950", "subject": "Cambridge University Press", "pid": "P571", "object": "1950", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was a listed build", "subject": "Cambridge University Press", "pid": "P106", "object": "listed build", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1893", "subject": "Cambridge University Press", "pid": "P571", "object": "1893", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1895", "subject": "Cambridge University Press", "pid": "P571", "object": "1895", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1963", "subject": "Cambridge University Press", "pid": "P571", "object": "1963", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1961", "subject": "Cambridge University Press", "pid": "P571", "object": "1961", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 1979", "subject": "Cambridge University Press", "pid": "P571", "object": "1979", "page": "Cambridge University Press"}
+{"statement": "Cambridge University Press was active in 2017", "subject": "Cambridge University Press", "pid": "P571", "object": "2017", "page": "Cambridge University Press"}
 {"statement": "Carl Friedrich Gauss was born on 30 April 1777", "subject": "Carl Friedrich Gauss", "pid": "P569", "object": "30 April 1777", "page": "Carl Friedrich Gauss"}
 {"statement": "Carl Friedrich Gauss died on 23 February 1855", "subject": "Carl Friedrich Gauss", "pid": "P570", "object": "23 February 1855", "page": "Carl Friedrich Gauss"}
-{"statement": "Carl Friedrich Gauss was of German origin", "subject": "Carl Friedrich Gauss", "pid": null, "object": "German", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss was a German mathematician", "subject": "Carl Friedrich Gauss", "pid": "P106", "object": "German mathematician", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss was a German m", "subject": "Carl Friedrich Gauss", "pid": "P106", "object": "German m", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss was active in 1855", "subject": "Carl Friedrich Gauss", "pid": "P571", "object": "1855", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss was active in 1832", "subject": "Carl Friedrich Gauss", "pid": "P571", "object": "1832", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss was a first to discover", "subject": "Carl Friedrich Gauss", "pid": "P106", "object": "first to discover", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss was a first to develop a fast Fourier transform", "subject": "Carl Friedrich Gauss", "pid": "P106", "object": "first to develop a fast Fourier transform", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss was active in 1821", "subject": "Carl Friedrich Gauss", "pid": "P571", "object": "1821", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss was active in 1809", "subject": "Carl Friedrich Gauss", "pid": "P571", "object": "1809", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss received Lalande Prize", "subject": "Carl Friedrich Gauss", "pid": "P166", "object": "Lalande Prize", "page": "Carl Friedrich Gauss"}
+{"statement": "Carl Friedrich Gauss is known for not publishing incomplete work and left several works to be edited posthumously", "subject": "Carl Friedrich Gauss", "pid": null, "object": "not publishing incomplete work and left several works to be edited posthumously", "page": "Carl Friedrich Gauss"}
 {"statement": "Category theory was a general theory of mathematical structures", "subject": "Category theory", "pid": "P106", "object": "general theory of mathematical structures", "page": "Category theory"}
+{"statement": "Category theory was a general theory", "subject": "Category theory", "pid": "P106", "object": "general theory", "page": "Category theory"}
+{"statement": "Category theory was a concept", "subject": "Category theory", "pid": "P106", "object": "concept", "page": "Category theory"}
+{"statement": "Certainty was a epistemic property", "subject": "Certainty", "pid": "P106", "object": "epistemic property", "page": "Certainty"}
+{"statement": "Certainty was a series", "subject": "Certainty", "pid": "P106", "object": "series", "page": "Certainty"}
 {"statement": "Chaos theory was a branch of mathematics", "subject": "Chaos theory", "pid": "P106", "object": "branch of mathematics", "page": "Chaos theory"}
-{"statement": "Charles Sanders Peirce was of American origin", "subject": "Charles Sanders Peirce", "pid": null, "object": "American", "page": "Charles Sanders Peirce"}
+{"statement": "Chaos theory was a branch", "subject": "Chaos theory", "pid": "P106", "object": "branch", "page": "Chaos theory"}
+{"statement": "Charles Sanders Peirce was a American scientist", "subject": "Charles Sanders Peirce", "pid": "P106", "object": "American scientist", "page": "Charles Sanders Peirce"}
+{"statement": "Charles Sanders Peirce was active in 1934", "subject": "Charles Sanders Peirce", "pid": "P571", "object": "1934", "page": "Charles Sanders Peirce"}
+{"statement": "Charles Sanders Peirce was active in 1959", "subject": "Charles Sanders Peirce", "pid": "P571", "object": "1959", "page": "Charles Sanders Peirce"}
+{"statement": "Charles Sanders Peirce made contributions to logic", "subject": "Charles Sanders Peirce", "pid": null, "object": "logic", "page": "Charles Sanders Peirce"}
+{"statement": "Charles Sanders Peirce was a founder", "subject": "Charles Sanders Peirce", "pid": "P106", "object": "founder", "page": "Charles Sanders Peirce"}
+{"statement": "Charles Sanders Peirce was active in 1878", "subject": "Charles Sanders Peirce", "pid": "P571", "object": "1878", "page": "Charles Sanders Peirce"}
+{"statement": "Claude Shannon was a American polymath", "subject": "Claude Shannon", "pid": "P106", "object": "American polymath", "page": "Claude Shannon"}
 {"statement": "Claude Shannon was a mathematician", "subject": "Claude Shannon", "pid": "P106", "object": "mathematician", "page": "Claude Shannon"}
-{"statement": "Critique of Pure Reason was of German origin", "subject": "Critique of Pure Reason", "pid": null, "object": "German", "page": "Critique of Pure Reason"}
-{"statement": "Critique of Pure Reason was from German", "subject": "Critique of Pure Reason", "pid": "P27", "object": "German", "page": "Critique of Pure Reason"}
+{"statement": "Claude Shannon was a American polym", "subject": "Claude Shannon", "pid": "P106", "object": "American polym", "page": "Claude Shannon"}
+{"statement": "Claude Shannon was active in 1936", "subject": "Claude Shannon", "pid": "P571", "object": "1936", "page": "Claude Shannon"}
+{"statement": "Claude Shannon was active in 1985", "subject": "Claude Shannon", "pid": "P571", "object": "1985", "page": "Claude Shannon"}
+{"statement": "Claude Shannon was active in 1940", "subject": "Claude Shannon", "pid": "P571", "object": "1940", "page": "Claude Shannon"}
+{"statement": "Claude Shannon was active in 1951", "subject": "Claude Shannon", "pid": "P571", "object": "1951", "page": "Claude Shannon"}
+{"statement": "Claude Shannon was a first electrical device to learn by trial", "subject": "Claude Shannon", "pid": "P106", "object": "first electrical device to learn by trial", "page": "Claude Shannon"}
+{"statement": "Claude Shannon lived in Gaylord", "subject": "Claude Shannon", "pid": "P551", "object": "Gaylord", "page": "Claude Shannon"}
+{"statement": "Claude Shannon was a language teacher", "subject": "Claude Shannon", "pid": "P106", "object": "language teacher", "page": "Claude Shannon"}
+{"statement": "Coherentism was a member", "subject": "Coherentism", "pid": "P106", "object": "member", "page": "Coherentism"}
+{"statement": "Coherentism was a primary bearer", "subject": "Coherentism", "pid": "P106", "object": "primary bearer", "page": "Coherentism"}
+{"statement": "Coherentism was a view either about the structure", "subject": "Coherentism", "pid": "P106", "object": "view either about the structure", "page": "Coherentism"}
+{"statement": "Combinatorics was a area", "subject": "Combinatorics", "pid": "P106", "object": "area", "page": "Combinatorics"}
+{"statement": "Combinatorics is known for the breadth of the problems it tackles", "subject": "Combinatorics", "pid": null, "object": "the breadth of the problems it tackles", "page": "Combinatorics"}
+{"statement": "Combinatorics was a range", "subject": "Combinatorics", "pid": "P106", "object": "range", "page": "Combinatorics"}
+{"statement": "Combinatorics was a approach th", "subject": "Combinatorics", "pid": "P106", "object": "approach th", "page": "Combinatorics"}
+{"statement": "Complex analysis was a branch", "subject": "Complex analysis", "pid": "P106", "object": "branch", "page": "Complex analysis"}
+{"statement": "Complex analysis was a study", "subject": "Complex analysis", "pid": "P106", "object": "study", "page": "Complex analysis"}
+{"statement": "Complex analysis was a function th", "subject": "Complex analysis", "pid": "P106", "object": "function th", "page": "Complex analysis"}
+{"statement": "Complex number was a element", "subject": "Complex number", "pid": "P106", "object": "element", "page": "Complex number"}
+{"statement": "Complex number was a similarity centered", "subject": "Complex number", "pid": "P106", "object": "similarity centered", "page": "Complex number"}
+{"statement": "Computer science was a study", "subject": "Computer science", "pid": "P106", "object": "study", "page": "Computer science"}
+{"statement": "Computer science was active in 1623", "subject": "Computer science", "pid": "P571", "object": "1623", "page": "Computer science"}
+{"statement": "Computer science was active in 1822", "subject": "Computer science", "pid": "P571", "object": "1822", "page": "Computer science"}
+{"statement": "Computer science was active in 1834", "subject": "Computer science", "pid": "P571", "object": "1834", "page": "Computer science"}
+{"statement": "Computer science was a adoption", "subject": "Computer science", "pid": "P106", "object": "adoption", "page": "Computer science"}
+{"statement": "Continuous function was a function such th", "subject": "Continuous function", "pid": "P106", "object": "function such th", "page": "Continuous function"}
+{"statement": "Continuous function was a function th", "subject": "Continuous function", "pid": "P106", "object": "function th", "page": "Continuous function"}
+{"statement": "Continuous function was a basis", "subject": "Continuous function", "pid": "P106", "object": "basis", "page": "Continuous function"}
+{"statement": "Continuous function was active in 1817", "subject": "Continuous function", "pid": "P571", "object": "1817", "page": "Continuous function"}
+{"statement": "Continuum hypothesis was a hypothesis about the possible sizes", "subject": "Continuum hypothesis", "pid": "P106", "object": "hypothesis about the possible sizes", "page": "Continuum hypothesis"}
+{"statement": "Continuum hypothesis was active in 1878", "subject": "Continuum hypothesis", "pid": "P571", "object": "1878", "page": "Continuum hypothesis"}
+{"statement": "Continuum hypothesis was active in 1900", "subject": "Continuum hypothesis", "pid": "P571", "object": "1900", "page": "Continuum hypothesis"}
+{"statement": "Continuum hypothesis was a first", "subject": "Continuum hypothesis", "pid": "P106", "object": "first", "page": "Continuum hypothesis"}
+{"statement": "Continuum hypothesis was active in 1963", "subject": "Continuum hypothesis", "pid": "P571", "object": "1963", "page": "Continuum hypothesis"}
+{"statement": "Continuum hypothesis was active in 1904", "subject": "Continuum hypothesis", "pid": "P571", "object": "1904", "page": "Continuum hypothesis"}
+{"statement": "Critique of Pure Reason was a book by the German philosopher Immanuel Kant", "subject": "Critique of Pure Reason", "pid": "P106", "object": "book by the German philosopher Immanuel Kant", "page": "Critique of Pure Reason"}
+{"statement": "Critique of Pure Reason was a priori if it is necessary", "subject": "Critique of Pure Reason", "pid": "P106", "object": "priori if it is necessary", "page": "Critique of Pure Reason"}
+{"statement": "Critique of Pure Reason was a source", "subject": "Critique of Pure Reason", "pid": "P106", "object": "source", "page": "Critique of Pure Reason"}

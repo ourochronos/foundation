@@ -2,59 +2,226 @@
 {"page": "David Hilbert", "statement": "David Hilbert died on 14 February 1943.", "subject": "David Hilbert", "pid": "P570", "object": "14 February 1943"}
 {"page": "David Hilbert", "statement": "David Hilbert was born in the Province of Prussia.", "subject": "David Hilbert", "pid": "P19", "object": "Province of Prussia"}
 {"page": "David Hilbert", "statement": "David Hilbert was a German mathematician.", "subject": "David Hilbert", "pid": "P27", "object": "Germany"}
+{"page": "David Hilbert", "statement": "David Hilbert was a philosopher of mathematics.", "subject": "David Hilbert", "pid": "P106", "object": "philosopher"}
 {"page": "David Hilbert", "statement": "David Hilbert enrolled at the University of K\u00f6nigsberg in autumn 1880.", "subject": "David Hilbert", "pid": "P69", "object": "University of K\u00f6nigsberg"}
-{"page": "David Hilbert", "statement": "David Hilbert was a mathematician.", "subject": "David Hilbert", "pid": "P106", "object": "mathematician"}
 {"page": "David Hilbert", "statement": "David Hilbert was Professor of Mathematics at the University of G\u00f6ttingen.", "subject": "David Hilbert", "pid": "P937", "object": "University of G\u00f6ttingen"}
+{"page": "David Hilbert", "statement": "David Hilbert obtained his doctorate in 1885.", "subject": "David Hilbert", "pid": null, "object": "1885"}
 {"page": "David Hilbert", "statement": "David Hilbert's father was Otto, a county judge.", "subject": "David Hilbert", "pid": null, "object": "Otto"}
-{"page": "David Hilbert", "statement": "David Hilbert's mother was Maria Therese Hilbert.", "subject": "David Hilbert", "pid": null, "object": "Maria Therese Hilbert"}
-{"page": "David Hilbert", "statement": "Hermann Minkowski returned to K\u00f6nigsberg in early 1882 and entered the University of K\u00f6nigsberg.", "subject": "Hermann Minkowski", "pid": "P69", "object": "University of K\u00f6nigsberg"}
-{"page": "David Hilbert", "statement": "David Hilbert obtained his doctorate in 1885 with a dissertation on invariant properties of special binary forms.", "subject": "David Hilbert", "pid": null, "object": "1885"}
-{"page": "David Hilbert", "statement": "Hermann Weyl was a student of David Hilbert.", "subject": "Hermann Weyl", "pid": "P69", "object": "University of G\u00f6ttingen"}
+{"page": "David Hilbert", "statement": "Hermann Minkowski was a native of K\u00f6nigsberg and developed a lifelong friendship with David Hilbert.", "subject": "Hermann Minkowski", "pid": "P19", "object": "K\u00f6nigsberg"}
+{"page": "David Hilbert", "statement": "David Hilbert contributed to establishing rigor in mathematical physics.", "subject": "David Hilbert", "pid": "P106", "object": "mathematician"}
+{"page": "David Hilbert", "statement": "David Hilbert presented a collection of problems in 1900 that set a course for mathematical research of the 20th century.", "subject": "David Hilbert", "pid": "P800", "object": "Hilbert's problems"}
 {"page": "David Hume", "statement": "David Hume was born on 7 May 1711.", "subject": "David Hume", "pid": "P569", "object": "7 May 1711"}
 {"page": "David Hume", "statement": "David Hume died on 25 August 1776.", "subject": "David Hume", "pid": "P570", "object": "25 August 1776"}
 {"page": "David Hume", "statement": "David Hume was a Scottish philosopher.", "subject": "David Hume", "pid": "P27", "object": "Scotland"}
 {"page": "David Hume", "statement": "David Hume was born in Edinburgh.", "subject": "David Hume", "pid": "P19", "object": "Edinburgh"}
-{"page": "David Hume", "statement": "David Hume was a philosopher, historian, economist and essayist.", "subject": "David Hume", "pid": "P106", "object": "philosopher"}
+{"page": "David Hume", "statement": "David Hume was a historian and essayist.", "subject": "David Hume", "pid": "P106", "object": "historian"}
 {"page": "David Hume", "statement": "David Hume attended the University of Edinburgh at an unusually early age.", "subject": "David Hume", "pid": "P69", "object": "University of Edinburgh"}
-{"page": "David Hume", "statement": "David Hume was the second of two sons born to Catherine Home and Joseph Home.", "subject": "David Hume", "pid": null, "object": "Catherine Home and Joseph Home"}
+{"page": "David Hume", "statement": "David Hume was the second of two sons.", "subject": "David Hume", "pid": null, "object": "second son"}
 {"page": "David Hume", "statement": "David Hume changed his family name's spelling from Home to Hume in 1734.", "subject": "David Hume", "pid": null, "object": "1734"}
-{"page": "David Hume", "statement": "David Hume never married.", "subject": "David Hume", "pid": null, "object": "unmarried"}
-{"page": "David Hume", "statement": "David Hume lived partly at his Chirnside family home in Berwickshire.", "subject": "David Hume", "pid": "P551", "object": "Chirnside"}
+{"page": "David Hume", "statement": "David Hume lived at his Chirnside family home in Berwickshire.", "subject": "David Hume", "pid": "P551", "object": "Chirnside"}
+{"page": "David Hume", "statement": "Immanuel Kant credited David Hume as inspiration that awakened him from his dogmatic slumbers.", "subject": "Immanuel Kant", "pid": null, "object": "David Hume"}
+{"page": "Definitions of knowledge", "statement": "Definitions of knowledge aim to identify the essential features of knowledge.", "subject": null, "pid": null, "object": "knowledge definition"}
+{"page": "Definitions of knowledge", "statement": "Knowledge involves cognitive success and epistemic contact with reality.", "subject": null, "pid": null, "object": "cognitive success"}
+{"page": "Definitions of knowledge", "statement": "Edmund Gettier proposed counterexamples to the justified-true-belief view of knowledge.", "subject": "Edmund Gettier", "pid": null, "object": "Gettier problem"}
+{"page": "Definitions of knowledge", "statement": "The justified-true-belief definition asserts that knowledge is justified true belief.", "subject": null, "pid": null, "object": "justified true belief"}
+{"page": "Definitions of knowledge", "statement": "Propositional knowledge is theoretical knowledge of a fact expressed through a declarative that-clause.", "subject": null, "pid": null, "object": "propositional knowledge"}
+{"page": "Definitions of knowledge", "statement": "Practical knowledge concerns the ability to do something, like knowing how to swim.", "subject": null, "pid": null, "object": "practical knowledge"}
+{"page": "Definitions of knowledge", "statement": "Knowledge by acquaintance is a familiarity with something based on experiential contact.", "subject": null, "pid": null, "object": "knowledge by acquaintance"}
+{"page": "Definitions of knowledge", "statement": "Disagreements about the nature of knowledge persist because researchers use diverging methodologies.", "subject": null, "pid": null, "object": "knowledge"}
+{"page": "Definitions of knowledge", "statement": "Researchers seek definitions for distinct purposes regarding the nature of knowledge.", "subject": null, "pid": null, "object": "knowledge"}
+{"page": "Differential equation", "statement": "A differential equation is an equation that relates one or more unknown functions and their derivatives.", "subject": null, "pid": null, "object": "differential equation"}
+{"page": "Differential equation", "statement": "Differential equations play a prominent role in engineering, physics, economics, and biology.", "subject": null, "pid": null, "object": "differential equation"}
+{"page": "Differential equation", "statement": "Isaac Newton invented calculus and developed differential equations.", "subject": "Isaac Newton", "pid": null, "object": "calculus"}
+{"page": "Differential equation", "statement": "Gottfried Leibniz contributed to the invention of calculus.", "subject": "Gottfried Leibniz", "pid": null, "object": "calculus"}
+{"page": "Differential equation", "statement": "Newton listed three kinds of differential equations in Chapter 2 of his 1671 work Methodus fluxionum et Serierum Infinitarum.", "subject": "Isaac Newton", "pid": null, "object": "1671"}
+{"page": "Differential equation", "statement": "Differential equations came into existence with the invention of calculus by Isaac Newton and Gottfried Leibniz.", "subject": null, "pid": null, "object": "calculus"}
+{"page": "Differential equation", "statement": "The study of differential equations consists mainly of the study of their solutions and properties of those solutions.", "subject": null, "pid": null, "object": "differential equation"}
+{"page": "Differential equation", "statement": "Only the simplest differential equations are solvable by explicit formulas.", "subject": null, "pid": null, "object": "differential equation"}
 {"page": "Dover Publications", "statement": "Dover Publications was founded in 1941 by Hayward and Blanche Cirker.", "subject": "Dover Publications", "pid": "P571", "object": "1941"}
-{"page": "Dover Publications", "statement": "Dover Publications was founded by Hayward and Blanche Cirker.", "subject": "Dover Publications", "pid": "P112", "object": "Hayward Cirker"}
 {"page": "Dover Publications", "statement": "Dover Publications is an American book publisher.", "subject": "Dover Publications", "pid": "P495", "object": "United States"}
 {"page": "Dover Publications", "statement": "Dover Publications primarily reissues books that are out of print from their original publishers.", "subject": "Dover Publications", "pid": "P452", "object": "book publishing"}
+{"page": "Dover Publications", "statement": "The Cirkers named Dover Publications after 'The Dover', their apartment building in Forest Hills South, Queens, New York.", "subject": "Dover Publications", "pid": "P138", "object": "The Dover"}
 {"page": "Dover Publications", "statement": "Dover Publications was acquired by Courier Corporation in 2000.", "subject": "Dover Publications", "pid": "P127", "object": "Courier Corporation"}
-{"page": "Dover Publications", "statement": "The Cirkers named their company after 'The Dover', their apartment building in Forest Hills South, Queens, New York.", "subject": "Dover Publications", "pid": "P138", "object": "The Dover"}
-{"page": "Dover Publications", "statement": "One of Dover Publications' best sellers was Albert Einstein's The Principle of Relativity.", "subject": "Dover Publications", "pid": "P800", "object": "The Principle of Relativity"}
 {"page": "Dover Publications", "statement": "Hayward Cirker died in 2000 at the age of 82.", "subject": "Hayward Cirker", "pid": "P570", "object": "2000"}
+{"page": "Dover Publications", "statement": "Courier was acquired by RR Donnelley in 2015.", "subject": "Courier Corporation", "pid": "P127", "object": "RR Donnelley"}
+{"page": "Dover Publications", "statement": "Albert Einstein's The Principle of Relativity was one of Dover Publications' best sellers.", "subject": null, "pid": "P800", "object": "The Principle of Relativity"}
+{"page": "Economics", "statement": "Economics is a social science that studies the production, distribution, and consumption of goods and services.", "subject": null, "pid": null, "object": "economics"}
+{"page": "Economics", "statement": "Microeconomics analyses what is viewed as the basic elements of economies.", "subject": null, "pid": null, "object": "microeconomics"}
+{"page": "Economics", "statement": "Macroeconomics analyses economies as systems where production, distribution, and consumption interact.", "subject": null, "pid": null, "object": "macroeconomics"}
+{"page": "Economics", "statement": "Adam Smith defined political economy in 1776 as an inquiry into the nature and causes of the wealth of nations.", "subject": "Adam Smith", "pid": null, "object": "1776"}
+{"page": "Economics", "statement": "Thomas Carlyle coined the term 'the dismal science' as an epithet for classical economics in 1849.", "subject": "Thomas Carlyle", "pid": null, "object": "1849"}
+{"page": "Economics", "statement": "Jean-Baptiste Say distinguished economics as the science of production, distribution, and consumption of wealth in 1803.", "subject": "Jean-Baptiste Say", "pid": null, "object": "1803"}
+{"page": "Economics", "statement": "John Stuart Mill delimited the subject matter of economics further in 1844.", "subject": "John Stuart Mill", "pid": null, "object": "1844"}
+{"page": "Economics", "statement": "Alfred Marshall provided a widely cited definition of economics in his 1890 textbook Principles of Economics.", "subject": "Alfred Marshall", "pid": null, "object": "1890"}
+{"page": "Economics", "statement": "Lionel Robbins developed the definition of economics in 1932 as the science which studies human behaviour.", "subject": "Lionel Robbins", "pid": null, "object": "1932"}
 {"page": "Edmund Gettier", "statement": "Edmund Gettier was born on October 31, 1927.", "subject": "Edmund Gettier", "pid": "P569", "object": "October 31, 1927"}
 {"page": "Edmund Gettier", "statement": "Edmund Gettier died on March 23, 2021.", "subject": "Edmund Gettier", "pid": "P570", "object": "March 23, 2021"}
 {"page": "Edmund Gettier", "statement": "Edmund Gettier was born in Baltimore, Maryland.", "subject": "Edmund Gettier", "pid": "P19", "object": "Baltimore"}
 {"page": "Edmund Gettier", "statement": "Edmund Gettier was an American philosopher.", "subject": "Edmund Gettier", "pid": "P27", "object": "United States"}
-{"page": "Edmund Gettier", "statement": "Edmund Gettier was a philosopher.", "subject": "Edmund Gettier", "pid": "P106", "object": "philosopher"}
 {"page": "Edmund Gettier", "statement": "Edmund Gettier obtained his B.A. from Johns Hopkins University in 1949.", "subject": "Edmund Gettier", "pid": "P69", "object": "Johns Hopkins University"}
-{"page": "Edmund Gettier", "statement": "Edmund Gettier was recruited to the faculty of philosophy at the University of Massachusetts Amherst in 1967.", "subject": "Edmund Gettier", "pid": "P937", "object": "University of Massachusetts Amherst"}
-{"page": "Edmund Gettier", "statement": "Edmund Gettier published 'Is Justified True Belief Knowledge?' in 1963.", "subject": "Edmund Gettier", "pid": "P800", "object": "Is Justified True Belief Knowledge?"}
+{"page": "Edmund Gettier", "statement": "Edmund Gettier earned his PhD in philosophy from Cornell University in 1961.", "subject": "Edmund Gettier", "pid": "P69", "object": "Cornell University"}
+{"page": "Edmund Gettier", "statement": "Edmund Gettier was recruited to the University of Massachusetts Amherst in 1967.", "subject": "Edmund Gettier", "pid": "P937", "object": "University of Massachusetts Amherst"}
+{"page": "Edmund Gettier", "statement": "Edmund Gettier published 'Is Justified True Belief Knowledge?' in 1963 in Analysis.", "subject": "Edmund Gettier", "pid": "P800", "object": "Is Justified True Belief Knowledge?"}
+{"page": "Edmund Gettier", "statement": "Edmund Gettier was promoted to full professor at the University of Massachusetts Amherst in 1972.", "subject": "Edmund Gettier", "pid": "P937", "object": "University of Massachusetts Amherst"}
+{"page": "Edmund Gettier", "statement": "Edmund Gettier's article offered counterexamples to the justified-true-belief account of knowledge.", "subject": "Edmund Gettier", "pid": "P800", "object": "Gettier counterexamples"}
 {"page": "Emmy Noether", "statement": "Emmy Noether was born on 23 March 1882.", "subject": "Emmy Noether", "pid": "P569", "object": "23 March 1882"}
 {"page": "Emmy Noether", "statement": "Emmy Noether died on 14 April 1935.", "subject": "Emmy Noether", "pid": "P570", "object": "14 April 1935"}
 {"page": "Emmy Noether", "statement": "Emmy Noether was a German mathematician.", "subject": "Emmy Noether", "pid": "P27", "object": "Germany"}
 {"page": "Emmy Noether", "statement": "Emmy Noether was born in the Franconian town of Erlangen.", "subject": "Emmy Noether", "pid": "P19", "object": "Erlangen"}
 {"page": "Emmy Noether", "statement": "Emmy Noether's father was the mathematician Max Noether.", "subject": "Emmy Noether", "pid": null, "object": "Max Noether"}
 {"page": "Emmy Noether", "statement": "Emmy Noether studied mathematics at the University of Erlangen\u2013Nuremberg.", "subject": "Emmy Noether", "pid": "P69", "object": "University of Erlangen\u2013Nuremberg"}
-{"page": "Emmy Noether", "statement": "Emmy Noether completed her doctorate in 1907 under the supervision of Paul Gordan.", "subject": "Emmy Noether", "pid": null, "object": "1907"}
-{"page": "Emmy Noether", "statement": "Emmy Noether joined the mathematics department at the University of G\u00f6ttingen in 1915.", "subject": "Emmy Noether", "pid": "P937", "object": "University of G\u00f6ttingen"}
+{"page": "Emmy Noether", "statement": "Emmy Noether completed her doctorate in 1907 under Paul Gordan's supervision.", "subject": "Emmy Noether", "pid": null, "object": "1907"}
+{"page": "Emmy Noether", "statement": "Emmy Noether joined the mathematics department at the University of G\u00f6ttingen in 1915 through David Hilbert and Felix Klein's invitation.", "subject": "Emmy Noether", "pid": "P937", "object": "University of G\u00f6ttingen"}
+{"page": "Emmy Noether", "statement": "Emmy Noether's habilitation was approved in 1919.", "subject": "Emmy Noether", "pid": null, "object": "1919"}
 {"page": "Emmy Noether", "statement": "Emmy Noether moved to the United States and took a position at Bryn Mawr College in Pennsylvania in 1933.", "subject": "Emmy Noether", "pid": "P937", "object": "Bryn Mawr College"}
-{"page": "Emmy Noether", "statement": "Emmy Noether was a mathematician.", "subject": "Emmy Noether", "pid": "P106", "object": "mathematician"}
+{"page": "Emmy Noether", "statement": "Noether's theorem explains the connection between symmetry and conservation laws in physics.", "subject": null, "pid": "P800", "object": "Noether's theorem"}
+{"page": "Emmy Noether", "statement": "Emmy Noether proved fundamental theorems in mathematical physics and abstract algebra.", "subject": "Emmy Noether", "pid": "P106", "object": "mathematician"}
+{"page": "Empiricism", "statement": "Empiricism is an epistemological view which holds that true knowledge comes from sensory experience and empirical evidence.", "subject": null, "pid": null, "object": "empiricism"}
+{"page": "Empiricism", "statement": "Empiricists argue that empiricism is a more reliable method of finding truth than relying purely on logical reasoning.", "subject": null, "pid": null, "object": "empiricism"}
+{"page": "Empiricism", "statement": "Empiricism emphasizes the central role of empirical evidence in the formation of ideas.", "subject": null, "pid": null, "object": "empiricism"}
+{"page": "Empiricism", "statement": "The concept of tabula rasa associates empiricism with the view that the human mind is blank at birth.", "subject": null, "pid": null, "object": "tabula rasa"}
+{"page": "Empiricism", "statement": "John Locke was an empiricist who admitted some knowledge could be arrived at through intuition and reasoning alone.", "subject": "John Locke", "pid": "P106", "object": "philosopher"}
+{"page": "Empiricism", "statement": "Between 600 and 200 BCE, the Vaisheshika school of Hindu philosophy accepted perception and inference as the only two reliable sources of knowledge.", "subject": null, "pid": null, "object": "Vaisheshika"}
+{"page": "Empiricism", "statement": "Robert Boyle was a prominent advocate of the experimental method.", "subject": "Robert Boyle", "pid": "P106", "object": "scientist"}
+{"page": "Empiricism", "statement": "The main continental rationalists (Descartes, Spinoza, and Leibniz) were also advocates of the empirical scientific method.", "subject": "Ren\u00e9 Descartes", "pid": "P106", "object": "philosopher"}
 {"page": "Encyclop\u00e6dia Britannica", "statement": "The Encyclop\u00e6dia Britannica has been published since 1768.", "subject": "Encyclop\u00e6dia Britannica", "pid": "P571", "object": "1768"}
-{"page": "Encyclop\u00e6dia Britannica", "statement": "The Encyclop\u00e6dia Britannica was first published in Edinburgh, Scotland.", "subject": "Encyclop\u00e6dia Britannica", "pid": "P495", "object": "Scotland"}
+{"page": "Encyclop\u00e6dia Britannica", "statement": "The Encyclop\u00e6dia Britannica was first published between 1768 and 1771 in Edinburgh, Scotland.", "subject": "Encyclop\u00e6dia Britannica", "pid": "P495", "object": "Scotland"}
 {"page": "Encyclop\u00e6dia Britannica", "statement": "The Encyclop\u00e6dia Britannica is a general-knowledge English-language encyclopaedia.", "subject": "Encyclop\u00e6dia Britannica", "pid": "P407", "object": "English"}
+{"page": "Encyclop\u00e6dia Britannica", "statement": "The 15th edition of Encyclop\u00e6dia Britannica spans 32 volumes and 32,640 pages.", "subject": "Encyclop\u00e6dia Britannica", "pid": null, "object": "32 volumes"}
+{"page": "Encyclop\u00e6dia Britannica", "statement": "The 2010 version of the 15th edition was the last printed edition of Encyclop\u00e6dia Britannica.", "subject": "Encyclop\u00e6dia Britannica", "pid": null, "object": "2010"}
+{"page": "Encyclop\u00e6dia Britannica", "statement": "Since 2016, Encyclop\u00e6dia Britannica has been published exclusively as an online encyclopaedia.", "subject": "Encyclop\u00e6dia Britannica", "pid": null, "object": "2016"}
+{"page": "Encyclop\u00e6dia Britannica", "statement": "The Britannica was printed for 245 years, the longest-running in-print encyclopaedia in the English language.", "subject": "Encyclop\u00e6dia Britannica", "pid": null, "object": "245 years"}
+{"page": "Encyclop\u00e6dia Britannica", "statement": "The Britannica has been published in the United States since 1901.", "subject": "Encyclop\u00e6dia Britannica", "pid": "P495", "object": "United States"}
+{"page": "Epistemic virtue", "statement": "Epistemic virtues are characteristic habits that promote the acquisition and utilization of true knowledge.", "subject": null, "pid": null, "object": "epistemic virtues"}
+{"page": "Epistemic virtue", "statement": "Epistemic virtues are sometimes also called intellectual virtues.", "subject": null, "pid": null, "object": "epistemic virtues"}
+{"page": "Epistemic virtue", "statement": "Being an epistemically virtuous person is often equated with being a critical thinker.", "subject": null, "pid": null, "object": "epistemic virtue"}
+{"page": "Epistemic virtue", "statement": "W. Jay Wood identified epistemic virtues based on research into the medieval tradition.", "subject": "W. Jay Wood", "pid": null, "object": "epistemic virtues"}
+{"page": "Epistemic virtue", "statement": "Epistemic virtues include conscientiousness and other character habits.", "subject": null, "pid": null, "object": "epistemic virtues"}
+{"page": "Epistemic virtue", "statement": "Epistemic vices can be contrasted to epistemic virtues such as curiosity and inquisitiveness.", "subject": null, "pid": null, "object": "epistemic vices"}
+{"page": "Epistemic virtue", "statement": "The epistemic virtues are identified by virtue epistemologists.", "subject": null, "pid": null, "object": "virtue epistemology"}
+{"page": "Epistemic virtue", "statement": "Belief is an ethical process susceptible to intellectual virtue or vice.", "subject": null, "pid": null, "object": "belief"}
+{"page": "Epistemology", "statement": "Epistemology is the branch of philosophy that examines the nature, origin, and limits of knowledge.", "subject": null, "pid": null, "object": "epistemology"}
+{"page": "Epistemology", "statement": "Epistemology explores different types of knowledge, such as propositional knowledge, practical knowledge, and knowledge by acquaintance.", "subject": null, "pid": null, "object": "epistemology"}
+{"page": "Epistemology", "statement": "Empiricists hold that all knowledge comes from sense experience.", "subject": null, "pid": null, "object": "empiricism"}
+{"page": "Epistemology", "statement": "Rationalists believe that some knowledge does not depend on sense experience.", "subject": null, "pid": null, "object": "rationalism"}
+{"page": "Epistemology", "statement": "Coherentists argue that a belief is justified if it is consistent with other beliefs.", "subject": null, "pid": null, "object": "coherentism"}
+{"page": "Epistemology", "statement": "Foundationalists maintain that the justification of basic beliefs does not depend on other beliefs.", "subject": null, "pid": null, "object": "foundationalism"}
+{"page": "Epistemology", "statement": "The school of skepticism questions the human ability to attain knowledge.", "subject": null, "pid": null, "object": "skepticism"}
+{"page": "Epistemology", "statement": "Fallibilism says that knowledge is never certain.", "subject": null, "pid": null, "object": "fallibilism"}
 {"page": "Euclid", "statement": "Euclid was an ancient Greek mathematician who flourished around 300 BC.", "subject": "Euclid", "pid": "P27", "object": "Greece"}
-{"page": "Euclid", "statement": "Euclid was a geometer and logician.", "subject": "Euclid", "pid": "P106", "object": "mathematician"}
-{"page": "Euclid", "statement": "Euclid spent his career in Alexandria.", "subject": "Euclid", "pid": "P937", "object": "Alexandria"}
+{"page": "Euclid", "statement": "Euclid is considered the 'father of geometry'.", "subject": "Euclid", "pid": "P106", "object": "mathematician"}
 {"page": "Euclid", "statement": "Euclid is chiefly known for the Elements treatise.", "subject": "Euclid", "pid": "P800", "object": "Elements"}
+{"page": "Euclid", "statement": "Euclid spent his career in Alexandria.", "subject": "Euclid", "pid": "P937", "object": "Alexandria"}
 {"page": "Euclid", "statement": "Euclid is accepted as the author of the Elements, Optics, Data, and Phaenomena.", "subject": "Euclid", "pid": "P50", "object": "Elements"}
-{"page": "Euclid's Elements", "statement": "The Elements was written by the ancient Greek mathematician Euclid around 300 BC.", "subject": "Elements", "pid": "P50", "object": "Euclid"}
+{"page": "Euclid", "statement": "Euclid is generally considered among the greatest mathematicians of antiquity.", "subject": "Euclid", "pid": "P106", "object": "mathematician"}
+{"page": "Euclid", "statement": "Proclus placed Euclid during the rule of Ptolemy I (r. 305/304\u2013282 BC).", "subject": "Euclid", "pid": null, "object": "Ptolemy I"}
+{"page": "Euclid", "statement": "Euclid's system, now referred to as Euclidean geometry, involved innovations in combination with synthesis of theories from earlier Greek mathematicians.", "subject": "Euclid", "pid": "P800", "object": "Euclidean geometry"}
+{"page": "Euclid", "statement": "With Archimedes and Apollonius of Perga, Euclid is generally considered among the most influential in the history of mathematics.", "subject": "Euclid", "pid": "P106", "object": "mathematician"}
+{"page": "Euclid's Elements", "statement": "The Elements is a mathematical treatise written around 300 BC by the ancient Greek mathematician Euclid.", "subject": "Elements", "pid": "P50", "object": "Euclid"}
 {"page": "Euclid's Elements", "statement": "The Elements was written around 300 BC.", "subject": "Elements", "pid": "P571", "object": "300 BC"}
-{"page": "Euclid's Elements", "statement": "The Elements was written in Ancient Greek.", "subject": "Elements", "pid": "P407", "object": "Ancient Greek"}
+{"page": "Euclid's Elements", "statement": "The Elements is the oldest extant large-scale deductive treatment of mathematics.", "subject": "Elements", "pid": null, "object": "deductive mathematics"}
+{"page": "Euclid's Elements", "statement": "The Elements covers plane and solid Euclidean geometry, elementary number theory, and incommensurability.", "subject": "Elements", "pid": null, "object": "geometry"}
+{"page": "Euclid's Elements", "statement": "The Elements is often referred to as the most successful textbook ever written.", "subject": "Elements", "pid": null, "object": "textbook"}
+{"page": "Euclid's Elements", "statement": "The Elements was translated into Arabic and Latin in the medieval period.", "subject": "Elements", "pid": "P407", "object": "Arabic"}
+{"page": "Euclid's Elements", "statement": "The Elements is a collection in 13 books of definitions, postulates, geometric constructions, and theorems with their proofs.", "subject": "Elements", "pid": null, "object": "13 books"}
+{"page": "Euclid's Elements", "statement": "Euclid drew on the works of earlier mathematicians such as Hippocrates of Chios, Eudoxus of Cnidus, and Theaetetus in writing the Elements.", "subject": "Euclid", "pid": "P50", "object": "Elements"}
 {"page": "Euclidean geometry", "statement": "Euclidean geometry is a mathematical system attributed to Euclid.", "subject": "Euclidean geometry", "pid": "P170", "object": "Euclid"}
+{"page": "Euclidean geometry", "statement": "Euclidean geometry is described in Euclid's textbook Elements.", "subject": "Euclidean geometry", "pid": null, "object": "Elements"}
+{"page": "Euclidean geometry", "statement": "Euclid's approach in Euclidean geometry consists in assuming a small set of intuitively appealing axioms and deducing many other propositions.", "subject": null, "pid": null, "object": "axioms"}
+{"page": "Euclidean geometry", "statement": "The parallel postulate in Euclidean geometry relates to parallel lines on a Euclidean plane.", "subject": null, "pid": null, "object": "parallel postulate"}
+{"page": "Euclidean geometry", "statement": "Euclidean geometry was the first to organize propositions into a logical system where each result is proved from axioms and theorems.", "subject": "Euclid", "pid": "P800", "object": "Elements"}
+{"page": "Euclidean geometry", "statement": "Albert Einstein's theory of general relativity implies that physical space itself is not Euclidean.", "subject": "Albert Einstein", "pid": null, "object": "general relativity"}
+{"page": "Euclidean geometry", "statement": "Non-Euclidean geometries include hyperbolic and elliptic geometry.", "subject": null, "pid": null, "object": "non-Euclidean geometry"}
+{"page": "Euclidean geometry", "statement": "The Elements begins with plane geometry, still taught in secondary school as the first axiomatic system.", "subject": "Elements", "pid": null, "object": "secondary school"}
+{"page": "Euclidean space", "statement": "Euclidean space is the fundamental space of geometry, intended to represent physical space.", "subject": null, "pid": null, "object": "Euclidean space"}
+{"page": "Euclidean space", "statement": "In Euclid's Elements, Euclidean space was the three-dimensional space of Euclidean geometry.", "subject": "Euclid", "pid": null, "object": "Elements"}
+{"page": "Euclidean space", "statement": "In modern mathematics, there are Euclidean spaces of any positive integer dimension n.", "subject": null, "pid": null, "object": "Euclidean space"}
+{"page": "Euclidean space", "statement": "Ancient Greek geometers introduced Euclidean space for modeling the physical space.", "subject": null, "pid": null, "object": "Euclidean space"}
+{"page": "Euclidean space", "statement": "The old postulates were re-formalized at the end of the 19th century to define Euclidean spaces through axiomatic theory.", "subject": null, "pid": null, "object": "19th century"}
+{"page": "Euclidean space", "statement": "Ren\u00e9 Descartes introduced Cartesian coordinates in 1637 and showed how to represent Euclidean space.", "subject": "Ren\u00e9 Descartes", "pid": null, "object": "1637"}
+{"page": "Euclidean space", "statement": "Euclidean n-spaces are called Euclidean lines and Euclidean planes when n equals one or two respectively.", "subject": null, "pid": null, "object": "Euclidean space"}
+{"page": "Euclidean space", "statement": "Euclidean spaces are the most common spaces used in geometry and physics.", "subject": null, "pid": null, "object": "Euclidean space"}
+{"page": "Euclidean space", "statement": "There is essentially only one Euclidean space of each dimension; all Euclidean spaces of a given dimension are isomorphic.", "subject": null, "pid": null, "object": "Euclidean space"}
+{"page": "Euclidean space", "statement": "A Euclidean space can be represented using Cartesian coordinates as real n-space equipped with the standard dot product.", "subject": null, "pid": null, "object": "Euclidean space"}
+{"page": "Evidence", "statement": "Evidence for a proposition is what supports the proposition.", "subject": null, "pid": null, "object": "evidence"}
+{"page": "Evidence", "statement": "Evidence is usually understood as an indication that the proposition is true.", "subject": null, "pid": null, "object": "evidence"}
+{"page": "Evidence", "statement": "The exact definition and role of evidence vary across different fields.", "subject": null, "pid": null, "object": "evidence"}
+{"page": "Evidence", "statement": "In epistemology, evidence is what justifies beliefs or what makes it rational to hold a certain doxastic attitude.", "subject": null, "pid": null, "object": "epistemology"}
+{"page": "Evidence", "statement": "A perceptual experience of a tree may serve as evidence to justify the belief that there is a tree.", "subject": null, "pid": null, "object": "evidence"}
+{"page": "Evidence", "statement": "Evidence is usually understood as a private mental state in epistemology.", "subject": null, "pid": null, "object": "epistemology"}
+{"page": "Evidence", "statement": "Evidence plays a crucial role in determining the truth or falsity of claims across multiple disciplines.", "subject": null, "pid": null, "object": "evidence"}
+{"page": "Evidence", "statement": "The concept of evidence is fundamental to the scientific method and empirical reasoning.", "subject": null, "pid": null, "object": "evidence"}
+{"page": "Evidence", "statement": "Evidence must be properly evaluated and interpreted to support justified belief formation.", "subject": null, "pid": null, "object": "evidence"}
+{"page": "Fallibilism", "statement": "Fallibilism is the philosophical principle that propositions can be accepted even though they cannot be conclusively proven or justified.", "subject": null, "pid": null, "object": "fallibilism"}
+{"page": "Fallibilism", "statement": "Fallibilism holds that neither knowledge nor belief is certain.", "subject": null, "pid": null, "object": "fallibilism"}
+{"page": "Fallibilism", "statement": "The term fallibilism was coined in the late nineteenth century by American philosopher Charles Sanders Peirce.", "subject": "Charles Sanders Peirce", "pid": null, "object": "fallibilism"}
+{"page": "Fallibilism", "statement": "Fallibilism was a response to foundationalism.", "subject": null, "pid": null, "object": "fallibilism"}
+{"page": "Fallibilism", "statement": "Theorists following Austrian-British philosopher Karl Popper may refer to fallibilism as the notion that knowledge is provisional.", "subject": "Karl Popper", "pid": "P106", "object": "philosopher"}
+{"page": "Fallibilism", "statement": "Fallibilism is a response to the foundationalist requirement of certainty.", "subject": null, "pid": null, "object": "fallibilism"}
+{"page": "Fallibilism", "statement": "Fallibilism acknowledges that human knowledge is subject to revision and error.", "subject": null, "pid": null, "object": "fallibilism"}
+{"page": "Fallibilism", "statement": "Fallibilism stands in contrast to the demand for absolute certainty in philosophical epistemology.", "subject": null, "pid": null, "object": "fallibilism"}
+{"page": "Fallibilism", "statement": "Charles Sanders Peirce developed fallibilism as part of his pragmatist philosophy.", "subject": "Charles Sanders Peirce", "pid": "P106", "object": "philosopher"}
+{"page": "Falsifiability", "statement": "Falsifiability is a standard of evaluation of scientific statements, including theories and hypotheses.", "subject": null, "pid": null, "object": "falsifiability"}
+{"page": "Falsifiability", "statement": "A statement is falsifiable if it belongs to a language capable of describing an empirical observation that contradicts it.", "subject": null, "pid": null, "object": "falsifiability"}
+{"page": "Falsifiability", "statement": "Falsifiability requires that a theory must theoretically exclude some observations.", "subject": null, "pid": null, "object": "falsifiability"}
+{"page": "Falsifiability", "statement": "Falsifiability requires a theory to make formal predictions given an initial condition.", "subject": null, "pid": null, "object": "falsifiability"}
+{"page": "Falsifiability", "statement": "Falsifiability was introduced by the philosopher of science Karl Popper.", "subject": "Karl Popper", "pid": "P106", "object": "philosopher"}
+{"page": "Falsifiability", "statement": "The falsifiability criterion helps distinguish science from non-science.", "subject": null, "pid": null, "object": "falsifiability"}
+{"page": "Falsifiability", "statement": "A theory that cannot be falsified is considered unfalsifiable and lacks scientific status.", "subject": null, "pid": null, "object": "falsifiability"}
+{"page": "Falsifiability", "statement": "Falsifiability is essential to the scientific method and empirical verification.", "subject": null, "pid": null, "object": "falsifiability"}
+{"page": "Falsifiability", "statement": "Karl Popper's falsifiability principle is central to philosophy of science.", "subject": "Karl Popper", "pid": null, "object": "falsifiability"}
+{"page": "Fermat's Last Theorem", "statement": "Fermat's Last Theorem states that there are no positive integers with n greater than 2 such that a^n + b^n = c^n.", "subject": null, "pid": null, "object": "Fermat's Last Theorem"}
+{"page": "Fermat's Last Theorem", "statement": "Fermat's Last Theorem is sometimes called Fermat's conjecture, especially in older texts.", "subject": null, "pid": null, "object": "Fermat's Last Theorem"}
+{"page": "Fermat's Last Theorem", "statement": "Pierre de Fermat conjectured Fermat's Last Theorem in number theory.", "subject": "Pierre de Fermat", "pid": null, "object": "Fermat's Last Theorem"}
+{"page": "Fermat's Last Theorem", "statement": "Andrew Wiles proved Fermat's Last Theorem in 1995.", "subject": "Andrew Wiles", "pid": null, "object": "1995"}
+{"page": "Fermat's Last Theorem", "statement": "Fermat's Last Theorem was one of the most famous unsolved problems in mathematics for centuries.", "subject": null, "pid": null, "object": "Fermat's Last Theorem"}
+{"page": "Fermat's Last Theorem", "statement": "The proof of Fermat's Last Theorem required deep results from modern algebraic number theory.", "subject": null, "pid": null, "object": "algebraic number theory"}
+{"page": "Fermat's Last Theorem", "statement": "Fermat's Last Theorem is a statement in number theory about the impossibility of certain equations.", "subject": null, "pid": null, "object": "number theory"}
+{"page": "Fermat's Last Theorem", "statement": "The conjecture of Fermat's Last Theorem eluded proof until the late 20th century.", "subject": null, "pid": null, "object": "Fermat's Last Theorem"}
+{"page": "Fields Medal", "statement": "The Fields Medal is a prize awarded to two, three, or four mathematicians under 40 years of age.", "subject": null, "pid": null, "object": "Fields Medal"}
+{"page": "Fields Medal", "statement": "The Fields Medal is awarded at the International Congress of the International Mathematical Union (IMU).", "subject": null, "pid": null, "object": "Fields Medal"}
+{"page": "Fields Medal", "statement": "The Fields Medal is awarded every four years at the IMU convention.", "subject": null, "pid": null, "object": "Fields Medal"}
+{"page": "Fields Medal", "statement": "The Fields Medal honors the Canadian mathematician John Charles Fields.", "subject": "John Charles Fields", "pid": "P27", "object": "Canada"}
+{"page": "Fields Medal", "statement": "The purpose of the Fields Medal is to give recognition and support to younger mathematical researchers.", "subject": null, "pid": null, "object": "Fields Medal"}
+{"page": "Fields Medal", "statement": "The Fields Medal is regarded as one of the highest honors in mathematics.", "subject": null, "pid": null, "object": "Fields Medal"}
+{"page": "Fields Medal", "statement": "The Fields Medal recognizes mathematicians who have made major contributions to the field of mathematics.", "subject": null, "pid": null, "object": "Fields Medal"}
+{"page": "Fields Medal", "statement": "Recipients of the Fields Medal must be under 40 years of age at the time of the award.", "subject": null, "pid": null, "object": "Fields Medal"}
+{"page": "Fields Medal", "statement": "The International Mathematical Union awards the Fields Medal every four years.", "subject": null, "pid": null, "object": "Fields Medal"}
+{"page": "Fields Medal", "statement": "The Fields Medal is named after John Charles Fields, a Canadian mathematician.", "subject": "John Charles Fields", "pid": "P138", "object": "Fields Medal"}
+{"page": "Foundationalism", "statement": "Foundationalism is a philosophical theory of knowledge resting upon non-inferential justified belief.", "subject": null, "pid": null, "object": "foundationalism"}
+{"page": "Foundationalism", "statement": "Foundationalism seeks a secure foundation of certainty such as a conclusion inferred from a basis of sound premises.", "subject": null, "pid": null, "object": "foundationalism"}
+{"page": "Foundationalism", "statement": "The main rival of foundationalism is the coherence theory of justification.", "subject": null, "pid": null, "object": "coherentism"}
+{"page": "Foundationalism", "statement": "In the coherence theory of justification, a body of knowledge can be established by the interlocking strength of its components.", "subject": null, "pid": null, "object": "coherentism"}
+{"page": "Foundationalism", "statement": "Foundationalism requires a secure foundation for knowledge justification.", "subject": null, "pid": null, "object": "foundationalism"}
+{"page": "Foundationalism", "statement": "Foundationalism is a response to the regress problem in epistemology.", "subject": null, "pid": null, "object": "foundationalism"}
+{"page": "Foundationalism", "statement": "Basic beliefs in foundationalism are self-justifying and do not require support from other beliefs.", "subject": null, "pid": null, "object": "foundationalism"}
+{"page": "Foundationalism", "statement": "Non-basic beliefs in foundationalism require justification from basic beliefs.", "subject": null, "pid": null, "object": "foundationalism"}
+{"page": "Foundationalism", "statement": "Foundationalism maintains that knowledge has a pyramidal structure with basic beliefs at the foundation.", "subject": null, "pid": null, "object": "foundationalism"}
+{"page": "Fourier transform", "statement": "The Fourier transform is an integral transform that takes a function as input and outputs another function.", "subject": null, "pid": null, "object": "Fourier transform"}
+{"page": "Fourier transform", "statement": "The Fourier transform describes the extent to which various frequencies are present in the original function.", "subject": null, "pid": null, "object": "Fourier transform"}
+{"page": "Fourier transform", "statement": "The output of the Fourier transform is a complex valued function of frequency.", "subject": null, "pid": null, "object": "Fourier transform"}
+{"page": "Fourier transform", "statement": "The term Fourier transform refers to both the mathematical operation and the complex-valued function.", "subject": null, "pid": null, "object": "Fourier transform"}
+{"page": "Fourier transform", "statement": "The output of the Fourier transform operation is sometimes called the frequency domain representation.", "subject": null, "pid": null, "object": "frequency domain"}
+{"page": "Fourier transform", "statement": "The Fourier transform is fundamental in signal processing and analysis.", "subject": null, "pid": null, "object": "Fourier transform"}
+{"page": "Fourier transform", "statement": "The Fourier transform converts a function in the time domain to a function in the frequency domain.", "subject": null, "pid": null, "object": "Fourier transform"}
+{"page": "Fourier transform", "statement": "The inverse Fourier transform converts a function from the frequency domain back to the time domain.", "subject": null, "pid": null, "object": "Fourier transform"}
+{"page": "Fourier transform", "statement": "The Fourier transform has applications in physics, engineering, and mathematics.", "subject": null, "pid": null, "object": "Fourier transform"}
+{"page": "Fractal", "statement": "A fractal is a geometric shape containing detailed structure at arbitrarily small scales.", "subject": null, "pid": null, "object": "fractal"}
+{"page": "Fractal", "statement": "A fractal usually has a fractal dimension strictly exceeding the topological dimension.", "subject": null, "pid": null, "object": "fractal"}
+{"page": "Fractal", "statement": "Many fractals appear similar at various scales, as illustrated in successive magnifications of the Mandelbrot set.", "subject": null, "pid": null, "object": "Mandelbrot set"}
+{"page": "Fractal", "statement": "Fractals exhibit similar patterns at increasingly smaller scales, called self-similarity.", "subject": null, "pid": null, "object": "self-similarity"}
+{"page": "Fractal", "statement": "Self-similarity in fractals is also known as expanding symmetry or unfolding symmetry.", "subject": null, "pid": null, "object": "self-similarity"}
+{"page": "Fractal", "statement": "Fractals occur in nature in patterns like coastlines, clouds, and mountain ranges.", "subject": null, "pid": null, "object": "fractal"}
+{"page": "Fractal", "statement": "Fractals are used in mathematics, physics, computer graphics, and other scientific fields.", "subject": null, "pid": null, "object": "fractal"}
+{"page": "Fractal", "statement": "The Mandelbrot set is one of the most famous and visually striking fractals in mathematics.", "subject": null, "pid": null, "object": "Mandelbrot set"}
+{"page": "Fractal", "statement": "Fractals can be generated recursively through iterative mathematical processes.", "subject": null, "pid": null, "object": "fractal"}
+{"page": "French Academy of Sciences", "statement": "The French Academy of Sciences was founded in 1666 by Louis XIV.", "subject": "French Academy of Sciences", "pid": "P571", "object": "1666"}
+{"page": "French Academy of Sciences", "statement": "The French Academy of Sciences was founded at the suggestion of Jean-Baptiste Colbert.", "subject": "French Academy of Sciences", "pid": "P112", "object": "Jean-Baptiste Colbert"}
+{"page": "French Academy of Sciences", "statement": "The French Academy of Sciences was founded to encourage and protect the spirit of French scientific research.", "subject": "French Academy of Sciences", "pid": null, "object": "scientific research"}
+{"page": "French Academy of Sciences", "statement": "The French Academy of Sciences was at the forefront of scientific developments in Europe in the 17th and 18th centuries.", "subject": "French Academy of Sciences", "pid": null, "object": "17th and 18th centuries"}
+{"page": "French Academy of Sciences", "statement": "The French Academy of Sciences is one of the earliest Academies of Sciences.", "subject": "French Academy of Sciences", "pid": null, "object": "Academies of Sciences"}
+{"page": "French Academy of Sciences", "statement": "The French Academy of Sciences is currently headed by Patrick Flandrin.", "subject": "Patrick Flandrin", "pid": null, "object": "French Academy of Sciences"}
+{"page": "French Academy of Sciences", "statement": "The French Academy of Sciences is one of the five Academies of the Institut.", "subject": "French Academy of Sciences", "pid": null, "object": "Institut"}
+{"page": "French Academy of Sciences", "statement": "Louis XIV founded the French Academy of Sciences at the suggestion of Jean-Baptiste Colbert in 1666.", "subject": "Louis XIV", "pid": null, "object": "1666"}
+{"page": "French Academy of Sciences", "statement": "The French Academy of Sciences is a learned society for scientific research and advancement.", "subject": "French Academy of Sciences", "pid": null, "object": "learned society"}
+{"page": "French Academy of Sciences", "statement": "The French Academy of Sciences plays a major role in promoting scientific research and development in France.", "subject": "French Academy of Sciences", "pid": null, "object": "scientific research"}

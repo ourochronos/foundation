@@ -15,10 +15,12 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
 PAGES = ROOT / "data" / "wiki" / "pages"
 SHARDS = ROOT / "data" / "wiki" / "shards"
 
@@ -108,6 +110,7 @@ print(f"[m3] {len(stmts)} statements over {len(set(s['page'] for s in stmts))}"
 # ---- infobox P/R ----------------------------------------------------------
 tp = fp = 0
 recall_hit = recall_tot = 0
+fair_hit, fair_tot = [0], [0]
 n_ib_pages = 0
 for title, d in pages.items():
     ib = parse_infobox(d["wikitext"])
@@ -123,24 +126,36 @@ for title, d in pages.items():
         hit = any(obj and (obj in c or c in obj) for c in cands if c)
         tp += hit
         fp += not hit
+    lead_norm = norm(d["text"][:4000])
     for pid, vals in ib.items():
         recall_tot += 1
+        in_text = any(norm(c) and norm(c) in lead_norm
+                      for c in vals if len(norm(c)) > 3)
+        if in_text:
+            fair_tot[0] += 1
         got = [s for s in stmts if s["page"] == title
                and s.get("pid") == pid
                and norm(str(s.get("subject", ""))) == norm(title)]
         cands = {norm(c) for c in vals}
-        recall_hit += any(
+        hit_ = any(
             any(norm(str(s["object"])) and
                 (norm(str(s["object"])) in c or c in norm(str(s["object"])))
                 for c in cands if c) for s in got)
+        recall_hit += hit_
+        if in_text:
+            fair_hit[0] += hit_
 prec = tp / max(tp + fp, 1)
 rec = recall_hit / max(recall_tot, 1)
+fair = fair_hit[0] / max(fair_tot[0], 1)
 print(f"[infobox] pages={n_ib_pages} precision={prec:.3f} "
       f"(tp={tp}, fp={fp}) [>=0.6] | recall={rec:.3f} "
-      f"({recall_hit}/{recall_tot}) [>=0.5]", flush=True)
+      f"({recall_hit}/{recall_tot}) [registered >=0.5] | "
+      f"text-conditioned recall={fair:.3f} ({fair_hit[0]}/{fair_tot[0]}) "
+      f"[scope-fair: field value present in the 4k lead]", flush=True)
 
 # ---- entity-link accuracy --------------------------------------------------
 lk_hit = lk_tot = 0
+link_misses = []
 for s in stmts:
     if not s.get("pid") or not s.get("object"):
         continue
@@ -150,9 +165,13 @@ for s in stmts:
     L = links_of(pages[s["page"]]["wikitext"])
     o = norm(obj)
     lk_tot += 1
-    lk_hit += (o in L) or any(o and (o in l or l in o) for l in L if l)
+    ok_ = (o in L) or any(o and (o in l or l in o) for l in L if l)
+    lk_hit += ok_
+    if not ok_ and len(link_misses) < 12:
+        link_misses.append((s["page"][:20], obj[:40]))
 print(f"[links] entity-object link accuracy = {lk_hit}/{lk_tot} = "
       f"{lk_hit/max(lk_tot,1):.3f} [>=0.8]", flush=True)
+print(f"[links] sample misses: {link_misses[:10]}", flush=True)
 
 # ---- cross-page conflicts (Track I candidates) -----------------------------
 by_key = defaultdict(list)
@@ -183,7 +202,8 @@ json.dump({"n_statements": len(stmts),
                        "precision_ci95": wilson_ci(tp, max(tp + fp, 1)),
                        "recall": rec,
                        "recall_ci95": wilson_ci(recall_hit,
-                                                max(recall_tot, 1))},
+                                                max(recall_tot, 1)),
+                       "recall_text_conditioned": fair},
            "links": {"acc": lk_hit / max(lk_tot, 1), "n": lk_tot,
                      "ci95": wilson_ci(lk_hit, max(lk_tot, 1))},
            "conflicts_found": len(conflicts),

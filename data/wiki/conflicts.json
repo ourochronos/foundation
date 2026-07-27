@@ -1,0 +1,326 @@
+[
+ {
+  "subject": "alan turing",
+  "pid": "P69",
+  "claims": [
+   {
+    "page": "Alan Turing",
+    "object": "King's College Cambridge"
+   },
+   {
+    "page": "Alan Turing",
+    "object": "Princeton University"
+   },
+   {
+    "page": "University of Cambridge",
+    "object": "University of Cambridge"
+   }
+  ]
+ },
+ {
+  "subject": "albert einstein",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Albert Einstein",
+    "object": "theory of relativity"
+   },
+   {
+    "page": "Philosophy of science",
+    "object": "general relativity"
+   }
+  ]
+ },
+ {
+  "subject": "cambridge university press",
+  "pid": "P571",
+  "claims": [
+   {
+    "page": "Cambridge University Press",
+    "object": "1534"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "1584"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "1629"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "1833"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "1950"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "1893"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "1895"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "1963"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "1961"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "1979"
+   },
+   {
+    "page": "Cambridge University Press",
+    "object": "2017"
+   },
+   {
+    "page": "Oxford University Press",
+    "object": "1534"
+   }
+  ]
+ },
+ {
+  "subject": "charles sanders peirce",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Charles Sanders Peirce",
+    "object": "American scientist"
+   },
+   {
+    "page": "Charles Sanders Peirce",
+    "object": "founder"
+   },
+   {
+    "page": "Fallibilism",
+    "object": "philosopher"
+   },
+   {
+    "page": "Pragmatism",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "david hilbert",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "David Hilbert",
+    "object": "philosopher"
+   },
+   {
+    "page": "David Hilbert",
+    "object": "mathematician"
+   },
+   {
+    "page": "Mathematical logic",
+    "object": "mathematician"
+   }
+  ]
+ },
+ {
+  "subject": "david hume",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "David Hume",
+    "object": "historian"
+   },
+   {
+    "page": "Problem of induction",
+    "object": "philosopher"
+   },
+   {
+    "page": "Scientific method",
+    "object": "empiricist"
+   }
+  ]
+ },
+ {
+  "subject": "john locke",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Empiricism",
+    "object": "philosopher"
+   },
+   {
+    "page": "John Locke",
+    "object": "philosopher"
+   },
+   {
+    "page": "John Locke",
+    "object": "physician"
+   },
+   {
+    "page": "Scientific method",
+    "object": "idealist"
+   }
+  ]
+ },
+ {
+  "subject": "euclid",
+  "pid": "P800",
+  "claims": [
+   {
+    "page": "Euclid",
+    "object": "Elements"
+   },
+   {
+    "page": "Euclid",
+    "object": "Euclidean geometry"
+   },
+   {
+    "page": "Euclidean geometry",
+    "object": "Elements"
+   },
+   {
+    "page": "Mathematical proof",
+    "object": "Elements"
+   },
+   {
+    "page": "Mathematics",
+    "object": "Elements"
+   }
+  ]
+ },
+ {
+  "subject": "karl popper",
+  "pid": "P106",
+  "claims": [
+   {
+    "page": "Fallibilism",
+    "object": "philosopher"
+   },
+   {
+    "page": "Falsifiability",
+    "object": "philosopher"
+   },
+   {
+    "page": "Karl Popper",
+    "object": "philosopher"
+   },
+   {
+    "page": "Karl Popper",
+    "object": "social commentator"
+   },
+   {
+    "page": "Philosophy of science",
+    "object": "philosopher"
+   },
+   {
+    "page": "Problem of induction",
+    "object": "philosopher"
+   }
+  ]
+ },
+ {
+  "subject": "zermelo fraenkel set theory",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "G\u00f6del's incompleteness theorems",
+    "object": "Effectively axiomatized formal system"
+   },
+   {
+    "page": "Set theory",
+    "object": "axiomatic system"
+   }
+  ]
+ },
+ {
+  "subject": "christiaan huygens",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Game theory",
+    "object": "De ratiociniis in ludo alae"
+   },
+   {
+    "page": "Probability theory",
+    "object": "probability book"
+   }
+  ]
+ },
+ {
+  "subject": "carl friedrich gauss",
+  "pid": "P170",
+  "claims": [
+   {
+    "page": "Geometry",
+    "object": "Theorema Egregium"
+   },
+   {
+    "page": "Group theory",
+    "object": "theory of modular arithmetic"
+   }
+  ]
+ },
+ {
+  "subject": "georg cantor",
+  "pid": "P170",
+  "claims": [
+   {
+    "page": "Infinity",
+    "object": "mathematical study of infinite sets"
+   },
+   {
+    "page": "Infinity",
+    "object": "theory of cardinality of infinite sets"
+   },
+   {
+    "page": "Set theory",
+    "object": "set theory"
+   }
+  ]
+ },
+ {
+  "subject": "thales of miletus",
+  "pid": "P569",
+  "claims": [
+   {
+    "page": "Mathematician",
+    "object": "c. 624 BC"
+   },
+   {
+    "page": "Western philosophy",
+    "object": "c. 625 BC"
+   }
+  ]
+ },
+ {
+  "subject": "number theory",
+  "pid": "P31",
+  "claims": [
+   {
+    "page": "Natural number",
+    "object": "study of number properties"
+   },
+   {
+    "page": "Number theory",
+    "object": "branch of mathematics"
+   }
+  ]
+ },
+ {
+  "subject": "aristotle",
+  "pid": "P50",
+  "claims": [
+   {
+    "page": "Occam's razor",
+    "object": "Posterior Analytics"
+   },
+   {
+    "page": "Physics",
+    "object": "Physics"
+   }
+  ]
+ }
+]

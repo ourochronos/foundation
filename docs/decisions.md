@@ -2,6 +2,15 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-27 — D73: M3 first pass — precision gate MET on real Wikipedia; recall and object-quality defects named; the Wikipedia thesis half-confirmed
+**Corpus**: 200 pages (Math + Epistemology + mathematician bios; 104 infobox-bearing), fetched with wikitext quarantined as ground truth. **Extraction**: statement-first, schema-native pids assigned at extraction time with full sentence context (D69+D72 combined), 12 Haiku shards (two under-delivered on turn exhaustion; single-Write re-shards fixed them — agent-ops lesson: incremental writes burn turns). 1,365 statements / 172 pages, pid-rate 0.55.
+**Against the registered targets** (`m3_measure.py`, `results/m3_measure.json`):
+- **Infobox precision 0.775 ✓** (gate ≥0.6; tp=100/fp=29 on 67 scored pages) — when extraction+assignment fires on a real encyclopedic fact, it is right ~4 of 5 times. The D72 instance-context thesis holds on natural data.
+- **Recall 0.229 ✗ raw** (gate ≥0.5); **0.343 text-conditioned** (field value actually present in the 4k lead — the scope-fair reading, reported ALONGSIDE the registered number, gate unchanged). Both short: agents cap at 8–15 statements/page and skip lead facts.
+- **Link accuracy 0.718 ✗** (gate ≥0.8) — and the misses are NOT linking failures: they are descriptive-phrase objects wrongly given pids ("foremost merchant", "poor Lutheran pastor") and TRUNCATED object strings ("prom", "lead"). The metric caught extractor object-quality, which is its real value.
+- **Conflicts 16** (target ≥20) — close, on only 200 pages with modest overlap.
+**Next iteration (pinned)**: extraction prompt v2 — objects MUST be proper entities/dates (no descriptive phrases; no truncation), lift the statement cap for recall, then rerun the unchanged harness; grow overlap for conflicts (fetch the '#' remaining 28 silent pages + a second-hop slice); 25-item conflict precision audit. M1's 0.85 mapping re-test rides the same rerun.
+
 ## 2026-07-27 — D72: M1 classifier plateau at 0.79 — gate unmet, precision-beats-recall law measured, priority passes to M3
 **Three configurations, one frozen audit, QA as independent corroboration** (`probe_m1_final.py`, `results/m1_final.json`):
 
