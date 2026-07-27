@@ -65,6 +65,34 @@ channel) · topic-alias machinery (D83 weakness).
   references cited by >=k in-corpus papers get fetched into the slice.
   Track I bonus: citation-backed corroboration ("5 in-corpus papers cite
   X for claim Y") becomes an evidence-count signal.
-- Queue: P_CITES extraction pass over papers_html (fleet, next session)
-  -> citation-vote fetch round -> corroboration counts surfaced in ask.
+- ~~Queue: P_CITES extraction pass over papers_html~~ **DONE (D92)** — and
+  it needed no fleet at all: citation edges are a deterministic pattern,
+  so `scripts/cite_extract.py` is a regex over the retained bibliography
+  (3,840 claims, 555 in-corpus edges, 67 cited works). Corroboration is
+  surfaced by `KB.cited_by`, not `ask` — `views` is subject-side by
+  design and a cited work is only ever an object.
 - HF admission rule (2026-07-27): union of top-K by 30-day AND all-time downloads per tag; both recorded as dated observations. Current 200-card staging (30-day only) stands for round 1; balanced rule applies from the next fetch.
+
+## P2 status after D92 (2026-07-27)
+
+Both source types are ACCEPTED and ingested; the corpus is live at
+18,787 claims. What D92 changed about the plan:
+
+- **The reflexive-use goal is now blocked on topic identity, not on
+  corpus size.** The AI slice has **zero subjects spanning more than one
+  paper** (1,041 distinct subjects over 1,106 claims) — papers name their
+  own methods, so "the ML literature disagrees constantly" is currently
+  unobservable at the subject level. Track I across papers works only
+  along the citation axis. **Next lever for P2 is a topic/benchmark axis**
+  (benchmarks and tasks as first-class entities: `P_EVALUATES_ON`
+  extracted as objects), not more papers. This is the same topic-alias
+  weakness flagged at D83, now measured.
+- Citation-vote branching is proven and can widen the slice whenever
+  wanted (cited-by>=k → fetch).
+- Deeper re-ingestion (fulltext passes over the retained HTML) remains
+  the stated way past ~2.8 claims/paper; the source layer is complete
+  (467/467) and the batched adjudicator now handles fulltext-sized
+  evidence.
+
+Standing queue behind P2 is unchanged except: ArXiv-50 idx 37/27 is
+CLOSED (D92 — instrument artifact, no label change).
