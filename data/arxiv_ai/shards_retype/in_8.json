@@ -475,6 +475,7 @@
   "current_pid": "P_EVALUATES_ON",
   "statement": "Models are trained and evaluated on e-SNLI for self-explanation faithfulness.",
   "contexts": [
+   "[body] ...tual and counterfactual prompts are sampled from the dataset and passed into the current model to obtain decisions and explanations. These are used to compute influence and mention labels, which in turn are used to compute rewards. The model is then updated with GRPO using these rewards. Example taken from Qwen3-8B on ESNLI sample. 3.3 Our research hypotheses Our study comprises three hypotheses: (1) Influence Introspection: With supervised fine-tuning, models can detect which interventions flip their own decisions. We fine-tune using binary Yes/No labels for \u2110 \\mathcal{I} and measure correlation between predicted and true influence of factors. (2) Inf...",
    "[body] ...whether this learned behavior transfers to OOD data and intervention types (random insertions vs. user-bias edits). 3.4 Data Splits and Domains To evaluate both robust learning and generalization, we partition our data into Train, Test, and Out-of-Distribution (OOD) splits. The Train and Test datasets are comprised of e-SNLI (Camburu et al. , 2018 ) and Social-IQA (Sap et al. , 2019 ) . The OOD split is comprised of ComVE (Wang et al. , 2020 ) and StrategyQA (Geva et al. , 2021 ) , used exclusively to test the transferability of the model\u2019s abilities. 3.5 Evaluation metrics for faithfulness and generalizability We evaluate influence introspection via p..."
   ]
  },
@@ -533,7 +534,7 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "The proposed method directly parametrizes the CIF as a non-negative combination of B-spline basis functions.",
   "contexts": [
-   "*** no mention located ***"
+   "[title] ...Smooth Neural Point Processes via B-Splines..."
   ]
  },
  {
@@ -682,7 +683,8 @@
   "statement": "The framework employs proximal policy optimization for quantum circuit architecture search.",
   "contexts": [
    "[body] ...s and random states. The remainder of the paper is organized as follows. In Section 2 , the proposed architecture is presented in detail, including its main components and the underlying theoretical background. In particular, the section introduces the fundamentals of reinforcement learning, the Actor-Critic paradigm, proximal policy optimization, and, finally, the proposed architecture for approximate QSP. In Secti [...] experiments. The agent is updated every 128 128 steps. The penalty factor p p and the multiplier \u03bb \\lambda are set to 10 10 . The threshold that the agent must reach in order to receive the final reward of 50 50 is set to 10 \u2212 14 10^{...",
-   "[abstract] ...ramework for approximate quantum state preparation (QSP) is proposed. QSP is a challenging task, since the search space grows exponentially with the number of qubits, making the identification of the optimal circuit non-trivial. To address this problem, deep reinforcement learning is employed through an agent based on proximal policy optimization. The objective of the agent is to identify the best possible approximation of the target state while simultaneously minimizing the number of gates used. At each step, the agent appends a new gate to the circuit and recomputes the fidelity between the approximated state and the target states. Various experiment..."
+   "[abstract] ...ramework for approximate quantum state preparation (QSP) is proposed. QSP is a challenging task, since the search space grows exponentially with the number of qubits, making the identification of the optimal circuit non-trivial. To address this problem, deep reinforcement learning is employed through an agent based on proximal policy optimization. The objective of the agent is to identify the best possible approximation of the target state while simultaneously minimizing the number of gates used. At each step, the agent appends a new gate to the circuit and recomputes the fidelity between the approximated state and the target states. Various experiment...",
+   "[title] ...Approximate Quantum State Preparation Through Proximal Policy Optimization..."
   ]
  },
  {
@@ -706,7 +708,6 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "RGNN augments DLNMs with GNN encoder while preserving interpretable risk curves.",
   "contexts": [
-   "[body] ...1 Introduction A central task in environmental epidemiology is estimating mortality risk from temperature exposure. The dominant tool is the Distributed Lag Non-linear Model (DLNM) [ 4 ] , which produces an interpretable exposure-response surface over a lag dimension. This captures, for instance, that cold mortality peaks 7\u201314 days after exposure while heat mortality concentrates in the immediate 3-day window. DLNMs operate purely on temporal signals, however, making no use of...",
    "[body] ...1: Risk surfaces, in units of deaths per 100k, for London. Left: Vanilla DLNM. Right: RGNN-Calibrated. Here we briefly summarise the current state of modelling the heat-mortality relationship. DLNMs are proposed and formalised in-detail in Gasparrini et al. [ 4 ] , and Boudreault et al. [ 1 ] review ML approaches. 2.1 Distributed Lag Non-linear Models (DLNMs) A DLNM [ 4 ] models a scalar health outcome at location i i and time t t as a linear combination of a cross-basis matrix that encodes the joint non-linear and lagged relationship between an exposure and the outcome: y ^ i \u200b t = \ud835\udc98 i \u22c5 \ud835\udc02\ud835\udc01 i \u200b t , \\hat{y}_{it}=\\boldsymbol{w}_{i}\\cdot\\mathbf{CB}_{it},...",
    "[abstract] ...Estimating heat-related mortality risk is a core task in environmental epidemiology, typically addressed with Distributed Lag Non-linear Models (DLNMs); interpretable exposure-response surfaces fitted to temperature-mortality time series. DLNMs are effective but ignore demographic and geographic context, despite well-established relevance to heat vulnerability. We propose Risk Graph Neural Networks (RGNNs), a hierarchical GNN encoder that uses gr..."
   ]

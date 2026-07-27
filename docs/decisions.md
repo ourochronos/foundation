@@ -2,6 +2,31 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-27 — D98: Separating the relation from the mention roughly HALVES the defect rate (0.66/0.68 → 0.79–0.84) — the D97 diagnosis holds, and the residue is now things typing cannot touch
+**This is a VALIDATION, not an acceptance.** Paired re-grade of the *same 50 audited claims* by me under the Sol-corrected standard: no new frozen sample, no adjudication. Acceptance still requires a full re-typing pass and a fresh frozen audit. Recorded that way in `results/exp15_retype_validation.json` so the number cannot be mistaken for a gate result.
+
+**The fix is a re-TYPING, not a re-extraction** — every claim already names a real resource and the body window already contains the sentence saying how it is used, so one narrow pass over the existing 1,062 claims reuses the entire fleet run. Because the audit sample is frozen, the comparison is paired on identical items rather than a new sample against a new baseline.
+
+**Result: 7 of 50 dropped, and precision over the 43 survivors is 0.791 [0.65–0.89] strict / 0.837 [0.70–0.92] lenient**, against 0.66 (Sol) / 0.68 (mine) before. The two bounds differ only on items 28 and 48, where training data and a data source are typed `P_EVALUATES_ON` — my own prompt says that pid covers "trains on", Sol reads it stricter, and I am not going to resolve a definitional disagreement by picking the flattering side.
+
+**What the drops did.** Five were exactly right and are the family D97 named: `MAE` recognised as Mean Absolute Error rather than a resource, `RAG` and `VAE` as paradigms not artifacts, an unsupported AIME claim, and `Claude Sonnet` correctly identified as *an LLM judge, an incidental role* — the reasoning I hoped for, produced unprompted. Three more were fixed by re-typing alone (GPT-5.5, AlphaEvolve, Jina-Reranker all `P_BUILDS_ON` → `P_COMPARES_TO`). **The D97 diagnosis is confirmed: relation typing was the fixable defect.**
+
+**Two drops looked wrong, so I checked the source — and caught myself repeating the exact error I had just legislated against.** Items 1 and 39 were dropped on "no mention located", and Sol's D97 adjudication said both were supported, so I first recorded them as false drops caused by my locator. Then I searched the full source instead of taking the adjudicator's word:
+
+- idx 7 (BBH), idx 46 (DeepSearchQA): **Sol confirmed** — the evidence is there and my D97 defect calls were wrong.
+- idx 1 (LLaMA 3.1): **partly** — `fair baseline (llama3.1-8b)` IS in the source, so it is grounded, but it is a *baseline*, and the claim typed it `P_BUILDS_ON` as SHIFT's backbone. Still a defect, on relation grounds. My verdict was right for the wrong reason.
+- idx 39 (V\* Bench): **REFUTED — zero occurrences in the entire source.** Sol's rescue was a hallucination. My original defect call was correct and the drop was correct.
+
+So **all seven drops are defensible and the recall cost is ~0**, not the 0.04 I first wrote down. **I had accepted five adjudicator corrections without verifying any of them** — one turn after writing the law that an excerpt view is a hypothesis to check. **An adjudicator is a second rater, not an oracle**: its corrections get verified against the evidence exactly like my own. That is the standing rule, and the reason D97's headline (0.66/0.68, both fail) still stands is that it never depended on the disputed five.
+
+**The locator was still a real bug and is still fixed.** An 18-character prefix over one field left 57 claims unlocatable; a punctuation-and-case-folded search across body, abstract and title with a distinctive-token fallback leaves **12**. And the deletion path is closed regardless of locator quality: the typing prompt now emits **`UNCERTAIN` and keeps the claim** instead of `DROP` when no mention is found. **Law: a locator's failure to find evidence is never itself evidence** — any stage that can DELETE on a not-found signal must abstain instead.
+
+**The residue is no longer about relations.** What survives splits into three families typing structurally cannot address: **malformed subjects** (items 3, 20, 40 — a stopword `"The"`, and title fragments `"Fast ANNS"`, `"Pixels for Programs?"`), **ineligible resources** that slipped the generic filter (2, 24), and **a model used as an evaluation target** rather than a dataset (0, 37). Item 40 is the clean illustration: its relation was corrected and it remains a defect because its subject is the paper's title. Subject quality is D94's naming rule, which this pass never applied to the resource shards — so the next lever is already built and simply not wired in here.
+
+**Cost accounting**: drop rate 0.14, of which 0.04 is genuine recall loss. Precision bought at a real price, and the price is honestly attributable to one fixable bug.
+
+**Next, in order**: (1) change `DROP`-on-not-found to `UNCERTAIN`-and-keep, and strengthen the locator (normalised match, full source, no prefix cap); (2) apply D94's entity-naming rule to resource subjects, which removes the largest residual family; (3) run the full 18-shard typing pass; (4) then a fresh frozen audit with Sol adjudication — the first number that may be called acceptance.
+
 ## 2026-07-27 — D97: The owed audit closes it — resource precision **0.68 / 0.66 Sol, FAILS the 0.80 gate**; the real defect is RELATION TYPING, and my own grading aid misled me on five items
 The debt D96 registered is paid. All 50 of the frozen sample graded against each paper's own body window, then Sol-adjudicated blind with the **full** window in view.
 

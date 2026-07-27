@@ -92,7 +92,7 @@
   "current_pid": "P_EVALUATES_ON",
   "statement": "HiKV is evaluated on Llama 3 large language models.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...down of four popular LLMs [ 42 , 21 , 17 , 2 ] when generating sequences in long-context scenarios under various batch size requests. As shown in Fig. 4 , the KV cache dominates memory accesses compared to other components, i.e., pre-trained weights and activations, especially as batch size increases. For instance, in llama3-8b-instruct model [ 2 ] , KV cache consumes around 20% of memory access within a single batch but escalates sharply to over 90% at a batch size of 64. This dramatic increase occurs because each request in a batch requires its own KV cache in every attention layer while model weights can be shared across requests. These dominant off..."
   ]
  },
  {
@@ -196,7 +196,9 @@
   "current_pid": "P_EVALUATES_ON",
   "statement": "SceneActBench evaluates GPT 5.4.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...nswer, including ScanQA (Azuma et al., 2022 ) , SQA3D (Ma et al., 2023 ) , and Spatial457 (Wang et al., 2025 ) , with probes such as SpatialVLM [...] 4 Experiments 4.1 Setup We evaluate eleven configurations from ten proprietary VLMs. They are Claude Opus 4.6 (Anthropic, 2026a ) , Claude Sonnet 5 (Anthropic, 2026b ) , GPT 5.4 (Singh et al., 2026 ) , Gemini 3.1 Pro (Google DeepMind, 2026 ) , Qwen 3.7 Plus (Qwen Team, Alibaba, 2026 ) , MiniMax M3 (Lai et al., 2026 ) , Doubao Seed 2.0 Pro (Seed, 2026 ) , Step 3.7 Flash (StepFun, 2026 ) , MiMo 2.5 (Xiaomi, 2026 ) , and Kimi K2.6 (Kimi, 2026 ) . Configurations labelled High use the provider\u2019s high setting....",
+   "[body] ...., 2026 ) , Gemini 3.1 Pro (Google DeepMind, 2026 ) , Qwen 3.7 Plus (Qwen Team, Alibaba, 2026 ) , MiniMax M3 (Lai et al., 2026 ) , Doubao Seed 2.0 Pro (Seed, 2026 ) , Step 3.7 Flash (StepFun, 2026 ) , MiMo 2.5 (Xiaomi, 2026 ) , and Kimi K2.6 (Kimi, 2026 ) . Configurations labelled High use the provider\u2019s high setting. GPT 5.4 Medium is the lower-effort control. Kimi Reason enables reasoning. To keep the comparison fair, we built one shared harness and ran every configuration through it. All configurations drive a headless Blender through the same Model Context Protocol (MCP) interface. The shared prompts name four core Blender tools: get_scene_info and...",
+   "[body] ...single-view Layout and low-poly Dynamic; the paired multi-view Layout and photo-realistic Dynamic conditions stay outside Overall. 4.2 Main Results Table 3 reports all eleven completed configurations. Under the fixed Overall summary, Doubao obtains the highest score at 50.2, followed closely by Claude Opus at 48.9 and GPT 5.4 Medium at 48.7. GPT 5.4 High trails Medium by only 0.02 points. Kimi reaches 41.2 and ranks eighth. We therefore use the exact point ordering and analyse the three highest configurations, while retaining every configuration in the leaderboard. The three leaders differ by only 1.5 Overall points but exchange task leadership. Doubao..."
   ]
  },
  {
@@ -441,9 +443,9 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "The study uses AST audio foundation model.",
   "contexts": [
+   "[body] ...mparative bioacoustics (Odom et al., 2021). One prediction of the evolutionary account is easy to state. If evolutionary history leaves an imprint on how species sound, then species that sound alike should tend to be more closely related. That imprint has a name, phylogenetic signal (Blomberg &amp; Garland, 2002), and a standard test: the Mantel correlation between an acoustic distance matrix and a phylogenetic distance matrix. It has been detected in frogs (Gingras et al., 2013; r = 0.17 across 90 species), in birds (Arato &amp; Fitch, 2021; 137 species), in estrildid finches (Shimizu et al., 2023), and in gobiid fishes (Vasconcelos et al., 2021; r =...",
    "[body] ...y one of those studies the acoustic distances came from hand-crafted spectral features: fundamental frequency, spectral entropy, spectral centroid, Mel-frequency cepstral coefficients (MFCCs). The set of available representations has grown a lot since then. Large pretrained audio models such as CLAP (Wu et al., 2023), AST (Gong et al., 2021), and BEATs (Chen et al., 2023) map sound into high-dimensional embedding spaces where semantically or structurally similar recordings sit close together. On bioacoustic benchmarks they clearly outperform MFCCs (Hagiwara et al., 2022; Miron et al., 2025). What is unknown is whether the geometry these models impose o...",
-   "[body] ...phin clicks, and the elaborate underwater songs of Weddell seals. The Watkins Marine Mammal Sound Database (Watkins et al., 2004) provides a curated, freely available collection across 32 species. We use the Watkins data to ask whether acoustic distances from four representations (an MFCC baseline; the general-purpose AST and CLAP; and the bioacoustic BEATs-bio) correlate with phylogenetic distance. We check whether any observed correlation just reflects dominant frequency, using a partial Mantel test, and we inspect the species pairs that sit furthest from the trend. We then repeat the whole procedure on birds. Birds are a separate radiation with a ve...",
-   "[body] ...ed the Watkins Marine Mammal Sound Database via HuggingFace ( confit/wmms-parquet ), supplemented from the full Archive.org release ( watkins-marine-mammal-sound-database-full-cuts ) for species with fewer than 20 clips in the curated set. The final dataset held 1,754 recordings across 32 species (Table S1), with at least 23 clips per spec [...] experiment was designed to test the domain-specificity hypothesis directly. The result was negative. BirdNET, trained end-to-end to separate 6,000 bird species, did not beat the general-purpose models on birds, and its point estimate came in lower. BEATs-bio behaved similarly. Matching the training domain to th..."
+   "[body] ...phin clicks, and the elaborate underwater songs of Weddell seals. The Watkins Marine Mammal Sound Database (Watkins et al., 2004) provides a curated, freely available collection across 32 species. We use the Watkins data to ask whether acoustic distances from four representations (an MFCC baseline; the general-purpose AST and CLAP; and the bioacoustic BEATs-bio) correlate with phylogenetic distance. We check whether any observed correlation just reflects dominant frequency, using a partial Mantel test, and we inspect the species pairs that sit furthest from the trend. We then repeat the whole procedure on birds. Birds are a separate radiation with a ve..."
   ]
  },
  {
@@ -467,7 +469,9 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "TRACE-ROUTER builds on LLM routing primitives for model selection.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...ficantly greater computational cost. No single model is uniformly optimal, and guessing wrong is costly in both directions\u2014always serving the strongest model spends frontier-scale compute on instances a small model would have solved, while always serving the cheapest degrades accuracy precisely where accuracy matters. Routing has consequently become a central primitive for LLM deployment (Chen et al., 2024a ; Ong et al., 2024 ; Guha et al., 2024 ; Chen et al., 2024b ; Feng et al., 2025 ; Tsiourvas et al., 2026 ; Xue et al., 2026 ) . Nearly all of these routers inherit a request-level abstraction: Given a prompt, which model should answer it? This is th...",
+   "[body] ...% of tasks compared to 60.2 % 60.2\\% for the larger backend. Consequently, a single mid-task downgrade to the smaller model can cause an otherwise successful execution to fail. More fundamentally, task success or failure is observed only at termination, producing a single delayed outcome that must be attributed to all routing decisions made throughout the execution. Without a principled mechanism for credit assignment, the router cannot effectively learn from task-level feedback. This observation motivates a simple principle: The unit of routing should match the unit of feedback . In agentic workloads, feedback is inherently task-level\u2014a program either...",
+   "[body] ...observed only at termination, producing a single delayed outcome that must be attributed to all routing decisions made throughout the execution. Without a principled mechanism for credit assignment, the router cannot effectively learn from task-level feedback. This observation motivates a simple principle: The unit of routing should match the unit of feedback . In agentic workloads, feedback is inherently task-level\u2014a program either passes its tests, an environment goal is achieved, or a judge assigns a final score\u2014and a decision that persists over the entire trace is the finest-grained choice such a signal can credit unambiguously. We introduce TRACE-..."
   ]
  },
  {
@@ -478,7 +482,7 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "The work uses variational autoencoders for data-driven global search.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...d local optima in a few iterations. Generative models are useful in this setting because they can represent a distribution over multiple locally optimal solutions rather than a single deterministic solution. Once trained, they can quickly generate diverse initial guesses for a new problem instance. Prior work has used variational auto-encoders [ 9 , 2 ] and diffusion models [ 7 , 8 , 6 , 3 , 4 ] for this purpose in non-convex trajectory optimization. The main limitation is the cost of collecting good training data. Existing approaches generally keep only the final converged solution from each offline solver run. Thus, producing a large dataset requires..."
   ]
  },
  {
@@ -500,9 +504,9 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "ADAPT-GQE builds on ADAPT-VQE for ground-state preparation.",
   "contexts": [
+   "[body] ...the number of qubits \u2014 making convergence unreliable at scale [ Cerezo2021VQA , McClean2018BarrenPlateaus ] . Third, the number of variational parameters grows rapidly with system size, compounding shot-noise requirements and rendering the classical optimization increasingly expensive [ McClean2016Theory , Grimsley2019ADAPTVQE ] . The Adaptive Derivative-Assembled Problem-Tailored Variational Quantum Eigensolver, ADAPT-VQE [ Grimsley2019ADAPTVQE ] , was introduced to address the circuit depth problem through a fundamentally different construction strategy. Rather than committing to a fixed ansatz a priori , ADAPT-VQE iterati [...] evaluation, demonstra...",
    "[body] ...Plateaus ] . Third, the number of variational parameters grows rapidly with system size, compounding shot-noise requirements and rendering the classical optimization increasingly expensive [ McClean2016Theory , Grimsley2019ADAPTVQE ] . The Adaptive Derivative-Assembled Problem-Tailored Variational Quantum Eigensolver, ADAPT-VQE [ Grimsley2019ADAPTVQE ] , was introduced to address the circuit depth problem through a fundamentally different construction strategy. Rather than committing to a fixed ansatz a priori , ADAPT-VQE iterati [...] evaluation, demonstrating the potential of generative transformers for automated quantum circuit synthesis. Finally, p...",
-   "[body] ...2016Theory , Grimsley2019ADAPTVQE ] . The Adaptive Derivative-Assembled Problem-Tailored Variational Quantum Eigensolver, ADAPT-VQE [ Grimsley2019ADAPTVQE ] , was introduced to address the circuit depth problem through a fundamentally different construction strategy. Rather than committing to a fixed ansatz a priori , ADAPT-VQE iterati [...] evaluation, demonstrating the potential of generative transformers for automated quantum circuit synthesis. Finally, parameter transfer and warm-starting strategies exploit the smoothness of quantum energy landscapes across related problem instances. Xu et al. [ Xu2025QAOAParameterTransfer ] use Graph Attention Net...",
-   "[body] ...Methods This section describes the key components of developing language models for ground state circuit generation. Section 3.1 describes training dataset construction, including generating diverse conformational structures of imipramine and calculating high-quality energy-minimizing circuits for each conformer using ADAPT-VQE. Section 3.2 discusses training of our models, including how quantum circuits are represented as inputs and outputs for our transformer architectures ( 3.2.1 ), a strategy for encoding molecular information as multimodal input ( 3.2.2 ), and architecture and training specifics for the two distinct models we consider ( 3.2.3 and..."
+   "[body] ...number of variational parameters grows rapidly with system size, compounding shot-noise requirements and rendering the classical optimization increasingly expensive [ McClean2016Theory , Grimsley2019ADAPTVQE ] . The Adaptive Derivative-Assembled Problem-Tailored Variational Quantum Eigensolver, ADAPT-VQE [ Grimsley2019ADAPTVQE ] , was introduced to address the circuit depth problem through a fundamentally different construction strategy. Rather than committing to a fixed ansatz a priori , ADAPT-VQE iterati [...] evaluation, demonstrating the potential of generative transformers for automated quantum circuit synthesis. Finally, parameter transfer and wa..."
   ]
  },
  {
@@ -513,7 +517,8 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "ADAPT-GQE uses Gemma 3-based model for circuit generation.",
   "contexts": [
-   "[body] ....2.1 ), a strategy for encoding molecular information as multimodal input ( 3.2.2 ), and architecture and training specifics for the two distinct models we consider ( 3.2.3 and 3.2.4 ). In particular, the architecture and training sections detail two complementary transformer architectures used in this work: a compact Gemma 3-based model [ gemmateam2025gemma3technicalreport ] with no prior pretraining, and a larger Nemotron 2 Nano [ nvidia2025nvidianemotronnano2 ] model pretrained on a general-purpose dataset, together with the training pipelines used to adapt them for circuit generation. 3.1 Data Generation We generate data according to two requiremen..."
+   "[body] ....2.1 ), a strategy for encoding molecular information as multimodal input ( 3.2.2 ), and architecture and training specifics for the two distinct models we consider ( 3.2.3 and 3.2.4 ). In particular, the architecture and training sections detail two complementary transformer architectures used in this work: a compact Gemma 3-based model [ gemmateam2025gemma3technicalreport ] with no prior pretraining, and a larger Nemotron 2 Nano [ nvidia2025nvidianemotronnano2 ] model pretrained on a general-purpose dataset, together with the training pipelines used to adapt them for circuit generation. 3.1 Data Generation We generate data according to two requiremen...",
+   "[body] ...ecular information as multimodal input ( 3.2.2 ), and architecture and training specifics for the two distinct models we consider ( 3.2.3 and 3.2.4 ). In particular, the architecture and training sections detail two complementary transformer architectures used in this work: a compact Gemma 3-based model [ gemmateam2025gemma3technicalreport ] with no prior pretraining, and a larger Nemotron 2 Nano [ nvidia2025nvidianemotronnano2 ] model pretrained on a general-purpose dataset, together with the training pipelines used to adapt them for circuit generation. 3.1 Data Generation We generate data according to two requirements aligned with real-world applicat..."
   ]
  },
  {
@@ -624,7 +629,7 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "MineValiCoder experiments test Llama3.1-8B for code generation.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ..., 2 , 25 ] . To improve the reliability of generated code, substantial research has developed LLM-based Test-Driven Development (TDD) methods, which exploit execution feedback from test cases to iteratively refine LLM-generated code. For instance, [...] experiments on four LLMs with different scales, including GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B, over several widely adopted benchmarks: HumanEval [ 8 ] , MBPP [ 4 ] , APPS [ 10 ] and LiveCodeBench [ 13 ] . Experimental results show that MineValiCoder achieves substantial improvements in code generation performance, with Pass@1 scores of 96.34 % 96.34\\% on HumanEval, 87.40 % 87.40\\% on MBPP..."
   ]
  },
  {

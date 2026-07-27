@@ -88,7 +88,9 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "The method fine-tunes Stable Diffusion 1.5 for new domains including WikiArt, Cyberpunk, and Anime.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...1 Introduction Diffusion models have become a dominant paradigm for high-quality image generation [ 13 , 39 , 40 ] . Latent diffusion models and their practical implementations further make large-scale text-to-image generation broadly accessible [ 37 , 36 ] . While modern pretrained diffusion models exhibit strong general-purpose generation ability, man...",
+   "[body] ...1 Introduction Diffusion models have become a dominant paradigm for high-quality image generation [ 13 , 39 , 40 ] . Latent diffusion models and their practical implementations further make large-scale text-to-image generation broadly accessible [ 37 , 36 ] . While modern pretrained diffusion models exhibit strong general-purpose generation ability, many real-world applications require adaptation to new concepts, styles, domains, or user-specific preferences [...",
+   "[body] ...1 Introduction Diffusion models have become a dominant paradigm for high-quality image generation [ 13 , 39 , 40 ] . Latent diffusion models and their practical implementations further make large-scale text-to-image generation broadly accessible [ 37 , 36 ] . While modern pretrained diffusion models exhibit strong general-purpose generation ability, many real-world applications require adaptation to new concepts, styles, domains, or user-specific preferences [ 38 , 9 , 22 , 46 , 18 ] . This work focuses on finetuning with a dual objective. First, the adapted model should preserve as much of the pretrained model\u2019s gen..."
   ]
  },
  {
@@ -99,7 +101,9 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "The method fine-tunes Stable Diffusion 3 for the Pokemon domain with varying parameter budgets.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...1 Introduction Diffusion models have become a dominant paradigm for high-quality image generation [ 13 , 39 , 40 ] . Latent diffusion models and their practical implementations further make large-scale text-to-image generation broadly accessible [ 37 , 36 ] . While modern pretrained diffusion models exhibit strong general-purpose generation ability, man...",
+   "[body] ...1 Introduction Diffusion models have become a dominant paradigm for high-quality image generation [ 13 , 39 , 40 ] . Latent diffusion models and their practical implementations further make large-scale text-to-image generation broadly accessible [ 37 , 36 ] . While modern pretrained diffusion models exhibit strong general-purpose generation ability, many real-world applications require adaptation to new concepts, styles, domains, or user-specific preferences [...",
+   "[body] ...1 Introduction Diffusion models have become a dominant paradigm for high-quality image generation [ 13 , 39 , 40 ] . Latent diffusion models and their practical implementations further make large-scale text-to-image generation broadly accessible [ 37 , 36 ] . While modern pretrained diffusion models exhibit strong general-purpose generation ability, many real-world applications require adaptation to new concepts, styles, domains, or user-specific preferences [ 38 , 9 , 22 , 46 , 18 ] . This work focuses on finetuning with a dual objective. First, the adapted model should preserve as much of the pretrained model\u2019s gen..."
   ]
  },
  {
@@ -212,7 +216,9 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "TRISHUL is evaluated on LLaMA 3.2-1B as a base model for language benchmarks.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...mplexity, Privacy Scope, and Deployment Considerations IV Experiments IV-A Experimental Setup IV-A 1 Datasets and Models IV-A 2 Federated Partitioning IV-A 3 Parameter Budget and Hyperparameter IV-A 4 Baseline implementation IV-B Main Results: Vision and Language IV-B 1 Vision and Language Benchmarks IV-B 2 Scaling to LLaMA3.2-1B on GLUE IV-C Ablation Studies and Analysis IV-C 1 Effect of Nuclear-Norm Regularization Effect of singular-value thresholding Direct spectral inconsistency analysis IV-C 2 Sensitivity to the Regularization Parameter \u03bb \\lambda Bias\u2013variance tradeoff of spectral shrinkage IV-C 3 Extreme Heterogeneity Spectral behavior under stro...",
+   "[body] ...using a concave water-filling budget rule derived from pretrained l [...] Experimental Setup IV-A 1 Datasets and Models IV-A 2 Federated Partitioning IV-A 3 Parameter Budget and Hyperparameter IV-A 4 Baseline implementation IV-B Main Results: Vision and Language IV-B 1 Vision and Language Benchmarks IV-B 2 Scaling to LLaMA3.2-1B on GLUE IV-C Ablation Studies and Analysis IV-C 1 Effect of Nuclear-Norm Regularization Effect of singular-value thresholding Direct spectral inconsistency analysis IV-C 2 Sensitivity to the Regularization Parameter \u03bb \\lambda Bias\u2013variance tradeoff of spectral shrinkage IV-C 3 Extreme Heterogeneity Spectral behavior under stro...",
+   "[body] ...derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity. 1 1 1 See Trishul Github for implementation details. I Introduction Large pretrained models have become the foundation of modern artificial intelligence, but adapting them efficiently..."
   ]
  },
  {
@@ -519,7 +525,8 @@
   "current_pid": "P_EVALUATES_ON",
   "statement": "SciExplore evaluates DeepSeek-V3.2 as an open-source foundation LLM baseline.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...description of the construction procedure and validation criteria for each task is provided in Appendix A.4 . Table 3: Main results on the SciExplore . T4 is reported at two granularities: item- and row-level. All scores are percentages (%). Model Category T1 T2 T3 T4 Overall Item Row \\rowcolor gray!15 Foundation LLMs DeepSeek-V3.2 Open-Source 20.51 6.25 5.95 8.32 2.25 11.06 Qwen2.5-72B-Instruct Open-Source 7.69 0.00 0.00 8.63 6.94 4.99 Qwen3-30B-A3B-Thinking Open-Source 10.26 0.00 3.57 2.54 1.60 4.50 Qwen3-235B-A22B-Thinking Open-Source 20.51 3.12 0.00 7.85 4.15 7.87 GPT-5.1 Closed-Source 17.95 9.38 9.66 8.76 4.83 12.83 Gemini-2.5-Pro Closed-Source 20...",
+   "[body] ...e 10.26 0.00 3.57 2.54 1.60 4.50 Qwen3-235B-A22B-Thinking Open-Source 20.51 3.12 0.00 7.85 4.15 7.87 GPT-5.1 Closed-Source 17.95 9.38 9.66 8.76 4.83 12.83 Gemini-2.5-Pro Closed-Source 20.51 6.25 4.17 10.57 3.78 11.25 Gemini-3-Pro Closed-Source 23.08 12.50 13.69 16.23 7.29 19.08 \\rowcolor gray!15 LLMs with Search Tools DeepSeek-V3.2 w/ search Open-Source 17.95 9.38 9.66 9.2..."
   ]
  },
  {
@@ -530,7 +537,7 @@
   "current_pid": "P_EVALUATES_ON",
   "statement": "SciExplore evaluates Qwen 2.5-72B-Instruct as an open-source foundation model.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...riteria for each task is provided in Appendix A.4 . Table 3: Main results on the SciExplore . T4 is reported at two granularities: item- and row-level. All scores are percentages (%). Model Category T1 T2 T3 T4 Overall Item Row \\rowcolor gray!15 Foundation LLMs DeepSeek-V3.2 Open-Source 20.51 6.25 5.95 8.32 2.25 11.06 Qwen2.5-72B-Instruct Open-Source 7.69 0.00 0.00 8.63 6.94 4.99 Qwen3-30B-A3B-Thinking Open-Source 10.26 0.00 3.57 2.54 1.60 4.50 Qwen3-235B-A22B-Thinking Open-Source 20.51 3.12 0.00 7.85 4.15 7.87 GPT-5.1 Closed-Source 17.95 9.38 9.66 8.76 4.83 12.83 Gemini-2.5-Pro Closed-Source 20.51 6.25 4.17 10.57 3.78 11.25 Gemini-3-Pro Closed-Source..."
   ]
  },
  {
@@ -541,7 +548,8 @@
   "current_pid": "P_EVALUATES_ON",
   "statement": "SciExplore evaluates Qwen 3 variants with different parameter counts and reasoning capabilities.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...in results on the SciExplore . T4 is reported at two granularities: item- and row-level. All scores are percentages (%). Model Category T1 T2 T3 T4 Overall Item Row \\rowcolor gray!15 Foundation LLMs DeepSeek-V3.2 Open-Source 20.51 6.25 5.95 8.32 2.25 11.06 Qwen2.5-72B-Instruct Open-Source 7.69 0.00 0.00 8.63 6.94 4.99 Qwen3-30B-A3B-Thinking Open-Source 10.26 0.00 3.57 2.54 1.60 4.50 Qwen3-235B-A22B-Thinking Open-Source 20.51 3.12 0.00 7.85 4.15 7.87 GPT-5.1 Closed-Source 17.95 9.38 9.66 8.76 4.83 12.83 Gemini-2.5-Pro Closed-Source 20.51 6.25 4.17 10.57 3.78 11.25 Gemini-3-Pro Closed-Source 23.08 12.50 13.69 16.23 7.29 19.08 \\rowcolor gray!15 LLMs with...",
+   "[body] ...: item- and row-level. All scores are percentages (%). Model Category T1 T2 T3 T4 Overall Item Row \\rowcolor gray!15 Foundation LLMs DeepSeek-V3.2 Open-Source 20.51 6.25 5.95 8.32 2.25 11.06 Qwen2.5-72B-Instruct Open-Source 7.69 0.00 0.00 8.63 6.94 4.99 Qwen3-30B-A3B-Thinking Open-Source 10.26 0.00 3.57 2.54 1.60 4.50 Qwen3-235B-A22B-Thinking Open-Source 20.51 3.12 0.00 7.85 4.15 7.87 GPT-5.1 Closed-Source 17.95 9.38 9.66 8.76 4.83 12.83 Gemini-2.5-Pro Closed-Source 20.51 6.25 4.17 10.57 3.78 11.25 Gemini-3-Pro Closed-Source 23.08 12.50 13.69 16.23 7.29 19.08 \\rowcolor gray!15 LLMs with Search Tools DeepSeek-V3.2 w/ search Open-Source 17.95 9.38 9.66 9..."
   ]
  },
  {
@@ -563,7 +571,7 @@
   "current_pid": "P_EVALUATES_ON",
   "statement": "SciExplore evaluates Gemini-2.5-Pro as a closed-source foundation model.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...ation LLMs DeepSeek-V3.2 Open-Source 20.51 6.25 5.95 8.32 2.25 11.06 Qwen2.5-72B-Instruct Open-Source 7.69 0.00 0.00 8.63 6.94 4.99 Qwen3-30B-A3B-Thinking Open-Source 10.26 0.00 3.57 2.54 1.60 4.50 Qwen3-235B-A22B-Thinking Open-Source 20.51 3.12 0.00 7.85 4.15 7.87 GPT-5.1 Closed-Source 17.95 9.38 9.66 8.76 4.83 12.83 Gemini-2.5-Pro Closed-Source 20.51 6.25 4.17 10.57 3.78 11.25 Gemini-3-Pro Closed-Source 23.08 12.50 13.69 16.23 7.29 19.08 \\rowcolor gray!15 LLMs with Search Tools DeepSeek-V3.2 w/ search Open-Source 17.95 9.38 9.66 9.2..."
   ]
  },
  {
@@ -574,7 +582,7 @@
   "current_pid": "P_EVALUATES_ON",
   "statement": "SciExplore evaluates Gemini-3-Pro as a closed-source foundation model.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...11.06 Qwen2.5-72B-Instruct Open-Source 7.69 0.00 0.00 8.63 6.94 4.99 Qwen3-30B-A3B-Thinking Open-Source 10.26 0.00 3.57 2.54 1.60 4.50 Qwen3-235B-A22B-Thinking Open-Source 20.51 3.12 0.00 7.85 4.15 7.87 GPT-5.1 Closed-Source 17.95 9.38 9.66 8.76 4.83 12.83 Gemini-2.5-Pro Closed-Source 20.51 6.25 4.17 10.57 3.78 11.25 Gemini-3-Pro Closed-Source 23.08 12.50 13.69 16.23 7.29 19.08 \\rowcolor gray!15 LLMs with Search Tools DeepSeek-V3.2 w/ search Open-Source 17.95 9.38 9.66 9.2..."
   ]
  },
  {

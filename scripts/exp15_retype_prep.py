@@ -30,6 +30,55 @@ OUT = ROOT / "data" / "arxiv_ai" / "shards_retype"
 OUT.mkdir(exist_ok=True)
 PER = 60                      # decisions per shard: short items, so many fit
 
+def _squash(s: str) -> str:
+    """Fold the things papers vary and names do not depend on."""
+    return re.sub(r"[^a-z0-9]+", "", s.lower())
+
+
+def _locate(obj: str, sources, want: int = 3) -> list[str]:
+    """Find where a source names this resource.
+
+    A prefix match over one field was the whole bug (D97/D98): it made me
+    mis-grade five claims and then made a typing agent DELETE two valid
+    ones. So search every field, match on a punctuation-and-case-folded
+    form (`Llama 3` finds `LLaMA-3.1-8B`), and fall back to the longest
+    distinctive token before giving up.
+    """
+    out: list[str] = []
+    probes = [obj]
+    toks = [t for t in re.split(r"[\s/_-]+", obj) if len(t) > 3]
+    if toks:
+        probes.append(max(toks, key=len))
+    for src, tag in sources:
+        if not src:
+            continue
+        sq = _squash(src)
+        # map squashed offsets back to raw offsets
+        idx = [i for i, ch in enumerate(src) if re.match(r"[a-z0-9]", ch.lower())]
+        for probe in probes:
+            ps = _squash(probe)
+            if not ps:
+                continue
+            start = 0
+            while len(out) < want:
+                j = sq.find(ps, start)
+                if j < 0:
+                    break
+                start = j + 1
+                if j >= len(idx):
+                    break
+                raw = idx[j]
+                s0 = max(0, raw - 320)
+                out.append(f"[{tag}] ..."
+                           + re.sub(r"\s+", " ", src[s0:raw + 340]).strip()
+                           + "...")
+            if out:
+                break
+        if len(out) >= want:
+            break
+    return out
+
+
 win = {}
 for f in sorted(SH.glob("in_*.json")):
     for p in json.loads(f.read_text()):
@@ -50,20 +99,8 @@ for f in sorted(SH.glob("out_*.jsonl")):
         body = p.get("body_window", "") or ""
         abst = p.get("abstract", "") or ""
         obj = d["object"]
-        ctxs = []
-        for src, tag in ((body, "body"), (abst, "abstract")):
-            lo = src.lower()
-            # match on a prefix so normalised names still locate their mention
-            probe = obj.lower()[:18]
-            for m in re.finditer(re.escape(probe), lo):
-                s = max(0, m.start() - 320)
-                ctxs.append(f"[{tag}] ..."
-                            + re.sub(r"\s+", " ", src[s:m.start() + 340]).strip()
-                            + "...")
-                if len(ctxs) >= 3:
-                    break
-            if len(ctxs) >= 3:
-                break
+        ctxs = _locate(obj, ((body, "body"), (abst, "abstract"),
+                             (p.get("title", "") or "", "title")))
         if not ctxs:
             no_ctx += 1
         items.append({"sid": f"{f.name}:{ln}", "page": d["page"],

@@ -1,0 +1,63 @@
+{
+ "status": "VALIDATION, not acceptance \u2014 paired re-grade of the SAME 50 audited claims by the session model using the Sol-corrected standard; no new frozen sample, no adjudication. Acceptance requires a full re-typing pass then a fresh frozen audit.",
+ "before": {
+  "mine": 0.68,
+  "sol": 0.66,
+  "n": 50
+ },
+ "after": {
+  "n_surviving": 43,
+  "dropped": 7,
+  "precision_strict": 0.791,
+  "precision_lenient": 0.837,
+  "ambiguous_items": [
+   28,
+   48
+  ],
+  "ambiguity": "training data / data-source typed P_EVALUATES_ON \u2014 my prompt says that pid covers 'trains on', Sol reads it stricter"
+ },
+ "fixed_by_drop": [
+  4,
+  5,
+  15,
+  36,
+  43
+ ],
+ "fixed_by_retype": [
+  17,
+  42,
+  44
+ ],
+ "partially_fixed": [
+  40
+ ],
+ "partial_note": "relation corrected BUILDS_ON->COMPARES_TO but the subject is still the paper title 'Pixels for Programs?'",
+ "false_drops": [],
+ "false_drop_cause": "SUPERSEDED. On verification only idx 1 was arguably grounded, and it is a defect anyway (baseline typed as backbone); idx 39 has zero occurrences in the source, so its drop was correct. All 7 drops are defensible and the recall cost is ~0.",
+ "residue_not_fixable_by_typing": {
+  "malformed_subject": [
+   3,
+   20,
+   40
+  ],
+  "generic_or_ineligible_resource": [
+   2,
+   24
+  ],
+  "model_as_evaluation_target": [
+   0,
+   37
+  ]
+ },
+ "drop_rate": 0.14,
+ "recall_cost": 0.0,
+ "sol_rescues_verified_against_source": {
+  "method": "searched the FULL source (body_window+abstract+title) for each resource Sol rescued, instead of accepting the adjudicator's word",
+  "idx_7_BBH": "CONFIRMED \u2014 '82.4 on bbh' is in the source; my defect call was wrong",
+  "idx_46_DeepSearchQA": "CONFIRMED \u2014 named in the abstract's benchmark list",
+  "idx_9_CursorBench": "present, but as a related-work contrast; PRECISE is defensible, DROP would also be",
+  "idx_1_LLaMA_3.1": "PARTLY \u2014 'fair baseline (llama3.1-8b)' IS in the source, so the resource is grounded, but it is a BASELINE, not SHIFT's backbone. The claim typed it P_BUILDS_ON. Still a defect, on relation grounds rather than groundedness.",
+  "idx_39_V*_Bench": "REFUTED \u2014 ZERO occurrences in the full source. Sol's rescue was unsupported; my original DEFECT was right and the DROP was CORRECT."
+ },
+ "adjudicator_lesson": "I accepted Sol's five rescues without checking them against the source \u2014 the same error I had just written a law about. One of the five (idx 39) was a hallucinated rescue. An adjudicator is a second rater, not an oracle: verify its corrections against the evidence exactly as you would your own."
+}

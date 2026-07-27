@@ -42,6 +42,7 @@
   "current_pid": "P_COMPARES_TO",
   "statement": "DLM-SVDD outperforms CSI on multiple anomaly detection benchmarks.",
   "contexts": [
+   "[body] ...esentations III-C Alternating optimization III-C 1 Boundary update under fixed representations III-C 2 CNN update given the boundary III-D Decision function III-E Kernel approximation strategies for improved scalability III-F Convergence analysis IV Experiments IV-A Datasets, evaluation scenarios, and performance metrics. IV-B Implementation details IV-C Anomaly detection IV-D Long-tailed recognition IV-E Empirical optimization behavior IV-F Kernel approximation trade-offs IV-G Ablation Study IV-G 1 Effect of joint training IV-G 2 Effect of kernel approximation IV-G 3 Effect of RBF kernel bandwidth IV-G 4 Effect of within-task anomaly supervision IV-G...",
    "[body] ...olled. Mean-Shifted Contrastive learning (MSC) [ 42 ] further improves pretrained encoders by modifying the contrastive objective to avoid feature collapse and produce more discriminative anomaly scores. Self-supervised and contrastive novelty detectors follow a similar representation-first philosophy. As an instance, CSI [ 49 ] learns discriminative embeddings through contrastive learning on distributionally shifted views while Outlier Exposure [ 10 ] improves robustness using auxiliary outliers and UNODE [ 32 ] pursues universal novelty detection through adaptive contrastive learning whereas FIRM [ 27 ] focuses on learning in-distribution representat..."
   ]
  },
@@ -54,6 +55,7 @@
   "statement": "Latent PDE mapping is demonstrated using physics-informed neural networks.",
   "contexts": [
    "[body] ...fully connected network with eight hidden layers, with 64 neurons in each layer (Figure 3 a), resulting in 33,280 trainable parameters in all hidden layers. The inputs comprised space-time points, as well as geometric descriptors for the given geometry, where applicable. An overview of the hyperparameters used in the PINNs is provided in Table 6 of Appendix C . The PI-DON s [ 43 ] employed separate branch and trunk networks (Figure 3 b), each with six hidden layers of 50 neurons per layer resulting in 30,601 trainable parameters in the hidden layers. Additionally, the trunk network had an output layer of 100 neurons, while the branch network had an ou...",
+   "[body] ...ime points sampled across the input geometry, whereas the branch network received the initial condition ( V 0 V_{0} ) as inputs at fixed sensor locations together with the geometric descriptors describing the geometry. In 2D, the number of sensor locations were equal to the number of observed data measurements for the PINN ( \ud835\udca9 s = \ud835\udca9 d \u200b a \u200b t \u200b a = 14 \\mathcal{N}_{\\mathrm{s}}=\\mathcal{N}_{data}=14 ), while in 3D, the number of sensor locations and observed data measurements were increased to \ud835\udca9 s = \ud835\udca9 d \u200b a \u200b t \u200b a = 42 \\mathcal{N}_{\\mathrm{s}}=\\mathcal{N}_{data}=42 for the PI-DON . Furthermore, we used an interpolation scheme to compute the transmembran...",
    "[body] ...activation function in the hidden layers, while the outputs were sent through the sigmoid and softplus activation functions to generate the transmembrane potential V ^ \\hat{V} and recovery variable W ^ \\hat{W} , respectively. 2.5 Ablation models, training procedures and evaluation methods We developed a collection of PINNs [ 35 ] and PI-DONs [ 43 ] to assess and compare the latent PDE mapping technique (Table 2 )..."
   ]
  },
@@ -167,7 +169,8 @@
   "current_pid": "P_COMPARES_TO",
   "statement": "TRaM-VSR is compared against RealESRGAN on video super-resolution benchmarks.",
   "contexts": [
-   "[body] ...t inference time, TRaM-VSR does not require any manually provided caption or prompt; all quantitative and visual results are obtained under this prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and bl..."
+   "[body] ...t inference time, TRaM-VSR does not require any manually provided caption or prompt; all quantitative and visual results are obtained under this prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and bl...",
+   "[body] ...[ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VSR [ yang2024motion ] STAR [ xie2025star ] DOVE [ chen2025dove ] SeedVR2- 7B [ wang2025seedvr2 ] Ours [ wang2021real ] UDM10 PSNR \u2191 \\uparrow 24.04 23.65 24.13 21.72 24.23 23.47 26.48 25.47 26.73 SS..."
   ]
  },
  {
@@ -202,7 +205,8 @@
   "current_pid": "P_COMPARES_TO",
   "statement": "TRaM-VSR is compared against Upscale-A-Video.",
   "contexts": [
-   "[body] ...nd visual results are obtained under this prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025e..."
+   "[body] ...nd visual results are obtained under this prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025e...",
+   "[body] ...AR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VSR [ yang2024motion ] STAR [ xie2025star ] DOVE [ chen2025dove ] SeedVR2- 7B [ wang2025seedvr2 ] Ours [ wang2021real ] UDM10 PSNR \u2191 \\uparrow 24.04 23.65 24.13 21.72 24.23 23.47 26.48 25.47 26.73 SSIM \u2191 \\uparrow 0.7107 0.6016 0.6801 0.5913 0.6957 0.6804 0.7827 0.7582 0.7759 LPIPS \u2193 \\downarrow 0.3..."
   ]
  },
  {
@@ -213,7 +217,8 @@
   "current_pid": "P_COMPARES_TO",
   "statement": "TRaM-VSR is compared against MGLD-VSR.",
   "contexts": [
-   "[body] ...his prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022inve..."
+   "[body] ...his prompt-free setting. 5.2 Comparison with State-of-the-Art Methods We compare TRaM-VSR against representative state-of-the-art image and video restoration baselines, including RealESRGAN [ wang2021real ] , ResShift [ yue2025efficient ] , RealBasicVSR [ chan2022investigating ] , Upscale-A-Video [ zhou2024upscale ] , MGLD-VSR [ yang2024motion ] , STAR [ xie2025star ] , and DOVE [ chen2025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022inve...",
+   "[body] ...025dove ] . Table 1 : Quantitative comparison with state-of-the-art methods. Best and second-best results are marked in red and blue . Dataset [ wang2021real ] Metric [ wang2021real ] Real- ESRGAN [ wang2021real ] ResShift [ yue2025efficient ] RealBasicVSR [ chan2022investigating ] Upscale-A- Video [ zhou2024upscale ] MGLD- VSR [ yang2024motion ] STAR [ xie2025star ] DOVE [ chen2025dove ] SeedVR2- 7B [ wang2025seedvr2 ] Ours [ wang2021real ] UDM10 PSNR \u2191 \\uparrow 24.04 23.65 24.13 21.72 24.23 23.47 26.48 25.47 26.73 SSIM \u2191 \\uparrow 0.7107 0.6016 0.6801 0.5913 0.6957 0.6804 0.7827 0.7582 0.7759 LPIPS \u2193 \\downarrow 0.3877 0.5537 0.3908 0.4116 0.3272 0.424..."
   ]
  },
  {
@@ -493,7 +498,7 @@
   "statement": "RUL and failure-mode prediction are formulated as vector General Value Function prediction.",
   "contexts": [
    "[body] ...redictive state from the definition of the prognostic target: different sensor representations may be used without changing the hitting-time and hitting-probability quantities being predicted. These quantities share a forward-looking structure: each prediction summarizes future evolution until a terminal event occurs. General value functions (GVFs) provide a compact language for defining such temporally [...] experiments. Remark 2 (TD target validity under censoring) . Fix t t and a prefix observed through t + n t+n , with absorption time T T possibly unobserved. The MC target y t MC y_{t}^{\\mathrm{MC}} (Eq. ( 6 )) is well-defined from this prefix onl...",
-   "[abstract] ...ve maintenance. Many data-driven pipelines use fixed-window supervised learning with complete terminal labels; such routes do not naturally encode the temporal recursion linking successive degradation-state predictions when observations are partial or unit identities are unavailable. We formulate prognostics as vector General Value Function (GVF) prediction on an absorbing degradation process, treating RUL and failure-mode probabilities as temporally consistent targets rather than independent window-level labels, and estimate them with a multi-step temporal-difference estimator, TD($n,\u03bb$). Supporting theory identifies the Bellman fixed point of the vec..."
+   "[title] ...General Value Functions for Remaining Useful Life and Failure-Mode Prediction..."
   ]
  },
  {
@@ -572,7 +577,7 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "RAG builds on retrieval augmented generation.",
   "contexts": [
-   "*** no mention located ***"
+   "[abstract] ...integration in zero-shot and few-shot settings. However, they continue to face significant accuracy and cost challenges in enterprise environments due to a persistent knowledge gap. This paper envisions trustworthy, scalable, and cost-efficient integration through knowledge-grounded LLMs and agents operating within a retrieval-augmented generation (RAG) workflow. Here, trustworthiness refers to evidence-grounded, verifiable reasoning, where integration decisions are transparently supported by retrieved knowledge, robust against hallucination, and consistent across tasks. We trace the evolution from classic RAG to GraphRAG and KG-RAG (knowledge graph-b..."
   ]
  },
  {
@@ -630,7 +635,8 @@
   "current_pid": "P_BUILDS_ON",
   "statement": "Mini builds on retrieval augmented generation.",
   "contexts": [
-   "*** no mention located ***"
+   "[body] ...LM-driven generative social robots [ 69 ] are capable of open-ended, context-sensitive dialogue [ 10 , 33 ] , enabling them to respond flexibly to learner questions, provide personalized explanations, and sustain flexible tutoring conversations in real time [ 17 ] . This represents a substantial departure from earlier generations of tutoring robots, whose limited dialogic flexibility constrained their educational utility [ 8 ] . At the same time, the use of GSRs in education introduces substantial risks: LLM-based systems generate responses probabilistically [ 9 ] . Hence, they may produce inaccurate or misleading explanations [ 14 , 16 ] , confirm inc...",
+   "[abstract] ...nses. Prior work identified knowledge-based design (KBD) requirements that define the informational prerequisites for GSRs to manifest responsible and effective tutoring behavior in higher education. In this paper, we operationalized selected KBD requirements in the Reachy Mini robot platform through system prompting, retrieval-augmented generation, and stateful prompt orchestration. As a result, we present Teachy Mini, a GSR tutoring system that was developed using KBD. To test the system, we conducted a preliminary evaluation study. Participants (N = 24) completed a robot-guided learning session about research methodologies. They learned either with..."
   ]
  },
  {

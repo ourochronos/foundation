@@ -38,8 +38,12 @@ Drop when the context shows only:
 - **an incidental role** — a resource used as an LLM *judge*, an
   annotation tool, or a vendor whose API was queried, is none of the
   three relations.
-- **no locatable mention** — the context says `*** no mention located
-  ***`, so nothing supports any typing.
+**NEVER drop on a missing mention.** If the context says `*** no mention
+located ***`, emit **`UNCERTAIN`** and the claim is kept for review. The
+locator that builds these contexts is imperfect and has already thrown
+away two claims whose evidence was demonstrably in the source (D98). A
+tool's failure to find evidence is not evidence of absence, and a stage
+that can delete must abstain instead.
 
 ## Distinctions that are being got wrong right now
 
@@ -56,8 +60,8 @@ Drop when the context shows only:
 Compose ALL rows first, then ONE Write call to your assigned
 `out_K.jsonl` — one JSON object per line, one per input item, same order:
 {"sid": "<copy verbatim>", "pid": "<P_EVALUATES_ON|P_BUILDS_ON|
- P_COMPARES_TO|DROP>", "why": "<short — quote the deciding words>"}
+ P_COMPARES_TO|DROP|UNCERTAIN>", "why": "<short — quote the deciding words>"}
 
 Every input item gets exactly one output row.
 
-Final text: just "done: N typed, E evaluates, B builds, C compares, D dropped".
+Final text: just "done: N typed, E evaluates, B builds, C compares, D dropped, U uncertain".

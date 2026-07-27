@@ -97,7 +97,23 @@
    42,
    48
   ],
-  "flag_cause": "relation typing \u2014 backbone/training-data/data-source recorded as P_EVALUATES_ON, harness and baseline as P_BUILDS_ON, title-fragment subject"
+  "flag_cause": "relation typing \u2014 backbone/training-data/data-source recorded as P_EVALUATES_ON, harness and baseline as P_BUILDS_ON, title-fragment subject",
+  "verified_against_source": {
+   "confirmed": [
+    7,
+    46
+   ],
+   "partly": [
+    1
+   ],
+   "refuted": [
+    39
+   ],
+   "defensible": [
+    9
+   ],
+   "note": "idx 39 rescue was unsupported (0 occurrences in full source); idx 1 grounded but relation wrong. My D97 concession of all five was itself unverified \u2014 an adjudicator is a second rater, not an oracle."
+  }
  },
  "verdict": "FAILS the 0.80 gate on both raters (0.68 / 0.66); resource axis kept but NOT accepted"
 }
