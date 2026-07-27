@@ -1,0 +1,29 @@
+{
+ "audit_acc": 0.79,
+ "audit_ci95": [
+  0.7001985069803768,
+  0.8583445046835422
+ ],
+ "coverage": 0.40767927724449465,
+ "n_pid_relations": 52,
+ "qa_em": 0.12666666666666668,
+ "qa_n": 150,
+ "qa_ci95": [
+  0.082610643407449,
+  0.18936780715468765
+ ],
+ "manifest": {
+  "generated_at": "2026-07-27T00:34:14.460611+00:00",
+  "commit": "9eaa7fc3b97f52f4aaef9cb0e4f5c7be6e9cbd2a",
+  "dirty": true,
+  "command": "scripts/probe_m1_final.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  }
+ }
+}

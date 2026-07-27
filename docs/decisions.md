@@ -2,6 +2,20 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-27 — D72: M1 classifier plateau at 0.79 — gate unmet, precision-beats-recall law measured, priority passes to M3
+**Three configurations, one frozen audit, QA as independent corroboration** (`probe_m1_final.py`, `results/m1_final.json`):
+
+| config | audit | coverage | MuSiQue QA |
+|---|---|---|---|
+| **strict-Haiku (selected)** | **0.79 [0.70–0.86]** | 0.408 | **0.127** |
+| 2-of-3 vote (+191 overrides) | 0.76 | 0.605 | 0.060 |
+| full adjudication | 0.73 | 0.526 | 0.040 |
+
+Both ensemble variants raised coverage and LOWERED both judges — **mis-mapped relations poison pooled operators**: for store artifacts, mapping precision dominates recall, decisively (QA fell 3× as coverage rose 1.5×). Three variants is the disclosed selection limit on a 100-item audit; strict-Haiku is the recorded config.
+**Gate verdict: 0.79 vs ≥0.85 — NOT passed.** Known auditor-label noise (the #28 'occupation' omission; 'presidential candidate for'→P102 defensible) puts the corrected reading ≈0.81–0.82 — still short, reported without touching the frozen file. Residual genuine errors need INSTANCE context, not phrase context ("developed in"→inception-vs-developer requires the subject's type).
+**QA: 0.127 best (6× over the 0.020 floor)** vs the 0.567 extraction ceiling. The remaining QA gap attributes to extraction quality (43% artifact triples, D71) and cross-document entity linking — NOT relation mapping.
+**Strategic close (D67 rails)**: MuSiQue free-prose was L2's stress test, not the target corpus. M1 marks BLOCKED-ON-EXTRACTION-QUALITY; **M3 (Wikipedia: infobox scaffolding, redirect/wikilink ground truth, cleaner prose, statement-first extraction per D69) is now the priority** and doubles as M1's re-test under source material that doesn't manufacture 43% garbage. The 0.85 gate stays standing, unmodified, for that re-test.
+
 ## 2026-07-27 — D71: M1-rescoped IN PROGRESS — trace killed the D66 mystery; classifier v2 at 0.56 vs 0.85 gate; ceiling named
 **The D66 pinned-at-3/150 break is SOLVED by trace** (5 rows, mandatory-first per house discipline): the chain mapper was cosine-matching MuSiQue's raw "»"-format decomposition strings against carrier sentences — near-random similarity — producing chains like ["abolitionist","abolitionist"]. Format normalization is a precondition for ANY open-text mapping; adopted.
 **M1 classifier arc** (`probe_schema_map_m1.py`, `results/schema_map_m1.json`; audit labels FROZEN pre-classifier in c3acfac): schema_v0 = 81 curated Wikidata properties. v1: τ calibrated on MQuAKE positives ONLY — no rejection class existed, τ collapsed to the floor, coverage 0.979 (mapped garbage), audit 0.40. v2: the 6 MQuAKE relations OUTSIDE schema became legitimate NONE calibration cases (τ→0.75) + per-instance value-kind gating: **audit 0.56 [CI 0.46–0.65] vs the ≥0.85 gate — NOT passed**; coverage 0.720.

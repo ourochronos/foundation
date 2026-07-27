@@ -1,0 +1,349 @@
+{"phrase": "about", "kind": "entity", "pid": null}
+{"phrase": "active from", "kind": "entity", "pid": "P937"}
+{"phrase": "adopted by", "kind": "entity", "pid": "P127"}
+{"phrase": "aired in", "kind": "value", "pid": "P571"}
+{"phrase": "album by", "kind": "entity", "pid": "P86"}
+{"phrase": "album type", "kind": "entity", "pid": "P136"}
+{"phrase": "albums", "kind": "entity", "pid": "P86"}
+{"phrase": "appeared in", "kind": "entity", "pid": "P1441"}
+{"phrase": "approximately", "kind": "entity", "pid": "P47"}
+{"phrase": "architecture", "kind": "entity", "pid": "P84"}
+{"phrase": "area", "kind": "entity", "pid": "P276"}
+{"phrase": "arranged by", "kind": "entity", "pid": "P750"}
+{"phrase": "as of", "kind": "entity", "pid": null}
+{"phrase": "assistant coach with", "kind": "entity", "pid": "P286"}
+{"phrase": "at", "kind": "entity", "pid": null}
+{"phrase": "available in", "kind": "entity", "pid": "P1441"}
+{"phrase": "band type", "kind": "entity", "pid": "P175"}
+{"phrase": "based on", "kind": "entity", "pid": "P159"}
+{"phrase": "based on life of", "kind": "entity", "pid": "P159"}
+{"phrase": "based on novel by", "kind": "entity", "pid": "P50"}
+{"phrase": "became ruler of", "kind": "entity", "pid": "P39"}
+{"phrase": "began in", "kind": "value", "pid": "P571"}
+{"phrase": "begins in", "kind": "entity", "pid": "P1441"}
+{"phrase": "between", "kind": "entity", "pid": null}
+{"phrase": "birth name", "kind": "entity", "pid": "P19"}
+{"phrase": "birthplace of", "kind": "entity", "pid": "P19"}
+{"phrase": "born", "kind": "value", "pid": "P569"}
+{"phrase": "born in", "kind": "value", "pid": "P569"}
+{"phrase": "branded as", "kind": "entity", "pid": "P264"}
+{"phrase": "broadcast hours", "kind": "entity", "pid": "P449"}
+{"phrase": "broadcasts", "kind": "entity", "pid": "P449"}
+{"phrase": "brother and husband of", "kind": "entity", "pid": "P26"}
+{"phrase": "builder", "kind": "entity", "pid": "P176"}
+{"phrase": "built", "kind": "entity", "pid": "P176"}
+{"phrase": "built by", "kind": "entity", "pid": "P176"}
+{"phrase": "built in", "kind": "value", "pid": "P571"}
+{"phrase": "built on", "kind": "entity", "pid": "P159"}
+{"phrase": "called", "kind": "entity", "pid": null}
+{"phrase": "came to", "kind": "entity", "pid": null}
+{"phrase": "candidate for", "kind": "entity", "pid": "P1411"}
+{"phrase": "captain of", "kind": "entity", "pid": "P286"}
+{"phrase": "career start", "kind": "entity", "pid": "P106"}
+{"phrase": "carries", "kind": "entity", "pid": null}
+{"phrase": "carries over", "kind": "entity", "pid": null}
+{"phrase": "category", "kind": "entity", "pid": "P136"}
+{"phrase": "caused", "kind": "entity", "pid": null}
+{"phrase": "chairman", "kind": "entity", "pid": "P35"}
+{"phrase": "character of", "kind": "entity", "pid": "P1441"}
+{"phrase": "characteristic", "kind": "entity", "pid": null}
+{"phrase": "chief director of", "kind": "entity", "pid": "P57"}
+{"phrase": "childhood home of", "kind": "entity", "pid": "P19"}
+{"phrase": "chosen by", "kind": "entity", "pid": "P39"}
+{"phrase": "churches", "kind": "entity", "pid": "P140"}
+{"phrase": "close to border with", "kind": "entity", "pid": "P47"}
+{"phrase": "coded in", "kind": "entity", "pid": "P1441"}
+{"phrase": "codriver", "kind": "entity", "pid": "P178"}
+{"phrase": "cofounded", "kind": "entity", "pid": "P112"}
+{"phrase": "cofounder of", "kind": "entity", "pid": "P112"}
+{"phrase": "competed at", "kind": "entity", "pid": "P69"}
+{"phrase": "compiles songs from", "kind": "entity", "pid": "P86"}
+{"phrase": "completed in", "kind": "value", "pid": "P571"}
+{"phrase": "concubine of", "kind": "entity", "pid": "P26"}
+{"phrase": "connected to", "kind": "entity", "pid": "P47"}
+{"phrase": "constructed in", "kind": "entity", "pid": "P740"}
+{"phrase": "constructed on", "kind": "entity", "pid": "P306"}
+{"phrase": "contains", "kind": "entity", "pid": null}
+{"phrase": "contemporary designs", "kind": "entity", "pid": null}
+{"phrase": "contents", "kind": "entity", "pid": null}
+{"phrase": "contract with", "kind": "entity", "pid": "P264"}
+{"phrase": "cost", "kind": "entity", "pid": "P38"}
+{"phrase": "county", "kind": "entity", "pid": "P131"}
+{"phrase": "county seat of", "kind": "entity", "pid": "P36"}
+{"phrase": "coverage", "kind": "entity", "pid": "P750"}
+{"phrase": "covers", "kind": "entity", "pid": null}
+{"phrase": "created", "kind": "entity", "pid": "P170"}
+{"phrase": "credited to", "kind": "entity", "pid": null}
+{"phrase": "crosses under", "kind": "entity", "pid": "P47"}
+{"phrase": "dates", "kind": "entity", "pid": null}
+{"phrase": "daughter of", "kind": "entity", "pid": "P26"}
+{"phrase": "death", "kind": "entity", "pid": "P20"}
+{"phrase": "decided at", "kind": "entity", "pid": "P39"}
+{"phrase": "degree in", "kind": "entity", "pid": null}
+{"phrase": "denomination", "kind": "entity", "pid": "P1411"}
+{"phrase": "depicted as", "kind": "entity", "pid": "P31"}
+{"phrase": "described as", "kind": "entity", "pid": "P31"}
+{"phrase": "description", "kind": "entity", "pid": null}
+{"phrase": "designated", "kind": "entity", "pid": "P1411"}
+{"phrase": "designated as", "kind": "entity", "pid": "P31"}
+{"phrase": "designated by", "kind": "entity", "pid": "P112"}
+{"phrase": "designed in partnership with", "kind": "entity", "pid": "P170"}
+{"phrase": "determined by", "kind": "entity", "pid": "P112"}
+{"phrase": "developed", "kind": "entity", "pid": "P178"}
+{"phrase": "developed in", "kind": "entity", "pid": "P178"}
+{"phrase": "died", "kind": "entity", "pid": "P20"}
+{"phrase": "directed", "kind": "entity", "pid": "P57"}
+{"phrase": "direction", "kind": "entity", "pid": "P276"}
+{"phrase": "director of lab", "kind": "entity", "pid": "P57"}
+{"phrase": "distributes", "kind": "entity", "pid": "P750"}
+{"phrase": "district", "kind": "entity", "pid": "P131"}
+{"phrase": "downstream of", "kind": "entity", "pid": "P47"}
+{"phrase": "draft position", "kind": "entity", "pid": "P39"}
+{"phrase": "drafted by", "kind": "entity", "pid": "P50"}
+{"phrase": "drains into", "kind": "entity", "pid": "P1056"}
+{"phrase": "drains into at", "kind": "entity", "pid": null}
+{"phrase": "dramaturg at", "kind": "entity", "pid": "P937"}
+{"phrase": "draws in", "kind": "entity", "pid": null}
+{"phrase": "duration", "kind": "entity", "pid": null}
+{"phrase": "edition", "kind": "entity", "pid": null}
+{"phrase": "effectively became", "kind": "entity", "pid": "P39"}
+{"phrase": "enacted by", "kind": "entity", "pid": null}
+{"phrase": "end", "kind": "entity", "pid": "P31"}
+{"phrase": "entered into", "kind": "entity", "pid": "P1441"}
+{"phrase": "established", "kind": "entity", "pid": "P112"}
+{"phrase": "established at", "kind": "entity", "pid": null}
+{"phrase": "established in", "kind": "entity", "pid": "P112"}
+{"phrase": "established through", "kind": "entity", "pid": "P112"}
+{"phrase": "event", "kind": "entity", "pid": null}
+{"phrase": "examples", "kind": "entity", "pid": null}
+{"phrase": "extends into", "kind": "entity", "pid": null}
+{"phrase": "exwife of", "kind": "entity", "pid": "P26"}
+{"phrase": "facility type", "kind": "entity", "pid": "P31"}
+{"phrase": "family", "kind": "entity", "pid": "P551"}
+{"phrase": "family origin", "kind": "entity", "pid": "P138"}
+{"phrase": "father", "kind": "entity", "pid": "P127"}
+{"phrase": "father home", "kind": "entity", "pid": "P551"}
+{"phrase": "father worked in", "kind": "entity", "pid": "P937"}
+{"phrase": "feature", "kind": "entity", "pid": null}
+{"phrase": "features", "kind": "entity", "pid": null}
+{"phrase": "features subject", "kind": "entity", "pid": "P1441"}
+{"phrase": "featuring", "kind": "entity", "pid": null}
+{"phrase": "film type", "kind": "entity", "pid": null}
+{"phrase": "final ruler and only emperor of", "kind": "entity", "pid": "P35"}
+{"phrase": "final ruler of", "kind": "entity", "pid": "P35"}
+{"phrase": "first lady depicted as", "kind": "entity", "pid": null}
+{"phrase": "first success", "kind": "entity", "pid": null}
+{"phrase": "flows from", "kind": "entity", "pid": "P495"}
+{"phrase": "flows in", "kind": "entity", "pid": "P306"}
+{"phrase": "flows into", "kind": "entity", "pid": "P306"}
+{"phrase": "flows to", "kind": "entity", "pid": "P306"}
+{"phrase": "focuses on", "kind": "entity", "pid": "P306"}
+{"phrase": "format", "kind": "entity", "pid": null}
+{"phrase": "formed", "kind": "entity", "pid": "P740"}
+{"phrase": "former", "kind": "entity", "pid": "P155"}
+{"phrase": "formerly known as", "kind": "entity", "pid": "P155"}
+{"phrase": "founded", "kind": "entity", "pid": "P112"}
+{"phrase": "founded upon", "kind": "entity", "pid": "P159"}
+{"phrase": "founding member of", "kind": "entity", "pid": "P463"}
+{"phrase": "friend of", "kind": "entity", "pid": "P26"}
+{"phrase": "from", "kind": "entity", "pid": "P495"}
+{"phrase": "full name", "kind": "entity", "pid": "P138"}
+{"phrase": "funding", "kind": "entity", "pid": null}
+{"phrase": "fused with", "kind": "entity", "pid": "P31"}
+{"phrase": "gained market share from", "kind": "entity", "pid": "P127"}
+{"phrase": "gave birth to", "kind": "entity", "pid": "P26"}
+{"phrase": "grades", "kind": "entity", "pid": "P161"}
+{"phrase": "guided by", "kind": "entity", "pid": "P286"}
+{"phrase": "guitarist of", "kind": "entity", "pid": null}
+{"phrase": "had brief spell at", "kind": "entity", "pid": "P54"}
+{"phrase": "has", "kind": "entity", "pid": null}
+{"phrase": "has authority over", "kind": "entity", "pid": null}
+{"phrase": "has relationship with", "kind": "entity", "pid": null}
+{"phrase": "high sheriff of", "kind": "entity", "pid": "P39"}
+{"phrase": "holding", "kind": "entity", "pid": null}
+{"phrase": "home of", "kind": "entity", "pid": null}
+{"phrase": "home stadium of", "kind": "entity", "pid": null}
+{"phrase": "home to", "kind": "entity", "pid": null}
+{"phrase": "honored as", "kind": "entity", "pid": null}
+{"phrase": "hosts", "kind": "entity", "pid": null}
+{"phrase": "ideology", "kind": "entity", "pid": null}
+{"phrase": "in", "kind": "entity", "pid": null}
+{"phrase": "included in", "kind": "entity", "pid": null}
+{"phrase": "inductee into", "kind": "entity", "pid": null}
+{"phrase": "inductee of", "kind": "entity", "pid": null}
+{"phrase": "initially competed for", "kind": "entity", "pid": null}
+{"phrase": "initiated by", "kind": "entity", "pid": null}
+{"phrase": "introduced", "kind": "entity", "pid": "P112"}
+{"phrase": "involved in", "kind": "entity", "pid": "P937"}
+{"phrase": "is", "kind": "entity", "pid": null}
+{"phrase": "is entry for", "kind": "entity", "pid": null}
+{"phrase": "is extension of", "kind": "entity", "pid": null}
+{"phrase": "is in", "kind": "entity", "pid": null}
+{"phrase": "is seat of", "kind": "entity", "pid": null}
+{"phrase": "is soundtrack to", "kind": "entity", "pid": "P86"}
+{"phrase": "is subsidiary of", "kind": "entity", "pid": null}
+{"phrase": "joined", "kind": "entity", "pid": null}
+{"phrase": "known as", "kind": "entity", "pid": null}
+{"phrase": "last release for", "kind": "entity", "pid": null}
+{"phrase": "launched", "kind": "entity", "pid": "P176"}
+{"phrase": "leader in", "kind": "entity", "pid": "P35"}
+{"phrase": "led", "kind": "entity", "pid": "P264"}
+{"phrase": "led by", "kind": "entity", "pid": "P286"}
+{"phrase": "length", "kind": "entity", "pid": null}
+{"phrase": "literary editor of", "kind": "entity", "pid": "P50"}
+{"phrase": "lived", "kind": "entity", "pid": "P551"}
+{"phrase": "located on border", "kind": "entity", "pid": null}
+{"phrase": "made of", "kind": "entity", "pid": "P176"}
+{"phrase": "made use of", "kind": "entity", "pid": "P176"}
+{"phrase": "made with", "kind": "entity", "pid": "P176"}
+{"phrase": "maiden name", "kind": "entity", "pid": "P138"}
+{"phrase": "main centre in", "kind": "entity", "pid": null}
+{"phrase": "managed by", "kind": "entity", "pid": "P108"}
+{"phrase": "meaning", "kind": "entity", "pid": null}
+{"phrase": "measure by", "kind": "entity", "pid": null}
+{"phrase": "member role", "kind": "entity", "pid": null}
+{"phrase": "merged to form", "kind": "entity", "pid": "P740"}
+{"phrase": "military position", "kind": "entity", "pid": null}
+{"phrase": "mother", "kind": "entity", "pid": "P103"}
+{"phrase": "mother father", "kind": "entity", "pid": "P127"}
+{"phrase": "mother is", "kind": "entity", "pid": "P103"}
+{"phrase": "mother of", "kind": "entity", "pid": "P103"}
+{"phrase": "moved to", "kind": "entity", "pid": null}
+{"phrase": "music releases", "kind": "entity", "pid": null}
+{"phrase": "name", "kind": "entity", "pid": null}
+{"phrase": "near", "kind": "entity", "pid": null}
+{"phrase": "nominated", "kind": "entity", "pid": "P1411"}
+{"phrase": "north of", "kind": "entity", "pid": null}
+{"phrase": "northwest of", "kind": "entity", "pid": null}
+{"phrase": "notes", "kind": "entity", "pid": "P264"}
+{"phrase": "now broadcast", "kind": "entity", "pid": "P449"}
+{"phrase": "now known as", "kind": "entity", "pid": "P800"}
+{"phrase": "of", "kind": "entity", "pid": null}
+{"phrase": "offers", "kind": "entity", "pid": "P1056"}
+{"phrase": "office location", "kind": "entity", "pid": null}
+{"phrase": "official name", "kind": "entity", "pid": null}
+{"phrase": "on", "kind": "entity", "pid": null}
+{"phrase": "on routes", "kind": "entity", "pid": null}
+{"phrase": "only living member of", "kind": "entity", "pid": null}
+{"phrase": "only person to carry title of", "kind": "entity", "pid": null}
+{"phrase": "opened", "kind": "entity", "pid": null}
+{"phrase": "opening date", "kind": "value", "pid": null}
+{"phrase": "origin", "kind": "entity", "pid": null}
+{"phrase": "originally broadcast", "kind": "entity", "pid": null}
+{"phrase": "osiris is", "kind": "entity", "pid": null}
+{"phrase": "owned", "kind": "entity", "pid": null}
+{"phrase": "participating nations", "kind": "entity", "pid": "P17"}
+{"phrase": "partner of", "kind": "entity", "pid": "P26"}
+{"phrase": "period", "kind": "entity", "pid": null}
+{"phrase": "persona", "kind": "entity", "pid": null}
+{"phrase": "pet is", "kind": "entity", "pid": null}
+{"phrase": "played", "kind": "entity", "pid": "P161"}
+{"phrase": "played by", "kind": "entity", "pid": "P161"}
+{"phrase": "plays", "kind": "entity", "pid": "P54"}
+{"phrase": "population", "kind": "entity", "pid": null}
+{"phrase": "position", "kind": "entity", "pid": null}
+{"phrase": "posthumously honored as", "kind": "entity", "pid": "P166"}
+{"phrase": "praised", "kind": "entity", "pid": "P161"}
+{"phrase": "premiered in", "kind": "entity", "pid": null}
+{"phrase": "president from", "kind": "entity", "pid": "P35"}
+{"phrase": "president of", "kind": "entity", "pid": null}
+{"phrase": "presidential candidate for", "kind": "entity", "pid": null}
+{"phrase": "previously known as", "kind": "entity", "pid": "P155"}
+{"phrase": "produced", "kind": "entity", "pid": "P1056"}
+{"phrase": "produced by", "kind": "entity", "pid": null}
+{"phrase": "produced most of", "kind": "entity", "pid": "P176"}
+{"phrase": "product of", "kind": "entity", "pid": "P1056"}
+{"phrase": "professor at", "kind": "entity", "pid": null}
+{"phrase": "proposed", "kind": "entity", "pid": "P178"}
+{"phrase": "protected by", "kind": "entity", "pid": "P131"}
+{"phrase": "publication type", "kind": "entity", "pid": null}
+{"phrase": "publication year", "kind": "value", "pid": null}
+{"phrase": "published", "kind": "value", "pid": null}
+{"phrase": "published from", "kind": "entity", "pid": null}
+{"phrase": "published in", "kind": "value", "pid": "P571"}
+{"phrase": "published in", "kind": "entity", "pid": null}
+{"phrase": "racing league", "kind": "entity", "pid": "P641"}
+{"phrase": "ran for president", "kind": "entity", "pid": "P35"}
+{"phrase": "reached", "kind": "entity", "pid": "P69"}
+{"phrase": "received", "kind": "entity", "pid": "P166"}
+{"phrase": "received votes in", "kind": "entity", "pid": "P39"}
+{"phrase": "recorded by", "kind": "entity", "pid": "P175"}
+{"phrase": "region", "kind": "entity", "pid": null}
+{"phrase": "registered in", "kind": "entity", "pid": null}
+{"phrase": "reigned", "kind": "entity", "pid": "P35"}
+{"phrase": "rejoined", "kind": "entity", "pid": "P69"}
+{"phrase": "released by", "kind": "entity", "pid": null}
+{"phrase": "released in", "kind": "entity", "pid": "P123"}
+{"phrase": "released on", "kind": "value", "pid": null}
+{"phrase": "released on", "kind": "entity", "pid": null}
+{"phrase": "released under", "kind": "entity", "pid": "P750"}
+{"phrase": "replaced", "kind": "entity", "pid": "P156"}
+{"phrase": "represented", "kind": "entity", "pid": "P1532"}
+{"phrase": "represented in", "kind": "entity", "pid": null}
+{"phrase": "represents", "kind": "entity", "pid": null}
+{"phrase": "role in", "kind": "entity", "pid": null}
+{"phrase": "ruled", "kind": "entity", "pid": "P1830"}
+{"phrase": "run by", "kind": "entity", "pid": "P306"}
+{"phrase": "school board", "kind": "entity", "pid": "P69"}
+{"phrase": "schools", "kind": "entity", "pid": "P69"}
+{"phrase": "scored", "kind": "entity", "pid": "P161"}
+{"phrase": "seat of", "kind": "entity", "pid": null}
+{"phrase": "served", "kind": "entity", "pid": "P937"}
+{"phrase": "served from", "kind": "entity", "pid": "P937"}
+{"phrase": "served in", "kind": "entity", "pid": null}
+{"phrase": "served with", "kind": "entity", "pid": null}
+{"phrase": "serves", "kind": "entity", "pid": "P108"}
+{"phrase": "set", "kind": "entity", "pid": null}
+{"phrase": "shaped like", "kind": "entity", "pid": null}
+{"phrase": "shipped", "kind": "entity", "pid": "P176"}
+{"phrase": "similar to", "kind": "entity", "pid": null}
+{"phrase": "spans", "kind": "entity", "pid": null}
+{"phrase": "speaks", "kind": "entity", "pid": null}
+{"phrase": "specializes in", "kind": "entity", "pid": "P452"}
+{"phrase": "stage type", "kind": "entity", "pid": null}
+{"phrase": "stands for", "kind": "entity", "pid": null}
+{"phrase": "started career with", "kind": "entity", "pid": null}
+{"phrase": "started in", "kind": "value", "pid": "P571"}
+{"phrase": "state", "kind": "entity", "pid": "P131"}
+{"phrase": "states", "kind": "entity", "pid": "P131"}
+{"phrase": "status", "kind": "entity", "pid": null}
+{"phrase": "studied", "kind": "entity", "pid": "P69"}
+{"phrase": "subject", "kind": "entity", "pid": null}
+{"phrase": "supported by", "kind": "entity", "pid": "P31"}
+{"phrase": "surgery type", "kind": "entity", "pid": "P31"}
+{"phrase": "surpassed", "kind": "entity", "pid": "P155"}
+{"phrase": "symbol of", "kind": "entity", "pid": null}
+{"phrase": "symbolized", "kind": "entity", "pid": null}
+{"phrase": "takes", "kind": "entity", "pid": null}
+{"phrase": "teaches at", "kind": "entity", "pid": null}
+{"phrase": "technology", "kind": "entity", "pid": null}
+{"phrase": "television type", "kind": "entity", "pid": null}
+{"phrase": "time", "kind": "entity", "pid": null}
+{"phrase": "time period", "kind": "entity", "pid": null}
+{"phrase": "title", "kind": "entity", "pid": null}
+{"phrase": "to", "kind": "entity", "pid": null}
+{"phrase": "took market share from", "kind": "entity", "pid": "P127"}
+{"phrase": "trademark", "kind": "entity", "pid": null}
+{"phrase": "transferred to", "kind": "entity", "pid": null}
+{"phrase": "transitioned to", "kind": "entity", "pid": null}
+{"phrase": "triggers", "kind": "entity", "pid": null}
+{"phrase": "used for", "kind": "entity", "pid": null}
+{"phrase": "uses design", "kind": "entity", "pid": "P170"}
+{"phrase": "venture type", "kind": "entity", "pid": null}
+{"phrase": "vice president", "kind": "entity", "pid": null}
+{"phrase": "video game type", "kind": "entity", "pid": null}
+{"phrase": "visited city", "kind": "entity", "pid": "P69"}
+{"phrase": "warlord in", "kind": "entity", "pid": "P39"}
+{"phrase": "was", "kind": "entity", "pid": null}
+{"phrase": "was in", "kind": "entity", "pid": null}
+{"phrase": "wearing", "kind": "entity", "pid": null}
+{"phrase": "westernmost point of", "kind": "entity", "pid": null}
+{"phrase": "within", "kind": "entity", "pid": null}
+{"phrase": "won on", "kind": "entity", "pid": "P166"}
+{"phrase": "worked as", "kind": "entity", "pid": null}
+{"phrase": "worked at", "kind": "entity", "pid": null}
+{"phrase": "worked on", "kind": "entity", "pid": "P937"}
+{"phrase": "written in", "kind": "value", "pid": "P571"}
+{"phrase": "wrote", "kind": "entity", "pid": "P50"}
+{"phrase": "wrote lyrics for", "kind": "entity", "pid": "P50"}
+{"phrase": "year", "kind": "value", "pid": "P570"}

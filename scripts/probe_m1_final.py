@@ -40,7 +40,31 @@ for f in sorted((ROOT / "data" / "m1_shards").glob("out_*.jsonl")):
             rel_map[(d["phrase"], d["kind"])] = d.get("pid")
         except Exception:
             continue
-print(f"[merge] {len(rel_map)} (phrase,kind) classifications", flush=True)
+# 2-of-3 vote: adjudicator overrides strict-Haiku ONLY where it agrees
+# with the cosine classifier (full-override adjudication scored 0.73 and
+# poisoned operators, QA 0.040 — recall without precision is negative)
+cosine = json.loads((ROOT / "results" / "schema_map_m1.json"
+                     ).read_text())["rel_map"]
+adj = ROOT / "data" / "m1_shards" / "adjudicated.jsonl"
+n_ov = 0
+import os
+if adj.exists() and os.environ.get("M1_VOTE") == "1":
+    for line in adj.read_text().splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            d = json.loads(line)
+        except Exception:
+            continue
+        key = (d["phrase"], d["kind"])
+        cpid = cosine.get(f'{d["phrase"]}|{d["kind"]}')
+        if d.get("pid") is not None and d.get("pid") == cpid \
+                and rel_map.get(key) != d["pid"]:
+            rel_map[key] = d["pid"]
+            n_ov += 1
+print(f"[merge] {len(rel_map)} classifications "
+      f"(+{n_ov} two-of-three overrides)", flush=True)
 
 # ---- audit (frozen labels, c3acfac) ---------------------------------------
 audit = json.loads((ROOT / "data" / "m1_audit_100.json").read_text())
