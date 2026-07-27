@@ -55,9 +55,9 @@ sys.path.insert(0, str(ROOT))
 from codec.brief import FUNCTIONAL_PIDS, subject_brief  # noqa: E402
 from codec.manifest import run_manifest, wilson_ci      # noqa: E402
 
-ROUND = 2
-rng = random.Random(8 if ROUND == 2 else 7)
-SFX = "_r2" if ROUND == 2 else ""
+ROUND = 3
+rng = random.Random({2: 8, 3: 9}.get(ROUND, 7))
+SFX = {2: "_r2", 3: "_r3"}.get(ROUND, "")
 
 entries = []
 for f in sorted((ROOT / "data/wiki/shards_final").glob("out_*.jsonl")):
@@ -176,7 +176,7 @@ out = {"round": ROUND, "subjects": rich,
                          for b in briefs.values()),
        "distractor": distr, "disputes": disp,
        "faithfulness": None,
-       "manifest": run_manifest(seed=8 if ROUND == 2 else 7)}
+       "manifest": run_manifest(seed={2: 8, 3: 9}.get(ROUND, 7))}
 
 # ---- faithfulness scoring (after frozen labels land) ------------------------
 LBL = ROOT / "data" / f"m5_faithfulness_labels{SFX}.jsonl"

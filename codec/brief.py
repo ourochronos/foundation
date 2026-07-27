@@ -51,18 +51,26 @@ TEMPLATES = {
 }
 GENERIC = "{s}: {p} — {o}."
 
-# Verb-echo rendering (G4 round-1 finding, D81): when the cited statement
-# contains a recognizable predicate BEFORE the object, echo that verb —
-# the sentence is rendered at the strength of its evidence instead of the
-# pid template's semantics ("wrote X" must not become "is known for X").
+# Evidence-grounded rendering (G4 rounds 1-2, D81). Round-2 lesson: any
+# reconstruction that drops or reorders the statement's words can invert
+# meaning ("studied zoology at Harvard" is not "studied Harvard";
+# "attended courses taught by X" is not "taught X"). So: QUOTE, never
+# reconstruct — span-echo copies the statement verbatim from its FIRST
+# predicate verb through the object; failing that, the sentence is the
+# whole statement (entailed by construction).
 _ECHO_VERBS = [
     "was educated by", "was educated at", "educated by", "educated at",
-    "was awarded", "worked on", "worked at", "worked in", "served as",
-    "moved to", "settled in", "wrote", "authored", "published", "proved",
+    "was awarded", "was elected", "was born", "worked on", "worked at",
+    "worked in", "worked with", "works include", "served as", "moved to",
+    "settled in", "graduated", "wrote", "authored", "published", "proved",
     "developed", "introduced", "founded", "discovered", "formulated",
     "established", "created", "tutored", "visited", "studied", "taught",
     "translated", "edited", "composed", "invented", "pioneered",
     "attended", "joined", "led", "directed", "won", "received", "married",
+    "completed", "influenced", "elected", "contributed", "gave", "made",
+    "presented", "delivered", "appointed", "named", "awarded", "held",
+    "earned", "obtained", "defended", "supervised", "mentored",
+    "lectured", "emigrated", "became", "born", "died", "include",
 ]
 _ECHO_RE = re.compile(
     r"\b(" + "|".join(re.escape(v) for v in _ECHO_VERBS) + r")\b", re.I)
@@ -74,18 +82,26 @@ def _norm(s: str) -> str:
 
 
 def _echo(subject: str, obj: str, statement: str) -> str | None:
-    """Echo the statement's own predicate: last _ECHO_VERBS match that
-    precedes the object's occurrence in the statement. None if the object
-    isn't literally in the statement (paraphrase — pid template applies)."""
+    """Verbatim predicate span: statement text from the FIRST _ECHO_VERBS
+    match through the end of the object's occurrence — no words dropped,
+    no clause reordering. None if the object isn't literally in the
+    statement or the span would be unreasonably long."""
     lo = statement.lower().find(obj.lower())
     if lo < 0:
         return None
-    hits = [m for m in _ECHO_RE.finditer(statement) if m.end() <= lo]
+    hits = [m for m in _ECHO_RE.finditer(statement) if m.start() < lo]
     if not hits:
         return None
-    v = hits[-1].group(1)
-    v = v if v.lower().startswith("was ") else v.lower()
-    return f"{subject} {v} {obj}."
+    span = statement[hits[0].start():lo + len(obj)].strip()
+    if len(span) > 100:
+        return None
+    return f"{subject} {span}." if not span.lower().startswith(
+        subject.lower()) else f"{span}."
+
+
+def _quote(statement: str) -> str:
+    s = statement.strip()
+    return s if s.endswith((".", "!", "?")) else s + "."
 
 
 def _renderable(subject: str, e: dict) -> bool:
@@ -109,8 +125,9 @@ def subject_brief(subject: str, pool: list[dict],
            and e.get("pid") and e.get("object")]
     if aspect is not None:
         own = [e for e in own if e["pid"] == aspect]
+    # Guards gate PROSE emission only — every claim still participates in
+    # dispute detection (a telegraphic statement is still a claim).
     withheld = [e["sid"] for e in own if not _renderable(subject, e)]
-    own = [e for e in own if _renderable(subject, e)]
     if not own:
         return {"sentences": [], "abstain": True, "withheld": withheld,
                 "reason": (f"no stored claims about {subject!r}"
@@ -136,12 +153,16 @@ def subject_brief(subject: str, pool: list[dict],
                               for x in es]})
             continue
         for _, es in sorted(distinct.items()):
-            e = es[0]
-            text = _echo(subject, str(e["object"]),
-                         str(e.get("statement", "")))
-            if text is None:
-                text = TEMPLATES.get(pid, GENERIC).format(
-                    s=subject, o=e["object"], p=pid)
+            e = next((x for x in es if x["sid"] not in set(withheld)),
+                     None)
+            if e is None:
+                continue                    # claim held, prose withheld
+            st, obj = str(e.get("statement", "")), str(e["object"])
+            if pid in FUNCTIONAL_PIDS and pid in TEMPLATES \
+                    and _norm(obj) and _norm(obj) in _norm(st):
+                text = TEMPLATES[pid].format(s=subject, o=obj, p=pid)
+            else:
+                text = _echo(subject, obj, st) or _quote(st)
             sentences.append({
                 "text": text, "kind": "fact", "pid": pid,
                 "citations": [e["sid"]]})

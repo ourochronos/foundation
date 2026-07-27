@@ -1,5 +1,5 @@
 {
- "round": 2,
+ "round": 3,
  "subjects": [
   "Maryam Mirzakhani",
   "Aristotle",
@@ -30,20 +30,20 @@
  },
  "disputes": {
   "n": 25,
-  "ok": 24,
-  "rate": 0.96,
+  "ok": 25,
+  "rate": 1.0,
   "ci95": [
-   0.8045552759497747,
-   0.9929039496133008
+   0.8668035060468213,
+   1.0
   ]
  },
  "faithfulness": null,
  "manifest": {
-  "generated_at": "2026-07-27T04:48:26.853170+00:00",
-  "commit": "648ab3c90b8cd03f27682faefc93f6f4c60e597d",
+  "generated_at": "2026-07-27T04:54:10.427308+00:00",
+  "commit": "d8ec37136a7f31fb77752cb66c533eff51cd3b80",
   "dirty": true,
   "command": "scripts/probe_m5_brief.py",
-  "seed": 8,
+  "seed": 9,
   "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
   "versions": {
    "python": "3.12.3",

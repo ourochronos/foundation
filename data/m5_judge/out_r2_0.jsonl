@@ -1,0 +1,25 @@
+{"idx": 0, "verdict": "ENTAILED", "reason": "Fulbright scholar at location entails worked at location"}
+{"idx": 1, "verdict": "NOT_ENTAILED", "reason": "is known for adds evaluative claim beyond bare Wikidata association"}
+{"idx": 2, "verdict": "NOT_ENTAILED", "reason": "completed proof does not entail is known for"}
+{"idx": 3, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 4, "verdict": "ENTAILED", "reason": "appointed to position entails held the position"}
+{"idx": 5, "verdict": "ENTAILED", "reason": "P27 nationality German entails citizen status despite awkward grammar"}
+{"idx": 6, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 7, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 8, "verdict": "NOT_ENTAILED", "reason": "influenced differs from is known for"}
+{"idx": 9, "verdict": "ENTAILED", "reason": "guest professor at location entails worked at"}
+{"idx": 10, "verdict": "ENTAILED", "reason": "rationalist philosopher entails worked as philosopher"}
+{"idx": 11, "verdict": "ENTAILED", "reason": "accepted scholarship at institute entails worked at"}
+{"idx": 12, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 13, "verdict": "ENTAILED", "reason": "Lucasian Professor title entails held the position"}
+{"idx": 14, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 15, "verdict": "ENTAILED", "reason": "elected foreign associate entails received position"}
+{"idx": 16, "verdict": "ENTAILED", "reason": "developed concept of X entails developed X"}
+{"idx": 17, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 18, "verdict": "ENTAILED", "reason": "minor article variation preserves meaning"}
+{"idx": 19, "verdict": "ENTAILED", "reason": "was an author entails worked as author"}
+{"idx": 20, "verdict": "NOT_ENTAILED", "reason": "worked on topic does not entail worked as specialist"}
+{"idx": 21, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 22, "verdict": "ENTAILED", "reason": "published Principia Philosophiae (Principles of Philosophy) entails published Principles of Philosophy"}
+{"idx": 23, "verdict": "ENTAILED", "reason": "was Lucasian Professor entails held position"}
+{"idx": 24, "verdict": "ENTAILED", "reason": "minor article variation preserves meaning"}

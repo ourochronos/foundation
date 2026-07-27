@@ -1,0 +1,50 @@
+{"idx": 0, "verdict": "ENTAILED", "reason": "Fulbright scholar at location entails worked at location"}
+{"idx": 1, "verdict": "NOT_ENTAILED", "reason": "is known for adds evaluative claim beyond bare Wikidata association"}
+{"idx": 2, "verdict": "NOT_ENTAILED", "reason": "completed proof does not entail is known for"}
+{"idx": 3, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 4, "verdict": "ENTAILED", "reason": "appointed to position entails held the position"}
+{"idx": 5, "verdict": "ENTAILED", "reason": "P27 nationality German entails citizen status despite awkward grammar"}
+{"idx": 6, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 7, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 8, "verdict": "NOT_ENTAILED", "reason": "influenced differs from is known for"}
+{"idx": 9, "verdict": "ENTAILED", "reason": "guest professor at location entails worked at"}
+{"idx": 10, "verdict": "ENTAILED", "reason": "rationalist philosopher entails worked as philosopher"}
+{"idx": 11, "verdict": "ENTAILED", "reason": "accepted scholarship at institute entails worked at"}
+{"idx": 12, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 13, "verdict": "ENTAILED", "reason": "Lucasian Professor title entails held the position"}
+{"idx": 14, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 15, "verdict": "ENTAILED", "reason": "elected foreign associate entails received position"}
+{"idx": 16, "verdict": "ENTAILED", "reason": "developed concept of X entails developed X"}
+{"idx": 17, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 18, "verdict": "ENTAILED", "reason": "minor article variation preserves meaning"}
+{"idx": 19, "verdict": "ENTAILED", "reason": "was an author entails worked as author"}
+{"idx": 20, "verdict": "NOT_ENTAILED", "reason": "worked on topic does not entail worked as specialist"}
+{"idx": 21, "verdict": "ENTAILED", "reason": "exact match"}
+{"idx": 22, "verdict": "ENTAILED", "reason": "published Principia Philosophiae (Principles of Philosophy) entails published Principles of Philosophy"}
+{"idx": 23, "verdict": "ENTAILED", "reason": "was Lucasian Professor entails held position"}
+{"idx": 24, "verdict": "ENTAILED", "reason": "minor article variation preserves meaning"}
+{"idx": 25, "verdict": "ENTAILED", "reason": "Hungarian mathematician entails Hungarian citizenship"}
+{"idx": 26, "verdict": "ENTAILED", "reason": "guest professor at institute means worked there"}
+{"idx": 27, "verdict": "NOT_ENTAILED", "reason": "worked with Dionysius II ≠ worked at a person"}
+{"idx": 28, "verdict": "NOT_ENTAILED", "reason": "elected to society ≠ received society"}
+{"idx": 29, "verdict": "ENTAILED", "reason": "P19 birthplace property confirms Leipzig"}
+{"idx": 30, "verdict": "NOT_ENTAILED", "reason": "studied zoology at Harvard ≠ studied Harvard"}
+{"idx": 31, "verdict": "ENTAILED", "reason": "wrote paper on Happy Ending problem entails authored paper about it"}
+{"idx": 32, "verdict": "ENTAILED", "reason": "P39 position property confirms Royal Society presidency"}
+{"idx": 33, "verdict": "ENTAILED", "reason": "source and rendered identical"}
+{"idx": 34, "verdict": "ENTAILED", "reason": "P19 birthplace property confirms Woolsthorpe Manor"}
+{"idx": 35, "verdict": "ENTAILED", "reason": "P39 position property confirms Imperial Court Councillor"}
+{"idx": 36, "verdict": "ENTAILED", "reason": "template rendering: concept of four causes = developed four causes"}
+{"idx": 37, "verdict": "NOT_ENTAILED", "reason": "gave contributions to ≠ is known for (per instruction example)"}
+{"idx": 38, "verdict": "NOT_ENTAILED", "reason": "wrote for Encyclopedia ≠ wrote Encyclopedia Americana"}
+{"idx": 39, "verdict": "ENTAILED", "reason": "source and rendered express same fact"}
+{"idx": 40, "verdict": "ENTAILED", "reason": "core fact confirmed despite additional contextual details"}
+{"idx": 41, "verdict": "ENTAILED", "reason": "P937 employment property confirms Stanford"}
+{"idx": 42, "verdict": "ENTAILED", "reason": "was an alchemist = worked as alchemist"}
+{"idx": 43, "verdict": "NOT_ENTAILED", "reason": "attended courses taught by Łukasiewicz ≠ Tarski taught him"}
+{"idx": 44, "verdict": "ENTAILED", "reason": "source confirms publication of this work"}
+{"idx": 45, "verdict": "ENTAILED", "reason": "specializes in number theory entails worked in number theory"}
+{"idx": 46, "verdict": "ENTAILED", "reason": "source and rendered identical"}
+{"idx": 47, "verdict": "ENTAILED", "reason": "source and rendered identical"}
+{"idx": 48, "verdict": "ENTAILED", "reason": "graduated from university entails was educated at university"}
+{"idx": 49, "verdict": "NOT_ENTAILED", "reason": "elected member of academy ≠ received academy"}

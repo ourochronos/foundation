@@ -18,7 +18,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani married Jan Vondrak.",
+    "text": "Maryam Mirzakhani was married to Jan Vondrak.",
     "kind": "fact",
     "pid": "P26",
     "citations": [
@@ -50,7 +50,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani worked as a mathematician.",
+    "text": "Maryam Mirzakhani worked as mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -74,7 +74,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani received the American Academy of Arts and Sciences.",
+    "text": "Maryam Mirzakhani elected to American Academy of Arts and Sciences.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -82,7 +82,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani received the American Philosophical Society.",
+    "text": "Maryam Mirzakhani elected to American Philosophical Society.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -98,7 +98,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani received the Clay Mathematics Institute research fellow.",
+    "text": "Maryam Mirzakhani was Clay Mathematics Institute research fellow in 2004.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -122,7 +122,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani received the foreign associate to French Academy of Sciences.",
+    "text": "Maryam Mirzakhani was elected foreign associate to French Academy of Sciences.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -130,7 +130,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani received the foreign associate to the French Academy of Sciences.",
+    "text": "Maryam Mirzakhani elected foreign associate to the French Academy of Sciences.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -146,7 +146,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani received the gold medal in Iranian National Olympiad.",
+    "text": "Maryam Mirzakhani won gold medal in mathematics at Iranian National Olympiad in junior and senior years.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -154,7 +154,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani received the International Mathematical Olympiad gold medal.",
+    "text": "Maryam Mirzakhani won gold medal in International Mathematical Olympiad in Hong Kong in 1994.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -162,7 +162,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani received the National Academy of Sciences.",
+    "text": "Maryam Mirzakhani elected to National Academy of Sciences.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -194,7 +194,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani was advised by Curtis T. McMullen.",
+    "text": "Maryam Mirzakhani supervised by Curtis T. McMullen.",
     "kind": "fact",
     "pid": "P184",
     "citations": [
@@ -202,7 +202,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani held the position of full professor at Stanford University.",
+    "text": "Maryam Mirzakhani became full professor at Stanford in 2009.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -210,7 +210,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani authored Elementary Number Theory, Challenging Problems.",
+    "text": "Maryam Mirzakhani collaborated with Roya Beheshti Zavareh on book Elementary Number Theory, Challenging Problems.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -218,7 +218,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani lived in Palo Alto.",
+    "text": "Maryam Mirzakhani lived in Palo Alto, California.",
     "kind": "fact",
     "pid": "P551",
     "citations": [
@@ -226,7 +226,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani was educated at Harvard University.",
+    "text": "Maryam Mirzakhani earned PhD from Harvard University.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -234,7 +234,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani was educated at Sharif University of Technology.",
+    "text": "Maryam Mirzakhani graduated from Sharif University of Technology.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -250,7 +250,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani worked in Princeton University.",
+    "text": "Maryam Mirzakhani (P937): Princeton University.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -258,7 +258,7 @@
     ]
    },
    {
-    "text": "Maryam Mirzakhani worked in Stanford University.",
+    "text": "Maryam Mirzakhani (P937): Stanford University.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -322,7 +322,7 @@
     ]
    },
    {
-    "text": "Aristotle worked as a logician.",
+    "text": "Aristotle was a logician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -330,7 +330,7 @@
     ]
    },
    {
-    "text": "Aristotle worked as a natural scientist.",
+    "text": "Aristotle was a natural scientist.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -338,7 +338,7 @@
     ]
    },
    {
-    "text": "Aristotle worked as a philosopher.",
+    "text": "Aristotle was a Greek philosopher.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -346,7 +346,7 @@
     ]
    },
    {
-    "text": "Aristotle worked as a polymath.",
+    "text": "Aristotle was a polymath.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -354,7 +354,7 @@
     ]
    },
    {
-    "text": "Aristotle worked as a zoologist.",
+    "text": "Aristotle was the father of zoology.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -362,7 +362,7 @@
     ]
    },
    {
-    "text": "Aristotle worked at Alexander the Great.",
+    "text": "Aristotle was tutor to Alexander the Great.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -370,7 +370,7 @@
     ]
    },
    {
-    "text": "Aristotle established Lyceum.",
+    "text": "Aristotle established the Lyceum.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -378,7 +378,7 @@
     ]
    },
    {
-    "text": "Aristotle founded Peripatetic school.",
+    "text": "Aristotle founded the Peripatetic school.",
     "kind": "fact",
     "pid": "P112",
     "citations": [
@@ -394,7 +394,7 @@
     ]
    },
    {
-    "text": "Aristotle wrote Metaphysics.",
+    "text": "Aristotle wrote the Metaphysics.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -402,7 +402,7 @@
     ]
    },
    {
-    "text": "Aristotle wrote Nicomachean Ethics.",
+    "text": "Aristotle wrote the Nicomachean Ethics.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -410,7 +410,7 @@
     ]
    },
    {
-    "text": "Aristotle wrote Organon.",
+    "text": "Aristotle wrote the Organon.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -418,7 +418,7 @@
     ]
    },
    {
-    "text": "Aristotle wrote Physics.",
+    "text": "Aristotle wrote the Physics.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -426,7 +426,7 @@
     ]
    },
    {
-    "text": "Aristotle wrote Poetics.",
+    "text": "Aristotle wrote the Poetics.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -434,7 +434,7 @@
     ]
    },
    {
-    "text": "Aristotle wrote Politics.",
+    "text": "Aristotle wrote the Politics.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -442,7 +442,7 @@
     ]
    },
    {
-    "text": "Aristotle wrote Rhetoric.",
+    "text": "Aristotle wrote the Rhetoric.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -450,7 +450,7 @@
     ]
    },
    {
-    "text": "Aristotle tutored Plato.",
+    "text": "Aristotle tutored by Plato.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -458,7 +458,7 @@
     ]
    },
    {
-    "text": "Aristotle studied Plato's Academy.",
+    "text": "Aristotle studied at Plato's Academy.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -474,7 +474,7 @@
     ]
    },
    {
-    "text": "Aristotle is known for classification of organisms.",
+    "text": "Aristotle classified living organisms.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -482,7 +482,7 @@
     ]
    },
    {
-    "text": "Aristotle developed concept of form.",
+    "text": "Aristotle developed the concept of form.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -490,7 +490,7 @@
     ]
    },
    {
-    "text": "Aristotle developed concept of substance.",
+    "text": "Aristotle developed the concept of substance.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -498,7 +498,7 @@
     ]
    },
    {
-    "text": "Aristotle developed doctrine of mean.",
+    "text": "Aristotle developed the doctrine of mean.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -506,7 +506,7 @@
     ]
    },
    {
-    "text": "Aristotle developed four causes.",
+    "text": "Aristotle developed the concept of the four causes.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -514,7 +514,7 @@
     ]
    },
    {
-    "text": "Aristotle is known for laws of thought.",
+    "text": "Aristotle (P800) laws of thought.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -546,7 +546,7 @@
     ]
    },
    {
-    "text": "Aristotle is known for Organon.",
+    "text": "Aristotle (P800): Organon.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -586,7 +586,7 @@
     ]
    },
    {
-    "text": "Aristotle developed potentiality and actuality.",
+    "text": "Aristotle developed the concept of potentiality and actuality.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -594,7 +594,7 @@
     ]
    },
    {
-    "text": "Aristotle developed theory of the syllogism.",
+    "text": "Aristotle developed formal logic and the theory of the syllogism.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -602,7 +602,7 @@
     ]
    },
    {
-    "text": "Aristotle is known for Western philosophy.",
+    "text": "Aristotle influenced Western philosophy.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -610,7 +610,7 @@
     ]
    },
    {
-    "text": "Aristotle wrote ethics.",
+    "text": "Aristotle wrote about ethics.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -651,7 +651,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright was a citizen of United Kingdom.",
+    "text": "Mary Lucy Cartwright was a British mathematician.",
     "kind": "fact",
     "pid": "P27",
     "citations": [
@@ -675,7 +675,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright worked as a mathematician.",
+    "text": "Mary Lucy Cartwright worked as mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -683,7 +683,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright taught Alice Ottley School.",
+    "text": "Mary Lucy Cartwright taught at Alice Ottley School.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -715,7 +715,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright worked at Girton College, Cambridge.",
+    "text": "Mary Cartwright went to Girton College, Cambridge to continue doctoral research.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -723,7 +723,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright worked at University of Cambridge.",
+    "text": "Mary Cartwright was Reader in Theory of Functions at Cambridge from 1959 to 1968.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -731,7 +731,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright taught Wycombe Abbey School.",
+    "text": "Mary Lucy Cartwright taught at Wycombe Abbey School.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -739,7 +739,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright: P1344 \u2014 J. E. Littlewood.",
+    "text": "Mary Lucy Cartwright collaborated with J. E. Littlewood on differential equations.",
     "kind": "fact",
     "pid": "P1344",
     "citations": [
@@ -747,7 +747,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright received the blue plaque.",
+    "text": "Mary Lucy Cartwright was honored with blue plaque at 38 Sherlock Close in Cambridge in 2026.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -755,7 +755,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright received the Dame Commander of the Order of the British Empire.",
+    "text": "Mary Lucy Cartwright made Dame Commander of the Order of the British Empire.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -771,7 +771,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright received the Fellow of the Royal Society.",
+    "text": "Mary Lucy Cartwright elected Fellow of the Royal Society.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -779,7 +779,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright received the Honorary Fellow of Royal Society of Edinburgh.",
+    "text": "Mary Lucy Cartwright was elected Honorary Fellow of Royal Society of Edinburgh.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -787,7 +787,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright received the Honorary Fellow of The Royal Society of Edinburgh.",
+    "text": "Mary Lucy Cartwright was elected Honorary Fellow of The Royal Society of Edinburgh.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -803,7 +803,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright received the Yarrow Research Fellowship.",
+    "text": "Mary Lucy Cartwright awarded Yarrow Research Fellowship.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -811,7 +811,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright was advised by G. H. Hardy.",
+    "text": "Mary Lucy Cartwright supervised by G. H. Hardy.",
     "kind": "fact",
     "pid": "P184",
     "citations": [
@@ -819,7 +819,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright held the position of Mistress of Girton.",
+    "text": "Mary Lucy Cartwright appointed Mistress of Girton.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -827,7 +827,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright held the position of president of Cambridge Association of University Women.",
+    "text": "Mary Lucy Cartwright was president of Cambridge Association of University Women from 1957 to 1960.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -835,7 +835,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright held the position of Reader in the Theory of Functions.",
+    "text": "Mary Lucy Cartwright appointed Reader in the Theory of Functions.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -867,7 +867,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright was educated at Oxford.",
+    "text": "Mary Lucy Cartwright read for D.Phil. at Oxford in 1928.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -875,7 +875,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright studied St Hugh's College.",
+    "text": "Mary Lucy Cartwright studied mathematics at St Hugh's College.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -883,7 +883,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright studied St Hugh's College, Oxford.",
+    "text": "Mary Lucy Cartwright studied mathematics at St Hugh's College, Oxford.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -891,7 +891,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright was educated at University of Oxford.",
+    "text": "Mary Cartwright returned to Oxford in 1928 to read for her D.Phil.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -899,7 +899,7 @@
     ]
    },
    {
-    "text": "Mary Lucy Cartwright is known for The Zeros of Integral Functions of Special Types.",
+    "text": "Mary Cartwright's thesis was titled The Zeros of Integral Functions of Special Types.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -930,7 +930,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener married Margaret Engemann.",
+    "text": "Norbert Wiener was married to Margaret Engemann.",
     "kind": "fact",
     "pid": "P26",
     "citations": [
@@ -963,7 +963,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked as a computer scientist.",
+    "text": "Norbert Wiener (P106): computer scientist.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -971,7 +971,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked as a mathematician.",
+    "text": "Norbert Wiener (P106): mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -979,7 +979,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked as a philosopher.",
+    "text": "Norbert Wiener (P106): philosopher.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -987,7 +987,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at Boston Herald.",
+    "text": "Norbert Wiener was a journalist for the Boston Herald.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -995,7 +995,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at Coll\u00e8ge de France.",
+    "text": "Norbert Wiener was a Fulbright scholar at the Coll\u00e8ge de France in 1951.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1003,7 +1003,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at General Electric.",
+    "text": "Norbert Wiener was an engineer for General Electric.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1011,7 +1011,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener taught Harvard.",
+    "text": "Norbert Wiener taught philosophy at Harvard.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1019,7 +1019,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at Indian Statistical Institute, Calcutta.",
+    "text": "Norbert Wiener was a guest professor at the Indian Statistical Institute, Calcutta 1955-1956.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1027,7 +1027,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at Massachusetts Institute of Technology.",
+    "text": "Norbert Wiener was a professor of mathematics at the Massachusetts Institute of Technology.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1035,7 +1035,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at MIT.",
+    "text": "Norbert Wiener was hired as an instructor of mathematics at MIT.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1043,7 +1043,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at National Defense Research Committee.",
+    "text": "Norbert Wiener accepted an appointment with the National Defense Research Committee in 1941.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1051,7 +1051,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at Netherlands Central Institute for Brain Research.",
+    "text": "Norbert Wiener was at the Netherlands Central Institute for Brain Research in 1964.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1059,7 +1059,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at Tata Institute of Fundamental Research.",
+    "text": "Norbert Wiener was a visiting lecturer at the Tata Institute of Fundamental Research 1953-1954.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1067,7 +1067,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at Tsing-Hua University.",
+    "text": "Norbert Wiener was a visiting lecturer at Tsing-Hua University 1935-1936.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1075,7 +1075,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked at University of Naples.",
+    "text": "Norbert Wiener was a guest professor at the University of Naples 1960-1961.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1083,7 +1083,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener: P119 \u2014 Vittum Hill Cemetery.",
+    "text": "Norbert Wiener and his wife are buried at Vittum Hill Cemetery in Sandwich, New Hampshire.",
     "kind": "fact",
     "pid": "P119",
     "citations": [
@@ -1091,7 +1091,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener won B\u00f6cher Memorial Prize.",
+    "text": "Norbert Wiener won the B\u00f6cher Memorial Prize.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1099,7 +1099,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener received National Medal of Science.",
+    "text": "Norbert Wiener received the National Medal of Science.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1107,7 +1107,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener won U.S. National Book Award.",
+    "text": "Norbert Wiener won the 1965 U.S. National Book Award.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1115,7 +1115,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener was a member of China Aid Society.",
+    "text": "Norbert Wiener was a member of the China Aid Society.",
     "kind": "fact",
     "pid": "P463",
     "citations": [
@@ -1123,7 +1123,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener wrote Encyclopedia Americana.",
+    "text": "Norbert Wiener wrote for the Encyclopedia Americana.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -1131,7 +1131,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener was educated at Ayer High School.",
+    "text": "Norbert Wiener graduated from Ayer High School.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1139,7 +1139,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener studied Cambridge University.",
+    "text": "Norbert Wiener studied with G. H. Hardy at Cambridge University.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1147,7 +1147,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener was educated at Cornell.",
+    "text": "Norbert Wiener transferred to Cornell in 1910 to study philosophy.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1155,7 +1155,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener studied Harvard.",
+    "text": "Norbert Wiener studied zoology at Harvard.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1163,7 +1163,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener was educated at Tufts College.",
+    "text": "Norbert Wiener entered Tufts College in 1906.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1171,7 +1171,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener studied University of G\u00f6ttingen.",
+    "text": "Norbert Wiener studied with David Hilbert at the University of G\u00f6ttingen.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1179,7 +1179,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener published Behavior, Purpose and Teleology.",
+    "text": "Norbert Wiener published a work titled Behavior, Purpose and Teleology.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1187,7 +1187,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener published Cybernetics.",
+    "text": "Norbert Wiener published a work titled Cybernetics.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1195,7 +1195,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked on Aberdeen Proving Ground.",
+    "text": "Norbert Wiener worked on ballistics at the Aberdeen Proving Ground.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -1203,7 +1203,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked in Europe.",
+    "text": "Norbert Wiener traveled to Europe in 1914 to study with Bertrand Russell.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -1211,7 +1211,7 @@
     ]
    },
    {
-    "text": "Norbert Wiener worked in Massachusetts Institute of Technology.",
+    "text": "Norbert Wiener (P937): Massachusetts Institute of Technology.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -1282,7 +1282,7 @@
     ]
    },
    {
-    "text": "George Berkeley worked as a clergyman.",
+    "text": "George Berkeley was a clergyman.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1290,7 +1290,7 @@
     ]
    },
    {
-    "text": "George Berkeley worked as a philosopher.",
+    "text": "George Berkeley was a philosopher.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1298,7 +1298,7 @@
     ]
    },
    {
-    "text": "George Berkeley worked as a writer.",
+    "text": "George Berkeley was a writer.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1306,7 +1306,7 @@
     ]
    },
    {
-    "text": "George Berkeley worked at Trinity College Dublin.",
+    "text": "George Berkeley (P108): Trinity College Dublin.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1314,7 +1314,7 @@
     ]
    },
    {
-    "text": "George Berkeley held the position of Bishop of Cloyne.",
+    "text": "George Berkeley (P39): Bishop of Cloyne.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -1322,7 +1322,7 @@
     ]
    },
    {
-    "text": "George Berkeley held the position of Dean of Derry.",
+    "text": "George Berkeley (P39): Dean of Derry.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -1330,7 +1330,7 @@
     ]
    },
    {
-    "text": "George Berkeley held the position of Dean of Dromore.",
+    "text": "George Berkeley (P39): Dean of Dromore.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -1338,7 +1338,7 @@
     ]
    },
    {
-    "text": "George Berkeley lived in Newport.",
+    "text": "George Berkeley lived at Whitehall in Newport.",
     "kind": "fact",
     "pid": "P551",
     "citations": [
@@ -1346,7 +1346,7 @@
     ]
    },
    {
-    "text": "George Berkeley was educated at Kilkenny College.",
+    "text": "George Berkeley (P69): Kilkenny College.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1354,7 +1354,7 @@
     ]
    },
    {
-    "text": "George Berkeley was educated at Trinity College Dublin.",
+    "text": "George Berkeley (P69): Trinity College Dublin.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1362,7 +1362,7 @@
     ]
    },
    {
-    "text": "George Berkeley is known for A Treatise Concerning the Principles of Human Knowledge.",
+    "text": "George Berkeley (P800): A Treatise Concerning the Principles of Human Knowledge.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1370,7 +1370,7 @@
     ]
    },
    {
-    "text": "George Berkeley is known for Alciphron.",
+    "text": "George Berkeley (P800): Alciphron.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1378,7 +1378,7 @@
     ]
    },
    {
-    "text": "George Berkeley is known for An Essay Towards a New Theory of Vision.",
+    "text": "George Berkeley (P800): An Essay Towards a New Theory of Vision.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1386,7 +1386,7 @@
     ]
    },
    {
-    "text": "George Berkeley is known for De Motu.",
+    "text": "George Berkeley (P800): De Motu.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1394,7 +1394,7 @@
     ]
    },
    {
-    "text": "George Berkeley is known for Further Thoughts on Tar-water.",
+    "text": "George Berkeley (P800): Further Thoughts on Tar-water.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1402,7 +1402,7 @@
     ]
    },
    {
-    "text": "George Berkeley is known for The Analyst.",
+    "text": "George Berkeley (P800): The Analyst.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1410,7 +1410,7 @@
     ]
    },
    {
-    "text": "George Berkeley is known for Three Dialogues Between Hylas and Philonous.",
+    "text": "George Berkeley (P800): Three Dialogues Between Hylas and Philonous.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1418,7 +1418,7 @@
     ]
    },
    {
-    "text": "George Berkeley worked in Bermuda.",
+    "text": "George Berkeley (P937): Bermuda.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -1426,7 +1426,7 @@
     ]
    },
    {
-    "text": "George Berkeley worked in Newport, Rhode Island.",
+    "text": "George Berkeley (P937): Newport, Rhode Island.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -1452,7 +1452,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles married Nada Canaan.",
+    "text": "Andrew Wiles was married to Nada Canaan.",
     "kind": "fact",
     "pid": "P26",
     "citations": [
@@ -1460,15 +1460,16 @@
     ]
    },
    {
-    "text": "Andrew Wiles was born on April 11, 1953.",
-    "kind": "fact",
+    "text": "Sources disagree on P569 for Andrew Wiles: '1953' (per Andrew Wiles); 'April 11, 1953' (per Andrew Wiles).",
+    "kind": "dispute",
     "pid": "P569",
     "citations": [
-     "out_g2_1.jsonl:124"
+     "out_g2_1.jsonl:124",
+     "out_v3_0.jsonl:362"
     ]
    },
    {
-    "text": "Andrew Wiles worked as a mathematician.",
+    "text": "Andrew Wiles is an English mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1476,7 +1477,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles worked at Oxford.",
+    "text": "Andrew Wiles appointed Regius Professor of Mathematics at Oxford.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1484,7 +1485,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles worked at Princeton University.",
+    "text": "Andrew Wiles was a Professor of Mathematics at Princeton University.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1492,7 +1493,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles worked at University of Oxford.",
+    "text": "Andrew Wiles is a Royal Society Research Professor at the University of Oxford.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -1500,7 +1501,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles was awarded Abel Prize.",
+    "text": "Andrew Wiles was awarded the 2016 Abel Prize.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1508,7 +1509,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles received the American Academy of Arts and Sciences.",
+    "text": "Andrew Wiles was elected member of the American Academy of Arts and Sciences.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1516,7 +1517,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles was awarded Cole Prize.",
+    "text": "Andrew Wiles was awarded the Cole Prize.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1524,7 +1525,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles was awarded Copley Medal.",
+    "text": "Andrew Wiles was awarded the 2017 Copley Medal.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1532,7 +1533,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles won De Morgan Medal.",
+    "text": "Andrew Wiles won the De Morgan Medal.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1540,7 +1541,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles received the Fellow of the Royal Society.",
+    "text": "Andrew Wiles was elected Fellow of the Royal Society.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1548,7 +1549,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles received the Guggenheim Fellowship.",
+    "text": "Andrew Wiles was a Guggenheim Fellow in 1985-1986.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1556,7 +1557,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles received the Knight Commander of the Order of the British Empire.",
+    "text": "Andrew Wiles appointed a Knight Commander of the Order of the British Empire.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1564,7 +1565,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles received the MacArthur Fellowship.",
+    "text": "Andrew Wiles was a 1997 MacArthur Fellow.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1572,7 +1573,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles was awarded Wolfskehl Prize.",
+    "text": "Andrew Wiles was awarded the Wolfskehl Prize.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -1580,7 +1581,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles published Annals of Mathematics.",
+    "text": "Andrew Wiles published his proof in May 1995 in Annals of Mathematics.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -1588,7 +1589,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles authored Fermat's Last Theorem proof.",
+    "text": "Fermat's Last Theorem was proved by Andrew Wiles.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -1596,7 +1597,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles was educated at Clare College, Cambridge.",
+    "text": "Andrew Wiles earned his PhD from Clare College, Cambridge.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1604,7 +1605,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles was educated at Merton College, Oxford.",
+    "text": "Andrew Wiles earned his bachelor degree from Merton College, Oxford.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1612,7 +1613,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles was educated at Oxford.",
+    "text": "Andrew Wiles graduated from Oxford.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1628,7 +1629,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles is known for Fermat's Last Theorem.",
+    "text": "Andrew Wiles is best known for proving Fermat's Last Theorem.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1636,7 +1637,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles is known for Fermat's Last Theorem proof.",
+    "text": "Andrew Wiles (P800): Fermat's Last Theorem proof.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1660,7 +1661,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles is known for proof of Fermat's Last Theorem.",
+    "text": "Andrew Wiles completed his proof of Fermat's Last Theorem.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1668,7 +1669,7 @@
     ]
    },
    {
-    "text": "Andrew Wiles worked in number theory.",
+    "text": "Andrew Wiles specializes in number theory.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -1701,7 +1702,7 @@
     ]
    },
    {
-    "text": "Isaac Newton was a citizen of England.",
+    "text": "Isaac Newton was an English polymath.",
     "kind": "fact",
     "pid": "P27",
     "citations": [
@@ -1727,7 +1728,7 @@
     ]
    },
    {
-    "text": "Isaac Newton worked as a alchemist.",
+    "text": "Isaac Newton was an alchemist.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1735,7 +1736,7 @@
     ]
    },
    {
-    "text": "Isaac Newton worked as a astronomer.",
+    "text": "Isaac Newton was an astronomer.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1743,7 +1744,7 @@
     ]
    },
    {
-    "text": "Isaac Newton worked as a author.",
+    "text": "Isaac Newton was an author.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1751,7 +1752,7 @@
     ]
    },
    {
-    "text": "Isaac Newton worked as a inventor.",
+    "text": "Isaac Newton was an inventor.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1759,7 +1760,7 @@
     ]
    },
    {
-    "text": "Isaac Newton worked as a mathematician.",
+    "text": "Isaac Newton was a mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1767,7 +1768,7 @@
     ]
    },
    {
-    "text": "Isaac Newton worked as a physicist.",
+    "text": "Isaac Newton was a physicist.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1775,7 +1776,7 @@
     ]
    },
    {
-    "text": "Isaac Newton worked as a theologian.",
+    "text": "Isaac Newton was a theologian.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1791,7 +1792,7 @@
     ]
    },
    {
-    "text": "Isaac Newton held the position of Lucasian Professor of Mathematics.",
+    "text": "Isaac Newton (P39) Lucasian Professor of Mathematics.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -1799,7 +1800,7 @@
     ]
    },
    {
-    "text": "Isaac Newton held the position of Lucasian Professor of Mathematics & Physics.",
+    "text": "Isaac Newton was Lucasian Professor of Mathematics & Physics at Cambridge.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -1807,7 +1808,7 @@
     ]
    },
    {
-    "text": "Isaac Newton held the position of Master of the Royal Mint.",
+    "text": "Isaac Newton (P39) Master of the Royal Mint.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -1815,7 +1816,7 @@
     ]
    },
    {
-    "text": "Isaac Newton held the position of president of the Royal Society.",
+    "text": "Isaac Newton (P39) president of the Royal Society.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -1823,7 +1824,7 @@
     ]
    },
    {
-    "text": "Isaac Newton held the position of Warden of the Royal Mint.",
+    "text": "Isaac Newton (P39) Warden of the Royal Mint.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -1831,7 +1832,7 @@
     ]
    },
    {
-    "text": "Isaac Newton was a member of Trinity College, Cambridge.",
+    "text": "Isaac Newton member Trinity College Cambridge.",
     "kind": "fact",
     "pid": "P463",
     "citations": [
@@ -1839,7 +1840,7 @@
     ]
    },
    {
-    "text": "Isaac Newton authored Methodus fluxionum.",
+    "text": "In his 1671 work Newton listed three kinds of differential equations.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -1847,7 +1848,7 @@
     ]
    },
    {
-    "text": "Isaac Newton authored Opticks.",
+    "text": "Isaac Newton (P50) Opticks.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -1855,7 +1856,7 @@
     ]
    },
    {
-    "text": "Isaac Newton authored Philosophiae Naturalis Principia Mathematica.",
+    "text": "Isaac Newton (P50) Philosophiae Naturalis Principia Mathematica.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -1863,7 +1864,7 @@
     ]
    },
    {
-    "text": "Isaac Newton lived in London.",
+    "text": "Isaac Newton (P551) London.",
     "kind": "fact",
     "pid": "P551",
     "citations": [
@@ -1871,7 +1872,7 @@
     ]
    },
    {
-    "text": "Isaac Newton lived in Woolsthorpe.",
+    "text": "Isaac Newton (P551) Woolsthorpe.",
     "kind": "fact",
     "pid": "P551",
     "citations": [
@@ -1879,7 +1880,7 @@
     ]
    },
    {
-    "text": "Isaac Newton was educated at The King's School.",
+    "text": "Isaac Newton (P69) The King's School.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1887,7 +1888,7 @@
     ]
    },
    {
-    "text": "Isaac Newton was educated at Trinity College, University of Cambridge.",
+    "text": "Isaac Newton (P69) Trinity College, University of Cambridge.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -1947,7 +1948,7 @@
     ]
    },
    {
-    "text": "Archimedes worked as a astronomer.",
+    "text": "Archimedes was an ancient Greek astronomer.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1955,7 +1956,7 @@
     ]
    },
    {
-    "text": "Archimedes worked as a engineer.",
+    "text": "Archimedes was an ancient Greek engineer.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1963,7 +1964,7 @@
     ]
    },
    {
-    "text": "Archimedes worked as a inventor.",
+    "text": "Archimedes was an ancient Greek inventor.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1971,7 +1972,7 @@
     ]
    },
    {
-    "text": "Archimedes worked as a mathematician.",
+    "text": "Archimedes was an ancient Greek mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1979,7 +1980,7 @@
     ]
    },
    {
-    "text": "Archimedes worked as a physicist.",
+    "text": "Archimedes was an ancient Greek physicist.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -1987,7 +1988,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for approximation of pi.",
+    "text": "Archimedes derived an approximation of pi.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -1995,7 +1996,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for Archimedean spiral.",
+    "text": "Archimedes defined and investigated the Archimedean spiral.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2003,7 +2004,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for Archimedes' principle.",
+    "text": "Archimedes enunciated Archimedes' principle of buoyancy.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2011,7 +2012,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for Archimedes' screw pump.",
+    "text": "Archimedes designed Archimedes' screw pump.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2019,7 +2020,7 @@
     ]
    },
    {
-    "text": "Archimedes proved area of a circle.",
+    "text": "Archimedes proved the area of a circle.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2027,7 +2028,7 @@
     ]
    },
    {
-    "text": "Archimedes proved area of an ellipse.",
+    "text": "Archimedes proved the area of an ellipse.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2035,7 +2036,7 @@
     ]
    },
    {
-    "text": "Archimedes proved area under a parabola.",
+    "text": "Archimedes proved the area under a parabola.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2043,7 +2044,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for calculus.",
+    "text": "Archimedes anticipated modern calculus by applying infinitesimals.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2051,7 +2052,7 @@
     ]
    },
    {
-    "text": "Archimedes developed center of gravity.",
+    "text": "Archimedes developed the concept of center of gravity.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2059,7 +2060,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for compound pulleys.",
+    "text": "Archimedes designed compound pulleys.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2067,7 +2068,7 @@
     ]
    },
    {
-    "text": "Archimedes proved law of the lever.",
+    "text": "Archimedes proved the law of the lever.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2075,7 +2076,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for measurement of the Sun.",
+    "text": "Archimedes made measurements of the apparent diameter of the Sun.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2083,7 +2084,7 @@
     ]
    },
    {
-    "text": "Archimedes developed method of exhaustion.",
+    "text": "Archimedes developed the method of exhaustion.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2099,7 +2100,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for planetarium.",
+    "text": "Archimedes built a planetarium device showing celestial movements.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2107,7 +2108,7 @@
     ]
    },
    {
-    "text": "Archimedes proved surface area and volume of a sphere.",
+    "text": "Archimedes proved the surface area and volume of a sphere.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2115,7 +2116,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for system for large numbers.",
+    "text": "Archimedes devised a system using exponentiation for large numbers.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2131,7 +2132,7 @@
     ]
    },
    {
-    "text": "Archimedes is known for war machines.",
+    "text": "Archimedes designed defensive war machines for Syracuse.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2162,7 +2163,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s was a citizen of Hungary.",
+    "text": "Paul Erd\u0151s was a Hungarian mathematician.",
     "kind": "fact",
     "pid": "P27",
     "citations": [
@@ -2186,7 +2187,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked as a approximation theorist.",
+    "text": "Paul Erd\u0151s worked on approximation theory.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2194,7 +2195,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked as a graph theorist.",
+    "text": "Paul Erd\u0151s worked on graph theory.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2202,7 +2203,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked as a mathematical analyst.",
+    "text": "Paul Erd\u0151s worked on mathematical analysis.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2210,7 +2211,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked as a mathematician.",
+    "text": "Paul Erd\u0151s's occupation was mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2218,7 +2219,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked as a mathematician in discrete mathematics.",
+    "text": "Paul Erd\u0151s's work focused on discrete mathematics.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2226,7 +2227,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked as a number theorist.",
+    "text": "Paul Erd\u0151s worked on number theory.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2234,7 +2235,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked as a probability theorist.",
+    "text": "Paul Erd\u0151s worked on probability theory.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2242,7 +2243,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked as a set theorist.",
+    "text": "Paul Erd\u0151s worked on set theory.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2250,7 +2251,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked at Institute for Advanced Study.",
+    "text": "In 1938, Paul Erd\u0151s accepted a scholarship at the Institute for Advanced Study, Princeton, New Jersey.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2290,7 +2291,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked at University of Pennsylvania.",
+    "text": "Paul Erd\u0151s worked at the University of Pennsylvania.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2298,7 +2299,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked at Victoria University of Manchester.",
+    "text": "In 1934, Paul Erd\u0151s took up a post-doctoral fellowship at Victoria University of Manchester.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2306,7 +2307,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s authored Happy Ending problem paper.",
+    "text": "In 1935, Paul Erd\u0151s and George Szekeres wrote a paper generalizing Esther Klein's Happy Ending problem.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -2314,7 +2315,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s was educated at Lip\u00f3t Fej\u00e9r.",
+    "text": "Paul Erd\u0151s's thesis advisor was Lip\u00f3t Fej\u00e9r.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -2322,7 +2323,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s was educated at University of Budapest.",
+    "text": "Paul Erd\u0151s began studying at the University of Budapest at age 17 after winning a national examination.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -2330,7 +2331,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s is known for Bertrand's postulate.",
+    "text": "Paul Erd\u0151s found a proof for Bertrand's postulate by age 20.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2338,7 +2339,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s is known for proof for Bertrand's postulate.",
+    "text": "By age 20, Paul Erd\u0151s had found a proof for Bertrand's postulate.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2346,7 +2347,7 @@
     ]
    },
    {
-    "text": "Paul Erd\u0151s worked in United States.",
+    "text": "In 1938, Paul Erd\u0151s relocated to the United States.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -2386,7 +2387,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell worked as a logician.",
+    "text": "Bertrand Russell was a logician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2394,7 +2395,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell worked as a mathematician.",
+    "text": "Bertrand Russell (P106): mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2402,7 +2403,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell worked as a philosopher.",
+    "text": "Bertrand Russell was a philosopher.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2410,7 +2411,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell worked as a social reformer.",
+    "text": "Bertrand Russell was a social reformer.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2418,7 +2419,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell taught Princeton University.",
+    "text": "Bertrand Russell taught at Princeton University.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2426,7 +2427,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell: P140 \u2014 atheist.",
+    "text": "Bertrand Russell practiced atheist.",
     "kind": "fact",
     "pid": "P140",
     "citations": [
@@ -2434,7 +2435,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell: P140 \u2014 Christian.",
+    "text": "Bertrand Russell practiced Christian.",
     "kind": "fact",
     "pid": "P140",
     "citations": [
@@ -2442,7 +2443,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell: P156 \u2014 Principia Mathematica.",
+    "text": "Principia Mathematica was originally intended as a second volume of Russell's The Principles of Mathematics.",
     "kind": "fact",
     "pid": "P156",
     "citations": [
@@ -2450,7 +2451,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell held the position of Hardy.",
+    "text": "Bertrand Russell referenced by Hardy.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -2490,7 +2491,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell is known for Confiscated by Cambridge Police.",
+    "text": "Bertrand Russell is associated with Confiscated by Cambridge Police.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2498,7 +2499,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell is known for Human Knowledge: Its scope and limits.",
+    "text": "Bertrand Russell wrote about similar problem in Human Knowledge.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2506,7 +2507,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell is known for Introduction to Mathematical Philosophy.",
+    "text": "Bertrand Russell is associated with Introduction to Mathematical Philosophy.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2514,7 +2515,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell is known for On Denoting.",
+    "text": "Bertrand Russell is associated with On Denoting.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2522,7 +2523,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell is known for Soviet Russia\u20141920.",
+    "text": "Bertrand Russell is associated with Soviet Russia\u20141920.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2530,7 +2531,7 @@
     ]
    },
    {
-    "text": "Bertrand Russell is known for The Analysis of Mind.",
+    "text": "Bertrand Russell is associated with The Analysis of Mind.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2569,7 +2570,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski married Maria Witkowska.",
+    "text": "Alfred Tarski was married to Maria Witkowska.",
     "kind": "fact",
     "pid": "P26",
     "citations": [
@@ -2601,7 +2602,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski worked as a logician.",
+    "text": "Alfred Tarski was a Polish-American logician and mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2609,7 +2610,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski worked as a mathematician.",
+    "text": "Alfred Tarski was a Polish-American logician and mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2617,7 +2618,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski taught City College of New York.",
+    "text": "Alfred Tarski taught at City College of New York.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2625,7 +2626,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski taught Harvard University.",
+    "text": "Alfred Tarski taught at Harvard University.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2633,7 +2634,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski worked at Institut Henri Poincar\u00e9.",
+    "text": "Alfred Tarski lectured at the Institut Henri Poincar\u00e9.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2641,7 +2642,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski taught Institute for Advanced Study in Princeton.",
+    "text": "Alfred Tarski taught at the Institute for Advanced Study in Princeton.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2649,7 +2650,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski taught Princeton University.",
+    "text": "Alfred Tarski taught at Princeton University.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2657,7 +2658,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski worked at University College, London.",
+    "text": "Alfred Tarski lectured at University College, London.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2665,7 +2666,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski worked at University of California, Berkeley.",
+    "text": "Alfred Tarski worked at the University of California, Berkeley.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -2673,7 +2674,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski received Berkeley Citation.",
+    "text": "Alfred Tarski received a Berkeley Citation.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -2681,7 +2682,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski received the British Academy.",
+    "text": "Alfred Tarski was elected to the British Academy.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -2689,7 +2690,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski received the Royal Netherlands Academy of Arts and Sciences.",
+    "text": "Alfred Tarski was elected to the Royal Netherlands Academy of Arts and Sciences.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -2697,7 +2698,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski received the United States National Academy of Sciences.",
+    "text": "Alfred Tarski was elected to the United States National Academy of Sciences.",
     "kind": "fact",
     "pid": "P166",
     "citations": [
@@ -2705,7 +2706,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski was a member of Association for Symbolic Logic.",
+    "text": "Alfred Tarski presided over the Association for Symbolic Logic from 1944 to 1946.",
     "kind": "fact",
     "pid": "P463",
     "citations": [
@@ -2713,7 +2714,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski was a member of Lw\u00f3w\u2013Warsaw school of logic.",
+    "text": "Alfred Tarski was a member of the Lw\u00f3w\u2013Warsaw school of logic.",
     "kind": "fact",
     "pid": "P463",
     "citations": [
@@ -2729,7 +2730,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski authored On the Primitive Term of Logistic.",
+    "text": "Alfred Tarski's seminal paper was On the Primitive Term of Logistic published in 1923.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -2745,7 +2746,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski taught Jan \u0141ukasiewicz.",
+    "text": "Alfred Tarski attended courses taught by Jan \u0141ukasiewicz.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -2753,7 +2754,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski was educated at Stanis\u0142aw Le\u015bniewski.",
+    "text": "Alfred Tarski completed his doctorate under Stanis\u0142aw Le\u015bniewski.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -2761,7 +2762,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski taught Stefan Mazurkiewicz.",
+    "text": "Alfred Tarski attended courses taught by Stefan Mazurkiewicz.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -2769,7 +2770,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski was educated at University of Warsaw.",
+    "text": "Alfred Tarski was educated at the University of Warsaw.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -2777,7 +2778,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski taught Wac\u0142aw Sierpi\u0144ski.",
+    "text": "Alfred Tarski attended courses taught by Wac\u0142aw Sierpi\u0144ski.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -2785,7 +2786,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski developed Banach\u2013Tarski paradox.",
+    "text": "Alfred Tarski developed the Banach\u2013Tarski paradox.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2801,7 +2802,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski is known for decidability of elementary algebra and geometry.",
+    "text": "Alfred Tarski proved a fundamental result about elementary algebra and geometry.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2809,7 +2810,7 @@
     ]
    },
    {
-    "text": "Alfred Tarski is known for On the Primitive Term of Logistic.",
+    "text": "Alfred Tarski's dissertation was titled On the Primitive Term of Logistic.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2835,23 +2836,25 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov was born on April 25, 1903.",
-    "kind": "fact",
+    "text": "Sources disagree on P569 for Andrey Kolmogorov: '1903-04-25' (per Andrey Kolmogorov); 'April 25, 1903' (per Andrey Kolmogorov).",
+    "kind": "dispute",
     "pid": "P569",
     "citations": [
-     "out_g2_1.jsonl:164"
+     "out_g2_1.jsonl:164",
+     "out_v3_0.jsonl:381"
     ]
    },
    {
-    "text": "Andrey Kolmogorov died on October 20, 1987.",
-    "kind": "fact",
+    "text": "Sources disagree on P570 for Andrey Kolmogorov: '1987-10-20' (per Andrey Kolmogorov); 'October 20, 1987' (per Andrey Kolmogorov).",
+    "kind": "dispute",
     "pid": "P570",
     "citations": [
-     "out_g2_1.jsonl:165"
+     "out_g2_1.jsonl:165",
+     "out_v3_0.jsonl:382"
     ]
    },
    {
-    "text": "Andrey Kolmogorov worked as a mathematician.",
+    "text": "Andrey Kolmogorov was a Soviet mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2859,7 +2862,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov worked as a probability theorist.",
+    "text": "Andrey Kolmogorov is considered founder of modern probability theory.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -2867,7 +2870,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov published probability papers.",
+    "text": "Andrey Kolmogorov published foundational probability papers.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -2875,7 +2878,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for algorithmic information theory.",
+    "text": "Andrey Kolmogorov gave fundamental contributions to algorithmic information theory.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2883,7 +2886,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov developed axiomatization of probability.",
+    "text": "Andrey Kolmogorov developed the axiomatization of probability.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2891,7 +2894,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for classical mechanics.",
+    "text": "Andrey Kolmogorov gave fundamental contributions to classical mechanics.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2915,7 +2918,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for functional analysis.",
+    "text": "Andrey Kolmogorov gave fundamental contributions to functional analysis.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2931,7 +2934,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for intuitionistic logic.",
+    "text": "Andrey Kolmogorov gave fundamental contributions to intuitionistic logic.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2939,7 +2942,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov discovered Kolmogorov-Arnold representation theorem.",
+    "text": "Andrey Kolmogorov discovered the Kolmogorov-Arnold representation theorem.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2979,7 +2982,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for metric geometry.",
+    "text": "Andrey Kolmogorov made contributions to metric geometry.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2987,7 +2990,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for modern mathematics.",
+    "text": "Andrey Kolmogorov influenced contemporary mathematics.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -2995,7 +2998,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for modern probability theory.",
+    "text": "Andrey Kolmogorov played a central role in the creation of modern probability theory.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -3011,7 +3014,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for probability theory.",
+    "text": "Andrey Kolmogorov published seminal works on probability.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -3043,7 +3046,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for topology.",
+    "text": "Andrey Kolmogorov gave fundamental contributions to topology.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -3051,7 +3054,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov is known for turbulence.",
+    "text": "Andrey Kolmogorov gave fundamental contributions to turbulence.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -3067,7 +3070,7 @@
     ]
    },
    {
-    "text": "Andrey Kolmogorov worked in dynamical systems.",
+    "text": "Andrey Kolmogorov investigated dynamical systems.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -3134,7 +3137,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked as a diplomat.",
+    "text": "Gottfried Wilhelm Leibniz was a diplomat.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -3142,7 +3145,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked as a mathematician.",
+    "text": "Gottfried Wilhelm Leibniz was a mathematician.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -3150,7 +3153,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked as a philosopher.",
+    "text": "Gottfried Wilhelm Leibniz was a philosopher.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -3158,7 +3161,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked as a scientist.",
+    "text": "Gottfried Wilhelm Leibniz was a scientist.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -3166,7 +3169,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked at Electorate of Mainz.",
+    "text": "Gottfried Wilhelm Leibniz (P108): Electorate of Mainz.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -3174,7 +3177,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked at Herzog August Library.",
+    "text": "Gottfried Wilhelm Leibniz (P108): Herzog August Library.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -3182,7 +3185,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked at House of Hanover.",
+    "text": "Gottfried Wilhelm Leibniz (P108): House of Hanover.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -3190,7 +3193,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz invented Leibniz wheel.",
+    "text": "Gottfried Wilhelm Leibniz invented the Leibniz wheel.",
     "kind": "fact",
     "pid": "P170",
     "citations": [
@@ -3198,7 +3201,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz held the position of Imperial Court Councillor.",
+    "text": "Gottfried Wilhelm Leibniz (P39): Imperial Court Councillor.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -3206,7 +3209,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz held the position of Privy Counselor of Justice.",
+    "text": "Gottfried Wilhelm Leibniz (P39): Privy Counselor of Justice.",
     "kind": "fact",
     "pid": "P39",
     "citations": [
@@ -3214,7 +3217,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz was educated at University of Altdorf.",
+    "text": "Gottfried Wilhelm Leibniz (P69): University of Altdorf.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -3222,7 +3225,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz was educated at University of G\u00f6ttingen.",
+    "text": "Gottfried Wilhelm Leibniz (P69): University of G\u00f6ttingen.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -3238,7 +3241,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz was educated at University of Leipzig.",
+    "text": "Gottfried Wilhelm Leibniz (P69): University of Leipzig.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -3246,7 +3249,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz is known for Acta Eruditorum.",
+    "text": "Gottfried Wilhelm Leibniz (P800): Acta Eruditorum.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -3254,7 +3257,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz is known for De Arte Combinatoria.",
+    "text": "Gottfried Wilhelm Leibniz (P800): De Arte Combinatoria.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -3262,7 +3265,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz is known for Scriptores rerum Brunsvicensium.",
+    "text": "Gottfried Wilhelm Leibniz (P800): Scriptores rerum Brunsvicensium.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -3270,7 +3273,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz is known for Theodic\u00e9e.",
+    "text": "Gottfried Wilhelm Leibniz (P800): Theodic\u00e9e.",
     "kind": "fact",
     "pid": "P800",
     "citations": [
@@ -3278,7 +3281,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked in Hanover.",
+    "text": "Gottfried Wilhelm Leibniz (P937): Hanover.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -3286,7 +3289,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked in London.",
+    "text": "Gottfried Wilhelm Leibniz (P937): London.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -3294,7 +3297,7 @@
     ]
    },
    {
-    "text": "Gottfried Wilhelm Leibniz worked in Paris.",
+    "text": "Gottfried Wilhelm Leibniz (P937): Paris.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -3352,7 +3355,7 @@
     ]
    },
    {
-    "text": "Plato worked as a philosopher.",
+    "text": "Plato was an ancient Greek philosopher.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -3360,7 +3363,7 @@
     ]
    },
    {
-    "text": "Plato worked at Dionysius II.",
+    "text": "Plato worked with Syracuse's tyrant Dionysius II.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -3368,7 +3371,7 @@
     ]
    },
    {
-    "text": "Plato: P119 \u2014 Academy, Athens.",
+    "text": "Plato was buried in his garden in the Academy in Athens.",
     "kind": "fact",
     "pid": "P119",
     "citations": [
@@ -3376,7 +3379,7 @@
     ]
    },
    {
-    "text": "Plato wrote Cratylus.",
+    "text": "Plato wrote the dialogue Cratylus.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3384,7 +3387,7 @@
     ]
    },
    {
-    "text": "Plato wrote Euthyphro.",
+    "text": "Plato wrote the dialogue Euthyphro.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3392,7 +3395,7 @@
     ]
    },
    {
-    "text": "Plato wrote Laws.",
+    "text": "Plato wrote the Laws.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3400,7 +3403,7 @@
     ]
    },
    {
-    "text": "Plato wrote Lysis.",
+    "text": "Plato wrote the dialogue Lysis.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3408,7 +3411,7 @@
     ]
    },
    {
-    "text": "Plato wrote Menexenus.",
+    "text": "Plato wrote the dialogue Menexenus.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3416,7 +3419,7 @@
     ]
    },
    {
-    "text": "Plato wrote Meno.",
+    "text": "Plato wrote the dialogue Meno.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3424,7 +3427,7 @@
     ]
    },
    {
-    "text": "Plato wrote Parmenides.",
+    "text": "Plato wrote the dialogue Parmenides.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3432,7 +3435,7 @@
     ]
    },
    {
-    "text": "Plato wrote Phaedo.",
+    "text": "Plato wrote the dialogue Phaedo.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3440,7 +3443,7 @@
     ]
    },
    {
-    "text": "Plato wrote Philebus.",
+    "text": "Plato wrote the dialogue Philebus.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3448,7 +3451,7 @@
     ]
    },
    {
-    "text": "Plato wrote Protagoras.",
+    "text": "Plato wrote the dialogue Protagoras.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3456,7 +3459,7 @@
     ]
    },
    {
-    "text": "Plato wrote Republic.",
+    "text": "Plato wrote the dialogue Republic.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3464,7 +3467,7 @@
     ]
    },
    {
-    "text": "Plato wrote Sophist.",
+    "text": "Plato wrote the dialogue Sophist.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3472,7 +3475,7 @@
     ]
    },
    {
-    "text": "Plato wrote Statesman.",
+    "text": "Plato wrote the dialogue Statesman.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3480,7 +3483,7 @@
     ]
    },
    {
-    "text": "Plato wrote Theaetetus.",
+    "text": "Plato wrote the dialogue Theaetetus.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3488,7 +3491,7 @@
     ]
    },
    {
-    "text": "Plato wrote Timaeus.",
+    "text": "Plato wrote the dialogue Timaeus.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3504,7 +3507,7 @@
     ]
    },
    {
-    "text": "Plato studied Megara.",
+    "text": "Plato studied in Megara.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -3535,7 +3538,7 @@
  "Ren\u00e9 Descartes": {
   "sentences": [
    {
-    "text": "Ren\u00e9 Descartes was born in La Haye en Touraine, France.",
+    "text": "Ren\u00e9 Descartes was born in La Haye en Touraine, Province of Touraine, France.",
     "kind": "fact",
     "pid": "P19",
     "citations": [
@@ -3583,7 +3586,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes worked as a philosopher.",
+    "text": "Ren\u00e9 Descartes was rationalist philosopher.",
     "kind": "fact",
     "pid": "P106",
     "citations": [
@@ -3591,7 +3594,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes joined Dutch States Army.",
+    "text": "Ren\u00e9 Descartes joined the Protestant Dutch States Army.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -3599,7 +3602,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes joined University of Franeker.",
+    "text": "Ren\u00e9 Descartes joined the University of Franeker.",
     "kind": "fact",
     "pid": "P108",
     "citations": [
@@ -3607,7 +3610,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes: P119 \u2014 Abbey of Saint-Germain-des-Pr\u00e9s.",
+    "text": "Ren\u00e9 Descartes was reburied in the Abbey of Saint-Germain-des-Pr\u00e9s in 1819.",
     "kind": "fact",
     "pid": "P119",
     "citations": [
@@ -3615,7 +3618,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes: P119 \u2014 Adolf Fredrik Church, Stockholm.",
+    "text": "Ren\u00e9 Descartes was buried in the churchyard of what became Adolf Fredrik Church in Stockholm.",
     "kind": "fact",
     "pid": "P119",
     "citations": [
@@ -3623,7 +3626,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes wrote Compendium of Music.",
+    "text": "Ren\u00e9 Descartes wrote the Compendium of Music.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3631,7 +3634,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes published Dioptrics.",
+    "text": "Ren\u00e9 Descartes published La Dioptrique (Dioptrics.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3639,7 +3642,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes published Discourse on the Method.",
+    "text": "Ren\u00e9 Descartes published Discours de la m\u00e9thode (Discourse on the Method.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3647,7 +3650,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes published Geometry.",
+    "text": "Ren\u00e9 Descartes published La G\u00e9om\u00e9trie (Geometry.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3655,7 +3658,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes published Meditations on First Philosophy.",
+    "text": "Ren\u00e9 Descartes published Meditationes de Prima Philosophia (Meditations on First Philosophy.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3663,7 +3666,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes published Principles of Philosophy.",
+    "text": "Ren\u00e9 Descartes published Principia Philosophiae (Principles of Philosophy.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3671,7 +3674,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes composed Regulae ad Directionem Ingenii.",
+    "text": "Ren\u00e9 Descartes composed his first essay on method: Regulae ad Directionem Ingenii.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3679,7 +3682,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes published The Meteors.",
+    "text": "Ren\u00e9 Descartes published Les M\u00e9t\u00e9ores (The Meteors.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3687,7 +3690,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes published The Passions of the Soul.",
+    "text": "Ren\u00e9 Descartes published Les Passions de l'\u00e2me (The Passions of the Soul.",
     "kind": "fact",
     "pid": "P50",
     "citations": [
@@ -3703,7 +3706,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes lived in Stockholm.",
+    "text": "Ren\u00e9 Descartes was a guest at the house of Pierre Chanut in Stockholm.",
     "kind": "fact",
     "pid": "P551",
     "citations": [
@@ -3711,7 +3714,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes was established in 1637.",
+    "text": "In 1637, Ren\u00e9 Descartes introduced Cartesian coordinates.",
     "kind": "fact",
     "pid": "P571",
     "citations": [
@@ -3719,7 +3722,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes was educated at Jesuit College of La Fl\u00e8che.",
+    "text": "Ren\u00e9 Descartes entered the Jesuit College of La Fl\u00e8che in 1607.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -3727,7 +3730,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes was educated at Leiden University.",
+    "text": "Ren\u00e9 Descartes enrolled at Leiden University in 1630 under the name Poitevin.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -3735,7 +3738,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes studied University of Poitiers.",
+    "text": "Ren\u00e9 Descartes studied at the University of Poitiers.",
     "kind": "fact",
     "pid": "P69",
     "citations": [
@@ -3743,7 +3746,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes visited Loreto.",
+    "text": "Ren\u00e9 Descartes visited Basilica della Santa Casa in Loreto.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
@@ -3751,7 +3754,7 @@
     ]
    },
    {
-    "text": "Ren\u00e9 Descartes moved to Swedish Empire.",
+    "text": "Ren\u00e9 Descartes moved to the Swedish Empire.",
     "kind": "fact",
     "pid": "P937",
     "citations": [
