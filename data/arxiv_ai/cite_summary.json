@@ -1,0 +1,51 @@
+{
+ "papers_read": 467,
+ "edges": 3840,
+ "self_cites_dropped": 100,
+ "claims": 3840,
+ "in_corpus_edges": 555,
+ "distinct_in_corpus_cited": 67,
+ "top_cited_in_corpus": [
+  {
+   "title": "Qwen3 Technical Report",
+   "citing_papers": 33
+  },
+  {
+   "title": "Training Verifiers to Solve Math Word Problems",
+   "citing_papers": 26
+  },
+  {
+   "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+   "citing_papers": 25
+  },
+  {
+   "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+   "citing_papers": 22
+  },
+  {
+   "title": "Evaluating Large Language Models Trained on Code",
+   "citing_papers": 21
+  },
+  {
+   "title": "The Llama 3 Herd of Models",
+   "citing_papers": 19
+  },
+  {
+   "title": "Qwen2.5 Technical Report",
+   "citing_papers": 18
+  },
+  {
+   "title": "Proceedings 42nd International Conference on Logic Programming",
+   "citing_papers": 17
+  },
+  {
+   "title": "Proximal Policy Optimization Algorithms",
+   "citing_papers": 15
+  },
+  {
+   "title": "Program Synthesis with Large Language Models",
+   "citing_papers": 12
+  }
+ ],
+ "shards": 4
+}

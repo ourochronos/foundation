@@ -1,0 +1,312 @@
+{
+ "audit": "arxivai50",
+ "model": "gpt-5.6-sol",
+ "n": 50,
+ "n_judged": 50,
+ "raw_agreement": 0.84,
+ "cohens_kappa": 0.2673992673992674,
+ "disagreements": [
+  {
+   "idx": 6,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "Directly reflects the stated flexibility and mean constraint."
+  },
+  {
+   "idx": 7,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "The discrete-setting concentration results are accurately stated."
+  },
+  {
+   "idx": 12,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "Accurately states the introduced concept and constant-layer impossibility."
+  },
+  {
+   "idx": 24,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "The value and comparison to sampling noise are stated verbatim."
+  },
+  {
+   "idx": 25,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "It overgeneralizes the taxonomy by omitting its Multi-Agent Systems and predictive-maintenance focus."
+  },
+  {
+   "idx": 36,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "Faithfully combines the reported role narrowing, reduced overlap, and fluid differentiation."
+  },
+  {
+   "idx": 43,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "Directly states the application setting and clingo[DL] focus."
+  },
+  {
+   "idx": 47,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "Both high edge recall and absent baseline evidence trails are stated."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated in the abstract."
+  },
+  "1": {
+   "verdict": "PRECISE",
+   "reason": "Directly states SHIFT uses this reconstruction objective."
+  },
+  "2": {
+   "verdict": "PRECISE",
+   "reason": "The finding is stated verbatim."
+  },
+  "3": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully describes the representation question and distance criterion."
+  },
+  "4": {
+   "verdict": "PRECISE",
+   "reason": "The reported MBPP Pass@1 is exactly 87.40%."
+  },
+  "5": {
+   "verdict": "PRECISE",
+   "reason": "Benchmark purpose, scale, environments, and task families match."
+  },
+  "6": {
+   "verdict": "PRECISE",
+   "reason": "Directly reflects the stated flexibility and mean constraint."
+  },
+  "7": {
+   "verdict": "PRECISE",
+   "reason": "The discrete-setting concentration results are accurately stated."
+  },
+  "8": {
+   "verdict": "PRECISE",
+   "reason": "The framework and absence of circuit simulation are stated verbatim."
+  },
+  "9": {
+   "verdict": "PRECISE",
+   "reason": "Both the 15.60 m/s result and threefold efficiency gain match."
+  },
+  "10": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated experimental conclusion."
+  },
+  "11": {
+   "verdict": "DEFECT",
+   "reason": "It incorrectly scopes the bits-per-parameter finding specifically to Qwen2.5 fine-tuning."
+  },
+  "12": {
+   "verdict": "PRECISE",
+   "reason": "Accurately states the introduced concept and constant-layer impossibility."
+  },
+  "13": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated finding about source attribution."
+  },
+  "14": {
+   "verdict": "PRECISE",
+   "reason": "The percentage and both evaluated domains match exactly."
+  },
+  "15": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully states the workflow and constrained decomposition."
+  },
+  "16": {
+   "verdict": "PRECISE",
+   "reason": "The datasets and consistent multi-step forecasting gains match."
+  },
+  "17": {
+   "verdict": "PRECISE",
+   "reason": "All benchmark counts and native-speaker curation are stated."
+  },
+  "18": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully summarizes the proposed operator and conditioning scope."
+  },
+  "19": {
+   "verdict": "PRECISE",
+   "reason": "The datasets, setting, and state-of-the-art result match."
+  },
+  "20": {
+   "verdict": "PRECISE",
+   "reason": "The framework's detection, rewriting, and flow preservation are explicit."
+  },
+  "21": {
+   "verdict": "PRECISE",
+   "reason": "The abstract investigates LLMs and develops SLM-based code optimization for the stated focus."
+  },
+  "22": {
+   "verdict": "PRECISE",
+   "reason": "Both the semantic interface and federated architecture are explicitly proposed."
+  },
+  "23": {
+   "verdict": "PRECISE",
+   "reason": "This is the paper's explicitly stated proposal."
+  },
+  "24": {
+   "verdict": "PRECISE",
+   "reason": "The value and comparison to sampling noise are stated verbatim."
+  },
+  "25": {
+   "verdict": "DEFECT",
+   "reason": "It overgeneralizes the taxonomy by omitting its Multi-Agent Systems and predictive-maintenance focus."
+  },
+  "26": {
+   "verdict": "PRECISE",
+   "reason": "Model, accuracies, and relevant-sentence restriction match exactly."
+  },
+  "27": {
+   "verdict": "PRECISE",
+   "reason": "Accurately states the components, roles, and RL orchestration."
+  },
+  "28": {
+   "verdict": "PRECISE",
+   "reason": "The preliminary abstraction and listed candidate properties are explicit."
+  },
+  "29": {
+   "verdict": "PRECISE",
+   "reason": "Audit scale and baseline cheating findings match exactly."
+  },
+  "30": {
+   "verdict": "PRECISE",
+   "reason": "This conclusion is stated verbatim."
+  },
+  "31": {
+   "verdict": "DEFECT",
+   "reason": "The abstract concerns vehicle coordination and contains no Rust, Python, or circuitry comparison."
+  },
+  "32": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully states HexLogicAgent's semantic organization and verification process."
+  },
+  "33": {
+   "verdict": "PRECISE",
+   "reason": "Benchmarks, comparison class, and best-result claim all match."
+  },
+  "34": {
+   "verdict": "PRECISE",
+   "reason": "All reported metrics and the BERT comparison match exactly."
+  },
+  "35": {
+   "verdict": "PRECISE",
+   "reason": "Directly states AttriMem's name, attribution guidance, process feedback, and RL use."
+  },
+  "36": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully combines the reported role narrowing, reduced overlap, and fluid differentiation."
+  },
+  "37": {
+   "verdict": "PRECISE",
+   "reason": "Pretraining scale and superior performance claim are explicit."
+  },
+  "38": {
+   "verdict": "PRECISE",
+   "reason": "Both comparative grounding performance and checking overhead are stated verbatim."
+  },
+  "39": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated Compiler-Supported50 result."
+  },
+  "40": {
+   "verdict": "PRECISE",
+   "reason": "The translation outputs and SCM-based pipeline are explicitly described."
+  },
+  "41": {
+   "verdict": "PRECISE",
+   "reason": "Both SpreadsheetBench scores and model associations match exactly."
+  },
+  "42": {
+   "verdict": "PRECISE",
+   "reason": "The claimed disposition and two main proposed causes are explicit."
+  },
+  "43": {
+   "verdict": "PRECISE",
+   "reason": "Directly states the application setting and clingo[DL] focus."
+  },
+  "44": {
+   "verdict": "PRECISE",
+   "reason": "Dataset scope and strongest-correlation result match."
+  },
+  "45": {
+   "verdict": "PRECISE",
+   "reason": "Benchmark purpose and all three domains are explicitly stated."
+  },
+  "46": {
+   "verdict": "PRECISE",
+   "reason": "The Dari gap, zero additional cost, and zero target-data setting are supported."
+  },
+  "47": {
+   "verdict": "PRECISE",
+   "reason": "Both high edge recall and absent baseline evidence trails are stated."
+  },
+  "48": {
+   "verdict": "PRECISE",
+   "reason": "The path-quality and node-expansion findings match the partial-observability setting."
+  },
+  "49": {
+   "verdict": "PRECISE",
+   "reason": "Framework purpose and four-phase pipeline are explicitly stated."
+  }
+ },
+ "my_labels": {
+  "0": "PRECISE",
+  "1": "PRECISE",
+  "2": "PRECISE",
+  "3": "PRECISE",
+  "4": "PRECISE",
+  "5": "PRECISE",
+  "6": "DEFECT",
+  "7": "DEFECT",
+  "8": "PRECISE",
+  "9": "PRECISE",
+  "10": "PRECISE",
+  "11": "DEFECT",
+  "12": "DEFECT",
+  "13": "PRECISE",
+  "14": "PRECISE",
+  "15": "PRECISE",
+  "16": "PRECISE",
+  "17": "PRECISE",
+  "18": "PRECISE",
+  "19": "PRECISE",
+  "20": "PRECISE",
+  "21": "PRECISE",
+  "22": "PRECISE",
+  "23": "PRECISE",
+  "24": "DEFECT",
+  "25": "PRECISE",
+  "26": "PRECISE",
+  "27": "PRECISE",
+  "28": "PRECISE",
+  "29": "PRECISE",
+  "30": "PRECISE",
+  "31": "DEFECT",
+  "32": "PRECISE",
+  "33": "PRECISE",
+  "34": "PRECISE",
+  "35": "PRECISE",
+  "36": "DEFECT",
+  "37": "PRECISE",
+  "38": "PRECISE",
+  "39": "PRECISE",
+  "40": "PRECISE",
+  "41": "PRECISE",
+  "42": "PRECISE",
+  "43": "DEFECT",
+  "44": "PRECISE",
+  "45": "PRECISE",
+  "46": "PRECISE",
+  "47": "DEFECT",
+  "48": "PRECISE",
+  "49": "PRECISE"
+ }
+}

@@ -130,7 +130,7 @@ class KB:
             e.n_anchor += 1
 
     def _entity(self, form: str, pid: str, role: str, other: str | None,
-                page: str, z) -> str:
+                page: str, z, canon_form: str | None = None) -> str:
         """Resolve a mention with TITLE-ENTITY CANONICALIZATION (D82):
         the entity first seen on its own page (form == page title) is
         canonical for that form; later same-form mentions absorb into it
@@ -138,7 +138,8 @@ class KB:
         disagreement is a Track I CONFLICT surface, not individual
         fission (the D49 gate's closed-world prior inverts here).
         Distinct same-name individuals still separate via Wikipedia's
-        disambiguated titles (different forms)."""
+        disambiguated titles (different forms). `canon_form` is the
+        page's title when it differs from its identifier (arXiv)."""
         canon = self._canonical.get(form)
         if canon is not None:
             self._record(canon, form, pid, role, other, z)
@@ -146,21 +147,23 @@ class KB:
         else:
             eid = self.reg.resolve_write(form, pid, role, other, z,
                                          functional=False, batch=page)
-        if form == page:
+        if form == (canon_form or page):
             self._canonical.setdefault(form, eid)
         return eid
 
     def _resolve(self, subject: str, pid: str, obj: str, page: str,
-                 z: np.ndarray | None = None, record: bool = True):
+                 z: np.ndarray | None = None, record: bool = True,
+                 canon_form: str | None = None):
         """Individuate one claim (write-time). Returns (subj_eid, obj_eid,
         id-token set for the store row)."""
         fn = pid in FUNCTIONAL_PIDS
         if is_value(obj):
             se = self._entity(subject, pid, "s",
-                              "v:" + obj.replace(",", ""), page, z)
+                              "v:" + obj.replace(",", ""), page, z,
+                              canon_form)
             return se, None, {se} | id_tokens([obj]) | {f"p:{pid}"}
-        se = self._entity(subject, pid, "s", None, page, z)
-        oe = self._entity(obj, pid, "o", se, page, z)
+        se = self._entity(subject, pid, "s", None, page, z, canon_form)
+        oe = self._entity(obj, pid, "o", se, page, z, canon_form)
         if fn:
             e = self.reg._get(se)
             held = e.functional.get((pid, "s"))
@@ -201,17 +204,28 @@ class KB:
                                  "object": str(d["object"]),
                                  "statement": str(d["statement"]),
                                  "page": str(d.get("page", "?")),
+                                 "page_title": (str(d["page_title"])
+                                                if d.get("page_title")
+                                                else None),
                                  "revid": d.get("revid"),
                                  "sid": f"{f.name}:{ln}"})
+        # A page's canonical form is its TITLE. Wikipedia pages ARE their
+        # title, so page==title there; arXiv pages are IDs, so the title
+        # arrives out-of-band as page_title. Without it, D82's
+        # canonicalization never fires for papers and every citing paper
+        # mints its own eid for the same cited work (measured: one work
+        # cited by 33 papers -> 33 eids, so views/cited_by see nothing).
+        for r in rows:
+            r["canon_form"] = r["page_title"] or r["page"]
         # canonical-page claims first: the title entity must exist before
         # off-page mentions of the same form try to absorb into it (D82)
-        rows.sort(key=lambda r: r["subject"] != r["page"])
+        rows.sort(key=lambda r: r["subject"] != r["canon_form"])
         # canonical PRE-PASS: an OBJECT mention of a person can precede
         # that person's own page rows even after the sort (it rides some
         # OTHER page's subject==page row) and would mint a stray eid —
         # pre-mint every title entity before resolving anything
         for r in rows:
-            if r["subject"] == r["page"] \
+            if r["subject"] == r["canon_form"] \
                     and r["subject"] not in self._canonical:
                 e = self.reg._mint(r["subject"], r["page"])
                 self._canonical[r["subject"]] = e.eid
@@ -222,7 +236,8 @@ class KB:
         new = []
         for r, z in zip(rows, Z):
             se, oe, toks = self._resolve(r["subject"], r["pid"],
-                                         r["object"], r["page"], z)
+                                         r["object"], r["page"], z,
+                                         canon_form=r["canon_form"])
             idx = self.store.add(np.asarray(z, np.float32), [],
                                  r["statement"])
             self.store.ids[idx] = set(toks)
@@ -404,6 +419,22 @@ class KB:
                 {"pid": c["pid"], "object": c["object"], "sid": c["sid"]})
         return {"status": "answered", "eid": eids[0],
                 "views": dict(sorted(by_page.items()))}
+
+    def cited_by(self, subject: str, pid: str = "P_CITES") -> dict:
+        """Object-side view: who points AT this entity. `views` answers
+        'what does page X say', which needs the entity to be a subject;
+        a cited work is only ever an object, so its evidence count lives
+        on the other side of the claim. Sources are the citing pages —
+        the count is an evidence signal, not a quality judgement."""
+        eids = self.resolve_subject(subject)
+        if len(eids) != 1:
+            return {"status": "ambiguous" if eids else "abstain",
+                    "n": 0, "sources": []}
+        pages = sorted({c["page"] for c in self.claims
+                        if c.get("obj_eid") == eids[0] and self._live(c)
+                        and (pid is None or c["pid"] == pid)})
+        return {"status": "answered" if pages else "abstain",
+                "eid": eids[0], "n": len(pages), "sources": pages}
 
     def brief(self, subject: str) -> dict:
         eids = self.resolve_subject(subject)

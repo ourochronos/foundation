@@ -1,0 +1,282 @@
+{
+ "audit": "arxiv50",
+ "model": "gpt-5.6-sol",
+ "n": 50,
+ "n_judged": 50,
+ "raw_agreement": 0.94,
+ "cohens_kappa": 0.5398773006134964,
+ "disagreements": [
+  {
+   "idx": 15,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Omits the quantified PA-model extension statement."
+  },
+  {
+   "idx": 48,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The abstract says (semi)products, not specifically semiproducts."
+  },
+  {
+   "idx": 49,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "Nearly verbatim statement of the separation result."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "PRECISE",
+   "reason": "Directly states the abstract's conjecture."
+  },
+  "1": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated application and result."
+  },
+  "2": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully summarizes the positive tree-like case."
+  },
+  "3": {
+   "verdict": "PRECISE",
+   "reason": "Directly matches the hierarchy's construction."
+  },
+  "4": {
+   "verdict": "PRECISE",
+   "reason": "Restates the theorem with all key hypotheses."
+  },
+  "5": {
+   "verdict": "PRECISE",
+   "reason": "The exhibited non-full example establishes this."
+  },
+  "6": {
+   "verdict": "PRECISE",
+   "reason": "Directly matches the stated chromatic-number result."
+  },
+  "7": {
+   "verdict": "PRECISE",
+   "reason": "Explicitly stated as a consequence."
+  },
+  "8": {
+   "verdict": "DEFECT",
+   "reason": "Drops the required sufficient-condition hypothesis."
+  },
+  "9": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully states the generalization and consequence."
+  },
+  "10": {
+   "verdict": "PRECISE",
+   "reason": "Nearly verbatim statement of the second result."
+  },
+  "11": {
+   "verdict": "PRECISE",
+   "reason": "Directly states the formal sharpness theorem."
+  },
+  "12": {
+   "verdict": "PRECISE",
+   "reason": "Accurately describes the constructed semantics."
+  },
+  "13": {
+   "verdict": "PRECISE",
+   "reason": "Directly states the completeness result."
+  },
+  "14": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully states the semantic characterization."
+  },
+  "15": {
+   "verdict": "DEFECT",
+   "reason": "Omits the quantified PA-model extension statement."
+  },
+  "16": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated theorem."
+  },
+  "17": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated theorem."
+  },
+  "18": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated result."
+  },
+  "19": {
+   "verdict": "PRECISE",
+   "reason": "Directly describes the paper's construction."
+  },
+  "20": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully summarizes the scope and conclusion."
+  },
+  "21": {
+   "verdict": "PRECISE",
+   "reason": "Directly states the exhibited inequality."
+  },
+  "22": {
+   "verdict": "PRECISE",
+   "reason": "Preserves the modularity qualifier for beautiful pairs."
+  },
+  "23": {
+   "verdict": "PRECISE",
+   "reason": "Nearly verbatim statement of the hierarchy's properties."
+  },
+  "24": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated result about new FMP examples."
+  },
+  "25": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated contribution."
+  },
+  "26": {
+   "verdict": "PRECISE",
+   "reason": "Directly matches the main result and extension."
+  },
+  "27": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated purpose and result."
+  },
+  "28": {
+   "verdict": "PRECISE",
+   "reason": "Directly states the abstract's conclusion."
+  },
+  "29": {
+   "verdict": "PRECISE",
+   "reason": "Accurately lists the developed substitution machinery."
+  },
+  "30": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated aim and method."
+  },
+  "31": {
+   "verdict": "PRECISE",
+   "reason": "Directly states the main characterization."
+  },
+  "32": {
+   "verdict": "PRECISE",
+   "reason": "Directly states the Katetov nonreducibility result."
+  },
+  "33": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated classification result."
+  },
+  "34": {
+   "verdict": "DEFECT",
+   "reason": "Drops essential separation, measure, and point-vanishing qualifiers."
+  },
+  "35": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully states the framework's extension."
+  },
+  "36": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated theorem with the correct cardinal range."
+  },
+  "37": {
+   "verdict": "PRECISE",
+   "reason": "Preserves the PIE-limits hypothesis and construction."
+  },
+  "38": {
+   "verdict": "PRECISE",
+   "reason": "Directly states the characterization."
+  },
+  "39": {
+   "verdict": "PRECISE",
+   "reason": "Accurately states the finite-n consistency result."
+  },
+  "40": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated theorem."
+  },
+  "41": {
+   "verdict": "PRECISE",
+   "reason": "Accurately reports the exact counts and setting."
+  },
+  "42": {
+   "verdict": "PRECISE",
+   "reason": "Directly states both complexity results."
+  },
+  "43": {
+   "verdict": "PRECISE",
+   "reason": "Preserves the suitable syntactic assumptions."
+  },
+  "44": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully states the relative extension theorem."
+  },
+  "45": {
+   "verdict": "PRECISE",
+   "reason": "Directly stated modal-completeness result."
+  },
+  "46": {
+   "verdict": "PRECISE",
+   "reason": "Directly states both results for the logic."
+  },
+  "47": {
+   "verdict": "PRECISE",
+   "reason": "Faithfully identifies the Ramsey-derived finiteness classes."
+  },
+  "48": {
+   "verdict": "DEFECT",
+   "reason": "The abstract says (semi)products, not specifically semiproducts."
+  },
+  "49": {
+   "verdict": "PRECISE",
+   "reason": "Nearly verbatim statement of the separation result."
+  }
+ },
+ "my_labels": {
+  "0": "PRECISE",
+  "1": "PRECISE",
+  "2": "PRECISE",
+  "3": "PRECISE",
+  "4": "PRECISE",
+  "5": "PRECISE",
+  "6": "PRECISE",
+  "7": "PRECISE",
+  "8": "DEFECT",
+  "9": "PRECISE",
+  "10": "PRECISE",
+  "11": "PRECISE",
+  "12": "PRECISE",
+  "13": "PRECISE",
+  "14": "PRECISE",
+  "15": "PRECISE",
+  "16": "PRECISE",
+  "17": "PRECISE",
+  "18": "PRECISE",
+  "19": "PRECISE",
+  "20": "PRECISE",
+  "21": "PRECISE",
+  "22": "PRECISE",
+  "23": "PRECISE",
+  "24": "PRECISE",
+  "25": "PRECISE",
+  "26": "PRECISE",
+  "27": "PRECISE",
+  "28": "PRECISE",
+  "29": "PRECISE",
+  "30": "PRECISE",
+  "31": "PRECISE",
+  "32": "PRECISE",
+  "33": "PRECISE",
+  "34": "DEFECT",
+  "35": "PRECISE",
+  "36": "PRECISE",
+  "37": "PRECISE",
+  "38": "PRECISE",
+  "39": "PRECISE",
+  "40": "PRECISE",
+  "41": "PRECISE",
+  "42": "PRECISE",
+  "43": "PRECISE",
+  "44": "PRECISE",
+  "45": "PRECISE",
+  "46": "PRECISE",
+  "47": "PRECISE",
+  "48": "PRECISE",
+  "49": "DEFECT"
+ }
+}
