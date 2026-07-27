@@ -1,0 +1,452 @@
+[
+ {
+  "kind": "resource",
+  "object": "Qwen3-30B-A3B",
+  "page": "arxiv:2607.21978v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "MoE^2-LoRA is evaluated on Qwen3-30B-A3B, one of three MoE backbone models tested.",
+  "subject": "MoE^2-LoRA",
+  "sid": "out_g11.jsonl:18"
+ },
+ {
+  "kind": "resource",
+  "object": "LLaMA 3.1",
+  "page": "arxiv:2607.21333v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "SHIFT uses LLaMA 3.1 as a backbone for retrieval.",
+  "subject": "SHIFT",
+  "sid": "out_6.jsonl:15"
+ },
+ {
+  "kind": "resource",
+  "object": "Codex",
+  "page": "arxiv:2607.21557v2",
+  "pid": "P_BUILDS_ON",
+  "statement": "OpenForgeRL builds on Codex.",
+  "subject": "OpenForgeRL",
+  "sid": "out_9.jsonl:7"
+ },
+ {
+  "kind": "resource",
+  "object": "AlFWorld",
+  "page": "arxiv:2607.21273v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "The is evaluated on AlFWorld.",
+  "subject": "The",
+  "sid": "out_5.jsonl:31"
+ },
+ {
+  "kind": "resource",
+  "object": "MAE",
+  "page": "arxiv:2607.22355v1",
+  "pid": "P_COMPARES_TO",
+  "statement": "Single-Image compares to MAE.",
+  "subject": "Single-Image",
+  "sid": "out_16.jsonl:16"
+ },
+ {
+  "kind": "resource",
+  "object": "RAG",
+  "page": "arxiv:2607.21155v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "CRAG-MM builds on RAG.",
+  "subject": "CRAG-MM",
+  "sid": "out_5.jsonl:7"
+ },
+ {
+  "kind": "resource",
+  "object": "XQuAD",
+  "page": "arxiv:2607.22042v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "LAMAR is evaluated on XQuAD.",
+  "subject": "LAMAR",
+  "sid": "out_14.jsonl:24"
+ },
+ {
+  "kind": "resource",
+  "object": "BBH",
+  "page": "arxiv:2407.10671v4",
+  "pid": "P_EVALUATES_ON",
+  "statement": "Qwen2-72B achieves 82.4% on BBH benchmark.",
+  "subject": "Qwen2",
+  "sid": "out_0.jsonl:55"
+ },
+ {
+  "kind": "resource",
+  "object": "ConvNeXt",
+  "page": "arxiv:2607.21075v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "VibeVoice-ASR-BitNet uses ConvNeXt as the backbone for VAE acoustic and semantic encoders.",
+  "subject": "VibeVoice-ASR-BitNet",
+  "sid": "out_4.jsonl:14"
+ },
+ {
+  "kind": "resource",
+  "object": "CursorBench",
+  "page": "arxiv:2607.20911v1",
+  "pid": "P_COMPARES_TO",
+  "statement": "WorkBuddy Bench addresses the closed-benchmark trade-off exemplified by CursorBench, a vendor production benchmark.",
+  "subject": "WorkBuddy Bench",
+  "sid": "out_g1.jsonl:7"
+ },
+ {
+  "kind": "resource",
+  "object": "CommonsenseQA",
+  "page": "arxiv:2607.21978v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "MoE^2-LoRA is evaluated on CommonsenseQA for measuring general capability retention.",
+  "subject": "MoE^2-LoRA",
+  "sid": "out_g11.jsonl:29"
+ },
+ {
+  "kind": "resource",
+  "object": "Llama3.1-8B",
+  "page": "arxiv:2607.21090v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "RL fine-tuned Llama3.1-8B shows substantial improvements on Phi-CCT faithfulness metric.",
+  "subject": "RL-based faithfulness training",
+  "sid": "out_4.jsonl:21"
+ },
+ {
+  "kind": "resource",
+  "object": "differential evolution",
+  "page": "arxiv:2607.21772v1",
+  "pid": "P_COMPARES_TO",
+  "statement": "The Bayesian optimization approach is compared against differential evolution as an alternative optimization baseline.",
+  "subject": "Bayesian-optimized PCSEL design",
+  "sid": "out_g7.jsonl:24"
+ },
+ {
+  "kind": "resource",
+  "object": "Cityscapes",
+  "page": "arxiv:2607.21371v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "DINOde is evaluated on Cityscapes for open-vocabulary semantic segmentation.",
+  "subject": "DINOde",
+  "sid": "out_6.jsonl:44"
+ },
+ {
+  "kind": "resource",
+  "object": "Wikipedia",
+  "page": "arxiv:2607.20925v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "English Wikipedia hyperlinks form the knowledge network on which structural authority is computed.",
+  "subject": "dual-signal entity-importance framework",
+  "sid": "out_g1.jsonl:43"
+ },
+ {
+  "kind": "resource",
+  "object": "VAE",
+  "page": "arxiv:2607.22148v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "dRAE builds on VAE.",
+  "subject": "dRAE",
+  "sid": "out_14.jsonl:80"
+ },
+ {
+  "kind": "resource",
+  "object": "Qwen3-VL",
+  "page": "arxiv:2607.21780v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "Method fine-tunes Qwen3-VL-4B with QLoRA for document packet splitting.",
+  "subject": "Document packet splitting system",
+  "sid": "out_10.jsonl:13"
+ },
+ {
+  "kind": "resource",
+  "object": "GPT-5.5",
+  "page": "arxiv:2607.22165v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "DBA-Bench evaluates GPT-5.5-backed database agents among baseline groups.",
+  "subject": "DBA-Bench",
+  "sid": "out_15.jsonl:4"
+ },
+ {
+  "kind": "resource",
+  "object": "Gemma 3",
+  "page": "arxiv:2607.22468v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "ADAPT-GQE uses Gemma 3-based model for circuit generation.",
+  "subject": "ADAPT-GQE",
+  "sid": "out_18.jsonl:1"
+ },
+ {
+  "kind": "resource",
+  "object": "YouHQ40",
+  "page": "arxiv:2607.22231v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "TRaM-VSR is evaluated on the YouHQ40 synthetic benchmark.",
+  "subject": "TRaM-VSR",
+  "sid": "out_15.jsonl:27"
+ },
+ {
+  "kind": "resource",
+  "object": "DEG",
+  "page": "arxiv:2607.20957v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "Fast ANNS builds on DEG.",
+  "subject": "Fast ANNS",
+  "sid": "out_3.jsonl:3"
+ },
+ {
+  "kind": "resource",
+  "object": "generalized additive models",
+  "page": "arxiv:2607.21391v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "VISC analysis uses generalized additive models (GAM/GAMM) for formant trajectory modeling.",
+  "subject": "VISC analysis",
+  "sid": "out_6.jsonl:71"
+ },
+ {
+  "kind": "resource",
+  "object": "German Credit",
+  "page": "arxiv:2607.22045v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "CEL is evaluated on German Credit.",
+  "subject": "CEL",
+  "sid": "out_14.jsonl:51"
+ },
+ {
+  "kind": "resource",
+  "object": "OlympiadBench",
+  "page": "arxiv:2607.21793v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "QLPO evaluated on OlympiadBench for mathematical problem-solving.",
+  "subject": "Length-aware policy optimization",
+  "sid": "out_10.jsonl:27"
+ },
+ {
+  "kind": "resource",
+  "object": "Generative Adversarial Networks",
+  "page": "arxiv:2607.21343v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "M3-Gen builds on GANs for generating gene expression profiles.",
+  "subject": "M3-Gen",
+  "sid": "out_6.jsonl:27"
+ },
+ {
+  "kind": "resource",
+  "object": "AlgoTune",
+  "page": "arxiv:2607.21971v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on AlgoTune, an open-ended algorithm optimization benchmark spanning linear algebra, signal processing, and scientific computing.",
+  "subject": "MetaEvolve",
+  "sid": "out_g11.jsonl:9"
+ },
+ {
+  "kind": "resource",
+  "object": "PhysioNet 2012",
+  "page": "arxiv:2607.21922v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "MissHyper is evaluated on PhysioNet 2012 clinical ICU time-series benchmark.",
+  "subject": "MissHyper",
+  "sid": "out_12.jsonl:21"
+ },
+ {
+  "kind": "resource",
+  "object": "CNN/DailyMail",
+  "page": "arxiv:2607.21804v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "ADSD is transferred to CNN/DailyMail abstractive summarization without task-specific reoptimization.",
+  "subject": "ADSD",
+  "sid": "out_g8.jsonl:9"
+ },
+ {
+  "kind": "resource",
+  "object": "MELD",
+  "page": "arxiv:2607.21550v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "X\u00b3-OPD training uses MELD for Tier-3 spoken dialogue data.",
+  "subject": "X\u00b3-OPD",
+  "sid": "out_g6.jsonl:10"
+ },
+ {
+  "kind": "resource",
+  "object": "AIME",
+  "page": "arxiv:2607.22186v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "ESTR is evaluated on AIME 2024, 2025, and 2026 for mathematical reasoning.",
+  "subject": "ESTR",
+  "sid": "out_15.jsonl:8"
+ },
+ {
+  "kind": "resource",
+  "object": "LeetCode",
+  "page": "arxiv:2607.21971v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "MetaEvolve is evaluated on LeetCode, an out-of-distribution coding benchmark held out during training.",
+  "subject": "MetaEvolve",
+  "sid": "out_g11.jsonl:6"
+ },
+ {
+  "kind": "resource",
+  "object": "GSM8K",
+  "page": "arxiv:2607.21804v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "ADSD generates adversarial suffixes calibrated and evaluated on GSM8K.",
+  "subject": "ADSD",
+  "sid": "out_g8.jsonl:7"
+ },
+ {
+  "kind": "resource",
+  "object": "BCIC-2a",
+  "page": "arxiv:2607.21402v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "MSBraM is evaluated on BCIC-2a for motor imagery classification.",
+  "subject": "MSBraM",
+  "sid": "out_6.jsonl:82"
+ },
+ {
+  "kind": "resource",
+  "object": "PIQA",
+  "page": "arxiv:2310.06825v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "Mistral 7B evaluated on PIQA benchmark.",
+  "subject": "Mistral 7B",
+  "sid": "out_0.jsonl:36"
+ },
+ {
+  "kind": "resource",
+  "object": "Qwen2.5-VL",
+  "page": "arxiv:2607.22013v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "VSSD uses Qwen2.5-VL as a multimodal large language model for attention map generation.",
+  "subject": "VSSD",
+  "sid": "out_g12.jsonl:3"
+ },
+ {
+  "kind": "resource",
+  "object": "LoRA",
+  "page": "arxiv:2607.21570v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "MedGame builds on LoRA.",
+  "subject": "MedGame",
+  "sid": "out_9.jsonl:21"
+ },
+ {
+  "kind": "resource",
+  "object": "AIME",
+  "page": "arxiv:2512.02556v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "DeepSeek-V3.2 is evaluated on AIME mathematical reasoning benchmark.",
+  "subject": "DeepSeek-V3.2",
+  "sid": "out_1.jsonl:36"
+ },
+ {
+  "kind": "resource",
+  "object": "Qwen3-8B",
+  "page": "arxiv:2607.21453v2",
+  "pid": "P_EVALUATES_ON",
+  "statement": "TTEL is evaluated on Qwen3-8B.",
+  "subject": "TTEL",
+  "sid": "out_7.jsonl:28"
+ },
+ {
+  "kind": "resource",
+  "object": "GPT-5",
+  "page": "arxiv:2509.16941v2",
+  "pid": "P_COMPARES_TO",
+  "statement": "SWE-Bench Pro evaluates OpenAI GPT-5 on software engineering tasks.",
+  "subject": "SWE-Bench Pro",
+  "sid": "out_1.jsonl:34"
+ },
+ {
+  "kind": "resource",
+  "object": "V* Bench",
+  "page": "arxiv:2607.21556v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "VCSD is evaluated on V* Bench for fine-grained and high-resolution perception.",
+  "subject": "VCSD",
+  "sid": "out_g6.jsonl:17"
+ },
+ {
+  "kind": "resource",
+  "object": "Gemini",
+  "page": "arxiv:2607.21672v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "Pixels for Programs? builds on Gemini.",
+  "subject": "Pixels for Programs?",
+  "sid": "out_9.jsonl:26"
+ },
+ {
+  "kind": "resource",
+  "object": "DROP",
+  "page": "arxiv:2303.08774v6",
+  "pid": "P_EVALUATES_ON",
+  "statement": "GPT-4 is evaluated on DROP reading comprehension benchmark.",
+  "subject": "GPT-4",
+  "sid": "out_0.jsonl:10"
+ },
+ {
+  "kind": "resource",
+  "object": "AlphaEvolve",
+  "page": "arxiv:2607.21971v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "MetaEvolve builds on the AlphaEvolve framework which demonstrates iterative refinement with environment feedback.",
+  "subject": "MetaEvolve",
+  "sid": "out_g11.jsonl:0"
+ },
+ {
+  "kind": "resource",
+  "object": "Claude Sonnet",
+  "page": "arxiv:2607.21063v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "QuantiBias benchmarks Claude Sonnet.",
+  "subject": "QuantiBias",
+  "sid": "out_3.jsonl:62"
+ },
+ {
+  "kind": "resource",
+  "object": "Jina-Reranker",
+  "page": "arxiv:2607.22042v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "LAMAR builds on Jina-Reranker.",
+  "subject": "LAMAR",
+  "sid": "out_14.jsonl:38"
+ },
+ {
+  "kind": "resource",
+  "object": "Switch-NeRF",
+  "page": "arxiv:2607.20970v1",
+  "pid": "P_COMPARES_TO",
+  "statement": "INR time-series reformulation compares to Switch-NeRF.",
+  "subject": "INR time-series reformulation",
+  "sid": "out_3.jsonl:10"
+ },
+ {
+  "kind": "resource",
+  "object": "DeepSearchQA",
+  "page": "arxiv:2607.21461v2",
+  "pid": "P_EVALUATES_ON",
+  "statement": "AREX is evaluated on DeepSearchQA.",
+  "subject": "AREX",
+  "sid": "out_7.jsonl:38"
+ },
+ {
+  "kind": "resource",
+  "object": "SBM-Transformer",
+  "page": "arxiv:2607.21752v1",
+  "pid": "P_COMPARES_TO",
+  "statement": "Method compared against SBM-Transformer (learned stochastic block model with Bernoulli sampling).",
+  "subject": "Compression-guided sparse attention",
+  "sid": "out_10.jsonl:5"
+ },
+ {
+  "kind": "resource",
+  "object": "Mapillary Vistas",
+  "page": "arxiv:2607.21137v1",
+  "pid": "P_EVALUATES_ON",
+  "statement": "Sidewalk segmentation sources SENSATION-DS data from Mapillary Vistas.",
+  "subject": "Sidewalk segmentation",
+  "sid": "out_4.jsonl:52"
+ },
+ {
+  "kind": "resource",
+  "object": "Prophet",
+  "page": "arxiv:2607.21785v1",
+  "pid": "P_BUILDS_ON",
+  "statement": "System integrates Prophet time series decomposition with NLP techniques for roadblock forecasting.",
+  "subject": "Hybrid probabilistic forecasting system",
+  "sid": "out_10.jsonl:17"
+ }
+]

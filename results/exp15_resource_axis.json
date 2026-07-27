@@ -1,0 +1,380 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-27T20:22:26.851684+00:00",
+  "commit": "0e6ffbe91c1c0512e3f9aa37fe6136dc7604fef2",
+  "dirty": true,
+  "command": "scripts/exp15_score.py",
+  "seed": null,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "protocol": "docs/15 (D95)",
+   "shards": "/home/zonk1024/projects/foundation/data/arxiv_ai/shards_res"
+  }
+ },
+ "claims": 1056,
+ "papers_with_resources": 268,
+ "distinct_resource_objects": 791,
+ "resources_in_ge2_papers": 97,
+ "resources_in_ge3_papers": 46,
+ "resources_in_ge5_papers": 17,
+ "resources_in_ge10_papers": 8,
+ "pid_mix": {
+  "P_BUILDS_ON": 435,
+  "P_EVALUATES_ON": 437,
+  "P_COMPARES_TO": 184
+ },
+ "top_shared": [
+  {
+   "object": "Qwen2.5",
+   "papers": 18
+  },
+  {
+   "object": "GRPO",
+   "papers": 17
+  },
+  {
+   "object": "GSM8K",
+   "papers": 16
+  },
+  {
+   "object": "LoRA",
+   "papers": 14
+  },
+  {
+   "object": "HumanEval",
+   "papers": 12
+  },
+  {
+   "object": "MMLU",
+   "papers": 11
+  },
+  {
+   "object": "Qwen3",
+   "papers": 11
+  },
+  {
+   "object": "AIME",
+   "papers": 10
+  },
+  {
+   "object": "Llama 3",
+   "papers": 8
+  },
+  {
+   "object": "chain-of-thought",
+   "papers": 7
+  },
+  {
+   "object": "MBPP",
+   "papers": 7
+  },
+  {
+   "object": "MATH",
+   "papers": 7
+  },
+  {
+   "object": "transformer",
+   "papers": 6
+  },
+  {
+   "object": "Gemini",
+   "papers": 6
+  },
+  {
+   "object": "CLIP",
+   "papers": 5
+  },
+  {
+   "object": "RAG",
+   "papers": 5
+  },
+  {
+   "object": "BERT",
+   "papers": 5
+  },
+  {
+   "object": "LiveCodeBench",
+   "papers": 4
+  },
+  {
+   "object": "PPO",
+   "papers": 4
+  },
+  {
+   "object": "GPT-5",
+   "papers": 4
+  },
+  {
+   "object": "Gemma",
+   "papers": 4
+  },
+  {
+   "object": "MATH-500",
+   "papers": 4
+  },
+  {
+   "object": "Llama 3.2",
+   "papers": 4
+  },
+  {
+   "object": "SFT",
+   "papers": 4
+  },
+  {
+   "object": "Transformer",
+   "papers": 4
+  }
+ ],
+ "fragmentation_top20": [
+  {
+   "canonical_key": "qwen25",
+   "surface_forms": 2,
+   "papers_total_mentions": 19,
+   "dominant_form": "Qwen2.5",
+   "dominant_share": 0.947,
+   "forms": [
+    "Qwen2.5",
+    "Qwen 2.5"
+   ]
+  },
+  {
+   "canonical_key": "grpo",
+   "surface_forms": 1,
+   "papers_total_mentions": 17,
+   "dominant_form": "GRPO",
+   "dominant_share": 1.0,
+   "forms": [
+    "GRPO"
+   ]
+  },
+  {
+   "canonical_key": "gsm8k",
+   "surface_forms": 1,
+   "papers_total_mentions": 16,
+   "dominant_form": "GSM8K",
+   "dominant_share": 1.0,
+   "forms": [
+    "GSM8K"
+   ]
+  },
+  {
+   "canonical_key": "lora",
+   "surface_forms": 1,
+   "papers_total_mentions": 14,
+   "dominant_form": "LoRA",
+   "dominant_share": 1.0,
+   "forms": [
+    "LoRA"
+   ]
+  },
+  {
+   "canonical_key": "qwen3",
+   "surface_forms": 2,
+   "papers_total_mentions": 13,
+   "dominant_form": "Qwen3",
+   "dominant_share": 0.846,
+   "forms": [
+    "Qwen3",
+    "Qwen 3"
+   ]
+  },
+  {
+   "canonical_key": "humaneval",
+   "surface_forms": 1,
+   "papers_total_mentions": 12,
+   "dominant_form": "HumanEval",
+   "dominant_share": 1.0,
+   "forms": [
+    "HumanEval"
+   ]
+  },
+  {
+   "canonical_key": "qwen",
+   "surface_forms": 9,
+   "papers_total_mentions": 13,
+   "dominant_form": "Qwen",
+   "dominant_share": 0.231,
+   "forms": [
+    "Qwen",
+    "Qwen2.5-1.5B",
+    "Qwen3-8B",
+    "Qwen2-1.5B",
+    "Qwen2.5-14B-Instruct",
+    "Qwen2.5-7B-Instruct"
+   ]
+  },
+  {
+   "canonical_key": "mmlu",
+   "surface_forms": 1,
+   "papers_total_mentions": 11,
+   "dominant_form": "MMLU",
+   "dominant_share": 1.0,
+   "forms": [
+    "MMLU"
+   ]
+  },
+  {
+   "canonical_key": "llama3",
+   "surface_forms": 3,
+   "papers_total_mentions": 10,
+   "dominant_form": "Llama 3",
+   "dominant_share": 0.8,
+   "forms": [
+    "Llama 3",
+    "LLaMA-3",
+    "LLaMA 3"
+   ]
+  },
+  {
+   "canonical_key": "aime",
+   "surface_forms": 1,
+   "papers_total_mentions": 10,
+   "dominant_form": "AIME",
+   "dominant_share": 1.0,
+   "forms": [
+    "AIME"
+   ]
+  },
+  {
+   "canonical_key": "transformer",
+   "surface_forms": 2,
+   "papers_total_mentions": 10,
+   "dominant_form": "transformer",
+   "dominant_share": 0.6,
+   "forms": [
+    "transformer",
+    "Transformer"
+   ]
+  },
+  {
+   "canonical_key": "chainofthought",
+   "surface_forms": 1,
+   "papers_total_mentions": 7,
+   "dominant_form": "chain-of-thought",
+   "dominant_share": 1.0,
+   "forms": [
+    "chain-of-thought"
+   ]
+  },
+  {
+   "canonical_key": "mbpp",
+   "surface_forms": 1,
+   "papers_total_mentions": 7,
+   "dominant_form": "MBPP",
+   "dominant_share": 1.0,
+   "forms": [
+    "MBPP"
+   ]
+  },
+  {
+   "canonical_key": "math",
+   "surface_forms": 1,
+   "papers_total_mentions": 7,
+   "dominant_form": "MATH",
+   "dominant_share": 1.0,
+   "forms": [
+    "MATH"
+   ]
+  },
+  {
+   "canonical_key": "gemma",
+   "surface_forms": 4,
+   "papers_total_mentions": 7,
+   "dominant_form": "Gemma",
+   "dominant_share": 0.571,
+   "forms": [
+    "Gemma",
+    "Gemma-2B-IT",
+    "Gemma-2b-it",
+    "Gemma-3-4B"
+   ]
+  },
+  {
+   "canonical_key": "llama",
+   "surface_forms": 6,
+   "papers_total_mentions": 7,
+   "dominant_form": "Llama",
+   "dominant_share": 0.286,
+   "forms": [
+    "Llama",
+    "Llama-3.2-8B",
+    "Llama2-7B-Chat",
+    "Llama3.1-8B",
+    "Llama 3.3 70B",
+    "Llama-70B-Instruct"
+   ]
+  },
+  {
+   "canonical_key": "gemini",
+   "surface_forms": 1,
+   "papers_total_mentions": 6,
+   "dominant_form": "Gemini",
+   "dominant_share": 1.0,
+   "forms": [
+    "Gemini"
+   ]
+  },
+  {
+   "canonical_key": "clip",
+   "surface_forms": 1,
+   "papers_total_mentions": 5,
+   "dominant_form": "CLIP",
+   "dominant_share": 1.0,
+   "forms": [
+    "CLIP"
+   ]
+  },
+  {
+   "canonical_key": "gpt5",
+   "surface_forms": 2,
+   "papers_total_mentions": 5,
+   "dominant_form": "GPT-5",
+   "dominant_share": 0.8,
+   "forms": [
+    "GPT-5",
+    "gpt-5"
+   ]
+  },
+  {
+   "canonical_key": "rag",
+   "surface_forms": 1,
+   "papers_total_mentions": 5,
+   "dominant_form": "RAG",
+   "dominant_share": 1.0,
+   "forms": [
+    "RAG"
+   ]
+  }
+ ],
+ "mean_dominant_share_top20": 0.854,
+ "criteria": {
+  "population_ge100_resources_in_ge3_papers": {
+   "pass": false,
+   "value": 46
+  },
+  "fragmentation_mean_dominant_share_ge_0.90": {
+   "pass": false,
+   "value": 0.854
+  }
+ },
+ "criteria_pending_audit": [
+  "resource-claim precision >= 0.80 (frozen 50, graded vs body window)"
+ ],
+ "coverage_note": "268/374 papers yielded >=1 resource claim; papers yielding zero cannot be distinguished from papers a stalled agent skipped, so all population counts are LOWER BOUNDS",
+ "groundedness": {
+  "objects_verbatim_in_source": 0.945,
+  "note": "5.5% not verbatim is NOT all hallucination \u2014 the canonical-naming rule instructs normalisation (Llama-3.1-8B -> Llama 3), which legitimately breaks verbatim matching; the metric therefore over-counts violations"
+ },
+ "fleet_ops": {
+  "agents_launched": 36,
+  "stalled_or_failed": 10,
+  "input_chars_per_20paper_shard": 180000,
+  "finding": "20 papers x 8k window stalls agents; 10-paper shards complete"
+ }
+}

@@ -1,7 +1,37 @@
 # The resource axis — pre-registered protocol (2026-07-27)
 
 Registered BEFORE the run, per D64. Criteria and predictions frozen at
-commit time. Follows D94, which located the problem: papers' subjects are
+commit time.
+
+> **RESULT (D96, same day).** 1,056 resource claims over 268 papers.
+> The axis **creates the cross-paper structure that did not exist**:
+> 97 resources in ≥2 papers, 46 in ≥3, 8 in ≥10 (Qwen2.5 18, GRPO 17,
+> GSM8K 16, LoRA 14) against **zero** shared method subjects at D94.
+>
+> **Criterion 1 (population ≥100 at ≥3 papers) FAILS at 46 — because I
+> mis-calibrated it.** The 100 came from a regex probe whose 560
+> candidates included `MLP`, `RQ1`, `IV-B`, `NVIDIA`; the fleet
+> correctly rejected those. The criterion measured the probe, not the
+> axis. Re-derive thresholds from cleaned populations, never proxies.
+>
+> **Criterion 2 (fragmentation ≥0.90) FAILS at 0.854**, exactly as
+> predicted and cleanly localised: benchmarks are perfect (GRPO 1.00,
+> GSM8K 1.00) while base models shatter on version/size suffixes
+> (Qwen 9 forms / 0.23, Llama 6 / 0.29, Gemma 4 / 0.57).
+>
+> **Criterion 3 (precision ≥0.80) is OWED — no number is claimed.** The
+> frozen 50 sample exists; only 5 were graded, which is not the
+> instrument. A mechanical proxy over all claims: 94.5% of objects
+> appear verbatim in source, but that over-counts violations because
+> the naming rule *instructs* normalisation.
+>
+> **My hypothesis that fragmentation suppresses population was WRONG**:
+> post-hoc normalisation moves ≥3 from 46 to only 49. Population is
+> bounded by corpus size, not naming.
+>
+> **Fleet ops**: 10 of 36 agents stalled, all on 20-paper/180k-char
+> shards — cap body-text shards at ~10 papers (the input-side twin of
+> D87's output budget). Follows D94, which located the problem: papers' subjects are
 their own new methods and never join, while the entities papers actually
 share sit in object position and were never extracted as entities.
 
