@@ -1,0 +1,275 @@
+[
+ {
+  "arxiv_id": "2607.20887v1",
+  "title": "TwistedMerge: Certified Higher-Order Diagnostics and Abstention for Model Merging",
+  "abstract": "Model merging combines independently trained or fine-tuned models, but pairwise alignability does not imply globally consistent alignment. We formulate merging as a finite descent problem in which checkpoints are local objects, alignment maps are transitions, and cycle products are residuals. TwistedMerge is a conservative certification pipeline that separates fixed-chart averaging, synchronization-removable gauge inconsistency, a certified central obstruction on a specified comparison complex, and nonabelian holonomy. A residual is promoted to a cohomology class only after inverse-consistency, coefficient-identification, centrality, and closure tests; otherwise the method abstains and returns an ordinary or synchronized fallback. We prove a constant-edge no-go result, frozen-complex three-way and predeclared-family error-control theorems, and a refinement test for comparison-complex sensitivity. A planted neural alignment defect is removed by cycle-consistent synchronization, showing that a nonzero cycle score alone is not a higher obstruction. Controlled central systems recover the predicted non-coboundary and projective-rank behavior, while noisy estimates move from certification to abstention without false lifts on the tested controls. A trained low-rank-adapter audit shows that naive factor averaging depends on the chosen GLr representative, whereas global factor synchronization and dense-delta SVD are stable. On natural checkpoint collections, cycle residuals do not predict merge degradation and no natural central or period-index class is certified. The results position descent theory as a falsifiable certification and abstention framework.",
+  "authors": [
+   "Ting Gong",
+   "Shitan Xu"
+  ],
+  "published": "2026-07-23T03:24:50Z"
+ },
+ {
+  "arxiv_id": "2607.20890v1",
+  "title": "Information-Theoretically Secure Aggregation for Lightweight Federated Learning: Resilient to Dropouts and Adversaries",
+  "abstract": "On-device federated learning (FL) enables privacy-preserving and personalized model training on resource-constrained devices such as smartphones and IoT nodes. To reduce communication cost, sign-based methods (e.g., signSGD) transmit one-bit gradients. However, exposing gradient signs makes them vulnerable to inference attacks, while existing secure aggregation schemes are often incompatible with such methods or incur significant computational and communication overhead. We propose a lightweight and information-theoretically secure aggregation framework tailored for sign-based FL. The framework securely computes the majority vote (MV) polynomial through single-round secure multiplication, ensuring end-to-end information-theoretic security under the honest-majority assumption while revealing only the final aggregated sign to the server. To enhance efficiency and scalability, we introduce two key techniques. First, inverse-form exponent reduction halves the effective MV polynomial degree, reducing both communication and computation costs. Second, we propose single-round secure multiplication, achieving linear offline complexity and storage with only a single online communication. Together, these techniques reduce online communication by up to 99.5% and latency by up to 85.7% compared to conventional approaches. Also, by leveraging inherent MDS-code-based decoding, the framework achieves robustness against both dropouts and adversarial behaviors, yielding accuracy gains of up to 20.65% and 10.74%, respectively. Overall, the proposed framework establishes a practical foundation for large-scale, low-latency, and information-theoretically secure aggregation in sign-based FL.",
+  "authors": [
+   "Hyeong-Gun Joo",
+   "Songnam Hong",
+   "Dong-Joon Shin"
+  ],
+  "published": "2026-07-23T03:26:41Z"
+ },
+ {
+  "arxiv_id": "2607.20891v1",
+  "title": "Is Deep Research Reliable? Misleading Knowledge Induces False Conclusions",
+  "abstract": "Deep Research agents extend LLM-based assistants into long-horizon workflows involving planning, retrieval, evidence synthesis, and report generation, yet their reliability in open information environments remains underexplored. A key concern is whether apparently credible but factually misleading knowledge encountered in such environments can propagate through these workflows and be adopted as false conclusions in final reports. To study this failure mode, we introduce MisKnow-Agent, a framework for constructing and validating misleading knowledge for Deep Research tasks. MisKnow-Agent generates misleading instances with controllable authority levels and styles, yielding 5,933 quality-controlled instances built on DeepResearch Benchmark tasks. Extensive experiments across open-source and closed-source Deep Research agents show that even limited exposure to misleading knowledge can induce false-conclusion adoption in final reports, revealing a broad reliability vulnerability in current Deep Research agents. Although search-enabled verifier models consistently identify the retained instances as misleading during focused corpus validation, the same instances can still be adopted during long-horizon research, revealing a disconnect between focused verification and workflow-level evidence use. Finally, we evaluate pre- and post-research defenses, both individually and in combination, finding that all three configurations mitigate but do not fully prevent false-conclusion adoption. Our findings suggest that reliable Deep Research requires evidence verification and correction capabilities at both the model and framework levels, beyond improvements in planning, retrieval, evidence integration, or report-generation abilities.",
+  "authors": [
+   "Pengyu Zhu",
+   "Lijun Li",
+   "Longju Yang",
+   "Sen Su"
+  ],
+  "published": "2026-07-23T03:28:08Z"
+ },
+ {
+  "arxiv_id": "2607.20896v1",
+  "title": "HierarchicalDAEW: Domain-Aware Edge-Weighted Graph Convolution with Evidential Uncertainty for Multi-Section Spatial Gene Expression Prediction from H&amp;E Histology",
+  "abstract": "Spatial transcriptomics assays remain costly and technically demanding, restricting transcriptome-wide profiling to specialist settings and preventing routine clinical deployment. Predicting spatially resolved gene expression from H&amp;E histology could close this gap, yet current methods largely ignore the underlying tissue architecture and rarely quantify how their predictions can be trusted. We introduce HierarchicalDAEW, a dual-graph architecture that addresses both gaps. On the spot graph, a Domain-Aware Edge-Weighted convolutional operator learns separate projections for inter-domain, intra-domain, and boundary edges derived from Leiden clustering, allowing the model to treat tissue heterogeneity as an explicit structural signal rather than an implicit one. A second gene-level graph then fuses protein-protein interaction priors from STRING-DB with tissue-specific co-expression through learned attention gating, propagating predictions from a landmark gene set to a broader gene panel. Reliability is handled through evidential uncertainty estimation, which produces far better calibrated confidence intervals than Monte Carlo dropout under identical conditions. Across six human Visium sections spanning breast, colorectal, prostate, and cerebellar tissue, and against thirteen published baselines, HierarchicalDAEW achieves the strongest correlation with ground-truth expression, with gains that hold up under multi-seed reproducibility checks and negative controls that rule out positional shortcuts. Ablations further confirm that both the domain-aware edge typing and the hierarchical depth are necessary to this improvement, and calibrated uncertainty estimates identify low-confidence predictions for pathologist review before clinical action.",
+  "authors": [
+   "Kritanu Chattopadhyay",
+   "Soumya Chatterjee",
+   "Ondrej Krejcar",
+   "Debotosh Bhattacharjee"
+  ],
+  "published": "2026-07-23T03:33:47Z"
+ },
+ {
+  "arxiv_id": "2607.20902v1",
+  "title": "Anti-Goal Reasoning: Rethinking the Theory of Goal Reasoning in Non-Axiomatic Logic",
+  "abstract": "Goal reasoning in Non-Axiomatic Logic (NAL) explains how an adaptive system derives means for realizing desired events under insufficient knowledge and resources. However, the representation of avoidance is less clear. A common convention is to express ``avoid $G$'' as the goal sentence ``$\\neg G!$'', but this notation conflates two different readings: pursuing the negated event $\\neg G$, and avoiding the positive event $G$. This paper shows that the conflation can produce a paradoxical case in which an avoidance intention is converted into a positive goal to act merely because acting is usually followed by the absence of hurt. Starting from NAL's basic definition of goals, the framework is extended with a corresponding definition of anti-goals, so that avoidance can be represented without treating it as the pursuit of a negated event. Finally, a mental operation, $\\op{prevent}$, is introduced to connect anti-goal reasoning with ordinary goal reasoning in cases of active prevention. Four minimal case studies check that the resulting rules distinguish pursuit, passive avoidance, active prevention, and withholding action to preserve a desired event.",
+  "authors": [
+   "Bowen Xu"
+  ],
+  "published": "2026-07-23T03:52:29Z"
+ },
+ {
+  "arxiv_id": "2607.20908v1",
+  "title": "Multi-turn RL with Structural and Performance Aware Rewards for CUDA Kernel Generation",
+  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a powerful technique to enhance the reasoning capacity of LLMs for optimized code generation. However, existing RLVR approaches primarily rely on outcome-based signals such as correctness and speedup, overlooking performance-critical structural properties of programs that are essential for generating optimized code. In this work, we propose CudaPerf, a reflective RL framework that incorporates both verifiable execution rewards and structural code-aware rewards derived from parallelization features (e.g., memory coalescing, occupancy, Arithmatic Intensity, and synchronization patterns). CudaPerf operates in two stages: (1) an offline pairwise ranking module that learns to distinguish strong and weak program candidates via contrastive comparisons, and (2) an online RL training phase that jointly optimizes for correctness, performance, and structural efficiency through a unified reward signal. To further enhance learning, CudaPerf utilizes iterative refinement using execution feedback enabling progressive improvement of generated candidates. We also introduce a dataset comprising 2.9k C to CUDA and 1k PyTorch to CUDA programs, each paired with diverse input configurations and multiple CUDA implementations encompassing diverse optimization strategies. CudaPerf is evaluated across multiple benchmarks comprising both C to CUDA and PyTorch to CUDA transformations. Empirical findings suggest that CudaPerf significantly outperforms strong baselines, including Qwen-3-32B (for C to CUDA) and CUDA Agent (for PyTorch to CUDA) by achieving up to 5X &amp; 3.32X improvements in speedup, and 17% &amp; 7% improvements in correctness, respectively.",
+  "authors": [
+   "Quazi Ishtiaque Mahmud",
+   "Nesreen K. Ahmed",
+   "Ali Jannesari"
+  ],
+  "published": "2026-07-23T04:06:41Z"
+ },
+ {
+  "arxiv_id": "2607.20909v1",
+  "title": "RadioTrace: Transmitter-Aware Diffusion for Radio Map Estimation without Deployment-Time Fine-Tuning",
+  "abstract": "Radio map (RM) estimation aims to reconstruct the spatial distribution of wireless signal characteristics, such as received signal strength (RSS), from sparse measurements, a task that is critical for spectrum management, interference mitigation, and localization in modern wireless networks. Traditional approaches, including interpolation and deep learning, either struggle to capture complex propagation effects or require large-scale retraining for each new sampling pattern, which limits their generalization. More recently, prior-based methods have combined pre-trained generative models with measurements to reduce the need for deployment-time model fine-tuning, but they typically treat the prior as a simple regularizer and lack explicit transmitter-aware integration. In this paper, we propose RadioTrace, a novel RM estimation framework without deployment-time fine-tuning that tightly integrates sparse RSS measurements with a frozen pre-trained diffusion prior. RadioTrace incorporates transmitter (Tx) location estimation directly into the denoising loop, iteratively refining Tx coordinates based on reconstruction quality to guide the generative process. To further enhance robustness, we introduce a propagation-guided K-means initialization that mitigates poor local minima in the Tx update and provides a geometry-consistent starting point. Moreover, we provide a stochastic stability analysis for the Tx-coordinate refinement component, showing that the Tx update remains stable under perturbations induced by diffusion sampling and Tx-map relaxation. Extensive experiments demonstrate that RadioTrace achieves competitive performance with state-of-the-art learning-based methods under random sampling, and maintains strong reconstruction quality under restricted-area sampling, highlighting its adaptability, robustness, and practical relevance.",
+  "authors": [
+   "Liu Yang",
+   "Qiang Li",
+   "Zhuo Cao",
+   "Weijie Xiong",
+   "Guomin Sun",
+   "Jingran Lin"
+  ],
+  "published": "2026-07-23T04:18:39Z"
+ },
+ {
+  "arxiv_id": "2607.20911v1",
+  "title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+  "abstract": "We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction methodology, scoring protocol, and a cross-model leaderboard. At its core is a unified evaluation framework for constructing and running distribution-informed coding-agent tasks across four work domains - Code, Web, Office, and Security. Rather than adapting public issue text, every task is reverse-engineered from a real commit, pull request, or business scenario and rewritten as a short, colloquial, role-played request, so that a task's prompt is not recoverable by web-searching the underlying issue, pull request, or commit thread. Because the dataset is released openly - task directories, environment images, evaluation harness, tests, and reference solutions - contamination resistance rests on this construction together with dataset versioning rather than on secrecy. The four subsets - repository-level engineering, front-end development, office and business workflows, and red-/blue-team security - probe complementary facets of real work, each with its own verification style. All are packaged in a uniform task-directory format and run, under a uniform and reproducible protocol, on two agent harnesses (CodeBuddy Code and Claude Code); the full open release makes the benchmark reproducible end to end and directly auditable, since any third party can re-run each task and inspect its content. Because each subset uses a different scoring instrument, scores are not comparable across subsets and the suite reports no suite-wide average. We report a cross-model leaderboard across several model families.",
+  "authors": [
+   " Tencent WorkBuddy Bench Team",
+   "Siqi Cai",
+   "Shaopeng Chen",
+   "Xiang Fei",
+   "Yong Mao",
+   "Zihan Xu",
+   "Zhiheng Lyu",
+   "Zhijian Shao",
+   "Yuchen Shi",
+   "Shuwen Zhang",
+   "Chaofan Qiu",
+   "Linjie Che",
+   "Xiaoxi Zhao",
+   "Feng Wu",
+   "Kai Zhang",
+   "Chaofan Zhu",
+   "Yubin Qi",
+   "Xiaoyun Liang",
+   "Peijie Dong",
+   "Yunhao Zhang",
+   "Yuanjie Zhu",
+   "Ling Jiang",
+   "Xianjun Zhang",
+   "Zhehang Chu",
+   "Anyuan Sang",
+   "Zhen Feng",
+   "Sen Nie",
+   "Shi Wu",
+   "Yuanzhen Xu",
+   "Xin Li",
+   "Ning Yang",
+   "Zhiqiang Dong",
+   "Hande Dong",
+   "Qiang Lin",
+   "Yi Liu",
+   "Yunsheng Wu",
+   "Ke Li",
+   "Xing Sun"
+  ],
+  "published": "2026-07-23T04:34:06Z"
+ },
+ {
+  "arxiv_id": "2607.20913v1",
+  "title": "Source-Prior-Driven Selective Adaptation for Efficient Diffusion Model Finetuning",
+  "abstract": "Fine-tuning large diffusion models for new domains or styles involves a trade-off: improving target-specific generation often degrades the pretrained model's broad generative capability. Existing full and parameter-efficient fine-tuning methods typically handle this trade-off only implicitly. In this work, we propose a novel source-prior-driven selective adaptation method to efficiently fine-tune diffusion models, achieving a favorable trade-off. Our method relies on two key observations: (1) the loss of general generative capability is highly inconsistent across pretrained parameters, and (2) parameters that have a relatively small impact on the model's general generative capability remain structurally inconsistent across layers and parameter types. Motivated by these observations, we first learn a static mask to explicitly identify parameters better suited for downstream adaptation, and then construct structured update strategies for the selected subset. Experiments show that our method achieves a better adaptation-retention trade-off than existing strong baselines.",
+  "authors": [
+   "Yi Xiong",
+   "Yuan-Yuan Cheng",
+   "Xiao-Ming Fu"
+  ],
+  "published": "2026-07-23T04:46:48Z"
+ },
+ {
+  "arxiv_id": "2607.20914v1",
+  "title": "Three-Pronged Spectral Control for Federated Parameter Efficient Fine Tuning",
+  "abstract": "Federated parameter-efficient fine-tuning (PEFT) enables communication-efficient adaptation of large pretrained models on decentralized edge data, but it remains fragile under non-IID client heterogeneity. In low-rank adaptation (LoRA), different clients may learn locally useful but spectrally misaligned update subspaces, causing high-variance aggregation and poor global transfer. We propose TRISHUL, a spectral-control framework for robust federated PEFT. TRISHUL follows the FL no-raw-data-sharing setting but does not itself provide formal privacy guarantees. TRISHUL uses shared frozen multi-head low-rank bases to obtain algebraically exact aggregation of compact core updates, applies nuclear norm proximal shrinkage to suppress client-specific high-rank spectral components before upload, and allocates adaptation heads non-uniformly across layers using a concave water filling budget rule derived from pretrained layer capacity. Because shrinkage is performed only on small core matrices, TRISHUL adds negligible computation and no extra per-round communication over the underlying multi-head PEFT protocol. Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE with LLaMA3.2-1B, TRISHUL improves convergence, stability, and final performance over federated LoRA baselines, with greater gains under stronger heterogeneity.",
+  "authors": [
+   "Shiva Raj Pokhrel",
+   "Dipsan Bhattarai",
+   "Anwar Walid"
+  ],
+  "published": "2026-07-23T04:49:38Z"
+ },
+ {
+  "arxiv_id": "2607.20916v1",
+  "title": "Traceable Scholarship: Page Anchors and Ariadne's Thread for Humanistic Inquiry in the Age of Generative AI",
+  "abstract": "Generative AI lets large language models produce scholarly-looking text within seconds, yet fluency does not equal valid explanation. The deepest risk is not factual error alone but the appearance that an explanation is already established without clear sources, page numbers, editions, or evidence. We liken the page anchor to Ariadne's thread: within the labyrinth of generative fluency, it is the thread that leads the scholar back to the source. This paper proposes Traceable Scholarship as the minimum normative condition for AI-assisted humanistic research, situating it across the three revolutions of knowledge infrastructure: print, digital, and generative AI. We introduce page anchors, dual page numbers, citation-first generation, NO_EVIDENCE, human verification, four-level compliance, and Scope Contract, and present AIH-Infra as a three-layer reference implementation: Contexture (document structuring), Open WebUI AIH-Infra (traceable knowledge base), and AIH-Infra MCP Server (agent gateway). A case study on a 29-volume Kant Akademie-Ausgabe knowledge base illustrates how traceability supports retrieval correction, evidence grading, and judgment downgrading. Traceability is not a software feature; it is the condition under which humanistic research can remain public and refutable in the age of generative AI.",
+  "authors": [
+   "Deyu Jing"
+  ],
+  "published": "2026-07-23T04:51:30Z"
+ },
+ {
+  "arxiv_id": "2607.20918v2",
+  "title": "OPOD: On-Policy Omni Distillation",
+  "abstract": "Omni-modal models can handle text, images, and audio in one system, but improving all of these abilities together remains difficult. Training a single model on pooled multimodal data often fails to match models specialized for individual modalities. On-policy distillation (OPD) offers a way to combine such specialists: the student generates a response, and a teacher evaluates that same response, so the student learns directly from behaviors it actually produces. Yet using several teachers can introduce competing guidance and improve one modality at the expense of another. We present On-Policy Omni Distillation (OPOD), which routes each student response to the matching text, image, or audio teacher. OPOD keeps teacher guidance only on tokens where the teacher assigns a higher probability than the student, adjusts the influence of each modality teacher independently during training, and asks the routed teacher to assess both the final answer and whether the reasoning supports the correct answer. Across twelve benchmarks and three backbone sizes, OPOD achieves the best average score at every scale, reaching 70.8, 51.7, and 46.2 and exceeding the strongest comparator by 2.1, 1.8, and 1.7 points. On the 30B model, it outperforms both the base model and a counterpart post-trained jointly on pooled multimodal data on all twelve benchmarks, and ranks first or second on eleven even when the individual specialists are included. The specialists are discarded after training, leaving one deployable omni-modal model. These results show that coordinating modality-specific teachers is an effective way to improve a shared model while maintaining cross-modal balance.",
+  "authors": [
+   "Tong Zhao",
+   "Yuyang Hu",
+   "Yutao Zhu",
+   "Reed Li",
+   "Haijin Liang",
+   "Haibo Shi",
+   "Yu Lu",
+   "Zhicheng Dou"
+  ],
+  "published": "2026-07-23T04:55:04Z"
+ },
+ {
+  "arxiv_id": "2607.20923v1",
+  "title": "Scientific exploration, collaboration and labor division in the large language model era",
+  "abstract": "Large language models (LLMs) have rapidly and significantly entered scientific workflows, but it remains unclear how their diffusion is associated with changes in scientists' strategies in research directions and team building. We link PubMed Central full text with OpenAlex publication and collaboration histories for 775,323 scientists and analyze CRediT contribution statements from 137,120 multi-author papers. After 2022, scientists increasingly published across more intellectually distant fields and entered fields in which they had not previously worked. These increases in interdisciplinarity and exploration were especially pronounced among established scientists and scientists from non-English-speaking low- and middle-income countries. Authors with stronger AI-writing signals were already more interdisciplinary and exploratory before the widespread adoption of LLMs, and the gap widened further after 2022 compared with authors with weaker AI-writing signals. Scientists' collaboration networks also became more interdisciplinary after 2022. Yet, among authors with stronger AI-writing signals, research interdisciplinarity was less closely tied to the disciplinary diversity of their collaborators. The division of labor within research teams also became more differentiated. Contributors on papers published after 2022 reported narrower role sets on average, coauthors shared fewer roles in common, and their role profiles became less rigid and more fluid. Software and validation roles increased, while conceptual and management roles decreased. These patterns suggest that team members are taking on more distinct responsibilities and may rely less on one another to perform research tasks. Overall, this study indicates that the LLM era coincides with a broader reorganization of scientific exploration, collaboration, and the division of labor.",
+  "authors": [
+   "Xiang Zheng",
+   "Xi Hong",
+   "Jialin Liu",
+   "Chaoqun Ni"
+  ],
+  "published": "2026-07-23T04:58:41Z"
+ },
+ {
+  "arxiv_id": "2607.20925v1",
+  "title": "Representing Entity Importance in AI Knowledge Systems: A Dual-Signal Framework of Audience Evaluation and Structural Authority",
+  "abstract": "AI knowledge systems require representations of entity importance for retrieval, recommendation, evidence selection, and knowledge-intensive reasoning. Yet importance is often reduced to a single score derived from either human response or graph structure. Such compression may discard distinctions that matter when an AI system must choose among entities for different tasks. This study introduces an interpretable dual-signal representation in which each entity is characterized by an audience-evaluation dimension and a structural-authority dimension. The framework is evaluated using movie entities as an empirical validation domain. IMDb non-commercial datasets provide a rating-based audience ranking, Wikidata supports entity alignment, and English Wikipedia hyperlinks form the knowledge network on which PageRank estimates structural authority. Experiments on 482 entities and 13,690 directed relationships reveal a statistically significant but weak association between the two dimensions (Spearman rho = 0.2275, p &lt; 0.001). Their overlap is only 10% in the top 10 and 34% in the top 100, while entity-level divergence occurs in both directions. The results show that audience evaluation and structural authority are non-redundant signals and should not automatically be collapsed into a single scalar notion of importance. The contribution is not a new ranking algorithm or learned embedding, but a minimal knowledge-representation framework and an empirical test of its dimensional necessity. The findings support task-aware AI knowledge systems that preserve distinct importance signals before applying context-specific selection or aggregation.",
+  "authors": [
+   "Shen Xu"
+  ],
+  "published": "2026-07-23T05:06:09Z"
+ },
+ {
+  "arxiv_id": "2607.20926v1",
+  "title": "SciExplore: Evaluating Autonomous Agents from Scientific Navigation to Information Integration",
+  "abstract": "Scientific research involves complex information-seeking and reasoning workflows across heterogeneous sources. However, existing benchmarks primarily emphasize general-domain retrieval or static scientific question answering, and therefore fail to assess key capabilities required in realistic scientific research workflows. We introduce SciExplore, a benchmark designed to evaluate scientific information-seeking and reasoning capabilities of LLMs and agents. SciExplore comprises four task types covering 103 expert-curated tasks across more than ten scientific disciplines: scientific database navigation, ambiguous literature retrieval, missing reference completion, and cross-source structured knowledge synthesis, which probe progressively higher-level abilities from entity-level reasoning and document-level identification to evidence-level grounding and domain-level synthesis. We evaluate over ten state-of-the-art LLMs and autonomous agents on SciExplore, revealing substantial performance gaps with performance degrading sharply as task complexity increases and extremely low accuracy on the most challenging structured synthesis tasks. These results highlight significant limitations of current models and agents in realistic scientific information-seeking scenarios.",
+  "authors": [
+   "Yinhao Tang",
+   "Youqing Fang",
+   "Yanan Sun",
+   "Wenran Liu",
+   "Weiming Zhang",
+   "Bin Liu",
+   "Kuikun Liu",
+   "Wenwei Zhang",
+   "Kai Chen"
+  ],
+  "published": "2026-07-23T05:17:00Z"
+ },
+ {
+  "arxiv_id": "2607.20933v1",
+  "title": "Transformer-Assisted LLM-Based Source Code Summarisation: to Enable More Secure Software Development",
+  "abstract": "Neural Source Code Summarisation (NSCS) aims to generate natural language summaries of source code to improve developers' and maintainers' understanding of code. Source code summaries are vital during the maintenance phase of the Secure Software Development Lifecycle (SSDLC), as they improve maintainers' understanding of code and help reduce the number of bugs and vulnerabilities in a software system. However, summaries are often missing, incomplete, or outdated in many software systems. Solutions to this problem use small, task-specific Transformer models or code-aware Large Language Models (LLMs). Task-specific Transformer-generated summaries often score well across many natural language generation (NLG) metrics, but these metrics reward lexical overlap rather than summary quality. Conversely, the ability of LLMs to capture semantics and produce high-quality summaries presents an exciting solution to this problem. This is especially relevant given the increased availability of LLMs and improvements in workstation hardware in recent years, which mean that some LLMs can now be run on developers' workstations. However, because of their abstractive nature, LLM-generated code summaries often differ greatly from developer-written summaries in the words and phrases they use, resulting in low scores across NLG metrics. We show how combining these two methods, by using Transformer-generated summaries in prompt engineering, may enable LLMs to create better source code summaries and help software practitioners maintain secure systems. We prompt four LLMs using four different prompts, with a task-specific Transformer used to assist the LLMs within the prompts. We present \"Transformer-Assisted LLM-Based Source Code Summarisation\", a method through which we observe an improvement of 7.8% in BLEU-4 and 5%.",
+  "authors": [
+   "Jesse Phillips",
+   "Tracy Hall",
+   "Paul Rayson",
+   "Mo El-Haj"
+  ],
+  "published": "2026-07-23T05:27:24Z"
+ },
+ {
+  "arxiv_id": "2607.20935v1",
+  "title": "Chemical Chain-of-Thought Functions as a Hallucination-Prone Molecular Scratchpad",
+  "abstract": "Chemical reasoning language models are expected to derive molecular answers through faithful chain-of-thought (CoT). However, across four reasoning model families and twelve chemistry tasks, hallucination is widespread and largely decoupled from answer correctness: correct answers often coexist with fabricated structural claims absent from the relevant molecules. Yet this does not make the reasoning trace computationally irrelevant. Attribution analyses suggest a shared scratchpad function expressed in model-specific forms: Chem-R and ether-0 rely on fragmented SMILES drafts, whereas ChemDFM-R emphasizes scaffold, positional, and naming cues. Notably, perturbing Chem-R's SMILES sketches degrades generation, showing that structural drafts can be causally load-bearing even when verbal structural claims are largely inert. Together, these results show that chemical CoT is neither a faithful explanation nor merely a post-hoc rationalization, but a hallucination-prone molecular scratchpad. This finding cautions against treating CoT as direct evidence of faithful reasoning and motivates process-level supervision beyond answer-only evaluation.",
+  "authors": [
+   "Jiatong Li",
+   "Yuxuan Ren",
+   "Weida Wang",
+   "Xiaoyong Wei",
+   "Yatao Bian"
+  ],
+  "published": "2026-07-23T05:30:45Z"
+ },
+ {
+  "arxiv_id": "2607.20937v1",
+  "title": "Clustered Edge Intelligence: Beyond Just Convergence of Edge Computing and AI",
+  "abstract": "We are moving from an information age to the age of intelligence. A decade, or possibly less than that, data will not be the gold anymore rather the derived intelligence out of the data and the information we posses from the edge of the network. Existing Edge Intelligence research focuses mainly on two directions: using AI for edge resource management and deploying lightweight AI models on edge devices. However, existing edge computing research lacks an intelligence-centric framework in which derived intelligence is treated as a first-class, independently manageable entity that can be described, discovered, observed, shared, reused, and dynamically clustered across heterogeneous edge devices and applications. To address these research gaps, we introduced Clustered Edge Intelligence, a visionary intelligence-centric approach. The aim of CEI is to make intelligence a shareable and reusable first-class entity that can be independently represented, discovered, observed, exchanged, and managed across the distributed edge-cloud continuum. We present a three layer CEI architecture and examine enabling technologies and research dimensions, including intelligence inventories, semantic knowledge representation, communication, discoverability, observability, lifecycle automation, clustering mechanisms, marketplaces, interoperability, and standardization.",
+  "authors": [
+   "Chinmaya Kumar Dehury",
+   "Boris Sedlak",
+   "Alaa Saleh",
+   "Ilir Murturi",
+   "Lauri Loven",
+   "Satish Narayana Srirama",
+   "Praveen Kumar Donta"
+  ],
+  "published": "2026-07-23T05:31:17Z"
+ },
+ {
+  "arxiv_id": "2607.20938v1",
+  "title": "Controllable and Content-Based Recommendations",
+  "abstract": "Traditional recommendation systems rely on latent (dense) representations, making them difficult to interpret and control. We propose the Controllable and Content-Based Recommendations (CCBR) framework, which builds its recommendations from textual user profile representations. CCBR plugs into collaborative filtering models and introduces controllability via text bottlenecks. We show that CCBR enables text-based and multimodal interventions, allowing users to steer the model towards the directions they prefer. Different from existing controllable recommendation systems, CCBR infers the text summaries directly from item contents (images, audio or video). Across image-, audio-, and video-based datasets, we demonstrate that the proposed framework obtains competitive model performance with standard (latent-representation) models while providing controllable model summaries via text. The model also outperforms TEARS, a recent baseline for controllable recommendation systems. Through systematic interventions, we demonstrate the efficacy of the user steering mechanism.",
+  "authors": [
+   "F\u0131rat \u00d6ncel",
+   "Jihoon Jeong",
+   "Emiliano Penaloza",
+   "Mirco Ravanelli",
+   "Laurent Charlin",
+   "Cem Subakan"
+  ],
+  "published": "2026-07-23T05:31:40Z"
+ },
+ {
+  "arxiv_id": "2607.20939v1",
+  "title": "Interaction Dynamics Modeling and Predictive Control for Safe Steerable Catheter--Tissue Interaction",
+  "abstract": "Safe steerable catheter control is fundamentally a problem of interaction dynamics: the tip must follow a planned motion, remain compliant against moving tissue, reject friction and hysteresis, and respect a clinically meaningful never-exceed contact-force bound. We formulate catheter--tissue interaction dynamics in the scalar tip-normal coordinate of a single-segment single-tendon catheter. A partial-physics feedforward cancels only the reliable nominal bending dynamics, exposing a configuration-invariant linear interaction-dynamics model whose input gain varies through the scalar catheter inertia. A predictive optimizer then regulates this interaction state subject to hard contact-force, tendon-force, and curvature constraints. An augmented Kalman filter compresses contact, friction, and modeling error into one sensor-free disturbance state, giving nominal offset-free regulation in free space while leaving force safety to the explicit constraint. The unconstrained and disturbance-free limit recovers classical catheter impedance as a special realization of the same interaction dynamics, rather than as the main design object. In a MuJoCo distributed-compliance simulation of an eight-link tendon-driven catheter, disturbance augmentation cuts free-space approach error by 90\\%, and only the force-constrained predictive interaction-dynamics controller reconciles tracking with the 0.5\\,N bound: the unconstrained controller drives contact force to 0.60\\,N against a penetrating target, while the constrained one holds 0.47\\,N at identical tracking. These results show that offset-free motion regulation and contact-force safety are coupled interaction-dynamics objectives, and that the explicit predictive constraint resolves their tension under stiff tissue contact. The bound also holds under $0.5$\\,mm, $1.2$\\,Hz cardiac motion. Hardware validation is future work.",
+  "authors": [
+   "Yongyan Cao"
+  ],
+  "published": "2026-07-23T05:32:48Z"
+ }
+]

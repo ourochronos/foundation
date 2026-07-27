@@ -1,0 +1,277 @@
+[
+ {
+  "arxiv_id": "2607.21933v1",
+  "title": "Semiotic logical hexagon theory for LLM logical reasoning",
+  "abstract": "Large language models (LLMs) have become powerful tools for language understanding and logical reasoning. However, they still make mistakes when a problem requires both understanding meaning and following logic. A key reason is that natural-language statements often carry implicit semantic relations before any formal reasoning begins. If these hidden meanings are not properly organized, the model may reach incorrect conclusions even when the subsequent reasoning process appears logically valid. Existing methods improve reasoning through decomposition, symbolic translation, external solvers, or self-verification, but pay comparatively less attention to the semantic structure on which reasoning depends. In this paper, we further investigate how semantic organization influences logical reasoning in LLMs. To this end, we propose HexLogicAgent, a framework that first organizes the meaning of natural-language statements and then guides logical reasoning through structured verification. In our investigation, we also make two observations. First, incomplete semantic representations, rather than deductive inference itself, are a major source of logical reasoning failures in LLMs. Second, explicitly modeling the complete structure of semantic opposition substantially delays the degradation of reasoning performance as logical complexity increases. Experiments on challenging logical reasoning benchmarks demonstrate that HexLogicAgent consistently improves reasoning reliability across multiple LLMs. The core idea is supported by a logical hexagon theory, which explains why a complete structure of opposing meanings is necessary for reliable reasoning.",
+  "authors": [
+   "Yunyao Zhang",
+   "Xinglang Zhang",
+   "Zeliang Chen",
+   "Junqing Yu",
+   "Zikai Song"
+  ],
+  "published": "2026-07-24T03:10:34Z"
+ },
+ {
+  "arxiv_id": "2607.21936v1",
+  "title": "Leveraging External Knowledge for Historical Document Restoration via Retrieval-Augmented Large Language Models",
+  "abstract": "Historical documents act as invaluable knowledge archives but often suffer from illegibility due to physical deterioration and damage. While existing restoration methods based on masked language modeling effectively utilize local context, they struggle to restore named entities that require external historical knowledge. To address this limitation, we introduce a novel framework for historical document restoration that leverages large language models with retrieval-augmented generation (RAG). By combining the implicit knowledge of pre-trained LLMs with explicitly retrieved external context, our model ARI effectively mitigates the challenge of inferring context-dependent proper nouns. Extensive experiments on Korean historical documents demonstrate that our approach significantly outperforms baselines, achieving substantial gains in restoring both general characters and named entities. Furthermore, comprehensive evaluations including expert assessments confirm that ARI serves as a practical tool for domain experts, promising to accelerate the analysis of historical records.",
+  "authors": [
+   "Gabeen Kim",
+   "Kyeongpil Kang"
+  ],
+  "published": "2026-07-24T03:11:25Z"
+ },
+ {
+  "arxiv_id": "2607.21941v1",
+  "title": "LatentFlow: Visual Analytics for Latent Space Analysis in Molecular Graph Neural Networks",
+  "abstract": "Chemists and materials scientists increasingly use machine learning models, such as graph neural networks (GNNs), to predict properties of molecules and the outcomes of their reactions. Beyond predictive performance, understanding how these models organize chemical information internally in their latent spaces, i.e., the embeddings of the molecules, is critical. Analyzing latent spaces helps diagnose model behavior and assess whether the learned embeddings are organized in ways that reflect meaningful chemical relationships. Unfortunately, existing methods provide limited support for analyzing latent spaces across layers and across different model states (e.g., training epochs, model configurations, and input data), making it difficult to understand how these latent spaces evolve throughout a model or relate to chemical concepts. We present LatentFlow, a visual analytics system developed in collaboration with a domain expert for analyzing latent spaces in molecular GNNs. LatentFlow groups embeddings into clusters and supports exploration of latent spaces by tracking how these clusters change across layers and model states using a modified Sankey diagram. To support interpretation, LatentFlow links these clusters to representative molecules and their shared substructures, and it allows scientists to introduce their own domain knowledge and compare it with the patterns found in the latent spaces. We evaluate LatentFlow through two case studies. The results show that LatentFlow helps scientists understand how latent spaces evolve, identify meaningful molecular patterns, and better interpret model behavior.",
+  "authors": [
+   "Shiyi Liu",
+   "Jiaqing Chen",
+   "Nicholas Hadler",
+   "Rostyslav Hnatyshyn",
+   "Michael W. Mahoney",
+   "Talita Perciano",
+   "John F. Hartwig",
+   "Gunther H. Weber",
+   "Ross Maciejewski"
+  ],
+  "published": "2026-07-24T03:33:38Z"
+ },
+ {
+  "arxiv_id": "2607.21946v1",
+  "title": "Multi-Agent Debate and Visual Information Extraction for SeePhys Pro: A 1st-Place Technical Report from ICML 2026 AI4Math Track 3 Challenge",
+  "abstract": "This technical report presents our approach to Challenge Track~3: SeePhys Pro at the 3rd AI for Math Workshop, where the task is to answer college-level physics questions whose statement and figure may be given partly or entirely as an image. Visual physics problems become substantially harder for large language models when the decisive information resides in a figure rather than in the text, and this modality gap widens as more of the problem migrates into the image. We address the task with a two-stage framework: a visual information extraction stage that re-expresses figure content as solver-readable text to close the modality gap, and a reasoning stage that orchestrates three heterogeneous solvers through multi-agent debate. Our analysis yields two findings: the gain from orchestration comes from reliable answer selection rather than from additional debate, and the value of a figure aid scales with how much of the problem is locked inside the image. The resulting pipeline improves overall accuracy over a single-agent baseline from 0.643 to 0.802 on the public split, and won 1st place on both the public and the private leaderboard (private overall 0.743).",
+  "authors": [
+   "Jiseok Kwak",
+   "Suhyeon Jo",
+   "Taewoo Kim",
+   "Yeongmin Kim",
+   "Byeonghu Na",
+   "Il-chul Moon"
+  ],
+  "published": "2026-07-24T03:44:30Z"
+ },
+ {
+  "arxiv_id": "2607.21949v1",
+  "title": "MA-DAR: Manifold-Aligned Dynamic Adaptive Routing for Continual Temporal Knowledge Graph Reasoning",
+  "abstract": "Continual temporal knowledge graph (TKG) reasoning aims to continuously incorporate newly emerging facts while preserving previously acquired knowledge. Replay-based continual learning has achieved promising performance by revisiting historical representations. However, existing methods primarily focus on what to replay, while largely overlooking how replayed representations should be integrated with current ones. Such direct integration often gives rise to two critical forms of representation conflict: \\textit{norm domination} and \\textit{semantic blurring}, ultimately degrading continual reasoning performance. To address these challenges, we propose MA-DAR (Manifold-Aligned Dynamic Adaptive Routing), a lightweight plug-and-play framework for replay representation fusion. MA-DAR first aligns replayed and current representations onto a shared manifold to alleviate distribution discrepancies. It then employs a dynamic gating mechanism to learn dimension-wise fusion weights, adaptively determining the contribution of replayed and current representations to the fused representation. Furthermore, a polarization regularizer encourages more decisive routing behaviors by discouraging ambiguous gating decisions, resulting in more stable and effective knowledge integration. Extensive experiments on four public continual TKG benchmarks demonstrate that MA-DAR consistently improves the performance of representative TKG encoders while remaining effective under different replay settings. Comprehensive ablation studies and visualization analyses further verify the effectiveness of manifold alignment and dynamic adaptive routing in mitigating representation conflicts and improving continual reasoning.",
+  "authors": [
+   "Xiangjun Shi",
+   "Chong Mu",
+   "Jinchuan Zhang",
+   "Lizong Zhang",
+   "Yuefeng He",
+   "Shang Liu"
+  ],
+  "published": "2026-07-24T03:52:13Z"
+ },
+ {
+  "arxiv_id": "2607.21951v1",
+  "title": "SIREN (Luring LLMs onto the Rocks): PAIR-Driven Preference Manipulation in Web-RAG Recommenders",
+  "abstract": "This paper investigates the adversarial manipulation of the ranked recommendations produced by web-augmented large language models (LLMs). When an LLM answers a recommendation query by retrieving and reading live webpages, it acts as a recommender, and each retrieved page becomes a potential attack surface. Prior work has examined fabricated products, retrieval poisoning, and rank promotion. However, these studies do not compare how different edits to an already retrieved page change the model's final ranking while the surrounding source set remains unchanged. To address this gap, we propose SIREN, an automated attacker--judge method that adapts the PAIR jailbreaking loop to competitive rank manipulation, with the goal of moving a chosen entity to rank~1 in an LLM-generated recommendation. SIREN retrieves and captures webpages using Anthropic's web tools, then iteratively edits a retrieved source using an interpretable taxonomy of 23 content-poisoning techniques. The custom-RAG replay platform keeps the same sources in the same order, so changes in the model's ranking can be linked to changes in the supplied content rather than to differences in retrieval. Across two production Claude models, SIREN reaches rank~1 in 62 of 124 technique trials nested within eight query--model contexts. The payloads that reached rank~1 were then tested in fresh sessions, where they reproduced the result with a mean success rate of 0.805. Across the evaluated settings, declarative ranking claims and seeded lists were generally more effective than directive-form injections, although the strength of this difference depended on the target model. To the best of our knowledge, this is among the first controlled studies of competitive rank manipulation in production LLMs where the supplied source context is kept fixed.",
+  "authors": [
+   "Evan Caville",
+   "Siamak Layeghy",
+   "Billy Sung",
+   "Sara Dolnicar",
+   "Marius Portmann"
+  ],
+  "published": "2026-07-24T03:55:51Z"
+ },
+ {
+  "arxiv_id": "2607.21958v1",
+  "title": "Efficient Online LLM Watermark Detection via Rao-Blackwellized E-Processes",
+  "abstract": "As large language models (LLMs) are increasingly deployed, reliable and efficient mechanisms for distinguishing AI-generated text from human-written content have become essential. Statistical watermarking has emerged as a promising solution, yet most existing methods are typically fixed-horizon procedures, precluding valid early stopping in streaming generation. In this paper, we develop an efficient online watermark detection framework with anytime-valid inference based on Rao-Blackwellized e-processes, enabling recursive token-level evidence updates without storing the full history. In particular, we instantiate the framework for the Gumbel-max watermark and reduce the original token-level dependence testing problem to a pivot-induced sequential testing problem with an explicit null distribution. Theoretically, we prove anytime-valid Type I error control under arbitrary optional stopping and establish positive asymptotic log-growth under watermarking, implying consistency of the proposed stopping rules. Simulations and experiments on real LLM-generated text demonstrate efficient online detection with rigorous anytime-valid guarantees.",
+  "authors": [
+   "Lu Luo",
+   "Dandan Mo",
+   "Chengdong Xu",
+   "Ting Li",
+   "Jinhan Xie",
+   "Huiqiong Li",
+   "Niansheng Tang"
+  ],
+  "published": "2026-07-24T04:10:36Z"
+ },
+ {
+  "arxiv_id": "2607.21961v1",
+  "title": "On Improving Faithfulness of Podcasts from Documents",
+  "abstract": "Large language models (LLMs) are increasingly used to generate long-form conversational content such as podcasts from textual sources. While these systems produce fluent and engaging narratives, they often introduce ungrounded information. In this work, we present the first systematic study of faithfulness in document-grounded podcast generation, where grounding must be maintained across conversational turns in long-form, multi-speaker transcripts. We construct a dataset of over 1500 documents spanning five domains and generate podcast transcripts using multiple LLMs. We introduce a turn-level LLM-as-a-judge framework for evaluating whether conversational turns are supported by the source document, and validate its reliability through human studies. Our analysis shows that even state-of-the-art models, including GPT-4o, frequently generate ungrounded content. To mitigate this issue, we propose catch-n-repair, a model-agnostic framework that detects and rewrites unfaithful conversational turns while preserving conversational flow. Experiments demonstrate consistent improvements in faithfulness across both in-domain and out-of-domain settings.",
+  "authors": [
+   "Soumya Dutta",
+   "Tejas Indulal Dhamecha",
+   "Pannaga Shivaswamy"
+  ],
+  "published": "2026-07-24T04:17:56Z"
+ },
+ {
+  "arxiv_id": "2607.21962v1",
+  "title": "Ground Truth First: A Longitudinal Evaluation Instrument for Agent Memory, and the Tenure Crossover in Memory-Architecture Rankings",
+  "abstract": "Benchmarks for LLM-agent memory typically generate conversations first and extract answer keys afterwards -- with documented label-error and contamination problems -- and they overwhelmingly measure short interaction histories. We invert the pipeline: a seeded life-script sampler emits facts with validity intervals, volatility classes, and source channels before any text exists; an LLM renderer writes chat and email from per-event fact manifests; a fidelity verifier confirms every planted fact; and questions are instantiated mechanically from the script, so gold answers are script-valid by construction and separately validated for answerability. The synthetic, fictionalized corpus (~380 questions, 15 types) embeds features absent from the benchmarks we survey: per-fact validity intervals, sent/received trust distinctions, injection probes in a benign harness, and as-of-date question sets. Benchmarking five memory architectures against a no-memory control (fixed answerer, versioned LLM judge, three replicates, two horizons), we find backend rankings invert with history length: the budgeted curated-map memory that leads at three weeks loses recall of evicted content by nine weeks (96% to 72%) while a provenance-typed graph rises to 90%; the inversion is positive for all six users under complete cross-family re-judging (exact p=0.031). A full-rendered-history baseline ties or exceeds the best memory system at the short horizon but shows no judge-independent advantage at nine weeks, at about twice the read cost. Write-stage quality strongly correlates with downstream quality (weakly-written facts fail 24% vs 2%), and injection resistance tracked whether provenance boundaries survive representation. A layered architecture performs best among the memory systems in both regimes (96.8% short-horizon) and is released as Veracium, an open-source library, with the corpus generator and harness.",
+  "authors": [
+   "Quentin Spencer"
+  ],
+  "published": "2026-07-24T04:19:45Z"
+ },
+ {
+  "arxiv_id": "2607.21964v1",
+  "title": "ACME: A Multi-Cultural, Multi-Embodiment Social-Navigation Dataset",
+  "abstract": "Understanding how robots and humans move in shared spaces is essential for designing effective social robot navigation policies and predicting human behavior. However, existing datasets often lack the diversity needed to capture differences in culture, geography, and human-robot interaction-factors that strongly shape appropriate social behavior. To address this gap, we introduce ACME: A Cross-cultural, Multi-Embodiment dataset for social navigation. A large-scale data collection effort across 8 sites in 5 countries, using 7 robot embodiments, ACME is a large and diverse multi-modal dataset aimed at advancing social navigation research, providing 29.35 hours of onboard robot data and 43.5 hours of overhead pedestrian tracking data. Unlike prior datasets, it focuses on capturing goal-driven social navigation behavior in complex social scenarios with explicit robot-crowd interaction through robot speech. To facilitate learning navigation policies and predicting pedestrian trajectories, ACME provides 3D and 2D scene features, odometry, interaction information, and human-annotated pedestrian trajectory labels. We make ACME easy to use by providing both human-readable data for each sensor modality as well as raw binary data. Our qualitative and quantitative analyses show that our dataset captures more challenging scenarios and a broader distribution of pedestrian behavior than previous datasets.",
+  "authors": [
+   "Shashank Rao Marpally",
+   "Allan Wang",
+   "Atharva Ghotavadekar",
+   "Renato Alexandre Ribeiro",
+   "Nhat Le",
+   "Pilar Bachiller-Burgos",
+   "Pranav Goyal",
+   "Subham Agrawal",
+   "Yasuhiro Nitta",
+   "Howard Ziyu Han",
+   "Daeun Song",
+   "Masaki Kuribayashi",
+   "Kohei Uehara",
+   "Xiyue Wang",
+   "Yangzhe Kong",
+   "Duc M. Nguyen",
+   "Amirreza Payandeh",
+   "Gerardo P\u00e9rez-Gonz\u00e1lez",
+   "Alejandro Torrej\u00f3n-Harto",
+   "Jeeho Ahn",
+   "Tisha Jain",
+   "Andrew Stratton",
+   "Elvin Yang",
+   "Jorge de Heuvel",
+   "Nico Ostermann-Myrau",
+   "Sai Anudeep Sajja",
+   "Mithilya Raj",
+   "Daisuke Sato",
+   "Gaston Rouquette",
+   "Nikolas Martelaro",
+   "Maki Sugimoto",
+   "Hironobu Takagi",
+   "Chieko Asakawa",
+   "Maren Bennewitz",
+   "Aaron Steinfeld",
+   "Xuesu Xiao",
+   "Christoforos Mavrogiannis",
+   "Harold Soh"
+  ],
+  "published": "2026-07-24T04:23:21Z"
+ },
+ {
+  "arxiv_id": "2607.21970v1",
+  "title": "TextSLIP: Text Self-Supervised CLIP for Medical Report Generation",
+  "abstract": "Automating radiology report generation is important for improving reporting consistency and clinical workflows . While Contrastive Language--Image Pretraining (CLIP) has advanced medical vision language modeling, existing CLIP-style approaches may still provide insufficient fine-grained semantic supervision for complex report generation. Standard CLIP primarily optimizes cross-modal alignment, without explicitly structuring the textual embedding space that guides visual representation learning. To address this limitation, we propose TextSLIP, a general medical vision-language pretraining framework that augments CLIP with intra-modal text contrastive learning. By improving textual embedding discriminability through self-supervised augmented text pairs, TextSLIP is designed to provide finer-grained linguistic supervision to the visual encoder. As an initial validation, we pretrain TextSLIP on a curated dataset of 7 million brain MRI image-text pairs and fine-tune the pretrained visual encoder within a report generation architecture. In controlled comparisons with CLIP-style baselines, TextSLIP shows consistent improvements on report generation metrics. Ablation studies further suggest that text-side self-supervision contributes to the observed gains. These results indicate that text-level contrastive learning is a promising direction for improving medical visual-textual alignment, while broader validation across additional medical domains remains an important next step.",
+  "authors": [
+   "Haoyu Jiang",
+   "Ziping Cong"
+  ],
+  "published": "2026-07-24T04:34:10Z"
+ },
+ {
+  "arxiv_id": "2607.21971v1",
+  "title": "Teaching LLMs to Self-Evolve: Cultivating Core Meta-Skills with Reinforcement Learning",
+  "abstract": "Test-time scaling through iterative self-evolution with environment feedback, as demonstrated by AlphaEvolve, shows remarkable performance gains. We hypothesize that the success of such evolution frameworks hinges on meta-skills, such as self-reflection with environment feedback, that enable effective multi-round refinement, yet are largely neglected by traditional post-training. To bridge this gap, we present MetaEvolve, a framework designed to develop these meta-skills via a data synthesis pipeline, evolution-aware reinforcement learning (RL), and inference-time evolutionary search. Concretely, we ground MetaEvolve in coding, where program execution provides natural, continuous reward signals beyond binary correctness. Building on these signals, we synthesize evolution trajectories as training data, each containing a current program, its fitness score (combining correctness and efficiency), and a history of prior attempts, and train the model via RL with verifiable rewards derived from test case execution. By training on large-scale code data, we aim to inspire generalizable domain-agnostic meta-skills that can transfer broadly to open-ended problems where such rich training signals are scarce. Across seven coding benchmarks, MetaEvolve outperforms the strongest baseline by 10.01% absolute on in-distribution tasks and 24.12% on out-of-distribution tasks. On open-ended algorithm optimization problems entirely outside the training domain, it further achieves a 46.9% relative improvement. These results demonstrate that explicitly cultivating self-evolution meta-skills offers a principled path toward more capable and autonomously self-evolving AI.",
+  "authors": [
+   "Shujin Wu",
+   "Cheng Qian",
+   "Xiusi Chen",
+   "Heng Ji"
+  ],
+  "published": "2026-07-24T04:35:29Z"
+ },
+ {
+  "arxiv_id": "2607.21975v1",
+  "title": "On the Convergence of Stochastic Low-Rank Adaptation",
+  "abstract": "Low-rank adaptation (LoRA) optimizes $J(B,A)=\\mathcal L(W_\\mathrm{base}+sBA)$ over two adapters $B \\in \\mathbb{R}^{m \\times r}$ and $A \\in \\mathbb{R}^{r \\times n}$ that form a low-rank update to a frozen pretrained weight matrix $W_\\mathrm{base} \\in \\mathbb{R}^{m \\times n}$. The prior analysis shows LoRA-GD takes $\\exp\\{\\mathcal{O}(\u03b5^{-2})\\}$ oracle calls to find an $\u03b5$-stationary point such that $\\|\\nabla J(B,A)\\|\\leq \u03b5$ in the deterministic setting. We sharpen the analysis and show that $\\mathcal{O}(\u03b5^{-4})$ full-gradient evaluations suffice for the same first-order criterion. We further study stochastic LoRA under unbiased gradient estimates and finite variance. We propose LoRA-NSGDM, which finds an $\u03b5$-stationary point with $\\mathcal{O}(\u03b5^{-8})$ stochastic oracle complexity. Under the additional mean-square smoothness condition, we use variance reduction strategy and propose LoRA-STORM, which improves the stochastic oracle complexity to $\\mathcal{O}(\u03b5^{-6})$.",
+  "authors": [
+   "Ru Wang",
+   "Chengchang Liu",
+   "John C. S. Lui"
+  ],
+  "published": "2026-07-24T04:41:26Z"
+ },
+ {
+  "arxiv_id": "2607.21978v1",
+  "title": "MoE$^2$-LoRA: When MoE Models Meet MoE-style Low-Rank Adaptation",
+  "abstract": "Mixture-of-Experts (MoE) architectures have been widely adopted in large language models, yet parameter-efficient fine-tuning (PEFT) for MoE models remains underexplored. Existing PEFT methods for MoE either ignore router priors with uniform adapters, reducing efficiency and risking forgetting, or rely on static expert selection, limiting per-token capacity and cross-expert feature learning. In this paper, we make the first attempt to fine-tune MoE models with MoE-style low-rank adaptation: our method, entitled MoE$^2$-LoRA, deeply couples the pretrained expert specialization with task-specific adaptivity via a dual-channel Routing-Conditioned Projection (RCP) module, which reuses base router activations to inform LoRA routing. We further introduce a single global LoRA expert pool shared across all layers, enabling model-wide adaptation with emergent layer-wise affinities and balanced expert utilization. MoE$^2$-LoRA simultaneously benefits from the advantages of prior reuse, dynamic adapter routing, and model-wide knowledge sharing. Evaluated on multiple MoE backbones with varying scales and expert granularities, MoE$^2$-LoRA consistently achieves state-of-the-art downstream accuracy while retaining stronger general capabilities.",
+  "authors": [
+   "Qingyu Yang",
+   "Haonan He",
+   "Minglei Li",
+   "Jingqi Ye",
+   "Tao Chen",
+   "Lei Bai",
+   "Peng Ye"
+  ],
+  "published": "2026-07-24T04:50:39Z"
+ },
+ {
+  "arxiv_id": "2607.21980v1",
+  "title": "Analyzing Toxic Behavior and Its Impact on the Mastodon Community",
+  "abstract": "Mastodon as a decentralized federation of independently moderated social servers poses unique challenges for the detection and mitigation of toxic content. There are no unified moderation standards. The ecosystem is very diverse and uneven. This paper explores the development and spread of toxicity in Mastodon, utilizing machine learning methods to examine user posts. The results offer clarity on toxicity trends and its implications for community health and decentralized governance.",
+  "authors": [
+   "Pasan Kamburugamuwa",
+   " Scrivner",
+   "Olga B"
+  ],
+  "published": "2026-07-24T04:52:29Z"
+ },
+ {
+  "arxiv_id": "2607.21981v1",
+  "title": "J-CoT: Chain-of-Thought in J-Space",
+  "abstract": "Chain-of-thought prompting improves language-model reasoning by carrying intermediate states across successive computation steps. However, relying on natural language as the only recurrent interface is overly restrictive, since many transient computations do not need to be fully verbalized. Existing latent-reasoning methods remove this constraint by recurrently propagating continuous hidden states. However, these methods pass a dense hidden vector as a whole, without an explicit mechanism for selecting and organizing the information needed by the next reasoning step. This motivates an intermediate interface that remains linguistically grounded without requiring a decoded sentence. We introduce \\textbf{J-CoT}, a recurrent reasoning framework built on \\emph{J-space}, a vocabulary-indexed coordinate system within the model's hidden representations. Within each cycle, the model computes in its full hidden space. At the cycle boundary, J-CoT expresses the intermediate state as vocabulary-indexed coefficients, carries these coefficients forward as a \\emph{J-thought}, and maps them back into the model's hidden representation for the next cycle. J-CoT therefore requires neither a fluent intermediate rationale nor recurrence over the complete hidden state. Under matched backbone and inference settings, J-CoT-Zero matches or exceeds the strongest evaluated latent-reasoning baseline on every benchmark, while J-CoT-Train obtains the highest score across the evaluated mathematical, scientific, coding, and structured path-reasoning tasks.",
+  "authors": [
+   "Junde Wu",
+   "Jiayuan Zhu",
+   "Fengling Liu",
+   "Minhao Hu",
+   "Jiazhen Pan"
+  ],
+  "published": "2026-07-24T04:57:30Z"
+ },
+ {
+  "arxiv_id": "2607.21985v1",
+  "title": "Unified Static-Dynamic Pruning for Efficient LLM Inference",
+  "abstract": "The increasing deployment of large language models (LLMs) has magnified the computational and memory bottlenecks of autoregressive decoding, where low compute intensity and bandwidth-bound kernels dominate inference cost. Weight pruning offers a promising remedy, but existing methods remain confined to either static pruning (SP), which permanently removes redundant weights but lacks adaptivity, or dynamic pruning (DP), which adapts to input sparsity but introduces runtime irregularity. This paper presents SPDP, a unified sparse-inference framework that integrates unstructured SP with input-adaptive DP for efficient LLM inference on GPUs. SPDP co-designs a new Tiled-Column-wise Bitmap Compressed (Tiled-CBC) format and two complementary GPU kernels: (1) a CUDA-core spMspV kernel featuring Hybrid Activation-aware Dynamic Shared-Memory Bitmap Decoding (HAD-SMBD) for fine-grained, runtime activation skipping, and (2) a Tensor-Core SpMM kernel optimized for prefill computation. This joint format-kernel design harmonizes static and dynamic sparsity, maintaining bandwidth-efficient memory access and high compute intensity under both phases of LLM inference. Comprehensive evaluations on inference-optimized GPUs demonstrate that SPDP achieves 1.24x-1.37x average speedup (up to 2.51x) over state-of-the- art sparse frameworks such as SpInfer, while matching. perplexity with up to 25% higher sparsity. SPDP advances the inference efficiency-quality Pareto frontier, showing that unified static-dynamic pruning can deliver substantial throughput and performance-per-watt improvements in large-scale LLM serving",
+  "authors": [
+   "Jinhyeok Kim",
+   "Yejoon Lee",
+   "Jaeyoung Do"
+  ],
+  "published": "2026-07-24T05:19:41Z"
+ },
+ {
+  "arxiv_id": "2607.21988v1",
+  "title": "Analysing Self-Harm Representations in Language Models: a Cross-Architecture Study",
+  "abstract": "Self-harm content is particularly challenging to detect using NLP techniques, and is also a high-stakes task which requires the highest accuracy to enable timely intervention or flagging at-risk users. We therefore present an analysis of how LLMs represent such self-harm content, which has downstream applications in self-harm detection, LLM intervention and governance and policing. In this paper, we focus on two datasets and four models, and perform two main experiments: (1) We train and evaluate linear probes across all layers of each model on two self-harm datasets: X-Sensitive and SH-Detection. Across both corpora, self-harm information crystallizes in the final 3 - 7% of network layers (93 to 97% depth). (2) We extract contrastive self-harm directions and, after performing a normaliation step, we find that the most accurate probes are not necessarily the most linearly separable. In particular, we find Gemma-3-4B to represent this \\textit{contrastive self-harm direction} in a slightly different, more intricate way than the other LLMs.",
+  "authors": [
+   "Luis Espinosa-Anke",
+   "Carla Perez-Almendros"
+  ],
+  "published": "2026-07-24T05:27:49Z"
+ },
+ {
+  "arxiv_id": "2607.21995v1",
+  "title": "QC-PHAST Search: Classical--Quantum Query Benchmarks for Finite-Pool Rare-Regime Discovery",
+  "abstract": "Rare-regime discovery in parameterized dynamical systems is an active-search problem: find one verified parameter at which a scientifically defined qualitative threshold is crossed, even when acceptable candidates are rare, nonconvex, or fragmented. We introduce Quantum-Classical Phase-space and Stability-Threshold Search (QC-PHAST), an evidence-gated decision protocol and query-accounting framework for finite candidate libraries. A candidate induces a dynamical object, simulator-derived criticality score, and verified first-hit predicate. Scientific metadata and charged pilot evidence are used to assess whether equation-aware search, scalar-score active search, predicate-only search, or only a query-model comparison is admissible. The quantum row is the inherited Grover/Boyer--Brassard--Hoyer--Tapp (BBHT) unknown-$M$ marked-set query reference; it is not a new quantum-search theorem, materialized circuit, or hardware-speedup claim. The result is a regime map. Direct boundary constructions, geometry controls, online simulator loops, and learned-label accounting further identify when classical structure, false positives, calibration cost, or state preparation erases the query-model margin. QC-PHAST is therefore an auditable protocol for deciding when a finite-pool marked-set reference is informative and when classical or resource-aware search should dominate.",
+  "authors": [
+   "Harsh Milind Tirhekar",
+   "Chandrajit Bajaj"
+  ],
+  "published": "2026-07-24T05:43:45Z"
+ },
+ {
+  "arxiv_id": "2607.21999v1",
+  "title": "From Perturbation Correction to Geometry-Aware Sampling: Sharpness-Guided Equilibrium Sampling for Balanced Flat Minima in Long-Tailed Learning",
+  "abstract": "Long-tailed learning couples two sources of poor generalization: head classes dominate training exposure, while under-represented classes often converge to sharper regions of the loss landscape. Conventional re-sampling addresses the former without considering geometry, whereas existing long-tailed sharpness-aware minimization (SAM) methods modify losses or perturbations only after biased mini-batches have been drawn. We introduce Sharpness-Guided Equilibrium Sampling (SGS), which treats the sampling distribution as an active control variable for optimization geometry. SGS dynamically adjusts subsequent mini-batches by increasing the sampling probability of less frequently sampled classes while suppressing classes with large SAM-induced loss changes, using only cumulative class counts and EMA sharpness estimates obtained from the standard SAM update, without class-wise perturbations or additional backward passes. We characterize this sampling process through a continuous-time stochastic differential equation and a sampling-dependent PAC-Bayes analysis, explaining how frequency-sharpness feedback can move training toward a more balanced flatness profile. On CIFAR-100 LT with an imbalance ratio of 100, SGS-SAM improves Focal-SAM by 10.85 points in tail accuracy and 3.56 points overall. On ImageNet-LT, it improves ImbSAM by 6.59 points on tail classes and 1.20 points overall. Its training time is only $1.02\\times$ that of vanilla SAM. Beyond these gains, SGS establishes a sampling-side route to loss-landscape control, suggesting that future long-tailed methods can jointly regulate data exposure and optimization geometry rather than treating either as fixed.",
+  "authors": [
+   "Jiaxin Deng",
+   "Junbiao Pang"
+  ],
+  "published": "2026-07-24T05:56:00Z"
+ }
+]

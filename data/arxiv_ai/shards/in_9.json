@@ -1,0 +1,238 @@
+[
+ {
+  "arxiv_id": "2607.21558v1",
+  "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
+  "abstract": "Building socially calibrated large language models, which can learn from others without simply yielding to them, requires more than reducing sycophancy as a one-dimensional failure mode. Models must distinguish when to incorporate others' perspectives from when to maintain a well-grounded moral judgment. We study the broader resistance-compliance process governing this distinction. Across three studies, we show that models' judgment revision is structured along three dimensions that parallel classic phenomena in human social psychology: the distance between an incoming view and the model's initial position, the source attribution of that view, and the coalition structure supporting it. Models are generally more receptive to nearby positions, more influenced by views presented as their own prior judgments, and differently responsive to group pressure. These findings recast sycophancy as one expression of a broader judgment-updating process shaped by social influence. Our framework provides a principled basis for distinguishing constructive belief revision from sycophantic compliance, thereby supporting better alignment in morally consequential interactions.",
+  "authors": [
+   "Baihui Wang",
+   "Bernard Koch"
+  ],
+  "published": "2026-07-23T17:40:07Z"
+ },
+ {
+  "arxiv_id": "2607.21559v1",
+  "title": "Unsupervised Consensus-Based Anomaly Detection for Spatiotemporal Malaria Incidence in Ghana",
+  "abstract": "A consensus anomaly detection framework was applied to monthly malaria surveillance data from Ghana (2014-2023) to identify atypical transmission patterns. Anomalies were highly structured in space and time. Ashanti and Northern Regions accounted for most recurrent anomalies, with persistent hotspots at Tamale, Kumasi, and Accra. A key finding was the spatial distinction between anomaly burden (cumulative cases during anomalous periods) and anomaly frequency (persistence of unusual behaviour). Tamale had the highest burden during anomalies, whereas the highest anomaly rates clustered in Ashanti districts, showing that high-burden areas are not necessarily those with the most frequent anomalous transmission. Anomalous months formed a statistically distinct group, with much higher case counts (Cohen's $d = 3.252$) and large seasonal deviations ($d &gt; 1.2$) compared with normal months. Malaria burden alone provides an incomplete picture of transmission dynamics. By distinguishing where malaria is most prevalent from where transmission behaves most unusually, this framework can strengthen surveillance, prioritise investigations, and support targeted control strategies.",
+  "authors": [
+   "T. Ansah-Narh",
+   "Y. Asare Afrane"
+  ],
+  "published": "2026-07-23T17:40:51Z"
+ },
+ {
+  "arxiv_id": "2607.21561v1",
+  "title": "Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling",
+  "abstract": "Molecular property prediction from structure often uses a single representative conformation, even though many molecules exist as conformational ensembles in solution. We introduce EnsembleEGNN, a molecular ensemble foundation model that encodes an ensemble by first encoding each conformer with shared Equivariant Graph Neural Network (EGNN) layers, then pooling the resulting conformer representations with a Set Attention Block. We pretrain the model on CREMP, a cyclic peptide ensemble dataset, using a multi-task self-supervised objective combining masked token recovery, noisy-coordinate reconstruction, and pairwise distance reconstruction. On the CREMP-CycPeptMPDB dataset, training EnsembleEGNN from scratch fails entirely ($R^2=0.005$). However, the pretrained model reaches $R^2=0.477$ and Pearson $r=0.699$, outperforming the sequence-only BERT baseline ($R^2=0.439$, Pearson $r=0.667$). When EnsembleEGNN is co-trained end-to-end with the BERT sequence encoder, the hybrid model improves further to $R^2=0.538$ and Pearson $r=0.737$. These results demonstrate that encoding conformational ensembles into a single thermodynamically informed embedding improves cyclic-peptide property prediction.",
+  "authors": [
+   "Aaron Feller",
+   "Kris Deibler",
+   "Maxim Secor"
+  ],
+  "published": "2026-07-23T17:42:51Z"
+ },
+ {
+  "arxiv_id": "2607.21570v1",
+  "title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
+  "abstract": "Large Language Models (LLMs) show promise for medical education, but most existing systems focus on localized interactions such as question answering or single-turn feedback, rather than organizing an entire clinical case into a decision-centered learning trajectory. We introduce \\textit{MedGame}, a framework that transforms static clinical cases into structured, executable storytelling games. MedGame uses a dual-engine design: a Medical Narrative Designer synthesizes case-grounded clinical storylines with states and decision nodes, while a Story Director converts them into dependency-aware multimodal orchestration plans rendered by our released interactive platform. We construct MedGame Bench, a 5,000-case benchmark and evaluation protocol for Medical Narrative Generation and Story Direction. Experiments show that task-specific fine-tuning substantially improves open-source LLMs on MedGame Bench and narrows the gap with commercial models. A pilot student study further shows that learners perceive MedGame as more engaging and useful than text-only alternatives.",
+  "authors": [
+   "Qian Wu",
+   "Xinrong Zhou",
+   "Zizhan Ma",
+   "Kai Chen",
+   "Zheyao Gao",
+   "Xun Lin",
+   "Hongqiu Wu",
+   "Longfei Gou",
+   "Yixiao Liu",
+   "Ann Sin Nga Lau",
+   "Qi Dou"
+  ],
+  "published": "2026-07-23T17:50:28Z"
+ },
+ {
+  "arxiv_id": "2607.21573v1",
+  "title": "Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity",
+  "abstract": "Faithful explanations of time-series classifiers should identify subsequences that are not only sufficient to preserve a black-box model's prediction, but also necessary for maintaining it. However, existing sufficiency-oriented methods can assign high importance to spurious subsequences that support the prediction without being essential to the model's decision. We introduce \\textbf{TimePNS}, a necessity-aware framework for time-series explanation. Inspired by Pearl's counterfactual notion of necessity, TimePNS assesses whether a temporal factor is necessary by intervening on it and measuring whether the original prediction is disrupted. The framework adopts a two-stage design. Stage I learns an identifiable causal generative process together with a sufficiency-oriented explanation mask. Stage II performs counterfactual interventions on temporal factors to derive necessity signals, which supervise a temporal gate that refines the initial explanation by suppressing non-essential components and emphasizing counterfactually necessary ones. Experiments on synthetic and real-world time-series benchmarks show that TimePNS more accurately identifies decision-critical subsequences and consistently improves sufficiency-necessity trade-offs over strong baselines.",
+  "authors": [
+   "Hongnan Ma",
+   "Yiwei Shi",
+   "Mengyue Yang",
+   "Weiru Liu"
+  ],
+  "published": "2026-07-23T17:52:01Z"
+ },
+ {
+  "arxiv_id": "2607.21574v1",
+  "title": "Surprisal Theory is Tautological (without Rational Grounding)",
+  "abstract": "Surprisal theory holds that the human processing difficulty of a linguistic unit in context is an affine function of its surprisal under some language model. I argue this claim is a tautology without further constraint: for any non-negative difficulty measure over units in context, there exists a language model whose surprisal is an affine function of it under mild technical conditions. Therefore, because any pattern of difficulty is consistent with some language model, without an additional constraint on the language model, surprisal theory makes no falsifiable predictions. The tautology was long obscured by an assumption implicit in two decades of psycholinguistic work---that the relevant language model is the distribution that generated the training corpus, so that improving corpus fit improves predictions of human behavior. Recent empirical work has undermined this assumption, demonstrating that better corpus models can be worse predictors of processing difficulty. I conclude that breaking the tautology requires a rationalist intervention, i.e., the relevant language model must be derived from a non-empirically motivated model of the comprehender, which could be based on, for instance, memory constraints or processing goals, and that, thus, does not depend on the behavioral data surprisal theory is meant to explain.",
+  "authors": [
+   "Ryan Cotterell"
+  ],
+  "published": "2026-07-23T17:54:37Z"
+ },
+ {
+  "arxiv_id": "2607.21577v1",
+  "title": "Synthetic data generation framework for quality control automation in gravure printing",
+  "abstract": "Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity of real-world industrial defects images. To overcome this limitation, this paper introduces a novel synthetic data generation framework tailored for rotogravure printing quality control. The proposed pipeline automatically generates high-fidelity images of specific printing defects (creases, streaks, misregistration, etc.) and outputs corresponding bounding boxes and annotations. To validate the framework, a synthetic dataset of 7533 images was generated and used to train the state-of-the-art object-detection model RFDETR. Experimental results demonstrate that the model trained on our synthetic data achieves a Mean Average Precision (mAP) of 80.9\\% on real industrial testing samples. This framework provides a zero-cost, rapid-deployment solution for automating defect inspection in printing lines without requiring massive manual data collection.",
+  "authors": [
+   "Korota Ars\u00e8ne Coulibaly",
+   "Mohamed Hamlich",
+   "Khalid Hmali",
+   "Andrea Trombin"
+  ],
+  "published": "2026-07-23T17:55:21Z"
+ },
+ {
+  "arxiv_id": "2607.21579v1",
+  "title": "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$",
+  "abstract": "Barzilai--Borwein (BB) method has shown strong practical performance in continuous optimization, yet its convergence dynamics remains poorly understood. In particular, a central unresolved question is whether BB converges superlinearly for almost every strictly convex quadratic problem and initialization. We provide a negative answer to this question. Specifically, for every finite dimension $n\\geq4$, we construct a nonempty open, hence positive-Lebesgue-measure, family of strictly convex quadratic problems and initial points for which the long Barzilai--Borwein method (BB1) converges but cannot converge root-superlinearly. More precisely, with the explicit constants $\u03c1_{\\min}=10^{-6},\u03c1_{\\max}=0.61$, every spectral component of the gradient is bounded above and below by the corresponding geometric sequence. Consequently, the gradient norm and the energy norm of the error satisfy two-sided geometric estimates with the same rates, while the objective gap satisfies the corresponding estimates with squared rates. In particular, all three quantities are bounded below by geometric sequences, ruling out superlinear convergence. The construction is highly nontrivial, based on a computer-assisted proof of a nonresonant, attracting seven-cycle of the projectivized BB dynamics in dimension four.",
+  "authors": [
+   "Dawei Li",
+   "Xiaotian Jiang",
+   "Mingyi Hong"
+  ],
+  "published": "2026-07-23T17:56:05Z"
+ },
+ {
+  "arxiv_id": "2607.21580v1",
+  "title": "GraphVid: Interactive Graph-Controllable Video Generation",
+  "abstract": "Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movement. In practice, trajectory-based control often requires users to draw accurate tracks for multiple objects, which scales poorly with scene complexity and becomes ambiguous under occlusion or overlap. To enable flexible yet precise multi-subject control, we introduce $\\textbf{GraphVid}$, a graph-conditioned image-to-video generation model that enables interactive control through structured interaction graphs. We further curate $\\textbf{GraphVid-Bench}$, a large-scale interaction-centric video dataset with structured relational annotations to enable training of interaction-aware video generation models. Despite using substantially less training data and fewer trainable parameters than prior motion-control methods, GraphVid delivers strong controllability and video quality. Compared with Motion-I2V, GraphVid reduces FID by up to 39.9% and FVD by 37.6%, while improving PSNR (9.87=&gt;15.98) and SSIM (0.38=&gt;0.61). Our results highlight the potential of structured semantic interfaces as a powerful paradigm for controllable video generation.",
+  "authors": [
+   "Vedant Shah",
+   "Onkar Susladkar",
+   "Tushar Prakash",
+   "Kiet Nguyen",
+   "Tianjio Yu",
+   "Adheesh Juvekar",
+   "Muntasir Waheed",
+   "Ismini Lourentzou"
+  ],
+  "published": "2026-07-23T17:56:30Z"
+ },
+ {
+  "arxiv_id": "2607.21585v1",
+  "title": "Expanding Flow Maps",
+  "abstract": "Flow-based generative models have enabled remarkable progress in fast and controllable generation across continuous and discrete state spaces, yet existing parameterizations are constrained to fixed dimensions or fixed sequence lengths. Here, we introduce Expanding Generative Flows (EFlows), which define flows between distributions of increasing dimensionality along an expanding interpolant that grows the state by augmenting it with conditional noise. Building on this construction, we propose Expanding Flow Maps (EFMs), a new class of flow maps that distill the expanding interpolant into efficient few-step generative models. Each EFM factors the map between any two timesteps into two learnable operations: an expand operator, which augments the state space with new coordinates or tokens conditioned on the current state, and a transport map, which pushes the expanded state forward along the interpolant. Composing these operators yields a single map that jointly expands and denoises the state, recovering existing fixed-canvas flows and flow maps as the special case in which the expand operator is the identity. We further extend the framework to the discrete simplex, enabling variable-size graph generation and variable-length sequence generation. Across both continuous and discrete modalities, we establish EFlows and EFMs as a principled framework for settings in which output size is itself a learned, controllable degree of freedom.",
+  "authors": [
+   "Sophia Tang",
+   "Pranam Chatterjee"
+  ],
+  "published": "2026-07-23T17:57:38Z"
+ },
+ {
+  "arxiv_id": "2607.21595v1",
+  "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+  "abstract": "Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reasoning. To bridge this gap, we present VLM-IE3D, a unified framework that enhances the 3D spatial awareness of VLMs by equipping them with both implicit and explicit 3D geometries learned from RGB videos. Our VLM-IE3D introduces Implicit Geometry Tokens (IGTs) that capture high-level geometric priors from input videos, as well as complementary Explicit Geometry Tokens (EGTs) that encode detailed geometric structures from reconstructed 3D attributes. On top of that, VLM-IE3D comes with a 3D-aware adapter that effectively fuses the two types of geometric representations with 2D visual cues. This RGB-only design injects strong 3D inductive biases for fine-grained spatial understanding and reasoning without requiring any additional 3D inputs. Extensive experiments show that VLM-IE3D achieves superior performance consistently across various 3D tasks including 3D video detection, 3D visual grounding, 3D dense captioning, and spatial reasoning. Code and models are available at https://github.com/Vegetebird/VLM-IE3D.",
+  "authors": [
+   "Wenhao Li",
+   "Xueying Jiang",
+   "Quanhao Qian",
+   "Deli Zhao",
+   "Ran Xu",
+   "Shijian Lu",
+   "Gongjie Zhang"
+  ],
+  "published": "2026-07-23T17:59:59Z"
+ },
+ {
+  "arxiv_id": "2607.21665v1",
+  "title": "Physically Constrained Federated Additive Models for O-RAN SLA-Risk Prediction",
+  "abstract": "Proactive service assurance in O-RAN requires predicting per-slice SLA violations before they occur. The prediction model must be auditable by operators and must train across base stations without pooling per-slice KPIs, which are commercially sensitive because slices are leased to individual tenants. Neural additive models (NAMs) offer auditability because each KPI contributes through a visible shape function. However, visibility alone does not guarantee physical validity. On the ColO-RAN testbed dataset, unconstrained NAMs learn effects that contradict wireless physics, for example predicting higher risk when channel quality improves. This failure appears under both local and centralized training, and non-IID federated averaging worsens it. We present Monotone FedNAM, a federated additive model in which KPIs with unambiguous physical direction are represented as monotone splines whose constraints survive FedAvg aggregation by construction, while contestable KPIs remain unconstrained. The model trains and operates as a Non-RT RIC rApp and is compact enough for deployment as a Near-RT RIC xApp. Monotone FedNAM eliminates all monotonicity violations, raises constrained shape consistency from 0.71 to 1.00, generalizes to an unseen scheduling policy, and reduces uplink traffic by 65%, at a cost of 0.04 to 0.07 AUC. These results show that physically constrained federated additive models can support auditable SLA risk inference for multi-tenant O-RAN service assurance",
+  "authors": [
+   "Aubida A. Al-Hameed",
+   "Mohammed M. H. Qazzaz",
+   "Maryam Hafeez",
+   "Syed A. Zaidi"
+  ],
+  "published": "2026-07-23T03:36:39Z"
+ },
+ {
+  "arxiv_id": "2607.21670v1",
+  "title": "Ordered Action Tokens for Visuomotor Policy Learning",
+  "abstract": "Action tokenization maps continuous robot action chunks to discrete tokens and has become an important interface for modern visuomotor policies. Existing approaches either rely on analytical discretization methods that produce prohibitively long token sequences or learned latent tokenizers that lack structure, limiting their compatibility with downstream policies. In this work, we identify three desiderata for action tokenization - high compression, total decodability, and an ordered token space - and introduce Ordered Action Tokenization (OAT), a learned action tokenizer that satisfies all three. OAT discretizes action chunks into an ordered sequence of tokens using a transformer with registers, finite scalar quantization, and ordering-inducing training mechanisms. By training each token prefix to decode into a valid action chunk, OAT places coarse control information in early tokens and uses later tokens to refine residual detail, yielding an anytime tradeoff between inference cost and action fidelity. We validate OAT in two prevailing uses of action tokens: autoregressive policies that generate tokens for control, and token co-training policies that use token losses to shape the vision-language model context consumed by a flow-based action expert. Across three policy backbones and more than 60 tasks spanning five simulation benchmarks and real-world settings, OAT consistently delivers strong policy performance while offering significantly greater flexibility at inference time.",
+  "authors": [
+   "Chaoqi Liu",
+   "Yue Zhao",
+   "Haonan Chen",
+   "Xiaoshen Han",
+   "Jiawei Gao",
+   "Ehsan Adeli",
+   "Yilun Du"
+  ],
+  "published": "2026-07-23T07:04:51Z"
+ },
+ {
+  "arxiv_id": "2607.21671v1",
+  "title": "Neural Feature Governance: Extending Atom Prevalence",
+  "abstract": "Neural network compression and interpretability remain open challenges in modern deep learn- ing, where billion-parameter architectures deliver impressive accuracy at the cost of trans- parency, computational efficiency, and reliable uncertainty quantification. This paper introduces Neural Atom Prevalence (NAP), a principled Bayesian framework for structured node-level model selection in feedforward neural networks. NAP introduces the neural atom (activation unit) and functions as a hybrid method operating through a four-phase pipeline: Bayesian Lottery Ticket (BLT) identification via Iterative Magnitude Pruning (IMP), soft variational training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignorance accounts for only 3 to 4% of total predictive variance across all experiments, and regression reliability diagrams confirm a near-nominal predictive interval coverage (93.4% observed against a 95% target). These results establish NAP as a reliable, theoretically grounded, and computation- ally tractable solution to the simultaneous pursuit of sparsity, accuracy, interpretability, and uncertainty quantification in Bayesian neural networks.",
+  "authors": [
+   "Idris Karel Seunda Ekwe",
+   "Patrick Tenga Shako",
+   "Ernest Parfait Fokou\u00e9"
+  ],
+  "published": "2026-07-23T08:50:12Z"
+ },
+ {
+  "arxiv_id": "2607.21672v1",
+  "title": "Pixels for Programs? A Cross-Provider Case Study of Input-Token Accounting for Source Code as Text and Images",
+  "abstract": "Long source-code contexts consume many text tokens, motivating the proposal to render code as images for vision-language models. Recent work asks whether models can still solve code tasks after this transformation. We examine a different systems question: how commercial APIs count the resulting requests. We present a reproducible measurement case study of provider-reported input tokens for raw source text and a compact rendered-image representation. The benchmark pairs requests across five programming languages, nine source lengths from 20 to 2,000 lines, and 15 available model aliases exposed by Anthropic, OpenAI, and Google Vertex AI. These aliases collapse to approximately five distinct accounting signatures and are not independent model replications. Across 675 complete text/image pairs, aggregate image-to-text ratios are 0.135, 0.194, and 0.242, corresponding to reported input-token reductions of 86.5\\%, 80.6\\%, and 75.8\\%, respectively. These totals conceal materially different break-even behavior: Anthropic and OpenAI images receive lower counts at every tested size, while Gemini images require 6.95 times as many tokens at 20 lines and cross below text only at 200 lines in the aggregate. A targeted audit also reproduces non-monotonic Gemini image accounting across a page boundary. This study measures black-box request accounting for one compact rendering pipeline. It does not measure semantic fidelity, task accuracy, latency, monetary cost, or coding-agent efficiency. We release the scripts, revision-pinned corpus specification, raw usage records, validators, and deterministic analysis needed to reproduce and extend the study.",
+  "authors": [
+   "Ronak Bhalgami"
+  ],
+  "published": "2026-07-23T09:19:16Z"
+ },
+ {
+  "arxiv_id": "2607.21673v1",
+  "title": "Self-Poisoning in Adaptive Out-of-Distribution Detection: A Sharp-Threshold Theory and Certified Label-Free Calibration",
+  "abstract": "Test-time adaptive out-of-distribution (OOD) detectors update a memory bank from the unlabelled stream. We show this adaptation obeys a provable dynamical law. Modelling bank impurity as a generalized P\u00f3lya urn, we prove almost-sure convergence to a mean-field equilibrium whose slope acts as a reproduction number. Below one, impurity stays benign. Above one, the bank is fully poisoned and the detector collapses. The measured admission kernel is affine ($R^2 \\ge 0.996$) with slope just below one in every encoder family (a protocol signature), so this detector class is near-critical by design, and across 96 settings the predicted threshold matches the empirical collapse, where ungated dictionaries lose up to $0.163$ AUROC. We then prove that a certified admission gate, reading only a frozen reserve, severs the feedback loop and removes the transition at every contamination rate, even adversarially, while controlling false positives label-free. For the complementary static-calibration failure under drift we give CDC, which restores nominal FPR label-free on all tested drift-affected cells. Finally we prove a two-world impossibility theorem. Drift and contamination are indistinguishable without labels, forcing a closed-form power ceiling our procedure approaches. Together these give a complete possibility/impossibility characterization of label-free adaptive OOD detection.",
+  "authors": [
+   "Vishnu Bindu Balachandran"
+  ],
+  "published": "2026-07-23T09:43:46Z"
+ },
+ {
+  "arxiv_id": "2607.21677v1",
+  "title": "Enhancing SLMs for Sustainable Code Optimization in Radio-Astronomy",
+  "abstract": "Recent Large Language Models (LLMs) can produce and optimize complex code. We investigate the use of LLMs to generate and optimize code for large-scale sciences, focusing on radio astronomy and sustainability. The LOFAR telescope is currently being upgraded, significantly increasing the sky area observed, while simultaneously processing more data faster. However, this is expected to increase the computational requirements 40-fold. This upgrade thus critically depends on rigorous performance optimization of existing software and widespread adoption of accelerators. The code base is very large, making this a daunting task. We therefore investigate and demonstrate an AI-driven approach meant to assist developers in evaluating and optimizing their code, including porting to hardware accelerators. The LOFAR community is committed to sustainable solutions, and needs to achieve these improvements without increasing the energy budget. We thus need to optimize existing codes or port them to accelerators, while making sure that the optimization process itself is also energy efficient. This poses a challenge, since LLMs are energy-intensive. We therefore propose to use Small Language Models (SLMs) instead to limit environmental impact. In this paper, we show how to enhance SLMs through the use of agentic AI. We extend the SLMs in two ways to improve code generation quality and performance: first with a multi-sampling generation strategy and second with incorporating compiler feedback. We demonstrate that multi-sampling SLMs can match or surpass larger single-generation models with fewer computational resources and that feeding compiler output back into the SLMs leads to consistent improvements across all tested models. Our approach is generic, and can also use Retrieval Augmented Generation (RAG) as well as static and dynamic analysis tools in the code generation pipeline.",
+  "authors": [
+   "Elisa Chiarotto",
+   "Jingbo Li",
+   "P. Chris Broekema",
+   "Rob V. van Nieuwpoort"
+  ],
+  "published": "2026-07-23T11:02:24Z"
+ },
+ {
+  "arxiv_id": "2607.21680v1",
+  "title": "Encoding Invisible Causation for Bridge Diagnostic Agents: Triple-Guided Retrieval-Augmented Fine-Tuning with QLoRA",
+  "abstract": "Bridge infrastructure deteriorates gradually, yet its root causes---salt intrusion, freezing, fatigue cracking, and others---remain invisible to the naked eye. Expert diagnosis relies on tacit knowledge built over years of practice. We address the challenge of automating this latent causal reasoning by proposing a Damage Cause Encoder that classifies 10-class damage causes from visible damage descriptions $S_i$ for use in autonomous bridge diagnostic agents. Our approach chains three components: (i)Knowledge Triple Extraction---a large language model extracts causal triples of the form (damage $\\xrightarrow{\\mathtt{caused\\_by}}$ cause) from 15--35 diagnostic PDF manuals and indexes them in a FAISS vector store; (ii)Retrieval-Augmented Context---at training and inference time, relevant causal triples $\\mathcal{C}_i$ are retrieved and concatenated with $S_i$, converting implicit domain knowledge into explicit Encoder context; (iii)Systematic Fine-tuning Comparison---we conduct a rigorous comparison of LoRA, QLoRA, and QA-LoRA on a fixed Golden Testset (116 stratified samples), demonstrating that QLoRA achieves the optimal trade-off: identical test accuracy (87.07%) to full-precision LoRA, 11% faster inference, 72% lower GPU memory, and superior generalization across diverse unseen inputs. A controlled Golden Testset---stratified, deduplicated, and difficulty-tagged---is introduced as a reusable benchmark contribution. QLoRA further outperforms LoRA by 13 percentage points on a 100-sample diverse evaluation spanning all 10 damage cause classes.These findings enable memory-efficient, high-accuracy diagnostic agents on consumer-grade hardware for edge deployment.",
+  "authors": [
+   "Takato Yasuno"
+  ],
+  "published": "2026-07-23T13:18:57Z"
+ },
+ {
+  "arxiv_id": "2607.21681v1",
+  "title": "CARNet Cycle-Conditioned Core Aggregation and Redistribution for Multivariate Time Series Forecasting",
+  "abstract": "Accurately modeling cross-variate dependencies remains a key challenge in multivariate time series forecasting, particularly in the presence of strong periodic patterns. Many existing approaches rely on attention-based mechanisms that incur quadratic complexity and scale poorly with increasing numbers of variates. Recent attention-free aggregation models address this issue through linear-complexity core-based interactions, but they do not explicitly leverage the global periodic structure present in the data. To overcome this limitation, we propose CARNet, a Cycle-Conditioned Core Aggregation and Redistribution framework that integrates global recurrent cycle information into efficient core based interaction modeling via Multihead Core Aggregation. Extensive experiments on multiple real-world multivariate forecasting benchmarks demonstrate that CARNet consistently outperforms strong transformer and non-attention baselines across diverse prediction horizons while preserving linear-complexity modeling of cross-variate dependencies.",
+  "authors": [
+   "Awsaf Tausif Adib",
+   "Md. Shahria Sarker Shuvo",
+   "Md. Estehaar Ahmed Emon",
+   "Mustafa Kamal",
+   "Fuad Rahman",
+   "Shafin Rahman",
+   "Nabeel Mohammed"
+  ],
+  "published": "2026-07-23T13:47:02Z"
+ },
+ {
+  "arxiv_id": "2607.21685v1",
+  "title": "Evaluation design conditions the expert-vs-auto MeSH gap: a controlled comparison of bag-of-words and BiomedBERT on the Cohen benchmark",
+  "abstract": "A systematic review begins with someone reading thousands of abstracts to identify the few that are relevant, and classifiers are used to prioritise that reading. Their inputs are often augmented with Medical Subject Headings (MeSH), assigned either by expert indexers weeks or months after publication or by automatic tools at once. To our knowledge the two have not been compared directly as classifier features, and no previous work has asked whether that comparison's outcome depends on how the classifier is evaluated. Using the Cohen et al. (2006) drug-class benchmark on three topics, we characterise a bag-of-words logistic regression classifier (seven reruns) and BiomedBERT (five seeds), then examine how the Statins result changes under alternative designs. Under the canonical 5-fold full-corpus design, the bag-of-words expert-vs-auto gap on Statins is +0.096 WSS@95%. Matching the corpus size to the smaller topics (n = 803) reduces it to +0.033 (95% bootstrap CI includes zero), and 10-fold cross-validation at full size to +0.021 (CI narrowly excludes zero). Under canonical evaluation BiomedBERT gives +0.020, within sampling noise of the bag-of-words 10-fold result. A power analysis indicates a Statins-sized effect would not have been detectable at the Opioids or ADHD variance, so those nulls are design-limited rather than informative. A representation asymmetry remains: 15.1% of Statins inputs exceed BiomedBERT's 512-token limit when expert MeSH terms are appended, so truncation may contribute to the smaller transformer gap, although this cannot be separated from training volume here. In screening pipelines using transformers or 10-fold bag-of-words, the gap on the topics tested is about 0.02 WSS@95%, with CIs spanning zero on at least one bound. More broadly, benchmark conclusions about feature sources can change substantially under reasonable changes to the evaluation design.",
+  "authors": [
+   "Samuel M. Okoe-Mensah"
+  ],
+  "published": "2026-07-23T14:37:23Z"
+ }
+]

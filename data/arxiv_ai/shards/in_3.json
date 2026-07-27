@@ -1,0 +1,241 @@
+[
+ {
+  "arxiv_id": "2607.21120v1",
+  "title": "Relative Value Learning",
+  "abstract": "In reinforcement learning, critics typically estimate absolute state values $V(s)$, estimating how good a particular situation is in isolation. However, it turns out that only differences in value are relevant for control. Motivated by this, we propose Relative Value Learning (RV), a framework that learns value differences directly via an antisymmetric function $\u0394(s_i, s_j) = V(s_i) - V(s_j)$. We introduce a pairwise Bellman operator and prove it is a $\u03b3$-contraction with a unique fixed point equal to the true value differences, derive well-posed $1$-step, $n$-step and $\u03bb$-return targets and reconstruct generalized advantage estimation from pairwise differences to obtain an unbiased policy-gradient estimator (R-GAE). Beyond theoretical results, we integrate RV with PPO and achieve competitive performance on the Atari benchmark (49 ALE games) compared to standard PPO, indicating that relative value estimation is an effective alternative to absolute critics.",
+  "authors": [
+   "Marc H\u00f6ftmann",
+   "Jan Robine",
+   "Stefan Harmeling"
+  ],
+  "published": "2026-07-23T09:55:45Z"
+ },
+ {
+  "arxiv_id": "2607.21121v1",
+  "title": "Approximate Quantum State Preparation Through Proximal Policy Optimization",
+  "abstract": "In this work, a quantum architecture search framework for approximate quantum state preparation (QSP) is proposed. QSP is a challenging task, since the search space grows exponentially with the number of qubits, making the identification of the optimal circuit non-trivial. To address this problem, deep reinforcement learning is employed through an agent based on proximal policy optimization. The objective of the agent is to identify the best possible approximation of the target state while simultaneously minimizing the number of gates used. At each step, the agent appends a new gate to the circuit and recomputes the fidelity between the approximated state and the target states. Various experiments have been performed from 2 to 5 qubits. Both predefined states, such as Bell, GHZ, W, and Dicke states, and completely random states are considered. The proposed framework is able to achieve approximation errors of $10^{-14}$.",
+  "authors": [
+   "Marco Mordacci",
+   "Michele Amoretti"
+  ],
+  "published": "2026-07-23T09:55:58Z"
+ },
+ {
+  "arxiv_id": "2607.21130v1",
+  "title": "Hardware-Software Co-Design for Float16 On-Device Training on RISC-V Single-Core",
+  "abstract": "By leveraging standard RISC-V extensions, namely Zfh (scalar float16) and Zvfh (vector float16), this work proposes an open-source framework to enable complete on-device training on resource-constrained RISC-V single-core. Our approach allows memory footprint reduction by about 50% as compared to using float32 and with minimal model performance degradation. We also facilitate transfer learning and fine-tuning scenarios by incorporating layer-freezing capabilities. Our work builds onto AIfES, an open-source, modular and generic DNN training and inference framework for embedded systems that can be extended with custom hardware-specific functions. The benefits of float16 is further emphasized by outlining the low area overhead of Zfh on a RV64GC super-scalar out-of-order FPGA softcore (+1.15% LUT6 and +0.05% FF at 175MHz). Finally, we discuss the architecture of a Zvfh implementation within the same RISC-V core.",
+  "authors": [
+   "Benjamin Hubinet",
+   "Pierre-Alain Moellic",
+   "Olivier Savry",
+   "Olivier Potin",
+   "Jean-Baptiste Rigaud"
+  ],
+  "published": "2026-07-23T10:06:11Z"
+ },
+ {
+  "arxiv_id": "2607.21131v1",
+  "title": "Demographically-Informed Heat-Mortality Risk Curves via Risk Graph Neural Networks",
+  "abstract": "Estimating heat-related mortality risk is a core task in environmental epidemiology, typically addressed with Distributed Lag Non-linear Models (DLNMs); interpretable exposure-response surfaces fitted to temperature-mortality time series. DLNMs are effective but ignore demographic and geographic context, despite well-established relevance to heat vulnerability. We propose Risk Graph Neural Networks (RGNNs), a hierarchical GNN encoder that uses granular census features to optimise DLNM coefficient vectors, preserving interpretable risk curve outputs while substantially improving predictive calibration. Evaluated across 10 regions of England and Wales on two unprecedented heat years, RGNN variants maintain both lower point-errors and near-nominal uncertainty coverage during the 2022 heatwave where baselines collapse.",
+  "authors": [
+   "Alex O. Davies",
+   "Eunice Lo",
+   "Rui Zhu"
+  ],
+  "published": "2026-07-23T10:08:32Z"
+ },
+ {
+  "arxiv_id": "2607.21137v1",
+  "title": "Safety-oriented sidewalk and road segmentation for smartphone-based assistive navigation",
+  "abstract": "Independent sidewalk mobility is essential for blind and visually impaired pedestrians (BVIPs), yet smartphone-based assistive navigation requires perception models that distinguish walkable sidewalks from adjacent unsafe regions. This study presents a safety-oriented semantic segmentation framework for future mobile guidance. We introduce SENSATION-DS, a chest-height pedestrian-view dataset with 2,752 image-mask pairs and nine-class navigation-relevant taxonomy. External urban and sidewalk datasets were harmonized to this label space, and five segmentation architectures were evaluated using staged target-domain adaptation with mask-conditioned synthetic images and Segment Anything Model 2 (SAM2) pseudo-labels. Models were assessed using mean Intersection over Union (mIoU), road- and sidewalk-specific metrics, Road-as-Sidewalk Error Rate as a proxy false-safe measure, and Android Open Neural Network Exchange benchmarking. Synthetic augmentation generally improved segmentation accuracy, whereas SAM2 pseudo-labels more consistently reduced Road-as-Sidewalk errors. UPerNet-MobileNetV3 achieved the highest offline mIoU (0.715 +/- 0.006), while DeepLabV3Plus-MobileNetV3 achieved the lowest Road-as-Sidewalk Error Rate (0.079) and highest Android runtime at 512x384 (7.383 FPS). These results show that assistive sidewalk perception should be evaluated jointly by segmentation accuracy, proxy false-safe behavior, and smartphone deployment feasibility, while real-world benefit requires validation with BVIP users. This evaluation supports selecting models that balance accurate perception, conservative error behavior, and practical runtime.",
+  "authors": [
+   "Hakan Calim",
+   "Anamaria Dumitrescu",
+   "Adarsh Bhandary Panambur",
+   "Huzaifa Asif",
+   "Andreas Maier"
+  ],
+  "published": "2026-07-23T10:16:43Z"
+ },
+ {
+  "arxiv_id": "2607.21143v2",
+  "title": "One More Turn, Less Regret: A Regret-Based Multi-Turn Benchmark for LLMs' Clarification Policies",
+  "abstract": "Ambiguous user requests make clarification a sequential decision problem for conversational LLM assistants: they must decide whether to ask, what to ask, when to stop, and when to answer. We introduce RegretBench, a multi-turn benchmark that evaluates clarification as policy behavior rather than isolated question quality. RegretBench provides a hidden-intent formulation of ambiguity, supports free-form interaction grounded in semantic-state tracking, and introduces a regret-based objective that measures how much value a model loses relative to a reference clarification policy. Experiments on open-domain QA and product recommendation scenarios show that final success alone is insufficient, as models with similar accuracy can differ substantially in efficiency, robustness to user behaviors, and stopping decisions. By jointly measuring intent resolution, interaction cost, ineffective clarification, and regret, RegretBench reveals whether models clarify usefully and efficiently. Our results show that effective clarification requires more than plausible questions: models must ask the right question at the right time and stop once the user's intended meaning is clear.",
+  "authors": [
+   "Minh Ngoc Ta",
+   "My Anh Tran Nguyen",
+   "Duong D. Nguyen",
+   "Yuxia Wang",
+   "Preslav Nakov"
+  ],
+  "published": "2026-07-23T10:22:11Z"
+ },
+ {
+  "arxiv_id": "2607.21151v1",
+  "title": "V-DEAL: Diagnosing Video Safety De-Calibration as an Understanding-Refusal Coupling Failure",
+  "abstract": "As Video Large Language Models are increasingly deployed in real-world applications, ensuring their safety alignment has become critical. Counterintuitively, we find that harmful videos paired with benign queries achieve higher attack success rates than the same videos paired with explicitly harmful queries. To understand the underlying mechanism of this vulnerability, we present V-DEAL, a three-level diagnostic framework that jointly analyzes this failure across model behaviour, understanding, and internal representations. By progressively ruling out perception failure and quantifying the model's internal refusal tendency, V-DEAL provides a new diagnostic perspective for analyzing the underlying mechanism of the observed vulnerability. We tested six Video LLMs on three public benchmarks and observed that models correctly recognize harmful video content with over 81\\% accuracy, yet the average attack success rate still reaches 48.33\\% under the condition pairing harmful videos with benign queries. Hidden-state analysis further shows that visual understanding activates a weaker refusal tendency than textual understanding. Furthermore, we introduce a prompt injection intervention method that reduces attack success rates by an average of 48.24 percentage points and achieves performance comparable to prior fine-tuning-based methods, providing an effective and practical means to address such safety risks in Video LLMs.",
+  "authors": [
+   "Zhetong Zhang",
+   "Honghao Fu",
+   "Miao Xu",
+   "Yiwei Wang",
+   "Yujun Cai"
+  ],
+  "published": "2026-07-23T10:35:38Z"
+ },
+ {
+  "arxiv_id": "2607.21155v1",
+  "title": "CRAG-MM-Diagnostics: Enabling Stage-Wise Analysis of Knowledge-Intensive VQA",
+  "abstract": "Knowledge-Intensive Visual Question Answering (KI-VQA) benchmarks evaluate Vision-Language Models (VLMs) as multimodal knowledge assistants by requiring external information beyond a provided image to answer questions. KI-VQA involves multiple sub-problems -referring expression understanding, visual grounding, object recognition, knowledge retrieval, and reasoning-yet existing benchmarks typically report only end-task accuracy, obscuring where failures arise. To analyze the full KI-VQA pipeline, we introduce CRAG-MM-Diagnostics, a diagnostic benchmark with stage-wise data annotations that isolate 1) language-based visual grounding, 2) object identification, and 3) knowledge retrieval and reasoning. We evaluate fully parametric and retrieval-augmented VLMs, providing fine-grained analyses using newly collected metadata, such as target ROIs, entity names, and visual complexity scores. Our results point to knowledge retrieval and reasoning as the primary bottleneck, but also highlight issues in the other parts of the KI-VQA pipeline, such as the fact that VLMs struggle with target object identification or that image retrievers struggle to integrate textual cues. These findings expose fundamental limitations in current KI-VQA systems and motivate stage-aware evaluation. We, lastly, leverage these findings to propose a grounded bimodal RAG pipeline that integrates a visual grounding module to crop targets before image retrieval, boosting GPT-5 and Qwen's respective accuracies by 13.3 and 8.5 percentage points.",
+  "authors": [
+   "Hanseok Oh",
+   "Parishad BehnamGhader",
+   "Benno Krojer",
+   "Hyunji Lee",
+   "Paul Liang",
+   "Siva Reddy",
+   "Verna Dankers"
+  ],
+  "published": "2026-07-23T10:37:01Z"
+ },
+ {
+  "arxiv_id": "2607.21156v1",
+  "title": "SafeStep: AI-powered Travel Assistance for Elderly People with Frailty or Dementia",
+  "abstract": "More than a million people in the UK suffer from frailty or dementia, which severely compromise their ability to travel in urban environments. This paper presents SafeStep, an AI-driven travel system that assists elderly users with their journeys. At the core of SafeStep is a novel travel graph representation, which integrates route planning with predictive modelling. For each stage of a journey, the system (i) generates personalized failure scenarios using a combi-nation of LLMs and the Anticip8 behavioral prediction engine, (ii) proposes targeted interventions, and (iii) estimates the impact of interventions on out-come probabilities. This enables SafeStep to select interventions that maximize the likelihood of the person reaching their destination. SafeStep was evaluated through experiments on travel graph generation and a field study involving 26 real-world journeys. Results showed that combining Anticip8 for failure pre-diction with GPT-based models for intervention evaluation yields the most re-liable performance. User feedback indicated that SafeStep improves confidence and perceived safety during travel, although interface usability needs to be im-proved for the target demographic. In the future, we would like to improve and release SafeStep. The AI system that was developed for SafeStep could be ap-plied in other areas, such as mental health, career coaching and addiction treatment.",
+  "authors": [
+   "Elderly People with Frailty or Dementia Azul Debenedetti",
+   "David Gamez",
+   "Franco Such",
+   "Nik Kairinos"
+  ],
+  "published": "2026-07-23T10:37:28Z"
+ },
+ {
+  "arxiv_id": "2607.21162v1",
+  "title": "Agree on the Model, Verify the Inference: GKR Protocols for HND-Based Transformer Inference",
+  "abstract": "Outsourced Transformer inference exposes clients to model substitution and incomplete execution, while direct replay removes the computational benefit of delegation. We present GKR-HND, a registered-model protocol for verifying the polynomial backbone of Homomorphic--Nonhomomorphic Decomposition Transformers. The retained verifier checks the GKR transcript and registered-weight openings, but delegates expensive public evaluations to an assigned computation worker. Assuming an honest retained verifier and prover--worker non-collusion, the verifier accepts only when the worker's signed, request-bound response agrees with the proof claims. Experiments with pretrained HND models validate the proof path and the delegated public computation without dense-matrix replay.",
+  "authors": [
+   "Xiaolong Liang",
+   "Juanjuan Li",
+   "Rui Qin",
+   "Yisheng Lv"
+  ],
+  "published": "2026-07-23T10:52:53Z"
+ },
+ {
+  "arxiv_id": "2607.21173v1",
+  "title": "Automated Synthesis and Adversarial Validation of Executable Causal Research Pipelines",
+  "abstract": "While automated research systems promise to accelerate empirical analysis, they are prone to silent failures: instances in which analysis code executes successfully yet relies on invalid causal assumptions. We present the Artificial Intelligence (AI)-based Epidemiology Research Assistant (ARA), a framework that makes these failures visible by explicitly encoding causal design principles, study-specific assumptions, and methodological constraints. ARA integrates protocol construction, synthetic data generation, and adversarial validation into a unified pipeline. The framework translates natural language research questions into structured causal protocols and executable analysis code by first constructing a protocol and then generating synthetic datasets using Structural Causal Models (SCMs) with known ground-truth effects. This synthetic-data step can also support pipeline development when access to confidential data, such as medical data, is restricted. The generated analysis is then evaluated under controlled violations of identification assumptions. We evaluate ARA on the Automated Causal Reasoning Benchmark, assessing recovery of identification strategies, causal quantities, treatment and outcome variables, and consistency between generated code and approved protocol. Protocol construction and adversarial validation did not consistently improve numerical agreement with benchmark estimates compared with standard LLM-based generation. However, they changed the failure mode: instead of silently returning causal estimates, ARA often surfaced protocol concerns, diagnostic failures, incomplete inference, or downgraded non-causal interpretations. These findings suggest that validity-first automated science systems should be evaluated not only by answer accuracy, but also by whether they indicate when causal claims are unwarranted.",
+  "authors": [
+   "Irena Girshovitz",
+   "Dan Zeltzer",
+   "Ran Gilad-Bachrach"
+  ],
+  "published": "2026-07-23T10:59:16Z"
+ },
+ {
+  "arxiv_id": "2607.21180v1",
+  "title": "Safeguards for Speech2Speech LLM-Assistants: A Case Study in Automotive Applications",
+  "abstract": "Recent advances have introduced speech-to-speech (S2S) conversational assistants capable of producing natural-sounding interactions, including non-verbal cues like tonality and mood. In the automotive domain, this enables intuitive and humanlike in-car dialogue experiences. However, integrating these end-to-end assistants limits architectural options for programmable domain-specific safeguards. This paper discusses two implementation approaches for S2S guardrails: transcript-based and tool-based. Through an empirical evaluation, we demonstrate that both strategies are insufficient for industrial deployment in most cases due to prohibitive latency (delaying each answer by 0 to 1.4 seconds even for computationally cheap checks) and technical impediments (like potentially non-deterministic tool call behavior). Finally, we outline open challenges for S2S guardrails in the automotive context.",
+  "authors": [
+   "Gregor Endler",
+   "Sebastian Kraus",
+   "Lukas Stappen"
+  ],
+  "published": "2026-07-23T11:09:56Z"
+ },
+ {
+  "arxiv_id": "2607.21183v1",
+  "title": "Representative Sets in Propositional Abduction",
+  "abstract": "The propositional abduction problem is a well-known form of non-monotonic reasoning where we are asked to find an explanation of a given manifestation. Recently, there has been an influx of results asking more refined questions about the solution space rather than only individual solutions. For example, we might be interested in finding two solutions that are sufficiently far from each other (diverse solutions) in the solution space. In this paper we consider a related representation question where we ask if a given set of explanations S can represent any other explanation (that is, whether their symmetric difference is smaller than a given k). We first study this problem from a classical complexity perspective and obtain a complete classification. While only a handful of cases are tractable, the increase in complexity compared to classical abduction is often smaller than expected. We then study the parameterized complexity for several parameters and obtain new tractable and hard cases. Interestingly, a full parameterized complexity classification would require resolving the parameterized complexity of the covering radius problem from coding theory. To the best of our knowledge, no useful relationship between coding theory and non-monotonic reasoning has previously been established, but such connections seemingly become important when asking more complex questions about solution spaces.",
+  "authors": [
+   "Johannes Schmidt",
+   "Mohamed Maizia",
+   "Victor Lagerkvist",
+   "Johannes K. Fichte"
+  ],
+  "published": "2026-07-23T11:14:45Z"
+ },
+ {
+  "arxiv_id": "2607.21184v1",
+  "title": "Explaining Weather Bulletins via ILP",
+  "abstract": "Inductive Logic Programming (ILP) originated within the Logic Programming community in the Nineties as a framework for combining symbolic learning with declarative knowledge representation. Nowadays, mature ILP frameworks exist and they are capable of learning complex, non-monotonic hypotheses, thus broadening both the modeling capabilities and the scope of real-world applications of ILP. This work is primarily based on the FastLAS2 framework and aims to generate simple, interpretable hypotheses to help clarify the weather bulletins issued by OSMER FVG, the Regional Meteorological Observatory of the Italian region of Friuli Venezia-Giulia. In this paper we present a pipeline that, starting from simulated meteorological raw data and from OSMERs' bulletins (used as ground truth), extracts data as ASP facts and generates ILP examples. From such examples an explanatory hypothesis is then inferred via FastLAS2. Such a hypothesis (translated into natural language) explains the weather forecast issued by human experts, and in particular the rationale behind experts' choices of specific symbols in the bulletin pictogram (the symbol-annotated meteorological map of the forecast). The proposed approach is general, not specific to any particular region and it can equally be applied to bulletins from other sources and to different regions.",
+  "authors": [
+   "Enrico Santi",
+   "Alessandro Dal Pal\u00f9",
+   "Agostino Dovier",
+   "Talissa Dreossi",
+   "Andrea Formisano"
+  ],
+  "published": "2026-07-23T11:15:02Z"
+ },
+ {
+  "arxiv_id": "2607.21185v1",
+  "title": "Differentiable Logic Programming to Mitigate Reasoning Shortcuts in Neurosymbolic Systems",
+  "abstract": "Neurosymbolic (NeSy) systems integrate neural networks with logical reasoning to achieve both generalization and interpretability, but recent work has shown they are susceptible to shortcut reasoning behaviors. We propose a novel method using matrix-based differentiable logic programming to mitigate reasoning shortcuts in two phenomena: constraint satisfaction shortcuts, where constraints are satisfied without achieving the intended task, and cognition shortcuts, where biased data leads to semantically incorrect concept mappings despite logically sound inference. Building on recent matrix-based logic programming semantics, we introduce design elements to mitigate shortcuts, including a unified encoding of rules and constraints in a single matrix. We also identify connections to fuzzy logic t-norms and empirically compare their gradient flow properties. Through carefully designed experiments on MNIST variants, we show that one-to-one grounding of neural outputs to logical atoms significantly reduces both shortcut types compared to previous methods that rely on soft probability distributions. We then confirm that architectural choices in coupling symbolic knowledge with neural learning play a critical role in shortcut mitigation.",
+  "authors": [
+   "Akihiro Takemura",
+   "Katsumi Inoue"
+  ],
+  "published": "2026-07-23T11:15:19Z"
+ },
+ {
+  "arxiv_id": "2607.21186v1",
+  "title": "Do emulated quantum circuits change what CNNs look at? Performance and explainability comparison in medical image classification",
+  "abstract": "Numerous studies have analyzed the use of hybrid quantum-classical convolutional neural networks as a promising alternative to classical deep learning. However, network components on quantum hardware impose fundamental limitations, while the scalability of quantum circuits leads to trainability issues. In this work, we investigate whether small, classically-emulated quantum circuit components can play a meaningful role within complex models, offering an alternative to purely classical convolutional architectures. To this end, we present a systematic study of the effectiveness of a Hybrid Quantum-inspired Convolutional Neural Network (HQiCNN) compared with a parameter-matched classical Convolutional Neural Network (CNN) that differs only in an intermediate dense neural layer. Both models are evaluated on two real-world medical datasets while systematically varying the different hyperparameters, ensuring a fair model comparison that is both dataset and hyperparameter independent. The results show that no architecture consistently dominates the other: the HQiCNN achieves its largest gains in intermediate-data regimes, whereas the CNN reaches the highest accuracies for the largest training sets in both datasets. Furthermore, removing entanglement produces comparable performance while enabling substantially better scalability of quantum simulations, and richer observable sets become beneficial only when sufficient training data are available. Finally, we propose two SHAP-based explainability tools for comparing the predictions between both models, $|SHAP|$IoU and $EMD_{pos}$ metric, to demonstrate that both architectures consistently attend to anatomically plausible regions. Thus, we provide a comprehensive benchmark showing that, under certain conditions, hybrid quantum-inspired models are an alternative that can offer benefits in practical tasks such as medical image classification.",
+  "authors": [
+   "Guillermo Rubi\u00f1os Rodr\u00edguez",
+   "Mart\u00edn Ottavianelli",
+   "Mateo Alonso",
+   "Gonzalo Bl\u00e1zquez Gil",
+   "Boris-Stephan Rauchmann",
+   "Pablo D\u00edez-Valle",
+   "Sergio Altares-L\u00f3pez"
+  ],
+  "published": "2026-07-23T11:15:35Z"
+ },
+ {
+  "arxiv_id": "2607.21187v1",
+  "title": "Case study: proving sqrt(2) irrational with LPTP and an LLM",
+  "abstract": "We present the interactions with an LLM (Large Language Model) aiming at proving that the square root of 2 is not a rational number in an LP (Logic Programming) context. We start from a few basic pure logic programming predicate definitions. We rely on the LPTP (Logic Program Theorem Prover) system for stating and proving properties about logic programs. As the proof language of LPTP is based on natural deduction, the proofs are human readable. In our case study, we sketch in LPTP the usual proof showing the irrationality of the square root of 2. Then we describe the interactions we had with the LLM. We end up with a complete formal proof, partially generated by an LLM and fully proof-checked by LPTP.",
+  "authors": [
+   "Fred Mesnard",
+   "\u00c9tienne Payet",
+   "Wim Vanhoof"
+  ],
+  "published": "2026-07-23T11:15:38Z"
+ },
+ {
+  "arxiv_id": "2607.21188v1",
+  "title": "Identifying Good Rules for Efficient SAT Encodings of Single-Constant Multiplication Using Machine Learning",
+  "abstract": "The Single Constant Multiplication problem is a fundamental NP-hard optimization task in hardware design, which seeks to decompose a fixed constant using only additions, subtractions, and bit-shifts. Although dynamic programming methods can produce near-optimal SAT encodings for SCM, their encoding cost remains high for large constants. We propose a neuro-symbolic framework that accelerates SCM SAT encoding by identifying good rules for guiding operator selection during decomposition. Our approach employs a graph neural network model to predict promising operator types from constant decompositions, and exploits the resulting confidence scores to prune no-good choices in the symbolic search. Experimental results on unseen 17-32 bit constants demonstrate one to two orders of magnitude reductions in encoding time, over 97% reduction in memory usage, and an order-of-magnitude decrease in branching, while preserving near-optimal encoding quality in terms of additions. These results show that learning-guided symbolic strategies can significantly improve the scalability and efficiency of SCM encoding. Our code and data are publicly available at: https://github.com/Chufeng-Jiang/SCM_MLDP",
+  "authors": [
+   "Chufeng Jiang",
+   "Neng-Fa Zhou"
+  ],
+  "published": "2026-07-23T11:15:55Z"
+ },
+ {
+  "arxiv_id": "2607.21191v1",
+  "title": "Encoding Event-B Proof Rules in Prolog: An Interactive Sequent Prover for ProB",
+  "abstract": "Event-B is a formal method rooted in predicate logic and set theory. We encoded over 600 proof rules in Prolog, enabling a systematic, comprehensible proof analysis and construction. By integrating the proof rules into the Prolog-based validation tool ProB, we obtain an interactive proof system with proof tree visualisation. This has advantages in teaching, giving students direct control over the selection of proof rules. Our tool can import proof obligations from the Rodin platform and provides multiple exports: a trace file for proof replay in ProB, an interactive HTML document for tool-independent exploration of the proof tree, and an export back to Rodin, allowing the ProB prover to be used as second chain. Compared to the previous implementation of the proof rules in Java, the encoding in Prolog is more compact, maintainable and extensible. While a preliminary iterative deepening prover with simple heuristics is already available and useful for finding short proofs, we aim to obtain fast automatic provers in the future.",
+  "authors": [
+   "Katharina Engels",
+   "Jan Gruteser",
+   "Michael Leuschel"
+  ],
+  "published": "2026-07-23T11:16:32Z"
+ },
+ {
+  "arxiv_id": "2607.21192v1",
+  "title": "Animation, Verification and Visualisation of Prolog Transition Systems with ProB",
+  "abstract": "ProB is a Prolog-based model checker, animator and constraint solver for high-level formal specifications. One can also use ProB to animate transition systems defined by Prolog predicates, allowing the application of its various validation techniques. In this work, we present the existing features of ProB's Prolog animation mode and its recent extensions. The extended capabilities include simulation for statistical checks, more reliable trace replay, transitions with user input and improved state visualisation. We apply the new features to case studies, particularly for evaluating different strategies in game play, such as Connect Four. The features are useful for many other applications, especially for ProB's new sequent prover for Event-B proof obligations, as well as for demonstration models for teaching in combination with interactive visualisation.",
+  "authors": [
+   "Jan Gruteser",
+   "Michael Leuschel",
+   "Katharina Engels",
+   "Fabian Vu"
+  ],
+  "published": "2026-07-23T11:16:49Z"
+ }
+]

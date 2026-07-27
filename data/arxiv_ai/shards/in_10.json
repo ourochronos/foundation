@@ -1,0 +1,229 @@
+[
+ {
+  "arxiv_id": "2607.21686v1",
+  "title": "Persistent Computational State: A Session-Centric Runtime for Generative World Models",
+  "abstract": "Generative world models are increasingly driven as simulators: a planner forks a state, rolls out futures, backtracks, and returns to a visited viewpoint. Recent benchmarks establish that current video world models fail this usage, and attribute it to the model, prescribing new architectures and training objectives. We show this attribution is incomplete, and for an important class of models simply wrong. Snapshotting the state the runtime already holds -- an observation plus RNG state, a memory bank, or a windowed KV context, by architecture -- and restoring it after a genuine excursion reproduces the never-left continuation byte-identically on all three; corrupting only the RNG degrades it. The capability was never missing: request-centric serving discarded it, inheriting from language-model serving the assumption that runtime state is recomputable -- but world-model state carries a non-recomputable kernel. We define Persistent Computational State (PCS), the minimal non-recomputable state that must survive across requests, show it can be discovered by measurement, and build a session-centric runtime over it. Checkpoint and restore cost 0.012 ms against a 1.85 s generation step; resident sessions become host- rather than device-bounded (measured to 1,024); and world memory must be evicted by relevance to the return, not recency -- the inverse of LLM practice.",
+  "authors": [
+   "Zhen Lin"
+  ],
+  "published": "2026-07-23T14:39:46Z"
+ },
+ {
+  "arxiv_id": "2607.21688v1",
+  "title": "Explainable quantum-compressed machine learning for complex fluid flows",
+  "abstract": "Machine-learning surrogates of physical systems face a paradox: explainable models facing the challenge of expressivity to capture complex nonlinear flows, whereas expressive deep surrogates match high-fidelity simulations only through massive parameterisations that turn the learned dynamics into a black box. Here, we introduce quantum-compressed machine learning (QCML), which resolves this tension by compressing the latent propagator of a flow surrogate from $524{,}288$ trainable parameters to no more than $8$. This parameter reduction brings the learned dynamical law to the parameter scale of a physical constitutive relation rather than a black-box neural network, making the surrogate directly interpretable and controllable without sacrificing expressivity. The compression is realised by a structured quantum circuit whose unitary propagator constrains the latent spectrum to the unit circle exactly and by construction, replacing exponential error growth with linear accumulation over autoregressive rollouts. Classical regularisation only approximates this constraint: even a quantum-inspired classical baseline penalised towards unitarity collapses within one Lyapunov time on turbulent channel flow, whereas QCML remains stable over the full rollout. Shared phase and coupling angles parameterising the circuit correspond directly to modal frequencies and inter-mode interactions, giving the learned dynamics a physical interpretation in spectral space. On two patient-specific cardiovascular benchmarks, the structured QCML propagator matches the predictive accuracy of its classical counterpart on surface pressure spectra, pressure drop, and wall shear stress. These results establish QCML as a working component of scientific machine learning and a concrete contribution towards practical quantum advantage in real-world prediction.",
+  "authors": [
+   "Xiao Xue",
+   "Maida Wang",
+   "Mingyang Gao",
+   "Minh Chung",
+   "Peter V. Coveney"
+  ],
+  "published": "2026-07-23T15:05:04Z"
+ },
+ {
+  "arxiv_id": "2607.21692v1",
+  "title": "Learning What Matters: Supervising Sparse Attention Routing with Causal Evidence Sets",
+  "abstract": "Sparse attention reduces the cost of long contexts by allowing each query to read only selected parts of the input. These selectors are often trained by distilling the attention patterns of a dense teacher, assuming that attention reveals which context the teacher actually uses. We test that assumption on retrieval tasks where the evidence for each answer is known exactly. By masking parts of the context and measuring whether the answer changes, we find that attention and causal dependence often disagree, and distilled selectors inherit the mismatch. Teachers attend to outdated facts they have learned to ignore, and their attention can vary across training runs even when they rely on the same evidence. In a two-step reference task, attention at the answer skips the intermediate step because it was resolved earlier in the forward pass: a selector trained on attention achieves 41% accuracy, while the same selector trained on causal evidence reaches 99% and matches the teacher. These evidence sets require no annotation: recovered from a frozen teacher by masking alone, they train selectors to the same accuracy. We find the same conflict in pretrained models: Qwen2.5-3B gives more attention to an outdated fact than the current one on 58% of conflicting-fact examples despite answering correctly, while Gemma-2-9B rises from 56% to 99% accuracy when restricted to the two relevant sentences. Attention shows where a model looks, not necessarily what its answer depends on; across the regimes we tested, that dependence matched or outperformed attention as a training target.",
+  "authors": [
+   "Jim Allchin"
+  ],
+  "published": "2026-07-23T17:11:34Z"
+ },
+ {
+  "arxiv_id": "2607.21702v1",
+  "title": "An Introduction to Bayesian and Frequentist Simulation-Based Inference with Machine Learning",
+  "abstract": "Simulation-based inference (SBI) with machine learning is an increasingly important tool for solving inverse problems in science and engineering, including parameter inference and the inversion of detector effects. We provide an overview of the Bayesian and frequentist statistical frameworks, describe how machine-learning-based SBI methods, such as neural posterior estimation and neural likelihood estimation, can be used for parameter estimation within these frameworks, and show that the same methods can also be applied to Empirical Bayes or unfolding tasks. We also discuss how to validate inference results and the limitations of SBI with machine learning.",
+  "authors": [
+   "Maximilian Dax",
+   "Theo Heimel",
+   "Gilles Louppe"
+  ],
+  "published": "2026-07-23T18:00:01Z"
+ },
+ {
+  "arxiv_id": "2607.21716v1",
+  "title": "A Defense of the Quadratic Model",
+  "abstract": "Due to the complexity of neural network loss landscapes, optimization theory is forced to rely on idealized models, and there is generally a tradeoff between how theoretically tractable the model is, and how accurately it describes the true optimization dynamics. In this work, we stress test the simplest possible model of optimization -- the quadratic model -- and show that it can be surprisingly predictive in an LLM setting with 150M parameters and 3B training tokens. Specifically, we show that Taylor expanding the model and the loss function at intermediate checkpoints through training can accurately predict the optimization dynamics over windows that can last up to 10\\% of training. Having established this agreement, we then turn to analyzing the structure of these local quadratic optimization problems through two lenses: the Hessian spectrum and local stability. Using Lanczos quadrature with extremely deep probes, we are able to estimate the Hessian spectrum deep into the tail, and we find a surprising amount of structure in both the eigenvalues and eigenvectors, which depends on the batch size, preconditioner, and training time. We also empirically test local linear stability at intermediate checkpoints and compare it to theoretical predictions to demonstrate that optimization in LLMs typically occurs at a stochastic edge of stability, whose nature is also determined by batch size. Our results indicate the quadratic model may be a theoretically tractable proxy for pretraining optimization dynamics.",
+  "authors": [
+   "Alexandru Meterez",
+   "Pranav Ajit Nair",
+   "Depen Morwani",
+   "Cengiz Pehlevan",
+   "Sham Kakade",
+   "Alex Damian"
+  ],
+  "published": "2026-07-23T18:02:03Z"
+ },
+ {
+  "arxiv_id": "2607.21721v1",
+  "title": "Prior laundering: learned priors with inherited, undetectable overconfidence",
+  "abstract": "Learned generative priors are increasingly used for ill-posed Bayesian inverse problems, their posterior uncertainty treated as earned from data. But training one requires truths, scarce in seismic and medical imaging, so the recourse is an archive of legacy reconstructions---prior laundering. Where the measurements are uninformative the posterior reverts to the prior, so the uncertainty reported there is the archive's, not the data's, and nothing in deployment reveals it: truths differing only on those directions induce identical data laws, and self-consistency checks such as simulation-based calibration pass whatever the prior believes. That belief has an exact source: averaging the legacy posterior over the measurements yields the old regularizer advanced a single expectation--maximization step---improved where the data resolve, frozen where they cannot. It is overconfident wherever the inherited belief is tighter than the truth. A single-best archive is worse, collapsing the blind credible interval to zero width. Deployed, a diffusion prior fit to the archive under-covers the operator's blind subspace, unlike a truth-trained control, and a normalizing flow does the same on a nonlinear groundwater operator. We recommend reporting which directions the measurements resolve, separating confidence the data support from belief inherited through the pipeline.",
+  "authors": [
+   "Ali Siahkoohi",
+   "Sina Alemohammad"
+  ],
+  "published": "2026-07-23T18:04:12Z"
+ },
+ {
+  "arxiv_id": "2607.21731v1",
+  "title": "RED-PIM: Reducing Data Movement for Transformers using Processing-in-Memory",
+  "abstract": "Transformers are widely used across many domains, including natural language processing, computer vision, web search, and DNA sequence analysis. Given their broad applicability, improving the performance of transformer models is critical. However, the high volume of data movement between processing units and memory during attention operations significantly limits their efficiency. Processing-In-Memory (PIM) mitigates this issue by performing computations directly inside memory. While prior work has proposed PIM-based transformer implementations, they suffer from costly inter-bank communication, and struggle to scale due to the limited capacity of memory banks. As a result, attention-related data must be split across banks, diminishing the potential benefits of PIM. In this work, we propose RED-PIM, an algorithm-architecture co-design that reduces attention latency by minimizing inter-bank data movement from O(N^2) to O(N) and shrinking intermediate attention matrices from N x N to d x d. By reorganizing matrix operations, performing computations locally, and employing an optimized data transfer strategy, RED-PIM significantly reduces computation cost and interconnect traffic. Compared to baseline PIM implementation, RED-PIM achieves inference time reductions ranging from 16.05% to 99.99% (geometric mean of 66.42%), with the largest gains on longer sequences. On real-world datasets, RED-PIM improves performance by 99.60% for long documents and 13.44% for shorter ones, while maintaining or improving accuracy. These results demonstrate RED-PIM's effectiveness for scalable and efficient transformer inference.",
+  "authors": [
+   "Zahra Yousefijamarani",
+   "Alaa Alameldeen"
+  ],
+  "published": "2026-07-23T18:28:13Z"
+ },
+ {
+  "arxiv_id": "2607.21735v1",
+  "title": "What AI Red-Team Evaluations Can and Cannot Prove",
+  "abstract": "Red-team evaluations of AI models support some claims and not others, and the boundary between the two is calculable rather than merely a matter of judgment. We define the evidential ceiling of an evaluation as the largest factor by which one result can move belief under a fixed testing budget, derive it in closed form for the benchmark null result, and use it to locate that boundary exactly. We find that above a calculable harm rate, a benchmark of modest size certifies a category to a stated evidentiary standard, and a clean sheet is then the stronger of the two possible observations, outweighing a single reproduced failure. Below that rate, no passive benchmark of feasible size provides the specified evidence of safety under the fixed scoring rule and approximately independent trial structure. The crossing between the two regimes has a closed form. The bound is not specific to benchmarks: written in terms of a procedure's hypothesis conditioned elicitation rates, it covers adaptive and automated red teaming as well, and shows that discrimination between the hypotheses rather than attack success is what determines evidential worth. Auditing eight evaluation suites against the boundary, we find that current benchmarks are adequate for high-frequency harm categories and several orders of magnitude short for rare, catastrophic ones. Safety benchmarks are not uninformative. They are informative about a specific and computable set of propositions, and the discipline they need is to state which.",
+  "authors": [
+   "Bandana Kaur"
+  ],
+  "published": "2026-07-23T18:34:12Z"
+ },
+ {
+  "arxiv_id": "2607.21745v1",
+  "title": "Deep Sigma Point Processes for RCS Modeling in Spaceborne SAR Imagery",
+  "abstract": "Radar cross-section (RCS) modeling is foundational to advancing the utility and sensitivity of spaceborne radar systems. This study introduces a deep sigma-point process (DSPP) model for predicting RCS in synthetic aperture radar (SAR) imagery using a RADARSAT-2 dataset containing 208,191 verified ships. The DSPP model not only strives for predictive accuracy but also characterizes the uncertainty inherent in the intricate relationships among radar signals, ship parameters, and environmental conditions. Unlike traditional approaches that rely on deterministic equations with static parameters, the DSPP uses a hierarchical Gaussian process framework with Bayesian inference to capture variability and uncertainty in RCS predictions. By generating predictive distributions rather than single estimates, the model accounts for the complex dynamics governing radar returns. Using a Matern kernel with automatic relevance determination, the DSPP identifies and ranks critical features across radar, operational, and environmental domains, thereby supporting transparency and interpretability. Performance evaluations demonstrate the model's superiority over linear regression baselines, with a 20.83 percent reduction in root mean squared error, a 25.89 percent increase in R-squared, and a 44.4 percent reduction in both the residual interquartile range and median absolute deviation on the test data. By providing calibrated uncertainty bounds, the DSPP enhances prediction reliability and supports robust decision-making. This work represents a shift toward probabilistic models that incorporate the inherent uncertainty of complex phenomena. By transitioning from fixed equations to distributions over outcomes, the DSPP fosters a deeper understanding of RCS behavior and enables systems to operate effectively in dynamic environments.",
+  "authors": [
+   "Khalid El-Darymli",
+   "Christoph H. Gierull",
+   "Katerina Biron",
+   "Weimin Huang"
+  ],
+  "published": "2026-07-23T18:54:28Z"
+ },
+ {
+  "arxiv_id": "2607.21752v1",
+  "title": "Parameter-free Adaptive Sparse Attention via Compression-Based Content Selection",
+  "abstract": "Data-adaptive sparse attention masks substantially outperform fixed patterns (e.g., BigBird and Longformer) and can even exceed dense attention on long sequences. Existing adaptive approaches---including SBM-Transformer, Dynamic Mask Attention, and NSA---typically require additional learnable parameters, custom gradient estimators, or specialized CUDA kernels. We show that classical data compression provides an effective masking signal with \\textbf{no additional parameters}. By computing per-block gzip compression ratios, we identify non-redundant content blocks and route long-range attention selectively through them. Intuitively, blocks that gzip cannot compress contain information not predictable from local repetition, making them natural long-range attention targets. Because the compression profile is input-dependent, the resulting sparse mask adapts dynamically to content without learned parameters, auxiliary losses, or custom kernels. On PG-19 byte-level language modeling at 92M parameters with 8K context, our method achieves 1.71 bits-per-byte (BPB), outperforming dense attention (2.89), BigBird (2.34), Longformer (3.21), and a reimplemented SBM-Transformer (3.38)---the only learned-mask baseline---by up to 1.67 BPB while adding no parameters. The advantage grows with sequence length, with the gap over BigBird widening from 0.05 BPB at 4K context to 0.63 BPB at 8K, while convergence is 3.3$\\times$ faster.",
+  "authors": [
+   "Debarshi Kundu",
+   "Swaroop Ghosh",
+   "Vasant Honavar"
+  ],
+  "published": "2026-07-23T19:05:42Z"
+ },
+ {
+  "arxiv_id": "2607.21756v1",
+  "title": "Prompt as a Data Type: In-Database LLM Prompt Management and Rewriting",
+  "abstract": "Large Language Models (LLMs) are increasingly used in database-backed applications to classify tuples, filter records using semantic predicates, extract structured attributes, and enrich query results. Yet the prompt that start these computations are typically stored outside the DBMS in unstructured formats, making them invisible to query execution, metadata management, and optimization. Drawing on Stonebraker's QUEL as a Data Type and the principles of reflective programming, this paper introduces PromptDB, a database system that treats prompts as tuple-level database values. PromptDB provides a logical PROMPT datatype whose values store a template, bindings to tuple attributes, model metadata, and task metadata. Relations may contain PROMPT attributes directly in base tables, or expose them through views over joined tuples. Users query prompt-valued attributes through generated evaluation views, while the system internally renders, rewrites, optimizes, and executes prompts through an EVAL operator. Making prompts database-visible creates a new optimization space. The key idea is to bring query-optimizer thinking to prompts: just as query optimizers exploit database metadata to rewrite SQL plans, PromptDB exploits database metadata to rewrite prompts. We evaluate PromptDB on synthetic and real-world data workloads across different tasks. The results show how database-guided rewriting improves output validity and yields favorable cost-quality trade-offs compared with static, manually written prompts.",
+  "authors": [
+   "Denis Mayr Lima Martins",
+   "Gottfried Vossen"
+  ],
+  "published": "2026-07-23T19:18:18Z"
+ },
+ {
+  "arxiv_id": "2607.21757v1",
+  "title": "Co-design of LLM-based preference agents: participation may drive overtrust",
+  "abstract": "Large language models are increasingly used to simulate human preferences in research and practical applications, raising concerns about validation, misrepresentation, and exclusion. Co-designing agents with the people they represent is a promising way to address these concerns, but participation may also mask the problems it appears to solve. This paper explores that tension through a primarily qualitative study in which 12 participants co-designed personal preference agents in the domain of household energy, via a background survey, co-design interview, and validation survey. Participants engaged readily and mostly came to see their agents as representing them well. Independent validation, however, revealed mixed human-agent alignment, with agent responses markedly more homogeneous, decisive, and abstract than the human sample. I argue that participation and process transparency can act as an \"overtrust engine\" that promotes trust while concealing systematic misalignment with potential structural consequences at scale. I develop this as a core mechanism in participatory preference agent design, treating individual alignment not as a fixed state but as an enacted process.",
+  "authors": [
+   "Michael J. Fell"
+  ],
+  "published": "2026-07-23T19:19:12Z"
+ },
+ {
+  "arxiv_id": "2607.21758v1",
+  "title": "Humanly: A Configurable and Traceable Environment for Human-AI Collaborative Writing",
+  "abstract": "Teachers, conference chairs, and public readers all judge writing from limited evidence, seeing only a finished document and not the process that produced it. Final text alone cannot reveal whether a document was produced through human typing, AI generation, or mixed human-AI collaboration. Existing process-tracking tools help, but many are tied to host-document histories, provide coarse activity records, and offer limited control over the writing environment. Humanly is a writing platform that makes the writing process itself the evidence. Users configure writing environments for personal documents or assigned tasks and draft in a workspace that records writing activity and in-platform AI assistance. Humanly can package a completed session into a sealed writing certificate with configuration-aware anomaly behavior review. It can support writing scenarios such as course assignments, peer review, and personal certification. Our user study shows that Humanly is helpful across roles, and a red-teaming study shows that the Humanly Typing Detector distinguishes human hand typing from automated typing.",
+  "authors": [
+   "Shenzhe Zhu",
+   "Haoqian Zhang",
+   "Xu Yang",
+   "Jingyu Tang",
+   "Yi Nian",
+   "Xiaoxue Du",
+   "Shu Yang",
+   "Alex Pentland",
+   "Joachim Baumann",
+   "Jiaxin Pei"
+  ],
+  "published": "2026-07-23T19:20:03Z"
+ },
+ {
+  "arxiv_id": "2607.21761v1",
+  "title": "Encoding orders and trees in real-valued functions",
+  "abstract": "We prove function-theoretic analogues of a quantitative result of Hodges on extracting the order property from a sufficiently large 2-tree coded in a binary relation. Similar analogues for functions were previously obtained by Daskalakis and Golowich and by Anderson and Benedikt. These results are from statistical learning theory, where 2-trees are captured by sequential fat-shattering dimension, and the order property is controlled by various notions of \"thresholds\". Our first main result (Theorem 1.11) focuses on extracting a less restrictive kind of threshold from a tree, and yields significantly better bounds compared to what can be obtained from earlier results focusing on more restrictive versions. Part of the motivation for Theorem 1.11 lies in a companion paper, where this theorem is used to obtain efficient bounds in quantitative regularity lemmas for \"stable functions\". Here will use Theorem 1.11 to reprove a result of Anderson and Benedikt in a stronger form and with improved bounds. We also use Theorem 1.11 to prove an at most double-exponential bound on dual sequential fat-shattering, which resolves an open problem. In our second main result (Theorem 1.14), we give a new proof of a result of Daskalakis and Golowich on extracting \"tight thresholds\" from large sequential fat-shattering dimension, with improved bounds. This resolves another open problem related to correcting the proof of a result claimed by Jung, Kim, and Tewari.",
+  "authors": [
+   "G Conant",
+   "C Terry"
+  ],
+  "published": "2026-07-23T19:23:48Z"
+ },
+ {
+  "arxiv_id": "2607.21763v1",
+  "title": "Every Model Cheats: Prompt-Level Mitigation of Cheating on Offensive Cyber Tasks",
+  "abstract": "Large language model (LLM) agents routinely cheat on cybersecurity benchmarks, inflating reported pass rates far beyond genuine capability. Prior audits of Cybench found cheating in 0.3-3.4% of traces, implicating only a handful of models. We present a controlled prompt-ablation study across 22 frontier models from 7 providers on 23 Cybench capture-the-flag (CTF) challenges under three prompt conditions (no anti-cheat, standard, severe). All 1,518 task traces were individually audited through a four-stage pipeline combining LLM-as-a-judge classification, programmatic verification, judge-verifier reconciliation, and human review. We find cheating is far more pervasive than previously estimated: under baseline conditions, 37.1% of passes involved cheating, 21 of 22 models cheated, and scores were inflated by up to 5x. Anti-cheat prompts reduce cheat propensity from 33.0% (baseline) to 17.8% (standard) to 8.5% (severe) without degrading, and sometimes improving, solve rates. However, even under the most restrictive prompt condition, eight models still produced cheated passes, four showed backfire effects, and cheating escalated from web search toward infrastructure probing. We introduce the \"solve rate\" metric (clean passes only) to distinguish genuine capability from cheated outcomes, and argue it should be standard practice in any evaluation where cheating vectors are available. Anti-cheat prompts are an effective and essentially free first layer of defense, but they are not a substitute for environmental controls.",
+  "authors": [
+   "Michael Kouremetis",
+   "Ads Dawson",
+   "Raja Sekhar Rao Dheekonda",
+   "Brian Greunke"
+  ],
+  "published": "2026-07-23T19:26:25Z"
+ },
+ {
+  "arxiv_id": "2607.21772v1",
+  "title": "Reliability-Aware Bayesian Optimization of 1310 nm PCSELs with FDTD Verification",
+  "abstract": "Near 1310 nm photonic-crystal surface-emitting lasers (PCSELs) are attractive narrow-beam sources for optical communication and sensing, but their final design refinement is costly. Small geometry changes simultaneously shift the band-edge resonance, cavity leakage, far-field divergence, and the numerical stability of a high-$Q$ decay fit, while every full-wave trial requires a time-domain simulation. We couple a commercial finite-difference time-domain solver to a reliability-aware Bayesian optimization (BO) loop over eight local design variables. Each completed simulation updates the surrogate used to choose the next geometry. Candidate ranking combines wavelength and beam-quality requirements with a reliability-adjusted metric $Q_{\\mathrm{eff}}$ derived from the solver-reported relative fit-error estimate $dQ/Q$. Across three 80-evaluation runs from the same reference model, BO produced 5--15 candidates per run that passed the joint filter. Designs reconstructed from fresh model copies retained $Q_{\\mathrm{eff}}=4.33\\times10^6$--$7.76\\times10^6$, a 60--108-fold increase over the baseline metric, at 1308.23--1310.90~nm with approximately $0.84^{\\circ}$ divergence. Under equal budgets, BO gave the highest mean strict-filter yield (9.0 candidates), compared with differential evolution (7.0) and Latin-hypercube sampling (1.5), although the controls occasionally matched the peak $Q_{\\mathrm{eff}}$. Field maps, resonance spectra, and local perturbations further identify an index-related wavelength handle and a hole-size-related leakage handle. The resulting FDTD budget produces a pool of wavelength-compatible, narrow-beam, and reproducible high-$Q$ PCSEL candidates without trusting a single optimistic decay fit.",
+  "authors": [
+   "Jinglin Yu",
+   "Feiyang Wu",
+   "Longying Wen",
+   "Chongxian Yuan",
+   "Renjie Li",
+   "Zhaoyu Zhang"
+  ],
+  "published": "2026-07-23T19:35:55Z"
+ },
+ {
+  "arxiv_id": "2607.21773v1",
+  "title": "Smart predict-then-robustly-optimize",
+  "abstract": "In this paper, we propose and study a robust variant of the smart predict-then-optimize approach that accounts for prediction shifts due to disturbance in the covariate feature space. While traditional integrated-learning-and-optimization models assume that side information is perfectly revealed, empirical data-driven features are frequently corrupted or noisy at the time of decision-making, leading to fragile operational policies. To bridge this gap, we integrate principles of robust optimization directly into the predictive-prescriptive pipeline via a smart predict-then-robustly optimize loss and establish a computationally tractable convex surrogate, designed to hedge against worst-case feature perturbations. On the theoretical front, we formalize the structural validity of this surrogate by proving its approximation error probability decays exponentially according to a sub-Gaussian concentration profile. Furthermore, we establish that under mild assumptions, the surrogate is Fisher consistent with high probability. We also prove necessary conditions under which our framework outperforms standard smart predict-then-optimize and maintain its superiority even when the standard method is equipped with regularized upstream predictions. Numerical experiments validate that our robust framework consistently yields significant performance improvements over standard methods, both in out-of-sample terms and in training stability.",
+  "authors": [
+   "Aakil Caunhye",
+   "Xuefei Lu",
+   "Belen Martin-Barragan"
+  ],
+  "published": "2026-07-23T19:37:17Z"
+ },
+ {
+  "arxiv_id": "2607.21774v1",
+  "title": "Probing Latent Colombian Identity Inferences in Qwen2.5-7B with Natural Language Autoencoders",
+  "abstract": "Large language models may infer demographic attributes from subtle linguistic cues even when those attributes are not explicitly stated. This pilot study examines whether Qwen2.5-7B-Instruct internally represents Colombian identity, socioeconomic status, or stereotype-related information when processing Colombian-Spanish and English prompts. We use Natural Language Autoencoders (NLA) to verbalize residual-stream activations from layer 20 across four positional quartiles per prompt. Our dataset contains 30 prompts arranged as 15 matched Spanish-English pairs, spanning explicit Colombian cues, implicit Colombian cues, and neutral controls. We report descriptive rates and qualitative evidence rather than statistically powered effects, focusing on whether latent nationality or stereotype representations appear before they are verbalized in the model output. This work connects activation-level interpretability with bias evaluation for underrepresented Spanish varieties.",
+  "authors": [
+   "Pablo Santiago Potes Velasco",
+   "Mar\u00eda del Mar Garc\u00eda Matabanchoy",
+   "\u00d3scar Juli\u00e1n P\u00e9rez Ladino",
+   "Jhoan Stevan Mosquera Ortiz",
+   "Nicol\u00e1s Lozano Mazuera",
+   "Gilber Alexis Corrales Gallego"
+  ],
+  "published": "2026-07-23T19:42:59Z"
+ },
+ {
+  "arxiv_id": "2607.21776v1",
+  "title": "Physiological Signals as a Forensic Modality for Talking-Face Deepfake Detection",
+  "abstract": "Talking-face (TF) deepfake generation synthesizes photore- alistic facial video from a static source image and an au- dio signal, producing forgeries that current image-based detectors consistently fail to identify. Unlike face-swap ma- nipulation, TF synthesis has no underlying real video from which to inherit physiological characteristics, making re- mote photoplethysmography (rPPG) a uniquely motivated detection modality for this forgery category. We propose a detection framework that extracts per-video rPPG wave- forms via RhythmFormer and trains a suite of lightweight classifiers to distinguish real from synthesized physiologi- cal signals. Evaluated on the TF subset of Celeb-DF++ un- der a strict subject-independent protocol, where test identi- ties are completely separated from training identities, our 1D ResNet achieves an AUC of 0.806 and EER of 27.8%, placing it within 2.4 points of the best published general- purpose detector (Effort, ICML 2025) while operating ex- clusively on the physiological channel. We document a con- trolled reproduction study of DeepFakesON-Phys, the rep- resentative prior rPPG detector, demonstrating degrada- tion from AUC 0.999 on legacy face-swap data to 0.622 on the TF subset of Celeb-DF++. We further show that detec- tion difficulty is strongly method-dependent: AUC ranges from 0.985 (Real3DPortrait) to 0.690 (IP-LAP) across the seven TF generators, with the ranking remaining perfectly stable across all evaluation protocols. This spread reflects an interpretable physiological property of each generator rather than evaluation noise, and constitutes the primary theoretical contribution of the work.",
+  "authors": [
+   "Othmane Harraq",
+   "Tamer Aldwairi"
+  ],
+  "published": "2026-07-23T19:47:15Z"
+ },
+ {
+  "arxiv_id": "2607.21777v1",
+  "title": "AI-Integrated Scientific Inquiry: A Practice-Centered Vision for Science Education",
+  "abstract": "Artificial intelligence (AI) has become part of scientific inquiry. Scientists use AI to observe and measure phenomena, to identify patterns in data, and to build models. As AI moves into scientific inquiry, it gains relevance for science education: students should learn how AI is changing scientific practices, ideally by engaging in AI-integrated scientific inquiry themselves. How to design such instruction, grounded in authentic scientific practice rather than taught as a standalone topic, remains an open question. In our vision, which we describe in this article, AI is treated as a set of scientific instruments that students use within the scientific practices described by the Next Generation Science Standards. Each instrument is a genuine scientific tool, pedagogically bounded: its controls are simplified while its core scientific function is preserved. The approach has two aims: engaging students in authentic scientific inquiry, and building an understanding of how AI is used in science and where it can mislead (discipline-based AI literacy, DAIL). In the article, we focus on the investigative core of inquiry, namely observing, analyzing, and modeling, and describe one exemplary AI instrument for each: computer vision for observing, clustering for analyzing, and generative modeling for modeling. We argue that every AI instrument in science education should carry a distinct reflection point that prompts critical evaluation of the AI instrument itself. Finally, we describe how agentic AI, operating across the whole inquiry rather than a single practice, could be represented, arguing that students should first build a foundational understanding of scientific inquiry and AI instruments before relying on agentic AI.",
+  "authors": [
+   "Arne Bewersdorff",
+   "Matias Rojas",
+   "Xiaoming Zhai"
+  ],
+  "published": "2026-07-23T19:47:57Z"
+ }
+]

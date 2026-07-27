@@ -1,0 +1,230 @@
+[
+ {
+  "arxiv_id": "2607.21847v1",
+  "title": "Distributional Determinantal Point Process for Repulsive Clustering of Distributions",
+  "abstract": "We introduce the distributional determinantal point process (dDPP) as a novel repulsive point process whose atoms are probability distributions rather than points in a real space. The dDPP is constructed via an L-ensemble with a sliced Wasserstein (SW) kernel between distributions. We show its validity as a well-defined point process. In the discrete setting, we derive concentration results for plug-in estimators of the L-ensemble, the correlation kernel, and their determinants given i.i.d. samples from the distributional atoms. Leveraging this framework, we propose a distribution-valued random partition model by way of a repulsive generalized Bayesian mixture model. The model places a dDPP prior over the atoms of the mixing measure and defines a generalized likelihood based on SW distance. To summarize posterior inference, we develop a decision-theoretic approach to report a point estimate of the mixing measure as a Bayes rule under a hierarchical optimal transport utility function. The latter is a natural choice given that the mixing measure is itself a distribution over distributions. We use the proposed framework for inference with single-cell gene expression data and human epilepsy data, producing interpretable and well-separated clusters that reflect meaningful structure in the data.",
+  "authors": [
+   "Khai Nguyen",
+   "Yang Ni",
+   "Elizabeth Juarez-Colunga",
+   "Peter Mueller"
+  ],
+  "published": "2026-07-23T22:32:00Z"
+ },
+ {
+  "arxiv_id": "2607.21850v1",
+  "title": "SCALE: Self-Supervised Constraint-Aware Layout GEneration for Local P&amp;R DRV Fixing at Advanced Nodes",
+  "abstract": "As semiconductor manufacturing advances toward sub-2nm nodes, local place-and-route (P&amp;R) design-rule violation (DRV) fixing is increasingly limited by complex rule interactions, dense multi-layer routing geometries, and foundry-specific constraints. While Large Language Models (LLMs) have recently demonstrated strong capabilities in EDA scripting and documentation, their application to visual layout understanding remains largely unexplored: diagnosing DRC violations from layout imagery demands precise geometric reasoning and foundry-specific rule knowledge absent from general-purpose VLM training. We propose SCALE, a framework with a self-supervised layout-generation stage for local DRV fixing at advanced nodes. Multi-layer layout geometry is serialized into structured text, and a fine-tuned language model learns to reconstruct randomly masked polygons from surrounding BEOL context alone without violation labels. At inference, natural-language rule constraints and high-temperature sampling steer generation toward diverse, violation-prone layout variants validated by an industrial signoff DRC checker, producing DRC-annotated layout--violation pairs used to fine-tune a domain-adapted DRC-VLM. This VLM provides rule-aware geometric guidance for local DRV repair, boosting state-of-the-art agents' solve rates by +12--25% (up to 97%) on 100 real sub-2nm cases spanning enclosure, spacing, width, and color-spacing violations.",
+  "authors": [
+   "Chia-Tung Ho",
+   "Haoyu Yang",
+   "Guanglei Zhou",
+   "Yoshi Nishi",
+   "Yaguang Li",
+   "Walker Turner",
+   "Cunxi Yu",
+   "Yiran Chen",
+   "Brucek Khailany"
+  ],
+  "published": "2026-07-23T22:38:04Z"
+ },
+ {
+  "arxiv_id": "2607.21855v1",
+  "title": "Searching the Space of Feed-Forward Neural-Network Weight-Update Rules with Fixed Depth Symbolic Regression",
+  "abstract": "We investigate whether symbolic regression can discover explicit neural network weight-update rules that outperform standard hand-designed optimizers on small symbolic regression benchmarks. Candidate update rules are represented as fixed-depth symbolic expressions over operands derived from common optimizers, including gradient, momentum, adaptive-gradient, and moment-estimate quantities. Across 30 benchmark/neural network combinations, the symbolic regression procedure found an update rule outperforming the best hyperparameter-tuned established optimizer in 25 cases, with an aggregate MSE reduction of 44.47\\% over the improved cases. The discovered rules do not all share a single common symbolic form, but many combine adaptive normalization, momentum-like quantities, nonlinear transformations, and rational expressions. These results suggest that symbolic regression can serve as a lightweight mechanism for discovering compact optimizer variants, while also highlighting the need for larger-scale validation.",
+  "authors": [
+   "Charles Brum",
+   "Edward Finkelstein"
+  ],
+  "published": "2026-07-23T22:49:51Z"
+ },
+ {
+  "arxiv_id": "2607.21856v1",
+  "title": "LeAct: Learning to Reason from Expert Actions",
+  "abstract": "Modern reasoning models depend on reasoning data, today sourced from human annotations or distilled from stronger LLMs. However, a rich and largely untapped source of supervision lies in expert systems (e.g., game engines, classical planners, theorem provers), which routinely produce near-optimal actions across diverse domains. But these experts are silent: they commit to an action without writing down the chain of thought (CoT) behind it. Recovering that CoT as natural-language reasoning would distill expert knowledge into a student that generalizes beyond the demonstrated actions. We treat it as a latent variable and study how to recover it from the action alone. Our approach, LeAct (Learning to reason from Actions), optimizes this latent variable: the student samples candidate CoTs for each expert action, and we retain those that measurably improve its own probability of recovering the action. Across imperfect-information games at multiple scales and a simulated robotics benchmark, LeAct reaches the solver's numerical floor on small enumerable games. At larger scale, it is $5\\times$ closer to the solver than the strongest expert-iteration baseline. At Flop Hold'em ($\\sim 10^9$ infosets), LeAct wins head-to-head by $+60$ mbb/g, and on the robotics probe it is the only training recipe that improves on direct imitation. We present a principled framework and the result: expert systems become a categorically new source of reasoning teachers for foundation models.",
+  "authors": [
+   "Ziran Yang",
+   "Chengshuai Shi",
+   "Raj Ghugare",
+   "Benjamin Eysenbach",
+   "Karthik Narasimhan",
+   "Chi Jin"
+  ],
+  "published": "2026-07-23T22:50:23Z"
+ },
+ {
+  "arxiv_id": "2607.21859v1",
+  "title": "DAGForge: Auditable Causal DAG Authoring with Biomedical Literature",
+  "abstract": "Constructing causal directed acyclic graphs (DAGs) is a core step in biomedical causal analysis, yet it remains a largely manual process. Analysts must connect study variables to prior literature, evaluate uncertain causal claims, and preserve sufficient provenance for expert review. We present DAGForge, a browser-based system for authoring causal DAGs as auditable, evidence-linked artifacts. Given free-text descriptions of study concepts, DAGForge creates a reproducible literature snapshot, uses an LLM-based reasoning module to generate structured pairwise causal judgments grounded in verbatim evidence excerpts, and assembles those judgments into a constraint-checked graph. Each proposed edge includes confidence estimates, provenance, and a reviewable rationale. The interface supports study specification, progress monitoring, evidence review, graph comparison, adjustment-set computation, and export. In evaluations against both compact benchmark DAGs and reference DAGs derived from published literature, DAGForge achieves high edge recall on the literature-based cohort while retaining verifiable evidence trails absent from LLM-only baselines. DAGForge thus reduces the burden of causal DAG curation while making the resulting assumptions auditable, supporting the design, analysis, and interpretation of biomedical studies.",
+  "authors": [
+   "Yi-han Sheu",
+   "Michael R. Steigman",
+   "Yu Zhou",
+   "Bo Wang",
+   "Fan-Yu Yen",
+   "Jordan W. Smoller"
+  ],
+  "published": "2026-07-23T23:10:38Z"
+ },
+ {
+  "arxiv_id": "2607.21861v1",
+  "title": "Data Quality over Capacity: Internalizing Documents into LoRA Adapters for Closed-Book QA",
+  "abstract": "We study baking documents directly into the weights of a 4-bit Gemma-4-e4b model via LoRA, so a system can answer questions about a corpus closed-book: no retrieval and no context-window budget. Across roughly 100 training runs from single documents to a 99-document corpus, we find that once adapter capacity is adequate, training-data quality is the dominant lever on closed-book accuracy, outweighing LoRA rank, learning rate, and two alternative architectures combined; capacity itself is a hard gate below which no data intervention helps. A single curation pass (shortening gold answers to canonical 1-6 word spans and dropping trivia) moved closed-book accuracy from 57.7% to 85.7% on a 15-document corpus, a larger jump than any architectural change. We confirm a capacity trend (rank must grow with corpus size) entangled with a coupling between rank and learning rate that we initially misdiagnosed. On a 15-document slice we add a real retrieval baseline: the internalized adapter (84.2% recall) beats a BM25-RAG pipeline with a base reader (58.9%) and even a realistic gold-chunk oracle (65.6%) at lower latency. We report the full arc, including three misdiagnoses, as a case study in debugging LLM training empirically.",
+  "authors": [
+   "Joan Figuerola Hurtado"
+  ],
+  "published": "2026-07-23T23:14:59Z"
+ },
+ {
+  "arxiv_id": "2607.21866v1",
+  "title": "Scaling Laws for Classical Machine Learning on Tabular Data: A Benchmark Study",
+  "abstract": "Prior classical-ML learning-curve work fits power laws to tree, linear, and kernel models on tabular data, but at small scale: typically one curve, one team, a handful of cells. We present a distributed classroom-scale replication: 127 students each ran a fixed protocol on 3 assigned datasets, drawn from 18 tabular classification and regression datasets and 6 model families (Boosting, Random Forest, SVM, Linear/Logistic, Ridge, Lasso), yielding 11,536 training runs and 1,648 fitted power-law curves of the form error(N) = a N^(-b) + c. Three findings. (1) Power laws fit: R^2 &gt; 0.8 on 77.7% of cells, with tree ensembles dominating at full data (Boosting 50% of datasets, RandomForest 33%; linear models underperform on classification). (2) Approximate shared exponents within a model family: for 5 of 6 families, a single family-level exponent predicts each family's cross-dataset curves nearly as well as per-dataset exponents (R^2 gap &lt; 0.011), though AIC favors the unconstrained fit and curve collapse is partial (32-58% of points within +/-0.5 dex). We frame this as approximate predictive compressibility, not dataset-independent universality; Lasso fails outright (negative control) and Ridge is fragile under leave-one-dataset-out. (3) Replicator-implementation variance: with random_state=42 fixed, independent re-implementations of the same protocol still differ by mean CV(b) = 0.144 on the fitted exponent -- not seed variance, but the spread induced by unconstrained parts of the protocol (preprocessing, encoding, missing-value handling). We release the aggregated curves, per-cell fits, and a practical data-requirement table for N* to reach target error 0.15.",
+  "authors": [
+   "Kaihua Ding"
+  ],
+  "published": "2026-07-23T23:45:09Z"
+ },
+ {
+  "arxiv_id": "2607.21867v1",
+  "title": "When Is a Learned Command Adapter Worth It? Closed-Loop Identification and Counterfactual Auditing of Frozen Locomotion Policies",
+  "abstract": "Adding a learned adapter to a frozen, command-conditioned locomotion policy is worthwhile only if the interface exposes improvements that are both real and recoverable from deployment-time observations. We introduce an adapter necessity audit that separates global operating-point gain,same-state counterfactual headroom, deployment gain over a cross-fitted fixed action, and state-allocation gain over a frequency-matched randomized policy. Source-cluster learner refits map these quantities and constraint violations to a GO/NO-GO/ABSTAIN decision. Closed-loop command- response identification provides optional decision features. On Go2, an archived scale-prefix diagnostic finds 5.2% same-state headroom but only 0.55% recovered allocation gain. Our confirmatory audit evaluates direct, scale, heading, and yaw interventions on twenty independent clusters for each of three query distributions induced by direct control, VGCC, and MPC, using 200 full learner refits. At 1% deployment and allocation thresholds and a 5% violation tolerance, direct queries return NO-GO, while VGCC and MPC queries ABSTAIN. VGCC has the largest mean deployment gain (1.34%), but its allocation lower bound is 0.09% and its violation upper bound is 6.25%. A deployment-representative twenty-cluster H1 audit also returns NO-GO, whereas a learner-level synthetic control returns GO. The audit therefore tests whether observable signal justifies state-dependent adaptation rather than presuming that an adapter is valuable.",
+  "authors": [
+   "Zongtan Li"
+  ],
+  "published": "2026-07-23T23:47:03Z"
+ },
+ {
+  "arxiv_id": "2607.21873v1",
+  "title": "Multi-Agent System-driven Digital Twins for predictive maintenance: architectures, technologies and open research challenges",
+  "abstract": "Digital twins have emerged as a foundational technology within the context of Industry 4.0, offering a paradigm for the real-time virtual representation of physical systems. However, managing their growing complexity, particularly in distributed industrial environments, requires intelligent architectures capable of autonomous decision-making, dynamic adaptability, and inter-agent coordination. This systematic review explores the intersection between Multi-Agent Systems and Digital Twins, with a particular focus on predictive maintenance applications in resource-constrained contexts. Through a critical analysis of over 547 papers published in high-impact journals (IEEE Transactions, Nature, Elsevier, MDPI), we establish a taxonomy of existing hybrid architectures, identify persistent technological bottlenecks, and formulate three open research questions concerning: (i) the deployment of artificial intelligence on resource-constrained microcontrollers, (ii) distributed multi-node coordination via lightweight communication protocols, and (iii) the hierarchical orchestration of Digital Twins toward smart factory control integrating residual life estimation and explainable Artificial Intelligence. The results of this analysis reveal that, despite significant progress, no existing system offers an integrated embedded-distributed hierarchical solution that simultaneously meets the requirements of Industry 5.0.",
+  "authors": [
+   "Korota Ars\u00e8ne Coulibaly",
+   "Mohamed Hamlich"
+  ],
+  "published": "2026-07-24T00:09:53Z"
+ },
+ {
+  "arxiv_id": "2607.21876v1",
+  "title": "Variance-Reduced Q-Learning over Static and Time-Varying Networks",
+  "abstract": "We investigate a decentralized reinforcement learning problem involving multiple agents that interact with the same Markov Decision Process (MDP). The agents can exchange information over a network to collectively learn the optimal state-action value function. For this setting, we introduce a novel epoch-based distributed $Q$-learning algorithm called VRDQ, where within each epoch, agents locally estimate the Bellman optimality operator and diffuse information using a consensus-based protocol. For both static and time-varying networks, we establish high-probability finite-time convergence rates for VRDQ that enjoy linear speedups from collaboration. Crucially, we prove that such speedups in sample-complexity require only $\\tilde{O}(1)$ communication, substantially improving upon the communication costs in prior work.",
+  "authors": [
+   "Sreejeet Maity",
+   "Feng Zhu",
+   "Aritra Mitra",
+   "Robert W. Heath"
+  ],
+  "published": "2026-07-24T00:24:09Z"
+ },
+ {
+  "arxiv_id": "2607.21881v1",
+  "title": "Farmland Extent and Visible Boundary Mapping from 1 m NAIP Imagery Using Residual U-Net and Text-Prompted SAM 3 Refinement",
+  "abstract": "Agricultural field maps are often proprietary, incomplete, or outdated, yet they provide the spatial framework for crop monitoring, production accounting, and land-conversion analysis. This study presents a reproducible workflow for mapping farmland extent and visible boundaries from 1 m NAIP RGB imagery. Thirty-seven scenes spanning open cropland, peri-urban interfaces, semi-arid irrigation geometries, and fragmented mosaics were annotated in CVAT and converted to binary masks. Non-overlapping 256 x 256 patches yielded 5,698 samples, split by source scene into 3,850 training, 770 validation, and 1,078 test patches. A residual U-Net (ResUNet) trained with a Dice-dominant loss, L = 2.5(1 - Dice) + BCE, achieved test accuracy 0.8808, IoU 0.8605, Dice 0.9234, precision 0.8766, and recall 0.9794. A frozen SAM 3 branch prompted with \"agricultural farmland field\" was fused with ResUNet by logical OR. On selected difficult patches, Dice improved from 0.858 to 0.955 (orchard rows) and from 0.804 to 0.903 (fragmented parcels). Sliding-window stitching produced coherent regional masks (example tile Dice 0.898 and 0.919). The product is a semantic farmland-extent layer, not a cadastral parcel map, and supports agricultural monitoring where current field layers are unavailable.",
+  "authors": [
+   "Mohammadreza Narimani",
+   "Vikram Anand",
+   "Parastoo Farajpoor"
+  ],
+  "published": "2026-07-24T00:44:09Z"
+ },
+ {
+  "arxiv_id": "2607.21885v1",
+  "title": "Remedying Coarsening-Based GNN Training under Heterophily via Adaptive Complementary Enhancement",
+  "abstract": "Coarsening-based training for graph neural networks (GNNs), i.e.\\ training on coarsened graphs rather than the original large ones, has become a promising direction for scaling GNNs to massive graphs. However, prior work has been evaluated almost exclusively on \\textit{homophilic} graphs, leaving the more challenging \\textit{heterophilic} settings underexplored. We show, both empirically and theoretically, that existing coarsening-based training methods suffer significant performance degradation on heterophilic graphs due to inevitable loss of graph information during coarsening. To address this, we propose {\\bf A}daptive {\\bf C}omplementary {\\bf E}nhancement, a plug-and-play, model-agnostic strategy that reintegrates the information discarded in coarsening: ACE learns a projector for re-constructing original node features and applies \\textit{anisotropic structural regularization} to embed local heterophily. We further adopt \\textit{homoscedastic uncertainty weighting} to adaptively balance the combined training objective of primary coarsened-graph training loss and full-graph auxiliary loss with augmented node features re-constructed by the heterophily-aware projector. Extensive experiments show that ACE drives consistent gains on heterophilic benchmarks while preserving competitive results on homophilic graphs with minimal computational overhead. Code is available at the GitHub repository: https://github.com/vasile-paskardlgm/ACE.",
+  "authors": [
+   "Guoming Li",
+   "Jian Yang",
+   "Xukun Wang",
+   "Zixiao Wang",
+   "Shangsong Liang",
+   "Yifan Chen"
+  ],
+  "published": "2026-07-24T01:29:28Z"
+ },
+ {
+  "arxiv_id": "2607.21887v1",
+  "title": "Towards Reducing Foreign Language Anxiety Using Level-Appropriate Embodied Conversational Agents",
+  "abstract": "Foreign language anxiety (FLA) can be a major barrier to second language acquisition (SLA), especially in conversational contexts. With the proliferation of large language models (LLMs) throughout all areas of life, recent work suggests that interacting with LLM agents can be instrumental within the field of SLA and foreign language education, especially for reducing FLA. Related work also suggests that linguistic demands and task complexity can be predictors of FLA, implying that the use of demanding, complex language could lead to learners experiencing higher FLA. In this paper, we propose a novel multi-agent embodied conversational system that generates level-appropriate dialogue for English language learners. These levels are based on those defined by the Common European Framework of Reference for Languages (CEFR) to describe non-native listener and speaker proficiency. Using a \"generate-evaluate-regenerate\" loop with multiple LLM agents and a level classifier, it achieves a desired simplicity that is adaptive to the user's proficiency level. We also share the results of a preliminary small-sample pilot study that tested this system with Japanese university students, to see whether it would yield lower FLA levels than an unsimplified embodied conversational agent. Analysis of conversational output showed that 87.4% of dialogue sentences generated by the proposed multi-agent system fell within one predicted CEFR level of the learner's self-assessed proficiency, compared to 54.1% for the unsimplified agent. This suggests that the novel system is better able to produce output at an appropriate level for the learner. Though this study did not yield statistically significant evidence that the system reduces FLA levels in Japanese learners of English, likely due to a small sample size, it provides usability findings and culturally-informed design insights that will inform future study.",
+  "authors": [
+   "Krishan Rajaratnam",
+   "Wenbin Gan",
+   "Yuan Sun"
+  ],
+  "published": "2026-07-24T01:31:13Z"
+ },
+ {
+  "arxiv_id": "2607.21897v1",
+  "title": "ISPCloak: Weaponizing ISP for Optimization-Free Physical Camouflage against Deepfake Detectors",
+  "abstract": "The rapid advancement of generative models has spurred the critical need to evaluate the worst-case robustness of deepfake detectors. In this paper, we reveal a fundamental blind spot in current forensic paradigms: while existing detectors excel at capturing digital synthesis artifacts, their effectiveness drops drastically when AI-generated content is cloaked in authentic physical imaging characteristics. We posit that genuine photographs inherently possess hardware-intrinsic statistical signatures, which are imperceptible footprints imprinted by optical sensors and Image Signal Processing (ISP) pipelines, and are fundamentally absent in purely data-driven generative models. Driven by this insight, we propose ISPCloak, a novel optimization-free adversarial attack framework that explicitly weaponizes the ISP pipeline to mislead the judgment of deepfake detectors. Rather than relying on computationally expensive gradient perturbations, our method first employs an Invertible ISP network to project images into the RAW domain. Then, we seamlessly imprint the complex statistical priors of real cameras onto AI-generated images by injecting realistic Poisson-Gaussian sensor noise and conducting forward ISP reconstruction. Synergized with generative artifact suppression and adaptive masking, this streamlined physical simulation enables ultra-fast generation of adversarial examples. Extensive experiments show that embedding authentic physical perturbations fundamentally disrupts a broad range of current detection mechanisms, yielding universally evasive adversarial examples with imperceptible visual alterations.",
+  "authors": [
+   "Jiale Zhao",
+   "Jiajun Wan",
+   "Lei Tang",
+   "Ye Qin",
+   "Kebing Jin",
+   "Jinghui Qin"
+  ],
+  "published": "2026-07-24T01:59:53Z"
+ },
+ {
+  "arxiv_id": "2607.21904v1",
+  "title": "Diffusion Models in Medical Image Inpainting: Challenges, Solution Taxonomy, and Future Directions",
+  "abstract": "Image inpainting aims to reconstruct missing or corrupted regions of an image while preserving as much as possible, visual and semantic consistency. In medical imaging, this task is particularly important because artifacts, missing information, and pathological alterations can compromise diagnostic reliability and downstream clinical applications. Recently, diffusion models have emerged as state-of-the-art generative approaches for medical image inpainting due to their ability to generate anatomically consistent reconstructions. This survey presents a systematic review of diffusion-based methods for medical image inpainting, covering the main architectures, applications, datasets, and evaluation strategies reported across 60 studies. In addition, we propose a taxonomy for diffusion-based approaches. The analysis reveals a rapid growth of research interest in diffusion-based medical image inpainting, with denoising diffusion probabilistic models and latent diffusion models emerging as the dominant architectures. The reviewed studies mainly focus on artifact removal, data augmentation, pseudo-healthy tissue reconstruction, and anomaly detection, particularly in magnetic resonance imaging and computed tomography imaging. Overall, diffusion models demonstrate strong performance in producing anatomically plausible reconstructions and aiding downstream clinical tasks. However, the review also highlights important challenges, including the lack of standardized benchmarks, limited dataset diversity, and restricted validation procedures across diverse clinical applications and imaging scenarios.",
+  "authors": [
+   "Arthur Dantas Mangussi",
+   "Joana Cristo Santos",
+   "Ricardo Cardoso Pereira",
+   "Ana Carolina Lorena",
+   "M\u00e1rio A. T. Figueiredo",
+   "Pedro Henriques Abreu"
+  ],
+  "published": "2026-07-24T02:19:52Z"
+ },
+ {
+  "arxiv_id": "2607.21910v1",
+  "title": "TRW: TRACE-RealWorld---An Auditable Consistency Contract for World Models as Materialized Views",
+  "abstract": "TRACE-RealWorld addresses a core data-management problem: maintaining an actionable materialized view over a continuously changing physical world when reads of the base state are priced, delayed, heterogeneous, and fallible. Its data-management contributions are a commitment-level validity abstraction for materialized predictions; consequence-conditioned adaptive view maintenance; transaction-style, dependency-scoped compensation for commitments invalidated after authorization; and append-only provenance supporting exact replay. The work builds directly on materialized-view maintenance, adaptive stream synchronization, transaction recovery, sagas, data freshness, and provenance. The end-to-end Flood-SAR evaluation treats sensing as physical data acquisition and measures freshness, verification cost, stale reads, recovery scope, restoration failure, and replayability through six pre-registered questions with held-out seeds. The contribution is therefore not a new predictive model, but a consistency, recovery, and accountability contract for deploying learned world representations as operational data systems.",
+  "authors": [
+   "Edward Y. Chang"
+  ],
+  "published": "2026-07-24T02:31:10Z"
+ },
+ {
+  "arxiv_id": "2607.21914v1",
+  "title": "Interventional Score Geometry for Causal Inference",
+  "abstract": "Let $p(x)$ be the joint density of variables $X$, and let $\u03c8(x)=\\nabla_x\\log p(x)$ be its score field. Geometry constructed from $p$ and $\u03c8$ alone cannot identify causal direction: structural models with the same observational distribution have the same score geometry. I develop an interventional analogue. A hard intervention $\\operatorname{do}(X_k=\u03be)$ does not merely reweight the joint law; it restricts the distribution to the submanifold ${x_k=\u03be}$. Its score should therefore be defined on the remaining $d-1$ free coordinates. I define causal influence $X_k\\rightsquigarrow X_j$ as variation of the interventional marginal distribution of $X_j$ with $\u03be$, and show that the corresponding derivative of the marginal interventional score gives a local sufficient condition for influence. Projecting the observational score onto admissible intervention directions does not generally recover causal response: two models may share the same observational score and admissible set yet respond differently. I therefore introduce an interventional response field supplied by structural information. A causal metric is defined as the Fisher information metric on a family of interventions with a common target, avoiding ill-posed comparisons across targets. The framework yields a geometric dictionary for randomized trials, instrumental variables, and conditional-independence designs, clarifying what each does and does not identify. A bivariate Gaussian example gives two models with the same observational score but different interventional score derivatives. The framework organizes relations among designs, interventions, and score fields, but adds no identification beyond the underlying assumptions. In Pearl's Ladder of Causation, observational score geometry belongs to association, intervention-indexed score fields to intervention, and unit-level counterfactual geometry is left for future work.",
+  "authors": [
+   "Mojtaba Eslami"
+  ],
+  "published": "2026-07-24T02:42:05Z"
+ },
+ {
+  "arxiv_id": "2607.21922v1",
+  "title": "MissHyper: Restoring Clinical Synchronicity in Missingness-Guided Hypergraph Forecasting",
+  "abstract": "Clinical irregular multivariate time series are shaped not only by physiological dynamics but also by the measurement process that determines when and what to observe. In event-centric models, however, co-timestamp structure can be flattened too early: measurements acquired at the same timestamp are embedded as isolated nodes, leaving local patient-state context unavailable until later message-passing layers. We study this pre-propagation representation bottleneck and address it by restoring co-timestamp context before message passing begins. We propose MissHyper, a missingness-guided hypergraph forecasting model with pre-propagation synchronicity restoration. MissHyper augments each event with a local support-density cue, aggregates co-timestamp records to recover patient-state context, and uses a missingness-guided gate to adaptively fuse node-specific evidence with the recovered context. Across PhysioNet 2012, MIMIC-III, and MIMIC-IV, MissHyper achieves consistent gains in multi-step forecasting and outperforms a strong hypergraph baseline. These results suggest that improving event initialization can benefit sparse clinical forecasting without requiring a redesigned downstream propagation architecture. Ablations indicate that snapshot restoration, adaptive fusion, and support-density encoding all contribute, pointing to event initialization as a critical design axis for sparse clinical forecasting.",
+  "authors": [
+   "Mingyi Ma",
+   "Qingxiong Tan"
+  ],
+  "published": "2026-07-24T02:55:31Z"
+ },
+ {
+  "arxiv_id": "2607.21927v1",
+  "title": "RIS-Kernel: A Model-Agnostic Architecture for Long-Context LLM Inference via Sparse Attention",
+  "abstract": "Full self-attention in large language models scales as O(N^2), which limits long-context document analysis to 65,536 tokens and requires costly GPU clusters. The Reduced Interaction Sampling (RIS) inference engine addresses this constraint as a model-agnostic architecture. Without modifying weights, RIS reduces self-attention complexity to O(N log N) using sparse stochastic geometry that fits within commodity memory limits. We validate RIS on Qwen2-1.5B-Instruct across two regimes. In controlled evaluations at 32,768 tokens (where native dense attention serves as the upper bound), RIS-Stochastic at 1% density and 70 ensemble seeds achieves 75.00% accuracy, outperforming the native dense baseline (71.88%), while RIS-Stochastic at 5% density and 10 seeds matches it (71.88%). This demonstrates that sparse attention acts as a regularizer: low density (1%) over multiple seeds filters out sequence-level noise, whereas higher density (5%) reintroduces distractor noise. Under the tightest budget, RIS-Structural reaches 68.75% accuracy at 1% density with just 10 seeds, recovering 75% of the contextual gap relative to the zero-context floor (59.38%). At 65,536 tokens, where dense attention triggers out-of-memory faults, RIS yields retrieval gains of up to 14.06 percentage points over the zero-context floor (51.56%), which is confirmed as marginally significant under McNemar's paired test (p = 0.078 &lt; 0.10). All evaluations run on commodity, unaccelerated CPU servers (16-128 GB of RAM), demonstrating that long-context LLM inference is feasible on standard academic hardware without GPU acceleration.",
+  "authors": [
+   "Anderson R. Santos"
+  ],
+  "published": "2026-07-24T03:00:02Z"
+ },
+ {
+  "arxiv_id": "2607.21932v1",
+  "title": "Generalized Neural Operator for Parametric and Boundary-Value Problems",
+  "abstract": "Developing foundational neural simulators for Partial Differential Equations (PDEs) requires robust generalization across diverse physical parameters and boundary conditions. However, current deep learning approaches largely face a structural trade-off between condition-agnostic deployment and physical fidelity. Purely data-driven operators infer the underlying physics implicitly and thus lack the explicit constraints needed to ensure physically valid solutions across varying domains, rendering the learning problem ill-posed. On the other hand, Physics-Informed Neural Networks (PINNs) enforce rigorous physical constraints but necessitate costly, instance-specific optimization. Furthermore, the massive scale of emerging foundational operators has severely degraded their inference speeds, making them computationally uncompetitive with traditional numerical solvers. To address this bottleneck between condition-agnostic deployment, physical rigor, and inference efficiency, we propose a \\textit{Generalized Neural Operator}. By formalizing the classical conditions for well-posedness within neural operators, our framework demonstrates the theoretical benefits of explicitly conditioning on PDE parameters and boundary conditions. To implement this synthesis without compromising computational speed, we introduce three novel architectural components: a parameter-gated mixture of kernels for efficient parameter generalization, a generalized boundary transfer operator that projects arbitrary boundary constraints into a unified latent Dirichlet representation, and a specialized training objective to ensure stability. Extensive experiments demonstrate that our theoretically grounded approach achieves superior generalization across heterogeneous physical regimes while maintaining strict inference efficiency comparable to conventional numerical baselines.",
+  "authors": [
+   "Ruoyan Li",
+   "Yizhou Sun",
+   "Wei Wang"
+  ],
+  "published": "2026-07-24T03:10:32Z"
+ }
+]

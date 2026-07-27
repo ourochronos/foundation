@@ -1,0 +1,238 @@
+[
+ {
+  "arxiv_id": "2607.21274v1",
+  "title": "A Comparative Evaluation of Embeddings and LLMs in a Greek Book Publisher Setting - The CUP Dataset",
+  "abstract": "We present CUP, a Greek book retrieval benchmark consisting of 868 catalog records and 104 expert-annotated queries with graded relevance judgments. We evaluate sparse (BM25), dense (sentence-transformers), hybrid, and LLM-assisted retrieval methods in this book-search setting. Multilingual embeddings outperform Greek-specific models, while hybrid retrieval performs best overall. A query-level analysis shows that BM25 excels at named-entity queries, while dense and hybrid methods improve natural-language, noisy, cross-lingual, and concept queries. Field-aware prompting has model-specific effects, while LLM TOC summarization improves TOC-only retrieval and LLM post-filtering improves early-stage retrieval at a high cost. Overall, CUP enables real-world evaluation of Greek retrieval across lexical, semantic, noisy, and cross-lingual queries.",
+  "authors": [
+   "Katerina Papantoniou",
+   "Panagiotis Papadakos",
+   "Theodore Patkos",
+   "Dimitris Garefalakis",
+   "Nikos Vardakis",
+   "Dimitris Plexousakis"
+  ],
+  "published": "2026-07-23T12:51:55Z"
+ },
+ {
+  "arxiv_id": "2607.21279v1",
+  "title": "A Unified Moral-Value Dataset for Instruction Tuning",
+  "abstract": "Large language models (LLMs) have developed rapidly and become valuable tools in everyday life. However, how to align LLMs to a particular set of human values is still an open problem. Recent studies show that instruction tuning has strong potential for zero-shot tasks and may serve as an effective approach to addressing value alignment. Nevertheless, although many datasets for instruction tuning already exist, they are not specifically designed around moral scenarios and behaviors. We construct a unified moral-value dataset that can be directly used for instruction tuning. This dataset is built upon existing moral-value datasets by merging them into a unified corpus and converting them into an instruction-response format. We show that training on a mixed dataset combining general task datasets with our dataset preserves general-task performance, and we report preliminary observations on how the mixing ratio affects value-oriented task performance. Our work provides a moral-value dataset for instruction tuning and offers a useful resource for further alignment research. The dataset is available at https://huggingface.co/datasets/teohzzh/value-for-instruction-tuning.",
+  "authors": [
+   "Zhaohui Zeng",
+   "Florian Mai"
+  ],
+  "published": "2026-07-23T12:57:03Z"
+ },
+ {
+  "arxiv_id": "2607.21284v1",
+  "title": "news-crawler-LM: A Small Long-Context Model For High-Quality News Crawling",
+  "abstract": "Extracting structured content from news pages remains challenging due to heterogeneous HTML layouts, inconsistent markup, and substantial boilerplate such as navigation elements and advertisements. Rule-based news crawlers can achieve high extraction accuracy by encoding site-specific structure, but require manual configuration in order to generalize to new publishers. Large language models provide a more flexible alternative by reducing the need for handcrafted rules, but their high computational cost limits practical deployment. In this paper, we introduce news-crawler-LM, a small long-context language model fine-tuned on high-quality, human-validated extractions from the Fundus news-crawling library. Our model converts raw HTML into plaintext and structured JSON, including fields such as headline, author, publication date, and article body. In our experiments, news-crawler-LM outperforms strong baselines in HTML-to-Markdown and HTML-to-JSON extraction, improving performance by +4.8 BLEU and +6.1 METEOR in the HTML-to-Markdown task, and by +2.2 BLEU and +4.1 METEOR in the HTML-to-JSON task. However, we also observe that our model only slightly better compared to other rule-based parsing libraries on the HTML-to-plaintext task in evaluations on previously unseen publishers. We release all models and artifacts to the research community.",
+  "authors": [
+   "Pascal Stolzenburg",
+   "Jonas Golde",
+   "Max Dallabetta",
+   "Alan Akbik"
+  ],
+  "published": "2026-07-23T13:05:46Z"
+ },
+ {
+  "arxiv_id": "2607.21290v1",
+  "title": "Multi-Task Learning for Heterogeneous Prediction from Video Game State with Transfer Learning",
+  "abstract": "Multi-task learning (MTL) is a promising approach for prediction tasks derived from video game state data, as modern game telemetry provides multiple related supervision signals from the same structured observations. We study whether a shared model trained jointly across tasks in team-based multiplayer games can improve generalization while reducing training and inference cost compared to specialized single-task models. We adapt a multimodal architecture for endpoint prediction to a general multi-task setting that combines rasterized vision inputs, global match context, and per-unit state information through an image encoder and attention-based interaction modeling. Experiments on a large proprietary World of Tanks dataset compare single-task and multi-task training, evaluate weighting strategies for mixed losses and conflicting gradients, and test pre-training/fine-tuning under limited target-data regimes. We also examine within-game transfer across game maps under structured environment shift.",
+  "authors": [
+   "Jonas Pech\u00e9",
+   "Aliaksei Tsishurou",
+   "Alexander Zap",
+   "G\u00fcnter Wallner"
+  ],
+  "published": "2026-07-23T13:12:51Z"
+ },
+ {
+  "arxiv_id": "2607.21291v1",
+  "title": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+  "abstract": "Large language models (LLMs) achieve strong generation and reasoning performance, but the Transformer architecture incurs high inference cost. Existing acceleration methods often rely on task-specific fine-tuning or training from scratch, increasing adaptation cost and limiting cross-task usability. We present an Adaptive Depth Sparse Framework (AdaDSF) that converts off-the-shelf pre-trained LLMs into depth-sparse models without full retraining. Our key insight is that layers contribute unequally to representation transformation, characterized by the cosine similarity between layer input and output hidden states. Based on this, AdaDSF assigns layer-wise token retention ratios from similarity statistics, uses a lightweight router to select informative tokens at each layer, and introduces a feature-preserving alignment objective to match intermediate and final representations between sparse and dense models. On GPT-NeoX and Qwen2.5 over language modeling and commonsense reasoning, AdaDSF substantially reduces inference FLOPs while preserving performance close to dense counterparts. Under comparable sparsity, AdaDSF consistently yields smaller accuracy degradation than strong baselines including MoD, D-LLM, and DLO.",
+  "authors": [
+   "Yidu Wu",
+   "Xiang Wang",
+   "Kejie Zhao",
+   "Zhangchi Wang",
+   "Qinghai Guo",
+   "Xiaoying Tang"
+  ],
+  "published": "2026-07-23T13:13:04Z"
+ },
+ {
+  "arxiv_id": "2607.21292v1",
+  "title": "An LLM-Driven Workflow for Automated Process Control Strategy Generation and Tuning from Dynamic Process Models",
+  "abstract": "We present a structured large-language-model-driven workflow for automated multi-variable control design from dynamic process models. The workflow decomposes the design task into constrained code-generation steps: plant-interface construction, normalization, manipulated-variable controlled-variable (MV-CV) pairing, controller specification, closed loop simulation, scenario generation, performance evaluation and Bayesian-optimization (BO) based tuning. Generated artifacts are executed and validated before downstream tasks proceed, and failed artifacts are repaired using validation feedback. The proposed approach is demonstrated on a nonlinear gas-preheater benchmark with coupled pressure and temperature dynamics. The generated workflow produces a physically consistent decentralized PI (proportional-integral) feedback-feedforward control structure and an executable tuning environment. Bayesian optimization reduces the closed loop performance objective, which aggregates set-point tracking and disturbance-rejection errors for the controlled variables, by approximately 26.5% relative to the initial controller generated by the workflow, mainly through improved pressure-loop transient performance. This figure quantifies the automated tuning stage rather than a comparison against a manually designed controller. The results demonstrate the feasibility of using structured large-language-model-based code generation to construct executable control-design workflows, while also highlighting the need for broader validation on larger plantwide-control benchmarks.",
+  "authors": [
+   "Ari Luna Rueda",
+   "Eike Cramer",
+   "Klaus Hellgardt",
+   "Mehmet Mercang\u00f6z"
+  ],
+  "published": "2026-07-23T13:13:29Z"
+ },
+ {
+  "arxiv_id": "2607.21300v1",
+  "title": "Unlearning Under Imbalance: Benchmarking Fairness in Multimodal LLM Unlearning",
+  "abstract": "Machine unlearning has emerged as a tool for removing personal data from trained models to comply with recent AI regulations. To evaluate unlearning effectiveness in multimodal large language models (MLLMs), prior works fine-tune models on fictitious identities, simulating unlearning requests on subsets of these IDs, which are typically uniformly distributed. However, in realistic scenarios, people from different demographic groups may request to be unlearned at different frequencies, potentially altering the model's internal beliefs for these groups and leading to biased behaviors. To fill this gap, we propose FAIRGET, the first Visual Question Answering benchmark that evaluates unlearning under unbalanced, realistic, forget requests. These requests are designed to simulate multiple realistic scenarios, ranging from simple to challenging settings, that lead to biased unlearned models if fairness is not accounted for. Additionally, we propose FAUN, the first unlearning algorithm for MLLMs that forgets unlearning data while preserving model fairness. FAUN exploits a bias-aware activation steering mechanism to unlearn identities while accounting for the unbalanced nature of the forget data. Experiments on FAIRGET and the established FIUBench demonstrate our method's superiority both in unlearning quality and fairness.",
+  "authors": [
+   "Lorenzo Orsingher",
+   "Thomas De Min",
+   "Massimiliano Mancini",
+   "Davide Talon",
+   "Elisa Ricci"
+  ],
+  "published": "2026-07-23T13:24:34Z"
+ },
+ {
+  "arxiv_id": "2607.21302v1",
+  "title": "Expert Behavior Prior Reinforcement Learning",
+  "abstract": "Behavior prior reinforcement learning (BPRL) has emerged as a promising paradigm to improve sample efficiency in online reinforcement learning (RL) by leveraging policy priors derived from offline demonstrations. However, most existing BPRL methods rely on static offline datasets, which often suffer from low data diversity and suboptimal trajectory quality. This reliance restricts the effectiveness of policy priors, hindering both policy exploitation and stability during online training. Consequently, agents are prone to inefficient exploration and unstable learning dynamics. To address these limitations, we deviate from existing offline pre-training methods and propose an Expert Behavior Prior (EBP) algorithm. Specifically, we introduce a Q-guided conditional variational autoencoder (Q-CVAE) that learns to generate expert policy priors directly from the online replay buffer. This enables the generation of high-value actions for guiding policy updates without relying on pre-collected expert trajectories. To further enhance policy exploitation, we propose an expert policy guidance (EPG) mechanism that selects expert actions from a generative support set, and we integrate a policy gradient correction (PGC) module to harmonize Q-guidance with expert supervision, promoting stable and consistent policy improvement. Extensive experiments conducted on robotic control (Gym, PyBullet) and industrial control (DMControl) benchmarks demonstrate that EBP significantly outperforms state-of-the-art online RL algorithms, achieving higher sample efficiency and more stable convergence.",
+  "authors": [
+   "Gong Gao",
+   "Weidong Zhao",
+   "Xianhui Liu",
+   "Ning Jia"
+  ],
+  "published": "2026-07-23T13:26:57Z"
+ },
+ {
+  "arxiv_id": "2607.21306v1",
+  "title": "AI Assistants Overassist",
+  "abstract": "Large language models (LLMs) are increasingly used as tutors and thought partners, helping users reason through problems. While guidance from AI assistants can scaffold thinking and foster learning, such benefits depend on how they help--for instance, intervening too early or too frequently may hinder true learning and cognitive engagement. Yet how AI systems navigate intervention decisions during problem-solving remains poorly understood. Here, we introduce Int-Bench, a simulation-based benchmark for evaluating LLM interventions during learning. Int-Bench simulates a \"student\" solving a problem while a \"teacher\" monitors the student's reasoning and decides whether, when, and how to intervene. Across three domains--code debugging, mathematics, and brain teasers--we evaluate LLM teachers on the frequency and timing of interventions, as well as their impact on both immediate task success and generalization to new problems. We also compare LLMs to humans, finding that LLMs intervene more frequently and earlier than humans. Moreover, in contrast to humans, they tend to provide complete solutions rather than targeted hints. These findings suggest that current LLM assistants often optimize for short-term success rather than supporting the reasoning processes needed for deeper learning and long-term success.",
+  "authors": [
+   "Verona Teo",
+   "Raghav Jain",
+   "Tobias Gerstenberg",
+   "Max Kleiman-Weiner"
+  ],
+  "published": "2026-07-23T13:30:01Z"
+ },
+ {
+  "arxiv_id": "2607.21307v1",
+  "title": "Scaling Up Formal Representation of Clinical Trial Protocols in Ensemble Logic Using LLMs: A Preliminary Study",
+  "abstract": "The reliance on unstructured free text for documenting clinical trial protocols creates a significant barrier to automated reasoning, cohort discovery, and trial simulation. The lack of formal structure obscures critical temporal phenotypes, such as dynamic eligibility criteria and event timing constraints. Although Temporal Ensemble Logic (TEL) offers an expressive framework for modeling these elements, manual encoding remains a prohibitive bottleneck. We introduce the CT-TEL workflow: a scalable pipeline leveraging Large Language Models (LLMs) to translate narrative clinical protocols into TEL formulas. We applied CT-TEL to generate logical models for 23 real-world trials from ClinicalTrials.gov. We evaluated translation fidelity via a back-translation approach, using LLMs to convert TEL formulas back into natural language and measuring semantic similarity against source texts. The resulting semantic retention suggests that LLMs may offer a pathway for mapping informal protocols to computable logic, providing preliminary evidence toward scalable clinical trial emulation within the emerging \"Symbolic Biomedicine\" paradigm championed by the corresponding author.",
+  "authors": [
+   "Yan Huang",
+   "Xubing Hao",
+   "Xiaojin Li",
+   "Rashmie Abeysinghe",
+   "Xiaoqian Jiang",
+   "Licong Cui",
+   "Guo-Qiang Zhang"
+  ],
+  "published": "2026-07-23T13:31:05Z"
+ },
+ {
+  "arxiv_id": "2607.21318v1",
+  "title": "PC-Edit: Prompt-Contrastive Region Discovery and Region-Guided Editing",
+  "abstract": "Replacing an object with one that differs in category or shape requires complete source removal, natural target formation unconstrained by the source silhouette, and preservation of unrelated content. Existing training-free editors either localize edits from terminal predictions under source and target prompts or preserve unrelated content through spatially unselective source-feature reuse without explicit region discovery. Before reaching the terminal predictions, prompt-induced semantic differences undergo additional network transformations that may obscure their spatial localization, reducing localization precision. Spatially unselective feature reuse forces a trade-off between edit completeness and background preservation. Therefore, we propose PC-Edit, a prompt-contrastive framework for training-free MM-DiT editing. PC-Edit contrasts the image-token attention outputs under the source and target prompts, capturing prompt-induced semantic differences directly where text-conditioned information is delivered to image tokens. The same contrast identifies a source-erasure region during inversion and a target-emergence region during denoising. Their union suppresses source remnants while allowing the target object to form naturally. PC-Edit further couples region discovery and background preservation within each sampling step by estimating the current edit region from preceding attention blocks and immediately injecting cached source K/V features outside it in subsequent blocks, thereby protecting unrelated content before the latent update. Experiments on PIE-Bench and our EditRegion-Bench, with human-verified edit-region annotations for single- and multi-object addition and replacement, show that PC-Edit achieves the best editing quality and background preservation among methods without user-specified edit regions.",
+  "authors": [
+   "Jian Zhang",
+   "Zhijun Zhang"
+  ],
+  "published": "2026-07-23T13:42:03Z"
+ },
+ {
+  "arxiv_id": "2607.21324v1",
+  "title": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
+  "abstract": "Retrieval-Augmented Generation (RAG) systems increasingly employ multiple LLM agents. Yet, most prior work optimizes components in isolation rather than coordinating improvements across the pipeline. We introduce GRADRAG, a framework for cross-component prompt adaptation that models the RAG pipeline as a computational graph and propagates structured evaluation feedback to update upstream agents. An Evaluator critiques downstream answers and supporting evidence, producing actionable feedback that a Prompt Optimizer uses to iteratively update adaptive agents, such as retrievers, graph constructors, and answerers. The Evaluator also triggers early stopping when the output is deemed satisfactory. We evaluate GRADRAG on the SQUALITY and QMSUM benchmarks under two retrieval paradigms: flat chunk-based retrieval using IRCoT-style query refinement (Trivedi et al., 2023), and graph-based retrieval that constructs and iteratively enriches an entity-relation graph from the document. Across both settings, GRADRAG consistently outperforms one-step refinement baselines that update only the final generator, achieving a 12-15 percentage point net preference margin in LLM-judged pairwise comparisons, with most gains realized within two refinement iterations.",
+  "authors": [
+   "Paolo Pedinotti",
+   "Enrico Santus"
+  ],
+  "published": "2026-07-23T13:54:38Z"
+ },
+ {
+  "arxiv_id": "2607.21325v1",
+  "title": "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation",
+  "abstract": "Autonomous AI agents increasingly execute actions, invoke tools, and operate on protected resources with limited human oversight. Existing authentication and authorization mechanisms establish identity and delegate authority, but do not inherently provide cryptographic evidence that a concrete request issued by a specific agent satisfies the applicable policy in a specific execution context. This paper hypothesizes that agent authorization can be formalized as a cryptographically verifiable relation, denoted $R_{CVA}$, that jointly binds an agent principal, a concrete authorization request, an execution context, and the satisfaction of an applicable policy, while selectively preserving the confidentiality of private authorization attributes. We introduce a preliminary formal abstraction for Cryptographically Verifiable Agent Authorization (CVA), define a compact set of candidate security properties including authorization soundness, principal binding, request binding, policy binding, and replay resistance, and provide an executable zero-knowledge proof of concept that instantiates selected elements of the model over a Groth16 zk-SNARK construction. We further identify and formalize the structural separation among identity binding, authorization-request binding, and runtime execution binding as a central open problem in the design of secure agentic systems (a distinction {not explicitly addressed by} current agentic security frameworks) and present a falsifiable research agenda for its resolution.",
+  "authors": [
+   "M. Llamb\u00ed-Morillas",
+   "D. Fern\u00e1ndez-Fern\u00e1ndez"
+  ],
+  "published": "2026-07-23T13:55:02Z"
+ },
+ {
+  "arxiv_id": "2607.21327v1",
+  "title": "From Static Bibliometrics to Dynamic Knowledge Graphs: An LLM-Powered Framework for Modernizing Science, Technology, and Innovation (STI) Analytics",
+  "abstract": "Bibliometric indicators - citation counts, h-indexes, co-authorship networks - have long anchored science, technology, and innovation (STI) analytics, yet suffer from temporal lag, semantic shallowness, and an inability to capture the non-linear dynamics of contemporary knowledge ecosystems. Dynamic knowledge graphs and large language models (LLMs) have each been proposed as remedies, but neither is sufficient alone: existing scholarly knowledge graphs remain largely static, while LLM-driven pipelines are prone to hallucination, opacity, and corpus bias without structured grounding. This paper proposes a hybrid, symbolic-first framework integrating all three traditions under explicit methodological constraint. Organized across five layers - an open scholarly data backbone, a dynamic versioned knowledge graph, a constrained LLM-assisted semantic augmentation layer, a multi-layer validation pipeline, and an analytics layer - the framework positions LLMs strictly as generators of provisional candidate enrichments. Candidates become analytically admissible only after passing structural, evidentiary, comparative, and selective expert validation, with full provenance recorded at every stage. The analytics layer supports both established bibliometric indicators and extended graph-based analyses, including trend emergence detection, science-to-technology pathway mapping, and policy-oriented gap analysis. The framework's central theoretical contribution is treating validation as the mediating principle between semantic flexibility and epistemic discipline, enabling STI analytics that is semantically richer and temporally more responsive than static bibliometrics while remaining aligned with the evidentiary standards of science-of-science research. Governance considerations addressing reproducibility, bias, and auditability are also discussed.",
+  "authors": [
+   "Muhsen Hammoud"
+  ],
+  "published": "2026-07-23T13:56:53Z"
+ },
+ {
+  "arxiv_id": "2607.21332v1",
+  "title": "Phonetic forced alignment for low-resource language varieties: Model training and evaluation on Chengdu Mandarin",
+  "abstract": "Phonetic forced alignment is a key technique in phonetic research, yet existing alignment systems lack specialized models for low-resource language varieties. We address this by training text-dependent and text-independent aligners for Chengdu Mandarin using a 17-hour corpus and a custom G2P dictionary. We trained a text-dependent GMM-HMM model (Chengdu-MFA) and fine-tuned a pretrained audio encoder on frame classification with Chengdu-MFA's pseudo label for text-independent alignment (Chengdu-FC). Evaluation on an expert-annotated test set show that both methods significantly outperform Standard Mandarin baselines. Chengdu-MFA reduced average phone boundary differences by 31.8%, while Chengdu-FC achieved a 61.2% reduction. This work establishes a practical bootstrapping pipeline for developing accurate aligners for under-resourced varieties without labor- and time-intensive manual annotation.",
+  "authors": [
+   "Zhiheng Qian",
+   "Aini Li",
+   "Hai Hu",
+   "Liang Zhao"
+  ],
+  "published": "2026-07-23T14:00:09Z"
+ },
+ {
+  "arxiv_id": "2607.21333v1",
+  "title": "SHIFT: Self-reconstruction Harnesses Implicit Fine-grained Thinking for Retrieval",
+  "abstract": "LLM-based retrievers have become a fundamental component of modern information retrieval systems. The paradigm of \"rewrite-then-retriev\" introduces explicit reasoning before retrieval. In addition, implicit-reasoning retrievers such as GIRCSE and LaSER improve efficiency by replacing explicit reasoning with soft tokens. Although these methods demonstrated competitive performance on reasoning-intensive retrieval benchmarks, they struggle to address the mismatch between the objectives of retrieval and generation. In this work, we propose SHIFT ($\\textbf{S}$elf-reconstruction $\\textbf{H}$arnesses $\\textbf{I}$mplicit $\\textbf{F}$ine-grained $\\textbf{T}$hinking for Retrieval), a retrieval training framework based on LLMs. Firstly, we transfer LLMs into reasoning-efficient retrievers with residual projection and task-oriented bidirectional attention aggregation in the latent space. Secondly, we alleviate the mismatch between contrastive learning and implicit reasoning using fine-grained next-token-prediction-based reconstruction. Extensive experiments on reasoning-intensive retrieval benchmarks show that SHIFT consistently outperforms other widely used retrievers. We also carried out a detailed analysis to illustrate how our method works.",
+  "authors": [
+   "Yuxiao Luo",
+   "Da Li",
+   "Mingjie Zhang",
+   "Zhentao He",
+   "Shikun Zhang",
+   "Wei Ye"
+  ],
+  "published": "2026-07-23T14:00:09Z"
+ },
+ {
+  "arxiv_id": "2607.21340v1",
+  "title": "Capital Markets LLM Reliability Score (CM-LRS): From Plausible to Bankable",
+  "abstract": "In capital-markets workflows the question is rarely whether a large language model can produce a fluent draft, but whether the draft is bankable: defensible in front of a counter-party or a regulator, with the documents in hand. Existing methods address parts of that gap: open-domain QA benchmarks reward surface accuracy, and finance benchmarks (FinanceBench, FinQA, ConvFinQA) advance document-grounded and numerical QA but evaluate at the question-answer layer rather than the workflow outputs practitioners defend. We introduce CM-LRS, a Capital Markets LLM Reliability Score, evaluating outputs at the workflow-output layer across seven dimensions: factual accuracy, evidence traceability, numerical consistency, workflow completeness, source discipline, decision usefulness, and reviewability/auditability. Each is scored 0-5 against a rubric anchored on signals reviewers in regulated settings use; the aggregate is tunable to the workflow. We demonstrate CM-LRS on five workflows (DCM transaction-terms extraction, precedent retrieval, issuer profile synthesis, M&amp;A transaction-comparable reasoning, ECM transaction-terms extraction) over public SEC EDGAR filings, a public UK takeover release, and fictional synthetic supplements, scoring four models against four independent LLM judges spanning three model families. Three findings. First, the frontier closed-source models cluster within 0.22 points on four-judge averaged CM-LRS (Sonnet 4.6 = 4.31, Opus 4.7 = 4.30, GPT-5.5 = 4.09); all four judges place the open-weights baseline (Llama 3.3 70B = 3.15) last. Second, that gap concentrates on retrieval (2.23) and synthesis (2.15), not extraction (0.84). Third, Decision Usefulness shows the widest cross-model dispersion of any dimension (4.0 points on issuer profiling) and top-tier inter-judge agreement (mean r = 0.52). Plausibility is cheap. Bankability is the bar.",
+  "authors": [
+   "Prerit Ahuja"
+  ],
+  "published": "2026-07-23T14:10:58Z"
+ },
+ {
+  "arxiv_id": "2607.21343v1",
+  "title": "M$^3$-Gen: Interpretable Multimodal Generation of Gene Expression Profiles Using Clinical and Imaging Data",
+  "abstract": "Integrating heterogeneous biomedical data, including clinical metadata, histopathology images, and molecular profiles, is crucial for comprehensive disease understanding. However, gene expression data acquisition remains constrained by high costs and privacy concerns, limiting its use in multimodal research and AI-driven applications. We present MultiModal Molecular Generation (M$^3$-Gen), a novel framework for the generation of gene expression profiles by conditioning a Generative Adversarial Network on histopathology images and clinical metadata. M$^3$-Gen learns a unified latent representation from the clinical variables and the images, leveraging contrastive learning, and exploits the embeddings of the two modalities to guide a generative model in producing biologically coherent gene expression profiles. Evaluations on the TCGA dataset demonstrate that M$^3$-Gen generates realistic and functionally meaningful gene expression data. Importantly, by integrating multiple modalities in an attention-based mechanism, M$^3$-Gen provides intrinsic explainability: it allows the identification of which regions of the histopathology images most strongly influenced the generation of specific gene expression profiles, making the model's decisions interpretable by design.",
+  "authors": [
+   "Francesca Pia Panaccione",
+   "Carlo Sgaravatti",
+   "Marco Venere"
+  ],
+  "published": "2026-07-23T14:12:58Z"
+ },
+ {
+  "arxiv_id": "2607.21345v1",
+  "title": "Regulating autonomous and agentic AI",
+  "abstract": "Regulating activities where regulatees use autonomous and agentic AI is challenging. Regulatory assumptions about regulatee knowledge and control no longer hold true; much of that lies elsewhere in the AI supply chain which thus needs to be brought within the scope of regulation. Governance systems for autonomous AI cannot replicate existing governance models, but need a fresh approach. Retrospective supervisory oversight becomes ineffective as a risk management tool, and AI autonomy generates new systemic risks which require new solutions. This paper investigate four regulatory systems: UK regulation of content platforms, data protection, UK financial services, and the EU AI Act\\'92s cross-sectoral regime. It analyses the challenges posed by autonomous and agentic AI and proposes potential solutions which regulators might adopt. These will transform regulation from a reactive process to an active one, and assist it in adapting to the challenges of AI autonomy.",
+  "authors": [
+   "Chris Reed",
+   "Alex Austria",
+   "Anmol Bharuka",
+   "Pragnitha Mandava",
+   "Khushiya Mujawar",
+   "Luka Shakhkulashvili"
+  ],
+  "published": "2026-07-23T14:13:34Z"
+ },
+ {
+  "arxiv_id": "2607.21351v1",
+  "title": "How Many Bits Can an Adapter Write? Measuring the Capacity and Memorization of Parameter-Efficient Fine-Tuning",
+  "abstract": "A LoRA adapter is a few megabytes that almost everyone treats as a skill rather than a record of the data behind it. We put that assumption on a scale. Extending compression-based memorization analysis to the frozen-base setting, we measure directly, in bits, how much a low-rank adapter writes into a model it never changes. The answer is both smaller than full fine-tuning and less lawful than parameter counting would predict. Adapters store a couple of bits per trainable parameter, well short of a full model's budget, but that figure turns less on how many parameters an adapter carries than on where they sit. Move the same parameter budget from attention into the MLP and it holds nearly twice as much; strip the frozen base of its structure and the capacity all but disappears. Applied to realistic fine-tunes of Qwen2.5, the same instrument shows privacy leakage rising with the bits an adapter writes rather than the parameters it nominally has, and it draws a clean line between supervised and reinforcement learning: the secrets that supervised fine-tuning copies down verbatim, an adapter trained on verifiable rewards never records. Measuring what fine-tuning writes, rather than attacking it after the fact, turns a piece of folklore into a quantity one can design against.",
+  "authors": [
+   "Kaizhen Tan",
+   "Heqing Du",
+   "Yang Feng"
+  ],
+  "published": "2026-07-23T14:16:43Z"
+ }
+]

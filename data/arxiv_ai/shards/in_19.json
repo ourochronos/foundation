@@ -1,0 +1,273 @@
+[
+ {
+  "arxiv_id": "2607.22463v1",
+  "title": "Beyond Perspectives: A Trio-Ethnography of Interpretation Evolution in LLM-Supported Programming Education",
+  "abstract": "Generative AI is reshaping programming education, yet educators often infer students' AI-supported learning from classroom observations alone. This experience report presents a trio-ethnography involving two computing educators with different teaching philosophies and one undergraduate computer science student to examine how these interpretations evolve through dialogue. Across three conversations, the educators reflected on students' AI use, discussed changes to programming pedagogy, and revisited their assumptions after engaging with the student's lived experiences. Rather than simply confirming or contradicting the educators' perspectives, the student's narratives revealed learning processes that were largely invisible in the classroom, prompting both educators to reconsider assumptions about AI use, assessment, transparency, and programming instruction. We argue that trio-ethnography offers a valuable reflective approach for helping computing educators move beyond observable student behaviors toward a richer understanding of AI-supported learning and for informing instructional adaptation in the era of generative AI.",
+  "authors": [
+   "Jennie Ren",
+   "Jordan H. McDowell",
+   "Kyrie Zhixuan Zhou"
+  ],
+  "published": "2026-07-24T16:28:14Z"
+ },
+ {
+  "arxiv_id": "2607.22465v1",
+  "title": "TRACE-ROUTER: Task-Consistent and Adaptive Online Routing for Agentic AI",
+  "abstract": "Routing to select large language models (LLMs) with different cost-quality trade-offs has become a fundamental deployment feature of enterprise AI. Existing routers, primarily make independent routing decisions for each LLM call. However, agentic applications execute as long-horizon workflows whose quality is determined only by a delayed, task-level outcome. This mismatch prevents per-call routers from correctly attributing feedback to individual routing decisions. Towards mitigating this, we present TRACE-Router, a task-level routing framework that aligns routing with the unit of supervision. TRACE-Router assigns each task to a model once at admission using a contextual bandit, pins all subsequent LLM calls to the selected backend, and updates its policy using the task's terminal reward, jointly accounting for accuracy and latency. By leveraging delayed task feedback, TRACE-Router learns routing policies that adapt to the workload while avoiding explicit task-complexity estimation. Across three agentic benchmarks, TRACE-Router consistently improves the accuracy-latency trade-off, achieving non-dominated Pareto frontier points. On tau2-Bench, it outperforms latency-matched interpolation between individual models by 7-8 accuracy points, while on Terminal-Bench it achieves 7.1 higher accuracy points than the strongest single model baseline with 36% lower latency.",
+  "authors": [
+   "Ritik Raj",
+   "Souvik Kundu",
+   "Sarbartha Banerjee",
+   "Dheemanth Joshi",
+   "Ishita Vohra",
+   "Tushar Krishna"
+  ],
+  "published": "2026-07-24T16:29:06Z"
+ },
+ {
+  "arxiv_id": "2607.22467v1",
+  "title": "Complexity Bounds and Approaches to Learning Projected Gradient Descent Solver Iterates",
+  "abstract": "Data scarcity poses a fundamental challenge in training generative models to produce initial guesses for parametric optimization problems that are otherwise numerically expensive to solve. We therefore study a $k$-neighborhood data collection strategy that augments datasets of converged solutions with intermediate solver iterates, increasing the amount of training data without additional solver runs. To understand the benefits of this approach, we derive a generalization bound based on Rademacher complexity that reveals the role of the $k$-neighborhoods and related parameters. To achieve this result, we focus on one-sided box-constrained quadratic programs solved by projected gradient descent. We illustrate the behavior of this solver on two examples. The approach proposed in this paper enables a more capable DDDAS paradigm by improving the efficiency of the data-model-optimization loop. We finish by discussing two views of learning solver-iterate data and connect our analysis with GLENS, a new data-efficient global search method.",
+  "authors": [
+   "Anjian Li",
+   "Ryne Beeson"
+  ],
+  "published": "2026-07-24T16:31:30Z"
+ },
+ {
+  "arxiv_id": "2607.22468v1",
+  "title": "Learning to Prepare Molecular Ground States with Transformer Models",
+  "abstract": "Quantum state preparation is a key component of many quantum algorithms. Performing this step efficiently is essential for realizing practical quantum advantage in quantum chemistry applications. Iterative algorithms like ADAPT-VQE can produce shallow ground-state preparation circuits, but become computationally prohibitive for the larger molecules relevant to materials science and pharmaceutical development. Here, we introduce ADAPT-GQE, a generative AI framework that learns to synthesize ground-state preparation circuits for electronic structure calculations. We first use ADAPT-VQE to generate high-quality reference circuits, which are then used as targets for training models for circuit generation. Once trained, the model can efficiently propose and score circuits, enabling reinforcement learning (RL) to drive circuit generation accuracy beyond the accuracy of the ADAPT-VQE training data. This pipeline achieves order-of-magnitude reductions in circuit generation time relative to ADAPT-VQE while maintaining comparable or improved state-preparation accuracy. We demonstrate ADAPT-GQE on imipramine, a well-established tricyclic antidepressant that serves as a representative, challenging target for computational modelling in drug stability protocols. We execute generated circuits on Quantinuum Helios-1, representing a milestone for AI-generated quantum chemistry circuits on state-of-the-art quantum hardware. These results establish a pathway toward automated quantum circuit synthesis for utility-scale quantum computational chemistry.",
+  "authors": [
+   "Alex Koziell-Pipe",
+   "Jasmine Brewer",
+   "Jem Guhit",
+   "Marwa H. Farag",
+   "Kripa Panchagnula",
+   "Gabriel Laude",
+   "Fabian Finger",
+   "Carlo Gaggioli",
+   "Ludmila Szulakowska",
+   "Oliver J. Backhouse",
+   "Christos Papalitsas",
+   "Jason G. Mustakis",
+   "Thomas Soini",
+   "David Munoz Ramo",
+   "Stephen Clark",
+   "Elica Kyoseva",
+   "Enrico Rinaldi"
+  ],
+  "published": "2026-07-24T16:32:40Z"
+ },
+ {
+  "arxiv_id": "2607.22471v1",
+  "title": "MineValiCoder: Reliable Code Generation with Test Case Quality Mining and Bipartite Graph-Based Mutual Validation",
+  "abstract": "Large Language Model (LLM)-based Test-Driven Development (TDD) has advanced automated code generation. However, existing approaches depend heavily on human-crafted test cases and cannot operate effectively when only natural-language requirements are available. Although recent work enables automatic test generation, it often overlooks the inherent stochasticity of LLMs, leading to two key defects: faulty tests generate misleading feedback that distorts code optimization, while mixed-quality test cases produce conflicting evaluation signals that hinder reliable code selection. To address these challenges, we propose MineValiCoder, a collaborative closed-loop TDD framework based on the mutual reinforcement of test-case quality and code quality. MineValiCoder comprises three modules. The Test Case Quality Mining (TCQM) module filters faulty test cases through self-validation, providing reliable optimization supervision. The Parallel TDD Refinement module iteratively optimizes code and generates diverse high-quality code candidates using validated test-case feedback. The Bipartite Graph-Based Code-Test Mutual Validation (BiCoTeV) module dynamically models code-test interactions and performs mutual validation scoring for stable and reliable optimal-code selection. Extensive evaluations across four LLMs and mainstream benchmarks show that MineValiCoder significantly outperforms state-of-the-art methods. Specifically, it achieves Pass@1 scores of 96.34% on HumanEval, 87.40% on MBPP, 64.00% on APPS, and 51.33% on LiveCodeBench. These results demonstrate the effectiveness of MineValiCoder in mitigating LLM stochasticity and improving the reliability of automated code generation.",
+  "authors": [
+   "Zhen Zhao",
+   "Qihang Yang",
+   "Feifei Dai",
+   "Xiangfang Li",
+   "Bo Li"
+  ],
+  "published": "2026-07-24T16:39:06Z"
+ },
+ {
+  "arxiv_id": "2607.22474v1",
+  "title": "Beyond Negative-Ridge Endpoints: Mixed-Sign Spectral Regularization via Negative-Shifted Gradient Descent",
+  "abstract": "In overparameterized linear regression, many weak spectral directions act like a ridge penalty on the signal-bearing spectrum; negative ridge is the natural correction, pushing filters above one. The stable negative-ridge endpoint, however, is structurally limited: its pole must stay below the smallest nonzero empirical eigenvalue, and it anti-shrinks smaller eigenvalues more than larger ones. Early-stopped negative-shifted gradient descent escapes this constraint. Its filter is smooth at the would-be pole and mixed-sign-capable: above-ridgeless directions form a leading prefix, with lower directions shrunk or exposure-controlled while stopping sets the crossover. In a Gaussian spike-plus-flat model we discover a Marchenko-Pastur barrier: the shift that cancels the implicit penalty lies a bulk width above the smallest empirical eigenvalue, and the stopped path improves on every admissible endpoint by a polynomial factor in risk under explicit conditions. Our main theorem permits a general high-effective-rank tail: its trace sets the implicit floor, its squared spectrum controls exposure, and the floor-critical path recovers all head scales at once, beyond positive shrinkage and, once scales separate, every uniform rescaling of ridgeless. Handling the noncontractive shifted dynamics is the central technical challenge; localized Duhamel integrals control them. A finite-grid hold-out inequality transfers the separations to the validation-selected algorithm.",
+  "authors": [
+   "Peng Zhao"
+  ],
+  "published": "2026-07-24T16:42:46Z"
+ },
+ {
+  "arxiv_id": "2607.22479v1",
+  "title": "Legal Nugget Extraction for Granular Retrieval over Long Jurisprudential Texts",
+  "abstract": "Legal retrieval over jurisprudential collections is challenging because court decisions are long, heterogeneous documents whose relevant legal thesis may occupy only a small portion of the text. This paper asks whether legal nuggets, defined as short and self-contained legal theses extracted from source documents, can improve dense retrieval over Brazilian legal collections. We propose a pipeline that extracts nuggets from each document, indexes them with embeddings, retrieves nugget-level evidence, and aggregates the retrieved nuggets back to document-level rankings. We evaluate this approach on four Portuguese legal retrieval benchmarks from the JUA ecosystem, reporting NDCG@10, MAP@10, and MRR@10. Nugget retrieval substantially improves the two jurisprudential datasets: on JUA-Juris, NDCG@10 increases from 0.10265 to 0.20461, and on JurisTCU from 0.20898 to 0.32696. However, it underperforms full-document retrieval on NormasTCU and BR-TaxQA, and an embedding-model ablation shows that strong domain-adapted retrievers can remain better in the full-document setting. The results demonstrate that legal nuggets can be useful for jurisprudence search, especially when queries are formulated as legal theses, but they may not transfer equally well to other legal retrieval scenarios.",
+  "authors": [
+   "Lucas Pereira",
+   "Erick Brito",
+   "Roberto Lotufo",
+   "Jayr Pereira"
+  ],
+  "published": "2026-07-24T16:47:57Z"
+ },
+ {
+  "arxiv_id": "2607.22484v1",
+  "title": "Singular value soft-thresholding via the polar decomposition",
+  "abstract": "Singular value soft-thresholding can be computed via a reduction to the matrix polar decomposition, which allows one to exploit GPU-friendly algorithms for computing the polar decomposition. Empirically, there is a significant speed-up on GPUs compared to the standard approach using the SVD. We leave the investigation of robustness to future work, but note that due to the discontinuous nature of the sign function, the reduction to the polar decomposition is likely only suitable for low-accuracy applications.",
+  "authors": [
+   "Stephen Becker"
+  ],
+  "published": "2026-07-24T16:55:09Z"
+ },
+ {
+  "arxiv_id": "2607.22489v1",
+  "title": "\\k{appa}-LoRA: Condition Numbers Reveal Which LoRA Matrices Worth Updating",
+  "abstract": "Low-Rank Adaptation (LoRA) has become a widely adopted technique for efficient neural network fine-tuning, decomposing model updates into low-rank matrices. However, LoRA remains computationally costly because it updates all matrices uniformly, regardless of their actual contribution to adaptation. This cost is especially prohibitive for large-scale models with billions of parameters and for resource-constrained settings such as edge deployment and on-device fine-tuning. We show for the first time that not all LoRA matrices are equally worth tuning: matrices with smaller condition numbers (the ratio of largest to smallest singular value) are already well-balanced across directions and contribute only marginally to adaptation, whereas matrices with larger condition numbers contain underdeveloped directions that span richer subspaces and drive most of the performance gains. This observation itself is a key contribution of our work, and it motivates a more selective approach to fine-tuning. Building on this insight, we propose \\k{appa}-LoRA, a method that optimizes LoRA by focusing updates on the matrices with the largest condition numbers, which capture the most informative directions of change. By restricting LoRA updates to the top 50% of weight matrices ranked by condition number, \\k{appa}-LoRA halves the trainable parameter count and correspondingly reduces compute and memory cost. Extensive experiments across multiple benchmarks show that this design cuts fine-tuning time by 16.2% on average while matching the accuracy of standard LoRA and reducing memory cost by 4.5%. Further analysis reveals that the condition numbers of the selected matrices consistently decrease over training, suggesting that \\k{appa}-LoRA's effectiveness stems from targeted spectral rebalancing rather than parameter selection alone.",
+  "authors": [
+   "Jianghui Wang",
+   "Silong Yong",
+   "Francesco Orabona",
+   "Marco Canini",
+   "Katia P. Sycara",
+   "Yaqi Xie"
+  ],
+  "published": "2026-07-24T17:00:40Z"
+ },
+ {
+  "arxiv_id": "2607.22491v1",
+  "title": "Susceptible Reservoir Architectures for Regime-Conditional Volatility Forecasting",
+  "abstract": "Volatility forecasting is dominated by persistence and measurement noise, leaving limited residual structure for nonlinear models to exploit. We introduce Susceptible Architectures (SUSA), a reservoir-design principle for volatility forecasting, and its two concrete implementations, based on complex-valued open-chain and periodic reservoirs and regime-conditioned experts to interpret reservoir features across calm, onset, recovery, and persistent-stress states. We also implement open-system $q$-qubit counterparts in Qiskit while retaining a common AR-Ridge anchor and a bounded residual correction trained under QLIKE. We evaluate models on 16 U.S. equity and exchange-traded-fund series using three disjoint chronological training, validation, and test folds, a 12-observation input window, and a five-observation forecast horizon. The proposed models perform competitively with GARCH, achieving statistically significant QLIKE improvements for specific assets (IWM, XLP). Also models' forecasts complement HARQ-style predictions: a stacked ensemble improves mean QLIKE by 0.0116 over its strongest constituent and wins in 75% of test scenarios.",
+  "authors": [
+   "Aliaksei Kaliutau"
+  ],
+  "published": "2026-07-24T17:03:08Z"
+ },
+ {
+  "arxiv_id": "2607.22508v1",
+  "title": "Interpretable EEG biomarkers with bag-of-waves: Spatial and temporal waveform dictionaries for low-data regimes",
+  "abstract": "Electroencephalography (EEG) is widely used to diagnose neurological conditions, but its analysis usually relies on either predefined spectral features or deep neural networks. Predefined features carry a strong bias, since they fix in advance what counts as informative, while deep neural networks and foundation models are hard to interpret and need large amounts of data and compute. We present bag-of-waves, an interpretable framework that learns a small dictionary of recurring EEG waveform templates, called atoms, using shift-invariant k-means without labels. The continuous EEG is then turned into a sequence of atom tokens, whose counts feed a simple downstream classifier or clustering step. We extend this representation in two ways: we add atom-to-atom transitions, which we call n- grams, to capture temporal structure, and we move from single-channel atoms to regional and cross-channel spatial atoms for the multichannel case. We test the method on three complementary datasets, each probing a different aspect: single-channel mouse genotype clustering with only sixteen animals (the low-data and temporal case), resting-state dementia classification (the spatial case), and the TUEV benchmark, a six-way classification of clinical EEG events (a high-data comparison against strong deep and foundation baselines). Across all three datasets, bag-of-waves achieves performance competitive with state-of-the-art deep and foundation models. Yet, it operates with a fraction of the parameter count and provides full interpretability: because every atom corresponds to an inspectable waveform, the method explicitly recovers known clinical morphologies that a neurophysiologist can directly validate. Its main advantage is that it works in the low-data regime where heavier models are a poor fit.",
+  "authors": [
+   "Athanasios Papastathopoulos-Katsaros",
+   "Steven T. Lee",
+   "Lin Yao",
+   "Ajay Thomas",
+   "Junseok Park",
+   "Matthew J. McGinley",
+   "Zhandong Liu"
+  ],
+  "published": "2026-07-24T17:27:43Z"
+ },
+ {
+  "arxiv_id": "2607.22511v1",
+  "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
+  "abstract": "Automating theoretical research is constrained not only by the generation of candidate results, but also by their reliable evaluation. A common approach is to close the research loop with a large language model (LLM) reviewer. However, such reviewers remain empirically unreliable: they may accept fabricated papers and detect them at rates close to chance (Bad Scientist, 2025). We present CausalForge, a framework for automated theoretical research in causal inference grounded in the Lean proof assistant. CausalForge combines Causalean, a foundational Lean library for causal inference containing 7,035 machine-checked declarations developed with language-model assistance under human design and review, with CausalSmith, a self-improving agentic pipeline that selects research topics, proposes results, formalizes statements, constructs proofs, and presents the resulting artifacts for human inspection. Because a machine-checked proof establishes only that a formal statement follows from its assumptions, not that the statement faithfully captures the intended scientific claim, the pipeline augments kernel verification with a statement audit that compares each formal theorem against the informal claim it is intended to express. We evaluate the system using artifacts produced by completed autonomous research runs. The source code, formal library, and run records are available at https://github.com/Jiyuan-Tan/CausalForge.",
+  "authors": [
+   "Jiyuan Tan",
+   "Vasilis Syrgkanis"
+  ],
+  "published": "2026-07-24T17:32:35Z"
+ },
+ {
+  "arxiv_id": "2607.22513v1",
+  "title": "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science",
+  "abstract": "Commercial large language models are increasingly used as knowledge references, yet their stance on contested scientific claims is neither stable nor transparent. We tested how four major LLM families (Claude, Grok, GPT, Gemini) evaluate ethnonationalist pseudo-science derived from Frank Salter's biosocial framework across four temporal snapshots (October 2025-February 2026), via both API and web interfaces. Grok's Fast versions (which power the default user experience on X) consistently assigned credibility scores of 70-75, two to five times higher than all other models (which scored 15-40). This pattern was absent from control prompts testing basic evolutionary consensus and refuted Lamarckian claims, where all models performed comparably. Three additional findings emerged: (1) a silent patch reversed Grok's behaviour from chaotic to stably high validation overnight, without any public documentation; (2) the same Grok model identifier produced radically divergent outputs via API (75) and web (5.5) three months later; (3) refusal to rate the pseudo-scientific claim, the most defensible response observed, appeared in two model families through different interfaces (Claude Opus 4.1 categorically via web, GPT-5.1 Chat intermittently via API) and eroded in the successor version of each. These results indicate that the epistemic stance of a commercial LLM is not a stable property of the model but a contingent effect of deployment configuration: system prompts, safety layers, interface routing, and silent updates. This remains opaque to users and researchers alike. We argue this constitutes a matter of public concern requiring new forms of epistemic accountability.",
+  "authors": [
+   "Davide Scarso",
+   "Hugo Noronha de Almeida",
+   "Joaquim Pina"
+  ],
+  "published": "2026-07-24T17:32:43Z"
+ },
+ {
+  "arxiv_id": "2607.22514v1",
+  "title": "Dysphagia Risk Stratification in Head and Neck Cancer via Two-Stage PRO-Clinical Stacking",
+  "abstract": "Dysphagia is a debilitating late effect of head and neck cancer (HNC) treatment, yet timely identification of at-risk patients remains challenging in survivorship care. Definitive assessment relies on videofluoroscopic imaging, as captured by the Dynamic Imaging Grade of Swallowing Toxicity (CTCAE-DIGEST), which, while validated, requires specialized equipment, trained personnel, and significant patient burden, limiting its routine use in surveillance. Patient-reported outcomes (PROs), by contrast, are low-cost, scalable, and easily collected at any clinical encounter, making them an attractive alternative signal for identifying patients who may warrant further evaluation. However, a clear clinical framework for translating PRO responses into actionable interventions is still evolving. In particular, uncertainty remains regarding when a patient's self-reported symptom burden should prompt escalation of care. This study addresses this gap by formulating a single-visit PRO-clinical prediction framework and introducing a clinically interpretable two-stage stacking model to predict swallowing impairment risk using PRO responses and structured clinical variables, without requiring videofluoroscopic imaging. The proposed framework quantifies the independent contributions of patient-reported symptoms and clinical factors within a unified and interpretable risk assessment model. Our findings demonstrate that individual MDADI responses contain predictive information beyond that captured by composite or global summary scores, while interpretability analyses reveal symptom patterns and clinical risk factors associated with swallowing impairment. Together, these results support the use of structured PRO-clinical integration as a practical, imaging-free approach for dysphagia risk stratification in HNC survivorship.",
+  "authors": [
+   "Siyuan Zhao",
+   "Eric Ababio Anyimadu",
+   "Zachary G. Brumm",
+   "Yue Ma",
+   "Clifton David Fuller",
+   "Xinhua Zhang",
+   "G. Elisabeta Marai",
+   "Guadalupe Canahuate"
+  ],
+  "published": "2026-07-24T17:34:26Z"
+ },
+ {
+  "arxiv_id": "2607.22516v1",
+  "title": "Quantum Spectral Model: Data Reuploading with Input-Conditioned Frequency Support",
+  "abstract": "A central design principle in modern machine learning and artificial intelligence is to align a model's inductive bias with the structure of its input data. For matrix-valued inputs, relevant matrix-level relationships can be characterised through spectral values and spectral subspaces; however, common coordinate-wise rotation-gate data-encoding unitaries used in most quantum machine learning models do not explicitly construct such a matrix-level representation. We introduce Quantum Spectral Models (QSMs), in which we construct the generator of the data-encoding unitary directly from each input matrix. We study three QSM variants based on symmetric, global block, and non-overlapping patch-local block Hamiltonians. Their outputs admit truncated Fourier representations in which input-dependent spectral gaps supply candidate phase carriers, while spectral subspaces help determine their coefficients. We evaluate the QSMs and comparison quantum models on two matrix representations of Pendigits and two controlled synthetic tasks defined by spectral statistics. At the largest evaluated circuit depth, QSM variants lead the tested quantum models in mean test accuracy across all four benchmarks. The patch-local QSM leads on Pendigits, whereas the global block-Hamiltonian QSM leads on the controlled spectral tasks. Ablations show a task-dependent reversal: subspace-preserving controls perform better on Pendigits, whereas spectral-value-only controls lead among the tested ablations on the synthetic tasks. Together, these results shed new light on quantum machine-learning model design by showing how input-conditioned spectral representations can provide an analysable inductive bias, while offering a broader perspective on structure-aware model design in machine learning and artificial intelligence.",
+  "authors": [
+   "Peiyong Wang",
+   "Udaya Parampalli",
+   "Casey R. Myers"
+  ],
+  "published": "2026-07-24T17:39:14Z"
+ },
+ {
+  "arxiv_id": "2607.22518v1",
+  "title": "PinEqualizer: Full Funnel Content Exploration and Debiasing System at Pinterest",
+  "abstract": "In this paper, we propose a new solution for addressing the content cold-start problem in industry-scale search and recommender systems. Compared to prior approaches, we have made the following new contributions: 1) our solution spans the entire multi-stage funnel and generalizes well for both search and recommendation surfaces, 2) our solution reduces bias favoring existing content, allowing more accurate model prediction across content types and reducing short-term tradeoffs associated with high volumes of explicit content exploration, 3) our solution is evaluated with a scalable measurement framework that enables fast short-term experimentation while validating long-term impact. We have iteratively built and successfully deployed this new system at Pinterest in the past two years and observed significant improvements in fresh content exploration, overall user engagement, and content ecosystem health.",
+  "authors": [
+   "Olafur Gudmundsson",
+   "Bo Zhao",
+   "Huayi Liao",
+   "Anna Kiyantseva",
+   "Sai Xiao",
+   "Heath Vinicombe",
+   "Mostafa Keikha",
+   "Luke DeLuccia",
+   "Zihao Chen",
+   "Junpeng Hou",
+   "Weijie Jiang",
+   "Bhawna Juneja",
+   "Andreanne Lemay",
+   "Wei-Ting Lin",
+   "Keyvan Moghadam",
+   "Jiaxing Qu",
+   "Zhiqing Rao",
+   "Zhihua Zhang"
+  ],
+  "published": "2026-07-24T17:41:28Z"
+ },
+ {
+  "arxiv_id": "2607.22520v1",
+  "title": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
+  "abstract": "Adding procedural skills to an LLM agent is typically evaluated by average improvement in task success. However, this metric hides an important cost: skills can also make agents worse. We measure both sides by comparing agents with and without skills across nearly 6,000 runs spanning two office automation benchmarks and three model harness stacks. This allows us to distinguish two outcomes. A regression is a task solved without skills but failed after skills are added. A residual failure is a task that fails both with and without skills. We find that regressions are substantial enough that the best performing skills outperform others primarily by regressing less, not by gaining more. We identify three causes of regression: (i) skill description osmosis, a skill changes an agent's behavior simply by being present in context, even when it is never invoked; (ii) grounding displacement, a skill's prescribed procedure overrides how the agent interprets its inputs; and (iii) verification displacement, where the procedure suppresses checks the agent would otherwise perform on its outputs. Analysing persistent failures reveals the same underlying pattern. Existing skills overemphasize procedural guidance the stage least often responsible for failure while under supporting grounding and verification, the dominant sources of remaining errors. After correcting evaluation artifacts and studying traces, we find many regressions and persistent failures recoverable through better grounding and verification. Procedural skills should be evaluated by decomposing their net effect into gains and regressions, not by aggregate improvement alone. We identify three regression modes skills should avoid, and find that reliability depends more on grounding and verification than on procedural skill choice.",
+  "authors": [
+   "Darshan Tank",
+   "Baran Nama"
+  ],
+  "published": "2026-07-24T17:50:03Z"
+ },
+ {
+  "arxiv_id": "2607.22525v1",
+  "title": "Explainable Reinforcement Learning for assisting Air Traffic Controllers",
+  "abstract": "To effectively integrate AI into high-stakes, critical environments such as healthcare, autonomous driving, and aviation--and to advance toward higher levels of automation and seamless human-AI collaboration--building trust in AI-driven solutions is essential. Trust, in turn, is closely linked to the explainability of AI systems. The rapid advancements in AI across various domains have underscored the challenges of establishing trust, raising increasing interest in AI explainability even more when applied to deep learning. In this context, the present work aims to explore the application of explainability techniques to Reinforcement Learning (RL) algorithms, specifically within the safety-critical domain of Air Traffic Control (ATC). Using a simplified ATC environment as an initial testbed, an intelligent agent is trained with a reinforcement learning algorithm to make decisions on alternative flight routes that avoid no-fly zones. As a preliminary explainability approach, a saliency map is employed, providing insights into the input features that most significantly influence the agent's decision-making process.",
+  "authors": [
+   "Anduel Mehmeti",
+   "Gabriella Gigante",
+   "Salvatore Venticinque"
+  ],
+  "published": "2026-07-24T17:56:38Z"
+ },
+ {
+  "arxiv_id": "2607.22529v1",
+  "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+  "abstract": "LLM training is shifting from manual design and annotation to interaction-driven self-evolution. However, existing self-evolutionary methods face a fundamental dilemma between task diversity and verification reliability: environment-bound methods obtain precise feedback but confine learning to narrow domains, while open-ended self-generation broadens the task space but lacks reliable verification, allowing misleading rewards to pollute the training loop. We identify agent skills as a powerful middle ground to reconcile this tension: each skill ensures deep, verifiable execution in a specific scenario, while dynamic routing across skills maintains open-ended task variety. Leveraging this insight, we introduce Skill Self-Play (Skill-SP), a co-evolutionary framework comprising a proposer, a solver, and a dynamic skill controller. Orchestrated via a reinforcement learning loop, these components co-evolve in a continuous self-play loop: the proposer generates challenging tasks conditioned on dynamically sampled skills; the solver explores candidate solutions to push its capability boundaries; and the skill controller collects execution feedback to update and expand the skill library. This interactive co-evolution effectively bridges the gap between structured verification and open-ended exploration. Empirical evaluations on tool-use and reasoning benchmarks demonstrate that Skill-SP, serving as a robust evolution engine, consistently pushes the performance ceiling of competent backbones while catalyzing striking turnarounds for initially misaligned models. Our code is available at https://github.com/Qwen-Applications/skill-self-play.",
+  "authors": [
+   "Siyuan Huang",
+   "Pengyu Cheng",
+   "Haotian Liu",
+   "Tao Chen",
+   "Yihao Liu",
+   "Jingwei Ni",
+   "Shijie Zhou",
+   "Ziyi Yang",
+   "Gangwei Jiang",
+   "Mengyu Zhou",
+   "Yu Cheng",
+   "Xiaoxi Jiang",
+   "Guanjun Jiang"
+  ],
+  "published": "2026-07-24T17:59:22Z"
+ },
+ {
+  "arxiv_id": "2607.22534v1",
+  "title": "SM4RT: Learning Structured Motion Geometry for 4D Reconstruction",
+  "abstract": "Geometry Foundation Models (GFMs) have substantially advanced monocular 3D reconstruction, yet extending this capability to 4D dynamic understanding remains a fundamental challenge. Most existing motion perception methods (e.g., sparse tracking, dense point-wise flow) treat motion as independent point-wise displacements, ignoring the structured nature of physical motion. However, real-world objects usually obey rigid-body kinematics, and points thus usually move collectively, not in isolation. Motion itself possesses geometric structure: physical objects undergo a set of rigid-body transformations governed by SE(3), rather than unstructured point-wise displacements. Building on this insight, we propose SM4RT, a Structured Motion 4D Reconstruction Transformer for end-to-end 3D reconstruction and structured motion perception. SM4RT introduces Structure-of-Motion to represent scene dynamics, where scene motion is decomposed into a compact set of motion bases, each represented as a temporal sequence of 6D twists in SE(3). Dense scene motion is then recovered by sparse, time-shared per-pixel assignment weights over these bases, ensuring points on the same object share a common rigid-body motion trajectory. SM4RT introduces a parallel motion geometry encoder and decoder that jointly infer 3D geometry, world-coordinate motion, and scene kinematic structure in a single forward pass from monocular RGB video. SM4RT achieves strong motion reconstruction performance while preserving the geometric structure of scene motion.",
+  "authors": [
+   "Shing Ho J. Lin",
+   "Wenzhao Zheng",
+   "Dong Zhuo",
+   "Yuqi Wu",
+   "Jie Zhou",
+   "Jiwen Lu"
+  ],
+  "published": "2026-07-24T17:59:51Z"
+ }
+]

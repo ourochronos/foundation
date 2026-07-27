@@ -1,0 +1,253 @@
+[
+ {
+  "arxiv_id": "2607.21353v1",
+  "title": "Gradient Concentration, Not Weight Saliency, Explains Representation-Level Class Unlearning",
+  "abstract": "Machine unlearning aims to remove the influence of specific training data while preserving model utility. Many state-of-the-art approaches pursue this goal by restricting the forgetting update to a subset of parameters selected through gradient-based saliency. Although such methods are widely adopted, the actual contribution of saliency-based weight selection to representation-level forgetting remains unclear. In this work, we perform the first controlled ablation of the saliency masking mechanism used by SalUn. Using a matched-compute experimental design on CIFAR-10 and CIFAR-100 with ResNet-18, we compare saliency-based masking against random masks of equal sparsity and unconstrained updates, while keeping the unlearning objective, optimization schedule, and computational budget fixed. Across multiple representation-level evaluations, including linear probing, prototype recovery, and layer-wise CKA, the three configurations exhibit statistically equivalent representation-level recoverability. We find that forget gradients are strongly concentrated in the final network layers (approximately 92% of the squared gradient energy on CIFAR-10) before any mask is applied, causing all masking strategies to operate within the same representational subspace. Furthermore, saliency masks show limited class specificity (specificity index 0.09-0.11), selecting highly overlapping parameter subsets across different forget classes. Our findings suggest that, in the studied setting, representation-level forgetting is primarily governed by gradient concentration and representation geometry rather than by the specific identity of saliency-selected weights. More broadly, the results support a growing body of evidence indicating that effective representation-level unlearning requires objectives that act directly on latent representations rather than on increasingly sophisticated weight-selection strategies.",
+  "authors": [
+   "Billel Habbati",
+   "Alessio Merlo",
+   "Luca Verderame",
+   "Meriem Guerar"
+  ],
+  "published": "2026-07-23T14:17:51Z"
+ },
+ {
+  "arxiv_id": "2607.21354v1",
+  "title": "SPORD: A Simulation-Propose-then-OR-Dispose Approach for Supply Chain Planning",
+  "abstract": "For years, supply chain planning at e-commerce firms has operated as a collection of isolated projects. Each planning task from static network planning to dynamic warehouse assortment planning requires analysts to spend weeks building models from scratch, calibrating and persuading executives to act on outputs they cannot verify. Three barriers drive this: bespoke models proliferate because standardization is difficult (operational fragmentation); once unified, the combinatorial scale of millions of SKUs, thousands of nodes, and intricate routing logic exceeds what solvers can handle within a tight window (computational intractability); and a mathematically optimal solution still fails to be implemented if the executives do not trust it (implementation hurdle). To bridge this gap, we propose and implement the Simulation-Propose-then-OR-Dispose method, deployed as JD.com's NetSim platform. The central insight is decoupling: simulation proposes by generating and evaluating the full set of operationally valid candidate paths-absorbing all idiosyncratic business logic, while an integer program disposes by selecting the globally optimal subset. Computationally, matrix-vectorized CPU/GPU accelerated simulation achieves a 10-100 times speedup over serial methods, and a list scheduling algorithm reduces coupled-order processing from hours to minutes. Operationally, we establish a closed loop via an intelligent diagnosis engine. Since 2025, NetSim has optimized end to-end services for over 20,000 suppliers, the cross-regional fulfillment rate dropped from 6.1% to 4.9%, and the average monthly carbon reduction is approximately 5,745 tCO2e. SPORD moves simulation from monitoring to active planning. The transparent outputs turn skeptical executives into engaged collaborators, and the modular architecture ensures that the next planning requires just configuration, not reconstruction.",
+  "authors": [
+   "Jiayin He",
+   "Yutong Pan",
+   "Sen Yang",
+   "Ningxuan Kang",
+   "Yongzhi Qi",
+   "Jianshen Zhang",
+   "Wei Qi",
+   "Zuo-Jun Max Shen"
+  ],
+  "published": "2026-07-23T14:18:01Z"
+ },
+ {
+  "arxiv_id": "2607.21356v1",
+  "title": "Emergent Misalignment Recruits a Pre-existing Persona Subspace",
+  "abstract": "Fine-tuning an aligned language model on a narrow stream of bad advice can make it broadly misaligned on questions unrelated to the training data, a phenomenon called emergent misalignment. We ask why the narrow lesson generalizes at all, and we find that narrow fine-tuning recruits a persona structure that is present in the model before the fine-tune exists. From a frozen instruction-tuned model (Qwen2.5-14B-Instruct) we extract per-domain persona subspaces by contrastive teacher forcing and find that 4 unrelated domains share one low-rank core at 657x a random-subspace null, with 82% of that core lying outside a style core built at matched diversity. The literal first optimizer step of fine-tuning on insecure code climbs a broad-misalignment margin harder than the same code framed as educational, and forecasts realized margin movement out to 375 steps. Projecting the subspace out of the residual stream throughout fine-tuning prevents broad misalignment (27.7% to 0.0% of judged generations) while a matched-rank random subspace changes nothing; injecting it into the never-fine-tuned model induces misalignment that grows with dose to 45.4%, past the fine-tuned model it is measured against. The same projection applied to the weight gradient is inert, and three post-hoc weight edits leave the disposition in place: the sharpest edit suppresses the behavior rather than removing it, and the ablated structure re-forms inside the subspace the edit cleared. Spreading a fixed budget of bad data across 4 domains produces more broad misalignment than mechanical weight superposition and matched diversity jointly account for. All measurements come from one model at 14B; the extraction is from an aligned instruction-tuned checkpoint, which leaves the structure's provenance open; and the intervention that prevents misalignment also abolishes the narrow trained behavior.",
+  "authors": [
+   "Mohammed Suhail B Nadaf"
+  ],
+  "published": "2026-07-23T14:19:28Z"
+ },
+ {
+  "arxiv_id": "2607.21366v1",
+  "title": "Hilbert Operator for Progressive Encoding (HOPE): A Mathematical Framework for Deconstructing Learned Representations in Deep Networks",
+  "abstract": "Deep neural networks encode complex representations, but deconstructing this internal knowledge remains a challenge. Given the link between learning and compression, network compression offers a promising lens to analyze this knowledge. However, standard compression heuristics often suffer from scale symmetries and architectural biases. To resolve these, we introduce Hilbert Operator for Progressive Encoding (HOPE), a mathematical framework to gradually deconstruct the representations in trained network weights. HOPE shifts network compression from the discrete domain into a Hilbert space of continuous functions. By modeling individual neurons as rank-1 Hilbert-Schmidt operators, HOPE unifies pruning and neuron merging as low-rank subspace projection. Extending this formulation, HOPE introduces macro block eviction to encompass multi-layer structures like entire residual pathways under the same unified metric. This unified approach enables unbiased architectural decisions across layers with different types and sizes. HOPE is a data-free and hyperparameter-free framework. We present proof-of-concept experiments in model compression and fine-tuning to highlight the practical potential of our theory.",
+  "authors": [
+   "Hossein Mobahi",
+   "Peter L. Bartlett"
+  ],
+  "published": "2026-07-23T14:31:16Z"
+ },
+ {
+  "arxiv_id": "2607.21371v1",
+  "title": "DINOde: Continuous Vision-Text Alignment for Open-Vocabulary Semantic Segmentation",
+  "abstract": "Open-vocabulary semantic segmentation (OVSS) leverages textual semantics to segment objects beyond predefined categories. While the self-supervised model DINOv3 provides strong structured visual representations, its lack of native textual alignment hinders its direct application to OVSS. To bridge this gap, we propose DINOde, an ODE-based framework that continuously aligns CLIP text embeddings with the DINO visual manifold. Our approach employs two complementary components: (i) Semantic Text Flow (STF), which evolves text embeddings toward the DINO manifold through a continuous ODE trajectory, and (ii) Global Context Flow (GCF), which progressively refines the holistic image representation carried by DINO's CLS token. To preserve the hyperspherical geometry of the feature space during this evolution, we further introduce Velocity Tangent Projection, which constrains the learned velocity field to the tangent space. By modeling alignment as a continuous trajectory, DINOde avoids the manifold entanglement inherent in discrete MLP projections and yields more robust cross-modal alignment. Extensive experiments demonstrate that DINOde consistently outperforms existing methods and achieves state-of-the-art performance across multiple OVSS benchmarks. The code is available at https://github.com/yoon307/DINOde.",
+  "authors": [
+   "Sung-Hoon Yoon",
+   "Hoyong Kwon",
+   "Changgyoon Oh",
+   "Kuk-Jin Yoon"
+  ],
+  "published": "2026-07-23T14:37:27Z"
+ },
+ {
+  "arxiv_id": "2607.21372v1",
+  "title": "Mean-to-Score Discrete Diffusion: Posterior-Mean Denoisers for Score Entropy",
+  "abstract": "Score Entropy Discrete Diffusion (SEDD) parameterizes discrete reverse processes with unconstrained positive score ratios. While positivity guarantees nonnegative reverse jump rates, it does not ensure Bayes realizability: ratios at a noisy state need not be jointly induced by any clean-token posterior under the forward kernel. The score-entropy loss has the correct population optimum but does not enforce this constraint away from it. In a trained pure-uniform SEDD checkpoint, roughly one quarter of complete score vectors violate the coordinate box, while more than half lie inside it yet remain materially incompatible with any valid posterior. Such violations can produce negative pre-normalization weights in finite-step sampling. Projecting raw scores onto the bridge polytope removes all observed negative weights and improves external generative PPL from $203.6$ to $175.1$ without changing the sampler. We introduce \\emph{mean-to-score} (M2S), which predicts a clean-token posterior mean and converts it to the score through an exact kernel-dependent linear map. The construction applies to any known coordinate-wise continuous-time Markov chain (CTMC) satisfying a mild support condition. For uniform corruption, it maps the probability simplex onto the bridge polytope; for absorbing-mask corruption, the resulting objective recovers MD4 exactly. In a controlled 28.4M-parameter CIFAR-10 comparison, M2S lowers test BPD from $3.173$ to $3.129$ and FID-50k from $\\CifarSEDDFID$ to $\\CifarMtwoSFID$. A 170M-parameter M2S model trained on about 262B OpenWebText token slots outperforms the evaluated pure-uniform SEDD, GIDD, and Neural CTMC checkpoints at every tested sampling budget, reaching generative PPL $143.3$ at 128 steps versus $183.6$ for the strongest pure-uniform baseline.",
+  "authors": [
+   "Jingyuan Li",
+   "Xiaoyi Jiang",
+   "Yixuan Jiang",
+   "Wei Liu",
+   "Yi Zhu",
+   "Zuoqiang Shi",
+   "Pipi Hu"
+  ],
+  "published": "2026-07-23T14:37:30Z"
+ },
+ {
+  "arxiv_id": "2607.21381v1",
+  "title": "Towards Faithful Graph Explanations with Synergistic Edge Effects via Granular Balls",
+  "abstract": "Instance-level explanations aim to reveal the rationale behind a model's decisions for a specific graph. Previous methods explain graph neural networks (GNNs) by selecting important edges to induce subgraphs, where edge importance is assessed by perturbing each edge and observing changes in the model predictions. However, they often neglect the synergistic effects among edges, which are crucial for accurately characterizing edge importance. To address this issue, we propose SeeExplainer, a parameter-free explainer to interpret GNNs. Specifically, we first introduce a granular-ball graph refinement mechanism that decomposes a graph into several disjoint granular-balls with no fixed size, and utilize them as nodes to construct a structural graph. This process can better capture the synergistic effects among edges. Then, we perturb nodes and edges in the structural graph to generate explanatory subgraphs based on their respective contributions. Experiments on several graph classification datasets of different networks show that SeeExplainer outperforms state-of-the-art baselines.",
+  "authors": [
+   "Jiancu Chen",
+   "Shuyin Xia",
+   "Guan Wang",
+   "Degang Chen",
+   "Fan Chen"
+  ],
+  "published": "2026-07-23T14:44:51Z"
+ },
+ {
+  "arxiv_id": "2607.21384v1",
+  "title": "Multimodal Pretraining for Generalizable EEG Representation Learning",
+  "abstract": "Electroencephalography (EEG) models used for epilepsy are often limited to specific datasets and tasks. This limited approach can make it challenging to apply these models across different datasets or in various situations. However, recent studies in foundation models and self-supervised learning suggest that an adaptable EEG backbone could support a range of EEG related tasks. In this study, we have developed a multimodal EEG foundation model that combines a raw signal encoder based on the Mamba architecture, a Vision Transformer (ViT)-style encoder for time-frequency data, and a lightweight encoder for text, all within a shared embedding space. The pretraining process relies on several innovative techniques, such as masked modeling, cross-view contrastive alignment, and temporal consistency losses. These methods are designed to create rich, seizure-relevant representations without requiring labeled data. To assess the efficacy and generalization of our pretrained model, we fine-tuned it on the canonical CHB-MIT seizure detection benchmark and additional seizure detection datasets, and conducted extensive experiments comparing different model variants. On the standard CHB-MIT split, our best single model achieved an AUROC of 0.874, and an ensemble variant reached 0.878 AUROC, representing state-of-the-art performance on this benchmark. In addition to standard train-test splits, we evaluated performance under a leave-one-subject-out (LOSO) protocol, which is rarely reported in prior EEG seizure modeling work and highlights the difficulty of patient-independent seizure detection, with a mean LOSO balanced accuracy of 0.558 across 19 subjects. Across datasets and evaluation settings, our multimodal foundation model enabled robust seizure detection and straightforward adaptation to new seizure detection scenarios, while also supporting interpretable seizure localization.",
+  "authors": [
+   "Targol Bakhtiarvand",
+   "Jugal Kalita",
+   "Adham Atyabi"
+  ],
+  "published": "2026-07-23T14:47:00Z"
+ },
+ {
+  "arxiv_id": "2607.21391v1",
+  "title": "Word meaning co-determines vowel-inherent spectral change. A corpus-based investigation of conversational Mandarin",
+  "abstract": "This study investigates vowel-inherent spectral change (VISC) in spontaneous conversational Mandarin. Using the generalized additive model and word embeddings from distributional semantics, we show that, when controlling for variables such as vowel duration, gender, speaker identity, co-articulation, vowel identity, and utterance position, vowel formant trajectory dynamics have word-specific components that are tied to their meaning in context: The F1 and F2 trajectories of words can be predicted from their contextualized embeddings with an accuracy that substantially exceeds a permutation baseline. Challenging modular cognitive models of speech production, these results indicate that, words' semantics co-determine the fine details of their articulation.",
+  "authors": [
+   "Xiaoyun Jin",
+   "Mirjam Ernestus",
+   "R. Harald Baayen"
+  ],
+  "published": "2026-07-23T14:54:18Z"
+ },
+ {
+  "arxiv_id": "2607.21400v1",
+  "title": "VoLN: Vision-Only Long-Horizon Navigation---Paradigm, Benchmark, and Method",
+  "abstract": "Vision-and-Language Navigation (VLN) enables embodied agents to follow natural-language instructions. However, route-level instructions commonly encode spatial priors, such as orientation, distance, and layout, that are not explicitly available from onboard sensing at deployment in open, GPS-denied environments. Benchmark performance under such interfaces therefore jointly reflects visual navigation ability and the use of route structure explicitly supplied by the task description. As a complementary formulation, we propose Vision-Only Long-Horizon Navigation (VoLN), which shifts route-relevant information from externally supplied instructions and global guidance to locally observable in-scene cues. In VoLN, goal views specify the destination, while route-relevant information is available only through locally observable in-scene cues that the agent must detect, interpret, and select online. We instantiate VoLN for aerial navigation through VoLN-UAV, a 7,210-episode benchmark that combines long-horizon goal-directed flight, continuous 3D motion, large viewpoint changes, and context-dependent beacon selection. We further provide VoLN-MLLM as an initial reference baseline. It aligns self-supervised visual features with a structured semantic space and predicts short-horizon waypoint segments from observation history, goal views, retrieved visual--semantic tokens, and proprioception. On the five-environment Test-Unseen split, it obtains success rates of 7.4%, 4.5%, and 1.8% on Easy, Normal, and Hard episodes, respectively. These results provide an initial evaluation of VoLN and reveal substantial remaining challenges in long-horizon evidence integration, cross-view goal matching, and closed-loop stability. Project page: https://admire-ljb.github.io/VoLN-UAV/",
+  "authors": [
+   "Jiabin Lou",
+   "Haopeng Wang",
+   "Yuanshuai Wang",
+   "Xinyu Liu",
+   "Xuxin Lv",
+   "Yuxin Guo",
+   "Lei Huang",
+   "Rongye Shi",
+   "Wenjun Wu"
+  ],
+  "published": "2026-07-23T15:02:01Z"
+ },
+ {
+  "arxiv_id": "2607.21401v1",
+  "title": "When Are Reasoning-Based Guardrails Not Efficient? ResponseGuard: A Fast Vision-Language Guard for Real-Time Moderation",
+  "abstract": "A vision-language AI assistant returns its answer as a stream of generated tokens. Therefore, a safety guard that watches that answer has to keep up with the stream and stop a harmful reply before a user reads it. Recent vision-language guardrails instead generate a chain of thought before they issue a verdict. They believe that step-by-step reasoning yields a safer guard. This design makes the guard heavy and slow, since the model must decode many tokens for harmfulness detection. We pose the question of whether a vision-language guard really needs to reason in order to screen a response. We answer with a guard that has no chain. ResponseGuard reads a harmful verdict from a single pooled representation of the request, the response, and the image in one forward pass. Across a standard multimodal guardrail benchmark, our 2B ResponseGuard outperforms a recent 3B reasoning-based vision-language guard on response harmfulness detection, without any reasoning and at about 150 times lower time cost. On request harmfulness the reasoning guard retains an overall lead, and the remaining gap on both tracks sits on the image-only cells. We observe that the gap may stem from the frozen vision encoders that both designs use rather than from the missing chain. We have also found the reasoning guard directs almost none of its verdict attention to the image. Based on a single-pass detection, ResponseGuard can screen an answer sentence by sentence as it streams and stop a harmful answer before it finishes. For guarding the response of a vision-language model, a calibrated single-pass label may provide a sufficient safety signal. We fully release all source code, trained models, and datasets at https://github.com/ndb796/ResponseGuard.",
+  "authors": [
+   "Dongbin Na"
+  ],
+  "published": "2026-07-23T15:02:24Z"
+ },
+ {
+  "arxiv_id": "2607.21402v1",
+  "title": "MSBraM: A Multi-scale Self-supervised Brain Foundation Model for Hierarchical EEG Dynamics Learning",
+  "abstract": "Self-supervised foundation models have recently shown strong potential for electroencephalogram (EEG)-based analysis. However, existing approaches struggle to capture the inherently multi-scale temporal structure of EEG signals, where local neural patterns and long-range dependencies jointly encode task-relevant information. This limitation hampers cross-scale representation learning and generalization across diverse downstream tasks. To address this challenge, we propose MSBraM, a Multi-Scale self-supervised Brain foundation Model designed to learn hierarchical EEG representations. MSBraM follows a two-stage pretraining framework. First, a multi-scale neural tokenizer discretizes raw EEG signals into semantic codes at different temporal resolutions via vector-quantized reconstruction. Second, the model is pretrained to predict masked codes using a curriculum multi-scale masking strategy, progressively integrating fine-grained local patterns with global temporal context. We pretrain MSBraM on over 2,400 hours of EEG data and evaluate it across 10 downstream tasks on 12 public datasets. Extensive experiments show that MSBraM achieves superior performance on other state-of-the-art pretrained models, demonstrating strong generalization and transferability. These results indicate that explicitly modeling multi-scale temporal dynamics is critical for effective EEG foundation models.",
+  "authors": [
+   "Tao Zhou",
+   "Jing Han",
+   "Lingyu Shu",
+   "Zixing Zhang"
+  ],
+  "published": "2026-07-23T15:03:04Z"
+ },
+ {
+  "arxiv_id": "2607.21403v1",
+  "title": "A Diffusion-Model Subpopulation Digital Twin for Mobile Health Deployment: A Case Study on the HeartSteps Intervention",
+  "abstract": "Mobile-health interventions increasingly use online learning and decision making algorithms to personalize when to nudge users toward healthier behavior, but a poorly designed algorithm can burden and disengage participants. New algorithm design decisions should therefore be vetted against realistic simulated users before each real-life deployment. We propose a method to develop ``JITAI-Twins'': digital twins of a target subpopulation for comparing candidate online algorithms before a just-in-time adaptive intervention (JITAI) deployment. The method builds on a conditional time-series diffusion model that is temporally consistent (future actions do not affect the generated past), and it supports repeated updating from three sources of information, in three steps: pre-training on a large observational dataset, fine-tuning on small prior intervention deployments in related populations, and inference-time calibration to the next target population from domain-scientist expertise. We validate the twin at each pre-deployment stage of the long-running HeartSteps series (v2 through v4) of physical-activity suggestion intervention deployments, treating each successive deployment as an upcoming study. The proposed method reproduces the target subpopulation's temporal and between-participant structure better than simpler simulators. These results suggest that our twin can be used to simulate a target deployment before it runs, the prerequisite for testing and informing online algorithm design decisions.",
+  "authors": [
+   "Ziping Xu",
+   "Yuyi Chang",
+   "Chenshun Ni",
+   "Nithin Sugavanam",
+   "Asim H. Gazi",
+   "Pedja Klasnja",
+   "Emre Ertin",
+   "Susan A. Murphy"
+  ],
+  "published": "2026-07-23T15:03:16Z"
+ },
+ {
+  "arxiv_id": "2607.21404v1",
+  "title": "MemTools: A Unified Research Framework for Interoperable Agent Memory",
+  "abstract": "While memory systems are essential for agent architectures, pervasive architectural fragmentation restricts systematic research. Existing implementations typically couple different stages of the memory lifecycle, entangle evaluation logic with specific datasets, and provide limited support for the management of heterogeneous memory types. We introduce MemTools, an interoperability research framework that decouples memory system components from their underlying deployment environments. MemTools standardizes the memory lifecycle through declarative data contracts, enabling the interchangeable assembly of components across different systems. It orthogonally separates benchmark datasets from execution protocols to facilitate controlled assessments. Furthermore, MemTools provides a unified computational interface for coordinating symbolic, neural, and multimodal memory representations within a shared runtime. Empirical evaluations on cross-system component integration, evaluation protocol reconfiguration, and heterogeneous memory coordination demonstrate that MemTools enables systematic isolation and analysis of memory design variables. These findings suggest that MemTools provides a practical and extensible infrastructure for advancing principled research on agent memory.",
+  "authors": [
+   "Chengfeng Zhao",
+   "Jinhui Chen",
+   "Sirui Liang",
+   "Shizhu He",
+   "Yequan Wang",
+   "Jun Zhao",
+   "Kang Liu"
+  ],
+  "published": "2026-07-23T15:04:34Z"
+ },
+ {
+  "arxiv_id": "2607.21405v1",
+  "title": "Anti-Periodic Positional Encoding: M\u00f6bius Boundary Conditions Make In-Context Retrieval Reliable",
+  "abstract": "M\u00f6bius RoPE is a rotary positional encoding built on the anti-periodic frequency ladder $\u03b8_i=\u03c0(2i+1)/N$: every rotation plane advances by an odd multiple of $\u03c0$ across the training context, so the positional holonomy is $-1$ and the two ends of the sequence are deterministically coupled through a closed-form Dirichlet \"dipole\"; to our knowledge this is the first anti-periodic boundary condition in positional encoding. We verify the theory numerically to $\\sim 10^{-6}$ and pretrain 48 models spanning six 160M-class and three 410M-class arms (2B FineWeb-Edu tokens each; the hybrid arm puts M\u00f6bius frequencies on 25% of heads). Hybrid perplexity is unchanged (29.66 vs. 29.72), but needle-in-a-haystack retrieval becomes reliable: $90.3\\pm5.7\\%$ versus $63.3\\pm31.4\\%$ at context 512 ($n=6$ seeds), observed worst seed 86% versus 14%, robust variance tests $p=0.013$-$0.029$ (unadjusted), recurring at 410M (Levene $p=0.040$). Matched controls isolate the mechanism: an aperiodic ladder in the same frequency band reproduces none of the effect, and a periodic (holonomy $+1$) ladder only a fraction. Swapping trained models' frequency table back to standard RoPE (weights frozen) collapses retrieval, with damage concentrated on far needles: trained models depend on this long-range geometry. A NoPE arm is even more reliable at short context but pays a 13% perplexity tax and extrapolates worst; only the anti-periodic hybrid pairs baseline perplexity with a high reliability floor. The effect is scoped to single-needle retrieval within the training window; a one-line frequency swap thus provides zero-cost insurance against the retrieval seed lottery.",
+  "authors": [
+   "Ji Ho Bae"
+  ],
+  "published": "2026-07-23T15:04:44Z"
+ },
+ {
+  "arxiv_id": "2607.21407v1",
+  "title": "Cycle-Consistent and Uncertainty-Aware Neural Surrogates for Tokamak Edge Plasmas",
+  "abstract": "The boundary and divertor plasma govern how a tokamak exhausts power and particles, setting heat fluxes, target conditions, and the onset of detachment. Predicting these quantities is essential for operating current and future devices, but edge simulations that resolve them are too slow for parameter scans, optimization, or real-time control. Machine-learning surrogates offer a fast alternative, yet most are forward-only: they cannot recover input parameters from observations or assess the reliability of their predictions. We introduce a cycle-consistent neural surrogate for edge plasmas, combining a conditional U-Net forward model with an optimization-based inverse method built on the frozen forward network. The forward model maps five control parameters to two-dimensional plasma-state fields on the SOLPS-ITER mesh; the inverse method enforces consistency between forward and inverse predictions, a self-supervised quality check needing no ground-truth labels at inference. An ensemble of multilayer perceptrons also predicts electron temperature and density profiles at the outboard midplane and divertor targets, with uncertainty estimates that flag where more simulations are needed. The forward model achieves normalized root-mean-square errors below 2.6% and Pearson correlations above 0.95 for all fields. Cycle-consistency regularization raises the average cyclical $R^2$ from 0.59 to 0.99 without degrading forward accuracy and enables recovery of the core fueling rate; all five control parameters are recovered with Pearson $r\\ge0.97$. A $k$-d tree warm start yields a database completion rate above 95%, versus roughly 30% outright failures when cold-started. With about $4\\times10^6$ parameters, the model produces full 2D predictions in milliseconds, five to six orders of magnitude faster than SOLPS-ITER, enabling real-time control, parameter scans, uncertainty analysis, and digital twins.",
+  "authors": [
+   "Abdourahmane Diaw",
+   "Sebastian De Pascuale",
+   "Jae-Sun Park",
+   "Ivan Paradela Perez",
+   "Jeremy D. Lore",
+   "Stefan Dasbach"
+  ],
+  "published": "2026-07-23T15:06:57Z"
+ },
+ {
+  "arxiv_id": "2607.21409v1",
+  "title": "Cautious optimism for deep parameterized quantum circuits",
+  "abstract": "A central challenge in quantum machine learning is understanding the scaling behavior of parameterized quantum circuits (PQCs). In particular, it remains unclear how their performance on unseen data changes as the number of trainable parameters increases. Prior works have derived formal generalization guarantees for quantum models, but it is well-known that many such results do not fully characterize generalization behavior in practice. In this work, we show that gradient-based PQCs can exhibit improved performance on unseen data as model size increases, displaying the phenomenon of double descent. This contrasts with the traditional view that larger models lead to degraded generalization. We provide analytical results rigorously underpinning this behavior by leveraging add-one-in perturbation techniques and spectral properties of random matrices. We support these results with numerical experiments on re-uploading PQCs across several data sets and training set sizes, consistently observing the predicted double descent behavior. While other obstacles on the path toward practical quantum machine learning remain, our finding that deeper parameterized quantum circuits do not necessarily exhibit degraded performance provides reasons for cautious optimism.",
+  "authors": [
+   "Marie Kempkes",
+   "Elies Gil-Fuster",
+   "Carlos Bravo-Prieto",
+   "Aroosa Ijaz",
+   "Alissa Wilms",
+   "Jens Eisert",
+   "Evert van Nieuwenburg",
+   "Vedran Dunjko"
+  ],
+  "published": "2026-07-23T15:11:31Z"
+ },
+ {
+  "arxiv_id": "2607.21412v1",
+  "title": "Euclid-MCP: A Model Context Protocol Server for Deterministic Logical Reasoning via Prolog",
+  "abstract": "Large Language Models (LLMs) excel at natural language understanding and generation but remain unreliable for multi-step logical reasoning, especially in safety-critical or compliance-sensitive domains. Recent neuro-symbolic approaches address this gap by coupling neural models with external symbolic engines, yet most integrations are bespoke and lack a standardized interface for tool-augmented agents. This paper presents Euclid-MCP, an open-source MCP server that provides deterministic logical reasoning via SWI-Prolog. Euclid-MCP introduces Euclid-IR, an engine-agnostic intermediate representation for Horn-clause logic that is human-readable, easy for LLMs to generate, and straightforward to compile into Prolog or alternative backends. The server exposes a compact tool interface that supports a translate-run-inspect-repair loop, enabling LLM clients to delegate inference while retaining full access to proof traces and derivation logs. We evaluate Euclid-MCP on a realistic IT security and compliance use case. Results show that while LLMs alone are sufficient on small knowledge bases, they hallucinate systematically on larger problems, whereas Euclid-MCP delivers exact answers with lower latency and more compact outputs. We argue that semantic RAG is fundamentally unsuited for rule enforcement, and that Euclid-MCP can serve as a stable, shared reasoning substrate for both RAG-based assistants and agentic systems.",
+  "authors": [
+   "Bartolomeo Bogliolo"
+  ],
+  "published": "2026-07-23T15:15:37Z"
+ },
+ {
+  "arxiv_id": "2607.21414v1",
+  "title": "Logical Regression for Planning with Axioms",
+  "abstract": "In automated planning, logical regression is an operation that returns the most general condition necessary for an action to achieve a particular formula. It has many applications, such as allowing for more robust plan execution and providing compact policies for non-deterministic planning. Although relatively simple to calculate in basic planning settings, logical regression becomes significantly more complex when additional factors, such as axioms, are present. We introduce a methodology for approximating the logical regression of an action in a domain that includes axioms; an approximation that limits conditions to partial states. Our method produces minimal partial states while avoiding the recalculation of axioms. To demonstrate the impact of our methods, we embed our form of regression in an execution monitoring context, a well-established setting that can benefit greatly from logical regression. Our results show that this form of regression can dramatically generalize partial states across multiple domains, reducing the number of variables considered for execution monitoring by up to 70%, and demonstrate that the resulting execution monitor is robust enough to recover frequently in an environment with unexpected changes: several domains recover over 50% of the time in our tests.",
+  "authors": [
+   "Connor Little",
+   "Christian Muise"
+  ],
+  "published": "2026-07-23T15:16:48Z"
+ },
+ {
+  "arxiv_id": "2607.21419v1",
+  "title": "PATS: Policy-Aware Training Scaffolding for Agentic Reinforcement Learning",
+  "abstract": "In long-horizon LLM agent reinforcement learning, weak policies often repeat similar failures, producing uninformative rollout trajectories and limiting effective policy optimization. Existing skill-centric methods improve exploration by optimizing, filtering, or internalizing reusable skills. However, they remain centered on the skills themselves rather than being designed as adaptive training-time support for the evolving policy. To address this, we propose a policy-centric training paradigm that reframes skills as a dynamic training scaffold. Our framework, Pats, converts rollout groups from the latest policy into evidence cards and uses task-specific evaluation to adjust the context used in subsequent rollouts. Concrete guidance helps weak policies to complete challenging tasks. As policy improves, redundant context is revised or removed to reduce reliance on explicit guidance while preserving useful rollout variation. The policy is optimized with environmental rewards using standard RLVR, and the training scaffold is discarded at deployment. On ALFWorld and WebShop, Pats improves over strong baselines by up to 18.6%. Across seven search-augmented QA benchmarks, it remains competitive while using 32.1% fewer prompt tokens than the baseline.",
+  "authors": [
+   "Yipeng Shi",
+   "Zhipeng Ma",
+   "Yue Wang",
+   "Qitai Tan",
+   "Yang Li",
+   "Peng Chen",
+   "Zhengzhou Zhu"
+  ],
+  "published": "2026-07-23T15:24:35Z"
+ }
+]

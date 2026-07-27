@@ -1,0 +1,278 @@
+[
+ {
+  "arxiv_id": "2607.22075v1",
+  "title": "FSE: Continual Learning for Named Entity Recognition by Fast-Slow Experts",
+  "abstract": "Continual Learning for Named Entity Recognition (CLNER) enable models to incrementally learn new entity types without forgetting previously acquired ones. However, existing methods suffer from catastrophic forgetting and insufficient exploitation of shared information across tasks. This paper proposes FSE, a Fast-Slow Experts enhanced span-based NER model for CLNER. The shared fast expert learns token-level links to efficiently filter out unlikely spans, while the task-specific slow expert performs span classification only on the remaining candidates. It stabilizes learning by promoting knowledge sharing across tasks and maintains plasticity by reducing learning burden at each task. A length-decay negative sampling strategy to mitigate span imbalance is also introduced. Extensive experiments on OntoNotes and FewNERD synthestic datasets demonstrate that FSE achieves state-of-the-art performance in CLNER scenarios, with effectiveness of each component, empirical evidence of faster convergence and expected functionality of both experts.",
+  "authors": [
+   "Yunan Zhang",
+   "Yang Fan",
+   "Heng Li",
+   "Xiangping Wu",
+   "Qingcai Chen"
+  ],
+  "published": "2026-07-24T08:20:01Z"
+ },
+ {
+  "arxiv_id": "2607.22081v1",
+  "title": "A Leakage-Free Stacked Ensemble Method for Multiclass Classification",
+  "abstract": "Multiclass classification is a fundamental problem across a wide range of domains. It is still challenging due to possession of high inter-class similarity, class imbalance datasets, and variability in data distributions. Rule-based classifiers such as XGBoost often achieve stronger performance on structured features, but they are limited in capturing smooth functional relationships among variables. Similarly, neural network models can represent complex nonlinear interactions but frequently suffer from overfitting and generalization issues. To address these limitations, we propose LFS-FRAME, a Leakage-Free Stacked ensemble framework that integrates functional learning using Kolmogorov-Arnold Networks (KAN) and rule-based learning via XGBoost for robust multiclass classification. The proposed framework constructs unbiased meta-features by employing a strict out-of-fold stacking strategy to ensure complete isolation between training and validation data hence preventing performance leakage. By learning over probabilistic outputs from heterogeneous base learners, the meta-classifier effectively exploits both global functional patterns and sharp decision boundaries present in the complex data. Experimental evaluations on multi-class datasets demonstrate that LFS-FRAME improves performance metrics, and overall accuracy is 89.85% in identifying major families and 81.74% in identifying sub-families relative to strong single-model baselines. These results highlight the effectiveness of leakage-free functional and rule-based stacking for reliable and generalizable multiclass classification.",
+  "authors": [
+   "S. P. Sharmila",
+   "Aruna Tiwari"
+  ],
+  "published": "2026-07-24T08:26:40Z"
+ },
+ {
+  "arxiv_id": "2607.22083v1",
+  "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Mode",
+  "abstract": "We present Nanbeige4.2-3B, a compact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer stack to increase capacity without adding parameters. For SFT data and trajectory construction, we expand the diversity of executable environments, task assets, and agentic scaffolds through real-world deployment and large-scale synthesis. Our RL pipeline applies mixed-mode RLHF over Think and Non-Think responses to improve overall model quality and reduce failure cases, length-controlled reasoning RL to balance accuracy and reasoning efficiency, and agentic RL with outcome and process rewards to stabilize long-horizon training. Extensive evaluations show that Nanbeige4.2-3B outperforms larger models, including Qwen3.5-9B and Gemma4-12B, across diverse agentic benchmarks while remaining competitive on reasoning and alignment tasks. Performance with OpenClaw further supports its use as a compact local personal assistant.",
+  "authors": [
+   "Nanbeige Lab",
+   " :",
+   "Chen Yang",
+   "Chengrui Huang",
+   "Fufeng Lan",
+   "Hanhui Chen",
+   "Hao Zhou",
+   "Huatong Song",
+   "Jiaqi Cao",
+   "Jiaying Zhu",
+   "Jinlin Niu",
+   "Kai Wang",
+   "Lisheng Huang",
+   "Qiliang Liang",
+   "Ran Le",
+   "Ruixiang Feng",
+   "Shuang Sun",
+   "Tao Gu",
+   "Tao Zhang",
+   "Tianyu Luo",
+   "Yang Song",
+   "Yun Xing",
+   "Yuntao Wen",
+   "Ziyao Xu",
+   "Zongchao Chen",
+   "Zongqiang Li"
+  ],
+  "published": "2026-07-24T08:33:26Z"
+ },
+ {
+  "arxiv_id": "2607.22086v1",
+  "title": "MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection",
+  "abstract": "Autoencoder-based anomalous sound detection is attractive for machine condition monitoring because it can be trained using only normal recordings and yields an interpretable anomaly score from reconstruction error. Most prior work uses spectrogram autoencoders, but reconstructing detailed time--frequency patterns is sensitive to noise and transients, and models can reconstruct some anomalous inputs well, weakening normal--anomaly separation. We propose MemNMF, a constrained reconstruction method that operates on the Linear Predictive Coding spectrum, a compact estimate of the spectral envelope. MemNMF initializes a memory module from an NMF dictionary learned on normal LPC spectra and reconstructs each input as an attention-weighted combination of prototypical normal spectral patterns. Experiments on MIMII and DCASE 2020 Task 2 across multiple machine types and operating conditions show that LPC-spectrum inputs improve a standard autoencoder baseline and that MemNMF yields further gains, with especially strong robustness under noisy, non-stationary settings.",
+  "authors": [
+   "Phurich Saengthong",
+   "Takahiro Shinozaki"
+  ],
+  "published": "2026-07-24T08:34:12Z"
+ },
+ {
+  "arxiv_id": "2607.22098v1",
+  "title": "Reasoning Denoiser: Denoising Reasoning Traces for Hallucination Detection in Large Reasoning Models",
+  "abstract": "Large reasoning models (LRMs) generate long reasoning traces before producing final answers. While these traces may contain useful signals for hallucination detection, harnessing them is non-trivial because long trajectories often include noisy steps that obscure the cues relevant to truthfulness assessment. In this paper, we identify two prevalent forms of reasoning noises, i.e., irrelevant steps and repetitive steps, and show that both substantially degrade hallucination detection performance. Existing confidence-based scores and naive embedding-based filtering fail to reliably separate noisy from informative steps. To address this challenge, we propose REDE, a novel learning framework for denoising reasoning traces for hallucination detection. Specifically, REDE leverages final-answer attention as an automatic supervision signal to shape the step-level representation space, yielding refined embeddings in which noisy steps can be reliably identified and filtered. REDE can be readily plugged into diverse hallucination detectors by operating on the filtered reasoning trajectory after removing noisy steps. Extensive experiments on multiple reasoning benchmarks show that REDE consistently improves detection performance over competitive baselines.",
+  "authors": [
+   "Junlin Fang",
+   "Do Nguyen-Thanh",
+   "Xiaogang Xu",
+   "Zhen Fang",
+   "Sean Du"
+  ],
+  "published": "2026-07-24T08:48:17Z"
+ },
+ {
+  "arxiv_id": "2607.22100v1",
+  "title": "MEUSLI: a Multilingual Projector for LLM-based ASR and Beyond",
+  "abstract": "Lightweight projectors are an established way to connect pre-trained speech encoders with large language models (LLMs), mapping acoustic features into token-level embeddings for tasks like ASR and spoken question answering. Existing systems, however, typically only support a few languages and are often limited to English. We introduce MEUSLI, the first open-science multilingual projector family that links a Whisper encoder with open-source multilingual LLMs, enabling fully open-source end-to-end ASR in 28 European languages. MEUSLI extends prior monolingual pipelines, delivering strong results across high- and low-resource languages. Using proper continual leaning techniques, MEUSLI can be easily extended to other languages not seen in training. We further demonstrate that the MEUSLI projector can be leveraged beyond ASR, enabling multilingual speech translation and topic identification with only a few hours of task specific supervision per language. Overall, MEUSLI provides a solid foundation for multilingual speech understanding tasks, supporting scalable and inclu- sive open-source SpeechLLM",
+  "authors": [
+   "Lorenzo Concina",
+   "Seraphina Fong",
+   "Marco Matassoni",
+   "Alessio Brutti"
+  ],
+  "published": "2026-07-24T08:52:44Z"
+ },
+ {
+  "arxiv_id": "2607.22114v1",
+  "title": "Pretraining EHR Foundation Models with Patient-Aware Sampling",
+  "abstract": "Autoregressive foundation models for electronic health records (EHRs) typically inherit pretraining methods from language modeling, where patient trajectories are concatenated into a single token stream and windows are sampled from that stream. In EHR data, this choice is consequential: windows may mix multiple patients, and patients with longer records contribute more optimization updates, potentially introducing bias. We propose Patient Sampling, a pretraining sequence-construction method that allows us to control how training signal is distributed across patients. We compare this method to the standard approach, which we refer to as Global Stream. We show that stochastic Patient Sampling with controllable weighting improves performance on real-world EHR data. Across downstream clinical tasks on MIMIC-IV v2.2 and v3.1, Patient Sampling improves Macro AUROC and AUPRC over the Global Stream baseline. These results identify training and validation sequence construction as important and underexplored design choices for autoregressive EHR foundation models.",
+  "authors": [
+   "Joshua Placidi",
+   "Yuxuan Liu",
+   "Jinpei Han",
+   "Marek Rei",
+   "A. Aldo Faisal"
+  ],
+  "published": "2026-07-24T09:10:43Z"
+ },
+ {
+  "arxiv_id": "2607.22115v1",
+  "title": "Benchmarking Text-to-SQL under Role-Based Access Control",
+  "abstract": "Given a database S and a natural language question Q, text-to-SQL systems aim to generate an SQL query that correctly answers Q when executed against S. Currently, popular text-to-SQL benchmarks mostly assume unrestricted access to S; in practice, however, user access is often restricted, e.g., through role-based access control (RBAC) policies. This leads to a potential disconnect between benchmarking results and real-world performance: an LLM with high benchmark scores might perform poorly in an access-controlled environment, by frequently violating RBAC, or rejecting a query q that could be answered with only permitted data in S. Motivated by this, we present a comprehensive text-to-SQL benchmarking framework with realistic RBAC constraints, which features an LLM-assisted workflow that augments existing text-to-SQL benchmarks with plausible user roles and access policies. To do so, we formulate the problem of role synthesis as a structured reasoning process over the database schema, in which the LLM first infers the application context from the schema, and then derives role responsibilities and access scopes consistent with this context. This process is audited by human-in-the-loop quality control, in which domain experts perform metric-guided screening on the generated roles. Besides the augmented dataset, the proposed framework also contains evaluation metrics that identify RBAC-specific failure modes, and disentangle SQL utility from access-control compliance. We apply the proposed framework to several widely-used benchmarks, and conduct a systematic empirical study of state-of-the-art text-to-SQL systems. The results show that many solutions (especially open-weight LLMs) with high benchmarking scores under an unrestricted setting suffer sharp performance degradation once access constraints are in place, due to frequent RBAC violations.",
+  "authors": [
+   "Yang Fei",
+   "Yangfan Jiang",
+   "Yin Yang",
+   "Xiaokui Xiao"
+  ],
+  "published": "2026-07-24T09:10:58Z"
+ },
+ {
+  "arxiv_id": "2607.22119v1",
+  "title": "One Hand Watches The Other: Dynamic Multi-Agent Cooperation for Sample-Efficient Bimanual Manipulation in Dynamic Environments",
+  "abstract": "Multi-stream robot manipulation policies achieve unparalleled sample efficiency and generalization by modeling actions relative to environmental reference frames. However, existing approaches typically assume these frames to be strictly exogenous. This causal assumption collapses in dynamic settings, such as when a single robot arm manipulates a moving object or when two arms coordinate, where each arm effectively becomes part of the dynamic environment of the other. We propose DynaMAC, a lightweight, policy-agnostic framework that resolves this causal limitation while preserving the sample efficiency, computational speed, and flexibility of multi-stream policies, DynaMAC treats the opposite arm as a dynamic task parameter, thereby providing a unified formulation for dynamic manipulation and bimanual coordination without requiring an explicit leader-follower relationship. To rigorously evaluate these capabilities, we introduce DynaBench, a novel benchmark for robot manipulation in dynamic environments. Across both dynamic environments and bimanual manipulation tasks, DynaMAC outperforms leading probabilistic and generative baselines by over 35 percentage points while requiring 20 times fewer samples. Crucially, DynaMAC generalizes zero-shot from static demonstrations to dynamic environments, substantially simplifying data collection and establishing an elegant bridge toward human-robot collaboration.",
+  "authors": [
+   "Jan Ole von Hartz",
+   "Abhinav Valada",
+   "Joschka Boedecker"
+  ],
+  "published": "2026-07-24T09:14:07Z"
+ },
+ {
+  "arxiv_id": "2607.22136v1",
+  "title": "Dynamic Commonsense Coordination for Empathetic Response Generation",
+  "abstract": "Empathetic Response Generation (ERG) requires models to recognize users' emotions and generate empathetic responses. Commonsense knowledge has been shown to support such reasoning, yet existing approaches typically reuse fixed commonsense representations across understanding and generation, limiting their ability to coordinate such knowledge across different stages. We propose DCC, a Dynamic Commonsense Coordination Framework with three complementary modules: residual-based commonsense interaction (SCE-AttnRes) to integrate contextual and situational commonsense representations, Association-Guided Commonsense Filtering (AGCF) to down-weight low-relevance commonsense relations, and Iterative Commonsense-Aware Decoding (ICAD) to dynamically retrieve commonsense memories during generation. Experiments on the Empathetic-Dialogues benchmark show that DCC improves emotion classification accuracy and response diversity over the CEM baseline while maintaining comparable perplexity. An LLM-based blind evaluation further demonstrates that DCC generates responses with better relevance, coherence, and informativeness. The code and implementation details will be publicly available at https://github.com/Hanabi-Q/DCC-ERG.",
+  "authors": [
+   "Zhengyu Qi"
+  ],
+  "published": "2026-07-24T09:30:57Z"
+ },
+ {
+  "arxiv_id": "2607.22139v1",
+  "title": "CARDIAG: A Dense Segment Classification Benchmark of Deep Learning Architectures for Coronary Angiography",
+  "abstract": "Accurate pixel-level classification of coronary angiograms is critical for cardiovascular disease assessment, yet the field lacks standardized evaluation protocols. In this work we demonstrate a new benchmark for the assessment of deep learning models which densely classify pixels of coronary angiograms to one of SYNTAX classes (or background). The evaluation covers 24 distinct architectures starting with classic convnets to recent state-space-based vision algorithms. We release CARDIAG - a multi-center, multi-label dataset which we carefully split to reliably compute metrics, accounting for diameter error, overlap, centerline quality and calibration. The data contains SYNTAX labels, binary, uncertainty and segmentation masks as well as intermediate frames together with the selected non-sensitive DICOM metadata. From the multitude of algorithms, we nominate ConvNeXt V2 encoder with DeepLab V3 Plus decoder as the best performing, achieving macro $F_1=0.456$, which we then ensemble with Mamba U-Net and Feature Pyramid Network, for an increased $F_1=0.479$. We demonstrate all the architectures to be well calibrated and determine the generalization of the top 5 methods, together with the data efficiency of these architectures. We highlight the importance of both high-resolution and low-resolution features in encoding. We also demonstrate the model correctness in the context of patient demographic, vessel sides and projection angle configurations. Overall the released benchmark allows for future studies to robustly and rigorously assess the proposals, not only for SYNTAX segmentation, but lesion detection and many more.",
+  "authors": [
+   "Dominik Bernard Lau",
+   "Hubert Malinowski",
+   "Jerzy Szyjut",
+   "Adam Brzeski",
+   "Tomasz Dziubich",
+   "Rados\u0142aw Targo\u0144ski",
+   "Tomasz Figatowski",
+   "Natalia Zieli\u0144ska"
+  ],
+  "published": "2026-07-24T09:35:18Z"
+ },
+ {
+  "arxiv_id": "2607.22143v1",
+  "title": "TriGlue: a Biology-Inspired Generative Model for Generating Molecular Glue-Induced Ternary Complex",
+  "abstract": "Molecular glue degraders have emerged as a promising strategy for targeted protein degradation by inducing ternary complex formation between an E3 ubiquitin ligase and a target protein. Despite their therapeutic potential, computational design of molecular glues remains largely unexplored. Unlike conventional structure-based drug design, molecular glue design is governed by the unknown protein-protein interface and requires the simultaneous modeling of ligand generation, protein-protein docking, and ternary complex assembly. In this work, we formulate molecular glue design as a ternary complex generation problem and propose a biology-inspired generative framework, TriGlue. Motivated by the mechanism of molecular glue action, we decompose ternary complex generation into two coupled stages: interface estimation and interface-conditioned complex generation. First, we develop an SE(3)-equivariant interface estimation module that predicts a geometrically constrained protein-protein interface from unbound monomer structures. Second, we introduce an interface-conditioned ternary flow matching network that jointly generates the molecular glue and predicts the rigid-body transformation required to assemble the ternary complex. Extensive experiments demonstrate that TriGlue generates chemically valid molecules and produces plausible ternary complexes, which highlight the potential of biology-inspired generative modeling for accelerating molecular glue discovery. Our code is available at https://anonymous.4open.science/r/molecular-glue-design-806B.",
+  "authors": [
+   "Yuliang Yan",
+   "Shuo Yan",
+   "Haochun Tang",
+   "Yiqin Sun",
+   "Enyan Dai"
+  ],
+  "published": "2026-07-24T09:41:29Z"
+ },
+ {
+  "arxiv_id": "2607.22148v1",
+  "title": "dRAE: Representation Autoencoder with Hyper-Spherical Codes",
+  "abstract": "In this work, we aim to discretize the high-dimensional visual representations to bridge the gap with language models - a non-trivial challenge, as existing quantization methods suffer from codebook collapse, failing to scale while preserving semantic coherence. We identify the root cause as metric mismatch: standard Euclidean codebook objectives are fundamentally misaligned with the anisotropic geometry of representation space, leading to codebook embeddings with high-variance magnitude scales and uneven angular distributions that hinder scalability. To address this, we propose Hyper-Spherical Quantization (HSQ), which decouples semantic content from feature magnitude via angular routing, preventing code assignment from being dominated by scale rather than meaning. The resulting discrete Representation Autoencoder (dRAE) achieves high-fidelity reconstruction while preserving semantic integrity and supporting scalable codebook budget. Extensive experiments demonstrate consistent performance gains as the vocabulary size scales to 131{,}072, along with 100\\% codebook utilization, simplified training pipeline, and strong performance across understanding and generation tasks.",
+  "authors": [
+   "Tianren Ma",
+   "Lin Long",
+   "Chuyan Chen",
+   "Mu Zhang",
+   "Junbo Zhao",
+   "Tong Zhang",
+   "Qixiang Ye"
+  ],
+  "published": "2026-07-24T09:47:32Z"
+ },
+ {
+  "arxiv_id": "2607.22149v1",
+  "title": "Unbiased Open World Regularization for Fair Self-Supervised Learning",
+  "abstract": "Despite recent advances, self-supervised learning (SSL) models and Joint-Embedding Predictive Architectures (JEPAs) remain susceptible to learning spurious biases in the dataset. These techniques rely on regularization, which prevents representation collapse by enforcing a global target distribution such as a multivariate Gaussian or a uniform distribution on the sphere. However, these global constraints are insufficient to prevent bias entanglement, as task-irrelevant features can still segregate the latent space into distinct sub-regions. While recent approaches like Entangling and Disentangling (EnD) and Fair Supervised Contrastive Learning (FSCL) empirically debias the latent space, we show that they act as partial approximations of conditional distribution matching. To enforce this matching explicitly, we propose Unbiased Open World Regularization (UOWReg), an encoder-only framework. We show that this shift from a global to a conditional objective guarantees statistical independence between the learned representations and the targeted attributes, regardless of the chosen target distribution. We empirically validate this framework across both Gaussian and spherical latent spaces, using statistical measures to enforce these target distributions. While conditional matching successfully mitigates bias with both distributions, we demonstrate that enforcing conditional uniformity on the sphere yields a lower linearprobing classification error. Empirically, UOWReg reduces Equalized Odds violations on the CelebA benchmark while maintaining competitive classification accuracy compared to existing encoder-only baselines. Furthermore, we introduce the Synthetic Engraving Task-a novel setting in which a dominant macro-structure masks a fine-grained micro-signature. We show that UOWReg effectively prevents the subpopulation collapse observed in standard SSL, successfully isolating micro-signatures even when heavily entangled with the global structure.",
+  "authors": [
+   "L{\u00e9}o Nicollier",
+   "Marc Pic",
+   "Pablo Mus{\u00e9}",
+   "Enric Meinhardt-Llopis",
+   "Gabriele Facciolo"
+  ],
+  "published": "2026-07-24T09:51:22Z"
+ },
+ {
+  "arxiv_id": "2607.22153v1",
+  "title": "Industrial Tokenization for LLM-Based Health Intelligence: A Federated Architecture for Industrial Evidence Integration",
+  "abstract": "Industrial health management increasingly relies on heterogeneous information sources, including condition monitoring systems, supervisory control and data acquisition systems, maintenance records, inspection results, and prognostic models. Although large language models provide new opportunities for cross-source reasoning, industrial data and analytical outputs differ substantially in structure, temporal resolution, physical meaning, and reliability. Directly integrating such heterogeneous information into a monolithic model may reduce interpretability, traceability, and adaptability to equipment and data changes. This paper introduces Industrial Tokenization, a conceptual interface for transforming source-specific analytical outputs into structured and machine-interpretable units of industrial evidence, termed Industrial Tokens. Unlike numerical tokens used to encode raw time-series data, Industrial Tokens represent domain-grounded evidence together with source, temporal scope, operating context, analytical meaning, quality or confidence information, and provenance. Based on this concept, a federated industrial architecture is proposed, where heterogeneous analytical subsystems retain autonomy while exposing standardized Industrial Tokens to a central reasoning layer. As an initial implementation, this study presents an end-to-end DiagnosisToken pathway based on vibration-diagnostic outputs, rule-based event aggregation, structured textual token generation, and LLM-based interpretation. Other Industrial Tokens, including SCADA-based condition-monitoring tokens, maintenance tokens, and prognostic tokens, are reserved as future extensions. The proposed framework positions Industrial Tokenization as a semantic interface between domain-specific industrial intelligence and LLM- or agent-based reasoning, rather than another method for encoding raw industrial data.",
+  "authors": [
+   "Deshui Li",
+   "Xiao-Ming Yuan",
+   "Zishun Wang"
+  ],
+  "published": "2026-07-24T09:56:48Z"
+ },
+ {
+  "arxiv_id": "2607.22157v1",
+  "title": "Learning on the Job: Continual Learning from Deployment Feedback for Frozen-Weights Agents",
+  "abstract": "AI agents encounter learning opportunities in every episode they run, and discard nearly all of them: the underlying models are frozen at deployment, so an agent that resolves a difficult request today starts from zero when it recurs tomorrow. Yet ordinary operation already produces feedback, in the form of outcome verdicts and after-the-fact corrections. We show that this feedback is a sufficient signal for continual learning when the frozen model is paired with an external memory that distils each episode into retrievable natural-language rules. On the banking domain of $\u03c4$-bench, against a static-RAG control retrieving over the complete policy corpus, learning from the one-bit outcome verdict lifts single-trial success to 1.6$\\times$ the baseline, and learning from corrections to 2.6$\\times$, converting 22 of the 84 tasks the baseline never solves. The result spans the deployment spectrum, measured on Mistral Large, an open-weights model that organisations with data sovereignty requirements can self-host, and replicated on a frontier model, Claude Sonnet 5. The accumulated memory also transfers: each model, reading the store built by the other, rises above its own no-memory baseline. The harness, protocol, and data are released.",
+  "authors": [
+   "Valentin Tablan",
+   "Scott Taylor",
+   "Kristoffer Bernhem"
+  ],
+  "published": "2026-07-24T10:01:00Z"
+ },
+ {
+  "arxiv_id": "2607.22165v1",
+  "title": "DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents",
+  "abstract": "LLM-based database agents show promise, but differing task scopes, testbeds, and metrics hinder comparison. We identify four gaps between evaluation and production operations: live-environment fidelity (multi-turn read-write interaction with a running database); observation-space scale and complexity (causal diagnosis across thousands of time series, business logs, and concurrent activity); solution-space openness (multiple remediations with different operational trade-offs); and scenario complexity and coverage (faults cascading across internal mechanisms and operational domains). We present DBA-Bench, a benchmark addressing these gaps through production fidelity, outcome-first evaluation, and controlled scenario reproducibility. It uses instrumented PostgreSQL environments with active workloads, persistent state, and multi-source observations; defines success by measurable recovery or fault elimination under safety constraints; and restores snapshots with scenario-specific checks before each run. The benchmark contains 106 scenarios across seven task domains, with two public difficulty labels based on reference-path diagnostic depth and environmental complexity. We evaluate nine baseline groups, including six foundation-model systems, two GPT-5.5-backed database agents, and a Human DBA reference. Across 848 automated runs, Diagnosis, Outcome, and Safe Pass rates are 32.7%, 19.6%, and 12.4%; the best automated baseline reaches 17.9% Safe Pass versus 93.4% for the Human DBA reference. Automated Safe Pass falls from 19.6% on Easy scenarios to 7.6% on Hard scenarios, underscoring the difficulty of safe end-to-end remediation.",
+  "authors": [
+   "Junming Chen",
+   "Junyang Jiang",
+   "Xu Chen",
+   "Zibo Liang",
+   "Kai Zheng"
+  ],
+  "published": "2026-07-24T10:11:24Z"
+ },
+ {
+  "arxiv_id": "2607.22166v1",
+  "title": "Learning Spatiotemporal Decision Priors for Efficient Path Planning under Partial Observability",
+  "abstract": "Path planning under partial observability remains challenging because an agent must make long-horizon navigation decisions from only locally bounded observations. Nevertheless, historical trajectories contain reusable experience-guided directional preferences. Classical planners, however, typically solve each instance from scratch and lack an explicit mechanism to exploit such transferable decision knowledge, often leading to redundant node expansions and locally myopic search behaviors. Motivated by this limitation, this paper proposes ImiPath, a prior-guided learning framework that distills reusable spatiotemporal decision priors from demonstration trajectories and uses them as experience-informed directional guidance to bias planners toward reliable and promising search directions under partial observability. Specifically, ImiPath first constructs a local spatiotemporal observation representation, which encodes the spatial information of the local environment and the temporal information of historical trajectories. The SpatioTemporal-Attention Policy Network (STAPNet) then transforms this representation into dicision priors. These priors are further incorporated into heterogeneous planners as directional guidance, biasing the search toward locally promising regions. Extensive experiments demonstrate that ImiPath achieves competitive path quality and improves search efficiency by reducing redundant node expansions under local observability. Additional physical experiments on a magnetic microrobot platform further validate the adaptability and practical deployment potential of the proposed framework.",
+  "authors": [
+   "Yi Liu",
+   "Hongda Zhang",
+   "Leyao Zou",
+   "Chunlei Meng",
+   "Ziqing Zhou",
+   "Yuning Chen",
+   "Zhuo Zou",
+   "Lida Xu",
+   "Zhongxue Gan",
+   "Chun Ouyang"
+  ],
+  "published": "2026-07-24T10:13:22Z"
+ },
+ {
+  "arxiv_id": "2607.22173v1",
+  "title": "Bowel Obstruction Detection and Localization on Abdominal CT with Deep Learning",
+  "abstract": "Bowel obstruction is a common and potentially life-threatening gastrointestinal condition. In the face of rising diagnostic workloads, the automated diagnosis of bowel obstruction on CT scans supports radiologists by accelerating detection and improving patient outcomes. In this work, we propose a deep learning framework with a multi-task objective that jointly detects bowel obstruction and localizes its transition zone. Additionally, we extend the method with an inherently interpretable classification method that locates the suspected transition point within a slice. It does so by learning a probabilistic selection mask that faithfully bases the classifier's prediction solely on a small image region. The proposed method is evaluated on an internal dataset comprising 1,427 abdominal CTs. Here, the model achieves an obstruction detection test accuracy of 93% and a Hit@10 transition zone localization of 95%. As the first method to reliably localize the transition zone, this marks a significant step towards the automated identification of this critical clinical landmark.",
+  "authors": [
+   "Moritz Vandenhirtz",
+   "Andrea Agostini",
+   "Dana Belde",
+   "M\u00e9lanie Roschewitz",
+   "Ismaiel Chikh Bakri",
+   "Tilo Niemann",
+   "Andr\u00e9 Euler",
+   "Julia E Vogt"
+  ],
+  "published": "2026-07-24T10:23:12Z"
+ },
+ {
+  "arxiv_id": "2607.22182v1",
+  "title": "From Isolated Tasks to Structured Capabilities: A Multilayer Taxonomy for Large Language Models",
+  "abstract": "Large language model (LLM) evaluation spans diverse tasks and benchmarks, yet evidence remains organized around tasks rather than the capabilities they probe. This fragmentation limits cross-study comparison, obscures capabilities tasks recruit, and makes coverage gaps difficult to identify. We introduce a multi-layer taxonomy of 14 capability domains and 91 subskills across Primitive, Constructed, and Integrative layers. Human cognitive science guides capability definition and organization, not LLM architecture. Layer assignments draw on developmental precedence and hypothesized functional support, while human-origin constructs are adapted to observable model behavior. To demonstrate operational utility, we screened 31,505 papers from ACL, AAAI, ICML, and NeurIPS between 2023 and 2025 and mapped 15,934 LLM-focused papers through multi-model annotation, consensus, and arbitration. Direct research attention concentrated on Language-Semantic Competence (3,551; 22.3%), Reasoning (3,388; 21.3%), Planning and Decision-Making (2,149; 13.5%), and Perception (1,954; 12.3%), whereas six domains appeared in fewer than 2% of papers. Within domains, the most frequent subskill had a median prevalence of 97.9% and appeared in at least 90% of papers in 10 of 14 domains. Language-Semantic Competence and Reasoning formed the highest-volume pair (n = 1,864; 11.7%; lift = 2.47), whereas Theory of Mind and Social Reasoning and Interaction showed the highest lift among pairs with at least 20 co-occurrences (n = 62; lift = 30.84). By shifting the unit of analysis from isolated tasks to structured capabilities, the taxonomy supports research organization, coverage audits, evaluation interpretation, and testable hypotheses for diagnosis, training, and transfer.",
+  "authors": [
+   "Shixin Fang",
+   "Jiachen Wo",
+   "Wenjuan Qin",
+   "Sihang Jiang",
+   "Yanghua Xiao"
+  ],
+  "published": "2026-07-24T10:49:50Z"
+ }
+]

@@ -1,0 +1,263 @@
+[
+ {
+  "arxiv_id": "2607.21421v1",
+  "title": "Bridging the Gap Between Plausibility and Admissibility: Constraint-Aware Flow Maps for Dynamic Graph Systems",
+  "abstract": "Generative models can support decision-making under uncertainty by producing ensembles of plausible future system trajectories, but statistical plausibility does not ensure structural feasibility. This study investigates whether post-sampling symbolic constraints can improve the reliability of generative trajectory modeling in dynamic graph-structured systems. A conditional diffusion model generates future graph-state trajectories from partial observations, while an external symbolic layer applies hard filtering, soft weighting, or projection-based repair. The framework is evaluated on two controlled synthetic regimes: a compact graph and a medium-complexity dependency graph, using metrics for structural validity, sample efficiency, diversity, robustness, and calibration. In the compact regime, the model produces an invalid probability mass of 0.002996, indicating an almost entirely admissible trajectory manifold. Under the same architecture and training protocol, invalid mass increases to 0.155929 in the medium-complexity regime. Hard filtering removes all invalid retained trajectories while preserving 84.4% of generated samples, whereas soft weighting preserves effective sample size but yields only limited validity gains. Family-level analysis shows that dependency constraints account for nearly all observed inadmissibility. These results indicate that statistical plausibility and structural admissibility are distinct reliability properties and that symbolic constraint handling becomes more valuable as graph-structural complexity increases.",
+  "authors": [
+   "Michael Romei de Socio",
+   "Gian Luca Pozzato",
+   "Alessio Merlo"
+  ],
+  "published": "2026-07-23T15:25:42Z"
+ },
+ {
+  "arxiv_id": "2607.21424v1",
+  "title": "An Evaluation Framework for Structured Audio Captions Validated by Controlled Perturbations",
+  "abstract": "Recent advancements in automated audio captioning (AAC) have shifted from monolithic sentence generation toward structured formats that explicitly disentangle distinct acoustic and semantic properties. However, evaluating this heterogeneous data remains a significant challenge. Existing caption metrics focus on flat textual outputs and fail to reliably assess multimodal attributes. To bridge this gap, we propose a multi-axis evaluation framework tailored for structured audio descriptions. Building on the AudioCards dataset, we evaluate outputs across five orthogonal axes: tag-sets, descriptions, logical reasoning, numeric measurements, and spectral profiles. Our approach combines Large Language Model (LLM) judges to capture semantic nuance with deterministic computational metrics to precisely measure acoustic deviations. To rigorously validate the reliability of this framework, we introduce a controlled perturbation testing protocol that injects typed, graded errors into groundtruth annotations. Our results demonstrate that this framework successfully distinguishes meaning-preserving paraphrases from genuine semantic and acoustic corruptions.",
+  "authors": [
+   "Liang-Yuan Wu",
+   "Sripathi Sridhar",
+   "Mark Cartwright",
+   "Magdalena Fuentes"
+  ],
+  "published": "2026-07-23T15:26:52Z"
+ },
+ {
+  "arxiv_id": "2607.21426v1",
+  "title": "Semantic-Aware Task Clustering for Constructive and Cooperative Multi-Tasking",
+  "abstract": "Cooperative multi-task semantic communication (CMT-SemCom) improves task execution performance by leveraging shared representations. However, as we demonstrated in [1], cooperative multi-tasking can be either constructive or destructive, depending on the semantic relationships among tasks. To ensure constructive cooperation, we propose a semantic-aware task clustering method for CMT-SemCom. We have formulated a sequential multi-stage optimization problem in which semantically aligned tasks are clustered once after a short initial training phase, and then end-to-end (E2E) joint training is conducted exclusively within the discovered groups. Specifically, the problem decomposes into two stages: (i) a semantic clustering problem leveraging hierarchical density-based spatial clustering, and (ii) an intra-cluster E2E CMT-SemCom learning problem. Simulation results demonstrate that the proposed framework effectively mitigates destructive cooperation and negative transfer, yielding accuracy gains compared to unclustered multi-tasking and individual training baselines.",
+  "authors": [
+   "Ahmad Halimi Razlighi",
+   "Maximilian H. V. Tillmann",
+   "Edgar Beck",
+   "Bho Matthiesen",
+   "Armin Dekorsy"
+  ],
+  "published": "2026-07-23T15:29:39Z"
+ },
+ {
+  "arxiv_id": "2607.21427v1",
+  "title": "Context-weighted Discrete Flow Matching",
+  "abstract": "Discrete flow matching provides a flexible framework for generative modeling on discrete structures. However, the standard factorized training objective exposes the model to targets of varying difficulty, mixing well-conditioned, predictable tokens with ambiguous, high-entropy ones. We empirically demonstrate that the uncertainty over the value of each token is closely related to the density of available context in its neighborhood. Motivated by this observation, we propose a simple modification to the underlying continuous-time Markov chain (CTMC) that incorporates local context information. Our context-weighted sampler improves generation quality with negligible computational overhead, while our scaled cross-entropy loss function reweights the training signal from different tokens and reduces generative perplexity by up to 63% on OpenWebText. Moreover, our approach matches a strong semi-autoregressive block diffusion baseline in quality while retaining the ability to perform generation in any order. These results highlight the role of local context as an important factor in discrete generative modeling and show that simple context-aware modifications can significantly improve both sampling and training efficiency.",
+  "authors": [
+   "Daniil Cherniavskii",
+   "Daniel Severo",
+   "Karen Ullrich"
+  ],
+  "published": "2026-07-23T15:29:49Z"
+ },
+ {
+  "arxiv_id": "2607.21433v1",
+  "title": "Token Budget Saturation and Mechanistic Early Detection of Reasoning Non-Convergence in Chain-of-Thought Models",
+  "abstract": "Chain-of-thought reasoning models such as DeepSeek-R1-Distill-Qwen-7B exhibit a bimodal convergence pattern: generations either terminate within a token budget (converged) or exhaust it without reaching a conclusion (non-converged). We characterize this phenomenon empirically, showing that converged generations achieve 90.3% accuracy on AIME 1983-2024 while non-converged ones achieve only 6.6%, with an overall convergence rate of 62.0%. We then ask whether this outcome is detectable early in the thinking chain using internal model representations. Training linear probes on hidden-state activations at token positions 50-300, we find that layer-20 activations at token 150 achieve AUC 0.608 (+-0.080, 5-fold CV), reliably above chance even at token 50. Activation probes consistently outperform behavioral baselines derived from token entropy and repetition statistics. A sweep-level permutation test yields p=0.063 (100,000 permutations), consistent with a modest signal that our sample size cannot confirm at conventional thresholds. These findings suggest that convergence fate is partially encoded in intermediate representations well before the generation ends, opening a path toward early-exit inference and adaptive compute allocation.",
+  "authors": [
+   "Renuka Oladri",
+   "Niveda Jawahar",
+   "Abdirisak Mohamed"
+  ],
+  "published": "2026-07-23T15:37:04Z"
+ },
+ {
+  "arxiv_id": "2607.21434v1",
+  "title": "Adaptive Identity Anchoring: Closed-Loop Keyframe Placement for Synthetic Paired Supervision in Video Face Swapping",
+  "abstract": "Video face swapping has no natural paired supervision: no real footage exists of one person's face performing another person's video. The strongest current answer, DreamID-V's SyncID-Pipe, mints pairs by replacing the identity in exactly two frames of a real clip -- the first and the last -- and regenerating the rest from a pose sequence alone. Pose carries no appearance evidence of the swapped-in identity, so over long clips, occlusions, and extreme pose excursions the synthesized identity has a long unanchored span on which to drift; no published ablation examines anchor count or placement. We propose Adaptive Identity Anchoring (AIA): (i) generalize the synthesizer to arbitrary anchor sets, architecturally natural for diffusion-forcing-style transformers where conditioning on a frame is clamping its tokens to zero noise; (ii) place anchors by a closed feedback loop that scores every generated frame against the real reference identity and inserts an image-face-swapped anchor at the worst-scoring frame until the pair passes a threshold or exhausts a budget; (iii) reuse the loop's verdict as an automatic data filter. A second pathology, the beauty-filter look of over-smoothed skin, has the same root cause: micro-texture, like identity, is priced by none of the pipeline's objectives. We therefore pair AIA with Reality-Referenced Texture Restoration: matched re-graining from each real frame's non-face regions, band-split transfer of sub-identity micro-texture from the real footage, and a second, spectral acceptance channel refereed by the footage's own spectrum. Identity-anchor density, we argue, is a controllable quality dial, and we specify falsifiable experiments -- drift-versus-gap curves, uniform-versus-adaptive placement at matched budgets, student training on AIA-minted data, and texture ablations with a human beauty-filter study -- that would validate or refute the proposal.",
+  "authors": [
+   "Logan Robbins"
+  ],
+  "published": "2026-07-23T15:37:55Z"
+ },
+ {
+  "arxiv_id": "2607.21437v1",
+  "title": "Agent-Guided Relational Concept Discovery: Toward Interpretable Surgical Margin Assessment",
+  "abstract": "Deep learning models can effectively use Rapid Evaporative Ionization Mass Spectrometry (REIMS) data for surgical margin assessment. However, their clinical adoption remains challenging due to limited generalization to operating room conditions. This difficulty arises because models are typically trained on labeled spectra collected from resected tissue samples, while they must operate on noisy, unlabeled data acquired directly during surgery. In addition, the black-box nature of deep learning models makes it difficult to understand and systematically improve their behavior. Concept-based learning offers a promising way to address these challenges by mapping raw measurements to human-understandable concepts. However, supervised concept-based approaches rely on concept annotations, which are difficult to obtain in complex mass spectrometry workflows. We propose Agent-Guided Concept Discovery, a framework that learns meaningful concepts directly from data without requiring predefined concept labels. During training, a reasoning agent refines semantic descriptions of the learned concepts and adaptively adjusts their weight based on diagnostic relevance. These concepts are further grounded using a biochemical knowledge graph to ensure consistency with known metabolic relationships. Across Skin and Breast Cancer datasets, our model improves balanced accuracy and sensitivity over the baseline. In a representative intraoperative case, it shows fewer false positives, indicating better generalization to surgical conditions.",
+  "authors": [
+   "Nooshin Maghsoodi",
+   "Amoon Jamzad",
+   "Robert Policelli",
+   "Mohammad Farahmand",
+   "Dilakshan Srikanthan",
+   "Martin Kaufmann",
+   "Kevin Y. M. Ren",
+   "Shaila Merchant",
+   "Sonal Varma",
+   "Ross Walker",
+   "Doug McKay",
+   "John Rudan",
+   "Gabor Fichtinger",
+   "Parvin Mousavi"
+  ],
+  "published": "2026-07-23T15:44:04Z"
+ },
+ {
+  "arxiv_id": "2607.21444v1",
+  "title": "Climate-resilient electric vehicle charging infrastructure for sustainable cities: An interpretable causal-ensemble framework for preventive maintenance and low-carbon mobility",
+  "abstract": "Reliable electric vehicle (EV) charging infrastructure is a cornerstone of sustainable, low-carbon cities, yet urban climate stress such as extreme heat, heavy precipitation, and humidity increasingly raises equipment fault risk and undermines the resilience of urban energy and mobility services. Shifting operation from reactive repair to preventive maintenance depends on accurate, forward-looking fault-risk prediction, a task complicated by the heterogeneous time scales of physical, behavioral, contextual, and historical signals and by forecasting over a multi-week horizon. We develop FGDSE, a feature-governed dynamic stacking ensemble that forms an interpretable decision-support system for climate-resilient charging-asset management. It partitions heterogeneous signals into four feature families, assigns each to a domain expert whose inductive bias matches the data, and adds two deep temporal experts for short-term pulses and long-term degradation; a horizon-wise gating mechanism then learns adaptive weights to forecast daily fault risk over 1 to 30 days. SHAP attribution and an X-learner extend the probabilistic output into causal decision support with post-level treatment effects. On 25 months of data from 13 stations, FGDSE surpasses twelve baselines beyond the ten-day horizon, sustains about 85% macro-recall at 30 days with an AUC decay of only 3.2 points, and reveals a shift of dominance from fault history toward climate stress. It identifies extreme heat as the sole exposure whose causal effect amplifies over time, flagging roughly 30% of posts as heat-sensitive and yielding quantitative thresholds for climate-adaptive maintenance that strengthens urban mobility resilience and sustains low-carbon travel.",
+  "authors": [
+   "Cande Lian",
+   "Wentao Zeng",
+   "Jiabin Wu",
+   "Yiming Bie",
+   "Wei Zhou"
+  ],
+  "published": "2026-07-23T15:51:08Z"
+ },
+ {
+  "arxiv_id": "2607.21445v1",
+  "title": "When Trivia Is Not Trivial: Everyday Knowledge Failures in Multilingual LLMs",
+  "abstract": "Quiz rooms, trivia nights, and quiz shows challenge human knowledge across a wide range of topics, from canonical facts to everyday culture. In this paper, we examine whether large language models (LLMs) can perform competitively in such settings, using quiz-style questions to test them on both common and niche topics. We introduce TriviaRoomQA, a multilingual benchmark designed to evaluate everyday, culturally grounded, and long-tail knowledge across 288 topics. The benchmark contains 3,300 parallel multiple-choice questions in six European languages and additional 5,340 French-only questions for a more fine-grained case study. We evaluate 30 open-weight LLMs from European, Asian, and North American providers, covering models from 7 to 70B parameters. We find that models are strong on knowledge-intensive topics such as history, geography, and mathematics, but substantially weaker on everyday popular-culture topics such as celebrities, music, movies, and news. Moreover, model performance varies across languages even for the same underlying questions, suggesting that access to factual knowledge is not always language-independent. In sum, our dataset and experiments demonstrate an important knowledge gap which is not captured by existing academic-based saturated benchmarks.",
+  "authors": [
+   "Anna Mosolova",
+   "Djam\u00e9 Seddah"
+  ],
+  "published": "2026-07-23T15:52:00Z"
+ },
+ {
+  "arxiv_id": "2607.21446v1",
+  "title": "KroQuant: Kronecker-Structured Block Transforms for Efficient Post-Training Quantization of Diffusion Transformers",
+  "abstract": "Post-training quantization (PTQ) of diffusion transformers (DiTs) to W4A4 severely degrades output quality, because activations entering each linear layer contain outliers that 4-bit formats cannot represent. The standard fix applies an invertible linear transform to the activations and its inverse to the weights before quantizing both. Normalization layers between blocks force this transform to run online at every denoising step, making its inference computation cost the binding design constraint. Existing options trade quantization quality for inference cost: per-channel scaling (SmoothQuant) is computationally cheap but impacts the magnitude of the channels, which can harm quantization accuracy; fixed Hadamard transforms yield better quantization accuracy but require large block sizes that incur a high online cost; learned full-$d$ invertible transforms calibrate best but entail a prohibitive dense $d \\times d$ matrix multiplication (GEMM) per layer per step. We propose KroQuant, a PTQ method that applies a learned Kronecker-structured invertible transform to each 32-element block of the activation, storing less than half the parameters of per-channel scaling. The block-local structure runs as small tensor-core GEMMs, and on an MI350 GPU the KroQuant quantizer kernel is up to $14\\%$ faster than the SmoothQuant kernel. Offline LoRaQ weight calibration then absorbs the residual per-weight quantization error. On PixArt-$\u03a3$, SANA, and FLUX.1-schnell at W4A4 (MXFP4e2), KroQuant produces outputs closer to the FP reference than SVDQuant and LoRaQ on MJHQ-30K and SDCI, while preserving or improving image quality.",
+  "authors": [
+   "Yann Bouquet",
+   "Alireza Khodamoradi",
+   "Kristof Denolf",
+   "Mathieu Salzmann"
+  ],
+  "published": "2026-07-23T15:52:20Z"
+ },
+ {
+  "arxiv_id": "2607.21447v1",
+  "title": "RUMBA: Russian User Memory Benchmark",
+  "abstract": "The ability to handle long-term memory in LLMs is becoming increasingly critical, yet existing benchmarks remain English-centric and rely on aggregate retrieval metrics, failing to capture interactions between long-range context, temporal information, and reasoning. To address this, we introduce RUMBA (Russian User Memory BenchmArk) - a new benchmark for long-term conversational memory that provides a fine-grained taxonomy of memory-centric question types and a unified methodology accounting for semantic type, session scope, temporal reasoning, and the explicitness of temporal expressions. RUMBA consists of timestamped user-assistant dialogues with QA pairs requiring retrieval, combination, and reasoning across sessions. While designed for Russian, we also provide an aligned English subset under the same methodology. We evaluate contemporary memory systems and long-context models, and show how RUMBA serves as a diagnostic tool to analyze model behavior across benchmark slices and identify strengths and failure modes of different memory mechanisms.",
+  "authors": [
+   "Elizaveta Shevtsova",
+   "Inna Glebkina",
+   "Mark Baushenko",
+   "Pavel Gulyaev",
+   "Alena Fenogenova"
+  ],
+  "published": "2026-07-23T15:52:31Z"
+ },
+ {
+  "arxiv_id": "2607.21453v2",
+  "title": "Test-Time Scaling via Error Localization",
+  "abstract": "Scaling inference-time computation has emerged as a reliable method to improve the performance of large language models on complex reasoning and programming tasks. However, standard approaches such as independent sampling and sequential multi-turn refinement operate without token-level credit assignment, resulting in computational inefficiency, since valid reasoning prefixes are frequently discarded. In this work, we introduce Test-Time Scaling via Error Localization (TTEL), an inference-time algorithm that utilizes fixed or environment feedback to perform token-level error localization. By comparing conditional probabilities under informed feedback against a null-context baseline, TTEL isolates the step at which an error occurred. The algorithm then truncates the trajectory and branches a new generation, maximally reusing the valid prefix. Extensive evaluations demonstrate that TTEL establishes strictly dominating Pareto frontiers across sequential reasoning domains, measured by pass-at-k vs. generated-token cost. With Qwen3-8B on LiveCodeBench, TTEL attains a pass@64 of 71.0% while generating approximately half as many tokens as independent sampling (360.4k vs. 735.0k). Generalizing to math benchmarks AIME-2025 and HMMT-2025, TTEL cleanly outperforms competing test-time baselines across both Qwen3-8B and Qwen3-4B-Thinking-2507.",
+  "authors": [
+   "Rajiv Shailesh Chitale",
+   "Rahul Madhavan",
+   "Taneesh Gupta",
+   "Deepanway Ghosal",
+   "Aravindan Raghuveer"
+  ],
+  "published": "2026-07-23T15:55:29Z"
+ },
+ {
+  "arxiv_id": "2607.21458v1",
+  "title": "Detecting LLM-Generated Tokens in Human--LLM Coauthored Text",
+  "abstract": "The rise of human-AI collaborative writing has created a growing need for fine-grained detection methods that support localizing likely LLM-generated content in mixed-authorship documents. Existing methods for detecting LLM-generated text mainly focus on document-level classification and cannot identify which parts of the text are generated by LLMs. This paper introduces a new method to address this urgent need. Our method operates at the token level, the natural unit of modern language models, and builds on existing token-level detection scores. The key idea is to smooth adjacent token scores to reduce their variability, while using an adaptive Lepski-type rule to select the bandwidth according to the local authorship structure. Our method is simple to implement and does not require token-level labeled data for training. Theoretically, we characterize this trade-off and show that the proposed method achieves favorable mean square error performance in estimating the underlying signal. Empirically, we demonstrate strong performance of our method against a wide range of baselines in both synthetic datasets and a realistic dataset. We deploy a publicly accessible website that implements the methods as well.",
+  "authors": [
+   "Yangjun Lu",
+   "Hongyi Zhou",
+   "Fabian Spill",
+   "Kai Ye",
+   "Chengchun Shi",
+   "Jin Zhu"
+  ],
+  "published": "2026-07-23T16:01:16Z"
+ },
+ {
+  "arxiv_id": "2607.21461v2",
+  "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+  "abstract": "Deep research requires agents to find answers that jointly satisfy multiple constraints. Discovering such answers is costly, whereas verifying a candidate can often be decomposed into tractable constraint-wise checks. This discovery--verification asymmetry suggests that a research agent should do more than simply search longer: it should recursively improve its current answer by verifying intermediate results and using the partially verified state to guide subsequent refinement. We introduce AREX, a family of Recursively Self-Improving (RSI) deep research agents. AREX alternates between an inner research loop that gathers evidence and constructs a provisional answer, and an outer self-improvement loop that audits the answer constraint-wise, identifies unresolved claims, and launches targeted follow-up research. To sustain RSI over long horizons, AREX learns an autonomous context-update tool that compresses growing interaction history into a compact improvement state preserving verified evidence and unresolved constraints, without relying on an external model. We train AREX on verified synthetic tasks and high-quality trajectories through agentic mid-training and long-horizon reinforcement learning. To mitigate sparse final rewards during long horizon learning, we emphasize key steps where decisive evidence is acquired or erroneous research directions are corrected. We instantiate a dense 4B model and a 122B-A10B Mixture-of-Experts model. Across BrowseComp, WideSearch, DeepSearchQA, Humanity's Last Exam (HLE), and other reasoning and tool-use benchmarks, AREX substantially outperforms comparable-scale baselines and remains competitive with models using substantially more activated parameters.",
+  "authors": [
+   "Shuqi Lu",
+   "Chaofan Li",
+   "Kun Luo",
+   "Zhang Zhang",
+   "Hui Wang",
+   "Hongwang Xiao",
+   "Lei Xiong",
+   "Jiahao Wang",
+   "Sen Wang",
+   "Xiyan Jiang",
+   "Wanli Li",
+   "Yuyang Hu",
+   "Hongjin Qian",
+   "Bingyu Yan",
+   "Jianlyu Chen",
+   "Ziyi Xia",
+   "Yingxia Shao",
+   "Kang Liu",
+   "Zhicheng Dou",
+   "Di He",
+   "Chaozhuo Li",
+   "Qiwei Ye",
+   "Zhongyuan Wang",
+   "Zheng Liu"
+  ],
+  "published": "2026-07-23T16:05:46Z"
+ },
+ {
+  "arxiv_id": "2607.21468v1",
+  "title": "Thinkink: 2D Spatial Ink-native Interaction with LLMs",
+  "abstract": "People often use handwritten notes and sketches to externalize ideas for ideation. To integrate large language models (LLMs) into this practice, we propose Thinkink. Prompts can be handwritten text or drawn sketches with LLM-generated responses visualized as ink-like text and sketches spatially integrated into a shared canvas. A semantic tree streamlines ink interpretation, and a lightweight UI provides explicit control using a state machine. The tool was designed using a three-stage process. A formative study (N=12) examined current practices with conventional and digital inking methods. The results informed a technical probe for a diagnostic study (N=6) identifying usability and human-LLM interaction challenges. This motivated the design of Thinkink, with a final study (N=10) examining how people incorporate it into their ideation practices. We contribute design implications and a tool for ink-native LLM interaction where the user and LLM write and draw in a shared 2D canvas.",
+  "authors": [
+   "Mohammad Hasan Payandeh",
+   "Daniel Vogel",
+   "Jian Zhao"
+  ],
+  "published": "2026-07-23T16:09:40Z"
+ },
+ {
+  "arxiv_id": "2607.21475v1",
+  "title": "Error Certificates for KV-Cache Eviction via Randomized Design",
+  "abstract": "Deterministic KV-cache eviction keeps the top-$k$ tokens under an importance score and deletes the rest. We prove that this design cannot know what it destroyed: evicted values can be altered so that everything the serving system retains is unchanged while the true attention-output error grows arbitrarily, so no serving-time estimator of that error is consistent. Randomized eviction restores identifiability. With a Poisson-sampled tail at known inclusion probabilities, one logit offset performs the H\u00e1jek correction inside the softmax, and a survey-sampling variance estimator over the retained set becomes a per-step error certificate with 0.97 empirical coverage at no accuracy cost. On real workloads we pre-registered seven claims and lost three: question-aware eviction at 25--50\\% budgets is nearly free; output log-probability predicts failure better than the certificate; certificate-gated budget escalation adds nothing. What survives is attribution: the certificate separates cache-induced from inherent failures (AUC 0.73--0.75, against 0.47--0.54 for output confidence) and schedules recomputation better than random or confidence gating. Randomization buys attribution, not prediction.",
+  "authors": [
+   "Peng Xie"
+  ],
+  "published": "2026-07-23T16:16:59Z"
+ },
+ {
+  "arxiv_id": "2607.21480v1",
+  "title": "Finite-Sample Coverage Audits for High-Recall Candidate Generation: Certification and Learning-Theoretic Design",
+  "abstract": "An initial high-recall stage in an empirical pipeline decides which items pass to later review, labelling, or modelling, and relevant items it misses are lost to every subsequent stage. We study how many audit labels are needed to certify, with finite-sample validity, that this missed relevant mass is small, and our main results characterise the label complexity of this problem. We first show that no procedure using only labels from inside the candidate set can certify any non-trivial bound on the missed mass: the audit must sample the excluded pool, the only region where unrecovered relevant items can lie. We then prove a matching finite-corpus lower bound. Any valid audit that certifies fewer than $m$ missed relevant items with high probability when none are present, even if adaptive and permitted to label the entire included pool, must inspect on the order of $N_0/m$ excluded-pool labels. Excluded-pool auditing is therefore minimax rate-optimal, not merely convenient, for missed-mass certification in the zero-miss regime. Building on this characterisation, we develop an exact finite-sample toolkit, using binomial and hypergeometric inversion rather than asymptotic approximation, that certifies missed mass, converts it to recall through a two-pool design, certifies pre-specified families of nested candidate generators simultaneously, and produces stress-test certificates against declared perturbation mechanisms. These certificates can be paired with observable review burden to select the least burdensome pre-specified candidate generator meeting a missed-mass target. Every guarantee holds under one discipline: the candidate generator, or the pre-specified family from which it is selected, and the audit rule are fixed before the certification labels are examined.",
+  "authors": [
+   "Martin Anthony",
+   "Kaveh Salehzadeh Nobari"
+  ],
+  "published": "2026-07-23T16:21:30Z"
+ },
+ {
+  "arxiv_id": "2607.21482v2",
+  "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
+  "abstract": "Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that typically prohibit data transmission to external services. Locally deployable open-weight models offer an alternative since sensitive data never leave the local environment. We introduce an open-source framework for evaluating the efficacy of AI agents powered by open-weight LLMs on one of the most persistent bottlenecks in research on longitudinal population studies: data preparation. The framework comprises: a curated ground-truth dataset (cleaning scripts preparing six sweeps of data from a British cohort study), task definitions encompassing tasks such as category harmonization and multi-wave merging, and automated routines for evaluating the LLM-produced R code and outputted data. We benchmark LLMs across the (consumer grade) deployment spectrum to assess their efficacy in 20 data preparation tasks (creation of 102 variables). Current state-of-the-art, 31-35B parameter models almost saturated our benchmark ('average task completion' up to 87.9%). The performance of open-weight LLMs running on consumer-grade hardware shows promise of a viable path toward AI-assisted data preparation in governance-restricted research settings. Our framework is publicly available at: https://github.com/UCL-ARC/RRBench.",
+  "authors": [
+   "Mack Nixon",
+   "Liam Wright",
+   "Yevgeniya Kovalchuk",
+   "Alison Fang-Wei Wu",
+   "Martin Danka",
+   "Andy Boyd",
+   "David Bann"
+  ],
+  "published": "2026-07-23T16:23:42Z"
+ },
+ {
+  "arxiv_id": "2607.21488v1",
+  "title": "Compact Latent Coordination for Autonomous Vehicles at Unsignalized Intersections",
+  "abstract": "Coordinating autonomous vehicles at unsignalized intersections remains a critical challenge for multi-agent reinforcement learning (MARL) systems, which typically struggle with combinatorial action spaces, reliance on privileged information, or rigid agent designs. We propose Master-Agent Proto-plan System (MAPS), a hierarchical deep reinforcement learning (DRL) architecture in which a centralized Master agent generates a compact, continuous embedding, denoted as proto-plan, that encodes a global coordination strategy. Decentralized Worker agents integrate this embedding with local observations to execute vehicle-specific control, decoupling strategic intent from tactical execution and enabling independent optimization of each module. As a proof-of-concept evaluation of this coordination mechanism, we test MAPS across 72 intersection configurations in HighwayEnv. MAPS achieves collision-free navigation while significantly reducing average travel time, outperforming state-of-the-art baselines. The learned proto-plans further exhibit robust generalization: a system trained with three agents achieves a 94% success rate when deployed zero-shot to five-agent scenarios, confirming that proto-plan-based hierarchical learning provides a promising framework for multi-vehicle coordination.",
+  "authors": [
+   "Gil Lifshits",
+   "Igal Bilik",
+   "Gilad Katz"
+  ],
+  "published": "2026-07-23T16:28:35Z"
+ },
+ {
+  "arxiv_id": "2607.21491v1",
+  "title": "What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations",
+  "abstract": "Do independently trained language models come to represent the same thing in the same way? We answer for code, extending a recently introduced concept-circuit extraction method to a 2x2 design -- Python and Rust crossed with Qwen2.5-Coder-7B and DeepSeek-Coder-V1-6.7B -- and measuring a complete inventory of grammatical concepts (58 Python, 57 Rust) identically in all four cells: the smallest design that separates what depends on the task, the language, and the model. The answer splits into three parts. What earns dedicated circuitry is set by the task: the models agree on which concepts receive circuits (Spearman $\u03c1$ = 0.638 for Python, 0.673 for Rust, both p &lt; $10^{-7}$). Where those circuits sit is set by the model: Qwen processes concepts in a late band (~L17-19), DeepSeek at L6-7, for both languages. How circuits grow across layers is also set by the model: Qwen gives its atomic concepts an early spike that DeepSeek does not. \"Are circuits universal?\" thus has no single answer: yes for What, no for Where and How -- universality is a property of representational content, not of computational organisation. None of this structure was fixed in advance. The agreement could have landed anywhere between independence and identity; it lands at $\u03c1\\approx 0.65$. Rust constructs receive 2-3x more concept-specific circuitry than their Python equivalents, in both models. Both models share neurons between the languages (6/7 and 7/7 paired constructs), DeepSeek 1.94x more than Qwen -- a direction no prior result predicts. And Qwen binds nine keywords of Rust's type-and-trait machinery into one tight neuron cluster (Jaccard 0.535 vs null 0.112, p &lt; 0.001), a semantic dimension invisible in surface syntax. Ablation and linear probes confirm the circuits are functional. All claims are scoped to this 2x2; whether the per-model profile predicts a third model is the designed next test.",
+  "authors": [
+   "Piotr Wilam"
+  ],
+  "published": "2026-07-23T16:34:14Z"
+ }
+]

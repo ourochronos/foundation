@@ -1,0 +1,238 @@
+[
+ {
+  "arxiv_id": "2607.21779v1",
+  "title": "Graph-Theoretic Neural Network Fragmentation with Covariant Direct Molecular Force Learning: Enabling Coupled-Cluster Accuracy AIMD for Fluxional Systems",
+  "abstract": "Accurate ab initio molecular dynamics (AIMD) simulations of complex, fluxional chemical systems are severely limited by the high computational scaling of correlated electronic structure methods. To overcome this bottleneck, we present a robust, graph-theoretic molecular fragmentation framework integrated with machine learning to directly model post-Hartree-Fock nuclear forces at coupled cluster accuracy. Bypassing the limitations of automatic differentiation on learned energy surfaces that may struggle with link-atom Jacobians, our approach directly predicts nuclear force vectors. By projecting these vectors onto fragment-fixed principal axes of inertia, we establish co-variant descriptors that naturally preserve rotational, translational, and permutational invariance. The methodology achieves exceptional high parameter efficiency through a vector-valued training protocol that reduces trainable parameters by over an order of magnitude, while an unsupervised mini-batch k-means space tessellation algorithm constructs highly representative training databases using only 10% to 20% of reference configurations. We rigorously validated this framework on the highly fluxional solvated Zundel cation H_{13}O_6^+ ). Our fully machine-learning-predicted AIMD trajectories successfully reproduced complex dynamical signatures and key structural characteristics, including radial distribution functions and the velocity autocorrelation power spectrum. Ultimately, this scalable, systematically improvable framework bridges the gap between high-level correlated wavefunction theories and long-timescale reactive sampling, laying the foundation for advanced, LLM-inspired transfer learning in modern chemical dynamics simulations.",
+  "authors": [
+   "Xiao Zhu",
+   "Srinivasan S. Iyengar"
+  ],
+  "published": "2026-07-23T19:49:22Z"
+ },
+ {
+  "arxiv_id": "2607.21780v1",
+  "title": "Khondo: A Multimodal Benchmark for Document Packet Splitting of Bangla Forms",
+  "abstract": "Document packets, multiple documents concatenated into a single file, are common in government and administrative workflows, yet splitting them into their constituent documents is difficult, especially for low-resource languages. We introduce Khondo (Bangla for split/segment), the first benchmark for document packet splitting on Bangladeshi government forms. Unlike prior English and OCR-text-based datasets, Khondo is bilingual (Bangla--English) and vision-native; where models operate directly on page images. It spans five concatenation schemes, from sequential to fully shuffled, across 14 administrative domains, with ground-truth boundaries, domain types, and page order. Zero-shot evaluation of MLLMs shows they cluster pages into their source documents fairly well but struggle in restoring the original page order once shuffled. To isolate what drives this difficulty, we run two controlled analyses, varying the prompt instruction and then the packet language. Both primarily affect ordering rather than clustering: (a) explicit page-order instructions are necessary but insufficient, and (b) English packets are ordered more reliably than Bangla, making page arrangement the dominant challenge and language a secondary but consistent factor. Khondo establishes page-order reconstruction as a key open problem in vision-based, low-resource document understanding, and provides a controlled benchmark for measuring progress toward solving it. Our dataset and code is available at https://huggingface.co/datasets/Mausul/khondo",
+  "authors": [
+   "Abu Tyeb Azad",
+   "Fahim Ahmed",
+   "Ishita Sur Apan",
+   "Ezharuddin Jubaer",
+   "Sumaiya Karim Katha",
+   "Armun Alam",
+   "Amin Ahsan Ali",
+   "Aman Chadha",
+   "Md Mofijul Islam",
+   "AKM Mahbubur Rahman"
+  ],
+  "published": "2026-07-23T19:52:58Z"
+ },
+ {
+  "arxiv_id": "2607.21781v1",
+  "title": "MosaicJoin: Compact Semantic Sketches for Value-Level Join Discovery",
+  "abstract": "Join discovery is a core task in dataset search, enabling users to find columns that can be joined with a given query column. Early approaches focused on equi-joins, but data lakes and open-data repositories often contain columns whose values refer to the same entity but use different syntactic representations. To address this challenge, recent approaches discover semantically joinable columns but face a fundamental trade-off: methods that perform value-level comparisons accurately identify joinable columns but scale poorly to columns with high cardinality; column-level methods that encode an entire column into a single embedding are efficient but do not capture the fine-grained value alignment that determines whether a join is possible. We present MosaicJoin, a value-level semantic join discovery method that balances this trade-off. MosaicJoin achieves scalability through a novel sketching strategy that approximates the joinability of a column pair without having to compare all values. At query time, MosaicJoin scores each candidate sketch using a joinability score at a cost bounded by the sketch size, making retrieval efficient even for high-cardinality columns. A query subsampling operator further reduces online search time with provable accuracy guarantees, enabling robust retrieval for large query columns. Extensive experiments show that MosaicJoin outperforms previously published methods across all benchmarks while running up to 66 times faster than other value-level methods. MosaicJoin requires no training or fine-tuning, and it scales robustly to query columns containing up to 57K values and data lake columns containing up to 1M values.",
+  "authors": [
+   "Grace Fan",
+   "Eden Wu",
+   "Majid Daliri",
+   "Juliana Freire"
+  ],
+  "published": "2026-07-23T19:55:19Z"
+ },
+ {
+  "arxiv_id": "2607.21785v1",
+  "title": "From Seasonality to Semantics: Benchmarking a Hybrid Probabilistic Forecasting System for Roadblocks in Bolivia",
+  "abstract": "Roadblocks in Bolivia are a social conflict phenomenon with devastating economic impacts, estimated at losses equivalent to 4% of the national Gross Domestic Product. Despite their recurrence and impact, there is a lack of local predictive systems to anticipate these events for logistical decision-making. This paper presents a hybrid probabilistic forecasting system that integrates time series decomposition (Prophet) with natural language processing (NLP) techniques applied to a six-year corpus of Bolivian news coverage. The methodology employs vector semantic embeddings and zero-shot classification models to capture signals of discursive escalation prior to the materialization of the roadblocks. Using an expanding walk-forward validation scheme applied over 1,762 days and seven forecasting horizons (H+1 to H+7), seven internal configurations and four external benchmarks were compared, including SARIMA and LightGBM. The results demonstrate that the hybrid configuration (Prophet + NLP, C6) consistently outperforms purely statistical models, achieving an AUC-ROC of 0.677 at H+1 and reducing the Brier Score by 10.9% relative to the baseline temporal model (0.220 vs. 0.247), maintaining a statistically significant error reduction across all evaluated horizons ($p &lt; 0.02$). This research validates that the integration of semantic news signals allows for the detection of social tension peaks not captured by historical inertia, providing a technical tool for risk management in critical transport corridors.",
+  "authors": [
+   "Rodrigo Vargas Sainz",
+   "Christian Ber\u00f3n Curti"
+  ],
+  "published": "2026-07-23T20:05:48Z"
+ },
+ {
+  "arxiv_id": "2607.21793v1",
+  "title": "QLPO: Quadrant-weighted Sampling for Length-aware Policy Optimization",
+  "abstract": "Recent large reasoning models often develop long chain-of-thought responses during reinforcement learning (RL), resulting in high inference latency and deployment cost. Existing methods for response length control typically rely on explicit length penalties or additional control modules, which require careful tuning and may compromise reasoning quality. We propose Quadrant-weighted Sampling for Length-aware Policy Optimization (QLPO), a simple resampling-based variant of GRPO that introduces implicit length control without modifying the reward function. QLPO first over-generates candidate responses and then resamples the training group by preserving the empirical correct/incorrect ratio while favoring short correct responses and long incorrect responses. This reshapes the training distribution and implicitly encourages shorter model outputs. Across models ranging from 1.5B to 32B parameters, including both base models and strong reasoning models, QLPO consistently improves the accuracy-length trade-off. It reduces response length by 30% to 70% while preserving reasoning performance. These results suggest that structured resampling provides an effective and robust approach to efficient reasoning.",
+  "authors": [
+   "Siwei Chen",
+   "Siqi Chen",
+   "Xupeng Miao",
+   "Bin Cui"
+  ],
+  "published": "2026-07-23T20:20:56Z"
+ },
+ {
+  "arxiv_id": "2607.21797v1",
+  "title": "Relaxed activation analysis of dataflow networks - A clock calculus for machine learning and real-time scheduling",
+  "abstract": "Previous work has shown that the simple dataflow primitives of the Lustre language allow the natural, semantically unambiguous, and compact representation of machine learning (ML) applications, including models featuring complex conditional execution and recurrent state. The Lustre clock calculus is responsible for the static determination of important properties such as liveness (absence of deadlocks) and static memory bounds. Yet existing clock calculi are tailored for embedded control applications. We show they do not cater for the representation of control patterns commonly found in training algorithms, resulting in cumbersome expressions and inefficient compilation. We propose a conservative extension of Lustre's clock calculus addressing this limitation, thereby facilitating the embedding of ML models in reactive applications.",
+  "authors": [
+   "William Gaudelier",
+   "Albert Cohen",
+   "Dumitru Potop Butucaru"
+  ],
+  "published": "2026-07-23T20:27:08Z"
+ },
+ {
+  "arxiv_id": "2607.21799v1",
+  "title": "Agentic Evaluation of Copyright Law Compliance",
+  "abstract": "Large language model (LLM) agents increasingly perform commercial tasks that involve retrieving external content such as images and, where appropriate, reproducing that content. LLM agents should comply with the law, including copyright law. Presently, however, we lack adequate frameworks to assess whether they do so in practice. To that end, we introduce \\textbf{Copyright-Bench}, a benchmark designed to evaluate \\textit{LLM agents' compliance with} \\emph{copyright law}. Copyright-Bench is comprised of realistic commercial tasks---website development, merchandise design, and pitch deck production---that involve agents selecting between public-domain content (the use of which is \\textit{legal}) and copyrighted content (the use of which is \\textit{infringing} in this setting).The evaluation introduces prompt variations that simulate different user preferences, as well as time pressure.Comparing state-of-the-art LLM agents against a human baseline, we find that: (1) agents select copyrighted works despite the availability of public-domain alternatives; and (2) for open-weights models, violation rates increase in response to certain user preferences and simulated time pressure.",
+  "authors": [
+   "Zheng Hui",
+   "Doni Bloomfield",
+   "Noam Kolt"
+  ],
+  "published": "2026-07-23T20:32:36Z"
+ },
+ {
+  "arxiv_id": "2607.21802v1",
+  "title": "StARS: Socially Appropriate Robot Actions via a Recommender System-Driven Approach",
+  "abstract": "Social appropriateness in human-robot interaction (HRI) is not universal: different people can judge the same robot action differently in the same situation. To capture this inter-subject variability, we reformulate socially appropriate action generation as a preference modelling problem inspired by recommender systems, treating annotators as users, contexts/scenes as items, and appropriateness scores over a set of candidate robot actions as targets. We propose StARS, a novel model-agnostic framework that integrates collaborative filtering with learnable scene representations to generate user-specific appropriateness scores over candidate robot actions. StARS is model-agnostic: it can be integrated with various scene encoders and backbones, enabling personalisation without redesigning the underlying model. We evaluate StARS on two socially aware robotics datasets, MannersDB+ and SocNav1, and analyse robustness under sparse preference feedback. Across datasets and backbones, StARS consistently improves performance and agreement with annotators, supporting personalised action selection aligned with user norms. Our code is publicly available at https://github.com/Cambridge-AFAR/StARS.git.",
+  "authors": [
+   "Erencem Ozbey",
+   "Fethiye Irmak Dogan",
+   "Jin Huang",
+   "Hatice Gunes"
+  ],
+  "published": "2026-07-23T20:38:07Z"
+ },
+ {
+  "arxiv_id": "2607.21804v1",
+  "title": "Adversarial Prompts for Acceptance Collapse in Speculative Decoding",
+  "abstract": "Lossless acceleration schemes, such as speculative decoding, promise significant inference speedups by relying on dynamic token-level alignment between a draft and a target model. However, this guarantee of semantic equivalence masks a severe operational vulnerability: draft-target alignment can be systematically attacked. In this paper, we introduce ADSD, which, to the best of our knowledge, is the first prompt-suffix attack that collapses verifier acceptance by pushing draft probability mass toward tokens the target is unlikely to accept. ADSD uses Soft-Collapse, a verifier-aligned surrogate derived from the asymmetric speculative acceptance rule, together with a target-preservation objective that discourages obvious task corruption. ADSD successfully generates highly effective adversarial suffixes. On the GSM8K dataset, our attack increases the mean sample time by 62.3% while preserving the task quality. We further show that this vulnerability exists across different domains, speculative decoding strategies, and model architectures.",
+  "authors": [
+   "Run Wang",
+   "Chaoyi Zhou",
+   "Xi Liu",
+   "Yi Zhu",
+   "Amir Salarpour",
+   "Pedram MohajerAnsari",
+   "Zhi-Qi Cheng",
+   "Feng Luo",
+   "Siyu Huang",
+   "Mert D. Pes\u00e9"
+  ],
+  "published": "2026-07-23T20:42:41Z"
+ },
+ {
+  "arxiv_id": "2607.21805v1",
+  "title": "Natural Invariant Measures for Chaotic Game Dynamics: Finding Order in Chaos",
+  "abstract": "We study the long-term behavior of the Multiplicative Weights Update (MWU) algorithm in game settings where learning dynamics frequently fail to converge to Nash equilibria and instead exhibit Li-Yorke chaos. While such chaos precludes the prediction of specific long-term strategy profiles, it does not imply a lack of statistical structure. We demonstrate that natural invariant measures - a fundamental concept from ergodic theory - provide the rigorous framework necessary to find order within this chaos. Focusing on a two-strategy congestion game, we prove that these measures allow for a comprehensive statistical characterization of the dynamics. Crucially, we show that this framework extends beyond simple strategy frequencies to \\emph{general observables}, enabling the precise calculation of long-term time averages for broad classes of economic metrics - including payoffs, social cost, and regret - despite chaos. Our results reveal that this simple learning algorithm captures the full spectrum of behaviors found in one-dimensional dynamical systems, from unique or multiple absolutely continuous invariant measures to complex periodic attractors as well as coexisting chaotic and stable (periodic) behaviors. By bridging game theory and dynamical systems, we show that statistical predictability is attainable even in the absence of pointwise convergence.",
+  "authors": [
+   "Jakub Bielawski",
+   "Thiparat Chotibut",
+   "Fryderyk Falniowski",
+   "Micha\u0142 Misiurewicz",
+   "Georgios Piliouras"
+  ],
+  "published": "2026-07-23T20:45:08Z"
+ },
+ {
+  "arxiv_id": "2607.21806v1",
+  "title": "Bounding the Causal Impact of ML-assisted Decision-Making via Counterfactual Correctness",
+  "abstract": "Predictive machine learning (ML) models are increasingly used to aid human decision-makers across various high-risk domains such as healthcare and criminal justice. There is a growing recognition of the need to evaluate the causal impact of deploying these systems on downstream outcomes, such as patient survival or crime recidivism. Randomized control trials (RCTs) can provide high-quality evidence on the impact of a deployed model, but they run into a challenge: it is often infeasible to run repeated trials when models are updated or retrained to improve predictive performance. In this work, we present a partial-identification approach to using prior RCT data to construct bounds on the causal effect of a new model. The core innovation in our approach is to leverage assumptions relating fine-grained predictive accuracy to downstream outcomes. We do so via two monotonicity assumptions: first, on individual-level `counterfactual correctness' (all else being equal, a correct prediction leads to non-inferior outcomes); and second, on the relation between subgroup predictive performance and outcomes, interpretable as an assumption regarding trust in model outputs. We demonstrate our method with a simulation study, illustrating how incorporating this information can lead to more informative bounds compared to prior work.",
+  "authors": [
+   "Jonathan Zhang",
+   "Erik Skalnes",
+   "Jacob Chen",
+   "Michael Oberst"
+  ],
+  "published": "2026-07-23T20:45:10Z"
+ },
+ {
+  "arxiv_id": "2607.21817v1",
+  "title": "Longitudinal Random Forests for Sparse and Irregular Response Trajectories",
+  "abstract": "Longitudinal studies often collect data at sparse, irregular, and unequally spaced time points. Such heterogeneity is often driven by subject-specific covariates, yet existing methods have been restricted to a scalar endpoint value, completely neglecting the underlying response trajectories. We propose a novel Longitudinal Random Forest (LRF) framework that leverages tree-based ensemble machine learning with adaptive node-wise longitudinal trajectory estimation. The LRF framework makes five methodological contributions. it captures each subject's individual response trajectory while simultaneously accommodating within-node correlation, between-node heterogeneity, and nonlinear and interactive covariate effects. It introduces a novel trajectory-based splitting criterion that maximizes trajectory separation while incorporating a size-weighted penalty; it provides two variants, Principal Analysis by Conditional Expectation (LRF-PACE) and adaptive linear mixed-effects models (LRF-adaptiveLMM), which employ nonparametric and semiparametric node-wise smoothers, respectively, while learning covariate effects in a data-driven manner. It provides a comprehensive interpretation of covariates using both the classical trajectory-based permutation variable importance measure (PVIM) and a newly proposed finite-way interaction frequency count, and it not only predicts entire trajectories for new subjects but also forecasts future trajectories for existing subjects. Extensive simulation studies demonstrate that LRF achieves superior performance over several competing methods, even under severe sparsity. The practical significance of the LRF framework lies in its ability to address five important clinical questions.",
+  "authors": [
+   "Yangsheng Wang",
+   "Xiaotian Dai",
+   "Haoda Fu",
+   "Guifang Fu"
+  ],
+  "published": "2026-07-23T21:08:07Z"
+ },
+ {
+  "arxiv_id": "2607.21820v1",
+  "title": "Probing Speaker Identity Sensitivity in Audio Deepfake Detectors",
+  "abstract": "Audio deepfake detectors are trained to distinguish genuine speech from synthetic speech and often perform well on standard benchmarks. Yet the same detector that achieves less than 1% error on one dataset can see its error rate increase twentyfold when evaluated on a different dataset. We argue that one contributing factor is speaker-identity reliance: standard training corpora correlate speaker identity with the genuine/synthetic label, allowing detectors to partially rely on speaker-related cues rather than synthesis artifacts alone. We propose the Identity Sensitivity Score (ISS), a per-utterance diagnostic that quantifies how much a detector's output changes across different speaker identity contexts. ISS requires no ground-truth labels at inference time and can be computed from the detector score and a pool of reference speaker examples. Across two detectors and two datasets, incorrectly classified utterances have ISS scores 29 to 52 times higher than correctly classified utterances, and ISS alone predicts misclassification with area-under-curve (AUC) up to 0.954. To test whether ISS actually captures identity-sensitive behavior rather than serving only as a proxy for prediction confidence, we apply voice conversion to 500 utterances and measure the resulting detector-score shift. Utterances flagged as identity-sensitive by ISS respond 19 to 30 times more strongly to this manipulation than utterances flagged as stable. These results position ISS as a practical inference-time diagnostic for speaker-dependent failure analysis in audio deepfake detection.",
+  "authors": [
+   "Daniyal Kabir Dar",
+   "Arun Ross"
+  ],
+  "published": "2026-07-23T21:12:33Z"
+ },
+ {
+  "arxiv_id": "2607.21823v1",
+  "title": "Data eccentricity, asymptotics of Gaussian RBF reproducing kernel Hilbert space, and kernel PCA",
+  "abstract": "We show that, up to isotropic scaling, the Gaussian RBF reproducing kernel Hilbert space (RKHS) is asymptotically isometric to Euclidean space in the large bandwidth limit. This strongly suggests that kernel-based constructions reliant on metric properties of the RKHS will yield results for Gaussian RBF kernels that similarly approach those of linear kernels for large bandwidths. The asymptotic behavior of Gaussian CKA can be understood in this light. We further consider kernel PCA, showing that Gaussian RBF eigenvalues, eigenprojections, and principal components all converge to those of classical (linear) PCA as bandwidth $\u03c3\\rightarrow \\infty$. For a given data representation, both the RKHS feature embeddings and the orthogonal PCA eigenframes of the two kernel types differ asymptotically by a geometric similarity transformation, up to a residual of size $O \\left (\\frac\u03c1\u03c3 \\right )^2$, where $\u03c1$ is a measure of geometric eccentricity of the representation, equal to the ratio of maximum to median pairwise distance between data examples. Experiments over a diverse collection of data sets demonstrate that $\u03c1$ provides a simple and reliable predictor of dataset-specific convergence behavior in the top principal directions.",
+  "authors": [
+   "Sergio A. Alvarez"
+  ],
+  "published": "2026-07-23T21:18:41Z"
+ },
+ {
+  "arxiv_id": "2607.21831v1",
+  "title": "A Graph-Based Control Interface for Traffic Signals on Heterogeneous Road Networks",
+  "abstract": "We present a traffic-signal control interface in which a shared graph neural network assigns scores to individual traffic movements. Each junction converts these scores into its own variable-sized set of legal signal phases using a deterministic incidence matrix. Directed corridor nodes provide traffic context, while movement nodes represent controlled input-to-output paths through junctions. Typed mean aggregation produces one scalar per movement; phase definitions and signal timing remain outside the learned network. This makes graph size and junction-specific action count independent of the learned parameter shapes. PPO experiments evaluate the interface on unseen synthetic grid geometries, altered signal coverage, and five heterogeneous city graphs. The policies retained performance across unseen geometries within the synthetic grid family, while changes in signal coverage exposed sensitivity to a signal-coverage distribution shift. A single trained city-policy instance executed across all five city graphs, with heterogeneous outcomes. These results provide feasibility evidence rather than a general estimate of transfer to arbitrary road networks.",
+  "authors": [
+   "Bertil Braun"
+  ],
+  "published": "2026-07-23T21:44:55Z"
+ },
+ {
+  "arxiv_id": "2607.21832v1",
+  "title": "How Do AI Coding Agents Contribute to Software Development? an Empirical Study of Agentic Pull Requests",
+  "abstract": "Recent advances in large language models and their rapid adoption across software engineering tasks have made Artificial Intelligence (AI) coding agents an integral component of modern software development workflows. While developers increasingly benefit from these coding agents, their impact on software quality remains insufficiently understood. In particular, how agentic contributions evolve across the software development lifecycle has not been thoroughly investigated. This study aims to characterize agentic pull requests (PR) in comparison to human generated PRs and to examine how their properties change across different stages of the development lifecycle. Using the AIDev dataset, we first analyze how differences in merge rates between agentic and human generated PRs vary over time. We then identify the types of development tasks where AI coding agents are predominantly applied and investigate how these task distributions evolve across development quarters. Finally, we compare a set of key characteristics of agentic and human generated PRs, focusing on their implications for software quality and their temporal dynamics. Overall, our findings provide an empirical and longitudinal perspective on the role of AI coding agents in software development, offering a more nuanced understanding of their benefits and limitations in real-world practices.",
+  "authors": [
+   "Iren Mazloomzadeh",
+   "Mohammad Mehdi Morovati",
+   "Foutse Khomh"
+  ],
+  "published": "2026-07-23T21:48:28Z"
+ },
+ {
+  "arxiv_id": "2607.21835v1",
+  "title": "ToolGuardian: Declarative Security for AI Agent-Tool Interactions",
+  "abstract": "LLM agents increasingly rely on external tools, expanding capability while creating a new security boundary: third-party tools may appear benign at the interface level while embedding unsafe behavior in implementation. Existing defenses rely on weak metadata, collapse characterization and policy judgment into a single decision, or use heuristic/LLM enforcement that lacks deterministic, auditable reasoning over task context and multi-tool composition. This paper presents ToolGuardian, a policy-driven framework for securing agent-tool interactions through pre-admission vetting and task-aware runtime authorization. ToolGuardian uses progressive characterization to convert evidence into structured facts: descriptions capture declared intent, system-call traces expose coarse behavior, mock execution reveals observed effects, and source analysis identifies latent behavior. ToolGuardian's core contribution is an Answer Set Programming (ASP)-based declarative policy layer that reasons explicitly over capabilities, effects, task context, and composition. We compare ASP against heuristic and LLM-based policy realizations using identical inputs and output contracts. We evaluate ToolGuardian on 16 MCP-style tools, including 8 malicious variants derived from real open-source tools, and 20 runtime scenarios. For vetting, ASP reaches a deny-class F1 of 0.86 and 88% accuracy using description, syscall, and observed-effect evidence. For runtime authorization, fully specified realizations classify all scenarios correctly, while ablations show that removing compositional and conformance rules substantially degrades performance.",
+  "authors": [
+   "Arun Ravindran",
+   "Saurabh Deochake"
+  ],
+  "published": "2026-07-23T21:53:34Z"
+ },
+ {
+  "arxiv_id": "2607.21839v1",
+  "title": "Certified in Theory, Broken in Practice: Assumption Gaps in Cryptographic Model Certification",
+  "abstract": "Privacy-preserving machine learning auditing protocols allow auditors to assess models for properties such as accuracy or fairness, without revealing their internals or training data. This makes them especially attractive for auditing models deployed in sensitive domains such as healthcare or finance. For these protocols to be meaningful in real-world audit settings, though, their guarantees must reflect how the model will behave once deployed, rather than merely certifying its behavior during an audit. Existing security definitions often miss this mark: most certify model behavior only on a fixed audit dataset, without ensuring that the same guarantees generalize to other datasets drawn from the same distribution. As we show, this gap allows a model provider to attack many cryptographic model certification (CMC) schemes built on secure zero knowledge proofs (ZKP) by carefully engineering training data, resulting in models that exhibit benign behavior during an audit, but pathological behavior in practice. For example, we empirically demonstrate that an attacker can certify that a model achieves over 99% accuracy on an audit dataset, but less than 30% accuracy on fresh samples from the same distribution. To address this gap, we formalize rigorous cryptographic security notions tailored to CMC frameworks, introduce a generic protocol template, and prove that it satisfies these requirements. Our results thus offer both cautionary evidence about existing approaches and constructive guidance for designing secure, privacy-preserving ML auditing protocols.",
+  "authors": [
+   "Carter Luck",
+   "Olive Franzese-McLaughlin",
+   "Elisaweta Masserova",
+   "Akira Takahashi",
+   "Antigoni Polychroniadou",
+   "Nicolas Papernot"
+  ],
+  "published": "2026-07-23T22:06:12Z"
+ },
+ {
+  "arxiv_id": "2607.21842v1",
+  "title": "Quantifying Political Partisanship for Cross-Platform Analyses",
+  "abstract": "Research on political polarization on social media depends on the ability to reliably measure partisanship in user-generated content. However, existing approaches are typically tailored to platform-specific properties, such as structural affordances or linguistic conventions, which hurts generalizability across platforms. This limitation is increasingly consequential as the social media ecosystem fragments and fringe, alt-tech platforms emerge alongside mainstream ones. We propose a text-based, platform-portable methodology for measuring political partisanship in social media posts, anchored by an external news-credibility signal. Posts are embedded using a transformer-based sentence encoder and clustered into topic groups, which are labeled using the aggregated AllSides media bias scores of cited news outlets. A partisanship axis is then constructed in the embedding space as the difference between centroids of oppositely labeled clusters, and individual posts are scored by projection onto this axis. We apply the method to a corpus of approximately 1.3 million posts collected from Bluesky and Truth Social during the six months preceding the 2024 U.S. presidential election, providing the first cross-platform comparison of partisanship distributions on these two ideologically asymmetric platforms. The resulting partisanship scores correlate significantly with held-out AllSides media bias scores both in-distribution and out-of-distribution on an independent Twitter corpus, and recover within-platform partisan dynamics that platform identity alone cannot explain.",
+  "authors": [
+   "Fathima Ameen",
+   "Christopher G. Healey"
+  ],
+  "published": "2026-07-23T22:12:17Z"
+ },
+ {
+  "arxiv_id": "2607.21843v1",
+  "title": "Simulation-Based Empirical Bayes",
+  "abstract": "Empirical Bayes (EB) performs simultaneous inference across many related latent variables. Classical EB assumes that the likelihood p(x | z) is tractable. In many scientific applications, however, the likelihood is available only through a simulator. This paper develops EB for such implicit likelihoods. We introduce simulation-based empirical Bayes (SBEB), which connects nonparametric EB to simulation-based inference (SBI). SBEB computes EB estimates without an explicit density by using the observed data, simulator samples, and an amortized inference network. SBEB iteratively refines the fitted EB prior toward the population prior. With several scientific simulators and real-world data, we demonstrate that SBEB improves accuracy over SBI with a fixed prior.",
+  "authors": [
+   "Xinwei Shen",
+   "Diana Cai",
+   "Cheng Zhang",
+   "David M. Blei"
+  ],
+  "published": "2026-07-23T22:12:46Z"
+ }
+]

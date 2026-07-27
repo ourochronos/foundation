@@ -1,0 +1,248 @@
+[
+ {
+  "arxiv_id": "2607.20943v1",
+  "title": "An Analytically Trained Variational Surrogate for Quantum Phase Estimation on NISQ Hardware",
+  "abstract": "Quantum Phase Estimation (QPE) is a foundational algorithm for molecular ground-state energy estimation, but its deep circuit requirements make direct hardware execution impractical on Noisy Intermediate-Scale Quantum (NISQ) devices. We present an analytically grounded variational surrogate framework in which a shallow Variational Quantum Circuit (VQC) is trained to reproduce the QPE measurement distribution without any quantum circuit simulation. The training target is computed entirely classically via the Dirichlet kernel, evaluated directly from the Full Configuration Interaction (FCI) ground-state energy, the ancilla qubit count, and the time evolution parameter, eliminating the exponentially scaling simulation bottleneck of prior surrogate approaches. We apply this framework to the hydrogen molecule (H$_2$) with a symmetry-tapered Hamiltonian, conducting a four-stage experimental investigation on IBM Quantum hardware. Stage 1 compares linear and full entangler topologies for the $R_Y$-$R_Z$-$CZ$ ansatz, with and without XpXm Dynamical Decoupling (DD), across four distributional metrics (Hellinger distance, fidelity error, total variation distance, Jensen-Shannon divergence), identifying the linear entangler as optimal. Stage 2 varies VQC layers ($p=1$ to $5$) for the linear-entangler ansatz, identifying single-layer depth as optimal under hardware noise. Stage 3 applies this configuration to the reduced $R_Y$-$CZ$ ansatz, comparing ideal and noisy simulator-trained parameters. A supplementary noise analysis at $p \\in \\{8,64\\}$ characterizes the depth-dependent interplay between circuit depth and DD effectiveness. The framework enables faithful QPE mimicry using a linearly scaling VQC, recovering the ground-state energy within the chemical accuracy threshold (1 kcal/mol), constituting a scalable, hardware-efficient paradigm for QPE-based molecular energy estimation on NISQ devices.",
+  "authors": [
+   "Mousumi Kundu",
+   "Ashish Kumar Patra",
+   "Anurag K. S. V.",
+   "Ruchika Bhat",
+   "Sai Shankar P.",
+   "Alok Shukla",
+   "Jaiganesh G"
+  ],
+  "published": "2026-07-23T05:52:17Z"
+ },
+ {
+  "arxiv_id": "2607.20946v1",
+  "title": "From a Word-Level Dictionary to Sentence-Level Semantics: Multilingual Grievance Labelling with Contextual Models",
+  "abstract": "Grievance is one of the warning signs analysts look for when assessing threats of violence. It is increasingly measured at scale from online text, most often with word-level lexicons like the Grievance Dictionary that score by matching weighted terms. Such matching is a fast and transparent proxy, but it cannot resolve whether a term is asserted, quoted, negated, or condemned. These lexicons are also often evaluated on pools enriched with the very examples they retrieve, so a high score partly reflects agreement with the lexicon's own selection rule. Examining a five-language, 2{,}000-item evaluation pool, we find its halves separated almost perfectly by the lexicon itself: every item labeled ``random'' is in fact lexicon-negative, so the lexicon's apparent macro-AUROC of 0.686 collapses to a 0.500 floor fixed by construction. We keep the dictionary's 22-construct ontology but replace term matching with context-reading models, evaluated on a non-circular benchmark that separates unconditional-random, lexicon-positive, and lexicon-negative strata across five languages. Reading the full post rather than the target sentence alone helps most where the lexicon is silent, raising average precision on lexicon-negative text from 0.14 to 0.20, with the largest gains on quoted, implicit, and cross-sentence grievance. Together, these results show that grievance is measured more faithfully by reading the surrounding context, and more honestly when tested on text the lexicon did not select. We release our code and benchmark at https://github.com/behavioral-ds/multilingual_grievance.",
+  "authors": [
+   "Lin Tian",
+   "Marian-Andrei Rizoiu"
+  ],
+  "published": "2026-07-23T05:56:04Z"
+ },
+ {
+  "arxiv_id": "2607.20950v1",
+  "title": "Best-of-Evidence: Best-of-N Selection under Partial Verification",
+  "abstract": "BoN improves model outputs by sampling several candidates and selecting one with a proxy score, but it assumes that complete candidates can be evaluated reliably. Many vision-language tasks instead provide only partial verification: a finding, span, value, region, or relation may be checkable even when no dependable whole-response verifier exists. Moreover, the same claim may recur across candidates with opposing stances, allowing one observation to support part of the pool and contradict another. We introduce Best-of-Evidence (BoE), an inference-time selection framework that keeps the BoN candidate pool fixed, represents reusable claims with a signed candidate--factor graph, and allocates a limited budget to evidence actions that can change the final choice. BoE formalizes selection under partial verification and provides a practical score-based controller, with the zero-budget case recovering the underlying BoN decision. Theoretically, we show that residual evidence capacity limits any evidence-driven improvement and that shared factor queries can achieve an O(log K) versus \u0398(K) query separation in a factor-code model. Common-ledger experiments on four medical VQA settings show that BoE can improve fixed-pool selection and rescue some BoN failures when evidence is reliable, contrastive, and decision-relevant, while also revealing the channel-quality and candidate-generation limits that prevent universal gains.",
+  "authors": [
+   "Cenwei Zhang",
+   "Teng Fang",
+   "Yuxia Wang",
+   "Derek Li",
+   "Bryan Dai",
+   "Lei You"
+  ],
+  "published": "2026-07-23T06:03:59Z"
+ },
+ {
+  "arxiv_id": "2607.20952v1",
+  "title": "The Weight of Silence: A Causal Case for Weights Over the Scratchpad in Latent Chess Reasoning",
+  "abstract": "Latent, or silent, reasoning lets language models carry out intermediate computation in continuous vector space instead of words, and is widely assumed to function as an internal scratchpad the model actively consults during inference. Whether that assumption survives reinforcement learning has not been tested directly: existing causal analyses of latent reasoning are confined to math and logic tasks, and compare a model's reliance on its thoughts within a single checkpoint, never before and after an RL stage. We train a chess-playing model through a staged latent-reasoning curriculum followed by reinforcement learning, and find legality climbs monotonically to 61% (from a 48% pre-RL baseline) while checkmate confabulation is eliminated entirely. To locate this gain, we run a six-condition causal intervention suite on the same model before and after RL: substituting or adding matched noise to the latent thought vectors leaves performance unchanged, ablating them causes only mild degradation, and only exact-zero vectors cause collapse. This robustness gap is itself the finding: under exact-zero corruption, legality collapses to 1% pre-RL versus 9% post-RL, a gap that survives correction for testing across the full battery; milder conditions trend similarly without independently reaching significance. RL appears to add robustness to disruption, not reliance on thought content. These results push back against the field's default assumption that latent thoughts function as an actively consulted inference-time scratchpad, and instead indicate latent reasoning's principal effect here is shaping the model's parameters during training. We also demonstrate a working RL gain in chess, a domain outside the math and logic settings where multiple groups report the same latent-reasoning-plus-RL recipe failing to improve accuracy over SFT.",
+  "authors": [
+   "Ishan S. Kshirsagar"
+  ],
+  "published": "2026-07-23T06:18:43Z"
+ },
+ {
+  "arxiv_id": "2607.20957v1",
+  "title": "Fast and Efficient Approximate Nearest Neighbor Search for High-Dimensional LLM Embeddings",
+  "abstract": "The annual SISAP Indexing Challenge benchmarks Approximate Nearest Neighbor Search (ANNS) algorithms under rigorous constraints. This paper presents our submissions for the 2026 edition, addressing both $k$-Nearest Neighbor Graph (kNNG) construction on 1024-dimensional BGE-M3 embeddings (Task 1) and Maximum Inner Product Search (MIPS) on unnormalized Llama-3.2-8B features (Task 2). To optimize construction speed, we utilize Equi-Voronoi Polytopes (EVP) for efficient quantization, supplemented by targeted reranking strategies to maintain high recall. For MIPS, we transform the asymmetric inner product problem into a Euclidean search space via dimensionality augmentation. To reduce query latency and optimize memory access, we introduce a 1D presorting mechanism via Fast Linear Assignment Sorting (FLAS) prior to graph construction. This significantly improves spatial locality and cache hit rates during subsequent graph traversal. Source Code: https://github.com/Visual-Computing/sisap26-deglib",
+  "authors": [
+   "Nico Hezel",
+   "Kai Uwe Barthel",
+   "Bruno Schilling",
+   "Konstantin Schall",
+   "Andre Moelle",
+   "Klaus Jung"
+  ],
+  "published": "2026-07-23T06:35:12Z"
+ },
+ {
+  "arxiv_id": "2607.20970v1",
+  "title": "From Scalars to Time Series: Rethinking Implicit Neural Representations for Time-Varying Volumetric Data",
+  "abstract": "Implicit neural representations (INRs) for time-varying volumetric data are typically trained using dense sampling over spatiotemporal coordinates, where each observation corresponds to a single point in space and time. This coordinate-wise formulation requires extensive sampling during optimization, leading to high computational cost and inefficient use of temporal structure. In this work, we revisit this design choice and show that dense spatiotemporal sampling is not necessary for learning time-varying fields. Instead, we represent the data as a collection of spatially indexed time series and train INRs using sequence-level supervision over each spatial location, rather than coordinate-wise scalar samples. This reformulation eliminates the need for dense spatiotemporal sampling and instead learns each spatial location from its full temporal evolution in a structured manner. We demonstrate that this representation is compatible with a range of existing INR architectures and consistently improves reconstruction quality, while significantly reducing training cost. Furthermore, we show that this formulation can be combined with mixture-of-experts architectures, and that our MoE instantiation further improves reconstruction quality compared to both the base reformulation and existing MoE-based INR methods, providing a stronger capacity allocation under heterogeneous temporal dynamics.",
+  "authors": [
+   "Weihan Zhang",
+   "Xuan Zhao",
+   "Yenwen Peng",
+   "Yuqi Chen",
+   "Jun Tao"
+  ],
+  "published": "2026-07-23T06:46:58Z"
+ },
+ {
+  "arxiv_id": "2607.20972v1",
+  "title": "Delivery, Not Storage: Cue-Anchored Working Memory as a Harness Property for Coding Agents",
+  "abstract": "Coding agents ship with one kind of memory: documents. Instruction files, plan artifacts, and auto-written memory directories are deliberately authored and deliberately retrieved: the agent must choose to write them and choose to read them back. Human expertise runs on a second tier that never gets written down: situationally-bound operational facts (gotchas, locations, local conventions) encoded as a side effect of the work and retrieved involuntarily when the situation cues them. We argue this second tier is the load-bearing one for long-running agents and must be a harness property, not an agent choice. We contribute: (1) a two-tier design theory grounded in the cognitive literature on memory offloading, incidental encoding, and event-based prospective memory, each mapped to an architectural requirement; (2) a cue-anchored memory model where memories carry first-class trigger conditions over a composable vocabulary (path, symbol, semantic, event, temporal), evaluated deterministically by the harness, a composition no surveyed academic or shipped system provides; (3) a controlled evaluation on a real coding task showing that voluntary memory use is near zero even with a pre-seeded store (0 memory operations in 114 turns), that deterministic injection delivered in every seeded run with zero false alarms, and that 39% of intra-session re-reads re-buy content paid for before a compaction boundary; (4) a repeated-compaction decay probe: ten facts held only in conversation vanish at the first summary and stay absent from 106 of 108 compactions, and the deprived agent greps the harness's own session files to rebuild them, while the same facts injected from a harness-owned store arrive intact through all 138 compact-resumes as the final summary carries none. Delivery, not storage, is the product: the reliable memory channel for agents is the one the agent never has to think about.",
+  "authors": [
+   "Swapnanil Saha"
+  ],
+  "published": "2026-07-23T06:50:04Z"
+ },
+ {
+  "arxiv_id": "2607.20981v1",
+  "title": "Beyond Independent Optimization: Compression, MoE Routing, and Quantization Interactions in Multimodal Edge Intelligence",
+  "abstract": "Efficient multimodal inference is increasingly constrained not only by model quality or FLOP count, but also by the cost of preserving, moving, routing, caching, and quantizing multimodal representations under latency, memory, and energy constraints. This paper reviews recent advances in efficient vision-language and multimodal large language models, covering visual token compression, video token management, KV-cache optimization, Mixture-of-Experts (MoE) routing, low-bit quantization, edge deployment, and hardware-aware benchmarking. We argue that these techniques cannot be treated as independent optimizations. Visual token compression alters downstream feature distributions and MoE routing decisions, routing behavior affects expert utilization and quantization sensitivity, quantized router logits influence expert assignment, KV-cache policies determine retained multimodal evidence, and hardware constraints often transform computational savings into memory and communication bottlenecks. We organize the literature around these interactions and identify key design trade-offs, including accuracy versus token budget, static versus adaptive compression, sparse routing efficiency versus expert collapse, and low-bit inference versus modality-specific degradation. Finally, we introduce Temporal Routing Consistency as a diagnostic for video MoE models and highlight open research directions in routing-aware compression, cross-modal cache management, hardware-aware co-design, and unified benchmarking for multimodal edge intelligence.",
+  "authors": [
+   "Jay Gor",
+   "Karm Dave",
+   "Akshita Abrol",
+   "Rajesh Gupta",
+   "Sudeep Tanwar",
+   "Zhengkui Wang"
+  ],
+  "published": "2026-07-23T07:03:33Z"
+ },
+ {
+  "arxiv_id": "2607.20982v1",
+  "title": "GuardianAgentBench: Where Agents Fail and How to Guard Them",
+  "abstract": "As large language model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe and reliable behavior becomes critical. We present GuardianAgentBench (GABench), a benchmark of 580 scenarios across six domains evaluated on three production-ready frameworks: LangChain, LlamaIndex, and Vectara. The benchmark incorporates rigorous multi-stage validation and five adversarial attack modes. Experiments with six state-of-the-art models reveal that even the strongest configuration achieves only 74.8% overall accuracy and expose two distinct failure regimes: stronger models under-call required tools, while weaker models mis-select and over-call tools. Performance degrades monotonically with both tool-set size and sequential turn depth, with long-horizon planning proving the steeper bottleneck. Our guardrail implementation consistently outperforms system-prompt-based defenses across all models, recovering 19.9% of failures at a false positive rate of just 0.5%. These results demonstrate that execution-time structural intervention improves safety without disrupting correct agent behavior.",
+  "authors": [
+   "Vishal Ishwar Naik",
+   "Chenyu Xu",
+   "Donna Dong",
+   "Hussein Hassan",
+   "Abhishek Pradhan",
+   "Ofer Mendelevitch",
+   "Tallat Shafat",
+   "Humayun Irshad"
+  ],
+  "published": "2026-07-23T07:05:05Z"
+ },
+ {
+  "arxiv_id": "2607.20988v1",
+  "title": "HyWorldVLA: A Vision-Language-Action Model with Hybrid World Modeling for Autonomous Driving",
+  "abstract": "Vision-Language-Action (VLA) models augmented with world modeling represent a promising paradigm for end-to-end autonomous driving. While pixel-level future prediction enables fine-grained spatiotemporal reasoning, it compromises robustness in noisy driving scenarios. Conversely, latent-based world models alleviate this sensitivity but often incur limited interpretability and representational degradation due to absent pixel-level grounding. To reconcile this trade-off, we propose HyWorldVLA, a hybrid world-VLA framework that unifies pixel-level supervision and latent representation learning. In the pre-training stage, HyWorldVLA predicts video latents encoded by a pre-trained video VAE, while simultaneously reconstructing video frames to provide precise pixel-level grounding. During the subsequent co-fine-tuning phase, the model exclusively predicts latent features, which are fed into an action expert to generate trajectories. Extensive experiments on NAVSIM v1 and v2 benchmarks demonstrate that HyWorldVLA significantly outperforms both pixel-based and latent-based world model baselines. Notably, we present the first comprehensive qualitative and quantitative analysis of world model noise robustness in autonomous driving, establishing a new benchmark for evaluating future architectures.",
+  "authors": [
+   "Quanfu Yu",
+   "Xian Wu",
+   "Hao Xu",
+   "Liulong Ma"
+  ],
+  "published": "2026-07-23T07:11:41Z"
+ },
+ {
+  "arxiv_id": "2607.20993v1",
+  "title": "Sparse Concept Channels in Frozen 3D CT Vision Encoders",
+  "abstract": "Large vision-language models are becoming increasingly dominant in 3D medical image interpretation, but we rarely know &lt;i&gt;which&lt;/i&gt; internal units encode clinical findings or &lt;i&gt;where&lt;/i&gt; that information lives in the representation. We first study this on a 3D chest vision-language model (Pillar-0) by probing its frozen vision embeddings. We show that (i) each radiological finding is encoded by a &lt;i&gt;sparse&lt;/i&gt; set of ~10 vision-encoder channels that match full-feature classification performance and far exceed a zero-shot text prompting; (ii) turning off the channels tied to one finding, that finding's score collapses while unrelated labels stay stable; and (iii) the same sparse probe &lt;i&gt;replicates&lt;/i&gt; on an architecturally unrelated 3D abdominal VLM (Merlin) suggesting a general property of frozen medical encoders. Our training-free concept channel probe (CCP) method, paired with a corpus-derived report template, outperforms published CT-CHAT on clinical efficacy and NLG metrics (F1 0.549 vs. 0.184; BLEU 0.483 vs. 0.373) at 22x lower latency. Our results provide a clear, reproducible characterization of how frozen medical encoders represent findings, demonstrating direct applicability across models.",
+  "authors": [
+   "Farhad Nooralahzadeh",
+   "Lea Bogensperger",
+   "Christian Bluethgen",
+   "Michael Krauthammer"
+  ],
+  "published": "2026-07-23T07:17:11Z"
+ },
+ {
+  "arxiv_id": "2607.20995v1",
+  "title": "Where Animacy Lives in Large Language Models: Tracing the Circuits of the Animacy Concept",
+  "abstract": "Distinguishing animate from inanimate concepts in written language requires more than shallow text processing, as it involves recognizing complex selectional constraints and contextual cues, such as verb-argument interactions. Yet, current large language models (LLMs) appear to be capable of doing it. We investigate whether this animacy-sensitive behavior of LLMs can be traced to a localized set of causally relevant components and connections. To do so, we construct a controlled dataset of minimal pairs and perform circuit discovery on four open-weight models. Through in-depth experiments and ablations, we show that a causal mechanism responsible for handling animacy in these models does exist, thus discovering an animacy circuit. At the same time, this circuit appears to be less localized compared to other known ones and generalizes only partially across models and animacy tasks, confirming the distributed, context-dependent, and somewhat graded nature of the animacy concept.",
+  "authors": [
+   "Samuele Punzo",
+   "Giovanni Cin\u00e0",
+   "Sandro Pezzelle"
+  ],
+  "published": "2026-07-23T07:19:44Z"
+ },
+ {
+  "arxiv_id": "2607.20999v1",
+  "title": "Workflow-Localized Mechanism Learning: Attribution-Guided Repair and Knowledge Reuse for Structured Agent Skills",
+  "abstract": "Agent Skills package reusable procedural knowledge as external artifacts for frozen language-model agents, yet existing optimizers do not jointly resolve where a failure occurs in a workflow, which mechanism caused it, and how relevant knowledge from third-party Skills should be reused locally. We introduce Workflow-Localized Mechanism Learning (WML). Its Node--Mechanism Attribution identifies the failed workflow node, implicated mechanisms, and smallest valid edit target, routing single-mechanism defects to L3 resources and relational defects across mechanisms to L2 composition protocols. A six-module Workflow-Guided Skill Optimization (WGSO) loop then selects provenance- and scope-aware third-party knowledge, applies bounded patches, evaluates candidates, and stores verified outcomes in optimizer-side memory. On SpreadsheetBench, WML reaches 90.33 +/- 1.53 and 74.67 +/- 3.51 Hard Accuracy with DeepSeek and Qwen3.6-Flash, respectively; without additional optimization, the learned Skills transfer to WikiTableQuestions with 84.00 +/- 2.00 and 83.00 +/- 2.00 Denotation Accuracy. On Compiler-Supported50, WML attains both the highest hard-PASS rate and the lowest cost per successful task; compiled execution sharply reduces tokens and calls relative to a direct SkillAgent while retaining most of its successful tasks. Code and artifacts are available at https://github.com/xiaolin9595/workflow-localized-mechanism-learning.",
+  "authors": [
+   "Zibin Lin",
+   "Shengli Zhang",
+   "Taotao Wang",
+   "Yihan Xia",
+   "Deen Ma",
+   "Guofu Liao"
+  ],
+  "published": "2026-07-23T07:28:50Z"
+ },
+ {
+  "arxiv_id": "2607.21000v1",
+  "title": "Naju: A Native Discrete State-Space Model with Independent Retention and Writing for Long-Sequence Memory",
+  "abstract": "Long-sequence memory tracking places two opposing demands on a recurrent state: near-lossless retention of stored bindings over long horizons, and active overwriting of stale ones. In our diagnostic suite, the strongest efficient baselines tend to solve only one side well. Continuous-time-parameterized state-space models (SSMs) such as Mamba obtain their discrete recurrence by zero-order-hold discretization of a continuous-time system; we argue that this detour is unnecessary for memory tracking and parameterize the discrete transition directly. Naju (Native Adaptive Junction Unit) factorizes the recurrent update, schematically $x_n = f_n\\odot x_{n-1} + i_n\\odot(B_n u_n)$, into an explicit discrete pole (a learned forget gate $f_n$), an independent write gain $i_n$, and input-dependent write/read maps. Since the sigmoid pole satisfies $0&lt;f_n&lt;1$, each frozen local coordinate is Schur-stable by construction, and the full time-varying recurrence satisfies a fading-memory/BIBO bound under uniform boundedness assumptions, with no stability regularizer. We formalize the key structural limitation of coupled designs: any non-expansive complementary single-gate recurrence ties the effective retention $r$ and write gain $w$ through $|r|+w\\le 1$, so near-complete retention forces weak writing; decoupling $f_n$ from $i_n$ removes this constraint. Empirically, Naju is the only evaluated model that remains strong on both retention and overwriting at 4x the training length. Beyond the diagnostic suite, we evaluate Naju on WikiText-103 language modeling, Long Range Arena, and multi-query associative recall. Across these settings, Naju consistently combines strong long-range memory with competitive or superior performance, outperforming the Mamba baselines in the principal comparisons while remaining competitive with the Transformer and preserving linear-time, linear-memory scaling.",
+  "authors": [
+   "Hyuk Lim",
+   "Seunghyun Yoon"
+  ],
+  "published": "2026-07-23T07:34:07Z"
+ },
+ {
+  "arxiv_id": "2607.21003v1",
+  "title": "ADABORD: a novel AdaBoost approach for ordinal classification",
+  "abstract": "Ordinal Classification (OC) deals with classification tasks where the classes follow a natural order. Despite the progress in OC, many existing approaches fail to fully leverage the ordinal information, treating the problem as nominal classification and thereby losing performance potential. In this work, ADABORD, an AdaBoost framework specifically designed for ordinal classification problems, is introduced. The ordinal nature of the classes is incorporated into two key components of the well-known AdaBoost algorithm: 1) the base estimator, where decision trees with the ordinal Gini splitting criterion are proposed; 2) the error function used to update sample weights at each stage and the weights of the classifier in the final ensemble model, given by the absolute ranked probability score, a measure that accounts for both the ordering and the distance between classes. ADABORD is extensively compared against seven state-of-the-art methods on the TOC-UCO repository, the largest benchmark collection for OC to date. The experimental results, supported by statistical analysis, show that ADABORD significantly outperforms competing methods, particularly on datasets with five or more classes, where the ordinal structure becomes more pronounced. Source code, along with all experimental protocols, is publicly available to ensure reproducibility and facilitate future research in OC.",
+  "authors": [
+   "Rafael Ayll\u00f3n-Gavil\u00e1n",
+   "Francisco Jos\u00e9 Mart\u00ednez-Estudillo",
+   "David Guijo-Rubio",
+   "C\u00e9sar Herv\u00e1s-Mart\u00ednez",
+   "Pedro A. Guti\u00e9rrez"
+  ],
+  "published": "2026-07-23T07:37:57Z"
+ },
+ {
+  "arxiv_id": "2607.21005v1",
+  "title": "Weight-norm Criticality: A Mechanism for Loss Spikes Induced by the Normalization and Weight Decay",
+  "abstract": "Most explanations of training instability focus on \\emph{learning-rate criticality}, typically characterized by the Edge of Stability, beyond which optimization becomes unstable. We argue that, in practical deep neural network training, there is an additional and often overlooked \\emph{weight-norm criticality}. This criticality is induced by the interaction between normalization (which introduces scale-invariant components) and weight decay (which persistently shrinks parameter norms). As the weight decay coefficient increases, the norms of scale-invariant weights are progressively driven toward zero. Meanwhile, the sharpness of the loss landscape increases rapidly, destabilizing the optimization dynamics and resulting in abrupt loss spikes. This perspective provides a rationale for why weight penalties can improve generalization yet cannot be made arbitrarily strong: excessive decay drives scale-invariant weight norms past a critical boundary and destabilizes training. Our work provides a new mechanistic understanding of loss spikes through the lens of \\emph{weight-norm criticality}. Moreover, \\emph{weight-norm criticality} yields testable predictions that we validate empirically in networks with scale-invariant components, providing empirical support for the proposed mechanism.",
+  "authors": [
+   "Xiaolong Li",
+   "Zhangchen Zhou",
+   "Zhi-Qin John Xu"
+  ],
+  "published": "2026-07-23T07:39:03Z"
+ },
+ {
+  "arxiv_id": "2607.21010v1",
+  "title": "Reexamining zero-shot summarization: Empirical investigation of trustworthiness of LLM-summarizers",
+  "abstract": "Zero-shot summarization using Large Language Models (LLMs) has significantly advanced the abstractive summarization task by producing coherent and fluent summaries. However, underlying stochasticity of the large language models raises concerns about the stability and trustworthiness of the LLM-generated summaries. This issue has become increasingly important due to proliferation of LLM-generated summaries in educational settings, where students and researchers summarize complex academic materials in zero-shot manner. We propose a novel two-level diagnostic protocol for benchmarking LLM-summarizers based on the stability of the generated summaries. At the lower level, document-level stability analysis is performed over multiple LLM-summaries generated under controlled environment, and the stability coefficient is computed. Each generated summary is scored for semantic and factual alignment with the original document, enabling estimation of stability along more than one dimensions. At the next level, observations from a stratified sample of documents drawn from the corpus are consolidated to estimate the stability index of the LLM-summarizer, which is the proxy for its trustworthiness. Our empirical investigation of three LLM-summarizers across three genres of documents reveals statistically significant differences in the generation-level variability among LLMs across summary evaluation metrics. This study advances the LLM-summarization research by evidential recognition of the stability problem in LLM-summaries and motivates further research towards development of robust, reliable and trustworthy LLM-summarizers.",
+  "authors": [
+   "Vasudha Bhatnagar",
+   "Purnima Bindal",
+   "Vikas Kumar",
+   "Raj Kumari Bahl"
+  ],
+  "published": "2026-07-23T07:48:20Z"
+ },
+ {
+  "arxiv_id": "2607.21013v1",
+  "title": "EmoAgent-R1: Towards Multimodal Emotion Understanding with Reinforcement Learning-based Dynamic Agent Specialization",
+  "abstract": "Multimodal large language models (MLLMs) have achieved impressive performance in multimodal emotion recognition (MER) tasks and lifted MER to a new level that is complex emotion understanding with advanced video understanding abilities and natural language description. However, existing MLLM-based methods often use a fixed prompt to perceive the emotions, ignoring the dynamicity and complexity of the emotion source in the multimodal inputs. To address these issues, we propose a novel Reinforcement Learning-based Dynamic Agent Specialization framework (\\textbf{EmoAgent-R1}) to optimize the emotion recognition, reasoning, and generalization abilities of an MLLM with dynamic agent specialization based on reinforcement learning. Specifically, we first adopt a cold start strategy to endow an MLLM with preliminary emotion recognition, reasoning, and agent routing ability by training with synthetic answer-conditioned chain-of-thought data and agent routing data. Then, we further train the MLLM with reinforcement learning to perceive emotions in a two-step agentic workflow with agent selection and agent specialization. To effectively train EmoAgent-R1, we propose a novel Progressive Group-Relative Policy Optimization (P-GRPO) to combine group-based relative advantages with a PMI-inspired progressive token-level modulation to transform sparse rewards into fine-grained learning signals, mitigating the coarse-grained uniform credit assignment issue in GRPO. Extensive experiments on MER benchmarks demonstrate the superiority of our EmoAgent-R1 in stronger emotion reasoning performance and improved optimization stability.",
+  "authors": [
+   "Lihuang Fang",
+   "Yuchen Zou",
+   "kebin Jin",
+   "Jinghui Qin"
+  ],
+  "published": "2026-07-23T07:52:40Z"
+ },
+ {
+  "arxiv_id": "2607.21016v1",
+  "title": "CultureTalk-ID: A Multi-Task Dialogue Benchmark for Cultural Commonsense in Indonesian Local Languages",
+  "abstract": "Culture is lived through conversation, yet existing Indonesian cultural commonsense benchmarks evaluate LLMs on short and isolated prompts, stripping away the dialogic context in which cultural nuances actually surface. We introduce CultureTalk-ID, the first dialogue-based benchmark for cultural commonsense in Indonesian and its local languages, comprising 4,496 culturally grounded dialogues across 11 languages and 13 culturally salient topics, curated through a multi-stage human pipeline with native speakers to ensure authenticity. CultureTalk-ID introduces three complementary tasks, namely dialogue-based multiple-choice cultural commonsense reasoning, culturally faithful machine translation, and language steering, which jointly probe whether LLMs can understand, transfer, and generate culturally grounded language.",
+  "authors": [
+   "Muhammad Dehan Al Kautsar",
+   "Salsabila Pranida",
+   "Bilal Elbouardi",
+   "Fajri Koto"
+  ],
+  "published": "2026-07-23T08:02:44Z"
+ },
+ {
+  "arxiv_id": "2607.21019v1",
+  "title": "HiMe: Real-Time Self-Hosted Personal Agent Platform for Health Insights with Wearable Devices",
+  "abstract": "Traditional approaches to wearable health signal analysis, such as smartwatches, are constrained by rigid analytical frameworks and limited personalisation. The emergence of LLM agents creates a new opportunity for Personal Health Agentic Analysis, where health insights can be generated adaptively and in context. However, currently there is no open-source locally deployable platform capable of processing personal health data in real time while preserving privacy. We present HiMe, a locally deployable, privacy-first agent platform that is fully compatible with real-time health data ecosystems across a wide range of wearable devices. HiMe is guided by three design principles. The database is treated as a first-class component. Effectiveness and efficiency are jointly optimised to achieve a low-cost Pareto-optimal balance. Data are processed in real time while the user is modelled over the long term. Together, these principles make it practical for individuals to harness Personal Health Agents for continuous, personalised health monitoring for better wellbeing.",
+  "authors": [
+   "Wei Liu",
+   "Siya Qi",
+   "Linhai Zhang",
+   "Lorainne Tudor Car",
+   "Yulan He"
+  ],
+  "published": "2026-07-23T08:05:21Z"
+ }
+]
