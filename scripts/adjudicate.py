@@ -155,6 +155,47 @@ if sys.argv[1] == "arxiv50":
 elif sys.argv[1] == "arxivai50":
     _abstract_audit("arxivai50", "arxiv_ai")
 
+elif sys.argv[1] == "res50":
+    items = json.loads(
+        (ROOT / "data/arxiv_ai/res_audit_sample_50.json").read_text())
+    win = {}
+    for f in sorted((ROOT / "data/arxiv_ai/shards_res").glob("in_*.json")):
+        for p in json.loads(f.read_text()):
+            win["arxiv:" + p["arxiv_id"]] = p
+    labels = json.loads(
+        (ROOT / "data/arxiv_ai/res_audit_labels_50.json").read_text())
+    mine = {i: ("DEFECT" if i in labels["defect_idx"] else "PRECISE")
+            for i in range(50)}
+    blocks = []
+    for i, s in enumerate(items):
+        p = win.get(s["page"], {})
+        blocks.append(
+            f"### ITEM {i}\nCLAIM: {s['statement']}\n"
+            f"  subject={s['subject']!r} relation={s['pid']} "
+            f"object={s['object']!r}\nTITLE: {p.get('title','?')}\n"
+            f"ABSTRACT: {p.get('abstract','')}\n"
+            f"PAPER BODY (what the extractor saw):\n{p.get('body_window','')}")
+    header = (
+        "You are an independent audit adjudicator. Each item is a SHARED "
+        "RESOURCE claim extracted from a paper: the paper's own entity "
+        "(subject), a relation, and a resource the paper did NOT invent "
+        "(object). Relations: P_EVALUATES_ON = evaluates/tests/trains on "
+        "this dataset or benchmark; P_BUILDS_ON = builds on, fine-tunes or "
+        "extends this base model or prior method; P_COMPARES_TO = compares "
+        "against this as a baseline.\n"
+        "Verdict DEFECT if: the ABSTRACT or PAPER BODY does not support the "
+        "resource (never credit background knowledge of the real model, "
+        "even when the claim is true in the world); the RELATION is wrong "
+        "(a baseline or an LLM judge recorded as P_BUILDS_ON); the object "
+        "is a generic term (transformer, VAE, GAN, neural network) rather "
+        "than a named artifact; or the subject is a title fragment or a "
+        "stopword. Otherwise PRECISE. Short proper method names are fine.\n"
+        "Do not use any tools. Output ONLY a JSON array, one object per "
+        'ITEM, format {"idx": <n>, "verdict": "PRECISE"|"DEFECT", '
+        '"reason": "<short>"} — nothing else. Use each item\'s OWN idx.\n\n')
+    run("res50", items, header + "\n\n".join(blocks),
+        {"PRECISE", "DEFECT"}, mine, blocks=blocks, header=header)
+
 elif sys.argv[1] == "hf50":
     items = json.loads((ROOT / "data/hf/audit_sample_50.json").read_text())
     cards = {}

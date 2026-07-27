@@ -1,0 +1,103 @@
+{
+ "protocol": "NEW instrument (docs/15, D95): 50 resource claims sampled seed-17 from the 1,056-claim state, graded by the session model against each paper's own body_window (+abstract/title), BEFORE any precision number was reported. Labels frozen at write time. DEFECT if: (a) the source the extractor was given does not support the resource (background-knowledge fill-in); (b) the RELATION is wrong for the schema (a baseline or a judge recorded as P_BUILDS_ON); (c) the object is a generic term the prompt excludes (VAE, GANs, RAG-as-paradigm); (d) the subject is malformed (a title fragment or a stopword). NOT defects: short proper method names, mild relation stretches within a pid's stated scope (P_EVALUATES_ON covers 'trains on').",
+ "instrument_caveat": "The grading file's '*** NOT FOUND IN WINDOW ***' flag searches only body_window, so a resource present in the abstract shows as not-found (items 11, 21 were graded PRECISE on the abstract). The flag is a prompt to check, not a verdict.",
+ "defect_idx": [
+  1,
+  3,
+  4,
+  5,
+  7,
+  9,
+  15,
+  17,
+  24,
+  36,
+  37,
+  39,
+  40,
+  43,
+  44,
+  46
+ ],
+ "defect_families": {
+  "unsupported_by_source_likely_priors": [
+   1,
+   7,
+   36,
+   37,
+   39,
+   46
+  ],
+  "wrong_relation_type": [
+   9,
+   17,
+   40,
+   43,
+   44
+  ],
+  "generic_term_prompt_excluded": [
+   5,
+   15,
+   24
+  ],
+  "malformed_subject": [
+   3,
+   4
+  ]
+ },
+ "defect_notes": {
+  "1": "SHIFT given a LLaMA 3.1 backbone that appears in neither window nor abstract",
+  "3": "subject is the stopword 'The'; object 'AlFWorld' misspelt and absent",
+  "4": "subject 'Single-Image' is a title fragment; MAE absent",
+  "5": "'CRAG-MM builds on RAG' \u2014 RAG here is a paradigm, and the relation is not asserted",
+  "7": "a specific metric (82.4% on BBH) smuggled into a resource claim, unverifiable in the window",
+  "9": "CursorBench is a contrasting design in related work, not a baseline compared against",
+  "15": "VAE is a generic architecture class, excluded like transformer/attention",
+  "17": "P_BUILDS_ON for GPT-5.5-backed agents that DBA-Bench merely evaluates",
+  "24": "the GANs sentence is background about the field, not a statement that M3-Gen builds on GANs",
+  "36": "DeepSeek-V3.2 -> AIME: true of the real model, absent from the source given",
+  "37": "TTEL 'evaluated on Qwen3-8B' \u2014 unverifiable, and a model is not an evaluation set",
+  "39": "V* Bench absent from window and abstract",
+  "40": "subject is the paper title 'Pixels for Programs?'; Gemini is a provider studied, not built on",
+  "43": "Claude Sonnet is used as a JUDGE, not benchmarked",
+  "44": "Jina-Reranker is a baseline in a comparison table, not something LAMAR builds on",
+  "46": "DeepSearchQA absent from window and abstract"
+ },
+ "precise": 34,
+ "n": 50,
+ "precision": 0.68,
+ "ci95": [
+  0.5418944286372394,
+  0.792419559060006
+ ],
+ "gate": 0.8,
+ "passes_gate": false,
+ "adjudication": {
+  "model": "gpt-5.6-sol",
+  "precision": 0.66,
+  "ci95": [
+   0.522,
+   0.776
+  ],
+  "agreement": 0.78,
+  "kappa": 0.503,
+  "rescued_my_defects": [
+   1,
+   7,
+   9,
+   39,
+   46
+  ],
+  "rescue_cause": "my grading aid searched only body_window with a 24-char prefix match capped at 3 hits; Sol read the full window and found the evidence I had not displayed",
+  "flagged_what_I_passed": [
+   0,
+   2,
+   20,
+   28,
+   42,
+   48
+  ],
+  "flag_cause": "relation typing \u2014 backbone/training-data/data-source recorded as P_EVALUATES_ON, harness and baseline as P_BUILDS_ON, title-fragment subject"
+ },
+ "verdict": "FAILS the 0.80 gate on both raters (0.68 / 0.66); resource axis kept but NOT accepted"
+}

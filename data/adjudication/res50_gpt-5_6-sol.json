@@ -1,0 +1,330 @@
+{
+ "audit": "res50",
+ "model": "gpt-5.6-sol",
+ "n": 50,
+ "n_judged": 50,
+ "raw_agreement": 0.78,
+ "cohens_kappa": 0.5027124773960217,
+ "disagreements": [
+  {
+   "idx": 0,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Qwen3-30B-A3B is a backbone model, not an evaluation dataset or benchmark."
+  },
+  {
+   "idx": 1,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "SHIFT is explicitly evaluated in a LLaMA3.1-8B backbone configuration."
+  },
+  {
+   "idx": 2,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Codex is a supported training harness, not a base method OpenForgeRL builds on."
+  },
+  {
+   "idx": 7,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "The abstract explicitly reports Qwen2-72B scoring 82.4 on BBH."
+  },
+  {
+   "idx": 9,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "The introduction explicitly contrasts WorkBuddy Bench's approach with the closed vendor benchmark CursorBench."
+  },
+  {
+   "idx": 20,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Subject is a fragment of the paper title, not the named method."
+  },
+  {
+   "idx": 28,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "MELD supplies Tier-3 training data; it is not an evaluation benchmark here."
+  },
+  {
+   "idx": 39,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "VCSD is explicitly evaluated on V* Bench for fine-grained and high-resolution perception."
+  },
+  {
+   "idx": 42,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "AlphaEvolve is presented as a baseline using the same search algorithm, not as MetaEvolve's base framework."
+  },
+  {
+   "idx": 46,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "The abstract explicitly reports AREX evaluation on DeepSearchQA."
+  },
+  {
+   "idx": 48,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Mapillary Vistas supplies part of SENSATION-DS rather than serving as an evaluation benchmark."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "DEFECT",
+   "reason": "Qwen3-30B-A3B is a backbone model, not an evaluation dataset or benchmark."
+  },
+  "1": {
+   "verdict": "PRECISE",
+   "reason": "SHIFT is explicitly evaluated in a LLaMA3.1-8B backbone configuration."
+  },
+  "2": {
+   "verdict": "DEFECT",
+   "reason": "Codex is a supported training harness, not a base method OpenForgeRL builds on."
+  },
+  "3": {
+   "verdict": "DEFECT",
+   "reason": "The subject 'The' is a stopword and title fragment."
+  },
+  "4": {
+   "verdict": "DEFECT",
+   "reason": "The subject is a title fragment, and MAE denotes an error metric rather than a baseline artifact."
+  },
+  "5": {
+   "verdict": "DEFECT",
+   "reason": "RAG is a generic paradigm, and the paper says CRAG-MM-Diagnostics builds on CRAG-MM instead."
+  },
+  "6": {
+   "verdict": "PRECISE",
+   "reason": "XQuAD is explicitly used for LAMAR's language-coherence evaluation."
+  },
+  "7": {
+   "verdict": "PRECISE",
+   "reason": "The abstract explicitly reports Qwen2-72B scoring 82.4 on BBH."
+  },
+  "8": {
+   "verdict": "PRECISE",
+   "reason": "The body explicitly identifies both VAE encoders as seven-stage ConvNeXt backbones."
+  },
+  "9": {
+   "verdict": "PRECISE",
+   "reason": "The introduction explicitly contrasts WorkBuddy Bench's approach with the closed vendor benchmark CursorBench."
+  },
+  "10": {
+   "verdict": "PRECISE",
+   "reason": "Body explicitly evaluates MoE^2-LoRA on CommonsenseQA for general retention."
+  },
+  "11": {
+   "verdict": "PRECISE",
+   "reason": "The method explicitly RL fine-tunes Llama3.1-8B."
+  },
+  "12": {
+   "verdict": "PRECISE",
+   "reason": "Differential evolution is explicitly used as a same-budget control baseline."
+  },
+  "13": {
+   "verdict": "PRECISE",
+   "reason": "Cityscapes is explicitly listed among DINOde's OVSS evaluation benchmarks."
+  },
+  "14": {
+   "verdict": "PRECISE",
+   "reason": "English Wikipedia hyperlinks explicitly provide the evaluated knowledge network."
+  },
+  "15": {
+   "verdict": "DEFECT",
+   "reason": "VAE is a generic architecture class, and dRAE more directly extends RAE/VQRAE."
+  },
+  "16": {
+   "verdict": "PRECISE",
+   "reason": "The system explicitly adapts Qwen3-VL-4B using QLoRA."
+  },
+  "17": {
+   "verdict": "DEFECT",
+   "reason": "GPT-5.5-backed agents are evaluated baselines; DBA-Bench does not build on GPT-5.5."
+  },
+  "18": {
+   "verdict": "PRECISE",
+   "reason": "ADAPT-GQE explicitly uses a Gemma 3-based transformer for circuit generation."
+  },
+  "19": {
+   "verdict": "PRECISE",
+   "reason": "YouHQ40 is explicitly listed as a synthetic evaluation benchmark for TRaM-VSR."
+  },
+  "20": {
+   "verdict": "DEFECT",
+   "reason": "Subject is a fragment of the paper title, not the named method."
+  },
+  "21": {
+   "verdict": "PRECISE",
+   "reason": "The paper explicitly uses generalized additive models to analyze formant trajectories."
+  },
+  "22": {
+   "verdict": "PRECISE",
+   "reason": "German Credit is explicitly included among CEL's benchmark datasets."
+  },
+  "23": {
+   "verdict": "PRECISE",
+   "reason": "QLPO is explicitly evaluated on OlympiadBench."
+  },
+  "24": {
+   "verdict": "DEFECT",
+   "reason": "GANs are a generic model class rather than a named shared artifact."
+  },
+  "25": {
+   "verdict": "PRECISE",
+   "reason": "MetaEvolve is evaluated on eight AlgoTune tasks spanning the stated domains."
+  },
+  "26": {
+   "verdict": "PRECISE",
+   "reason": "MissHyper is explicitly evaluated on the PhysioNet 2012 ICU benchmark."
+  },
+  "27": {
+   "verdict": "PRECISE",
+   "reason": "ADSD is tested on CNN/DailyMail using a suffix optimized only on GSM8K."
+  },
+  "28": {
+   "verdict": "DEFECT",
+   "reason": "MELD supplies Tier-3 training data; it is not an evaluation benchmark here."
+  },
+  "29": {
+   "verdict": "PRECISE",
+   "reason": "ESTR is explicitly evaluated on AIME 2024, 2025, and 2026."
+  },
+  "30": {
+   "verdict": "PRECISE",
+   "reason": "LeetCode is explicitly used as an out-of-distribution held-out evaluation benchmark."
+  },
+  "31": {
+   "verdict": "PRECISE",
+   "reason": "ADSD is calibrated and evaluated on GSM8K."
+  },
+  "32": {
+   "verdict": "PRECISE",
+   "reason": "BCIC-2a is explicitly used to evaluate MSBraM on motor imagery classification."
+  },
+  "33": {
+   "verdict": "PRECISE",
+   "reason": "Mistral 7B results are explicitly reported on PIQA."
+  },
+  "34": {
+   "verdict": "PRECISE",
+   "reason": "VSSD explicitly uses Qwen2.5-VL as its MLLM for saliency-based perturbation."
+  },
+  "35": {
+   "verdict": "PRECISE",
+   "reason": "MedGame's open-source models are explicitly adapted using LoRA."
+  },
+  "36": {
+   "verdict": "DEFECT",
+   "reason": "The provided abstract and body do not explicitly identify AIME as an evaluation benchmark."
+  },
+  "37": {
+   "verdict": "DEFECT",
+   "reason": "Qwen3-8B is a model used with TTEL, not a dataset or benchmark evaluated on."
+  },
+  "38": {
+   "verdict": "PRECISE",
+   "reason": "SWE-Bench Pro explicitly evaluates and compares GPT-5 results on its software-engineering tasks."
+  },
+  "39": {
+   "verdict": "PRECISE",
+   "reason": "VCSD is explicitly evaluated on V* Bench for fine-grained and high-resolution perception."
+  },
+  "40": {
+   "verdict": "DEFECT",
+   "reason": "The subject is a title phrase, and the study measures Gemini rather than building on it."
+  },
+  "41": {
+   "verdict": "PRECISE",
+   "reason": "Table 2 explicitly evaluates GPT-4 on DROP."
+  },
+  "42": {
+   "verdict": "DEFECT",
+   "reason": "AlphaEvolve is presented as a baseline using the same search algorithm, not as MetaEvolve's base framework."
+  },
+  "43": {
+   "verdict": "DEFECT",
+   "reason": "Claude Sonnet-5 is an independent judge, not a model benchmarked by QuantiBias."
+  },
+  "44": {
+   "verdict": "DEFECT",
+   "reason": "Jina rerankers are evaluation baselines; LAMAR is initialized from bge-m3-retromae."
+  },
+  "45": {
+   "verdict": "PRECISE",
+   "reason": "Switch-NeRF is explicitly included as a MoE-INR comparison baseline."
+  },
+  "46": {
+   "verdict": "PRECISE",
+   "reason": "The abstract explicitly reports AREX evaluation on DeepSearchQA."
+  },
+  "47": {
+   "verdict": "PRECISE",
+   "reason": "SBM-Transformer is explicitly compared as a learned-mask baseline."
+  },
+  "48": {
+   "verdict": "DEFECT",
+   "reason": "Mapillary Vistas supplies part of SENSATION-DS rather than serving as an evaluation benchmark."
+  },
+  "49": {
+   "verdict": "PRECISE",
+   "reason": "The system explicitly integrates Prophet decomposition with NLP features."
+  }
+ },
+ "my_labels": {
+  "0": "PRECISE",
+  "1": "DEFECT",
+  "2": "PRECISE",
+  "3": "DEFECT",
+  "4": "DEFECT",
+  "5": "DEFECT",
+  "6": "PRECISE",
+  "7": "DEFECT",
+  "8": "PRECISE",
+  "9": "DEFECT",
+  "10": "PRECISE",
+  "11": "PRECISE",
+  "12": "PRECISE",
+  "13": "PRECISE",
+  "14": "PRECISE",
+  "15": "DEFECT",
+  "16": "PRECISE",
+  "17": "DEFECT",
+  "18": "PRECISE",
+  "19": "PRECISE",
+  "20": "PRECISE",
+  "21": "PRECISE",
+  "22": "PRECISE",
+  "23": "PRECISE",
+  "24": "DEFECT",
+  "25": "PRECISE",
+  "26": "PRECISE",
+  "27": "PRECISE",
+  "28": "PRECISE",
+  "29": "PRECISE",
+  "30": "PRECISE",
+  "31": "PRECISE",
+  "32": "PRECISE",
+  "33": "PRECISE",
+  "34": "PRECISE",
+  "35": "PRECISE",
+  "36": "DEFECT",
+  "37": "DEFECT",
+  "38": "PRECISE",
+  "39": "DEFECT",
+  "40": "DEFECT",
+  "41": "PRECISE",
+  "42": "PRECISE",
+  "43": "DEFECT",
+  "44": "DEFECT",
+  "45": "PRECISE",
+  "46": "DEFECT",
+  "47": "PRECISE",
+  "48": "PRECISE",
+  "49": "PRECISE"
+ }
+}

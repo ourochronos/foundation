@@ -2,6 +2,21 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-27 — D97: The owed audit closes it — resource precision **0.68 / 0.66 Sol, FAILS the 0.80 gate**; the real defect is RELATION TYPING, and my own grading aid misled me on five items
+The debt D96 registered is paid. All 50 of the frozen sample graded against each paper's own body window, then Sol-adjudicated blind with the **full** window in view.
+
+**Verdict: my 0.68 [0.54–0.79], Sol 0.66 [0.52–0.78]. Both fail the pre-registered ≥0.80.** Agreement 0.780, κ 0.503 — the two raters disagree on 11 of 50 individual items and **agree completely on the conclusion**, which is the strongest form this result could take. Against the abstract-graded instruments (D92 0.82, D94 Arm A 0.88), **body-window extraction is materially worse**, and by a margin no threshold choice papers over. All three D95 criteria now fail, so **the resource axis is measured, kept, and NOT accepted.**
+
+**My grading aid misled me on five items, and that is the lesson worth keeping.** I graded from an evidence view that searched only `body_window`, with a 24-character prefix match capped at three hits. Sol, reading the whole window, correctly rescued idx 1 (SHIFT *is* evaluated in a LLaMA3.1-8B configuration), 7 (the abstract *does* report Qwen2-72B at 82.4 on BBH), 9, 39 (VCSD *is* evaluated on V\* Bench) and 46 (AREX *is* evaluated on DeepSearchQA) — five claims I called hallucinations that were in the source I had not fully looked at. **This is D92's truncation law turned back on the grader**: I built the instrument that clipped the evidence, then trusted its flag over the evidence. An excerpt view is a prompt to check, never a verdict; the labels file now says so.
+
+**Sol was stricter where it counts and found the real failure mode.** The six it flagged that I passed are all **relation typing**: a backbone recorded as `P_EVALUATES_ON` (idx 0 Qwen3-30B-A3B, idx 28 MELD training data, idx 48 Mapillary Vistas as a data source), a harness as `P_BUILDS_ON` (idx 2 Codex), a baseline as a base framework (idx 42 AlphaEvolve), plus a title-fragment subject (idx 20 "Fast ANNS"). Combining both raters, the defect population is dominated not by invented resources but by **the right resource attached by the wrong relation** — 5 of my 16 and 6 of Sol's 17 are relation errors, and Sol's rescues moved the groundedness family from 6 down to 1.
+
+**So the diagnosis inverts what D96 guessed.** D96 said extraction gets the facts right and the *names* inconsistent. The audit says extraction gets the facts and the names mostly right and the **relations** wrong: it can tell that GSM8K and Qwen2.5 matter to a paper, and cannot reliably tell *how* — evaluated-on versus built-on versus compared-against versus merely-cited-in-related-work. That is a three-way distinction the prompt defines in one line each and the model collapses under an 8k-character window.
+
+**Consequences, in order.** (1) The relation vocabulary needs to be *decided from evidence phrasing* rather than chosen freely — a resource named in an experimental-setup table is `P_EVALUATES_ON`, one named in an architecture sentence is `P_BUILDS_ON`, one in a baselines list is `P_COMPARES_TO`, and one in related work is **none of them and should not be extracted**. That last case is a whole defect family (idx 9, 42, and arguably 2) that a "skip related-work mentions" rule removes for free. (2) Split the pass: extract the resource *mention* with its surrounding phrase, then type the relation in a second, narrow decision. Channel separation, applied to extraction. (3) Re-audit before any acceptance claim.
+
+**Standing rule added**: a grading aid that shows an excerpt must state its own search scope in the labels file, and any "not found" flag it emits is a hypothesis to verify against the full source — never a recorded defect on its own.
+
 ## 2026-07-27 — D96: The resource axis CREATES the cross-paper structure that did not exist — and BOTH pre-registered thresholds fail, one of them because I calibrated it off a noisy probe
 Run of the D95/docs-15 protocol. 374 papers with real bodies, 36 fleet agents, **1,056 resource claims over 268 papers**.
 

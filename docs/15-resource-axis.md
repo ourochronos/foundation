@@ -19,11 +19,23 @@ commit time.
 > GSM8K 1.00) while base models shatter on version/size suffixes
 > (Qwen 9 forms / 0.23, Llama 6 / 0.29, Gemma 4 / 0.57).
 >
-> **Criterion 3 (precision ≥0.80) is OWED — no number is claimed.** The
-> frozen 50 sample exists; only 5 were graded, which is not the
-> instrument. A mechanical proxy over all claims: 94.5% of objects
-> appear verbatim in source, but that over-counts violations because
-> the naming rule *instructs* normalisation.
+> **Criterion 3 (precision ≥0.80) FAILS — 0.68 mine / 0.66 Sol** (D97,
+> debt paid). Agreement 0.780, κ 0.503: the raters split on 11 of 50
+> items and agree entirely on the verdict. Body-window extraction is
+> materially worse than abstract extraction (0.82 / 0.88).
+> **All three criteria fail; the axis is kept and NOT accepted.**
+>
+> The dominant defect is **relation typing**, not invented resources:
+> backbones and training data recorded as `P_EVALUATES_ON`, harnesses
+> and baselines as `P_BUILDS_ON`, related-work mentions extracted at
+> all. D96's guess (names inconsistent, facts right) was wrong — the
+> names and facts are mostly right and the *relations* are wrong.
+>
+> **My grading aid misled me on 5 items**: it searched only
+> `body_window` on a 24-char prefix, capped at 3 hits, and I trusted
+> its "not found" flag over the source. Sol, reading the full window,
+> rescued all five. An excerpt view is a hypothesis to check, never a
+> verdict — now a standing rule.
 >
 > **My hypothesis that fragmentation suppresses population was WRONG**:
 > post-hoc normalisation moves ≥3 from 46 to only 49. Population is
