@@ -1,0 +1,1 @@
+{"id": "google/embeddinggemma-300m", "pipeline_tag": "sentence-similarity", "downloads": 1794008, "likes": 1806, "license": "gemma", "tags": ["sentence-transformers", "safetensors", "gemma3_text", "sentence-similarity", "feature-extraction", "text-embeddings-inference", "arxiv:2509.20354", "license:gemma", "eval-results", "endpoints_compatible", "region:us"], "card_md": ""}
