@@ -1,0 +1,198 @@
+[
+ {
+  "arxiv_id": "2607.14757v1",
+  "title": "Component Modalities of Quantum Logic",
+  "abstract": "This paper determines the structural and proof-theoretic consequences of the forcing condition in relational quantum modal logic, under which every modal transition available at a world is also available at every world compatible with it. We prove that modal successor sets are constant on compatibility components, so boxed truth sets belong to the Boolean algebra of unions of these components. The relation holding exactly between worlds in the same component assigns to each stable proposition its greatest lower and least upper approximations by unions of components, and in hard superselection models these are exactly the approximations by central propositions. We adopt local validity for sequents with multiple conclusions to give a semantics for modal excluded middle on frames with several components. A connectedization obtained by adding one point then shows that component frames, equivalence frames satisfying the forcing condition, and connected compatibility frames with universal modal accessibility have the same logic for sequents with one conclusion. Finally, maximal consistent pairs yield a canonical model, and the calculus obtained by adding T, 4, and B is proved sound and complete for the three frame classes. These results characterize the logical scope of the forcing condition and establish a complete proof theory for component modalities.",
+  "authors": [
+   "Kenji Tokuo"
+  ],
+  "published": "2026-07-16T09:43:01Z"
+ },
+ {
+  "arxiv_id": "2607.14907v2",
+  "title": "Recognition of algebraic matroids is undecidable",
+  "abstract": "We prove that the recognition problem for algebraic matroids is undecidable. Explicitly, this means that there is no algorithm that takes as input a finite set $S$ and a function $r\\colon\\mathcal{P}(S) \\to \\mathbb{Z}_{\\ge 0}$ (where $\\mathcal{P}(S)$ is the power set) and decides whether there exists a pair of fields $F \\subset K$, and a function $f\\colon S \\to K$, such that for all $A \\subseteq S$: $\\mathrm{trdeg}_F f(A) = r(A)$. This problem is known to be decidable if the characteristic of the fields involved is constrained to be zero. We prove that it is undecidable if the characteristic is either left unspecified (in which case a realization over any characteristic is accepted) or fixed to be a prime $p$. The proof relies on Hrushovski--Zilber's Group Configuration Theorem and on the work of Evans and Hrushovski on \"Projective Planes in Algebraically Closed Fields\". We relate two different such projective planes, and eventually construct a reduction from the solvability of Diophantine equations over $\\mathbb{F}_p(x)$ ($p$ prime) to algebraicity of matroids. Solvability of Diophantine equations over $\\mathbb{F}_p(x)$ was proved to be undecidable by Pheidas for all $p &gt; 2$, and later by Videla for $p=2$. A central part of our proof is a variant of the so-called Field Configuration Theorem.",
+  "authors": [
+   "Tobias Boege",
+   "Geva Yashfe"
+  ],
+  "published": "2026-07-16T12:25:38Z"
+ },
+ {
+  "arxiv_id": "2607.15558v2",
+  "title": "Locatedness, Convexity, and Measurability in $\\mathbb{R}^N$",
+  "abstract": "We prove, within Bishop's constructive framework, stronger forms of two theorems in the author's 1988 paper about the locatedness of certain Lebesgue measurable complemented sets in R^{N}. In doing so, we expand and improve the proofs of several preliminary results on Lebesgue measurability and convexity that are need en route to our main theorems.",
+  "authors": [
+   "Douglas S Bridges"
+  ],
+  "published": "2026-07-17T01:57:57Z"
+ },
+ {
+  "arxiv_id": "2607.15583v1",
+  "title": "Distributed Continuous Aerial Surveillance by UAS Swarms Under Formal Mission Specifications",
+  "abstract": "Persistent aerial surveillance using multi-unmanned aerial systems (UASs) requires decentralized coordination, continuous team reconfiguration, and provable mission correctness despite limited onboard energy and communication constraints. This paper develops a distributed framework for continuous aerial surveillance under bounded Linear Temporal Logic (LTL) mission specifications. The proposed approach partitions the UAS team into stationary anchors and mobile workers operating under cyclic replacement modes, and constructs a deep neural network (DNN)-inspired communication topology that enables fully decentralized coordination through local interactions. A hierarchical bounded LTL specification formally captures mode-to-mode reference consistency, cyclic team rotation, finite-time reachability, trajectory tracking, and prescribed surveillance coverage. By proving the finite-time convergence of the worker-agent coordination dynamics, the paper guarantees the finite-time satisfaction of the mission specification. To maximize sensing effectiveness, an information-theoretic optimization framework synthesizes the reference configuration of newly deployed worker agents by minimizing the Kullback--Leibler divergence between the surveillance-node distribution and the induced coverage density. The resulting reference configuration uniquely determines a deterministic, mode-dependent communication topology, eliminating online communication-graph optimization while preserving the formal mission guarantees. Finally, a decentralized quadrotor controller realizes the distributed references using only local communication. Numerical simulations demonstrate cyclic team reconfiguration, decentralized communication-topology synthesis, finite-time formation convergence, and certified persistent surveillance coverage.",
+  "authors": [
+   "Hossein Rastgoftar"
+  ],
+  "published": "2026-07-17T03:06:36Z"
+ },
+ {
+  "arxiv_id": "2607.15664v1",
+  "title": "Semantics for the minimal well-determined logic",
+  "abstract": "The minimal well-determined logic in the language with conjunction and implication is investigated. A calculus for this logic, in which the modus ponens rule is not postulated, is proposed. The main result consists in constructing a semantics for this logic: it is formed by the class of lower semilattices with a greatest element, where the implication is interpreted using a partial function defined via the partial order of the semilattice. This extension of the notion of interpreting logical connectives in a matrix allows for the correct determination of the truth of formulas in the language with conjunction and implication. Soundness and completeness theorems are proved. The proposed semantics creates an opportunity to investigate questions of finite model property for such systems and can also serve as a basis for studying other properties of both the minimal well-determined logic itself and its extensions. As an application of the obtained results, we prove that the set of tautologies of the minimal well-determined logic is decidable in polynomial time and present a corresponding decision algorithm.",
+  "authors": [
+   "Igor Gorbunov",
+   "Mikhail Rybakov"
+  ],
+  "published": "2026-07-17T06:19:06Z"
+ },
+ {
+  "arxiv_id": "2607.15723v1",
+  "title": "Paraconsistent Dominated Convergence",
+  "abstract": "The Levi-Civita field $\\mathcal{R}$ of formal Laurent series is a constructive, non-Archimedean ordered field that supports a full Lebesgue measure and integration theory, including a Dominated Convergence Theorem. This paper embeds that integration theory into the paraconsistent Chunk and Permeate framework, extending it from elementary calculus to genuine measure theory. The source chunk is modelled by $\\mathcal{R}$ with its measure and integral, while the target chunk is the classical real line $\\mathbb{R}$. A permeability relation exports the standard part of the internal integral, and it is shown that the Dominated Convergence Theorem permeates from the source chunk to the target chunk, yielding the classical Lebesgue Dominated Convergence Theorem without any choice principles and without the ultrafilters required by nonstandard measure theory. The construction is entirely explicit and demonstrates that paraconsistent logic can provide a rigorous foundation for deep analytical tools while keeping inconsistencies safely confined.",
+  "authors": [
+   "Anggha Nugraha"
+  ],
+  "published": "2026-07-17T07:56:46Z"
+ },
+ {
+  "arxiv_id": "2607.15958v1",
+  "title": "Logical Metatheorems for Abstract Spaces axiomatized in Positive Bounded Logic II: Metric spaces and the model-theoretic uniformity principle",
+  "abstract": "We extend the proof-theoretic treatment of uniform bound extraction from normed structures axiomatized in positive bounded logic [Advances in Mathematics, 290:503-551, 2016] (as developed for the model theory of Banach spaces) to the more general setting of abstract metric structures, including discrete structures viewed as classical first-order models. In particular, we establish uniform bound extraction theorems for our generalized framework for $\\forall\\exists$-sentences whose matrix is the negation of (an embedding of) a formula in positive bounded logic, whose proofs use saturation. In this way, we provide a formal explanation for the successes in the extraction of uniform bounds from nonstandard proofs given in [Advances in Mathematics, 343:567-623, 2019], which had informally followed the perspective of the monotone functional interpretation. As an application of the formal framework we develop, we provide novel explicit bounds for a structural theorem for stable subsets of groups given in [Mathematical Proceedings of the Cambridge Philosophical Society, 168(2):405-413, 2020].",
+  "authors": [
+   "Ulrich Kohlenbach",
+   "Morenikeji Neri",
+   "Jin Wei"
+  ],
+  "published": "2026-07-17T13:46:47Z"
+ },
+ {
+  "arxiv_id": "2607.16563v1",
+  "title": "On $2$-stationarity of $\\mathcal{P}_\u03ba\u03bb$",
+  "abstract": "The notion of $n$-stationary subsets of $\\mathcal{P}_\u03ba\u03bb$ for $n &lt; \u03c9$ were introduced and studied by Cody, Lambie-Hanson \\&amp; Zhang \\cite{CLHZ} and Torres \\cite{T}. They proved that if $\u03ba$ is supercompact, then $\\mathcal{P}_\u03ba\u03bb$ is $n$-stationary in itself for all cardinals $\u03bb\\geq \u03ba$ and all $n &lt; \u03c9$. In this paper we prove that strong compactness of $\u03ba$ does not imply the $2$-stationarity of $\\mathcal{P}_\u03ba\u03bb$ for cardinals $\u03bb&gt; \u03ba$. We also discuss Menas' Theorem for $1$-stationary and $2$-stationary subsets of $\\mathcal{P}_\u03ba\u03bb$.",
+  "authors": [
+   "Hiroshi Sakai",
+   "M. Catalina Torres"
+  ],
+  "published": "2026-07-18T00:23:22Z"
+ },
+ {
+  "arxiv_id": "2607.16572v1",
+  "title": "Tree-derived ideals: Fubini iterations, limit amalgamations, and Katetov obstructions",
+  "abstract": "We develop a machinery for deriving ideals on a countable set from a partition of $\u03c9$ indexed by $\u03c9^{&lt;\u03c9}$. A derivative operator on trace trees, parametrized by an auxiliary ideal $\\mathcal J$, yields a strict transfinite hierarchy $\\mathcal H^{\\mathcal J}_\u03b1$ of proper ideals, tall from level one onward and independent of the chosen partition. Its finite levels are exactly the Fubini powers, $\\mathcal H_n\\cong\\mathrm{Fin}^{\\otimes(n+1)}$, while $\\mathcal H_\u03c9=\\bigcup_n\\mathcal H_n$ amalgamates all finite powers. We establish presentation independence, local homogeneity, Fubini recursion, and $\u03a0^1_1$-completeness of the full hierarchy. Let $\\mathcal F_\u03c9$ be Kwela's canonical inductive limit and $\\mathcal F'_\u03c9$ his independent-partitions limit. We prove $\\mathcal F_\u03c9\\not\\leq_K\\mathcal H_\u03c9$, although $\\mathcal F'_\u03c9\\sqsubseteq\\mathcal H_\u03c9$ and every finite coherent fragment of a putative reduction is realizable over $\\mathcal H_\u03c9$. The proof introduces essential depth, an invariant monotone along Katetov reductions of $\\mathrm{Fin}\\otimes\\mathrm{Fin}$, and gives the sharp non-extension bound $N(m)=m+2$. Thus $\\mathcal H_\u03c9$ contains no isomorphic copy of $\\mathcal F_\u03c9$, and $\\mathcal F_\u03c9\\not\\leq_K\\mathcal F'_\u03c9$. Applications include chromatic ideals $\\mathcal G_k\\in\\mathcal H_2\\setminus\\mathcal H_1$ whose inclusion order records divisibility and whose Katetov order records arithmetic. We also prove the orthogonality of Cantor--Bendixson and derivative ranks. Finally, $\\mathcal P(\u03c9)/\\mathcal H$ is a $\u03c3$-closed reduced power $\\mathbb B\\cong\\mathbb B^\u03c9/\\mathrm{Fin}$, contains $\\mathcal P(\u03c9)/\\mathrm{Fin}$ regularly, and under CH is forcing-equivalent to $(\\mathcal P(\u03c9)/\\mathrm{Fin})^+$.",
+  "authors": [
+   "Jos\u00e9 de Jes\u00fas Pelayo G\u00f3mez"
+  ],
+  "published": "2026-07-18T01:11:23Z"
+ },
+ {
+  "arxiv_id": "2607.16598v1",
+  "title": "Conuclei on varieties of hoops",
+  "abstract": "A conucleus $\u03b4$ on a partially ordered monoid $\\mathbf{A}$ is an interior operator that satisfies $\u03b4(a) \\cdot \u03b4(b) \\leq \u03b4(a \\cdot b)$ and $\u03b4(a) \\cdot \u03b4(1) = \u03b4(a)$ for all $a,b \\in A$. A conucleus is multiplicative if the equality $\u03b4(a \\cdot b) = \u03b4(a) \\cdot \u03b4(b)$ holds for all $a,b \\in A$. In this article we focus on the study of conuclei on hoops, structures which generalize well-known classes of algebras, such as the class of MV-algebras and BL-algebras. Among several results, we provide a Glivenko-type theorem for conuclei. Special emphasis is given to term definable conuclei. The main result of this article is an explicit description of all terms that define a multiplicative conucleus on every structure of an arbitrary proper variety of Wajsberg hoops. We also show that the problem of finding terms that define (multiplicative) conuclei on a variety of basic hoops or BL-algebras is equivalent to finding such terms on some variety or some pair of varieties of Wajsberg hoops. We provide nontrivial interesting examples.",
+  "authors": [
+   "Sebasti\u00e1n Buss",
+   "Diego Casta\u00f1o",
+   "Jos\u00e9 Patricio D\u00edaz Varela"
+  ],
+  "published": "2026-07-18T02:33:53Z"
+ },
+ {
+  "arxiv_id": "2607.16747v1",
+  "title": "More on the Boolean Prime Ideal Theorem",
+  "abstract": "We prove the consistency of Zermelo--Fraenkel set theory with the Axiom of Dependent Choices, no Vitali sets and a large fragment of the Boolean Prime Ideal Theorem.",
+  "authors": [
+   "Jacob Kowalczyk",
+   "Jindrich Zapletal"
+  ],
+  "published": "2026-07-18T10:18:43Z"
+ },
+ {
+  "arxiv_id": "2607.16772v1",
+  "title": "On Zarankiewicz's bounds for valued vector spaces",
+  "abstract": "We establish absolute and relative almost-linear Zarankiewicz bounds for semilinear relations in valued vector spaces. For every fixed arity and description complexity, a $K_{t,\\ldots,t}$-free semilinear $r$-partite hypergraph has at most \\[ O\\!\\left(n^{r-1}(\\log n)^c\\right) \\] edges, where $c$ depends only on the arity and the number of valuative literals. In the bipartite case a separate arbitrary-trace argument gives the explicit bound $O(n(\\log n)^{2s})$ for description complexity $(\u03c1,s)$. We also prove a relative extension theorem: intersecting any relation with a hereditary almost-linear profile by $s$ affine moving-radius comparisons increases the logarithmic exponent by at most $2s$. For the additive affine-valuative structures on $\\mathbb Q_p$ and $\\mathbb C_p$, quantifier elimination converts these semilinear results into bounds for all definable relations. Finally, over every valued field with infinite value group, we construct $K_{2,2}$-free semilinear point--box graphs of description complexity $(1,4)$ with $\u03a9(n\\log n/\\log\\log n)$ edges.",
+  "authors": [
+   "Hongyi Gou",
+   "Mihir Mittal",
+   "Chieu-Minh Tran",
+   "Zhenyu Yang"
+  ],
+  "published": "2026-07-18T11:14:56Z"
+ },
+ {
+  "arxiv_id": "2607.16942v1",
+  "title": "Building trees in large fields",
+  "abstract": "We show that large rosy fields are bounded, and substantially simplify the proofs that large stable fields are separably closed and that large simple fields are bounded. Our proofs go through in a general topological setting. We obtain instability, non-simplicity, and non-rosiness explicitly by building the appropriate trees of definable sets. We also show that orders on large rosy fields have several properties of orders on pseudo real closed fields.",
+  "authors": [
+   "Elliot Kaplan",
+   "Angus Matthews",
+   "Erik Walsberg"
+  ],
+  "published": "2026-07-18T19:37:21Z"
+ },
+ {
+  "arxiv_id": "2607.17014v1",
+  "title": "Model theory of generic vector space endomorphisms III: Reducts",
+  "abstract": "This paper further studies the model companion of an endomorphism acting on a vector space, possibly with extra structure. Let $T$ be a model-complete theory that $\\varnothing$-defines an infinite $K$-vector space $\\mathbb{V}$. In previous work, we introduced a family $\\{T^C_\u03b8: C \\in \\mathcal{C}\\}$ of extensions of the theory $T_\u03b8:= T \\cup \\{\\text{``$\u03b8$ is an endomorphism of $\\mathbb{V}$''}\\}$ that parameterizes all consistent extensions of the form $$ T_\u03b8\\cup \\left\\{\\sum\\nolimits_{k}\\bigcap\\nolimits_{l}\\operatorname{Ker}(\u03c1_{j, k, l}[\u03b8]) = \\sum\\nolimits_{k}\\bigcap\\nolimits_{l} \\operatorname{Ker}(\u03b7_{j, k, l}[\u03b8]) : j \\in \\mathcal{J}\\right\\}, $$ where all sums and intersections are finite, all the $\u03c1[\u03b8]$'s and $\u03b7[\u03b8]$'s are polynomials over $K$ with $\u03b8$ plugged in, and $\\mathcal{J}$ is some possibly infinite index set. We also presented a sufficient condition that implies that every $T^C_\u03b8$ has a model companion $T\u03b8^C$. We simplify our axiomatization of $T\u03b8^C$ and the criterion for its existence for theories ``close to the theory of $K$-vector spaces''. We apply this to the explicit case where $T$ is the pure theory of $K$-vector spaces and characterize all $\\varnothing$-definable endomorphisms of $\\mathbb{V}$ in this case. Given an existentially closed model $(\\mathcal{M}, \u03b8) \\models T^C_\u03b8$ and a polynomial $\u03c1\\in K[X]$, we show that $(\\mathcal{M},\\operatorname{Ker}(\u03c1[\u03b8]))$ is, unless $\\operatorname{Ker}(\u03c1[\u03b8]) = \\{0\\}$ or $\\operatorname{Ker}(\u03c1[\u03b8]) = \\mathbb{V}$, an existentially closed model of $T_V := T \\cup \\{\\text{``$V$ is a vector subspace of $\\mathbb{V}$''}\\}$. In the same vein, we present a criterion for when $(\\mathcal{M}, \u03c1[\u03b8])$ is again an existentially closed model of $T^{C'}_\u03b8$ for some $C' \\in \\mathcal{C}$.",
+  "authors": [
+   "Leon Chini"
+  ],
+  "published": "2026-07-19T00:42:07Z"
+ },
+ {
+  "arxiv_id": "2607.17174v1",
+  "title": "QBism Logic",
+  "abstract": "QBism interprets quantum theory as a normative discipline for an agent's probability assignments and their revision across possible experience. This paper develops a logical formalization of that picture. A well-formed core datum consists of an admissible prior space, a finite family of actual measurements, Born kernels, and update kernels. For each such datum, we introduce a guarded dynamic language for histories and posterior states and prove a global reduction theorem. We next consider effectively semialgebraic data over an effectively presented real closed field. For data in this class, we translate the fragment without dynamic operators into first-order formulas in the corresponding language of ordered rings, thereby reducing validity to first-order reasoning over real closed fields. Together, the reduction and first-order translation yield a sound and complete recursive calculus and a decision procedure for validity. Finally, assuming a symmetric informationally complete (SIC) reference measurement, we show that quantum theory in finite dimensions realizes the framework through SIC coordinates, POVMs, and quantum instruments. We also prove that the corresponding SIC image satisfies the standard qplex geometry conditions, namely the consistency bounds and the lower polar condition, and that under explicit coefficient field hypotheses the resulting quantum datum is effectively semialgebraic.",
+  "authors": [
+   "Kenji Tokuo"
+  ],
+  "published": "2026-07-19T10:20:53Z"
+ },
+ {
+  "arxiv_id": "2607.17292v1",
+  "title": "Topology in Synthetic Domain Theory and its Formalisation in Agda",
+  "abstract": "This project investigates the Phoa principle in synthetic domain theory (SDT), and provides a generalisation to the transfinite cases. The Phoa principle plays a pivotal role in SDT by illustrating how the paths give the information order on the interval type and other algebraic structures in SDT. The project defines the dual simplices and spines and introduces the concept of sobriomorphisms, which contributes to a new interpretation of the Phoa principle and its generalisations. Finally, the project proposes a hypothetical completeness theorem that may unify the Segal completeness and the chain completeness in SDT based on investigations on the Phoa principle in the project. The project also includes axiomatisation of the interval type in Cubical Agda and the formalised proof for the main theorems.",
+  "authors": [
+   "Runze Xue"
+  ],
+  "published": "2026-07-19T15:24:54Z"
+ },
+ {
+  "arxiv_id": "2607.17512v1",
+  "title": "Maximal Eventually Different Families of Computable Functions",
+  "abstract": "Cardinal characteristics of the continuum are the cardinalities of interesting families of reals. A well-studied example is that of maximal almost disjoint (MAD) families of sets of natural numbers. Significant work has been done investigating computability-theoretic analogues of cardinal characteristics. By considering encodings of MAD families as a single `universal' set, Lempp, Miller, Nies, and Soskova (2023) studied the class of encoded MAD families. Such a class is referred to as a mass problem; one can study the relative complexity between mass problems. In Section 2, we build on the study of mass problems as analogues of cardinal characteristics. We define mass problems of maximal eventually different (MED) families of computable functions in the same way and compare them against the mass problems defined by Lempp et al. In Section 3, we survey work by Greenberg, Kuyper, and Turetsky (2019) that provides an abstract framework for cardinal characteristics and their effective counterparts. We show that this framework is suitable for obtaining results in the setting of mass problems. In Section 4, we showcase a construction by Schrittesser (2018) of an effectively closed MED family in set theory. We show that the construction is sufficiently effective that the computable members of the constructed family are MED relative to computable functions.",
+  "authors": [
+   "Logan McDonald"
+  ],
+  "published": "2026-07-20T03:38:13Z"
+ },
+ {
+  "arxiv_id": "2607.17666v1",
+  "title": "Hindman's theorem does not code $\\emptyset^{(\u03c9)}$ in one application",
+  "abstract": "We prove that for every non-arithmetic set~$C$ and every arithmetic finite coloring of~$\\mathbb{N}$, there is an infinite set $H \\subseteq \\mathbb{N}$ whose non-empty finite sums of distinct elements is monochromatic, and $C$ is not $H$-computable. We also study restrictions of Hindman's theorem to simple colorings.",
+  "authors": [
+   "Lu Liu",
+   "Ludovic Patey"
+  ],
+  "published": "2026-07-20T08:16:24Z"
+ },
+ {
+  "arxiv_id": "2607.17928v1",
+  "title": "Some prospects for semiproducts and products of modal logics",
+  "abstract": "We consider products and semiproducts of propositional modal logics L with S5 and present new examples of product and semiproduct logics axiomatized in the minimal way and enjoying the product (or semiproduct) FMP. An essential part of the proof is local tabularity of these (semi)products for L of finite depth; it is obtained by using bisimulation games. These results readily imply decidability for 1-variable fragments of predicate modal logics QL and QL+Barcan formula. We also present new counterexamples, i.e. (semi)products not axiomatizable in the simplest way.",
+  "authors": [
+   "Valentin Shehtman",
+   "Dmitry Shkatov"
+  ],
+  "published": "2026-07-20T13:25:55Z"
+ },
+ {
+  "arxiv_id": "2607.18502v1",
+  "title": "From Regional Topology to Point-Class Topology in Tarski's Geometry of Solids",
+  "abstract": "Tarski's geometry of solids reconstructs point-like objects from concentric families of spherical regions rather than taking points as primitive entities. We formalize this reconstruction in Coq within a nominal mereological framework inspired by Lesniewski. The main question is how a regional, point-free geometry can support a Kuratowski closure operator on the objects obtained from such reconstructed points. We distinguish the regional topology of Tarski-Lesniewski solids from a point-class topology built on ball representatives. Point-like objects are treated as concentric point-classes, namely equivalence classes of ball representatives under equality of concentric families. Regional objects provide the source of basic neighbourhoods, but closure acts on point-class plurals rather than on solids themselves. We define point-open plurals and introduce a neighbourhood-based closure operator on them. The central Coq theorem proves that this operator satisfies the four Kuratowski closure axioms. We further define point-closed plurals as fixed points of this closure and derive a topological boundary remainder. The formalization separates regional openness, representative equivalence, and topological adherence, while avoiding the reification of reconstructed points as mereological individuals.",
+  "authors": [
+   "Patrick Barlatier",
+   "Richard Dapoigny"
+  ],
+  "published": "2026-07-20T20:50:37Z"
+ }
+]

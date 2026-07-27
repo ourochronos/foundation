@@ -1,0 +1,200 @@
+[
+ {
+  "arxiv_id": "2606.31862v1",
+  "title": "Modal Measurable Logics via a Modal Loomis-Sikorski Representation Theorem",
+  "abstract": "We investigate a modal extension of the infinitary classical logic with countable meets and joins, formulated with an eye toward measure-theoretic work in dynamical systems and in point-free ergodic theory. We define a modal formalism in this language, which we call modal measurable logics. We also introduce a Kripke-like semantics for these logics in measurable spaces taking a designated modal sigma-ideal into consideration. Using a restriction of Jonsson-Tarski duality and a modal extension of the Loomis-Sikorski theorem, we prove completeness of modal measurable logics with respect to this new semantics.",
+  "authors": [
+   "Nick Bezhanishvili",
+   "Jim de Groot",
+   "Lawrence S. Moss"
+  ],
+  "published": "2026-06-30T15:54:12Z"
+ },
+ {
+  "arxiv_id": "2606.31870v1",
+  "title": "Intuitionistic Monotone Modal Logic: Proof Theory and Semantics",
+  "abstract": "We study the recently introduced intuitionistic monotone modal logic IM. We first provide a semantic characterisation for a family of natural extensions of IM in terms of constructive neighbourhood models. We then present a calculus for IM and its extensions, obtained by adapting a structured calculus for the classical monotone modal logic M. Based on the calculus, we prove some preliminary results for IM, including its decidability. Our calculus also reveals an interesting analogy between constructive and intuitionistic variants of M and the corresponding variants of K, thereby further justifying IM as a faithful intuitionistic variant of M.",
+  "authors": [
+   "Tiziano Dalmonte",
+   "Jim de Groot"
+  ],
+  "published": "2026-06-30T15:56:05Z"
+ },
+ {
+  "arxiv_id": "2606.31871v1",
+  "title": "On Interpretations of Normal Modal Logics",
+  "abstract": "We study interpretations of modal logics in one another where the Boolean connectives are interpreted identically and the modal operator diamond is interpreted by an arbitrary formula A(p). Clearly, such a formula A(p) defines an interpretation of a normal modal logic whenever A(p) is additive (that is, preserves disjunction) and normal (that is, preserves bottom) in the target logic. In the present paper, we provide a complete description of all additive and normal formulas in five prominent modal logics: K, GL, Grz, S4, and S5. For K, GL, and S5, we also describe all additive and normal formulas with parameters.",
+  "authors": [
+   "Lev V. Dvorkin"
+  ],
+  "published": "2026-06-30T15:56:37Z"
+ },
+ {
+  "arxiv_id": "2606.31879v1",
+  "title": "Intuitionistic K is a Bisimulation-Invariant Fragment of Intuitionistic First-Order Logic",
+  "abstract": "We define the notion of IK-bisimulation between the relational semantics for the intuitionistic modal logic IK, and prove that IK arises as the IK-bisimulation-invariant fragment of intuitionistic first-order logic. En route, we provide an intrinsic characterisation result of this logic by way of a Hennessy-Milner-style theorem and develop some intuitionistic first-order model theory, including intuitionistic analogues of Los's Theorem, elementary embeddings and countable saturation.",
+  "authors": [
+   "Jim de Groot",
+   "Jo\u00e3o Marcos",
+   "Rodrigo Stefanes"
+  ],
+  "published": "2026-06-30T15:58:23Z"
+ },
+ {
+  "arxiv_id": "2606.31883v1",
+  "title": "Possibly Relevant Translations",
+  "abstract": "We develop translations from relevant logics into normal modal logics, and use them to clarify structural connections between relevant and modal logic, obtain a few corollary results, and raise questions for future work.",
+  "authors": [
+   "S\u00f8ren Brinck Knudstorp"
+  ],
+  "published": "2026-06-30T16:00:00Z"
+ },
+ {
+  "arxiv_id": "2606.31885v1",
+  "title": "Halo Semantics for Modal Logic",
+  "abstract": "In nonstandard analysis the halo of a point in a topological space is the intersection of the nonstandard extensions of all its open neighbourhoods. We define a parametric family of modal operators from the halo by varying which elements of the nonstandard extension are admitted as witnesses, and identify four canonical instances. Two recover well-known modalities: the topological closure and the Cantor derivative. A third reduces to Kripke semantics over the specialisation preorder. The fourth, purely nonstandard instance admits only nonstandard witnesses. The Transfer Principle forces it to coincide with the $\u03c9$-accumulation point operator, a classical topological notion not previously studied in modal logic. Unlike the Cantor derivative, the $\u03c9$-accumulation operator maps arbitrary sets to closed sets without any separation axiom, yielding an $\u03c9$-Cantor-Bendixson decomposition on all topological spaces. Axiom 4 holds universally, again without separation conditions. We prove that K4 is the complete logic over infinite spaces, and GL over infinite $\u03c9$-scattered spaces.",
+  "authors": [
+   "Yo\u00e0v Montacute"
+  ],
+  "published": "2026-06-30T16:00:37Z"
+ },
+ {
+  "arxiv_id": "2607.00367v2",
+  "title": "The continuous oriented chromatic number of directed Schreier graphs of $\\mathbb Z^2$-shift actions",
+  "abstract": "Let $\\vec F(2^{\\mathbb Z^2})$ be the directed Schreier graph on the free part of the Bernoulli shift $\\mathbb Z^2\\curvearrowright 2^{\\mathbb Z^2}$, with arcs in the two coordinate directions. We prove that the continuous oriented chromatic number of it is 7, that is, there is a tournament on 7 vertices receiving a continuous graph homomorphism from $\\vec F(2^{\\mathbb Z^2})$ and there is no continuous graph homomorphism from $\\vec F(2^{\\mathbb Z^2})$ to any tournament on 6 vertices. And we prove that the Borel and measurable oriented chromatic number of directed Schreier graph $\\vec F(2^{\\mathbb Z^n})$, $n&gt;1$ is 5.",
+  "authors": [
+   "Ruijun Wang"
+  ],
+  "published": "2026-07-01T03:05:25Z"
+ },
+ {
+  "arxiv_id": "2607.00757v1",
+  "title": "A generalization of a representation of the integers modulo $p$, for the purpose of occasionally establishing the unsolvability of diophantine inequalities",
+  "abstract": "It is well known that if a diophantine equation turns out not to have a solution over the integers modulo p, for some p, then it does not have a solution over the integers per se. This is because the integers modulo p are a homomorphic image of the integers. However, the integers modulo p are of little use when faced with diophantine inequalities, as the homomorphic image of the less-than-relation is trivial. The purpose of the present paper is to introduce a way of gereralising a particular representation of the integers modulo p. The generalizations, novel to this paper, are in the form of decidable Lindenbaum-algebras, and allow for deciding whether given positive first-order formulas in the language of first-order arithmetic are solvable. Crucially if a system of diophantine inequalities turns out not to be solvable in one of the Lindenbaum-algebras, then it is not solvable over the standard integers.",
+  "authors": [
+   "Andr\u00e9 Rognes"
+  ],
+  "published": "2026-07-01T10:43:54Z"
+ },
+ {
+  "arxiv_id": "2607.01068v1",
+  "title": "New results about Q and $\u0394$-spaces",
+  "abstract": "A topological space \\(X\\) is called a \\(Q\\)-space if every subset of \\(X\\) is a \\(G_\u03b4\\)-set, and \\(X\\) is a \\(\u0394\\)-space if for any decreasing sequence \\(\\{D_n : n \\in\u03c9\\}\\) of subsets of \\(X\\) with empty intersection there is a decreasing sequence \\(\\{U_n : n \\in \u03c9\\}\\) of open sets with empty intersection such that \\(D_n \\subseteq U_n\\) for all \\(n \\in\u03c9\\). Our main result shows that the following statements are equiconsistent: (1) There exists a measurable cardinal; (2) There exists a crowded Baire \\(T_1\\) \\(\u0394\\)-space; (3) There exists a crowded Baire \\(T_4\\) \\(Q\\)-space; (4) There exists a \\(T_1\\) \\(\u0394\\)-space admitting a strictly positive probability measure vanishing on points; (5) There exists a \\(T_3\\) \\(Q\\)-space admitting a strictly positive probability measure vanishing on points. This provides complete answers to some problems and partial answers to other problems that have recently appeared in the literature. We also prove a new result concerning Lindel\u00f6f \\(Q\\)-spaces: if \\(X\\) is a \\(T_3\\) Lindel\u00f6f \\(Q\\)-space with \\(w(X)\\leq \\mathfrak c\\), then \\(|X|&lt;\\operatorname{cf}(\\mathfrak c)\\). This yields a number of nonexistence results for large Lindel\u00f6f, locally compact, compact, and countably compact \\(Q\\)-spaces.",
+  "authors": [
+   "J\u00e1nos Bal\u00e1zs Ivanyos",
+   "\u00c1kos Sz\u00e9kely"
+  ],
+  "published": "2026-07-01T15:29:30Z"
+ },
+ {
+  "arxiv_id": "2607.01110v1",
+  "title": "Definability of Functional Properties in the Basic Modal-Temporal Language over Ordered Frames",
+  "abstract": "We study the expressive power of the simplest modal-temporal language, obtained by adding Prior's temporal operators \\(G\\) and \\(H\\) to the basic modal language with \\(\\Box\\). This language is the standard bimodal combination of modal and tense logic; under its functional interpretation it is denoted \\(L_{T\\times W}\\). To analyse its definability across five order types, we consider two semantic readings of the temporal operators: the standard reading (\\(G,H\\)), which includes the current instant, and the strict reading (\\(G^{\\ast},H^{\\ast}\\)), which always excludes it. We examine nine functional properties -- totality, non-totality, injectivity, surjectivity, monotonicity, strict monotonicity, antitonicity, strict antitonicity, and constancy -- over preorders, strict preorders, partial orders, linear orders, and strict linear orders. Our analysis reveals two different levels of expressive power. In the original multiflow setting, the language is quite weak and the two readings coincide. When we restrict the semantics to minimal functional frames (the \\(O^{2}\\) family), many properties become definable, and the choice of reading becomes crucial: the strict reading can define properties such as injectivity even in reflexive orders. The same definability patterns appear with indexed languages and with the Uniform Domain condition on the semantics of \\(L_{T\\times W}\\). That three such different ways of controlling functional multiplicity lead to identical definability patterns indicates that the expressive limitations of the original framework come from the uncontrolled multiplicity of functions, not from any weakness of the operators. Even after controlling functional multiplicity, a set of properties remains undefinable in all non-linear orders, showing that the lack of connectivity is a fundamental obstacle.",
+  "authors": [
+   "Alfredo Burrieza"
+  ],
+  "published": "2026-07-01T16:01:42Z"
+ },
+ {
+  "arxiv_id": "2607.01266v1",
+  "title": "Fast approximation and learning of binary classification tasks in o-minimal structures using ReLU neural networks",
+  "abstract": "We study binary classification problems whose decision sets are given by definable sets in o-minimal expansions of the real field. Motivated by cell decomposition of definable sets, we introduce traceable sets as a classical proxy for definable decision regions and analyze their approximation by ReLU neural networks. Under uniform bounds on the number of connected components and suitable $C^m$ extensions for the boundary functions, we prove that characteristic functions of traceable subsets of $[-1/2,1/2]^n$ can be approximated in $L^p$ to accuracy $\\varepsilon&gt;0$ by ReLU neural networks of size $\\mathcal{O}(\\varepsilon^{-p(n-1)/m})$, with depth independent of $\\varepsilon$ and polynomially bounded weights. This establishes quantitative approximation rates for certain definable collections in o-minimal structures using ReLU neural networks. The same approach also yields the stated approximation rates for a subclass of definable maps $[-1/2,1/2]^n \\to \\mathbb{R}$. We then combine the approximation capabilities with entropy estimates for ReLU neural network classes to obtain statistical learning rates for empirical risk minimization with hinge loss. For $N$ uniformly distributed samples, the resulting classifiers achieve expected misclassification error of order $N^{-m/(m+pn-p)}$ up to an arbitrarily small polynomial loss.",
+  "authors": [
+   "Clemens Kinn",
+   "Philipp Petersen"
+  ],
+  "published": "2026-06-29T20:44:20Z"
+ },
+ {
+  "arxiv_id": "2607.01271v1",
+  "title": "On Strong Structural Completeness of Varieties and Quasivarieties",
+  "abstract": "We study structural completeness in the infinitary sense (strong structural completeness) in an algebraic setting. A variety is structurally complete (SCpl) if it is generated, as a quasivariety, by its free algebras, and it is strongly structurally complete (SSCpl) if it is generated, as a prevariety, by its free algebras. A quasivariety is SSCpl if it is generated, as a prevariety, by its free algebras. We prove that every quasivariety of finite type with the CEP that is generated by finite algebras and contains an infinite irreducible algebra is not SSCpl. Moreover, every congruence meet-semidistributive variety of finite type generated by finite algebras is SSCpl if and only if it is tabular. Thus, Dummett's and Medvedev's logics are SCpl but not SSCpl. A variety is primitive if it is SCpl and all its subvarieties are SCpl; it is strongly primitive if it is SSCpl and all its subvarieties are SSCpl. We prove that in primitive congruence-distributive varieties of finite type, the tabular subvarieties, and only those, are strongly primitive. This observation also yields a criterion for strong primitivity.",
+  "authors": [
+   "Alex Citkin"
+  ],
+  "published": "2026-06-30T15:55:48Z"
+ },
+ {
+  "arxiv_id": "2607.01411v1",
+  "title": "Homomorphisms from topological groups to inverse limits",
+  "abstract": "We prove a general theorem giving constraints on maps from certain topological groups to inverse limits of bounded torsion groups. From this we obtain some automatic continuity and ultraproduct results. For example, every homomorphism from a Polish group to a countable torsion-free residually finite group has open kernel. Also, the Grigorchuk group is a homomorphic image of a nonprincipal ultraproduct of groups if and only if there exists a measurable cardinal.",
+  "authors": [
+   "Gregory R. Conner",
+   "Samuel M. Corson",
+   "Curtis Kent"
+  ],
+  "published": "2026-07-01T19:15:21Z"
+ },
+ {
+  "arxiv_id": "2607.01544v2",
+  "title": "Formalized $q$-series: The Rogers-Ramanujan Identities and Beyond",
+  "abstract": "The theory of $q$-series and basic hypergeometric series plays a crucial role at the intersection of combinatorics, number theory, and representation theory. From the classical partition identities of Euler and Jacobi to modern developments in class field theory, vertex operator algebras, and the Monstrous Moonshine conjecture, $q$-series provide the analytic framework for a wide range of profound applications. In this paper, we discuss the formalization of this theory in the Lean proof assistant, a process that requires careful design of scalable and versatile structures to reconcile formal algebraic identities with analytic convergence properties. We address these foundational challenges by focusing on the construction of $q$-Pochhammer symbols, $q$-binomial coefficients, Bailey's Lemma and similar primitives. To demonstrate the utility of this work, we provide fully verified proofs of the Jacobi Triple Product formula and the celebrated Rogers-Ramanujan identities, which serve as both historical and technical benchmarks for the field. This work establishes a rigorous computational foundation for the future formalization of mock theta functions, modular forms, and the diverse algebraic structures that underpin their applications across mathematics and physics. AxiomProver was used to produce the formalizations in this paper.",
+  "authors": [
+   "Kenny Lau",
+   "Seewoo Lee",
+   "Ken Ono"
+  ],
+  "published": "2026-07-01T23:45:41Z"
+ },
+ {
+  "arxiv_id": "2607.01970v1",
+  "title": "Bisimulations in second-order arithmetic",
+  "abstract": "This paper investigates the logical strength of two theorems in modal propositional logic - the Hennessy-Milner theorem and the van Benthem characterization theorem - within the framework of second-order arithmetic. We demonstrate that the Hennessy-Milner theorem is equivalent to $\\mathrm{ACA}_0$ over $\\mathrm{RCA}_0$. For the van Benthem characterization theorem, we introduce three variants: the semantic, syntactic, and hybrid forms. We show that the semantic form is provable in $\\mathrm{RCA}_0$, the syntactic form is provable in $\\mathrm{PRA}$, and the hybrid form is equivalent to the weak completeness theorem for first-order logic over $\\mathrm{RCA}_0$.",
+  "authors": [
+   "Yuto Takeda",
+   "Keita Yokoyama"
+  ],
+  "published": "2026-07-02T10:07:03Z"
+ },
+ {
+  "arxiv_id": "2607.02138v1",
+  "title": "Universal minimal flows of the homeomorphism groups of pseudo-solenoids are non-metrizable",
+  "abstract": "We note that homeomorphism groups of all pseudo-solenoids, including the pseudo-circle, have non-metrizable universal minimal flows.",
+  "authors": [
+   "Jan Boronski",
+   "Aleksandra Kwiatkowska"
+  ],
+  "published": "2026-07-02T13:16:03Z"
+ },
+ {
+  "arxiv_id": "2607.02250v1",
+  "title": "Conceptual completeness for subgeometric logics",
+  "abstract": "We explore the notion of conceptual completeness for a fragment of geometric logic in the framework developed by the first and third author. Unlike its traditional interpretation as a reconstruction of syntax from semantics, in this paper we characterise conceptual completeness of a fixed fragment in terms of a duality between theories and topoi. We then show that conceptually complete fragments are conservatively embedded in full geometric logic, thus casting conceptual completeness in a new proof-theoretic light. We give a new proof of conceptual completeness for coherent logic, and we also show that regular, disjunctive, and essentially algebraic logic with falsum are conceptually complete. Finally, we show that our notion is equivalent to a traditional reconstruction result under the assumption of completeness with respect to set-based models: in the coherent case, we thus recover Makkai's original reconstruction theorem via ultracategories.",
+  "authors": [
+   "Ivan Di Liberti",
+   "Umberto Tarantino",
+   "Lingyuan Ye"
+  ],
+  "published": "2026-07-02T14:42:50Z"
+ },
+ {
+  "arxiv_id": "2607.02725v2",
+  "title": "A note on ultrahomogeneous unary algebras",
+  "abstract": "In a recent paper \\cite{q}, Quinn-Gregson fully classified ultrahomogeneous mono-unary algebras. In particular, he proved that every locally finite mono-unary algebra with finitely many 1-orbits is \u03c9-categorical, and every 1-ultrahomogeneous mono-unary algebra is ultrahomogeneous. He then asked if these two results can be generalized to unary algebras. This short note answers the second question negatively by providing a simple counterexample. We also show that the first question has a positive answer in ``tree-like\" cases which covers his result to mono-unary algebras and has a small combinatorial implication.",
+  "authors": [
+   "Cheng Liao"
+  ],
+  "published": "2026-07-02T19:21:50Z"
+ },
+ {
+  "arxiv_id": "2607.02870v1",
+  "title": "The theory of the Ziegler degrees",
+  "abstract": "The Ziegler degrees were introduced to characterize definability in group theory. In [JLSta], the authors show that the first order-theory of the Ziegler degrees (as a partial order) is undecidable. We improve this result, showing that the theory of the Ziegler degrees is bi-interpretable with true second-order arithmetic.",
+  "authors": [
+   "Rodney G. Downey",
+   "Steffen Lempp",
+   "Isabella Scott"
+  ],
+  "published": "2026-07-03T02:16:24Z"
+ },
+ {
+  "arxiv_id": "2607.03384v1",
+  "title": "Sum-product Phenomenon Via Dimension",
+  "abstract": "We show a sum-product phenomenon in fields equipped with abstract dimension theories, which simultaneously generalizes the dimensions in geometric theories and Hrushovski's coarse pseudo-finite dimensions. More precisely, we show that for type-definable sets of positive non-zero dimension, non-expansion in dimension of both the sumset and product set implies the existence of a definable field in the same dimension. Main ingredients of the proof include dimensional analogues of the Ruzsa triangle inequality and the Pl\u00fcnnecke-Ruzsa inequality.",
+  "authors": [
+   "Yuyan He",
+   "Sergei Starchenko"
+  ],
+  "published": "2026-07-03T14:39:24Z"
+ }
+]

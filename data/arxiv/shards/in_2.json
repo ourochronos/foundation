@@ -1,0 +1,200 @@
+[
+ {
+  "arxiv_id": "2607.03444v1",
+  "title": "On Determinacy for Cut and Choose Games of Uncountable Length",
+  "abstract": "We obtain results on cut and choose games for complete Boolean algebras. Zapletal proved that there is a Boolean algebra $\\mathbb{B}$ such that $\\mathcal{G}_\u03c9^\\textsf{candc}(\\mathbb{B})$, the version of the game which ends on the $\u03c9$'th round, is undetermined. We prove that, assuming the consistency of a proper class of supercompact cardinals, the limit version $\\mathcal{G}^{\\textsf{candc}}_{&lt; \u03bb}(\\mathbb{B})$, in which there are $\u03bb$-many rounds but no concluding round, is consistently determined for all complete Boolean algebras $\\mathbb{B}$ and all successor cardinals $\u03bb$. In particular, this answers a question of Zapletal \\cite[Question 2]{Zapletal1995}. We also show that undetermined instances of the game $\\mathcal{G}^\\textsf{candc}_\u03bb(\\mathbb{B})$ follow from the approachability property, extending results of Dobrinen, and we prove that undetermined instances are compatible with $\\textsf{MM}^{++}$.",
+  "authors": [
+   "Maxwell Levine"
+  ],
+  "published": "2026-07-03T15:56:26Z"
+ },
+ {
+  "arxiv_id": "2607.03995v1",
+  "title": "Merging $\\lim^1 \\mathbf{A} \\ne 0$ with other nonvanishing constructions",
+  "abstract": "We develop methods for forcing $\\lim^1 \\mathbf{A} \\ne 0$, where $\\mathbf{A}$ is a particular inverse system of abelian groups introduced by Marde\u0161i\u0107 and Prasolov in their computation of certain strong homology groups. These methods allow us to extend previous nonvanishing results of Casarosa and Lambie-Hanson for $\\lim^k \\mathbf{A}$ for $k \\geq 2$. Specifically we show that, for a given $n$, it is relatively consistent with ZFC that $\\mathfrak{b} = \\mathfrak{d} = \u03c9_n$ and $\\lim^k \\mathbf{A} \\ne 0$ whenever $1 \\leq k \\leq n$ (previously established with $2 \\leq k \\leq n$). We also show it is relatively consistent with ZFC that $\\mathfrak{b} = \\mathfrak{d} = \u03c9_{\u03c9+2}$ and $\\lim^k \\mathbf{A} \\ne 0$ for all $k \\geq 1$ (previously established with $k \\geq 2$). We also adapt proofs of Kamo to show that $\\lim^1 \\mathbf{A} = 0$ holds in many finite support iterated forcing extensions.",
+  "authors": [
+   "Nathaniel Bannister",
+   "Justin Tatch Moore"
+  ],
+  "published": "2026-07-04T19:33:35Z"
+ },
+ {
+  "arxiv_id": "2607.05542v1",
+  "title": "A measurable equivariant Weierstrass theorem",
+  "abstract": "This paper is a prequel to our recent work, \"Equivariant Borel liftings in complex analysis and PDE\" (arXiv:2507.12058). While the results presented here were established in that work in a more general and abstract setting, the purpose of this paper is to provide a direct proof of the equivariant Weierstrass theorem. It states that there exists a Borel map assigning to each non-periodic positive divisor $\u039b$ an entire function $F_\u039b$ such that the divisor of zeroes of $F_\u039b$ is $\u039b$ and such that $F_{\u039b-w}(z) = F_\u039b(z+w)$, $w\\in\\mathbb{C}$. In general, non-periodicity cannot be omitted, and Borel measurability cannot be strengthened to continuity. The two key ingredients are the Runge approximation theorem and the existence of \"Borel toasts\", which are Borel counterparts of Rokhlin towers from ergodic theory. We do not assume prior knowledge of descriptive set theory and have aimed to make the exposition self-contained, aside from several results taken from graduate textbooks.",
+  "authors": [
+   "Konstantin Slutsky",
+   "Mikhail Sodin",
+   "Aron Wennman"
+  ],
+  "published": "2026-07-06T18:26:09Z"
+ },
+ {
+  "arxiv_id": "2607.05983v1",
+  "title": "The Surplus Parking Gathering Problem in Infinite Grids",
+  "abstract": "In this paper, we introduce the \\emph{Surplus Parking Gathering Problem} ($\\mathcal{SPG}$), a new coordination problem for robots deployed on an infinite grid. The input consists of a set of designated parking nodes, each associated with a prescribed capacity, while the total number of robots exceeds the total parking capacity. The objective is to saturate every parking node exactly according to its capacity while gathering all remaining surplus robots at a common grid node that is not specified a priori. The robots are assumed to be autonomous, anonymous, oblivious, identical, disoriented, and homogeneous. We consider the asynchronous (\\textsc{async}) model with global visibility and global strong multiplicity detection. We first establish necessary conditions for the solvability of $\\mathcal{SPG}$ by characterizing the initial configurations that admit no deterministic distributed algorithm. For all the remaining solvable configurations, we present a deterministic distributed algorithm that correctly solves the problem. The proposed algorithm proceeds in several phases and avoids collisions throughout its execution. We prove that the algorithm terminates in finite time and, upon termination, every parking node is saturated according to its prescribed capacity while all surplus robots are gathered at a uniquely determined gathering node. We further analyze the move complexity of the proposed algorithm, obtaining an $O(n(a+b)+n^2)$ upper bound together with an $\u03a9(n(a+b))$ worst-case lower bound for the $\\mathcal{SPG}$ problem.",
+  "authors": [
+   "Animesh Maiti",
+   "Abhinav Chakraborty",
+   "Subhash Bhagat"
+  ],
+  "published": "2026-07-07T08:17:05Z"
+ },
+ {
+  "arxiv_id": "2607.06218v1",
+  "title": "Chains and Antichains inside Many-One Degrees and Variants",
+  "abstract": "The relations between many-one degrees and one-one degrees have been studied since the beginning of recursion theory; early results from the 1960s include that many-one degrees always have a largest one-one degree and either that one-one degree is the only one-one degree inside the many-one degree or every countable linear order is noneffectively embeddable into the structure of one-one degrees inside the given many-one degree. Furthermore, the greatest recursive many-one degree is a special case, as it allows to embed ascending infinite chains but not descending infinite chains, all other many-one degrees fall into the two cases mentioned above. It remained open whether infinite antichains can always be embedded when the many-one degree is nonrecursive and nonirreducible; Odifreddi stated in a survey 1981 and in his book Classical Recursion Theory in the year 1989 this question explicitly as an open problem. D\u00ebgtev had already in 1976 constructed antichains of one-one degrees inside all nonrecursive and nonirreducible recursively enumerable many-one degrees and Batyrshin generalised the result to all nonrecursive and nonirreducible limit-recursive many-one degrees. In 2026, Cintioli showed that there is a measure $1$ class of sets whose many-one degrees contain infinite antichains of one-one degrees. This class contains all rigid many-one degrees. The present work generalises Batyrshin's result to all nonrecursive and nonirreducible many-one degrees and solves therefore Odifreddi's open problem. The present work also proposes to deepen the study of reducibilities between one-one and many-one in recursion theory in order to get a more complete and detailed picture for the structures inside many-one degrees. In particular it studies finite-one and bounded finite-one reducibilities where the first was introduced by Maslova in the 1970ies.",
+  "authors": [
+   "Linus Richter",
+   "Frank Stephan",
+   "Xiaoyan Zhang"
+  ],
+  "published": "2026-07-07T12:43:20Z"
+ },
+ {
+  "arxiv_id": "2607.06359v1",
+  "title": "Proof Theory and Interpolation for Sacchetti's Logics",
+  "abstract": "We study the proof theory of Sacchetti's modal logics, a family of logics generalizing G\u00f6del--L\u00f6b provability logic by replacing transitivity with n-transitivity. We make three main contributions. First, we solve an open problem of Iwata by providing an effective cut elimination procedure for Sacchetti's logics. Second, building on this result, we introduce a new non-wellfounded sequent calculus for this family of logics with an improved subformula property. Third, using this calculus together with interpolation templates, we prove that Sacchetti's logics have the uniform Lyndon interpolation property, substantially strengthening previous interpolation results for these logics.",
+  "authors": [
+   "Borja Sierra Miranda",
+   "Thomas Studer"
+  ],
+  "published": "2026-07-07T14:56:26Z"
+ },
+ {
+  "arxiv_id": "2607.06386v1",
+  "title": "On the Beck--Chevalley condition",
+  "abstract": "Boolean hyperdoctrines provide an algebraic semantics for classical first-order logic with equality. In the definition of a Boolean hyperdoctrine, the Beck--Chevalley condition captures the commutativity of substitutions with quantifiers and with equality. Often, a generalization of these conditions is considered, which requires the commutativity of an appropriate square for every pullback square in the base category. A Boolean hyperdoctrine satisfying this condition is called full. Our contribution is twofold. On the negative side, we exhibit a non-full Boolean hyperdoctrine. On the positive side, we show that every Boolean hyperdoctrine $\\mathsf{FinSet} \\to \\mathsf{BA}$ over $\\mathsf{FinSet}^{\\mathrm{op}}$ is full.",
+  "authors": [
+   "Marco Abbadini",
+   "Francesca Guffanti"
+  ],
+  "published": "2026-07-07T15:23:39Z"
+ },
+ {
+  "arxiv_id": "2607.06694v1",
+  "title": "The tolerant learning hierarchy for c.e. sets",
+  "abstract": "Learning from positive data models a scenario in which a learner receives longer and longer initial segments of an enumeration of an unknown set and repeatedly outputs a conjecture about it. Classical identification in the limit requires the learner to eventually stabilise to a hypothesis naming the target exactly, while anomalous learning relaxes this requirement by allowing finitely many errors in the final hypothesis. We develop a natural generalisation for computably enumerable (c.e.) sets in which correctness is determined by an arbitrary equivalence relation on their indices that respects equality of the sets they enumerate. We call the resulting framework tolerant learning. Exact learning and finite-anomaly learning arise as special cases. By comparing tolerance relations according to the families they make learnable, we obtain a new degree structure, the tolerant learning hierarchy. We extend the classical methods of locking sequences and tell-tales to this setting and derive a combinatorial characterisation of those tolerance relations that are universal (that is, under which every family of nonempty computably enumerable sets is learnable). We then show that the hierarchy is a bounded lower semilattice but not an upper semilattice, is atomless and coatomless, and contains chains and antichains of size continuum. We also analyse natural benchmark relations, including c.e.-index analogues of standard equivalence relations from descriptive set theory, and establish substantial incomparability among their learning powers. Finally, we separate non-effective from computable tolerant learning by exhibiting a universal relation that is not computably universal. These results show that semantic tolerance gives rise to a genuine degree theory at the interface of algorithmic learning and the theory of equivalence relations.",
+  "authors": [
+   "Vittorio Cipriani",
+   "Martin Ritter",
+   "Luca San Mauro"
+  ],
+  "published": "2026-07-07T18:11:40Z"
+ },
+ {
+  "arxiv_id": "2607.07473v1",
+  "title": "The space of preorders on a commutative monoid",
+  "abstract": "For a finitely generated commutative monoid $\u03a0$, we present a constructive description of all (total) preorders on $\u03a0$ that are compatible with the monoid structure. Equipped with a natural topology, these preorders form an irreducible spectral space, which we show can be covered by a countable union of admissible sets: subsets of $\\mathbb{R}^N$ of the form $A \\setminus H$ where $A$ is semialgebraic and $H$ is a countable union of hyperplanes, both defined over the rational numbers. As a consequence of this description, we show that the universal theory of commutative monoids with a total order is decidable. Our proofs use a divide-and-conquer technique that requires establishing all of our results in the greater generality of sets on which $\u03a0$ acts with finitely many orbits. As a by-product, we find a new description of all monomoial orders on free modules over a polynomial ring.",
+  "authors": [
+   "Jan Draisma",
+   "George Metcalfe",
+   "Simon Santschi"
+  ],
+  "published": "2026-07-08T14:34:19Z"
+ },
+ {
+  "arxiv_id": "2607.08052v1",
+  "title": "Complex curves in o-minimal geometry",
+  "abstract": "There has recently been considerable progress relating o-minimality to complex analytic geometry. Yet almost nothing is known about coherent cohomology or the classification of vector bundles, even for curves. In $\\mathbb{R}_{\\mathrm{an}}$ and similar structures, we show that cohomology of noncompact curves is concentrated entirely at punctures. As an application, we compute the cohomology of the structure sheaf on the affine line and describe a connection to Diophantine approximation. Finally, we use similar techniques to characterize which definable Riemann surfaces have definable compactifications. The proofs are based on a careful analysis of boundary behavior for definable holomorphic functions.",
+  "authors": [
+   "Spencer Dembner"
+  ],
+  "published": "2026-07-09T02:04:20Z"
+ },
+ {
+  "arxiv_id": "2607.08064v1",
+  "title": "Polish spaces of separable Banach lattices",
+  "abstract": "We study the descriptive complexity of classes of separable Banach lattices. Building on the theory of coding spaces for separable Banach spaces, we introduce two Polish space encodings of separable Banach lattices: one via closed sublattices of the universal lattice $\\mathcal{C}=C(\u0394;L_1)$, and one via closed order ideals of the free Banach lattice $\\operatorname{FBL}[\\ell_1]$. We prove that, for every separable Banach lattice $E$, the spaces of closed sublattices and of closed order ideals of $E$ are Polish subspaces of the hyperspace of closed subsets of $E$. We also prove that the Fremlin projective tensor-product operation on ideal codes is $\\boldsymbol\u03a3^0_2$-measurable and has a $G_\u03b4$ graph.",
+  "authors": [
+   "Mariusz Niwi\u0144ski"
+  ],
+  "published": "2026-07-09T02:37:08Z"
+ },
+ {
+  "arxiv_id": "2607.08126v1",
+  "title": "Independence relations induced by ideals",
+  "abstract": "Inspired by the non-meager independence $\\downarrow^{nm}$ introduced by Krupi\u0144ski [3], we study further possible independence relations induced by ideals and provide a general framework for this topic. We show that the independence relation $\\downarrow^\\mathrm{Haar}$ induced by Haar null ideals is a good example for locally compact groups and provide an example showing $\\downarrow^\\mathrm{Haar}\\neq \\downarrow^{nm}$. Moreover, we introduce an order on the collection of all well-behaved independence relations and conjecture that $\\downarrow^{nm}$ is the maximum one for Polish groups. We prove the conjecture under the extra hypothesis of $\u03c3$-compactness. For Lie groups, we discuss $\\mathrm{SO}(3)$ and $\\mathrm{SE}(2)$ as examples, and prove that the independence relation is unique for nilpotent Lie groups.",
+  "authors": [
+   "Zhentao Zhang"
+  ],
+  "published": "2026-07-09T05:55:36Z"
+ },
+ {
+  "arxiv_id": "2607.08206v3",
+  "title": "A Constructive Field of Infinitesimals: Chunk and Permeate Approach",
+  "abstract": "While intuitive, na\u00efve infinitesimal reasoning is classically inconsistent, and rigorous nonstandard analysis relies on non-constructive machinery. We resolve this tension by constructing an explicit, totally ordered field $\\mathbb{R}^{\\mathbb{Z}_{&lt;}}$ using only real sequences and Cauchy convolution. We model the combined real and hyperreal axioms via the Chunk and Permeate strategy, a paraconsistent technique that isolates contradictions without global collapse. Equipping $\\mathbb{R}^{\\mathbb{Z}_{&lt;}}$ with a two-tier topology, we develop a calculus where infinitesimal derivatives and integrals permeate cleanly to their classical counterparts. We further introduce a $(k,n)$-continuity hierarchy capturing infinitesimal smoothness invisible to standard or transfer-based models. Finally, $\\mathbb{R}^{\\mathbb{Z}_{&lt;}}$ yields a direct algebraic consistency proof for Sergeyev's Grossone arithmetic, and we establish strict computability bounds on field operations. By guaranteeing infinitesimal contradictions never reach the classical chunk, this work bridges paraconsistent logic, constructive mathematics, and nonstandard analysis into a transparent, computationally tractable framework for infinitesimal reasoning.",
+  "authors": [
+   "Anggha Nugraha"
+  ],
+  "published": "2026-07-09T08:04:47Z"
+ },
+ {
+  "arxiv_id": "2607.08352v1",
+  "title": "Splendid extensions",
+  "abstract": "Let $\u03ba$ be a successor cardinal. We force a universe in which every model of PA of size $\u03ba$ extends to a model M of the same size, where M has no splendid extensions. If there is an ineffable cardinal then this statement holds at some cardinal below it, in ZFC.",
+  "authors": [
+   "Shimon Garti"
+  ],
+  "published": "2026-07-09T10:58:26Z"
+ },
+ {
+  "arxiv_id": "2607.08730v1",
+  "title": "Modal logics of conjunctively closed provability predicates",
+  "abstract": "We investigate non-normal modal logics corresponding to provability predicates $\\mathrm{Pr}_T(x)$ satisfying the derivability condition $\\mathbf{C}$: $T\\vdash\\mathrm{Pr}_T(\\ulcorner \\varphi \\urcorner)\\land\\mathrm{Pr}_T(\\ulcorner \u03c8\\urcorner)\\to \\mathrm{Pr}_T(\\ulcorner \\varphi\\land\u03c8\\urcorner)$. The modal counterpart of this condition is the axiom scheme $\\mathsf{C}$: $\\Box A\\land\\Box B\\to\\Box(A\\land B)$. First, we introduce a new semantics based on closure operators for non-normal modal logics including logics adopting $\\mathsf{C}$ as an axiom scheme. We prove modal completeness for several non-normal modal logics studied in this paper with respect to this semantics. Second, we prove the arithmetical completeness theorems for the logics $\\mathsf{CN}$, $\\mathsf{CNP}$, $\\mathsf{CNF}$, $\\mathsf{CNPF}$, and $\\mathsf{CND}$ by using our new semantics.",
+  "authors": [
+   "Haruka Kogure",
+   "Taishi Kurahashi"
+  ],
+  "published": "2026-07-09T17:34:20Z"
+ },
+ {
+  "arxiv_id": "2607.08909v1",
+  "title": "Ranked Discontinuities of Multivalued Functions",
+  "abstract": "We study discontinuity of multivalued functions (also known as problems) $P$ on Baire space by assigning an ordinal rank to points in the domain of $P$ that have no local realizers. For each countable ordinal $\u03b1$, let $\\mathsf{ACC}_{\\mathbb N}^\u03b1$ be the problem of solving $\\mathsf{ACC}_{\\mathbb N}$ in at most $\u03b1$ many attempts, with a new instance provided for each attempt. Our main theorem shows that, for any problem $P$, the following are equivalent: (i) $P$ is discontinuous on some set all of whose points have Cantor--Bendixson rank at most $\u03b1$, and (ii) $\\mathsf{ACC}_{\\mathbb N}^\u03b1\\leq_{\\mathrm W}^{*}P$. This extends to points: $P \\geq_{\\mathrm{W}}^* \\mathsf{ACC}_{\\mathbb{N}}^\u03b1$ via a forward function that sends $\\#^{\\mathbb{N}}$ to $p \\in \\operatorname{dom}(P)$ if and only if $P$ is discontinuous on a set $A$ with $\\operatorname{rank}_A(p) \\leq \u03b1$. We also characterize these properties via a Wadge-style discontinuity game for $P$. We apply this framework to the thin set and achromatic Ramsey theorems. Extending $\\mathsf{RT}^{n}_{k,j}$ to ordinal parameters, we define $\\mathsf{RT}^{n}_{\u03b1,\u03b2}$ and compute their ranks of discontinuity. The problems $\\mathsf{RT}^n_{\u03b1,\u03b2}$ provide examples of problems with discontinuities of each countable rank which are not reducible to $\\mathsf{ACC}_{\\mathbb{N}}$. The separation from $\\mathsf{ACC}_{\\mathbb{N}}$ is obtained via the notion of guessability with identified errors.",
+  "authors": [
+   "Daniel Samir Mourad"
+  ],
+  "published": "2026-07-09T20:09:18Z"
+ },
+ {
+  "arxiv_id": "2607.09032v1",
+  "title": "Quantum Logic as the Logic of Contexts",
+  "abstract": "Quantum logic is usually presented as a non-classical departure from ordinary reasoning forced on us by quantum mechanics, with classical logic kept as the secure starting point. We argue for the opposite order of explanation in a finite and fully computable setting. The free orthomodular lattice on two generators has ninety-six elements, the direct product of a six-element non-distributive factor and a sixteen-element Boolean factor. Reading the first factor as a register of contexts and the second as Boolean content, we obtain a calculus whose elements are context--bit-vector pairs and whose operations act component by component. With this calculus we establish three results. First, we classify the six layers by commutativity, identifying the central kernel of context-neutral propositions together with a dual central layer in which all complementary contexts are present. Second, we show that orthocomplementation rearranges the layers exactly as the complementation of the small factor rearranges its elements, which makes the duality among the layers rigid rather than accidental. Third, we prove that the operation forgetting the context is a surjective homomorphism of orthocomplemented lattices whose quotient is the classical Boolean algebra, so that classical logic is a six-to-one, information-losing image of the contextual calculus.",
+  "authors": [
+   "Haruki Emori",
+   "Atsushi Iriki",
+   "Andrei Khrennikov",
+   "Kazunori Kondo"
+  ],
+  "published": "2026-07-10T01:41:50Z"
+ },
+ {
+  "arxiv_id": "2607.09069v1",
+  "title": "Reducing stable forking dependence to finitely many pregeometries",
+  "abstract": "We show that one of the main cases of the stable forking conjecture, stability of the forking relation over a base in a finite-rank supersimple theory, is determined by finitely many pregeometries in each rank. This case of the stable forking conjecture has long had an implicitly well-known pregeometric interpretation: there is a set of matroids $\\mathcal{G}_{n}$ such that the forking instability in rank $n$ is equivalent to the pregeometry on some rank-one partial type (over a finite set) embedding a matroid in $\\mathcal{G}_{n}$. Our contribution is to show that this set of matroids $\\mathcal{G}_{n}$, determining based forking stability in rank $n$, can be chosen to be finite. The main part of our proof was already accomplished in rank $3$ by Peretz, but does not extend as stated to higher ranks (and may or may not directly extend in a weaker sense to higher ranks, by shrinking terms). However, we obtain a sufficient substitute for Peretz's work in ranks $n &gt; 3$: we turn Peretz's original universal result into an existence theorem. The rest of our proof refines an argument from multi-experiment parameter definability, originating from work in applied model theory by Li, Meshkat, Ovchinnikov, Pillay, Pogudin and Scanlon.",
+  "authors": [
+   "Scott Mutchnik"
+  ],
+  "published": "2026-07-10T03:28:19Z"
+ },
+ {
+  "arxiv_id": "2607.10323v1",
+  "title": "A bitopological duality for some subordination Boolean algebras",
+  "abstract": "S4-subordination algebras are a generalization of the closure algebras. In this paper, we give a topological representation for S4-subordination algebras by means of bitopological spaces $\\left&lt;X,\u03c4,\u03c4_{S}\\right&gt;$, where $\\left&lt;X,\u03c4\\right&gt;$ is a Stone space and $\u03c4_{S}$ is a topology that enables the characterization of the subordination relation. We apply this bitopological representation to give a characterization of S5-subordination algebras and lattice subordinations. We also show that there exists a bijective correspondence between congruence compatible with the subordination and certain closed subsets of the Stone space $\\left&lt;X,\u03c4\\right&gt;$ that are also saturated sets of the space $\\left&lt;X,\u03c4_{S}\\right&gt;$. Additionally, we explore two types of morphisms between S4-subordination algebras: one based on Boolean homomorphisms and another based on meet-homomorphisms. Finally, we provide a topological representation for each type of morphism.",
+  "authors": [
+   "Sergio A. Celani"
+  ],
+  "published": "2026-07-11T13:59:10Z"
+ },
+ {
+  "arxiv_id": "2607.10880v2",
+  "title": "First-Order Modal Logic in HOL: Deep and Shallow Embeddings with Automated Faithfulness (Extended Preprint)",
+  "abstract": "We extend, in Isabelle/HOL, the deep-and-shallow embedding methodology of our prior work from propositional to first-order modal logic (FML) with constant-domain Kripke semantics. Three embeddings of FML into classical higher-order logic (HOL) are provided side by side: a deep embedding, a heavyweight maximal-shallow embedding, and a lightweight minimal-shallow embedding. The minimal-shallow embedding is presented as an Isabelle/HOL locale, parametrised by an accessibility relation, a world-indexed interpretation, a universe of worlds, and a variable assignment; the locale form admits a global faithfulness theorem, stating that quantifying over all minimal-shallow interpretations recovers exactly deep validity. A central technical contribution is a mechanisation, for FML under constant-domain Kripke semantics, of the (countable) downward L\u00f6wenheim-Skolem theorem, which underpins the automation of our faithfulness proof between the deep and minimal-shallow embeddings. Deploying it inside an extension of the minimal-shallow locale resolves the surjectivity problem that arises against an uncountable domain of individuals -- where the locale's variable assignment, having countable domain V = nat, cannot be surjective onto the domain -- and thereby yields faithfulness over the full domain. Since prior work treats only the propositional fragment, we develop here the substitution machinery (free/bound-variable predicates, the fresh-variable function, capture-avoiding substitution, alphabetic renaming, the substitutability predicate, the substitution lemma, and size-based induction principles) needed for the first-order quantifiers.",
+  "authors": [
+   "Christoph Benzm\u00fcller",
+   "Daniel Kirchner"
+  ],
+  "published": "2026-07-12T19:03:54Z"
+ }
+]
