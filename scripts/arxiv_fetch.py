@@ -58,12 +58,15 @@ for start in range(0, N, 100):
     if start + 100 < N:
         time.sleep(3)
 
-papers = [json.loads(p.read_text()) for p in sorted(OUT.glob("*.json"))]
-S = max(1, (len(papers) + 19) // 20)          # ~20 abstracts per shard
-for i in range(S):
-    (SHARDS / f"in_{i}.json").write_text(json.dumps(
-        papers[i * 20:(i + 1) * 20], indent=1))
-print(f"[done] {len(papers)} papers -> {S} shards of ~20", flush=True)
+# ARXIV_STAGE=0 skips (re)staging — shard inputs are FROZEN once a fleet
+# has run over them; backfill/fetch-only invocations must not rewrite them
+if os.environ.get("ARXIV_STAGE", "1") != "0":
+    papers = [json.loads(p.read_text()) for p in sorted(OUT.glob("*.json"))]
+    S = max(1, (len(papers) + 19) // 20)      # ~20 abstracts per shard
+    for i in range(S):
+        (SHARDS / f"in_{i}.json").write_text(json.dumps(
+            papers[i * 20:(i + 1) * 20], indent=1))
+    print(f"[done] {len(papers)} papers -> {S} shards of ~20", flush=True)
 
 # ---- source retention: full-text backfill (ARXIV_FULLTEXT=1) ---------------
 # data/*/papers* is the IMMUTABLE SOURCE LAYER (docs/13): keep the raw HTML
