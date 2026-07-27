@@ -1,0 +1,80 @@
+P26: spouse (entity) — aka married to, wife, husband, partner
+P175: performer (entity) — aka performed by, artist, band, singer
+P750: distributed by (entity) — aka distributor, distribution
+P112: founded by (entity) — aka founder, co-founder, established by
+P127: owned by (entity) — aka owner, parent company, acquired by
+P108: employer (entity) — aka works for, employed by, company
+P159: headquarters location (entity) — aka headquartered in, head office, based in
+P176: manufacturer (entity) — aka made by, produced by, maker
+P131: located in the administrative territorial entity (entity) — aka located in, in the state of, in the province of, municipality
+P57: director (entity) — aka directed by, film director
+P50: author (entity) — aka written by, writer, novelist
+P123: publisher (entity) — aka published by
+P264: record label (entity) — aka label, signed to
+P463: member of (entity) — aka membership, belongs to organization
+P36: capital (entity) — aka capital city, seat of government
+P17: country (entity) — aka nation, in country, country of location
+P19: place of birth (entity) — aka born in, birthplace, birth city
+P20: place of death (entity) — aka died in, place of demise
+P569: date of birth (value) — aka born on, birth year, birth date, dob
+P570: date of death (value) — aka died on, death year, death date
+P69: educated at (entity) — aka attended, studied at, alma mater, school
+P106: occupation (entity) — aka profession, job, career as
+P39: position held (entity) — aka office, title held, became, elected
+P361: part of (entity) — aka component of, belongs to
+P136: genre (entity) — aka style, music genre, type of music
+P161: cast member (entity) — aka starring, stars, actor in, played in
+P86: composer (entity) — aka composed by, music by
+P58: screenwriter (entity) — aka screenplay by, written by (film)
+P162: producer (entity) — aka produced by (film)
+P178: developer (entity) — aka developed by, software developer
+P306: operating system (entity) — aka runs on, os
+P31: instance of (entity) — aka is a, type, kind of
+P27: country of citizenship (entity) — aka citizen of, nationality
+P35: head of state (entity) — aka president, monarch, leader of country
+P6: head of government (entity) — aka prime minister, mayor, premier, chancellor
+P30: continent (entity) — aka on continent
+P37: official language (entity) — aka language spoken, official tongue
+P38: currency (entity) — aka money, legal tender
+P47: shares border with (entity) — aka borders, adjacent to, neighboring
+P276: location (entity) — aka located at, venue, site
+P400: platform (entity) — aka game platform, console
+P413: position played (entity) — aka plays position, fielding position
+P54: member of sports team (entity) — aka plays for, team, club
+P641: sport (entity) — aka plays sport, discipline
+P495: country of origin (entity) — aka originates from, made in country
+P740: location of formation (entity) — aka formed in, founded in (place)
+P571: inception (value) — aka founded in, established, created in, year founded
+P576: dissolved (value) — aka dissolution, abolished, defunct since
+P1376: capital of (entity) — aka is capital of
+P937: work location (entity) — aka worked in, active in
+P800: notable work (entity) — aka famous for, known for, best known work
+P166: award received (entity) — aka won award, prize, honored with
+P1411: nominated for (entity) — aka nomination
+P102: member of political party (entity) — aka party, political affiliation
+P140: religion (entity) — aka faith, religious affiliation
+P103: native language (entity) — aka mother tongue, first language
+P1303: instrument (entity) — aka plays instrument
+P452: industry (entity) — aka business sector, field of business
+P1056: product or material produced (entity) — aka produces, makes product
+P155: follows (entity) — aka preceded by, successor of, comes after
+P156: followed by (entity) — aka succeeded by, next, comes before
+P179: part of the series (entity) — aka series, franchise
+P449: original broadcaster (entity) — aka aired on, network, broadcast by
+P272: production company (entity) — aka produced by (company), studio
+P364: original language of film or TV show (entity) — aka language of film, filmed in language
+P407: language of work or name (entity) — aka written in language
+P1441: present in work (entity) — aka appears in, character in
+P674: characters (entity) — aka character, fictional character
+P170: creator (entity) — aka created by, designed by
+P84: architect (entity) — aka designed by (building)
+P138: named after (entity) — aka namesake, eponym, name origin
+P119: place of burial (entity) — aka buried in, interred at, grave
+P551: residence (entity) — aka lives in, resident of, home
+P1830: owner of (entity) — aka owns, possesses
+P355: subsidiary (entity) — aka subsidiaries, owns company
+P749: parent organization (entity) — aka parent org, division of
+P2341: indigenous to (entity) — aka native to
+P1532: country for sport (entity) — aka represents country
+P286: head coach (entity) — aka coached by, manager (sports)
+P822: mascot (entity) — aka team mascot

@@ -22,11 +22,19 @@ import numpy as np
 from codec.memory_store import id_tokens
 
 _NUMERIC = re.compile(r"^[\d][\d,.\s]*$")
+_DATE = re.compile(
+    r"^(january|february|march|april|may|june|july|august|september|"
+    r"october|november|december)\s+\d{1,2},?\s+\d{4}$|"
+    r"^\d{1,2}\s+(january|february|march|april|may|june|july|august|"
+    r"september|october|november|december)\s+\d{4}$", re.I)
 
 
 def is_value(s: str) -> bool:
-    """Numbers/years are values, not individuals."""
-    return bool(_NUMERIC.match(s.strip()))
+    """Numbers, years, and dates are values, not individuals (textual
+    dates added in D71 follow-up: 'August 18, 1926' escaped the numeric
+    regex and broke per-instance kind gating)."""
+    t = s.strip()
+    return bool(_NUMERIC.match(t) or _DATE.match(t))
 
 
 @dataclass

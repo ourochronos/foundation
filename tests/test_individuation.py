@@ -10,6 +10,7 @@ from codec.individuation import (EntityRegistry, functional_relations,
 
 def test_values_are_not_individuals():
     assert is_value("4,200") and is_value("1987")
+    assert is_value("August 18, 1926") and is_value("13 November 1989")
     assert not is_value("North Halmelton")
 
 
