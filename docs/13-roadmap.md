@@ -67,3 +67,4 @@ channel) · topic-alias machinery (D83 weakness).
   X for claim Y") becomes an evidence-count signal.
 - Queue: P_CITES extraction pass over papers_html (fleet, next session)
   -> citation-vote fetch round -> corroboration counts surfaced in ask.
+- HF admission rule (2026-07-27): union of top-K by 30-day AND all-time downloads per tag; both recorded as dated observations. Current 200-card staging (30-day only) stands for round 1; balanced rule applies from the next fetch.

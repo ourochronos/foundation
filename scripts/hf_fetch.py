@@ -27,11 +27,24 @@ TAGS = ["feature-extraction", "sentence-similarity",
 
 seen = set()
 for tag in TAGS:
-    r = requests.get("https://huggingface.co/api/models",
-                     params={"pipeline_tag": tag, "sort": "downloads",
-                             "direction": "-1", "limit": "40"},
-                     headers=HDR, timeout=60)
-    for m in r.json():
+    # BALANCED ADMISSION (user 2026-07-27): union of top-40 by 30-day
+    # downloads AND top-40 by all-time — recency momentum + durable
+    # staples; both numbers recorded as dated observations.
+    pool = []
+    for sort_key in ("downloads", "downloadsAllTime"):
+        try:
+            r = requests.get("https://huggingface.co/api/models",
+                             params={"pipeline_tag": tag,
+                                     "sort": sort_key, "direction": "-1",
+                                     "limit": "40",
+                                     "expand[]": "downloadsAllTime"},
+                             headers=HDR, timeout=60)
+            if r.status_code == 200:
+                pool += r.json()
+        except Exception as e:
+            print(f"[hf] ! {tag}/{sort_key}: {e}", flush=True)
+        time.sleep(0.5)
+    for m in pool:
         mid = m.get("modelId") or m.get("id")
         if not mid or mid in seen:
             continue
@@ -46,7 +59,9 @@ for tag in TAGS:
         slug = re.sub(r"[^A-Za-z0-9_.-]+", "__", mid)[:120]
         (CARDS / f"{slug}.json").write_text(json.dumps({
             "id": mid, "pipeline_tag": tag,
-            "downloads": m.get("downloads"), "likes": m.get("likes"),
+            "downloads": m.get("downloads"),
+            "downloads_all_time": m.get("downloadsAllTime"),
+            "likes": m.get("likes"),
             "license": next((t.split(":", 1)[1] for t in
                              m.get("tags", []) if
                              t.startswith("license:")), None),
