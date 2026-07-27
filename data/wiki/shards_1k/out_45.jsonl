@@ -1,0 +1,85 @@
+{"page": "Proof assistant", "revid": 1365446350, "subject": "proof assistant", "pid": "P31", "object": "software tool", "statement": "A proof assistant is a software tool to assist with the development of formal proofs."}
+{"page": "Proof assistant", "revid": 1365446350, "subject": "proof assistant", "pid": "P31", "object": "interactive theorem prover", "statement": "A proof assistant is an interactive theorem prover."}
+{"page": "Proof assistant", "revid": 1365446350, "subject": "Automath", "pid": "P571", "object": "1967", "statement": "Automath was developed starting in 1967."}
+{"page": "Proof assistant", "revid": 1365446350, "subject": "Automath", "pid": "P50", "object": "Nicolaas Govert de Bruijn", "statement": "Automath was developed by Nicolaas Govert de Bruijn."}
+{"page": "Proof assistant", "revid": 1365446350, "subject": "Automath", "pid": "P31", "object": "proof checker", "statement": "Automath is often considered the first proof checker."}
+{"page": "Proof assistant", "revid": 1365446350, "subject": "ACL2", "pid": "P571", "object": "1973", "statement": "ACL2 was published in 1973."}
+{"page": "Proof assistant", "revid": 1365446350, "subject": "ACL2", "pid": "P50", "object": "Robert Boyer", "statement": "Robert Boyer published Proving Theorems about LISP Functions in 1973."}
+{"page": "Proof assistant", "revid": 1365446350, "subject": "ACL2", "pid": "P50", "object": "J Moore", "statement": "J Moore published Proving Theorems about LISP Functions in 1973."}
+{"page": "Proof assistant", "revid": 1365446350, "subject": "Lean", "pid": "P571", "object": "2010s", "statement": "Lean became popular starting in the late 2010s."}
+{"page": "Proof assistant", "revid": 1365446350, "subject": "Rocq", "pid": "P571", "object": "1990s", "statement": "Rocq rose to prominence in the 1990s."}
+{"page": "Proof theory", "revid": 1364766523, "subject": "proof theory", "pid": "P31", "object": "branch of mathematical logic", "statement": "Proof theory is a major branch of mathematical logic."}
+{"page": "Proof theory", "revid": 1364766523, "subject": "proof theory", "pid": "P31", "object": "field of theoretical computer science", "statement": "Proof theory is a major field within theoretical computer science."}
+{"page": "Proof theory", "revid": 1364766523, "subject": "proof theory", "pid": "P276", "object": "mathematics", "statement": "Proof theory treats proofs as formal mathematical objects."}
+{"page": "Proof theory", "revid": 1364766523, "subject": "David Hilbert", "pid": "P106", "object": "mathematician", "statement": "David Hilbert initiated modern proof theory through Hilbert's program."}
+{"page": "Proof theory", "revid": 1364766523, "subject": "Kurt G\u00f6del", "pid": "P50", "object": "incompleteness theorems", "statement": "Kurt G\u00f6del demonstrated the failure of Hilbert's program with his incompleteness theorems."}
+{"page": "Proof theory", "revid": 1364766523, "subject": "Jan \u0141ukasiewicz", "pid": "P571", "object": "1926", "statement": "Jan \u0141ukasiewicz suggested improvements to Hilbert systems in 1926."}
+{"page": "Proof theory", "revid": 1364766523, "subject": "Stanis\u0142aw Ja\u015bkowski", "pid": "P571", "object": "1929", "statement": "Stanis\u0142aw Ja\u015bkowski developed natural deduction calculi in 1929."}
+{"page": "Proof theory", "revid": 1364766523, "subject": "Gerhard Gentzen", "pid": "P571", "object": "1934", "statement": "Gerhard Gentzen developed natural deduction calculi and the sequent calculus in 1934."}
+{"page": "Proof theory", "revid": 1364766523, "subject": "proof theory", "pid": "P276", "object": "logic", "statement": "Proof theory is central to the study of logic."}
+{"page": "Property (philosophy)", "revid": 1361517100, "subject": "property", "pid": "P31", "object": "philosophical concept", "statement": "A property is a characteristic of an object."}
+{"page": "Property (philosophy)", "revid": 1361517100, "subject": "redness", "pid": "P31", "object": "property", "statement": "Redness is an example of a property."}
+{"page": "Property (philosophy)", "revid": 1361517100, "subject": "property", "pid": "P31", "object": "object", "statement": "A property may be considered a form of object in its own right."}
+{"page": "Property (philosophy)", "revid": 1361517100, "subject": "universal property", "pid": "P31", "object": "property", "statement": "Universals are properties capable of being instantiated by different objects."}
+{"page": "Property (philosophy)", "revid": 1361517100, "subject": "particular property", "pid": "P31", "object": "property", "statement": "Particulars or tropes are properties unique to individual objects."}
+{"page": "Property (philosophy)", "revid": 1361517100, "subject": "categorical property", "pid": "P31", "object": "property", "statement": "Categorical properties concern what something is like."}
+{"page": "Property (philosophy)", "revid": 1361517100, "subject": "dispositional property", "pid": "P31", "object": "property", "statement": "Dispositional properties involve what powers something has."}
+{"page": "Property (philosophy)", "revid": 1361517100, "subject": "intrinsic property", "pid": "P31", "object": "property", "statement": "An intrinsic property is a property that an object has of itself."}
+{"page": "Property (philosophy)", "revid": 1361517100, "subject": "extrinsic property", "pid": "P31", "object": "property", "statement": "An extrinsic property depends on a thing's relationship with other things."}
+{"page": "Proposition", "revid": 1366165064, "subject": "proposition", "pid": "P31", "object": "semantic entity", "statement": "A proposition is the meaning of a declarative sentence."}
+{"page": "Proposition", "revid": 1366165064, "subject": "proposition", "pid": "P31", "object": "object of belief", "statement": "Propositions are objects of beliefs."}
+{"page": "Proposition", "revid": 1366165064, "subject": "proposition", "pid": "P31", "object": "truth-bearer", "statement": "Propositions are bearers of truth values."}
+{"page": "Proposition", "revid": 1366165064, "subject": "proposition", "pid": "P31", "object": "abstract object", "statement": "Propositions are typically abstract objects."}
+{"page": "Proposition", "revid": 1366165064, "subject": "propositional attitude", "pid": "P31", "object": "mental state", "statement": "A propositional attitude is a mental state directed at a proposition."}
+{"page": "Proposition", "revid": 1366165064, "subject": "Aristotle", "pid": "P50", "object": "logic theory", "statement": "Aristotle made influential contributions to the study of propositions."}
+{"page": "Proposition", "revid": 1366165064, "subject": "Gottlob Frege", "pid": "P106", "object": "logician", "statement": "Gottlob Frege made influential contributions to the study of propositions."}
+{"page": "Proposition", "revid": 1366165064, "subject": "Bertrand Russell", "pid": "P106", "object": "logician", "statement": "Bertrand Russell made influential contributions to the study of propositions."}
+{"page": "Proposition", "revid": 1366165064, "subject": "proposition", "pid": "P276", "object": "logic", "statement": "Propositions are central to logic."}
+{"page": "Proposition", "revid": 1366165064, "subject": "proposition", "pid": "P276", "object": "philosophy", "statement": "Propositions are central to philosophy."}
+{"page": "Propositional logic", "revid": 1365863008, "subject": "propositional logic", "pid": "P31", "object": "branch of classical logic", "statement": "Propositional logic is a branch of classical logic."}
+{"page": "Propositional logic", "revid": 1365863008, "subject": "propositional logic", "pid": "P31", "object": "formal logic", "statement": "Propositional logic is also called statement logic or sentential calculus."}
+{"page": "Propositional logic", "revid": 1365863008, "subject": "propositional logic", "pid": "P31", "object": "zeroth-order logic", "statement": "Propositional logic is sometimes called zeroth-order logic."}
+{"page": "Propositional logic", "revid": 1365863008, "subject": "Chrysippus", "pid": "P106", "object": "logician", "statement": "Chrysippus is credited with development of a deductive system for propositional logic."}
+{"page": "Propositional logic", "revid": 1365863008, "subject": "Chrysippus", "pid": "P571", "object": "3rd century BC", "statement": "Chrysippus developed deductive systems for propositional logic in the 3rd century BC."}
+{"page": "Propositional logic", "revid": 1365863008, "subject": "Stoic logic", "pid": "P31", "object": "propositional logic", "statement": "Stoic logic developed propositional logic."}
+{"page": "Propositional logic", "revid": 1365863008, "subject": "Gottfried Leibniz", "pid": "P106", "object": "logician", "statement": "Gottfried Leibniz was a 17th/18th-century mathematician who developed symbolic logic."}
+{"page": "Propositional logic", "revid": 1365863008, "subject": "George Boole", "pid": "P106", "object": "logician", "statement": "George Boole advanced the development of propositional logic."}
+{"page": "Propositional logic", "revid": 1365863008, "subject": "Augustus De Morgan", "pid": "P106", "object": "logician", "statement": "Augustus De Morgan advanced the development of propositional logic."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "Protestantism", "pid": "P31", "object": "form of Christianity", "statement": "Protestantism is a form of Christianity."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "Protestantism", "pid": "P31", "object": "religious movement", "statement": "Protestantism emphasizes justification through faith alone."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "Protestant Reformation", "pid": "P571", "object": "1517", "statement": "The Protestant Reformation began in 1517."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "Martin Luther", "pid": "P571", "object": "1517", "statement": "Martin Luther published his Ninety-five Theses in 1517."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "Martin Luther", "pid": "P106", "object": "religious reformer", "statement": "Martin Luther was a religious reformer who founded Protestantism."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "John Calvin", "pid": "P106", "object": "religious reformer", "statement": "John Calvin was a Protestant Reformer."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "Huldrych Zwingli", "pid": "P106", "object": "religious reformer", "statement": "Huldrych Zwingli was a Protestant Reformer."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "Thomas Cranmer", "pid": "P106", "object": "religious reformer", "statement": "Thomas Cranmer was a reformer who forged Anglican doctrine."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "King Henry VIII", "pid": "P50", "object": "Anglicanism", "statement": "King Henry VIII initiated the political separation of the Church of England from the Catholic Church."}
+{"page": "Protestantism", "revid": 1365855699, "subject": "Lutheranism", "pid": "P571", "object": "16th century", "statement": "Lutheranism spread from Germany in the 16th century."}
+{"page": "Prussian Academy of Sciences", "revid": 1364317727, "subject": "Prussian Academy of Sciences", "pid": "P571", "object": "1700", "statement": "The Prussian Academy of Sciences was established in Berlin on July 11, 1700."}
+{"page": "Prussian Academy of Sciences", "revid": 1364317727, "subject": "Prussian Academy of Sciences", "pid": "P112", "object": "Gottfried Wilhelm Leibniz", "statement": "Gottfried Wilhelm Leibniz founded the Prussian Academy of Sciences."}
+{"page": "Prussian Academy of Sciences", "revid": 1364317727, "subject": "Prussian Academy of Sciences", "pid": "P159", "object": "Berlin", "statement": "The Prussian Academy of Sciences is headquartered in Berlin, Germany."}
+{"page": "Prussian Academy of Sciences", "revid": 1364317727, "subject": "Prussian Academy of Sciences", "pid": "P17", "object": "Germany", "statement": "The Prussian Academy of Sciences is located in Germany."}
+{"page": "Prussian Academy of Sciences", "revid": 1364317727, "subject": "Frederick III", "pid": "P112", "object": "Prussian Academy", "statement": "Prince-elector Frederick III of Brandenburg founded the Academy."}
+{"page": "Prussian Academy of Sciences", "revid": 1364317727, "subject": "Frederick the Great", "pid": "P571", "object": "1744", "statement": "In 1744, Frederick the Great merged the Nouvelle soci\u00e9t\u00e9 litt\u00e9raire with the Society of Sciences."}
+{"page": "Prussian Academy of Sciences", "revid": 1364317727, "subject": "Immanuel Kant", "pid": "P463", "object": "Prussian Academy", "statement": "Immanuel Kant was a member of the Prussian Academy of Sciences."}
+{"page": "Prussian Academy of Sciences", "revid": 1364317727, "subject": "Albert Einstein", "pid": "P571", "object": "1915", "statement": "Albert Einstein presented his field equations to the Academy on November 25, 1915."}
+{"page": "Prussian Academy of Sciences", "revid": 1364317727, "subject": "Prussian Academy", "pid": "P571", "object": "1946", "statement": "After World War II, the Academy was reorganized as the German Academy of Sciences."}
+{"page": "Pseudoscience", "revid": 1365202810, "subject": "pseudoscience", "pid": "P31", "object": "type of belief system", "statement": "Pseudoscience consists of statements, beliefs, or practices that claim to be scientific."}
+{"page": "Pseudoscience", "revid": 1365202810, "subject": "pseudoscience", "pid": "P31", "object": "false knowledge", "statement": "Pseudoscience is inherently incompatible with the scientific method."}
+{"page": "Pseudoscience", "revid": 1365202810, "subject": "astrology", "pid": "P31", "object": "pseudoscience", "statement": "Astrology is an example of pseudoscience."}
+{"page": "Pseudoscience", "revid": 1365202810, "subject": "homeopathy", "pid": "P31", "object": "pseudoscience", "statement": "Homeopathy is an example of pseudoscience."}
+{"page": "Pseudoscience", "revid": 1365202810, "subject": "creationism", "pid": "P31", "object": "pseudoscience", "statement": "Creationism is an example of pseudoscience."}
+{"page": "Pseudoscience", "revid": 1365202810, "subject": "pseudoscience", "pid": "P276", "object": "science education", "statement": "Addressing pseudoscience is part of science education."}
+{"page": "Pseudosphere", "revid": 1327519164, "subject": "pseudosphere", "pid": "P31", "object": "mathematical surface", "statement": "A pseudosphere is a surface of revolution."}
+{"page": "Pseudosphere", "revid": 1327519164, "subject": "pseudosphere", "pid": "P276", "object": "geometry", "statement": "The pseudosphere is studied in geometry."}
+{"page": "Psychoanalysis", "revid": 1365855822, "subject": "psychoanalysis", "pid": "P31", "object": "school of psychology", "statement": "Psychoanalysis is a school of psychology."}
+{"page": "Psychoanalysis", "revid": 1365855822, "subject": "psychoanalysis", "pid": "P31", "object": "method of psychotherapy", "statement": "Psychoanalysis is a method of psychotherapy."}
+{"page": "Psychoanalysis", "revid": 1365855822, "subject": "psychoanalysis", "pid": "P276", "object": "psychology", "statement": "Psychoanalysis is studied in psychology."}
+{"page": "Psychology", "revid": 1366111568, "subject": "psychology", "pid": "P31", "object": "scientific discipline", "statement": "Psychology is the scientific study of human behavior and mental processes."}
+{"page": "Psychology", "revid": 1366111568, "subject": "psychology", "pid": "P31", "object": "social science", "statement": "Psychology is a social science."}
+{"page": "Ptolemy", "revid": 1365171850, "subject": "Ptolemy", "pid": "P106", "object": "astronomer", "statement": "Ptolemy was an ancient astronomer."}
+{"page": "Ptolemy", "revid": 1365171850, "subject": "Ptolemy", "pid": "P106", "object": "geographer", "statement": "Ptolemy was an ancient geographer."}
+{"page": "Ptolemy", "revid": 1365171850, "subject": "Ptolemy", "pid": "P106", "object": "mathematician", "statement": "Ptolemy was an ancient mathematician."}
+{"page": "Public-key cryptography", "revid": 1365855883, "subject": "public-key cryptography", "pid": "P31", "object": "cryptographic method", "statement": "Public-key cryptography is an asymmetric cryptographic method."}
+{"page": "Public-key cryptography", "revid": 1365855883, "subject": "public-key cryptography", "pid": "P31", "object": "encryption scheme", "statement": "Public-key cryptography is an encryption scheme."}
+{"page": "Public-key cryptography", "revid": 1365855883, "subject": "public-key cryptography", "pid": "P276", "object": "computer science", "statement": "Public-key cryptography is studied in computer science."}
