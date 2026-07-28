@@ -2,6 +2,28 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D109: The trace layer's recommendation was acted on and paid — and demand is ANTI-correlated with source quality
+Acted on D108's top-ranked curation debt rather than leaving a recommender we had just built unread.
+
+**The finding that came out of looking**: 9 of the 11 highest-demand blocked papers have **no machine-readable body**. They are `/abs/` fallbacks because they predate arXiv's HTML rendering — *Training Verifiers* (GSM8K, 2021), *Evaluating LLMs Trained on Code* (HumanEval, 2021), *PPO* (2017), *LLaMA*. **The most-cited papers are the oldest, and the oldest have the worst sources.** Demand and source availability point in opposite directions, which is not obvious in advance and is worth stating plainly for anyone building on retained fulltext.
+
+**So: an abstract-only extraction pass**, with the prompt saying what it is — no body to check against, so the bar for asserting rises rather than falls, and an explicit warning that *these are famous papers you will recognise and recognition is not evidence*. Every row carries `evidence: "abstract"` so any later audit knows the claim was made without a body. Result: **15 claims from 8 of 10 papers**, two correctly yielding nothing. Spot-checks are right — Codex→HumanEval, Verifier→GSM8K, PPO→TRPO and Atari.
+
+**The loop paid on every structural measure:**
+
+| | before | after |
+|---|---|---|
+| cross-axis paths | 216 | **361** (+67%) |
+| answerable questions | 105 | **120** |
+| correct answers | 89 | **100** |
+| wrong answers | 0 | **0** |
+
+**And the rate went DOWN while the capability went UP** — 0.848 → 0.833, abstention 0.152 → 0.167. That is not a regression and it matters that it is recorded rather than smoothed: the questions the fix unblocked are the *harder* ones, routing through papers whose resource claims come from an abstract rather than a body. Adding hard questions to a benchmark lowers the average while raising what the system can do. **Reporting only the rate would have made a real improvement look like a small loss.**
+
+The zero held throughout, which is the property worth protecting.
+
+**Loop closed end to end**: query → trace → demand-ranked debt → targeted fix → re-measure, with the fix going through ordinary extraction discipline and the trace layer independently confirming the debt shrank (blocked `P_INTRODUCES` abstains 3,624 → 3,479, answered 89 → 100 over the same 301-paper workload).
+
 ## 2026-07-28 — D108: Stigmergic curation — traversal ranks its own repair queue; and the scaling wall was the graph layer, not retrieval
 User proposal: curation should be dynamic like writes, with ingestion and query both strengthening or differentiating paths — non-redundant because writes must stay partial for efficiency while query-time can weigh several subgraphs at once. Correct, and the evidence is that we had been doing it by hand all session: every curation gap found so far (`cited_by` ambiguous over 16 eids, the citation/resource axes at zero paths) was a query returning nothing and a human noticing.
 

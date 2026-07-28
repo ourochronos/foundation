@@ -1,43 +1,33 @@
 {
- "hops_traced": 4357,
+ "hops_traced": 4502,
  "blocked_transitions": [
   {
    "hop": 1,
    "pid": "P_INTRODUCES",
    "status": "abstain",
-   "n": 3624
+   "n": 3479
   },
   {
    "hop": 2,
    "pid": "P_EVALUATES_ON",
    "status": "abstain",
-   "n": 47
+   "n": 118
   }
  ],
  "fetch_or_link_candidates": [
   {
-   "pid": "P_INTRODUCES",
-   "subject": "Training Verifiers to Solve Math Word Problems",
-   "blocked_queries": 26
-  },
-  {
-   "pid": "P_INTRODUCES",
-   "subject": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+   "pid": "P_EVALUATES_ON",
+   "subject": "DeepSeek-R1",
    "blocked_queries": 22
   },
   {
-   "pid": "P_INTRODUCES",
-   "subject": "Evaluating Large Language Models Trained on Code",
-   "blocked_queries": 21
-  },
-  {
-   "pid": "P_INTRODUCES",
-   "subject": "The Llama 3 Herd of Models",
+   "pid": "P_EVALUATES_ON",
+   "subject": "Llama 3",
    "blocked_queries": 19
   },
   {
-   "pid": "P_INTRODUCES",
-   "subject": "Qwen2.5 Technical Report",
+   "pid": "P_EVALUATES_ON",
+   "subject": "Qwen2.5",
    "blocked_queries": 18
   },
   {
@@ -46,23 +36,13 @@
    "blocked_queries": 17
   },
   {
-   "pid": "P_INTRODUCES",
-   "subject": "Proximal Policy Optimization Algorithms",
-   "blocked_queries": 15
-  },
-  {
-   "pid": "P_INTRODUCES",
-   "subject": "LLaMA: Open and Efficient Foundation Language Models",
+   "pid": "P_EVALUATES_ON",
+   "subject": "Llama",
    "blocked_queries": 12
   },
   {
    "pid": "P_INTRODUCES",
    "subject": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
-   "blocked_queries": 12
-  },
-  {
-   "pid": "P_INTRODUCES",
-   "subject": "Program Synthesis with Large Language Models",
    "blocked_queries": 12
   },
   {
@@ -74,6 +54,26 @@
    "pid": "P_EVALUATES_ON",
    "subject": "LoRA",
    "blocked_queries": 10
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Adam: A Method for Stochastic Optimization",
+   "blocked_queries": 10
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Measuring Mathematical Problem Solving With the MATH Dataset",
+   "blocked_queries": 10
+  },
+  {
+   "pid": "P_EVALUATES_ON",
+   "subject": "DeepSeek-V3",
+   "blocked_queries": 9
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Constitutional AI: Harmlessness from AI Feedback",
+   "blocked_queries": 9
   }
  ],
  "split_candidates": [],
