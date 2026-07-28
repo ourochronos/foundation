@@ -1,0 +1,26 @@
+[
+ {
+  "sid": "out_12.jsonl:35",
+  "subject": "RIS-Kernel",
+  "object": "TinyLlama-1.1B",
+  "page": "arxiv:2607.21927v1",
+  "statement": "RIS-Kernel is evaluated on TinyLlama-1.1B.",
+  "why": "HF registry knows it as a model: ['TinyLlama/TinyLlama-1.1B-Chat-v1.0']"
+ },
+ {
+  "sid": "out_3.jsonl:1",
+  "subject": "ANNS indexing",
+  "object": "BGE-M3",
+  "page": "arxiv:2607.20957v1",
+  "statement": "ANNS indexing is evaluated on BGE-M3.",
+  "why": "HF registry knows it as a model: ['BAAI/bge-m3']"
+ },
+ {
+  "sid": "out_7.jsonl:25",
+  "subject": "KroQuant",
+  "object": "FLUX.1-schnell",
+  "page": "arxiv:2607.21446v1",
+  "statement": "KroQuant is evaluated on FLUX.1-schnell.",
+  "why": "HF registry knows it as a model: ['black-forest-labs/FLUX.1-dev', 'black-forest-labs/FLUX.1-schnell']"
+ }
+]

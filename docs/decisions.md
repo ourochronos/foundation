@@ -2,6 +2,20 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D105: The parts inventory types the tail the corpus vote cannot — the dogfood loop closes, and it only works because the slice was re-cut
+D104 left a stated gap: relational participation types the head (37 of 719 objects reach 3 papers) and **cannot touch the tail**, which is exactly where the model-as-target defect survives — `Pillar-0`, `EEG Conformer`, `TinyLlama-1.1B` are one- or two-paper objects with no majority to consult.
+
+**The HuggingFace parts inventory answers the tail directly**: a name in the registry IS a model however rarely it is cited. That is the P2 dogfood premise doing real work — the components corpus typing the literature corpus — and it needed two fixes to function.
+
+1. **Re-cut the slice.** The original 200 cards were sampled by pipeline tags chosen for *our* stack (`feature-extraction`, `sentence-similarity`, `token-classification`…), which excluded text-generation entirely, so the inventory matched **3 of 719** objects. Adding generation and multimodal tags took it to **402 cards** and 13 exact matches. **An inventory sampled for one purpose does not transfer to another** — the premise was sound and the slice was cut wrong.
+2. **Match at FAMILY level**, the granularity the resource axis already declares (D100): the corpus writes `Qwen2.5`, the registry writes `Qwen2.5-7B-Instruct`. Exact matching found 13 objects; family matching finds **38, of which 30 are tail cases the vote cannot reach**.
+
+**Result: 3 defects found that no previous mechanism could see** — `RIS-Kernel is evaluated on TinyLlama-1.1B`, `ANNS indexing is evaluated on BGE-M3`, `KroQuant is evaluated on FLUX.1-schnell`. All three are one-paper objects, invisible to the vote, and none is a vendor name the original regex knew. Retyped to `P_BUILDS_ON`; the check is clean at 0.
+
+**Two mechanisms over disjoint populations, and neither pretends to cover the other.** The vote knows what the corpus uses often; the registry knows what exists. `foundation/typeoracle.py` ships with `is_model()` and `evidence()` so every verdict carries the registry ids backing it. Names in neither remain judgement calls, stated in the docstring.
+
+**Bug worth recording**: the apply path indexed `typed[object]` to build its report — which KeyErrors on precisely the oracle-flagged tail, since having no corpus profile is *why* the oracle fired. Caught before it ran on real data, but it is the recurring shape of this session's errors: a mechanism built for the head, reused on the tail it was invented to avoid.
+
 ## 2026-07-28 — D104: Four signals tested for "is this object a named artifact or a class noun" — three fail, and the one that works is the project's own D41 law
 The two mechanical filters left at D103 both had ceilings by construction: the model-as-target check is a hardcoded vendor regex that cannot know `Pillar-0` or `EEG Conformer` (and already missed the whole Qwen family once on a word-boundary bug), and the generic blocklist matches exact strings so it holds `vae` while missing `variational autoencoders`. Both needed a signal, not a longer list. **Measured four before building anything.**
 

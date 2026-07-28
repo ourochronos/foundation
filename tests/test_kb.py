@@ -205,3 +205,27 @@ def test_global_resource_adopts_an_existing_entity(tmp_path):
          "statement": "User builds on GRPO."}) + "\n")
     kb.ingest_shards(b, embed=False)
     assert len(kb.resolve_subject("GRPO")) == 1
+
+
+# --- D105: the parts inventory types the tail the corpus vote cannot -----
+
+def test_type_oracle_matches_at_family_level():
+    """The corpus writes `Qwen2.5`; the registry writes `Qwen2.5-7B-Instruct`.
+
+    Exact matching found 13 of 719 resource objects; family matching finds
+    38, of which 30 are tail cases (<3 papers) that relational
+    participation cannot type at all.
+    """
+    from foundation.typeoracle import family, is_model
+    assert family("Qwen2.5-7B-Instruct") == family("Qwen2.5")
+    assert family("meta-llama/Llama-3.1-8B") == family("Llama 3.1")
+    # a benchmark must NOT fold into a model family
+    assert family("GSM8K") != family("Qwen2.5")
+    if is_model("Qwen2.5"):                    # skip if cards absent
+        assert not is_model("GSM8K")
+
+
+def test_type_oracle_evidence_is_traceable():
+    from foundation.typeoracle import evidence, is_model
+    if is_model("Qwen2.5"):
+        assert any("Qwen" in e for e in evidence("Qwen2.5"))

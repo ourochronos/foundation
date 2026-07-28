@@ -33,6 +33,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
 V2 = ROOT / "data" / "arxiv_ai" / "shards_res_v2"
 OUT = ROOT / "data" / "arxiv_ai" / "shards_typecheck"
 APPLY = "--apply" in sys.argv
@@ -58,9 +59,22 @@ for o, c in prof.items():
     if n / tot >= MIN_PURITY:
         typed[o] = (dom, round(n / tot, 3), len(papers[o]))
 
-suspect = [r for r in rows
-           if r["pid"] == "P_EVALUATES_ON"
-           and typed.get(r["object"], ("", 0, 0))[0] == "P_BUILDS_ON"]
+from foundation.typeoracle import evidence, is_model          # noqa: E402
+
+# TWO mechanisms, because they cover disjoint populations (D105). The vote
+# types what the corpus uses often; the parts inventory types what the
+# REGISTRY knows, however rare — and rare is exactly where the defect
+# survived. Neither reaches names in neither, which is stated, not hidden.
+suspect = []
+for r in rows:
+    if r["pid"] != "P_EVALUATES_ON":
+        continue
+    if typed.get(r["object"], ("", 0, 0))[0] == "P_BUILDS_ON":
+        r["_why"] = f"corpus vote: {typed[r['object']]}"
+        suspect.append(r)
+    elif is_model(r["object"]):
+        r["_why"] = f"HF registry knows it as a model: {evidence(r['object'])[:2]}"
+        suspect.append(r)
 
 summary = {
     "objects": len(prof),
@@ -75,7 +89,7 @@ summary = {
                        if t[0] == "P_EVALUATES_ON"),
     "directional_contradictions": len(suspect),
     "flagged": [{"page": r["page"], "subject": r["subject"],
-                 "object": r["object"], "profile": typed[r["object"]],
+                 "object": r["object"], "why": r.get("_why", ""),
                  "src_sid": r.get("src_sid")} for r in suspect],
 }
 (ROOT / "results" / "exp15_typecheck.json").write_text(
@@ -87,13 +101,14 @@ if APPLY and suspect:
         [{"sid": r.get("src_sid"), "subject": r["subject"],
           "object": r["object"], "page": r["page"],
           "statement": r["statement"],
-          "corpus_profile": f"{typed[r['object']][0]} at "
-                            f"{typed[r['object']][1]} purity over "
-                            f"{typed[r['object']][2]} papers"}
+          # NOT typed[...] — an oracle-flagged object has no corpus profile
+          # by definition (that is why the oracle exists), and indexing it
+          # would KeyError on exactly the tail this pass was built for.
+          "why": r.get("_why", "")}
          for r in suspect], indent=1))
 
 print(json.dumps({k: v for k, v in summary.items() if k != "flagged"},
                  indent=1)[:1500])
 for f in summary["flagged"]:
     print(f"  FLAG {f['subject'][:26]:28s} evaluated-on {f['object'][:18]:20s} "
-          f"(corpus: {f['profile'][0].replace('P_','')} {f['profile'][1]})")
+          f"— {f['why']}")

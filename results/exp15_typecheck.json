@@ -34,27 +34,5 @@
   "WinoGrande"
  ],
  "directional_contradictions": 0,
- "flagged": [],
- "signals_tested_and_rejected": {
-  "citation_adjacency": {
-   "generic": "0.00-0.17",
-   "artifact": "0.00-0.27",
-   "verdict": "REFUTED, ranges overlap"
-  },
-  "class_noun_grammar": {
-   "generic_mean": 0.188,
-   "artifact_mean": 0.062,
-   "verdict": "WEAK, overlapping; plural regex also failed on already-plural phrases"
-  },
-  "first_mention_citation": {
-   "generic_mean": 0.036,
-   "artifact_mean": 0.276,
-   "verdict": "WEAK, best of three but Qwen2.5/ALFWorld score 0.00"
-  },
-  "hf_inventory_oracle": {
-   "coverage": "3 of 719",
-   "verdict": "REJECTED \u2014 our HF slice was sampled by pipeline tags excluding text-generation, so it cannot type the LLMs this literature uses. Fixable: re-fetch with generation tags."
-  }
- },
- "adopted": "relational participation (D41) \u2014 directional contradiction only"
+ "flagged": []
 }

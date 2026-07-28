@@ -21,9 +21,19 @@ SHARDS = ROOT / "data" / "hf" / "shards"
 CARDS.mkdir(parents=True, exist_ok=True)
 SHARDS.mkdir(parents=True, exist_ok=True)
 HDR = {"User-Agent": "foundation-research/0.1 (zonk1024@gmail.com)"}
+# The original five tags were chosen for OUR stack (retrieval/classification
+# components). That made the inventory useless as a TYPE ORACLE for the
+# literature: it matched 3 of 719 resource objects, because the AI/ML papers
+# cite generative LLMs and the tag set excluded text-generation entirely
+# (D104). The inventory's second job — telling the extractor "this name is a
+# model, not a dataset" — needs the models the field actually uses.
 TAGS = ["feature-extraction", "sentence-similarity",
         "token-classification", "text-classification",
-        "zero-shot-classification"]
+        "zero-shot-classification",
+        # generation + multimodal: the tail the resource axis cannot type
+        "text-generation", "text2text-generation",
+        "image-text-to-text", "automatic-speech-recognition",
+        "visual-question-answering", "text-to-image"]
 
 seen = set()
 for tag in TAGS:
@@ -70,11 +80,20 @@ for tag in TAGS:
     print(f"[hf] {tag}: total {len(seen)}", flush=True)
 
 cards = [json.loads(p.read_text()) for p in sorted(CARDS.glob("*.json"))]
-per = 20
-n = (len(cards) + per - 1) // per
-for i in range(n):
-    (SHARDS / f"in_{i}.json").write_text(json.dumps(
-        [{k: c[k] for k in ("id", "pipeline_tag", "downloads", "license",
-                            "card_md")} for c in
-         cards[i * per:(i + 1) * per]]))
-print(f"[done] {len(cards)} cards -> {n} shards", flush=True)
+
+# HF_STAGE=0 skips (re)staging. Shard inputs are FROZEN once a fleet has run
+# over them — a fetch that widens the inventory must not silently rewrite the
+# inputs of a completed extraction pass (the same guard arxiv_fetch needed).
+import os as _os
+if _os.environ.get("HF_STAGE", "1") == "0":
+    print(f"[done] {len(cards)} cards; staging skipped (HF_STAGE=0)",
+          flush=True)
+else:
+    per = 20
+    n = (len(cards) + per - 1) // per
+    for i in range(n):
+        (SHARDS / f"in_{i}.json").write_text(json.dumps(
+            [{k: c[k] for k in ("id", "pipeline_tag", "downloads", "license",
+                                "card_md")} for c in
+             cards[i * per:(i + 1) * per]]))
+    print(f"[done] {len(cards)} cards -> {n} shards", flush=True)
