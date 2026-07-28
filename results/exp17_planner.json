@@ -1,0 +1,132 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-28T22:40:31.340368+00:00",
+  "commit": "7b2b6902b6dd1da4de1408e34bfea93a80d00a74",
+  "dirty": true,
+  "command": "scripts/exp17_planner.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "world": "real_world_ai",
+   "relations": [
+    "P_BUILDS_ON",
+    "P_CITES",
+    "P_COMPARES_TO",
+    "P_EVALUATES_ON",
+    "P_INTRODUCES"
+   ]
+  }
+ },
+ "facts": 5048,
+ "questions": 30288,
+ "relation_detection": {
+  "seen_phrasings": 1.0,
+  "held_out": 0.6835,
+  "held_out_ci95": [
+   0.6689,
+   0.6977
+  ],
+  "per_relation_held_out": {
+   "P_BUILDS_ON": {
+    "acc": 0.5903,
+    "n": 227
+   },
+   "P_COMPARES_TO": {
+    "acc": 1.0,
+    "n": 208
+   },
+   "P_CITES": {
+    "acc": 0.6694,
+    "n": 3046
+   },
+   "P_EVALUATES_ON": {
+    "acc": 0.4924,
+    "n": 327
+   },
+   "P_INTRODUCES": {
+    "acc": 1.0,
+    "n": 192
+   }
+  }
+ },
+ "scope": "Templated questions with 2 of 6 phrasings held out. This measures whether the planner picks the right relation from a paraphrase it never trained on \u2014 NOT free-form language understanding. Heads retrained because R changed 9 -> 5; everything else (participation types, relation entries, operators, feasibility gate) is closed-form from real data.",
+ "end_to_end": {
+  "seen": {
+   "correct": 3982,
+   "abstain": 18,
+   "precision_when_answered": 1.0
+  },
+  "held_out": {
+   "abstain": 655,
+   "correct": 2638,
+   "wrong": 707,
+   "precision_when_answered": 0.7886,
+   "precision_ci95": [
+    0.7745,
+    0.8021
+   ]
+  },
+  "per_phrasing_held_out": {
+   "P_BUILDS_ON#5": {
+    "abstain": 119
+   },
+   "P_COMPARES_TO#4": {
+    "correct": 103,
+    "abstain": 1
+   },
+   "P_CITES#4": {
+    "correct": 1530
+   },
+   "P_CITES#5": {
+    "wrong": 631,
+    "correct": 463,
+    "abstain": 422
+   },
+   "P_EVALUATES_ON#5": {
+    "wrong": 76,
+    "abstain": 91
+   },
+   "P_COMPARES_TO#5": {
+    "correct": 102,
+    "abstain": 2
+   },
+   "P_EVALUATES_ON#4": {
+    "correct": 159,
+    "abstain": 1
+   },
+   "P_INTRODUCES#4": {
+    "correct": 93,
+    "abstain": 6
+   },
+   "P_BUILDS_ON#4": {
+    "correct": 101,
+    "abstain": 7
+   },
+   "P_INTRODUCES#5": {
+    "correct": 87,
+    "abstain": 6
+   }
+  }
+ },
+ "answer_type_gate": {
+  "threshold": 0.55,
+  "selection_rule": "smallest threshold with DEV-subject wrong-rate <= 0.02; stated before the grid was read",
+  "test": {
+   "abstain": 785,
+   "correct": 1032,
+   "wrong": 22,
+   "precision_when_answered": 0.9791,
+   "precision_ci95": [
+    0.9686,
+    0.9862
+   ]
+  },
+  "ungated_test_wrong_rate": 0.1593
+ }
+}

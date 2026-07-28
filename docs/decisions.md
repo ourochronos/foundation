@@ -2,6 +2,25 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D110: The planner survives contact with the real corpus — but "0.000 wrong" was conditional on someone else choosing the relation
+First measurement of the D41/D44 planner against the live store rather than a generated ontology. `scripts/exp17_world.py` exports the arXiv component as a v0.6 world (5,048 facts / 618 subjects / 5 relations); `scripts/exp17_planner.py` rebuilds the closed-form artifacts over it, retrains the two heads (`R` changed 9 → 5, so retraining is wiring, not a result), and walks the live store. Questions are templated, 6 phrasings per relation, **last 2 held out** (K5 discipline, D48) — this measures paraphrase robustness, not free-form language understanding, and the scope line in the results file says so.
+
+**The mechanism transfers.** Participation types, relation entries, operators and the feasibility gate are closed-form from real claims and needed no adjustment. Seen phrasings: 0.996 correct, **0.000 wrong**, 0.004 abstain — the synthetic-world behaviour reproduces on real data.
+
+**The honest number is worse, and the shape of the failure is the finding.** Held-out phrasings: 0.659 correct, **0.177 wrong**, 0.164 abstain. Every prior "0.000 wrong" result in this project was measured with the relation path *hand-specified* (`chain(X, ['P_CITES', ...])`). When a learned head chooses the relation, wrongness enters. **The store's guarantee was conditional on knowing which question was being asked, and that condition was never stated.** It must be stated in any writeup.
+
+**Per-phrasing, not per-relation.** 7 of 10 held-out phrasings score 0.93–1.00 with 0.000 wrong. Three collapse, and they are the ones that drop the *frame* of every training phrasing: `P_CITES#5` "What does {s} point to?" (0.416 wrong), `P_EVALUATES_ON#5` "What did they run {s} against?" (0.455 wrong), `P_BUILDS_ON#5` "Which prior method does {s} extend?" (1.000 abstain). A per-relation average hid this completely. **One of the three is our fault, not the model's** — "run {s} against" is genuinely ambiguous with `P_COMPARES_TO` in English and 152/156 of its errors go exactly there; a bad test item, recorded rather than quietly replaced.
+
+**Why the feasibility gate cannot catch it.** The gate asks *is this walk possible*. A paper that cites also introduces, so a question mis-detected as `P_INTRODUCES` walks fine and returns a real fact — the right answer to the wrong question. `P_BUILDS_ON#5` abstains at 1.000 only because its mispredicted relation happened to be unpopulated. **Failing safe there was luck, not design.**
+
+**Detection confidence does not rescue it.** On wrong answers the head's median top probability is 0.841 and median top-1/top-2 margin 0.756 — it is *confidently* wrong. Thresholding on margin (dev/test split by subject) moves wrong 0.190 → 0.129 only by giving up correct 0.677 → 0.618. **Not a calibration problem.**
+
+**The fix was already built and mis-used: the answer-type head.** It predicts which participation cluster the answer should fall in, and v0.6 used it only as a *scorer* inside the plan score. Used as a *refuser* it separates almost cleanly — answer-type fit median 0.892 on correct vs 0.415 on wrong (wrong p90 0.526). Threshold chosen on DEV subjects under a rule fixed before the grid was read (smallest threshold with dev wrong ≤ 0.02; *smallest*, so it buys coverage rather than flattering precision), reported on TEST subjects: **0.561 correct / 0.012 wrong / 0.427 abstain, precision-when-answered 0.979** vs 0.781 ungated. Wrong answers fall 15× and become abstentions, which is the trade this project exists to make.
+
+**Decision**: the answer-type gate is promoted from scorer to refuser in the planner. The abstain rate (0.427) is the honest cost and is reported, never netted out. **Caveat recorded**: the selection rule lands on 0.50 or 0.55 across runs depending on KMeans initialisation in `build_artifacts`; both give test wrong ≤ 0.027, but the threshold is not stable at the 0.02 boundary and a seeded basis is owed before this is a shipped default.
+
+**Revisit**: (a) the three collapsed phrasings are 3 items, not a distribution — real query logs from the trace layer (D108) beat more hand-written paraphrases; (b) `held_out_phrasings` transfer is a proxy for the thing actually claimed, which is *free-form* questions; that gap is not yet measured and must not be glossed; (c) hops are empty in this world, so multi-hop planning over the real store is still untested end-to-end.
+
 ## 2026-07-28 — D109: The trace layer's recommendation was acted on and paid — and demand is ANTI-correlated with source quality
 Acted on D108's top-ranked curation debt rather than leaving a recommender we had just built unread.
 
