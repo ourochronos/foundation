@@ -1,0 +1,81 @@
+{
+ "hops_traced": 4357,
+ "blocked_transitions": [
+  {
+   "hop": 1,
+   "pid": "P_INTRODUCES",
+   "status": "abstain",
+   "n": 3624
+  },
+  {
+   "hop": 2,
+   "pid": "P_EVALUATES_ON",
+   "status": "abstain",
+   "n": 47
+  }
+ ],
+ "fetch_or_link_candidates": [
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Training Verifiers to Solve Math Word Problems",
+   "blocked_queries": 26
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+   "blocked_queries": 22
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Evaluating Large Language Models Trained on Code",
+   "blocked_queries": 21
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "The Llama 3 Herd of Models",
+   "blocked_queries": 19
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Qwen2.5 Technical Report",
+   "blocked_queries": 18
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Proceedings 42nd International Conference on Logic Programming",
+   "blocked_queries": 17
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Proximal Policy Optimization Algorithms",
+   "blocked_queries": 15
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "LLaMA: Open and Efficient Foundation Language Models",
+   "blocked_queries": 12
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+   "blocked_queries": 12
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "Program Synthesis with Large Language Models",
+   "blocked_queries": 12
+  },
+  {
+   "pid": "P_INTRODUCES",
+   "subject": "arXiv:1803.05457",
+   "blocked_queries": 10
+  },
+  {
+   "pid": "P_EVALUATES_ON",
+   "subject": "LoRA",
+   "blocked_queries": 10
+  }
+ ],
+ "split_candidates": [],
+ "note": "Candidates are PROPOSALS. Acting on one goes through the same acceptance discipline as any other curation \u2014 the trace ranks the work, it does not do the work."
+}

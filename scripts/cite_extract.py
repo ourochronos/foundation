@@ -80,6 +80,13 @@ for h in sorted(HTML.glob("*.html.gz")):
             # the cited work IS that page's title when it is in-corpus —
             # declaring it makes one eid carry every citation of the work
             "object_page": f"arxiv:{cited['arxiv_id']}" if cited else None,
+            # OUT-of-corpus works have no page, so `object_page` cannot
+            # canonicalise them and each citing paper minted its own eid —
+            # `arXiv:1803.05457` reached 10. An arXiv id is a globally
+            # unique identifier by construction, which is the strongest
+            # case for `object_global` there is. Surfaced by the trace
+            # layer as the top split candidates, not by anyone looking.
+            "object_global": cited is None,
             "statement": (f"{citing['title']} (arXiv:{citing['arxiv_id']}) "
                           f"cites {obj} (arXiv:{cid})."),
             "in_corpus": cited is not None})

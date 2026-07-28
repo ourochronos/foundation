@@ -53,6 +53,14 @@ class KB:
         self.reg = EntityRegistry()
         self.claims: list[dict] = []          # row-aligned with store idx
         self._canonical: dict[str, str] = {}  # form -> eid (D82)
+        # ADJACENCY INDEX. The claims log is the truth; this is a derived
+        # view of it, rebuilt on open and maintained on append. Without it
+        # every hop linearly scans every claim, so subgraph queries scale
+        # with CORPUS size instead of NEIGHBOURHOOD size — measured at 15 ms
+        # for a 3-hop over 20k claims, which is 750 ms at 1M and 7.5 s at
+        # 10M. Nothing about retrieval was slow; the graph layer was.
+        self._by_subj: dict[str, list] = defaultdict(list)
+        self._by_obj: dict[str, list] = defaultdict(list)
         self._enc = None
         if backend == "pg":
             from codec.store_pg import PgStore
@@ -69,6 +77,7 @@ class KB:
                     self.claims.append(dict(zip(
                         ("idx", "subject", "subj_eid", "pid", "object",
                          "obj_eid", "page", "sid"), r)))
+                    self._index(self.claims[-1])
             self._replay_registry()
         else:
             self.store = MemoryStore()
@@ -111,6 +120,11 @@ class KB:
                     self._canonical.setdefault(c["object"], c["obj_eid"])
             else:
                 e.neighbors.add("v:" + str(c["object"]).replace(",", ""))
+
+    def _index(self, c: dict) -> None:
+        self._by_subj[c["subj_eid"]].append(c)
+        if c.get("obj_eid"):
+            self._by_obj[c["obj_eid"]].append(c)
 
     def _declare(self, form: str, batch: str) -> None:
         """Register `form` as ONE canonical entity — adopting before minting.
@@ -291,6 +305,7 @@ class KB:
                  "pid": r["pid"], "object": r["object"], "obj_eid": oe,
                  "page": r["page"], "sid": r["sid"]}
             self.claims.append(c)
+            self._index(c)
             new.append(c)
         if self._conn is not None and new:
             with self._conn.cursor() as cur:
@@ -321,8 +336,7 @@ class KB:
         return not self.store.shadowed[c["idx"]]
 
     def _claims_for(self, eid: str, pid: str | None = None) -> list[dict]:
-        out = [c for c in self.claims
-               if c["subj_eid"] == eid and self._live(c)]
+        out = [c for c in self._by_subj.get(eid, ()) if self._live(c)]
         return [c for c in out if c["pid"] == pid] if pid else out
 
     def resolve_subject(self, form: str, pid: str | None = None):
@@ -432,6 +446,7 @@ class KB:
              "object": new_object, "obj_eid": oe, "page": source,
              "sid": f"edit:{idx}"}
         self.claims.append(c)
+        self._index(c)
         if self._conn is not None:
             with self._conn.cursor() as cur:
                 cur.execute(
@@ -481,8 +496,8 @@ class KB:
         if len(eids) != 1:
             return {"status": "ambiguous" if eids else "abstain",
                     "n": 0, "sources": []}
-        pages = sorted({c["page"] for c in self.claims
-                        if c.get("obj_eid") == eids[0] and self._live(c)
+        pages = sorted({c["page"] for c in self._by_obj.get(eids[0], ())
+                        if self._live(c)
                         and (pid is None or c["pid"] == pid)})
         return {"status": "answered" if pages else "abstain",
                 "eid": eids[0], "n": len(pages), "sources": pages}

@@ -2,6 +2,21 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D108: Stigmergic curation — traversal ranks its own repair queue; and the scaling wall was the graph layer, not retrieval
+User proposal: curation should be dynamic like writes, with ingestion and query both strengthening or differentiating paths — non-redundant because writes must stay partial for efficiency while query-time can weigh several subgraphs at once. Correct, and the evidence is that we had been doing it by hand all session: every curation gap found so far (`cited_by` ambiguous over 16 eids, the citation/resource axes at zero paths) was a query returning nothing and a human noticing.
+
+**Built** `foundation/traces.py`: answer surfaces deposit per-hop outcomes; a report ranks curation debt **by how often traversal actually hit it**. Demand-weighted by construction — an entity nobody traverses never appears, which is the point.
+
+**First run over 301 citing papers, 4,357 hops, and it works.** Top fetch/link candidates came back as *Training Verifiers to Solve Math Word Problems* (26 blocked queries), *DeepSeek-R1* (22), *Evaluating LLMs Trained on Code* (21), *Llama 3 Herd* (19), *Qwen2.5 TR* (18), *PPO* (15) — the field's foundational papers, rediscovered and ranked by how much traversal they block, with nobody curating the list. Top split candidates were bare arXiv ids.
+
+**Acted on the top split item and the loop closed.** `arXiv:1803.05457` held **10 eids**, `arXiv:2009.03300` held 8 — out-of-corpus cited works have no page, so `object_page` could not canonicalise them and every citing paper minted its own. An arXiv id is a globally unique identifier by construction, the strongest possible case for `object_global`. After declaring it: **1 eid each, and the entire ambiguous class — 812 blocked hops — went to zero**, converting into honest abstains that now name exactly which papers to extract next. Query → trace → ranked debt → fix → re-measure, with the fix still going through ordinary acceptance.
+
+**Four constraints the design respects, each from a measured result** (in the module docstring, where the next person will hit them): append-only, never rewriting stored representations (B1/B1b — global statistics in persistent paths is the thing that was refuted, and not re-projecting old work IS the reindex-free property); propose, never dispose (a false merge is unrecoverable, a false split is repairable — D49/D52); steering separate from evidence (if traffic fed `cited_by` counts, popular paths would manufacture their own corroboration); and **never in the answer path** — traces may reorder what is CONSIDERED, never what is ASSERTED, because the 0.000-wrong property dies the moment a well-trodden path answers because it is well-trodden.
+
+**Separately, the scaling concern was real and was NOT retrieval.** `_claims_for` linearly scanned every claim on every hop, so subgraph queries scaled with CORPUS size instead of NEIGHBOURHOOD size: a 3-hop measured **15.0 ms over 20k claims — 750 ms at 1M, 7.5 s at 10M**. An adjacency index (`_by_subj`/`_by_obj`, derived from the claims log, maintained on append) takes the same query to **0.10 ms, a 150× win**, and removes corpus size from the exponent entirely. Vector search was never the bottleneck; the graph layer was, and nothing had measured it.
+
+**Ops note**: the index broke `edit` until every append site was covered — two of three were, and the third failed silently in the sense that only one test caught it. A derived index must be written where the log is written, not where it is convenient.
+
 ## 2026-07-28 — D107: Multi-hop over REAL data works — **0.848 correct, 0.000 wrong, 0.152 abstain** — after finding the graph was two disconnected components
 Asked whether the system can synthesise, not just retrieve. Ran D61's own diagnostic first, then followed it.
 
