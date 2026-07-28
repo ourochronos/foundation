@@ -1,0 +1,282 @@
+{
+ "audit": "resv3_50",
+ "model": "gpt-5.6-sol",
+ "n": 50,
+ "n_judged": 50,
+ "raw_agreement": 0.94,
+ "cohens_kappa": 0.8062015503875967,
+ "disagreements": [
+  {
+   "idx": 19,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "DeepSeek is used as an agent/model in evaluation, not identified as a base model or prior method that WML builds on."
+  },
+  {
+   "idx": 44,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Coconut is discussed as prior work, but the provided text does not show it as an evaluated baseline."
+  },
+  {
+   "idx": 48,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "HNSW is discussed in related work, not shown as an empirical comparison baseline."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "DEFECT",
+   "reason": "Pillar-0 is a backbone model, not an evaluation dataset."
+  },
+  "1": {
+   "verdict": "DEFECT",
+   "reason": "Variational autoencoders are a generic model class, and the paper only cites prior use."
+  },
+  "2": {
+   "verdict": "DEFECT",
+   "reason": "The model is pretrained from scratch; no distinct Nanbeige4.2 base model is adopted."
+  },
+  "3": {
+   "verdict": "PRECISE",
+   "reason": "The experiments explicitly evaluate HexLogicAgent on ProntoQA."
+  },
+  "4": {
+   "verdict": "PRECISE",
+   "reason": "ADSD is tested on CNN/DailyMail for cross-domain transfer."
+  },
+  "5": {
+   "verdict": "PRECISE",
+   "reason": "ISS is explicitly evaluated on ASVspoof 2021 LA."
+  },
+  "6": {
+   "verdict": "PRECISE",
+   "reason": "The animacy circuit is discovered and evaluated on Qwen3-4B."
+  },
+  "7": {
+   "verdict": "DEFECT",
+   "reason": "Vector-quantized reconstruction is a generic technique, not a named artifact."
+  },
+  "8": {
+   "verdict": "DEFECT",
+   "reason": "Collaborative filtering is a generic method class, not a named shared artifact."
+  },
+  "9": {
+   "verdict": "PRECISE",
+   "reason": "The study analyzes the named CRediT contribution-statement resource."
+  },
+  "10": {
+   "verdict": "PRECISE",
+   "reason": "The multimodal model adopts BioMedBERT as its clinical-note encoder."
+  },
+  "11": {
+   "verdict": "PRECISE",
+   "reason": "The language experiments explicitly compare M2S against Neural CTMC."
+  },
+  "12": {
+   "verdict": "PRECISE",
+   "reason": "The abstract explicitly reports matched-budget comparisons against AdaLoRA."
+  },
+  "13": {
+   "verdict": "PRECISE",
+   "reason": "The animacy circuit is discovered and evaluated within Llama 3.2 and other base models."
+  },
+  "14": {
+   "verdict": "PRECISE",
+   "reason": "Epilepsy is explicitly one of the real-world datasets used to evaluate TimePNS."
+  },
+  "15": {
+   "verdict": "PRECISE",
+   "reason": "MoLA is explicitly listed and reported as a baseline for MoE\u00b2-LoRA."
+  },
+  "16": {
+   "verdict": "PRECISE",
+   "reason": "EVL-MCoT is explicitly evaluated on the MultiOFF dataset."
+  },
+  "17": {
+   "verdict": "PRECISE",
+   "reason": "CHB-MIT is explicitly among MSBraM's downstream evaluation datasets."
+  },
+  "18": {
+   "verdict": "PRECISE",
+   "reason": "The report explicitly evaluates GPT-4 on HumanEval and reports its score."
+  },
+  "19": {
+   "verdict": "DEFECT",
+   "reason": "DeepSeek is used as an agent/model in evaluation, not identified as a base model or prior method that WML builds on."
+  },
+  "20": {
+   "verdict": "PRECISE",
+   "reason": "FBA is instantiated by post-training the official Qwen3-VL base, supporting a builds-on relation."
+  },
+  "21": {
+   "verdict": "PRECISE",
+   "reason": "LoRA is explicitly used as a comparison baseline."
+  },
+  "22": {
+   "verdict": "PRECISE",
+   "reason": "Clotho supplies Tier-2 training data."
+  },
+  "23": {
+   "verdict": "PRECISE",
+   "reason": "Activation Addition is implemented and tested on GPT-2-XL."
+  },
+  "24": {
+   "verdict": "PRECISE",
+   "reason": "TOUR evaluates Decision Transformer policies as part of the benchmark."
+  },
+  "25": {
+   "verdict": "PRECISE",
+   "reason": "PrimeNet is explicitly included as a forecasting baseline."
+  },
+  "26": {
+   "verdict": "DEFECT",
+   "reason": "DeepLesion is reported as data used by reviewed studies, not an evaluation dataset of the survey itself."
+  },
+  "27": {
+   "verdict": "PRECISE",
+   "reason": "MBPP is explicitly used to evaluate code performance."
+  },
+  "28": {
+   "verdict": "DEFECT",
+   "reason": "EEG Conformer is a model trunk, not a dataset or benchmark; the relation is wrong."
+  },
+  "29": {
+   "verdict": "PRECISE",
+   "reason": "ProofWriter is explicitly listed as an evaluation benchmark."
+  },
+  "30": {
+   "verdict": "DEFECT",
+   "reason": "PI-DON is an architecture to which the method is applied, not an evaluation dataset or benchmark."
+  },
+  "31": {
+   "verdict": "PRECISE",
+   "reason": "Kriging is explicitly listed as a RadioTrace baseline."
+  },
+  "32": {
+   "verdict": "PRECISE",
+   "reason": "The framework adopts PageRank to compute its structural-authority dimension."
+  },
+  "33": {
+   "verdict": "PRECISE",
+   "reason": "The randomized eviction approach is experimentally assessed against SnapKV-style eviction."
+  },
+  "34": {
+   "verdict": "PRECISE",
+   "reason": "MemTools uses ALFWorld as a benchmark in its evaluation workflow."
+  },
+  "35": {
+   "verdict": "PRECISE",
+   "reason": "Zep is explicitly evaluated on the Deep Memory Retrieval benchmark."
+  },
+  "36": {
+   "verdict": "PRECISE",
+   "reason": "SARIMA is explicitly one of the external baselines."
+  },
+  "37": {
+   "verdict": "PRECISE",
+   "reason": "The abstract explicitly reports WML results on Compiler-Supported50."
+  },
+  "38": {
+   "verdict": "PRECISE",
+   "reason": "Euclid-MCP is implemented with SWI-Prolog as its reasoning backend."
+  },
+  "39": {
+   "verdict": "PRECISE",
+   "reason": "Mistral 7B is explicitly evaluated on WinoGrande."
+  },
+  "40": {
+   "verdict": "PRECISE",
+   "reason": "The trained faithfulness method is evaluated for out-of-distribution transfer on StrategyQA."
+  },
+  "41": {
+   "verdict": "PRECISE",
+   "reason": "AdaODD is an explicit adaptive OOD detector baseline examined by the paper."
+  },
+  "42": {
+   "verdict": "PRECISE",
+   "reason": "BCPF is explicitly evaluated as an ST-VTD benchmark."
+  },
+  "43": {
+   "verdict": "PRECISE",
+   "reason": "MELD supplies Tier-3 training data."
+  },
+  "44": {
+   "verdict": "DEFECT",
+   "reason": "Coconut is discussed as prior work, but the provided text does not show it as an evaluated baseline."
+  },
+  "45": {
+   "verdict": "PRECISE",
+   "reason": "LAMAR is benchmarked against the ctxl-rerank-v2 family."
+  },
+  "46": {
+   "verdict": "PRECISE",
+   "reason": "BrowseComp scores GPT-4o as a benchmarked model."
+  },
+  "47": {
+   "verdict": "PRECISE",
+   "reason": "MoE\u00b2-LoRA is explicitly evaluated on WinoGrande for general retention."
+  },
+  "48": {
+   "verdict": "DEFECT",
+   "reason": "HNSW is discussed in related work, not shown as an empirical comparison baseline."
+  },
+  "49": {
+   "verdict": "PRECISE",
+   "reason": "GKR-HND explicitly applies and extends the GKR protocol."
+  }
+ },
+ "my_labels": {
+  "0": "DEFECT",
+  "1": "DEFECT",
+  "2": "DEFECT",
+  "3": "PRECISE",
+  "4": "PRECISE",
+  "5": "PRECISE",
+  "6": "PRECISE",
+  "7": "DEFECT",
+  "8": "DEFECT",
+  "9": "PRECISE",
+  "10": "PRECISE",
+  "11": "PRECISE",
+  "12": "PRECISE",
+  "13": "PRECISE",
+  "14": "PRECISE",
+  "15": "PRECISE",
+  "16": "PRECISE",
+  "17": "PRECISE",
+  "18": "PRECISE",
+  "19": "PRECISE",
+  "20": "PRECISE",
+  "21": "PRECISE",
+  "22": "PRECISE",
+  "23": "PRECISE",
+  "24": "PRECISE",
+  "25": "PRECISE",
+  "26": "DEFECT",
+  "27": "PRECISE",
+  "28": "DEFECT",
+  "29": "PRECISE",
+  "30": "DEFECT",
+  "31": "PRECISE",
+  "32": "PRECISE",
+  "33": "PRECISE",
+  "34": "PRECISE",
+  "35": "PRECISE",
+  "36": "PRECISE",
+  "37": "PRECISE",
+  "38": "PRECISE",
+  "39": "PRECISE",
+  "40": "PRECISE",
+  "41": "PRECISE",
+  "42": "PRECISE",
+  "43": "PRECISE",
+  "44": "PRECISE",
+  "45": "PRECISE",
+  "46": "PRECISE",
+  "47": "PRECISE",
+  "48": "PRECISE",
+  "49": "PRECISE"
+ }
+}

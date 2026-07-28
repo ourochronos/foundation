@@ -1,0 +1,402 @@
+[
+ {
+  "page": "arxiv:2607.20993v1",
+  "subject": "Concept Channel Probe",
+  "pid": "P_EVALUATES_ON",
+  "object": "Pillar-0",
+  "statement": "Concept Channel Probe is evaluated on Pillar-0.",
+  "src_sid": "out_3.jsonl:30"
+ },
+ {
+  "page": "arxiv:2607.22467v1",
+  "subject": "learning projected gradient descent solver iterates",
+  "pid": "P_BUILDS_ON",
+  "object": "variational autoencoders",
+  "statement": "learning projected gradient descent solver iterates builds on variational autoencoders.",
+  "src_sid": "out_17.jsonl:36"
+ },
+ {
+  "page": "arxiv:2607.22083v1",
+  "subject": "Nanbeige4.2-3B",
+  "pid": "P_BUILDS_ON",
+  "object": "Nanbeige4.2",
+  "statement": "Nanbeige4.2-3B builds on Nanbeige4.2.",
+  "src_sid": "out_14.jsonl:63"
+ },
+ {
+  "page": "arxiv:2607.21933v1",
+  "subject": "HexLogicAgent",
+  "pid": "P_EVALUATES_ON",
+  "object": "ProntoQA",
+  "statement": "HexLogicAgent is evaluated on ProntoQA.",
+  "src_sid": "out_12.jsonl:39"
+ },
+ {
+  "page": "arxiv:2607.21804v1",
+  "subject": "ADSD",
+  "pid": "P_EVALUATES_ON",
+  "object": "CNN/DailyMail",
+  "statement": "ADSD is evaluated on CNN/DailyMail.",
+  "src_sid": "out_g8.jsonl:9"
+ },
+ {
+  "page": "arxiv:2607.21820v1",
+  "subject": "ISS",
+  "pid": "P_EVALUATES_ON",
+  "object": "ASVspoof 2021 LA",
+  "statement": "ISS is evaluated on ASVspoof 2021 LA.",
+  "src_sid": "out_g8.jsonl:21"
+ },
+ {
+  "page": "arxiv:2607.20995v1",
+  "subject": "Animacy circuit",
+  "pid": "P_BUILDS_ON",
+  "object": "Qwen3",
+  "statement": "Animacy circuit builds on Qwen3.",
+  "src_sid": "out_3.jsonl:34"
+ },
+ {
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "pid": "P_BUILDS_ON",
+  "object": "vector-quantized reconstruction",
+  "statement": "MSBraM builds on vector-quantized reconstruction.",
+  "src_sid": "out_6.jsonl:84"
+ },
+ {
+  "page": "arxiv:2607.21802v1",
+  "subject": "StARS",
+  "pid": "P_BUILDS_ON",
+  "object": "collaborative filtering",
+  "statement": "StARS builds on collaborative filtering.",
+  "src_sid": "out_g8.jsonl:3"
+ },
+ {
+  "page": "arxiv:2607.20923v1",
+  "subject": "LLM-era scientific collaboration",
+  "pid": "P_EVALUATES_ON",
+  "object": "CRediT",
+  "statement": "LLM-era scientific collaboration is evaluated on CRediT.",
+  "src_sid": "out_g1.jsonl:39"
+ },
+ {
+  "page": "arxiv:2607.22264v1",
+  "subject": "multimodal EHR model",
+  "pid": "P_BUILDS_ON",
+  "object": "BioMedBERT",
+  "statement": "multimodal EHR model builds on BioMedBERT.",
+  "src_sid": "out_15.jsonl:54"
+ },
+ {
+  "page": "arxiv:2607.21372v1",
+  "subject": "M2S",
+  "pid": "P_COMPARES_TO",
+  "object": "Neural CTMC",
+  "statement": "M2S is compared against Neural CTMC.",
+  "src_sid": "out_6.jsonl:56"
+ },
+ {
+  "page": "arxiv:2607.22251v1",
+  "subject": "IFCLoRA",
+  "pid": "P_COMPARES_TO",
+  "object": "AdaLoRA",
+  "statement": "IFCLoRA is compared against AdaLoRA.",
+  "src_sid": "out_15.jsonl:43"
+ },
+ {
+  "page": "arxiv:2607.20995v1",
+  "subject": "Animacy circuit",
+  "pid": "P_BUILDS_ON",
+  "object": "Llama 3.2",
+  "statement": "Animacy circuit builds on Llama 3.2.",
+  "src_sid": "out_3.jsonl:32"
+ },
+ {
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "pid": "P_EVALUATES_ON",
+  "object": "Epilepsy",
+  "statement": "TimePNS is evaluated on Epilepsy.",
+  "src_sid": "out_g6.jsonl:24"
+ },
+ {
+  "page": "arxiv:2607.21978v1",
+  "subject": "MoE\u00b2-LoRA",
+  "pid": "P_COMPARES_TO",
+  "object": "MoLA",
+  "statement": "MoE\u00b2-LoRA is compared against MoLA.",
+  "src_sid": "out_g11.jsonl:32"
+ },
+ {
+  "page": "arxiv:2607.22016v1",
+  "subject": "EVL-MCoT",
+  "pid": "P_EVALUATES_ON",
+  "object": "MultiOFF",
+  "statement": "EVL-MCoT is evaluated on MultiOFF.",
+  "src_sid": "out_g12.jsonl:12"
+ },
+ {
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "pid": "P_EVALUATES_ON",
+  "object": "CHB-MIT",
+  "statement": "MSBraM is evaluated on CHB-MIT.",
+  "src_sid": "out_6.jsonl:83"
+ },
+ {
+  "page": "arxiv:2303.08774v6",
+  "subject": "GPT-4",
+  "pid": "P_EVALUATES_ON",
+  "object": "HumanEval",
+  "statement": "GPT-4 is evaluated on HumanEval.",
+  "src_sid": "out_0.jsonl:9"
+ },
+ {
+  "page": "arxiv:2607.20999v1",
+  "subject": "WML",
+  "pid": "P_BUILDS_ON",
+  "object": "DeepSeek",
+  "statement": "WML builds on DeepSeek.",
+  "src_sid": "out_g2.jsonl:0"
+ },
+ {
+  "page": "arxiv:2607.22205v1",
+  "subject": "FBA",
+  "pid": "P_BUILDS_ON",
+  "object": "Qwen3-VL",
+  "statement": "FBA builds on Qwen3-VL.",
+  "src_sid": "out_15.jsonl:13"
+ },
+ {
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation",
+  "pid": "P_COMPARES_TO",
+  "object": "LoRA",
+  "statement": "selective adaptation is compared against LoRA.",
+  "src_sid": "out_g1.jsonl:10"
+ },
+ {
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "pid": "P_EVALUATES_ON",
+  "object": "Clotho",
+  "statement": "X\u00b3-OPD is evaluated on Clotho.",
+  "src_sid": "out_g6.jsonl:8"
+ },
+ {
+  "page": "arxiv:2308.10248v5",
+  "subject": "Activation Addition",
+  "pid": "P_BUILDS_ON",
+  "object": "GPT-2-XL",
+  "statement": "Activation Addition builds on GPT-2-XL.",
+  "src_sid": "out_0.jsonl:20"
+ },
+ {
+  "page": "arxiv:2607.21111v1",
+  "subject": "TOUR",
+  "pid": "P_COMPARES_TO",
+  "object": "Decision Transformer",
+  "statement": "TOUR is compared against Decision Transformer.",
+  "src_sid": "out_4.jsonl:32"
+ },
+ {
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "pid": "P_COMPARES_TO",
+  "object": "PrimeNet",
+  "statement": "MissHyper is compared against PrimeNet.",
+  "src_sid": "out_12.jsonl:25"
+ },
+ {
+  "page": "arxiv:2607.21904v1",
+  "subject": "diffusion-based inpainting survey",
+  "pid": "P_EVALUATES_ON",
+  "object": "DeepLesion",
+  "statement": "diffusion-based inpainting survey is evaluated on DeepLesion.",
+  "src_sid": "out_12.jsonl:20"
+ },
+ {
+  "page": "arxiv:2607.21978v1",
+  "subject": "MoE\u00b2-LoRA",
+  "pid": "P_EVALUATES_ON",
+  "object": "MBPP",
+  "statement": "MoE\u00b2-LoRA is evaluated on MBPP.",
+  "src_sid": "out_g11.jsonl:23"
+ },
+ {
+  "page": "arxiv:2607.22397v1",
+  "subject": "Nimbus Personalizer",
+  "pid": "P_EVALUATES_ON",
+  "object": "EEG Conformer",
+  "statement": "Nimbus Personalizer is evaluated on EEG Conformer.",
+  "src_sid": "out_17.jsonl:20"
+ },
+ {
+  "page": "arxiv:2607.21933v1",
+  "subject": "HexLogicAgent",
+  "pid": "P_EVALUATES_ON",
+  "object": "ProofWriter",
+  "statement": "HexLogicAgent is evaluated on ProofWriter.",
+  "src_sid": "out_12.jsonl:40"
+ },
+ {
+  "page": "arxiv:2607.22215v1",
+  "subject": "Latent PDE mapping",
+  "pid": "P_EVALUATES_ON",
+  "object": "PI-DON",
+  "statement": "Latent PDE mapping is evaluated on PI-DON.",
+  "src_sid": "out_15.jsonl:23"
+ },
+ {
+  "page": "arxiv:2607.20909v1",
+  "subject": "RadioTrace",
+  "pid": "P_COMPARES_TO",
+  "object": "Kriging",
+  "statement": "RadioTrace is compared against Kriging.",
+  "src_sid": "out_g1.jsonl:3"
+ },
+ {
+  "page": "arxiv:2607.20925v1",
+  "subject": "dual-signal entity-importance framework",
+  "pid": "P_BUILDS_ON",
+  "object": "PageRank",
+  "statement": "dual-signal entity-importance framework builds on PageRank.",
+  "src_sid": "out_g1.jsonl:40"
+ },
+ {
+  "page": "arxiv:2607.21475v1",
+  "subject": "randomized cache eviction",
+  "pid": "P_COMPARES_TO",
+  "object": "SnapKV",
+  "statement": "randomized cache eviction is compared against SnapKV.",
+  "src_sid": "out_7.jsonl:41"
+ },
+ {
+  "page": "arxiv:2607.21404v1",
+  "subject": "MemTools",
+  "pid": "P_EVALUATES_ON",
+  "object": "ALFWorld",
+  "statement": "MemTools is evaluated on ALFWorld.",
+  "src_sid": "out_7.jsonl:0"
+ },
+ {
+  "page": "arxiv:2501.13956v1",
+  "subject": "Zep",
+  "pid": "P_EVALUATES_ON",
+  "object": "Deep Memory Retrieval",
+  "statement": "Zep is evaluated on Deep Memory Retrieval.",
+  "src_sid": "out_0.jsonl:66"
+ },
+ {
+  "page": "arxiv:2607.21785v1",
+  "subject": "Hybrid probabilistic forecasting system",
+  "pid": "P_COMPARES_TO",
+  "object": "SARIMA",
+  "statement": "Hybrid probabilistic forecasting system is compared against SARIMA.",
+  "src_sid": "out_10.jsonl:18"
+ },
+ {
+  "page": "arxiv:2607.20999v1",
+  "subject": "WML",
+  "pid": "P_EVALUATES_ON",
+  "object": "Compiler-Supported50",
+  "statement": "WML is evaluated on Compiler-Supported50.",
+  "src_sid": "out_g2.jsonl:4"
+ },
+ {
+  "page": "arxiv:2607.21412v1",
+  "subject": "Euclid-MCP",
+  "pid": "P_BUILDS_ON",
+  "object": "SWI-Prolog",
+  "statement": "Euclid-MCP builds on SWI-Prolog.",
+  "src_sid": "out_7.jsonl:4"
+ },
+ {
+  "page": "arxiv:2310.06825v1",
+  "subject": "Mistral 7B",
+  "pid": "P_EVALUATES_ON",
+  "object": "WinoGrande",
+  "statement": "Mistral 7B is evaluated on WinoGrande.",
+  "src_sid": "out_0.jsonl:35"
+ },
+ {
+  "page": "arxiv:2607.21090v1",
+  "subject": "faithfulness training",
+  "pid": "P_EVALUATES_ON",
+  "object": "StrategyQA",
+  "statement": "faithfulness training is evaluated on StrategyQA.",
+  "src_sid": "out_4.jsonl:25"
+ },
+ {
+  "page": "arxiv:2607.21673v1",
+  "subject": "adaptive OOD detection",
+  "pid": "P_COMPARES_TO",
+  "object": "AdaODD",
+  "statement": "adaptive OOD detection is compared against AdaODD.",
+  "src_sid": "out_g6.jsonl:41"
+ },
+ {
+  "page": "arxiv:2607.22262v1",
+  "subject": "ST-VTD",
+  "pid": "P_COMPARES_TO",
+  "object": "Bayesian CP factorization",
+  "statement": "ST-VTD is compared against Bayesian CP factorization.",
+  "src_sid": "out_15.jsonl:52"
+ },
+ {
+  "page": "arxiv:2607.21550v1",
+  "subject": "X\u00b3-OPD",
+  "pid": "P_EVALUATES_ON",
+  "object": "MELD",
+  "statement": "X\u00b3-OPD is evaluated on MELD.",
+  "src_sid": "out_g6.jsonl:10"
+ },
+ {
+  "page": "arxiv:2607.21981v1",
+  "subject": "J-CoT",
+  "pid": "P_COMPARES_TO",
+  "object": "Coconut",
+  "statement": "J-CoT is compared against Coconut.",
+  "src_sid": "out_g11.jsonl:35"
+ },
+ {
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "pid": "P_COMPARES_TO",
+  "object": "ctxl-rerank-v2",
+  "statement": "LAMAR is compared against ctxl-rerank-v2.",
+  "src_sid": "out_14.jsonl:42"
+ },
+ {
+  "page": "arxiv:2504.12516v1",
+  "subject": "BrowseComp",
+  "pid": "P_COMPARES_TO",
+  "object": "GPT-4o",
+  "statement": "BrowseComp is compared against GPT-4o.",
+  "src_sid": "out_1.jsonl:12"
+ },
+ {
+  "page": "arxiv:2607.21978v1",
+  "subject": "MoE\u00b2-LoRA",
+  "pid": "P_EVALUATES_ON",
+  "object": "WinoGrande",
+  "statement": "MoE\u00b2-LoRA is evaluated on WinoGrande.",
+  "src_sid": "out_g11.jsonl:26"
+ },
+ {
+  "page": "arxiv:2607.20957v1",
+  "subject": "ANNS indexing",
+  "pid": "P_COMPARES_TO",
+  "object": "HNSW",
+  "statement": "ANNS indexing is compared against HNSW.",
+  "src_sid": "out_3.jsonl:5"
+ },
+ {
+  "page": "arxiv:2607.21162v1",
+  "subject": "GKR-HND",
+  "pid": "P_BUILDS_ON",
+  "object": "GKR",
+  "statement": "GKR-HND builds on GKR.",
+  "src_sid": "out_5.jsonl:8"
+ }
+]

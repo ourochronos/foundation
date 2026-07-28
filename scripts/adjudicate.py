@@ -155,15 +155,16 @@ if sys.argv[1] == "arxiv50":
 elif sys.argv[1] == "arxivai50":
     _abstract_audit("arxivai50", "arxiv_ai")
 
-elif sys.argv[1] == "resv2_50":
+elif sys.argv[1] in ("resv2_50", "resv3_50"):
+    _V = "v2" if sys.argv[1] == "resv2_50" else "v3"
     items = json.loads(
-        (ROOT / "data/arxiv_ai/res_v2_audit_sample_50.json").read_text())
+        (ROOT / f"data/arxiv_ai/res_{_V}_audit_sample_50.json").read_text())
     win = {}
     for f in sorted((ROOT / "data/arxiv_ai/shards_res").glob("in_*.json")):
         for p in json.loads(f.read_text()):
             win["arxiv:" + p["arxiv_id"]] = p
     labels = json.loads(
-        (ROOT / "data/arxiv_ai/res_v2_audit_labels_50.json").read_text())
+        (ROOT / f"data/arxiv_ai/res_{_V}_audit_labels_50.json").read_text())
     mine = {i: ("DEFECT" if i in labels["defect_idx"] else "PRECISE")
             for i in range(50)}
     blocks = []
@@ -190,6 +191,13 @@ elif sys.argv[1] == "resv2_50":
         "(transformer, LSTM, VAE, GAN, SFT, neural network) rather than a "
         "named artifact; or the SUBJECT is a title fragment or stopword. "
         "Otherwise PRECISE.\n"
+        "THREE MORE DECLARED CONVENTIONS (D102 — apply, do not re-litigate). "
+        "(a) P_EVALUATES_ON covers a corpus the paper TRAINS or fine-tunes "
+        "on, not only a held-out test set — training data is not a defect. "
+        "(b) When the paper IS a benchmark, models it scores are "
+        "P_COMPARES_TO. (c) A subject may be a short DESCRIPTIVE noun "
+        "phrase when the paper names no method — a descriptive subject is "
+        "not by itself a defect, only a title fragment or stopword is.\n"
         "RESOURCE-NAME GRANULARITY (declared corpus policy, D100 — apply "
         "it, do not re-litigate it): resources are recorded at FAMILY "
         "level. Qwen3 for Qwen3-30B-A3B, AIME for AIME 2024, Claude for "
@@ -203,7 +211,7 @@ elif sys.argv[1] == "resv2_50":
         "Do not use any tools. Output ONLY a JSON array, one object per "
         'ITEM, format {"idx": <n>, "verdict": "PRECISE"|"DEFECT", '
         '"reason": "<short>"} — nothing else. Use each item\'s OWN idx.\n\n')
-    run("resv2_50", items, header + "\n\n".join(blocks),
+    run(sys.argv[1], items, header + "\n\n".join(blocks),
         {"PRECISE", "DEFECT"}, mine, blocks=blocks, header=header)
 
 elif sys.argv[1] == "res50":

@@ -2,6 +2,42 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D102: Acceptance run — **0.84 mine (PASS) / 0.76 Sol**, agreement 0.88 · declaring one policy closed two-thirds of the gap, and the remaining gap is THREE MORE conventions the auditor was never told
+Fresh 50 (seed 41) over the 941-claim v2, graded untruncated under the **declared** granularity policy stated at the top of the grading file.
+
+| | v1 | v2 | **v3** |
+|---|---|---|---|
+| mine | 0.68 | 0.80 | **0.84 [0.72–0.92] — PASSES** |
+| Sol | 0.66 | 0.58 | **0.76 [0.63–0.86]** |
+| agreement / κ | — | 0.740 / 0.425 | **0.880 / 0.629** |
+| disagreements | — | 13 | **6** |
+
+**The granularity fix worked exactly as designed: ZERO granularity disputes**, against seven in D100. Declaring the policy in the instrument moved agreement 0.740 → 0.880 and cut the rater gap from 22 points to 8.
+
+**And the residual 8 points is the same failure again, three more times.** Of the six remaining disagreements, **three are conventions this corpus declares to its EXTRACTOR and never told its AUDITOR**, all verifiable by grep:
+- idx 22 — Sol calls Clotho-as-training-data a defect; the typing prompt line 15 defines `P_EVALUATES_ON` as "a test set, **or a corpus it trains/fine-tunes on**".
+- idx 24 — Sol says a benchmark's scored model is not `P_COMPARES_TO`; the typing prompt line 58 says exactly that it is.
+- idx 41, 48 — Sol rejects descriptive subjects; the extraction prompt line 81 permits "a short **descriptive noun phrase** if it has none".
+
+Only idx 9 (is CRediT, a contribution-role taxonomy, a dataset?) is a genuine judgement call, and idx 28 was Sol correctly rescuing one of mine. **I fixed one policy transfer at D100 and left three siblings behind** — the general defect is that a corpus's conventions live in its prompts and its acceptance instrument inherits none of them by default. All three are now in `adjudicate.py`.
+
+**My eight defects, and what they say about mechanical filters:** three are **model-as-target that the vendor-list regex cannot catch** (`Pillar-0` a 3D chest VLM, `EEG Conformer`, `PI-DON`) — a hardcoded list of GPT/Llama/Qwen has no way to know a domain-specific model name, so that check has a ceiling and needs a different signal. Three are **generic terms the blocklist missed on spelling** (`variational autoencoders` when the list holds `vae`; `collaborative filtering`; `vector-quantized reconstruction`) — exact-string blocklists lose to paraphrase, the same shape as D99's prompt-vs-source finding. Plus one **new family**: a SURVEY typed as evaluating on DeepLesion, when the dataset belongs to a work the survey *reviews* — reviewed-work resources attributed to the reviewer. And one parent fabricated from a model's own name (`Nanbeige4.2` from `Nanbeige4.2-3B`, a paper that says pretrained from scratch).
+
+**Re-adjudicated under the completed instrument — same frozen sample, same labels, one call:**
+
+| | pre-D102 instrument | **post** |
+|---|---|---|
+| Sol precision | 0.76 | **0.78 [0.65–0.87]** |
+| agreement | 0.880 | **0.940** |
+| Cohen's κ | 0.629 | **0.806** |
+| disagreements | 6 | **3** |
+
+**κ 0.806 is substantial agreement, from 0.425 two runs ago.** The instrument, not the corpus, was most of what moved: the same claims, graded twice, differ by 16 points of agreement depending only on whether the auditor was told the corpus's conventions.
+
+**The three survivors are one honest evidential difference, and Sol is probably right.** idx 19 (DeepSeek), 44 (Coconut), 48 (HNSW) are all "is a system named in related work actually a compared-against baseline?" Sol requires the comparison be *visible in the provided window*; I inferred it from a truncated baselines section. That is the anti-truncation principle I have been enforcing all along, now cutting against me — so **my 0.84 is probably 2–4 points generous**, and the lower end of the band is the safer read.
+
+**Status: AT THE GATE, band 0.78–0.84, both CIs containing 0.80, κ 0.806.** That is a qualitatively different position from D100's 0.80/0.58 split, where the raters were not measuring the same thing. I am not calling it accepted on the flattering rater; I am recording that two raters who now substantially agree bracket the gate, and that the remaining spread is a stated evidential standard rather than a defect rate. **Owed for a clean acceptance: widen the audit evidence windows so "compared against" claims can be confirmed rather than inferred** — the cheapest remaining move, and it targets exactly the three survivors.
+
 ## 2026-07-28 — D101: A canonical NAME is not a canonical ENTITY — shared resources need `object_global`, and D83's accepted slice had the same unmeasured defect
 Two findings from finishing the D100 residue, both about the same blind spot: **precision and entity structure are independent, and passing an audit says nothing about the second.**
 

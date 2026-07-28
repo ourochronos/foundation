@@ -1,0 +1,83 @@
+{
+ "protocol": "ACCEPTANCE audit over the 941-claim v2 (post generic-blocklist, post object_global). 50 claims, seed 41 \u2014 a FRESH draw, since the corpus changed. Graded untruncated against body+abstract+title via the repaired locator, under the DECLARED family-level granularity policy (D100), which is stated at the top of the grading file so it is applied rather than re-litigated. Labels frozen before any number was computed.",
+ "defect_idx": [
+  0,
+  1,
+  2,
+  7,
+  8,
+  26,
+  28,
+  30
+ ],
+ "defect_families": {
+  "model_as_target_missed_by_vendor_list": [
+   0,
+   28,
+   30
+  ],
+  "generic_term_missed_by_blocklist_spelling": [
+   1,
+   7,
+   8
+  ],
+  "survey_attributing_reviewed_works_resources": [
+   26
+  ],
+  "parent_fabricated_from_own_name": [
+   2
+  ]
+ },
+ "defect_notes": {
+  "0": "Pillar-0 is a 3D chest VLM the probe RUNS ON \u2014 P_BUILDS_ON, not evaluated-on. The vendor-list regex has no entry for a domain model like this",
+  "1": "'variational autoencoders' is (a) related work, not what the paper builds on, and (b) generic \u2014 the blocklist has 'vae' and 'autoencoder' but not the spelled-out plural",
+  "2": "'Nanbeige4.2' as a parent is fabricated from the model's own name; the paper says pretrained FROM SCRATCH",
+  "7": "'vector-quantized reconstruction' describes MSBraM's own mechanism, not a shared named artifact",
+  "8": "'collaborative filtering' is a technique class; missing from the blocklist",
+  "26": "a SURVEY typed as evaluating on DeepLesion \u2014 the dataset belongs to a work the survey reviews, not to the survey",
+  "28": "EEG Conformer is a frozen trunk Nimbus personalises \u2014 P_BUILDS_ON; another model the vendor list cannot know",
+  "30": "PI-DON is a physics-informed DeepONet architecture, not a dataset"
+ },
+ "precise": 42,
+ "n": 50,
+ "precision": 0.84,
+ "ci95": [
+  0.7148551903823401,
+  0.9166267863791231
+ ],
+ "gate": 0.8,
+ "passes_gate": true,
+ "adjudication": {
+  "model": "gpt-5.6-sol",
+  "pre_instrument_completion": {
+   "precision": 0.76,
+   "agreement": 0.88,
+   "kappa": 0.629,
+   "disagreements": 6
+  },
+  "post_instrument_completion": {
+   "precision": 0.78,
+   "ci95": [
+    0.648,
+    0.872
+   ],
+   "agreement": 0.94,
+   "kappa": 0.806,
+   "disagreements": 3
+  },
+  "conventions_carried_across_at_D102": [
+   "P_EVALUATES_ON covers trains/fine-tunes-on corpora",
+   "a benchmark paper types models it scores as P_COMPARES_TO",
+   "a descriptive noun-phrase subject is permitted when the paper names no method"
+  ],
+  "survivors": {
+   "idx": [
+    19,
+    44,
+    48
+   ],
+   "nature": "evidential standard \u2014 Sol requires the comparison be visible in the provided window; I inferred it from a truncated baselines section. Sol is probably right, so 0.84 is likely 2-4 points generous."
+  }
+ },
+ "verdict": "AT THE GATE \u2014 band 0.78-0.84, both CIs contain 0.80, kappa 0.806 (substantial). Not declared accepted on one rater. Owed: wider audit evidence windows so compared-against claims are confirmed not inferred."
+}

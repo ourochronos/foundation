@@ -1,0 +1,300 @@
+{
+ "audit": "resv3_50",
+ "model": "gpt-5.6-sol",
+ "n": 50,
+ "n_judged": 50,
+ "raw_agreement": 0.88,
+ "cohens_kappa": 0.6287128712871288,
+ "disagreements": [
+  {
+   "idx": 9,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "CRediT is a contribution-role taxonomy used to analyze statements, not an evaluation dataset or benchmark."
+  },
+  {
+   "idx": 22,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Clotho is used as Tier-2 training data, not an evaluation benchmark."
+  },
+  {
+   "idx": 24,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "TOUR evaluates Decision Transformer policies; Decision Transformer is not a baseline compared against TOUR."
+  },
+  {
+   "idx": 28,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "Nimbus Personalizer is run and evaluated on EEG Conformer as one of its frozen trunks."
+  },
+  {
+   "idx": 41,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The paper compares its named methods with AdaODD; 'adaptive OOD detection' is the generic problem class, not the paper's system."
+  },
+  {
+   "idx": 48,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The subject is generic, and HNSW is discussed as related work rather than an evaluated baseline."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "DEFECT",
+   "reason": "Pillar-0 is a frozen backbone model, not an evaluation dataset; the relation is wrong."
+  },
+  "1": {
+   "verdict": "DEFECT",
+   "reason": "The subject is a title fragment, and variational autoencoders are a generic model class only cited as prior work."
+  },
+  "2": {
+   "verdict": "DEFECT",
+   "reason": "Nanbeige4.2-3B is pretrained from scratch; the text does not say it builds on Nanbeige4.2."
+  },
+  "3": {
+   "verdict": "PRECISE",
+   "reason": "The experiments explicitly evaluate HexLogicAgent on ProntoQA."
+  },
+  "4": {
+   "verdict": "PRECISE",
+   "reason": "ADSD is explicitly tested for cross-domain transfer on CNN/DailyMail."
+  },
+  "5": {
+   "verdict": "PRECISE",
+   "reason": "ISS is explicitly evaluated on ASVspoof 2021 LA."
+  },
+  "6": {
+   "verdict": "PRECISE",
+   "reason": "The animacy circuit is discovered and evaluated within Qwen3, a named base model family."
+  },
+  "7": {
+   "verdict": "DEFECT",
+   "reason": "Vector-quantized reconstruction is a generic technique, not a named shared artifact."
+  },
+  "8": {
+   "verdict": "DEFECT",
+   "reason": "Collaborative filtering is a generic method class rather than a named artifact."
+  },
+  "9": {
+   "verdict": "DEFECT",
+   "reason": "CRediT is a contribution-role taxonomy used to analyze statements, not an evaluation dataset or benchmark."
+  },
+  "10": {
+   "verdict": "PRECISE",
+   "reason": "The multimodal EHR model explicitly adopts BioMedBERT as its clinical-notes encoder."
+  },
+  "11": {
+   "verdict": "PRECISE",
+   "reason": "The language-generation experiments explicitly compare M2S against Neural CTMC."
+  },
+  "12": {
+   "verdict": "PRECISE",
+   "reason": "AdaLoRA is explicitly evaluated as a matched baseline."
+  },
+  "13": {
+   "verdict": "PRECISE",
+   "reason": "The animacy circuit is discovered and evaluated on Llama 3.2."
+  },
+  "14": {
+   "verdict": "PRECISE",
+   "reason": "Epilepsy is explicitly one of TimePNS's evaluation datasets."
+  },
+  "15": {
+   "verdict": "PRECISE",
+   "reason": "MoLA is explicitly listed and measured as a baseline."
+  },
+  "16": {
+   "verdict": "PRECISE",
+   "reason": "EVL-MCoT is explicitly evaluated on MultiOFF."
+  },
+  "17": {
+   "verdict": "PRECISE",
+   "reason": "CHB-MIT is explicitly used for MSBraM's seizure-detection evaluation."
+  },
+  "18": {
+   "verdict": "PRECISE",
+   "reason": "The report explicitly presents GPT-4 results on HumanEval."
+  },
+  "19": {
+   "verdict": "PRECISE",
+   "reason": "WML is instantiated and evaluated with DeepSeek as its underlying model."
+  },
+  "20": {
+   "verdict": "PRECISE",
+   "reason": "FBA is explicitly trained and evaluated using Qwen3-VL as a backbone."
+  },
+  "21": {
+   "verdict": "PRECISE",
+   "reason": "The proposed selective adaptation method is directly compared with LoRA."
+  },
+  "22": {
+   "verdict": "DEFECT",
+   "reason": "Clotho is used as Tier-2 training data, not an evaluation benchmark."
+  },
+  "23": {
+   "verdict": "PRECISE",
+   "reason": "ActAdd is implemented and experimentally tested on GPT-2-XL."
+  },
+  "24": {
+   "verdict": "DEFECT",
+   "reason": "TOUR evaluates Decision Transformer policies; Decision Transformer is not a baseline compared against TOUR."
+  },
+  "25": {
+   "verdict": "PRECISE",
+   "reason": "PrimeNet is explicitly included as a forecasting baseline."
+  },
+  "26": {
+   "verdict": "DEFECT",
+   "reason": "The survey reports reviewed studies using DeepLesion; the survey itself is not evaluated on it."
+  },
+  "27": {
+   "verdict": "PRECISE",
+   "reason": "MBPP is explicitly used to evaluate code performance."
+  },
+  "28": {
+   "verdict": "PRECISE",
+   "reason": "Nimbus Personalizer is run and evaluated on EEG Conformer as one of its frozen trunks."
+  },
+  "29": {
+   "verdict": "PRECISE",
+   "reason": "ProofWriter is explicitly one of the five evaluation benchmarks."
+  },
+  "30": {
+   "verdict": "DEFECT",
+   "reason": "PI-DON is a model architecture used to implement and assess the technique, not an evaluation dataset or benchmark."
+  },
+  "31": {
+   "verdict": "PRECISE",
+   "reason": "Kriging is explicitly listed as an experimental baseline."
+  },
+  "32": {
+   "verdict": "PRECISE",
+   "reason": "The framework uses PageRank to derive its structural-authority signal."
+  },
+  "33": {
+   "verdict": "PRECISE",
+   "reason": "Randomized eviction is experimentally compared with SnapKV-style eviction."
+  },
+  "34": {
+   "verdict": "PRECISE",
+   "reason": "MemTools runs its decoupled evaluation framework with the ALFWorld benchmark."
+  },
+  "35": {
+   "verdict": "PRECISE",
+   "reason": "Zep is explicitly evaluated on the Deep Memory Retrieval benchmark."
+  },
+  "36": {
+   "verdict": "PRECISE",
+   "reason": "SARIMA is one of four external baselines used to evaluate the hybrid system."
+  },
+  "37": {
+   "verdict": "PRECISE",
+   "reason": "WML is explicitly evaluated on Compiler-Supported50."
+  },
+  "38": {
+   "verdict": "PRECISE",
+   "reason": "Euclid-MCP invokes SWI-Prolog as its current reasoning backend."
+  },
+  "39": {
+   "verdict": "PRECISE",
+   "reason": "Mistral 7B is evaluated on WinoGrande and its score is reported."
+  },
+  "40": {
+   "verdict": "PRECISE",
+   "reason": "The trained faithfulness method is evaluated for out-of-distribution transfer on StrategyQA."
+  },
+  "41": {
+   "verdict": "DEFECT",
+   "reason": "The paper compares its named methods with AdaODD; 'adaptive OOD detection' is the generic problem class, not the paper's system."
+  },
+  "42": {
+   "verdict": "PRECISE",
+   "reason": "Bayesian CP factorization is explicitly included among ST-VTD's benchmark methods."
+  },
+  "43": {
+   "verdict": "PRECISE",
+   "reason": "MELD is explicitly used in Tier-3 training data."
+  },
+  "44": {
+   "verdict": "PRECISE",
+   "reason": "Coconut is identified as a latent-reasoning baseline for J-CoT."
+  },
+  "45": {
+   "verdict": "PRECISE",
+   "reason": "The ctxl-rerank-v2 family appears as an evaluated baseline."
+  },
+  "46": {
+   "verdict": "PRECISE",
+   "reason": "BrowseComp explicitly scores GPT-4o as a benchmarked model."
+  },
+  "47": {
+   "verdict": "PRECISE",
+   "reason": "WinoGrande is explicitly listed as an evaluation benchmark."
+  },
+  "48": {
+   "verdict": "DEFECT",
+   "reason": "The subject is generic, and HNSW is discussed as related work rather than an evaluated baseline."
+  },
+  "49": {
+   "verdict": "PRECISE",
+   "reason": "The paper explicitly states that GKR-HND applies GKR to the HND backbone."
+  }
+ },
+ "my_labels": {
+  "0": "DEFECT",
+  "1": "DEFECT",
+  "2": "DEFECT",
+  "3": "PRECISE",
+  "4": "PRECISE",
+  "5": "PRECISE",
+  "6": "PRECISE",
+  "7": "DEFECT",
+  "8": "DEFECT",
+  "9": "PRECISE",
+  "10": "PRECISE",
+  "11": "PRECISE",
+  "12": "PRECISE",
+  "13": "PRECISE",
+  "14": "PRECISE",
+  "15": "PRECISE",
+  "16": "PRECISE",
+  "17": "PRECISE",
+  "18": "PRECISE",
+  "19": "PRECISE",
+  "20": "PRECISE",
+  "21": "PRECISE",
+  "22": "PRECISE",
+  "23": "PRECISE",
+  "24": "PRECISE",
+  "25": "PRECISE",
+  "26": "DEFECT",
+  "27": "PRECISE",
+  "28": "DEFECT",
+  "29": "PRECISE",
+  "30": "DEFECT",
+  "31": "PRECISE",
+  "32": "PRECISE",
+  "33": "PRECISE",
+  "34": "PRECISE",
+  "35": "PRECISE",
+  "36": "PRECISE",
+  "37": "PRECISE",
+  "38": "PRECISE",
+  "39": "PRECISE",
+  "40": "PRECISE",
+  "41": "PRECISE",
+  "42": "PRECISE",
+  "43": "PRECISE",
+  "44": "PRECISE",
+  "45": "PRECISE",
+  "46": "PRECISE",
+  "47": "PRECISE",
+  "48": "PRECISE",
+  "49": "PRECISE"
+ }
+}
