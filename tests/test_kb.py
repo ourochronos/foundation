@@ -139,3 +139,43 @@ def test_views_abstains_when_nothing_is_said_about_an_entity(cite_kb):
     # empty body would be the dishonest status
     assert cite_kb.views("Cited Work")["status"] == "abstain"
     assert cite_kb.views("Paper One")["status"] == "answered"
+
+
+# --- D101: shared resources are GLOBAL entities ---------------------------
+# A benchmark fifty papers use is one thing with no page of its own. The
+# batch-locality resolver keeps same-form mentions apart across documents,
+# which is right for people in a closed world and wrong here: GSM8K became
+# 16 eids and every cross-paper count read 0.
+
+RESOURCES = [
+    {"page": "arxiv:1", "page_title": "Paper One", "subject": "Paper One",
+     "pid": "P_EVALUATES_ON", "object": "GSM8K", "object_global": True,
+     "statement": "Paper One is evaluated on GSM8K."},
+    {"page": "arxiv:2", "page_title": "Paper Two", "subject": "Paper Two",
+     "pid": "P_EVALUATES_ON", "object": "GSM8K", "object_global": True,
+     "statement": "Paper Two is evaluated on GSM8K."},
+    {"page": "arxiv:3", "page_title": "Paper Three", "subject": "Paper Three",
+     "pid": "P_BUILDS_ON", "object": "GSM8K", "object_global": True,
+     "statement": "Paper Three builds on GSM8K."},
+]
+
+
+@pytest.fixture()
+def res_kb(tmp_path):
+    d = tmp_path / "res"
+    d.mkdir()
+    (d / "out_0.jsonl").write_text(
+        "\n".join(json.dumps(r) for r in RESOURCES) + "\n")
+    kb = KB(backend="memory")
+    kb.ingest_shards(d, embed=False)
+    return kb
+
+
+def test_global_resource_is_one_entity(res_kb):
+    assert len(res_kb.resolve_subject("GSM8K")) == 1
+
+
+def test_global_resource_counts_every_using_paper(res_kb):
+    r = res_kb.cited_by("GSM8K", pid=None)
+    assert r["status"] == "answered" and r["n"] == 3
+    assert r["sources"] == ["arxiv:1", "arxiv:2", "arxiv:3"]

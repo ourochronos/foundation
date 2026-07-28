@@ -1,0 +1,60 @@
+{"page": "arxiv:2606.28572v1", "subject": "axiom of choice", "changed": true, "why": "proper name; context-dependent descriptors removed"}
+{"page": "arxiv:2606.28663v1", "subject": "differentially closed fields", "changed": false}
+{"page": "arxiv:2606.28672v2", "subject": "hyper Boolean algebras", "changed": false}
+{"page": "arxiv:2606.28740v2", "subject": "NSOP_r", "changed": true, "why": "hierarchy is descriptive; the notation is the name"}
+{"page": "arxiv:2606.28844v1", "subject": "Ditor's problem", "changed": true, "why": "named open question; specific ladder type is what's being solved"}
+{"page": "arxiv:2606.29087v1", "subject": "equivalence relations in simple theories", "changed": true, "why": "title emphasizes equivalence relations; 'failure' is the finding, not the subject"}
+{"page": "arxiv:2606.29500v1", "subject": "Rado's Conjecture", "changed": true, "why": "proper name; descriptive modifiers are inessential"}
+{"page": "arxiv:2606.29642v1", "subject": "definable eventual equalizers", "changed": false}
+{"page": "arxiv:2606.29802v1", "subject": "Gödel's second incompleteness theorem", "changed": true, "why": "theorem has a proper name; descriptors like 'and provability' belong in citations, not the subject"}
+{"page": "arxiv:2606.29954v2", "subject": "fundamental logic", "changed": true, "why": "the logic system is the subject; modality is the lens, not the subject"}
+{"page": "arxiv:2606.30300v1", "subject": "CLoN", "changed": true, "why": "the logic name is the subject; extensions and semantics are contextual"}
+{"page": "arxiv:2606.30300v1", "subject": "reflexive Nelson algebras", "changed": false}
+{"page": "arxiv:2606.30782v1", "subject": "Scott's continuous lattices", "changed": false}
+{"page": "arxiv:2606.30885v1", "subject": "big Ramsey degrees", "changed": true, "why": "Henson graphs are the case; Ramsey degrees are what's being computed"}
+{"page": "arxiv:2606.31221v1", "subject": "Urysohn space", "changed": true, "why": "named space; subgroups and rigidity describe the properties, not the object"}
+{"page": "arxiv:2606.31277v1", "subject": "quasi-Nelson logic", "changed": true, "why": "the logic system is the subject; recovery operators are the techniques"}
+{"page": "arxiv:2606.31459v2", "subject": "Fuchsian groups", "changed": false}
+{"page": "arxiv:2606.31853v1", "subject": "quantum logics", "changed": true, "why": "constructive is a modifier; quantum logics is the core system"}
+{"page": "arxiv:2606.31854v1", "subject": "coequivalence relations", "changed": true, "why": "the novel concept; local variants and properties are refinements"}
+{"page": "arxiv:2606.31862v1", "subject": "modal measurable logics", "changed": false}
+{"page": "arxiv:2606.31870v1", "subject": "intuitionistic monotone modal logic", "changed": false}
+{"page": "arxiv:2606.31871v1", "subject": "normal modal logics", "changed": true, "why": "the primary subject; formulas are what's being classified within them"}
+{"page": "arxiv:2606.31879v1", "subject": "intuitionistic K", "changed": true, "why": "IK is the named logic; bisimulation-invariance is the characterization"}
+{"page": "arxiv:2606.31883v1", "subject": "relevant logics", "changed": true, "why": "relevant logics are the source; modal logics are the target of translation"}
+{"page": "arxiv:2606.31885v1", "subject": "halo semantics", "changed": true, "why": "novel semantic framework; modal operators are its applications"}
+{"page": "arxiv:2607.00367v2", "subject": "Schreier graphs", "changed": true, "why": "the named object; Z^2 shifts and chromatic numbers are specific instances"}
+{"page": "arxiv:2607.00757v1", "subject": "Lindenbaum-algebras", "changed": false}
+{"page": "arxiv:2607.01068v1", "subject": "Q-spaces and Δ-spaces", "changed": false}
+{"page": "arxiv:2607.01110v1", "subject": "modal-temporal language", "changed": false}
+{"page": "arxiv:2607.01266v1", "subject": "o-minimal structures", "changed": true, "why": "the ambient framework; traceable sets are a technical proxy"}
+{"page": "arxiv:2607.01271v1", "subject": "strong structural completeness", "changed": true, "why": "the main notion being studied; varieties are the setting"}
+{"page": "arxiv:2607.01411v1", "subject": "Polish groups", "changed": false}
+{"page": "arxiv:2607.01544v2", "subject": "q-series", "changed": false}
+{"page": "arxiv:2607.01970v1", "subject": "bisimulations", "changed": true, "why": "what's being studied; theorems are results about it"}
+{"page": "arxiv:2607.02138v1", "subject": "pseudo-solenoids", "changed": false}
+{"page": "arxiv:2607.02250v1", "subject": "conceptual completeness", "changed": false}
+{"page": "arxiv:2607.02725v2", "subject": "unary algebras", "changed": false}
+{"page": "arxiv:2607.02870v1", "subject": "Ziegler degrees", "changed": false}
+{"page": "arxiv:2607.03384v1", "subject": "sum-product phenomenon", "changed": false}
+{"page": "arxiv:2607.03444v1", "subject": "cut-and-choose games", "changed": false}
+{"page": "arxiv:2607.03995v1", "subject": "lim functor", "changed": true, "why": "the functor being forced; exponents and forcing extensions describe contexts"}
+{"page": "arxiv:2607.05542v1", "subject": "Weierstrass theorem", "changed": true, "why": "named theorem; equivariant and measurable are technical variants"}
+{"page": "arxiv:2607.06218v1", "subject": "many-one degrees", "changed": true, "why": "central object; one-one degrees are what's embedded inside"}
+{"page": "arxiv:2607.06359v1", "subject": "Sacchetti's modal logics", "changed": false}
+{"page": "arxiv:2607.06386v1", "subject": "Boolean hyperdoctrines", "changed": false}
+{"page": "arxiv:2607.06694v1", "subject": "tolerant learning", "changed": true, "why": "the framework being generalized; c.e. sets are the domain"}
+{"page": "arxiv:2607.07473v1", "subject": "preorders on commutative monoids", "changed": true, "why": "the structure being described; compatible and total are properties"}
+{"page": "arxiv:2607.08052v1", "subject": "complex curves in o-minimal geometry", "changed": true, "why": "o-minimal geometry is the framework; curves are what's studied"}
+{"page": "arxiv:2607.08064v1", "subject": "separable Banach lattices", "changed": false}
+{"page": "arxiv:2607.08126v1", "subject": "independence relations", "changed": false}
+{"page": "arxiv:2607.08206v3", "subject": "infinitesimals", "changed": false}
+{"page": "arxiv:2607.08352v1", "subject": "splendid extensions", "changed": true, "why": "the novel concept; PA models are the setting"}
+{"page": "arxiv:2607.08730v1", "subject": "non-normal modal logics", "changed": false}
+{"page": "arxiv:2607.08909v1", "subject": "multivalued functions", "changed": true, "why": "the domain of study; discontinuity is the property being ranked"}
+{"page": "arxiv:2607.09032v1", "subject": "quantum logic", "changed": false}
+{"page": "arxiv:2607.09069v1", "subject": "stable forking conjecture", "changed": false}
+{"page": "arxiv:2607.10323v1", "subject": "S4-subordination algebras", "changed": false}
+{"page": "arxiv:2607.10880v2", "subject": "first-order modal logic", "changed": false}
+{"page": "arxiv:2607.10935v1", "subject": "computable Scott analysis", "changed": false}
+{"page": "arxiv:2607.11033v2", "subject": "sparse random graphs", "changed": false}

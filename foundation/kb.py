@@ -210,6 +210,7 @@ class KB:
                                  "object_page": (str(d["object_page"])
                                                  if d.get("object_page")
                                                  else None),
+                                 "object_global": bool(d.get("object_global")),
                                  "revid": d.get("revid"),
                                  "sid": f"{f.name}:{ln}"})
         # A page's canonical form is its TITLE. Wikipedia pages ARE their
@@ -241,6 +242,18 @@ class KB:
         for r in rows:
             if r["object_page"] and r["object"] not in self._canonical:
                 e = self.reg._mint(r["object"], r["object_page"])
+                self._canonical[r["object"]] = e.eid
+        # A GLOBAL entity has no page at all and is still one thing: GSM8K,
+        # Qwen2.5, GRPO. Canonicalising the NAME is not enough — the
+        # batch-locality resolver (D52) exists to keep same-form mentions
+        # apart across documents, which is right for people in a closed
+        # world and exactly wrong for a benchmark fifty papers share. Left
+        # alone, GSM8K became 16 eids and every cross-paper count read 0.
+        # `object_global` is the extractor declaring "this is community
+        # vocabulary, one entity by name, corpus-wide".
+        for r in rows:
+            if r["object_global"] and r["object"] not in self._canonical:
+                e = self.reg._mint(r["object"], "global:resource")
                 self._canonical[r["object"]] = e.eid
         Z = (self._embed([r["statement"] for r in rows])
              if embed and rows else

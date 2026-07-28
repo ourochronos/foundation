@@ -1,0 +1,581 @@
+[
+ {
+  "page": "arxiv:2607.11329v1",
+  "title": "Fuss-free cumulative universes: theory and practice",
+  "abstract": "Universes are central to dependent type theory, and they are notoriously difficult to handle in a way that is both correct and usable. We propose a new \"fuss-free\" generalised algebraic presentation for polymorphic cumulative universes that dispenses with the intricate theory of coherent universe coercions in favour of a simpler formulation, which we prove equivalent by means of a normalisation theorem for the former. Evidence for the utility of the fuss-free formulation is provided in the form of (1) an abstract specification of its bidirectional elaboration algorithm, and (2) a concrete implementation in Haskell. We also describe and implement an extension of the fuss-free universe hierarchy with a judgemental notion of datatype description from which prior notions of cumulative inductive type may be derived.",
+  "current_subjects": [
+   "polymorphic cumulative universes",
+   "universe coercions",
+   "datatype descriptions"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.11367v1",
+  "title": "Weak essentially undecidable theories of hereditarily finite multisets",
+  "abstract": "We introduce two first-order theories of hereditarily finite multisets: a schematic theory WF^- and a finitely axiomatized theory F^-, in the language with the empty multiset, singleton formation, multiset union, and a containment relation. We prove that WF^- is mutually interpretable with Robinson's theory R, and F^- with Robinson arithmetic Q; in particular, F^- is essentially undecidable. Multisets thereby join numbers, strings, trees, sets, and sequences in the mutual-interpretability classes of R and Q. The distinctive obstacle of the multiset case is the simultaneous failure of the standard devices for recovering ordered pairs: positional order, local order on immediate constituents, and idempotence-based Kuratowski pairing. We show that order is recoverable from bare multiplicity: the term pi(x,y) = &lt;x&gt; u &lt;x&gt; u &lt;y&gt; is provably injective in F^-, yielding a direct interpretation of the Kristiansen-Murwanashyaka tree theory T; conversely, F^- is interpreted in Q by arithmetizing a normal-form calculus for multiset terms within bounded arithmetic. Each structural",
+  "current_subjects": [
+   "hereditarily finite multisets",
+   "mutual interpretability",
+   "essential undecidability",
+   "ordered pair recovery"
+  ],
+  "n_claims": 4
+ },
+ {
+  "page": "arxiv:2607.11525v1",
+  "title": "Pure-homogeneous Abelian groups",
+  "abstract": "We study Fra\u00efss\u00e9 classes of Abelian groups with pure embeddings. We characterize Abelian groups that are universal and homogeneous for: finitely co-generated groups, finite groups, groups of size less that $\u03ba$, where $\u03ba$ is strongly inaccessible.",
+  "current_subjects": [
+   "universal homogeneous Abelian groups"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.11561v2",
+  "title": "Ray and end spaces: characterizations and classification up to homeomorphism",
+  "abstract": "We provide a combinatorial characterization for pairs of order-theoretic trees with homeomorphic ray spaces, answering an open problem proposed by Kurkofka ad Pitz. This solution is inspired by the introduction of a transfinite topological game, which allows us to characterize not only ray spaces through the existence of winning strategies for one of the players, but also their homeomorphic classes. As applications of these results, we obtain a new topological characterization for graph-theoretic end spaces (thus obtaining yet another solution to a recently solved problem of Diestel), as well as for edge-end spaces and completely ultrametrizable spaces. We also introduce a generalization of the class of ray spaces (which is strict, as witnessed by the Sorgenfrey line). Furthermore, we establish that, for subspaces with cardinality less than continuum of end spaces, the scattered property is equivalent to the property of being, itself, an end space. At last, we determine that ray spaces in a couple of classes fail to have their product with any non-discrete space as a ray space.",
+  "current_subjects": [
+   "ray spaces",
+   "topological games",
+   "ray space products"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.11619v1",
+  "title": "Dense-codense expansions of quasiminimal pregeometry structures",
+  "abstract": "We study expansions of quasiminimal pregeometry structures with a dense codense unary predicate and their relation with the complexity properties of the pregeometry of the underlying structure. We consider beautiful pairs as well as $H$-structures. We show each of these expansions can be axiomatized with a single $L_{\u03c9_1 \u03c9}(Q)$-sentence and that both expansions are $\u03c9$-stable. For $H$-structures we provide a natural notion of independence in the expansion and when the underlying structure is modular, we also provide a natural notion of independence for beautiful pairs. Then we relate the complexity of the pregeometry to properties of the expansions.",
+  "current_subjects": [
+   "quasiminimal pregeometry structures",
+   "\u03c9-stable expansions",
+   "independence in expansions"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.11687v1",
+  "title": "The Coding Conception of Set",
+  "abstract": "We propose the Coding Conception of ordinals and sets, which takes Cantor's three generating principles as its sole foundation. Bounded sets of ordinals are generated synchronously with the ordinals themselves through a bijective encoding function that, at each stage, selects only the finitely many bounded sets actually required by the successor, limit, and restriction principles. This selective coding yields the first-order theory $SC^{reg}$, which we establish is the metamathematically correct theory of the ordinals: it is bi-interpretable with $ZFGC^+$, yet makes no claim about the general concept of set. Extending the conception to full set theory via a monadic second-order ordinal theory with arithmetic and class comprehension produces two mutually inconsistent first-order set theories according to distinct maximality intuitions: a Type-A universe $MC_A$, in which the power set of every ordinal is a set and the universe satisfies $ZFC$; and a Type-B universe $MC_B^+$, in which sets are strictly more than ordinals and a ``largeness cardinal'' exists, beyond which power sets remai",
+  "current_subjects": [
+   "Coding Conception",
+   "theory of ordinals",
+   "Power Set Dichotomy",
+   "set theory fragments"
+  ],
+  "n_claims": 4
+ },
+ {
+  "page": "arxiv:2607.12099v1",
+  "title": "Reductions and necessary conditions for tall Borel Ramsey ideals",
+  "abstract": "An ideal $\\mathcal{I}$ on $\u03c9$ has the Ramsey property if $\\mathcal{I}^{+}\\to(\\mathcal{I}^{+})^2_2$: every $2$-colouring of the pairs of an $\\mathcal{I}$-positive set has an $\\mathcal{I}$-positive homogeneous subset. Whether a tall Borel ideal can have the Ramsey property is an open question of Hru\u0161\u00e1k, Meza-Alc\u00e1ntara, Th\u00fcmmel and Uzc\u00e1tegui; a coanalytic example exists in ZFC, so a negative answer must use definability essentially. Our main theorem, a synthesis of the results of the paper, states that a tall Borel Ramsey ideal admits no countable local reading. Below every positive set, such an ideal is not a countable intersection of topologically represented (or tall analytic $P$-) ideals, and its quotient has no countable dense subset. Moreover, every quotient name for a new real has uncountable width, the colouring witnessing non-selectivity of the generic ultrafilter is never read continuously on a positive condition, and hereditary tall subfamilies saturate every finite window of barrier dimensions coherently but never all dimensions at once. We prove separately that a weakly sel",
+  "current_subjects": [
+   "tall Borel Ramsey ideals",
+   "quotients of Ramsey ideals",
+   "weakly selective ideals"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.12160v1",
+  "title": "$\u03bc$-abstract elementary classes of modules",
+  "abstract": "We prove several new results in the theory of $\u03bc$-AECs, focusing mainly on (almost) stability, with the primary objective of undertaking a systematic study of $\u03bc$-AECs of $R$-modules. Our main results are the following. 1. We show that, under suitable syntactic assumptions, all tame $\u03bc$-AECs of $R$-modules (where $R$ is a ring) are almost stable, and are stable if they additionally satisfy a strong amalgamation property. This extends the work of the second author and Shelah [49] to the setting of $\u03bc$-AECs. 2. We then turn to applications to concrete $\u03bc$-AECs of $R$-modules. Our main result in this direction is that $(R$-Mod$, \\leq_{pp}^\u03bc)$ has a stable independence relation and is a stable and tame $\u03bc$-AEC, where $\\leq_{pp}^\u03bc$ denotes the $\u03bc$-pure submodule relation. We also prove similar stability results for various classes of abelian groups, including the $\\aleph_1$-AEC of torsion-free abelian groups with the balanced subgroup relation. Moreover, we prove the almost stability of all $\u03bc$-AECs of modules of the form $(R$-Mod$, \\preccurlyeq)$, where $\\preccurlyeq$ refines the direct ",
+  "current_subjects": [
+   "tame \u03bc-AECs of modules",
+   "pure submodule relation",
+   "\u03bc-AECs with summand refinement"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.12528v1",
+  "title": "Algebraic structures on non-Archimedean Urysohn universal metric spaces",
+  "abstract": "We investigate valued-field structures on Urysohn universal ultrametric spaces. We introduce $p$-adic Levi--Civita fields as subfields of $p$-adic Hahn fields and treat them together with ordinary Levi--Civita fields. For a subgroup $G$ of $\\mathbb{R}$ containing $\\mathbb{Z}$ and a countably infinite perfect field $k$, the corresponding Levi--Civita valued field is isometric to the $R$-Urysohn universal ultrametric space, where $R=\\{0\\}\\cup\\{\u03b7^{-g}\\mid g\\in G\\}$. Thus these spaces admit field structures extending prescribed prime valued fields, including $\\mathbb{Q}$ with the trivial valuation and the $p$-adic fields $\\mathbb{Q}_{p}$. We also prove that complete valued fields with infinite residue fields are haloed, and hence universal for separable ultrametric spaces with corresponding distance sets. In the separable case, such a valued field is itself isometric to the corresponding Urysohn space. Examples include $\\mathbb{C}_{p}$, the completion of the maximal unramified extension of $\\mathbb{Q}_{p}$, Laurent series fields, and completions of their algebraic closures. Finally, for ",
+  "current_subjects": [
+   "p-adic Levi-Civita fields",
+   "Urysohn universal ultrametric spaces",
+   "haloed valued fields"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.12936v1",
+  "title": "Cardinal invariants on universally null sets",
+  "abstract": "We investigate the cardinal invariants on universally null sets. In particular, we prove $\\mathfrak{b} &lt; \\operatorname{cof}(\\mathcal{UN})$ and $\\operatorname{non}(\\mathcal{N}) = \\operatorname{non}(\\mathcal{UN}) &lt; \\operatorname{cof}(\\mathcal{UN})$ in $\\mathsf{ZFC}$. Also, assuming $\\operatorname{add}(\\mathcal{N}) = \\mathfrak{c}$, we prove $\\operatorname{cof}(\\mathcal{UN}) = \\mathfrak{d}_\\mathfrak{c}$ by adapting Yorioka's technique. Moreover, we prove the consistency of $\\operatorname{add}(\\mathcal{UN}) &lt; \\operatorname{cov}(\\mathcal{UN}) &lt; \\operatorname{non}(\\mathcal{UN}) &lt; \\operatorname{cof}(\\mathcal{UN})$.",
+  "current_subjects": [
+   "cardinal invariants",
+   "cofinality of universally null",
+   "cardinal inequalities"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.12970v1",
+  "title": "Failure of the Los-Tarski preservation theorem for the fluted fragment",
+  "abstract": "The classical Los-Tarski theorem characterises first-order sentences preserved under extensions as the existentially definable ones. In [6], Purdy claimed that the analogous preservation theorem holds for the fluted fragment. We refute this claim by constructing, over an equality-free vocabulary with only one binary relation symbol, a fluted sentence of quantifier rank three which is preserved under extensions but is not equivalent, even over finite structures, to any existential fluted sentence.",
+  "current_subjects": [
+   "Los-Tarski preservation theorem",
+   "fluted fragment expressivity"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.13240v2",
+  "title": "Topological square of logic S4.1",
+  "abstract": "In this paper, we find the axiomatization for the topological square of S4.1. This is the first known topological square of a modal logic that differs from both the fusion and the Kripke product. We also prove the finite model property and decidability for this logic.",
+  "current_subjects": [
+   "topological square of S4.1",
+   "modal logic S4.1"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.13327v1",
+  "title": "The Constant Domain Axiom in Toposes",
+  "abstract": "Constant domain intuitionistic logic admits a complete semantics in presheaf toposes, by interpreting sorts as constant presheaves and predicates as arbitrary sub-presheaves. The goal of this note is to point out how this fits in topos theory, replacing constant presheaves with objects that are covert and Hausdorff when considered as discrete locales. We call these objects \"CD\" and we show that they form a Boolean pretopos in any topos.",
+  "current_subjects": [
+   "Constant Domain Axiom",
+   "CD objects"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.13528v1",
+  "title": "Intuitionistic Dynamic Logic",
+  "abstract": "This thesis develops the mathematical theory of intuitionistic dynamic logics - extensions of intuitionistic propositional logic with modalities and fixed point operators. Such systems provide formal tools for reasoning about change, such as encountered in mathematical systems evolving over time or in the knowledge state of an agent after an information update. We investigate five intuitionistic dynamic logics: intuitionistic master modality, intuitionistic common knowledge logic, intuitionistic linear temporal logic, bi-intuitionistic modal logic and bi-intuitionistic linear temporal logic. On the proof theoretic side we develop sound and complete Hilbert-style axiomatizations as well as non-wellfounded and cyclic sequent calculi. On the semantic side we study these logics over various classes of dynamic models, which are birelational Kripke models satisfying confluence and frame conditions. We establish expressivity results, the finite model property, decidability, as well as complexity bounds. The main contributions are threefold. First, we develop analytic cyclic sequent calculi ",
+  "current_subjects": [
+   "intuitionistic dynamic logics",
+   "axiomatizations and sequent calculi",
+   "intuitionistic linear temporal logic"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.13540v1",
+  "title": "A proof complexity perspective on effectively zero-knowledge proofs",
+  "abstract": "Ilango (FOCS 2025) invented effectively zero-knowledge proofs, a new variant of zero-knowledge. We reformulate it in the language of logic and give simple proofs (under the same assumptions as Ilango (FOCS 2025)) of its existence and of the key property defined in Ilango (FOCS 2025) that it is \"indistinguishable from true\" (that property is in Ilango (FOCS 2025) a part of the definition of the prover, not its consequence). Using the theory of proof complexity generators we show that the concept can be turned it into a genuinely zero-knowledge proofs, assuming a conjecture from the theory about the existence of a hard generator and allowing the parties to share a common random string.",
+  "current_subjects": [
+   "effectively zero-knowledge proofs",
+   "proof complexity generators"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.13855v2",
+  "title": "Inferentialist Game Semantics (Extended Abstract)",
+  "abstract": "Game semantics is an elegant approach to the formal semantics of reasoning and computation that grounds model-theoretic concepts of truth and validity in game-theoretic concepts that emphasize the dynamic and interactive aspects of logical reasoning. In Hyland-Ong games, plays are traces of interactions between a player and an environment and such games provide a naturally appealing semantics for computation that is derived from proof-search in logical systems. Such a semantics can be seen as providing an intensional theory of meaning for systems of logic in terms of (the computation of) proofs. In logic, an intensional theory of meaning for systems of logic is offered by proof-theoretic semantics; in particular, by base-extension semantics (B-eS), in which the model-theoretic interpretation of atomic propositions in a satisfaction relation is replaced by a validity relation which uses provability in `bases' of atomic rules. We establish a fully abstract correlation between B-eS and Hyland-Ong game semantics, employing techniques similar to those used by Sandqvist to give a sound and",
+  "current_subjects": [
+   "game semantics",
+   "proof-theoretic semantics"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.13969v1",
+  "title": "Further quantitative moduli around uniform convexity",
+  "abstract": "We derive new formulas for quantities involved in the study of uniformly convex spaces, linear and nonlinear.",
+  "current_subjects": [
+   "uniform convexity"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.14472v1",
+  "title": "Topological reconstruction theorems over uncountable algebraically closed fields",
+  "abstract": "Working over uncountable algebraically closed fields, we extend the theorems of Koll\u00e1r-Lieblich-Olsson-Sawin on reconstructing varieties from their Zariski topological spaces. In particular, we adapt their results to arbitrary quasi-projective varieties in arbitrary characteristic, and thus we give positive answers to each of the relevant `speculations' made by the original authors in our setting. Our proofs use techniques from model theory: in particular, we employ a general model-theoretic setting for algebro-geometric reconstruction problems, known as the `Zilber trichotomy for ACF-relics'.",
+  "current_subjects": [
+   "reconstruction of varieties",
+   "model-theoretic algebraic geometry"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.14757v1",
+  "title": "Component Modalities of Quantum Logic",
+  "abstract": "This paper determines the structural and proof-theoretic consequences of the forcing condition in relational quantum modal logic, under which every modal transition available at a world is also available at every world compatible with it. We prove that modal successor sets are constant on compatibility components, so boxed truth sets belong to the Boolean algebra of unions of these components. The relation holding exactly between worlds in the same component assigns to each stable proposition its greatest lower and least upper approximations by unions of components, and in hard superselection models these are exactly the approximations by central propositions. We adopt local validity for sequents with multiple conclusions to give a semantics for modal excluded middle on frames with several components. A connectedization obtained by adding one point then shows that component frames, equivalence frames satisfying the forcing condition, and connected compatibility frames with universal modal accessibility have the same logic for sequents with one conclusion. Finally, maximal consistent ",
+  "current_subjects": [
+   "modal successor sets",
+   "component modalities"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.14907v2",
+  "title": "Recognition of algebraic matroids is undecidable",
+  "abstract": "We prove that the recognition problem for algebraic matroids is undecidable. Explicitly, this means that there is no algorithm that takes as input a finite set $S$ and a function $r\\colon\\mathcal{P}(S) \\to \\mathbb{Z}_{\\ge 0}$ (where $\\mathcal{P}(S)$ is the power set) and decides whether there exists a pair of fields $F \\subset K$, and a function $f\\colon S \\to K$, such that for all $A \\subseteq S$: $\\mathrm{trdeg}_F f(A) = r(A)$. This problem is known to be decidable if the characteristic of the fields involved is constrained to be zero. We prove that it is undecidable if the characteristic is either left unspecified (in which case a realization over any characteristic is accepted) or fixed to be a prime $p$. The proof relies on Hrushovski--Zilber's Group Configuration Theorem and on the work of Evans and Hrushovski on \"Projective Planes in Algebraically Closed Fields\". We relate two different such projective planes, and eventually construct a reduction from the solvability of Diophantine equations over $\\mathbb{F}_p(x)$ ($p$ prime) to algebraicity of matroids. Solvability of Diophan",
+  "current_subjects": [
+   "algebraic matroids"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.15558v2",
+  "title": "Locatedness, Convexity, and Measurability in $\\mathbb{R}^N$",
+  "abstract": "We prove, within Bishop's constructive framework, stronger forms of two theorems in the author's 1988 paper about the locatedness of certain Lebesgue measurable complemented sets in R^{N}. In doing so, we expand and improve the proofs of several preliminary results on Lebesgue measurability and convexity that are need en route to our main theorems.",
+  "current_subjects": [
+   "Lebesgue measurable sets"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.15664v1",
+  "title": "Semantics for the minimal well-determined logic",
+  "abstract": "The minimal well-determined logic in the language with conjunction and implication is investigated. A calculus for this logic, in which the modus ponens rule is not postulated, is proposed. The main result consists in constructing a semantics for this logic: it is formed by the class of lower semilattices with a greatest element, where the implication is interpreted using a partial function defined via the partial order of the semilattice. This extension of the notion of interpreting logical connectives in a matrix allows for the correct determination of the truth of formulas in the language with conjunction and implication. Soundness and completeness theorems are proved. The proposed semantics creates an opportunity to investigate questions of finite model property for such systems and can also serve as a basis for studying other properties of both the minimal well-determined logic itself and its extensions. As an application of the obtained results, we prove that the set of tautologies of the minimal well-determined logic is decidable in polynomial time and present a corresponding ",
+  "current_subjects": [
+   "minimal well-determined logic",
+   "tautologies"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.15723v1",
+  "title": "Paraconsistent Dominated Convergence",
+  "abstract": "The Levi-Civita field $\\mathcal{R}$ of formal Laurent series is a constructive, non-Archimedean ordered field that supports a full Lebesgue measure and integration theory, including a Dominated Convergence Theorem. This paper embeds that integration theory into the paraconsistent Chunk and Permeate framework, extending it from elementary calculus to genuine measure theory. The source chunk is modelled by $\\mathcal{R}$ with its measure and integral, while the target chunk is the classical real line $\\mathbb{R}$. A permeability relation exports the standard part of the internal integral, and it is shown that the Dominated Convergence Theorem permeates from the source chunk to the target chunk, yielding the classical Lebesgue Dominated Convergence Theorem without any choice principles and without the ultrafilters required by nonstandard measure theory. The construction is entirely explicit and demonstrates that paraconsistent logic can provide a rigorous foundation for deep analytical tools while keeping inconsistencies safely confined.",
+  "current_subjects": [
+   "paraconsistent integration theory",
+   "Dominated Convergence Theorem"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.15958v1",
+  "title": "Logical Metatheorems for Abstract Spaces axiomatized in Positive Bounded Logic II: Metric spaces and the model-theoretic uniformity principle",
+  "abstract": "We extend the proof-theoretic treatment of uniform bound extraction from normed structures axiomatized in positive bounded logic [Advances in Mathematics, 290:503-551, 2016] (as developed for the model theory of Banach spaces) to the more general setting of abstract metric structures, including discrete structures viewed as classical first-order models. In particular, we establish uniform bound extraction theorems for our generalized framework for $\\forall\\exists$-sentences whose matrix is the negation of (an embedding of) a formula in positive bounded logic, whose proofs use saturation. In this way, we provide a formal explanation for the successes in the extraction of uniform bounds from nonstandard proofs given in [Advances in Mathematics, 343:567-623, 2019], which had informally followed the perspective of the monotone functional interpretation. As an application of the formal framework we develop, we provide novel explicit bounds for a structural theorem for stable subsets of groups given in [Mathematical Proceedings of the Cambridge Philosophical Society, 168(2):405-413, 2020].",
+  "current_subjects": [
+   "uniform bound extraction",
+   "stable subsets of groups"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.16563v1",
+  "title": "On $2$-stationarity of $\\mathcal{P}_\u03ba\u03bb$",
+  "abstract": "The notion of $n$-stationary subsets of $\\mathcal{P}_\u03ba\u03bb$ for $n &lt; \u03c9$ were introduced and studied by Cody, Lambie-Hanson \\&amp; Zhang \\cite{CLHZ} and Torres \\cite{T}. They proved that if $\u03ba$ is supercompact, then $\\mathcal{P}_\u03ba\u03bb$ is $n$-stationary in itself for all cardinals $\u03bb\\geq \u03ba$ and all $n &lt; \u03c9$. In this paper we prove that strong compactness of $\u03ba$ does not imply the $2$-stationarity of $\\mathcal{P}_\u03ba\u03bb$ for cardinals $\u03bb&gt; \u03ba$. We also discuss Menas' Theorem for $1$-stationary and $2$-stationary subsets of $\\mathcal{P}_\u03ba\u03bb$.",
+  "current_subjects": [
+   "2-stationarity of P_\u03ba\u03bb"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.16572v1",
+  "title": "Tree-derived ideals: Fubini iterations, limit amalgamations, and Katetov obstructions",
+  "abstract": "We develop a machinery for deriving ideals on a countable set from a partition of $\u03c9$ indexed by $\u03c9^{&lt;\u03c9}$. A derivative operator on trace trees, parametrized by an auxiliary ideal $\\mathcal J$, yields a strict transfinite hierarchy $\\mathcal H^{\\mathcal J}_\u03b1$ of proper ideals, tall from level one onward and independent of the chosen partition. Its finite levels are exactly the Fubini powers, $\\mathcal H_n\\cong\\mathrm{Fin}^{\\otimes(n+1)}$, while $\\mathcal H_\u03c9=\\bigcup_n\\mathcal H_n$ amalgamates all finite powers. We establish presentation independence, local homogeneity, Fubini recursion, and $\u03a0^1_1$-completeness of the full hierarchy. Let $\\mathcal F_\u03c9$ be Kwela's canonical inductive limit and $\\mathcal F'_\u03c9$ his independent-partitions limit. We prove $\\mathcal F_\u03c9\\not\\leq_K\\mathcal H_\u03c9$, although $\\mathcal F'_\u03c9\\sqsubseteq\\mathcal H_\u03c9$ and every finite coherent fragment of a putative reduction is realizable over $\\mathcal H_\u03c9$. The proof introduces essential depth, an invariant monotone along Katetov reductions of $\\mathrm{Fin}\\otimes\\mathrm{Fin}$, and gives the sharp non-extension",
+  "current_subjects": [
+   "tree-derived ideals",
+   "Katetov reduction",
+   "Cantor-Bendixson and derivative ranks"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.16598v1",
+  "title": "Conuclei on varieties of hoops",
+  "abstract": "A conucleus $\u03b4$ on a partially ordered monoid $\\mathbf{A}$ is an interior operator that satisfies $\u03b4(a) \\cdot \u03b4(b) \\leq \u03b4(a \\cdot b)$ and $\u03b4(a) \\cdot \u03b4(1) = \u03b4(a)$ for all $a,b \\in A$. A conucleus is multiplicative if the equality $\u03b4(a \\cdot b) = \u03b4(a) \\cdot \u03b4(b)$ holds for all $a,b \\in A$. In this article we focus on the study of conuclei on hoops, structures which generalize well-known classes of algebras, such as the class of MV-algebras and BL-algebras. Among several results, we provide a Glivenko-type theorem for conuclei. Special emphasis is given to term definable conuclei. The main result of this article is an explicit description of all terms that define a multiplicative conucleus on every structure of an arbitrary proper variety of Wajsberg hoops. We also show that the problem of finding terms that define (multiplicative) conuclei on a variety of basic hoops or BL-algebras is equivalent to finding such terms on some variety or some pair of varieties of Wajsberg hoops. We provide nontrivial interesting examples.",
+  "current_subjects": [
+   "conuclei on hoops",
+   "multiplicative conuclei"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.16747v1",
+  "title": "More on the Boolean Prime Ideal Theorem",
+  "abstract": "We prove the consistency of Zermelo--Fraenkel set theory with the Axiom of Dependent Choices, no Vitali sets and a large fragment of the Boolean Prime Ideal Theorem.",
+  "current_subjects": [
+   "Boolean Prime Ideal Theorem"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.16772v1",
+  "title": "On Zarankiewicz's bounds for valued vector spaces",
+  "abstract": "We establish absolute and relative almost-linear Zarankiewicz bounds for semilinear relations in valued vector spaces. For every fixed arity and description complexity, a $K_{t,\\ldots,t}$-free semilinear $r$-partite hypergraph has at most \\[ O\\!\\left(n^{r-1}(\\log n)^c\\right) \\] edges, where $c$ depends only on the arity and the number of valuative literals. In the bipartite case a separate arbitrary-trace argument gives the explicit bound $O(n(\\log n)^{2s})$ for description complexity $(\u03c1,s)$. We also prove a relative extension theorem: intersecting any relation with a hereditary almost-linear profile by $s$ affine moving-radius comparisons increases the logarithmic exponent by at most $2s$. For the additive affine-valuative structures on $\\mathbb Q_p$ and $\\mathbb C_p$, quantifier elimination converts these semilinear results into bounds for all definable relations. Finally, over every valued field with infinite value group, we construct $K_{2,2}$-free semilinear point--box graphs of description complexity $(1,4)$ with $\u03a9(n\\log n/\\log\\log n)$ edges.",
+  "current_subjects": [
+   "Zarankiewicz bounds",
+   "hereditary almost-linear profiles"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.16942v1",
+  "title": "Building trees in large fields",
+  "abstract": "We show that large rosy fields are bounded, and substantially simplify the proofs that large stable fields are separably closed and that large simple fields are bounded. Our proofs go through in a general topological setting. We obtain instability, non-simplicity, and non-rosiness explicitly by building the appropriate trees of definable sets. We also show that orders on large rosy fields have several properties of orders on pseudo real closed fields.",
+  "current_subjects": [
+   "large rosy fields",
+   "large stable and simple fields"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.17014v1",
+  "title": "Model theory of generic vector space endomorphisms III: Reducts",
+  "abstract": "This paper further studies the model companion of an endomorphism acting on a vector space, possibly with extra structure. Let $T$ be a model-complete theory that $\\varnothing$-defines an infinite $K$-vector space $\\mathbb{V}$. In previous work, we introduced a family $\\{T^C_\u03b8: C \\in \\mathcal{C}\\}$ of extensions of the theory $T_\u03b8:= T \\cup \\{\\text{``$\u03b8$ is an endomorphism of $\\mathbb{V}$''}\\}$ that parameterizes all consistent extensions of the form $$ T_\u03b8\\cup \\left\\{\\sum\\nolimits_{k}\\bigcap\\nolimits_{l}\\operatorname{Ker}(\u03c1_{j, k, l}[\u03b8]) = \\sum\\nolimits_{k}\\bigcap\\nolimits_{l} \\operatorname{Ker}(\u03b7_{j, k, l}[\u03b8]) : j \\in \\mathcal{J}\\right\\}, $$ where all sums and intersections are finite, all the $\u03c1[\u03b8]$'s and $\u03b7[\u03b8]$'s are polynomials over $K$ with $\u03b8$ plugged in, and $\\mathcal{J}$ is some possibly infinite index set. We also presented a sufficient condition that implies that every $T^C_\u03b8$ has a model companion $T\u03b8^C$. We simplify our axiomatization of $T\u03b8^C$ and the criterion for its existence for theories ``close to the theory of $K$-vector spaces''. We apply this to the explicit case",
+  "current_subjects": [
+   "vector space endomorphisms",
+   "definable endomorphisms"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.17174v1",
+  "title": "QBism Logic",
+  "abstract": "QBism interprets quantum theory as a normative discipline for an agent's probability assignments and their revision across possible experience. This paper develops a logical formalization of that picture. A well-formed core datum consists of an admissible prior space, a finite family of actual measurements, Born kernels, and update kernels. For each such datum, we introduce a guarded dynamic language for histories and posterior states and prove a global reduction theorem. We next consider effectively semialgebraic data over an effectively presented real closed field. For data in this class, we translate the fragment without dynamic operators into first-order formulas in the corresponding language of ordered rings, thereby reducing validity to first-order reasoning over real closed fields. Together, the reduction and first-order translation yield a sound and complete recursive calculus and a decision procedure for validity. Finally, assuming a symmetric informationally complete (SIC) reference measurement, we show that quantum theory in finite dimensions realizes the framework through",
+  "current_subjects": [
+   "QBism Logic",
+   "QBism logic",
+   "validity in QBism"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.17292v1",
+  "title": "Topology in Synthetic Domain Theory and its Formalisation in Agda",
+  "abstract": "This project investigates the Phoa principle in synthetic domain theory (SDT), and provides a generalisation to the transfinite cases. The Phoa principle plays a pivotal role in SDT by illustrating how the paths give the information order on the interval type and other algebraic structures in SDT. The project defines the dual simplices and spines and introduces the concept of sobriomorphisms, which contributes to a new interpretation of the Phoa principle and its generalisations. Finally, the project proposes a hypothetical completeness theorem that may unify the Segal completeness and the chain completeness in SDT based on investigations on the Phoa principle in the project. The project also includes axiomatisation of the interval type in Cubical Agda and the formalised proof for the main theorems.",
+  "current_subjects": [
+   "Phoa principle",
+   "sobriomorphisms",
+   "completeness in synthetic domain theory"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.17512v1",
+  "title": "Maximal Eventually Different Families of Computable Functions",
+  "abstract": "Cardinal characteristics of the continuum are the cardinalities of interesting families of reals. A well-studied example is that of maximal almost disjoint (MAD) families of sets of natural numbers. Significant work has been done investigating computability-theoretic analogues of cardinal characteristics. By considering encodings of MAD families as a single `universal' set, Lempp, Miller, Nies, and Soskova (2023) studied the class of encoded MAD families. Such a class is referred to as a mass problem; one can study the relative complexity between mass problems. In Section 2, we build on the study of mass problems as analogues of cardinal characteristics. We define mass problems of maximal eventually different (MED) families of computable functions in the same way and compare them against the mass problems defined by Lempp et al. In Section 3, we survey work by Greenberg, Kuyper, and Turetsky (2019) that provides an abstract framework for cardinal characteristics and their effective counterparts. We show that this framework is suitable for obtaining results in the setting of mass prob",
+  "current_subjects": [
+   "maximal eventually different families",
+   "mass problems"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.17666v1",
+  "title": "Hindman's theorem does not code $\\emptyset^{(\u03c9)}$ in one application",
+  "abstract": "We prove that for every non-arithmetic set~$C$ and every arithmetic finite coloring of~$\\mathbb{N}$, there is an infinite set $H \\subseteq \\mathbb{N}$ whose non-empty finite sums of distinct elements is monochromatic, and $C$ is not $H$-computable. We also study restrictions of Hindman's theorem to simple colorings.",
+  "current_subjects": [
+   "Hindman's theorem"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.17928v1",
+  "title": "Some prospects for semiproducts and products of modal logics",
+  "abstract": "We consider products and semiproducts of propositional modal logics L with S5 and present new examples of product and semiproduct logics axiomatized in the minimal way and enjoying the product (or semiproduct) FMP. An essential part of the proof is local tabularity of these (semi)products for L of finite depth; it is obtained by using bisimulation games. These results readily imply decidability for 1-variable fragments of predicate modal logics QL and QL+Barcan formula. We also present new counterexamples, i.e. (semi)products not axiomatizable in the simplest way.",
+  "current_subjects": [
+   "semiproducts of modal logics",
+   "modal logic products",
+   "modal logic semiproducts"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.18502v1",
+  "title": "From Regional Topology to Point-Class Topology in Tarski's Geometry of Solids",
+  "abstract": "Tarski's geometry of solids reconstructs point-like objects from concentric families of spherical regions rather than taking points as primitive entities. We formalize this reconstruction in Coq within a nominal mereological framework inspired by Lesniewski. The main question is how a regional, point-free geometry can support a Kuratowski closure operator on the objects obtained from such reconstructed points. We distinguish the regional topology of Tarski-Lesniewski solids from a point-class topology built on ball representatives. Point-like objects are treated as concentric point-classes, namely equivalence classes of ball representatives under equality of concentric families. Regional objects provide the source of basic neighbourhoods, but closure acts on point-class plurals rather than on solids themselves. We define point-open plurals and introduce a neighbourhood-based closure operator on them. The central Coq theorem proves that this operator satisfies the four Kuratowski closure axioms. We further define point-closed plurals as fixed points of this closure and derive a topolo",
+  "current_subjects": [
+   "Tarski geometry of solids",
+   "Kuratowski closure operator"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.18726v1",
+  "title": "On the possible values of the Rearrangement Number",
+  "abstract": "The rearrangement number $\\mathfrak{rr}$ is the least cardinality of a collection of permutations of $\u03c9$ such that every conditionally convergent real series is disrupted by some permutation in the collection. Blass, Brendle, Brian, Hamkins, Hardy, and Larson proved that $\\max\\{\\operatorname{cov}(\\mathcal N),\\mathfrak b\\}\\leq\\mathfrak{rr}\\leq\\operatorname{non}(\\mathcal M)$ and asked whether $\\mathfrak{rr}&lt;\\mathrm{non}(\\mathcal M)$ is consistent. We prove that $\\mathfrak{rr}&lt;\\operatorname{non}(\\mathcal M)$ is consistent with ZFC. We also prove, in a different forcing extension, that $\\max\\{\\operatorname{cov}(\\mathcal N),\\mathfrak b\\}&lt;\\mathfrak{rr}$. We further derive consequences for the subseries number $\\mathfrak{s}_{\\mathrm{sub}}$ and the splitting number $\\mathfrak s$.",
+  "current_subjects": [
+   "rearrangement number"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.18852v1",
+  "title": "A generic construction of free algebras in varieties of Hilbert algebras and Brouwerian semilattices",
+  "abstract": "We give a generic construction of the n-generated free Hilbert algebras and Brouwerian semilattices by a uniform method applicable to any variety of Hilbert algebras or Brouwerian semilattices, as long as a manageable description of subdirectly irreducible algebras in that variety is available. A slight modification yields analogous constructions for varieties of Hilbert algebras and Brouwerian semilattices with zero. As examples we construct free algebras in varieties of bounded height and of bounded width; we also find a closed formula for the free spectrum of linear Hilbert algebras. Finally, we obtain a few results on structural completeness of varieties of Hilbert algebras with zero, in particular, we give a sufficient condition for a quasi-equation to be equivalent to an equation.",
+  "current_subjects": [
+   "free Hilbert algebras",
+   "linear Hilbert algebras"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.18942v1",
+  "title": "Bounded elementary extensions of trees with unbounded paths",
+  "abstract": "A tree is a partially ordered set that is downwards linear and downwards connected. A tree is called bounded when each of its paths (i.e. maximal linearly ordered subsets) contains a greatest element. In a bounded tree, each path can be defined by a first-order formula using the leaf of the path as parameter. Bounded trees can be used to model computational systems such as Zeno machines whereby the leaf of a path represents the state to which an infinitely long sequence of computations converges, or a state that is assigned to a computational sequence that loops. We identify a sufficient condition under which certain trees that are not bounded, can be elementarily embedded in trees that are bounded. Several tree operations are also given, and Feferman-Vaught style preservation properties for these operations are proved.",
+  "current_subjects": [
+   "bounded trees",
+   "tree operations"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.18956v1",
+  "title": "Definable Classes of Models and Frames in Bi-intuitionistic Logic",
+  "abstract": "The question of the expressive power of a given logical language with Kripke relational semantics has at least two dimensions: (1) what the language can say about frames, and (2) what it can say about models. The Goldblatt-Thomason theorem provides a model-theoretic characterisation of modal axiomatisability for elementary classes of frames in terms of closure under taking generated subframes, disjoint unions, bounded morphic images, and reflection of ultrafilter extensions. Goldblatt also provides a similar characterisation for axiomatisability in intuitionistic logic of classes of models rather than frames. In this article we provide analogous results for bi-intuitionistic logic, a natural expressive extension of intuitionistic logic obtained by adding a binary connective dual to the intuitionistic implication, introduced in the 1970s independently by Dieter Klemke and Cecylia Rauszer. Together with previous results, such as a van Benthem bisimulation characterisation theorem and a Lindstrom theorem, this provides a complete picture of the expressive power of propositional bi-intui",
+  "current_subjects": [
+   "bi-intuitionistic logic"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.19085v1",
+  "title": "Herbrand Game Complexity",
+  "abstract": "The Student-Teacher game is an extension of Herbrand's theorem. In the game, Student and Teacher take turns giving values for existentially and universally quantified variables, and Student is allowed to backtrack to propose other values for existentially quantified variables. The game has become increasingly important for proving lower bounds on provability in theories of bounded arithmetic. In those applications, the game is played in an arithmetical theory; however, this paper studies the Student-Teacher game in the setting of pure first-order logic, so it is more closely related to Herbrand's theorem and the midsequent theorem. When played in pure first-order logic, a formula~$\\varphi$ is logically valid if and only if there is a Student-Teacher game with a winning strategy for Student for establishing~$\\varphi$. We present a refined version of the Student-Teacher game in arbitrary first-order universal theories and include a proof of the validity of Student-Teacher games from the sequent calculus midsequent theorem in an appendix. The game is presented as a finite tree with vert",
+  "current_subjects": [
+   "Student-Teacher game",
+   "Herbrand disjunctions"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.19202v1",
+  "title": "Homogeneous hypergraph regularity lemmas via $k$-strong honest definitions",
+  "abstract": "We prove that $(k+1)$-uniform hypergraphs definable in an NIP strongly $k$-distal structure satisfy a homogeneous regularity lemma -- they can be partitioned into a bounded number of simplicial complexes, most of which are homogeneous (meaning that the restriction of the hypergraph to the simplicial complex is either complete or empty). Furthermore, the parts of the partition can be chosen uniformly definably, and the size of the partition is polynomial in the reciprocal of the error parameter. This extends the homogeneous regularity lemma proven by Chernikov and Starchenko for hypergraphs definable in a distal structure. We prove this by introducing $k$-strong honest definitions and showing that an NIP structure is strongly $k$-distal if and only if every formula $\\varphi(x_1, ..., x_k; y)$ has a $k$-strong honest definition. This extends the theory of strong honest definitions in distal structures to the higher-arity setting.",
+  "current_subjects": [
+   "hypergraph regularity lemmas",
+   "k-strong honest definitions"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.19414v1",
+  "title": "Two questions of Kowalski-S\u0142omczy\u0144ska",
+  "abstract": "That the inclusion $Q(F_3(X))\\subseteq \\mathsf{Pa}^-_3$ is proper and Mod$(\\mathbf{qb}_3)$ is not generated by free $p$-algebras is proved, answering two open questions from Kowalski-S\u0142omczy\u0144ska \\cite{KowSlom}.",
+  "current_subjects": [
+   "quasi-boolean algebras",
+   "p-algebras"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.19419v1",
+  "title": "Inference-Behaviour Semantics for All$^\\ast$ Connectives in Two-Dimensional Sequent Calculi",
+  "abstract": "Inference-behaviour semantics (I-bS) is a new approach to proof-theoretic semantics, grounded in two inferentialist principles: (1) the use of an expression in reasoning determines its meaning, and (2) a connective is defined by its operational rules. I-bS operationalises these ideas by measuring the syntactic use of a connective in the proof of its definability, against a substructurally minimal derivability relation. I-bS thereby gives the meaning of a connective in terms of its semantic clause, i.e. minimal substructural rule pair. This paper validates and verifies I-bS by applying it to all $10,816$ connective rule pairs that can be formulated in two-dimensional sequent calculi using at most two premiss sequents and at most two active formulae. As a result, we find semantic clauses for exactly $21$ meaningful connectives, namely bottom, top, two negations (intuitionistic and dual-intuitionistic), group and lattice conjunction, disjunction and implication, as well as their converses and inverses. We use these results to precisely map the semantic interrelations among the connectiv",
+  "current_subjects": [
+   "inference-behaviour semantics",
+   "intuitionistic vs classical connectives"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.19556v1",
+  "title": "Trace-norm rigidity for reduced products of unitary groups and matrix algebras",
+  "abstract": "We study homomorphisms, with a focus on isomorphisms, between the tracial metric reduced products of finite dimensional unitary groups and of matrix algebras. A variant of Ulam stability for unitary groups and a classification of the almost surjective continuous homomorphisms between finite dimensional unitary groups are proved and then used to show that all isomorphisms of product form of these tracial reduced products are induced by almost permutations of the coordinates and coordinatewise application of automorphisms. We prove coordinate recognition for these reduced products and obtain under set theoretic assumptions rigidity and classification results for their full automorphism groups. For tracial reduced matrix algebras we obtain such rigidity result in the more general context of center-preserving $*$-homomorphisms.",
+  "current_subjects": [
+   "unitary groups",
+   "homomorphisms of unitary groups",
+   "reduced product isomorphisms"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.19564v1",
+  "title": "Model Theory of Generic Vector Space Endomorphisms IV: Preservation of NATP",
+  "abstract": "This paper further studies the model companion of an endomorphism acting on a vector space, possibly with extra structure. Let $T$ be a model-complete theory that $\\varnothing$-defines an infinite $K$-vector space $\\mathbb{V}$. In previous work, we introduced a family $\\{T^C_\u03b8: C \\in \\mathcal{C}\\}$ of extensions of the theory $T_\u03b8:= T \\cup \\{\\text{``$\u03b8$ is an endomorphism of $\\mathbb{V}$''}\\}$ that parameterizes all consistent extensions of the form $$ T_\u03b8\\cup \\left\\{\\sum\\nolimits_{k}\\bigcap\\nolimits_{l}\\operatorname{Ker}(\u03c1_{j, k, l}[\u03b8]) = \\sum\\nolimits_{k}\\bigcap\\nolimits_{l} \\operatorname{Ker}(\u03b7_{j, k, l}[\u03b8]) : j \\in \\mathcal{J}\\right\\}, $$ where all sums and intersections are finite, all the $\u03c1[\u03b8]$'s and $\u03b7[\u03b8]$'s are polynomials over $K$ with $\u03b8$ plugged in, and $\\mathcal{J}$ is some possibly infinite index set. We also presented a sufficient condition that implies that every $T^C_\u03b8$ has a model companion $T\u03b8^C$. In this paper, we show that, under this sufficient condition, the model companion $T\u03b8^C$ has $\\operatorname{NATP}$, a neostability property recently introduced by Ahn and",
+  "current_subjects": [
+   "model companions"
+  ],
+  "n_claims": 1
+ },
+ {
+  "page": "arxiv:2607.19587v1",
+  "title": "A Syntactic Approach to Ulmer's Bialgebras",
+  "abstract": "Ulmer introduced a semantic notion of bialgebras that unifies a broad class of algebraic and coalgebraic structures. We develop a syntactic counterpart by introducing signature pairs $(\u03a3,\u03c3)$ and bialgebraic theories $T$, providing a uniform language for constructing internal bialgebras in a $2$-categorical setting. For every bialgebraic theory $T$ and $\u03a3$-model $M$ within a $2$-category with PIE limits, we construct the object $M^T$ of internal $T$-bialgebras. Our approach to bialgebras admits a general Induced Functor of Algebras Theorem extending the classical lifting of lax monoidal functors to the categories of internal monoids. Since the construction of $M^T$ is expressed entirely in terms of PIE limits, accessibility, local presentability, orthogonal factorization systems, regularity, and exactness lift along the construction $M \\mapsto M^T$ under suitable assumptions.",
+  "current_subjects": [
+   "bialgebras",
+   "internal bialgebras"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.20221v1",
+  "title": "Fundamental Propositional Logic with Preconditional: Strong Completeness, Finite Model Property, and Modal Translations",
+  "abstract": "Fundamental logic (Holliday 2023) is a non-classical logic based only on the introduction and elimination rules for conjunction, disjunction, and negation in a Fitch-style natural deduction system, while a preconditional (Holliday 2025) is a binary operation on a bounded lattice satisfying five natural axioms and subsuming Heyting implication, the Sasaki hook on ortholattices, and Lewis-Stalnaker-style conditionals satisfying flattening. We combine the two by giving a consequence-relation presentation $\\mathsf{K}$ whose algebras are exactly Holliday's bounded lattices with a preconditional, and then studying two natural extensions, $\\mathsf{T}$ and $\\mathsf{F}$, the latter being fundamental propositional logic with a preconditional. For $\\mathsf{T}$ and $\\mathsf{F}$, we prove strong completeness with respect to a purely relational semantics, using a canonical model whose points are pairs of theories, and establish the finite model property and hence decidability. Finally, following Holliday and Massas (2026), we adapt their GMT- and Goldblatt-style embeddings to fundamental logic wit",
+  "current_subjects": [
+   "fundamental logic with preconditional",
+   "preconditional"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.20824v1",
+  "title": "Group Chunks in Model Theory and Algebraic Geometry",
+  "abstract": "We formulate a group chunk theorem in the context of sheaves on sites which generalizes many similar results in model theory and algebraic geometry. Secondly, we develop an algebro-geometric analogue of Hrushovski's method of producing a group chunk from germs of definable functions on stationary types. The use of the model-theoretic tools of canonical bases and elimination of imaginaries is replaced with the use of Hilbert schemes to study ``canonical'' families of rational morphisms, allowing us to extend the previously known results over more general base schemes. The proofs of these results involve some technical work which may be of independent interest. First, we study partial morphisms in arbitrary categories, and show that a presheaf of partial magmas on a small category admits a universal morphism to a group. On the model theory side, we show that type-definable sets of $M^{eq}$ can be interpreted as sheaf quotients of type-definable sets. On the algebraic geometry side, we develop a theory of rational morphisms and families of rational morphisms of schemes over an arbitrary",
+  "current_subjects": [
+   "group chunks",
+   "partial morphisms"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.21115v1",
+  "title": "The doctrinal G\u00f6del's completeness theorem and the type space functor",
+  "abstract": "We give a self-contained proof of G\u00f6del's completeness theorem entirely within the formalism of first-order Boolean doctrines (an algebraic approach to classical many-sorted first-order logic). Moreover, we show that G\u00f6del's completeness theorem entails that the fiberwise Stone dual of a first-order Boolean doctrine is its type space functor; roughly speaking, this means that the Stone dual of the Boolean algebra of formulas in context $X$ is the Stone space of $X$-pointed models modulo elementary equivalence.",
+  "current_subjects": [
+   "G\u00f6del completeness theorem",
+   "Boolean doctrines"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.21320v1",
+  "title": "Post Completeness in Conditional Logic",
+  "abstract": "A logic is Post complete if it is consistent but has no consistent proper extensions. In this article, we systematically investigate the Post complete extensions of certain basic conditional logics. We identify all of the finitely many regular and normal Post complete conditional logics, and prove analogues of Makinson's embedding theorems. We also show that certain basic conditional logics have uncountably many Post complete extensions for which closure under some, but not necessarily all, rules peculiar to the conditional are relaxed. We reflect on what our results tell us about the structure of certain lattices of conditional logics and also draw some morals for multimodal logic.",
+  "current_subjects": [
+   "Post complete conditional logics",
+   "conditional logic extensions",
+   "conditional logics"
+  ],
+  "n_claims": 3
+ },
+ {
+  "page": "arxiv:2607.21761v1",
+  "title": "Encoding orders and trees in real-valued functions",
+  "abstract": "We prove function-theoretic analogues of a quantitative result of Hodges on extracting the order property from a sufficiently large 2-tree coded in a binary relation. Similar analogues for functions were previously obtained by Daskalakis and Golowich and by Anderson and Benedikt. These results are from statistical learning theory, where 2-trees are captured by sequential fat-shattering dimension, and the order property is controlled by various notions of \"thresholds\". Our first main result (Theorem 1.11) focuses on extracting a less restrictive kind of threshold from a tree, and yields significantly better bounds compared to what can be obtained from earlier results focusing on more restrictive versions. Part of the motivation for Theorem 1.11 lies in a companion paper, where this theorem is used to obtain efficient bounds in quantitative regularity lemmas for \"stable functions\". Here will use Theorem 1.11 to reprove a result of Anderson and Benedikt in a stronger form and with improved bounds. We also use Theorem 1.11 to prove an at most double-exponential bound on dual sequential f",
+  "current_subjects": [
+   "fat-shattering dimension",
+   "sequential fat-shattering"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.21762v1",
+  "title": "Quantitative analytic stable regularity",
+  "abstract": "We prove quantitative stable regularity lemmas for binary real-valued functions, extending the work of Malliaris and Shelah for stable graphs. The statements of our results are modeled after non-quantitative theorems for stable functions due to Chavarria, Conant, and Pillay. One of the key tools in our quantitative proof is an \"analytic symmetry lemma\", which gives a function-theoretic analogue of the fact that a pair of good sets in a graph has density close to 0 or 1. We also develop a function-theoretic treatment of Malliaris and Shelah's random sampling method for refining partitions consisting of good sets into equipartitions.",
+  "current_subjects": [
+   "stable regularity lemmas",
+   "analytic symmetry"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.21976v1",
+  "title": "Point-to-set principles in dynamical systems",
+  "abstract": "In analogy to the point-to-set principle for Hausdorff and packing dimension of Lutz, Lutz, and Mayordomo, we develop a Kolmogorov complexity point-to-set principle framework for upper and lower topological pressure and BS dimension in dynamical systems (and by extension for upper and lower entropy). As a demonstration of this framework we expand upon the Bowen pressure equation results of Climenhaga, as well as prove a pointwise version of the Bowen pressure equation.",
+  "current_subjects": [
+   "topological pressure",
+   "Bowen pressure equation"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.22125v1",
+  "title": "On the completeness of the countable fragment of geometric logic",
+  "abstract": "We give self contained proofs of the completeness of countable $\u03c3$-coherent theories, for both propositional and predicate logic. By $\u03c3$-coherent logic we mean the fragment of geometric logic that only allows countable signatures and countably infinite disjunctions. In the propositional case, each theory determines a quasi-Polish space of models, and formulas (up to provable equivalence) are interpreted as continuous functions from the space of models to the Sierpinski space. In the predicate case, each theory determines a quasi-Polish category of models, and formulas (up to provable equivalence) are interpreted as continuous functors from the category of models to the quasi-Polish category of overt discrete quasi-Polish spaces. We further extend this analogy by investigating a notion of ``sobriety'' for certain topological categories.",
+  "current_subjects": [
+   "\u03c3-coherent logic",
+   "\u03c3-coherent theories"
+  ],
+  "n_claims": 2
+ },
+ {
+  "page": "arxiv:2607.22196v1",
+  "title": "Ramsey-Theoretic Finiteness in Choiceless Set Theory: The Gower's Collapse and Rainbow and Canonical Separations",
+  "abstract": "We study finiteness classes arising from Ramsey-theoretic principles in set theory without the Axiom of Choice. First, we answer a question of Brot, Cao, and Fern\u00e1ndez-Bret\u00f3n concerning Gowers' $\\mathbf{FIN}_k$ theorem. The $\\mathbf{FIN}_k$ operation gives rise to a finiteness notion for each $k\\geq 1$, but we show that this notion is independent of the value of $k$: the resulting hierarchy collapses, and every level is equivalent to $H$-finiteness, i.e., to Dedekind-finiteness of $[X]^{&lt;\u03c9}$. We then turn to the Rainbow Ramsey theorem and the Canonical Ramsey theorem. The corresponding failure classes $\\operatorname{\\mathbf{RRT-Fin}_n^m}$ and $\\operatorname{\\mathbf{CRT-Fin}}$ are genuine finiteness classes contained in $\\operatorname{\\mathbf{D-Fin}}$. We prove several inclusions placing them relative to standard Ramsey-theoretic finiteness classes of Brot--Cao--Fern\u00e1ndez-Bret\u00f3n, prove their independence from the collapsed Hindman--Gowers class, and analyze the parameter dependence of the rainbow classes through Fraenkel--Mostowski examples. The finer questions of strictness, and t",
+  "current_subjects": [
+   "FIN_k hierarchy",
+   "Ramsey-theoretic finiteness",
+   "finiteness classes"
+  ],
+  "n_claims": 3
+ }
+]
