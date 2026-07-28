@@ -2,6 +2,19 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D103: The audit was grading on 8k of a 40k source — the full text settles all three survivors, ONE IN EACH DIRECTION, and both raters land at the gate
+D102 left three rater disagreements and I called them an evidential standard. That was half right. The audit fed graders `body_window` (~8k), a field sized to fit an *extraction* prompt; the retained source layer holds up to **40k**. Neither rater could see the rest, and all three disputes were resolvable in it.
+
+- **idx 48 (ANNS / HNSW) — Sol was right, I was wrong.** HNSW occurs **once** in the whole paper, in a related-work contrast ("While the widely used HNSW builds rapidly… In contrast, the Dynamic Exploration Graph"). It is not an evaluated baseline. I inferred a comparison that does not exist.
+- **idx 19 (WML / DeepSeek) — I was right, Sol was wrong.** The full text has "We use DeepSeek-chat with thinking disabled" as the executor backbone and "DeepSeek WML uses 40 optimization examples". WML runs *on* DeepSeek; `P_BUILDS_ON` is correct.
+- **idx 44 (J-CoT / Coconut) — still open.** Coconut appears six times and the paper adopts Coconut-released data and curriculum for all baselines, which strongly implies but does not show a comparison row. **Left disputed rather than resolved in my favour.**
+
+**Corrected: mine 0.82 [0.69–0.90], Sol 0.80. Both raters at or above the gate**, from a band of 0.78–0.84 and, two runs ago, a 22-point split.
+
+**The correction moves MY number DOWN**, and that is the point of recording the rule alongside it: *a frozen label may be amended only on new evidence, with the evidence recorded and the direction disclosed — never to move a number toward a gate.* Written into the labels file next to the amendment.
+
+**Root cause fixed, not just the instance.** `adjudicate.py` now builds audit evidence from the **full cleaned fulltext**, falling back to the window only when no source is retained. The one-line law, and the fourth time this session that clipped evidence produced a wrong verdict (my D97 grading aid, the D98 typing DROPs, my D102 inferences, Sol's idx 19): **evidence for a verdict must never be narrower than evidence for the claim.** `_locate`'s docstring now says the same thing where the next person will hit it — what you pass in matters more than how well it searches.
+
 ## 2026-07-28 — D102: Acceptance run — **0.84 mine (PASS) / 0.76 Sol**, agreement 0.88 · declaring one policy closed two-thirds of the gap, and the remaining gap is THREE MORE conventions the auditor was never told
 Fresh 50 (seed 41) over the 941-claim v2, graded untruncated under the **declared** granularity policy stated at the top of the grading file.
 

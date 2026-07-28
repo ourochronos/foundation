@@ -116,6 +116,32 @@ def run(name: str, items: list[dict], prompt: str, allowed: set[str],
     print(f"[done] {p.relative_to(ROOT)}")
 
 
+
+def _body(p: dict) -> str:
+    """Full cleaned fulltext for audit evidence, not the extraction window.
+
+    D103: `body_window` is ~8k, sized to fit an extraction prompt; the
+    retained source runs to 40k. Auditing on the window capped what both
+    raters could know and produced three disagreements that the full text
+    settled — one in Sol's favour, one in mine, one still open. Evidence
+    for a verdict must not be narrower than evidence for the claim.
+    """
+    import json as _j
+    from pathlib import Path as _P
+    try:
+        from foundation.fulltext import clean
+        f = ROOT / "data/arxiv_ai/papers" / (
+            p.get("arxiv_id", "").replace(".", "_").replace("/", "_") + ".json")
+        if f.exists():
+            full = clean(_j.loads(f.read_text()).get("fulltext") or "",
+                         max_chars=10 ** 9)
+            if full:
+                return full
+    except Exception:
+        pass
+    return p.get("body_window", "")
+
+
 def _abstract_audit(name: str, slice_dir: str):
     """Shared arXiv claim-audit adjudication: FULL abstracts (D86
     truncation lesson — a clipped abstract manufactures NOT-ASSERTED
@@ -175,7 +201,7 @@ elif sys.argv[1] in ("resv2_50", "resv3_50"):
             f"  subject={s_['subject']!r} relation={s_['pid']} "
             f"object={s_['object']!r}\nTITLE: {p.get('title','?')}\n"
             f"ABSTRACT: {p.get('abstract','')}\n"
-            f"PAPER BODY:\n{p.get('body_window','')}")
+            f"PAPER BODY:\n{_body(p)}")
     header = (
         "You are an independent audit adjudicator. Each item is a SHARED "
         "RESOURCE claim: the paper's own entity (subject), a relation, and "

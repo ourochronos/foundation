@@ -43,6 +43,14 @@ def _locate(obj: str, sources, want: int = 3) -> list[str]:
     ones. So search every field, match on a punctuation-and-case-folded
     form (`Llama 3` finds `LLaMA-3.1-8B`), and fall back to the longest
     distinctive token before giving up.
+
+    WHAT YOU PASS IN MATTERS MORE THAN THIS FUNCTION (D103). Locating
+    perfectly inside an 8k window still hides whatever sits in the other
+    32k: all three of D102's surviving rater disagreements were settled
+    by the full retained text, one in each direction. For AUDIT evidence
+    pass the cleaned fulltext, not `body_window` — the window exists to
+    fit an extraction prompt, and reusing it as evidence quietly caps
+    what either rater can possibly know.
     """
     out: list[str] = []
     probes = [obj]
