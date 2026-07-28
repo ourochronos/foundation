@@ -209,6 +209,7 @@ for a in RELS:
     print(f"{a[2:14]:16s}" + "".join(f"{LINK[(a, b)]:10.3f}" for b in RELS))
 
 plan = P.make_planner(det, ans, art, arity_head=arity,
+                      cand_from_arity=True,
                       path_ok=lambda s, pm: bool(walk(s, list(pm))))
 rng_cprof = art["rng_cprof"]
 

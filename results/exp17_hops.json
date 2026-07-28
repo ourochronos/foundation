@@ -1,7 +1,7 @@
 {
  "manifest": {
-  "generated_at": "2026-07-28T23:02:22.279841+00:00",
-  "commit": "3b58ca327dfa8479a255204f699a8903a93d2d17",
+  "generated_at": "2026-07-28T23:35:02.466146+00:00",
+  "commit": "582a4af49d6543870d26d090b2b060c71231c3c8",
   "dirty": true,
   "command": "scripts/exp17_hops.py",
   "seed": 0,
@@ -36,43 +36,42 @@
  },
  "held_out_compositions": {
   "n": 2964,
-  "exact_chain_recovered": 0.4197,
+  "exact_chain_recovered": 0.5341,
   "ungated": {
-   "abstain": 758,
-   "correct": 1244,
-   "wrong": 962
+   "correct": 1583,
+   "wrong": 1283,
+   "abstain": 98
   },
   "gated": {
-   "abstain": 758,
-   "correct": 1244,
-   "wrong": 962,
+   "correct": 1583,
+   "wrong": 1283,
+   "abstain": 98,
    "threshold": 0.0,
-   "precision_when_answered": 0.5639,
+   "precision_when_answered": 0.5523,
    "precision_ci95": [
-    0.5431,
-    0.5845
+    0.5341,
+    0.5705
    ]
   },
   "per_composition_gated": {
    "P_CITES>P_INTRODUCES": {
-    "abstain": 257,
-    "correct": 409,
-    "wrong": 778
+    "correct": 511,
+    "wrong": 929,
+    "abstain": 4
    },
    "P_INTRODUCES>P_EVALUATES_ON": {
-    "abstain": 501,
-    "correct": 835,
-    "wrong": 184
+    "wrong": 354,
+    "correct": 1072,
+    "abstain": 94
    }
   }
  },
  "seen_compositions": {
   "n": 1299,
-  "exact_chain_recovered": 0.9985,
+  "exact_chain_recovered": 0.9923,
   "ungated": {
-   "correct": 1297,
-   "wrong": 1,
-   "abstain": 1
+   "correct": 1289,
+   "wrong": 10
   }
  },
  "scope": "2-hop only. Compositions held out entirely, so this measures chaining relations never seen chained \u2014 not phrasing robustness, which D110 covers. Hop questions are templated (2 noun phrases x 2 question forms per composition)."

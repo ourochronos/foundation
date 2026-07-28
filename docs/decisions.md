@@ -2,6 +2,31 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D112: Zero-shot composition is recall-yes / order-no — and with R relations the pragmatic fix is to enumerate, not to generalise
+Follow-up to D111's open problem, narrowed by diagnosis rather than by trying architectures. `scripts/exp18_compose.py`.
+
+**Step 1 — the failure was not recall.** On held-out-composition questions both relations sit in the detector's **top-2 81.7%** of the time, but both clear the 0.5 threshold only **32.9%**. The head is miscalibrated on relation pairs it never saw co-active, and `req` was built by absolute threshold, so the second relation was silently dropped and the planner was never required to use it. **Fix**: take the candidate relations as the top-k by detection score, k from D111's arity head (`cand_from_arity=True`). Ranking survives miscalibration that thresholding does not. Held-out correct 0.420 → **0.534**. But wrong rose 0.325 → 0.433 and precision stayed flat (~0.55): this bought **coverage, not correctness**, and is reported as such.
+
+**Step 2 — what remained was ORDER, which the representation cannot express.** A multi-label relation vector is a **set**; a chain is a **sequence**. This is the same class of gap as D111's "cannot say twice". Ordering was then measured in isolation — relation pair *given correct*, only the order scored, same-relation chains excluded because they pose no ordering question (n=2,964 held-out):
+
+| scorer | held-out | seen |
+|---|---|---|
+| B additive `unit(p1+p2)` — order-blind null | 0.000 (100% ties) | 0.000 |
+| C asymmetric `unit(a·p1+b·p2)`, a,b fit on seen | **0.460** CI [0.442, 0.478] | 0.793 |
+| D position-specific `first`/`last` heads | **0.513** CI [0.495, 0.531] | **1.000** |
+
+**The null did its job** — B is order-blind by construction and produced 100% ties, which is what confirms the harness measures order and not something else (D8's positive-control discipline, inverted).
+
+**C failed BELOW chance, which is more informative than failing at it.** Two scalars on a bag cannot encode sequence, so the fit absorbed **relation-specific salience** — `P_CITES` has a weaker prototype than `P_INTRODUCES`, and a=1.40/b=0.95 encodes "trust the stronger one", not "trust the first one". When the salience ordering flips on an unseen pair it anti-transfers. A below-chance result is a sign-flipped signal, not an absent one, and should be read that way.
+
+**D settles it.** Position-specific heads memorise seen compositions **perfectly** (1.000) and transfer **nothing** (0.513, CI straddling 0.5). Order information for an unseen composition type is not linearly recoverable from the frozen question embedding. Three mechanisms of different shapes all fail; this is a property of the representation, not of any one operator.
+
+**Consistency check** (the numbers must add up, or one of them is wrong): recall 0.817 × chance order 0.5 ≈ 0.41, lifted to the observed 0.534 end-to-end by D111's entity-level walkability filter breaking ties in the store. The three measurements are mutually consistent, which is the evidence that the decomposition is real rather than an artifact of how the runs were sliced.
+
+**Decision — the pragmatic conclusion, stated plainly**: with R relations there are only R² ordered pairs, **25 for this corpus, all enumerable**. Zero-shot composition is a *research* question, not a deployment blocker: train on every composition type and the memorisation that scores 1.000 is sufficient. This is compatible with the reindex-free constraint — adding a relation adds 2R+1 compositions and retrains two small heads, and **does not re-project a single stored claim**. The honest claim for a writeup is therefore "composes over enumerated relation pairs", never "composes zero-shot".
+
+**Revisit**: (a) when R grows past the point where R² enumeration is cheap, this becomes load-bearing again — a rough threshold is worth setting before then; (b) order might be recoverable from a non-frozen encoder or from token-level structure, neither tested; (c) all of this is 2-hop, and 3-hop is R³.
+
 ## 2026-07-28 — D111: Multi-hop on the real store — two structural limits found and fixed, and composition turns out to be memorised rather than composed
 `scripts/exp17_hops.py`. D110 left `world["hops"]` empty, so composing relations over real claims had never been asked. 9,456 hop questions over 10 real compositions, with **whole compositions held out** (`P_INTRODUCES→P_EVALUATES_ON`, `P_CITES→P_INTRODUCES` never trained, though both constituents are trained heavily as singles). That asks whether the planner can chain relations it has never seen chained, rather than whether it memorised a chain.
 

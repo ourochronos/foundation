@@ -193,7 +193,8 @@ def train_heads_with(art, world, Zq, Zh, seed=0, epochs=60):
 
 def make_planner(det_head, ans_head, art, det_floor=0.2, req_thr=0.5,
                  feas_thr=0.35, max_k=3, cand_k=4, link_ok=None,
-                 entry_ok=None, arity_head=None, path_ok=None):
+                 entry_ok=None, arity_head=None, path_ok=None,
+                 cand_from_arity=False):
     """v0.6 final planner: PoE (detection log-odds + answer-cluster
     log-mass), participation feasibility gate, required+restricted
     detected relations (D44).
@@ -222,9 +223,16 @@ def make_planner(det_head, ans_head, art, det_floor=0.2, req_thr=0.5,
                     arity_head(torch.tensor(q_emb)[None])[0])) + 1
                 ks = [k_hat]
         det = {r: float(pv[j]) for j, r in enumerate(RELS)}
-        cand = [r for r in sorted(det, key=det.get, reverse=True)[:cand_k]
-                if det[r] >= det_floor]
-        req = {r for r in RELS if det[r] > req_thr}
+        order = sorted(det, key=det.get, reverse=True)
+        if cand_from_arity and arity_head is not None:
+            # k relations for a k-hop path; every one of them must be used,
+            # so the second relation cannot be dropped for being under a
+            # threshold it was never calibrated to clear.
+            cand = order[:max(ks)]
+            req = set()
+        else:
+            cand = [r for r in order[:cand_k] if det[r] >= det_floor]
+            req = {r for r in RELS if det[r] > req_thr}
         if subject not in name_i:
             return None
         subj_p = P_name[name_i[subject]]

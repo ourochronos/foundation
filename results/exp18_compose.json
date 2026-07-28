@@ -1,0 +1,65 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-28T23:37:42.120299+00:00",
+  "commit": "582a4af49d6543870d26d090b2b060c71231c3c8",
+  "dirty": true,
+  "command": "scripts/exp18_compose.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "grid": [
+    -1.0,
+    2.0,
+    61
+   ],
+   "held_out": [
+    "P_CITES>P_INTRODUCES",
+    "P_INTRODUCES>P_EVALUATES_ON"
+   ]
+  }
+ },
+ "fitted": {
+  "a": 1.4000000000000004,
+  "b": 0.9500000000000002,
+  "mean_cos_seen": 0.7985,
+  "held_out_cos": {
+   "P_CITES>P_INTRODUCES": 0.7665,
+   "P_INTRODUCES>P_EVALUATES_ON": 0.8648
+  }
+ },
+ "ordering": {
+  "B additive (order-blind null)": {
+   "held_out": 0.0,
+   "held_out_ties": 1.0,
+   "held_out_n": 2964,
+   "seen": 0.0
+  },
+  "C asymmetric (a,b fit on seen)": {
+   "held_out": 0.4602,
+   "held_out_ties": 0.0,
+   "held_out_n": 2964,
+   "seen": 0.7933
+  },
+  "D position-specific heads": {
+   "held_out": 0.5132,
+   "held_out_ties": 0.0,
+   "held_out_n": 2964,
+   "seen": 1.0,
+   "ci95": [
+    0.4952,
+    0.5311
+   ]
+  }
+ },
+ "ordering_ci95_C": [
+  0.4423,
+  0.4782
+ ],
+ "scope": "Ordering measured with the relation PAIR given correct, so this isolates order from recall. Same-relation chains are excluded \u2014 they pose no ordering question. Compositions in HOLD were never used to fit (a, b)."
+}
