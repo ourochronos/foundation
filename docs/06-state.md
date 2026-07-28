@@ -9,8 +9,15 @@
 | a link target is canonical for the page it names | `object_page` | citations |
 | community vocabulary is one entity by name | `object_global` | shared resources |
 
-**Open**: the resource axis is **NOT ACCEPTED**. D100 measured 0.80 (mine) / 0.58 (Sol) and the 22-point gap was one undeclared policy — resource-name granularity — now written into both prompts and the audit instrument. A re-audit under that declared policy, after the generic blocklist and `object_global`, is the next owed number.
+**Resource axis: AT THE GATE.** Frozen 50-audit (D102/D103) — **mine 0.82 [0.69–0.90], Sol 0.80**, agreement 0.940, κ 0.806. From a 22-point rater split two runs earlier; the corpus barely moved, the *instrument* did. Remaining: one still-disputed item (idx 44), and two mechanical filters with known ceilings — the model-as-target check is a hardcoded vendor list that cannot know `Pillar-0` or `EEG Conformer`, and the generic blocklist matches exact strings so it misses `variational autoencoders` when it holds `vae`.
 
+**Four audit laws, all learned the hard way this session** (each cost a wrong verdict before it was written down):
+1. **Evidence for a verdict must never be narrower than evidence for the claim** — the audit graded on an 8k window of a 40k source (D103).
+2. **A locator's failure to find evidence is never itself evidence** — a stage that can delete must abstain instead (D98).
+3. **An adjudicator is a second rater, not an oracle** — verify its corrections against the source (D98).
+4. **Every convention a corpus declares to its extractor must be declared to its auditor** — granularity, training-corpora, benchmark-scored-models, descriptive subjects (D100/D102).
+
+**A frozen label may be amended only on new evidence, with the evidence recorded and the direction disclosed — never to move a number toward a gate** (D103; the amendment that established it moved the number down).
 
 ## Artifacts
 
