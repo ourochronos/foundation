@@ -1,0 +1,49 @@
+{"sid": "out_g5.jsonl:14", "pid": "P_EVALUATES_ON", "why": "Benchmarks at a fixed 1.04M-token input span...LongBench-v2 realistic long-context code-reasoning QA"}
+{"sid": "out_g5.jsonl:15", "pid": "P_EVALUATES_ON", "why": "Benchmarks at a fixed 1.04M-token input span...BABILong multi-fact reasoning QA"}
+{"sid": "out_g5.jsonl:16", "pid": "P_BUILDS_ON", "why": "start from the publicly available w2v-BERT 2.0 encoder...fine-tune it for ASR"}
+{"sid": "out_g5.jsonl:17", "pid": "DROP", "why": "Kernel methods such as maximum mean discrepancy...while more recent methods improve testing power (related work)"}
+{"sid": "out_g5.jsonl:18", "pid": "P_BUILDS_ON", "why": "Our approach builds on the zero-flow criterion"}
+{"sid": "out_g5.jsonl:19", "pid": "P_BUILDS_ON", "why": "In physics-informed neural networks (PINNs) the equation residual is part of the loss function...For functional equations, a neural representation is attractive"}
+{"sid": "out_g6.jsonl:0", "pid": "P_BUILDS_ON", "why": "The student is initialized from Qwen3-Omni-30B-A3B-Thinking"}
+{"sid": "out_g6.jsonl:1", "pid": "P_BUILDS_ON", "why": "The teacher is Qwen3-235B-A22B-Thinking...held frozen throughout"}
+{"sid": "out_g6.jsonl:2", "pid": "P_EVALUATES_ON", "why": "Main evaluation results on MMSU...MMSU evaluation dimensions include Semantics, Phonology, Style, and Traits"}
+{"sid": "out_g6.jsonl:3", "pid": "P_EVALUATES_ON", "why": "Table 1: Main evaluation results on MMSU, MMAU, and BIG Bench Audio"}
+{"sid": "out_g6.jsonl:4", "pid": "P_EVALUATES_ON", "why": "Table 1: Main evaluation results on...BIG Bench Audio"}
+{"sid": "out_g6.jsonl:5", "pid": "P_EVALUATES_ON", "why": "We then stress-test intermediate reasoning quality on the held-out MMAR benchmark"}
+{"sid": "out_g6.jsonl:6", "pid": "P_EVALUATES_ON", "why": "evaluate out-of-distribution generalization on benchmarks with significant domain shifts, including the audio-visual WorldSense"}
+{"sid": "out_g6.jsonl:7", "pid": "P_EVALUATES_ON", "why": "Tier-2 draws audio and captions from AudioCaps...used for training"}
+{"sid": "out_g6.jsonl:8", "pid": "P_EVALUATES_ON", "why": "Tier-2 draws audio and captions from...Clotho v2.1...used for training"}
+{"sid": "out_g6.jsonl:9", "pid": "P_EVALUATES_ON", "why": "Tier-3 is built on dyadic and multi-party spoken dialogues from IEMOCAP...used for training"}
+{"sid": "out_g6.jsonl:10", "pid": "P_EVALUATES_ON", "why": "Tier-3 is built on...MELD...augmented with prosody- and turn-level meta-captions for training"}
+{"sid": "out_g6.jsonl:11", "pid": "P_EVALUATES_ON", "why": "We evaluate VCSD on Qwen3-VL...at 2B, 4B, and 8B...Table reports primary comparison across model scales"}
+{"sid": "out_g6.jsonl:12", "pid": "P_EVALUATES_ON", "why": "We evaluate VCSD on...Qwen3.5 (Qwen Team, 2026) at 2B, 4B, and 9B...on benchmark results"}
+{"sid": "out_g6.jsonl:13", "pid": "P_EVALUATES_ON", "why": "All post-training methods are trained on the ViRL39K single-image dataset"}
+{"sid": "out_g6.jsonl:14", "pid": "P_EVALUATES_ON", "why": "We evaluate general visual perception with BLINK (Fu et al., 2024)...benchmark evaluation"}
+{"sid": "out_g6.jsonl:15", "pid": "P_EVALUATES_ON", "why": "We evaluate general visual perception with...MMStar (Chen et al., 2024)...benchmark evaluation"}
+{"sid": "out_g6.jsonl:16", "pid": "P_EVALUATES_ON", "why": "visual mathematics with MathVista (Lu et al., 2024)...benchmark evaluation"}
+{"sid": "out_g6.jsonl:17", "pid": "P_EVALUATES_ON", "why": "fine-grained and high-resolution perception with V* Bench (Wu and Xie, 2023)...benchmark evaluation"}
+{"sid": "out_g6.jsonl:18", "pid": "P_EVALUATES_ON", "why": "fine-grained and high-resolution perception with...HRBench4K/8K (Wang et al., 2025b)...benchmark evaluation"}
+{"sid": "out_g6.jsonl:19", "pid": "P_EVALUATES_ON", "why": "hallucination with HallusionBench (Guan et al., 2024)...benchmark evaluation"}
+{"sid": "out_g6.jsonl:20", "pid": "P_COMPARES_TO", "why": "Each model block compares the unmodified base model, the published answer-hint OPSD method, and VCSD...as baseline"}
+{"sid": "out_g6.jsonl:21", "pid": "DROP", "why": "Among the most widely used algorithms are Isolation Forest, which isolates anomalous observations (related work discussion of algorithms)"}
+{"sid": "out_g6.jsonl:22", "pid": "DROP", "why": "Local Outlier Factor, which identifies observations with substantially lower local density (related work discussion of algorithms)"}
+{"sid": "out_g6.jsonl:23", "pid": "DROP", "why": "Elliptic Envelope, which identifies observations with low probability under an assumed multivariate Gaussian distribution (related work discussion)"}
+{"sid": "out_g7.jsonl:0", "pid": "P_EVALUATES_ON", "why": "For real-world evaluation, we use three datasets from the UCR Archive (Dau et al., 2019) : Epilepsy, ERing, and ArticularyWordRecognition"}
+{"sid": "out_g7.jsonl:1", "pid": "P_EVALUATES_ON", "why": "For real-world evaluation, we use three datasets from the UCR Archive...ERing...span diverse temporal classification domains"}
+{"sid": "out_g7.jsonl:2", "pid": "P_EVALUATES_ON", "why": "For real-world evaluation, we use three datasets from the UCR Archive...ArticularyWordRecognition (WordRec)...evaluation domains"}
+{"sid": "out_g7.jsonl:3", "pid": "P_COMPARES_TO", "why": "Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al., 2023)"}
+{"sid": "out_g7.jsonl:4", "pid": "P_COMPARES_TO", "why": "Baselines. We compare our method with several baselines...TimeX++ (Liu et al., 2024)...Dynamask"}
+{"sid": "out_g7.jsonl:5", "pid": "P_COMPARES_TO", "why": "Baselines. We compare our method with several baselines...Dynamask (Crabbé and Van Der Schaar, 2021)"}
+{"sid": "out_g7.jsonl:6", "pid": "P_COMPARES_TO", "why": "gradient-based methods, including CORTX (Chuang et al., 2023)...baseline comparison"}
+{"sid": "out_g7.jsonl:7", "pid": "P_COMPARES_TO", "why": "gradient-based methods, including...WinIT (Leung et al., 2021)...baseline comparison"}
+{"sid": "out_g7.jsonl:8", "pid": "P_COMPARES_TO", "why": "gradient-based methods, including...SGT+GRAD (Ismail et al., 2021)...baseline comparison"}
+{"sid": "out_g7.jsonl:9", "pid": "DROP", "why": "training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity (background motivation, not used)"}
+{"sid": "out_g7.jsonl:10", "pid": "P_EVALUATES_ON", "why": "a state-of-the-art Roboflow RF-DETR Instance Segmentation...was deployed. The model was trained using the synthetic samples to evaluate"}
+{"sid": "out_g7.jsonl:11", "pid": "P_EVALUATES_ON", "why": "Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task"}
+{"sid": "out_g7.jsonl:12", "pid": "P_EVALUATES_ON", "why": "two UCI benchmark datasets (Concrete, YearPredictionMSD)...Extensive empirical validation"}
+{"sid": "out_g7.jsonl:13", "pid": "P_EVALUATES_ON", "why": "MNIST image classification task demonstrates that NAP achieves...Extensive empirical validation"}
+{"sid": "out_g7.jsonl:14", "pid": "P_BUILDS_ON", "why": "Lottery ticket hypothesis (Frankle and Carbin (2019)) able to prune up to 80% of the network...This frame has been converted into Bayesian"}
+{"sid": "out_g7.jsonl:15", "pid": "P_BUILDS_ON", "why": "the Bayesian Lottery Ticket initialises the procedure from a compressed, well-conditioned subnetwork rather than a redundant dense one"}
+{"sid": "out_g7.jsonl:16", "pid": "P_BUILDS_ON", "why": "the spike-and-slab Independent Gaussian prior of Jantre et al. (2023) provides the variational machinery for computing neuron-level inclusion probabilities"}
+{"sid": "out_g7.jsonl:17", "pid": "P_COMPARES_TO", "why": "memory-bank detectors append the most ID-looking stream points to an ID bank (e.g. Zhang et al., 2023, AdaODD)...These methods report substantial gains...They also, as we show, fail"}
+{"sid": "out_g7.jsonl:18", "pid": "P_COMPARES_TO", "why": "the most OOD-looking points to an OOD dictionary (e.g. Yang et al., 2025, OODD)...memory-bank methods...fail in a specific way"}

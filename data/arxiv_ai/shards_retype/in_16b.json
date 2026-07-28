@@ -1,0 +1,227 @@
+[
+ {
+  "sid": "out_g6.jsonl:24",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "Epilepsy",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TimePNS is evaluated on the Epilepsy dataset from UCR Archive.",
+  "contexts": [
+   "[body] ...23 ) : FreqShapes, SeqComb-MV, and Low-VAR. These datasets are carefully designed to cover diverse temporal dynamics in multivariate settings, where correctly identifying salient features at different timesteps is non-trivial. For real-world evaluation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:25",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "ERing",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TimePNS is evaluated on the ERing dataset from UCR Archive.",
+  "contexts": [
+   "[body] ...he model actually relies on. When applied to new time series data, such fragile correlations may no longer persist, making these explanations unreliable under distribution shift (Yang et al. , 2023 ; Sch\u00f6lkopf et al. , 2021 ) . In contrast, the complementary notion of necessity provides an additional criterion for filtering out correlated but non-essential subsequences. In Pearl\u2019s framework, necessity is captured through a counterfactual \u2018what-if\u2019 question: would the outcome fail to occur if the factor of interest were absent (Pearl, 2009 ) ? This counterfactual view sharpens the notion of time series explanation: a factor is not explanatory simply bec...",
+   "[body] ...qShapes, SeqComb-MV, and Low-VAR. These datasets are carefully designed to cover diverse temporal dynamics in multivariate settings, where correctly identifying salient features at different timesteps is non-trivial. For real-world evaluation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based meth..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:26",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "ArticularyWordRecognition",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "TimePNS is evaluated on the ArticularyWordRecognition dataset from UCR Archive.",
+  "contexts": [
+   "[body] ...qComb-MV, and Low-VAR. These datasets are carefully designed to cover diverse temporal dynamics in multivariate settings, where correctly identifying salient features at different timesteps is non-trivial. For real-world evaluation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, includ..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:27",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "TimeX",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against TimeX baseline method.",
+  "contexts": [
+   "[body] ...s non-trivial. For real-world evaluation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets...",
+   "[body] ...valuation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated sali...",
+   "[body] ...ng and localization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods can be effective when the synthetic signal is clean and explicit. Nevertheless, TimePNS delivers the most consistent AUPRC gains, which is important for identifying compact and precise explanatory subsequences. For real-world datasets, wh..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:28",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "TimeX++",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against TimeX++ baseline method.",
+  "contexts": [
+   "[body] ...s non-trivial. For real-world evaluation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets...",
+   "[body] ...valuation, we use three datasets from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated sali...",
+   "[body] ...ng and localization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods can be effective when the synthetic signal is clean and explicit. Nevertheless, TimePNS delivers the most consistent AUPRC gains, which is important for identifying compact and precise explanatory subsequences. For real-world datasets, wh..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:29",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "Dynamask",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against Dynamask baseline method.",
+  "contexts": [
+   "[body] ...s from the UCR Archive (Dau et al. , 2019 ) : Epilepsy, ERing, and ArticularyWordRecognition (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated saliency maps with the ground-truth..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:30",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "CORTX",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against CORTX baseline method.",
+  "contexts": [
+   "[body] ...n (WordRec), which span diverse temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated saliency maps with the ground-truth predictive regions specified by the data-generating process. These regions serve as suffic...",
+   "[body] ...quality on synthetic datasets with ground-truth saliency. TimePNS achieves the best AUPRC on all three datasets and the best AUP on SeqComb-MV and FreqShape, showing that the proposed necessity-aware refinement improves the ranking and localization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods can be ef...",
+   "[body] ...hree datasets and the best AUP on SeqComb-MV and FreqShape, showing that the proposed necessity-aware refinement improves the ranking and localization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods can be effective when the synthetic signal is clean and explicit. Nevertheless, TimePNS delivers the most c..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:31",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "WinIT",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against WinIT baseline method.",
+  "contexts": [
+   "[body] ...temporal classification domains. Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated saliency maps with the ground-truth predictive regions specified by the data-generating process. These regions serve as sufficient and necessary explanatory s...",
+   "[body] ...nation quality on synthetic datasets with ground-truth saliency. TimePNS achieves the best AUPRC on all three datasets and the best AUP on SeqComb-MV and FreqShape, showing that the proposed necessity-aware refinement improves the ranking and localization of salient regions. Compared with traditional methods, Dynamsk, WINIT, CORTX, and SGT show competitive results on individual metrics, such as SGT\u2019s AUR on SeqCombMV and CORTX\u2019s AUPRC on FreqShape, but their performance is less consistent across datasets and metrics. Among stronger recent baselines, TimeX and TimeX++ achieve the best AUR or AUP on LowVER, suggesting that sufficiency-oriented methods ca..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:32",
+  "page": "arxiv:2607.21573v1",
+  "subject": "TimePNS",
+  "object": "SGT+GRAD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "TimePNS is compared against SGT+GRAD baseline method.",
+  "contexts": [
+   "[body] ...Baselines. We compare our method with several baselines, including perturbation-based methods, namely TimeX (Queen et al. , 2023 ) , TimeX++ (Liu et al. , 2024 ) , Dynamask (Crabb\u00e9 and Van Der Schaar, 2021 ) , as well as gradient-based methods, including CORTX (Chuang et al. , 2023 ) , WinIT (Leung et al. , 2021 ) and SGT+GRAD (Ismail et al. , 2021 ) , Evaluation Metrics. We evaluate explanations under two settings. For synthetic datasets, we compare the generated saliency maps with the ground-truth predictive regions specified by the data-generating process. These regions serve as sufficient and necessary explanatory signals. Following Crabb\u00e9 and Van..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:33",
+  "page": "arxiv:2607.21577v1",
+  "subject": "defect detection system",
+  "object": "YOLO",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "The paper addresses training challenges faced by baseline models such as YOLO.",
+  "contexts": [
+   "[abstract] ...articularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity of real-world industrial defects images. To overcome this limitation, this paper introduces a novel synthetic data generation framework tailored for rotogravure printing quality control. The proposed pipeline automatically generates high-fidelity images of specific p..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:34",
+  "page": "arxiv:2607.21577v1",
+  "subject": "defect detection system",
+  "object": "RFDETR",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "The framework trains a state-of-the-art RFDETR object-detection model on synthetic data.",
+  "contexts": [
+   "[body] ...proposed synthetic data generation framework, a comprehensive dataset consisting of 7,533 synthetically generated images was used. The generated dataset was structured and split on the Roboflow platform to ensure a rigorous evaluation process. For the defect detection and segmentation task, a state-of-the-art Roboflow RF-DETR Instance Segmentation (Large) architecture [ 15 ] was deployed. The model was trained using the synthetic samples to evaluate how successfully the generated annotations and defect features could transfer to robust industrial vision models. Testing was strictly performed on an independent, real-world test set consisting of authenti...",
+   "[abstract] ...ipeline automatically generates high-fidelity images of specific printing defects (creases, streaks, misregistration, etc.) and outputs corresponding bounding boxes and annotations. To validate the framework, a synthetic dataset of 7533 images was generated and used to train the state-of-the-art object-detection model RFDETR. Experimental results demonstrate that the model trained on our synthetic data achieves a Mean Average Precision (mAP) of 80.9\\% on real industrial testing samples. This framework provides a zero-cost, rapid-deployment solution for automating defect inspection in printing lines without requiring massive manual data collection...."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:35",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "Concrete",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "NAP is validated on the UCI Concrete dataset.",
+  "contexts": [
+   "[body] ...ed at the end of the previous paragraph. It treats each neuron as an atom in the sense of Fokou\u00e9 ( 2008 ) , assigns it a posterior inclusion probability through a spike-and-slab variational posterior, and selects the final architecture by identifying the most likely layer size and retaining the most prevalent neurons. Concretely, the spike-and-slab Independent Gaussian prior of Jantre et al. ( 2023 ) provides the variational machinery for computing neuron-level inclusion probabilities within a feedforward network, while the Bayesian Lottery Ticket initialises the procedure from a compressed, well-conditioned subnetwork rather than a redundant dense one...",
+   "[abstract] ...t variational training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignora..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:36",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "YearPredictionMSD",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "NAP is validated on the UCI YearPredictionMSD dataset.",
+  "contexts": [
+   "[abstract] ...nal training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignorance accoun..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:37",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "MNIST",
+  "current_pid": "P_EVALUATES_ON",
+  "statement": "NAP is evaluated on MNIST for image classification.",
+  "contexts": [
+   "[abstract] ...d Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignorance accounts for only 3 to 4% of total...",
+   "[abstract] ...model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignorance accounts for only 3 to 4% of total predictive variance across all experiments, and regression reliability diagrams confirm a near-nominal predictive interval coverage (93.4% observed against a 95% target). These..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:38",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "Lottery Ticket Hypothesis",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NAP builds on the Lottery Ticket Hypothesis for structured pruning.",
+  "contexts": [
+   "[body] ...eliminate those with nonsignificant or not positive contribution to the success of final machine learning task ( Han et al. ( 2015 ); Jantre et al. ( 2023 ) ). Today, research on interpretable and sparse neural network architectures has achieved great progress with the development of an empirical framework such as the Lottery ticket hypothesis ( Frankle and Carbin ( 2019 ) ) able to prune up to 80% of the network with at least the same performance as the dense network. This frame has been converted into Bayesian to develop the Bayesian winning ticket ( Kuhn et al. ( 2026 ) ) for uncertainty quantification. However, it performs at the weights level and..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:39",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "Bayesian Lottery Ticket",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NAP adopts Bayesian Lottery Ticket for probabilistic node-level model selection.",
+  "contexts": [
+   "[body] ...Also, premature pruning can in some cases result in a loss of accuracy due to nodes removed in earlier stages of the training that could contribute considerably by the end of the training. These limitations highlight the need of a unified framework, which combines both the ability to compress efficiently by using the Bayesian Lottery Ticket approach, as well as the inclusion of neurons probabilistically, which results in efficient sparse networks. The main objective of this thesis is to develop a neural atom prevalence method for neural network model construction as an answe [...] experiment is random reinitialization: the winning ticket\u2019s mask m m ap...",
+   "[body] ...ts the final architecture by identifying the most likely layer size and retaining the most prevalent neurons. Concretely, the spike-and-slab Independent Gaussian prior of Jantre et al. ( 2023 ) provides the variational machinery for computing neuron-level inclusion probabilities within a feedforward network, while the Bayesian Lottery Ticket initialises the procedure from a compressed, well-conditioned subnetwork rather than a redundant dense one. The Poisson-Binomial distribution then replaces the fixed cut-off of the Median Probability model with a data-driven optimal layer size, mirroring the adaptive threshold that Fokou\u00e9 introduced for linear atom...",
+   "[abstract] ...d reliable uncertainty quantification. This paper introduces Neural Atom Prevalence (NAP), a principled Bayesian framework for structured node-level model selection in feedforward neural networks. NAP introduces the neural atom (activation unit) and functions as a hybrid method operating through a four-phase pipeline: Bayesian Lottery Ticket (BLT) identification via Iterative Magnitude Pruning (IMP), soft variational training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:40",
+  "page": "arxiv:2607.21671v1",
+  "subject": "NAP",
+  "object": "Spike and Slab Independent Gaussian",
+  "current_pid": "P_BUILDS_ON",
+  "statement": "NAP uses Spike and Slab Independent Gaussian variational family for neuron-level inclusion probabilities.",
+  "contexts": [
+   "[body] ...the previous paragraph. It treats each neuron as an atom in the sense of Fokou\u00e9 ( 2008 ) , assigns it a posterior inclusion probability through a spike-and-slab variational posterior, and selects the final architecture by identifying the most likely layer size and retaining the most prevalent neurons. Concretely, the spike-and-slab Independent Gaussian prior of Jantre et al. ( 2023 ) provides the variational machinery for computing neuron-level inclusion probabilities within a feedforward network, while the Bayesian Lottery Ticket initialises the procedure from a compressed, well-conditioned subnetwork rather than a redundant dense one. The Poisson-Bi...",
+   "[abstract] ...ework for structured node-level model selection in feedforward neural networks. NAP introduces the neural atom (activation unit) and functions as a hybrid method operating through a four-phase pipeline: Bayesian Lottery Ticket (BLT) identification via Iterative Magnitude Pruning (IMP), soft variational training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:41",
+  "page": "arxiv:2607.21673v1",
+  "subject": "WARDEN",
+  "object": "AdaODD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "WARDEN addresses limitations in the AdaODD memory-bank detector.",
+  "contexts": [
+   "[body] ...pt, because both the in-distribution (ID) data and the outliers it sees at test time differ from anything available at training. The modern test-time-adaptation literature resolves this tension by pseudo-labelling: memory-bank detectors append the most ID-looking stream points to an ID bank (e.g. Zhang et al. , 2023 , AdaODD) , or the most OOD-looking points to an OOD dictionary (e.g. Yang et al. , 2025 , OODD) , and re-score against the updated banks. These methods report substantial gains under favorable stream mixes. They also, as we show, fail in a specific, predictable, and severe way under realistic ones. Self-poisoning is a phase transition, not..."
+  ]
+ },
+ {
+  "sid": "out_g6.jsonl:42",
+  "page": "arxiv:2607.21673v1",
+  "subject": "WARDEN",
+  "object": "OODD",
+  "current_pid": "P_COMPARES_TO",
+  "statement": "WARDEN compares against the OODD method for adaptive OOD detection.",
+  "contexts": [
+   "[body] ...1 Introduction A deployed OOD detector faces two requirements that pull in opposite directions. It must control false positives at a nominal rate \u03b1 \\alpha (every flagged input incurs review cost, and a detector whose false-positive rate (FPR) silently doubles is not usable in production), and it must adapt, because both the in-distribution (ID) data and the outlie...",
+   "[body] ...and the outliers it sees at test time differ from anything available at training. The modern test-time-adaptation literature resolves this tension by pseudo-labelling: memory-bank detectors append the most ID-looking stream points to an ID bank (e.g. Zhang et al. , 2023 , AdaODD) , or the most OOD-looking points to an OOD dictionary (e.g. Yang et al. , 2025 , OODD) , and re-score against the updated banks. These methods report substantial gains under favorable stream mixes. They also, as we show, fail in a specific, predictable, and severe way under realistic ones. Self-poisoning is a phase transition, not noise. When the stream is temporally clustered...",
+   "[body] ...er from anything available at training. The modern test-time-adaptation literature resolves this tension by pseudo-labelling: memory-bank detectors append the most ID-looking stream points to an ID bank (e.g. Zhang et al. , 2023 , AdaODD) , or the most OOD-looking points to an OOD dictionary (e.g. Yang et al. , 2025 , OODD) , and re-score against the updated banks. These methods report substantial gains under favorable stream mixes. They also, as we show, fail in a specific, predictable, and severe way under realistic ones. Self-poisoning is a phase transition, not noise. When the stream is temporally clustered (bursty) and contamination is low (the st..."
+  ]
+ }
+]

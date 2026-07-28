@@ -1,0 +1,50 @@
+{"page": "arxiv:2607.20995v1", "subject": "Animacy circuit", "changed": true, "why": "removed descriptive suffix 'analysis'; proper name is the mechanism"}
+{"page": "arxiv:2607.20999v1", "subject": "WML", "changed": false}
+{"page": "arxiv:2607.21000v1", "subject": "Naju", "changed": false}
+{"page": "arxiv:2607.21003v1", "subject": "ADABORD", "changed": false}
+{"page": "arxiv:2607.21005v1", "subject": "Weight-norm criticality", "changed": true, "why": "removed descriptive suffix 'analysis'"}
+{"page": "arxiv:2607.21010v1", "subject": "LLM-summarizer stability probe", "changed": false}
+{"page": "arxiv:2607.21013v1", "subject": "EmoAgent-R1", "changed": false}
+{"page": "arxiv:2607.21019v1", "subject": "HiMe", "changed": false}
+{"page": "arxiv:2607.21028v2", "subject": "BARGE", "changed": false}
+{"page": "arxiv:2607.21042v1", "subject": "IndexTTS-2", "changed": true, "why": "removed descriptive 'Faster' prefix; base proper name is IndexTTS-2"}
+{"page": "arxiv:2607.21063v1", "subject": "QuantiBias", "changed": false}
+{"page": "arxiv:2607.21067v1", "subject": "PrefReward", "changed": false}
+{"page": "arxiv:2607.21068v1", "subject": "CounterFundus", "changed": false}
+{"page": "arxiv:2607.21074v1", "subject": "SpecTraL", "changed": false}
+{"page": "arxiv:2607.21075v1", "subject": "VibeVoice-ASR-BitNet", "changed": false}
+{"page": "arxiv:2607.21080v1", "subject": "SOFT", "changed": false}
+{"page": "arxiv:2607.21083v1", "subject": "A-splines", "changed": true, "why": "removed descriptive 'for GAMs'; proper name is the method"}
+{"page": "arxiv:2607.21088v1", "subject": "CASC", "changed": false}
+{"page": "arxiv:2607.21090v1", "subject": "faithfulness training", "changed": true, "why": "removed redundant 'RL-based' descriptor; core contribution is the training method"}
+{"page": "arxiv:2607.21094v1", "subject": "APEX", "changed": false}
+{"page": "arxiv:2607.21098v1", "subject": "B-spline TPP", "changed": true, "why": "shortened from verbose 'Neural TPP with B-splines'"}
+{"page": "arxiv:2607.21101v1", "subject": "semantic-ID generation", "changed": true, "why": "TIGER not mentioned in title/abstract; replaced with core contribution from paper"}
+{"page": "arxiv:2607.21106v1", "subject": "AttriMem", "changed": false}
+{"page": "arxiv:2607.21111v1", "subject": "TOUR", "changed": false}
+{"page": "arxiv:2607.21117v1", "subject": "GlucoTune", "changed": false}
+{"page": "arxiv:2607.21121v1", "subject": "QSP via PPO", "changed": false}
+{"page": "arxiv:2607.21130v1", "subject": "AIfES", "changed": true, "why": "removed descriptive 'for RISC-V'; proper name is the framework"}
+{"page": "arxiv:2607.21131v1", "subject": "RGNN", "changed": false}
+{"page": "arxiv:2607.21137v1", "subject": "Sidewalk segmentation", "changed": false}
+{"page": "arxiv:2607.21143v1", "subject": "RegretBench", "changed": false}
+{"page": "arxiv:2607.21151v1", "subject": "V-DEAL", "changed": false}
+{"page": "arxiv:2607.21155v1", "subject": "CRAG-MM", "changed": false}
+{"page": "arxiv:2607.21162v1", "subject": "GKR-HND", "changed": true, "why": "replaced stopword 'Agree' with actual protocol name from abstract"}
+{"page": "arxiv:2607.21173v1", "subject": "ARA", "changed": true, "why": "replaced descriptor 'Automated' with actual system name from abstract"}
+{"page": "arxiv:2607.21217v1", "subject": "ICAE", "changed": false}
+{"page": "arxiv:2607.21219v1", "subject": "DART", "changed": false}
+{"page": "arxiv:2607.21231v1", "subject": "progressive cramming", "changed": true, "why": "replaced descriptor-only 'Progressive' with actual method name"}
+{"page": "arxiv:2607.21268v1", "subject": "pAI-Econ-claude", "changed": true, "why": "replaced overly-generic 'Econ' with full system name from title"}
+{"page": "arxiv:2607.21273v1", "subject": "dark-room pathology", "changed": true, "why": "replaced stopword 'The' with the key pathology name from abstract"}
+{"page": "arxiv:2607.21274v1", "subject": "CUP", "changed": true, "why": "replaced descriptor 'Comparative' with dataset name from abstract"}
+{"page": "arxiv:2607.21279v1", "subject": "moral-value dataset", "changed": true, "why": "removed redundant 'Unified' descriptor"}
+{"page": "arxiv:2607.21284v1", "subject": "news-crawler-LM", "changed": true, "why": "replaced overly-generic 'LM' with proper system name from title"}
+{"page": "arxiv:2607.21291v1", "subject": "AdaDSF", "changed": true, "why": "replaced descriptor 'Adaptive' with actual framework name from abstract"}
+{"page": "arxiv:2607.21292v1", "subject": "process control workflow", "changed": true, "why": "removed 'LLM-driven' (redundant context); kept core descriptor"}
+{"page": "arxiv:2607.21300v1", "subject": "FAUN", "changed": false}
+{"page": "arxiv:2607.21302v1", "subject": "EBP", "changed": true, "why": "simplified to acronym; full name is redundant"}
+{"page": "arxiv:2607.21306v1", "subject": "Int-Bench", "changed": true, "why": "replaced overly-generic 'AI' with actual benchmark name from abstract"}
+{"page": "arxiv:2607.21307v1", "subject": "CT-TEL", "changed": false}
+{"page": "arxiv:2607.21324v1", "subject": "GRADRAG", "changed": false}
+{"page": "arxiv:2607.21325v1", "subject": "CVA", "changed": false}

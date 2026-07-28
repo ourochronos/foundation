@@ -1,0 +1,50 @@
+{"page": "arxiv:2607.21561v1", "subject": "EnsembleEGNN", "changed": true, "why": "Title fragment; proper method name is EnsembleEGNN"}
+{"page": "arxiv:2607.21570v1", "subject": "MedGame", "changed": false}
+{"page": "arxiv:2607.21573v1", "subject": "TimePNS", "changed": false}
+{"page": "arxiv:2607.21577v1", "subject": "gravure printing defect detection", "changed": true, "why": "Generic description; more specific descriptor grounded in domain"}
+{"page": "arxiv:2607.21595v1", "subject": "VLM-IE3D", "changed": true, "why": "Incomplete title fragment; proper method name is VLM-IE3D from abstract"}
+{"page": "arxiv:2607.21665v1", "subject": "Monotone FedNAM", "changed": true, "why": "Truncated title fragment; full method name is Monotone FedNAM"}
+{"page": "arxiv:2607.21671v1", "subject": "NAP", "changed": false}
+{"page": "arxiv:2607.21672v1", "subject": "code token accounting", "changed": true, "why": "Title fragment with trailing punctuation; descriptive noun phrase"}
+{"page": "arxiv:2607.21673v1", "subject": "adaptive OOD detection", "changed": true, "why": "Method name not grounded in abstract; changed to descriptive phrase from actual content"}
+{"page": "arxiv:2607.21677v1", "subject": "radio-astronomy code optimization", "changed": true, "why": "Clearly truncated fragment; specific descriptive phrase for the task"}
+{"page": "arxiv:2607.21680v1", "subject": "Damage Cause Encoder", "changed": true, "why": "Proper method name from abstract; shorter than title fragment"}
+{"page": "arxiv:2607.21681v1", "subject": "CARNet", "changed": false}
+{"page": "arxiv:2607.21685v1", "subject": "MeSH indexing evaluation", "changed": true, "why": "Long title fragment; shorter descriptive phrase for the study"}
+{"page": "arxiv:2607.21692v1", "subject": "causal sparse attention", "changed": true, "why": "Title fragment; descriptive noun phrase for the method"}
+{"page": "arxiv:2607.21716v1", "subject": "quadratic model", "changed": true, "why": "Removed inaccurate 'proxy' suffix; matches paper's terminology"}
+{"page": "arxiv:2607.21735v1", "subject": "red-team evidential framework", "changed": true, "why": "Shortened from verbose title fragment while preserving key concepts"}
+{"page": "arxiv:2607.21752v1", "subject": "Compression-guided sparse attention", "changed": false}
+{"page": "arxiv:2607.21758v1", "subject": "Humanly", "changed": false}
+{"page": "arxiv:2607.21763v1", "subject": "anti-cheat prompt", "changed": true, "why": "Shortened to proper method name; removed redundant 'mitigation'"}
+{"page": "arxiv:2607.21772v1", "subject": "reliability-aware PCSEL optimization", "changed": true, "why": "Restored 'reliability-aware' as key contribution aspect"}
+{"page": "arxiv:2607.21773v1", "subject": "smart predict-then-robustly-optimize", "changed": true, "why": "Restored 'smart' as part of official method name from title"}
+{"page": "arxiv:2607.21774v1", "subject": "Colombian identity inference probe", "changed": false}
+{"page": "arxiv:2607.21776v1", "subject": "rPPG talking-face deepfake detector", "changed": false}
+{"page": "arxiv:2607.21779v1", "subject": "graph-theoretic neural network fragmentation", "changed": false}
+{"page": "arxiv:2607.21780v1", "subject": "Khondo", "changed": true, "why": "Proper benchmark name introduced in title; preferred over generic description"}
+{"page": "arxiv:2607.21785v1", "subject": "Hybrid probabilistic forecasting system", "changed": false}
+{"page": "arxiv:2607.21793v1", "subject": "QLPO", "changed": true, "why": "Proper acronym from title; shorter than descriptive phrase"}
+{"page": "arxiv:2607.21797v1", "subject": "clock calculus extension", "changed": false}
+{"page": "arxiv:2607.21802v1", "subject": "StARS", "changed": false}
+{"page": "arxiv:2607.21804v1", "subject": "ADSD", "changed": false}
+{"page": "arxiv:2607.21805v1", "subject": "chaotic game dynamics", "changed": false}
+{"page": "arxiv:2607.21817v1", "subject": "LRF", "changed": false}
+{"page": "arxiv:2607.21820v1", "subject": "ISS", "changed": false}
+{"page": "arxiv:2607.21823v1", "subject": "kernel asymptotics", "changed": false}
+{"page": "arxiv:2607.21867v1", "subject": "adapter necessity audit", "changed": true, "why": "VGCC is baseline, not method; proper name is the necessity audit framework"}
+{"page": "arxiv:2607.21876v1", "subject": "VRDQ", "changed": false}
+{"page": "arxiv:2607.21881v1", "subject": "farmland segmentation model", "changed": false}
+{"page": "arxiv:2607.21885v1", "subject": "ACE", "changed": false}
+{"page": "arxiv:2607.21897v1", "subject": "ISPCloak", "changed": false}
+{"page": "arxiv:2607.21904v1", "subject": "diffusion-based inpainting survey", "changed": false}
+{"page": "arxiv:2607.21922v1", "subject": "MissHyper", "changed": false}
+{"page": "arxiv:2607.21927v1", "subject": "RIS-Kernel", "changed": false}
+{"page": "arxiv:2607.21932v1", "subject": "Generalized Neural Operator", "changed": false}
+{"page": "arxiv:2607.21933v1", "subject": "HexLogicAgent", "changed": false}
+{"page": "arxiv:2607.21936v1", "subject": "ARI", "changed": false}
+{"page": "arxiv:2607.21949v1", "subject": "MA-DAR", "changed": false}
+{"page": "arxiv:2607.21951v1", "subject": "SIREN", "changed": false}
+{"page": "arxiv:2607.21958v1", "subject": "watermark detector", "changed": false}
+{"page": "arxiv:2607.21961v1", "subject": "catch-n-repair", "changed": false}
+{"page": "arxiv:2607.21971v1", "subject": "MetaEvolve", "changed": false}

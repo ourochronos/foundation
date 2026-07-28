@@ -1,0 +1,60 @@
+{"sid": "out_6.jsonl:54", "pid": "P_BUILDS_ON", "why": "discrete diffusion models for token generation"}
+{"sid": "out_6.jsonl:55", "pid": "P_COMPARES_TO", "why": "We compare M2S against SEDD, MDLM, GIDD, and Neural CTMC"}
+{"sid": "out_6.jsonl:56", "pid": "P_COMPARES_TO", "why": "We compare M2S against SEDD, MDLM, GIDD, and Neural CTMC"}
+{"sid": "out_6.jsonl:57", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on several standard graph classification datasets, including MUTAG"}
+{"sid": "out_6.jsonl:58", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on several standard graph classification datasets, including NCI1"}
+{"sid": "out_6.jsonl:59", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on several standard graph classification datasets, including PROTEINS"}
+{"sid": "out_6.jsonl:60", "pid": "P_EVALUATES_ON", "why": "We evaluate our method on several standard graph classification datasets, including DD"}
+{"sid": "out_6.jsonl:61", "pid": "P_EVALUATES_ON", "why": "we consider two variants of GNNs, namely Graph Isomorphism Networks (GIN)"}
+{"sid": "out_6.jsonl:62", "pid": "P_EVALUATES_ON", "why": "we consider two variants of GNNs, namely Graph Convolutional Networks (GCN)"}
+{"sid": "out_6.jsonl:63", "pid": "P_COMPARES_TO", "why": "Baselines: The comparison methods including GNNExplainer"}
+{"sid": "out_6.jsonl:64", "pid": "P_COMPARES_TO", "why": "Baselines: The comparison methods including GraphLime"}
+{"sid": "out_6.jsonl:65", "pid": "P_EVALUATES_ON", "why": "we fine-tuned it on the canonical CHB-MIT seizure detection benchmark"}
+{"sid": "out_6.jsonl:66", "pid": "P_EVALUATES_ON", "why": "We validate on CHB-MIT, SEED-DV, and TUH EEG"}
+{"sid": "out_6.jsonl:67", "pid": "P_EVALUATES_ON", "why": "We validate on CHB-MIT, SEED-DV, and TUH EEG"}
+{"sid": "out_6.jsonl:68", "pid": "P_BUILDS_ON", "why": "a raw signal encoder based on the Mamba architecture"}
+{"sid": "out_6.jsonl:69", "pid": "P_BUILDS_ON", "why": "a Vision Transformer (ViT)-style encoder for time-frequency data"}
+{"sid": "out_6.jsonl:70", "pid": "P_BUILDS_ON", "why": "cross-view contrastive alignment"}
+{"sid": "out_6.jsonl:71", "pid": "P_BUILDS_ON", "why": "Generalized Additive Mixed Models (GAMM) to analyse formant trajectories"}
+{"sid": "out_6.jsonl:72", "pid": "P_BUILDS_ON", "why": "word embeddings from distributional semantics"}
+{"sid": "out_6.jsonl:73", "pid": "P_EVALUATES_ON", "why": "Our benchmark, VoLN-UAV, spans diverse simulated environments"}
+{"sid": "out_6.jsonl:74", "pid": "P_BUILDS_ON", "why": "aligns self-supervised visual features with a structured semantic space"}
+{"sid": "out_6.jsonl:75", "pid": "DROP", "why": "framework tool used to build benchmark, not a resource paper builds on or evaluates"}
+{"sid": "out_6.jsonl:76", "pid": "P_EVALUATES_ON", "why": "We evaluate on the public multimodal suite HarmBench-Response"}
+{"sid": "out_6.jsonl:77", "pid": "P_EVALUATES_ON", "why": "WildGuard-Response and WildGuard-Prompt benchmarks used for evaluation"}
+{"sid": "out_6.jsonl:78", "pid": "UNCERTAIN", "why": "*** no mention located ***"}
+{"sid": "out_6.jsonl:79", "pid": "P_BUILDS_ON", "why": "built on the SmolVLM backbones"}
+{"sid": "out_6.jsonl:80", "pid": "P_EVALUATES_ON", "why": "Event Type Classification TUEV dataset"}
+{"sid": "out_6.jsonl:81", "pid": "P_EVALUATES_ON", "why": "Abnormal Detection TUAB dataset"}
+{"sid": "out_6.jsonl:82", "pid": "P_EVALUATES_ON", "why": "Motor Imagery Classifcation BCIC-2a dataset"}
+{"sid": "out_6.jsonl:83", "pid": "P_EVALUATES_ON", "why": "Seizure Detection CHB-MIT dataset"}
+{"sid": "out_6.jsonl:84", "pid": "P_BUILDS_ON", "why": "vector-quantized reconstruction"}
+{"sid": "out_6.jsonl:85", "pid": "UNCERTAIN", "why": "*** no mention located ***"}
+{"sid": "out_6.jsonl:86", "pid": "P_COMPARES_TO", "why": "LaBraM-base results in performance comparison table"}
+{"sid": "out_6.jsonl:87", "pid": "P_COMPARES_TO", "why": "CBraMod-small results in performance comparison table"}
+{"sid": "out_6.jsonl:88", "pid": "P_EVALUATES_ON", "why": "Evaluation Using a Replay of HeartSteps"}
+{"sid": "out_6.jsonl:89", "pid": "P_EVALUATES_ON", "why": "Stage 1: Pre-training on All of Us"}
+{"sid": "out_6.jsonl:90", "pid": "P_BUILDS_ON", "why": "We build on TimeWeaver, conditional time-series diffusion models"}
+{"sid": "out_6.jsonl:91", "pid": "P_BUILDS_ON", "why": "contextual bandit trained online with Thompson sampling"}
+{"sid": "out_7.jsonl:0", "pid": "P_EVALUATES_ON", "why": "benchmark = ALFWorldBenchmark"}
+{"sid": "out_7.jsonl:1", "pid": "P_EVALUATES_ON", "why": "pretrain 48 models on 2B FineWeb-Edu tokens each"}
+{"sid": "out_7.jsonl:2", "pid": "P_BUILDS_ON", "why": "At its core is a conditional U-Net forward model"}
+{"sid": "out_7.jsonl:3", "pid": "P_COMPARES_TO", "why": "state-of-the-art tool is SOLPS-ITER for comparison"}
+{"sid": "out_7.jsonl:4", "pid": "P_BUILDS_ON", "why": "invokes SWI-Prolog as a local reasoning backend"}
+{"sid": "out_7.jsonl:5", "pid": "P_EVALUATES_ON", "why": "Experiments on ALFWorld"}
+{"sid": "out_7.jsonl:6", "pid": "P_EVALUATES_ON", "why": "Experiments on ALFWorld and WebShop"}
+{"sid": "out_7.jsonl:7", "pid": "P_BUILDS_ON", "why": "Policy learning remains standard GRPO with environmental rewards"}
+{"sid": "out_7.jsonl:8", "pid": "P_EVALUATES_ON", "why": "To validate our framework, we use AudioCards"}
+{"sid": "out_7.jsonl:9", "pid": "P_EVALUATES_ON", "why": "on OpenWebText, it improves MAUVE"}
+{"sid": "out_7.jsonl:10", "pid": "P_EVALUATES_ON", "why": "for molecules we use QM9 in SMILES format"}
+{"sid": "out_7.jsonl:11", "pid": "DROP", "why": "GPT-2 used as evaluation metric tool for perplexity computation, not a benchmark or base model"}
+{"sid": "out_7.jsonl:12", "pid": "P_EVALUATES_ON", "why": "two studies conducted on DeepSeek-R1-Distill-Qwen-7B"}
+{"sid": "out_7.jsonl:13", "pid": "P_EVALUATES_ON", "why": "We evaluate it across three benchmarks GSM8K"}
+{"sid": "out_7.jsonl:14", "pid": "P_EVALUATES_ON", "why": "We evaluate it across three benchmarks MATH-500"}
+{"sid": "out_7.jsonl:15", "pid": "P_EVALUATES_ON", "why": "We evaluate it across three benchmarks AIME 1983-2024"}
+{"sid": "out_7.jsonl:16", "pid": "P_BUILDS_ON", "why": "DreamID-V confronts the missing-pair problem directly"}
+{"sid": "out_7.jsonl:17", "pid": "P_BUILDS_ON", "why": "foundation model pretrained on large-scale tandem mass spectrometry data, DreaMS"}
+{"sid": "out_7.jsonl:18", "pid": "P_BUILDS_ON", "why": "The reasoning agent uses the Qwen2.5-7B-Instruct model"}
+{"sid": "out_7.jsonl:19", "pid": "P_COMPARES_TO", "why": "strong on academic and reasoning-oriented benchmarks, such as MMLU"}
+{"sid": "out_7.jsonl:20", "pid": "P_COMPARES_TO", "why": "strong on academic and reasoning-oriented benchmarks, such as GSM8K"}
+{"sid": "out_7.jsonl:21", "pid": "P_COMPARES_TO", "why": "strong on academic and reasoning-oriented benchmarks, such as AIME"}

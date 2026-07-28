@@ -1,0 +1,60 @@
+{"sid": "out_0.jsonl:0", "pid": "P_EVALUATES_ON", "why": "LoRA performs on-par or better than fine-tuning in model quality on GPT-3"}
+{"sid": "out_0.jsonl:1", "pid": "P_EVALUATES_ON", "why": "LoRA performs on-par or better than fine-tuning in model quality on RoBERTa"}
+{"sid": "out_0.jsonl:2", "pid": "P_EVALUATES_ON", "why": "LoRA performs on-par or better than fine-tuning in model quality on DeBERTa"}
+{"sid": "out_0.jsonl:3", "pid": "P_EVALUATES_ON", "why": "LoRA performs on-par or better than fine-tuning in model quality on GPT-2"}
+{"sid": "out_0.jsonl:4", "pid": "P_EVALUATES_ON", "why": "On the MMLU benchmark, GPT-4 not only outperforms existing models by a considerable margin"}
+{"sid": "out_0.jsonl:5", "pid": "P_EVALUATES_ON", "why": "For GSM-8K, we use chain-of-thought prompting when evaluating; 92.0% performance"}
+{"sid": "out_0.jsonl:6", "pid": "P_EVALUATES_ON", "why": "HellaSwag results table: GPT-4 95.3%"}
+{"sid": "out_0.jsonl:7", "pid": "P_EVALUATES_ON", "why": "AI2 Reasoning Challenge (ARC) results table: GPT-4 96.3%"}
+{"sid": "out_0.jsonl:8", "pid": "P_EVALUATES_ON", "why": "WinoGrande results table: GPT-4 87.5%"}
+{"sid": "out_0.jsonl:9", "pid": "P_EVALUATES_ON", "why": "HumanEval results table: GPT-4 67.0%"}
+{"sid": "out_0.jsonl:10", "pid": "P_EVALUATES_ON", "why": "DROP (F1 score) results table: 80.9"}
+{"sid": "out_0.jsonl:11", "pid": "DROP", "why": "chain-of-thought is a prompting technique used for evaluation, not a resource"}
+{"sid": "out_0.jsonl:12", "pid": "P_BUILDS_ON", "why": "connecting the visual encoder of CLIP with the language decoder Vicuna"}
+{"sid": "out_0.jsonl:13", "pid": "P_BUILDS_ON", "why": "connecting the open-set visual encoder of CLIP with the language decoder"}
+{"sid": "out_0.jsonl:14", "pid": "P_EVALUATES_ON", "why": "When fine-tuned on Science QA, achieves a new state-of-the-art accuracy of 92.53%"}
+{"sid": "out_0.jsonl:15", "pid": "DROP", "why": "MMLU is used as example task, not evaluation resource for the paper's method"}
+{"sid": "out_0.jsonl:16", "pid": "P_COMPARES_TO", "why": "comparing baseline LLaMA-13B responses against Vicuna-13B model"}
+{"sid": "out_0.jsonl:17", "pid": "P_EVALUATES_ON", "why": "GPT-4 evaluates responses from Vicuna-13B to determine which assistant answers better"}
+{"sid": "out_0.jsonl:18", "pid": "P_EVALUATES_ON", "why": "We then run toxicity and sentiment experiments on LLaMA-3"}
+{"sid": "out_0.jsonl:19", "pid": "P_EVALUATES_ON", "why": "We then run toxicity and sentiment experiments on OPT"}
+{"sid": "out_0.jsonl:20", "pid": "P_EVALUATES_ON", "why": "experiments on GPT-2-XL (1.5B parameters)"}
+{"sid": "out_0.jsonl:21", "pid": "P_EVALUATES_ON", "why": "We consider the OpenWebText corpus for perplexity experiments"}
+{"sid": "out_0.jsonl:22", "pid": "P_BUILDS_ON", "why": "family of LLMs derived from Llama 2 with specialized training"}
+{"sid": "out_0.jsonl:23", "pid": "P_EVALUATES_ON", "why": "Code Llama reaches 67% on HumanEval"}
+{"sid": "out_0.jsonl:24", "pid": "P_EVALUATES_ON", "why": "Code Llama reaches 65% on MBPP"}
+{"sid": "out_0.jsonl:25", "pid": "P_EVALUATES_ON", "why": "all our models outperform every other publicly available model on MultiPL-E"}
+{"sid": "out_0.jsonl:26", "pid": "P_EVALUATES_ON", "why": "Task Template D.1.1 TruthfulQA for representation engineering evaluation"}
+{"sid": "out_0.jsonl:27", "pid": "P_EVALUATES_ON", "why": "Task Template D.1.4 ARC-{Easy|Challenge} for evaluation"}
+{"sid": "out_0.jsonl:28", "pid": "P_EVALUATES_ON", "why": "Task Template D.1.6 CommonsenseQA (CSQA) for evaluation"}
+{"sid": "out_0.jsonl:29", "pid": "P_EVALUATES_ON", "why": "Task Template D.1.7 RACE for representation engineering evaluation"}
+{"sid": "out_0.jsonl:30", "pid": "P_EVALUATES_ON", "why": "Task Template D.1.5 OpenbookQA (OBQA) for evaluation"}
+{"sid": "out_0.jsonl:31", "pid": "P_BUILDS_ON", "why": "Mistral 7B leverages grouped-query attention (GQA) for faster inference"}
+{"sid": "out_0.jsonl:32", "pid": "P_BUILDS_ON", "why": "Mistral 7B leverages sliding window attention (SWA) to handle long sequences"}
+{"sid": "out_0.jsonl:33", "pid": "P_EVALUATES_ON", "why": "MMLU (5-shot): Mistral 7B 60.1%"}
+{"sid": "out_0.jsonl:34", "pid": "P_EVALUATES_ON", "why": "HellaSwag: Mistral 7B 81.3%"}
+{"sid": "out_0.jsonl:35", "pid": "P_EVALUATES_ON", "why": "WinoGrande: Mistral 7B evaluated"}
+{"sid": "out_0.jsonl:36", "pid": "P_EVALUATES_ON", "why": "PIQA: Mistral 7B evaluated on benchmark"}
+{"sid": "out_0.jsonl:37", "pid": "P_EVALUATES_ON", "why": "ARC-Easy, ARC-Challenge: Mistral 7B evaluated"}
+{"sid": "out_0.jsonl:38", "pid": "P_EVALUATES_ON", "why": "Math: GSM8K (8-shot) Mistral 7B 52.2%"}
+{"sid": "out_0.jsonl:39", "pid": "P_EVALUATES_ON", "why": "Code: HumanEval (0-shot) Mistral 7B 30.5%"}
+{"sid": "out_0.jsonl:40", "pid": "P_EVALUATES_ON", "why": "MBPP (3-shot) Mistral 7B 47.5%"}
+{"sid": "out_0.jsonl:41", "pid": "P_EVALUATES_ON", "why": "Mistral 7B-Instruct exhibits superior performance on MT-Bench 6.84"}
+{"sid": "out_0.jsonl:42", "pid": "P_BUILDS_ON", "why": "We propose selective state space models that improve on structured state space models"}
+{"sid": "out_0.jsonl:43", "pid": "P_EVALUATES_ON", "why": "first model to achieve human-expert performance on MMLU benchmark"}
+{"sid": "out_0.jsonl:44", "pid": "P_BUILDS_ON", "why": "DeepSeekMath-Base is initialized with DeepSeek-Coder-Base-v1.5 7B"}
+{"sid": "out_0.jsonl:45", "pid": "DROP", "why": "GRPO is introduced by authors as novel method, not existing resource"}
+{"sid": "out_0.jsonl:46", "pid": "DROP", "why": "chain-of-thought is a prompting technique used in instruction tuning"}
+{"sid": "out_0.jsonl:47", "pid": "P_EVALUATES_ON", "why": "achieved 51.7% on the competition-level MATH benchmark"}
+{"sid": "out_0.jsonl:48", "pid": "P_EVALUATES_ON", "why": "DeepSeekMath-Base 7B achieves 64.2% on GSM8K"}
+{"sid": "out_0.jsonl:49", "pid": "P_EVALUATES_ON", "why": "math training improves model capability on MMLU benchmark"}
+{"sid": "out_0.jsonl:50", "pid": "P_EVALUATES_ON", "why": "math training improves model capability on BBH benchmarks"}
+{"sid": "out_0.jsonl:51", "pid": "P_EVALUATES_ON", "why": "Qwen2-72B showcases 84.2 on MMLU"}
+{"sid": "out_0.jsonl:52", "pid": "P_EVALUATES_ON", "why": "Qwen2-72B showcases 37.9 on GPQA"}
+{"sid": "out_0.jsonl:53", "pid": "P_EVALUATES_ON", "why": "Qwen2-72B showcases 64.6 on HumanEval"}
+{"sid": "out_0.jsonl:54", "pid": "P_EVALUATES_ON", "why": "Qwen2-72B showcases 89.5 on GSM8K"}
+{"sid": "out_0.jsonl:55", "pid": "P_EVALUATES_ON", "why": "Qwen2-72B showcases 82.4 on BBH"}
+{"sid": "out_0.jsonl:56", "pid": "P_EVALUATES_ON", "why": "Qwen2-72B-Instruct attains 9.1 on MT-Bench"}
+{"sid": "out_0.jsonl:57", "pid": "P_EVALUATES_ON", "why": "Qwen2-72B-Instruct achieves 48.1 on Arena-Hard"}
+{"sid": "out_0.jsonl:58", "pid": "P_EVALUATES_ON", "why": "Qwen2-72B-Instruct achieves 35.7 on LiveCodeBench"}
+{"sid": "out_0.jsonl:59", "pid": "DROP", "why": "RLHF is a training technique/algorithm, not a resource"}

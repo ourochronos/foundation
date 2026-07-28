@@ -1,0 +1,60 @@
+{"sid": "out_g12.jsonl:17", "pid": "P_EVALUATES_ON", "why": "Across three major benchmarks, same surface text evaluated"}
+{"sid": "out_g12.jsonl:18", "pid": "P_EVALUATES_ON", "why": "SHADE Arena listed as one of three major injection benchmarks"}
+{"sid": "out_g12.jsonl:19", "pid": "P_EVALUATES_ON", "why": "We evaluate the framework on HC3"}
+{"sid": "out_g12.jsonl:20", "pid": "P_EVALUATES_ON", "why": "We evaluate the framework on HC3, M4, and MAGE"}
+{"sid": "out_g12.jsonl:21", "pid": "P_EVALUATES_ON", "why": "We evaluate the framework on HC3, M4, and MAGE"}
+{"sid": "out_g12.jsonl:22", "pid": "P_EVALUATES_ON", "why": "using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models"}
+{"sid": "out_g12.jsonl:23", "pid": "P_EVALUATES_ON", "why": "using GPT-J-6B as proxy models"}
+{"sid": "out_g12.jsonl:24", "pid": "P_EVALUATES_ON", "why": "using Falcon-7B as proxy models"}
+{"sid": "out_g12.jsonl:25", "pid": "P_EVALUATES_ON", "why": "using LLaMA-3-8B as proxy models"}
+{"sid": "out_g12.jsonl:26", "pid": "P_EVALUATES_ON", "why": "CIC-MalMem-2022: dataset created to represent obfuscated malware detection"}
+{"sid": "out_g12.jsonl:27", "pid": "P_BUILDS_ON", "why": "integrates functional learning using Kolmogorov-Arnold Networks (KAN)"}
+{"sid": "out_g12.jsonl:28", "pid": "P_BUILDS_ON", "why": "integrates rule-based learning via XGBoost"}
+{"sid": "out_g12.jsonl:29", "pid": "P_COMPARES_TO", "why": "Random Forest with hyperparameter tuning improves 4CC performance to 89.07% baseline"}
+{"sid": "out_g2.jsonl:0", "pid": "P_BUILDS_ON", "why": "reaches 90.33 +/- 1.53 Hard Accuracy with DeepSeek"}
+{"sid": "out_g2.jsonl:1", "pid": "P_BUILDS_ON", "why": "reaches 74.67 +/- 3.51 Hard Accuracy with Qwen3.6-Flash"}
+{"sid": "out_g2.jsonl:2", "pid": "P_EVALUATES_ON", "why": "On SpreadsheetBench, WML reaches 90.33"}
+{"sid": "out_g2.jsonl:3", "pid": "P_EVALUATES_ON", "why": "learned Skills transfer to WikiTableQuestions with 84.00"}
+{"sid": "out_g2.jsonl:4", "pid": "P_EVALUATES_ON", "why": "On Compiler-Supported50, WML attains highest hard-PASS rate"}
+{"sid": "out_g2.jsonl:5", "pid": "P_COMPARES_TO", "why": "compiled execution sharply reduces tokens relative to direct SkillAgent"}
+{"sid": "out_g3.jsonl:0", "pid": "P_BUILDS_ON", "why": "select ETHICS to construct our unified value dataset"}
+{"sid": "out_g3.jsonl:1", "pid": "P_BUILDS_ON", "why": "select UNIMORAL to construct our unified value dataset"}
+{"sid": "out_g3.jsonl:2", "pid": "P_BUILDS_ON", "why": "select SOCIAL-CHEM-101 to construct our unified value dataset"}
+{"sid": "out_g3.jsonl:3", "pid": "P_EVALUATES_ON", "why": "use Evaluation System (OLMES) to standardize benchmarking process"}
+{"sid": "out_g3.jsonl:4", "pid": "P_BUILDS_ON", "why": "Bayesian-optimization (BO) based tuning"}
+{"sid": "out_g3.jsonl:5", "pid": "P_BUILDS_ON", "why": "Images obtained starting from 450k StyleGAN2 generated faces"}
+{"sid": "out_g3.jsonl:6", "pid": "P_BUILDS_ON", "why": "annotate each image with the FairFace model for demographic annotation"}
+{"sid": "out_g3.jsonl:7", "pid": "P_BUILDS_ON", "why": "generate attribute-specific templates with DeepSeek"}
+{"sid": "out_g3.jsonl:8", "pid": "P_EVALUATES_ON", "why": "Experiments on FAIRGET and established FIUBench demonstrate"}
+{"sid": "out_g3.jsonl:9", "pid": "P_EVALUATES_ON", "why": "experiments conducted on robotic control (Gym, PyBullet, DMControl) benchmarks"}
+{"sid": "out_g3.jsonl:10", "pid": "P_EVALUATES_ON", "why": "experiments conducted on PyBullet control environments"}
+{"sid": "out_g3.jsonl:11", "pid": "P_EVALUATES_ON", "why": "experiments conducted on industrial control (DMControl) benchmarks"}
+{"sid": "out_g3.jsonl:12", "pid": "P_COMPARES_TO", "why": "comparative analysis of policies learned by EBP and TD3 algorithms"}
+{"sid": "out_g4.jsonl:0", "pid": "P_BUILDS_ON", "why": "follows similar strategy to PRIMF for approximate regression"}
+{"sid": "out_g4.jsonl:1", "pid": "P_BUILDS_ON", "why": "Classical PAC learning provides distribution-free guarantees on generalisation"}
+{"sid": "out_g4.jsonl:2", "pid": "P_BUILDS_ON", "why": "We specialise ideas to high-recall candidate generation from Learn then Test"}
+{"sid": "out_g4.jsonl:3", "pid": "P_BUILDS_ON", "why": "We specialise these ideas from Conformal Risk Control framework"}
+{"sid": "out_g4.jsonl:4", "pid": "P_EVALUATES_ON", "why": "test MAPS across 72 intersection configurations in HighwayEnv"}
+{"sid": "out_g4.jsonl:5", "pid": "P_BUILDS_ON", "why": "Master and Worker agents trained using Proximal Policy Optimization (PPO)"}
+{"sid": "out_g4.jsonl:6", "pid": "P_EVALUATES_ON", "why": "extending concept-circuit extraction method to Qwen2.5-Coder for 2x2 cross-language study"}
+{"sid": "out_g4.jsonl:7", "pid": "P_EVALUATES_ON", "why": "extending concept-circuit extraction method to DeepSeek-Coder-V1 for analysis"}
+{"sid": "out_g4.jsonl:8", "pid": "P_EVALUATES_ON", "why": "generated across three model sizes including Claude Haiku"}
+{"sid": "out_g4.jsonl:9", "pid": "P_EVALUATES_ON", "why": "generated across three model sizes including Claude Sonnet"}
+{"sid": "out_g4.jsonl:10", "pid": "P_EVALUATES_ON", "why": "generated across three model sizes including Claude Opus"}
+{"sid": "out_g4.jsonl:11", "pid": "P_BUILDS_ON", "why": "survey of mitigation techniques centred on lightweight LoRA adapters"}
+{"sid": "out_g4.jsonl:12", "pid": "P_EVALUATES_ON", "why": "Maximem Synap reports 92% on LongMemEval benchmark"}
+{"sid": "out_g4.jsonl:13", "pid": "P_EVALUATES_ON", "why": "Maximem Synap reports 93.2% on LoCoMo benchmark"}
+{"sid": "out_g5.jsonl:0", "pid": "P_BUILDS_ON", "why": "use gpt-5 as the foundation model backbone"}
+{"sid": "out_g5.jsonl:1", "pid": "P_BUILDS_ON", "why": "employ Genesis as our underlying physics engine"}
+{"sid": "out_g5.jsonl:2", "pid": "P_EVALUATES_ON", "why": "24 scenes from the NewtonGen benchmark test 12 physical laws"}
+{"sid": "out_g5.jsonl:3", "pid": "P_COMPARES_TO", "why": "Compared to state-of-the-art text-to-video models (Sora2)"}
+{"sid": "out_g5.jsonl:4", "pid": "P_COMPARES_TO", "why": "Compared to state-of-the-art text-to-video models (Wan2.2)"}
+{"sid": "out_g5.jsonl:5", "pid": "P_COMPARES_TO", "why": "Compared to agentic baselines (SWE-Agent)"}
+{"sid": "out_g5.jsonl:6", "pid": "P_COMPARES_TO", "why": "Head-to-head Human Evaluation with VidTTA"}
+{"sid": "out_g5.jsonl:7", "pid": "P_BUILDS_ON", "why": "builds on Petri nets to model API resources and dependencies"}
+{"sid": "out_g5.jsonl:8", "pid": "P_EVALUATES_ON", "why": "Benchmarks at fixed 1.04M-token input span, Qwen3.6-35B tested with Windowed-MTP"}
+{"sid": "out_g5.jsonl:9", "pid": "P_EVALUATES_ON", "why": "Benchmarks at fixed 1.04M-token input span, Qwen3.5-122B tested with Windowed-MTP"}
+{"sid": "out_g5.jsonl:10", "pid": "P_EVALUATES_ON", "why": "Benchmarks at fixed 1.04M-token input span, Nemotron-3-Super-120B tested"}
+{"sid": "out_g5.jsonl:11", "pid": "P_BUILDS_ON", "why": "apply StreamingLLM-style sliding window plus attention sink to draft attention"}
+{"sid": "out_g5.jsonl:12", "pid": "P_BUILDS_ON", "why": "Windowed-MTP optimizes speculative decoding by reducing draft KV access"}
+{"sid": "out_g5.jsonl:13", "pid": "P_EVALUATES_ON", "why": "Benchmarks at fixed 1.04M-token input span RULER"}

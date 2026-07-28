@@ -1,0 +1,60 @@
+{"sid": "out_5.jsonl:38", "pid": "P_BUILDS_ON", "why": "we employ LoRA for parameter-efficient fine-tuning"}
+{"sid": "out_5.jsonl:39", "pid": "P_BUILDS_ON", "why": "Fine-tuned language models Qwen2.5-1.5B"}
+{"sid": "out_5.jsonl:40", "pid": "P_BUILDS_ON", "why": "AdaDSF is evaluated on three representative models Qwen2.5-0.5B and Qwen2.5-1.5B"}
+{"sid": "out_5.jsonl:41", "pid": "P_COMPARES_TO", "why": "we evaluated two closed-source models GPT-5.2, Gemini 3 Flash"}
+{"sid": "out_5.jsonl:42", "pid": "P_EVALUATES_ON", "why": "We also ran experiments with different student models e.g., LLaMA-3.1-8B"}
+{"sid": "out_5.jsonl:43", "pid": "P_EVALUATES_ON", "why": "We used Qwen2.5-7B-Instruct as the student model"}
+{"sid": "out_6.jsonl:0", "pid": "P_EVALUATES_ON", "why": "applied CT-TEL to generate logical models for 23 real-world trials from ClinicalTrials.gov"}
+{"sid": "out_6.jsonl:1", "pid": "P_BUILDS_ON", "why": "converted into canonical TEL formulas"}
+{"sid": "out_6.jsonl:2", "pid": "P_BUILDS_ON", "why": "link extracted strings to Unified Medical Language System (UMLS) concept identifiers"}
+{"sid": "out_6.jsonl:3", "pid": "P_EVALUATES_ON", "why": "We evaluate GradRAG on SQuALITY"}
+{"sid": "out_6.jsonl:4", "pid": "P_EVALUATES_ON", "why": "We evaluate GradRAG on SQuALITY and QMSum"}
+{"sid": "out_6.jsonl:5", "pid": "P_COMPARES_TO", "why": "IRCoT (Trivedi et al., 2023) + One-Step Refinement baseline"}
+{"sid": "out_6.jsonl:6", "pid": "P_BUILDS_ON", "why": "instantiates selected elements of the model over a Groth16 zk-SNARK construction"}
+{"sid": "out_6.jsonl:7", "pid": "P_BUILDS_ON", "why": "trained the Chengdu-MFA acoustic model using MFA toolkit"}
+{"sid": "out_6.jsonl:8", "pid": "P_BUILDS_ON", "why": "We fine-tined Wav2Vec2-base, Wav2Vec2-large"}
+{"sid": "out_6.jsonl:9", "pid": "P_BUILDS_ON", "why": "fine-tined XLS-R-300m on Chengdu Mandarin"}
+{"sid": "out_6.jsonl:10", "pid": "P_COMPARES_TO", "why": "existing models trained on Standard Mandarin, Chengdu-MFA outperformed"}
+{"sid": "out_6.jsonl:11", "pid": "P_EVALUATES_ON", "why": "We use three reasoning-intensive benchmarks: Bright for in-domain evaluation"}
+{"sid": "out_6.jsonl:12", "pid": "P_EVALUATES_ON", "why": "two out-of-domain benchmarks: FollowIR"}
+{"sid": "out_6.jsonl:13", "pid": "P_EVALUATES_ON", "why": "two out-of-domain benchmarks: BrowseComp-Plus"}
+{"sid": "out_6.jsonl:14", "pid": "P_BUILDS_ON", "why": "trainable baselines use the same backbone and training data, Qwen3-Embedding"}
+{"sid": "out_6.jsonl:15", "pid": "P_BUILDS_ON", "why": "Fair Baseline (LLaMA3.1-8B) used in results"}
+{"sid": "out_6.jsonl:16", "pid": "P_COMPARES_TO", "why": "We compare SHIFT with four groups of retrievers including BGE-M3"}
+{"sid": "out_6.jsonl:17", "pid": "P_COMPARES_TO", "why": "Following the evaluation in LaSER, We compare SHIFT"}
+{"sid": "out_6.jsonl:18", "pid": "P_COMPARES_TO", "why": "we compare with GIRCSE and LaSER, which use latent tokens"}
+{"sid": "out_6.jsonl:19", "pid": "DROP", "why": "Open-domain benchmarks such as MMLU test knowledge generally - background mention"}
+{"sid": "out_6.jsonl:20", "pid": "DROP", "why": "Finance-domain benchmarks have advanced, FinanceBench tests - prior work discussion"}
+{"sid": "out_6.jsonl:21", "pid": "DROP", "why": "FinQA and ConvFinQA evaluate numerical reasoning - related work about prior benchmarks"}
+{"sid": "out_6.jsonl:22", "pid": "P_COMPARES_TO", "why": "scoring four models against four independent LLM judges (Sonnet 4.6 = 4.31)"}
+{"sid": "out_6.jsonl:23", "pid": "P_COMPARES_TO", "why": "scoring four models frontier closed-source models cluster (Opus 4.7 = 4.30)"}
+{"sid": "out_6.jsonl:24", "pid": "P_COMPARES_TO", "why": "frontier closed-source models cluster within 0.22 points (GPT-5.5 = 4.09)"}
+{"sid": "out_6.jsonl:25", "pid": "P_COMPARES_TO", "why": "all four judges place the open-weights baseline (Llama 3.3 70B = 3.15)"}
+{"sid": "out_6.jsonl:26", "pid": "P_EVALUATES_ON", "why": "We test our method on the TCGA dataset"}
+{"sid": "out_6.jsonl:27", "pid": "DROP", "why": "Generative AI—from GANs to denoising diffusion models—presents a promising solution - generic field background"}
+{"sid": "out_6.jsonl:28", "pid": "P_BUILDS_ON", "why": "We train our Conditional WGAN-GP for 500 epochs"}
+{"sid": "out_6.jsonl:29", "pid": "P_BUILDS_ON", "why": "to align their representations with contrastive learning"}
+{"sid": "out_6.jsonl:30", "pid": "P_BUILDS_ON", "why": "We use UNI as an Image Encoder, which offers a pretrained Vision Transformer"}
+{"sid": "out_6.jsonl:31", "pid": "P_BUILDS_ON", "why": "As a Text Encoder, we exploit Clinical ModernBERT"}
+{"sid": "out_6.jsonl:32", "pid": "P_EVALUATES_ON", "why": "we measure directly—in bits—how much a low-rank adapter writes"}
+{"sid": "out_6.jsonl:33", "pid": "P_EVALUATES_ON", "why": "Applied to realistic fine-tunes of Qwen2.5"}
+{"sid": "out_6.jsonl:34", "pid": "P_EVALUATES_ON", "why": "matched-compute experimental design on CIFAR-10 and CIFAR-100"}
+{"sid": "out_6.jsonl:35", "pid": "P_EVALUATES_ON", "why": "matched-compute experimental design on CIFAR-10 and CIFAR-100"}
+{"sid": "out_6.jsonl:36", "pid": "P_BUILDS_ON", "why": "we perform the first controlled ablation of the saliency masking mechanism used by SalUn"}
+{"sid": "out_6.jsonl:37", "pid": "P_EVALUATES_ON", "why": "matched-compute experimental design on CIFAR-10 and CIFAR-100 with ResNet-18"}
+{"sid": "out_6.jsonl:38", "pid": "UNCERTAIN", "why": "*** no mention located ***"}
+{"sid": "out_6.jsonl:39", "pid": "P_BUILDS_ON", "why": "Apache Spark generates high-quality solutions rapidly"}
+{"sid": "out_6.jsonl:40", "pid": "P_BUILDS_ON", "why": "From a frozen instruction-tuned model (Qwen2.5-14B-Instruct) we extract per-domain persona subspaces"}
+{"sid": "out_6.jsonl:41", "pid": "P_BUILDS_ON", "why": "extract per-domain persona subspaces by contrastive teacher forcing"}
+{"sid": "out_6.jsonl:42", "pid": "P_EVALUATES_ON", "why": "evaluate on eight common OVSS benchmarks Pascal VOC 2012"}
+{"sid": "out_6.jsonl:43", "pid": "P_EVALUATES_ON", "why": "evaluate on COCO Object and COCO Stuff benchmarks"}
+{"sid": "out_6.jsonl:44", "pid": "P_EVALUATES_ON", "why": "evaluate on Cityscapes dataset"}
+{"sid": "out_6.jsonl:45", "pid": "P_EVALUATES_ON", "why": "evaluate on ADE20K which comprises 171 classes"}
+{"sid": "out_6.jsonl:46", "pid": "P_BUILDS_ON", "why": "simply aligning DINOv3 with the CLIP text embedding space using an MLP"}
+{"sid": "out_6.jsonl:47", "pid": "P_BUILDS_ON", "why": "aligning DINOv3 with the CLIP text embedding space"}
+{"sid": "out_6.jsonl:48", "pid": "P_COMPARES_TO", "why": "Another concurrent work, Talk2DINO leverages DINOv2"}
+{"sid": "out_6.jsonl:49", "pid": "P_EVALUATES_ON", "why": "We train M2S on MNIST representing each image"}
+{"sid": "out_6.jsonl:50", "pid": "P_EVALUATES_ON", "why": "We also evaluate M2S on CIFAR-10 using a 28.4M-parameter U-Net"}
+{"sid": "out_6.jsonl:51", "pid": "P_EVALUATES_ON", "why": "compare M2S against SEDD, MDLM, GIDD on OpenWebText"}
+{"sid": "out_6.jsonl:52", "pid": "P_BUILDS_ON", "why": "whether one valid clean-token posterior induces the vector predicted by SEDD"}
+{"sid": "out_6.jsonl:53", "pid": "P_BUILDS_ON", "why": "M2S builds on MD4 for mean-based parameterization of discrete diffusion"}

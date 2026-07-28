@@ -1,0 +1,60 @@
+{"sid": "out_7.jsonl:22", "pid": "DROP", "why": "LLM used for annotation generation, not as evaluation benchmark"}
+{"sid": "out_7.jsonl:23", "pid": "P_EVALUATES_ON", "why": "KroQuant evaluated on PixArt-Σ: 'We evaluate on three diffusion transformers'"}
+{"sid": "out_7.jsonl:24", "pid": "P_EVALUATES_ON", "why": "KroQuant evaluated on SANA: 'We evaluate on three diffusion transformers'"}
+{"sid": "out_7.jsonl:25", "pid": "P_EVALUATES_ON", "why": "KroQuant evaluated on FLUX.1-schnell: 'We evaluate on three diffusion transformers'"}
+{"sid": "out_7.jsonl:26", "pid": "P_COMPARES_TO", "why": "SVDQuant is a baseline: 'KroQuant matches or improves upon all baselines'"}
+{"sid": "out_7.jsonl:27", "pid": "P_COMPARES_TO", "why": "LoRaQ compared in pipeline: 'Pipeline comparison for W4A4 quantization'"}
+{"sid": "out_7.jsonl:28", "pid": "P_EVALUATES_ON", "why": "TTEL evaluated on Qwen3-8B: 'With Qwen3-8B on LiveCodeBench, TTEL attains'"}
+{"sid": "out_7.jsonl:29", "pid": "P_EVALUATES_ON", "why": "TTEL evaluated on LiveCodeBench: 'TTEL attains a pass@64 of 71.0%'"}
+{"sid": "out_7.jsonl:30", "pid": "P_EVALUATES_ON", "why": "TTEL evaluated on AIME-2025: 'Generalizing to math benchmarks AIME-2025'"}
+{"sid": "out_7.jsonl:31", "pid": "P_EVALUATES_ON", "why": "TTEL evaluated on HMMT-2025: 'math benchmarks AIME-2025 and HMMT-2025'"}
+{"sid": "out_7.jsonl:32", "pid": "P_EVALUATES_ON", "why": "Detector evaluated on Writing corpus: 'We use three corpora: Writing'"}
+{"sid": "out_7.jsonl:33", "pid": "P_EVALUATES_ON", "why": "Detector evaluated on XSUM: 'We use three corpora: ... XSUM'"}
+{"sid": "out_7.jsonl:34", "pid": "P_EVALUATES_ON", "why": "Detector evaluated on ESSAY: 'We use three corpora: ... ESSAY'"}
+{"sid": "out_7.jsonl:35", "pid": "DROP", "why": "Gemma used as coauthoring LLM for text generation, incidental role"}
+{"sid": "out_7.jsonl:36", "pid": "P_EVALUATES_ON", "why": "AREX evaluated on BrowseComp: 'Across BrowseComp, WideSearch, DeepSearchQA... AREX substantially outperforms'"}
+{"sid": "out_7.jsonl:37", "pid": "P_EVALUATES_ON", "why": "AREX evaluated on WideSearch: 'Across BrowseComp, WideSearch... benchmarks'"}
+{"sid": "out_7.jsonl:38", "pid": "P_EVALUATES_ON", "why": "AREX evaluated on DeepSearchQA: 'Across... DeepSearchQA... benchmarks'"}
+{"sid": "out_7.jsonl:39", "pid": "P_EVALUATES_ON", "why": "AREX evaluated on Humanity's Last Exam: 'Humanity's Last Exam (HLE)... benchmarks'"}
+{"sid": "out_7.jsonl:40", "pid": "P_COMPARES_TO", "why": "H2O compared baseline: 'H2O- and SnapKV-style eviction predicts their own eviction-induced failures'"}
+{"sid": "out_7.jsonl:41", "pid": "P_COMPARES_TO", "why": "SnapKV compared baseline: 'H2O- and SnapKV-style eviction'"}
+{"sid": "out_7.jsonl:42", "pid": "P_EVALUATES_ON", "why": "Cache eviction evaluated on LongBench: 'On real workloads... LongBench tasks'"}
+{"sid": "out_9.jsonl:0", "pid": "P_EVALUATES_ON", "why": "OpenForgeRL evaluated on ClawEval: 'We evaluate on two popular claw-based benchmarks, ClawEval'"}
+{"sid": "out_9.jsonl:1", "pid": "P_EVALUATES_ON", "why": "OpenForgeRL evaluated on OSWorld: 'OpenForgeGUI reaches 37.7 on OSWorld-Verified'"}
+{"sid": "out_9.jsonl:2", "pid": "P_EVALUATES_ON", "why": "OpenForgeRL evaluated on Mind2Web: 'OpenForgeGUI reaches... 63.0 on Online-Mind2Web'"}
+{"sid": "out_9.jsonl:3", "pid": "P_EVALUATES_ON", "why": "OpenForgeRL evaluated on WebVoyager: '72.3 on WebVoyager'"}
+{"sid": "out_9.jsonl:4", "pid": "P_EVALUATES_ON", "why": "OpenForgeRL evaluated on MCPAtlas: 'reaches... 28.1 on MCPAtlas'"}
+{"sid": "out_9.jsonl:5", "pid": "P_BUILDS_ON", "why": "Qwen3 as backbone: 'We use Qwen3-30B-A3B-Thinking as the backbone model for training'"}
+{"sid": "out_9.jsonl:6", "pid": "DROP", "why": "Claude Code mentioned as existing inference harness in related work context"}
+{"sid": "out_9.jsonl:7", "pid": "DROP", "why": "Codex mentioned as existing inference harness in related work context"}
+{"sid": "out_9.jsonl:8", "pid": "P_BUILDS_ON", "why": "MiniMax used as teacher: 'distill trajectories from a stronger teacher model (MiniMax-M2.5)'"}
+{"sid": "out_9.jsonl:9", "pid": "P_BUILDS_ON", "why": "GRPO adopted for training: 'train with GRPO'"}
+{"sid": "out_9.jsonl:10", "pid": "P_BUILDS_ON", "why": "ReACT used as harness: 'trains on 3 popular harnesses... in addition to the standard ReACT loop'"}
+{"sid": "out_9.jsonl:11", "pid": "DROP", "why": "SFT is generic method, not a resource"}
+{"sid": "out_9.jsonl:12", "pid": "P_BUILDS_ON", "why": "BERT used in model comparison: 'compared four transfer variants under identical splits'"}
+{"sid": "out_9.jsonl:13", "pid": "P_EVALUATES_ON", "why": "MedGame evaluated on PMC-Patients: 'The benchmark contains 5,000 PMC-Patients cases'"}
+{"sid": "out_9.jsonl:14", "pid": "P_EVALUATES_ON", "why": "MedGame benchmark self-evaluation: 'MedGame Bench contains two evaluation tracks'"}
+{"sid": "out_9.jsonl:15", "pid": "P_COMPARES_TO", "why": "Qwen3 tested as compared baseline: 'We evaluate... with a mixture of... Qwen... and Gemini'"}
+{"sid": "out_9.jsonl:16", "pid": "DROP", "why": "GPT-5.2 used as LLM-as-a-Judge for scoring, incidental role"}
+{"sid": "out_9.jsonl:17", "pid": "P_COMPARES_TO", "why": "Claude compared in results table: 'Claude-Sonnet-4.5' appears with performance metrics"}
+{"sid": "out_9.jsonl:18", "pid": "P_COMPARES_TO", "why": "Gemini compared in results table: 'Gemini-3-Pro' listed with results"}
+{"sid": "out_9.jsonl:19", "pid": "P_COMPARES_TO", "why": "Gemma compared in results table: 'Gemma-3-27B' with performance scores"}
+{"sid": "out_9.jsonl:20", "pid": "P_COMPARES_TO", "why": "MedGemma compared in results table: 'MedGemma-27B' with evaluation metrics"}
+{"sid": "out_9.jsonl:21", "pid": "P_BUILDS_ON", "why": "LoRA adopted: 'Open-source models in the fine-tuned setting are adapted with LoRA'"}
+{"sid": "out_9.jsonl:22", "pid": "DROP", "why": "zero-shot is generic prompting method, not a resource"}
+{"sid": "out_9.jsonl:23", "pid": "P_BUILDS_ON", "why": "Qwen2.5 as VLM backbone: 'We adopt Qwen2.5-VL-3B as our VLM backbone'"}
+{"sid": "out_9.jsonl:24", "pid": "UNCERTAIN", "why": "Context discusses network architecture concepts, ReACT method not clearly located"}
+{"sid": "out_9.jsonl:25", "pid": "P_COMPARES_TO", "why": "Codex tested as provider model: 'Codex model' used in request accounting study"}
+{"sid": "out_9.jsonl:26", "pid": "P_COMPARES_TO", "why": "Gemini tested as provider model: 'Gemini requests use Vertex AI'"}
+{"sid": "out_9.jsonl:27", "pid": "P_COMPARES_TO", "why": "Qwen3 tested as baseline model: 'Qwen3-4B with thinking enabled'"}
+{"sid": "out_9.jsonl:28", "pid": "P_COMPARES_TO", "why": "Qwen2.5 tested as baseline model: 'compared repeated sampling of Qwen2.5-Coder-7B'"}
+{"sid": "out_9.jsonl:29", "pid": "P_COMPARES_TO", "why": "Gemma tested as model: 'CodeGemma-7b-it' used in model comparison"}
+{"sid": "out_9.jsonl:30", "pid": "P_BUILDS_ON", "why": "RAG used in pipeline: 'give the LMs access via RAG, along with feedback from tools'"}
+{"sid": "out_9.jsonl:31", "pid": "P_BUILDS_ON", "why": "BERT used as classifier: 'BiomedBERT... serve as the test platform'"}
+{"sid": "out_9.jsonl:32", "pid": "UNCERTAIN", "why": "Context discusses damage diagnosis problem; ReACT method not clearly located"}
+{"sid": "out_9.jsonl:33", "pid": "P_BUILDS_ON", "why": "LoRA compared for fine-tuning: 'comparison of LoRA, QLoRA, and QA-LoRA'"}
+{"sid": "out_9.jsonl:34", "pid": "UNCERTAIN", "why": "*** no mention located ***"}
+{"sid": "out_9.jsonl:35", "pid": "P_BUILDS_ON", "why": "BiomedBERT used as classifier: 'BiomedBERT... characterise each topic-classifier combination'"}
+{"sid": "out_9.jsonl:36", "pid": "P_COMPARES_TO", "why": "Qwen2.5 tested and analyzed: 'Qwen2.5-3B gives more attention to outdated fact'"}
+{"sid": "out_9.jsonl:37", "pid": "P_COMPARES_TO", "why": "Gemma tested and compared: 'Gemma-2-9B rises from 56% to 99% accuracy'"}
+{"sid": "out_g1.jsonl:0", "pid": "P_EVALUATES_ON", "why": "RadioTrace evaluated on RadioMapSeer: 'The RadioMapSeer dataset contains 700 building maps'"}

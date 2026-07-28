@@ -1,0 +1,42 @@
+{"sid": "out_g7.jsonl:11", "pid": "P_EVALUATES_ON", "why": "Multivariate forecasting results on 12 real-world benchmark datasets...PEMS08"}
+{"sid": "out_g7.jsonl:12", "pid": "P_COMPARES_TO", "why": "Results table: Models CARNet (ours)...iTransformer [ 2 ]...best results shown"}
+{"sid": "out_g7.jsonl:13", "pid": "P_COMPARES_TO", "why": "fix W to reported values for fair comparison...TQNet [ 17 ]"}
+{"sid": "out_g7.jsonl:14", "pid": "P_COMPARES_TO", "why": "Models CARNet (ours)...CycleNet [ 16 ]...results table"}
+{"sid": "out_g7.jsonl:15", "pid": "P_COMPARES_TO", "why": "comparisons with all competing methods...SOFTS [ 13 ]"}
+{"sid": "out_g7.jsonl:16", "pid": "P_COMPARES_TO", "why": "Models CARNet (ours)...Crossformer [ 23 ]...in results table"}
+{"sid": "out_g7.jsonl:17", "pid": "P_COMPARES_TO", "why": "Models CARNet (ours)...TiDE [ 24 ]...results table"}
+{"sid": "out_g7.jsonl:18", "pid": "P_COMPARES_TO", "why": "Models CARNet (ours)...SCINet [ 25 ]...results table"}
+{"sid": "out_g7.jsonl:19", "pid": "P_COMPARES_TO", "why": "Models CARNet (ours)...DLinear [ 18 ]...results table"}
+{"sid": "out_g7.jsonl:20", "pid": "P_COMPARES_TO", "why": "Models CARNet (ours)...TimeXer [ 19 ]...results table"}
+{"sid": "out_g7.jsonl:21", "pid": "P_COMPARES_TO", "why": "closest comparator is Turnitin Clarity: it supports instructor-managed assignments"}
+{"sid": "out_g7.jsonl:22", "pid": "P_COMPARES_TO", "why": "Grammarly Authorship adds authorship tracking, source attribution, shareable reports"}
+{"sid": "out_g7.jsonl:23", "pid": "P_COMPARES_TO", "why": "Model-based human typing detection and the integrity seal are unique to Humanly in this comparison...GPTZero"}
+{"sid": "out_g7.jsonl:24", "pid": "P_COMPARES_TO", "why": "BO gave highest mean strict-filter yield (9.0 candidates), compared with differential evolution (7.0)"}
+{"sid": "out_g7.jsonl:25", "pid": "P_COMPARES_TO", "why": "Latin-hypercube sampling provides an unguided space-filling baseline...compared with...Latin-hypercube sampling (1.5)"}
+{"sid": "out_g8.jsonl:0", "pid": "P_EVALUATES_ON", "why": "machine-learning-predicted AIMD trajectories...CCSD trajectories"}
+{"sid": "out_g8.jsonl:1", "pid": "P_BUILDS_ON", "why": "unsupervised mini-batch k-means space tessellation algorithm constructs highly representative training databases"}
+{"sid": "out_g8.jsonl:2", "pid": "P_BUILDS_ON", "why": "The Lustre clock calculus...The paper extends Lustre's clock calculus to support machine learning patterns"}
+{"sid": "out_g8.jsonl:3", "pid": "P_BUILDS_ON", "why": "integrates collaborative filtering with learnable scene representations"}
+{"sid": "out_g8.jsonl:4", "pid": "P_BUILDS_ON", "why": "based on matrix factorization (MF), a widely used and reliable CF model"}
+{"sid": "out_g8.jsonl:5", "pid": "P_EVALUATES_ON", "why": "We evaluate StARS on two socially aware robotics datasets, MannersDB+"}
+{"sid": "out_g8.jsonl:6", "pid": "P_EVALUATES_ON", "why": "We evaluate StARS on two socially aware robotics datasets, MannersDB+ and SocNav1"}
+{"sid": "out_g8.jsonl:7", "pid": "P_EVALUATES_ON", "why": "We perform our evaluation on the GSM8K dataset"}
+{"sid": "out_g8.jsonl:8", "pid": "P_EVALUATES_ON", "why": "we evaluate HumanEval using adversarial suffixes calibrated exclusively on GSM8K"}
+{"sid": "out_g8.jsonl:9", "pid": "P_EVALUATES_ON", "why": "we evaluate...CNN/DailyMail using adversarial suffixes calibrated exclusively on GSM8K"}
+{"sid": "out_g8.jsonl:10", "pid": "P_BUILDS_ON", "why": "constructs adversarial suffixes that collapse the verifier acceptance in speculative decoding"}
+{"sid": "out_g8.jsonl:11", "pid": "P_EVALUATES_ON", "why": "We perform our evaluation on GSM8K with...GPTQ-quantized 8-bit instruction-tuned Qwen2.5 series"}
+{"sid": "out_g8.jsonl:12", "pid": "P_EVALUATES_ON", "why": "LLaMA-3 70B \\rightarrow 8B evaluation uses a tensor-parallel Palmetto testbed"}
+{"sid": "out_g8.jsonl:13", "pid": "P_EVALUATES_ON", "why": "The EAGLE-3 experiments are run separately on a local single RTX 4090 GPU"}
+{"sid": "out_g8.jsonl:14", "pid": "P_EVALUATES_ON", "why": "evaluates whether ADSD's prompt-side attack can bypass Hierarchical Speculative Decoding (HSD)"}
+{"sid": "out_g8.jsonl:15", "pid": "P_BUILDS_ON", "why": "We study the long-term behavior of the Multiplicative Weights Update (MWU) algorithm in game settings"}
+{"sid": "out_g8.jsonl:16", "pid": "P_BUILDS_ON", "why": "Longitudinal Random Forests leverages tree-based ensemble machine learning"}
+{"sid": "out_g8.jsonl:17", "pid": "P_BUILDS_ON", "why": "LRF-adaptiveLMM variant employs adaptive mixed model repeated measures as a node-wise smoother"}
+{"sid": "out_g8.jsonl:18", "pid": "P_EVALUATES_ON", "why": "validated on a de-identified longitudinal diabetes clinical trial dataset from INSULIN trial"}
+{"sid": "out_g8.jsonl:19", "pid": "P_BUILDS_ON", "why": "We use ECAPA-TDNN pretrained on VoxCeleb to extract d-dimensional speaker embeddings"}
+{"sid": "out_g8.jsonl:20", "pid": "P_EVALUATES_ON", "why": "We evaluate ISS on ASVspoof 2019 LA using two architecturally distinct detectors"}
+{"sid": "out_g8.jsonl:21", "pid": "P_EVALUATES_ON", "why": "We evaluate ISS on ASVspoof 2019 and ASVspoof 2021 LA (Logical Access)"}
+{"sid": "out_g8.jsonl:22", "pid": "P_COMPARES_TO", "why": "using two architecturally distinct detectors: AASIST (graph attention network) and RawNet2"}
+{"sid": "out_g8.jsonl:23", "pid": "P_COMPARES_TO", "why": "using two architecturally distinct detectors: AASIST and RawNet2 (end-to-end CNN)"}
+{"sid": "out_g8.jsonl:24", "pid": "P_BUILDS_ON", "why": "show that Gaussian kernel PCA is asymptotically equivalent to classical linear PCA"}
+{"sid": "out_g8.jsonl:25", "pid": "P_BUILDS_ON", "why": "analyzes asymptotic properties of Gaussian RBF RKHS in the large bandwidth limit"}
+{"sid": "out_g8.jsonl:26", "pid": "P_EVALUATES_ON", "why": "We evaluate the statements of Theorems 2 and 3 for a sample collection of 30 datasets from OpenML"}

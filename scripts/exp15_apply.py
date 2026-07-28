@@ -100,6 +100,14 @@ for f in sorted(SRC.glob("out_*.jsonl")):
             stats[pid] += 1
             kept.append(row)
 
+if stats["no_typing_decision"]:
+    print(f"[apply] REFUSING: {stats['no_typing_decision']} claims have no "
+          f"typing decision — the fleet is incomplete. Running now would "
+          f"silently drop them from v2. Re-run when all shards have landed.")
+    raise SystemExit(1)
+
+for old in OUT.glob("out_*.jsonl"):     # never leave a partial run's files
+    old.unlink()
 for i in range(0, len(kept), 400):
     (OUT / f"out_{i // 400}.jsonl").write_text(
         "".join(json.dumps(r) + "\n" for r in kept[i:i + 400]))

@@ -1,0 +1,60 @@
+{"sid": "out_g1.jsonl:1", "pid": "P_EVALUATES_ON", "why": "we evaluate the performance of the proposed method using the RadioMapSeer and the BART-Lab dataset"}
+{"sid": "out_g1.jsonl:2", "pid": "P_BUILDS_ON", "why": "we adopt the pre-trained model provided by RadioDiff, without any additional fine-tuning"}
+{"sid": "out_g1.jsonl:3", "pid": "P_COMPARES_TO", "why": "Baselines... Kriging formulates RM estimation as spatial interpolation... baselines used in our experiments"}
+{"sid": "out_g1.jsonl:4", "pid": "P_COMPARES_TO", "why": "Baselines... RME-GAN is a supervised... baselines used in our experiments"}
+{"sid": "out_g1.jsonl:5", "pid": "P_COMPARES_TO", "why": "Static, public suites such as SWE-bench... fix a task set at release time; their scope is narrow"}
+{"sid": "out_g1.jsonl:6", "pid": "P_COMPARES_TO", "why": "Static, public suites such as SWE-bench and SWE-bench Verified... fix a task set at release time"}
+{"sid": "out_g1.jsonl:7", "pid": "P_COMPARES_TO", "why": "Vendor production benchmarks such as CursorBench take the opposite approach"}
+{"sid": "out_g1.jsonl:8", "pid": "P_BUILDS_ON", "why": "finetuning with a dual objective... focus on finetuning... adapted model should preserve as much of the pretrained model"}
+{"sid": "out_g1.jsonl:9", "pid": "P_BUILDS_ON", "why": "finetuning with a dual objective... the adapted model should preserve as much of the pretrained model"}
+{"sid": "out_g1.jsonl:10", "pid": "P_COMPARES_TO", "why": "LoRA (r=8) in results table; compared against LoRA as a representative low-rank adaptation baseline"}
+{"sid": "out_g1.jsonl:11", "pid": "P_COMPARES_TO", "why": "DoRA in results table as baseline method"}
+{"sid": "out_g1.jsonl:12", "pid": "P_COMPARES_TO", "why": "SaRA in results table as baseline method"}
+{"sid": "out_g1.jsonl:13", "pid": "P_EVALUATES_ON", "why": "We conduct experiments on two diffusion backbones with distinct target-domain datasets: WikiArt; Table 1 shows WikiArt (SD1.5)"}
+{"sid": "out_g1.jsonl:14", "pid": "P_EVALUATES_ON", "why": "Cyberpunk domain; Table shows Cyberpunk (SD1.5) as evaluation dataset"}
+{"sid": "out_g1.jsonl:15", "pid": "P_EVALUATES_ON", "why": "Anime domain in experimental setup; Anime (SD1.5) in results table"}
+{"sid": "out_g1.jsonl:16", "pid": "P_EVALUATES_ON", "why": "Pokemon for SD3... conduct experiments... target-domain datasets: WikiArt, Cyberpunk, and Anime for SD1.5, and Pokemon for SD3"}
+{"sid": "out_g1.jsonl:17", "pid": "P_BUILDS_ON", "why": "Multi-Head Low-Rank Parameterization based on LoRA; TRISHUL extends LoRA"}
+{"sid": "out_g1.jsonl:18", "pid": "P_BUILDS_ON", "why": "Scaling to LLaMA3.2-1B on GLUE; base model for evaluation"}
+{"sid": "out_g1.jsonl:19", "pid": "P_EVALUATES_ON", "why": "Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE"}
+{"sid": "out_g1.jsonl:20", "pid": "P_EVALUATES_ON", "why": "Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE"}
+{"sid": "out_g1.jsonl:21", "pid": "P_EVALUATES_ON", "why": "Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE"}
+{"sid": "out_g1.jsonl:22", "pid": "P_EVALUATES_ON", "why": "Across vision and language benchmarks, including CIFAR-100, SVHN, 20 Newsgroups, MRQA, and GLUE"}
+{"sid": "out_g1.jsonl:23", "pid": "P_EVALUATES_ON", "why": "Scaling to LLaMA3.2-1B on GLUE; benchmarks including GLUE with LLaMA3.2-1B"}
+{"sid": "out_g1.jsonl:24", "pid": "P_COMPARES_TO", "why": "Classical federated optimization methods such as FedAvg... baseline for comparison"}
+{"sid": "out_g1.jsonl:25", "pid": "P_COMPARES_TO", "why": "Classical federated optimization methods such as FedAvg, FedProx... baseline for comparison"}
+{"sid": "out_g1.jsonl:26", "pid": "P_COMPARES_TO", "why": "Classical federated optimization methods such as... FedProx and SCAFFOLD attempt to mitigate this issue"}
+{"sid": "out_g1.jsonl:27", "pid": "P_BUILDS_ON", "why": "Layer 2: Open WebUI AIH-Infra; extends Open WebUI for retrieval with page-level citation"}
+{"sid": "out_g1.jsonl:28", "pid": "P_BUILDS_ON", "why": "Backend Catalog: supports free combination and diagnostic replacement of Surya, Calamari, PaddleOCR, Tesseract, DocLayout-YOLO"}
+{"sid": "out_g1.jsonl:29", "pid": "P_BUILDS_ON", "why": "Backend Catalog: supports free combination and diagnostic replacement of Surya, Calamari, PaddleOCR"}
+{"sid": "out_g1.jsonl:30", "pid": "P_BUILDS_ON", "why": "Backend Catalog: supports free combination and diagnostic replacement of Surya, Calamari, PaddleOCR, Tesseract"}
+{"sid": "out_g1.jsonl:31", "pid": "P_BUILDS_ON", "why": "Backend Catalog: supports free combination and diagnostic replacement of Surya, Calamari, PaddleOCR, Tesseract, DocLayout-YOLO"}
+{"sid": "out_g1.jsonl:32", "pid": "P_BUILDS_ON", "why": "Backend Catalog: supports free combination and diagnostic replacement of DocLayout-YOLO and various vision-language models"}
+{"sid": "out_g1.jsonl:33", "pid": "P_EVALUATES_ON", "why": "A case study on a 29-volume Kant Akademie-Ausgabe knowledge base illustrates how traceability supports retrieval"}
+{"sid": "out_g1.jsonl:34", "pid": "P_BUILDS_ON", "why": "using GRPO as the common policy-optimization algorithm for training specialist models"}
+{"sid": "out_g1.jsonl:35", "pid": "P_BUILDS_ON", "why": "each student response can be routed by its modality to the corresponding specialist; extends on-policy distillation"}
+{"sid": "out_g1.jsonl:36", "pid": "P_COMPARES_TO", "why": "OPOD produces broader benchmark gains than the base model, native OPD, and ExOPD"}
+{"sid": "out_g1.jsonl:37", "pid": "P_EVALUATES_ON", "why": "We link PubMed Central full text with OpenAlex publication and collaboration histories for 775,323 scientists"}
+{"sid": "out_g1.jsonl:38", "pid": "P_EVALUATES_ON", "why": "We link PubMed Central full text with OpenAlex publication and collaboration histories"}
+{"sid": "out_g1.jsonl:39", "pid": "P_EVALUATES_ON", "why": "analyze CRediT contribution statements from 137,120 multi-author papers"}
+{"sid": "out_g1.jsonl:40", "pid": "P_BUILDS_ON", "why": "PageRank estimates importance through links; on which PageRank estimates structural authority"}
+{"sid": "out_g1.jsonl:41", "pid": "P_EVALUATES_ON", "why": "The framework is evaluated using IMDb non-commercial datasets providing audience-evaluation ranking"}
+{"sid": "out_g1.jsonl:42", "pid": "P_EVALUATES_ON", "why": "Wikidata was used for cross-source entity alignment; Each candidate was queried by its IMDb identifier through Wikidata"}
+{"sid": "out_g1.jsonl:43", "pid": "P_EVALUATES_ON", "why": "English Wikipedia hyperlinks: provide directed relationships among the aligned movie entities in the knowledge graph"}
+{"sid": "out_g1.jsonl:44", "pid": "P_EVALUATES_ON", "why": "DeepSeek-V3.2 in results table; Foundation LLMs being evaluated"}
+{"sid": "out_g1.jsonl:45", "pid": "P_EVALUATES_ON", "why": "Qwen2.5-72B-Instruct in results table; Foundation LLMs being evaluated"}
+{"sid": "out_g1.jsonl:46", "pid": "P_EVALUATES_ON", "why": "Qwen3 variants in results table; Foundation LLMs being evaluated"}
+{"sid": "out_g1.jsonl:47", "pid": "P_EVALUATES_ON", "why": "GPT-5.1 in results table; Foundation LLMs being evaluated"}
+{"sid": "out_g1.jsonl:48", "pid": "P_EVALUATES_ON", "why": "Gemini-2.5-Pro in results table; Foundation LLMs being evaluated"}
+{"sid": "out_g1.jsonl:49", "pid": "P_EVALUATES_ON", "why": "Gemini-3-Pro in results table; Foundation LLMs being evaluated"}
+{"sid": "out_g1.jsonl:50", "pid": "P_BUILDS_ON", "why": "using the outputs of a CodeSum Bart model to generate the examples for the one-shot prompting"}
+{"sid": "out_g11.jsonl:0", "pid": "P_BUILDS_ON", "why": "Recent frameworks such as AlphaEvolve show iterative refinement; same evolutionary search algorithm as AlphaEvolve"}
+{"sid": "out_g11.jsonl:1", "pid": "P_EVALUATES_ON", "why": "The in-distribution benchmarks — APPS, TACO, CodeContests, and Codeforces correspond to the four data sources used during training"}
+{"sid": "out_g11.jsonl:2", "pid": "P_EVALUATES_ON", "why": "The in-distribution benchmarks — APPS, TACO, CodeContests, and Codeforces correspond to the four data sources used during training"}
+{"sid": "out_g11.jsonl:3", "pid": "P_EVALUATES_ON", "why": "The in-distribution benchmarks — APPS, TACO, CodeContests, and Codeforces correspond to the four data sources used during training"}
+{"sid": "out_g11.jsonl:4", "pid": "P_EVALUATES_ON", "why": "The in-distribution benchmarks — APPS, TACO, CodeContests, and Codeforces correspond to the four data sources used during training"}
+{"sid": "out_g11.jsonl:5", "pid": "P_EVALUATES_ON", "why": "The out-of-distribution benchmarks — Atcoder, Leetcode, and USACO — are held out entirely during training and serve to evaluate generalization"}
+{"sid": "out_g11.jsonl:6", "pid": "P_EVALUATES_ON", "why": "The out-of-distribution benchmarks — Atcoder, Leetcode, and USACO — are held out entirely during training and serve to evaluate generalization"}
+{"sid": "out_g11.jsonl:7", "pid": "P_EVALUATES_ON", "why": "The out-of-distribution benchmarks — Atcoder, Leetcode, and USACO — are held out entirely during training and serve to evaluate generalization"}
+{"sid": "out_g11.jsonl:8", "pid": "P_BUILDS_ON", "why": "all implemented on Qwen3-14B for fair comparison; sample 10 responses from the same base model (Qwen3-14B)"}
+{"sid": "out_g11.jsonl:9", "pid": "P_EVALUATES_ON", "why": "we adopt 8 tasks from the AlgoTune benchmark that are included in OpenEvolve, spanning linear algebra, signal processing, and scientific computing"}

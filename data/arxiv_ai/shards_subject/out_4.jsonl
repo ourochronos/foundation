@@ -1,0 +1,50 @@
+{"page": "arxiv:2607.21978v1", "subject": "MoE\u00b2-LoRA", "changed": true, "why": "LaTeX residue fix"}
+{"page": "arxiv:2607.21981v1", "subject": "J-CoT", "changed": false}
+{"page": "arxiv:2607.21988v1", "subject": "self-harm probe analysis", "changed": false}
+{"page": "arxiv:2607.21999v1", "subject": "SGS", "changed": true, "why": "Proper method name is Sharpness-Guided Equilibrium Sampling (SGS); SAM is external context"}
+{"page": "arxiv:2607.22002v1", "subject": "VIGOR", "changed": false}
+{"page": "arxiv:2607.22004v1", "subject": "EMNGD", "changed": false}
+{"page": "arxiv:2607.22013v1", "subject": "VSSD", "changed": false}
+{"page": "arxiv:2607.22016v1", "subject": "EVL-MCoT", "changed": false}
+{"page": "arxiv:2607.22024v1", "subject": "contextual security", "changed": true, "why": "Shortened to core proper name"}
+{"page": "arxiv:2607.22026v1", "subject": "DWT-Fusion", "changed": false}
+{"page": "arxiv:2607.22038v1", "subject": "task-conditional compute skipping", "changed": true, "why": "Too generic; replaced with descriptive noun phrase"}
+{"page": "arxiv:2607.22039v1", "subject": "RL-trained model merging", "changed": true, "why": "Title fragment replaced with descriptive method focus"}
+{"page": "arxiv:2607.22042v1", "subject": "LAMAR", "changed": false}
+{"page": "arxiv:2607.22043v1", "subject": "native multimodal pre-training", "changed": true, "why": "Title fragment replaced with descriptive method"}
+{"page": "arxiv:2607.22045v1", "subject": "CEL", "changed": false}
+{"page": "arxiv:2607.22068v1", "subject": "ConvNeXt vehicle Re-ID", "changed": true, "why": "Title fragment replaced; best baseline uses ConvNeXt pretrained with vision-language"}
+{"page": "arxiv:2607.22075v1", "subject": "FSE", "changed": false}
+{"page": "arxiv:2607.22081v1", "subject": "LFS-FRAME", "changed": false}
+{"page": "arxiv:2607.22083v1", "subject": "Nanbeige4.2-3B", "changed": false}
+{"page": "arxiv:2607.22086v1", "subject": "MemNMF", "changed": true, "why": "Generic NMF replaced with specific method: Memory-Augmented NMF"}
+{"page": "arxiv:2607.22098v1", "subject": "REDE", "changed": true, "why": "Title description replaced with proper acronym from abstract"}
+{"page": "arxiv:2607.22114v1", "subject": "Patient Sampling", "changed": true, "why": "Topic area replaced with actual method name"}
+{"page": "arxiv:2607.22115v1", "subject": "text-to-SQL benchmark", "changed": true, "why": "Generic term replaced with method focus"}
+{"page": "arxiv:2607.22136v1", "subject": "DCC", "changed": true, "why": "Title fragment replaced with proper acronym: Dynamic Commonsense Coordination"}
+{"page": "arxiv:2607.22139v1", "subject": "CARDIAG", "changed": false}
+{"page": "arxiv:2607.22148v1", "subject": "dRAE", "changed": false}
+{"page": "arxiv:2607.22157v1", "subject": "memory-augmented agent learning", "changed": true, "why": "Unsubstantiated term replaced with descriptive method focus"}
+{"page": "arxiv:2607.22165v1", "subject": "DBA-Bench", "changed": false}
+{"page": "arxiv:2607.22186v1", "subject": "ESTR", "changed": false}
+{"page": "arxiv:2607.22205v1", "subject": "FBA", "changed": false}
+{"page": "arxiv:2607.22212v1", "subject": "DLM-SVDD", "changed": false}
+{"page": "arxiv:2607.22215v1", "subject": "Latent PDE mapping", "changed": false}
+{"page": "arxiv:2607.22231v1", "subject": "TRaM-VSR", "changed": false}
+{"page": "arxiv:2607.22251v1", "subject": "IFCLoRA", "changed": false}
+{"page": "arxiv:2607.22258v1", "subject": "CBS", "changed": false}
+{"page": "arxiv:2607.22262v1", "subject": "ST-VTD", "changed": false}
+{"page": "arxiv:2607.22264v1", "subject": "multimodal EHR model", "changed": false}
+{"page": "arxiv:2607.22268v1", "subject": "General Value Functions", "changed": true, "why": "Shortened to core method name"}
+{"page": "arxiv:2607.22287v1", "subject": "graph coarsening with label propagation", "changed": true, "why": "Application domain replaced with method name"}
+{"page": "arxiv:2607.22299v1", "subject": "Hopformer", "changed": false}
+{"page": "arxiv:2607.22304v1", "subject": "paralinguistic voice cloning", "changed": true, "why": "Generic term replaced with descriptive method focus"}
+{"page": "arxiv:2607.22305v1", "subject": "pluralistic alignment", "changed": true, "why": "Title fragment replaced with conceptual focus"}
+{"page": "arxiv:2607.22319v1", "subject": "agentic RAG", "changed": true, "why": "Generic acronym replaced with specific method variant"}
+{"page": "arxiv:2607.22334v1", "subject": "Byte-Prefix Marginalization", "changed": true, "why": "Title fragment replaced with proper method name (BPM)"}
+{"page": "arxiv:2607.22345v1", "subject": "Teachy Mini", "changed": true, "why": "Fragment completed to full system name"}
+{"page": "arxiv:2607.22352v1", "subject": "time-reversed imaging", "changed": true, "why": "Completed title fragment to descriptive method name"}
+{"page": "arxiv:2607.22355v1", "subject": "SiPhy", "changed": true, "why": "Title fragment replaced with proper method name"}
+{"page": "arxiv:2607.22356v1", "subject": "order dispatching and routing", "changed": true, "why": "Generic term replaced with descriptive method focus"}
+{"page": "arxiv:2607.22361v1", "subject": "indexing primitive", "changed": true, "why": "Generic term replaced with specific construct being studied"}
+{"page": "arxiv:2607.22365v1", "subject": "TRACTA", "changed": true, "why": "Title fragment replaced with proper benchmark acronym"}
