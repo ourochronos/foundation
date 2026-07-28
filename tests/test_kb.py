@@ -229,3 +229,51 @@ def test_type_oracle_evidence_is_traceable():
     from foundation.typeoracle import evidence, is_model
     if is_model("Qwen2.5"):
         assert any("Qwen" in e for e in evidence("Qwen2.5"))
+
+
+def test_declare_adopts_across_ingests_for_every_declaration(tmp_path):
+    """All three declarations must adopt before minting, not just one.
+
+    D107: the page_title path still minted unconditionally, so a paper
+    title arriving once via the citation axis and once via a bridge got
+    two eids — leaving the citation graph and resource graph as
+    disconnected components with zero paths between them, silently.
+    """
+    kb = KB(backend="memory")
+    a = tmp_path / "a"
+    a.mkdir()
+    (a / "out_0.jsonl").write_text(json.dumps(
+        {"page": "arxiv:1", "page_title": "Paper One", "subject": "Citer",
+         "pid": "P_CITES", "object": "Paper One", "object_page": "arxiv:1",
+         "statement": "Citer cites Paper One."}) + "\n")
+    kb.ingest_shards(a, embed=False)
+    b = tmp_path / "b"
+    b.mkdir()
+    (b / "out_0.jsonl").write_text(json.dumps(
+        {"page": "arxiv:1", "page_title": "Paper One", "subject": "Paper One",
+         "pid": "P_INTRODUCES", "object": "MethodX", "object_global": True,
+         "statement": "Paper One introduces MethodX."}) + "\n")
+    kb.ingest_shards(b, embed=False)
+    assert len(kb.resolve_subject("Paper One")) == 1
+
+
+def test_cross_axis_chain_reaches_the_far_side(tmp_path):
+    """The bridge makes citation -> method -> resource a real query."""
+    kb = KB(backend="memory")
+    d = tmp_path / "x"
+    d.mkdir()
+    (d / "out_0.jsonl").write_text("\n".join(json.dumps(r) for r in [
+        {"page": "arxiv:2", "page_title": "Citing", "subject": "Citing",
+         "pid": "P_CITES", "object": "Paper One", "object_page": "arxiv:1",
+         "statement": "Citing cites Paper One."},
+        {"page": "arxiv:1", "page_title": "Paper One", "subject": "Paper One",
+         "pid": "P_INTRODUCES", "object": "MethodX", "object_global": True,
+         "statement": "Paper One introduces MethodX."},
+        {"page": "arxiv:1", "page_title": "Paper One", "subject": "MethodX",
+         "pid": "P_EVALUATES_ON", "object": "GSM8K", "object_global": True,
+         "statement": "MethodX is evaluated on GSM8K."},
+    ]) + "\n")
+    kb.ingest_shards(d, embed=False)
+    r = kb.chain("Citing", ["P_CITES", "P_INTRODUCES", "P_EVALUATES_ON"])
+    assert r["status"] == "answered"
+    assert "GSM8K" in {a["object"] for a in r["answers"]}

@@ -112,6 +112,27 @@ class KB:
             else:
                 e.neighbors.add("v:" + str(c["object"]).replace(",", ""))
 
+    def _declare(self, form: str, batch: str) -> None:
+        """Register `form` as ONE canonical entity — adopting before minting.
+
+        All three declarations (page_title / object_page / object_global)
+        need this and only one of them had it. Ingest is multi-process and
+        a canonical is not restored on replay, so an unconditional mint
+        gives a second eid to anything that already arrived by another
+        route. Measured twice: GRPO split as resource-vs-subject, and a
+        paper title split as citation-axis-vs-bridge, which silently left
+        the citation graph and the resource graph in disconnected
+        components with zero paths between them.
+        """
+        if form in self._canonical:
+            return
+        prior = sorted(self.reg.by_form.get(form, ()))
+        if len(prior) == 1:
+            self._canonical[form] = self.reg._get(prior[0]).eid
+        else:
+            self._canonical[form] = self.reg._mint(form, batch).eid
+
+
     def _record(self, eid: str, form: str, pid: str, role: str,
                 other: str | None, z) -> None:
         """resolve_write's bookkeeping for a pre-resolved eid (canonical
@@ -229,10 +250,8 @@ class KB:
         # OTHER page's subject==page row) and would mint a stray eid —
         # pre-mint every title entity before resolving anything
         for r in rows:
-            if r["subject"] == r["canon_form"] \
-                    and r["subject"] not in self._canonical:
-                e = self.reg._mint(r["subject"], r["page"])
-                self._canonical[r["subject"]] = e.eid
+            if r["subject"] == r["canon_form"]:
+                self._declare(r["subject"], r["page"])
         # A link target is canonical for the page it names, even when that
         # page contributes no rows of its own. Citation edges exposed this:
         # a cited work whose own source had no bibliography never appeared
@@ -240,9 +259,8 @@ class KB:
         # the evidence count read zero. `object_page` is the extractor
         # saying "this object IS that page's title" — a wikilink, declared.
         for r in rows:
-            if r["object_page"] and r["object"] not in self._canonical:
-                e = self.reg._mint(r["object"], r["object_page"])
-                self._canonical[r["object"]] = e.eid
+            if r["object_page"]:
+                self._declare(r["object"], r["object_page"])
         # A GLOBAL entity has no page at all and is still one thing: GSM8K,
         # Qwen2.5, GRPO. Canonicalising the NAME is not enough — the
         # batch-locality resolver (D52) exists to keep same-form mentions
@@ -252,19 +270,9 @@ class KB:
         # `object_global` is the extractor declaring "this is community
         # vocabulary, one entity by name, corpus-wide".
         for r in rows:
-            if r["object_global"] and r["object"] not in self._canonical:
-                # ADOPT an existing entity of that exact form before minting.
-                # Ingest is multi-process (rebuild_poc.sh runs one per shard
-                # dir) and a global canonical is not restored on replay, so a
-                # resource that already arrived as some paper's own subject
-                # would otherwise get a second eid — GRPO did, being both the
-                # subject of a paper about it and a resource 16 papers use.
-                prior = sorted(self.reg.by_form.get(r["object"], ()))
-                if len(prior) == 1:
-                    self._canonical[r["object"]] = self.reg._get(prior[0]).eid
-                else:
-                    e = self.reg._mint(r["object"], "global:resource")
-                    self._canonical[r["object"]] = e.eid
+            if r["object_global"]:
+                self._declare(r["object"], "global:resource")
+
         Z = (self._embed([r["statement"] for r in rows])
              if embed and rows else
              np.zeros((len(rows), getattr(self.store, "dim", 1024)),

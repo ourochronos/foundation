@@ -2,6 +2,31 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D107: Multi-hop over REAL data works — **0.848 correct, 0.000 wrong, 0.152 abstain** — after finding the graph was two disconnected components
+Asked whether the system can synthesise, not just retrieve. Ran D61's own diagnostic first, then followed it.
+
+**D61's blocker is structurally gone.** It measured **688 open relations from 1,771 triples** (0.389 relations per claim) and concluded QA at 0.020 was blocked on relation canonicalisation, not on the store. The current corpus: **67 relations over 19,972 claims — 0.0034 per claim, a 114× consolidation**, and only 25% of relations have ≤3 examples versus "nearly all". Curated pids beat free-text relation strings, which is what D61 predicted.
+
+**But the first real cross-axis query returned ZERO, and the reason was structural.** 3,840 citation claims and 941 resource claims sit in the same store with **no path between them**: 191 papers carry both axes and every one uses a different subject — the citation axis keys on the paper TITLE, the resource axis on the METHOD name (`"RadioTrace: Transmitter-Aware Diffusion…"` vs `"RadioTrace"`). Each rule was right for its own job; nobody declared they name the same paper. **Not a retrieval failure — there was no edge to retrieve.**
+
+**The bridge is one derivable claim per paper**: TITLE `P_INTRODUCES` METHOD, 244 of them, no fleet and no judgement since both endpoints already existed and were already canonical. Forward-directed because `chain` walks forward, which makes `chain(X, [P_CITES, P_INTRODUCES, P_EVALUATES_ON])` a real query.
+
+**And it still returned zero — the same bug a third time.** The paper title split into two eids (citation-axis vs bridge) because the canonical pre-pass MINTS unconditionally, and ingest is multi-process so a canonical is not restored on replay. I had fixed exactly this for `object_global` at D101 and **left the other two declaration paths unfixed**. All three now route through one `_declare(form, batch)` that adopts an existing same-form entity before minting. Title split 2 → 1 eid; cross-axis paths **0 → 216** over 105 citing papers.
+
+**The measurement, over all 105 answerable questions** — *"what does the paper this one cites evaluate on?"*, joining the citation axis to the resource axis through the bridge:
+
+| | |
+|---|---|
+| answered with a correct resource | **89/105 = 0.848** |
+| answered but wrong | **0/105 = 0.000** |
+| abstained | 16/105 = 0.152 |
+
+**Zero wrong answers is the result that matters more than 0.848.** The system either answers correctly or declines — the honest-status discipline (D74/D78/D81) holding on real multi-hop over real ingested text, not on the synthetic world where the reasoner was developed.
+
+**Scope, stated plainly**: this is NOT a like-for-like beat of D61's 0.020. Different corpus (our AI slice vs MuSiQue), different question shape (3-hop across two engineered axes vs 2-hop free-text), and the questions are generated from the graph, so this measures *traversal and honest abstention over real messy data*, not reading comprehension. What it does establish: the machinery that scored 0.9+ on synthetic worlds survives contact with a real corpus, and the thing that was actually broken was a missing identity declaration — the same defect class as D92, D101 and this entry, three times in one axis.
+
+**Standing rule**: when two axes are built independently over the same documents, the join between them is a THIRD thing that must be declared. Neither axis is wrong; the edge simply does not exist until someone says the two names denote one paper.
+
 ## 2026-07-28 — D106: Resource axis ACCEPTED — both raters converge on **0.82**, every disagreement traced to one cause, and the frozen audit still describes the corpus
 Thread closed. The last disputed item, idx 44, is resolved by the full text: the paper's *"Compared methods"* section reads **"Coconut (Hao et al., 2024), CODI, and SIM-Coconut are latent-interface baselines"** — an explicit baseline list sitting at ~39k characters, outside the 8k window both raters were shown.
 

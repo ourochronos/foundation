@@ -1,0 +1,24 @@
+{
+ "question": "what does the paper this one cites evaluate on? (citation axis -> bridge -> resource axis)",
+ "n": 105,
+ "correct": 89,
+ "wrong": 0,
+ "abstain": 16,
+ "accuracy": 0.848,
+ "wrong_rate": 0.0,
+ "abstain_rate": 0.152,
+ "relation_vocabulary": {
+  "claims": 19972,
+  "relations": 67,
+  "per_claim": 0.0034,
+  "d61_per_claim": 0.389,
+  "consolidation": "114x"
+ },
+ "cross_axis_paths": {
+  "before_bridge": 0,
+  "after_bridge": 216,
+  "citing_papers": 105
+ },
+ "scope": "NOT a like-for-like beat of D61 0.020: different corpus (AI slice vs MuSiQue), different question shape (3-hop across two engineered axes vs 2-hop free-text), and questions are generated from the graph \u2014 this measures traversal and honest abstention over real messy data, not reading comprehension.",
+ "headline": "zero wrong answers \u2014 the system answers correctly or declines"
+}
