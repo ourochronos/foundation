@@ -1,0 +1,146 @@
+[
+ {
+  "sid": "out_12.jsonl:34",
+  "subject": "RIS-Kernel",
+  "object": "Qwen2-1.5B",
+  "page": "arxiv:2607.21927v1",
+  "statement": "RIS-Kernel is evaluated on Qwen2-1.5B.",
+  "typing_why": "Validation focuses on Qwen2-1.5B-Instruct; explicit test set usage"
+ },
+ {
+  "sid": "out_18.jsonl:11",
+  "subject": "MineValiCoder",
+  "object": "Qwen2.5",
+  "page": "arxiv:2607.22471v1",
+  "statement": "MineValiCoder is evaluated on Qwen2.5.",
+  "typing_why": "experiments on four LLMs with different scales, including... Qwen2.5-Coder-7B"
+ },
+ {
+  "sid": "out_3.jsonl:28",
+  "subject": "GuardianAgentBench",
+  "object": "Qwen3-Max",
+  "page": "arxiv:2607.20982v1",
+  "statement": "GuardianAgentBench is evaluated on Qwen3-Max.",
+  "typing_why": "Model benchmarked; 'We benchmark six frontier models... Qwen3-Max'"
+ },
+ {
+  "sid": "out_3.jsonl:34",
+  "subject": "Animacy circuit",
+  "object": "Qwen3",
+  "page": "arxiv:2607.20995v1",
+  "statement": "Animacy circuit is evaluated on Qwen3.",
+  "typing_why": "Model evaluated; 'on four open-weight language models... Qwen 3 4B'"
+ },
+ {
+  "sid": "out_5.jsonl:43",
+  "subject": "Int-Bench",
+  "object": "Qwen2.5",
+  "page": "arxiv:2607.21306v1",
+  "statement": "Int-Bench is evaluated on Qwen2.5.",
+  "typing_why": "We used Qwen2.5-7B-Instruct as the student model"
+ },
+ {
+  "sid": "out_6.jsonl:33",
+  "subject": "Adapter capacity measurement",
+  "object": "Qwen2.5",
+  "page": "arxiv:2607.21351v1",
+  "statement": "Adapter capacity measurement is evaluated on Qwen2.5.",
+  "typing_why": "Applied to realistic fine-tunes of Qwen2.5"
+ },
+ {
+  "sid": "out_7.jsonl:28",
+  "subject": "TTEL",
+  "object": "Qwen3-8B",
+  "page": "arxiv:2607.21453v2",
+  "statement": "TTEL is evaluated on Qwen3-8B.",
+  "typing_why": "TTEL evaluated on Qwen3-8B: 'With Qwen3-8B on LiveCodeBench, TTEL attains'"
+ },
+ {
+  "sid": "out_g1.jsonl:45",
+  "subject": "SciExplore",
+  "object": "Qwen2.5",
+  "page": "arxiv:2607.20926v1",
+  "statement": "SciExplore is evaluated on Qwen2.5.",
+  "typing_why": "Qwen2.5-72B-Instruct in results table; Foundation LLMs being evaluated"
+ },
+ {
+  "sid": "out_g1.jsonl:46",
+  "subject": "SciExplore",
+  "object": "Qwen3",
+  "page": "arxiv:2607.20926v1",
+  "statement": "SciExplore is evaluated on Qwen3.",
+  "typing_why": "Qwen3 variants in results table; Foundation LLMs being evaluated"
+ },
+ {
+  "sid": "out_g11.jsonl:15",
+  "subject": "MoE\u00b2-LoRA",
+  "object": "Qwen3",
+  "page": "arxiv:2607.21978v1",
+  "statement": "MoE\u00b2-LoRA is evaluated on Qwen3.",
+  "typing_why": "we conduct the main experiments on three MoE backbones: ... Qwen3-30B-A3B"
+ },
+ {
+  "sid": "out_g11.jsonl:18",
+  "subject": "MoE\u00b2-LoRA",
+  "object": "Qwen3-30B-A3B",
+  "page": "arxiv:2607.21978v1",
+  "statement": "MoE\u00b2-LoRA is evaluated on Qwen3-30B-A3B.",
+  "typing_why": "we conduct the main experiments on three MoE backbones: Qwen3-30B-A3B"
+ },
+ {
+  "sid": "out_g11.jsonl:47",
+  "subject": "VIGOR",
+  "object": "Qwen2.5-1.5B",
+  "page": "arxiv:2607.22002v1",
+  "statement": "VIGOR is evaluated on Qwen2.5-1.5B.",
+  "typing_why": "we examine the runtime composition of baseline GRPO training for Qwen2.5-1.5B"
+ },
+ {
+  "sid": "out_g4.jsonl:6",
+  "subject": "concept-circuit analysis",
+  "object": "Qwen2.5-Coder",
+  "page": "arxiv:2607.21491v1",
+  "statement": "concept-circuit analysis is evaluated on Qwen2.5-Coder.",
+  "typing_why": "extending concept-circuit extraction method to Qwen2.5-Coder for 2x2 cross-language study"
+ },
+ {
+  "sid": "out_g5.jsonl:8",
+  "subject": "Windowed-MTP",
+  "object": "Qwen3.6-35B",
+  "page": "arxiv:2607.21535v1",
+  "statement": "Windowed-MTP is evaluated on Qwen3.6-35B.",
+  "typing_why": "Benchmarks at fixed 1.04M-token input span, Qwen3.6-35B tested with Windowed-MTP"
+ },
+ {
+  "sid": "out_g5.jsonl:9",
+  "subject": "Windowed-MTP",
+  "object": "Qwen3.5-122B",
+  "page": "arxiv:2607.21535v1",
+  "statement": "Windowed-MTP is evaluated on Qwen3.5-122B.",
+  "typing_why": "Benchmarks at fixed 1.04M-token input span, Qwen3.5-122B tested with Windowed-MTP"
+ },
+ {
+  "sid": "out_g6.jsonl:11",
+  "subject": "VCSD",
+  "object": "Qwen3-VL",
+  "page": "arxiv:2607.21556v1",
+  "statement": "VCSD is evaluated on Qwen3-VL.",
+  "typing_why": "We evaluate VCSD on Qwen3-VL...at 2B, 4B, and 8B...Table reports primary comparison across model scales"
+ },
+ {
+  "sid": "out_g6.jsonl:12",
+  "subject": "VCSD",
+  "object": "Qwen3.5",
+  "page": "arxiv:2607.21556v1",
+  "statement": "VCSD is evaluated on Qwen3.5.",
+  "typing_why": "We evaluate VCSD on...Qwen3.5 (Qwen Team, 2026) at 2B, 4B, and 9B...on benchmark results"
+ },
+ {
+  "sid": "out_g8.jsonl:11",
+  "subject": "ADSD",
+  "object": "Qwen2.5",
+  "page": "arxiv:2607.21804v1",
+  "statement": "ADSD is evaluated on Qwen2.5.",
+  "typing_why": "We perform our evaluation on GSM8K with...GPTQ-quantized 8-bit instruction-tuned Qwen2.5 series"
+ }
+]

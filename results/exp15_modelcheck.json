@@ -1,0 +1,17 @@
+{
+ "counts": {
+  "rechecked": 18,
+  "retyped": 18
+ },
+ "kept": 969,
+ "pid_mix": {
+  "P_BUILDS_ON": 324,
+  "P_EVALUATES_ON": 389,
+  "P_COMPARES_TO": 256
+ },
+ "resources_ge2": 87,
+ "resources_ge3": 41,
+ "resources_ge5": 17,
+ "pages": 250,
+ "subjects": 250
+}

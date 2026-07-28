@@ -155,6 +155,48 @@ if sys.argv[1] == "arxiv50":
 elif sys.argv[1] == "arxivai50":
     _abstract_audit("arxivai50", "arxiv_ai")
 
+elif sys.argv[1] == "resv2_50":
+    items = json.loads(
+        (ROOT / "data/arxiv_ai/res_v2_audit_sample_50.json").read_text())
+    win = {}
+    for f in sorted((ROOT / "data/arxiv_ai/shards_res").glob("in_*.json")):
+        for p in json.loads(f.read_text()):
+            win["arxiv:" + p["arxiv_id"]] = p
+    labels = json.loads(
+        (ROOT / "data/arxiv_ai/res_v2_audit_labels_50.json").read_text())
+    mine = {i: ("DEFECT" if i in labels["defect_idx"] else "PRECISE")
+            for i in range(50)}
+    blocks = []
+    for i, s_ in enumerate(items):
+        p = win.get(s_["page"], {})
+        blocks.append(
+            f"### ITEM {i}\nCLAIM: {s_['statement']}\n"
+            f"  subject={s_['subject']!r} relation={s_['pid']} "
+            f"object={s_['object']!r}\nTITLE: {p.get('title','?')}\n"
+            f"ABSTRACT: {p.get('abstract','')}\n"
+            f"PAPER BODY:\n{p.get('body_window','')}")
+    header = (
+        "You are an independent audit adjudicator. Each item is a SHARED "
+        "RESOURCE claim: the paper's own entity (subject), a relation, and "
+        "a resource the paper did not invent (object). Relations: "
+        "P_EVALUATES_ON = evaluates/tests/trains on this dataset or "
+        "benchmark; P_BUILDS_ON = builds on, fine-tunes, adopts or is "
+        "implemented on this base model or prior method; P_COMPARES_TO = "
+        "measures itself against this as a baseline (or, when the paper IS "
+        "a benchmark, a model it scores).\n"
+        "DEFECT if: the ABSTRACT or PAPER BODY does not support it (never "
+        "credit your own knowledge of the real system); the RELATION is "
+        "wrong for what the text says; the OBJECT is a generic term "
+        "(transformer, LSTM, VAE, GAN, SFT, neural network) rather than a "
+        "named artifact; the OBJECT mis-states the resource (a truncation "
+        "or a different model than the one used); or the SUBJECT is a "
+        "title fragment or stopword. Otherwise PRECISE.\n"
+        "Do not use any tools. Output ONLY a JSON array, one object per "
+        'ITEM, format {"idx": <n>, "verdict": "PRECISE"|"DEFECT", '
+        '"reason": "<short>"} — nothing else. Use each item\'s OWN idx.\n\n')
+    run("resv2_50", items, header + "\n\n".join(blocks),
+        {"PRECISE", "DEFECT"}, mine, blocks=blocks, header=header)
+
 elif sys.argv[1] == "res50":
     items = json.loads(
         (ROOT / "data/arxiv_ai/res_audit_sample_50.json").read_text())

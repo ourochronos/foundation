@@ -1,0 +1,86 @@
+{
+ "protocol": "FRESH frozen audit over shards_res_v2 (post typing + subject + object-fold + both model-as-target passes). 50 claims, seed 28, graded by the session model against each paper's body_window + abstract + title via the REPAIRED locator, read UNTRUNCATED. Labels frozen before any number was computed. Sample was re-drawn after the Qwen fix so it measures the final state, not a state about to change.",
+ "grading_discipline": "Clipped evidence misled me twice in D97/D98, so every item was read at full window width; item 5 (OPOD/GRPO) was nearly recorded as a defect on a truncated read and is correct at full width.",
+ "defect_idx": [
+  10,
+  13,
+  22,
+  24,
+  25,
+  28,
+  35,
+  36,
+  38,
+  45
+ ],
+ "defect_families": {
+  "generic_term_survived_typing": [
+   10,
+   22,
+   24,
+   25,
+   45
+  ],
+  "wrong_relation": [
+   35,
+   36
+  ],
+  "object_mis-stated_or_substring": [
+   13,
+   28,
+   38
+  ]
+ },
+ "defect_notes": {
+  "10": "LSTM \u2014 generic architecture class, same exclusion as transformer/VAE",
+  "13": "'Qwen3.5' extracted from 'Prism-Qwen3.5-Reranker-0.8B', a different model, and it is a baseline not a base",
+  "22": "SFT \u2014 a training paradigm the paper STUDIES, not one it builds on",
+  "24": "transformer \u2014 generic; the paper merely stays 'competitive with the Transformer'",
+  "25": "transformer \u2014 generic (the specific thing is 'Looped Transformer')",
+  "28": "'GPT-5' but the paper used GPT-5-mini \u2014 a different model",
+  "35": "PEMS03 is a DATASET in the paper's dataset table, typed P_COMPARES_TO",
+  "36": "EAGLE-3 is a speculative-decoding SYSTEM, typed P_EVALUATES_ON as if a dataset",
+  "38": "'Llama' truncated from 'Llama-Krikri-8B-Instruct', a Greek-specific model",
+  "45": "transformer \u2014 generic, and the paper's finding is that transformer fusion does NOT help"
+ },
+ "precise": 40,
+ "n": 50,
+ "precision": 0.8,
+ "ci95": [
+  0.6696262789551477,
+  0.8875637005402612
+ ],
+ "gate": 0.8,
+ "passes_gate": true,
+ "verdict": "NOT ACCEPTED \u2014 0.80 mine (boundary) / 0.58 Sol (fail); repairs demonstrably work but the gate is not met and the granularity policy is undeclared",
+ "adjudication": {
+  "model": "gpt-5.6-sol",
+  "precision": 0.58,
+  "ci95": [
+   0.442,
+   0.706
+  ],
+  "agreement": 0.74,
+  "kappa": 0.425,
+  "defects": 21,
+  "name_granularity_disagreement": [
+   1,
+   8,
+   19,
+   20,
+   26,
+   40,
+   41
+  ],
+  "granularity_note": "Sol requires exact artifact identity (Qwen3-30B-A3B, AIME 2024, Claude-Sonnet-4.5); our extraction prompt INSTRUCTS family-level folding because that is what creates cross-paper linkage. A declared policy, not an error.",
+  "sol_precision_excluding_granularity": 0.72,
+  "real_defects_I_missed": [
+   4,
+   5,
+   14,
+   39,
+   48
+  ],
+  "verified": "checked against source per D98; Sol's corrections held this time (unlike D97 idx 39)"
+ }
+}

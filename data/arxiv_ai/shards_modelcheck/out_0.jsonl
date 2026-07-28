@@ -1,0 +1,47 @@
+{"sid": "out_0.jsonl:0", "pid": "P_BUILDS_ON", "why": "LoRA adapts GPT-3 as base model"}
+{"sid": "out_0.jsonl:1", "pid": "P_BUILDS_ON", "why": "LoRA adapts RoBERTa as base model"}
+{"sid": "out_0.jsonl:2", "pid": "P_BUILDS_ON", "why": "LoRA adapts DeBERTa as base model"}
+{"sid": "out_0.jsonl:3", "pid": "P_BUILDS_ON", "why": "LoRA adapts GPT-2 as base model"}
+{"sid": "out_0.jsonl:17", "pid": "P_COMPARES_TO", "why": "LLM-as-Judge method evaluates Vicuna responses in benchmark"}
+{"sid": "out_0.jsonl:18", "pid": "P_BUILDS_ON", "why": "Activation Addition applied to Llama 3"}
+{"sid": "out_0.jsonl:19", "pid": "P_BUILDS_ON", "why": "Activation Addition applied to OPT"}
+{"sid": "out_0.jsonl:20", "pid": "P_BUILDS_ON", "why": "Activation Addition applied to GPT-2-XL"}
+{"sid": "out_15.jsonl:40", "pid": "P_BUILDS_ON", "why": "IFCLoRA improves method on Llama 3 base"}
+{"sid": "out_16.jsonl:21", "pid": "P_BUILDS_ON", "why": "Fine-tuning Gemini on synthetic data"}
+{"sid": "out_17.jsonl:11", "pid": "P_COMPARES_TO", "why": "SceneActBench: benchmark evaluating Claude Opus 4.6"}
+{"sid": "out_17.jsonl:12", "pid": "P_COMPARES_TO", "why": "SceneActBench: benchmark evaluating Claude Sonnet 5"}
+{"sid": "out_17.jsonl:13", "pid": "P_COMPARES_TO", "why": "SceneActBench: benchmark evaluating GPT-5.4"}
+{"sid": "out_17.jsonl:14", "pid": "P_COMPARES_TO", "why": "SceneActBench: benchmark evaluating Gemini 3.1 Pro"}
+{"sid": "out_17.jsonl:15", "pid": "P_COMPARES_TO", "why": "SceneActBench: benchmark evaluating Qwen 3.7 Plus"}
+{"sid": "out_18.jsonl:9", "pid": "P_COMPARES_TO", "why": "MineValiCoder tested across LLM scales including GPT-4"}
+{"sid": "out_18.jsonl:10", "pid": "P_COMPARES_TO", "why": "MineValiCoder tested on Llama 3.1"}
+{"sid": "out_3.jsonl:2", "pid": "DROP", "why": "ANNS indexing uses Llama features as data source"}
+{"sid": "out_3.jsonl:22", "pid": "P_COMPARES_TO", "why": "GuardianAgentBench: benchmarking Claude Opus 4.5"}
+{"sid": "out_3.jsonl:24", "pid": "P_COMPARES_TO", "why": "GuardianAgentBench: benchmarking GPT-5.2 Pro"}
+{"sid": "out_3.jsonl:25", "pid": "P_COMPARES_TO", "why": "GuardianAgentBench: benchmarking GPT-OSS-120B"}
+{"sid": "out_3.jsonl:26", "pid": "P_COMPARES_TO", "why": "GuardianAgentBench: benchmarking Gemini-3-Pro"}
+{"sid": "out_3.jsonl:27", "pid": "P_COMPARES_TO", "why": "GuardianAgentBench: benchmarking DeepSeek-V3.2"}
+{"sid": "out_3.jsonl:29", "pid": "DROP", "why": "HyWorldVLA uses Qwen as data generation helper tool"}
+{"sid": "out_3.jsonl:31", "pid": "P_BUILDS_ON", "why": "Animacy circuit discovery method applied to GPT-2 Small"}
+{"sid": "out_3.jsonl:32", "pid": "P_BUILDS_ON", "why": "Animacy circuit discovery method applied to Llama 3.2"}
+{"sid": "out_3.jsonl:33", "pid": "P_BUILDS_ON", "why": "Animacy circuit discovery method applied to Gemma 3"}
+{"sid": "out_3.jsonl:42", "pid": "DROP", "why": "LLM-summarizer stability probe uses Llama as summarization tool"}
+{"sid": "out_3.jsonl:53", "pid": "P_BUILDS_ON", "why": "HiMe method evaluated on Gemini backbone"}
+{"sid": "out_3.jsonl:54", "pid": "P_BUILDS_ON", "why": "HiMe method sweep covers Qwen backbones"}
+{"sid": "out_5.jsonl:42", "pid": "P_COMPARES_TO", "why": "Int-Bench experiments on different student models including Llama 3"}
+{"sid": "out_7.jsonl:12", "pid": "P_BUILDS_ON", "why": "Convergence detector studies on DeepSeek-R1-Distill-Qwen-7B"}
+{"sid": "out_g1.jsonl:44", "pid": "P_COMPARES_TO", "why": "SciExplore benchmark on foundation LLM DeepSeek-V3.2"}
+{"sid": "out_g1.jsonl:47", "pid": "P_COMPARES_TO", "why": "SciExplore benchmark on foundation LLM GPT-5.1"}
+{"sid": "out_g1.jsonl:48", "pid": "P_COMPARES_TO", "why": "SciExplore benchmark on foundation LLM Gemini 2.5-Pro"}
+{"sid": "out_g1.jsonl:49", "pid": "P_COMPARES_TO", "why": "SciExplore benchmark on foundation LLM Gemini-3-Pro"}
+{"sid": "out_g11.jsonl:17", "pid": "P_BUILDS_ON", "why": "MoE2-LoRA main experiments on MoE backbone DeepSeek-V2-Lite"}
+{"sid": "out_g11.jsonl:38", "pid": "P_BUILDS_ON", "why": "Self-harm probe analysis method on Gemma-3-4B"}
+{"sid": "out_g12.jsonl:22", "pid": "P_COMPARES_TO", "why": "DWT-Fusion tested on proxy model GPT-Neo"}
+{"sid": "out_g12.jsonl:23", "pid": "P_COMPARES_TO", "why": "DWT-Fusion tested on proxy model GPT-J"}
+{"sid": "out_g12.jsonl:24", "pid": "P_COMPARES_TO", "why": "DWT-Fusion tested on proxy model Falcon"}
+{"sid": "out_g12.jsonl:25", "pid": "P_COMPARES_TO", "why": "DWT-Fusion tested on proxy model Llama 3"}
+{"sid": "out_g4.jsonl:7", "pid": "P_BUILDS_ON", "why": "Concept-circuit analysis method extended to DeepSeek-Coder-V1"}
+{"sid": "out_g4.jsonl:8", "pid": "P_COMPARES_TO", "why": "Epanorthosis Index metric generated across Claude Haiku"}
+{"sid": "out_g4.jsonl:9", "pid": "P_COMPARES_TO", "why": "Epanorthosis Index metric generated across Claude Sonnet"}
+{"sid": "out_g4.jsonl:10", "pid": "P_COMPARES_TO", "why": "Epanorthosis Index metric generated across Claude Opus"}
+{"sid": "out_g8.jsonl:12", "pid": "P_BUILDS_ON", "why": "ADSD method evaluated on Llama 3 70B to 8B compression"}

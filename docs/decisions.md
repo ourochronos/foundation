@@ -2,6 +2,21 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D100: v2 audited — **0.80 mine (boundary pass) / 0.58 Sol (fail)**, and the 22-point gap is ONE undeclared policy: how granular a resource name must be
+The fresh frozen audit over `shards_res_v2` ran after every repair (typing, subject naming, object fold, both model-as-target passes). Sample re-drawn post-fix so it measures the final state; all 50 read **untruncated**, since clipped evidence misled me twice in D97/D98 — item 5 was nearly recorded as a defect on a truncated read and is correct at full width.
+
+**My grading: 0.80 [0.67–0.89] — exactly the gate, a boundary pass** (v1 was 0.68/0.66). **Sol: 0.58 [0.44–0.71] — a clear fail.** Agreement 0.740, κ 0.425.
+
+**The gap is not noise and not an error by either rater. It is a policy the audit instrument never encoded.** Seven of Sol's twenty-one defects are purely about **name granularity**: `Qwen3` where the paper used `Qwen3-30B-A3B`, `Qwen2.5` for `Qwen2.5-3B`, `AIME` for `AIME 2024`, `CBraMod` for `CBraMod-small`, `Claude` for `Claude-Sonnet-4.5`. Every one of those folds is **what the extraction prompt explicitly instructs** — "drop size/variant suffixes unless the paper's point is about that size" — because family-level names are the mechanism that makes the axis work at all. Keep `Qwen2.5-3B`, `Qwen2.5-7B` and `Qwen2.5-32B` apart and the cross-paper population collapses back toward the zero that D95 existed to fix. **Name granularity trades per-claim precision against cross-paper linkage, and the corpus deliberately bought linkage.** Excluding that disagreement, Sol reads **0.72 [0.58–0.83]** — still short of the gate, so the granularity policy does not rescue the number, but it accounts for two-thirds of the gap and must be stated before either figure means anything.
+
+**Sol also found five real defects I missed**, and these are the useful part: idx 48 (`Graph Attention Transformer` is CASC's OWN introduced component, not an external resource — a shared-resource claim about a thing the paper invented), idx 14 (`BGE-M3` vs the actually-used `bge-m3-retromae`, a different artifact, not a size suffix), idx 4 (`HarmBench` vs the `HarmBench-Response` subset), plus 5 and 39. It also correctly rescued idx 36. **Verified against source rather than accepted on trust, per D98's rule** — and unlike D97, Sol's corrections held up this time.
+
+**My own residue, unchanged by the dispute**: generic terms that survived typing (`transformer` ×3, `LSTM`, `SFT` — 5 of my 10 defects) despite the prompt naming them, wrong relations (2), and object mis-statements (3). The generic family is mechanically removable with a blocklist and is the single cheapest remaining win.
+
+**Verdict: NOT ACCEPTED.** One rater at the boundary and one clearly below it is not a pass, and I will not pick the flattering rater. What the run does establish: **the repairs work** — 0.66/0.68 → 0.80/0.58 is a large move on both raters' scales, the relation-typing diagnosis (D97) was right, and subject naming transferred perfectly (250 subjects over 250 pages).
+
+**Registered before any further work**: the resource-name granularity policy must be written into the extraction prompt AND the audit instrument as the same sentence, so that the next audit measures conformance to a declared standard instead of re-litigating it. An acceptance gate that two careful raters can read 22 points apart is not yet a gate.
+
 ## 2026-07-27 — D99: Both repairs APPLIED at corpus scale — one subject per page exactly, 125 relations corrected, 70 non-usages dropped; two residual families measured and NOT yet fixed
 The D98 fixes ran over the whole resource corpus and merged into `data/arxiv_ai/shards_res_v2` (originals untouched, so the v1 audit stays meaningful). 18 typing shards + 6 subject shards.
 

@@ -1,0 +1,342 @@
+{
+ "audit": "resv2_50",
+ "model": "gpt-5.6-sol",
+ "n": 50,
+ "n_judged": 50,
+ "raw_agreement": 0.74,
+ "cohens_kappa": 0.42477876106194695,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The implemented backbone is specifically Qwen3-30B-A3B; 'Qwen3' truncates the resource."
+  },
+  {
+   "idx": 4,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The evaluation uses distinct HarmBench-Response and HarmBench-Prompt cells, not a resource named simply HarmBench."
+  },
+  {
+   "idx": 5,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "OPOD is an on-policy distillation method; GRPO is used for policy optimization and controlled specialist training, not the prior method OPOD principally builds on."
+  },
+  {
+   "idx": 8,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "QLPO is applied to specific Qwen2.5 variants, including Qwen2.5-3B and Qwen2.5-32B; 'Qwen2.5' truncates the resource."
+  },
+  {
+   "idx": 14,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The actual initialization model is bge-m3-retromae, not BGE-M3."
+  },
+  {
+   "idx": 19,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The specified benchmark is AIME 2024, not generic AIME."
+  },
+  {
+   "idx": 20,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The baseline is specifically CBraMod-small, not CBraMod."
+  },
+  {
+   "idx": 26,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The reported benchmark is specifically AIME 2024, not generic AIME."
+  },
+  {
+   "idx": 36,
+   "mine": "DEFECT",
+   "theirs": "PRECISE",
+   "their_reason": "ADSD is explicitly tested in EAGLE-3 experiments."
+  },
+  {
+   "idx": 39,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The subject is a generic method description rather than a distinct named paper entity."
+  },
+  {
+   "idx": 40,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The evaluated model is specifically Qwen2.5-72B-Instruct; Qwen2.5 is truncated."
+  },
+  {
+   "idx": 41,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "The compared model is specifically Claude-Sonnet-4.5; Claude is truncated."
+  },
+  {
+   "idx": 48,
+   "mine": "PRECISE",
+   "theirs": "DEFECT",
+   "their_reason": "Graph attention transformer describes CASC's introduced architecture, not a named external artifact."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "PRECISE",
+   "reason": "The detector is explicitly evaluated on the talking-face subset of Celeb-DF++."
+  },
+  "1": {
+   "verdict": "DEFECT",
+   "reason": "The implemented backbone is specifically Qwen3-30B-A3B; 'Qwen3' truncates the resource."
+  },
+  "2": {
+   "verdict": "PRECISE",
+   "reason": "GPQA is explicitly one of QLPO's five evaluation benchmarks."
+  },
+  "3": {
+   "verdict": "PRECISE",
+   "reason": "LaSER is explicitly included as an implicit-reasoning retrieval baseline."
+  },
+  "4": {
+   "verdict": "DEFECT",
+   "reason": "The evaluation uses distinct HarmBench-Response and HarmBench-Prompt cells, not a resource named simply HarmBench."
+  },
+  "5": {
+   "verdict": "DEFECT",
+   "reason": "OPOD is an on-policy distillation method; GRPO is used for policy optimization and controlled specialist training, not the prior method OPOD principally builds on."
+  },
+  "6": {
+   "verdict": "PRECISE",
+   "reason": "MA-DAR is explicitly integrated with LogCL as a base encoder."
+  },
+  "7": {
+   "verdict": "PRECISE",
+   "reason": "Bank Marketing is explicitly included among CEL's benchmark datasets."
+  },
+  "8": {
+   "verdict": "DEFECT",
+   "reason": "QLPO is applied to specific Qwen2.5 variants, including Qwen2.5-3B and Qwen2.5-32B; 'Qwen2.5' truncates the resource."
+  },
+  "9": {
+   "verdict": "PRECISE",
+   "reason": "The abstract explicitly reports evaluation of TTEL on AIME-2025."
+  },
+  "10": {
+   "verdict": "DEFECT",
+   "reason": "LSTM is a generic architecture, not a named artifact."
+  },
+  "11": {
+   "verdict": "PRECISE",
+   "reason": "The probes are explicitly trained and evaluated on X-Sensitive."
+  },
+  "12": {
+   "verdict": "PRECISE",
+   "reason": "LLaMA-VID is explicitly listed as a baseline."
+  },
+  "13": {
+   "verdict": "DEFECT",
+   "reason": "LAMAR is not built on Qwen3.5; Qwen3.5 rerankers are baselines."
+  },
+  "14": {
+   "verdict": "DEFECT",
+   "reason": "The actual initialization model is bge-m3-retromae, not BGE-M3."
+  },
+  "15": {
+   "verdict": "PRECISE",
+   "reason": "Gamers is included in ACE's heterophilic graph experiments."
+  },
+  "16": {
+   "verdict": "PRECISE",
+   "reason": "GABench scenarios are explicitly evaluated on LangChain."
+  },
+  "17": {
+   "verdict": "PRECISE",
+   "reason": "tPatchGNN is explicitly included among MissHyper's baselines."
+  },
+  "18": {
+   "verdict": "PRECISE",
+   "reason": "GS-Agent is evaluated on 24 NewtonGen benchmark scenes."
+  },
+  "19": {
+   "verdict": "DEFECT",
+   "reason": "The specified benchmark is AIME 2024, not generic AIME."
+  },
+  "20": {
+   "verdict": "DEFECT",
+   "reason": "The baseline is specifically CBraMod-small, not CBraMod."
+  },
+  "21": {
+   "verdict": "PRECISE",
+   "reason": "RL-trained merged models are evaluated on the math task using MATH-500."
+  },
+  "22": {
+   "verdict": "DEFECT",
+   "reason": "SFT is a contrasting training paradigm, not something RL-trained merging builds on."
+  },
+  "23": {
+   "verdict": "PRECISE",
+   "reason": "OpenbookQA is included among the paper's RepE evaluation tasks."
+  },
+  "24": {
+   "verdict": "DEFECT",
+   "reason": "Transformer is a generic architecture term rather than a named artifact."
+  },
+  "25": {
+   "verdict": "DEFECT",
+   "reason": "Transformer is generic; the named adopted architecture is Looped Transformer."
+  },
+  "26": {
+   "verdict": "DEFECT",
+   "reason": "The reported benchmark is specifically AIME 2024, not generic AIME."
+  },
+  "27": {
+   "verdict": "PRECISE",
+   "reason": "The paper explicitly adopts GRPO for DeepSeek-V3.2's RL training."
+  },
+  "28": {
+   "verdict": "DEFECT",
+   "reason": "The evaluated reference is GPT-5-mini, not GPT-5."
+  },
+  "29": {
+   "verdict": "PRECISE",
+   "reason": "CARNet results are explicitly reported on ETTm1."
+  },
+  "30": {
+   "verdict": "PRECISE",
+   "reason": "SiPhy directly uses frozen CLIP visual and text encoders."
+  },
+  "31": {
+   "verdict": "PRECISE",
+   "reason": "TRISHUL adapts and evaluates the LLaMA3.2-1B base model."
+  },
+  "32": {
+   "verdict": "PRECISE",
+   "reason": "EBP is explicitly compared with vanilla TD3."
+  },
+  "33": {
+   "verdict": "PRECISE",
+   "reason": "OlympiadBench is explicitly included in QLPO evaluation."
+  },
+  "34": {
+   "verdict": "PRECISE",
+   "reason": "MA-DAR is integrated with RE-GCN as a base encoder."
+  },
+  "35": {
+   "verdict": "DEFECT",
+   "reason": "PEMS03 is an evaluation dataset, not a comparison baseline."
+  },
+  "36": {
+   "verdict": "PRECISE",
+   "reason": "ADSD is explicitly tested in EAGLE-3 experiments."
+  },
+  "37": {
+   "verdict": "PRECISE",
+   "reason": "DART is quantitatively compared against BasicVSR."
+  },
+  "38": {
+   "verdict": "DEFECT",
+   "reason": "The scored model is specifically Llama-Krikri-8B-Instruct; 'Llama' is an incorrect truncation."
+  },
+  "39": {
+   "verdict": "DEFECT",
+   "reason": "The subject is a generic method description rather than a distinct named paper entity."
+  },
+  "40": {
+   "verdict": "DEFECT",
+   "reason": "The evaluated model is specifically Qwen2.5-72B-Instruct; Qwen2.5 is truncated."
+  },
+  "41": {
+   "verdict": "DEFECT",
+   "reason": "The compared model is specifically Claude-Sonnet-4.5; Claude is truncated."
+  },
+  "42": {
+   "verdict": "PRECISE",
+   "reason": "The abstract explicitly evaluates DWT-Fusion on HC3."
+  },
+  "43": {
+   "verdict": "PRECISE",
+   "reason": "The paper explicitly includes ImageNet-LT in its evaluation."
+  },
+  "44": {
+   "verdict": "PRECISE",
+   "reason": "The surrogate explicitly uses a conditional U-Net forward model."
+  },
+  "45": {
+   "verdict": "DEFECT",
+   "reason": "Transformer is a generic architecture term, not a named shared artifact."
+  },
+  "46": {
+   "verdict": "PRECISE",
+   "reason": "The paper directly compares Humanly's features with GPTZero."
+  },
+  "47": {
+   "verdict": "PRECISE",
+   "reason": "The experiments explicitly evaluate RadioTrace on RadioMapSeer."
+  },
+  "48": {
+   "verdict": "DEFECT",
+   "reason": "Graph attention transformer describes CASC's introduced architecture, not a named external artifact."
+  },
+  "49": {
+   "verdict": "PRECISE",
+   "reason": "The study explicitly trains RL models using PPO among its adopted algorithms."
+  }
+ },
+ "my_labels": {
+  "0": "PRECISE",
+  "1": "PRECISE",
+  "2": "PRECISE",
+  "3": "PRECISE",
+  "4": "PRECISE",
+  "5": "PRECISE",
+  "6": "PRECISE",
+  "7": "PRECISE",
+  "8": "PRECISE",
+  "9": "PRECISE",
+  "10": "DEFECT",
+  "11": "PRECISE",
+  "12": "PRECISE",
+  "13": "DEFECT",
+  "14": "PRECISE",
+  "15": "PRECISE",
+  "16": "PRECISE",
+  "17": "PRECISE",
+  "18": "PRECISE",
+  "19": "PRECISE",
+  "20": "PRECISE",
+  "21": "PRECISE",
+  "22": "DEFECT",
+  "23": "PRECISE",
+  "24": "DEFECT",
+  "25": "DEFECT",
+  "26": "PRECISE",
+  "27": "PRECISE",
+  "28": "DEFECT",
+  "29": "PRECISE",
+  "30": "PRECISE",
+  "31": "PRECISE",
+  "32": "PRECISE",
+  "33": "PRECISE",
+  "34": "PRECISE",
+  "35": "DEFECT",
+  "36": "DEFECT",
+  "37": "PRECISE",
+  "38": "DEFECT",
+  "39": "PRECISE",
+  "40": "PRECISE",
+  "41": "PRECISE",
+  "42": "PRECISE",
+  "43": "PRECISE",
+  "44": "PRECISE",
+  "45": "DEFECT",
+  "46": "PRECISE",
+  "47": "PRECISE",
+  "48": "PRECISE",
+  "49": "PRECISE"
+ }
+}

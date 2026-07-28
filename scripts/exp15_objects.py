@@ -30,10 +30,16 @@ V2 = ROOT / "data" / "arxiv_ai" / "shards_res_v2"
 OUT = ROOT / "data" / "arxiv_ai" / "shards_modelcheck"
 OUT.mkdir(exist_ok=True)
 
+# `\b` is WRONG here and silently cost 18 claims: there is no word boundary
+# between a letter and a digit, so `qwen\b` never matches "Qwen3" or
+# "Qwen2.5" — the entire Qwen family escaped the first pass. A negative
+# lookahead for a letter is what "the name ends here" actually means when
+# model names routinely end in a version number.
 MODEL = re.compile(
     r"^(gpt|llama|qwen|gemma|mistral|deberta|roberta|bert|t5|phi|claude|"
-    r"gemini|deepseek|vicuna|falcon|olmo|internvl|palm|mixtral|yi|baichuan|"
-    r"chatglm|opt|bloom|pythia|starcoder|codellama)\b", re.I)
+    r"gemini|deepseek|vicuna|falcon|olmo|internvl|palm|mixtral|baichuan|"
+    r"chatglm|bloom|pythia|starcoder|codellama|glm|ernie|minicpm|molmo|"
+    r"janus|cogvlm)(?![a-z])", re.I)
 
 
 def fold(s: str) -> str:

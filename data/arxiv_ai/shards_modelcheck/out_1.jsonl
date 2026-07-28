@@ -1,0 +1,18 @@
+{"sid": "out_12.jsonl:34", "pid": "P_BUILDS_ON", "why": "Method (RIS-Kernel) validation focused on the model as substrate"}
+{"sid": "out_18.jsonl:11", "pid": "P_BUILDS_ON", "why": "Method (MineValiCoder) experiments on multiple LLM scales including this model"}
+{"sid": "out_3.jsonl:28", "pid": "P_COMPARES_TO", "why": "Benchmark paper measuring performance of six frontier models"}
+{"sid": "out_3.jsonl:34", "pid": "P_BUILDS_ON", "why": "Method (Animacy circuit) analyzes circuits in the model"}
+{"sid": "out_5.jsonl:43", "pid": "P_BUILDS_ON", "why": "Model used as student in the method (knowledge distillation context)"}
+{"sid": "out_6.jsonl:33", "pid": "P_BUILDS_ON", "why": "Method (Adapter capacity measurement) applied to fine-tuned versions of the model"}
+{"sid": "out_7.jsonl:28", "pid": "P_BUILDS_ON", "why": "Method (TTEL) evaluated on the model baseline"}
+{"sid": "out_g1.jsonl:45", "pid": "P_COMPARES_TO", "why": "Benchmark paper reporting foundation LLM performance in results table"}
+{"sid": "out_g1.jsonl:46", "pid": "P_COMPARES_TO", "why": "Same benchmark paper (SciExplore) evaluating models at multiple scales"}
+{"sid": "out_g11.jsonl:15", "pid": "P_BUILDS_ON", "why": "Method (MoE²-LoRA) applied to MoE backbone model"}
+{"sid": "out_g11.jsonl:18", "pid": "P_BUILDS_ON", "why": "Method (MoE²-LoRA) implemented on this specific MoE backbone"}
+{"sid": "out_g11.jsonl:47", "pid": "P_BUILDS_ON", "why": "Method (VIGOR) examines training composition on the model"}
+{"sid": "out_g4.jsonl:6", "pid": "P_BUILDS_ON", "why": "Method (circuit analysis) extended to this model for comparative study"}
+{"sid": "out_g5.jsonl:8", "pid": "P_BUILDS_ON", "why": "Method (Windowed-MTP) tested on the model at fixed input span"}
+{"sid": "out_g5.jsonl:9", "pid": "P_BUILDS_ON", "why": "Method (Windowed-MTP) tested on this larger model variant"}
+{"sid": "out_g6.jsonl:11", "pid": "P_BUILDS_ON", "why": "Method (VCSD) evaluated on model at multiple scales"}
+{"sid": "out_g6.jsonl:12", "pid": "P_BUILDS_ON", "why": "Method (VCSD) evaluated on this model variant at multiple scales"}
+{"sid": "out_g8.jsonl:11", "pid": "P_BUILDS_ON", "why": "Method (ADSD) evaluated on quantized version of the model"}

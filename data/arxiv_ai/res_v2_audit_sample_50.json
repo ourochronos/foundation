@@ -1,0 +1,402 @@
+[
+ {
+  "page": "arxiv:2607.21776v1",
+  "subject": "rPPG talking-face deepfake detector",
+  "pid": "P_EVALUATES_ON",
+  "object": "Celeb-DF++",
+  "statement": "rPPG talking-face deepfake detector is evaluated on Celeb-DF++.",
+  "src_sid": "out_10.jsonl:10"
+ },
+ {
+  "page": "arxiv:2607.21978v1",
+  "subject": "MoE\u00b2-LoRA",
+  "pid": "P_BUILDS_ON",
+  "object": "Qwen3",
+  "statement": "MoE\u00b2-LoRA builds on Qwen3.",
+  "src_sid": "out_g11.jsonl:15"
+ },
+ {
+  "page": "arxiv:2607.21793v1",
+  "subject": "QLPO",
+  "pid": "P_EVALUATES_ON",
+  "object": "GPQA",
+  "statement": "QLPO is evaluated on GPQA.",
+  "src_sid": "out_10.jsonl:28"
+ },
+ {
+  "page": "arxiv:2607.21333v1",
+  "subject": "SHIFT",
+  "pid": "P_COMPARES_TO",
+  "object": "LaSER",
+  "statement": "SHIFT is compared against LaSER.",
+  "src_sid": "out_6.jsonl:17"
+ },
+ {
+  "page": "arxiv:2607.21401v1",
+  "subject": "ResponseGuard",
+  "pid": "P_EVALUATES_ON",
+  "object": "HarmBench",
+  "statement": "ResponseGuard is evaluated on HarmBench.",
+  "src_sid": "out_6.jsonl:76"
+ },
+ {
+  "page": "arxiv:2607.20918v2",
+  "subject": "OPOD",
+  "pid": "P_BUILDS_ON",
+  "object": "GRPO",
+  "statement": "OPOD builds on GRPO.",
+  "src_sid": "out_g1.jsonl:34"
+ },
+ {
+  "page": "arxiv:2607.21949v1",
+  "subject": "MA-DAR",
+  "pid": "P_BUILDS_ON",
+  "object": "LogCL",
+  "statement": "MA-DAR builds on LogCL.",
+  "src_sid": "out_12.jsonl:50"
+ },
+ {
+  "page": "arxiv:2607.22045v1",
+  "subject": "CEL",
+  "pid": "P_EVALUATES_ON",
+  "object": "Bank Marketing",
+  "statement": "CEL is evaluated on Bank Marketing.",
+  "src_sid": "out_14.jsonl:49"
+ },
+ {
+  "page": "arxiv:2607.21793v1",
+  "subject": "QLPO",
+  "pid": "P_BUILDS_ON",
+  "object": "Qwen2.5",
+  "statement": "QLPO builds on Qwen2.5.",
+  "src_sid": "out_10.jsonl:30"
+ },
+ {
+  "page": "arxiv:2607.21453v2",
+  "subject": "TTEL",
+  "pid": "P_EVALUATES_ON",
+  "object": "AIME-2025",
+  "statement": "TTEL is evaluated on AIME-2025.",
+  "src_sid": "out_7.jsonl:30"
+ },
+ {
+  "page": "arxiv:2607.21117v1",
+  "subject": "GlucoTune",
+  "pid": "P_BUILDS_ON",
+  "object": "LSTM",
+  "statement": "GlucoTune builds on LSTM.",
+  "src_sid": "out_4.jsonl:36"
+ },
+ {
+  "page": "arxiv:2607.21988v1",
+  "subject": "self-harm probe analysis",
+  "pid": "P_EVALUATES_ON",
+  "object": "X-Sensitive",
+  "statement": "self-harm probe analysis is evaluated on X-Sensitive.",
+  "src_sid": "out_g11.jsonl:36"
+ },
+ {
+  "page": "arxiv:2607.21013v1",
+  "subject": "EmoAgent-R1",
+  "pid": "P_COMPARES_TO",
+  "object": "LLaMA-VID",
+  "statement": "EmoAgent-R1 is compared against LLaMA-VID.",
+  "src_sid": "out_3.jsonl:48"
+ },
+ {
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "pid": "P_BUILDS_ON",
+  "object": "Qwen3.5",
+  "statement": "LAMAR builds on Qwen3.5.",
+  "src_sid": "out_14.jsonl:32"
+ },
+ {
+  "page": "arxiv:2607.22042v1",
+  "subject": "LAMAR",
+  "pid": "P_BUILDS_ON",
+  "object": "BGE-M3",
+  "statement": "LAMAR builds on BGE-M3.",
+  "src_sid": "out_14.jsonl:36"
+ },
+ {
+  "page": "arxiv:2607.21885v1",
+  "subject": "ACE",
+  "pid": "P_EVALUATES_ON",
+  "object": "Gamers",
+  "statement": "ACE is evaluated on Gamers.",
+  "src_sid": "out_12.jsonl:10"
+ },
+ {
+  "page": "arxiv:2607.20982v1",
+  "subject": "GuardianAgentBench",
+  "pid": "P_EVALUATES_ON",
+  "object": "LangChain",
+  "statement": "GuardianAgentBench is evaluated on LangChain.",
+  "src_sid": "out_3.jsonl:19"
+ },
+ {
+  "page": "arxiv:2607.21922v1",
+  "subject": "MissHyper",
+  "pid": "P_COMPARES_TO",
+  "object": "tPatchGNN",
+  "statement": "MissHyper is compared against tPatchGNN.",
+  "src_sid": "out_12.jsonl:32"
+ },
+ {
+  "page": "arxiv:2607.21522v1",
+  "subject": "GS-Agent",
+  "pid": "P_EVALUATES_ON",
+  "object": "NewtonGen",
+  "statement": "GS-Agent is evaluated on NewtonGen.",
+  "src_sid": "out_g5.jsonl:2"
+ },
+ {
+  "page": "arxiv:2607.21793v1",
+  "subject": "QLPO",
+  "pid": "P_EVALUATES_ON",
+  "object": "AIME",
+  "statement": "QLPO is evaluated on AIME.",
+  "src_sid": "out_10.jsonl:29"
+ },
+ {
+  "page": "arxiv:2607.21402v1",
+  "subject": "MSBraM",
+  "pid": "P_COMPARES_TO",
+  "object": "CBraMod",
+  "statement": "MSBraM is compared against CBraMod.",
+  "src_sid": "out_6.jsonl:87"
+ },
+ {
+  "page": "arxiv:2607.22039v1",
+  "subject": "RL-trained model merging",
+  "pid": "P_EVALUATES_ON",
+  "object": "MATH-500",
+  "statement": "RL-trained model merging is evaluated on MATH-500.",
+  "src_sid": "out_14.jsonl:7"
+ },
+ {
+  "page": "arxiv:2607.22039v1",
+  "subject": "RL-trained model merging",
+  "pid": "P_BUILDS_ON",
+  "object": "SFT",
+  "statement": "RL-trained model merging builds on SFT.",
+  "src_sid": "out_14.jsonl:22"
+ },
+ {
+  "page": "arxiv:2310.01405v4",
+  "subject": "Representation Engineering",
+  "pid": "P_EVALUATES_ON",
+  "object": "OpenbookQA",
+  "statement": "Representation Engineering is evaluated on OpenbookQA.",
+  "src_sid": "out_0.jsonl:30"
+ },
+ {
+  "page": "arxiv:2607.21000v1",
+  "subject": "Naju",
+  "pid": "P_COMPARES_TO",
+  "object": "transformer",
+  "statement": "Naju is compared against transformer.",
+  "src_sid": "out_3.jsonl:36"
+ },
+ {
+  "page": "arxiv:2607.22083v1",
+  "subject": "Nanbeige4.2-3B",
+  "pid": "P_BUILDS_ON",
+  "object": "transformer",
+  "statement": "Nanbeige4.2-3B builds on transformer.",
+  "src_sid": "out_14.jsonl:66"
+ },
+ {
+  "page": "arxiv:2503.20783v2",
+  "subject": "Dr. GRPO",
+  "pid": "P_EVALUATES_ON",
+  "object": "AIME",
+  "statement": "Dr. GRPO is evaluated on AIME.",
+  "src_sid": "out_1.jsonl:8"
+ },
+ {
+  "page": "arxiv:2512.02556v1",
+  "subject": "DeepSeek-V3.2",
+  "pid": "P_BUILDS_ON",
+  "object": "GRPO",
+  "statement": "DeepSeek-V3.2 builds on GRPO.",
+  "src_sid": "out_1.jsonl:37"
+ },
+ {
+  "page": "arxiv:2607.21019v1",
+  "subject": "HiMe",
+  "pid": "P_COMPARES_TO",
+  "object": "GPT-5",
+  "statement": "HiMe is compared against GPT-5.",
+  "src_sid": "out_3.jsonl:51"
+ },
+ {
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "pid": "P_EVALUATES_ON",
+  "object": "ETTm1",
+  "statement": "CARNet is evaluated on ETTm1.",
+  "src_sid": "out_g7.jsonl:2"
+ },
+ {
+  "page": "arxiv:2607.22355v1",
+  "subject": "SiPhy",
+  "pid": "P_BUILDS_ON",
+  "object": "CLIP",
+  "statement": "SiPhy builds on CLIP.",
+  "src_sid": "out_16.jsonl:14"
+ },
+ {
+  "page": "arxiv:2607.20914v1",
+  "subject": "TRISHUL",
+  "pid": "P_BUILDS_ON",
+  "object": "Llama 3.2",
+  "statement": "TRISHUL builds on Llama 3.2.",
+  "src_sid": "out_g1.jsonl:18"
+ },
+ {
+  "page": "arxiv:2607.21302v1",
+  "subject": "EBP",
+  "pid": "P_COMPARES_TO",
+  "object": "TD3",
+  "statement": "EBP is compared against TD3.",
+  "src_sid": "out_g3.jsonl:12"
+ },
+ {
+  "page": "arxiv:2607.21793v1",
+  "subject": "QLPO",
+  "pid": "P_EVALUATES_ON",
+  "object": "OlympiadBench",
+  "statement": "QLPO is evaluated on OlympiadBench.",
+  "src_sid": "out_10.jsonl:27"
+ },
+ {
+  "page": "arxiv:2607.21949v1",
+  "subject": "MA-DAR",
+  "pid": "P_BUILDS_ON",
+  "object": "RE-GCN",
+  "statement": "MA-DAR builds on RE-GCN.",
+  "src_sid": "out_12.jsonl:48"
+ },
+ {
+  "page": "arxiv:2607.21681v1",
+  "subject": "CARNet",
+  "pid": "P_COMPARES_TO",
+  "object": "PEMS03",
+  "statement": "CARNet is compared against PEMS03.",
+  "src_sid": "out_g7.jsonl:8"
+ },
+ {
+  "page": "arxiv:2607.21804v1",
+  "subject": "ADSD",
+  "pid": "P_EVALUATES_ON",
+  "object": "EAGLE-3",
+  "statement": "ADSD is evaluated on EAGLE-3.",
+  "src_sid": "out_g8.jsonl:13"
+ },
+ {
+  "page": "arxiv:2607.21219v1",
+  "subject": "DART",
+  "pid": "P_COMPARES_TO",
+  "object": "BasicVSR",
+  "statement": "DART is compared against BasicVSR.",
+  "src_sid": "out_5.jsonl:20"
+ },
+ {
+  "page": "arxiv:2607.21274v1",
+  "subject": "CUP",
+  "pid": "P_COMPARES_TO",
+  "object": "Llama",
+  "statement": "CUP is compared against Llama.",
+  "src_sid": "out_5.jsonl:35"
+ },
+ {
+  "page": "arxiv:2607.20913v1",
+  "subject": "selective adaptation",
+  "pid": "P_COMPARES_TO",
+  "object": "SaRA",
+  "statement": "selective adaptation is compared against SaRA.",
+  "src_sid": "out_g1.jsonl:12"
+ },
+ {
+  "page": "arxiv:2607.20926v1",
+  "subject": "SciExplore",
+  "pid": "P_COMPARES_TO",
+  "object": "Qwen2.5",
+  "statement": "SciExplore is compared against Qwen2.5.",
+  "src_sid": "out_g1.jsonl:45"
+ },
+ {
+  "page": "arxiv:2607.21570v1",
+  "subject": "MedGame",
+  "pid": "P_COMPARES_TO",
+  "object": "Claude",
+  "statement": "MedGame is compared against Claude.",
+  "src_sid": "out_9.jsonl:17"
+ },
+ {
+  "page": "arxiv:2607.22026v1",
+  "subject": "DWT-Fusion",
+  "pid": "P_EVALUATES_ON",
+  "object": "HC3",
+  "statement": "DWT-Fusion is evaluated on HC3.",
+  "src_sid": "out_g12.jsonl:19"
+ },
+ {
+  "page": "arxiv:2607.22212v1",
+  "subject": "DLM-SVDD",
+  "pid": "P_EVALUATES_ON",
+  "object": "ImageNet-LT",
+  "statement": "DLM-SVDD is evaluated on ImageNet-LT.",
+  "src_sid": "out_15.jsonl:18"
+ },
+ {
+  "page": "arxiv:2607.21407v1",
+  "subject": "neural surrogate",
+  "pid": "P_BUILDS_ON",
+  "object": "U-Net",
+  "statement": "neural surrogate builds on U-Net.",
+  "src_sid": "out_7.jsonl:2"
+ },
+ {
+  "page": "arxiv:2607.22068v1",
+  "subject": "ConvNeXt vehicle Re-ID",
+  "pid": "P_BUILDS_ON",
+  "object": "transformer",
+  "statement": "ConvNeXt vehicle Re-ID builds on transformer.",
+  "src_sid": "out_14.jsonl:57"
+ },
+ {
+  "page": "arxiv:2607.21758v1",
+  "subject": "Humanly",
+  "pid": "P_COMPARES_TO",
+  "object": "GPTZero",
+  "statement": "Humanly is compared against GPTZero.",
+  "src_sid": "out_g7.jsonl:23"
+ },
+ {
+  "page": "arxiv:2607.20909v1",
+  "subject": "RadioTrace",
+  "pid": "P_EVALUATES_ON",
+  "object": "RadioMapSeer",
+  "statement": "RadioTrace is evaluated on RadioMapSeer.",
+  "src_sid": "out_g1.jsonl:0"
+ },
+ {
+  "page": "arxiv:2607.21088v1",
+  "subject": "CASC",
+  "pid": "P_BUILDS_ON",
+  "object": "Graph Attention Transformer",
+  "statement": "CASC builds on Graph Attention Transformer.",
+  "src_sid": "out_4.jsonl:20"
+ },
+ {
+  "page": "arxiv:2607.22039v1",
+  "subject": "RL-trained model merging",
+  "pid": "P_BUILDS_ON",
+  "object": "PPO",
+  "statement": "RL-trained model merging builds on PPO.",
+  "src_sid": "out_14.jsonl:20"
+ }
+]
