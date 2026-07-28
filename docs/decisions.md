@@ -2,6 +2,24 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D104: Four signals tested for "is this object a named artifact or a class noun" — three fail, and the one that works is the project's own D41 law
+The two mechanical filters left at D103 both had ceilings by construction: the model-as-target check is a hardcoded vendor regex that cannot know `Pillar-0` or `EEG Conformer` (and already missed the whole Qwen family once on a word-boundary bug), and the generic blocklist matches exact strings so it holds `vae` while missing `variational autoencoders`. Both needed a signal, not a longer list. **Measured four before building anything.**
+
+| signal | GENERIC | ARTIFACT | verdict |
+|---|---|---|---|
+| citation adjacent to any mention | 0.00–0.17 | 0.00–0.27 | **REFUTED** — AIME and Qwen2.5 score 0.00 like the class nouns |
+| class-noun grammar (`an LSTM`, `LSTMs`, `the transformer`) | mean 0.188 | mean 0.062 | **WEAK** — right direction, ranges overlap; my plural regex also silently failed on already-plural phrases |
+| citation on FIRST mention | mean 0.036 | mean 0.276 | **WEAK** — best of the three, but Qwen2.5 and ALFWorld score 0.00 |
+| **relational participation (D41)** | — | — | **WORKS, for the head** |
+
+**The answer was already in the project's own decision log.** D41 established that types are relational-participation vectors and that surface-name clusters are "phonological mush"; I spent three probes reaching for surface features before applying it. Letting the corpus vote types its own objects at high purity — HumanEval/MBPP/MATH **1.00** evaluated-on, GSM8K 0.94, MMLU 0.89; Qwen2.5 **0.83** built-on, GRPO 0.88, LoRA 0.79 — with no list anywhere.
+
+**Only the DIRECTIONAL contradiction is usable, and that distinction matters.** "Relation disagrees with the profile" flags 21 claims and is mostly wrong: a paper may legitimately build on GRPO while another compares against it. But **you do not evaluate *on* a substrate**, so `P_EVALUATES_ON` against a BUILDS_ON-dominant profile is the one contradiction with no innocent reading. It found exactly one survivor — **`LoRA`, which the vendor list could never have caught because it is not a vendor model name** — now retyped, and the check is clean at 0.
+
+**Coverage is the head, and the script says so in its docstring rather than burying it**: 37 of 719 objects reach 3 papers. `Pillar-0`, `EEG Conformer` and `PI-DON` — the three audit defects that motivated this — are 1–2 paper objects and remain untypeable by vote. **The tail is irreducible by filter and needs judgement; a filter that pretended otherwise would be worse than none.**
+
+**Negative result with a P2 consequence**: I tried the HuggingFace parts inventory as a second oracle — 200 cards are ground truth for "this name is a model", and would cover the tail. It matches **3 of 719 objects**. The cause is our own sampling: the HF slice was drawn by pipeline tags (`feature-extraction`, `sentence-similarity`, `token-classification`) that **exclude text-generation**, so the inventory structurally cannot type the LLMs this literature actually uses. The dogfood premise is sound and the slice was cut wrong. Fixing it is a concrete P2 item: re-fetch HF cards including generation tags, and the inventory becomes a type oracle for the tail.
+
 ## 2026-07-28 — D103: The audit was grading on 8k of a 40k source — the full text settles all three survivors, ONE IN EACH DIRECTION, and both raters land at the gate
 D102 left three rater disagreements and I called them an evidential standard. That was half right. The audit fed graders `body_window` (~8k), a field sized to fit an *extraction* prompt; the retained source layer holds up to **40k**. Neither rater could see the rest, and all three disputes were resolvable in it.
 

@@ -1,0 +1,60 @@
+{
+ "objects": 719,
+ "objects_typed_by_vote": 30,
+ "coverage_note": "only objects with >=3 papers and >=0.75 purity can be typed by vote; the tail of 689 objects needs judgement, not a filter",
+ "substrates": [
+  "BERT",
+  "CLIP",
+  "GRPO",
+  "Llama 3",
+  "Llama 3.2",
+  "LoRA",
+  "PPO",
+  "Qwen2.5",
+  "Qwen3",
+  "Qwen3-VL",
+  "RAG",
+  "chain-of-thought"
+ ],
+ "datasets": [
+  "AIME",
+  "ALFWorld",
+  "ARC",
+  "CIFAR-100",
+  "GSM8K",
+  "HumanEval",
+  "ImageNet-LT",
+  "LiveCodeBench",
+  "MATH",
+  "MATH-500",
+  "MBPP",
+  "MMLU",
+  "OpenWebText",
+  "WebShop",
+  "WinoGrande"
+ ],
+ "directional_contradictions": 0,
+ "flagged": [],
+ "signals_tested_and_rejected": {
+  "citation_adjacency": {
+   "generic": "0.00-0.17",
+   "artifact": "0.00-0.27",
+   "verdict": "REFUTED, ranges overlap"
+  },
+  "class_noun_grammar": {
+   "generic_mean": 0.188,
+   "artifact_mean": 0.062,
+   "verdict": "WEAK, overlapping; plural regex also failed on already-plural phrases"
+  },
+  "first_mention_citation": {
+   "generic_mean": 0.036,
+   "artifact_mean": 0.276,
+   "verdict": "WEAK, best of three but Qwen2.5/ALFWorld score 0.00"
+  },
+  "hf_inventory_oracle": {
+   "coverage": "3 of 719",
+   "verdict": "REJECTED \u2014 our HF slice was sampled by pipeline tags excluding text-generation, so it cannot type the LLMs this literature uses. Fixable: re-fetch with generation tags."
+  }
+ },
+ "adopted": "relational participation (D41) \u2014 directional contradiction only"
+}
