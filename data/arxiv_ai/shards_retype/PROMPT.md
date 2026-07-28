@@ -65,3 +65,25 @@ Compose ALL rows first, then ONE Write call to your assigned
 Every input item gets exactly one output row.
 
 Final text: just "done: N typed, E evaluates, B builds, C compares, D dropped, U uncertain".
+
+## RESOURCE-NAME GRANULARITY (declared policy — D100)
+
+Resources are recorded at **FAMILY level**, not exact-artifact level:
+`Qwen2.5-7B-Instruct` -> `Qwen2.5`, `AIME 2024` -> `AIME`,
+`Claude-Sonnet-4.5` -> `Claude`, `CBraMod-small` -> `CBraMod`.
+
+This is a deliberate trade and it is the reason the axis exists. Keeping
+`Qwen2.5-3B`, `Qwen2.5-7B` and `Qwen2.5-32B` apart maximises per-claim
+fidelity and drives cross-paper linkage toward zero, which is the exact
+failure the resource axis was built to fix. Family level buys linkage at
+a known cost in precision.
+
+KEEP the suffix in two cases only: when the paper's own point is about
+that specific size or version (a scaling study, a size ablation), or
+when the suffix denotes a genuinely different artifact rather than a
+variant of the same one (`bge-m3-retromae` is not `BGE-M3`;
+`HarmBench-Response` is a distinct subset of `HarmBench`).
+
+An audit of these claims MUST apply this same rule. A grader who
+requires exact artifact identity will read the corpus roughly 14 points
+lower — that gap is a standards disagreement, not a quality signal.

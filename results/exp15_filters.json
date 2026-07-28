@@ -1,0 +1,21 @@
+{
+ "input": 969,
+ "dropped_generic": 28,
+ "generic_objects": {
+  "transformer": 7,
+  "SFT": 3,
+  "Attention": 3,
+  "LSTM": 3,
+  "RL": 2,
+  "VAE": 2,
+  "diffusion models": 2,
+  "contrastive learning": 2,
+  "state space models": 1,
+  "MoE": 1,
+  "knowledge distillation": 1,
+  "MLP": 1
+ },
+ "self_invented_proxy": "REJECTED \u2014 see module docstring; string containment cannot distinguish a derived artifact from a self-invented one",
+ "kept": 941,
+ "applied": true
+}
