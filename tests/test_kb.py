@@ -179,3 +179,29 @@ def test_global_resource_counts_every_using_paper(res_kb):
     r = res_kb.cited_by("GSM8K", pid=None)
     assert r["status"] == "answered" and r["n"] == 3
     assert r["sources"] == ["arxiv:1", "arxiv:2", "arxiv:3"]
+
+
+def test_global_resource_adopts_an_existing_entity(tmp_path):
+    """A resource can arrive first as some paper's own subject.
+
+    Ingest is multi-process and the global canonical is not restored on
+    replay, so minting unconditionally gives that resource a second eid —
+    which is what happened to GRPO (subject of a paper about it, and a
+    resource 16 papers build on).
+    """
+    kb = KB(backend="memory")
+    a = tmp_path / "a"
+    a.mkdir()
+    (a / "out_0.jsonl").write_text(json.dumps(
+        {"page": "arxiv:9", "page_title": "About GRPO", "subject": "GRPO",
+         "pid": "P_ASSERTS", "object": "a claim about it",
+         "statement": "GRPO is analysed."}) + "\n")
+    kb.ingest_shards(a, embed=False)
+    b = tmp_path / "b"
+    b.mkdir()
+    (b / "out_0.jsonl").write_text(json.dumps(
+        {"page": "arxiv:10", "page_title": "User", "subject": "User",
+         "pid": "P_BUILDS_ON", "object": "GRPO", "object_global": True,
+         "statement": "User builds on GRPO."}) + "\n")
+    kb.ingest_shards(b, embed=False)
+    assert len(kb.resolve_subject("GRPO")) == 1

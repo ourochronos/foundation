@@ -2,6 +2,23 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D101: A canonical NAME is not a canonical ENTITY — shared resources need `object_global`, and D83's accepted slice had the same unmeasured defect
+Two findings from finishing the D100 residue, both about the same blind spot: **precision and entity structure are independent, and passing an audit says nothing about the second.**
+
+**1. The resource axis, ingested, produced no cross-paper structure at all — after every naming repair.** `cited_by("GSM8K")` returned **ambiguous over 16 eids**; Qwen2.5 had 18, GRPO 17, and every cross-paper count read **0**. The names were already canonical; the *resolver* split them. `codec/individuation.py`'s batch-locality rule (D52) exists to keep same-form mentions in different documents apart — correct for two people called J. Smith in a closed world, exactly wrong for a benchmark fifty papers share. **The mechanism that protects against false merges was, for this class of entity, guaranteeing false splits.**
+
+Fix: **`object_global`** — the extractor declares an object is community vocabulary, one entity by name corpus-wide, minted under `global:resource`. It sits alongside `page_title` (a page's canonical form is its title, D92) and `object_page` (a link target is canonical for the page it names, D92) as the third answer to "what makes two mentions the same thing", and it is the one for entities that **have no page at all**. Two regression tests; suite 57.
+
+**The general law, third measurement**: identity has to be declared by whoever knows it, and no single default is right for every source. Wikipedia knows by title, citations know by link target, a research field knows by shared vocabulary. A resolver that guesses will be wrong for at least one of them.
+
+**2. The math.LO slice — ACCEPTED at D83 with 0.94 precision — carried the identical per-claim subject invention** this session spent itself fixing in the AI slice: **0.902 subjects/claim, 91.8% singletons**. A census across every ingested corpus found it: HF cards are healthy (0.332 — a card is one model by construction), wiki is fine (0.43–0.48, and its singletons are legitimate: a page states one fact each about many people), and math.LO was as broken as the AI slice ever was. D83 never saw it because **the structure instrument did not exist yet** — it was invented at D94, eleven decisions later. Applying D94's rule: **66 of 116 pages repaired, 0.902 → 0.401 subjects/claim, singletons 0.918 → 0.134.**
+
+**Standing consequence**: a corpus acceptance record must carry BOTH numbers. "Precision 0.94" described a slice with no entity structure whatsoever, and nothing in the acceptance protocol was false — it simply measured one axis. Every future slice reports precision AND subjects/claim, and D83's entry should be read as half-measured rather than wrong.
+
+**Also landed**: generic-term blocklist (28 claims — `transformer` ×7, `SFT`, `Attention`, `LSTM` ×3, `VAE`, `MoE`…), which was 5 of the 10 D100 defects and is the D99 lesson repeating — a prompt rule competing with the source's own phrasing loses, so it moved into code. `U-Net` deliberately NOT blocklisted: a specific citable architecture the frozen labels graded PRECISE, and a blocklist contradicting frozen labels is tuning the corpus to the gate. The **resource-name granularity policy is now declared in both prompts and the audit instrument as one sentence**, closing D100's registered blocker.
+
+**Negative result, recorded not shipped**: a detector for self-invented components (Sol's CASC catch) using string containment flagged 50 and is mostly wrong — `Qwen2.5-Coder builds on Qwen2.5`, `SWE-Bench Pro builds on SWE-bench`, `DeepSeekMath is evaluated on MATH` all trip it and are all correct, because a derived artifact contains its parent's name and that IS the builds-on case. Detecting "the paper invented this" needs the abstract's claim structure, not substrings.
+
 ## 2026-07-28 — D100: v2 audited — **0.80 mine (boundary pass) / 0.58 Sol (fail)**, and the 22-point gap is ONE undeclared policy: how granular a resource name must be
 The fresh frozen audit over `shards_res_v2` ran after every repair (typing, subject naming, object fold, both model-as-target passes). Sample re-drawn post-fix so it measures the final state; all 50 read **untruncated**, since clipped evidence misled me twice in D97/D98 — item 5 was nearly recorded as a defect on a truncated read and is correct at full width.
 

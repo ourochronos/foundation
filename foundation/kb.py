@@ -253,8 +253,18 @@ class KB:
         # vocabulary, one entity by name, corpus-wide".
         for r in rows:
             if r["object_global"] and r["object"] not in self._canonical:
-                e = self.reg._mint(r["object"], "global:resource")
-                self._canonical[r["object"]] = e.eid
+                # ADOPT an existing entity of that exact form before minting.
+                # Ingest is multi-process (rebuild_poc.sh runs one per shard
+                # dir) and a global canonical is not restored on replay, so a
+                # resource that already arrived as some paper's own subject
+                # would otherwise get a second eid — GRPO did, being both the
+                # subject of a paper about it and a resource 16 papers use.
+                prior = sorted(self.reg.by_form.get(r["object"], ()))
+                if len(prior) == 1:
+                    self._canonical[r["object"]] = self.reg._get(prior[0]).eid
+                else:
+                    e = self.reg._mint(r["object"], "global:resource")
+                    self._canonical[r["object"]] = e.eid
         Z = (self._embed([r["statement"] for r in rows])
              if embed and rows else
              np.zeros((len(rows), getattr(self.store, "dim", 1024)),
