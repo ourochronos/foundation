@@ -1,0 +1,79 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-28T23:02:22.279841+00:00",
+  "commit": "3b58ca327dfa8479a255204f699a8903a93d2d17",
+  "dirty": true,
+  "command": "scripts/exp17_hops.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "holdout_compositions": [
+    "P_INTRODUCES>P_EVALUATES_ON",
+    "P_CITES>P_INTRODUCES"
+   ],
+   "min_n": 36,
+   "cites_cap": 800
+  }
+ },
+ "hops": 9456,
+ "compositions": {
+  "P_BUILDS_ON>P_BUILDS_ON": 240,
+  "P_BUILDS_ON>P_COMPARES_TO": 144,
+  "P_BUILDS_ON>P_EVALUATES_ON": 200,
+  "P_CITES>P_CITES": 3200,
+  "P_CITES>P_EVALUATES_ON": 252,
+  "P_CITES>P_INTRODUCES": 1444,
+  "P_COMPARES_TO>P_EVALUATES_ON": 196,
+  "P_INTRODUCES>P_BUILDS_ON": 1228,
+  "P_INTRODUCES>P_COMPARES_TO": 1032,
+  "P_INTRODUCES>P_EVALUATES_ON": 1520
+ },
+ "held_out_compositions": {
+  "n": 2964,
+  "exact_chain_recovered": 0.4197,
+  "ungated": {
+   "abstain": 758,
+   "correct": 1244,
+   "wrong": 962
+  },
+  "gated": {
+   "abstain": 758,
+   "correct": 1244,
+   "wrong": 962,
+   "threshold": 0.0,
+   "precision_when_answered": 0.5639,
+   "precision_ci95": [
+    0.5431,
+    0.5845
+   ]
+  },
+  "per_composition_gated": {
+   "P_CITES>P_INTRODUCES": {
+    "abstain": 257,
+    "correct": 409,
+    "wrong": 778
+   },
+   "P_INTRODUCES>P_EVALUATES_ON": {
+    "abstain": 501,
+    "correct": 835,
+    "wrong": 184
+   }
+  }
+ },
+ "seen_compositions": {
+  "n": 1299,
+  "exact_chain_recovered": 0.9985,
+  "ungated": {
+   "correct": 1297,
+   "wrong": 1,
+   "abstain": 1
+  }
+ },
+ "scope": "2-hop only. Compositions held out entirely, so this measures chaining relations never seen chained \u2014 not phrasing robustness, which D110 covers. Hop questions are templated (2 noun phrases x 2 question forms per composition)."
+}

@@ -12,7 +12,7 @@ grow everything else, keep the basis the heads were trained against.
 from __future__ import annotations
 
 import sys
-from itertools import permutations
+from itertools import permutations, product
 from pathlib import Path
 
 import numpy as np
@@ -193,10 +193,19 @@ def train_heads_with(art, world, Zq, Zh, seed=0, epochs=60):
 
 def make_planner(det_head, ans_head, art, det_floor=0.2, req_thr=0.5,
                  feas_thr=0.35, max_k=3, cand_k=4, link_ok=None,
-                 entry_ok=None):
+                 entry_ok=None, arity_head=None, path_ok=None):
     """v0.6 final planner: PoE (detection log-odds + answer-cluster
     log-mass), participation feasibility gate, required+restricted
-    detected relations (D44)."""
+    detected relations (D44).
+
+    `arity_head` (D111) predicts the path LENGTH. Without it the candidate
+    paths are `permutations` over distinct relations, which cannot express
+    a repeated relation at all — and on the real store `A -> A` is 79% of
+    the 2-hop shapes, so that gap produced wrong answers at 0.925 rather
+    than abstentions. With it, the predicted length is fixed first and
+    repeats become expressible. Default None preserves the exact prior
+    behaviour, so the synthetic-world results are untouched.
+    """
     import torch
     RELS, rel_entry = art["RELS"], art["rel_entry"]
     P_name, name_i, rng_cprof = art["P_name"], art["name_i"], art["rng_cprof"]
@@ -206,6 +215,12 @@ def make_planner(det_head, ans_head, art, det_floor=0.2, req_thr=0.5,
             pv = torch.sigmoid(det_head(torch.tensor(q_emb)[None]))[0].numpy()
             ap = torch.softmax(ans_head(torch.tensor(q_emb)[None]),
                                -1)[0].numpy()
+            if arity_head is None:
+                ks = range(1, max_k + 1)
+            else:
+                k_hat = int(torch.argmax(
+                    arity_head(torch.tensor(q_emb)[None])[0])) + 1
+                ks = [k_hat]
         det = {r: float(pv[j]) for j, r in enumerate(RELS)}
         cand = [r for r in sorted(det, key=det.get, reverse=True)[:cand_k]
                 if det[r] >= det_floor]
@@ -214,9 +229,18 @@ def make_planner(det_head, ans_head, art, det_floor=0.2, req_thr=0.5,
             return None
         subj_p = P_name[name_i[subject]]
         best, best_s = None, -1e9
-        for k in range(1, max_k + 1):
-            for pm in permutations(cand, k):
-                if link_ok is not None:
+        def paths(k):
+            # product() takes `repeat` as a keyword; permutations() takes
+            # the length positionally. Repeats are only allowed when the
+            # arity head has fixed the length.
+            return (product(cand, repeat=k) if arity_head is not None
+                    else permutations(cand, k))
+        for k in ks:
+            for pm in paths(k):
+                if path_ok is not None:
+                    if not req <= set(pm) or not path_ok(subject, pm):
+                        continue
+                elif link_ok is not None:
                     if (entry_ok is not None
                             and not entry_ok(subject, pm[0])) or \
                             any(not link_ok(a, b)
