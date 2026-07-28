@@ -1,9 +1,16 @@
-# Current state — 2026-07-27 (P2 dogfood corpus complete, D92)
+# Current state — 2026-07-28 (resource axis live; D93–D101)
 
-**Fastest orientation**: the P2 paragraph in the queue block below (search "P2 PASS COMPLETE") + [decisions.md](decisions.md) D92 → D1. Live store is `poc` (pg): 18,787 attributed claims over wiki + math.LO + AI/ML + citations + HuggingFace cards. Rebuild it from sources with `scripts/rebuild_poc.sh` then `python -m foundation replay-edits`.
+**Fastest orientation**: [decisions.md](decisions.md) D101 → D92, then the P2 paragraph below. Live store is `poc` (pg): **19,729 claims / 15,399 eids / 1,717 pages** over wiki + math.LO + AI/ML + citations + **shared resources** + HuggingFace cards. Rebuild: `scripts/rebuild_poc.sh` then `python -m foundation replay-edits`. Battery 13/13, suite 58, demo GREEN.
 
+**The identity story, in one place** — three declarations, because no single default is right for every source (D92/D101):
+| what makes two mentions the same thing | field | source type |
+|---|---|---|
+| a page's canonical form is its TITLE | `page_title` | arXiv (page is an ID) |
+| a link target is canonical for the page it names | `object_page` | citations |
+| community vocabulary is one entity by name | `object_global` | shared resources |
 
-**Resume here.** Read this + [decisions.md](decisions.md) (D1–D65) to pick up cold. Everything ran locally on the RX 9070.
+**Open**: the resource axis is **NOT ACCEPTED**. D100 measured 0.80 (mine) / 0.58 (Sol) and the 22-point gap was one undeclared policy — resource-name granularity — now written into both prompts and the audit instrument. A re-audit under that declared policy, after the generic blocklist and `object_global`, is the next owed number.
+
 
 ## Artifacts
 
