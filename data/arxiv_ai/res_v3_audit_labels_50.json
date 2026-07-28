@@ -79,7 +79,7 @@
    "nature": "evidential standard \u2014 Sol requires the comparison be visible in the provided window; I inferred it from a truncated baselines section. Sol is probably right, so 0.84 is likely 2-4 points generous."
   }
  },
- "verdict": "AT THE GATE \u2014 band 0.78-0.84, both CIs contain 0.80, kappa 0.806 (substantial). Not declared accepted on one rater. Owed: wider audit evidence windows so compared-against claims are confirmed not inferred.",
+ "verdict": "ACCEPTED at the declared standard \u2014 BOTH raters 0.82 [0.69-0.90] after all three disputes resolved on full-text evidence, one against me and two against Sol. kappa 0.806. Every disagreement traced to the 8k-vs-40k evidence gap, now fixed in adjudicate.py.",
  "post_hoc_corrections": {
   "rule": "A frozen label may be amended ONLY on new evidence, with the evidence recorded and the direction of the change disclosed. Never to move a number toward a gate.",
   "trigger": "The audit graded on an ~8k body_window; the source layer holds up to 40k. All three D102 survivors were resolvable in the full text that neither rater was shown.",
@@ -94,7 +94,13 @@
    "correct": "PRECISE",
    "why": "full text: \"We use DeepSeek-chat with thinking disabled\" as the executor backbone, and \"DeepSeek WML uses 40 optimization examples\" \u2014 WML runs ON DeepSeek, so P_BUILDS_ON is right"
   },
-  "idx_44_unresolved": "Coconut appears 6 times; the paper adopts Coconut-released data and curriculum for all baselines, which strongly implies but does not show a Coconut comparison row. Left disputed rather than resolved in my favour."
+  "idx_44_unresolved": "Coconut appears 6 times; the paper adopts Coconut-released data and curriculum for all baselines, which strongly implies but does not show a Coconut comparison row. Left disputed rather than resolved in my favour.",
+  "idx_44_RESOLVED": {
+   "was": "disputed",
+   "now": "PRECISE (mine) \u2014 Sol conceded by evidence",
+   "evidence": "full text, \"Compared methods. ... Coconut (Hao et al., 2024), CODI, and SIM-Coconut are latent-interface baselines\" \u2014 an explicit baseline list at ~39k chars, outside the 8k window both raters were given",
+   "direction": "moves SOL up, not me"
+  }
  },
  "precision_corrected": 0.82,
  "ci95_corrected": [
@@ -102,7 +108,11 @@
   0.902299172675462
  ],
  "sol_corrected": {
-  "precision": 0.8,
-  "note": "Sol 0.78 + idx 19 conceded to me = 0.80"
+  "precision": 0.82,
+  "ci95": [
+   0.692,
+   0.902
+  ],
+  "note": "0.78 measured + idx 19 (DeepSeek backbone) + idx 44 (Coconut baseline) both resolved against Sol by full-text evidence"
  }
 }

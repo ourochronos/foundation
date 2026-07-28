@@ -2,6 +2,19 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D106: Resource axis ACCEPTED — both raters converge on **0.82**, every disagreement traced to one cause, and the frozen audit still describes the corpus
+Thread closed. The last disputed item, idx 44, is resolved by the full text: the paper's *"Compared methods"* section reads **"Coconut (Hao et al., 2024), CODI, and SIM-Coconut are latent-interface baselines"** — an explicit baseline list sitting at ~39k characters, outside the 8k window both raters were shown.
+
+**Final tally on the three D102 survivors: one against me (idx 48, HNSW is related work), two against Sol (idx 19 DeepSeek backbone, idx 44 Coconut baseline).** Every one was decided by evidence neither rater had, and **all three trace to the same cause** — auditing on an extraction window instead of the retained source (D103, since fixed).
+
+**Both raters now read 0.82 [0.69–0.90], κ 0.806.** From 0.68/0.66 at v1 and a 22-point split at v2. The corpus improved; the *instrument* improved more.
+
+**The frozen audit still describes the current corpus** — checked rather than assumed: none of the 50 sampled claims was touched by the four retypes landed since (1 from the participation vote, 3 from the parts inventory), and since those retypes each removed a real defect, **0.82 is now a conservative lower bound**. No re-audit is owed.
+
+**Status: ACCEPTED at the corpus's declared standard.** Recorded with the standard it was measured against, because that is the whole lesson of the arc: family-level resource names, `P_EVALUATES_ON` covering training corpora, benchmark-scored models as `P_COMPARES_TO`, descriptive subjects permitted — a number without its standard was exactly what made two careful raters differ by 22 points.
+
+**What the whole thread cost, and what it bought.** Fourteen decisions (D93–D106) to take one axis from "does not exist" to accepted: zero shared subjects → 941 claims over 250 papers with 38 resources shared by ≥3 papers, one entity each. The recurring defect was never the corpus — it was **mechanisms built for the head being reused on the tail**: an 8k window as 40k evidence, a vendor list asked to know `Pillar-0`, a locator's silence read as absence, an inventory sampled for our stack asked to type the field's.
+
 ## 2026-07-28 — D105: The parts inventory types the tail the corpus vote cannot — the dogfood loop closes, and it only works because the slice was re-cut
 D104 left a stated gap: relational participation types the head (37 of 719 objects reach 3 papers) and **cannot touch the tail**, which is exactly where the model-as-target defect survives — `Pillar-0`, `EEG Conformer`, `TinyLlama-1.1B` are one- or two-paper objects with no majority to consult.
 
