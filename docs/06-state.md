@@ -9,15 +9,22 @@
 | a link target is canonical for the page it names | `object_page` | citations |
 | community vocabulary is one entity by name | `object_global` | shared resources |
 
-**Resource axis: AT THE GATE.** Frozen 50-audit (D102/D103) — **mine 0.82 [0.69–0.90], Sol 0.80**, agreement 0.940, κ 0.806. From a 22-point rater split two runs earlier; the corpus barely moved, the *instrument* did. Remaining: one still-disputed item (idx 44), and two mechanical filters with known ceilings — the model-as-target check is a hardcoded vendor list that cannot know `Pillar-0` or `EEG Conformer`, and the generic blocklist matches exact strings so it misses `variational autoencoders` when it holds `vae`.
+**Resource axis: ACCEPTED (D106).** Frozen 50-audit — **both raters 0.82 [0.69–0.90]**, κ 0.806, after all three disputed items were resolved on full-text evidence (one against me, two against Sol). From 0.68/0.66 at v1 and a 22-point split at v2: the corpus improved, the *instrument* improved more. The audit still describes the corpus — verified that none of the 50 sampled claims was touched by later retypes, each of which removed a real defect, so 0.82 is a conservative lower bound.
 
-**Four audit laws, all learned the hard way this session** (each cost a wrong verdict before it was written down):
-1. **Evidence for a verdict must never be narrower than evidence for the claim** — the audit graded on an 8k window of a 40k source (D103).
-2. **A locator's failure to find evidence is never itself evidence** — a stage that can delete must abstain instead (D98).
-3. **An adjudicator is a second rater, not an oracle** — verify its corrections against the source (D98).
-4. **Every convention a corpus declares to its extractor must be declared to its auditor** — granularity, training-corpora, benchmark-scored-models, descriptive subjects (D100/D102).
+**Accepted AGAINST A STATED STANDARD**, because a number without one is what made two careful raters differ by 22 points: family-level resource names · `P_EVALUATES_ON` covers training corpora · a benchmark types models it scores as `P_COMPARES_TO` · descriptive subjects permitted where a paper names no method.
 
-**A frozen label may be amended only on new evidence, with the evidence recorded and the direction disclosed — never to move a number toward a gate** (D103; the amendment that established it moved the number down).
+**Resource typing runs on two mechanisms over disjoint populations** (`scripts/exp15_typecheck.py`, `foundation/typeoracle.py`): the corpus VOTE types what papers use often (30 objects at ≥3 papers, HumanEval/MBPP/MATH at 1.00 purity); the HF parts inventory types what the REGISTRY knows however rare (38 family matches, 30 of them tail objects the vote cannot reach). Names in neither are judgement calls, stated not hidden. This is the P2 dogfood loop closed — the components corpus typing the literature corpus.
+
+**Five audit laws, each learned by a wrong verdict before it was written down:**
+1. **Evidence for a verdict must never be narrower than evidence for the claim** — the audit graded 8k of a 40k source; all three final disputes lived in the gap (D103).
+2. **A locator's failure to find evidence is never itself evidence** — a stage that can delete must abstain (D98).
+3. **An adjudicator is a second rater, not an oracle** — verify its corrections against the source (D98/D103).
+4. **Every convention declared to the extractor must be declared to the auditor** (D100/D102).
+5. **A frozen label may be amended only on new evidence, direction disclosed, never toward a gate** (D103).
+
+**The recurring defect across D93–D106 was never the corpus — it was mechanisms built for the head reused on the tail**: an 8k window as 40k evidence, a vendor list asked to know `Pillar-0`, an inventory sampled for our stack asked to type the field's.
+
+**HF inventory: 402 cards, 200 extracted to claims, 202 deliberately oracle-only** (`results/hf_inventory_state.json`) — the second batch was fetched to make `is_model()` work, which needs a registry name and not a stored claim. Extracting them is a scoped future pass with the full discipline, not a half-finished one.
 
 ## Artifacts
 

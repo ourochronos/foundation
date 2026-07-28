@@ -1,0 +1,18 @@
+{
+ "inventory": {
+  "cards": 402,
+  "extracted_to_claims": 200,
+  "oracle_only": 202
+ },
+ "why_split": "The original 200 were fetched to become CLAIMS (D92, audited 0.94/0.914 card-content). The 202 added at D105 were fetched to serve as a TYPE ORACLE \u2014 is_model() needs a name in the registry, not a claim in the store \u2014 so they are deliberately oracle-only and NOT a half-done extraction. Both jobs are real; only one needs claims.",
+ "oracle_only_tags": {
+  "text-generation": 40,
+  "automatic-speech-recognition": 40,
+  "text-to-image": 40,
+  "visual-question-answering": 40,
+  "image-text-to-text": 40,
+  "sentence-similarity": 1,
+  "feature-extraction": 1
+ },
+ "deferred": "Extracting claims from the 202 is a scoped future pass and carries the full discipline (fleet -> veto -> frozen 50-audit -> Sol). Not started, so nothing is half-finished."
+}
