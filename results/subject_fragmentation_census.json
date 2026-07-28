@@ -1,0 +1,38 @@
+{
+ "measured": "subject fragmentation across every ingested corpus, 2026-07-28",
+ "metric": "distinct (page,subject) pairs per claim; singleton = subjects used once within their own page",
+ "corpora": {
+  "arxiv_ai_v2_resources": {
+   "claims": 972,
+   "subj_per_claim": 0.258,
+   "singleton": 0.259,
+   "status": "FIXED by D94 rule (D99)"
+  },
+  "hf_cards": {
+   "claims": 602,
+   "subj_per_claim": 0.332,
+   "singleton": 0.185,
+   "status": "healthy \u2014 a card is one model entity by construction"
+  },
+  "wiki_final": {
+   "claims": 8009,
+   "subj_per_claim": 0.429,
+   "singleton": 0.737,
+   "status": "not the same pathology \u2014 a wiki page legitimately states one fact each about many entities"
+  },
+  "wiki_1k": {
+   "claims": 4938,
+   "subj_per_claim": 0.484,
+   "singleton": 0.739,
+   "status": "same as wiki_final"
+  },
+  "arxiv_mathLO": {
+   "claims": 297,
+   "subj_per_claim": 0.902,
+   "singleton": 0.918,
+   "status": "UNFIXED \u2014 identical pathology to the pre-D94 AI slice"
+  }
+ },
+ "finding": "The math.LO slice was ACCEPTED at D83 (precision 0.94) and carries the same per-claim subject invention that D94 later measured and fixed in the AI slice. Extraction precision and entity structure are independent axes: a corpus can pass its precision audit and still have no entity structure at all. D83 never measured structure because the instrument did not exist yet.",
+ "action": "port D94 naming rule to the math.LO slice (117 pages, cheap); no change needed for HF or wiki"
+}

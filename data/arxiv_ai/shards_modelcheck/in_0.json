@@ -1,0 +1,378 @@
+[
+ {
+  "sid": "out_0.jsonl:0",
+  "subject": "LoRA",
+  "object": "GPT-3",
+  "page": "arxiv:2106.09685v2",
+  "statement": "LoRA is evaluated on GPT-3.",
+  "typing_why": "LoRA performs on-par or better than fine-tuning in model quality on GPT-3"
+ },
+ {
+  "sid": "out_0.jsonl:1",
+  "subject": "LoRA",
+  "object": "RoBERTa",
+  "page": "arxiv:2106.09685v2",
+  "statement": "LoRA is evaluated on RoBERTa.",
+  "typing_why": "LoRA performs on-par or better than fine-tuning in model quality on RoBERTa"
+ },
+ {
+  "sid": "out_0.jsonl:2",
+  "subject": "LoRA",
+  "object": "DeBERTa",
+  "page": "arxiv:2106.09685v2",
+  "statement": "LoRA is evaluated on DeBERTa.",
+  "typing_why": "LoRA performs on-par or better than fine-tuning in model quality on DeBERTa"
+ },
+ {
+  "sid": "out_0.jsonl:3",
+  "subject": "LoRA",
+  "object": "GPT-2",
+  "page": "arxiv:2106.09685v2",
+  "statement": "LoRA is evaluated on GPT-2.",
+  "typing_why": "LoRA performs on-par or better than fine-tuning in model quality on GPT-2"
+ },
+ {
+  "sid": "out_0.jsonl:17",
+  "subject": "LLM-as-a-Judge",
+  "object": "Vicuna",
+  "page": "arxiv:2306.05685v4",
+  "statement": "LLM-as-a-Judge is evaluated on Vicuna.",
+  "typing_why": "GPT-4 evaluates responses from Vicuna-13B to determine which assistant answers better"
+ },
+ {
+  "sid": "out_0.jsonl:18",
+  "subject": "Activation Addition",
+  "object": "Llama 3",
+  "page": "arxiv:2308.10248v5",
+  "statement": "Activation Addition is evaluated on Llama 3.",
+  "typing_why": "We then run toxicity and sentiment experiments on LLaMA-3"
+ },
+ {
+  "sid": "out_0.jsonl:19",
+  "subject": "Activation Addition",
+  "object": "OPT",
+  "page": "arxiv:2308.10248v5",
+  "statement": "Activation Addition is evaluated on OPT.",
+  "typing_why": "We then run toxicity and sentiment experiments on OPT"
+ },
+ {
+  "sid": "out_0.jsonl:20",
+  "subject": "Activation Addition",
+  "object": "GPT-2-XL",
+  "page": "arxiv:2308.10248v5",
+  "statement": "Activation Addition is evaluated on GPT-2-XL.",
+  "typing_why": "experiments on GPT-2-XL (1.5B parameters)"
+ },
+ {
+  "sid": "out_15.jsonl:40",
+  "subject": "IFCLoRA",
+  "object": "Llama 3",
+  "page": "arxiv:2607.22251v1",
+  "statement": "IFCLoRA is evaluated on Llama 3.",
+  "typing_why": "On mathematical reasoning with LLaMA 3 8B, IFCLoRA improves over LoRA by 1.36 percent"
+ },
+ {
+  "sid": "out_16.jsonl:21",
+  "subject": "grammar-book synthetic data",
+  "object": "Gemini",
+  "page": "arxiv:2607.22376v1",
+  "statement": "grammar-book synthetic data is evaluated on Gemini.",
+  "typing_why": "we fine-tuning Gemini-2.5-flash on the synthetic data and measuring translation performance on held-out test sets"
+ },
+ {
+  "sid": "out_17.jsonl:11",
+  "subject": "SceneActBench",
+  "object": "Claude Opus 4.6",
+  "page": "arxiv:2607.22393v1",
+  "statement": "SceneActBench is evaluated on Claude Opus 4.6.",
+  "typing_why": "We evaluate eleven configurations from ten proprietary VLMs. They are Claude Opus 4.6"
+ },
+ {
+  "sid": "out_17.jsonl:12",
+  "subject": "SceneActBench",
+  "object": "Claude Sonnet 5",
+  "page": "arxiv:2607.22393v1",
+  "statement": "SceneActBench is evaluated on Claude Sonnet 5.",
+  "typing_why": "We evaluate eleven configurations from ten proprietary VLMs. Claude Sonnet 5"
+ },
+ {
+  "sid": "out_17.jsonl:13",
+  "subject": "SceneActBench",
+  "object": "GPT-5.4",
+  "page": "arxiv:2607.22393v1",
+  "statement": "SceneActBench is evaluated on GPT-5.4.",
+  "typing_why": "We evaluate eleven configurations from ten proprietary VLMs. GPT 5.4"
+ },
+ {
+  "sid": "out_17.jsonl:14",
+  "subject": "SceneActBench",
+  "object": "Gemini 3.1 Pro",
+  "page": "arxiv:2607.22393v1",
+  "statement": "SceneActBench is evaluated on Gemini 3.1 Pro.",
+  "typing_why": "We evaluate eleven configurations from ten proprietary VLMs. Gemini 3.1 Pro"
+ },
+ {
+  "sid": "out_17.jsonl:15",
+  "subject": "SceneActBench",
+  "object": "Qwen 3.7 Plus",
+  "page": "arxiv:2607.22393v1",
+  "statement": "SceneActBench is evaluated on Qwen 3.7 Plus.",
+  "typing_why": "We evaluate eleven configurations from ten proprietary VLMs. Qwen 3.7 Plus"
+ },
+ {
+  "sid": "out_18.jsonl:9",
+  "subject": "MineValiCoder",
+  "object": "GPT-4",
+  "page": "arxiv:2607.22471v1",
+  "statement": "MineValiCoder is evaluated on GPT-4.",
+  "typing_why": "experiments on four LLMs with different scales, including GPT-4, Llama3.1-8B, Qwen2.5-Coder-7B and Qwen3-4B"
+ },
+ {
+  "sid": "out_18.jsonl:10",
+  "subject": "MineValiCoder",
+  "object": "Llama 3.1",
+  "page": "arxiv:2607.22471v1",
+  "statement": "MineValiCoder is evaluated on Llama 3.1.",
+  "typing_why": "experiments on four LLMs with different scales, including... Llama3.1-8B"
+ },
+ {
+  "sid": "out_3.jsonl:2",
+  "subject": "ANNS indexing",
+  "object": "Llama-3.2-8B",
+  "page": "arxiv:2607.20957v1",
+  "statement": "ANNS indexing is evaluated on Llama-3.2-8B.",
+  "typing_why": "Feature source; 'Task 2 evaluates Maximum Inner Product Search (MIPS) on ... Llama-3.2-8B features'"
+ },
+ {
+  "sid": "out_3.jsonl:22",
+  "subject": "GuardianAgentBench",
+  "object": "Claude Opus 4.5",
+  "page": "arxiv:2607.20982v1",
+  "statement": "GuardianAgentBench is evaluated on Claude Opus 4.5.",
+  "typing_why": "Model benchmarked; 'We benchmark six frontier models\u2014Claude Opus 4.5'"
+ },
+ {
+  "sid": "out_3.jsonl:24",
+  "subject": "GuardianAgentBench",
+  "object": "GPT-5.2 Pro",
+  "page": "arxiv:2607.20982v1",
+  "statement": "GuardianAgentBench is evaluated on GPT-5.2 Pro.",
+  "typing_why": "Model benchmarked; 'We benchmark six frontier models... GPT-5.2 Pro'"
+ },
+ {
+  "sid": "out_3.jsonl:25",
+  "subject": "GuardianAgentBench",
+  "object": "GPT-OSS-120B",
+  "page": "arxiv:2607.20982v1",
+  "statement": "GuardianAgentBench is evaluated on GPT-OSS-120B.",
+  "typing_why": "Model benchmarked; 'We benchmark six frontier models... GPT-OSS-120B'"
+ },
+ {
+  "sid": "out_3.jsonl:26",
+  "subject": "GuardianAgentBench",
+  "object": "Gemini-3-Pro",
+  "page": "arxiv:2607.20982v1",
+  "statement": "GuardianAgentBench is evaluated on Gemini-3-Pro.",
+  "typing_why": "Model benchmarked; 'We benchmark six frontier models... Gemini-3-Pro'"
+ },
+ {
+  "sid": "out_3.jsonl:27",
+  "subject": "GuardianAgentBench",
+  "object": "DeepSeek-V3.2",
+  "page": "arxiv:2607.20982v1",
+  "statement": "GuardianAgentBench is evaluated on DeepSeek-V3.2.",
+  "typing_why": "Model benchmarked; 'We benchmark six frontier models... DeepSeek-V3.2'"
+ },
+ {
+  "sid": "out_3.jsonl:29",
+  "subject": "HyWorldVLA",
+  "object": "Qwen",
+  "page": "arxiv:2607.20988v1",
+  "statement": "HyWorldVLA is evaluated on Qwen.",
+  "typing_why": "Utility for data generation; 'use Qwen3.6-plus to generate a short scene description'; part of experimental pipeline"
+ },
+ {
+  "sid": "out_3.jsonl:31",
+  "subject": "Animacy circuit",
+  "object": "GPT-2 Small",
+  "page": "arxiv:2607.20995v1",
+  "statement": "Animacy circuit is evaluated on GPT-2 Small.",
+  "typing_why": "Model evaluated; 'we perform circuit discovery via EAP-IG on four open-weight language models: GPT-2 Small'"
+ },
+ {
+  "sid": "out_3.jsonl:32",
+  "subject": "Animacy circuit",
+  "object": "Llama 3.2",
+  "page": "arxiv:2607.20995v1",
+  "statement": "Animacy circuit is evaluated on Llama 3.2.",
+  "typing_why": "Model evaluated; 'on four open-weight language models: Llama 3.2 3B'"
+ },
+ {
+  "sid": "out_3.jsonl:33",
+  "subject": "Animacy circuit",
+  "object": "Gemma 3",
+  "page": "arxiv:2607.20995v1",
+  "statement": "Animacy circuit is evaluated on Gemma 3.",
+  "typing_why": "Model evaluated; 'on four open-weight language models... Gemma 3 4B'"
+ },
+ {
+  "sid": "out_3.jsonl:42",
+  "subject": "LLM-summarizer stability probe",
+  "object": "Llama",
+  "page": "arxiv:2607.21010v1",
+  "statement": "LLM-summarizer stability probe is evaluated on Llama.",
+  "typing_why": "Summarization model evaluated; 'generate hundred summaries using Llama summarizer'"
+ },
+ {
+  "sid": "out_3.jsonl:53",
+  "subject": "HiMe",
+  "object": "Gemini",
+  "page": "arxiv:2607.21019v1",
+  "statement": "HiMe is evaluated on Gemini.",
+  "typing_why": "Gemini-3.5-flash in results table: 'Gemini-3.5-flash clearly leads (0.94)' \u2014 evaluated backbone"
+ },
+ {
+  "sid": "out_3.jsonl:54",
+  "subject": "HiMe",
+  "object": "Qwen",
+  "page": "arxiv:2607.21019v1",
+  "statement": "HiMe is evaluated on Qwen.",
+  "typing_why": "'the sweep covers 22 backbones. Nineteen run locally and span the Qwen2.5... families' \u2014 evaluated on these models"
+ },
+ {
+  "sid": "out_5.jsonl:42",
+  "subject": "Int-Bench",
+  "object": "Llama 3",
+  "page": "arxiv:2607.21306v1",
+  "statement": "Int-Bench is evaluated on Llama 3.",
+  "typing_why": "We also ran experiments with different student models e.g., LLaMA-3.1-8B"
+ },
+ {
+  "sid": "out_7.jsonl:12",
+  "subject": "convergence detector",
+  "object": "DeepSeek-R1-Distill-Qwen-7B",
+  "page": "arxiv:2607.21433v1",
+  "statement": "convergence detector is evaluated on DeepSeek-R1-Distill-Qwen-7B.",
+  "typing_why": "two studies conducted on DeepSeek-R1-Distill-Qwen-7B"
+ },
+ {
+  "sid": "out_g1.jsonl:44",
+  "subject": "SciExplore",
+  "object": "DeepSeek-V3.2",
+  "page": "arxiv:2607.20926v1",
+  "statement": "SciExplore is evaluated on DeepSeek-V3.2.",
+  "typing_why": "DeepSeek-V3.2 in results table; Foundation LLMs being evaluated"
+ },
+ {
+  "sid": "out_g1.jsonl:47",
+  "subject": "SciExplore",
+  "object": "GPT-5.1",
+  "page": "arxiv:2607.20926v1",
+  "statement": "SciExplore is evaluated on GPT-5.1.",
+  "typing_why": "GPT-5.1 in results table; Foundation LLMs being evaluated"
+ },
+ {
+  "sid": "out_g1.jsonl:48",
+  "subject": "SciExplore",
+  "object": "Gemini 2.5-Pro",
+  "page": "arxiv:2607.20926v1",
+  "statement": "SciExplore is evaluated on Gemini 2.5-Pro.",
+  "typing_why": "Gemini-2.5-Pro in results table; Foundation LLMs being evaluated"
+ },
+ {
+  "sid": "out_g1.jsonl:49",
+  "subject": "SciExplore",
+  "object": "Gemini-3-Pro",
+  "page": "arxiv:2607.20926v1",
+  "statement": "SciExplore is evaluated on Gemini-3-Pro.",
+  "typing_why": "Gemini-3-Pro in results table; Foundation LLMs being evaluated"
+ },
+ {
+  "sid": "out_g11.jsonl:17",
+  "subject": "MoE\u00b2-LoRA",
+  "object": "DeepSeek-V2-Lite",
+  "page": "arxiv:2607.21978v1",
+  "statement": "MoE\u00b2-LoRA is evaluated on DeepSeek-V2-Lite.",
+  "typing_why": "we conduct the main experiments on three MoE backbones: DeepSeek-V2-Lite"
+ },
+ {
+  "sid": "out_g11.jsonl:38",
+  "subject": "self-harm probe analysis",
+  "object": "Gemma-3-4B",
+  "page": "arxiv:2607.21988v1",
+  "statement": "self-harm probe analysis is evaluated on Gemma-3-4B.",
+  "typing_why": "we find Gemma-3-4B to represent this contrastive self-harm direction in a different way"
+ },
+ {
+  "sid": "out_g12.jsonl:22",
+  "subject": "DWT-Fusion",
+  "object": "GPT-Neo",
+  "page": "arxiv:2607.22026v1",
+  "statement": "DWT-Fusion is evaluated on GPT-Neo.",
+  "typing_why": "using GPT-Neo-2.7B, GPT-J-6B, Falcon-7B, and LLaMA-3-8B as proxy models"
+ },
+ {
+  "sid": "out_g12.jsonl:23",
+  "subject": "DWT-Fusion",
+  "object": "GPT-J",
+  "page": "arxiv:2607.22026v1",
+  "statement": "DWT-Fusion is evaluated on GPT-J.",
+  "typing_why": "using GPT-J-6B as proxy models"
+ },
+ {
+  "sid": "out_g12.jsonl:24",
+  "subject": "DWT-Fusion",
+  "object": "Falcon",
+  "page": "arxiv:2607.22026v1",
+  "statement": "DWT-Fusion is evaluated on Falcon.",
+  "typing_why": "using Falcon-7B as proxy models"
+ },
+ {
+  "sid": "out_g12.jsonl:25",
+  "subject": "DWT-Fusion",
+  "object": "Llama 3",
+  "page": "arxiv:2607.22026v1",
+  "statement": "DWT-Fusion is evaluated on Llama 3.",
+  "typing_why": "using LLaMA-3-8B as proxy models"
+ },
+ {
+  "sid": "out_g4.jsonl:7",
+  "subject": "concept-circuit analysis",
+  "object": "DeepSeek-Coder-V1",
+  "page": "arxiv:2607.21491v1",
+  "statement": "concept-circuit analysis is evaluated on DeepSeek-Coder-V1.",
+  "typing_why": "extending concept-circuit extraction method to DeepSeek-Coder-V1 for analysis"
+ },
+ {
+  "sid": "out_g4.jsonl:8",
+  "subject": "Epanorthosis Index",
+  "object": "Claude Haiku",
+  "page": "arxiv:2607.21498v1",
+  "statement": "Epanorthosis Index is evaluated on Claude Haiku.",
+  "typing_why": "generated across three model sizes including Claude Haiku"
+ },
+ {
+  "sid": "out_g4.jsonl:9",
+  "subject": "Epanorthosis Index",
+  "object": "Claude Sonnet",
+  "page": "arxiv:2607.21498v1",
+  "statement": "Epanorthosis Index is evaluated on Claude Sonnet.",
+  "typing_why": "generated across three model sizes including Claude Sonnet"
+ },
+ {
+  "sid": "out_g4.jsonl:10",
+  "subject": "Epanorthosis Index",
+  "object": "Claude Opus",
+  "page": "arxiv:2607.21498v1",
+  "statement": "Epanorthosis Index is evaluated on Claude Opus.",
+  "typing_why": "generated across three model sizes including Claude Opus"
+ },
+ {
+  "sid": "out_g8.jsonl:12",
+  "subject": "ADSD",
+  "object": "Llama 3",
+  "page": "arxiv:2607.21804v1",
+  "statement": "ADSD is evaluated on Llama 3.",
+  "typing_why": "LLaMA-3 70B \\rightarrow 8B evaluation uses a tensor-parallel Palmetto testbed"
+ }
+]
