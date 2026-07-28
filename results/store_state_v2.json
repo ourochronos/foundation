@@ -1,0 +1,53 @@
+{
+ "store": {
+  "claims": 19729,
+  "live": 19727,
+  "eids": 15399,
+  "pages": 1717,
+  "pids": 67
+ },
+ "sources": [
+  "wiki shards_final 8004",
+  "wiki shards_1k 4938",
+  "math.LO v2 297",
+  "arxiv_ai P_ASSERTS 1106",
+  "citations 3840",
+  "resources v2 941",
+  "HF cards 602"
+ ],
+ "resource_axis": {
+  "claims": 941,
+  "papers": 245,
+  "verified_single_entity": [
+   "GSM8K",
+   "Qwen2.5",
+   "GRPO",
+   "LoRA",
+   "HumanEval",
+   "MMLU",
+   "AIME",
+   "Llama 3",
+   "PPO",
+   "MBPP"
+  ],
+  "usage_counts": {
+   "Qwen2.5": 18,
+   "GSM8K": 16,
+   "GRPO": 16,
+   "LoRA": 14,
+   "HumanEval": 11,
+   "MMLU": 9,
+   "Llama 3": 8,
+   "AIME": 7,
+   "MBPP": 6,
+   "PPO": 4
+  }
+ },
+ "acceptance": {
+  "battery": "13/13",
+  "suite": 58,
+  "demo": "GREEN",
+  "edits_replayed": 1
+ },
+ "audit_status": "resource axis NOT ACCEPTED \u2014 D100 measured 0.80 mine / 0.58 Sol on v2 BEFORE the generic blocklist and object_global landed; a re-audit under the now-declared granularity policy is owed"
+}

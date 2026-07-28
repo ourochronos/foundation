@@ -53,6 +53,14 @@ CASES = [
         kb.cited_by("Qwen3 Technical Report")["n"] >= 20),
     ("cited_work_is_one_entity", lambda:
         len(kb.resolve_subject("Proximal Policy Optimization Algorithms")) == 1),
+    # D101: a shared resource is ONE entity corpus-wide. Before
+    # `object_global` these read 16-18 eids each and every cross-paper
+    # count was 0, with nothing failing anywhere to say so.
+    ("resource_is_one_entity", lambda: all(
+        len(kb.resolve_subject(r)) == 1
+        for r in ("GSM8K", "Qwen2.5", "GRPO", "LoRA", "HumanEval"))),
+    ("resource_used_by_many_papers", lambda:
+        kb.cited_by("GSM8K", pid=None)["n"] >= 10),
 ]
 
 results, fails = {}, []
