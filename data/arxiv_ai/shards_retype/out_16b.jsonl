@@ -1,0 +1,19 @@
+{"sid": "out_g6.jsonl:24", "pid": "P_EVALUATES_ON", "why": "For real-world evaluation, we use three datasets from UCR Archive: Epilepsy"}
+{"sid": "out_g6.jsonl:25", "pid": "P_EVALUATES_ON", "why": "For real-world evaluation, we use three datasets from UCR Archive: ERing"}
+{"sid": "out_g6.jsonl:26", "pid": "P_EVALUATES_ON", "why": "For real-world evaluation, we use three datasets from UCR Archive: ArticularyWordRecognition"}
+{"sid": "out_g6.jsonl:27", "pid": "P_COMPARES_TO", "why": "We compare our method with several baselines, including perturbation-based methods, namely TimeX"}
+{"sid": "out_g6.jsonl:28", "pid": "P_COMPARES_TO", "why": "We compare our method with several baselines...TimeX++"}
+{"sid": "out_g6.jsonl:29", "pid": "P_COMPARES_TO", "why": "We compare our method with several baselines...Dynamask"}
+{"sid": "out_g6.jsonl:30", "pid": "P_COMPARES_TO", "why": "We compare our method with several baselines...gradient-based methods, including CORTX"}
+{"sid": "out_g6.jsonl:31", "pid": "P_COMPARES_TO", "why": "We compare our method with several baselines...gradient-based methods, including WinIT"}
+{"sid": "out_g6.jsonl:32", "pid": "P_COMPARES_TO", "why": "We compare our method with several baselines...gradient-based methods...SGT+GRAD"}
+{"sid": "out_g6.jsonl:33", "pid": "DROP", "why": "training robust deep learning models, such as YOLO, is heavily hindered - background problem context"}
+{"sid": "out_g6.jsonl:34", "pid": "P_BUILDS_ON", "why": "state-of-the-art RFDETR...was trained using the synthetic samples"}
+{"sid": "out_g6.jsonl:35", "pid": "P_EVALUATES_ON", "why": "Extensive empirical validation across two UCI benchmark datasets (Concrete, YearPredictionMSD)"}
+{"sid": "out_g6.jsonl:36", "pid": "P_EVALUATES_ON", "why": "Extensive empirical validation across two UCI benchmark datasets (Concrete, YearPredictionMSD)"}
+{"sid": "out_g6.jsonl:37", "pid": "P_EVALUATES_ON", "why": "MNIST image classification task demonstrates state-of-the-art structural sparsity reducing active nodes on MNIST"}
+{"sid": "out_g6.jsonl:38", "pid": "DROP", "why": "the Lottery ticket hypothesis...able to prune up to 80% - cited as prior work framework in the field"}
+{"sid": "out_g6.jsonl:39", "pid": "P_BUILDS_ON", "why": "Bayesian Lottery Ticket initialises the procedure from compressed, well-conditioned subnetwork; BLT identification via Iterative Magnitude Pruning"}
+{"sid": "out_g6.jsonl:40", "pid": "P_BUILDS_ON", "why": "spike-and-slab Independent Gaussian prior provides variational machinery for computing neuron-level inclusion probabilities"}
+{"sid": "out_g6.jsonl:41", "pid": "P_COMPARES_TO", "why": "memory-bank detectors (e.g. AdaODD)...These methods report substantial gains...also fail in specific ways under realistic mixes"}
+{"sid": "out_g6.jsonl:42", "pid": "P_COMPARES_TO", "why": "memory-bank detectors append OOD-looking points to OOD dictionary (e.g. OODD)...These methods fail in specific, predictable ways"}

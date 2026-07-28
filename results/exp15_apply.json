@@ -1,0 +1,62 @@
+{
+ "counts": {
+  "input": 1062,
+  "relation_changed": 125,
+  "P_EVALUATES_ON": 454,
+  "dropped": 70,
+  "P_BUILDS_ON": 290,
+  "P_COMPARES_TO": 228,
+  "uncertain_held": 20,
+  "subject_repaired": 215
+ },
+ "kept": 972,
+ "held_uncertain": 20,
+ "resources_ge2_papers": 83,
+ "resources_ge3_papers": 40,
+ "resources_ge5_papers": 15,
+ "distinct_subjects": 251,
+ "pages": 251,
+ "residual_families": {
+  "model_as_evaluation_target": {
+   "count": 49,
+   "of_p_evaluates_on": 454,
+   "rate": 0.108,
+   "examples": [
+    "LoRA -> GPT-3",
+    "LoRA -> RoBERTa",
+    "Activation Addition -> LLaMA-3"
+   ],
+   "note": "prompt explicitly forbids it; papers say \"we evaluate on GPT-3\" and the source phrasing wins. Needs an object-side type check, not more prompt."
+  },
+  "object_surface_variants": {
+   "groups": 17,
+   "examples": [
+    [
+     "ALFWorld",
+     "AlFWorld"
+    ],
+    [
+     "LLaMA 3",
+     "LLaMA-3",
+     "Llama 3"
+    ],
+    [
+     "Qwen 2.5",
+     "Qwen2.5"
+    ],
+    [
+     "SWE-Bench",
+     "SWE-bench"
+    ]
+   ],
+   "note": "subjects were canonicalised; objects never have been, and the resource axis lives in the object field"
+  }
+ },
+ "subject_pass": {
+  "pages": 269,
+  "changed": 77,
+  "true_proper_name_regressions": 3,
+  "note": "automated regression flag over-reported 21; manual review put genuine losses at 3 (TIGER, WARDEN, VGCC)"
+ },
+ "status": "NOT ACCEPTED \u2014 no frozen audit graded on v2; D97 0.66/0.68 was measured on v1"
+}

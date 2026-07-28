@@ -2,6 +2,30 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-27 — D99: Both repairs APPLIED at corpus scale — one subject per page exactly, 125 relations corrected, 70 non-usages dropped; two residual families measured and NOT yet fixed
+The D98 fixes ran over the whole resource corpus and merged into `data/arxiv_ai/shards_res_v2` (originals untouched, so the v1 audit stays meaningful). 18 typing shards + 6 subject shards.
+
+| | v1 | **v2** |
+|---|---|---|
+| claims | 1,062 | **972** kept + 20 held `UNCERTAIN` |
+| relations corrected | — | **125** (11.8%) |
+| dropped as non-usage | — | **70** (6.6%) |
+| subjects repaired | — | **215 claims across 77 pages** |
+| pages / distinct subjects | 269 / mixed | **251 / 251 — exactly one per page** |
+| resources in ≥3 papers | 46 | 40 |
+
+**The subject rule transferred cleanly**: 251 subjects over 251 pages is one entity per paper exactly, with **zero stopword subjects** (`"The"` → `dark-room pathology`) and **zero title-question subjects** (`"Pixels for Programs?"` gone). D94's naming rule, written for the abstract pass, works unmodified on body-text extraction.
+
+**The population fell 46 → 40 and that is the fix working, not a regression.** Dropping 70 related-work and generic mentions removes cross-paper "links" that were never usages — a paper name-checking GANs in its introduction is not a paper that shares GANs with anyone. Precision-oriented cleanup costs population, and the honest reading is that some of D96's 46 was inflated by exactly this.
+
+**Two residual families, measured rather than asserted, both untouched by this pass:**
+1. **Model-as-evaluation-target — 49 of 454 `P_EVALUATES_ON` claims (10.8%)** have a MODEL as their object, not a dataset: `LoRA is evaluated on GPT-3 / RoBERTa / DeBERTa`, `Activation Addition is evaluated on LLaMA-3`. The typing prompt explicitly says *"a backbone or base model is `P_BUILDS_ON`, never `P_EVALUATES_ON`; you evaluate on data, you build on models"* — and the pass still gets it wrong at this rate, because the papers themselves say "we evaluate on GPT-3". **A prompt rule that contradicts the source's own phrasing loses.** The fix is not more prompt: it is an object-side type check — a model name in the object of `P_EVALUATES_ON` is mechanically detectable and should be re-routed or flagged, exactly the "types dispose" law (D41) applied to a field rather than a plan.
+2. **Object-side surface variants — 17 groups** differing only in case or punctuation: `ALFWorld`/`AlFWorld`, `LLaMA 3`/`LLaMA-3`/`Llama 3`, `Qwen 2.5`/`Qwen2.5`, `SWE-Bench`/`SWE-bench`, `ScienceQA`/`Science QA`. The subject pass canonicalised subjects and **nothing has ever canonicalised objects** — which is where the whole resource axis lives. This is D96's fragmentation finding, still open, now with a precise target list.
+
+**Still NOT accepted.** No fresh frozen audit has been graded on v2, so no precision number is claimed for it; D97's 0.66/0.68 remains the last measured value and it was measured on v1. The next honest step is object canonicalisation + the model-as-target check, then one frozen audit over the result — not a re-grade of the same 50, which are now unrepresentative of the corpus they came from.
+
+**Ops (crash mid-run)**: the host crashed while 7 agents were in flight; all outputs had already been written except shard 16, which flushed 49 of 60 rows. **File presence would have declared the fleet complete and lost 11 claims** — row-counting every output against its input caught it, and `exp15_apply.py`'s refusal-on-missing-decision would have caught it again downstream. Both checks were built before the crash, for a different reason, and both paid.
+
 ## 2026-07-27 — D98: Separating the relation from the mention roughly HALVES the defect rate (0.66/0.68 → 0.79–0.84) — the D97 diagnosis holds, and the residue is now things typing cannot touch
 **This is a VALIDATION, not an acceptance.** Paired re-grade of the *same 50 audited claims* by me under the Sol-corrected standard: no new frozen sample, no adjudication. Acceptance still requires a full re-typing pass and a fresh frozen audit. Recorded that way in `results/exp15_retype_validation.json` so the number cannot be mistaken for a gate result.
 
