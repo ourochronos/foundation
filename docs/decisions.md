@@ -2,6 +2,32 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D128: Vocabulary pretraining does NOT transfer to the walker — and compression-buys-generalisation-costs-precision is one axis explaining D125–D128
+`scripts/exp34_aliaspretrain.py`. D127 named alias-diverse vocabulary pretraining as "the highest-value untested change". It was tested. It does not work, and testing it exposed something more useful.
+
+**Vocabulary pretraining is refuted, in both representations.** 800 domain-selected Wikidata relations × 4 aliases, D116's exact recipe, added to the walker's training:
+
+| condition | known phrasing | **held-out phrasing** | wrong | unanswerable refused |
+|---|---|---|---|---|
+| raw (D127) | 0.868 | 0.149 | 0.036 | 0.958 |
+| raw + vocabulary | 0.868 | **0.146** | 0.063 | 0.883 |
+| basis K=48 | 0.745 | **0.313** | 0.245 | 0.743 |
+| basis + vocabulary | 0.716 | 0.286 | 0.228 | 0.741 |
+
+Adding 3,200 alias-rich training questions moves held-out-phrasing accuracy by **−0.003** in raw space and **−0.027** in the basis. D116's result was real — it just does not transfer to this task. In D116 the head was scored by *ranking* a relation against 26 candidates; here it must emit a coordinate precise enough to *walk*, and being roughly right about which relation is meant is not the same as being precise enough to subtract.
+
+**What did help is the representation, and that completes a pattern.** The anchor basis roughly **doubles** phrasing robustness (0.149 → 0.313) — the same compression that D125 showed rescues novel *relations* (0.293 → 0.742) also partly rescues novel *phrasings*. And it carries the same cost D126 found at depth: wrong-rate rises from 0.036 to 0.245 and refusal falls from 0.958 to 0.743.
+
+**One axis explains all four results (D125–D128):**
+
+> **Compression buys generalisation and costs precision.** A frozen low-dimensional basis forces a novel thing — relation or phrasing — to be expressed in terms of known ones, which is exactly what generalisation requires. The same compression discards the precision needed to disentangle a sum of coordinates, which is what depth requires and what makes confident wrong answers more likely.
+
+D125 (novel relations, basis wins), D126 (depth, raw wins), D127 (phrasing, the gap), D128 (phrasing, basis partly wins) are four points on that one trade-off, not four separate findings. **This is the most useful generalisation to come out of the arc** and it predicts that no single K serves every axis — which is a design constraint, not a tuning problem.
+
+**Neither representation solves phrasing, and that must be said plainly.** Raw fails *safe* (0.149 correct / 0.036 wrong / 0.814 abstain); the basis fails *less safe* (0.313 correct / 0.245 wrong). A 2.1× gain in coverage bought with a 6.8× rise in wrongness is not obviously a good trade for this project. Phrasing robustness remains the dominant unsolved failure, and it is now the only one with no candidate fix in hand.
+
+**Revisit**: (a) the encoder is frozen throughout — every phrasing result is bounded by BGE-M3's own paraphrase geometry, and fine-tuning it is the one lever never pulled; (b) a hybrid scoring in both spaces (basis to propose, raw to verify) follows directly from the trade-off axis and is untested; (c) D116's recipe should be re-examined for whether *ranking* vs *emitting* is the real difference, which would sharpen when vocabulary pretraining is worth doing at all.
+
 ## 2026-07-29 — D127: D123's composition result survives the lexical-shortcut test — but PHRASING, not composition, is the dominant failure mode
 `scripts/exp33_alias.py`. D123 named relations by their LABEL in the question, which isolated composition but left an obvious hole: coordinates are the label embedding and the label appears verbatim in the question, so the head might have been doing string overlap. If so, 0.925 was inflated and the whole wiki arc rested on a shortcut.
 

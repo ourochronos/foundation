@@ -1,0 +1,127 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T09:09:04.176109+00:00",
+  "commit": "95d2f91b7a9636ce89b8ebf8ab0543808cfd3b6f",
+  "dirty": true,
+  "command": "scripts/exp34_aliaspretrain.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "N_VOCAB": 800,
+   "N_VOCAB_ALIAS": 4
+  }
+ },
+ "n_relations": 60,
+ "results": {
+  "no pretraining (D127)": {
+   "thr": 0.6,
+   "n_train": 9770,
+   "train_d2": {
+    "correct": 0.8684,
+    "wrong": 0.0054,
+    "abstain": 0.1262,
+    "n": 4247
+   },
+   "xcell_trainpair_evalalias": {
+    "correct": 0.1493,
+    "wrong": 0.0365,
+    "abstain": 0.8142,
+    "n": 4247
+   },
+   "xcell_evalpair_trainalias": {
+    "correct": 0.8419,
+    "wrong": 0.0163,
+    "abstain": 0.1418,
+    "n": 2631
+   },
+   "eval_d2_clean": {
+    "correct": 0.1167,
+    "wrong": 0.0236,
+    "abstain": 0.8597,
+    "n": 2631
+   },
+   "unans": {
+    "correct": 0.0,
+    "wrong": 0.042,
+    "abstain": 0.958,
+    "n": 2000
+   }
+  },
+  "+ vocabulary pretraining": {
+   "thr": 0.6,
+   "n_train": 12970,
+   "train_d2": {
+    "correct": 0.8679,
+    "wrong": 0.0066,
+    "abstain": 0.1255,
+    "n": 4247
+   },
+   "xcell_trainpair_evalalias": {
+    "correct": 0.146,
+    "wrong": 0.0629,
+    "abstain": 0.7911,
+    "n": 4247
+   },
+   "xcell_evalpair_trainalias": {
+    "correct": 0.8449,
+    "wrong": 0.0209,
+    "abstain": 0.1342,
+    "n": 2631
+   },
+   "eval_d2_clean": {
+    "correct": 0.0996,
+    "wrong": 0.0433,
+    "abstain": 0.8571,
+    "n": 2631
+   },
+   "unans": {
+    "correct": 0.0,
+    "wrong": 0.1165,
+    "abstain": 0.8835,
+    "n": 2000
+   }
+  }
+ },
+ "phrasing_delta": -0.0033,
+ "scope": "Identical to D127 except the head additionally trains on synthetic depth-1 questions from 800 domain-selected Wikidata VOCABULARY relations (never the corpus's own) with filler subjects \u2014 D116's recipe. Nothing about the corpus evaluation changes, so the difference is attributable to the pretraining. The load-bearing cell is trained pairs rendered in held-out aliases, which isolates phrasing.",
+ "basis_2x2": {
+  "basis K=48": {
+   "thr": 0.4,
+   "known": {
+    "correct": 0.7452,
+    "wrong": 0.0735,
+    "abstain": 0.1813,
+    "n": 4247
+   },
+   "heldout_phrasing": {
+    "correct": 0.3129,
+    "wrong": 0.2451,
+    "abstain": 0.442,
+    "n": 4247
+   },
+   "unans_refused": 0.7425
+  },
+  "basis K=48 + vocab": {
+   "thr": 0.4,
+   "known": {
+    "correct": 0.7158,
+    "wrong": 0.0897,
+    "abstain": 0.1945,
+    "n": 4247
+   },
+   "heldout_phrasing": {
+    "correct": 0.2863,
+    "wrong": 0.2277,
+    "abstain": 0.486,
+    "n": 4247
+   },
+   "unans_refused": 0.7405
+  }
+ }
+}
