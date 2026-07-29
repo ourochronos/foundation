@@ -393,10 +393,8 @@ elif sys.argv[1] == "claims":
                   "relation +0.191. Retrieval is worse on both (+0.247, "
                   "+0.771)",
          "src": ("results/exp36_append.json", ["results"])},
-        {"claim": "The store LEARNS: a question it refused before an update "
-                  "is answered after it, with no refit.",
-         "scope": "conditional on it having refused honestly first — it "
-                  "refused only 0.360 of what it could not answer",
+        {"claim": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable. Both figures derive from the transition matrix.",
+         "scope": "artifacts are frozen by construction in this experiment but are FINGERPRINT-VERIFIED only in D131's separate append run; the 1.000 is conditional on prior honest refusal",
          "src": ("results/exp38_update.json",
                  ["transition_flip", "learned_rate", "learned_ci95",
                   "regression_stays", "control_never", "n_update_pairs"]),
@@ -410,7 +408,12 @@ elif sys.argv[1] == "claims":
                   "depth 3 (0.626 vs 0.683)",
          "src": ("results/exp29_wikiwalker.json",
                  ["n_relations", "n_pairs", "n_held_pairs", "results",
-                  "controls", "branching"])},
+                  "controls", "branching"]),
+         # BOTH raters flagged this for citing only the 61-relation result
+         # while asserting failure at 5. The 5-relation evidence is a
+         # different experiment; a cross-experiment claim needs a
+         # cross-experiment citation (D135's open item, now acted on).
+         "extra": [("results/exp18_compose.json", ["ordering", "scope"])]},
         {"claim": "Depth extrapolates without depth-specific training for "
                   "ANSWERING (3-hop 0.849 with no 3-hop trained).",
          "scope": "answering only; refusal does not extrapolate",
@@ -419,8 +422,7 @@ elif sys.argv[1] == "claims":
         {"claim": "On a MIXED unanswerable benchmark the answer-type gate "
                   "lifts not-applicable refusal from 0.050 to 0.693 and "
                   "cuts answerable wrongness from 0.118 to 0.045.",
-         "scope": "costs 0.110 of depth-1 answerable coverage; probe "
-                  "ceiling is 0.965 so 0.693 is threshold placement",
+         "scope": "depth-1 CORRECT falls 0.110 while TOTAL answered falls 0.183 (the extra 0.073 were wrong answers); depth-2 wrongness 0.175->0.102; probe ceiling 0.965 so 0.693 is threshold placement",
          "src": ("results/exp39_typegate.json",
                  ["results", "not_applicable_refusal", "aurc_mixed",
                   "type_fit_threshold"])},

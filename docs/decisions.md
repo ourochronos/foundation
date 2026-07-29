@@ -2,6 +2,25 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D140: Two adjudicators agree at kappa +0.333 — single-rater claim audits are noisier than they looked, and both raters together catch arithmetic neither self-review did
+`scripts/adjudicate.py claims {gpt-5.6-sol | gemini-3.1-pro-preview}`, `data/adjudication/`. Task 1. D135 left a second rater as the blocking dependency for trusting the claims table; `gemini-3.1-pro-preview` is reachable through the same `copilot --model` path and the adjudicator already took the model as an argument, so no new plumbing was needed.
+
+**The headline is the inter-rater number.** Over 8 claims judged by both: raw agreement 0.750, **Cohen's kappa +0.333** — fair-to-moderate. Two competent raters disagree about whether a claim is supported roughly a quarter of the time. **Every single-rater verdict in D130 and D135 was therefore noisier than it appeared**, and the three-round iteration D135 warned about was partly chasing one rater's idiosyncrasies. This is the first quantification of that.
+
+**The classification rule earns its keep immediately.** Flagged by both → real defect; flagged by one → rater-specific, record and change nothing:
+
+- **Both flagged claim 2** for citing only the 61-relation result while asserting failure at 5. Giving it a **cross-experiment citation** (adding `exp18_compose.json`, the actual 5-relation corpus) lifted both raters to **0.875 agreement**. D135 predicted exactly this — that cross-experiment claims need cross-experiment citations — and it is now acted on rather than noted.
+- **Only Gemini flagged claim 1c**, reading 0.360 as "the learned_rate, not the proportion refused". Verified against source: the two figures **coincide legitimately** (432/432 refused→correct), and `control_never` is a different population. Recorded as rater-specific; the claim stood.
+
+**Three further arithmetic catches, each verified before acting:**
+- **The denominator was wrong.** "It refused only 0.360 of what it could not answer" used 1,200 as the denominator, but **21 of those 1,200 were already answerable at T0** (transition cells `correct→correct` 20, `correct→wrong` 1). The honest figure is **432/1,179 = 0.366**. Corrected in D133 and the claims table.
+- **A citation was misleading.** `exp28_depthscaling.json`'s `n_held: 5` is five held *shapes*, not five *relations* — Gemini caught that the file did not support the reading I gave it. Citation dropped.
+- The D135 coverage correction (0.110 correct vs 0.183 total) had been applied to the docs but **not** to the adjudicator's own claim text, so it was still being judged against the stale wording.
+
+**The flags still do not converge to zero, and that is now a two-rater observation rather than a one-rater suspicion.** What *does* converge is severity: D130 found the headline claim unmeasured, D135 found a stale figure and a missing scope, this round found a denominator off by 21. **Adjudication is asymptoting on precision, not on correctness**, which is the right shape for a claims table to be in before drafting — and is where this stops, per D135's own conclusion that further iteration is rater-fitting.
+
+**Revisit**: (a) kappa +0.333 suggests a third rater would still move verdicts — worth knowing the marginal value before treating any adjudicated table as settled; (b) the adjudicator's CLAIMS list is now a second copy of the claims table and drifted from `docs/18` once already — it should be generated from that file rather than maintained beside it; (c) every remaining flag is a precision complaint, which is the signal to draft.
+
 ## 2026-07-29 — D139: Alias collection is the cheapest unexploited lever (head 0.723 → 0.933) — and it is a HEAD fix, not a retrieval one
 `scripts/exp43_scaling.py`. Task 6, the measurable parts.
 
@@ -149,7 +168,7 @@ Task 2 of the plan. The claims table in `docs/18-writeup-outline.md` was rewritt
 
 **Every single question it knew it could not answer became correct after the update**, with no refit of any kind. Regression on questions answerable all along is negligible: correct→correct 0.989, correct→**wrong 0.003**. That is the property the project exists to demonstrate, and it is now demonstrated on the same questions before and after rather than inferred.
 
-**But the denominator is the finding.** Of the 1,200 questions the store *could not* answer at T0, it properly refused only **0.360**. The other **0.623 it answered wrongly** — it confabulated. The perfect learning rate above is conditional on the store having been honest in the first place, and it usually was not.
+**But the denominator is the finding.** Of the 1,200 questions the store *could not* answer at T0, it properly refused only **0.366** (432 of 1,179 — 21 of the 1,200 were already answerable at T0). The other **0.623 it answered wrongly** — it confabulated. The perfect learning rate above is conditional on the store having been honest in the first place, and it usually was not.
 
 **And the control fails outright, which exposes a hole in every refusal number we have.** Questions whose relation simply does not apply to the subject — never answerable, before or after — are answered anyway **0.850 of the time before the update and 1.000 after**. Asked "what is the *date of birth* of [a book]", the walker takes the book's best-matching *available* relation and answers confidently.
 

@@ -1,0 +1,78 @@
+{
+ "audit": "claims",
+ "model": "gemini-3.1-pro-preview",
+ "n": 8,
+ "n_judged": 8,
+ "raw_agreement": 0.5,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Generalizes 'new ENTITIES' near-free performance using the 0.058 depth-1 drop, ignoring the much larger 0.249 accuracy drop in depth-2 (d2_new_head)."
+  },
+  {
+   "idx": 2,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Calculates the 0.360 refusal rate using a denominator of 1200 total transitions, but the transition matrix includes 21 items that were already correct (only 1179 were actually unanswered)."
+  },
+  {
+   "idx": 3,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Claims it 'fails at 5' relations, but the number 5 in exp28 refers to n_shapes (5 held shape pairs), not the number of relations."
+  },
+  {
+   "idx": 5,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Attributes the ans_d1 wrongness drop (0.118 to 0.045) to general 'answerable wrongness', omitting that ans_d2 wrongness remains at 0.1017."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "Fingerprints for basis, coords, and head are explicitly identical at freeze and after append."
+  },
+  "1": {
+   "verdict": "OVERREACH",
+   "reason": "Generalizes 'new ENTITIES' near-free performance using the 0.058 depth-1 drop, ignoring the much larger 0.249 accuracy drop in depth-2 (d2_new_head)."
+  },
+  "2": {
+   "verdict": "OVERREACH",
+   "reason": "Calculates the 0.360 refusal rate using a denominator of 1200 total transitions, but the transition matrix includes 21 items that were already correct (only 1179 were actually unanswered)."
+  },
+  "3": {
+   "verdict": "OVERREACH",
+   "reason": "Claims it 'fails at 5' relations, but the number 5 in exp28 refers to n_shapes (5 held shape pairs), not the number of relations."
+  },
+  "4": {
+   "verdict": "SUPPORTED",
+   "reason": "Zero-shot answerable correct rate is 0.849, and refusal's failure to extrapolate is confirmed by unans_break3 abstain dropping to 0.267."
+  },
+  "5": {
+   "verdict": "OVERREACH",
+   "reason": "Attributes the ans_d1 wrongness drop (0.118 to 0.045) to general 'answerable wrongness', omitting that ans_d2 wrongness remains at 0.1017."
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "AURC values exactly match (0.4734 vs 0.1322), the 3.6x ratio is accurate, and adding type signals to the residual worsens AURC to 0.4901."
+  },
+  "7": {
+   "verdict": "SUPPORTED",
+   "reason": "1-NN correctly preserves known relations (1.0 vs head 0.9033) and the quoted collapse on new relations exactly matches the 0.229 vs 0.782 penalty."
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED"
+ }
+}

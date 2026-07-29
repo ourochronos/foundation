@@ -7,42 +7,42 @@
  "cohens_kappa": 0.0,
  "disagreements": [
   {
-   "idx": 3,
+   "idx": 2,
    "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "At 61 relations, held-pair depth-2 correctness is 0.9245 versus 0.9135 for trained pairs, but no measurement at 5 relations supports the stated failure boundary."
+   "theirs": "UNSUPPORTED",
+   "their_reason": "432/432 prior refusals became correct, but only 1179 questions were previously unanswered: 21 were already correct. Thus 432/1200 is not the refusal fraction among questions it could not answer."
   },
   {
    "idx": 5,
    "mine": "SUPPORTED",
    "theirs": "OVERREACH",
-   "their_reason": "The headline changes are supported, but non-refusal coverage at depth 1 falls from 0.9933 to 0.8100, a cost of 0.1833 rather than the stated 0.110."
+   "their_reason": "The quoted refusal and wrongness changes are correct, but depth-1 answerable coverage falls from 0.9933 to 0.8100, a 0.1833 cost, not 0.110; 0.110 is the drop in correctness."
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SUPPORTED",
-   "reason": "Basis, coordinates, and head fingerprints are identical before and after appending 15 relations and 652 subjects."
+   "reason": "Basis, coordinates, and head fingerprints are byte-identical before and after appending 15 relations and 652 subjects."
   },
   "1": {
    "verdict": "SUPPORTED",
-   "reason": "Head deficits versus rebuild are 0.0578 for new entities and 0.1911 for new relations; retrieval deficits are 0.2467 and 0.7711."
+   "reason": "Head deficits are 0.0578 for new subjects and 0.1911 for new relations; k-NN deficits are 0.2467 and 0.7711, respectively."
   },
   "2": {
-   "verdict": "SUPPORTED",
-   "reason": "There are 432 refused-to-correct transitions, yielding the stated 0.360 learned rate, while all three fitted-artifact fingerprints remain identical."
+   "verdict": "UNSUPPORTED",
+   "reason": "432/432 prior refusals became correct, but only 1179 questions were previously unanswered: 21 were already correct. Thus 432/1200 is not the refusal fraction among questions it could not answer."
   },
   "3": {
-   "verdict": "OVERREACH",
-   "reason": "At 61 relations, held-pair depth-2 correctness is 0.9245 versus 0.9135 for trained pairs, but no measurement at 5 relations supports the stated failure boundary."
+   "verdict": "SUPPORTED",
+   "reason": "At 61 relations, held-pair depth-2 correctness is 0.9245 versus 0.9135 for trained pairs; depth-3 falls to 0.6257 versus 0.6828 as scoped."
   },
   "4": {
    "verdict": "SUPPORTED",
-   "reason": "The zero-shot-depth answerable set has 0.8489 correctness; refusal is poor for break-3 unanswerables at 0.2677, matching the answering-only scope."
+   "reason": "Without 3-hop training, 3-hop answerable correctness is 0.8489; refusal notably fails for break-3 unanswerables at only 0.2677."
   },
   "5": {
    "verdict": "OVERREACH",
-   "reason": "The headline changes are supported, but non-refusal coverage at depth 1 falls from 0.9933 to 0.8100, a cost of 0.1833 rather than the stated 0.110."
+   "reason": "The quoted refusal and wrongness changes are correct, but depth-1 answerable coverage falls from 0.9933 to 0.8100, a 0.1833 cost, not 0.110; 0.110 is the drop in correctness."
   },
   "6": {
    "verdict": "SUPPORTED",
@@ -50,7 +50,7 @@
   },
   "7": {
    "verdict": "SUPPORTED",
-   "reason": "For known relations, 1-NN scores 0.9255 versus the two-alias head's 0.6139; for new relations, frozen retrieval is 0.2289 versus head 0.7822."
+   "reason": "For known relations, 1-NN scores 0.9255 versus the head's 0.6139; for new relations the scoped reversal is 0.2289 versus 0.7822."
   }
  },
  "my_labels": {
