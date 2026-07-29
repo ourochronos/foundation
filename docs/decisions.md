@@ -2,6 +2,40 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D132: Refusal WAS too flat — but the fix is reporting, not a better score; our abstentions are almost never "no evidence"
+`scripts/exp37_confidence.py`. Prompted by the observation that a binary refuse is too flat, and by Covalence's subjective-logic opinion tuple — formally adopted at D69 as the designed upgrade path and never built.
+
+**First: the measurement was the flatter thing.** Every refusal number in D118–D131 is one point on a curve, chosen by a different rule each time (0.970 here, 0.72–0.98 there), which is why none of them were ever comparable across corpora, depths or architectures. The threshold-free metric is selective prediction — the risk–coverage curve and its area. Answerable and unanswerable populations are scored **together**, so answering an unanswerable item is simply an error; refusal and accuracy stop being two incomparable numbers.
+
+| scorer | AURC ↓ | risk@50% cov | risk@80% cov | coverage at risk ≤ 0.05 |
+|---|---|---|---|---|
+| **residual only** (D118–D131) | **0.1322** | 0.051 | 0.303 | **0.499** |
+| margin only (D124) | 0.2900 | 0.259 | 0.343 | 0.000 |
+| combined, fitted on calibration | 0.1616 | 0.091 | 0.312 | 0.250 |
+
+**The first threshold-free statement this project has been able to make: half of all questions can be answered at ≤5% error.** That is a far more useful claim than any single refusal rate, and it is directly comparable across future corpora.
+
+**My proposed fix failed.** A logistic combination of six signals the walker already computes — residual, per-step margin, branching, answer-set size, path length, predicted magnitude — **ranks worse than the residual alone** (0.1616 vs 0.1322). Margin alone is much worse still (0.2900), consistent with D124 where it failed as a threshold. So the residual is not merely adequate, it is the best ranker available here, and adding signals to it degrades ranking.
+
+**This separates two properties that D118–D131 conflated.** The residual RANKS well (AURC 0.1322) while its THRESHOLD PLACEMENT is fragile — density-bound (D124) and decaying under append (D131). Those are different failures with different fixes, and AURC is what tells them apart. Nothing was wrong with the signal; what was wrong was reporting a point on its curve as if it were a property of the system.
+
+**Second, and the more interesting half: the SL decomposition shows our abstentions are almost never uncertainty.** Splitting the single `abstain` bucket into Covalence's three (vacuous = no path exists; conflict = several relations match well and near-equally; disbelief = a walk completed but did not answer):
+
+| population | vacuous | conflict | disbelief | answered |
+|---|---|---|---|---|
+| eval_d2_clean | **0.000** | 0.041 | 0.017 | 0.942 |
+| eval_d3_clean | **0.000** | 0.185 | 0.117 | 0.698 |
+| unans_2_2 | 0.001 | 0.211 | 0.544 | 0.243 |
+| unans_3_3 | **0.000** | 0.347 | 0.376 | 0.278 |
+
+**Vacuous is essentially zero everywhere.** The store almost always offers *a* walkable path, so a refusal is virtually never "I have no information" — it is "I have too much, or the wrong kind". Covalence's rule that **"unknown ≠ 50%"** turns out to bite in the opposite direction from the one it was written for: we have almost no genuine unknowns, and a flat abstain was hiding that. **Conflict also scales with depth** (0.041 → 0.185 on answerable; 0.211 → 0.347 on unanswerable), which identifies it as the depth-scaling failure mode and matches D124's ambiguity mechanism exactly.
+
+**Decision**: the walker emits a **status plus a confidence**, not a binary. The status is the SL triple (the four-way vocabulary `foundation/kb.py` has carried since D40 and the walker regressed away from), and the confidence is the residual — unchanged, because nothing beat it. Reported performance becomes the **risk–coverage curve**, not a refusal rate at a chosen threshold. D69's warning is respected: the tuple is an output representation, not a propagation framework.
+
+**Why this matters beyond metrics**: conflict and disbelief call for different responses from whoever is asking. Conflict means *the question is under-specified for this store* — ask more precisely. Disbelief means *the store does not contain this*. Collapsing both into "abstain" throws away the only actionable part of a refusal.
+
+**Revisit**: (a) the conflict/disbelief cut uses the calibration 25th-percentile margin, which is a placeholder — whether the split is better drawn by a fitted rule is untested; (b) AURC should be computed retroactively for D118's sparse corpus and D131's frozen-vs-rebuilt, which would finally make those numbers comparable and is nearly free; (c) the combined scorer was fitted on a calibration set drawn from different populations than evaluation, so its failure may be distribution shift rather than the signals being useless — a matched-population fit would separate those.
+
 ## 2026-07-29 — D131: The store IS mechanically reindex-free — but appending costs accuracy, the cost lands on NEW RELATIONS, and retrieval is far worse at it than the parametric head
 `scripts/exp36_append.py`. D130's adjudication found the project's headline claim had never been measured: we showed a novel relation is *answerable* (D125), never that **appending** requires no reindex. This runs the actual cycle. 15 of 61 relations and 652 of 2,610 subjects are withheld at freeze time and arrive afterwards, so the 2×2 of (old/new subject) × (old/new relation) is measured separately.
 

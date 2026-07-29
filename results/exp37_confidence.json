@@ -1,0 +1,82 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T15:10:24.681852+00:00",
+  "commit": "fee288f0a0b0a79096e07b30163e47393338ea1d",
+  "dirty": true,
+  "command": "scripts/exp37_confidence.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MIN_GAIN": 0.2,
+   "THR": 0.8
+  }
+ },
+ "n_calibration": 9535,
+ "n_eval": 6092,
+ "selective_prediction": {
+  "residual only (D118-D131)": {
+   "aurc": 0.1322,
+   "risk_at_50": 0.0506,
+   "risk_at_80": 0.3027,
+   "coverage_at_risk_05": 0.4992
+  },
+  "margin only (D124)": {
+   "aurc": 0.29,
+   "risk_at_50": 0.259,
+   "risk_at_80": 0.3433,
+   "coverage_at_risk_05": 0.0
+  },
+  "combined (fitted on calibration)": {
+   "aurc": 0.1616,
+   "risk_at_50": 0.0909,
+   "risk_at_80": 0.3123,
+   "coverage_at_risk_05": 0.2505
+  }
+ },
+ "status_decomposition": {
+  "train_d2": {
+   "vacuous": 0.0,
+   "conflict": 0.0583,
+   "disbelief": 0.012,
+   "answered": 0.9297
+  },
+  "train_d3": {
+   "vacuous": 0.0,
+   "conflict": 0.2176,
+   "disbelief": 0.074,
+   "answered": 0.7084
+  },
+  "eval_d2_clean": {
+   "vacuous": 0.0,
+   "conflict": 0.041,
+   "disbelief": 0.0175,
+   "answered": 0.9416
+  },
+  "eval_d3_clean": {
+   "vacuous": 0.0,
+   "conflict": 0.1848,
+   "disbelief": 0.1174,
+   "answered": 0.6978
+  },
+  "unans_2_2": {
+   "vacuous": 0.0005,
+   "conflict": 0.2115,
+   "disbelief": 0.5445,
+   "answered": 0.2435
+  },
+  "unans_3_3": {
+   "vacuous": 0.0,
+   "conflict": 0.347,
+   "disbelief": 0.3755,
+   "answered": 0.2775
+  }
+ },
+ "conflict_margin_cut": 0.1119,
+ "scope": "Selective prediction over answerable and unanswerable populations TOGETHER: answering an unanswerable item is an error, which makes refusal and accuracy one metric instead of two incomparable ones. AURC is threshold-free, so it compares across corpora and depths in a way every refusal number in D118-D131 could not. The combined scorer is fitted on the calibration set only (trained pairs + unanswerable, per law #6). The SL decomposition is an OUTPUT representation, not a propagation framework \u2014 D69 recorded that stacking those caused belief oscillation in Covalence."
+}
