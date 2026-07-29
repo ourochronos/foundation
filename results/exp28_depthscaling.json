@@ -1,0 +1,167 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T08:16:28.768403+00:00",
+  "commit": "ec2ea69fe5efd7e0cb78854f40a0bfe226dcd484",
+  "dirty": true,
+  "command": "scripts/exp28_depthscaling.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "DEPTHS": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "thr": 0.5,
+   "CAP_UNANS": 1000
+  }
+ },
+ "n_answerable": {
+  "2": 742,
+  "3": 609,
+  "4": 518,
+  "5": 450
+ },
+ "held_out_shapes": {
+  "2": [
+   "P_BUILDS_ON>P_COMPARES_TO",
+   "P_COMPARES_TO>P_BUILDS_ON",
+   "P_EVALUATES_ON>P_COMPARES_TO",
+   "P_INTRODUCES>P_BUILDS_ON",
+   "P_INTRODUCES>P_EVALUATES_ON"
+  ],
+  "3": [
+   "P_BUILDS_ON>P_BUILDS_ON>P_COMPARES_TO",
+   "P_CITES>P_CITES>P_EVALUATES_ON",
+   "P_EVALUATES_ON>P_COMPARES_TO>P_EVALUATES_ON",
+   "P_EVALUATES_ON>P_EVALUATES_ON>P_COMPARES_TO",
+   "P_EVALUATES_ON>P_EVALUATES_ON>P_EVALUATES_ON",
+   "P_INTRODUCES>P_BUILDS_ON>P_EVALUATES_ON",
+   "P_INTRODUCES>P_COMPARES_TO>P_BUILDS_ON",
+   "P_INTRODUCES>P_EVALUATES_ON>P_COMPARES_TO"
+  ],
+  "4": [
+   "P_BUILDS_ON>P_BUILDS_ON>P_BUILDS_ON>P_EVALUATES_ON",
+   "P_BUILDS_ON>P_COMPARES_TO>P_COMPARES_TO>P_EVALUATES_ON",
+   "P_CITES>P_CITES>P_CITES>P_INTRODUCES",
+   "P_CITES>P_INTRODUCES>P_BUILDS_ON>P_BUILDS_ON",
+   "P_EVALUATES_ON>P_EVALUATES_ON>P_COMPARES_TO>P_COMPARES_TO",
+   "P_INTRODUCES>P_BUILDS_ON>P_BUILDS_ON>P_BUILDS_ON",
+   "P_INTRODUCES>P_BUILDS_ON>P_BUILDS_ON>P_EVALUATES_ON",
+   "P_INTRODUCES>P_COMPARES_TO>P_COMPARES_TO>P_COMPARES_TO",
+   "P_INTRODUCES>P_EVALUATES_ON>P_COMPARES_TO>P_COMPARES_TO",
+   "P_INTRODUCES>P_EVALUATES_ON>P_COMPARES_TO>P_EVALUATES_ON"
+  ],
+  "5": [
+   "P_BUILDS_ON>P_BUILDS_ON>P_BUILDS_ON>P_BUILDS_ON>P_EVALUATES_ON",
+   "P_CITES>P_CITES>P_CITES>P_CITES>P_BUILDS_ON",
+   "P_CITES>P_CITES>P_CITES>P_INTRODUCES>P_BUILDS_ON",
+   "P_CITES>P_CITES>P_INTRODUCES>P_BUILDS_ON>P_COMPARES_TO",
+   "P_CITES>P_INTRODUCES>P_COMPARES_TO>P_COMPARES_TO>P_EVALUATES_ON",
+   "P_EVALUATES_ON>P_EVALUATES_ON>P_EVALUATES_ON>P_EVALUATES_ON>P_EVALUATES_ON",
+   "P_INTRODUCES>P_BUILDS_ON>P_BUILDS_ON>P_BUILDS_ON>P_EVALUATES_ON",
+   "P_INTRODUCES>P_COMPARES_TO>P_COMPARES_TO>P_COMPARES_TO>P_EVALUATES_ON",
+   "P_INTRODUCES>P_EVALUATES_ON>P_EVALUATES_ON>P_COMPARES_TO>P_EVALUATES_ON",
+   "P_INTRODUCES>P_EVALUATES_ON>P_EVALUATES_ON>P_EVALUATES_ON>P_COMPARES_TO"
+  ]
+ },
+ "table": {
+  "d2_EXPOSED": {
+   "answerable": {
+    "correct": 0.35942028985507246,
+    "wrong": 0.0,
+    "abstain": 0.6405797101449275,
+    "n": 345
+   },
+   "refusal": {
+    "2": 0.944
+   }
+  },
+  "d3_EXPOSED": {
+   "answerable": {
+    "correct": 0.7402597402597403,
+    "wrong": 0.012987012987012988,
+    "abstain": 0.24675324675324675,
+    "n": 77
+   },
+   "refusal": {
+    "2": 0.958,
+    "3": 0.869
+   }
+  },
+  "d3_zero-shot": {
+   "answerable": {
+    "correct": 0.07792207792207792,
+    "wrong": 0.4155844155844156,
+    "abstain": 0.5064935064935064,
+    "n": 77
+   },
+   "refusal": {
+    "2": 0.965,
+    "3": 0.518
+   }
+  },
+  "d4_EXPOSED": {
+   "answerable": {
+    "correct": 0.34065934065934067,
+    "wrong": 0.0,
+    "abstain": 0.6593406593406593,
+    "n": 91
+   },
+   "refusal": {
+    "2": 0.99,
+    "3": 0.98,
+    "4": 0.914
+   }
+  },
+  "d4_zero-shot": {
+   "answerable": {
+    "correct": 0.27472527472527475,
+    "wrong": 0.03296703296703297,
+    "abstain": 0.6923076923076923,
+    "n": 91
+   },
+   "refusal": {
+    "2": 0.989,
+    "3": 0.962,
+    "4": 0.787
+   }
+  },
+  "d5_EXPOSED": {
+   "answerable": {
+    "correct": 0.10185185185185185,
+    "wrong": 0.009259259259259259,
+    "abstain": 0.8888888888888888,
+    "n": 108
+   },
+   "refusal": {
+    "2": 1.0,
+    "3": 0.997,
+    "4": 0.994,
+    "5": 0.96
+   }
+  },
+  "d5_zero-shot": {
+   "answerable": {
+    "correct": 0.25925925925925924,
+    "wrong": 0.009259259259259259,
+    "abstain": 0.7314814814814815,
+    "n": 108
+   },
+   "refusal": {
+    "2": 0.997,
+    "3": 0.996,
+    "4": 0.986,
+    "5": 0.945
+   }
+  }
+ },
+ "scope": "One refusal rule (D120's absolute residual at 0.5) applied unchanged at every depth. EXPOSED means the head saw depth n but not this chain SHAPE; zero-shot means it never saw depth n at all. Question text nests noun phrases, so deep questions are unnatural \u2014 a confound that can only hurt, so a flat curve is strong evidence and a declining one is ambiguous."
+}

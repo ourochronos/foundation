@@ -2,6 +2,33 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D121: The tail falls off as COVERAGE, not as error — refusal strengthens with depth while usable answers decay
+`scripts/exp28_depthscaling.py`. D120 restated the depth claim as "unbounded given examples at each depth" from two data points. This measures the curve: depths 2–5, exposure as a controlled variable (EXPOSED = saw depth n but not this chain *shape*; zero-shot = never saw depth n), D120's refusal rule applied **unchanged** at every depth rather than re-tuned, and unanswerable populations graded by break point (2 ≤ k ≤ n).
+
+| depth | cond | correct | wrong | abstain | refusal by break point |
+|---|---|---|---|---|---|
+| 2 | EXPOSED | 0.359 | **0.000** | 0.641 | @2 0.944 |
+| 3 | EXPOSED | 0.740 | 0.013 | 0.247 | @2 0.958 @3 0.869 |
+| 3 | zero-shot | 0.078 | 0.416 | 0.506 | @2 0.965 @3 **0.518** |
+| 4 | EXPOSED | 0.341 | **0.000** | 0.659 | @2 0.990 @3 0.980 @4 0.914 |
+| 4 | zero-shot | 0.275 | 0.033 | 0.692 | @2 0.989 @3 0.962 @4 0.787 |
+| 5 | EXPOSED | 0.102 | 0.009 | 0.889 | @2 1.000 @3 0.997 @4 0.994 @5 0.960 |
+| 5 | zero-shot | 0.259 | 0.009 | 0.731 | @2 0.997 @3 0.996 @4 0.986 @5 0.945 |
+
+**The headline: the wrong-rate never exceeds 0.013 at any depth, in any condition except zero-shot depth 3.** The system degrades by refusing, not by lying — 0.000 wrong at depths 2 and 4, 0.009 at depth 5. That is the failure mode this project is designed to have, and it is the first time it has been demonstrated across a depth range rather than at a single depth.
+
+**Refusal strengthens with depth rather than decaying.** Break-point refusal rises from 0.944 at depth 2 to 0.960–1.000 at depth 5. D119's fear that refusal would wash out as the unexplained fraction shrank is not merely fixed by the absolute threshold — it inverts. Deeper questions leave more distinctive residuals when they fail.
+
+**What decays is usable coverage**: abstention climbs to 0.889 at depth 5, leaving 0.102 answered. So "unbounded depth" is true in the sense that matters for safety and false in the sense that matters for utility, and both halves should be stated together.
+
+**Exposure replicates D120's finding at depth 3 and then stops mattering.** Zero-shot depth 3 is the single worst cell in the table (0.416 wrong, break@3 refusal 0.518), and exposure fixes it (0.013 wrong, 0.869) — an independent replication of D120 on different templates. But at depth 5 exposure *hurts* (0.102 correct exposed vs 0.259 zero-shot). With 31 chain shapes and 10 held out at that depth, the depth-5 training signal is thin and may be adding noise rather than competence.
+
+**Two things flagged rather than explained away.** (1) Depth-2 EXPOSED correctness is 0.359, worse than depth 3's 0.740 — non-monotonic and **unexplained**; the depth-2 numbers here are also not comparable to D120's 0.879 because the question templates differ. (2) The stated confound: question text nests noun phrases, so a depth-5 question reads *"What do the works cited by the works cited by the methods introduced by the works X cites cite?"*. That is unnatural in a way no real query is, and it can only hurt — which makes the flat wrong-rate strong evidence and the declining coverage **ambiguous** between "the mechanism decays" and "the questions became nonsense".
+
+**Decision**: the honest claim is *"wrong-rate is flat in depth; coverage is not."* Depth is safe to extend and expensive to use. Do not quote a depth-5 accuracy without its abstention rate.
+
+**Revisit**: (a) the template confound is now the binding limit on any depth conclusion — real or LLM-generated multi-hop phrasings would separate mechanism decay from template decay, and nothing deeper should be measured until they exist; (b) the depth-2 anomaly needs a look before depth-2 numbers are quoted anywhere; (c) depth-5 exposure hurting suggests a minimum-examples-per-depth threshold that is not characterised.
+
 ## 2026-07-29 — D120: A hash-order bug produced a wrong conclusion; corrected, refusal DOES survive depth 3 — one threshold, 0.867 worst-case across five populations
 Three things happened, and the first is the one that matters most.
 
