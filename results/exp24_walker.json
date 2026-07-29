@@ -1,0 +1,297 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T04:25:10.174331+00:00",
+  "commit": "aad7e5b4c6a7710bc3048caf044e263eb58647c6",
+  "dirty": true,
+  "command": "scripts/exp24_walker.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MAX_STEPS": 4,
+   "labels": {
+    "P_CITES": "cites",
+    "P_INTRODUCES": "introduces",
+    "P_EVALUATES_ON": "evaluates on",
+    "P_BUILDS_ON": "builds on",
+    "P_COMPARES_TO": "compares to"
+   }
+  }
+ },
+ "selected_min_gain": 0.2,
+ "sweep": {
+  "0.2": {
+   "seen": {
+    "exact_chain": 0.9823333333333333,
+    "correct": 0.9843333333333333,
+    "by_shape": {
+     "A->A": {
+      "correct": 1.0
+     },
+     "A->B": {
+      "correct": 0.9663564781675018,
+      "wrong": 0.03364352183249821
+     }
+    },
+    "wrong": 0.015666666666666666,
+    "abstain": 0.0,
+    "precision": 0.9843333333333333,
+    "n": 3000
+   },
+   "held": {
+    "exact_chain": 0.9011470985155196,
+    "correct": 0.9122807017543859,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "correct": 0.9122807017543859,
+      "wrong": 0.08771929824561403
+     }
+    },
+    "wrong": 0.08771929824561403,
+    "abstain": 0.0,
+    "precision": 0.9122807017543859,
+    "n": 2964
+   }
+  },
+  "0.3": {
+   "seen": {
+    "exact_chain": 0.9826666666666667,
+    "correct": 0.9846666666666667,
+    "by_shape": {
+     "A->A": {
+      "correct": 1.0
+     },
+     "A->B": {
+      "correct": 0.9670722977809592,
+      "wrong": 0.0329277022190408
+     }
+    },
+    "wrong": 0.015333333333333332,
+    "abstain": 0.0,
+    "precision": 0.9846666666666667,
+    "n": 3000
+   },
+   "held": {
+    "exact_chain": 0.9014844804318488,
+    "correct": 0.9018218623481782,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "correct": 0.9018218623481782,
+      "wrong": 0.09817813765182186
+     }
+    },
+    "wrong": 0.09817813765182186,
+    "abstain": 0.0,
+    "precision": 0.9018218623481782,
+    "n": 2964
+   }
+  },
+  "0.4": {
+   "seen": {
+    "exact_chain": 0.9826666666666667,
+    "correct": 0.9846666666666667,
+    "by_shape": {
+     "A->A": {
+      "correct": 1.0
+     },
+     "A->B": {
+      "correct": 0.9670722977809592,
+      "wrong": 0.0329277022190408
+     }
+    },
+    "wrong": 0.015333333333333332,
+    "abstain": 0.0,
+    "precision": 0.9846666666666667,
+    "n": 3000
+   },
+   "held": {
+    "exact_chain": 0.9011470985155196,
+    "correct": 0.9014844804318488,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "correct": 0.9014844804318488,
+      "wrong": 0.09851551956815115
+     }
+    },
+    "wrong": 0.09851551956815115,
+    "abstain": 0.0,
+    "precision": 0.9014844804318488,
+    "n": 2964
+   }
+  },
+  "0.5": {
+   "seen": {
+    "exact_chain": 0.9826666666666667,
+    "correct": 0.9846666666666667,
+    "by_shape": {
+     "A->A": {
+      "correct": 1.0
+     },
+     "A->B": {
+      "correct": 0.9670722977809592,
+      "wrong": 0.0329277022190408
+     }
+    },
+    "wrong": 0.015333333333333332,
+    "abstain": 0.0,
+    "precision": 0.9846666666666667,
+    "n": 3000
+   },
+   "held": {
+    "exact_chain": 0.8994601889338731,
+    "correct": 0.8994601889338731,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "correct": 0.8994601889338731,
+      "wrong": 0.10053981106612686
+     }
+    },
+    "wrong": 0.10053981106612686,
+    "abstain": 0.0,
+    "precision": 0.8994601889338731,
+    "n": 2964
+   }
+  },
+  "0.6": {
+   "seen": {
+    "exact_chain": 0.9823333333333333,
+    "correct": 0.9843333333333333,
+    "by_shape": {
+     "A->A": {
+      "correct": 1.0
+     },
+     "A->B": {
+      "correct": 0.9663564781675018,
+      "wrong": 0.03364352183249821
+     }
+    },
+    "wrong": 0.015666666666666666,
+    "abstain": 0.0,
+    "precision": 0.9843333333333333,
+    "n": 3000
+   },
+   "held": {
+    "exact_chain": 0.7553981106612686,
+    "correct": 0.7557354925775979,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "wrong": 0.24426450742240216,
+      "correct": 0.7557354925775979
+     }
+    },
+    "wrong": 0.24426450742240216,
+    "abstain": 0.0,
+    "precision": 0.7557354925775979,
+    "n": 2964
+   }
+  },
+  "0.7": {
+   "seen": {
+    "exact_chain": 0.9813333333333333,
+    "correct": 0.9836666666666667,
+    "by_shape": {
+     "A->A": {
+      "correct": 1.0
+     },
+     "A->B": {
+      "correct": 0.964924838940587,
+      "wrong": 0.03507516105941303
+     }
+    },
+    "wrong": 0.01633333333333333,
+    "abstain": 0.0,
+    "precision": 0.9836666666666667,
+    "n": 3000
+   },
+   "held": {
+    "exact_chain": 0.48043184885290147,
+    "correct": 0.48211875843454793,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "wrong": 0.5178812415654521,
+      "correct": 0.48211875843454793
+     }
+    },
+    "wrong": 0.5178812415654521,
+    "abstain": 0.0,
+    "precision": 0.48211875843454793,
+    "n": 2964
+   }
+  }
+ },
+ "selected": {
+  "seen": {
+   "exact_chain": 0.9823333333333333,
+   "correct": 0.9843333333333333,
+   "by_shape": {
+    "A->A": {
+     "correct": 1.0
+    },
+    "A->B": {
+     "correct": 0.9663564781675018,
+     "wrong": 0.03364352183249821
+    }
+   },
+   "wrong": 0.015666666666666666,
+   "abstain": 0.0,
+   "precision": 0.9843333333333333,
+   "n": 3000
+  },
+  "held_out": {
+   "exact_chain": 0.9011470985155196,
+   "correct": 0.9122807017543859,
+   "by_shape": {
+    "A->A": {},
+    "A->B": {
+     "correct": 0.9122807017543859,
+     "wrong": 0.08771929824561403
+    }
+   },
+   "wrong": 0.08771929824561403,
+   "abstain": 0.0,
+   "precision": 0.9122807017543859,
+   "n": 2964
+  }
+ },
+ "held_out_correct_ci95": [
+  0.9016,
+  0.9219
+ ],
+ "baseline_d112_path_planner": {
+  "correct": 0.534,
+  "wrong": 0.433,
+  "precision": 0.552
+ },
+ "scope": "Order and depth come from the store, not from a trained class: the head predicts one order-free SUM of relation coordinates, and the walk takes the best AVAILABLE relation against the residual at each step. Held-out compositions were never trained. Relation coordinates are label embeddings, so the vocabulary is open. Same hops world and held-out compositions as D111/D112.",
+ "answer_sets": {
+  "seen": {
+   "mean": 45.4,
+   "median": 13.5,
+   "correct_and_within": {
+    "1": 0.087,
+    "5": 0.3707,
+    "20": 0.51
+   }
+  },
+  "HELD-OUT": {
+   "mean": 9.79,
+   "median": 4.0,
+   "correct_and_within": {
+    "1": 0.1245,
+    "5": 0.6667,
+    "20": 0.9123
+   }
+  }
+ }
+}

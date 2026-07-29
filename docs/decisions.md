@@ -2,6 +2,26 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D117: Let the STORE decide order and depth — held-out composition accuracy 0.534 → 0.912, and A→A goes from catastrophic to solved
+`scripts/exp24_walker.py`. Closes the gap left open since D112. The path-planning formulation had three measured defects: it could not express a repeated relation (D111, and `A→A` is 79% of real 2-hop shapes), order did not transfer to unseen compositions by any of three mechanisms (D112), and depth was a trained class so 3-hop would be R³.
+
+**The reframe**: stop asking the query for what it demonstrably does not carry. D112 established that the query reliably carries the relation *set* and not the order; D111 established that the only thing that has ever supplied order on real data is the store itself. So the head predicts **one order-free sum of relation coordinates**, and the walk takes, at each step, the best-matching relation *among those actually available from the current frontier*, subtracts it, and continues until the residual is spent. **Order comes from walkability and depth from when the residual runs out — neither is a trained class, and both are unbounded.** Relation coordinates are label embeddings, so the vocabulary stays open (D113/D116).
+
+| held-out compositions (never trained) | correct | wrong | abstain | exact chain |
+|---|---|---|---|---|
+| D112 path planner | 0.534 | 0.433 | 0.033 | — |
+| **D117 residual walker** | **0.912** | **0.088** | 0.000 | 0.901 |
+
+CI95 on held-out correct [0.902, 0.922]. Seen compositions: 0.984 correct / 0.016 wrong, exact chain 0.982. **`A→A` is 1.000 correct** — the case that produced D111's worst-ever 0.925 wrong.
+
+**A bug worth recording because it reproduced a known defect exactly.** The first version trained the sum head with a cosine loss and normalised the target. Cosine is scale-invariant, so `unit(RC[A] + RC[A]) = RC[A]` — the magnitude that encodes *multiplicity* was discarded, and seen compositions collapsed to 0.491 correct while held-out ones hit 0.958. That inversion is what exposed it: **D111's "cannot say twice" had reappeared in new clothes.** Fix: MSE on the un-normalised sum, so magnitude carries the count, and subtract **one unit vector** per step rather than the full projection, so a repeat survives the subtraction.
+
+**Honest scoping of the headline number.** "Correct" means the gold object is *in* the returned frontier, scored identically to D111/D112 so the comparison is fair — but a fan-out relation can win that cheaply, so the set sizes are reported alongside. Held-out: median answer set **4**, mean 9.8, and **0.667 of all held-out questions are both correct and answered with ≤5 items** (0.912 with ≤20). That number is not volume-driven. The *seen* figure partly is — median 14, mean 45.4, because `P_CITES→P_CITES` explodes — so 0.984 should be read as fan-out-assisted and the held-out 0.912 is the trustworthy one.
+
+**A character change that must not pass unremarked**: abstention is **0.000**. This walker always answers. It trades the honest-refusal property for coverage at 0.912 precision, and it has no refusal mechanism at all — the stop threshold ends the walk, it never declines to start one. Given that refusal is this project's central claim, that is a regression in kind even while the accuracy improves, and it is the first thing to fix.
+
+**Revisit**: (a) add refusal — the natural signal is residual magnitude left unexplained when the walk ends, which is free and already computed; (b) 3-hop is now *runnable* rather than R³, and completely untested; (c) the walker is greedy, so a beam would cost little and is the obvious next lever; (d) relation coordinates here are 5 hand-written labels for the AI corpus — the D116 domain-vocabulary machinery has not been connected to this walker yet, and joining them is what would make it open-vocabulary in practice rather than in principle.
+
 ## 2026-07-28 — D116: Distribution match dominates scale — 800 domain-selected vocabulary relations beat 3,000 random ones and match the corpus itself, using none of it
 `scripts/exp23_vocabpretrain.py`. D115 concluded the binding constraint was the number of relation types trained on. The head's job is a general text→relation-space map with nothing corpus-specific about it, and Wikidata's 13,713 properties ship with aliases — enough to synthesise `(question, relation coordinate)` pairs for thousands of relations that never appear in this corpus. So the head was trained **entirely on vocabulary**, subjects filler, with **all 26 corpus relations held out** (stricter than D113–D115, where 18 were trained). Evaluation set, candidate list and chance rate are identical to D115, so the numbers compare directly.
 
