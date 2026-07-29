@@ -1,0 +1,94 @@
+{
+ "audit": "attack_r2",
+ "model": "gpt-5.6-sol",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.5,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "No numerical boundary defines 'near-free' or 'not near-free,' so any observed gap could be relabelled to preserve the claim."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A changed fitted-artifact fingerprint during this update would falsify the learning attribution; fingerprints come only from a separate experiment."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Equivalent cross-store performance at matched refusal would falsify non-transfer; the evidence explicitly makes no matched-refusal comparison."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A matched-population comparison eliminating the AURC gap would falsify 'overstated'; the evidence compares differently composed benchmarks."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A better-trained parametric decoder recovering the same relation signal would falsify information destruction; head underperformance alone does not rule that out."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "A changed basis, coordinate, or head fingerprint would falsify it; all remain byte-identical across the append."
+  },
+  "1": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "No numerical boundary defines 'near-free' or 'not near-free,' so any observed gap could be relabelled to preserve the claim."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "A changed fitted-artifact fingerprint during this update would falsify the learning attribution; fingerprints come only from a separate experiment."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Frequent old->old transitions would falsify revision over staleness; only 1 conditional case stayed old versus 198 revising."
+  },
+  "4": {
+   "verdict": "REFUTABLE",
+   "reason": "Equivalent cross-store performance at matched refusal would falsify non-transfer; the evidence explicitly makes no matched-refusal comparison."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Held-pair depth-2 accuracy materially below trained-pair accuracy would falsify parity; it is instead 0.925 versus 0.913."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Poor answerable 3-hop accuracy without 3-hop training would falsify answering extrapolation; measured accuracy is 0.849."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Failure to raise not-applicable refusal or lower answerable wrongness would falsify it; both stated changes appear directly in the measurements."
+  },
+  "8": {
+   "verdict": "REFUTABLE",
+   "reason": "A matched-population comparison eliminating the AURC gap would falsify 'overstated'; the evidence compares differently composed benchmarks."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "A better-trained parametric decoder recovering the same relation signal would falsify information destruction; head underperformance alone does not rule that out."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}

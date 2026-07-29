@@ -1,0 +1,100 @@
+{
+ "audit": "attack_r1",
+ "model": "gemini-3.1-pro-preview",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.4,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: severe degradation occurs at a different freeze/append ratio. Evidence only tests a single ratio, failing to rule this out."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: the 'frozen' artifacts actually mutated during the update. Evidence lacks fingerprint verification for this specific run, leaving this open."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Falsifier: none exists. 'Computable' is vacuously true for any arbitrary formula, and the scope explicitly disavows any performance guarantee, absorbing all failures."
+  },
+  {
+   "idx": 5,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Falsifier: failure at 30 relations. The scope explicitly retreats to exactly the single success point (61) and dismisses all gaps as 'untested interpolation', absorbing the failure mode."
+  },
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: extrapolation collapses entirely at depth 4. The general claim is not protected by the scope, but the evidence only goes to depth 3."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Falsifier: none exists. The core claim ('must be reported as a risk-coverage curve') is a normative statement with no possible empirical contradiction."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: fingerprints change after append. Evidence: fingerprints match exactly."
+  },
+  "1": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: severe degradation occurs at a different freeze/append ratio. Evidence only tests a single ratio, failing to rule this out."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: the 'frozen' artifacts actually mutated during the update. Evidence lacks fingerprint verification for this specific run, leaving this open."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: the store stubbornly asserts the old fact (high staleness). Evidence rules this out with a measured staleness rate of near zero."
+  },
+  "4": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Falsifier: none exists. 'Computable' is vacuously true for any arbitrary formula, and the scope explicitly disavows any performance guarantee, absorbing all failures."
+  },
+  "5": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Falsifier: failure at 30 relations. The scope explicitly retreats to exactly the single success point (61) and dismisses all gaps as 'untested interpolation', absorbing the failure mode."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: extrapolation collapses entirely at depth 4. The general claim is not protected by the scope, but the evidence only goes to depth 3."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: the gate fails to lift refusal or cut wrongness. Evidence directly measures and confirms the specific shifts claimed."
+  },
+  "8": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Falsifier: none exists. The core claim ('must be reported as a risk-coverage curve') is a normative statement with no possible empirical contradiction."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: the parametric head performs as well as 1-NN on known relations. Evidence rules this out (1.0 vs 0.9033)."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}

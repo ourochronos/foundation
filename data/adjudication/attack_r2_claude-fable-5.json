@@ -1,0 +1,76 @@
+{
+ "audit": "attack_r2",
+ "model": "claude-fable-5",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.8,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: new-entity degradation comparable to new-relation degradation. Their own data contains it: d2_new_head frozen 0.540 vs rebuilt 0.789 (+0.249), so 'near-free for new entities' holds only at "
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "'Computable' is trivially true of any formula; the scope explicitly disclaims that the derived threshold is good ('a different operating point, never compared at matched refusal'), so no measurement o"
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any fingerprint (basis/coords/head) differs after append. Evidence shows byte-identical hashes across all three artifacts for this run. Scope is a real, checkable property, though verified "
+  },
+  "1": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: new-entity degradation comparable to new-relation degradation. Their own data contains it: d2_new_head frozen 0.540 vs rebuilt 0.789 (+0.249), so 'near-free for new entities' holds only at "
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: refused->wrong or refused->refused transitions after update. Matrix shows exactly 432 refused->correct and zero other refused-* outcomes; the 0.366 honest-refusal rate and control_never are"
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: substantial old->old count after supersession. Evidence: old->old = 1 of 431 old-before cases (0.002). The claim explicitly concedes revision is only 0.459 (0.235 single-edit) and names ref"
+  },
+  "4": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "'Computable' is trivially true of any formula; the scope explicitly disclaims that the derived threshold is good ('a different operating point, never compared at matched refusal'), so no measurement o"
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: held-out pairs materially below trained pairs at depth 2. Evidence: eval_d2_clean 0.9245 vs train_d2 0.9135 with pair-clean holdout and shuffled/random controls near zero. The 61-vs-5 relat"
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: near-zero 3-hop accuracy without 3-hop training. Evidence: 0.849 zero-shot vs 0.961 trained, with the damning refusal failure (break3 wrong 0.732) disclosed and excluded by an explicit, rea"
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gate-on refusal \u2264 gate-off on not_applicable, or wrongness not reduced. Evidence directly shows 0.05->0.6933 (CI excludes low values) and 0.1183->0.045, with the correctness cost (-0.110 d1"
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: mixed-benchmark AURC \u2248 chain-break-only AURC (no overstatement), or some added signal improving AURC. Evidence: 0.4734 vs 0.1322 and residual_plus_type 0.4901 > 0.4734. Caveat: 'adding sign"
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head matching or beating 1-NN on known depth-1 relation ID. Evidence: kNN 1.0 vs head 0.9033 (exp36) and knn_k1 0.9255 vs head 0.6139 held-out-alias (exp35). The scope is a genuine restrict"
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}

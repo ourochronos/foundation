@@ -175,6 +175,118 @@ def _abstract_audit(name: str, slice_dir: str):
     run(name, items, prompt, {"PRECISE", "DEFECT"}, mine)
 
 
+# ---------------------------------------------------------------
+# Shared by the `claims` and `attack` specs: one definition of the
+# claims and their evidence, so the two passes cannot drift apart.
+# ---------------------------------------------------------------
+def _nums(path: str, keys: list[str]) -> str:
+    d = json.loads((ROOT / path).read_text())
+    out = {}
+    for k in keys:
+        cur, ok = d, True
+        for part in k.split("."):
+            if isinstance(cur, dict) and part in cur:
+                cur = cur[part]
+            else:
+                ok = False
+                break
+        if ok:
+            out[k] = cur
+    return json.dumps(out, indent=1)[:2600]
+
+CLAIMS = [
+    {"claim": "The store is MECHANICALLY reindex-free: appending new "
+              "content mutates no fitted artifact.",
+     "scope": "verified byte-identical basis, coordinates and head "
+              "weights across an append",
+     "src": ("results/exp36_append.json",
+             ["mechanical_check_passed", "fingerprints",
+              "n_new_relations", "n_new_subjects"])},
+    {"claim": "Appending is behaviourally near-free for new ENTITIES "
+              "but not for new RELATIONS.",
+     "scope": "PARAMETRIC HEAD ONLY, against a full rebuild at one "
+              "freeze/append ratio: head new entity +0.058, new "
+              "relation +0.191. Retrieval is worse on both (+0.247, "
+              "+0.771)",
+     "src": ("results/exp36_append.json", ["results"])},
+    {"claim": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable. Both figures derive from the transition matrix.",
+     "scope": "artifacts are frozen by construction in this experiment but are FINGERPRINT-VERIFIED only in D131's separate append run; the 1.000 is conditional on prior honest refusal",
+     "src": ("results/exp38_update.json",
+             ["transition_flip", "learned_rate", "learned_ci95",
+              "regression_stays", "control_never", "n_update_pairs"]),
+     "extra": [("results/exp36_append.json",
+                ["mechanical_check_passed", "fingerprints"])]},
+    {"claim": "The store REVISES rather than going stale: after a "
+              "superseding edit it does not keep asserting the old "
+              "fact. Staleness is 0.002; revision is 0.459; the failure "
+              "is refusal and wrong answers, not staleness.",
+     "scope": "edits applied through the real kb.edit() path; "
+              "conditional on having answered correctly before the "
+              "edit; single-edit cases revise at only 0.235",
+     "src": ("results/exp44_supersession.json",
+             ["matrix_all", "revision_rate_all", "matrix_single",
+              "revision_rate_single", "matrix_multi",
+              "revision_rate_multi", "supersession_sanity",
+              "edits_applied"])},
+    {"claim": "Gate thresholds are a function of the store and are "
+              "COMPUTABLE from store statistics without labelled data. "
+              "They do not transfer between stores.",
+     "scope": "computable, NOT validated as better: the derived value "
+              "is a different operating point and was never compared to "
+              "the tuned one at matched refusal. The 0.751 -> 0.142 "
+              "figure is tuned-vs-transferred, not derived-vs-tuned",
+     "src": ("results/exp45_thresholds.json",
+             ["derived", "within_relation_fit_mean", "tuned", "results",
+              "transfers"])},
+    {"claim": "Composition generalises to relation pairs never seen "
+              "composed, at parity with trained pairs at depth 2.",
+     "scope": "measured AT 61 relations; fails at 5; the threshold in "
+              "between is untested, so any '>=60' is interpolation. "
+              "Pair-clean holdout; parity at depth 2 only, degrading at "
+              "depth 3 (0.626 vs 0.683)",
+     "src": ("results/exp29_wikiwalker.json",
+             ["n_relations", "n_pairs", "n_held_pairs", "results",
+              "controls", "branching"]),
+     # BOTH raters flagged this for citing only the 61-relation result
+     # while asserting failure at 5. The 5-relation evidence is a
+     # different experiment; a cross-experiment claim needs a
+     # cross-experiment citation (D135's open item, now acted on).
+     "extra": [("results/exp18_compose.json", ["ordering", "scope"])]},
+    {"claim": "Depth extrapolates without depth-specific training for "
+              "ANSWERING (3-hop 0.849 with no 3-hop trained).",
+     "scope": "answering only; refusal does not extrapolate",
+     "src": ("results/exp26_threehop.json",
+             ["zero_shot_depth", "trained_on_3hop"])},
+    {"claim": "On a MIXED unanswerable benchmark the answer-type gate "
+              "lifts not-applicable refusal from 0.050 to 0.693 and "
+              "cuts answerable wrongness from 0.118 to 0.045.",
+     "scope": "depth-1 CORRECT falls 0.110 while TOTAL answered falls 0.183 (the extra 0.073 were wrong answers); depth-2 wrongness 0.175->0.102; probe ceiling 0.965 so 0.693 is threshold placement",
+     "src": ("results/exp39_typegate.json",
+             ["results", "not_applicable_refusal", "aurc_mixed",
+              "type_fit_threshold"])},
+    {"claim": "Refusal must be reported as a risk-coverage curve, not a "
+              "rate: AURC on the mixed benchmark is 0.4734, and the "
+              "earlier chain-break-only 0.1322 overstated selective "
+              "prediction about 3.6x.",
+     "scope": "the residual alone is the best ranker; adding signals "
+              "makes AURC worse",
+     "src": ("results/exp39_typegate.json",
+             ["aurc_mixed", "results", "scope"]),
+     "extra": [("results/exp37_confidence.json",
+                ["selective_prediction", "status_decomposition",
+                 "scope"])]},
+    {"claim": "A parametric head destroys information 1-NN retrieval "
+              "preserves.",
+     "scope": "depth-1 relation identification of KNOWN relations only; "
+              "on NEW relations retrieval collapses to 0.229 against "
+              "the head's 0.782",
+     "src": ("results/exp35_phrasing_diag.json",
+             ["encoder_geometry", "nearest_neighbour_relation_id",
+              "alias_count_ablation", "alternatives_to_head",
+              "head_baseline_2alias"]),
+     "extra": [("results/exp36_append.json", ["results"])]},
+]
+
 if sys.argv[1] == "arxiv50":
     _abstract_audit("arxiv50", "arxiv")
 
@@ -363,113 +475,6 @@ elif sys.argv[1] == "claims":
     # RAW numbers from the cited results JSON. It never sees decisions.md
     # prose, so it cannot be led by our reasoning — the same blindness the
     # extraction specs rely on.
-    def _nums(path: str, keys: list[str]) -> str:
-        d = json.loads((ROOT / path).read_text())
-        out = {}
-        for k in keys:
-            cur, ok = d, True
-            for part in k.split("."):
-                if isinstance(cur, dict) and part in cur:
-                    cur = cur[part]
-                else:
-                    ok = False
-                    break
-            if ok:
-                out[k] = cur
-        return json.dumps(out, indent=1)[:2600]
-
-    CLAIMS = [
-        {"claim": "The store is MECHANICALLY reindex-free: appending new "
-                  "content mutates no fitted artifact.",
-         "scope": "verified byte-identical basis, coordinates and head "
-                  "weights across an append",
-         "src": ("results/exp36_append.json",
-                 ["mechanical_check_passed", "fingerprints",
-                  "n_new_relations", "n_new_subjects"])},
-        {"claim": "Appending is behaviourally near-free for new ENTITIES "
-                  "but not for new RELATIONS.",
-         "scope": "PARAMETRIC HEAD ONLY, against a full rebuild at one "
-                  "freeze/append ratio: head new entity +0.058, new "
-                  "relation +0.191. Retrieval is worse on both (+0.247, "
-                  "+0.771)",
-         "src": ("results/exp36_append.json", ["results"])},
-        {"claim": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable. Both figures derive from the transition matrix.",
-         "scope": "artifacts are frozen by construction in this experiment but are FINGERPRINT-VERIFIED only in D131's separate append run; the 1.000 is conditional on prior honest refusal",
-         "src": ("results/exp38_update.json",
-                 ["transition_flip", "learned_rate", "learned_ci95",
-                  "regression_stays", "control_never", "n_update_pairs"]),
-         "extra": [("results/exp36_append.json",
-                    ["mechanical_check_passed", "fingerprints"])]},
-        {"claim": "The store REVISES rather than going stale: after a "
-                  "superseding edit it does not keep asserting the old "
-                  "fact. Staleness is 0.002; revision is 0.459; the failure "
-                  "is refusal and wrong answers, not staleness.",
-         "scope": "edits applied through the real kb.edit() path; "
-                  "conditional on having answered correctly before the "
-                  "edit; single-edit cases revise at only 0.235",
-         "src": ("results/exp44_supersession.json",
-                 ["matrix_all", "revision_rate_all", "matrix_single",
-                  "revision_rate_single", "matrix_multi",
-                  "revision_rate_multi", "supersession_sanity",
-                  "edits_applied"])},
-        {"claim": "Gate thresholds are a function of the store and are "
-                  "COMPUTABLE from store statistics without labelled data. "
-                  "They do not transfer between stores.",
-         "scope": "computable, NOT validated as better: the derived value "
-                  "is a different operating point and was never compared to "
-                  "the tuned one at matched refusal. The 0.751 -> 0.142 "
-                  "figure is tuned-vs-transferred, not derived-vs-tuned",
-         "src": ("results/exp45_thresholds.json",
-                 ["derived", "within_relation_fit_mean", "tuned", "results",
-                  "transfers"])},
-        {"claim": "Composition generalises to relation pairs never seen "
-                  "composed, at parity with trained pairs at depth 2.",
-         "scope": "measured AT 61 relations; fails at 5; the threshold in "
-                  "between is untested, so any '>=60' is interpolation. "
-                  "Pair-clean holdout; parity at depth 2 only, degrading at "
-                  "depth 3 (0.626 vs 0.683)",
-         "src": ("results/exp29_wikiwalker.json",
-                 ["n_relations", "n_pairs", "n_held_pairs", "results",
-                  "controls", "branching"]),
-         # BOTH raters flagged this for citing only the 61-relation result
-         # while asserting failure at 5. The 5-relation evidence is a
-         # different experiment; a cross-experiment claim needs a
-         # cross-experiment citation (D135's open item, now acted on).
-         "extra": [("results/exp18_compose.json", ["ordering", "scope"])]},
-        {"claim": "Depth extrapolates without depth-specific training for "
-                  "ANSWERING (3-hop 0.849 with no 3-hop trained).",
-         "scope": "answering only; refusal does not extrapolate",
-         "src": ("results/exp26_threehop.json",
-                 ["zero_shot_depth", "trained_on_3hop"])},
-        {"claim": "On a MIXED unanswerable benchmark the answer-type gate "
-                  "lifts not-applicable refusal from 0.050 to 0.693 and "
-                  "cuts answerable wrongness from 0.118 to 0.045.",
-         "scope": "depth-1 CORRECT falls 0.110 while TOTAL answered falls 0.183 (the extra 0.073 were wrong answers); depth-2 wrongness 0.175->0.102; probe ceiling 0.965 so 0.693 is threshold placement",
-         "src": ("results/exp39_typegate.json",
-                 ["results", "not_applicable_refusal", "aurc_mixed",
-                  "type_fit_threshold"])},
-        {"claim": "Refusal must be reported as a risk-coverage curve, not a "
-                  "rate: AURC on the mixed benchmark is 0.4734, and the "
-                  "earlier chain-break-only 0.1322 overstated selective "
-                  "prediction about 3.6x.",
-         "scope": "the residual alone is the best ranker; adding signals "
-                  "makes AURC worse",
-         "src": ("results/exp39_typegate.json",
-                 ["aurc_mixed", "results", "scope"]),
-         "extra": [("results/exp37_confidence.json",
-                    ["selective_prediction", "status_decomposition",
-                     "scope"])]},
-        {"claim": "A parametric head destroys information 1-NN retrieval "
-                  "preserves.",
-         "scope": "depth-1 relation identification of KNOWN relations only; "
-                  "on NEW relations retrieval collapses to 0.229 against "
-                  "the head's 0.782",
-         "src": ("results/exp35_phrasing_diag.json",
-                 ["encoder_geometry", "nearest_neighbour_relation_id",
-                  "alias_count_ablation", "alternatives_to_head",
-                  "head_baseline_2alias"]),
-         "extra": [("results/exp36_append.json", ["results"])]},
-    ]
     blocks, items = [], []
     for i, c in enumerate(CLAIMS):
         path, keys = c["src"]
@@ -506,6 +511,59 @@ elif sys.argv[1] == "claims":
         '"reason": "<short>"} — nothing else.\n\n')
     run("claims", items, header + "\n\n".join(blocks),
         {"SUPPORTED", "OVERREACH", "UNSUPPORTED"}, mine,
+        blocks=blocks, header=header)
+
+elif sys.argv[1] == "attack":
+    # D145: every adjudication so far asked "is this supported?", a question
+    # that REWARDS hedging — a sufficiently qualified claim is always
+    # supported. Four families passing a table unanimously (D144) is
+    # therefore weak evidence if the claims have been scoped until nothing
+    # could contradict them. This asks the opposite question.
+    #
+    # Run index goes in the artifact name so the same rater can be run
+    # repeatedly on identical input, which is how within-rater instability
+    # gets measured (D143 saw one rater flag between zero and seven of the
+    # same claims across rounds, never deliberately).
+    RUN = sys.argv[3] if len(sys.argv) > 3 else "1"
+    blocks, items = [], []
+    for i, c in enumerate(CLAIMS):
+        path, keys = c["src"]
+        items.append(c)
+        ev = f"MEASURED NUMBERS (verbatim from {path}):\n{_nums(path, keys)}"
+        for xp, xk in c.get("extra", []):
+            ev += f"\n\nALSO (verbatim from {xp}):\n{_nums(xp, xk)}"
+        blocks.append(
+            f"### ITEM {i}\nCLAIM: {c['claim']}\n"
+            f"STATED SCOPE CONDITION: {c['scope']}\n{ev}")
+    mine = {i: "SURVIVES" for i in range(len(CLAIMS))}
+    header = (
+        "You are a hostile reviewer. Your job is NOT to check whether each "
+        "claim is supported — assume the authors got the arithmetic right. "
+        "Your job is to determine whether the claim COULD BE WRONG AT ALL, "
+        "and whether its scope condition is doing honest work or quietly "
+        "absorbing every way it could fail.\n\n"
+        "For each item ask, in order:\n"
+        "  1. What concrete measurement would FALSIFY this claim as stated?\n"
+        "  2. Does the supplied evidence actually rule that falsifier out?\n"
+        "  3. Is the scope condition a real restriction, or has it been "
+        "widened until no result could contradict the claim?\n\n"
+        "Verdict:\n"
+        "  SURVIVES      - a clear falsifier exists AND the evidence rules "
+        "it out. The claim is both meaningful and supported.\n"
+        "  REFUTABLE     - a plausible falsifier exists that the evidence "
+        "does NOT rule out. The claim may well be false.\n"
+        "  UNFALSIFIABLE - no measurement could contradict it as stated; the "
+        "scope condition absorbs every failure mode. The claim is empty.\n\n"
+        "Be adversarial. A claim hedged into safety is a FAILURE, not a "
+        "success — say UNFALSIFIABLE without hesitation when the "
+        "qualifications have eaten the content. In the reason, state the "
+        "specific falsifier you had in mind.\n"
+        "Do not use any tools. Output ONLY a JSON array of "
+        f"{len(CLAIMS)} objects, format "
+        '{"idx": <n>, "verdict": "SURVIVES"|"REFUTABLE"|"UNFALSIFIABLE", '
+        '"reason": "<short>"} — nothing else.\n\n')
+    run(f"attack_r{RUN}", items, header + "\n\n".join(blocks),
+        {"SURVIVES", "REFUTABLE", "UNFALSIFIABLE"}, mine,
         blocks=blocks, header=header)
 
 else:

@@ -1,0 +1,88 @@
+{
+ "audit": "attack_r3",
+ "model": "grok-4.5",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.6,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: entity head gap not clearly 'near-free' (0.058\u2248t0 freeze gap 0.046) or not << relation gap under other freeze/append ratios. Only one ratio measured; 'near-free' has no threshold."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: refused\u2192not-correct under a freeze that is only fingerprint-verified in a different run. In-exp freeze is by construction only; 'properly/honest refusal' conditions away bad refusals."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Scope strips quality (not better; unmatched refusal), so any store-statistic formula that emits a number 'computes a threshold'. Non-transfer of an unvalidated operating point cannot really fail."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: mixed AURC not ~3.6\u00d7 chain-break AURC as 'overstatement' of the same claim. 0.4734 vs 0.1322 compare different populations/benchmarks, not a corrected remeasure; 'must' is normative."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: post-append fingerprint drift on basis/coords/head. Evidence shows byte-identical hashes and mechanical_check_passed; scope is the check, not a sink."
+  },
+  "1": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: entity head gap not clearly 'near-free' (0.058\u2248t0 freeze gap 0.046) or not << relation gap under other freeze/append ratios. Only one ratio measured; 'near-free' has no threshold."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: refused\u2192not-correct under a freeze that is only fingerprint-verified in a different run. In-exp freeze is by construction only; 'properly/honest refusal' conditions away bad refusals."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: high old\u2192old among previously-correct. Evidence old\u2192old=1/431\u22480.002; revision and non-stale failure modes match matrix."
+  },
+  "4": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Scope strips quality (not better; unmatched refusal), so any store-statistic formula that emits a number 'computes a threshold'. Non-transfer of an unvalidated operating point cannot really fail."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: held-out d2 << train d2. Evidence 0.925 vs 0.913 at 61 relations; scope honestly limits d3 and the 5-relation failure."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: poor 3-hop answer accuracy with no 3-hop training. Evidence correct=0.849 on answerable; scope correctly excludes refusal extrapolation."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: NA refuse not lifted to ~0.69 or d1 wrong not cut to ~0.045. Cell rates match; scope states the correct-rate cost."
+  },
+  "8": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: mixed AURC not ~3.6\u00d7 chain-break AURC as 'overstatement' of the same claim. 0.4734 vs 0.1322 compare different populations/benchmarks, not a corrected remeasure; 'must' is normative."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head \u2265 1-NN on known d1 relation-id. Evidence knn_k1 0.926 vs head 0.614; scope admits new-relation reversal."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}

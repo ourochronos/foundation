@@ -1,0 +1,94 @@
+{
+ "audit": "attack_r3",
+ "model": "gemini-3.1-pro-preview",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.5,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Restricting the claim to 'PARAMETRIC HEAD ONLY' quietly absorbs the catastrophic 0.247 performance drop of KNN on new entities."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The transition matrix only lists refused->correct (432) but omits refused->refuse or refused->wrong, so the 1.000 rate denominator is unproven."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "By explicitly disclaiming that the derived threshold is 'NOT validated as better', the claim protects any arbitrarily calculated number from empirical failure."
+  },
+  {
+   "idx": 5,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Scoping 'generalizes' to exactly the single tested point (61 relations) while admitting failure at 5 absorbs all scaling failure modes."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Restricting the claim to 'KNOWN relations only' completely ignores 1-NN's massive collapse on new relations (0.229) to force a vacuous point about information preservation."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "A clear falsifier exists (fingerprints changing after append), and the evidence rules it out by showing byte-identical hashes."
+  },
+  "1": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Restricting the claim to 'PARAMETRIC HEAD ONLY' quietly absorbs the catastrophic 0.247 performance drop of KNN on new entities."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "The transition matrix only lists refused->correct (432) but omits refused->refuse or refused->wrong, so the 1.000 rate denominator is unproven."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "The primary falsifier (high staleness/old->old transitions) is explicitly measured at just 0.002, validating the revision claim."
+  },
+  "4": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "By explicitly disclaiming that the derived threshold is 'NOT validated as better', the claim protects any arbitrarily calculated number from empirical failure."
+  },
+  "5": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Scoping 'generalizes' to exactly the single tested point (61 relations) while admitting failure at 5 absorbs all scaling failure modes."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Zero-shot 3-hop answering accuracy is strong (0.849), ruling out an extrapolation collapse, and the scope honestly bounds the claim by admitting refusal fails."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "The gate metrics perfectly match the claim, and the scope condition explicitly acknowledges the real cost (a 0.110 drop in correct answers)."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "AURC measurements directly support the claim (0.4734 vs 0.1322), confirming the 3.6x overstatement from the earlier restricted metric."
+  },
+  "9": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Restricting the claim to 'KNOWN relations only' completely ignores 1-NN's massive collapse on new relations (0.229) to force a vacuous point about information preservation."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}

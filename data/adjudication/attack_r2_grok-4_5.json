@@ -1,0 +1,118 @@
+{
+ "audit": "attack_r2",
+ "model": "grok-4.5",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.1,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 0,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: any other append (size/ratio/content) mutates basis/coords/head; only one append fingerprinted."
+  },
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: other freeze/append ratios or non-parametric paths invert entity vs relation gap; only one ratio, head-only scope."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "1.000 is conditional on prior honest refusal; any miss is excluded by the conditioner, so the headline cannot fail."
+  },
+  {
+   "idx": 3,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: among pre-correct items, old->old dominates under multi-hop/other edit batches; one stale case and low single-edit revise leave room."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Scope admits derived is unvalidated vs tuned at matched refusal; 'computable' and 'do not transfer' absorb any quality failure."
+  },
+  {
+   "idx": 5,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: held-pair d2 gap vs train at other relation cardinalities or pair splits; only n=61 and d2 parity checked."
+  },
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: zero-shot 3-hop correct << 0.849 on other graphs/kinds; single threehop setup, refusal carve-out."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: mixed AURC\u2248chain-break AURC under different mix weights; 3.6x is mix-definition dependent, not ruled universal."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: head\u22651-NN on known-relation id in exp35-style probe; knn_k1 0.926 vs head 0.614 supports here but claim is general."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: any other append (size/ratio/content) mutates basis/coords/head; only one append fingerprinted."
+  },
+  "1": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: other freeze/append ratios or non-parametric paths invert entity vs relation gap; only one ratio, head-only scope."
+  },
+  "2": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "1.000 is conditional on prior honest refusal; any miss is excluded by the conditioner, so the headline cannot fail."
+  },
+  "3": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: among pre-correct items, old->old dominates under multi-hop/other edit batches; one stale case and low single-edit revise leave room."
+  },
+  "4": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Scope admits derived is unvalidated vs tuned at matched refusal; 'computable' and 'do not transfer' absorb any quality failure."
+  },
+  "5": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: held-pair d2 gap vs train at other relation cardinalities or pair splits; only n=61 and d2 parity checked."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: zero-shot 3-hop correct << 0.849 on other graphs/kinds; single threehop setup, refusal carve-out."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gate_on NA refuse\u22640.05 or ans_d1 wrong\u22650.118; measured 0.693 and 0.045 rule both out on this bench."
+  },
+  "8": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: mixed AURC\u2248chain-break AURC under different mix weights; 3.6x is mix-definition dependent, not ruled universal."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: head\u22651-NN on known-relation id in exp35-style probe; knn_k1 0.926 vs head 0.614 supports here but claim is general."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}

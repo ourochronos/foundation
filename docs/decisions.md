@@ -2,12 +2,54 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D145: Asking raters to ATTACK instead of verify flips the table from 0 defects to 6 of 10 — and one claim was hedged into vacuity by my own fix
+`scripts/adjudicate.py attack`, 4 model families × 3 runs = 12 rater-runs, `data/adjudication/attack_r*.json`. D144 left the table at zero quorum defects and me uneasy: *a table that passes unanimously may simply be hedged enough to be hard to falsify.* Every adjudication until now asked **"is this claim supported?"** — which rewards hedging, because a sufficiently qualified claim is always supported. This asks the opposite: what would falsify it, does the evidence rule that out, and is the scope condition doing real work or absorbing the failure.
+
+**Same claims, same evidence, different question:**
+
+| prompt | claims flagged by quorum |
+|---|---|
+| "is this supported?" (D144) | **0 of 10** |
+| "attack this" | **6 of 10** |
+
+| verdict | claims |
+|---|---|
+| **UNFALSIFIABLE by quorum** | 1b, 10 |
+| **REFUTABLE by quorum** | 1c, 8, 9 |
+| contested | 2 |
+| survives | 1, 4, 6, 7 |
+
+**The verification framing was hiding almost everything.** Four families agreeing unanimously turns out to be weak evidence when the question they were asked cannot detect the failure mode in question.
+
+**The sharpest finding is self-inflicted.** Claim 10 was flagged OVERREACH by quorum in D143, and I fixed it by *softening* — adding "computable, not validated as better". The adversarial pass now calls that same claim **UNFALSIFIABLE**, with the reason: *"'COMPUTABLE from store statistics' has no falsifier."* **My fix for an overreach flag produced vacuity.** That is the hedging failure mode caught in the act, and it is the strongest argument in this project for running both prompts: verification pressure pushes claims toward vacuity, and only adversarial pressure pushes back.
+
+Claim 1b failed the same way for a plainer reason: *"'near-free' has no quantitative boundary; no entity penalty can contradict an undefined tolerance."*
+
+**Both are now sharpened rather than re-hedged**, per the plan's stop condition — restated with explicit numeric bounds and named falsifiers ("falsified if either penalty crosses its bound at this ratio, or the ordering reverses at any ratio"; "falsified if the ordering reverses on a third store, or transfer costs under 0.30").
+
+**Within-rater instability is large and rater-specific**, measured deliberately for the first time (flags per run over three identical runs):
+
+| rater | run 1 | run 2 | run 3 | range |
+|---|---|---|---|---|
+| Anthropic (author's family) | 2 | 2 | 2 | **0** |
+| Google | 6 | 6 | 5 | 1 |
+| OpenAI | 7 | 5 | 7 | 2 |
+| xAI | 4 | **9** | 4 | **5** |
+
+A single rater-run is a poor instrument: the same rater on identical input varies by up to 5 of 10 claims. This retroactively explains D135's non-converging flag counts and confirms D144's suspicion that run-to-run noise, not inter-rater disagreement, was the larger source of doubt.
+
+**D144's "independence worry retired" is reversed.** Under adversarial framing the Anthropic rater — the author's own family — flags **2 of 10 on every single run** while the other three flag 4 to 9. The family effect is real and substantial; it was invisible under the verification prompt only because that prompt found almost nothing from anyone. D144 is marked accordingly. **A rater sharing the author's model family should not be counted toward quorum on adversarial passes.**
+
+**Decision**: every claim faces **both** prompts. Verification catches unsupported claims; attack catches empty ones, and they fail in opposite directions. A claim is publishable only if it survives both. The three REFUTABLE claims (1c, 8, 9) are recorded as open — they may well be false and the evidence does not rule out the falsifiers the raters named.
+
+**Revisit**: (a) the three REFUTABLE claims need either the falsifying experiment run or an explicit downgrade in the draft — they cannot stay as stated; (b) xAI's range of 5 makes single-run adjudication with that rater near-useless and argues for always running 3× and taking a per-rater majority before quorum; (c) the draft's adjudication section now overstates the table's standing and must be rewritten before it goes anywhere.
+
 ## 2026-07-29 — D144: Four raters, four families — the table passes quorum with zero defects, the independence worry was unfounded, and kappa has stopped being informative
 `scripts/adjudicate.py claims grok-4.5` added a fourth family (xAI), alongside OpenAI, Google and Anthropic. All four re-run on the **same** post-D143 table, since Gemini's and Fable's earlier verdicts predated the claim-10 fix and comparing across versions would be invalid.
 
 **The table passes quorum.** No claim is flagged by two or more raters. Flags per rater: **sol 0, gemini 1, fable 1, grok 0**, and the two flags fall on *different* claims. By the 2-of-3 rule adopted in D143 — extended here to 2-of-4 — there are **zero defects** to fix.
 
-**The independence concern from D143 was unfounded.** That entry flagged that `claude-fable-5` shares a model family with the author and might therefore be less independent. Excluding it changes Fleiss' kappa from **−0.053 to −0.034** — no material difference. The Anthropic rater is not behaving like an ally, and the highest-kappa pair in D143 (gemini–fable, +0.375) does not reproduce here (−0.111). **The worry is retired.**
+**The independence concern from D143 was unfounded.** **[REVERSED BY D145: under an ADVERSARIAL prompt the Anthropic rater flags 2/10 on every run while the others flag 4–9. The family effect is real; it was invisible under a verification prompt because that prompt found almost nothing at all.]** That entry flagged that `claude-fable-5` shares a model family with the author and might therefore be less independent. Excluding it changes Fleiss' kappa from **−0.053 to −0.034** — no material difference. The Anthropic rater is not behaving like an ally, and the highest-kappa pair in D143 (gemini–fable, +0.375) does not reproduce here (−0.111). **The worry is retired.**
 
 **But kappa has become uninformative, and reporting it bare would now mislead.** Fleiss is **−0.053** — nominally *worse than chance* — while raw agreement is **0.900**. That combination is the well-known kappa paradox with skewed marginals: 8 of 10 claims are unanimously SUPPORTED, so chance agreement is near 1 and the statistic collapses regardless of how the residual disagreements fall. **The honest description is "unanimous on 8 of 10, idiosyncratic on 2", not "the raters disagree worse than chance".**
 

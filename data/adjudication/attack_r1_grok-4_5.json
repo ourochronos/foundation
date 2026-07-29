@@ -1,0 +1,88 @@
+{
+ "audit": "attack_r1",
+ "model": "grok-4.5",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.6,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Scope bakes in the exact deltas (+0.058/+0.191) at one ratio and restricts to head-only, so 'near-free' has no independent failure condition beyond restating that cell."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: derived thr uses labels, or cross-store thr matches native tradeoff; JSON never shows label-free derivation inputs, and scope admits no matched-refusal derived-vs-tuned test."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: mixed AURC \u2248 chain-break AURC under one population/scorer; 3.6x compares different benchmarks, and 'must report as curve' is a norm no measurement can break."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: head recovers known-relation ID as well as 1-NN, or info still present under probing; accuracy gap (knn~0.93 vs head~0.61) does not entail information destruction."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: post-append basis/coords/head digest differs; identical fingerprints rule that out for the checked fitted artifacts."
+  },
+  "1": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Scope bakes in the exact deltas (+0.058/+0.191) at one ratio and restricts to head-only, so 'near-free' has no independent failure condition beyond restating that cell."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any prior refusal transitioning to not-correct; matrix has refused->correct=432 and the 1200-row flip totals leave no other refused outcomes."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: large old->old among pre-edit correct; matrix_all shows old->old=1 (staleness~0.002) versus dominant refuse/other failures."
+  },
+  "4": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: derived thr uses labels, or cross-store thr matches native tradeoff; JSON never shows label-free derivation inputs, and scope admits no matched-refusal derived-vs-tuned test."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: held-out d2 correct << train d2; eval_d2_clean 0.925 vs train_d2 0.913 at 61 relations rules that out (d3 gap is scoped out)."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: zero-shot 3-hop answerable correct near floor; measured 0.849 with no 3-hop training, while scope correctly isolates refusal non-extrapolation."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gate fails to raise NA refusal ~0.05->~0.69 or cut d1 wrong ~0.118->~0.045; both shifts match exp39 on/off tables."
+  },
+  "8": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: mixed AURC \u2248 chain-break AURC under one population/scorer; 3.6x compares different benchmarks, and 'must report as curve' is a norm no measurement can break."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: head recovers known-relation ID as well as 1-NN, or info still present under probing; accuracy gap (knn~0.93 vs head~0.61) does not entail information destruction."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}

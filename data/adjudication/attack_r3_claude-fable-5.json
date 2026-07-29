@@ -1,0 +1,76 @@
+{
+ "audit": "attack_r3",
+ "model": "claude-fable-5",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.8,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: entity-append gap comparable to relation gap. At depth 1 the head shows 0.058 vs 0.191, but the same file's d2_new_head gap is 0.249 (0.540 vs 0.789) \u2014 'near-free for new entities' fails at"
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "'Computable' is true of any formula; the scope condition explicitly disclaims that the derived threshold is better, was compared at matched refusal, or is useful \u2014 no measurement could contradict what"
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any fingerprint (basis/coords/head) differing after append. Byte-identical hashes across a real append (15 relations, 652 subjects) rule it out directly. Narrow claim, but genuinely testabl"
+  },
+  "1": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: entity-append gap comparable to relation gap. At depth 1 the head shows 0.058 vs 0.191, but the same file's d2_new_head gap is 0.249 (0.540 vs 0.789) \u2014 'near-free for new entities' fails at"
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any refused->wrong or refused->refused transitions after update. The matrix shows 432/432 refused->correct, and the damning 0.366 refusal precision is reported rather than hidden. Condition"
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: high old->old count after edits. Measured: 1 of ~431 old-prefixed cases. The weaker part (revision only 0.459, 0.235 single-edit) is stated in the claim itself, not absorbed by scope. Stale"
+  },
+  "4": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "'Computable' is true of any formula; the scope condition explicitly disclaims that the derived threshold is better, was compared at matched refusal, or is useful \u2014 no measurement could contradict what"
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: held-out pairs materially below trained pairs at depth 2. Evidence: 0.9245 vs 0.9135 with shuffled/random controls near zero. Depth-3 degradation and the 5-relation failure are disclosed as"
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: zero-shot 3-hop accuracy near chance or near abstain-dominated. Measured 0.849 vs 0.961 trained. The 'answering only' scope is a real restriction because refusal failure (unans_break3 wrong"
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gate-on not_applicable refusal \u2248 gate-off, or answerable wrongness unchanged. Both directly measured (0.05->0.693, 0.118->0.045) with CI. The cost (correct -0.110, only 0.72 of ceiling capt"
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: mixed-benchmark AURC \u2248 0.13, i.e., not_applicable items rankable by the residual. Measured 0.4734 \u2014 it could have come out equal and did not. The 'best ranker' scope is thinly tested (only "
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: 1-NN \u2264 head on known depth-1 relations. Evidence rules it out twice: knn 1.0 vs head 0.903 (exp36) and knn_k1 0.9255 vs head 0.6139 on held-out aliases (exp35). The scope restriction is rea"
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}

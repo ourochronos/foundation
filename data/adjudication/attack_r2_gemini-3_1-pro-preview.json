@@ -1,0 +1,100 @@
+{
+ "audit": "attack_r2",
+ "model": "gemini-3.1-pro-preview",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.4,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The scope restricts to 'parametric head only' specifically to absorb the severe retrieval failures under KNN."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier (weights were updated instead of just store learning) is not ruled out because fingerprints were not verified in this specific experiment."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Claiming thresholds are 'computable' while explicitly avoiding validation of their usefulness renders the claim empirically empty."
+  },
+  {
+   "idx": 5,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The scope condition explicitly absorbs the failure at N=5 relations, hedging the generalization claim into safety."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The core of the claim ('Refusal must be reported as a risk-coverage curve') is a normative methodological prescription, not a falsifiable empirical fact."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Scope condition restricts to KNOWN relations to conveniently ignore that 1-NN collapses and destroys information on NEW relations compared to the head."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier (artifacts mutated) is ruled out by the identical fingerprints before and after append."
+  },
+  "1": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The scope restricts to 'parametric head only' specifically to absorb the severe retrieval failures under KNN."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier (weights were updated instead of just store learning) is not ruled out because fingerprints were not verified in this specific experiment."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier (high staleness rate) is ruled out by the transition matrix showing staleness is near zero and revision occurs."
+  },
+  "4": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Claiming thresholds are 'computable' while explicitly avoiding validation of their usefulness renders the claim empirically empty."
+  },
+  "5": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The scope condition explicitly absorbs the failure at N=5 relations, hedging the generalization claim into safety."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier (poor zero-shot accuracy) is ruled out by the 0.849 depth-3 zero-shot accuracy, and failure on refusal is honestly scoped out."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier (gate fails to improve refusal) is ruled out by the 0.693 refusal rate, and the tradeoff in correct answers is explicitly admitted."
+  },
+  "8": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The core of the claim ('Refusal must be reported as a risk-coverage curve') is a normative methodological prescription, not a falsifiable empirical fact."
+  },
+  "9": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Scope condition restricts to KNOWN relations to conveniently ignore that 1-NN collapses and destroys information on NEW relations compared to the head."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}
