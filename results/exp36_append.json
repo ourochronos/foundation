@@ -1,0 +1,241 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T09:52:51.256573+00:00",
+  "commit": "699c30dcbd046f584d58bdaa283ebf5d6be413f9",
+  "dirty": true,
+  "command": "scripts/exp36_append.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "K_BASIS": 48,
+   "NEW_REL_FRAC": 0.25,
+   "NEW_SUBJ_FRAC": 0.25
+  }
+ },
+ "mechanical_check_passed": true,
+ "fingerprints": {
+  "at_freeze": {
+   "basis": "45b33a69cfc76115",
+   "coords": "c662e0661ec21bea",
+   "head": "79f87c5c5ba2639c"
+  },
+  "after_append": {
+   "basis": "45b33a69cfc76115",
+   "coords": "c662e0661ec21bea",
+   "head": "79f87c5c5ba2639c"
+  }
+ },
+ "n_new_relations": 15,
+ "n_new_subjects": 652,
+ "claims_by_bucket": {
+  "t0": 6884,
+  "new_rel": 3074,
+  "new_both": 881,
+  "new_subj": 2096
+ },
+ "results": {
+  "d1_t0_head": {
+   "frozen": {
+    "correct": 0.9033,
+    "wrong": 0.0889,
+    "abstain": 0.0078,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 0.9489,
+    "wrong": 0.0478,
+    "abstain": 0.0033,
+    "n": 900
+   }
+  },
+  "d1_t0_knn": {
+   "frozen": {
+    "correct": 1.0,
+    "wrong": 0.0,
+    "abstain": 0.0,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 1.0,
+    "wrong": 0.0,
+    "abstain": 0.0,
+    "n": 900
+   }
+  },
+  "d1_new_rel_head": {
+   "frozen": {
+    "correct": 0.7822,
+    "wrong": 0.2133,
+    "abstain": 0.0044,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 0.9733,
+    "wrong": 0.0256,
+    "abstain": 0.0011,
+    "n": 900
+   }
+  },
+  "d1_new_rel_knn": {
+   "frozen": {
+    "correct": 0.2289,
+    "wrong": 0.6456,
+    "abstain": 0.1256,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 1.0,
+    "wrong": 0.0,
+    "abstain": 0.0,
+    "n": 900
+   }
+  },
+  "d1_new_subj_head": {
+   "frozen": {
+    "correct": 0.9033,
+    "wrong": 0.0922,
+    "abstain": 0.0044,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 0.9611,
+    "wrong": 0.0367,
+    "abstain": 0.0022,
+    "n": 900
+   }
+  },
+  "d1_new_subj_knn": {
+   "frozen": {
+    "correct": 0.7533,
+    "wrong": 0.1478,
+    "abstain": 0.0989,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 1.0,
+    "wrong": 0.0,
+    "abstain": 0.0,
+    "n": 900
+   }
+  },
+  "d1_new_both_head": {
+   "frozen": {
+    "correct": 0.8218,
+    "wrong": 0.1702,
+    "abstain": 0.008,
+    "n": 376
+   },
+   "rebuilt": {
+    "correct": 0.9761,
+    "wrong": 0.0239,
+    "abstain": 0.0,
+    "n": 376
+   }
+  },
+  "d1_new_both_knn": {
+   "frozen": {
+    "correct": 0.3777,
+    "wrong": 0.4548,
+    "abstain": 0.1676,
+    "n": 376
+   },
+   "rebuilt": {
+    "correct": 1.0,
+    "wrong": 0.0,
+    "abstain": 0.0,
+    "n": 376
+   }
+  },
+  "d2_t0_head": {
+   "frozen": {
+    "correct": 0.7089,
+    "wrong": 0.1122,
+    "abstain": 0.1789,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 0.8089,
+    "wrong": 0.0844,
+    "abstain": 0.1067,
+    "n": 900
+   }
+  },
+  "d2_t0_knn": {
+   "frozen": {
+    "correct": 0.7544,
+    "wrong": 0.0411,
+    "abstain": 0.2044,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 0.8644,
+    "wrong": 0.0389,
+    "abstain": 0.0967,
+    "n": 900
+   }
+  },
+  "d2_new_head": {
+   "frozen": {
+    "correct": 0.54,
+    "wrong": 0.3733,
+    "abstain": 0.0867,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 0.7889,
+    "wrong": 0.0889,
+    "abstain": 0.1222,
+    "n": 900
+   }
+  },
+  "d2_new_knn": {
+   "frozen": {
+    "correct": 0.2,
+    "wrong": 0.7133,
+    "abstain": 0.0867,
+    "n": 900
+   },
+   "rebuilt": {
+    "correct": 0.8656,
+    "wrong": 0.0333,
+    "abstain": 0.1011,
+    "n": 900
+   }
+  },
+  "unans_head": {
+   "frozen": {
+    "correct": 0.0,
+    "wrong": 0.748,
+    "abstain": 0.252,
+    "n": 1500
+   },
+   "rebuilt": {
+    "correct": 0.0,
+    "wrong": 0.558,
+    "abstain": 0.442,
+    "n": 1500
+   }
+  },
+  "unans_knn": {
+   "frozen": {
+    "correct": 0.0,
+    "wrong": 0.7767,
+    "abstain": 0.2233,
+    "n": 1500
+   },
+   "rebuilt": {
+    "correct": 0.0,
+    "wrong": 0.9147,
+    "abstain": 0.0853,
+    "n": 1500
+   }
+  }
+ },
+ "scope": "Append-then-query. Frozen artifacts (basis, coordinates, head) are fitted on T0 content only and reused byte-identically after the append \u2014 verified by fingerprint, which is the MECHANICAL half of the claim. The BEHAVIOURAL half is frozen vs a full rebuild on everything, which is what reindexing would buy. The 2x2 of (old/new subject) x (old/new relation) is reported separately; averaging them would hide the case that matters."
+}

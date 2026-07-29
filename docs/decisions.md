@@ -2,6 +2,32 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D131: The store IS mechanically reindex-free — but appending costs accuracy, the cost lands on NEW RELATIONS, and retrieval is far worse at it than the parametric head
+`scripts/exp36_append.py`. D130's adjudication found the project's headline claim had never been measured: we showed a novel relation is *answerable* (D125), never that **appending** requires no reindex. This runs the actual cycle. 15 of 61 relations and 652 of 2,610 subjects are withheld at freeze time and arrive afterwards, so the 2×2 of (old/new subject) × (old/new relation) is measured separately.
+
+**The MECHANICAL half passes cleanly.** Basis, relation coordinates and head weights are fingerprinted at freeze and re-hashed after the append: **byte-identical** on all three. Nothing is re-projected, refitted or retrained when new content arrives. A new relation's coordinates come from its label by projection into the frozen basis. **That part of the claim is now demonstrated rather than inferred.**
+
+**The BEHAVIOURAL half costs real accuracy**, measured against a full rebuild — which is exactly what reindexing would buy:
+
+| population | parametric head (frozen → rebuild) | 1-NN retrieval (frozen → rebuild) |
+|---|---|---|
+| new **subject**, known relation | 0.903 → 0.961 (**+0.058**) | 0.753 → 1.000 (+0.247) |
+| new **relation** | 0.782 → 0.973 (**+0.191**) | **0.229** → 1.000 (**+0.771**) |
+| both new | 0.822 → 0.976 (+0.154) | 0.378 → 1.000 (+0.622) |
+| depth-2 touching appended content | 0.540 → 0.789 (+0.249) | 0.200 → 0.866 (+0.666) |
+
+**New entities are nearly free (+0.058); new relations are not (+0.191).** That asymmetry is the real finding, and it is intuitive in hindsight: an entity is just a new node the walk can reach, while a relation is a new *direction* the head was never trained to emit.
+
+**This reverses D129's architectural direction on an axis D129 never measured.** D129 found 1-NN retrieval beats the parametric head on unseen *phrasings* of *known* relations (0.925 vs 0.614) and recommended replacing the head. On *new relations* retrieval collapses to **0.229 against the head's 0.782** — because retrieval can only return a target that exists in its bank, so a relation with no stored examples returns the nearest *known* relation's coordinate with confidence. D129 predicted this gap qualitatively; here it is quantified, and it is larger than the advantage retrieval wins elsewhere. **Neither component can be the architecture on its own**, and the hybrid is no longer optional.
+
+**Refusal degrades badly under append, which is the most concerning result.** On unanswerable questions the frozen head answers anyway 0.748 of the time against the rebuild's 0.558; frozen retrieval 0.777 against 0.085. Appending raises store density, and D124 established that refusal quality is bounded by density — so **the refusal property silently decays as the store grows**, and a frozen threshold does not track it. Any deployment that appends must re-derive its refusal threshold even though nothing else needs refitting.
+
+**Honest caveat on one column**: `d1_t0` questions were in the training bank for both architectures, so those numbers (0.903 head, 1.000 retrieval) are train-set figures. They serve only as a **regression check** — did appending break previously-working content — and the +0.046 head drop there is the answer. Every generalisation claim above rests on the `new_*` buckets, which are genuinely held out.
+
+**Decision — the claim is rewritten to what was measured**: *the store is mechanically reindex-free (verified byte-identical), appending new entities is near-free behaviourally (+0.058), appending new relations costs 0.191 against a rebuild, and the refusal property does not survive appending without re-deriving its threshold.* That is narrower than "reindex-free" and it is what the evidence supports. `docs/18` claim 1 is updated accordingly.
+
+**Revisit**: (a) the hybrid is now forced rather than optional — retrieval where a near neighbour exists, label-derived coordinates where it does not, switched on neighbour distance; (b) re-deriving the refusal threshold after append is a concrete, cheap mechanism that should be built and measured, not left as a caveat; (c) the +0.191 new-relation cost is measured at one freeze/append ratio — whether it grows as the appended fraction rises is untested and matters for a system meant to accumulate.
+
 ## 2026-07-29 — D130: First blind adjudication of CLAIMS rather than extractions — 7 of 8 flagged, two were factual errors, and the headline claim turns out to be unmeasured
 `scripts/adjudicate.py claims`, `data/adjudication/claims_gpt-5_6-sol.json`. Every prior spec in the adjudicator audits *extraction precision*. This session added no extractions; it added ~20 empirical claims, five of which our own later experiments overturned or qualified. So the thing needing an independent check was **whether the claims we wrote are supported by the numbers we measured**. The adjudicator (`gpt-5.6-sol`) sees the claim, its stated scope condition, and the raw numbers from the cited results file — never `decisions.md` prose, so it cannot be led.
 
