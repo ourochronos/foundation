@@ -1,0 +1,184 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T15:59:44.330429+00:00",
+  "commit": "559a350702ab4e59cd643ef5a573e6202f655c0d",
+  "dirty": true,
+  "command": "scripts/exp40_hybrid.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "N_HOLD_REL": 12,
+   "DTHR": 0.85,
+   "TTHR": 0.4
+  }
+ },
+ "held_out_relations": [
+  "country of citizenship",
+  "date of birth",
+  "date of death",
+  "doctoral advisor",
+  "follows",
+  "named after",
+  "notable work",
+  "occupation",
+  "owned by",
+  "position held",
+  "publisher",
+  "relative"
+ ],
+ "results": {
+  "knownrel_trainphr_retrieval": {
+   "correct": 0.791,
+   "wrong": 0.089,
+   "refuse": 0.12,
+   "n": 1000,
+   "nn_sim": 0.9206113815307617
+  },
+  "knownrel_trainphr_fallback": {
+   "correct": 0.283,
+   "wrong": 0.136,
+   "refuse": 0.581,
+   "n": 1000,
+   "nn_sim": 0.9206113815307617
+  },
+  "knownrel_trainphr_hybrid": {
+   "correct": 0.709,
+   "wrong": 0.058,
+   "refuse": 0.233,
+   "n": 1000,
+   "nn_sim": 0.9206113815307617
+  },
+  "knownrel_newphr_retrieval": {
+   "correct": 0.737,
+   "wrong": 0.15,
+   "refuse": 0.113,
+   "n": 1000,
+   "nn_sim": 0.8577309250831604
+  },
+  "knownrel_newphr_fallback": {
+   "correct": 0.329,
+   "wrong": 0.13,
+   "refuse": 0.541,
+   "n": 1000,
+   "nn_sim": 0.8577309250831604
+  },
+  "knownrel_newphr_hybrid": {
+   "correct": 0.615,
+   "wrong": 0.104,
+   "refuse": 0.281,
+   "n": 1000,
+   "nn_sim": 0.8577309250831604
+  },
+  "newrel_trainphr_retrieval": {
+   "correct": 0.119,
+   "wrong": 0.611,
+   "refuse": 0.27,
+   "n": 1000,
+   "nn_sim": 0.7494643926620483
+  },
+  "newrel_trainphr_fallback": {
+   "correct": 0.534,
+   "wrong": 0.061,
+   "refuse": 0.405,
+   "n": 1000,
+   "nn_sim": 0.7494643926620483
+  },
+  "newrel_trainphr_hybrid": {
+   "correct": 0.389,
+   "wrong": 0.272,
+   "refuse": 0.339,
+   "n": 1000,
+   "nn_sim": 0.7494643926620483
+  },
+  "newrel_newphr_retrieval": {
+   "correct": 0.121,
+   "wrong": 0.622,
+   "refuse": 0.257,
+   "n": 1000,
+   "nn_sim": 0.7396268844604492
+  },
+  "newrel_newphr_fallback": {
+   "correct": 0.522,
+   "wrong": 0.144,
+   "refuse": 0.334,
+   "n": 1000,
+   "nn_sim": 0.7396268844604492
+  },
+  "newrel_newphr_hybrid": {
+   "correct": 0.394,
+   "wrong": 0.303,
+   "refuse": 0.303,
+   "n": 1000,
+   "nn_sim": 0.7396268844604492
+  },
+  "not_applicable_retrieval": {
+   "correct": 0.0,
+   "wrong": 0.753,
+   "refuse": 0.247,
+   "n": 1000,
+   "nn_sim": 0.6879258751869202
+  },
+  "not_applicable_fallback": {
+   "correct": 0.0,
+   "wrong": 0.227,
+   "refuse": 0.773,
+   "n": 1000,
+   "nn_sim": 0.6879258751869202
+  },
+  "not_applicable_hybrid": {
+   "correct": 0.0,
+   "wrong": 0.277,
+   "refuse": 0.723,
+   "n": 1000,
+   "nn_sim": 0.6879258751869202
+  }
+ },
+ "switch": {
+  "distance": 0.85,
+  "type_fit": 0.4
+ },
+ "scope": "Crosses the two axes that D129 and D131 measured separately: relation known or held out ENTIRELY, phrasing trained or held out. The retrieval bank contains trained aliases of KNOWN relations only, which is what a deployed system would have. The switch is neighbour distance, calibrated on trained phrasings plus not-applicable (law #6), never on the evaluation cells. D134's answer-type gate is on throughout.",
+ "bank_lookup_switch": {
+  "knownrel_trainphr": {
+   "correct": 0.668,
+   "wrong": 0.148,
+   "refuse": 0.184,
+   "n": 1000,
+   "routed_to_retrieval": 0.762
+  },
+  "knownrel_newphr": {
+   "correct": 0.659,
+   "wrong": 0.176,
+   "refuse": 0.165,
+   "n": 1000,
+   "routed_to_retrieval": 0.839
+  },
+  "newrel_trainphr": {
+   "correct": 0.476,
+   "wrong": 0.26,
+   "refuse": 0.264,
+   "n": 1000,
+   "routed_to_retrieval": 0.425
+  },
+  "newrel_newphr": {
+   "correct": 0.536,
+   "wrong": 0.268,
+   "refuse": 0.196,
+   "n": 1000,
+   "routed_to_retrieval": 0.256
+  },
+  "not_applicable": {
+   "correct": 0.0,
+   "wrong": 0.642,
+   "refuse": 0.358,
+   "n": 1000,
+   "routed_to_retrieval": 0.733
+  }
+ }
+}

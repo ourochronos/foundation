@@ -2,6 +2,33 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D136: The hybrid fails with both switches — routing inherits the failure mode of whichever component it picks
+`scripts/exp40_hybrid.py`. Task 3. D129 and D131 pointed opposite ways — retrieval wins on unseen phrasings of known relations, collapses on new relations — so the plan called the hybrid "forced". It was built, on the crossed axes (relation known/held-out × phrasing trained/held-out) plus a not-applicable set (law #9), with D134's answer-type gate on throughout.
+
+**Per-cell best single component** (the ceiling any router is chasing): retrieval 0.791 / 0.737 on known relations, fallback 0.534 / 0.522 on new relations, fallback 0.773 refusal on not-applicable. **No single component wins everywhere**, which is what motivated routing.
+
+**Neither switch recovers it:**
+
+| population | best single | distance switch | bank-lookup switch |
+|---|---|---|---|
+| known relation, trained phrasing | 0.791 | 0.709 | 0.668 |
+| known relation, **new phrasing** | 0.737 | 0.615 | 0.659 |
+| **new relation**, trained phrasing | 0.534 | 0.389 | 0.476 |
+| **new relation, new phrasing** | 0.522 | 0.394 | **0.536** |
+| not_applicable (refusal) | 0.773 | 0.723 | **0.358** |
+
+**Neighbour distance separates the regimes on average and not per item** — mean similarity 0.921/0.858 for known relations against 0.749/0.740 for new — so the switch sends known-relation queries to the weak fallback and new-relation queries to a retrieval that cannot possibly be right. It lags on all four answerable cells.
+
+**The bank-membership lookup is not a guess but is still wrong.** A deployed system knows its own bank, so "does the relation I think this is have any stored examples?" is a lookup rather than a proxy. It duly improves the new-relation cells (0.476, 0.536 — the latter beating both components) and then **destroys not-applicable refusal, 0.773 → 0.358**: a not-applicable question's inferred relation is usually a *known* one, so it routes to retrieval, and retrieval always returns something.
+
+**The pattern is now three-for-three.** D124 tried two principled fixes and neither shifted the precision/coverage frontier; D132's six-signal confidence ranked worse than the residual alone; D136's two switches both lag the per-cell maximum. **Combining two signals that each work in a different regime has not once, in this system, produced a component that works in both.**
+
+**The mechanism, and why routing is harder here than it looks**: the components differ in *what they return when wrong*. Retrieval returns a confident, well-formed coordinate belonging to some **known** relation — maximally misleading. The fallback returns a diffuse projection that the residual and type gates can catch. A router therefore does not merely pick the better expected accuracy; **it picks which failure mode it will inherit**, and a wrong route to retrieval is far more costly than a wrong route to the fallback. That asymmetry is absent from the accuracy table and is the reason the distance switch's small routing errors cost so much.
+
+**Decision**: the hybrid is **not adopted**. Per-deployment configuration is the honest recommendation until a switch exists that respects the asymmetry — retrieval where the relation vocabulary is stable, the label-coordinate fallback where it churns or where refusal matters more than coverage. The plan's claim that the hybrid was "forced" was correct about the motivation and wrong about the conclusion.
+
+**Revisit**: (a) an asymmetric router that defaults to the fallback and only routes to retrieval on strong evidence, rather than treating the two symmetrically — untested and directly implied by the failure-mode analysis; (b) combining at the *target* level (average the two coordinates, or take the per-relation max) instead of routing between them; (c) the oracle ceiling is real — an oracle router would achieve the best-single column — so the concept is sound and only the switch is missing.
+
 ## 2026-07-29 — D135: Claims table recomputed and re-adjudicated — agreement 0.125 → 0.750, and iterating against one rater starts fitting the rater
 Task 2 of the plan. The claims table in `docs/18-writeup-outline.md` was rewritten against D131–D134 and re-adjudicated blind (`scripts/adjudicate.py claims`).
 
