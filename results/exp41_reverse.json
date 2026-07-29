@@ -1,0 +1,70 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T16:02:46.360659+00:00",
+  "commit": "52734292267bad7f89bc2c5049849178c042023d",
+  "dirty": true,
+  "command": "scripts/exp41_reverse.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "RES_THR": 0.8,
+   "TTHR": 0.4
+  }
+ },
+ "branching": {
+  "forward_only": 2.116,
+  "bidirectional": 1.628,
+  "ratio": 0.769
+ },
+ "results": {
+  "forward_forward-only": {
+   "correct": 0.682,
+   "wrong": 0.078,
+   "refuse": 0.24,
+   "n": 500
+  },
+  "forward_bidirectional": {
+   "correct": 0.682,
+   "wrong": 0.078,
+   "refuse": 0.24,
+   "n": 500
+  },
+  "inverse_forward-only": {
+   "correct": 0.004,
+   "wrong": 0.046,
+   "refuse": 0.95,
+   "n": 500
+  },
+  "inverse_bidirectional": {
+   "correct": 0.714,
+   "wrong": 0.01,
+   "refuse": 0.276,
+   "n": 500
+  },
+  "not_applicable_forward-only": {
+   "correct": 0.0,
+   "wrong": 0.331,
+   "refuse": 0.669,
+   "n": 1000
+  },
+  "not_applicable_bidirectional": {
+   "correct": 0.0,
+   "wrong": 0.339,
+   "refuse": 0.661,
+   "n": 1000
+  }
+ },
+ "inverse_ci95": [
+  0.6729,
+  0.7519
+ ],
+ "delta_forward": 0.0,
+ "delta_na_refusal": -0.008,
+ "scope": "Reverse edges get their own coordinate from the text 'reverse {label}' projected into the same frozen basis \u2014 no new mechanism. Depth 1 only, since the question is whether the direction is reachable at all. D134's answer-type gate is on. The prediction under test is D124's: doubling the options per step should cost forward refusal."
+}

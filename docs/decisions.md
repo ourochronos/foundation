@@ -2,6 +2,25 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D137: Reverse traversal costs nothing — and refines D124: branching only hurts when the added options are confusable
+`scripts/exp41_reverse.py`. Task 4. The walker read only the subject side, so inverse questions ("what has X as its employer?") were unreachable, though `_by_obj` and `cited_by()` have existed in `foundation/kb.py` since the adjacency work. Reverse edges get their own coordinate from the text `"reverse {label}"` projected into the same frozen basis — no new mechanism.
+
+| population | forward-only walker | bidirectional |
+|---|---|---|
+| **inverse questions** | **0.004** correct | **0.714** correct / 0.010 wrong |
+| forward questions | 0.682 / 0.078 / 0.240 | **0.682 / 0.078 / 0.240** — identical |
+| not_applicable refusal | 0.669 | 0.661 (−0.008) |
+
+**Inverse questions go from unreachable to 0.714** (CI95 [0.673, 0.752]) at a cost of **+0.000 forward accuracy and −0.008 refusal**. The forward numbers are not merely close, they are *identical* — the added reverse options never once won a step on a forward question.
+
+**The pre-registered prediction failed, and the honest reason is that I measured the wrong quantity.** D124 found refusal falls with branching, so I predicted doubling the edge set would cost forward refusal. The branching statistic I reported (2.12 → 1.63) *fell*, because the bidirectional figure averages over a **different node set** — it includes 4,445 nodes with incoming edges, mostly leaf objects with one incoming relation and nothing outgoing. Changing the denominator is not measuring the effect. **D124's prediction was therefore never tested here**, and it should not be recorded as refuted.
+
+**What the identical forward numbers do show is more useful than the prediction would have been.** A forward question's target points at `C[("f", r)]`, and the reverse coordinates are distinct vectors; they never compete. So the cost of extra options depends on *where* those options sit in coordinate space, which refines D124: **branching costs refusal when the added options are semantically confusable with the right one — not merely because there are more of them.** D124's competing relations were plausible alternatives with genuinely high gain (1.198 vs 1.390); reverse edges are not plausible alternatives to a forward question, so they are free.
+
+**Decision**: bidirectional traversal is adopted. It is the largest capability gain per unit of cost in this arc — a whole question class becomes reachable for nothing measurable — and it directly answers the adjacency question that prompted it: adjacency needed *direction*, and it needed the two directions to carry distinguishable coordinates.
+
+**Revisit**: (a) D124's branching prediction still deserves a proper test, with the node set held fixed and confusable options added; (b) depth 1 only here, and mixed-direction chains ("the employer of what has X as its author") are the interesting composition case and untested; (c) inverse questions are templated as `"What has X as its {label}?"`, which is stilted — natural inverse phrasings are part of Task 5's remit.
+
 ## 2026-07-29 — D136: The hybrid fails with both switches — routing inherits the failure mode of whichever component it picks
 `scripts/exp40_hybrid.py`. Task 3. D129 and D131 pointed opposite ways — retrieval wins on unseen phrasings of known relations, collapses on new relations — so the plan called the hybrid "forced". It was built, on the crossed axes (relation known/held-out × phrasing trained/held-out) plus a not-applicable set (law #9), with D134's answer-type gate on throughout.
 
