@@ -2,6 +2,35 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D123: Composition DOES generalise — D112's negative result was a 5-relation artifact, and relation-vocabulary size is the single constraint behind both open arcs
+`scripts/exp29_wikiwalker.py`. The first run of the D117–D122 walker on the wiki component with D113–D116's label-derived relation coordinates — the two arcs had never been run together, because the AI corpus's five relation names were hand-written for D117 and carry no vocabulary. 12,935 claims, **61 labelled relations, 624 realised adjacent pairs**.
+
+**The holdout is over PAIRS, not shapes** — D122's rule made operational. 212 pairs (34%) are held out, and training excludes **any chain containing a held-out pair at every depth**, so a held-out pair is never seen adjacent anywhere. Pair-cleanliness is reported for every population.
+
+| population | pairs held out | correct | wrong | abstain | exact chain | n |
+|---|---|---|---|---|---|---|
+| depth 2, **pair-clean** | 1 of 1 | **0.925** | 0.017 | 0.058 | 0.923 | 2636 |
+| depth 2, trained pairs | 0 | 0.913 | 0.016 | 0.070 | 0.912 | 4253 |
+| depth 3, **pair-clean** | 2 of 2 | **0.626** | 0.072 | 0.302 | 0.598 | 1456 |
+| depth 3, partial | 1 of 2 | 0.652 | 0.073 | 0.276 | 0.628 | 4950 |
+| depth 3, trained pairs | 0 | 0.683 | 0.026 | 0.292 | 0.666 | 3282 |
+
+**Held-out pairs match trained pairs at depth 2 (0.925 vs 0.913).** Relation pairs the head has never seen composed, at any depth, are composed correctly as often as pairs it trained on. At depth 3 there is a real but small gradient — trained 0.683 > partial 0.652 > clean 0.626 — monotone in exactly the way D122 predicted would appear once the populations were separated, which is itself a check that the holdout is doing what it claims.
+
+**This overturns D112.** "Composition is memorised, not composed" was measured on a 5-relation vocabulary where, as D122 later showed, a pair-clean holdout beyond depth 2 does not even exist. With 61 relations composition generalises. **The negative result was an artifact of vocabulary size, not a property of the mechanism.**
+
+**Controls, because held-out ≈ trained is exactly the shape of a result that is secretly trivial.** If the store offered one walkable relation per step the walk would be forced and the head irrelevant. It does not: branching is **6.4 relations per step at depth 2 and 7.4 at depth 3** (medians 5 and 7). Shuffling the relation→coordinate assignment collapses accuracy to **0.001 / 0.000**; replacing the predicted target with a random vector of the same magnitude gives **0.000 / 0.000**. The store alone yields nothing; the prediction carries the result.
+
+**The unifying finding of this whole arc.** D115 found that novel-*relation* transfer was bounded by the number of relation types, not by basis width or architecture. D123 finds that novel-*composition* transfer is bounded by the same thing. Two failures that each looked architectural at n = 5–18 — D112's "order is not recoverable", D115's "over-provisioning does not help" — both dissolve at n = 61. **Relation-vocabulary size is the single binding constraint behind both open arcs**, and small-vocabulary corpora systematically produce negative results that do not replicate.
+
+**Where this corpus is WORSE, stated plainly.** Refusal is weaker than on the AI corpus: unanswerable refusal is 0.756 (depth 2), 0.980 and 0.723 (depth 3 break@2/@3), against the AI corpus's 0.970. Wrong-rates are 0.017–0.073 rather than ~0.000. The threshold rule (maximise the worst of four calibration figures) selected 0.8, favouring coverage; the sweep shows 0.3 would give 1.000/1.000 refusal at the cost of depth-3 correctness falling to 0.475. **The honest-refusal property is therefore corpus-dependent, and D118's ~0.000-wrong should not be quoted as a general property of the method.**
+
+**Scope**: questions name relations by LABEL, so relation *identification* is easy by construction and *composition* is the isolated variable — deliberately the opposite of D113, where labels were hidden behind aliases because identification was what was being measured. Which choice is made matters less than stating which is under test. One phrasing per question; phrasing robustness is D110's. Subjects may appear in both training and evaluation, which is not leakage — the store is fully available at query time by design — but the generalisation claimed is over relation *pairs*, not over entities.
+
+A side benefit worth noting: questions here read as *"What is the location of the employer of the author of A Mathematical Theory of Communication?"* — something a person might actually ask. That substantially reduces D121's template confound without any extra work.
+
+**Revisit**: (a) why refusal is weaker on wiki than on the AI corpus is now the most interesting open question, and it bears directly on whether the refusal property generalises at all; (b) depth 4+ pair-clean holdouts are now constructible here and untested; (c) phrasing robustness on this corpus is untested; (d) D112's entry is marked overturned, and any writeup must present the vocabulary-size explanation rather than the original negative result.
+
 ## 2026-07-29 — D122: The depth-2 "anomaly" was the only honest number — at depth ≥3 a pair-clean holdout is impossible with 5 relations
 Digging into D121's unexplained non-monotonicity (depth-2 correctness 0.359, worse than depth-3's 0.740). Two hypotheses tested, in order.
 
@@ -258,7 +287,8 @@ chance top-1 = 0.038 (n=5,240). Top-3 0.381 against chance 0.115. End-to-end on 
 
 **Revisit**: (a) single-hop only — the per-step walk formulation this enables is untested; (b) K_R=8 was not swept, and the A1 knee argument says it should be; (c) fit relation coordinates in the SAME basis as identities rather than a separate one — there is no principled reason for two bases, and it is a direct test; (d) relation surface-form canonicalisation, per above.
 
-## 2026-07-28 — D112: Zero-shot composition is recall-yes / order-no — and with R relations the pragmatic fix is to enumerate, not to generalise
+## 2026-07-28 — D112: Zero-shot composition is recall-yes / order-no
+**[OVERTURNED BY D123]** — "composition is memorised, not composed" was an artifact of a 5-relation vocabulary. On 61 relations, composition generalises to unseen relation pairs at parity with trained ones. See D123. — and with R relations the pragmatic fix is to enumerate, not to generalise
 Follow-up to D111's open problem, narrowed by diagnosis rather than by trying architectures. `scripts/exp18_compose.py`.
 
 **Step 1 — the failure was not recall.** On held-out-composition questions both relations sit in the detector's **top-2 81.7%** of the time, but both clear the 0.5 threshold only **32.9%**. The head is miscalibrated on relation pairs it never saw co-active, and `req` was built by absolute threshold, so the second relation was silently dropped and the planner was never required to use it. **Fix**: take the candidate relations as the top-k by detection score, k from D111's arity head (`cand_from_arity=True`). Ranking survives miscalibration that thresholding does not. Held-out correct 0.420 → **0.534**. But wrong rose 0.325 → 0.433 and precision stayed flat (~0.55): this bought **coverage, not correctness**, and is reported as such.

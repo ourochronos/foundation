@@ -1,0 +1,110 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T08:36:48.598116+00:00",
+  "commit": "f6019205cc01a02c5da6d9261312e42ca7f895c9",
+  "dirty": true,
+  "command": "scripts/exp29_wikiwalker.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "HOLD_FRAC": 0.34,
+   "MIN_GAIN": 0.2,
+   "thr": 0.8
+  }
+ },
+ "n_relations": 61,
+ "n_claims": 12935,
+ "n_pairs": 624,
+ "n_held_pairs": 212,
+ "threshold": 0.8,
+ "results": {
+  "eval_d2_clean": {
+   "correct": 0.9245068285280729,
+   "wrong": 0.01707132018209408,
+   "abstain": 0.05842185128983308,
+   "exact_chain": 0.9233687405159332,
+   "n": 2636,
+   "pairs_held": "1 of 1"
+  },
+  "eval_d3_clean": {
+   "correct": 0.6256868131868132,
+   "wrong": 0.07211538461538461,
+   "abstain": 0.3021978021978022,
+   "exact_chain": 0.5975274725274725,
+   "n": 1456,
+   "pairs_held": "2 of 2"
+  },
+  "eval_d3_partial": {
+   "correct": 0.6517171717171717,
+   "wrong": 0.07272727272727272,
+   "abstain": 0.27555555555555555,
+   "exact_chain": 0.6276767676767677,
+   "n": 4950,
+   "pairs_held": "1 of 2"
+  },
+  "train_d2": {
+   "correct": 0.9134728426992711,
+   "wrong": 0.016223841993886667,
+   "abstain": 0.07030331530684222,
+   "exact_chain": 0.9115918175405596,
+   "n": 4253,
+   "pairs_held": "0"
+  },
+  "train_d3": {
+   "correct": 0.6828153564899452,
+   "wrong": 0.025594149908592323,
+   "abstain": 0.2915904936014625,
+   "exact_chain": 0.6663619744058501,
+   "n": 3282,
+   "pairs_held": "0"
+  },
+  "unans_2_2": {
+   "correct": 0.0,
+   "wrong": 0.2435,
+   "abstain": 0.7565,
+   "exact_chain": 0.0,
+   "n": 2000
+  },
+  "unans_3_2": {
+   "correct": 0.0,
+   "wrong": 0.02,
+   "abstain": 0.98,
+   "exact_chain": 0.0,
+   "n": 2000
+  },
+  "unans_3_3": {
+   "correct": 0.0,
+   "wrong": 0.2775,
+   "abstain": 0.7225,
+   "exact_chain": 0.0,
+   "n": 2000
+  }
+ },
+ "d3_clean_ci95": [
+  0.6005,
+  0.6502
+ ],
+ "scope": "Composition holdout is over adjacent PAIRS, not shapes: training excludes any chain containing a held-out pair at every depth, and pair-cleanliness is reported for every evaluation population (D122's rule). Questions name relations by LABEL, so relation identification is easy by construction and composition is the isolated variable \u2014 the opposite of D113, where labels were hidden behind aliases because identification was what was being measured. One phrasing per question; phrasing robustness is D110's.",
+ "controls": {
+  "eval_d2_clean": {
+   "real": 0.9245068285280729,
+   "shuffled_rc": 0.0007587253414264037,
+   "random_target": 0.0
+  },
+  "eval_d3_clean": {
+   "real": 0.6256868131868132,
+   "shuffled_rc": 0.0,
+   "random_target": 0.0
+  }
+ },
+ "branching": {
+  "eval_d2_clean": 6.41725,
+  "eval_d3_clean": 7.407738095238095
+ }
+}
