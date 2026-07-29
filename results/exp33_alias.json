@@ -1,0 +1,73 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T09:04:58.766810+00:00",
+  "commit": "bf220a5d513a1711190c20c798ca1ee9329fb478",
+  "dirty": true,
+  "command": "scripts/exp33_alias.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "HOLD_FRAC": 0.34,
+   "THR": 0.6
+  }
+ },
+ "n_relations": 60,
+ "results": {
+  "train_d1": {
+   "correct": 0.9734,
+   "wrong": 0.0007,
+   "abstain": 0.0259,
+   "n": 5523
+  },
+  "train_d2": {
+   "correct": 0.8684,
+   "wrong": 0.0054,
+   "abstain": 0.1262,
+   "n": 4247
+  },
+  "xcell_trainpair_evalalias": {
+   "correct": 0.1493,
+   "wrong": 0.0365,
+   "abstain": 0.8142,
+   "n": 4247
+  },
+  "xcell_evalpair_trainalias": {
+   "correct": 0.8419,
+   "wrong": 0.0163,
+   "abstain": 0.1418,
+   "n": 2631
+  },
+  "eval_d2_clean": {
+   "correct": 0.1167,
+   "wrong": 0.0236,
+   "abstain": 0.8597,
+   "n": 2631
+  },
+  "unans": {
+   "correct": 0.0,
+   "wrong": 0.042,
+   "abstain": 0.958,
+   "n": 2000
+  }
+ },
+ "d123_label_reference": {
+  "eval_d2_clean": 0.925,
+  "train_d2": 0.913
+ },
+ "phrasing_cost_combined": 0.8083,
+ "attribution_2x2": {
+  "phrasing_alone": 0.7191,
+  "composition_alone": 0.0265
+ },
+ "eval_d2_clean_ci95": [
+  0.105,
+  0.1295
+ ],
+ "scope": "Relation coordinates are still the LABEL embedding; every question is built from ALIASES, and evaluation uses aliases held out from training (D110's K5 discipline). The label never appears in a scored question, so a lexical shortcut is unavailable. Relations needing >=3 aliases, so the relation set is smaller than D123's 61 and the comparison is approximate on that axis."
+}

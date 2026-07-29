@@ -2,6 +2,32 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D127: D123's composition result survives the lexical-shortcut test — but PHRASING, not composition, is the dominant failure mode
+`scripts/exp33_alias.py`. D123 named relations by their LABEL in the question, which isolated composition but left an obvious hole: coordinates are the label embedding and the label appears verbatim in the question, so the head might have been doing string overlap. If so, 0.925 was inflated and the whole wiki arc rested on a shortcut.
+
+**Design**: coordinates stay label-derived, but every question is built from **aliases only**, with evaluation aliases held out from training (D110's K5 discipline). A question says "the company of X"; the coordinate says "employer". The label never appears in a scored question.
+
+The headline comparison changes two things at once (novel pair *and* novel phrasing) and cannot be attributed, so the missing cells of the 2×2 were measured:
+
+| | training alias | **held-out alias** |
+|---|---|---|
+| **trained pair** | 0.868 | **0.149** |
+| **held-out pair** | **0.842** | 0.117 |
+
+**Composition alone costs +0.026. Phrasing alone costs +0.719.**
+
+**D123 is vindicated.** Held-out relation pairs, rendered in training phrasings, score 0.842 against trained pairs' 0.868. Composition generalises even when the lexical shortcut is left in place for identification only — the shortcut was never what carried the composition result. That is an independent replication of D123 under a different phrasing regime, which is stronger than the original.
+
+**But the weak link is somewhere else than the whole arc assumed.** An unseen *alias* for a *known* relation collapses the system from 0.868 to 0.149. Every experiment from D117 onward has been measuring composition and depth while the dominant failure mode sat untested in relation identification from unfamiliar wording. **D110 saw this first** — 3 of 10 held-out phrasings collapsed there — and it was recorded as a caveat rather than pursued. It should have been the main thread.
+
+**It fails safe, which is the one reassuring part.** On held-out aliases the wrong-rate is **0.036 and 0.024** with abstention at 0.814 and 0.860. Confronted with wording it does not recognise, the walker declines rather than guessing — the honest-refusal property doing exactly its job, and notably *better* here than under the depth and density stresses of D124/D126.
+
+**The fix is already built and unconnected.** D116 trained a relation head on **800 domain-selected Wikidata relations with three aliases each** and reached 0.636 end-to-end precision on relations never seen at all. That is precisely alias-diversity pretraining, and it has never been connected to the walker — the same unconnected-machinery gap that D125 found for the anchor basis. Wiring it in is the highest-value untested change in the project.
+
+**Caveat on the alias data**: Wikidata aliases are noisy and some read badly in the "the X of Y" frame ("the is a of 11"). That hurts both training and evaluation, so it inflates the absolute difficulty but should not bias the 2×2 attribution, which is the load-bearing result here. The relation set is also smaller than D123's (only relations with ≥3 aliases qualify), so the cross-experiment comparison to 0.925 is approximate while the within-experiment 2×2 is exact.
+
+**Revisit**: (a) connect D116's alias-diverse vocabulary pretraining to the walker — the single highest-value open item now; (b) whether the phrasing collapse is alias *quality* or alias *novelty* is separable by scoring on paraphrases generated to be clean; (c) D123's headline should henceforth be quoted as "composition generalises, measured with relation identification made easy", never as an end-to-end number.
+
 ## 2026-07-29 — D126: Depth decay is real, not a template artifact — and the anchor basis is the wrong default for depth
 `scripts/exp32_depth4.py`. Two questions settled at once, on the wiki corpus where questions read naturally and pair-clean holdouts exist at every depth.
 
