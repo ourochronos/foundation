@@ -121,7 +121,7 @@ Applying wiki's threshold to MQuAKE or the reverse moves refusal by ±0.31 and, 
 
 | | trained phrasing | **held-out human phrasing** | cost |
 |---|---|---|---|
-| depth 2 | 0.586 | **0.451** | −0.135 |
+| depth 2 | 0.586 | **0.450** | −0.135 |
 | depth 3 | 0.686 | **0.632** | −0.054 |
 | depth 4 | 0.761 | **0.703** | −0.058 |
 | not_applicable | — | refusal **0.314** | — |
@@ -132,7 +132,7 @@ Applying wiki's threshold to MQuAKE or the reverse moves refusal by ±0.31 and, 
 
 **Refusal is worse here than on wiki**: not-applicable refusal 0.314 against D134's 0.693. The answer-type gate is corpus-dependent — 36 relations with a different range structure — so its threshold does not transfer. That is the third corpus-dependence finding (D124 density, D126 depth shape, now this) and it should be stated as a general property: **thresholds in this system are corpus-local and must be re-derived per store.**
 
-**Absolute accuracy is modest** — 0.451 at depth 2 on held-out human phrasing — and materially below the templated numbers. This is the first measurement against language nobody on this project wrote, and it should be the number quoted in any writeup, not the templated ones.
+**Absolute accuracy is modest** — 0.450 at depth 2 on held-out human phrasing — and materially below the templated numbers. This is the first measurement against language nobody on this project wrote, and it should be the number quoted in any writeup, not the templated ones.
 
 **Revisit**: (a) the type gate needs per-corpus threshold derivation, now demonstrated twice; (b) MQuAKE's counterfactual half (`new_single_hops`) is a ready-made *update* benchmark and would test D133's learning transition on human-written questions — a natural next experiment; (c) depth-2's high wrong-rate deserves the branching analysis D124 established, which would confirm or refute the fan-out explanation offered above.
 

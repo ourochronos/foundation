@@ -19,7 +19,7 @@ leaves every fitted artifact byte-identical, verified by fingerprint. The
 behavioural claims hold **under conditions we had to discover by
 measurement**, and several of our own earlier conclusions were overturned by
 our own later experiments. On human-written multi-hop questions the system
-answers **0.451** of depth-2 questions correctly under held-out phrasing.
+answers **0.450** of depth-2 questions correctly under held-out phrasing.
 Given a knowledge update it absorbs additions near-perfectly (**432/432**
 conditional on having honestly refused beforehand) and revisions at
 **0.459**, where the safety-critical figure is that it goes stale on only
@@ -130,11 +130,11 @@ phrasings per case (D138, `results/exp42_natural.json`):
 
 | depth | trained phrasing | **held-out human phrasing** |
 |---|---|---|
-| 2 | 0.586 | **0.451** |
+| 2 | 0.586 | **0.450** |
 | 3 | 0.686 | 0.632 |
 | 4 | 0.761 | 0.703 |
 
-**0.451 at depth 2 under held-out human phrasing is the honest headline of
+**0.450 at depth 2 under held-out human phrasing is the honest headline of
 this work.** It is the first measurement against language nobody on the
 project wrote, and it is materially below every templated number we had
 previously reported.
@@ -263,7 +263,9 @@ that quietly generalised beyond its measurement.
 ## 9. Reproduction
 
 Every experiment is a standalone script in `scripts/` writing a JSON to
-`results/` with a `run_manifest` and an explicit `scope` string. Caches are
+`results/` with a `run_manifest` and an explicit `scope` string. Figures in
+this text are quoted at the stored precision or rounded **down** at a
+boundary — the headline is stored as 0.4505 and quoted as 0.450, not 0.451. Caches are
 content-verified against their text lists, and a cached re-run must reproduce
 identical numbers — that reproducibility is itself the regression test for
 audit law #8.
