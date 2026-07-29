@@ -18,14 +18,17 @@ would falsify it. A claim without its condition is not publishable.
 | # | Claim | Holds under | Number | Falsified by |
 |---|---|---|---|---|
 | 1 | The store is **mechanically** reindex-free: appending mutates no fitted artifact | verified byte-identical (basis, coordinates, head weights) across an append (D131) | fingerprints unchanged | — demonstrated, not inferred |
-| 1b | Appending is **behaviourally** near-free for new **entities**, but not for new **relations** | measured against a full rebuild at one freeze/append ratio | new entity **+0.058**; new relation **+0.191**; depth-2 over appended content **+0.249** (D131) | retrieval is far worse at this (+0.771 on new relations); and refusal does **not** survive appending — 0.748 answered-anyway vs 0.558 rebuilt |
-| 2 | Composition generalises to relation pairs never seen composed | ≥ ~60 relations; **pair-clean** holdout; **parity holds at depth 2 only** | depth 2: 0.925 vs 0.913 trained. **Depth 3: 0.626 vs 0.683 — not parity** (D123) | small vocabularies: fails at 5 relations (D112), and a pair-clean holdout cannot be built there (D122) |
-| 3 | Order and depth can come from the store rather than from learning | measured on **two corpora, one walker formulation** — not established in general | held-out compositions 0.534 → 0.912 (D117) | untested outside this walker; the numbers isolate neither depth learning nor order learning independently |
+| 1b | Appending is **behaviourally** near-free for new **entities**, not for new **relations** | **parametric head only**, against a full rebuild at one freeze/append ratio | head: new entity **+0.058**, new relation **+0.191**, depth-2 **+0.249**. Retrieval is worse on both: new entity **+0.247**, new relation **+0.771** (D131) | retrieval is far worse (+0.771 on new relations); refusal does not survive appending (0.748 answered-anyway vs 0.558 rebuilt) |
+| 1c | **The store learns**: a question it refused before an update is answered after | conditional on it having refused honestly in the first place | **432/432 = 1.000** refused→correct, no refit; regression correct→wrong 0.003 (D133) | it only refused 0.360 of what it could not answer — the other 0.623 it confabulated |
+| 2 | Composition generalises to relation pairs never seen composed | measured **at 61 relations**; fails at 5; **the threshold in between is untested** — "≥60" is interpolation, not measurement. Pair-clean holdout; parity at depth 2 only | depth 2: 0.925 vs 0.913 trained. Depth 3: 0.626 vs 0.683 — not parity (D123) | small vocabularies: fails at 5 relations (D112); pair-clean holdout unbuildable there (D122) |
+| 3 | Order and depth can come from the store rather than from learning | measured on **two corpora, one walker formulation** — not general | held-out compositions 0.534 → 0.912 (D117) | untested outside this walker; isolates neither depth nor order learning |
 | 4 | Depth extrapolates without depth-specific training, for *answering* | answering only | 3-hop **0.849** with no 3-hop in training (D119) | *refusal* does not extrapolate (D120) |
-| 5 | The system refuses rather than guessing | **sparse** stores only | 0.970 refusal; **wrong 0.071 answerable / 0.030 answered-anyway** (D118) — *not* ~0.000 | dense stores: 0.72–0.98 refusal, wrong 0.017–0.073 (D123/D124) |
-| 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching −0.79 to −0.91 (D124) | "ambiguity is the mechanism" is an **interpretation** of the gain overlap (1.198 vs 1.390), not established by it |
-| 7 | Compression buys generalisation and costs precision | descriptive across three experiments; no single experiment tests both halves | novel relations 0.742/0.293 (D125); depth-4 0.149/0.289 (D126); phrasing 0.313/0.149 (D128) | a representation winning on both axes |
-| 8 | A parametric head destroys information 1-NN retrieval preserves | depth-1 relation identification | 0.925 vs 0.614 (D129) | — adjudicated SUPPORTED once full evidence was supplied |
+| 5 | The system refuses rather than guessing | **chain-break** unanswerables, **sparse** stores | 0.970 refusal (D118) — **this population is unrepresentative**, see 5b | dense stores 0.72–0.98 (D123/D124); and the simple case was never in it |
+| 5b | On the **mixed** benchmark, refusal needs the answer-type gate | law #9 population: chain_break + not_applicable + absent_entity | not_applicable **0.050 → 0.693** with the gate; chain_break 0.337 → 0.650; answerable wrongness 0.118 → 0.045; coverage cost −0.110 (D134) | probe ceiling is 0.965, so 0.693 is threshold placement, not the limit |
+| 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching −0.79 to −0.91 (D124) | "ambiguity is the mechanism" is an interpretation of the gain overlap (1.198 vs 1.390) |
+| 7 | Compression buys generalisation and costs precision | descriptive across three experiments; none tests both halves | novel relations 0.742/0.293 (D125); depth-4 0.149/0.289 (D126); phrasing 0.313/0.149 (D128) | a representation winning on both axes |
+| 8 | A parametric head destroys information 1-NN retrieval preserves | **depth-1 relation identification, known relations** | 0.925 vs 0.614 (D129) | on **new** relations retrieval collapses to 0.229 vs the head's 0.782 (D131) |
+| 9 | Refusal should be reported as a curve, not a rate | selective prediction over answerable + unanswerable together | **AURC 0.4734 on the mixed benchmark** (D134). D132's 0.1322 was chain-break-only — overstated ~3.6× | a combined multi-signal score ranks *worse* than the residual alone (D132, D134) |
 
 ## What we cannot claim
 
@@ -42,6 +45,13 @@ would otherwise assume:
   pairs, phrasings or instances. Novel *entities* were never tested.
 - **Not a free lunch on refusal.** Two principled fixes moved along the
   precision/coverage frontier without shifting it (D124).
+- **Not honest by default.** Without the answer-type gate the walker
+  confabulates on 0.623 of what it cannot answer, and answers 0.950 of
+  not-applicable questions (D133/D134). Honesty is a component that had to
+  be added, not a property the design provided.
+- **Not measured on a representative refusal population until D134.** Every
+  refusal number D118–D132 used chain-break unanswerables only, which
+  overstated selective prediction ~3.6× (law #9).
 
 ## Method contributions (arguably the most reusable part)
 

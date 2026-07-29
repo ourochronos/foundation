@@ -379,64 +379,72 @@ elif sys.argv[1] == "claims":
         return json.dumps(out, indent=1)[:2600]
 
     CLAIMS = [
-        {"claim": "A knowledge store can be appended to without reindexing, "
-                  "and a relation type the system has NEVER trained on is "
-                  "immediately queryable.",
-         "scope": "relation vocabulary >= ~50; the relation has a text "
-                  "LABEL; anchor-basis representation",
-         "src": ("results/exp31_novelrel.json",
-                 ["results", "anchor_basis_fix", "basis_threshold_sweep",
-                  "basis_selected_thr", "controls", "raw_baseline"])},
+        {"claim": "The store is MECHANICALLY reindex-free: appending new "
+                  "content mutates no fitted artifact.",
+         "scope": "verified byte-identical basis, coordinates and head "
+                  "weights across an append",
+         "src": ("results/exp36_append.json",
+                 ["mechanical_check_passed", "fingerprints",
+                  "n_new_relations", "n_new_subjects"])},
+        {"claim": "Appending is behaviourally near-free for new ENTITIES "
+                  "but not for new RELATIONS.",
+         "scope": "PARAMETRIC HEAD ONLY, against a full rebuild at one "
+                  "freeze/append ratio: head new entity +0.058, new "
+                  "relation +0.191. Retrieval is worse on both (+0.247, "
+                  "+0.771)",
+         "src": ("results/exp36_append.json", ["results"])},
+        {"claim": "The store LEARNS: a question it refused before an update "
+                  "is answered after it, with no refit.",
+         "scope": "conditional on it having refused honestly first — it "
+                  "refused only 0.360 of what it could not answer",
+         "src": ("results/exp38_update.json",
+                 ["transition_flip", "learned_rate", "learned_ci95",
+                  "regression_stays", "control_never", "n_update_pairs"]),
+         "extra": [("results/exp36_append.json",
+                    ["mechanical_check_passed", "fingerprints"])]},
         {"claim": "Composition generalises to relation pairs never seen "
-                  "composed, at parity with pairs that were trained.",
-         "scope": ">= ~60 relations; pair-clean holdout (training excludes "
-                  "every chain containing a held-out pair at every depth)",
+                  "composed, at parity with trained pairs at depth 2.",
+         "scope": "measured AT 61 relations; fails at 5; the threshold in "
+                  "between is untested, so any '>=60' is interpolation. "
+                  "Pair-clean holdout; parity at depth 2 only, degrading at "
+                  "depth 3 (0.626 vs 0.683)",
          "src": ("results/exp29_wikiwalker.json",
-                 ["results", "controls", "branching", "n_pairs",
-                  "n_held_pairs"])},
-        {"claim": "Order and depth need not be learned — the store supplies "
-                  "both; held-out-composition accuracy rises from 0.534 to "
-                  "0.912 when order comes from walkability.",
-         "scope": "none stated",
-         "src": ("results/exp24_walker.json",
-                 ["selected", "baseline_d112_path_planner", "answer_sets"])},
+                 ["n_relations", "n_pairs", "n_held_pairs", "results",
+                  "controls", "branching"])},
         {"claim": "Depth extrapolates without depth-specific training for "
-                  "ANSWERING: 3-hop at 0.851 with no 3-hop in training.",
-         "scope": "applies to answering only; refusal does NOT extrapolate",
+                  "ANSWERING (3-hop 0.849 with no 3-hop trained).",
+         "scope": "answering only; refusal does not extrapolate",
          "src": ("results/exp26_threehop.json",
-                 ["zero_shot_depth", "trained_on_3hop",
-                  "depth2_reference_d118"])},
-        {"claim": "The system refuses rather than guessing: 0.970 refusal "
-                  "on unanswerable questions with a ~0.000 wrong-rate.",
-         "scope": "SPARSE stores only; on a dense store refusal is "
-                  "0.72-0.98 with wrong 0.017-0.073",
-         "src": ("results/exp25_refusal.json",
-                 ["selected", "unanswerable_refusal_ci95",
-                  "n_unanswerable"])},
-        {"claim": "Refusal quality is bounded by store density; the "
-                  "mechanism is ambiguity rather than noise, and two "
-                  "principled fixes failed to shift the frontier.",
-         "scope": "none stated",
-         "src": ("results/exp30_refusal_diag.json",
-                 ["branching_stratified_refusal", "residual_separation",
-                  "ambiguity_test", "adaptive_gain.calibration",
-                  "adaptive_gain.held_out", "ambiguity_brake.calibration"])},
-        {"claim": "Compression buys generalisation and costs precision: an "
-                  "anchor basis beats raw on novel relations and on unseen "
-                  "phrasings, and loses to raw at depth.",
-         "scope": "none stated",
-         "src": ("results/exp32_depth4.json", ["results"]),
-         "extra": [("results/exp31_novelrel.json",
-                    ["basis_threshold_sweep", "raw_baseline"]),
-                   ("results/exp34_aliaspretrain.json", ["basis_2x2"])]},
-        {"claim": "A parametric head destroys information that 1-NN "
-                  "retrieval preserves: 0.925 vs 0.614 on held-out "
-                  "phrasings, so encoder fine-tuning is not indicated.",
-         "scope": "depth-1 relation identification only",
+                 ["zero_shot_depth", "trained_on_3hop"])},
+        {"claim": "On a MIXED unanswerable benchmark the answer-type gate "
+                  "lifts not-applicable refusal from 0.050 to 0.693 and "
+                  "cuts answerable wrongness from 0.118 to 0.045.",
+         "scope": "costs 0.110 of depth-1 answerable coverage; probe "
+                  "ceiling is 0.965 so 0.693 is threshold placement",
+         "src": ("results/exp39_typegate.json",
+                 ["results", "not_applicable_refusal", "aurc_mixed",
+                  "type_fit_threshold"])},
+        {"claim": "Refusal must be reported as a risk-coverage curve, not a "
+                  "rate: AURC on the mixed benchmark is 0.4734, and the "
+                  "earlier chain-break-only 0.1322 overstated selective "
+                  "prediction about 3.6x.",
+         "scope": "the residual alone is the best ranker; adding signals "
+                  "makes AURC worse",
+         "src": ("results/exp39_typegate.json",
+                 ["aurc_mixed", "results", "scope"]),
+         "extra": [("results/exp37_confidence.json",
+                    ["selective_prediction", "status_decomposition",
+                     "scope"])]},
+        {"claim": "A parametric head destroys information 1-NN retrieval "
+                  "preserves.",
+         "scope": "depth-1 relation identification of KNOWN relations only; "
+                  "on NEW relations retrieval collapses to 0.229 against "
+                  "the head's 0.782",
          "src": ("results/exp35_phrasing_diag.json",
                  ["encoder_geometry", "nearest_neighbour_relation_id",
                   "alias_count_ablation", "alternatives_to_head",
-                  "head_baseline_2alias"])},
+                  "head_baseline_2alias"]),
+         "extra": [("results/exp36_append.json", ["results"])]},
     ]
     blocks, items = [], []
     for i, c in enumerate(CLAIMS):

@@ -3,84 +3,54 @@
  "model": "gpt-5.6-sol",
  "n": 8,
  "n_judged": 8,
- "raw_agreement": 0.125,
+ "raw_agreement": 0.75,
  "cohens_kappa": 0.0,
  "disagreements": [
-  {
-   "idx": 0,
-   "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "Novel relations are queryable with basis accuracy up to 0.7595 at depth 1, but no number establishes appending without reindexing."
-  },
-  {
-   "idx": 1,
-   "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "Held-out pairs generalise, but depth-3 correct accuracy is 0.6257 versus 0.6828 for trained pairs, not parity."
-  },
-  {
-   "idx": 2,
-   "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "The measured increase is 0.534 to 0.9123, but the numbers isolate neither depth learning nor the broad claim that order and depth need not be learned."
-  },
   {
    "idx": 3,
    "mine": "SUPPORTED",
    "theirs": "OVERREACH",
-   "their_reason": "Zero-shot 3-hop answering is 0.8489, not the claimed 0.851; the answering-only qualification is otherwise supported."
-  },
-  {
-   "idx": 4,
-   "mine": "SUPPORTED",
-   "theirs": "UNSUPPORTED",
-   "their_reason": "Refusal is 5821/6000 = 0.9702, but wrong-rate is 179/6000 = 0.0298, not approximately 0.000."
+   "their_reason": "At 61 relations, held-pair depth-2 correctness is 0.9245 versus 0.9135 for trained pairs, but no measurement at 5 relations supports the stated failure boundary."
   },
   {
    "idx": 5,
    "mine": "SUPPORTED",
    "theirs": "OVERREACH",
-   "their_reason": "Branching correlates negatively with refusal (-0.7881 to -0.9139), but these numbers do not establish ambiguity rather than noise or document two failed fixes."
-  },
-  {
-   "idx": 6,
-   "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "Basis beats raw on novel depth-1 relations (0.5325 versus 0.2934 at threshold 0.4) and loses at depth, but no raw held-out-phrasing result is provided for comparison with 0.3129."
+   "their_reason": "The headline changes are supported, but non-refusal coverage at depth 1 falls from 0.9933 to 0.8100, a cost of 0.1833 rather than the stated 0.110."
   }
  ],
  "their_verdicts": {
   "0": {
-   "verdict": "OVERREACH",
-   "reason": "Novel relations are queryable with basis accuracy up to 0.7595 at depth 1, but no number establishes appending without reindexing."
+   "verdict": "SUPPORTED",
+   "reason": "Basis, coordinates, and head fingerprints are identical before and after appending 15 relations and 652 subjects."
   },
   "1": {
-   "verdict": "OVERREACH",
-   "reason": "Held-out pairs generalise, but depth-3 correct accuracy is 0.6257 versus 0.6828 for trained pairs, not parity."
+   "verdict": "SUPPORTED",
+   "reason": "Head deficits versus rebuild are 0.0578 for new entities and 0.1911 for new relations; retrieval deficits are 0.2467 and 0.7711."
   },
   "2": {
-   "verdict": "OVERREACH",
-   "reason": "The measured increase is 0.534 to 0.9123, but the numbers isolate neither depth learning nor the broad claim that order and depth need not be learned."
+   "verdict": "SUPPORTED",
+   "reason": "There are 432 refused-to-correct transitions, yielding the stated 0.360 learned rate, while all three fitted-artifact fingerprints remain identical."
   },
   "3": {
    "verdict": "OVERREACH",
-   "reason": "Zero-shot 3-hop answering is 0.8489, not the claimed 0.851; the answering-only qualification is otherwise supported."
+   "reason": "At 61 relations, held-pair depth-2 correctness is 0.9245 versus 0.9135 for trained pairs, but no measurement at 5 relations supports the stated failure boundary."
   },
   "4": {
-   "verdict": "UNSUPPORTED",
-   "reason": "Refusal is 5821/6000 = 0.9702, but wrong-rate is 179/6000 = 0.0298, not approximately 0.000."
+   "verdict": "SUPPORTED",
+   "reason": "The zero-shot-depth answerable set has 0.8489 correctness; refusal is poor for break-3 unanswerables at 0.2677, matching the answering-only scope."
   },
   "5": {
    "verdict": "OVERREACH",
-   "reason": "Branching correlates negatively with refusal (-0.7881 to -0.9139), but these numbers do not establish ambiguity rather than noise or document two failed fixes."
+   "reason": "The headline changes are supported, but non-refusal coverage at depth 1 falls from 0.9933 to 0.8100, a cost of 0.1833 rather than the stated 0.110."
   },
   "6": {
-   "verdict": "OVERREACH",
-   "reason": "Basis beats raw on novel depth-1 relations (0.5325 versus 0.2934 at threshold 0.4) and loses at depth, but no raw held-out-phrasing result is provided for comparison with 0.3129."
+   "verdict": "SUPPORTED",
+   "reason": "Mixed-benchmark residual AURC is 0.4734 versus 0.1322 previously, a 3.58x ratio; adding type worsens it to 0.4901."
   },
   "7": {
    "verdict": "SUPPORTED",
-   "reason": "On depth-1 held-out phrasings, 1-NN scores 0.9255 versus 0.6139 for the parametric head, while relation-ID geometry remains strong at 0.9429."
+   "reason": "For known relations, 1-NN scores 0.9255 versus the two-alias head's 0.6139; for new relations, frozen retrieval is 0.2289 versus head 0.7822."
   }
  },
  "my_labels": {
