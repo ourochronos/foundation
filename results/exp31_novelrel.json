@@ -1,0 +1,263 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T08:57:13.823276+00:00",
+  "commit": "e6597f2b25666c1861fde03c4f7445598ed7e8d9",
+  "dirty": true,
+  "command": "scripts/exp31_novelrel.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "N_HOLD_REL": 12,
+   "INST_FRAC": 0.2,
+   "THR": 0.8
+  }
+ },
+ "held_out_relations": [
+  "architect",
+  "country of citizenship",
+  "date of birth",
+  "date of death",
+  "doctoral advisor",
+  "follows",
+  "named after",
+  "occupation",
+  "owned by",
+  "position held",
+  "publisher",
+  "relative"
+ ],
+ "n_relations": 61,
+ "results": {
+  "eval_d1_novel1": {
+   "correct": 0.2934,
+   "wrong": 0.2832,
+   "abstain": 0.4234,
+   "exact_chain": 0.2886,
+   "n": 1476
+  },
+  "eval_d1_inst": {
+   "correct": 0.9674,
+   "wrong": 0.0193,
+   "abstain": 0.0133,
+   "exact_chain": 0.9625,
+   "n": 827
+  },
+  "eval_d2_novel1": {
+   "correct": 0.2787,
+   "wrong": 0.2674,
+   "abstain": 0.454,
+   "exact_chain": 0.2678,
+   "n": 2031
+  },
+  "eval_d2_novel2": {
+   "correct": 0.0,
+   "wrong": 0.1012,
+   "abstain": 0.8988,
+   "exact_chain": 0.0,
+   "n": 346
+  },
+  "eval_d2_inst": {
+   "correct": 0.8943,
+   "wrong": 0.0287,
+   "abstain": 0.077,
+   "exact_chain": 0.8874,
+   "n": 870
+  },
+  "unans_novel": {
+   "correct": 0.0,
+   "wrong": 0.2485,
+   "abstain": 0.7515,
+   "exact_chain": 0.0,
+   "n": 2000
+  },
+  "unans_trained": {
+   "correct": 0.0,
+   "wrong": 0.1815,
+   "abstain": 0.8185,
+   "exact_chain": 0.0,
+   "n": 2000
+  }
+ },
+ "controls": {
+  "eval_d1_novel1": {
+   "real": 0.2934,
+   "shuffled": 0.0217,
+   "random": 0.0
+  },
+  "eval_d2_novel1": {
+   "real": 0.2787,
+   "shuffled": 0.001,
+   "random": 0.0
+  }
+ },
+ "novel_d1_ci95": [
+  0.2707,
+  0.3171
+ ],
+ "scope": "12 of 61 relations held out ENTIRELY \u2014 every chain containing one is excluded from training at every depth. Coordinates for a held-out relation come from its LABEL, so nothing about it is learned at ingest. The honest reference is 'unseen instance' (relation trained, this instance held out), not trained rows. Refusal split by whether the broken chain involves a novel relation.",
+ "anchor_basis_fix": {
+  "8": {
+   "novel_d1": {
+    "correct": 0.7594850948509485,
+    "wrong": 0.22899728997289973,
+    "abstain": 0.011517615176151762
+   },
+   "inst_d1": {
+    "correct": 0.9383313180169287,
+    "wrong": 0.056831922611850064,
+    "abstain": 0.0048367593712212815
+   },
+   "novel_d2": {
+    "correct": 0.5553914327917282,
+    "wrong": 0.2821270310192024,
+    "abstain": 0.16248153618906944
+   },
+   "unans_novel_refused": 0.4475
+  },
+  "16": {
+   "novel_d1": {
+    "correct": 0.728319783197832,
+    "wrong": 0.2588075880758808,
+    "abstain": 0.012872628726287264
+   },
+   "inst_d1": {
+    "correct": 0.9552599758162031,
+    "wrong": 0.044740024183796856,
+    "abstain": 0.0
+   },
+   "novel_d2": {
+    "correct": 0.5455440669620877,
+    "wrong": 0.25800098473658295,
+    "abstain": 0.1964549483013294
+   },
+   "unans_novel_refused": 0.4285
+  },
+  "24": {
+   "novel_d1": {
+    "correct": 0.7459349593495935,
+    "wrong": 0.241869918699187,
+    "abstain": 0.012195121951219513
+   },
+   "inst_d1": {
+    "correct": 0.9455864570737605,
+    "wrong": 0.05199516324062878,
+    "abstain": 0.0024183796856106408
+   },
+   "novel_d2": {
+    "correct": 0.6179222058099458,
+    "wrong": 0.2668636139832595,
+    "abstain": 0.11521418020679468
+   },
+   "unans_novel_refused": 0.435
+  },
+  "32": {
+   "novel_d1": {
+    "correct": 0.7032520325203252,
+    "wrong": 0.28319783197831977,
+    "abstain": 0.013550135501355014
+   },
+   "inst_d1": {
+    "correct": 0.9504232164449818,
+    "wrong": 0.044740024183796856,
+    "abstain": 0.0048367593712212815
+   },
+   "novel_d2": {
+    "correct": 0.5869030034465781,
+    "wrong": 0.292959133431807,
+    "abstain": 0.12013786312161497
+   },
+   "unans_novel_refused": 0.426
+  },
+  "48": {
+   "novel_d1": {
+    "correct": 0.7838753387533876,
+    "wrong": 0.20121951219512196,
+    "abstain": 0.014905149051490514
+   },
+   "inst_d1": {
+    "correct": 0.9588875453446191,
+    "wrong": 0.03990326481257558,
+    "abstain": 0.0012091898428053204
+   },
+   "novel_d2": {
+    "correct": 0.7040866568193008,
+    "wrong": 0.22156573116691286,
+    "abstain": 0.07434761201378631
+   },
+   "unans_novel_refused": 0.412
+  }
+ },
+ "raw_baseline": {
+  "novel_d1": {
+   "correct": 0.2934,
+   "wrong": 0.2832,
+   "abstain": 0.4234,
+   "exact_chain": 0.2886,
+   "n": 1476
+  },
+  "inst_d1": {
+   "correct": 0.9674,
+   "wrong": 0.0193,
+   "abstain": 0.0133,
+   "exact_chain": 0.9625,
+   "n": 827
+  }
+ },
+ "basis_threshold_sweep": {
+  "0.2": {
+   "train_d1": 0.7727413846631481,
+   "train_d2": 0.5790774299835255,
+   "unans_trained_refused": 0.991,
+   "novel_d1": 0.11314363143631437,
+   "novel_d1_wrong": 0.03590785907859079,
+   "unans_novel_refused": 0.985
+  },
+  "0.3": {
+   "train_d1": 0.9220738900962434,
+   "train_d2": 0.6861614497528831,
+   "unans_trained_refused": 0.9465,
+   "novel_d1": 0.3617886178861789,
+   "novel_d1_wrong": 0.1070460704607046,
+   "unans_novel_refused": 0.923
+  },
+  "0.4": {
+   "train_d1": 0.9577770878609128,
+   "train_d2": 0.7073036792970895,
+   "unans_trained_refused": 0.855,
+   "novel_d1": 0.532520325203252,
+   "novel_d1_wrong": 0.14498644986449866,
+   "unans_novel_refused": 0.823
+  },
+  "0.5": {
+   "train_d1": 0.9695746662527166,
+   "train_d2": 0.7116968698517299,
+   "unans_trained_refused": 0.778,
+   "novel_d1": 0.6714092140921409,
+   "novel_d1_wrong": 0.15718157181571815,
+   "unans_novel_refused": 0.73
+  },
+  "0.6": {
+   "train_d1": 0.9708165166097485,
+   "train_d2": 0.7119714442613948,
+   "unans_trained_refused": 0.726,
+   "novel_d1": 0.741869918699187,
+   "novel_d1_wrong": 0.16666666666666666,
+   "unans_novel_refused": 0.63
+  },
+  "0.8": {
+   "train_d1": 0.9745420676808445,
+   "train_d2": 0.7125205930807249,
+   "unans_trained_refused": 0.5955,
+   "novel_d1": 0.7838753387533876,
+   "novel_d1_wrong": 0.20121951219512196,
+   "unans_novel_refused": 0.412
+  }
+ },
+ "basis_selected_thr": 0.6
+}

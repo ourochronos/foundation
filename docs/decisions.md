@@ -2,6 +2,40 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D125: The product claim fails as built and is rescued by D114's basis — a never-trained relation becomes answerable at 0.742 with no reindex
+`scripts/exp31_novelrel.py`. The claim this project exists to make, tested end to end for the first time: a new relation type arrives, nothing is reindexed, no head is retrained — is it queryable? The pieces were measured separately and never together. D113/D116 showed relation *identification* transfers from label embeddings; D123 showed *composition* generalises to unseen pairs; but in every walker experiment every evaluated relation was also trained, and only the pairings were novel.
+
+**Design**: **12 of 61 relations held out ENTIRELY** — every chain containing one excluded from training at every depth. A held-out relation still has coordinates, because coordinates come from its **label**, so nothing about it is learned at ingest. The honest reference is not trained rows but an **unseen instance** of a *known* relation, which isolates "novel relation" from "novel row".
+
+**The claim fails as the walker was built:**
+
+| population | correct | wrong | abstain |
+|---|---|---|---|
+| novel relation, depth 1 | **0.293** | **0.283** | 0.423 |
+| unseen instance of a known relation | 0.967 | 0.019 | 0.013 |
+| novel relation, depth 2 | 0.279 | 0.267 | 0.454 |
+| both relations novel, depth 2 | 0.000 | 0.101 | 0.899 |
+
+Wrong as often as right. Controls confirm the residual signal is real rather than absent (shuffled coordinates 0.022, random target 0.000), but 0.293 is not a usable system.
+
+**The cause was already in the decision log.** D114 established that predicting a relation as a point in **raw 1024-d** memorises perfectly and transfers nothing to unseen relations, while predicting into a **frozen anchor basis** transfers — "the basis is the mechanism, not the bottleneck". The walker's sum head predicts in raw 1024-d. It was in exactly the configuration D114 had already refuted, on a different task, three days of work earlier.
+
+**The fix transfers.** Fitting the basis on the 49 *trained* relations only, projecting every relation into it (a held-out relation gets coordinates by projection and never moves the basis — the append-only property), and predicting there:
+
+| operating point | novel correct | novel wrong | unanswerable refused | known-relation correct |
+|---|---|---|---|---|
+| raw 1024-d | 0.293 | 0.283 | 0.751 | 0.967 |
+| basis K=48, THR 0.6 | **0.742** | 0.167 | 0.630 | 0.971 |
+| basis K=48, THR 0.5 (matched refusal) | **0.671** | 0.157 | 0.730 | 0.970 |
+
+**The basis dominates the raw representation across the frontier** — at matched refusal (~0.73–0.75) it answers 0.671 against 0.293 — and costs nothing on known relations (0.971 vs 0.967).
+
+**A threshold caveat that nearly became a false finding.** At the inherited THR=0.8 the basis appeared to wreck refusal (0.751 → 0.412). That threshold was calibrated on residual norms in 1024 dimensions, which are not scale-comparable to K=48. Re-sweeping — on **trained populations only**, so the novel ones never influence the choice — put the operating point at 0.6 and most of the apparent collapse disappeared. **Residual thresholds do not transfer across representation dimensionality** and must be re-derived whenever it changes.
+
+**Decision**: the walker's default representation becomes the anchor basis rather than raw label-embedding space. The product claim holds **in a qualified form**: a relation the system has never trained on is answerable at **0.742 correct / 0.167 wrong** with no reindex and no retraining — but its **refusal is weaker than for known relations at every threshold** (0.630 vs 0.726 at the selected point), which is exactly D124's ambiguity result showing up again. A deployment should either accept lower coverage on new relations or flag them as such; it should not assume the refusal guarantee extends to them.
+
+**Revisit**: (a) K=48 against 49 trained relations means the basis is nearly one anchor per relation — effectively a landmark representation, which *failed* in D115 at 18 relations and works here at 49, and that contrast is unexplained; (b) both-relations-novel at depth 2 is 0.000 correct / 0.899 abstain and was not retested under the basis fix; (c) the 12 held-out relations were drawn once at random and include several date/person properties — a second draw would show whether the result is draw-dependent.
+
 ## 2026-07-29 — D124: Refusal is bounded by store DENSITY, and the mechanism is ambiguity rather than noise — two principled fixes both fail to shift the frontier
 `scripts/exp30_refusal_diag.py`. D123 left "the honest-refusal property is corpus-dependent" as the most serious open item. Refusal is this project's central claim, so that is not an acceptable resting place without a mechanism. A hypothesis was pre-registered in the script docstring before the run.
 
