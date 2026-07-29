@@ -1,0 +1,521 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T08:02:53.710141+00:00",
+  "commit": "9e3e36eddb3364619cb50069958d252e2e09dd42",
+  "dirty": true,
+  "command": "scripts/exp27_perstep.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MIN_GAIN": 0.2,
+   "MAX_STEPS": 5
+  }
+ },
+ "selected_threshold": 0.2,
+ "worst_of_five": 0.313,
+ "sweep": {
+  "0.2": {
+   "d2 answerable": {
+    "correct": 0.793859649122807,
+    "wrong": 0.08738191632928476,
+    "abstain": 0.11875843454790823,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.423,
+    "abstain": 0.577,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.8866995073891626,
+    "wrong": 0.06239737274220033,
+    "abstain": 0.05090311986863711,
+    "n": 609
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.29733333333333334,
+    "abstain": 0.7026666666666667,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.687,
+    "abstain": 0.313,
+    "n": 3000
+   }
+  },
+  "0.3": {
+   "d2 answerable": {
+    "correct": 0.8110661268556005,
+    "wrong": 0.08738191632928476,
+    "abstain": 0.10155195681511471,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.43766666666666665,
+    "abstain": 0.5623333333333334,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.8883415435139573,
+    "wrong": 0.06239737274220033,
+    "abstain": 0.04926108374384237,
+    "n": 609
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.31333333333333335,
+    "abstain": 0.6866666666666666,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.705,
+    "abstain": 0.295,
+    "n": 3000
+   }
+  },
+  "0.4": {
+   "d2 answerable": {
+    "correct": 0.8292847503373819,
+    "wrong": 0.08738191632928476,
+    "abstain": 0.08333333333333333,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.4498333333333333,
+    "abstain": 0.5501666666666667,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.8883415435139573,
+    "wrong": 0.06403940886699508,
+    "abstain": 0.047619047619047616,
+    "n": 609
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.32766666666666666,
+    "abstain": 0.6723333333333333,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.7176666666666667,
+    "abstain": 0.2823333333333333,
+    "n": 3000
+   }
+  },
+  "0.5": {
+   "d2 answerable": {
+    "correct": 0.8373819163292847,
+    "wrong": 0.08771929824561403,
+    "abstain": 0.07489878542510121,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.46116666666666667,
+    "abstain": 0.5388333333333334,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.8899835796387521,
+    "wrong": 0.06732348111658457,
+    "abstain": 0.042692939244663386,
+    "n": 609
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.3446666666666667,
+    "abstain": 0.6553333333333333,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.7313333333333333,
+    "abstain": 0.26866666666666666,
+    "n": 3000
+   }
+  },
+  "0.6": {
+   "d2 answerable": {
+    "correct": 0.856612685560054,
+    "wrong": 0.08771929824561403,
+    "abstain": 0.05566801619433198,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.4726666666666667,
+    "abstain": 0.5273333333333333,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.8899835796387521,
+    "wrong": 0.06896551724137931,
+    "abstain": 0.041050903119868636,
+    "n": 609
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.35633333333333334,
+    "abstain": 0.6436666666666667,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.75,
+    "abstain": 0.25,
+    "n": 3000
+   }
+  },
+  "0.7": {
+   "d2 answerable": {
+    "correct": 0.868421052631579,
+    "wrong": 0.08771929824561403,
+    "abstain": 0.043859649122807015,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.486,
+    "abstain": 0.514,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.8899835796387521,
+    "wrong": 0.07060755336617405,
+    "abstain": 0.03940886699507389,
+    "n": 609
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.37366666666666665,
+    "abstain": 0.6263333333333333,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.768,
+    "abstain": 0.232,
+    "n": 3000
+   }
+  },
+  "0.8": {
+   "d2 answerable": {
+    "correct": 0.8852901484480432,
+    "wrong": 0.08771929824561403,
+    "abstain": 0.02699055330634278,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.5036666666666667,
+    "abstain": 0.49633333333333335,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.8916256157635468,
+    "wrong": 0.0722495894909688,
+    "abstain": 0.0361247947454844,
+    "n": 609
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.393,
+    "abstain": 0.607,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.783,
+    "abstain": 0.217,
+    "n": 3000
+   }
+  }
+ },
+ "selected": {
+  "d2 answerable": {
+   "correct": 0.793859649122807,
+   "wrong": 0.08738191632928476,
+   "abstain": 0.11875843454790823,
+   "n": 2964
+  },
+  "d2 unanswerable": {
+   "correct": 0.0,
+   "wrong": 0.423,
+   "abstain": 0.577,
+   "n": 6000
+  },
+  "d3 answerable": {
+   "correct": 0.8866995073891626,
+   "wrong": 0.06239737274220033,
+   "abstain": 0.05090311986863711,
+   "n": 609
+  },
+  "d3 break@2": {
+   "correct": 0.0,
+   "wrong": 0.29733333333333334,
+   "abstain": 0.7026666666666667,
+   "n": 3000
+  },
+  "d3 break@3": {
+   "correct": 0.0,
+   "wrong": 0.687,
+   "abstain": 0.313,
+   "n": 3000
+  }
+ },
+ "break3_refusal_ci95": [
+  0.2967,
+  0.3298
+ ],
+ "d119_baseline": {
+  "d3_answerable": 0.851,
+  "break2": 0.907,
+  "break3": 0.267
+ },
+ "scope": "Refusal fires when a relation the PRESENCE head says the question requires was never walked. Scale-free by construction: presence is an independent sigmoid per relation, not a magnitude. No 3-hop data in training, so depth 3 remains zero-shot. One threshold across both depths and all five populations.",
+ "presence_rule_refuted": true,
+ "absolute_residual_depth3_trained": {
+  "0.4": {
+   "d2 answerable": {
+    "correct": 0.7901484480431848,
+    "wrong": 0.0010121457489878543,
+    "abstain": 0.20883940620782726,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.0015,
+    "abstain": 0.9985,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.6233766233766234,
+    "wrong": 0.0,
+    "abstain": 0.37662337662337664,
+    "n": 77
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.011333333333333334,
+    "abstain": 0.9886666666666667,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.04666666666666667,
+    "abstain": 0.9533333333333334,
+    "n": 3000
+   }
+  },
+  "0.5": {
+   "d2 answerable": {
+    "correct": 0.8788798920377868,
+    "wrong": 0.0010121457489878543,
+    "abstain": 0.12010796221322537,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.0021666666666666666,
+    "abstain": 0.9978333333333333,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.8961038961038961,
+    "wrong": 0.0,
+    "abstain": 0.1038961038961039,
+    "n": 77
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.023333333333333334,
+    "abstain": 0.9766666666666667,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.13333333333333333,
+    "abstain": 0.8666666666666667,
+    "n": 3000
+   }
+  },
+  "0.6": {
+   "d2 answerable": {
+    "correct": 0.8839406207827261,
+    "wrong": 0.0010121457489878543,
+    "abstain": 0.1150472334682861,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.006666666666666667,
+    "abstain": 0.9933333333333333,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.922077922077922,
+    "wrong": 0.012987012987012988,
+    "abstain": 0.06493506493506493,
+    "n": 77
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.046,
+    "abstain": 0.954,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.25166666666666665,
+    "abstain": 0.7483333333333333,
+    "n": 3000
+   }
+  },
+  "0.7": {
+   "d2 answerable": {
+    "correct": 0.8842780026990553,
+    "wrong": 0.0010121457489878543,
+    "abstain": 0.11470985155195682,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.034166666666666665,
+    "abstain": 0.9658333333333333,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.922077922077922,
+    "wrong": 0.012987012987012988,
+    "abstain": 0.06493506493506493,
+    "n": 77
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.071,
+    "abstain": 0.929,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.434,
+    "abstain": 0.566,
+    "n": 3000
+   }
+  },
+  "0.8": {
+   "d2 answerable": {
+    "correct": 0.8842780026990553,
+    "wrong": 0.005735492577597841,
+    "abstain": 0.10998650472334683,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.1425,
+    "abstain": 0.8575,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.922077922077922,
+    "wrong": 0.012987012987012988,
+    "abstain": 0.06493506493506493,
+    "n": 77
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.102,
+    "abstain": 0.898,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.601,
+    "abstain": 0.399,
+    "n": 3000
+   }
+  },
+  "1.0": {
+   "d2 answerable": {
+    "correct": 0.8893387314439946,
+    "wrong": 0.08974358974358974,
+    "abstain": 0.020917678812415654,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.7081666666666667,
+    "abstain": 0.29183333333333333,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.961038961038961,
+    "wrong": 0.03896103896103896,
+    "abstain": 0.0,
+    "n": 77
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.23733333333333334,
+    "abstain": 0.7626666666666667,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.8663333333333333,
+    "abstain": 0.13366666666666666,
+    "n": 3000
+   }
+  }
+ },
+ "best_single_threshold": {
+  "thr": 0.5,
+  "worst_of_five": 0.8667,
+  "table": {
+   "d2 answerable": {
+    "correct": 0.8788798920377868,
+    "wrong": 0.0010121457489878543,
+    "abstain": 0.12010796221322537,
+    "n": 2964
+   },
+   "d2 unanswerable": {
+    "correct": 0.0,
+    "wrong": 0.0021666666666666666,
+    "abstain": 0.9978333333333333,
+    "n": 6000
+   },
+   "d3 answerable": {
+    "correct": 0.8961038961038961,
+    "wrong": 0.0,
+    "abstain": 0.1038961038961039,
+    "n": 77
+   },
+   "d3 break@2": {
+    "correct": 0.0,
+    "wrong": 0.023333333333333334,
+    "abstain": 0.9766666666666667,
+    "n": 3000
+   },
+   "d3 break@3": {
+    "correct": 0.0,
+    "wrong": 0.13333333333333333,
+    "abstain": 0.8666666666666667,
+    "n": 3000
+   }
+  }
+ }
+}

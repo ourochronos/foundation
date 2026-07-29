@@ -1,7 +1,7 @@
 {
  "manifest": {
-  "generated_at": "2026-07-29T04:37:22.524522+00:00",
-  "commit": "e6d9fe335cf4908a3be8233cc26679afb050d00c",
+  "generated_at": "2026-07-29T07:59:33.920974+00:00",
+  "commit": "9e3e36eddb3364619cb50069958d252e2e09dd42",
   "dirty": true,
   "command": "scripts/exp25_refusal.py",
   "seed": 0,

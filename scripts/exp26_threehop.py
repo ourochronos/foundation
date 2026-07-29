@@ -103,16 +103,16 @@ rng = np.random.default_rng(SEED)
 subjects = sorted(avail)
 ans3 = []
 for s in subjects:
-    for r1 in avail[s]:
+    for r1 in sorted(avail[s]):
         m1 = step({s}, r1)
         if not m1:
             continue
-        rs2 = set().union(*(avail.get(x, set()) for x in m1)) if m1 else set()
+        rs2 = sorted(set().union(*(avail.get(x, set()) for x in m1)))
         for r2 in rs2:
             m2 = step(m1, r2)
             if not m2:
                 continue
-            rs3 = set().union(*(avail.get(x, set()) for x in m2))
+            rs3 = sorted(set().union(*(avail.get(x, set()) for x in m2)))
             for r3 in rs3:
                 m3 = step(m2, r3)
                 if m3:
@@ -129,7 +129,7 @@ if len(ans3) > CAP_ANS:
 # ---- unanswerable 3-hops, graded by where the chain dies ----
 unans = {"break@2": [], "break@3": []}
 for s in subjects:
-    for r1 in avail[s]:
+    for r1 in sorted(avail[s]):
         m1 = step({s}, r1)
         if not m1:
             continue
@@ -154,14 +154,23 @@ for k in unans:
 
 cache = ROOT / "results" / "exp26_emb.npz"
 if cache.exists():
-    z = np.load(cache)
+    z = np.load(cache, allow_pickle=True)
     Za, Zb2, Zb3 = z["Za"], z["Zb2"], z["Zb3"]
-    assert len(Za) == len(ans3), "3-hop set drifted; delete cache"
+    # A LENGTH check is not enough: set iteration over strings depends on
+    # per-process hash randomisation, so a rebuilt list can have the same
+    # items in a different ORDER and silently misalign with its embeddings.
+    # Compare the texts themselves.
+    assert list(z["ta"]) == [a["text"] for a in ans3], "cache misaligned"
+    assert list(z["tb2"]) == [u["text"] for u in unans["break@2"]], "misaligned"
+    assert list(z["tb3"]) == [u["text"] for u in unans["break@3"]], "misaligned"
 else:
     Za = P.unit(P.embed_texts([a["text"] for a in ans3]))
     Zb2 = P.unit(P.embed_texts([u["text"] for u in unans["break@2"]]))
     Zb3 = P.unit(P.embed_texts([u["text"] for u in unans["break@3"]]))
-    np.savez(cache, Za=Za, Zb2=Zb2, Zb3=Zb3)
+    np.savez(cache, Za=Za, Zb2=Zb2, Zb3=Zb3,
+             ta=np.array([a["text"] for a in ans3]),
+             tb2=np.array([u["text"] for u in unans["break@2"]]),
+             tb3=np.array([u["text"] for u in unans["break@3"]]))
 print(f"embeddings {Za.shape} answerable", flush=True)
 
 import torch                                                     # noqa: E402

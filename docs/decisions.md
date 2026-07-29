@@ -2,7 +2,33 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D120: A hash-order bug produced a wrong conclusion; corrected, refusal DOES survive depth 3 — one threshold, 0.867 worst-case across five populations
+Three things happened, and the first is the one that matters most.
+
+**1. An alignment bug invalidated part of D119.** Set iteration over strings depends on per-process hash randomisation, so rebuilding an enumerated question list in a later process yields the same items in a **different order** — silently misaligning them with their cached embeddings. The caches asserted *length*, which cannot catch reordering. Verified directly: the depth-3 enumeration produces 609 identical items in a different order across processes. D119's first run computed its embeddings in-process and is sound (the zero-shot depth result stands); its absolute-threshold sweeps ran in later invocations that *loaded* the cache, and are garbage. **The conclusion drawn from them — "no threshold separates, so the fix is architectural" — was an artifact of the bug.** Fixed by sorting every relation-set iteration and asserting cached **texts**, not counts. D118 re-ran and reproduced exactly (0.881 / 0.071 / 0.970), confirming the blast radius.
+
+**New audit law (#8)**: *a length check is not an alignment check.* Any cached artifact keyed by an enumeration must be verified by content. This bug is silent, survives asserts, and produces plausible numbers — the only reason it surfaced is that a downstream result was implausible enough to re-examine rather than interpret.
+
+**2. The per-step "presence" refusal rule I proposed is refuted.** The idea was to stop asking magnitude to carry refusal and instead refuse when a relation the presence head says is required was never walked — scale-free by construction, and reusing D110's detection head for recall, which D112 measured as its strength. It loses badly: depth-2 unanswerable refusal **0.577** against the residual's 0.970, and break@3 only 0.313. Recorded as a failed hypothesis, not quietly dropped.
+
+**3. The actual answer was in D119's data all along, once aligned**: an **absolute** residual threshold (scale-free — one missing hop is one missing unit vector at any depth) with a sum head that has **seen depth 3**. Single threshold 0.5, chosen to maximise the worst of five figures of merit so no population can be sacrificed to flatter another:
+
+| population | result |
+|---|---|
+| depth-2 answerable | 0.879 correct / **0.001 wrong** / 0.120 abstain |
+| depth-2 unanswerable | **0.998 refused** |
+| depth-3 answerable (held-out 3-compositions) | 0.896 correct / **0.000 wrong** / 0.104 abstain |
+| depth-3 break@2 | **0.977 refused** |
+| depth-3 break@3 | **0.867 refused** |
+
+Worst-of-five 0.867, and the wrong-rate is 0.001 and 0.000 — the honest-refusal property this project is built on, holding at two depths simultaneously with one rule.
+
+**Corrected claim, replacing D119's**: *answering* extrapolates to unseen depth for free (D119's 0.851 zero-shot, which stands); *refusal* does not, but it is fixable with data rather than architecture — the head must have seen the depth, and the threshold must be absolute rather than fractional. Depth 3 is shippable after all, provided depth-3 examples are in training.
+
+**Revisit**: (a) depth 4+ presumably needs depth-4 examples by the same argument, which makes "unbounded depth" mean "unbounded given examples at each depth" — a materially weaker claim that should be stated that way; (b) depth-3 answerable n=77 held-out compositions is small, and the CI is correspondingly wide; (c) every result in D111–D120 predates the alignment fix except D118, D119's fractional table, and D120 itself — the rest were computed in-process and are believed sound, but that belief is now an assumption rather than a verification.
+
 ## 2026-07-28 — D119: Depth extrapolates for free; REFUSAL does not — D118's refusal claim is scoped to depth 2
+**[PARTIALLY SUPERSEDED BY D120]** — the depth-extrapolation finding stands, but D119's absolute-threshold table was computed from misaligned cached embeddings and its conclusion ("the fix is architectural, not a threshold") is WRONG. See D120.
 `scripts/exp26_threehop.py`. Two claims on trial, and they came apart cleanly.
 
 **Depth is genuinely not a trained class — this holds.** With **no 3-hop data in training at all**, the walker answers 3-hop questions at **0.851 correct / 0.064 wrong / 0.085 abstain, exact chain 0.810** (n=609, CI95 [0.820, 0.877]). The sum head had only ever seen targets of magnitude ~1 (singles) and ~2 (2-hop), so depth 3 is extrapolation rather than interpolation, and it works. D117's claim that a 3-hop is merely a longer walk rather than an R³ problem is confirmed. Training on 2/3 of the 3-compositions and evaluating the held-out third improves it further (0.961 correct), but the zero-shot number is the one that matters.
