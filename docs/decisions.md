@@ -2,6 +2,37 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D126: Depth decay is real, not a template artifact — and the anchor basis is the wrong default for depth
+`scripts/exp32_depth4.py`. Two questions settled at once, on the wiki corpus where questions read naturally and pair-clean holdouts exist at every depth.
+
+**D121's ambiguity is resolved: coverage decay with depth is REAL.** Pair-clean populations, raw representation:
+
+| depth | correct | wrong | abstain |
+|---|---|---|---|
+| 2 | 0.934 | 0.049 | 0.018 |
+| 3 | 0.693 | 0.128 | 0.179 |
+| 4 | **0.289** | 0.206 | 0.505 |
+
+D121 could not tell whether decay came from the mechanism or from nested citation phrasings becoming unreadable. It is the mechanism: the decay reproduces on a different corpus, with different phrasings, under a stricter holdout.
+
+**But the shape of the decay differs from D121, and this is the more important half.** On the AI corpus the wrong-rate stayed flat (0.000–0.013) while coverage fell — the system degraded by *refusing*. Here the wrong-rate **grows with depth**, 0.049 → 0.128 → 0.206, and refusal by break point degrades too (0.980 → 0.885 → 0.568). **"Degrades by refusing, not by lying" is therefore a property of the sparse AI store, not of the method.** That is D124's density/ambiguity result showing up along the depth axis, and it means the safety claim and the depth claim cannot be quoted together without naming the corpus.
+
+**The anchor basis is the wrong default for depth, which qualifies D125.** Running both representations side by side:
+
+| population | raw | anchor basis (K=48) |
+|---|---|---|
+| depth 2 pair-clean | 0.934 / 0.049 | 0.855 / 0.095 |
+| depth 3 pair-clean | 0.693 / 0.128 | 0.468 / 0.256 |
+| depth 4 pair-clean | **0.289 / 0.206** | **0.149 / 0.428** |
+
+The basis is worse everywhere and the gap widens with depth — at depth 4 it is wrong nearly three times as often. **Mechanism**: at depth *d* the target is a sum of *d* coordinates, and recovering the summands needs precision that a 48-dimensional compression of 61 relations does not have. D125 showed the same compression is what makes novel relations work (0.671 vs 0.293 at matched refusal), because compression is exactly what forces a new relation to be expressed in terms of known ones.
+
+**So the representation is task-dependent and D125's "make it the default" is withdrawn**: compression buys generalisation to *unseen relations* and costs precision at *depth*. Those pull in opposite directions and the project has to choose per deployment, or carry both. A hybrid — higher K, or scoring in both spaces — is untested and is the obvious next move.
+
+**Template caveat, honestly**: wiki phrasings are far better than D121's nested citations but not perfect. Some labels do not fit the "the X of Y" frame, producing *"the founded by of Academy"*. The confound is reduced, not eliminated, so the depth-4 number retains a small one-directional penalty.
+
+**Revisit**: (a) the hybrid representation, per above — it is the single most promising untested idea in this arc; (b) whether raw-vs-basis crossover depends on K, which was fixed at 48 here and never swept against depth; (c) depth 5+ on wiki is constructible and untested; (d) the wrong-rate growth with depth means any deployment past depth 2 on a dense store needs a refusal mechanism that D124 has shown we do not currently have.
+
 ## 2026-07-29 — D125: The product claim fails as built and is rescued by D114's basis — a never-trained relation becomes answerable at 0.742 with no reindex
 `scripts/exp31_novelrel.py`. The claim this project exists to make, tested end to end for the first time: a new relation type arrives, nothing is reindexed, no head is retrained — is it queryable? The pieces were measured separately and never together. D113/D116 showed relation *identification* transfers from label embeddings; D123 showed *composition* generalises to unseen pairs; but in every walker experiment every evaluated relation was also trained, and only the pairings were novel.
 
@@ -32,7 +63,7 @@ Wrong as often as right. Controls confirm the residual signal is real rather tha
 
 **A threshold caveat that nearly became a false finding.** At the inherited THR=0.8 the basis appeared to wreck refusal (0.751 → 0.412). That threshold was calibrated on residual norms in 1024 dimensions, which are not scale-comparable to K=48. Re-sweeping — on **trained populations only**, so the novel ones never influence the choice — put the operating point at 0.6 and most of the apparent collapse disappeared. **Residual thresholds do not transfer across representation dimensionality** and must be re-derived whenever it changes.
 
-**Decision**: the walker's default representation becomes the anchor basis rather than raw label-embedding space. The product claim holds **in a qualified form**: a relation the system has never trained on is answerable at **0.742 correct / 0.167 wrong** with no reindex and no retraining — but its **refusal is weaker than for known relations at every threshold** (0.630 vs 0.726 at the selected point), which is exactly D124's ambiguity result showing up again. A deployment should either accept lower coverage on new relations or flag them as such; it should not assume the refusal guarantee extends to them.
+**Decision**: the walker's default representation becomes the anchor basis rather than raw label-embedding space. **[QUALIFIED BY D126: the basis is better for NOVEL RELATIONS and materially worse with DEPTH — the choice is task-dependent, not a global default.]** The product claim holds **in a qualified form**: a relation the system has never trained on is answerable at **0.742 correct / 0.167 wrong** with no reindex and no retraining — but its **refusal is weaker than for known relations at every threshold** (0.630 vs 0.726 at the selected point), which is exactly D124's ambiguity result showing up again. A deployment should either accept lower coverage on new relations or flag them as such; it should not assume the refusal guarantee extends to them.
 
 **Revisit**: (a) K=48 against 49 trained relations means the basis is nearly one anchor per relation — effectively a landmark representation, which *failed* in D115 at 18 relations and works here at 49, and that contrast is unexplained; (b) both-relations-novel at depth 2 is 0.000 correct / 0.899 abstain and was not retested under the basis fix; (c) the 12 held-out relations were drawn once at random and include several date/person properties — a second draw would show whether the result is draw-dependent.
 

@@ -1,0 +1,171 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T09:00:52.650928+00:00",
+  "commit": "c9b793cd659cc0cd6cf41cf47fc5674a7496cd62",
+  "dirty": true,
+  "command": "scripts/exp32_depth4.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "DEPTHS": [
+    2,
+    3,
+    4
+   ],
+   "HOLD_FRAC": 0.34,
+   "K_BASIS": 48,
+   "THR": {
+    "raw": 1.0,
+    "basis": 1.0
+   }
+  }
+ },
+ "n_relations": 61,
+ "n_pairs": 624,
+ "n_held_pairs": 212,
+ "thresholds": {
+  "raw": 1.0,
+  "basis": 1.0
+ },
+ "results": {
+  "eval_d2_clean_raw": {
+   "correct": 0.9336115326251897,
+   "wrong": 0.048558421851289835,
+   "abstain": 0.017830045523520487,
+   "n": 2636
+  },
+  "eval_d2_clean_basis": {
+   "correct": 0.8554628224582701,
+   "wrong": 0.09484066767830046,
+   "abstain": 0.04969650986342944,
+   "n": 2636
+  },
+  "train_d2_raw": {
+   "correct": 0.9158241241476605,
+   "wrong": 0.0625440865271573,
+   "abstain": 0.021631789325182223,
+   "n": 4253
+  },
+  "train_d2_basis": {
+   "correct": 0.8243592758053139,
+   "wrong": 0.12132612273689161,
+   "abstain": 0.0543146014577945,
+   "n": 4253
+  },
+  "eval_d3_clean_raw": {
+   "correct": 0.6929945054945055,
+   "wrong": 0.12774725274725274,
+   "abstain": 0.17925824175824176,
+   "n": 1456
+  },
+  "eval_d3_clean_basis": {
+   "correct": 0.4677197802197802,
+   "wrong": 0.25618131868131866,
+   "abstain": 0.2760989010989011,
+   "n": 1456
+  },
+  "eval_d3_partial_raw": {
+   "correct": 0.7012121212121212,
+   "wrong": 0.14242424242424243,
+   "abstain": 0.15636363636363637,
+   "n": 4950
+  },
+  "eval_d3_partial_basis": {
+   "correct": 0.46989898989898987,
+   "wrong": 0.24181818181818182,
+   "abstain": 0.2882828282828283,
+   "n": 4950
+  },
+  "train_d3_raw": {
+   "correct": 0.7248628884826326,
+   "wrong": 0.0862279098110908,
+   "abstain": 0.18890920170627665,
+   "n": 3282
+  },
+  "train_d3_basis": {
+   "correct": 0.4643510054844607,
+   "wrong": 0.19134673979280925,
+   "abstain": 0.34430225472273,
+   "n": 3282
+  },
+  "eval_d4_clean_raw": {
+   "correct": 0.28858447488584477,
+   "wrong": 0.20639269406392693,
+   "abstain": 0.5050228310502283,
+   "n": 1095
+  },
+  "eval_d4_clean_basis": {
+   "correct": 0.14885844748858448,
+   "wrong": 0.428310502283105,
+   "abstain": 0.4228310502283105,
+   "n": 1095
+  },
+  "eval_d4_partial_raw": {
+   "correct": 0.41575,
+   "wrong": 0.12275,
+   "abstain": 0.4615,
+   "n": 8000
+  },
+  "eval_d4_partial_basis": {
+   "correct": 0.207875,
+   "wrong": 0.24175,
+   "abstain": 0.550375,
+   "n": 8000
+  },
+  "train_d4_raw": {
+   "correct": 0.5310861423220974,
+   "wrong": 0.09176029962546817,
+   "abstain": 0.37715355805243445,
+   "n": 2670
+  },
+  "train_d4_basis": {
+   "correct": 0.23295880149812734,
+   "wrong": 0.20486891385767791,
+   "abstain": 0.5621722846441948,
+   "n": 2670
+  },
+  "brk2_raw": {
+   "correct": 0.0,
+   "wrong": 0.02,
+   "abstain": 0.98,
+   "n": 2000
+  },
+  "brk2_basis": {
+   "correct": 0.0,
+   "wrong": 0.0805,
+   "abstain": 0.9195,
+   "n": 2000
+  },
+  "brk3_raw": {
+   "correct": 0.0,
+   "wrong": 0.115,
+   "abstain": 0.885,
+   "n": 2000
+  },
+  "brk3_basis": {
+   "correct": 0.0,
+   "wrong": 0.2385,
+   "abstain": 0.7615,
+   "n": 2000
+  },
+  "brk4_raw": {
+   "correct": 0.0,
+   "wrong": 0.4325,
+   "abstain": 0.5675,
+   "n": 2000
+  },
+  "brk4_basis": {
+   "correct": 0.0,
+   "wrong": 0.3905,
+   "abstain": 0.6095,
+   "n": 2000
+  }
+ },
+ "scope": "Wiki corpus, natural phrasings, pair-clean holdouts at every depth (D122's rule: all-pairs-held / partial / trained, never merged). Two representations side by side because D125 made the anchor basis the default. Thresholds calibrated per representation on trained-pair and unanswerable populations only."
+}
