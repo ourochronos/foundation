@@ -2,6 +2,32 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D114: The anchor CONTENT is the mechanism (random bottleneck refuted) — but "one shared concept space" is refuted too; a basis must be fit to the manifold it will carry
+`scripts/exp20_sharedbasis.py`. D113 claimed "the basis is the mechanism" without excluding the obvious alternative: that **any** low-dimensional bottleneck regularises. This ships that control, plus a K sweep D113 owed (it picked K_R=8 with no justification).
+
+**HELD-OUT-relation top-1** (chance 0.038, n=5,240 over 8 unseen relations):
+
+| K_R | relation anchors | random orthonormal | entity anchors | mixed pool |
+|---|---|---|---|---|
+| 4 | 0.090 | 0.029 | 0.057 | — |
+| **8** | **0.281** | 0.067 | 0.062 | 0.078 |
+| 16 | 0.286 | 0.007 | 0.110 | 0.042 |
+| 64 | — | 0.002 | 0.087 | 0.043 |
+
+**The control lands, and it lands hard.** The random basis reaches **1.000 on train relations** at K≥8 — it has ample capacity and memorises perfectly — yet transfers at 0.067. Best-vs-best CIs are disjoint: relation anchors [0.274, 0.298] vs random [0.060, 0.074]. **A bottleneck alone does not produce generalisation; the content of the basis does.** D113's claim is now earned rather than asserted. Note also that random *degrades* with width (0.067 → 0.002 from K=8 to K=64): more capacity, more memorisation, less transfer.
+
+**The knee is at K_R=8**, which retroactively justifies D113's unswept constant: 4→8 is the jump (0.090 → 0.281), 8→16 is flat (0.281 → 0.286). End-to-end precision actually *peaks* at K=8 (0.661) and falls at K=16 (0.522), so 8 is the operating point on both measures — the top-1 gain at 16 does not survive contact with the store.
+
+**My "one shared space" proposal is refuted, and I proposed it enthusiastically one turn earlier.** A basis fit on 3,000 **entity names** carries relations at only 0.110 — above random, well below 0.286. The natural rescue (a mixed pool of names + train relation labels) is **worse still at 0.078**, which also refutes my follow-up hypothesis that entity-only failed merely from lack of coverage. The mechanism is plain in hindsight: 18 relation labels in a pool of 3,018 is **0.6%**, so k-means centroids remain spanned by the name manifold. **Presence in the pool is not coverage; proportion is.**
+
+**The generalisable lesson, which reaches past this experiment**: an anchor basis is not a generic "concept space". It is fit to a distribution, and content lying off that distribution projects poorly no matter how wide the basis. This bears directly on D6's over-provision-to-100k plan — a single global basis over mixed content will not serve every axis equally, and that assumption has never been tested. Per-axis bases (identity anchors, relation anchors) or a deliberately balanced pool are the options; both remain append-only and reindex-free.
+
+**A real limitation this exposed**: a relation-anchor basis fit by k-means is **capped by the number of known relations** (18 here, so K=32 and K=64 are unrunnable). The fix follows D6's own logic applied to a new axis — over-provision the relation basis *once* from a large external relation vocabulary (all ~12k Wikidata properties), freeze it, and let coordinates for new relations be projections into it. That keeps the append-only property and removes the cap.
+
+**Where this leaves the "turtles" question**: relations *are* concepts, and they anchor like concepts — but they do not ride for free in a basis fit to entities. The recursion still terminates at the basis; there just needs to be a basis fit to relations, not merely a basis that happens to exist.
+
+**Revisit**: (a) over-provisioned relation basis from full Wikidata properties — the direct consequence of the cap; (b) still single-hop, so the per-step walk this was meant to enable is untested; (c) 8 held-out relations from one corpus with an unstratified split (carried from D113); (d) whether a basis fit on a *balanced* mixed pool (50/50 rather than 0.6%) recovers the shared space — the cheap version of (a).
+
 ## 2026-07-28 — D113: A relation that never existed at training time is plannable — and the anchor BASIS is the mechanism, not the compression
 `scripts/exp19_relanchor.py`. D112 concluded that R² enumeration was the honest ceiling. That conclusion was **conditional on relation identity being a coordinate**: participation vectors are `2R`, the detection head is `1024 → R`, so a novel relation is a new *axis* — it retrains every head and redefines every stored participation vector, which is a reindex by our own definition. This tests removing that condition, by giving a relation *content* and predicting a **point** in relation space rather than a class over known relations.
 

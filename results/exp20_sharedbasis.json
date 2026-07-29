@@ -1,0 +1,193 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T03:43:56.385305+00:00",
+  "commit": "8378b1cbcfe760589583ff292f1f629085953f31",
+  "dirty": true,
+  "command": "scripts/exp20_sharedbasis.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "KS": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+   ],
+   "N_ENT": 3000,
+   "held_out": [
+    "P112",
+    "P131",
+    "P159",
+    "P19",
+    "P20",
+    "P551",
+    "P800",
+    "P937"
+   ]
+  }
+ },
+ "chance_top1": 0.0385,
+ "n_held_out_q": 5240,
+ "grid": {
+  "2": {
+   "relation anchors": {
+    "held_out_top1": 0.0531,
+    "train_top1": 0.3131,
+    "end_to_end_correct": 0.0588,
+    "end_to_end_precision": 0.2097
+   },
+   "random orthonormal": {
+    "held_out_top1": 0.0113,
+    "train_top1": 0.4803,
+    "end_to_end_correct": 0.0187,
+    "end_to_end_precision": 0.0943
+   },
+   "entity anchors": {
+    "held_out_top1": 0.0235,
+    "train_top1": 0.2859,
+    "end_to_end_correct": 0.0292,
+    "end_to_end_precision": 0.0864
+   },
+   "mixed pool": {
+    "held_out_top1": 0.026,
+    "train_top1": 0.3323,
+    "end_to_end_correct": 0.0309,
+    "end_to_end_precision": 0.154
+   }
+  },
+  "4": {
+   "relation anchors": {
+    "held_out_top1": 0.0901,
+    "train_top1": 0.8769,
+    "end_to_end_correct": 0.1034,
+    "end_to_end_precision": 0.2842
+   },
+   "random orthonormal": {
+    "held_out_top1": 0.0294,
+    "train_top1": 0.9952,
+    "end_to_end_correct": 0.0315,
+    "end_to_end_precision": 0.1107
+   },
+   "entity anchors": {
+    "held_out_top1": 0.0573,
+    "train_top1": 0.9267,
+    "end_to_end_correct": 0.0618,
+    "end_to_end_precision": 0.1747
+   },
+   "mixed pool": {
+    "held_out_top1": 0.0193,
+    "train_top1": 0.9023,
+    "end_to_end_correct": 0.026,
+    "end_to_end_precision": 0.0838
+   }
+  },
+  "8": {
+   "relation anchors": {
+    "held_out_top1": 0.2811,
+    "train_top1": 0.9948,
+    "end_to_end_correct": 0.2914,
+    "end_to_end_precision": 0.6608
+   },
+   "random orthonormal": {
+    "held_out_top1": 0.0666,
+    "train_top1": 1.0,
+    "end_to_end_correct": 0.0767,
+    "end_to_end_precision": 0.232
+   },
+   "entity anchors": {
+    "held_out_top1": 0.0616,
+    "train_top1": 0.9957,
+    "end_to_end_correct": 0.0653,
+    "end_to_end_precision": 0.1686
+   },
+   "mixed pool": {
+    "held_out_top1": 0.0784,
+    "train_top1": 0.9985,
+    "end_to_end_correct": 0.0817,
+    "end_to_end_precision": 0.1983
+   }
+  },
+  "16": {
+   "relation anchors": {
+    "held_out_top1": 0.2857,
+    "train_top1": 0.9998,
+    "end_to_end_correct": 0.2962,
+    "end_to_end_precision": 0.522
+   },
+   "random orthonormal": {
+    "held_out_top1": 0.0073,
+    "train_top1": 1.0,
+    "end_to_end_correct": 0.0177,
+    "end_to_end_precision": 0.0424
+   },
+   "entity anchors": {
+    "held_out_top1": 0.1099,
+    "train_top1": 0.9998,
+    "end_to_end_correct": 0.1143,
+    "end_to_end_precision": 0.2384
+   },
+   "mixed pool": {
+    "held_out_top1": 0.042,
+    "train_top1": 0.9996,
+    "end_to_end_correct": 0.0475,
+    "end_to_end_precision": 0.1029
+   }
+  },
+  "32": {
+   "random orthonormal": {
+    "held_out_top1": 0.0063,
+    "train_top1": 1.0,
+    "end_to_end_correct": 0.0168,
+    "end_to_end_precision": 0.0357
+   },
+   "entity anchors": {
+    "held_out_top1": 0.058,
+    "train_top1": 0.9999,
+    "end_to_end_correct": 0.0635,
+    "end_to_end_precision": 0.1314
+   },
+   "mixed pool": {
+    "held_out_top1": 0.0183,
+    "train_top1": 0.9999,
+    "end_to_end_correct": 0.0258,
+    "end_to_end_precision": 0.053
+   }
+  },
+  "64": {
+   "random orthonormal": {
+    "held_out_top1": 0.0025,
+    "train_top1": 1.0,
+    "end_to_end_correct": 0.013,
+    "end_to_end_precision": 0.0282
+   },
+   "entity anchors": {
+    "held_out_top1": 0.0866,
+    "train_top1": 1.0,
+    "end_to_end_correct": 0.0952,
+    "end_to_end_precision": 0.1792
+   },
+   "mixed pool": {
+    "held_out_top1": 0.0433,
+    "train_top1": 1.0,
+    "end_to_end_correct": 0.0538,
+    "end_to_end_precision": 0.1042
+   }
+  }
+ },
+ "relation_basis_capped_at": 18,
+ "best_K": {
+  "relation anchors": 16,
+  "random orthonormal": 8,
+  "entity anchors": 16,
+  "mixed pool": 8
+ },
+ "scope": "Negative control for D113: a random orthonormal basis of the same width isolates 'the anchor content matters' from 'any bottleneck regularises'. Entity anchors test whether one shared concept space carries relations. Single-hop; same 8 held-out relations as D113, unstratified."
+}
