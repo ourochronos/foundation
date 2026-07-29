@@ -2,6 +2,29 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D113: A relation that never existed at training time is plannable — and the anchor BASIS is the mechanism, not the compression
+`scripts/exp19_relanchor.py`. D112 concluded that R² enumeration was the honest ceiling. That conclusion was **conditional on relation identity being a coordinate**: participation vectors are `2R`, the detection head is `1024 → R`, so a novel relation is a new *axis* — it retrains every head and redefines every stored participation vector, which is a reindex by our own definition. This tests removing that condition, by giving a relation *content* and predicting a **point** in relation space rather than a class over known relations.
+
+**Design guards against the obvious cheat.** A relation's content vector is the embedding of its **label** only ("spouse"); every question is generated from its **aliases** only ("married to", "wife"). The label never appears in a question, so a match cannot be lexical. 26 Wikidata relations (n≥50, ≥2 aliases), **8 held out entirely**, 21,834 questions. The anchor basis (K_R=8) is fit on train relations only; held-out relations receive coordinates by projection and **never move the basis** — append-only, per B1/B1b. Labels come from `data/schema_v0.json`, so relation content arrives at *mint time* and no corpus statistic is refit into a persistent path.
+
+| scorer | held-out top-1 | MRR | train | end-to-end precision |
+|---|---|---|---|---|
+| S softmax over train relations | **0.000 by construction** | — | — | — |
+| E predicted point, raw 1024-d | **0.000** | 0.190 | 1.000 | 0.021 (wrong 0.429) |
+| A predicted point, 8-d anchor coords | **0.264** | 0.388 | 0.993 | **0.646** |
+
+chance top-1 = 0.038 (n=5,240). Top-3 0.381 against chance 0.115. End-to-end on the live store: 0.275 correct / 0.151 wrong / 0.574 abstain.
+
+**The headline is the ablation, not the accuracy.** E and A are the same head, same data, same training signal, differing only in whether the predicted point is constrained to a basis built from *known* relations. Unconstrained in 1024 dimensions it memorises perfectly (train 1.000) and transfers **nothing** (0.000) — and is actively dangerous end-to-end, 0.429 wrong at precision 0.021. Constrained to 8 frozen anchor dimensions it gives up almost nothing on trained relations (0.993) and generalises to relations that did not exist when it was trained. **The basis is not a convenience for keeping dimensionality fixed; it is what forces a novel relation to be expressed in terms of known ones.** This is the anchor thesis (A1/A2) reproduced on the *relation* axis, having previously only been shown on the identity axis.
+
+**A prediction of mine that the data refuted, recorded per the audit laws.** The random split put six of eight held-out relations in one semantic family (place of birth/death, residence, work location, located-in, headquarters), and I expected errors to pile up *within* that family. They do not: only **0.103** of errors land on another held-out relation, *below* the 0.280 uniform-chance rate. Errors instead go to semantically adjacent **trained** relations — `headquarters location → location`, `founded by → inception`/`creator`, `work location → member of`. Several are arguably the correct generalisation given a basis that has no separate "headquarters" concept. The unstratified split is still a limitation of this run; it just is not the explanation.
+
+**Decision**: the relation axis is anchorable, so D112's "enumerate R² pairs" is downgraded from a ceiling to a *current* implementation limit. The path to dynamic relations and unbounded depth is open, and the quality of the relation-anchor space — not R — is what bounds it.
+
+**Not yet solved, and it is the same problem entities have** (the "turtles" question): this experiment gets relation *concepts* for free from a curated schema. Canonicalising a relation **surface form** to a concept is untouched, and D61 is what it looks like without an oracle — **688 relations from 1,771 triples**. Our store has never faced it: wiki relations are bare Wikidata PIDs with no stored label, and the AI relations were hand-declared. Relations got the free pass entities did not. The recursion does terminate, though — a relation, like an entity, is *named by text*, and text gets coordinates in one fixed basis, so it bottoms out at the basis rather than requiring a basis-for-the-basis.
+
+**Revisit**: (a) single-hop only — the per-step walk formulation this enables is untested; (b) K_R=8 was not swept, and the A1 knee argument says it should be; (c) fit relation coordinates in the SAME basis as identities rather than a separate one — there is no principled reason for two bases, and it is a direct test; (d) relation surface-form canonicalisation, per above.
+
 ## 2026-07-28 — D112: Zero-shot composition is recall-yes / order-no — and with R relations the pragmatic fix is to enumerate, not to generalise
 Follow-up to D111's open problem, narrowed by diagnosis rather than by trying architectures. `scripts/exp18_compose.py`.
 

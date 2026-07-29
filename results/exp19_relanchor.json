@@ -1,0 +1,89 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T03:28:28.366140+00:00",
+  "commit": "3b20fada534c7057d8e6ba2cb1d8fba442afa84b",
+  "dirty": true,
+  "command": "scripts/exp19_relanchor.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "min_n": 50,
+   "per_rel": 150,
+   "K_R": 8,
+   "held_out_relations": [
+    "P112",
+    "P131",
+    "P159",
+    "P19",
+    "P20",
+    "P551",
+    "P800",
+    "P937"
+   ],
+   "train_relations": [
+    "P106",
+    "P108",
+    "P127",
+    "P138",
+    "P166",
+    "P17",
+    "P170",
+    "P26",
+    "P27",
+    "P276",
+    "P31",
+    "P39",
+    "P463",
+    "P50",
+    "P569",
+    "P570",
+    "P571",
+    "P69"
+   ]
+  }
+ },
+ "n_relations": 26,
+ "n_facts": 3480,
+ "n_questions": 21834,
+ "chance_top1": 0.0385,
+ "results": {
+  "E predicted point, raw embedding": {
+   "held_out_top1": 0.0,
+   "held_out_mrr": 0.1896,
+   "train_top1": 1.0,
+   "held_out_n": 5240,
+   "end_to_end": {
+    "wrong": 2250,
+    "abstain": 2942,
+    "correct": 48
+   },
+   "end_to_end_precision": 0.0209
+  },
+  "A predicted point, anchor coords": {
+   "held_out_top1": 0.2639,
+   "held_out_mrr": 0.3884,
+   "train_top1": 0.9934,
+   "held_out_n": 5240,
+   "end_to_end": {
+    "wrong": 789,
+    "abstain": 3010,
+    "correct": 1441
+   },
+   "end_to_end_precision": 0.6462
+  }
+ },
+ "held_out_top3": 0.3815,
+ "errors_into_held_out_family": 0.1027,
+ "uniform_chance_into_held": 0.28,
+ "anchor_top1_ci95": [
+  0.252,
+  0.2758
+ ],
+ "scope": "Relation content vectors are the embedding of the LABEL; questions are generated from ALIASES only, so the label never appears in a question and matching cannot be lexical. The anchor basis is fit on train relations only; held-out relations receive coordinates by projection and never move the basis. Single-hop only."
+}
