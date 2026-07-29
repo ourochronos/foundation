@@ -1,0 +1,69 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T16:07:28.648875+00:00",
+  "commit": "d515f232c7e2d94e063672b1a86d2630ae0f075d",
+  "dirty": true,
+  "command": "scripts/exp42_natural.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "RES_THR": 0.8,
+   "TTHR": 0.35,
+   "K_BASIS": 48
+  }
+ },
+ "n_cases": 3000,
+ "n_relations": 36,
+ "n_forward_pairs": 3473,
+ "results": {
+  "d2_p0": {
+   "correct": 0.586,
+   "wrong": 0.292,
+   "refuse": 0.122,
+   "n": 1000
+  },
+  "d2_pheld": {
+   "correct": 0.4505,
+   "wrong": 0.422,
+   "refuse": 0.1275,
+   "n": 2000
+  },
+  "d3_p0": {
+   "correct": 0.686,
+   "wrong": 0.118,
+   "refuse": 0.196,
+   "n": 1000
+  },
+  "d3_pheld": {
+   "correct": 0.6325,
+   "wrong": 0.1695,
+   "refuse": 0.198,
+   "n": 2000
+  },
+  "d4_p0": {
+   "correct": 0.761,
+   "wrong": 0.117,
+   "refuse": 0.122,
+   "n": 1000
+  },
+  "d4_pheld": {
+   "correct": 0.7025,
+   "wrong": 0.1445,
+   "refuse": 0.153,
+   "n": 2000
+  },
+  "not_applicable": {
+   "correct": 0.0,
+   "wrong": 0.686,
+   "refuse": 0.314,
+   "n": 1500
+  }
+ },
+ "scope": "Store built from MQuAKE-CF-3k's own ground-truth triples; questions are the benchmark's three HUMAN-WRITTEN phrasings per case, with phrasing 0 trained and 1-2 held out. Depth is the benchmark's own chain length (2/3/4, 1000 cases each), not a construction of ours. Relation coordinates are label-derived (D113/D116); D134's answer-type gate and D137's bidirectional traversal are on. A not-applicable set is included per law #9. Answers are matched against MQuAKE's answer aliases, case-folded."
+}

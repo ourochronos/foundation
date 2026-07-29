@@ -2,6 +2,26 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D138: On human-written questions, the phrasing catastrophe mostly disappears and depth decay reverses
+`scripts/exp42_natural.py`. Task 5, and the largest standing caveat closed: every question from D110 to D137 was templated by me. MQuAKE-CF-3k supplies 3,000 cases at chain lengths 2/3/4 (1,000 each — a depth axis the benchmark chose, not one I constructed), **three human-written phrasings per case**, and Wikidata PIDs so the label-derived coordinate machinery applies unchanged. The store is built from the benchmark's own ground-truth triples; phrasing 0 trains, phrasings 1–2 are held out. D134's type gate and D137's bidirectional traversal are on; a not-applicable set is included per law #9.
+
+| | trained phrasing | **held-out human phrasing** | cost |
+|---|---|---|---|
+| depth 2 | 0.586 | **0.451** | −0.135 |
+| depth 3 | 0.686 | **0.632** | −0.054 |
+| depth 4 | 0.761 | **0.703** | −0.058 |
+| not_applicable | — | refusal **0.314** | — |
+
+**D127's phrasing catastrophe was largely an artifact of alias substitution.** That entry measured **−0.719** for swapping a relation's label for one of its Wikidata aliases. On genuine human paraphrases of the same question the cost is **−0.054 to −0.135**. The two are not the same operation: "Who is the head of state of the country where X holds a citizenship?" and "What is the name of the head of state of the country that X is a citizen of?" preserve syntactic frame and content words, whereas substituting *employer* → *company* (or, in the worst cases, producing "the is a of 11") does not. **D127 is rescoped: phrasing robustness to natural paraphrase is a real but modest cost; the dominant-failure finding applies to alias substitution specifically.**
+
+**Depth decay reverses.** D121 and D126 measured coverage falling with depth (0.934 → 0.693 → 0.289). Here accuracy *rises* with depth: 0.586 → 0.686 → 0.761. **Depth decay is therefore not intrinsic to the mechanism** — it was a property of those corpora and templates. The likely reason is visible in the wrong-rates: depth-2 is the *hardest* cell here (wrong 0.292/0.422), because short MQuAKE chains run through high-fan-out relations like *country of citizenship* where many entities share an answer, while longer chains are more constrained. **Depth is not the variable; branching along the chain is** — which is D124's mechanism again, and consistent with D137's refinement that confusable options are what cost.
+
+**Refusal is worse here than on wiki**: not-applicable refusal 0.314 against D134's 0.693. The answer-type gate is corpus-dependent — 36 relations with a different range structure — so its threshold does not transfer. That is the third corpus-dependence finding (D124 density, D126 depth shape, now this) and it should be stated as a general property: **thresholds in this system are corpus-local and must be re-derived per store.**
+
+**Absolute accuracy is modest** — 0.451 at depth 2 on held-out human phrasing — and materially below the templated numbers. This is the first measurement against language nobody on this project wrote, and it should be the number quoted in any writeup, not the templated ones.
+
+**Revisit**: (a) the type gate needs per-corpus threshold derivation, now demonstrated twice; (b) MQuAKE's counterfactual half (`new_single_hops`) is a ready-made *update* benchmark and would test D133's learning transition on human-written questions — a natural next experiment; (c) depth-2's high wrong-rate deserves the branching analysis D124 established, which would confirm or refute the fan-out explanation offered above.
+
 ## 2026-07-29 — D137: Reverse traversal costs nothing — and refines D124: branching only hurts when the added options are confusable
 `scripts/exp41_reverse.py`. Task 4. The walker read only the subject side, so inverse questions ("what has X as its employer?") were unreachable, though `_by_obj` and `cited_by()` have existed in `foundation/kb.py` since the adjacency work. Reverse edges get their own coordinate from the text `"reverse {label}"` projected into the same frozen basis — no new mechanism.
 
@@ -252,7 +272,8 @@ D125 (novel relations, basis wins), D126 (depth, raw wins), D127 (phrasing, the 
 
 **Revisit**: (a) the encoder is frozen throughout — every phrasing result is bounded by BGE-M3's own paraphrase geometry, and fine-tuning it is the one lever never pulled; (b) a hybrid scoring in both spaces (basis to propose, raw to verify) follows directly from the trade-off axis and is untested; (c) D116's recipe should be re-examined for whether *ranking* vs *emitting* is the real difference, which would sharpen when vocabulary pretraining is worth doing at all.
 
-## 2026-07-29 — D127: D123's composition result survives the lexical-shortcut test — but PHRASING, not composition, is the dominant failure mode
+## 2026-07-29 — D127: D123's composition result survives the lexical-shortcut test
+**[RESCOPED BY D138]** — the −0.719 phrasing cost is specific to ALIAS SUBSTITUTION. On human-written paraphrases the cost is −0.054 to −0.135. — but PHRASING, not composition, is the dominant failure mode
 `scripts/exp33_alias.py`. D123 named relations by their LABEL in the question, which isolated composition but left an obvious hole: coordinates are the label embedding and the label appears verbatim in the question, so the head might have been doing string overlap. If so, 0.925 was inflated and the whole wiki arc rested on a shortcut.
 
 **Design**: coordinates stay label-derived, but every question is built from **aliases only**, with evaluation aliases held out from training (D110's K5 discipline). A question says "the company of X"; the coordinate says "employer". The label never appears in a scored question.
