@@ -2,6 +2,23 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D135: Claims table recomputed and re-adjudicated — agreement 0.125 → 0.750, and iterating against one rater starts fitting the rater
+Task 2 of the plan. The claims table in `docs/18-writeup-outline.md` was rewritten against D131–D134 and re-adjudicated blind (`scripts/adjudicate.py claims`).
+
+**Agreement rose from 0.125 to 0.750** (2 of 8 flagged, from 7 of 8 at D130). The table now carries the append results (1, 1b), the learning transition (1c), the mixed-benchmark refusal numbers (5b) and the selective-prediction rescope (9); claim 5 is explicitly labelled chain-break-only.
+
+**Two corrections the adjudicator earned this round:**
+- **Claim 1b named no architecture.** "+0.058 for new entities" is the *parametric head's* figure; retrieval's new-entity gap is 0.247 and its new-relation gap 0.771. The row now names both.
+- **The "≥ ~60 relations" scope was interpolation, not measurement.** Composition works at 61 and fails at 5; **nothing was ever measured in between**, so the threshold was invented. Restated as "measured at 61, fails at 5, the threshold between is untested".
+
+**And one it found by doing arithmetic I had not.** D134 reported the answer-type gate's cost as "−0.110 coverage". That is the drop in **correct** answers. **Total answered** falls **0.183** — the extra 0.073 removed were answers that had been *wrong*. Quoting only −0.110 understates the coverage change while flattering the gate; both numbers now appear wherever the cost is stated.
+
+**The meta-finding, which is why this entry stops here.** Across rounds the flags did not converge on zero — they moved: 7, then 2, then 3, then 2, each round's flags driven largely by **which evidence slice was passed** rather than by what the claims said. Fixing a flagged claim frequently surfaced a different claim whose citation was too narrow. **Iterating a claims table against a single adjudicator converges on that adjudicator, not on truth.** D130 already noted a second model would separate "Sol is strict" from "the claim is weak"; after three rounds that is no longer optional, and further single-rater iteration should be treated as overfitting.
+
+**One flag is left standing deliberately.** Claim 2's scope spans D112 (fails at 5), D122 (pair-clean holdout unbuildable at 5) and D123 (works at 61). **No single results file can establish it**, so any single-file citation will be judged OVERREACH forever. That is a property of cross-experiment claims, not a defect in the claim, and it is recorded rather than papered over by stuffing more files into the prompt.
+
+**Revisit**: (a) a second adjudicator model — now the blocking dependency for trusting this table; (b) cross-experiment claims need a citation format admitting several sources, or they will keep failing single-file adjudication; (c) the adjudicator has now twice caught arithmetic (D130's stale 0.851, this round's 0.110-vs-0.183) that a full session of self-review missed — the strongest argument for keeping the pass in the loop.
+
 ## 2026-07-29 — D134: The answer-type gate lifts not-applicable refusal 0.050 → 0.693 — and the mixed benchmark shows selective prediction was overstated 3.6×
 `scripts/exp39_typegate.py`. D133 left the project's worst number (0.623 confabulation) with an indicated fix already in the codebase: D110's answer-type gate, orphaned since the walker replaced the planner. This re-adopts it and, more importantly, ships the **mixed unanswerable benchmark** audit law #9 demands.
 
@@ -17,7 +34,7 @@ Format: date · decision · rationale · revisit-when.
 | **not_applicable** | — / 0.950 / **0.050** | — / 0.307 / **0.693** |
 | absent_entity | — / 0.001 / 0.999 | — / 0.001 / 0.999 |
 
-**Not-applicable refusal rises 13.9× (0.050 → 0.693, CI95 [0.654, 0.727])**, chain-break refusal nearly doubles, and answerable **wrongness falls 2.6×** (0.118 → 0.045) — the gate catches wrong walks as well as wrong questions. The cost is 0.110 of depth-1 coverage, which is the D124 frontier again and is reported rather than tuned away. It does not reach the 0.965 probe ceiling because the threshold was chosen to balance against that coverage.
+**Not-applicable refusal rises 13.9× (0.050 → 0.693, CI95 [0.654, 0.727])**, chain-break refusal nearly doubles, and answerable **wrongness falls 2.6×** (0.118 → 0.045) — the gate catches wrong walks as well as wrong questions. The cost needs stating precisely, and the adjudicator caught that it had not been: **correct** answers fall 0.110 while **total answered** falls 0.183 — the extra 0.073 removed were answers that had been *wrong*. Quoting only −0.110 understates the coverage change and flatters the gate. This is the D124 frontier again and is reported rather than tuned away. It does not reach the 0.965 probe ceiling because the threshold was chosen to balance against that coverage.
 
 **`absent_entity` was never broken** — 0.999 refused with or without the gate, because a subject absent from the store has no adjacency at all and the walk is vacuous immediately. Worth stating: of the three unanswerable kinds, only **not_applicable** was ever the problem, and it was the one nobody had built.
 
