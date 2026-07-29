@@ -1,0 +1,221 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T04:48:47.594214+00:00",
+  "commit": "d57198d15d2dd079a2c52a7a75f1ab8920755b52",
+  "dirty": true,
+  "command": "scripts/exp26_threehop.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MIN_GAIN": 0.2,
+   "MAX_STEPS": 5,
+   "d118_threshold": 0.4
+  }
+ },
+ "n_answerable": 609,
+ "n_3compositions": 26,
+ "held_out_3compositions": [
+  "P_BUILDS_ON>P_BUILDS_ON>P_COMPARES_TO",
+  "P_CITES>P_CITES>P_EVALUATES_ON",
+  "P_EVALUATES_ON>P_COMPARES_TO>P_EVALUATES_ON",
+  "P_EVALUATES_ON>P_EVALUATES_ON>P_COMPARES_TO",
+  "P_EVALUATES_ON>P_EVALUATES_ON>P_EVALUATES_ON",
+  "P_INTRODUCES>P_BUILDS_ON>P_EVALUATES_ON",
+  "P_INTRODUCES>P_COMPARES_TO>P_BUILDS_ON",
+  "P_INTRODUCES>P_EVALUATES_ON>P_COMPARES_TO"
+ ],
+ "zero_shot_depth": {
+  "answerable": {
+   "n": 609,
+   "correct": 0.27257799671592775,
+   "wrong": 0.6420361247947455,
+   "abstain": 0.08538587848932677,
+   "exact_chain": 0.22660098522167488,
+   "pred_magnitude_mean": 2.0503491533213647
+  },
+  "unans_break2": {
+   "n": 3000,
+   "correct": 0.0,
+   "wrong": 0.093,
+   "abstain": 0.907,
+   "exact_chain": 0.0,
+   "pred_magnitude_mean": 1.8844155170122783
+  },
+  "unans_break3": {
+   "n": 3000,
+   "correct": 0.0,
+   "wrong": 0.733,
+   "abstain": 0.267,
+   "exact_chain": 0.0,
+   "pred_magnitude_mean": 1.928583529750506
+  }
+ },
+ "trained_on_3hop": {
+  "answerable_heldout_kinds": {
+   "n": 77,
+   "correct": 0.45454545454545453,
+   "wrong": 0.5194805194805194,
+   "abstain": 0.025974025974025976,
+   "exact_chain": 0.24675324675324675,
+   "pred_magnitude_mean": 2.298645564488002
+  },
+  "unans_break2": {
+   "n": 3000,
+   "correct": 0.0,
+   "wrong": 0.138,
+   "abstain": 0.862,
+   "exact_chain": 0.0,
+   "pred_magnitude_mean": 2.1094245393276214
+  },
+  "unans_break3": {
+   "n": 3000,
+   "correct": 0.0,
+   "wrong": 0.7843333333333333,
+   "abstain": 0.21566666666666667,
+   "exact_chain": 0.0,
+   "pred_magnitude_mean": 2.1432986878156663
+  }
+ },
+ "depth2_reference_d118": {
+  "correct": 0.881,
+  "wrong": 0.071,
+  "unans_refused": 0.97
+ },
+ "scope": "D118's threshold (0.40, calibrated at depth 2) applied UNCHANGED, to test whether a refusal threshold transfers across depth. Unanswerable 3-hops are graded by where the chain dies; chains with no first hop are excluded per D118. Answerable correctness is set-overlap with the true 3-hop answer set, same lenient convention as D111-D118.",
+ "absolute_threshold": {
+  "threshold": 0.4,
+  "depth2_answerable": {
+   "correct": 0.400472334682861,
+   "wrong": 0.004048582995951417,
+   "abstain": 0.5954790823211876,
+   "n": 2964
+  },
+  "depth3_answerable": {
+   "correct": 0.034482758620689655,
+   "wrong": 0.07881773399014778,
+   "abstain": 0.8866995073891626,
+   "n": 609
+  },
+  "unans_break2": {
+   "correct": 0.0,
+   "wrong": 0.011,
+   "abstain": 0.989,
+   "n": 3000
+  },
+  "unans_break3": {
+   "correct": 0.0,
+   "wrong": 0.17766666666666667,
+   "abstain": 0.8223333333333334,
+   "n": 3000
+  }
+ },
+ "threehop_trained_absolute": {
+  "0.6": {
+   "ans": {
+    "correct": 0.3116883116883117,
+    "wrong": 0.2727272727272727,
+    "abstain": 0.4155844155844156,
+    "n": 77
+   },
+   "b2": {
+    "correct": 0.0,
+    "wrong": 0.044333333333333336,
+    "abstain": 0.9556666666666667,
+    "n": 3000
+   },
+   "b3": {
+    "correct": 0.0,
+    "wrong": 0.26866666666666666,
+    "abstain": 0.7313333333333333,
+    "n": 3000
+   }
+  },
+  "0.8": {
+   "ans": {
+    "correct": 0.44155844155844154,
+    "wrong": 0.4935064935064935,
+    "abstain": 0.06493506493506493,
+    "n": 77
+   },
+   "b2": {
+    "correct": 0.0,
+    "wrong": 0.12966666666666668,
+    "abstain": 0.8703333333333333,
+    "n": 3000
+   },
+   "b3": {
+    "correct": 0.0,
+    "wrong": 0.664,
+    "abstain": 0.336,
+    "n": 3000
+   }
+  },
+  "1.0": {
+   "ans": {
+    "correct": 0.45454545454545453,
+    "wrong": 0.5454545454545454,
+    "abstain": 0.0,
+    "n": 77
+   },
+   "b2": {
+    "correct": 0.0,
+    "wrong": 0.26366666666666666,
+    "abstain": 0.7363333333333333,
+    "n": 3000
+   },
+   "b3": {
+    "correct": 0.0,
+    "wrong": 0.909,
+    "abstain": 0.091,
+    "n": 3000
+   }
+  },
+  "1.2": {
+   "ans": {
+    "correct": 0.45454545454545453,
+    "wrong": 0.5454545454545454,
+    "abstain": 0.0,
+    "n": 77
+   },
+   "b2": {
+    "correct": 0.0,
+    "wrong": 0.446,
+    "abstain": 0.554,
+    "n": 3000
+   },
+   "b3": {
+    "correct": 0.0,
+    "wrong": 0.97,
+    "abstain": 0.03,
+    "n": 3000
+   }
+  },
+  "1.4": {
+   "ans": {
+    "correct": 0.45454545454545453,
+    "wrong": 0.5454545454545454,
+    "abstain": 0.0,
+    "n": 77
+   },
+   "b2": {
+    "correct": 0.0,
+    "wrong": 0.7256666666666667,
+    "abstain": 0.2743333333333333,
+    "n": 3000
+   },
+   "b3": {
+    "correct": 0.0,
+    "wrong": 0.9876666666666667,
+    "abstain": 0.012333333333333333,
+    "n": 3000
+   }
+  }
+ },
+ "threehop_trained_best_thr": 0.6
+}

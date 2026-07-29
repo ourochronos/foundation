@@ -2,6 +2,30 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D119: Depth extrapolates for free; REFUSAL does not — D118's refusal claim is scoped to depth 2
+`scripts/exp26_threehop.py`. Two claims on trial, and they came apart cleanly.
+
+**Depth is genuinely not a trained class — this holds.** With **no 3-hop data in training at all**, the walker answers 3-hop questions at **0.851 correct / 0.064 wrong / 0.085 abstain, exact chain 0.810** (n=609, CI95 [0.820, 0.877]). The sum head had only ever seen targets of magnitude ~1 (singles) and ~2 (2-hop), so depth 3 is extrapolation rather than interpolation, and it works. D117's claim that a 3-hop is merely a longer walk rather than an R³ problem is confirmed. Training on 2/3 of the 3-compositions and evaluating the held-out third improves it further (0.961 correct), but the zero-shot number is the one that matters.
+
+**Refusal does not survive depth 3, and three variants failed.** Unanswerable 3-hops were built **graded by where the chain dies** — `break@2` (first hop walkable, second empty) and `break@3` (first two walkable, third empty), with no-first-hop chains excluded per D118.
+
+| variant | answerable 3-hop | break@2 refused | break@3 refused |
+|---|---|---|---|
+| D118 fractional threshold 0.40, unchanged | 0.851 | 0.907 | **0.267** |
+| absolute residual, thr 0.4 | 0.051 | 0.989 | 0.822 |
+| absolute residual, thr 1.0 | 0.507 | 0.617 | 0.052 |
+| absolute + trained on 3-hop, best joint | 0.312 | 0.956 | 0.731 |
+
+No setting buys both. **Diagnosis**: the residual is a **global** signal. At depth *d*, a chain that dies at the final hop leaves only ~1/*d* of the magnitude unexplained — 1/2 at depth 2, 1/3 at depth 3 — so a fixed *fraction* stops firing as depth grows. Switching to the **absolute** residual should be scale-free, since one missing hop is one missing unit vector at any depth, except that the head **under-predicts magnitude** at unseen depth (2.05 where ~3 is right). A correct 3-hop walk therefore ends with an absolute residual about the size of a genuinely broken one, and the two populations are not separable. Training on depth 3 raises the predicted magnitude only to 2.26 and does not restore separability, which rules out "refusal just needs to have seen the depth".
+
+**Decision**: D118's refusal result is **scoped to depth 2** and must be stated that way. The system answers 3-hop questions well and cannot yet tell when it should not have. Given that refusal is this project's central claim, **depth 3 is not shippable** even though its accuracy looks good — the accuracy is exactly what makes it dangerous.
+
+**The fix is architectural, not a threshold.** A global residual conflates "the store could not answer this" with "the head mis-estimated the magnitude", and the second term grows with depth. Refusal needs a **per-step** signal — was *this* step well supported by the store — rather than one number computed after the walk ends. That is the next build, and it should be designed before any further depth work.
+
+**Methodological note that earned its keep, extending audit law #7**: a *binary* answerable/unanswerable split at depth 3 would have reported `break@2`'s 0.907 and looked healthy. **Grading the unanswerable population by where the failure occurs is what exposed the collapse.** Refusal benchmarks need failure *modes*, not just failure.
+
+**Revisit**: (a) per-step refusal, per above; (b) depth 4+, untested and presumably worse on the same argument; (c) the answerable-3hop metric is set-overlap, the same lenient convention as D111–D118, and answer sets at depth 3 were not size-audited the way D117's were.
+
 ## 2026-07-28 — D118: Refusal restored for 3 points of coverage — and audit law #7: you cannot measure refusal without unanswerable questions
 `scripts/exp25_refusal.py`. D117 bought 0.912 on held-out compositions and silently gave up the property this project exists for: abstention hit 0.000. When the residual could not be spent, the walker returned whatever partial frontier it had reached — a 1-hop result handed back for a 2-hop question, which is a wrong-answer generator by construction.
 
