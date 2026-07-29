@@ -1,0 +1,62 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T09:23:19.170895+00:00",
+  "commit": "b3638c14caceb5b84737a8bbcdf6faea8a191dd0",
+  "dirty": true,
+  "command": "scripts/exp35_phrasing_diag.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MIN_ALIAS": 6,
+   "N_SUBJ": 60
+  }
+ },
+ "n_relations": 56,
+ "n_questions": 9984,
+ "encoder_geometry": {
+  "within_mean": 0.8617606529906296,
+  "between_mean": 0.7669459870031411,
+  "separation": 0.0948
+ },
+ "nearest_neighbour_relation_id": {
+  "acc": 0.9429,
+  "ci95": [
+   0.9345,
+   0.9503
+  ],
+  "chance": 0.0179
+ },
+ "alias_count_ablation": {
+  "1": {
+   "held_out_alias": 0.6004,
+   "train_alias": 0.9808
+  },
+  "2": {
+   "held_out_alias": 0.6139,
+   "train_alias": 0.9841
+  },
+  "3": {
+   "held_out_alias": 0.6692,
+   "train_alias": 0.9858
+  },
+  "4": {
+   "held_out_alias": 0.7476,
+   "train_alias": 0.985
+  }
+ },
+ "verdict": "head/data",
+ "scope": "Depth-1 only, because D127 showed composition is not the problem. Subject is held fixed in the geometry test so entity content cannot inflate similarity. The nearest-neighbour test uses no trained parameters at all, which is what makes it an encoder-versus-head attribution rather than another accuracy.",
+ "alternatives_to_head": {
+  "knn_k1": 0.9255,
+  "knn_k5": 0.6451,
+  "knn_k20": 0.5992,
+  "direct_label_scoring": 0.5099
+ },
+ "head_baseline_2alias": 0.6139
+}

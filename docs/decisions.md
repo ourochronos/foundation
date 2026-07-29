@@ -2,6 +2,34 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D129: Do NOT fine-tune the encoder — the parametric head is destroying information that 1-NN retrieval preserves
+`scripts/exp35_phrasing_diag.py`. D128 left phrasing as the dominant unsolved failure and named encoder fine-tuning as the only untried lever. Before spending on an expensive, hard-to-reverse step, three cheap diagnostics were run to attribute the failure to a component. **All three point away from the encoder.**
+
+**1. The encoder separates paraphrases.** Same question, subject held fixed, rendered with different aliases of the same relation: mean cosine **0.862**, against **0.767** for different relations. Separation +0.095. The geometry is there.
+
+**2. Nearest-neighbour with no head at all scores 0.943.** Matching a held-out-alias question to its closest *training* question and taking that question's relation gives 0.943 (CI95 [0.935, 0.950], chance 0.018) on 3,328 held-out-alias questions. **The information is fully present in the embedding.** Fine-tuning cannot add information that is already there.
+
+**3. The alias curve is still climbing.** Head trained on 1/2/3/4 aliases per relation: 0.600 / 0.614 / 0.669 / **0.748**. D127 and D128 both trained on exactly two, which was the flat part of a curve nobody had plotted.
+
+**The finding that matters: a trained head scores 0.614 where 1-NN retrieval scores 0.943.**
+
+| method | held-out-alias top-1 | parameters |
+|---|---|---|
+| **1-NN regression over training questions** | **0.925** | none |
+| trained head (2 aliases, D127/D128's regime) | 0.614 | ~0.8M |
+| k-NN, k=5 / k=20 | 0.645 / 0.599 | none |
+| direct label scoring | 0.510 | none |
+
+**The parametric map is actively destroying information a trivial baseline preserves** — by +0.312. That is not a tuning problem and not an encoder problem; it is the wrong component. (k=5 and k=20 collapse because averaging target vectors across neighbours of *different* relations blurs them; a similarity-weighted or vote-based rule would not, and is untested.)
+
+**Decision: encoder fine-tuning is NOT indicated and is dropped.** The indicated change is architectural — replace the parametric head with retrieval over stored question→coordinate pairs. This is a better fit for the project's own thesis than the head ever was: **adding a relation becomes adding rows, with no retraining at all**, which is the reindex-free property applied to the reasoner rather than only to the store.
+
+**This reframes the D125–D128 arc.** Those experiments were all attempts to make a *parametric* map generalise — the anchor basis (D125), the compression trade-off (D126/D128), vocabulary pretraining (D128). Retrieval sidesteps the problem those were solving. The compression axis remains true and remains the right description of what a basis does; it is simply no longer the main lever.
+
+**The gap retrieval does not close**: a genuinely novel relation has *no* training questions, so 1-NN cannot retrieve it and will confidently return the nearest known relation instead. That is exactly the D125 case, where the anchor basis reached 0.742. So the architecture wants **both** — retrieval for relations that have examples, and the basis (or label scoring, 0.510) as the fallback for those that do not — with the choice made by whether a near neighbour exists at all, which is itself a usable confidence signal.
+
+**Revisit**: (a) build the hybrid, with the retrieval/fallback switch driven by neighbour distance, and measure it on D125's novel-relation populations and D127's phrasing populations together; (b) similarity-weighted or vote-based k-NN, since k=1 is doing well but is the most brittle possible rule; (c) retrieval at depth — every number here is depth-1, and the walker needs a *sum* of coordinates, so how retrieval composes is unmeasured; (d) more aliases per relation is a real and unexploited axis (+0.134 from 2 to 4) and is free — Wikidata supplies them.
+
 ## 2026-07-29 — D128: Vocabulary pretraining does NOT transfer to the walker — and compression-buys-generalisation-costs-precision is one axis explaining D125–D128
 `scripts/exp34_aliaspretrain.py`. D127 named alias-diverse vocabulary pretraining as "the highest-value untested change". It was tested. It does not work, and testing it exposed something more useful.
 
