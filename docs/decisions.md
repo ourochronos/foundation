@@ -2,7 +2,34 @@
 
 Format: date · decision · rationale · revisit-when.
 
-## 2026-07-29 — D121: The tail falls off as COVERAGE, not as error — refusal strengthens with depth while usable answers decay
+## 2026-07-29 — D122: The depth-2 "anomaly" was the only honest number — at depth ≥3 a pair-clean holdout is impossible with 5 relations
+Digging into D121's unexplained non-monotonicity (depth-2 correctness 0.359, worse than depth-3's 0.740). Two hypotheses tested, in order.
+
+**Overshoot — refuted.** The walker might take a spurious extra step, leaving a residual large enough to trip the refusal threshold and convert a correct answer into an abstention. Measured directly: over-length walks are **0.000 at every depth**, and 99.4% of depth-2 walks are exact-length. Yet **0.638 of those exact-length walks are refused**, so the walk is right and the predicted target is wrong. Raising `MIN_GAIN` does not help — correctness stays pinned at 0.359 while wrong climbs from 0.000 to 0.252.
+
+**Holdout contamination — confirmed, and it inverts the finding.** Holding out a *shape* at depth 2 removes that relation pair from training entirely. Holding out a triple at depth 3 does not: its adjacent pairs recur inside retained chains, and a head trained up to depth 3 also sees depth-2 pairs embedded in depth-3 chains.
+
+| depth | held-out shapes whose adjacent pairs were all still trained |
+|---|---|
+| 2 | **0.000** |
+| 3 | 0.875 |
+| 4 | **1.000** |
+| 5 | **1.000** |
+
+Attempting a strict, pair-clean holdout at depth ≥3 yields **zero eligible shapes**. With 5 relations there are only ~15 realised adjacent pairs, and they recur so densely that no triple can be isolated from all of them.
+
+**So depth 2 is not anomalously hard — it is the only measurement in the series that tests what it claims to.** Depths 3–5 test *sequence* novelty while every constituent *pair* was trained, which is a far weaker claim than "a composition it has never seen".
+
+**Consequences, stated plainly**: D120's depth-3 answerable figure (0.896 correct) and D121's depth-3–5 answerable column are **optimistic** — they are not pair-clean. The refusal results are much less affected, since unanswerable populations are constructed independently of the training shapes, and D121's central claim (wrong-rate flat in depth, degradation via abstention) survives — but its depth-3-vs-depth-2 gap is a holdout-strength artifact, not a depth effect, and must not be read as "deeper is easier".
+
+**The honest pair-clean number is depth 2: 0.359 correct / 0.000 wrong / 0.641 abstain.** Read against D112 — where path planning on genuinely unseen compositions gave 0.420 correct / **0.325 wrong** — the walker has not made composition generalise better; it has made the failure **honest**, converting wrongness into abstention. That is the correct summary of the D112→D122 arc and is more defensible than any single accuracy in it.
+
+**This is a corpus limitation, not a method limitation**, and it points at the fix already built: with 5 relations, pair-clean composition holdouts do not exist beyond depth 2. Testing composition generalisation at depth needs a larger relation vocabulary — exactly what D116's domain-selected vocabulary provides, and which has still never been connected to the walker.
+
+**Revisit**: (a) connect D116's vocabulary to the walker, which is now the blocking dependency for every remaining depth question rather than an optional extension; (b) the template confound from D121 is still unaddressed and now second in line; (c) any future composition holdout must report pair-cleanliness alongside it — a shape-level holdout is not a composition holdout.
+
+## 2026-07-29 — D121: The tail falls off as COVERAGE, not as error
+**[QUALIFIED BY D122]** — the depth-2 result flagged here as an unexplained anomaly is in fact the only pair-clean measurement in the series; depths 3–5 use a much weaker holdout. See D122. — refusal strengthens with depth while usable answers decay
 `scripts/exp28_depthscaling.py`. D120 restated the depth claim as "unbounded given examples at each depth" from two data points. This measures the curve: depths 2–5, exposure as a controlled variable (EXPOSED = saw depth n but not this chain *shape*; zero-shot = never saw depth n), D120's refusal rule applied **unchanged** at every depth rather than re-tuned, and unanswerable populations graded by break point (2 ≤ k ≤ n).
 
 | depth | cond | correct | wrong | abstain | refusal by break point |

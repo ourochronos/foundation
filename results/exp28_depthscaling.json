@@ -1,7 +1,7 @@
 {
  "manifest": {
-  "generated_at": "2026-07-29T08:16:28.768403+00:00",
-  "commit": "ec2ea69fe5efd7e0cb78854f40a0bfe226dcd484",
+  "generated_at": "2026-07-29T08:25:20.145793+00:00",
+  "commit": "01c44adb588d6074b55df5186d229d873d7c4fea",
   "dirty": true,
   "command": "scripts/exp28_depthscaling.py",
   "seed": 0,
@@ -163,5 +163,116 @@
    }
   }
  },
- "scope": "One refusal rule (D120's absolute residual at 0.5) applied unchanged at every depth. EXPOSED means the head saw depth n but not this chain SHAPE; zero-shot means it never saw depth n at all. Question text nests noun phrases, so deep questions are unnatural \u2014 a confound that can only hurt, so a flat curve is strong evidence and a declining one is ambiguous."
+ "scope": "One refusal rule (D120's absolute residual at 0.5) applied unchanged at every depth. EXPOSED means the head saw depth n but not this chain SHAPE; zero-shot means it never saw depth n at all. Question text nests noun phrases, so deep questions are unnatural \u2014 a confound that can only hurt, so a flat curve is strong evidence and a declining one is ambiguous.",
+ "depth2_diagnosis": {
+  "path_lengths": {
+   "2": {
+    "mean_path": 1.9942028985507247,
+    "short": 0.005797101449275362,
+    "exact": 0.9942028985507246,
+    "long": 0.0,
+    "abstain_given_exact": 0.6384839650145773,
+    "abstain_given_long": 0.0
+   },
+   "3": {
+    "mean_path": 2.896103896103896,
+    "short": 0.1038961038961039,
+    "exact": 0.8961038961038961,
+    "long": 0.0,
+    "abstain_given_exact": 0.2463768115942029,
+    "abstain_given_long": 0.0
+   },
+   "4": {
+    "mean_path": 3.6373626373626373,
+    "short": 0.1978021978021978,
+    "exact": 0.8021978021978022,
+    "long": 0.0,
+    "abstain_given_exact": 0.589041095890411,
+    "abstain_given_long": 0.0
+   },
+   "5": {
+    "mean_path": 4.092592592592593,
+    "short": 0.6018518518518519,
+    "exact": 0.39814814814814814,
+    "long": 0.0,
+    "abstain_given_exact": 0.7441860465116279,
+    "abstain_given_long": 0.0
+   }
+  },
+  "min_gain_sweep": {
+   "0.2": {
+    "correct": 0.35942028985507246,
+    "wrong": 0.0,
+    "abstain": 0.6405797101449275,
+    "n": 345,
+    "mean_path": 1.9942028985507247
+   },
+   "0.3": {
+    "correct": 0.35942028985507246,
+    "wrong": 0.014492753623188406,
+    "abstain": 0.6260869565217392,
+    "n": 345,
+    "mean_path": 1.9797101449275363
+   },
+   "0.4": {
+    "correct": 0.35942028985507246,
+    "wrong": 0.11594202898550725,
+    "abstain": 0.5246376811594203,
+    "n": 345,
+    "mean_path": 1.8782608695652174
+   },
+   "0.5": {
+    "correct": 0.36231884057971014,
+    "wrong": 0.25217391304347825,
+    "abstain": 0.3855072463768116,
+    "n": 345,
+    "mean_path": 1.6
+   },
+   "0.6": {
+    "correct": 0.20869565217391303,
+    "wrong": 0.25217391304347825,
+    "abstain": 0.5391304347826087,
+    "n": 345,
+    "mean_path": 1.228985507246377
+   }
+  }
+ },
+ "pair_leakage": {
+  "2": {
+   "n_held": 5,
+   "all_pairs_seen": 0.0,
+   "none_seen": 1.0,
+   "partial": 0.0
+  },
+  "3": {
+   "n_held": 8,
+   "all_pairs_seen": 0.875,
+   "none_seen": 0.0,
+   "partial": 0.125
+  },
+  "4": {
+   "n_held": 10,
+   "all_pairs_seen": 1.0,
+   "none_seen": 0.0,
+   "partial": 0.0
+  },
+  "5": {
+   "n_held": 10,
+   "all_pairs_seen": 1.0,
+   "none_seen": 0.0,
+   "partial": 0.0
+  }
+ },
+ "strict_holdout": {
+  "2": {
+   "correct": 0.35942028985507246,
+   "wrong": 0.0,
+   "abstain": 0.6405797101449275,
+   "n": 345,
+   "n_shapes": 5
+  },
+  "3": null,
+  "4": null,
+  "5": null
+ }
 }

@@ -317,3 +317,148 @@ out = {
 (ROOT / "results" / "exp28_depthscaling.json").write_text(json.dumps(out,
                                                                      indent=1))
 print("\n[done] results/exp28_depthscaling.json")
+
+# ---------------------------------------------------------------------------
+# Depth-2 correctness (0.359) is worse than depth-3 (0.740) and unexplained.
+# Leading hypothesis: OVERSHOOT. MAX_STEPS is d+1, and MIN_GAIN is only 0.2,
+# so an imperfectly-predicted target can still show >0.2 gain on some
+# available relation after the true chain is walked. A spurious extra step
+# leaves residual = pred - (n+1 unit vectors), whose norm blows past the
+# 0.5 refusal threshold — turning a CORRECT answer into an abstention.
+# That predicts: at depth 2, walks are systematically too LONG, and the
+# abstentions concentrate on over-length walks.
+# ---------------------------------------------------------------------------
+print("\npath-length distribution vs true depth (EXPOSED heads)")
+print(f"{'depth':>5} {'mean |path|':>11} {'short':>7} {'exact':>7} "
+      f"{'long':>7} | {'abstain if exact':>16} {'abstain if long':>16}")
+diag = {}
+for d in DEPTHS:
+    hd = heads[d]
+    rows = [a for a in ans[d] if ">".join(a["chain"]) in HOLDK[d]]
+    Zr = slice_of(("ans", d))
+    Zr = np.stack([Zr[j] for j, a in enumerate(ans[d])
+                   if ">".join(a["chain"]) in HOLDK[d]])
+    with torch.no_grad():
+        tgt = hd(torch.tensor(Zr)).numpy()
+    lens, bucket = [], collections.Counter()
+    ab = {"exact": [0, 0], "long": [0, 0], "short": [0, 0]}
+    for j, a in enumerate(rows):
+        path, got, _ = walk(a["subject"], tgt[j], d + 1)
+        lens.append(len(path))
+        b = ("exact" if len(path) == d else
+             ("long" if len(path) > d else "short"))
+        bucket[b] += 1
+        resid = tgt[j] - sum((RC[r] for r in path), np.zeros(1024, np.float32))
+        refused = (not path or not got
+                   or float(np.linalg.norm(resid)) > D120_THR)
+        ab[b][0] += int(refused)
+        ab[b][1] += 1
+    n = len(rows)
+    diag[d] = {"mean_path": float(np.mean(lens)),
+               "short": bucket["short"] / n, "exact": bucket["exact"] / n,
+               "long": bucket["long"] / n,
+               "abstain_given_exact": ab["exact"][0] / max(ab["exact"][1], 1),
+               "abstain_given_long": ab["long"][0] / max(ab["long"][1], 1)}
+    print(f"{d:5d} {np.mean(lens):11.2f} {bucket['short']/n:7.3f} "
+          f"{bucket['exact']/n:7.3f} {bucket['long']/n:7.3f} | "
+          f"{diag[d]['abstain_given_exact']:16.3f} "
+          f"{diag[d]['abstain_given_long']:16.3f}")
+
+print("\nMIN_GAIN sweep at depth 2 (does a stricter stop rule fix it?)")
+print(f"{'min_gain':>9} {'correct':>8} {'wrong':>7} {'abstain':>8} "
+      f"{'mean |path|':>11}")
+gain_sweep = {}
+for mg in (0.2, 0.3, 0.4, 0.5, 0.6):
+    globals()["MIN_GAIN"] = mg
+    A = judge(heads[2], ans[2], slice_of(("ans", 2)), D120_THR, True, 3,
+              HOLDK[2])
+    rows = [a for a in ans[2] if ">".join(a["chain"]) in HOLDK[2]]
+    Zr = np.stack([slice_of(("ans", 2))[j] for j, a in enumerate(ans[2])
+                   if ">".join(a["chain"]) in HOLDK[2]])
+    with torch.no_grad():
+        tgt = heads[2](torch.tensor(Zr)).numpy()
+    ml = float(np.mean([len(walk(a["subject"], tgt[j], 3)[0])
+                        for j, a in enumerate(rows)]))
+    gain_sweep[mg] = {**A, "mean_path": ml}
+    print(f"{mg:9.2f} {A['correct']:8.3f} {A['wrong']:7.3f} "
+          f"{A['abstain']:8.3f} {ml:11.2f}")
+globals()["MIN_GAIN"] = 0.2
+out["depth2_diagnosis"] = {"path_lengths": diag, "min_gain_sweep":
+                           {str(k): v for k, v in gain_sweep.items()}}
+(ROOT / "results" / "exp28_depthscaling.json").write_text(json.dumps(out,
+                                                                     indent=1))
+print("[done] diagnosis appended")
+
+# ---------------------------------------------------------------------------
+# Overshoot refuted: walks are never too long (0.000 at every depth) and 99.4%
+# are exact-length at depth 2, yet 0.638 of those exact walks are refused. So
+# the TARGET is poorly predicted even when the walk is right.
+#
+# That suggests a contamination asymmetry rather than a depth effect. Holding
+# out a SHAPE at depth 2 removes that relation pair from training entirely.
+# Holding out a triple at depth 3 does not: its adjacent pairs can still
+# appear inside retained chains, and a head trained up to depth 3 also sees
+# depth-2 pairs embedded in depth-3 chains. If so, "held-out composition" is
+# a much weaker holdout at depth >= 3 than at depth 2 — which would make the
+# depth-3 numbers in D120/D121 optimistic, not the depth-2 number anomalous.
+# ---------------------------------------------------------------------------
+def training_pairs(max_depth):
+    """Every adjacent relation pair the head actually saw at this exposure."""
+    pairs = set()
+    for d in DEPTHS:
+        if d > max_depth:
+            break
+        for a in ans[d]:
+            if ">".join(a["chain"]) in HOLDK[d]:
+                continue
+            for x, y in zip(a["chain"], a["chain"][1:]):
+                pairs.add((x, y))
+    return pairs
+
+
+print("\nis 'held-out composition' really held out? (adjacent-pair leakage)")
+print(f"{'depth':>5} {'held shapes':>12} {'all pairs seen':>15} "
+       f"{'no pair seen':>13}")
+leak = {}
+for d in DEPTHS:
+    tp = training_pairs(d)
+    full = part = none = 0
+    for shape in sorted(HOLDK[d]):
+        ch = shape.split(">")
+        ps = list(zip(ch, ch[1:]))
+        seen = sum(1 for p in ps if p in tp)
+        if seen == len(ps):
+            full += 1
+        elif seen == 0:
+            none += 1
+        else:
+            part += 1
+    n = len(HOLDK[d])
+    leak[d] = {"n_held": n, "all_pairs_seen": full / n, "none_seen": none / n,
+               "partial": part / n}
+    print(f"{d:5d} {n:12d} {full/n:15.3f} {none/n:13.3f}")
+
+print("\nre-evaluating with a STRICTER holdout: shapes whose adjacent pairs")
+print("were also never trained (the depth-2 holdout condition, at all depths)")
+print(f"{'depth':>5} {'n shapes':>9} {'correct':>8} {'wrong':>7} "
+      f"{'abstain':>8}")
+strict = {}
+for d in DEPTHS:
+    tp = training_pairs(d)
+    keep = {s for s in HOLDK[d]
+            if all(p not in tp for p in zip(s.split(">"), s.split(">")[1:]))}
+    if not keep:
+        print(f"{d:5d} {0:9d}        —       —        —   "
+              f"(no shape is pair-clean at this depth)")
+        strict[d] = None
+        continue
+    A = judge(heads[d], ans[d], slice_of(("ans", d)), D120_THR, True,
+              d + 1, keep)
+    strict[d] = {**A, "n_shapes": len(keep)}
+    print(f"{d:5d} {len(keep):9d} {A['correct']:8.3f} {A['wrong']:7.3f} "
+          f"{A['abstain']:8.3f}")
+out["pair_leakage"] = leak
+out["strict_holdout"] = {str(k): v for k, v in strict.items()}
+(ROOT / "results" / "exp28_depthscaling.json").write_text(json.dumps(out,
+                                                                     indent=1))
+print("[done] leakage analysis appended")
