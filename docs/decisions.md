@@ -2,6 +2,33 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D134: The answer-type gate lifts not-applicable refusal 0.050 → 0.693 — and the mixed benchmark shows selective prediction was overstated 3.6×
+`scripts/exp39_typegate.py`. D133 left the project's worst number (0.623 confabulation) with an indicated fix already in the codebase: D110's answer-type gate, orphaned since the walker replaced the planner. This re-adopts it and, more importantly, ships the **mixed unanswerable benchmark** audit law #9 demands.
+
+**The gate is non-circular by construction.** A walk's returned objects trivially match the relation the walk *took*; the question is whether they match the relation the question *asked for*, which is read off the **target** — `r_asked = argmax_r ((target − coordinates already walked) · RC[r])` — never off the path. Answer-type centroids are closed-form from the store, untrained.
+
+**It works, on both unanswerable kinds:**
+
+| population | gate OFF (D133) c / w / refuse | gate ON |
+|---|---|---|
+| answerable depth-1 | 0.875 / 0.118 / 0.007 | 0.765 / **0.045** / 0.190 |
+| answerable depth-2 | 0.715 / 0.175 / 0.110 | 0.620 / **0.102** / 0.278 |
+| chain_break | — / 0.663 / 0.337 | — / 0.350 / **0.650** |
+| **not_applicable** | — / 0.950 / **0.050** | — / 0.307 / **0.693** |
+| absent_entity | — / 0.001 / 0.999 | — / 0.001 / 0.999 |
+
+**Not-applicable refusal rises 13.9× (0.050 → 0.693, CI95 [0.654, 0.727])**, chain-break refusal nearly doubles, and answerable **wrongness falls 2.6×** (0.118 → 0.045) — the gate catches wrong walks as well as wrong questions. The cost is 0.110 of depth-1 coverage, which is the D124 frontier again and is reported rather than tuned away. It does not reach the 0.965 probe ceiling because the threshold was chosen to balance against that coverage.
+
+**`absent_entity` was never broken** — 0.999 refused with or without the gate, because a subject absent from the store has no adjacency at all and the walk is vacuous immediately. Worth stating: of the three unanswerable kinds, only **not_applicable** was ever the problem, and it was the one nobody had built.
+
+**The most important number is the comparison the mixed benchmark makes possible.** D132 measured AURC 0.1322 and reported "half of all questions answerable at ≤5% error". On the mixed benchmark the same scorer gives **AURC 0.4734**. **Selective-prediction quality was overstated roughly 3.6× by a benchmark that contained only chain-breaks.** That is the quantified cost of law #9's violation, and it retroactively rescopes every selective-prediction claim in D132.
+
+**The gate helps as a GATE, not as a RANKER.** Folding type-fit into the confidence score makes AURC slightly *worse* (0.4734 → 0.4901), which agrees with D132's finding that the residual is the best available ranker and that adding signals to it degrades ranking. Threshold decisions and ranking are different jobs; the type-fit is good at the first and not the second.
+
+**Decision**: the answer-type gate is adopted into the walker, and the **mixed benchmark replaces the chain-break-only population** for every future refusal measurement. D132's AURC and coverage figures are marked as chain-break-only.
+
+**Revisit**: (a) the 0.693 vs 0.965 gap is threshold placement against the coverage frontier — a per-relation type threshold (dates are tight, "notable work" is loose) is untested and is the obvious next lever; (b) the 0.110 coverage cost lands hardest on relations whose objects are heterogeneous, which is measurable and not yet measured; (c) every refusal number D118–D132 still needs recomputing on the mixed benchmark before publication — this entry fixes the mechanism, not the record.
+
 ## 2026-07-29 — D133: The store learns perfectly when it knows it doesn't know — but it only knows that 36% of the time, and the simplest unanswerable question was never in any of our benchmarks
 `scripts/exp38_update.py`. Two prompts, one experiment: does `disbelief` conflate "not in our store" with "not true", and can the store answer, after an update, what it could not answer before?
 
@@ -40,7 +67,7 @@ Format: date · decision · rationale · revisit-when.
 | margin only (D124) | 0.2900 | 0.259 | 0.343 | 0.000 |
 | combined, fitted on calibration | 0.1616 | 0.091 | 0.312 | 0.250 |
 
-**The first threshold-free statement this project has been able to make: half of all questions can be answered at ≤5% error.** That is a far more useful claim than any single refusal rate, and it is directly comparable across future corpora.
+**The first threshold-free statement this project has been able to make: half of all questions can be answered at ≤5% error.** **[RESCOPED BY D134: measured on a chain-break-only unanswerable population. On the mixed benchmark the same scorer gives AURC 0.4734, not 0.1322 — this figure was overstated ~3.6×.]** That is a far more useful claim than any single refusal rate, and it is directly comparable across future corpora.
 
 **My proposed fix failed.** A logistic combination of six signals the walker already computes — residual, per-step margin, branching, answer-set size, path length, predicted magnitude — **ranks worse than the residual alone** (0.1616 vs 0.1322). Margin alone is much worse still (0.2900), consistent with D124 where it failed as a threshold. So the residual is not merely adequate, it is the best ranker available here, and adding signals to it degrades ranking.
 

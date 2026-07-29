@@ -1,0 +1,103 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T15:36:06.257062+00:00",
+  "commit": "5457df6a8b4dabf349e383baa969fc9bfb740cf2",
+  "dirty": true,
+  "command": "scripts/exp39_typegate.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "RES_THR": 0.8,
+   "TTHR": 0.4,
+   "K_BASIS": 48
+  }
+ },
+ "type_fit_threshold": 0.4,
+ "results": {
+  "ans_d1": {
+   "off": {
+    "correct": 0.875,
+    "wrong": 0.1183,
+    "refuse": 0.0067
+   },
+   "on": {
+    "correct": 0.765,
+    "wrong": 0.045,
+    "refuse": 0.19
+   },
+   "n": 600
+  },
+  "ans_d2": {
+   "off": {
+    "correct": 0.715,
+    "wrong": 0.175,
+    "refuse": 0.11
+   },
+   "on": {
+    "correct": 0.62,
+    "wrong": 0.1017,
+    "refuse": 0.2783
+   },
+   "n": 600
+  },
+  "chain_break": {
+   "off": {
+    "correct": 0.0,
+    "wrong": 0.6633,
+    "refuse": 0.3367
+   },
+   "on": {
+    "correct": 0.0,
+    "wrong": 0.35,
+    "refuse": 0.65
+   },
+   "n": 1200
+  },
+  "not_applicable": {
+   "off": {
+    "correct": 0.0,
+    "wrong": 0.95,
+    "refuse": 0.05
+   },
+   "on": {
+    "correct": 0.0,
+    "wrong": 0.3067,
+    "refuse": 0.6933
+   },
+   "n": 600
+  },
+  "absent_entity": {
+   "off": {
+    "correct": 0.0,
+    "wrong": 0.0008,
+    "refuse": 0.9992
+   },
+   "on": {
+    "correct": 0.0,
+    "wrong": 0.0008,
+    "refuse": 0.9992
+   },
+   "n": 1200
+  }
+ },
+ "not_applicable_refusal": {
+  "gate_off": 0.05,
+  "gate_on": 0.6933,
+  "ci95": [
+   0.6536,
+   0.7273
+  ],
+  "probe_ceiling": 0.965
+ },
+ "aurc_mixed": {
+  "residual_only": 0.4734,
+  "residual_plus_type": 0.4901
+ },
+ "scope": "Mixed unanswerable benchmark per audit law #9: chain_break (all of D118-D132), not_applicable (relation real, entity real, pair absent) and absent_entity (subject not in this store; foreign subjects taken from the arXiv component so they are real strings rather than fabrications). Never averaged. The type gate reads r_asked off the TARGET, not the walked path, or it would be circular. Answer-type centroids are closed-form from the store, untrained."
+}
