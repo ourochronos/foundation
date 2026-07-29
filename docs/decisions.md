@@ -2,6 +2,36 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D116: Distribution match dominates scale — 800 domain-selected vocabulary relations beat 3,000 random ones and match the corpus itself, using none of it
+`scripts/exp23_vocabpretrain.py`. D115 concluded the binding constraint was the number of relation types trained on. The head's job is a general text→relation-space map with nothing corpus-specific about it, and Wikidata's 13,713 properties ship with aliases — enough to synthesise `(question, relation coordinate)` pairs for thousands of relations that never appear in this corpus. So the head was trained **entirely on vocabulary**, subjects filler, with **all 26 corpus relations held out** (stricter than D113–D115, where 18 were trained). Evaluation set, candidate list and chance rate are identical to D115, so the numbers compare directly.
+
+**Random vocabulary underperforms, and non-monotonically:**
+
+| vocabulary relations (random) | 50 | 200 | 800 | 3000 |
+|---|---|---|---|---|
+| held-out top-1 | 0.038 | 0.075 | **0.107** | 0.052 |
+| end-to-end precision | 0.261 | 0.345 | 0.374 | 0.236 |
+
+3,000 vocabulary relations lose to 19 corpus relations (0.240). Taken alone that would refute D115. But the run confounds two things — more training relations *and* a basis fit on those same mostly-off-domain properties. Wikidata's tail is database identifiers and taxon codes (`NPSN Indonesian school ID`, `FIPS 5-2 alpha code`), nothing like our biographical relations.
+
+**Selecting the vocabulary by domain separates them.** The N properties whose labels sit nearest the 19 **known** corpus relations — the held-out 8 never used for selection:
+
+| n | random | domain-filtered |
+|---|---|---|
+| 50 | 0.038 | **0.153** |
+| 200 | 0.075 | **0.196** |
+| 800 | 0.107 | **0.238** |
+
+At matched n=800 domain selection is **2.2× better**, and reaches 0.238 top-1 / **0.636 end-to-end precision** — matching training on our own corpus relations (D115: 0.240 / 0.574) while **using none of them**. Still rising at n=800, so not saturated.
+
+**This is the reindex-free story working end to end, for the first time.** Freeze the basis, train the head once on domain-relevant external vocabulary, and a relation the system has *never seen in any form* is plannable on arrival at 0.636 precision-when-answered. No stored claim is re-projected; no head is retrained when the relation appears.
+
+**The unifying finding across D114–D116, which is the transferable result**: for this mechanism, **distribution match dominates scale on every axis tested**. Basis pool (D114: entity-fit 0.110 vs relation-fit 0.286; mixed pool worse at 0.078 because relations were 0.6% of it). Basis vocabulary (D115: 13,713 external properties lose to 18 in-domain ones at matched K). Training vocabulary (here: 800 domain-selected beat 3,000 random). Three different axes, same answer. **"Over-provision" is only a virtue when the provision is on-distribution**, and D6's plan to over-provision one global 100k basis needs that qualification written into it.
+
+**Honest scope**: D115's framing — "the constraint is the number of relation types" — was half right and is corrected here to *the number of on-distribution relation types*. Domain selection uses known relations, so it is not zero-knowledge; it needs a seed vocabulary, which any real deployment has. Single-hop throughout. Same 8 held-out relations and unstratified split as D113–D115, so the entire D113–D116 arc shares that limitation.
+
+**Revisit**: (a) the domain-filtered curve is unsaturated — push n past 800 and find the knee; (b) selection by centroid similarity is the crudest possible filter, and a coverage-based selection (spread over the region rather than nearest the mean) is the obvious improvement; (c) still nothing multi-hop, which is now the longest-standing gap in this arc.
+
 ## 2026-07-28 — D115: Over-provisioning the relation basis fails twice — the binding constraint is the RELATION VOCABULARY, not the basis
 D114 recommended over-provisioning the relation basis once from a large external vocabulary, following D6's logic. That recommendation is **wrong**, and two independent attempts to make it work both failed. Fetched all **13,713 labelled Wikidata properties** (`data/wikidata_properties.json`, one SPARQL query) — a basis fit from a vocabulary that never saw this corpus, its queries, or the train/held-out split, so every corpus relation enters purely as coordinates.
 

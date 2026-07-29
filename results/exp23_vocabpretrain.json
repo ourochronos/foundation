@@ -1,0 +1,102 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T04:10:50.216677+00:00",
+  "commit": "b7f5e332df8ead3b745b98f6c06be8ea312f3c19",
+  "dirty": true,
+  "command": "scripts/exp23_vocabpretrain.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "SIZES": [
+    50,
+    200,
+    800,
+    3000
+   ],
+   "K_BASIS": 8,
+   "N_ALIAS": 3,
+   "held_out": [
+    "P112",
+    "P131",
+    "P159",
+    "P19",
+    "P20",
+    "P50",
+    "P800",
+    "P937"
+   ]
+  }
+ },
+ "n_eval_questions": 5636,
+ "chance_top1": 0.037,
+ "curve": {
+  "50": {
+   "top1": 0.0378,
+   "mrr": 0.1491,
+   "e2e_precision": 0.261,
+   "tally": {
+    "wrong": 708,
+    "abstain": 4678,
+    "correct": 250
+   }
+  },
+  "200": {
+   "top1": 0.0754,
+   "mrr": 0.1898,
+   "e2e_precision": 0.3446,
+   "tally": {
+    "abstain": 4336,
+    "correct": 448,
+    "wrong": 852
+   }
+  },
+  "800": {
+   "top1": 0.1073,
+   "mrr": 0.2288,
+   "e2e_precision": 0.3738,
+   "tally": {
+    "abstain": 3980,
+    "correct": 619,
+    "wrong": 1037
+   }
+  },
+  "3000": {
+   "top1": 0.0523,
+   "mrr": 0.18,
+   "e2e_precision": 0.2364,
+   "tally": {
+    "abstain": 4316,
+    "wrong": 1008,
+    "correct": 312
+   }
+  }
+ },
+ "reference": {
+  "d114_corpus_fit_18_rels": 0.286,
+  "d115_19_rels": 0.24
+ },
+ "scope": "Head trained ONLY on synthetic questions built from Wikidata property aliases; subjects are filler names. All 26 corpus relations are held out, a stricter setting than D113-D115 where 18 were trained. Evaluation set, candidate list and chance rate are identical to D115 so numbers compare. Single-hop.",
+ "domain_filtered": {
+  "50": {
+   "random_top1": 0.0378,
+   "domain_top1": 0.1535,
+   "domain_e2e_precision": 0.5403
+  },
+  "200": {
+   "random_top1": 0.0754,
+   "domain_top1": 0.1964,
+   "domain_e2e_precision": 0.5719
+  },
+  "800": {
+   "random_top1": 0.1073,
+   "domain_top1": 0.2385,
+   "domain_e2e_precision": 0.6365
+  }
+ }
+}
