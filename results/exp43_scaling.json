@@ -1,0 +1,56 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T16:11:20.743481+00:00",
+  "commit": "7fe631ebb87794d31311961c5e7d9a46e2bd8547",
+  "dirty": true,
+  "command": "scripts/exp43_scaling.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MAX_AL": 12,
+   "N_SUBJ": 40
+  }
+ },
+ "n_relations": 34,
+ "alias_curve": {
+  "2": {
+   "head": 0.7231,
+   "knn": 0.9525
+  },
+  "4": {
+   "head": 0.7897,
+   "knn": 0.9568
+  },
+  "6": {
+   "head": 0.8109,
+   "knn": 0.9632
+  },
+  "8": {
+   "head": 0.8768,
+   "knn": 0.9717
+  },
+  "10": {
+   "head": 0.9327,
+   "knn": 0.9745
+  }
+ },
+ "anchor_k_fallback": {
+  "8": {
+   "novel": 0.113,
+   "known": 0.8963
+  },
+  "16": {
+   "novel": 0.2264,
+   "known": 0.9793
+  }
+ },
+ "best_k": 16,
+ "decoder_probe": "not run, and not needed: the walker returns store objects verbatim (D81 quote-never-reconstruct) and invokes no decoder at any point, so decoder capacity cannot bound any result in D110-D138",
+ "scope": "Alias scaling uses the 34 relations carrying >=12 aliases, with the last two held out as evaluation phrasings; the head and a 1-NN baseline are reported together per the D129 addendum. The K sweep is scoped to the FALLBACK path only \u2014 8 relations held out entirely, basis fit on the rest \u2014 which is the job D125/D131/D136 left the basis doing."
+}

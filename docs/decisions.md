@@ -2,6 +2,28 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D139: Alias collection is the cheapest unexploited lever (head 0.723 → 0.933) — and it is a HEAD fix, not a retrieval one
+`scripts/exp43_scaling.py`. Task 6, the measurable parts.
+
+**A. Alias scaling, extended past D129's stopping point.** D129 measured relation identification improving with aliases per relation and stopped at 4 with the curve climbing. Wikidata carries a median of 12 per relation (max 80); 34 of ours have ≥12. Holding the last two out as evaluation phrasings:
+
+| aliases trained on | 2 | 4 | 6 | 8 | 10 |
+|---|---|---|---|---|---|
+| parametric head | 0.723 | 0.790 | 0.811 | 0.877 | **0.933** |
+| 1-NN retrieval | 0.953 | 0.957 | 0.963 | 0.972 | 0.975 |
+
+**The head gains +0.210 from 2→10 aliases and is still climbing.** This is free data already sitting in `data/wikidata_properties.json`, and it is the cheapest unexploited improvement in the project.
+
+**But it is a head-specific fix, which is the more useful half.** **1-NN retrieval is already at 0.953 with only two aliases** and gains 0.022 across the whole sweep. Retrieval does not need alias diversity; the parametric head does — it needs many surface forms to learn a mapping that retrieval gets from a single stored neighbour. That is D129's "the head destroys information retrieval preserves" showing up as a *data requirement*: **the head's appetite for aliases is a symptom of the same weakness, not an independent lever.** Anyone choosing retrieval can skip alias collection entirely.
+
+**B. The K sweep for the fallback path is inconclusive and the reason is structural.** D114's knee (K=8) was found when the basis was the whole representation; D125/D131/D136 narrowed its job to the novel-relation fallback, and that job was never swept. Here only K=8 (novel 0.113) and K=16 (**0.226**) could run: the relation pool is 34, eight are held out, so **K is capped at 26** and K=32/48/64 are unrunnable. Two points do not locate a knee. K=16 beats K=8 and that is all this establishes. *(These figures are pure relation identification over 34 candidates from label coordinates and are not comparable to D125's 0.742, which was end-to-end walking over 61 relations with a different basis pool.)*
+
+**C. The decoder question is settled by inspection, not by a probe.** The walker returns store objects **verbatim** — D81's quote-never-reconstruct — and invokes no decoder at any point in D110–D139. **Decoder capacity therefore cannot bound any result in this arc**, and rebuilding on a more capable base would not move a single number measured here. That closes the item raised earlier without spending a rebuild on it.
+
+**D. Wiki expansion is deferred deliberately** as data collection rather than measurement; nothing in this arc is currently bounded by corpus size in a way more crawling would fix, and D138 showed the binding constraints are branching and corpus-local thresholds.
+
+**Revisit**: (a) push the alias curve past 10 — it has not flattened, and the relations with 20+ aliases would extend it; (b) the fallback K sweep needs a larger relation pool to be conclusive, which the full 13.7k Wikidata vocabulary could supply; (c) if retrieval becomes the deployed component, item (a) stops mattering, which is worth deciding before spending on it.
+
 ## 2026-07-29 — D138: On human-written questions, the phrasing catastrophe mostly disappears and depth decay reverses
 `scripts/exp42_natural.py`. Task 5, and the largest standing caveat closed: every question from D110 to D137 was templated by me. MQuAKE-CF-3k supplies 3,000 cases at chain lengths 2/3/4 (1,000 each — a depth axis the benchmark chose, not one I constructed), **three human-written phrasings per case**, and Wikidata PIDs so the label-derived coordinate machinery applies unchanged. The store is built from the benchmark's own ground-truth triples; phrasing 0 trains, phrasings 1–2 are held out. D134's type gate and D137's bidirectional traversal are on; a not-applicable set is included per law #9.
 
