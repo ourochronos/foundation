@@ -2,6 +2,32 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D142: The type threshold does NOT transfer between stores — but it can be derived from the store instead of tuned, which is the useful half
+`scripts/exp45_thresholds.py`. Task 3. D124, D126 and D138 are three findings of one shape: a threshold tuned on one store does not work on another. The mechanism under test was whether the threshold can be **derived from store statistics** — the p25 of within-relation type fit, using no questions, no labels and no head — instead of tuned against labelled data.
+
+**The statistic captures the right property.** Within-relation type fit averages **0.778 on MQuAKE** against **0.562 on wiki**: MQuAKE's ranges (countries, capitals, sports) are far tighter categories than wiki's heterogeneous objects. The derivation duly returns a higher threshold for MQuAKE (0.672) than for wiki (0.453). The *ordering* is right and it is right for the reason the derivation assumes.
+
+**Transfer fails, in both directions and decisively:**
+
+| store | threshold source | value | answerable correct | not-applicable refused |
+|---|---|---|---|---|
+| wiki | tuned (D134) | 0.400 | 0.751 | 0.659 |
+| wiki | derived, same store | 0.453 | 0.648 | 0.763 |
+| wiki | **derived on MQuAKE** | 0.672 | **0.142** | 0.981 |
+| MQuAKE | tuned (D138) | 0.300 | 0.972 | 0.152 |
+| MQuAKE | derived, same store | 0.672 | 0.669 | 0.922 |
+| MQuAKE | **derived on wiki** | 0.453 | 0.889 | 0.459 |
+
+Applying wiki's threshold to MQuAKE or the reverse moves refusal by ±0.31 and, in the worst case, collapses coverage from 0.751 to **0.142**. **There is no universal constant here**, and per the plan's stop condition this is reported rather than iterated on.
+
+**The useful half is that store-local derivation replaces tuning data.** The derived threshold needs only the store — no labelled questions, no held-out set, no calibration population. That matters practically: a new deployment can set its type gate from its own claims on day one, which is exactly the situation D138 exposed when MQuAKE inherited wiki's tuned value and refused at 0.314.
+
+**Whether the derived point is *better* depends on a preference the numbers cannot settle, and I will not assert one.** On MQuAKE the derived threshold moves refusal 0.152 → **0.922** while coverage falls 0.972 → 0.669. For a project whose central claim is honest refusal that looks like a clear improvement — but the "tuned" values were themselves one point on the D124 frontier, chosen by a worst-of-two rule that weighted coverage. Comparing a derived point to a tuned point is comparing two choices of operating point, not a method to a baseline. **The honest statement is that derivation gives you a principled place to stand without labelled data, not that it gives you a better one.**
+
+**Decision**: thresholds are **per-store and derived, not tuned and shared**. Any future corpus derives its own; no threshold crosses a store boundary. This closes the D124/D126/D138 family — the shared property is not that thresholds are fragile but that **they are a function of the store, and the store is available**.
+
+**Revisit**: (a) the p25 quantile is itself an unswept constant — the same criticism D114 made of an unswept K, and it deserves the same sweep; (b) the residual threshold was held at 0.8 throughout on the argument that coordinates are unit vectors so it is already scale-free, which is plausible and untested; (c) a proper comparison needs both thresholds placed at matched refusal or matched coverage, which would separate "different operating point" from "better calibration" — the single most useful follow-up here.
+
 ## 2026-07-29 — D141: The store revises rather than going stale — but revision is far harder than addition, and single edits are worse than multiple
 `scripts/exp44_supersession.py`. Task 2. D133 tested **addition** (withheld facts appended, refused→correct 1.000). This tests **supersession** — revising a fact already present, where the old answer must stop winning — on MQuAKE-CF-3k's counterfactual rewrites and its **human-written** questions, with edits applied through `foundation/kb.py`'s real `edit()` path so D55's shadow-don't-delete semantics are what is exercised. 1,200 cases (400 per depth), head frozen before the first edit.
 

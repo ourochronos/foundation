@@ -1,0 +1,114 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T17:46:28.671598+00:00",
+  "commit": "9a24c1110ade6bf11571e36937755a63227253af",
+  "dirty": true,
+  "command": "scripts/exp45_thresholds.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "PCTL": 25,
+   "RES_THR": 0.8
+  }
+ },
+ "derived": {
+  "wiki": 0.453,
+  "mquake": 0.6725
+ },
+ "within_relation_fit_mean": {
+  "wiki": 0.5618,
+  "mquake": 0.7783
+ },
+ "tuned": {
+  "wiki": 0.4,
+  "mquake": 0.3
+ },
+ "results": {
+  "wiki|tuned (D134/D138)": {
+   "thr": 0.4,
+   "answerable": {
+    "correct": 0.7511,
+    "wrong": 0.0656,
+    "refuse": 0.1833
+   },
+   "not_applicable": {
+    "correct": 0.0,
+    "wrong": 0.3411,
+    "refuse": 0.6589
+   }
+  },
+  "wiki|derived, same store": {
+   "thr": 0.453,
+   "answerable": {
+    "correct": 0.6478,
+    "wrong": 0.0489,
+    "refuse": 0.3033
+   },
+   "not_applicable": {
+    "correct": 0.0,
+    "wrong": 0.2367,
+    "refuse": 0.7633
+   }
+  },
+  "wiki|derived on mquake": {
+   "thr": 0.6725,
+   "answerable": {
+    "correct": 0.1422,
+    "wrong": 0.01,
+    "refuse": 0.8478
+   },
+   "not_applicable": {
+    "correct": 0.0,
+    "wrong": 0.0189,
+    "refuse": 0.9811
+   }
+  },
+  "mquake|tuned (D134/D138)": {
+   "thr": 0.3,
+   "answerable": {
+    "correct": 0.9722,
+    "wrong": 0.01,
+    "refuse": 0.0178
+   },
+   "not_applicable": {
+    "correct": 0.0,
+    "wrong": 0.8478,
+    "refuse": 0.1522
+   }
+  },
+  "mquake|derived, same store": {
+   "thr": 0.6725,
+   "answerable": {
+    "correct": 0.6689,
+    "wrong": 0.0022,
+    "refuse": 0.3289
+   },
+   "not_applicable": {
+    "correct": 0.0,
+    "wrong": 0.0778,
+    "refuse": 0.9222
+   }
+  },
+  "mquake|derived on wiki": {
+   "thr": 0.453,
+   "answerable": {
+    "correct": 0.8889,
+    "wrong": 0.0078,
+    "refuse": 0.1033
+   },
+   "not_applicable": {
+    "correct": 0.0,
+    "wrong": 0.5411,
+    "refuse": 0.4589
+   }
+  }
+ },
+ "transfers": false,
+ "scope": "The type-gate threshold is derived as the p25 of within-relation type fit \u2014 a pure store statistic using no questions, labels or head. Transfer is the test: each store is evaluated at its tuned threshold, at its own derived threshold, and at the threshold derived from the OTHER store. Only the third is evidence. The residual threshold is held fixed at 0.8 throughout, since coordinates are unit vectors and it already transferred."
+}
