@@ -2,6 +2,25 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D130: First blind adjudication of CLAIMS rather than extractions — 7 of 8 flagged, two were factual errors, and the headline claim turns out to be unmeasured
+`scripts/adjudicate.py claims`, `data/adjudication/claims_gpt-5_6-sol.json`. Every prior spec in the adjudicator audits *extraction precision*. This session added no extractions; it added ~20 empirical claims, five of which our own later experiments overturned or qualified. So the thing needing an independent check was **whether the claims we wrote are supported by the numbers we measured**. The adjudicator (`gpt-5.6-sol`) sees the claim, its stated scope condition, and the raw numbers from the cited results file — never `decisions.md` prose, so it cannot be led.
+
+**Result: 7 of 8 claims flagged** (6 OVERREACH, 1 UNSUPPORTED). Per D98's law an adjudicator is a second rater and not an oracle, so every flag was verified against the source data before anything changed. **Most of them were right.**
+
+**Two were outright factual errors in our own writing:**
+- **The zero-shot 3-hop figure was stale.** D119 and the claims table both said **0.851**; `results/exp26_threehop.json` says **0.8489**. The 0.851 came from the run *before* D120's alignment fix and was never updated when the corrected run produced a different value. Corrected everywhere to 0.849.
+- **"~0.000 wrong" was a conflation.** Claim 5 attributed a ~0.000 wrong-rate to D118. D118's actual rates are **0.071 answerable-wrong and 0.030 answered-anyway**; the ~0.000 came from D121's *AI-corpus depth* result and was imported into the wrong row.
+
+**The most important flag is one we could not have caught ourselves.** On claim 1 the adjudicator observed that *no number establishes appending without reindexing*. That is correct and it is the project's headline. We measured that a novel relation is **answerable** (0.742); we have never run an **append-then-query cycle** and shown no reindex was required. The reindex-free property is an architectural consequence of label-derived coordinates — inferred from the design, never demonstrated. **That experiment does not exist and must be built before the claim is published in any form.**
+
+**Three further flags were valid scope defects**, now fixed in `docs/18-writeup-outline.md`: composition parity holds at **depth 2 only** (0.925/0.913) and degrades at depth 3 (0.626/0.683); "order and depth need not be learned" was scoped "any" when it was measured on two corpora under one walker formulation; and "ambiguity is the mechanism" behind the density bound is an *interpretation* of the gain overlap (1.198 vs 1.390), not established by it.
+
+**And three flags were OUR failure, not the claims'.** For claims 1, 6 and 8 the evidence slice passed to the adjudicator was narrower than the claim: only the raw baseline and not the anchor-basis sweep; only `selected_C` and not the calibration tables showing both fixes failing; only the depth experiment for a claim spanning three. Re-running with complete evidence **flipped claim 8 to SUPPORTED**. **This is D103's law reappearing in a new context** — *evidence for a verdict must not be narrower than evidence for the claim* — and it now applies to adjudicating our own claims, not just extractions. Recorded as an addendum to that law rather than a new one.
+
+**Decision**: the claims table in `docs/18` is revised throughout, and the adjudicator's flags are treated as the default state of a claim until re-verified. **An unadjudicated claims table should not be considered publishable**; this pass changed six of eight rows and found two errors that had survived a full session of self-review.
+
+**Revisit**: (a) build the append-then-query experiment — it is now the highest-priority gap and the one the paper's title depends on; (b) re-run `claims` after the table settles, since three flags were evidence-selection artifacts and the corrected table has not been adjudicated; (c) a second adjudicator model would separate "Sol is strict" from "the claim is weak" — every flag here came from one rater.
+
 ## 2026-07-29 — D129: Do NOT fine-tune the encoder — the parametric head is destroying information that 1-NN retrieval preserves
 `scripts/exp35_phrasing_diag.py`. D128 left phrasing as the dominant unsolved failure and named encoder fine-tuning as the only untried lever. Before spending on an expensive, hard-to-reverse step, three cheap diagnostics were run to attribute the failure to a component. **All three point away from the encoder.**
 
@@ -276,7 +295,7 @@ Three things happened, and the first is the one that matters most.
 
 Worst-of-five 0.867, and the wrong-rate is 0.001 and 0.000 — the honest-refusal property this project is built on, holding at two depths simultaneously with one rule.
 
-**Corrected claim, replacing D119's**: *answering* extrapolates to unseen depth for free (D119's 0.851 zero-shot, which stands); *refusal* does not, but it is fixable with data rather than architecture — the head must have seen the depth, and the threshold must be absolute rather than fractional. Depth 3 is shippable after all, provided depth-3 examples are in training.
+**Corrected claim, replacing D119's**: *answering* extrapolates to unseen depth for free (D119's 0.849 zero-shot, which stands); *refusal* does not, but it is fixable with data rather than architecture — the head must have seen the depth, and the threshold must be absolute rather than fractional. Depth 3 is shippable after all, provided depth-3 examples are in training.
 
 **Revisit**: (a) depth 4+ presumably needs depth-4 examples by the same argument, which makes "unbounded depth" mean "unbounded given examples at each depth" — a materially weaker claim that should be stated that way; (b) depth-3 answerable n=77 held-out compositions is small, and the CI is correspondingly wide; (c) every result in D111–D120 predates the alignment fix except D118, D119's fractional table, and D120 itself — the rest were computed in-process and are believed sound, but that belief is now an assumption rather than a verification.
 
@@ -284,13 +303,13 @@ Worst-of-five 0.867, and the wrong-rate is 0.001 and 0.000 — the honest-refusa
 **[PARTIALLY SUPERSEDED BY D120]** — the depth-extrapolation finding stands, but D119's absolute-threshold table was computed from misaligned cached embeddings and its conclusion ("the fix is architectural, not a threshold") is WRONG. See D120.
 `scripts/exp26_threehop.py`. Two claims on trial, and they came apart cleanly.
 
-**Depth is genuinely not a trained class — this holds.** With **no 3-hop data in training at all**, the walker answers 3-hop questions at **0.851 correct / 0.064 wrong / 0.085 abstain, exact chain 0.810** (n=609, CI95 [0.820, 0.877]). The sum head had only ever seen targets of magnitude ~1 (singles) and ~2 (2-hop), so depth 3 is extrapolation rather than interpolation, and it works. D117's claim that a 3-hop is merely a longer walk rather than an R³ problem is confirmed. Training on 2/3 of the 3-compositions and evaluating the held-out third improves it further (0.961 correct), but the zero-shot number is the one that matters.
+**Depth is genuinely not a trained class — this holds.** With **no 3-hop data in training at all**, the walker answers 3-hop questions at **0.849 correct / 0.064 wrong / 0.085 abstain, exact chain 0.810** (n=609, CI95 [0.820, 0.877]). The sum head had only ever seen targets of magnitude ~1 (singles) and ~2 (2-hop), so depth 3 is extrapolation rather than interpolation, and it works. D117's claim that a 3-hop is merely a longer walk rather than an R³ problem is confirmed. Training on 2/3 of the 3-compositions and evaluating the held-out third improves it further (0.961 correct), but the zero-shot number is the one that matters.
 
 **Refusal does not survive depth 3, and three variants failed.** Unanswerable 3-hops were built **graded by where the chain dies** — `break@2` (first hop walkable, second empty) and `break@3` (first two walkable, third empty), with no-first-hop chains excluded per D118.
 
 | variant | answerable 3-hop | break@2 refused | break@3 refused |
 |---|---|---|---|
-| D118 fractional threshold 0.40, unchanged | 0.851 | 0.907 | **0.267** |
+| D118 fractional threshold 0.40, unchanged | 0.849 | 0.907 | **0.267** |
 | absolute residual, thr 0.4 | 0.051 | 0.989 | 0.822 |
 | absolute residual, thr 1.0 | 0.507 | 0.617 | 0.052 |
 | absolute + trained on 3-hop, best joint | 0.312 | 0.956 | 0.731 |

@@ -349,5 +349,132 @@ elif sys.argv[1] == "g2fp25":
         '"<short>"} — nothing else.\n\n' + "\n\n".join(blocks))
     run("g2fp25", items, prompt, {"TRUE", "FALSE"}, mine)
 
+elif sys.argv[1] == "claims":
+    # D130: the first adjudication of CLAIMS rather than extractions.
+    #
+    # Every existing spec here audits extraction precision — is this claim
+    # supported by its source text. This session added no extractions; it
+    # added ~20 empirical claims, five of which our own later experiments
+    # overturned or qualified (D112, D118, D119, D121, D125). So the thing
+    # needing an independent blind check is whether the claims we wrote are
+    # supported by the numbers we measured.
+    #
+    # The adjudicator sees the claim, its stated scope condition, and the
+    # RAW numbers from the cited results JSON. It never sees decisions.md
+    # prose, so it cannot be led by our reasoning — the same blindness the
+    # extraction specs rely on.
+    def _nums(path: str, keys: list[str]) -> str:
+        d = json.loads((ROOT / path).read_text())
+        out = {}
+        for k in keys:
+            cur, ok = d, True
+            for part in k.split("."):
+                if isinstance(cur, dict) and part in cur:
+                    cur = cur[part]
+                else:
+                    ok = False
+                    break
+            if ok:
+                out[k] = cur
+        return json.dumps(out, indent=1)[:2600]
+
+    CLAIMS = [
+        {"claim": "A knowledge store can be appended to without reindexing, "
+                  "and a relation type the system has NEVER trained on is "
+                  "immediately queryable.",
+         "scope": "relation vocabulary >= ~50; the relation has a text "
+                  "LABEL; anchor-basis representation",
+         "src": ("results/exp31_novelrel.json",
+                 ["results", "anchor_basis_fix", "basis_threshold_sweep",
+                  "basis_selected_thr", "controls", "raw_baseline"])},
+        {"claim": "Composition generalises to relation pairs never seen "
+                  "composed, at parity with pairs that were trained.",
+         "scope": ">= ~60 relations; pair-clean holdout (training excludes "
+                  "every chain containing a held-out pair at every depth)",
+         "src": ("results/exp29_wikiwalker.json",
+                 ["results", "controls", "branching", "n_pairs",
+                  "n_held_pairs"])},
+        {"claim": "Order and depth need not be learned — the store supplies "
+                  "both; held-out-composition accuracy rises from 0.534 to "
+                  "0.912 when order comes from walkability.",
+         "scope": "none stated",
+         "src": ("results/exp24_walker.json",
+                 ["selected", "baseline_d112_path_planner", "answer_sets"])},
+        {"claim": "Depth extrapolates without depth-specific training for "
+                  "ANSWERING: 3-hop at 0.851 with no 3-hop in training.",
+         "scope": "applies to answering only; refusal does NOT extrapolate",
+         "src": ("results/exp26_threehop.json",
+                 ["zero_shot_depth", "trained_on_3hop",
+                  "depth2_reference_d118"])},
+        {"claim": "The system refuses rather than guessing: 0.970 refusal "
+                  "on unanswerable questions with a ~0.000 wrong-rate.",
+         "scope": "SPARSE stores only; on a dense store refusal is "
+                  "0.72-0.98 with wrong 0.017-0.073",
+         "src": ("results/exp25_refusal.json",
+                 ["selected", "unanswerable_refusal_ci95",
+                  "n_unanswerable"])},
+        {"claim": "Refusal quality is bounded by store density; the "
+                  "mechanism is ambiguity rather than noise, and two "
+                  "principled fixes failed to shift the frontier.",
+         "scope": "none stated",
+         "src": ("results/exp30_refusal_diag.json",
+                 ["branching_stratified_refusal", "residual_separation",
+                  "ambiguity_test", "adaptive_gain.calibration",
+                  "adaptive_gain.held_out", "ambiguity_brake.calibration"])},
+        {"claim": "Compression buys generalisation and costs precision: an "
+                  "anchor basis beats raw on novel relations and on unseen "
+                  "phrasings, and loses to raw at depth.",
+         "scope": "none stated",
+         "src": ("results/exp32_depth4.json", ["results"]),
+         "extra": [("results/exp31_novelrel.json",
+                    ["basis_threshold_sweep", "raw_baseline"]),
+                   ("results/exp34_aliaspretrain.json", ["basis_2x2"])]},
+        {"claim": "A parametric head destroys information that 1-NN "
+                  "retrieval preserves: 0.925 vs 0.614 on held-out "
+                  "phrasings, so encoder fine-tuning is not indicated.",
+         "scope": "depth-1 relation identification only",
+         "src": ("results/exp35_phrasing_diag.json",
+                 ["encoder_geometry", "nearest_neighbour_relation_id",
+                  "alias_count_ablation", "alternatives_to_head",
+                  "head_baseline_2alias"])},
+    ]
+    blocks, items = [], []
+    for i, c in enumerate(CLAIMS):
+        path, keys = c["src"]
+        items.append(c)
+        ev = f"MEASURED NUMBERS (verbatim from {path}):\n{_nums(path, keys)}"
+        for xp, xk in c.get("extra", []):
+            ev += f"\n\nALSO (verbatim from {xp}):\n{_nums(xp, xk)}"
+        blocks.append(
+            f"### ITEM {i}\nCLAIM: {c['claim']}\n"
+            f"STATED SCOPE CONDITION: {c['scope']}\n{ev}")
+    mine = {i: "SUPPORTED" for i in range(len(CLAIMS))}
+    header = (
+        "You are an independent adjudicator auditing whether written claims "
+        "are supported by measured numbers. For each item you get a CLAIM, "
+        "the SCOPE CONDITION its authors attached to it, and the RAW "
+        "numbers from the experiment's results file. You do not get the "
+        "authors' reasoning; judge only from the numbers.\n\n"
+        "Verdict for each item:\n"
+        "  SUPPORTED  - the numbers support the claim AS STATED, including "
+        "its scope condition\n"
+        "  OVERREACH  - the numbers support something weaker; the claim "
+        "generalises beyond what was measured, or a necessary scope "
+        "condition is missing or understated\n"
+        "  UNSUPPORTED - the numbers do not support the claim, or "
+        "contradict it\n\n"
+        "Be skeptical. If a claim quotes a figure that is not in the "
+        "numbers, or omits a condition the numbers show is load-bearing "
+        "(a population where it fails, a threshold it depends on), that is "
+        "OVERREACH not SUPPORTED. In the reason, name the specific number "
+        "that drove your verdict.\n"
+        "Do not use any tools. Output ONLY a JSON array of "
+        f"{len(CLAIMS)} objects, format "
+        '{"idx": <n>, "verdict": "SUPPORTED"|"OVERREACH"|"UNSUPPORTED", '
+        '"reason": "<short>"} — nothing else.\n\n')
+    run("claims", items, header + "\n\n".join(blocks),
+        {"SUPPORTED", "OVERREACH", "UNSUPPORTED"}, mine,
+        blocks=blocks, header=header)
+
 else:
     raise SystemExit(f"unknown audit {sys.argv[1]!r}")

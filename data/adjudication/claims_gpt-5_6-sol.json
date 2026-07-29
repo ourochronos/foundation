@@ -1,0 +1,96 @@
+{
+ "audit": "claims",
+ "model": "gpt-5.6-sol",
+ "n": 8,
+ "n_judged": 8,
+ "raw_agreement": 0.125,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 0,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Novel relations are queryable with basis accuracy up to 0.7595 at depth 1, but no number establishes appending without reindexing."
+  },
+  {
+   "idx": 1,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Held-out pairs generalise, but depth-3 correct accuracy is 0.6257 versus 0.6828 for trained pairs, not parity."
+  },
+  {
+   "idx": 2,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "The measured increase is 0.534 to 0.9123, but the numbers isolate neither depth learning nor the broad claim that order and depth need not be learned."
+  },
+  {
+   "idx": 3,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Zero-shot 3-hop answering is 0.8489, not the claimed 0.851; the answering-only qualification is otherwise supported."
+  },
+  {
+   "idx": 4,
+   "mine": "SUPPORTED",
+   "theirs": "UNSUPPORTED",
+   "their_reason": "Refusal is 5821/6000 = 0.9702, but wrong-rate is 179/6000 = 0.0298, not approximately 0.000."
+  },
+  {
+   "idx": 5,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Branching correlates negatively with refusal (-0.7881 to -0.9139), but these numbers do not establish ambiguity rather than noise or document two failed fixes."
+  },
+  {
+   "idx": 6,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Basis beats raw on novel depth-1 relations (0.5325 versus 0.2934 at threshold 0.4) and loses at depth, but no raw held-out-phrasing result is provided for comparison with 0.3129."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "OVERREACH",
+   "reason": "Novel relations are queryable with basis accuracy up to 0.7595 at depth 1, but no number establishes appending without reindexing."
+  },
+  "1": {
+   "verdict": "OVERREACH",
+   "reason": "Held-out pairs generalise, but depth-3 correct accuracy is 0.6257 versus 0.6828 for trained pairs, not parity."
+  },
+  "2": {
+   "verdict": "OVERREACH",
+   "reason": "The measured increase is 0.534 to 0.9123, but the numbers isolate neither depth learning nor the broad claim that order and depth need not be learned."
+  },
+  "3": {
+   "verdict": "OVERREACH",
+   "reason": "Zero-shot 3-hop answering is 0.8489, not the claimed 0.851; the answering-only qualification is otherwise supported."
+  },
+  "4": {
+   "verdict": "UNSUPPORTED",
+   "reason": "Refusal is 5821/6000 = 0.9702, but wrong-rate is 179/6000 = 0.0298, not approximately 0.000."
+  },
+  "5": {
+   "verdict": "OVERREACH",
+   "reason": "Branching correlates negatively with refusal (-0.7881 to -0.9139), but these numbers do not establish ambiguity rather than noise or document two failed fixes."
+  },
+  "6": {
+   "verdict": "OVERREACH",
+   "reason": "Basis beats raw on novel depth-1 relations (0.5325 versus 0.2934 at threshold 0.4) and loses at depth, but no raw held-out-phrasing result is provided for comparison with 0.3129."
+  },
+  "7": {
+   "verdict": "SUPPORTED",
+   "reason": "On depth-1 held-out phrasings, 1-NN scores 0.9255 versus 0.6139 for the parametric head, while relation-ID geometry remains strong at 0.9429."
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED"
+ }
+}
