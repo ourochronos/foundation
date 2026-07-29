@@ -2,6 +2,31 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D124: Refusal is bounded by store DENSITY, and the mechanism is ambiguity rather than noise — two principled fixes both fail to shift the frontier
+`scripts/exp30_refusal_diag.py`. D123 left "the honest-refusal property is corpus-dependent" as the most serious open item. Refusal is this project's central claim, so that is not an acceptable resting place without a mechanism. A hypothesis was pre-registered in the script docstring before the run.
+
+**Hypothesis (pre-registered): BRANCHING.** The walker takes the best-matching relation among those *available* at the current frontier. With more options per step, a chain that should die has more chances that some available relation clears `MIN_GAIN` and absorbs the residual. Prediction: **refusal falls monotonically as branching at the break step rises.** Falsifier: flat in branching.
+
+**Confirmed, across all three unanswerable populations:**
+
+| branching at break step | unans 2@2 | unans 3@2 | unans 3@3 |
+|---|---|---|---|
+| 1–2 | 0.855 | 0.987 | 0.872 |
+| 10–14 | 0.756 | 0.857 | 0.722 |
+| **correlation** | **−0.788** | **−0.834** | **−0.914** |
+
+**And the obvious alternative is excluded.** If the residual signal were simply worse on this corpus, the answerable and unanswerable distributions would overlap at the decision region. They do not — answerable p90 is **0.579**, unanswerable p10 is **0.639**. The residual separates cleanly. **This is not a threshold-calibration failure**; the walk finds a continuation and *spends* the residual before the threshold is ever consulted.
+
+**But the multiple-comparisons fix fails.** Requiring a larger gain when more options were considered (`MIN_GAIN + C·log|options|`) is the textbook correction and it barely moves anything: worst-case across five calibration populations goes 0.683 → 0.687 at C=0.05, the branching correlation shifts only −0.788 → −0.754, and held-out depth-3 wrong-rate gets *worse* (0.072 → 0.102). A correction that removes false positives does not help here.
+
+**Which points at the real mechanism: AMBIGUITY, not noise.** On unanswerable chains that were answered anyway, the chosen relation's gain is **median 1.198 (p10 0.957)**, against **1.390 (p10 1.212)** for correctly-answered chains. The competing relation is not a marginal false positive — it is a genuinely good match. With 61 relations and a dense store, an unanswerable question usually *does* have a plausible alternative continuation available. **No magnitude threshold can separate "a good match to the wrong question" from "a good match to the right one", because both are good matches.**
+
+**The ambiguity brake also fails to shift the frontier.** Stopping when the best relation does not beat the runner-up by a margin M is the signal ambiguity implies, and it does buy refusal — at M=0.4, refusal reaches 0.870 / 0.999 / 0.936 — but coverage collapses with it (trained depth-3 accuracy 0.683 → 0.141). The worst-case rule selects M=0. **Both fixes move along the same frontier rather than shifting it.** The frontier is real and selectable — M=0.3 giving 0.823/0.994/0.873 refusal is a defensible operating point for a system that prioritises not lying — but there is no free lunch here.
+
+**Decision, and it is a scoping decision rather than a fix**: refusal quality is bounded by **store density**. A denser store is simultaneously *more useful* — D123's composition generalisation exists because 61 relations give the head enough vocabulary — and *harder to refuse on*, because density is exactly what supplies plausible wrong continuations. **That tension is structural, not a bug**, and every claim about honest refusal must now carry a density condition. D118's ~0.000-wrong was obtained on a sparse 5-relation store and describes that regime only.
+
+**Revisit**: (a) the branching correlation is measured over binned means (5 bins, n ≥ 20 each) — a per-item logistic fit would be stronger and is cheap; (b) both fixes were single-parameter; a signal that uses the *identity* of the runner-up (is it plausible for this question, or merely plausible in general?) is untested and is the one shape not yet tried; (c) whether an AI-corpus-style sparse store still refuses well when its vocabulary is enlarged — which would separate density from vocabulary size — is untested and would settle whether the tension is truly unavoidable.
+
 ## 2026-07-29 — D123: Composition DOES generalise — D112's negative result was a 5-relation artifact, and relation-vocabulary size is the single constraint behind both open arcs
 `scripts/exp29_wikiwalker.py`. The first run of the D117–D122 walker on the wiki component with D113–D116's label-derived relation coordinates — the two arcs had never been run together, because the AI corpus's five relation names were hand-written for D117 and carry no vocabulary. 12,935 claims, **61 labelled relations, 624 realised adjacent pairs**.
 

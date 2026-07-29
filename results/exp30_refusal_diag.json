@@ -1,0 +1,254 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T08:51:34.926428+00:00",
+  "commit": "6d6dfed65f70b16407b3544de911bae5592a9ed2",
+  "dirty": true,
+  "command": "scripts/exp30_refusal_diag.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "THR": 0.8,
+   "MIN_GAIN": 0.2
+  }
+ },
+ "hypothesis": "refusal degrades with branching at the break step: more available relations means more chances one spuriously absorbs the residual (a multiple-comparisons problem)",
+ "branching_stratified_refusal": {
+  "unans_2_2": {
+   "1-2": {
+    "n": 173,
+    "refused": 0.8555
+   },
+   "3-4": {
+    "n": 133,
+    "refused": 0.8797
+   },
+   "5-6": {
+    "n": 65,
+    "refused": 0.8462
+   },
+   "7-9": {
+    "n": 70,
+    "refused": 0.7286
+   },
+   "10-14": {
+    "n": 41,
+    "refused": 0.7561
+   },
+   "corr_branching_vs_refusal": -0.7881
+  },
+  "unans_3_2": {
+   "1-2": {
+    "n": 155,
+    "refused": 0.9871
+   },
+   "3-4": {
+    "n": 127,
+    "refused": 0.9764
+   },
+   "5-6": {
+    "n": 59,
+    "refused": 0.8644
+   },
+   "7-9": {
+    "n": 66,
+    "refused": 0.8939
+   },
+   "10-14": {
+    "n": 49,
+    "refused": 0.8571
+   },
+   "corr_branching_vs_refusal": -0.8342
+  },
+  "unans_3_3": {
+   "1-2": {
+    "n": 133,
+    "refused": 0.8722
+   },
+   "3-4": {
+    "n": 236,
+    "refused": 0.8263
+   },
+   "5-6": {
+    "n": 124,
+    "refused": 0.8306
+   },
+   "7-9": {
+    "n": 40,
+    "refused": 0.725
+   },
+   "10-14": {
+    "n": 36,
+    "refused": 0.7222
+   },
+   "corr_branching_vs_refusal": -0.9139
+  }
+ },
+ "residual_separation": {
+  "answerable_median": 0.28878162801265717,
+  "answerable_p90": 0.5787135660648346,
+  "unanswerable_median": 0.9595345258712769,
+  "unanswerable_p10": 0.6389248967170715
+ },
+ "scope": "Branching is a store property, measured on both corpora without a model. The stratified refusal test runs on wiki only, at D123's fixed threshold 0.8, so nothing is re-tuned before the diagnosis is read.",
+ "adaptive_gain": {
+  "calibration": {
+   "0.0": {
+    "train_d2_correct": 0.9134728426992711,
+    "train_d3_correct": 0.6828153564899452,
+    "unans_2_2": 0.7565,
+    "unans_3_2": 0.98,
+    "unans_3_3": 0.7225,
+    "worst": 0.6828153564899452
+   },
+   "0.05": {
+    "train_d2_correct": 0.9202915588996002,
+    "train_d3_correct": 0.6873857404021938,
+    "unans_2_2": 0.7465,
+    "unans_3_2": 0.978,
+    "unans_3_3": 0.7045,
+    "worst": 0.6873857404021938
+   },
+   "0.1": {
+    "train_d2_correct": 0.9221725840583118,
+    "train_d3_correct": 0.6882998171846435,
+    "unans_2_2": 0.7335,
+    "unans_3_2": 0.976,
+    "unans_3_3": 0.683,
+    "worst": 0.683
+   },
+   "0.15": {
+    "train_d2_correct": 0.9205266870444392,
+    "train_d3_correct": 0.6825106642291285,
+    "unans_2_2": 0.7255,
+    "unans_3_2": 0.9755,
+    "unans_3_3": 0.6705,
+    "worst": 0.6705
+   },
+   "0.2": {
+    "train_d2_correct": 0.9130025864095932,
+    "train_d3_correct": 0.676416819012797,
+    "unans_2_2": 0.7255,
+    "unans_3_2": 0.9755,
+    "unans_3_3": 0.6685,
+    "worst": 0.6685
+   },
+   "0.3": {
+    "train_d2_correct": 0.8060192805078767,
+    "train_d3_correct": 0.5819622181596588,
+    "unans_2_2": 0.733,
+    "unans_3_2": 0.9805,
+    "unans_3_3": 0.691,
+    "worst": 0.5819622181596588
+   }
+  },
+  "selected_C": 0.05,
+  "held_out": {
+   "eval_d2_clean_C0.0": {
+    "correct": 0.9245,
+    "wrong": 0.0171,
+    "abstain": 0.0584,
+    "n": 2636
+   },
+   "eval_d2_clean_C0.05": {
+    "correct": 0.931,
+    "wrong": 0.0193,
+    "abstain": 0.0497,
+    "n": 2636
+   },
+   "eval_d3_clean_C0.0": {
+    "correct": 0.6257,
+    "wrong": 0.0721,
+    "abstain": 0.3022,
+    "n": 1456
+   },
+   "eval_d3_clean_C0.05": {
+    "correct": 0.6284,
+    "wrong": 0.1016,
+    "abstain": 0.2699,
+    "n": 1456
+   },
+   "unans_2_2_corr_after": -0.7537,
+   "unans_3_3_corr_after": -0.8954
+  }
+ },
+ "ambiguity_test": {
+  "answerable_top_gain_median": 1.3899670839309692,
+  "unanswerable_top_gain_median": 1.1983532905578613,
+  "answerable_margin_median": 0.4310449957847595,
+  "unanswerable_margin_median": 0.2877735495567322,
+  "margin_separation": 0.14327144622802734
+ },
+ "ambiguity_brake": {
+  "calibration": {
+   "0.0": {
+    "train_d2": 0.9134728426992711,
+    "train_d3": 0.6828153564899452,
+    "unans_2_2": 0.7565,
+    "unans_3_2": 0.98,
+    "unans_3_3": 0.7225,
+    "worst": 0.6828153564899452
+   },
+   "0.1": {
+    "train_d2": 0.8579826005172819,
+    "train_d3": 0.5298598415600244,
+    "unans_2_2": 0.746,
+    "unans_3_2": 0.9815,
+    "unans_3_3": 0.7305,
+    "worst": 0.5298598415600244
+   },
+   "0.2": {
+    "train_d2": 0.7465318598636257,
+    "train_d3": 0.39488117001828155,
+    "unans_2_2": 0.7865,
+    "unans_3_2": 0.988,
+    "unans_3_3": 0.802,
+    "worst": 0.39488117001828155
+   },
+   "0.3": {
+    "train_d2": 0.6299083000235128,
+    "train_d3": 0.2672151127361365,
+    "unans_2_2": 0.8225,
+    "unans_3_2": 0.9935,
+    "unans_3_3": 0.873,
+    "worst": 0.2672151127361365
+   },
+   "0.4": {
+    "train_d2": 0.42863860804138254,
+    "train_d3": 0.14076782449725778,
+    "unans_2_2": 0.8695,
+    "unans_3_2": 0.9985,
+    "unans_3_3": 0.9365,
+    "worst": 0.14076782449725778
+   },
+   "0.6": {
+    "train_d2": 0.09757818010815894,
+    "train_d3": 0.020719073735527116,
+    "unans_2_2": 0.903,
+    "unans_3_2": 0.999,
+    "unans_3_3": 0.9855,
+    "worst": 0.020719073735527116
+   }
+  },
+  "selected_M": 0.0,
+  "held_out": {
+   "eval_d2_clean_M0.0": {
+    "correct": 0.9245,
+    "wrong": 0.0171,
+    "abstain": 0.0584
+   },
+   "eval_d3_clean_M0.0": {
+    "correct": 0.6257,
+    "wrong": 0.0721,
+    "abstain": 0.3022
+   },
+   "unans_2_2_corr_after": -0.7881,
+   "unans_3_3_corr_after": -0.9139
+  }
+ }
+}
