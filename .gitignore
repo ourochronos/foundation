@@ -32,3 +32,10 @@ results/snapshot_10k/sparse_v0.json
 
 # transient run logs
 *.log
+
+# per-experiment embedding caches (results/*_emb.npz). Same rationale as the
+# entries above: deterministic, content-verified against their text list, and
+# rebuilt by re-running the owning script. Untracked from D130 onward because
+# four of them exceeded GitHub's hard 100MB per-file limit and blocked the
+# push. The space-DEFINING npz above (whiten_v0, amp_subspace_*) stay tracked.
+results/*_emb.npz
