@@ -1,0 +1,254 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T04:00:37.542193+00:00",
+  "commit": "f04df8a4f9bddd2e4fa6e00f7ac95611c4f8e25e",
+  "dirty": true,
+  "command": "scripts/exp21_overprovision.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "KS": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+   ],
+   "held_out": [
+    "P112",
+    "P131",
+    "P159",
+    "P19",
+    "P20",
+    "P551",
+    "P800",
+    "P937"
+   ],
+   "n_properties": 13713
+  }
+ },
+ "chance_top1": 0.0385,
+ "n_held_out_q": 5240,
+ "d114_corpus_fit_best": {
+  "top1": 0.286,
+  "K": 16,
+  "cap": 18
+ },
+ "grid": {
+  "8": {
+   "full 13.7k": {
+    "held_out_top1": 0.1065,
+    "train_top1": 0.9884,
+    "end_to_end_precision": 0.3344,
+    "end_to_end": {
+     "abstain": 3440,
+     "wrong": 1198,
+     "correct": 602
+    }
+   },
+   "excluded (ours removed)": {
+    "held_out_top1": 0.0798,
+    "train_top1": 0.9902,
+    "end_to_end_precision": 0.2737,
+    "end_to_end": {
+     "abstain": 3545,
+     "wrong": 1231,
+     "correct": 464
+    }
+   }
+  },
+  "16": {
+   "full 13.7k": {
+    "held_out_top1": 0.1601,
+    "train_top1": 0.9978,
+    "end_to_end_precision": 0.4592,
+    "end_to_end": {
+     "wrong": 1060,
+     "abstain": 3280,
+     "correct": 900
+    }
+   },
+   "excluded (ours removed)": {
+    "held_out_top1": 0.0769,
+    "train_top1": 0.9985,
+    "end_to_end_precision": 0.2353,
+    "end_to_end": {
+     "wrong": 1479,
+     "abstain": 3306,
+     "correct": 455
+    }
+   }
+  },
+  "32": {
+   "full 13.7k": {
+    "held_out_top1": 0.1282,
+    "train_top1": 1.0,
+    "end_to_end_precision": 0.3103,
+    "end_to_end": {
+     "wrong": 1594,
+     "abstain": 2929,
+     "correct": 717
+    }
+   },
+   "excluded (ours removed)": {
+    "held_out_top1": 0.163,
+    "train_top1": 0.9999,
+    "end_to_end_precision": 0.4106,
+    "end_to_end": {
+     "wrong": 1296,
+     "abstain": 3041,
+     "correct": 903
+    }
+   }
+  },
+  "64": {
+   "full 13.7k": {
+    "held_out_top1": 0.1435,
+    "train_top1": 1.0,
+    "end_to_end_precision": 0.3297,
+    "end_to_end": {
+     "wrong": 1669,
+     "abstain": 2750,
+     "correct": 821
+    }
+   },
+   "excluded (ours removed)": {
+    "held_out_top1": 0.0876,
+    "train_top1": 1.0,
+    "end_to_end_precision": 0.224,
+    "end_to_end": {
+     "wrong": 1788,
+     "abstain": 2936,
+     "correct": 516
+    }
+   }
+  },
+  "128": {
+   "full 13.7k": {
+    "held_out_top1": 0.1311,
+    "train_top1": 1.0,
+    "end_to_end_precision": 0.2982,
+    "end_to_end": {
+     "wrong": 1763,
+     "abstain": 2728,
+     "correct": 749
+    }
+   },
+   "excluded (ours removed)": {
+    "held_out_top1": 0.1353,
+    "train_top1": 1.0,
+    "end_to_end_precision": 0.3066,
+    "end_to_end": {
+     "wrong": 1753,
+     "abstain": 2712,
+     "correct": 775
+    }
+   }
+  },
+  "256": {
+   "full 13.7k": {
+    "held_out_top1": 0.1137,
+    "train_top1": 1.0,
+    "end_to_end_precision": 0.2484,
+    "end_to_end": {
+     "wrong": 1988,
+     "abstain": 2595,
+     "correct": 657
+    }
+   },
+   "excluded (ours removed)": {
+    "held_out_top1": 0.1305,
+    "train_top1": 1.0,
+    "end_to_end_precision": 0.2783,
+    "end_to_end": {
+     "wrong": 1929,
+     "abstain": 2567,
+     "correct": 744
+    }
+   }
+  },
+  "512": {
+   "full 13.7k": {
+    "held_out_top1": 0.13,
+    "train_top1": 1.0,
+    "end_to_end_precision": 0.282,
+    "end_to_end": {
+     "wrong": 1882,
+     "abstain": 2619,
+     "correct": 739
+    }
+   },
+   "excluded (ours removed)": {
+    "held_out_top1": 0.1248,
+    "train_top1": 1.0,
+    "end_to_end_precision": 0.2927,
+    "end_to_end": {
+     "wrong": 1728,
+     "abstain": 2797,
+     "correct": 715
+    }
+   }
+  }
+ },
+ "best_K": {
+  "full 13.7k": 16,
+  "excluded (ours removed)": 32
+ },
+ "scope": "Relation basis fit from an EXTERNAL vocabulary (13,713 Wikidata property labels) that never saw this corpus, its queries, or the train/held-out split. Every corpus relation enters as a projection. 'excluded' additionally removes our 26 relations from the basis pool. Single-hop; same 8 held-out relations and unstratified split as D113/D114.",
+ "basis_diagnostics": {
+  "corpus-fit relations (D114)": {
+   "variance_kept": 1.29,
+   "mean_offdiag_cos": 0.9258,
+   "held_nearest_train_cos": 0.9919
+  },
+  "external full K=8": {
+   "variance_kept": 0.8921,
+   "mean_offdiag_cos": 0.9894,
+   "held_nearest_train_cos": 0.998
+  },
+  "external full K=32": {
+   "variance_kept": 1.6492,
+   "mean_offdiag_cos": 0.9829,
+   "held_nearest_train_cos": 0.9936
+  },
+  "external full K=512": {
+   "variance_kept": 4.4992,
+   "mean_offdiag_cos": 0.9548,
+   "held_nearest_train_cos": 0.977
+  }
+ },
+ "landmark_bases": {
+  "512": {
+   "held_out_top1": 0.1122,
+   "train_top1": 1.0,
+   "mean_offdiag_cos": 0.9405,
+   "end_to_end_precision": 0.2689
+  },
+  "2048": {
+   "held_out_top1": 0.1042,
+   "train_top1": 1.0,
+   "mean_offdiag_cos": 0.9402,
+   "end_to_end_precision": 0.2532
+  },
+  "8192": {
+   "held_out_top1": 0.1145,
+   "train_top1": 1.0,
+   "mean_offdiag_cos": 0.9401,
+   "end_to_end_precision": 0.27
+  },
+  "13713": {
+   "held_out_top1": 0.1204,
+   "train_top1": 1.0,
+   "mean_offdiag_cos": 0.9396,
+   "end_to_end_precision": 0.2809
+  }
+ }
+}

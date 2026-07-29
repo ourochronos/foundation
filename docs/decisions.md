@@ -2,6 +2,36 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D115: Over-provisioning the relation basis fails twice — the binding constraint is the RELATION VOCABULARY, not the basis
+D114 recommended over-provisioning the relation basis once from a large external vocabulary, following D6's logic. That recommendation is **wrong**, and two independent attempts to make it work both failed. Fetched all **13,713 labelled Wikidata properties** (`data/wikidata_properties.json`, one SPARQL query) — a basis fit from a vocabulary that never saw this corpus, its queries, or the train/held-out split, so every corpus relation enters purely as coordinates.
+
+| basis | held-out top-1 |
+|---|---|
+| corpus-fit k-means, 18 in-domain relations, K=8 | **0.286** |
+| external k-means over 13,713 properties, K=8 | 0.106 |
+| external k-means, K=16 … 512 | 0.128 – 0.163 (flat) |
+| external, our 26 relations *removed* from the pool | 0.163 |
+| landmark basis (property vectors themselves), 512 – 13,713 | 0.104 – 0.120 |
+
+**Matched-K is the cleanest statement**: at K=8, a basis fit on 18 in-domain relations scores 0.281 and one fit on 13,713 properties scores 0.106. More vocabulary, worse transfer.
+
+**Two mechanisms proposed and both refuted, which is why the third explanation is worth trusting.** (1) *Coverage* — refuted: at K=512 the external basis has ample span. (2) *Discriminability* — the diagnostic showed relation coordinates at mean pairwise cosine 0.989 (external K=8) vs 0.926 (corpus-fit), suggesting k-means allocates centroids by **pool density** and spends its resolution outside the small region our relations occupy. That predicted landmark bases (no clustering, resolution everywhere) would fix it. They improved the cosine to 0.940 and **top-1 did not move** (0.120). So discriminability is real but not sufficient.
+
+**What was invariant across every failed run is the thing never varied: the head only ever sees 18 distinct relation targets.** A narrow basis may win not because it represents relations better but because 18 examples constrain a map into 8 dimensions and constrain essentially nothing in 13,713. `scripts/exp22_relscaling.py` tests it directly — basis recipe fixed, held-out relations fixed, only the number of training relations varied, 5 random subsets per size because at this scale *which* relations you draw matters as much as how many:
+
+| n training relations | 4 | 6 | 8 | 12 | 16 | 19 |
+|---|---|---|---|---|---|---|
+| held-out top-1 | 0.100 | 0.113 | 0.193 | 0.141 | 0.236 | **0.240** |
+| end-to-end precision | 0.417 | 0.424 | 0.556 | 0.459 | 0.540 | **0.574** |
+
+Noisy — the spread at n=19 is 0.175–0.336 across draws — but rising, and **not saturated at the right edge**. 
+
+**Decision**: D114's over-provisioning recommendation is withdrawn. The scaling axis for novel-relation transfer is the **number of relation types trained on**, and this project has been operating at n=18, the extreme left of the curve. Basis width cannot buy what vocabulary breadth has not yet supplied. **A wide basis is not wrong — it is premature**, and would likely become useful only once the relation vocabulary is large enough to constrain a map into it.
+
+**The measurement that made this findable** was refusing to accept the first mechanism that fit. Coverage and discriminability were both plausible, both were tested, and both failed; the surviving explanation was the experimental constant nobody had thought to vary.
+
+**Revisit** — and the next step is now obvious and cheap: the 13,713 properties ship **with aliases**, which is exactly the material needed to synthesise (query text → relation coordinate) training pairs for thousands of relations that do not appear in this corpus at all. The head's job is a general text→relation-space map, not a corpus-specific one, so it can be trained on vocabulary alone and evaluated with every corpus relation held out. That takes n from 19 to thousands and is the direct test of whether the curve above keeps climbing.
+
 ## 2026-07-28 — D114: The anchor CONTENT is the mechanism (random bottleneck refuted) — but "one shared concept space" is refuted too; a basis must be fit to the manifold it will carry
 `scripts/exp20_sharedbasis.py`. D113 claimed "the basis is the mechanism" without excluding the obvious alternative: that **any** low-dimensional bottleneck regularises. This ships that control, plus a K sweep D113 owed (it picked K_R=8 with no justification).
 

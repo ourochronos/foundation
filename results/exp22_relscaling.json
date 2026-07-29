@@ -1,0 +1,79 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T04:07:33.020018+00:00",
+  "commit": "f04df8a4f9bddd2e4fa6e00f7ac95611c4f8e25e",
+  "dirty": true,
+  "command": "scripts/exp22_relscaling.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MIN_N": 20,
+   "K_BASIS": 8,
+   "REPS": 5,
+   "held_out": [
+    "P112",
+    "P131",
+    "P159",
+    "P19",
+    "P20",
+    "P50",
+    "P800",
+    "P937"
+   ]
+  }
+ },
+ "n_relations": 27,
+ "n_held_out_q": 5636,
+ "chance_top1": 0.037,
+ "curve": {
+  "4": {
+   "top1_mean": 0.10042583392476936,
+   "top1_min": 0.033711852377572744,
+   "top1_max": 0.1611071682044003,
+   "e2e_precision_mean": 0.4170083203380302,
+   "reps": 5
+  },
+  "6": {
+   "top1_mean": 0.1126330731014904,
+   "top1_min": 0.018807665010645847,
+   "top1_max": 0.1619943222143364,
+   "e2e_precision_mean": 0.424473810039055,
+   "reps": 5
+  },
+  "8": {
+   "top1_mean": 0.19261887863733146,
+   "top1_min": 0.09776437189496097,
+   "top1_max": 0.29382540809084456,
+   "e2e_precision_mean": 0.5559750377745717,
+   "reps": 5
+  },
+  "12": {
+   "top1_mean": 0.14052519517388218,
+   "top1_min": 0.10911994322214337,
+   "top1_max": 0.19659332860184528,
+   "e2e_precision_mean": 0.4587999241161754,
+   "reps": 5
+  },
+  "16": {
+   "top1_mean": 0.23594748048261177,
+   "top1_min": 0.11178140525195174,
+   "top1_max": 0.33694109297374025,
+   "e2e_precision_mean": 0.5403414375959162,
+   "reps": 5
+  },
+  "19": {
+   "top1_mean": 0.23977998580553583,
+   "top1_min": 0.17512420156139105,
+   "top1_max": 0.33640880056777855,
+   "e2e_precision_mean": 0.5742684288495081,
+   "reps": 5
+  }
+ },
+ "scope": "Only the NUMBER of training relations varies; the basis recipe (k-means, K=8, refit on the train subset) and the 8 held-out relations are fixed. 5 random subsets per size, because which relations you draw matters as much as how many at this scale. Single-hop."
+}
