@@ -1,68 +1,64 @@
 {
  "audit": "claims",
  "model": "gemini-3.1-pro-preview",
- "n": 8,
- "n_judged": 8,
- "raw_agreement": 0.5,
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 0.8,
  "cohens_kappa": 0.0,
  "disagreements": [
   {
-   "idx": 1,
+   "idx": 4,
    "mine": "SUPPORTED",
    "theirs": "OVERREACH",
-   "their_reason": "Generalizes 'new ENTITIES' near-free performance using the 0.058 depth-1 drop, ignoring the much larger 0.249 accuracy drop in depth-2 (d2_new_head)."
-  },
-  {
-   "idx": 2,
-   "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "Calculates the 0.360 refusal rate using a denominator of 1200 total transitions, but the transition matrix includes 21 items that were already correct (only 1179 were actually unanswered)."
-  },
-  {
-   "idx": 3,
-   "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "Claims it 'fails at 5' relations, but the number 5 in exp28 refers to n_shapes (5 held shape pairs), not the number of relations."
+   "their_reason": "The claim cites 0.751 as the baseline for transfer failure, but 0.751 is the 'tuned' coverage; the actual 'derived' same-store baseline is 0.648."
   },
   {
    "idx": 5,
    "mine": "SUPPORTED",
    "theirs": "OVERREACH",
-   "their_reason": "Attributes the ans_d1 wrongness drop (0.118 to 0.045) to general 'answerable wrongness', omitting that ans_d2 wrongness remains at 0.1017."
+   "their_reason": "The claim asserts the system 'fails at 5' relations, but the provided data only contains measurements for 61 relations (n_relations: 61)."
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SUPPORTED",
-   "reason": "Fingerprints for basis, coords, and head are explicitly identical at freeze and after append."
+   "reason": "The fingerprints for basis (45b33a...), coords (c662e0...), and head (79f87c...) perfectly match before and after the append."
   },
   "1": {
-   "verdict": "OVERREACH",
-   "reason": "Generalizes 'new ENTITIES' near-free performance using the 0.058 depth-1 drop, ignoring the much larger 0.249 accuracy drop in depth-2 (d2_new_head)."
+   "verdict": "SUPPORTED",
+   "reason": "The measured diffs exactly match the claims: new entity +0.058 (0.9611-0.9033), new relation +0.191 (0.9733-0.7822), knn retrieval +0.247 and +0.771."
   },
   "2": {
-   "verdict": "OVERREACH",
-   "reason": "Calculates the 0.360 refusal rate using a denominator of 1200 total transitions, but the transition matrix includes 21 items that were already correct (only 1179 were actually unanswered)."
+   "verdict": "SUPPORTED",
+   "reason": "The transition matrix confirms exactly 432 refused->correct (1.000 of refused), 1179 unanswerable initially (432+715+32), and 21 answerable (20+1)."
   },
   "3": {
-   "verdict": "OVERREACH",
-   "reason": "Claims it 'fails at 5' relations, but the number 5 in exp28 refers to n_shapes (5 held shape pairs), not the number of relations."
+   "verdict": "SUPPORTED",
+   "reason": "The metrics align: staleness is 0.002 (1 old->old out of 431 starting old), revision rates match 0.459 (all) and 0.235 (single)."
   },
   "4": {
-   "verdict": "SUPPORTED",
-   "reason": "Zero-shot answerable correct rate is 0.849, and refusal's failure to extrapolate is confirmed by unans_break3 abstain dropping to 0.267."
+   "verdict": "OVERREACH",
+   "reason": "The claim cites 0.751 as the baseline for transfer failure, but 0.751 is the 'tuned' coverage; the actual 'derived' same-store baseline is 0.648."
   },
   "5": {
    "verdict": "OVERREACH",
-   "reason": "Attributes the ans_d1 wrongness drop (0.118 to 0.045) to general 'answerable wrongness', omitting that ans_d2 wrongness remains at 0.1017."
+   "reason": "The claim asserts the system 'fails at 5' relations, but the provided data only contains measurements for 61 relations (n_relations: 61)."
   },
   "6": {
    "verdict": "SUPPORTED",
-   "reason": "AURC values exactly match (0.4734 vs 0.1322), the 3.6x ratio is accurate, and adding type signals to the residual worsens AURC to 0.4901."
+   "reason": "Zero-shot depth 3 answers correctly at 0.849, and refusal failure is confirmed by unans_break3 abstain dropping to 0.267."
   },
   "7": {
    "verdict": "SUPPORTED",
-   "reason": "1-NN correctly preserves known relations (1.0 vs head 0.9033) and the quoted collapse on new relations exactly matches the 0.229 vs 0.782 penalty."
+   "reason": "All numbers match: refusal 0.050 to 0.693, wrongness 0.118 to 0.045, d1 correct falls 0.110 (0.875 to 0.765), and total answered falls 0.183."
+  },
+  "8": {
+   "verdict": "SUPPORTED",
+   "reason": "AURC numbers match exactly: mixed residual is 0.4734, chain-break only is 0.1322 (~3.6x diff), and adding type signals worsens AURC to 0.4901."
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "KNN preserves known relation info (0.925 vs head 0.613), while on new relations KNN collapses to 0.229 compared to the head's 0.782."
   }
  },
  "my_labels": {
@@ -73,6 +69,8 @@
   "4": "SUPPORTED",
   "5": "SUPPORTED",
   "6": "SUPPORTED",
-  "7": "SUPPORTED"
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED"
  }
 }

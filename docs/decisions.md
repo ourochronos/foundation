@@ -2,6 +2,30 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D143: Three adjudicators, Fleiss kappa +0.135 — quorum is far more stable than any single rater, and single-rater audits are close to noise
+`scripts/adjudicate.py claims {gpt-5.6-sol | gemini-3.1-pro-preview | claude-fable-5}`. D140 established that two raters agree only fairly (kappa +0.333). A third was added to test whether quorum stabilises the verdict.
+
+**It does, and the reason is that individual verdicts are barely better than noise.**
+
+| | agreement | Cohen's kappa |
+|---|---|---|
+| sol vs gemini | 0.800 | +0.000 |
+| sol vs fable | 0.800 | +0.000 |
+| gemini vs fable | 0.800 | +0.375 |
+| **all three (Fleiss)** | — | **+0.135** |
+
+Fleiss' kappa **+0.135 is "slight" agreement**. Raw agreement looks respectable at 0.800 only because most claims are supported by everyone; the kappas correct for that and show the raters are close to independent on the claims that matter.
+
+**Single-rater flag counts on the same 10 claims: sol 0, gemini 2, fable 2 — and they flag different claims.** Sol, which flagged between one and seven claims in every earlier round, flagged **none** this time. So raters are unstable across runs as well as across each other, which retroactively explains D135's non-converging flag counts (7 → 2 → 3 → 2) better than "the claims kept changing" did.
+
+**The 2-of-3 quorum flags exactly one claim** — claim 10 — where Gemini and Fable independently make the same objection: "can be derived" hid that the derived threshold was never validated as *better*, only as computable, and the 0.751 → 0.142 figure compares a tuned baseline against a transferred value rather than derived against tuned. **That is precisely the caveat D142's prose carried and its claim text did not.** Corrected.
+
+**Decision**: claims are adjudicated by **2-of-3 quorum**, not by any single rater. A single-rater flag is recorded as a disagreement and changes nothing; a quorum flag is a defect. This supersedes D130's and D135's single-rater procedure, and it means those two entries' verdicts should be read as suggestive rather than settled.
+
+**A limitation that must travel with this result**: `claude-fable-5` is a Claude-family model and the author of these claims is also Claude. **The third rater is therefore less independent of the author than the other two**, and the gemini–fable kappa (+0.375, the highest pair) may partly reflect that both disagreed with a Claude-written claim rather than genuine convergence. A fourth rater from a fourth family would test it; until then the quorum is three raters from three families, one of which shares the author's.
+
+**Revisit**: (a) rater instability across runs is now visible and unquantified — running the same rater three times would separate model noise from prompt sensitivity, and is cheap; (b) Fleiss +0.135 suggests even quorum verdicts carry real uncertainty, so "adjudicated" should never be read as "verified"; (c) the adjudicator's CLAIMS list has now drifted from `docs/18` twice and should be generated from it.
+
 ## 2026-07-29 — D142: The type threshold does NOT transfer between stores — but it can be derived from the store instead of tuned, which is the useful half
 `scripts/exp45_thresholds.py`. Task 3. D124, D126 and D138 are three findings of one shape: a threshold tuned on one store does not work on another. The mechanism under test was whether the threshold can be **derived from store statistics** — the p25 of within-relation type fit, using no questions, no labels and no head — instead of tuned against labelled data.
 
