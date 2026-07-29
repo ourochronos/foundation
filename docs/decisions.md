@@ -2,6 +2,33 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D133: The store learns perfectly when it knows it doesn't know — but it only knows that 36% of the time, and the simplest unanswerable question was never in any of our benchmarks
+`scripts/exp38_update.py`. Two prompts, one experiment: does `disbelief` conflate "not in our store" with "not true", and can the store answer, after an update, what it could not answer before?
+
+**The rename is correct and is applied.** Our store is open-world and admittedly incomplete. A walk that completes without satisfying the question means *no claim was found* — not that the proposition is false. Real disbelief requires evidence AGAINST, which the store does model (`conflict`, `invalidated_by`). D132's bucket is renamed **`unanswered`**; `conflict` stays reserved for contradictory claims. The closed-world reading was never earned.
+
+**The learning property holds, completely.** 30% of subject-relation pairs were withheld, then appended with the artifacts frozen (no refit, per D131). Of the questions the store **properly refused** before the update:
+
+| transition | n | rate |
+|---|---|---|
+| **refused → correct** | **432** | **1.000** |
+| refused → refused (failed to learn) | 0 | 0.000 |
+| refused → wrong (absorbed, got it wrong) | 0 | 0.000 |
+
+**Every single question it knew it could not answer became correct after the update**, with no refit of any kind. Regression on questions answerable all along is negligible: correct→correct 0.989, correct→**wrong 0.003**. That is the property the project exists to demonstrate, and it is now demonstrated on the same questions before and after rather than inferred.
+
+**But the denominator is the finding.** Of the 1,200 questions the store *could not* answer at T0, it properly refused only **0.360**. The other **0.623 it answered wrongly** — it confabulated. The perfect learning rate above is conditional on the store having been honest in the first place, and it usually was not.
+
+**And the control fails outright, which exposes a hole in every refusal number we have.** Questions whose relation simply does not apply to the subject — never answerable, before or after — are answered anyway **0.850 of the time before the update and 1.000 after**. Asked "what is the *date of birth* of [a book]", the walker takes the book's best-matching *available* relation and answers confidently.
+
+**This is a methodological failure, not just a model failure.** Every unanswerable population from D118 through D132 was built the same way: **chain-break** cases, where a multi-hop walk dies partway. Nobody tested the simplest and most common real unanswerable question — *this relation does not apply to this entity*. On that population refusal is near-zero, and it is worse at depth 1 than at depth 2, which is the reverse of the pattern the chain-break populations showed. **Refusal numbers in D118–D132 describe chain-break refusal specifically and should not be read as refusal in general.**
+
+**New audit law (#9)**: *an unanswerable population must include the simple case, not only the structurally interesting one.* Chain-break unanswerables are easy to enumerate from the store and they flatter the system, because a dead chain leaves an obviously unspent residual. A relation that merely doesn't apply leaves the walk free to substitute a neighbour and spend the residual perfectly.
+
+**This also supplies the mechanism the adjacency question was pointing at.** `avail[subject]` carries relation *identity* and nothing else — no expected answer type. `rng_cprof`, the range-profile that would say "this relation's answers are dates, and a book's *author* is not a date", exists in `scripts/v06_pipeline.py`, was D110's answer-type gate, and has been orphaned since the walker replaced the planner. A walker that checked the returned object's type against the asked relation's range could refuse exactly the case that now fails. **That is the indicated fix and it is a re-adoption, not an invention.**
+
+**Revisit**: (a) rebuild the answer-type gate into the walker and re-measure the not-applicable population — highest priority, and the fix already exists in the codebase; (b) every refusal number D118–D132 should be recomputed against a mixed unanswerable population (chain-break + not-applicable) before any of them is published; (c) the 0.623 confabulation rate at depth 1 is the single worst number in the project and was invisible until the control was built.
+
 ## 2026-07-29 — D132: Refusal WAS too flat — but the fix is reporting, not a better score; our abstentions are almost never "no evidence"
 `scripts/exp37_confidence.py`. Prompted by the observation that a binary refuse is too flat, and by Covalence's subjective-logic opinion tuple — formally adopted at D69 as the designed upgrade path and never built.
 
@@ -19,7 +46,7 @@ Format: date · decision · rationale · revisit-when.
 
 **This separates two properties that D118–D131 conflated.** The residual RANKS well (AURC 0.1322) while its THRESHOLD PLACEMENT is fragile — density-bound (D124) and decaying under append (D131). Those are different failures with different fixes, and AURC is what tells them apart. Nothing was wrong with the signal; what was wrong was reporting a point on its curve as if it were a property of the system.
 
-**Second, and the more interesting half: the SL decomposition shows our abstentions are almost never uncertainty.** Splitting the single `abstain` bucket into Covalence's three (vacuous = no path exists; conflict = several relations match well and near-equally; disbelief = a walk completed but did not answer):
+**Second, and the more interesting half: the SL decomposition shows our abstentions are almost never uncertainty.** Splitting the single `abstain` bucket into Covalence's three (vacuous = no path exists; conflict = several relations match well and near-equally; disbelief = a walk completed but did not answer) **[RENAMED `unanswered` by D133 — an open-world store that finds no claim has not established falsity]**:
 
 | population | vacuous | conflict | disbelief | answered |
 |---|---|---|---|---|

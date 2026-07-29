@@ -1,0 +1,49 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T15:24:03.583956+00:00",
+  "commit": "8f5900b0061d5087137cc27100ca29c0eff6f4d5",
+  "dirty": true,
+  "command": "scripts/exp38_update.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "UPDATE_FRAC": 0.3,
+   "THR": 0.8,
+   "K_BASIS": 48
+  }
+ },
+ "n_update_pairs": 1657,
+ "transition_flip": {
+  "refused->correct": 432,
+  "wrong->correct": 715,
+  "wrong->wrong": 32,
+  "correct->wrong": 1,
+  "correct->correct": 20
+ },
+ "learned_rate": 0.36,
+ "learned_ci95": [
+  0.3333,
+  0.3876
+ ],
+ "regression_stays": {
+  "correct->correct": 1187,
+  "wrong->wrong": 9,
+  "correct->wrong": 4
+ },
+ "control_never": {
+  "before": {
+   "wrong": 1020,
+   "vacuous": 180
+  },
+  "after": {
+   "wrong": 1200
+  }
+ },
+ "scope": "The update is a withheld 30% of subject-relation pairs; questions over them are unanswerable before and answerable after, measured on the SAME questions with artifacts frozen at T0 (no refit). `disbelief` is renamed `unanswered`: an open-world store that finds no claim has not established falsity. The never-answerable control is what distinguishes learning from simply starting to answer everything."
+}
