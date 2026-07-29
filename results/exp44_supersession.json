@@ -1,0 +1,79 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T17:09:11.665511+00:00",
+  "commit": "79e4fd5dc721888a906e7d5d4972f537130e7d39",
+  "dirty": true,
+  "command": "scripts/exp44_supersession.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "N_CASES": 1200,
+   "RES_THR": 0.8,
+   "TTHR": 0.3
+  }
+ },
+ "edits_applied": {
+  "edited": 2394,
+  "ambiguous": 9,
+  "abstain": 15
+ },
+ "supersession_sanity": {
+  "checked": 295,
+  "clean": 294
+ },
+ "before": {
+  "old": 431,
+  "other": 84,
+  "refuse": 85
+ },
+ "after": {
+  "new": 219,
+  "other": 125,
+  "refuse": 255,
+  "old": 1
+ },
+ "matrix_all": {
+  "old->new": 198,
+  "other->other": 36,
+  "old->refuse": 150,
+  "refuse->refuse": 73,
+  "other->refuse": 32,
+  "refuse->other": 7,
+  "old->old": 1,
+  "other->new": 16,
+  "old->other": 82,
+  "refuse->new": 5
+ },
+ "revision_rate_all": 0.4593967517401392,
+ "matrix_single": {
+  "refuse->refuse": 42,
+  "other->refuse": 20,
+  "old->refuse": 74,
+  "old->new": 35,
+  "refuse->other": 1,
+  "other->other": 14,
+  "other->new": 3,
+  "old->other": 40
+ },
+ "revision_rate_single": 0.2348993288590604,
+ "matrix_multi": {
+  "old->new": 163,
+  "other->other": 22,
+  "old->refuse": 76,
+  "old->old": 1,
+  "other->refuse": 12,
+  "other->new": 13,
+  "refuse->refuse": 31,
+  "refuse->new": 5,
+  "refuse->other": 6,
+  "old->other": 42
+ },
+ "revision_rate_multi": 0.5780141843971631,
+ "scope": "Supersession, not addition: MQuAKE counterfactual rewrites applied through foundation/kb.py's real edit() path, which shadows every live same-(eid,pid) row per D55. The graph is read from LIVE claims only. Questions are MQuAKE's human-written phrasings; the head is frozen before the first edit and never refits. The revision rate is conditional on the store having answered correctly BEFORE the edit \u2014 a question it could not answer beforehand cannot demonstrate revision."
+}

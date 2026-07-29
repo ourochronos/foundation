@@ -2,6 +2,29 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D141: The store revises rather than going stale — but revision is far harder than addition, and single edits are worse than multiple
+`scripts/exp44_supersession.py`. Task 2. D133 tested **addition** (withheld facts appended, refused→correct 1.000). This tests **supersession** — revising a fact already present, where the old answer must stop winning — on MQuAKE-CF-3k's counterfactual rewrites and its **human-written** questions, with edits applied through `foundation/kb.py`'s real `edit()` path so D55's shadow-don't-delete semantics are what is exercised. 1,200 cases (400 per depth), head frozen before the first edit.
+
+**The edit path is sound.** 2,394 edits applied; **294 of 295 checked pairs afterwards hold only the new object**, the old one shadowed out of the live graph. Supersession works as designed.
+
+**Staleness is essentially zero — the safety-critical half holds.** Of 431 questions answered correctly before the edit, **old→old is 0.002**. The store does not keep asserting a superseded fact. Given that "invalidate, never delete" is a founding commitment (D40, D55, and Covalence's independent arrival at it per D69), that is the number that had to come out near zero, and it did.
+
+| | revision (old→new) | stale (old→old) | broke (old→refuse) | wrong (old→other) |
+|---|---|---|---|---|
+| all cases | **0.459** | **0.002** | 0.348 | 0.190 |
+| single-rewrite | 0.235 | 0.000 | **0.497** | 0.268 |
+| multi-rewrite | **0.578** | 0.004 | 0.270 | 0.149 |
+
+**Revision is much harder than addition**: 0.459 against D133's 1.000. But the failure is **not** the store clinging to old beliefs — it is refusal (0.348) and wrong answers (0.190).
+
+**Single edits are worse than multiple, which inverts the obvious expectation and has a structural cause.** Editing one link mid-chain — *(Ellie Kemper, citizenship) → Croatia* — leaves the rest of the chain expecting the *old* target's outgoing edges. If Croatia carries no *head of state* edge in the store, the chain simply breaks and the walk refuses; hence single-rewrite's 0.497 break rate against multi-rewrite's 0.270, since multi-rewrite cases edit more of the chain consistently. **This is a property of editing graph-structured knowledge, not a defect of the walker**: a revision is only answerable if the new target is reachable onward, and MQuAKE is built to expose exactly that.
+
+**Depth compounds it**: revision 0.607 → 0.443 → 0.346 at depths 2/3/4. Each additional link is another chance for the edited target to lack the next relation.
+
+**Decision**: the learning claim splits in two and must be stated that way. *Addition* is near-perfect conditional on honest prior refusal (D133, 1.000). *Revision* absorbs at 0.459 and — more importantly — **never goes stale** (0.002), failing instead by refusing. For a system whose central property is honest refusal, failing-by-refusing on a revision is the correct failure mode, but the coverage cost is real and belongs in any claim about updating knowledge.
+
+**Revisit**: (a) downstream reachability is the binding constraint — a revision that adds the new target's onward edges should recover most of the 0.348, and MQuAKE's `new_single_hops` supplies exactly those, untested here; (b) the 0.190 old→other rate deserves the same treatment D134 gave confabulation, since answering *something else* after an edit is the one outcome worse than refusing; (c) this used phrasing 0 only — the D138 phrasing axis crossed with revision is unmeasured.
+
 ## 2026-07-29 — D140: Two adjudicators agree at kappa +0.333 — single-rater claim audits are noisier than they looked, and both raters together catch arithmetic neither self-review did
 `scripts/adjudicate.py claims {gpt-5.6-sol | gemini-3.1-pro-preview}`, `data/adjudication/`. Task 1. D135 left a second rater as the blocking dependency for trusting the claims table; `gemini-3.1-pro-preview` is reachable through the same `copilot --model` path and the adjudicator already took the model as an argument, so no new plumbing was needed.
 
