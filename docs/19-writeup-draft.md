@@ -247,14 +247,23 @@ Plus two rules of the same kind: **a shape-level holdout is not a composition
 holdout** (report pair-cleanliness alongside every composition number), and
 **evidence for a verdict must not be narrower than evidence for the claim**.
 
-**On adjudication.** We had three independent models audit this paper's claims
-against the raw numbers, blind to our reasoning. **Fleiss' κ = +0.135** —
-slight agreement. Individual raters flagged 0, 2 and 2 of ten claims, and
-flagged *different* ones; the same rater flagged between zero and seven across
-runs. We therefore adjudicate by **2-of-3 quorum**, and we note that
-"adjudicated" should never be read as "verified" (D140, D143). One of the
-three raters shares a model family with the author, which is a real
-independence limitation.
+**On adjudication.** We had **four independent models from four families**
+(OpenAI, Google, Anthropic, xAI) audit this paper's claims against the raw
+numbers, blind to our reasoning. The table currently stands at **zero defects
+flagged by two or more raters**, with raw agreement 0.900 and individual
+raters flagging 0, 1, 1 and 0 of ten claims — on *different* claims.
+
+We report quorum count rather than kappa, because kappa is the wrong
+instrument here: with 8 of 10 claims unanimously supported, chance agreement
+is near 1 and Fleiss' κ reads −0.053 despite 0.900 raw agreement — the
+classic skewed-marginals paradox. As we corrected the table, κ *fell*
+(+0.333 → +0.135 → −0.053), which shows it was tracking the table's
+messiness rather than the raters' reliability (D140, D143, D144).
+
+"Adjudicated" should not be read as "verified". A claim surviving four
+independent audits is evidence of survivability, not of correctness — and a
+table that passes unanimously may simply be hedged enough to be hard to
+falsify.
 
 The adjudicators caught, among other things, a stale figure that survived a
 full session of self-review, a denominator that was wrong by 21, and a claim

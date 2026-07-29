@@ -3,62 +3,56 @@
  "model": "gemini-3.1-pro-preview",
  "n": 10,
  "n_judged": 10,
- "raw_agreement": 0.8,
+ "raw_agreement": 0.9,
  "cohens_kappa": 0.0,
  "disagreements": [
-  {
-   "idx": 4,
-   "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "The claim cites 0.751 as the baseline for transfer failure, but 0.751 is the 'tuned' coverage; the actual 'derived' same-store baseline is 0.648."
-  },
   {
    "idx": 5,
    "mine": "SUPPORTED",
    "theirs": "OVERREACH",
-   "their_reason": "The claim asserts the system 'fails at 5' relations, but the provided data only contains measurements for 61 relations (n_relations: 61)."
+   "their_reason": "The claim mentions it 'fails at 5' relations, but the number 5 does not appear in the measured numbers."
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SUPPORTED",
-   "reason": "The fingerprints for basis (45b33a...), coords (c662e0...), and head (79f87c...) perfectly match before and after the append."
+   "reason": "Fingerprints for basis, coords, and head are identical before and after append."
   },
   "1": {
    "verdict": "SUPPORTED",
-   "reason": "The measured diffs exactly match the claims: new entity +0.058 (0.9611-0.9033), new relation +0.191 (0.9733-0.7822), knn retrieval +0.247 and +0.771."
+   "reason": "Calculated differences from the metrics match the +0.058, +0.191, +0.247, and +0.771 claims exactly."
   },
   "2": {
    "verdict": "SUPPORTED",
-   "reason": "The transition matrix confirms exactly 432 refused->correct (1.000 of refused), 1179 unanswerable initially (432+715+32), and 21 answerable (20+1)."
+   "reason": "Transition matrix supports 432/432 refused becoming correct, and 432/(1200-21) = 0.366."
   },
   "3": {
    "verdict": "SUPPORTED",
-   "reason": "The metrics align: staleness is 0.002 (1 old->old out of 431 starting old), revision rates match 0.459 (all) and 0.235 (single)."
+   "reason": "Calculations from matrix_all for old->new (198/431) and old->old (1/431) match 0.459 and 0.002."
   },
   "4": {
-   "verdict": "OVERREACH",
-   "reason": "The claim cites 0.751 as the baseline for transfer failure, but 0.751 is the 'tuned' coverage; the actual 'derived' same-store baseline is 0.648."
+   "verdict": "SUPPORTED",
+   "reason": "The 0.751 to 0.142 drop matches the wiki tuned vs mquake-derived-on-wiki metrics."
   },
   "5": {
    "verdict": "OVERREACH",
-   "reason": "The claim asserts the system 'fails at 5' relations, but the provided data only contains measurements for 61 relations (n_relations: 61)."
+   "reason": "The claim mentions it 'fails at 5' relations, but the number 5 does not appear in the measured numbers."
   },
   "6": {
    "verdict": "SUPPORTED",
-   "reason": "Zero-shot depth 3 answers correctly at 0.849, and refusal failure is confirmed by unans_break3 abstain dropping to 0.267."
+   "reason": "Zero-shot depth answerable correct is 0.849, while zero-shot unans_break3 abstain plummets to 0.267, supporting that refusal does not extrapolate."
   },
   "7": {
    "verdict": "SUPPORTED",
-   "reason": "All numbers match: refusal 0.050 to 0.693, wrongness 0.118 to 0.045, d1 correct falls 0.110 (0.875 to 0.765), and total answered falls 0.183."
+   "reason": "Gate off/on numbers match the 0.050 to 0.693 refusal lift and 0.118 to 0.045 wrongness cut, along with stated drops."
   },
   "8": {
    "verdict": "SUPPORTED",
-   "reason": "AURC numbers match exactly: mixed residual is 0.4734, chain-break only is 0.1322 (~3.6x diff), and adding type signals worsens AURC to 0.4901."
+   "reason": "AURC of 0.4734 is ~3.6x the 0.1322 baseline, and residual_plus_type AURC (0.4901) is worse than residual_only."
   },
   "9": {
    "verdict": "SUPPORTED",
-   "reason": "KNN preserves known relation info (0.925 vs head 0.613), while on new relations KNN collapses to 0.229 compared to the head's 0.782."
+   "reason": "KNN scores higher on knowns (0.9255 vs 0.6139) but new relations match the stated 0.229 vs 0.782 values in append results."
   }
  },
  "my_labels": {

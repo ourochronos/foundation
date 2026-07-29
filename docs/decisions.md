@@ -2,6 +2,21 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D144: Four raters, four families — the table passes quorum with zero defects, the independence worry was unfounded, and kappa has stopped being informative
+`scripts/adjudicate.py claims grok-4.5` added a fourth family (xAI), alongside OpenAI, Google and Anthropic. All four re-run on the **same** post-D143 table, since Gemini's and Fable's earlier verdicts predated the claim-10 fix and comparing across versions would be invalid.
+
+**The table passes quorum.** No claim is flagged by two or more raters. Flags per rater: **sol 0, gemini 1, fable 1, grok 0**, and the two flags fall on *different* claims. By the 2-of-3 rule adopted in D143 — extended here to 2-of-4 — there are **zero defects** to fix.
+
+**The independence concern from D143 was unfounded.** That entry flagged that `claude-fable-5` shares a model family with the author and might therefore be less independent. Excluding it changes Fleiss' kappa from **−0.053 to −0.034** — no material difference. The Anthropic rater is not behaving like an ally, and the highest-kappa pair in D143 (gemini–fable, +0.375) does not reproduce here (−0.111). **The worry is retired.**
+
+**But kappa has become uninformative, and reporting it bare would now mislead.** Fleiss is **−0.053** — nominally *worse than chance* — while raw agreement is **0.900**. That combination is the well-known kappa paradox with skewed marginals: 8 of 10 claims are unanimously SUPPORTED, so chance agreement is near 1 and the statistic collapses regardless of how the residual disagreements fall. **The honest description is "unanimous on 8 of 10, idiosyncratic on 2", not "the raters disagree worse than chance".**
+
+**This also reframes D143's +0.135.** That figure was not measuring rater quality either; it was measuring how many disputed claims the table still contained. As the table was corrected, kappa fell — **the statistic tracks the table's messiness, not the raters' reliability.** Kappa was the wrong instrument for this job from D140 onward, and the right summary has always been the simpler one: how many claims does a quorum flag, and which.
+
+**Decision**: adjudication is reported as **quorum count and raw agreement**, with kappa quoted only alongside the marginal distribution that explains it. The claims table currently stands at **zero quorum defects across four model families**, which is the strongest statement this project can make about it — and it is a statement about *survivability under independent audit*, not about correctness.
+
+**Revisit**: (a) four raters found the two flags D143's three did, plus nothing new, which suggests saturation — a fifth is unlikely to pay; (b) rater instability across runs (D143) is still unquantified and is now the larger source of doubt than inter-rater disagreement; (c) a table that passes unanimously is also a table that may be too hedged to be interesting — worth checking that the scope conditions have not been widened until the claims are unfalsifiable.
+
 ## 2026-07-29 — D143: Three adjudicators, Fleiss kappa +0.135 — quorum is far more stable than any single rater, and single-rater audits are close to noise
 `scripts/adjudicate.py claims {gpt-5.6-sol | gemini-3.1-pro-preview | claude-fable-5}`. D140 established that two raters agree only fairly (kappa +0.333). A third was added to test whether quorum stabilises the verdict.
 

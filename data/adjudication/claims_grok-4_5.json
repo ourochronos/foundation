@@ -1,0 +1,63 @@
+{
+ "audit": "claims",
+ "model": "grok-4.5",
+ "n": 10,
+ "n_judged": 10,
+ "raw_agreement": 1.0,
+ "cohens_kappa": 1.0,
+ "disagreements": [],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "mechanical_check_passed true; basis/coords/head fingerprints identical (45b33a69\u2026/c662e066\u2026/79f87c5c\u2026)"
+  },
+  "1": {
+   "verdict": "SUPPORTED",
+   "reason": "head gaps match: new_subj 0.9611-0.9033=0.058, new_rel 0.9733-0.7822=0.191; knn +0.247/+0.771"
+  },
+  "2": {
+   "verdict": "SUPPORTED",
+   "reason": "refused->correct 432 with no other refused_* row; 432/(715+32+432)=432/1179=0.366; correct before 20+1=21"
+  },
+  "3": {
+   "verdict": "SUPPORTED",
+   "reason": "old->old=1 among old_* (1/431\u22480.002); revision_rate_all=0.459; single=0.235; refuse/other dominate failures"
+  },
+  "4": {
+   "verdict": "SUPPORTED",
+   "reason": "derived differs by store (0.453 vs 0.6725); transfers:false; wiki tuned 0.7511 vs mquake-thr on wiki 0.1422"
+  },
+  "5": {
+   "verdict": "SUPPORTED",
+   "reason": "eval_d2_clean 0.925 \u2248 train_d2 0.913 at n_relations=61; d3 0.626 vs 0.683 as scoped"
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "zero_shot answerable correct=0.8489\u22480.849; unans_break3 abstain only 0.268 (refusal fails)"
+  },
+  "7": {
+   "verdict": "SUPPORTED",
+   "reason": "NA refuse 0.05\u21920.6933; ans_d1 wrong 0.1183\u21920.045; probe_ceiling 0.965"
+  },
+  "8": {
+   "verdict": "SUPPORTED",
+   "reason": "aurc_mixed residual_only=0.4734; exp37 residual=0.1322; 0.4734/0.1322\u22483.58; plus_type worse 0.4901"
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "knn_k1 0.9255 > head_baseline 0.6139; new_rel knn 0.2289 vs head 0.7822 as scoped"
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED"
+ }
+}
