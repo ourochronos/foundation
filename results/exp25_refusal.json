@@ -1,0 +1,161 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-29T04:37:22.524522+00:00",
+  "commit": "e6d9fe335cf4908a3be8233cc26679afb050d00c",
+  "dirty": true,
+  "command": "scripts/exp25_refusal.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MIN_GAIN": 0.2,
+   "MAX_STEPS": 4
+  }
+ },
+ "n_unanswerable": 6000,
+ "selected_threshold": 0.4,
+ "sweep": {
+  "1.01": {
+   "seen": {
+    "correct": 2945,
+    "wrong": 55
+   },
+   "held": {
+    "correct": 2704,
+    "wrong": 260
+   },
+   "unans": {
+    "wrong": 6000
+   }
+  },
+  "0.9": {
+   "seen": {
+    "correct": 2945,
+    "wrong": 55
+   },
+   "held": {
+    "correct": 2704,
+    "wrong": 260
+   },
+   "unans": {
+    "wrong": 6000
+   }
+  },
+  "0.8": {
+   "seen": {
+    "correct": 2945,
+    "wrong": 55
+   },
+   "held": {
+    "correct": 2704,
+    "wrong": 260
+   },
+   "unans": {
+    "wrong": 5984,
+    "abstain": 16
+   }
+  },
+  "0.7": {
+   "seen": {
+    "correct": 2945,
+    "wrong": 55
+   },
+   "held": {
+    "correct": 2704,
+    "wrong": 260
+   },
+   "unans": {
+    "wrong": 5871,
+    "abstain": 129
+   }
+  },
+  "0.6": {
+   "seen": {
+    "correct": 2945,
+    "wrong": 55
+   },
+   "held": {
+    "correct": 2704,
+    "wrong": 253,
+    "abstain": 7
+   },
+   "unans": {
+    "wrong": 5263,
+    "abstain": 737
+   }
+  },
+  "0.5": {
+   "seen": {
+    "correct": 2941,
+    "wrong": 6,
+    "abstain": 53
+   },
+   "held": {
+    "correct": 2697,
+    "wrong": 243,
+    "abstain": 24
+   },
+   "unans": {
+    "abstain": 3639,
+    "wrong": 2361
+   }
+  },
+  "0.4": {
+   "seen": {
+    "correct": 2940,
+    "abstain": 59,
+    "wrong": 1
+   },
+   "held": {
+    "correct": 2612,
+    "wrong": 211,
+    "abstain": 141
+   },
+   "unans": {
+    "abstain": 5821,
+    "wrong": 179
+   }
+  },
+  "0.3": {
+   "seen": {
+    "correct": 2939,
+    "abstain": 61
+   },
+   "held": {
+    "abstain": 1075,
+    "correct": 1741,
+    "wrong": 148
+   },
+   "unans": {
+    "abstain": 5983,
+    "wrong": 17
+   }
+  }
+ },
+ "selected": {
+  "answerable_held_out": {
+   "correct": 2612,
+   "wrong": 211,
+   "abstain": 141
+  },
+  "unanswerable": {
+   "abstain": 5821,
+   "wrong": 179
+  },
+  "seen": {
+   "correct": 2940,
+   "abstain": 59,
+   "wrong": 1
+  }
+ },
+ "unanswerable_refusal_ci95": [
+  0.9656,
+  0.9742
+ ],
+ "scope": "Unanswerable questions are constructed so the FIRST relation is walkable and the chain still yields nothing \u2014 the case where D117 returns a confident partial answer. Subjects with no outgoing edges are excluded, since the walker abstains on those trivially and they would inflate the refusal rate. Answerable and unanswerable are reported separately and never averaged."
+}

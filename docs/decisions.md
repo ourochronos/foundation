@@ -2,6 +2,29 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-28 — D118: Refusal restored for 3 points of coverage — and audit law #7: you cannot measure refusal without unanswerable questions
+`scripts/exp25_refusal.py`. D117 bought 0.912 on held-out compositions and silently gave up the property this project exists for: abstention hit 0.000. When the residual could not be spent, the walker returned whatever partial frontier it had reached — a 1-hop result handed back for a 2-hop question, which is a wrong-answer generator by construction.
+
+**The mechanism was already computed and free.** The head predicts a sum of relation coordinates whose *magnitude* encodes how many relations the question involves (D117). If the walk cannot spend that magnitude against anything reachable from the subject, the question was not answerable from here. Refusal is a threshold on the **unexplained residual**, normalised by the predicted magnitude. No new model, no new training.
+
+**The measurement problem mattered more than the mechanism, and is the real content of this entry.** Every hop question in D111–D117 is answerable *by construction* — they were enumerated FROM the store. A refuser evaluated only on answerable questions is indistinguishable from a refuser that never fires, and D111's audit law #6 says a threshold calibrated where the failure is absent buys nothing. So an unanswerable population was built deliberately, 6,000 questions, and of the **hard** kind: subjects where the first relation IS walkable but the chain yields nothing downstream — precisely the case D117 answers confidently and wrongly. Subjects with no outgoing edges were **excluded**, because the walker abstains on those trivially and counting them would have inflated the refusal rate for free.
+
+Threshold rule fixed before reading the sweep: the largest threshold (most coverage) whose unanswerable refusal rate is ≥ 0.90. Selected 0.40.
+
+| | D117 | **D118** |
+|---|---|---|
+| answerable (held-out comps) correct | 0.912 | 0.881 |
+| answerable wrong | 0.088 | **0.071** |
+| answerable abstain | 0.000 | 0.048 |
+| answerable precision | 0.912 | **0.925** |
+| **unanswerable refused** | **0.000** | **0.970** CI95 [0.966, 0.974] |
+
+**3.1 points of coverage buys a 0.970 refusal rate, and precision improves rather than degrading.** Seen-composition wrong-rate goes to 0.000. The sweep shows why it is cheap: the residual signal separates sharply — at threshold 0.5 unanswerable refusal is 0.607 while answerable correctness is untouched at 0.910; by 0.4 refusal reaches 0.970 for the first real coverage cost. That is a genuine signal, not a knob trading one error for another.
+
+**New audit law (#7), and the whole D111–D118 arc is what earned it**: *you cannot measure refusal without unanswerable questions.* A benchmark enumerated from the store contains only answerable items, so every refusal metric computed on it is vacuous — abstention there measures timidity, not correctness. Any future claim about honest refusal must ship the population it is entitled to refuse, and must report the two populations separately rather than averaging them into a single accuracy.
+
+**Revisit**: (a) the unanswerable set is one *kind* of unanswerable — chain-empty. Questions about entities absent from the store entirely, and questions whose relation is out of vocabulary, are different failure modes and untested; (b) 3-hop, still untested, and now the natural stress test since it is where compounding error should first make refusal earn its keep; (c) the walker remains greedy, and D116's domain-vocabulary machinery is still not connected to it.
+
 ## 2026-07-28 — D117: Let the STORE decide order and depth — held-out composition accuracy 0.534 → 0.912, and A→A goes from catastrophic to solved
 `scripts/exp24_walker.py`. Closes the gap left open since D112. The path-planning formulation had three measured defects: it could not express a repeated relation (D111, and `A→A` is 79% of real 2-hop shapes), order did not transfer to unseen compositions by any of three mechanisms (D112), and depth was a trained class so 3-hop would be R³.
 
