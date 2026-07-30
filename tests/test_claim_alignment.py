@@ -43,6 +43,33 @@ def _artifacts() -> list[Path]:
                   if p.name.startswith(CLAIM_AUDITS))
 
 
+def test_absent_adjudication_is_recorded_rather_than_implied():
+    """No current adjudication is a fine state; a SILENT one is not.
+
+    When every artifact is archived, the parametrized test above has nothing
+    to run and the suite goes green — "no adjudication" and "adjudication all
+    valid" become indistinguishable at a glance. That is the shape of failure
+    this whole file exists for: D150, D152 and D153 were each a case of
+    absence reading as confirmation, and D154's aggregator reported SURVIVES
+    on a third of the data for the same reason.
+
+    So the invariant is: either current artifacts exist, or the archive the
+    claims were retired into says why. A README is a weak guarantee, but it
+    forces the person emptying the directory to write down what is owed.
+    """
+    if _artifacts():
+        return
+    archives = sorted(p for p in ADJ.glob("superseded_*") if p.is_dir())
+    assert archives, (
+        f"{ADJ.relative_to(ROOT)} holds no claim adjudication and no "
+        f"superseded_* archive explaining its absence. The claims are "
+        f"currently unjudged and nothing says so.")
+    assert (archives[-1] / "README.md").exists(), (
+        f"{archives[-1].name} has no README. When an adjudication is retired "
+        f"the archive must record what it established and what is owed, or "
+        f"the empty directory reads as though nothing was ever needed.")
+
+
 def test_every_claim_supplies_parseable_evidence():
     """What the adjudicator receives must resolve, and must be valid JSON.
 

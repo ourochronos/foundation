@@ -2,6 +2,34 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D155: The alias curve PLATEAUS — claim 12's "not a permanent loss of information" is withdrawn, and D129's direction is partly restored
+
+`scripts/exp51_aliasplateau.py`. The first of D154's six falsifiers, run rather than argued with. Two of three adversarial raters said the same thing about claim 12: *"the gap could plateau above zero beyond ten aliases, indicating permanent information loss; the finite shrinking curve cannot exclude that falsifier."* They were right.
+
+**On the only population where alias supply can be pushed past 10, the gap stops closing.**
+
+| aliases | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 |
+|---|---|---|---|---|---|---|---|---|---|
+| head | 0.757 | 0.830 | 0.844 | 0.861 | 0.890 | 0.876 | 0.882 | 0.888 | 0.892 |
+| 1-NN | 0.975 | 0.975 | 0.975 | 0.975 | 0.977 | 0.969 | 0.967 | 0.969 | 0.983 |
+| **gap** | 0.218 | 0.145 | 0.131 | 0.114 | **0.087** | 0.093 | 0.085 | 0.081 | **0.091** |
+
+The tail slope over 14/16/18 is **+0.0016 per alias** — flat, if anything rising. The gap at 18 aliases is **0.0913** against a 95% half-width of **0.0258**, so the floor is three and a half times the noise. Adding eight more aliases past the point D139 stopped at bought nothing.
+
+**The mechanism is the head's ceiling, not retrieval's climb.** 1-NN is at **0.975 from two aliases onward** and never moves. The head climbs 0.757 → 0.892 and stops. So this is not a race that retrieval keeps winning; it is a level the head does not reach.
+
+**That partly restores D129 and bounds D148.** D129 concluded a parametric head "destroys information 1-NN preserves". D148 replaced that with data-efficiency — the head was handicapped, not incapable, and the gap mostly closes by 10 aliases. D148's correction **stands for the 2→10 range**, where the gap really does fall 0.170 → 0.035. Its extrapolation past 10 does not. Between them the honest reading is: alias supply explains most of the gap and **not all of it**, and the residual is a real capability difference rather than a supply shortfall.
+
+**The control earned its keep by failing.** It was there to check whether shrinking the vocabulary distorts the curve, and it says it does: at every one of the five shared alias counts arm B's gap is **larger** than arm A's, by 0.030 to 0.052 (mean 0.0445). The populations are not interchangeable, so the plateau *level* belongs to the 8-relation set and cannot be read onto the 24-relation one — whose own curve was still falling at its last point (0.063 → 0.035). **And the experiment that would settle it there cannot be run**: those relations do not have 20 aliases apiece, which is the entire reason arm B exists. A floor is demonstrated where it is measurable and remains untested where the original claim was made. Saying so is the finding, not a hedge around it.
+
+**The confound ran the opposite way from my prediction, which is the part worth keeping.** I expected a smaller vocabulary to make identification *easier* and shrink the gap; arm B's gap is uniformly *larger*. The likely reason is a selection effect on which relations carry many aliases: a relation with 20+ surface forms is one people describe many different ways, so extra aliases add confusability along with signal. **"Collect more aliases" is therefore not a uniform lever** — it works hardest on relations that need it least, and the relations with the most aliases are the ones where the head plateaus furthest below retrieval.
+
+**Claim 12 is restated**: retrieval's advantage narrows sharply with alias supply (0.170 → 0.035 over 2 → 10 aliases on 24 relations) and, on the population where supply reaches 18, **stops narrowing at ≈0.09**. "Not a permanent loss of information" is withdrawn.
+
+Cached re-run reproduces every figure identically (law #8).
+
+**Revisit**: (a) the plateau is 8 relations and n=482 — a second corpus with high-alias relations would say whether ≈0.09 is a property of these relations or of the head; (b) the selection effect above is an interpretation of a difference between two arms, not a measured mechanism, and the test is to hold the relation set fixed while varying only *which* aliases are supplied; (c) five falsifiers remain from D154.
+
 ## 2026-07-30 — D154: Every claim that had escaped adjudication fails it — 4 of 4, against 2 of 10 for the claims that had faced it before
 
 Both prompts on the reconciled 14-claim block: verification once per rater, attack **three times** per rater, per-rater majority before quorum, four families. All 16 runs completed and all 16 passed the D152 alignment check, so every verdict below is attributable to the claim text it judged (`results/adjud_quorum.json`, `scripts/adjud_quorum.py`).

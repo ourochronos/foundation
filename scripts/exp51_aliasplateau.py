@@ -10,15 +10,21 @@ run to flat. A residual of 0.042 at the largest supply tested is equally
 consistent with "converging to zero" and with "converging to 0.04".
 
 **Two arms, because the obvious experiment has a confound.** Only 11 of our
-relations carry 20+ aliases, against 34 at 12+. Sweeping further therefore
-means shrinking the relation vocabulary, and identification gets easier as
-the vocabulary shrinks — a gap that closes at 20 aliases on 11 relations
-would be partly the vocabulary, not the aliases. So:
+relations carry 20+ aliases, against 34 at 12+, and requiring 4+ subjects
+apiece cuts those to **8 and 24**. Sweeping further therefore means shrinking
+the relation vocabulary, and identification gets easier as the vocabulary
+shrinks — a gap that closes at 20 aliases on 8 relations would be partly the
+vocabulary, not the aliases. So:
 
-  * **A (control)**: 34 relations (12+ aliases), swept 2 -> 10. Reproduces
+  * **A (control)**: relations with 12+ aliases, swept 2 -> 10. Reproduces
     D139's population and its curve.
-  * **B (extension)**: 11 relations (20+ aliases), swept 2 -> 18. The same
+  * **B (extension)**: relations with 20+ aliases, swept 2 -> 18. The same
     relations at every point, so the curve is internally comparable.
+
+Arms are named for their alias threshold, not their relation count: the
+`>= 4 subjects` filter moves the count, and a name that asserts a number the
+run does not produce is the defect this project has spent three entries
+chasing (D153).
 
 Comparing the two arms **at their shared alias counts** is what says whether
 B's smaller vocabulary distorts the shape. If A and B agree where they
@@ -56,8 +62,8 @@ from foundation.kb import KB                                     # noqa: E402
 
 SEED, N_SUBJ, N_EVAL_ALIAS = 0, 40, 2
 OBJECTIVE, HIDDEN, EPOCHS = "contrastive", 1024, 40      # exp49's winner
-ARMS = {"A_control_34rel": {"min_alias": 12, "sweep": [2, 4, 6, 8, 10]},
-        "B_extended_11rel": {"min_alias": 20,
+ARMS = {"A_control_12plus": {"min_alias": 12, "sweep": [2, 4, 6, 8, 10]},
+        "B_extended_20plus": {"min_alias": 20,
                              "sweep": [2, 4, 6, 8, 10, 12, 14, 16, 18]}}
 
 sch = {d["pid"]: d for d in
@@ -181,7 +187,7 @@ for arm, cfg in ARMS.items():
                     "chance": round(1 / len(rels), 4), "curve": curve}
 
 # ---- do the arms agree where they overlap? --------------------------------
-A, B = results["A_control_34rel"], results["B_extended_11rel"]
+A, B = results["A_control_12plus"], results["B_extended_20plus"]
 shared = sorted(set(A["curve"]) & set(B["curve"]), key=int)
 print(f"\narm agreement at shared alias counts (gap A vs gap B)")
 for k in shared:

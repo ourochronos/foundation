@@ -29,7 +29,7 @@ would falsify it. A claim without its condition is not publishable.
 | 5b | On the **mixed** benchmark, refusal needs the answer-type gate | law #9 population: chain_break + not_applicable + absent_entity | not_applicable **0.050 → 0.693** with the gate; chain_break 0.337 → 0.650; answerable wrongness 0.118 → 0.045; **correct** falls 0.110 while **total answered** falls 0.183 — the extra 0.073 removed were wrong answers (D134) | probe ceiling is 0.965, so 0.693 is threshold placement, not the limit |
 | 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching **−0.79 / −0.83 / −0.91** across three populations (D124) | "ambiguity is the mechanism" is an interpretation of the gain overlap (1.198 vs 1.390); D137 found branching hurts only when the added options are *confusable* |
 | 7 | Compression buys generalisation and costs precision | descriptive across three experiments; none tests both halves | novel relations 0.293 → **0.742** (D125); phrasing 0.149 → **0.313** at wrongness 0.036 → 0.245 (D128); depth-4 0.289 → **0.149** (D126) | a representation winning on both axes — none of the three was designed to look |
-| 8 | Retrieval beats a parametric head by **data-efficiency**; that the head does not *destroy* information is **inferred, not measured** | depth-1 relation identification, known relations; gap is alias-supply dependent | **within one population** (exp43, 34 relations) the gap closes 0.229 → 0.042 from 2 to 10 aliases; **on a second** (exp49, 56 relations) no head config at 2 aliases reached 1-NN — best 0.691 vs 0.925 (D148, D139) | **falsified if** the gap stops shrinking as aliases are added, or a head at 2 aliases reaches 1-NN — none did at 512–2048 hidden across three objectives; and on **new** relations retrieval collapses to 0.229 vs the head's 0.782 (D131) |
+| 8 | Alias supply explains **most** of retrieval's advantage over a parametric head — **and not all of it** | depth-1 relation identification, known relations; the plateau is measured on 8 high-alias relations only | gap 0.229 → 0.042 over 2→10 aliases (exp43, 34 rel); then **flat at ≈0.09** over 10→18 (exp51, 8 rel: 0.087 → 0.091, tail slope +0.0016/alias vs noise ±0.026); no head config reached 1-NN at 2 aliases — 0.691 vs 0.925 (exp49) (D139, D148, **D155**) | **falsified if** the gap resumes falling past 18 aliases, or a head reaches 1-NN at any supply. *"Not a permanent loss of information" was withdrawn at D155 when this falsifier was run — the head plateaus at 0.892 while 1-NN sits at 0.975 from two aliases onward.* |
 
 | 11* | Claim adjudication itself is noisy | two independent raters | Cohen's kappa **+0.333** (D140) | single-rater verdicts in D130/D135 were correspondingly noisier than they appeared |
 
@@ -283,20 +283,28 @@ test permits.
  },
  {
   "row": "8",
-  "claim": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.042 at 10, so the head's disadvantage is alias supply and not a permanent loss of information. On a second population no head configuration at 2 aliases (512-2048 hidden, three objectives) reached 1-NN \u2014 best 0.691 vs 0.925.",
-  "scope": "depth-1 relation identification on KNOWN relations. The CURVE is exp43's 34-relation population; the no-configuration-closes-it result is exp49's 56-relation population \u2014 two populations, two roles, not one curve. What is measured is that the gap SHRINKS with alias supply; 'the head does not destroy information' is inferred from that and is not itself measured, since the gap never reached zero (0.042 residual at 10 aliases). FALSIFIED IF the gap stops shrinking as aliases are added, or a head at 2 aliases reaches 1-NN",
+  "claim": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.042 over 2 to 10 aliases, and on the population where supply reaches 18 it stops falling at ~0.09 (0.087 at 10, 0.091 at 18, tail slope +0.0016/alias). The residual is a capability difference, not a supply shortfall.",
+  "scope": "depth-1 relation identification on KNOWN relations. THREE populations, three roles: the 2->10 curve is exp43's 34 relations; the 2->18 curve is exp51's 8 relations (those carrying 20+ aliases); the no-configuration-closes-it result is exp49's 56 relations. The plateau is measured ONLY on the 8-relation set, whose gap runs 0.030-0.052 HIGHER than the 24-relation control at every shared alias count \u2014 so the level does not transfer, and the larger population cannot be swept past 12 because its relations lack the aliases. The earlier claim that this is 'not a permanent loss of information' was WITHDRAWN at D155 when this falsifier was run. FALSIFIED IF the gap resumes falling past 18 aliases, or a head reaches 1-NN at any supply",
   "src": [
-   "results/exp49_fair_head.json",
+   "results/exp51_aliasplateau.json",
    [
-    "one_nn",
-    "d129_head",
-    "grid",
-    "epoch_sweep",
-    "best_head",
-    "gap_to_1nn"
+    "results",
+    "tail_gaps",
+    "tail_slope_per_alias",
+    "gap_at_max_alias",
+    "noise_half_width",
+    "mean_abs_gap_diff_on_overlap"
    ]
   ],
   "extra": [
+   [
+    "results/exp49_fair_head.json",
+    [
+     "one_nn",
+     "best_head",
+     "gap_to_1nn"
+    ]
+   ],
    [
     "results/exp43_scaling.json",
     [

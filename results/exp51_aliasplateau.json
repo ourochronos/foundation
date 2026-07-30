@@ -1,0 +1,171 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T08:27:01.689404+00:00",
+  "commit": "6687d3102a922cd34f3fa4a06e0a545208781ff4",
+  "dirty": true,
+  "command": "scripts/exp51_aliasplateau.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "objective": "contrastive",
+   "hidden": 1024,
+   "epochs": 40,
+   "N_SUBJ": 40,
+   "arms": {
+    "A_control_12plus": {
+     "min_alias": 12,
+     "sweep": [
+      2,
+      4,
+      6,
+      8,
+      10
+     ]
+    },
+    "B_extended_20plus": {
+     "min_alias": 20,
+     "sweep": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18
+     ]
+    }
+   }
+  }
+ },
+ "results": {
+  "A_control_12plus": {
+   "n_relations": 24,
+   "n_eval": 1376,
+   "chance": 0.0417,
+   "curve": {
+    "2": {
+     "head": 0.7863,
+     "knn": 0.9564,
+     "gap": 0.1701,
+     "n_train": 1376
+    },
+    "4": {
+     "head": 0.8539,
+     "knn": 0.9586,
+     "gap": 0.1047,
+     "n_train": 2752
+    },
+    "6": {
+     "head": 0.8634,
+     "knn": 0.9637,
+     "gap": 0.1003,
+     "n_train": 4128
+    },
+    "8": {
+     "head": 0.9099,
+     "knn": 0.9724,
+     "gap": 0.0625,
+     "n_train": 5504
+    },
+    "10": {
+     "head": 0.9404,
+     "knn": 0.9753,
+     "gap": 0.0349,
+     "n_train": 6880
+    }
+   }
+  },
+  "B_extended_20plus": {
+   "n_relations": 8,
+   "n_eval": 482,
+   "chance": 0.125,
+   "curve": {
+    "2": {
+     "head": 0.7573,
+     "knn": 0.9751,
+     "gap": 0.2178,
+     "n_train": 482
+    },
+    "4": {
+     "head": 0.8299,
+     "knn": 0.9751,
+     "gap": 0.1452,
+     "n_train": 964
+    },
+    "6": {
+     "head": 0.8444,
+     "knn": 0.9751,
+     "gap": 0.1307,
+     "n_train": 1446
+    },
+    "8": {
+     "head": 0.861,
+     "knn": 0.9751,
+     "gap": 0.1141,
+     "n_train": 1928
+    },
+    "10": {
+     "head": 0.89,
+     "knn": 0.9772,
+     "gap": 0.0871,
+     "n_train": 2410
+    },
+    "12": {
+     "head": 0.8755,
+     "knn": 0.9689,
+     "gap": 0.0934,
+     "n_train": 2892
+    },
+    "14": {
+     "head": 0.8817,
+     "knn": 0.9668,
+     "gap": 0.0851,
+     "n_train": 3374
+    },
+    "16": {
+     "head": 0.888,
+     "knn": 0.9689,
+     "gap": 0.0809,
+     "n_train": 3856
+    },
+    "18": {
+     "head": 0.8921,
+     "knn": 0.9834,
+     "gap": 0.0913,
+     "n_train": 4338
+    }
+   }
+  }
+ },
+ "shared_alias_counts": [
+  "2",
+  "4",
+  "6",
+  "8",
+  "10"
+ ],
+ "mean_abs_gap_diff_on_overlap": 0.0445,
+ "tail_alias_counts": [
+  14,
+  16,
+  18
+ ],
+ "tail_gaps": [
+  0.0851,
+  0.0809,
+  0.0913
+ ],
+ "tail_slope_per_alias": 0.00155,
+ "gap_at_max_alias": 0.0913,
+ "noise_half_width": 0.0258,
+ "verdict": "gap PLATEAUS at 0.0913 (slope +0.00155/alias) \u2014 claim 12 is WRONG as written; retrieval's advantage has a floor, and 'not a permanent loss' must be withdrawn",
+ "scope": "Addresses the falsifier 2 of 3 adversarial raters named for claim 12 (D154): the alias curve stopped at 10 and could plateau above zero. Arm B extends to 18 on the 11 relations carrying 20+ aliases; arm A reproduces D139's 34-relation population as a control, because identification gets easier as the vocabulary shrinks and the extension necessarily shrinks it. The arms are compared at shared alias counts to show whether B's smaller vocabulary distorts the shape. Evaluation is on the last two aliases, FIXED across the sweep, so only training supply varies. Head is exp49's winning configuration, frozen."
+}
