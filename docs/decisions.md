@@ -2,6 +2,31 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D163: A third adjudication prompt for the defect the other two miss — and it found four on the first run, in a table that had just passed both
+
+D162's revisit (c) said the summarising sentence is checked by nothing and that the gap wants a mechanism rather than more vigilance. Two mechanisms were tried.
+
+**The lexical one failed, and its failure says what the defect is.** A detector listing absolute and exclusive terms per claim — *not X*, *only*, *never*, *no*, *permanent* — was built and validated against the three claims raters had actually flagged. It caught 2 of 3 and listed 5 of the 11 unflagged: **half the table**. Reading the per-claim output showed why it is not merely noisy but wrong in principle. It fires on *"mutates **no** fitted artifact"* (the measured result), on *"pairs **never** seen composed"* (the experimental design), and on *"how m**any**"* (a substring). Whether *"not by how many options"* overreaches depends on whether the evidence tests the exclusion, which is semantic and invisible to a marker list. Deleted rather than shipped, because a check that lists half a table while looking like a filter is the thing this project keeps punishing.
+
+**The second is a third prompt, and it works.** `scripts/adjudicate.py selfcheck` shows a rater the CLAIM SENTENCE and ITS OWN SCOPE — **no evidence at all** — and asks one question: does the claim assert anything its own scope contradicts, concedes against, or declines to cover? Withholding the evidence is the design: the two existing prompts read claim and scope together as one package and judge the package, which is exactly why a sentence that outruns its own scope passes both.
+
+On the 14-claim block that had just been through both other prompts, three raters at quorum:
+
+| row | the claim said | its own evidence said |
+|---|---|---|
+| 1b | "Appending is behaviourally near-free" | true of the head; retrieval is +0.247 |
+| 3 | "the step-by-step WALK does **not**" | greedy walking is worth **+0.009** |
+| 7 | "costs REFUSAL, **not** the accuracy" | **+0.0723** wrong on that population |
+| 12 | "Entities are **free**"; "held out of training" | gap **−0.029**; training **questions** only |
+
+**Four flagged, and none of the four overlaps the three that attack flagged.** The sets are disjoint, so this is a defect class the existing prompts do not reach rather than a rephrasing of them. All four verified against the claim text before acting (D98) and all four rewritten.
+
+**Two of them are sentences I wrote while explicitly holding the correct number in mind.** D159 measured the wrongness cost at 9.8% of the gain, called the trade-off "mislocated" on exactly that basis — and then wrote the claim as *"costs refusal, **not** the accuracy"*. D158 computed greedy walking at +0.009 and wrote *"the walk does **not**"*. **Knowing the number does not prevent the sentence**, which is why law #10 and three entries of vigilance did not fix this and a prompt did.
+
+**What that says about the earlier rounds.** The claims table has been carrying this defect systematically, not in three isolated slips: a table that had passed verification and survived attack still had four claim sentences contradicting their own scopes. Any round that reports "N flagged" is reporting what its prompts can see, and adding a prompt that asks a question none of the others asked found more. **The right reading of a low flag count is "no more defects of the kinds we asked about".**
+
+**Revisit**: (a) selfcheck ran once per rater, not three times, so its within-rater stability is unmeasured and its counts should be read as provisional; (b) it should join the standard round in `run_adjudication.sh` — three prompts × three raters × repetitions is a real cost increase and worth a deliberate decision rather than drift; (c) it needs the same treatment the others got: a claim it *should* flag, planted deliberately, to check it is not simply flagging the most qualified-sounding sentences.
+
 ## 2026-07-30 — D162: The cross-round diff, built before it was needed — and it immediately corrected the entry that asked for it
 
 D161's revisit (d) asked for a cross-round diff in `adjud_quorum.py`, on the grounds that flag *counts* are not comparable across rounds and only per-claim sets are. Built now rather than after the next round, and it earned that timing within one run.

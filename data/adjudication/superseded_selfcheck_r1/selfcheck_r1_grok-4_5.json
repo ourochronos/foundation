@@ -1,0 +1,134 @@
+{
+ "audit": "selfcheck_r1",
+ "model": "grok-4.5",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed MAINLY by the most confusable option available at the break step and SECONDARILY by how many there a",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains most of retrieval's advantage over a parametric head over the range anyone has measured: the gap f",
+  "12": "Claim adjudication is noisy, and unevenly: within-rater variation across identical runs is concentrated rather than shar",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "judged_claim_digests": {
+  "0": "7de839fd767fa4a3",
+  "1": "91d82dbb28fe7086",
+  "2": "b99889223161d47f",
+  "3": "207d4ac2836984f3",
+  "4": "a4cfbcc306056656",
+  "5": "cdfe6d824c55bf9d",
+  "6": "1fac9bdacb6842f9",
+  "7": "5a3a82af43bd06cc",
+  "8": "324b4a6598a1bb61",
+  "9": "f5118532427b5134",
+  "10": "a44b49829e3eaf76",
+  "11": "17b705b7df826dbf",
+  "12": "d2ca34aea003eeaf",
+  "13": "d3fce48d3a2d7501"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.7857142857142857,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "CONSISTENT",
+   "theirs": "OVERREACH",
+   "their_reason": "Claim 'Appending is behaviourally near-free for new ENTITIES' vs scope 'PARAMETRIC HEAD ONLY' and 'Retrieval is worse... (+0.247 entity)'."
+  },
+  {
+   "idx": 10,
+   "mine": "CONSISTENT",
+   "theirs": "OVERREACH",
+   "their_reason": "Claim 'costs REFUSAL, not the accuracy of what it enables' vs scope/claim '+0.0723 wrong' and wrong-rate '0.1531 to 0.1667'."
+  },
+  {
+   "idx": 13,
+   "mine": "CONSISTENT",
+   "theirs": "OVERREACH",
+   "their_reason": "Claim 'subjects held out of training' vs scope 'held out of TRAINING QUESTIONS only; their claims remain in the store and stay walkable'."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim 'mutates no fitted artifact' matches scope 'byte-identical basis, coordinates and head weights'."
+  },
+  "1": {
+   "verdict": "OVERREACH",
+   "reason": "Claim 'Appending is behaviourally near-free for new ENTITIES' vs scope 'PARAMETRIC HEAD ONLY' and 'Retrieval is worse... (+0.247 entity)'."
+  },
+  "2": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim's 1.000 on prior refusals and 432/1179 match scope's conditional rates and fingerprint freeze."
+  },
+  "3": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim 'almost never' stale (0.002) and 'not staleness' as dominant failure matches scope's one old->old and failure ranking."
+  },
+  "4": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim's 0.274 vs 0.077 breakage matches scope's 'reduced it by 0.197' within-experiment comparison."
+  },
+  "5": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim's depth-2 held-out +0.011 within 0.02 matches scope margin; claim does not assert depth 3 or >=60."
+  },
+  "6": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim 'STORE supplies... WALK does not' matches scope store-filter +0.515 vs walk +0.009; no depth-from-store claim."
+  },
+  "7": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim limited to 'ANSWERING at 3 hops' (0.849 vs 0.961); scope's depth-4 failure is outside that claim."
+  },
+  "8": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim's per-depth wrongness cuts and NA refusal lift match scope; does not deny the correct-answer cost."
+  },
+  "9": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim 'MAINLY' max cosine and 'SECONDARILY' count with 'Count is not zero' matches scope; avoids the old 'not by how many' exclusion."
+  },
+  "10": {
+   "verdict": "OVERREACH",
+   "reason": "Claim 'costs REFUSAL, not the accuracy of what it enables' vs scope/claim '+0.0723 wrong' and wrong-rate '0.1531 to 0.1667'."
+  },
+  "11": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim 'STOPS falling' over 10-18 and 'permanent is NOT established' matches scope; does not reassert permanence."
+  },
+  "12": {
+   "verdict": "CONSISTENT",
+   "reason": "Claim 'largely different... NOT disjoint' matches scope; drops the refuted 'disagree completely'/disjoint wording."
+  },
+  "13": {
+   "verdict": "OVERREACH",
+   "reason": "Claim 'subjects held out of training' vs scope 'held out of TRAINING QUESTIONS only; their claims remain in the store and stay walkable'."
+  }
+ },
+ "my_labels": {
+  "0": "CONSISTENT",
+  "1": "CONSISTENT",
+  "2": "CONSISTENT",
+  "3": "CONSISTENT",
+  "4": "CONSISTENT",
+  "5": "CONSISTENT",
+  "6": "CONSISTENT",
+  "7": "CONSISTENT",
+  "8": "CONSISTENT",
+  "9": "CONSISTENT",
+  "10": "CONSISTENT",
+  "11": "CONSISTENT",
+  "12": "CONSISTENT",
+  "13": "CONSISTENT"
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "audit": "selfcheck_r1",
+ "model": "gemini-3.1-pro-preview",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed MAINLY by the most confusable option available at the break step and SECONDARILY by how many there a",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains most of retrieval's advantage over a parametric head over the range anyone has measured: the gap f",
+  "12": "Claim adjudication is noisy, and unevenly: within-rater variation across identical runs is concentrated rather than shar",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "judged_claim_digests": {
+  "0": "7de839fd767fa4a3",
+  "1": "91d82dbb28fe7086",
+  "2": "b99889223161d47f",
+  "3": "207d4ac2836984f3",
+  "4": "a4cfbcc306056656",
+  "5": "cdfe6d824c55bf9d",
+  "6": "1fac9bdacb6842f9",
+  "7": "5a3a82af43bd06cc",
+  "8": "324b4a6598a1bb61",
+  "9": "f5118532427b5134",
+  "10": "a44b49829e3eaf76",
+  "11": "17b705b7df826dbf",
+  "12": "d2ca34aea003eeaf",
+  "13": "d3fce48d3a2d7501"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.6428571428571429,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "CONSISTENT",
+   "theirs": "OVERREACH",
+   "their_reason": "The claim states 'Appending is behaviourally near-free' broadly, but the scope restricts this to 'PARAMETRIC HEAD ONLY' and notes 'Retrieval is worse on every one'."
+  },
+  {
+   "idx": 5,
+   "mine": "CONSISTENT",
+   "theirs": "OVERREACH",
+   "their_reason": "The claim asserts broadly that 'Composition generalises to relation pairs never seen composed', while the scope clarifies it 'holds at depth 2 ONLY and breaks at depth 3'."
+  },
+  {
+   "idx": 6,
+   "mine": "CONSISTENT",
+   "theirs": "OVERREACH",
+   "their_reason": "The claim asserts 'the step-by-step WALK does not' supply what makes it work, but the scope notes 'the walker's remaining justification is COST rather than accuracy and that is untested here'."
+  },
+  {
+   "idx": 10,
+   "mine": "CONSISTENT",
+   "theirs": "OVERREACH",
+   "their_reason": "The claim makes an absolute statement that 'Compression buys generalisation', but the scope explicitly warns 'The PHRASING leg is NOT covered'."
+  },
+  {
+   "idx": 13,
+   "mine": "CONSISTENT",
+   "theirs": "OVERREACH",
+   "their_reason": "The claim describes the subjects as 'held out of training', but the scope concedes they are 'held out of TRAINING QUESTIONS only; their claims remain in the store'."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "CONSISTENT",
+   "reason": "The claim and scope perfectly align on the mechanical nature of the append and its verified byte-identical basis."
+  },
+  "1": {
+   "verdict": "OVERREACH",
+   "reason": "The claim states 'Appending is behaviourally near-free' broadly, but the scope restricts this to 'PARAMETRIC HEAD ONLY' and notes 'Retrieval is worse on every one'."
+  },
+  "2": {
+   "verdict": "CONSISTENT",
+   "reason": "The claim clearly reports the numbers and their specific conditions, matching the detailed provenance and verification in the scope."
+  },
+  "3": {
+   "verdict": "CONSISTENT",
+   "reason": "The claim explicitly states the single failure case and accurately proportions staleness against refusal and wrong answers as permitted by the scope."
+  },
+  "4": {
+   "verdict": "CONSISTENT",
+   "reason": "The operations and improvements listed in the claim fall safely within the frozen within-experiment comparison in the scope."
+  },
+  "5": {
+   "verdict": "OVERREACH",
+   "reason": "The claim asserts broadly that 'Composition generalises to relation pairs never seen composed', while the scope clarifies it 'holds at depth 2 ONLY and breaks at depth 3'."
+  },
+  "6": {
+   "verdict": "OVERREACH",
+   "reason": "The claim asserts 'the step-by-step WALK does not' supply what makes it work, but the scope notes 'the walker's remaining justification is COST rather than accuracy and that is untested here'."
+  },
+  "7": {
+   "verdict": "CONSISTENT",
+   "reason": "The claim specifically bounds its conclusion to 'for ANSWERING at 3 hops', completely respecting the scope's limitation that it 'is demonstrated at 3 hops and refuted at 4'."
+  },
+  "8": {
+   "verdict": "CONSISTENT",
+   "reason": "The claim attributes the effects specifically to the gate and specifies the exact depths, aligning with the scope's metrics."
+  },
+  "9": {
+   "verdict": "CONSISTENT",
+   "reason": "The claim correctly limits itself by saying refusal is 'MAINLY' governed by maximum cosine and 'SECONDARILY' by count, matching the scope's correction of an earlier absolute."
+  },
+  "10": {
+   "verdict": "OVERREACH",
+   "reason": "The claim makes an absolute statement that 'Compression buys generalisation', but the scope explicitly warns 'The PHRASING leg is NOT covered'."
+  },
+  "11": {
+   "verdict": "CONSISTENT",
+   "reason": "The claim clearly acknowledges the limit of the evidence with 'Whether the residual is permanent is NOT established', perfectly reflecting the scope."
+  },
+  "12": {
+   "verdict": "CONSISTENT",
+   "reason": "The claim uses 'largely different things, though NOT disjoint sets', which exactly matches what the scope says the evidence supports."
+  },
+  "13": {
+   "verdict": "OVERREACH",
+   "reason": "The claim describes the subjects as 'held out of training', but the scope concedes they are 'held out of TRAINING QUESTIONS only; their claims remain in the store'."
+  }
+ },
+ "my_labels": {
+  "0": "CONSISTENT",
+  "1": "CONSISTENT",
+  "2": "CONSISTENT",
+  "3": "CONSISTENT",
+  "4": "CONSISTENT",
+  "5": "CONSISTENT",
+  "6": "CONSISTENT",
+  "7": "CONSISTENT",
+  "8": "CONSISTENT",
+  "9": "CONSISTENT",
+  "10": "CONSISTENT",
+  "11": "CONSISTENT",
+  "12": "CONSISTENT",
+  "13": "CONSISTENT"
+ }
+}

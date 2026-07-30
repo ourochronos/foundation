@@ -496,6 +496,62 @@ elif sys.argv[1] == "claims":
         {"SUPPORTED", "OVERREACH", "UNSUPPORTED"}, mine,
         blocks=blocks, header=header)
 
+elif sys.argv[1] == "selfcheck":
+    # D163. Three consecutive entries had the same defect and neither existing
+    # prompt caught it: the numbers were right, the SCOPE was honest, and the
+    # CLAIM SENTENCE said something one step stronger than either.
+    #
+    #   claim  "governed by the most confusable option, NOT by how many"
+    #   scope  "Count is NOT zero: three doublings still cost 0.0727"
+    #
+    # Verification asks whether the claim is supported and reads the two
+    # together as one honest package. Attack asks what would falsify the
+    # claim and mostly engages the scope, which is where the falsifiers live.
+    # Neither is asked to put the two side by side and check they agree.
+    #
+    # A lexical detector was tried first and failed outright — it fires on
+    # "mutates NO fitted artifact" (the measured result) and "pairs NEVER
+    # seen composed" (the experimental design) exactly as readily as on a
+    # real overreach, because the difference is whether the evidence tests
+    # the exclusion, which is semantic. Hence a prompt rather than a regex.
+    RUN = sys.argv[3] if len(sys.argv) > 3 else "1"
+    blocks, items = [], []
+    for i, c in enumerate(CLAIMS):
+        items.append(c)
+        blocks.append(f"### ITEM {i}\nCLAIM SENTENCE: {c['claim']}\n"
+                      f"ITS OWN SCOPE CONDITION: {c['scope']}")
+    mine = {i: "CONSISTENT" for i in range(len(CLAIMS))}
+    header = (
+        "For each item you are given a CLAIM SENTENCE and the SCOPE CONDITION "
+        "its own authors attached to it. Ignore whether either is true — you "
+        "are not being shown the evidence and should not guess at it.\n\n"
+        "Answer one question: **does the claim sentence assert anything that "
+        "its own scope condition contradicts, concedes, or declines to "
+        "support?**\n\n"
+        "Pay closest attention to words that EXCLUDE or make something "
+        "absolute — 'not X', 'rather than X', 'only', 'never', 'no', 'is "
+        "caused by', 'permanent'. An exclusion is a second claim stacked on "
+        "top of the measurement, and a scope that quietly restores what the "
+        "claim excluded is the specific failure being looked for. Example of "
+        "an OVERREACH: claim says 'governed by A, not by B' while the scope "
+        "says 'B is not zero and costs 0.07'.\n\n"
+        "Verdict:\n"
+        "  CONSISTENT - the claim sentence says no more than the scope "
+        "permits.\n"
+        "  OVERREACH  - the claim sentence asserts something the scope "
+        "contradicts, concedes against, or does not cover. Quote the two "
+        "conflicting fragments in your reason.\n"
+        "  UNDERREACH - the scope asserts something stronger or more specific "
+        "than the claim, so the claim understates its own result.\n\n"
+        "Judge the SENTENCES against each other and nothing else. Do not use "
+        "any tools. Output ONLY a JSON array of "
+        f"{len(CLAIMS)} objects, format "
+        '{"idx": <n>, "verdict": "CONSISTENT"|"OVERREACH"|"UNDERREACH", '
+        '"reason": "<short, quoting both fragments>"} — nothing else.\n\n')
+    run(f"selfcheck_r{RUN}", items, header + "\n\n".join(blocks),
+        {"CONSISTENT", "OVERREACH", "UNDERREACH"}, mine,
+        blocks=blocks, header=header)
+
 elif sys.argv[1] == "attack":
     # D145: every adjudication so far asked "is this supported?", a question
     # that REWARDS hedging — a sufficiently qualified claim is always
