@@ -2,6 +2,19 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D152: The same drift bug one layer down — verdict artifacts key on index, so editing the claims list silently re-points every stored verdict
+Found while trying to act on D150's open item. Having moved the claims into `docs/18` as a single source of truth (D151), I went to read the three outstanding falsifiers out of the stored adversarial verdicts — and got nonsense: claim 4, now *"composition generalises"*, carried a falsifier about **derived thresholds**. That was the old claim 4, before the thresholds claim was demoted and the list shortened from 11 to 10.
+
+**The verdict artifacts key on position.** `data/adjudication/attack_r*.json` records `{"idx": 4, "verdict": ...}` and nothing about *what* claim 4 was. Remove one claim and every subsequent verdict silently re-points to a different claim, with no error and no visible symptom — the file still parses, the indices still resolve, the reasons still read as plausible prose about *something*.
+
+**This is D150's bug one layer down, and I walked into it two entries later.** D150 was two artifacts holding the same claims and diverging. This is one artifact holding *references* to claims that moved underneath it. Both are the same failure: **a claim's identity lived somewhere other than the claim.**
+
+**Fix**: verdict artifacts now stamp the claim text they judged (`judged_claims`), so any artifact can be checked against the current list rather than silently mis-aligning with it. Retrospective artifacts cannot be repaired — **the stored adversarial verdicts from D145 and D150 are unusable for identifying which claims are flagged**, because the list has changed since. Their aggregate statistics (flag counts, within-rater ranges, the family effect) remain valid, since those never depended on which claim was which.
+
+**Consequence for D150's standing conclusions.** The counts stand: 4 of 11 flagged adversarially, 0 of 11 under verification, per-rater ranges up to 5. **The identification of *which* claims were REFUTABLE does not**, and the three falsifiers I said were outstanding cannot be attributed to specific claims without re-running. That re-run is the prerequisite for acting on them, and it is the immediate next step rather than something to infer around.
+
+**Revisit**: (a) re-run the adversarial pass on the current 10-claim block, 3 runs per rater, before any falsifier work — the mapping is the blocker, not the experiments; (b) the general rule earned here, twice in three entries: **an artifact that references a mutable list must carry enough of the referent to detect drift**, and an index is never enough.
+
 ## 2026-07-30 — D150: Both prompts on the settled table — sharpening worked, except on the claim whose falsifier I invented from its own data
 `scripts/adjudicate.py claims|attack`, 4 families, adversarial run 3× per rater with a per-rater majority before quorum. Task 4, closing the plan.
 

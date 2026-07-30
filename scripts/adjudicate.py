@@ -101,7 +101,16 @@ def run(name: str, items: list[dict], prompt: str, allowed: set[str],
         {"idx": i, "mine": mine[i], "theirs": got[i]["verdict"],
          "their_reason": got[i]["reason"]}
         for i in both if mine[i] != got[i]["verdict"]]
+    def _label(i):
+        it = items[i] if i < len(items) else {}
+        return str(it.get("claim", it.get("statement", "")))[:120]
+
     art = {"audit": name, "model": MODEL, "n": len(items),
+           # D152: index-keyed verdicts go stale the moment the claims list
+           # is edited. Stamp what was actually judged so an artifact can be
+           # checked against the current list instead of silently
+           # mis-aligning with it.
+           "judged_claims": {str(i): _label(i) for i in range(len(items))},
            "n_judged": len(both), "raw_agreement": agree,
            "cohens_kappa": k, "disagreements": disagreements,
            "their_verdicts": {str(i): got[i] for i in sorted(got)},
