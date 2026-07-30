@@ -95,7 +95,12 @@ if not attack:
     raise SystemExit("\nno usable attack runs; re-run scripts/adjudicate.py")
 
 # ---- per-rater majority over its 3 runs -----------------------------------
-maj, stability = {}, {}
+# A rater votes only with a FULL set of runs. The first version of this took
+# whatever runs existed and used `count > 1` as the majority rule, so with one
+# run per rater every claim came back SPLIT, SPLIT is not a flag, and zero
+# flags printed as SURVIVES — a clean bill of health computed from a third of
+# the data. Absent evidence must never read as passing evidence.
+maj, stability, partial = {}, {}, {}
 for m in RATERS:
     runs = [attack[(m, r)] for r in RUNS if (m, r) in attack]
     if not runs:
@@ -105,13 +110,17 @@ for m in RATERS:
     for i in range(N):
         got = [v.get(i, "ABSENT") for v in vs]
         c = collections.Counter(got).most_common()
-        per_claim[i] = c[0][0] if c[0][1] > 1 else "SPLIT"
+        per_claim[i] = c[0][0] if c[0][1] * 2 > len(got) else "SPLIT"
         agree["unanimous" if c[0][1] == len(got) else
-              ("majority" if c[0][1] > 1 else "split")] += 1
-    maj[m] = per_claim
+              ("majority" if c[0][1] * 2 > len(got) else "split")] += 1
+    if len(runs) < len(RUNS):
+        partial[m] = len(runs)          # reported, but does not vote
+    else:
+        maj[m] = per_claim
     flags = [sum(1 for i in range(N) if v.get(i) in FLAG) for v in vs]
     stability[m] = {"n_runs": len(runs), "flags_per_run": flags,
-                    "range": max(flags) - min(flags), **agree}
+                    "range": max(flags) - min(flags), "votes": m in maj,
+                    **agree}
 
 print(f"\n{'rater':26s} {'runs':>4} {'flags/run':>14} {'range':>5} "
       f"{'unanim':>7} {'2-1':>5} {'split':>6}")
@@ -120,20 +129,31 @@ for m in RATERS:
     if not s:
         continue
     tag = "  (author family)" if m in AUTHOR_FAMILY else ""
+    if not s["votes"]:
+        tag += f"  INCOMPLETE {s['n_runs']}/{len(RUNS)} runs — does not vote"
     print(f"{m:26s} {s['n_runs']:4d} {str(s['flags_per_run']):>14} "
           f"{s['range']:5d} {s.get('unanimous', 0):7d} "
           f"{s.get('majority', 0):5d} {s.get('split', 0):6d}{tag}")
 
 # ---- quorum over independent raters ---------------------------------------
 QRATERS = [m for m in RATERS if m in maj and m not in AUTHOR_FAMILY]
+COMPLETE = len(QRATERS) >= 2
+if not COMPLETE:
+    print(f"\n*** INCOMPLETE: {len(QRATERS)} independent rater(s) with a full "
+          f"{len(RUNS)}-run set; a quorum needs at least 2. The table below "
+          f"is a partial view and is NOT written to results/. ***")
 print(f"\nquorum over {len(QRATERS)} independent raters "
-      f"(excluded: {', '.join(sorted(AUTHOR_FAMILY & set(maj)))})")
+      f"(excluded: {', '.join(sorted(AUTHOR_FAMILY & set(maj))) or 'none'})")
 print(f"\n{'#':>2} {'flags':>5} {'quorum':>13} {'author':>13}  claim")
 table = []
 for i in range(N):
     per = {m: maj[m][i] for m in QRATERS}
     nflag = sum(1 for v in per.values() if v in FLAG)
-    q = ("FLAGGED" if nflag * 2 > len(QRATERS) else
+    nsplit = sum(1 for v in per.values() if v == "SPLIT")
+    # a claim on which raters could not reproduce their own verdicts is not
+    # a claim that survived; it is one with no verdict
+    q = ("NO VERDICT" if not QRATERS or nsplit * 2 >= len(QRATERS) else
+         "FLAGGED" if nflag * 2 > len(QRATERS) else
          "SPLIT" if nflag * 2 == len(QRATERS) else "SURVIVES")
     auth = {m: maj[m][i] for m in maj if m in AUTHOR_FAMILY}
     av = next(iter(auth.values()), "-")
@@ -160,7 +180,9 @@ if verify:
 
 # ---- the falsifiers, for claims the quorum flagged ------------------------
 flagged = [t for t in table if t["quorum"] == "FLAGGED"]
-print(f"\n{len(flagged)} of {N} claims flagged by quorum under attack")
+print(f"\n{len(flagged)} of {N} claims flagged by quorum under attack"
+      if COMPLETE else
+      f"\nno quorum: {N} claims have NO VERDICT until the batch finishes")
 named = {}
 for t in flagged:
     rs = []
@@ -201,5 +223,9 @@ out = {
               "before use; misaligned ones are listed in "
               "`excluded_artifacts` and contribute nothing."),
 }
-(ROOT / "results" / "adjud_quorum.json").write_text(json.dumps(out, indent=1))
-print("\n[done] results/adjud_quorum.json")
+if COMPLETE:
+    (ROOT / "results" / "adjud_quorum.json").write_text(
+        json.dumps(out, indent=1))
+    print("\n[done] results/adjud_quorum.json")
+else:
+    print("\n[not written] incomplete run — finish the batch, then re-run")
