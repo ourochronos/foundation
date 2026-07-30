@@ -1,0 +1,94 @@
+{
+ "audit": "claims",
+ "model": "gemini-3.1-pro-preview",
+ "n": 10,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS.",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it does not keep asserting the old fact. Staleness i",
+  "4": "Composition generalises to relation pairs never seen composed, at parity with trained pairs at depth 2.",
+  "5": "Depth extrapolates without depth-specific training for ANSWERING (3-hop 0.849 with no 3-hop trained).",
+  "6": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "7": "Retrieval beats a parametric head by DATA-EFFICIENCY, not by preserving information the head destroys. Within one popula",
+  "8": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against",
+  "9": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin"
+ },
+ "n_judged": 10,
+ "raw_agreement": 0.7,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 4,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "The figure 'fails at 5' is not present in the measured numbers."
+  },
+  {
+   "idx": 7,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "The gap at 2 aliases is 0.229 (0.9525 - 0.7231), not 0.230."
+  },
+  {
+   "idx": 8,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "The numbers show 3 evaluation types (d1, d2, na) for a single population, not 3 different populations as claimed."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "Fingerprints for basis, coords, and head remain identical after append."
+  },
+  "1": {
+   "verdict": "SUPPORTED",
+   "reason": "Differences perfectly match the stated numbers: head new entity (+0.058), new relation (+0.191), and retrieval (+0.247, +0.771)."
+  },
+  "2": {
+   "verdict": "SUPPORTED",
+   "reason": "Matrix shows 432 refused became correct, and 432 out of 1179 unanswerable questions were refused, making the 1.000 and 0.366 fractions accurate."
+  },
+  "3": {
+   "verdict": "SUPPORTED",
+   "reason": "Staleness (1/431 = 0.002) and revision rates (0.459 overall, 0.235 single) precisely match the transition matrix figures."
+  },
+  "4": {
+   "verdict": "OVERREACH",
+   "reason": "The figure 'fails at 5' is not present in the measured numbers."
+  },
+  "5": {
+   "verdict": "SUPPORTED",
+   "reason": "Zero-shot 3-hop answering achieved 0.849 correctness, and unanswerable 3-hop queries showed failure to abstain, confirming refusal did not extrapolate."
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "All numbers strictly match: 0.110 correctly answered drop, 0.183 total answered drop, 0.073 wrong drop, and 0.693 threshold."
+  },
+  "7": {
+   "verdict": "OVERREACH",
+   "reason": "The gap at 2 aliases is 0.229 (0.9525 - 0.7231), not 0.230."
+  },
+  "8": {
+   "verdict": "OVERREACH",
+   "reason": "The numbers show 3 evaluation types (d1, d2, na) for a single population, not 3 different populations as claimed."
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "Revision rates (0.469, 0.733) and breakage stats (0.274, 0.077, reduction 0.197) exactly align with the measurements."
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED"
+ }
+}

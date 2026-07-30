@@ -19,6 +19,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+
+import claimset                                                  # noqa: E402
+
 OUT = ROOT / "data" / "adjudication"
 OUT.mkdir(exist_ok=True)
 MODEL = sys.argv[2] if len(sys.argv) > 2 else "gpt-5.6-sol"
@@ -55,6 +59,10 @@ def kappa(a: list[str], b: list[str]) -> float:
 
 
 ARGV_BUDGET = 110_000        # one `copilot -p` prompt; ARG_MAX bites near 1MB
+EVIDENCE_BUDGET = 7_000      # per cited file; whole keys only, never a cut
+                             # mid-structure (D92: truncation manufactured 6
+                             # of 8 disagreements). `run()` batches when the
+                             # assembled prompt outgrows ARGV_BUDGET.
 
 
 def run(name: str, items: list[dict], prompt: str, allowed: set[str],
@@ -189,39 +197,70 @@ def _abstract_audit(name: str, slice_dir: str):
 # claims and their evidence, so the two passes cannot drift apart.
 # ---------------------------------------------------------------
 def _nums(path: str, keys: list[str]) -> str:
+    """Pull the cited keys out of a stored artifact, verbatim.
+
+    A key may end in `#len` or `#distinct:<field>` to supply a count DERIVED
+    from the data rather than a stored number. That exists because three
+    raters independently flagged the same thing (D153): claim 2's scope said
+    composition "fails at 5" relations, and the figure 5 appeared in no
+    artifact anywhere — the experiment's own results file never recorded its
+    vocabulary size, and the schema it ran on has since been replaced. The
+    number was real but unciteable, which from an adjudicator's seat is
+    indistinguishable from invented. Computing it from the world file the
+    experiment actually consumed makes it checkable instead of asserted.
+
+    Evidence is never cut mid-structure. This used to end in `[:2600]`, which
+    on a large `results` block handed the adjudicator JSON that stopped in the
+    middle of a number — the rater then judged a claim against evidence it
+    could not parse and had no way to know was incomplete. D92 measured what
+    that costs: truncation manufactured 6 of 8 disagreements on arxiv50. So
+    whole keys are dropped instead, and the ones dropped are NAMED in the
+    output, because a rater that can see something is missing can say so.
+    """
     d = json.loads((ROOT / path).read_text())
     out = {}
     for k in keys:
+        base, _, op = k.partition("#")
         cur, ok = d, True
-        for part in k.split("."):
+        for part in base.split("."):
             if isinstance(cur, dict) and part in cur:
                 cur = cur[part]
             else:
                 ok = False
                 break
-        if ok:
+        if not ok:
+            continue
+        if op == "len":
+            out[k] = len(cur)
+        elif op.startswith("distinct:"):
+            f = op.split(":", 1)[1]
+            out[k] = len({x[f] for x in cur
+                          if isinstance(x, dict) and f in x})
+        elif op:
+            continue                     # unknown operator: cite nothing
+        else:
             out[k] = cur
-    return json.dumps(out, indent=1)[:2600]
+    kept, dropped, size = {}, [], 0
+    for k, v in out.items():
+        s = len(json.dumps({k: v}, indent=1))
+        if size + s > EVIDENCE_BUDGET and kept:
+            dropped.append(k)
+            continue
+        kept[k], size = v, size + s
+    txt = json.dumps(kept, indent=1)
+    if dropped:
+        txt += (f"\n\n[{len(dropped)} further key(s) from this file omitted "
+                f"for length, NOT because they are unfavourable: "
+                f"{', '.join(dropped)}. Say so if a verdict needs them.]")
+    return txt
+
 
 # D151: the claims live in docs/18-writeup-outline.md and are READ from it.
 # They used to be duplicated here; the two copies drifted and D150 published
 # an adjudication of text that was never adjudicated. One artifact only.
-def _load_claims() -> list[dict]:
-    import re as _re
-    md = (ROOT / "docs" / "18-writeup-outline.md").read_text()
-    m = _re.search(r"## Machine-readable claims.*?```json\n(.*?)\n```",
-                   md, _re.S)
-    if not m:
-        raise SystemExit("docs/18-writeup-outline.md: no claims block found")
-    out = json.loads(m.group(1))
-    for c in out:
-        c["src"] = tuple(c["src"])
-        if "extra" in c:
-            c["extra"] = [tuple(x) for x in c["extra"]]
-    return out
-
-
-CLAIMS = _load_claims()
+# The loader moved to scripts/claimset.py at D153 so the aggregator and the
+# alignment test read the claims the same way this does.
+CLAIMS = claimset.load_claims()
 
 if sys.argv[1] == "arxiv50":
     _abstract_audit("arxiv50", "arxiv")

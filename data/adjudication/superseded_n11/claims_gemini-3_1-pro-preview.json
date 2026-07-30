@@ -1,0 +1,81 @@
+{
+ "audit": "claims",
+ "model": "gemini-3.1-pro-preview",
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.8181818181818182,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 5,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "The claim quotes a failure at 5 relations, but this figure is not present in the measured numbers."
+  },
+  {
+   "idx": 8,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "The claim quotes relation population sizes (34 and 56) that are not present in the measured numbers."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "Fingerprints for basis, coords, and head are identical before and after append, matching the mechanical reindex-free claim."
+  },
+  "1": {
+   "verdict": "SUPPORTED",
+   "reason": "The calculated differences for head new entity (+0.058), new relation (+0.191), and retrieval worst cases (+0.247, +0.771) match the numbers."
+  },
+  "2": {
+   "verdict": "SUPPORTED",
+   "reason": "432 refused->correct with 0 other refused-> states listed, and 432 / (1200 - 21) = 0.366, matching all stated figures."
+  },
+  "3": {
+   "verdict": "SUPPORTED",
+   "reason": "Staleness (old->old) is 1/431 (0.002), overall revision rate is 0.459, and single edit revision rate is 0.235, as stated."
+  },
+  "4": {
+   "verdict": "SUPPORTED",
+   "reason": "The 0.751 to 0.142 drop matches the wiki tuned vs wiki derived on mquake transferred values perfectly."
+  },
+  "5": {
+   "verdict": "OVERREACH",
+   "reason": "The claim quotes a failure at 5 relations, but this figure is not present in the measured numbers."
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "3-hop zero shot answerable correct is 0.849, and its unans_break3 abstain rate is 0.267, showing answering extrapolates but refusal does not."
+  },
+  "7": {
+   "verdict": "SUPPORTED",
+   "reason": "Refusal rising from 0.05 to 0.693, wrongness falling from 0.118 to 0.045, and total answered dropping 0.183 all exactly match the data."
+  },
+  "8": {
+   "verdict": "OVERREACH",
+   "reason": "The claim quotes relation population sizes (34 and 56) that are not present in the measured numbers."
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "Head accuracy (0.766 vs 0.795), knn drop (0.854 to 0.526), and head gaps across three conditions (<0.05) all match the numbers."
+  },
+  "10": {
+   "verdict": "SUPPORTED",
+   "reason": "Editing alone revises 0.469 with 0.274 breakage, while adding downstream edges revises 0.733 with 0.077 breakage, a reduction of 0.197."
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED",
+  "10": "SUPPORTED"
+ }
+}

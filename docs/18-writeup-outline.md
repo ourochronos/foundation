@@ -18,34 +18,56 @@ would falsify it. A claim without its condition is not publishable.
 | # | Claim | Holds under | Number | Falsified by |
 |---|---|---|---|---|
 | 1 | The store is **mechanically** reindex-free: appending mutates no fitted artifact | verified byte-identical (basis, coordinates, head weights) across an append (D131) | fingerprints unchanged | — demonstrated, not inferred |
-| 1b | At a 25% append ratio the new-**entity** penalty is **under 0.10** and the new-**relation** penalty is **over 0.15**, for the parametric head | parametric head; 25% append ratio; ratio-dependence untested | entity +0.058, relation +0.191, depth-2 +0.249; retrieval +0.247 / +0.771 (D131) | **falsified if** either penalty crosses its bound at this ratio, or the ordering (entity < relation) reverses at any ratio | retrieval is far worse (+0.771 on new relations); refusal does not survive appending (0.748 answered-anyway vs 0.558 rebuilt) |
-| 1c | **The store learns**, and revision is two operations: editing a fact alone revises **0.469** of previously-correct answers, editing it *and* supplying the edges its new target needs revises **0.733** | same cases, same frozen head, within-experiment comparison | addition 432/432 conditional on prior honest refusal (D133); revision 0.469 → **0.733**, breakage 0.274 → **0.077**, staleness 0.002 → 0.014 (D146) | **falsified if** supplying downstream edges fails to reduce breakage — it reduced it by 0.197 |
+| 1b | At a 25% append ratio the new-**entity** penalty is **under 0.10** and the new-**relation** penalty is **over 0.15**, for the parametric head — **at depth 1 only** | parametric head; 25% append ratio; ratio-dependence untested; **depth-1 figures do not carry to depth 2** | entity +0.058, relation +0.191 at depth 1; **depth-2 +0.249**, where "near-free" fails outright; retrieval +0.247 / +0.771 / +0.666 (D131) | **falsified if** either depth-1 penalty crosses its bound at this ratio, the ordering (entity < relation) reverses, or the depth-2 penalty is under 0.10 |
+| 1c | **The store learns**: questions it properly refused before an update are answered correctly after it | conditional on prior honest refusal; it refused only 0.366 of what it could not answer | addition **432/432** (1.000); the 0.366 and the 21 already-answerable both come off the transition matrix (D133) | **falsified if** any of the 432 stays refused or turns wrong after the update |
+| 1e | Revision is **two operations**: editing a fact alone revises **0.469** of previously-correct answers, editing it *and* supplying the edges its new target needs revises **0.733** | same cases, same frozen head, within-experiment comparison | revision 0.469 → **0.733**, breakage 0.274 → **0.077**, staleness 0.002 → 0.014 (D146) | **falsified if** supplying downstream edges fails to reduce breakage — it reduced it by 0.197 |
 | 1d | The store **revises** rather than going stale: after a superseding edit it does not keep asserting the old fact | edits applied through the real `kb.edit()` path; conditional on having answered correctly before | **stale 0.002**; revision 0.459; failure is refusal (0.348) and wrong answers (0.190), not staleness (D141) | single-edit cases revise at only 0.235 because editing one link leaves the chain expecting the old target's onward edges |
 | 2 | Composition generalises to relation pairs never seen composed | measured **at 61 relations**; fails at 5; **the threshold in between is untested** — "≥60" is interpolation, not measurement. Pair-clean holdout; parity at depth 2 only | depth 2: 0.925 vs 0.913 trained. Depth 3: 0.626 vs 0.683 — not parity (D123) | small vocabularies: fails at 5 relations (D112); pair-clean holdout unbuildable there (D122) |
 | 3 | Order and depth can come from the store rather than from learning | measured on **two corpora, one walker formulation** — not general | held-out compositions 0.534 → 0.912 (D117) | untested outside this walker; isolates neither depth nor order learning |
-| 4 | Depth extrapolates without depth-specific training, for *answering* | answering only | 3-hop **0.849** with no 3-hop in training (D119) | *refusal* does not extrapolate (D120) |
-| 5 | The system refuses rather than guessing | **chain-break** unanswerables, **sparse** stores | 0.970 refusal (D118) — **this population is unrepresentative**, see 5b | dense stores 0.72–0.98 (D123/D124); and the simple case was never in it |
+| 4 | Depth extrapolates without depth-specific training, for *answering* — **at 3 hops, and not beyond** | answering only; **one** depth measured zero-shot | 3-hop **0.849** with no 3-hop in training, vs 0.961 trained (D119) | *refusal* does not extrapolate (D120); and **depth 4 refutes it** — 0.289 raw / 0.149 basis (D126) |
+| 5 | The system refuses rather than guessing | **chain-break** unanswerables, **sparse** stores | 5821/6000 = **0.970** refusal (D118) — **this population is unrepresentative**, see 5b | dense stores 0.72–0.98 (D123/D124); and the simple case was never in it |
 | 5b | On the **mixed** benchmark, refusal needs the answer-type gate | law #9 population: chain_break + not_applicable + absent_entity | not_applicable **0.050 → 0.693** with the gate; chain_break 0.337 → 0.650; answerable wrongness 0.118 → 0.045; **correct** falls 0.110 while **total answered** falls 0.183 — the extra 0.073 removed were wrong answers (D134) | probe ceiling is 0.965, so 0.693 is threshold placement, not the limit |
-| 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching −0.79 to −0.91 (D124) | "ambiguity is the mechanism" is an interpretation of the gain overlap (1.198 vs 1.390) |
-| 7 | Compression buys generalisation and costs precision | descriptive across three experiments; none tests both halves | novel relations 0.742/0.293 (D125); depth-4 0.149/0.289 (D126); phrasing 0.313/0.149 (D128) | a representation winning on both axes |
-| 8 | Retrieval beats a parametric head by **data-efficiency**, not by preserving information the head destroys | depth-1 relation identification, known relations; gap is alias-supply dependent | **within one population** (exp43, 34 relations) the gap closes 0.230 → 0.042 from 2 to 10 aliases; **on a second** (exp49, 56 relations) no head config at 2 aliases reached 1-NN — best 0.691 vs 0.925 (D148, D139) | **falsified if** a head at 2 aliases reaches 1-NN — none did at 512–2048 hidden across three objectives; and on **new** relations retrieval collapses to 0.229 vs the head's 0.782 (D131) |
+| 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching **−0.79 / −0.83 / −0.91** across three populations (D124) | "ambiguity is the mechanism" is an interpretation of the gain overlap (1.198 vs 1.390); D137 found branching hurts only when the added options are *confusable* |
+| 7 | Compression buys generalisation and costs precision | descriptive across three experiments; none tests both halves | novel relations 0.293 → **0.742** (D125); phrasing 0.149 → **0.313** at wrongness 0.036 → 0.245 (D128); depth-4 0.289 → **0.149** (D126) | a representation winning on both axes — none of the three was designed to look |
+| 8 | Retrieval beats a parametric head by **data-efficiency**; that the head does not *destroy* information is **inferred, not measured** | depth-1 relation identification, known relations; gap is alias-supply dependent | **within one population** (exp43, 34 relations) the gap closes 0.229 → 0.042 from 2 to 10 aliases; **on a second** (exp49, 56 relations) no head config at 2 aliases reached 1-NN — best 0.691 vs 0.925 (D148, D139) | **falsified if** the gap stops shrinking as aliases are added, or a head at 2 aliases reaches 1-NN — none did at 512–2048 hidden across three objectives; and on **new** relations retrieval collapses to 0.229 vs the head's 0.782 (D131) |
 
-| 11 | Claim adjudication itself is noisy | two independent raters | Cohen's kappa **+0.333** (D140) | single-rater verdicts in D130/D135 were correspondingly noisier than they appeared |
+| 11* | Claim adjudication itself is noisy | two independent raters | Cohen's kappa **+0.333** (D140) | single-rater verdicts in D130/D135 were correspondingly noisier than they appeared |
 
-| 12 | Entities are free for the head and expensive for retrieval | subjects held out of training questions; claims remain in the store | head −0.029 (d1) / −0.010 (d2); retrieval −0.328 / −0.288 (D149) | **falsified if** the head's gap exceeds 0.05 on any population — it did not on three |
+| 12 | Entities are free for the head and expensive for retrieval | subjects held out of training questions; claims remain in the store | head −0.029 (d1) / −0.010 (d2) / +0.001 (na); retrieval −0.328 / −0.288 (D149) | **falsified if** the head's gap exceeds 0.05 on any of the three *question* populations in this corpus — it did not on any; a second **corpus** was not tested |
+
+`*` **row 11 is in the paper and has never been adjudicated, deliberately.**
+Its evidence is the behaviour of the adjudicators themselves, so judging it
+in the same run that generates its evidence would be circular. It is due to
+be judged in a later round against the frozen artifact this round produces,
+and until then it carries the mark rather than an implied clean bill.
 
 ## Machine-readable claims (SINGLE SOURCE OF TRUTH)
 
-`scripts/adjudicate.py` reads this block directly. The prose table
-above is a rendering of it. D150 recorded why: the adjudicator used
-to keep its own copy, the two drifted, and an entry asserted an
-adjudication that never happened. Two artifacts holding the same
-claims will diverge, and the divergence is invisible because both
-look current.
+`scripts/adjudicate.py` reads this block directly, and every claim's
+`row` names the table row above that it renders. D150 recorded why the
+block exists: the adjudicator used to keep its own copy, the two
+drifted, and an entry asserted an adjudication that never happened.
+Two artifacts holding the same claims will diverge, and the divergence
+is invisible because both look current.
+
+**That fix was incomplete, and D153 found how.** This section used to
+say the table above "is a rendering of it" — while the table held 14
+rows and the block held 10 claims. Five rows had never faced either
+adjudication prompt, and the file told the reader they had. The
+divergence survived because nothing checked it: the first test written
+for this compared *counts*, and passed, because 10 rows happened to
+match 10 claims once the lettered rows were filtered out.
+
+So the correspondence is now declared per claim and enforced by
+`tests/test_claim_alignment.py`. A row with no claim behind it must be
+marked `*` in the table — meaning **in the paper, never adjudicated** —
+which is an honest state a reader can see, and the only alternative the
+test permits.
 
 ```json
 [
  {
+  "row": "1",
   "claim": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
   "scope": "verified byte-identical basis, coordinates and head weights across an append",
   "src": [
@@ -59,8 +81,9 @@ look current.
   ]
  },
  {
-  "claim": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS.",
-  "scope": "PARAMETRIC HEAD ONLY, against a full rebuild at one freeze/append ratio: head new entity +0.058, new relation +0.191. Retrieval is worse on both (+0.247, +0.771)",
+  "row": "1b",
+  "claim": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new relation +0.191. At DEPTH 2 the penalty is +0.249 and 'near-free' does not hold at all.",
+  "scope": "PARAMETRIC HEAD ONLY, against a full rebuild at one freeze/append ratio. Retrieval is worse on every one of them (+0.247 entity, +0.771 relation, +0.666 depth-2). FALSIFIED IF the entity penalty exceeds the relation penalty at depth 1, or if the depth-2 penalty is under 0.10",
   "src": [
    "results/exp36_append.json",
    [
@@ -69,6 +92,7 @@ look current.
   ]
  },
  {
+  "row": "1c",
   "claim": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable. Both figures derive from the transition matrix.",
   "scope": "artifacts are frozen by construction in this experiment but are FINGERPRINT-VERIFIED only in D131's separate append run; the 1.000 is conditional on prior honest refusal",
   "src": [
@@ -93,8 +117,9 @@ look current.
   ]
  },
  {
-  "claim": "The store REVISES rather than going stale: after a superseding edit it does not keep asserting the old fact. Staleness is 0.002; revision is 0.459; the failure is refusal and wrong answers, not staleness.",
-  "scope": "edits applied through the real kb.edit() path; conditional on having answered correctly before the edit; single-edit cases revise at only 0.235",
+  "row": "1d",
+  "claim": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact — 1 of 431 previously-old-answering cases stays old (0.002). Revision is 0.459; the dominant failure is refusal (0.348) and wrong answers (0.190), not staleness.",
+  "scope": "edits applied through the real kb.edit() path; conditional on having answered correctly before the edit; single-edit cases revise at only 0.235. Staleness is NOT zero and the claim does not say it is: the matrix contains one old->old case, which is the falsifier's own example and is reported rather than rounded away. FALSIFIED IF staleness exceeds refusal or wrong-answering as a failure mode",
   "src": [
    "results/exp44_supersession.json",
    [
@@ -110,8 +135,21 @@ look current.
   ]
  },
  {
-  "claim": "Composition generalises to relation pairs never seen composed, at parity with trained pairs at depth 2.",
-  "scope": "measured AT 61 relations; fails at 5; the threshold in between is untested, so any '>=60' is interpolation. Pair-clean holdout; parity at depth 2 only, degrading at depth 3 (0.626 vs 0.683)",
+  "row": "1e",
+  "claim": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editing it AND supplying the edges its new target needs revises 0.733 with 0.077.",
+  "scope": "same cases, same frozen head, within-experiment comparison. FALSIFIED IF supplying downstream edges fails to reduce breakage \u2014 it reduced it by 0.197",
+  "src": [
+   "results/exp46_revision_fix.json",
+   [
+    "conditions",
+    "verdict"
+   ]
+  ]
+ },
+ {
+  "row": "2",
+  "claim": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pairs' 0.9135, a difference of +0.011 in the held-out pairs' FAVOUR.",
+  "scope": "'parity' is stated as a margin, not a word: held-out is within 0.02 of trained and on the better side of it. Measured AT 61 relations (exp29). The contrasting failure is exp18, whose world file holds 5 relations: there, held-out composition ORDER transfers at 0.513 against 1.000 on seen pairs \u2014 chance. The threshold in between is untested, so any '>=60' is interpolation. Pair-clean holdout; the margin holds at depth 2 ONLY and breaks at depth 3 (0.626 vs 0.683, a gap of 0.057). FALSIFIED IF the depth-2 gap exceeds 0.02 in either direction",
   "src": [
    "results/exp29_wikiwalker.json",
    [
@@ -130,21 +168,66 @@ look current.
      "ordering",
      "scope"
     ]
+   ],
+   [
+    "data/real_world_ai_hops.json",
+    [
+     "facts#distinct:relation",
+     "holdout_compositions"
+    ]
    ]
   ]
  },
  {
-  "claim": "Depth extrapolates without depth-specific training for ANSWERING (3-hop 0.849 with no 3-hop trained).",
-  "scope": "answering only; refusal does not extrapolate",
+  "row": "3",
+  "claim": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is available next takes held-out composition accuracy from 0.534 to 0.912.",
+  "scope": "measured on two corpora and ONE walker formulation \u2014 not general. The 0.534 baseline is D112's path planner on the same questions. Isolates neither depth nor order learning: it removes the need to learn them here, and does not show they cannot be learned. FALSIFIED IF a path-planning formulation reaches 0.912 on the same held-out pairs",
+  "src": [
+   "results/exp24_walker.json",
+   [
+    "selected",
+    "held_out_correct_ci95",
+    "baseline_d112_path_planner",
+    "scope"
+   ]
+  ]
+ },
+ {
+  "row": "4",
+  "claim": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.961 when 3-hop IS trained.",
+  "scope": "ONE depth was measured zero-shot. It does NOT extend: at depth 4 (exp32, different corpus) correct falls to 0.289 raw and 0.149 under the anchor basis, so the property is demonstrated at 3 hops and refuted at 4. Answering only \u2014 refusal does not extrapolate. FALSIFIED IF zero-shot 3-hop answering falls below trained 3-hop by more than 0.15",
   "src": [
    "results/exp26_threehop.json",
    [
     "zero_shot_depth",
     "trained_on_3hop"
    ]
+  ],
+  "extra": [
+   [
+    "results/exp32_depth4.json",
+    [
+     "results"
+    ]
+   ]
   ]
  },
  {
+  "row": "5",
+  "claim": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "scope": "CHAIN-BREAK unanswerables on a SPARSE store \u2014 this population is unrepresentative and the number does not survive contact with a mixed benchmark, where not-applicable refusal is 0.050 before the answer-type gate (see row 5b). Retained because it is what the earlier claim rested on, and superseding it is the finding. FALSIFIED IF refusal on a population containing the simple case approaches 0.970 \u2014 it does not",
+  "src": [
+   "results/exp25_refusal.json",
+   [
+    "n_unanswerable",
+    "selected",
+    "unanswerable_refusal_ci95",
+    "selected_threshold"
+   ]
+  ]
+ },
+ {
+  "row": "5b",
   "claim": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answerable wrongness from 0.118 to 0.045.",
   "scope": "depth-1 CORRECT falls 0.110 while TOTAL answered falls 0.183 (the extra 0.073 were wrong answers); depth-2 wrongness 0.175->0.102; probe ceiling 0.965 so 0.693 is threshold placement",
   "src": [
@@ -158,8 +241,50 @@ look current.
   ]
  },
  {
-  "claim": "Retrieval beats a parametric head by DATA-EFFICIENCY, not by preserving information the head destroys. Within one population the gap closes from 0.230 at 2 aliases to 0.042 at 10; and on a second population no head configuration at 2 aliases (512-2048 hidden, three objectives) reached 1-NN.",
-  "scope": "the CURVE is exp43's 34-relation population; the no-configuration-closes-it result is exp49's 56-relation population — two populations, two roles, not one curve. FALSIFIED IF a head at 2 aliases reaches 1-NN, or the gap fails to shrink with alias supply",
+  "row": "6",
+  "claim": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.79, -0.83 and -0.91 across three unanswerable populations.",
+  "scope": "a CORRELATION across branching strata, not a demonstrated mechanism. The ambiguity reading rests on a gain-median overlap (answerable 1.390 vs unanswerable 1.198, margin separation 0.143) that is consistent with ambiguity and does not establish it. FALSIFIED IF the correlation vanishes on a population where branching varies and confusability does not \u2014 D137 found exactly that boundary and it is why the claim says density rather than options",
+  "src": [
+   "results/exp30_refusal_diag.json",
+   [
+    "branching_stratified_refusal",
+    "ambiguity_test",
+    "residual_separation"
+   ]
+  ]
+ },
+ {
+  "row": "7",
+  "claim": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293 -> 0.742 and novel-PHRASING 0.149 -> 0.313, while raising phrasing wrongness 0.036 -> 0.245 and dropping depth-4 answering 0.289 -> 0.149.",
+  "scope": "DESCRIPTIVE across three experiments on different corpora; no single experiment tests both halves, so this is a pattern fitted to results rather than a prediction tested against them. FALSIFIED IF a representation wins on both axes at once \u2014 none of the three tested did, but none was designed to look",
+  "src": [
+   "results/exp31_novelrel.json",
+   [
+    "basis_threshold_sweep",
+    "raw_baseline",
+    "basis_selected_thr"
+   ]
+  ],
+  "extra": [
+   [
+    "results/exp32_depth4.json",
+    [
+     "results"
+    ]
+   ],
+   [
+    "results/exp34_aliaspretrain.json",
+    [
+     "basis_2x2",
+     "results"
+    ]
+   ]
+  ]
+ },
+ {
+  "row": "8",
+  "claim": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.042 at 10, so the head's disadvantage is alias supply and not a permanent loss of information. On a second population no head configuration at 2 aliases (512-2048 hidden, three objectives) reached 1-NN \u2014 best 0.691 vs 0.925.",
+  "scope": "depth-1 relation identification on KNOWN relations. The CURVE is exp43's 34-relation population; the no-configuration-closes-it result is exp49's 56-relation population \u2014 two populations, two roles, not one curve. What is measured is that the gap SHRINKS with alias supply; 'the head does not destroy information' is inferred from that and is not itself measured, since the gap never reached zero (0.042 residual at 10 aliases). FALSIFIED IF the gap stops shrinking as aliases are added, or a head at 2 aliases reaches 1-NN",
   "src": [
    "results/exp49_fair_head.json",
    [
@@ -187,8 +312,9 @@ look current.
   ]
  },
  {
+  "row": "12",
   "claim": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against seen subjects' 0.795 at depth 1, while retrieval drops from 0.854 to 0.526.",
-  "scope": "subjects held out of TRAINING QUESTIONS only; their claims remain in the store and stay walkable. FALSIFIED IF the head's gap exceeds 0.05 on any population — it did not on three",
+  "scope": "subjects held out of TRAINING QUESTIONS only; their claims remain in the store and stay walkable. FALSIFIED IF the head's gap exceeds 0.05 on any of the three QUESTION populations within this corpus (depth-1, depth-2, not-applicable) \u2014 it did not on any: -0.029, -0.010, +0.001. A second CORPUS was not tested",
   "src": [
    "results/exp50_entity.json",
    [
@@ -196,17 +322,6 @@ look current.
     "gaps",
     "largest_gap",
     "n_held_subjects"
-   ]
-  ]
- },
- {
-  "claim": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editing it AND supplying the edges its new target needs revises 0.733 with 0.077.",
-  "scope": "same cases, same frozen head, within-experiment comparison. FALSIFIED IF supplying downstream edges fails to reduce breakage — it reduced it by 0.197",
-  "src": [
-   "results/exp46_revision_fix.json",
-   [
-    "conditions",
-    "verdict"
    ]
   ]
  }

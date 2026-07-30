@@ -1,0 +1,82 @@
+{
+ "audit": "claims",
+ "model": "claude-fable-5",
+ "n": 10,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS.",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it does not keep asserting the old fact. Staleness i",
+  "4": "Composition generalises to relation pairs never seen composed, at parity with trained pairs at depth 2.",
+  "5": "Depth extrapolates without depth-specific training for ANSWERING (3-hop 0.849 with no 3-hop trained).",
+  "6": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "7": "Retrieval beats a parametric head by DATA-EFFICIENCY, not by preserving information the head destroys. Within one popula",
+  "8": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against",
+  "9": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin"
+ },
+ "n_judged": 10,
+ "raw_agreement": 0.9,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 4,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "Depth-2 parity is real (held 0.9245 vs trained 0.9135), but the scope's 'fails at 5' relations figure appears nowhere in the numbers \u2014 only n_relations=61 was measured \u2014 so that boundary is asserted b"
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "All three fingerprints (basis 45b33a69..., coords c662e066..., head 79f87c5c...) are byte-identical at_freeze vs after_append and mechanical_check_passed=true, exactly matching the stated scope."
+  },
+  "1": {
+   "verdict": "SUPPORTED",
+   "reason": "Head gaps: new subject 0.9611-0.9033=0.058 vs new relation 0.9733-0.7822=0.191; kNN gaps 0.247 and 0.771 are disclosed. Numbers match claim and scope, including head-only restriction."
+  },
+  "2": {
+   "verdict": "SUPPORTED",
+   "reason": "refused->correct=432 with no other refused-> transitions gives 432/432; 432/(432+715+32)=0.366 matches learned_rate; 1+20=21 already-correct; fingerprint caveat correctly attributed to exp36."
+  },
+  "3": {
+   "verdict": "SUPPORTED",
+   "reason": "old->old=1 of 431 previously-correct = 0.0023; old->new 198/431=0.459; failures are old->refuse=150 and old->other=82; single-edit 0.235 is disclosed in scope."
+  },
+  "4": {
+   "verdict": "OVERREACH",
+   "reason": "Depth-2 parity is real (held 0.9245 vs trained 0.9135), but the scope's 'fails at 5' relations figure appears nowhere in the numbers \u2014 only n_relations=61 was measured \u2014 so that boundary is asserted b"
+  },
+  "5": {
+   "verdict": "SUPPORTED",
+   "reason": "Zero-shot 3-hop answerable correct=0.8489 matches 0.849; refusal caveat is borne out by unans_break3 abstain=0.268 (wrong=0.732)."
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "not_applicable refuse 0.05->0.6933, d1 wrong 0.1183->0.045, and the load-bearing costs (d1 correct -0.110, answered -0.183, ceiling 0.965) are all in the numbers and disclosed."
+  },
+  "7": {
+   "verdict": "SUPPORTED",
+   "reason": "exp43 gap 0.9525-0.7231=0.230 shrinking to 0.9745-0.9327=0.042; exp49 best_head 0.6914 < one_nn 0.9255 across the full 512-2048 x 3-objective grid; both falsification tests pass and the two population"
+  },
+  "8": {
+   "verdict": "SUPPORTED",
+   "reason": "Head: held 0.7662 vs seen 0.795 (gap 0.029); kNN: 0.8538 vs 0.5262 (gap 0.328); head gaps on all three populations (0.029, 0.010, 0.001) stay under the stated 0.05 falsification threshold."
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "Rewrite-only revision 0.4687/broke 0.2738 vs rewrite+edges 0.7332/broke 0.0766, same n_was_old=431 and same frozen setup; breakage reduction 0.197 matches the stated falsification check."
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED"
+ }
+}

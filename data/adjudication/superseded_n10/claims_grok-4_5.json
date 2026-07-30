@@ -1,0 +1,94 @@
+{
+ "audit": "claims",
+ "model": "grok-4.5",
+ "n": 10,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS.",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it does not keep asserting the old fact. Staleness i",
+  "4": "Composition generalises to relation pairs never seen composed, at parity with trained pairs at depth 2.",
+  "5": "Depth extrapolates without depth-specific training for ANSWERING (3-hop 0.849 with no 3-hop trained).",
+  "6": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "7": "Retrieval beats a parametric head by DATA-EFFICIENCY, not by preserving information the head destroys. Within one popula",
+  "8": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against",
+  "9": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin"
+ },
+ "n_judged": 10,
+ "raw_agreement": 0.7,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "entity/relation head gaps only at d1 (0.0578 vs 0.1911); d2_new_head gap 0.2489 shows large append cost; depth-1 limit understated"
+  },
+  {
+   "idx": 5,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "only one zero-shot depth measured (answerable correct 0.8489); 'depth extrapolates' generalises beyond that single point"
+  },
+  {
+   "idx": 7,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "gap 0.2294\u21920.0418 and best_head 0.6914<0.9255 support data-efficiency; 'not destroying information' is not measured"
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "mechanical_check_passed true; basis/coords/head fingerprints identical (45b33a69cfc76115, c662e0661ec21bea, 79f87c5c5ba2639c)"
+  },
+  "1": {
+   "verdict": "OVERREACH",
+   "reason": "entity/relation head gaps only at d1 (0.0578 vs 0.1911); d2_new_head gap 0.2489 shows large append cost; depth-1 limit understated"
+  },
+  "2": {
+   "verdict": "SUPPORTED",
+   "reason": "refused->correct 432 with no other refused_*; 432/(432+715+32)=0.366; correct before=21 of 1200"
+  },
+  "3": {
+   "verdict": "SUPPORTED",
+   "reason": "old->old 1/431=0.0023; old->new 198/431=0.459; single revision_rate 0.235; failures are refuse/other"
+  },
+  "4": {
+   "verdict": "SUPPORTED",
+   "reason": "eval_d2_clean 0.9245 vs train_d2 0.9135 at n_relations=61; d3 degrades 0.626 vs 0.683"
+  },
+  "5": {
+   "verdict": "OVERREACH",
+   "reason": "only one zero-shot depth measured (answerable correct 0.8489); 'depth extrapolates' generalises beyond that single point"
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "not_applicable refuse 0.05\u21920.6933; ans_d1 wrong 0.1183\u21920.045; d1 correct drop 0.110; ceiling 0.965"
+  },
+  "7": {
+   "verdict": "OVERREACH",
+   "reason": "gap 0.2294\u21920.0418 and best_head 0.6914<0.9255 support data-efficiency; 'not destroying information' is not measured"
+  },
+  "8": {
+   "verdict": "SUPPORTED",
+   "reason": "d1_held_head 0.7662 vs seen 0.795; knn 0.8538\u21920.5262; head gaps d1/d2/na all |g|\u22640.0288"
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "rewrite only revision 0.4687 broke 0.2738; +edges 0.7332 broke 0.0766; break delta 0.197"
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED"
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "audit": "claims",
+ "model": "gpt-5.6-sol",
+ "n": 10,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS.",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it does not keep asserting the old fact. Staleness i",
+  "4": "Composition generalises to relation pairs never seen composed, at parity with trained pairs at depth 2.",
+  "5": "Depth extrapolates without depth-specific training for ANSWERING (3-hop 0.849 with no 3-hop trained).",
+  "6": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "7": "Retrieval beats a parametric head by DATA-EFFICIENCY, not by preserving information the head destroys. Within one popula",
+  "8": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against",
+  "9": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin"
+ },
+ "n_judged": 10,
+ "raw_agreement": 0.9,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 7,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "The gap shrinks from 0.2294 to 0.0418, but does not close; best tested head accuracy remained 0.6914 versus 1-NN's 0.9255, so the numbers do not exclude information loss."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "All three fingerprints are byte-identical before and after appending 15 relations and 652 subjects."
+  },
+  "1": {
+   "verdict": "SUPPORTED",
+   "reason": "Head deficits are 0.0578 for new subjects and 0.1911 for new relations; retrieval deficits are 0.2467 and 0.7711."
+  },
+  "2": {
+   "verdict": "SUPPORTED",
+   "reason": "All 432 prior refusals became correct; 432/1179=0.366, with 21/1200 already correct."
+  },
+  "3": {
+   "verdict": "SUPPORTED",
+   "reason": "Among 431 previously-correct cases, 198 revised (0.4594), only 1 stayed stale (0.0023), and single-edit revision was 35/149=0.2349."
+  },
+  "4": {
+   "verdict": "SUPPORTED",
+   "reason": "At 61 relations, held-pair depth-2 accuracy was 0.9245 versus 0.9135 for trained pairs; depth-3 was lower at 0.6257 versus 0.6828."
+  },
+  "5": {
+   "verdict": "SUPPORTED",
+   "reason": "Zero-shot depth-3 answerable accuracy was 0.8489, while break-3 unanswerables were refused only 0.2677."
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "Not-applicable refusal rose from 0.0500 to 0.6933, while depth-1 wrongness fell from 0.1183 to 0.0450."
+  },
+  "7": {
+   "verdict": "OVERREACH",
+   "reason": "The gap shrinks from 0.2294 to 0.0418, but does not close; best tested head accuracy remained 0.6914 versus 1-NN's 0.9255, so the numbers do not exclude information loss."
+  },
+  "8": {
+   "verdict": "SUPPORTED",
+   "reason": "Depth-1 head accuracy fell only 0.0288 (0.7950 to 0.7662), while retrieval fell 0.3276 (0.8538 to 0.5262)."
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "On 431 previously-correct cases, revision rose from 0.4687 to 0.7332 and breakage fell from 0.2738 to 0.0766, a 0.1972 reduction."
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED"
+ }
+}

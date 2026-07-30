@@ -1,0 +1,124 @@
+{
+ "audit": "attack_r1",
+ "model": "gpt-5.6-sol",
+ "n": 10,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS.",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it does not keep asserting the old fact. Staleness i",
+  "4": "Composition generalises to relation pairs never seen composed, at parity with trained pairs at depth 2.",
+  "5": "Depth extrapolates without depth-specific training for ANSWERING (3-hop 0.849 with no 3-hop trained).",
+  "6": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "7": "Retrieval beats a parametric head by DATA-EFFICIENCY, not by preserving information the head destroys. Within one popula",
+  "8": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against",
+  "9": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin"
+ },
+ "n_judged": 10,
+ "raw_agreement": 0.2,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 1,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "\u201cNear-free\u201d has no numerical threshold; any entity penalty can be absorbed by that phrase and the one-ratio scope."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: fitted artifacts changed during this update experiment. Fingerprints from a separate append run do not rule that out."
+  },
+  {
+   "idx": 3,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: any previously correct answer remains old after editing. The matrix contains one old->old case."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: held-pair depth-2 performance lies outside a defined equivalence margin. No margin or parity test is supplied."
+  },
+  {
+   "idx": 5,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: the evaluated 3-hop kinds leaked into training or received depth-specific supervision. Outcome counts do not rule that out."
+  },
+  {
+   "idx": 7,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: retrieval preserves distinctions irrecoverably collapsed by the head. A shrinking gap and finite hyperparameter grid do not rule this out."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: another population has a head gap above 0.05. The supplied evidence covers only the reported population, not the claimed three or any population."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: paired cases receiving downstream edges do not improve. Aggregate conditions differ in applied edits and graph contents, so they do not rule this out."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any fitted artifact changes bytes across the scoped append. Verified identical fingerprints rule that out."
+  },
+  "1": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "\u201cNear-free\u201d has no numerical threshold; any entity penalty can be absorbed by that phrase and the one-ratio scope."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: fitted artifacts changed during this update experiment. Fingerprints from a separate append run do not rule that out."
+  },
+  "3": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: any previously correct answer remains old after editing. The matrix contains one old->old case."
+  },
+  "4": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: held-pair depth-2 performance lies outside a defined equivalence margin. No margin or parity test is supplied."
+  },
+  "5": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: the evaluated 3-hop kinds leaked into training or received depth-specific supervision. Outcome counts do not rule that out."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gating fails to raise not-applicable refusal or lower answerable wrongness. Both changes are directly ruled out on the scoped benchmark."
+  },
+  "7": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: retrieval preserves distinctions irrecoverably collapsed by the head. A shrinking gap and finite hyperparameter grid do not rule this out."
+  },
+  "8": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: another population has a head gap above 0.05. The supplied evidence covers only the reported population, not the claimed three or any population."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: paired cases receiving downstream edges do not improve. Aggregate conditions differ in applied edits and graph contents, so they do not rule this out."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES"
+ }
+}
