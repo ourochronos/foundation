@@ -28,7 +28,17 @@ The prompt did not change; the claims did. **Sharper claims are also easier to j
 
 **The pattern across all three is one thing.** Every flag is a **claim sentence outrunning its evidence by one step**: "not by how many" from "mainly not by how many"; "is a capability difference" from "has stopped falling over the measured range"; "disjoint" from "largely different". None is a wrong number and none is a bad experiment. Law #10 catches the version where the condition sits in the scope; this is the version where the condition is nowhere, and it survives a fix pass because the sentence reads as a summary rather than as a claim.
 
-**Revisit**: (a) a re-run is owed on the revised block, and the flag counts above must not be read as applying to the current text — three of fourteen changed; (b) the flag rate has gone 6 → 3 and the remaining three are all one shape, so the next round is a real test of whether it converges or floors; (c) gemini's flag count fell from [5, 5, 6] to [2, 1, 2] while the others moved less, which is a rater-level change large enough to want an explanation before the next round's numbers are trusted.
+**Addendum settling revisit (c) from the stored artifacts, with no further calls.** Both rounds stamp `judged_claims`, so every verdict is attributable and the two rounds can be diffed per claim rather than per count. Gemini's drop is **entirely claim-driven**: the five claims it flagged in all three runs of round 1 — density-vs-refusal, refuses-rather-than-guesses, order-from-the-store, retrieval-data-efficiency, compression-buys-generalisation — are exactly the five that were **rewritten or deleted** between rounds, and it flagged none of them afterwards. It picked up two new flags, both on claims that had just been rewritten. The same holds for the other two raters. **No rater went soft; five specific claims stopped being flaggable.**
+
+| rater | r1 flagged | r2 flagged | kept | dropped | new | turnover |
+|---|---|---|---|---|---|---|
+| gpt-5.6-sol | 7 | 5 | 2 | 5 | 3 | 80% |
+| gemini-3.1-pro | 5 | 2 | **0** | 5 | 2 | **100%** |
+| grok-4.5 | 5 | 4 | **0** | 5 | 4 | **100%** |
+
+**And that exposes a flaw in the instability metric this project has been quoting.** Grok's flag count went 5 → 4 and looks almost unmoved; its flagged *set* turned over **completely**, with not one claim in common. A flag count is a summary statistic over a set, and two rounds can produce nearly the same count from disjoint sets. Within a round the `flags_per_run` range is still sound — identical input, so a range of 3 really is one rater contradicting itself — but **across rounds only the per-claim sets mean anything**, and reporting "6 → 3" without the diff invites exactly the wrong reading. The counts in the table above are safe here only because the diff is printed beside them.
+
+**Revisit**: (a) a re-run is owed on the revised block, and the flag counts must not be read as applying to the current text — three of fourteen changed; (b) the flag rate has gone 6 → 3 and the remaining three are all one shape, so the next round tests whether it converges or floors; (c) **done, above**; (d) `adjud_quorum.py` reports counts and per-claim verdicts but not a cross-round diff, which is the view that answered this question — worth building before the next round rather than after it.
 
 ## 2026-07-30 — D160: Refusal is governed by the MOST confusable option available, not by how many there are — D124 and D137 reconciled
 
