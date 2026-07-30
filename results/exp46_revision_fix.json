@@ -1,0 +1,77 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T02:50:05.759451+00:00",
+  "commit": "8702dc764e54ca91f8056b640cd805ee260d60ad",
+  "dirty": true,
+  "command": "scripts/exp46_revision_fix.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "N_CASES": 1200,
+   "RES_THR": 0.8,
+   "TTHR": 0.3
+  }
+ },
+ "conditions": {
+  "rewrite only (D141)": {
+   "edits": {
+    "edited": 2394,
+    "ambiguous": 9,
+    "abstain": 15
+   },
+   "n_was_old": 431,
+   "revision": 0.46867749419953597,
+   "stale": 0.002320185614849188,
+   "broke": 0.2737819025522042,
+   "other": 0.2552204176334107,
+   "graph_pairs": 1957,
+   "matrix": {
+    "old->new": 202,
+    "other->other": 40,
+    "old->refuse": 118,
+    "refuse->refuse": 72,
+    "other->refuse": 26,
+    "refuse->other": 8,
+    "old->old": 1,
+    "other->new": 18,
+    "old->other": 110,
+    "refuse->new": 5
+   }
+  },
+  "rewrite + downstream edges": {
+   "edits": {
+    "edited": 2048,
+    "downstream_edited": 1711,
+    "ambiguous": 341,
+    "abstain": 29,
+    "downstream_ingested": 225
+   },
+   "n_was_old": 431,
+   "revision": 0.7331786542923434,
+   "stale": 0.013921113689095127,
+   "broke": 0.0765661252900232,
+   "other": 0.17633410672853828,
+   "graph_pairs": 2183,
+   "matrix": {
+    "old->new": 316,
+    "other->other": 52,
+    "old->refuse": 33,
+    "refuse->refuse": 67,
+    "other->refuse": 12,
+    "refuse->other": 6,
+    "old->other": 76,
+    "old->old": 6,
+    "other->new": 20,
+    "refuse->new": 12
+   }
+  }
+ },
+ "verdict": "CONFIRMED \u2014 D141's diagnosis holds",
+ "scope": "Both conditions share the same cases, the same frozen head and the same questions, so the comparison is within-experiment; D141's numbers came from a different sample and are not the baseline here. Downstream edges are reconstructed from new_single_hops \u2014 relations unchanged, objects from each hop's answer, each hop's subject the previous answer \u2014 and applied via kb.edit() where the subject is known, or ingested where it is not."
+}

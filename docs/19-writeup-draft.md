@@ -98,9 +98,16 @@ store's real supersession path, on the benchmark's human-written questions
 
 | | revision | **stale** | broke (→refuse) | wrong |
 |---|---|---|---|---|
-| all cases | 0.459 | **0.002** | 0.348 | 0.190 |
-| single-rewrite | 0.235 | 0.000 | 0.497 | 0.268 |
-| multi-rewrite | 0.578 | 0.004 | 0.270 | 0.149 |
+| edit the fact only | 0.469 | **0.002** | 0.274 | 0.255 |
+| **+ the edges its new target needs** | **0.733** | 0.014 | **0.077** | 0.176 |
+
+Revision is **two operations**, and the difference is 0.26 of coverage.
+Editing a fact mid-chain leaves the rest of the chain expecting the *old*
+target's outgoing edges; supplying those edges takes revision from 0.469 to
+0.733 and breakage from 0.274 to 0.077, and nearly flattens the depth
+gradient — 0.607/0.450/0.365 becomes 0.770/0.764/0.673 (D146). The cost is a
+small rise in staleness (0.002 → 0.014) traceable to entity ambiguity, where
+`edit()` correctly refuses to guess which entity a downstream subject means.
 
 **Staleness is essentially zero** — the store does not keep asserting a
 superseded fact, which is the number that had to come out near zero given

@@ -2,6 +2,36 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D146: D141's diagnosis confirmed — supplying downstream edges takes revision 0.469 → 0.733 and dissolves the depth effect
+`scripts/exp46_revision_fix.py`. Task 2, and a test of a causal claim rather than a search for a better number. Both conditions share the same 1,200 cases, the same frozen head and the same questions, so the comparison is within-experiment; D141's figures came from a different sample and are not the baseline.
+
+D141 offered a mechanism for revision's dominant failure: editing one link mid-chain leaves the rest of the chain expecting the **old** target's outgoing edges. MQuAKE's `new_single_hops` makes those reconstructible — relations unchanged, objects from each hop's answer, each hop's subject the previous answer.
+
+**Pre-registered prediction confirmed:**
+
+| | rewrite only | rewrite + downstream edges |
+|---|---|---|
+| **revision** | 0.469 | **0.733** (+0.265) |
+| **broke → refuse** | 0.274 | **0.077** (−0.197) |
+| stale | 0.002 | 0.014 |
+| other (wrong) | 0.255 | 0.176 |
+
+**The depth effect largely dissolves too**, which is the part that confirms the mechanism rather than merely improving the number:
+
+| depth | revision, rewrite only | revision, + downstream |
+|---|---|---|
+| 2 | 0.607 | 0.770 |
+| 3 | 0.450 | **0.764** |
+| 4 | 0.365 | **0.673** |
+
+D141 reported revision falling with depth and attributed it to "each additional link is another chance for the edited target to lack the next relation". That is now demonstrated: supply the links and the gradient nearly flattens. **Depth was never the variable — downstream reachability was**, which is the third time in this project that an apparent depth effect turned out to be something else (D126's templates, D138's fan-out, now this).
+
+**An honest cost: staleness rises 0.002 → 0.014.** Small in absolute terms but **7× relative**, and it should not be waved away. The downstream pass produced **341 `ambiguous` edit results** against the rewrite-only condition's 9 — a downstream subject like *Croatia* can resolve to several eids, and `edit()` correctly refuses to guess (D49's provenance-honoring resolution). Where it refuses, the old claim is not shadowed and can still be reached. **The fix trades a little staleness for a lot of reachability**, and the mechanism for that trade is entity ambiguity, not the edit path failing.
+
+**Decision**: the revision claim is restated as **two operations, not one**. Editing a fact alone gives 0.469 with 0.274 breakage; editing a fact *and* supplying the edges its new target needs gives **0.733 with 0.077**. Both are real and they describe different things a caller can do. Any system offering knowledge editing should be explicit about which it implements, because the difference is 0.26 of answerable coverage.
+
+**Revisit**: (a) the 341 ambiguous downstream edits are a concrete, fixable loss — resolving them with provenance would likely recover part of the 0.176 wrong-answer rate and the staleness rise; (b) this materially strengthens claim 1c, which the D145 adversarial pass flagged REFUTABLE, and the claims table and draft are updated accordingly; (c) `new_single_hops` was sitting unused in the same file all along, which is the second time (after D110's answer-type gate) that the fix for a headline failure was already in the repository.
+
 ## 2026-07-29 — D145: Asking raters to ATTACK instead of verify flips the table from 0 defects to 6 of 10 — and one claim was hedged into vacuity by my own fix
 `scripts/adjudicate.py attack`, 4 model families × 3 runs = 12 rater-runs, `data/adjudication/attack_r*.json`. D144 left the table at zero quorum defects and me uneasy: *a table that passes unanimously may simply be hedged enough to be hard to falsify.* Every adjudication until now asked **"is this claim supported?"** — which rewards hedging, because a sufficiently qualified claim is always supported. This asks the opposite: what would falsify it, does the evidence rule that out, and is the scope condition doing real work or absorbing the failure.
 
