@@ -1,0 +1,75 @@
+{
+ "model": "gpt-5.6-sol",
+ "n_pairs": 4,
+ "items": [
+  {
+   "row": "1b",
+   "arm": "pre_fix",
+   "claim": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new relation +0.191. At DEPTH 2 the penalty is +0.249 and 'near-free' does not hold at all.",
+   "scope": "PARAMETRIC HEAD ONLY, against a full rebuild at one freeze/append ratio. Retrieval is worse on every one of them (+0.247 entity, +0.771 relation, +0.666 depth-2). FALSIFIED IF the entity penalty exceeds the relation penalty at depth 1, or if the depth-2 penalty is under 0.10",
+   "verdict": "OVERREACH",
+   "reason": "Claim generalizes beyond the parametric-head-only scope."
+  },
+  {
+   "row": "1b",
+   "arm": "post_fix",
+   "claim": "For the PARAMETRIC HEAD at DEPTH 1, appending is behaviourally near-free for new ENTITIES and not for new RELATIONS: head new entity +0.058, new relation +0.191. At DEPTH 2 the penalty is +0.249 and 'near-free' does not hold at all.",
+   "scope": "PARAMETRIC HEAD ONLY, against a full rebuild at one freeze/append ratio. Retrieval is worse on every one of them (+0.247 entity, +0.771 relation, +0.666 depth-2). FALSIFIED IF the entity penalty exceeds the relation penalty at depth 1, or if the depth-2 penalty is under 0.10",
+   "verdict": "CONSISTENT",
+   "reason": "Claim explicitly matches the parametric-head and depth scope."
+  },
+  {
+   "row": "3",
+   "arm": "pre_fix",
+   "claim": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowed to consult the store for which chains are walkable scores 0.9032 against the walker's 0.9123 (inside its CI), while the same planner denied the store scores 0.3883. Availability filtering is worth +0.515; greedy walking is worth +0.009.",
+   "scope": "ONE corpus, R=5, depth 2 \u2014 and at R=5 exhaustive enumeration is 30 candidates, so the walker's remaining justification is COST rather than accuracy and that is untested here (R=61 would be 3,782 candidates at depth 2 and 226,981 at depth 3). The earlier form of this claim said order and depth must come from the store rather than from a planner; the first half is confirmed overwhelmingly and the second is REFUTED (D158). It also quoted a 0.534 planner baseline pasted from exp18, which recomputed in-run is 0.8138 \u2014 the reported gap was inflated almost fourfold. Every arm shares one head, one seed, one scorer and one threshold rule, and the walker arm reproduces exp24's stored 0.9123 to four decimals or the script aborts. FALSIFIED IF a model-only planner reaches the walker's CI on any corpus, or if store-filtered planning fails to match it where enumeration is affordable",
+   "verdict": "OVERREACH",
+   "reason": "Saying the walk does not contribute is absolute; scope concedes a small gain and untested cost value."
+  },
+  {
+   "row": "3",
+   "arm": "post_fix",
+   "claim": "The STORE supplies most of what makes multi-hop answering work and the step-by-step WALK adds almost nothing: an exhaustive planner allowed to consult the store for which chains are walkable scores 0.9032 against the walker's 0.9123 (inside its CI), while the same planner denied the store scores 0.3883. Availability filtering is worth +0.515; greedy walking is worth +0.009.",
+   "scope": "ONE corpus, R=5, depth 2 \u2014 and at R=5 exhaustive enumeration is 30 candidates, so the walker's remaining justification is COST rather than accuracy and that is untested here (R=61 would be 3,782 candidates at depth 2 and 226,981 at depth 3). The earlier form of this claim said order and depth must come from the store rather than from a planner; the first half is confirmed overwhelmingly and the second is REFUTED (D158). It also quoted a 0.534 planner baseline pasted from exp18, which recomputed in-run is 0.8138 \u2014 the reported gap was inflated almost fourfold. Every arm shares one head, one seed, one scorer and one threshold rule, and the walker arm reproduces exp24's stored 0.9123 to four decimals or the script aborts. FALSIFIED IF a model-only planner reaches the walker's CI on any corpus, or if store-filtered planning fails to match it where enumeration is affordable",
+   "verdict": "CONSISTENT",
+   "reason": "\u201cMost\u201d and \u201calmost nothing\u201d reflect the measured +0.515 versus +0.009 contributions."
+  },
+  {
+   "row": "7",
+   "arm": "pre_fix",
+   "claim": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a frozen K=48 basis takes novel-relation answering from 0.0054 to 0.7419 while its wrong-rate moves only 0.1531 to 0.1667 \u2014 raw's low score is raw REFUSING (abstain 0.8415), not raw erring. At matched coverage the gain is +0.7407 correct for +0.0723 wrong, a tenth of the gain; the real costs are refusal on novel unanswerables (-0.7060), refusal on known ones (-0.5685) and known-relation answering (-0.1409 at 9x the wrong-rate).",
+   "scope": "ONE store, ONE threshold rule for both arms, derived on TRAINED populations only (law #6) \u2014 this is the controlled comparison three raters unanimously asked for, and it changes exactly one thing against exp31, which ran its raw arm at an inherited THR=0.8 and swept only its basis arm. An earlier version of this scope said the evidence spanned 'different corpora'; exp31, exp32 and exp34 all read the same table, so the confound was always tuning (D156). Reported at each arm's own threshold AND at matched coverage, with answerable and unanswerable never averaged together \u2014 the first summary of this experiment did average them and reported a figure describing neither (D159). The PHRASING leg is NOT covered: it needs exp34's alias populations, a different question set. FALSIFIED IF the basis's wrongness cost on the population it helps is commensurate with its gain there, or if the refusal collapse disappears under matched tuning",
+   "verdict": "OVERREACH",
+   "reason": "\u201cNot accuracy\u201d excludes costs that the claim and scope concede, including increased wrongness and reduced known-relation answering."
+  },
+  {
+   "row": "7",
+   "arm": "post_fix",
+   "claim": "Compression buys generalisation and costs REFUSAL far more than it costs the accuracy of what it enables. Under one threshold protocol, a frozen K=48 basis takes novel-relation answering from 0.0054 to 0.7419 while its wrong-rate moves only 0.1531 to 0.1667 \u2014 raw's low score is raw REFUSING (abstain 0.8415), not raw erring. At matched coverage the gain is +0.7407 correct for +0.0723 wrong, a tenth of the gain; the real costs are refusal on novel unanswerables (-0.7060), refusal on known ones (-0.5685) and known-relation answering (-0.1409 at 9x the wrong-rate).",
+   "scope": "ONE store, ONE threshold rule for both arms, derived on TRAINED populations only (law #6) \u2014 this is the controlled comparison three raters unanimously asked for, and it changes exactly one thing against exp31, which ran its raw arm at an inherited THR=0.8 and swept only its basis arm. An earlier version of this scope said the evidence spanned 'different corpora'; exp31, exp32 and exp34 all read the same table, so the confound was always tuning (D156). Reported at each arm's own threshold AND at matched coverage, with answerable and unanswerable never averaged together \u2014 the first summary of this experiment did average them and reported a figure describing neither (D159). The PHRASING leg is NOT covered: it needs exp34's alias populations, a different question set. FALSIFIED IF the basis's wrongness cost on the population it helps is commensurate with its gain there, or if the refusal collapse disappears under matched tuning",
+   "verdict": "CONSISTENT",
+   "reason": "The comparative wording permits the smaller accuracy costs reported within scope."
+  },
+  {
+   "row": "12",
+   "arm": "pre_fix",
+   "claim": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against seen subjects' 0.795 at depth 1, while retrieval drops from 0.854 to 0.526.",
+   "scope": "subjects held out of TRAINING QUESTIONS only; their claims remain in the store and stay walkable. FALSIFIED IF the head's gap exceeds 0.05 on any of the three QUESTION populations within this corpus (depth-1, depth-2, not-applicable) \u2014 it did not on any: -0.029, -0.010, +0.001. A second CORPUS was not tested",
+   "verdict": "OVERREACH",
+   "reason": "\u201cFree\u201d is absolute despite measured nonzero gaps and only training-question holdout."
+  },
+  {
+   "row": "12",
+   "arm": "post_fix",
+   "claim": "Entities are nearly free for the parametric head and expensive for retrieval: subjects held out of training QUESTIONS score 0.766 against seen subjects' 0.795 at depth 1, while retrieval drops from 0.854 to 0.526.",
+   "scope": "subjects held out of TRAINING QUESTIONS only; their claims remain in the store and stay walkable. FALSIFIED IF the head's gap exceeds 0.05 on any of the three QUESTION populations within this corpus (depth-1, depth-2, not-applicable) \u2014 it did not on any: -0.029, -0.010, +0.001. A second CORPUS was not tested",
+   "verdict": "CONSISTENT",
+   "reason": "\u201cNearly free\u201d and explicit training-question holdout accurately preserve the scope\u2019s qualifications."
+  }
+ ],
+ "overreach_rate_pre_fix": 1.0,
+ "overreach_rate_post_fix": 0.0,
+ "separation": 1.0,
+ "verdict": "DISCRIMINATES \u2014 separation +1.00. The prompt is reading the claim against its scope, not scoring how hedged the sentence sounds.",
+ "scope": "Matched pairs: the same four claims before and after the overreaching phrase was repaired, with scope, evidence and subject identical within each pair and only the phrase differing. Interleaved so the arm is not recoverable from position. ONE run, one rater \u2014 a sample, not a verdict (D150). The pre-fix sentences are the ground truth only because three raters flagged them AND each was verified by hand against its own scope (D163); a prompt agreeing with a prompt would prove nothing."
+}

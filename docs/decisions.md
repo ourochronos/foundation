@@ -25,7 +25,18 @@ On the 14-claim block that had just been through both other prompts, three rater
 
 **What that says about the earlier rounds.** The claims table has been carrying this defect systematically, not in three isolated slips: a table that had passed verification and survived attack still had four claim sentences contradicting their own scopes. Any round that reports "N flagged" is reporting what its prompts can see, and adding a prompt that asks a question none of the others asked found more. **The right reading of a low flag count is "no more defects of the kinds we asked about".**
 
-**Revisit**: (a) selfcheck ran once per rater, not three times, so its within-rater stability is unmeasured and its counts should be read as provisional; (b) it should join the standard round in `run_adjudication.sh` — three prompts × three raters × repetitions is a real cost increase and worth a deliberate decision rather than drift; (c) it needs the same treatment the others got: a claim it *should* flag, planted deliberately, to check it is not simply flagging the most qualified-sounding sentences.
+**Addendum — revisit (c) closed the same day: the prompt discriminates.** A prompt asked "does this claim overreach?" has an obvious cheap strategy, which is to flag whichever sentences sound least hedged; under that strategy it would have produced a plausible-looking four without reading the scope at all. So `scripts/selfcheck_control.py` gives it **matched pairs** — the same four claims before and after the overreaching phrase was repaired, interleaved and unlabelled, with the scope condition, the evidence and the subject **identical within each pair**. The only difference is the phrase the prompt is supposed to detect.
+
+| | OVERREACH |
+|---|---|
+| pre-fix sentences (known bad) | **4 / 4** |
+| post-fix sentences (known good) | **0 / 4** |
+
+Separation **+1.00**. It is reading the claim against its scope rather than scoring prose style. The ground truth is not circular: those four were flagged by three raters *and* each was verified by hand against its own scope before being rewritten — a prompt agreeing with a prompt would prove nothing.
+
+**Stated as a sample, not a verdict**: one run, one rater, four pairs. If the prompt flagged at chance the observed split has probability 1/256, so luck is unlikely, but D150's lesson applies and repetition is still owed. This is the discipline D157 used on the fingerprint guard (tested by making it fire) and D160 on the manipulation check — **a check whose positives have never been distinguished from its false positives has not been tested, only used.**
+
+**Revisit**: (a) selfcheck ran once per rater, not three times, so its within-rater stability is unmeasured and its counts should be read as provisional; (b) it should join the standard round in `run_adjudication.sh` — three prompts × three raters × repetitions is a real cost increase and worth a deliberate decision rather than drift; (c) **closed, above** — extend the control to more pairs and more raters when the next round runs, since four pairs on one rater is the weakest part of it.
 
 ## 2026-07-30 — D162: The cross-round diff, built before it was needed — and it immediately corrected the entry that asked for it
 
