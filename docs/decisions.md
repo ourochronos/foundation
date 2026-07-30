@@ -12,9 +12,13 @@ Format: date · decision · rationale · revisit-when.
 | verification ("is this supported?") | **0 of 11** (individual raters flagged 1 / 2 / 1 / 0) |
 | adversarial ("attack this") | **4 of 11** — down from 6 of 10 at D145 |
 
-**Sharpening worked on one of the two unfalsifiable claims and failed on the other, and the failure is the useful half.** Claim 1b ("near-free" with no numeric bound) was given explicit bounds and now survives. The thresholds claim was *also* sharpened — restated as "orders stores by range tightness, and transfer costs more than 0.30 coverage" — and **three independent raters still call it unfalsifiable**.
+**Sharpening worked on claim 1b** — "near-free" was given explicit numeric bounds and now survives.
 
-They are right, and the reason is one I should have caught: **its falsifier was read off the same two stores it describes.** "Transfer costs more than 0.30" was measured on wiki and MQuAKE and then offered as the condition under which the claim would fail — which makes it a description of the data, not a risk the claim runs. With two stores there is no way for the ordering to be wrong. **A falsifier defined post-hoc from the evidence is not a falsifier**, and sharpening a claim by adding one is the same hedging failure wearing better clothes.
+**CORRECTION, found while closing this entry.** I wrote above that the thresholds claim "was also sharpened and three raters still call it unfalsifiable". **That is wrong.** The D145 sharpening was applied to `docs/18-writeup-outline.md` and **never reached `scripts/adjudicate.py`**, so the raters judged the *older* wording ("computable from store statistics"). The sharpened version has never been adjudicated, and no conclusion about whether sharpening helped it is supported.
+
+**The demotion stands on inspection rather than on that evidence.** The sharpened falsifier — "transfer costs more than 0.30 coverage" — was read off the same two stores the claim describes, which makes it a description of the data rather than a risk the claim runs; with two stores the ordering cannot come out wrong. **A falsifier defined post-hoc from the evidence is not a falsifier.** That is visible without a rater, and it is why the claim moves to predictions.
+
+**The drift is the process failure worth recording.** The adjudicator's claim list is a second copy of the table, and D143's revisit already noted it had drifted once and should be generated from `docs/18` rather than maintained beside it. It was not, and the result is an entry that asserted an adjudication that never happened. **Two artifacts holding the same claims will diverge, and the divergence is invisible because both look current.**
 
 It is therefore **moved out of the claims table into an explicit predictions section** — falsifiable, unfalsified, and honestly labelled as untested rather than sitting among results.
 

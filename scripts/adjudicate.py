@@ -228,16 +228,6 @@ CLAIMS = [
               "revision_rate_single", "matrix_multi",
               "revision_rate_multi", "supersession_sanity",
               "edits_applied"])},
-    {"claim": "Gate thresholds are a function of the store and are "
-              "COMPUTABLE from store statistics without labelled data. "
-              "They do not transfer between stores.",
-     "scope": "computable, NOT validated as better: the derived value "
-              "is a different operating point and was never compared to "
-              "the tuned one at matched refusal. The 0.751 -> 0.142 "
-              "figure is tuned-vs-transferred, not derived-vs-tuned",
-     "src": ("results/exp45_thresholds.json",
-             ["derived", "within_relation_fit_mean", "tuned", "results",
-              "transfers"])},
     {"claim": "Composition generalises to relation pairs never seen "
               "composed, at parity with trained pairs at depth 2.",
      "scope": "measured AT 61 relations; fails at 5; the threshold in "
