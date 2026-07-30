@@ -34,6 +34,7 @@ Usage: .venv/bin/python scripts/exp38_update.py
 from __future__ import annotations
 
 import collections
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -185,6 +186,33 @@ head.eval()
 print(f"frozen at T0: basis {PC.shape}, head on {len(Xs)} rows", flush=True)
 
 
+def fp(a) -> str:
+    """Fingerprint of a frozen artifact (same recipe as exp36_append)."""
+    if isinstance(a, dict):
+        h = hashlib.sha256()
+        for k in sorted(a):
+            h.update(k.encode())
+            h.update(np.ascontiguousarray(a[k]).tobytes())
+        return h.hexdigest()[:16]
+    return hashlib.sha256(np.ascontiguousarray(a).tobytes()).hexdigest()[:16]
+
+
+def artifact_fp() -> dict:
+    return {"basis": fp(PC),
+            "coords": fp({r: C[r] for r in RELS}),
+            "head": fp({n: p.detach().numpy()
+                        for n, p in head.named_parameters()})}
+
+
+# D154 named this as claim 1c's falsifier, and the rater was right: the
+# artifacts here are frozen *by construction* — nothing below refits — but the
+# only fingerprint evidence lived in exp36's separate append run. "Our code
+# does not contain a refit" is an argument about code; this is a measurement,
+# and it belongs in the experiment whose claim depends on it.
+FROZEN_FP = artifact_fp()
+print(f"  fingerprints at T0: {FROZEN_FP}")
+
+
 def verdict(key, g, av):
     """Returns per-question status using D132's vocabulary, with `disbelief`
     renamed `unanswered` — open-world: no claim found is not falsity."""
@@ -225,6 +253,17 @@ def verdict(key, g, av):
 BEFORE = {k: verdict(k, G0, A0) for k in ORDER}
 print("\nappending the update (frozen artifacts reused as-is)...")
 AFTER = {k: verdict(k, G1, A1) for k in ORDER}
+
+AFTER_FP = artifact_fp()
+MECH_OK = AFTER_FP == FROZEN_FP
+print(f"\n=== MECHANICAL CHECK — artifacts unchanged across the update: "
+      f"{MECH_OK} ===")
+for k in FROZEN_FP:
+    print(f"  {k:7s} {FROZEN_FP[k]} -> {AFTER_FP[k]} "
+          f"{'OK' if FROZEN_FP[k] == AFTER_FP[k] else 'MUTATED'}")
+if not MECH_OK:
+    raise SystemExit("frozen artifacts mutated during the update — the "
+                     "learning result below would be measuring a refit")
 
 
 def refused(s):
@@ -282,19 +321,31 @@ out = {
                                                 "THR": THR,
                                                 "K_BASIS": K_BASIS}),
     "n_update_pairs": len(UPDATE),
+    "n_flip_questions": len(QP["flip"]),
+    "mechanical_check_passed": MECH_OK,
+    "fingerprints": {"at_freeze": FROZEN_FP, "after_update": AFTER_FP},
     "transition_flip": {f"{a}->{b}": v for (a, b), v in tm.items()},
     "learned_rate": round(learned, 4),
     "learned_ci95": [round(lo, 4), round(hi, 4)],
     "regression_stays": {f"{a}->{b}": v for (a, b), v in rm.items()},
     "control_never": {t: dict(collections.Counter(D["never"]))
                       for t, D in (("before", BEFORE), ("after", AFTER))},
-    "scope": ("The update is a withheld 30% of subject-relation pairs; "
-              "questions over them are unanswerable before and answerable "
-              "after, measured on the SAME questions with artifacts frozen "
-              "at T0 (no refit). `disbelief` is renamed `unanswered`: an "
-              "open-world store that finds no claim has not established "
-              "falsity. The never-answerable control is what distinguishes "
-              "learning from simply starting to answer everything."),
+    "scope": ("The update is a withheld 30% of subject-relation PAIRS "
+              "(n_update_pairs); questions over them are unanswerable before "
+              "and answerable after, measured on the SAME QUESTIONS "
+              "(n_flip_questions) with artifacts frozen at T0. The two counts "
+              "differ because they count different things, which an "
+              "adjudicator read as 457 unaccounted cases (D156). "
+              "`learned_rate` is 432/1200 of everything evaluated; the "
+              "separate 0.366 quoted in the claims table is 432/1179 of what "
+              "the store could not answer. Frozen means FINGERPRINT-VERIFIED "
+              "here and not merely by construction: basis, coordinates and "
+              "head are hashed at T0 and re-hashed after the update, and the "
+              "run aborts on any difference (D157). `disbelief` is renamed "
+              "`unanswered`: an open-world store that finds no claim has not "
+              "established falsity. The never-answerable control is what "
+              "distinguishes learning from simply starting to answer "
+              "everything."),
 }
 (ROOT / "results" / "exp38_update.json").write_text(json.dumps(out, indent=1))
 print("\n[done] results/exp38_update.json")

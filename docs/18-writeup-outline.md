@@ -107,16 +107,19 @@ test permits.
  {
   "row": "1c",
   "claim": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable.",
-  "scope": "UNITS, because the artifact mixes two: `n_update_pairs` is 1657 withheld subject-relation PAIRS, while the transition matrix runs over the 1200 flip QUESTIONS asked about them, and the stored `learned_rate` 0.36 is 432/1200 (of everything evaluated) where the claim's 0.366 is 432/1179 (of what it could not answer) — three denominators answering three questions. Artifacts are frozen by construction here but FINGERPRINT-VERIFIED only in D131's separate append run, which is the falsifier an adversarial rater named and which Task 3 of the current plan closes. The 1.000 is conditional on prior honest refusal. FALSIFIED IF any of the 432 stays refused or turns wrong after the update",
+  "scope": "UNITS, because the artifact holds two counts: `n_update_pairs` is 1657 withheld subject-relation PAIRS and `n_flip_questions` is the 1200 QUESTIONS asked about them, which the transition matrix runs over. The stored `learned_rate` 0.36 is 432/1200 (of everything evaluated) where the claim's 0.366 is 432/1179 (of what it could not answer) — three denominators answering three questions, now all named in the artifact. Frozen means FINGERPRINT-VERIFIED IN THIS EXPERIMENT (`mechanical_check_passed`): basis, coordinates and head are hashed at T0 and re-hashed after the update, and the run aborts on any difference. That closes the falsifier an adversarial rater named — the check previously lived only in a separate append run (D157). The 1.000 is conditional on prior honest refusal. FALSIFIED IF any of the 432 stays refused or turns wrong after the update, or any artifact fingerprint changes across it",
   "src": [
    "results/exp38_update.json",
    [
+    "mechanical_check_passed",
+    "fingerprints",
     "transition_flip",
     "learned_rate",
     "learned_ci95",
     "regression_stays",
     "control_never",
-    "n_update_pairs"
+    "n_update_pairs",
+    "n_flip_questions"
    ]
   ],
   "extra": [

@@ -2,6 +2,39 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D157: The update experiment now fingerprints itself — claim 1c's falsifier closed, and the units an adjudicator tripped over are in the artifact
+
+Second of D154's falsifiers, and the cheapest. The rater's objection: *"a fitted artifact changing during this update would defeat the claim that the store itself learned; fingerprints from a separate experiment do not rule that out."*
+
+They were right about the evidence even though the code was fine. `exp38_update.py` freezes the basis, coordinates and head at T0 and nothing below refits — but that is an argument *about code*, and the only fingerprint measurement lived in `exp36_append.py`'s separate run. The check now runs where the claim needs it: all three artifacts are hashed at T0, re-hashed after the update path, and **the run aborts if any differ**.
+
+```
+=== MECHANICAL CHECK — artifacts unchanged across the update: True ===
+  basis   30e22066f10d6090 -> 30e22066f10d6090 OK
+  coords  610b077a5716a5b9 -> 610b077a5716a5b9 OK
+  head    947f648b65426539 -> 947f648b65426539 OK
+```
+
+**Every previously stored figure is byte-identical** — transition matrix, learned rate, CI, regression, control (law #8). Three keys are new: `mechanical_check_passed`, `fingerprints`, and `n_flip_questions`.
+
+**That last one closes the other half of the flag.** Gemini read `n_update_pairs: 1657` against a transition matrix summing to 1200 and reported "457 cases unaccounted for". The verdict was wrong — 1657 counts withheld subject-relation **pairs**, 1200 counts the **questions** asked about them — but the artifact gave no way to tell, and *"the reader cannot distinguish two units"* is a defect in the artifact rather than in the reader. Both counts are now stored under names that say what they count, and the `scope` string names all three denominators in play, including that `learned_rate` 0.36 is 432/1200 while the claims table's 0.366 is 432/1179.
+
+**A rater being wrong about the conclusion while right about the evidence is the common case, and it is worth naming.** D98 says verify every flag against source before acting. The instinct that verification protects against is accepting a wrong flag; the failure it actually prevents more often is *dismissing* one — because the flag is usually pointing at something real even when its stated reason is mistaken. Two of D154's six flags were like this, and both produced a fix.
+
+**The guard was then tested by making it fire, because a check that has never failed is a check with no evidence behind it** — the failure mode this session has hit four times. A copy of the script with `PC[0, 0] += 1e-6` injected immediately before the second hash:
+
+```
+=== MECHANICAL CHECK — artifacts unchanged across the update: False ===
+  basis   30e22066f10d6090 -> 49815c8bab20de8a MUTATED
+  coords  610b077a5716a5b9 -> 610b077a5716a5b9 OK
+  head    947f648b65426539 -> 947f648b65426539 OK
+frozen artifacts mutated during the update — the learning result below would be measuring a refit
+```
+
+A perturbation of one part in a million flips the fingerprint, the run aborts, and **`results/exp38_update.json` is not written** — so a mutated run cannot leave a stale artifact behind that reads as a passing one. The other two hashes stay OK, which confirms the three are independent rather than one hash reported three times.
+
+**Revisit**: (a) three falsifiers remain (claims 3, 6, 7 of the current table); (b) `exp36_append.py` has the same guard and it has also never fired — the same one-line injection would settle it, and the two experiments are the only places the reindex-free property is measured rather than argued.
+
 ## 2026-07-30 — D156: Audit law #10 — a claim must carry the condition its number was measured under; a scope qualifies, it does not retract
 
 The editorial half of D154's revisit list, and the law that nine flags across two rounds were all pointing at.
