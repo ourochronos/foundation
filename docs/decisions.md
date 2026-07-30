@@ -2,6 +2,36 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D156: Audit law #10 — a claim must carry the condition its number was measured under; a scope qualifies, it does not retract
+
+The editorial half of D154's revisit list, and the law that nine flags across two rounds were all pointing at.
+
+**Claim 8 / row 5 is deleted.** *"The system refuses rather than guessing — 5821 of 6000 (0.970)"*. Two of three adversarial raters called it **UNFALSIFIABLE**, and their reasoning is one I cannot answer: the scope restricted it to chain-break unanswerables on a sparse store — a population where refusal could not have come out low — and then absorbed its failure on the mixed benchmark by pointing at row 5b. **The scope was mine, and it conceded the point in writing**: "this population is unrepresentative", retained "because it is what the earlier claim rested on". A claim kept for historical reasons with its failure absorbed into its own scope is precisely the hedging the adversarial prompt exists to catch. The fact survives where it belongs — in the narrative about why the mixed benchmark had to be built — and `docs/18` now records why the row left rather than quietly dropping it. The block goes 14 → 13.
+
+**Audit law #10, stated because nine instances now support it and the fix is the same every time:**
+
+> **A claim must carry the condition its number was measured under, in the claim sentence itself. A scope condition qualifies a claim; it does not retract one.**
+
+In every one of the nine the *scope was honest* and the *claim sentence overreached*: "appending is near-free" with "depth-1 only" in scope while depth-2 costs 0.249; "depth extrapolates" with the single measured depth in scope while depth 4 refutes it; "cuts answerable wrongness 0.118 → 0.045" with the depth-2 figure in scope. **A scope is read as a qualification on something already asserted**, and the claim sentence is what gets quoted, remembered and carried into the paper. A document that is accurate line by line still misleads the reader who stops at the claim — which is every reader. Four raters across four families kept finding this and none of them named it as one thing.
+
+Four fixes applied, each verified against source first (D98):
+
+| row | was | now |
+|---|---|---|
+| 1c | three denominators, none labelled | units named: 1657 withheld **pairs**, 1200 evaluated **questions**, stored `learned_rate` 0.36 = 432/1200 against the claim's 0.366 = 432/1179 |
+| 3 | "measured on two corpora" | one corpus — `exp24_walker.py` reads a single world |
+| 5b | "cuts answerable wrongness" | "cuts **depth-1** answerable wrongness", with depth-2 stated beside it |
+| 7 | "three experiments on different corpora" | **the same corpus**; the confound is separate threshold tuning |
+
+**Two of those I found by reading, not by adjudication, and both were worse than the raters knew.**
+
+- **Claim 7's scope was factually false.** `exp31`, `exp32` and `exp34` all read `KB(backend="pg", table="poc")` at 61/61/60 relations. They are not three corpora; they are one corpus under three separately-derived thresholds (0.6, its own, 0.4). The unanimous flag said "cross-corpus, separately tuned experiments" — half right, and the half that is wrong makes the controlled comparison *easier* to run than the raters assumed.
+- **Claim 3's baseline is hardcoded.** `exp24_walker.py` stores `"baseline_d112_path_planner": {"correct": 0.534, ...}` as a literal pasted from `exp18`. So the 0.534-against-0.912 comparison assumes identical scoring across two scripts rather than verifying it — **D147's defect again**, sitting under the most load-bearing architectural claim in the project, on a row three raters had already flagged unanimously for comparing against only one planner.
+
+That both survived four families of adjudication and fell to an afternoon of reading is worth recording plainly: **adjudicators check whether a claim follows from the evidence shown to them, and cannot check whether the evidence is what the claim says it is.** Neither defect is visible from the JSON blocks the raters received; both required opening the script that produced them.
+
+**Revisit**: (a) the draft's §8 lists two unnumbered rules "of the same kind" as #6–#9 — they should be numbered when it is rewritten, or dropped; (b) law #10 predicts that a pass rewriting every claim sentence to carry its condition would drop the flag rate at the next adjudication, and that is a testable prediction rather than a hope; (c) Tasks 4 and 5 of the current plan now have sharper targets than D154 gave them.
+
 ## 2026-07-30 — D155: The alias curve PLATEAUS — claim 12's "not a permanent loss of information" is withdrawn, and D129's direction is partly restored
 
 `scripts/exp51_aliasplateau.py`. The first of D154's six falsifiers, run rather than argued with. Two of three adversarial raters said the same thing about claim 12: *"the gap could plateau above zero beyond ten aliases, indicating permanent information loss; the finite shrinking curve cannot exclude that falsifier."* They were right.

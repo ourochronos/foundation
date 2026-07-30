@@ -23,17 +23,30 @@ would falsify it. A claim without its condition is not publishable.
 | 1e | Revision is **two operations**: editing a fact alone revises **0.469** of previously-correct answers, editing it *and* supplying the edges its new target needs revises **0.733** | same cases, same frozen head, within-experiment comparison | revision 0.469 → **0.733**, breakage 0.274 → **0.077**, staleness 0.002 → 0.014 (D146) | **falsified if** supplying downstream edges fails to reduce breakage — it reduced it by 0.197 |
 | 1d | The store **revises** rather than going stale: after a superseding edit it does not keep asserting the old fact | edits applied through the real `kb.edit()` path; conditional on having answered correctly before | **stale 0.002**; revision 0.459; failure is refusal (0.348) and wrong answers (0.190), not staleness (D141) | single-edit cases revise at only 0.235 because editing one link leaves the chain expecting the old target's onward edges |
 | 2 | Composition generalises to relation pairs never seen composed | measured **at 61 relations**; fails at 5; **the threshold in between is untested** — "≥60" is interpolation, not measurement. Pair-clean holdout; parity at depth 2 only | depth 2: 0.925 vs 0.913 trained. Depth 3: 0.626 vs 0.683 — not parity (D123) | small vocabularies: fails at 5 relations (D112); pair-clean holdout unbuildable there (D122) |
-| 3 | Order and depth can come from the store rather than from learning | measured on **two corpora, one walker formulation** — not general | held-out compositions 0.534 → 0.912 (D117) | untested outside this walker; isolates neither depth nor order learning |
+| 3 | Order and depth can come from the store rather than from learning | **one corpus, one walker formulation** — not general | held-out compositions 0.534 → 0.912 (D117); **the 0.534 is pasted from exp18, not computed in-run** | **falsified if** *any* planner formulation reaches 0.912 on the same pairs — three raters unanimously flagged that only one weak planner was ever compared (D154) |
 | 4 | Depth extrapolates without depth-specific training, for *answering* — **at 3 hops, and not beyond** | answering only; **one** depth measured zero-shot | 3-hop **0.849** with no 3-hop in training, vs 0.961 trained (D119) | *refusal* does not extrapolate (D120); and **depth 4 refutes it** — 0.289 raw / 0.149 basis (D126) |
-| 5 | The system refuses rather than guessing | **chain-break** unanswerables, **sparse** stores | 5821/6000 = **0.970** refusal (D118) — **this population is unrepresentative**, see 5b | dense stores 0.72–0.98 (D123/D124); and the simple case was never in it |
-| 5b | On the **mixed** benchmark, refusal needs the answer-type gate | law #9 population: chain_break + not_applicable + absent_entity | not_applicable **0.050 → 0.693** with the gate; chain_break 0.337 → 0.650; answerable wrongness 0.118 → 0.045; **correct** falls 0.110 while **total answered** falls 0.183 — the extra 0.073 removed were wrong answers (D134) | probe ceiling is 0.965, so 0.693 is threshold placement, not the limit |
-| 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching **−0.79 / −0.83 / −0.91** across three populations (D124) | "ambiguity is the mechanism" is an interpretation of the gain overlap (1.198 vs 1.390); D137 found branching hurts only when the added options are *confusable* |
-| 7 | Compression buys generalisation and costs precision | descriptive across three experiments; none tests both halves | novel relations 0.293 → **0.742** (D125); phrasing 0.149 → **0.313** at wrongness 0.036 → 0.245 (D128); depth-4 0.289 → **0.149** (D126) | a representation winning on both axes — none of the three was designed to look |
+| 5b | On the **mixed** benchmark, refusal needs the answer-type gate | law #9 population: chain_break + not_applicable + absent_entity | not_applicable **0.050 → 0.693** with the gate; chain_break 0.337 → 0.650; **depth-1** answerable wrongness 0.118 → 0.045 and **depth-2** 0.175 → 0.102; **correct** falls 0.110 while **total answered** falls 0.183 — the extra 0.073 removed were wrong answers (D134) | probe ceiling is 0.965, so 0.693 is threshold placement, not the limit |
+| 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching **−0.79 / −0.83 / −0.91** across three populations (D124) | **falsified if** the correlation vanishes where branching varies and confusability does not — a test D137's revisit (a) already owed and two raters independently named (D154) |
+| 7 | Compression buys generalisation and costs precision | descriptive across three experiments — **the same corpus**, separately tuned thresholds (0.6 / own / 0.4); none tests both halves | novel relations 0.293 → **0.742** (D125); phrasing 0.149 → **0.313** at wrongness 0.036 → 0.245 (D128); depth-4 0.289 → **0.149** (D126) | **falsified if** a representation wins both axes under **one** threshold protocol — unanimously flagged as a post-hoc pattern (D154) |
 | 8 | Alias supply explains **most** of retrieval's advantage over a parametric head — **and not all of it** | depth-1 relation identification, known relations; the plateau is measured on 8 high-alias relations only | gap 0.229 → 0.042 over 2→10 aliases (exp43, 34 rel); then **flat at ≈0.09** over 10→18 (exp51, 8 rel: 0.087 → 0.091, tail slope +0.0016/alias vs noise ±0.026); no head config reached 1-NN at 2 aliases — 0.691 vs 0.925 (exp49) (D139, D148, **D155**) | **falsified if** the gap resumes falling past 18 aliases, or a head reaches 1-NN at any supply. *"Not a permanent loss of information" was withdrawn at D155 when this falsifier was run — the head plateaus at 0.892 while 1-NN sits at 0.975 from two aliases onward.* |
 
 | 11* | Claim adjudication itself is noisy | two independent raters | Cohen's kappa **+0.333** (D140) | single-rater verdicts in D130/D135 were correspondingly noisier than they appeared |
 
 | 12 | Entities are free for the head and expensive for retrieval | subjects held out of training questions; claims remain in the store | head −0.029 (d1) / −0.010 (d2) / +0.001 (na); retrieval −0.328 / −0.288 (D149) | **falsified if** the head's gap exceeds 0.05 on any of the three *question* populations in this corpus — it did not on any; a second **corpus** was not tested |
+
+**Row 5 was deleted at D156, and that is the point of the table.** It read
+*"the system refuses rather than guessing — 5821/6000 = 0.970"*, and two of
+three adversarial raters called it **UNFALSIFIABLE**: the scope restricted it
+to chain-break unanswerables on a sparse store, a population where refusal
+could not have come out low, and then absorbed its failure on the mixed
+benchmark by pointing at row 5b. They were right, and the scope was ours —
+it conceded the population was unrepresentative and kept the claim anyway
+"because it is what the earlier claim rested on". A claim retained for
+historical reasons with its failure absorbed into its own scope is the
+hedging failure the adversarial prompt exists to catch. The *fact* survives
+in the narrative: D118's 0.970 came from a population that could not have
+produced a low number, which is exactly why the mixed benchmark (law #9)
+had to be built and why row 5b superseded it.
 
 `*` **row 11 is in the paper and has never been adjudicated, deliberately.**
 Its evidence is the behaviour of the adjudicators themselves, so judging it
@@ -93,8 +106,8 @@ test permits.
  },
  {
   "row": "1c",
-  "claim": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable. Both figures derive from the transition matrix.",
-  "scope": "artifacts are frozen by construction in this experiment but are FINGERPRINT-VERIFIED only in D131's separate append run; the 1.000 is conditional on prior honest refusal",
+  "claim": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable.",
+  "scope": "UNITS, because the artifact mixes two: `n_update_pairs` is 1657 withheld subject-relation PAIRS, while the transition matrix runs over the 1200 flip QUESTIONS asked about them, and the stored `learned_rate` 0.36 is 432/1200 (of everything evaluated) where the claim's 0.366 is 432/1179 (of what it could not answer) — three denominators answering three questions. Artifacts are frozen by construction here but FINGERPRINT-VERIFIED only in D131's separate append run, which is the falsifier an adversarial rater named and which Task 3 of the current plan closes. The 1.000 is conditional on prior honest refusal. FALSIFIED IF any of the 432 stays refused or turns wrong after the update",
   "src": [
    "results/exp38_update.json",
    [
@@ -181,7 +194,7 @@ test permits.
  {
   "row": "3",
   "claim": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is available next takes held-out composition accuracy from 0.534 to 0.912.",
-  "scope": "measured on two corpora and ONE walker formulation \u2014 not general. The 0.534 baseline is D112's path planner on the same questions. Isolates neither depth nor order learning: it removes the need to learn them here, and does not show they cannot be learned. FALSIFIED IF a path-planning formulation reaches 0.912 on the same held-out pairs",
+  "scope": "ONE corpus and ONE walker formulation \u2014 not general. `exp24_walker.py` reads a single world (data/real_world_ai_hops.json); the earlier claim of 'two corpora' was not supported by its own evidence and is corrected here. Worse, the 0.534 baseline is NOT computed in this run: it is a literal pasted from exp18, so identical scoring across the two scripts is assumed rather than verified. Isolates neither depth nor order learning: it removes the need to learn them here, and does not show they cannot be learned. FALSIFIED IF any path-planning formulation reaches 0.912 on the same held-out pairs \u2014 three raters unanimously flagged that only one weak planner was ever compared, and Task 4 of the current plan recomputes the baseline in-run and adds a stronger one",
   "src": [
    "results/exp24_walker.json",
    [
@@ -213,23 +226,9 @@ test permits.
   ]
  },
  {
-  "row": "5",
-  "claim": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
-  "scope": "CHAIN-BREAK unanswerables on a SPARSE store \u2014 this population is unrepresentative and the number does not survive contact with a mixed benchmark, where not-applicable refusal is 0.050 before the answer-type gate (see row 5b). Retained because it is what the earlier claim rested on, and superseding it is the finding. FALSIFIED IF refusal on a population containing the simple case approaches 0.970 \u2014 it does not",
-  "src": [
-   "results/exp25_refusal.json",
-   [
-    "n_unanswerable",
-    "selected",
-    "unanswerable_refusal_ci95",
-    "selected_threshold"
-   ]
-  ]
- },
- {
   "row": "5b",
-  "claim": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answerable wrongness from 0.118 to 0.045.",
-  "scope": "depth-1 CORRECT falls 0.110 while TOTAL answered falls 0.183 (the extra 0.073 were wrong answers); depth-2 wrongness 0.175->0.102; probe ceiling 0.965 so 0.693 is threshold placement",
+  "claim": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-1 answerable wrongness from 0.118 to 0.045 (depth-2, separately, 0.175 to 0.102).",
+  "scope": "the wrongness figures are per depth and the claim now says which — an earlier version stated a bare 'answerable wrongness' that was depth-1 only. Depth-1 CORRECT falls 0.110 while TOTAL answered falls 0.183 (the extra 0.073 were wrong answers). Probe ceiling is 0.965, so 0.693 is threshold placement rather than the limit. FALSIFIED IF the gate raises wrongness at any depth, or lifts not-applicable refusal by less than it costs in correct answers",
   "src": [
    "results/exp39_typegate.json",
    [
@@ -256,7 +255,7 @@ test permits.
  {
   "row": "7",
   "claim": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293 -> 0.742 and novel-PHRASING 0.149 -> 0.313, while raising phrasing wrongness 0.036 -> 0.245 and dropping depth-4 answering 0.289 -> 0.149.",
-  "scope": "DESCRIPTIVE across three experiments on different corpora; no single experiment tests both halves, so this is a pattern fitted to results rather than a prediction tested against them. FALSIFIED IF a representation wins on both axes at once \u2014 none of the three tested did, but none was designed to look",
+  "scope": "DESCRIPTIVE across three experiments, and an earlier version of this scope said they were on 'different corpora' \u2014 they are NOT. exp31, exp32 and exp34 all read the same store (KB table `poc`) at 61/61/60 relations. The real confound is that each derived its OWN threshold (0.6, its own, 0.4), so the comparison is across tuning regimes rather than across corpora. No single experiment tests both halves, which makes this a pattern fitted to results rather than a prediction tested against them. FALSIFIED IF a representation wins on both axes at once under ONE threshold protocol \u2014 three raters unanimously flagged exactly this, and Task 5 of the current plan runs it",
   "src": [
    "results/exp31_novelrel.json",
    [
