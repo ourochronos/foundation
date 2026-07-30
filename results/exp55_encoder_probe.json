@@ -1,0 +1,463 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T16:44:01.184596+00:00",
+  "commit": "811ae6038cb22651e6fc7024ceaaef500581aea4",
+  "dirty": true,
+  "command": "scripts/exp55_encoder_probe.py both",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "KS": [
+    4,
+    8,
+    16,
+    32,
+    48,
+    64,
+    96,
+    128,
+    192,
+    256
+   ],
+   "N_HOLD_REL": 12,
+   "MIN_ALIAS": 6,
+   "N_SUBJ": 40
+  }
+ },
+ "n_relations": 56,
+ "n_trained": 44,
+ "n_held_relations": 12,
+ "n_questions": 7212,
+ "n_external_pool": 13713,
+ "arms": {
+  "m3": {
+   "dim": 1024,
+   "raw_1024_or_768": {
+    "trained_heldout_alias": 0.7046,
+    "NOVEL_relation": 0.0032,
+    "novel_1nn_reference": 0.0,
+    "n_novel": 936,
+    "chance": 0.0179
+   },
+   "basis": {
+    "corpus_K4": {
+     "trained_heldout_alias": 0.2151,
+     "NOVEL_relation": 0.1303,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "corpus_K8": {
+     "trained_heldout_alias": 0.4054,
+     "NOVEL_relation": 0.1154,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "corpus_K16": {
+     "trained_heldout_alias": 0.5483,
+     "NOVEL_relation": 0.1175,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "corpus_K32": {
+     "trained_heldout_alias": 0.5851,
+     "NOVEL_relation": 0.1111,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K4": {
+     "trained_heldout_alias": 0.1673,
+     "NOVEL_relation": 0.0801,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K8": {
+     "trained_heldout_alias": 0.2983,
+     "NOVEL_relation": 0.0652,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K16": {
+     "trained_heldout_alias": 0.4383,
+     "NOVEL_relation": 0.0235,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K32": {
+     "trained_heldout_alias": 0.5301,
+     "NOVEL_relation": 0.0502,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K48": {
+     "trained_heldout_alias": 0.5837,
+     "NOVEL_relation": 0.0021,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K64": {
+     "trained_heldout_alias": 0.6209,
+     "NOVEL_relation": 0.0107,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K96": {
+     "trained_heldout_alias": 0.6386,
+     "NOVEL_relation": 0.0118,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K128": {
+     "trained_heldout_alias": 0.6434,
+     "NOVEL_relation": 0.0075,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K192": {
+     "trained_heldout_alias": 0.6482,
+     "NOVEL_relation": 0.0064,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K256": {
+     "trained_heldout_alias": 0.6663,
+     "NOVEL_relation": 0.0011,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    }
+   }
+  },
+  "gemma_symmetric": {
+   "dim": 768,
+   "raw_1024_or_768": {
+    "trained_heldout_alias": 0.7342,
+    "NOVEL_relation": 0.1709,
+    "novel_1nn_reference": 0.0,
+    "n_novel": 936,
+    "chance": 0.0179
+   },
+   "basis": {
+    "corpus_K4": {
+     "trained_heldout_alias": 0.2314,
+     "NOVEL_relation": 0.0951,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "corpus_K8": {
+     "trained_heldout_alias": 0.3303,
+     "NOVEL_relation": 0.4028,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "corpus_K16": {
+     "trained_heldout_alias": 0.5196,
+     "NOVEL_relation": 0.4252,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "corpus_K32": {
+     "trained_heldout_alias": 0.5727,
+     "NOVEL_relation": 0.359,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K4": {
+     "trained_heldout_alias": 0.2051,
+     "NOVEL_relation": 0.0064,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K8": {
+     "trained_heldout_alias": 0.3767,
+     "NOVEL_relation": 0.0705,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K16": {
+     "trained_heldout_alias": 0.4818,
+     "NOVEL_relation": 0.0224,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K32": {
+     "trained_heldout_alias": 0.5387,
+     "NOVEL_relation": 0.0855,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K48": {
+     "trained_heldout_alias": 0.5822,
+     "NOVEL_relation": 0.1229,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K64": {
+     "trained_heldout_alias": 0.5674,
+     "NOVEL_relation": 0.1186,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K96": {
+     "trained_heldout_alias": 0.5808,
+     "NOVEL_relation": 0.1699,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K128": {
+     "trained_heldout_alias": 0.6185,
+     "NOVEL_relation": 0.1357,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K192": {
+     "trained_heldout_alias": 0.6228,
+     "NOVEL_relation": 0.1603,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K256": {
+     "trained_heldout_alias": 0.6181,
+     "NOVEL_relation": 0.1667,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    }
+   }
+  },
+  "gemma_asymmetric": {
+   "dim": 768,
+   "raw_1024_or_768": {
+    "trained_heldout_alias": 0.7428,
+    "NOVEL_relation": 0.1709,
+    "novel_1nn_reference": 0.0,
+    "n_novel": 936,
+    "chance": 0.0179
+   },
+   "basis": {
+    "corpus_K4": {
+     "trained_heldout_alias": 0.228,
+     "NOVEL_relation": 0.156,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "corpus_K8": {
+     "trained_heldout_alias": 0.49,
+     "NOVEL_relation": 0.3643,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "corpus_K16": {
+     "trained_heldout_alias": 0.5583,
+     "NOVEL_relation": 0.3707,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "corpus_K32": {
+     "trained_heldout_alias": 0.6477,
+     "NOVEL_relation": 0.3761,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K4": {
+     "trained_heldout_alias": 0.2481,
+     "NOVEL_relation": 0.0662,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K8": {
+     "trained_heldout_alias": 0.501,
+     "NOVEL_relation": 0.0299,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K16": {
+     "trained_heldout_alias": 0.5621,
+     "NOVEL_relation": 0.015,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K32": {
+     "trained_heldout_alias": 0.6109,
+     "NOVEL_relation": 0.0876,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K48": {
+     "trained_heldout_alias": 0.6463,
+     "NOVEL_relation": 0.0726,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K64": {
+     "trained_heldout_alias": 0.6214,
+     "NOVEL_relation": 0.1314,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K96": {
+     "trained_heldout_alias": 0.6386,
+     "NOVEL_relation": 0.1186,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K128": {
+     "trained_heldout_alias": 0.6692,
+     "NOVEL_relation": 0.0374,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K192": {
+     "trained_heldout_alias": 0.6635,
+     "NOVEL_relation": 0.0246,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    },
+    "external13k_K256": {
+     "trained_heldout_alias": 0.6716,
+     "NOVEL_relation": 0.0919,
+     "novel_1nn_reference": 0.0,
+     "n_novel": 936,
+     "chance": 0.0179
+    }
+   }
+  }
+ },
+ "summary": {
+  "m3": {
+   "pareto": [
+    {
+     "cell": "raw",
+     "trained": 0.7046,
+     "novel": 0.0032
+    },
+    {
+     "cell": "external13k_K192",
+     "trained": 0.6482,
+     "novel": 0.0064
+    },
+    {
+     "cell": "external13k_K128",
+     "trained": 0.6434,
+     "novel": 0.0075
+    },
+    {
+     "cell": "external13k_K96",
+     "trained": 0.6386,
+     "novel": 0.0118
+    },
+    {
+     "cell": "corpus_K32",
+     "trained": 0.5851,
+     "novel": 0.1111
+    },
+    {
+     "cell": "corpus_K16",
+     "trained": 0.5483,
+     "novel": 0.1175
+    },
+    {
+     "cell": "corpus_K4",
+     "trained": 0.2151,
+     "novel": 0.1303
+    }
+   ],
+   "raw_novel": 0.0032,
+   "matched": {
+    "cell": "corpus_K16",
+    "trained": 0.5483,
+    "novel": 0.1175
+   }
+  },
+  "gemma_symmetric": {
+   "pareto": [
+    {
+     "cell": "raw",
+     "trained": 0.7342,
+     "novel": 0.1709
+    },
+    {
+     "cell": "corpus_K32",
+     "trained": 0.5727,
+     "novel": 0.359
+    },
+    {
+     "cell": "corpus_K16",
+     "trained": 0.5196,
+     "novel": 0.4252
+    }
+   ],
+   "raw_novel": 0.1709,
+   "matched": {
+    "cell": "external13k_K32",
+    "trained": 0.5387,
+    "novel": 0.0855
+   }
+  },
+  "gemma_asymmetric": {
+   "pareto": [
+    {
+     "cell": "raw",
+     "trained": 0.7428,
+     "novel": 0.1709
+    },
+    {
+     "cell": "corpus_K32",
+     "trained": 0.6477,
+     "novel": 0.3761
+    }
+   ],
+   "raw_novel": 0.1709,
+   "matched": {
+    "cell": "corpus_K16",
+    "trained": 0.5583,
+    "novel": 0.3707
+   }
+  }
+ },
+ "scope": "Identification-level only: no store walk and NO residual thresholds, because thresholds do not transfer across representation dimensionality (D125) and an end-to-end probe would confound encoder quality with calibration. Over-provisioning (K above the corpus relation count) is possible ONLY from the external 13,713-label Wikidata pool \u2014 k-means cannot place more anchors than there are corpus labels. Held-out relations never enter head training and never move the basis; they get coordinates by projection, which is the append-only property under test. The Gemma prefix arms exist because that encoder requires asymmetric task prefixes while this architecture needs questions and labels in one geometry; reporting a Gemma result without varying it would measure the prefix choice."
+}

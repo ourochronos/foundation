@@ -2,6 +2,41 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D164: The encoder was the bottleneck, not the method — EmbeddingGemma dominates BGE-M3 on novel-relation transfer, and over-provisioned anchors are refuted
+
+`scripts/exp55_encoder_probe.py`. The go/no-go probe before committing to a 2.2 GB re-embed, run at **identification level only — no store walk, no residual thresholds**, because D125 established that thresholds do not transfer across representation dimensionality and an end-to-end probe would have confounded encoder quality with calibration. 56 relations, 12 held out of head training **entirely**, chance 0.0179.
+
+**Pareto frontier — cells not dominated on both axes:**
+
+| arm | trained | NOVEL |
+|---|---|---|
+| M3, corpus K=16 | 0.548 | 0.118 |
+| M3, corpus K=32 | 0.585 | 0.111 |
+| **Gemma-asym, corpus K=32** | **0.648** | **0.376** |
+| Gemma-sym, corpus K=16 | 0.520 | **0.425** |
+
+**Gemma-asymmetric at K=32 dominates every M3 cell outright** — higher trained accuracy *and* 3.4× the novel-relation transfer. At matched trained accuracy (~0.55) it is 0.371 against M3's 0.118.
+
+**The starkest number is raw label space**: M3 gives **0.0032**, below chance; EmbeddingGemma gives **0.1709**. Fifty-three times, on an identical task with an identical head. In M3's space, predicting a relation as a point memorises the trained relations and transfers nothing — D114's original finding — and that is a fact about **BGE-M3's label geometry**, not about the method. The anchor basis has been doing repair work on a deficient encoder.
+
+**That rescopes a load-bearing result.** D125's basis rescue (0.293 → 0.742 end-to-end) reads as evidence for the basis mechanism. It is substantially evidence that *M3 needed rescuing*. A better encoder narrows what the basis has to fix, and the basis's measured value should be expected to shrink under Gemma rather than hold.
+
+**Over-provisioning is refuted, and the refutation is encoder-dependent — which is why it needed both arms.** Anchors cannot exceed the pool they are fitted from (k-means cannot place 96 centroids among 44 labels), so over-provisioning *requires* the external 13,713-label Wikidata pool. Under M3, raising K there collapses novel transfer monotonically, 0.080 → 0.001. Under Gemma it mildly helps, 0.006 → 0.167. **But no external-pool cell in any arm beats a small corpus-fitted basis**, and the K=16–32 corpus basis wins everywhere. Anchor count is a compression dial carrying D159's trade-off — low K buys transfer and costs precision — and the external pool is simply a worse place to draw directions from, at any width.
+
+This also indicts the current pipeline's `K_BASIS=48`: with ~44–49 corpus relations it sits at the very edge of what the corpus pool can support, which is the "nearly one anchor per relation" regime D125 flagged as unexplained. The probe says the operating point should be lower and corpus-drawn, independent of encoder.
+
+**My pre-registered prediction was half wrong, in the informative half.** I predicted identification would transfer nearly intact and novel transfer would be the fragile thing, *"because identification only needs the encoder to separate labels, while transfer needs the geometry between labels preserved."* Identification did transfer intact (raw 0.705 → 0.743). But transfer was not fragile under Gemma — it was fragile under **M3**. The reasoning was right and the assignment was backwards: transfer *is* the encoder-sensitive quantity, and the encoder we had was the one failing it.
+
+**Prefix strategy earned its place as a factor.** I predicted symmetric would win, since the head must predict label coordinates from question embeddings in one geometry. Symmetric takes the single best NOVEL cell (0.425) but **asymmetric holds the better frontier** — its K=32 dominates symmetric's K=32 on both axes. Had this been left as an unexamined default, a wrong choice would have been reported as an encoder result.
+
+**Two checks rather than assumptions.** `raw NOVEL` came out identical to four decimals (0.1709) across both Gemma prefix modes, which is the signature of a cache mix-up; all three cached arrays hash differently and both arms score exactly 160/936, a ~1-in-29 integer collision. And the first summary printed "best NOVEL", which crowns M3's corpus_K4 at 0.130 while silently omitting that the same cell scores 0.215 trained — **the one-axis summary defect from D159/D161/D162, in the very next experiment**. Replaced with the Pareto frontier and a matched-trained comparison.
+
+**These numbers are not comparable to D125's 0.742.** The probe removes store filtering, which D158 measured at +0.515, so absolute values are far lower by construction. It isolates the representational question, which is what makes it a clean encoder comparison and what makes its magnitudes meaningless in isolation.
+
+**Decision**: the encoder swap is justified on evidence. Proceed to the full re-embed, with `K` re-swept rather than inherited.
+
+**Revisit**: (a) the basis's contribution should be re-measured under Gemma, since D125's rescue magnitude is likely encoder-specific; (b) `K_BASIS=48` is probably the wrong operating point on either encoder; (c) one seed, one holdout draw of 12 relations, one corpus — the 12 were drawn once at random and a second draw would say whether the ordering is draw-dependent (D125's revisit (c), same caution); (d) an untested idea worth its own experiment: fit the **basis** from difference vectors (`emb(object) − emb(subject)` pooled per relation) while still deriving each relation's **coordinate** from its label, which would make the basis relational rather than lexical without giving up zero-shot arrival.
+
 ## 2026-07-30 — D163: A third adjudication prompt for the defect the other two miss — and it found four on the first run, in a table that had just passed both
 
 D162's revisit (c) said the summarising sentence is checked by nothing and that the gap wants a mechanism rather than more vigilance. Two mechanisms were tried.
