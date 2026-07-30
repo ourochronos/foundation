@@ -1,0 +1,107 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T05:22:07.852902+00:00",
+  "commit": "965c2f33a00a1f1664ed43ecb5c16414c5b05313",
+  "dirty": true,
+  "command": "scripts/exp50_entity.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "HOLD_FRAC": 0.25,
+   "RES_THR": 0.8,
+   "TTHR": 0.4
+  }
+ },
+ "n_held_subjects": 652,
+ "results": {
+  "d1_seen_head": {
+   "correct": 0.795,
+   "wrong": 0.0362,
+   "refuse": 0.1688,
+   "n": 800
+  },
+  "d1_seen_knn": {
+   "correct": 0.8538,
+   "wrong": 0.0,
+   "refuse": 0.1462,
+   "n": 800
+  },
+  "d1_held_head": {
+   "correct": 0.7662,
+   "wrong": 0.0525,
+   "refuse": 0.1812,
+   "n": 800
+  },
+  "d1_held_knn": {
+   "correct": 0.5262,
+   "wrong": 0.1475,
+   "refuse": 0.3262,
+   "n": 800
+  },
+  "d2_seen_head": {
+   "correct": 0.5025,
+   "wrong": 0.0712,
+   "refuse": 0.4263,
+   "n": 800
+  },
+  "d2_seen_knn": {
+   "correct": 0.55,
+   "wrong": 0.0225,
+   "refuse": 0.4275,
+   "n": 800
+  },
+  "d2_held_head": {
+   "correct": 0.4925,
+   "wrong": 0.095,
+   "refuse": 0.4125,
+   "n": 800
+  },
+  "d2_held_knn": {
+   "correct": 0.2625,
+   "wrong": 0.29,
+   "refuse": 0.4475,
+   "n": 800
+  },
+  "na_seen_head": {
+   "correct": 0.0,
+   "wrong": 0.3137,
+   "refuse": 0.6863,
+   "n": 800
+  },
+  "na_seen_knn": {
+   "correct": 0.0,
+   "wrong": 0.48,
+   "refuse": 0.52,
+   "n": 800
+  },
+  "na_held_head": {
+   "correct": 0.0,
+   "wrong": 0.3125,
+   "refuse": 0.6875,
+   "n": 800
+  },
+  "na_held_knn": {
+   "correct": 0.0,
+   "wrong": 0.3275,
+   "refuse": 0.6725,
+   "n": 800
+  }
+ },
+ "gaps": {
+  "d1_head": -0.0288,
+  "d1_knn": -0.3276,
+  "d2_head": -0.01,
+  "d2_knn": -0.2875,
+  "na_head": 0.0012,
+  "na_knn": 0.1525
+ },
+ "largest_gap": 0.3276,
+ "verdict": "a gap of 0.328 appears; entities are NOT free",
+ "scope": "Subjects are held out of TRAINING QUESTIONS only; their claims remain in the store and stay walkable, so this measures whether the reasoner generalises to an entity it never trained on \u2014 not whether the store can hold new ones (D131 covers that). The retrieval bank likewise contains only seen-subject questions, so held-out subjects have no same-subject neighbour. Unanswerable population is not-applicable per law #9, split the same way."
+}

@@ -34,6 +34,8 @@ would falsify it. A claim without its condition is not publishable.
 | 10 | The p25-of-within-relation-fit statistic **orders stores by range tightness** (MQuAKE > wiki), and a threshold moved across stores **costs more than 0.30 coverage** | two stores | fit 0.778 vs 0.562 → derived 0.672 vs 0.453; wiki at MQuAKE's value drops 0.751 → 0.142 (D142) | **falsified if** the ordering reverses on a third store, or if cross-store transfer costs under 0.30. *Not claimed*: that the derived value is better than a tuned one — that comparison was never run at matched refusal |
 | 11 | Claim adjudication itself is noisy | two independent raters | Cohen's kappa **+0.333** (D140) | single-rater verdicts in D130/D135 were correspondingly noisier than they appeared |
 
+| 12 | Entities are free for the head and expensive for retrieval | subjects held out of training questions; claims remain in the store | head −0.029 (d1) / −0.010 (d2); retrieval −0.328 / −0.288 (D149) | **falsified if** the head's gap exceeds 0.05 on any population — it did not on three |
+
 ## What we cannot claim
 
 Stated as prominently as the claims, because these are the ones a reader
@@ -45,8 +47,11 @@ would otherwise assume:
 - **Not depth-unbounded in practice.** Coverage decays 0.934 → 0.693 → 0.289
   from depth 2 to 4, and on a dense store the wrong-rate *grows* with depth
   (D126).
-- **Not entity generalisation.** Every experiment holds out relations,
-  pairs, phrasings or instances. Novel *entities* were never tested.
+- ~~Not entity generalisation.~~ **Now tested and it holds for the head**:
+  subjects held out of training score 0.766 against seen subjects' 0.795 at
+  depth 1 (gap −0.029). It does *not* hold for retrieval (−0.328), because a
+  question's text carries the entity name and a new entity moves the query
+  away from its bank neighbours (D149).
 - **Not a free lunch on refusal.** Two principled fixes moved along the
   precision/coverage frontier without shifting it (D124).
 - **Not honest by default.** Without the answer-type gate the walker

@@ -2,6 +2,35 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D149: Entity generalisation HOLDS for the head and FAILS for retrieval — completing the architecture picture and further qualifying D129
+`scripts/exp50_entity.py`. Task 3, and the last untested axis. We had held out relations, pairs, phrasings, instances and depths — never entities. 25% of subjects were held out **from training questions only**; their claims stay in the store and remain walkable, so this asks whether the *reasoner* generalises to an entity it never trained on, not whether the store can hold one (D131 covers that).
+
+| | seen subjects | **held-out subjects** | gap |
+|---|---|---|---|
+| depth 1, **head** | 0.795 | **0.766** | **−0.029** |
+| depth 1, retrieval | 0.854 | **0.526** | **−0.328** |
+| depth 2, **head** | 0.502 | **0.492** | **−0.010** |
+| depth 2, retrieval | 0.550 | **0.263** | −0.288 |
+| not-applicable refusal, head | 0.686 | 0.688 | +0.001 |
+
+**For the parametric head, entities are free.** Gaps of −0.029, −0.010 and +0.001 across answering at two depths and refusal. **The stated limitation in `docs/18` and the draft is closed**: the reasoner answers about subjects it never trained on as well as about ones it did.
+
+**For retrieval, entities are expensive** — −0.328 at depth 1. The mechanism is plain once seen: a question's text contains the **entity name**, so a new entity moves the query away from every neighbour in the bank, and the retrieved target is drawn from whatever question happens to be lexically closest rather than from the right relation. The head never has this problem because its *target* contains only relation content, so entity identity is not something it can key on.
+
+**This completes the architecture picture, and it is not what D129 concluded:**
+
+| axis | retrieval | head |
+|---|---|---|
+| unseen **phrasings** | **0.925** | 0.691 (D129/D148) |
+| new **relations** | 0.229 | **0.782** (D131) |
+| new **entities** | 0.526 | **0.766** (D149) |
+
+**Retrieval wins on the one axis that is not about novelty, and loses on both that are.** D129 recommended replacing the head with retrieval on the strength of the phrasing axis alone; D131 qualified that for relations, and this qualifies it for entities. The honest statement is that **retrieval is a paraphrase mechanism, not a generalisation mechanism** — and the two failures share a cause, since a bank can only return targets it already holds.
+
+**Decision**: the head is the default and retrieval is the specialisation, reversing D129's recommendation. Retrieval should be used where phrasing varies and the entity/relation vocabulary is stable; the head everywhere else. D136's hybrid remains unadopted, but this is the third independent result saying the two components have complementary and now well-characterised failure modes — which makes a router more attractive than D136's negative result left it, provided it routes on *novelty* rather than on neighbour distance.
+
+**Revisit**: (a) a router keyed on "is this entity/relation in the bank?" is now a lookup with three axes of evidence behind it, and D136's bank-membership switch failed only on the not-applicable population — worth one more attempt with the type gate carrying that case; (b) retrieval's entity penalty should shrink if questions were embedded with the entity masked, which is cheap to test and would isolate the mechanism claimed above.
+
 ## 2026-07-29 — D148: The head was handicapped, not incapable — and retrieval's advantage is data-efficiency, which mostly closes by 10 aliases
 `scripts/exp49_fair_head.py`. Task 2, running the falsifier D145's adversarial pass named for claim 9: *"a better-trained parametric head matching 1-NN would falsify information destruction; one underperforming head does not rule that out."* Fair criticism, and it found a real design flaw.
 
