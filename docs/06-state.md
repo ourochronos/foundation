@@ -1,132 +1,179 @@
-# Current state — 2026-07-28 (resource axis live; D93–D101)
+# Current state — 2026-07-30 (encoder/anchor probes complete; through D165)
 
-**Fastest orientation**: [decisions.md](decisions.md) D101 → D92, then the P2 paragraph below. Live store is `poc` (pg): **19,729 claims / 15,399 eids / 1,717 pages** over wiki + math.LO + AI/ML + citations + **shared resources** + HuggingFace cards. Rebuild: `scripts/rebuild_poc.sh` then `python -m foundation replay-edits`. Battery 13/13, suite 58, demo GREEN.
+**Fastest orientation**: [decisions.md](decisions.md) D165 → D164 → D158, then
+"where a pivot lands" at the bottom. **Nothing is running.** Working tree clean
+apart from three soak-log files that rewrite themselves.
 
-**The identity story, in one place** — three declarations, because no single default is right for every source (D92/D101):
+This document separates **findings** from **plans** deliberately. A change of
+direction discards plans; the findings below were paid for and stay true
+whatever gets built next.
+
+---
+
+## Resume points
+
+| what | where |
+|---|---|
+| repo — M3 stack as measured, before any Gemma work | git tag `m3-baseline-20260730` |
+| repo — encoder + anchor probes complete (this state) | git tag `probes-20260730` |
+| store dump, restore-**verified** | `~/backups/foundation-20260730/` + its `RESTORE.md` |
+| live store | pg `poc` (19,996) + `poc_claims` (19,996) |
+| rebuild from scratch | `scripts/rebuild_poc.sh` then `python -m foundation replay-edits` |
+
+**Restoring the store needs `CREATE EXTENSION vector` first.** `pg_dump -t`
+does not carry extensions, and without it the restore silently yields
+`poc_claims` present and `poc` **missing** — with perfectly healthy row counts
+on the table that did restore. Found by test-restoring rather than by reading
+the dump. Checksums to verify against are in `RESTORE.md`.
+
+**Caches**: 2.2 GB of `results/*_emb.npz`, gitignored and rebuildable; 381 MB
+of that is the exp55/exp56 encoder work. Each carries a content assert and
+refuses to load against a changed text list rather than misaligning (D120).
+Deleting them costs minutes, not correctness.
+
+---
+
+## Findings that survive a pivot
+
+**Mechanically reindex-free, now measured where the claim is made.** Basis,
+coordinates and head hash byte-identical across an append (D131) *and* across
+an update (D157) — the latter added because a rater noted the fingerprint
+evidence lived in a different experiment. The guard was then tested by making
+it fire: a 1e-6 perturbation flips the hash, the run aborts, nothing written.
+
+**The store does the reasoning work; the walk does not** (D158). An exhaustive
+planner allowed to consult the store for walkability matches the walker
+(0.9032 vs 0.9123, inside CI); denied the store it collapses to 0.3883.
+Availability filtering **+0.515**, greedy walking **+0.009**. The walker's
+remaining justification is cost, not accuracy — untested where enumeration is
+expensive. The 0.534 baseline this claim rested on was a literal pasted from
+another script; recomputed in-run it is 0.8138.
+
+**BGE-M3 was the bottleneck, not the method** (D164). Novel-relation transfer
+in raw label space: M3 **0.0032** (below chance), EmbeddingGemma **0.1709** —
+53×, identical task and head. So D125's basis rescue (0.293 → 0.742) is
+substantially evidence that *M3 needed rescuing*, and the basis's measured
+value should be expected to shrink under a better encoder.
+
+**Anchors should SEPARATE relations, not cover them** (D165). Top-K
+eigenvectors of the between-relation scatter (`lda_between`) beat k-means on
+labels on *both* axes. Best cell: EmbeddingGemma, symmetric prefixes,
+`lda_between` K=32 — 0.7146 trained / 0.4530 novel. No M3 cell survives on the
+global Pareto frontier.
+
+**Orthogonality is not the dial.** Coherence-vs-transfer correlation
+−0.002 / +0.051 / +0.170. A perfectly orthogonal random basis caps at 0.287;
+a high-coherence content-bearing one reaches 0.425. Content dominates.
+
+**Relation-as-offset fails** — anchors from `emb(obj) − emb(subj)` are worst or
+near-worst on both encoders. With D4 (rotations unsupported) and D26 (constant
+translation 0.060), "relations are geometric operators in this space" is now
+three independent negatives.
+
+**Better encoder ⇒ anchor strategy matters less.** Random-to-best spread: ~31×
+on M3, ~1.6× on Gemma. The basis was doing repair work.
+
+**Adjudication as a method** (D144 → D163):
+- Claims that never faced a prompt fail when they finally do — **5 of 5**,
+  against 2 of 10 for claims that had.
+- Verification and attack find largely different things; neither subsumes the
+  other, and a verification pass returning zero may be measuring hedging.
+- `selfcheck` (claim sentence vs its **own** scope, no evidence shown) catches
+  a class the other two miss — 4 flagged in a block that had just passed both,
+  disjoint from attack's 3. Validated on matched pairs: 4/4 known-bad, 0/4
+  repaired.
+- Keep the panel **odd**: a fourth rater moved 1 verdict of 14, and only by
+  turning a majority into a tie.
+
+**Audit law #10**, earned here and tested as a prediction: *a claim must carry
+the condition its number was measured under, in the claim sentence itself; a
+scope condition qualifies a claim, it does not retract one.* The flag rate
+halved (6/14 → 3/14) and rater instability fell with it.
+
+**The recurring defect is the summarising sentence, not the number.** Numbers
+are checked by tests, by `claim_numbers.py`, by four families of raters. The
+sentence summarising them is checked by nothing, and it is where D160, D161,
+D162, D164 and D165 each found their error.
+
+---
+
+## Standing facts from earlier phases
+
+**Identity — three declarations**, because no single default fits every source
+(D92/D101):
+
 | what makes two mentions the same thing | field | source type |
 |---|---|---|
 | a page's canonical form is its TITLE | `page_title` | arXiv (page is an ID) |
 | a link target is canonical for the page it names | `object_page` | citations |
 | community vocabulary is one entity by name | `object_global` | shared resources |
 
-**Resource axis: ACCEPTED (D106).** Frozen 50-audit — **both raters 0.82 [0.69–0.90]**, κ 0.806, after all three disputed items were resolved on full-text evidence (one against me, two against Sol). From 0.68/0.66 at v1 and a 22-point split at v2: the corpus improved, the *instrument* improved more. The audit still describes the corpus — verified that none of the 50 sampled claims was touched by later retypes, each of which removed a real defect, so 0.82 is a conservative lower bound.
+**Resource axis: ACCEPTED (D106)** — frozen 50-audit, both raters 0.82
+[0.69–0.90], κ 0.806, against a *stated standard* (family-level resource names ·
+`P_EVALUATES_ON` covers training corpora · a benchmark types the models it
+scores as `P_COMPARES_TO` · descriptive subjects permitted where no method is
+named). A number without its standard is what made two careful raters differ
+by 22 points.
 
-**Accepted AGAINST A STATED STANDARD**, because a number without one is what made two careful raters differ by 22 points: family-level resource names · `P_EVALUATES_ON` covers training corpora · a benchmark types models it scores as `P_COMPARES_TO` · descriptive subjects permitted where a paper names no method.
+**Audit laws #1–#5** come from the extraction arc (D93–D106); #6–#9 from the
+reasoner arc; #10 above. All ten are listed in `docs/19-writeup-draft.md` §8.
 
-**Resource typing runs on two mechanisms over disjoint populations** (`scripts/exp15_typecheck.py`, `foundation/typeoracle.py`): the corpus VOTE types what papers use often (30 objects at ≥3 papers, HumanEval/MBPP/MATH at 1.00 purity); the HF parts inventory types what the REGISTRY knows however rare (38 family matches, 30 of them tail objects the vote cannot reach). Names in neither are judgement calls, stated not hidden. This is the P2 dogfood loop closed — the components corpus typing the literature corpus.
+---
 
-**Five audit laws, each learned by a wrong verdict before it was written down:**
-1. **Evidence for a verdict must never be narrower than evidence for the claim** — the audit graded 8k of a 40k source; all three final disputes lived in the gap (D103).
-2. **A locator's failure to find evidence is never itself evidence** — a stage that can delete must abstain (D98).
-3. **An adjudicator is a second rater, not an oracle** — verify its corrections against the source (D98/D103).
-4. **Every convention declared to the extractor must be declared to the auditor** (D100/D102).
-5. **A frozen label may be amended only on new evidence, direction disclosed, never toward a gate** (D103).
+## Plans — direction-contingent, discard freely
 
-**The recurring defect across D93–D106 was never the corpus — it was mechanisms built for the head reused on the tail**: an 8k window as 40k evidence, a vendor list asked to know `Pillar-0`, an inventory sampled for our stack asked to type the field's.
+**Nothing has been adopted.** The encoder swap is *recommended on evidence* and
+has not been made. The pipeline still runs BGE-M3 + `whiten_v0` at 1024-d with
+`K_BASIS=48` k-means-on-labels.
 
-**HF inventory: 402 cards, 200 extracted to claims, 202 deliberately oracle-only** (`results/hf_inventory_state.json`) — the second batch was fetched to make `is_model()` work, which needs a registry name and not a stored claim. Extracting them is a scoped future pass with the full discipline, not a half-finished one.
+The gate before changing anything: **confirm D165's ordering end-to-end with
+the walker.** All of D164/D165 is identification-level — no store walk, no
+thresholds — and D158 measured store filtering at +0.515, so the ordering must
+be reconfirmed where the store participates. **Cost ≈ 45 seconds of question
+embedding**: the walker path reads only `poc_claims` (encoder-independent) and
+embeds questions fresh; it never touches `poc.z`.
 
-## Artifacts
+If the swap proceeds, in order:
 
-**Data**
-- `data/propositions/` — 62 JSONL files → **16,079 clean propositions / 56 domains** (was 10,479 / 36; the 20 `gen4_*` domains were added and merged this session). Canonical: `data/clean_v0.jsonl`, row-aligned with `results/dense_v0.npy` (BGE-M3 dense), `results/whiten_v0.npz` (ZCA, fit n=14,533), `results/sparse_v0.json` (top-24 lexical tokens+weights). Whitener fingerprint `b9714630a986908f` — recorded in probe outputs because amp_cos lives in whitened coordinates.
-- `results/snapshot_10k/` — the frozen 10,479-prop space (corpus, dense, whitener, sparse, pair cache, both amp subspaces, pooler v2). Every number in D10/D16–D20 was measured there; keep it to reproduce them.
-- `data/relations/prop_*.jsonl` — **23 transformation types, 2,822 pairs** (encoder-agnostic text; reusable forever). Three preserving types added this session as the honest holdout for pooler v2: `prop_cleft` (121), `prop_nominalization` (120), `prop_contraction` (80). `pairs_v0.jsonl` — 600 lexical relation pairs. `*.raw` = pre-validation originals.
+1. the end-to-end walker gate above;
+2. `K_BASIS=48` k-means → `lda_between` K=32 — likely wrong on either encoder,
+   so worth doing independent of the swap;
+3. the codec identity producer. EmbeddingGemma is dense-only, so M3's sparse
+   lexical channel has no successor. `codec/decoder.py` already consumes
+   `{tokens, weights}` from a **separate** producer, so this is one script
+   rather than a redesign — and a Gemma-vocabulary producer removes the
+   current cross-tokenizer bridge (M3/XLM-R re-tokenised into Qwen3 at
+   `max_sub=4`);
+4. store `vector(1024)` → parallel `vector(768)` table — needed **only** for
+   the store's own retrieval path, not for reasoning.
 
-**Checkpoints**
-- `decoder_v0/` — dense-only soft-prefix decoder, **current best** (16k corpus, 12 ep): entity EM **0.203**, number EM **0.336**, cycle cos **0.619** — the third like-for-like scaling point, still climbing (D10). The 10.5k predecessor (0.178/0.278/0.579, D19 interpolation midpoint 0.304) is preserved in `results/snapshot_10k/decoder_v0/`.
-- `decoder_v1/` — dual-channel. **STALE**: trained on the old 4.9k corpus, sparse channel ignored (D10 fixes not applied).
-- `struct_pooler_v2.pt` — **shipping** pooler (all 5 v1-era preserving types trained), refit in the 16k space. `_v1` = D18's config, `_v0` = no-position ablation.
-- `adapter_narrow/broad.pt` — negative-result hinge adapters (D11/D12), kept for reference.
+**Owed regardless of direction**: a re-adjudication of the current 14 claims
+(four changed after the last round, so D161's counts do not describe the
+current text), and a decision on folding `selfcheck` into the standard round —
+three prompts × three raters × repetitions is a real cost increase and should
+be chosen rather than drifted into.
 
-**Caches** (delete to force rebuild; all deterministic)
-- `results/prop_relation_emb.npz` — whitened pair embeddings, current whitener, all 23 types. Rows: x-side order, y positionally aligned. Rebuild: `scripts/probe_prop_rotations.py`.
-- `results/token_vecs.npz` — ColBERT token vectors (all pair sides + a 1,500-prop corpus subset). Rebuild: `scripts/train_struct_pooler.py`.
+**Open from earlier threads**: the walker's cost-vs-accuracy case at R=61
+(D158); the phrasing leg of the compression claim (D159); max-cosine as a
+per-question refusal predictor rather than a population correlation (D160);
+regularised LDA and a swept entity-subspace size (D165).
 
-**Structure channel v2 (D20)** — `codec/structure_channel.py`, `StructureChannel.load(ROOT)` defaults to the shipping config:
-- amp: 8-dim valence subspace (4 preserve directions deflated), **gain 8.0** (`results/amp_subspace_v1.npz`; `_v0.npz` = the D16 g=2.0 config, geometry-safe for in-place use). **Comparison-time only — never store amp() output.**
-- s: `struct_pooler_v2` over token vectors.
-- role bits: `codec/role_bits.py` (spaCy parse; voice/cleft/nominalization/raising normalization, clause fingerprints, tense bit, epistemic hedge bit, shared-vocab gating).
-- Combination: per-pair `min(amp_cos, s_cos, role_sim)`.
+---
 
-## Eval suite status (vs the docs/02 plan)
+## Where a pivot lands
 
-| # | probe | status |
-|---|---|---|
-| 1 | entity/number fidelity | ✓ **0.203 / 0.336 @16k** (was 0.178/0.278 @10.5k), still scaling (D10) |
-| 2 | noise robustness | ✓ ~94% @ latent cos 0.89; collapse below ~0.45 |
-| 3 | interpolation | ✓ D19 — @16k: endpoints 0.62 → midpoint 0.33, smooth V, fluent at every t; relative drop invariant at ~47% across decoders |
-| 4 | cycle consistency (k=1) | ✓ **0.619** @16k (was 0.579) |
-| 5 | isotropy | ✓ 0.348 → 0.037 whitened, eff. rank 523/1024 @16k |
-| 6 | rotation tolerance | superseded by algebra probes (rotations rejected, D4/D15) |
-| 7 | anchor spanning | ✓ v0 (nearest 0.39 / phase-ceiling 0.82 @1k anchors, 16k corpus) |
+Most of the above is **encoder- and basis-level**, so any direction that keeps
+the store and the walker keeps all of it. What is genuinely contingent:
 
-**Original seven-probe suite is closed.** Structure-channel scorecard (D20, at 16,079 props): full type-level ordering, worst-case margin **+0.011**, **pair-level AUC 0.942**, transfer to 3 never-trained preserving types **0.912**. (Replicates across an independently refit space: at 10,479 props it was +0.014 / 0.945 / 0.910. The final numbers include a role-bits punctuation fix that cost 0.006 AUC and exposed ~2 points of previously-masked parse noise — see D20.)
-
-## The corpus cascade (run in this order after ANY corpus change)
-
-Everything downstream of the whitener has to be refit — the amp subspace and pair cache live in whitened coordinates. Ran end-to-end this session at 16,079 props; the structure channel survived and improved (D20 replication).
-
-1. `scripts/baseline_isotropy.py` — rebuilds `clean_v0.jsonl` + `dense_v0.npy` + `whiten_v0.npz`. ⚠️ **overwrites v0 names in place** — snapshot first (see `results/snapshot_10k/`).
-2. `scripts/extract_sparse.py` — re-derives `sparse_v0.json` row-aligned.
-3. `scripts/probe_prop_rotations.py` — rebuilds the pair cache in the new space. Both caches now self-invalidate: `prop_relation_emb.npz` stores a **whitener fingerprint** (it holds whitened vectors, and a corpus change refits the whitener while leaving every pair text identical — text-only keying silently served stale coordinates), and `token_vecs.npz` keys on its text list, which includes a corpus subset.
-4. `scripts/probe_axis_amplify_v1.py --persist` (+ `fit_amp_subspace.py` for the v0 config).
-5. `scripts/train_struct_pooler.py --split v2` — the negative pool is drawn from the corpus.
-6. `scripts/probe_role_bits.py` — confirm the ordering survives.
-7. `scripts/train_decoder_v0.py --epochs 12` — the expensive one and the actual fidelity payoff (D10: scale data **and** compute together — fixed-compute curves lie).
-
-**Status**: all 7 steps complete at 16,079 props. Step 7 delivered the third like-for-like fidelity point (0.203/0.336/0.619 — table in D10).
-
-## Codec v2 — LANDED (D21)
-
-The D3 triple works end-to-end: `[gist ; identities ; s]` doubles fidelity over dense-only (entity 0.203→**0.483**, number 0.336→**0.668**, exact 0→**0.064**, cycle 0.619→**0.810**) and makes identity fidelity **noise-immune by construction** (σ=0.5: 0.461/0.662 vs v0's 0.125/0.317). Shuffled attribution proves the sparse channel is THE identity carrier (shuffling it → ~0). s-vector contributes +0.033 role fidelity — the decoder reads binding from it. **Residual failure mode = value-to-role binding** (right numbers, wrong slots — samples in D21); next lever is slot-tagged identity prefixes, not more data. Artifacts: `checkpoints/decoder_v2/`, `results/decoder_v2_eval.json`, `results/s_vecs_v0.npy` (+ meta; rebuild via `scripts/compute_s_vecs.py`).
-
-**Engineering note (cost a smoke-test cycle)**: zeroing *projected prefix embeddings* to drop a channel sends exact-zero vectors through every RMSNorm and yields non-finite LoRA gradients in backward (forward loss stays finite — 246 inf/NaN grads measured). Drop by zeroing the channel's *input* instead, so dropped rows get `proj(0)` — a learned in-distribution null embedding. Also: bf16 scalar parameters silently stop learning (updates round away below ~1e-3); keep learned scalars fp32 and cast at use.
-
-## Slot-tagged identities — LANDED (D22); decoder_v2t SHIPS
-
-Binding given-present 0.714 → **0.795** (mis-attachment −28% relative), number EM 0.668 → **0.720** (0.725 under σ=0.5 gist noise — the tags live in the noise-immune channel); entity −0.021 (≈noise), cycle flat. Ceiling is **coverage**: only 47% of number tokens taggable (BGE-M3 splits comma numbers); next lever if number fidelity plateaus = build identity slots from the validated labels directly, bypassing BGE-M3 lexical tokenization. Artifacts: `checkpoints/decoder_v2t/`, `results/decoder_v2t_eval.json`, `results/sparse_tagged_v0.json`, binding metric in `codec/evals/fidelity.py`.
-
-## Next queue (priority order)
-
-1. ~~Value-to-role binding~~ — landed (D22).
-2. ~~Codec-level min(struct, identity)~~ — landed (D23): `codec/identity_channel.py`, bidirectional-mismatch rule, zero false flags; margin +0.011→**+0.022**, pair-AUC 0.942→**0.963** (`results/codec_compare_v0.json`, `scripts/probe_codec_compare.py`). Bottleneck now formality vs tense (both marked-feature cases).
-3. ~~Cycle-under-noise~~ — landed (D24): output quality INVARIANT to gist noise through σ=0.8 (2× training range); symbolic channels error-correct the gist. De-risks T1: the reasoner may be sloppy in continuous space (`results/cycle_noise_decoder_v2t.json`).
-4. ~~Interpolation at v2~~ — ran; it turned into a **channel-conflict experiment** (side channels fixed at A while gist slerps to B) and the identity channel won outright: output stays A's proposition at every t (D21 note). Design implication for Phase 2: **latent ops must update the triple coherently — moving the gist alone moves nothing.** A true v2 traversability probe needs path-following side channels.
-4. **Phase 2 opened and scaled (D25/D26)**: store v0 passes retrieval gates at 360 AND 9,900 facts (relational addressing 0.991→1.000 with identity at 9.9k). **D26 is the program's load-bearing result**: 2-hop chains — latent-only composition dead (0.003/0.062), symbolic identity hand-off between hops 0.998. D16's content-conditional law, third appearance. The hand-coded chain IS the QA pipeline for T3/T5 and the reasoner's baseline-to-beat. **D27 closed both follow-ups**: the triple-coherent hop (gist steering + identity hand-off + walk semantics `demote_ids`/`exclude` now in `MemoryStore.query`) hits **0.998 with no codec pass** — the reasoner's hop primitive is store arithmetic; ridge linear hops reach only 0.552 (entity routing partially linear, low-variance directions); identity rescoring does NOT activate under isotropic noise (twice negative — its role is the hop hand-off, not error correction). **Expressibility gate PASSED (D28)** — with caveats now formalized. **Research + planning session COMPLETE (2026-07-25): see [07-phase3-plan.md](07-phase3-plan.md)** — six-agent sweep (4 literature, 1 adversarial review, 1 gap analysis). Verdicts: three unclaimed novelties (translation addressing, triple codec, reasoner-over-frozen-codec) with adjacent work landing NOW (DiscoLoop 07/2026 = our D26 law for internal embeddings; GRAIL; NextMem); adversarial review found the recent positive results partly world-construction artifacts (unique tokens, single templates, no CIs; `shuf_dense ≈ full` means gist-frame claims are unmeasured). **Track A/B/E COMPLETE except A8 (in flight: equal-bit control, `results/decoder_v2e_eval.json` when done) — D29–D33.** Edit transparency 0.605@n=200 (fix specified: identity-agreement supersession targeting, store v1); OOD graded not collapsed (number 0.571/binding 0.429/entity 0.693; noise-invariance holds). **TRACK A CLOSED (D34: channel separation IS the mechanism — equal-bit control collapses). C1+C2 BUILT**: `codec/hop_env.py` (discrete actions: relation/hand-mask/soft-walk-knobs/HALT/ABSTAIN; B2 readouts as observations; oracle_policy = imitation floor) + `data/hop_traces_v0.jsonl` (1,520 BC trajectories; oracle-through-env floors: single 0.743, cap_pop 0.756, ceo_born 0.375, loc_cap 0.140, 3-hop 0.000, no-answer abstain 0.061 — the naive threshold wastes a 0.95-AUC signal; headroom everywhere). **C3 v0 DONE (D35): rung 1 passed (beats oracle floors with inferred chains: 0.775/0.764/0.411), abstention 0.061→0.966@0 false, composition transfer 0.000 (BC doesn't compose — as literature predicts). v0.1 on composition-dense world v4 DONE (D36): trained compositions healthy (5 new work; loc_* beat floors; abstain holds) but holdout transfer 0.000/0.000/0.092 — EVEN with both hops trained in-position (cap_mayor). Diagnosis: step-0 routing reads a pooled gist; question NESTING is content-conditional structure (the law, 4th appearance). **v0.2–v0.5 arc DONE (D37): BC cannot induce composition (0.000 through three escalating repairs — cue features, gist dropout, depth fix) because typed worlds make hit-pattern lookup extensionally perfect; the reframe wins — TYPED UNIFICATION plans chains exactly (big_pop holdout 0.000→0.553 ≈ gold-chain oracle; cap_mayor 0.353; no-answer abstain 1.000). **J3 DONE (D41): ZERO-hand-schema planner beats the hand schema on holdouts (cap_mayor 1.000 vs 0.353; big_pop 0.693 vs 0.553; hq_loc_cap 1.000) — types = relational-participation vectors (surface-name clusters are phonological mush, 0.862 indistinct), scoring law = evidence proposes / types dispose (compatibility as feasibility gate, NEVER a score term — v2's additive version collapsed to a question-independent argmax). J1 DONE (D39): promotion-for-latency inverts. v0.6 LANDED (D44): learned detection + learned answer-type + D41 unification + D43 walk + derived abstention — singles 0.993, trained comps chain 1.000, HOLDOUT TRANSFER cap_mayor 0.913 / hq_loc_cap 0.967 (BC was 0.000; hand schema 0.353/0.042); big_pop 0.420 residual = detector under-detection in novel pairing; no_answer 0.835 with the 33 leaks being defensible semantic reinterpretation. NEXT: ~~fix 3-hop walk~~ DONE (D43: walk = channel separation — proto+t dense, subject-subtraction id hand-off; gold-chain exec 0.93–1.00, e2e mean 0.804); J5 DONE (D42: zero cross-lingual gap — gist is the interlingua, FR 0.650 ≥ EN 0.630 gist-only vs English store; identities transfer as verbatim symbols). J2 basis floor + J4 growth invariance; then world v4b (F compute ops, I conflicts).** **CONSOLIDATION (D45, external review): canonical executor codec/walker.py (HopEnv legacy), provenance manifests + Wilson CIs in all new result JSONs (codec/manifest.py), tests/ 16 passing, pyproject pins. Standing rule: mechanism changes land in codec/ in the same commit as their D-entry. Official claim phrasing: channel-separated planner+executor solve a deliberately adversarial SYNTHETIC world and generalize to selected unseen compositions. J4 DONE (D46): planning growth-invariant at 2× store, zero-retraining transfer to novel entities; execution tax = surface-name collisions ONLY (0.488 vs 0.964 clean) → next symbolic upgrade is ENTITY INDIVIDUATION. K4 DONE (D47): all claims stable ±0.02 across 3 seeds; big_pop failure structural. K5 DONE (D48): post-freeze templates → singles 0.900, 9/12 comps hold; 'runs' mayor↔ceo confusion is the one weak family. REMAINING QUEUE (all DESIGNED, training-paused 2026-07-25): entity individuation — design ADOPTED D49/docs/08 (eids as store content, closed-form resolver, redirects; acceptance = J4 rerun ≥0.90 collided); K6 — protocol PRE-REGISTERED D50/docs/09 (MQuAKE-CF-3k, matched-scale baseline, criteria fixed pre-contact; runs after individuation); J2 — measurement PRE-REGISTERED D51/plan §J2 (bits = m·log2(N), three knees, prediction: interface knee ≪ reconstruction knee). Then: v0.7 detector (gate = K5 frozen templates), world v4b (F compute, I conflicts). QUEUE STATUS 2026-07-26 EOD (everything up to L7 executed or in flight; STOP before L7 — PoC planned WITH user):
-HEADER-FIX: decisions at D65; adversarial pass D64 done (14/16 accepted; criteria-drift rule adopted); v0.7b+K5b landed (transfer confirmed clean: cap_mayor 0.933, hq_loc_cap 0.933; big_pop honest 0.000/0.360). M4 ✅ D70 (PgStore primary: exact battery, 0/276 answer-parity, 1M @3.2ms; pg tuned 12GB/8w). M1 plateau (D72): strict-Haiku 0.79 vs 0.85 gate, precision-beats-recall for operator pooling measured (3-config table); QA 0.127 best; blocked on extraction quality → M3 v2 (D74): precision 0.676 ✓, links 0.810 ✓ (corrected instrument), recall 0.321/0.452 ✗ trajectory+, conflicts 28-candidates but audit 0.04 → detector must be FUNCTIONAL-ONLY (D49 lesson #4) and Track I natural test needs multi-source corpora. M1 re-test DONE (D75): 0.76 vs 0.85 — corpus-stable, four promptable error families named (concept-as-work; event-year binding; lived≠born; direction). PoC PLANNED (D76, docs/10): GATES FIRST (G1 v3+veto→0.85; G2 full-article recall→0.5 holding precision+links; G3 M2 targets; G4 M5 targets; G5 soak starts NOW) then Phase B (foundation/ pkg, CLI, Wikipedia 2-5k pages + ArXiv slice as claims, demo.sh = acceptance). G1 PASSED at boundary (D77: 0.85 [0.77–0.91]; v3 rules + veto layer; fifth rule named: assert-not-infer). G2 PASSED (D78 instrument amendment pre-run: precision gate on infobox-complete pids, fp-audit 24/25-true frozen, strip_wiki template-arg fix; D79 verdict: recall 0.544 ✓ complete-pid precision 0.896 ✓ links 0.840 ✓ conflicts 53 ✓; all-pid lower bound 0.590). G5 soak-cron live (cc113515 nightly; durable system-cron = Phase B item). G3 CLOSED (D80: recoverability FAILS gate = registered finding; geometry ceiling = surface baseline 0.597, centered 0.169; eids load-bearing, channel-sep law measurement #7). G4 PASSED (D81: faithfulness 1.000 50/50 round-3, distractor 1.000, disputes 1.000; three-round arc 0.840→0.780→1.000 → law: quote-never-reconstruct — render at evidence strength, extractive quoting is the fixed point; codec/brief.py). PHASE G COMPLETE (G1 D77 · G2 D79 · G3 D80 finding · G4 D81 · G5 soak live). Phase B core LANDED (D82: foundation/ pkg + CLI + demo.sh GREEN vs fresh DB — 3,066 claims/2,570 eids; title-entity canonicalization policy; canon_value kills format-variant disputes; suite 52). ArXiv slice ACCEPTED (D83: 0.94 [0.84-0.98] on frozen 50-audit; 297 live claims in poc store — 3,366 claims/3,135 eids/310 sources; Track I views across papers working). Soak durable (system crontab 02:41 + 7/7 battery incl edit-persistence). Wiki corpus at 1,000 pages (485 infobox). OVERNIGHT RUN D86-D88 COMPLETE: adjudication live (copilot/gpt-5.4 blind batched; both audits re-graded, errors caught both directions); revid provenance (1000 pages pinned, source_ref=title@revid); 1k tranche landed (801/801 pages, complete-pid precision 0.902 at 5x, store 8,302 claims/8,079 eids, battery 8/8, demo GREEN at scale after canonical-pre-pass + trust-stored-eids identity fixes); A1 knee N*=256 (control-validated); B1 frozen-coords fail at small T0 (rule fired; fit-size confound; B1b queued). **P2 PASS COMPLETE (D92, 2026-07-27)** — everything the woolly-crafting-peach plan left open is closed. AI/ML slice ACCEPTED: 1,106 live claims (1 cross-paper contamination vetoed; 108 verb-pids normalized to P_ASSERTS), frozen 50-audit **0.82 [0.69–0.90] strict / 0.94 Sol** (agreement 0.840, κ 0.267 — raters agree on "asserted vs not", split entirely on dropped-qualifier strictness; threshold now recorded IN the labels file). HF inventory ACCEPTED: 602 live claims, **0.94 overall but card-CONTENT 0.914 [0.78–0.97] n=35** — the comparable number, since 15/50 sampled were free metadata claims (agreement 0.960, κ 0.645). **CITATION AXIS LIVE**: 3,840 P_CITES claims harvested mechanically from retained HTML (no fleet, no LLM), 555 in-corpus edges / 67 cited works, `KB.cited_by` gives evidence counts. **Store: 18,787 claims / 14,649 eids / 1,710 pages; battery 11/11; suite 55; demo GREEN.** Three mechanism fixes landed with it — (1) **a page's canonical form is its TITLE, not its identifier** (`page_title`/`object_page`: arXiv IDs defeated D82, one work cited by 33 papers minted 33 eids; now 1); (2) **an edit is source, not derived state** (`data/edits.jsonl` + `foundation replay-edits` — a shards-only rebuild silently discarded a user correction, caught by the battery); (3) `views` abstains instead of answering with an empty body. Tooling: adjudicator BATCHES rather than truncating (356k-char prompts; every item's evidence whole), `apply_vetoes.py` authoritative+idempotent, `rebuild_poc.sh` = the re-ingestion proof. **arxiv50 idx 37/27 CLOSED, no label change needed**: re-adjudicated under Sol with FULL abstracts, agreement 0.833→0.940, κ 0.264→0.540, **6 of 8 disagreements were manufactured by D86's 1,400-char truncation.** USER DECISIONS STILL QUEUED: B1b (refit T0 on 8k vectors); A2 acceptance run; GLiREL bakeoff go/no-go; T-REx adoption; 20k deep pass over new 800 pages. DONE MECHANICAL (D64): F4 train-only-bridge rerun, F5 3-phrasing sensitivity, F9 manifested regen of clean-regime/extract/contamination, 06-state consolidation. ✅ L1 core (D57/D58 PASS both settings) · D49 all 4 tests (aliases 1.000; ambiguity 1.000/0.000; edit parity 0.920 w/ subject-provenance rule) · v0.7 (D59: big_pop 1.000, runs-confusion closed, no regressions) · L4 answer surface (codec/answer.py) · L5 v4b (D60: views 0.970/0.920/0.000 as id-channel content; ALU 1.000; det-rel for compute phrasings 0.657 = v1 item; token hygiene constraint) · L6 CI live (.github/workflows/tests.yml, 28 tests) · L2 extraction via Haiku shards (step-recall 0.717, 2-hop coverage 0.567 = honest QA ceiling).
-✅ L2 qa → D61 (0.020; blocked on RELATION CANONICALIZATION — the v1 build item, symmetric twin of D49). ✅ L3 → D62 (K6 battery statistical parity at 1024-bit codes, 8ms vs 34ms, 32× smaller; 100k 24ms on CPU; registered 1M ≤50ms budget UNMET on CPU — GPU bench + J4/100k batteries owed (D62 provisional per D64/F6)).
-OPTIONAL LEFTOVERS (not blocking PoC planning): MQuAKE-T, 3-phrasing sensitivity, B1 single-hop recall, J2 decode-grade knee, pooled 107 world-build gaps.
-THEN: PoC planning session with the user (L7). Inputs ready: ingest (Haiku shards→registry→store), reason (v0.7+unification+walker), edit (supersession+provenance rule), views (source tokens), answer surface, PQ engine, CI, all measured.
-
-EXECUTION QUEUE TO PoC (user directive 2026-07-26: "work through everything on our plate up to the PoC, then we'll plan that together" — execute ALL below autonomously, stop before L7/PoC assembly which is planned WITH the user):
-1. ~~L1 core~~ ✅ D57/D58 — per-case fixed (0.683, edits' base facts were missing) + formal PASS both settings vs B1 (0.352 full-store reader; 0.040 pooled). L1 leftovers (optional tier): B1 single-hop recall for strong-pass gap; 3-phrasing sensitivity; MQuAKE-T; (b) fix the 107 world-build gaps (k6_build_world skips cases where len(new_triples_labeled) != len(new_single_hops) — include partial paths where fact keys resolve); (c) B1 single-hop edit recall for the strong-pass gap; (d) 3-phrasing sensitivity report; (e) MQuAKE-T run (secondary dataset, same pipeline).
-2. Loose ends: D49 test 3 (constructed ambiguity-honesty set: same-form same-type eids, both relation-supporting; flag ≥0.9, spurious ≤0.05) + test 4 (D33 edit-stress battery on eid store); regenerate NON-COLLIDING aliases (uniqueness-check the generator) and re-report; v0.7 detector (fix big_pop under-detection + "runs" mayor↔ceo confusion; acceptance = K5 frozen templates, close big_pop AND runs without regressions); J2 decode-grade knee (decoder_v2t EM through PQ/anchor ẑ at each bits level — completes D53's table).
-3. L2 ingest v0: passages → propositions → (s,r,o) + registry (document=batch); extractor via Bonsai-27B local (bonsai.sh, -st -no-cnv) or Haiku subagents; measure extraction quality on MuSiQue-answerable paragraphs before trusting; store ingest → answer MuSiQue 2-hop subset as acceptance.
-4. L3 store engine v2: PQ 1024-bit codes (J2b codebooks, K=256/subvec, S=128) + exact GPU top-k over codes; MemoryStore-compatible API; acceptance = J4 + K6 batteries reproduce within CI at 100k+ synthetic facts; latency ≤50ms/query at 1M.
-5. L4 NL answer surface: walked fact + question → one-sentence answer (template+object first; decoder_v2t optional); ambiguity/abstention phrased honestly ("Two entities named X..." / "The store has no...").
-6. L5 v4b world: Track F compute questions (delta/ratio/comparison over stored numbers → ALU at answer time) + Track I attributed conflicts & views (same fact, conflicting sources; views as additive score terms over ONE shared graph; D40 tiers operational). Gen via subagents; new decisions for each.
-7. L6 CI: .github/workflows/tests.yml (pytest, CPU-only). If push rejected for workflow scope, note in decisions and leave the file committed for the user to push.
-THEN STOP: present L7 PoC plan options to the user.
-
-OVERNIGHT 2026-07-26 (training pause HELD — all closed-form/inference): D49 BUILT + ACCEPTED (D52: path-collided 0.488→0.948, clean 0.978, entry-ambiguous flagged at 1.000 recall; batch-locality resolver v1.1 in codec/individuation.py); J2/J2b DONE (D53: sparse anchors fail in whitened space; PQ block-anchors give graded knees in registered order — detection lossless @512 bits, retrieval knee @1024; T6 quantified ~256-512 bits reasoning-grade); K6 PREP DONE (MQuAKE-CF-3k downloaded+verbalized from dataset clozes, 2915/3000 alias-bearing). TRAINING RESUMED 2026-07-26 morning ("Let's do it"). K6 IN FLIGHT: world_cf3k.json built (3,473 deduped facts / 9,000 singles / 9,000 hop-q / 36 rels; case-level 80/20 seed-0 split), embeddings cached (mquake_cf3k_emb.npz), heads trained (k6_det/ans.pt), PRE-EDIT pooled-store eval (results/k6_preedit.json): 2hop P@1 0.556, but 3hop 0.015 / 4hop 0.000 with abstain ~1.0 — DIAGNOSED+FIXED (det recall@4 was 0.92-0.99 — heads fine; feas cosine gate was the killer: sparse Wikidata profiles → 97% of gold 3-4hop chains under 0.35, median 0.062; FIX = co-occurrence link gate link_ok(A,B)=∃entity bridging obj(A)→subj(B) + entry_ok=subject-has-slot + max_k=4 cand_k=5, planner parameterized in v06_pipeline). RESULT: pre-edit pooled-store P@1 2hop 0.867 / 3hop 0.879 / 4hop 0.820 (abstain 0.08-0.16). NEXT: edits stage (supersede + post-edit eval, metric 1+3) + B1 baseline (BGE retrieve + Qwen3-0.6B read) per docs/09. ALIAS test 2: ratio 0.833 vs target 0.90 BUT ~half the misses are my truncation-aliases colliding with each other (resolver correctly returns 2 candidates → flagged); resolved-alias parity ≈ canonical — resolved in D59/D65, regenerate aliases non-colliding later. Edit-interaction (test 4) still pending.** Old note: (tiny core per B1; features = obs readouts + question gist + relation logits; BC on traces then per-step-reward refinement; targets = beat every oracle floor, esp. relation-inference [chains are GIVEN to the oracle, must be INFERRED by the policy], selective hand-off, learned abstain).
-5. Then per roadmap: cycle k>1, anchor sweep at scale, memory-addressing refinement using the confirmed operator inventory (valence = translation, role-swap = slot exchange, tense = bit flip, hedge = bit flip — D15/D18/D20). The reasoner-facing latent is now the working triple.
-
-## Instrument checks (run after touching the structure channel)
-
-| script | what it asserts | cost |
-|---|---|---|
-| `scripts/check_role_bits.py` | one proposition written 16 ways: 8 preserving constructions must produce identical bits; role-swap/tense/hedge must separate. Valence and added/dropped arguments are reported but **not** asserted (other channels' jobs / measured trade-offs). | seconds, CPU |
-| `scripts/check_structure_channel.py` | end-to-end through the public API on unseen text — the only path that doesn't read caches. Each mechanism must fire on the case it owns. Identity edits reported, not asserted. | ~1 min, GPU |
-
-Between them they caught three silent-corruption bugs during the D20 replication; see D20's plumbing notes.
-
-## Loose ends / known debt
-
-- `decoder_v1` stale; sparse-channel fixes (D10) unapplied.
-- v0 artifact names are reused by the rebuild pipeline — version before the cascade or the D10/D16/D20 numbers stop being reproducible.
-- Known limitation (accepted, D18): converse-predicate paraphrases legitimately flag as role-different.
-- Structure-channel margin is thin (+0.011 type-level); trust the pair-level AUC (0.942), and see queue item 3 for the principled widening.
-- **Cheapest remaining structure win**: ~2 points of parse noise on preserving types (active_passive 0.969, paraphrase 0.727) — head normalization or a stronger parser than `en_core_web_sm`. Run `scripts/check_role_bits.py` after any change to the extractor.
-- `scripts/validate_relation_pairs.py` — generated preserving pairs must be validated before use (the first nominalization batch had 118/120 rows with invented trailing facts; the recipe-driven regeneration passed 120/120).
-- Probe house rules standing (D8 + method notes): positive controls for fit-a-transform probes; per-channel shuffled attribution; noise reported as latent cosine; hold out whole categories; **and (new, D20) check that a guardrail matches the artifact's actual role — a retrieval guardrail on a comparison-time metric blocks the right answer.**
+- **If the reasoner design changes**, D158 is load-bearing: the store supplies
+  +0.515 and the walk +0.009, so anything replacing the *walk* has a low bar
+  and anything replacing the *store's role* has a very high one.
+- **If the codec leg is dropped**, the swap simplifies — dense-only stops
+  mattering and step 3 disappears.
+- **If the corpus changes**, every number in D164/D165 is one seed, one random
+  draw of 12 held-out relations, one corpus. The orderings are large enough to
+  survive noise; the magnitudes are not portable.
+- **The paper** (`docs/18`, `docs/19`) is current through D163 and describes
+  the **M3** stack. It does not mention the encoder work at all — deliberately,
+  since nothing has been adopted. If we pivot, the paper needs no retraction;
+  if we adopt Gemma, §1, §5b and §8 all move.
