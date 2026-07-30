@@ -40,8 +40,14 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from claimset import check_alignment, load_claims                 # noqa: E402
 
 ADJ = ROOT / "data" / "adjudication"
-RATERS = ["gpt-5.6-sol", "gemini-3.1-pro-preview", "grok-4.5", "claude-fable-5"]
-AUTHOR_FAMILY = {"claude-fable-5"}          # excluded from quorum, reported
+# Must match scripts/run_adjudication.sh. Three, deliberately odd: D154 showed
+# a fourth rater moves 1 verdict of 14 and only by turning a 2-of-4 majority
+# into a tie. The author's own family is the one dropped — under attack it
+# behaved like the others, so nothing measurable is lost, and under
+# verification it was the lenient outlier.
+RATERS = ["gpt-5.6-sol", "gemini-3.1-pro-preview", "grok-4.5"]
+AUTHOR_FAMILY: set[str] = set()      # no longer on the panel; kept for reruns
+                                     # against the archived 4-rater artifacts
 RUNS = ["1", "2", "3"]
 FLAG = {"REFUTABLE", "UNFALSIFIABLE"}       # anything that is not SURVIVES
 CLAIMS = load_claims()

@@ -30,7 +30,7 @@ would falsify it. A claim without its condition is not publishable.
 | 7 | Compression buys generalisation and costs **refusal** — not the accuracy of what it enables | one store, **one threshold rule for both arms** (law #6); phrasing leg still uncontrolled | novel-relation answering **0.005 → 0.742** while wrong moves only 0.153 → 0.167 — raw's low score is raw *refusing* (abstain 0.842). At matched coverage **+0.741 correct for +0.072 wrong**, a tenth of the gain; costs land on refusal (**−0.706** novel, **−0.569** known) and known answering (−0.141) (D125/D126 → **D159**) | **falsified if** the wrongness cost on the population it helps is commensurate with the gain there, or the refusal collapse disappears under matched tuning |
 | 8 | Alias supply explains **most** of retrieval's advantage over a parametric head — **and not all of it** | depth-1 relation identification, known relations; the plateau is measured on 8 high-alias relations only | gap 0.229 → 0.042 over 2→10 aliases (exp43, 34 rel); then **flat at ≈0.09** over 10→18 (exp51, 8 rel: 0.087 → 0.091, tail slope +0.0015/alias vs noise ±0.026); no head config reached 1-NN at 2 aliases — 0.691 vs 0.925 (exp49) (D139, D148, **D155**) | **falsified if** the gap resumes falling past 18 aliases, or a head reaches 1-NN at any supply. *"Not a permanent loss of information" was withdrawn at D155 when this falsifier was run — the head plateaus at 0.892 while 1-NN sits at 0.975 from two aliases onward.* |
 
-| 11* | Claim adjudication itself is noisy | two independent raters | Cohen's kappa **+0.333** (D140) | single-rater verdicts in D130/D135 were correspondingly noisier than they appeared |
+| 11 | Claim adjudication is noisy in a **specific** way: instability is one rater, and the two prompts disagree completely | a frozen prior round — 16 runs, 4 families, 3 adversarial repetitions each | flags per identical run **6/7/4** (range 3) against ranges of 1, 1, 2; verification flagged **0 of 14** at quorum where attack flagged **6 of 14**, two claims only by attack and one only by verification (D140 → **D154**) | **falsified if** within-rater variation is comparable across raters, or the two prompts flag overlapping sets |
 
 | 12 | Entities are free for the head and expensive for retrieval | subjects held out of training questions; claims remain in the store | head −0.029 (d1) / −0.010 (d2) / +0.001 (na); retrieval −0.328 / −0.288 (D149) | **falsified if** the head's gap exceeds 0.05 on any of the three *question* populations in this corpus — it did not on any; a second **corpus** was not tested |
 
@@ -48,11 +48,13 @@ in the narrative: D118's 0.970 came from a population that could not have
 produced a low number, which is exactly why the mixed benchmark (law #9)
 had to be built and why row 5b superseded it.
 
-`*` **row 11 is in the paper and has never been adjudicated, deliberately.**
-Its evidence is the behaviour of the adjudicators themselves, so judging it
-in the same run that generates its evidence would be circular. It is due to
-be judged in a later round against the frozen artifact this round produces,
-and until then it carries the mark rather than an implied clean bill.
+**Row 11 carried a `*` — "in the paper, never adjudicated" — until D160.** Its
+evidence is the behaviour of the adjudicators themselves, so judging it in the
+run that generated its evidence would have been circular. That round has now
+closed and frozen (`results/adjud_quorum.json`), so the claim is judged against
+a *prior* round and the mark is gone. The raters judging it are still the same
+families whose earlier behaviour it describes, which is a residual
+self-reference worth stating and not worth pretending away.
 
 ## Machine-readable claims (SINGLE SOURCE OF TRUTH)
 
@@ -349,6 +351,21 @@ test permits.
     [
      "results"
     ]
+   ]
+  ]
+ },
+ {
+  "row": "11",
+  "claim": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical run 6/7/4, range 3, against ranges of 1, 1 and 2 for the other three), and the two prompts disagree completely at quorum — verification flagged 0 of 14 while attack flagged 6 of 14, with two claims flagged only by attack and one only by verification.",
+  "scope": "measured on a FROZEN PRIOR ROUND (results/adjud_quorum.json, D154): 16 runs, four families, three adversarial repetitions per rater, per-rater majority before quorum. Judging this claim is no longer circular because the evidence is a round that has already closed — but the raters judging it ARE the same families whose earlier behaviour it describes, and that is disclosed rather than hidden. Cohen's kappa is not quoted: with skewed marginals it tracks the table's messiness rather than rater reliability. FALSIFIED IF within-rater variation is comparable across raters rather than concentrated, or if the two prompts flag overlapping sets",
+  "src": [
+   "results/adjud_quorum.json",
+   [
+    "stability",
+    "verification",
+    "flagged",
+    "quorum_raters",
+    "n_claims"
    ]
   ]
  },

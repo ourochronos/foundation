@@ -129,12 +129,15 @@ That number is conditional on honesty, and the store was not often honest: of
 the 1,179 questions it could not answer, it properly refused only **0.366**
 and confabulated the rest. Section 5 is about fixing that.
 
-**One caveat we owe the reader**, because an adversarial rater found it and we
-had not: the artifacts are frozen *by construction* in this experiment, but
-the fingerprint check that proves nothing mutated was run in a **separate**
-append experiment. Nothing rules out mutation during this one except the
-design of the code. Moving the check inside the update path is specified and
-unrun (D154).
+An adversarial rater found a gap here that we had not: the artifacts were
+frozen *by construction*, but the fingerprint proving nothing mutated came from
+a **separate** append experiment — an argument about code rather than a
+measurement of this run. The check now runs inside the update path, hashing
+basis, coordinates and head before and after; all three are identical and the
+script aborts otherwise. We then tested the guard by making it fire, since a
+check that has never failed carries no evidence: a perturbation of one part in
+a million flips the hash, the run aborts, and no results file is written
+(D157).
 
 **Revision.** Using MQuAKE-CF-3k's counterfactual rewrites applied through the
 store's real supersession path, on the benchmark's human-written questions
@@ -590,7 +593,12 @@ store, rather than merely can, rests on a comparison against one weak planner.
 And the 0.450 headline is a number we would like to be much larger before
 anyone depends on it.
 
-Four falsifiers named by adversarial raters are specified and unrun. We are
-reporting them here rather than waiting, because a paper that lists the
-experiments most likely to break it is more useful than one that runs them
-first and mentions only the survivors.
+Four falsifiers named by adversarial raters have since been run, and they are
+the reason several sections above read differently than they did a week ago.
+Two changed a claim outright — the alias curve plateaus, so retrieval's
+advantage is not purely data-efficiency; and a store-filtered planner matches
+the walker, so the walk need not be step-by-step. One relocated a claim's cost
+from accuracy to refusal. One turned a correlation into a mechanism. **Nothing
+we ran to satisfy an adversary left the claim it tested unchanged**, which is
+the most useful thing we can say about the practice of naming falsifiers and
+then running them.
