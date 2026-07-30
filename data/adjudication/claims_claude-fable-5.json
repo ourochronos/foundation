@@ -1,6 +1,6 @@
 {
  "audit": "claims",
- "model": "gemini-3.1-pro-preview",
+ "model": "claude-fable-5",
  "n": 14,
  "judged_claims": {
   "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
@@ -19,72 +19,65 @@
   "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
  },
  "n_judged": 14,
- "raw_agreement": 0.9285714285714286,
- "cohens_kappa": 0.0,
- "disagreements": [
-  {
-   "idx": 2,
-   "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "n_update_pairs is 1657, but the transition matrix only accounts for 1200, leaving 457 cases unaccounted for."
-  }
- ],
+ "raw_agreement": 1.0,
+ "cohens_kappa": 1.0,
+ "disagreements": [],
  "their_verdicts": {
   "0": {
    "verdict": "SUPPORTED",
-   "reason": "The basis, coords, and head fingerprints match exactly between at_freeze and after_append."
+   "reason": "Identical fingerprints (basis 45b33a69cfc76115, coords c662e0661ec21bea, head 79f87c5c5ba2639c) at freeze and after append, mechanical_check_passed=true, matching the stated scope."
   },
   "1": {
    "verdict": "SUPPORTED",
-   "reason": "The gaps between rebuilt and frozen exactly match the claimed penalties (+0.058 for entity, +0.191 for relation, +0.249 for d2)."
+   "reason": "Head d1: new-subject 0.9611-0.9033=+0.058, new-relation 0.9733-0.7822=+0.191; d2 0.7889-0.54=+0.249; KNN penalties +0.247/+0.771/+0.666 all match; falsifier conditions not triggered."
   },
   "2": {
-   "verdict": "OVERREACH",
-   "reason": "n_update_pairs is 1657, but the transition matrix only accounts for 1200, leaving 457 cases unaccounted for."
+   "verdict": "SUPPORTED",
+   "reason": "refused->correct=432 with no other refused-> outcomes (matrix sums to 1200); 21 prior-correct leaves 1179, 432/1179=0.366 matches learned_rate 0.36; scope caveats stated."
   },
   "3": {
    "verdict": "SUPPORTED",
-   "reason": "The counts 431, 1, 198, 150, and 82 perfectly match the rates 0.002, 0.459, 0.348, and 0.190."
+   "reason": "old->old=1 of 431 old-> cases (0.0023); revision_rate_all 0.4594; old->refuse 150/431=0.348, old->other 82/431=0.190; staleness far below both failure modes, single-edit 0.235 disclosed."
   },
   "4": {
    "verdict": "SUPPORTED",
-   "reason": "The revision and breakage rates for both conditions (0.469/0.274 and 0.733/0.077) exactly match the data."
+   "reason": "Rewrite-only revision 0.4687/broke 0.2738; rewrite+downstream 0.7332/broke 0.0766; breakage reduction 0.197 exactly as claimed, same n_was_old=431."
   },
   "5": {
    "verdict": "SUPPORTED",
-   "reason": "eval_d2_clean correct (0.9245) and train_d2 correct (0.9135) match the +0.011 margin for held-out pairs."
+   "reason": "eval_d2_clean 0.9245 vs train_d2 0.9135 = +0.011 in held-out favour, within the stated 0.02 margin; depth-3 break (0.6257 vs 0.6828) and exp18 0.5132 boundary both disclosed and match."
   },
   "6": {
    "verdict": "SUPPORTED",
-   "reason": "baseline correct (0.534) and held_out correct (0.912) match the stated improvement."
+   "reason": "Held-out walker correct 0.9123 (CI 0.9016-0.9219) vs D112 baseline 0.534, both present in the file; single-formulation scope stated."
   },
   "7": {
    "verdict": "SUPPORTED",
-   "reason": "zero_shot_depth answerable correct (0.849) and trained_on_3hop answerable correct (0.961) match the claim."
+   "reason": "Zero-shot 3-hop 0.8489 vs trained 0.9610 (gap 0.112 < 0.15 falsifier); depth-4 collapse 0.2886 raw / 0.1489 basis disclosed as scope limit."
   },
   "8": {
    "verdict": "SUPPORTED",
-   "reason": "5821 abstentions out of 6000 unanswerable questions exactly yields 0.970."
+   "reason": "5821/6000=0.970 (CI 0.9656-0.9742) matches; the scope explicitly confines it to chain-break/sparse population and cites the 0.050 mixed-benchmark failure, so no overreach as scoped."
   },
   "9": {
    "verdict": "SUPPORTED",
-   "reason": "not_applicable refusal (0.050 to 0.693) and ans_d1 wrong (0.118 to 0.045) exactly match the measured gate_off/gate_on numbers."
+   "reason": "not_applicable refusal 0.05->0.6933, ans_d1 wrong 0.1183->0.045; correct drop 0.875->0.765 (0.110), answered drop 0.9933->0.81 (0.183), d2 wrong 0.175->0.1017, ceiling 0.965 all match."
   },
   "10": {
    "verdict": "SUPPORTED",
-   "reason": "The correlations -0.7881, -0.8342, and -0.9139 match the claimed -0.79, -0.83, and -0.91."
+   "reason": "Correlations -0.7881, -0.8342, -0.9139 match the three populations; claim scoped as correlation not mechanism, with the 1.390 vs 1.198 gain overlap disclosed."
   },
   "11": {
    "verdict": "SUPPORTED",
-   "reason": "The performance pairs 0.293->0.742, 0.149->0.313, 0.036->0.245, and 0.289->0.149 accurately reflect the raw/D127 to basis transitions."
+   "reason": "Novel-relation 0.2934->0.7419 (thr 0.6), phrasing 0.1493->0.3129 with wrong 0.0365->0.2451, depth-4 0.2886->0.1489; cross-experiment descriptive scope explicitly stated."
   },
   "12": {
    "verdict": "SUPPORTED",
-   "reason": "Gaps of 0.229 at 2 aliases and 0.042 at 10 aliases, plus the 0.691 vs 0.925 ceiling in exp49, exactly match the data."
+   "reason": "Gap 0.9525-0.7231=0.229 at 2 aliases shrinking monotonically to 0.9745-0.9327=0.042 at 10; exp49 best head 0.6914 vs 1-NN 0.9255; scope explicitly labels the information-preservation reading as infere"
   },
   "13": {
    "verdict": "SUPPORTED",
-   "reason": "The drops from 0.795 to 0.766 for the head and 0.854 to 0.526 for knn match the d1_seen/d1_held figures."
+   "reason": "d1 head 0.7662 held vs 0.795 seen (gap -0.0288), knn 0.8538->0.5262; all three head gaps (-0.0288, -0.01, +0.0012) under the 0.05 falsifier; single-corpus limit stated."
   }
  },
  "my_labels": {

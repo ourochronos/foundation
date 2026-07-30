@@ -1,0 +1,124 @@
+{
+ "audit": "attack_r1",
+ "model": "grok-4.5",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is availabl",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "9": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "10": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.7",
+  "11": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293",
+  "12": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.7142857142857143,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Own falsifier is any path-planning formulation hitting 0.912 on same pairs; only D112 at 0.534 was shown, so that falsifier is not ruled out."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Headline \u2018system refuses unanswerables\u2019 is already conceded false on mixed data; scope shrinks to the one sparse chain-break slice where 0.970 was observed, absorbing every counterexample."
+  },
+  {
+   "idx": 10,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Stated falsifier (correlation vanishes when branching varies but confusability does not) is admitted via D137; \u2018density\u2019 then renames the claim without a density measure that survives that case."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Scope calls it a post-hoc pattern across corpora, not a tested prediction; falsifier \u2018wins on both axes\u2019 was never designed for, so no result can break the fitted story."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any of basis/coords/head fingerprints differ after append. Evidence shows exact identity on all three; scope is that mechanical check."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifiers given (entity penalty > relation at d1, or d2 penalty < 0.10) are concrete and ruled out by 0.058 < 0.191 and d2 \u0394\u22480.249; scope (head-only, one ratio) is a real limit."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any prior-refuse case not correct after update. Matrix reports refused\u2192correct=432 with no refuse\u2192other cell; 432/1179 and 21/1200 also match the same table."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: staleness \u2265 refusal or wrong among prior-old (431). Observed 1/431 stale vs 150 refuse and 82 other; scope keeps the one stale case visible."
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: downstream edges fail to cut breakage. Breakage 0.274\u21920.077 (\u0394\u22480.197) on same n_was_old=431; direct within-experiment contrast."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: |held\u2212train| d2 gap > 0.02. Measured +0.011 within margin; scope honestly excludes d3 and the 5-relation failure."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Own falsifier is any path-planning formulation hitting 0.912 on same pairs; only D112 at 0.534 was shown, so that falsifier is not ruled out."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: zero-shot 3-hop >0.15 below trained. Gap\u22480.112; scope admits d4 refutation and answering-only, so the restriction is real."
+  },
+  "8": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Headline \u2018system refuses unanswerables\u2019 is already conceded false on mixed data; scope shrinks to the one sparse chain-break slice where 0.970 was observed, absorbing every counterexample."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gate fails to lift NA refusal or cut d1 wrongness as stated. NA 0.05\u21920.693 and ans wrong 0.118\u21920.045 are directly measured."
+  },
+  "10": {
+   "verdict": "REFUTABLE",
+   "reason": "Stated falsifier (correlation vanishes when branching varies but confusability does not) is admitted via D137; \u2018density\u2019 then renames the claim without a density measure that survives that case."
+  },
+  "11": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Scope calls it a post-hoc pattern across corpora, not a tested prediction; falsifier \u2018wins on both axes\u2019 was never designed for, so no result can break the fitted story."
+  },
+  "12": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifiers: gap stops shrinking with aliases, or some 2-alias head reaches 1-NN. Curve 0.229\u21920.042 and exp49 best 0.691<0.925 rule both out; residual-gap hedge is honest."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head |held\u2212seen| gap >0.05 on d1/d2/NA. Gaps \u22120.029/\u22120.010/+0.001 all inside; knn collapse is large; scope (question holdout, one corpus) is real."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

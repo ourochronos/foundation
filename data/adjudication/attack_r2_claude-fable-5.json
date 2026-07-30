@@ -1,0 +1,124 @@
+{
+ "audit": "attack_r2",
+ "model": "claude-fable-5",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is availabl",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "9": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "10": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.7",
+  "11": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293",
+  "12": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.7142857142857143,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The headline 'the system refuses rather than guessing on unanswerables' is falsified by the supplied exp39 data itself (not-applicable refusal 0.050). The scope condition admits the population is unre"
+  },
+  {
+   "idx": 10,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The falsifier I had in mind \u2014 correlation vanishes where branching varies but confusability doesn't \u2014 was FOUND (D137) and absorbed by renaming the claim from 'options' to 'density'. Three correlation"
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: a representation that wins on both generalisation and precision at once. The scope itself concedes no experiment was designed to look for one and the pattern is fitted post hoc across three"
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The measured parts hold (monotone gap shrink 0.229->0.042; no exp49 head config reaches 1-NN). But the actual claim \u2014 'not a permanent loss of information' \u2014 requires the gap to reach zero or the curv"
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any fingerprint (basis/coords/head) differs after append. All three are byte-identical across an append of 15 relations and 652 subjects, and the scope claims only mechanical invariance, no"
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Explicit numeric falsifiers (entity penalty > relation penalty at d1; d2 penalty < 0.10) are real: measured 0.058 < 0.191 and 0.249 > 0.10. The 'parametric head only' scope is honest work since kNN nu"
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any refused->wrong or refused->refused entry in the matrix. There are none (432/432). The conditional-on-honest-refusal caveat is a real restriction because the 0.366 refusal rate that limi"
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: staleness (old->old) exceeding refusal or wrong as a failure mode. Measured 1 vs 150 refuse and 82 other \u2014 decisively ruled out. The claim reports its own worst case (single-edit 0.235 revi"
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: downstream edges fail to reduce breakage. Breakage fell 0.274->0.077 and revision rose 0.469->0.733 on the same 431 cases with the same frozen head. Note stale rose 0.002->0.014, which is v"
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: depth-2 held-out vs trained gap >0.02 either direction. Measured +0.011 in held-out favour, n=2636 with shuffled/random controls near zero. The scope's admission that the property dies at d"
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "The core existence claim \u2014 walker reaches 0.912 held-out vs planner's 0.534 on the same questions \u2014 could have failed (walker \u2264 baseline) and did not, CI [0.902, 0.922]. Scope correctly disclaims the "
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: zero-shot d3 trailing trained d3 by >0.15; measured gap 0.112. Borderline: the 0.15 threshold smells post-hoc and trained n=77 is thin, but the claim explicitly reports its own refutation a"
+  },
+  "8": {
+   "verdict": "REFUTABLE",
+   "reason": "The headline 'the system refuses rather than guessing on unanswerables' is falsified by the supplied exp39 data itself (not-applicable refusal 0.050). The scope condition admits the population is unre"
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gate fails to raise not-applicable refusal or fails to cut answerable wrongness. Both measured directly on-vs-off on the same populations (0.05->0.693, 0.118->0.045), and the answerable cos"
+  },
+  "10": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The falsifier I had in mind \u2014 correlation vanishes where branching varies but confusability doesn't \u2014 was FOUND (D137) and absorbed by renaming the claim from 'options' to 'density'. Three correlation"
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: a representation that wins on both generalisation and precision at once. The scope itself concedes no experiment was designed to look for one and the pattern is fitted post hoc across three"
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "The measured parts hold (monotone gap shrink 0.229->0.042; no exp49 head config reaches 1-NN). But the actual claim \u2014 'not a permanent loss of information' \u2014 requires the gap to reach zero or the curv"
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head gap >0.05 on any of the three question populations. Measured -0.029/-0.010/+0.001 vs kNN's -0.328 \u2014 a strong double dissociation. The 'held out of training questions only' scope is dis"
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

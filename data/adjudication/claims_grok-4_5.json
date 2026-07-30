@@ -1,6 +1,6 @@
 {
  "audit": "claims",
- "model": "gpt-5.6-sol",
+ "model": "grok-4.5",
  "n": 14,
  "judged_claims": {
   "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
@@ -19,84 +19,78 @@
   "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
  },
  "n_judged": 14,
- "raw_agreement": 0.7857142857142857,
+ "raw_agreement": 0.8571428571428571,
  "cohens_kappa": 0.0,
  "disagreements": [
   {
-   "idx": 6,
+   "idx": 9,
    "mine": "SUPPORTED",
    "theirs": "OVERREACH",
-   "their_reason": "The 0.534-to-0.912 comparison is measured, but the supplied numbers identify only one hops world, not the stated two-corpus scope."
-  },
-  {
-   "idx": 8,
-   "mine": "SUPPORTED",
-   "theirs": "OVERREACH",
-   "their_reason": "The sparse chain-break result is 5821/6000=0.9702, but the scope's contrasting mixed-benchmark figure of 0.050 is absent from this item's numbers."
+   "their_reason": "0.118\u21920.045 is ans_d1.wrong only; ans_d2.wrong is 0.175\u21920.102 \u2014 claim states bare 'answerable wrongness' without depth-1."
   },
   {
    "idx": 12,
    "mine": "SUPPORTED",
    "theirs": "OVERREACH",
-   "their_reason": "The gaps shrink from 0.2294 to 0.0418 and the best tested head is 0.6914 versus 1-NN at 0.9255, but a residual gap remains, so no permanent information loss is not established."
+   "their_reason": "Gaps 0.9525\u22120.7231=0.229 and 0.9745\u22120.9327=0.042 and best_head 0.691 vs 0.926 hold, but residual 0.042 blocks 'not a permanent loss of information'."
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SUPPORTED",
-   "reason": "All three fingerprints are byte-identical before and after appending 15 relations and 652 subjects."
+   "reason": "mechanical_check_passed true; basis/coords/head fingerprints identical at_freeze vs after_append (45b33a69\u2026/c662e066\u2026/79f87c5c\u2026)."
   },
   "1": {
    "verdict": "SUPPORTED",
-   "reason": "Head penalties are 0.0578 for new subjects, 0.1911 for new relations, and 0.2489 at depth 2; retrieval penalties are 0.2467, 0.7711, and 0.6656."
+   "reason": "Head penalties rebuilt\u2212frozen: subj 0.9611\u22120.9033=0.058, rel 0.9733\u22120.7822=0.191, d2 0.7889\u22120.54=0.249; knn +0.247/+0.771/+0.666."
   },
   "2": {
    "verdict": "SUPPORTED",
-   "reason": "All 432 prior refusals became correct; prior unanswerables total 1179, so 432/1179=0.366, with 21 initially correct."
+   "reason": "refused\u2192correct 432 with no other refused\u2192* row \u21d2 432/432=1.000; 715+32+432=1179, 432/1179=0.366; correct\u2192*=20+1=21 of 1200."
   },
   "3": {
    "verdict": "SUPPORTED",
-   "reason": "Among 431 old-answering cases, 1 stayed old, 198 revised, 150 refused, and 82 produced other answers."
+   "reason": "old\u2192* =198+150+1+82=431; old\u2192old 1/431=0.002; revision_rate_all 0.459; refuse 150/431=0.348 > other 82/431=0.190 > stale."
   },
   "4": {
    "verdict": "SUPPORTED",
-   "reason": "Revision rises from 0.4687 to 0.7332 while breakage falls from 0.2738 to 0.0766, a 0.1972 reduction."
+   "reason": "rewrite only revision 0.469 broke 0.274; +downstream revision 0.733 broke 0.077; breakage drop 0.274\u22120.077=0.197."
   },
   "5": {
    "verdict": "SUPPORTED",
-   "reason": "At 61 relations, held-out depth-2 accuracy is 0.9245 versus 0.9135 trained, a +0.0110 difference; the stated depth-3 limitation is also present."
+   "reason": "eval_d2_clean 0.9245 vs train_d2 0.9135 (\u0394+0.011\u22640.02); d3 gap 0.057; exp18 D order held_out 0.513 vs seen 1.0; n_relations 61."
   },
   "6": {
-   "verdict": "OVERREACH",
-   "reason": "The 0.534-to-0.912 comparison is measured, but the supplied numbers identify only one hops world, not the stated two-corpus scope."
+   "verdict": "SUPPORTED",
+   "reason": "selected.held_out.correct 0.912 vs baseline_d112_path_planner.correct 0.534."
   },
   "7": {
    "verdict": "SUPPORTED",
-   "reason": "Zero-shot 3-hop accuracy is 0.8489 versus 0.9610 with 3-hop training, a 0.1121 gap; depth-4 accuracy is only 0.2886 raw and 0.1489 with the basis."
+   "reason": "zero_shot answerable.correct 0.849 vs trained_on_3hop 0.961 (\u03940.112\u22640.15); exp32 d4 raw 0.289 basis 0.149."
   },
   "8": {
-   "verdict": "OVERREACH",
-   "reason": "The sparse chain-break result is 5821/6000=0.9702, but the scope's contrasting mixed-benchmark figure of 0.050 is absent from this item's numbers."
+   "verdict": "SUPPORTED",
+   "reason": "unanswerable.abstain 5821 of n_unanswerable 6000 = 0.970."
   },
   "9": {
-   "verdict": "SUPPORTED",
-   "reason": "The gate changes not-applicable refusal from 0.0500 to 0.6933 and depth-1 wrongness from 0.1183 to 0.0450."
+   "verdict": "OVERREACH",
+   "reason": "0.118\u21920.045 is ans_d1.wrong only; ans_d2.wrong is 0.175\u21920.102 \u2014 claim states bare 'answerable wrongness' without depth-1."
   },
   "10": {
    "verdict": "SUPPORTED",
-   "reason": "The three reported branching-versus-refusal correlations are -0.7881, -0.8342, and -0.9139, matching the claim and its correlational scope."
+   "reason": "corr_branching_vs_refusal \u22120.7881, \u22120.8342, \u22120.9139 \u2248 \u22120.79/\u22120.83/\u22120.91; margin_separation 0.143."
   },
   "11": {
    "verdict": "SUPPORTED",
-   "reason": "The reported transitions match: relation accuracy 0.2934 to 0.7419, phrasing accuracy 0.1493 to 0.3129, phrasing wrongness 0.0365 to 0.2451, and depth-4 accuracy 0.2886 to 0.1489."
+   "reason": "novel_d1 0.293\u21920.742 (thr 0.6); phrasing 0.149\u21920.313 wrong 0.036\u21920.245; d4 clean 0.289\u21920.149."
   },
   "12": {
    "verdict": "OVERREACH",
-   "reason": "The gaps shrink from 0.2294 to 0.0418 and the best tested head is 0.6914 versus 1-NN at 0.9255, but a residual gap remains, so no permanent information loss is not established."
+   "reason": "Gaps 0.9525\u22120.7231=0.229 and 0.9745\u22120.9327=0.042 and best_head 0.691 vs 0.926 hold, but residual 0.042 blocks 'not a permanent loss of information'."
   },
   "13": {
    "verdict": "SUPPORTED",
-   "reason": "Depth-1 head accuracy falls only 0.0288, from 0.7950 to 0.7662, while retrieval falls 0.3276, from 0.8538 to 0.5262; other head gaps remain within 0.05."
+   "reason": "d1 head 0.766 vs 0.795; knn 0.854\u21920.526; gaps \u22120.029/\u22120.010/+0.001 all \u22640.05."
   }
  },
  "my_labels": {

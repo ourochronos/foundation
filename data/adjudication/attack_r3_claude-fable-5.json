@@ -1,0 +1,136 @@
+{
+ "audit": "attack_r3",
+ "model": "claude-fable-5",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is availabl",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "9": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "10": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.7",
+  "11": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293",
+  "12": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.5714285714285714,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: the update silently refit artifacts, making 'the store learns' trivially true. Frozenness is 'by construction' here; the fingerprint verification is borrowed from a DIFFERENT run (exp36), s"
+  },
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: a path-planning formulation reaches 0.912 on the same held-out pairs. Only ONE planner (D112, 0.534) was tested; the space of planners is not ruled out, so 'from the store RATHER THAN from "
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: refusal on unanswerables generally is far below 0.970 \u2014 and item 9's mixed benchmark shows exactly that (0.050 not-applicable refusal pre-gate). The general claim 'refuses rather than guess"
+  },
+  {
+   "idx": 10,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The stated falsifier (correlation vanishes when branching varies but confusability doesn't) was OBSERVED by D137 \u2014 and the claim was then reworded from 'options' to 'density' specifically to survive i"
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The scope concedes this is 'a pattern fitted to results rather than a prediction tested against them': three experiments on different corpora, none testing both halves, none designed to find a both-ax"
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The measured sub-claims hold (gap shrinks monotonically 0.229->0.042; no 2-alias head reaches 1-NN). But the headline \u2014 'not a permanent loss of information' \u2014 is an extrapolation the scope admits is "
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any fingerprint (basis/coords/head) differs after append. All three hashes are byte-identical, directly ruling it out. Claim is narrow ('mechanically reindex-free') and honestly excludes be"
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier stated: entity penalty > relation penalty at d1, or d2 penalty < 0.10. Measured: 0.058 < 0.191 and 0.249 > 0.10. Scope honestly discloses that retrieval is worse everywhere and near-free fai"
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: the update silently refit artifacts, making 'the store learns' trivially true. Frozenness is 'by construction' here; the fingerprint verification is borrowed from a DIFFERENT run (exp36), s"
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: staleness exceeds refusal or wrongness as failure mode. Measured: 1/431 stale vs 150 refuse, 82 other \u2014 decisively ruled out. Claim honestly reports revision at only 0.459 and 0.235 single-"
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: downstream edges fail to reduce breakage. Measured reduction 0.274->0.077 on identical cases and head, within-experiment. Concrete, could easily have gone the other way, didn't."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: depth-2 held-out/trained gap >0.02 either direction. Measured +0.011. The scope is a real restriction (61 relations, depth 2, pair-clean) that honestly reports its own boundary failures (5-"
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: a path-planning formulation reaches 0.912 on the same held-out pairs. Only ONE planner (D112, 0.534) was tested; the space of planners is not ruled out, so 'from the store RATHER THAN from "
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: zero-shot 3-hop below trained by >0.15. Measured gap 0.112, ruled out (though the 0.15 threshold sits suspiciously just above the observed gap). Scope is a real restriction: it openly repor"
+  },
+  "8": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: refusal on unanswerables generally is far below 0.970 \u2014 and item 9's mixed benchmark shows exactly that (0.050 not-applicable refusal pre-gate). The general claim 'refuses rather than guess"
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gate fails to lift NA refusal or fails to cut answerable wrongness. Measured 0.05->0.693 and 0.118->0.045; the costs (correct -0.110 at d1, ceiling 0.965) are disclosed rather than absorbed"
+  },
+  "10": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The stated falsifier (correlation vanishes when branching varies but confusability doesn't) was OBSERVED by D137 \u2014 and the claim was then reworded from 'options' to 'density' specifically to survive i"
+  },
+  "11": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The scope concedes this is 'a pattern fitted to results rather than a prediction tested against them': three experiments on different corpora, none testing both halves, none designed to find a both-ax"
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "The measured sub-claims hold (gap shrinks monotonically 0.229->0.042; no 2-alias head reaches 1-NN). But the headline \u2014 'not a permanent loss of information' \u2014 is an extrapolation the scope admits is "
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head gap >0.05 on any of the three question populations. Measured -0.029, -0.010, +0.001 \u2014 all ruled out, while retrieval's 0.328 drop shows the falsifier had teeth. Scope condition (subjec"
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

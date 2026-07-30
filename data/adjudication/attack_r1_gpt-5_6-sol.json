@@ -1,0 +1,136 @@
+{
+ "audit": "attack_r1",
+ "model": "gpt-5.6-sol",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is availabl",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "9": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "10": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.7",
+  "11": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293",
+  "12": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.5714285714285714,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 0,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A fitted artifact other than basis, coordinates, or head weights changing on append would falsify 'no fitted artifact'; only those three are fingerprinted."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Same-run fitted-artifact fingerprints changing would falsify the attribution to store-only learning; fingerprints come only from a separate experiment."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A paired comparison differing only in downstream edges could show no breakage reduction; differing edit and ambiguity counts mean this evidence does not isolate that intervention."
+  },
+  {
+   "idx": 7,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A matched-question zero-shot versus trained comparison with a gap above 0.15 would falsify it; the reported groups differ sharply in size and definition."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "A representation winning both generalisation and precision would falsify the tradeoff, but the scope retreats to three post-hoc, cross-corpus experiments that never measure both axes together."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A persistent positive gap beyond 10 aliases would falsify the claim that alias supply explains the disadvantage; a shrinking but still nonzero curve does not rule that out."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "REFUTABLE",
+   "reason": "A fitted artifact other than basis, coordinates, or head weights changing on append would falsify 'no fitted artifact'; only those three are fingerprinted."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Entity penalty exceeding relation penalty at depth 1, or depth-2 penalty below 0.10, would falsify it; the scoped measurements rule both out."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "Same-run fitted-artifact fingerprints changing would falsify the attribution to store-only learning; fingerprints come only from a separate experiment."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Old-answer persistence exceeding refusal or other wrong answers would falsify it; 1 stale case versus 150 refusals and 82 other answers rules that out."
+  },
+  "4": {
+   "verdict": "REFUTABLE",
+   "reason": "A paired comparison differing only in downstream edges could show no breakage reduction; differing edit and ambiguity counts mean this evidence does not isolate that intervention."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "A depth-2 held-out/trained gap above 0.02 at 61 relations would falsify it; the measured gap is 0.011."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Failure of the specified walker to beat the same-question planner would falsify the stated result; 0.912 versus 0.534 rules it out within the narrow formulation."
+  },
+  "7": {
+   "verdict": "REFUTABLE",
+   "reason": "A matched-question zero-shot versus trained comparison with a gap above 0.15 would falsify it; the reported groups differ sharply in size and definition."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Refusal materially below 0.970 on the scoped sparse chain-break population would falsify it; 5821 of 6000 rules that out."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Failure to raise not-applicable refusal or reduce answerable wrongness would falsify it; both scoped before/after measurements move as claimed."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Nonnegative or absent within-population branching/refusal correlations would falsify it; all three measured correlations are strongly negative."
+  },
+  "11": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "A representation winning both generalisation and precision would falsify the tradeoff, but the scope retreats to three post-hoc, cross-corpus experiments that never measure both axes together."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "A persistent positive gap beyond 10 aliases would falsify the claim that alias supply explains the disadvantage; a shrinking but still nonzero curve does not rule that out."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "A head gap above 0.05 in any scoped population would falsify 'free'; all three within-corpus gaps remain below that threshold while retrieval drops substantially."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

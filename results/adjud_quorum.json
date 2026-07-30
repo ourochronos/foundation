@@ -1,0 +1,545 @@
+{
+ "n_claims": 14,
+ "claims": [
+  "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new relation +0.191. At DEPTH 2 the penalty is +0.249 and 'near-free' does not hold at all.",
+  "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable. Both figures derive from the transition matrix.",
+  "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of 431 previously-old-answering cases stays old (0.002). Revision is 0.459; the dominant failure is refusal (0.348) and wrong answers (0.190), not staleness.",
+  "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editing it AND supplying the edges its new target needs revises 0.733 with 0.077.",
+  "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pairs' 0.9135, a difference of +0.011 in the held-out pairs' FAVOUR.",
+  "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is available next takes held-out composition accuracy from 0.534 to 0.912.",
+  "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.961 when 3-hop IS trained.",
+  "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answerable wrongness from 0.118 to 0.045.",
+  "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.79, -0.83 and -0.91 across three unanswerable populations.",
+  "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293 -> 0.742 and novel-PHRASING 0.149 -> 0.313, while raising phrasing wrongness 0.036 -> 0.245 and dropping depth-4 answering 0.289 -> 0.149.",
+  "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.042 at 10, so the head's disadvantage is alias supply and not a permanent loss of information. On a second population no head configuration at 2 aliases (512-2048 hidden, three objectives) reached 1-NN \u2014 best 0.691 vs 0.925.",
+  "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against seen subjects' 0.795 at depth 1, while retrieval drops from 0.854 to 0.526."
+ ],
+ "excluded_artifacts": [],
+ "raters": [
+  "gpt-5.6-sol",
+  "gemini-3.1-pro-preview",
+  "grok-4.5",
+  "claude-fable-5"
+ ],
+ "quorum_raters": [
+  "gpt-5.6-sol",
+  "gemini-3.1-pro-preview",
+  "grok-4.5"
+ ],
+ "author_family_excluded": [
+  "claude-fable-5"
+ ],
+ "stability": {
+  "gpt-5.6-sol": {
+   "n_runs": 3,
+   "flags_per_run": [
+    6,
+    7,
+    4
+   ],
+   "range": 3,
+   "votes": true,
+   "split": 1,
+   "unanimous": 9,
+   "majority": 4
+  },
+  "gemini-3.1-pro-preview": {
+   "n_runs": 3,
+   "flags_per_run": [
+    5,
+    5,
+    6
+   ],
+   "range": 1,
+   "votes": true,
+   "unanimous": 12,
+   "majority": 2
+  },
+  "grok-4.5": {
+   "n_runs": 3,
+   "flags_per_run": [
+    4,
+    5,
+    5
+   ],
+   "range": 1,
+   "votes": true,
+   "unanimous": 12,
+   "majority": 2
+  },
+  "claude-fable-5": {
+   "n_runs": 3,
+   "flags_per_run": [
+    5,
+    4,
+    6
+   ],
+   "range": 2,
+   "votes": true,
+   "unanimous": 9,
+   "majority": 5
+  }
+ },
+ "attack_table": [
+  {
+   "idx": 0,
+   "claim": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+   "per_rater": {
+    "gpt-5.6-sol": "SPLIT",
+    "gemini-3.1-pro-preview": "SURVIVES",
+    "grok-4.5": "SURVIVES"
+   },
+   "n_flagging": 0,
+   "quorum": "SURVIVES",
+   "author_family": "SURVIVES"
+  },
+  {
+   "idx": 1,
+   "claim": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new relation +0.191. At DEPTH 2 the penalty is +0.249 and 'near-free' does not hold at all.",
+   "per_rater": {
+    "gpt-5.6-sol": "SURVIVES",
+    "gemini-3.1-pro-preview": "SURVIVES",
+    "grok-4.5": "SURVIVES"
+   },
+   "n_flagging": 0,
+   "quorum": "SURVIVES",
+   "author_family": "SURVIVES"
+  },
+  {
+   "idx": 2,
+   "claim": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable. Both figures derive from the transition matrix.",
+   "per_rater": {
+    "gpt-5.6-sol": "REFUTABLE",
+    "gemini-3.1-pro-preview": "SURVIVES",
+    "grok-4.5": "REFUTABLE"
+   },
+   "n_flagging": 2,
+   "quorum": "FLAGGED",
+   "author_family": "SURVIVES"
+  },
+  {
+   "idx": 3,
+   "claim": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of 431 previously-old-answering cases stays old (0.002). Revision is 0.459; the dominant failure is refusal (0.348) and wrong answers (0.190), not staleness.",
+   "per_rater": {
+    "gpt-5.6-sol": "SURVIVES",
+    "gemini-3.1-pro-preview": "SURVIVES",
+    "grok-4.5": "SURVIVES"
+   },
+   "n_flagging": 0,
+   "quorum": "SURVIVES",
+   "author_family": "SURVIVES"
+  },
+  {
+   "idx": 4,
+   "claim": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editing it AND supplying the edges its new target needs revises 0.733 with 0.077.",
+   "per_rater": {
+    "gpt-5.6-sol": "REFUTABLE",
+    "gemini-3.1-pro-preview": "SURVIVES",
+    "grok-4.5": "SURVIVES"
+   },
+   "n_flagging": 1,
+   "quorum": "SURVIVES",
+   "author_family": "SURVIVES"
+  },
+  {
+   "idx": 5,
+   "claim": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pairs' 0.9135, a difference of +0.011 in the held-out pairs' FAVOUR.",
+   "per_rater": {
+    "gpt-5.6-sol": "SURVIVES",
+    "gemini-3.1-pro-preview": "SURVIVES",
+    "grok-4.5": "SURVIVES"
+   },
+   "n_flagging": 0,
+   "quorum": "SURVIVES",
+   "author_family": "SURVIVES"
+  },
+  {
+   "idx": 6,
+   "claim": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is available next takes held-out composition accuracy from 0.534 to 0.912.",
+   "per_rater": {
+    "gpt-5.6-sol": "REFUTABLE",
+    "gemini-3.1-pro-preview": "REFUTABLE",
+    "grok-4.5": "REFUTABLE"
+   },
+   "n_flagging": 3,
+   "quorum": "FLAGGED",
+   "author_family": "REFUTABLE"
+  },
+  {
+   "idx": 7,
+   "claim": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.961 when 3-hop IS trained.",
+   "per_rater": {
+    "gpt-5.6-sol": "REFUTABLE",
+    "gemini-3.1-pro-preview": "SURVIVES",
+    "grok-4.5": "SURVIVES"
+   },
+   "n_flagging": 1,
+   "quorum": "SURVIVES",
+   "author_family": "SURVIVES"
+  },
+  {
+   "idx": 8,
+   "claim": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+   "per_rater": {
+    "gpt-5.6-sol": "SURVIVES",
+    "gemini-3.1-pro-preview": "UNFALSIFIABLE",
+    "grok-4.5": "UNFALSIFIABLE"
+   },
+   "n_flagging": 2,
+   "quorum": "FLAGGED",
+   "author_family": "REFUTABLE"
+  },
+  {
+   "idx": 9,
+   "claim": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answerable wrongness from 0.118 to 0.045.",
+   "per_rater": {
+    "gpt-5.6-sol": "SURVIVES",
+    "gemini-3.1-pro-preview": "SURVIVES",
+    "grok-4.5": "SURVIVES"
+   },
+   "n_flagging": 0,
+   "quorum": "SURVIVES",
+   "author_family": "SURVIVES"
+  },
+  {
+   "idx": 10,
+   "claim": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.79, -0.83 and -0.91 across three unanswerable populations.",
+   "per_rater": {
+    "gpt-5.6-sol": "SURVIVES",
+    "gemini-3.1-pro-preview": "REFUTABLE",
+    "grok-4.5": "REFUTABLE"
+   },
+   "n_flagging": 2,
+   "quorum": "FLAGGED",
+   "author_family": "UNFALSIFIABLE"
+  },
+  {
+   "idx": 11,
+   "claim": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293 -> 0.742 and novel-PHRASING 0.149 -> 0.313, while raising phrasing wrongness 0.036 -> 0.245 and dropping depth-4 answering 0.289 -> 0.149.",
+   "per_rater": {
+    "gpt-5.6-sol": "REFUTABLE",
+    "gemini-3.1-pro-preview": "REFUTABLE",
+    "grok-4.5": "UNFALSIFIABLE"
+   },
+   "n_flagging": 3,
+   "quorum": "FLAGGED",
+   "author_family": "REFUTABLE"
+  },
+  {
+   "idx": 12,
+   "claim": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.042 at 10, so the head's disadvantage is alias supply and not a permanent loss of information. On a second population no head configuration at 2 aliases (512-2048 hidden, three objectives) reached 1-NN \u2014 best 0.691 vs 0.925.",
+   "per_rater": {
+    "gpt-5.6-sol": "REFUTABLE",
+    "gemini-3.1-pro-preview": "REFUTABLE",
+    "grok-4.5": "SURVIVES"
+   },
+   "n_flagging": 2,
+   "quorum": "FLAGGED",
+   "author_family": "REFUTABLE"
+  },
+  {
+   "idx": 13,
+   "claim": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against seen subjects' 0.795 at depth 1, while retrieval drops from 0.854 to 0.526.",
+   "per_rater": {
+    "gpt-5.6-sol": "SURVIVES",
+    "gemini-3.1-pro-preview": "SURVIVES",
+    "grok-4.5": "SURVIVES"
+   },
+   "n_flagging": 0,
+   "quorum": "SURVIVES",
+   "author_family": "SURVIVES"
+  }
+ ],
+ "verification": {
+  "gpt-5.6-sol": {
+   "n": 14,
+   "not_supported": [
+    6,
+    8,
+    12
+   ]
+  },
+  "gemini-3.1-pro-preview": {
+   "n": 14,
+   "not_supported": [
+    2
+   ]
+  },
+  "grok-4.5": {
+   "n": 14,
+   "not_supported": [
+    9,
+    12
+   ]
+  },
+  "claude-fable-5": {
+   "n": 14,
+   "not_supported": []
+  }
+ },
+ "flagged": [
+  2,
+  6,
+  8,
+  10,
+  11,
+  12
+ ],
+ "falsifiers": {
+  "2": [
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "1",
+    "verdict": "REFUTABLE",
+    "falsifier": "Same-run fitted-artifact fingerprints changing would falsify the attribution to store-only learning; fingerprints come only from a separate experiment."
+   },
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "2",
+    "verdict": "REFUTABLE",
+    "falsifier": "A fitted artifact changing during this update would defeat the claim that the store itself learned; fingerprints from a separate experiment do not rule that out."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier is that artifacts mutated during the update, which the evidence does not rule out since fingerprints were only verified in a separate experiment."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "2",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier: update gains from silent refit rather than frozen-append learning. This run only freezes 'by construction'; fingerprints are from a different experiment, so that confound is open."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier: refused\u2192not-correct transitions, or incomplete matrix hiding them; flip table shows only refused\u2192correct with no refused residual categories, so 1.000 is unsecured."
+   }
+  ],
+  "6": [
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "2",
+    "verdict": "REFUTABLE",
+    "falsifier": "Another path-planning formulation could reach 0.912 on the same pairs; comparison against one 0.534 planner does not rule that out."
+   },
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "Evidence that the walker encodes learned order or depth would falsify the store-origin claim; aggregate accuracy and a weaker planner baseline do not rule that out."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "1",
+    "verdict": "REFUTABLE",
+    "falsifier": "The evidence only compares against one path planner (D112) and does not rule out another planner reaching 0.912."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "2",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier: Another path-planning formulation reaches 0.912. The evidence only evaluates one specific baseline (0.534) and cannot rule out that a better path planner exists."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier is a path-planning formulation reaching 0.912 on held-out pairs; the evidence only shows one planner scoring 0.534, which does not prove another couldn't reach 0.912."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "1",
+    "verdict": "REFUTABLE",
+    "falsifier": "Own falsifier is any path-planning formulation hitting 0.912 on same pairs; only D112 at 0.534 was shown, so that falsifier is not ruled out."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "2",
+    "verdict": "REFUTABLE",
+    "falsifier": "Stated falsifier: some path-planning formulation hits ~0.912 on same pairs. Only one planner baseline (0.534) was tried; better planners are not ruled out."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier: another planner hits ~0.912 on same held-outs, or gain isn\u2019t from store walkability; only one walker vs one weak baseline is shown."
+   }
+  ],
+  "8": [
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "1",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "The scope condition restricts to an unrepresentative sparse population, quietly absorbing the failure on mixed benchmarks."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "2",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "The scope condition restricts the claim to an unrepresentative population where it is known to work, explicitly absorbing its failure on mixed benchmarks. No independent test could contradict it."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "3",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "The scope condition admits the claim fails on a representative mixed benchmark, completely absorbing the failure mode to protect the claim."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "1",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "Headline \u2018system refuses unanswerables\u2019 is already conceded false on mixed data; scope shrinks to the one sparse chain-break slice where 0.970 was observed, absorbing every counterexample."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "2",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "Headline system-refusal claim is pre-emptively confined to chain-break/sparse where 0.970 was measured, while admitting mixed/NA kills it\u2014scope absorbs the real falsifier."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "3",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "Scope admits the 0.970 population is unrepresentative and fails on mixed data, so the general \u2018refuses rather than guessing\u2019 content is hedged away."
+   }
+  ],
+  "10": [
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "1",
+    "verdict": "REFUTABLE",
+    "falsifier": "The evidence covaries branching and confusability, failing to rule out confusability as the actual cause."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "2",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "The scope redefines density as distinct from options strictly to absorb the D137 failure mode. Because confusability isn't defined independently of the result, the claim can absorb any case where bran"
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier is the correlation vanishing on a population where branching varies but confusability does not; the supplied evidence lacks this test."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "1",
+    "verdict": "REFUTABLE",
+    "falsifier": "Stated falsifier (correlation vanishes when branching varies but confusability does not) is admitted via D137; \u2018density\u2019 then renames the claim without a density measure that survives that case."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "2",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "Claim says density; evidence is branching correlation. Scope renames after D137 (branching\u2191, confusability fixed, corr vanishes) and denies mechanism\u2014failure mode absorbed into wording."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier: branching\u2194refusal correlation is confusability, vanishing when branching varies alone; scope cites D137 boundary that exp30 doesn\u2019t rule out."
+   }
+  ],
+  "11": [
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "1",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "A representation winning both generalisation and precision would falsify the tradeoff, but the scope retreats to three post-hoc, cross-corpus experiments that never measure both axes together."
+   },
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "2",
+    "verdict": "REFUTABLE",
+    "falsifier": "A representation could improve generalisation without sacrificing precision on a controlled common corpus; the cross-experiment pattern does not rule this out."
+   },
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "A controlled representation comparison winning generalisation without losing precision would falsify the tradeoff; cross-corpus, separately tuned experiments do not rule this out."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "1",
+    "verdict": "REFUTABLE",
+    "falsifier": "The evidence does not rule out a representation winning on both axes, as none tested were designed to look for it."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "2",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier: A representation wins on both axes at once. The evidence only tests three specific configurations not designed to find one, failing to rule out that such a representation exists."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier is a representation winning on both axes; evidence only shows three that didn't, but admits none were designed to look for it."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "1",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "Scope calls it a post-hoc pattern across corpora, not a tested prediction; falsifier \u2018wins on both axes\u2019 was never designed for, so no result can break the fitted story."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "2",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "Admitted post-hoc pattern across split corpora; no experiment tests both buy/cost axes; falsifier (win-win rep) never designed for\u2014hedge ate the claim."
+   },
+   {
+    "rater": "grok-4.5",
+    "run": "3",
+    "verdict": "UNFALSIFIABLE",
+    "falsifier": "Post-hoc pattern across corpora; scope says no experiment tests both halves and none was designed to find a joint win\u2014qualifiers eat the claim."
+   }
+  ],
+  "12": [
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "1",
+    "verdict": "REFUTABLE",
+    "falsifier": "A persistent positive gap beyond 10 aliases would falsify the claim that alias supply explains the disadvantage; a shrinking but still nonzero curve does not rule that out."
+   },
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "2",
+    "verdict": "REFUTABLE",
+    "falsifier": "The gap could plateau above zero beyond ten aliases, indicating permanent information loss; the finite shrinking curve cannot exclude that falsifier."
+   },
+   {
+    "rater": "gpt-5.6-sol",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "A persistent positive asymptotic head gap would falsify the claim that alias supply fully explains the disadvantage; the measured curve stops at 10 aliases with a 0.042 gap."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "1",
+    "verdict": "REFUTABLE",
+    "falsifier": "The gap never reached zero and the evidence does not rule out a permanent loss of information as aliases increase."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "2",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier: The gap stops shrinking as aliases are added. The evidence stops at 10 aliases with a residual gap of 0.042 and cannot rule out that the gap never actually closes to zero."
+   },
+   {
+    "rater": "gemini-3.1-pro-preview",
+    "run": "3",
+    "verdict": "REFUTABLE",
+    "falsifier": "Falsifier is the gap stopping shrinking or head never catching up; since the gap is 0.042 at 10 aliases, it may never reach zero, leaving the claim of 'no permanent loss' unproven."
+   }
+  ]
+ },
+ "scope": "Per-rater majority of 3 adversarial runs, then quorum over raters outside the author's model family. SPLIT means a rater returned three different verdicts on identical input and is reported, not resolved. The verification pass is listed separately and never merged with attack: the two prompts reward opposite behaviours, so a claim passing one and failing the other is a finding about the claim, not rater noise. Every artifact was checked against the current claim text before use; misaligned ones are listed in `excluded_artifacts` and contribute nothing."
+}

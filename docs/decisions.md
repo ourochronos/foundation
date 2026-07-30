@@ -2,6 +2,40 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D154: Every claim that had escaped adjudication fails it — 4 of 4, against 2 of 10 for the claims that had faced it before
+
+Both prompts on the reconciled 14-claim block: verification once per rater, attack **three times** per rater, per-rater majority before quorum, four families. All 16 runs completed and all 16 passed the D152 alignment check, so every verdict below is attributable to the claim text it judged (`results/adjud_quorum.json`, `scripts/adjud_quorum.py`).
+
+**The result that matters is which claims failed.** D153 added five claims that were in the paper but had never faced either prompt. Four of them were adjudicated this round (the fifth, row 11, is deliberately marked `*`). **All four were flagged — two unanimously.** Of the ten claims that had been through adjudication before, **two** were flagged.
+
+| | adjudicated before | flagged now |
+|---|---|---|
+| claims that had faced a prompt | 10 | **2** |
+| claims that had never faced one | 4 | **4** |
+
+That is the strongest available evidence that the adjudication loop does real work rather than performing rigour. The claims that skipped it were carrying the defects, and the defects were of a different and worse kind: not arithmetic, but claims resting on a single baseline, a single population, or a pattern fitted after the fact.
+
+**Verification and attack diverge completely at quorum.** Attack flagged **6 of 14**; verification flagged **0 of 14** — not one claim drew a majority of "not supported", though five drew a single rater's flag. Neither prompt subsumes the other: claims 10 and 11 were flagged *only* by attack (2/3 and 3/3), claim 9 *only* by verification. D150 saw this on 11 claims and one round; it replicates here on a larger and much sharper block, and it means **a claims table is not audited until both prompts have run**.
+
+**The six flagged claims, each with a runnable falsifier** — this is what D152 blocked and what the round was for:
+
+| # | claim | quorum | the falsifier they named |
+|---|---|---|---|
+| 2 | the store LEARNS | 2/3 | artifacts could have mutated *during this experiment*; fingerprints come only from a separate run |
+| 6 | order/depth from the store | **3/3** | another path-planning formulation could reach 0.912; only one 0.534 planner was compared |
+| 8 | refuses rather than guessing | 2/3 | **UNFALSIFIABLE** — the scope restricts to a population where it works and absorbs the mixed-benchmark failure |
+| 10 | refusal falls with density | 2/3 | branching and confusability covary; no population tested where one varies and the other does not |
+| 11 | compression buys generalisation | **3/3** | three post-hoc cross-corpus experiments, separately tuned; a controlled common-corpus comparison could win both axes |
+| 12 | retrieval by data-efficiency | 2/3 | the curve stops at 10 aliases and could plateau above zero — the residual is 0.042, not 0 |
+
+Five are experiments. **Claim 8 is not, and it should go.** Two raters called it UNFALSIFIABLE with reasoning I cannot answer, because the scope I wrote says the population is unrepresentative and retains the claim anyway "because it is what the earlier claim rested on". A claim kept for historical reasons with its failure absorbed into its own scope is the hedging failure D145 was written to catch. The *fact* — that D118's 0.970 was measured on a population that could not have produced a low number — belongs in the narrative about how the mixed benchmark superseded it, not in a table of things the paper asserts.
+
+**The author-family effect is a property of the PROMPT, not of the family.** D145 and D150 excluded Anthropic's model from quorum on the assumption that Claude judging Claude-written claims is not independent. This round separates the two prompts and the assumption only half holds. Under **verification** the family effect is stark: `claude-fable-5` returned **14/14 SUPPORTED**, the only clean sheet, against sol 11/14, grok 12/14, gemini 13/14. Under **attack** it vanishes: fable flagged **5** claims, agreed with the independent quorum on five of the six, and was the only rater to call claim 10 UNFALSIFIABLE — a *harsher* verdict than any independent rater reached. Agreeableness lives in "is this supported?", not in "attack this". The exclusion is kept for now because one round is one round, but it should be tested rather than assumed, and the cheap test is to re-derive the quorum with fable included and see whether any verdict moves.
+
+**Within-rater instability replicates, and it is one rater.** Flags per identical run: sol **[6, 7, 4]** (range 3, and one claim on which its three runs never agreed), fable [5, 4, 6] (range 2), gemini [5, 5, 6] and grok [4, 5, 5] (range 1). D150 measured the same asymmetry and concluded single-run adversarial is unusable; the refinement is that it is unusable *because of one rater*, and the other three are nearly stable. Majority-of-3 is therefore doing almost all its work on a single family — worth knowing before paying for three runs of everyone.
+
+**Revisit**: (a) the five experiments above, in the order 12 (extend the alias curve past 10 — already standing from D139), 6 (a stronger planner baseline), 11 (one controlled common-corpus comparison), 2 (fingerprint within the update experiment), 10 (a population where branching varies and confusability does not); (b) remove claim 8 from the table and rewrite it as narrative; (c) re-derive quorum with the author family included, to test rather than assume the exclusion; (d) five verification flags from this round remain unfixed and are all one shape — a claim sentence generalising past the condition its number was measured under — which is the same shape as D153's five and is a candidate audit law once a fix lands.
+
 ## 2026-07-30 — D153: Five of the paper's claims had never been adjudicated — and the verification prompt was never weak, the claims were too vague to fail it
 
 Re-running the adjudication on the settled block, as D152 required. Two things came out of it, and the second is the one that matters.

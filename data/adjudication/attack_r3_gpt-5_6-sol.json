@@ -1,0 +1,124 @@
+{
+ "audit": "attack_r3",
+ "model": "gpt-5.6-sol",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is availabl",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "9": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "10": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.7",
+  "11": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293",
+  "12": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.7142857142857143,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Equivalent direct edits with downstream edges but no breakage reduction would falsify causality; differing edited and ambiguous counts mean the evidence does not isolate edge supply."
+  },
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Evidence that the walker encodes learned order or depth would falsify the store-origin claim; aggregate accuracy and a weaker planner baseline do not rule that out."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A controlled representation comparison winning generalisation without losing precision would falsify the tradeoff; cross-corpus, separately tuned experiments do not rule this out."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A persistent positive asymptotic head gap would falsify the claim that alias supply fully explains the disadvantage; the measured curve stops at 10 aliases with a 0.042 gap."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "A changed basis, coordinate, or head fingerprint would falsify immutability; all three remain identical across the append."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "A larger depth-1 entity penalty than relation penalty, or depth-2 penalty below 0.10, would falsify the stated contrast; neither occurs."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Any prior honest refusal not becoming correct would falsify the conditional 432/432 claim; the transition matrix contains none."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Staleness exceeding refusal or other wrong answers would falsify the claim; old->old is 1 versus 150 refusals and 82 other answers."
+  },
+  "4": {
+   "verdict": "REFUTABLE",
+   "reason": "Equivalent direct edits with downstream edges but no breakage reduction would falsify causality; differing edited and ambiguous counts mean the evidence does not isolate edge supply."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "A depth-2 held-out versus trained gap exceeding 0.02 would falsify parity; the measured gap is 0.011."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Evidence that the walker encodes learned order or depth would falsify the store-origin claim; aggregate accuracy and a weaker planner baseline do not rule that out."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "A zero-shot three-hop deficit above 0.15 would falsify the scoped extrapolation claim; the measured deficit is about 0.112."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Refusal materially below 0.970 on the specified sparse chain-break population would falsify the claim; 5821 of 6000 refused."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Failure to increase not-applicable refusal or decrease answerable wrongness would falsify the claim; both changes occur at the stated magnitudes."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Zero or positive branching-refusal correlation within any stated population would falsify the descriptive claim; all three correlations are strongly negative."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "A controlled representation comparison winning generalisation without losing precision would falsify the tradeoff; cross-corpus, separately tuned experiments do not rule this out."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "A persistent positive asymptotic head gap would falsify the claim that alias supply fully explains the disadvantage; the measured curve stops at 10 aliases with a 0.042 gap."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "A head gap above 0.05 in any specified population would falsify entity freedom, or a small retrieval drop would falsify its expense; neither occurs."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

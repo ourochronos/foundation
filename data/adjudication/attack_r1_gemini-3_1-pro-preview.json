@@ -1,0 +1,130 @@
+{
+ "audit": "attack_r1",
+ "model": "gemini-3.1-pro-preview",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is availabl",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "9": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "10": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.7",
+  "11": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293",
+  "12": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.6428571428571429,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The evidence only compares against one path planner (D112) and does not rule out another planner reaching 0.912."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The scope condition restricts to an unrepresentative sparse population, quietly absorbing the failure on mixed benchmarks."
+  },
+  {
+   "idx": 10,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The evidence covaries branching and confusability, failing to rule out confusability as the actual cause."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The evidence does not rule out a representation winning on both axes, as none tested were designed to look for it."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The gap never reached zero and the evidence does not rule out a permanent loss of information as aliases increase."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Fingerprints did not change across the append, ruling out mechanical mutation."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Entity penalty is lower than relation penalty at depth 1, and the depth 2 penalty exceeds 0.10."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "All 432 previously refused questions transitioned to correct, ruling out refused->wrong or refused->refuse cases."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Staleness is only 1 out of 431, which is far below refusal or wrong-answering failure modes."
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Supplying downstream edges significantly reduced breakage from 0.274 to 0.077."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Held-out depth 2 composition margin is 0.011, well within the 0.02 falsification threshold."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "The evidence only compares against one path planner (D112) and does not rule out another planner reaching 0.912."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "The zero-shot 3-hop gap is 0.112, under the 0.15 falsification threshold."
+  },
+  "8": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The scope condition restricts to an unrepresentative sparse population, quietly absorbing the failure on mixed benchmarks."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "The gate successfully lifted not-applicable refusal to 0.693, meeting the threshold criteria."
+  },
+  "10": {
+   "verdict": "REFUTABLE",
+   "reason": "The evidence covaries branching and confusability, failing to rule out confusability as the actual cause."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "The evidence does not rule out a representation winning on both axes, as none tested were designed to look for it."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "The gap never reached zero and the evidence does not rule out a permanent loss of information as aliases increase."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "The head's generalization gap did not exceed 0.05 on any tested population."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

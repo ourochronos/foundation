@@ -1,0 +1,136 @@
+{
+ "audit": "attack_r3",
+ "model": "gemini-3.1-pro-preview",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is availabl",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "9": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "10": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.7",
+  "11": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293",
+  "12": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.5714285714285714,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier is that artifacts mutated during the update, which the evidence does not rule out since fingerprints were only verified in a separate experiment."
+  },
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier is a path-planning formulation reaching 0.912 on held-out pairs; the evidence only shows one planner scoring 0.534, which does not prove another couldn't reach 0.912."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The scope condition admits the claim fails on a representative mixed benchmark, completely absorbing the failure mode to protect the claim."
+  },
+  {
+   "idx": 10,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier is the correlation vanishing on a population where branching varies but confusability does not; the supplied evidence lacks this test."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier is a representation winning on both axes; evidence only shows three that didn't, but admits none were designed to look for it."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier is the gap stopping shrinking or head never catching up; since the gap is 0.042 at 10 aliases, it may never reach zero, leaving the claim of 'no permanent loss' unproven."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is a change in artifacts across an append; evidence shows fingerprints remain identical."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is entity penalty exceeding relation penalty or depth-2 penalty under 0.10; evidence rules both out."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier is that artifacts mutated during the update, which the evidence does not rule out since fingerprints were only verified in a separate experiment."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is staleness exceeding refusal or wrong answers; evidence shows it is only 0.002, ruling this out."
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is downstream edges failing to reduce breakage; evidence shows a 0.197 reduction."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is the depth-2 gap exceeding 0.02; evidence shows it is +0.011, ruling this out."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier is a path-planning formulation reaching 0.912 on held-out pairs; the evidence only shows one planner scoring 0.534, which does not prove another couldn't reach 0.912."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is zero-shot answering falling below trained answering by more than 0.15; evidence shows the drop is only 0.112."
+  },
+  "8": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The scope condition admits the claim fails on a representative mixed benchmark, completely absorbing the failure mode to protect the claim."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is the answer-type gate failing to lift refusal or cut wrongness; evidence confirms it does both."
+  },
+  "10": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier is the correlation vanishing on a population where branching varies but confusability does not; the supplied evidence lacks this test."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier is a representation winning on both axes; evidence only shows three that didn't, but admits none were designed to look for it."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier is the gap stopping shrinking or head never catching up; since the gap is 0.042 at 10 aliases, it may never reach zero, leaving the claim of 'no permanent loss' unproven."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is the head's gap exceeding 0.05 on any of the three question populations; evidence shows all gaps are well within this bound."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

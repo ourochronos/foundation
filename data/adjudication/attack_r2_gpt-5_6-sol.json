@@ -1,0 +1,142 @@
+{
+ "audit": "attack_r2",
+ "model": "gpt-5.6-sol",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is availabl",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "9": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "10": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.7",
+  "11": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293",
+  "12": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.5,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 0,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The scope requires byte-identical artifacts, thereby excluding the only falsifier: an append that changes a fitted artifact."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A fitted artifact changing during this update would defeat the claim that the store itself learned; fingerprints from a separate experiment do not rule that out."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A matched comparison controlling rewrite success could show no downstream-edge benefit; differing edit and ambiguity counts leave that falsifier open."
+  },
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Another path-planning formulation could reach 0.912 on the same pairs; comparison against one 0.534 planner does not rule that out."
+  },
+  {
+   "idx": 7,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "On identical three-hop questions, zero-shot accuracy could trail trained accuracy by over 0.15; the reported conditions use different sample populations and sizes."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A representation could improve generalisation without sacrificing precision on a controlled common corpus; the cross-experiment pattern does not rule this out."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The gap could plateau above zero beyond ten aliases, indicating permanent information loss; the finite shrinking curve cannot exclude that falsifier."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The scope requires byte-identical artifacts, thereby excluding the only falsifier: an append that changes a fitted artifact."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifiers were entity penalty exceeding relation penalty or depth-2 penalty below 0.10; the measured penalties rule both out."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "A fitted artifact changing during this update would defeat the claim that the store itself learned; fingerprints from a separate experiment do not rule that out."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "The concrete falsifier was staleness exceeding refusal or wrong-answering; 1 stale case versus 150 refusals and 82 other answers rules it out."
+  },
+  "4": {
+   "verdict": "REFUTABLE",
+   "reason": "A matched comparison controlling rewrite success could show no downstream-edge benefit; differing edit and ambiguity counts leave that falsifier open."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "A depth-2 held-out/trained gap over 0.02 would falsify parity; the observed gap is 0.011."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Another path-planning formulation could reach 0.912 on the same pairs; comparison against one 0.534 planner does not rule that out."
+  },
+  "7": {
+   "verdict": "REFUTABLE",
+   "reason": "On identical three-hop questions, zero-shot accuracy could trail trained accuracy by over 0.15; the reported conditions use different sample populations and sizes."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Fewer than 5821 refusals on the specified sparse chain-break population would falsify the claim; the direct count rules that out."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Failure to raise not-applicable refusal or reduce answerable wrongness would falsify it; both paired measurements move as claimed."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "A nonnegative branching-refusal correlation in any stated population would falsify the descriptive claim; all three measured correlations are strongly negative."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "A representation could improve generalisation without sacrificing precision on a controlled common corpus; the cross-experiment pattern does not rule this out."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "The gap could plateau above zero beyond ten aliases, indicating permanent information loss; the finite shrinking curve cannot exclude that falsifier."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "A head gap above 0.05 in any specified population would falsify 'free'; all three gaps remain below that threshold while retrieval drops sharply."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

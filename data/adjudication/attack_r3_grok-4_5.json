@@ -1,0 +1,130 @@
+{
+ "audit": "attack_r3",
+ "model": "grok-4.5",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is availabl",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "The system refuses rather than guessing on unanswerable questions: 5821 of 6000 refused (0.970).",
+  "9": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answera",
+  "10": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.7",
+  "11": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293",
+  "12": "Retrieval beats a parametric head by DATA-EFFICIENCY: within one population the gap closes from 0.229 at 2 aliases to 0.",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.6428571428571429,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: refused\u2192not-correct transitions, or incomplete matrix hiding them; flip table shows only refused\u2192correct with no refused residual categories, so 1.000 is unsecured."
+  },
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: another planner hits ~0.912 on same held-outs, or gain isn\u2019t from store walkability; only one walker vs one weak baseline is shown."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Scope admits the 0.970 population is unrepresentative and fails on mixed data, so the general \u2018refuses rather than guessing\u2019 content is hedged away."
+  },
+  {
+   "idx": 10,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: branching\u2194refusal correlation is confusability, vanishing when branching varies alone; scope cites D137 boundary that exp30 doesn\u2019t rule out."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Post-hoc pattern across corpora; scope says no experiment tests both halves and none was designed to find a joint win\u2014qualifiers eat the claim."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any post-append fingerprint drift in basis/coords/head; identical hashes rule it out on the stated append."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: entity penalty > relation at d1, or d2 penalty < 0.10; measured +0.058/+0.191/+0.249 rule those out."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: refused\u2192not-correct transitions, or incomplete matrix hiding them; flip table shows only refused\u2192correct with no refused residual categories, so 1.000 is unsecured."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: stale among prior-old exceeds refuse or wrong; 1/431 vs 150 refuse and 82 other rules that out."
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: downstream edges fail to cut breakage; breakage falls 0.274\u21920.077 on the same n_was_old=431."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: |d2 held\u2212trained| > 0.02; measured +0.011 within margin (d3 carve-out is explicit)."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: another planner hits ~0.912 on same held-outs, or gain isn\u2019t from store walkability; only one walker vs one weak baseline is shown."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: zero-shot 3-hop trails trained by >0.15; gap is ~0.112, with d4 failure scoped out."
+  },
+  "8": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Scope admits the 0.970 population is unrepresentative and fails on mixed data, so the general \u2018refuses rather than guessing\u2019 content is hedged away."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gate doesn\u2019t raise NA refuse ~0.05\u21920.69 or cut d1 wrong ~0.118\u21920.045; exp39 rows match both."
+  },
+  "10": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: branching\u2194refusal correlation is confusability, vanishing when branching varies alone; scope cites D137 boundary that exp30 doesn\u2019t rule out."
+  },
+  "11": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Post-hoc pattern across corpora; scope says no experiment tests both halves and none was designed to find a joint win\u2014qualifiers eat the claim."
+  },
+  "12": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: alias curve gap stops shrinking, or some 2-alias head matches 1-NN; curve 0.229\u21920.042 and best head 0.691<0.925 rule those out."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head held\u2212seen gap worse than \u22120.05 on d1/d2/NA; gaps \u22120.029/\u22120.010/+0.001 with large knn drop."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}
