@@ -2,6 +2,76 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D168: A basis works in proportion to how well its PARTITION matches the task — and partition alignment buys generalisation only
+
+`scripts/exp59_partition_alignment.py`. The account, proposed by the user after D166 and D167 both came back negative: an embedding space holds many overlapping categorizations **in superposition**, because aligning to any single one would cap what it can express. On that view a basis is useful to the extent it extracts **the partition the task needs** — which is a claim about the query distribution, not about ontology, orthogonality or redundancy.
+
+Everything measured across D164–D167 is monotone in that quantity — 0.453 for the task partition, 0.425 for label similarity, 0.309 for "what does it connect to", 0.287 for no partition, 0.236 for a transformation — but that ordering changes the *method* at every step, so it is suggestive and not a test. This changes **only the partition**: the class assignment used to compute between-class scatter is corrupted by a fraction `p`, while method, K, head, targets and evaluation stay identical. Class count and approximate sizes are preserved, so rank and granularity do not move.
+
+| corrupt p | M3 NOVEL | Gemma NOVEL | Gemma trained |
+|---|---|---|---|
+| 0.000 | 0.2767 | **0.4530** | 0.7146 |
+| 0.250 | 0.2689 | 0.4081 | 0.7151 |
+| 0.500 | 0.2151 | 0.3974 | 0.7172 |
+| 1.000 | 0.1496 | **0.2799** | 0.7279 |
+
+**r = −0.912 (M3) and −0.895 (Gemma)**, a mean drop of 0.150. Both arms reproduce exp56's `lda_between` exactly at p=0, so the curve is anchored in-run rather than to a pasted figure (D158).
+
+**The unpredicted result is the `trained` column, and it is the sharper finding.** It does not move: Gemma runs 0.7146 → 0.7279 across the full corruption range, *rising* slightly, and M3 only slips 0.7027 → 0.6764. **Destroying the partition costs novel transfer and nothing else.** A trained relation does not care which directions the basis spans, because the head can memorise a route to any target; an unseen relation needs the basis to point where its label will land. So partition alignment is not a general representational virtue — it is specifically what buys **generalisation**.
+
+**Two limits, stated rather than smoothed.** Gemma's floor at p=1.0 is 0.2799, well above `random_orthonormal`'s 0.1731 at the same K — a fully shuffled partition still beats no partition, presumably because class means over real questions retain structure even under random assignment, so the floor is not "no information". And M3's decline is noisy and non-monotone (0.2433 at p=0.125, back to 0.2689 at p=0.25, floor sd 0.0834); its correlation rests on the endpoints more than on the shape.
+
+**What this settles across the arc.** Four accounts of why a basis works were tested: derive it from the adjacent layer (D166, refuted), orthogonality (D165, r≈0), non-redundancy with the encoder (D167, r≈0), and task-partition alignment (here, r=−0.90 with dose-response). Only the last survives, and it explains the ordering the others could not: questions beat labels beat entity profiles because that is the order of alignment with "which relation is being asked", not the order of abstraction.
+
+**The layering is retired as a derivation principle and kept as an ontology.** The type/context distinction and the relation categories remain well-founded; what they are not is a recipe for choosing basis directions.
+
+**And it relocates the over-provisioning instinct rather than killing it.** If categories live in superposition, recovering them wants a **sparse overcomplete dictionary** — expansion factors of 4×–64× in the sparse-autoencoder literature — not a denser projection. Our K sweeps topped out at 256 in 768 dimensions and were always *under*complete, so over-provisioning in the sense superposition means was never tested. But a dense projection with K ≥ d stops discarding anything and collapses toward raw label space, measured at 0.1709 on Gemma against the K=32 basis at 0.4530 — so the instrument would have to be sparse coding, not a larger K.
+
+**Process note.** This is the first proposed mechanism in this session to survive its own falsifier, and it was not mine. The three that failed were all mine and all had the same shape — a coherent story about structure — while the one that held made a numerical prediction that could have come out flat and did not.
+
+**Revisit**: (a) one seed for the population, three for each corruption level, one corpus; (b) the p=1.0 floor sitting above random-orthonormal is unexplained and worth understanding, since it bounds how much of the effect is really alignment; (c) sparse-dictionary recovery of the superposed categories is the live version of over-provisioning and is untested; (d) all of this is identification-level and still needs the end-to-end walker gate before any pipeline change.
+
+## 2026-07-30 — D167: The "symmetry hurts" rescue is rejected — redundancy with the encoder does not predict transfer
+
+`scripts/exp58_redundancy.py`. After D166 came back negative, the proposed reinterpretation was that the test had the wrong sign: a basis that mirrors structure the encoder already holds is **redundant**, so capturing the categories faithfully could make output *worse*, and D166's loss might be what the layering predicts rather than evidence against it.
+
+**That reinterpretation converts a falsification into a confirmation, which is exactly the move that has to carry its own falsifier**, so it was given one before being entertained. For each basis, orthonormalise its span and measure what fraction of the encoder's own representation lies inside it — `capture_q` over question space (what the head maps from) and `capture_l` over label space (what becomes coordinates). High capture means redundant with the encoder. Then correlate against transfer over **every basis built in D165 and D166** — 60 cells per arm, not the winners.
+
+| | capture_q vs NOVEL | capture_l vs NOVEL |
+|---|---|---|
+| M3 | −0.083 | **+0.328** |
+| Gemma-sym | −0.011 | +0.145 |
+
+**Both signs are wrong for the rescue.** Overlap with question space is essentially uncorrelated (−0.047 pooled); overlap with label space is *positively* correlated (+0.236) — a basis that captures more of what the encoder already encodes does slightly **better**, not worse.
+
+The clearest single counterexample is `random_orthonormal` at K=256: it has the **highest capture of any basis measured** (0.354 question, 0.359 label) and scores 0.1709, near the bottom. At K=4 it captures 0.007 of each and scores 0.1496. Capture moves fiftyfold; transfer barely moves. Redundancy is not the operative variable.
+
+**The registered expectation was correct this time** — positive with `capture_l`, weak with `capture_q` — which is worth recording as weak evidence rather than vindication, given the three that preceded it.
+
+**The transferable point is procedural.** A negative result invites reinterpretation, and a reinterpretation that would flip its sign is unfalsifiable unless it makes its own prediction. Building the falsifier first cost twenty minutes and is what separates "the theory survived" from "the theory was rescued".
+
+## 2026-07-30 — D166: Deriving a basis from the layer BELOW it is refuted — profile-derived anchors lose on both encoders
+
+`scripts/exp57_layer_derivation.py`. D165 found that anchors derived from how relations partition *question* space beat anchors derived from relation *label strings*, which suggested a general principle: **a layer's basis should come from an adjacent layer rather than from its own labels.** If real, going one layer further should go further still — a relation's domain and range profiles (the mean embedding of what it connects) are a more direct statement of what a relation *is* than either its name or its question distribution, and `exp39_typegate`'s `CENT[r]` is already exactly a range profile, built for the answer-type gate and never used to fit a basis.
+
+**Registered before running**: profile-derived beats `lda_between` *modestly*, 0.45 → roughly 0.50; a loss falsifies the principle.
+
+| strategy (Gemma-sym, best K) | NOVEL | vs control |
+|---|---|---|
+| `lda_between` — question-derived, CONTROL | **0.4530** | — |
+| `kmeans_range` | 0.3365 | −0.117 |
+| `lda_range` | 0.3088 | −0.144 |
+| `kmeans_domrange` | 0.2895 | −0.164 |
+| `lda_domrange` | 0.2853 | −0.168 |
+
+**All four lose, on both encoders, at every K** — −0.117 on Gemma, −0.157 on M3. The control reproduced exp56 in-run before anything else ran, so this is not a pasted-baseline comparison (D158).
+
+**The prediction was wrong and the direction is informative.** The ordering across everything measured is: how relations separate in **question** space (0.453) > relation **label** strings (0.425) > what relations **connect** (0.337). The entity layer is the most concrete thing available and the **worst** basis source. So "closer to the data" is not the operative axis, and neither is ontological adjacency.
+
+That is the fourth wrong prediction of the session, and as with the others what made it a test rather than a story was writing the falsifier down beforehand and building the control to reproduce in-run.
+
+**Revisit**: the phases that were to follow this — entity anchors from participation vectors, and clustering profiles to see whether the named relation categories emerge — were both predicated on the principle this refutes, and should not be run on that rationale. See D168 for what replaced it.
+
 ## 2026-07-30 — D165: Anchors should be chosen to SEPARATE relations, not to cover them — and orthogonality turns out not to be the variable
 
 `scripts/exp56_anchor_strategy.py`. Six ways of choosing the K basis directions, crossed with three encoder/prefix arms and a K sweep — 108 cells. In every cell a relation's coordinate is still `unit(label @ PC.T)`, so **only the basis changes** and zero-instance arrival is preserved throughout; the alternative pools decide where the axes point, never what a relation's coordinate is.

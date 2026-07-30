@@ -1,0 +1,128 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T20:20:38.263734+00:00",
+  "commit": "3ed9b6bd6bf5a13abc3456ac4de1b63014d6d2ed",
+  "dirty": true,
+  "command": "scripts/exp59_partition_alignment.py both",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "K": 32,
+   "PS": [
+    0.0,
+    0.125,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+   ],
+   "N_SEEDS": 3
+  }
+ },
+ "n_relations": 56,
+ "n_trained": 44,
+ "chance": 0.0179,
+ "random_orthonormal_reference_K32": {
+  "m3": 0.0064,
+  "gemma_symmetric": 0.1731
+ },
+ "curves": {
+  "m3": {
+   "0.0": {
+    "novel_mean": 0.2767,
+    "novel_sd": 0.0,
+    "trained_mean": 0.7027,
+    "n_seeds": 1
+   },
+   "0.125": {
+    "novel_mean": 0.2433,
+    "novel_sd": 0.0287,
+    "trained_mean": 0.7027,
+    "n_seeds": 3
+   },
+   "0.25": {
+    "novel_mean": 0.2689,
+    "novel_sd": 0.0182,
+    "trained_mean": 0.7008,
+    "n_seeds": 3
+   },
+   "0.5": {
+    "novel_mean": 0.2151,
+    "novel_sd": 0.0348,
+    "trained_mean": 0.7068,
+    "n_seeds": 3
+   },
+   "0.75": {
+    "novel_mean": 0.1243,
+    "novel_sd": 0.0353,
+    "trained_mean": 0.699,
+    "n_seeds": 3
+   },
+   "1.0": {
+    "novel_mean": 0.1496,
+    "novel_sd": 0.0834,
+    "trained_mean": 0.6764,
+    "n_seeds": 3
+   }
+  },
+  "gemma_symmetric": {
+   "0.0": {
+    "novel_mean": 0.453,
+    "novel_sd": 0.0,
+    "trained_mean": 0.7146,
+    "n_seeds": 1
+   },
+   "0.125": {
+    "novel_mean": 0.4338,
+    "novel_sd": 0.021,
+    "trained_mean": 0.716,
+    "n_seeds": 3
+   },
+   "0.25": {
+    "novel_mean": 0.4081,
+    "novel_sd": 0.0114,
+    "trained_mean": 0.7151,
+    "n_seeds": 3
+   },
+   "0.5": {
+    "novel_mean": 0.3974,
+    "novel_sd": 0.0317,
+    "trained_mean": 0.7172,
+    "n_seeds": 3
+   },
+   "0.75": {
+    "novel_mean": 0.396,
+    "novel_sd": 0.0322,
+    "trained_mean": 0.7221,
+    "n_seeds": 3
+   },
+   "1.0": {
+    "novel_mean": 0.2799,
+    "novel_sd": 0.0262,
+    "trained_mean": 0.7279,
+    "n_seeds": 3
+   }
+  }
+ },
+ "verdicts": {
+  "m3": {
+   "corr_p_vs_novel": -0.9118,
+   "drop_p0_to_p1": 0.1271,
+   "floor_sd": 0.0834
+  },
+  "gemma_symmetric": {
+   "corr_p_vs_novel": -0.8945,
+   "drop_p0_to_p1": 0.1731,
+   "floor_sd": 0.0262
+  }
+ },
+ "verdict": "SUPPORTED \u2014 corrupting the partition while holding the method fixed costs 0.1501 of novel transfer (r=-0.903). A basis works in proportion to how well its partition matches the task, which is what the superposition account predicts and what the ontological accounts did not.",
+ "registered_prediction": "monotone decline from ~0.45 at p=0 toward the random-orthonormal band (~0.17-0.29) by p=1, most of the loss in the first half; a FLAT curve falsifies the alignment account",
+ "scope": "Changes ONLY the partition the basis is derived from. Method, K, head, targets and evaluation are identical across every point: the corrupted assignment is used to compute between-class scatter directions and nothing else, while coordinates stay unit(label @ PC.T) from true labels and the head trains on true targets. Class count and approximate class sizes are preserved so rank and granularity do not move. p=0 must reproduce exp56's lda_between in-run or the script aborts (D158: no pasted baselines). Identification level only."
+}

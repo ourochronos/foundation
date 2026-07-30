@@ -1,0 +1,880 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T19:41:15.458869+00:00",
+  "commit": "3ed9b6bd6bf5a13abc3456ac4de1b63014d6d2ed",
+  "dirty": true,
+  "command": "scripts/exp58_redundancy.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "K_ENTITY": 32
+  }
+ },
+ "cells": {
+  "m3": [
+   {
+    "strategy": "entity_complement",
+    "K": 4,
+    "novel": 0.0705,
+    "capture_q": 0.0203,
+    "capture_l": 0.1384
+   },
+   {
+    "strategy": "entity_complement",
+    "K": 8,
+    "novel": 0.1966,
+    "capture_q": 0.0369,
+    "capture_l": 0.2113
+   },
+   {
+    "strategy": "entity_complement",
+    "K": 16,
+    "novel": 0.1709,
+    "capture_q": 0.059,
+    "capture_l": 0.3024
+   },
+   {
+    "strategy": "entity_complement",
+    "K": 32,
+    "novel": 0.3173,
+    "capture_q": 0.0958,
+    "capture_l": 0.4288
+   },
+   {
+    "strategy": "entity_complement",
+    "K": 43,
+    "novel": 0.3056,
+    "capture_q": 0.1059,
+    "capture_l": 0.4534
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 4,
+    "novel": 0.0011,
+    "capture_q": 0.0547,
+    "capture_l": 0.1555
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 8,
+    "novel": 0.1197,
+    "capture_q": 0.0699,
+    "capture_l": 0.2125
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 16,
+    "novel": 0.0107,
+    "capture_q": 0.1054,
+    "capture_l": 0.2474
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 32,
+    "novel": 0.0769,
+    "capture_q": 0.17,
+    "capture_l": 0.3468
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 43,
+    "novel": 0.0288,
+    "capture_q": 0.1956,
+    "capture_l": 0.366
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 64,
+    "novel": 0.016,
+    "capture_q": 0.2538,
+    "capture_l": 0.3993
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 87,
+    "novel": 0.0224,
+    "capture_q": 0.2821,
+    "capture_l": 0.4121
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 4,
+    "novel": 0.1303,
+    "capture_q": 0.0534,
+    "capture_l": 0.4618
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 8,
+    "novel": 0.1154,
+    "capture_q": 0.0738,
+    "capture_l": 0.5387
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 16,
+    "novel": 0.1175,
+    "capture_q": 0.1011,
+    "capture_l": 0.6459
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 32,
+    "novel": 0.1111,
+    "capture_q": 0.1403,
+    "capture_l": 0.7836
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 43,
+    "novel": 0.2361,
+    "capture_q": 0.1577,
+    "capture_l": 0.8319
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 4,
+    "novel": 0.0224,
+    "capture_q": 0.0241,
+    "capture_l": 0.1781
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 8,
+    "novel": 0.0192,
+    "capture_q": 0.0478,
+    "capture_l": 0.2071
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 16,
+    "novel": 0.016,
+    "capture_q": 0.0895,
+    "capture_l": 0.243
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 32,
+    "novel": 0.0331,
+    "capture_q": 0.1368,
+    "capture_l": 0.2939
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 43,
+    "novel": 0.0053,
+    "capture_q": 0.1698,
+    "capture_l": 0.3014
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 64,
+    "novel": 0.0021,
+    "capture_q": 0.1844,
+    "capture_l": 0.288
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 128,
+    "novel": 0.016,
+    "capture_q": 0.3511,
+    "capture_l": 0.4147
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 256,
+    "novel": 0.0011,
+    "capture_q": 0.5485,
+    "capture_l": 0.5711
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 4,
+    "novel": 0.1058,
+    "capture_q": 0.0512,
+    "capture_l": 0.1608
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 8,
+    "novel": 0.0534,
+    "capture_q": 0.0685,
+    "capture_l": 0.1945
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 16,
+    "novel": 0.0246,
+    "capture_q": 0.1077,
+    "capture_l": 0.2961
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 32,
+    "novel": 0.0288,
+    "capture_q": 0.1483,
+    "capture_l": 0.3418
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 43,
+    "novel": 0.0096,
+    "capture_q": 0.1591,
+    "capture_l": 0.3638
+   },
+   {
+    "strategy": "lda_between",
+    "K": 4,
+    "novel": 0.0876,
+    "capture_q": 0.0621,
+    "capture_l": 0.0641
+   },
+   {
+    "strategy": "lda_between",
+    "K": 8,
+    "novel": 0.1357,
+    "capture_q": 0.0977,
+    "capture_l": 0.0998
+   },
+   {
+    "strategy": "lda_between",
+    "K": 16,
+    "novel": 0.2009,
+    "capture_q": 0.1455,
+    "capture_l": 0.1455
+   },
+   {
+    "strategy": "lda_between",
+    "K": 32,
+    "novel": 0.2767,
+    "capture_q": 0.2203,
+    "capture_l": 0.2138
+   },
+   {
+    "strategy": "lda_between",
+    "K": 43,
+    "novel": 0.2393,
+    "capture_q": 0.259,
+    "capture_l": 0.2418
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 4,
+    "novel": 0.0118,
+    "capture_q": 0.0293,
+    "capture_l": 0.1335
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 8,
+    "novel": 0.0192,
+    "capture_q": 0.0482,
+    "capture_l": 0.193
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 16,
+    "novel": 0.047,
+    "capture_q": 0.0884,
+    "capture_l": 0.2425
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 32,
+    "novel": 0.0342,
+    "capture_q": 0.1579,
+    "capture_l": 0.2778
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 43,
+    "novel": 0.0267,
+    "capture_q": 0.1895,
+    "capture_l": 0.3021
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 64,
+    "novel": 0.0235,
+    "capture_q": 0.2402,
+    "capture_l": 0.3326
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 87,
+    "novel": 0.0288,
+    "capture_q": 0.2878,
+    "capture_l": 0.3666
+   },
+   {
+    "strategy": "lda_range",
+    "K": 4,
+    "novel": 0.0053,
+    "capture_q": 0.0257,
+    "capture_l": 0.1567
+   },
+   {
+    "strategy": "lda_range",
+    "K": 8,
+    "novel": 0.0331,
+    "capture_q": 0.0474,
+    "capture_l": 0.1941
+   },
+   {
+    "strategy": "lda_range",
+    "K": 16,
+    "novel": 0.0406,
+    "capture_q": 0.0826,
+    "capture_l": 0.234
+   },
+   {
+    "strategy": "lda_range",
+    "K": 32,
+    "novel": 0.0417,
+    "capture_q": 0.1314,
+    "capture_l": 0.275
+   },
+   {
+    "strategy": "lda_range",
+    "K": 43,
+    "novel": 0.0363,
+    "capture_q": 0.1561,
+    "capture_l": 0.2936
+   },
+   {
+    "strategy": "pca_label",
+    "K": 4,
+    "novel": 0.0983,
+    "capture_q": 0.0336,
+    "capture_l": 0.187
+   },
+   {
+    "strategy": "pca_label",
+    "K": 8,
+    "novel": 0.1058,
+    "capture_q": 0.0519,
+    "capture_l": 0.3185
+   },
+   {
+    "strategy": "pca_label",
+    "K": 16,
+    "novel": 0.1068,
+    "capture_q": 0.0843,
+    "capture_l": 0.4711
+   },
+   {
+    "strategy": "pca_label",
+    "K": 32,
+    "novel": 0.2233,
+    "capture_q": 0.132,
+    "capture_l": 0.6333
+   },
+   {
+    "strategy": "pca_label",
+    "K": 43,
+    "novel": 0.2137,
+    "capture_q": 0.1617,
+    "capture_l": 0.6941
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 4,
+    "novel": 0.1026,
+    "capture_q": 0.0046,
+    "capture_l": 0.0049
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 8,
+    "novel": 0.0844,
+    "capture_q": 0.0074,
+    "capture_l": 0.0068
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 16,
+    "novel": 0.0246,
+    "capture_q": 0.0171,
+    "capture_l": 0.0171
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 32,
+    "novel": 0.0064,
+    "capture_q": 0.0307,
+    "capture_l": 0.0303
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 43,
+    "novel": 0.0107,
+    "capture_q": 0.0435,
+    "capture_l": 0.0446
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 64,
+    "novel": 0.0919,
+    "capture_q": 0.065,
+    "capture_l": 0.0652
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 128,
+    "novel": 0.0278,
+    "capture_q": 0.1223,
+    "capture_l": 0.1273
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 256,
+    "novel": 0.0021,
+    "capture_q": 0.2505,
+    "capture_l": 0.2545
+   }
+  ],
+  "gemma_symmetric": [
+   {
+    "strategy": "entity_complement",
+    "K": 4,
+    "novel": 0.2607,
+    "capture_q": 0.0202,
+    "capture_l": 0.082
+   },
+   {
+    "strategy": "entity_complement",
+    "K": 8,
+    "novel": 0.2511,
+    "capture_q": 0.0335,
+    "capture_l": 0.1289
+   },
+   {
+    "strategy": "entity_complement",
+    "K": 16,
+    "novel": 0.3291,
+    "capture_q": 0.0516,
+    "capture_l": 0.1889
+   },
+   {
+    "strategy": "entity_complement",
+    "K": 32,
+    "novel": 0.3718,
+    "capture_q": 0.086,
+    "capture_l": 0.2548
+   },
+   {
+    "strategy": "entity_complement",
+    "K": 43,
+    "novel": 0.3526,
+    "capture_q": 0.0989,
+    "capture_l": 0.2785
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 4,
+    "novel": 0.0534,
+    "capture_q": 0.3877,
+    "capture_l": 0.5529
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 8,
+    "novel": 0.2756,
+    "capture_q": 0.3978,
+    "capture_l": 0.5646
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 16,
+    "novel": 0.1944,
+    "capture_q": 0.4426,
+    "capture_l": 0.602
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 32,
+    "novel": 0.0897,
+    "capture_q": 0.4945,
+    "capture_l": 0.6252
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 43,
+    "novel": 0.2895,
+    "capture_q": 0.5085,
+    "capture_l": 0.6483
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 64,
+    "novel": 0.2115,
+    "capture_q": 0.5446,
+    "capture_l": 0.6713
+   },
+   {
+    "strategy": "kmeans_domrange",
+    "K": 87,
+    "novel": 0.2489,
+    "capture_q": 0.5716,
+    "capture_l": 0.6858
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 4,
+    "novel": 0.0951,
+    "capture_q": 0.3442,
+    "capture_l": 0.67
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 8,
+    "novel": 0.4028,
+    "capture_q": 0.3687,
+    "capture_l": 0.7289
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 16,
+    "novel": 0.4252,
+    "capture_q": 0.402,
+    "capture_l": 0.7927
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 32,
+    "novel": 0.359,
+    "capture_q": 0.444,
+    "capture_l": 0.8822
+   },
+   {
+    "strategy": "kmeans_label",
+    "K": 43,
+    "novel": 0.3942,
+    "capture_q": 0.4547,
+    "capture_l": 0.885
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 4,
+    "novel": 0.0385,
+    "capture_q": 0.0598,
+    "capture_l": 0.0835
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 8,
+    "novel": 0.0812,
+    "capture_q": 0.0911,
+    "capture_l": 0.1701
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 16,
+    "novel": 0.1036,
+    "capture_q": 0.123,
+    "capture_l": 0.22
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 32,
+    "novel": 0.14,
+    "capture_q": 0.1768,
+    "capture_l": 0.2468
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 43,
+    "novel": 0.1581,
+    "capture_q": 0.2056,
+    "capture_l": 0.2779
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 64,
+    "novel": 0.188,
+    "capture_q": 0.2037,
+    "capture_l": 0.2163
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 128,
+    "novel": 0.1944,
+    "capture_q": 0.3417,
+    "capture_l": 0.319
+   },
+   {
+    "strategy": "kmeans_offset",
+    "K": 256,
+    "novel": 0.2361,
+    "capture_q": 0.5709,
+    "capture_l": 0.5872
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 4,
+    "novel": 0.1015,
+    "capture_q": 0.3828,
+    "capture_l": 0.5567
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 8,
+    "novel": 0.3365,
+    "capture_q": 0.4023,
+    "capture_l": 0.5745
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 16,
+    "novel": 0.0449,
+    "capture_q": 0.4409,
+    "capture_l": 0.6018
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 32,
+    "novel": 0.2842,
+    "capture_q": 0.4738,
+    "capture_l": 0.6321
+   },
+   {
+    "strategy": "kmeans_range",
+    "K": 43,
+    "novel": 0.2489,
+    "capture_q": 0.4873,
+    "capture_l": 0.6377
+   },
+   {
+    "strategy": "lda_between",
+    "K": 4,
+    "novel": 0.2308,
+    "capture_q": 0.0605,
+    "capture_l": 0.0614
+   },
+   {
+    "strategy": "lda_between",
+    "K": 8,
+    "novel": 0.3632,
+    "capture_q": 0.0977,
+    "capture_l": 0.1043
+   },
+   {
+    "strategy": "lda_between",
+    "K": 16,
+    "novel": 0.4145,
+    "capture_q": 0.1486,
+    "capture_l": 0.1623
+   },
+   {
+    "strategy": "lda_between",
+    "K": 32,
+    "novel": 0.453,
+    "capture_q": 0.2009,
+    "capture_l": 0.222
+   },
+   {
+    "strategy": "lda_between",
+    "K": 43,
+    "novel": 0.4177,
+    "capture_q": 0.235,
+    "capture_l": 0.249
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 4,
+    "novel": 0.0192,
+    "capture_q": 0.06,
+    "capture_l": 0.0532
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 8,
+    "novel": 0.2692,
+    "capture_q": 0.1021,
+    "capture_l": 0.152
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 16,
+    "novel": 0.2853,
+    "capture_q": 0.1448,
+    "capture_l": 0.2384
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 32,
+    "novel": 0.2628,
+    "capture_q": 0.2012,
+    "capture_l": 0.2801
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 43,
+    "novel": 0.203,
+    "capture_q": 0.2322,
+    "capture_l": 0.3042
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 64,
+    "novel": 0.203,
+    "capture_q": 0.2777,
+    "capture_l": 0.3381
+   },
+   {
+    "strategy": "lda_domrange",
+    "K": 87,
+    "novel": 0.1966,
+    "capture_q": 0.3201,
+    "capture_l": 0.3762
+   },
+   {
+    "strategy": "lda_range",
+    "K": 4,
+    "novel": 0.2244,
+    "capture_q": 0.0578,
+    "capture_l": 0.0862
+   },
+   {
+    "strategy": "lda_range",
+    "K": 8,
+    "novel": 0.2735,
+    "capture_q": 0.0917,
+    "capture_l": 0.174
+   },
+   {
+    "strategy": "lda_range",
+    "K": 16,
+    "novel": 0.3088,
+    "capture_q": 0.1412,
+    "capture_l": 0.2322
+   },
+   {
+    "strategy": "lda_range",
+    "K": 32,
+    "novel": 0.2062,
+    "capture_q": 0.1949,
+    "capture_l": 0.2907
+   },
+   {
+    "strategy": "lda_range",
+    "K": 43,
+    "novel": 0.2041,
+    "capture_q": 0.2173,
+    "capture_l": 0.3083
+   },
+   {
+    "strategy": "pca_label",
+    "K": 4,
+    "novel": 0.4006,
+    "capture_q": 0.0368,
+    "capture_l": 0.1181
+   },
+   {
+    "strategy": "pca_label",
+    "K": 8,
+    "novel": 0.36,
+    "capture_q": 0.0592,
+    "capture_l": 0.2028
+   },
+   {
+    "strategy": "pca_label",
+    "K": 16,
+    "novel": 0.2564,
+    "capture_q": 0.0928,
+    "capture_l": 0.2944
+   },
+   {
+    "strategy": "pca_label",
+    "K": 32,
+    "novel": 0.3483,
+    "capture_q": 0.1513,
+    "capture_l": 0.4096
+   },
+   {
+    "strategy": "pca_label",
+    "K": 43,
+    "novel": 0.3697,
+    "capture_q": 0.1827,
+    "capture_l": 0.4488
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 4,
+    "novel": 0.1496,
+    "capture_q": 0.0069,
+    "capture_l": 0.007
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 8,
+    "novel": 0.1859,
+    "capture_q": 0.0084,
+    "capture_l": 0.0061
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 16,
+    "novel": 0.1774,
+    "capture_q": 0.0234,
+    "capture_l": 0.0219
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 32,
+    "novel": 0.1731,
+    "capture_q": 0.0415,
+    "capture_l": 0.0346
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 43,
+    "novel": 0.2874,
+    "capture_q": 0.0515,
+    "capture_l": 0.0514
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 64,
+    "novel": 0.1709,
+    "capture_q": 0.0938,
+    "capture_l": 0.1034
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 128,
+    "novel": 0.172,
+    "capture_q": 0.1504,
+    "capture_l": 0.1568
+   },
+   {
+    "strategy": "random_orthonormal",
+    "K": 256,
+    "novel": 0.1709,
+    "capture_q": 0.3538,
+    "capture_l": 0.359
+   }
+  ]
+ },
+ "correlations": {
+  "m3": {
+   "capture_q_vs_novel": -0.0834,
+   "capture_l_vs_novel": 0.3282,
+   "n_cells": 60
+  },
+  "gemma_symmetric": {
+   "capture_q_vs_novel": -0.0114,
+   "capture_l_vs_novel": 0.1447,
+   "n_cells": 60
+  }
+ },
+ "verdict": "NOT THE MECHANISM \u2014 capture barely predicts transfer (q -0.047, l +0.236). Redundancy with the encoder does not explain which bases work, so exp57's negative result stands as a negative result rather than an inverted one.",
+ "registered_expectation": "POSITIVE with capture_l, weak-to-absent with capture_q; a negative correlation means the redundancy account is right and I am wrong",
+ "scope": "Rebuilds every basis measured in exp56 and exp57 and asks what fraction of the encoder's own question and label representation lies inside each basis span, then correlates that against already-measured novel transfer. This exists to give the 'symmetry hurts' reinterpretation of exp57 a falsifier of its own, since reinterpreting a negative result as a confirmation is otherwise unfalsifiable. Correlation runs over the whole explored space, not the winners."
+}

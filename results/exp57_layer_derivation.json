@@ -1,0 +1,422 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T19:25:43.589990+00:00",
+  "commit": "3ed9b6bd6bf5a13abc3456ac4de1b63014d6d2ed",
+  "dirty": true,
+  "command": "scripts/exp57_layer_derivation.py both",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "KS": [
+    4,
+    8,
+    16,
+    32,
+    43,
+    64,
+    87
+   ],
+   "STRATS": [
+    "lda_between",
+    "kmeans_range",
+    "kmeans_domrange",
+    "lda_range",
+    "lda_domrange"
+   ],
+   "N_HOLD_REL": 12
+  }
+ },
+ "n_relations": 56,
+ "n_trained": 44,
+ "chance": 0.0179,
+ "arms": {
+  "m3": {
+   "control_novel_K32": 0.2767,
+   "cells": {
+    "lda_between_K4": {
+     "strategy": "lda_between",
+     "K": 4,
+     "trained": 0.4283,
+     "novel": 0.0876
+    },
+    "lda_between_K8": {
+     "strategy": "lda_between",
+     "K": 8,
+     "trained": 0.5789,
+     "novel": 0.1357
+    },
+    "lda_between_K16": {
+     "strategy": "lda_between",
+     "K": 16,
+     "trained": 0.6745,
+     "novel": 0.2009
+    },
+    "lda_between_K32": {
+     "strategy": "lda_between",
+     "K": 32,
+     "trained": 0.7027,
+     "novel": 0.2767
+    },
+    "lda_between_K43": {
+     "strategy": "lda_between",
+     "K": 43,
+     "trained": 0.7075,
+     "novel": 0.2393
+    },
+    "kmeans_range_K4": {
+     "strategy": "kmeans_range",
+     "K": 4,
+     "trained": 0.2185,
+     "novel": 0.1058
+    },
+    "kmeans_range_K8": {
+     "strategy": "kmeans_range",
+     "K": 8,
+     "trained": 0.4388,
+     "novel": 0.0534
+    },
+    "kmeans_range_K16": {
+     "strategy": "kmeans_range",
+     "K": 16,
+     "trained": 0.566,
+     "novel": 0.0246
+    },
+    "kmeans_range_K32": {
+     "strategy": "kmeans_range",
+     "K": 32,
+     "trained": 0.5889,
+     "novel": 0.0288
+    },
+    "kmeans_range_K43": {
+     "strategy": "kmeans_range",
+     "K": 43,
+     "trained": 0.5894,
+     "novel": 0.0096
+    },
+    "kmeans_domrange_K4": {
+     "strategy": "kmeans_domrange",
+     "K": 4,
+     "trained": 0.1769,
+     "novel": 0.0011
+    },
+    "kmeans_domrange_K8": {
+     "strategy": "kmeans_domrange",
+     "K": 8,
+     "trained": 0.3972,
+     "novel": 0.1197
+    },
+    "kmeans_domrange_K16": {
+     "strategy": "kmeans_domrange",
+     "K": 16,
+     "trained": 0.5191,
+     "novel": 0.0107
+    },
+    "kmeans_domrange_K32": {
+     "strategy": "kmeans_domrange",
+     "K": 32,
+     "trained": 0.5903,
+     "novel": 0.0769
+    },
+    "kmeans_domrange_K43": {
+     "strategy": "kmeans_domrange",
+     "K": 43,
+     "trained": 0.609,
+     "novel": 0.0288
+    },
+    "kmeans_domrange_K64": {
+     "strategy": "kmeans_domrange",
+     "K": 64,
+     "trained": 0.6047,
+     "novel": 0.016
+    },
+    "kmeans_domrange_K87": {
+     "strategy": "kmeans_domrange",
+     "K": 87,
+     "trained": 0.6147,
+     "novel": 0.0224
+    },
+    "lda_range_K4": {
+     "strategy": "lda_range",
+     "K": 4,
+     "trained": 0.2548,
+     "novel": 0.0053
+    },
+    "lda_range_K8": {
+     "strategy": "lda_range",
+     "K": 8,
+     "trained": 0.5048,
+     "novel": 0.0331
+    },
+    "lda_range_K16": {
+     "strategy": "lda_range",
+     "K": 16,
+     "trained": 0.6262,
+     "novel": 0.0406
+    },
+    "lda_range_K32": {
+     "strategy": "lda_range",
+     "K": 32,
+     "trained": 0.6802,
+     "novel": 0.0417
+    },
+    "lda_range_K43": {
+     "strategy": "lda_range",
+     "K": 43,
+     "trained": 0.6993,
+     "novel": 0.0363
+    },
+    "lda_domrange_K4": {
+     "strategy": "lda_domrange",
+     "K": 4,
+     "trained": 0.282,
+     "novel": 0.0118
+    },
+    "lda_domrange_K8": {
+     "strategy": "lda_domrange",
+     "K": 8,
+     "trained": 0.5186,
+     "novel": 0.0192
+    },
+    "lda_domrange_K16": {
+     "strategy": "lda_domrange",
+     "K": 16,
+     "trained": 0.6276,
+     "novel": 0.047
+    },
+    "lda_domrange_K32": {
+     "strategy": "lda_domrange",
+     "K": 32,
+     "trained": 0.6821,
+     "novel": 0.0342
+    },
+    "lda_domrange_K43": {
+     "strategy": "lda_domrange",
+     "K": 43,
+     "trained": 0.6902,
+     "novel": 0.0267
+    },
+    "lda_domrange_K64": {
+     "strategy": "lda_domrange",
+     "K": 64,
+     "trained": 0.6898,
+     "novel": 0.0235
+    },
+    "lda_domrange_K87": {
+     "strategy": "lda_domrange",
+     "K": 87,
+     "trained": 0.6922,
+     "novel": 0.0288
+    }
+   }
+  },
+  "gemma_symmetric": {
+   "control_novel_K32": 0.453,
+   "cells": {
+    "lda_between_K4": {
+     "strategy": "lda_between",
+     "K": 4,
+     "trained": 0.4852,
+     "novel": 0.2308
+    },
+    "lda_between_K8": {
+     "strategy": "lda_between",
+     "K": 8,
+     "trained": 0.6028,
+     "novel": 0.3632
+    },
+    "lda_between_K16": {
+     "strategy": "lda_between",
+     "K": 16,
+     "trained": 0.717,
+     "novel": 0.4145
+    },
+    "lda_between_K32": {
+     "strategy": "lda_between",
+     "K": 32,
+     "trained": 0.7146,
+     "novel": 0.453
+    },
+    "lda_between_K43": {
+     "strategy": "lda_between",
+     "K": 43,
+     "trained": 0.7185,
+     "novel": 0.4177
+    },
+    "kmeans_range_K4": {
+     "strategy": "kmeans_range",
+     "K": 4,
+     "trained": 0.2094,
+     "novel": 0.1015
+    },
+    "kmeans_range_K8": {
+     "strategy": "kmeans_range",
+     "K": 8,
+     "trained": 0.3728,
+     "novel": 0.3365
+    },
+    "kmeans_range_K16": {
+     "strategy": "kmeans_range",
+     "K": 16,
+     "trained": 0.4613,
+     "novel": 0.0449
+    },
+    "kmeans_range_K32": {
+     "strategy": "kmeans_range",
+     "K": 32,
+     "trained": 0.4957,
+     "novel": 0.2842
+    },
+    "kmeans_range_K43": {
+     "strategy": "kmeans_range",
+     "K": 43,
+     "trained": 0.4489,
+     "novel": 0.2489
+    },
+    "kmeans_domrange_K4": {
+     "strategy": "kmeans_domrange",
+     "K": 4,
+     "trained": 0.164,
+     "novel": 0.0534
+    },
+    "kmeans_domrange_K8": {
+     "strategy": "kmeans_domrange",
+     "K": 8,
+     "trained": 0.3628,
+     "novel": 0.2756
+    },
+    "kmeans_domrange_K16": {
+     "strategy": "kmeans_domrange",
+     "K": 16,
+     "trained": 0.4704,
+     "novel": 0.1944
+    },
+    "kmeans_domrange_K32": {
+     "strategy": "kmeans_domrange",
+     "K": 32,
+     "trained": 0.5349,
+     "novel": 0.0897
+    },
+    "kmeans_domrange_K43": {
+     "strategy": "kmeans_domrange",
+     "K": 43,
+     "trained": 0.5727,
+     "novel": 0.2895
+    },
+    "kmeans_domrange_K64": {
+     "strategy": "kmeans_domrange",
+     "K": 64,
+     "trained": 0.5105,
+     "novel": 0.2115
+    },
+    "kmeans_domrange_K87": {
+     "strategy": "kmeans_domrange",
+     "K": 87,
+     "trained": 0.5115,
+     "novel": 0.2489
+    },
+    "lda_range_K4": {
+     "strategy": "lda_range",
+     "K": 4,
+     "trained": 0.261,
+     "novel": 0.2244
+    },
+    "lda_range_K8": {
+     "strategy": "lda_range",
+     "K": 8,
+     "trained": 0.4704,
+     "novel": 0.2735
+    },
+    "lda_range_K16": {
+     "strategy": "lda_range",
+     "K": 16,
+     "trained": 0.5731,
+     "novel": 0.3088
+    },
+    "lda_range_K32": {
+     "strategy": "lda_range",
+     "K": 32,
+     "trained": 0.6735,
+     "novel": 0.2062
+    },
+    "lda_range_K43": {
+     "strategy": "lda_range",
+     "K": 43,
+     "trained": 0.7022,
+     "novel": 0.2041
+    },
+    "lda_domrange_K4": {
+     "strategy": "lda_domrange",
+     "K": 4,
+     "trained": 0.25,
+     "novel": 0.0192
+    },
+    "lda_domrange_K8": {
+     "strategy": "lda_domrange",
+     "K": 8,
+     "trained": 0.5053,
+     "novel": 0.2692
+    },
+    "lda_domrange_K16": {
+     "strategy": "lda_domrange",
+     "K": 16,
+     "trained": 0.588,
+     "novel": 0.2853
+    },
+    "lda_domrange_K32": {
+     "strategy": "lda_domrange",
+     "K": 32,
+     "trained": 0.652,
+     "novel": 0.2628
+    },
+    "lda_domrange_K43": {
+     "strategy": "lda_domrange",
+     "K": 43,
+     "trained": 0.6735,
+     "novel": 0.203
+    },
+    "lda_domrange_K64": {
+     "strategy": "lda_domrange",
+     "K": 64,
+     "trained": 0.707,
+     "novel": 0.203
+    },
+    "lda_domrange_K87": {
+     "strategy": "lda_domrange",
+     "K": 87,
+     "trained": 0.7309,
+     "novel": 0.1966
+    }
+   }
+  }
+ },
+ "verdicts": {
+  "m3": {
+   "best_profile": {
+    "strategy": "kmeans_domrange",
+    "K": 8,
+    "trained": 0.3972,
+    "novel": 0.1197
+   },
+   "gain_over_control": -0.157,
+   "verdict": "FALSIFIED \u2014 profile-derived LOSES by -0.1570. The layering is a description we are imposing, not a structure the data has, and the adjacent-layer principle should be dropped."
+  },
+  "gemma_symmetric": {
+   "best_profile": {
+    "strategy": "kmeans_range",
+    "K": 8,
+    "trained": 0.3728,
+    "novel": 0.3365
+   },
+   "gain_over_control": -0.1165,
+   "verdict": "FALSIFIED \u2014 profile-derived LOSES by -0.1165. The layering is a description we are imposing, not a structure the data has, and the adjacent-layer principle should be dropped."
+  }
+ },
+ "registered_prediction": "profile-derived bases beat lda_between MODESTLY (0.45 -> ~0.50); a large jump would be surprising and needs a second holdout draw before belief; a loss falsifies the adjacent-layer principle",
+ "scope": "Phase 1 of the layering idea: does a relation's basis do better when derived from the layer BELOW (its domain/range profiles \u2014 what it connects) than from its own labels or from its question distribution? Coordinates remain unit(label @ PC.T) in every strategy, so only the basis moves and zero-instance arrival is untouched. All bases fitted on TRAINED relations only. Reuses exp56's caches under a content assert, and the lda_between control must reproduce exp56's number in-run or the script aborts \u2014 no pasted baselines (D158). Identification level only, so the ordering still needs end-to-end confirmation before any pipeline change."
+}
