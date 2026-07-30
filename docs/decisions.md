@@ -2,6 +2,60 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D170: The encoders CROSS on the refusal frontier — Gemma answers better, M3 refuses better, and this system is built around refusing
+
+`scripts/exp61_refusal_frontier.py`. D169 left the encoder question open because matching on trained-answerable coverage does not constrain behaviour on unanswerable questions: the swap bought +0.122 on novel answering and paid −0.299 on novel refusal, which is two points on a frontier rather than two qualities. This reports the **whole frontier** — both arms on the same basis (`kmeans_label` K=48, so the same residual dimensionality and a commensurate threshold), swept across fourteen thresholds.
+
+**Novel-relation answering at matched novel-unanswerable refusal:**
+
+| refusal | M3 | Gemma | Δ |
+|---|---|---|---|
+| 0.30 | 0.784 | **0.865** | +0.081 |
+| 0.40 | 0.784 | 0.840 | +0.056 |
+| 0.50 | 0.773 | 0.784 | +0.010 |
+| 0.60 | **0.750** | 0.696 | −0.054 |
+| 0.70 | **0.693** | 0.589 | −0.103 |
+| 0.80 | **0.567** | 0.455 | −0.112 |
+
+**The curves cross at ≈0.52 refusal.** Gemma wins where the system is willing to answer aggressively; M3 wins where it is required to refuse honestly. The mean delta is −0.021 — near zero, and the least informative number available.
+
+**The saturated endpoints say something the crossover alone does not.** M3 tops out at 0.785 correct with **0.205 wrong** and never improves however permissive the threshold. Gemma tops out at 0.866 correct with **0.094 wrong** — a higher ceiling at *half* the error rate. But its refusal falls away faster: at threshold 0.8 Gemma is already down to 0.33 refusal while M3 still holds 0.41.
+
+So: **Gemma is better at answering and worse at knowing when not to.** Its residual separates right answers from wrong ones well, and separates answerable questions from unanswerable ones poorly. Those are different jobs and this encoder is better at one of them.
+
+**That lands on the project's central commitment.** The design exists to refuse rather than guess, and D134 had to re-adopt the answer-type gate precisely because refusal was the weak axis (not-applicable refusal 0.050 → 0.693). At the operating region this system actually cares about — above the crossover — **M3 is the better encoder**, and the identification-level advantage measured in D164 does not reach it.
+
+**Which makes one question decisive, and it has not been run.** The answer-type gate is a *separate mechanism* from the residual threshold — it compares returned objects against the range of the relation the question asked, and it was absent from every run in D164–D170. If it lifts Gemma's refusal the way it lifted M3's, the swap becomes a clean win at the operating point that matters. If it does not, this arc ends with an encoder that is better at the thing this project values less.
+
+**Registered prediction was correct**: the curves cross, Gemma more permissive, M3 stricter. Recorded as one right call against a wrong one in D169, not as a trend.
+
+**Law #6 care worth stating.** Matching at a refusal level reads the novel-unanswerable population, so no operating point here is proposed for deployment and none was selected from novel data — the *curve* is the result and the matched readings are a way of reading it. Choosing a threshold from these numbers would be calibrating on the evaluation set.
+
+**Revisit**: (a) the answer-type gate under Gemma, which is now the deciding experiment; (b) one basis, one corpus, one holdout draw; (c) the crossover point (≈0.52) is interpolated from a coarse grid and its location should not be quoted precisely.
+
+## 2026-07-30 — D169: The adoption gate REFUTES the basis recommendation end-to-end — and my threshold rule rewarded abstention
+
+`scripts/exp60_endtoend_gate.py`. Everything in D164–D168 is identification level — argmax over relation coordinates, no store walk, no thresholds — and D158 measured the store's availability filtering at **+0.515** against greedy walking's +0.009. So an ordering measured without the store might simply not survive it. This is the gate that was owed before any pipeline change: encoder × basis crossed on exp31's populations, with one threshold rule applied identically to all four arms.
+
+**`lda_between` K=32 is refuted end-to-end.** It loses on every comparison — at each arm's own threshold (−0.437 Gemma, −0.537 M3) and at matched trained-answerable coverage (−0.115, −0.537). The identification-level ordering **inverted** once the store participates.
+
+| arm (matched coverage) | novel_d1 | unans_novel refusal |
+|---|---|---|
+| m3 `kmeans_label` K=48 — today's pipeline | 0.7419 | 0.6300 |
+| m3 `lda_between` K=32 | 0.2046 | 0.8565 |
+| gemma `kmeans_label` K=48 | **0.8638** | 0.3315 |
+| gemma `lda_between` K=32 | 0.7486 | 0.5510 |
+
+**So D165 does not become a pipeline change.** Its finding stands as a statement about *identification*, and the script's scope said before running that this outcome would have to be reported as such rather than allowed to read as a recommendation. The likely mechanism is the one D158 already measured: a basis optimised to separate relations *in the abstract* is solving a problem the store solves better, and it evidently costs something in the residual arithmetic the walk actually uses.
+
+**A methodological error of mine nearly became the finding.** The first run's threshold rule — "maximise the worst TRAINED population" — includes unanswerable **refusal** in the minimum, so it *rewards abstention*, and it pushed the 32-dimensional arm to a high-refusal operating point where it answered 31% of novel questions at 98% precision while the 48-d arm answered 79% at 95%. Reported as a single number that reads as a −0.44 loss; actually two points on a frontier. Compounding it, a residual norm of 0.6 is not the same quantity in 32 dimensions as in 48 (D125). **The tell was the abstain column, not the verdict line.** The comparison was redone at matched coverage, and `lda_between` still loses — so the conclusion survives the correction, but it would have been the right conclusion for the wrong reason.
+
+**The encoder result is NOT established by this experiment.** At matched trained-answerable coverage the swap gives +0.122 on novel answering — with novel-unanswerable refusal falling 0.6300 → 0.3315 and trained-unanswerable refusal 0.7260 → 0.5780. Matching coverage on *answerable* questions does not pin down behaviour on *unanswerable* ones (law #7), so the arms remain at different points on the answer/refuse trade. Resolved in D170.
+
+**Registered prediction was wrong**, and in the more useful direction: I expected both orderings to hold and compress. One did not hold at all.
+
+**Revisit**: (a) the threshold rule should not put refusal inside a minimum it is trying to maximise — it makes abstention a way to win; (b) `lda_between` may still be right for a system that wants precision over coverage, which is not this one; (c) identification-level results should carry an explicit "not a pipeline recommendation" marker until gated, since three entries were written before this one ran.
+
 ## 2026-07-30 — D168: A basis works in proportion to how well its PARTITION matches the task — and partition alignment buys generalisation only
 
 `scripts/exp59_partition_alignment.py`. The account, proposed by the user after D166 and D167 both came back negative: an embedding space holds many overlapping categorizations **in superposition**, because aligning to any single one would cap what it can express. On that view a basis is useful to the extent it extracts **the partition the task needs** — which is a claim about the query distribution, not about ontology, orthogonality or redundancy.

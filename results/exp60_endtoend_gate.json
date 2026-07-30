@@ -1,0 +1,447 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T21:48:19.255319+00:00",
+  "commit": "32f58988db03c5350813ba67e789349ff3586bac",
+  "dirty": true,
+  "command": "scripts/exp60_endtoend_gate.py both",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "GRID": [
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.8,
+    1.0,
+    1.2
+   ],
+   "N_HOLD_REL": 12,
+   "MIN_GAIN": 0.2
+  }
+ },
+ "n_relations": 61,
+ "n_trained": 49,
+ "population_sizes": {
+  "eval_d1_inst": 827,
+  "eval_d1_novel1": 1476,
+  "eval_d2_inst": 870,
+  "eval_d2_novel1": 2031,
+  "eval_d2_novel2": 346,
+  "train_d1": 3221,
+  "train_d2": 3642,
+  "train_d3": 6111,
+  "unans_novel": 2000,
+  "unans_trained": 2000
+ },
+ "arms": {
+  "m3__kmeans_label_K48": {
+   "threshold": 0.6,
+   "dim": 48,
+   "results": {
+    "train_d1": {
+     "correct": 0.9708,
+     "wrong": 0.005,
+     "abstain": 0.0242,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.712,
+     "wrong": 0.0398,
+     "abstain": 0.2482,
+     "n": 3642
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.274,
+     "abstain": 0.726,
+     "n": 2000
+    },
+    "eval_d1_inst": {
+     "correct": 0.9504,
+     "wrong": 0.006,
+     "abstain": 0.0435,
+     "n": 827
+    },
+    "eval_d1_novel1": {
+     "correct": 0.7419,
+     "wrong": 0.1667,
+     "abstain": 0.0915,
+     "n": 1476
+    },
+    "eval_d2_novel1": {
+     "correct": 0.6913,
+     "wrong": 0.1694,
+     "abstain": 0.1393,
+     "n": 2031
+    },
+    "unans_novel": {
+     "correct": 0.0,
+     "wrong": 0.37,
+     "abstain": 0.63,
+     "n": 2000
+    }
+   }
+  },
+  "m3__lda_between_K32": {
+   "threshold": 0.6,
+   "dim": 32,
+   "results": {
+    "train_d1": {
+     "correct": 0.9758,
+     "wrong": 0.0006,
+     "abstain": 0.0236,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.9152,
+     "wrong": 0.0044,
+     "abstain": 0.0805,
+     "n": 3642
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.0705,
+     "abstain": 0.9295,
+     "n": 2000
+    },
+    "eval_d1_inst": {
+     "correct": 0.9674,
+     "wrong": 0.0,
+     "abstain": 0.0326,
+     "n": 827
+    },
+    "eval_d1_novel1": {
+     "correct": 0.2046,
+     "wrong": 0.1321,
+     "abstain": 0.6633,
+     "n": 1476
+    },
+    "eval_d2_novel1": {
+     "correct": 0.2349,
+     "wrong": 0.0955,
+     "abstain": 0.6696,
+     "n": 2031
+    },
+    "unans_novel": {
+     "correct": 0.0,
+     "wrong": 0.1435,
+     "abstain": 0.8565,
+     "n": 2000
+    }
+   }
+  },
+  "gemma__kmeans_label_K48": {
+   "threshold": 0.6,
+   "dim": 48,
+   "results": {
+    "train_d1": {
+     "correct": 0.9391,
+     "wrong": 0.009,
+     "abstain": 0.0518,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.6628,
+     "wrong": 0.064,
+     "abstain": 0.2732,
+     "n": 3642
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.298,
+     "abstain": 0.702,
+     "n": 2000
+    },
+    "eval_d1_inst": {
+     "correct": 0.9129,
+     "wrong": 0.0145,
+     "abstain": 0.0726,
+     "n": 827
+    },
+    "eval_d1_novel1": {
+     "correct": 0.7459,
+     "wrong": 0.0413,
+     "abstain": 0.2127,
+     "n": 1476
+    },
+    "eval_d2_novel1": {
+     "correct": 0.6613,
+     "wrong": 0.1526,
+     "abstain": 0.1861,
+     "n": 2031
+    },
+    "unans_novel": {
+     "correct": 0.0,
+     "wrong": 0.449,
+     "abstain": 0.551,
+     "n": 2000
+    }
+   }
+  },
+  "gemma__lda_between_K32": {
+   "threshold": 0.6,
+   "dim": 32,
+   "results": {
+    "train_d1": {
+     "correct": 0.9336,
+     "wrong": 0.0047,
+     "abstain": 0.0618,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.8795,
+     "wrong": 0.0047,
+     "abstain": 0.1159,
+     "n": 3642
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.0865,
+     "abstain": 0.9135,
+     "n": 2000
+    },
+    "eval_d1_inst": {
+     "correct": 0.9238,
+     "wrong": 0.0073,
+     "abstain": 0.0689,
+     "n": 827
+    },
+    "eval_d1_novel1": {
+     "correct": 0.3089,
+     "wrong": 0.0054,
+     "abstain": 0.6856,
+     "n": 1476
+    },
+    "eval_d2_novel1": {
+     "correct": 0.2654,
+     "wrong": 0.0748,
+     "abstain": 0.6598,
+     "n": 2031
+    },
+    "unans_novel": {
+     "correct": 0.0,
+     "wrong": 0.1525,
+     "abstain": 0.8475,
+     "n": 2000
+    }
+   }
+  }
+ },
+ "gains_novel_d1_own_threshold": {
+  "basis_gain_gemma": -0.437,
+  "basis_gain_m3": -0.5373,
+  "encoder_gain_kmeans_label_K48": 0.004,
+  "encoder_gain_lda_between_K32": 0.1043
+ },
+ "matched_coverage": {
+  "m3__kmeans_label_K48": {
+   "threshold": 0.6,
+   "train_d1_coverage": 0.9758,
+   "results": {
+    "train_d1": {
+     "correct": 0.9708,
+     "wrong": 0.005,
+     "abstain": 0.0242,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.712,
+     "wrong": 0.0398,
+     "abstain": 0.2482,
+     "n": 3642
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.274,
+     "abstain": 0.726,
+     "n": 2000
+    },
+    "eval_d1_inst": {
+     "correct": 0.9504,
+     "wrong": 0.006,
+     "abstain": 0.0435,
+     "n": 827
+    },
+    "eval_d1_novel1": {
+     "correct": 0.7419,
+     "wrong": 0.1667,
+     "abstain": 0.0915,
+     "n": 1476
+    },
+    "eval_d2_novel1": {
+     "correct": 0.6913,
+     "wrong": 0.1694,
+     "abstain": 0.1393,
+     "n": 2031
+    },
+    "unans_novel": {
+     "correct": 0.0,
+     "wrong": 0.37,
+     "abstain": 0.63,
+     "n": 2000
+    }
+   }
+  },
+  "m3__lda_between_K32": {
+   "threshold": 0.6,
+   "train_d1_coverage": 0.9764,
+   "results": {
+    "train_d1": {
+     "correct": 0.9758,
+     "wrong": 0.0006,
+     "abstain": 0.0236,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.9152,
+     "wrong": 0.0044,
+     "abstain": 0.0805,
+     "n": 3642
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.0705,
+     "abstain": 0.9295,
+     "n": 2000
+    },
+    "eval_d1_inst": {
+     "correct": 0.9674,
+     "wrong": 0.0,
+     "abstain": 0.0326,
+     "n": 827
+    },
+    "eval_d1_novel1": {
+     "correct": 0.2046,
+     "wrong": 0.1321,
+     "abstain": 0.6633,
+     "n": 1476
+    },
+    "eval_d2_novel1": {
+     "correct": 0.2349,
+     "wrong": 0.0955,
+     "abstain": 0.6696,
+     "n": 2031
+    },
+    "unans_novel": {
+     "correct": 0.0,
+     "wrong": 0.1435,
+     "abstain": 0.8565,
+     "n": 2000
+    }
+   }
+  },
+  "gemma__kmeans_label_K48": {
+   "threshold": 0.8,
+   "train_d1_coverage": 0.9975,
+   "results": {
+    "train_d1": {
+     "correct": 0.9509,
+     "wrong": 0.0466,
+     "abstain": 0.0025,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.6658,
+     "wrong": 0.1186,
+     "abstain": 0.2155,
+     "n": 3642
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.422,
+     "abstain": 0.578,
+     "n": 2000
+    },
+    "eval_d1_inst": {
+     "correct": 0.9335,
+     "wrong": 0.0605,
+     "abstain": 0.006,
+     "n": 827
+    },
+    "eval_d1_novel1": {
+     "correct": 0.8638,
+     "wrong": 0.0942,
+     "abstain": 0.042,
+     "n": 1476
+    },
+    "eval_d2_novel1": {
+     "correct": 0.7134,
+     "wrong": 0.2117,
+     "abstain": 0.0748,
+     "n": 2031
+    },
+    "unans_novel": {
+     "correct": 0.0,
+     "wrong": 0.6685,
+     "abstain": 0.3315,
+     "n": 2000
+    }
+   }
+  },
+  "gemma__lda_between_K32": {
+   "threshold": 0.8,
+   "train_d1_coverage": 0.9863,
+   "results": {
+    "train_d1": {
+     "correct": 0.9463,
+     "wrong": 0.04,
+     "abstain": 0.0137,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.8907,
+     "wrong": 0.0302,
+     "abstain": 0.0791,
+     "n": 3642
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.2805,
+     "abstain": 0.7195,
+     "n": 2000
+    },
+    "eval_d1_inst": {
+     "correct": 0.9395,
+     "wrong": 0.0363,
+     "abstain": 0.0242,
+     "n": 827
+    },
+    "eval_d1_novel1": {
+     "correct": 0.7486,
+     "wrong": 0.0549,
+     "abstain": 0.1965,
+     "n": 1476
+    },
+    "eval_d2_novel1": {
+     "correct": 0.5564,
+     "wrong": 0.1226,
+     "abstain": 0.321,
+     "n": 2031
+    },
+    "unans_novel": {
+     "correct": 0.0,
+     "wrong": 0.449,
+     "abstain": 0.551,
+     "n": 2000
+    }
+   }
+  }
+ },
+ "gains_novel_d1_matched": {
+  "basis_gain_gemma": -0.1152,
+  "basis_gain_m3": -0.5373,
+  "encoder_gain_kmeans_label_K48": 0.1219,
+  "encoder_gain_lda_between_K32": 0.544
+ },
+ "verdict": "at matched coverage: encoder change CONFIRMED (+0.3330); basis change NOT confirmed (-0.3262)",
+ "registered_prediction": "both orderings hold but compress; the Gemma advantage survives clearly, the basis advantage shrinks toward noise, because D158 measured the store as supplying +0.515 against the walk's +0.009",
+ "scope": "The adoption gate. D164-D168 are identification level \u2014 no store walk, no thresholds \u2014 and D158 measured store filtering at +0.515, so an ordering measured without the store may not survive with it. Encoder x basis crossed on exp31's populations, with ONE threshold rule applied identically to every arm and swept on TRAINED populations only (law #6). Answerable and unanswerable never averaged (law #7); novel-relation populations kept separate. If the identification-level ordering inverts here, D164-D168 are statements about identification and must not be read as pipeline recommendations."
+}

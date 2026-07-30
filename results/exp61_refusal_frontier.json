@@ -1,0 +1,282 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T22:42:46.938948+00:00",
+  "commit": "32f58988db03c5350813ba67e789349ff3586bac",
+  "dirty": true,
+  "command": "scripts/exp61_refusal_frontier.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "GRID": [
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0,
+    1.1,
+    1.2,
+    1.4,
+    1.6,
+    2.0
+   ],
+   "K_BASIS": 48,
+   "MATCH_AT": [
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+   ]
+  }
+ },
+ "n_relations": 61,
+ "n_trained": 49,
+ "curves": {
+  "m3": [
+   {
+    "thr": 0.2,
+    "novel_correct": 0.1131,
+    "novel_wrong": 0.0359,
+    "unans_novel_refuse": 0.985,
+    "train_d1_correct": 0.7727
+   },
+   {
+    "thr": 0.3,
+    "novel_correct": 0.3618,
+    "novel_wrong": 0.107,
+    "unans_novel_refuse": 0.923,
+    "train_d1_correct": 0.9221
+   },
+   {
+    "thr": 0.4,
+    "novel_correct": 0.5325,
+    "novel_wrong": 0.145,
+    "unans_novel_refuse": 0.823,
+    "train_d1_correct": 0.9578
+   },
+   {
+    "thr": 0.5,
+    "novel_correct": 0.6714,
+    "novel_wrong": 0.1572,
+    "unans_novel_refuse": 0.73,
+    "train_d1_correct": 0.9696
+   },
+   {
+    "thr": 0.6,
+    "novel_correct": 0.7419,
+    "novel_wrong": 0.1667,
+    "unans_novel_refuse": 0.63,
+    "train_d1_correct": 0.9708
+   },
+   {
+    "thr": 0.7,
+    "novel_correct": 0.7703,
+    "novel_wrong": 0.185,
+    "unans_novel_refuse": 0.5245,
+    "train_d1_correct": 0.9733
+   },
+   {
+    "thr": 0.8,
+    "novel_correct": 0.7839,
+    "novel_wrong": 0.2012,
+    "unans_novel_refuse": 0.412,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 0.9,
+    "novel_correct": 0.7839,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.3205,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 1.0,
+    "novel_correct": 0.7846,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.2355,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 1.1,
+    "novel_correct": 0.7846,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.165,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 1.2,
+    "novel_correct": 0.7852,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.094,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 1.4,
+    "novel_correct": 0.7852,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.023,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 1.6,
+    "novel_correct": 0.7852,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.007,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 2.0,
+    "novel_correct": 0.7852,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.0005,
+    "train_d1_correct": 0.9745
+   }
+  ],
+  "gemma": [
+   {
+    "thr": 0.2,
+    "novel_correct": 0.29,
+    "novel_wrong": 0.0027,
+    "unans_novel_refuse": 0.8885,
+    "train_d1_correct": 0.6734
+   },
+   {
+    "thr": 0.3,
+    "novel_correct": 0.4194,
+    "novel_wrong": 0.0041,
+    "unans_novel_refuse": 0.823,
+    "train_d1_correct": 0.8181
+   },
+   {
+    "thr": 0.4,
+    "novel_correct": 0.5407,
+    "novel_wrong": 0.0075,
+    "unans_novel_refuse": 0.7435,
+    "train_d1_correct": 0.8889
+   },
+   {
+    "thr": 0.5,
+    "novel_correct": 0.6457,
+    "novel_wrong": 0.0129,
+    "unans_novel_refuse": 0.6495,
+    "train_d1_correct": 0.9249
+   },
+   {
+    "thr": 0.6,
+    "novel_correct": 0.7459,
+    "novel_wrong": 0.0413,
+    "unans_novel_refuse": 0.551,
+    "train_d1_correct": 0.9391
+   },
+   {
+    "thr": 0.7,
+    "novel_correct": 0.8238,
+    "novel_wrong": 0.0745,
+    "unans_novel_refuse": 0.4455,
+    "train_d1_correct": 0.9478
+   },
+   {
+    "thr": 0.8,
+    "novel_correct": 0.8638,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.3315,
+    "train_d1_correct": 0.9509
+   },
+   {
+    "thr": 0.9,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.258,
+    "train_d1_correct": 0.9509
+   },
+   {
+    "thr": 1.0,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.182,
+    "train_d1_correct": 0.9516
+   },
+   {
+    "thr": 1.1,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.1185,
+    "train_d1_correct": 0.9516
+   },
+   {
+    "thr": 1.2,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.0795,
+    "train_d1_correct": 0.9519
+   },
+   {
+    "thr": 1.4,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.027,
+    "train_d1_correct": 0.9519
+   },
+   {
+    "thr": 1.6,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.007,
+    "train_d1_correct": 0.9519
+   },
+   {
+    "thr": 2.0,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.0,
+    "train_d1_correct": 0.9519
+   }
+  ]
+ },
+ "matched_at_refusal": {
+  "0.3": {
+   "m3": 0.7841,
+   "gemma": 0.8647,
+   "delta": 0.0806
+  },
+  "0.4": {
+   "m3": 0.7839,
+   "gemma": 0.8398,
+   "delta": 0.0559
+  },
+  "0.5": {
+   "m3": 0.7733,
+   "gemma": 0.7836,
+   "delta": 0.0103
+  },
+  "0.6": {
+   "m3": 0.75,
+   "gemma": 0.6961,
+   "delta": -0.0539
+  },
+  "0.7": {
+   "m3": 0.6925,
+   "gemma": 0.5893,
+   "delta": -0.1033
+  },
+  "0.8": {
+   "m3": 0.5669,
+   "gemma": 0.4545,
+   "delta": -0.1124
+  }
+ },
+ "verdict": "CURVES CROSS \u2014 mean -0.0205 but the sign is not constant across refusal levels, so the swap is a TRADE and which encoder is better depends on the operating point a deployment wants.",
+ "registered_prediction": "the curves cross \u2014 Gemma answers more at permissive thresholds and M3 refuses better at strict ones; outright Gemma dominance would mean the hedge in exp60 was wrong",
+ "scope": "Reports the whole answer/refuse frontier rather than a point, because exp60 matched on trained-answerable coverage and that does not pin down behaviour on unanswerable questions \u2014 the +0.122 answering gain came with a -0.299 refusal loss. Both arms use the SAME basis (kmeans_label K=48) and therefore the same residual dimensionality, so the threshold is commensurate across them, which it was not in exp60's basis comparison. NO operating point is selected from novel data: the curve is the result and the matched readings are a way of reading it, not a calibration (law #6). Nothing here is proposed for deployment."
+}
