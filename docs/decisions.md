@@ -44,7 +44,7 @@ That both survived four families of adjudication and fell to an afternoon of rea
 | 1-NN | 0.975 | 0.975 | 0.975 | 0.975 | 0.977 | 0.969 | 0.967 | 0.969 | 0.983 |
 | **gap** | 0.218 | 0.145 | 0.131 | 0.114 | **0.087** | 0.093 | 0.085 | 0.081 | **0.091** |
 
-The tail slope over 14/16/18 is **+0.0016 per alias** — flat, if anything rising. The gap at 18 aliases is **0.0913** against a 95% half-width of **0.0258**, so the floor is three and a half times the noise. Adding eight more aliases past the point D139 stopped at bought nothing.
+The tail slope over 14/16/18 is **+0.0015 per alias** — flat, if anything rising. The gap at 18 aliases is **0.0913** against a 95% half-width of **0.0258**, so the floor is three and a half times the noise. Adding eight more aliases past the point D139 stopped at bought nothing.
 
 **The mechanism is the head's ceiling, not retrieval's climb.** 1-NN is at **0.975 from two aliases onward** and never moves. The head climbs 0.757 → 0.892 and stops. So this is not a race that retrieval keeps winning; it is a level the head does not reach.
 
