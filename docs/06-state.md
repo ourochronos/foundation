@@ -1,6 +1,6 @@
-# Current state — 2026-07-30 (encoder/anchor/basis probes complete; through D168)
+# Current state — 2026-07-30 (probes complete and GATED; through D170)
 
-**Fastest orientation**: [decisions.md](decisions.md) D168 → D164 → D158, then
+**Fastest orientation**: [decisions.md](decisions.md) D170 → D169 → D158, then
 "where a pivot lands" at the bottom. **Nothing is running.** Working tree clean
 apart from three soak-log files that rewrite themselves.
 
@@ -49,17 +49,20 @@ remaining justification is cost, not accuracy — untested where enumeration is
 expensive. The 0.534 baseline this claim rested on was a literal pasted from
 another script; recomputed in-run it is 0.8138.
 
-**BGE-M3 was the bottleneck, not the method** (D164). Novel-relation transfer
-in raw label space: M3 **0.0032** (below chance), EmbeddingGemma **0.1709** —
-53×, identical task and head. So D125's basis rescue (0.293 → 0.742) is
-substantially evidence that *M3 needed rescuing*, and the basis's measured
-value should be expected to shrink under a better encoder.
+**BGE-M3 was the bottleneck for IDENTIFICATION** (D164). Novel-relation
+transfer in raw label space: M3 **0.0032** (below chance), EmbeddingGemma
+**0.1709** — 53×, identical task and head. So D125's basis rescue
+(0.293 → 0.742) is substantially evidence that *M3 needed rescuing*.
+**⚠ Does not carry end-to-end**: with the store participating the encoders
+cross on the refusal frontier and the swap is a trade, not an upgrade (D170).
 
-**Anchors should SEPARATE relations, not cover them** (D165). Top-K
-eigenvectors of the between-relation scatter (`lda_between`) beat k-means on
-labels on *both* axes. Best cell: EmbeddingGemma, symmetric prefixes,
-`lda_between` K=32 — 0.7146 trained / 0.4530 novel. No M3 cell survives on the
-global Pareto frontier.
+**Anchors should SEPARATE relations, not cover them — AT IDENTIFICATION LEVEL
+ONLY** (D165). Top-K eigenvectors of the between-relation scatter
+(`lda_between` K=32) beat k-means on labels on both axes, 0.7146 trained /
+0.4530 novel. **⚠ REFUTED end-to-end at D169** — it loses at every threshold
+and at matched coverage, on both encoders, once the store participates. Kept
+here because the *identification* result is real and the mechanism (D168) is
+what explains the whole arc; it is not a pipeline recommendation.
 
 **Orthogonality is not the dial.** Coherence-vs-transfer correlation
 −0.002 / +0.051 / +0.170. A perfectly orthogonal random basis caps at 0.287;
@@ -118,6 +121,21 @@ are checked by tests, by `claim_numbers.py`, by four families of raters. The
 sentence summarising them is checked by nothing, and it is where D160, D161,
 D162, D164 and D165 each found their error.
 
+**An identification-level result is not a pipeline result, and D169 is the
+proof.** `lda_between` won by a wide margin in isolation and inverted once the
+store participated — because D158 already measured the store as supplying
++0.515 against the walk's +0.009, so a basis optimised to separate relations
+in the abstract is solving a problem the store solves better. **Anything
+measured without the store carries a "not a recommendation" marker until
+gated.** Three entries were written before that gate ran.
+
+**A threshold rule must not put refusal inside a minimum it maximises.** D169's
+first pass used "maximise the worst trained population" with unanswerable
+*refusal* in the min — which makes abstaining a way to win, and pushed one arm
+to a point where it answered 31% of novel questions at 98% precision while the
+other answered 79% at 95%. Reported as a −0.44 loss; actually two points on a
+frontier. The tell was the abstain column, not the verdict.
+
 ---
 
 ## Standing facts from earlier phases
@@ -145,22 +163,32 @@ reasoner arc; #10 above. All ten are listed in `docs/19-writeup-draft.md` §8.
 
 ## Plans — direction-contingent, discard freely
 
-**Nothing has been adopted.** The encoder swap is *recommended on evidence* and
-has not been made. The pipeline still runs BGE-M3 + `whiten_v0` at 1024-d with
-`K_BASIS=48` k-means-on-labels.
+**Nothing has been adopted, and the gate has now run — it refuted half of what
+was recommended.** The pipeline still runs BGE-M3 + `whiten_v0` at 1024-d with
+`K_BASIS=48` k-means-on-labels, and on current evidence it should stay there.
 
-The gate before changing anything: **confirm D165's ordering end-to-end with
-the walker.** All of D164/D165 is identification-level — no store walk, no
-thresholds — and D158 measured store filtering at +0.515, so the ordering must
-be reconfirmed where the store participates. **Cost ≈ 45 seconds of question
-embedding**: the walker path reads only `poc_claims` (encoder-independent) and
-embeds questions fresh; it never touches `poc.z`.
+**`lda_between` K=32 is refuted end-to-end (D169)** — it loses at every
+threshold and at matched coverage, on both encoders. D165's finding is a
+statement about *identification*, not a pipeline recommendation.
 
-If the swap proceeds, in order:
+**The encoder swap is a TRADE, not an upgrade (D170).** The two curves cross at
+≈0.52 novel-unanswerable refusal: Gemma answers more below it, M3 refuses
+better above it. Saturated, M3 reaches 0.785 correct / 0.205 wrong and Gemma
+0.866 / 0.094 — higher ceiling at half the error rate, but refusal collapses
+faster. **Gemma is better at answering and worse at knowing when not to**, and
+this system is built around refusing rather than guessing.
 
-1. the end-to-end walker gate above;
-2. `K_BASIS=48` k-means → `lda_between` K=32 — likely wrong on either encoder,
-   so worth doing independent of the swap;
+**The deciding experiment, unrun**: the answer-type gate (D134) under Gemma. It
+is a *separate mechanism* from the residual threshold, was absent from every
+run in D164–D170, and lifted M3's not-applicable refusal 0.050 → 0.693. If it
+does the same for Gemma the swap becomes a clean win at the operating region
+that matters; if not, the arc ends with an encoder better at what this project
+values less.
+
+If the swap ever proceeds, in order:
+
+1. the answer-type gate under Gemma (above) — decisive;
+2. ~~`K_BASIS=48` → `lda_between` K=32~~ **withdrawn at D169**;
 3. the codec identity producer. EmbeddingGemma is dense-only, so M3's sparse
    lexical channel has no successor. `codec/decoder.py` already consumes
    `{tokens, weights}` from a **separate** producer, so this is one script
