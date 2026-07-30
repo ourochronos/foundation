@@ -264,27 +264,39 @@ CLAIMS = [
      "src": ("results/exp39_typegate.json",
              ["results", "not_applicable_refusal", "aurc_mixed",
               "type_fit_threshold"])},
-    {"claim": "Refusal must be reported as a risk-coverage curve, not a "
-              "rate: AURC on the mixed benchmark is 0.4734, and the "
-              "earlier chain-break-only 0.1322 overstated selective "
-              "prediction about 3.6x.",
-     "scope": "the residual alone is the best ranker; adding signals "
-              "makes AURC worse",
-     "src": ("results/exp39_typegate.json",
-             ["aurc_mixed", "results", "scope"]),
-     "extra": [("results/exp37_confidence.json",
-                ["selective_prediction", "status_decomposition",
-                 "scope"])]},
-    {"claim": "A parametric head destroys information 1-NN retrieval "
-              "preserves.",
-     "scope": "depth-1 relation identification of KNOWN relations only; "
-              "on NEW relations retrieval collapses to 0.229 against "
-              "the head's 0.782",
-     "src": ("results/exp35_phrasing_diag.json",
-             ["encoder_geometry", "nearest_neighbour_relation_id",
-              "alias_count_ablation", "alternatives_to_head",
-              "head_baseline_2alias"]),
-     "extra": [("results/exp36_append.json", ["results"])]},
+    {"claim": "Retrieval beats a parametric head by DATA-EFFICIENCY, not "
+              "by preserving information the head destroys. Within one "
+              "population the gap closes from 0.230 at 2 aliases to 0.042 "
+              "at 10; and on a second population no head configuration at "
+              "2 aliases (512-2048 hidden, three objectives) reached 1-NN.",
+     "scope": "the CURVE is exp43's 34-relation population; the "
+              "no-configuration-closes-it result is exp49's 56-relation "
+              "population — two populations, two roles, not one curve. "
+              "FALSIFIED IF a head at 2 aliases reaches 1-NN, or the gap "
+              "fails to shrink with alias supply",
+     "src": ("results/exp49_fair_head.json",
+             ["one_nn", "d129_head", "grid", "epoch_sweep", "best_head",
+              "gap_to_1nn"]),
+     "extra": [("results/exp43_scaling.json", ["alias_curve"]),
+               ("results/exp36_append.json", ["results"])]},
+    {"claim": "Entities are free for the parametric head and expensive for "
+              "retrieval: subjects held out of training score 0.766 "
+              "against seen subjects' 0.795 at depth 1, while retrieval "
+              "drops from 0.854 to 0.526.",
+     "scope": "subjects held out of TRAINING QUESTIONS only; their claims "
+              "remain in the store and stay walkable. FALSIFIED IF the "
+              "head's gap exceeds 0.05 on any population — it did not on "
+              "three",
+     "src": ("results/exp50_entity.json",
+             ["results", "gaps", "largest_gap", "n_held_subjects"])},
+    {"claim": "Revision is two operations: editing a fact alone revises "
+              "0.469 of previously-correct answers with 0.274 breakage; "
+              "editing it AND supplying the edges its new target needs "
+              "revises 0.733 with 0.077.",
+     "scope": "same cases, same frozen head, within-experiment "
+              "comparison. FALSIFIED IF supplying downstream edges fails "
+              "to reduce breakage — it reduced it by 0.197",
+     "src": ("results/exp46_revision_fix.json", ["conditions", "verdict"])},
 ]
 
 if sys.argv[1] == "arxiv50":

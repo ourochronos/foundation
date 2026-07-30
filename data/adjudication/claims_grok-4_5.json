@@ -1,51 +1,55 @@
 {
  "audit": "claims",
  "model": "grok-4.5",
- "n": 10,
- "n_judged": 10,
+ "n": 11,
+ "n_judged": 11,
  "raw_agreement": 1.0,
  "cohens_kappa": 1.0,
  "disagreements": [],
  "their_verdicts": {
   "0": {
    "verdict": "SUPPORTED",
-   "reason": "mechanical_check_passed true; basis/coords/head fingerprints identical at freeze and after_append (45b33a69\u2026/c662e066\u2026/79f87c5c\u2026)."
+   "reason": "mechanical_check_passed true; basis/coords/head fingerprints identical at_freeze and after_append (45b33a69\u2026/c662e066\u2026/79f87c5c\u2026)."
   },
   "1": {
    "verdict": "SUPPORTED",
-   "reason": "Head gaps match scope: new_subj 0.9611\u22120.9033=0.058, new_rel 0.9733\u22120.7822=0.191; knn gaps 1\u22120.7533=0.247, 1\u22120.2289=0.771."
+   "reason": "Head gaps match scope: new_subj 0.9611\u22120.9033=0.058, new_rel 0.9733\u22120.7822=0.191; knn gaps 0.247 and 0.771."
   },
   "2": {
    "verdict": "SUPPORTED",
-   "reason": "refused->correct=432 with no other refused_* row \u21d2 432/432=1.000; 432/(1200\u221221)=432/1179=0.366; correct before=20+1=21."
+   "reason": "refused\u2192correct 432 with no other refused\u2192* row (1.000); 432/(715+32+432)=432/1179=0.366; correct before=20+1=21."
   },
   "3": {
    "verdict": "SUPPORTED",
-   "reason": "old\u2192* =431; old\u2192old 1/431=0.002; old\u2192new 198/431=0.459; revision_rate_single=0.235; non-revise mass is refuse/other not old."
+   "reason": "Among old\u2192*: stale old\u2192old 1/431=0.002; old\u2192new 198/431=0.459; single revision_rate 0.235; failures are refuse/other."
   },
   "4": {
    "verdict": "SUPPORTED",
-   "reason": "derived differs by store (0.453 vs 0.6725); transfers=false; wiki tuned 0.7511 vs wiki|mquake-derived 0.1422."
+   "reason": "derived differs by store (0.453 vs 0.6725); transfers false; wiki tuned 0.751 vs wiki|mquake-derived 0.142."
   },
   "5": {
    "verdict": "SUPPORTED",
-   "reason": "n_relations=61; eval_d2_clean 0.925 \u2248 train_d2 0.913; d3 degrades 0.626 vs train 0.683 as scoped."
+   "reason": "n_relations=61; eval_d2_clean 0.925 \u2248 train_d2 0.913; d3 degrades 0.626 vs train 0.683."
   },
   "6": {
    "verdict": "SUPPORTED",
-   "reason": "zero_shot_depth answerable correct=0.8489\u22480.849; unans_break3 abstain only 0.268 (refusal fails) vs break2 0.907."
+   "reason": "zero_shot_depth answerable correct 0.8489\u22480.849; unans_break3 abstain only 0.268 (refusal fails) per scope."
   },
   "7": {
    "verdict": "SUPPORTED",
-   "reason": "not_applicable refuse 0.05\u21920.6933; ans_d1 wrong 0.1183\u21920.045; d1 correct \u22120.110; answered \u22120.183; probe_ceiling 0.965."
+   "reason": "NA refuse 0.05\u21920.6933; ans_d1 wrong 0.1183\u21920.045; d1 correct \u22120.110; probe_ceiling 0.965."
   },
   "8": {
    "verdict": "SUPPORTED",
-   "reason": "aurc_mixed residual_only=0.4734; exp37 residual AURC=0.1322; 0.4734/0.1322\u22483.58\u00d7; residual_plus_type 0.4901 worse."
+   "reason": "exp43 gaps 0.9525\u22120.7231=0.230 and 0.9745\u22120.9327=0.042; exp49 best_head 0.6914 < one_nn 0.9255."
   },
   "9": {
    "verdict": "SUPPORTED",
-   "reason": "known: knn_k1 0.9255 vs head 0.6139 (and d1_t0 knn 1.0 vs head 0.903); new_rel knn 0.2289 vs head 0.7822."
+   "reason": "d1_held_head 0.7662 vs seen 0.795; knn 0.8538\u21920.5262; d1_head gap \u22120.0288 < 0.05."
+  },
+  "10": {
+   "verdict": "SUPPORTED",
+   "reason": "rewrite only rev 0.469 broke 0.274; +edges rev 0.733 broke 0.077; breakage drop 0.197; n_was_old=431 both."
   }
  },
  "my_labels": {
@@ -58,6 +62,7 @@
   "6": "SUPPORTED",
   "7": "SUPPORTED",
   "8": "SUPPORTED",
-  "9": "SUPPORTED"
+  "9": "SUPPORTED",
+  "10": "SUPPORTED"
  }
 }

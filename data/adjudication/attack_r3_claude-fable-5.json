@@ -1,64 +1,68 @@
 {
  "audit": "attack_r3",
  "model": "claude-fable-5",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.8,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.8181818181818182,
  "cohens_kappa": 0.0,
  "disagreements": [
-  {
-   "idx": 1,
-   "mine": "SURVIVES",
-   "theirs": "REFUTABLE",
-   "their_reason": "Falsifier: entity-append gap comparable to relation gap. At depth 1 the head shows 0.058 vs 0.191, but the same file's d2_new_head gap is 0.249 (0.540 vs 0.789) \u2014 'near-free for new entities' fails at"
-  },
   {
    "idx": 4,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "'Computable' is true of any formula; the scope condition explicitly disclaims that the derived threshold is better, was compared at matched refusal, or is useful \u2014 no measurement could contradict what"
+   "their_reason": "The scope condition ('computable, NOT validated as better; never compared at matched refusal') guts the first half: ANY formula over store statistics is 'computable', so no measurement could refute it"
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The stated falsifiers are ruled out on their own populations, but the causal claim ('data-efficiency, NOT information destruction') is not. Falsifier: on the exp49 56-relation population, the 0.234 ga"
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: any fingerprint (basis/coords/head) differing after append. Byte-identical hashes across a real append (15 relations, 652 subjects) rule it out directly. Narrow claim, but genuinely testabl"
+   "reason": "Falsifier: any of the three fingerprints (basis/coords/head) differs after append. Evidence shows byte-identical hashes across a 652-subject, 15-relation append. Scope ('mechanical') is a real restric"
   },
   "1": {
-   "verdict": "REFUTABLE",
-   "reason": "Falsifier: entity-append gap comparable to relation gap. At depth 1 the head shows 0.058 vs 0.191, but the same file's d2_new_head gap is 0.249 (0.540 vs 0.789) \u2014 'near-free for new entities' fails at"
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: entity delta comparable to or larger than relation delta, or relation delta negligible. Evidence: head new-subject +0.058 vs new-relation +0.191 (n=900 each), a clear separation. The head-o"
   },
   "2": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: any refused->wrong or refused->refused transitions after update. The matrix shows 432/432 refused->correct, and the damning 0.366 refusal precision is reported rather than hidden. Condition"
+   "reason": "Falsifier: any refused->wrong or refused->refused transitions among updated pairs, or a fabricated denominator. The transition matrix shows refused->correct=432 with no residual refused-* cells, and t"
   },
   "3": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: high old->old count after edits. Measured: 1 of ~431 old-prefixed cases. The weaker part (revision only 0.459, 0.235 single-edit) is stated in the claim itself, not absorbed by scope. Stale"
+   "reason": "Falsifier: substantial old->old counts after edit. Evidence: 1 of ~431 (0.002). The claim explicitly concedes the actual failure mode (refusal/wrong, revision only 0.459, single-edit 0.235) instead of"
   },
   "4": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "'Computable' is true of any formula; the scope condition explicitly disclaims that the derived threshold is better, was compared at matched refusal, or is useful \u2014 no measurement could contradict what"
+   "reason": "The scope condition ('computable, NOT validated as better; never compared at matched refusal') guts the first half: ANY formula over store statistics is 'computable', so no measurement could refute it"
   },
   "5": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: held-out pairs materially below trained pairs at depth 2. Evidence: 0.9245 vs 0.9135 with shuffled/random controls near zero. Depth-3 degradation and the 5-relation failure are disclosed as"
+   "reason": "Falsifier: held-out-pair accuracy at depth 2 well below trained-pair accuracy, or accuracy explained by degenerate structure. Evidence: 0.9245 (held, n=2636, 212 held pairs) vs 0.9135 (trained), with "
   },
   "6": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: zero-shot 3-hop accuracy near chance or near abstain-dominated. Measured 0.849 vs 0.961 trained. The 'answering only' scope is a real restriction because refusal failure (unans_break3 wrong"
+   "reason": "Falsifier: zero-shot 3-hop answering near abstention/chance. Evidence: 0.849 correct, exact_chain 0.808, vs 0.961 trained \u2014 real, ruled out. The 'answering only' scope excludes the refusal failure (br"
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: gate-on not_applicable refusal \u2248 gate-off, or answerable wrongness unchanged. Both directly measured (0.05->0.693, 0.118->0.045) with CI. The cost (correct -0.110, only 0.72 of ceiling capt"
+   "reason": "Falsifier: gate-on not-applicable refusal \u2264 gate-off, or answerable wrongness not reduced. Evidence: 0.05\u21920.6933 (CI excludes small effects) and 0.1183\u21920.045, with the correctness cost (-0.110 d1) rep"
   },
   "8": {
-   "verdict": "SURVIVES",
-   "reason": "Falsifier: mixed-benchmark AURC \u2248 0.13, i.e., not_applicable items rankable by the residual. Measured 0.4734 \u2014 it could have come out equal and did not. The 'best ranker' scope is thinly tested (only "
+   "verdict": "REFUTABLE",
+   "reason": "The stated falsifiers are ruled out on their own populations, but the causal claim ('data-efficiency, NOT information destruction') is not. Falsifier: on the exp49 56-relation population, the 0.234 ga"
   },
   "9": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: 1-NN \u2264 head on known depth-1 relations. Evidence rules it out twice: knn 1.0 vs head 0.903 (exp36) and knn_k1 0.9255 vs head 0.6139 on held-out aliases (exp35). The scope restriction is rea"
+   "reason": "Falsifier is stated and sharp: head held-vs-seen gap >0.05 on any population. Measured gaps are -0.029, -0.010, +0.001 while knn gaps are 0.328/0.288 \u2014 the asymmetry could easily have gone the other w"
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: downstream-edge supply fails to reduce breakage on the same 431 was-old cases with the same frozen head. Evidence: 0.274\u21920.077 and revision 0.469\u21920.733, within-experiment. Minor confound (3"
   }
  },
  "my_labels": {
@@ -71,6 +75,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

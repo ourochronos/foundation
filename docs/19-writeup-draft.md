@@ -190,11 +190,45 @@ labelled data), and it tracks the right property: MQuAKE's tighter ranges give
 MQuAKE's value drops coverage from 0.751 to 0.142 (D142). Thresholds are a
 function of the store, and the store is available.
 
+## 5b. Three later corrections worth their own space
+
+**Depth is a real variable but a weak one.** Three entries had each explained
+a depth effect locally, and we hypothesised they were one finding — that
+depth is merely a proxy for how many options the walk faces. A joint fit
+refutes it: depth's coefficient shrinks only 8% when branching is added
+(+0.213 → +0.195), so the two are near-independent. But **both effects are
+small** (~0.19 log-odds per SD against a 0.718 base rate), which is the real
+lesson: those three depth curves were local explanations of a modest effect,
+and no unifying story exists to be found (D147). The stratification we first
+designed to test this failed — the bands did not hold branching fixed — and
+we report that rather than its numbers.
+
+**Retrieval is a paraphrase mechanism, not a generalisation mechanism.** We
+originally concluded that a parametric head "destroys information" retrieval
+preserves, on a single head at one capacity with an objective that did not
+match the evaluation metric. Giving the head a fair fight (three objectives ×
+three capacities × three schedules) lifts it from 0.614 to 0.691 but does not
+close the gap to 1-NN's 0.925 — and *within one population* the gap shrinks
+from 0.230 at two aliases per relation to 0.042 at ten. The advantage is
+**data-efficiency**, and "destroys information" is withdrawn (D148).
+
+The full picture across three axes reverses the original recommendation:
+
+| axis | retrieval | head |
+|---|---|---|
+| unseen **phrasings** | **0.925** | 0.691 |
+| new **relations** | 0.229 | **0.782** |
+| new **entities** | 0.526 | **0.766** |
+
+Retrieval wins on the one axis that is not about novelty and loses on both
+that are, because a bank can only return targets it already holds. **Entity
+generalisation holds for the head** — subjects held out of training score
+0.766 against seen subjects' 0.795 — which closes a limitation we previously
+listed as untested (D149).
+
 ## 6. What we cannot claim
 
 - **Not free-form language.** Questions are templated or benchmark-supplied.
-- **Not entity generalisation.** We hold out relations, pairs, phrasings and
-  instances — never entities.
 - **Not depth-unbounded in practice.** Depth behaviour is corpus-dependent: it
   decayed on one corpus and *improved* on another.
 - **Not honest by default.** Without the answer-type gate the walker
@@ -254,23 +288,33 @@ Plus two rules of the same kind: **a shape-level holdout is not a composition
 holdout** (report pair-cleanliness alongside every composition number), and
 **evidence for a verdict must not be narrower than evidence for the claim**.
 
-**On adjudication.** We had **four independent models from four families**
-(OpenAI, Google, Anthropic, xAI) audit this paper's claims against the raw
-numbers, blind to our reasoning. The table currently stands at **zero defects
-flagged by two or more raters**, with raw agreement 0.900 and individual
-raters flagging 0, 1, 1 and 0 of ten claims — on *different* claims.
+**On adjudication, and a result about auditing itself.** We had four
+independent models from four families (OpenAI, Google, Anthropic, xAI) audit
+these claims against the raw numbers, blind to our reasoning. Asked **"is
+this claim supported?"** they flagged **zero of ten** by quorum. Asked to
+**attack** the same claims with the same evidence — what would falsify this,
+does the evidence rule it out, is the scope condition doing work or absorbing
+failure — they flagged **six of ten**, two as outright *unfalsifiable*
+(D144, D145).
 
-We report quorum count rather than kappa, because kappa is the wrong
-instrument here: with 8 of 10 claims unanimously supported, chance agreement
-is near 1 and Fleiss' κ reads −0.053 despite 0.900 raw agreement — the
-classic skewed-marginals paradox. As we corrected the table, κ *fell*
-(+0.333 → +0.135 → −0.053), which shows it was tracking the table's
-messiness rather than the raters' reliability (D140, D143, D144).
+**Verification pressure and adversarial pressure fail in opposite
+directions, and only running both catches either.** We have a clean instance:
+one claim was flagged as overreach under verification, we "fixed" it by
+adding a qualification, and the adversarial pass then judged that same claim
+unfalsifiable — *"'computable from store statistics' has no falsifier."* The
+repair produced vacuity. Every claim in the table above now carries an
+explicit falsifier for this reason.
 
-"Adjudicated" should not be read as "verified". A claim surviving four
-independent audits is evidence of survivability, not of correctness — and a
-table that passes unanimously may simply be hedged enough to be hard to
-falsify.
+Two further cautions we can quantify. **Raters are unstable across identical
+runs**: on three repetitions of the same input, one rater flagged 4, 9 and 4
+of ten claims. And **a rater sharing the author's model family is
+measurably more lenient** — it flagged 2 of ten on every run while the others
+flagged 4 to 9 — so we exclude it from adversarial quorum. We report quorum
+counts rather than κ, which with skewed marginals reads −0.053 alongside
+0.900 raw agreement and tracks the table's messiness rather than the raters'
+reliability.
+
+"Adjudicated" should not be read as "verified".
 
 The adjudicators caught, among other things, a stale figure that survived a
 full session of self-review, a denominator that was wrong by 21, and a claim

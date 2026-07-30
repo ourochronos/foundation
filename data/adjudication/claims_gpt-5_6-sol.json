@@ -1,51 +1,62 @@
 {
  "audit": "claims",
  "model": "gpt-5.6-sol",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 1.0,
- "cohens_kappa": 1.0,
- "disagreements": [],
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.9090909090909091,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 9,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "The head is not literally free: held-subject depth-1 correctness is 0.7662 versus 0.7950 seen, a measurable 0.0288 drop; the numbers support near-free."
+  }
+ ],
  "their_verdicts": {
   "0": {
    "verdict": "SUPPORTED",
-   "reason": "All three fingerprints are identical before and after 652 subjects and 15 relations were appended."
+   "reason": "All three fingerprints are byte-identical after appending 15 relations and 652 subjects."
   },
   "1": {
    "verdict": "SUPPORTED",
-   "reason": "Head deficits are 0.0578 for new subjects and 0.1911 for new relations; k-NN deficits are 0.2467 and 0.7711."
+   "reason": "Head deficits are 0.0578 for new subjects versus 0.1911 for new relations; retrieval deficits are 0.2467 and 0.7711."
   },
   "2": {
    "verdict": "SUPPORTED",
-   "reason": "All 432 prior refusals became correct; 432/(432+715+32)=0.366, and 20+1=21 were initially answerable."
+   "reason": "The matrix has 432 refused->correct, 747 initially wrong, and 21 initially correct: 432/432=1.000 and 432/1179=0.366."
   },
   "3": {
    "verdict": "SUPPORTED",
-   "reason": "Among 431 initially old-correct cases, only 1 stayed old (0.0023), while 198 revised (0.4594); single-edit revision is 35/149=0.2349."
+   "reason": "Among 431 previously correct cases, 198 revised and only 1 stayed old, giving 0.4594 revision and 0.00232 staleness; single-edit revision is 0.2349."
   },
   "4": {
    "verdict": "SUPPORTED",
-   "reason": "Derived thresholds differ, 0.453 versus 0.6725; applying 0.6725 to wiki lowers answerable correctness from 0.7511 to 0.1422."
+   "reason": "Derived thresholds differ by store (0.453 versus 0.6725), and cross-store use produces substantially different operating points, including wiki correctness of 0.1422 at 0.6725."
   },
   "5": {
    "verdict": "SUPPORTED",
-   "reason": "At 61 relations, held-pair depth-2 correctness is 0.9245 versus 0.9135 for trained pairs; the scope explicitly limits this parity and notes depth-3 degradation."
+   "reason": "At 61 relations, clean held-pair depth-2 correctness is 0.9245 versus 0.9135 for trained pairs; depth-3 falls to 0.6257 versus 0.6828."
   },
   "6": {
    "verdict": "SUPPORTED",
-   "reason": "Zero-shot depth-3 answerable correctness is 0.8489, while break-3 refusal is only 0.2677, supporting the answering-only qualification."
+   "reason": "Without 3-hop training, answerable 3-hop correctness is 0.8489; refusal is poor for break-3 cases at only 0.2677."
   },
   "7": {
    "verdict": "SUPPORTED",
-   "reason": "Not-applicable refusal rises 0.0500 to 0.6933 and depth-1 wrongness falls 0.1183 to 0.0450; correctness falls 0.1100."
+   "reason": "Not-applicable refusal rises from 0.0500 to 0.6933, while depth-1 answerable wrongness falls from 0.1183 to 0.0450."
   },
   "8": {
    "verdict": "SUPPORTED",
-   "reason": "Mixed AURC is 0.4734 versus the earlier 0.1322, a 3.58x increase; adding type worsens mixed AURC to 0.4901."
+   "reason": "The alias-curve gap shrinks monotonically from 0.2294 at 2 aliases to 0.0418 at 10; the best tested 2-alias head is 0.6914 versus 1-NN at 0.9255."
   },
   "9": {
+   "verdict": "OVERREACH",
+   "reason": "The head is not literally free: held-subject depth-1 correctness is 0.7662 versus 0.7950 seen, a measurable 0.0288 drop; the numbers support near-free."
+  },
+  "10": {
    "verdict": "SUPPORTED",
-   "reason": "For known relations, 1-NN scores 0.9255 versus the head's 0.6139, while the scoped reversal on new relations is 0.2289 versus 0.7822."
+   "reason": "Rewrite-only revision/breakage are 0.4687/0.2738, versus 0.7332/0.0766 with downstream edges, reducing breakage by 0.1972."
   }
  },
  "my_labels": {
@@ -58,6 +69,7 @@
   "6": "SUPPORTED",
   "7": "SUPPORTED",
   "8": "SUPPORTED",
-  "9": "SUPPORTED"
+  "9": "SUPPORTED",
+  "10": "SUPPORTED"
  }
 }

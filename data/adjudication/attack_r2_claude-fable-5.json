@@ -1,64 +1,68 @@
 {
  "audit": "attack_r2",
  "model": "claude-fable-5",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.8,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.8181818181818182,
  "cohens_kappa": 0.0,
  "disagreements": [
-  {
-   "idx": 1,
-   "mine": "SURVIVES",
-   "theirs": "REFUTABLE",
-   "their_reason": "Falsifier: new-entity degradation comparable to new-relation degradation. Their own data contains it: d2_new_head frozen 0.540 vs rebuilt 0.789 (+0.249), so 'near-free for new entities' holds only at "
-  },
   {
    "idx": 4,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "'Computable' is trivially true of any formula; the scope explicitly disclaims that the derived threshold is good ('a different operating point, never compared at matched refusal'), so no measurement o"
+   "their_reason": "Falsifier for 'computable' would be: the derived threshold performs worse than tuned at matched refusal \u2014 but the scope condition explicitly disclaims any comparison ('computable, NOT validated as bet"
+  },
+  {
+   "idx": 5,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: held-out pairs underperform trained pairs at depth 2. But eval_d2_clean rests on 'pairs_held: 1 of 1' \u2014 a SINGLE held-out relation pair (2636 questions of it). Parity on one pair does not r"
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: any fingerprint (basis/coords/head) differs after append. Evidence shows byte-identical hashes across all three artifacts for this run. Scope is a real, checkable property, though verified "
+   "reason": "Falsifier: any fingerprint (basis/coords/head) differs after append. All three are byte-identical across an append of 15 relations and 652 subjects. Narrow but honest scope; a mutation would have show"
   },
   "1": {
-   "verdict": "REFUTABLE",
-   "reason": "Falsifier: new-entity degradation comparable to new-relation degradation. Their own data contains it: d2_new_head frozen 0.540 vs rebuilt 0.789 (+0.249), so 'near-free for new entities' holds only at "
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head degradation on new entities comparable to new relations, or retrieval unaffected. Data shows head +0.058 vs +0.191 and discloses retrieval fails on both rather than hiding it. Head-onl"
   },
   "2": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: refused->wrong or refused->refused transitions after update. Matrix shows exactly 432 refused->correct and zero other refused-* outcomes; the 0.366 honest-refusal rate and control_never are"
+   "reason": "Falsifier: refused->wrong or refused->refused transitions after update. Matrix shows 432/432 refused->correct, and the damning 0.366 refusal rate is reported rather than absorbed. The conditional scop"
   },
   "3": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: substantial old->old count after supersession. Evidence: old->old = 1 of 431 old-before cases (0.002). The claim explicitly concedes revision is only 0.459 (0.235 single-edit) and names ref"
+   "reason": "Falsifier: high old->old count after supersession. old->old = 1/431 (0.002). The weak revision rate (0.459, 0.235 single-edit) is disclosed, not laundered into the staleness claim. Claim is narrow (no"
   },
   "4": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "'Computable' is trivially true of any formula; the scope explicitly disclaims that the derived threshold is good ('a different operating point, never compared at matched refusal'), so no measurement o"
+   "reason": "Falsifier for 'computable' would be: the derived threshold performs worse than tuned at matched refusal \u2014 but the scope condition explicitly disclaims any comparison ('computable, NOT validated as bet"
   },
   "5": {
-   "verdict": "SURVIVES",
-   "reason": "Falsifier: held-out pairs materially below trained pairs at depth 2. Evidence: eval_d2_clean 0.9245 vs train_d2 0.9135 with pair-clean holdout and shuffled/random controls near zero. The 61-vs-5 relat"
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: held-out pairs underperform trained pairs at depth 2. But eval_d2_clean rests on 'pairs_held: 1 of 1' \u2014 a SINGLE held-out relation pair (2636 questions of it). Parity on one pair does not r"
   },
   "6": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: near-zero 3-hop accuracy without 3-hop training. Evidence: 0.849 zero-shot vs 0.961 trained, with the damning refusal failure (break3 wrong 0.732) disclosed and excluded by an explicit, rea"
+   "reason": "Falsifier: zero-shot 3-hop accuracy near chance/zero. Measured 0.849 vs 0.961 trained, with real controls. The 'answering only' scope is a genuine split backed by the disclosed refusal failure (break3"
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: gate-on refusal \u2264 gate-off on not_applicable, or wrongness not reduced. Evidence directly shows 0.05->0.6933 (CI excludes low values) and 0.1183->0.045, with the correctness cost (-0.110 d1"
+   "reason": "Falsifier: gate-on refusal on not-applicable stays near 0.05, or answerable wrongness rises. Measured 0.693 [0.654,0.727] and 0.118->0.045. The correct-answer cost (-0.110 d1) and probe-ceiling caveat"
   },
   "8": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: mixed-benchmark AURC \u2248 chain-break-only AURC (no overstatement), or some added signal improving AURC. Evidence: 0.4734 vs 0.1322 and residual_plus_type 0.4901 > 0.4734. Caveat: 'adding sign"
+   "reason": "Two explicit falsifiers: a 2-alias head reaching 1-NN (best 0.6914 vs 0.9255 across a 9-config grid + epoch sweep), or a non-shrinking gap (0.230->0.042 monotone). Both ruled out. The two-population s"
   },
   "9": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: head matching or beating 1-NN on known depth-1 relation ID. Evidence: kNN 1.0 vs head 0.9033 (exp36) and knn_k1 0.9255 vs head 0.6139 held-out-alias (exp35). The scope is a genuine restrict"
+   "reason": "Falsifier pre-registered: head held-vs-seen gap >0.05. Largest head gap 0.0288 across d1/d2/na, while knn drops 0.328 on the same split. 'Held out of training questions only, claims stay in store' is "
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier stated: downstream edges fail to reduce breakage. Breakage 0.274->0.077 and revision 0.469->0.733 on the same 431 cases with the same frozen head. Within-experiment paired comparison rules o"
   }
  },
  "my_labels": {
@@ -71,6 +75,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

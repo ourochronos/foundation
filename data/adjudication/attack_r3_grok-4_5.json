@@ -1,76 +1,68 @@
 {
  "audit": "attack_r3",
  "model": "grok-4.5",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.6,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.8181818181818182,
  "cohens_kappa": 0.0,
  "disagreements": [
   {
    "idx": 1,
    "mine": "SURVIVES",
-   "theirs": "REFUTABLE",
-   "their_reason": "Falsifier: entity head gap not clearly 'near-free' (0.058\u2248t0 freeze gap 0.046) or not << relation gap under other freeze/append ratios. Only one ratio measured; 'near-free' has no threshold."
-  },
-  {
-   "idx": 2,
-   "mine": "SURVIVES",
-   "theirs": "REFUTABLE",
-   "their_reason": "Falsifier: refused\u2192not-correct under a freeze that is only fingerprint-verified in a different run. In-exp freeze is by construction only; 'properly/honest refusal' conditions away bad refusals."
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "Scope bakes in the result deltas (+0.058/+0.191) as the claim's meaning of 'near-free'/'not', and confines to one ratio/head slice\u2014so no outcome can contradict the gloss. Same file's d2_new head gap ~"
   },
   {
    "idx": 4,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "Scope strips quality (not better; unmatched refusal), so any store-statistic formula that emits a number 'computes a threshold'. Non-transfer of an unvalidated operating point cannot really fail."
-  },
-  {
-   "idx": 8,
-   "mine": "SURVIVES",
-   "theirs": "REFUTABLE",
-   "their_reason": "Falsifier: mixed AURC not ~3.6\u00d7 chain-break AURC as 'overstatement' of the same claim. 0.4734 vs 0.1322 compare different populations/benchmarks, not a corrected remeasure; 'must' is normative."
+   "their_reason": "Scope disclaims any matched-refusal validation of derived vs tuned and reclassifies the dramatic figure as the wrong contrast\u2014so bad derived performance cannot refute 'computable'. 'Without labelled d"
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: post-append fingerprint drift on basis/coords/head. Evidence shows byte-identical hashes and mechanical_check_passed; scope is the check, not a sink."
+   "reason": "Falsifier: basis/coords/head fingerprints change across append. Evidence shows identical hashes; scope is a real single-append mechanical check, not a universal hedge."
   },
   "1": {
-   "verdict": "REFUTABLE",
-   "reason": "Falsifier: entity head gap not clearly 'near-free' (0.058\u2248t0 freeze gap 0.046) or not << relation gap under other freeze/append ratios. Only one ratio measured; 'near-free' has no threshold."
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Scope bakes in the result deltas (+0.058/+0.191) as the claim's meaning of 'near-free'/'not', and confines to one ratio/head slice\u2014so no outcome can contradict the gloss. Same file's d2_new head gap ~"
   },
   "2": {
-   "verdict": "REFUTABLE",
-   "reason": "Falsifier: refused\u2192not-correct under a freeze that is only fingerprint-verified in a different run. In-exp freeze is by construction only; 'properly/honest refusal' conditions away bad refusals."
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any properly-refused item not becoming correct (or refused\u2260432 of 1179). Full transition_flip totals 1200 with refused\u2192correct=432 only; 21 already-answerable matches correct\u2192*."
   },
   "3": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: high old\u2192old among previously-correct. Evidence old\u2192old=1/431\u22480.002; revision and non-stale failure modes match matrix."
+   "reason": "Falsifier: large old\u2192old mass after supersession. Matrix shows old\u2192old=1/431 (0.002) while old\u2192new=198; residual failures are refuse/other as claimed."
   },
   "4": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "Scope strips quality (not better; unmatched refusal), so any store-statistic formula that emits a number 'computes a threshold'. Non-transfer of an unvalidated operating point cannot really fail."
+   "reason": "Scope disclaims any matched-refusal validation of derived vs tuned and reclassifies the dramatic figure as the wrong contrast\u2014so bad derived performance cannot refute 'computable'. 'Without labelled d"
   },
   "5": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: held-out d2 << train d2. Evidence 0.925 vs 0.913 at 61 relations; scope honestly limits d3 and the 5-relation failure."
+   "reason": "Falsifier: held-out pair-clean d2 accuracy well below trained d2. Measured 0.925 vs 0.913; scope honestly limits parity to d2/61-rel and flags d3 drop and untested mid-scale."
   },
   "6": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: poor 3-hop answer accuracy with no 3-hop training. Evidence correct=0.849 on answerable; scope correctly excludes refusal extrapolation."
+   "reason": "Falsifier: zero-shot 3-hop answerable correct near floor. Measured 0.849 with no 3-hop training; scope correctly excludes refusal (break3 abstain only 0.27)."
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: NA refuse not lifted to ~0.69 or d1 wrong not cut to ~0.045. Cell rates match; scope states the correct-rate cost."
+   "reason": "Falsifier: NA refuse not rising ~0.05\u21920.69 or ans_d1 wrong not falling ~0.118\u21920.045. Both match on/off tables exactly; scope notes the correct-rate cost without voiding the claim."
   },
   "8": {
-   "verdict": "REFUTABLE",
-   "reason": "Falsifier: mixed AURC not ~3.6\u00d7 chain-break AURC as 'overstatement' of the same claim. 0.4734 vs 0.1322 compare different populations/benchmarks, not a corrected remeasure; 'must' is normative."
+   "verdict": "SURVIVES",
+   "reason": "Stated falsifiers: gap not shrinking with aliases, or some 2-alias head reaching 1-NN. Curve 0.230\u21920.042 and exp49 best head 0.69\u226a0.93 rule both out; two-pop scope is a real split not a sink."
   },
   "9": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: head \u2265 1-NN on known d1 relation-id. Evidence knn_k1 0.926 vs head 0.614; scope admits new-relation reversal."
+   "reason": "Falsifier: head held-vs-seen gap >0.05 (or knn not collapsing). d1 head gap 0.029 with knn 0.854\u21920.526; explicit gap threshold makes 'free' testable."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: adding downstream edges fails to cut breakage. Same n_was_old=431: broke 0.274\u21920.077 and revision 0.469\u21920.733; within-experiment contrast is real."
   }
  },
  "my_labels": {
@@ -83,6 +75,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

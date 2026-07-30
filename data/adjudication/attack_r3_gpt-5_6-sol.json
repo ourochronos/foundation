@@ -1,94 +1,86 @@
 {
  "audit": "attack_r3",
  "model": "gpt-5.6-sol",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.3,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.5454545454545454,
  "cohens_kappa": 0.0,
  "disagreements": [
-  {
-   "idx": 0,
-   "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "A differing artifact fingerprint would falsify the claim, but the scope excludes precisely such appends by requiring byte identity; it restates the desired result."
-  },
-  {
-   "idx": 1,
-   "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "No quantitative boundary defines 'near-free'; any entity penalty can be accepted or rejected after the fact despite the reported +0.058."
-  },
   {
    "idx": 2,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "A changed fitted-artifact fingerprint in this update run would undermine 'the store learns'; construction and fingerprints from a separate append run do not rule that out."
-  },
-  {
-   "idx": 3,
-   "mine": "SURVIVES",
-   "theirs": "REFUTABLE",
-   "their_reason": "An old->old transition falsifies 'does not keep asserting the old fact,' and the supplied matrix contains one."
+   "their_reason": "A fitted artifact changing during this update run would falsify update-only learning; fingerprints from a separate append experiment do not rule that out."
   },
   {
    "idx": 4,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "Transfer at matched refusal or coverage would falsify non-transferability; no matched-operating-point comparison is provided."
+   "their_reason": "Equivalent transferred performance at matched refusal would falsify non-transferability; no matched-operating-point comparison was performed."
   },
   {
    "idx": 8,
    "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "No measurement can establish that refusal 'must' be reported only as AURC; the two AURCs support a benchmark comparison, not the universal reporting prescription."
+   "theirs": "REFUTABLE",
+   "their_reason": "A better head at two aliases reaching 1-NN, or a persistent asymptotic gap, would falsify the causal explanation; a finite grid and shrinking finite curve rule out neither."
   },
   {
    "idx": 9,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "A matched parametric decoder recovering the same relation information would falsify destruction; one underperforming head only shows poorer decoding, not lost information."
+   "their_reason": "A population with a head gap above 0.05 would falsify the stated universal criterion; the supplied evidence reports only one population."
+  },
+  {
+   "idx": 10,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Equalized successful rewrites showing no edge benefit would falsify the two-operation explanation; the conditions differ substantially in edited and ambiguous cases, so edge supply is not isolated."
   }
  ],
  "their_verdicts": {
   "0": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "A differing artifact fingerprint would falsify the claim, but the scope excludes precisely such appends by requiring byte identity; it restates the desired result."
+   "verdict": "SURVIVES",
+   "reason": "A changed basis, coordinate set, or head fingerprint after append would falsify it; all three remained byte-identical."
   },
   "1": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "No quantitative boundary defines 'near-free'; any entity penalty can be accepted or rejected after the fact despite the reported +0.058."
+   "verdict": "SURVIVES",
+   "reason": "An entity penalty comparable to the relation penalty would falsify the scoped contrast; the measured head gaps are 0.058 versus 0.191."
   },
   "2": {
    "verdict": "REFUTABLE",
-   "reason": "A changed fitted-artifact fingerprint in this update run would undermine 'the store learns'; construction and fingerprints from a separate append run do not rule that out."
+   "reason": "A fitted artifact changing during this update run would falsify update-only learning; fingerprints from a separate append experiment do not rule that out."
   },
   "3": {
-   "verdict": "REFUTABLE",
-   "reason": "An old->old transition falsifies 'does not keep asserting the old fact,' and the supplied matrix contains one."
+   "verdict": "SURVIVES",
+   "reason": "Frequent old->old transitions would falsify revision over staleness; only 1 previously-correct case stayed old, versus 198 revisions."
   },
   "4": {
    "verdict": "REFUTABLE",
-   "reason": "Transfer at matched refusal or coverage would falsify non-transferability; no matched-operating-point comparison is provided."
+   "reason": "Equivalent transferred performance at matched refusal would falsify non-transferability; no matched-operating-point comparison was performed."
   },
   "5": {
    "verdict": "SURVIVES",
-   "reason": "Materially lower depth-2 accuracy on held-out pairs would falsify parity; held-out accuracy is 0.925 versus 0.913 on trained pairs under a pair-clean holdout."
+   "reason": "Lower depth-2 accuracy on pair-clean held-out compositions would falsify parity; held pairs scored 0.925 versus 0.913 for trained pairs."
   },
   "6": {
    "verdict": "SURVIVES",
-   "reason": "Low answerable 3-hop accuracy without 3-hop training would falsify extrapolation; the measured accuracy is 0.849, while the refusal limitation is separately scoped out."
+   "reason": "Poor answerable 3-hop accuracy without 3-hop training would falsify depth extrapolation; the scoped measurement is 0.849 correct."
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "Failure to increase not-applicable refusal or reduce answerable wrongness would falsify the claim; both stated changes appear directly in the measurements."
+   "reason": "Failure to raise not-applicable refusal or lower answerable wrongness would falsify it; both stated changes occur in the measurements."
   },
   "8": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "No measurement can establish that refusal 'must' be reported only as AURC; the two AURCs support a benchmark comparison, not the universal reporting prescription."
+   "verdict": "REFUTABLE",
+   "reason": "A better head at two aliases reaching 1-NN, or a persistent asymptotic gap, would falsify the causal explanation; a finite grid and shrinking finite curve rule out neither."
   },
   "9": {
    "verdict": "REFUTABLE",
-   "reason": "A matched parametric decoder recovering the same relation information would falsify destruction; one underperforming head only shows poorer decoding, not lost information."
+   "reason": "A population with a head gap above 0.05 would falsify the stated universal criterion; the supplied evidence reports only one population."
+  },
+  "10": {
+   "verdict": "REFUTABLE",
+   "reason": "Equalized successful rewrites showing no edge benefit would falsify the two-operation explanation; the conditions differ substantially in edited and ambiguous cases, so edge supply is not isolated."
   }
  },
  "my_labels": {
@@ -101,6 +93,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

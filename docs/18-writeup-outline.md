@@ -28,13 +28,25 @@ would falsify it. A claim without its condition is not publishable.
 | 5b | On the **mixed** benchmark, refusal needs the answer-type gate | law #9 population: chain_break + not_applicable + absent_entity | not_applicable **0.050 → 0.693** with the gate; chain_break 0.337 → 0.650; answerable wrongness 0.118 → 0.045; **correct** falls 0.110 while **total answered** falls 0.183 — the extra 0.073 removed were wrong answers (D134) | probe ceiling is 0.965, so 0.693 is threshold placement, not the limit |
 | 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching −0.79 to −0.91 (D124) | "ambiguity is the mechanism" is an interpretation of the gain overlap (1.198 vs 1.390) |
 | 7 | Compression buys generalisation and costs precision | descriptive across three experiments; none tests both halves | novel relations 0.742/0.293 (D125); depth-4 0.149/0.289 (D126); phrasing 0.313/0.149 (D128) | a representation winning on both axes |
-| 8 | Retrieval beats a parametric head by **data-efficiency**, not by preserving information the head destroys | depth-1 relation identification, known relations; gap is alias-supply dependent | at 2 aliases: best head over all capacities/objectives **0.691** vs 1-NN **0.925**; at 10 aliases the gap closes to ~0.042 (D148, D139) | **falsified if** a head at 2 aliases reaches 1-NN — none did at 512–2048 hidden across three objectives; and on **new** relations retrieval collapses to 0.229 vs the head's 0.782 (D131) |
-| 9 | Refusal should be reported as a curve, not a rate | selective prediction over answerable + unanswerable together | **AURC 0.4734 on the mixed benchmark** (D134). D132's 0.1322 was chain-break-only — overstated ~3.6× | a combined multi-signal score ranks *worse* than the residual alone (D132, D134) |
+| 8 | Retrieval beats a parametric head by **data-efficiency**, not by preserving information the head destroys | depth-1 relation identification, known relations; gap is alias-supply dependent | **within one population** (exp43, 34 relations) the gap closes 0.230 → 0.042 from 2 to 10 aliases; **on a second** (exp49, 56 relations) no head config at 2 aliases reached 1-NN — best 0.691 vs 0.925 (D148, D139) | **falsified if** a head at 2 aliases reaches 1-NN — none did at 512–2048 hidden across three objectives; and on **new** relations retrieval collapses to 0.229 vs the head's 0.782 (D131) |
 
-| 10 | The p25-of-within-relation-fit statistic **orders stores by range tightness** (MQuAKE > wiki), and a threshold moved across stores **costs more than 0.30 coverage** | two stores | fit 0.778 vs 0.562 → derived 0.672 vs 0.453; wiki at MQuAKE's value drops 0.751 → 0.142 (D142) | **falsified if** the ordering reverses on a third store, or if cross-store transfer costs under 0.30. *Not claimed*: that the derived value is better than a tuned one — that comparison was never run at matched refusal |
 | 11 | Claim adjudication itself is noisy | two independent raters | Cohen's kappa **+0.333** (D140) | single-rater verdicts in D130/D135 were correspondingly noisier than they appeared |
 
 | 12 | Entities are free for the head and expensive for retrieval | subjects held out of training questions; claims remain in the store | head −0.029 (d1) / −0.010 (d2); retrieval −0.328 / −0.288 (D149) | **falsified if** the head's gap exceeds 0.05 on any population — it did not on three |
+
+## Predictions the paper makes but has not tested
+
+Stated separately from the claims because they are falsifiable and **unfalsified
+— we simply have not run them**. Putting them among the results would be the
+hedging failure D145 caught.
+
+- **A third store's p25-of-within-relation-fit will order it correctly for
+  range tightness** relative to wiki (0.562) and MQuAKE (0.778), and a
+  threshold moved onto it will cost coverage. Two stores cannot establish
+  this: the bound we quoted (>0.30 coverage cost) was read off the same two
+  stores it describes, which is a description rather than a falsifier. Three
+  adversarial raters called the claim unfalsifiable **after** we sharpened it
+  once, and they were right (D142, D145, D150).
 
 ## What we cannot claim
 
@@ -63,6 +75,16 @@ would otherwise assume:
   overstated selective prediction ~3.6× (law #9).
 
 ## Method contributions (arguably the most reusable part)
+
+**Report refusal as a risk–coverage curve, not a rate.** This is a
+recommendation about reporting rather than an empirical claim — D145's
+adversarial pass correctly observed that nothing could contradict it — so it
+belongs here and not in the claims table. The substance behind it: on the
+mixed benchmark AURC is 0.4734 where the chain-break-only benchmark gave
+0.1322, so a single refusal rate at a chosen threshold overstated selective
+prediction ~3.6× (D134). Every refusal figure this project published before
+that correction was a point on an unreported curve.
+
 
 Eight audit laws, each earned by a wrong verdict we published to ourselves
 first. The last three came from this arc:

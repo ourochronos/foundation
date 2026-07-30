@@ -1,82 +1,80 @@
 {
  "audit": "attack_r2",
  "model": "gpt-5.6-sol",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.5,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.6363636363636364,
  "cohens_kappa": 0.0,
  "disagreements": [
   {
-   "idx": 1,
-   "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "No numerical boundary defines 'near-free' or 'not near-free,' so any observed gap could be relabelled to preserve the claim."
-  },
-  {
-   "idx": 2,
+   "idx": 0,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "A changed fitted-artifact fingerprint during this update would falsify the learning attribution; fingerprints come only from a separate experiment."
+   "their_reason": "A different append that changes any fitted artifact would falsify the store-wide claim; fingerprints from one append do not rule that out."
   },
   {
    "idx": 4,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "Equivalent cross-store performance at matched refusal would falsify non-transfer; the evidence explicitly makes no matched-refusal comparison."
+   "their_reason": "Successful cross-store operation at a defined matched refusal rate would falsify non-transfer; no such matched comparison or transfer criterion is supplied."
   },
   {
    "idx": 8,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "A matched-population comparison eliminating the AURC gap would falsify 'overstated'; the evidence compares differently composed benchmarks."
+   "their_reason": "A persistent nonzero gap at higher alias counts, or a more expressive head matching 1-NN, would undermine the data-efficiency-only explanation; the finite curve and grid rule out neither."
   },
   {
    "idx": 9,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "A better-trained parametric decoder recovering the same relation signal would falsify information destruction; head underperformance alone does not rule that out."
+   "their_reason": "A population with a head held-subject gap above 0.05 would falsify 'entities are free'; the supplied measurements cover only one population, not the asserted three or all populations."
   }
  ],
  "their_verdicts": {
   "0": {
-   "verdict": "SURVIVES",
-   "reason": "A changed basis, coordinate, or head fingerprint would falsify it; all remain byte-identical across the append."
+   "verdict": "REFUTABLE",
+   "reason": "A different append that changes any fitted artifact would falsify the store-wide claim; fingerprints from one append do not rule that out."
   },
   "1": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "No numerical boundary defines 'near-free' or 'not near-free,' so any observed gap could be relabelled to preserve the claim."
+   "verdict": "SURVIVES",
+   "reason": "An entity penalty comparable to the relation penalty would falsify the scoped contrast; the measured 0.058 versus 0.191 rules it out at the stated ratio."
   },
   "2": {
-   "verdict": "REFUTABLE",
-   "reason": "A changed fitted-artifact fingerprint during this update would falsify the learning attribution; fingerprints come only from a separate experiment."
+   "verdict": "SURVIVES",
+   "reason": "Any refused->wrong or refused->refused transition would falsify the conditional 432/432 claim; the transition matrix contains none."
   },
   "3": {
    "verdict": "SURVIVES",
-   "reason": "Frequent old->old transitions would falsify revision over staleness; only 1 conditional case stayed old versus 198 revising."
+   "reason": "Substantial old->old persistence would falsify revision rather than staleness; only 1 case remained old, versus 198 old->new."
   },
   "4": {
    "verdict": "REFUTABLE",
-   "reason": "Equivalent cross-store performance at matched refusal would falsify non-transfer; the evidence explicitly makes no matched-refusal comparison."
+   "reason": "Successful cross-store operation at a defined matched refusal rate would falsify non-transfer; no such matched comparison or transfer criterion is supplied."
   },
   "5": {
    "verdict": "SURVIVES",
-   "reason": "Held-pair depth-2 accuracy materially below trained-pair accuracy would falsify parity; it is instead 0.925 versus 0.913."
+   "reason": "Materially worse depth-2 accuracy on held pairs would falsify parity; held-pair accuracy is 0.925 versus 0.913 on trained pairs."
   },
   "6": {
    "verdict": "SURVIVES",
-   "reason": "Poor answerable 3-hop accuracy without 3-hop training would falsify answering extrapolation; measured accuracy is 0.849."
+   "reason": "Low answerable 3-hop accuracy without 3-hop training would falsify answering extrapolation; the measured accuracy is 0.849."
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "Failure to raise not-applicable refusal or lower answerable wrongness would falsify it; both stated changes appear directly in the measurements."
+   "reason": "Failure to raise not-applicable refusal or lower answerable wrongness would falsify the claim; both stated changes appear directly in the measurements."
   },
   "8": {
    "verdict": "REFUTABLE",
-   "reason": "A matched-population comparison eliminating the AURC gap would falsify 'overstated'; the evidence compares differently composed benchmarks."
+   "reason": "A persistent nonzero gap at higher alias counts, or a more expressive head matching 1-NN, would undermine the data-efficiency-only explanation; the finite curve and grid rule out neither."
   },
   "9": {
    "verdict": "REFUTABLE",
-   "reason": "A better-trained parametric decoder recovering the same relation signal would falsify information destruction; head underperformance alone does not rule that out."
+   "reason": "A population with a head held-subject gap above 0.05 would falsify 'entities are free'; the supplied measurements cover only one population, not the asserted three or all populations."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Equal or greater breakage after supplying downstream edges would falsify the scoped comparison; breakage falls from 0.274 to 0.077 on the same denominator."
   }
  },
  "my_labels": {
@@ -89,6 +87,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

@@ -1,88 +1,74 @@
 {
  "audit": "attack_r1",
  "model": "gemini-3.1-pro-preview",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.4,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.7272727272727273,
  "cohens_kappa": 0.0,
  "disagreements": [
-  {
-   "idx": 1,
-   "mine": "SURVIVES",
-   "theirs": "REFUTABLE",
-   "their_reason": "Falsifier: severe degradation occurs at a different freeze/append ratio. Evidence only tests a single ratio, failing to rule this out."
-  },
   {
    "idx": 2,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "Falsifier: the 'frozen' artifacts actually mutated during the update. Evidence lacks fingerprint verification for this specific run, leaving this open."
+   "their_reason": "Falsifiable if the artifacts actually mutated during the update run; the supplied evidence only verifies fingerprints in a separate append run, failing to rule this out."
   },
   {
    "idx": 4,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "Falsifier: none exists. 'Computable' is vacuously true for any arbitrary formula, and the scope explicitly disavows any performance guarantee, absorbing all failures."
+   "their_reason": "Claiming a threshold is 'computable' without validating its performance means any arbitrary formula satisfies the claim; there is no meaningful falsifier."
   },
   {
-   "idx": 5,
-   "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "Falsifier: failure at 30 relations. The scope explicitly retreats to exactly the single success point (61) and dismisses all gaps as 'untested interpolation', absorbing the failure mode."
-  },
-  {
-   "idx": 6,
+   "idx": 9,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "Falsifier: extrapolation collapses entirely at depth 4. The general claim is not protected by the scope, but the evidence only goes to depth 3."
-  },
-  {
-   "idx": 8,
-   "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "Falsifier: none exists. The core claim ('must be reported as a risk-coverage curve') is a normative statement with no possible empirical contradiction."
+   "their_reason": "Falsifiable if the head's gap exceeds 0.05 on other populations; the supplied evidence only tests one population, leaving the others unverified."
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: fingerprints change after append. Evidence: fingerprints match exactly."
+   "reason": "Falsifiable by a fingerprint mismatch across the append; evidence shows an exact fingerprint match, ruling out mutation."
   },
   "1": {
-   "verdict": "REFUTABLE",
-   "reason": "Falsifier: severe degradation occurs at a different freeze/append ratio. Evidence only tests a single ratio, failing to rule this out."
+   "verdict": "SURVIVES",
+   "reason": "Falsifiable if the accuracy drop for entities was large or for relations was small; the supplied evidence precisely supports the claimed drops."
   },
   "2": {
    "verdict": "REFUTABLE",
-   "reason": "Falsifier: the 'frozen' artifacts actually mutated during the update. Evidence lacks fingerprint verification for this specific run, leaving this open."
+   "reason": "Falsifiable if the artifacts actually mutated during the update run; the supplied evidence only verifies fingerprints in a separate append run, failing to rule this out."
   },
   "3": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: the store stubbornly asserts the old fact (high staleness). Evidence rules this out with a measured staleness rate of near zero."
+   "reason": "Falsifiable by a high staleness rate (old->old); evidence confirms staleness is near zero (0.002) for the specified subset."
   },
   "4": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "Falsifier: none exists. 'Computable' is vacuously true for any arbitrary formula, and the scope explicitly disavows any performance guarantee, absorbing all failures."
+   "reason": "Claiming a threshold is 'computable' without validating its performance means any arbitrary formula satisfies the claim; there is no meaningful falsifier."
   },
   "5": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "Falsifier: failure at 30 relations. The scope explicitly retreats to exactly the single success point (61) and dismisses all gaps as 'untested interpolation', absorbing the failure mode."
+   "verdict": "SURVIVES",
+   "reason": "Falsifiable if parity on held-out pairs at depth 2 failed; evidence confirms parity at exactly 61 relations."
   },
   "6": {
-   "verdict": "REFUTABLE",
-   "reason": "Falsifier: extrapolation collapses entirely at depth 4. The general claim is not protected by the scope, but the evidence only goes to depth 3."
+   "verdict": "SURVIVES",
+   "reason": "Falsifiable if zero-shot 3-hop answering accuracy was poor; evidence confirms a high 0.849 correct rate."
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: the gate fails to lift refusal or cut wrongness. Evidence directly measures and confirms the specific shifts claimed."
+   "reason": "Falsifiable if answerable wrongness did not fall or refusal did not rise; evidence exactly matches the claimed shifts."
   },
   "8": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "Falsifier: none exists. The core claim ('must be reported as a risk-coverage curve') is a normative statement with no possible empirical contradiction."
+   "verdict": "SURVIVES",
+   "reason": "Falsifiable if the gap didn't shrink with aliases or if a head matched 1-NN; evidence rules out both scenarios."
   },
   "9": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifiable if the head's gap exceeds 0.05 on other populations; the supplied evidence only tests one population, leaving the others unverified."
+  },
+  "10": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: the parametric head performs as well as 1-NN on known relations. Evidence rules this out (1.0 vs 0.9033)."
+   "reason": "Falsifiable if supplying downstream edges failed to reduce breakage; evidence confirms a massive 0.197 reduction."
   }
  },
  "my_labels": {
@@ -95,6 +81,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

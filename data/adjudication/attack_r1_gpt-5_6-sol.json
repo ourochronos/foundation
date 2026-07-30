@@ -1,94 +1,110 @@
 {
  "audit": "attack_r1",
  "model": "gpt-5.6-sol",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.3,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.18181818181818182,
  "cohens_kappa": 0.0,
  "disagreements": [
-  {
-   "idx": 0,
-   "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "The scope requires byte-identical artifacts, so any append that mutates them is excluded by definition\u2014the intended falsifier is absorbed."
-  },
   {
    "idx": 1,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "'Near-free' has no quantitative boundary; no entity penalty can contradict an undefined tolerance."
+   "their_reason": "No numerical threshold defines \"near-free,\" so any entity penalty could be relabeled near-free within the one-ratio scope."
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Changed exp38 artifact fingerprints would falsify learning by frozen-store update; only a separate experiment fingerprints them."
   },
   {
    "idx": 3,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "Any old->old transition falsifies 'does not keep asserting the old fact'; the evidence itself reports one."
+   "their_reason": "Any old->old case falsifies \"does not keep asserting\" the old fact; the matrix contains one."
   },
   {
    "idx": 4,
    "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "'Transfer' has no defined success criterion, and the scope disclaims matched operating-point comparison, absorbing any cross-store result."
+   "theirs": "REFUTABLE",
+   "their_reason": "A derivation that uses labels, or successful transfer on another store pair, would falsify it; the aggregate results rule out neither."
   },
   {
    "idx": 5,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "'Parity' has no equivalence margin; no measured gap is specified as large enough to falsify it."
+   "their_reason": "\"Parity\" has no equivalence margin, allowing any depth-2 gap to be declared close enough after measurement."
+  },
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Finding any 3-hop training example would falsify the extrapolation claim; the results report accuracy but no training-depth audit."
   },
   {
    "idx": 8,
    "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "No measurement can establish that refusal 'must' be reported one way; the necessity claim is normative despite the factual AURC ratio."
+   "theirs": "REFUTABLE",
+   "their_reason": "A persistent asymptotic head gap or an information probe showing irreversible loss would falsify the causal account; a finite curve and grid exclude neither."
   },
   {
    "idx": 9,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "A better-trained parametric head matching 1-NN would falsify information destruction; one underperforming head does not rule that out."
+   "their_reason": "A head gap above 0.05 on either of the other claimed populations would falsify it; evidence is supplied for only one."
+  },
+  {
+   "idx": 10,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Different case identities or a changed head could explain the breakage reduction; equal sample counts do not establish the claimed paired frozen-head comparison."
   }
  ],
  "their_verdicts": {
   "0": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "The scope requires byte-identical artifacts, so any append that mutates them is excluded by definition\u2014the intended falsifier is absorbed."
+   "verdict": "SURVIVES",
+   "reason": "Any changed fitted-artifact fingerprint would falsify it; all three remain identical after a nontrivial append."
   },
   "1": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "'Near-free' has no quantitative boundary; no entity penalty can contradict an undefined tolerance."
+   "reason": "No numerical threshold defines \"near-free,\" so any entity penalty could be relabeled near-free within the one-ratio scope."
   },
   "2": {
-   "verdict": "SURVIVES",
-   "reason": "A prior honest refusal remaining wrong after update would falsify the 432/432 claim; the transition matrix rules that out."
+   "verdict": "REFUTABLE",
+   "reason": "Changed exp38 artifact fingerprints would falsify learning by frozen-store update; only a separate experiment fingerprints them."
   },
   "3": {
    "verdict": "REFUTABLE",
-   "reason": "Any old->old transition falsifies 'does not keep asserting the old fact'; the evidence itself reports one."
+   "reason": "Any old->old case falsifies \"does not keep asserting\" the old fact; the matrix contains one."
   },
   "4": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "'Transfer' has no defined success criterion, and the scope disclaims matched operating-point comparison, absorbing any cross-store result."
+   "verdict": "REFUTABLE",
+   "reason": "A derivation that uses labels, or successful transfer on another store pair, would falsify it; the aggregate results rule out neither."
   },
   "5": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "'Parity' has no equivalence margin; no measured gap is specified as large enough to falsify it."
+   "reason": "\"Parity\" has no equivalence margin, allowing any depth-2 gap to be declared close enough after measurement."
   },
   "6": {
-   "verdict": "SURVIVES",
-   "reason": "Low 3-hop answerable accuracy without 3-hop training would falsify depth extrapolation; the measured 0.849 rules it out in scope."
+   "verdict": "REFUTABLE",
+   "reason": "Finding any 3-hop training example would falsify the extrapolation claim; the results report accuracy but no training-depth audit."
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "Failure to reach 0.693 refusal or reduce wrongness to 0.045 would falsify the claim; both measurements are reported directly."
+   "reason": "Different gate-on refusal or wrongness rates would falsify the stated lifts; the paired measurements rule that out."
   },
   "8": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "No measurement can establish that refusal 'must' be reported one way; the necessity claim is normative despite the factual AURC ratio."
+   "verdict": "REFUTABLE",
+   "reason": "A persistent asymptotic head gap or an information probe showing irreversible loss would falsify the causal account; a finite curve and grid exclude neither."
   },
   "9": {
    "verdict": "REFUTABLE",
-   "reason": "A better-trained parametric head matching 1-NN would falsify information destruction; one underperforming head does not rule that out."
+   "reason": "A head gap above 0.05 on either of the other claimed populations would falsify it; evidence is supplied for only one."
+  },
+  "10": {
+   "verdict": "REFUTABLE",
+   "reason": "Different case identities or a changed head could explain the breakage reduction; equal sample counts do not establish the claimed paired frozen-head comparison."
   }
  },
  "my_labels": {
@@ -101,6 +117,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

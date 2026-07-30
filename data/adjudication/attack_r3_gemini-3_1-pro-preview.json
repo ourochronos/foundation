@@ -1,82 +1,92 @@
 {
  "audit": "attack_r3",
  "model": "gemini-3.1-pro-preview",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.5,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.45454545454545453,
  "cohens_kappa": 0.0,
  "disagreements": [
   {
    "idx": 1,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "Restricting the claim to 'PARAMETRIC HEAD ONLY' quietly absorbs the catastrophic 0.247 performance drop of KNN on new entities."
+   "their_reason": "The scope condition restricts a general claim about 'appending' to the single tested freeze/append ratio, absorbing any potential failures at other scales or ratios."
   },
   {
    "idx": 2,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "The transition matrix only lists refused->correct (432) but omits refused->refuse or refused->wrong, so the 1.000 rate denominator is unproven."
+   "their_reason": "The claim implies learning without mutating artifacts, but the artifacts were not fingerprint-verified in this experiment, failing to rule out that the model was simply rebuilt."
   },
   {
    "idx": 4,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "By explicitly disclaiming that the derived threshold is 'NOT validated as better', the claim protects any arbitrarily calculated number from empirical failure."
+   "their_reason": "The scope condition admits the derived thresholds were not validated against tuned ones, meaning any arbitrary computed number could satisfy 'computable' without being practically useful."
   },
   {
    "idx": 5,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "Scoping 'generalizes' to exactly the single tested point (61 relations) while admitting failure at 5 absorbs all scaling failure modes."
+   "their_reason": "The scope condition restricts a general claim about composition generalizing to exactly the scale (61 relations) where it worked, explicitly absorbing and ignoring the scale (5 relations) where it fai"
   },
   {
-   "idx": 9,
+   "idx": 6,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "Restricting the claim to 'KNOWN relations only' completely ignores 1-NN's massive collapse on new relations (0.229) to force a vacuous point about information preservation."
+   "their_reason": "Restricting extrapolation to 'answering only' while admitting refusal does not extrapolate absorbs the critical failure mode where the model blindly hallucinates wrong answers at unseen depths."
+  },
+  {
+   "idx": 8,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Mixing two different populations for the two parts of the claim leaves it open to the falsifier that architecture tuning might close the gap on the first population, which was not measured."
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SURVIVES",
-   "reason": "A clear falsifier exists (fingerprints changing after append), and the evidence rules it out by showing byte-identical hashes."
+   "reason": "Falsifiable by a change in fingerprint hashes; evidence shows hashes remain identical, confirming the operation is mechanically reindex-free."
   },
   "1": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "Restricting the claim to 'PARAMETRIC HEAD ONLY' quietly absorbs the catastrophic 0.247 performance drop of KNN on new entities."
+   "reason": "The scope condition restricts a general claim about 'appending' to the single tested freeze/append ratio, absorbing any potential failures at other scales or ratios."
   },
   "2": {
    "verdict": "REFUTABLE",
-   "reason": "The transition matrix only lists refused->correct (432) but omits refused->refuse or refused->wrong, so the 1.000 rate denominator is unproven."
+   "reason": "The claim implies learning without mutating artifacts, but the artifacts were not fingerprint-verified in this experiment, failing to rule out that the model was simply rebuilt."
   },
   "3": {
    "verdict": "SURVIVES",
-   "reason": "The primary falsifier (high staleness/old->old transitions) is explicitly measured at just 0.002, validating the revision claim."
+   "reason": "Falsifiable by a high old->old transition rate (staleness); the evidence rules this out by showing old->old is extremely rare compared to successful revision or honest refusal."
   },
   "4": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "By explicitly disclaiming that the derived threshold is 'NOT validated as better', the claim protects any arbitrarily calculated number from empirical failure."
+   "reason": "The scope condition admits the derived thresholds were not validated against tuned ones, meaning any arbitrary computed number could satisfy 'computable' without being practically useful."
   },
   "5": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "Scoping 'generalizes' to exactly the single tested point (61 relations) while admitting failure at 5 absorbs all scaling failure modes."
+   "reason": "The scope condition restricts a general claim about composition generalizing to exactly the scale (61 relations) where it worked, explicitly absorbing and ignoring the scale (5 relations) where it fai"
   },
   "6": {
-   "verdict": "SURVIVES",
-   "reason": "Zero-shot 3-hop answering accuracy is strong (0.849), ruling out an extrapolation collapse, and the scope honestly bounds the claim by admitting refusal fails."
+   "verdict": "UNFALSIFIABLE",
+   "reason": "Restricting extrapolation to 'answering only' while admitting refusal does not extrapolate absorbs the critical failure mode where the model blindly hallucinates wrong answers at unseen depths."
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "The gate metrics perfectly match the claim, and the scope condition explicitly acknowledges the real cost (a 0.110 drop in correct answers)."
+   "reason": "Falsifiable by the threshold failing to reduce wrongness or only doing so by destroying correct answers; evidence shows it selectively cuts wrongness and explicitly measures the cost."
   },
   "8": {
-   "verdict": "SURVIVES",
-   "reason": "AURC measurements directly support the claim (0.4734 vs 0.1322), confirming the 3.6x overstatement from the earlier restricted metric."
+   "verdict": "REFUTABLE",
+   "reason": "Mixing two different populations for the two parts of the claim leaves it open to the falsifier that architecture tuning might close the gap on the first population, which was not measured."
   },
   "9": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "Restricting the claim to 'KNOWN relations only' completely ignores 1-NN's massive collapse on new relations (0.229) to force a vacuous point about information preservation."
+   "verdict": "SURVIVES",
+   "reason": "Falsifiable by a large generalization gap for the head on held-out subjects; evidence rules this out by showing the head's gap is minimal compared to retrieval's massive performance drop."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifiable by showing downstream edges do not improve revision rate or reduce breakage; evidence clearly shows substantial improvements in both metrics in a matched within-experiment comparison."
   }
  },
  "my_labels": {
@@ -89,6 +99,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

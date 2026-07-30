@@ -1,64 +1,62 @@
 {
  "audit": "attack_r1",
  "model": "claude-fable-5",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.8,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.9090909090909091,
  "cohens_kappa": 0.0,
  "disagreements": [
-  {
-   "idx": 1,
-   "mine": "SURVIVES",
-   "theirs": "REFUTABLE",
-   "their_reason": "Falsifier: entity and relation gaps comparable, or 'near-free' failing at other freeze/append ratios or depths. The head-only, single-ratio, depth-1 scope is doing heavy work: retrieval shows entity a"
-  },
   {
    "idx": 4,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "The non-transfer half survives (falsifier: transferred thr performs comparably; 0.751 vs 0.142 rules it out). But 'COMPUTABLE from store statistics' has no falsifier: any formula yields a number, and "
+   "their_reason": "Falsifier I wanted: derived threshold performs materially worse than tuned at matched refusal \u2014 but the scope explicitly disclaims that comparison ('computable, NOT validated as better'). Any number d"
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: any fingerprint (basis/coords/head) differing after append. All three are byte-identical across a 15-relation/652-subject append. Scope (mechanical, fingerprint-level) is a real restriction"
+   "reason": "Falsifier: any fingerprint (basis/coords/head) differs after append. Byte-identical hashes across all three artifacts rule it out; the scope (byte-identity across an append) is exactly the mechanical "
   },
   "1": {
-   "verdict": "REFUTABLE",
-   "reason": "Falsifier: entity and relation gaps comparable, or 'near-free' failing at other freeze/append ratios or depths. The head-only, single-ratio, depth-1 scope is doing heavy work: retrieval shows entity a"
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head's new-subject gap comparable to new-relation gap. Data rules it out (+0.058 vs +0.191, with a +0.046 baseline drift on t0, so entity-specific cost ~0.01). Scope (head only, one ratio) "
   },
   "2": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: any refused->wrong or refused->refused cell in the transition matrix, or learned_rate inconsistent with 432/1179. Matrix shows refused->correct=432 with no refused failure cells; 0.36 with "
+   "reason": "Falsifier: any refused->wrong or refused->refused transition after update. The matrix shows none among the 432. The conditional-on-honest-refusal scope is real work because the 0.366 refusal rate is r"
   },
   "3": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: substantial old->old mass after edits. Measured: 1 of ~431 prior-old cases (0.002); failures land in refuse (150) and other (82), exactly as claimed. Single-edit 0.235 is disclosed against "
+   "reason": "Falsifier: substantial old->old count after edit. Measured: 1 of 431 (0.002). The claim explicitly names its own failure mode (refusal/wrong, revision only 0.459, single-edit 0.235) instead of absorbi"
   },
   "4": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "The non-transfer half survives (falsifier: transferred thr performs comparably; 0.751 vs 0.142 rules it out). But 'COMPUTABLE from store statistics' has no falsifier: any formula yields a number, and "
+   "reason": "Falsifier I wanted: derived threshold performs materially worse than tuned at matched refusal \u2014 but the scope explicitly disclaims that comparison ('computable, NOT validated as better'). Any number d"
   },
   "5": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: held-out-pair d2 accuracy materially below trained-pair d2. Measured 0.9245 vs 0.9135 (n=2636/4253) with shuffled/random controls at ~0. Scope conditions (61 relations, depth-2 parity only,"
+   "reason": "Falsifier: held-out-pair d2 accuracy well below trained-pair d2. Measured 0.925 vs 0.913 with shuffled/random controls near zero \u2014 ruled out. Scope honestly confines parity to depth 2 and flags the 5-"
   },
   "6": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: zero-shot 3-hop accuracy near chance or near zero without 3-hop training. Measured 0.849 (n=609) vs 0.961 trained ceiling, with exact_chain 0.808 corroborating. The 'answering only' scope i"
+   "reason": "Falsifier: zero-shot 3-hop answering accuracy near chance or far below 3-hop-trained. 0.849 vs 0.961 rules out collapse; the 'answering only' scope is a real restriction because refusal failure (break"
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: gate-on not_applicable refusal \u2248 0.05, or answerable wrongness unchanged. Measured 0.6933 [0.654,0.727] vs 0.05 and 0.045 vs 0.1183. Costs (correct falls 0.110 at d1, gap to probe ceiling 0"
+   "reason": "Falsifier: gate-on NA refusal ~gate-off, or answerable wrongness unchanged. Directly ruled out (0.05->0.693, 0.118->0.045). The scope condition does adversarial work against the claim \u2014 it surfaces th"
   },
   "8": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier for the factual core: mixed-benchmark AURC \u2248 chain-break-only AURC (no overstatement), or a combined scorer beating residual-only. Measured 0.4734 vs 0.1322 (same residual ranker) and residu"
+   "reason": "Two named falsifiers: (a) some head config at 2 aliases reaches 1-NN \u2014 best of 9 configs + epoch sweep is 0.691 vs 0.926, ruled out; (b) gap fails to shrink with aliases \u2014 monotone 0.230->0.042, ruled"
   },
   "9": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier: 1-NN \u2264 head on known depth-1 relations. Ruled out twice: d1_t0 knn 1.000 vs head 0.903, and held-out-alias knn_k1 0.9255 vs head 0.6139. The scope restriction (known relations only) is real"
+   "reason": "Falsifier stated numerically: head held-vs-seen gap >0.05 on any tested population. Gaps are -0.029/-0.010/+0.001 vs knn's 0.328/0.288 \u2014 ruled out. Scope ('held out of training questions, claims still"
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: downstream-edge condition shows breakage >= rewrite-only. Measured 0.077 vs 0.274 on the same 431 cases with the same frozen head \u2014 ruled out. Minor confound (225 newly ingested edges) is p"
   }
  },
  "my_labels": {
@@ -71,6 +69,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

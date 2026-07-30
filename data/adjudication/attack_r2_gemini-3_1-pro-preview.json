@@ -1,88 +1,80 @@
 {
  "audit": "attack_r2",
  "model": "gemini-3.1-pro-preview",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.4,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.6363636363636364,
  "cohens_kappa": 0.0,
  "disagreements": [
-  {
-   "idx": 1,
-   "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "The scope restricts to 'parametric head only' specifically to absorb the severe retrieval failures under KNN."
-  },
   {
    "idx": 2,
    "mine": "SURVIVES",
    "theirs": "REFUTABLE",
-   "their_reason": "Falsifier (weights were updated instead of just store learning) is not ruled out because fingerprints were not verified in this specific experiment."
+   "their_reason": "Freezing was verified only in a separate append run, leaving artifact mutation as an unruled-out plausible cause for the update learning."
   },
   {
    "idx": 4,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "Claiming thresholds are 'computable' while explicitly avoiding validation of their usefulness renders the claim empirically empty."
-  },
-  {
-   "idx": 5,
-   "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "The scope condition explicitly absorbs the failure at N=5 relations, hedging the generalization claim into safety."
+   "their_reason": "Any arbitrary formula can 'compute' a threshold; disclaiming validation against a baseline absorbs the failure mode of the threshold being completely useless."
   },
   {
    "idx": 8,
    "mine": "SURVIVES",
-   "theirs": "UNFALSIFIABLE",
-   "their_reason": "The core of the claim ('Refusal must be reported as a risk-coverage curve') is a normative methodological prescription, not a falsifiable empirical fact."
+   "theirs": "REFUTABLE",
+   "their_reason": "The curve is only shown for one population; evidence for exp49 stops at 2 aliases, failing to rule out that it permanently destroys information."
   },
   {
    "idx": 9,
    "mine": "SURVIVES",
    "theirs": "UNFALSIFIABLE",
-   "their_reason": "Scope condition restricts to KNOWN relations to conveniently ignore that 1-NN collapses and destroys information on NEW relations compared to the head."
+   "their_reason": "The qualification that the subjects' claims remain in the store completely eats the claim that new entities are 'free', as they aren't truly new."
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier (artifacts mutated) is ruled out by the identical fingerprints before and after append."
+   "reason": "Hashes of fitted artifacts remain identical, explicitly ruling out mechanical mutation."
   },
   "1": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "The scope restricts to 'parametric head only' specifically to absorb the severe retrieval failures under KNN."
+   "verdict": "SURVIVES",
+   "reason": "The measured gap for entities is small (0.058) while the gap for relations is large (0.191), confirming the behavioral difference."
   },
   "2": {
    "verdict": "REFUTABLE",
-   "reason": "Falsifier (weights were updated instead of just store learning) is not ruled out because fingerprints were not verified in this specific experiment."
+   "reason": "Freezing was verified only in a separate append run, leaving artifact mutation as an unruled-out plausible cause for the update learning."
   },
   "3": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier (high staleness rate) is ruled out by the transition matrix showing staleness is near zero and revision occurs."
+   "reason": "Staleness is explicitly measured at near zero (0.002), directly ruling out the store persistently asserting old facts."
   },
   "4": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "Claiming thresholds are 'computable' while explicitly avoiding validation of their usefulness renders the claim empirically empty."
+   "reason": "Any arbitrary formula can 'compute' a threshold; disclaiming validation against a baseline absorbs the failure mode of the threshold being completely useless."
   },
   "5": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "The scope condition explicitly absorbs the failure at N=5 relations, hedging the generalization claim into safety."
+   "verdict": "SURVIVES",
+   "reason": "Data directly shows parity at depth 2 for held-out pairs (0.924 vs 0.913), ruling out a failure to generalize."
   },
   "6": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier (poor zero-shot accuracy) is ruled out by the 0.849 depth-3 zero-shot accuracy, and failure on refusal is honestly scoped out."
+   "reason": "High zero-shot 3-hop accuracy (0.849) rules out the falsifier that answering fundamentally requires depth-specific training."
   },
   "7": {
    "verdict": "SURVIVES",
-   "reason": "Falsifier (gate fails to improve refusal) is ruled out by the 0.693 refusal rate, and the tradeoff in correct answers is explicitly admitted."
+   "reason": "The type gate demonstrably lifts not-applicable refusal to 0.693 and drops wrongness to 0.045, confirming the claim."
   },
   "8": {
-   "verdict": "UNFALSIFIABLE",
-   "reason": "The core of the claim ('Refusal must be reported as a risk-coverage curve') is a normative methodological prescription, not a falsifiable empirical fact."
+   "verdict": "REFUTABLE",
+   "reason": "The curve is only shown for one population; evidence for exp49 stops at 2 aliases, failing to rule out that it permanently destroys information."
   },
   "9": {
    "verdict": "UNFALSIFIABLE",
-   "reason": "Scope condition restricts to KNOWN relations to conveniently ignore that 1-NN collapses and destroys information on NEW relations compared to the head."
+   "reason": "The qualification that the subjects' claims remain in the store completely eats the claim that new entities are 'free', as they aren't truly new."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Supplying downstream edges demonstrably drops breakage from 0.274 to 0.077, ruling out that the extra operation has no effect."
   }
  },
  "my_labels": {
@@ -95,6 +87,7 @@
   "6": "SURVIVES",
   "7": "SURVIVES",
   "8": "SURVIVES",
-  "9": "SURVIVES"
+  "9": "SURVIVES",
+  "10": "SURVIVES"
  }
 }

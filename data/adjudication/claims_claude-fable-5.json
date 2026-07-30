@@ -1,58 +1,62 @@
 {
  "audit": "claims",
  "model": "claude-fable-5",
- "n": 10,
- "n_judged": 10,
- "raw_agreement": 0.9,
+ "n": 11,
+ "n_judged": 11,
+ "raw_agreement": 0.9090909090909091,
  "cohens_kappa": 0.0,
  "disagreements": [
   {
-   "idx": 4,
+   "idx": 1,
    "mine": "SUPPORTED",
    "theirs": "OVERREACH",
-   "their_reason": "Numbers show asymmetric transfer: mquake-derived on wiki collapses (0.7511->0.1422) but wiki-derived on mquake still answers 0.8889 correct with 0.0078 wrong \u2014 better on answerable than mquake's own d"
+   "their_reason": "Quoted d1 deltas check out (head new-subj 0.9611-0.9033=+0.058, new-rel 0.9733-0.7822=+0.191; knn +0.247/+0.771), but d2_new_head shows frozen 0.54 vs rebuilt 0.789 (+0.249) \u2014 a population where 'near"
   }
  ],
  "their_verdicts": {
   "0": {
    "verdict": "SUPPORTED",
-   "reason": "Basis/coords/head fingerprints identical before and after append (45b33a69.../c662e066.../79f87c5c...) and mechanical_check_passed=true; exactly what the claim states."
+   "reason": "All three fingerprints (basis 45b33a69..., coords c662e066..., head 79f87c5c...) are byte-identical at_freeze vs after_append and mechanical_check_passed=true, exactly the stated scope."
   },
   "1": {
-   "verdict": "SUPPORTED",
-   "reason": "Head deltas match scope: new subj 0.9611-0.9033=0.058, new rel 0.9733-0.7822=0.191; kNN deltas 1.0-0.7533=0.247 and 1.0-0.2289=0.771 are disclosed in the scope condition."
+   "verdict": "OVERREACH",
+   "reason": "Quoted d1 deltas check out (head new-subj 0.9611-0.9033=+0.058, new-rel 0.9733-0.7822=+0.191; knn +0.247/+0.771), but d2_new_head shows frozen 0.54 vs rebuilt 0.789 (+0.249) \u2014 a population where 'near"
   },
   "2": {
    "verdict": "SUPPORTED",
-   "reason": "refused->correct=432 with no other refused-> outcomes gives 432/432; 432/(432+715+32)=432/1179=0.366 matches learned_rate; 20+1=21 pre-answerable; fingerprint caveat is stated in scope."
+   "reason": "Matrix gives refused->correct=432 with no other refused-> outcome (432/432=1.000); 715+32+432=1179 non-correct before, 432/1179=0.366 (within CI [0.333,0.388]); 1+20=21 already correct. All figures de"
   },
   "3": {
    "verdict": "SUPPORTED",
-   "reason": "old->old=1 of 431 prior-correct = 0.0023 staleness; revision_rate_all=0.459; failures are old->refuse (150) and old->other (82); single-edit 0.235 is disclosed in scope."
+   "reason": "old->old=1 of 431 previously-correct (0.0023\u22480.002); old->new=198/431=0.459; failures are old->refuse 150 and old->other 82; scope correctly discloses single-edit 0.235 and kb.edit path (2394 edited)."
   },
   "4": {
-   "verdict": "OVERREACH",
-   "reason": "Numbers show asymmetric transfer: mquake-derived on wiki collapses (0.7511->0.1422) but wiki-derived on mquake still answers 0.8889 correct with 0.0078 wrong \u2014 better on answerable than mquake's own d"
+   "verdict": "SUPPORTED",
+   "reason": "Derived values (0.453, 0.6725) exist; transfer fails on a load-bearing metric in each direction: mquake thr on wiki drops correct 0.7511->0.1422, wiki thr on mquake drops NA refusal 0.9222->0.4589; sc"
   },
   "5": {
    "verdict": "SUPPORTED",
-   "reason": "Held-pair depth-2 0.9245 vs trained 0.9135 is parity; depth-3 degradation 0.626 vs 0.683 and the 61-relation/interpolation caveats are stated in the scope condition."
+   "reason": "eval_d2_clean 0.9245 vs train_d2 0.9135 is parity at depth 2 on held pairs; scope discloses depth-3 degradation (0.626 vs 0.683) and that 61 relations is the measured point with failure at 5 (exp18 he"
   },
   "6": {
    "verdict": "SUPPORTED",
-   "reason": "Zero-shot 3-hop answerable correct=0.8489 with no 3-hop training; unans_break3 abstain only 0.2677, and scope explicitly excludes refusal from the extrapolation claim."
+   "reason": "Zero-shot 3-hop answerable correct=0.8489 as claimed; scope correctly excludes refusal, which fails to extrapolate (unans_break3 abstain only 0.268, wrong 0.732)."
   },
   "7": {
    "verdict": "SUPPORTED",
-   "reason": "not_applicable refuse 0.05->0.6933 and ans_d1 wrong 0.1183->0.045 match exactly; the 0.110 correct drop (0.875->0.765), 0.183 answered drop, d2 wrong 0.175->0.1017 and 0.965 ceiling are all disclosed."
+   "reason": "not_applicable refusal 0.05->0.6933 and d1 wrong 0.1183->0.045 match exactly; scope discloses the load-bearing costs (d1 correct -0.110, total answered -0.183, d2 wrong 0.175->0.1017) and the 0.965 pr"
   },
   "8": {
    "verdict": "SUPPORTED",
-   "reason": "aurc_mixed residual_only=0.4734, earlier residual AURC=0.1322, ratio 3.58\u22483.6x; residual_plus_type 0.4901>0.4734 confirms adding signals worsens AURC as scoped."
+   "reason": "Alias curve gap 0.9525-0.7231=0.230 shrinking to 0.9745-0.9327=0.042; exp49 best head 0.6914 (grid max 0.668, epoch 40 0.6914) vs 1-NN 0.9255, gap 0.234 \u2014 no config closes it; two-population scope is "
   },
   "9": {
    "verdict": "SUPPORTED",
-   "reason": "On known depth-1, kNN frozen=1.0 vs head 0.9033 (and knn_k1 0.9255 vs head_baseline 0.6139); the new-relation reversal (kNN 0.2289 vs head 0.7822) is explicitly carved out in the scope condition."
+   "reason": "Head held 0.7662 vs seen 0.795 (gap 0.029) while knn drops 0.8538->0.5262 (gap 0.328); all three head gaps (0.0288, 0.01, 0.0012) stay under the stated 0.05 falsifier."
+  },
+  "10": {
+   "verdict": "SUPPORTED",
+   "reason": "Rewrite-only: revision 0.4687, broke 0.2738; rewrite+downstream: revision 0.7332, broke 0.0766 \u2014 breakage reduced by 0.197 on the same 431 was-old cases, matching claim and passing the stated falsifie"
   }
  },
  "my_labels": {
@@ -65,6 +69,7 @@
   "6": "SUPPORTED",
   "7": "SUPPORTED",
   "8": "SUPPORTED",
-  "9": "SUPPORTED"
+  "9": "SUPPORTED",
+  "10": "SUPPORTED"
  }
 }

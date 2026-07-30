@@ -2,6 +2,32 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D150: Both prompts on the settled table — sharpening worked, except on the claim whose falsifier I invented from its own data
+`scripts/adjudicate.py claims|attack`, 4 families, adversarial run 3× per rater with a per-rater majority before quorum. Task 4, closing the plan.
+
+**The table now faces both prompts, and they disagree as designed:**
+
+| prompt | quorum flags |
+|---|---|
+| verification ("is this supported?") | **0 of 11** (individual raters flagged 1 / 2 / 1 / 0) |
+| adversarial ("attack this") | **4 of 11** — down from 6 of 10 at D145 |
+
+**Sharpening worked on one of the two unfalsifiable claims and failed on the other, and the failure is the useful half.** Claim 1b ("near-free" with no numeric bound) was given explicit bounds and now survives. The thresholds claim was *also* sharpened — restated as "orders stores by range tightness, and transfer costs more than 0.30 coverage" — and **three independent raters still call it unfalsifiable**.
+
+They are right, and the reason is one I should have caught: **its falsifier was read off the same two stores it describes.** "Transfer costs more than 0.30" was measured on wiki and MQuAKE and then offered as the condition under which the claim would fail — which makes it a description of the data, not a risk the claim runs. With two stores there is no way for the ordering to be wrong. **A falsifier defined post-hoc from the evidence is not a falsifier**, and sharpening a claim by adding one is the same hedging failure wearing better clothes.
+
+It is therefore **moved out of the claims table into an explicit predictions section** — falsifiable, unfalsified, and honestly labelled as untested rather than sitting among results.
+
+**The per-rater majority procedure earns its place.** Within-rater flag counts across three identical runs: OpenAI 9/4/5, xAI 2/6/2, Google 3/4/6, Anthropic 1/2/2 — ranges of up to 5 on 11 claims. Taking each rater's majority first collapses that noise (OpenAI's 9-flag run stops dominating), and only then does quorum mean anything. **Single-run adversarial adjudication is not a usable instrument**; this is now measured twice (D145, here).
+
+**The family effect persists.** The Anthropic rater — the author's own family — reaches a majority of **1 flag** against the others' 2, 4 and 5. It remains excluded from adversarial quorum, and D144's "worry retired" stays reversed.
+
+**Three claims remain REFUTABLE by quorum** (learning, the head/data-efficiency claim, and entity generalisation), each with a falsifier the raters named that the evidence does not rule out. They stay in the table **labelled as such** — not removed, because they are supported by their numbers, and not promoted, because a named falsifier is outstanding. That distinction is the whole point of running both prompts.
+
+**Decision**: the claims table is at 0 verification defects and 4 adversarial flags of 11, with one claim demoted to a prediction and three carrying explicit open falsifiers. That is the state the draft should be read in, and the draft now says so.
+
+**Revisit**: (a) the three REFUTABLE claims each need their named falsifier run — that is the obvious next block of work and each is a well-specified experiment; (b) a claim should be admitted to the table only with a falsifier specified **before** its evidence is collected, which would have caught the thresholds claim at design time rather than after two adversarial rounds.
+
 ## 2026-07-29 — D149: Entity generalisation HOLDS for the head and FAILS for retrieval — completing the architecture picture and further qualifying D129
 `scripts/exp50_entity.py`. Task 3, and the last untested axis. We had held out relations, pairs, phrasings, instances and depths — never entities. 25% of subjects were held out **from training questions only**; their claims stay in the store and remain walkable, so this asks whether the *reasoner* generalises to an entity it never trained on, not whether the store can hold one (D131 covers that).
 
