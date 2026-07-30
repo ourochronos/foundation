@@ -1,0 +1,130 @@
+{
+ "audit": "attack_r2",
+ "model": "gpt-5.6-sol",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.6428571428571429,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The benefit could disappear on the exact paired subset successfully edited in both arms; aggregate matrices do not establish that the compared cases are identical."
+  },
+  {
+   "idx": 7,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "On the same 3-hop questions, zero-shot accuracy could trail trained accuracy by over 0.15; the evidence compares different populations of 609 and 77 questions."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "At fixed maximum cosine, refusal could still vary materially with option count; the confusable arm already falls from 0.8485 to 0.7758 as count rises."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The gap could resume shrinking beyond 18 aliases; no measurements beyond 18 rule out continued supply-driven convergence, so the residual is not established as capability."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Verification quorum flagging any claim or overlapping attack would falsify it; claim 12 has verification votes from two quorum raters and is also attack-flagged."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "A changed basis, coordinate, or head fingerprint would falsify it; all three remain byte-identical after a nontrivial append."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "A larger depth-1 entity penalty than relation penalty, or depth-2 penalty below 0.10, would falsify it; measured penalties rule both out."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Any refused question remaining refused or becoming wrong would falsify the conditional 432/432 claim; the transition matrix records none."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Staleness exceeding refusal or other wrong answers would falsify it; old->old is 1 versus 150 refusals and 82 other answers."
+  },
+  "4": {
+   "verdict": "REFUTABLE",
+   "reason": "The benefit could disappear on the exact paired subset successfully edited in both arms; aggregate matrices do not establish that the compared cases are identical."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "A depth-2 held-pair gap beyond 0.02 would falsify the scoped parity claim; the measured gap is +0.011."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Store-filtered exhaustive planning failing to match the walker, or model-only planning matching it, would falsify the one-corpus claim; neither occurs."
+  },
+  "7": {
+   "verdict": "REFUTABLE",
+   "reason": "On the same 3-hop questions, zero-shot accuracy could trail trained accuracy by over 0.15; the evidence compares different populations of 609 and 77 questions."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Higher wrongness at either depth or refusal gain smaller than correct-answer loss would falsify it; both depth wrong-rates fall and the refusal gain dominates."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "At fixed maximum cosine, refusal could still vary materially with option count; the confusable arm already falls from 0.8485 to 0.7758 as count rises."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "A wrongness increase comparable to the novel-answering gain, or restored refusal under matched coverage, would falsify it; measured costs are far smaller and refusal still collapses."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "The gap could resume shrinking beyond 18 aliases; no measurements beyond 18 rule out continued supply-driven convergence, so the residual is not established as capability."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "Verification quorum flagging any claim or overlapping attack would falsify it; claim 12 has verification votes from two quorum raters and is also attack-flagged."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "A head gap above 0.05 on any stated population would falsify the scoped claim; all three measured gaps remain below that threshold while retrieval drops sharply."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

@@ -2,6 +2,34 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D161: The flag rate halves after the law-#10 pass — and two of the three survivors are claims I wrote the same day
+
+Re-adjudication of the revised block on a three-rater odd panel: 12 runs, verification once and attack three times each, per-rater majority before quorum. All 12 passed the alignment check.
+
+**Law #10 made a prediction and it held.** D156's revisit (b) said *"a pass rewriting every claim sentence to carry its condition would drop the flag rate at the next adjudication, and that is a testable prediction rather than a hope."*
+
+| | previous round | this round |
+|---|---|---|
+| flagged by attack quorum | **6 of 14** | **3 of 14** |
+| unstable rater, flags per identical run | [6, 7, 4] range 3 | [5, 5, 4] range 1 |
+| second rater | [5, 5, 6] range 1 | [2, 1, 2] range 1 |
+
+The prompt did not change; the claims did. **Sharper claims are also easier to judge consistently** — within-rater variation fell alongside the flag count, which was not predicted and is the more interesting half. A rater re-reading an unqualified claim appears to have latitude to flag it or not; a claim that states its own condition removes the latitude.
+
+**Row 11 failed both prompts, completing D154's tally at five of five.** Every claim that had been sitting in the paper unadjudicated failed when it was finally judged. That is now 5/5 against 2/10 for claims that had been through the loop, on a table where the never-adjudicated ones were not systematically older, weaker or newer than the rest.
+
+**All three surviving flags are correct, and two are claims written earlier the same day.**
+
+**Claim 9, the confusability result (2 of 3).** *"The falsifier is refusal changing with count while maximum cosine is fixed; the confusable arm does exactly that, falling from 0.8485 to 0.7758."* Verified against source: the confusable arm's maximum is pinned at 0.5001 at every k, and refusal still falls 0.0727. The scope disclosed this — it is the built-in control D160 was pleased with — but the **claim sentence** said *"not by how many options there are"*, which its own evidence contradicts. **This is audit law #10 violated in a claim written the same day law #10 was formulated**, and it is the sharpest available demonstration that knowing a law is not the same as being able to apply it to your own sentences. The scope was honest and the claim overreached — exactly the shape, in the entry that named the shape.
+
+**Claim 11, the alias plateau (3 of 3, unanimous).** *"The gap could resume falling beyond 18 aliases; no measurement beyond 18 rules this out, so the claimed permanent capability residual is unsupported."* Correct. D155 withdrew *"not a permanent loss of information"* as unsupported — and the replacement I wrote in the same entry said *"the residual is a capability difference, not a supply shortfall"*, which is **the same inference in weaker words**. Withdrawing an over-claim and re-committing it one sentence later is a failure mode worth naming: the withdrawal felt like the correction, so the sentence that replaced it was never held to the same standard.
+
+**Claim 12, adjudication-is-noisy (3 of 3, and the only verification-quorum flag).** It asserted the two prompts flag *disjoint* sets. The raters refuted it **using the round that was judging them**: in this round claim 12 itself drew both a verification flag and an attack flag, so the disjointness claim is false in the act of being evaluated. They also noted the evidence I supplied omitted the per-claim attack detail needed to check it at all — an evidence-supply gap of the same class as "fails at 5" (D153). Restated to "largely different, not disjoint", which is what the two rounds actually show.
+
+**The pattern across all three is one thing.** Every flag is a **claim sentence outrunning its evidence by one step**: "not by how many" from "mainly not by how many"; "is a capability difference" from "has stopped falling over the measured range"; "disjoint" from "largely different". None is a wrong number and none is a bad experiment. Law #10 catches the version where the condition sits in the scope; this is the version where the condition is nowhere, and it survives a fix pass because the sentence reads as a summary rather than as a claim.
+
+**Revisit**: (a) a re-run is owed on the revised block, and the flag counts above must not be read as applying to the current text — three of fourteen changed; (b) the flag rate has gone 6 → 3 and the remaining three are all one shape, so the next round is a real test of whether it converges or floors; (c) gemini's flag count fell from [5, 5, 6] to [2, 1, 2] while the others moved less, which is a rater-level change large enough to want an explanation before the next round's numbers are trusted.
+
 ## 2026-07-30 — D160: Refusal is governed by the MOST confusable option available, not by how many there are — D124 and D137 reconciled
 
 `scripts/exp54_confusability.py`. The last of D154's four falsifiers, and the one the project already owed itself: D137's revisit (a) said *"D124's branching prediction still deserves a proper test, with the node set held fixed and confusable options added"*, and two adversarial raters independently named the same experiment.

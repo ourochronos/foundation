@@ -29,8 +29,8 @@ we had removed.
 
 We think the negative results and the corrections are the most useful part,
 and the ten audit laws that produced them the most reusable. The last of
-those laws came from an adjudication result we did not expect: **four of
-four claims that had never been adversarially audited failed when they
+those laws came from an adjudication result we did not expect: **five of
+five claims that had never been adversarially audited failed when they
 finally were, against two of ten that had.**
 
 ---
@@ -268,7 +268,10 @@ present (D160):
 **One confusable option costs more refusal than eight non-confusable ones.**
 Across all eighteen cells, refusal tracks the **maximum** cosine between an
 available relation and the asked one at **r = −0.954**, against −0.774 for the
-mean and **−0.485 for the count**.
+mean and **−0.485 for the count**. Count still matters, and we said it did not
+until a rater objected: with the maximum pinned at 0.50, three doublings cost
+a further 0.073 of refusal (D161). The maximum dominates; it does not stand
+alone.
 
 The mechanism is that the walker takes *one* option by greedy argmax, so a bag
 of harmless distractors plus one plausible relation is exactly as dangerous as
@@ -331,8 +334,15 @@ closing**:
 The tail slope is **+0.0015 per alias** — flat, if anything rising — against a
 95% half-width of 0.026. The mechanism is the head's ceiling rather than
 retrieval's climb: 1-NN sits at 0.975 from two aliases onward and never moves
-while the head tops out at 0.892. Alias supply explains **most** of the gap
-and not all of it; the residual is a capability difference (D155).
+while the head tops out at 0.892 (D155).
+
+**What we may not say, having twice tried to.** D155 withdrew *"not a
+permanent loss of information"* as unsupported and replaced it with *"the
+residual is a capability difference, not a supply shortfall"* — the same
+inference in weaker words. Three raters unanimously caught the reintroduction
+(D161). Nothing was measured past 18 aliases and this corpus cannot be pushed
+further, so **whether the residual is permanent is unknown**. What is measured
+is that the gap stops falling over 10 → 18.
 
 Two honest limits on that result. The plateau is measured on 8 relations, and
 those 8 have a gap **0.030–0.052 larger** than the 24-relation control at
@@ -520,20 +530,34 @@ evidence rule that out, is the scope doing work or absorbing failure?"*
 
 **The strongest result is about which claims fail.** Five claims sat in our
 table having never faced either prompt — a drift we did not detect until a
-test written to catch it passed by comparing counts. Four of those five were
-then adjudicated. **All four were flagged, two unanimously.** Of the ten
-claims that had been through adjudication before, two were flagged. The claims
-that skipped the loop were carrying the defects, and carrying worse ones: not
-arithmetic, but a single baseline, a single population, a pattern fitted after
-the fact (D153, D154).
+test written to catch it passed by comparing counts. Judged at last, **all
+five were flagged, two unanimously**; the fifth was held back a round because
+its evidence was the adjudicators' own behaviour, and it failed both prompts
+when a closed round made judging it non-circular. Of the ten claims that had
+been through adjudication before, two were flagged. The claims that skipped
+the loop were carrying the defects, and carrying worse ones: not arithmetic,
+but a single baseline, a single population, a pattern fitted after the fact
+(D153, D154, D161).
 
-**Verification pressure and adversarial pressure fail in opposite directions,
-and only running both catches either.** On a 14-claim table, verification
-flagged **zero** at quorum while attack flagged **six**. Neither subsumes the
-other: two claims were flagged only by attack, one only by verification. We
-have a clean mechanism for it too — one claim was flagged as overreach under
-verification, we "fixed" it by adding a qualification, and the adversarial
-pass then judged that same claim unfalsifiable. The repair produced vacuity.
+**Verification pressure and adversarial pressure find largely different
+things, and only running both catches either.** On a 14-claim table,
+verification flagged **zero** at quorum while attack flagged **six**; in the
+following round verification's single quorum flag was also an attack flag, so
+the sets are *largely different rather than disjoint* — a distinction three
+raters forced on us by refuting the stronger version with the round that was
+judging them (D161). We have a clean mechanism too: one claim was flagged as
+overreach under verification, we "fixed" it by adding a qualification, and the
+adversarial pass then judged that same claim unfalsifiable. The repair
+produced vacuity.
+
+**Sharpening the claims lowered the flag rate, and lowered rater instability
+with it.** After a pass rewriting every claim sentence to carry the condition
+its number was measured under, attack flags fell **6 of 14 → 3 of 14**, and
+the least stable rater went from flagging 6, 7 and 4 of the same claims across
+identical runs to 5, 5 and 4. The second effect was not predicted: an
+unqualified claim apparently leaves a rater latitude to flag it or not, and
+stating the condition removes the latitude. Law #10 was written as a
+prediction and this is the test of it (D156 → D161).
 
 **A verification pass that finds nothing may be measuring hedging.** Twice we
 reported that four families flagged *zero* claims and read it as support.

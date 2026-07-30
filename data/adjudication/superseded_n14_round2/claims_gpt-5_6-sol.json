@@ -1,0 +1,112 @@
+{
+ "audit": "claims",
+ "model": "gpt-5.6-sol",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.8571428571428571,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 10,
+   "mine": "SUPPORTED",
+   "theirs": "OVERREACH",
+   "their_reason": "The reported deltas are present, but the quoted '9x the wrong-rate' is not supplied; the artifact reports a known-answering wrong-rate change of +0.1117, not that ratio."
+  },
+  {
+   "idx": 12,
+   "mine": "SUPPORTED",
+   "theirs": "UNSUPPORTED",
+   "their_reason": "Verification flags item 12 for two of the three quorum raters, so it is not 0 of 14; the supplied attack set also does not yield the claimed exclusive-set counts."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "All three fingerprints are byte-identical after appending 652 subjects and 15 relations."
+  },
+  "1": {
+   "verdict": "SUPPORTED",
+   "reason": "Head penalties are 0.0578 for new entities, 0.1911 for new relations, and 0.2489 at depth 2."
+  },
+  "2": {
+   "verdict": "SUPPORTED",
+   "reason": "All 432 prior refusals became correct; 432/1179=0.366, and the remaining 21/1200 were initially correct."
+  },
+  "3": {
+   "verdict": "SUPPORTED",
+   "reason": "Among 431 prior old answers, 198 revised, 150 refused, 82 became other, and only 1 stayed old."
+  },
+  "4": {
+   "verdict": "SUPPORTED",
+   "reason": "Downstream edges raise revision from 0.4687 to 0.7332 and reduce breakage from 0.2738 to 0.0766."
+  },
+  "5": {
+   "verdict": "SUPPORTED",
+   "reason": "At 61 relations and depth 2, held-out pairs score 0.9245 versus 0.9135, a +0.0110 difference."
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "Store-filtered planning scores 0.9032 versus 0.3883 model-only and 0.9123 for walking; 0.9032 lies inside [0.9016,0.9219]."
+  },
+  "7": {
+   "verdict": "SUPPORTED",
+   "reason": "Zero-shot depth-3 answering is 0.8489 versus 0.9610 when trained, a 0.1121 gap; depth-4 results are explicitly excluded."
+  },
+  "8": {
+   "verdict": "SUPPORTED",
+   "reason": "Not-applicable refusal rises 0.0500 to 0.6933, while wrongness falls 0.1183 to 0.0450 at depth 1 and 0.1750 to 0.1017 at depth 2."
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "Maximum cosine has the strongest correlation with refusal (-0.9538), versus -0.7739 for mean cosine and -0.4846 for count; the stated scope acknowledges a smaller count effect."
+  },
+  "10": {
+   "verdict": "OVERREACH",
+   "reason": "The reported deltas are present, but the quoted '9x the wrong-rate' is not supplied; the artifact reports a known-answering wrong-rate change of +0.1117, not that ratio."
+  },
+  "11": {
+   "verdict": "SUPPORTED",
+   "reason": "The exp43 gap falls from 0.2294 to 0.0418, while exp51 remains near 0.09 at 10-18 aliases with tail slope +0.00155 per alias."
+  },
+  "12": {
+   "verdict": "UNSUPPORTED",
+   "reason": "Verification flags item 12 for two of the three quorum raters, so it is not 0 of 14; the supplied attack set also does not yield the claimed exclusive-set counts."
+  },
+  "13": {
+   "verdict": "SUPPORTED",
+   "reason": "The head's depth-1 gap is only -0.0288, while retrieval's is -0.3276; the other head gaps are -0.0100 and +0.0012."
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED",
+  "10": "SUPPORTED",
+  "11": "SUPPORTED",
+  "12": "SUPPORTED",
+  "13": "SUPPORTED"
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "audit": "attack_r1",
+ "model": "gpt-5.6-sol",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.6428571428571429,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 0,
+   "mine": "SURVIVES",
+   "theirs": "UNFALSIFIABLE",
+   "their_reason": "The falsifier is any append changing a fitted artifact, but the scope admits only appends already verified byte-identical, excluding every failure."
+  },
+  {
+   "idx": 4,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The falsifier is no improvement on identically processed edits with an unchanged head; differing edit and ambiguity counts plus no supplied head fingerprint leave that open."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The falsifier is refusal changing with count while maximum cosine is fixed; the confusable arm does exactly that, falling from 0.8485 to 0.7758."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The falsifier is the gap resuming its decline beyond 18 aliases; no measurements beyond 18 rule that out, so the residual cannot yet be assigned to capability."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The falsifier is non-disjoint quorum flag sets; the supplied artifact does not provide both quorum sets, and verification flagging 0/14 contradicts the claimed verification-only item."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "UNFALSIFIABLE",
+   "reason": "The falsifier is any append changing a fitted artifact, but the scope admits only appends already verified byte-identical, excluding every failure."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifiers are a larger depth-1 entity penalty or a depth-2 penalty below 0.10; the scoped measurements rule both out."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifier is any refused question remaining refused or becoming wrong, or any fingerprint changing; neither occurs."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifier is old-fact persistence rivaling refusal or other wrong answers; 1 stale case versus 150 refusals and 82 other answers rules it out."
+  },
+  "4": {
+   "verdict": "REFUTABLE",
+   "reason": "The falsifier is no improvement on identically processed edits with an unchanged head; differing edit and ambiguity counts plus no supplied head fingerprint leave that open."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifier is a depth-2 held-out-versus-trained gap exceeding 0.02; the measured gap is 0.011."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifier is model-only planning reaching the walker interval or store-filtered planning missing it; the scoped corpus shows neither."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifier is zero-shot 3-hop answering trailing trained 3-hop by more than 0.15; the measured deficit is about 0.112."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifier is increased wrongness at either depth or a refusal gain smaller than correct-answer loss; the reported arms rule both out."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "The falsifier is refusal changing with count while maximum cosine is fixed; the confusable arm does exactly that, falling from 0.8485 to 0.7758."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifier is wrongness growth comparable to the novel-answering gain or disappearance of refusal loss under matched coverage; measured changes rule both out."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "The falsifier is the gap resuming its decline beyond 18 aliases; no measurements beyond 18 rule that out, so the residual cannot yet be assigned to capability."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "The falsifier is non-disjoint quorum flag sets; the supplied artifact does not provide both quorum sets, and verification flagging 0/14 contradicts the claimed verification-only item."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifier is a head gap over 0.05 on any scoped population; all three measured gaps stay below it while retrieval drops sharply."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

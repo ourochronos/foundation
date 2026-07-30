@@ -1,0 +1,124 @@
+{
+ "audit": "attack_r1",
+ "model": "grok-4.5",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.7142857142857143,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Named falsifier is a model-only planner hitting walker CI on any corpus; only R=5/one corpus is shown, so that falsifier is open."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Claim says count does not govern, but with max-cos pinned the confusable arm still drops 0.8485\u21920.7758 as k grows; also 'any store' is untested."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier is gap resuming after 18 aliases; tail is only three noisy points on 8 relations, so 'stops'/'capability residual' is not closed."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Claim says verification quorum flags 0/14 yet also 'one only by verification'; attack-vs-verification split is not evidenced cleanly enough to rule out overlap/contradiction."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is any basis/coords/head fingerprint change on append; identical hashes rule it out for the measured artifacts."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifiers (entity penalty > relation at d1, or d2 penalty < 0.10) are explicit; measured 0.058 < 0.191 and d2 +0.249 rule both out."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is any of the 432 prior refusals not becoming correct, or fingerprint drift; matrix is refused->correct 432/432 and fingerprints match."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is staleness dominating refusal/wrong among prior-old cases; 1/431 stale vs 150 refuse and 82 other rules it out."
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is downstream edges not cutting breakage; broke falls 0.274\u21920.077 (\u03940.197) on the same n_was_old=431."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is |d2 held\u2212train| > 0.02; 0.9245\u22120.9135 = +0.011 is inside the stated margin."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Named falsifier is a model-only planner hitting walker CI on any corpus; only R=5/one corpus is shown, so that falsifier is open."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is zero-shot 3-hop >0.15 below trained; 0.961\u22120.849=0.112 stays under the threshold."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifiers are wrongness rising at either depth or NA-refusal lift < correct cost; wrongness falls at d1/d2 and NA lift 0.64 > d1 correct drop 0.11."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "Claim says count does not govern, but with max-cos pinned the confusable arm still drops 0.8485\u21920.7758 as k grows; also 'any store' is untested."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifiers are novel-arm wrongness cost \u2248 gain, or refusal collapse vanishing under matched coverage; +0.072 wrong vs +0.741 correct and large refusal drops remain."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier is gap resuming after 18 aliases; tail is only three noisy points on 8 relations, so 'stops'/'capability residual' is not closed."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "Claim says verification quorum flags 0/14 yet also 'one only by verification'; attack-vs-verification split is not evidenced cleanly enough to rule out overlap/contradiction."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier is head gap >0.05 on d1/d2/NA; measured \u22120.029/\u22120.010/+0.001, with knn collapse 0.854\u21920.526 as stated."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

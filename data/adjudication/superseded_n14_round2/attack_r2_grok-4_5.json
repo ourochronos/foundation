@@ -1,0 +1,136 @@
+{
+ "audit": "attack_r2",
+ "model": "grok-4.5",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.5714285714285714,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 0,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: any fitted artifact mutates on append (or mutation outside hashed basis/coords/head). Evidence only shows three fingerprints identical in one run; does not prove no other fitted state exist"
+  },
+  {
+   "idx": 2,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: any of 432 refused\u2192not-correct, or fingerprint change. Matrix shows 432 refused\u2192correct and fingerprints match, but 'LEARNS' and 'properly REFUSED' still hinge on refusal honesty/labeling n"
+  },
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: model-only planner reaches walker CI on ANY corpus, or store-filtered fails where enum is cheap. Evidence is one R=5 corpus; P2=0.3883 and P3=0.9032 vs walker 0.9123 win here, but 'the STOR"
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: count tracks refusal better than max cosine on ANY store, or arms fail cosine separation. Here max_cos r=-0.954 beats count, separation 0.1539, but one-corpus/fixed-THR/\u22658-option filter doe"
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: gap keeps falling past 18 aliases, or head matches 1-NN at some supply. Plateau ~0.09 on n=8 relations only; noise_half_width 0.026 and tiny set leave room gap is still falling or selection"
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier: within-rater ranges comparable, or prompt flag sets overlap. Ranges 3 vs 1/1/2 and attack vs verification quorum split are in the table, but attack-prompt totals are not in the supplied JSO"
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: any fitted artifact mutates on append (or mutation outside hashed basis/coords/head). Evidence only shows three fingerprints identical in one run; does not prove no other fitted state exist"
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier stated: entity penalty > relation at d1, or d2 penalty <0.10. Numbers: entity 0.9611-0.9033=0.058 < relation 0.9733-0.7822=0.191; d2 0.7889-0.54=0.249>0.10. Scope is tight enough to be hit."
+  },
+  "2": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: any of 432 refused\u2192not-correct, or fingerprint change. Matrix shows 432 refused\u2192correct and fingerprints match, but 'LEARNS' and 'properly REFUSED' still hinge on refusal honesty/labeling n"
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: staleness exceeds refusal or wrong among previously-old-correct. 1 old\u2192old vs 150 old\u2192refuse and 82 old\u2192other among 431; 0.002 < 0.348 and 0.190. Scope admits the one stale case."
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: downstream edges fail to cut breakage. Broke 0.274\u21920.077 (\u03940.197); revision 0.469\u21920.733. Same n_was_old=431 comparison is concrete."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: |d2 held\u2212train| >0.02. 0.9245\u22120.9135=+0.011 within 0.02; d3 gap and exp18 contrast are disclosed, not absorbing failures."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: model-only planner reaches walker CI on ANY corpus, or store-filtered fails where enum is cheap. Evidence is one R=5 corpus; P2=0.3883 and P3=0.9032 vs walker 0.9123 win here, but 'the STOR"
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: zero-shot 3-hop correct more than 0.15 below trained. 0.849 vs 0.961 (gap 0.112<0.15); d4 collapse is admitted as refutation of broader extrapolation."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: gate raises wrongness at any depth, or NA-refusal lift < correct cost. Wrong falls d1 0.118\u21920.045 and d2 0.175\u21920.102; NA refuse +0.643 vs d1 correct cost 0.110 \u2014 lift exceeds cost."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: count tracks refusal better than max cosine on ANY store, or arms fail cosine separation. Here max_cos r=-0.954 beats count, separation 0.1539, but one-corpus/fixed-THR/\u22658-option filter doe"
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: novel-population wrong cost commensurate with gain, or refusal collapse vanishes under matched tuning. Matched: +0.7407 correct vs +0.0723 wrong; refusal collapses large. Scope pins one sto"
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: gap keeps falling past 18 aliases, or head matches 1-NN at some supply. Plateau ~0.09 on n=8 relations only; noise_half_width 0.026 and tiny set leave room gap is still falling or selection"
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier: within-rater ranges comparable, or prompt flag sets overlap. Ranges 3 vs 1/1/2 and attack vs verification quorum split are in the table, but attack-prompt totals are not in the supplied JSO"
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head gap >0.05 on any of three populations. Gaps \u22120.029, \u22120.010, +0.001; knn d1 0.854\u21920.526. Single-corpus limit is honest, not vacuous."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

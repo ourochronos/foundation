@@ -1,0 +1,124 @@
+{
+ "audit": "attack_r3",
+ "model": "grok-4.5",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.7142857142857143,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 6,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Authors\u2019 own falsifier is model-only reaching walker CI on ANY corpus; only R=5 one-corpus evidence exists, so that falsifier is not ruled out. Walk\u2248store-filter on this corpus does not lock the unive"
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier \u2018tracks count better than max-cos on any store\u2019 is untested beyond one corpus/THR. Also 1 confusable refuses less than 8 non-confusable (0.849 vs 0.885), so the headline contrast does not se"
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Falsifier \u2018gap resumes falling past 18\u2019 is not ruled out\u2014curve only reaches 18 on the 8-rel set. \u2018Stops falling / residual is capability\u2019 overclaims a short plateau (noise_half_width 0.026)."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Claim contradicts itself (verification quorum 0/14 vs \u2018one flagged only by verification\u2019); attack arm numbers are absent from evidence; claim-12 has 2/3 verification votes so \u2018verification flagged 0\u2019 "
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: basis/coords/head fingerprints differ after append. Evidence shows identical hashes and mechanical_check_passed; scope is exactly that check, not a vacuum hedge."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifiers they name (entity penalty > relation at d1, or d2 penalty < 0.10) are ruled out: ~0.058 < 0.191 and d2 ~0.249. Scope is narrow but does real work (head-only, one ratio)."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: any of the 432 refused\u2192not-correct, or fingerprint drift. Matrix has refused\u2192correct=432 only; fingerprints match; 21 pre-answerable and 432/1179 check out."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: staleness \u2265 refusal or wrong among was-old. Counts give old\u2192old=1 vs old\u2192refuse=150 and old\u2192other=82; staleness is not the dominant failure as claimed."
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: downstream edges fail to cut breakage. Breakage falls 0.274\u21920.077 (\u03940.197) while revision rises; same n_was_old comparison stands."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: |d2 held\u2212train| > 0.02. Measured +0.011 within margin; d3 failure is admitted, not absorbed. Scope (61 rels, d2 only) is a real bound."
+  },
+  "6": {
+   "verdict": "REFUTABLE",
+   "reason": "Authors\u2019 own falsifier is model-only reaching walker CI on ANY corpus; only R=5 one-corpus evidence exists, so that falsifier is not ruled out. Walk\u2248store-filter on this corpus does not lock the unive"
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: zero-shot 3-hop >0.15 below trained. Gap ~0.112; d4 collapse is conceded as refutation elsewhere, so scope is honest not all-absorbing."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: wrongness up at any depth, or NA-refusal lift < correct-answer cost. Wrongness falls d1/d2; NA refuse +0.643 dwarfs correct drops (~0.11/0.095)."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier \u2018tracks count better than max-cos on any store\u2019 is untested beyond one corpus/THR. Also 1 confusable refuses less than 8 non-confusable (0.849 vs 0.885), so the headline contrast does not se"
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: novel-population wrongness cost commensurate with gain, or refusal collapse vanishes at matched coverage. Gain +0.74 vs wrong +0.07; refusal costs remain large under matched tuning."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "Falsifier \u2018gap resumes falling past 18\u2019 is not ruled out\u2014curve only reaches 18 on the 8-rel set. \u2018Stops falling / residual is capability\u2019 overclaims a short plateau (noise_half_width 0.026)."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "Claim contradicts itself (verification quorum 0/14 vs \u2018one flagged only by verification\u2019); attack arm numbers are absent from evidence; claim-12 has 2/3 verification votes so \u2018verification flagged 0\u2019 "
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "Falsifier: head gap >0.05 on d1/d2/NA. Gaps \u22120.029/\u22120.010/+0.001; retrieval collapse is large. Second-corpus limit is disclosed, not used to eat failures."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

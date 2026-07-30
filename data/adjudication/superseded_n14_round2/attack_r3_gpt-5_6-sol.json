@@ -1,0 +1,124 @@
+{
+ "audit": "attack_r3",
+ "model": "gpt-5.6-sol",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.7142857142857143,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 7,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "A matched-question comparison could show a gap over 0.15; the zero-shot and trained arms use differently sized populations (609 versus 77), so this is not ruled out."
+  },
+  {
+   "idx": 9,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Case-level controlled variation could make count more predictive than maximum cosine; correlations across aggregated cells with coupled manipulations do not rule that out."
+  },
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The gap could resume falling beyond 18 aliases; no measurement beyond 18 rules this out, so the claimed permanent capability residual is unsupported."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "Prompt overlap or non-concentrated instability would falsify it; the supplied artifact omits attack-run details and its 0-versus-6 quorum statement cannot support claims unique to verification."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "A changed fitted-artifact fingerprint after append would falsify it; all three fingerprints remain byte-identical."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "Entity exceeding relation penalty, or depth-2 falling below 0.10, would falsify it; measured penalties rule both out."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "Any refused case not becoming correct, or any fingerprint changing, would falsify it; 432/432 transition and identical hashes rule this out."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Staleness exceeding refusal or other wrong answers would falsify it; old->old is 1 versus 150 refusals and 82 other answers."
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "No breakage reduction on the same 431 cases would falsify it; downstream supply reduces breakage from 0.274 to 0.077."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "A depth-2 held-out gap beyond 0.02 would falsify the scoped parity claim; the measured gap is +0.011."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "Within the stated corpus, model-only planning matching the walker or store-filtered planning missing it would falsify the claim; neither occurs."
+  },
+  "7": {
+   "verdict": "REFUTABLE",
+   "reason": "A matched-question comparison could show a gap over 0.15; the zero-shot and trained arms use differently sized populations (609 versus 77), so this is not ruled out."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Higher wrongness or refusal gains smaller than correct-answer losses would falsify it; both depths reduce wrongness and the 0.643 refusal gain exceeds either loss."
+  },
+  "9": {
+   "verdict": "REFUTABLE",
+   "reason": "Case-level controlled variation could make count more predictive than maximum cosine; correlations across aggregated cells with coupled manipulations do not rule that out."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "A wrongness increase comparable to the answering gain, or disappearance of refusal loss after matched tuning, would falsify it; matched coverage shows +0.0723 versus +0.7407 and large refusal losses."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "The gap could resume falling beyond 18 aliases; no measurement beyond 18 rules this out, so the claimed permanent capability residual is unsupported."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "Prompt overlap or non-concentrated instability would falsify it; the supplied artifact omits attack-run details and its 0-versus-6 quorum statement cannot support claims unique to verification."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "A head gap above 0.05 on any scoped population would falsify it; measured gaps are 0.029, 0.010, and 0.001, while retrieval drops sharply."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}

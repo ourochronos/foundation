@@ -1,0 +1,95 @@
+{
+ "audit": "claims",
+ "model": "grok-4.5",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 13,
+ "raw_agreement": 1.0,
+ "cohens_kappa": 1.0,
+ "disagreements": [],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "mechanical_check_passed true; basis/coords/head fingerprints identical at freeze and after_append"
+  },
+  "1": {
+   "verdict": "SUPPORTED",
+   "reason": "head penalties: new_subj 0.9611-0.9033=0.058, new_rel 0.9733-0.7822=0.191, d2_new 0.7889-0.54=0.249; entity<relation; knn deltas match scope"
+  },
+  "2": {
+   "verdict": "SUPPORTED",
+   "reason": "refused->correct=432 with no other refused_* row; 432/1179=0.366; correct before=21; fingerprints unchanged; n_flip_questions=1200"
+  },
+  "3": {
+   "verdict": "SUPPORTED",
+   "reason": "old->old=1 of 431 (0.002); revision_rate_all=0.459; old->refuse 150/431=0.348 > old->other 82/431=0.190 > stale"
+  },
+  "4": {
+   "verdict": "SUPPORTED",
+   "reason": "rewrite only rev=0.469 broke=0.274; +edges rev=0.733 broke=0.077; breakage drop 0.197"
+  },
+  "5": {
+   "verdict": "SUPPORTED",
+   "reason": "eval_d2_clean 0.9245 vs train_d2 0.9135 (+0.011); |gap|<0.02; n_relations=61; d3 gap 0.057 acknowledged"
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "P3=0.9032 inside walker CI [0.9016,0.9219]; P2=0.3883; filter +0.515; walk +0.009"
+  },
+  "7": {
+   "verdict": "SUPPORTED",
+   "reason": "zero_shot correct 0.849 vs trained 0.961 (gap 0.112<0.15); exp32 d4 raw 0.289 / basis 0.149"
+  },
+  "8": {
+   "verdict": "SUPPORTED",
+   "reason": "NA refuse 0.050->0.693; d1 wrong 0.118->0.045; d2 wrong 0.175->0.102; wrongness falls at every depth"
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "corr max_cos -0.954 vs mean -0.774 vs log2_k -0.485; one_confusable 0.8485 vs 8_non 0.8848"
+  },
+  "10": {
+   "verdict": "SUPPORTED",
+   "reason": "novel d1 0.0054->0.7419 wrong 0.1531->0.1667 abstain 0.8415; matched +0.7407 correct / +0.0723 wrong; costs -0.706/-0.5685/-0.1409"
+  },
+  "11": {
+   "verdict": "SUPPORTED",
+   "reason": "exp43 gap 0.229->0.042 (2..10); exp51 gap 0.087@10, 0.091@18, slope +0.0015; exp49 head never reaches 1-NN"
+  },
+  "13": {
+   "verdict": "SUPPORTED",
+   "reason": "d1 head 0.766 vs 0.795; knn 0.526 vs 0.854; head gaps -0.029/-0.010/+0.001 all |gap|<0.05"
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED",
+  "10": "SUPPORTED",
+  "11": "SUPPORTED",
+  "12": "SUPPORTED",
+  "13": "SUPPORTED"
+ }
+}

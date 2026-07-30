@@ -1,0 +1,106 @@
+{
+ "audit": "claims",
+ "model": "gemini-3.1-pro-preview",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.9285714285714286,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 12,
+   "mine": "SUPPORTED",
+   "theirs": "UNSUPPORTED",
+   "their_reason": "Verification flagged claim 12 at quorum (voted by gpt-5.6-sol and grok-4.5), contradicting the statement that verification flagged 0 of 14."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SUPPORTED",
+   "reason": "All fingerprints remained identical after append, with mechanical_check_passed true."
+  },
+  "1": {
+   "verdict": "SUPPORTED",
+   "reason": "The calculated penalties exactly match the claimed +0.058, +0.191, and +0.249, fulfilling the falsification conditions."
+  },
+  "2": {
+   "verdict": "SUPPORTED",
+   "reason": "Transition flip counts sum to exactly 1179 unanswerable and 21 answerable, with 432/432 refused turning correct."
+  },
+  "3": {
+   "verdict": "SUPPORTED",
+   "reason": "The components of previously-old-answering sum to 431, with exact matches for 1/431 (0.002) stale, 0.348 refusal, 0.190 wrong, and 0.459 revision."
+  },
+  "4": {
+   "verdict": "SUPPORTED",
+   "reason": "The revision and breakage rates directly match the numbers in the D141 and downstream edges conditions."
+  },
+  "5": {
+   "verdict": "SUPPORTED",
+   "reason": "The held-out correct rate (0.9245) exceeds the trained rate (0.9135) by 0.011 at depth 2, and breaks at depth 3 by the claimed 0.057 margin."
+  },
+  "6": {
+   "verdict": "SUPPORTED",
+   "reason": "Walker score 0.9123, store-filtered 0.9032, and model-only 0.3883 all align perfectly with the derived +0.515 and +0.009 advantages."
+  },
+  "7": {
+   "verdict": "SUPPORTED",
+   "reason": "Zero-shot 3-hop correctness (0.849) vs trained (0.961) matches, as does the failure at depth 4 (0.289 raw, 0.149 basis)."
+  },
+  "8": {
+   "verdict": "SUPPORTED",
+   "reason": "Gate off/on figures accurately match the claimed refusal lift (0.050 to 0.693) and wrongness reductions for depth-1 (0.118 to 0.045) and depth-2."
+  },
+  "9": {
+   "verdict": "SUPPORTED",
+   "reason": "The correlations for max cosine (-0.954), mean (-0.774), and count (-0.485) match perfectly, alongside the explicitly reported 0.8485 vs 0.8848 refusal rates."
+  },
+  "10": {
+   "verdict": "SUPPORTED",
+   "reason": "The transition from 0.0054 to 0.7419 correct and 0.1531 to 0.1667 wrong exactly matches the data, along with all the matched coverage trade-off figures."
+  },
+  "11": {
+   "verdict": "SUPPORTED",
+   "reason": "Gap figures from exp43 (0.229 to 0.042) and extended plateau figures (0.087 to 0.091) match, as does the positive tail slope of 0.0015."
+  },
+  "12": {
+   "verdict": "UNSUPPORTED",
+   "reason": "Verification flagged claim 12 at quorum (voted by gpt-5.6-sol and grok-4.5), contradicting the statement that verification flagged 0 of 14."
+  },
+  "13": {
+   "verdict": "SUPPORTED",
+   "reason": "The held-out scores (0.766 head, 0.526 knn) and seen scores (0.795 head, 0.854 knn) match the stated drops exactly."
+  }
+ },
+ "my_labels": {
+  "0": "SUPPORTED",
+  "1": "SUPPORTED",
+  "2": "SUPPORTED",
+  "3": "SUPPORTED",
+  "4": "SUPPORTED",
+  "5": "SUPPORTED",
+  "6": "SUPPORTED",
+  "7": "SUPPORTED",
+  "8": "SUPPORTED",
+  "9": "SUPPORTED",
+  "10": "SUPPORTED",
+  "11": "SUPPORTED",
+  "12": "SUPPORTED",
+  "13": "SUPPORTED"
+ }
+}

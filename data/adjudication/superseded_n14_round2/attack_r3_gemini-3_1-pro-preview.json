@@ -1,0 +1,112 @@
+{
+ "audit": "attack_r3",
+ "model": "gemini-3.1-pro-preview",
+ "n": 14,
+ "judged_claims": {
+  "0": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "1": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS, AT DEPTH 1: head new entity +0.058, new",
+  "2": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after",
+  "3": "The store REVISES rather than going stale: after a superseding edit it almost never keeps asserting the old fact \u2014 1 of ",
+  "4": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editin",
+  "5": "Composition generalises to relation pairs never seen composed: at depth 2 held-out pairs score 0.9245 against trained pa",
+  "6": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowe",
+  "7": "Depth extrapolates without depth-specific training for ANSWERING at 3 hops: 0.849 with no 3-hop in training, against 0.9",
+  "8": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693, and cuts DEPTH-",
+  "9": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With b",
+  "10": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a ",
+  "11": "Alias supply explains MOST of retrieval's advantage over a parametric head, and not all of it: the gap falls 0.229 -> 0.",
+  "12": "Claim adjudication is noisy in a specific, measurable way: instability is concentrated in ONE rater (flags per identical",
+  "13": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against"
+ },
+ "n_judged": 14,
+ "raw_agreement": 0.8571428571428571,
+ "cohens_kappa": 0.0,
+ "disagreements": [
+  {
+   "idx": 11,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The supplied evidence stops at 18 aliases, meaning it is impossible to rule out the falsifier of the gap resuming its fall past 18."
+  },
+  {
+   "idx": 12,
+   "mine": "SURVIVES",
+   "theirs": "REFUTABLE",
+   "their_reason": "The evidence shows verification flagged claim 12 at quorum (gpt and grok), directly overlapping with the attack prompt's flags and triggering the falsifier."
+  }
+ ],
+ "their_verdicts": {
+  "0": {
+   "verdict": "SURVIVES",
+   "reason": "The falsifier is any change in the artifact fingerprints, which the evidence rules out by showing identical hashes across the append."
+  },
+  "1": {
+   "verdict": "SURVIVES",
+   "reason": "The explicit falsifiers (entity penalty > relation penalty, or depth-2 penalty < 0.10) are directly ruled out by the measurements."
+  },
+  "2": {
+   "verdict": "SURVIVES",
+   "reason": "All 432 previously refused questions transitioned to correct, and fingerprints remain identical, ruling out the specific falsifiers."
+  },
+  "3": {
+   "verdict": "SURVIVES",
+   "reason": "Staleness (0.002) is vastly outweighed by refusal (0.348) and wrong-answering (0.190), satisfying the falsification condition."
+  },
+  "4": {
+   "verdict": "SURVIVES",
+   "reason": "Providing downstream edges explicitly reduces breakage by 0.197 (from 0.274 to 0.077), satisfying the claim's empirical test."
+  },
+  "5": {
+   "verdict": "SURVIVES",
+   "reason": "Held-out pairs score within 0.02 of trained pairs at depth 2 (gap is +0.011), ruling out the specific falsifier."
+  },
+  "6": {
+   "verdict": "SURVIVES",
+   "reason": "The model-only planner fails to reach the walker's CI (0.3883), and the store-filtered planner does (0.9032), confirming the claim."
+  },
+  "7": {
+   "verdict": "SURVIVES",
+   "reason": "Zero-shot 3-hop answering is only 0.112 behind trained 3-hop answering, which is less than the 0.15 threshold set for falsification."
+  },
+  "8": {
+   "verdict": "SURVIVES",
+   "reason": "Wrongness drops across measured depths, and the 0.643 increase in refusal vastly exceeds the 0.11 drop in correct answers."
+  },
+  "9": {
+   "verdict": "SURVIVES",
+   "reason": "Refusal correlates much more strongly with maximum cosine (-0.954) than with option count (-0.485), passing the falsification test."
+  },
+  "10": {
+   "verdict": "SURVIVES",
+   "reason": "The evidence confirms the exact trade-off under matched tuning: high gains in novel correct answers for minimal wrongness, but massive drops in refusal."
+  },
+  "11": {
+   "verdict": "REFUTABLE",
+   "reason": "The supplied evidence stops at 18 aliases, meaning it is impossible to rule out the falsifier of the gap resuming its fall past 18."
+  },
+  "12": {
+   "verdict": "REFUTABLE",
+   "reason": "The evidence shows verification flagged claim 12 at quorum (gpt and grok), directly overlapping with the attack prompt's flags and triggering the falsifier."
+  },
+  "13": {
+   "verdict": "SURVIVES",
+   "reason": "The head's gap never exceeds 0.05 across the tested populations (-0.029, -0.010, 0.001), ruling out the specific falsifier."
+  }
+ },
+ "my_labels": {
+  "0": "SURVIVES",
+  "1": "SURVIVES",
+  "2": "SURVIVES",
+  "3": "SURVIVES",
+  "4": "SURVIVES",
+  "5": "SURVIVES",
+  "6": "SURVIVES",
+  "7": "SURVIVES",
+  "8": "SURVIVES",
+  "9": "SURVIVES",
+  "10": "SURVIVES",
+  "11": "SURVIVES",
+  "12": "SURVIVES",
+  "13": "SURVIVES"
+ }
+}
