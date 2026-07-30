@@ -1,0 +1,813 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T17:05:52.830826+00:00",
+  "commit": "f29a13a50cb4234148f7a4c5a099be19c5d74b50",
+  "dirty": true,
+  "command": "scripts/exp56_anchor_strategy.py both",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "KS": [
+    4,
+    8,
+    16,
+    32,
+    43,
+    64,
+    128,
+    256
+   ],
+   "STRATS": [
+    "kmeans_label",
+    "pca_label",
+    "lda_between",
+    "kmeans_offset",
+    "entity_complement",
+    "random_orthonormal"
+   ],
+   "K_ENTITY": 32,
+   "N_HOLD_REL": 12
+  }
+ },
+ "n_relations": 56,
+ "n_trained": 44,
+ "n_triples": 7348,
+ "n_entities": 6476,
+ "chance": 0.0179,
+ "arms": {
+  "m3": {
+   "kmeans_label_K4": {
+    "strategy": "kmeans_label",
+    "K": 4,
+    "trained": 0.2151,
+    "novel": 0.1303,
+    "coherence": 0.6722
+   },
+   "kmeans_label_K8": {
+    "strategy": "kmeans_label",
+    "K": 8,
+    "trained": 0.4054,
+    "novel": 0.1154,
+    "coherence": 0.564
+   },
+   "kmeans_label_K16": {
+    "strategy": "kmeans_label",
+    "K": 16,
+    "trained": 0.5483,
+    "novel": 0.1175,
+    "coherence": 0.4479
+   },
+   "kmeans_label_K32": {
+    "strategy": "kmeans_label",
+    "K": 32,
+    "trained": 0.5851,
+    "novel": 0.1111,
+    "coherence": 0.364
+   },
+   "kmeans_label_K43": {
+    "strategy": "kmeans_label",
+    "K": 43,
+    "trained": 0.6119,
+    "novel": 0.2361,
+    "coherence": 0.3657
+   },
+   "pca_label_K4": {
+    "strategy": "pca_label",
+    "K": 4,
+    "trained": 0.413,
+    "novel": 0.0983,
+    "coherence": 0.0
+   },
+   "pca_label_K8": {
+    "strategy": "pca_label",
+    "K": 8,
+    "trained": 0.5564,
+    "novel": 0.1058,
+    "coherence": 0.0
+   },
+   "pca_label_K16": {
+    "strategy": "pca_label",
+    "K": 16,
+    "trained": 0.6793,
+    "novel": 0.1068,
+    "coherence": 0.0
+   },
+   "pca_label_K32": {
+    "strategy": "pca_label",
+    "K": 32,
+    "trained": 0.6926,
+    "novel": 0.2233,
+    "coherence": 0.0
+   },
+   "pca_label_K43": {
+    "strategy": "pca_label",
+    "K": 43,
+    "trained": 0.6969,
+    "novel": 0.2137,
+    "coherence": 0.0
+   },
+   "lda_between_K4": {
+    "strategy": "lda_between",
+    "K": 4,
+    "trained": 0.4283,
+    "novel": 0.0876,
+    "coherence": 0.0
+   },
+   "lda_between_K8": {
+    "strategy": "lda_between",
+    "K": 8,
+    "trained": 0.5789,
+    "novel": 0.1357,
+    "coherence": 0.0
+   },
+   "lda_between_K16": {
+    "strategy": "lda_between",
+    "K": 16,
+    "trained": 0.6745,
+    "novel": 0.2009,
+    "coherence": 0.0
+   },
+   "lda_between_K32": {
+    "strategy": "lda_between",
+    "K": 32,
+    "trained": 0.7027,
+    "novel": 0.2767,
+    "coherence": 0.0
+   },
+   "lda_between_K43": {
+    "strategy": "lda_between",
+    "K": 43,
+    "trained": 0.7075,
+    "novel": 0.2393,
+    "coherence": 0.0
+   },
+   "kmeans_offset_K4": {
+    "strategy": "kmeans_offset",
+    "K": 4,
+    "trained": 0.2672,
+    "novel": 0.0224,
+    "coherence": 0.1692
+   },
+   "kmeans_offset_K8": {
+    "strategy": "kmeans_offset",
+    "K": 8,
+    "trained": 0.4431,
+    "novel": 0.0192,
+    "coherence": 0.2527
+   },
+   "kmeans_offset_K16": {
+    "strategy": "kmeans_offset",
+    "K": 16,
+    "trained": 0.5406,
+    "novel": 0.016,
+    "coherence": 0.2359
+   },
+   "kmeans_offset_K32": {
+    "strategy": "kmeans_offset",
+    "K": 32,
+    "trained": 0.6128,
+    "novel": 0.0331,
+    "coherence": 0.1902
+   },
+   "kmeans_offset_K43": {
+    "strategy": "kmeans_offset",
+    "K": 43,
+    "trained": 0.6353,
+    "novel": 0.0053,
+    "coherence": 0.1673
+   },
+   "kmeans_offset_K64": {
+    "strategy": "kmeans_offset",
+    "K": 64,
+    "trained": 0.6606,
+    "novel": 0.0021,
+    "coherence": 0.0833
+   },
+   "kmeans_offset_K128": {
+    "strategy": "kmeans_offset",
+    "K": 128,
+    "trained": 0.6807,
+    "novel": 0.016,
+    "coherence": 0.0876
+   },
+   "kmeans_offset_K256": {
+    "strategy": "kmeans_offset",
+    "K": 256,
+    "trained": 0.6721,
+    "novel": 0.0011,
+    "coherence": 0.0757
+   },
+   "entity_complement_K4": {
+    "strategy": "entity_complement",
+    "K": 4,
+    "trained": 0.3188,
+    "novel": 0.0705,
+    "coherence": 0.2656
+   },
+   "entity_complement_K8": {
+    "strategy": "entity_complement",
+    "K": 8,
+    "trained": 0.4794,
+    "novel": 0.1966,
+    "coherence": 0.1341
+   },
+   "entity_complement_K16": {
+    "strategy": "entity_complement",
+    "K": 16,
+    "trained": 0.5765,
+    "novel": 0.1709,
+    "coherence": 0.1019
+   },
+   "entity_complement_K32": {
+    "strategy": "entity_complement",
+    "K": 32,
+    "trained": 0.6315,
+    "novel": 0.3173,
+    "coherence": 0.0902
+   },
+   "entity_complement_K43": {
+    "strategy": "entity_complement",
+    "K": 43,
+    "trained": 0.6496,
+    "novel": 0.3056,
+    "coherence": 0.1009
+   },
+   "random_orthonormal_K4": {
+    "strategy": "random_orthonormal",
+    "K": 4,
+    "trained": 0.2739,
+    "novel": 0.1026,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K8": {
+    "strategy": "random_orthonormal",
+    "K": 8,
+    "trained": 0.5359,
+    "novel": 0.0844,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K16": {
+    "strategy": "random_orthonormal",
+    "K": 16,
+    "trained": 0.664,
+    "novel": 0.0246,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K32": {
+    "strategy": "random_orthonormal",
+    "K": 32,
+    "trained": 0.6773,
+    "novel": 0.0064,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K43": {
+    "strategy": "random_orthonormal",
+    "K": 43,
+    "trained": 0.7008,
+    "novel": 0.0107,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K64": {
+    "strategy": "random_orthonormal",
+    "K": 64,
+    "trained": 0.6984,
+    "novel": 0.0919,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K128": {
+    "strategy": "random_orthonormal",
+    "K": 128,
+    "trained": 0.7046,
+    "novel": 0.0278,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K256": {
+    "strategy": "random_orthonormal",
+    "K": 256,
+    "trained": 0.7008,
+    "novel": 0.0021,
+    "coherence": 0.0
+   }
+  },
+  "gemma_symmetric": {
+   "kmeans_label_K4": {
+    "strategy": "kmeans_label",
+    "K": 4,
+    "trained": 0.2314,
+    "novel": 0.0951,
+    "coherence": 0.8596
+   },
+   "kmeans_label_K8": {
+    "strategy": "kmeans_label",
+    "K": 8,
+    "trained": 0.3303,
+    "novel": 0.4028,
+    "coherence": 0.7495
+   },
+   "kmeans_label_K16": {
+    "strategy": "kmeans_label",
+    "K": 16,
+    "trained": 0.5196,
+    "novel": 0.4252,
+    "coherence": 0.6613
+   },
+   "kmeans_label_K32": {
+    "strategy": "kmeans_label",
+    "K": 32,
+    "trained": 0.5727,
+    "novel": 0.359,
+    "coherence": 0.6114
+   },
+   "kmeans_label_K43": {
+    "strategy": "kmeans_label",
+    "K": 43,
+    "trained": 0.5249,
+    "novel": 0.3942,
+    "coherence": 0.6197
+   },
+   "pca_label_K4": {
+    "strategy": "pca_label",
+    "K": 4,
+    "trained": 0.4947,
+    "novel": 0.4006,
+    "coherence": 0.0
+   },
+   "pca_label_K8": {
+    "strategy": "pca_label",
+    "K": 8,
+    "trained": 0.6295,
+    "novel": 0.36,
+    "coherence": 0.0
+   },
+   "pca_label_K16": {
+    "strategy": "pca_label",
+    "K": 16,
+    "trained": 0.6879,
+    "novel": 0.2564,
+    "coherence": 0.0
+   },
+   "pca_label_K32": {
+    "strategy": "pca_label",
+    "K": 32,
+    "trained": 0.7194,
+    "novel": 0.3483,
+    "coherence": 0.0
+   },
+   "pca_label_K43": {
+    "strategy": "pca_label",
+    "K": 43,
+    "trained": 0.7266,
+    "novel": 0.3697,
+    "coherence": 0.0
+   },
+   "lda_between_K4": {
+    "strategy": "lda_between",
+    "K": 4,
+    "trained": 0.4852,
+    "novel": 0.2308,
+    "coherence": 0.0
+   },
+   "lda_between_K8": {
+    "strategy": "lda_between",
+    "K": 8,
+    "trained": 0.6028,
+    "novel": 0.3632,
+    "coherence": 0.0
+   },
+   "lda_between_K16": {
+    "strategy": "lda_between",
+    "K": 16,
+    "trained": 0.717,
+    "novel": 0.4145,
+    "coherence": 0.0
+   },
+   "lda_between_K32": {
+    "strategy": "lda_between",
+    "K": 32,
+    "trained": 0.7146,
+    "novel": 0.453,
+    "coherence": 0.0
+   },
+   "lda_between_K43": {
+    "strategy": "lda_between",
+    "K": 43,
+    "trained": 0.7185,
+    "novel": 0.4177,
+    "coherence": 0.0
+   },
+   "kmeans_offset_K4": {
+    "strategy": "kmeans_offset",
+    "K": 4,
+    "trained": 0.2772,
+    "novel": 0.0385,
+    "coherence": 0.2049
+   },
+   "kmeans_offset_K8": {
+    "strategy": "kmeans_offset",
+    "K": 8,
+    "trained": 0.3748,
+    "novel": 0.0812,
+    "coherence": 0.2317
+   },
+   "kmeans_offset_K16": {
+    "strategy": "kmeans_offset",
+    "K": 16,
+    "trained": 0.4589,
+    "novel": 0.1036,
+    "coherence": 0.2401
+   },
+   "kmeans_offset_K32": {
+    "strategy": "kmeans_offset",
+    "K": 32,
+    "trained": 0.5373,
+    "novel": 0.14,
+    "coherence": 0.2025
+   },
+   "kmeans_offset_K43": {
+    "strategy": "kmeans_offset",
+    "K": 43,
+    "trained": 0.5272,
+    "novel": 0.1581,
+    "coherence": 0.1947
+   },
+   "kmeans_offset_K64": {
+    "strategy": "kmeans_offset",
+    "K": 64,
+    "trained": 0.6683,
+    "novel": 0.188,
+    "coherence": 0.068
+   },
+   "kmeans_offset_K128": {
+    "strategy": "kmeans_offset",
+    "K": 128,
+    "trained": 0.7008,
+    "novel": 0.1944,
+    "coherence": 0.0725
+   },
+   "kmeans_offset_K256": {
+    "strategy": "kmeans_offset",
+    "K": 256,
+    "trained": 0.6826,
+    "novel": 0.2361,
+    "coherence": 0.0636
+   },
+   "entity_complement_K4": {
+    "strategy": "entity_complement",
+    "K": 4,
+    "trained": 0.2629,
+    "novel": 0.2607,
+    "coherence": 0.2282
+   },
+   "entity_complement_K8": {
+    "strategy": "entity_complement",
+    "K": 8,
+    "trained": 0.544,
+    "novel": 0.2511,
+    "coherence": 0.1455
+   },
+   "entity_complement_K16": {
+    "strategy": "entity_complement",
+    "K": 16,
+    "trained": 0.6281,
+    "novel": 0.3291,
+    "coherence": 0.1317
+   },
+   "entity_complement_K32": {
+    "strategy": "entity_complement",
+    "K": 32,
+    "trained": 0.729,
+    "novel": 0.3718,
+    "coherence": 0.1027
+   },
+   "entity_complement_K43": {
+    "strategy": "entity_complement",
+    "K": 43,
+    "trained": 0.7103,
+    "novel": 0.3526,
+    "coherence": 0.1092
+   },
+   "random_orthonormal_K4": {
+    "strategy": "random_orthonormal",
+    "K": 4,
+    "trained": 0.2452,
+    "novel": 0.1496,
+    "coherence": -0.0
+   },
+   "random_orthonormal_K8": {
+    "strategy": "random_orthonormal",
+    "K": 8,
+    "trained": 0.4938,
+    "novel": 0.1859,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K16": {
+    "strategy": "random_orthonormal",
+    "K": 16,
+    "trained": 0.5846,
+    "novel": 0.1774,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K32": {
+    "strategy": "random_orthonormal",
+    "K": 32,
+    "trained": 0.7046,
+    "novel": 0.1731,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K43": {
+    "strategy": "random_orthonormal",
+    "K": 43,
+    "trained": 0.6874,
+    "novel": 0.2874,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K64": {
+    "strategy": "random_orthonormal",
+    "K": 64,
+    "trained": 0.7424,
+    "novel": 0.1709,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K128": {
+    "strategy": "random_orthonormal",
+    "K": 128,
+    "trained": 0.7309,
+    "novel": 0.172,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K256": {
+    "strategy": "random_orthonormal",
+    "K": 256,
+    "trained": 0.7409,
+    "novel": 0.1709,
+    "coherence": 0.0
+   }
+  },
+  "gemma_asymmetric": {
+   "kmeans_label_K4": {
+    "strategy": "kmeans_label",
+    "K": 4,
+    "trained": 0.228,
+    "novel": 0.156,
+    "coherence": 0.7598
+   },
+   "kmeans_label_K8": {
+    "strategy": "kmeans_label",
+    "K": 8,
+    "trained": 0.49,
+    "novel": 0.3643,
+    "coherence": 0.6146
+   },
+   "kmeans_label_K16": {
+    "strategy": "kmeans_label",
+    "K": 16,
+    "trained": 0.5583,
+    "novel": 0.3707,
+    "coherence": 0.5159
+   },
+   "kmeans_label_K32": {
+    "strategy": "kmeans_label",
+    "K": 32,
+    "trained": 0.6477,
+    "novel": 0.3761,
+    "coherence": 0.4571
+   },
+   "kmeans_label_K43": {
+    "strategy": "kmeans_label",
+    "K": 43,
+    "trained": 0.5975,
+    "novel": 0.36,
+    "coherence": 0.4582
+   },
+   "pca_label_K4": {
+    "strategy": "pca_label",
+    "K": 4,
+    "trained": 0.4106,
+    "novel": 0.2521,
+    "coherence": 0.0
+   },
+   "pca_label_K8": {
+    "strategy": "pca_label",
+    "K": 8,
+    "trained": 0.6142,
+    "novel": 0.2575,
+    "coherence": 0.0
+   },
+   "pca_label_K16": {
+    "strategy": "pca_label",
+    "K": 16,
+    "trained": 0.7232,
+    "novel": 0.3451,
+    "coherence": 0.0
+   },
+   "pca_label_K32": {
+    "strategy": "pca_label",
+    "K": 32,
+    "trained": 0.7304,
+    "novel": 0.3301,
+    "coherence": 0.0
+   },
+   "pca_label_K43": {
+    "strategy": "pca_label",
+    "K": 43,
+    "trained": 0.7376,
+    "novel": 0.3515,
+    "coherence": 0.0
+   },
+   "lda_between_K4": {
+    "strategy": "lda_between",
+    "K": 4,
+    "trained": 0.3834,
+    "novel": 0.0726,
+    "coherence": 0.0
+   },
+   "lda_between_K8": {
+    "strategy": "lda_between",
+    "K": 8,
+    "trained": 0.6415,
+    "novel": 0.2714,
+    "coherence": 0.0
+   },
+   "lda_between_K16": {
+    "strategy": "lda_between",
+    "K": 16,
+    "trained": 0.695,
+    "novel": 0.3194,
+    "coherence": 0.0
+   },
+   "lda_between_K32": {
+    "strategy": "lda_between",
+    "K": 32,
+    "trained": 0.7151,
+    "novel": 0.3536,
+    "coherence": 0.0
+   },
+   "lda_between_K43": {
+    "strategy": "lda_between",
+    "K": 43,
+    "trained": 0.7337,
+    "novel": 0.3483,
+    "coherence": 0.0
+   },
+   "kmeans_offset_K4": {
+    "strategy": "kmeans_offset",
+    "K": 4,
+    "trained": 0.2576,
+    "novel": 0.0053,
+    "coherence": 0.2412
+   },
+   "kmeans_offset_K8": {
+    "strategy": "kmeans_offset",
+    "K": 8,
+    "trained": 0.467,
+    "novel": 0.0171,
+    "coherence": 0.1409
+   },
+   "kmeans_offset_K16": {
+    "strategy": "kmeans_offset",
+    "K": 16,
+    "trained": 0.6563,
+    "novel": 0.1763,
+    "coherence": 0.0634
+   },
+   "kmeans_offset_K32": {
+    "strategy": "kmeans_offset",
+    "K": 32,
+    "trained": 0.6496,
+    "novel": 0.1741,
+    "coherence": 0.1056
+   },
+   "kmeans_offset_K43": {
+    "strategy": "kmeans_offset",
+    "K": 43,
+    "trained": 0.5994,
+    "novel": 0.1613,
+    "coherence": 0.2054
+   },
+   "kmeans_offset_K64": {
+    "strategy": "kmeans_offset",
+    "K": 64,
+    "trained": 0.6821,
+    "novel": 0.1677,
+    "coherence": 0.0754
+   },
+   "kmeans_offset_K128": {
+    "strategy": "kmeans_offset",
+    "K": 128,
+    "trained": 0.6874,
+    "novel": 0.1699,
+    "coherence": 0.0942
+   },
+   "kmeans_offset_K256": {
+    "strategy": "kmeans_offset",
+    "K": 256,
+    "trained": 0.6697,
+    "novel": 0.1549,
+    "coherence": 0.0881
+   },
+   "entity_complement_K4": {
+    "strategy": "entity_complement",
+    "K": 4,
+    "trained": 0.206,
+    "novel": 0.0459,
+    "coherence": 0.1484
+   },
+   "entity_complement_K8": {
+    "strategy": "entity_complement",
+    "K": 8,
+    "trained": 0.5258,
+    "novel": 0.344,
+    "coherence": 0.1384
+   },
+   "entity_complement_K16": {
+    "strategy": "entity_complement",
+    "K": 16,
+    "trained": 0.6616,
+    "novel": 0.3098,
+    "coherence": 0.1082
+   },
+   "entity_complement_K32": {
+    "strategy": "entity_complement",
+    "K": 32,
+    "trained": 0.707,
+    "novel": 0.3162,
+    "coherence": 0.0855
+   },
+   "entity_complement_K43": {
+    "strategy": "entity_complement",
+    "K": 43,
+    "trained": 0.6802,
+    "novel": 0.3323,
+    "coherence": 0.0951
+   },
+   "random_orthonormal_K4": {
+    "strategy": "random_orthonormal",
+    "K": 4,
+    "trained": 0.2835,
+    "novel": 0.0524,
+    "coherence": -0.0
+   },
+   "random_orthonormal_K8": {
+    "strategy": "random_orthonormal",
+    "K": 8,
+    "trained": 0.5272,
+    "novel": 0.1517,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K16": {
+    "strategy": "random_orthonormal",
+    "K": 16,
+    "trained": 0.6238,
+    "novel": 0.0096,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K32": {
+    "strategy": "random_orthonormal",
+    "K": 32,
+    "trained": 0.7194,
+    "novel": 0.1709,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K43": {
+    "strategy": "random_orthonormal",
+    "K": 43,
+    "trained": 0.7075,
+    "novel": 0.2885,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K64": {
+    "strategy": "random_orthonormal",
+    "K": 64,
+    "trained": 0.7414,
+    "novel": 0.1827,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K128": {
+    "strategy": "random_orthonormal",
+    "K": 128,
+    "trained": 0.7495,
+    "novel": 0.1795,
+    "coherence": 0.0
+   },
+   "random_orthonormal_K256": {
+    "strategy": "random_orthonormal",
+    "K": 256,
+    "trained": 0.7452,
+    "novel": 0.1709,
+    "coherence": 0.0
+   }
+  }
+ },
+ "coherence_novel_corr": {
+  "m3": -0.0017,
+  "gemma_symmetric": 0.0506,
+  "gemma_asymmetric": 0.1704
+ },
+ "scope": "Six anchor strategies differing ONLY in where the K basis directions come from. In every one a relation's coordinate is still unit(label @ PC.T), so zero-instance arrival is preserved even when the basis is fitted from offsets \u2014 the offsets decide where the axes point, not what a relation's coordinate is. All bases are fitted on TRAINED relations only; held-out relations never enter and never move a basis. The offset pool (12,904 corpus triples) is what lets K exceed the relation count without the external Wikidata vocabulary, which exp55 could not separate from over-provisioning itself. Identification level only: no store walk, no residual thresholds (D125). Orthogonality is measured as mean pairwise |cos| between anchors and correlated against transfer rather than assumed."
+}

@@ -2,6 +2,42 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D165: Anchors should be chosen to SEPARATE relations, not to cover them — and orthogonality turns out not to be the variable
+
+`scripts/exp56_anchor_strategy.py`. Six ways of choosing the K basis directions, crossed with three encoder/prefix arms and a K sweep — 108 cells. In every cell a relation's coordinate is still `unit(label @ PC.T)`, so **only the basis changes** and zero-instance arrival is preserved throughout; the alternative pools decide where the axes point, never what a relation's coordinate is.
+
+**Global Pareto frontier, all arms pooled:**
+
+| arm | strategy | K | trained | NOVEL |
+|---|---|---|---|---|
+| gemma-sym | **lda_between** | 32 | 0.7146 | **0.4530** |
+| gemma-sym | lda_between | 43 | 0.7185 | 0.4177 |
+| gemma-sym | entity_complement | 32 | 0.7290 | 0.3718 |
+| gemma-asym | pca_label | 43 | 0.7376 | 0.3515 |
+| gemma-asym | random_orthonormal | 128 | 0.7495 | 0.1795 |
+
+**No BGE-M3 cell survives on the global frontier.** Every one of its 36 is dominated, which is D164 again from a different direction.
+
+**The winner is the discriminative criterion.** `lda_between` takes the top-K eigenvectors of the between-relation scatter of question embeddings — the directions along which relation *means* differ most. It beats k-means on labels (0.4530 vs 0.4252) while carrying far higher trained accuracy (0.7146 vs 0.5196), so it dominates the previous best rather than trading against it. The operative distinction: **k-means chooses anchors that COVER the pool; LDA chooses anchors that SEPARATE the classes.** For a basis whose job is to keep relations distinguishable — including relations it has never seen — separation is the right objective and coverage was a proxy for it.
+
+**Orthogonality is not the variable.** Correlation between anchor coherence (mean pairwise |cos|) and novel transfer, within arm: **−0.002, +0.051, +0.170** across 36 cells each. Essentially zero, and if anything slightly positive. The clean way to see why: `random_orthonormal` is *perfectly* orthogonal with no content and tops out at 0.2874, while `kmeans_label` has coherence 0.66 and reaches 0.4252. **Content dominates and orthogonality does not discriminate among content-bearing bases.** This answers a question that was posed as "what degree of orthogonality do we want" — the answer is that it is the wrong dial.
+
+**The entity-complement idea is real but encoder-dependent.** Fitting an entity subspace and projecting it *out* of the labels before fitting anchors is the best strategy on M3 by a wide margin (0.3173 against the 0.2361 baseline) and only fourth on Gemma (0.3718). So relation and entity information are separable enough that removing one helps — but the benefit shrinks as the encoder improves, exactly like the basis's own benefit in D164. **The better the encoder, the less any anchor strategy matters**: on M3 the spread between random and best is ~31× (0.0107 → 0.3173); on Gemma it is ~1.6× (0.2874 → 0.4530).
+
+**The difference-vector idea fails, on both encoders.** `kmeans_offset` — anchors fitted from `emb(object) − emb(subject)` — is worst or second-worst everywhere: 0.0331 on M3, 0.2361 on Gemma at K=256. It was the strongest form of "derive relation anchors from the relations between concepts", and it does not hold up. The offset pool is also the only *corpus-derived* pool large enough to exceed the relation count, which was designed to disentangle over-provisioning from external provenance; it now separates them, and the answer is that both are bad rather than one excusing the other.
+
+**Two corrections to D164, both from limits in my own sweep rather than from the data.**
+
+*The prefix conclusion was strategy-bound.* D164 reported that asymmetric prefixes "hold the better frontier". That is true **within `kmeans_label`**, the only strategy exp55 tested. Across the full space, symmetric holds the top of the frontier on transfer (0.4530 vs asymmetric's best 0.3761) and asymmetric holds only the high-trained tail. Since novel relations arriving *is* the product claim, **symmetric is the right default** — which was the original prediction, obscured by holding one factor fixed.
+
+*The K conclusion was grid-bound.* D164 said "the K=16–32 corpus basis wins everywhere". On M3, `kmeans_label` at **K=43 scores 0.2361 against K=32's 0.1111** — more than double, and outside exp55's grid of (4, 8, 16, 32). The conclusion was a property of where I stopped sweeping, not of the data.
+
+**A bug that produced perfectly plausible numbers, caught only by an implausible coincidence.** The first run reported `gemma_asymmetric` identical to `gemma_symmetric` in **36 of 36 cells to four decimals**. The cause: the arm was selected with `kind_name.endswith("symmetric")`, and `"gemma_asymmetric".endswith("symmetric")` is **True** — "a-symmetric" ends in "symmetric". Both arms ran the STS prompt and wrote byte-identical caches. Nothing else would have caught it: a wrong prefix yields a complete, well-formed, entirely believable results table. It is now an exact match against a closed set that raises on anything unrecognised. The corrected asymmetric arm reproduces exp55's numbers exactly (K=32: 0.6477/0.3761; K=16: 0.5196/0.4252), which is the cross-experiment check that the fix is right.
+
+**Recommendation for the swap**: EmbeddingGemma, **symmetric prefixes**, `lda_between` basis at **K=32**, replacing k-means-on-labels at K=48.
+
+**Revisit**: (a) LDA here uses only between-class scatter; regularised LDA `(S_W + λI)^{-1} S_B` is the standard form and untested; (b) the entity-complement subspace size is fixed at 32 and never swept, so its M3 win may not be at its own optimum; (c) all of this is identification-level — the ordering must be confirmed end-to-end with the walker before the basis is changed in the pipeline; (d) one seed, one holdout draw, one corpus, as D164.
+
 ## 2026-07-30 — D164: The encoder was the bottleneck, not the method — EmbeddingGemma dominates BGE-M3 on novel-relation transfer, and over-provisioned anchors are refuted
 
 `scripts/exp55_encoder_probe.py`. The go/no-go probe before committing to a 2.2 GB re-embed, run at **identification level only — no store walk, no residual thresholds**, because D125 established that thresholds do not transfer across representation dimensionality and an end-to-end probe would have confounded encoder quality with calibration. 56 relations, 12 held out of head training **entirely**, chance 0.0179.
@@ -21,13 +57,13 @@ Format: date · decision · rationale · revisit-when.
 
 **That rescopes a load-bearing result.** D125's basis rescue (0.293 → 0.742 end-to-end) reads as evidence for the basis mechanism. It is substantially evidence that *M3 needed rescuing*. A better encoder narrows what the basis has to fix, and the basis's measured value should be expected to shrink under Gemma rather than hold.
 
-**Over-provisioning is refuted, and the refutation is encoder-dependent — which is why it needed both arms.** Anchors cannot exceed the pool they are fitted from (k-means cannot place 96 centroids among 44 labels), so over-provisioning *requires* the external 13,713-label Wikidata pool. Under M3, raising K there collapses novel transfer monotonically, 0.080 → 0.001. Under Gemma it mildly helps, 0.006 → 0.167. **But no external-pool cell in any arm beats a small corpus-fitted basis**, and the K=16–32 corpus basis wins everywhere. Anchor count is a compression dial carrying D159's trade-off — low K buys transfer and costs precision — and the external pool is simply a worse place to draw directions from, at any width.
+**Over-provisioning is refuted, and the refutation is encoder-dependent — which is why it needed both arms.** Anchors cannot exceed the pool they are fitted from (k-means cannot place 96 centroids among 44 labels), so over-provisioning *requires* the external 13,713-label Wikidata pool. Under M3, raising K there collapses novel transfer monotonically, 0.080 → 0.001. Under Gemma it mildly helps, 0.006 → 0.167. **But no external-pool cell in any arm beats a small corpus-fitted basis**, and the K=16–32 corpus basis wins everywhere. **[CORRECTED at D165: "K=16–32 wins" was bounded by this experiment's grid of (4, 8, 16, 32), not by the data — on M3, K=43 scores 0.2361 against K=32's 0.1111. The corpus-beats-external finding stands; the claim about which K stops there.]** Anchor count is a compression dial carrying D159's trade-off — low K buys transfer and costs precision — and the external pool is simply a worse place to draw directions from, at any width.
 
 This also indicts the current pipeline's `K_BASIS=48`: with ~44–49 corpus relations it sits at the very edge of what the corpus pool can support, which is the "nearly one anchor per relation" regime D125 flagged as unexplained. The probe says the operating point should be lower and corpus-drawn, independent of encoder.
 
 **My pre-registered prediction was half wrong, in the informative half.** I predicted identification would transfer nearly intact and novel transfer would be the fragile thing, *"because identification only needs the encoder to separate labels, while transfer needs the geometry between labels preserved."* Identification did transfer intact (raw 0.705 → 0.743). But transfer was not fragile under Gemma — it was fragile under **M3**. The reasoning was right and the assignment was backwards: transfer *is* the encoder-sensitive quantity, and the encoder we had was the one failing it.
 
-**Prefix strategy earned its place as a factor.** I predicted symmetric would win, since the head must predict label coordinates from question embeddings in one geometry. Symmetric takes the single best NOVEL cell (0.425) but **asymmetric holds the better frontier** — its K=32 dominates symmetric's K=32 on both axes. Had this been left as an unexamined default, a wrong choice would have been reported as an encoder result.
+**Prefix strategy earned its place as a factor.** I predicted symmetric would win, since the head must predict label coordinates from question embeddings in one geometry. Symmetric takes the single best NOVEL cell (0.425) but **asymmetric holds the better frontier** — its K=32 dominates symmetric's K=32 on both axes. Had this been left as an unexamined default, a wrong choice would have been reported as an encoder result. **[CORRECTED at D165: that holds only WITHIN k-means-on-labels, the single basis strategy this experiment tested. Across six strategies, symmetric holds the top of the frontier on transfer (0.4530 vs 0.3761) and asymmetric only the high-trained tail — so symmetric is the right default and the original prediction was correct. Varying one factor while holding another fixed answered a narrower question than the one I reported.]**
 
 **Two checks rather than assumptions.** `raw NOVEL` came out identical to four decimals (0.1709) across both Gemma prefix modes, which is the signature of a cache mix-up; all three cached arrays hash differently and both arms score exactly 160/936, a ~1-in-29 integer collision. And the first summary printed "best NOVEL", which crowns M3's corpus_K4 at 0.130 while silently omitting that the same cell scores 0.215 trained — **the one-axis summary defect from D159/D161/D162, in the very next experiment**. Replaced with the Pareto frontier and a matched-trained comparison.
 
