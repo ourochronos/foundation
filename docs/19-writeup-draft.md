@@ -248,22 +248,41 @@ read off the target rather than the walked path. Re-adopting it (D134,
 the mixed benchmark our selective-prediction figure is **AURC 0.4734**, where
 the chain-break-only benchmark gave 0.1322. **We had overstated it ~3.6×.**
 
-**Refusal is bounded by store density.** Refusal falls monotonically with the
-number of relations available at the break step, at correlations of −0.79,
-−0.83 and −0.91 across three populations (D124). We have written that the
-mechanism is *ambiguity rather than noise*, on the evidence that wrongly
-answered questions choose a relation whose gain is genuinely high (median
-1.198 against 1.390 for correct ones). **That reading is an interpretation of
-an overlap, not a demonstrated mechanism**, and two adversarial raters made
-the same objection our own log had already recorded: branching and
-confusability covary in every population we measured, and the experiment that
-separates them — same node set, options added in a confusable and a
-non-confusable arm — is named in D137's revisit list and has never been run.
-A later result makes the objection sharper rather than weaker: adding reverse
-edges doubles the option set and costs **nothing**, because reverse
-coordinates never compete with a forward question (D137). Two principled fixes
-— a multiple-comparisons correction and an ambiguity margin — both moved along
-the precision/coverage frontier without shifting it.
+**Refusal is governed by the most confusable option available, not by how many
+there are.** We first reported refusal falling with the number of relations
+available at the break step (−0.79, −0.83, −0.91 across three populations,
+D124) and called the mechanism ambiguity. Two adversarial raters objected that
+branching and confusability covary in every population we measured — an
+objection our own log had already recorded and never acted on — so we ran it.
+Holding branching **identical** across arms and varying only which options are
+present (D160):
+
+| options at the break step | 1 | 4 | 8 |
+|---|---|---|---|
+| the k **most** confusable | 0.849 | 0.782 | **0.776** |
+| the k **least** confusable | **1.000** | 0.970 | 0.885 |
+
+**One confusable option costs more refusal than eight non-confusable ones.**
+Across all eighteen cells, refusal tracks the **maximum** cosine between an
+available relation and the asked one at **r = −0.954**, against −0.774 for the
+mean and **−0.485 for the count**.
+
+The mechanism is that the walker takes *one* option by greedy argmax, so a bag
+of harmless distractors plus one plausible relation is exactly as dangerous as
+that relation alone. That reconciles two results we had left in tension: D124's
+correlation is order statistics — more options means a higher maximum — and
+D137's finding that doubling the option set with reverse edges costs
+**nothing** follows because a reverse coordinate never raises the maximum for a
+forward question. Count is not zero (holding the maximum pinned, three
+doublings still cost 0.073) but it is the weaker term, and weaker *because* its
+usual effect runs through the maximum.
+
+This also makes the bound checkable without a model: the maximum cosine
+between a question's asked relation and the relations available where its chain
+breaks is a property of the store. Two principled fixes — a
+multiple-comparisons correction and an ambiguity margin — both moved along the
+precision/coverage frontier without shifting it, and both predate knowing what
+quantity to aim at.
 
 **Thresholds are per-store.** The type gate's threshold can be computed from
 store statistics alone (the p25 of within-relation type fit, needing no
@@ -383,8 +402,9 @@ listed as untested. A second *corpus* was not tested (D149).
   exhaustive planner matches the walker (0.903 vs 0.912). The walker's
   remaining justification is that it does not enumerate — real, and untested
   at a vocabulary where enumeration is expensive (§1).
-- **Not a demonstrated mechanism for the density bound.** Branching and
-  confusability covary in everything we measured (§5).
+- **Not the density bound as we first stated it.** The governing quantity is
+  the most confusable option available, not the option count, and the fixes we
+  tried predate knowing that (§5). One corpus, depth 2.
 - **Not the compression trade-off as we first stated it.** Two of its three
   legs now hold under one threshold protocol, but the cost is refusal rather
   than the accuracy of what compression enables (§5b). The phrasing leg is
@@ -414,6 +434,11 @@ conditions above are real rather than decorative.
   curve was run to eighteen and plateaued at 0.09 (D148 → D155). This one
   reversed twice, and the second reversal came from an adversarial rater's
   falsifier rather than from us.
+- *"Refusal is bounded by store density"* — the count is a proxy; the
+  governing quantity is the single most confusable option available, which
+  reconciles the density correlation with the later finding that doubling the
+  option set costs nothing when the additions never compete (D124/D137 →
+  D160).
 - *"Compression buys generalisation and costs precision"* — the trade-off is
   real and was **mislocated**. Under one threshold protocol the wrongness cost
   on the population compression helps is a tenth of the gain; what it actually

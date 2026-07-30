@@ -26,7 +26,7 @@ would falsify it. A claim without its condition is not publishable.
 | 3 | The **store** supplies what makes multi-hop answering work; the step-by-step **walk** does not | one corpus, R=5, depth 2. At R=5 enumeration is 30 candidates, so the walker's remaining case is **cost, not accuracy** — untested | store-filtered planner **0.9032** vs walker 0.9123 (inside CI); same planner denied the store **0.3883**. Availability filtering **+0.515**, greedy walking **+0.009**. D112's planner recomputed in-run is **0.8138**, not the 0.534 exp24 pasted (D117 → **D158**) | **falsified if** a model-only planner reaches the walker's CI, or store-filtered planning fails to match it where enumeration is affordable |
 | 4 | Depth extrapolates without depth-specific training, for *answering* — **at 3 hops, and not beyond** | answering only; **one** depth measured zero-shot | 3-hop **0.849** with no 3-hop in training, vs 0.961 trained (D119) | *refusal* does not extrapolate (D120); and **depth 4 refutes it** — 0.289 raw / 0.149 basis (D126) |
 | 5b | On the **mixed** benchmark, refusal needs the answer-type gate | law #9 population: chain_break + not_applicable + absent_entity | not_applicable **0.050 → 0.693** with the gate; chain_break 0.337 → 0.650; **depth-1** answerable wrongness 0.118 → 0.045 and **depth-2** 0.175 → 0.102; **correct** falls 0.110 while **total answered** falls 0.183 — the extra 0.073 removed were wrong answers (D134) | probe ceiling is 0.965, so 0.693 is threshold placement, not the limit |
-| 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching **−0.79 / −0.83 / −0.91** across three populations (D124) | **falsified if** the correlation vanishes where branching varies and confusability does not — a test D137's revisit (a) already owed and two raters independently named (D154) |
+| 6 | Refusal is governed by the **most confusable option available**, not by how many options there are | chain-break unanswerables, one corpus, depth 2; count is not zero, just weaker | with branching held identical, refusal tracks **max cosine r=−0.954** vs mean −0.774 and count **−0.485**; one confusable option refuses **0.8485**, eight non-confusable ones **0.8848**. Reconciles D124's correlation with D137's free reverse edges (D124/D137 → **D160**) | **falsified if** refusal tracks option count better than max cosine on any store, or the arms fail to separate on cosine (+0.1539; the run aborts otherwise) |
 | 7 | Compression buys generalisation and costs **refusal** — not the accuracy of what it enables | one store, **one threshold rule for both arms** (law #6); phrasing leg still uncontrolled | novel-relation answering **0.005 → 0.742** while wrong moves only 0.153 → 0.167 — raw's low score is raw *refusing* (abstain 0.842). At matched coverage **+0.741 correct for +0.072 wrong**, a tenth of the gain; costs land on refusal (**−0.706** novel, **−0.569** known) and known answering (−0.141) (D125/D126 → **D159**) | **falsified if** the wrongness cost on the population it helps is commensurate with the gain there, or the refusal collapse disappears under matched tuning |
 | 8 | Alias supply explains **most** of retrieval's advantage over a parametric head — **and not all of it** | depth-1 relation identification, known relations; the plateau is measured on 8 high-alias relations only | gap 0.229 → 0.042 over 2→10 aliases (exp43, 34 rel); then **flat at ≈0.09** over 10→18 (exp51, 8 rel: 0.087 → 0.091, tail slope +0.0015/alias vs noise ±0.026); no head config reached 1-NN at 2 aliases — 0.691 vs 0.925 (exp49) (D139, D148, **D155**) | **falsified if** the gap resumes falling past 18 aliases, or a head reaches 1-NN at any supply. *"Not a permanent loss of information" was withdrawn at D155 when this falsifier was run — the head plateaus at 0.892 while 1-NN sits at 0.975 from two aliases onward.* |
 
@@ -259,14 +259,27 @@ test permits.
  },
  {
   "row": "6",
-  "claim": "Refusal quality falls as store DENSITY rises: within-population correlation between branching factor and refusal is -0.79, -0.83 and -0.91 across three unanswerable populations.",
-  "scope": "a CORRELATION across branching strata, not a demonstrated mechanism. The ambiguity reading rests on a gain-median overlap (answerable 1.390 vs unanswerable 1.198, margin separation 0.143) that is consistent with ambiguity and does not establish it. FALSIFIED IF the correlation vanishes on a population where branching varies and confusability does not \u2014 D137 found exactly that boundary and it is why the claim says density rather than options",
+  "claim": "Refusal is governed by the MOST confusable option available at the break step, not by how many options there are. With branching held identical across arms, refusal tracks the maximum cosine between an available relation and the asked one at r=-0.954, against -0.774 for the mean and -0.485 for the count; ONE confusable option refuses 0.8485 while EIGHT non-confusable ones refuse 0.8848.",
+  "scope": "chain-break unanswerables, one corpus, depth 2, raw 1024-d at D123's fixed THR=0.8. The walker takes ONE option by greedy argmax, which is why the maximum rather than the count governs \u2014 and why D124 saw refusal fall with branching (more options raises the maximum) and D137 found reverse edges free (they never do). Count is NOT zero: the confusable arm pins its maximum at 0.50 for every k, so its slope isolates the pure count effect at -0.073 over three doublings. Cases are restricted to break steps offering at least 8 options, which biases toward high-branching questions and is reported rather than hidden; the corpus cannot support a wider sweep, since only 0.2% of frontiers offer 16+. FALSIFIED IF refusal tracks option COUNT better than maximum cosine on any store, or if the arms fail to separate on cosine (checked, +0.1539, and the run aborts otherwise)",
   "src": [
-   "results/exp30_refusal_diag.json",
+   "results/exp54_confusability.json",
    [
-    "branching_stratified_refusal",
-    "ambiguity_test",
-    "residual_separation"
+    "refusal_by_arm",
+    "max_cosine_by_arm",
+    "correlations_across_cells",
+    "one_confusable_vs_many_non",
+    "manipulation_separation",
+    "slope_per_doubling",
+    "n_cases"
+   ]
+  ],
+  "extra": [
+   [
+    "results/exp30_refusal_diag.json",
+    [
+     "branching_stratified_refusal",
+     "ambiguity_test"
+    ]
    ]
   ]
  },

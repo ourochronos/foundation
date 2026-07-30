@@ -1,0 +1,149 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T09:48:21.483062+00:00",
+  "commit": "6a846f412a08629cfeecfdb7e4f3fb2a64647d74",
+  "dirty": true,
+  "command": "scripts/exp54_confusability.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MIN_GAIN": 0.2,
+   "THR": 0.8,
+   "KS": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "N_HOLD_REL": 12
+  }
+ },
+ "n_cases": 165,
+ "ks": [
+  1,
+  2,
+  3,
+  4,
+  6,
+  8
+ ],
+ "refusal_by_arm": {
+  "confusable": {
+   "1": 0.8485,
+   "2": 0.8121,
+   "3": 0.7879,
+   "4": 0.7818,
+   "6": 0.7818,
+   "8": 0.7758
+  },
+  "non_confusable": {
+   "1": 1.0,
+   "2": 0.9939,
+   "3": 0.9818,
+   "4": 0.9697,
+   "6": 0.9394,
+   "8": 0.8848
+  },
+  "random": {
+   "1": 0.9818,
+   "2": 0.9212,
+   "3": 0.9152,
+   "4": 0.8788,
+   "6": 0.8424,
+   "8": 0.8
+  }
+ },
+ "mean_cosine_by_arm": {
+  "confusable": {
+   "1": 0.5001,
+   "2": 0.4697,
+   "3": 0.4468,
+   "4": 0.4293,
+   "6": 0.4015,
+   "8": 0.3775
+  },
+  "non_confusable": {
+   "1": 0.2482,
+   "2": 0.2627,
+   "3": 0.2744,
+   "4": 0.285,
+   "6": 0.3043,
+   "8": 0.3272
+  },
+  "random": {
+   "1": 0.3508,
+   "2": 0.3562,
+   "3": 0.3519,
+   "4": 0.3517,
+   "6": 0.3517,
+   "8": 0.3551
+  }
+ },
+ "max_cosine_by_arm": {
+  "confusable": {
+   "1": 0.5001,
+   "2": 0.5001,
+   "3": 0.5001,
+   "4": 0.5001,
+   "6": 0.5001,
+   "8": 0.5001
+  },
+  "non_confusable": {
+   "1": 0.2482,
+   "2": 0.2772,
+   "3": 0.2979,
+   "4": 0.3165,
+   "6": 0.3523,
+   "8": 0.4153
+  },
+  "random": {
+   "1": 0.3508,
+   "2": 0.4041,
+   "3": 0.4239,
+   "4": 0.4396,
+   "6": 0.4644,
+   "8": 0.4885
+  }
+ },
+ "correlations_across_cells": {
+  "max_cos": -0.9538,
+  "mean_cos": -0.7739,
+  "log2_k": -0.4846
+ },
+ "one_confusable_vs_many_non": {
+  "one_confusable": 0.8485,
+  "8_non_confusable": 0.8848
+ },
+ "manipulation_separation": 0.1539,
+ "slope_per_doubling": {
+  "confusable": -0.0239,
+  "non_confusable": -0.0348,
+  "random": -0.0576
+ },
+ "total_drop": {
+  "confusable": 0.0727,
+  "non_confusable": 0.1152,
+  "random": 0.1818
+ },
+ "ci95_at_max_k": {
+  "confusable": [
+   0.7063,
+   0.8327
+  ],
+  "non_confusable": [
+   0.8202,
+   0.9201
+  ]
+ },
+ "arms_separated_at_max_k": false,
+ "verdict": "CROWDING, NOT COUNT \u2014 a SINGLE confusable option refuses 0.8485 while 8 non-confusable options refuse 0.8848, and across all 18 cells refusal tracks the MOST confusable option available (r=-0.954) better than the count (r=-0.485) or the mean (r=-0.774). Branching lowers refusal because more options means a higher maximum, which is why D124 saw a correlation and why D137's reverse edges were free. Claim 6 should name the maximum, not the count.",
+ "scope": "Isolates the break step of chain-break unanswerables: the frontier is set to step(s, r1) and the residual to predicted - C[r1], so the first hop is granted and only what happens AT the break is measured. Branching is k and is IDENTICAL across arms; only which options are present varies, which is the test D137's revisit (a) named and never ran and which two adversarial raters independently asked for (D154). Cases are restricted to break steps with at least max(KS) options so every k is a subset of the same option set \u2014 that restriction biases toward high-branching questions and is reported rather than hidden. Raw 1024-d at D123's fixed THR=0.8, as exp30, so nothing is re-tuned before the diagnosis is read. A manipulation check aborts the run if the arms failed to separate on cosine, because a failed manipulation produces a null indistinguishable from a refuted hypothesis."
+}

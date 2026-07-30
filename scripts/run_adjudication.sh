@@ -12,7 +12,14 @@
 # as zero verdicts and looks like a silent rater rather than a failed one.
 set -u
 cd "$(dirname "$0")/.."
-MODELS=(gpt-5.6-sol gemini-3.1-pro-preview claude-fable-5 grok-4.5)
+# THREE raters, deliberately odd (D154). A fourth moved 1 verdict of 14, and
+# that one only because four raters turn a 2-of-4 majority into a tie on
+# exactly the claims a quorum exists to resolve. The dropped rater is the
+# author's own family, which D154 also showed is lenient under the
+# verification prompt (14/14 supported, the only clean sheet) while behaving
+# like the others under attack — so dropping it costs nothing measurable and
+# removes the parity problem. 12 calls instead of 16.
+MODELS=(gpt-5.6-sol gemini-3.1-pro-preview grok-4.5)
 
 for m in "${MODELS[@]}"; do
   echo "=== claims / $m ==="

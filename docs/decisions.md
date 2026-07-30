@@ -2,6 +2,37 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D160: Refusal is governed by the MOST confusable option available, not by how many there are — D124 and D137 reconciled
+
+`scripts/exp54_confusability.py`. The last of D154's four falsifiers, and the one the project already owed itself: D137's revisit (a) said *"D124's branching prediction still deserves a proper test, with the node set held fixed and confusable options added"*, and two adversarial raters independently named the same experiment.
+
+Every case is a chain-break unanswerable. Step 1 is walked for real; at the break step the option set is cut to exactly **k** options, chosen three ways — the k most confusable (highest cosine to the asked relation), the k least, or k at random. **Branching is k and is identical across arms**; only crowding differs.
+
+| k | confusable | non-confusable | random | max-cos (conf / non / rand) |
+|---|---|---|---|---|
+| 1 | 0.8485 | **1.0000** | 0.9818 | 0.50 / 0.25 / 0.35 |
+| 2 | 0.8121 | 0.9939 | 0.9212 | 0.50 / 0.28 / 0.40 |
+| 4 | 0.7818 | 0.9697 | 0.8788 | 0.50 / 0.32 / 0.44 |
+| 8 | **0.7758** | 0.8848 | 0.8000 | 0.50 / 0.42 / 0.49 |
+
+**One confusable option costs more refusal than eight non-confusable ones** — 0.8485 against 0.8848. And across all 18 (arm, k) cells, refusal tracks the **maximum** cosine among the available options at **r = −0.954**, against −0.774 for the mean and **−0.485 for the count**.
+
+**That is a mechanism, and it reconciles two entries that had been left in tension.** The walker takes *one* option by greedy argmax, so a bag of harmless distractors plus one plausible relation is exactly as dangerous as that one relation alone. D124 saw refusal fall with branching because **more options means a higher maximum** — order statistics, not crowding per se. D137 found reverse edges free because they never raise the maximum: a reverse coordinate is nowhere near a forward question. Both observations are consequences of the same rule, and neither entry could see it because neither varied count and crowding independently.
+
+**The confusable arm is a built-in control for the residual count effect**, which is worth stating because it is not zero. Its maximum is pinned at 0.50 for every k — the most confusable option is already present at k=1 — so its slope is the pure effect of adding options at fixed crowding: **−0.073 refusal over three doublings**, against the −0.11 that 0.08 of extra max-cosine buys at k=8. Count matters; it is simply the weaker of the two, and it is weaker *because* its usual effect runs through the maximum.
+
+**Claim 6 is restated** from "refusal quality falls as store density rises" to name the quantity that governs it. This also gives the claim a falsifier that can be checked on any store without running a model: the maximum cosine between a question's asked relation and the relations available at its break step.
+
+**Two failures of mine before this run produced anything, both of the same kind — a design that could not have detected the effect.**
+
+*The first sweep asked for 16 options and got three cases.* Only 0.2% of break frontiers in this corpus offer 16+ options; 74% offer none at all. Every arm refused 100% at every k, and the script printed a confident "NEITHER — D124's correlation does not reproduce". **A null from n=3 reads exactly like a refutation.** The sweep now tops out at 8, which is what this store can support, and the run aborts below 100 cases rather than reporting a slope through noise.
+
+*And the first design granted a perfect first hop*, setting the residual to `predicted − C[r1]`. With unit coordinates and THR=0.8, answering then requires an option within cosine 0.68 of the asked relation while the most confusable arm averages 0.39 — so refusal was pinned at 1.0 by arithmetic. **Idealising the step before the one you are measuring can remove the very error the effect lives in.** Step 1 is now walked for real.
+
+The manipulation check that would have caught both is now mandatory and aborts the run: if the arms fail to separate on cosine, any null is a failed manipulation rather than a refuted hypothesis. It separates at +0.1539.
+
+**Revisit**: (a) max-cosine is computable from the store alone, so it should be testable as a *predictor* of per-question refusal rather than only as a population correlation — that is the strong form and it is one experiment away; (b) if refusal is governed by the maximum, an ambiguity brake keyed to the *gap* between the best and second-best option is the indicated fix, and D124 tried a margin brake that failed — worth re-reading now that the target quantity is known; (c) this is one corpus and depth 2.
+
 ## 2026-07-30 — D159: Compression's trade-off is real and MISLOCATED — it does not blunt the answers it enables, it blunts REFUSAL
 
 `scripts/exp53_compression_controlled.py`. The third of D154's falsifiers, unanimous: *"a representation could improve generalisation without sacrificing precision on a controlled common corpus; the cross-experiment pattern does not rule that out."*
