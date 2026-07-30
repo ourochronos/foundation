@@ -37,6 +37,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
+import claimset                                                   # noqa: E402
 from claimset import check_alignment, load_claims                 # noqa: E402
 
 ADJ = ROOT / "data" / "adjudication"
@@ -56,6 +57,126 @@ N = len(CLAIMS)
 
 def _fn(model: str) -> str:
     return model.replace(".", "_").replace("/", "_")
+
+
+# ---------------------------------------------------------------------------
+# Cross-round diff. Built because counting flags across rounds is misleading
+# and the count is what this script otherwise reports: in D161 one rater went
+# from 5 flags to 4 and looked steady, while its flagged SET turned over
+# completely — not one claim in common. A flag count is a summary over a set,
+# and two rounds can produce nearly the same count from disjoint sets.
+#
+# Keyed on the STAMPED CLAIM TEXT, never on index. That is the whole point:
+# claims get added, deleted and renumbered between rounds, which is exactly
+# how D152's verdicts silently re-pointed. Text keys survive renumbering; an
+# index key is only meaningful inside one round.
+# ---------------------------------------------------------------------------
+def judged_texts(directory: Path) -> set[str]:
+    """Every claim prefix any artifact in this round judged."""
+    out: set[str] = set()
+    for f in directory.glob("attack_r*.json"):
+        out |= set(json.loads(f.read_text()).get("judged_claims", {}).values())
+    return out
+
+
+def flagged_by_rater(directory: Path, model: str) -> set[str] | None:
+    """Claims this rater flagged by majority of its runs, keyed on text."""
+    runs: dict[str, list[str]] = collections.defaultdict(list)
+    files = sorted(directory.glob(f"attack_r*_{_fn(model)}.json"))
+    if not files:
+        return None
+    for f in files:
+        art = json.loads(f.read_text())
+        jc = art.get("judged_claims")
+        if not jc:
+            return None                   # pre-D152: unmappable, not zero
+        for k, v in art["their_verdicts"].items():
+            if k in jc:
+                runs[jc[k]].append(v["verdict"])
+    return {t for t, vs in runs.items()
+            if sum(1 for v in vs if v in FLAG) * 2 > len(vs)}
+
+
+def digests_of(directory: Path) -> dict[str, str]:
+    """prefix -> exact digest, where a round recorded them (D162 onward)."""
+    out: dict[str, str] = {}
+    for f in directory.glob("attack_r*.json"):
+        art = json.loads(f.read_text())
+        jc, jd = art.get("judged_claims", {}), art.get("judged_claim_digests")
+        if not jd:
+            continue
+        for k, txt in jc.items():
+            if k in jd:
+                out[txt] = jd[k]
+    return out
+
+
+def diff_rounds(a: Path, b: Path) -> int:
+    print(f"cross-round diff, keyed on claim TEXT\n  A: {a.name}\n  B: {b.name}")
+    b_texts = judged_texts(b)
+    da, db = digests_of(a), digests_of(b)
+    if not (da and db):
+        print("  (one or both rounds predate `judged_claim_digests`; drops on "
+              "long claims may be unresolvable)")
+    print(f"\n{'rater':26s} {'A':>3} {'B':>3} {'kept':>5} {'dropped':>8} "
+          f"{'new':>4} {'turnover':>9}")
+    any_seen, unresolved = False, 0
+    for m in RATERS + sorted(AUTHOR_FAMILY):
+        fa, fb = flagged_by_rater(a, m), flagged_by_rater(b, m)
+        if fa is None or fb is None:
+            continue
+        any_seen = True
+        kept, drop, new = len(fa & fb), len(fa - fb), len(fb - fa)
+        union = len(fa | fb) or 1
+        print(f"{m:26s} {len(fa):3d} {len(fb):3d} {kept:5d} {drop:8d} "
+              f"{new:4d} {(drop + new) / union:8.0%}")
+        for t in sorted(fa - fb):
+            # Why did the flag go away? Three answers, and they mean
+            # different things: the claim left or was rewritten (the loop
+            # working), the claim is provably identical (the rater moved), or
+            # the 120-char prefix matches but the full text was never
+            # fingerprinted, in which case an edit past character 120 is
+            # invisible and NOTHING can be concluded.
+            if t not in b_texts:
+                why = "claim rewritten or deleted"
+            elif da.get(t) and db.get(t):
+                why = ("RATER MOVED — text provably identical"
+                       if da[t] == db[t] else "claim rewritten (digest differs)")
+            elif len(t) < claimset.STAMP_LEN:
+                why = "RATER MOVED — full text fits the stamp"
+            else:
+                why = "UNRESOLVABLE — prefix matches, no digest, edit past 120 invisible"
+                unresolved += 1
+            print(f"    dropped  {t[:56]}\n               -> {why}")
+        for t in sorted(fb - fa):
+            print(f"    NEW      {t[:56]}")
+    if not any_seen:
+        print("\nno comparable rounds — both need per-rater attack runs "
+              "carrying judged_claims (D152)")
+        return 1
+    print("\nA claim that stops being flagged after it was rewritten is the "
+          "loop working.\nA claim that stops being flagged while its text is "
+          "identical is a rater moving.\nOnly this view separates them, and "
+          "only exactly when both rounds carry digests.")
+    if unresolved:
+        print(f"\n{unresolved} drop(s) UNRESOLVABLE: those rounds predate "
+              f"`judged_claim_digests`, so a prefix match cannot rule out an "
+              f"edit past character {claimset.STAMP_LEN}. Do not count them "
+              f"as either.")
+    return 0
+
+
+if "--diff" in sys.argv:
+    i = sys.argv.index("--diff")
+    args = sys.argv[i + 1:]
+    if len(args) != 2:
+        raise SystemExit("usage: adjud_quorum.py --diff <dirA> <dirB>  "
+                         "(paths under data/adjudication/, or absolute)")
+    paths = [Path(p) if Path(p).is_absolute() else ADJ / p for p in args]
+    for p in paths:
+        if not p.is_dir():
+            raise SystemExit(f"{p} is not a directory")
+    raise SystemExit(diff_rounds(*paths))
 
 
 def load(name: str) -> tuple[dict | None, list[str]]:

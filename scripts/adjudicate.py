@@ -119,6 +119,14 @@ def run(name: str, items: list[dict], prompt: str, allowed: set[str],
            # checked against the current list instead of silently
            # mis-aligning with it.
            "judged_claims": {str(i): _label(i) for i in range(len(items))},
+           # exact fingerprints beside the readable prefixes: a stamp cannot
+           # see an edit past its 120th character, and a cross-round diff
+           # keyed on the prefix once reported a flag withdrawn from an
+           # "unchanged" claim that had been edited at character 190 (D162)
+           "judged_claim_digests": {
+               str(i): claimset.digest(str(
+                   items[i].get("claim", items[i].get("statement", ""))))
+               for i in range(len(items))},
            "n_judged": len(both), "raw_agreement": agree,
            "cohens_kappa": k, "disagreements": disagreements,
            "their_verdicts": {str(i): got[i] for i in sorted(got)},

@@ -2,6 +2,28 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D162: The cross-round diff, built before it was needed — and it immediately corrected the entry that asked for it
+
+D161's revisit (d) asked for a cross-round diff in `adjud_quorum.py`, on the grounds that flag *counts* are not comparable across rounds and only per-claim sets are. Built now rather than after the next round, and it earned that timing within one run.
+
+**It reproduced the hand analysis exactly** — sol 7→5 at 80% turnover, gemini 5→2 at 100%, grok 5→4 at 100% — which is the point of checking a new tool against a known answer rather than a new question. Then it showed the hand analysis had been too generous.
+
+**A dropped flag has three possible causes and D161 collapsed them into one.** The claim was rewritten or deleted (the loop working); the claim is provably identical (a rater moving); or the stamp cannot tell. `judged_claims` stores a **120-character prefix**, so an edit past character 120 is invisible to a text-keyed comparison. Sorting the ten drops properly:
+
+| rater | rewritten | rater moved | unresolvable |
+|---|---|---|---|
+| gpt-5.6-sol | 3 | **1** | 1 |
+| gemini-3.1-pro | 5 | 0 | 0 |
+| grok-4.5 | 4 | 0 | 1 |
+
+The confirmed move is sol withdrawing its flag from *"the store is MECHANICALLY reindex-free"* — 89 characters, so the stamp holds the whole claim and it is certainly unchanged. The two unresolvable ones are both *"the store LEARNS…"*, 246 characters, whose tail I edited at D156: the prefixes match and the edit is past the stamp, so **nothing can be concluded and the tool now says so rather than guessing**.
+
+**The fix is a digest beside the prefix.** `judged_claim_digests` records a sha256 of each full claim, so future rounds compare exactly while the human-readable prefix stays for anyone reading an artifact. The diff prefers digests, falls back to prefix comparison only when a claim is short enough that the prefix *is* the claim, and reports the remainder as UNRESOLVABLE with a count. **A tool that cannot distinguish two cases should name the cases it cannot distinguish**, which is the same principle as the manipulation check in D160 and the INCOMPLETE stamp in D154's aggregator.
+
+**The recurring lesson, now three entries deep.** D161 said its three surviving flags were all "a claim sentence outrunning its evidence by one step". Its own addendum then did it — *"no rater went soft"* from evidence that showed five claims changing, which is not the same statement. This is the third consecutive entry in which the summarising sentence was the defect while the numbers under it were fine. The numbers get checked by tests, by `claim_numbers.py`, by adjudicators; **the sentence that summarises them gets checked by nothing**, and that is now the most reliable place in this project to find an error.
+
+**Revisit**: (a) the digest only helps rounds run from here on — the two archived rounds keep their 120-char stamps and their two unresolvable drops permanently; (b) sol's one confirmed move is a single data point about a single rater on a single claim, and whether raters drift on unchanged text is worth measuring deliberately, by re-running one unmodified claim across rounds, rather than inferring from diffs; (c) nothing checks summarising sentences, and after three entries that is the gap worth a mechanism rather than more vigilance.
+
 ## 2026-07-30 — D161: The flag rate halves after the law-#10 pass — and two of the three survivors are claims I wrote the same day
 
 Re-adjudication of the revised block on a three-rater odd panel: 12 runs, verification once and attack three times each, per-rater majority before quorum. All 12 passed the alignment check.
@@ -28,7 +50,9 @@ The prompt did not change; the claims did. **Sharper claims are also easier to j
 
 **The pattern across all three is one thing.** Every flag is a **claim sentence outrunning its evidence by one step**: "not by how many" from "mainly not by how many"; "is a capability difference" from "has stopped falling over the measured range"; "disjoint" from "largely different". None is a wrong number and none is a bad experiment. Law #10 catches the version where the condition sits in the scope; this is the version where the condition is nowhere, and it survives a fix pass because the sentence reads as a summary rather than as a claim.
 
-**Addendum settling revisit (c) from the stored artifacts, with no further calls.** Both rounds stamp `judged_claims`, so every verdict is attributable and the two rounds can be diffed per claim rather than per count. Gemini's drop is **entirely claim-driven**: the five claims it flagged in all three runs of round 1 — density-vs-refusal, refuses-rather-than-guesses, order-from-the-store, retrieval-data-efficiency, compression-buys-generalisation — are exactly the five that were **rewritten or deleted** between rounds, and it flagged none of them afterwards. It picked up two new flags, both on claims that had just been rewritten. The same holds for the other two raters. **No rater went soft; five specific claims stopped being flaggable.**
+**Addendum settling revisit (c) from the stored artifacts, with no further calls.** Both rounds stamp `judged_claims`, so every verdict is attributable and the two rounds can be diffed per claim rather than per count. Gemini's drop is **entirely claim-driven**: the five claims it flagged in all three runs of round 1 — density-vs-refusal, refuses-rather-than-guesses, order-from-the-store, retrieval-data-efficiency, compression-buys-generalisation — are exactly the five that were **rewritten or deleted** between rounds, and it flagged none of them afterwards. It picked up two new flags, both on claims that had just been rewritten.
+
+**[CORRECTED at D162.]** The first version of this addendum generalised that to *"no rater went soft; five specific claims stopped being flaggable"*. Building the diff tool properly showed it is true of gemini (5 of 5 drops are rewritten claims) and **not** of the others: of sol's five drops, three are rewritten claims, **one is a claim whose full text is provably identical** — "the store is MECHANICALLY reindex-free", 89 characters, entirely inside the stamp — and one is unresolvable; grok has four rewritten and one unresolvable. So **one confirmed rater move exists** and I had asserted there were none. That sentence is the shape D161 is *about* — a claim outrunning its evidence by one step — written into the entry that named the shape, which is the second time in two entries.
 
 | rater | r1 flagged | r2 flagged | kept | dropped | new | turnover |
 |---|---|---|---|---|---|---|

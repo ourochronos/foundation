@@ -15,6 +15,7 @@ about derived thresholds surfaced under a claim about composition. So
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -22,6 +23,19 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DOC = ROOT / "docs" / "18-writeup-outline.md"
 STAMP_LEN = 120                 # adjudicate.py truncates `judged_claims` here
+
+
+def digest(text: str) -> str:
+    """Exact fingerprint of a claim, for comparisons the 120-char stamp cannot make.
+
+    The readable stamp is a prefix, and a prefix cannot see an edit past its
+    end. That bit: a cross-round diff keyed on the stamp reported two raters
+    withdrawing a flag from an "unchanged" claim whose text had in fact been
+    edited at character 190. The stamp stays because a human reading an
+    artifact needs to see which claim it judged; this sits beside it so a
+    machine comparing two rounds is never fooled by a shared prefix.
+    """
+    return hashlib.sha256(text.encode()).hexdigest()[:16]
 
 
 def load_claims() -> list[dict]:
