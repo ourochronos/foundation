@@ -2,6 +2,35 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D158: The store is doing the work; the WALKING is not. Claim 3 refuted as stated, and the pasted baseline had understated the alternative by 0.28
+
+`scripts/exp52_planner_baseline.py`. The falsifier all three adversarial raters named unanimously, run against the project's most load-bearing architectural claim — *"order and depth come from the store, not from the model"*.
+
+Four arms, one head, one seed, one question set, one scorer; only the way a predicted sum becomes a walk varies:
+
+| arm | held-out correct | wrong | vs walker |
+|---|---|---|---|
+| **W** walker (greedy, store options) | **0.9123** | 0.0877 | — |
+| **P3** exhaustive enumeration, **store-filtered** | **0.9032** | 0.0968 | −0.0091 |
+| **P1** rank-then-permute (D112's formulation) | 0.8138 | 0.0091 | −0.0985 |
+| **P2** exhaustive enumeration, **model-only** | 0.3883 | 0.0904 | −0.5240 |
+
+Walker CI95 [0.9016, 0.9219]. **P3 lands inside it.**
+
+**The decomposition the experiment was built to produce:** availability filtering is worth **+0.515** (P3 − P2), and the walker's step-by-step greediness is worth **+0.009** (W − P3), which is inside noise. So the claim splits cleanly and only half of it survives. *"Order and depth come from the store"* — **confirmed, overwhelmingly**: strip the store's walkability information and an otherwise identical exhaustive planner falls from 0.903 to 0.388. *"...rather than from a planner"* — **refuted**: a planner that consults the store matches the walker.
+
+**What the walker is actually for, then, is cost rather than accuracy.** P3 enumerates every chain over R¹ and R² and executes each to test walkability: 30 candidates at R=5, but 3,782 at R=61 and 226,981 at depth 3. The walker is O(branching × depth) per question and never enumerates. D112 had already said the pragmatic thing — *"with R relations there are only R² ordered pairs, 25 for this corpus, all enumerable"* — and the project then built the walker and justified it on accuracy. **On this vocabulary the accuracy justification does not hold; the scaling one is untested here and is the honest claim.**
+
+**The pasted baseline had understated the alternative by 0.28.** `exp24_walker.py` recorded `"baseline_d112_path_planner": {"correct": 0.534}` as a literal copied from `exp18`. Recomputed in-run on the same questions, scorer and head, D112's own formulation scores **0.8138**. The headline comparison was reported as 0.534 → 0.912, a gap of 0.378; on equal footing it is 0.814 → 0.912, a gap of **0.098**. Nothing was fabricated — exp18's number is real for exp18 — but a figure carried across scripts and compared as though it shared a protocol inflated the walker's advantage almost fourfold. This is D147's defect, and it survived every adjudication round because **no adjudicator ever saw the script; they saw the JSON, and the JSON reported the pasted value as a result**.
+
+**Two failures of my own, both caught before they reached a conclusion.**
+
+*The comparison was nearly decided by a tuning fallback.* The first run drew 3,000 seen questions as 1,200. The walker's seen wrong-rate read 0.022 instead of exp24's 0.0157, crossed the pre-stated `<= 0.02` bar, no grid point qualified, and the fallback handed the walker the **worst** point on its grid — 0.482 against its true 0.912 — while every planner kept its best. I noticed only because 0.482 was too far from the number I expected. The fallback now selects the lowest wrong-rate rather than a grid endpoint, and **a reproduction assert was added**: the walker at exp24's own `min_gain` must reproduce exp24's stored 0.9123 or the script aborts. It does, to four decimals. An experiment whose subject is a number trusted across scripts should not itself trust a number across scripts.
+
+*And the verdict logic reported the wrong story.* It tested the best planner first, so P3 — which uses the store — matching the walker printed *"the model can plan without the store"*, the opposite of what that arm shows. Now the model-only arm is tested first, since it is the only one that can refute the store's role.
+
+**Revisit**: (a) the scaling claim is now the load-bearing one and is untested — P3 against W at R=61 on the wiki corpus would settle whether the walker's advantage is real where enumeration is expensive; (b) P1's wrong-rate is **0.0091** against the walker's 0.0877, so rank-then-permute is far more precise and much more abstaining — a precision/coverage trade the claim never mentioned; (c) exp24's stored `baseline_d112_path_planner` should be corrected or removed, since it is now known to misdescribe the comparison.
+
 ## 2026-07-30 — D157: The update experiment now fingerprints itself — claim 1c's falsifier closed, and the units an adjudicator tripped over are in the artifact
 
 Second of D154's falsifiers, and the cheapest. The rater's objection: *"a fitted artifact changing during this update would defeat the claim that the store itself learned; fingerprints from a separate experiment do not rule that out."*

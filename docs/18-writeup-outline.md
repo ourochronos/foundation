@@ -23,7 +23,7 @@ would falsify it. A claim without its condition is not publishable.
 | 1d | The store **revises** rather than going stale: after a superseding edit it **almost never** keeps asserting the old fact | edits applied through the real `kb.edit()` path; conditional on having answered correctly before | **stale 0.002** — 1 of 431, not zero; revision 0.459; failure is refusal (0.348) and wrong answers (0.190), not staleness (D141) | **falsified if** staleness exceeds refusal or wrong-answering as a failure mode; single-edit cases revise at only 0.235 because editing one link leaves the chain expecting the old target's onward edges |
 | 1e | Revision is **two operations**: editing a fact alone revises **0.469** of previously-correct answers, editing it *and* supplying the edges its new target needs revises **0.733** | same cases, same frozen head, within-experiment comparison | revision 0.469 → **0.733**, breakage 0.274 → **0.077**, staleness 0.002 → 0.014 (D146) | **falsified if** supplying downstream edges fails to reduce breakage — it reduced it by 0.197 |
 | 2 | Composition generalises to relation pairs never seen composed | measured **at 61 relations**; the contrast is a 5-relation world where held-out composition *order* transfers at chance; **the threshold in between is untested** — "≥60" is interpolation. Pair-clean holdout | depth 2: held-out **0.925** vs trained 0.913 — **+0.011**, inside a ±0.02 band and on the better side. Depth 3: 0.626 vs 0.683, a gap of 0.057 (D123) | **falsified if** the depth-2 gap exceeds 0.02 in either direction. "Parity" is stated as a margin because it carried no threshold until a rater asked for one (D153) |
-| 3 | Order and depth can come from the store rather than from learning | **one corpus, one walker formulation** — not general | held-out compositions 0.534 → 0.912 (D117); **the 0.534 is pasted from exp18, not computed in-run** | **falsified if** *any* planner formulation reaches 0.912 on the same pairs — three raters unanimously flagged that only one weak planner was ever compared (D154) |
+| 3 | The **store** supplies what makes multi-hop answering work; the step-by-step **walk** does not | one corpus, R=5, depth 2. At R=5 enumeration is 30 candidates, so the walker's remaining case is **cost, not accuracy** — untested | store-filtered planner **0.9032** vs walker 0.9123 (inside CI); same planner denied the store **0.3883**. Availability filtering **+0.515**, greedy walking **+0.009**. D112's planner recomputed in-run is **0.8138**, not the 0.534 exp24 pasted (D117 → **D158**) | **falsified if** a model-only planner reaches the walker's CI, or store-filtered planning fails to match it where enumeration is affordable |
 | 4 | Depth extrapolates without depth-specific training, for *answering* — **at 3 hops, and not beyond** | answering only; **one** depth measured zero-shot | 3-hop **0.849** with no 3-hop in training, vs 0.961 trained (D119) | *refusal* does not extrapolate (D120); and **depth 4 refutes it** — 0.289 raw / 0.149 basis (D126) |
 | 5b | On the **mixed** benchmark, refusal needs the answer-type gate | law #9 population: chain_break + not_applicable + absent_entity | not_applicable **0.050 → 0.693** with the gate; chain_break 0.337 → 0.650; **depth-1** answerable wrongness 0.118 → 0.045 and **depth-2** 0.175 → 0.102; **correct** falls 0.110 while **total answered** falls 0.183 — the extra 0.073 removed were wrong answers (D134) | probe ceiling is 0.965, so 0.693 is threshold placement, not the limit |
 | 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching **−0.79 / −0.83 / −0.91** across three populations (D124) | **falsified if** the correlation vanishes where branching varies and confusability does not — a test D137's revisit (a) already owed and two raters independently named (D154) |
@@ -196,15 +196,30 @@ test permits.
  },
  {
   "row": "3",
-  "claim": "Order and depth can come from the STORE rather than from learning: letting walkability decide which relation is available next takes held-out composition accuracy from 0.534 to 0.912.",
-  "scope": "ONE corpus and ONE walker formulation \u2014 not general. `exp24_walker.py` reads a single world (data/real_world_ai_hops.json); the earlier claim of 'two corpora' was not supported by its own evidence and is corrected here. Worse, the 0.534 baseline is NOT computed in this run: it is a literal pasted from exp18, so identical scoring across the two scripts is assumed rather than verified. Isolates neither depth nor order learning: it removes the need to learn them here, and does not show they cannot be learned. FALSIFIED IF any path-planning formulation reaches 0.912 on the same held-out pairs \u2014 three raters unanimously flagged that only one weak planner was ever compared, and Task 4 of the current plan recomputes the baseline in-run and adds a stronger one",
+  "claim": "The STORE supplies what makes multi-hop answering work, and the step-by-step WALK does not: an exhaustive planner allowed to consult the store for which chains are walkable scores 0.9032 against the walker's 0.9123 (inside its CI), while the same planner denied the store scores 0.3883. Availability filtering is worth +0.515; greedy walking is worth +0.009.",
+  "scope": "ONE corpus, R=5, depth 2 \u2014 and at R=5 exhaustive enumeration is 30 candidates, so the walker's remaining justification is COST rather than accuracy and that is untested here (R=61 would be 3,782 candidates at depth 2 and 226,981 at depth 3). The earlier form of this claim said order and depth must come from the store rather than from a planner; the first half is confirmed overwhelmingly and the second is REFUTED (D158). It also quoted a 0.534 planner baseline pasted from exp18, which recomputed in-run is 0.8138 \u2014 the reported gap was inflated almost fourfold. Every arm shares one head, one seed, one scorer and one threshold rule, and the walker arm reproduces exp24's stored 0.9123 to four decimals or the script aborts. FALSIFIED IF a model-only planner reaches the walker's CI on any corpus, or if store-filtered planning fails to match it where enumeration is affordable",
   "src": [
-   "results/exp24_walker.json",
+   "results/exp52_planner_baseline.json",
    [
-    "selected",
-    "held_out_correct_ci95",
-    "baseline_d112_path_planner",
-    "scope"
+    "results",
+    "walker_correct",
+    "walker_ci95",
+    "best_planner_correct",
+    "d112_recomputed",
+    "exp24_pasted_d112_value",
+    "n_chains_searched",
+    "verdict"
+   ]
+  ],
+  "extra": [
+   [
+    "results/exp24_walker.json",
+    [
+     "selected",
+     "held_out_correct_ci95",
+     "baseline_d112_path_planner",
+     "scope"
+    ]
    ]
   ]
  },

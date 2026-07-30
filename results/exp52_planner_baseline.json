@@ -1,0 +1,839 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T09:05:23.020169+00:00",
+  "commit": "b9646b309a3d76e958d0a5bd2b40160484ffd0bb",
+  "dirty": true,
+  "command": "scripts/exp52_planner_baseline.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "MAX_STEPS": 4,
+   "TOPK": 3,
+   "labels": {
+    "P_CITES": "cites",
+    "P_INTRODUCES": "introduces",
+    "P_EVALUATES_ON": "evaluates on",
+    "P_BUILDS_ON": "builds on",
+    "P_COMPARES_TO": "compares to"
+   },
+   "grid": {
+    "W_walker": [
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7
+    ],
+    "P1_rank_permute": [
+     0.4,
+     0.6,
+     0.8,
+     1.0,
+     1.2,
+     1.5,
+     2.0
+    ],
+    "P2_exhaustive_model_only": [
+     0.4,
+     0.6,
+     0.8,
+     1.0,
+     1.2,
+     1.5,
+     2.0
+    ],
+    "P3_exhaustive_store_filtered": [
+     0.4,
+     0.6,
+     0.8,
+     1.0,
+     1.2,
+     1.5,
+     2.0
+    ]
+   }
+  }
+ },
+ "n_relations": 5,
+ "n_chains_searched": 30,
+ "n_held_out": 2964,
+ "n_seen_sample": 3000,
+ "results": {
+  "W_walker": {
+   "selected_param": 0.2,
+   "seen": {
+    "exact_chain": 0.9823,
+    "correct": 0.9843,
+    "wrong": 0.0157,
+    "abstain": 0.0,
+    "by_shape": {
+     "A->A": {
+      "correct": 1.0
+     },
+     "A->B": {
+      "correct": 0.9664,
+      "wrong": 0.0336
+     }
+    },
+    "n_by_shape": {
+     "A->A": 1603,
+     "A->B": 1397
+    },
+    "precision": 0.9843,
+    "n": 3000
+   },
+   "held_out": {
+    "exact_chain": 0.9011,
+    "correct": 0.9123,
+    "wrong": 0.0877,
+    "abstain": 0.0,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "correct": 0.9123,
+      "wrong": 0.0877
+     }
+    },
+    "n_by_shape": {
+     "A->A": 0,
+     "A->B": 2964
+    },
+    "precision": 0.9123,
+    "n": 2964
+   },
+   "sweep_seen": {
+    "0.2": {
+     "exact_chain": 0.9823,
+     "correct": 0.9843,
+     "wrong": 0.0157,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.9664,
+       "wrong": 0.0336
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.9843,
+     "n": 3000
+    },
+    "0.3": {
+     "exact_chain": 0.9827,
+     "correct": 0.9847,
+     "wrong": 0.0153,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.9671,
+       "wrong": 0.0329
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.9847,
+     "n": 3000
+    },
+    "0.4": {
+     "exact_chain": 0.9827,
+     "correct": 0.9847,
+     "wrong": 0.0153,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.9671,
+       "wrong": 0.0329
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.9847,
+     "n": 3000
+    },
+    "0.5": {
+     "exact_chain": 0.9827,
+     "correct": 0.9847,
+     "wrong": 0.0153,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.9671,
+       "wrong": 0.0329
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.9847,
+     "n": 3000
+    },
+    "0.6": {
+     "exact_chain": 0.9823,
+     "correct": 0.9843,
+     "wrong": 0.0157,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.9664,
+       "wrong": 0.0336
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.9843,
+     "n": 3000
+    },
+    "0.7": {
+     "exact_chain": 0.9813,
+     "correct": 0.9837,
+     "wrong": 0.0163,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.9649,
+       "wrong": 0.0351
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.9837,
+     "n": 3000
+    }
+   }
+  },
+  "P1_rank_permute": {
+   "selected_param": 0.8,
+   "seen": {
+    "exact_chain": 0.2457,
+    "correct": 0.2457,
+    "wrong": 0.0033,
+    "abstain": 0.751,
+    "by_shape": {
+     "A->A": {
+      "abstain": 0.9938,
+      "wrong": 0.0062
+     },
+     "A->B": {
+      "correct": 0.5276,
+      "abstain": 0.4724
+     }
+    },
+    "n_by_shape": {
+     "A->A": 1603,
+     "A->B": 1397
+    },
+    "precision": 0.9866,
+    "n": 3000
+   },
+   "held_out": {
+    "exact_chain": 0.8138,
+    "correct": 0.8138,
+    "wrong": 0.0091,
+    "abstain": 0.1771,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "correct": 0.8138,
+      "wrong": 0.0091,
+      "abstain": 0.1771
+     }
+    },
+    "n_by_shape": {
+     "A->A": 0,
+     "A->B": 2964
+    },
+    "precision": 0.9889,
+    "n": 2964
+   },
+   "sweep_seen": {
+    "0.4": {
+     "exact_chain": 0.245,
+     "correct": 0.245,
+     "wrong": 0.0,
+     "abstain": 0.755,
+     "by_shape": {
+      "A->A": {
+       "abstain": 1.0
+      },
+      "A->B": {
+       "correct": 0.5261,
+       "abstain": 0.4739
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "0.6": {
+     "exact_chain": 0.2457,
+     "correct": 0.2457,
+     "wrong": 0.0,
+     "abstain": 0.7543,
+     "by_shape": {
+      "A->A": {
+       "abstain": 1.0
+      },
+      "A->B": {
+       "correct": 0.5276,
+       "abstain": 0.4724
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "0.8": {
+     "exact_chain": 0.2457,
+     "correct": 0.2457,
+     "wrong": 0.0033,
+     "abstain": 0.751,
+     "by_shape": {
+      "A->A": {
+       "abstain": 0.9938,
+       "wrong": 0.0062
+      },
+      "A->B": {
+       "correct": 0.5276,
+       "abstain": 0.4724
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.9866,
+     "n": 3000
+    },
+    "1.0": {
+     "exact_chain": 0.2457,
+     "correct": 0.2733,
+     "wrong": 0.371,
+     "abstain": 0.3557,
+     "by_shape": {
+      "A->A": {
+       "wrong": 0.6943,
+       "abstain": 0.2539,
+       "correct": 0.0518
+      },
+      "A->B": {
+       "correct": 0.5276,
+       "abstain": 0.4724
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.4242,
+     "n": 3000
+    },
+    "1.2": {
+     "exact_chain": 0.2457,
+     "correct": 0.276,
+     "wrong": 0.474,
+     "abstain": 0.25,
+     "by_shape": {
+      "A->A": {
+       "wrong": 0.8871,
+       "abstain": 0.0561,
+       "correct": 0.0568
+      },
+      "A->B": {
+       "correct": 0.5276,
+       "abstain": 0.4724
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.368,
+     "n": 3000
+    },
+    "1.5": {
+     "exact_chain": 0.2457,
+     "correct": 0.276,
+     "wrong": 0.474,
+     "abstain": 0.25,
+     "by_shape": {
+      "A->A": {
+       "wrong": 0.8871,
+       "abstain": 0.0561,
+       "correct": 0.0568
+      },
+      "A->B": {
+       "correct": 0.5276,
+       "abstain": 0.4724
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.368,
+     "n": 3000
+    },
+    "2.0": {
+     "exact_chain": 0.2457,
+     "correct": 0.276,
+     "wrong": 0.474,
+     "abstain": 0.25,
+     "by_shape": {
+      "A->A": {
+       "wrong": 0.8871,
+       "abstain": 0.0561,
+       "correct": 0.0568
+      },
+      "A->B": {
+       "correct": 0.5276,
+       "abstain": 0.4724
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 0.368,
+     "n": 3000
+    }
+   }
+  },
+  "P2_exhaustive_model_only": {
+   "selected_param": 2.0,
+   "seen": {
+    "exact_chain": 0.6513,
+    "correct": 0.6513,
+    "wrong": 0.0,
+    "abstain": 0.3487,
+    "by_shape": {
+     "A->A": {
+      "correct": 1.0
+     },
+     "A->B": {
+      "correct": 0.2513,
+      "abstain": 0.7487
+     }
+    },
+    "n_by_shape": {
+     "A->A": 1603,
+     "A->B": 1397
+    },
+    "precision": 1.0,
+    "n": 3000
+   },
+   "held_out": {
+    "exact_chain": 0.3883,
+    "correct": 0.3883,
+    "wrong": 0.0904,
+    "abstain": 0.5213,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "abstain": 0.5213,
+      "correct": 0.3883,
+      "wrong": 0.0904
+     }
+    },
+    "n_by_shape": {
+     "A->A": 0,
+     "A->B": 2964
+    },
+    "precision": 0.8111,
+    "n": 2964
+   },
+   "sweep_seen": {
+    "0.4": {
+     "exact_chain": 0.6513,
+     "correct": 0.6513,
+     "wrong": 0.0,
+     "abstain": 0.3487,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.2513,
+       "abstain": 0.7487
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "0.6": {
+     "exact_chain": 0.6513,
+     "correct": 0.6513,
+     "wrong": 0.0,
+     "abstain": 0.3487,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.2513,
+       "abstain": 0.7487
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "0.8": {
+     "exact_chain": 0.6513,
+     "correct": 0.6513,
+     "wrong": 0.0,
+     "abstain": 0.3487,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.2513,
+       "abstain": 0.7487
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "1.0": {
+     "exact_chain": 0.6513,
+     "correct": 0.6513,
+     "wrong": 0.0,
+     "abstain": 0.3487,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.2513,
+       "abstain": 0.7487
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "1.2": {
+     "exact_chain": 0.6513,
+     "correct": 0.6513,
+     "wrong": 0.0,
+     "abstain": 0.3487,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.2513,
+       "abstain": 0.7487
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "1.5": {
+     "exact_chain": 0.6513,
+     "correct": 0.6513,
+     "wrong": 0.0,
+     "abstain": 0.3487,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.2513,
+       "abstain": 0.7487
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "2.0": {
+     "exact_chain": 0.6513,
+     "correct": 0.6513,
+     "wrong": 0.0,
+     "abstain": 0.3487,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.2513,
+       "abstain": 0.7487
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    }
+   }
+  },
+  "P3_exhaustive_store_filtered": {
+   "selected_param": 2.0,
+   "seen": {
+    "exact_chain": 1.0,
+    "correct": 1.0,
+    "wrong": 0.0,
+    "abstain": 0.0,
+    "by_shape": {
+     "A->A": {
+      "correct": 1.0
+     },
+     "A->B": {
+      "correct": 1.0
+     }
+    },
+    "n_by_shape": {
+     "A->A": 1603,
+     "A->B": 1397
+    },
+    "precision": 1.0,
+    "n": 3000
+   },
+   "held_out": {
+    "exact_chain": 0.9032,
+    "correct": 0.9032,
+    "wrong": 0.0968,
+    "abstain": 0.0,
+    "by_shape": {
+     "A->A": {},
+     "A->B": {
+      "correct": 0.9032,
+      "wrong": 0.0968
+     }
+    },
+    "n_by_shape": {
+     "A->A": 0,
+     "A->B": 2964
+    },
+    "precision": 0.9032,
+    "n": 2964
+   },
+   "sweep_seen": {
+    "0.4": {
+     "exact_chain": 0.999,
+     "correct": 0.999,
+     "wrong": 0.0,
+     "abstain": 0.001,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 0.9979,
+       "abstain": 0.0021
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "0.6": {
+     "exact_chain": 1.0,
+     "correct": 1.0,
+     "wrong": 0.0,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 1.0
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "0.8": {
+     "exact_chain": 1.0,
+     "correct": 1.0,
+     "wrong": 0.0,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 1.0
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "1.0": {
+     "exact_chain": 1.0,
+     "correct": 1.0,
+     "wrong": 0.0,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 1.0
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "1.2": {
+     "exact_chain": 1.0,
+     "correct": 1.0,
+     "wrong": 0.0,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 1.0
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "1.5": {
+     "exact_chain": 1.0,
+     "correct": 1.0,
+     "wrong": 0.0,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 1.0
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    },
+    "2.0": {
+     "exact_chain": 1.0,
+     "correct": 1.0,
+     "wrong": 0.0,
+     "abstain": 0.0,
+     "by_shape": {
+      "A->A": {
+       "correct": 1.0
+      },
+      "A->B": {
+       "correct": 1.0
+      }
+     },
+     "n_by_shape": {
+      "A->A": 1603,
+      "A->B": 1397
+     },
+     "precision": 1.0,
+     "n": 3000
+    }
+   }
+  }
+ },
+ "selected_params": {
+  "W_walker": 0.2,
+  "P1_rank_permute": 0.8,
+  "P2_exhaustive_model_only": 2.0,
+  "P3_exhaustive_store_filtered": 2.0
+ },
+ "walker_correct": 0.9123,
+ "walker_ci95": [
+  0.9016,
+  0.9219
+ ],
+ "best_planner": "P3_exhaustive_store_filtered",
+ "best_planner_correct": 0.9032,
+ "exp24_pasted_d112_value": 0.534,
+ "d112_recomputed": 0.8138,
+ "verdict": "REFUTED AS STATED, AND EXPLAINED \u2014 store-filtered planning reaches 0.9032, inside the walker's CI, while model-only planning reaches 0.3883. Walking step-by-step is NOT required; consulting the store for what is walkable is. The store's contribution is AVAILABILITY FILTERING, worth +0.5149, and the walker's greediness is worth +0.0091.",
+ "scope": "Recomputes the D112 planner baseline IN-RUN, because exp24 stored it as a literal pasted from exp18 and the comparison therefore assumed identical scoring across two scripts. Four arms share one head, one seed, one question set and one scorer; only the way a predicted sum becomes a walk varies. P2 vs P3 is the decomposition that matters: both enumerate every chain, and only P3 may consult the store for which chains are walkable, so the difference between them IS the store's contribution. Fit is L2 against the un-normalised sum because magnitude encodes depth. Every arm gets an abstain threshold swept on SEEN compositions only and selected by the walker's own pre-stated rule (law #6); denying the planners an abstain mechanism the walker has would build a strawman."
+}

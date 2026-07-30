@@ -214,8 +214,10 @@ print(f"  HELD-OUT comps      exact {H['exact_chain']:.3f}  correct "
       f"  precision {H['precision']:.3f}")
 lo, hi = wilson_ci(int(H["correct"] * H["n"]), H["n"])
 print(f"  held-out correct CI95 [{lo:.3f}, {hi:.3f}]")
-print(f"\nbaseline, same held-out compositions (D112 path planner): "
-      f"correct 0.534  wrong 0.433  precision 0.552")
+print(f"\n[D158] the D112 planner baseline this script used to quote here "
+      f"(0.534) was pasted from exp18 and is NOT comparable: recomputed "
+      f"in-run on these questions it scores 0.8138. See "
+      f"results/exp52_planner_baseline.json.")
 
 out = {
     "manifest": run_manifest(seed=SEED, config={"MAX_STEPS": MAX_STEPS,
@@ -223,8 +225,15 @@ out = {
     "selected_min_gain": MG, "sweep": {str(k): v for k, v in sweep.items()},
     "selected": {"seen": S, "held_out": H},
     "held_out_correct_ci95": [round(lo, 4), round(hi, 4)],
-    "baseline_d112_path_planner": {"correct": 0.534, "wrong": 0.433,
-                                   "precision": 0.552},
+    # D158: this used to hold {"correct": 0.534, ...} as a literal pasted
+    # from exp18 and compared as though the two scripts shared a protocol.
+    # Recomputed in-run, D112's formulation scores 0.8138 on these questions,
+    # so the gap this experiment reported was inflated almost fourfold. The
+    # value is withdrawn rather than corrected in place: exp52 computes it.
+    "baseline_d112_path_planner": {
+        "WITHDRAWN": "pasted from exp18, not comparable; see D158",
+        "recomputed_in_exp52": 0.8138,
+        "source": "results/exp52_planner_baseline.json"},
     "scope": ("Order and depth come from the store, not from a trained "
               "class: the head predicts one order-free SUM of relation "
               "coordinates, and the walk takes the best AVAILABLE relation "

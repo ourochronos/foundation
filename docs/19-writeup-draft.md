@@ -55,16 +55,36 @@ question is two hops"; it walks until there is nothing left to explain. That
 is what makes depth unbounded in principle and what makes the reasoner's
 behaviour a function of the store's contents (D117).
 
-**That commitment is the least well-evidenced claim in this paper, and we say
-so here rather than in a footnote.** It rests on one comparison — the walker
-at 0.912 against a path planner at 0.534 — and three independent adversarial
-raters unanimously observed that beating one planner does not establish that
-no planner could match it. Reading our own code afterwards made it worse: the
-0.534 is a literal pasted into `exp24_walker.py` from a different script, so
-identical scoring between the two was assumed rather than verified. An
-experiment that recomputes the baseline in-run and adds a stronger planner is
-specified and unrun (D154, D156). Until it runs, treat this section as the
-design's *intent* and Section 4's numbers as what is actually measured.
+**Half of that commitment is now known to be wrong, and the half that
+survives is the more interesting one.** It rested on a single comparison — the
+walker at 0.912 against a path planner at 0.534 — and three adversarial raters
+unanimously observed that beating one planner does not establish that no
+planner could. They were right, and running it changed the claim (D158):
+
+| | held-out correct |
+|---|---|
+| walker (greedy, store options) | 0.912 |
+| exhaustive planner, **allowed** to consult the store | **0.903** |
+| exhaustive planner, **denied** the store | 0.388 |
+
+An exhaustive planner that consults the store for which chains are walkable
+**matches the walker**, inside its confidence interval. Deny it the store and
+it collapses. So *"the store supplies what makes this work"* is confirmed
+overwhelmingly — availability filtering is worth **+0.515** — while *"and it
+must be a step-by-step walk"* is refuted: greedy walking is worth **+0.009**,
+inside noise.
+
+**What the walker is for, then, is cost rather than accuracy.** Enumerating
+every chain is 30 candidates on this 5-relation vocabulary, 3,782 at 61
+relations, and 226,981 at depth 3; the walker is linear in branching and
+depth and never enumerates. That is a real argument and we have not tested it,
+so it is the honest form of the claim and Section 6 lists it as unestablished.
+
+Reading our own code during this also found that the 0.534 was a literal
+pasted into `exp24_walker.py` from a different script. Recomputed in-run on the
+same questions, scorer and head, that planner scores **0.814** — so the gap we
+reported as 0.378 is really 0.098. Nothing was fabricated; a number was
+carried across scripts and compared as though it shared a protocol.
 
 Relation coordinates come from a relation's **label**, projected into a frozen
 basis. This is why a relation that has never been trained on still has
@@ -334,9 +354,10 @@ listed as untested. A second *corpus* was not tested (D149).
   confabulates on the majority of what it cannot answer. Honesty is a
   component we added, not a property the design provided.
 - **Not a free lunch on refusal.** Every refusal gain we found cost coverage.
-- **Not established that order and depth must come from the store.** One
-  planner was compared, its baseline was pasted rather than recomputed, and
-  the stronger comparison is unrun (§1).
+- **Not established that the walk must be step-by-step.** A store-filtered
+  exhaustive planner matches the walker (0.903 vs 0.912). The walker's
+  remaining justification is that it does not enumerate — real, and untested
+  at a vocabulary where enumeration is expensive (§1).
 - **Not a demonstrated mechanism for the density bound.** Branching and
   confusability covary in everything we measured (§5).
 - **Not one corpus's compression trade-off generalised.** The
@@ -368,6 +389,12 @@ conditions above are real rather than decorative.
   curve was run to eighteen and plateaued at 0.09 (D148 → D155). This one
   reversed twice, and the second reversal came from an adversarial rater's
   falsifier rather than from us.
+- *"Order and depth must come from the store rather than from a planner"* —
+  the store half is confirmed overwhelmingly, the planner half is refuted: an
+  exhaustive planner that consults the store matches the walker (D117 →
+  D158). The comparison that established the original claim also quoted a
+  baseline pasted from another script, which understated the alternative by
+  0.28.
 
 **Things that did not work:**
 - **Combining signals never beat the better component**, three times: two
