@@ -2,6 +2,30 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D147: My "depth is a proxy for branching" hypothesis is REFUTED — and the stratification I designed to test it failed as an instrument
+`scripts/exp48_depth_proxy.py`. Task 1. Three entries had each explained a depth effect locally — D126 (templates), D138 (fan-out), D146 (downstream reachability) — and I hypothesised they were one finding: that depth is never a variable, only a correlate of how many options the walk faces. That hypothesis is wrong.
+
+**The stratification failed as an instrument, and that has to be said before the numbers.** I banded MQuAKE cases by mean chain branching and compared depths within bands. The bands did **not** hold branching fixed — inside [1, 2) the mean branch still runs **1.14 → 1.65** across depths — and the consequences are visible: within-band depth spans (0.365, 0.321) came out *larger* than the unstratified span (0.105), and in **opposite directions** between the two bands (depth 4 best in one, worst in the other). That is the signature of an uncontrolled confound, not of a depth effect. **The stratified table answers nothing and its verdict line is retracted in the results JSON.**
+
+**A joint fit is the instrument that controls properly**, and it refutes the hypothesis:
+
+| variable | alone | jointly | shrinkage |
+|---|---|---|---|
+| depth | +0.213 | **+0.195** | 8.4% |
+| branching | +0.205 | **+0.179** | 12.5% |
+
+*(standardised log-odds per SD, n=600, base rate 0.718)*
+
+**If depth were a proxy for branching its coefficient would collapse when branching entered the model. It shrinks by 8%.** The two are near-independent: each carries its own modest signal. **Depth is a real variable, not a stand-in.**
+
+**But both effects are small** — roughly 0.19 log-odds per standard deviation against a 0.718 base rate — and that is the more useful finding. Neither depth nor branching is a strong driver of correctness on this corpus. **D126, D138 and D146 were each a local explanation of a modest effect**, which is why each looked convincing in isolation and why no unifying story exists to be found. The pattern I thought I saw was three small effects with three different local causes, not one large effect misattributed three times.
+
+**A process note worth recording.** My first pass printed "both partial effects are non-trivial" and then concluded "depth and branching together explain very little" — a contradiction produced by a hardcoded conclusion sitting under a computed test. It was caught only because the two lines were adjacent in the output. **A conclusion string that does not derive from the statistic above it is a latent wrong finding**, and this one would have been published as an entry.
+
+**Decision**: the depth entries stay as they are. Each stands on its own evidence and none needs re-framing around branching. The claim to avoid in the writeup is any suggestion that depth per se drives behaviour — at these effect sizes, corpus and reachability differences dominate it.
+
+**Revisit**: (a) a properly matched design (pair questions with near-identical branching across depths, rather than banding) could still tighten this, but the joint fit already answers the question the plan asked; (b) the small effect sizes mean the depth curves in D121/D126/D138 should be quoted with their CIs, which several currently are not.
+
 ## 2026-07-29 — D146: D141's diagnosis confirmed — supplying downstream edges takes revision 0.469 → 0.733 and dissolves the depth effect
 `scripts/exp46_revision_fix.py`. Task 2, and a test of a causal claim rather than a search for a better number. Both conditions share the same 1,200 cases, the same frozen head and the same questions, so the comparison is within-experiment; D141's figures came from a different sample and are not the baseline.
 

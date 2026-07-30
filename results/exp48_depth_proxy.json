@@ -1,0 +1,118 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T04:11:20.143009+00:00",
+  "commit": "3e2e5c8b8b512e4c4550d8a797ae0703a2f42813",
+  "dirty": true,
+  "command": "scripts/exp48_depth_proxy.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "BANDS": [
+    [
+     1.0,
+     2.0
+    ],
+    [
+     2.0,
+     3.0
+    ]
+   ],
+   "N_CASES": 1200
+  }
+ },
+ "unstratified": {
+  "2": {
+   "correct": 0.675,
+   "wrong": 0.24,
+   "mean_branch": 1.712,
+   "n": 200
+  },
+  "3": {
+   "correct": 0.7,
+   "wrong": 0.085,
+   "mean_branch": 1.615,
+   "n": 200
+  },
+  "4": {
+   "correct": 0.78,
+   "wrong": 0.095,
+   "mean_branch": 1.83,
+   "n": 200
+  }
+ },
+ "stratified": {
+  "[1.0,2.0)": {
+   "2": {
+    "correct": 0.6068,
+    "wrong": 0.2906,
+    "mean_branch": 1.141,
+    "n": 117
+   },
+   "3": {
+    "correct": 0.55,
+    "wrong": 0.06,
+    "mean_branch": 1.22,
+    "n": 100
+   },
+   "4": {
+    "correct": 0.9154,
+    "wrong": 0.0462,
+    "mean_branch": 1.652,
+    "n": 130
+   },
+   "span": 0.3654
+  },
+  "[2.0,3.0)": {
+   "2": {
+    "correct": 0.7778,
+    "wrong": 0.1667,
+    "mean_branch": 2.444,
+    "n": 72
+   },
+   "3": {
+    "correct": 0.85,
+    "wrong": 0.11,
+    "mean_branch": 2.01,
+    "n": 100
+   },
+   "4": {
+    "correct": 0.5286,
+    "wrong": 0.1857,
+    "mean_branch": 2.161,
+    "n": 70
+   },
+   "span": 0.3214
+  }
+ },
+ "depth_span_unstratified": 0.105,
+ "depth_span_within_bands": [
+  0.3654,
+  0.3214
+ ],
+ "depth_is_proxy": false,
+ "correlations": {
+  "depth_correct": 0.0953,
+  "branch_correct": 0.0907,
+  "depth_branch": 0.0925
+ },
+ "scope": "Branching is the mean number of relations available at each step of the question's TRUE chain \u2014 a property of the store, computed without the model. Depth is MQuAKE's own chain length. Strata require >=30 questions per depth to be reported. No new embeddings: D146's cache is reused under a content assert, so the questions are identical. NOTE: the branching bands did NOT hold branching fixed (mean branch varies 1.14-1.65 within [1,2)), so the stratified comparison is inconclusive and its verdict line should be disregarded. The joint logistic fit is the instrument that controls properly.",
+ "joint_fit": {
+  "depth_alone": 0.2133,
+  "branching_alone": 0.2046,
+  "depth_joint": 0.1954,
+  "branching_joint": 0.1789,
+  "n": 600,
+  "base_rate": 0.7183
+ },
+ "stratification_failed": true,
+ "shrinkage": {
+  "depth": 0.084,
+  "branching": 0.1254
+ }
+}
