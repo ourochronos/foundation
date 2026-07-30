@@ -34,6 +34,185 @@ would falsify it. A claim without its condition is not publishable.
 
 | 12 | Entities are free for the head and expensive for retrieval | subjects held out of training questions; claims remain in the store | head −0.029 (d1) / −0.010 (d2); retrieval −0.328 / −0.288 (D149) | **falsified if** the head's gap exceeds 0.05 on any population — it did not on three |
 
+## Machine-readable claims (SINGLE SOURCE OF TRUTH)
+
+`scripts/adjudicate.py` reads this block directly. The prose table
+above is a rendering of it. D150 recorded why: the adjudicator used
+to keep its own copy, the two drifted, and an entry asserted an
+adjudication that never happened. Two artifacts holding the same
+claims will diverge, and the divergence is invisible because both
+look current.
+
+```json
+[
+ {
+  "claim": "The store is MECHANICALLY reindex-free: appending new content mutates no fitted artifact.",
+  "scope": "verified byte-identical basis, coordinates and head weights across an append",
+  "src": [
+   "results/exp36_append.json",
+   [
+    "mechanical_check_passed",
+    "fingerprints",
+    "n_new_relations",
+    "n_new_subjects"
+   ]
+  ]
+ },
+ {
+  "claim": "Appending is behaviourally near-free for new ENTITIES but not for new RELATIONS.",
+  "scope": "PARAMETRIC HEAD ONLY, against a full rebuild at one freeze/append ratio: head new entity +0.058, new relation +0.191. Retrieval is worse on both (+0.247, +0.771)",
+  "src": [
+   "results/exp36_append.json",
+   [
+    "results"
+   ]
+  ]
+ },
+ {
+  "claim": "The store LEARNS: of the questions it properly REFUSED before an update, 432 of 432 (1.000) are answered correctly after it. Separately, it properly refused only 432 of the 1179 it could not answer (0.366); 21 of the 1200 were already answerable. Both figures derive from the transition matrix.",
+  "scope": "artifacts are frozen by construction in this experiment but are FINGERPRINT-VERIFIED only in D131's separate append run; the 1.000 is conditional on prior honest refusal",
+  "src": [
+   "results/exp38_update.json",
+   [
+    "transition_flip",
+    "learned_rate",
+    "learned_ci95",
+    "regression_stays",
+    "control_never",
+    "n_update_pairs"
+   ]
+  ],
+  "extra": [
+   [
+    "results/exp36_append.json",
+    [
+     "mechanical_check_passed",
+     "fingerprints"
+    ]
+   ]
+  ]
+ },
+ {
+  "claim": "The store REVISES rather than going stale: after a superseding edit it does not keep asserting the old fact. Staleness is 0.002; revision is 0.459; the failure is refusal and wrong answers, not staleness.",
+  "scope": "edits applied through the real kb.edit() path; conditional on having answered correctly before the edit; single-edit cases revise at only 0.235",
+  "src": [
+   "results/exp44_supersession.json",
+   [
+    "matrix_all",
+    "revision_rate_all",
+    "matrix_single",
+    "revision_rate_single",
+    "matrix_multi",
+    "revision_rate_multi",
+    "supersession_sanity",
+    "edits_applied"
+   ]
+  ]
+ },
+ {
+  "claim": "Composition generalises to relation pairs never seen composed, at parity with trained pairs at depth 2.",
+  "scope": "measured AT 61 relations; fails at 5; the threshold in between is untested, so any '>=60' is interpolation. Pair-clean holdout; parity at depth 2 only, degrading at depth 3 (0.626 vs 0.683)",
+  "src": [
+   "results/exp29_wikiwalker.json",
+   [
+    "n_relations",
+    "n_pairs",
+    "n_held_pairs",
+    "results",
+    "controls",
+    "branching"
+   ]
+  ],
+  "extra": [
+   [
+    "results/exp18_compose.json",
+    [
+     "ordering",
+     "scope"
+    ]
+   ]
+  ]
+ },
+ {
+  "claim": "Depth extrapolates without depth-specific training for ANSWERING (3-hop 0.849 with no 3-hop trained).",
+  "scope": "answering only; refusal does not extrapolate",
+  "src": [
+   "results/exp26_threehop.json",
+   [
+    "zero_shot_depth",
+    "trained_on_3hop"
+   ]
+  ]
+ },
+ {
+  "claim": "On a MIXED unanswerable benchmark the answer-type gate lifts not-applicable refusal from 0.050 to 0.693 and cuts answerable wrongness from 0.118 to 0.045.",
+  "scope": "depth-1 CORRECT falls 0.110 while TOTAL answered falls 0.183 (the extra 0.073 were wrong answers); depth-2 wrongness 0.175->0.102; probe ceiling 0.965 so 0.693 is threshold placement",
+  "src": [
+   "results/exp39_typegate.json",
+   [
+    "results",
+    "not_applicable_refusal",
+    "aurc_mixed",
+    "type_fit_threshold"
+   ]
+  ]
+ },
+ {
+  "claim": "Retrieval beats a parametric head by DATA-EFFICIENCY, not by preserving information the head destroys. Within one population the gap closes from 0.230 at 2 aliases to 0.042 at 10; and on a second population no head configuration at 2 aliases (512-2048 hidden, three objectives) reached 1-NN.",
+  "scope": "the CURVE is exp43's 34-relation population; the no-configuration-closes-it result is exp49's 56-relation population — two populations, two roles, not one curve. FALSIFIED IF a head at 2 aliases reaches 1-NN, or the gap fails to shrink with alias supply",
+  "src": [
+   "results/exp49_fair_head.json",
+   [
+    "one_nn",
+    "d129_head",
+    "grid",
+    "epoch_sweep",
+    "best_head",
+    "gap_to_1nn"
+   ]
+  ],
+  "extra": [
+   [
+    "results/exp43_scaling.json",
+    [
+     "alias_curve"
+    ]
+   ],
+   [
+    "results/exp36_append.json",
+    [
+     "results"
+    ]
+   ]
+  ]
+ },
+ {
+  "claim": "Entities are free for the parametric head and expensive for retrieval: subjects held out of training score 0.766 against seen subjects' 0.795 at depth 1, while retrieval drops from 0.854 to 0.526.",
+  "scope": "subjects held out of TRAINING QUESTIONS only; their claims remain in the store and stay walkable. FALSIFIED IF the head's gap exceeds 0.05 on any population — it did not on three",
+  "src": [
+   "results/exp50_entity.json",
+   [
+    "results",
+    "gaps",
+    "largest_gap",
+    "n_held_subjects"
+   ]
+  ]
+ },
+ {
+  "claim": "Revision is two operations: editing a fact alone revises 0.469 of previously-correct answers with 0.274 breakage; editing it AND supplying the edges its new target needs revises 0.733 with 0.077.",
+  "scope": "same cases, same frozen head, within-experiment comparison. FALSIFIED IF supplying downstream edges fails to reduce breakage — it reduced it by 0.197",
+  "src": [
+   "results/exp46_revision_fix.json",
+   [
+    "conditions",
+    "verdict"
+   ]
+  ]
+ }
+]
+```
+
 ## Predictions the paper makes but has not tested
 
 Stated separately from the claims because they are falsifiable and **unfalsified
