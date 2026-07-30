@@ -2,6 +2,34 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-29 — D148: The head was handicapped, not incapable — and retrieval's advantage is data-efficiency, which mostly closes by 10 aliases
+`scripts/exp49_fair_head.py`. Task 2, running the falsifier D145's adversarial pass named for claim 9: *"a better-trained parametric head matching 1-NN would falsify information destruction; one underperforming head does not rule that out."* Fair criticism, and it found a real design flaw.
+
+**D129 trained a regression and scored a classification.** The head learned MSE onto a relation's coordinate but was evaluated by nearest-centroid argmax over relations — train and eval objectives never matched. That is exactly the mismatch that makes a capable model look incapable.
+
+Sweeping objective × capacity, with training data held **fixed** at the two aliases D129 quoted so only the head varies:
+
+| objective | 512 | 1024 | 2048 |
+|---|---|---|---|
+| MSE (D129's) | 0.632 | 0.638 | 0.636 |
+| cosine | 0.630 | 0.629 | 0.634 |
+| **contrastive** | 0.666 | **0.668** | 0.667 |
+
+Epoch sweep at the best cell: **40 → 0.691**, 120 → 0.668, 300 → 0.652.
+
+**Three things fall out, and only the first was expected:**
+- **Objective matters, capacity does not.** Aligning train and eval (contrastive) buys ~0.03; going from 512 to 2048 hidden units buys **0.006**. The head was never capacity-bound, so "bigger head" was never the fix.
+- **More training makes it worse.** 40 epochs beats 300 by 0.039 — with two aliases the head overfits its surface forms, which is a data problem wearing a training-schedule costume.
+- **The gap survives anyway.** Best head **0.691** (CI95 [0.675, 0.707]) against 1-NN's **0.925**. No configuration came close.
+
+**D129's direction stands; its magnitude does not.** The gap is **0.234**, not the 0.311 that entry implied, and the claim is now much better supported: *no head we could train, at any capacity or objective, matched retrieval on this data.* That is a far stronger statement than "a head lost".
+
+**But the honest synthesis with D139 changes what the claim means.** D139 measured the head at increasing alias counts: 0.723 → 0.933 from 2 to 10 aliases, while 1-NN moved only 0.953 → 0.975. So the gap runs **0.234 at two aliases and roughly 0.042 at ten**. **Retrieval's advantage is data-EFFICIENCY, not information destruction.** The head is not throwing away something retrieval keeps; it needs far more surface forms to learn what retrieval gets from a single stored neighbour. Claim 9 is restated accordingly, and "destroys information" — a phrase this project has repeated since D129 — is withdrawn as overstated.
+
+**Decision**: the architecture recommendation is unchanged in the low-data regime (retrieval wins decisively at two aliases per relation) but is now **conditional on alias supply**, which is a cheap thing to buy (D139: Wikidata carries a median of 12). A deployment with rich aliases can use either; one with sparse aliases should use retrieval.
+
+**Revisit**: (a) the crossover point between 2 and 10 aliases is unmeasured and would make the condition concrete rather than approximate; (b) the head overfits at 300 epochs on 3,328 rows, so early stopping was doing real work uncontrolled in D129 and every experiment that inherited its 40-epoch default; (c) this is the second time a claim of the form "X destroys/cannot" turned out to be "X needs more data than Y" — the first was D112.
+
 ## 2026-07-29 — D147: My "depth is a proxy for branching" hypothesis is REFUTED — and the stratification I designed to test it failed as an instrument
 `scripts/exp48_depth_proxy.py`. Task 1. Three entries had each explained a depth effect locally — D126 (templates), D138 (fan-out), D146 (downstream reachability) — and I hypothesised they were one finding: that depth is never a variable, only a correlate of how many options the walk faces. That hypothesis is wrong.
 
@@ -443,7 +471,8 @@ Task 2 of the plan. The claims table in `docs/18-writeup-outline.md` was rewritt
 
 **Revisit**: (a) build the append-then-query experiment — it is now the highest-priority gap and the one the paper's title depends on; (b) re-run `claims` after the table settles, since three flags were evidence-selection artifacts and the corrected table has not been adjudicated; (c) a second adjudicator model would separate "Sol is strict" from "the claim is weak" — every flag here came from one rater.
 
-## 2026-07-29 — D129: Do NOT fine-tune the encoder — the parametric head is destroying information that 1-NN retrieval preserves
+## 2026-07-29 — D129: Do NOT fine-tune the encoder
+**[QUALIFIED BY D148]** — the 0.614 head was one configuration and a train/eval mismatch. The best head reaches 0.691; retrieval's advantage is data-EFFICIENCY, not absolute, and mostly closes by 10 aliases. — the parametric head is destroying information that 1-NN retrieval preserves
 `scripts/exp35_phrasing_diag.py`. D128 left phrasing as the dominant unsolved failure and named encoder fine-tuning as the only untried lever. Before spending on an expensive, hard-to-reverse step, three cheap diagnostics were run to attribute the failure to a component. **All three point away from the encoder.**
 
 **1. The encoder separates paraphrases.** Same question, subject held fixed, rendered with different aliases of the same relation: mean cosine **0.862**, against **0.767** for different relations. Separation +0.095. The geometry is there.

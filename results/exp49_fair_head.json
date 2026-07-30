@@ -1,0 +1,54 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T04:42:09.210260+00:00",
+  "commit": "e7601dbccebab3b091c42f8cf1de5b94b5304cab",
+  "dirty": true,
+  "command": "scripts/exp49_fair_head.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "TRAIN_ALIASES": 2,
+   "epochs_grid": 120
+  }
+ },
+ "n_relations": 56,
+ "n_eval": 3328,
+ "one_nn": 0.9255,
+ "d129_head": 0.614,
+ "grid": {
+  "mse": {
+   "512": 0.6322,
+   "1024": 0.6382,
+   "2048": 0.6355
+  },
+  "cosine": {
+   "512": 0.6298,
+   "1024": 0.6292,
+   "2048": 0.634
+  },
+  "contrastive": {
+   "512": 0.6659,
+   "1024": 0.668,
+   "2048": 0.6668
+  }
+ },
+ "epoch_sweep": {
+  "40": 0.6914,
+  "120": 0.668,
+  "300": 0.6523
+ },
+ "best_head": 0.6914,
+ "best_ci95": [
+  0.6755,
+  0.7069
+ ],
+ "gap_to_1nn": 0.2341,
+ "verdict": "head improves substantially but still trails retrieval \u2014 D129's direction stands, its magnitude does not",
+ "scope": "D129's own population and cache, with training data held FIXED at the two aliases that entry quoted, so only the head varies. The contrastive arm exists because D129 trained a REGRESSION and scored nearest-centroid CLASSIFICATION \u2014 a train/eval mismatch that could make a capable model look incapable. 1-NN is computed on the identical training slice."
+}
