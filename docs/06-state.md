@@ -1,6 +1,6 @@
-# Current state — 2026-07-30 (encoder/anchor probes complete; through D165)
+# Current state — 2026-07-30 (encoder/anchor/basis probes complete; through D168)
 
-**Fastest orientation**: [decisions.md](decisions.md) D165 → D164 → D158, then
+**Fastest orientation**: [decisions.md](decisions.md) D168 → D164 → D158, then
 "where a pivot lands" at the bottom. **Nothing is running.** Working tree clean
 apart from three soak-log files that rewrite themselves.
 
@@ -64,6 +64,29 @@ global Pareto frontier.
 **Orthogonality is not the dial.** Coherence-vs-transfer correlation
 −0.002 / +0.051 / +0.170. A perfectly orthogonal random basis caps at 0.287;
 a high-coherence content-bearing one reaches 0.425. Content dominates.
+
+**A basis works in proportion to how well its PARTITION matches the task, and
+that buys generalisation only** (D168). Corrupting the class assignment while
+holding method, K, head and targets fixed gives r = **−0.91 / −0.89**, mean
+drop 0.150 — while **trained accuracy does not move at all** (Gemma 0.7146 →
+0.7279 across the full corruption range). A trained relation does not care
+which directions the basis spans; an unseen one needs the basis to point where
+its label will land.
+
+Four accounts of *why* a basis works were tested and only that one survives:
+derive-from-the-adjacent-layer is **refuted** (D166 — all four profile
+strategies lose at every K, −0.117 on Gemma); orthogonality r≈0 (D165);
+non-redundancy with the encoder r≈0 (D167, whose highest-capture basis is near
+the bottom). The ordering questions > labels > entity profiles is alignment,
+not abstraction level.
+
+**So the layer stack is real as an ONTOLOGY and not a derivation order for
+representations.** The type/context distinction and the relation categories
+stand; what they are not is a recipe for choosing basis directions. And
+over-provisioning is relocated rather than killed — superposed categories want
+a **sparse overcomplete dictionary**, which the K sweeps never tested (always
+undercomplete; a dense K ≥ d collapses toward raw label space at 0.171 against
+the K=32 basis at 0.453).
 
 **Relation-as-offset fails** — anchors from `emb(obj) − emb(subj)` are worst or
 near-worst on both encoders. With D4 (rotations unsupported) and D26 (constant
