@@ -27,7 +27,7 @@ would falsify it. A claim without its condition is not publishable.
 | 4 | Depth extrapolates without depth-specific training, for *answering* — **at 3 hops, and not beyond** | answering only; **one** depth measured zero-shot | 3-hop **0.849** with no 3-hop in training, vs 0.961 trained (D119) | *refusal* does not extrapolate (D120); and **depth 4 refutes it** — 0.289 raw / 0.149 basis (D126) |
 | 5b | On the **mixed** benchmark, refusal needs the answer-type gate | law #9 population: chain_break + not_applicable + absent_entity | not_applicable **0.050 → 0.693** with the gate; chain_break 0.337 → 0.650; **depth-1** answerable wrongness 0.118 → 0.045 and **depth-2** 0.175 → 0.102; **correct** falls 0.110 while **total answered** falls 0.183 — the extra 0.073 removed were wrong answers (D134) | probe ceiling is 0.965, so 0.693 is threshold placement, not the limit |
 | 6 | Refusal quality falls as store density rises | correlation, not a demonstrated mechanism | refusal vs branching **−0.79 / −0.83 / −0.91** across three populations (D124) | **falsified if** the correlation vanishes where branching varies and confusability does not — a test D137's revisit (a) already owed and two raters independently named (D154) |
-| 7 | Compression buys generalisation and costs precision | descriptive across three experiments — **the same corpus**, separately tuned thresholds (0.6 / own / 0.4); none tests both halves | novel relations 0.293 → **0.742** (D125); phrasing 0.149 → **0.313** at wrongness 0.036 → 0.245 (D128); depth-4 0.289 → **0.149** (D126) | **falsified if** a representation wins both axes under **one** threshold protocol — unanimously flagged as a post-hoc pattern (D154) |
+| 7 | Compression buys generalisation and costs **refusal** — not the accuracy of what it enables | one store, **one threshold rule for both arms** (law #6); phrasing leg still uncontrolled | novel-relation answering **0.005 → 0.742** while wrong moves only 0.153 → 0.167 — raw's low score is raw *refusing* (abstain 0.842). At matched coverage **+0.741 correct for +0.072 wrong**, a tenth of the gain; costs land on refusal (**−0.706** novel, **−0.569** known) and known answering (−0.141) (D125/D126 → **D159**) | **falsified if** the wrongness cost on the population it helps is commensurate with the gain there, or the refusal collapse disappears under matched tuning |
 | 8 | Alias supply explains **most** of retrieval's advantage over a parametric head — **and not all of it** | depth-1 relation identification, known relations; the plateau is measured on 8 high-alias relations only | gap 0.229 → 0.042 over 2→10 aliases (exp43, 34 rel); then **flat at ≈0.09** over 10→18 (exp51, 8 rel: 0.087 → 0.091, tail slope +0.0015/alias vs noise ±0.026); no head config reached 1-NN at 2 aliases — 0.691 vs 0.925 (exp49) (D139, D148, **D155**) | **falsified if** the gap resumes falling past 18 aliases, or a head reaches 1-NN at any supply. *"Not a permanent loss of information" was withdrawn at D155 when this falsifier was run — the head plateaus at 0.892 while 1-NN sits at 0.975 from two aliases onward.* |
 
 | 11* | Claim adjudication itself is noisy | two independent raters | Cohen's kappa **+0.333** (D140) | single-rater verdicts in D130/D135 were correspondingly noisier than they appeared |
@@ -272,27 +272,30 @@ test permits.
  },
  {
   "row": "7",
-  "claim": "Compression buys generalisation and costs precision: a frozen low-dimensional basis takes novel-RELATION answering 0.293 -> 0.742 and novel-PHRASING 0.149 -> 0.313, while raising phrasing wrongness 0.036 -> 0.245 and dropping depth-4 answering 0.289 -> 0.149.",
-  "scope": "DESCRIPTIVE across three experiments, and an earlier version of this scope said they were on 'different corpora' \u2014 they are NOT. exp31, exp32 and exp34 all read the same store (KB table `poc`) at 61/61/60 relations. The real confound is that each derived its OWN threshold (0.6, its own, 0.4), so the comparison is across tuning regimes rather than across corpora. No single experiment tests both halves, which makes this a pattern fitted to results rather than a prediction tested against them. FALSIFIED IF a representation wins on both axes at once under ONE threshold protocol \u2014 three raters unanimously flagged exactly this, and Task 5 of the current plan runs it",
+  "claim": "Compression buys generalisation and costs REFUSAL, not the accuracy of what it enables. Under one threshold protocol, a frozen K=48 basis takes novel-relation answering from 0.0054 to 0.7419 while its wrong-rate moves only 0.1531 to 0.1667 \u2014 raw's low score is raw REFUSING (abstain 0.8415), not raw erring. At matched coverage the gain is +0.7407 correct for +0.0723 wrong, a tenth of the gain; the real costs are refusal on novel unanswerables (-0.7060), refusal on known ones (-0.5685) and known-relation answering (-0.1409 at 9x the wrong-rate).",
+  "scope": "ONE store, ONE threshold rule for both arms, derived on TRAINED populations only (law #6) \u2014 this is the controlled comparison three raters unanimously asked for, and it changes exactly one thing against exp31, which ran its raw arm at an inherited THR=0.8 and swept only its basis arm. An earlier version of this scope said the evidence spanned 'different corpora'; exp31, exp32 and exp34 all read the same table, so the confound was always tuning (D156). Reported at each arm's own threshold AND at matched coverage, with answerable and unanswerable never averaged together \u2014 the first summary of this experiment did average them and reported a figure describing neither (D159). The PHRASING leg is NOT covered: it needs exp34's alias populations, a different question set. FALSIFIED IF the basis's wrongness cost on the population it helps is commensurate with its gain there, or if the refusal collapse disappears under matched tuning",
   "src": [
-   "results/exp31_novelrel.json",
+   "results/exp53_compression_controlled.json",
    [
-    "basis_threshold_sweep",
-    "raw_baseline",
-    "basis_selected_thr"
+    "at_own_threshold",
+    "selected_thresholds",
+    "matched_coverage",
+    "summary_at_matched_coverage",
+    "verdict"
    ]
   ],
   "extra": [
    [
-    "results/exp32_depth4.json",
+    "results/exp31_novelrel.json",
     [
-     "results"
+     "basis_threshold_sweep",
+     "raw_baseline",
+     "basis_selected_thr"
     ]
    ],
    [
-    "results/exp34_aliaspretrain.json",
+    "results/exp32_depth4.json",
     [
-     "basis_2x2",
      "results"
     ]
    ]

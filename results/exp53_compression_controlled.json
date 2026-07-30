@@ -1,0 +1,686 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T09:37:33.002246+00:00",
+  "commit": "a74c528b587986c8eb4ddbd468b086d183457551",
+  "dirty": true,
+  "command": "scripts/exp53_compression_controlled.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "K_BASIS": 48,
+   "GRID": [
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.8,
+    1.0,
+    1.2
+   ],
+   "N_HOLD_REL": 12,
+   "MIN_GAIN": 0.2
+  }
+ },
+ "n_relations": 61,
+ "n_held_relations": 12,
+ "population_sizes": {
+  "eval_d1_inst": 827,
+  "eval_d1_novel1": 1476,
+  "eval_d2_inst": 870,
+  "eval_d2_novel1": 2031,
+  "eval_d2_novel2": 346,
+  "train_d1": 3221,
+  "train_d2": 3642,
+  "train_d3": 6111,
+  "unans_novel": 2000,
+  "unans_trained": 2000
+ },
+ "selected_thresholds": {
+  "raw_1024d": 0.6,
+  "basis_K48": 0.6
+ },
+ "sweeps_trained_only": {
+  "raw_1024d": {
+   "0.2": {
+    "train_d1": {
+     "correct": 0.4173,
+     "wrong": 0.0,
+     "abstain": 0.5827,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.4451,
+     "wrong": 0.0022,
+     "abstain": 0.5527,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.2908,
+     "wrong": 0.016,
+     "abstain": 0.6932,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.0,
+     "abstain": 1.0,
+     "n": 2000
+    }
+   },
+   "0.3": {
+    "train_d1": {
+     "correct": 0.8379,
+     "wrong": 0.0,
+     "abstain": 0.1621,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.8007,
+     "wrong": 0.0036,
+     "abstain": 0.1958,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.5888,
+     "wrong": 0.0227,
+     "abstain": 0.3885,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.0015,
+     "abstain": 0.9985,
+     "n": 2000
+    }
+   },
+   "0.4": {
+    "train_d1": {
+     "correct": 0.9426,
+     "wrong": 0.0003,
+     "abstain": 0.0571,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.8847,
+     "wrong": 0.0036,
+     "abstain": 0.1118,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.6735,
+     "wrong": 0.0244,
+     "abstain": 0.3021,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.0035,
+     "abstain": 0.9965,
+     "n": 2000
+    }
+   },
+   "0.5": {
+    "train_d1": {
+     "correct": 0.9646,
+     "wrong": 0.0003,
+     "abstain": 0.0351,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.9006,
+     "wrong": 0.0041,
+     "abstain": 0.0953,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.6982,
+     "wrong": 0.025,
+     "abstain": 0.2767,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.0205,
+     "abstain": 0.9795,
+     "n": 2000
+    }
+   },
+   "0.6": {
+    "train_d1": {
+     "correct": 0.9708,
+     "wrong": 0.0003,
+     "abstain": 0.0289,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.9066,
+     "wrong": 0.0044,
+     "abstain": 0.089,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.709,
+     "wrong": 0.0257,
+     "abstain": 0.2653,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.051,
+     "abstain": 0.949,
+     "n": 2000
+    }
+   },
+   "0.8": {
+    "train_d1": {
+     "correct": 0.9786,
+     "wrong": 0.0127,
+     "abstain": 0.0087,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.9127,
+     "wrong": 0.0231,
+     "abstain": 0.0643,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.719,
+     "wrong": 0.0355,
+     "abstain": 0.2455,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.1815,
+     "abstain": 0.8185,
+     "n": 2000
+    }
+   },
+   "1.0": {
+    "train_d1": {
+     "correct": 0.9801,
+     "wrong": 0.0196,
+     "abstain": 0.0003,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.9163,
+     "wrong": 0.0566,
+     "abstain": 0.0272,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.7534,
+     "wrong": 0.1049,
+     "abstain": 0.1417,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.5335,
+     "abstain": 0.4665,
+     "n": 2000
+    }
+   },
+   "1.2": {
+    "train_d1": {
+     "correct": 0.9801,
+     "wrong": 0.0199,
+     "abstain": 0.0,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.9171,
+     "wrong": 0.0821,
+     "abstain": 0.0008,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.764,
+     "wrong": 0.1638,
+     "abstain": 0.0722,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.883,
+     "abstain": 0.117,
+     "n": 2000
+    }
+   }
+  },
+  "basis_K48": {
+   "0.2": {
+    "train_d1": {
+     "correct": 0.7727,
+     "wrong": 0.0012,
+     "abstain": 0.226,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.5791,
+     "wrong": 0.0071,
+     "abstain": 0.4138,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.243,
+     "wrong": 0.0098,
+     "abstain": 0.7472,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.009,
+     "abstain": 0.991,
+     "n": 2000
+    }
+   },
+   "0.3": {
+    "train_d1": {
+     "correct": 0.9221,
+     "wrong": 0.0022,
+     "abstain": 0.0758,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.6862,
+     "wrong": 0.0173,
+     "abstain": 0.2965,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.3104,
+     "wrong": 0.025,
+     "abstain": 0.6645,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.0535,
+     "abstain": 0.9465,
+     "n": 2000
+    }
+   },
+   "0.4": {
+    "train_d1": {
+     "correct": 0.9578,
+     "wrong": 0.0037,
+     "abstain": 0.0385,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.7073,
+     "wrong": 0.0299,
+     "abstain": 0.2628,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.3409,
+     "wrong": 0.0502,
+     "abstain": 0.6089,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.145,
+     "abstain": 0.855,
+     "n": 2000
+    }
+   },
+   "0.5": {
+    "train_d1": {
+     "correct": 0.9696,
+     "wrong": 0.0037,
+     "abstain": 0.0267,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.7117,
+     "wrong": 0.0365,
+     "abstain": 0.2518,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.3502,
+     "wrong": 0.0625,
+     "abstain": 0.5873,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.222,
+     "abstain": 0.778,
+     "n": 2000
+    }
+   },
+   "0.6": {
+    "train_d1": {
+     "correct": 0.9708,
+     "wrong": 0.005,
+     "abstain": 0.0242,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.712,
+     "wrong": 0.0398,
+     "abstain": 0.2482,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.352,
+     "wrong": 0.0668,
+     "abstain": 0.5812,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.274,
+     "abstain": 0.726,
+     "n": 2000
+    }
+   },
+   "0.8": {
+    "train_d1": {
+     "correct": 0.9745,
+     "wrong": 0.0242,
+     "abstain": 0.0012,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.7125,
+     "wrong": 0.0643,
+     "abstain": 0.2232,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.3559,
+     "wrong": 0.089,
+     "abstain": 0.5551,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.4045,
+     "abstain": 0.5955,
+     "n": 2000
+    }
+   },
+   "1.0": {
+    "train_d1": {
+     "correct": 0.9745,
+     "wrong": 0.0255,
+     "abstain": 0.0,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.7139,
+     "wrong": 0.1521,
+     "abstain": 0.134,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.3692,
+     "wrong": 0.2091,
+     "abstain": 0.4217,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.6195,
+     "abstain": 0.3805,
+     "n": 2000
+    }
+   },
+   "1.2": {
+    "train_d1": {
+     "correct": 0.9745,
+     "wrong": 0.0255,
+     "abstain": 0.0,
+     "n": 3221
+    },
+    "train_d2": {
+     "correct": 0.7153,
+     "wrong": 0.268,
+     "abstain": 0.0167,
+     "n": 3642
+    },
+    "train_d3": {
+     "correct": 0.3724,
+     "wrong": 0.2721,
+     "abstain": 0.3554,
+     "n": 6111
+    },
+    "unans_trained": {
+     "correct": 0.0,
+     "wrong": 0.8545,
+     "abstain": 0.1455,
+     "n": 2000
+    }
+   }
+  }
+ },
+ "at_own_threshold": {
+  "raw_1024d": {
+   "train_d1": {
+    "correct": 0.9708,
+    "wrong": 0.0003,
+    "abstain": 0.0289,
+    "n": 3221
+   },
+   "train_d2": {
+    "correct": 0.9066,
+    "wrong": 0.0044,
+    "abstain": 0.089,
+    "n": 3642
+   },
+   "train_d3": {
+    "correct": 0.709,
+    "wrong": 0.0257,
+    "abstain": 0.2653,
+    "n": 6111
+   },
+   "unans_trained": {
+    "correct": 0.0,
+    "wrong": 0.051,
+    "abstain": 0.949,
+    "n": 2000
+   },
+   "eval_d1_inst": {
+    "correct": 0.9553,
+    "wrong": 0.0,
+    "abstain": 0.0447,
+    "n": 827
+   },
+   "eval_d2_inst": {
+    "correct": 0.8839,
+    "wrong": 0.0034,
+    "abstain": 0.1126,
+    "n": 870
+   },
+   "eval_d1_novel1": {
+    "correct": 0.0054,
+    "wrong": 0.1531,
+    "abstain": 0.8415,
+    "n": 1476
+   },
+   "eval_d2_novel1": {
+    "correct": 0.0039,
+    "wrong": 0.1546,
+    "abstain": 0.8415,
+    "n": 2031
+   },
+   "unans_novel": {
+    "correct": 0.0,
+    "wrong": 0.0585,
+    "abstain": 0.9415,
+    "n": 2000
+   }
+  },
+  "basis_K48": {
+   "train_d1": {
+    "correct": 0.9708,
+    "wrong": 0.005,
+    "abstain": 0.0242,
+    "n": 3221
+   },
+   "train_d2": {
+    "correct": 0.712,
+    "wrong": 0.0398,
+    "abstain": 0.2482,
+    "n": 3642
+   },
+   "train_d3": {
+    "correct": 0.352,
+    "wrong": 0.0668,
+    "abstain": 0.5812,
+    "n": 6111
+   },
+   "unans_trained": {
+    "correct": 0.0,
+    "wrong": 0.274,
+    "abstain": 0.726,
+    "n": 2000
+   },
+   "eval_d1_inst": {
+    "correct": 0.9504,
+    "wrong": 0.006,
+    "abstain": 0.0435,
+    "n": 827
+   },
+   "eval_d2_inst": {
+    "correct": 0.7,
+    "wrong": 0.0391,
+    "abstain": 0.2609,
+    "n": 870
+   },
+   "eval_d1_novel1": {
+    "correct": 0.7419,
+    "wrong": 0.1667,
+    "abstain": 0.0915,
+    "n": 1476
+   },
+   "eval_d2_novel1": {
+    "correct": 0.6913,
+    "wrong": 0.1694,
+    "abstain": 0.1393,
+    "n": 2031
+   },
+   "unans_novel": {
+    "correct": 0.0,
+    "wrong": 0.37,
+    "abstain": 0.63,
+    "n": 2000
+   }
+  }
+ },
+ "matched_coverage": {
+  "raw_coverage": 0.9392,
+  "basis_threshold": 1.0,
+  "basis_coverage": 0.9289,
+  "results": {
+   "train_d1": {
+    "correct": 0.9745,
+    "wrong": 0.0255,
+    "abstain": 0.0,
+    "n": 3221
+   },
+   "train_d2": {
+    "correct": 0.7139,
+    "wrong": 0.1521,
+    "abstain": 0.134,
+    "n": 3642
+   },
+   "train_d3": {
+    "correct": 0.3692,
+    "wrong": 0.2091,
+    "abstain": 0.4217,
+    "n": 6111
+   },
+   "unans_trained": {
+    "correct": 0.0,
+    "wrong": 0.6195,
+    "abstain": 0.3805,
+    "n": 2000
+   },
+   "eval_d1_inst": {
+    "correct": 0.9589,
+    "wrong": 0.0411,
+    "abstain": 0.0,
+    "n": 827
+   },
+   "eval_d2_inst": {
+    "correct": 0.7046,
+    "wrong": 0.1644,
+    "abstain": 0.131,
+    "n": 870
+   },
+   "eval_d1_novel1": {
+    "correct": 0.7846,
+    "wrong": 0.2046,
+    "abstain": 0.0108,
+    "n": 1476
+   },
+   "eval_d2_novel1": {
+    "correct": 0.7061,
+    "wrong": 0.2477,
+    "abstain": 0.0463,
+    "n": 2031
+   },
+   "unans_novel": {
+    "correct": 0.0,
+    "wrong": 0.7645,
+    "abstain": 0.2355,
+    "n": 2000
+   }
+  }
+ },
+ "deltas_at_matched_coverage": {
+  "train_d1": 0.0037,
+  "train_d2": -0.1927,
+  "train_d3": -0.3398,
+  "unans_trained": -0.5685,
+  "eval_d1_inst": 0.0036,
+  "eval_d2_inst": -0.1793,
+  "eval_d1_novel1": 0.7792,
+  "eval_d2_novel1": 0.7022,
+  "unans_novel": -0.706
+ },
+ "summary_at_matched_coverage": {
+  "novel_answering_correct": 0.7407,
+  "novel_answering_wrong": 0.0723,
+  "novel_refusal_abstain": -0.706,
+  "known_answering_correct": -0.1409,
+  "known_answering_wrong": 0.1117,
+  "known_refusal_abstain": -0.5685,
+  "populations": {
+   "novel_answerable": [
+    "eval_d1_novel1",
+    "eval_d2_novel1"
+   ],
+   "novel_unanswerable": [
+    "unans_novel"
+   ],
+   "known_answerable": [
+    "train_d1",
+    "train_d2",
+    "train_d3",
+    "eval_d1_inst",
+    "eval_d2_inst"
+   ],
+   "known_unanswerable": [
+    "unans_trained"
+   ]
+  }
+ },
+ "verdict": "TRADE-OFF CONFIRMED BUT MISLOCATED \u2014 the basis gains +0.7407 on novel-relation answering at a wrongness cost of +0.0723 there, only 10% of the gain. The price is paid elsewhere: novel-relation refusal -0.7060, known-relation answering -0.1409, known-relation refusal -0.5685. Compression does not blunt the answers it enables; it blunts REFUSAL and degrades what was already working.",
+ "scope": "Changes exactly ONE thing against exp31: both representations are tuned by the same rule on the same TRAINED-only populations (law #6), where exp31 ran its raw arm at an inherited THR=0.8 and swept only the basis arm to 0.6. Same store, chains, populations, head architecture, seed and grid; exp31's embedding cache is reused under a content assert, so the questions are provably identical. Claim 7's scope previously said these were three different corpora \u2014 exp31, exp32 and exp34 all read the same table, so the confound was always tuning rather than corpus (D156). Reported at each arm's own threshold AND at matched coverage, because comparing two representations at two operating points is the defect this experiment exists to remove. The phrasing axis of the original claim is NOT covered here: it needs exp34's alias populations, which are a different question set."
+}

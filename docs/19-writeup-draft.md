@@ -328,6 +328,31 @@ many different ways, so extra aliases bring confusability along with signal.
 **"Collect more aliases" is not a uniform lever**: it works hardest on the
 relations that need it least.
 
+**Compression's cost is refusal, not the answers it enables.** We had written
+that a frozen low-dimensional basis buys generalisation and pays for it in
+precision, fitted across three experiments — which we described as three
+corpora until we checked and found they were one store under three separately
+derived thresholds. Tuning both representations by the same rule (D159):
+
+| on novel relations, same threshold | correct | wrong | abstain |
+|---|---|---|---|
+| raw 1024-d | 0.005 | 0.153 | **0.842** |
+| basis K=48 | **0.742** | 0.167 | 0.092 |
+
+Raw's 0.005 is not raw getting novel relations wrong — **it is raw refusing
+them**. Compression converts those refusals into correct answers while the
+wrong-rate barely moves. At matched coverage the gain is **+0.741 correct for
++0.072 wrong**, a tenth of the gain. The real costs land elsewhere: refusal on
+unanswerable novel questions falls **0.706** (the basis answers 37% of them
+against raw's 6%), refusal on known unanswerables falls 0.569, and
+known-relation answering falls 0.141 at nine times the wrong-rate.
+
+So the axis was pointing at the wrong quantity. **A frozen basis makes a novel
+relation answerable and makes the system less able to tell when it should not
+answer at all** — which is a more useful thing to know, and follows from the
+same numbers, once answerable and unanswerable populations are not averaged
+together.
+
 The full picture across three axes still reverses the original
 recommendation:
 
@@ -360,10 +385,10 @@ listed as untested. A second *corpus* was not tested (D149).
   at a vocabulary where enumeration is expensive (§1).
 - **Not a demonstrated mechanism for the density bound.** Branching and
   confusability covary in everything we measured (§5).
-- **Not one corpus's compression trade-off generalised.** The
-  compression-buys-generalisation pattern is fitted across three experiments
-  on the *same* store under three separately derived thresholds, and no single
-  experiment tests both halves (§7).
+- **Not the compression trade-off as we first stated it.** Two of its three
+  legs now hold under one threshold protocol, but the cost is refusal rather
+  than the accuracy of what compression enables (§5b). The phrasing leg is
+  still uncontrolled.
 
 ## 7. Negative results and corrections
 
@@ -389,6 +414,11 @@ conditions above are real rather than decorative.
   curve was run to eighteen and plateaued at 0.09 (D148 → D155). This one
   reversed twice, and the second reversal came from an adversarial rater's
   falsifier rather than from us.
+- *"Compression buys generalisation and costs precision"* — the trade-off is
+  real and was **mislocated**. Under one threshold protocol the wrongness cost
+  on the population compression helps is a tenth of the gain; what it actually
+  costs is refusal (D125/D126 → D159). The scope also claimed three corpora
+  where there was one store.
 - *"Order and depth must come from the store rather than from a planner"* —
   the store half is confirmed overwhelmingly, the planner half is refuted: an
   exhaustive planner that consults the store matches the walker (D117 →

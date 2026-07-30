@@ -2,6 +2,43 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D159: Compression's trade-off is real and MISLOCATED — it does not blunt the answers it enables, it blunts REFUSAL
+
+`scripts/exp53_compression_controlled.py`. The third of D154's falsifiers, unanimous: *"a representation could improve generalisation without sacrificing precision on a controlled common corpus; the cross-experiment pattern does not rule that out."*
+
+D156 had already found the scope was wrong about the setup — `exp31`, `exp32` and `exp34` all read the same store, so the confound was never "different corpora". It was **different thresholds**, and inside `exp31` alone: the raw arm runs at an inherited THR=0.8 while the basis arm sweeps and selects 0.6. This run changes exactly one thing — both arms tuned by the same rule on the same trained-only populations — and reuses `exp31`'s embedding cache under a content assert so the questions are provably identical.
+
+**At the same threshold (both arms select 0.6), on novel relations:**
+
+| | correct | wrong | abstain |
+|---|---|---|---|
+| raw 1024-d | 0.0054 | 0.1531 | **0.8415** |
+| basis K=48 | **0.7419** | 0.1667 | 0.0915 |
+
+**Raw's 0.005 is not raw getting novel relations wrong; it is raw refusing them.** It abstains on 84% and its wrong-rate is 0.153. The basis abstains on 9% at a wrong-rate of 0.167. Compression converts refusals into correct answers at a wrong-rate that barely moves — **+0.0136 wrongness for +0.7365 correctness**.
+
+**At matched coverage, four quantities, never averaged across the answerable/unanswerable boundary:**
+
+| | correct | wrong |
+|---|---|---|
+| novel-relation **answering** | **+0.7407** | +0.0723 |
+| known-relation **answering** | −0.1409 | +0.1117 |
+
+| | abstain |
+|---|---|
+| novel-relation **refusal** | **−0.7060** |
+| known-relation **refusal** | **−0.5685** |
+
+**The claim survives, and it has been pointing at the wrong thing.** "Compression buys generalisation and costs precision" is true in outline, but the precision it costs is **not** the accuracy of the answers it unlocks — that cost is 10% of the gain. The costs that matter are **refusal collapsing** (−0.71 on novel unanswerables, −0.57 on known ones: the basis answers 37% of genuinely unanswerable novel questions against raw's 6%) and **known relations degrading** (−0.14 correct at 9× the wrong-rate). Restated: *a frozen low-dimensional basis makes a novel relation answerable and makes the system less able to tell when it should not answer at all.* That is a sharper claim, it is more useful to a deployment, and it follows from the same numbers the axis was fitted to — nobody had separated them.
+
+**Two defects in my own summary statistics, both caught before they reached a conclusion, and both the same shape as the ones the raters have been finding.**
+
+*I violated audit law #7 inside the statistic testing a precision claim.* The first summary took one mean over three "generalisation" populations — two answerable and one unanswerable — producing "+0.2585 generalisation, +0.1117 wrongness" and the verdict "TRADE-OFF CONFIRMED". That number averaged a +0.78 accuracy gain with a −0.71 refusal loss into a single figure that describes neither. **Law #7 exists in this project and I broke it in the summary of an experiment about precision.** A law you can quote and still violate is a law that needs a check, not a reminder.
+
+*And the verdict test fired on a technicality.* It called the trade-off "as stated" because the wrongness cost cleared an absolute 0.02 bar — against a correctness gain of 0.74. "Costs precision" has to mean the cost is **commensurate** with the gain, so the test is now a ratio; at 9.8% it reports mislocated. This is exp52's branch-ordering failure a second time in one session: **a threshold chosen without reference to the effect size will report the least informative true statement available.**
+
+**Revisit**: (a) the phrasing axis is untested here — it needs exp34's alias populations, which are a different question set, and the claim still rests on three legs of which two are now controlled; (b) the refusal collapse suggests the answer-type gate (D134) may recover it, since the gate is orthogonal to the residual threshold and was never run on the basis arm — that is a cheap experiment with a real chance of removing the main cost; (c) known-relation degradation at depth (−0.34 at d3) is consistent with D126 and now measured under matched tuning for the first time.
+
 ## 2026-07-30 — D158: The store is doing the work; the WALKING is not. Claim 3 refuted as stated, and the pasted baseline had understated the alternative by 0.28
 
 `scripts/exp52_planner_baseline.py`. The falsifier all three adversarial raters named unanimously, run against the project's most load-bearing architectural claim — *"order and depth come from the store, not from the model"*.
