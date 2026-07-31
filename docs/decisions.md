@@ -2,6 +2,37 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D173: The depth-2 gate cost was two-thirds my own bug — and I was one turn from building an experiment on it
+
+Correction to D172, found before acting on it. D172 reported that the answer-type gate costs **−0.2433** on M3's depth-2 answering and called it a live defect in the shipped pipeline, larger than anything the encoder arc was chasing. I then proposed a depth-aware gate as the next experiment, and the user agreed.
+
+Before designing it I re-read D134 to understand *why* a range check should hurt at depth 2. Its docstring specifies:
+
+    r_asked = argmax_r ( (target - sum of coordinates already walked) · RC[r] )
+
+and its implementation subtracts every hop but the last, so `want ≈ C[r_final]` — the relation actually asked about. **I had written `argmax_r (target · C[r])` with nothing subtracted.** At depth 2 the target is `C[r1] + C[r2]`, so the argmax recovers neither hop and the gate compares returned objects against the range of a relation nobody asked for. Corrected in `exp62` and `exp63`:
+
+| depth-2 gate cost | buggy | canonical | recovered |
+|---|---|---|---|
+| M3 | −0.2433 | **−0.0825** | +0.1608 |
+| Gemma | −0.3000 | **−0.0775** | +0.2225 |
+
+**Two-thirds of the "defect in the shipped system" was mine.** The real cost is −0.083, bought for +0.3217 of not-applicable refusal — a trade that looks reasonable rather than alarming, and the depth-aware-gate experiment is accordingly much less compelling. **That recommendation is withdrawn.**
+
+**What survives the fix, checked rather than assumed:**
+
+- **D172's conclusion stands.** With the canonical gate M3 still wins every axis; Gemma's depth-2 deficit narrows from −0.1734 to −0.1117 but the sign and the sweep are unchanged. The swap remains declined.
+- **D171's finding stands.** At matched refusal on chain-break the gate is still harmful — M3 −0.185 against the buggy −0.187. That null was about the population, not the implementation.
+- **The calibration result is untouched** (0.4 for M3, 0.7 for Gemma), since thresholds do not depend on `r_asked`.
+
+**The internal check that shows the fix is right.** Every depth-1 and every refusal number is **bit-identical** before and after — because at depth 1 `path[:-1]` is empty, `consumed` is zero, and the two forms coincide exactly. A fix that moved depth-1 would have been the wrong fix, and this is the cheapest possible way to tell.
+
+**The failure mode is worth naming precisely**: I reimplemented a mechanism from its *description* rather than from its *code*, and the description was correct. The docstring said "target minus coordinates already walked" and I wrote the target. Two prior entries in this session were about claims outrunning evidence; this is an implementation outrunning a spec that was sitting three lines above it.
+
+**What actually caught it** was not a test or a reviewer. It was pausing to understand the mechanism before optimising it — asking *why* a range check should hurt at depth 2 rather than accepting that it did. The number was plausible, the story was coherent, and one more turn would have produced an experiment measuring my own bug. **A defect you are about to build on deserves the same verification as an adjudicator's flag** (D98), and that habit has no equivalent here for numbers I generate myself.
+
+**Revisit**: (a) `exp50` uses the same raw-target form and is unfixed — its entity-generalisation numbers are depth-1-dominated so the effect should be small, but "should be" is not "measured"; (b) the −0.083 residual cost is real and modest, and worth revisiting only if depth-2 coverage becomes load-bearing; (c) no test would have caught this, because both forms produce plausible numbers — the only guard is reading the reference implementation, which is now what D174-onwards should do before reimplementing anything.
+
 ## 2026-07-30 — D172: The gate reproduces on both encoders, M3 dominates every axis, and the swap is DECLINED
 
 `scripts/exp63_mixed_gate.py`. D134's mixed benchmark rebuilt exactly — three kinds of unanswerable, never averaged (law #9), with `absent_entity` subjects taken from the real arXiv component rather than fabricated. Type threshold calibrated **per encoder** on half the not-applicable population plus trained answerable, evaluated on the other half, which is D134's own rule.
@@ -21,13 +52,13 @@ Format: date · decision · rationale · revisit-when.
 | chain_break refusal | −0.0650 |
 | absent_entity refusal | 0.0000 |
 | depth-1 answering | −0.0534 |
-| depth-2 answering | **−0.1734** |
+| depth-2 answering | **−0.1734** *(−0.1117 after D173's fix; sign and conclusion unchanged)* |
 
 Not a trade — a dominance. **The swap is declined.**
 
 **The arc closes cleanly and the shape is worth keeping.** EmbeddingGemma's advantage was 53× on raw-label novel-relation transfer at identification level (D164). It did not survive the store (D169, where the basis recommendation inverted outright), did not survive the refusal frontier (D170, where the curves crossed at ≈0.52), and does not survive the gate (here). **Three gates, three failures to carry.** An identification-level measurement in this system is a statement about a component, not about the system.
 
-**A cost of the CURRENT pipeline, found incidentally and larger than anything this arc was chasing.** The gate costs **−0.2433** on M3's depth-2 answering and **−0.3000** on Gemma's, against its +0.32/+0.41 gain on not-applicable refusal. D134 reported the depth-1 cost (correct falls 0.110, total answered 0.183) and the depth-2 *wrongness* change (0.175 → 0.102) — but never depth-2 **correct**. So the gate has been quietly removing roughly a quarter of correct two-hop answers in the shipped configuration, and nobody had measured it because the reported number was the one that flattered it. That is audit law #7's shape one level down: not answerable-vs-unanswerable averaged, but one depth reported and another not.
+**A cost of the CURRENT pipeline, found incidentally. [CORRECTED at D173 — the figures below were inflated ~3× by a bug of mine in how `r_asked` was computed; the real costs are −0.0825 (M3) and −0.0775 (Gemma), and the "larger than anything this arc was chasing" framing is withdrawn.]** The gate costs ~~−0.2433~~ on M3's depth-2 answering and ~~−0.3000~~ on Gemma's, against its +0.32/+0.41 gain on not-applicable refusal. D134 reported the depth-1 cost (correct falls 0.110, total answered 0.183) and the depth-2 *wrongness* change (0.175 → 0.102) — but never depth-2 **correct**. So the gate has been quietly removing roughly a quarter of correct two-hop answers in the shipped configuration, and nobody had measured it because the reported number was the one that flattered it. That is audit law #7's shape one level down: not answerable-vs-unanswerable averaged, but one depth reported and another not.
 
 **An apparent contradiction with D171 that is not one.** Here `chain_break` refusal *improves* with the gate (+0.0867 M3, +0.1417 Gemma), while D171 found the gate harmful on chain-break. Both are true and the framings differ: the gate can only ever *add* refusals, so at a fixed threshold its refusal rate must rise; D171 asked whether that gain is worth its answering cost **at matched refusal**, and there it is not. The matched-refusal framing is the fairer one and the fixed-threshold number should not be quoted alone.
 

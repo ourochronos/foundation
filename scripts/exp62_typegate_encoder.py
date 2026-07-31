@@ -280,8 +280,16 @@ for arm in ("m3", "gemma"):
                                                             np.float32))))
             refuse = (not path) or (not frontier) or rn > thr
             if not refuse and gate and frontier:
-                # relation the TARGET asked for, not the one walked (D134)
-                r_ask = max(CENT, key=lambda r: float(tgt[j] @ C[r]))
+                # D134's canonical form: subtract hops ALREADY walked so
+                # `want` is the FINAL relation's coordinate. The first
+                # version used the raw target, which at depth 2 is argmax
+                # over C[r1]+C[r2] and recovers neither hop (D173).
+                consumed = (sum((C[r] for r in path[:-1]),
+                                np.zeros(K_BASIS, np.float32))
+                            if len(path) > 1
+                            else np.zeros(K_BASIS, np.float32))
+                r_ask = max(CENT,
+                            key=lambda r: float((tgt[j] - consumed) @ C[r]))
                 ids = [OI[o] for o in sorted(frontier) if o in OI]
                 if ids:
                     tf = float(np.mean(Zo[ids] @ CENT[r_ask]))

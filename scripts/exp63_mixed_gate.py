@@ -261,7 +261,19 @@ for arm in ("m3", "gemma"):
                                                             np.float32))))
             tf = 1.0
             if frontier:
-                r_ask = max(CENT, key=lambda r: float(tgt[j] @ C[r]))
+                # D134's canonical form: subtract every hop ALREADY walked so
+                # `want` is the FINAL relation's coordinate, then read r_asked
+                # off that. The first version of this used the raw target,
+                # which at depth 2 is argmax over C[r1] + C[r2] and recovers
+                # neither hop — and that alone produced an apparent -0.243
+                # depth-2 cost that was reported as a defect in the shipped
+                # gate (D172, corrected at D173).
+                consumed = (sum((C[r] for r in path[:-1]),
+                                np.zeros(K_BASIS, np.float32))
+                            if len(path) > 1
+                            else np.zeros(K_BASIS, np.float32))
+                want = tgt[j] - consumed
+                r_ask = max(CENT, key=lambda r: float(want @ C[r]))
                 ids = [OI[o] for o in sorted(frontier) if o in OI]
                 if ids:
                     tf = float(np.mean(Zo[ids] @ CENT[r_ask]))

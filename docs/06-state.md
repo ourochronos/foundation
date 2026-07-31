@@ -205,13 +205,16 @@ carry.** The pipeline stays on BGE-M3 + `whiten_v0` at 1024-d with
 `K_BASIS=48` k-means-on-labels — now a *confirmed* configuration rather than a
 default nobody had challenged.
 
-**The live defect this arc turned up is in the CURRENT pipeline**, and it is
-bigger than what the arc was chasing: the answer-type gate costs **−0.243** on
-M3's depth-2 answering (−0.300 on Gemma's). D134 reported the depth-1 cost and
-the depth-2 *wrongness* change but never depth-2 **correct**, so the shipped
-configuration has been removing roughly a quarter of correct two-hop answers
-unmeasured. A depth-aware or per-depth-calibrated gate is the obvious
-candidate and is unrun.
+**The depth-2 gate cost was mostly my bug (D173).** D172 reported the gate
+costing −0.243 on M3's depth-2 answering and called it a live defect; before
+building the follow-up I re-read D134 and found I had computed `r_asked` from
+the raw target instead of `target − coordinates already walked`. At depth 2
+that is argmax over `C[r1]+C[r2]`, recovering neither hop. Corrected, the cost
+is **−0.083** (M3) and −0.078 (Gemma) — real but modest, bought for +0.322 of
+not-applicable refusal. The depth-aware-gate proposal is **withdrawn**.
+D172's swap-declined conclusion and D171's chain-break null both survive the
+fix unchanged, and every depth-1 and refusal number is bit-identical before and
+after, which is the check that the fix was surgical.
 
 If the swap ever proceeds, in order:
 

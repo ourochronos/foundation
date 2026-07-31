@@ -1,7 +1,7 @@
 {
  "manifest": {
-  "generated_at": "2026-07-30T23:27:33.376267+00:00",
-  "commit": "3e245591b297847c65da7a9309e003b026981a6b",
+  "generated_at": "2026-07-31T08:48:55.219935+00:00",
+  "commit": "29bb1e03ca48bd5390ed409b181527335fb2e8d2",
   "dirty": true,
   "command": "scripts/exp62_typegate_encoder.py",
   "seed": 0,
@@ -148,91 +148,91 @@
     "thr": 0.2,
     "novel_correct": 0.0678,
     "novel_wrong": 0.0169,
-    "unans_novel_refuse": 0.9885,
+    "unans_novel_refuse": 0.9875,
     "train_d1_correct": 0.6048
    },
    {
     "thr": 0.3,
     "novel_correct": 0.1775,
     "novel_wrong": 0.0684,
-    "unans_novel_refuse": 0.955,
+    "unans_novel_refuse": 0.9555,
     "train_d1_correct": 0.7224
    },
    {
     "thr": 0.4,
     "novel_correct": 0.2974,
     "novel_wrong": 0.0949,
-    "unans_novel_refuse": 0.9035,
+    "unans_novel_refuse": 0.916,
     "train_d1_correct": 0.7507
    },
    {
     "thr": 0.5,
     "novel_correct": 0.4106,
     "novel_wrong": 0.1016,
-    "unans_novel_refuse": 0.86,
+    "unans_novel_refuse": 0.878,
     "train_d1_correct": 0.7581
    },
    {
     "thr": 0.6,
     "novel_correct": 0.4627,
-    "novel_wrong": 0.1077,
-    "unans_novel_refuse": 0.8165,
+    "novel_wrong": 0.1064,
+    "unans_novel_refuse": 0.837,
     "train_d1_correct": 0.7588
    },
    {
     "thr": 0.7,
-    "novel_correct": 0.4831,
-    "novel_wrong": 0.1159,
-    "unans_novel_refuse": 0.7665,
+    "novel_correct": 0.4817,
+    "novel_wrong": 0.1118,
+    "unans_novel_refuse": 0.7885,
     "train_d1_correct": 0.7613
    },
    {
     "thr": 0.8,
-    "novel_correct": 0.4892,
-    "novel_wrong": 0.1226,
-    "unans_novel_refuse": 0.711,
+    "novel_correct": 0.4878,
+    "novel_wrong": 0.1152,
+    "unans_novel_refuse": 0.733,
     "train_d1_correct": 0.7619
    },
    {
     "thr": 0.9,
-    "novel_correct": 0.4892,
-    "novel_wrong": 0.1233,
-    "unans_novel_refuse": 0.6725,
+    "novel_correct": 0.4878,
+    "novel_wrong": 0.1159,
+    "unans_novel_refuse": 0.6945,
     "train_d1_correct": 0.7619
    },
    {
     "thr": 1.0,
-    "novel_correct": 0.4898,
-    "novel_wrong": 0.1233,
-    "unans_novel_refuse": 0.63,
+    "novel_correct": 0.4885,
+    "novel_wrong": 0.1159,
+    "unans_novel_refuse": 0.6525,
     "train_d1_correct": 0.7619
    },
    {
     "thr": 1.2,
-    "novel_correct": 0.4905,
-    "novel_wrong": 0.1233,
-    "unans_novel_refuse": 0.5705,
+    "novel_correct": 0.4892,
+    "novel_wrong": 0.1159,
+    "unans_novel_refuse": 0.593,
     "train_d1_correct": 0.7619
    },
    {
     "thr": 1.4,
-    "novel_correct": 0.4905,
-    "novel_wrong": 0.1233,
-    "unans_novel_refuse": 0.544,
+    "novel_correct": 0.4892,
+    "novel_wrong": 0.1159,
+    "unans_novel_refuse": 0.5665,
     "train_d1_correct": 0.7619
    },
    {
     "thr": 1.6,
-    "novel_correct": 0.4905,
-    "novel_wrong": 0.1233,
-    "unans_novel_refuse": 0.5385,
+    "novel_correct": 0.4892,
+    "novel_wrong": 0.1159,
+    "unans_novel_refuse": 0.561,
     "train_d1_correct": 0.7619
    },
    {
     "thr": 2.0,
-    "novel_correct": 0.4905,
-    "novel_wrong": 0.1233,
-    "unans_novel_refuse": 0.535,
+    "novel_correct": 0.4892,
+    "novel_wrong": 0.1159,
+    "unans_novel_refuse": 0.5575,
     "train_d1_correct": 0.7619
    }
   ],
@@ -334,92 +334,92 @@
     "thr": 0.2,
     "novel_correct": 0.1924,
     "novel_wrong": 0.0007,
-    "unans_novel_refuse": 0.9515,
+    "unans_novel_refuse": 0.9625,
     "train_d1_correct": 0.5247
    },
    {
     "thr": 0.3,
     "novel_correct": 0.2859,
     "novel_wrong": 0.0014,
-    "unans_novel_refuse": 0.918,
+    "unans_novel_refuse": 0.934,
     "train_d1_correct": 0.6284
    },
    {
     "thr": 0.4,
     "novel_correct": 0.3787,
     "novel_wrong": 0.0034,
-    "unans_novel_refuse": 0.8875,
+    "unans_novel_refuse": 0.9065,
     "train_d1_correct": 0.6849
    },
    {
     "thr": 0.5,
     "novel_correct": 0.456,
     "novel_wrong": 0.0054,
-    "unans_novel_refuse": 0.8475,
+    "unans_novel_refuse": 0.8675,
     "train_d1_correct": 0.7103
    },
    {
     "thr": 0.6,
     "novel_correct": 0.5264,
-    "novel_wrong": 0.0264,
-    "unans_novel_refuse": 0.805,
+    "novel_wrong": 0.0271,
+    "unans_novel_refuse": 0.8255,
     "train_d1_correct": 0.7215
    },
    {
     "thr": 0.7,
     "novel_correct": 0.5671,
-    "novel_wrong": 0.0549,
-    "unans_novel_refuse": 0.7665,
+    "novel_wrong": 0.0556,
+    "unans_novel_refuse": 0.79,
     "train_d1_correct": 0.7277
    },
    {
     "thr": 0.8,
     "novel_correct": 0.5833,
-    "novel_wrong": 0.0705,
-    "unans_novel_refuse": 0.716,
-    "train_d1_correct": 0.7296
+    "novel_wrong": 0.0718,
+    "unans_novel_refuse": 0.7385,
+    "train_d1_correct": 0.729
    },
    {
     "thr": 0.9,
     "novel_correct": 0.584,
-    "novel_wrong": 0.0705,
-    "unans_novel_refuse": 0.685,
-    "train_d1_correct": 0.7296
+    "novel_wrong": 0.0718,
+    "unans_novel_refuse": 0.7075,
+    "train_d1_correct": 0.729
    },
    {
     "thr": 1.0,
     "novel_correct": 0.584,
-    "novel_wrong": 0.0705,
-    "unans_novel_refuse": 0.6465,
-    "train_d1_correct": 0.7302
+    "novel_wrong": 0.0718,
+    "unans_novel_refuse": 0.669,
+    "train_d1_correct": 0.7296
    },
    {
     "thr": 1.2,
     "novel_correct": 0.584,
-    "novel_wrong": 0.0705,
-    "unans_novel_refuse": 0.602,
-    "train_d1_correct": 0.7305
+    "novel_wrong": 0.0718,
+    "unans_novel_refuse": 0.6245,
+    "train_d1_correct": 0.7299
    },
    {
     "thr": 1.4,
     "novel_correct": 0.584,
-    "novel_wrong": 0.0705,
-    "unans_novel_refuse": 0.5895,
-    "train_d1_correct": 0.7305
+    "novel_wrong": 0.0718,
+    "unans_novel_refuse": 0.612,
+    "train_d1_correct": 0.7299
    },
    {
     "thr": 1.6,
     "novel_correct": 0.584,
-    "novel_wrong": 0.0705,
-    "unans_novel_refuse": 0.5795,
-    "train_d1_correct": 0.7305
+    "novel_wrong": 0.0718,
+    "unans_novel_refuse": 0.602,
+    "train_d1_correct": 0.7299
    },
    {
     "thr": 2.0,
     "novel_correct": 0.584,
-    "novel_wrong": 0.0705,
-    "unans_novel_refuse": 0.5765,
-    "train_d1_correct": 0.7305
+    "novel_wrong": 0.0718,
+    "unans_novel_refuse": 0.599,
+    "train_d1_correct": 0.7299
    }
   ]
  },
@@ -444,33 +444,33 @@
   },
   "0.6": {
    "m3_gateOFF": 0.75,
-   "m3_gateON": 0.4902,
+   "m3_gateON": 0.4891,
    "gemma_gateOFF": 0.6961,
    "gemma_gateON": 0.584
   },
   "0.7": {
    "m3_gateOFF": 0.6925,
-   "m3_gateON": 0.4892,
+   "m3_gateON": 0.4878,
    "gemma_gateOFF": 0.5893,
-   "gemma_gateON": 0.5837
+   "gemma_gateON": 0.584
   },
   "0.8": {
    "m3_gateOFF": 0.5669,
-   "m3_gateON": 0.4694,
+   "m3_gateON": 0.4772,
    "gemma_gateOFF": 0.4545,
-   "gemma_gateON": 0.5317
+   "gemma_gateON": 0.5556
   }
  },
  "gate_gain": {
-  "gate_gain_m3": -0.1869,
-  "gate_gain_gemma": -0.0135
+  "gate_gain_m3": -0.1851,
+  "gate_gain_gemma": -0.0054
  },
  "gemma_minus_m3_with_gate_strict": {
-  "0.6": 0.0938,
-  "0.7": 0.0945,
-  "0.8": 0.0623
+  "0.6": 0.0949,
+  "0.7": 0.0962,
+  "0.8": 0.0784
  },
- "verdict": "GATE RECOVERS IT \u2014 with the answer-type gate on both arms, Gemma now leads M3 by +0.0835 in the strict region where this system operates. The encoder swap is justified.",
+ "verdict": "GATE RECOVERS IT \u2014 with the answer-type gate on both arms, Gemma now leads M3 by +0.0898 in the strict region where this system operates. The encoder swap is justified.",
  "registered_prediction": "the gate lifts both encoders and helps Gemma more, since Gemma's failure is specifically answerable-vs-unanswerable and the gate attacks exactly that; but it does NOT close the strict-region gap entirely, which was -0.11 at 0.80 refusal in D170",
  "scope": "The deciding experiment for the encoder swap. Every run in D164-D170 used only the residual threshold; the answer-type gate (D134) is a separate mechanism and was absent from all of them. Range centroids are closed-form from the store for EVERY relation including held-out ones \u2014 a held-out relation is absent from training but its claims are in the store, so its centroid needs no retraining. The type threshold is the p25 of within-relation type fit over TRAINED relations only (D142's store-derived rule), recomputed per encoder because a cosine threshold no more transfers across encoders than a residual norm does (D125). Both arms use the same basis (kmeans_label K=48) since lda_between was refuted end-to-end at D169. Frontier reported as a curve; no operating point is selected from novel data."
 }
