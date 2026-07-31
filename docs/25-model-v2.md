@@ -13,15 +13,53 @@ address for different people; n-ary reification producing two addresses for one
 fact; commitments over syntactic addresses being unable to prove semantic
 agreement; claim acts never deduplicating.
 
-Six findings, one root cause. So the rule is stated once and every use is
-checked against it:
+Six findings, one root cause.
+
+> **[CORRECTED after the v2 panel.]** This unification is **too strong**, and
+> the correction matters more than the claim did. `local:`, n-ary role sets and
+> `claim_time` in act hashes are separate design errors that happen to touch
+> addressing. Worse, as one reviewer put it, treating them as one root cause is
+> *"what licensed the non-fix"* — believing the principle had been applied
+> everywhere is precisely why §1 shipped a fix that was never implemented and
+> why the event-identity problems below went unexamined. The rule that follows
+> is still a good rule. It was not a diagnosis, and using it as one caused real
+> damage. This was the exact risk flagged when the round was commissioned, and
+> it landed anyway.
+
+So the rule is stated once and every use is checked against it:
 
 > **A content address answers "are these the same bytes?". It can never answer
 > "are these the same claim?" or "are these about the same thing?".**
 
 Everything below follows from applying that consistently.
 
-## 1. `act_ref` and `prop_ref` — the v1 dilemma dissolved
+## 1. `act_ref` and `prop_ref` — **RETRACTED**, the dilemma is not dissolved
+
+> **[RETRACTED after the v2 panel — 4 of 4 reviewers, and verified against the
+> shipped code.]** This section claimed a fix that is not implemented and,
+> as encoded, is actively wrong. `proposition_key` runs the closure only over
+> **entity** refs, so a `prop_ref` is left as a raw address and a belief on
+> `prop_ref(Ha)` does **not** cover `Hb`. Worse, the encoding put the target in
+> an `about` qualifier, which `_tc` drops as unregistered — so beliefs about
+> **completely unrelated** propositions pool into one bucket, which corrupts
+> agreement rather than merely failing to improve it. The test written for this
+> section only checked that two sorts produce different hashes; it never
+> exercised the resolution that was the entire point.
+>
+> The reviewers are also right about the deeper claim. A content address cannot
+> be simultaneously commitment-grade and a name for a fibre that moves —
+> "putting the mutability in the reading" does not make `H(salt ‖ Ha)` a
+> commitment to the fibre of `Hb`. Semantic resolution at query time is
+> achievable and worth building; **cross-store proposition-level agreement
+> proofs are not available** without a real fibre id, which is a new Layer 0
+> kind and should not be minted until it is known to be needed. Commitments
+> target acts and assertions only.
+>
+> The `act_ref` / `prop_ref` split may still be right as a *typed intent* on
+> higher-order claims, but it is not a finished fix and this document should
+> not have said it was.
+
+### Original section, superseded
 
 v1's review put the problem crisply: *stable addresses cannot name mutable
 proposition keys; derived keys cannot be commitment targets.* v1 promised both.

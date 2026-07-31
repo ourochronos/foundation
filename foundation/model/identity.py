@@ -65,6 +65,7 @@ class Closure:
     policy: Policy = field(default_factory=Policy)
     _parent: dict[str, str] = field(default_factory=dict)
     _size: dict[str, int] = field(default_factory=dict)
+    _rep: dict[str, str] = field(default_factory=dict)
     _blocked: set[tuple[str, str]] = field(default_factory=set)
     _pending: dict[tuple[str, str], set[str]] = field(default_factory=dict)
     rejected: list[tuple[str, str, str]] = field(default_factory=list)
@@ -73,6 +74,7 @@ class Closure:
     def _find(self, x: str) -> str:
         self._parent.setdefault(x, x)
         self._size.setdefault(x, 1)
+        self._rep.setdefault(x, x)
         root = x
         while self._parent[root] != root:
             root = self._parent[root]
@@ -81,10 +83,16 @@ class Closure:
         return root
 
     def rep(self, ref: str) -> str:
-        """The class representative — deterministic, never insertion-ordered."""
-        root = self._find(ref)
-        return min((m for m in self._parent if self._find(m) == root),
-                   key=rank, default=ref)
+        """The class representative — deterministic, never insertion-ordered.
+
+        Maintained incrementally per root. The obvious implementation scans
+        every known ref on every call, and `proposition_key` calls this once
+        per claim: at 10^6 claims over 10^5 refs that is ~10^11 operations, so
+        the Python layer dies long before Postgres notices.
+        """
+        if ref not in self._parent:
+            return ref
+        return self._rep.get(self._find(ref), ref)
 
     def members(self, ref: str) -> set[str]:
         root = self._find(ref)
@@ -139,9 +147,33 @@ class Closure:
             return False
         if self._size[ra] < self._size[rb]:
             ra, rb = rb, ra
+        best = min(self._rep.get(ra, ra), self._rep.get(rb, rb), key=rank)
         self._parent[rb] = ra
         self._size[ra] += self._size[rb]
+        self._rep[ra] = best
         return True
+
+    def accept_all(self, edges) -> list[bool]:
+        """Apply a whole edge set in a DETERMINISTIC order. Use this to merge.
+
+        Incremental `accept()` is **not confluent** once a policy bites:
+        `max_class_size` and `require_agents` make the outcome depend on the
+        order edges arrive, so merging store A then B can accept a different
+        `sameAs` set than B then A — and different accepted sets give different
+        representatives, hence different proposition keys, hence **different
+        agreements and different conflicts from identical claim sets**.
+
+        That matters more than it sounds. The grow-only claim set is a genuine
+        CRDT, but everything the system is actually for — agreement,
+        contradiction, refusal — is computed above it in this layer, and this
+        layer was not confluent. Replaying a sorted edge set makes the closure
+        a function of the claims rather than of the sync history.
+
+        Sorting is by (a, b, agent) — content, never arrival — so two peers
+        with the same claims converge without exchanging anything else.
+        """
+        return [self.accept(a, b, agent)
+                for a, b, agent in sorted(edges)]
 
     def canonicalise(self, ref: str) -> str:
         """Map a ref to its representative; unknown refs are their own class."""

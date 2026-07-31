@@ -378,3 +378,39 @@ def test_unregistered_qualifier_cannot_evade_dispute():
     b = Claim("s.alice:x", "p", "entity", "s.alice:y", False, claimant="agent:B")
     found = conflicts([a, b], None)
     assert len(found) == 1 and found[0].kind == "polarity", found
+
+
+# --------------------------------------------- confluence (v2 panel, fable) --
+def test_incremental_accept_is_not_confluent():
+    """Documents the hazard rather than hiding it: once a policy bites, edge
+    ARRIVAL ORDER changes the closure — and therefore agreements and conflicts
+    computed from identical claim sets."""
+    edges = [("s.a:1", "s.a:2"), ("s.a:2", "s.a:3"), ("s.a:3", "s.a:4")]
+    p = Policy(max_class_size=3)
+    fwd, rev = Closure(p), Closure(p)
+    for x, y in edges:
+        fwd.accept(x, y, "agent:A")
+    for x, y in reversed(edges):
+        rev.accept(x, y, "agent:A")
+    assert fwd.members("s.a:1") != rev.members("s.a:1")
+
+
+def test_accept_all_is_confluent_under_a_biting_policy():
+    """The merge path: same edge SET, any arrival order, identical closure."""
+    edges = [("s.a:1", "s.a:2", "agent:A"), ("s.a:2", "s.a:3", "agent:A"),
+             ("s.a:3", "s.a:4", "agent:A")]
+    p = Policy(max_class_size=3)
+    a, b = Closure(p), Closure(p)
+    a.accept_all(edges)
+    b.accept_all(list(reversed(edges)))
+    assert a.members("s.a:1") == b.members("s.a:1")
+    assert a.rep("s.a:1") == b.rep("s.a:1")
+
+
+def test_representative_cache_matches_the_scanning_definition():
+    """rep() is now incremental; it must still be the rank-minimum member."""
+    cl = Closure()
+    cl.accept_all([("s.zed:9", "s.alpha:1", "agent:A"),
+                   ("s.alpha:1", "wikidata:Q7", "agent:A")])
+    members = cl.members("s.zed:9")
+    assert cl.rep("s.zed:9") == min(members, key=rank) == "wikidata:Q7"
