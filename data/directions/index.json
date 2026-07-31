@@ -1,0 +1,30 @@
+{
+ "gpt-5.6-sol": {
+  "ok": true,
+  "chars": 15674,
+  "seconds": 212.6,
+  "top_pick": "TOP-PICK: Build TrialLedger around immutable evidence assertions and executable typed queries, while",
+  "path": "data/directions/gpt-5.6-sol.md"
+ },
+ "gemini-3.1-pro-preview": {
+  "ok": true,
+  "chars": 3952,
+  "seconds": 25.5,
+  "top_pick": "TOP-PICK: Abandon vector arithmetic for graph traversal and build a reasoning engine that maps open text into a strictly finite, closed type-system using 1-NN, executing composition entirely via symbolic SQL traversals.",
+  "path": "data/directions/gemini-3.1-pro-preview.md"
+ },
+ "grok-4.5": {
+  "ok": true,
+  "chars": 10959,
+  "seconds": 86.8,
+  "top_pick": "TOP-PICK: Scrap relation-coordinate composition entirely and spend the next weeks on a closed relation catalog + append-only typed claims + store-native multi-hop, with the held-out label\u2192catalog routing kill test as the gate.",
+  "path": "data/directions/grok-4.5.md"
+ },
+ "claude-fable-5": {
+  "ok": true,
+  "chars": 6854,
+  "seconds": 71.2,
+  "top_pick": null,
+  "path": "data/directions/claude-fable-5.md"
+ }
+}
