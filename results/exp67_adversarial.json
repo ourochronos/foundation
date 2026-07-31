@@ -1,0 +1,101 @@
+{
+ "n_rows": 6000,
+ "distinct_triples": 5629,
+ "multi_page_triples": 89,
+ "propositions": 5614,
+ "corroborated": 89,
+ "agreement_hist": {
+  "1": 5525,
+  "2": 78,
+  "3": 10,
+  "4": 1
+ },
+ "baseline_conflicts": 77,
+ "regimes": {
+  "no breakers": [
+   {
+    "bad_links": 0,
+    "max_class": 1,
+    "conflicts": 77,
+    "rejected": 0
+   },
+   {
+    "bad_links": 25,
+    "max_class": 3,
+    "conflicts": 79,
+    "rejected": 0
+   },
+   {
+    "bad_links": 100,
+    "max_class": 3,
+    "conflicts": 80,
+    "rejected": 0
+   },
+   {
+    "bad_links": 400,
+    "max_class": 5,
+    "conflicts": 96,
+    "rejected": 0
+   }
+  ],
+  "max_class_size=64": [
+   {
+    "bad_links": 0,
+    "max_class": 1,
+    "conflicts": 77,
+    "rejected": 0
+   },
+   {
+    "bad_links": 25,
+    "max_class": 3,
+    "conflicts": 79,
+    "rejected": 0
+   },
+   {
+    "bad_links": 100,
+    "max_class": 3,
+    "conflicts": 80,
+    "rejected": 0
+   },
+   {
+    "bad_links": 400,
+    "max_class": 5,
+    "conflicts": 96,
+    "rejected": 0
+   }
+  ],
+  "require_agents=2": [
+   {
+    "bad_links": 0,
+    "max_class": 1,
+    "conflicts": 77,
+    "rejected": 0
+   },
+   {
+    "bad_links": 25,
+    "max_class": 1,
+    "conflicts": 77,
+    "rejected": 25
+   },
+   {
+    "bad_links": 100,
+    "max_class": 1,
+    "conflicts": 77,
+    "rejected": 100
+   },
+   {
+    "bad_links": 400,
+    "max_class": 1,
+    "conflicts": 77,
+    "rejected": 400
+   }
+  ]
+ },
+ "verdicts": [
+  "B1 NO SIGNAL: only 3 spurious conflicts at 100 bad links and 19 at 400 \u2014 too few to call a growth rate. A ratio computed here would be a divide-by-guard artifact, not a measurement, and that exact mistake has been made in this project three times.",
+  "B2 UNTESTABLE: the unbroken regime only reached 19 spurious conflicts, so there is nothing for a breaker to cut.",
+  "B3 CONFIRMED: require_agents=2 leaves 0 spurious conflicts from a single bad linker (predicted 0).",
+  "A1 REFUTED: 1.6% of triples appear on more than one page (predicted 5-15%)."
+ ],
+ "scope": "Walk A uses corroboration already present in the corpus - the same triple extracted from different Wikipedia pages is genuinely independent evidence - rather than synthesising it. Walk B injects random sameAs between unrelated entities and measures spurious functional conflicts against three policy regimes. Predictions were registered in the docstring before the run."
+}

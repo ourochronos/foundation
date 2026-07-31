@@ -240,6 +240,32 @@ class Conflict:
                 f"{self.left.object!r} vs {self.right.object!r}>")
 
 
+def _compatible_times(a: Claim, b: Claim) -> bool:
+    """Do two time objects state the SAME moment at different precisions?
+
+    Found by real data: 24 of 89 baseline conflicts on a real corpus were a
+    functional predicate seeing `1953` and `1953-04-11` as contradictory birth
+    dates. They are not. The coarser claim is refined by the finer one, and a
+    system that reports "Andrew Wiles's birth date is disputed" because one
+    source gave only the year has invented a disagreement.
+
+    The rule is the same asymmetry as everywhere else in this model: a coarser
+    statement is entailed by a finer one, so **two time values conflict only
+    when their intervals are DISJOINT**. Note this does not undo the
+    canonicaliser's refusal to zero-fill — refusing to *invent* day precision
+    and recognising that a year *contains* a day are different questions, and
+    the model needs both answers.
+    """
+    if a.object_sort != "time" or b.object_sort != "time":
+        return False
+    try:
+        ia = _interval(a.object.get("t"), a.object.get("p", "day"))
+        ib = _interval(b.object.get("t"), b.object.get("p", "day"))
+    except (CanonError, AttributeError, TypeError):
+        return False
+    return ia[0] < ib[1] and ib[0] < ia[1]
+
+
 def _existential(a: Claim, b: Claim):
     """Conflicts involving SOME / NONE.
 
@@ -321,7 +347,8 @@ def conflicts(claims, closure=None, functional=frozenset(),
                 elif same_obj and a.polarity != b.polarity:
                     out.append(Conflict("polarity", a, b))
                 elif (not same_obj and pred in functional
-                      and a.polarity and b.polarity):
+                      and a.polarity and b.polarity
+                      and not _compatible_times(a, b)):
                     out.append(Conflict("functional", a, b))
     if lattice is not None:
         out += _subsumption_conflicts(claims, closure, lattice)

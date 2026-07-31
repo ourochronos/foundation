@@ -63,6 +63,40 @@ _YMD = re.compile(r"^-?\d{3,4}-\d{2}-\d{2}$")
 _NUM = re.compile(r"^-?\d[\d,]*\.?\d*$")
 
 
+_MONTH = ("january february march april may june july august september "
+          "october november december").split()
+_DMY = re.compile(r"^(\d{1,2})[- ]([a-z]+)[- ](\d{3,4})$")
+_MDY = re.compile(r"^([a-z]+)[- ](\d{1,2}),?[- ](\d{3,4})$")
+
+
+def as_date(o: str):
+    """Recognise a date however it is written, BEFORE anything else looks at it.
+
+    Found by real data, and it is the worst kind of bug this model can have.
+    The store marks '10 December 1815' as an entity, so sort inference sent it
+    down the entity path; '1815-12-10' from another page became a *different*
+    entity; and `date_of_birth` being functional then reported the two as a
+    contradiction. Baseline run: **104 conflicts, all of them false**, asserting
+    that Ada Lovelace's, Turing's and Einstein's birthdays are disputed.
+
+    Note the asymmetry that makes this severe. A date misread as *text* only
+    fails to conflict — a silent miss. A date misread as an *entity*
+    manufactures a contradiction out of two spellings, and a system whose whole
+    purpose is surfacing disagreement cannot afford to invent it.
+    """
+    s = norm_text(o).lower()
+    for rx, order in ((_DMY, (3, 2, 1)), (_MDY, (3, 1, 2))):
+        m = rx.match(s)
+        if m and m.group(order[1]) in _MONTH:
+            y = m.group(order[0]).zfill(4)
+            mo = _MONTH.index(m.group(order[1])) + 1
+            return {"t": f"{y}-{mo:02d}-{int(m.group(order[2])):02d}", "p": "day"}
+    for rx, prec in ((_YMD, "day"), (_YM, "month"), (_YEAR, "year")):
+        if rx.match(s):
+            return {"t": s, "p": prec}
+    return None
+
+
 def infer_sort(row: dict):
     """Guess a sort from a bare string object. Deliberately fallible.
 
@@ -72,11 +106,11 @@ def infer_sort(row: dict):
     never conflict with the same date read as time, which is silent.
     """
     o = norm_text(row["object"])
+    d = as_date(o)                    # BEFORE the entity check — see as_date()
+    if d is not None:
+        return "time", d
     if row.get("obj_eid") not in (None, "None", ""):
         return "entity", o
-    for rx, prec in ((_YMD, "day"), (_YM, "month"), (_YEAR, "year")):
-        if rx.match(o):
-            return "time", {"t": o, "p": prec}
     if _NUM.match(o) and len(o) > 4:
         return "quantity", {"n": o.replace(",", ""), "u": None}
     return "text", o

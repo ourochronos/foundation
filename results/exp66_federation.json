@@ -1,22 +1,23 @@
 {
  "n_rows": 4000,
- "converted_per_store": 4000,
- "precision_drift": 1.0,
- "landmines": {},
- "claims_in": 8000,
- "propositions": 4056,
- "cross_store_propositions": 3670,
- "dedup_pct": 90.48,
+ "converted_per_store": 3999,
+ "precision_drift": 0.0,
+ "landmines": {
+  "canonicalise": 2
+ },
+ "claims_in": 7998,
+ "propositions": 3854,
+ "cross_store_propositions": 3854,
+ "dedup_pct": 100.0,
  "multi_source_propositions": 0,
  "agreement_hist": {
-  "1": 4056
+  "1": 3854
  },
  "conflicts": 0,
  "false_positive_conflicts": 0,
  "sort_mix": {
-  "time": 196,
-  "entity": 3580,
-  "text": 224
+  "time": 545,
+  "entity": 3454
  },
  "scope": "Both synthetic stores are built from ONE corpus, so any two claims descending from the same row are known to agree; a reported conflict between them is a measured false positive, not an argued one. Landmines append to results/landmines.jsonl so the messy-case corpus grows monotonically."
 }

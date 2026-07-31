@@ -414,3 +414,36 @@ def test_representative_cache_matches_the_scanning_definition():
                    ("s.alpha:1", "wikidata:Q7", "agent:A")])
     members = cl.members("s.zed:9")
     assert cl.rep("s.zed:9") == min(members, key=rank) == "wikidata:Q7"
+
+
+# ------------------------------- time precision (found by exp67, real data) --
+def test_coarser_and_finer_dates_do_not_conflict():
+    """`1953` and `1953-04-11` are the same birth date stated at different
+    precisions. Reporting them as disputed invents a disagreement — 24 of 89
+    baseline conflicts on the real corpus were exactly this."""
+    a = Claim("s.w:wiles", "P569", "time", {"t": "1953", "p": "year"},
+              claimant="agent:A")
+    b = Claim("s.w:wiles", "P569", "time", {"t": "1953-04-11", "p": "day"},
+              claimant="agent:B")
+    assert conflicts([a, b], None, frozenset({"P569"})) == []
+
+
+def test_genuinely_different_dates_still_conflict():
+    """The fix must not silence real disagreement."""
+    for x, y in ((("1953-04-11", "day"), ("1953-04-12", "day")),
+                 (("1953", "year"), ("1954", "year")),
+                 (("1765-08-30", "day"), ("476", "year"))):
+        a = Claim("s.w:x", "P569", "time", {"t": x[0], "p": x[1]},
+                  claimant="agent:A")
+        b = Claim("s.w:x", "P569", "time", {"t": y[0], "p": y[1]},
+                  claimant="agent:B")
+        assert len(conflicts([a, b], None, frozenset({"P569"}))) == 1, (x, y)
+
+
+def test_precision_tolerance_does_not_apply_across_sorts():
+    """A date read as an entity is not a time value and must not be quietly
+    reconciled with one — that would hide the ingestion bug rather than it."""
+    a = Claim("s.w:x", "P569", "time", {"t": "1953", "p": "year"},
+              claimant="agent:A")
+    b = Claim("s.w:x", "P569", "entity", "s.w:1953-ce", claimant="agent:B")
+    assert len(conflicts([a, b], None, frozenset({"P569"}))) == 1
