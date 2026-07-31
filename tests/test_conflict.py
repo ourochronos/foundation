@@ -55,7 +55,10 @@ def test_v1_agreement_pools_across_stores():
     cl.accept("s.alice:p1", "wikidata:Q152", "agent:A")
     cl.accept("s.bob:p9", "wikidata:Q152", "agent:B")
     ag = agreement(cs, cl)
-    assert len(ag) == 1 and next(iter(ag.values())) == {"agent:A", "agent:B"}
+    # `claimant:` prefixed because neither claim names evidence — the weakest
+    # honest reading, and distinguishable from a real document source.
+    assert len(ag) == 1
+    assert next(iter(ag.values())) == {"claimant:agent:A", "claimant:agent:B"}
 
 
 def test_conflict_disappears_when_identity_is_retracted():
@@ -213,4 +216,56 @@ def test_annotation_qualifiers_do_not_affect_the_proposition():
               qualifiers=(("extracted_by", "text", "parser_v2"),),
               claimant="agent:B")
     ag = agreement([a, b], None)
-    assert len(ag) == 1 and next(iter(ag.values())) == {"agent:A", "agent:B"}
+    assert len(ag) == 1
+    assert next(iter(ag.values())) == {"claimant:agent:A", "claimant:agent:B"}
+
+
+# ------------------------------------- agreement counts evidence, not claims --
+def test_derived_claims_do_not_inflate_agreement():
+    """Three agents each deriving one fact from ONE paper is one source, not
+    three. Otherwise federation's whole payoff is manufacturable locally."""
+    from foundation.model.conflict import Evidence
+    base = Claim("s.alice:x", "p", "text", "v", claimant="agent:A", hash="H0",
+                 evidence=(Evidence("span", "doi:10.1/abc"),))
+    derived = [Claim("s.alice:x", "p", "text", "v", claimant=f"agent:{n}",
+                     hash=f"H{i}", evidence=(Evidence("premise", premises=("H0",)),))
+               for i, n in enumerate("BCD", start=1)]
+    ag = agreement([base] + derived, None)
+    assert len(ag) == 1
+    assert next(iter(ag.values())) == {"span:doi:10.1/abc"}
+
+
+def test_two_real_documents_are_two_sources():
+    from foundation.model.conflict import Evidence
+    cs = [Claim("s.alice:x", "p", "text", "v", claimant="agent:A", hash="H1",
+                evidence=(Evidence("span", "doi:10.1/aaa"),)),
+          Claim("s.bob:x", "p", "text", "v", claimant="agent:B", hash="H2",
+                evidence=(Evidence("span", "doi:10.2/bbb"),))]
+    cl = Closure()
+    cl.accept("s.alice:x", "wikidata:Q1", "agent:A")
+    cl.accept("s.bob:x", "wikidata:Q1", "agent:B")
+    assert len(next(iter(agreement(cs, cl).values()))) == 2
+
+
+def test_same_document_via_two_agents_is_one_source():
+    from foundation.model.conflict import Evidence
+    cs = [Claim("s.alice:x", "p", "text", "v", claimant=a, hash=h,
+                evidence=(Evidence("span", "doi:10.1/same"),))
+          for a, h in (("agent:A", "H1"), ("agent:B", "H2"))]
+    assert next(iter(agreement(cs, None).values())) == {"span:doi:10.1/same"}
+
+
+def test_premise_cycle_terminates():
+    """A malformed or adversarial premise loop must not hang the fold."""
+    from foundation.model.conflict import Evidence
+    a = Claim("s.alice:x", "p", "text", "v", claimant="agent:A", hash="HA",
+              evidence=(Evidence("premise", premises=("HB",)),))
+    b = Claim("s.alice:x", "p", "text", "v", claimant="agent:B", hash="HB",
+              evidence=(Evidence("premise", premises=("HA",)),))
+    assert agreement([a, b], None) is not None
+
+
+def test_no_evidence_falls_back_to_claimant():
+    """Weakest honest reading: somebody asserted it and named no source."""
+    c = Claim("s.alice:x", "p", "text", "v", claimant="agent:A")
+    assert next(iter(agreement([c], None).values())) == {"claimant:agent:A"}

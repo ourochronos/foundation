@@ -106,6 +106,20 @@ def _tc(qualifiers) -> dict:
 
 
 @dataclass(frozen=True)
+class Evidence:
+    """Why a claimant holds a claim.
+
+    `span` quotes a document, `observation` records a direct channel, and
+    `premise` names the claims an inference was drawn from. A derived claim
+    has premise evidence and no source of its own, which is what §5 of
+    docs/24 turns on.
+    """
+    kind: str                       # 'span' | 'premise' | 'observation'
+    source: str = ""                # document id | channel
+    premises: tuple = ()            # claim hashes
+
+
+@dataclass(frozen=True)
 class Claim:
     """One assertion plus who claimed it. `hash` is over RAW refs (immutable)."""
     subject: str
@@ -116,6 +130,7 @@ class Claim:
     qualifiers: tuple = ()
     claimant: str = "local:me"
     hash: str = ""
+    evidence: tuple = ()
 
 
 def proposition_key(c: Claim, closure=None, *, with_polarity=True,
@@ -150,11 +165,50 @@ def proposition_key(c: Claim, closure=None, *, with_polarity=True,
                       separators=(",", ":"))
 
 
+def independent_sources(c: Claim, by_hash: dict, _seen=None) -> set[str]:
+    """The distinct EVIDENCE sources behind a claim, folding premises.
+
+    A derived claim contributes the sources of its premises, transitively —
+    never itself. Without this, agreement is manufacturable at zero cost: one
+    store deriving the same conclusion three ways, or three agents each
+    deriving it once, reports an agreement of 3 from a single underlying
+    document. Agreement is the entire epistemic payoff of federation, so a
+    local process that inflates it for free is not a small bug.
+
+    A claim with no evidence at all falls back to its claimant, which is the
+    weakest honest reading: somebody asserted it and named no source.
+    """
+    _seen = _seen if _seen is not None else set()
+    if c.hash and c.hash in _seen:
+        return set()                       # premise cycle; contributes nothing
+    if c.hash:
+        _seen.add(c.hash)
+    if not c.evidence:
+        return {f"claimant:{c.claimant}"}
+    out = set()
+    for e in c.evidence:
+        if e.kind in ("span", "observation"):
+            out.add(f"{e.kind}:{e.source}")
+        elif e.kind == "premise":
+            for h in e.premises:
+                p = by_hash.get(h)
+                if p is not None:
+                    out |= independent_sources(p, by_hash, _seen)
+    return out
+
+
 def agreement(claims, closure=None) -> dict[str, set[str]]:
-    """proposition key -> distinct claimants. Federation's epistemic payoff."""
+    """proposition key -> distinct INDEPENDENT SOURCES.
+
+    Counts evidence, not claims. Two agents who both derived a fact from the
+    same paper are one source, which is what "independent" was always supposed
+    to mean.
+    """
+    claims = list(claims)
+    by_hash = {c.hash: c for c in claims if c.hash}
     out = collections.defaultdict(set)
     for c in claims:
-        out[proposition_key(c, closure)].add(c.claimant)
+        out[proposition_key(c, closure)] |= independent_sources(c, by_hash)
     return dict(out)
 
 
