@@ -1,0 +1,34 @@
+{
+ "n_claims": 60,
+ "placed_on_axis": 0,
+ "n_axes": 9,
+ "views": {
+  "position": {
+   "claims": 60,
+   "propositions": 58,
+   "corroborated": 0,
+   "conflicts": 0,
+   "kinds": {}
+  },
+  "axis": {
+   "claims": 60,
+   "propositions": 58,
+   "corroborated": 0,
+   "conflicts": 0,
+   "kinds": {}
+  },
+  "none": {
+   "claims": 60,
+   "propositions": 58,
+   "corroborated": 0,
+   "conflicts": 0,
+   "kinds": {}
+  }
+ },
+ "verdicts": [
+  "A1 CONFIRMED: position-level corroboration = 0, matching all three prior corpora.",
+  "A2 REFUTED: axis-level corroboration = 0 \u2014 still none.",
+  "A3 REFUTED: axis conflicts 0 -> 0; corroboration and contradiction should rise together or the generalisation is loose rather than informative."
+ ],
+ "scope": "Frames come from the authored lattice in data/frames.json. The AXIS view generalises each claim's under_assumption UP to its axes, which is the safe direction - a claim held under social democracy is held under left economics, never the converse. A claim under several axes contributes one claim per axis, so the axis view has more claims than the position view by construction and proposition counts are not comparable across views; corroboration and conflict counts are."
+}

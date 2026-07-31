@@ -53,6 +53,14 @@ PREDICATES = {
     "refutes": "A shows B is false",
     "exists": "A is real (object is the mode/domain, e.g. 'mind-independently')",
     "is_kind_of": "A is a species of B",
+    # Directional-effect predicates, added for the political corpus. These come
+    # in OPPOSED pairs on purpose: exp72 measured that 83% of real disagreement
+    # is assertion of an incompatible relation rather than negation of one, so
+    # a vocabulary with no opposed pairs cannot express most of what it sees.
+    "increases": "A raises / worsens B",
+    "decreases": "A lowers / reduces B",
+    "protects": "A safeguards B",
+    "harms": "A damages B",
 }
 POS_RX = re.compile(
     r"\b(compatibilis\w*|hard determinis\w*|determinis\w*|physicalis\w*|dualis\w*|"
@@ -63,12 +71,18 @@ POS_RX = re.compile(
     r"rationalis\w*|positivis\w*|instrumentalis\w*|constructionis\w*|realis\w*|"
     r"keynesian\w*|austrian\w*|monetaris\w*|marxian|marxis\w*|neoclassical|"
     r"chicago school|post-keynesian|supply-side|mmt|modern monetary|"
-    r"behavioral econom\w*|new classical|georgis\w*|heterodox|institutional econom\w*)\b",
+    r"behavioral econom\w*|new classical|georgis\w*|heterodox|institutional econom\w*|"
+    r"social democra\w*|democratic sociali\w*|sociali\w*|liberalis\w*|neoliberal\w*|"
+    r"conservatis\w*|neoconservat\w*|libertarian\w*|anarchis\w*|anarcho-capital\w*|"
+    r"nationalis\w*|populis\w*|progressivis\w*|green politic\w*|communitarian\w*|"
+    r"christian democra\w*|distributis\w*|paleoconservat\w*|technocra\w*|"
+    r"agrarianis\w*|syndicalis\w*)\b",
     re.I)
 ATTR = re.compile(r"\b(argue|argues|argued|contend|contends|hold|holds|claim|claims|"
                   r"believe|believes|maintain|maintains|assert|asserts|according to|"
                   r"reject|rejects|deny|denies|object|objects|criticiz\w*|dispute|"
-                  r"disagree|insist|posit|posits|defend|defends)\w*\b", re.I)
+                  r"disagree|insist|posit|posits|defend|defends|oppose|opposes|"
+                  r"support|supports|favou?r|favou?rs|advocate|advocates)\w*\b", re.I)
 
 def position_vocabulary():
     """The CLOSED set of assumption labels — taken from the corpus's own
@@ -84,7 +98,7 @@ def position_vocabulary():
     who said it with under what assumptions it holds.
     """
     out = {}
-    for dom in ("phil", "econ"):
+    for dom in ("phil", "econ", "pol"):
         for f in sorted((ROOT / "data" / dom / "pages").glob("*.json")):
             page = json.loads(f.read_text())
             if page.get("kind") in ("position", "school"):
@@ -125,15 +139,34 @@ Sentences:
 
 
 def sentences():
-    out = []
-    for dom in ("phil", "econ"):
-        d = ROOT / "data" / dom / "pages"
-        for p in sorted(d.glob("*.json")):
-            page = json.loads(p.read_text())
+    """Candidates INTERLEAVED across domains, not concatenated.
+
+    Concatenating meant a truncated run exhausted one domain before touching
+    the next: the corpus holds 1047 political, 1006 philosophical and 271
+    economic candidates, so a 700-sentence run was 700 philosophy and zero
+    politics. The political corpus was unreachable by the very run added to
+    cover it, and the downstream experiment duly reported "0 positions placed
+    on an axis" as though that were a finding rather than a sampling bug.
+
+    Round-robin makes any prefix a proportionate sample of all three.
+    """
+    per = {}
+    for dom in ("phil", "econ", "pol"):
+        got = []
+        for f in sorted((ROOT / "data" / dom / "pages").glob("*.json")):
+            page = json.loads(f.read_text())
             for s in re.split(r"(?<=[.!?])\s+", page["text"]):
                 s = " ".join(s.split())
                 if 40 < len(s) < 320 and POS_RX.search(s) and ATTR.search(s):
-                    out.append({"domain": dom, "page": page["title"], "text": s})
+                    got.append({"domain": dom, "page": page["title"],
+                                "text": s})
+        per[dom] = got
+    out, i = [], 0
+    while any(len(v) > i for v in per.values()):
+        for dom in ("pol", "phil", "econ"):
+            if len(per[dom]) > i:
+                out.append(per[dom][i])
+        i += 1
     return out
 
 

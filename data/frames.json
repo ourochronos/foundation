@@ -1,0 +1,74 @@
+{
+ "_note": "Authored frame lattice. Model v1 §7 and the v2 review both concluded the closed layers are AUTHORED artifacts rather than derivation targets, and this is one: fifty-odd declarations, written by hand, frozen. A position may sit under SEVERAL axes - that is what 'the spectrum is more than one dimensional' means concretely, and the Lattice permits multiple parents. Sibling positions under one axis still do not scope-overlap, so their claims coexist; only narrower-within-broader becomes comparable.",
+
+ "_axes": {
+  "economic": "who should control productive resources",
+  "authority": "how much coercive power a state may hold",
+  "change": "stance toward inherited arrangements",
+  "scale": "where legitimate authority sits geographically"
+ },
+
+ "subsume": [
+  ["socialism", "left economics"],
+  ["marxism", "left economics"],
+  ["democratic socialism", "left economics"],
+  ["social democracy", "left economics"],
+  ["syndicalism", "left economics"],
+  ["left-libertarianism", "left economics"],
+  ["distributism", "left economics"],
+
+  ["neoliberalism", "right economics"],
+  ["classical liberalism", "right economics"],
+  ["anarcho-capitalism", "right economics"],
+  ["fiscal conservatism", "right economics"],
+  ["libertarianism", "right economics"],
+  ["right-libertarianism", "right economics"],
+  ["paleoconservatism", "right economics"],
+
+  ["social liberalism", "mixed economics"],
+  ["christian democracy", "mixed economics"],
+  ["communitarianism", "mixed economics"],
+
+  ["anarchism", "anti-authoritarian"],
+  ["libertarianism", "anti-authoritarian"],
+  ["anarcho-capitalism", "anti-authoritarian"],
+  ["left-libertarianism", "anti-authoritarian"],
+  ["right-libertarianism", "anti-authoritarian"],
+  ["syndicalism", "anti-authoritarian"],
+  ["classical liberalism", "anti-authoritarian"],
+
+  ["technocracy", "state-directed"],
+  ["marxism", "state-directed"],
+  ["democratic socialism", "state-directed"],
+  ["social democracy", "state-directed"],
+
+  ["progressivism", "progressive"],
+  ["social democracy", "progressive"],
+  ["democratic socialism", "progressive"],
+  ["green politics", "progressive"],
+  ["social liberalism", "progressive"],
+
+  ["conservatism", "traditionalist"],
+  ["social conservatism", "traditionalist"],
+  ["paleoconservatism", "traditionalist"],
+  ["christian democracy", "traditionalist"],
+  ["agrarianism", "traditionalist"],
+  ["communitarianism", "traditionalist"],
+
+  ["nationalism", "national scale"],
+  ["paleoconservatism", "national scale"],
+  ["agrarianism", "national scale"],
+  ["neoliberalism", "global scale"],
+  ["classical liberalism", "global scale"],
+  ["green politics", "global scale"],
+  ["marxism", "global scale"]
+ ],
+
+ "oppose_predicates": [
+  ["increases", "decreases"],
+  ["protects", "harms"],
+  ["refutes", "compatible_with"],
+  ["refutes", "entails"],
+  ["reduces_to", "exists"]
+ ]
+}
