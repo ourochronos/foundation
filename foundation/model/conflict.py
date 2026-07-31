@@ -32,8 +32,8 @@ import collections
 import json
 from dataclasses import dataclass, field
 
-from .canonical import (PRECISIONS, CanonError, canon_value, norm_text,
-                        norm_time)
+from .canonical import (NONE, PRECISIONS, SOME, CanonError, canon_value,
+                        norm_text, norm_time)
 
 # Qualifiers that restrict WHEN/WHERE/UNDER WHAT a proposition holds. These
 # enter the proposition key and participate in conflict logic. Everything else
@@ -151,8 +151,14 @@ def proposition_key(c: Claim, closure=None, *, with_polarity=True,
     propositions and must not pool into one count.
     """
     canon = closure.canonicalise if closure is not None else (lambda r: r)
-    obj = (["entity", canon(c.object)] if c.object_sort == "entity"
-           else canon_value(c.object_sort, c.object))
+    # An existential is not a ref, so it must never reach the closure — SOME
+    # and NONE have no identity to resolve.
+    if c.object is SOME or c.object is NONE:
+        obj = canon_value(c.object_sort, c.object)
+    elif c.object_sort == "entity":
+        obj = ["entity", canon(c.object)]
+    else:
+        obj = canon_value(c.object_sort, c.object)
     doc = {"s": canon(c.subject), "p": norm_text(c.predicate), "o": obj}
     if with_qualifiers:
         doc["q"] = sorted(
@@ -223,6 +229,30 @@ class Conflict:
                 f"{self.left.object!r} vs {self.right.object!r}>")
 
 
+def _existential(a: Claim, b: Claim):
+    """Conflicts involving SOME / NONE.
+
+    These hold for ANY predicate, not only functional ones: "Alice has no
+    children" contradicts "Alice's child is Bob" even though `has_child` admits
+    many objects. Routing them through the functional rule would have missed
+    exactly the claims a personal store needs on day one — no allergies, no
+    dietary restrictions.
+    """
+    if not (a.polarity and b.polarity):
+        return None                       # negated existentials: see below
+    ma = a.object if a.object in (SOME, NONE) else None
+    mb = b.object if b.object in (SOME, NONE) else None
+    if ma is None and mb is None:
+        return None
+    if ma is NONE and mb is None:
+        return Conflict("existential", a, b)      # NONE vs a concrete object
+    if mb is NONE and ma is None:
+        return Conflict("existential", b, a)
+    if {ma, mb} == {SOME, NONE}:
+        return Conflict("existential", a, b)
+    return None                           # SOME vs concrete: entailed, no news
+
+
 def conflicts(claims, closure=None, functional=frozenset()) -> list[Conflict]:
     """Detected, never resolved. Both sides survive; the query reports both.
 
@@ -244,7 +274,10 @@ def conflicts(claims, closure=None, functional=frozenset()) -> list[Conflict]:
                                     with_qualifiers=False)
                     == proposition_key(b, closure, with_polarity=False,
                                        with_qualifiers=False))
-                if same_obj and a.polarity != b.polarity:
+                ex = _existential(a, b)
+                if ex is not None:
+                    out.append(ex)
+                elif same_obj and a.polarity != b.polarity:
                     out.append(Conflict("polarity", a, b))
                 elif (not same_obj and pred in functional
                       and a.polarity and b.polarity):

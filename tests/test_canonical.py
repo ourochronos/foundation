@@ -255,17 +255,17 @@ def test_bare_digest_rejected_as_claim_ref():
     """A bare digest is a permanent commitment to one hash function."""
     bare = h(Q, "p", "text", "v").split(":", 1)[1]
     with pytest.raises(CanonError):
-        h(Q, "retracts", "claim_ref", bare)
+        h(Q, "retracts", "act_ref", bare)
     for bad in ("sha256:", "poseidon:ab", "sha256:zz", b"\xff\xab"):
         with pytest.raises(CanonError):
-            h(Q, "retracts", "claim_ref", bad)
+            h(Q, "retracts", "act_ref", bad)
 
 
 def test_claim_ref_round_trips_and_accepts_bytes():
     from foundation.model.canonical import address
     target = address(Q, "date_of_birth", "text", "1907-05-22")
-    assert h(Q, "retracts", "claim_ref", target) == \
-           h(Q, "retracts", "claim_ref", norm_addr_str(target))
+    assert h(Q, "retracts", "act_ref", target) == \
+           h(Q, "retracts", "act_ref", norm_addr_str(target))
 
 
 def norm_addr_str(b):
@@ -276,27 +276,139 @@ def norm_addr_str(b):
 def test_claim_ref_case_insensitive_hex():
     a = h(Q, "p", "text", "v")
     algo, hexd = a.split(":", 1)
-    assert h(Q, "cites", "claim_ref", f"{algo}:{hexd.upper()}") == \
-           h(Q, "cites", "claim_ref", a)
+    assert h(Q, "cites", "prop_ref", f"{algo}:{hexd.upper()}") == \
+           h(Q, "cites", "prop_ref", a)
 
 
 def test_claim_ref_is_not_text():
     """A pointer to a claim is not a string that looks like one."""
     a = h(Q, "p", "text", "v")
-    assert h(Q, "cites", "claim_ref", a) != h(Q, "cites", "text", a)
+    assert h(Q, "cites", "prop_ref", a) != h(Q, "cites", "text", a)
 
 
-def test_confidence_as_a_claim_about_a_claim():
-    """Dimensional confidence (model v1 §2): the dimension is the predicate,
-    the context is the qualifier, the holder is the claim act."""
+def test_confidence_dimensions_target_different_things():
+    """Dimensional confidence: the dimension is the predicate, the context is
+    the qualifier, and — the v1 correction — the TARGET differs by dimension.
+
+    Extraction fidelity is about a specific thing somebody did, so it takes an
+    act_ref and the closure is never applied to it. Belief is about the world,
+    so it takes a prop_ref and follows the proposition wherever identity
+    resolution later carries it.
+    """
     fact = h(Q, "place_of_birth", "entity", "wikidata:Q350")
     fidelity = h("s.alice:extractor_v3", "extraction_fidelity", "quantity",
-                 {"n": "0.92", "u": None}, True,
-                 [("about", "claim_ref", fact)])
+                 {"n": "0.92", "u": None}, True, [("about", "act_ref", fact)])
     belief = h("s.alice:me", "believed", "quantity", {"n": "0.92", "u": None},
-               True, [("about", "claim_ref", fact)])
+               True, [("about", "prop_ref", fact)])
     assert fidelity != belief          # same number, different dimension
     scoped = h("s.alice:me", "believed", "quantity", {"n": "0.92", "u": None},
-               True, [("about", "claim_ref", fact),
+               True, [("about", "prop_ref", fact),
                       ("in_domain", "text", "biography")])
     assert scoped != belief            # context changes the claim
+
+
+# ------------------------------------------------ Layer 0 closure (v2) ------
+def test_existentials_are_not_values():
+    """'no children' must be expressible, and must never collide with a real
+    object of the same sort."""
+    from foundation.model.canonical import NONE, SOME
+    none_child = h(Q, "has_child", "entity", NONE)
+    some_child = h(Q, "has_child", "entity", SOME)
+    a_child = h(Q, "has_child", "entity", "wikidata:Q1")
+    assert len({none_child, some_child, a_child}) == 3
+
+
+def test_existential_keeps_its_sort():
+    """'no children' and 'no birth date' are different claims."""
+    from foundation.model.canonical import NONE
+    assert h(Q, "p", "entity", NONE) != h(Q, "p", "time", NONE)
+
+
+def test_existential_polarity_still_distinguishes():
+    from foundation.model.canonical import NONE
+    assert h(Q, "p", "entity", NONE, True) != h(Q, "p", "entity", NONE, False)
+
+
+def test_act_ref_and_prop_ref_are_distinct_sorts():
+    """v1 conflated these; they resolve differently, so a mis-typed ref would
+    silently change meaning instead of failing."""
+    a = h(Q, "p", "text", "v")
+    assert h(Q, "retracts", "act_ref", a) != h(Q, "believes", "prop_ref", a)
+
+
+def test_predicate_definition_version_is_in_the_address():
+    """v1 keyed predicate identity on (uri, definition_hash) and stored only
+    the uri, so two definitions were indistinguishable."""
+    d1 = h(Q, "x", "text", "v")
+    d2 = h(Q, "y", "text", "v")
+    assert h(Q, ("status", d1), "text", "v") != h(Q, ("status", d2), "text", "v")
+    assert h(Q, ("status", d1), "text", "v") != h(Q, "status", "text", "v")
+
+
+def test_bad_predicate_forms_rejected():
+    for bad in (42, None, ("a", "b", "c"), ("a", "not-an-address")):
+        with pytest.raises(CanonError):
+            h(Q, bad, "text", "v")
+
+
+# ------------------------------------------------- n-ary events -------------
+def test_same_event_two_extractors_one_address():
+    """The federation-critical property: differing role COVERAGE must not
+    change the event's identity, only what is known about it."""
+    from foundation.model.canonical import event_address
+    key = ("seller", "item", "time")
+    a = event_address("sale", {"seller": ("entity", "wikidata:Q1"),
+                               "item": ("entity", "wikidata:Q2"),
+                               "time": ("time", {"t": "2020", "p": "year"})}, key)
+    b = event_address("sale", {"seller": ("entity", "wikidata:Q1"),
+                               "item": ("entity", "wikidata:Q2"),
+                               "time": ("time", {"t": "2020", "p": "year"}),
+                               "price": ("quantity", {"n": 10, "u": "USD"})}, key)
+    assert a == b
+
+
+def test_event_address_is_a_usable_entity_ref():
+    from foundation.model.canonical import event_address, norm_ref
+    e = event_address("sale", {"seller": ("entity", "wikidata:Q1")}, ("seller",))
+    assert norm_ref(e) == e and e.startswith("event:")
+    assert h(e, "price", "quantity", {"n": 10, "u": "USD"})
+
+
+def test_event_differing_key_roles_differs():
+    from foundation.model.canonical import event_address
+    k = ("seller",)
+    assert (event_address("sale", {"seller": ("entity", "wikidata:Q1")}, k)
+            != event_address("sale", {"seller": ("entity", "wikidata:Q9")}, k))
+    assert (event_address("sale", {"seller": ("entity", "wikidata:Q1")}, k)
+            != event_address("gift", {"seller": ("entity", "wikidata:Q1")}, k))
+
+
+def test_event_missing_key_role_refused():
+    """Guessing an identity would fabricate it rather than admit ignorance."""
+    from foundation.model.canonical import event_address
+    with pytest.raises(CanonError, match="missing identifying"):
+        event_address("sale", {"item": ("entity", "wikidata:Q2")},
+                      ("seller", "item"))
+    with pytest.raises(CanonError, match="no identifying roles"):
+        event_address("sale", {"item": ("entity", "wikidata:Q2")}, ())
+
+
+# ------------------------------------------- salted commitments / deletion --
+def test_commitment_is_hiding_not_just_binding():
+    """Same content, different salts -> unlinkable published commitments."""
+    from foundation.model.canonical import address, commit
+    a = address(Q, "has_condition", "entity", "wikidata:Q12206")
+    c1, c2 = commit(a, b"0" * 16), commit(a, b"1" * 16)
+    assert c1 != c2 and c1 != a
+
+
+def test_commitment_is_deterministic_for_one_salt():
+    from foundation.model.canonical import address, commit
+    a = address(Q, "p", "text", "v")
+    assert commit(a, b"s" * 16) == commit(a, b"s" * 16)
+
+
+def test_short_salt_refused():
+    from foundation.model.canonical import address, commit
+    with pytest.raises(CanonError, match="dictionary-attackable"):
+        commit(address(Q, "p", "text", "v"), b"short")

@@ -269,3 +269,56 @@ def test_no_evidence_falls_back_to_claimant():
     """Weakest honest reading: somebody asserted it and named no source."""
     c = Claim("s.alice:x", "p", "text", "v", claimant="agent:A")
     assert next(iter(agreement([c], None).values())) == {"claimant:agent:A"}
+
+
+# ------------------------------------------------- existentials (Layer 0) ---
+def test_none_contradicts_any_concrete_object():
+    """'Alice has no children' vs 'Alice's child is Bob'. Must fire for a
+    NON-functional predicate too — has_child admits many objects."""
+    from foundation.model.canonical import NONE
+    a = Claim("s.alice:me", "has_child", "entity", NONE, claimant="agent:A")
+    b = Claim("s.alice:me", "has_child", "entity", "wikidata:Q1",
+              claimant="agent:B")
+    found = conflicts([a, b], None, frozenset())      # no functional predicates
+    assert len(found) == 1 and found[0].kind == "existential", found
+
+
+def test_none_and_some_contradict():
+    from foundation.model.canonical import NONE, SOME
+    a = Claim("s.alice:me", "has_allergy", "entity", NONE, claimant="agent:A")
+    b = Claim("s.alice:me", "has_allergy", "entity", SOME, claimant="agent:B")
+    assert len(conflicts([a, b], None)) == 1
+
+
+def test_some_is_entailed_by_a_concrete_object_not_conflicting():
+    from foundation.model.canonical import SOME
+    a = Claim("s.alice:me", "has_child", "entity", SOME, claimant="agent:A")
+    b = Claim("s.alice:me", "has_child", "entity", "wikidata:Q1",
+              claimant="agent:B")
+    assert conflicts([a, b], None) == []
+
+
+def test_existential_respects_scope():
+    """'no children in 1980' does not contradict 'child born 2010'."""
+    from foundation.model.canonical import NONE
+    a = Claim("s.alice:me", "has_child", "entity", NONE, True,
+              (("valid_time", "time", {"t": "1980", "p": "year"}),),
+              claimant="agent:A")
+    b = Claim("s.alice:me", "has_child", "entity", "wikidata:Q1", True,
+              (("valid_time", "time", {"t": "2010", "p": "year"}),),
+              claimant="agent:B")
+    assert conflicts([a, b], None) == []
+
+
+def test_existential_across_identity_closure():
+    """The two fixes must compose: NONE asserted under one store's ref must
+    contradict a concrete object under another's once identity is accepted."""
+    from foundation.model.canonical import NONE
+    a = Claim("s.alice:p1", "has_child", "entity", NONE, claimant="agent:A")
+    b = Claim("s.bob:p9", "has_child", "entity", "wikidata:Q1",
+              claimant="agent:B")
+    assert conflicts([a, b], None) == []
+    cl = Closure()
+    cl.accept("s.alice:p1", "wikidata:Q152", "agent:A")
+    cl.accept("s.bob:p9", "wikidata:Q152", "agent:B")
+    assert len(conflicts([a, b], cl)) == 1

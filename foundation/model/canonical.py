@@ -42,7 +42,43 @@ from decimal import Decimal, InvalidOperation
 # a canonical byte encoding, it does not change the grammar. `claim_ref` is
 # load-bearing three times over — retraction, dimensional confidence, and
 # entity splits all need to point at a claim (model v1 §3).
-SORTS = ("entity", "text", "quantity", "time", "claim_ref")
+SORTS = ("entity", "text", "quantity", "time", "act_ref", "prop_ref")
+
+# `claim_ref` was one sort in v1 and that was wrong: the two things it pointed
+# at resolve DIFFERENTLY, and conflating them meant every consumer had to
+# runtime-dispatch while a mis-typed ref silently changed meaning.
+#
+#   act_ref   resolves to exactly that act. The closure is never applied.
+#             Retraction and extraction-fidelity target this — they are about
+#             a specific thing somebody did.
+#   prop_ref  is STORED as an assertion address and resolves to the whole
+#             proposition fibre containing it, under the current closure.
+#             Belief and reliability target this — they are about the world.
+#
+# Both are stored syntactically, so both stay stable and commitment-grade;
+# only the resolution rule differs. That is what dissolves the v1 dilemma
+# ("stable addresses cannot name mutable proposition keys"): the address is
+# stable, and the mutability lives in how it is read.
+
+
+class _Marker:
+    """An existential object. Not a value of any sort, and never confusable
+    with one, because it canonicalises under its own head."""
+    __slots__ = ("name",)
+
+    def __init__(self, name):
+        self.name = name
+
+    def __repr__(self):
+        return self.name
+
+
+# "Alice has no children" is NOT (alice, has_child, bob, -): polarity negates
+# one triple and cannot say that no object exists. And a safe decomposition of
+# a composite predicate ("grandmother" implies SOME parent) needs the positive
+# form. Same missing construct in two polarities, so one pair fixes both.
+SOME = _Marker("SOME")
+NONE = _Marker("NONE")
 
 # ---------------------------------------------------------------- addresses --
 # A content address carries its algorithm. Zero-knowledge aggregation is the
@@ -62,7 +98,8 @@ _BY_TAG = {tag: name for name, (tag, _) in ALGOS.items()}
 # addresses are in circulation, so the kind and the schema version are hashed
 # IN rather than merely stored alongside.
 SCHEMA_VERSION = "1"
-CONTENT_KINDS = ("assertion", "claim_act", "predicate", "interpretation")
+CONTENT_KINDS = ("assertion", "claim_act", "predicate",
+                 "interpretation", "commitment", "event")
 
 # `local` is deliberately NOT a usable namespace. Every store would mint
 # `local:owner` for a different person, so a union of two stores silently
@@ -71,6 +108,12 @@ CONTENT_KINDS = ("assertion", "claim_act", "predicate", "interpretation")
 # machine, because the ref is baked into an immutable content address and
 # cannot be rewritten later without invalidating every address that quotes it.
 RESERVED_NAMESPACES = {"local", "self", "me", "store", "tmp", "test"}
+
+# `event:` is exempt from store-scoping because an event id IS a content
+# address over its identifying roles, so it is globally unique by construction
+# — which is the entire point: two extractors that find the same event must
+# mint the same id or federation fails on every n-ary fact.
+CONTENT_NAMESPACES = {"event"}
 POLARITY = {True: "+", False: "-"}
 # ISO-8601 precision labels, coarsest first. A time value carries its own
 # precision because "true in 2009" and "true on 2009-01-01" are different
@@ -199,7 +242,7 @@ def norm_ref(r: str) -> str:
         raise CanonError(f"entity ref must be 'namespace:id', got {r!r}")
     ns, _, rest = r.partition(":")
     ns = ns.lower()
-    if ns in RESERVED_NAMESPACES:
+    if ns in RESERVED_NAMESPACES and ns not in CONTENT_NAMESPACES:
         raise CanonError(
             f"namespace {ns!r} is not globally unique: every store mints "
             f"{ns}:owner for a different subject, so a merge would fuse them. "
@@ -232,8 +275,31 @@ def norm_address(a) -> str:
     return f"{algo}:{hexd.lower()}"
 
 
+def norm_predicate(p) -> list:
+    """A predicate reference as [uri, definition_address | null].
+
+    v1 keyed predicate identity on (uri, definition_hash) and then stored only
+    the uri in assertions, so two definitions under one uri were
+    indistinguishable despite the document claiming merge-safety. Passing a
+    bare string is still allowed and canonicalises with an explicit null: it
+    records that the claim named no definition version, rather than pretending
+    it named one.
+    """
+    if isinstance(p, str):
+        return [norm_text(p), None]
+    if isinstance(p, (tuple, list)) and len(p) == 2:
+        return [norm_text(p[0]), norm_address(p[1])]
+    raise CanonError(f"predicate must be uri or (uri, definition_address), "
+                     f"got {p!r}")
+
+
 def canon_value(sort: str, value) -> list:
     """A sort-tagged canonical value. Always [sort, ...] so sorts never mix."""
+    if value is SOME or value is NONE:
+        # Distinct head, so an existential can never collide with a real value
+        # of the same sort. The sort is retained: "no children" and "no
+        # birth date" are different claims.
+        return [value.name.lower(), sort]
     if sort == "entity":
         return ["entity", norm_ref(value)]
     if sort == "text":
@@ -249,8 +315,8 @@ def canon_value(sort: str, value) -> list:
             raise CanonError("time needs {'t': ..., 'p': precision}")
         p = value.get("p", "day")
         return ["time", norm_time(value["t"], p), p]
-    if sort == "claim_ref":
-        return ["claim_ref", norm_address(value)]
+    if sort in ("act_ref", "prop_ref"):
+        return [sort, norm_address(value)]
     raise CanonError(f"unknown sort {sort!r}; sorts are closed: {SORTS}")
 
 
@@ -269,7 +335,7 @@ def canonical_form(subject: str, predicate: str, object_sort: str, obj,
         quals.append([norm_text(qp), canon_value(qs, qv)])
     quals.sort(key=lambda x: json.dumps(x, sort_keys=True, ensure_ascii=False))
     doc = {"s": norm_ref(subject),
-           "p": norm_text(predicate),
+           "p": norm_predicate(predicate),
            "o": canon_value(object_sort, obj),
            "n": POLARITY[bool(polarity)],
            "q": quals}
@@ -301,6 +367,67 @@ def mint_namespace(store_id: str) -> str:
     if not s or ":" in s or s in RESERVED_NAMESPACES:
         raise CanonError(f"bad store id {store_id!r}")
     return f"s.{s}"
+
+
+def event_address(event_type: str, roles: dict, identifying,
+                  algo: str = DEFAULT_ALGO) -> str:
+    """A globally stable id for an n-ary fact, derived from its KEY roles.
+
+    "Alice sold the house to Bob for $10 in 2020" can be reified as
+    `(alice, sold, house, {to, price})` or `(alice, sold_to, bob, {item,
+    price})`. Different addresses, no dedup, agreement never sees agreement —
+    federation fails on every n-ary fact. So an event gets an entity of its
+    own, and its identity is a content address over its role bindings.
+
+    **Identity comes from a declared subset of roles, not all of them.** Two
+    extractors rarely recover the same role set: one gets seller/item/buyer,
+    another also gets the price. Hashing everything would make those different
+    events. Hashing the roles the event *type* declares as identifying makes
+    them the same event with different amounts known about it — and the extra
+    roles become ordinary claims about that entity.
+
+    `roles` maps role name -> (sort, value). `identifying` names the key roles;
+    every one of them must be present, because an event missing part of its
+    key cannot be given a stable identity and guessing one would fabricate
+    identity rather than admit ignorance.
+    """
+    ident = tuple(identifying)
+    if not ident:
+        raise CanonError(f"event type {event_type!r} declares no identifying "
+                         f"roles, so no two extractions could ever agree")
+    missing = [r for r in ident if r not in roles]
+    if missing:
+        raise CanonError(f"event of type {event_type!r} is missing "
+                         f"identifying role(s) {missing}; it cannot be given a "
+                         f"stable identity")
+    body = {"t": norm_text(event_type),
+            "r": sorted([norm_text(r), canon_value(*roles[r])] for r in ident)}
+    payload = json.dumps(body, sort_keys=True, ensure_ascii=False,
+                         separators=(",", ":")).encode("utf-8")
+    tag, fn = ALGOS[algo]
+    return f"event:{algo}.{fn(payload).hexdigest()}"
+
+
+def commit(content_addr: bytes, salt: bytes, algo: str = DEFAULT_ALGO) -> bytes:
+    """A SALTED public commitment over a private content address.
+
+    A content address is binding but not hiding, and the claims in a personal
+    store come from tiny spaces — enumerate the diagnosis codes, hash each
+    against the shared seed vocabulary, match the published log. Shared
+    vocabulary makes proposition keys work and makes that attack easy, so the
+    two are at war unless what gets published is salted.
+
+    It is also the **deletion mechanism**, which append-only otherwise makes
+    impossible. Destroying the payload and its salt leaves a commitment nobody
+    can ever open or dictionary-attack, while the address itself remains so
+    references do not dangle and the record still shows that something was
+    asserted and later erased. A person's agent needs this for facts about
+    third parties, coerced entries, and legal erasure.
+    """
+    if len(salt) < 16:
+        raise CanonError("salt must be at least 16 bytes or the commitment is "
+                         "dictionary-attackable, which is the whole point")
+    return digest_of(bytes(salt) + bytes(content_addr), "commitment", algo)
 
 
 def address(*a, algo: str = DEFAULT_ALGO, kind: str = "assertion", **k) -> bytes:
