@@ -2,6 +2,41 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D174: Sparse overcomplete coding has NO useful regime here — two regimes, no sweet spot, and the same signature D168 found
+
+`scripts/exp64_sparse_dictionary.py`. The one thread D168 left open. If categories live in superposition, recovering them wants a **sparse overcomplete dictionary** at the 4×–64× expansion sparse-autoencoder practice uses — and every K sweep in this project topped out at 256 atoms in 768–1024 dimensions, always *under*complete. Two accounts were in contest: *superposition* (a sparse code selects features where a dense projection smears them) against *alignment* (D168: generalisation tracks **task-partition** separation, and an SAE optimises **reconstruction**, which cannot see the partition).
+
+**Alignment wins, and the loss is total.**
+
+| | M3 | Gemma |
+|---|---|---|
+| raw label space | 0.0032 | 0.1709 |
+| `dense_random_2048` | 0.0053 | 0.1720 |
+| best sparse dictionary | **0.0182** | **0.1709** |
+| `kmeans_label` K=32 | 0.1111 | 0.3590 |
+| `lda_between` K=32 | **0.2767** | **0.4530** |
+
+Mean **−0.270** against the champion. Both dense controls reproduced exp56 in-run before anything else ran.
+
+**Two regimes, and nothing useful between them — this is the finding.** On Gemma the pattern is exact rather than approximate:
+
+- **L0 ≈ 1070–1185, reconstruction 0.997** → novel transfer **0.1709**, *identical to raw label space to four decimals in five separate cells*. A near-lossless overcomplete code discards nothing, so `unit(code)` is an information-preserving transform of the label and scores exactly what the label scores.
+- **L0 ≈ 200–220** → novel transfer **0.0000**. Sparse enough to actually discard, and what it discards is everything generalisation needed.
+
+There is no intermediate that beats either end. On M3 the same shape appears with more atoms strictly worse: best per expansion 0.0182 (2048) → 0.0032 (4096) → **0.0000** (8192). **More atoms is monotonically worse**, which is the precise opposite of what over-provisioning predicted.
+
+**D168's dense-overcomplete argument is now measured twice, independently.** That entry asserted from reasoning that a dense projection with K ≥ d collapses toward raw space because nothing is discarded. `dense_random_2048` lands **+0.0016** over raw; the weakly-sparse SAE lands **+0.0000**. Two different routes, same answer.
+
+**The mechanism, and it has the same signature as D168.** At L0≈200 novel transfer is exactly 0.0000 while trained accuracy sits unmoved at 0.72–0.73 — the head memorises perfectly and generalises not at all. That is precisely what D168 found when the *task partition* was corrupted: novel transfer fell r = −0.90 while trained accuracy did not move (Gemma 0.7146 → 0.7279 across the full corruption range). **Two entirely unrelated manipulations, the same asymmetry.** The generalisation channel is separable from the memorisation channel, and both interventions hit only the former. That convergence is worth more than either experiment alone.
+
+The proposed explanation — **sparse codes separate maximally and interpolate not at all** — is post-hoc and marked as such. For a novel relation to be identified the head must land near its label's coordinate; if coordinates are sparse and near-orthogonal, "near" requires activating exactly the right atoms, which the head was never trained to do for an unseen combination. A dense low-K basis places every relation in the interior of a small space the head has learned to cover. It fits every number here and it has not been tested, which after D159, D165 and D172 is a distinction this project has learned to keep.
+
+**Prediction scorecard, stated honestly.** I predicted the sparse dictionary would lose to `lda_between` (**right**, −0.270), beat raw and random (**wrong** — +0.015 on M3, exactly +0.0000 on Gemma), and sit near `kmeans_label` at ~0.111 (**wrong** — it is at chance, 0.0179). Right on the headline, wrong by 6× on the magnitude.
+
+**A mid-run worry I retract.** I flagged partway through that the λ range looked too weak to be testing real sparsity, since L0 of 1534/2048 is not a sparse code. The completed sweep spans L0 from 200 to 1575 and covers **both** regimes with a sharp transition between them, so the range was adequate and the concern was wrong. Instrumenting L0 is what made both the worry and its retraction possible.
+
+**Revisit**: (a) the interpolation account needs its own test, and one is available without training anything — measure code *overlap* between relation pairs across bases and check whether novel transfer tracks it; (b) a *supervised* sparse dictionary (sparsity plus a partition objective) is the obvious hybrid and is untested, though D168 predicts the partition term would be doing all the work; (c) identification level only, and D169 established these do not transfer — a chance-level result needs no gate, but nothing here is a recommendation either way.
+
 ## 2026-07-30 — D173: The depth-2 gate cost was two-thirds my own bug — and I was one turn from building an experiment on it
 
 Correction to D172, found before acting on it. D172 reported that the answer-type gate costs **−0.2433** on M3's depth-2 answering and called it a live defect in the shipped pipeline, larger than anything the encoder arc was chasing. I then proposed a depth-aware gate as the next experiment, and the user agreed.
