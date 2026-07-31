@@ -18,5 +18,8 @@ ARGS=(-m "$MODEL" -ngl 99 --temp 0.1 --top-p 0.95 -c 8192)
 if [[ "${1:-}" == "serve" ]]; then
   exec "$BIN/llama-server" "${ARGS[@]}" --host 127.0.0.1 --port 8080
 fi
-# -st / -no-cnv: single-turn, no conversation wrapper — required in scripts
-exec "$BIN/llama-cli" "${ARGS[@]}" -st -no-cnv --no-display-prompt "$@"
+# llama-COMPLETION, not llama-cli: this build rejects -no-cnv on llama-cli
+# ("please use llama-completion instead") and silently falls back to
+# interactive chat, which returns the banner and a truncated reply instead of
+# an answer. Nothing errors — the script just gets garbage.
+exec "$BIN/llama-completion" "${ARGS[@]}" -st -no-cnv --no-display-prompt "$@"
