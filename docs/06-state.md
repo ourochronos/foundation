@@ -1,6 +1,6 @@
-# Current state — 2026-07-30 (encoder arc CLOSED, swap declined; through D172)
+# Current state — 2026-07-30 (encoder arc CLOSED, swap declined; through D173)
 
-**Fastest orientation**: [decisions.md](decisions.md) D172 → D170 → D158, then
+**Fastest orientation**: [decisions.md](decisions.md) D173 → D172 → D158, then
 "where a pivot lands" at the bottom. **Nothing is running.** Working tree clean
 apart from three soak-log files that rewrite themselves.
 
@@ -56,7 +56,7 @@ transfer in raw label space: M3 **0.0032** (below chance), EmbeddingGemma
 **⚠ Does not carry end-to-end, and the swap was DECLINED (D172).** With the
 store participating the encoders cross on the refusal frontier (D170), and
 with the answer-type gate active on both arms M3 wins every axis — including
-depth-2 answering by 0.173. Three gates, three failures to carry.
+depth-2 answering by 0.112. Three gates, three failures to carry.
 
 **Anchors should SEPARATE relations, not cover them — AT IDENTIFICATION LEVEL
 ONLY** (D165). Top-K eigenvectors of the between-relation scatter
@@ -130,6 +130,16 @@ store participated — because D158 already measured the store as supplying
 in the abstract is solving a problem the store solves better. **Anything
 measured without the store carries a "not a recommendation" marker until
 gated.** Three entries were written before that gate ran.
+
+**Verify a number you are about to build on as hard as an adjudicator's
+flag.** D172 reported the gate costing −0.243 on depth-2 answering, called it a
+live defect, and a follow-up experiment was agreed. Re-reading D134 to
+understand *why* found that I had computed `r_asked` from the raw target rather
+than `target − coordinates already walked`; two-thirds of the "defect" was
+mine (D173). No test catches this — both forms yield plausible numbers. What
+caught it was pausing to understand the mechanism before optimising it, and
+**reimplementing from a description rather than from the reference code** is
+the specific way it went wrong.
 
 **A threshold rule must not put refusal inside a minimum it maximises.** D169's
 first pass used "maximise the worst trained population" with unanswerable
