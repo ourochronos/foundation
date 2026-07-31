@@ -1,0 +1,115 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T23:48:12.213901+00:00",
+  "commit": "3e245591b297847c65da7a9309e003b026981a6b",
+  "dirty": true,
+  "command": "scripts/exp63_mixed_gate.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "RES_GRID": [
+    0.4,
+    0.6,
+    0.8,
+    1.0,
+    1.2,
+    1.6
+   ],
+   "TF_GRID": [
+    0.0,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.5,
+    0.6,
+    0.7
+   ],
+   "K_BASIS": 48,
+   "CAP": 1200
+  }
+ },
+ "population_sizes": {
+  "absent_entity": 1200,
+  "ans_d1": 1200,
+  "ans_d2": 1200,
+  "chain_break": 1200,
+  "not_applicable": 1200
+ },
+ "arms": {
+  "m3": {
+   "res_thr": 0.4,
+   "tfit_thr": 0.4,
+   "off": {
+    "ans_d1_correct": 0.865,
+    "ans_d1_wrong": 0.0175,
+    "ans_d2_correct": 0.655,
+    "not_applicable_refuse": 0.505,
+    "chain_break_refuse": 0.7825,
+    "absent_entity_refuse": 0.9992
+   },
+   "on": {
+    "ans_d1_correct": 0.7392,
+    "ans_d1_wrong": 0.0075,
+    "ans_d2_correct": 0.4117,
+    "not_applicable_refuse": 0.8267,
+    "chain_break_refuse": 0.8692,
+    "absent_entity_refuse": 0.9992
+   }
+  },
+  "gemma": {
+   "res_thr": 0.4,
+   "tfit_thr": 0.7,
+   "off": {
+    "ans_d1_correct": 0.7525,
+    "ans_d1_wrong": 0.0142,
+    "ans_d2_correct": 0.5383,
+    "not_applicable_refuse": 0.4083,
+    "chain_break_refuse": 0.6625,
+    "absent_entity_refuse": 0.9992
+   },
+   "on": {
+    "ans_d1_correct": 0.6858,
+    "ans_d1_wrong": 0.0075,
+    "ans_d2_correct": 0.2383,
+    "not_applicable_refuse": 0.8133,
+    "chain_break_refuse": 0.8042,
+    "absent_entity_refuse": 0.9992
+   }
+  }
+ },
+ "gate_vs_control": {
+  "m3": {
+   "not_applicable_gain": 0.3217,
+   "answerable_cost": -0.1258
+  },
+  "gemma": {
+   "not_applicable_gain": 0.405,
+   "answerable_cost": -0.0667
+  }
+ },
+ "gate_helps": {
+  "m3": true,
+  "gemma": true
+ },
+ "gemma_minus_m3_gate_on": {
+  "ans_d1_correct": -0.0534,
+  "ans_d1_wrong": 0.0,
+  "ans_d2_correct": -0.1734,
+  "not_applicable_refuse": -0.0134,
+  "chain_break_refuse": -0.065,
+  "absent_entity_refuse": 0.0
+ },
+ "verdict": "M3 STAYS \u2014 Gemma still refuses worse with the gate on (-0.0261 across the three unanswerable kinds).",
+ "registered_prediction": "the gate helps on not_applicable for both encoders, reproducing D134's direction, and stays harmful on chain_break which is what exp62 measured; whether that puts Gemma ahead overall is genuinely unknown",
+ "scope": "D134's mixed benchmark rebuilt exactly \u2014 three kinds of unanswerable, never averaged (law #9), with absent_entity subjects taken from the real arXiv component rather than fabricated. exp62 tested the gate on chain-break unanswerables, which is not the population it was built for, and its null should not be read as refuting D134. Type threshold calibrated per encoder on HALF the not-applicable population plus trained answerable, evaluated on the other half (D134's rule), because a cosine threshold does not transfer across encoders any more than a residual norm does (D125). The verdict logic checks gate-ON against gate-OFF WITHIN each encoder before any cross-encoder claim, because exp52, exp53 and exp62 each produced a confident verdict comparing the wrong pair."
+}

@@ -1,0 +1,476 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-30T23:27:33.376267+00:00",
+  "commit": "3e245591b297847c65da7a9309e003b026981a6b",
+  "dirty": true,
+  "command": "scripts/exp62_typegate_encoder.py",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "GRID": [
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0,
+    1.2,
+    1.4,
+    1.6,
+    2.0
+   ],
+   "K_BASIS": 48,
+   "MATCH_AT": [
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+   ]
+  }
+ },
+ "meta": {
+  "m3": {
+   "type_threshold_p25": 0.4329,
+   "n_fits": 3990
+  },
+  "gemma": {
+   "type_threshold_p25": 0.7347,
+   "n_fits": 3990
+  }
+ },
+ "curves": {
+  "m3_gateOFF": [
+   {
+    "thr": 0.2,
+    "novel_correct": 0.1131,
+    "novel_wrong": 0.0359,
+    "unans_novel_refuse": 0.985,
+    "train_d1_correct": 0.7727
+   },
+   {
+    "thr": 0.3,
+    "novel_correct": 0.3618,
+    "novel_wrong": 0.107,
+    "unans_novel_refuse": 0.923,
+    "train_d1_correct": 0.9221
+   },
+   {
+    "thr": 0.4,
+    "novel_correct": 0.5325,
+    "novel_wrong": 0.145,
+    "unans_novel_refuse": 0.823,
+    "train_d1_correct": 0.9578
+   },
+   {
+    "thr": 0.5,
+    "novel_correct": 0.6714,
+    "novel_wrong": 0.1572,
+    "unans_novel_refuse": 0.73,
+    "train_d1_correct": 0.9696
+   },
+   {
+    "thr": 0.6,
+    "novel_correct": 0.7419,
+    "novel_wrong": 0.1667,
+    "unans_novel_refuse": 0.63,
+    "train_d1_correct": 0.9708
+   },
+   {
+    "thr": 0.7,
+    "novel_correct": 0.7703,
+    "novel_wrong": 0.185,
+    "unans_novel_refuse": 0.5245,
+    "train_d1_correct": 0.9733
+   },
+   {
+    "thr": 0.8,
+    "novel_correct": 0.7839,
+    "novel_wrong": 0.2012,
+    "unans_novel_refuse": 0.412,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 0.9,
+    "novel_correct": 0.7839,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.3205,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 1.0,
+    "novel_correct": 0.7846,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.2355,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 1.2,
+    "novel_correct": 0.7852,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.094,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 1.4,
+    "novel_correct": 0.7852,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.023,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 1.6,
+    "novel_correct": 0.7852,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.007,
+    "train_d1_correct": 0.9745
+   },
+   {
+    "thr": 2.0,
+    "novel_correct": 0.7852,
+    "novel_wrong": 0.2046,
+    "unans_novel_refuse": 0.0005,
+    "train_d1_correct": 0.9745
+   }
+  ],
+  "m3_gateON": [
+   {
+    "thr": 0.2,
+    "novel_correct": 0.0678,
+    "novel_wrong": 0.0169,
+    "unans_novel_refuse": 0.9885,
+    "train_d1_correct": 0.6048
+   },
+   {
+    "thr": 0.3,
+    "novel_correct": 0.1775,
+    "novel_wrong": 0.0684,
+    "unans_novel_refuse": 0.955,
+    "train_d1_correct": 0.7224
+   },
+   {
+    "thr": 0.4,
+    "novel_correct": 0.2974,
+    "novel_wrong": 0.0949,
+    "unans_novel_refuse": 0.9035,
+    "train_d1_correct": 0.7507
+   },
+   {
+    "thr": 0.5,
+    "novel_correct": 0.4106,
+    "novel_wrong": 0.1016,
+    "unans_novel_refuse": 0.86,
+    "train_d1_correct": 0.7581
+   },
+   {
+    "thr": 0.6,
+    "novel_correct": 0.4627,
+    "novel_wrong": 0.1077,
+    "unans_novel_refuse": 0.8165,
+    "train_d1_correct": 0.7588
+   },
+   {
+    "thr": 0.7,
+    "novel_correct": 0.4831,
+    "novel_wrong": 0.1159,
+    "unans_novel_refuse": 0.7665,
+    "train_d1_correct": 0.7613
+   },
+   {
+    "thr": 0.8,
+    "novel_correct": 0.4892,
+    "novel_wrong": 0.1226,
+    "unans_novel_refuse": 0.711,
+    "train_d1_correct": 0.7619
+   },
+   {
+    "thr": 0.9,
+    "novel_correct": 0.4892,
+    "novel_wrong": 0.1233,
+    "unans_novel_refuse": 0.6725,
+    "train_d1_correct": 0.7619
+   },
+   {
+    "thr": 1.0,
+    "novel_correct": 0.4898,
+    "novel_wrong": 0.1233,
+    "unans_novel_refuse": 0.63,
+    "train_d1_correct": 0.7619
+   },
+   {
+    "thr": 1.2,
+    "novel_correct": 0.4905,
+    "novel_wrong": 0.1233,
+    "unans_novel_refuse": 0.5705,
+    "train_d1_correct": 0.7619
+   },
+   {
+    "thr": 1.4,
+    "novel_correct": 0.4905,
+    "novel_wrong": 0.1233,
+    "unans_novel_refuse": 0.544,
+    "train_d1_correct": 0.7619
+   },
+   {
+    "thr": 1.6,
+    "novel_correct": 0.4905,
+    "novel_wrong": 0.1233,
+    "unans_novel_refuse": 0.5385,
+    "train_d1_correct": 0.7619
+   },
+   {
+    "thr": 2.0,
+    "novel_correct": 0.4905,
+    "novel_wrong": 0.1233,
+    "unans_novel_refuse": 0.535,
+    "train_d1_correct": 0.7619
+   }
+  ],
+  "gemma_gateOFF": [
+   {
+    "thr": 0.2,
+    "novel_correct": 0.29,
+    "novel_wrong": 0.0027,
+    "unans_novel_refuse": 0.8885,
+    "train_d1_correct": 0.6734
+   },
+   {
+    "thr": 0.3,
+    "novel_correct": 0.4194,
+    "novel_wrong": 0.0041,
+    "unans_novel_refuse": 0.823,
+    "train_d1_correct": 0.8181
+   },
+   {
+    "thr": 0.4,
+    "novel_correct": 0.5407,
+    "novel_wrong": 0.0075,
+    "unans_novel_refuse": 0.7435,
+    "train_d1_correct": 0.8889
+   },
+   {
+    "thr": 0.5,
+    "novel_correct": 0.6457,
+    "novel_wrong": 0.0129,
+    "unans_novel_refuse": 0.6495,
+    "train_d1_correct": 0.9249
+   },
+   {
+    "thr": 0.6,
+    "novel_correct": 0.7459,
+    "novel_wrong": 0.0413,
+    "unans_novel_refuse": 0.551,
+    "train_d1_correct": 0.9391
+   },
+   {
+    "thr": 0.7,
+    "novel_correct": 0.8238,
+    "novel_wrong": 0.0745,
+    "unans_novel_refuse": 0.4455,
+    "train_d1_correct": 0.9478
+   },
+   {
+    "thr": 0.8,
+    "novel_correct": 0.8638,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.3315,
+    "train_d1_correct": 0.9509
+   },
+   {
+    "thr": 0.9,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.258,
+    "train_d1_correct": 0.9509
+   },
+   {
+    "thr": 1.0,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.182,
+    "train_d1_correct": 0.9516
+   },
+   {
+    "thr": 1.2,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.0795,
+    "train_d1_correct": 0.9519
+   },
+   {
+    "thr": 1.4,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.027,
+    "train_d1_correct": 0.9519
+   },
+   {
+    "thr": 1.6,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.007,
+    "train_d1_correct": 0.9519
+   },
+   {
+    "thr": 2.0,
+    "novel_correct": 0.8659,
+    "novel_wrong": 0.0942,
+    "unans_novel_refuse": 0.0,
+    "train_d1_correct": 0.9519
+   }
+  ],
+  "gemma_gateON": [
+   {
+    "thr": 0.2,
+    "novel_correct": 0.1924,
+    "novel_wrong": 0.0007,
+    "unans_novel_refuse": 0.9515,
+    "train_d1_correct": 0.5247
+   },
+   {
+    "thr": 0.3,
+    "novel_correct": 0.2859,
+    "novel_wrong": 0.0014,
+    "unans_novel_refuse": 0.918,
+    "train_d1_correct": 0.6284
+   },
+   {
+    "thr": 0.4,
+    "novel_correct": 0.3787,
+    "novel_wrong": 0.0034,
+    "unans_novel_refuse": 0.8875,
+    "train_d1_correct": 0.6849
+   },
+   {
+    "thr": 0.5,
+    "novel_correct": 0.456,
+    "novel_wrong": 0.0054,
+    "unans_novel_refuse": 0.8475,
+    "train_d1_correct": 0.7103
+   },
+   {
+    "thr": 0.6,
+    "novel_correct": 0.5264,
+    "novel_wrong": 0.0264,
+    "unans_novel_refuse": 0.805,
+    "train_d1_correct": 0.7215
+   },
+   {
+    "thr": 0.7,
+    "novel_correct": 0.5671,
+    "novel_wrong": 0.0549,
+    "unans_novel_refuse": 0.7665,
+    "train_d1_correct": 0.7277
+   },
+   {
+    "thr": 0.8,
+    "novel_correct": 0.5833,
+    "novel_wrong": 0.0705,
+    "unans_novel_refuse": 0.716,
+    "train_d1_correct": 0.7296
+   },
+   {
+    "thr": 0.9,
+    "novel_correct": 0.584,
+    "novel_wrong": 0.0705,
+    "unans_novel_refuse": 0.685,
+    "train_d1_correct": 0.7296
+   },
+   {
+    "thr": 1.0,
+    "novel_correct": 0.584,
+    "novel_wrong": 0.0705,
+    "unans_novel_refuse": 0.6465,
+    "train_d1_correct": 0.7302
+   },
+   {
+    "thr": 1.2,
+    "novel_correct": 0.584,
+    "novel_wrong": 0.0705,
+    "unans_novel_refuse": 0.602,
+    "train_d1_correct": 0.7305
+   },
+   {
+    "thr": 1.4,
+    "novel_correct": 0.584,
+    "novel_wrong": 0.0705,
+    "unans_novel_refuse": 0.5895,
+    "train_d1_correct": 0.7305
+   },
+   {
+    "thr": 1.6,
+    "novel_correct": 0.584,
+    "novel_wrong": 0.0705,
+    "unans_novel_refuse": 0.5795,
+    "train_d1_correct": 0.7305
+   },
+   {
+    "thr": 2.0,
+    "novel_correct": 0.584,
+    "novel_wrong": 0.0705,
+    "unans_novel_refuse": 0.5765,
+    "train_d1_correct": 0.7305
+   }
+  ]
+ },
+ "matched_at_refusal": {
+  "0.3": {
+   "m3_gateOFF": 0.7841,
+   "m3_gateON": null,
+   "gemma_gateOFF": 0.8647,
+   "gemma_gateON": null
+  },
+  "0.4": {
+   "m3_gateOFF": 0.7839,
+   "m3_gateON": null,
+   "gemma_gateOFF": 0.8398,
+   "gemma_gateON": null
+  },
+  "0.5": {
+   "m3_gateOFF": 0.7733,
+   "m3_gateON": null,
+   "gemma_gateOFF": 0.7836,
+   "gemma_gateON": null
+  },
+  "0.6": {
+   "m3_gateOFF": 0.75,
+   "m3_gateON": 0.4902,
+   "gemma_gateOFF": 0.6961,
+   "gemma_gateON": 0.584
+  },
+  "0.7": {
+   "m3_gateOFF": 0.6925,
+   "m3_gateON": 0.4892,
+   "gemma_gateOFF": 0.5893,
+   "gemma_gateON": 0.5837
+  },
+  "0.8": {
+   "m3_gateOFF": 0.5669,
+   "m3_gateON": 0.4694,
+   "gemma_gateOFF": 0.4545,
+   "gemma_gateON": 0.5317
+  }
+ },
+ "gate_gain": {
+  "gate_gain_m3": -0.1869,
+  "gate_gain_gemma": -0.0135
+ },
+ "gemma_minus_m3_with_gate_strict": {
+  "0.6": 0.0938,
+  "0.7": 0.0945,
+  "0.8": 0.0623
+ },
+ "verdict": "GATE RECOVERS IT \u2014 with the answer-type gate on both arms, Gemma now leads M3 by +0.0835 in the strict region where this system operates. The encoder swap is justified.",
+ "registered_prediction": "the gate lifts both encoders and helps Gemma more, since Gemma's failure is specifically answerable-vs-unanswerable and the gate attacks exactly that; but it does NOT close the strict-region gap entirely, which was -0.11 at 0.80 refusal in D170",
+ "scope": "The deciding experiment for the encoder swap. Every run in D164-D170 used only the residual threshold; the answer-type gate (D134) is a separate mechanism and was absent from all of them. Range centroids are closed-form from the store for EVERY relation including held-out ones \u2014 a held-out relation is absent from training but its claims are in the store, so its centroid needs no retraining. The type threshold is the p25 of within-relation type fit over TRAINED relations only (D142's store-derived rule), recomputed per encoder because a cosine threshold no more transfers across encoders than a residual norm does (D125). Both arms use the same basis (kmeans_label K=48) since lda_between was refuted end-to-end at D169. Frontier reported as a curve; no operating point is selected from novel data."
+}

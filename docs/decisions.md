@@ -2,6 +2,59 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-30 — D172: The gate reproduces on both encoders, M3 dominates every axis, and the swap is DECLINED
+
+`scripts/exp63_mixed_gate.py`. D134's mixed benchmark rebuilt exactly — three kinds of unanswerable, never averaged (law #9), with `absent_entity` subjects taken from the real arXiv component rather than fabricated. Type threshold calibrated **per encoder** on half the not-applicable population plus trained answerable, evaluated on the other half, which is D134's own rule.
+
+**Step 1 — does the gate beat its own control?** Yes, on both, and D134's direction reproduces:
+
+| not-applicable refusal | gate off | gate on | Δ |
+|---|---|---|---|
+| M3 | 0.5050 | 0.8267 | **+0.3217** |
+| Gemma | 0.4083 | 0.8133 | **+0.4050** |
+
+**Step 2 — only then, encoder against encoder with the gate on. M3 wins every axis:**
+
+| with gate on | gemma − m3 |
+|---|---|
+| not_applicable refusal | −0.0134 |
+| chain_break refusal | −0.0650 |
+| absent_entity refusal | 0.0000 |
+| depth-1 answering | −0.0534 |
+| depth-2 answering | **−0.1734** |
+
+Not a trade — a dominance. **The swap is declined.**
+
+**The arc closes cleanly and the shape is worth keeping.** EmbeddingGemma's advantage was 53× on raw-label novel-relation transfer at identification level (D164). It did not survive the store (D169, where the basis recommendation inverted outright), did not survive the refusal frontier (D170, where the curves crossed at ≈0.52), and does not survive the gate (here). **Three gates, three failures to carry.** An identification-level measurement in this system is a statement about a component, not about the system.
+
+**A cost of the CURRENT pipeline, found incidentally and larger than anything this arc was chasing.** The gate costs **−0.2433** on M3's depth-2 answering and **−0.3000** on Gemma's, against its +0.32/+0.41 gain on not-applicable refusal. D134 reported the depth-1 cost (correct falls 0.110, total answered 0.183) and the depth-2 *wrongness* change (0.175 → 0.102) — but never depth-2 **correct**. So the gate has been quietly removing roughly a quarter of correct two-hop answers in the shipped configuration, and nobody had measured it because the reported number was the one that flattered it. That is audit law #7's shape one level down: not answerable-vs-unanswerable averaged, but one depth reported and another not.
+
+**An apparent contradiction with D171 that is not one.** Here `chain_break` refusal *improves* with the gate (+0.0867 M3, +0.1417 Gemma), while D171 found the gate harmful on chain-break. Both are true and the framings differ: the gate can only ever *add* refusals, so at a fixed threshold its refusal rate must rise; D171 asked whether that gain is worth its answering cost **at matched refusal**, and there it is not. The matched-refusal framing is the fairer one and the fixed-threshold number should not be quoted alone.
+
+**The calibration confirms D125 extends from residual norms to cosines.** Selected type thresholds: **0.4 for M3, 0.7 for Gemma** — nearly double. exp62's store-derived p25 rule landed at 0.4329 and 0.7347 by an entirely different route, which is an independent check on both. A shared constant would have silently crippled one arm.
+
+**The two-step verdict structure earned its place.** Comparing encoders first — as D171 did — would have produced "M3 stays" here by luck rather than by argument. Checking the intervention against its own control before any cross-arm claim is what makes this a conclusion.
+
+**Revisit**: (a) the depth-2 gate cost is the live defect and deserves its own experiment — a depth-aware or per-depth-calibrated gate is the obvious candidate; (b) one corpus, one seed, one basis; (c) the swap is declined on *refusal* grounds, and the tokenizer-alignment argument for the Gemma family (D-notes on the codec) is untouched by this and would need its own case.
+
+## 2026-07-30 — D171: The gate tested on the wrong population — a null that does NOT refute D134, and my verdict logic misread it for the third time
+
+`scripts/exp62_typegate_encoder.py`. D170 left the encoder choice turning on one question: can the answer-type gate recover Gemma's refusal? Every run in D164–D170 used only the residual threshold, and the gate is a separate mechanism that lifted M3's not-applicable refusal from 0.050 to 0.693 (D134).
+
+I ran it on `unans_novel` — **chain-break** unanswerables. At matched refusal the gate is *harmful* to both encoders:
+
+| novel answering at matched refusal | M3 off → on | Gemma off → on |
+|---|---|---|
+| 0.60 | 0.7500 → 0.4902 (**−0.2598**) | 0.6961 → 0.5840 (−0.1121) |
+| 0.70 | 0.6925 → 0.4892 (−0.2033) | 0.5893 → 0.5837 (−0.0056) |
+| 0.80 | 0.5669 → 0.4694 (−0.0975) | 0.4545 → 0.5317 (+0.0772) |
+
+**This is a null on the wrong benchmark and must not be read as refuting D134.** The gate was built for **not-applicable** questions — relation real, entity real, pair absent — and measured there. A chain-break walk returns objects of a *plausible* type, so the gate has little to detect and mostly suppresses correct answers. D172 runs it on the right population and D134's benefit reproduces on both encoders.
+
+**The verdict logic was wrong, for the third consecutive time.** It printed "GATE RECOVERS IT — Gemma now leads M3 by +0.0835 in the strict region", having compared `gemma_gateON` against `m3_gateON` and **never checked gate-ON against gate-OFF at all**. The gate had made both encoders worse; Gemma "led" only because it was damaged less. Preceded by exp52 (tested the best planner first, so a store-filtered planner matching printed "the model can plan without the store") and exp53 (an absolute 0.02 bar called a trade-off "as stated" on a wrongness cost that was 9.8% of the gain). **Three different scripts, one failure: the verdict compared a pair that was not the pair the question was about.** D172's structure — check the intervention against its own control before any cross-arm comparison — exists because of this.
+
+**One real finding survives the mis-scoping.** The store-derived p25 type threshold is **0.4329 for M3 and 0.7347 for Gemma**. D125 established that residual thresholds do not transfer across representation dimensionality; this extends it to **cosine** thresholds across encoders, and a hardcoded gate constant would have silently broken the swap in either direction.
+
 ## 2026-07-30 — D170: The encoders CROSS on the refusal frontier — Gemma answers better, M3 refuses better, and this system is built around refusing
 
 `scripts/exp61_refusal_frontier.py`. D169 left the encoder question open because matching on trained-answerable coverage does not constrain behaviour on unanswerable questions: the swap bought +0.122 on novel answering and paid −0.299 on novel refusal, which is two points on a frontier rather than two qualities. This reports the **whole frontier** — both arms on the same basis (`kmeans_label` K=48, so the same residual dimensionality and a commensurate threshold), swept across fourteen thresholds.
