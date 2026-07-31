@@ -88,6 +88,11 @@ whether it introduced a worse one somewhere else. A repair that relocates a \
 problem into a component the document treats as unproblematic is the failure \
 mode to hunt for.
 
+If the document offers a single principle or root cause that unifies past \
+findings, test that claim directly. A tidy story about why earlier mistakes \
+happened is the easiest thing to get wrong and the hardest for its author to \
+notice, and it will have been used to decide what did NOT need fixing.
+
 Give each of these directly, with no preamble and no summary of the document \
 back to its author:
 

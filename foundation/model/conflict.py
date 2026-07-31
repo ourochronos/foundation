@@ -97,6 +97,15 @@ def scopes_overlap(qa: dict, qb: dict) -> bool:
 
 
 def _tc(qualifiers) -> dict:
+    """Keep only truth-conditional qualifiers; DROP everything unregistered.
+
+    Dropping is the safe default and it is load-bearing, not incidental. A
+    dropped qualifier imposes no restriction, so an unregistered one always
+    overlaps. If unknown qualifiers instead defaulted to *disjoint*, any agent
+    could make its claims permanently undisputable by attaching one junk
+    qualifier — which is exactly the v0 loophole, re-entering through a side
+    door. `test_unregistered_qualifier_cannot_evade_dispute` pins this.
+    """
     out = {}
     for q in qualifiers or ():
         name = norm_text(q[0])
@@ -134,7 +143,7 @@ class Claim:
 
 
 def proposition_key(c: Claim, closure=None, *, with_polarity=True,
-                    with_qualifiers=True) -> str:
+                    with_qualifiers=True, with_predicate=True) -> str:
     """Identity of the PROPOSITION, modulo the accepted identity closure.
 
     Derived, not stored: it moves when the closure moves, which is exactly why
@@ -159,7 +168,9 @@ def proposition_key(c: Claim, closure=None, *, with_polarity=True,
         obj = ["entity", canon(c.object)]
     else:
         obj = canon_value(c.object_sort, c.object)
-    doc = {"s": canon(c.subject), "p": norm_text(c.predicate), "o": obj}
+    doc = {"s": canon(c.subject), "o": obj}
+    if with_predicate:
+        doc["p"] = norm_text(c.predicate)
     if with_qualifiers:
         doc["q"] = sorted(
             [norm_text(k), canon_value("entity", v) if isinstance(v, str)
@@ -253,7 +264,37 @@ def _existential(a: Claim, b: Claim):
     return None                           # SOME vs concrete: entailed, no news
 
 
-def conflicts(claims, closure=None, functional=frozenset()) -> list[Conflict]:
+def _subsumption_conflicts(claims, closure, lattice) -> list[Conflict]:
+    """`(X, mother_of, Y, +)` versus `(X, parent_of, Y, −)`.
+
+    A flat contradiction that predicate-string grouping cannot see. The rule is
+    one-directional, like everything else about the lattice: a POSITIVE claim
+    on P contradicts a NEGATIVE claim on Q exactly when P entails Q. The
+    converse does not hold — `¬mother_of` is perfectly consistent with
+    `parent_of`, because the parent may be the father.
+    """
+    canon = closure.canonicalise if closure is not None else (lambda r: r)
+    out, by_so = [], collections.defaultdict(list)
+    for c in claims:
+        by_so[(canon(c.subject),
+               proposition_key(c, closure, with_polarity=False,
+                               with_qualifiers=False, with_predicate=False)
+               )].append(c)
+    for _, group in sorted(by_so.items()):
+        for a in group:
+            for b in group:
+                if a is b or not a.polarity or b.polarity:
+                    continue                      # need a positive and a negative
+                pa, pb = norm_text(a.predicate), norm_text(b.predicate)
+                if pa == pb or not lattice.entails(pa, pb):
+                    continue                      # same-predicate case handled above
+                if scopes_overlap(_tc(a.qualifiers), _tc(b.qualifiers)):
+                    out.append(Conflict("subsumption", a, b))
+    return out
+
+
+def conflicts(claims, closure=None, functional=frozenset(),
+              lattice=None) -> list[Conflict]:
     """Detected, never resolved. Both sides survive; the query reports both.
 
     `functional` names predicates admitting at most one object per subject —
@@ -282,4 +323,6 @@ def conflicts(claims, closure=None, functional=frozenset()) -> list[Conflict]:
                 elif (not same_obj and pred in functional
                       and a.polarity and b.polarity):
                     out.append(Conflict("functional", a, b))
+    if lattice is not None:
+        out += _subsumption_conflicts(claims, closure, lattice)
     return out

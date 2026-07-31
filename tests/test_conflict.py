@@ -322,3 +322,59 @@ def test_existential_across_identity_closure():
     cl.accept("s.alice:p1", "wikidata:Q152", "agent:A")
     cl.accept("s.bob:p9", "wikidata:Q152", "agent:B")
     assert len(conflicts([a, b], cl)) == 1
+
+
+# ------------------------------------------------- subsumption (docs/24) ----
+def _lat():
+    from foundation.model.predicates import Lattice
+    L = Lattice()
+    L.subsume("mother_of", "parent_of")
+    L.subsume("father_of", "parent_of")
+    return L
+
+
+def test_subsumption_conflict_is_detected():
+    """(X, mother_of, Y, +) vs (X, parent_of, Y, -) is a flat contradiction
+    that predicate-string grouping cannot see."""
+    a = Claim("s.alice:x", "mother_of", "entity", "s.alice:y", True,
+              claimant="agent:A")
+    b = Claim("s.alice:x", "parent_of", "entity", "s.alice:y", False,
+              claimant="agent:B")
+    assert conflicts([a, b], None) == []                     # blind without it
+    found = conflicts([a, b], None, lattice=_lat())
+    assert len(found) == 1 and found[0].kind == "subsumption", found
+
+
+def test_subsumption_conflict_is_one_directional():
+    """not-mother is consistent with parent — the parent may be the father."""
+    a = Claim("s.alice:x", "parent_of", "entity", "s.alice:y", True,
+              claimant="agent:A")
+    b = Claim("s.alice:x", "mother_of", "entity", "s.alice:y", False,
+              claimant="agent:B")
+    assert conflicts([a, b], None, lattice=_lat()) == []
+
+
+def test_subsumption_respects_object_and_scope():
+    a = Claim("s.alice:x", "mother_of", "entity", "s.alice:y", True,
+              claimant="agent:A")
+    other = Claim("s.alice:x", "parent_of", "entity", "s.alice:z", False,
+                  claimant="agent:B")
+    assert conflicts([a, other], None, lattice=_lat()) == []
+    scoped = Claim("s.alice:x", "parent_of", "entity", "s.alice:y", False,
+                   (("valid_time", "time", {"t": "1800", "p": "year"}),),
+                   claimant="agent:B")
+    a2 = Claim("s.alice:x", "mother_of", "entity", "s.alice:y", True,
+               (("valid_time", "time", {"t": "2000", "p": "year"}),),
+               claimant="agent:A")
+    assert conflicts([a2, scoped], None, lattice=_lat()) == []
+
+
+def test_unregistered_qualifier_cannot_evade_dispute():
+    """The safe default, pinned: an unknown qualifier imposes no restriction.
+    If it defaulted to disjoint, one junk qualifier would make any claim
+    permanently undisputable — v0's loophole through a side door."""
+    a = Claim("s.alice:x", "p", "entity", "s.alice:y", True,
+              (("wibble", "text", "nonsense"),), claimant="agent:A")
+    b = Claim("s.alice:x", "p", "entity", "s.alice:y", False, claimant="agent:B")
+    found = conflicts([a, b], None)
+    assert len(found) == 1 and found[0].kind == "polarity", found
