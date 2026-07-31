@@ -1,6 +1,6 @@
-# Current state — 2026-07-30 (encoder arc CLOSED, swap declined; through D173)
+# Current state — 2026-07-30 (encoder arc CLOSED, sparse-dictionary thread CLOSED; through D174)
 
-**Fastest orientation**: [decisions.md](decisions.md) D173 → D172 → D158, then
+**Fastest orientation**: [decisions.md](decisions.md) D174 → D172 → D158, then
 "where a pivot lands" at the bottom. **Nothing is running.** Working tree clean
 apart from three soak-log files that rewrite themselves.
 
@@ -87,11 +87,26 @@ not abstraction level.
 
 **So the layer stack is real as an ONTOLOGY and not a derivation order for
 representations.** The type/context distinction and the relation categories
-stand; what they are not is a recipe for choosing basis directions. And
-over-provisioning is relocated rather than killed — superposed categories want
-a **sparse overcomplete dictionary**, which the K sweeps never tested (always
-undercomplete; a dense K ≥ d collapses toward raw label space at 0.171 against
-the K=32 basis at 0.453).
+stand; what they are not is a recipe for choosing basis directions.
+
+**Over-provisioning is now closed too, in its strongest form (D174).** A sparse
+overcomplete dictionary — the instrument superposition actually calls for, at
+SAE expansion — loses to `lda_between` by **−0.270** on both encoders, and has
+**two regimes with nothing useful between them**: a near-lossless code
+(L0≈1100, recon 0.997) scores *exactly* what raw label space scores, to four
+decimals; a genuinely sparse one (L0≈200) scores **0.0000**. More atoms is
+monotonically worse. D168's assertion that a dense K ≥ d projection collapses
+toward raw is now measured twice independently (+0.0016 and +0.0000).
+
+**And two unrelated manipulations share one signature.** Corrupting the task
+partition (D168) and sparsifying the code (D174) both drive novel transfer to
+the floor while leaving trained accuracy *completely unmoved* (0.71–0.73 in
+both). **The generalisation channel is separable from the memorisation
+channel**, and every intervention that has mattered in this arc hit only the
+former. The proposed explanation — sparse codes separate maximally and
+interpolate not at all — is post-hoc and untested, and a test exists that
+needs no training: measure code overlap between relation pairs and check
+whether novel transfer tracks it.
 
 **Relation-as-offset fails** — anchors from `emb(obj) − emb(subj)` are worst or
 near-worst on both encoders. With D4 (rotations unsupported) and D26 (constant
