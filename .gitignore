@@ -39,3 +39,5 @@ results/snapshot_10k/sparse_v0.json
 # four of them exceeded GitHub's hard 100MB per-file limit and blocked the
 # push. The space-DEFINING npz above (whiten_v0, amp_subspace_*) stay tracked.
 results/*_emb.npz
+models/*.gguf
+models/.cache/
