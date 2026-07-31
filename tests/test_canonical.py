@@ -412,3 +412,27 @@ def test_short_salt_refused():
     from foundation.model.canonical import address, commit
     with pytest.raises(CanonError, match="dictionary-attackable"):
         commit(address(Q, "p", "text", "v"), b"short")
+
+
+# ------------------------------- found by real data, not by review (exp66) --
+def test_short_years_are_real_and_must_canonicalise():
+    """Extracted history says '476', '800', '1066'. Four review rounds missed
+    this; 4,000 real claims found it in one run."""
+    for y in ("476", "800", "1066", "1"):
+        assert h(Q, "inception", "time", {"t": y, "p": "year"})
+
+
+def test_zero_padding_does_not_fork_a_year():
+    """'476' and '0476' are the same year and must not become two facts."""
+    assert (h(Q, "inception", "time", {"t": "476", "p": "year"})
+            == h(Q, "inception", "time", {"t": "0476", "p": "year"}))
+    assert (h(Q, "inception", "time", {"t": "476-03", "p": "month"})
+            == h(Q, "inception", "time", {"t": "0476-03", "p": "month"}))
+
+
+def test_bce_refused_rather_than_mangled():
+    """Python's calendar starts at year 1. Refusing names the limitation;
+    silently coercing would fabricate a date."""
+    for bad in ("-0500", "0000"):
+        with pytest.raises(CanonError, match="not representable"):
+            h(Q, "inception", "time", {"t": bad, "p": "year"})
