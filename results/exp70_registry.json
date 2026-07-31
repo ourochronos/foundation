@@ -1,0 +1,34 @@
+{
+ "world_claims": 1208,
+ "papers": 253,
+ "subjects": 504,
+ "subjects_multi_paper": 0,
+ "objects": 950,
+ "objects_multi_paper": 90,
+ "bridged_entities": 252,
+ "entities_multi_paper_unified": 90,
+ "entities_total": 1202,
+ "paper_components": [
+  125,
+  6,
+  4,
+  3,
+  3,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "n_components": 112,
+ "triples": 1207,
+ "corroborated": 0,
+ "undirected_triples": 1207,
+ "corroborated_undirected": 0,
+ "verdicts": [
+  "R1 CONFIRMED: objects repeat across papers 90 times vs 0 for subjects \u2014 the graph connects through object position.",
+  "R2 CONFIRMED: a unified namespace puts 90 entities in more than one paper and links 125 of 253 papers into one component.",
+  "R3 CONFIRMED: corroboration stays at 0/1207 even undirected \u2014 a registry buys shared entities, not shared assertions."
+ ],
+ "scope": "World-facts only (P_EVALUATES_ON, P_BUILDS_ON, P_INTRODUCES, P_COMPARES_TO) \u2014 P_CITES is a bibliography fact and cannot corroborate by construction, and P_ASSERTS has free-text objects that never repeat. The oracle registry keys on slugged name across both argument positions, which is the ceiling for any name-based entity resolver."
+}

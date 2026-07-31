@@ -179,6 +179,45 @@ is epistemically a no-op — the merge succeeds and nothing is learned. The seed
 package is therefore load-bearing infrastructure rather than a convenience, and
 it belongs ahead of any further corpus work.
 
+## 7c. Connection is not corroboration — and it changes which corpus to use
+
+exp69 and exp70 chased the missing agreement signal to its root, and the answer
+is not what the seed argument assumed.
+
+| measurement | result |
+|---|---|
+| three corpora, shared triples | **0**, and 0 under an oracle entity aligner |
+| same-domain corpus (558 AI papers), subjects in >1 paper | **0 of 504** |
+| objects in >1 paper | 90 of 950 (9.5%) — `mmlu`, `gsm8k`, `llama-3`, `lora` |
+| entities appearing as both subject and object | 252 |
+| papers linked into one component by a unified namespace | **125 of 253** |
+| triples corroborated, even undirected, under that registry | **0 of 1207** |
+
+So a shared registry **does** work, for what it can do: it connects half the
+corpus into one traversable component. It simply does not produce agreement.
+**A registry buys shared entities; corroboration needs shared assertions**, and
+those are different things.
+
+**The deeper reason is structural and it disqualifies the research corpus for
+this purpose.** A paper exists to report something new. Two papers referencing
+one model say *different* things about it — that is the point of publishing.
+Scientific literature **cites rather than repeats**, so the corroboration
+machinery has almost nothing to count no matter how well entities are resolved.
+
+That is a real steer rather than a setback. Corroboration arises where
+independent observers state the *same* thing: encyclopedic sources (wiki
+measured 3.89%), replications, overlapping structured databases — and most
+directly, **the personal case this substrate is actually for**. An agent
+observing "prefers aisle seats" on Monday and again in March has genuine
+independent corroboration of one proposition, which is exactly the shape
+`agreement()` was built to count and exactly what the paper corpus cannot
+supply.
+
+**Consequence for sequencing**: the seed registry is still worth building, but
+for *traversal* rather than agreement, and the corroboration and refusal
+machinery should be exercised against personal-style observational data rather
+than against papers.
+
 ## 8. Still open — deliberately, and not in Layer 0
 
 - **Conflict detection is subsumption-blind.** `(X, mother_of, Y, +)` versus
