@@ -474,6 +474,7 @@ def test_query_refuses_rather_than_guessing():
 
 def test_query_returns_both_sides_of_a_disagreement():
     """The store structures disagreement; it must never pick."""
+    from foundation.model.conflict import Evidence
     from foundation.model.query import ask
     cs = [Claim("s.a:x", "P569", "time", {"t": "1907-05-22", "p": "day"},
                 claimant="agent:A", hash="H1",
@@ -487,6 +488,7 @@ def test_query_returns_both_sides_of_a_disagreement():
 
 def test_min_sources_refusal_counts_independent_evidence():
     """Two agents citing one document must not satisfy a two-source policy."""
+    from foundation.model.conflict import Evidence
     from foundation.model.query import ask
     same = [Claim("s.a:x", "P569", "text", "1900", claimant=f"agent:{n}",
                   hash=f"H{i}", evidence=(Evidence("span", "doc:one"),))
