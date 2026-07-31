@@ -528,3 +528,53 @@ def test_opposition_respects_scope():
               (("under_assumption", "text", "Compatibilism"),),
               claimant="pos:compatibilism")
     assert conflicts([a, b], None, lattice=L) == []
+
+
+# ------------------------------ nested assumption frames (political corpus) --
+def _frames():
+    """Political positions are points in a space, not labels: two can share an
+    economic axis while opposing on a social one."""
+    from foundation.model.predicates import Lattice
+    L = Lattice()
+    L.subsume("social democracy", "left economics")
+    L.subsume("democratic socialism", "left economics")
+    L.subsume("neoliberalism", "right economics")
+    L.oppose("increases", "decreases")
+    return L
+
+
+def _claim(pred, frame, pol=True):
+    return Claim("c:minimum-wage", pred, "entity", "c:unemployment", pol,
+                 (("under_assumption", "text", frame),),
+                 claimant=f"pos:{frame}")
+
+
+def test_sibling_frames_still_coexist():
+    """Two positions under the same broader frame are still distinct frames —
+    the coexistence under_assumption provides must survive the change."""
+    a, b = _claim("increases", "social democracy"), _claim("decreases", "democratic socialism")
+    assert conflicts([a, b], None, lattice=_frames()) == []
+
+
+def test_narrower_frame_conflicts_with_the_broader_one_it_entails():
+    """A claim held under Left economics applies to anyone accepting social
+    democracy, so the two CAN contradict — equality alone could never see it."""
+    a, b = _claim("increases", "left economics"), _claim("decreases", "social democracy")
+    L = _frames()
+    assert conflicts([a, b], None) == []                    # atomic: invisible
+    found = conflicts([a, b], None, lattice=L)
+    assert len(found) == 1 and found[0].kind == "opposition", found
+
+
+def test_unrelated_frames_do_not_conflict():
+    a = _claim("increases", "left economics")
+    b = _claim("decreases", "right economics")
+    assert conflicts([a, b], None, lattice=_frames()) == []
+
+
+def test_unscoped_claim_still_conflicts_with_any_frame():
+    """An unqualified claim is unrestricted and must remain disputable."""
+    a = Claim("c:minimum-wage", "increases", "entity", "c:unemployment", True,
+              claimant="pos:none")
+    b = _claim("decreases", "social democracy")
+    assert len(conflicts([a, b], None, lattice=_frames())) == 1

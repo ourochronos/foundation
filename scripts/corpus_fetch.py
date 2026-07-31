@@ -1,12 +1,17 @@
 """Fetch corpora chosen BECAUSE they should contain disagreement.
 
-Two domains, deliberately different in how their disagreement is shaped.
+Three domains, deliberately different in how their disagreement is shaped.
 **Economics** disputes are largely causal and empirical — what causes inflation,
 whether a minimum wage costs jobs — so competing schools assign different
 causes to the same effect. **Philosophy** disputes are definitional and
 normative, and its positions are named and self-identifying (compatibilism,
 physicalism, deontology), which makes attribution far cleaner in the text.
-Having both means a finding that holds in one and not the other is visible as
+**Politics** is the first corpus where positions should both disagree AND
+concur — and where a position is not one label but a point in a space, since
+two positions can share an economic axis while opposing on a social one. That
+partial overlap is something none of the earlier corpora could exercise.
+
+Having three means a finding that holds in one and not the others is visible as
 such, rather than being read as a property of disagreement in general.
 
 Every corpus so far was chosen for availability, and all of them turned out to
@@ -31,7 +36,7 @@ Two page sets, and both are needed. The *schools* supply the assumption labels;
 the *topics* are where the schools collide, and a corpus of schools alone would
 have the labels with nothing to attach them to.
 
-Usage: .venv/bin/python scripts/econ_fetch.py [econ|phil]
+Usage: .venv/bin/python scripts/corpus_fetch.py [econ|phil|pol]
 """
 from __future__ import annotations
 
@@ -86,6 +91,28 @@ PHIL_POSITIONS = [
     "Empiricism", "Rationalism", "Logical positivism", "Falsifiability",
     "Scientific realism", "Instrumentalism", "Social constructionism",
 ]
+POL_POSITIONS = [
+    "Social democracy", "Democratic socialism", "Socialism", "Marxism",
+    "Liberalism", "Classical liberalism", "Neoliberalism", "Social liberalism",
+    "Conservatism", "Fiscal conservatism", "Social conservatism",
+    "Neoconservatism", "Libertarianism", "Right-libertarianism",
+    "Left-libertarianism", "Anarchism", "Anarcho-capitalism",
+    "Nationalism", "Populism", "Progressivism", "Green politics",
+    "Communitarianism", "Christian democracy", "Distributism",
+    "Paleoconservatism", "Technocracy", "Agrarianism", "Syndicalism",
+]
+POL_TOPICS = [
+    "Tax", "Progressive tax", "Flat tax", "Wealth tax", "Carbon tax",
+    "Immigration", "Border control", "Universal health care",
+    "Single-payer healthcare", "Welfare state", "Trade union",
+    "Gun control", "Capital punishment", "Climate change mitigation",
+    "Protectionism", "Globalization", "School choice", "Public education",
+    "Drug liberalization", "Criminal justice reform", "Regulation",
+    "Deregulation", "Nationalization", "Privatization", "Foreign aid",
+    "Military budget", "Land value tax", "Universal basic income",
+    "Affirmative action", "Censorship", "Surveillance", "Civil liberties",
+]
+
 PHIL_TOPICS = [
     "Free will", "Determinism", "Mind–body problem", "Consciousness",
     "Hard problem of consciousness", "Qualia", "Personal identity",
@@ -128,8 +155,9 @@ def fetch(titles):
     return got
 
 
-POSITIONS, SUBJECTS = ((SCHOOLS, TOPICS) if DOMAIN == "econ"
-                       else (PHIL_POSITIONS, PHIL_TOPICS))
+POSITIONS, SUBJECTS = {"econ": (SCHOOLS, TOPICS),
+                       "phil": (PHIL_POSITIONS, PHIL_TOPICS),
+                       "pol": (POL_POSITIONS, POL_TOPICS)}[DOMAIN]
 print(f"domain={DOMAIN}  positions: {len(POSITIONS)}   topics: {len(SUBJECTS)}",
       flush=True)
 n = fetch(POSITIONS) + fetch(SUBJECTS)

@@ -82,7 +82,8 @@ def ask(claims, subject: str, predicate: str, closure=None, lattice=None,
     hits = [c for c in claims
             if canon(c.subject) == subj and norm_text(c.predicate) in wanted
             and c.polarity
-            and (scope is None or scopes_overlap(_tc(c.qualifiers), scope))]
+            and (scope is None
+                 or scopes_overlap(_tc(c.qualifiers), scope, lattice))]
 
     adj = Adjudication(subj, pred, expanded_from=wanted - {pred})
     if not hits:

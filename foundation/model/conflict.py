@@ -79,20 +79,40 @@ def _time_bounds(quals: dict) -> tuple:
     return (lo, hi)
 
 
-def scopes_overlap(qa: dict, qb: dict) -> bool:
+def scopes_overlap(qa: dict, qb: dict, lattice=None) -> bool:
     """Do two qualifier sets describe conditions that can hold together?
 
     An ABSENT qualifier is unrestricted and therefore overlaps everything. That
     single rule is what stops an agent evading dispute by adding a qualifier
     nobody else used.
+
+    **Assumptions are not atomic.** Equality alone treats every frame as
+    unrelated, which is right for `Compatibilism` versus `Hard determinism` and
+    wrong the moment frames nest: a claim held under `Left economics` and one
+    held under `Social democracy` DO both apply to anyone who accepts social
+    democracy, so they can genuinely contradict. Political positions make this
+    unavoidable — a position is a point in a space, not a label, and two of them
+    can share an economic axis while opposing on a social one.
+
+    So when an assumption lattice is supplied, two scopes overlap if **either
+    assumption entails the other**. Sibling frames still do not overlap, which
+    keeps the coexistence that `under_assumption` exists to provide; only the
+    narrower-within-broader case is newly comparable. This is the same
+    entailment relation used for predicates, applied to a different vocabulary —
+    no new machinery.
     """
     ta, tb = _time_bounds(qa), _time_bounds(qb)
     if not (ta[0] < tb[1] and tb[0] < ta[1]):
         return False
-    for k in ("valid_place", "under_assumption"):
-        va, vb = qa.get(k), qb.get(k)
-        if va is not None and vb is not None and va != vb:
-            return False          # different stated scope; both may hold
+    if qa.get("valid_place") is not None and qb.get("valid_place") is not None \
+            and qa["valid_place"] != qb["valid_place"]:
+        return False
+    va, vb = qa.get("under_assumption"), qb.get("under_assumption")
+    if va is not None and vb is not None and va != vb:
+        if lattice is None:
+            return False      # atomic frames: different means unrelated
+        a, b = norm_text(str(va)), norm_text(str(vb))
+        return lattice.entails(a, b) or lattice.entails(b, a)
     return True
 
 
@@ -310,7 +330,8 @@ def _opposition_conflicts(claims, closure, lattice) -> list[Conflict]:
         for i, a in enumerate(group):
             for b in group[i + 1:]:
                 if lattice.opposes(norm_text(a.predicate), norm_text(b.predicate)) \
-                        and scopes_overlap(_tc(a.qualifiers), _tc(b.qualifiers)):
+                        and scopes_overlap(_tc(a.qualifiers), _tc(b.qualifiers),
+                                           lattice):
                     out.append(Conflict("opposition", a, b))
     return out
 
@@ -339,7 +360,7 @@ def _subsumption_conflicts(claims, closure, lattice) -> list[Conflict]:
                 pa, pb = norm_text(a.predicate), norm_text(b.predicate)
                 if pa == pb or not lattice.entails(pa, pb):
                     continue                      # same-predicate case handled above
-                if scopes_overlap(_tc(a.qualifiers), _tc(b.qualifiers)):
+                if scopes_overlap(_tc(a.qualifiers), _tc(b.qualifiers), lattice):
                     out.append(Conflict("subsumption", a, b))
     return out
 
@@ -359,7 +380,8 @@ def conflicts(claims, closure=None, functional=frozenset(),
     for (_, pred), group in sorted(by_sp.items()):
         for i, a in enumerate(group):
             for b in group[i + 1:]:
-                if not scopes_overlap(_tc(a.qualifiers), _tc(b.qualifiers)):
+                if not scopes_overlap(_tc(a.qualifiers), _tc(b.qualifiers),
+                                      lattice):
                     continue
                 same_obj = (
                     proposition_key(a, closure, with_polarity=False,
