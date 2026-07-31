@@ -1,6 +1,6 @@
-# Current state — 2026-07-30 (probes complete and GATED; through D170)
+# Current state — 2026-07-30 (encoder arc CLOSED, swap declined; through D172)
 
-**Fastest orientation**: [decisions.md](decisions.md) D170 → D169 → D158, then
+**Fastest orientation**: [decisions.md](decisions.md) D172 → D170 → D158, then
 "where a pivot lands" at the bottom. **Nothing is running.** Working tree clean
 apart from three soak-log files that rewrite themselves.
 
@@ -53,8 +53,10 @@ another script; recomputed in-run it is 0.8138.
 transfer in raw label space: M3 **0.0032** (below chance), EmbeddingGemma
 **0.1709** — 53×, identical task and head. So D125's basis rescue
 (0.293 → 0.742) is substantially evidence that *M3 needed rescuing*.
-**⚠ Does not carry end-to-end**: with the store participating the encoders
-cross on the refusal frontier and the swap is a trade, not an upgrade (D170).
+**⚠ Does not carry end-to-end, and the swap was DECLINED (D172).** With the
+store participating the encoders cross on the refusal frontier (D170), and
+with the answer-type gate active on both arms M3 wins every axis — including
+depth-2 answering by 0.173. Three gates, three failures to carry.
 
 **Anchors should SEPARATE relations, not cover them — AT IDENTIFICATION LEVEL
 ONLY** (D165). Top-K eigenvectors of the between-relation scatter
@@ -136,6 +138,18 @@ to a point where it answered 31% of novel questions at 98% precision while the
 other answered 79% at 95%. Reported as a −0.44 loss; actually two points on a
 frontier. The tell was the abstain column, not the verdict.
 
+**Check the intervention against its OWN control before any cross-arm claim.**
+Three scripts in a row printed a confident verdict comparing the wrong pair:
+exp52 tested the best planner first, so a *store-filtered* planner matching the
+walker printed "the model can plan without the store"; exp53 called a
+trade-off "as stated" on a wrongness cost that was 9.8% of the gain; exp62
+announced "GATE RECOVERS IT" having never checked gate-ON against gate-OFF —
+the gate had made both encoders worse and merely damaged one less. D172's
+two-step structure (control first, cross-arm only if the control passes) is the
+fix, and it converted what would have been a lucky right answer into an
+argued one. **Treat the verdict string as the least trustworthy line in any of
+these scripts.**
+
 ---
 
 ## Standing facts from earlier phases
@@ -178,16 +192,30 @@ better above it. Saturated, M3 reaches 0.785 correct / 0.205 wrong and Gemma
 faster. **Gemma is better at answering and worse at knowing when not to**, and
 this system is built around refusing rather than guessing.
 
-**The deciding experiment, unrun**: the answer-type gate (D134) under Gemma. It
-is a *separate mechanism* from the residual threshold, was absent from every
-run in D164–D170, and lifted M3's not-applicable refusal 0.050 → 0.693. If it
-does the same for Gemma the swap becomes a clean win at the operating region
-that matters; if not, the arc ends with an encoder better at what this project
-values less.
+**The arc is CLOSED and the swap is DECLINED (D172).** The answer-type gate
+was the deciding experiment and it has run. On D134's own mixed benchmark the
+gate reproduces for both encoders (not-applicable refusal +0.322 M3, +0.405
+Gemma) — and with it enabled on both, **M3 wins every axis**: not_applicable
+−0.013, chain_break −0.065, depth-1 answering −0.053, depth-2 answering −0.173.
+Dominance, not a trade.
+
+So Gemma's 53× identification advantage did not survive the store (D169), the
+refusal frontier (D170), or the gate (D172). **Three gates, three failures to
+carry.** The pipeline stays on BGE-M3 + `whiten_v0` at 1024-d with
+`K_BASIS=48` k-means-on-labels — now a *confirmed* configuration rather than a
+default nobody had challenged.
+
+**The live defect this arc turned up is in the CURRENT pipeline**, and it is
+bigger than what the arc was chasing: the answer-type gate costs **−0.243** on
+M3's depth-2 answering (−0.300 on Gemma's). D134 reported the depth-1 cost and
+the depth-2 *wrongness* change but never depth-2 **correct**, so the shipped
+configuration has been removing roughly a quarter of correct two-hop answers
+unmeasured. A depth-aware or per-depth-calibrated gate is the obvious
+candidate and is unrun.
 
 If the swap ever proceeds, in order:
 
-1. the answer-type gate under Gemma (above) — decisive;
+1. ~~the answer-type gate under Gemma~~ **done at D172 — swap declined**;
 2. ~~`K_BASIS=48` → `lda_between` K=32~~ **withdrawn at D169**;
 3. the codec identity producer. EmbeddingGemma is dense-only, so M3's sparse
    lexical channel has no successor. `codec/decoder.py` already consumes
