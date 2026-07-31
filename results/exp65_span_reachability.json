@@ -1,0 +1,1122 @@
+{
+ "manifest": {
+  "generated_at": "2026-07-31T17:27:56.712125+00:00",
+  "commit": "c2c9338e2b17ae535eedfd15d3e9f2190d3af489",
+  "dirty": true,
+  "command": "scripts/exp65_span_reachability.py both",
+  "seed": 0,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.4.4",
+   "torch": "2.13.0+rocm7.2",
+   "gpu": "AMD Radeon RX 9070"
+  },
+  "config": {
+   "N_HOLD_REL": 12
+  }
+ },
+ "n_relations": 56,
+ "n_trained": 44,
+ "chance": 0.0179,
+ "cells": {
+  "m3": [
+   {
+    "basis": "raw_label_space",
+    "K": 1024,
+    "rank": 44,
+    "span_reach": 0.7632,
+    "convex_reach": 0.7276,
+    "convex_loo_trained": 0.7055,
+    "coef_l1": 2.904,
+    "pair_cos": 0.3388,
+    "novel": 0.0032
+   },
+   {
+    "basis": "dense_random_2048",
+    "K": 2048,
+    "rank": 44,
+    "span_reach": 0.7723,
+    "convex_reach": 0.7339,
+    "convex_loo_trained": 0.7136,
+    "coef_l1": 3.014,
+    "pair_cos": 0.3463,
+    "novel": 0.0053
+   },
+   {
+    "basis": "kmeans_label_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.9997,
+    "coef_l1": 1.198,
+    "pair_cos": 0.9675,
+    "novel": 0.1303
+   },
+   {
+    "basis": "kmeans_label_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 0.9998,
+    "convex_loo_trained": 0.9968,
+    "coef_l1": 1.475,
+    "pair_cos": 0.9484,
+    "novel": 0.1154
+   },
+   {
+    "basis": "kmeans_label_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.9992,
+    "convex_loo_trained": 0.9904,
+    "coef_l1": 1.862,
+    "pair_cos": 0.9278,
+    "novel": 0.1175
+   },
+   {
+    "basis": "kmeans_label_K32",
+    "K": 32,
+    "rank": 28,
+    "span_reach": 1.0,
+    "convex_reach": 0.9984,
+    "convex_loo_trained": 0.9748,
+    "coef_l1": 3.517,
+    "pair_cos": 0.9046,
+    "novel": 0.1111
+   },
+   {
+    "basis": "kmeans_label_K43",
+    "K": 43,
+    "rank": 33,
+    "span_reach": 1.0,
+    "convex_reach": 0.9979,
+    "convex_loo_trained": 0.9679,
+    "coef_l1": 13.748,
+    "pair_cos": 0.8934,
+    "novel": 0.2361
+   },
+   {
+    "basis": "pca_label_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 1.0,
+    "coef_l1": 1.556,
+    "pair_cos": 0.1957,
+    "novel": 0.0983
+   },
+   {
+    "basis": "pca_label_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.9773,
+    "coef_l1": 2.057,
+    "pair_cos": 0.269,
+    "novel": 0.1058
+   },
+   {
+    "basis": "pca_label_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.9963,
+    "convex_loo_trained": 0.9183,
+    "coef_l1": 2.672,
+    "pair_cos": 0.2247,
+    "novel": 0.1068
+   },
+   {
+    "basis": "pca_label_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.9631,
+    "convex_loo_trained": 0.6865,
+    "coef_l1": 3.433,
+    "pair_cos": 0.1839,
+    "novel": 0.2233
+   },
+   {
+    "basis": "pca_label_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.9322,
+    "convex_loo_trained": 0.6044,
+    "coef_l1": 4.254,
+    "pair_cos": 0.1903,
+    "novel": 0.2137
+   },
+   {
+    "basis": "lda_between_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 1.0,
+    "coef_l1": 1.628,
+    "pair_cos": 0.2695,
+    "novel": 0.0876
+   },
+   {
+    "basis": "lda_between_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.9873,
+    "coef_l1": 2.087,
+    "pair_cos": 0.2146,
+    "novel": 0.1357
+   },
+   {
+    "basis": "lda_between_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.9298,
+    "convex_loo_trained": 0.9157,
+    "coef_l1": 3.533,
+    "pair_cos": 0.1726,
+    "novel": 0.2009
+   },
+   {
+    "basis": "lda_between_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.8543,
+    "convex_loo_trained": 0.8023,
+    "coef_l1": 6.222,
+    "pair_cos": 0.1839,
+    "novel": 0.2767
+   },
+   {
+    "basis": "lda_between_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.8382,
+    "convex_loo_trained": 0.7784,
+    "coef_l1": 23.735,
+    "pair_cos": 0.2106,
+    "novel": 0.2393
+   },
+   {
+    "basis": "lda_range_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.9806,
+    "coef_l1": 1.459,
+    "pair_cos": 0.8347,
+    "novel": 0.0053
+   },
+   {
+    "basis": "lda_range_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 0.9962,
+    "convex_loo_trained": 0.9717,
+    "coef_l1": 2.156,
+    "pair_cos": 0.7795,
+    "novel": 0.0331
+   },
+   {
+    "basis": "lda_range_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.9708,
+    "convex_loo_trained": 0.9454,
+    "coef_l1": 3.464,
+    "pair_cos": 0.7217,
+    "novel": 0.0406
+   },
+   {
+    "basis": "lda_range_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.9462,
+    "convex_loo_trained": 0.9131,
+    "coef_l1": 7.197,
+    "pair_cos": 0.6571,
+    "novel": 0.0417
+   },
+   {
+    "basis": "lda_range_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.9346,
+    "convex_loo_trained": 0.8977,
+    "coef_l1": 19.909,
+    "pair_cos": 0.6335,
+    "novel": 0.0363
+   },
+   {
+    "basis": "kmeans_offset_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.9884,
+    "coef_l1": 1.347,
+    "pair_cos": 0.9024,
+    "novel": 0.0224
+   },
+   {
+    "basis": "kmeans_offset_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 0.9982,
+    "convex_loo_trained": 0.9807,
+    "coef_l1": 2.324,
+    "pair_cos": 0.8718,
+    "novel": 0.0192
+   },
+   {
+    "basis": "kmeans_offset_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.9939,
+    "convex_loo_trained": 0.9776,
+    "coef_l1": 3.68,
+    "pair_cos": 0.8632,
+    "novel": 0.016
+   },
+   {
+    "basis": "kmeans_offset_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.9886,
+    "convex_loo_trained": 0.9669,
+    "coef_l1": 7.256,
+    "pair_cos": 0.8486,
+    "novel": 0.0331
+   },
+   {
+    "basis": "kmeans_offset_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.9817,
+    "convex_loo_trained": 0.9608,
+    "coef_l1": 20.706,
+    "pair_cos": 0.8214,
+    "novel": 0.0053
+   },
+   {
+    "basis": "kmeans_offset_K64",
+    "K": 64,
+    "rank": 44,
+    "span_reach": 0.9928,
+    "convex_reach": 0.9652,
+    "convex_loo_trained": 0.9423,
+    "coef_l1": 10.35,
+    "pair_cos": 0.802,
+    "novel": 0.0021
+   },
+   {
+    "basis": "kmeans_offset_K128",
+    "K": 128,
+    "rank": 44,
+    "span_reach": 0.9851,
+    "convex_reach": 0.9624,
+    "convex_loo_trained": 0.9384,
+    "coef_l1": 5.77,
+    "pair_cos": 0.7858,
+    "novel": 0.016
+   },
+   {
+    "basis": "kmeans_offset_K256",
+    "K": 256,
+    "rank": 44,
+    "span_reach": 0.9751,
+    "convex_reach": 0.9543,
+    "convex_loo_trained": 0.9304,
+    "coef_l1": 4.855,
+    "pair_cos": 0.778,
+    "novel": 0.0011
+   },
+   {
+    "basis": "entity_complement_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 0.9158,
+    "convex_loo_trained": 0.9956,
+    "coef_l1": 1.599,
+    "pair_cos": 0.4945,
+    "novel": 0.0705
+   },
+   {
+    "basis": "entity_complement_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 0.9283,
+    "convex_loo_trained": 0.9836,
+    "coef_l1": 2.13,
+    "pair_cos": 0.3479,
+    "novel": 0.1966
+   },
+   {
+    "basis": "entity_complement_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.9003,
+    "convex_loo_trained": 0.921,
+    "coef_l1": 2.983,
+    "pair_cos": 0.2762,
+    "novel": 0.1709
+   },
+   {
+    "basis": "entity_complement_K32",
+    "K": 32,
+    "rank": 30,
+    "span_reach": 1.0,
+    "convex_reach": 0.8705,
+    "convex_loo_trained": 0.8271,
+    "coef_l1": 5.851,
+    "pair_cos": 0.219,
+    "novel": 0.3173
+   },
+   {
+    "basis": "entity_complement_K43",
+    "K": 43,
+    "rank": 33,
+    "span_reach": 1.0,
+    "convex_reach": 0.8656,
+    "convex_loo_trained": 0.831,
+    "coef_l1": 26.193,
+    "pair_cos": 0.2116,
+    "novel": 0.3056
+   },
+   {
+    "basis": "random_orthonormal_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 1.0,
+    "coef_l1": 1.615,
+    "pair_cos": 0.4952,
+    "novel": 0.1026
+   },
+   {
+    "basis": "random_orthonormal_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 0.9593,
+    "convex_loo_trained": 0.9582,
+    "coef_l1": 2.431,
+    "pair_cos": 0.2908,
+    "novel": 0.0844
+   },
+   {
+    "basis": "random_orthonormal_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.8764,
+    "convex_loo_trained": 0.8985,
+    "coef_l1": 4.263,
+    "pair_cos": 0.4129,
+    "novel": 0.0246
+   },
+   {
+    "basis": "random_orthonormal_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.8342,
+    "convex_loo_trained": 0.7995,
+    "coef_l1": 7.156,
+    "pair_cos": 0.3178,
+    "novel": 0.0064
+   },
+   {
+    "basis": "random_orthonormal_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.833,
+    "convex_loo_trained": 0.791,
+    "coef_l1": 33.849,
+    "pair_cos": 0.3568,
+    "novel": 0.0107
+   },
+   {
+    "basis": "random_orthonormal_K64",
+    "K": 64,
+    "rank": 44,
+    "span_reach": 0.936,
+    "convex_reach": 0.7923,
+    "convex_loo_trained": 0.7689,
+    "coef_l1": 8.75,
+    "pair_cos": 0.3355,
+    "novel": 0.0919
+   },
+   {
+    "basis": "random_orthonormal_K128",
+    "K": 128,
+    "rank": 44,
+    "span_reach": 0.8457,
+    "convex_reach": 0.7547,
+    "convex_loo_trained": 0.74,
+    "coef_l1": 5.03,
+    "pair_cos": 0.339,
+    "novel": 0.0278
+   },
+   {
+    "basis": "random_orthonormal_K256",
+    "K": 256,
+    "rank": 44,
+    "span_reach": 0.8034,
+    "convex_reach": 0.7448,
+    "convex_loo_trained": 0.727,
+    "coef_l1": 3.768,
+    "pair_cos": 0.3479,
+    "novel": 0.0021
+   },
+   {
+    "basis": "sae_x2_l10.001",
+    "K": 2048,
+    "rank": 44,
+    "span_reach": 0.8195,
+    "convex_reach": 0.8067,
+    "convex_loo_trained": 0.8031,
+    "coef_l1": 2.333,
+    "pair_cos": 0.5429,
+    "novel": 0.0
+   },
+   {
+    "basis": "sae_x2_l10.01",
+    "K": 2048,
+    "rank": 44,
+    "span_reach": 0.5989,
+    "convex_reach": 0.5784,
+    "convex_loo_trained": 0.5632,
+    "coef_l1": 1.862,
+    "pair_cos": 0.1801,
+    "novel": 0.0182
+   }
+  ],
+  "gemma_symmetric": [
+   {
+    "basis": "raw_label_space",
+    "K": 768,
+    "rank": 44,
+    "span_reach": 0.8855,
+    "convex_reach": 0.8669,
+    "convex_loo_trained": 0.8452,
+    "coef_l1": 2.991,
+    "pair_cos": 0.5956,
+    "novel": 0.1709
+   },
+   {
+    "basis": "dense_random_2048",
+    "K": 2048,
+    "rank": 44,
+    "span_reach": 0.8876,
+    "convex_reach": 0.8675,
+    "convex_loo_trained": 0.8478,
+    "coef_l1": 3.115,
+    "pair_cos": 0.5994,
+    "novel": 0.172
+   },
+   {
+    "basis": "kmeans_label_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.9999,
+    "coef_l1": 1.139,
+    "pair_cos": 0.9955,
+    "novel": 0.0951
+   },
+   {
+    "basis": "kmeans_label_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.9998,
+    "coef_l1": 1.351,
+    "pair_cos": 0.9909,
+    "novel": 0.4028
+   },
+   {
+    "basis": "kmeans_label_K16",
+    "K": 16,
+    "rank": 15,
+    "span_reach": 1.0,
+    "convex_reach": 0.9999,
+    "convex_loo_trained": 0.9986,
+    "coef_l1": 2.166,
+    "pair_cos": 0.9876,
+    "novel": 0.4252
+   },
+   {
+    "basis": "kmeans_label_K32",
+    "K": 32,
+    "rank": 29,
+    "span_reach": 1.0,
+    "convex_reach": 0.9998,
+    "convex_loo_trained": 0.9972,
+    "coef_l1": 3.954,
+    "pair_cos": 0.986,
+    "novel": 0.359
+   },
+   {
+    "basis": "kmeans_label_K43",
+    "K": 43,
+    "rank": 29,
+    "span_reach": 1.0,
+    "convex_reach": 0.9998,
+    "convex_loo_trained": 0.9974,
+    "coef_l1": 52.348,
+    "pair_cos": 0.9854,
+    "novel": 0.3942
+   },
+   {
+    "basis": "pca_label_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 1.0,
+    "coef_l1": 1.65,
+    "pair_cos": 0.1604,
+    "novel": 0.4006
+   },
+   {
+    "basis": "pca_label_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.983,
+    "coef_l1": 2.02,
+    "pair_cos": 0.2226,
+    "novel": 0.36
+   },
+   {
+    "basis": "pca_label_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.9987,
+    "convex_loo_trained": 0.9213,
+    "coef_l1": 2.673,
+    "pair_cos": 0.1846,
+    "novel": 0.2564
+   },
+   {
+    "basis": "pca_label_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.9684,
+    "convex_loo_trained": 0.7176,
+    "coef_l1": 3.267,
+    "pair_cos": 0.2032,
+    "novel": 0.3483
+   },
+   {
+    "basis": "pca_label_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.9456,
+    "convex_loo_trained": 0.6532,
+    "coef_l1": 4.146,
+    "pair_cos": 0.2159,
+    "novel": 0.3697
+   },
+   {
+    "basis": "lda_between_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 1.0,
+    "coef_l1": 1.635,
+    "pair_cos": 0.137,
+    "novel": 0.2308
+   },
+   {
+    "basis": "lda_between_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.9906,
+    "coef_l1": 2.225,
+    "pair_cos": 0.2269,
+    "novel": 0.3632
+   },
+   {
+    "basis": "lda_between_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.965,
+    "convex_loo_trained": 0.9035,
+    "coef_l1": 3.031,
+    "pair_cos": 0.2616,
+    "novel": 0.4145
+   },
+   {
+    "basis": "lda_between_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.9148,
+    "convex_loo_trained": 0.8224,
+    "coef_l1": 5.827,
+    "pair_cos": 0.265,
+    "novel": 0.453
+   },
+   {
+    "basis": "lda_between_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.9,
+    "convex_loo_trained": 0.802,
+    "coef_l1": 17.575,
+    "pair_cos": 0.2913,
+    "novel": 0.4177
+   },
+   {
+    "basis": "lda_range_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 0.9991,
+    "convex_loo_trained": 0.9937,
+    "coef_l1": 1.483,
+    "pair_cos": 0.7226,
+    "novel": 0.2244
+   },
+   {
+    "basis": "lda_range_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 0.9943,
+    "convex_loo_trained": 0.9826,
+    "coef_l1": 1.928,
+    "pair_cos": 0.764,
+    "novel": 0.2735
+   },
+   {
+    "basis": "lda_range_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.9854,
+    "convex_loo_trained": 0.9678,
+    "coef_l1": 3.112,
+    "pair_cos": 0.7479,
+    "novel": 0.3088
+   },
+   {
+    "basis": "lda_range_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.9686,
+    "convex_loo_trained": 0.9429,
+    "coef_l1": 7.931,
+    "pair_cos": 0.7123,
+    "novel": 0.2062
+   },
+   {
+    "basis": "lda_range_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.9623,
+    "convex_loo_trained": 0.9359,
+    "coef_l1": 49.912,
+    "pair_cos": 0.7033,
+    "novel": 0.2041
+   },
+   {
+    "basis": "kmeans_offset_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 1.0,
+    "convex_loo_trained": 0.995,
+    "coef_l1": 1.422,
+    "pair_cos": 0.7361,
+    "novel": 0.0385
+   },
+   {
+    "basis": "kmeans_offset_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 0.9972,
+    "convex_loo_trained": 0.9846,
+    "coef_l1": 1.933,
+    "pair_cos": 0.8176,
+    "novel": 0.0812
+   },
+   {
+    "basis": "kmeans_offset_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.995,
+    "convex_loo_trained": 0.9775,
+    "coef_l1": 3.242,
+    "pair_cos": 0.7501,
+    "novel": 0.1036
+   },
+   {
+    "basis": "kmeans_offset_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.9858,
+    "convex_loo_trained": 0.9653,
+    "coef_l1": 8.211,
+    "pair_cos": 0.7166,
+    "novel": 0.14
+   },
+   {
+    "basis": "kmeans_offset_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.9864,
+    "convex_loo_trained": 0.9647,
+    "coef_l1": 24.309,
+    "pair_cos": 0.715,
+    "novel": 0.1581
+   },
+   {
+    "basis": "kmeans_offset_K64",
+    "K": 64,
+    "rank": 44,
+    "span_reach": 0.9911,
+    "convex_reach": 0.9601,
+    "convex_loo_trained": 0.9317,
+    "coef_l1": 9.925,
+    "pair_cos": 0.7124,
+    "novel": 0.188
+   },
+   {
+    "basis": "kmeans_offset_K128",
+    "K": 128,
+    "rank": 44,
+    "span_reach": 0.9674,
+    "convex_reach": 0.9295,
+    "convex_loo_trained": 0.9125,
+    "coef_l1": 6.554,
+    "pair_cos": 0.6128,
+    "novel": 0.1944
+   },
+   {
+    "basis": "kmeans_offset_K256",
+    "K": 256,
+    "rank": 44,
+    "span_reach": 0.9708,
+    "convex_reach": 0.9457,
+    "convex_loo_trained": 0.9222,
+    "coef_l1": 5.014,
+    "pair_cos": 0.6884,
+    "novel": 0.2361
+   },
+   {
+    "basis": "entity_complement_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 0.9881,
+    "convex_loo_trained": 0.994,
+    "coef_l1": 1.636,
+    "pair_cos": 0.5663,
+    "novel": 0.2607
+   },
+   {
+    "basis": "entity_complement_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 0.9723,
+    "convex_loo_trained": 0.9835,
+    "coef_l1": 2.121,
+    "pair_cos": 0.4312,
+    "novel": 0.2511
+   },
+   {
+    "basis": "entity_complement_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.947,
+    "convex_loo_trained": 0.9537,
+    "coef_l1": 2.817,
+    "pair_cos": 0.3568,
+    "novel": 0.3291
+   },
+   {
+    "basis": "entity_complement_K32",
+    "K": 32,
+    "rank": 29,
+    "span_reach": 1.0,
+    "convex_reach": 0.9306,
+    "convex_loo_trained": 0.8587,
+    "coef_l1": 6.355,
+    "pair_cos": 0.3123,
+    "novel": 0.3718
+   },
+   {
+    "basis": "entity_complement_K43",
+    "K": 43,
+    "rank": 35,
+    "span_reach": 1.0,
+    "convex_reach": 0.9217,
+    "convex_loo_trained": 0.853,
+    "coef_l1": 39.582,
+    "pair_cos": 0.2759,
+    "novel": 0.3526
+   },
+   {
+    "basis": "random_orthonormal_K4",
+    "K": 4,
+    "rank": 4,
+    "span_reach": 1.0,
+    "convex_reach": 0.9992,
+    "convex_loo_trained": 0.9937,
+    "coef_l1": 1.485,
+    "pair_cos": 0.7594,
+    "novel": 0.1496
+   },
+   {
+    "basis": "random_orthonormal_K8",
+    "K": 8,
+    "rank": 8,
+    "span_reach": 1.0,
+    "convex_reach": 0.9861,
+    "convex_loo_trained": 0.9615,
+    "coef_l1": 2.415,
+    "pair_cos": 0.3548,
+    "novel": 0.1859
+   },
+   {
+    "basis": "random_orthonormal_K16",
+    "K": 16,
+    "rank": 16,
+    "span_reach": 1.0,
+    "convex_reach": 0.9351,
+    "convex_loo_trained": 0.9326,
+    "coef_l1": 3.742,
+    "pair_cos": 0.6126,
+    "novel": 0.1774
+   },
+   {
+    "basis": "random_orthonormal_K32",
+    "K": 32,
+    "rank": 32,
+    "span_reach": 1.0,
+    "convex_reach": 0.8826,
+    "convex_loo_trained": 0.8752,
+    "coef_l1": 9.181,
+    "pair_cos": 0.5456,
+    "novel": 0.1731
+   },
+   {
+    "basis": "random_orthonormal_K43",
+    "K": 43,
+    "rank": 43,
+    "span_reach": 1.0,
+    "convex_reach": 0.8805,
+    "convex_loo_trained": 0.8679,
+    "coef_l1": 66.315,
+    "pair_cos": 0.5386,
+    "novel": 0.2874
+   },
+   {
+    "basis": "random_orthonormal_K64",
+    "K": 64,
+    "rank": 44,
+    "span_reach": 0.965,
+    "convex_reach": 0.9106,
+    "convex_loo_trained": 0.8937,
+    "coef_l1": 8.271,
+    "pair_cos": 0.6606,
+    "novel": 0.1709
+   },
+   {
+    "basis": "random_orthonormal_K128",
+    "K": 128,
+    "rank": 44,
+    "span_reach": 0.9109,
+    "convex_reach": 0.8613,
+    "convex_loo_trained": 0.8455,
+    "coef_l1": 4.942,
+    "pair_cos": 0.5589,
+    "novel": 0.172
+   },
+   {
+    "basis": "random_orthonormal_K256",
+    "K": 256,
+    "rank": 44,
+    "span_reach": 0.9057,
+    "convex_reach": 0.8803,
+    "convex_loo_trained": 0.8591,
+    "coef_l1": 3.595,
+    "pair_cos": 0.6218,
+    "novel": 0.1709
+   },
+   {
+    "basis": "sae_x2_l10.001",
+    "K": 1536,
+    "rank": 44,
+    "span_reach": 0.8268,
+    "convex_reach": 0.8124,
+    "convex_loo_trained": 0.7933,
+    "coef_l1": 2.391,
+    "pair_cos": 0.5049,
+    "novel": 0.1709
+   },
+   {
+    "basis": "sae_x2_l10.01",
+    "K": 1536,
+    "rank": 44,
+    "span_reach": 0.5714,
+    "convex_reach": 0.5591,
+    "convex_loo_trained": 0.5172,
+    "coef_l1": 1.681,
+    "pair_cos": 0.1292,
+    "novel": 0.0
+   }
+  ]
+ },
+ "correlations": {
+  "m3": {
+   "n_cells": 45,
+   "span_reach_vs_novel": 0.3433,
+   "convex_reach_vs_novel": 0.1169,
+   "convex_loo_trained_vs_novel": -0.0764,
+   "coef_l1_vs_novel": 0.142,
+   "pair_cos_vs_novel": -0.406
+  },
+  "gemma_symmetric": {
+   "n_cells": 45,
+   "span_reach_vs_novel": 0.4346,
+   "convex_reach_vs_novel": 0.3235,
+   "convex_loo_trained_vs_novel": 0.0694,
+   "coef_l1_vs_novel": 0.1503,
+   "pair_cos_vs_novel": -0.2512
+  }
+ },
+ "sufficiency": {
+  "m3": {
+   "n_high_span": 36,
+   "n_low_span": 6,
+   "high_span_novel_range": [
+    0.0021,
+    0.3173
+   ],
+   "low_span_novel_max": 0.0278
+  },
+  "gemma_symmetric": {
+   "n_high_span": 36,
+   "n_low_span": 4,
+   "high_span_novel_range": [
+    0.0385,
+    0.453
+   ],
+   "low_span_novel_max": 0.172
+  }
+ },
+ "within_strategy": {
+  "m3": {
+   "entity_complement": {
+    "span_reach": null,
+    "convex_reach": -0.801
+   },
+   "kmeans_label": {
+    "span_reach": null,
+    "convex_reach": -0.644
+   },
+   "kmeans_offset": {
+    "span_reach": 0.545,
+    "convex_reach": 0.667
+   },
+   "lda_between": {
+    "span_reach": null,
+    "convex_reach": -0.935
+   },
+   "lda_range": {
+    "span_reach": null,
+    "convex_reach": -0.657
+   },
+   "pca_label": {
+    "span_reach": null,
+    "convex_reach": -0.91
+   },
+   "random_orthonormal": {
+    "span_reach": 0.323,
+    "convex_reach": 0.632
+   }
+  },
+  "gemma_symmetric": {
+   "entity_complement": {
+    "span_reach": null,
+    "convex_reach": -0.935
+   },
+   "kmeans_label": {
+    "span_reach": null,
+    "convex_reach": -0.468
+   },
+   "kmeans_offset": {
+    "span_reach": -0.755,
+    "convex_reach": -0.856
+   },
+   "lda_between": {
+    "span_reach": null,
+    "convex_reach": -0.741
+   },
+   "lda_range": {
+    "span_reach": null,
+    "convex_reach": 0.523
+   },
+   "pca_label": {
+    "span_reach": null,
+    "convex_reach": -0.216
+   },
+   "random_orthonormal": {
+    "span_reach": 0.258,
+    "convex_reach": -0.324
+   }
+  }
+ },
+ "span_reach_degenerate": true,
+ "verdict": "UNSUPPORTED \u2014 span_reach r=+0.389 on a degenerate measure, and its non-degenerate form convex_reach only reaches r=+0.220. Reachability/interpolability does not explain novel transfer, so D174's post-hoc explanation should be withdrawn rather than kept as a story that fits.",
+ "registered_prediction": "span_reach correlates strongly and positively with novel transfer, and is NECESSARY BUT NOT SUFFICIENT \u2014 at K=32 with 44 trained relations the trained coordinates span all of R^32 so span_reach is 1.0 for every K=32 basis, yet lda_between scores 0.2767 and kmeans_label 0.1111; the residual is D168's partition alignment, so the two accounts compose rather than compete",
+ "scope": "Tests D174's post-hoc interpolation conjecture without training anything: for each basis, project each held-out relation's unit coordinate onto the span of the 44 trained coordinates and take the norm. Novel-transfer numbers are READ from stored exp56/exp57/exp64 artifacts and never re-measured here, so the test cannot re-derive the quantity it is explaining. Refuted if a low-span basis still transfers, which would mean reachability is not the constraint."
+}

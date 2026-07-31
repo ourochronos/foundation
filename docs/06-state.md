@@ -1,6 +1,6 @@
-# Current state — 2026-07-30 (encoder arc CLOSED, sparse-dictionary thread CLOSED; through D174)
+# Current state — 2026-07-31 (encoder arc CLOSED, sparse-dictionary thread CLOSED; through D175)
 
-**Fastest orientation**: [decisions.md](decisions.md) D174 → D172 → D158, then
+**Fastest orientation**: [decisions.md](decisions.md) D175 → D172 → D158, then
 "where a pivot lands" at the bottom. **Nothing is running.** Working tree clean
 apart from three soak-log files that rewrite themselves.
 
@@ -103,10 +103,25 @@ partition (D168) and sparsifying the code (D174) both drive novel transfer to
 the floor while leaving trained accuracy *completely unmoved* (0.71–0.73 in
 both). **The generalisation channel is separable from the memorisation
 channel**, and every intervention that has mattered in this arc hit only the
-former. The proposed explanation — sparse codes separate maximally and
-interpolate not at all — is post-hoc and untested, and a test exists that
-needs no training: measure code overlap between relation pairs and check
-whether novel transfer tracks it.
+former. That description is now one candidate explanation lighter. D175 ran the
+training-free test and **refuted** the interpolation account three ways:
+interpolability correlates *negatively* with novel transfer inside 11 of 14
+strategy families; sparse codes are not less interpolable than raw label space
+on M3 (0.807 vs 0.728) yet still score at the floor; and the registered
+statistic turned out degenerate — pinned to 1.0 in 70 of 90 cells by counting,
+not geometry.
+
+**The control is the durable result.** Held-out relation coordinates are only
+**+0.03** harder to reconstruct from trained coordinates than trained ones are
+from each other. **Novel relations are not geometrically special in label
+space at all**, so any future account of the transfer gap that appeals to
+novel coordinates sitting somewhere unusual is dead before it is written. The
+gap must live in the map from question to coordinate — which is the kind of
+thing D168's partition alignment is, and it remains the only account standing.
+
+**Scoreboard on post-hoc explanations: 0-for-3** (D165, D172, D174 all
+refuted once tested). Fit to existing numbers has carried no evidential weight
+in this project; write mechanisms as conjectures with their test named.
 
 **Relation-as-offset fails** — anchors from `emb(obj) − emb(subj)` are worst or
 near-worst on both encoders. With D4 (rotations unsupported) and D26 (constant

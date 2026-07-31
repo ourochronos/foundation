@@ -2,6 +2,36 @@
 
 Format: date · decision · rationale · revisit-when.
 
+## 2026-07-31 — D175: D174's interpolation explanation is REFUTED, my measure for it was degenerate, and novel relations turn out not to be geometrically special at all
+
+`scripts/exp65_span_reachability.py`, `results/exp65_span_reachability.json`. Trains nothing — pure linear algebra on coordinate matrices, with novel-transfer numbers **read** from the stored exp56/exp57/exp64 artifacts so the test cannot re-derive the quantity it is explaining. 45 bases per encoder, both arms.
+
+D174 closed the sparse-dictionary thread with a post-hoc account — *sparse codes separate maximally and interpolate not at all* — and flagged it as untested. It is now tested. **It does not survive, and D174's paragraph is marked withdrawn in place.**
+
+**First, my own measure was broken, and the diagnostic was sitting in a column I printed.** The registered statistic was `span_reach`: project each held-out relation's unit coordinate onto the span of the 44 trained coordinates, take the norm. It came back at r=+0.389 — weak. Reading the `rank` column explains why: with 44 trained relations their coordinates generically span **all** of R^K whenever K ≤ 44, so `span_reach` is pinned to exactly 1.0 by *counting*, not geometry. **70 of 90 cells are the constant 1.0.** The correlation is really "K > 44 does worse", confounded with everything else that changes at large K. It settles nothing in either direction and is reported as uninterpretable rather than as weak evidence.
+
+**Second, the non-degenerate form fails too — and fails backwards.** Being in the span only says *a* combination exists; interpolation means a combination with bounded, non-negative weights. `convex_reach` (cosine of the best NNLS reconstruction from the trained coordinates) is non-degenerate at every K, and globally it reaches only r=+0.220 (M3 +0.117, Gemma +0.324). The within-family cut is what actually decides it: holding the strategy fixed and sweeping K, **`convex_reach` correlates NEGATIVELY with novel transfer in 11 of 14 families, 8 of them below −0.60** (M3 `lda_between` −0.935, M3 `pca_label` −0.910, Gemma `entity_complement` −0.935, Gemma `kmeans_offset` −0.856). The conjecture predicted positive. The clean counterexamples:
+
+| basis | interpolability | novel transfer |
+|---|---|---|
+| Gemma `kmeans_label` K4 → K43 | 1.0000 → 0.9998 | 0.0951 → **0.3942** |
+| Gemma `kmeans_offset` K4 → K256 | 1.0000 → 0.9457 | 0.0385 → **0.2361** |
+| M3 `entity_complement` K4 → K43 | 0.9158 → 0.8656 | 0.0705 → **0.3056** |
+
+Interpolability flat or falling; transfer up 4–6×.
+
+**Third, the premise itself is false as measured.** Sparse codes were supposed to be the *least* interpolable thing in the sweep. On M3 the weakly-sparse SAE scores `convex_reach` **0.807 against raw label space's 0.728** — more reconstructible than raw, and still at the floor (0.0000 vs 0.0032, chance 0.0179). On Gemma it sits slightly below raw (0.812 vs 0.867) and scores *identically* to it (0.1709 vs 0.1709). The mechanism's central premise does not hold consistently across two encoders.
+
+**The control I built to catch this is the sharpest result, and it is a positive finding.** `convex_loo_trained` asks the same question of **trained** relations, leave-one-out: if interpolability were the constraint, trained coordinates should be markedly easier to rebuild from their peers than held-out ones. The gap is **+0.029 (M3) and +0.033 (Gemma)** on a 0–1 scale. **Held-out relation coordinates are essentially as reconstructible as trained ones.** So novel relations are not geometrically distinctive in label space in the first place — whatever makes them hard to answer, it is not that their coordinates sit somewhere unusual.
+
+That is a reusable constraint with teeth, and it is worth more than the refutation: **any future account of the novel-transfer gap that appeals to novel coordinates being geometrically special is dead before it is written.** The gap has to live in the map from question to coordinate, not in where the coordinate is. D168's task-partition alignment remains the only account still standing, and it is of exactly that kind.
+
+**Calibration note on myself, which is the durable part.** This arc has now written four post-hoc mechanisms into the log and tested three: D165's coherence account (refuted), D172's (refuted), D174's interpolation account (refuted here). The explanations that "fit every number" have gone 0-for-3. Beyond audit law #10, the operational lesson is narrower and sharper: **the fit of an explanation to existing numbers carries no evidential weight at all in this project, and post-hoc accounts should be written as conjectures with their test named, never as accounts.** D174 did label its account untested, which is why this was runnable in one step — that convention is working and should stay.
+
+**What I got wrong, recorded before it is smoothed over.** I predicted `span_reach` would correlate strongly and be necessary-but-not-sufficient; it was neither, because I chose a statistic that is a constant over 78% of my own design. Two turns earlier I had written that D174's mechanism "fits every number here", which was true and, as it turns out, worth nothing.
+
+**Revisit**: (a) the two-channel signature (D168/D174 — novel transfer to the floor, trained accuracy unmoved at 0.71–0.73) is still only a description, and now with one fewer candidate explanation; (b) `pair_cos` correlates *negatively* with novel transfer (−0.41 M3, −0.25 Gemma) and is unexplained — but it is a third measure on the same data and should be treated as hypothesis-generating only, tested on a fresh sweep if at all; (c) `exp50` still uses D173's buggy raw-target `r_asked` form.
+
 ## 2026-07-30 — D174: Sparse overcomplete coding has NO useful regime here — two regimes, no sweet spot, and the same signature D168 found
 
 `scripts/exp64_sparse_dictionary.py`. The one thread D168 left open. If categories live in superposition, recovering them wants a **sparse overcomplete dictionary** at the 4×–64× expansion sparse-autoencoder practice uses — and every K sweep in this project topped out at 256 atoms in 768–1024 dimensions, always *under*complete. Two accounts were in contest: *superposition* (a sparse code selects features where a dense projection smears them) against *alignment* (D168: generalisation tracks **task-partition** separation, and an SAE optimises **reconstruction**, which cannot see the partition).
@@ -29,7 +59,7 @@ There is no intermediate that beats either end. On M3 the same shape appears wit
 
 **The mechanism, and it has the same signature as D168.** At L0≈200 novel transfer is exactly 0.0000 while trained accuracy sits unmoved at 0.72–0.73 — the head memorises perfectly and generalises not at all. That is precisely what D168 found when the *task partition* was corrupted: novel transfer fell r = −0.90 while trained accuracy did not move (Gemma 0.7146 → 0.7279 across the full corruption range). **Two entirely unrelated manipulations, the same asymmetry.** The generalisation channel is separable from the memorisation channel, and both interventions hit only the former. That convergence is worth more than either experiment alone.
 
-The proposed explanation — **sparse codes separate maximally and interpolate not at all** — is post-hoc and marked as such. For a novel relation to be identified the head must land near its label's coordinate; if coordinates are sparse and near-orthogonal, "near" requires activating exactly the right atoms, which the head was never trained to do for an unseen combination. A dense low-K basis places every relation in the interior of a small space the head has learned to cover. It fits every number here and it has not been tested, which after D159, D165 and D172 is a distinction this project has learned to keep.
+**[WITHDRAWN at D175 — tested and refuted three ways: interpolability correlates NEGATIVELY with novel transfer within 11 of 14 strategy families, and held-out coordinates turn out to be only 0.03 harder to reconstruct than trained ones, so novel relations are not geometrically special at all.]** The proposed explanation — **sparse codes separate maximally and interpolate not at all** — is post-hoc and marked as such. For a novel relation to be identified the head must land near its label's coordinate; if coordinates are sparse and near-orthogonal, "near" requires activating exactly the right atoms, which the head was never trained to do for an unseen combination. A dense low-K basis places every relation in the interior of a small space the head has learned to cover. It fits every number here and it has not been tested, which after D159, D165 and D172 is a distinction this project has learned to keep.
 
 **Prediction scorecard, stated honestly.** I predicted the sparse dictionary would lose to `lda_between` (**right**, −0.270), beat raw and random (**wrong** — +0.015 on M3, exactly +0.0000 on Gemma), and sit near `kmeans_label` at ~0.111 (**wrong** — it is at chance, 0.0179). Right on the headline, wrong by 6× on the magnitude.
 
