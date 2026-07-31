@@ -1,0 +1,54 @@
+{
+ "n_claims": 5730,
+ "populations": {
+  "answerable": {
+   "n": 800,
+   "correct": 1.0,
+   "wrong": 0.0,
+   "refused": 0.0
+  },
+  "unanswerable_simple": {
+   "n": 400,
+   "correct": 0.0,
+   "wrong": 0.0,
+   "refused": 1.0
+  },
+  "unanswerable_novel_pred": {
+   "n": 400,
+   "correct": 0.0,
+   "wrong": 0.0,
+   "refused": 1.0
+  },
+  "unanswerable_novel_subj": {
+   "n": 400,
+   "correct": 0.0,
+   "wrong": 0.0,
+   "refused": 1.0
+  },
+  "unanswerable_plausible": {
+   "n": 400,
+   "correct": 0.0,
+   "wrong": 0.0,
+   "refused": 1.0
+  }
+ },
+ "strict_min_sources_2": {
+  "n": 800,
+  "correct": 0.0187,
+  "wrong": 0.0,
+  "refused": 0.9812
+ },
+ "lattice": {
+  "superordinate_without": 0,
+  "superordinate_with": 181,
+  "subordinate_leaks": 0,
+  "n": 181
+ },
+ "verdicts": [
+  "P1 CONFIRMED but NEARLY VACUOUS: answerable correct = 1.000. Correctness is set overlap against the store's own contents, so this asks whether lookup finds what is present. It confirms plumbing, not design.",
+  "P2 CONFIRMED: worst unanswerable wrongness = 0.000 across four populations including the plausible near-miss. Structurally expected \u2014 there is no generative step \u2014 so this is a regression guard rather than a discovery.",
+  "P3 CONFIRMED: lattice raises superordinate recall 0 -> 181 with 0 subordinate leaks",
+  "P4 CONFIRMED: at min_sources=2 the corpus refuses 0.981 of answerable questions"
+ ],
+ "scope": "Answerable and unanswerable reported separately and never averaged; the unanswerable set includes the simple case (real subject, real predicate, absent edge) as well as novel predicate and novel subject. Correctness is set-overlap against the store's own contents, so this measures retrieval and refusal, not extraction quality."
+}

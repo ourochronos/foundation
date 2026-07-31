@@ -447,3 +447,52 @@ def test_precision_tolerance_does_not_apply_across_sorts():
               claimant="agent:A")
     b = Claim("s.w:x", "P569", "entity", "s.w:1953-ce", claimant="agent:B")
     assert len(conflicts([a, b], None, frozenset({"P569"}))) == 1
+
+
+# ---------------------------------------- the query path (exp68) ------------
+def test_query_never_leaks_a_sibling_predicate():
+    """Ask for place-of-birth when only place-of-DEATH is known. The lattice
+    must not answer. The corpus had exactly one subject in this shape, so the
+    experiment's zero measured almost nothing — this pins the code path."""
+    from foundation.model.predicates import Lattice
+    from foundation.model.query import ask
+    lat = Lattice()
+    lat.subsume("P19", "place")
+    lat.subsume("P20", "place")
+    cs = [Claim("s.a:x", "P20", "entity", "s.a:paris", claimant="agent:A")]
+    assert ask(cs, "s.a:x", "P19", None, lat).answered is False
+    assert ask(cs, "s.a:x", "place", None, lat).answered is True
+
+
+def test_query_refuses_rather_than_guessing():
+    from foundation.model.query import ask
+    cs = [Claim("s.a:x", "P569", "text", "1900", claimant="agent:A")]
+    for subj, pred in (("s.a:x", "P570"), ("s.a:nobody", "P569")):
+        a = ask(cs, subj, pred, None)
+        assert not a.answered and "no edge" in a.refusal
+
+
+def test_query_returns_both_sides_of_a_disagreement():
+    """The store structures disagreement; it must never pick."""
+    from foundation.model.query import ask
+    cs = [Claim("s.a:x", "P569", "time", {"t": "1907-05-22", "p": "day"},
+                claimant="agent:A", hash="H1",
+                evidence=(Evidence("span", "doc:A"),)),
+          Claim("s.a:x", "P569", "time", {"t": "1907-05-23", "p": "day"},
+                claimant="agent:B", hash="H2",
+                evidence=(Evidence("span", "doc:B"),))]
+    a = ask(cs, "s.a:x", "P569", None, functional=frozenset({"P569"}))
+    assert len(a.answers) == 2 and len(a.conflicts) == 1
+
+
+def test_min_sources_refusal_counts_independent_evidence():
+    """Two agents citing one document must not satisfy a two-source policy."""
+    from foundation.model.query import ask
+    same = [Claim("s.a:x", "P569", "text", "1900", claimant=f"agent:{n}",
+                  hash=f"H{i}", evidence=(Evidence("span", "doc:one"),))
+            for i, n in enumerate("AB")]
+    assert not ask(same, "s.a:x", "P569", None, min_sources=2).answered
+    two = [Claim("s.a:x", "P569", "text", "1900", claimant=f"agent:{n}",
+                 hash=f"H{i}", evidence=(Evidence("span", f"doc:{n}"),))
+           for i, n in enumerate("AB")]
+    assert ask(two, "s.a:x", "P569", None, min_sources=2).answered
