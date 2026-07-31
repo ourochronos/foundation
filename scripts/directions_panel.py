@@ -22,9 +22,16 @@ Three things are deliberately different from `adjudicate.py`:
   has stopped questioning. A brief that sells the work would return four
   polite endorsements and be worth nothing.
 
+Two preambles. `directions` asks where the program should go; `review` asks
+the panel to attack a concrete design before anything is built on it. The
+review preamble is deliberately harsher: a design document sent to four models
+that are not explicitly told to break it comes back with four endorsements and
+a handful of style notes.
+
 Usage:
-  .venv/bin/python scripts/directions_panel.py            # all four
-  .venv/bin/python scripts/directions_panel.py grok-4.5   # one
+  .venv/bin/python scripts/directions_panel.py
+  .venv/bin/python scripts/directions_panel.py --brief docs/22-model-v0.md \
+      --out model_v0 --preamble review [model]
 """
 from __future__ import annotations
 
@@ -35,15 +42,22 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BRIEF = ROOT / "docs" / "20-directions-brief.md"
-OUT = ROOT / "data" / "directions"
+ALL = ["gpt-5.6-sol", "gemini-3.1-pro-preview", "grok-4.5", "claude-fable-5"]
+
+
+def arg(flag, default):
+    return sys.argv[sys.argv.index(flag) + 1] if flag in sys.argv else default
+
+
+BRIEF = ROOT / arg("--brief", "docs/20-directions-brief.md")
+OUT = ROOT / "data" / arg("--out", "directions")
+MODE = arg("--preamble", "directions")
 OUT.mkdir(parents=True, exist_ok=True)
+free = [a for a in sys.argv[1:] if not a.startswith("--")
+        and a not in {arg(f, None) for f in ("--brief", "--out", "--preamble")}]
+MODELS = [free[0]] if free else ALL
 
-MODELS = ["gpt-5.6-sol", "gemini-3.1-pro-preview", "grok-4.5", "claude-fable-5"]
-if len(sys.argv) > 1:
-    MODELS = [sys.argv[1]]
-
-PREAMBLE = """You are one of four independent reviewers, each answering blind \
+DIRECTIONS = """You are one of four independent reviewers, each answering blind \
 — you will not see the others' answers, and they will not see yours. Consensus \
 between you is worth nothing to the person asking. A view that is specific, \
 falsifiable and different from what the others are likely to say is worth a \
@@ -59,6 +73,38 @@ Read the brief and answer its five questions.
 --- BRIEF BEGINS ---
 """
 
+REVIEW = """You are one of four independent reviewers, each answering blind — \
+you will not see the others' answers and they will not see yours. Consensus \
+between you is worth nothing to the person asking.
+
+Below is a data model at v0. **Nothing has been built on it yet, and that is \
+the point of showing it to you now.** Your job is to break it, not to \
+appraise it. A design document sent to four reviewers who were not told this \
+comes back with four endorsements and some style notes, which is worthless.
+
+Give each of these directly, with no preamble and no summary of the document \
+back to its author:
+
+1. **The fatal flaw**, if there is one. A claim shape it cannot express, a \
+merge that corrupts data, a case where contradiction detection silently \
+fails, an identity failure under federation. Be concrete: give the specific \
+example that breaks it.
+2. **What forces a change to the CLOSED layer** within a year. That layer is \
+supposed to be authored once; name the thing that will break it, and say \
+whether to fix it now or accept the future migration.
+3. **Where it is over-built.** Which part should be deleted outright because \
+it is solving a problem this system will not actually have.
+4. **The seven open questions in the final section**, answered directly and \
+committally. Say "wrong" where you think it is wrong.
+5. **What breaks first at scale** — 10^6 assertions on one Postgres instance, \
+and separately, merging two stores of that size.
+
+Where you would design it differently, show the alternative concretely — a \
+schema fragment or a worked example, not a principle.
+
+--- DOCUMENT BEGINS ---
+"""
+
 
 def ask(model: str, prompt: str) -> tuple[str, float]:
     t0 = time.time()
@@ -71,8 +117,10 @@ def ask(model: str, prompt: str) -> tuple[str, float]:
 
 
 brief = BRIEF.read_text()
-prompt = PREAMBLE + brief + "\n--- BRIEF ENDS ---\n"
-print(f"brief {len(brief)} chars, prompt {len(prompt)} chars", flush=True)
+pre = {"directions": DIRECTIONS, "review": REVIEW}[MODE]
+prompt = pre + brief + "\n--- ENDS ---\n"
+print(f"{MODE}: {BRIEF.name} {len(brief)} chars, prompt {len(prompt)} chars, "
+      f"-> data/{OUT.name}/, models={MODELS}", flush=True)
 
 index = {}
 for m in MODELS:
