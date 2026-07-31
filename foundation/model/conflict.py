@@ -290,6 +290,31 @@ def _existential(a: Claim, b: Claim):
     return None                           # SOME vs concrete: entailed, no news
 
 
+def _opposition_conflicts(claims, closure, lattice) -> list[Conflict]:
+    """Two positions asserting mutually exclusive relations of one pair.
+
+    Both claims are POSITIVE here, which is what makes this invisible to the
+    polarity rule — `refutes` and `compatible_with` are different predicates
+    and neither negates the other syntactically. exp72 measured 83% of real
+    philosophical opposition taking this shape.
+    """
+    canon = closure.canonicalise if closure is not None else (lambda r: r)
+    out, by_so = [], collections.defaultdict(list)
+    for c in claims:
+        if c.polarity:
+            by_so[(canon(c.subject),
+                   proposition_key(c, closure, with_polarity=False,
+                                   with_qualifiers=False, with_predicate=False)
+                   )].append(c)
+    for _, group in sorted(by_so.items()):
+        for i, a in enumerate(group):
+            for b in group[i + 1:]:
+                if lattice.opposes(norm_text(a.predicate), norm_text(b.predicate)) \
+                        and scopes_overlap(_tc(a.qualifiers), _tc(b.qualifiers)):
+                    out.append(Conflict("opposition", a, b))
+    return out
+
+
 def _subsumption_conflicts(claims, closure, lattice) -> list[Conflict]:
     """`(X, mother_of, Y, +)` versus `(X, parent_of, Y, −)`.
 
@@ -352,4 +377,5 @@ def conflicts(claims, closure=None, functional=frozenset(),
                     out.append(Conflict("functional", a, b))
     if lattice is not None:
         out += _subsumption_conflicts(claims, closure, lattice)
+        out += _opposition_conflicts(claims, closure, lattice)
     return out

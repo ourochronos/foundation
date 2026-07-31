@@ -498,3 +498,33 @@ def test_min_sources_refusal_counts_independent_evidence():
                  hash=f"H{i}", evidence=(Evidence("span", f"doc:{n}"),))
            for i, n in enumerate("AB")]
     assert ask(two, "s.a:x", "P569", None, min_sources=2).answered
+
+
+def test_opposed_predicates_conflict_though_both_positive():
+    """exp72's finding: 83% of real philosophical opposition looks like this,
+    and polarity/functional rules see nothing."""
+    from foundation.model.predicates import Lattice
+    L = Lattice()
+    L.oppose("refutes", "compatible_with")
+    a = Claim("c:determinism", "refutes", "entity", "c:free-will", True,
+              claimant="pos:hard-determinism")
+    b = Claim("c:determinism", "compatible_with", "entity", "c:free-will", True,
+              claimant="pos:compatibilism")
+    assert conflicts([a, b], None) == []                 # blind without it
+    found = conflicts([a, b], None, lattice=L)
+    assert len(found) == 1 and found[0].kind == "opposition", found
+
+
+def test_opposition_respects_scope():
+    """Held under different stated assumptions, opposed claims coexist —
+    which is the whole reason under_assumption exists."""
+    from foundation.model.predicates import Lattice
+    L = Lattice()
+    L.oppose("refutes", "compatible_with")
+    a = Claim("c:determinism", "refutes", "entity", "c:free-will", True,
+              (("under_assumption", "text", "Hard determinism"),),
+              claimant="pos:hard-determinism")
+    b = Claim("c:determinism", "compatible_with", "entity", "c:free-will", True,
+              (("under_assumption", "text", "Compatibilism"),),
+              claimant="pos:compatibilism")
+    assert conflicts([a, b], None, lattice=L) == []

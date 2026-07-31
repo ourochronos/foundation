@@ -1,0 +1,22 @@
+{
+ "n_claims": 153,
+ "n_positions": 27,
+ "scoped_conflicts": 0,
+ "unscoped_conflicts": 18,
+ "scoped_conflicts_no_opposition": 0,
+ "unscoped_conflicts_no_opposition": 3,
+ "unscoped_kinds": {
+  "polarity": 3,
+  "opposition": 15
+ },
+ "opposition_visible": 3,
+ "opposition_invisible": 15,
+ "propositions": 144,
+ "multi_position_propositions": 0,
+ "verdicts": [
+  "S1 CONFIRMED: scoped conflicts = 0 \u2014 carrying the position keeps opposed views from being recorded as contradictions.",
+  "S2 CONFIRMED: unscoped conflicts = 18; genuine opposition exists in the corpus and the machinery sees it.",
+  "S3 CONFIRMED: 15 of 18 detectable-in-principle oppositions are INVISIBLE to polarity/functional rules because the positions use different predicates rather than negating one."
+ ],
+ "scope": "Claims come from exp71's closed-vocabulary extraction over the econ and phil corpora. SCOPED carries each claim's position as an under_assumption qualifier; UNSCOPED strips it. The OPPOSED predicate pairs are used only to measure the detector's blind spot in S3 and are never fed back into conflict detection."
+}

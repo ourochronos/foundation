@@ -50,6 +50,8 @@ class Lattice:
                                      collections.defaultdict(set))
     _paths: dict[tuple, set[str]] = field(default_factory=lambda:
                                           collections.defaultdict(set))
+    _opp: dict[str, set[str]] = field(default_factory=lambda:
+                                      collections.defaultdict(set))
 
     # ---------------------------------------------------------- subsumption --
     def subsume(self, sub: str, sup: str) -> None:
@@ -91,6 +93,47 @@ class Lattice:
         """
         return {q for q in set(self._up) | {p}
                 if p in self.ancestors(q)} | {p}
+
+    # ----------------------------------------------------------- opposition --
+    def oppose(self, a: str, b: str) -> None:
+        """Declare that `a(x,y)` entails NOT `b(x,y)` — and symmetrically.
+
+        Subsumption alone made conflict detection blind to how disagreement
+        actually looks. exp72 measured it on real philosophical positions: 15 of
+        18 genuine oppositions were invisible, because
+
+            Hard determinism:  determinism refutes         free will
+            Compatibilism:     determinism compatible_with free will
+
+        is a flat contradiction to a reader and two unrelated triples to a
+        detector that only knows polarity and functional cardinality. Real
+        intellectual disagreement is mostly not negation of one relation; it is
+        assertion of an incompatible one.
+
+        Opposition is **symmetric**, unlike subsumption — if `refutes` excludes
+        `compatible_with` then the reverse holds too — so it is stored both
+        ways and needs no direction rule.
+        """
+        if a == b:
+            raise LatticeError(f"{a!r} cannot oppose itself")
+        if self.entails(a, b) or self.entails(b, a):
+            raise LatticeError(
+                f"{a!r} and {b!r} cannot be both subsuming and opposed: one "
+                f"entails the other, so asserting both would make every claim "
+                f"on the narrower predicate self-contradictory")
+        self._opp[a].add(b)
+        self._opp[b].add(a)
+
+    def opposes(self, a: str, b: str) -> bool:
+        """Does a claim on `a` exclude the same claim on `b`?
+
+        Opposition is inherited DOWNWARD: if `refutes` opposes
+        `compatible_with`, then anything below `refutes` opposes anything below
+        `compatible_with`, because each entails its ancestor.
+        """
+        return bool(self.ancestors(a) & set().union(
+            *(self._opp.get(x, set()) for x in self.ancestors(b))) ) \
+            if self.ancestors(b) else False
 
     # ---------------------------------------------------------- composition --
     def compose(self, path, composite: str) -> None:

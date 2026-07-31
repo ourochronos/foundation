@@ -54,3 +54,36 @@ def test_self_referential_composition_rejected():
         L.compose(["grandmother_of", "parent_of"], "grandmother_of")
     with pytest.raises(LatticeError, match="at least two"):
         L.compose(["mother_of"], "x")
+
+
+# ------------------------------------------- opposition (found by exp72) ----
+def opp():
+    L = Lattice()
+    L.oppose("refutes", "compatible_with")
+    return L
+
+
+def test_opposition_is_symmetric():
+    L = opp()
+    assert L.opposes("refutes", "compatible_with")
+    assert L.opposes("compatible_with", "refutes")
+    assert not L.opposes("refutes", "requires")
+
+
+def test_opposition_inherits_downward():
+    """If refutes excludes compatible_with, anything BELOW refutes excludes
+    anything below compatible_with — each entails its ancestor."""
+    L = opp()
+    L.subsume("strictly_refutes", "refutes")
+    L.subsume("weakly_compatible_with", "compatible_with")
+    assert L.opposes("strictly_refutes", "weakly_compatible_with")
+
+
+def test_cannot_be_both_subsuming_and_opposed():
+    """Would make every claim on the narrower predicate self-contradictory."""
+    L = Lattice()
+    L.subsume("mother_of", "parent_of")
+    with pytest.raises(LatticeError, match="both subsuming and opposed"):
+        L.oppose("mother_of", "parent_of")
+    with pytest.raises(LatticeError):
+        L.oppose("refutes", "refutes")
