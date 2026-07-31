@@ -239,7 +239,21 @@ partner must reproduce byte-identically *before union is permitted*. A
 protocol artifact, not a paragraph in a spec.
 
 **Vocabulary canonicalisation** — which URI means "born in". **Seeded and
-emergent, and that is the right design.** Two mechanisms:
+emergent, and that is the right design** — and exp69 later upgraded this from
+plausible to **measured**. Three real corpora in one store (12,942 wiki, 6,451
+arXiv, 602 model-card claims) share **zero** triples pairwise, and still zero
+under an *oracle* entity aligner that perfectly unifies every entity appearing
+in two of them. Their predicate vocabularies do not intersect at all, so
+corroboration between them is impossible by construction rather than merely
+rare: the set union succeeds flawlessly and yields zero agreement and zero
+conflict.
+
+**That makes the seed vocabulary a PRECONDITION for federation, not an
+optimisation.** Two stores can merge perfectly and learn nothing from each
+other, and no amount of entity resolution repairs it — the oracle aligner is
+the ceiling for any resolver and it buys nothing. A new corpus is worth
+ingesting only if it is extracted *into* a shared vocabulary against shared
+entities. Two mechanisms:
 
 - **Canonical seeds.** A signed, versioned package of uncontroversial entities
   and predicates (`person`, `located_in`, `United States`). No instance should

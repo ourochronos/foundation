@@ -169,6 +169,16 @@ coincide. Since the ref is frozen into an immutable address it cannot be
 disambiguated afterwards, so reserved namespaces are refused at the door and
 `mint_namespace()` produces store-scoped ones.
 
+## 7b. Seeds are a precondition (measured at exp69)
+
+v1 §7 argued that vocabulary canonicalisation should be seeded. exp69 measured
+it: the three corpora already in this store share **zero** triples pairwise,
+and zero under an oracle entity aligner, because their predicate vocabularies
+do not intersect at all. Federation between stores with disjoint vocabularies
+is epistemically a no-op — the merge succeeds and nothing is learned. The seed
+package is therefore load-bearing infrastructure rather than a convenience, and
+it belongs ahead of any further corpus work.
+
 ## 8. Still open — deliberately, and not in Layer 0
 
 - **Conflict detection is subsumption-blind.** `(X, mother_of, Y, +)` versus
