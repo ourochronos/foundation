@@ -1,0 +1,77 @@
+{
+ "corpus_sizes": {
+  "wiki": 12942,
+  "arxiv": 6451,
+  "hf": 602
+ },
+ "predicate_vocabularies": {
+  "wiki": [
+   "P102",
+   "P103",
+   "P1038",
+   "P1056",
+   "P106",
+   "P108",
+   "P112",
+   "P119",
+   "P123",
+   "P126",
+   "P127",
+   "P1303"
+  ],
+  "arxiv": [
+   "P_ASSERTS",
+   "P_BUILDS_ON",
+   "P_CITES",
+   "P_COMPARES_TO",
+   "P_EVALUATES_ON",
+   "P_INTRODUCES"
+  ],
+  "hf": [
+   "P_ASSERTS"
+  ]
+ },
+ "pairs": {
+  "arxiv/wiki": {
+   "shared_entities": 7,
+   "shared_predicates": 0,
+   "shared_triples": 0,
+   "oracle_aligned": 0
+  },
+  "arxiv/hf": {
+   "shared_entities": 3,
+   "shared_predicates": 1,
+   "shared_triples": 0,
+   "oracle_aligned": 0
+  },
+  "hf/wiki": {
+   "shared_entities": 1,
+   "shared_predicates": 0,
+   "shared_triples": 0,
+   "oracle_aligned": 0
+  }
+ },
+ "within_corpus": {
+  "wiki": {
+   "triples": 7344,
+   "multi_source": 286,
+   "pct": 3.89
+  },
+  "arxiv": {
+   "triples": 6449,
+   "multi_source": 0,
+   "pct": 0.0
+  },
+  "hf": {
+   "triples": 593,
+   "multi_source": 6,
+   "pct": 1.01
+  }
+ },
+ "verdicts": [
+  "C1 CONFIRMED: cross-corpus shared triples = 0, and = 0 even under an ORACLE entity aligner. The barrier is not naming.",
+  "C2 CONFIRMED: pairs sharing a predicate vocabulary (['arxiv/hf']) still overlap on zero triples.",
+  "C3 CONFIRMED: best within-corpus corroboration is 3.89% while cross-corpus is 0 \u2014 the signal that exists is one source type repeating itself, not independent confirmation."
+ ],
+ "scope": "Overlap is measured on slugged (subject, pid, object) triples. The oracle aligner unifies every entity appearing in both corpora under any spelling, which is the ceiling for any entity resolver, so a zero there rules out naming as the barrier."
+}
