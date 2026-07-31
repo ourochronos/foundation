@@ -107,7 +107,32 @@ def test_qualifiers_change_identity():
 
 
 def test_namespace_is_significant():
-    assert h("local:Q42", "p", "text", "v") != h("wikidata:Q42", "p", "text", "v")
+    assert h("s.alice:Q42", "p", "text", "v") != h("wikidata:Q42", "p", "text", "v")
+
+
+def test_ambiguous_namespaces_rejected():
+    """Every store mints local:owner for a different person, so a union would
+    fuse two subjects. The ref is frozen into an immutable address, so this
+    cannot be disambiguated after the fact — it must be refused up front."""
+    from foundation.model.canonical import RESERVED_NAMESPACES, mint_namespace
+    for ns in sorted(RESERVED_NAMESPACES):
+        with pytest.raises(CanonError, match="globally unique"):
+            h(f"{ns}:owner", "p", "text", "v")
+    a, b = mint_namespace("alice-laptop"), mint_namespace("bob-phone")
+    assert a != b
+    assert h(f"{a}:owner", "p", "text", "v") != h(f"{b}:owner", "p", "text", "v")
+
+
+def test_addresses_are_domain_separated():
+    """An assertion digest must never be substitutable for a claim-act digest,
+    and a v1 payload must never be reinterpretable under a later schema."""
+    from foundation.model.canonical import address, digest_of
+    args = ("wikidata:Q42", "p", "text", "v")
+    assert address(*args, kind="assertion") != address(*args, kind="claim_act")
+    with pytest.raises(CanonError):
+        address(*args, kind="not_a_kind")
+    body = b"x"
+    assert digest_of(body, "assertion") != digest_of(body, "predicate")
 
 
 def test_qualifier_predicate_separates():
@@ -265,13 +290,13 @@ def test_confidence_as_a_claim_about_a_claim():
     """Dimensional confidence (model v1 §2): the dimension is the predicate,
     the context is the qualifier, the holder is the claim act."""
     fact = h(Q, "place_of_birth", "entity", "wikidata:Q350")
-    fidelity = h("local:extractor_v3", "extraction_fidelity", "quantity",
+    fidelity = h("s.alice:extractor_v3", "extraction_fidelity", "quantity",
                  {"n": "0.92", "u": None}, True,
                  [("about", "claim_ref", fact)])
-    belief = h("local:me", "believed", "quantity", {"n": "0.92", "u": None},
+    belief = h("s.alice:me", "believed", "quantity", {"n": "0.92", "u": None},
                True, [("about", "claim_ref", fact)])
     assert fidelity != belief          # same number, different dimension
-    scoped = h("local:me", "believed", "quantity", {"n": "0.92", "u": None},
+    scoped = h("s.alice:me", "believed", "quantity", {"n": "0.92", "u": None},
                True, [("about", "claim_ref", fact),
                       ("in_domain", "text", "biography")])
     assert scoped != belief            # context changes the claim

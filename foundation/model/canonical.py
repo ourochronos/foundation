@@ -54,6 +54,23 @@ SORTS = ("entity", "text", "quantity", "time", "claim_ref")
 ALGOS = {"sha256": (b"\x01", hashlib.sha256)}
 DEFAULT_ALGO = "sha256"
 _BY_TAG = {tag: name for name, (tag, _) in ALGOS.items()}
+
+# Domain separation. Without it an assertion digest and a claim-act digest are
+# drawn from one space and could be substituted for each other, and a payload
+# hashed under schema v1 could be reinterpreted under v2 with different field
+# meanings. Both are standard commitment failures and both are unfixable after
+# addresses are in circulation, so the kind and the schema version are hashed
+# IN rather than merely stored alongside.
+SCHEMA_VERSION = "1"
+CONTENT_KINDS = ("assertion", "claim_act", "predicate", "interpretation")
+
+# `local` is deliberately NOT a usable namespace. Every store would mint
+# `local:owner` for a different person, so a union of two stores silently
+# fuses two subjects — or falsely dedupes their claims when the objects happen
+# to match. A namespace must be globally unique BEFORE any claim leaves the
+# machine, because the ref is baked into an immutable content address and
+# cannot be rewritten later without invalidating every address that quotes it.
+RESERVED_NAMESPACES = {"local", "self", "me", "store", "tmp", "test"}
 POLARITY = {True: "+", False: "-"}
 # ISO-8601 precision labels, coarsest first. A time value carries its own
 # precision because "true in 2009" and "true on 2009-01-01" are different
@@ -180,8 +197,14 @@ def norm_ref(r: str) -> str:
     r = unicodedata.normalize("NFC", r).strip()
     if ":" not in r or r.startswith(":") or r.endswith(":"):
         raise CanonError(f"entity ref must be 'namespace:id', got {r!r}")
-    ns, _, local = r.partition(":")
-    return f"{ns.lower()}:{local}"
+    ns, _, rest = r.partition(":")
+    ns = ns.lower()
+    if ns in RESERVED_NAMESPACES:
+        raise CanonError(
+            f"namespace {ns!r} is not globally unique: every store mints "
+            f"{ns}:owner for a different subject, so a merge would fuse them. "
+            f"Mint a store-scoped namespace instead (see mint_namespace).")
+    return f"{ns}:{rest}"
 
 
 def norm_address(a) -> str:
@@ -254,12 +277,35 @@ def canonical_form(subject: str, predicate: str, object_sort: str, obj,
                       separators=(",", ":")).encode("utf-8")
 
 
-def address(*a, algo: str = DEFAULT_ALGO, **k) -> bytes:
-    """Tagged content address: one algorithm byte followed by the digest."""
+def digest_of(payload: bytes, kind: str, algo: str = DEFAULT_ALGO) -> bytes:
+    """Domain-separated tagged digest over an arbitrary canonical payload."""
     if algo not in ALGOS:
         raise CanonError(f"unknown hash algorithm {algo!r}")
+    if kind not in CONTENT_KINDS:
+        raise CanonError(f"unknown content kind {kind!r}; kinds are "
+                         f"{CONTENT_KINDS}")
     tag, fn = ALGOS[algo]
-    return tag + fn(canonical_form(*a, **k)).digest()
+    pre = f"{kind}\x00{SCHEMA_VERSION}\x00".encode()
+    return tag + fn(pre + payload).digest()
+
+
+def mint_namespace(store_id: str) -> str:
+    """A globally unique namespace for one store's locally-minted refs.
+
+    Callers pass a store identifier that is unique by construction — a UUID, a
+    public key fingerprint, a domain. This exists so that `local:` never has to
+    work: a ref is frozen into content addresses the moment it is used, so
+    disambiguating it after the fact is not available.
+    """
+    s = norm_text(store_id).lower().replace(" ", "-")
+    if not s or ":" in s or s in RESERVED_NAMESPACES:
+        raise CanonError(f"bad store id {store_id!r}")
+    return f"s.{s}"
+
+
+def address(*a, algo: str = DEFAULT_ALGO, kind: str = "assertion", **k) -> bytes:
+    """Domain-separated content address: algo byte followed by the digest."""
+    return digest_of(canonical_form(*a, **k), kind, algo)
 
 
 def hexid(*a, **k) -> str:
