@@ -38,7 +38,22 @@ import unicodedata
 from datetime import datetime, timezone
 from decimal import Decimal, InvalidOperation
 
-SORTS = ("entity", "text", "quantity", "time")
+# Sorts are an OPEN registry with a CLOSED encoding contract: adding one ships
+# a canonical byte encoding, it does not change the grammar. `claim_ref` is
+# load-bearing three times over — retraction, dimensional confidence, and
+# entity splits all need to point at a claim (model v1 §3).
+SORTS = ("entity", "text", "quantity", "time", "claim_ref")
+
+# ---------------------------------------------------------------- addresses --
+# A content address carries its algorithm. Zero-knowledge aggregation is the
+# stated end goal and SHA-256 is expensive inside a circuit, so a move to an
+# algebraic hash (Poseidon and relatives) is foreseeable. Without the tag,
+# changing hash function means rewriting every content address in every
+# federated store — precisely the global rebuild this design exists to forbid.
+# One byte now; unfixable later (model v1 §9b).
+ALGOS = {"sha256": (b"\x01", hashlib.sha256)}
+DEFAULT_ALGO = "sha256"
+_BY_TAG = {tag: name for name, (tag, _) in ALGOS.items()}
 POLARITY = {True: "+", False: "-"}
 # ISO-8601 precision labels, coarsest first. A time value carries its own
 # precision because "true in 2009" and "true on 2009-01-01" are different
@@ -169,6 +184,31 @@ def norm_ref(r: str) -> str:
     return f"{ns.lower()}:{local}"
 
 
+def norm_address(a) -> str:
+    """A content address as 'algo:hex'. Accepts the tagged bytes form too.
+
+    Rejects a bare digest: an untagged address is the thing that cannot be
+    migrated later, so it is refused at the door rather than becoming a
+    permanent commitment to one hash function.
+    """
+    if isinstance(a, (bytes, bytearray)):
+        tag, digest = bytes(a[:1]), bytes(a[1:])
+        if tag not in _BY_TAG or not digest:
+            raise CanonError(f"unknown or empty content address: {a!r}")
+        return f"{_BY_TAG[tag]}:{digest.hex()}"
+    if not isinstance(a, str):
+        raise CanonError(f"claim_ref needs str|bytes, got {type(a).__name__}")
+    algo, _, hexd = a.strip().partition(":")
+    if algo not in ALGOS or not hexd:
+        raise CanonError(f"claim_ref must be 'algo:hex' with algo in "
+                         f"{sorted(ALGOS)}, got {a!r}")
+    try:
+        bytes.fromhex(hexd)
+    except ValueError as e:
+        raise CanonError(f"claim_ref digest not hex: {a!r}") from e
+    return f"{algo}:{hexd.lower()}"
+
+
 def canon_value(sort: str, value) -> list:
     """A sort-tagged canonical value. Always [sort, ...] so sorts never mix."""
     if sort == "entity":
@@ -186,6 +226,8 @@ def canon_value(sort: str, value) -> list:
             raise CanonError("time needs {'t': ..., 'p': precision}")
         p = value.get("p", "day")
         return ["time", norm_time(value["t"], p), p]
+    if sort == "claim_ref":
+        return ["claim_ref", norm_address(value)]
     raise CanonError(f"unknown sort {sort!r}; sorts are closed: {SORTS}")
 
 
@@ -212,9 +254,14 @@ def canonical_form(subject: str, predicate: str, object_sort: str, obj,
                       separators=(",", ":")).encode("utf-8")
 
 
-def assertion_hash(*a, **k) -> bytes:
-    return hashlib.sha256(canonical_form(*a, **k)).digest()
+def address(*a, algo: str = DEFAULT_ALGO, **k) -> bytes:
+    """Tagged content address: one algorithm byte followed by the digest."""
+    if algo not in ALGOS:
+        raise CanonError(f"unknown hash algorithm {algo!r}")
+    tag, fn = ALGOS[algo]
+    return tag + fn(canonical_form(*a, **k)).digest()
 
 
 def hexid(*a, **k) -> str:
-    return assertion_hash(*a, **k).hex()
+    """Text form, 'algo:hex' — the form that goes in a claim_ref."""
+    return norm_address(address(*a, **k))

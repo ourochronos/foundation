@@ -207,3 +207,71 @@ def test_year_precision_never_collides_with_new_years_day():
 def test_naive_calendar_date_does_not_shift():
     assert h(Q, "at", "time", {"t": "2009-12-31", "p": "day"}) == \
            h(Q, "at", "time", {"t": "2009-12-31T00:00:00", "p": "day"})
+
+
+# ------------------------------------------- hash agility + claim_ref (v1) --
+def test_address_is_algorithm_tagged():
+    """Untagged addresses cannot be migrated; ZK aggregation will want an
+    algebraic hash later (model v1 §9b)."""
+    from foundation.model.canonical import ALGOS, address, norm_address
+    a = address(Q, "p", "text", "v")
+    assert a[:1] == ALGOS["sha256"][0] and len(a) == 33
+    assert norm_address(a) == h(Q, "p", "text", "v")
+    assert h(Q, "p", "text", "v").startswith("sha256:")
+
+
+def test_unknown_algorithm_rejected():
+    from foundation.model.canonical import address
+    with pytest.raises(CanonError):
+        address(Q, "p", "text", "v", algo="md5")
+
+
+def test_bare_digest_rejected_as_claim_ref():
+    """A bare digest is a permanent commitment to one hash function."""
+    bare = h(Q, "p", "text", "v").split(":", 1)[1]
+    with pytest.raises(CanonError):
+        h(Q, "retracts", "claim_ref", bare)
+    for bad in ("sha256:", "poseidon:ab", "sha256:zz", b"\xff\xab"):
+        with pytest.raises(CanonError):
+            h(Q, "retracts", "claim_ref", bad)
+
+
+def test_claim_ref_round_trips_and_accepts_bytes():
+    from foundation.model.canonical import address
+    target = address(Q, "date_of_birth", "text", "1907-05-22")
+    assert h(Q, "retracts", "claim_ref", target) == \
+           h(Q, "retracts", "claim_ref", norm_addr_str(target))
+
+
+def norm_addr_str(b):
+    from foundation.model.canonical import norm_address
+    return norm_address(b)
+
+
+def test_claim_ref_case_insensitive_hex():
+    a = h(Q, "p", "text", "v")
+    algo, hexd = a.split(":", 1)
+    assert h(Q, "cites", "claim_ref", f"{algo}:{hexd.upper()}") == \
+           h(Q, "cites", "claim_ref", a)
+
+
+def test_claim_ref_is_not_text():
+    """A pointer to a claim is not a string that looks like one."""
+    a = h(Q, "p", "text", "v")
+    assert h(Q, "cites", "claim_ref", a) != h(Q, "cites", "text", a)
+
+
+def test_confidence_as_a_claim_about_a_claim():
+    """Dimensional confidence (model v1 §2): the dimension is the predicate,
+    the context is the qualifier, the holder is the claim act."""
+    fact = h(Q, "place_of_birth", "entity", "wikidata:Q350")
+    fidelity = h("local:extractor_v3", "extraction_fidelity", "quantity",
+                 {"n": "0.92", "u": None}, True,
+                 [("about", "claim_ref", fact)])
+    belief = h("local:me", "believed", "quantity", {"n": "0.92", "u": None},
+               True, [("about", "claim_ref", fact)])
+    assert fidelity != belief          # same number, different dimension
+    scoped = h("local:me", "believed", "quantity", {"n": "0.92", "u": None},
+               True, [("about", "claim_ref", fact),
+                      ("in_domain", "text", "biography")])
+    assert scoped != belief            # context changes the claim
