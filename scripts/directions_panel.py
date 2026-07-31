@@ -77,10 +77,16 @@ REVIEW = """You are one of four independent reviewers, each answering blind — 
 you will not see the others' answers and they will not see yours. Consensus \
 between you is worth nothing to the person asking.
 
-Below is a data model at v0. **Nothing has been built on it yet, and that is \
-the point of showing it to you now.** Your job is to break it, not to \
+Below is a data model. **Almost nothing has been built on it yet, and that \
+is the point of showing it to you now.** Your job is to break it, not to \
 appraise it. A design document sent to four reviewers who were not told this \
 comes back with four endorsements and some style notes, which is worthless.
+
+If the document presents itself as a revision that fixes an earlier flaw, \
+give the author no credit for that. Check whether the fix actually works and \
+whether it introduced a worse one somewhere else. A repair that relocates a \
+problem into a component the document treats as unproblematic is the failure \
+mode to hunt for.
 
 Give each of these directly, with no preamble and no summary of the document \
 back to its author:
