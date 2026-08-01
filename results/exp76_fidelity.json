@@ -1,0 +1,30 @@
+{
+ "n_docs": 14,
+ "arms": {
+  "rebel": {
+   "predicted": 394,
+   "mapped": 392,
+   "hit": 87,
+   "gold": 562,
+   "precision": 0.2219,
+   "recall": 0.1548,
+   "f1": 0.1824
+  },
+  "gemma": {
+   "predicted": 473,
+   "mapped": 471,
+   "hit": 87,
+   "gold": 562,
+   "precision": 0.1847,
+   "recall": 0.1548,
+   "f1": 0.1684
+  }
+ },
+ "vocab_size": 30,
+ "verdicts": [
+  "F1 CONFIRMED: REBEL precision 0.222, recall 0.155.",
+  "F2 CONFIRMED: Gemma precision 0.185 vs REBEL 0.222 on identical documents and vocabulary.",
+  "F3 CONFIRMED: best recall 0.155 \u2014 every corroboration and conflict count in this project should be read as a LOWER BOUND, not a measurement of what is there."
+ ],
+ "scope": "Gold is Re-DocRED's human annotation - not authored by this project, which is the point. Scoring forgives surface form and mention choice: a prediction is correct if its subject matches ANY mention of the gold head, its object ANY mention of the gold tail, and its relation maps to the gold PID. Precision is over in-vocabulary predictions only, so out-of-vocabulary output is neither rewarded nor penalised."
+}

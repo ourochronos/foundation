@@ -368,6 +368,42 @@ The superseded scoreboard follows for the record:
 
 Five of six work. The sixth never had data that could feed it.
 
+## 7f. Extraction fidelity, finally measured (exp76)
+
+Eight experiments and 176 tests covered the model; **none covered whether the
+extractor is right**. Every downstream number rests on that and it had been
+assumed throughout. Against Re-DocRED's human annotation — gold this project
+did not author, which is the point after the status panel — on 14 documents,
+identical text and identical relation vocabulary for both arms:
+
+| extractor | predicted | correct | precision | recall |
+|---|---|---|---|---|
+| **REBEL** (purpose-built) | 394 | 87 | **0.222** | 0.155 |
+| **Gemma 4 12B** (generative) | 473 | 87 | 0.185 | 0.155 |
+
+Scoring forgives surface form and mention choice; only the relation and the
+entity pair must be right.
+
+**Two things follow, and the second is the important one.**
+
+The purpose-built model wins on precision while emitting 17% fewer triples —
+the generative model produces *more* output for the *same* number of correct
+answers, which is the behaviour already seen when it looped and when it
+invented position labels. Given that REBEL is ~400M parameters against 12B, it
+is also roughly 30× cheaper per document.
+
+**Recall is 0.155 for both.** Some of that is structural (DocRED annotates
+cross-sentence relations; both arms ran per-sentence) and some is genuine miss.
+Either way: **every corroboration count, conflict count and agreement number
+in this project is a lower bound on a pipeline that recovers about one
+relation in six**, and none of them should be read as a measurement of what a
+corpus contains. The 4.18% news corroboration of exp75 in particular is a floor,
+not an estimate.
+
+That does not invalidate the comparative results — all arms shared the same
+extractor — but it does mean absolute claims about corpus content were never
+supportable, including several made earlier in this document.
+
 ## 8. Still open — deliberately, and not in Layer 0
 
 - **Conflict detection is subsumption-blind.** `(X, mother_of, Y, +)` versus
