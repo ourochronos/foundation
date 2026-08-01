@@ -1,0 +1,83 @@
+{
+ "n_docs": 12,
+ "configs": {
+  "nb1_lp1.0": {
+   "beams": 1,
+   "length_penalty": 1.0,
+   "mapped": 129,
+   "hit": 51,
+   "precision": 0.3953,
+   "recall": 0.1083,
+   "f1": 0.17
+  },
+  "nb3_lp1.0": {
+   "beams": 3,
+   "length_penalty": 1.0,
+   "mapped": 334,
+   "hit": 79,
+   "precision": 0.2365,
+   "recall": 0.1677,
+   "f1": 0.1963
+  },
+  "nb5_lp1.0": {
+   "beams": 5,
+   "length_penalty": 1.0,
+   "mapped": 521,
+   "hit": 105,
+   "precision": 0.2015,
+   "recall": 0.2229,
+   "f1": 0.2117
+  },
+  "nb8_lp1.0": {
+   "beams": 8,
+   "length_penalty": 1.0,
+   "mapped": 751,
+   "hit": 109,
+   "precision": 0.1451,
+   "recall": 0.2314,
+   "f1": 0.1784
+  },
+  "nb12_lp1.0": {
+   "beams": 12,
+   "length_penalty": 1.0,
+   "mapped": 1042,
+   "hit": 110,
+   "precision": 0.1056,
+   "recall": 0.2335,
+   "f1": 0.1454
+  },
+  "nb5_lp0.5": {
+   "beams": 5,
+   "length_penalty": 0.5,
+   "mapped": 492,
+   "hit": 97,
+   "precision": 0.1972,
+   "recall": 0.2059,
+   "f1": 0.2015
+  },
+  "nb5_lp2.0": {
+   "beams": 5,
+   "length_penalty": 2.0,
+   "mapped": 560,
+   "hit": 93,
+   "precision": 0.1661,
+   "recall": 0.1975,
+   "f1": 0.1804
+  }
+ },
+ "best": {
+  "beams": 5,
+  "length_penalty": 1.0,
+  "mapped": 521,
+  "hit": 105,
+  "precision": 0.2015,
+  "recall": 0.2229,
+  "f1": 0.2117
+ },
+ "verdicts": [
+  "P1 CONFIRMED: recall over beams [0.1083, 0.1677, 0.2229, 0.2314, 0.2335], precision [0.3953, 0.2365, 0.2015, 0.1451, 0.1056].",
+  "P2 CONFIRMED: best F1 0.212 at beams=5 vs 0.196 at the arbitrary default of 3 \u2014 recall 0.168 -> 0.223.",
+  "P3 CONFIRMED: length_penalty moves F1 by 0.031, beam count by 0.066."
+ ],
+ "scope": "Decoding-side only, nothing retrained. Same gold, scoring and entity matching as exp76, so numbers are directly comparable to its 0.222/0.155 at beams=3. REBEL returns one triple set per returned sequence, so beam count is the primary recall knob."
+}
