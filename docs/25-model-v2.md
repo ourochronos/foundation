@@ -247,7 +247,33 @@ must not — string similarity ranks them identically. **Entity canonicalisation
 is an authored registry with explicit aliases**, the same conclusion §7 reached
 for predicates and the v2 review reached for the closed layer generally.
 
-## 7e. Corroboration is CLOSED as a line of work
+## 7e. Corroboration — **REOPENED** (the closure was premature)
+
+> **[REOPENED at exp74.]** The status panel called the closure below "premature
+> by exactly one experiment" and named the falsifier: multi-source news. It was
+> run. **117 events, 420 articles, 8,802 corroborated entity co-mention pairs**
+> — against zero in all four prior corpora. Median 5 *event-specific* shared
+> entities per event, so the signal is agreement about one event rather than
+> generic frequent terms.
+>
+> **What this shows, precisely**: the *entity substrate* for corroboration
+> exists in reportage and did not in discourse. **What it does not show**: that
+> extracted triples corroborate. The measurement is co-mention agreement, which
+> is corroboration at its most generous, and it was deliberately chosen so that
+> a zero would be decisive — running a model would have conflated extractor
+> variance with genuine non-repetition. It is an upper bound, and it is *not*
+> like-for-like with the triple-level zeros below.
+>
+> So the honest statement is: **the genre hypothesis survived its first real
+> test.** Discourse does not repeat; reportage does. The next step is extraction
+> over news to see whether triples corroborate where entities do, and
+> `min_sources` is back to unproven rather than deleted.
+>
+> Retained below because the mechanisms it identified for each zero — papers
+> cite rather than repeat, positions disagree rather than concur — are still
+> the right explanations for *those* corpora.
+
+### Superseded: corroboration is CLOSED as a line of work
 
 The obvious next move after §7d was to close the entity vocabulary from the
 corpus's own page titles. Measured first: **177 titles cover 11% of extracted

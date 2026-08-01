@@ -1,0 +1,16 @@
+{
+ "events": 117,
+ "articles": 420,
+ "mean_shared_entity_fraction": 0.1959,
+ "pairs_total": 176568,
+ "pairs_corroborated": 8802,
+ "generic_entities": 970,
+ "distinct_entities": 7638,
+ "median_event_specific_shared": 5,
+ "verdicts": [
+  "N1 REFUTED: 0.196 of entities per event are mentioned by >=2 sources \u2014 the vocabulary closes less than hoped.",
+  "N2 CONFIRMED: 8802 co-mention pairs are corroborated by independent sources, versus 0 in all four prior corpora.",
+  "N3 CONFIRMED: median 5 event-SPECIFIC shared entities, so the signal is agreement about one event rather than generic frequent terms."
+ ],
+ "scope": "Corroboration is measured as named-entity CO-MENTION agreement, not extracted-triple agreement, deliberately: running a model here would conflate extractor variance with genuine non-repetition. This is corroboration at its most generous, so a zero would be decisive where a zero after extraction would not. Entities are recognised orthographically rather than by a trained NER, which under-counts but does not manufacture agreement."
+}
