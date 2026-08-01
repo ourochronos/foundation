@@ -1,34 +1,45 @@
 {
- "n_claims": 60,
- "placed_on_axis": 0,
+ "n_claims": 316,
+ "placed_on_axis": 94,
  "n_axes": 9,
  "views": {
   "position": {
-   "claims": 60,
-   "propositions": 58,
+   "claims": 316,
+   "propositions": 315,
    "corroborated": 0,
-   "conflicts": 0,
-   "kinds": {}
+   "conflicts": 1,
+   "kinds": {
+    "functional": 1
+   }
   },
   "axis": {
-   "claims": 60,
-   "propositions": 58,
+   "claims": 388,
+   "propositions": 387,
    "corroborated": 0,
-   "conflicts": 0,
-   "kinds": {}
+   "conflicts": 1,
+   "kinds": {
+    "functional": 1
+   }
   },
   "none": {
-   "claims": 60,
-   "propositions": 58,
+   "claims": 316,
+   "propositions": 315,
    "corroborated": 0,
-   "conflicts": 0,
-   "kinds": {}
+   "conflicts": 2,
+   "kinds": {
+    "functional": 2
+   }
   }
  },
  "verdicts": [
   "A1 CONFIRMED: position-level corroboration = 0, matching all three prior corpora.",
   "A2 REFUTED: axis-level corroboration = 0 \u2014 still none.",
-  "A3 REFUTED: axis conflicts 0 -> 0; corroboration and contradiction should rise together or the generalisation is loose rather than informative."
+  "A3 REFUTED: axis conflicts 1 -> 1; corroboration and contradiction should rise together or the generalisation is loose rather than informative.",
+  "DIAGNOSIS: 316 claims produced 510 distinct concepts, so almost no two claims can be the same proposition regardless of frame. Closing the PREDICATE and FRAME vocabularies bought nothing because the ENTITY vocabulary is still open - exp69's finding at a third level. Corroboration needs all three closed at once."
  ],
+ "distinct_concepts": 510,
+ "distinct_subjects": 256,
+ "distinct_objects": 283,
+ "near_duplicate_pairs": 36,
  "scope": "Frames come from the authored lattice in data/frames.json. The AXIS view generalises each claim's under_assumption UP to its axes, which is the safe direction - a claim held under social democracy is held under left economics, never the converse. A claim under several axes contributes one claim per axis, so the axis view has more claims than the position view by construction and proposition counts are not comparable across views; corroboration and conflict counts are."
 }

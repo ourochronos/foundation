@@ -124,6 +124,22 @@ for mode in ("position", "axis", "none"):
             print(f"      {d['s'][2:26]:26} {d['p']:16} {d['o'][1][2:22]:22} "
                   f"<- {sorted(x[4:] for x in v)}")
 
+# ---- why corroboration is still zero: the THIRD vocabulary ----------------
+import difflib                                                       # noqa: E402
+subs = collections.Counter(norm(r["subject"]) for r in rows)
+objs = collections.Counter(norm(r["object"]) for r in rows)
+concepts = sorted(set(subs) | set(objs))
+near = [(a, b) for i, a in enumerate(concepts) for b in concepts[i + 1:]
+        if difflib.SequenceMatcher(None, a, b).ratio() > 0.82]
+print(f"\n=== why: the concept vocabulary is still open ===")
+print(f"  {len(rows)} claims -> {len(concepts)} distinct concepts "
+      f"({len(subs)} subjects, {len(objs)} objects)")
+print(f"  subjects repeated at all: {sum(1 for v in subs.values() if v > 1)}   "
+      f"objects: {sum(1 for v in objs.values() if v > 1)}")
+print(f"  near-duplicate concept pairs: {len(near)}  e.g. {near[:3]}")
+print("  NOTE string similarity cannot fix this: 'belief'~'beliefs' should "
+      "merge and 'anarchism'~'minarchism' must not.")
+
 v = []
 v.append(f"A1 {'CONFIRMED' if res['position']['corroborated'] == 0 else 'REFUTED'}"
          f": position-level corroboration = {res['position']['corroborated']}, "
@@ -135,6 +151,12 @@ v.append(f"A3 {'CONFIRMED' if res['axis']['conflicts'] > res['position']['confli
          f": axis conflicts {res['position']['conflicts']} -> "
          f"{res['axis']['conflicts']}; corroboration and contradiction should "
          f"rise together or the generalisation is loose rather than informative.")
+v.append(f"DIAGNOSIS: {len(rows)} claims produced {len(concepts)} distinct "
+         f"concepts, so almost no two claims can be the same proposition "
+         f"regardless of frame. Closing the PREDICATE and FRAME vocabularies "
+         f"bought nothing because the ENTITY vocabulary is still open - "
+         f"exp69's finding at a third level. Corroboration needs all three "
+         f"closed at once.")
 print("\n=== VERDICTS ===")
 for x in v:
     print("  " + x)
@@ -142,6 +164,8 @@ for x in v:
 (ROOT / "results" / "exp73_axes.json").write_text(json.dumps({
     "n_claims": len(rows), "placed_on_axis": len(placed), "n_axes": len(AXES),
     "views": res, "verdicts": v,
+    "distinct_concepts": len(concepts), "distinct_subjects": len(subs),
+    "distinct_objects": len(objs), "near_duplicate_pairs": len(near),
     "scope": ("Frames come from the authored lattice in data/frames.json. The "
               "AXIS view generalises each claim's under_assumption UP to its "
               "axes, which is the safe direction - a claim held under social "

@@ -218,6 +218,35 @@ for *traversal* rather than agreement, and the corroboration and refusal
 machinery should be exercised against personal-style observational data rather
 than against papers.
 
+## 7d. Corroboration needs THREE closed vocabularies, not one (exp69→exp73)
+
+The seed argument kept getting stronger and kept being incomplete. Four corpora
+and four zeros later, the shape is clear:
+
+| level closed | result |
+|---|---|
+| nothing (three corpora, disjoint predicates) | 0 shared triples, 0 under an oracle entity aligner (exp69) |
+| entities only, one domain (558 AI papers) | 0 of 1207 — papers cite rather than repeat (exp70) |
+| **predicates** closed (philosophy) | 0 of 144 — positions disagree rather than concur (exp72) |
+| **predicates + frames** closed (politics, axis-generalised) | **0 of 387** (exp73) |
+
+exp73 is the informative one because it closed two of three vocabularies and
+still measured nothing. 316 claims produced **510 distinct concepts** — 256
+subjects and 283 objects, with subjects repeating at all only 33 times. Almost
+no two claims *can* be the same proposition regardless of how well predicates
+and frames are aligned.
+
+**So corroboration requires the predicate, frame and entity vocabularies to be
+closed simultaneously.** Closing any two buys nothing, which is why every
+partial fix so far has returned exactly zero rather than a smaller number.
+
+And the entity vocabulary cannot be closed by matching. Of 36 near-duplicate
+concept pairs, `belief`/`beliefs` and `central-bank`/`central-banks` must merge
+while `anarchism`/`minarchism` and `classical-economics`/`neoclassical-economics`
+must not — string similarity ranks them identically. **Entity canonicalisation
+is an authored registry with explicit aliases**, the same conclusion §7 reached
+for predicates and the v2 review reached for the closed layer generally.
+
 ## 8. Still open — deliberately, and not in Layer 0
 
 - **Conflict detection is subsumption-blind.** `(X, mother_of, Y, +)` versus
