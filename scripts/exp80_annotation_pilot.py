@@ -49,7 +49,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 K = int(sys.argv[1]) if len(sys.argv) > 1 else 12
-OUT = ROOT / "results" / "exp80_pilot.jsonl"
+VER = "v4" if "--v4" in sys.argv else "v5"
+OUT = ROOT / "results" / f"exp80_pilot_{VER}.jsonl"
 
 NEG = re.compile(r"\b(?:is|are|was|were|has|have|does|do|did|can|could|will|would)\s+not\b"
                  r"|\bcannot\b|\bnever\b|\bn't\b|\b(?:denies|denied|rejects|rejected|"
@@ -60,7 +61,39 @@ ATTR = re.compile(r"\b(?:argued?|argues|contends?|holds?|claims?|maintains?|asse
 HEDGE = re.compile(r"\b(?:may|might|could|possibly|perhaps|likely|suggests?|appears?|"
                    r"seems?|is consistent with|tends? to|if\b|unless\b)\b", re.I)
 
-SPEC = """You are annotating sentences into a claim schema. Follow the rules EXACTLY.
+SPEC_V5 = """You are annotating sentences into a claim schema. Follow the rules EXACTLY.
+
+Output ONLY a JSON object:
+{"assertions":[{"id":"a1","subject":"<text>","predicate":"<text>","object":"<text>",
+                "polarity":"+"|"-","polarity_cue":null|"<the exact negating word>",
+                "modality":"asserted"|"qualified",
+                "scope":[{"dimension":"temporal"|"assumption"|"spatial","text":"..."}],
+                "reified_from":null|"<id of the assertion this one is ABOUT>",
+                "stance":null|"SAY"|"ARGUE"|"DENY"|"DOUBT"}]}
+
+RULES, in priority order:
+1. REIFY ONLY WHEN THE SOURCE ATTRIBUTES. A stance verb with a holder
+   ("Smith denied X", "the Times reported X") produces TWO assertions: the inner
+   claim, and an outer one whose subject is the holder, whose stance is set, and
+   whose reified_from points at the inner id. Nothing else reifies.
+2. CONDITIONALS ARE SCOPE, never reified. "If the ban passes, prices rise" is ONE
+   assertion (prices, rise) with scope dimension "assumption".
+3. HEDGES ATTACH TO THE CLAIM THEY HEDGE, never to the stance. "Smith suggests X
+   may cause Y" is stance SAY on the outer, modality "hedged" on the inner.
+4. POLARITY IS CUE-DRIVEN. Set polarity "-" ONLY if you can quote the exact
+   negating word from the sentence into polarity_cue ("not", "never", "no",
+   "denied", "lacks", "childless"). If you cannot quote one, polarity is "+".
+   Do not reason about what the negation scopes; just report the cue.
+5. MODALITY IS TWO-VALUED. "qualified" if the claim is hedged, conditional or
+   predicted ("may", "might", "suggests", "if", "will likely"); "asserted"
+   otherwise. Do not distinguish hedged from hypothetical.
+6. scope records ONLY what the text states. Absent means unstated, not unrestricted.
+
+Sentence: {sent}
+"""
+
+# v4, kept verbatim so the A/B is a controlled comparison rather than a re-run.
+SPEC_V4 = """You are annotating sentences into a claim schema. Follow the rules EXACTLY.
 
 Output ONLY a JSON object:
 {"assertions":[{"id":"a1","subject":"<text>","predicate":"<text>","object":"<text>",
@@ -75,18 +108,16 @@ RULES, in priority order:
    ("Smith denied X", "the Times reported X") produces TWO assertions: the inner
    claim, and an outer one whose subject is the holder, whose stance is set, and
    whose reified_from points at the inner id. Nothing else reifies.
-2. CONDITIONALS ARE SCOPE, never reified. "If the ban passes, prices rise" is ONE
-   assertion (prices, rise) with scope dimension "assumption".
-3. HEDGES ATTACH TO THE CLAIM THEY HEDGE, never to the stance. "Smith suggests X
-   may cause Y" is stance SAY on the outer, modality "hedged" on the inner.
+2. CONDITIONALS ARE SCOPE, never reified.
+3. HEDGES ATTACH TO THE CLAIM THEY HEDGE, never to the stance.
 4. POLARITY/MARKER ORDER: if the object is quantified to nothing, use
    object_marker NONE and polarity "+". Otherwise polarity "-" only if a negation
-   cue scopes the relation. Lexical negation resolves to the predicate first:
-   "childless" and "lacked children" are (x, has_child, -, marker NONE, polarity +).
+   cue scopes the relation. Lexical negation resolves to the predicate first.
 5. scope records ONLY what the text states. Absent means unstated, not unrestricted.
 
 Sentence: {sent}
 """
+SPEC = SPEC_V5 if "--v4" not in sys.argv else SPEC_V4
 
 
 def sentences():
@@ -228,8 +259,12 @@ for r in recs:
         st["triple_agree"] += int(len(px & py) / max(len(px | py), 1) >= 0.5)
         st["polarity_agree"] += int(x.get("polarity") == y.get("polarity"))
         st["modality_agree"] += int(x.get("modality") == y.get("modality"))
-        st["marker_agree"] += int((x.get("object_marker") or None)
-                                  == (y.get("object_marker") or None))
+        # marker is deleted in v5; scored only when both passes emit it
+        if "object_marker" in x or "object_marker" in y:
+            st["marker_agree"] += int((x.get("object_marker") or None)
+                                      == (y.get("object_marker") or None))
+            st["marker_n"] += 1
+        st["cue_agree"] += int(bool(x.get("polarity_cue")) == bool(y.get("polarity_cue")))
         st["scope_agree"] += int(bool(x.get("scope")) == bool(y.get("scope")))
 
 print(f"\n{'stratum':>11} {'sents':>6} {'align':>6} {'reify':>7} {'polarity':>9} "
@@ -243,7 +278,8 @@ for k in ("plain", "negated", "attributed", "hedged"):
               "reify": round(s["reify_agree"] / n, 3),
               "polarity": round(s["polarity_agree"] / al, 3),
               "modality": round(s["modality_agree"] / al, 3),
-              "marker": round(s["marker_agree"] / al, 3),
+              "marker": round(s["marker_agree"] / max(s["marker_n"], 1), 3),
+              "polarity_cue": round(s["cue_agree"] / al, 3),
               "scope": round(s["scope_agree"] / al, 3),
               "predicate_overlap": round(s["triple_agree"] / al, 3),
               "predicate_exact": round(s["pred_exact"] / al, 3)}
@@ -260,13 +296,20 @@ v.append(f"A1 {'CONFIRMED' if res['plain']['predicate_overlap'] > 0.8 else 'REFU
          f"plain-sentence predicate agreement {res['plain']['predicate_overlap']:.3f} "
          f"(exact {res['plain']['predicate_exact']:.3f}) — the instrument "
          f"{'works' if res['plain']['predicate_overlap'] > 0.8 else 'may be broken, so lower numbers below are not evidence about the schema'}.")
-worst = min(("reify", sum(res[k]['reify'] for k in res) / 4),
+# marker is deleted in v5, so its "agreement" is 0/0 -> the max(n,1) guard
+# renders it 0.000 and it wins "worst field" while measuring nothing. That is
+# the divide-by-guard artifact this project has now shipped three times; a field
+# with no observations is excluded rather than scored.
+_seen_marker = sum(stats[k]["marker_n"] for k in res)
+worst = min(*(([("marker", sum(res[k]['marker'] for k in res) / 4)]
+               if _seen_marker else [])),
+            ("reify", sum(res[k]['reify'] for k in res) / 4),
             ("polarity", overall("polarity_agree")),
             ("modality", overall("modality_agree")),
-            ("marker", overall("marker_agree")),
             ("scope", overall("scope_agree")), key=lambda x: x[1])
 v.append(f"A2 {'CONFIRMED' if worst[0] == 'reify' else 'REFUTED'}: worst-agreeing "
-         f"field is {worst[0]} at {worst[1]:.3f}.")
+         f"field is {worst[0]} at {worst[1]:.3f}"
+         f"{'' if _seen_marker else ' (marker excluded: 0 observations under v5)'}.")
 v.append(f"A3 {'CONFIRMED' if overall('polarity_agree') > overall('modality_agree') else 'REFUTED'}"
          f": polarity {overall('polarity_agree'):.3f} vs modality "
          f"{overall('modality_agree'):.3f}.")
@@ -274,8 +317,8 @@ print("\n=== VERDICTS ===")
 for x in v:
     print("  " + x)
 
-(ROOT / "results" / "exp80_pilot.json").write_text(json.dumps({
-    "n": len(sample), "strata": res, "verdicts": v,
+(ROOT / "results" / f"exp80_pilot_{VER}.json").write_text(json.dumps({
+    "n": len(sample), "schema_version": VER, "strata": res, "verdicts": v,
     "scope": ("Two independent passes by DIFFERENT MODELS (Haiku 4.5 via API, "
               "Gemma 4 12B local) given an identical schema spec. This is "
               "inter-MODEL agreement and is optimistic relative to human "

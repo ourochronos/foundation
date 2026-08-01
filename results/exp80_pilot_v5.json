@@ -1,0 +1,64 @@
+{
+ "n": 52,
+ "schema_version": "v5",
+ "strata": {
+  "plain": {
+   "sentences": 13,
+   "unparsed": 0,
+   "aligned": 17,
+   "reify": 0.923,
+   "polarity": 1.0,
+   "modality": 0.824,
+   "marker": 0.0,
+   "polarity_cue": 1.0,
+   "scope": 0.647,
+   "predicate_overlap": 0.941,
+   "predicate_exact": 0.765
+  },
+  "negated": {
+   "sentences": 12,
+   "unparsed": 1,
+   "aligned": 19,
+   "reify": 0.75,
+   "polarity": 0.895,
+   "modality": 0.895,
+   "marker": 0.0,
+   "polarity_cue": 0.895,
+   "scope": 0.947,
+   "predicate_overlap": 0.632,
+   "predicate_exact": 0.474
+  },
+  "attributed": {
+   "sentences": 13,
+   "unparsed": 0,
+   "aligned": 23,
+   "reify": 0.769,
+   "polarity": 0.957,
+   "modality": 0.957,
+   "marker": 0.0,
+   "polarity_cue": 0.957,
+   "scope": 0.87,
+   "predicate_overlap": 0.609,
+   "predicate_exact": 0.478
+  },
+  "hedged": {
+   "sentences": 13,
+   "unparsed": 0,
+   "aligned": 19,
+   "reify": 1.0,
+   "polarity": 1.0,
+   "modality": 0.947,
+   "marker": 0.0,
+   "polarity_cue": 1.0,
+   "scope": 1.0,
+   "predicate_overlap": 0.789,
+   "predicate_exact": 0.579
+  }
+ },
+ "verdicts": [
+  "A1 CONFIRMED: plain-sentence predicate agreement 0.941 (exact 0.765) \u2014 the instrument works.",
+  "A2 REFUTED: worst-agreeing field is marker at 0.000.",
+  "A3 CONFIRMED: polarity 0.962 vs modality 0.910."
+ ],
+ "scope": "Two independent passes by DIFFERENT MODELS (Haiku 4.5 via API, Gemma 4 12B local) given an identical schema spec. This is inter-MODEL agreement and is optimistic relative to human annotators, who do not share instruction-following failure modes. Sampling is stratified toward the constructs three panel rounds argued about, because agreement on plain declaratives is trivially high and uninformative. Alignment pairs assertions by subject+object token overlap before comparing fields, so field agreement is conditional on the two passes finding the same claim at all."
+}
