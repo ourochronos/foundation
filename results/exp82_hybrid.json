@@ -1,0 +1,47 @@
+{
+ "n_docs": 12,
+ "arms": {
+  "rebel": {
+   "pred": 526,
+   "mapped": 521,
+   "hit": 105,
+   "precision": 0.2015,
+   "recall": 0.2229,
+   "f1": 0.2117
+  },
+  "filter": {
+   "pred": 81,
+   "mapped": 81,
+   "hit": 58,
+   "precision": 0.716,
+   "recall": 0.1231,
+   "f1": 0.2101
+  },
+  "filter_add": {
+   "pred": 96,
+   "mapped": 96,
+   "hit": 71,
+   "precision": 0.7396,
+   "recall": 0.1507,
+   "f1": 0.2504
+  },
+  "union": {
+   "pred": 556,
+   "mapped": 551,
+   "hit": 119,
+   "precision": 0.216,
+   "recall": 0.2527,
+   "f1": 0.2329
+  }
+ },
+ "verdicts": [
+  "H1 CONFIRMED: filtering moves precision 0.202 -> 0.716.",
+  "H2 REFUTED: filter keeps recall 0.123 against REBEL's 0.223 \u2014 the correct candidates are NOT separable.",
+  "H3 REFUTED: filter+add F1 0.250 vs best standalone 0.291 (haiku:p2, exp81). The axes do NOT compose - pick one extractor rather than build a pipeline."
+ ],
+ "exp81_reference": {
+  "rebel_f1": 0.212,
+  "haiku_p2_f1": 0.291
+ },
+ "scope": "Same 12 documents, same scoring and entity matching as exp76/81, so all numbers are directly comparable. Candidates shown to the filter are capped at 80 per document and restricted to those whose relation maps into the vocabulary, since judging unmappable candidates cannot affect the score."
+}
