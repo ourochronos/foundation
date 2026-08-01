@@ -269,6 +269,28 @@ for predicates and the v2 review reached for the closed layer generally.
 > over news to see whether triples corroborate where entities do, and
 > `min_sources` is back to unproven rather than deleted.
 >
+> **[CONFIRMED at exp75 — triples, not just entities.]** REBEL over the same
+> news corpus: **41 triples asserted by ≥2 independent sources**, 4.18% of
+> extracted triples, versus **0** in four discourse corpora. Below exp74's 5.0%
+> co-mention bound, as agreeing on a *relation* should be harder than
+> co-mentioning two entities. Conservative alias merging moves it 41 → 43, so
+> surface variation is a *locatable* barrier rather than an unbounded one.
+>
+> **And the ontology conclusion in §7d was wrong.** Closing the entity and
+> predicate vocabularies was called "an ontology-building project" and the line
+> was shut on that basis. It is not: **REBEL's relation vocabulary IS Wikidata
+> properties** (`presenter`, `country`, `participant`), so the predicate
+> vocabulary closes with no authoring at all — one of the three vocabularies
+> exp73 proved necessary, obtained off the shelf. This project never looked for
+> purpose-built extraction models until prompted; a survey of them belongs
+> before any conclusion that something requires authoring.
+>
+> REBEL's failure mode is corroborating evidence rather than a limitation: on
+> "Compatibilists hold that free will is compatible with determinism" it
+> returns **nothing**, declining instead of inventing, because it is trained on
+> factual relations between named entities. Its competence domain is exactly
+> the genre where corroboration lives.
+>
 > Retained below because the mechanisms it identified for each zero — papers
 > cite rather than repeat, positions disagree rather than concur — are still
 > the right explanations for *those* corpora.

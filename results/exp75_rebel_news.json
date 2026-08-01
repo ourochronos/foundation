@@ -1,0 +1,14 @@
+{
+ "events": 40,
+ "articles": 140,
+ "raw_corroborated": 41,
+ "raw_triples": 980,
+ "aliased_corroborated": 43,
+ "aliased_triples": 974,
+ "verdicts": [
+  "R1 CONFIRMED: 41 triples asserted by >=2 independent sources, versus 0 in four discourse corpora.",
+  "R2 CONFIRMED: triple corroboration 4.18% sits below exp74's 5.0% co-mention upper bound, as agreeing on a relation is harder than co-mentioning two entities.",
+  "R3 CONFIRMED: conservative alias merging moves corroboration 41 -> 43, so surface variation is a locatable remaining barrier."
+ ],
+ "scope": "REBEL emits Wikidata-property relations, so the predicate vocabulary is closed by the extractor rather than authored. Entities remain surface forms; the alias pass merges a short name into a longer one only when the match is unique, since over-merging is this project's demonstrated failure mode. Only the first ~4k characters of each article are read."
+}
