@@ -1,0 +1,23 @@
+{
+ "sentence_negation_rate": {
+  "phil": 0.1966,
+  "econ": 0.1041,
+  "pol": 0.0827,
+  "news": 0.0962
+ },
+ "triple_exposure": {
+  "phil": 0.2508,
+  "econ": 0.1243,
+  "pol": 0.0823,
+  "news": 0.0846
+ },
+ "inversion_sample_hits": 18,
+ "inversion_sample_size": 40,
+ "n_per_corpus": 250,
+ "verdicts": [
+  "G1 REFUTED: negation rate phil 19.7% / econ 10.4% / pol 8.3% vs news 9.6%.",
+  "G2 CONFIRMED: up to 25.1% of triples from argumentative corpora derive from negated sentences \u2014 not a tail case.",
+  "G3 CONFIRMED: 18 of 40 sampled negated-sentence extractions have the cue between subject and object, so exposure overstates inversion but does not eliminate it."
+ ],
+ "scope": "Exposure is mechanical and exact: the share of triples whose source sentence carries a proposition-reversing cue. Inversion is estimated by a conservative proxy - the cue falling between the subject and object mentions - and printed for hand checking, because a cue outside the relation's scope is harmless. Intensifiers like 'not only' are excluded."
+}

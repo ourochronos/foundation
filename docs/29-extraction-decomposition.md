@@ -47,9 +47,32 @@ exist, sourced to a document that says the opposite.
 This is the same shape as the date-as-entity bug of exp67, which manufactured
 104 false contradictions about real people's birthdays, and it is the reason
 stage 8 cannot be an optional add-on. **Any relation extractor that ignores
-negation needs a polarity pass in front of the store, not behind it.** For a
-corpus of argumentative text — where "X does not follow from Y" is the normal
-sentence — the rate matters enormously and is currently unmeasured.
+negation needs a polarity pass in front of the store, not behind it.**
+
+**exp78 measured the exposure**, and it is not a tail case:
+
+| corpus | sentences negated | **triples from negated sentences** |
+|---|---|---|
+| philosophy | 19.7% | **25.1%** |
+| economics | 10.4% | 12.4% |
+| politics | 8.3% | 8.2% |
+| news | 9.6% | 8.5% |
+
+**A quarter of everything extracted from philosophy comes from a sentence
+containing a proposition-reversing cue.** Exposure exceeds the sentence rate on
+the argumentative corpora, which is the opposite of comfort: negated sentences
+are *more* productive of triples than average, presumably because denials are
+syntactically explicit about what they deny.
+
+Exposure is an upper bound and inversion is lower — in a 40-example sample, 18
+had the cue falling between the subject and object mentions, so plausibly
+scoping the extracted relation. But even taking the conservative half, that is
+roughly **12% of philosophical extractions asserting something the source
+denies**, each with a real span and a real attribution.
+
+One prediction was refuted and is worth keeping: negation was expected to be
+markedly rarer in reportage, and it is not — news sits at 9.6%, above politics
+and comparable to economics. **The problem is not confined to argument.**
 
 ## 2. What can be measured separately, and against whose gold
 
