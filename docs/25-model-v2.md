@@ -270,8 +270,44 @@ free-form concepts prevent two claims from ever being one proposition. The
 questions (exp68) and should be understood as waiting for observational data,
 where repetition is structural, rather than as broken.
 
-**What this does not touch is the rest of the machinery**, and the scoreboard
-matters for what to build next:
+**[CORRECTED after the status panel — 4 of 4 reviewers, and verified in the
+diff.] The scoreboard below is wrong and the correction is the finding.**
+
+The charge is circularity in conflict detection. exp72 declared a set of
+opposed predicate pairs *"used only to MEASURE the gap in S3, **never to patch
+it**"* — and one turn later `oppose()` was seeded with exactly those pairs. So
+the 15 newly-detected oppositions are precisely the 15 measured as invisible
+and then authored edges for. That is not detection; it is **retrieval of
+authored disagreement**, with no gold precision or recall denominator. Worse,
+as one reviewer put it, conflict detection and corroboration *"stand or fall on
+the same missing artifact"* — both need an authored ontology — and the
+scoreboard scored one "works" and the other "closed".
+
+The other four fare little better under scrutiny. Dedup's 100% cloned one
+extraction into two stores, so canonical forms were identical **by
+construction** (the realistic drift case already gives 90.5%). Refusal's 0.000
+wrongness is guaranteed by exact lookup with no generative step. Expansion's
+181/181 ran against a two-line lattice written for that test. Scoped
+coexistence's 0 is close to forced, since every position gets its own frame.
+
+**Replace the scoreboard with the distinction that actually matters:**
+
+| validated against EXTERNAL reality | validated against our own artifacts |
+|---|---|
+| canonicalisation — survived `476`, 104 false birthdays, precision mismatches | conflict detection (edges authored from the corpus) |
+| dedup under drift — 90.5% at full precision divergence | dedup at 100% (clone of one extraction) |
+| | refusal (self-lookup, no generative step) |
+| | query expansion (hand-written lattice) |
+| | scoped coexistence (one frame per position) |
+
+Two results survive contact with something that did not come from us. The rest
+are code paths that execute.
+
+**And the single largest unmeasured quantity, eight experiments in: extraction
+fidelity.** 176 tests cover the model and *zero* cover whether the extractor's
+triples match human labels, while the extractor discards half of every corpus.
+
+The superseded scoreboard follows for the record:
 
 | mechanism | status on real data |
 |---|---|
