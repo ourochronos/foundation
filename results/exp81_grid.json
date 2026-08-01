@@ -1,0 +1,69 @@
+{
+ "n_docs": 12,
+ "arms": {
+  "rebel": {
+   "pred": 526,
+   "mapped": 521,
+   "hit": 105,
+   "precision": 0.2015,
+   "recall": 0.2229,
+   "f1": 0.2117
+  },
+  "gemma:p0": {
+   "pred": 129,
+   "mapped": 129,
+   "hit": 50,
+   "precision": 0.3876,
+   "recall": 0.1062,
+   "f1": 0.1667
+  },
+  "gemma:p1": {
+   "pred": 176,
+   "mapped": 176,
+   "hit": 52,
+   "precision": 0.2955,
+   "recall": 0.1104,
+   "f1": 0.1607
+  },
+  "gemma:p2": {
+   "pred": 190,
+   "mapped": 190,
+   "hit": 62,
+   "precision": 0.3263,
+   "recall": 0.1316,
+   "f1": 0.1876
+  },
+  "haiku:p0": {
+   "pred": 98,
+   "mapped": 98,
+   "hit": 41,
+   "precision": 0.4184,
+   "recall": 0.087,
+   "f1": 0.1441
+  },
+  "haiku:p1": {
+   "pred": 113,
+   "mapped": 113,
+   "hit": 75,
+   "precision": 0.6637,
+   "recall": 0.1592,
+   "f1": 0.2568
+  },
+  "haiku:p2": {
+   "pred": 119,
+   "mapped": 119,
+   "hit": 86,
+   "precision": 0.7227,
+   "recall": 0.1826,
+   "f1": 0.2915
+  }
+ },
+ "vocab": 30,
+ "verdicts": [
+  "B1/gemma REFUTED: F1 0.167 (p0) -> 0.161 (p1); exp76's comparison used a p0-grade prompt.",
+  "B1/haiku CONFIRMED: F1 0.144 (p0) -> 0.257 (p1); exp76's comparison used a p0-grade prompt.",
+  "B2 REFUTED: best generative recall 0.183 vs REBEL 0.223.",
+  "B3 REFUTED: REBEL precision 0.202 vs best generative 0.723."
+ ],
+ "scope": "Scoring is exp76's, unchanged, so numbers compare directly to its 0.222/0.155 and exp77's 0.202/0.223. Each model runs the way it is strongest - REBEL per sentence since it has no document mode, generative models per document since they can reach cross-sentence relations - which is a fair comparison of capability rather than a matched-input one."
+}
