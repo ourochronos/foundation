@@ -1,0 +1,45 @@
+{
+ "n_docs": 12,
+ "cooccurrence": {
+  "recovered": {
+   "together": 105,
+   "total": 105
+  },
+  "missed": {
+   "together": 176,
+   "total": 366
+  }
+ },
+ "verification": {
+  "recovered": {
+   "n": 22,
+   "STATED": 14,
+   "INFERABLE": 3,
+   "NO": 5,
+   "stated_rate": 0.636,
+   "unparsed": 0
+  },
+  "missed": {
+   "n": 22,
+   "STATED": 14,
+   "INFERABLE": 6,
+   "NO": 2,
+   "stated_rate": 0.636,
+   "unparsed": 0
+  },
+  "fabricated": {
+   "n": 22,
+   "STATED": 3,
+   "INFERABLE": 1,
+   "NO": 18,
+   "stated_rate": 0.136,
+   "unparsed": 0
+  }
+ },
+ "verdicts": [
+  "C1 CONFIRMED: missed triples co-occur in a sentence 48.1% of the time vs 100.0% for recovered.",
+  "C2 CONFIRMED: verifier discriminates \u2014 recovered 0.636 vs fabricated 0.136.",
+  "C3 REFUTED: missed gold verifies STATED at 0.636, nearer recovered \u2014 explanation (b): the relations ARE stated and extraction misses them, so every count in this project is an undercount."
+ ],
+ "scope": "Probe 1 is mechanical and model-free. Probe 2 asks a verifier a strictly easier question than extraction - judge one named candidate rather than search all pairs - and is calibrated against recovered gold and fabricated triples, so an agreeable verifier is detected rather than believed. Recovery is measured with REBEL at beams=5, the best-recall arm in exp81."
+}
