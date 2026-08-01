@@ -1,0 +1,30 @@
+{
+ "gpt-5.6-sol": {
+  "ok": true,
+  "chars": 9208,
+  "seconds": 44.6,
+  "top_pick": null,
+  "path": "data/schema_v3/gpt-5.6-sol.md"
+ },
+ "gemini-3.1-pro-preview": {
+  "ok": true,
+  "chars": 3872,
+  "seconds": 39.4,
+  "top_pick": null,
+  "path": "data/schema_v3/gemini-3.1-pro-preview.md"
+ },
+ "grok-4.5": {
+  "ok": true,
+  "chars": 12312,
+  "seconds": 266.2,
+  "top_pick": null,
+  "path": "data/schema_v3/grok-4.5.md"
+ },
+ "claude-fable-5": {
+  "ok": true,
+  "chars": 9117,
+  "seconds": 123.0,
+  "top_pick": null,
+  "path": "data/schema_v3/claude-fable-5.md"
+ }
+}
