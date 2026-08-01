@@ -1,0 +1,40 @@
+{
+ "n_docs": 12,
+ "windows": {
+  "1": {
+   "pred": 526,
+   "hit": 105,
+   "precision": 0.2015,
+   "recall": 0.2229,
+   "f1": 0.2117
+  },
+  "2": {
+   "pred": 393,
+   "hit": 91,
+   "precision": 0.2321,
+   "recall": 0.1932,
+   "f1": 0.2109
+  },
+  "3": {
+   "pred": 297,
+   "hit": 82,
+   "precision": 0.2761,
+   "recall": 0.1741,
+   "f1": 0.2135
+  },
+  "4": {
+   "pred": 243,
+   "hit": 73,
+   "precision": 0.3017,
+   "recall": 0.155,
+   "f1": 0.2048
+  }
+ },
+ "verdicts": [
+  "W1 REFUTED: recall 0.223 (w1) -> 0.193 (w2), -13%.",
+  "W2 REFUTED: precision 0.202 -> 0.232.",
+  "W3 CONFIRMED: recall gain w1->w2 -0.030 vs w3->w4 -0.019.",
+  "BEST: window 3 at F1 0.213 / recall 0.174, against the exp81 baseline of 0.212 / 0.223."
+ ],
+ "scope": "REBEL at beams=5, stride 1 so every adjacent pair is seen; overlapping windows are intentional and duplicates collapse in the prediction set. Same gold and scoring as exp76/81/82."
+}
