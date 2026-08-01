@@ -1,0 +1,13 @@
+{
+ "events": 40,
+ "all_triples": 12094,
+ "all_from_negated": 1304,
+ "corroborated": 737,
+ "corroborated_from_negated": 192,
+ "base_rate": 0.1078,
+ "corroborated_rate": 0.2605,
+ "verdict": "CONFIRMED (corrected): corroborated triples are negation-flagged at 26.1%, against 26.1% expected purely from having ~2.65 extraction events each at a 10.8% per-event rate. The first run compared against the raw base rate and reported 2.4x contamination that is entirely the flag's own bias. exp75 shows no evidence of negation contamination.",
+ "scope": "Per-sentence extraction so each triple can be attributed to its source sentence, unlike exp75 which chunked. A triple counts as negation-sourced if ANY of its extractions came from a negated sentence, which overstates rather than understates.",
+ "mean_events_per_corroborated_triple_implied": 2.646,
+ "expected_flag_rate_under_null": 0.2609
+}
