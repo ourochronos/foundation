@@ -247,6 +247,43 @@ must not — string similarity ranks them identically. **Entity canonicalisation
 is an authored registry with explicit aliases**, the same conclusion §7 reached
 for predicates and the v2 review reached for the closed layer generally.
 
+## 7e. Corroboration is CLOSED as a line of work
+
+The obvious next move after §7d was to close the entity vocabulary from the
+corpus's own page titles. Measured first: **177 titles cover 11% of extracted
+concepts and 20% of mentions**, and fuzzy matching reaches only 33 of 454
+unmatched. Worse, its near-misses are wrong in the dangerous direction —
+`full-employment`~`unemployment` scores as similar and means the opposite;
+`rule-consequentialism`~`consequentialism` is subsumption, not identity.
+
+Closing entities at the required fidelity is therefore an **ontology-building
+project** — an authored registry of 500+ concepts with aliases and a
+subsumption graph — which is precisely the crowded prior art in
+[21-references.md](21-references.md), not a gap worth filling here.
+
+**So the finding is stated and the line is closed**: corroboration-based
+confidence is not obtainable from published discourse. Four corpora, four
+zeros, with a mechanism for each — papers *cite rather than repeat*, positions
+*disagree rather than concur*, encyclopedias state one settled view, and
+free-form concepts prevent two claims from ever being one proposition. The
+`min_sources` refusal policy that depends on it refuses 98.1% of answerable
+questions (exp68) and should be understood as waiting for observational data,
+where repetition is structural, rather than as broken.
+
+**What this does not touch is the rest of the machinery**, and the scoreboard
+matters for what to build next:
+
+| mechanism | status on real data |
+|---|---|
+| dedup / merge | 100% (exp66) |
+| conflict detection | works, incl. 18 real oppositions once `oppose` existed (exp72) |
+| scoped coexistence | 0 false conflicts scoped, opposition visible unscoped (exp72) |
+| refusal | 0.000 wrongness on four unanswerable populations (exp68) |
+| up-lattice query expansion | 0/181 → 181/181, zero sibling leaks (exp68) |
+| **corroboration** | **0 across four corpora — closed above** |
+
+Five of six work. The sixth never had data that could feed it.
+
 ## 8. Still open — deliberately, and not in Layer 0
 
 - **Conflict detection is subsumption-blind.** `(X, mother_of, Y, +)` versus
