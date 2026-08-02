@@ -1,0 +1,37 @@
+{
+ "n_docs": 10,
+ "coverage": 0.9284,
+ "arms": {
+  "j0": {
+   "answered": 240,
+   "hit": 69,
+   "precision": 0.2875,
+   "recall": 0.1977,
+   "f1": 0.2343,
+   "judgement": 0.213
+  },
+  "j1": {
+   "answered": 184,
+   "hit": 39,
+   "precision": 0.212,
+   "recall": 0.1117,
+   "f1": 0.1463,
+   "judgement": 0.1204
+  },
+  "j2": {
+   "answered": 324,
+   "hit": 93,
+   "precision": 0.287,
+   "recall": 0.2665,
+   "f1": 0.2764,
+   "judgement": 0.287
+  }
+ },
+ "verdicts": [
+  "K1 REFUTED: coverage 0.928 with the proximity filter removed (exp85: 0.749).",
+  "K2 CONFIRMED: j0 precision 0.287 vs exp85's 0.463 at 74.9% coverage.",
+  "K3 CONFIRMED: calibration hint moves recall 0.198 -> 0.267, so the 29.7% is CONSERVATISM, the cheaper problem.",
+  "BEST: j2 at F1 0.276 (exp85 best 0.301)."
+ ],
+ "scope": "All ordered entity pairs enumerated, proximity used only to order them under a 400 cap. Three prompts over the identical pair set, so judgement is compared cleanly. Same gold and scoring as exp76/81/82/84/85; judgement = recall / coverage."
+}
