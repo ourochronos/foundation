@@ -1,0 +1,17 @@
+{
+ "n_docs": 12,
+ "precision": 0.4626,
+ "recall": 0.2229,
+ "f1": 0.3009,
+ "gold": 471,
+ "answered": 227,
+ "hit": 105,
+ "enumerable_fraction": 0.7495,
+ "recall_of_enumerable": 0.2975,
+ "verdicts": [
+  "E1 REFUTED: enumerated recall 0.223 vs best open-ended 0.223.",
+  "E2 CONFIRMED: precision 0.463 vs REBEL's 0.202.",
+  "E3: 74.9% of gold pairs were enumerable, and the arm recovered 29.7% of those - so the shortfall is MODEL JUDGEMENT, which is the actionable half."
+ ],
+ "scope": "One call per document listing up to 55 ordered entity pairs that co-occur within a 3-sentence window; the model must answer every pair with a relation or NONE. Same gold, entity matching and scoring as exp76/81/82/84."
+}
