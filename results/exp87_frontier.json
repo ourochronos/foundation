@@ -1,0 +1,50 @@
+{
+ "n_docs": 12,
+ "settings": {
+  "narrow": {
+   "coverage": 0.6391,
+   "answered": 306,
+   "hit": 94,
+   "precision": 0.3072,
+   "recall": 0.1996,
+   "f1": 0.242,
+   "judgement": 0.3123
+  },
+  "mid": {
+   "coverage": 0.8089,
+   "answered": 256,
+   "hit": 97,
+   "precision": 0.3789,
+   "recall": 0.2059,
+   "f1": 0.2669,
+   "judgement": 0.2546
+  },
+  "wide": {
+   "coverage": 0.9214,
+   "answered": 400,
+   "hit": 94,
+   "precision": 0.235,
+   "recall": 0.1996,
+   "f1": 0.2158,
+   "judgement": 0.2166
+  }
+ },
+ "verdicts": [
+  "F1 CONFIRMED: judgement narrow 0.312 vs wide 0.217 \u2014 coverage and judgement are NOT independent.",
+  "F2 REFUTED: best F1 0.267 (mid) vs exp85's 0.301.",
+  "F3 CONFIRMED: no setting dominates both prior bests - it is a frontier."
+ ],
+ "reference": {
+  "exp85": {
+   "precision": 0.463,
+   "recall": 0.223,
+   "f1": 0.301
+  },
+  "exp86_j2": {
+   "precision": 0.287,
+   "recall": 0.266,
+   "f1": 0.276
+  }
+ },
+ "scope": "The exp86-j2 calibrated prompt held constant across three enumeration widths, so the only variable is coverage. Same gold and scoring as exp76/81/82/84/85/86."
+}
