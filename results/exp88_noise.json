@@ -1,0 +1,263 @@
+{
+ "n_docs": 12,
+ "window": 4,
+ "cap": 260,
+ "coverage": 0.8089,
+ "arms": {
+  "j0": {
+   "answered": 313,
+   "hit": 124,
+   "precision": 0.3962,
+   "recall": 0.2633,
+   "f1": 0.3163
+  },
+  "j2a": {
+   "answered": 452,
+   "hit": 123,
+   "precision": 0.2721,
+   "recall": 0.2611,
+   "f1": 0.2665
+  },
+  "j2b": {
+   "answered": 208,
+   "hit": 78,
+   "precision": 0.375,
+   "recall": 0.1656,
+   "f1": 0.2297
+  }
+ },
+ "noise_floor_f1": 0.0409,
+ "noise_floor_recall": 0.0114,
+ "calibration_effect_f1": -0.0432,
+ "per_document": {
+  "0": {
+   "j0": {
+    "gold": 51,
+    "answered": 86,
+    "hit": 23
+   },
+   "j2a": {
+    "gold": 51,
+    "answered": 84,
+    "hit": 26
+   },
+   "j2b": {
+    "gold": 51,
+    "answered": 0,
+    "hit": 0
+   }
+  },
+  "1": {
+   "j0": {
+    "gold": 51,
+    "answered": 48,
+    "hit": 12
+   },
+   "j2a": {
+    "gold": 51,
+    "answered": 71,
+    "hit": 11
+   },
+   "j2b": {
+    "gold": 51,
+    "answered": 44,
+    "hit": 8
+   }
+  },
+  "2": {
+   "j0": {
+    "gold": 18,
+    "answered": 9,
+    "hit": 5
+   },
+   "j2a": {
+    "gold": 18,
+    "answered": 40,
+    "hit": 7
+   },
+   "j2b": {
+    "gold": 18,
+    "answered": 11,
+    "hit": 5
+   }
+  },
+  "3": {
+   "j0": {
+    "gold": 41,
+    "answered": 15,
+    "hit": 11
+   },
+   "j2a": {
+    "gold": 41,
+    "answered": 22,
+    "hit": 11
+   },
+   "j2b": {
+    "gold": 41,
+    "answered": 17,
+    "hit": 14
+   }
+  },
+  "4": {
+   "j0": {
+    "gold": 33,
+    "answered": 5,
+    "hit": 4
+   },
+   "j2a": {
+    "gold": 33,
+    "answered": 50,
+    "hit": 6
+   },
+   "j2b": {
+    "gold": 33,
+    "answered": 15,
+    "hit": 8
+   }
+  },
+  "5": {
+   "j0": {
+    "gold": 17,
+    "answered": 6,
+    "hit": 1
+   },
+   "j2a": {
+    "gold": 17,
+    "answered": 10,
+    "hit": 1
+   },
+   "j2b": {
+    "gold": 17,
+    "answered": 4,
+    "hit": 1
+   }
+  },
+  "6": {
+   "j0": {
+    "gold": 15,
+    "answered": 17,
+    "hit": 7
+   },
+   "j2a": {
+    "gold": 15,
+    "answered": 21,
+    "hit": 7
+   },
+   "j2b": {
+    "gold": 15,
+    "answered": 15,
+    "hit": 6
+   }
+  },
+  "7": {
+   "j0": {
+    "gold": 39,
+    "answered": 21,
+    "hit": 7
+   },
+   "j2a": {
+    "gold": 39,
+    "answered": 17,
+    "hit": 4
+   },
+   "j2b": {
+    "gold": 39,
+    "answered": 16,
+    "hit": 6
+   }
+  },
+  "8": {
+   "j0": {
+    "gold": 48,
+    "answered": 36,
+    "hit": 17
+   },
+   "j2a": {
+    "gold": 48,
+    "answered": 63,
+    "hit": 19
+   },
+   "j2b": {
+    "gold": 48,
+    "answered": 42,
+    "hit": 14
+   }
+  },
+  "9": {
+   "j0": {
+    "gold": 36,
+    "answered": 14,
+    "hit": 7
+   },
+   "j2a": {
+    "gold": 36,
+    "answered": 19,
+    "hit": 7
+   },
+   "j2b": {
+    "gold": 36,
+    "answered": 24,
+    "hit": 6
+   }
+  },
+  "10": {
+   "j0": {
+    "gold": 70,
+    "answered": 28,
+    "hit": 18
+   },
+   "j2a": {
+    "gold": 70,
+    "answered": 31,
+    "hit": 15
+   },
+   "j2b": {
+    "gold": 70,
+    "answered": 0,
+    "hit": 0
+   }
+  },
+  "11": {
+   "j0": {
+    "gold": 52,
+    "answered": 28,
+    "hit": 12
+   },
+   "j2a": {
+    "gold": 52,
+    "answered": 24,
+    "hit": 9
+   },
+   "j2b": {
+    "gold": 52,
+    "answered": 20,
+    "hit": 10
+   }
+  }
+ },
+ "verdicts": [
+  "N1 CONFIRMED: identical prompts differ by 0.041 F1 / 0.011 recall on matched documents, plus a 2/12 hard-failure rate. Gaps smaller than this in earlier experiments are not interpretable.",
+  "N2 REFUTED: calibration effect -0.043 F1 against a 0.041 noise floor \u2014 exp86's finding does not survive; on 12 documents the UNCALIBRATED prompt scores highest.",
+  "N3 REFUTED: per-document recall 0.059-0.510, more homogeneous than feared, so document sampling is not the dominant variance source - the model is."
+ ],
+ "scope": "j2a and j2b are byte-identical requests, so their difference is pure run-to-run variance. Same 12 documents, gold and scoring as exp83/85/87 at exp87's mid setting (window 4, cap 260). Per-document results are stored because exp87 kept only totals, which is why the exp86 population mismatch could not be diagnosed from its artifact.",
+ "hard_failures": 2,
+ "matched_docs": 10,
+ "matched_arms": {
+  "j0": {
+   "precision": 0.4171,
+   "recall": 0.2371,
+   "f1": 0.3024
+  },
+  "j2a": {
+   "precision": 0.2433,
+   "recall": 0.2343,
+   "f1": 0.2387
+  },
+  "j2b": {
+   "precision": 0.375,
+   "recall": 0.2229,
+   "f1": 0.2796
+  }
+ }
+}
