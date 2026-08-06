@@ -1,0 +1,217 @@
+{
+ "n": 26,
+ "both_stated": 12,
+ "both_not_stated": 4,
+ "disagree": 10,
+ "verdict": "VERIFIER IS SUSPECT: the judges disagree more than they jointly decline, so exp83's 0.636 reflects verifier conservatism and the gold survives.",
+ "rows": [
+  {
+   "doc": 3,
+   "s": "Take a Letter Miss Smith",
+   "r": "followed by",
+   "o": "I 'll Wait",
+   "haiku": "NO",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 8,
+   "s": "San Francisco Bay Area",
+   "r": "located in the administrative territorial entity",
+   "o": "California",
+   "haiku": "STATED",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 4,
+   "s": "Cuba",
+   "r": "part of",
+   "o": "Latin America",
+   "haiku": "INFERABLE",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 0,
+   "s": "2010 Winter Olympics",
+   "r": "country",
+   "o": "Canada",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 10,
+   "s": "Alexandre",
+   "r": "sibling",
+   "o": "Nicolas",
+   "haiku": "STATED",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 2,
+   "s": "Elvis Presley",
+   "r": "notable work",
+   "o": "Mess of Blues",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 1,
+   "s": "Royal Canadian Air Force",
+   "r": "participated in conflict",
+   "o": "World War II",
+   "haiku": "STATED",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 10,
+   "s": "Fontainebleau",
+   "r": "country",
+   "o": "France",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 2,
+   "s": "Studio 92",
+   "r": "country",
+   "o": "Canada",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 5,
+   "s": "Sanders of the River",
+   "r": "cast member",
+   "o": "Paul Robeson",
+   "haiku": "NO",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 7,
+   "s": "Roketsan",
+   "r": "country",
+   "o": "Turkey",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 1,
+   "s": "Canadian",
+   "r": "contains the administrative territorial entity",
+   "o": "Alberta",
+   "haiku": "STATED",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 3,
+   "s": "Wet Blanket Policy",
+   "r": "publication date",
+   "o": "1948",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 11,
+   "s": "Metropolitan City of Bari",
+   "r": "located in the administrative territorial entity",
+   "o": "Apulia",
+   "haiku": "INFERABLE",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 11,
+   "s": "Mola",
+   "r": "country",
+   "o": "Italian",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 11,
+   "s": "Southern Italy",
+   "r": "located in or next to body of water",
+   "o": "Adriatic Sea",
+   "haiku": "STATED",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 10,
+   "s": "Nicolas",
+   "r": "sibling",
+   "o": "Alexandre",
+   "haiku": "STATED",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 5,
+   "s": "Kwame Nkrumah",
+   "r": "country of citizenship",
+   "o": "Ghana",
+   "haiku": "INFERABLE",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 0,
+   "s": "Melissa Hollingsworth",
+   "r": "participant in",
+   "o": "2006 Winter Olympics",
+   "haiku": "STATED",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 5,
+   "s": "Song of Freedom",
+   "r": "country of origin",
+   "o": "British",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 4,
+   "s": "Alejandro Pr\u00f3spero R\u00e9ver\u00e9nd",
+   "r": "country of citizenship",
+   "o": "French",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 9,
+   "s": "Khmer Rouge",
+   "r": "participated in conflict",
+   "o": "Cambodian-Vietnamese War",
+   "haiku": "STATED",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 9,
+   "s": "Botum Park",
+   "r": "located in the administrative territorial entity",
+   "o": "Phnom Penh",
+   "haiku": "STATED",
+   "gemma": "INFERABLE"
+  },
+  {
+   "doc": 4,
+   "s": "Escuela Latinoamericana de Medicina",
+   "r": "country",
+   "o": "Cuba",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 8,
+   "s": "Scoopy Bee",
+   "r": "inception",
+   "o": "1943",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  },
+  {
+   "doc": 9,
+   "s": "Cambodia",
+   "r": "capital",
+   "o": "Phnom Penh",
+   "haiku": "STATED",
+   "gemma": "STATED"
+  }
+ ]
+}
