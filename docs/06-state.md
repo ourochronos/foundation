@@ -1,4 +1,30 @@
-# Current state — 2026-07-31 (encoder arc CLOSED, sparse-dictionary thread CLOSED; through D175)
+# Current state — 2026-08-06 (extraction arc CLOSED; frames/slots arc OPEN)
+
+> **RESUME FROM [39-frames-v1.md](39-frames-v1.md).** That is the live design
+> doc and it carries the state, the constraints, the build order and the open
+> questions. This file is history plus orientation.
+>
+> **Where things stand.** The extraction arc (exp66–exp89) is complete and
+> tagged `extraction-arc-v1`. Its verdict: recall is pinned at 0.155–0.266 by
+> every method tried, against a **0.041 run-to-run noise floor** — so most of
+> that arc's rankings were inside their own noise — while the missed relations
+> verify as *stated in the text* at the same rate as recovered ones (gold
+> audited sound at exp89). That is a representation mismatch, not an extractor
+> problem.
+>
+> **The pivot**: build the machinery a reasoner operates — slots as declared
+> structural context relations, closure over them, demand paging, and faults
+> that are fetches or acquisitions rather than refusals — instead of building a
+> better extractor. Design in [37](37-frames-v0.md) and
+> [39](39-frames-v1.md); panel rounds in `data/concepts/` and
+> `data/crystallize/`.
+>
+> **Nothing of the new arc is built.** Build order is §7 of `39`.
+
+---
+
+### Superseded orientation (coordinate + encoder arcs)
+
 
 **Fastest orientation**: [decisions.md](decisions.md) D175 → D172 → D158, then
 "where a pivot lands" at the bottom. **Nothing is running.** Working tree clean
